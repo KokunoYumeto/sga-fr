@@ -1,0 +1,185 @@
+[
+  {
+    "page": 336,
+    "where": "start of page (folio-336 marker)",
+    "scan": "p. 336 begins 'on définit un λ-homomorphisme : B → K prolongeant l'augmentation de A'; p. 335 ends '... le λ-anneau libre engendré par X sur A ;' (both scans; crops_336_340/w336_top.png, w335_bot.png)",
+    "tex": "'on' ends the last line above the folio-336 marker ('... engendré par \\(X\\) sur \\(A\\)~; on'); page_336.tex begins 'définit un \\(\\lambda\\)-homomorphisme'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "The folio-336 marker stands one word late. Page 336 really begins at 'on définit'. Exact fix in main.tex (both layers): replace '\\(A\\)~; on\\n%%%%%%%%%%  scan idx 349  |  folio 336  %%%%%%%%%%\\ndéfinit un' by '\\(A\\)~;\\n%%%%%%%%%%  scan idx 349  |  folio 336  %%%%%%%%%%\\non définit un' (simulated in memory on both layers of the live main.tex with crops_336_340/sim_marker.py: once in each). marker_split_word.py pull 'on' would give 'ondéfinit' without a space."
+  },
+  {
+    "page": 336,
+    "where": "4.10 continued, first sentence: 'une structure de K-λ-algèbre augmentés'",
+    "scan": "'d'une structure de K-λ-algèbre augmen-tés' (both scans)",
+    "tex": "\\(K\\)-\\(\\lambda\\)-algèbre augmentés",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "augmentée",
+    "note": "Agreement slip: 'une structure de K-λ-algèbre augmentée' (4.10 on p. 335 has 'A une K-λ-algèbre augmentée'). The TeX keeps the printed reading."
+  },
+  {
+    "page": 336,
+    "where": "Lemme 4.11, end of the statement",
+    "scan": "'est de filtration au moins k-n(dans A)' with no full stop after the parenthesis (both scans; crops_336_340/w336_mid.png)",
+    "tex": "(dans \\(A\\)).",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "(dans \\(A\\)).", "new": "(dans \\(A\\))"},
+    "note": "The TeX adds a full stop."
+  },
+  {
+    "page": 336,
+    "where": "proof of Lemme 4.11, before 'Si ε désigne l'homomorphisme d'augmentation'",
+    "scan": "'... si a est d'augmentation nulle.' ends the line; 'Si ε désigne ...' begins an indented new paragraph (both scans)",
+    "tex": "d'augmentation nulle. Si \\(\\epsilon\\) désigne",
+    "kind": "other",
+    "confidence": "high",
+    "fix": {"old": "d'augmentation nulle. Si", "new": "d'augmentation nulle.\n\nSi"},
+    "note": "Missing paragraph break."
+  },
+  {
+    "page": 336,
+    "where": "statements of pp. 336-340: Lemme 4.11 (p. 336), Corollaire 4.15 and Lemme 5.2 (p. 338)",
+    "scan": "underlined word groups: Lemme 4.11 'Soit', 'le coefficient d'un monôme de poids', 'par rapport', 'aux', 'dans', 'est de filtration au moins', 'dans'; Corollaire 4.15 'Soit', 'le', 'anneau engendré sur', 'par l'indéterminée', 'soumise aux relations', 'pour', the i and the e of 'i.e.', 'Alors la filtration de', 'anneau de', 'est identique à la filtration par le poids par rapport aux'; Lemme 5.2 'Pour tout', 'est divisible par' (both scans)",
+    "tex": "the three statements in roman",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": null,
+    "note": "Exposé V continues the Exposé II pattern of GLOBAL_ISSUES 82 (as reported for pp. 298 and 306-315): not itemized, for the per-exposé decision; the word groups are listed for a scripted fix. Proposition 4.12, Corollaire 4.14 and Remarques 4.13 have no underlined words. No \\emph on defined terms the print leaves plain, and no category L, on pp. 336-340."
+  },
+  {
+    "page": 337,
+    "where": "Corollaire 4.14",
+    "scan": "Gr^kB ≈ Gr^kA ⊕ Gr^{k-1}A.M_1 ⊕...⊕Gr^oA.M_k: the sign is ≈, two wavy strokes (both scans; crops_336_340/p337_iso.png, w337_iso.png)",
+    "tex": "\\Gr^k B\\simeq\\Gr^k A",
+    "kind": "symbol",
+    "confidence": "high",
+    "fix": {"old": "\\Gr^k B\\simeq", "new": "\\Gr^k B\\approx"},
+    "note": "The other isomorphism signs of the exposé (witness pp. 300, 316, 357) are ≃, a tilde over a straight line; this one is the typewriter's ≈. The file has no \\approx yet (standard LaTeX)."
+  },
+  {
+    "page": 338,
+    "where": "heading of § 5",
+    "scan": "'5. Les λ^p(N,x).' with a full stop after the parenthesis (both scans; crops_336_340/w338_top.png)",
+    "tex": "\\section*{5. Les \\(\\lambda^p(N,x)\\)}",
+    "kind": "punctuation",
+    "confidence": "medium",
+    "fix": {"old": "\\(\\lambda^p(N,x)\\)}", "new": "\\(\\lambda^p(N,x)\\).}"},
+    "note": "Missing full stop. The headings of §§ 2-4 (pp. 313, 324, 332) have none; this one has. The missing underline of 'Les' is accepted (section title)."
+  },
+  {
+    "page": 338,
+    "where": "5.1, after the display A = Z[N,...,λ^dN ; x,...,λ^jx,...]., before 'On pose'",
+    "scan": "'On pose' is indented: a new paragraph (both scans)",
+    "tex": "\\]\nOn pose",
+    "kind": "other",
+    "confidence": "medium",
+    "fix": {"old": "x,\\ldots,\\lambda^jx,\\ldots].\n\\]\n", "new": "x,\\ldots,\\lambda^jx,\\ldots].\n\\]\n\n"},
+    "note": "Paragraph break of the print missing after the display. Disjoint from the next entry (any order)."
+  },
+  {
+    "page": 338,
+    "where": "5.1, 'On pose λ_{-1}(N) = ...'",
+    "scan": "'On pose λ_{-1}(N) = Σ_{i=0}^{d} (-1)^iλ^i(N) .' on one line: the formula follows 'On pose' in the running line (both scans)",
+    "tex": "On pose\n\\[\n  \\lambda_{-1}(N)=\\sum_{i=0}^{d}(-1)^i\\lambda^i(N).\n\\]",
+    "kind": "other",
+    "confidence": "medium",
+    "fix": {"old": "On pose\n\\[\n  \\lambda_{-1}(N)=\\sum_{i=0}^{d}(-1)^i\\lambda^i(N).\n\\]", "new": "On pose \\(\\lambda_{-1}(N)=\\sum_{i=0}^{d}(-1)^i\\lambda^i(N)\\)."},
+    "note": "The print sets the formula inline; the TeX makes it a display (same kind of fix as pp. 301, 303)."
+  },
+  {
+    "page": 338,
+    "where": "end of the page: 'on a alors Ĝ(f)(λ_t(N)) = ...'",
+    "scan": "'Ĝ(f)(λ_t(N)) = Π_{i=1}^{d} λ_t(N_i) = Π_{i=1}^{d}(1+N_it),' stands on the line of 'envoyant N sur Σ N_i ; on a alors' (both scans)",
+    "tex": "on a alors\n\\[\n  \\Ghat(f)(\\lambda_t(N))=\\prod_{i=1}^{d}\\lambda_t(N_i)=\\prod_{i=1}^{d}(1+N_it),\n\\]",
+    "kind": "other",
+    "confidence": "medium",
+    "fix": {"old": "on a alors\n\\[\n  \\Ghat(f)(\\lambda_t(N))=\\prod_{i=1}^{d}\\lambda_t(N_i)=\\prod_{i=1}^{d}(1+N_it),\n\\]", "new": "on a alors \\(\\Ghat(f)(\\lambda_t(N))=\\prod_{i=1}^{d}\\lambda_t(N_i)=\\prod_{i=1}^{d}(1+N_it)\\),"},
+    "note": "The print sets the formula inline, as 'On pose' above; the sentence goes on at the top of p. 339 ('ce qui montre que')."
+  },
+  {
+    "page": 339,
+    "where": "after the display (5.3.1), before 'L'élément λ^p(N,x) est donc un polynôme'",
+    "scan": "'L'élément' is indented: a new paragraph (both scans)",
+    "tex": "\\end{equation}\nL'élément",
+    "kind": "other",
+    "confidence": "medium",
+    "fix": {"old": "\\end{equation}\nL'élément", "new": "\\end{equation}\n\nL'élément"},
+    "note": "Paragraph break of the print missing after the display."
+  },
+  {
+    "page": 339,
+    "where": "last line: 'par substitution, on encore en utilisant'",
+    "scan": "'on encore' (both scans; crops_336_340/w339_bot.png)",
+    "tex": "par substitution, on encore en utilisant",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "ou encore",
+    "note": "Typing slip (n for u). The TeX keeps the printed reading."
+  },
+  {
+    "page": 340,
+    "where": "start of page (folio-340 marker)",
+    "scan": "p. 340 begins 'B qui envoie N sur N\", et x sur x\"'; p. 339 ends '... l'unique λ-homomorphisme de A dans' (both scans; crops_336_340/w339_bot.png, w340_top.png)",
+    "tex": "'\\(B\\) qui' ends the last line of page_339.tex ('... de \\(A\\) dans \\(B\\) qui'), above the folio-340 marker; page_340.tex begins 'envoie \\(N\\)'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "The folio-340 marker stands two words late. Page 340 really begins with '\\(B\\) qui envoie'. Exact fix in main.tex (both layers): replace 'de \\(A\\) dans \\(B\\) qui\\n%%%%%%%%%%  scan idx 353  |  folio 340  %%%%%%%%%%\\nenvoie \\(N\\)' by 'de \\(A\\) dans\\n%%%%%%%%%%  scan idx 353  |  folio 340  %%%%%%%%%%\\n\\(B\\) qui envoie \\(N\\)' (simulated in memory on both layers of the live main.tex with crops_336_340/sim_marker.py: once in each). Equivalent: python -I move_marker.py 6 340 '\\(B\\) qui' --before (leaves '\\(B\\) qui' on a line of its own)."
+  },
+  {
+    "page": 340,
+    "where": "first line: 'd'après la remarque précédente'",
+    "scan": "'remarque': the fifth letter is an r typed over a t, the t's stem showing above the r's arm (both scans; crops_336_340/p340_remarque2.png, w340_remarque.png)",
+    "tex": "rematque",
+    "kind": "word",
+    "confidence": "medium",
+    "fix": {"old": "rematque", "new": "remarque"},
+    "note": "The typist's overtyped correction gives 'remarque'; the TeX reads the struck-out t."
+  },
+  {
+    "page": 340,
+    "where": "5.4, first display, end of the third line",
+    "scan": "'... +(λ^p(N,x)+λ^p(N,y))λ_{-1}N' with no punctuation after it (both scans; crops_336_340/w340_top.png)",
+    "tex": "\\lambda_{-1}N.",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "\\lambda_{-1}N.", "new": "\\lambda_{-1}N"},
+    "note": "The TeX adds a full stop at the end of the display. Disjoint from the paragraph-break entry below (any order)."
+  },
+  {
+    "page": 340,
+    "where": "after the first display of 5.4, before 'Comme l'anneau considéré est intègre'",
+    "scan": "'Comme' is indented: a new paragraph (both scans)",
+    "tex": "\\end{align*}\nComme l'anneau",
+    "kind": "other",
+    "confidence": "medium",
+    "fix": {"old": "\\end{align*}\nComme", "new": "\\end{align*}\n\nComme"},
+    "note": "Paragraph break of the print missing after the display."
+  },
+  {
+    "page": 340,
+    "where": "'Comme l'anneau considéré est intègre, on en désuit la relation suivante'",
+    "scan": "'désuit' (both scans; crops_336_340/w340_mid.png)",
+    "tex": "on en désuit la relation",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "déduit",
+    "note": "Typing slip (s for d). The TeX keeps the printed reading."
+  },
+  {
+    "page": 340,
+    "where": "after the display (5.4.1), before 'Considérons maintenant'",
+    "scan": "'Considérons maintenant' is indented: a new paragraph (both scans)",
+    "tex": "\\end{equation}\nConsidérons maintenant",
+    "kind": "other",
+    "confidence": "medium",
+    "fix": {"old": "\\end{equation}\nConsidérons", "new": "\\end{equation}\n\nConsidérons"},
+    "note": "Paragraph break of the print missing after the display."
+  }
+]

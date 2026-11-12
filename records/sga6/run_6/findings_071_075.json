@@ -1,0 +1,444 @@
+[
+ {
+  "page": 71,
+  "where": "heading of the bibliography",
+  "scan": "Références bibliographiques : (underlined heading followed by a colon; both scans)",
+  "tex": "\\subsection*{Références bibliographiques}",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\subsection*{Références bibliographiques}",
+   "new": "\\subsection*{Références bibliographiques~:}"
+  },
+  "note": "The colon after the heading is missing; the heading form without the underline is accepted typesetting."
+ },
+ {
+  "page": 71,
+  "where": "reference [1]",
+  "scan": "Hirzebruch : Neue topologischen Methoden in der algebraischen Geometrie. (both scans)",
+  "tex": "Neue topologischen Methoden",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Neue topologische Methoden",
+  "note": "Typing error: the title of Hirzebruch's book is 'Neue topologische Methoden in der algebraischen Geometrie'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 71,
+  "where": "heading 'Rappel de notations'",
+  "scan": "* Rappel de notations: an asterisk (normal typing height) before the underlined heading. It opens the copyist's interpolation that closes with the lowered asterisk after 'f_!(G) = Σ (-1)^p R^p f_*(G).' at the top of p. 73. The footnote at the foot of the page has no call mark of its own (both scans).",
+  "tex": "\\subsection*{Rappel de notations\\footnotemark}: no asterisk; the footnote hangs on a numbered \\footnotemark after the heading",
+  "kind": "missing",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\subsection*{Rappel de notations\\footnotemark}",
+   "new": "\\subsection*{* Rappel de notations\\footnotemark}"
+  },
+  "note": "The TeX keeps the closing asterisk on p. 73 ('\\quad*') but drops this opening one. The \\footnotemark has no counterpart in the print (its footnote is unmarked); the fix leaves it as the attachment of the footnote."
+ },
+ {
+  "page": 71,
+  "where": "footnote",
+  "scan": "Les passages entre astériques * ... * sont des interpolations du copiste. (both scans)",
+  "tex": "Les passages entre astériques",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "astérisques",
+  "note": "Typing error for 'astérisques'; the TeX keeps the printed reading. (For the raised and lowered asterisks of this footnote see the interpolation-asterisk entry under p. 73.)"
+ },
+ {
+  "page": 71,
+  "where": "[Ce sont celles du \"rapport sur Riemann-Roch\", cité R.R.R. dans ce qui suit.]",
+  "scan": "cité R.R.R. dans ce qui suit (letters with full stops; both scans)",
+  "tex": "cité \\(\\RRR\\) dans: \\RRR is \\newcommand{\\RRR}{\\mathrm{RRR}} (main.tex l. 29) and prints 'RRR'; the later \\providecommand{\\RRR}{\\mathrm{R.R.R.}} (l. 1517) has no effect",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "cité \\(\\RRR\\) dans",
+   "new": "cité R.R.R. dans"
+  },
+  "note": "The full stops are lost through the macro. Same on p. 73; only the running head prints RRR without stops."
+ },
+ {
+  "page": 71,
+  "where": "last line: 'resp. une sous-' / p. 72 'variété Y de X)'",
+  "scan": "'sous-variété' is divided at the page break after its own hyphen: 'une sous-' ends p. 71, 'variété' begins p. 72",
+  "tex": "page_071.tex ends 'resp.\\ une sous-' and the folio-72 marker line follows: the line end after 'sous-' prints as a space, so the output reads 'sous- variété'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "resp.\\ une sous-",
+   "new": "resp.\\ une sous-%"
+  },
+  "note": "The folio-72 marker itself stands right (p. 72 begins 'variété'). The % joins the two halves as at folio 18 ('cet ex%'). The same line stands before the folio-72 marker in the current layer: apply there too."
+ },
+ {
+  "page": 72,
+  "where": "'On note A(X) l'anneau gradué des classes de cylces de X'",
+  "scan": "cylces (both scans)",
+  "tex": "cylces",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "cycles",
+  "note": "Typing error; the TeX keeps the printed reading."
+ },
+ {
+  "page": 72,
+  "where": "'(pour l'équivalence rationnelle -cf. Chow)'",
+  "scan": "rationnelle -cf. Chow): a hyphen joined to 'cf.' (both scans)",
+  "tex": "rationnelle~-- cf.\\ Chow",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "rationnelle~-- cf.\\ Chow",
+   "new": "rationnelle -cf.\\ Chow"
+  },
+  "note": "The TeX's en dash (tied before, spaced after) is not in the print."
+ },
+ {
+  "page": 72,
+  "where": "after '... est formé des cycles de codimension i.'",
+  "scan": "'Si E est un fibré à fibre vectoriel, on note ...' begins a new, indented paragraph (both scans)",
+  "tex": "'... de codimension \\(i\\). Si \\(E\\) est un fibré ...' runs on in one paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "codimension \\(i\\). Si \\(E\\)",
+   "new": "codimension \\(i\\).\n\nSi \\(E\\)"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 72,
+  "where": "'Si E est un fibré à fibre vectoriel, on note C(E) = Σ C^i(E)'",
+  "scan": "fibré à fibre vectoriel, (both scans)",
+  "tex": "fibré à fibre vectoriel,",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "fibre vectorielle",
+  "note": "Agreement error ('fibre' is feminine; 'fibré à fibre vectorielle' two paragraphs below and throughout). The TeX keeps the printed reading."
+ },
+ {
+  "page": 72,
+  "where": "after 'Ce sont des éléments de A(X) ⊗ Q .'",
+  "scan": "'Lorsque y est le fibré tangent à X, ...' is a new, indented paragraph (both scans)",
+  "tex": "'... \\(A(X)\\otimes\\mathbb Q\\). Lorsque \\(y\\) ...' in one paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes\\mathbb Q\\). Lorsque",
+   "new": "\\otimes\\mathbb Q\\).\n\nLorsque"
+  },
+  "note": "Missing paragraph break. 'Ce sont des éléments' starts at the margin and rightly continues the paragraph of the display."
+ },
+ {
+  "page": 72,
+  "where": "after the display f* : A(X) -> A(Y) et f_* : A(Y) -> A(X)",
+  "scan": "'Le premier est homogène de degré 0 et multiplicatif.' begins an indented paragraph after the display (both scans)",
+  "tex": "\\] followed directly by 'Le premier est homogène' (the text continues the paragraph of the display)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nLe premier",
+   "new": "\\]\n\nLe premier"
+  },
+  "note": "Missing paragraph break (text that continues after a display starts at the margin, as 'Ce sont des éléments' above)."
+ },
+ {
+  "page": 72,
+  "where": "'Le second est homogène de degré dim.X - dim.Y.'",
+  "scan": "dim.X - dim.Y (a full stop after each 'dim'; both scans)",
+  "tex": "\\(\\dim X-\\dim Y\\)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\dim X-\\dim Y\\)",
+   "new": "\\(\\dim.X-\\dim.Y\\)"
+  },
+  "note": "The stops of the abbreviation are dropped in the TeX."
+ },
+ {
+  "page": 72,
+  "where": "after '... de degré dim.X - dim.Y.'",
+  "scan": "'On définit également des homomorphismes :' is a new, indented paragraph (both scans)",
+  "tex": "'... \\(\\dim X-\\dim Y\\). On définit également ...' in one paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": ". On définit également",
+   "new": ".\n\nOn définit également"
+  },
+  "note": "Missing paragraph break. Does not overlap the dim. fix; the two apply in either order."
+ },
+ {
+  "page": 72,
+  "where": "after the display f^! : K(X) -> K(Y) et f_! : K(Y) -> K(X).",
+  "scan": "'Si F est un faisceau cohérent sur X, ...' begins an indented paragraph (both scans)",
+  "tex": "\\] followed directly by 'Si \\(\\underline F\\) est un faisceau cohérent' (continues the paragraph of the display)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nSi \\(\\underline F\\) est un faisceau",
+   "new": "\\]\n\nSi \\(\\underline F\\) est un faisceau"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 73,
+  "where": "start of page",
+  "scan": "p. 73 begins 'Si G est un faisceau cohérent sur Y, f_*(G) est cohérent sur X.' (indented); p. 72 ends '... c'est simplement l'opération d'image réciproque.' (both scans; witness pp. 83-84)",
+  "tex": "'Si \\(G\\) est un' is the last line of page_072.tex (under the folio-72 marker); page_073.tex begins 'faisceau cohérent sur'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 73 really begins with 'Si \\(G\\) est un'. Move the folio-73 marker up one line, above it: python -I move_marker.py 6 73 'Si \\(G\\) est un' --before (single quotes; simulated on both layers with crops_071_075/sim_markers.py, nothing written: '... d'image réciproque.' / blank line / marker / 'Si \\(G\\) est un' / 'faisceau cohérent sur \\(Y\\), ...')."
+ },
+ {
+  "page": 73,
+  "where": "label of the theorem",
+  "scan": "THEOREME DE RIEMANN-ROCH. (typed capitals, not underlined; both scans)",
+  "tex": "\\textbf{Théorème de Riemann--Roch.}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{Théorème de Riemann--Roch.}",
+   "new": "\\textbf{THÉORÈME DE RIEMANN--ROCH.}"
+  },
+  "note": "Capitals against the TeX's small letters (the bold is accepted). Accents and the joint-name dash keep the TeX's forms (global rules). All labels of pp. 73-75 are typed in capitals: LEMME 1-4, COROLLAIRE."
+ },
+ {
+  "page": 73,
+  "where": "formula (1)",
+  "scan": "f_*(ch(y)T(Y)) = ch(f_!(y))T(X)  dans A(X) ⊗ Q . with 'dans' underlined (both scans)",
+  "tex": "\\quad\\text{dans } A(X)\\otimes\\mathbb Q.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{dans } A(X)",
+   "new": "\\text{\\emph{dans} } A(X)"
+  },
+  "note": "The statement's word inside the display is underlined in the print and plain in the TeX (the file's \\emph, as in the statement)."
+ },
+ {
+  "page": 73,
+  "where": "label of Lemme 1",
+  "scan": "LEMME 1. (typed capitals; both scans)",
+  "tex": "\\textbf{Lemme 1.}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{Lemme 1.}",
+   "new": "\\textbf{LEMME 1.}"
+  },
+  "note": "Capitals against small letters."
+ },
+ {
+  "page": 73,
+  "where": "'moyennant la proposition 2.13 (\"décomposition cellulaire\") de R.R.R. On va donc'",
+  "scan": "de R.R.R. On (both scans)",
+  "tex": "de \\(\\RRR\\). On -- prints 'RRR.' (\\RRR = \\mathrm{RRR}, see p. 71)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de \\(\\RRR\\). On va",
+   "new": "de R.R.R. On va"
+  },
+  "note": "As on p. 71. The last stop of R.R.R. also ends the sentence."
+ },
+ {
+  "page": 73,
+  "where": "the copyist's interpolation asterisks (pp. 71, 73, 75)",
+  "scan": "The print raises the opening asterisk and lowers the closing one, as its own footnote shows ('astériques ^* ... _*', p. 71): p. 73 '(^* application régulière _*)', '(^* abrégée _*)', '(^* En fait, ... est vrai pour f. _*)' and the lowered '_*' closing the Rappel after 'R^p f_*(G).'; p. 75 '... et g^* . * Dans la formule (7), ... dans K(Y')._*]' (opening at normal height, closing lowered); p. 71 '* Rappel de notations' (normal height). Both scans.",
+  "tex": "every asterisk on the line: p. 71 footnote 'astériques *\\dots* sont'; p. 73 '\\).\\quad*', '(* application régulière *)', '(* abrégée *)', '(* En fait, ... *)'; p. 75 '{*}Dans la formule (7) ... \\(K(Y')\\).{*}]'",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the transcription, reported once and not itemized. If the volume follows the print: raised = \\textsuperscript{*}, lowered = \\textsubscript{*}, normal height = *; e.g. '(\\textsuperscript{*} application régulière \\textsubscript{*})', footnote 'astériques \\textsuperscript{*}\\dots\\textsubscript{*} sont', p. 75 '* Dans la formule (7) ... \\(K(Y')\\).\\textsubscript{*}]'."
+ },
+ {
+  "page": 74,
+  "where": "label of Lemme 2",
+  "scan": "LEMME 2. (typed capitals; both scans)",
+  "tex": "\\textbf{Lemme 2.}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{Lemme 2.}",
+   "new": "\\textbf{LEMME 2.}"
+  },
+  "note": "Capitals against small letters."
+ },
+ {
+  "page": 74,
+  "where": "formula (4)",
+  "scan": "y = i^!(x) , avec x ∈ K(X) , with 'avec' underlined (both scans)",
+  "tex": "\\text{avec }x\\in K(X)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{avec }x",
+   "new": "\\text{\\emph{avec} }x"
+  },
+  "note": "The statement's word inside the display is underlined in the print, plain in the TeX."
+ },
+ {
+  "page": 74,
+  "where": "label of the Corollaire",
+  "scan": "COROLLAIRE. (typed capitals; both scans)",
+  "tex": "\\textbf{Corollaire.}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{Corollaire.}",
+   "new": "\\textbf{COROLLAIRE.}"
+  },
+  "note": "Capitals against small letters."
+ },
+ {
+  "page": 74,
+  "where": "label of Lemme 3",
+  "scan": "LEMME 3. (typed capitals; both scans)",
+  "tex": "\\textbf{Lemme 3.}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{Lemme 3.}",
+   "new": "\\textbf{LEMME 3.}"
+  },
+  "note": "Capitals against small letters."
+ },
+ {
+  "page": 74,
+  "where": "Lemme 3: 'soit l'injection u -> (u,v_o) v_o ∈ P'",
+  "scan": "u → (u,v_o): a plain arrow, no bar at its tail (both scans)",
+  "tex": "\\(u\\mapsto (u,v_0)\\)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "u\\mapsto",
+   "new": "u\\longrightarrow"
+  },
+  "note": "\\mapsto is not in the print."
+ },
+ {
+  "page": 74,
+  "where": "Lemme 3: '(u,v_o) v_o ∈ P. Alors'",
+  "scan": "(u,v_o) v_o ∈ P. -- no comma between (u,v_o) and v_o (both scans)",
+  "tex": "\\(u\\mapsto (u,v_0)\\), \\(v_0\\in P\\)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": ",v_0)\\), \\(v_0\\in",
+   "new": ",v_0)\\) \\(v_0\\in"
+  },
+  "note": "Comma added by the TeX. Does not overlap the arrow fix."
+ },
+ {
+  "page": 74,
+  "where": "diagram, bottom arrow Y' -> X'",
+  "scan": "label j above the bottom arrow (both scans)",
+  "tex": "\\arrow[r,\"j\"'] (the ' sets the label below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r,\"j\"']",
+   "new": "\\arrow[r,\"j\"]"
+  },
+  "note": "Label on the wrong side of the arrow; the other three labels stand as printed (i above, g left, f right)."
+ },
+ {
+  "page": 75,
+  "where": "label of Lemme 4",
+  "scan": "LEMME 4. (typed capitals; both scans)",
+  "tex": "\\textbf{Lemme 4.}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{Lemme 4.}",
+   "new": "\\textbf{LEMME 4.}"
+  },
+  "note": "Capitals against small letters."
+ },
+ {
+  "page": 75,
+  "where": "formula (8)",
+  "scan": "f_*(1) = 1 , d'où f_*f^* = 1 . with 'd'où' underlined (both scans)",
+  "tex": "\\text{d'où }f_*f^*=1.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{d'où }f_*f^*",
+   "new": "\\text{\\emph{d'où} }f_*f^*"
+  },
+  "note": "Underlined in the print, plain in the TeX."
+ },
+ {
+  "page": 75,
+  "where": "formula (9)",
+  "scan": "... mod.Ker f_*  pour tout α ∈ A(Y) . with 'pour tout' underlined (both scans)",
+  "tex": "\\text{pour tout }\\alpha\\in A(Y).",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{pour tout }\\alpha",
+   "new": "\\text{\\emph{pour tout} }\\alpha"
+  },
+  "note": "Underlined in the print, plain in the TeX."
+ },
+ {
+  "page": 75,
+  "where": "after the formulas (6)-(9) and the footnote text",
+  "scan": "'[Pour simplifier l'écriture, ...' begins an indented paragraph (both scans)",
+  "tex": "\\end{align}, \\footnotetext{...} and '[Pour simplifier' on the next line: the text continues the paragraph of the display",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "VII 4.1.}\n[Pour",
+   "new": "VII 4.1.}\n\n[Pour"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 75,
+  "where": "after the display (6 bis)",
+  "scan": "'La formule (7) résulte des formules' is a new, indented paragraph (both scans)",
+  "tex": "\\end{equation} followed directly by 'La formule (7) résulte des formules'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nLa formule (7)",
+   "new": "\\end{equation}\n\nLa formule (7)"
+  },
+  "note": "Missing paragraph break ('La formule (6)' and 'La formule (8)' have theirs)."
+ },
+ {
+  "page": 75,
+  "where": "'elles-mêmes conséquences de Künneth'",
+  "scan": "KÜnneth: the u-umlaut typed at capital height, the same form as on p. 70 ('la formule de KÜnneth'); both scans",
+  "tex": "Künneth",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": {
+   "old": "de Künneth et",
+   "new": "de KÜnneth et"
+  },
+  "corrected": "Künneth",
+  "note": "If the capital Ü counts as a typing slip, the TeX silently corrects it and the diplomatic layer should read KÜnneth. It may instead be the typewriter's only form of ü (then one volume decision with p. 70, not a page fix)."
+ },
+ {
+  "page": 75,
+  "where": "after 'avec ξ = C^1(L) ∈ A^1(Y').'",
+  "scan": "'[En fait, (9) est très vraisemblablement une identité, ...]' is a new, indented paragraph (both scans)",
+  "tex": "'... \\in A^1(Y')\\). [En fait, ...' in one paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "A^1(Y')\\). [En fait",
+   "new": "A^1(Y')\\).\n\n[En fait"
+  },
+  "note": "Missing paragraph break."
+ }
+]

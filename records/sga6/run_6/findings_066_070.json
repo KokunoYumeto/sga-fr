@@ -1,0 +1,461 @@
+[
+ {
+  "page": 66,
+  "where": "start of page",
+  "scan": "p. 66 begins 'La formule (iv) exprime que i_! ...'; p. 65 ends with the ')' closing the parenthesis after (2.36) (both scans)",
+  "tex": "'La' is the last line of page_065.tex (under the folio-65 marker); page_066.tex begins 'formule (iv)'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 66 really begins with 'La'. Move the folio-66 marker up one line, above 'La': python -I move_marker.py 6 66 \"La\" --before (simulated on both layers: ')', the marker, 'La', 'formule (iv)'). Apply once only: p. 65's checker may report the same move, and a second run would move the marker to an earlier 'La'."
+ },
+ {
+  "page": 66,
+  "where": "first sentence, 'exprime que i_! est un homomorphisme d'anneaux'",
+  "scan": "exprime que i_! (lower shriek, both scans)",
+  "tex": "exprime que $i_*$ est",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "exprime que $i_*$ est",
+   "new": "exprime que $i_!$ est"
+  },
+  "note": "The print distinguishes the hand-drawn lower shriek i_! from i_* (same page: 'i_* et i* proviennent par passage au quotient de i_! et i^!'); NOTE_6: report each."
+ },
+ {
+  "page": 66,
+  "where": "formula (v)",
+  "scan": "(v) i_!(λ^p(N,x)) = λ^p(i_!(x)) pour p ≥ 1 , (both i with the lower shriek)",
+  "tex": "\\item $i_*(\\lambda^p(N,x))=\\lambda^p(i_*(x))$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item $i_*(\\lambda^p(N,x))=\\lambda^p(i_*(x))$",
+   "new": "\\item $i_!(\\lambda^p(N,x))=\\lambda^p(i_!(x))$"
+  },
+  "note": "The print distinguishes the hand-drawn lower shriek i_! from i_* (same page: 'i_* et i* proviennent par passage au quotient de i_! et i^!'); NOTE_6: report each."
+ },
+ {
+  "page": 66,
+  "where": "after (v): 'qui signifie que i_! définit un λ-homomorphisme'",
+  "scan": "qui signifie que i_! définit",
+  "tex": "qui signifie que $i_*$ définit",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "qui signifie que $i_*$ définit",
+   "new": "qui signifie que $i_!$ définit"
+  },
+  "note": "The print distinguishes the hand-drawn lower shriek i_! from i_* (same page: 'i_* et i* proviennent par passage au quotient de i_! et i^!'); NOTE_6: report each."
+ },
+ {
+  "page": 66,
+  "where": "last sentence, 'passage au quotient de i_! et i^!, en notant que i_! décale'",
+  "scan": "par passage au quotient de i_! et i^!, en notant que i_! décale la filtration (both scans)",
+  "tex": "quotient de $i_*$ et $i^!$, en notant que $i_*$ décale",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "quotient de $i_*$ et $i^!$, en notant que $i_*$ décale",
+   "new": "quotient de $i_!$ et $i^!$, en notant que $i_!$ décale"
+  },
+  "note": "The earlier 'que i_* et i* proviennent' of the same sentence is i_* in the print, as in the TeX. The print distinguishes the hand-drawn lower shriek i_! from i_* (same page: 'i_* et i* proviennent par passage au quotient de i_! et i^!'); NOTE_6: report each."
+ },
+ {
+  "page": 66,
+  "where": "'pourvu qu'on se place dans G(K(Y)) et G(K(X)) et non dans A(Y) et A(X)'",
+  "scan": "underlined: 'pourvu qu'on se place dans', 'et', 'et non' + 'dans' (line break), 'et'; the four formulas not (both scans)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "pourvu qu'on se place dans $G(\\underline K(Y))$ et $G(\\underline K(X))$ et non dans $A(Y)$ et $A(X)$",
+   "new": "\\emph{pourvu qu'on se place dans} $G(\\underline K(Y))$ \\emph{et} $G(\\underline K(X))$ \\emph{et non dans} $A(Y)$ \\emph{et} $A(X)$"
+  },
+  "note": "This file writes the typescript's underlined words in running text with \\emph (\\emph{locaux}, p. 69)."
+ },
+ {
+  "page": 66,
+  "where": "before 'Dans ces formules, q est la codimension'",
+  "scan": "'Dans ces formules' starts a new, indented paragraph after (v bis) (both scans)",
+  "tex": "\\end{enumerate} then 'Dans ces formules' on the next line (no blank line: no new paragraph)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{enumerate}\nDans ces formules",
+   "new": "\\end{enumerate}\n\nDans ces formules"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 66,
+  "where": "last line of page_066.tex: 'N.B.' (printed at the top of p. 67)",
+  "scan": "N.B. typed plain: not underlined, not bold (both scans)",
+  "tex": "\\textbf{N.B.}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{N.B.}",
+   "new": "N.B."
+  },
+  "note": "Not a label the typescript underlines, so the bold-label convention does not cover it; the TeX itself has a plain 'N.B. L'homomorphisme' on p. 63. Filed under p. 66 because the line stands in page_066.tex: apply before the folio-67 marker move (see p. 67)."
+ },
+ {
+  "page": 67,
+  "where": "start of page",
+  "scan": "p. 67 begins 'N.B. Toutes les formules \"universelles\" liant i_! et i^!'; p. 66 ends '... de q unités.' (both scans)",
+  "tex": "\\textbf{N.B.} is the last line of page_066.tex (under the folio-66 marker); page_067.tex begins 'Toutes les formules'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 67 really begins with 'N.B.'. After the p. 66 font fix: python -I move_marker.py 6 67 \"N.B.\" --before; without that fix use the anchor \"\\textbf{N.B.}\" (both simulated on both layers: 'unités.', blank line, the marker, 'N.B.', 'Toutes les formules'). With the font fix not applied, the anchor \"N.B.\" would put the marker inside the braces."
+ },
+ {
+  "page": 67,
+  "where": "N.B., 'liant i_! et i^! (resp. i_* et i*)'",
+  "scan": "liant i_! et i^! (resp. i_* et i*)",
+  "tex": "liant $i_*$ et $i^!$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "liant $i_*$ et $i^!$",
+   "new": "liant $i_!$ et $i^!$"
+  },
+  "note": "The 'resp. i_* et i^*' is right. The print distinguishes the hand-drawn lower shriek i_! from i_* (same page: 'i_* et i* proviennent par passage au quotient de i_! et i^!'); NOTE_6: report each."
+ },
+ {
+  "page": 67,
+  "where": "display after 'De la formule (v) résulte la formule'",
+  "scan": "i_!(γ^p(N,x)) = γ^p(i_!(x)) . (both lower shrieks)",
+  "tex": "i_*(\\gamma^p(N,x))=\\gamma^p(i_*(x))",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "i_*(\\gamma^p(N,x))=\\gamma^p(i_*(x))",
+   "new": "i_!(\\gamma^p(N,x))=\\gamma^p(i_!(x))"
+  },
+  "note": "The print distinguishes the hand-drawn lower shriek i_! from i_* (same page: 'i_* et i* proviennent par passage au quotient de i_! et i^!'); NOTE_6: report each."
+ },
+ {
+  "page": 67,
+  "where": "display after 'le théorème 2.16 montre que l'on a'",
+  "scan": "i_*(G_p(N,x)) = c^p(i_!(x)) .",
+  "tex": "i_*(G_p(N,x))=c^p(i_*(x))",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "c^p(i_*(x))",
+   "new": "c^p(i_!(x))"
+  },
+  "note": "The first i_* (before G_p) is right. The print distinguishes the hand-drawn lower shriek i_! from i_* (same page: 'i_* et i* proviennent par passage au quotient de i_! et i^!'); NOTE_6: report each."
+ },
+ {
+  "page": 67,
+  "where": "(2.37), left side",
+  "scan": "c^{q+j}(i_!(x)) = i_*( ... )^{(j)}",
+  "tex": "c^{q+j}(i_*(x))=i_*\\left(",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "c^{q+j}(i_*(x))",
+   "new": "c^{q+j}(i_!(x))"
+  },
+  "note": "The i_* of the right side is right. The print distinguishes the hand-drawn lower shriek i_! from i_* (same page: 'i_* et i* proviennent par passage au quotient de i_! et i^!'); NOTE_6: report each."
+ },
+ {
+  "page": 67,
+  "where": "before 'Le deuxième membre de la formule (2.37)'",
+  "scan": "'Le deuxième membre ...' starts a new, indented paragraph after (2.37) (both scans)",
+  "tex": "\\end{equation} then 'Le deuxième membre' on the next line (no blank line: no new paragraph)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{equation}\nLe deuxième membre",
+   "new": "\\end{equation}\n\nLe deuxième membre"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 67,
+  "where": "(2.38), left side",
+  "scan": "ch(c̃(i_!(x))) = i_*(...)",
+  "tex": "\\ch(\\widetilde c(i_*(x)))",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\ch(\\widetilde c(i_*(x)))",
+   "new": "\\ch(\\widetilde c(i_!(x)))"
+  },
+  "note": "The print distinguishes the hand-drawn lower shriek i_! from i_* (same page: 'i_* et i* proviennent par passage au quotient de i_! et i^!'); NOTE_6: report each."
+ },
+ {
+  "page": 67,
+  "where": "(2.38), right side",
+  "scan": "i_*(ch(c̃(x)) 𝒯(Ň)^{-1}): script T of Todd, the check over N (both scans)",
+  "tex": "\\check{\\mathcal C}(N)^{-1}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\check{\\mathcal C}(N)^{-1}",
+   "new": "\\mathcal T(\\check N)^{-1}"
+  },
+  "note": "Two differences in one place: \\mathcal C for the Todd T, and the check set on the letter instead of on N (the print's Ň, as in (1.30), p. 32: \\mathcal C(\\check N)^{-1}). Handwritten script T of Todd (NOTE_6: \\mathcal T, report each); the print has no check accent on it (its top loop belongs to the letter)."
+ },
+ {
+  "page": 68,
+  "where": "start of page",
+  "scan": "p. 68 begins 'Il suffit d'utiliser (2.37) écrit sous la forme :' (indented; both scans)",
+  "tex": "'Il' is the last line of page_067.tex (under the folio-67 marker); page_068.tex begins 'suffit d'utiliser'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 68 really begins with 'Il'. Move the folio-68 marker up one line: python -I move_marker.py 6 68 \"Il\" --before (simulated on both layers: '(1.26).', blank line, the marker, 'Il', 'suffit d'utiliser')."
+ },
+ {
+  "page": 68,
+  "where": "(2.37 bis), left side",
+  "scan": "c̃(i_!(x)) = 1 + i_*( ... )",
+  "tex": "\\widetilde c(i_*(x))=1+i_*",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\widetilde c(i_*(x))=1+i_*",
+   "new": "\\widetilde c(i_!(x))=1+i_*"
+  },
+  "note": "The second i_* is right. The print distinguishes the hand-drawn lower shriek i_! from i_* (same page: 'i_* et i* proviennent par passage au quotient de i_! et i^!'); NOTE_6: report each."
+ },
+ {
+  "page": 68,
+  "where": "(2.37 bis), numerator",
+  "scan": "c̃(x) * λ_{-1}(c(N)) - 1: no tilde over the c of c(N) (both scans)",
+  "tex": "\\lambda_{-1}(c(N)) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\lambda_{-1}(\\widetilde c(N))",
+  "note": "(2.37 bis) is (2.37) 'écrit sous la forme', and (2.37) has λ_{-1}(c̃(N)): λ_{-1} is taken in the λ-ring of the c̃'s. Probably a hand-drawn tilde left out. The TeX keeps the printed reading; so does the corrected layer."
+ },
+ {
+  "page": 68,
+  "where": "(2.38 bis)",
+  "scan": "i_*(ch_Y(F) 𝒯(T_{X/Y})^{-1}) : script T of Todd, no check (both scans)",
+  "tex": "\\check{\\mathcal C}(T_{X/Y})^{-1}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\check{\\mathcal C}(T_{X/Y})^{-1}",
+   "new": "\\mathcal T(T_{X/Y})^{-1}"
+  },
+  "note": "Handwritten script T of Todd (NOTE_6: \\mathcal T, report each); the print has no check accent on it (its top loop belongs to the letter)."
+ },
+ {
+  "page": 68,
+  "where": "Remarques: 'le produit de leur différence par N^q est nulle'",
+  "scan": "est nulle (both scans)",
+  "tex": "est nulle (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "est nul",
+  "note": "Agreement slip: the subject is 'le produit'. The TeX keeps the printed reading; so does the corrected layer."
+ },
+ {
+  "page": 69,
+  "where": "section heading",
+  "scan": "§ 6. Le théorème de Riemann-Roch (both scans)",
+  "tex": "\\section*{6. Le théorème de Riemann--Roch}",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{6. Le",
+   "new": "\\section*{\\S 6. Le"
+  },
+  "note": "The TeX drops the printed §; same form as \\subsection*{\\S 4. Quelques résultats techniques} (p. 54) and Chap. II §§ 1-3."
+ },
+ {
+  "page": 69,
+  "where": "statement of Riemann-Roch, 'soit f un morphisme propre d'une variété'",
+  "scan": "'propre' not underlined; 'un morphisme' and 'd'une variété' underlined (both scans)",
+  "tex": "\\emph{soit \\(f\\) un morphisme propre d'une variété ...} (propre inside the emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "un morphisme propre d'une variété",
+   "new": "un morphisme} propre \\emph{d'une variété"
+  },
+  "note": "A word the print leaves plain, not a formula or punctuation inside the block (the block decision does not cover it)."
+ },
+ {
+  "page": 69,
+  "where": "(2.39), left side",
+  "scan": "f_*(ch_Y(x) 𝒯(Y)) : script T of Todd, no check (both scans)",
+  "tex": "\\,\\check{\\mathcal C}(Y)\\bigr)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\,\\check{\\mathcal C}(Y)\\bigr)",
+   "new": "\\,\\mathcal T(Y)\\bigr)"
+  },
+  "note": "Handwritten script T of Todd (NOTE_6: \\mathcal T, report each); the print has no check accent on it (its top loop belongs to the letter)."
+ },
+ {
+  "page": 69,
+  "where": "(2.39), right side",
+  "scan": "ch_X(f_*(x)) 𝒯(X) . : script T of Todd, no check (both scans)",
+  "tex": "\\,\\check{\\mathcal C}(X).",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\,\\check{\\mathcal C}(X).",
+   "new": "\\,\\mathcal T(X)."
+  },
+  "note": "Handwritten script T of Todd (NOTE_6: \\mathcal T, report each); the print has no check accent on it (its top loop belongs to the letter)."
+ },
+ {
+  "page": 69,
+  "where": "after (2.39): '(Les deux membres sont dans A(X) ⊗ Q et 𝒯(X) = 𝒯(C(T_X)).)'",
+  "scan": "𝒯(X) = 𝒯(C(T_X)) : script T of Todd twice, no check (both scans)",
+  "tex": "\\(\\check{\\mathcal C}(X)=\\check{\\mathcal C}(C(T_X))\\)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\check{\\mathcal C}(X)=\\check{\\mathcal C}(C(T_X))\\)",
+   "new": "\\(\\mathcal T(X)=\\mathcal T(C(T_X))\\)"
+  },
+  "note": "Handwritten script T of Todd (NOTE_6: \\mathcal T, report each); the print has no check accent on it (its top loop belongs to the letter)."
+ },
+ {
+  "page": 69,
+  "where": "'et l'on démontre (2.39) pour chacun de ces deux morphismes..'",
+  "scan": "morphismes.. (two full stops, both scans)",
+  "tex": "morphismes.. (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "morphismes.",
+  "note": "Typing slip. The TeX keeps the printed reading; so does the corrected layer."
+ },
+ {
+  "page": 70,
+  "where": "start of page",
+  "scan": "p. 70 begins 'z ∈ K(X). Alors, la formule de Künneth ...'; p. 69 ends '... avec y ∈ K(P) et' (both scans)",
+  "tex": "'\\(z\\in\\underline K(X)\\).' ends the last line of page_069.tex (under the folio-69 marker); page_070.tex begins 'Alors,'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 70 really begins with 'z ∈ K(X).'. Split the line at the marker: python -I move_marker.py 6 70 \"\\(z\\in\\underline K(X)\\)\" --before (simulated on both layers: '... avec \\(y\\in\\underline K(P)\\) et', the marker, '\\(z\\in\\underline K(X)\\).', 'Alors, la formule' on the next line, same paragraph)."
+ },
+ {
+  "page": 70,
+  "where": "(2.40)",
+  "scan": "χ(F) = ϰ_r(ch_P(F) 𝒯(P)) : subscript capital P, the space (both scans)",
+  "tex": "\\varkappa_r\\bigl(\\ch_p(F)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\varkappa_r\\bigl(\\ch_p(F)",
+   "new": "\\varkappa_r\\bigl(\\ch_P(F)"
+  },
+  "note": "Letter shapes measured: the subscripts of ch on this page have the capital P's short bowl and wide foot (as P in '(P)'), the exponents p of ξ^p and (1-e^{-L})^p the small p's deep bowl; ch_P as γ_P (TeX \\gamma_P)."
+ },
+ {
+  "page": 70,
+  "where": "(2.40), Todd class",
+  "scan": "𝒯(P) : script T of Todd, no check (both scans)",
+  "tex": "\\,\\check{\\mathcal C}(P)\\bigr)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\,\\check{\\mathcal C}(P)\\bigr)",
+   "new": "\\,\\mathcal T(P)\\bigr)"
+  },
+  "note": "Handwritten script T of Todd (NOTE_6: \\mathcal T, report each); the print has no check accent on it (its top loop belongs to the letter)."
+ },
+ {
+  "page": 70,
+  "where": "display after 'd'où :'",
+  "scan": "C_P(1 - ξ) = [1, 1 - L] , : capital C (height of E and L, not of the c of ch) and subscript capital P (both scans)",
+  "tex": "c_p(1-\\xi)=[1,1-L],",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "c_p(1-\\xi)=[1,1-L]",
+   "new": "C_P(1-\\xi)=[1,1-L]"
+  },
+  "note": "C is the Chow-valued class: [1, 1 - L] is its pair [rank, total class], as \\Ctil(E)=[rang E, ΣC^i(E)] (2.4)."
+ },
+ {
+  "page": 70,
+  "where": "display after 'et par suite'",
+  "scan": "ch_P(1 - ξ) = e^{-L} , d'où ch_P(ξ) = 1 - e^{-L} , (subscripts capital P)",
+  "tex": "\\ch_p(1-\\xi)=e^{-L},\\qquad\\text{d'où}\\qquad \\ch_p(\\xi)=1-e^{-L},",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\ch_p(1-\\xi)=e^{-L},\\qquad\\text{d'où}\\qquad \\ch_p(\\xi)",
+   "new": "\\ch_P(1-\\xi)=e^{-L},\\qquad\\text{d'où}\\qquad \\ch_P(\\xi)"
+  },
+  "note": "As (2.40)."
+ },
+ {
+  "page": 70,
+  "where": "display after 'et donc'",
+  "scan": "ch_P(ξ^p) = (1 - e^{-L})^p . (subscript capital P, exponents small p)",
+  "tex": "\\ch_p(\\xi^p)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\ch_p(\\xi^p)",
+   "new": "\\ch_P(\\xi^p)"
+  },
+  "note": "As (2.40)."
+ },
+ {
+  "page": 70,
+  "where": "display after 'on en déduit', left side",
+  "scan": "ch_P(F) 𝒯(P) = ... (subscript capital P)",
+  "tex": "\\ch_p(F)\\,\\check{\\mathcal C}(P)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\[\n  \\ch_p(F)",
+   "new": "\\[\n  \\ch_P(F)"
+  },
+  "note": "As (2.40)."
+ },
+ {
+  "page": 70,
+  "where": "display after 'on en déduit', Todd class",
+  "scan": "𝒯(P) : script T of Todd, no check (both scans)",
+  "tex": "\\,\\check{\\mathcal C}(P) (end of line)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\,\\check{\\mathcal C}(P)\n",
+   "new": "\\,\\mathcal T(P)\n"
+  },
+  "note": "Handwritten script T of Todd (NOTE_6: \\mathcal T, report each); the print has no check accent on it (its top loop belongs to the letter)."
+ },
+ {
+  "page": 70,
+  "where": "'Or si p est la dimension de Q dans P'",
+  "scan": "Or si p est la dimension de Q dans P , on a ξ^p = γ_P(Q)",
+  "tex": "la dimension de \\(Q\\) dans \\(P\\) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "la codimension de \\(Q\\) dans \\(P\\)",
+  "note": "ξ is the class of O_V for a hyperplane V, so ξ^p = γ_P(Q) for a linear Q cut out by p hyperplanes: p is the codimension, and the factor (1-e^{-L})^p of the next display uses it so. The TeX keeps the printed reading; so does the corrected layer."
+ },
+ {
+  "page": 70,
+  "where": "last line, '(poser q = r + 1 - p)'",
+  "scan": "(poser q = r + 1 - p) .",
+  "tex": "(poser \\(q=r+1-p\\)) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(poser \\(q=r-p\\))",
+  "note": "(L/(1-e^{-L}))^{r+1}(1-e^{-L})^p = L^p (L/(1-e^{-L}))^{r+1-p}, so the coefficient of L^r is that of L^{r-p} in (L/(1-e^{-L}))^{r-p+1}: the stated property applies with q = r - p (q + 1 = r + 1 - p). The TeX keeps the printed reading; so does the corrected layer."
+ }
+]

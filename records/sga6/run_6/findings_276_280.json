@@ -1,0 +1,143 @@
+[
+  {
+    "page": 277,
+    "where": "page start",
+    "scan": "p. 277 begins 'Il résulte aussitôt de (1.4) que φ est inverse de l'homomorphisme canonique'; p. 276 ends with the display φ : k(D^b_A(C)) → k(A) . and the footnote (both scans)",
+    "tex": "'Il' is the last line of page_276.tex, above the folio-277 marker; page_277.tex begins 'résulte aussitôt de (1.4)'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "The folio-277 marker stands one word late. Page 277 really begins at 'Il résulte'. Exact fix in main.tex (both layers): replace '\\]\\nIl\\n%%%%%%%%%%  scan idx 290  |  folio 277  %%%%%%%%%%\\nrésulte aussitôt' by '\\]\\n%%%%%%%%%%  scan idx 290  |  folio 277  %%%%%%%%%%\\nIl résulte aussitôt' (no blank line: 'Il résulte' continues the paragraph at the left margin). marker_split_word.py pull 'Il' would give 'Ilrésulte' without a space."
+  },
+  {
+    "page": 277,
+    "where": "first lines, after 'l'homomorphisme canonique'",
+    "scan": "k(A) → k(D^b_A(C)). stands in the running text, at the left margin of the line after '... l'homomorphisme canonique', at ordinary line spacing; the next line is the blank before Remarque 1.6.1 (both scans)",
+    "tex": "\\[ k(A)\\longrightarrow k(D_A^b(C)). \\]",
+    "kind": "other",
+    "confidence": "medium",
+    "fix": {"old": "canonique\n\\[\n k(A)\\longrightarrow k(D_A^b(C)).\n\\]", "new": "canonique \\(k(A)\\longrightarrow k(D_A^b(C))\\)."},
+    "note": "The print sets the map inline at the end of the sentence; the TeX makes it a display (same kind of fix as pp. 21, 34, 42, 80, 105). The paragraph break before Remarque 1.6.1 stays."
+  },
+  {
+    "page": 278,
+    "where": "page start",
+    "scan": "p. 278 begins 'on peut écrire, comme on le voit facilement, x = cl(E') - cl(E\") pour'; p. 277 ends 'Soit alors x ∈ k(C) ;' (both scans)",
+    "tex": "'on' ends the last line of page_277.tex ('Soit alors \\(x\\in k(C)\\); on'), above the folio-278 marker; page_278.tex begins 'peut écrire'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "The folio-278 marker stands one word late. Page 278 really begins at 'on peut écrire'. Exact fix in main.tex (both layers): replace 'Soit alors \\(x\\in k(C)\\); on\\n%%%%%%%%%%  scan idx 291  |  folio 278  %%%%%%%%%%\\npeut écrire' by 'Soit alors \\(x\\in k(C)\\);\\n%%%%%%%%%%  scan idx 291  |  folio 278  %%%%%%%%%%\\non peut écrire'. marker_split_word.py pull 'on' would give 'onpeut' without a space."
+  },
+  {
+    "page": 278,
+    "where": "Exercice 1.9, Hint, second line",
+    "scan": "qui sont extensions de deux objets de C_{i-1} . Prouver que A_i vérifie ... (both scans)",
+    "tex": "extensions de deux objets de \\(C_{i-1}\\)",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "A_{i-1}",
+    "note": "The A_i are defined by recursion from A_0 = A (and must satisfy the same hypotheses as A), so A_i consists of the extensions of two objects of A_{i-1}; C_{i-1} is carried over from the proof of Lemme 1.8 and is not defined in this exercise. The TeX keeps the printed reading; the corrected layer should read A_{i-1}."
+  },
+  {
+    "page": 278,
+    "where": "Exercice 1.9, Hint, last sentence",
+    "scan": "l'homomorphisme canonique lim k(A_i,C) → k(C): 'lim' with an arrow under it and no index under the arrow (both scans; the only i is the subscript of A_i)",
+    "tex": "\\varinjlim_i k(A_i,C)",
+    "kind": "extra",
+    "confidence": "high",
+    "fix": {"old": "\\varinjlim_i k(A_i,C)", "new": "\\varinjlim k(A_i,C)"},
+    "note": "The TeX adds the index i under the direct limit."
+  },
+  {
+    "page": 278,
+    "where": "heading of § 2 (first of the K' forms of Exposé IV)",
+    "scan": "2. Les foncteurs K. et K˙ d'un topos annelé: the second K carries a raised dot (round, at cap height; the apostrophe of d'un beside it is a vertical tick), i.e. K^•; the same raised-dot K on pp. 279-280 (both scans)",
+    "tex": "\\section*{2. Les foncteurs \\(K_{\\bullet}\\) et \\(K'\\) d'un topos annelé}",
+    "kind": "symbol",
+    "confidence": "high",
+    "fix": null,
+    "note": "Convention of the Exposé IV transcription, reported once: the print's K with a raised dot (K^•, the contravariant functor; Exposé 0 writes K^\\bullet) is written K' throughout Exposé IV: 151 K' in main.tex, folios 278-296 (128 K'(, 12 K'_{\\naif}, 1 K_{\\loc}', the rest in headings and the macro block's \\Kprime = K', which is unused); no K^\\bullet and no K'' in the exposé. Three examples: p. 278 heading '\\(K'\\) d'un topos annelé'; p. 279 Déf. 2.2 'K'({}_A X)=k(D({}_A X)_{\\parf})'; p. 280 (2.5.1) 'K'({}_A X)\\longrightarrow K_\\bullet({}_A X)'. On pp. 278-280 every K' (1 + 6 + 2, including K_{\\loc}' for the printed K˙ with index loc on p. 279) is the raised-dot K. Global fix, both layers, after a spot check of later folios: K' -> K^{\\bullet}, K_{\\loc}' -> K^{\\bullet}_{\\loc}, \\Kprime -> K^{\\bullet}."
+  },
+  {
+    "page": 278,
+    "where": "2.1, second notation",
+    "scan": "D(_A X) with index 'parf' underlined = catégorie des complexes de A-Modules à gauche d'amplitude parfaite finie (I 5.8.4) (both scans)",
+    "tex": "\\(D({}_A X)_{\\parf}\\)",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "D({}_A X)_{\\parf}", "new": "D({}_A X)_{\\uparf}"},
+    "note": "\\parf prints plain parf; the file defines \\uparf (underlined parf, used in Exposé III 4.2 for 'amplitude parfaite finie'). The underline is the notation for finite perfect amplitude, as against plain parf (perfect complexes), which the print uses in Remarques 2.3 a) on p. 279, where the TeX's \\parf is right."
+  },
+  {
+    "page": 279,
+    "where": "Déf. 2.2, second line of the first display",
+    "scan": "K˙(_A X) = k(D(_A X)_parf) , with 'parf' underlined (both scans)",
+    "tex": "K'({}_A X)=k(D({}_A X)_{\\parf}),",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "D({}_A X)_{\\parf}),", "new": "D({}_A X)_{\\uparf}),"},
+    "note": "As on p. 278 (2.1). The other \\parf of the page (Remarques 2.3 a), K˙_loc(_A X) = k(D(_A X)_parf) .) is plain in the print and stays. The K' of this line belongs to the K' convention entry of p. 278."
+  },
+  {
+    "page": 280,
+    "where": "page start",
+    "scan": "p. 280 begins 'b) Le groupe K.(_A X)_naïf n'a pratiquement d'intérêt que si A est'; p. 279 ends with Remarques 2.3 a) ('... calcul des intersections.') and the footnote (both scans)",
+    "tex": "'\\item Le' is the last line of page_279.tex, above the folio-280 marker; page_280.tex begins 'groupe \\(K_\\bullet({}_A X)_{\\naif}\\)'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "The folio-280 marker stands one word late (the item label b) and 'Le' sit on p. 279). Page 280 really begins at 'b) Le groupe'. Exact fix in main.tex (both layers): replace '\\item Le\\n%%%%%%%%%%  scan idx 293  |  folio 280  %%%%%%%%%%\\ngroupe' by '%%%%%%%%%%  scan idx 293  |  folio 280  %%%%%%%%%%\\n\\item Le groupe'."
+  },
+  {
+    "page": 280,
+    "where": "2.4, first sentence",
+    "scan": "où A est supposé cohérent en tant que A-Module à gauche, with 'cohérent' underlined (both scans)",
+    "tex": "où \\(A\\) est supposé cohérent en tant que",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "supposé cohérent en tant", "new": "supposé \\emph{cohérent} en tant"},
+    "note": "Exposé IV writes the typescript's underline as \\emph (no \\underline in the exposé)."
+  },
+  {
+    "page": 280,
+    "where": "2.4, end: 'que l'homomorphisme' before (2.4.2)",
+    "scan": "Par suite, il résulte de (1.6) que l'homomorphisme, with 'l'homomorphisme' underlined (both scans)",
+    "tex": "il résulte de (1.6) que l'homomorphisme",
+    "kind": "underline",
+    "confidence": "medium",
+    "fix": {"old": "que l'homomorphisme", "new": "que \\emph{l'homomorphisme}"},
+    "note": "2.4 ends with its assertion underlined word group by word group: l'homomorphisme / (2.4.2) / défini par / (2.4.1) / est un isomorphisme (the formulas and the full stop not underlined). Apply together with the next entry. If the GLOBAL_ISSUES 82 statement pass is extended to Exposé IV and covers such run-in assertions inside numbered paragraphs, drop both."
+  },
+  {
+    "page": 280,
+    "where": "2.4, line after (2.4.2)",
+    "scan": "défini par (2.4.1) est un isomorphisme. with 'défini par' and 'est un isomorphisme' underlined, the full stop not (both scans)",
+    "tex": "défini par (2.4.1) est un isomorphisme.",
+    "kind": "underline",
+    "confidence": "medium",
+    "fix": {"old": "défini par (2.4.1) est un isomorphisme.", "new": "\\emph{défini par} (2.4.1) \\emph{est un isomorphisme}."},
+    "note": "Second half of the underlined assertion of 2.4; apply together with the previous entry."
+  },
+  {
+    "page": 280,
+    "where": "2.5, first sentence",
+    "scan": "Le foncteur d'inclusion D(_A X)_parf ↪ D^b(_A X)_coh, with 'parf' underlined (both scans)",
+    "tex": "\\(D({}_A X)_{\\parf}\\hookrightarrow D^b({}_A X)_{\\coh}\\)",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "D({}_A X)_{\\parf}\\hookrightarrow", "new": "D({}_A X)_{\\uparf}\\hookrightarrow"},
+    "note": "As on pp. 278-279: the underlined parf (finite perfect amplitude) of 2.1, written \\uparf in this file. The first lines of p. 281 have the same underlined D(_A X)_parf."
+  },
+  {
+    "page": 280,
+    "where": "page end",
+    "scan": "p. 280 ends 'Cependant, faisons les hypothèses suivantes :'; '(i) l'objet final de X est quasi-compact ;' is the first line of p. 281 (both scans)",
+    "tex": "page_280.tex ends with '\\begin{enumerate}[label=(\\roman*)]' and '\\item l'%', above the folio-281 marker; page_281.tex begins 'objet final de \\(X\\)'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "The folio-281 marker splits l'objet: item (i) and 'l'' sit under the folio-280 marker. Page 281 really begins at '(i) l'objet final'. Exact fix in main.tex (both layers): replace '\\item l'%\\n%%%%%%%%%%  scan idx 294  |  folio 281  %%%%%%%%%%\\nobjet final' by '%%%%%%%%%%  scan idx 294  |  folio 281  %%%%%%%%%%\\n\\item l'objet final' (the \\begin{enumerate} line stays on p. 280). The same boundary as the page start of p. 281 (batch 281-285)."
+  }
+]

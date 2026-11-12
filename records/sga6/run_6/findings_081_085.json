@@ -1,0 +1,183 @@
+[
+ {
+  "page": 81,
+  "where": "1st paragraph, 'Aussi s'avère-t-il commode - et utile'",
+  "scan": "commode - et utile (typewriter hyphen, spaced, as dash)",
+  "tex": "commode~-- et utile",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "commode~-- et",
+   "new": "commode~- et"
+  },
+  "note": "The typescript has only the hyphen key (the same glyph as in s'avère-t-il); the TeX adds an en dash. One decision with the joint-name dash may cover it (main.tex has 5 '~--' and 18 ' -- ')."
+ },
+ {
+  "page": 81,
+  "where": "same sentence, 'notamment dans l'Exp. II - d'axiomatiser'",
+  "scan": "l'Exp. II - d'axiomatiser (typewriter hyphen)",
+  "tex": "l'Exp.\\ II~-- d'axiomatiser",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "II~-- d'axiomatiser",
+   "new": "II~- d'axiomatiser"
+  },
+  "note": "The typescript has only the hyphen key (the same glyph as in s'avère-t-il); the TeX adds an en dash. One decision with the joint-name dash may cover it (main.tex has 5 '~--' and 18 ' -- ')."
+ },
+ {
+  "page": 82,
+  "where": "line 1, 'sont donnés dans l'Exp. II. On montre en particulier'",
+  "scan": "the line runs on: 'sont donnés dans l'Exp. II. On montre en particulier qu'il existe des résolu-'",
+  "tex": "blank line (new paragraph) after 'sont donnés dans l'Exp.\\ II.'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "dans l'Exp.\\ II.\n\nOn montre",
+   "new": "dans l'Exp.\\ II. On montre"
+  },
+  "note": "The transcription adds a paragraph break that the print does not have (the typescript indents its paragraphs)."
+ },
+ {
+  "page": 82,
+  "where": "'A titre d'illustration - et pour mettre en évidence'",
+  "scan": "illustration - et pour (typewriter hyphen)",
+  "tex": "illustration~-- et pour",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "illustration~-- et",
+   "new": "illustration~- et"
+  },
+  "note": "The typescript has only the hyphen key (the same glyph as in s'avère-t-il); the TeX adds an en dash. One decision with the joint-name dash may cover it (main.tex has 5 '~--' and 18 ' -- ')."
+ },
+ {
+  "page": 82,
+  "where": "'des notions introduites - on donne en appendice'",
+  "scan": "introduites - on donne (typewriter hyphen)",
+  "tex": "introduites~-- on donne",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "introduites~-- on",
+   "new": "introduites~- on"
+  },
+  "note": "The typescript has only the hyphen key (the same glyph as in s'avère-t-il); the TeX adds an en dash. One decision with the joint-name dash may cover it (main.tex has 5 '~--' and 18 ' -- ')."
+ },
+ {
+  "page": 83,
+  "where": "lines 2-3, 'p^{-1}(O_S)). Le théorème central'",
+  "scan": "the line runs on: '... d'anneaux p^{-1}(O_S)). Le' / 'théorème central de l'Exp. III ...'",
+  "tex": "blank line (new paragraph) before 'Le théorème central'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\mathcal O_S)\\)).\n\nLe théorème",
+   "new": "(\\mathcal O_S)\\)). Le théorème"
+  },
+  "note": "The transcription adds a paragraph break that the print does not have."
+ },
+ {
+  "page": 83,
+  "where": "'le foncteur Rf_* transforme complexes pseudo-cohérents'",
+  "scan": "double-struck R: ℝf_* (doubled stem, both scans)",
+  "tex": "\\(Rf_*\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(Rf_*\\)",
+   "new": "\\(\\mathbb{R}f_*\\)"
+  },
+  "note": "The print's derived-functor R is double-struck here; Exposé I's TeX writes it plain throughout (\\RHom = \\mathrm R\\!\\Hom; the print has ℝHom on p. 116). See the message."
+ },
+ {
+  "page": 83,
+  "where": "'a) S est localement noethérien' / 'b) f est projectif'",
+  "scan": "a) and b) set on two lines; no punctuation after 'noethérien' (both scans)",
+  "tex": "a)~\\(S\\) est localement noethérien; b)~\\(f\\) est projectif;",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "noethérien; b)",
+   "new": "noethérien b)"
+  },
+  "note": "The TeX adds a semicolon to join the print's two-line list."
+ },
+ {
+  "page": 84,
+  "where": "1.1.1, last sentence, 'S-catégorie abe-/lienne plate'",
+  "scan": "abe-/lienne without accent on the e (both scans; the OCR also reads 'abelienne')",
+  "tex": "abélienne \\emph{plate}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "abélienne \\emph{plate}",
+   "new": "abelienne \\emph{plate}"
+  },
+  "corrected": "abélienne \\emph{plate}",
+  "note": "Missing accent in the print; the TeX silently corrects it."
+ },
+ {
+  "page": 84,
+  "where": "1.1.2, '(SGA 1 VI 7,1)'",
+  "scan": "7,1 with a comma (tail below the line in both scans; '6.1' in 1.1.1 has a round full stop)",
+  "tex": "(SGA 1 VI 7.1)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "VI 7.1)",
+   "new": "VI 7,1)"
+  },
+  "corrected": "VI 7.1)",
+  "note": "The typist's comma for the full stop; the TeX silently corrects it."
+ },
+ {
+  "page": 84,
+  "where": "1.1.3, 'S-foncteur additif (resp. exact)'",
+  "scan": "only 'exact' is underlined, not 'resp.' (both scans)",
+  "tex": "(\\emph{resp.\\ exact})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\emph{resp.\\ exact})",
+   "new": "(resp.\\ \\emph{exact})"
+  },
+  "note": ""
+ },
+ {
+  "page": 84,
+  "where": "pp. 84-85 throughout: the base category / site S",
+  "scan": "S underlined (S̲) everywhere it names the base category or site: 14 times on p. 84, 20 on p. 85",
+  "tex": "plain S: p. 84 'Soit \\(S\\) une catégorie', '\\(f:X\\to Y\\) de \\(S\\)'; p. 85 'Soient \\(S\\) un site', 'de \\(S_{/X}\\)', '\\(X\\in\\Ob S\\)'",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, not a page fix: the print's underline marks categories (S̲, C̲, O̲); the TeX writes C̲ as \\mathcal C and O̲ as \\mathcal O but drops the underline of S̲ (main.tex has \\underline S only in the index of notations). The print has S̲ elsewhere in Exposé I too (p. 116 '(S̲,A)'). One decision for the exposé."
+ },
+ {
+  "page": 85,
+  "where": "footnote (2), 'si a ∈ ob D(C_Y)(resp. Fl D(C_Y))'",
+  "scan": "between F and D a short slanted stroke with a foot, squeezed in after typing (no type cell of its own; both scans): read 'Fl' (arrows), as the exposé types 'u ∈ Fl(S̲)' on p. 142",
+  "tex": "\\(F/\\Dpx(\\mathcal C_Y)\\)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\(F/\\Dpx(\\mathcal C_Y)\\)",
+   "new": "\\(\\mathrm{Fl}\\,\\Dpx(\\mathcal C_Y)\\)"
+  },
+  "note": "'F/D(C_Y)' has no meaning here; the footnote covers an object (resp. an arrow) a of D(C_Y). \\mathrm{Fl} is the file's own form (p. 142). If the stroke is read as a typed slash, the print has a misprint and the corrected layer needs the same change."
+ },
+ {
+  "page": 85,
+  "where": "1.2, 2nd paragraph, 'avec E ∈ ob C_oU est un crible'",
+  "scan": "subscript 'oU' without a comma (both scans)",
+  "tex": "\\mathcal C_{0,U}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal C_{0,U}",
+   "new": "\\mathcal C_{0U}"
+  },
+  "note": "The TeX adds a comma between the two indices."
+ }
+]

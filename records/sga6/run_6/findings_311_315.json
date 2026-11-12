@@ -1,0 +1,403 @@
+[
+ {
+  "page": 311,
+  "where": "start of page (folio-311 marker)",
+  "scan": "p. 311 begins '1+X de 1+K[X]^+ est injective ; son image est le sous-groupe de H(K[X])'; p. 310 ends '... qui, à un morphisme de foncteurs, associe sa valeur sur l'élément' (both scans; witness of p. 310 checked)",
+  "tex": "'\\(1+X\\) de \\(1+\\widehat{K[X]}^+\\) est' ends the last line of page_310.tex, above the folio-311 marker; page_311.tex begins 'injective;'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 311 really begins with '\\(1+X\\) de \\(1+\\widehat{K[X]}^+\\) est injective'. Move the folio-311 marker up before it: python -I move_marker.py 6 311 '\\(1+X\\) de \\(1+\\widehat{K[X]}^+\\) est' --before (simulated in memory on both layers of the present main.tex with crops_311_315/sim_marker.py: '... associe sa valeur sur l'élément ' / the marker / '\\(1+X\\) de \\(1+\\widehat{K[X]}^+\\) est' / 'injective; son image ...'; the paragraph still reads continuously). Apply once; the batch of pp. 306-310 may report the same boundary as the end of p. 310."
+ },
+ {
+  "page": 311,
+  "where": "Théorème 1.13 ii), 'mod. F^nH(K[X_1,...X_n])'",
+  "scan": "K[X_1,...X_n]: a comma after X_1, none between the stops and X_n (both scans; crops_311_315/c311_ii.png, wit_311_small.png); the two later displays of the page have X_1,...,X_n",
+  "tex": "\\mathrm{mod.}\\ F^nH(K[X_1,\\ldots,X_n])",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathrm{mod.}\\ F^nH(K[X_1,\\ldots,X_n])",
+   "new": "\\mathrm{mod.}\\ F^nH(K[X_1,\\ldots X_n])"
+  },
+  "corrected": "K[X_1,\\ldots,X_n]",
+  "note": "The typist dropped the comma before X_n; the TeX silently supplies it. The diplomatic layer keeps the printed reading; the corrected layer keeps the comma."
+ },
+ {
+  "page": 311,
+  "where": "Remarque 1.14, display, 'H(B) ⥲ Lim H(B/B^{≥n})'",
+  "scan": "an arrow with a tilde above it (⥲), not ≃ (both scans; crops_311_315/c311_iso.png)",
+  "tex": "H(B)\\simeq\\varprojlim_n",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "H(B)\\simeq",
+   "new": "H(B)\\xrightarrow{\\sim}"
+  },
+  "note": "As the isomorphism arrows of pp. 298-299 (\\xrightarrow{\\sim}). Independent of the next entry."
+ },
+ {
+  "page": 311,
+  "where": "Remarque 1.14, display, the inverse limit",
+  "scan": "a typed 'Lim' with a capital L, a hand-drawn ← under it and n below (both scans; c311_iso.png, c311_lim.png)",
+  "tex": "\\varprojlim_n (prints a small 'lim')",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\varprojlim_n",
+   "new": "\\mathop{\\underleftarrow{\\mathrm{Lim}}}\\limits_n"
+  },
+  "note": "Same form as the p. 205 fix for a printed Lim (\\underleftarrow is amsmath)."
+ },
+ {
+  "page": 311,
+  "where": "after the display of Théorème 1.13 i)-ii): 'Immédiat à partir de 1.6 et 1.12.'",
+  "scan": "'Immédiat ...' begins a new, indented paragraph (the proof) (both scans)",
+  "tex": "\\]\nImmédiat à partir (same paragraph as the display)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nImmédiat à partir",
+   "new": "\\]\n\nImmédiat à partir"
+  },
+  "note": "Missing paragraph break (as on pp. 301-304)."
+ },
+ {
+  "page": 311,
+  "where": "Remarque 1.14, after the display 'H(f_n)∘u_H^n(θ) - u_H^n(θ) ∈ F^nH(K[X_1,...,X_n]).'",
+  "scan": "'Pour se donner un morphisme de foncteurs ...' begins a new, indented paragraph (both scans)",
+  "tex": "\\]\nPour se donner (same paragraph as the display)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nPour se donner",
+   "new": "\\]\n\nPour se donner"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 311,
+  "where": "statements of Exposé V on these pages: Théorème 1.13 (end, p. 311), Définition 2.1 (p. 314), Lemme 2.2.1 (p. 315)",
+  "scan": "underlined word group by word group: p. 311 'est injective', 'son image est le sous-groupe de', 'formé des éléments', 'tels que', 'notations de'; p. 314 'On appelle', 'un anneau', 'commutatif à élément unité', 'muni d'un homomorphisme de groupes abéliens', 'tel que pour tout' (the defined term pré-λ-anneau is left plain); p. 315 'une suite exacte de', 'A-Modules qui est localement scindée', 'par exemple telle que', 'soit localement facteur direct d'un Module libre de type fini', 'Il existe sur', 'une filtration finie', 'et des isomorphismes' (both scans)",
+  "tex": "the statements in roman (no \\underline, no \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé V continues the Exposé II-IV pattern of GLOBAL_ISSUES 82 (as reported for p. 298): not itemized, for the scripted per-exposé decision. On pp. 311-315 the TeX puts no \\emph on defined terms the print leaves plain, and there is no category L; the underlined defined terms outside statements are itemized (pp. 312, 314)."
+ },
+ {
+  "page": 312,
+  "where": "start of page (folio-312 marker)",
+  "scan": "p. 312 begins '(1.7) que Φ est déterminé par sa valeur sur l'élément'; p. 311 ends '... un morphisme de foncteurs. Nous avons vu' (both scans)",
+  "tex": "'(1.7) que \\(\\Phi\\) est' ends the last line of page_311.tex, above the folio-312 marker; page_312.tex begins 'déterminé'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 312 really begins with '(1.7) que \\(\\Phi\\) est déterminé'. Move the folio-312 marker up before it: python -I move_marker.py 6 312 '(1.7) que' --before (simulated in memory on both layers with crops_311_315/sim_marker.py: '... un morphisme de foncteurs. Nous avons vu ' / the marker / '(1.7) que \\(\\Phi\\) est' / 'déterminé par sa valeur ...'). Apply once: a second run would take an earlier '(1.7) que'. Independent of the folio-311 move."
+ },
+ {
+  "page": 312,
+  "where": "line 2, index of (φ^{(j)})",
+  "scan": "(φ^{(j)})_{j=1..k}: two stops, no commas (both scans; crops_311_315/c312_l2.png)",
+  "tex": "(\\varphi^{(j)})_{j=1,\\ldots,k}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\varphi^{(j)})_{j=1,\\ldots,k}",
+   "new": "(\\varphi^{(j)})_{j=1..k}"
+  },
+  "note": "The TeX normalizes the print's 'j=1..k' (three times on this page)."
+ },
+ {
+  "page": 312,
+  "where": "line 2, (Ĝ(K[X_i^{(j)}]_{i≥1, j=1..k}))^k",
+  "scan": "the index of ] is stacked: 'i≥1' over 'j=1..k', no comma (both scans; c312_l2.png)",
+  "tex": "]_{i\\geq1,\\ j=1,\\ldots,k}))^k",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "]_{i\\geq1,\\ j=1,\\ldots,k}))^k",
+   "new": "]_{\\substack{i\\geq1\\\\ j=1..k}}))^k"
+  },
+  "note": "\\substack (amsmath) gives the stacked index without the added comma; 1..k as printed."
+ },
+ {
+  "page": 312,
+  "where": "'série formelle à coefficients dans K[X_i^{(j)}]_{i≥1,j=1..k}'",
+  "scan": "K[X_i^{(j)}]_{i≥1,j=1..k} (both scans; c312_l3.png)",
+  "tex": "K[X_i^{(j)}]_{i\\geq1,\\ j=1,\\ldots,k}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "]_{i\\geq1,\\ j=1,\\ldots,k}\\)~;",
+   "new": "]_{i\\geq1,\\ j=1..k}\\)~;"
+  },
+  "note": "As the first entry of the page."
+ },
+ {
+  "page": 312,
+  "where": "'tel que Ĝ, Ĝ_g, Ĝ_a, 1+\\widehat{Gr.}^+, etc..'",
+  "scan": "1+\\widehat{Gr.}^+: the hat covers 'Gr.' with its dot, the placeholder of 1+.^+ (both scans; c312_l3.png)",
+  "tex": "1+\\widehat{\\operatorname{Gr}}^{+}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "1+\\widehat{\\operatorname{Gr}}^{+}",
+   "new": "1+\\widehat{\\operatorname{Gr}\\,\\cdot\\,}^{+}"
+  },
+  "note": "The dot is dropped here and in the six forms of p. 313; \\,\\cdot\\, is the file's own rendering of the placeholder dot (1+\\widehat{\\,\\cdot\\,}^{+}). Elsewhere in Exposé V the same printed Gr. is written \\widehat{\\operatorname{Gr}(\\,\\cdot\\,)}^{+} (folios 309-310; the print of p. 310 has no parentheses) and \\widehat{\\operatorname{Gr}}^{+} (folios 344, 346, not checked here)."
+ },
+ {
+  "page": 312,
+  "where": "'le n-ième coefficient de cette série sera appelé n-ième polynôme universel de Φ'",
+  "scan": "'n-ième polynôme universel de' underlined, from the n to 'de'; Φ not (both scans; c312_def.png)",
+  "tex": "appelé \\(n\\)-ième polynôme universel de \\(\\Phi\\) (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "appelé \\(n\\)-ième polynôme universel de \\(\\Phi\\)",
+   "new": "appelé \\emph{\\(n\\)-ième polynôme universel de} \\(\\Phi\\)"
+  },
+  "note": "A defined term outside a statement; \\emph is this exposé's command for the typescript's underline in running text (\\emph{anneau de Chern}, \\emph{caractère de Chern} in § 6)."
+ },
+ {
+  "page": 312,
+  "where": "'on calcule les éléments Φ(1+X_1^{(1)}t+...+X_n^{(1)}t^n,...,1+X_1^{(k)}t+...+X_n^{(k)}t^n)'",
+  "scan": "baseline stops in both '+...+' (both scans)",
+  "tex": "+\\cdots+ (twice)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\Phi(1+X_1^{(1)}t+\\cdots+X_n^{(1)}t^n,\\ldots,1+X_1^{(k)}t+\\cdots+X_n^{(k)}t^n)",
+   "new": "\\Phi(1+X_1^{(1)}t+\\ldots+X_n^{(1)}t^n,\\ldots,1+X_1^{(k)}t+\\ldots+X_n^{(k)}t^n)"
+  },
+  "note": "\\cdots sets the dots at mid-height; the typescript has baseline stops (same kind of fix as pp. 298-299)."
+ },
+ {
+  "page": 312,
+  "where": "'en décomposant 1+X_1^{(i)}t+...+X_n^{(i)}t^n'",
+  "scan": "baseline stops (both scans)",
+  "tex": "1+X_1^{(i)}t+\\cdots+X_n^{(i)}t^n",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "en décomposant \\(1+X_1^{(i)}t+\\cdots+X_n^{(i)}t^n\\)",
+   "new": "en décomposant \\(1+X_1^{(i)}t+\\ldots+X_n^{(i)}t^n\\)"
+  },
+  "note": "As the entry before."
+ },
+ {
+  "page": 313,
+  "where": "first paragraph, 'Considérons maintement le morphisme canonique'",
+  "scan": "maintement (both scans)",
+  "tex": "maintement (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "maintenant",
+  "note": "Typing slip for 'maintenant'. The diplomatic TeX keeps the printed reading; the corrected layer still reads 'maintement' too (current/main.tex, the only occurrence) and should read 'maintenant'."
+ },
+ {
+  "page": 313,
+  "where": "'le morphisme canonique : H → 1+\\widehat{Gr.}^+ ;'",
+  "scan": "Gr. with its dot under the hat (both scans)",
+  "tex": "\\widehat{\\operatorname{Gr}}^{+}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(H\\longrightarrow1+\\widehat{\\operatorname{Gr}}^{+}\\)",
+   "new": "\\(H\\longrightarrow1+\\widehat{\\operatorname{Gr}\\,\\cdot\\,}^{+}\\)"
+  },
+  "note": "As p. 312: the print's Gr. keeps its placeholder dot under the hat (both scans); \\,\\cdot\\, is the file's own rendering of that dot (1+\\widehat{\\,\\cdot\\,}^{+})."
+ },
+ {
+  "page": 313,
+  "where": "'on obtient un morphisme : (Ĝ)^k → 1+\\widehat{Gr.}^+ , qui d'après'",
+  "scan": "Gr. with its dot under the hat (both scans)",
+  "tex": "\\widehat{\\operatorname{Gr}}^{+}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "1+\\widehat{\\operatorname{Gr}}^{+}\\), qui",
+   "new": "1+\\widehat{\\operatorname{Gr}\\,\\cdot\\,}^{+}\\), qui"
+  },
+  "note": "As p. 312: the print's Gr. keeps its placeholder dot under the hat (both scans); \\,\\cdot\\, is the file's own rendering of that dot (1+\\widehat{\\,\\cdot\\,}^{+})."
+ },
+ {
+  "page": 313,
+  "where": "'se factorise par (1+\\widehat{Gr.}^+)^k'",
+  "scan": "Gr. with its dot under the hat (both scans)",
+  "tex": "\\widehat{\\operatorname{Gr}}^{+}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\((1+\\widehat{\\operatorname{Gr}}^{+})^k\\)",
+   "new": "\\((1+\\widehat{\\operatorname{Gr}\\,\\cdot\\,}^{+})^k\\)"
+  },
+  "note": "As p. 312: the print's Gr. keeps its placeholder dot under the hat (both scans); \\,\\cdot\\, is the file's own rendering of that dot (1+\\widehat{\\,\\cdot\\,}^{+})."
+ },
+ {
+  "page": 313,
+  "where": "'celui de (Ĝ)^k → 1+\\widehat{Gr.}^+ , c'est-à-dire'",
+  "scan": "Gr. with its dot under the hat (both scans)",
+  "tex": "\\widehat{\\operatorname{Gr}}^{+}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "1+\\widehat{\\operatorname{Gr}}^{+}\\), c'est-à-dire",
+   "new": "1+\\widehat{\\operatorname{Gr}\\,\\cdot\\,}^{+}\\), c'est-à-dire"
+  },
+  "note": "As p. 312: the print's Gr. keeps its placeholder dot under the hat (both scans); \\,\\cdot\\, is the file's own rendering of that dot (1+\\widehat{\\,\\cdot\\,}^{+})."
+ },
+ {
+  "page": 313,
+  "where": "'un morphisme de foncteurs H → \\widehat{Gr.}^+'",
+  "scan": "Gr. with its dot under the hat (both scans)",
+  "tex": "\\widehat{\\operatorname{Gr}}^{+}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(H\\longrightarrow\\widehat{\\operatorname{Gr}}^{+}\\)",
+   "new": "\\(H\\longrightarrow\\widehat{\\operatorname{Gr}\\,\\cdot\\,}^{+}\\)"
+  },
+  "note": "As p. 312: the print's Gr. keeps its placeholder dot under the hat (both scans); \\,\\cdot\\, is the file's own rendering of that dot (1+\\widehat{\\,\\cdot\\,}^{+})."
+ },
+ {
+  "page": 313,
+  "where": "'(avec \\widehat{Gr.}^+ = .^+∘Gr'",
+  "scan": "Gr. with its dot under the hat (both scans)",
+  "tex": "\\widehat{\\operatorname{Gr}}^{+}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(avec \\(\\widehat{\\operatorname{Gr}}^{+}=",
+   "new": "(avec \\(\\widehat{\\operatorname{Gr}\\,\\cdot\\,}^{+}="
+  },
+  "note": "As p. 312: the print's Gr. keeps its placeholder dot under the hat (both scans); \\,\\cdot\\, is the file's own rendering of that dot (1+\\widehat{\\,\\cdot\\,}^{+})."
+ },
+ {
+  "page": 314,
+  "where": "Définition 2.1, end of the first sentence, before the display λ_t : K → 1+K[[t]]^+",
+  "scan": "'... muni d'un homomorphisme de groupes abéliens :' (both scans)",
+  "tex": "de groupes abéliens (no colon before the display)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de groupes abéliens",
+   "new": "de groupes abéliens~:"
+  },
+  "note": "Missing colon."
+ },
+ {
+  "page": 314,
+  "where": "'tel que pour tout x ∈ K, λ_t(x) = 1 + xt + ...'",
+  "scan": "the line ends with the three stops of '...'; no full stop after them (both scans; c314_xt.png, wit_314_small.png)",
+  "tex": "\\(\\lambda_t(x)=1+xt+\\cdots\\).",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": ".\n\nOn posera",
+   "new": "\n\nOn posera"
+  },
+  "note": "The TeX adds a full stop after the series. Independent of the next entry (the two old strings do not overlap)."
+ },
+ {
+  "page": 314,
+  "where": "'λ_t(x) = 1 + xt + ...'",
+  "scan": "baseline stops (both scans)",
+  "tex": "1+xt+\\cdots",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "1+xt+\\cdots",
+   "new": "1+xt+\\ldots"
+  },
+  "note": "\\cdots for the typescript's baseline stops, as on p. 312."
+ },
+ {
+  "page": 314,
+  "where": "'On posera λ_t(x) = Σ λ^i(x)t^i'",
+  "scan": "the sum sign has ∞ above it and i≥0 below (both scans; c314_sum.png)",
+  "tex": "\\sum_{i\\geq0}\\lambda^i(x)t^i (no upper limit)",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sum_{i\\geq0}\\lambda^i(x)t^i",
+   "new": "\\sum_{i\\geq0}^{\\infty}\\lambda^i(x)t^i"
+  },
+  "note": "Upper limit ∞ missing."
+ },
+ {
+  "page": 314,
+  "where": "'ou encore un λ-homomorphisme, si le diagramme :'",
+  "scan": "'homomorphisme' underlined (not λ-, not the comma) (both scans; c314_hom.png)",
+  "tex": "un \\(\\lambda\\)-homomorphisme, (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "un \\(\\lambda\\)-homomorphisme,",
+   "new": "un \\(\\lambda\\)-\\emph{homomorphisme},"
+  },
+  "note": "Defined term outside a statement, as p. 312 (\\emph)."
+ },
+ {
+  "page": 314,
+  "where": "diagram after 'si le diagramme :', lower horizontal arrow",
+  "scan": "λ_t above both horizontal arrows (both scans; c314_diag.png)",
+  "tex": "K' \\arrow[r,\"\\lambda_t\"'] & (label set below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "K' \\arrow[r,\"\\lambda_t\"'] &",
+   "new": "K' \\arrow[r,\"\\lambda_t\"] &"
+  },
+  "note": "Label on the wrong side of the arrow, as the lower labels of pp. 301-303; f (left) and Ĝ(f) (right) stand as printed."
+ },
+ {
+  "page": 315,
+  "where": "b), 'ce qui entrainera qu'elle se factorise par le K'",
+  "scan": "entrainera, no circumflex (both scans; c315_entr2.png, w315_entr.png)",
+  "tex": "entraînera",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "entraînera",
+   "new": "entrainera"
+  },
+  "corrected": "entraînera",
+  "note": "The spelling of the time is entraîner (p. 8 'd'entrainer' was recorded as a misprint kept by the TeX). Here the TeX silently corrects; the diplomatic layer should keep the printed reading."
+ },
+ {
+  "page": 315,
+  "where": "after the first display of Lemme 2.2.1: 'On prend pour F^pΛ^n(E) l'image du morphisme canonique :'",
+  "scan": "'On prend pour' begins a new, indented paragraph (the proof) (both scans)",
+  "tex": "\\]\nOn prend pour (same paragraph as the display)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nOn prend pour",
+   "new": "\\]\n\nOn prend pour"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 315,
+  "where": "b) and Lemme 2.2.1 with its proof: the letters of the ringed topos and its Modules (A, E, E', E'')",
+  "scan": "underlined in both scans: (T,A̲); des A̲-Modules localement isomorphes; d'un A̲-Module libre; pour tout A-Module E̲ (A plain there); de E̲ (qui; des A̲-Modules localement facteurs; Lemme 2.2.1: 0 → E̲' → E̲ → E̲\" → 0, A̲-Modules (inside an underlined word group), Λ^n(E̲); display Λ^{n-p}(E̲')⊗_AΛ^p(E̲\") ⥲ Gr^pΛ^n(E̲); F^pΛ^n(E̲); display Λ^{n-p}(E̲')⊗_AΛ^p(E̲) → Λ^n(E̲). Plain in the print: λ^i(E), 'telle que E\" soit', the index A of ⊗_A (crops_311_315/c315_b2.png, c315_b3.png, c315_lem.png, c315_disp.png, wit_315_small.png)",
+  "tex": "plain A, E, E', E'' throughout (the Exposé V TeX has no \\underline except \\underline{\\mathrm{Ens}})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé V transcription, reported once (like the underlined S, L and O of the pending volume decisions): 18 places on p. 315; p. 316 continues (F^pΛ^n(E̲) = Λ^n(E̲), witness). Three examples, in the form to use if the diplomatic layer reproduces them: '\\((T,A)\\)' -> '\\((T,\\underline{A})\\)'; '0\\longrightarrow E' \\xrightarrow{u} E \\xrightarrow{v} E''\\longrightarrow0' -> '0\\longrightarrow \\underline{E}' \\xrightarrow{u} \\underline{E} \\xrightarrow{v} \\underline{E}''\\longrightarrow0'; 'pour \\(F^p\\Lambda^n(E)\\)' -> 'pour \\(F^p\\Lambda^n(\\underline{E})\\)' (the underline stops before the prime). Not for a blind script: some A and E of the same lines are plain in the print."
+ },
+ {
+  "page": 315,
+  "where": "Lemme 2.2.1 and its proof: the exterior power",
+  "scan": "a small typed wedge ∧ (x-height, no serifs), not a capital Λ, in ∧^n(E), ∧^{n-p}(E')⊗_A∧^p(E\"), Gr^p ∧^n(E), F^p∧^n(E) (both scans; c315_lam1.png, c315_disp.png, c315_disp2.png)",
+  "tex": "\\Lambda^n, \\Lambda^{n-p}, \\Lambda^p (8 on p. 315)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the transcription for the exterior power, reported once: \\Lambda for the print's ∧ on folios 315-316 (8 + 14 \\Lambda; the same small wedge on p. 316 in the witness). If the diplomatic layer reproduces the glyph: \\Lambda -> \\wedge on folios 315-316 only (the 46 \\Lambda of folios 356-360 are not checked here). Same question as GLOBAL_ISSUES 77(f) (Λ for ∧)."
+ }
+]

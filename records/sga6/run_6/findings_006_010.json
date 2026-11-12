@@ -1,0 +1,409 @@
+[
+ {
+  "page": 6,
+  "where": "§3.1, line 1, 'l'observation qui avait servie de point de départ'",
+  "scan": "qui avait servie de point de départ",
+  "tex": "servie (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "servi",
+  "note": "Agreement slip of the print: with avoir and no preceding direct object the participle stays invariable. The TeX keeps the printed reading; the corrected layer already reads 'servi'."
+ },
+ {
+  "page": 6,
+  "where": "§3.1, 'L'homomorphisme x -> x cl.(O_X)'",
+  "scan": "x →x cl.(O_X): a plain typed arrow, no bar at its tail (both scans)",
+  "tex": "$x\\mapsto x\\,\\cl_\\bullet(\\underline O_X)$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "x\\mapsto x",
+   "new": "x\\to x"
+  },
+  "note": "The arrow has no tail bar in either scan; the TeX writes \\mapsto."
+ },
+ {
+  "page": 6,
+  "where": "§3.1, 'Comme nous avons signalé dans 2.3., ces λ-anneaux'",
+  "scan": "dans 2.3., ces (full stop after the paragraph number, then the comma; both scans)",
+  "tex": "dans 2.3, ces",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "dans 2.3, ces",
+   "new": "dans 2.3., ces"
+  },
+  "note": "The reference repeats the printed paragraph number with its full stop (heading 2.3. on p. 4)."
+ },
+ {
+  "page": 6,
+  "where": "display after 'qui ne peut plus être définie par la formule naïve'",
+  "scan": "f_*(cl˙(E)) = Σ_i (-1)^i cl˙(R^i f_*(F)) (underlined E on the left, F on the right; both scans)",
+  "tex": "f_*(\\cl^\\bullet(\\underline E))=\\sum_i(-1)^i\\cl^\\bullet\\bigl(R^if_*(\\underline F)\\bigr) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "f_*(\\cl^\\bullet(\\underline F))=\\sum_i(-1)^i\\cl^\\bullet\\bigl(R^if_*(\\underline F)\\bigr)",
+  "note": "The naive formula is about one locally free F (next line: 'car même si F est localement libre'); the E on the left is a slip of the print. The TeX keeps it; the corrected layer still reads \\underline E."
+ },
+ {
+  "page": 6,
+  "where": "throughout (here: §3.1 'Pour notre formulation ...'; p. 9 §3.3 'dans le cas d'un morphisme ...'; p. 10 §4.1 'pour un schéma ...')",
+  "scan": "the typescript underlines word groups only: the formulas, the commas after them, parentheses and quotes stay outside the underline (p. 6: the comma after 'généralisé', K˙(X), K˙(Y), K.(X), K.(Y); p. 9: X,Y; p. 10: X, the parentheses, K(X), [RRR], K˙(X), K(Parf(X)), '3 1. ,', the quotes around 'bon')",
+  "tex": "one \\uline{...} over the whole statement, formulas and punctuation included",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention for one decision, not a page fix (as SGA 7 II items 48 and 73): \\uline{Pour notre formulation du théorème de Riemann--Roch généralisé, nous travaillerons exclusivement avec $K^\\bullet(X)$, $K^\\bullet(Y)$, à l'exclusion de $K_\\bullet(X)$, $K_\\bullet(Y)$} (p. 6), \\uline{... noeth\\'eriens $X,Y$ admettant tous deux ...} (p. 9), \\uline{pour un sch\\'ema $X$ (ou plus ...} (p. 10). On p. 10 the \\uline also covers words that the print leaves plain: separate findings with fixes."
+ },
+ {
+  "page": 7,
+  "where": "'le complexe Rf_*(F) est \"parfait\"'",
+  "scan": "\"parfait\" with the word underlined inside the quotes (both scans)",
+  "tex": "«~parfait~»",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "«~parfait~»",
+   "new": "«~\\underline{parfait}~»"
+  },
+  "note": "Same form as «~\\underline{localement d'insersection complète}~» on p. 8."
+ },
+ {
+  "page": 7,
+  "where": "triangle after 'pour tout triangle distingué'",
+  "scan": "a full stop to the right of the diagram, on the line of K' → K (both scans)",
+  "tex": "tikzcd without punctuation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "& K \\arrow[ul]",
+   "new": "& K \\arrow[ul] ."
+  },
+  "note": "Punctuation printed after a diagram that the TeX leaves out; set in the last cell, as elsewhere in main.tex ('&H .')."
+ },
+ {
+  "page": 7,
+  "where": "'isomorphe dans D(Y) à un complexe L! à degrés bornés'",
+  "scan": "L!: a prime over a baseline full stop in one character cell (both scans), the typescript's L'. as L. is L_•",
+  "tex": "$L'$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "complexe $L'$",
+   "new": "complexe $L'_\\bullet$"
+  },
+  "note": "First of four: the print writes this second complex L! here, on p. 8 ('où L! est comme ci-dessus') and on p. 10 ('Si L. et L! sont', 'L.⊗L!'); the TeX drops the dot each time. Apply all four or none. The components L!_i (p. 8, twice: same glyph with the index i below) are left as L'_i."
+ },
+ {
+  "page": 7,
+  "where": "display after 'l'homomorphisme canonique'",
+  "scan": "K˙(X) ⟶ K(Parf(Y)) , (both scans)",
+  "tex": "K^\\bullet(X)\\longrightarrow K(\\Parf(Y)), (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "K^\\bullet(Y)\\longrightarrow K(\\Parf(Y))",
+  "note": "The canonical map goes from K˙(Y): the sentence is about perfect complexes on Y, with an ample invertible Module on Y. The TeX keeps the X; the corrected layer still reads K^\\bullet(X)."
+ },
+ {
+  "page": 8,
+  "where": "first line, 'qui n'est d'ailleurs autre que'",
+  "scan": "d'ailleurs",
+  "tex": "d'<line break>ailleurs (TeX sets d' ailleurs)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "d'\nailleurs",
+   "new": "d'ailleurs"
+  },
+  "note": "A source line break inside the word renders as a space after the apostrophe; the current layer has the same break."
+ },
+ {
+  "page": 8,
+  "where": "display 'cl(L.) = Σ_i (-1)^i cl˙(L!_i)'",
+  "scan": "a full stop to the right of the display (both scans)",
+  "tex": "\\cl(L_\\bullet)=\\sum_i(-1)^i\\cl^\\bullet(L'_i) (no punctuation)",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\cl^\\bullet(L'_i)\n\\]",
+   "new": "\\cl^\\bullet(L'_i).\n\\]"
+  },
+  "note": "The mark stands where the typescript puts the full stop after its displays (as after T_f ∈ K˙(X) and Rf_* on this page) and is in the witness too; it is a little less round than the other stops."
+ },
+ {
+  "page": 8,
+  "where": "'où L! est comme ci-dessus'",
+  "scan": "L! (prime over a baseline full stop), as on p. 7",
+  "tex": "$L'$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "où $L'$ est",
+   "new": "où $L'_\\bullet$ est"
+  },
+  "note": "Second of the four L! (see p. 7); apply all or none. In the display and in 'les L!_i' the same glyph carries the index i: left as L'_i."
+ },
+ {
+  "page": 8,
+  "where": "heading 3.2",
+  "scan": "3.2. (trailing full stop)",
+  "tex": "\\subsubsection*{3.2}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{3.2}",
+   "new": "\\subsubsection*{3.2.}"
+  },
+  "note": "The printed paragraph number ends with a full stop (as 2.3., 2.4. on pp. 4-5)."
+ },
+ {
+  "page": 8,
+  "where": "§3.2, 'identifie X à un sous-schémas de X''",
+  "scan": "sous-schémas",
+  "tex": "sous-schémas (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "sous-schéma",
+  "note": "Plural s in the print, as on p. 3; the TeX keeps it; the corrected layer already reads 'sous-schéma'."
+ },
+ {
+  "page": 8,
+  "where": "§3.2, 'il en est de même pour la classe T_f défini par la formule (2.1)'",
+  "scan": "la classe T_f défini",
+  "tex": "$T_f$ défini (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "définie",
+  "note": "Agreement slip (la classe ... définie); the TeX keeps it; the corrected layer already reads 'définie'."
+ },
+ {
+  "page": 8,
+  "where": "§3.2, 'un morphisme \"localement d'insersection complète\"'",
+  "scan": "insersection",
+  "tex": "insersection (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "intersection",
+  "note": "The TeX keeps it; the corrected layer already reads 'intersection'."
+ },
+ {
+  "page": 8,
+  "where": "footnote, 'ce qui ne risque d'entrainer aucune confusion'",
+  "scan": "d'entrainer (no circumflex)",
+  "tex": "d'entrainer (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "d'entraîner",
+  "note": "The spelling of the time is entraîner; the typist types the circumflex elsewhere (disparaîtra, p. 9). The TeX keeps the printed reading."
+ },
+ {
+  "page": 9,
+  "where": "heading 3.3",
+  "scan": "3.3. (trailing full stop)",
+  "tex": "\\subsubsection*{3.3}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{3.3}",
+   "new": "\\subsubsection*{3.3.}"
+  },
+  "note": "The printed paragraph number ends with a full stop."
+ },
+ {
+  "page": 9,
+  "where": "equation number (3 4)",
+  "scan": "(3 4): the full stop between the digits prints in neither scan (its cell is there)",
+  "tex": "\\tag{3 4}",
+  "kind": "punctuation",
+  "confidence": "low",
+  "fix": {
+   "old": "\\tag{3 4}",
+   "new": "\\tag{3.4}"
+  },
+  "note": "The typewriter's full stop is faint throughout (4.3 and (3.4) on p. 10 barely print) and is lost here, as '4 3' on p. 4. The TeX itself writes the stop at the same kind of gap in (3 1) p. 6 and 4 2 p. 10. If the stop was never typed, this is instead a misprint the TeX keeps (correct reading (3.4)): one decision for the volume."
+ },
+ {
+  "page": 10,
+  "where": "start of page",
+  "scan": "p. 10 begins 'de Modules inversibles amples sur X et Y.'; p. 9 ends '... d'une hypothèse d'existence' (both scans)",
+  "tex": "'de' is the last word of the last line of page_009.tex (under the folio-9 marker); page_010.tex begins 'Modules inversibles'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 10 really begins with 'de'. Move the folio-10 marker before it: python -I move_marker.py 6 10 \"de\" --before (simulated on both layers: '... d'existence', the marker, then 'de', then 'Modules inversibles')."
+ },
+ {
+  "page": 10,
+  "where": "heading 4.1",
+  "scan": "4.1. (trailing full stop)",
+  "tex": "\\subsubsection*{4.1}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{4.1}",
+   "new": "\\subsubsection*{4.1.}"
+  },
+  "note": "The printed paragraph number ends with a full stop."
+ },
+ {
+  "page": 10,
+  "where": "§4.1, 'de [RRR] n'est pas l'anneau K˙(X)'",
+  "scan": "'n'est pas' is not underlined: the underline stops after 'de' and starts again at 'l'anneau' (both scans)",
+  "tex": "inside \\uline{...}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "de [RRR] n'est pas l'anneau",
+   "new": "de [RRR]} n'est pas \\uline{l'anneau"
+  },
+  "note": "Words the print leaves plain inside the TeX's single underline (beyond the formula convention). Independent of the next fix."
+ },
+ {
+  "page": 10,
+  "where": "§4.1, end of the underlined statement",
+  "scan": "the underline ends with 'groupe que nous noterons ici'; 'K˙(X), et que nous distinguerons du groupe \"naif\" de 3.1, que nous notons K˙_naif(X)' is not underlined (both scans)",
+  "tex": "\\uline{...} runs to $K^\\bullet_{\\mathrm{naif}}(X)$}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "ici $K^\\bullet(X)$, et que nous distinguerons du groupe ``naif'' de 3.1, que nous notons $K^\\bullet_{\\mathrm{naif}}(X)$}",
+   "new": "ici} $K^\\bullet(X)$, et que nous distinguerons du groupe ``naif'' de 3.1, que nous notons $K^\\bullet_{\\mathrm{naif}}(X)$"
+  },
+  "note": "One edit, so that the braces stay balanced."
+ },
+ {
+  "page": 10,
+  "where": "§4.1, 'envisagé dans 3 1. ,'",
+  "scan": "3 1. , (no ink between the digits in either scan)",
+  "tex": "dans 3 1., d\\'efini",
+  "kind": "punctuation",
+  "confidence": "low",
+  "fix": {
+   "old": "dans 3 1.,",
+   "new": "dans 3.1.,"
+  },
+  "note": "Lost full stop between digits, as (3 4) on p. 9: same decision."
+ },
+ {
+  "page": 10,
+  "where": "§4.1, 'Avec la définition de K˙(X) adopté maintenant'",
+  "scan": "adopté",
+  "tex": "adopt\\'e (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "adopt\\'ee",
+  "note": "Agreement slip (la définition ... adoptée); the TeX keeps it; the corrected layer already reads 'adoptée'."
+ },
+ {
+  "page": 10,
+  "where": "§4.1, 'par la formule (3 2)'",
+  "scan": "(3 2) (no ink between the digits in either scan)",
+  "tex": "(3 2)",
+  "kind": "punctuation",
+  "confidence": "low",
+  "fix": {
+   "old": "formule (3 2)",
+   "new": "formule (3.2)"
+  },
+  "note": "Lost full stop between digits, as (3 4) on p. 9: same decision."
+ },
+ {
+  "page": 10,
+  "where": "§4.1, 'du groupe \"naif\" de 3.1, que nous notons K˙_naif(X)'",
+  "scan": "naif (twice, no diaeresis)",
+  "tex": "``naif'' and \\mathrm{naif} (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "na\\\"{\\i}f",
+  "note": "naïf without its diaeresis (twice); the typist elsewhere writes the i-diaeresis as i-circumflex (naîve, p. 6). The TeX keeps the printed reading."
+ },
+ {
+  "page": 10,
+  "where": "§4.2, 'un nouveau problème d'algébre homologique'",
+  "scan": "algébre (acute accent)",
+  "tex": "alg\\'ebre (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "alg\\`ebre",
+  "note": "Wrong accent in the print; the TeX keeps it."
+ },
+ {
+  "page": 10,
+  "where": "§4.2, '(NB Si L. et L! sont deux complexes parfaits'",
+  "scan": "L! (prime over a baseline full stop), as on p. 7",
+  "tex": "$L'$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "Si $L_\\bullet$ et $L'$ sont",
+   "new": "Si $L_\\bullet$ et $L'_\\bullet$ sont"
+  },
+  "note": "Third of the four L! (see p. 7); apply all or none."
+ },
+ {
+  "page": 10,
+  "where": "§4.2, 'leur produit tensoriel total L.⊗L! )'",
+  "scan": "L.⊗L! (the second factor again L!)",
+  "tex": "\\otimes^{\\mathbf L}L'$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\otimes^{\\mathbf L}L'$",
+   "new": "\\otimes^{\\mathbf L}L'_\\bullet$"
+  },
+  "note": "Fourth of the four L! (see p. 7); apply all or none."
+ },
+ {
+  "page": 10,
+  "where": "§4.2, 'Plus précisement, il y aurait lieu'",
+  "scan": "précisement (no accent on the second e)",
+  "tex": "pr\\'ecisement (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "pr\\'ecis\\'ement",
+  "note": "Missing accent in the print; the TeX keeps it."
+ },
+ {
+  "page": 10,
+  "where": "§4.2, 'Cette question n'a pas encore été tiré au clair'",
+  "scan": "tiré au clair",
+  "tex": "tir\\'e au clair (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "tir\\'ee au clair",
+  "note": "Agreement slip (cette question ... tirée); the TeX keeps it; the corrected layer already reads 'tirée'."
+ },
+ {
+  "page": 10,
+  "where": "§4.2, 'Un fois cette question résolue'",
+  "scan": "Un fois",
+  "tex": "Un fois (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Une fois",
+  "note": "Missing e in the print; the TeX keeps it; the corrected layer still reads 'Un fois'."
+ },
+ {
+  "page": 10,
+  "where": "end of page",
+  "scan": "p. 10 ends '... et de définir enfin la classe tangente relative virtuelle'; p. 11 begins with the display 'T_f ∈ K˙(X) .' (DjVu witness p. 22)",
+  "tex": "page_010.tex ends with \\[ T_f\\in K^\\bullet(X). \\], which belongs to p. 11",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Move the folio-11 marker above that display: python -I move_marker.py 6 11 \"\\[\" --before (simulated on both layers: the marker, then \\[ T_f\\in K^\\bullet(X). \\], then 'Lorsque $f$ admet une factorisation')."
+ }
+]

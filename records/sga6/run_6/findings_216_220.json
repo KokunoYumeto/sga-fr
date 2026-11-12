@@ -1,0 +1,356 @@
+[
+  {
+    "page": 216,
+    "where": "Preuve de (b), start of the paragraph",
+    "scan": "Preuve de (b). (only 'Preuve de' underlined; '(b).' plain)",
+    "tex": "\\emph{Preuve de (b).}",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\emph{Preuve de (b).}", "new": "\\emph{Preuve de} (b)."},
+    "note": "Both scans: the underline stops after 'de'. Same form fixed on p. 136 (\\emph{Preuve de} (5.8).)."
+  },
+  {
+    "page": 216,
+    "where": "Preuve de (a'), start of the paragraph",
+    "scan": "Preuve de (a'). (only 'Preuve de' underlined)",
+    "tex": "\\emph{Preuve de (a').}",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\emph{Preuve de (a').}", "new": "\\emph{Preuve de} (a')."},
+    "note": "Both scans."
+  },
+  {
+    "page": 216,
+    "where": "Preuve de (a), last paragraph",
+    "scan": "Preuve de (a). (only 'Preuve de' underlined)",
+    "tex": "\\emph{Preuve de (a).}",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\emph{Preuve de (a).}", "new": "\\emph{Preuve de} (a)."},
+    "note": "Both scans."
+  },
+  {
+    "page": 216,
+    "where": "Preuve de (a'): 'En d'autre termes, M_pq est un complexe acyclique direct'",
+    "scan": "En d'autre termes",
+    "tex": "En d'autre termes",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "En d'autres termes",
+    "note": "Typing error of the print (missing s), both scans; the TeX keeps the printed reading."
+  },
+  {
+    "page": 217,
+    "where": "after the second display: 'S étant supposé compact. D'après (3.2.1.1) on a'",
+    "scan": "compact underlined",
+    "tex": "supposé compact.",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "supposé compact.", "new": "supposé \\emph{compact}."},
+    "note": "Both scans; the file writes underlined words as \\emph on this page (\\emph{indice analytique})."
+  },
+  {
+    "page": 217,
+    "where": "display C(S,C^∞(V,F˙)) = lim←_r C(S,C_2^r(V,F˙))",
+    "scan": "no punctuation after the display (both scans)",
+    "tex": "\\varprojlim_r C(S,C_2^r(V,F^\\bullet)).",
+    "kind": "extra",
+    "confidence": "high",
+    "fix": {"old": "\\varprojlim_r C(S,C_2^r(V,F^\\bullet)).", "new": "\\varprojlim_r C(S,C_2^r(V,F^\\bullet))"},
+    "note": "Full stop added at the end of the display."
+  },
+  {
+    "page": 217,
+    "where": "3.2.2: '... correspondant (1). / Soient S, X, E˙ comme en (3.2.1) ;'",
+    "scan": "'Soient S, X, E˙ comme en (3.2.1) ;' begins a new, indented paragraph after the footnote call",
+    "tex": "Exp.~IV.}. Soient $S$, ... (same paragraph)",
+    "kind": "other",
+    "confidence": "high",
+    "fix": {"old": "Exp.~IV.}. Soient", "new": "Exp.~IV.}.\n\nSoient"},
+    "note": "Missing paragraph break (both scans show the indent)."
+  },
+  {
+    "page": 217,
+    "where": "display ind.an(E˙) = Cℓ(Rp_*(E˙)) ∈ K˙(S).",
+    "scan": "R double-underlined (double-struck R of the derived functor), both scans",
+    "tex": "C\\ell(Rp_*(E^\\bullet))",
+    "kind": "font",
+    "confidence": "high",
+    "fix": {"old": "C\\ell(Rp_*(E^\\bullet))", "new": "C\\ell(\\mathbb{R}p_*(E^\\bullet))"},
+    "note": "Double-struck R written plain."
+  },
+  {
+    "page": 218,
+    "where": "start of page",
+    "scan": "p. 218 begins 'Si S est compact, ind.an(E˙) définit canoniquement un élément'",
+    "tex": "'Si $S$ est' is the last line of page_217.tex (under the folio-217 marker); page_218.tex begins 'compact, ...'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 218 really begins with 'Si $S$ est'. Move the folio-218 marker up one line, above that line: python -I move_marker.py 6 218 'Si $S$ est' --before (single quotes for the $; dry run and in-memory simulation on both layers give the marker, then 'Si $S$ est', then 'compact, ...')."
+  },
+  {
+    "page": 218,
+    "where": "first line: 'Si S est compact, ind.an(E˙) définit'",
+    "scan": "compact underlined",
+    "tex": "compact, $\\operatorname{ind.an}(E^\\bullet)$",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "compact, $\\operatorname{ind.an}", "new": "\\emph{compact}, $\\operatorname{ind.an}"},
+    "note": "Both scans."
+  },
+  {
+    "page": 218,
+    "where": "'de la catégorie triangulée K^b(Loclib(S))/K^{b,∅}(Loclib(S))'",
+    "scan": "K^{b,∅}: the second superscript is the empty-set sign (slashed circle), both scans",
+    "tex": "K^{b,\\bullet}(\\mathrm{Loclib}(S))",
+    "kind": "symbol",
+    "confidence": "high",
+    "fix": {"old": "K^{b,\\bullet}", "new": "K^{b,\\varnothing}"},
+    "note": "The subcategory of acyclic complexes; main.tex writes \\mathrm K^{b,\\varnothing}(\\Loclib(S)) for the same category in Exposé II 2.2.9."
+  },
+  {
+    "page": 218,
+    "where": "display K̂(S) = lim← K(A) ,",
+    "scan": "lim with the arrow below it and no index (both scans)",
+    "tex": "\\varprojlim_A K(A)",
+    "kind": "extra",
+    "confidence": "high",
+    "fix": {"old": "\\varprojlim_A K(A)", "new": "\\varprojlim K(A)"},
+    "note": "Index A added under the limit."
+  },
+  {
+    "page": 218,
+    "where": "3.2.3: 'et n = (n_i) une suite d'entiers ≥ 0'",
+    "scan": "n underlined (the multi-index n)",
+    "tex": "$n=(n_i)$",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "$n=(n_i)$", "new": "$\\underline n=(n_i)$"},
+    "note": "The multi-index is underlined in all its occurrences on pp. 218-219 (not n_i); apply together with the other six underlined-n fixes of pp. 218-219."
+  },
+  {
+    "page": 218,
+    "where": "'Notons Comp.diff^n(F) l'espace des complexes'",
+    "scan": "superscript n underlined (the underline touches the small n, both scans; drawn separately on p. 219)",
+    "tex": "$\\operatorname{Comp.diff}^n(F)$ l'espace",
+    "kind": "underline",
+    "confidence": "medium",
+    "fix": {"old": "\\operatorname{Comp.diff}^n(F)$ l'espace", "new": "\\operatorname{Comp.diff}^{\\underline n}(F)$ l'espace"},
+    "note": "Same notation as n = (n_i); apply together with the other underlined-n fixes."
+  },
+  {
+    "page": 218,
+    "where": "'\"de base F\" et d'ordre n, i.e. le'",
+    "scan": "n underlined",
+    "tex": "d'ordre $n$, i.e.",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "d'ordre $n$, i.e.", "new": "d'ordre $\\underline n$, i.e."},
+    "note": "Both scans; apply together with the other underlined-n fixes."
+  },
+  {
+    "page": 218,
+    "where": "'i.e. le sous espace fermé de ∏Diff^{n_i}(F^i,F^{i+1})'",
+    "scan": "sous espace (no hyphen, both scans)",
+    "tex": "le sous-espace fermé",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": {"old": "sous-espace fermé", "new": "sous espace fermé"},
+    "corrected": "sous-espace fermé",
+    "note": "The print drops the hyphen it types elsewhere on the page ('un sous-espace (de dimension infinie)'); the TeX silently corrects it."
+  },
+  {
+    "page": 218,
+    "where": "end of the last line of page_218.tex: 'Le sous-ensemble Ell^n(F) de' (the words 'Ell^n(F) de' are printed at the top of p. 219)",
+    "scan": "Ell^n(F) with the superscript n underlined",
+    "tex": "$\\operatorname{Ell}^n(F)$ de",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\operatorname{Ell}^n(F)$ de", "new": "\\operatorname{Ell}^{\\underline n}(F)$ de"},
+    "note": "Keyed to the present marker position (this text belongs to p. 219, see the marker finding of p. 219); apply before moving the folio-219 marker. Apply together with the other underlined-n fixes."
+  },
+  {
+    "page": 219,
+    "where": "start of page",
+    "scan": "p. 219 begins 'Ell^n(F) de Comp.diff^n(F) formé des complexes elliptiques'; p. 218 ends with 'Le sous-ensemble'",
+    "tex": "'$\\operatorname{Ell}^n(F)$ de' ends the last line of page_218.tex ('... Le sous-ensemble $\\operatorname{Ell}^n(F)$ de'); page_219.tex begins '$\\operatorname{Comp.diff}^n(F)$ formé'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 219 really begins with '$\\operatorname{Ell}^n(F)$ de', inside the last TeX line of p. 218. Move the folio-219 marker there, splitting the line after 'Le sous-ensemble': python -I move_marker.py 6 219 '$\\operatorname{Ell}' --before (single quotes; the anchor also matches after the underline fix; simulated on both layers: '... Le sous-ensemble', marker, '$\\operatorname{Ell}^n(F)$ de', '$\\operatorname{Comp.diff}^n(F)$ formé ...')."
+  },
+  {
+    "page": 219,
+    "where": "first line: 'de Comp.diff^n(F) formé des complexes elliptiques'",
+    "scan": "superscript n underlined",
+    "tex": "$\\operatorname{Comp.diff}^n(F)$ formé",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\operatorname{Comp.diff}^n(F)$ formé", "new": "\\operatorname{Comp.diff}^{\\underline n}(F)$ formé"},
+    "note": "Both scans; apply together with the other underlined-n fixes."
+  },
+  {
+    "page": 219,
+    "where": "first line: 'complexes elliptiques d'ordre n est ouvert'",
+    "scan": "n underlined",
+    "tex": "d'ordre $n$ est ouvert",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "d'ordre $n$ est ouvert", "new": "d'ordre $\\underline n$ est ouvert"},
+    "note": "Both scans; apply together with the other underlined-n fixes."
+  },
+  {
+    "page": 219,
+    "where": "3.2.4: 'une application continue de S dans Ell^n(F) (3.2.3)'",
+    "scan": "superscript n underlined",
+    "tex": "$\\operatorname{Ell}^n(F)$ (3.2.3)",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\operatorname{Ell}^n(F)$ (3.2.3)", "new": "\\operatorname{Ell}^{\\underline n}(F)$ (3.2.3)"},
+    "note": "Both scans; apply together with the other underlined-n fixes."
+  },
+  {
+    "page": 219,
+    "where": "3.2.5: 'Alors, les complexes F˙_r définissent [12] un élément canonique'",
+    "scan": "F˙_r not underlined (both scans): the complexes of Hilbert bundles",
+    "tex": "$\\underline F_r^\\bullet$ définissent",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "$\\underline F_r^\\bullet$ définissent", "new": "$F_r^\\bullet$ définissent"},
+    "note": "The underline is added; the underlined F_r of the display Cℓ(F_r) above is right."
+  },
+  {
+    "page": 219,
+    "where": "3.2.5: 'les relations entre les groupes [S,I(S)] et K˙(S)'",
+    "scan": "[S,I(S)]",
+    "tex": "$[S,I(S)]$",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "[S,I(H)]",
+    "note": "The print has I(S) for I(H) (cf. [S,I(H)] three lines above); the TeX keeps the printed reading."
+  },
+  {
+    "page": 219,
+    "where": "heading in the last lines of page_219.tex (printed at the top of p. 220)",
+    "scan": "BIBLIOGRAPHIE (capitals, underlined)",
+    "tex": "\\subsection*{Bibliographie}",
+    "kind": "word",
+    "confidence": "medium",
+    "fix": {"old": "\\subsection*{Bibliographie}", "new": "\\subsection*{BIBLIOGRAPHIE}"},
+    "note": "Typed in capitals, as on p. 158 (fixed there to BIBLIOGRAPHIE); the missing underline of a section title is accepted. Keyed to the present marker position: apply before moving the folio-220 marker."
+  },
+  {
+    "page": 220,
+    "where": "start of page",
+    "scan": "p. 220 begins with the heading BIBLIOGRAPHIE, then [1] Artin, M., ...",
+    "tex": "'\\subsection*{Bibliographie}', '\\begin{enumerate}[label={[\\arabic*]}]' and the first '\\item' are the last three lines of page_219.tex; page_220.tex begins 'Artin, M., ...'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 220 really begins with \\subsection*{Bibliographie} (a heading at the top of the page). Move the folio-220 marker above it: python -I move_marker.py 6 220 '\\subsection*{' --before (the anchor also matches after the BIBLIOGRAPHIE fix; simulated on both layers)."
+  },
+  {
+    "page": 220,
+    "where": "end of page",
+    "scan": "p. 220 ends with [13] Kiehl, ... (1967).; [14] Lang, S., ... is the first line of p. 221",
+    "tex": "the lone '\\item' of [14] is the last line of page_220.tex, above the folio-221 marker",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "The item label [14] belongs to p. 221. Move the folio-221 marker above that '\\item': python -I move_marker.py 6 221 '\\item' --before (simulated on both layers: marker, '\\item', 'Lang, S., ...')."
+  },
+  {
+    "page": 220,
+    "where": "[1] Artin, Grothendieck, Verdier",
+    "scan": "Verdier, J-L.,",
+    "tex": "Verdier, J.-L.,",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "J.-L.", "new": "J-L."},
+    "note": "No full stop after J (both scans)."
+  },
+  {
+    "page": 220,
+    "where": "[4] Cartan, Schwartz",
+    "scan": "Séminaire 1963-64 (hyphen)",
+    "tex": "Séminaire 1963--64",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "1963--64", "new": "1963-64"},
+    "note": "En dash where the typescript has a hyphen."
+  },
+  {
+    "page": 220,
+    "where": "[5] Frisch: 'Fonctions analyliques sur un ensemble semi-analytique'",
+    "scan": "analyliques",
+    "tex": "analytiques sur",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": {"old": "analytiques sur", "new": "analyliques sur"},
+    "corrected": "analytiques sur",
+    "note": "Typing error of the print (l for t), both scans; the TeX silently corrects it."
+  },
+  {
+    "page": 220,
+    "where": "[5] Frisch",
+    "scan": "p. 2974-2976 (hyphen)",
+    "tex": "p. 2974--2976",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "2974--2976", "new": "2974-2976"},
+    "note": "En dash where the typescript has a hyphen."
+  },
+  {
+    "page": 220,
+    "where": "[8] Grothendieck, Fondements de la Géométrie Analytique",
+    "scan": "Séminaire Cartan 1959-60 (hyphen)",
+    "tex": "Séminaire Cartan 1959--60",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "Analytique, Séminaire Cartan 1959--60", "new": "Analytique, Séminaire Cartan 1959-60"},
+    "note": "En dash where the typescript has a hyphen."
+  },
+  {
+    "page": 220,
+    "where": "[10] Houzel",
+    "scan": "Séminaire Cartan 1959-60 (hyphen)",
+    "tex": "Séminaire Cartan 1959--60",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "Locale, Séminaire Cartan 1959--60", "new": "Locale, Séminaire Cartan 1959-60"},
+    "note": "En dash where the typescript has a hyphen."
+  },
+  {
+    "page": 220,
+    "where": "[11] Illusie, Complexes de fibrés",
+    "scan": "IHES 1964-65 (hyphen)",
+    "tex": "IHES 1964--65",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "1964--65", "new": "1964-65"},
+    "note": "En dash where the typescript has a hyphen."
+  },
+  {
+    "page": 220,
+    "where": "[12] Illusie, Complexes quasi-acycliques directs",
+    "scan": "p. 6499-6502 (hyphen)",
+    "tex": "p. 6499--6502",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "6499--6502", "new": "6499-6502"},
+    "note": "En dash where the typescript has a hyphen."
+  },
+  {
+    "page": 220,
+    "where": "[13] Kiehl",
+    "scan": "p. 256-273 (hyphen)",
+    "tex": "p. 256--273",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "256--273", "new": "256-273"},
+    "note": "En dash where the typescript has a hyphen."
+  }
+]

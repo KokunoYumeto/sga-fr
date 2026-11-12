@@ -1,0 +1,615 @@
+[
+ {
+  "page": 126,
+  "where": "Remarque 4.12.2, 'Supposons C_o stable par noyau d'épimorphisme et quasi-relevable dans C'",
+  "scan": "'quasi-relevable' underlined (both scans)",
+  "tex": "plain 'quasi-relevable'",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et quasi-relevable dans",
+   "new": "et \\emph{quasi-relevable} dans"
+  },
+  "note": "The file writes underlined words of the running text with \\emph (as 'localement quasi-relevable' in 1.2)."
+ },
+ {
+  "page": 126,
+  "where": "Remarque 4.12.2, 'il n'y a pas d'espoir que le foncteur K^b(C_o) ⟶ D(C) soit fidèle'",
+  "scan": "the map is set inline in the sentence (both scans)",
+  "tex": "a display \\[ ... \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\[\n  \\Kpx^b(\\mathcal C_0)\\longrightarrow \\Dpx(\\mathcal C)\n\\]\n",
+   "new": "\\(\\Kpx^b(\\mathcal C_0)\\longrightarrow \\Dpx(\\mathcal C)\\)\n"
+  },
+  "note": "The print sets the formula inline; the TeX makes it a display (same kind of fix as pp. 21, 122, 133). Apply before the next entry, whose old lies inside this one (JSON order)."
+ },
+ {
+  "page": 126,
+  "where": "same formula, 'K^b(C_o)'",
+  "scan": "plain typed C with the index o, without the underline of the category letter; D(C̲) beside it and every other C_o of the page are underlined (both scans; crops_126_130/p126_inlineC0.png, w137_top.png)",
+  "tex": "\\Kpx^b(\\mathcal C_0) (silently supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\Kpx^b(\\mathcal C_0)\\longrightarrow",
+   "new": "\\Kpx^b(C_0)\\longrightarrow"
+  },
+  "corrected": "\\Kpx^b(\\mathcal C_0)\\longrightarrow",
+  "note": "The typist left out the underline here (as on pp. 89 and 93); the TeX silently writes \\mathcal C. Listed after the display entry, whose old contains this text."
+ },
+ {
+  "page": 126,
+  "where": "Remarque 4.12.2, 'si K^{b,∅}(C_o) désigne la sous-catégorie épaisse de K^b(C_o) formée des objets acycliques'",
+  "scan": "the second index is the hand-drawn empty-set sign, a small loop crossed by a long slash (both scans; crops_126_130/p126_phi.png)",
+  "tex": "\\Kpx^{b,\\mathrm{ac}}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Kpx^{b,\\mathrm{ac}}(\\mathcal C_0)\\) désigne",
+   "new": "\\Kpx^{b,\\varnothing}(\\mathcal C_0)\\) désigne"
+  },
+  "note": "The TeX invents an index 'ac'. main.tex writes the same printed sign \\varnothing in 2.7 b) (K^{-,∅}(C_o), fixed from p. 100) and in Exposé II (K^{b,∅}(C_1S), line 3856)."
+ },
+ {
+  "page": 126,
+  "where": "first display 'K^b(C_o)/K^{b,∅}(C_o) ⟶ D(C)'",
+  "scan": "the same sign (both scans)",
+  "tex": "\\Kpx^{b,\\mathrm{ac}}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Kpx^{b,\\mathrm{ac}}(\\mathcal C_0)\n  \\longrightarrow \\Dpx(\\mathcal C)",
+   "new": "\\Kpx^{b,\\varnothing}(\\mathcal C_0)\n  \\longrightarrow \\Dpx(\\mathcal C)"
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 126,
+  "where": "Indications, display 'K^-(C_o)/K^{-,∅}(C_o) ⟶ D^-(C)'",
+  "scan": "the same sign (both scans)",
+  "tex": "\\Kpx^{-,\\mathrm{ac}}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Kpx^{-,\\mathrm{ac}}(\\mathcal C_0)\n  \\longrightarrow \\Dpx^-",
+   "new": "\\Kpx^{-,\\varnothing}(\\mathcal C_0)\n  \\longrightarrow \\Dpx^-"
+  },
+  "note": "As above; this is the functor of 2.7 b), written \\Kpx^{-,\\varnothing} there."
+ },
+ {
+  "page": 126,
+  "where": "Indications, last display, source 'K^b(C_o)K^{b,∅}(C_o)'",
+  "scan": "the same sign (both scans)",
+  "tex": "\\Kpx^{b,\\mathrm{ac}}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Kpx^{b,\\mathrm{ac}}(\\mathcal C_0)\n  \\longrightarrow\n",
+   "new": "\\Kpx^{b,\\varnothing}(\\mathcal C_0)\n  \\longrightarrow\n"
+  },
+  "note": "As above."
+ },
+ {
+  "page": 126,
+  "where": "Indications, last display, target 'K^-(C_o)/K^{-,∅}(C_o)'",
+  "scan": "the same sign (both scans)",
+  "tex": "\\Kpx^{-,\\mathrm{ac}}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Kpx^{-,\\mathrm{ac}}(\\mathcal C_0)\n\\]",
+   "new": "\\Kpx^{-,\\varnothing}(\\mathcal C_0)\n\\]"
+  },
+  "note": "As above."
+ },
+ {
+  "page": 126,
+  "where": "Indications, last display 'K^b(C_o)K^{b,∅}(C_o) ⟶ K^-(C_o)/K^{-,∅}(C_o)'",
+  "scan": "no quotient bar between K^b(C_o) and K^{b,∅}(C_o); the target has its '/' (both scans; crops_126_130/p126_noslash.png, w137_bot.png)",
+  "tex": "\\Kpx^b(\\mathcal C_0)/\\Kpx^{b,\\mathrm{ac}}(\\mathcal C_0) (bar silently supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "que le foncteur\n\\[\n  \\Kpx^b(\\mathcal C_0)/",
+   "new": "que le foncteur\n\\[\n  \\Kpx^b(\\mathcal C_0)"
+  },
+  "corrected": "\\Kpx^b(\\mathcal C_0)/\\Kpx^{b,\\varnothing}(\\mathcal C_0)",
+  "note": "The quotient K^b(C_o)/K^{b,∅}(C_o) of the first display; the typist left out the bar and the TeX silently supplies it. The old ends at the bar, clear of the \\varnothing entry of the same display."
+ },
+ {
+  "page": 127,
+  "where": "start of page",
+  "scan": "p. 127 begins 'F'^i = F^i pour i < b, F'^b = Z^b(F), F'^i = 0 pour i > b.'; p. 126 ends '... Alors F est isomorphe à son tronqué F' défini par' (both scans)",
+  "tex": "'\\(F'^i=F^i\\)' ends the last line of page_126.tex (under the folio-126 marker); page_127.tex begins 'pour \\(i<b\\)'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 127 really begins with '\\(F'^i=F^i\\)'. python -I move_marker.py 6 127 \"\\(F'^i=F^i\\)\" --before (double quotes because of the prime; the last occurrence before the marker is this one; simulated on both layers with crops_126_130/sim_markers.py: '... à son tronqué \\(F'\\) défini par ', the marker, '\\(F'^i=F^i\\)', 'pour \\(i<b\\), \\(F'^b=Z^b(F)\\), ...')."
+ },
+ {
+  "page": 127,
+  "where": "Corollaire 4.14, 'Soient F ∈ ob C_S et n ∈ N. Conditions équivalentes :'",
+  "scan": "underlined: 'Soient', 'et', 'Conditions équivalentes'; in (i) also 'parf.amp' (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient \\(F\\in\\Ob\\mathcal C_S\\) et \\(n\\in\\mathbb N\\). Conditions équivalentes :",
+   "new": "\\emph{Soient \\(F\\in\\Ob\\mathcal C_S\\) et \\(n\\in\\mathbb N\\). Conditions équivalentes} :"
+  },
+  "note": "Statement of a corollary in roman (Lemme 4.13 and Proposition 4.15 around it are in \\emph). (i) is a formula; no change there. The colon stays in roman."
+ },
+ {
+  "page": 127,
+  "where": "Corollaire 4.14 (ii), 'F admet localement une résolution gauche ... tels qu'il existe une suite exacte'",
+  "scan": "underlined by word groups: 'admet localement une résolution gauche de longueur', 'par des objets', 'de', 'i.e.', 'l'ensemble des', 'au-dessus de', 'tels qu'il existe une suite exacte' (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(F\\) admet localement une résolution gauche de longueur \\(n\\) par des objets de \\(\\mathcal C_0\\), i.e. l'ensemble des \\(X\\) au-dessus de \\(S\\) tels qu'il existe une suite exacte",
+   "new": "\\(F\\) \\emph{admet localement une résolution gauche de longueur \\(n\\) par des objets de \\(\\mathcal C_0\\), i.e. l'ensemble des \\(X\\) au-dessus de \\(S\\) tels qu'il existe une suite exacte}"
+  },
+  "note": "Part of the statement of 4.14 (entry above)."
+ },
+ {
+  "page": 127,
+  "where": "Corollaire 4.14 (ii), display '0 → L^{-n} → L^{-n+1} → ... → L^o → F_X → 0 ,'",
+  "scan": "three typed full stops on the baseline (both scans; crops_126_130/p127_dots.png)",
+  "tex": "\\cdots",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "L^{-n+1}\\longrightarrow \\cdots",
+   "new": "L^{-n+1}\\longrightarrow \\ldots"
+  },
+  "note": "\\cdots sets the dots at mid-height (same kind of fix as pp. 49, 79, 80, 86, 95)."
+ },
+ {
+  "page": 127,
+  "where": "Corollaire 4.14 (ii), 'avec L^i ∈ ob C_oX'",
+  "scan": "C̲ with the indices o and X side by side, no comma (both scans; crops_126_130/p127_C0X.png)",
+  "tex": "\\mathcal C_{0,X}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal C_{0,X}",
+   "new": "\\mathcal C_{0X}"
+  },
+  "note": "As pp. 91-92, 95, 100 and 124: the TeX adds the comma between the indices."
+ },
+ {
+  "page": 127,
+  "where": "Corollaire 4.14 (ii), after the display: 'avec'",
+  "scan": "'avec', 'pour tout', 'est un raffinement de' underlined; L^i ∈ ob C_oX, i and S are not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "avec \\(L^i",
+   "new": "\\emph{avec} \\(L^i"
+  },
+  "note": "End of the statement, by word groups so that the edits stay clear of the C_{0X} entry. See the next entry."
+ },
+ {
+  "page": 127,
+  "where": "Corollaire 4.14 (ii), 'pour tout i, est un raffinement de S.'",
+  "scan": "'pour tout' and 'est un raffinement de' underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "pour tout \\(i\\), est un raffinement de \\(S\\).",
+   "new": "\\emph{pour tout} \\(i\\), \\emph{est un raffinement de} \\(S\\)."
+  },
+  "note": "End of the statement (entry above)."
+ },
+ {
+  "page": 127,
+  "where": "Définition 4.14.1, 'Nous appellerons dimension parfaite de F le plus petit entier n'",
+  "scan": "'Nous appellerons' and 'de' underlined, the defined term 'dimension parfaite' not (both scans; crops_126_130/p127_dimparf.png, w138_bot.png)",
+  "tex": "inside the \\emph of the whole definition",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Nous appellerons dimension parfaite de",
+   "new": "Nous appellerons} dimension parfaite \\emph{de"
+  },
+  "note": "As Définitions 1.4.3, 2.1, 2.3 and 5.2 (pp. 93, 95, 98, 132): the defined term is left out of the underline. Close the emphasis before the term and reopen it after."
+ },
+ {
+  "page": 127,
+  "where": "pp. 127-130: the site S̲ ('Quand S̲ est le site ponctuel', p. 128 'X ∈ ob S̲', p. 129 'f : S̲' ⟶ S̲')",
+  "scan": "S underlined where it names the site (both scans)",
+  "tex": "plain \\(S\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, as reported for pp. 84-85, 93-95, 100 and 131: one decision for the exposé, not a page fix."
+ },
+ {
+  "page": 128,
+  "where": "Proposition 4.17, 'Soient F', F'' ∈ ob D(C_S), et a, b ∈ Z, avec a ≤ b. Considérons les conditions :'",
+  "scan": "underlined: 'Soient', 'et', 'avec', 'Considérons les conditions' (both scans); (i) and (ii) are not",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient \\(F',F''\\in\\Ob\\Dpx(\\mathcal C_S)\\), et \\(a,b\\in\\mathbb Z\\), avec \\(a\\leq b\\). Considérons les conditions :",
+   "new": "\\emph{Soient \\(F',F''\\in\\Ob\\Dpx(\\mathcal C_S)\\), et \\(a,b\\in\\mathbb Z\\), avec \\(a\\leq b\\). Considérons les conditions} :"
+  },
+  "note": "Statement of a proposition in roman (Lemme 4.16 on the same page is in \\emph). The colon stays in roman."
+ },
+ {
+  "page": 128,
+  "where": "Proposition 4.17, 'On a (i) ⇒ (ii), et, si C_o est localement stable par facteurs directs (i.e. ...), alors on a (i) ⟺ (ii).'",
+  "scan": "underlined by word groups: 'On a', 'et,', 'si', 'est localement stable par facteurs directs', 'la relation', 'pour', 'implique', 'que localement', 'et', 'sont objets de', 'alors on a' (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "On a (i) \\(\\Rightarrow\\) (ii), et, si \\(\\mathcal C_0\\) est localement stable par facteurs directs (i.e. la relation \\(E'+E''\\in\\Ob\\mathcal C_0\\), pour \\(E',E''\\in\\Ob\\mathcal C_X\\) et \\(X\\in\\Ob S\\), implique que localement \\(E'\\) et \\(E''\\) sont objets de \\(\\mathcal C_0\\)), alors on a (i) \\(\\Leftrightarrow\\) (ii).",
+   "new": "\\emph{On a (i) \\(\\Rightarrow\\) (ii), et, si \\(\\mathcal C_0\\) est localement stable par facteurs directs (i.e. la relation \\(E'+E''\\in\\Ob\\mathcal C_0\\), pour \\(E',E''\\in\\Ob\\mathcal C_X\\) et \\(X\\in\\Ob S\\), implique que localement \\(E'\\) et \\(E''\\) sont objets de \\(\\mathcal C_0\\)), alors on a (i) \\(\\Leftrightarrow\\) (ii)}."
+  },
+  "note": "Second part of the statement (entry above)."
+ },
+ {
+  "page": 129,
+  "where": "start of page",
+  "scan": "p. 129 begins 'F'^i = F''^i = 0 pour i < a. Comme on a ...'; p. 128 ends '... pour i > b, puis, en tronquant, que' (both scans)",
+  "tex": "'\\(F'^i=F''^i=0\\)' ends the last line of page_128.tex (under the folio-128 marker); page_129.tex begins 'pour \\(i<a\\).'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 129 really begins with '\\(F'^i=F''^i=0\\)'. python -I move_marker.py 6 129 \"\\(F'^i=F''^i=0\\)\" --before (the last occurrence before the marker is the one after 'en tronquant, que'; simulated on both layers with crops_126_130/sim_markers.py: '... puis, en tronquant, que ', the marker, '\\(F'^i=F''^i=0\\)', 'pour \\(i<a\\). Comme on a ...')."
+ },
+ {
+  "page": 129,
+  "where": "line 1, 'Comme on a parf.dim(F) ⊂ [a,b], on déduit de (4.16)'",
+  "scan": "parf.dim(F) ⊂ [a,b] (both scans; crops_126_130/p129_parfdim.png, w140_top.png)",
+  "tex": "\\perfdim(F)\\subset[a,b] (keeps the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\perfamp(F)\\subset[a,b]",
+  "note": "A dimension is a number, not contained in an interval; (4.16) needs parf.amp(F) ⊂ [a,b], which is condition (ii) of 4.17. The corrected layer already has \\perfamp(F)."
+ },
+ {
+  "page": 129,
+  "where": "line 3, 'sont localement objets de C_o puisque C_o est localement stable'",
+  "scan": "no comma before 'puisque' (both scans; crops_126_130/p129_puisque.png)",
+  "tex": "objets de \\(\\mathcal C_0\\), puisque",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "objets de \\(\\mathcal C_0\\), puisque",
+   "new": "objets de \\(\\mathcal C_0\\) puisque"
+  },
+  "note": "The TeX adds the comma."
+ },
+ {
+  "page": 129,
+  "where": "Proposition 4.18, statement up to 'et soit'",
+  "scan": "underlined: 'Soit', 'un trio satisfaisant aux mêmes hypothèses', 'que', 'Soit', 'un morphisme de sites', '(défini par', 'et soit' (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\((S',\\mathcal C',\\mathcal C'_0)\\) un trio satisfaisant aux mêmes hypothèses (4.0) que \\((S,\\mathcal C,\\mathcal C_0)\\). Soit \\(f:S'\\to S\\) un morphisme de sites (défini par \\(f^{-1}:S\\to S'\\)), et soit",
+   "new": "\\emph{Soit \\((S',\\mathcal C',\\mathcal C'_0)\\) un trio satisfaisant aux mêmes hypothèses (4.0) que \\((S,\\mathcal C,\\mathcal C_0)\\). Soit \\(f:S'\\to S\\) un morphisme de sites (défini par \\(f^{-1}:S\\to S'\\)), et soit}"
+  },
+  "note": "Statement of a proposition in roman. Two groups (this one and the 'un foncteur ... définit un foncteur' entry below), so that the edits stay clear of the two display entries."
+ },
+ {
+  "page": 129,
+  "where": "Proposition 4.18, 'et soit u : D^*(C) ⟶ D^*(C') (* = -, +, ∅) un foncteur'",
+  "scan": "inline in the sentence (both scans)",
+  "tex": "a display \\[ ... \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\[\n  u:\\Dpx^*(\\mathcal C)\\longrightarrow \\Dpx^*(\\mathcal C')\\qquad (*=-,+,b)\n\\]\n",
+   "new": "\\(u:\\Dpx^*(\\mathcal C)\\longrightarrow \\Dpx^*(\\mathcal C')\\qquad (*=-,+,b)\\)\n"
+  },
+  "note": "The print sets the formula inline. Apply before the next entry, whose old lies inside this one (JSON order)."
+ },
+ {
+  "page": 129,
+  "where": "Proposition 4.18, '(* = -, +, ∅)'",
+  "scan": "the third value is the hand-drawn empty-set sign (loop crossed by a slash), not a typed b (both scans; crops_126_130/p129_star.png, w140_top.png)",
+  "tex": "(*=-,+,b)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(*=-,+,b)",
+   "new": "(*=-,+,\\varnothing)"
+  },
+  "note": "The same sign as K^{b,∅} on p. 126: D^∅ is D with no condition on degrees, beside D^-, D^+. Proposition 2.13 on p. 106 prints the same '(* = +,-,∅)', where the TeX also has b (main.tex, display after 'Proposition 2.13'). After the display entry above (JSON order)."
+ },
+ {
+  "page": 129,
+  "where": "Proposition 4.18, from 'un foncteur au-dessus de f' to 'définit un foncteur'",
+  "scan": "underlined: 'un foncteur', 'au-dessus de', 'Si', 'transforme les objets de', 'en complexes', '-parfaits', 'alors', 'définit un foncteur'; '(cf. (2.13))' is not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "un foncteur au-dessus de \\(f\\) (cf. (2.13)). Si \\(u\\) transforme les objets de \\(\\mathcal C_0\\) en complexes \\(\\mathcal C'_0\\)-parfaits, alors \\(u\\) définit un foncteur",
+   "new": "\\emph{un foncteur au-dessus de} \\(f\\) (cf. (2.13)). \\emph{Si \\(u\\) transforme les objets de \\(\\mathcal C_0\\) en complexes \\(\\mathcal C'_0\\)-parfaits, alors \\(u\\) définit un foncteur}"
+  },
+  "note": "Second group of the statement; the reference stays in roman."
+ },
+ {
+  "page": 129,
+  "where": "Proposition 4.18, end: 'alors u définit un foncteur D*(C)_{C_o-parf} ⟶ D*(C')_{C'_o-parf} .'",
+  "scan": "inline at the end of the sentence (both scans)",
+  "tex": "a display \\[ ... \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\[\n  \\Dpx^*(\\mathcal C)_{\\mathcal C_0\\text{-}\\mathrm{parf}}\n  \\longrightarrow\n  \\Dpx^*(\\mathcal C')_{\\mathcal C'_0\\text{-}\\mathrm{parf}}.\n\\]",
+   "new": "\\(\\Dpx^*(\\mathcal C)_{\\mathcal C_0\\text{-}\\mathrm{parf}}\\longrightarrow\\Dpx^*(\\mathcal C')_{\\mathcal C'_0\\text{-}\\mathrm{parf}}\\)."
+  },
+  "note": "The print sets the formula inline."
+ },
+ {
+  "page": 129,
+  "where": "Preuve of 4.18, 'est une sous-catégorie triangulée de D*(C) (4.10)'",
+  "scan": "D*(C̲) without the prime (both scans; crops_126_130/p129_D410.png, w140_top.png)",
+  "tex": "\\Dpx^*(\\mathcal C) (keeps the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Dpx^*(\\mathcal C')",
+  "note": "D*(C')_{C'_o-parf} is a subcategory of D*(C'), not of D*(C). The corrected layer already has \\Dpx^*(\\mathcal C')."
+ },
+ {
+  "page": 129,
+  "where": "Corollaire 4.19, statement up to 'alors'",
+  "scan": "underlined: 'Sous les hypothèses de', 'si', 'est', 'parfait en tant qu'objet de', 'et', 'est parfait,', 'alors'; '(2.16),' is not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de (2.16), si \\(E'\\in\\Ob\\Dpx^-({}_A, S'_A)\\) est parfait en tant qu'objet de \\(\\Dpx^-({}_A, S')\\) et \\(E\\in\\Ob\\Dpx^-({}_A S)\\) est parfait, alors",
+   "new": "\\emph{Sous les hypothèses de} (2.16), \\emph{si \\(E'\\in\\Ob\\Dpx^-({}_A, S'_A)\\) est parfait en tant qu'objet de \\(\\Dpx^-({}_A, S')\\) et \\(E\\in\\Ob\\Dpx^-({}_A S)\\) est parfait, alors}"
+  },
+  "note": "Statement of a corollary in roman. Apply before the two {}_{A'} entries of the statement, whose olds lie inside this one (JSON order)."
+ },
+ {
+  "page": 129,
+  "where": "Corollaire 4.19, 'alors E' ⊗^L_A E est parfait.'",
+  "scan": "inline: the formula opens the third line of the statement and 'est parfait.' follows it on the same line (both scans)",
+  "tex": "a display \\[ ... \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\[\n  E'\\overset{\\mathrm L}{\\otimes}_A E\n\\]\n",
+   "new": "\\(E'\\overset{\\mathrm L}{\\otimes}_A E\\) "
+  },
+  "note": "The print sets the formula inline."
+ },
+ {
+  "page": 129,
+  "where": "Corollaire 4.19, last words 'est parfait.'",
+  "scan": "'est parfait' underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est parfait.\n",
+   "new": "\\emph{est parfait}.\n"
+  },
+  "note": "End of the statement of 4.19."
+ },
+ {
+  "page": 129,
+  "where": "Corollaire 4.19, 'si E' ∈ ob D⁻(_{A'}S'_A)'",
+  "scan": "the left index is A' (the prime sits at the top of the lowered A, the shape of the prime of S'), as in 2.16 on p. 110, where the TeX reads D(_{A'}S'_A) (both scans; crops_126_130/p129_cor419a.png)",
+  "tex": "\\Dpx^-({}_A, S'_A)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "({}_A, S'_A)\\) est",
+   "new": "({}_{A'} S'_A)\\) est"
+  },
+  "note": "E' is a complex of A'-A-biModules (Corollaire 2.16); the TeX reads the prime of A' as a comma, here and in the entries below (pp. 129-130), as on p. 133 (findings_131_135.json). After the underline entry of the statement (JSON order)."
+ },
+ {
+  "page": 129,
+  "where": "Corollaire 4.19, 'parfait en tant qu'objet de D⁻(_{A'}S')'",
+  "scan": "left index A' (both scans; crops_126_130/p129_cor419b.png)",
+  "tex": "\\Dpx^-({}_A, S')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "({}_A, S')\\) et",
+   "new": "({}_{A'} S')\\) et"
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 129,
+  "where": "Preuve of 4.19, 'On peut supposer que E' ∈ ob D⁻(_{A'}S'_A)'",
+  "scan": "left index A' (both scans; crops_126_130/p129_preuveA.png)",
+  "tex": "\\Dpx^-({}_A, S'_A)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "({}_A, S'_A)\\) (",
+   "new": "({}_{A'} S'_A)\\) ("
+  },
+  "note": "As above."
+ },
+ {
+  "page": 129,
+  "where": "Preuve of 4.19, 'et l'on applique (4.18) à u = E' ⊗^L_A : D⁻(_AS) ⟶ D⁻(_{A'}S').'",
+  "scan": "inline at the end of the sentence (both scans)",
+  "tex": "a display \\[ ... \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\[\n  u=E'\\overset{\\mathrm L}{\\otimes}_A:\n  \\Dpx^-({}_A S)\\longrightarrow \\Dpx^-({}_A, S').\n\\]\n",
+   "new": "\\(u=E'\\overset{\\mathrm L}{\\otimes}_A:\\Dpx^-({}_A S)\\longrightarrow \\Dpx^-({}_A, S')\\).\n"
+  },
+  "note": "The print sets the formula inline. Apply before the next entry, whose old lies inside this one (JSON order)."
+ },
+ {
+  "page": 129,
+  "where": "Preuve of 4.19, target 'D⁻(_{A'}S')'",
+  "scan": "left index A' (both scans; crops_126_130/p129_preuveB.png)",
+  "tex": "\\Dpx^-({}_A, S')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow \\Dpx^-({}_A, S')",
+   "new": "\\longrightarrow \\Dpx^-({}_{A'} S')"
+  },
+  "note": "As above; after the display entry (JSON order)."
+ },
+ {
+  "page": 130,
+  "where": "Corollaire 4.19.1 a), 'Le foncteur'",
+  "scan": "the statement is underlined by word groups: 'Le foncteur', 'induit un foncteur' (a); 'Si', 'est commutatif,', 'le foncteur', 'induit un foncteur' (b); the formulas are not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Le foncteur\n",
+   "new": "\\emph{Le foncteur}\n"
+  },
+  "note": "Same form as Corollaire 5.6.1 on p. 133. The old leaves out the item label, so that it holds whatever the decision on \\textbf{a)}."
+ },
+ {
+  "page": 130,
+  "where": "Corollaire 4.19.1 a), 'Le foncteur 𝕃f* : D⁻(_AS) ⟶ D⁻(_{A'}S') induit un foncteur'",
+  "scan": "inline in the sentence (both scans)",
+  "tex": "a display \\[ ... \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\[\n  \\mathrm L f^*:\\Dpx^-({}_A S)\\longrightarrow \\Dpx^-({}_A, S')\n\\]\n",
+   "new": "\\(\\mathrm L f^*:\\Dpx^-({}_A S)\\longrightarrow \\Dpx^-({}_A, S')\\)\n"
+  },
+  "note": "The print sets the formula inline (as 5.6.1 a) on p. 133). Apply before the 𝕃 and A' entries of this formula, whose olds lie inside this one (JSON order)."
+ },
+ {
+  "page": 130,
+  "where": "Corollaire 4.19.1 a), first formula, '𝕃f*'",
+  "scan": "double-struck L: a typed L with a second stem (both scans; crops_126_130/p130_Lf1_big.png, w130_Lf1.png)",
+  "tex": "\\mathrm L",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathrm L f^*:\\Dpx^-({}_A S)\\longrightarrow",
+   "new": "\\mathbb L f^*:\\Dpx^-({}_A S)\\longrightarrow"
+  },
+  "note": "The derived functor is double-struck in all three places of the page (as 𝕃f* on p. 133 and ℝ on pp. 83, 134); the L over ⊗ is a plain typed L. After the display entry (JSON order)."
+ },
+ {
+  "page": 130,
+  "where": "Corollaire 4.19.1 a), first formula, target 'D⁻(_{A'}S')'",
+  "scan": "left index A' (both scans; crops_126_130/p130_Lf1.png)",
+  "tex": "\\Dpx^-({}_A, S')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow \\Dpx^-({}_A, S')",
+   "new": "\\longrightarrow \\Dpx^-({}_{A'} S')"
+  },
+  "note": "As on p. 129. After the display entry (JSON order)."
+ },
+ {
+  "page": 130,
+  "where": "Corollaire 4.19.1 a), 'induit un foncteur'",
+  "scan": "underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "induit un foncteur\n\\[\n  \\mathrm L",
+   "new": "\\emph{induit un foncteur}\n\\[\n  \\mathrm L"
+  },
+  "note": "Part of the statement (first entry of the page). Before the 𝕃 entry of the second display (JSON order)."
+ },
+ {
+  "page": 130,
+  "where": "Corollaire 4.19.1 a), display '𝕃f* : D⁻(_AS)_parf ⟶ D⁻(_{A'}S')_parf .'",
+  "scan": "double-struck L (both scans; crops_126_130/p130_Lf_big.png, w130_Lf2.png)",
+  "tex": "\\mathrm L",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathrm L f^*:\\Dpx^-({}_A S)_{\\mathrm{parf}}",
+   "new": "\\mathbb L f^*:\\Dpx^-({}_A S)_{\\mathrm{parf}}"
+  },
+  "note": "As above."
+ },
+ {
+  "page": 130,
+  "where": "Corollaire 4.19.1 a), display, target 'D⁻(_{A'}S')_parf'",
+  "scan": "left index A' (both scans; crops_126_130/p130_Lf2.png)",
+  "tex": "\\Dpx^-({}_A, S')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Dpx^-({}_A, S')_{\\mathrm{parf}}",
+   "new": "\\Dpx^-({}_{A'} S')_{\\mathrm{parf}}"
+  },
+  "note": "As on p. 129."
+ },
+ {
+  "page": 130,
+  "where": "Corollaire 4.19.1 b), 'Si A est commutatif, le foncteur'",
+  "scan": "underlined: 'Si', 'est commutatif,', 'le foncteur' (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Si \\(A\\) est commutatif, le foncteur",
+   "new": "\\emph{Si \\(A\\) est commutatif, le foncteur}"
+  },
+  "note": "Part of the statement (as 5.6.1 b) on p. 133)."
+ },
+ {
+  "page": 130,
+  "where": "Corollaire 4.19.1 b), 'le foncteur ⊗^L_A : D⁻(S) x_S D⁻(S) ⟶ D⁻(S) induit un foncteur'",
+  "scan": "inline in the sentence (both scans)",
+  "tex": "a display \\[ ... \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\[\n  \\overset{\\mathrm L}{\\otimes}_A:\n  \\Dpx^-(S)\\times_S\\Dpx^-(S)\n  \\longrightarrow \\Dpx^-(S)\n\\]\n",
+   "new": "\\(\\overset{\\mathrm L}{\\otimes}_A:\\Dpx^-(S)\\times_S\\Dpx^-(S)\\longrightarrow \\Dpx^-(S)\\)\n"
+  },
+  "note": "The print sets the formula inline."
+ },
+ {
+  "page": 130,
+  "where": "Corollaire 4.19.1 b), 'induit un foncteur'",
+  "scan": "underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "induit un foncteur\n\\[\n  \\overset",
+   "new": "\\emph{induit un foncteur}\n\\[\n  \\overset"
+  },
+  "note": "Part of the statement."
+ },
+ {
+  "page": 130,
+  "where": "Remarque 4.19.2, 'parf.amp(𝕃f*(E)) ⊂ [a,b]'",
+  "scan": "double-struck L (both scans; crops_126_130/p130_Lf3.png)",
+  "tex": "\\mathrm L",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\perfamp(\\mathrm L f^*(E))",
+   "new": "\\perfamp(\\mathbb L f^*(E))"
+  },
+  "note": "As in 4.19.1 a)."
+ }
+]

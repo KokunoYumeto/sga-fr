@@ -1,0 +1,316 @@
+[
+ {
+  "page": 341,
+  "where": "start of page, 'Comme l'anneau considéré est intègre, on en déduit la relation suivante'",
+  "scan": "'Comme' is indented: a new paragraph after the display that ends p. 340 (both scans)",
+  "tex": "'Comme' follows the \\end{align*} of p. 340 with only the marker line between",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "Comme l'anneau considéré est intègre",
+   "new": "\nComme l'anneau considéré est intègre"
+  },
+  "note": "Paragraph break of the print missing; the blank line comes after the marker line (as on p. 349)."
+ },
+ {
+  "page": 341,
+  "where": "end of the sentence before (5.4.2): '... λ^k(N') = 0 pour k > d' ;'",
+  "scan": "a semicolon after d' (both scans; crops_341_345/m341_semicolon.png, w341_semicolon.png)",
+  "tex": "pour \\(k>d'\\) :",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "pour \\(k>d'\\) :",
+   "new": "pour \\(k>d'\\)~;"
+  },
+  "note": "The TeX has a colon for the printed semicolon."
+ },
+ {
+  "page": 341,
+  "where": "'Ses opérations sont donc définie par :' (before (5.5.2))",
+  "scan": "'définie' (both scans)",
+  "tex": "Ses opérations sont donc définie par",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Ses opérations sont donc définies par",
+  "note": "Agreement slip (opérations ... définies). The TeX keeps the printed reading."
+ },
+ {
+  "page": 341,
+  "where": "(5.5.2), first line '(n,x) + (n',x') = (n+n',x+x')'",
+  "scan": "no punctuation after (n+n',x+x') (both scans)",
+  "tex": "(n,x)+(n',x')&=(n+n',x+x'),\\\\",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(n+n',x+x'),",
+   "new": "(n+n',x+x')"
+  },
+  "note": "The TeX adds a comma at the end of the display line."
+ },
+ {
+  "page": 341,
+  "where": "(5.5.2), second line '(n,x).(n',x') = (nn',nx'+n'x+x._N y)'",
+  "scan": "no punctuation after the closing parenthesis (both scans)",
+  "tex": "(nn',nx'+n'x+x\\cdot_N y).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "x\\cdot_N y).",
+   "new": "x\\cdot_N y)"
+  },
+  "note": "The TeX adds a full stop at the end of the display. The misprint entry below has fix null, so nothing overlaps."
+ },
+ {
+  "page": 341,
+  "where": "(5.5.2), second line, last term 'x._N y'",
+  "scan": "x._N y: the letter y (both scans)",
+  "tex": "nx'+n'x+x\\cdot_N y",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "nx'+n'x+x\\cdot_N x'",
+  "note": "The product of (n,x) and (n',x') has the term x._N x'; y is a slip (the y of (5.5.1)). The TeX keeps the printed reading."
+ },
+ {
+  "page": 341,
+  "where": "'On considère A comme plongé dans cet anneau par x ~> (0,x)'",
+  "scan": "a wavy arrow x ⇝ (0,x) (both scans; crops_341_345/m341_arrow.png, w341_arrow.png)",
+  "tex": "x\\mapsto(0,x)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "x\\mapsto(0,x)",
+   "new": "x\\rightsquigarrow(0,x)"
+  },
+  "note": "The file writes this wavy arrow \\rightsquigarrow elsewhere in the exposé (main.tex lines 8547, 8588)."
+ },
+ {
+  "page": 341,
+  "where": "after (5.5.1), before 'L'anneau A muni de cette multiplication'",
+  "scan": "'L'anneau' is indented: a new paragraph (both scans)",
+  "tex": "\\end{equation}\nL'anneau \\(A\\) muni",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{equation}\nL'anneau \\(A\\) muni",
+   "new": "\\end{equation}\n\nL'anneau \\(A\\) muni"
+  },
+  "note": "Paragraph break of the print missing after the display."
+ },
+ {
+  "page": 342,
+  "where": "'Pour x ∈ A, la valeur de γ^p calculée sur l'élément (0,x)'",
+  "scan": "x ∈ Λ: the letter has no crossbar and no spur at its apex, in both scans (main scan: no trace of a bar between the fully inked legs); the page's other A's ('A est', 'de A ;') have both (crops_341_345/m342_A_compare.png, m342_xinA.png, w342_xinA.png)",
+  "tex": "Pour \\(x\\in A\\)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "Pour \\(x\\in A\\)",
+   "new": "Pour \\(x\\in\\Lambda\\)"
+  },
+  "corrected": "Pour \\(x\\in A\\)",
+  "note": "Probably the typewriter's Greek capital lambda typed for A. The TeX silently corrects; the fix restores the printed reading. If the letter is read as an A whose crossbar failed, drop this entry."
+ },
+ {
+  "page": 342,
+  "where": "display of 5.6, third line, the parenthesis '(car λ_t(1-L) = λ_t(1)/λ_t(L) = (1+t)/(1+Lt). et on applique (2.3.2))'",
+  "scan": "a full stop after the fraction (1+t)/(1+Lt), on the line of its bar, one typewriter space after it and the size of the page's full stops; no comma before 'et on applique' (both scans; crops_341_345/m342_frac.png, w342_frac.png)",
+  "tex": "\\frac{1+t}{1+Lt}\\text{, et on applique }",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\frac{1+t}{1+Lt}\\text{, et on applique }",
+   "new": "\\frac{1+t}{1+Lt}.\\text{ et on applique }"
+  },
+  "corrected": "\\frac{1+t}{1+Lt}\\text{, et on applique }",
+  "note": "Full stop typed where the sentence goes on ('et on applique'). The TeX silently writes a comma; the fix restores the printed reading."
+ },
+ {
+  "page": 342,
+  "where": "display of 5.6, fourth line, denominator '1+...+λ^k(x.λ_{-1}(N))L^k t^k+..'",
+  "scan": "+.. : two dots, while the numerator above ends +... (both scans; crops_341_345/m342_plusdots.png, w342_denoms.png)",
+  "tex": "L^k t^k+\\cdots}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "L^k t^k+\\cdots}",
+   "new": "L^k t^k+..}"
+  },
+  "corrected": "L^k t^k+\\cdots}",
+  "note": "Two-dot ellipsis of the typist, handled as on pp. 349-350; the TeX writes the three-dot form."
+ },
+ {
+  "page": 342,
+  "where": "display of 5.6, last line, end",
+  "scan": "no punctuation after the last fraction (both scans; crops_341_345/m342_denoms.png, w342_denoms.png)",
+  "tex": "L^k t^k}.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "t^k}.",
+   "new": "t^k}"
+  },
+  "note": "The TeX adds a full stop at the end of the display. Disjoint from the next entry (apply in either order)."
+ },
+ {
+  "page": 342,
+  "where": "display of 5.6, last line, denominator '1+Σ_{k≥1} λ^k(N,x). λ_{-1}(N)..L^k t^k'",
+  "scan": "two dots between λ_{-1}(N) and L^k, the second lighter, one typewriter space after the first (both scans; crops_341_345/m342_NdotdotL.png, w342_NdotdotL.png)",
+  "tex": "\\lambda_{-1}(N)\\cdot L^k t^k",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "(N)\\cdot L^k",
+   "new": "(N)\\cdot\\cdot L^k"
+  },
+  "corrected": "(N)\\cdot L^k",
+  "note": "Doubled product dot. The TeX silently writes one; the fix restores the printed reading."
+ },
+ {
+  "page": 343,
+  "where": "start of page, 'Donc λ^p(N+L,x) est le coefficient de t^p dans la série :'",
+  "scan": "'Donc' is indented: a new paragraph after the display that ends p. 342 (both scans)",
+  "tex": "'Donc' follows the \\] of p. 342 with only the marker line between",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "Donc \\(\\lambda^p(N+L,x)\\)",
+   "new": "\nDonc \\(\\lambda^p(N+L,x)\\)"
+  },
+  "note": "Paragraph break of the print missing; the blank line comes after the marker line (as on p. 349)."
+ },
+ {
+  "page": 343,
+  "where": "the series after 'dans la série :', numerator 'Σ_{k≥1} λ^k(N,x)(1+...+L^{k-1})t^k'",
+  "scan": "(1+...+L^{k-1}): no L+ after 1+ (both scans; crops_341_345/m343_num.png, wit_343_small.png)",
+  "tex": "(1+L+\\cdots+L^{k-1})",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "(1+L+\\cdots+L^{k-1})",
+   "new": "(1+\\cdots+L^{k-1})"
+  },
+  "note": "The TeX adds the term L."
+ },
+ {
+  "page": 343,
+  "where": "Proposition 5.7, the statement",
+  "scan": "underlined word groups: 'Soient', 'un anneau binomial', 'une', 'algèbre augmentée' (after 'K-λ-'), 'un élément de', 'tel que', 'pour' (before 'k > d'), 'Alors pour tout', 'et tout', 'on a'; each underline stops before the following comma or formula (both scans; crops_341_345/m343_prop1.png, m343_prop2.png, w343_prop.png)",
+  "tex": "the statement in roman (\\textbf{Proposition 5.7.} Soient \\(K\\) un anneau binomial, ...)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé V continues the Exposé II pattern of GLOBAL_ISSUES 82 (as reported for pp. 298, 306-315 and 336-340): not itemized, for the per-exposé decision; the word groups are listed for a scripted fix. It is the only statement on pp. 341-345; no \\emph on terms the print leaves plain, no category L."
+ },
+ {
+  "page": 343,
+  "where": "after (5.7.1), before 'Soit A_o la K-λ-algèbre engendrée'",
+  "scan": "'Soit' is indented: a new paragraph (both scans)",
+  "tex": "\\end{equation}\nSoit \\(A_0\\)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{equation}\nSoit \\(A_0\\)",
+   "new": "\\end{equation}\n\nSoit \\(A_0\\)"
+  },
+  "note": "Paragraph break of the print missing after the display."
+ },
+ {
+  "page": 344,
+  "where": "start of page (folio-344 marker)",
+  "scan": "p. 344 begins 'sur x, d'où le résultat, l'homomorphisme étant compatible aux filtrations.'; p. 343 ends '... donc N_o sur N et X_o' (both scans; crops_341_345/wit_343_small.png, wit_344_small.png)",
+  "tex": "'sur \\(x\\), d'où le' ends the last line of page_343.tex, above the folio-344 marker; page_344.tex begins 'résultat,'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-344 marker stands four words late. Page 344 really begins with 'sur \\(x\\), d'où le résultat'. Exact fix in main.tex (both layers): replace 'et \\(X_0\\) sur \\(x\\), d'où le\\n%%%%%%%%%%  scan idx 357  |  folio 344  %%%%%%%%%%\\nrésultat,' by 'et \\(X_0\\)\\n%%%%%%%%%%  scan idx 357  |  folio 344  %%%%%%%%%%\\nsur \\(x\\), d'où le résultat,' (simulated in memory on both layers with crops_341_345/sim_marker.py: once in each). Equivalent: python -I move_marker.py 6 344 \"sur \\(x\\), d'où le\" --before (leaves 'sur \\(x\\), d'où le' on a line of its own)."
+ },
+ {
+  "page": 344,
+  "where": "display after 'Par 1.9, on en déduit des morphismes :', second line 'Ĝ^t --γ'--> Ĝ^u∘i∘Ĝ^t_{g∇}'",
+  "scan": "the last factor is Ĝ^t with the subscript g followed by ∇ (both scans; crops_341_345/m344_disp2.png, wit_344_small.png)",
+  "tex": "\\circ\\widehat G^t_g,",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\circ\\widehat G^t_g,",
+   "new": "\\circ\\widehat G^t_{g\\nabla},"
+  },
+  "note": "The TeX drops the ∇ of the subscript (the law ∇, as in (Ĝ^t∘i)_∇ of the display of 6.1)."
+ },
+ {
+  "page": 344,
+  "where": "'avec le morphisme canonique : Ĝ --> 1+Gr.^+ (1.11)'",
+  "scan": "1+\\widehat{Gr.}^+: the hat covers 'Gr.' with its dot (both scans; crops_341_345/m344_Gr.png, wit_344_small.png)",
+  "tex": "1+\\widehat{\\operatorname{Gr}}^{+}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "1+\\widehat{\\operatorname{Gr}}^{+}",
+   "new": "1+\\widehat{\\operatorname{Gr}\\,\\cdot\\,}^{+}"
+  },
+  "note": "The TeX drops the dot of Gr. (GLOBAL_ISSUES 88 lists p. 344); \\,\\cdot\\, is the form of the fixes on pp. 312-313 and 346."
+ },
+ {
+  "page": 345,
+  "where": "first display, second factor '(1+..^+)' of '(1+.^+)x(1+..^+) --*--> 1+.^+'",
+  "scan": "two dots after 1+, the hand-drawn hat over the first; the first factor and the target have one (both scans; crops_341_345/m345_disp1.png, w345_disp1.png)",
+  "tex": "\\times(1+\\widehat{\\cdot}{}^{+})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\times(1+\\widehat{\\cdot}{}^{+})",
+   "new": "\\times(1+\\widehat{\\cdot}\\cdot{}^{+})"
+  },
+  "corrected": "\\times(1+\\widehat{\\cdot}{}^{+})",
+  "note": "Doubled placeholder dot. The TeX silently writes one; the fix restores the printed reading."
+ },
+ {
+  "page": 345,
+  "where": "'muni des lois de composition définie par :'",
+  "scan": "'définie' (both scans; crops_341_345/w345_forall.png)",
+  "tex": "muni des lois de composition définie par",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "muni des lois de composition définies par",
+  "note": "Agreement slip (lois ... définies), as 'Ses opérations sont donc définie par' on p. 341. The TeX keeps the printed reading."
+ },
+ {
+  "page": 345,
+  "where": "'∀ a,a' ∈ A, φ, φ' ∈ 1+Â^+,' before the display of the sum",
+  "scan": "a,a' ∈ A (both scans; crops_341_345/m345_forall.png, w345_forall.png)",
+  "tex": "\\(\\forall\\,a,a'\\in A\\)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\(\\forall\\,a,a'\\in K\\)",
+  "note": "The pairs (a,φ) lie in K x (1+Â^+), and (6.1.3) lets a act as a scalar, so a, a' are elements of K. The TeX keeps the printed reading."
+ },
+ {
+  "page": 345,
+  "where": "after (6.1.2), before 'L'anneau ainsi construit'",
+  "scan": "'L'anneau' is indented: a new paragraph (both scans)",
+  "tex": "\\end{equation}\nL'anneau ainsi construit",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{equation}\nL'anneau ainsi construit",
+   "new": "\\end{equation}\n\nL'anneau ainsi construit"
+  },
+  "note": "Paragraph break of the print missing after the display."
+ },
+ {
+  "page": 345,
+  "where": "'L'anneau ainsi construit admet (1.1) pour l'élément unité'",
+  "scan": "(1.1) with a full stop, no comma tail (both scans; crops_341_345/m345_unit.png, w345_unit.png)",
+  "tex": "admet (1.1) pour",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "admet \\((1,1)\\) pour",
+  "note": "The unit element of K x (1+Â^+) is the pair (1,1). The TeX keeps the printed reading."
+ }
+]

@@ -1,0 +1,248 @@
+[
+ {
+  "page": 386,
+  "where": "'et un isomorphisme dans D_parf(A) : L˙ ⥲ L'˙, de qui permet'",
+  "scan": "L˙ ←~ L'˙: under the typed tilde a hand-drawn arrow whose head is at the LEFT end (a barb rising from the left end; the right end is a plain blob), in both scans (crops_386_390/m386_arrs2.png, m386_arrw2.png); the typed arrow of the display ii) on the same page has its head at the right (m386_rarrw.png)",
+  "tex": "L^{\\bullet}\\xrightarrow{\\sim}L'{}^{\\bullet} (arrow pointing right)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "L^{\\bullet}\\xrightarrow{\\sim}L'{}^{\\bullet}",
+   "new": "L^{\\bullet}\\xleftarrow{\\sim}L'{}^{\\bullet}"
+  },
+  "note": "The print gives the isomorphism from L'˙ to L˙. \\xleftarrow is amsmath. Medium: the hand-drawn stroke is broken, but neither scan shows a head at the right end."
+ },
+ {
+  "page": 386,
+  "where": "'L˙ ⥲ L'˙, de qui permet de supposer L˙ strictement parfait'",
+  "scan": "'de' at the end of the line, 'qui permet' at the start of the next (both scans; crops_386_390/m386_arrs.png, m386_arrw.png)",
+  "tex": "de qui permet (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "ce qui permet",
+  "note": "Typing slip d for c. The diplomatic layer is right; corrected edition: 'ce qui permet'."
+ },
+ {
+  "page": 386,
+  "where": "Proposition 2.6 i), ii) (statement continued from p. 385)",
+  "scan": "underlined word groups: in i) 'est' and '-parfait' (RF_k(L˙), C_o and ';' plain); in ii) 'Le morphisme canonique' ('(2.5.3) :' plain); after the display 'est un isomorphisme de' (D^+(A) and the full stop plain); the labels i), ii) plain (both scans)",
+  "tex": "the statement in roman (\\text{ est }, \\text{-parfait}, \\text{Le morphisme canonique }, \\text{ est un isomorphisme de })",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé VI follows the Exposé II pattern of GLOBAL_ISSUES 82 (as on pp. 367-385): not itemized; the word groups are listed for the scripted pass."
+ },
+ {
+  "page": 386,
+  "where": "letters of sheaves, Modules and complexes on pp. 386-390",
+  "scan": "underlined in the print: L˙, L'˙, L^i, B (p. 386); L˙, B, M˙, P˙_i, N˙_i, K˙_i, M'˙_U (p. 387); N˙_1, M˙, P˙_1, P˙_k, B, M'˙_U, M'^i_U (p. 388); L˙, M˙, K˙, K˙_i, K_i, L (p. 389); E_i, E_1, E_n, E_k, E, F_o (p. 390). Plain in the print: S, X, U, X_k, f, k, d_o, x_i, ξ and the K˙ of the groups K˙(X), K˙(S) (both scans)",
+  "tex": "all plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé VI transcription, reported for pp. 366-385 (findings_381_385.json): not itemized. Three examples, in the form to use if the diplomatic layer reproduces it: p. 386 'des $B$-Modules' -> 'des $\\underline{B}$-Modules'; p. 387 'Soit $M^{\\bullet}$ un complexe' -> 'Soit $\\underline{M}^{\\bullet}$ un complexe'; p. 390 'de type fini \\(E\\).' -> 'de type fini \\(\\underline{E}\\).'. The underlined structure sheaf O stays \\mathcal O (pending volume decision)."
+ },
+ {
+  "page": 387,
+  "where": "display at the top of the page, Proj_o(F_k(L˙)) → L˙",
+  "scan": "Proj_o(F_k(L˙)) → L˙,      , : a comma right after L˙ and a second typed comma about eight character widths further right (both scans; crops_386_390/m387_commas.png, m387_commaw.png)",
+  "tex": "L^{\\bullet}, (one comma: silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "L^{\\bullet},\n\\]",
+   "new": "L^{\\bullet},\\qquad ,\n\\]"
+  },
+  "corrected": "L^{\\bullet},",
+  "note": "The typist's doubled comma: the diplomatic layer keeps both, the corrected edition one."
+ },
+ {
+  "page": 387,
+  "where": "diagram of the triangles, bottom row between 'P˙_1,' and 'N˙_k'",
+  "scan": "'....': four typed full stops on the baseline, then a comma (both scans; crops_386_390/m387_dotss.png, m387_dotsw.png)",
+  "tex": "\\cdots, (three dots at mid-height)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\cdots, &",
+   "new": "...., &"
+  },
+  "note": "Same kind of fix as the four baseline stops of p. 49 (findings_046_050: \\gamma(F_1)....\\gamma(F_p))."
+ },
+ {
+  "page": 388,
+  "where": "diagram after 'le diagramme commutatif :', left vertical map",
+  "scan": "a plain vertical bar without arrowhead, the rotated tilde ≀ to its right (both scans; crops_386_390/m388_verts.png, m388_vertw.png)",
+  "tex": "\\arrow[d,\"\\sim\"'] (an arrow with its head, ~ set to its left)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[d,\"\\sim\"']",
+   "new": "\\arrow[d,dash,\"\\wr\"]"
+  },
+  "note": "The typescript's vertical ≃: headless, like the horizontal ≃ written \\simeq on pp. 110-255. dash is tikz-cd's key for a line without tips (as the p. 142 fix; main.tex lines 3233, 8066), \\wr the rotated tilde; without ' the label stands to the right, as printed."
+ },
+ {
+  "page": 388,
+  "where": "same diagram, right vertical map M˙ → M'˙_U",
+  "scan": "a plain vertical bar without arrowhead, ≀ to its right (both scans; crops_386_390/m388_verts.png, m388_vertw.png)",
+  "tex": "\\arrow[d,\"\\sim\"] (an arrow with its head)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[d,\"\\sim\"]",
+   "new": "\\arrow[d,dash,\"\\wr\"]"
+  },
+  "note": "As the left map; the two edits are independent (the old strings differ by the ')."
+ },
+ {
+  "page": 389,
+  "where": "start of page (folio-389 marker)",
+  "scan": "p. 388 ends 'le complexe P˙_k correspondant est acyclique.' and blank space; p. 389 begins '2.8. Soit L˙ un complexe parfait sur X.' (both scans; crops_386_390/m388_wbot.png, m389_wtop.png)",
+  "tex": "page_388.tex ends with '\\textbf{2.8.}', above the folio-389 marker; page_389.tex begins 'Soit $L^{\\bullet}$'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 389 really begins at '\\textbf{2.8.}' (a heading at the top of a page, which the script did not move). Exact edit in main.tex, both layers (diplomatic lines 9796-9797, current 9802-9803): replace '\\textbf{2.8.}\\n%%%%%%%%%%  scan idx 402  |  folio 389  %%%%%%%%%%\\n' by '%%%%%%%%%%  scan idx 402  |  folio 389  %%%%%%%%%%\\n\\textbf{2.8.}\\n' (simulated in memory in both layers: crops_386_390/sim_markers.py). Or: python -I move_marker.py 6 389 '\\textbf{2.8.}' --before."
+ },
+ {
+  "page": 389,
+  "where": "'(notons que f^* = Lf^* d'après la platitude de f)'",
+  "scan": "the L of Lf^* has two underlines (both scans; crops_386_390/m389_Lfw.png), the form the TeX writes \\mathbf (R doubly underlined is \\mathbf R in RF_k on the same page)",
+  "tex": "$f^*=L f^*$ (plain L)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$f^*=L f^*$",
+   "new": "$f^*=\\mathbf L f^*$"
+  },
+  "note": "Derived-functor L written plain."
+ },
+ {
+  "page": 389,
+  "where": "'où les K_i sont les complexes parfaits sur S définis dans 2.7'",
+  "scan": "K_i (underlined) with no raised dot (both scans; crops_386_390/m389_Kis.png, m389_Kiw.png), whereas the K˙_i of the display just above have it (m389_Kidisp.png)",
+  "tex": "$K_i^{\\bullet}$ (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "où les $K_i^{\\bullet}$ sont",
+   "new": "où les $K_i$ sont"
+  },
+  "corrected": "K_i^{\\bullet}",
+  "note": "The typist left out the dot of the complex (K˙_i in 2.7 and in the display). The diplomatic layer should drop it; the corrected edition keeps K_i^{\\bullet}."
+ },
+ {
+  "page": 389,
+  "where": "display f^*(x_o) + f^*(x_1)ξ + ... + f^*(x_r)ξ^r = 0,",
+  "scan": "three typed full stops on the baseline, below the level of the + signs (both scans; crops_386_390/m389_dotsw.png)",
+  "tex": "\\cdots",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\xi+\\cdots+f^*",
+   "new": "\\xi+\\ldots+f^*"
+  },
+  "note": "\\cdots sets the dots at mid-height (same kind of fix as pp. 79-184)."
+ },
+ {
+  "page": 390,
+  "where": "start of page (folio-390 marker)",
+  "scan": "p. 389 ends '... on trouve alors x_r = 0 ; on'; p. 390 begins 'achève par récurrence, en notant que' (both scans; crops_386_390/m389_wbot.png, m390_wtop.png)",
+  "tex": "page_389.tex ends 'on achève par'; page_390.tex begins 'récurrence,'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-390 marker stands two words late: 'achève par' belongs to p. 390. Exact edit in main.tex, both layers (diplomatic lines 9828-9830, current 9834-9836): replace 'on achève par\\n%%%%%%%%%%  scan idx 403  |  folio 390  %%%%%%%%%%\\nrécurrence,' by 'on\\n%%%%%%%%%%  scan idx 403  |  folio 390  %%%%%%%%%%\\nachève par récurrence,' (simulated in memory in both layers: crops_386_390/sim_markers.py). Or: python -I move_marker.py 6 390 'achève par' --before."
+ },
+ {
+  "page": 390,
+  "where": "Proposition 3.1, 'D(E_i) le schéma des drapeaux de E_i'",
+  "scan": "D with two underlines (both scans; crops_386_390/m390_Xw.png for the same D), the form the TeX writes \\mathbf (X = \\mathbf P(E) for the doubly underlined P of Proposition 2.6)",
+  "tex": "\\(D(E_i)\\) (plain D)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(D(E_i)\\) le schéma",
+   "new": "\\(\\mathbf D(E_i)\\) le schéma"
+  },
+  "note": "First of three D in Proposition 3.1 (the next two entries). Corollaire 5.5 (main.tex line 10149) has the same plain D(E_1), D(E_n), for its batch to check."
+ },
+ {
+  "page": 390,
+  "where": "Proposition 3.1, 'X = D(E_1) x_S ... x_S D(E_n)', first factor",
+  "scan": "D doubly underlined (both scans; crops_386_390/m390_Xw.png)",
+  "tex": "\\(X=D(E_1)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(X=D(E_1)",
+   "new": "\\(X=\\mathbf D(E_1)"
+  },
+  "note": "Independent of the D(E_n) and dots entries (no common text)."
+ },
+ {
+  "page": 390,
+  "where": "same formula, last factor D(E_n)",
+  "scan": "D doubly underlined (both scans; crops_386_390/m390_Xw.png)",
+  "tex": "\\times_S D(E_n)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\times_S D(E_n)",
+   "new": "\\times_S \\mathbf D(E_n)"
+  },
+  "note": ""
+ },
+ {
+  "page": 390,
+  "where": "same formula, 'x_S ... x_S'",
+  "scan": "three typed full stops on the baseline (both scans; crops_386_390/m390_Xw.png)",
+  "tex": "\\cdots",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\times_S\\cdots",
+   "new": "\\times_S\\ldots"
+  },
+  "note": "As the dots of p. 389. The typed letter x for the product sign is handled globally."
+ },
+ {
+  "page": 390,
+  "where": "Proposition 3.1, 'le schéma des drapeaux de E_i' / 'X = D(E_1)...'",
+  "scan": "no comma after E_i at the end of the line; the next line begins 'X = D(E_1)' (both scans; crops_386_390/m390_Eis.png, m390_Eiw.png)",
+  "tex": "drapeaux de \\(E_i\\), \\(X= (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "drapeaux de \\(E_i\\),",
+   "new": "drapeaux de \\(E_i\\)"
+  },
+  "corrected": "drapeaux de \\(E_i\\),",
+  "note": "The list of hypotheses needs the comma, which the TeX supplies; the diplomatic layer should drop it."
+ },
+ {
+  "page": 390,
+  "where": "last line: 'on définit par récurrence des schémas X_1,...,X_n et'",
+  "scan": "'X_n et' with nothing after 'et' (both scans; crops_386_390/m390_ets.png, m390_etw.png); p. 391 begins 'pour tout i un O_{X_i}-Module' with no comma (witness, crops_386_390/m391_wtop.png)",
+  "tex": "X_n\\) et,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "X_n\\) et,",
+   "new": "X_n\\) et"
+  },
+  "note": "The TeX adds a comma after 'et'."
+ },
+ {
+  "page": 390,
+  "where": "Proposition 3.1",
+  "scan": "underlined word groups: 'Soient', 'un schéma quasi', 'compact' (the hyphen left out), 'des', '-Modules', 'localement libres de type fini', 'le schéma des drapeaux de', 'Alors l'homomorphisme canonique'; after the display 'est injectif', 'étant défini', 'soit à partir des', '-Modules localement', 'libres de type fini', 'soit à partir des complexes parfaits'; plain: S, the commas, 'X = D(E_1)x_S...x_S D(E_n).', ':', '(K˙' and ').' (E and O_S carry their own underlines, D its double one); the label underlines only 'Proposition' (both scans)",
+  "tex": "the statement in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé II pattern (GLOBAL_ISSUES 82), as Proposition 2.6: not itemized; word groups listed for the scripted pass. The section title '3. Conséquences ... projectif' (underlined except '3.') is a \\section* without underline: accepted as typesetting."
+ }
+]

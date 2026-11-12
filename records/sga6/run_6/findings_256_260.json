@@ -1,0 +1,377 @@
+[
+ {
+  "page": 256,
+  "where": "Corollaire 4.6.1, first line of the display",
+  "scan": "tor.amp(E_{X_s})_x ⊂ [a,b] (one pair of parentheses, index x outside)",
+  "tex": "\\tamp((E_{X_s})_x)\\subset[a,b]",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tamp((E_{X_s})_x)",
+   "new": "\\tamp(E_{X_s})_x"
+  },
+  "note": "The TeX adds a second pair of parentheses around (E_{X_s})_x."
+ },
+ {
+  "page": 257,
+  "where": "page start",
+  "scan": "p. 257 begins 'b) parf.amp_{f_i}(E_i) ⊂ [a_i,b_i] pour i = 1, 2'; p. 256 ends '... et acyclique en degré extérieur à [a,b].'",
+  "tex": "page_257.tex begins 'extérieur à \\([a,b]\\).' (end of Prop. 4.7 a), printed on p. 256)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-257 marker stands one TeX line too early. Exact fix in main.tex (both layers): replace 'acyclique en degré\\n%%%%%%%%%%  scan idx 270  |  folio 257  %%%%%%%%%%\\nextérieur à \\([a,b]\\).\\n\\item' by 'acyclique en degré\\nextérieur à \\([a,b]\\).\\n%%%%%%%%%%  scan idx 270  |  folio 257  %%%%%%%%%%\\n\\item', so that page 257 begins with '\\item \\(\\parfamp_{f_i}(E_i)'."
+ },
+ {
+  "page": 257,
+  "where": "Corollaire 4.7.1, first line",
+  "scan": "Sous les hypothèses de (4.6),",
+  "tex": "Sous les hypothèses de (4.6),",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Sous les hypothèses de (4.7),",
+  "note": "Wrong reference number in the print: f_1, f_2 and f = f_1 x_S f_2 are those of Proposition 4.7 (4.6 has no f_i). The TeX keeps the printed (4.6). The same one-step slip occurs twice on p. 259 ((4.8) for (4.9))."
+ },
+ {
+  "page": 258,
+  "where": "Proposition 4.8, last sentence ('Par suite, le foncteur Rf_* envoie ...')",
+  "scan": "D(X)_{S-parf} dans D(Y)_{S-parf} with both 'parf' underlined (not the 'S-')",
+  "tex": "envoie \\(D(X)_{S\\text{-}\\parf}\\) dans \\(D(Y)_{S\\text{-}\\parf}\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "envoie \\(D(X)_{S\\text{-}\\parf}\\) dans \\(D(Y)_{S\\text{-}\\parf}\\)",
+   "new": "envoie \\(D(X)_{S\\text{-}\\uparf}\\) dans \\(D(Y)_{S\\text{-}\\uparf}\\)"
+  },
+  "note": "The underlined parf of (4.2) (\\uparf), not the statement underline: footnote (1) then states that this category equals the one with plain parf because X and Y are quasi-compact. In Cor. 4.7.2 and 4.9.1 the typist leaves plain parf without underline inside underlined statements."
+ },
+ {
+  "page": 258,
+  "where": "footnote (1)",
+  "scan": "on a d'ailleurs D(X)_{S-parf (underlined)} = D(X)_{S-parf (plain)}",
+  "tex": "\\(D(X)_{S\\text{-}\\parf}=D(X)_{S\\text{-}\\uparf}\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(D(X)_{S\\text{-}\\parf}=D(X)_{S\\text{-}\\uparf}\\)",
+   "new": "\\(D(X)_{S\\text{-}\\uparf}=D(X)_{S\\text{-}\\parf}\\)"
+  },
+  "note": "The print underlines the first parf and not the second; the TeX has them the other way round."
+ },
+ {
+  "page": 258,
+  "where": "Corollaire 4.8.1, end ('le foncteur Rf_* envoie ...')",
+  "scan": "D(X)_{parf} dans D(Y)_{parf} with both 'parf' underlined",
+  "tex": "envoie \\(D(X)_{\\parf}\\) dans \\(D(Y)_{\\parf}\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "envoie \\(D(X)_{\\parf}\\) dans \\(D(Y)_{\\parf}\\)",
+   "new": "envoie \\(D(X)_{\\uparf}\\) dans \\(D(Y)_{\\uparf}\\)"
+  },
+  "note": "Footnote (2), D(X)_{underlined parf} = D(X)_{parf}, is already right in the TeX."
+ },
+ {
+  "page": 258,
+  "where": "Proposition 4.9, end of the statement",
+  "scan": "RHom(E,f^!(F)) with Hom underlined, R plain",
+  "tex": "\\RHom(E,f^!(F))",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(E,f^!(F))",
+   "new": "\\mathrm R\\underline{\\Hom}(E,f^!(F))"
+  },
+  "note": "\\RHom prints a plain Hom."
+ },
+ {
+  "page": 258,
+  "where": "Preuve of 4.9, last line",
+  "scan": "f_*RHom(E,f^!F) with Hom underlined",
+  "tex": "f_*\\RHom(E,f^!F)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "f_*\\RHom(E,f^!F)",
+   "new": "f_*\\mathrm R\\underline{\\Hom}(E,f^!F)"
+  },
+  "note": ""
+ },
+ {
+  "page": 259,
+  "where": "first display (théorème de dualité), left side",
+  "scan": "f_*RHom(E,f^!F) with Hom underlined",
+  "tex": "f_*\\RHom(E,f^!F)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "f_*\\RHom(E,f^!F)",
+   "new": "f_*\\mathrm R\\underline{\\Hom}(E,f^!F)"
+  },
+  "note": ""
+ },
+ {
+  "page": 259,
+  "where": "first display, the sign between the two sides",
+  "scan": "≃ (a typed tilde over a dash, no arrowhead)",
+  "tex": "\\xrightarrow{\\sim}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "f^!F)\\xrightarrow{\\sim}",
+   "new": "f^!F)\\simeq"
+  },
+  "note": "The same typed sign as in f^! ≃ i^!f'^! on p. 258, which the TeX writes \\simeq."
+ },
+ {
+  "page": 259,
+  "where": "first display, right side",
+  "scan": "RHom(f_*(E),F) with Hom underlined",
+  "tex": "\\RHom(f_*(E),F).",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(f_*(E),F).",
+   "new": "\\mathrm R\\underline{\\Hom}(f_*(E),F)."
+  },
+  "note": ""
+ },
+ {
+  "page": 259,
+  "where": "second display (d'après (I 7.7)), left side",
+  "scan": "RHom(f_*(E),F) with Hom underlined",
+  "tex": "\\RHom(f_*(E),F)\\xrightarrow{\\sim}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\[\n \\RHom(f_*(E),F)",
+   "new": "\\[\n \\mathrm R\\underline{\\Hom}(f_*(E),F)"
+  },
+  "note": "Independent of the next edit (the two do not change the same characters)."
+ },
+ {
+  "page": 259,
+  "where": "second display, the sign between the two sides",
+  "scan": "≃ (tilde over a dash, no arrowhead)",
+  "tex": "\\xrightarrow{\\sim}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "F)\\xrightarrow{\\sim}(f_*(E))",
+   "new": "F)\\simeq(f_*(E))"
+  },
+  "note": ""
+ },
+ {
+  "page": 259,
+  "where": "Corollaire 4.9.1, first line",
+  "scan": "Sous les hypothèses de (4.8),",
+  "tex": "Sous les hypothèses de (4.8),",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Sous les hypothèses de (4.9),",
+  "note": "Wrong reference number in the print: the corollary is Prop. 4.9 with E = O_X (its proof: 'Faire E = O_X'); f^! and the noetherian, compactifiable setting are those of 4.9, not of 4.8. The TeX keeps (4.8)."
+ },
+ {
+  "page": 259,
+  "where": "Corollaire 4.9.2, 'Posons ... RHom(.,K_X) = D_X'",
+  "scan": "RHom(.,K_X) with Hom underlined",
+  "tex": "\\(\\RHom(\\,\\cdot\\,,K_X)=D_X\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\RHom",
+   "new": "\\(\\mathrm R\\underline{\\Hom}"
+  },
+  "note": ""
+ },
+ {
+  "page": 259,
+  "where": "Corollaire 4.9.2, 'Posons ... RHom(.,K_X) = D_X'",
+  "scan": "(.,K_X): a full stop on the line as the empty place",
+  "tex": "(\\,\\cdot\\,,K_X)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\,\\cdot\\,,K_X)",
+   "new": "(.,K_X)"
+  },
+  "note": "As the earlier fixes (P,\\cdot) -> (P,.) and (\\cdot,I) -> (.,I) in this volume."
+ },
+ {
+  "page": 259,
+  "where": "Corollaire 4.9.2, 'Posons ... = D_X'",
+  "scan": "D_X with the D underlined",
+  "tex": "=D_X",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "K_X)=D_X",
+   "new": "K_X)=\\underline{D}_X"
+  },
+  "note": "The duality functor D_X, D_S is underlined everywhere on this page (statement, displays, proof); the TeX writes a plain D."
+ },
+ {
+  "page": 259,
+  "where": "Corollaire 4.9.2, 'on a D_X(E) ∈ ob D(f)_parf'",
+  "scan": "D_X(E) with the D underlined",
+  "tex": "on a \\(D_X(E)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "on a \\(D_X(E)",
+   "new": "on a \\(\\underline{D}_X(E)"
+  },
+  "note": ""
+ },
+ {
+  "page": 259,
+  "where": "Corollaire 4.9.2, display",
+  "scan": "E ⟶ D_X D_X(E) with both D underlined",
+  "tex": "E\\longrightarrow D_XD_X(E)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "D_XD_X(E)",
+   "new": "\\underline{D}_X\\underline{D}_X(E)"
+  },
+  "note": ""
+ },
+ {
+  "page": 259,
+  "where": "Preuve of 4.9.2, first sentence",
+  "scan": "appliquer (4.8) avec Y = S, F = O_S",
+  "tex": "appliquer (4.8) avec \\(Y=S\\)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "appliquer (4.9) avec",
+  "note": "Wrong reference number in the print: the first assertion is Prop. 4.9 with Y = S, F = O_S (4.8 has no F and no f^!). The TeX keeps (4.8)."
+ },
+ {
+  "page": 259,
+  "where": "proof of 4.9.2, display (dualité globale)",
+  "scan": "f_*D_X ≃ D_S f_* with both D underlined and the sign ≃ (tilde over a dash, no arrowhead)",
+  "tex": "f_*D_X\\xrightarrow{\\sim}D_Sf_*.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "f_*D_X\\xrightarrow{\\sim}D_Sf_*.",
+   "new": "f_*\\underline{D}_X\\simeq\\underline{D}_Sf_*."
+  },
+  "note": "One edit for the three differences of this short display (two underlined D, \\simeq for the print's sign)."
+ },
+ {
+  "page": 259,
+  "where": "proof of 4.9.2, second display",
+  "scan": "f_*(E) ⟶ D_S D_S f_*(E) with both D underlined",
+  "tex": "D_SD_Sf_*(E)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "D_SD_Sf_*(E)",
+   "new": "\\underline{D}_S\\underline{D}_Sf_*(E)"
+  },
+  "note": ""
+ },
+ {
+  "page": 260,
+  "where": "page start",
+  "scan": "p. 260 begins 'a) Le foncteur M ↦ H^p(E ⊗ M) ...'; p. 259 ends 'Considérons les conditions suivantes :' (and the footnote)",
+  "tex": "'\\begin{enumerate}[label=\\alph*)]' and '\\item Le' stand at the end of page_259.tex, above the folio-260 marker; page_260.tex begins 'foncteur'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-260 marker stands one TeX line too late (two lines with the list opening). Exact fix in main.tex (both layers): replace 'Considérons les conditions suivantes :\\n\\begin{enumerate}[label=\\alph*)]\\n\\item Le\\n%%%%%%%%%%  scan idx 273  |  folio 260  %%%%%%%%%%\\nfoncteur' by 'Considérons les conditions suivantes :\\n%%%%%%%%%%  scan idx 273  |  folio 260  %%%%%%%%%%\\n\\begin{enumerate}[label=\\alph*)]\\n\\item Le\\nfoncteur'."
+ },
+ {
+  "page": 260,
+  "where": "page end",
+  "scan": "p. 260 ends '... où M^0 et M^1 sont sommes directes de faisceaux'; p. 261 begins 'du type O_{U,X}, où U est un objet de X.'",
+  "tex": "page_260.tex ends 'sont sommes directes de faisceaux du'; page_261.tex begins 'type \\(\\mathcal O_{U,X}\\)'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-261 marker stands one word too late: 'du' belongs to p. 261. Exact fix in main.tex (both layers): replace 'sommes directes de faisceaux du\\n%%%%%%%%%%  scan idx 274  |  folio 261  %%%%%%%%%%\\ntype' by 'sommes directes de faisceaux\\n%%%%%%%%%%  scan idx 274  |  folio 261  %%%%%%%%%%\\ndu type'."
+ },
+ {
+  "page": 260,
+  "where": "Lemme 5.1 b'), display (*)",
+  "scan": "Hom(H^{-p-1}(E^∨),M) with Hom underlined",
+  "tex": "\\Hom(H^{-p-1}(E^{\\vee}),M)\\tag{$*$}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(H^{-p-1}(E^{\\vee}),M)\\tag{$*$}",
+   "new": "\\underline{\\Hom}(H^{-p-1}(E^{\\vee}),M)\\tag{$*$}"
+  },
+  "note": ""
+ },
+ {
+  "page": 260,
+  "where": "'Définition de (*) :'",
+  "scan": "only 'Définition de' is underlined; '(*)' is not",
+  "tex": "\\emph{Définition de \\((*)\\)}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\emph{Définition de \\((*)\\)}",
+   "new": "\\emph{Définition de} \\((*)\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 260,
+  "where": "'Définition de (*)', first line",
+  "scan": "E^∨ = RHom(E,O_X) with Hom underlined",
+  "tex": "\\RHom(E,\\mathcal O_X)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(E,\\mathcal O_X)",
+   "new": "\\mathrm R\\underline{\\Hom}(E,\\mathcal O_X)"
+  },
+  "note": ""
+ },
+ {
+  "page": 260,
+  "where": "display (**)",
+  "scan": "RHom(E^∨,M) with Hom underlined",
+  "tex": "\\RHom(E^{\\vee},M)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(E^{\\vee},M)",
+   "new": "\\mathrm R\\underline{\\Hom}(E^{\\vee},M)"
+  },
+  "note": ""
+ },
+ {
+  "page": 260,
+  "where": "display (***), left side",
+  "scan": "Ext^{p+1}(E^∨,M) with Ext underlined",
+  "tex": "\\Ext^{p+1}(E^{\\vee},M)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ext^{p+1}(E^{\\vee},M)",
+   "new": "\\underline{\\Ext}^{p+1}(E^{\\vee},M)"
+  },
+  "note": ""
+ },
+ {
+  "page": 260,
+  "where": "display (***), right side",
+  "scan": "Hom(H^{-p-1}(E^∨),M) with Hom underlined",
+  "tex": "\\Hom(H^{-p-1}(E^{\\vee}),M),\\tag{$***$}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(H^{-p-1}(E^{\\vee}),M),\\tag",
+   "new": "\\underline{\\Hom}(H^{-p-1}(E^{\\vee}),M),\\tag"
+  },
+  "note": ""
+ }
+]

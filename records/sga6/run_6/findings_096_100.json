@@ -1,0 +1,345 @@
+[
+ {
+  "page": 96,
+  "where": "Démonstration of 2.2 a), display 'H^j(M') ≃⟶ H^j(M'')   pour tout j'",
+  "scan": "no punctuation after 'pour tout j' (both scans); the display's second line is 'et H^j(M') = 0 pour j ⩾ i.'",
+  "tex": "\\qquad\\text{pour tout }j,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{pour tout }j,",
+   "new": "\\text{pour tout }j"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 96,
+  "where": "Proposition 2.2, item label 'a)'",
+  "scan": "plain a), neither underlined nor bold; the underline begins at 'Si' (both scans)",
+  "tex": "\\textbf{a)}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{a)}",
+   "new": "a)"
+  },
+  "note": "As on pp. 87-88 (applied there): the accepted bold-label convention covers an underlined label word, not the plain item letters a), b). The TeX bolds the item letters of statements through Exposé I (see the message)."
+ },
+ {
+  "page": 96,
+  "where": "Proposition 2.2, item label 'b)'",
+  "scan": "plain b); the underline begins at 'Les' (both scans)",
+  "tex": "\\textbf{b)}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{b)}",
+   "new": "b)"
+  },
+  "note": "As a) above."
+ },
+ {
+  "page": 98,
+  "where": "Définition 2.3, first defined term: 'nous dirons que F ∈ ob D(C_S) est n-C_o-pseudo-cohérent si F vérifie ...'",
+  "scan": "'-pseudo-cohérent' is not underlined, while 'est' before it and 'si' after it are (both scans; crops_096_100/p98_def23.png, w98_def23.png, p98_nC0.png). The n and the category letter C̲ carry short underlines of their own.",
+  "tex": "one \\emph{...} over the whole definition, the defined terms included",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est \\(n\\)-\\(\\mathcal C_0\\)-pseudo-cohérent si \\(F\\) vérifie",
+   "new": "est} \\(n\\)-\\(\\mathcal C_0\\)-pseudo-cohérent \\emph{si \\(F\\) vérifie"
+  },
+  "note": "As Définitions 1.4.3 and 2.1 (pp. 93, 95): the defined terms are left out of the underline. Close the emphasis before the term and reopen it after. Independent of the next entry."
+ },
+ {
+  "page": 98,
+  "where": "Définition 2.3, second defined term: 'Nous dirons que F est C_o-pseudo-cohérent si F est n-C_o-pseudo-cohérent pour tout n'",
+  "scan": "'-pseudo-cohérent' after C̲_o is not underlined, while 'est' before it and 'si' after it are; in the later 'n-C_o-pseudo-cohérent' (not a defined term) '-pseudo-cohérent' is underlined (both scans)",
+  "tex": "inside the one \\emph{...} of the definition",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est \\(\\mathcal C_0\\)-pseudo-cohérent si \\(F\\) est",
+   "new": "est} \\(\\mathcal C_0\\)-pseudo-cohérent \\emph{si \\(F\\) est"
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 98,
+  "where": "Proposition 2.4, statement before the diagram",
+  "scan": "underlined by word groups: 'Soient', 'et soit', 'un', 'quasi-isomorphisme', 'de', 'avec', 'n-pseudo-cohérent et', 'strictement', 'pseudo-cohérent', 'Alors,', 'quitte à raffiner', 'il existe un triangle commutatif de' (both scans)",
+  "tex": "no emphasis: the statement is in roman (Proposition 2.2 and Définition 2.3 have \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient \\(n,i\\in\\mathbb Z\\), et soit \\(u:E\\to F\\) un \\(i\\)-quasi-isomorphisme de \\(\\Cpx(\\mathcal C_S)\\), avec \\(F\\) \\(n\\)-pseudo-cohérent et \\(E\\) strictement \\(n\\)-pseudo-cohérent. Alors, quitte à raffiner \\(S\\), il existe un triangle commutatif de \\(\\Cpx(\\mathcal C_S)\\)",
+   "new": "\\emph{Soient \\(n,i\\in\\mathbb Z\\), et soit \\(u:E\\to F\\) un \\(i\\)-quasi-isomorphisme de \\(\\Cpx(\\mathcal C_S)\\), avec \\(F\\) \\(n\\)-pseudo-cohérent et \\(E\\) strictement \\(n\\)-pseudo-cohérent. Alors, quitte à raffiner \\(S\\), il existe un triangle commutatif de \\(\\Cpx(\\mathcal C_S)\\)}"
+  },
+  "note": "As Corollaire 1.4.5 (p. 93). The statement goes on after the diagram (entry below)."
+ },
+ {
+  "page": 98,
+  "where": "Proposition 2.4, diagram (E --v--> E', u, u'), end",
+  "scan": "a comma to the right of the diagram, on the line of F (both scans)",
+  "tex": "tikzcd without punctuation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\\\\nF &\n\\end{tikzcd}",
+   "new": "\\\\\nF & ,\n\\end{tikzcd}"
+  },
+  "note": "Set in a cell of its own, as on pp. 93-94."
+ },
+ {
+  "page": 98,
+  "where": "Proposition 2.4, end of the statement after the diagram",
+  "scan": "underlined: 'où', 'est strictement', 'pseudo-cohérent', 'un quasi-isomorphisme et', 'un', 'monomorphisme induisant l'identité en degré' (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où \\(E'\\) est strictement \\(n\\)-pseudo-cohérent, \\(u'\\) un quasi-isomorphisme et \\(v\\) un monomorphisme induisant l'identité en degré \\(\\geq i\\).",
+   "new": "\\emph{où \\(E'\\) est strictement \\(n\\)-pseudo-cohérent, \\(u'\\) un quasi-isomorphisme et \\(v\\) un monomorphisme induisant l'identité en degré \\(\\geq i\\).}"
+  },
+  "note": "Second part of the statement of the entry above."
+ },
+ {
+  "page": 98,
+  "where": "Proposition 2.5, item label 'a)'",
+  "scan": "plain a); the underline begins at 'Si' (both scans)",
+  "tex": "\\textbf{a)}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{a)}",
+   "new": "a)"
+  },
+  "note": "As on p. 96."
+ },
+ {
+  "page": 98,
+  "where": "Proposition 2.5 a), statement",
+  "scan": "underlined: 'Si', 'est n-pseudo-cohérent', 'resp.', 'pseudo-cohérent', 'est', 'pseudo-cohérent', 'resp.', 'pseudo-cohérent' (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Si \\(F\\in\\Ob\\Dpx(\\mathcal C_S)\\) est \\(n\\)-pseudo-cohérent (resp. pseudo-cohérent), \\(F[m]\\) est \\((n-m)\\)-pseudo-cohérent (resp. pseudo-cohérent).",
+   "new": "\\emph{Si \\(F\\in\\Ob\\Dpx(\\mathcal C_S)\\) est \\(n\\)-pseudo-cohérent (resp. pseudo-cohérent), \\(F[m]\\) est \\((n-m)\\)-pseudo-cohérent (resp. pseudo-cohérent).}"
+  },
+  "note": "Statement of a proposition in roman, as 2.4."
+ },
+ {
+  "page": 98,
+  "where": "Proposition 2.5, item label 'b)' (printed at the top of p. 99)",
+  "scan": "plain b) (p. 99, first line; both scans)",
+  "tex": "\\textbf{b)}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{b)}",
+   "new": "b)"
+  },
+  "note": "As a). The line belongs to p. 99 (marker entry there); the fix is given here, where the text stands now."
+ },
+ {
+  "page": 98,
+  "where": "Proposition 2.5 b), 'Soit' (printed at the top of p. 99)",
+  "scan": "'Soit' underlined (p. 99, first line; both scans)",
+  "tex": "Soit, in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit\n",
+   "new": "\\emph{Soit}\n"
+  },
+  "note": "Start of the statement 2.5 b), which goes on after the diagram on p. 99 (entry there). Independent of the label entry before it; with both applied the line reads 'b) \\emph{Soit}'."
+ },
+ {
+  "page": 99,
+  "where": "start of page",
+  "scan": "p. 99 begins 'b) Soit' (Proposition 2.5 b), 'Soit' underlined), then the triangle (*); p. 98 ends 'F[m] est (n-m)-pseudo-cohérent (resp. pseudo-cohérent).' (both scans)",
+  "tex": "the line '\\textbf{b)} Soit' is the last line of page_098.tex (under the folio-98 marker); page_099.tex begins with the diagram's \\[",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 99 really begins with 'b) Soit'. Move the folio-99 marker above that line. After this file's p. 98 entries for '\\textbf{b)}' and 'Soit' (the line then reads 'b) \\emph{Soit}'): python -I move_marker.py 6 99 \"b) \\emph{Soit}\" --before. If the marker is moved first, use the anchor \"\\textbf{b)} Soit\" and apply those two fixes on p. 99. Simulated on both layers (crops_096_100/sim_markers.py): the end of 2.5 a), a blank line, the marker, 'b) \\emph{Soit}', '\\['."
+ },
+ {
+  "page": 99,
+  "where": "Proposition 2.5 b), statement after the triangle (*)",
+  "scan": "underlined: 'un triangle distingué de', 'Si', 'et', 'sont n-pseudo-cohérents', 'resp.', 'pseudo-cohérents', 'alors', 'est', 'pseudo-cohérent', 'resp.', 'pseudo-cohérent' (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "un\ntriangle distingué de \\(\\Dpx(\\mathcal C_S)\\). Si \\(E\\) et \\(G\\) sont \\(n\\)-pseudo-cohérents (resp. pseudo-cohérents), alors \\(F\\) est \\(n\\)-pseudo-cohérent (resp. pseudo-cohérent).",
+   "new": "\\emph{un\ntriangle distingué de \\(\\Dpx(\\mathcal C_S)\\). Si \\(E\\) et \\(G\\) sont \\(n\\)-pseudo-cohérents (resp. pseudo-cohérents), alors \\(F\\) est \\(n\\)-pseudo-cohérent (resp. pseudo-cohérent).}"
+  },
+  "note": "Statement of 2.5 b), begun by 'Soit' (entry on p. 98)."
+ },
+ {
+  "page": 99,
+  "where": "Preuve of 2.5 b), the rotated triangle (F, G[-1] --> E), end",
+  "scan": "a full stop to the right of E, on its line (both scans)",
+  "tex": "tikzcd without punctuation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "&& E \\arrow[ul]\n\\end{tikzcd}",
+   "new": "&& E \\arrow[ul] & .\n\\end{tikzcd}"
+  },
+  "note": "Set in a cell of its own, as the commas of pp. 93-94. The triangle (*) has no punctuation in the print (the sentence goes on 'un triangle distingué'); the third diagram's comma is in the TeX."
+ },
+ {
+  "page": 100,
+  "where": "start of page",
+  "scan": "p. 100 begins with the opening quote of '\"vraie\" flèche de C⁻(C̲_S)'; p. 99 ends '... où u est définie par une' (both scans)",
+  "tex": "the opening guillemet ends the last line of page_099.tex ('définie par une «', under the folio-99 marker); page_100.tex begins 'vraie » flèche'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 100 really begins with the opening quote. python -I move_marker.py 6 100 \"«\" --before (the last « before the marker is this one; simulated on both layers: '... définie par une ', the marker, '«', 'vraie » flèche ...', which still renders 'une « vraie » flèche')."
+ },
+ {
+  "page": 100,
+  "where": "'La catégorie D(C)_{C_o-coh} est, en vertu de (2.5), une sous-S̲-catégorie triangulée de D(C) (1.1).'",
+  "scan": "only 'catégorie triangulée' (next line) is underlined; 'sous-S̲-' at the end of the line before has no underline except the S̲ of the site (both scans; crops_096_100/p100_sousS.png, w100_sousS.png)",
+  "tex": "une \\emph{sous-\\(S\\)-catégorie triangulée}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "une \\emph{sous-\\(S\\)-catégorie triangulée}",
+   "new": "une sous-\\(S\\)-\\emph{catégorie triangulée}"
+  },
+  "note": "The emphasis covers only the second line of the term. Medium: the typist may have meant the whole term."
+ },
+ {
+  "page": 100,
+  "where": "the site S̲: 'X ∈ ob S̲', 'une sous-S̲-catégorie', 'Supposons que S̲ soit un site ponctuel'",
+  "scan": "S underlined where it names the site (both scans)",
+  "tex": "plain \\(S\\): '\\(X\\in\\Ob S\\)', 'sous-\\(S\\)-catégorie', 'Supposons que \\(S\\) soit un site ponctuel'",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, as reported for pp. 84-85 and 93-95: one decision for the exposé, not a page fix."
+ },
+ {
+  "page": 100,
+  "where": "label 'Proposition 2.7'",
+  "scan": "'Proposition 2.7' with no full stop after the number (both scans; crops_096_100/p100_prop27.png, w100_prop27.png); every other label of pp. 96-100 has one",
+  "tex": "\\textbf{Proposition 2.7.} (silently supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textbf{Proposition 2.7.}",
+   "new": "\\textbf{Proposition 2.7}"
+  },
+  "corrected": "\\textbf{Proposition 2.7.}",
+  "note": "The typist left out the label's full stop; the TeX silently supplies it (the bold label itself is accepted)."
+ },
+ {
+  "page": 100,
+  "where": "Proposition 2.7, opening 'Supposons que S̲ soit un site ponctuel, donc C = C_S , C_o = C_oS . Alors :'",
+  "scan": "underlined by word groups: 'Supposons que', 'soit un site ponctuel', 'donc', 'Alors'; S̲ and the C̲ have their own underlines (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Supposons que \\(S\\) soit un site ponctuel, donc \\(\\mathcal C=\\mathcal C_S\\), \\(\\mathcal C_0=\\mathcal C_{0,S}\\). Alors",
+   "new": "\\emph{Supposons que \\(S\\) soit un site ponctuel, donc \\(\\mathcal C=\\mathcal C_S\\), \\(\\mathcal C_0=\\mathcal C_{0,S}\\). Alors}"
+  },
+  "note": "Statement in roman, as 2.4 and 2.5. Apply before the C_{0S} entry below (this old contains \\mathcal C_{0,S}; JSON order)."
+ },
+ {
+  "page": 100,
+  "where": "Proposition 2.7, 'C_o = C_oS'",
+  "scan": "C̲ with the indices o and S side by side, no comma (both scans; crops_096_100/w100_prop27.png)",
+  "tex": "\\mathcal C_{0,S}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal C_{0,S}",
+   "new": "\\mathcal C_{0S}"
+  },
+  "note": "As pp. 91-92 and 95: the TeX adds the comma between the indices throughout Exposé I."
+ },
+ {
+  "page": 100,
+  "where": "Proposition 2.7, item label 'a)'",
+  "scan": "plain a); the underline begins at 'Si' (both scans)",
+  "tex": "\\textbf{a)}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{a)}",
+   "new": "a)"
+  },
+  "note": "As on p. 96."
+ },
+ {
+  "page": 100,
+  "where": "Proposition 2.7 a), statement",
+  "scan": "underlined: 'Si', 'est pseudo-cohérent,', 'il existe un quasi-isomorphisme', 'avec', 'strictement pseudo-cohérent'; the reference '(2.1).' is not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Si \\(F\\in\\Ob\\Dpx(\\mathcal C)\\) est pseudo-cohérent, il existe un quasi-isomorphisme \\(E\\longrightarrow F\\), avec \\(E\\) strictement pseudo-cohérent",
+   "new": "\\emph{Si \\(F\\in\\Ob\\Dpx(\\mathcal C)\\) est pseudo-cohérent, il existe un quasi-isomorphisme \\(E\\longrightarrow F\\), avec \\(E\\) strictement pseudo-cohérent}"
+  },
+  "note": "The reference (2.1) and the full stop stay in roman."
+ },
+ {
+  "page": 100,
+  "where": "Proposition 2.7, item label 'b)'",
+  "scan": "plain b); the underline begins at 'Désignons' (both scans)",
+  "tex": "\\textbf{b)}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{b)}",
+   "new": "b)"
+  },
+  "note": "As on p. 96."
+ },
+ {
+  "page": 100,
+  "where": "Proposition 2.7 b), statement before the display",
+  "scan": "underlined: 'Désignons par', 'la sous-catégorie triangulée pleine de', 'formée des complexes acycliques.', 'Le foncteur canonique' (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Désignons par \\(\\Kpx^{-,b}(\\mathcal C_0)\\) la sous-catégorie triangulée pleine de \\(\\Kpx^-(\\mathcal C_0)\\) formée des complexes acycliques. Le foncteur canonique",
+   "new": "\\emph{Désignons par \\(\\Kpx^{-,b}(\\mathcal C_0)\\) la sous-catégorie triangulée pleine de \\(\\Kpx^-(\\mathcal C_0)\\) formée des complexes acycliques. Le foncteur canonique}"
+  },
+  "note": "The statement goes on after the display on p. 101. Apply before the two \\varnothing entries below (this old contains \\Kpx^{-,b}; JSON order)."
+ },
+ {
+  "page": 100,
+  "where": "Proposition 2.7 b), 'Désignons par K^{-,∅}(C_o)'",
+  "scan": "the second index is the hand-drawn empty-set sign, a small loop crossed by a long slash, not a b (both scans; crops_096_100/p100_Kphi.png, w100_Kphi.png)",
+  "tex": "\\Kpx^{-,b}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\Kpx^{-,b}",
+   "new": "\\(\\Kpx^{-,\\varnothing}"
+  },
+  "note": "K^{-,∅}(C_o) is the subcategory of the acyclic complexes (cohomology in no degree); b would be bounded cohomology. The same hand-drawn sign stands beside a typed b on p. 174 (Exposé II, 'K^{-,b}(L(S))/K^{-,∅}(L(S))'; crops_096_100/w174_full.png), where the TeX writes \\varnothing (main.tex line 4175)."
+ },
+ {
+  "page": 100,
+  "where": "Proposition 2.7 b), display 'K^-(C_o)/K^{-,∅}(C_o) ⟶ D(C)'",
+  "scan": "the same hand-drawn ∅ (both scans; crops_096_100/w100_Kphi2.png)",
+  "tex": "\\Kpx^-(\\mathcal C_0)/\\Kpx^{-,b}(\\mathcal C_0)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "/\\Kpx^{-,b}",
+   "new": "/\\Kpx^{-,\\varnothing}"
+  },
+  "note": "As the previous entry."
+ }
+]

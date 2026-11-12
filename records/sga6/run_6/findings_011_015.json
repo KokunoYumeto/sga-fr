@@ -1,0 +1,379 @@
+[
+ {
+  "page": 11,
+  "where": "equation number (4 1)",
+  "scan": "(4 1): no full stop between the digits in either scan; its blank character cell is there, where (4.2) and (4.3) have their stop",
+  "tex": "\\tag{4 1}",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\tag{4 1}",
+   "new": "\\tag{4.1}"
+  },
+  "note": "Lost stop, the same case as (3 4) p. 9 and '3 1.', '(3 2)' p. 10 of findings_006_010.json, which main.tex now reads with the stop. If the stop was never typed, this is instead a misprint the TeX keeps (correct reading (4.1))."
+ },
+ {
+  "page": 11,
+  "where": "display after 'induit par la différentielle extérieure'",
+  "scan": "d_{X'/X} : J ⊂ O_{X'} → Ω^1_{X'/Y} (index X'/X, both scans)",
+  "tex": "d_{X'/X}:\\underline J (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "d_{X'/Y}",
+  "note": "The exterior differential of X' relative to Y: its target is Ω^1_{X'/Y}, and X' is smooth over Y, not a scheme over X. The TeX keeps the printed index; the corrected layer also reads d_{X'/X}."
+ },
+ {
+  "page": 11,
+  "where": "heading 4.4",
+  "scan": "4.4. (trailing full stop)",
+  "tex": "\\subsubsection*{4.4}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{4.4}",
+   "new": "\\subsubsection*{4.4.}"
+  },
+  "note": "The printed paragraph number ends with a full stop (as 4.1. on p. 10)."
+ },
+ {
+  "page": 11,
+  "where": "'et le complexe de chaines'",
+  "scan": "chaines (no circumflex)",
+  "tex": "chaines (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "cha\\^{\\i}nes",
+  "note": "Missing circumflex, as d'entrainer (p. 8, findings_006_010.json); again on p. 12. The TeX keeps the printed reading, and so does the corrected layer."
+ },
+ {
+  "page": 11,
+  "where": "§4.4, 'toute algèbre B sur un anneau A apparait comme quotient'",
+  "scan": "apparait (no circumflex)",
+  "tex": "apparait (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "appara\\^{\\i}t",
+  "note": "Missing circumflex; the TeX and the corrected layer keep it."
+ },
+ {
+  "page": 12,
+  "where": "first line, 'non recollables. Voici une construction'",
+  "scan": "'tiellement non recollables  Voici une construction générale de L^{X/Y} , vala-': the next sentence follows on the same line (both scans)",
+  "tex": "blank line (new paragraph) before 'Voici'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "recollables.\n\nVoici",
+   "new": "recollables. Voici"
+  },
+  "note": "The print runs on. Its full stop after 'recollables' prints in neither scan, but the blank cell for it is there (spacing as in 'A-Algèbre. Soit' below): a lost stop, so the TeX's full stop stands."
+ },
+ {
+  "page": 12,
+  "where": "display 'ϕ:C = A[T] → B'",
+  "scan": "closed phi: an o crossed by a slanted stroke (both scans)",
+  "tex": "\\varphi:C=A[T]",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\varphi:C=A[T]",
+   "new": "\\phi:C=A[T]"
+  },
+  "note": "Closed form, like the p. 3 phi already changed to \\phi (findings_001_005.json); Exposé 0 otherwise writes \\phi. Apply together with the next fix."
+ },
+ {
+  "page": 12,
+  "where": "'Soit J le noyau de ϕ'",
+  "scan": "the same closed phi",
+  "tex": "noyau de $\\varphi$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "noyau de $\\varphi$",
+   "new": "noyau de $\\phi$"
+  },
+  "note": "Same letter as in the display above: both or neither."
+ },
+ {
+  "page": 12,
+  "where": "'= A(U)-algèbre commutative libre engendré par T(U)'",
+  "scan": "engendré",
+  "tex": "engendr\\'e par $T(U)$ (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "engendr\\'ee par $T(U)$",
+  "note": "Agreement slip (algèbre ... engendrée, as 'la A-Algèbre commutative libre engendrée par T' in the same sentence). The TeX keeps it; the corrected layer also reads engendr\\'e."
+ },
+ {
+  "page": 12,
+  "where": "'défini par l'homomorphisme naturelle'",
+  "scan": "naturelle",
+  "tex": "naturelle (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "naturel",
+  "note": "Agreement slip (homomorphisme is masculine); the TeX keeps it; the corrected layer already reads 'naturel'."
+ },
+ {
+  "page": 12,
+  "where": "'le complexe de chaines de longueur 1'",
+  "scan": "chaines (no circumflex)",
+  "tex": "chaines (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "cha\\^{\\i}nes",
+  "note": "As on p. 11; the TeX and the corrected layer keep it."
+ },
+ {
+  "page": 12,
+  "where": "'la désignation de complexe cotangent relatif L^{X/Y} de X sur Y'",
+  "scan": "underlined: 'complexe cotangent', 'relatif', 'de', 'sur'; L^{X/Y}, X and Y stand outside the underline (both scans)",
+  "tex": "\\uline{complexe cotangent relatif $L^{X/Y}_\\bullet$ de $X$ sur $Y$}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Instance of the convention reported in findings_006_010.json (formulas inside the TeX's underline); no word is left plain, so no page fix. If the volume follows the print: \\uline{complexe cotangent relatif} $L^{X/Y}_\\bullet$ \\uline{de} $X$ \\uline{sur} $Y$."
+ },
+ {
+  "page": 12,
+  "where": "'de définir T_f comme un élément de K˙_naif(X)' and 'de préférence à K˙_naif(X)'",
+  "scan": "naif (twice, no diaeresis)",
+  "tex": "K^\\bullet_{\\mathrm{naif}}(X), twice (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "K^\\bullet_{\\text{na\\\"{\\i}f}}(X)",
+  "note": "As naif on p. 10 (findings_006_010.json); the TeX and the corrected layer keep it."
+ },
+ {
+  "page": 12,
+  "where": "heading 4.5",
+  "scan": "4.5. (trailing full stop)",
+  "tex": "\\subsubsection*{4.5}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{4.5}",
+   "new": "\\subsubsection*{4.5.}"
+  },
+  "note": "The printed paragraph number ends with a full stop."
+ },
+ {
+  "page": 12,
+  "where": "§4.5, 'faite implicitement dans les sections qui précédent'",
+  "scan": "précédent (two acute accents)",
+  "tex": "pr\\'ec\\'edent (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "pr\\'ec\\`edent",
+  "note": "Verb (les sections qui précèdent); the TeX keeps the print's accent; the corrected layer already reads pr\\'ec\\`edent."
+ },
+ {
+  "page": 13,
+  "where": "start of page",
+  "scan": "p. 12 ends '... le spectre d'un corps'; p. 13 begins 'algébrique clos de caractéristique p > 0' (both scans)",
+  "tex": "page_012.tex ends 'd'un corps alg\\'' and page_013.tex begins 'ebrique clos': the folio-13 marker stands inside the word",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 13 really begins with alg\\'ebrique. Move the folio-13 marker before it: python -I move_marker.py 6 13 \"alg\\'\" --before (simulated on both layers: '... d'un corps', the marker, then alg\\' alone on a line, then 'ebrique clos'). Then join that line to the next ('alg\\'ebrique clos') in both layers."
+ },
+ {
+  "page": 13,
+  "where": "first line, 'd'un corps algébrique clos de caractéristique p > 0'",
+  "scan": "algébrique clos",
+  "tex": "alg\\' + ebrique clos (printed reading kept; the word is split by the marker)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "alg\\'ebriquement clos",
+  "note": "The print drops -ment; the TeX keeps it, and so does the corrected layer."
+ },
+ {
+  "page": 14,
+  "where": "start of page",
+  "scan": "p. 13 ends '... on sait lui associer grâce à Atiyah-Hirzebruch'; p. 14 begins '[1] un homomorphisme groupes' (both scans)",
+  "tex": "'[1] un' ends the last line of page_013.tex (under the folio-13 marker); page_014.tex begins 'homomorphisme groupes'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 14 really begins with '[1] un'. Move the folio-14 marker before it: python -I move_marker.py 6 14 \"[1] un\" --before (simulated on both layers: '... Atiyah--Hirzebruch', the marker, then '[1] un', then 'homomorphisme ...')."
+ },
+ {
+  "page": 14,
+  "where": "first line, '[1] un homomorphisme groupes'",
+  "scan": "homomorphisme groupes",
+  "tex": "homomorphisme groupes (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "homomorphisme de groupes",
+  "note": "The print drops 'de'; the TeX keeps it; the corrected layer already reads 'homomorphisme de groupes'."
+ },
+ {
+  "page": 14,
+  "where": "'le théorème de finitude de Grauert [4]'",
+  "scan": "Grauert [4]",
+  "tex": "Grauert [4] (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Grauert [3]",
+  "note": "Wrong reference number: in the exposé's bibliography (p. 19, read in the witness) Grauert is [3]; [4] is [RRR]. The TeX and the corrected layer keep [4]."
+ },
+ {
+  "page": 14,
+  "where": "diagram (5.3), left vertical arrow",
+  "scan": "f_* to the left of the left arrow (f^top_* to the right of the right arrow)",
+  "tex": "\\downarrow f_* (label to the right of the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\downarrow f_* &&",
+   "new": "f_*\\downarrow &&"
+  },
+  "note": "Label on the wrong side of the arrow."
+ },
+ {
+  "page": 14,
+  "where": "'de ses généralisations dues à Shih [7] et Atiyah'",
+  "scan": "Shih [7]",
+  "tex": "Shih [7] (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Shih [6]",
+  "note": "Wrong reference number: Shih is [6] in the bibliography (p. 19); [7] is Atiyah-Hirzebruch, Riemann-Roch for analytic embeddings, rightly cited for the projective case three lines above. The TeX and the corrected layer keep [7]."
+ },
+ {
+  "page": 14,
+  "where": "'où les flèches horizontales'",
+  "scan": "flêches (circumflex, both scans; 'première' on p. 15 has its grave)",
+  "tex": "fl\\`eches",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "fl\\`eches",
+   "new": "fl\\^eches"
+  },
+  "corrected": "fl\\`eches",
+  "note": "Wrong accent in the print; the TeX silently corrects. Same on p. 15 (flêche): both or neither."
+ },
+ {
+  "page": 15,
+  "where": "first line, 'la première flêche verticale'",
+  "scan": "flêche (circumflex, both scans)",
+  "tex": "fl\\`eche",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "fl\\`eche",
+   "new": "fl\\^eche"
+  },
+  "corrected": "fl\\`eche",
+  "note": "As flêches on p. 14; the TeX silently corrects."
+ },
+ {
+  "page": 15,
+  "where": "'l'homomorphisme de Gysin en cohomologie rationelle'",
+  "scan": "rationelle",
+  "tex": "rationelle (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "rationnelle",
+  "note": "Single n in the print; the TeX keeps it; the corrected layer already reads 'rationnelle'."
+ },
+ {
+  "page": 15,
+  "where": "§6, 'dont l'existence a été signalé dans 3.1'",
+  "scan": "signalé",
+  "tex": "signal\\'e (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "signal\\'ee",
+  "note": "Agreement slip (l'existence ... signalée); the TeX keeps it; the corrected layer already reads signal\\'ee."
+ },
+ {
+  "page": 15,
+  "where": "'Filt_i K.(X) étant engendré par des classes'",
+  "scan": "Filt_i K.(X)",
+  "tex": "$\\Fil_iK_\\bullet(X)$ (the preamble's \\Fil is \\operatorname{Fil}: it prints Fil)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\Fil_iK_\\bullet(X)$",
+   "new": "$\\operatorname{Filt}_iK_\\bullet(X)$"
+  },
+  "note": "The print writes Filt, as in (2.3) p. 4 and (3.4) p. 9, where the TeX has \\operatorname{Filt}. One of three Filt fixes on this page (with the two in (6.1)): apply all; the same strings stand in the corrected layer."
+ },
+ {
+  "page": 15,
+  "where": "'tel que dim supp.F ≤ i'",
+  "scan": "dim supp.F (a full stop after supp, both scans)",
+  "tex": "\\dim \\operatorname{supp}F\\le i",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\operatorname{supp}F",
+   "new": "\\operatorname{supp}.F"
+  },
+  "note": "The abbreviation's full stop is printed; the TeX drops it."
+ },
+ {
+  "page": 15,
+  "where": "(6.1), left side",
+  "scan": "Filt^i K˙(X) . Filt_j(K.(X)",
+  "tex": "\\Fil^iK^\\bullet(X)\\cdot \\Fil_j(K_\\bullet(X)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Fil^iK^\\bullet(X)\\cdot \\Fil_j",
+   "new": "\\operatorname{Filt}^iK^\\bullet(X)\\cdot \\operatorname{Filt}_j"
+  },
+  "note": "Filt, as above; the edit leaves the misprinted parenthesis alone (separate finding)."
+ },
+ {
+  "page": 15,
+  "where": "(6.1), right side",
+  "scan": "⊂ Filt_{j-i} K.(X)",
+  "tex": "\\subset \\Fil_{j-i}K_\\bullet(X)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subset \\Fil_{j-i}",
+   "new": "\\subset \\operatorname{Filt}_{j-i}"
+  },
+  "note": "Filt, as above."
+ },
+ {
+  "page": 15,
+  "where": "(6.1), 'Filt_j(K.(X)'",
+  "scan": "Filt_j(K.(X): a parenthesis opened and never closed (both scans)",
+  "tex": "\\Fil_j(K_\\bullet(X) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\operatorname{Filt}_jK_\\bullet(X)",
+  "note": "Stray parenthesis; the TeX keeps it; the corrected layer already reads \\Fil_j K_\\bullet(X) (its \\Fil to change with the Filt fixes)."
+ },
+ {
+  "page": 15,
+  "where": "'moins fine que l'équivalence rationelle, lorsque X'",
+  "scan": "rationelle",
+  "tex": "rationelle (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "rationnelle",
+  "note": "As in the first line of the page; the corrected layer already reads 'rationnelle'."
+ }
+]

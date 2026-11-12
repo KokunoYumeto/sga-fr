@@ -1,0 +1,413 @@
+[
+ {
+  "page": 1,
+  "where": "heading 'Exposé 0'",
+  "scan": "Exposé 0 (underlined)",
+  "tex": "\\section*{Exposé 0}",
+  "kind": "underline",
+  "confidence": "low",
+  "fix": {
+   "old": "\\section*{Exposé 0}",
+   "new": "\\section*{\\underline{Exposé 0}}"
+  },
+  "note": "The typescript underlines the exposé heading (single line, both scans); the TeX sets it as a plain \\section*. Apply only if the exposé headings are to keep the print's underline."
+ },
+ {
+  "page": 1,
+  "where": "title, first line",
+  "scan": "ESQUISSE D'UN PROGRAMME POUR UNE THEORIE DES INTERSECTIONS (double underline)",
+  "tex": "\\underline{ESQUISSE D'UN PROGRAMME POUR UNE THÉORIE DES INTERSECTIONS}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{ESQUISSE D'UN PROGRAMME POUR UNE THÉORIE DES INTERSECTIONS}",
+   "new": "\\underline{\\underline{ESQUISSE D'UN PROGRAMME POUR UNE THÉORIE DES INTERSECTIONS}}"
+  },
+  "note": "Both title lines carry two parallel underlines in both scans ('par A. Grothendieck' one); same form as the SGA 7 I title fix."
+ },
+ {
+  "page": 1,
+  "where": "title, second line",
+  "scan": "SUR LES SCHEMAS GENERAUX (double underline)",
+  "tex": "\\underline{SUR LES SCHÉMAS GÉNÉRAUX}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{SUR LES SCHÉMAS GÉNÉRAUX}",
+   "new": "\\underline{\\underline{SUR LES SCHÉMAS GÉNÉRAUX}}"
+  },
+  "note": "Double underline, as the first title line."
+ },
+ {
+  "page": 1,
+  "where": "first paragraph, line 1",
+  "scan": "de nature introductif",
+  "tex": "de nature introductif (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "de nature introductive",
+  "note": "Agreement slip of the print (nature is feminine). The TeX keeps the printed reading; the corrected layer already reads 'introductive'."
+ },
+ {
+  "page": 1,
+  "where": "throughout (here: first paragraph and §1)",
+  "scan": "Riemann-Roch, Borel-Serre, Euler-Poincaré (typewriter hyphen)",
+  "tex": "Riemann--Roch, Borel--Serre, Euler--Poincaré",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the transcription, not a page fix: joint names are written with an en dash (--) where the typescript has a hyphen. On p. 1: Riemann--Roch (twice), Borel--Serre, Euler--Poincaré; the diplomatic main.tex has 68 Riemann--Roch. One pass in the diplomatic layer (as SGA 7 II global issue 74)."
+ },
+ {
+  "page": 1,
+  "where": "§1, display after 'morphisme propre'",
+  "scan": "f: X.⟶Y (a typed full stop after X)",
+  "tex": "f:X\\longrightarrow Y",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "f:X\\longrightarrow Y",
+   "new": "f:X.\\longrightarrow Y"
+  },
+  "corrected": "f:X\\longrightarrow Y",
+  "note": "A typed full stop (same dot as the colon's) stands between X and the arrow in both scans; the TeX silently drops it."
+ },
+ {
+  "page": 1,
+  "where": "throughout (here: 'l'homomorphisme \"image directe de cycles\"')",
+  "scan": "\"image directe de cycles\" (straight typewriter double quotes)",
+  "tex": "«~image directe de cycles~»",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, not covered by the known ``...''/\"...\" rule: the print's straight quotes are written as French guillemets «~...~» (192 « in the diplomatic main.tex). In this batch: «~image directe de cycles~» (pp. 1 and 5), «~régularité locale~» (p. 2), «~\\underline{filtration topologique}~» and «~moving lemma~» (p. 3), «~moving lemma~» (p. 4). One global replacement."
+ },
+ {
+  "page": 1,
+  "where": "'polynômes universels à coéfficients dans Q'",
+  "scan": "coéfficients",
+  "tex": "coéfficients (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "coefficients",
+  "note": "The print has the accent on the first e; the TeX keeps it."
+ },
+ {
+  "page": 1,
+  "where": "line before (1.2)",
+  "scan": "plus commode pour notre propos (no comma, both scans)",
+  "tex": "notre propos,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "notre propos,",
+   "new": "notre propos"
+  },
+  "note": "The TeX adds a comma before the display (1.2)."
+ },
+ {
+  "page": 1,
+  "where": "(1.2), left side",
+  "scan": "ch_Y(f_*(cl(F)) = f_*(Todd(T_f).ch_X(F)) ,",
+  "tex": "\\ch_Y\\bigl(f_*(\\cl(F))=f_*\\bigl(...\\bigr), (printed reading kept: \\bigl( never closed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\ch_Y\\bigl(f_*(\\cl(F))\\bigr)=f_*\\bigl(\\Todd(T_f)\\cdot\\ch_X(F)\\bigr)",
+  "note": "The left side opens three parentheses and closes two (both scans); the TeX keeps the unbalanced form."
+ },
+ {
+  "page": 2,
+  "where": "start of page",
+  "scan": "p. 2 begins 'de sorte que T_f joue le rôle d'un fibré tangent relatif virtuel'",
+  "tex": "'de' is the last line of page_001.tex (under the folio-1 marker); page_002.tex begins 'sorte que'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 2 really begins with 'de'. Move the folio-2 marker up one line, above 'de' (right after \\end{equation} of (1.3)): python -I move_marker.py 6 2 \"de\" --before (simulated on both layers: gives the marker, then 'de', then 'sorte que')."
+ },
+ {
+  "page": 2,
+  "where": "a)",
+  "scan": "Se débarasser de l'hypothèse",
+  "tex": "débarasser (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "débarrasser",
+  "note": "Single r in both scans; the TeX keeps it."
+ },
+ {
+  "page": 3,
+  "where": "start of page",
+  "scan": "p. 3 begins '2.1 Pour ce qui est de cette dernière'",
+  "tex": "\\subsubsection*{2.1} is the last line of page_002.tex (under the folio-2 marker)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 3 really begins with the heading 2.1. Move the folio-3 marker above \\subsubsection*{2.1}: python -I move_marker.py 6 3 \"\\subsubsection*{2.1}\" --before (simulated on both layers)."
+ },
+ {
+  "page": 3,
+  "where": "§2.1, 'définissant le sous-schémas fermé X'",
+  "scan": "le sous-schémas fermé X",
+  "tex": "sous-schémas (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "le sous-schéma fermé",
+  "note": "Plural s on 'sous-schéma' in the print; the TeX keeps it."
+ },
+ {
+  "page": 3,
+  "where": "heading 2.2",
+  "scan": "2 2. (first full stop lost in both scans; the trailing full stop is printed, faint)",
+  "tex": "\\subsubsection*{2.2}",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\subsubsection*{2.2}",
+   "new": "\\subsubsection*{2.2.}"
+  },
+  "note": "The print closes this paragraph number with a full stop, as 2.3. and 2.4. (2.1 and 3.1 have none); the TeX has none."
+ },
+ {
+  "page": 3,
+  "where": "§2.2, 'lisses et quasi-porjectifs'",
+  "scan": "quasi-porjectifs",
+  "tex": "quasi-porjectifs (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "quasi-projectifs",
+  "note": "Transposed letters in the print; the TeX keeps them."
+ },
+ {
+  "page": 3,
+  "where": "§2.2, 'dont le produit tensoriel par Q'",
+  "scan": "par Q est effectivement (plain typed Q, no overstrike, both scans)",
+  "tex": "par $\\mathbb Q$ est effectivement",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "par $\\mathbb Q$ est effectivement",
+   "new": "par $Q$ est effectivement"
+  },
+  "note": "The other Q of pp. 1-5 are drawn or typed with an overstruck bar (p. 1 'dans Q', p. 5 'par Q'); this one is an ordinary typewriter Q. Same open question as the typist's plain Q of SGA 7 II (global issue 61): apply only if the diplomatic layer reproduces it."
+ },
+ {
+  "page": 3,
+  "where": "§2.2, 'Une première filtration naturelle'",
+  "scan": "'Une première filtration ...' continues the paragraph: no indent, after a full line (both scans)",
+  "tex": "blank line (new paragraph) before 'Une première filtration'",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "cet anneau.\n\nUne première",
+   "new": "cet anneau. Une première"
+  },
+  "note": "The typescript indents its new paragraphs (p. 2 'La définition', p. 4 'Ceci montre'); this line starts at the margin, so the print runs on."
+ },
+ {
+  "page": 3,
+  "where": "§2.2, 'dans le cas X lisse sur un coprs k'",
+  "scan": "coprs",
+  "tex": "coprs (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "corps",
+  "note": "Transposed letters in the print; the TeX keeps them."
+ },
+ {
+  "page": 3,
+  "where": "throughout pp. 3-5 (here: 'que nous noterons ici Gr_top(X)')",
+  "scan": "Gr˙_top(X), Gr˙(X): the degree mark is a typed full stop raised to superscript",
+  "tex": "\\Gr^{\\bullet}_{\\mathrm{top}}(X), \\Gr^\\bullet(X)",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": null,
+  "note": "Convention for one decision, not a page fix: the TeX writes \\bullet for the print's raised dot: \\Gr^{\\bullet}_{\\mathrm{top}}(X) (p. 3), \\Gr^\\bullet(X) (p. 4), \\Gr^\\bullet(Y)_{\\mathbb Q} (p. 5). A diplomatic reading would be \\Gr^{\\cdot}; compare SGA 7 global issues 15 and 70."
+ },
+ {
+  "page": 3,
+  "where": "display after 'homomorphisme d'anneaux surjectif'",
+  "scan": "ϕ: A(X) ⟶ Gr_top(X) (hand-drawn closed phi: a loop crossed by a stroke)",
+  "tex": "\\varphi:A(X)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\varphi:A(X)",
+   "new": "\\phi:A(X)"
+  },
+  "note": "The drawn letter is the closed form that TeX sets as \\phi, not the open \\varphi (as treated in SGA 7 I pp. 13-14)."
+ },
+ {
+  "page": 4,
+  "where": "start of page",
+  "scan": "p. 4 begins '(tranformant la classe d'un cycle premier Z'",
+  "tex": "the opening '(' stands alone on the last line of page_003.tex (under the folio-3 marker)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 4 really begins with '('. Move the folio-4 marker above that line: python -I move_marker.py 6 4 \"(\" --before (simulated on both layers). The lone '(' line makes the output read '( tranformant': join it to the next line when moving."
+ },
+ {
+  "page": 4,
+  "where": "first line, '(tranformant la classe'",
+  "scan": "tranformant",
+  "tex": "tranformant (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "transformant",
+  "note": "Missing s in the print; the TeX keeps it."
+ },
+ {
+  "page": 4,
+  "where": "'formules qui même pour X projectif et lisse sur un corps'",
+  "scan": "sur un corpa ne sont pas (last letter an a, heavily inked, both scans)",
+  "tex": "sur un corps ne sont",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "un corps ne sont",
+   "new": "un corpa ne sont"
+  },
+  "corrected": "un corps ne sont",
+  "note": "The last letter has the a's right-hand stem and lower bowl (unlike the s of 'sont' beside it); the TeX silently corrects."
+ },
+ {
+  "page": 4,
+  "where": "'(Exp. XIV, 4 3 et 4.4)'",
+  "scan": "4 3 (no full stop visible in either scan; its character cell is there)",
+  "tex": "XIV, 4 3 et",
+  "kind": "punctuation",
+  "confidence": "low",
+  "fix": {
+   "old": "XIV, 4 3 et",
+   "new": "XIV, 4.3 et"
+  },
+  "note": "Full stops of this typescript often vanish (p. 3: the TeX restores those of (Exp. VIII), (2.1), T_f.). If the stop was never typed, this is instead a misprint the TeX keeps, correct reading 4.3."
+ },
+ {
+  "page": 4,
+  "where": "'le problème signalé plus haut'",
+  "scan": "plus baut (b with a closed bowl, both scans)",
+  "tex": "plus haut",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "plus haut de la",
+   "new": "plus baut de la"
+  },
+  "corrected": "plus haut de la",
+  "note": "The print has b for h; the TeX silently corrects."
+ },
+ {
+  "page": 4,
+  "where": "heading 2.3",
+  "scan": "2.3. (trailing full stop)",
+  "tex": "\\subsubsection*{2.3}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{2.3}",
+   "new": "\\subsubsection*{2.3.}"
+  },
+  "note": "The printed paragraph number ends with a full stop."
+ },
+ {
+  "page": 4,
+  "where": "(2.3) and the following lines (throughout the volume)",
+  "scan": "ε drawn in the open form (like a reversed 3)",
+  "tex": "\\epsilon (lunate) five times on this page",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": null,
+  "note": "Glyph convention for one decision, not a page fix: the print's augmentation epsilon is the open form (\\varepsilon), the TeX writes the lunate \\epsilon: (2.3) \\gamma^i(x-\\epsilon(x)), '$\\epsilon$ étant l'augmentation', \\epsilon(x_1) ... \\epsilon(x_k); the diplomatic main.tex has 68 \\epsilon and 26 \\varepsilon. Compare SGA 7 global issues 9 and 24."
+ },
+ {
+  "page": 4,
+  "where": "after (2.3), 'des λ^j (j=i) explicitée'",
+  "scan": "(j=i) explicitée (no comma, both scans)",
+  "tex": "($j=i$), explicitée",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "($j=i$), explicitée",
+   "new": "($j=i$) explicitée"
+  },
+  "note": "The TeX adds a comma after the parenthesis."
+ },
+ {
+  "page": 4,
+  "where": "after (2.3), 'combinaison linéaire des λ^j (j=i)'",
+  "scan": "(j=i)",
+  "tex": "($j=i$) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "($j\\leq i$)",
+  "note": "gamma^i is a combination of the lambda^j with j at most i (gamma^i(x) = lambda^i(x+i-1)); the typed = lacks the < of the inequality. The TeX keeps the printed reading; the corrected layer already reads $j\\leq i$."
+ },
+ {
+  "page": 5,
+  "where": "start of page",
+  "scan": "p. 5 begins 'est un isomorphisme modulo torsion'",
+  "tex": "'est un' is the last line of page_004.tex (under the folio-4 marker)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 5 really begins with 'est un'. Move the folio-5 marker above that line: python -I move_marker.py 6 5 \"est un\" --before (simulated on both layers)."
+ },
+ {
+  "page": 5,
+  "where": "heading 2.4",
+  "scan": "2.4. (trailing full stop)",
+  "tex": "\\subsubsection*{2.4}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{2.4}",
+   "new": "\\subsubsection*{2.4.}"
+  },
+  "note": "The printed paragraph number ends with a full stop."
+ },
+ {
+  "page": 5,
+  "where": "§2.4, 'que celles de ses deux concurents'",
+  "scan": "concurents",
+  "tex": "concurents (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "concurrents",
+  "note": "Single r in the print; the TeX keeps it."
+ },
+ {
+  "page": 5,
+  "where": "§2.4, 'est un morphisme propre de schémas noethériens'",
+  "scan": "propre (a thin stray stroke stands high above, between r and o, in both scans)",
+  "tex": "morphisme própre",
+  "kind": "accent",
+  "confidence": "medium",
+  "fix": {
+   "old": "morphisme própre",
+   "new": "morphisme propre"
+  },
+  "note": "The stroke is long, thin and well above the x-height, unlike the typed acute accents of the same line (schémas, noethériens), which are short wedges touching the e: a stray mark, not an accent."
+ },
+ {
+  "page": 5,
+  "where": "end of page",
+  "scan": "p. 5 ends '... admettant des Modules inversibles amples.'; p. 6 begins '3. Montrons maintenant comment' (DjVu witness p. 17)",
+  "tex": "page_005.tex ends with \\subsection*{3.}, which belongs to p. 6",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Move the folio-6 marker above \\subsection*{3.}: python -I move_marker.py 6 6 \"\\subsection*{3.}\" --before (simulated on both layers)."
+ }
+]

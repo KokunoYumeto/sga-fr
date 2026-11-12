@@ -1,0 +1,384 @@
+[
+ {
+  "page": 86,
+  "where": "1st paragraph, 'avec E et F ∈ ob C_oX , le noyau de u'",
+  "scan": "C_oX without a comma between the indices (both scans)",
+  "tex": "\\mathcal C_{0,X}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(F\\in\\Ob\\mathcal C_{0,X}\\), le noyau",
+   "new": "\\(F\\in\\Ob\\mathcal C_{0X}\\), le noyau"
+  },
+  "note": "The TeX adds a comma between the two indices (the print's C_oX / C_oU, as on p. 85, fixed there)."
+ },
+ {
+  "page": 86,
+  "where": "1st paragraph, 'tels que f^*Ker(u) ∈ ob C_oU'",
+  "scan": "C_oU without a comma (both scans)",
+  "tex": "\\mathcal C_{0,U}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal C_{0,U}",
+   "new": "\\mathcal C_{0U}"
+  },
+  "note": "The TeX adds a comma between the two indices (the print's C_oX / C_oU, as on p. 85, fixed there)."
+ },
+ {
+  "page": 86,
+  "where": "display (*)",
+  "scan": "0 → E^o → E^1 → ... → E^n → 0 with the three dots on the baseline (both scans)",
+  "tex": "E^1\\longrightarrow\\cdots\\longrightarrow E^n",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "E^1\\longrightarrow\\cdots\\longrightarrow E^n",
+   "new": "E^1\\longrightarrow\\ldots\\longrightarrow E^n"
+  },
+  "note": "\\cdots sets the dots at mid-height (same kind of fix as pp. 49, 79, 80)."
+ },
+ {
+  "page": 86,
+  "where": "after (*), 'avec E^i ∈ ob C_oX pour 1 ≤ i ≤ n'",
+  "scan": "C_oX without a comma (both scans)",
+  "tex": "\\mathcal C_{0,X}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "E^i\\in\\Ob\\mathcal C_{0,X}",
+   "new": "E^i\\in\\Ob\\mathcal C_{0X}"
+  },
+  "note": "The TeX adds a comma between the two indices (the print's C_oX / C_oU, as on p. 85, fixed there)."
+ },
+ {
+  "page": 86,
+  "where": "'localement relevable', 'avec F ∈ ob C_oX admet localement une section'",
+  "scan": "C_oX without a comma (both scans)",
+  "tex": "\\mathcal C_{0,X}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal C_{0,X}\\) admet",
+   "new": "\\mathcal C_{0X}\\) admet"
+  },
+  "note": "The TeX adds a comma between the two indices (the print's C_oX / C_oU, as on p. 85, fixed there)."
+ },
+ {
+  "page": 86,
+  "where": "second diagram (the commutative triangle over U)",
+  "scan": "label 'u' beside the diagonal arrow H_U → E_U and label 'U' above the horizontal arrow E_U → F_U (both scans; the U stands right under the u)",
+  "tex": "\\arrow[dl,\"u\"'] ... E_U \\arrow[r,\"U\"] & F_U (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\begin{tikzcd}\n& H_U \\arrow[d] \\arrow[dl]\\\\\nE_U \\arrow[r,\"u_U\"] & F_U\n\\end{tikzcd}",
+  "note": "The horizontal arrow is u_U (as in the diagram of quasi-relevabilité on p. 87) and the diagonal arrow is the local lifting, which has no name; the typist's u_U came apart, its u one line up beside the diagonal. The TeX keeps the printed reading (both layers)."
+ },
+ {
+  "page": 86,
+  "where": "pp. 86-90 throughout: the site S",
+  "scan": "S underlined (S̲) where it names the site: p. 86 'pour tout X ∈ ob S̲', 'de S̲/X'; p. 88 'S̲ le site des ouverts de S'; p. 89 'Soient S ∈ ob S̲'; p. 90 'X ∈ ob S̲/S'",
+  "tex": "plain S: '\\(X\\in\\Ob S\\)', '\\(S\\) le site des ouverts de \\(S\\)', 'Soient \\(S\\in\\Ob S\\)'",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the transcription, not a page fix (reported for pp. 84-85 in findings_081_085.json): the TeX drops the underline of S̲ while it writes C̲ as \\mathcal C and O̲ as \\mathcal O, so 'S ∈ ob S̲' (an object of the site) becomes \\(S\\in\\Ob S\\). One decision for the exposé."
+ },
+ {
+  "page": 87,
+  "where": "1st paragraph, 'avec F ∈ ob C_oX, l'ensemble des f'",
+  "scan": "C_oX without a comma (both scans; the comma after X is the sentence's)",
+  "tex": "\\mathcal C_{0,X}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal C_{0,X}",
+   "new": "\\mathcal C_{0X}"
+  },
+  "note": "The TeX adds a comma between the two indices (the print's C_oX / C_oU, as on p. 85, fixed there)."
+ },
+ {
+  "page": 87,
+  "where": "1st paragraph, 'avec F' ∈ ob C_oU tel que'",
+  "scan": "C_oU without a comma (both scans)",
+  "tex": "\\mathcal C_{0,U}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal C_{0,U}",
+   "new": "\\mathcal C_{0U}"
+  },
+  "note": "The TeX adds a comma between the two indices (the print's C_oX / C_oU, as on p. 85, fixed there)."
+ },
+ {
+  "page": 87,
+  "where": "'Cette condition équivaut à la suivante'",
+  "scan": "new indented paragraph after '... est un raffinement de X.' (both scans)",
+  "tex": "run on in the same paragraph: 'raffinement de \\(X\\). Cette condition'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "raffinement de \\(X\\). Cette condition",
+   "new": "raffinement de \\(X\\).\n\nCette condition"
+  },
+  "note": "The TeX joins two paragraphs of the print."
+ },
+ {
+  "page": 87,
+  "where": "second diagram (G → H_U over E_U → F_U)",
+  "scan": "a comma after F_U, right of the diagram (both scans), as after the first diagram ('F ,')",
+  "tex": "E_U \\arrow[r,\"u_U\"] & F_U (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\"u_U\"] & F_U",
+   "new": "\"u_U\"] & F_U ,"
+  },
+  "note": "The comma is set inside the cell, as the TeX does for 'F ,' in the first diagram of the page."
+ },
+ {
+  "page": 87,
+  "where": "1.3 Exemples, label 'a)'",
+  "scan": "plain a) (not underlined, not bold)",
+  "tex": "\\textbf{a)}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{a)}",
+   "new": "a)"
+  },
+  "note": "The print has a plain 'a)' etc., not underlined (both scans), so the accepted bold-label convention does not cover it (as for \\textbf{N.B.}, pp. 66 and 76)."
+ },
+ {
+  "page": 88,
+  "where": "Example b), label",
+  "scan": "plain b)",
+  "tex": "\\textbf{b)}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{b)}",
+   "new": "b)"
+  },
+  "note": "The print has a plain 'a)' etc., not underlined (both scans), so the accepted bold-label convention does not cover it (as for \\textbf{N.B.}, pp. 66 and 76)."
+ },
+ {
+  "page": 88,
+  "where": "Example c), label",
+  "scan": "plain c)",
+  "tex": "\\textbf{c)}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{c)}",
+   "new": "c)"
+  },
+  "note": "The print has a plain 'a)' etc., not underlined (both scans), so the accepted bold-label convention does not cover it (as for \\textbf{N.B.}, pp. 66 and 76)."
+ },
+ {
+  "page": 88,
+  "where": "Example c), 'S le topos des G-ensembles (SGA 4 V 3.11) k un corps'",
+  "scan": "no comma after '(SGA 4 V 3.11)' (both scans)",
+  "tex": "(SGA 4 V 3.11) \\(k\\) un corps (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(SGA 4 V 3.11), \\(k\\) un corps",
+  "note": "The enumeration 'Soient G un groupe, S le topos ..., k un corps (...), C la ...' lacks its comma before k. The TeX keeps the printed reading."
+ },
+ {
+  "page": 89,
+  "where": "Example d), label",
+  "scan": "plain d)",
+  "tex": "\\textbf{d)}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{d)}",
+   "new": "d)"
+  },
+  "note": "The print has a plain 'a)' etc., not underlined (both scans), so the accepted bold-label convention does not cover it (as for \\textbf{N.B.}, pp. 66 and 76)."
+ },
+ {
+  "page": 89,
+  "where": "label of Lemme 1.3.1",
+  "scan": "'Lemme 1.3.1,' with a comma after the number (a tailed comma in both scans; the stops between the digits are round)",
+  "tex": "\\textbf{Lemme 1.3.1.}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textbf{Lemme 1.3.1.}",
+   "new": "\\textbf{Lemme 1.3.1,}"
+  },
+  "corrected": "\\textbf{Lemme 1.3.1.}",
+  "note": "The typist's comma for the label's full stop (cf. '7,1' on p. 84); the TeX silently corrects it (the bold label itself is accepted)."
+ },
+ {
+  "page": 89,
+  "where": "Lemme 1.3.1, 'Soit P un O_S-Module, Conditions équivalentes :'",
+  "scan": "comma after 'Module', then a capital C (both scans)",
+  "tex": "\\(\\mathcal O_S\\)-Module, Conditions équivalentes (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\(\\mathcal O_S\\)-Module. Conditions équivalentes",
+  "note": "The capital C shows that a full stop was meant ('Soit P un O_S-Module. Conditions équivalentes :'). The TeX keeps the printed reading."
+ },
+ {
+  "page": 89,
+  "where": "Lemme 1.3.1 (i), 'le foncteur Hom(P,.) est exact'",
+  "scan": "Hom underlined by its own short, close underline (Hom̲, the sheaf Hom), apart from the underline of the words and with '(P,.)' not underlined (both scans)",
+  "tex": "\\(\\Hom(P,\\cdot)\\) inside the \\emph of the item (prints a plain Hom)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(P",
+   "new": "\\underline{\\Hom}(P"
+  },
+  "note": "The statement's underlining skips its formulas (P, M → P, (P,.)), so the underline of Hom is the notation Hom̲; the lemma needs the sheaf Hom for (i) ⇔ (iii). The file writes \\underline{\\Hom} elsewhere (6 times)."
+ },
+ {
+  "page": 89,
+  "where": "Lemme 1.3.1 (i), the place-holder in 'Hom(P,.)'",
+  "scan": "a typed full stop on the baseline (both scans)",
+  "tex": "(P,\\cdot)",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "(P,\\cdot)",
+   "new": "(P,.)"
+  },
+  "note": "\\cdot raises the typed stop to mid-height (as the \\cdots fixes of pp. 49, 79, 80). Independent of the underline fix of the same formula (either order)."
+ },
+ {
+  "page": 89,
+  "where": "Proposition 1.4.1, the statement (opening)",
+  "scan": "the statement is underlined by word groups from 'Soient S un site' to 'on suppose que H^n(G) est' on p. 89 (both scans)",
+  "tex": "\\textbf{Proposition 1.4.1.} Soient \\(S\\) un site, ... (no \\emph at all)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textbf{Proposition 1.4.1.} Soient",
+   "new": "\\textbf{Proposition 1.4.1.} \\emph{Soient"
+  },
+  "note": "The underline of the whole statement is missing (block \\emph, as Lemme 1.3.1 on the same page). Goes with the next entry and with the p. 90 entry that closes the group: apply all three or none."
+ },
+ {
+  "page": 89,
+  "where": "Proposition 1.4.1, the statement (end of p. 89)",
+  "scan": "p. 89 ends '... on suppose que H^n(G) est' (underlined); 'de C_o-type fini (1.2)' is the first line of p. 90",
+  "tex": "on suppose que \\(\\Ho^n(G)\\) est de \\(\\mathcal C_0\\)-",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\Ho^n(G)\\) est de \\(\\mathcal C_0\\)-",
+   "new": "\\(\\Ho^n(G)\\) est}\n\\emph{de \\(\\mathcal C_0\\)-%"
+  },
+  "note": "Closes the group at the end of p. 89 and opens a second one that runs on into p. 90 (prints the same), so that the folio-90 marker can stand between the two groups (marker entry of p. 90). The % keeps 'C_0-type' one word: the line break after the hyphen now prints 'C_0- type'."
+ },
+ {
+  "page": 89,
+  "where": "Proposition 1.4.1, 'Soient S un site, C une S-catégorie'",
+  "scan": "plain C, not underlined (both scans), while C_o and C_S of the same statement keep their underline",
+  "tex": "\\(\\mathcal C\\) une \\(S\\)-catégorie",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "un site, \\(\\mathcal C\\) une",
+   "new": "un site, \\(C\\) une"
+  },
+  "corrected": "un site, \\(\\mathcal C\\) une",
+  "note": "The typist left the category letter C (and the site S) unmarked in this statement; the TeX silently writes \\mathcal C. Independent of the underline edits."
+ },
+ {
+  "page": 89,
+  "where": "Proposition 1.4.1, 'strictement pleine de C; on suppose'",
+  "scan": "plain C (both scans)",
+  "tex": "strictement pleine de \\(\\mathcal C\\);",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "pleine de \\(\\mathcal C\\);",
+   "new": "pleine de \\(C\\);"
+  },
+  "corrected": "pleine de \\(\\mathcal C\\);",
+  "note": "As above."
+ },
+ {
+  "page": 89,
+  "where": "Proposition 1.4.1, 'localement quasi-relevable dans C (1.2)'",
+  "scan": "plain C (both scans)",
+  "tex": "quasi-relevable dans \\(\\mathcal C\\) (1.2)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "quasi-relevable dans \\(\\mathcal C\\) (1.2)",
+   "new": "quasi-relevable dans \\(C\\) (1.2)"
+  },
+  "corrected": "quasi-relevable dans \\(\\mathcal C\\) (1.2)",
+  "note": "As above."
+ },
+ {
+  "page": 90,
+  "where": "start of page",
+  "scan": "p. 90 begins 'de C_o-type fini (1.2). Alors l'ensemble des X ∈ ob S/S ...'; p. 89 ends '... on suppose que H^n(G) est' (both scans)",
+  "tex": "'de \\(\\mathcal C_0\\)-' ends the last line of page_089.tex (under the folio-89 marker); page_090.tex begins 'type fini (1.2).'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 90 really begins with 'de \\(\\mathcal C_0\\)-'. After the three underline edits of Proposition 1.4.1 (p. 89 opening and end, p. 90 closing): python -I move_marker.py 6 90 '\\emph{de \\(\\mathcal C_0\\)-' --before (single quotes; simulated on both layers: '... on suppose que \\(\\Ho^n(G)\\) est}' / marker / '\\emph{de \\(\\mathcal C_0\\)-%' / 'type fini (1.2). Alors ... raffinement de \\(S\\)}.'). Without those edits: python -I move_marker.py 6 90 'de \\(\\mathcal C_0\\)-' --before, then write a % after that hyphen in both layers ('de \\(\\mathcal C_0\\)-%'), as the line break prints 'C_0- type'."
+ },
+ {
+  "page": 90,
+  "where": "Proposition 1.4.1, the statement (p. 90 part)",
+  "scan": "'de C_o-type fini (1.2). Alors l'ensemble des X ∈ ob S/S vérifiant la propriété (P) ci-dessous est un raffinement de S.' underlined by word groups (both scans); '(P) : il existe ...' and the rest are not",
+  "tex": "no \\emph",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "raffinement de \\(S\\).",
+   "new": "raffinement de \\(S\\)}."
+  },
+  "note": "Closes the group opened at the end of p. 89 (see there); apply the three edits together, before the folio-90 marker move."
+ },
+ {
+  "page": 90,
+  "where": "Proposition 1.4.1, 'l'ensemble des X ∈ ob S/S'",
+  "scan": "S̲ with '/S' lowered as an index, S_{/S} (both scans), as S_{/X} on pp. 86-87",
+  "tex": "\\(X\\in\\Ob S/S\\)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ob S/S",
+   "new": "\\Ob S_{/S}"
+  },
+  "note": ""
+ },
+ {
+  "page": 90,
+  "where": "(P), 'il existe un objet M de C_oX'",
+  "scan": "C_oX without a comma (both scans)",
+  "tex": "\\mathcal C_{0,X}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal C_{0,X}",
+   "new": "\\mathcal C_{0X}"
+  },
+  "note": "The TeX adds a comma between the two indices (the print's C_oX / C_oU, as on p. 85, fixed there)."
+ },
+ {
+  "page": 90,
+  "where": "'Démonstration. La marche est la suivante'",
+  "scan": "only the word is underlined; the full stop stands after the underline (both scans)",
+  "tex": "\\emph{Démonstration.}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\emph{Démonstration.}",
+   "new": "\\emph{Démonstration}."
+  },
+  "note": "main.tex has \\emph{Démonstration.} 9 times and \\emph{Preuve.} 132 times and never the stop outside; SGA 5 (global item 75) moved it out ('\\emph{Preuve} :'). One decision for the volume may cover it."
+ }
+]

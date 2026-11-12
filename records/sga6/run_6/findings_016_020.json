@@ -1,0 +1,381 @@
+[
+ {
+  "page": 16,
+  "where": "§6, paragraph 'Dans le point de vue proposé dans le Séminaire', first underlined run",
+  "scan": "five separately underlined phrases: 'Dans le point de vue proposé dans le Séminaire', 'une théorie des intersections maniable', 'sur les schémas noethériens', 'pas nécessairement réguliers', 'doit consister en l'étude combinée des invariants contravariants'; the commas and the letter X are not underlined (both scans)",
+  "tex": "one \\uline{...} running through the commas and $X$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uline{Dans le point de vue propos\\'e dans le S\\'eminaire, une th\\'eorie des intersections maniable, sur les sch\\'emas noeth\\'eriens $X$ pas n\\'ecessairement r\\'eguliers, doit consister en l'\\'etude combin\\'ee des invariants contravariants}",
+   "new": "\\uline{Dans le point de vue propos\\'e dans le S\\'eminaire}, \\uline{une th\\'eorie des intersections maniable}, \\uline{sur les sch\\'emas noeth\\'eriens} $X$ \\uline{pas n\\'ecessairement r\\'eguliers}, \\uline{doit consister en l'\\'etude combin\\'ee des invariants contravariants}"
+  },
+  "note": "The typescript stops the underline at each comma and at X and restarts it after (as SGA 7 II global items 48/73)."
+ },
+ {
+  "page": 16,
+  "where": "same paragraph, last underlined run",
+  "scan": "'qui jouent des rôles de nature essentiellement différente', 'et dont les propriétés se complètent mutuellement' underlined separately; the comma between them and the final full stop are not underlined",
+  "tex": "\\uline{qui jouent ... diff\\'erente, et dont ... mutuellement.} (comma and full stop inside)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uline{qui jouent des r\\^oles de nature essentiellement diff\\'erente, et dont les propri\\'et\\'es se compl\\`etent mutuellement.}",
+   "new": "\\uline{qui jouent des r\\^oles de nature essentiellement diff\\'erente}, \\uline{et dont les propri\\'et\\'es se compl\\`etent mutuellement}."
+  },
+  "note": "Same form as the previous finding."
+ },
+ {
+  "page": 16,
+  "where": "after (6.4), 'induisant sur le sous-groupe Gr_o(X) = Filt_o K.(X)'",
+  "scan": "Filt_o K.(X) (both scans)",
+  "tex": "\\Fil_0K_\\bullet(X) (\\Fil is \\operatorname{Fil}: prints 'Fil')",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Fil_0K_\\bullet(X)",
+   "new": "\\operatorname{Filt}_0K_\\bullet(X)"
+  },
+  "note": "The print types Filt; the file writes \\operatorname{Filt} on pp. 3-5. Page 15 has the same \\Fil for the print's Filt (main.tex lines 480, 482: \\Fil_iK_\\bullet(X), (6.1) \\Fil^i, \\Fil_j, \\Fil_{j-i}; read on the DjVu witness p. 26)."
+ },
+ {
+  "page": 17,
+  "where": "§7, 'théorèmes de finitude pour le groupe de Picard (annoncés sans démonstration dans [6])'",
+  "scan": "dans [6]) (both scans)",
+  "tex": "[6] (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "[5]",
+  "note": "Wrong reference number: in the printed bibliography (p. 19) [6] is W. Shih, Séminaire de Topologie à l'IHES; the finiteness theorems were announced without proof in FGA, which is [5] ('Technique de descente ...', 'dans Fondements de la Géométrie Algébrique'), as the same paragraph's 'se rattachant à [5]'. Exp. XIII cites the same commentaries of FGA 'p. C 07--C 11' (main.tex line 15180). Corrected layer still has [6]."
+ },
+ {
+  "page": 17,
+  "where": "§7, 'Le seul résultat réfractaire aux méthodes de Kleiman ... est [6, C-07 (i)]'",
+  "scan": "[6, C-07 (i)] (both scans)",
+  "tex": "[6, C-07 (i)] (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "[5, C-07 (i)]",
+  "note": "C-07 is a page of FGA's commentaries, i.e. bibliography item [5], not [6] (W. Shih). Correct together with the previous finding and the offset citations of p. 14 (see the coordinator message)."
+ },
+ {
+  "page": 17,
+  "where": "§7, 'dont la démonstration et certains raffinements (...) occupe l'exposé XII'",
+  "scan": "occupe",
+  "tex": "occupe (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "occupent",
+  "note": "Agreement slip: the subject 'la démonstration et certains raffinements' is plural. The corrected layer also has 'occupe'; decide whether the corrected edition mends the grammar."
+ },
+ {
+  "page": 18,
+  "where": "start of page",
+  "scan": "p. 18 begins 'posé est logiquement indépendant de tous les autres.' (second half of 'ex-posé', hyphenated across the page break)",
+  "tex": "'cet expos\\'e est' is the last line of page_017.tex (under the folio-17 marker); page_018.tex begins 'logiquement'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 18 really begins with 'posé est'. Split the word at the marker: python -I move_marker.py 6 18 \"pos\\'e est\" --before, then in both layers replace 'cet ex\\n%%%%%%%%%%  scan idx 31' by 'cet ex%\\n%%%%%%%%%%  scan idx 31' so that 'exposé' stays one word (as isomor%|phisme, SGA 7 I). Simulated on both layers: '... se rattachant \\`a [5]~; cet ex%' / marker / 'pos\\'e est' / 'logiquement ...'."
+ },
+ {
+  "page": 18,
+  "where": "(7.2)",
+  "scan": "det*: Parfis(X) ⟶ Inv(X): 'Parfis' typed on the line and underlined as one word (both scans)",
+  "tex": "\\underline{\\Parf_{\\mathrm{is}}}(X) ('is' as a subscript)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{\\Parf_{\\mathrm{is}}}",
+   "new": "\\underline{\\operatorname{Parfis}}"
+  },
+  "note": "The letters 'is' stand on the baseline at full size, unlike the lowered indices of the same page (L_i)."
+ },
+ {
+  "page": 18,
+  "where": "(7 3), left side",
+  "scan": "det*(L.) ≃ ... : a typed full stop after L, in its own character cell before ')' (both scans; the same position as in 'pour un complexe L.' of the line before)",
+  "tex": "\\det^*(L)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\det^*(L)\\simeq",
+   "new": "\\det^*(L_\\bullet)\\simeq"
+  },
+  "note": "The file writes the print's K. as K_\\bullet. The dot touches the end of the L's foot in both scans, but it takes the cell between L and the parenthesis. The running text 'pour un complexe $L$. born\\'e' prints the same 'L.' and may stay (or become $L_\\bullet$ for consistency)."
+ },
+ {
+  "page": 18,
+  "where": "equation number (7 3)",
+  "scan": "(7 3): no full stop between 7 and 3 (both scans; the space is there)",
+  "tex": "\\tag{7 3} (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\tag{7.3}",
+  "note": "The corrected layer also has \\tag{7 3}; the correct number is (7.3)."
+ },
+ {
+  "page": 18,
+  "where": "heading of the bibliography (printed at the top of p. 19; the TeX has it under the folio-18 marker)",
+  "scan": "BIBLIOGRAPHIE: capitals, single underline (both scans)",
+  "tex": "\\section*{Bibliographie}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\section*{Bibliographie}",
+   "new": "\\section*{\\underline{BIBLIOGRAPHIE}}"
+  },
+  "note": "Filed under p. 18 because the line now stands in page_018.tex: apply before the marker move of p. 19. Same form as the applied p. 1 fix \\section*{\\underline{Exposé 0}}."
+ },
+ {
+  "page": 19,
+  "where": "start of page",
+  "scan": "p. 19 begins with the heading BIBLIOGRAPHIE; p. 18 ends '... dans les exposés I à XI.'",
+  "tex": "\\section*{Bibliographie}, \\begin{enumerate}[...] and '\\item M.' are the last lines of page_018.tex (under the folio-18 marker); page_019.tex begins 'Atiyah et F. Hirzebruch'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 19 really begins with the heading. Move the folio-19 marker above it: python -I move_marker.py 6 19 \"\\section*{Bibliographie}\" --before (simulated on both layers: marker after 'expos\\'es I \\`a XI.' and its blank line; '\\item M.' and 'Atiyah' then follow each other on two lines of the same item)."
+ },
+ {
+  "page": 19,
+  "where": "bibliography, title 'Vector bundles and homogeneous spaces'",
+  "scan": "title typed plain, not underlined (both scans)",
+  "tex": "\\emph{Vector bundles and homogeneous spaces}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Vector bundles and homogeneous spaces}",
+   "new": "Vector bundles and homogeneous spaces"
+  },
+  "note": "The bibliography of p. 19 underlines none of its titles; the TeX sets all seven in italics."
+ },
+ {
+  "page": 19,
+  "where": "bibliography, title 'Le théorème de Riemann--Roch'",
+  "scan": "title typed plain, not underlined (both scans)",
+  "tex": "\\emph{Le th\\'eor\\`eme de Riemann--Roch}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Le th\\'eor\\`eme de Riemann--Roch}",
+   "new": "Le th\\'eor\\`eme de Riemann--Roch"
+  },
+  "note": "The bibliography of p. 19 underlines none of its titles; the TeX sets all seven in italics."
+ },
+ {
+  "page": 19,
+  "where": "bibliography, title 'Ein Theorem der analytischen Garbentheorie'",
+  "scan": "title typed plain, not underlined (both scans)",
+  "tex": "\\emph{Ein Theorem der analytischen Garbentheorie}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Ein Theorem der analytischen Garbentheorie}",
+   "new": "Ein Theorem der analytischen Garbentheorie"
+  },
+  "note": "The bibliography of p. 19 underlines none of its titles; the TeX sets all seven in italics."
+ },
+ {
+  "page": 19,
+  "where": "bibliography, title 'Classes de faisceaux et théorème de Riemann--Roch'",
+  "scan": "title typed plain, not underlined (both scans)",
+  "tex": "\\emph{Classes de faisceaux et th\\'eor\\`eme de Riemann--Roch}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Classes de faisceaux et th\\'eor\\`eme de Riemann--Roch}",
+   "new": "Classes de faisceaux et th\\'eor\\`eme de Riemann--Roch"
+  },
+  "note": "The bibliography of p. 19 underlines none of its titles; the TeX sets all seven in italics."
+ },
+ {
+  "page": 19,
+  "where": "bibliography, title 'Technique de descente et théorèmes d'existence en Géométrie Algébrique'",
+  "scan": "title typed plain, not underlined (both scans)",
+  "tex": "\\emph{Technique de descente et th\\'eor\\`emes d'existence en G\\'eom\\'etrie Alg\\'ebrique}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Technique de descente et th\\'eor\\`emes d'existence en G\\'eom\\'etrie Alg\\'ebrique}",
+   "new": "Technique de descente et th\\'eor\\`emes d'existence en G\\'eom\\'etrie Alg\\'ebrique"
+  },
+  "note": "The bibliography of p. 19 underlines none of its titles; the TeX sets all seven in italics."
+ },
+ {
+  "page": 19,
+  "where": "bibliography, title 'Fondements de la Géométrie Algébrique'",
+  "scan": "title typed plain, not underlined (both scans)",
+  "tex": "\\emph{Fondements de la G\\'eom\\'etrie Alg\\'ebrique}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Fondements de la G\\'eom\\'etrie Alg\\'ebrique}",
+   "new": "Fondements de la G\\'eom\\'etrie Alg\\'ebrique"
+  },
+  "note": "The bibliography of p. 19 underlines none of its titles; the TeX sets all seven in italics."
+ },
+ {
+  "page": 19,
+  "where": "bibliography, title 'The Riemann--Roch theorem for analytic embeddings'",
+  "scan": "title typed plain, not underlined (both scans)",
+  "tex": "\\emph{The Riemann--Roch theorem for analytic embeddings}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{The Riemann--Roch theorem for analytic embeddings}",
+   "new": "The Riemann--Roch theorem for analytic embeddings"
+  },
+  "note": "The bibliography of p. 19 underlines none of its titles; the TeX sets all seven in italics."
+ },
+ {
+  "page": 19,
+  "where": "[1], 'vol. 3, Différential Geometry p. 7-38, 1961.'",
+  "scan": "Différential Geometry p. 7-38 (no comma after Geometry, at the line end; both scans)",
+  "tex": "Diff\\'erential Geometry, p. 7--38",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Geometry, p.",
+   "new": "Geometry p."
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 19,
+  "where": "[1], 'Différential Geometry'",
+  "scan": "Différential (accented é in the English title; both scans)",
+  "tex": "Diff\\'erential (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Differential",
+  "note": "The AMS volume is 'Differential Geometry' (Proc. Sympos. Pure Math. 3, 1961)."
+ },
+ {
+  "page": 19,
+  "where": "[2], 'A. Borel et J.P. Serre'",
+  "scan": "J.P. Serre (no hyphen; both scans)",
+  "tex": "J.-P. Serre",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "J.-P. Serre",
+   "new": "J.P. Serre"
+  },
+  "note": "The TeX adds a hyphen to the initials."
+ },
+ {
+  "page": 19,
+  "where": "[2], 'Bull. Soc. math France'",
+  "scan": "Bull. Soc. math France (no full stop after 'math', at the line end; both scans)",
+  "tex": "Bull. Soc. math. France (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "Soc. math. France",
+   "new": "Soc. math France"
+  },
+  "corrected": "Soc. math. France",
+  "note": "The abbreviation 'math' lacks its full stop in the print; the TeX supplies it."
+ },
+ {
+  "page": 19,
+  "where": "bibliography (throughout): page and year ranges",
+  "scan": "typewriter hyphen: p. 7-38, p. 97-136, p. 5-64, 1957-1962, p. 151 - 166",
+  "tex": "p. 7--38, p. 97--136, p. 5--64, 1957--1962, p. 151--166",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the transcription, not a page fix: number ranges are written with an en dash (--) where the typescript has a hyphen; main.tex has 28 digit--digit ranges (e.g. the p. 220 bibliography: 1963--64, p. 2974--2976). Same question as the joint-name dash (handled globally): one pass in the diplomatic layer."
+ },
+ {
+  "page": 19,
+  "where": "end of page_019.tex: heading 'Appendice à l'Exposé 0 : RRR'",
+  "scan": "not printed: p. 20 has only the running head '0 App : RRR' at the top right; p. 19 ends with item [7]",
+  "tex": "\\section*{Appendice à l'Exposé 0 : RRR}",
+  "kind": "extra",
+  "confidence": "low",
+  "fix": {
+   "old": "\\section*{Appendice à l'Exposé 0 : RRR}\n",
+   "new": ""
+  },
+  "note": "Editorial heading made from the running head (running heads are not transcribed elsewhere). Apply only if the diplomatic layer drops headings the print does not have (as the 'SGA 5 --- ' prefixes, global issue 75); if it is kept, it belongs under the folio-20 marker (see p. 20). Filed under p. 19 because the line now stands in page_019.tex: apply before the marker move."
+ },
+ {
+  "page": 20,
+  "where": "start of page",
+  "scan": "p. 20 begins with the title block 'CLASSES DE FAISCEAUX ET THEOREME DE RIEMANN-ROCH' (running head '0 App : RRR')",
+  "tex": "\\section*{Appendice à l'Exposé 0 : RRR} and \\begin{center} stand at the end of page_019.tex, above the folio-20 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Move the folio-20 marker above the heading: python -I move_marker.py 6 20 \"\\section*{Appendice\" --before (simulated on both layers: the marker follows \\clearpage and its blank lines). If the heading is deleted (p. 19 finding), use the anchor \"\\begin{center}\" instead (the nearest one before the marker)."
+ },
+ {
+  "page": 20,
+  "where": "title",
+  "scan": "CLASSES DE FAISCEAUX ET THEOREME DE RIEMANN-ROCH: capitals, double underline (both scans)",
+  "tex": "{\\Large Classes de faisceaux et théorème de Riemann--Roch}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "{\\Large Classes de faisceaux et théorème de Riemann--Roch}",
+   "new": "{\\Large \\underline{\\underline{CLASSES DE FAISCEAUX ET THÉORÈME DE RIEMANN--ROCH}}}"
+  },
+  "note": "Capitals and two parallel underlines as the p. 1 title; THÉORÈME keeps the TeX's accents (accent rule for typed capitals), the joint-name dash is left to the global pass."
+ },
+ {
+  "page": 20,
+  "where": "author line",
+  "scan": "par A. GROTHENDIECK (*): 'par A. GROTHENDIECK' in capitals, underlined (both scans)",
+  "tex": "par A. Grothendieck\\footnote{...}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "par A. Grothendieck\\footnote{",
+   "new": "\\underline{par A. GROTHENDIECK}\\footnote{"
+  },
+  "note": "The footnote mark (*) is not underlined. For the mark itself see the footnote finding."
+ },
+ {
+  "page": 20,
+  "where": "contents, CHAP. I",
+  "scan": "CHAP.I - λ-Anneaux (préliminaires formels): 'Anneaux' and 'préliminaires formels' underlined (both scans)",
+  "tex": "\\subsection*{CHAP. I -- $\\lambda$-Anneaux (préliminaires formels)} (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\lambda$-Anneaux (préliminaires formels)}",
+   "new": "$\\lambda$-\\uline{Anneaux} (\\uline{préliminaires formels})}"
+  },
+  "note": "λ- and the parentheses are not underlined."
+ },
+ {
+  "page": 20,
+  "where": "contents, CHAP. II",
+  "scan": "CHAP.II - Classes de faisceaux algébriques cohérents et classes de Chern ....... 18: the title underlined and followed by the dotted leader and page number 18 (both scans)",
+  "tex": "\\subsection*{CHAP. II -- Classes de faisceaux algébriques cohérents et classes de Chern} (no underline, no page number)",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{CHAP. II -- Classes de faisceaux algébriques cohérents et classes de Chern}",
+   "new": "\\subsection*{CHAP. II -- \\uline{Classes de faisceaux algébriques cohérents et classes de Chern}\\hfill 18}"
+  },
+  "note": "The chapter line carries its own page number 18 (CHAP. I has none); the underline covers the whole title. \\uline because the title breaks over two lines."
+ },
+ {
+  "page": 20,
+  "where": "footnote to 'par A. GROTHENDIECK' (and throughout)",
+  "scan": "footnote mark (*) in the text and before the note (the note itself speaks of 'signes (*), (**)')",
+  "tex": "\\footnote{...}: LaTeX's automatic number",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": null,
+  "note": "Convention of the transcription, not a page fix: the 90 \\footnote (and 5 \\footnotemark) of main.tex print LaTeX numbers where the typescript marks (*), (**) (also p. 15, note to 'cap-produit', seen on the witness). One decision for the volume (e.g. a symbol counter per page in the diplomatic layer)."
+ }
+]

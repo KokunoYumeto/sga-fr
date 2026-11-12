@@ -1,0 +1,69 @@
+{equation}
+%%%%%%%%%%  scan idx 279  |  folio 266  %%%%%%%%%%
+Si \(E\)
+vérifie la condition (5.1 a)) pour l'entier \(p\), \(E^{\vee}\) vérifie la même condition pour l'entier \(-p-1\) en vertu de (5.2 (iii)), et la flèche \((*)\) est un isomorphisme, d'après la première assertion de (5.3.1). Ceci achève la démonstration de (5.3.1), et par suite de (5.3).
+
+\textbf{Remarque 5.3.2.} La proposition (5.3) s'applique en particulier lorsque \(E\) est un complexe à degrés bornés de \(\mathcal O_X\)-Modules quasi-cohérents plats et de présentation finie rel. à \(f\) : en effet, \(E\) est alors d'amplitude parfaite finie rel. à \(f\) en vertu de (4.3.2).
+
+%%%%%%%%%%  scan idx 280  |  folio 267  %%%%%%%%%%
+\textbf{Définition 5.4.} Soit \(X\) un topos, notons \(\pt(X)\) l'ensemble de ses points (SGA 4 IV 6.1). Soient \(M\) un ensemble ordonné, \(f:\pt(X)\to M\) une application, et \(x\in\pt(X)\). On dit que \(f\) est semi-continue supérieurement (resp. semi-continue inférieurement, resp. localement constante) en \(x\) s'il existe un objet \(x\)-ponctué \(U\) de \(X\) tel que pour tout point \(y\) de \(U\) on ait \(f(y)\leq f(x)\) (resp. \(f(y)\geq f(x)\), resp. \(f(y)=f(x)\)). On dit que \(f\) est semi-continue supérieurement (resp. semi-continue inférieurement, resp. localement constante) si elle l'est en tout point\footnote{Si \(X\) provient d'un espace topologique, on retrouve les notions usuelles.}.
+
+\textbf{Exemples 5.4.1.} a) Notons \(M_X\) le faisceau constant de valeur \(M\) sur \(X\), et soit \(s\in H^0(X,M)\). L'application \(x\mapsto s(x)=x^*(s)\) de \(\pt(X)\) dans \(M\) est localement constante. En particulier, soit \(E\) un complexe parfait sur \(X\) supposé localement annelé : le rang de \(E\) (I 6.11) définit une fonction localement constante sur \(\pt(X)\) à valeurs dans \(\mathbb Z\).
+
+b) Supposons \(X\) localement annelé, et soit \(P\) un \(\mathcal O_X\)-Module de type fini. Pour \(x\in\pt(X)\), notons \(\mathcal O_{X,x}\) l'anneau local fibre de \(\mathcal O_X\) en \(x\), et \(k(x)\) le corps résiduel. Alors, pour \(x\in\pt(X)\), \(P_x\otimes_{\mathcal O_{X,x}}k(x)\) est de rang fini sur \(k(x)\), et la fonction \(x\mapsto\operatorname{rg}_{k(x)}(P\otimes_{\mathcal O_{X,x}}k(x))\) est semi-continue supérieurement. En effet, si, pour \(x\in\pt(X)\), \(P_x\otimes_{\mathcal O_{X,x}}k(x)\) est de rang \(n\), il existe un épimorphisme \(\mathcal O_{X,x}^n\to P_x\) d'après Nakayama, et, comme \(P\) est de type fini, il existe un objet \(x\)-ponctué \(U\) de \(X\) et un épimorphisme \(\mathcal O_U^n\to P\,|\,U\), d'où l'assertion.
+
+\textbf{Lemme 5.5.} Soient \((X,\mathcal O_X)\) un topos localement annelé, \(E\in\Ob D^{-}(X)\), et \(p\in\mathbb Z\). Alors on a, avec les notations de (5.4.1 b)) :
+\begin{enumerate}[label=(\roman*)]
+%%%%%%%%%%  scan idx 281  |  folio 268  %%%%%%%%%%
+\item Si \(E\) est
+parfait, les \(H^i(E_x\otimes_{\mathcal O_{X,x}}^{\mathrm L}k(x))\), pour \(x\in\pt(X)\), sont des espaces vectoriels de rang fini sur \(k(x)\), nuls sauf un nombre fini, et la fonction
+\[
+ x\longmapsto\sum(-1)^i\operatorname{rg}_{k(x)}H^i(E_x\otimes_{\mathcal O_{X,x}}^{\mathrm L}k(x))
+\]
+est localement constante sur \(\pt(X)\).
+\item Si \(E\) est \((p-1)\)-pseudo-cohérent, \(H^p(E_x\otimes_{\mathcal O_{X,x}}^{\mathrm L}k(x))\) est, pour \(x\in\pt(X)\), un espace vectoriel de rang fini sur \(k(x)\), et la fonction
+\[
+ x\longmapsto\operatorname{rg}_{k(x)}H^p(E_x\otimes_{\mathcal O_{X,x}}^{\mathrm L}k(x))
+\]
+est semi-continue supérieurement sur \(\pt(X)\). Si en outre le foncteur \(M\mapsto H^p(E\otimes^{\mathrm L}M)\) de \(\Mod(X)\) dans \(\Mod(X)\) est exact, \(H^p(E)\) est localement libre de type fini et la fonction précédente est localement constante.
+\item Supposons \(E\) \(p\)-pseudo-cohérent (resp. \((p-1)\)-pseudo-cohérent), et soit \(x\in\pt(X)\). Si le foncteur \(M\mapsto H^p(E_x\otimes_{\mathcal O_{X,x}}^{\mathrm L}M)\) est exact à droite (resp. à gauche) sur la catégorie \(\Mod(x)\) des \(\mathcal O_{X,x}\)-Modules, il existe un ouvert \(x\)-ponctué \(U\) de \(X\) tel que le foncteur \(M\mapsto H^p(E\,|\,U\otimes^{\mathrm L}M)\) soit exact à droite (resp. à gauche) sur \(\Mod(U)\).
+\end{enumerate}
+
+\emph{Preuve.} (i) D'après (I 4.19.1), \(E_x\otimes_{\mathcal O_{X,x}}^{\mathrm L}k(x)\) est un complexe parfait de \(k(x)\)-modules, donc (I 5.9 et 3.5) les \(H^i(E_x\otimes_{\mathcal O_{X,x}}^{\mathrm L}k(x))\) sont de rang fini sur \(k(x)\) et nuls sauf un nombre fini. On a\footnote{\(\operatorname{rg}(\ )\) désigne le rang d'un complexe parfait (I 6.11).}
+\begin{equation}
+ \operatorname{rg}(E_x\otimes_{\mathcal O_{X,x}}^{\mathrm L}k(x))=\sum(-1)^i\operatorname{rg}_{k(x)}H^i(E_x\otimes_{\mathcal O_{X,x}}^{\mathrm L}k(x)),\tag{5.5.1}
+\end{equation}
+comme on le voit par un dévissage immédiat utilisant l'additivité de la fonction rang. Compte tenu de (5.4.1 a)), l'assertion (i) résulte donc de la
+%%%%%%%%%%  scan idx 282  |  folio 269  %%%%%%%%%%
+compatibilité du rang avec les images inverses (I 6.12).
+
+(ii) Quitte à tronquer et à translater, on peut, pour la première assertion, supposer \(E\) strictement parfait, \(p=0\), et \(E^i=0\) pour \(i\notin[-1,+1]\). Pour \(x\in\pt(X)\), posons \(E_x\otimes_{\mathcal O_{X,x}}^{\mathrm L}k(x)=E_{k(x)}\). On a d'après (5.5.1)
+\[
+\begin{gathered}
+ \operatorname{rg}_{k(x)}H^0(E_{k(x)})=\operatorname{rg}_{k(x)}H^{-1}(E_{k(x)})+\operatorname{rg}_{k(x)}H^1(E_{k(x)})\\
+ +\operatorname{rg}(E_x),
+\end{gathered}
+\]
+donc il suffit de prouver que la fonction \(x\mapsto\operatorname{rg}_{k(x)}H^{-1}(E_{k(x)})\) (resp. \(\operatorname{rg}_{k(x)}H^1(E_{k(x)})\)) est semi-continue supérieurement (puisque la fonction \(x\mapsto\operatorname{rg}(E_x)=\operatorname{rg}(E_{k(x)})\) est localement constante). Pour la fonction \(x\mapsto\operatorname{rg}_{k(x)}H^1(E_{k(x)})\), c'est une conséquence immédiate de (5.4.1 b))\footnote{compte tenu de ce que l'on a \(H^1(E_{k(x)})\simeq H^1(E)_{k(x)}\).}. Pour la fonction \(x\mapsto\operatorname{rg}_{k(x)}H^{-1}(E_{k(x)})\), on peut supposer \(E^1=0\), i.e. remplacer \(E\) par \(E'=(0\to E^{-1}\to E^0\to0)\). On sait déjà que la fonction \(x\mapsto\operatorname{rg}_{k(x)}H^0(E'_{k(x)})\) est semi-continue supérieurement, donc il en est de même de la fonction \(x\mapsto\operatorname{rg}_{k(x)}H^{-1}(E'_{k(x)})=\operatorname{rg}_{k(x)}H^{-1}(E_{k(x)})\), puisque la fonction \(x\mapsto\operatorname{rg}_{k(x)}H^0(E'_{k(x)})-\operatorname{rg}_{k(x)}H^{-1}(E'_{k(x)})=\operatorname{rg}(E'_x)\) est localement constante. Prouvons maintenant la seconde assertion. Quitte à tronquer, on peut supposer \(E\) strictement parfait et \(E^i=0\) pour \(i<p-1\). Le \(\mathcal O_X\)-Module \(Z'^i(E)=\Coker(E^{i-1}\to E^i)\) est donc de présentation finie. On a une suite exacte :
+\begin{equation}
+ 0\to H^p(E)\to Z'^p(E)\to E^{p+1}\to Z'^{p+1}(E)\to0.\tag{$*$}
+\end{equation}
+Comme le foncteur \(M\mapsto H^p(E\otimes^{\mathrm L}M)\) est exact à droite et à gauche, \(Z'^{p+1}(E)\) et \(Z'^p(E)\) sont plats d'après (5.2 (iii)), donc (I 5.8.3) localement libres de type fini. L'exactitude de (*) implique alors que \(H^p(E)\) est localement libre de type fini, et par suite que la fonction \(x\mapsto\operatorname{rg}_{k(x)}H^p(E_{k(x)})=\operatorname{rg}(H^p(E)_x)\) est
+%%%%%%%%%%  scan idx 283  |  folio 270  %%%%%%%%%%
+localement constante, ce qui achève la preuve de (ii).
+
+(iii) On peut supposer \(E\) strictement parfait et \(E^i=0\) pour \(i<p\) (resp. \(p-1\)). Dire que le foncteur \(M\mapsto H^p(E_x\otimes_{\mathcal O_{X,x}}^{\mathrm L}M)\) est exact à droite (resp. à gauche) sur \(\Mod(x)\) équivaut, d'après (5.2 (iii)), à dire que \(Z'^{p+1}(E_x)\) (resp. \(Z'^p(E_x)\)) (avec les notations de (ii)) est plat, donc libre de type fini (puisque de présentation finie). Comme on a \(Z'^{p+1}(E_x)\simeq Z'^{p+1}(E)_x\) (resp. \(Z'^p(E_x)\simeq Z'^p(E)_x\)), l'argument habituel (cf. EGA \(\mathrm O_I\) 5.2.7) montre qu'il existe un objet \(x\)-ponctué \(U\) de \(X\) tel que \(Z'^{p+1}(E\,|\,U)\) (resp. \(Z'^p(E\,|\,U)\)) soit libre de type fini, et l'on gagne.
+
+\textbf{Corollaire 5.6} (EGA III 7.6.9). Soient \(X\) un schéma, \(p\in\mathbb Z\), et \(E\in\Ob D^{-}(X)\) un complexe \((p-1)\)-pseudo-cohérent. Alors :
+\begin{enumerate}[label=(\roman*)]
+\item Pour \(x\in X\), \(H^p(E\otimes_X^{\mathrm L}k(x))\) est de rang fini sur \(k(x)\) et la fonction
+\[
+ x\longmapsto\operatorname{rg}_{k(x)}H^p(E\otimes_X^{\mathrm L}k(x))
+\]
+est constructible et semi-continue supérieurement sur \(X\).
+\item Supposons \(X\) quasi-séparé et \(E\) à cohomologie quasi-cohérente et localement bornée. Si le foncteur \(M\mapsto H^p(E\otimes^{\mathrm L}M)\) est exact sur la catégorie des \(\mathcal O_X\)-Modules quasi-cohérents, la fonction \(x\mapsto\operatorname{rg}_{k(x)}H^p(E\otimes_X^{\mathrm L}k(x))\) est localement constante et \(H^p(E)\) est localement libre de type fini. Inversement, si \(X\) est localement noethérien et réduit et si la fonction précédente est localement constante, le foncteur \(M\mapsto H^p(E\otimes^{\mathrm L}M)\) est exact sur la catégorie des \(\mathcal O_X\)-Modules quasi-cohérents.
+\end{enumerate}
+
+\emph{Preuve.} Si \(X\) est intègre de point générique \(x\), le foncteur \(M\mapsto H^p(E_x\otimes_{\mathcal O_{X,x}}^{\mathrm L}M)\) est exact sur la catégorie des \(\mathcal O_{X,x}\)-modules (puisque \(\mathcal O_{X,x}=k(x)\)), donc (5.5 (iii)), il existe un voisinage ouvert \(U\) de \(x\) tel que le foncteur \(M\mapsto H^p(E\,|\,U\otimes^{\mathrm L}M)\) soit exact sur \(\Mod(U)\), et, sur \(U\), la fonction \(y\mapsto\operatorname{rg}_{k(y)}H^p(E\otimes_X^{\mathrm L}k(y))\) est
+%%%%%%%%%%  scan idx 284  |  folio 271  %%%%%%%%%%
+localement constan

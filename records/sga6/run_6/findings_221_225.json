@@ -1,0 +1,386 @@
+[
+ {
+  "page": 221,
+  "where": "start of page",
+  "scan": "p. 221 begins with item [14] 'Lang, S., Introduction to differentiable manifolds,' (both scans)",
+  "tex": "the bare '\\item' that makes the label [14] is the last line of page_220.tex, above the folio-221 marker; page_221.tex begins 'Lang, S.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "ALREADY DONE, no action: reported by findings_216_220.json (p. 220, end of page) and applied; the live main.tex has the folio-221 marker above that '\\item' in both layers (checked against main.tex of 20:34). Do not run python -I move_marker.py 6 221 '\\item' --before again: it would now put the marker above '\\item Kiehl'."
+ },
+ {
+  "page": 221,
+  "where": "[15] Łojasiewicz",
+  "scan": "Łojasiewicz: the initial L is crossed by a stroke (Polish Ł), both scans (crops_221_225/p221_loj.png, w221_loj.png)",
+  "tex": "Lojasiewicz",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "Lojasiewicz",
+   "new": "\\L{}ojasiewicz"
+  },
+  "note": ""
+ },
+ {
+  "page": 221,
+  "where": "[16] Palais",
+  "scan": "Princeton 1963-64: typed hyphen (both scans)",
+  "tex": "Princeton 1963--64",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "1963--64",
+   "new": "1963-64"
+  },
+  "note": "En dash added by the transcription, as the bibliography dashes fixed on p. 220 (findings_216_220)."
+ },
+ {
+  "page": 222,
+  "where": "exposé heading and title",
+  "scan": "EXPOSE III in typed capitals with a single underline and no full stop, on its own line; then the title CONDITIONS DE FINITUDE RELATIVES in capitals with a double underline (both scans)",
+  "tex": "\\section*{Exposé III. Conditions de finitude relatives}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\section*{Exposé III. Conditions de finitude relatives}",
+   "new": "\\section*{\\underline{EXPOSÉ III}\\\\[3pt] \\underline{\\underline{CONDITIONS DE FINITUDE RELATIVES}}}"
+  },
+  "note": "Same form as the applied Exposé II heading (main.tex: \\section*{\\underline{Exposé II}\\\\[3pt] \\underline{\\underline{EXISTENCE DE RÉSOLUTIONS GLOBALES}}}); here the typescript types EXPOSE in capitals (É keeps the TeX's accent, rule for typed capitals)."
+ },
+ {
+  "page": 222,
+  "where": "author line",
+  "scan": "par L. ILLUSIE: the name in capitals, the whole line underlined (both scans)",
+  "tex": "par L. Illusie",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "par L. Illusie",
+   "new": "\\underline{par L. ILLUSIE}"
+  },
+  "note": "As the applied author lines of pp. 78 and 160."
+ },
+ {
+  "page": 222,
+  "where": "Théorème 1.1 (pattern also in Lemmes 1.1.1, 1.1.3, 1.1.4, pp. 223-225)",
+  "scan": "the statements are underlined word group by word group: Th. 1.1 'Soit', 'Pour chaque morphisme localement de type fini de schémas', 'il existe une et une seule sous-catégorie pleine', 'de', 'telle que les conditions ci-dessous soient satisfaites', items (i)-(iii) likewise; Lemme 1.1.1 'Soit', 'une immersion fermée de schémas telle que', 'soit pseudo-cohérent', ...; Lemme 1.1.3 'Soit un carré cartésien de schémas', ... (both scans)",
+  "tex": "the statements in roman: in Exposé III (main.tex lines 5352-6565) statement text has no \\underline and one \\emph only (Soit, p. 227)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé III follows the Exposé II pattern of GLOBAL_ISSUES 82 (statements in roman where the typescript underlines their word groups). Not itemized: for the same scripted per-exposé decision. Bold labels and \\emph{Démonstration.}/\\emph{Preuve.} are the accepted forms."
+ },
+ {
+  "page": 222,
+  "where": "Théorème 1.1 (ii), 'Si E ∈ ob D(X)'",
+  "scan": "ob in small letters (both scans; crops_221_225/p222_ii_ob.png); items (i) and (iii) print Ob with a capital (p222_i_Ob.png, p222_iii_Ob.png)",
+  "tex": "\\Ob, which Exposé III's \\renewcommand (page_221.tex) prints as Ob",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Si \\(E\\in\\Ob D(X)\\)",
+   "new": "\\item Si \\(E\\in\\ob D(X)\\)"
+  },
+  "note": "\\ob (= \\operatorname{ob}) is defined in the file (\\providecommand, main.tex line 1521). See the message on \\Ob in Exposé III."
+ },
+ {
+  "page": 222,
+  "where": "Théorème 1.1 (ii), 'tel que i^*_α(E) ∈ ob D(fi_α)_{n-coh}'",
+  "scan": "ob in small letters (both scans)",
+  "tex": "\\Ob (prints Ob)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ob D(fi_\\alpha)",
+   "new": "\\ob D(fi_\\alpha)"
+  },
+  "note": ""
+ },
+ {
+  "page": 222,
+  "where": "Théorème 1.1 (ii), 'alors E ∈ ob D( f)_{n-coh}'",
+  "scan": "ob in small letters (both scans; crops_221_225/p222_ii_end.png)",
+  "tex": "\\Ob (prints Ob)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "alors \\(E\\in\\Ob D(f)",
+   "new": "alors \\(E\\in\\ob D(f)"
+  },
+  "note": ""
+ },
+ {
+  "page": 222,
+  "where": "Théorème 1.1 (iii), call of footnote (2)",
+  "scan": "the call (²) stands in the display, after 'f_*(E) ∈ D(Y)_{n-coh}' and before the display's final full stop; 'alors on a' has no call (both scans)",
+  "tex": "\\footnote{...} after 'alors on a', before the display",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "on a\\footnote{\\(D(Y)_{n\\text{-}\\coh}\\) = sous-catégorie pleine de \\(D(Y)\\) formée des objets \\(n\\)-pseudo-cohérents (I~2.15).}\n\\[\n  E\\in\\Ob D(h)_{n\\text{-}\\coh}\n  \\quad\\Longleftrightarrow\\quad\n  f_*(E)\\in D(Y)_{n\\text{-}\\coh}.\n\\]",
+   "new": "on a\n\\[\n  E\\in\\Ob D(h)_{n\\text{-}\\coh}\n  \\quad\\Longleftrightarrow\\quad\n  f_*(E)\\in D(Y)_{n\\text{-}\\coh}\\qquad\\mbox{\\footnotemark}\\ .\n\\]\n\\footnotetext{\\(D(Y)_{n\\text{-}\\coh}\\) = sous-catégorie pleine de \\(D(Y)\\) formée des objets \\(n\\)-pseudo-cohérents (I~2.15).}"
+  },
+  "note": "One edit: takes the footnote off 'on a' and sets its call in the display with \\footnotemark and \\footnotetext after the display, as the file does for a call in a display (Exposé 0), but in \\mbox: the file's \\text{\\footnotemark} steps the counter four times (amsmath \\text sets its argument in all four math styles), so the text got number 5 in a test compile; \\mbox gives 2. Footnote text unchanged."
+ },
+ {
+  "page": 222,
+  "where": "Démonstration, 'pour chaque α∈A, fi_α se factorise en'",
+  "scan": "pour chaque α∈A, (both scans)",
+  "tex": "pour chaque \\(\\alpha\\),",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "pour chaque \\(\\alpha\\),",
+   "new": "pour chaque \\(\\alpha\\in A\\),"
+  },
+  "note": ""
+ },
+ {
+  "page": 222,
+  "where": "Démonstration, 'tels que i'_{α*}i_α^*(E) ∈ ob D(Y_α)_{n-coh}'",
+  "scan": "ob in small letters (both scans; crops_221_225/p222_proof_ob.png)",
+  "tex": "\\Ob (prints Ob)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\in \\Ob D(Y_\\alpha)",
+   "new": "\\in \\ob D(Y_\\alpha)"
+  },
+  "note": ""
+ },
+ {
+  "page": 222,
+  "where": "Démonstration, first sentence",
+  "scan": "L'unicité: 'unicité' underlined (both scans)",
+  "tex": "L'unicité (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "L'unicité est",
+   "new": "L'\\emph{unicité} est"
+  },
+  "note": "\\emph is the file's command for underlined words in Exposé III (\\emph{Preuve.}, \\emph{Soit} p. 227)."
+ },
+ {
+  "page": 223,
+  "where": "start of page",
+  "scan": "p. 223 begins 'est bien déterminée (puisque c'est une sous-catégorie pleine de D(X))'; p. 222 ends '; donc D(f)_{n-coh}' (both scans)",
+  "tex": "'est' is the last word of page_222.tex ('donc \\(D(f)_{n\\text{-}\\coh}\\) est'); page_223.tex begins 'bien déterminée'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 223 really begins with 'est'. Move the folio-223 marker before it: python -I move_marker.py 6 223 \"est\" --before (simulated on both layers of the live main.tex: '... donc \\(D(f)_{n\\text{-}\\coh}\\)', the marker, 'est', 'bien déterminée')."
+ },
+ {
+  "page": 223,
+  "where": "Lemme 1.1.1, 'et soit E ∈ ob D(X)'",
+  "scan": "ob in small letters (both scans)",
+  "tex": "\\Ob (prints Ob)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(E\\in\\Ob D(X)\\)",
+   "new": "\\(E\\in\\ob D(X)\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 223,
+  "where": "proof of Lemme 1.1.1, 'on a donc un triangle distingué'",
+  "scan": "a drawn triangle: E'' above, E' → E below, the arrows E → E'' (↖) and E'' → E' (↙), the last with a small transverse tick (the degree-one arrow); no E'[1] (both scans; crops_221_225/w223_tri1.png, w223_tick1.png)",
+  "tex": "a linear display E'\\longrightarrow E\\longrightarrow E''\\longrightarrow E'[1]",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "E'\\longrightarrow E\\longrightarrow E''\\longrightarrow E'[1]",
+   "new": "\\begin{tikzcd}\n& E'' \\arrow[dl,\"|\" marking] & \\\\\nE' \\arrow[rr] & & E \\arrow[ul]\n\\end{tikzcd}"
+  },
+  "note": "tikzcd as the Exposé I triangles; the tick as a \"|\" marking (tikz-cd style), where Exposé I prints +1. Exposé III writes the print's drawn triangles linearly with an added [1] term: see the message."
+ },
+ {
+  "page": 223,
+  "where": "proof of Lemme 1.1.1, 'on obtient un triangle distingué'",
+  "scan": "the same drawn triangle: i_*(E'') above, i_*(E') → i_*(E) below, the ticked arrow i_*(E'') → i_*(E') (both scans; crops_221_225/w223_tri2.png, w223_tick2.png)",
+  "tex": "a linear display i_*(E')\\longrightarrow i_*(E)\\longrightarrow i_*(E'')\\longrightarrow i_*(E')[1]",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "i_*(E')\\longrightarrow i_*(E)\\longrightarrow i_*(E'')\\longrightarrow i_*(E')[1]",
+   "new": "\\begin{tikzcd}\n& i_*(E'') \\arrow[dl,\"|\" marking] & \\\\\ni_*(E') \\arrow[rr] & & i_*(E) \\arrow[ul]\n\\end{tikzcd}"
+  },
+  "note": "Independent of the next entry (disjoint texts)."
+ },
+ {
+  "page": 223,
+  "where": "after the second triangle, '. D'après la première partie de la démonstration'",
+  "scan": "a full stop after the diagram, then a new sentence 'D'après la première partie' with a capital D; no 'et,' (both scans; crops_221_225/w223_tri2.png)",
+  "tex": "no full stop after the display, then 'et, d'après la première partie'",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\\]\net, d'après la première",
+   "new": "\\ .\n\\]\nD'après la première"
+  },
+  "note": ""
+ },
+ {
+  "page": 223,
+  "where": "'que H^n(i_*(E'') est de type fini'",
+  "scan": "H^n(i_*(E\") est de type fini: one closing parenthesis missing (both scans; crops_221_225/w223_Hn.png)",
+  "tex": "\\(H^n(i_*(E'')\\) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\(H^n(i_*(E''))\\)",
+  "note": "The TeX keeps the printed reading; the next sentence prints H^n(i_*(E\")) with both parentheses."
+ },
+ {
+  "page": 223,
+  "where": "'Comme H^n(i_*(E'')) ≃ i_*H^n(E'')'",
+  "scan": "≃: a typed tilde over a straight line, no arrowhead (both scans; crops_221_225/p223_iso.png, w223_iso.png)",
+  "tex": "\\xrightarrow{\\sim}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim}i_*H^n",
+   "new": "\\simeq i_*H^n"
+  },
+  "note": "As the headless ≃ fixed on pp. 110, 118, 150, 153."
+ },
+ {
+  "page": 223,
+  "where": "last line, '(et indépendant de l'hypothèse sur i_*(O_X))'",
+  "scan": "ī_*(O_X): a short typed bar over the i (both scans; crops_221_225/p223_ibar.png, w223_ibar.png)",
+  "tex": "\\(i_*(\\mathcal O_X)\\) (without the bar: silent correction)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": {
+   "old": "l'hypothèse sur \\(i_*",
+   "new": "l'hypothèse sur \\(\\bar i_*"
+  },
+  "corrected": "\\(i_*(\\mathcal O_X)\\)",
+  "note": "No ī is defined; the hypothesis meant is the one on i_*(O_X) of Lemme 1.1.1. The bar stands in both independent scans, so it is in the print (a stray typed stroke, not the scan). If the volume treats such strokes as marks rather than text, drop this entry."
+ },
+ {
+  "page": 224,
+  "where": "Remarque 1.1.2, 'au cas où i est une immersion régulière'",
+  "scan": "'immersion régulière' underlined (both scans)",
+  "tex": "une immersion régulière (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "une immersion régulière (VII",
+   "new": "une \\emph{immersion régulière} (VII"
+  },
+  "note": ""
+ },
+ {
+  "page": 224,
+  "where": "Remarque 1.1.2, 'grâce au complexe de Kozsul'",
+  "scan": "Kozsul (both scans)",
+  "tex": "Kozsul (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Koszul",
+  "note": "The TeX keeps the printed reading."
+ },
+ {
+  "page": 224,
+  "where": "Lemme 1.1.3, 'Alors la flèche canonique de changement de base'",
+  "scan": "no item label (i): 'Alors' ends the line, 'la flèche canonique' begins the next after a blank of about three typewriter cells, and the statement goes on with '(ii) Posons E' = f*(E)' (both scans; crops_221_225/p224_li.png)",
+  "tex": "Alors la flèche canonique ... est un isomorphisme. (ii) Posons ... (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Alors (i) la flèche canonique de changement de base",
+  "note": "The typist left the room for '(i)' empty. The TeX keeps the printed reading."
+ },
+ {
+  "page": 225,
+  "where": "start of page",
+  "scan": "p. 225 begins 'Lemme 1.1.4. Soit un diagramme commutatif de schémas'; p. 224 ends with 'Preuve. L'assertion se vérifie trivialement sur les fibres.' and blank space (both scans)",
+  "tex": "\\textbf{Lemme 1.1.4.} is the last line of page_224.tex (under the folio-224 marker); page_225.tex begins 'Soit un diagramme'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 225 really begins with the label (a heading at the top of the page). Move the folio-225 marker above it: python -I move_marker.py 6 225 '\\textbf{Lemme 1.1.4.}' --before (single quotes; simulated on both layers of the live main.tex)."
+ },
+ {
+  "page": 225,
+  "where": "Lemme 1.1.4, diagram, the arrows i' and i''",
+  "scan": "X' ↩ X ↪ X'': both closed immersions are hooked arrows, the hooks at X (both scans; crops_221_225/w225_lem.png)",
+  "tex": "plain arrows \\arrow[l,\"i'\"'] and \\arrow[r,\"i''\"]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "X \\arrow[l,\"i'\"'] \\arrow[r,\"i''\"]",
+   "new": "X \\arrow[l,hook',\"i'\"'] \\arrow[r,hook,\"i''\"]"
+  },
+  "note": "The file's form for hooked arrows (hook, hook'), as on p. 227."
+ },
+ {
+  "page": 225,
+  "where": "Lemme 1.1.4, 'et soit E ∈ ob D(X)'",
+  "scan": "ob in small letters (both scans)",
+  "tex": "\\Ob (prints Ob)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(E\\in\\Ob D(X)\\)",
+   "new": "\\(E\\in\\ob D(X)\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 225,
+  "where": "Lemme 1.1.4, display 'i'_*(E) n-pseudo-cohérent ⟺ i''_* n-pseudo-cohérent'",
+  "scan": "i\"_* without (E) on the right side (both scans)",
+  "tex": "i''_*\\ n\\text{-pseudo-cohérent} (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "i''_*(E)\\ n\\text{-pseudo-cohérent}",
+  "note": "The TeX keeps the printed reading; the left side has i'_*(E)."
+ },
+ {
+  "page": 225,
+  "where": "proof, triangle (*), the arrows i and j",
+  "scan": "X ↪ Z (j) and the oblique X ↪ Y (i) are hooked arrows (both scans; crops_221_225/w225_star.png)",
+  "tex": "plain arrows \\arrow[r,\"j\"'] \\arrow[ur,\"i\"]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "X \\arrow[r,\"j\"'] \\arrow[ur,\"i\"]",
+   "new": "X \\arrow[r,hook,\"j\"'] \\arrow[ur,hook,\"i\"]"
+  },
+  "note": ""
+ },
+ {
+  "page": 225,
+  "where": "proof, factorisation diagram, the arrow i'",
+  "scan": "Y ↪ Z[T_1,...,T_r]: a hooked arrow (both scans; crops_221_225/w225_fact.png)",
+  "tex": "plain arrow \\arrow[r,\"i'\"]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "Y \\arrow[r,\"i'\"]",
+   "new": "Y \\arrow[r,hook,\"i'\"]"
+  },
+  "note": ""
+ },
+ {
+  "page": 225,
+  "where": "proof, factorisation diagram, end",
+  "scan": "a comma after the diagram, level with Z (both scans)",
+  "tex": "no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Z&\n\\end{tikzcd}",
+   "new": "Z{,}&\n\\end{tikzcd}"
+  },
+  "note": "As Y{,} and Z{,} in the two diagrams before it."
+ }
+]

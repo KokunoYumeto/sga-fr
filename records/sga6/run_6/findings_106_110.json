@@ -1,0 +1,472 @@
+[
+ {
+  "page": 106,
+  "where": "line 2, '(2.10.b)) F'_{≤n} ) (resp. F\"_{≤n}) est n-pseudo-cohérent'",
+  "scan": "a closing parenthesis after F'_{≤n} that closes nothing: '(2.10.b)) F'_{≤n} ) (resp. F\"_{≤n})' (both scans; crops_106_110/p106_paren.png)",
+  "tex": "(2.10.b)) \\(F'_{\\leq n}\\) (resp.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(2.10.b)) \\(F'_{\\leq n}\\) (resp.",
+   "new": "(2.10.b)) \\(F'_{\\leq n}\\)) (resp."
+  },
+  "corrected": "(2.10.b)) \\(F'_{\\leq n}\\) (resp.",
+  "note": "Stray parenthesis of the typescript ('(2.10.b))' already closes the reference); the TeX silently drops it."
+ },
+ {
+  "page": 106,
+  "where": "Proposition 2.13, statement, 'Soit (S',C',C'_o) un trio ... correspondant à un foncteur sous-jacent f^{-1} : S → S', et soit'",
+  "scan": "underlined by word groups: 'Soit', 'un trio satisfaisant aux mêmes hypothèses', 'que', 'Soit', 'un morphisme de sites', 'correspondant à un foncteur sous-jacent', 'et soit' (both scans)",
+  "tex": "no emphasis: the whole statement of Proposition 2.13 is in roman (Proposition 2.12 and Corollaire 2.14 have \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\((S',\\mathcal C',\\mathcal C'_0)\\) un trio satisfaisant aux mêmes hypothèses (2.0) que \\((S,\\mathcal C,\\mathcal C_0)\\). Soit \\(f:S'\\to S\\) un morphisme de sites ([G] I 1.4), correspondant à un foncteur sous-jacent \\(f^{-1}:S\\to S'\\), et soit",
+   "new": "\\emph{Soit \\((S',\\mathcal C',\\mathcal C'_0)\\) un trio satisfaisant aux mêmes hypothèses (2.0) que \\((S,\\mathcal C,\\mathcal C_0)\\). Soit \\(f:S'\\to S\\) un morphisme de sites ([G] I 1.4), correspondant à un foncteur sous-jacent \\(f^{-1}:S\\to S'\\), et soit}"
+  },
+  "note": "First group of the statement (block \\emph, the volume decision). The formula 'u : D*(C) → D*(C') (* = +,-,∅)' that follows is not underlined; the next group begins at 'un foncteur cartésien'. Independent of the display and ∅ entries below."
+ },
+ {
+  "page": 106,
+  "where": "Proposition 2.13, statement, 'un foncteur cartésien au-dessus de f, i.e. ... soient vérifiées pour tout S ∈ ob S :'",
+  "scan": "underlined by word groups: 'un foncteur cartésien au-dessus de', 'un', 'S-foncteur cartésien', 'On suppose que', 'est exact', 'sur chaque fibre et qu'il existe', 'tels que les conditions suivantes', 'soient vérifiées pour tout'; the colon is not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "un foncteur cartésien au-dessus de \\(f\\), i.e. un \\(S\\)-foncteur cartésien \\(\\Dpx^*(\\mathcal C')\\times_{S'}S\\longleftarrow\\Dpx^*(\\mathcal C)\\). On suppose que \\(u\\) est exact sur chaque fibre et qu'il existe \\(a,b\\in\\mathbb Z\\) tels que les conditions suivantes soient vérifiées pour tout \\(S\\in\\Ob S\\)",
+   "new": "\\emph{un foncteur cartésien au-dessus de \\(f\\), i.e. un \\(S\\)-foncteur cartésien \\(\\Dpx^*(\\mathcal C')\\times_{S'}S\\longleftarrow\\Dpx^*(\\mathcal C)\\). On suppose que \\(u\\) est exact sur chaque fibre et qu'il existe \\(a,b\\in\\mathbb Z\\) tels que les conditions suivantes soient vérifiées pour tout \\(S\\in\\Ob S\\)}"
+  },
+  "note": "Second group of the opening paragraph; the colon stays outside, as in Proposition 2.7 ('Alors} :')."
+ },
+ {
+  "page": 106,
+  "where": "Proposition 2.13, 'et soit u : D*(C) → D*(C') (* = +,-,∅) un foncteur cartésien'",
+  "scan": "the formula stands at the left margin as the start of a text line, which goes on 'un foncteur cartésien au-dessus de f, i.e.' (both scans): it is part of the sentence, not a display",
+  "tex": "a display \\[ u:\\Dpx^*(\\mathcal C)\\longrightarrow \\Dpx^*(\\mathcal C')\\qquad (*=+,-,b) \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\[\n  u:\\Dpx^*(\\mathcal C)\\longrightarrow \\Dpx^*(\\mathcal C')\\qquad (*=+,-,b)\n\\]",
+   "new": "\\(u:\\Dpx^*(\\mathcal C)\\longrightarrow \\Dpx^*(\\mathcal C')\\) \\((*=+,-,b)\\)"
+  },
+  "note": "The print sets the formula inline; the TeX makes it a display (same kind of fix as pp. 21, 34, 42, 80). Apply before the ∅ entry below (this old contains (*=+,-,b); JSON order)."
+ },
+ {
+  "page": 106,
+  "where": "Proposition 2.13, '(* = +,-,∅)'",
+  "scan": "the third value is the typed empty-set sign, an o crossed by a long slash, with no upright stem (both scans; crops_106_110/p106_b.png, w106_b.png); the typed b of '(* = +, -, b)' on p. 85 has its upright stem (crops_106_110/p085_b_compare.png); the same sign as K^{-,∅} on p. 100",
+  "tex": "(*=+,-,b)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(*=+,-,b)",
+   "new": "(*=+,-,\\varnothing)"
+  },
+  "note": "\\varnothing is the file's form of this sign (p. 100). After the display entry above, or alone."
+ },
+ {
+  "page": 106,
+  "where": "Proposition 2.13 (i)",
+  "scan": "underlined: 'si', 'est', '-pseudo-cohérent', 'resp.', '-pseudo-cohérent'; the label (i) is not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "si \\(E\\in\\Ob\\mathcal C_{0,S}\\), \\(u(E)\\) est \\(a\\)-\\(\\mathcal C'_0\\)-pseudo-cohérent (resp. \\(\\mathcal C'_0\\)-pseudo-cohérent)",
+   "new": "\\emph{si \\(E\\in\\Ob\\mathcal C_{0,S}\\), \\(u(E)\\) est \\(a\\)-\\(\\mathcal C'_0\\)-pseudo-cohérent (resp. \\(\\mathcal C'_0\\)-pseudo-cohérent)}"
+  },
+  "note": "Apply before the C_{0S} entry below (this old contains \\mathcal C_{0,S}; JSON order)."
+ },
+ {
+  "page": 106,
+  "where": "Proposition 2.13 (i), 'si E ∈ ob C_oS , u(E)'",
+  "scan": "C̲ with the indices o and S side by side, no comma (both scans; crops_106_110/p106_C0S.png)",
+  "tex": "\\mathcal C_{0,S}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ob\\mathcal C_{0,S}",
+   "new": "\\Ob\\mathcal C_{0S}"
+  },
+  "note": "The TeX adds a comma between the indices (as fixed on pp. 85-100)."
+ },
+ {
+  "page": 106,
+  "where": "Proposition 2.13, end of (i), '(resp. C'_o-pseudo-cohérent)'",
+  "scan": "no punctuation after the closing parenthesis (both scans; crops_106_110/p106_i_end.png)",
+  "tex": "(resp. \\(\\mathcal C'_0\\)-pseudo-cohérent);",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": ";\n\n(ii)",
+   "new": "\n\n(ii)"
+  },
+  "note": "The TeX adds a semicolon at the end of item (i). Independent of the (i) and (ii) underline entries."
+ },
+ {
+  "page": 106,
+  "where": "Proposition 2.13 (ii)",
+  "scan": "underlined: 'si', 'est acyclique en degré', 'est acyclique en', 'degré'; the label (ii) is not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "si \\(F\\in\\Ob\\Dpx^*(\\mathcal C_S)\\) est acyclique en degré \\(>0\\), \\(u(F)\\) est acyclique en degré \\(>b\\).",
+   "new": "\\emph{si \\(F\\in\\Ob\\Dpx^*(\\mathcal C_S)\\) est acyclique en degré \\(>0\\), \\(u(F)\\) est acyclique en degré \\(>b\\).}"
+  },
+  "note": ""
+ },
+ {
+  "page": 106,
+  "where": "Proposition 2.13, 'Alors, si F ∈ ob D*(C_S) est m-pseudo-cohérent ... et acyclique en degré > n+b.'",
+  "scan": "underlined by word groups: 'Alors,', 'si', 'est m-pseudo-cohérent rel.', 'et acyclique', 'en degré', 'où', 'est', 'pseudo-', 'cohérent', 'rel.', 'resp', 'pseudo-cohérent', 'et acyclique en degré' (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors, si \\(F\\in\\Ob\\Dpx^*(\\mathcal C_S)\\) est \\(m\\)-pseudo-cohérent rel. à \\(\\mathcal C_0\\) et acyclique en degré \\(>n\\), \\(u(F)\\in\\Ob\\Dpx^*(\\mathcal C'_{S'})\\) (où \\(S'=f^{-1}(S)\\)) est \\(\\sup(m+b,n+a)\\)-pseudo-cohérent (rel. à \\(\\mathcal C'_0\\)) (resp. \\((m+b)\\)-pseudo-cohérent) et acyclique en degré \\(>n+b\\).",
+   "new": "\\emph{Alors, si \\(F\\in\\Ob\\Dpx^*(\\mathcal C_S)\\) est \\(m\\)-pseudo-cohérent rel. à \\(\\mathcal C_0\\) et acyclique en degré \\(>n\\), \\(u(F)\\in\\Ob\\Dpx^*(\\mathcal C'_{S'})\\) (où \\(S'=f^{-1}(S)\\)) est \\(\\sup(m+b,n+a)\\)-pseudo-cohérent (rel. à \\(\\mathcal C'_0\\)) (resp. \\((m+b)\\)-pseudo-cohérent) et acyclique en degré \\(>n+b\\).}"
+  },
+  "note": ""
+ },
+ {
+  "page": 106,
+  "where": "Proposition 2.13, 'En particulier, dans le cas respé, ... (rel. à C'_o).'",
+  "scan": "underlined: 'En particulier,', 'dans le cas respé,', 'si', 'est pseudo-', 'cohérent', 'est pseudo-cohérent', 'rel.', 'à'; the parenthesis '(rel. à C_o),' after the first 'pseudo-cohérent' is not underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "En particulier, dans le cas respé, si \\(F\\in\\Ob\\Dpx^*(\\mathcal C_S)\\) est pseudo-cohérent (rel. à \\(\\mathcal C_0\\)), \\(u(F)\\) est pseudo-cohérent (rel. à \\(\\mathcal C'_0\\)).",
+   "new": "\\emph{En particulier, dans le cas respé, si \\(F\\in\\Ob\\Dpx^*(\\mathcal C_S)\\) est pseudo-cohérent} (rel. à \\(\\mathcal C_0\\)), \\emph{\\(u(F)\\) est pseudo-cohérent (rel. à \\(\\mathcal C'_0\\)).}"
+  },
+  "note": "The word group '(rel. à C_o),' that the typist left out of the underline stays outside the emphasis (as '(à isomorphisme près)', p. 43); the final '(rel. à C'_o)' is underlined."
+ },
+ {
+  "page": 106,
+  "where": "Preuve, 'Montrons d'abord que si F ∈ ob D*(C_S) est strictement parfait'",
+  "scan": "no comma after 'que' (both scans)",
+  "tex": "Montrons d'abord que, si",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d'abord que, si",
+   "new": "d'abord que si"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 106,
+  "where": "pp. 106-110 throughout: the site S̲",
+  "scan": "S underlined where it names the site, plain where it names the object S: p. 106 'pour tout S ∈ ob S̲', 'f : S̲' → S̲'; p. 108 'Soient S ∈ ob S̲'; p. 109 'On notera S l'objet final de S̲'; p. 110 's : S̲ → M_n' (both scans)",
+  "tex": "plain \\(S\\): '\\(S\\in\\Ob S\\)', '\\(f:S'\\to S\\)', 'On notera \\(S\\) l'objet final de \\(S\\)', '\\(s:S\\longrightarrow M_n\\)'",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, as reported for pp. 84-100: one decision for the exposé, not a page fix."
+ },
+ {
+  "page": 107,
+  "where": "start of page",
+  "scan": "p. 107 begins 'on a F = F^p[-p] pour un p ≤ n, donc u(F) est (p+a)-C'_o-pseudo-cohérent'; p. 106 ends '... tels que F^i ≠ 0. Si N = 1,' (both scans)",
+  "tex": "'on a \\(F=F^p[-p]\\)' ends the last line of page_106.tex (under the folio-106 marker); page_107.tex begins 'pour un \\(p\\leq n\\)'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 107 really begins with 'on a \\(F=F^p[-p]\\)'. python -I move_marker.py 6 107 'on a \\(F=F^p[-p]\\)' --before (single quotes; the only occurrence; simulated on both layers: '... Si \\(N=1\\), ', the marker, 'on a \\(F=F^p[-p]\\)', 'pour un \\(p\\leq n\\), ...', which still renders 'Si N = 1, on a F = F^p[-p] pour un')."
+ },
+ {
+  "page": 107,
+  "where": "first triangle (u(F') → u(F) → u(F\") --+1--> u(F')), end",
+  "scan": "a comma to the right of the triangle, on the line of u(F) (both scans)",
+  "tex": "tikzcd without punctuation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "u(F) \\arrow[ul]\n\\end{tikzcd}\n\\]\non déduit",
+   "new": "u(F) \\arrow[ul] & ,\n\\end{tikzcd}\n\\]\non déduit"
+  },
+  "note": "Set in a cell of its own, as on pp. 93-99."
+ },
+ {
+  "page": 107,
+  "where": "second triangle, end",
+  "scan": "a comma to the right of the triangle, on the line of u(F) (both scans)",
+  "tex": "tikzcd without punctuation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "u(F) \\arrow[ul]\n\\end{tikzcd}\n\\]\n\\(u(F'')\\)",
+   "new": "u(F) \\arrow[ul] & ,\n\\end{tikzcd}\n\\]\n\\(u(F'')\\)"
+  },
+  "note": "As the first triangle."
+ },
+ {
+  "page": 107,
+  "where": "Corollaire 2.14, end of the opening: 'Alors :' (printed at the top of p. 108)",
+  "scan": "'Alors' underlined, the colon not (p. 108, first line; both scans)",
+  "tex": "\\emph{Soit ... est \\(\\mathcal C_0\\)-pseudo-cohérent. Alors :}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "pseudo-cohérent. Alors :}",
+   "new": "pseudo-cohérent.}\n\\emph{Alors} :"
+  },
+  "note": "Closes the statement's group after 'pseudo-cohérent.' and gives 'Alors' a group of its own (prints the same, the colon now upright as printed), so that the folio-108 marker can stand between the two groups (marker entry of p. 108). Given here, where the text stands now."
+ },
+ {
+  "page": 108,
+  "where": "start of page",
+  "scan": "p. 108 begins 'Alors :' (Corollaire 2.14), then '(i) C_1 est localement quasi-relevable dans C'; p. 107 ends '... On suppose que tout objet de C_1 est C_o-pseudo-cohérent.' (both scans)",
+  "tex": "'Alors :}' ends the last line of page_107.tex (under the folio-107 marker); page_108.tex begins '\\emph{(i) \\(\\mathcal C_1\\)'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 108 really begins with 'Alors :'. After the p. 107 entry that splits the group ('pseudo-cohérent.}' / '\\emph{Alors} :'): python -I move_marker.py 6 108 '\\emph{Alors} :' --before (simulated on both layers: '... \\(\\mathcal C_0\\)-pseudo-cohérent.}', the marker, '\\emph{Alors} :', blank line, '\\emph{(i) ...'). Without that edit: python -I move_marker.py 6 108 'Alors :}' --before (the marker then stands inside the \\emph group; it compiles)."
+ },
+ {
+  "page": 108,
+  "where": "Corollaire 2.14 (i), label",
+  "scan": "the label (i) is not underlined; the underline begins at 'est localement' (both scans)",
+  "tex": "\\emph{(i) \\(\\mathcal C_1\\) est ...}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\emph{(i) \\(\\mathcal C_1\\)",
+   "new": "(i) \\emph{\\(\\mathcal C_1\\)"
+  },
+  "note": "The TeX sets the item label in italics inside the statement's \\emph; the file's other items keep the label outside ('a) \\emph{...}', p. 100). Same on p. 109 (Lemme 2.15.1)."
+ },
+ {
+  "page": 108,
+  "where": "Corollaire 2.14 (ii), label",
+  "scan": "the label (ii) is not underlined; the underline begins at 'Soient' (both scans)",
+  "tex": "\\emph{(ii) Soient ...}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\emph{(ii) Soient",
+   "new": "(ii) \\emph{Soient"
+  },
+  "note": "As (i)."
+ },
+ {
+  "page": 108,
+  "where": "Preuve (i), 'avec F ∈ ob C_1S . Comme F est'",
+  "scan": "C̲ with the indices 1 and S side by side, no comma (both scans; crops_106_110/p108_CS.png)",
+  "tex": "\\mathcal C_{1,S}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ob\\mathcal C_{1,S}",
+   "new": "\\Ob\\mathcal C_{1S}"
+  },
+  "note": "The TeX adds a comma between the indices (as fixed on pp. 85-100)."
+ },
+ {
+  "page": 108,
+  "where": "Preuve (i), 'avec E' ∈ ob C_oS . Utilisant'",
+  "scan": "C̲ with the indices o and S side by side, no comma (both scans; crops_106_110/p108_C0S.png)",
+  "tex": "\\mathcal C_{0,S}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ob\\mathcal C_{0,S}",
+   "new": "\\Ob\\mathcal C_{0S}"
+  },
+  "note": "As above."
+ },
+ {
+  "page": 108,
+  "where": "Preuve (ii), '... C'_o et C_o remplacées respectivement par C_o et C_1).'",
+  "scan": "a closing parenthesis after C_1 with no opening one: '(2.11.a)) ou (2.13) avec S' = S, ..., remplacées respectivement par C_o et C_1).' (both scans)",
+  "tex": "remplacées respectivement par \\(\\mathcal C_0\\) et \\(\\mathcal C_1\\)). (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "remplacées respectivement par \\(\\mathcal C_0\\) et \\(\\mathcal C_1\\).",
+  "note": "The parenthesis closes nothing ('(2.13)' is closed); either the stray ')' or a missing '(' before 'avec'. The TeX keeps the printed reading. Corrected reading given as the smaller change; '(2.13) (avec \\(S'=S\\), ...' would serve as well."
+ },
+ {
+  "page": 109,
+  "where": "Exemple 2.15, 'Un objet de D(S̲) sera dit n-pseudo-cohérent (resp. pseudo-cohérent)'",
+  "scan": "the defined terms 'n-pseudo-cohérent' and 'pseudo-cohérent' are underlined, '(resp.' is not (both scans)",
+  "tex": "sera dit \\(n\\)-pseudo-cohérent (resp. pseudo-cohérent), in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "sera dit \\(n\\)-pseudo-cohérent (resp. pseudo-cohérent)",
+   "new": "sera dit \\emph{\\(n\\)-pseudo-cohérent} (resp. \\emph{pseudo-cohérent})"
+  },
+  "note": ""
+ },
+ {
+  "page": 109,
+  "where": "Exemple 2.15, 'D(C)_{n-C_o-coh} (resp. D(C)_{C_o-coh}) (2.6) sera notée D(_A S̲)_{n-coh}'",
+  "scan": "the hyphens of the compound indices n-C_o-coh, C_o-coh, n-coh (the typed hyphen of 'n-pseudo-cohérent')",
+  "tex": "math-mode '-' in the subscripts: _{n-\\mathcal C_0-\\coh}, _{\\mathcal C_0-\\coh}, _{n-\\coh}",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\(\\Dpx(\\mathcal C)_{n-\\mathcal C_0-\\coh}\\) (resp. \\(\\Dpx(\\mathcal C)_{\\mathcal C_0-\\coh}\\)) (2.6) sera notée \\(\\Dpx({}_A S)_{n-\\coh}\\)",
+   "new": "\\(\\Dpx(\\mathcal C)_{n\\text{-}\\mathcal C_0\\text{-}\\coh}\\) (resp. \\(\\Dpx(\\mathcal C)_{\\mathcal C_0\\text{-}\\coh}\\)) (2.6) sera notée \\(\\Dpx({}_A S)_{n\\text{-}\\coh}\\)"
+  },
+  "note": "In math mode the hyphens print as minus signs with operator spacing (n − C_0 − coh); the file writes the same notation with \\text{-} on p. 100 ('\\Dpx(\\mathcal C)_{\\mathcal C_0\\text{-}n\\text{-coh}}'). These are the only three '-\\coh' of main.tex."
+ },
+ {
+  "page": 109,
+  "where": "Lemme 2.15.1 (i), label",
+  "scan": "the label (i) is not underlined (both scans)",
+  "tex": "\\emph{(i) \\(S\\) « a assez de points » ...}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\emph{(i) \\(S\\) «",
+   "new": "(i) \\emph{\\(S\\) «"
+  },
+  "note": "As Corollaire 2.14 (i), p. 108."
+ },
+ {
+  "page": 109,
+  "where": "Lemme 2.15.1 (i), 'les A_s-modules (à gauche) projectifs de type fini'",
+  "scan": "'(à gauche)' is not underlined, while '-modules' before it and 'projectifs de type fini sont libres' after it are (both scans)",
+  "tex": "inside the \\emph of (i)",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\(A_s\\)-modules (à gauche) projectifs",
+   "new": "\\(A_s\\)-modules} (à gauche) \\emph{projectifs"
+  },
+  "note": "A parenthetical word group the typist left out of the underline (as '(à isomorphisme près)', p. 43); in the conclusion of the lemma ('d'un A-module (à gauche) libre') the same words are underlined. Independent of the label entry."
+ },
+ {
+  "page": 109,
+  "where": "Lemme 2.15.1 (ii), label",
+  "scan": "the label (ii) is not underlined (both scans)",
+  "tex": "\\emph{(ii) \\((S,A)\\) est un topos ...}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\emph{(ii) \\((S,A)\\)",
+   "new": "(ii) \\emph{\\((S,A)\\)"
+  },
+  "note": "As (i)."
+ },
+ {
+  "page": 110,
+  "where": "display at the top of the page, 'Hom̲(E,F)_s → Hom(E_s,F_s)'",
+  "scan": "the first Hom is underlined (Hom̲, the sheaf Hom), the second is not (both scans)",
+  "tex": "\\Hom(E,F)_s\\longrightarrow\\Hom(E_s,F_s)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(E,F)_s",
+   "new": "\\underline{\\Hom}(E,F)_s"
+  },
+  "note": "\\underline{\\Hom} is the file's form (7 times)."
+ },
+ {
+  "page": 110,
+  "where": "'et si E_s ≃ F_s en un point s de S̲'",
+  "scan": "≃: a tilde over a single stroke, no arrowhead (both scans; crops_106_110/p110_qis1.png)",
+  "tex": "\\(E_s\\qis F_s\\) (\\qis = \\xrightarrow{\\sim}, an arrow)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(E_s\\qis F_s\\)",
+   "new": "\\(E_s\\simeq F_s\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 110,
+  "where": "'tel que E|U ≃ F|U'",
+  "scan": "≃ without arrowhead, as above (both scans; crops_106_110/p110_qis2.png)",
+  "tex": "\\(E|U\\qis F|U\\)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(E|U\\qis F|U\\)",
+   "new": "\\(E|U\\simeq F|U\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 110,
+  "where": "'Supposons (ii), Soit n ∈ ℕ'",
+  "scan": "a comma after '(ii)' (tailed, both scans; crops_106_110/p110_ii.png), then capital S",
+  "tex": "Supposons (ii). Soit",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Supposons (ii). Soit",
+   "new": "Supposons (ii), Soit"
+  },
+  "corrected": "Supposons (ii). Soit",
+  "note": "The capital S shows that a full stop was meant (cf. 'Supposons (i). On remarque', p. 109); the TeX silently corrects it."
+ },
+ {
+  "page": 110,
+  "where": "'le foncteur End̲_𝔻(𝔻^n)'",
+  "scan": "End underlined (End̲), the index 𝔻 not (both scans; crops_106_110/p110_End.png)",
+  "tex": "\\End_{\\mathbb D}(\\mathbb D^n)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\End_{\\mathbb D}",
+   "new": "\\underline{\\End}_{\\mathbb D}"
+  },
+  "note": "The internal End, written like Hom̲ at the top of the page."
+ },
+ {
+  "page": 110,
+  "where": "'muni de l'endomorphisme U_n de (O_{M_n})^n'",
+  "scan": "capital U_n (both scans), while the same endomorphism is u_n three times below: 's^*(u_n) = p', 'p = s'^* i^*(u_n)', 'l'image de i^*(u_n)'",
+  "tex": "l'endomorphisme \\(U_n\\) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "l'endomorphisme \\(u_n\\)",
+  "note": "The universal endomorphism is named u_n everywhere else. The TeX keeps the printed reading."
+ },
+ {
+  "page": 110,
+  "where": "'le sous-schéma fermé i : P_n → M_n'",
+  "scan": "a plain arrow, no hook (both scans; crops_106_110/p110_soit.png)",
+  "tex": "\\(i:P_n\\hookrightarrow M_n\\)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(i:P_n\\hookrightarrow M_n\\)",
+   "new": "\\(i:P_n\\to M_n\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 110,
+  "where": "'correspondant aux projecteurs en S̲ --s'--> P_n --i--> M_n.'",
+  "scan": "'... aux projecteurs en S̲ --s'--> P_n --i--> M_n. On a donc' ('se factorise ... en S → P_n → M_n'): one S, no comma and no 'soit' (both scans; crops_106_110/p110_soit.png)",
+  "tex": "aux projecteurs en \\(S\\), soit \\(S\\xrightarrow{s'}P_n\\xrightarrow{i}M_n\\).",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "aux projecteurs en \\(S\\), soit \\(S\\xrightarrow{s'}",
+   "new": "aux projecteurs en \\(S\\xrightarrow{s'}"
+  },
+  "note": "The TeX adds ', soit' and a second S."
+ },
+ {
+  "page": 110,
+  "where": "Corollaire 2.16, statement before the display",
+  "scan": "underlined by word groups: 'Soit', 'un morphisme de topos annelés', 'défini par un foncteur', 'et un morphisme de faisceaux d'anneaux', 'Notons', 'la catégorie dérivée de celle des', 'biModules', 'à gauche sur', 'à droite sur', 'et' (both scans)",
+  "tex": "no emphasis: the statement is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(f:(S',A')\\to(S,A)\\) un morphisme de topos annelés (défini par un foncteur \\(f^{-1}:S\\to S'\\) et un morphisme de faisceaux d'anneaux \\(f^{-1}(A)\\to A'\\)). Notons \\(\\Dpx({}_{A'}S'_A)\\) la catégorie dérivée de celle des \\(A'\\)-\\(A\\)-biModules (à gauche sur \\(A'\\), à droite sur \\(A\\)), et",
+   "new": "\\emph{Soit \\(f:(S',A')\\to(S,A)\\) un morphisme de topos annelés (défini par un foncteur \\(f^{-1}:S\\to S'\\) et un morphisme de faisceaux d'anneaux \\(f^{-1}(A)\\to A'\\)). Notons \\(\\Dpx({}_{A'}S'_A)\\) la catégorie dérivée de celle des \\(A'\\)-\\(A\\)-biModules (à gauche sur \\(A'\\), à droite sur \\(A\\)), et}"
+  },
+  "note": "The display ⊗^L_A : ... is not underlined; the statement goes on on p. 111."
+ }
+]

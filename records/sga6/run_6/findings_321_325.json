@@ -1,0 +1,524 @@
+[
+ {
+  "page": 321,
+  "where": "a), second display, third member",
+  "scan": "(1 + {1+t}u)^n with the first 1 underlined (both scans)",
+  "tex": "(1+\\{1+t\\}u)^n",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(1+\\{1+t\\}u)^n",
+   "new": "(\\underline{1}+\\{1+t\\}u)^n"
+  },
+  "note": "The underlined 1 is the unit element of the ring 1+K[[t]]^+ (= 1+t) and of the rings of series over it, as distinct from the integer 1 inside (1+t), {1+t}; the TeX drops the underline everywhere on pp. 321-322."
+ },
+ {
+  "page": 321,
+  "where": "b), 'D'abord, λ_u(1) = λ_u(1+t) = 1 + {1+t}u = 1 + 1.u'",
+  "scan": "λ_u(1̲) = λ_u(1+t) = 1̲ + {1+t}u = 1̲ + 1̲.u : four underlined 1 (both scans)",
+  "tex": "\\lambda_u(1)=\\lambda_u(1+t)=1+\\{1+t\\}u=1+1\\cdot u",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lambda_u(1)=\\lambda_u(1+t)=1+\\{1+t\\}u=1+1",
+   "new": "\\lambda_u(\\underline{1})=\\lambda_u(1+t)=\\underline{1}+\\{1+t\\}u=\\underline{1}+\\underline{1}"
+  },
+  "note": "The underlined 1 is the unit element of the ring 1+K[[t]]^+ (= 1+t) and of the rings of series over it, as distinct from the integer 1 inside (1+t), {1+t}; the TeX drops the underline everywhere on pp. 321-322. The 1 inside (1+t) and {1+t} are not underlined. Independent of the \\cdot entry that follows (the two 'old' do not overlap)."
+ },
+ {
+  "page": 321,
+  "where": "b), '1 + 1.u'",
+  "scan": "1̲.u: a typed full stop on the baseline between 1̲ and u (both scans; crops_321_325/c321_1u.png)",
+  "tex": "1\\cdot u",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "\\cdot u\\)",
+   "new": ".u\\)"
+  },
+  "note": "\\cdot raises the typed stop to mid-height (as the low entries for (P,.) p. 89, (.,G) p. 117)."
+ },
+ {
+  "page": 321,
+  "where": "left diagram, upper right corner",
+  "scan": "(Ĝ^u∘Ĝ^t) × Ĝ^u∘Ĝ^t) : the second factor has no opening parenthesis (both scans; crops_321_325/c321_diag.png, w332_diag.png)",
+  "tex": "(\\Ghat^u\\circ\\Ghat^t)\\times(\\Ghat^u\\circ\\Ghat^t)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\times(\\Ghat^u",
+   "new": "\\times\\Ghat^u"
+  },
+  "corrected": "\\times(\\Ghat^u",
+  "note": "Unbalanced parenthesis in the print; the TeX silently supplies it. The fix restores the printed reading."
+ },
+ {
+  "page": 321,
+  "where": "left diagram, lower horizontal arrow Ĝ^t → Ĝ^u∘Ĝ^t",
+  "scan": "λ_u stands above the lower arrow, as λ_u × λ_u above the upper one (both scans)",
+  "tex": "\\arrow[r,\"\\lambda_u\"'] (label set below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r,\"\\lambda_u\"']",
+   "new": "\\arrow[r,\"\\lambda_u\"]"
+  },
+  "note": "Label on the wrong side of the arrow (as reported on pp. 301-303, 307, 314); the labels ∘ (left, right) stand as printed."
+ },
+ {
+  "page": 321,
+  "where": "right diagram, lower horizontal arrow Ĝ^u∘Ĝ^t → Ĝ^v∘Ĝ^u∘Ĝ^t",
+  "scan": "λ_v stands above the lower arrow, as λ_v above the upper one (both scans)",
+  "tex": "\\arrow[r,\"\\lambda_v\"'] (label set below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r,\"\\lambda_v\"']",
+   "new": "\\arrow[r,\"\\lambda_v\"]"
+  },
+  "note": "Label on the wrong side of the arrow; λ_u (left) and Ĝ^v(λ_u) (right) stand as printed."
+ },
+ {
+  "page": 322,
+  "where": "first display, first line 'λ_u(1+Xt)∘λ_u(1+Yt) = (1+{Xt}u)∘(1+{1+Yt}u)'",
+  "scan": "(1̲+{Xt}u)∘(1̲+{1+Yt}u): both 1 underlined (both scans)",
+  "tex": "&=(1+\\{Xt\\}u)\\circ(1+\\{1+Yt\\}u)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "&=(1+\\{Xt\\}u)\\circ(1+\\{1+Yt\\}u)",
+   "new": "&=(\\underline{1}+\\{Xt\\}u)\\circ(\\underline{1}+\\{1+Yt\\}u)"
+  },
+  "note": "The underlined 1 is the unit element of the ring 1+K[[t]]^+ (= 1+t) and of the rings of series over it, as distinct from the integer 1 inside (1+t), {1+t}; the TeX drops the underline everywhere on pp. 321-322. The misprint {Xt} of the same line is a separate entry (fix null)."
+ },
+ {
+  "page": 322,
+  "where": "first display, first line, '{Xt}'",
+  "scan": "(1̲+{Xt}u): the braces enclose Xt only (both scans; crops_321_325/c322_xt.png, w333_xt.png)",
+  "tex": "\\{Xt\\}u",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\{1+Xt\\}u",
+  "note": "λ_u(1+Xt) = 1̲+{1+Xt}u (cf. λ_u(1+t) = 1̲+{1+t}u on p. 321, the second factor {1+Yt} and the next lines {(1+Xt)∘(1+Yt)}, {1+Xt}); the print drops '1+'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 322,
+  "where": "first display, second line",
+  "scan": "= 1̲ + {(1+Xt)∘(1+Yt)}u, 1 underlined (both scans)",
+  "tex": "&=1+\\{(1+Xt)\\circ(1+Yt)\\}u",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "&=1+\\{(1+Xt)",
+   "new": "&=\\underline{1}+\\{(1+Xt)"
+  },
+  "note": "The underlined 1 is the unit element of the ring 1+K[[t]]^+ (= 1+t) and of the rings of series over it, as distinct from the integer 1 inside (1+t), {1+t}; the TeX drops the underline everywhere on pp. 321-322."
+ },
+ {
+  "page": 322,
+  "where": "first display, third line",
+  "scan": "= 1̲ + {1+XYt}u, 1 underlined (both scans)",
+  "tex": "&=1+\\{1+XYt\\}u",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "&=1+\\{1+XYt\\}u",
+   "new": "&=\\underline{1}+\\{1+XYt\\}u"
+  },
+  "note": "The underlined 1 is the unit element of the ring 1+K[[t]]^+ (= 1+t) and of the rings of series over it, as distinct from the integer 1 inside (1+t), {1+t}; the TeX drops the underline everywhere on pp. 321-322."
+ },
+ {
+  "page": 322,
+  "where": "display after 'Pour le deuxième :'",
+  "scan": "λ_v(λ_u(1+Xt)) = 1̲ + { 1̲+{1+Xt}u} v : both 1 underlined (both scans)",
+  "tex": "1+\\{1+\\{1+Xt\\}u\\}v",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "1+\\{1+\\{1+Xt\\}u\\}v",
+   "new": "\\underline{1}+\\{\\underline{1}+\\{1+Xt\\}u\\}v"
+  },
+  "note": "The underlined 1 is the unit element of the ring 1+K[[t]]^+ (= 1+t) and of the rings of series over it, as distinct from the integer 1 inside (1+t), {1+t}; the TeX drops the underline everywhere on pp. 321-322."
+ },
+ {
+  "page": 322,
+  "where": "2.6 ii), end of the condition",
+  "scan": "'on a x/n ∈ K' with nothing after K: no full stop (both scans)",
+  "tex": "\\binom{x}{n}\\in K.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\in K.",
+   "new": "\\in K"
+  },
+  "note": "Added full stop at the end of the condition. Independent of the misprint entry of the same line (the two 'old' do not overlap)."
+ },
+ {
+  "page": 322,
+  "where": "2.6 ii), 'on a (x n) ∈ K'",
+  "scan": "x over n with a fraction bar (x typed underlined, n below) and no parentheses, unlike the binomials (x n) of the next lines (both scans; crops_321_325/c322_ii.png, w333_ii.png)",
+  "tex": "\\text{on a}\\ \\binom{x}{n}\\in K",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{on a}\\ \\binom{x}{n}",
+   "new": "\\text{on a}\\ \\frac{x}{n}"
+  },
+  "corrected": "\\binom{x}{n}",
+  "note": "The condition must be that the binomial coefficients (x n) lie in K (they define λ^n(x) in the next line and 2.6.1; x/n ∈ K is not meant, n = 0 included). The TeX silently corrects; the fix restores the printed fraction."
+ },
+ {
+  "page": 322,
+  "where": "after (2.6.1), 'ceci définit une structure de pré-λ-anneau sur K'",
+  "scan": "'une structure / de pré-λ-anneau sur K.' (both scans)",
+  "tex": "une structure pré-\\(\\lambda\\)-anneau",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "une structure pré-",
+   "new": "une structure de pré-"
+  },
+  "note": "The word 'de' is missing."
+ },
+ {
+  "page": 323,
+  "where": "first paragraph, 'que le pré-λ-anneau Z (2.5.a))'",
+  "scan": "'le pré- -anneau  Z  (2.5.a))': the λ is not filled in, a blank between the hyphens (both scans; crops_321_325/c323_lam.png, w334_lam.png)",
+  "tex": "que le pré-\\(\\lambda\\)-anneau",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "que le pré-\\(\\lambda\\)-anneau",
+   "new": "que le pré- -anneau"
+  },
+  "corrected": "que le pré-\\(\\lambda\\)-anneau",
+  "note": "The handwritten λ (and the double stroke of Z, next entry) were not added on this line; the second λ of the line is missing too. The TeX silently supplies it; the fix restores the printed blank."
+ },
+ {
+  "page": 323,
+  "where": "first paragraph, 'Z (2.5.a))'",
+  "scan": "a plain typed Z, without the hand-drawn double stroke of the Z on pp. 321-323 (both scans)",
+  "tex": "\\(\\mathbb Z\\) (2.5.a))",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\(\\mathbb Z\\) (2.5.a))",
+   "new": "\\(Z\\) (2.5.a))"
+  },
+  "corrected": "\\(\\mathbb Z\\) (2.5.a))",
+  "note": "Part of the hand additions not made on this line (the two λ are blank). If the volume treats the typist's plain letters as a font matter (plain Q, SGA 7 II issue 61), take it as a font entry instead."
+ },
+ {
+  "page": 323,
+  "where": "first paragraph, 'est un λ-anneau ; elles sont donc satisfaites'",
+  "scan": "'est un  -anneau ;': the λ is not filled in (both scans)",
+  "tex": "un \\(\\lambda\\)-anneau; elles",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "un \\(\\lambda\\)-anneau; elles",
+   "new": "un -anneau; elles"
+  },
+  "corrected": "un \\(\\lambda\\)-anneau; elles",
+  "note": "As the first λ of the line. The TeX silently supplies it."
+ },
+ {
+  "page": 323,
+  "where": "Définition 2.7",
+  "scan": "statement underlined word group by word group: 'On appelle', 'un anneau vérifiant les con-ditions', 'et', 'muni de la structure de', 'anneau définie par'; 'anneau binômial', 2.6.i), ii), λ- and 2.6.1 plain (both scans)",
+  "tex": "the statement in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé V continues the pattern of GLOBAL_ISSUES 82 (statements in roman where the typescript underlines their word groups), as reported for p. 298: not itemized, for the scripted per-exposé decision. The defined term 'anneau binômial' is plain in print and TeX."
+ },
+ {
+  "page": 323,
+  "where": "Exemple 2.8, 'K le faisceau associé au préfaisceau constant'",
+  "scan": "K̲: a typed K underlined (both scans)",
+  "tex": "\\(\\mathcal K\\) le faisceau",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mathcal K\\) le faisceau",
+   "new": "\\(\\underline{K}\\) le faisceau"
+  },
+  "note": "The sheaf is the typed K underlined, not a script K."
+ },
+ {
+  "page": 323,
+  "where": "Exemple 2.8, 'alors H^o(X,K) est un anneau binômial'",
+  "scan": "H^o(X,K̲): K typed and underlined (both scans)",
+  "tex": "H^0(X,\\mathcal K)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "H^0(X,\\mathcal K)",
+   "new": "H^0(X,\\underline{K})"
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 323,
+  "where": "after Exemple 2.8, 'En effet, les conditions 2.6 se conservent'",
+  "scan": "'En effet, ...' begins a new line at the paragraph indent, after 'un anneau binômial.' (both scans)",
+  "tex": "run on in the paragraph of the Exemple",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "binômial. En effet, les conditions",
+   "new": "binômial.\n\nEn effet, les conditions"
+  },
+  "note": "The typescript indents its new paragraphs (p. 322 'Pour voir', p. 324 'Notons enfin')."
+ },
+ {
+  "page": 323,
+  "where": "'En particulier, H^o(X,Z) est un anneau binômial.'",
+  "scan": "'En particulier, ...' begins a new line at the paragraph indent (both scans)",
+  "tex": "run on in the same paragraph",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "inductive. En particulier,",
+   "new": "inductive.\n\nEn particulier,"
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 323,
+  "where": "'En particulier, H^o(X,Z)'",
+  "scan": "H^o(X,Z̲): the double-struck Z underlined (the constant sheaf; both scans; crops_321_325/c323_z.png, w334_z.png)",
+  "tex": "H^0(X,\\mathbb Z)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "H^0(X,\\mathbb Z)",
+   "new": "H^0(X,\\underline{\\mathbb Z})"
+  },
+  "note": ""
+ },
+ {
+  "page": 324,
+  "where": "3.1, 'de nouvelles opérations'",
+  "scan": "'de nouvelles oérations' (both scans)",
+  "tex": "de nouvelles oérations",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "opérations",
+  "note": "Typing error (missing p). The TeX keeps the printed reading."
+ },
+ {
+  "page": 324,
+  "where": "3.1, 'si E est un fibré vectoriel de rang d'",
+  "scan": "E̲ underlined (both scans)",
+  "tex": "si \\(E\\) est",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "si \\(E\\) est",
+   "new": "si \\(\\underline{E}\\) est"
+  },
+  "note": "The bundle E is underlined throughout pp. 324-325 (six places); the TeX has a plain E."
+ },
+ {
+  "page": 324,
+  "where": "3.1, 'la d-ième classe de Chern de E devra être'",
+  "scan": "E̲ underlined (both scans)",
+  "tex": "de \\(E\\) devra",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "de \\(E\\) devra",
+   "new": "de \\(\\underline{E}\\) devra"
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 324,
+  "where": "last words of the TeX page, 'de E\" ;' (printed at the top of p. 325)",
+  "scan": "p. 325 begins 'de E̲\" ;' with E underlined (both scans)",
+  "tex": "de \\(E\\)~» ;",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "de \\(E\\)~» ;",
+   "new": "de \\(\\underline{E}\\)~» ;"
+  },
+  "note": "This text belongs to printed p. 325 (marker entry of p. 325). The edit and the marker move are independent (either order); after the move this 'old' stands under the folio-325 marker."
+ },
+ {
+  "page": 325,
+  "where": "start of page (folio-325 marker)",
+  "scan": "p. 325 begins 'de E̲\" ; pour définir la n-ième classe de Chern'; p. 324 ends '... la \"somme alternée des puissances extérieures' (both scans; witness pp. 324-325)",
+  "tex": "'de \\(E\\)~» ;' ends the last line of page_324.tex (under the folio-324 marker); page_325.tex begins 'pour définir'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 325 really begins with 'de \\(E\\)~» ;'. python -I move_marker.py 6 325 'de \\(E\\)~' --before (ASCII anchor: the » does not survive the shell; the last occurrence before the marker is the one after 'extérieures'). Simulated in memory on both layers with crops_321_325/sim_markers.py: '... des puissances extérieures ' / the marker / 'de \\(E\\)~» ;' / 'pour définir la ...'."
+ },
+ {
+  "page": 325,
+  "where": "first paragraph, 'en ramenant E au rang n'",
+  "scan": "E̲ underlined (both scans)",
+  "tex": "ramenant \\(E\\) au",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "ramenant \\(E\\) au",
+   "new": "ramenant \\(\\underline{E}\\) au"
+  },
+  "note": "As p. 324."
+ },
+ {
+  "page": 325,
+  "where": "first paragraph, 'en considérant (cl(E)-d)+n'",
+  "scan": "cl(E̲): E underlined (both scans)",
+  "tex": "(\\cl(E)-d)+n",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\cl(E)-d)+n",
+   "new": "(\\cl(\\underline{E})-d)+n"
+  },
+  "note": "As p. 324."
+ },
+ {
+  "page": 325,
+  "where": "first paragraph, 'en y faisant x = cl(E)-d :'",
+  "scan": "cl(E̲): E underlined (both scans)",
+  "tex": "x=\\cl(E)-d",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "x=\\cl(E)-d",
+   "new": "x=\\cl(\\underline{E})-d"
+  },
+  "note": "As p. 324."
+ },
+ {
+  "page": 325,
+  "where": "Proposition 3.2",
+  "scan": "statement underlined word group by word group: 'Soit', 'un', 'anneau' (λ- plain); ii) 'Si on pose', 'et', 'alors', 'donc' (both scans)",
+  "tex": "the statement in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "As Définition 2.7 on p. 323: the GLOBAL_ISSUES 82 pattern, not itemized."
+ },
+ {
+  "page": 325,
+  "where": "'On voit donc que la connaissance des opérations γ'",
+  "scan": "a new paragraph at the paragraph indent after the proposition (both scans)",
+  "tex": "follows \\end{enumerate} without a blank line, so it is set unindented as a continuation",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "\\end{enumerate}\nOn voit donc",
+   "new": "\\end{enumerate}\n\nOn voit donc"
+  },
+  "note": "The typescript indents its new paragraphs."
+ },
+ {
+  "page": 325,
+  "where": "'Démonstration.'",
+  "scan": "'Démonstration.' stands alone on its line; 'i) On a' begins the next line at the paragraph indent (both scans)",
+  "tex": "\\emph{Démonstration.} i) On a",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "\\emph{Démonstration.} i) On a",
+   "new": "\\emph{Démonstration.}\n\ni) On a"
+  },
+  "note": "Not the exempted case (a heading the print runs into the text): here the print breaks after the label."
+ },
+ {
+  "page": 325,
+  "where": "proof ii), 'λ_{t/1-t}(x) = Σ λ^n(x). t^n(1-t)^{-n}'",
+  "scan": "a typed full stop on the baseline after λ^n(x) (both scans)",
+  "tex": "\\lambda^n(x)\\cdot t^n(1-t)^{-n}",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "\\lambda^n(x)\\cdot t^n(1-t)^{-n}",
+   "new": "\\lambda^n(x).t^n(1-t)^{-n}"
+  },
+  "note": "As '1.u' on p. 321."
+ },
+ {
+  "page": 325,
+  "where": "proof ii), 'On développe'",
+  "scan": "'On développe' starts at the left margin after the line ii): the paragraph continues (both scans)",
+  "tex": "a blank line before 'On développe' (new, indented paragraph)",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": ".\\)\n\nOn développe",
+   "new": ".\\)\nOn développe"
+  },
+  "note": "New paragraphs are indented in the typescript ('ii)', 'On voit donc'); this line is not."
+ },
+ {
+  "page": 325,
+  "where": "proof ii), 'λ_{t/1-t}(x) = Σ [λ^n(x). Σ ...]'",
+  "scan": "a typed full stop on the baseline after λ^n(x) (both scans)",
+  "tex": "\\bigl[\\lambda^n(x)\\cdot\\sum",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "\\bigl[\\lambda^n(x)\\cdot\\sum",
+   "new": "\\bigl[\\lambda^n(x).\\sum"
+  },
+  "note": "As '1.u' on p. 321."
+ },
+ {
+  "page": 325,
+  "where": "last display, first sum",
+  "scan": "Σ with n=0 below and no upper index (both scans; crops_321_325/c325_sums.png, witness p. 325)",
+  "tex": "\\sum_{n=0}^{p}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\[\n  \\sum_{n=0}^{p}",
+   "new": "\\[\n  \\sum_{n=0}"
+  },
+  "note": "Added summation index. Independent of the next two entries (the 'old' do not overlap)."
+ },
+ {
+  "page": 325,
+  "where": "last display, second sum",
+  "scan": "Σ with n=0 below and no upper index (both scans)",
+  "tex": "=\\sum_{n=0}^{p}\\lambda^n(x)\\lambda^{p-n}(p-1)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\sum_{n=0}^{p}\\lambda^n(x)\\lambda",
+   "new": "=\\sum_{n=0}\\lambda^n(x)\\lambda"
+  },
+  "note": "Added summation index."
+ },
+ {
+  "page": 325,
+  "where": "last display, 'λ^n(x). (p-1 p-n)'",
+  "scan": "a typed full stop on the baseline after λ^n(x) (both scans)",
+  "tex": "\\lambda^n(x)\\cdot\\binom{p-1}{p-n}",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "\\lambda^n(x)\\cdot\\binom{p-1}{p-n}",
+   "new": "\\lambda^n(x).\\binom{p-1}{p-n}"
+  },
+  "note": "As '1.u' on p. 321."
+ },
+ {
+  "page": 325,
+  "where": "end of page (folio-326 marker)",
+  "scan": "p. 325 ends with the display '... = λ^p(x+p-1) .'; p. 326 begins '3.3. Soient K, K' deux λ-anneaux' (main scan of p. 325; witness of p. 326, crops_321_325/w_337_top.png)",
+  "tex": "'\\textbf{3.3.}' is the last line of page_325.tex; the folio-326 marker stands between it and 'Soient'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 326 really begins with '\\textbf{3.3.}' (a heading at the top of a page, not moved by the script). python -I move_marker.py 6 326 '\\textbf{3.3.}' --before (simulated in memory on both layers with crops_321_325/sim_markers.py: '\\]' / blank line / the marker / '\\textbf{3.3.}' / 'Soient ...'). The checker of p. 326 may report the same boundary: apply once."
+ }
+]

@@ -1,0 +1,359 @@
+[
+ {
+  "page": 161,
+  "where": "start of the page, first word",
+  "scan": "Page 161 begins with 'plexes acycliques', the second half of 'com-plexes' divided at the page break (both scans).",
+  "tex": "The folio-161 marker stands before the whole word 'complexes'.",
+  "kind": "marker",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Page 161 really begins with 'plexes'. Split the word at the marker as at folios 18, 36, 46 and 54: python -I marker_split_word.py 6 161 split com plexes (simulated on both layers: '... formée des' / 'com%' / marker / 'plexes acycliques, est pleinement ...'). The checker of p. 160 may report the same boundary: apply once."
+ },
+ {
+  "page": 161,
+  "where": "Preuve a), display 0 -> L -> L^0 -> ... -> L^m -> 0",
+  "scan": "L^o ---> . . . ---> L^m: three typed baseline stops (both scans).",
+  "tex": "L^0\\longrightarrow\\cdots\\longrightarrow L^m",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "L^0\\longrightarrow\\cdots\\longrightarrow L^m",
+   "new": "L^0\\longrightarrow\\ldots\\longrightarrow L^m"
+  },
+  "note": "Typed baseline stops written \\cdots; same fix as pp. 79, 80, 86, 95, 102, 127 (\\cdots -> \\ldots)."
+ },
+ {
+  "page": 161,
+  "where": "b), 'On a donc un suite exacte'",
+  "scan": "'On a donc un suite exacte' (both scans).",
+  "tex": "On a donc un suite exacte",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "une suite exacte",
+  "note": "Gender slip of the typescript (suite is feminine). The TeX keeps the printed reading; the corrected layer (current main.tex line 3802) also still reads 'un suite'."
+ },
+ {
+  "page": 161,
+  "where": "statements of Exposé II (here: end of Prop. 1.1 c) and Prop. 1.2)",
+  "scan": "The typescript underlines the word groups of every statement, e.g. Prop. 1.2: 'Supposons', 'localement relevable dans', 'et', 'localement stable par noyau d'épimorphisme', 'et faisons les hypo-'.",
+  "tex": "Statements in roman, no \\emph or \\underline: 'Supposons $\\mathcal C_0$ localement relevable dans $\\mathcal C$ (I 1.2) et localement stable par noyau d'épimorphisme (I 1.2), et faisons les hypothèses'.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of this TeX for Exposé II, not itemized: in main.tex lines 3743-4777 \\emph occurs only for 'Preuve' and seven isolated terms, never for a statement (Exposé I sets statements in \\emph). Three examples: p. 161 Prop. 1.2 'Supposons ... localement relevable dans ...'; p. 163 Lemme 2.1.1 'Soient $(S,A)$ un topos annelé, et $S\\in\\Ob S$. On suppose que $S$ est quasi-compact'; p. 165 Lemme 2.1.3 'Soient ... des catégories abéliennes, et ... un foncteur exact'. Also Prop. 1.1 c) (top of p. 161), Prop. 1.2 a)-d) (p. 162), Lemme 2.1.2 (pp. 163-164). One decision for the exposé."
+ },
+ {
+  "page": 162,
+  "where": "start of the page",
+  "scan": "Page 162 begins with 'thèses (1.1 (i) et (ii) respée). Notons ...'; 'hypo-' ends p. 161 (both scans).",
+  "tex": "'hypothèses (1.1 (i) et (ii)' stands at the end of p. 161, above the folio-162 marker; the TeX of p. 162 begins at 'respée).'.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Move the folio-162 marker before the divided word and split it, in this order: python -I move_marker.py 6 162 'hypothèses (1.1' --before, then python -I marker_split_word.py 6 162 split hypo thèses (simulated in this order on both layers: '... et faisons les ' / 'hypo%' / marker / 'thèses (1.1 (i) et (ii)' / 'respée). Notons ...'). 'respée' is the volume's word for the resp. variant, not a misprint."
+ },
+ {
+  "page": 162,
+  "where": "Preuve b), display of the truncated complex",
+  "scan": "E^{m+1} ---> . . . ---> E^n: typed baseline stops (both scans).",
+  "tex": "E^{m+1}\\longrightarrow\\cdots\\longrightarrow E^n",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "E^{m+1}\\longrightarrow\\cdots\\longrightarrow E^n",
+   "new": "E^{m+1}\\longrightarrow\\ldots\\longrightarrow E^n"
+  },
+  "note": "As on p. 161 and pp. 79-127 (\\cdots -> \\ldots)."
+ },
+ {
+  "page": 163,
+  "where": "proof of 1.2, parts c) and d)",
+  "scan": "'d) Le fait que ...' begins a new paragraph at the margin, after the same extra space that separates a) and b) on p. 162 (both scans).",
+  "tex": "'(I 4.12.2). d) Le fait que' runs on in the paragraph of c).",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "(I 4.12.2). d) Le fait",
+   "new": "(I 4.12.2).\n\nd) Le fait"
+  },
+  "note": "The TeX sets the other proof parts as paragraphs (b), c) on p. 161, b) on p. 162). '(I 4 12.2)': the stop is missing in both scans; the TeX's 4.12.2 stands (not reported)."
+ },
+ {
+  "page": 163,
+  "where": "Lemme 2.1.1, reference '(cf. EGA 0_I 5.2.3)'",
+  "scan": "(cf. EGA O_I 5.2.3): no comma after the subscript I (both scans).",
+  "tex": "(cf. EGA $0_{\\mathrm I}$, 5.2.3)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "EGA $0_{\\mathrm I}$, 5.2.3",
+   "new": "EGA $0_{\\mathrm I}$ 5.2.3"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 163,
+  "where": "Lemme 2.1.2, 'S ∈ ob S, C'_S une sous-catégorie additive'",
+  "scan": "C'_S typed without the underline (both scans), unlike every other category letter on pp. 161-165; on p. 164 C'_S is underlined throughout.",
+  "tex": "$\\mathcal C'_S$ une sous-catégorie",
+  "kind": "underline",
+  "confidence": "low",
+  "fix": {
+   "old": "$\\mathcal C'_S$ une sous-catégorie",
+   "new": "$C'_S$ une sous-catégorie"
+  },
+  "note": "The TeX writes \\mathcal C for the underlined typed C; this one C' has no underline (typist's omission). Low: tied to the pending decision on the category letter."
+ },
+ {
+  "page": 164,
+  "where": "start of the page",
+  "scan": "Page 164 begins with the display 'H^1(S,F) = 0   pour tout F ∈ ob C'_S .'.",
+  "tex": "The display's opening \\[ stands at the end of p. 163, above the folio-164 marker (the marker sits inside the display).",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Move the folio-164 marker above \\[: python -I move_marker.py 6 164 '\\[' --before (single quotes; simulated on both layers: '... On suppose que' / marker / \\[ / H^1(S,F)=0\\quad ...), as at folio 11."
+ },
+ {
+  "page": 164,
+  "where": "Lemme 2.1.2 a), 'telle que Hom(G,E) ∈ ob C'_S'",
+  "scan": "Hom underlined (sheaf Hom; the underline covers Hom only), both scans.",
+  "tex": "telle que $\\operatorname{Hom}(G,E)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "telle que $\\operatorname{Hom}(G,E)",
+   "new": "telle que $\\underline{\\Hom}(G,E)"
+  },
+  "note": "Underlined Hom written \\underline{\\Hom} as on pp. 89, 116-118; the same sheaf Hom is underlined in the proof below and on p. 165."
+ },
+ {
+  "page": 164,
+  "where": "Preuve a), spectral sequence, E_2 term",
+  "scan": "H^p(S,Ext^q(G,E)) with the typed Ext underlined (sheaf Ext), both scans.",
+  "tex": "H^p(S,\\mathcal{E}xt^q(G,E))",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal{E}xt^q(G,E)",
+   "new": "\\underline{\\Ext}^q(G,E)"
+  },
+  "note": "The print has an underlined typed Ext, not a script E; \\underline{\\Ext} is the file's form (main.tex has it once). The E inside (G,E) is struck over another letter in the typescript; E is the corrected reading."
+ },
+ {
+  "page": 164,
+  "where": "Preuve a), spectral sequence, abutment",
+  "scan": "Ext^*(G,E): the superscript is the typed asterisk, the same glyph as the tags (*) and (**) on p. 165 (both scans).",
+  "tex": "\\Ext^{n}(G,E)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ext^{n}(G,E)",
+   "new": "\\Ext^{*}(G,E)"
+  },
+  "note": "The TeX reads n for the printed asterisk."
+ },
+ {
+  "page": 164,
+  "where": "Preuve a), isomorphism H^1(S,Hom(G,E)) ≃ Ext^1(G,E)",
+  "scan": "Hom underlined (both scans).",
+  "tex": "H^1(S,\\operatorname{Hom}(G,E))",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "H^1(S,\\operatorname{Hom}(G,E))",
+   "new": "H^1(S,\\underline{\\Hom}(G,E))"
+  },
+  "note": "Sheaf Hom, underlined in the print."
+ },
+ {
+  "page": 165,
+  "where": "first paragraph, 'on a Hom(G,E) ∈ ob C'_S'",
+  "scan": "Hom underlined (both scans).",
+  "tex": "on a $\\operatorname{Hom}(G,E)\\in\\Ob\\mathcal C'_S$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "on a $\\operatorname{Hom}(G,E)\\in",
+   "new": "on a $\\underline{\\Hom}(G,E)\\in"
+  },
+  "note": "Sheaf Hom, as on p. 164."
+ },
+ {
+  "page": 165,
+  "where": "'D'autre part ... le foncteur exact à gauche Hom_{A_S}(.,G)'",
+  "scan": "Hom_{A_S}(.,G): the placeholder is a typed full stop on the line.",
+  "tex": "\\operatorname{Hom}_{A_S}(\\cdot,G)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\operatorname{Hom}_{A_S}(\\cdot,G)",
+   "new": "\\operatorname{Hom}_{A_S}(.,G)"
+  },
+  "note": "The file writes the typed placeholder as '.' elsewhere (\\underline{\\Hom}(P,.), main.tex line 1939)."
+ },
+ {
+  "page": 165,
+  "where": "same sentence, '(resp. Hom_{A(S)}(.,Γ_S(F)))'",
+  "scan": "Hom_{A(S)}(.,Γ_S(F)): typed full stop as placeholder.",
+  "tex": "\\operatorname{Hom}_{A(S)}(\\cdot,\\Gamma_S(F))",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\operatorname{Hom}_{A(S)}(\\cdot,\\Gamma_S(F))",
+   "new": "\\operatorname{Hom}_{A(S)}(.,\\Gamma_S(F))"
+  },
+  "note": "As the previous entry. The misprint F (for G) in this expression is the next entry (fix null)."
+ },
+ {
+  "page": 165,
+  "where": "same sentence, '(resp. Hom_{A(S)}(.,Γ_S(F)))'",
+  "scan": "Hom_{A(S)}(.,Γ_S(F)) (both scans).",
+  "tex": "(resp. $\\operatorname{Hom}_{A(S)}(\\cdot,\\Gamma_S(F))$)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\operatorname{Hom}_{A(S)}(.,\\Gamma_S(G))",
+  "note": "The functor applied to (**) is Hom_{A(S)}(.,Γ_S(G)): the bottom row of the diagram has Γ_S(G). The TeX keeps the printed reading; the corrected layer already reads \\Gamma_S(G)."
+ },
+ {
+  "page": 165,
+  "where": "diagram, bottom row, first Hom",
+  "scan": "0 -> Hom_{A(S)}(F,G) -> Hom_{A(S)}(A(S)^{(J)},Γ_S(G)) -> ... (both scans).",
+  "tex": "\\operatorname{Hom}_{A(S)}(F,G) \\arrow[r]",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\operatorname{Hom}_{A(S)}(\\Gamma_S(F),\\Gamma_S(G))",
+  "note": "Applying Hom_{A(S)}(.,Γ_S(G)) to (**) gives Hom_{A(S)}(Γ_S(F),Γ_S(G)) on the left; the print writes (F,G). The TeX keeps the printed reading; the corrected layer still has (F,G)."
+ },
+ {
+  "page": 165,
+  "where": "after the diagram, 'sont visiblement des isomorphismes il en est donc de même'",
+  "scan": "'des isomorphismes' ends the line with no punctuation; the next line begins 'il en est donc' (both scans).",
+  "tex": "des isomorphismes il en est donc",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "isomorphismes ; il en est donc",
+  "note": "A stop between the two clauses is missing in the print (';' or ','). The TeX keeps the printed reading, as does the corrected layer (line 3920)."
+ },
+ {
+  "page": 165,
+  "where": "Lemme 2.1.3, 'Soient A et B des catégories abéliennes'",
+  "scan": "Plain typed A and B, not underlined (both scans).",
+  "tex": "Soient $\\mathcal A$ et $\\mathcal B$ des",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $\\mathcal A$ et $\\mathcal B$ des",
+   "new": "Soient $A$ et $B$ des"
+  },
+  "note": "The abelian categories of Lemme 2.1.3 are plain typed A, B in the whole statement (unlike the underlined C of the S-categories); the TeX writes \\mathcal A, \\mathcal B. Five more entries follow; the proof on p. 166 continues the notation."
+ },
+ {
+  "page": 165,
+  "where": "Lemme 2.1.3, 'φ : A -> B'",
+  "scan": "Plain A and B.",
+  "tex": "$\\varphi:\\mathcal A\\to\\mathcal B$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": ":\\mathcal A\\to\\mathcal B$",
+   "new": ":A\\to B$"
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 165,
+  "where": "a), 'Pour M ∈ ob A'",
+  "scan": "Plain A.",
+  "tex": "$M\\in\\Ob\\mathcal A$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$M\\in\\Ob\\mathcal A$",
+   "new": "$M\\in\\Ob A$"
+  },
+  "note": "As above."
+ },
+ {
+  "page": 165,
+  "where": "(i), 'pour tout L ∈ ob A, la flèche canonique (induite par φ)'",
+  "scan": "Plain A.",
+  "tex": "$L\\in\\Ob\\mathcal A$, la flèche canonique (induite",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$L\\in\\Ob\\mathcal A$, la flèche canonique (",
+   "new": "$L\\in\\Ob A$, la flèche canonique ("
+  },
+  "note": "As above."
+ },
+ {
+  "page": 165,
+  "where": "(i), display Ext^n_A(L,M) -> Ext^n_B(φ(L),φ(M))",
+  "scan": "Plain subscripts A and B.",
+  "tex": "\\Ext^n_{\\mathcal A}(L,M)\\longrightarrow\\Ext^n_{\\mathcal B}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ext^n_{\\mathcal A}(L,M)\\longrightarrow\\Ext^n_{\\mathcal B}",
+   "new": "\\Ext^n_{A}(L,M)\\longrightarrow\\Ext^n_{B}"
+  },
+  "note": "As above."
+ },
+ {
+  "page": 165,
+  "where": "(ii), 'pour tout L ∈ ob A, la flèche canonique' (last line)",
+  "scan": "Plain A.",
+  "tex": "$L\\in\\Ob\\mathcal A$, la flèche canonique",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$L\\in\\Ob\\mathcal A$, la flèche canonique\n",
+   "new": "$L\\in\\Ob A$, la flèche canonique\n"
+  },
+  "note": "As above; the 'old' ends with the line break before the folio-166 marker (the marker line itself is not touched)."
+ },
+ {
+  "page": 165,
+  "where": "Lemme 2.1.3, 'et φ : A -> B'",
+  "scan": "The drawn phi is the closed form, a circle crossed by a stroke (both scans).",
+  "tex": "et $\\varphi:\\mathcal A\\to\\mathcal B$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "et $\\varphi",
+   "new": "et $\\phi"
+  },
+  "note": "Closed form, which TeX sets as \\phi (as changed on pp. 3 and 12); two more entries follow."
+ },
+ {
+  "page": 165,
+  "where": "(i), '(induite par φ)'",
+  "scan": "Closed-form phi.",
+  "tex": "(induite par $\\varphi$)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "par $\\varphi$)",
+   "new": "par $\\phi$)"
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 165,
+  "where": "(i), display, 'Ext^n_B(φ(L),φ(M))'",
+  "scan": "Closed-form phi, twice.",
+  "tex": "(\\varphi(L),\\varphi(M))",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "(\\varphi(L),\\varphi(M))",
+   "new": "(\\phi(L),\\phi(M))"
+  },
+  "note": "As above."
+ }
+]

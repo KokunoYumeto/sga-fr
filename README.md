@@ -5,7 +5,7 @@ Ce dépôt contient les textes français du Séminaire de géométrie algébriqu
 ## Contenu
 
 - [`raw/pro_returns/SGA7_READERS_20261112/`](raw/pro_returns/SGA7_READERS_20261112/) : les livres de lecture de SGA 7 I et II, construction du 12 novembre 2026, telle qu’elle a été livrée, avec ses enregistrements. Pas encore relue.
-- [`volumes/`](volumes/) : les textes de référence de SGA 4, SGA 5, SGA 7 I et SGA 7 II, chacun en deux couches (voir ci-dessous).
+- [`volumes/`](volumes/) : les textes de référence de SGA 4, SGA 5, SGA 6, SGA 7 I et SGA 7 II, chacun en deux couches (voir ci-dessous).
 - [`records/`](records/) : par volume, les journaux de corrections, les registres des coquilles de l’imprimé, les rejeux, les rapports des vérificateurs et leurs consignes.
 - [`method/`](method/) : la méthode de la vérification (`METHODOLOGY.md`, en anglais), la consigne des vérificateurs, les questions réglées pour tout un volume (`GLOBAL_ISSUES_SGA.md`) et les scripts.
 
@@ -24,7 +24,7 @@ Les coquilles de l’imprimé sont relevées dans `records/<volume>/MISPRINTS_<v
 
 **SGA 4½.** Seuls les enregistrements d’une vérification par sondage (`records/sga4_5/`) sont ici ; le texte est la composition LaTeX de Daniel Miller (https://github.com/dkmiller/sga4.5).
 
-**SGA 6.** Pas encore ici : sa vérification sur les scans est en cours.
+**SGA 6.** Transcription par IA (OpenAI Codex, juin–août 2026 ; base : la division du 5 août), en deux couches, avec repères de pages ajoutés. Vérification en cours, de la même manière que SGA 5 et SGA 7, sur l’exemplaire de l’Internet Archive (environ 360 ppi) de SGA 6 (Lecture Notes in Mathematics 225, 1971) : 78 lots de cinq pages sur 140 faits au 12 novembre 2026. Les corrections de Codex du 23 août sont dans `records/sga6/ref_hold/` et ne sont pas encore dans les couches vérifiées : chacune est vérifiée sur le scan avant d’y entrer (`records/sga6/HOLD_VS_CORR.md`, 119 différences).
 
 Les chemins locaux des enregistrements ont été anonymisés (« user »).
 

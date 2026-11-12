@@ -1,0 +1,82 @@
+[
+  {
+    "page": 246,
+    "where": "the statements of pp. 246-250: Proposition 3.6 (p. 246), Proposition 3.7 with its title 'Formule de projection' (pp. 247-248), Corollaire 3.7.1 (p. 249), Corollaire 3.7.2 and Définition 4.1 (p. 250)",
+    "scan": "the print underlines each statement word group by word group, e.g. Prop. 3.6 'Soit', 'un triangle commutatif de schémas', 'où', 'est une immersion fermée et', 'un morphisme lisse', 'et soit', 'Pour que', 'soit localement d'amplitude plate finie rel', 'à', 'il faut et il suffit que', ..., 'on a'; Prop. 3.7 also its title 'Formule de projection' and, on p. 248, 'existe un isomorphisme fonctoriel canonique de'. Définition 4.1 underlines its word groups but leaves the defined terms plain ('d'amplitude parfaite', 'contenue dans [a,b]', 'f est d'amplitude parfaite contenue', 'dimension parfaite', 'amplitude parfaite finie relativement à f', 'parfait rel. à f', 'f est parfait') (both scans)",
+    "tex": "statements in roman, no \\emph or \\underline",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": null,
+    "note": "Exposé III follows the Exposé II pattern of GLOBAL_ISSUES 82 (as batches 221-230 found for pp. 222-230): one scripted decision for the exposé, not itemized. A script must leave the defined terms of Définition 4.1 plain. No \\emph on defined terms that the print leaves plain, and no category L, on these pages."
+  },
+  {
+    "page": 247,
+    "where": "the cartesian square after 'On a un carré cartésien'",
+    "scan": "a comma stands to the right of the bottom row of the square, 'Y <--f-- X ,' (both scans; crops_246_250/c247_comma.png, wit_247_small.png)",
+    "tex": "the tikzcd ends with '\\end{tikzcd}', no comma",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+      "old": "Y & X \\arrow[l,\"f\"']\n\\end{tikzcd}",
+      "new": "Y & X \\arrow[l,\"f\"']\n\\end{tikzcd},"
+    },
+    "note": "The file's form for a comma after a diagram ('\\end{tikzcd},' in the proof of Lemme 2.2.6, Exposé II)."
+  },
+  {
+    "page": 248,
+    "where": "proof of 3.7, 'Supposons E (resp. M) d'amplitude plate finie rel. à f (resp. finie).'",
+    "scan": "rel. à f (resp. finie) (both scans)",
+    "tex": "rel. à \\(f\\) (resp. finie) (printed reading kept)",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "rel. à \\(S\\) (resp. finie)",
+    "note": "The sentence sets up the two cases of the statement of 3.7 ('Si M est d'amplitude plate finie, ou si E est d'amplitude plate finie rel. à S') and is followed by 'où E ⊗^L_S M ∈ ob D^b(X)', which needs E of finite flat amplitude relative to S; relative to f (i.e. to Y) does not give it (X = Y, f = Id, E = O_X: E ⊗^L_S M is the pull-back of M to X, unbounded when X is not of finite tor-dimension over S). Cor. 3.7.1 and its proof also use tor.amp_S(E). The TeX keeps the printed reading; the corrected layer also reads f."
+  },
+  {
+    "page": 248,
+    "where": "'Notant que les foncteurs Rf_*(E) ⊗^L_S . et ...': the first place-holder",
+    "scan": "a typed full stop on the line, 'Rf_*(E) ⊗^L_S . et' (both scans; crops_246_250/c248_dot1.png, w248_dots.png)",
+    "tex": "\\(Rf_*(E)\\otimes_S^{\\mathbf L}\\cdot\\) (centred dot)",
+    "kind": "symbol",
+    "confidence": "high",
+    "fix": {
+      "old": "\\cdot\\) et",
+      "new": ".\\) et"
+    },
+    "note": "\\cdot raises the typed stop to mid-height; the volume writes the typed place-holder as '.' (as applied on pp. 89, 136, 141, 154, 165, 166, 207). Both or neither with the next entry. The old string avoids the L, which the live main.tex now writes \\mathrm L, so it matches there too."
+  },
+  {
+    "page": 248,
+    "where": "same sentence, the second place-holder, 'et Rf_*(E ⊗^L_S .)'",
+    "scan": "a typed full stop on the line before the closing parenthesis, '⊗^L_S .)' (both scans; crops_246_250/c248_dot2.png, w248_dots.png)",
+    "tex": "\\(Rf_*(E\\otimes_S^{\\mathbf L}\\cdot)\\) (centred dot)",
+    "kind": "symbol",
+    "confidence": "high",
+    "fix": {
+      "old": "\\cdot)\\)",
+      "new": ".)\\)"
+    },
+    "note": "As the previous entry: both or neither."
+  },
+  {
+    "page": 249,
+    "where": "start of page (folio-249 marker)",
+    "scan": "p. 248 ends '... à M = P , où P est un A-module plat'; p. 249 begins '(S = Spec(A)). Si l'on pose A' = D_A(P)' (both scans; OCR of pp. 248-249)",
+    "tex": "page_249.tex begins 'plat \\((S=\\Spec(A))\\).': 'plat' stands under the folio-249 marker",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 249 really begins with '\\((S=\\Spec(A))\\)'; 'plat' is the last word of p. 248. Move the folio-249 marker down past it: python -I move_marker.py 6 249 '\\((S=\\Spec(A))\\)' (single quotes, no --before; simulated in memory on both layers of the live main.tex with crops_246_250/sim_markers.py: '... où \\(P\\) est un \\(A\\)-module' / 'plat ' / the marker / '\\((S=\\Spec(A))\\). Si l'on pose ...'). A second run changes nothing."
+  },
+  {
+    "page": 250,
+    "where": "end of page (folio-251 marker)",
+    "scan": "p. 250 ends '... Un morphisme localement d'intersection complète (i.e. localement composé'; p. 251 begins 'd'une immersion régulière et d'un morphisme lisse) est un morphisme parfait' (both scans of p. 250; OCR of p. 251)",
+    "tex": "page_250.tex ends '(i.e. localement composé d'une': 'd'une' stands above the folio-251 marker",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 251 really begins with 'd'une'. Move the folio-251 marker up before it: python -I move_marker.py 6 251 \"d'une\" --before (simulated in memory on both layers of the live main.tex with crops_246_250/sim_markers.py: '... (i.e. localement composé ' / the marker / 'd'une' / 'immersion régulière et d'un morphisme lisse) est un morphisme parfait.'). Apply once: the checker of p. 251 may report the same boundary, and a second run would take an earlier 'd'une'."
+  }
+]

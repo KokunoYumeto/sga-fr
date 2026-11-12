@@ -1,0 +1,437 @@
+[
+ {
+  "page": 326,
+  "where": "start of page (folio-326 marker)",
+  "scan": "p. 326 begins with the heading '3.3. Soient K, K' deux λ-anneaux, f : K → K' un homomorphisme d'anneaux.' (both scans)",
+  "tex": "'\\textbf{3.3.}' is the last line of page_325.tex, above the folio-326 marker; page_326.tex begins 'Soient \\(K\\), \\(K'\\) deux'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 326 really begins with the heading '\\textbf{3.3.}' (a heading at the top of a page, not moved by the 10 Nov script). python -I move_marker.py 6 326 '\\textbf{3.3.}' --before (simulated in memory on both layers with crops_326_330/sim_markers.py: '\\]' / blank / marker / '\\textbf{3.3.}' / 'Soient \\(K\\), ...'). The checker of p. 325 may report the same boundary: apply once."
+ },
+ {
+  "page": 326,
+  "where": "3.3, end: 'ou encore γ_t(f(x)) = Ĝ_g(f)∘γ_t(x).'",
+  "scan": "the formula stands in the running text, at the left margin of the line after '... γ^i(f(x)), ou encore', at ordinary line spacing; the blank before 3.4 follows (both scans)",
+  "tex": "display \\[ \\gamma_t(f(x))=\\Gg(f)\\circ\\gamma_t(x). \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "ou encore\n\\[\n  \\gamma_t(f(x))=\\Gg(f)\\circ\\gamma_t(x).\n\\]",
+   "new": "ou encore \\(\\gamma_t(f(x))=\\Gg(f)\\circ\\gamma_t(x)\\)."
+  },
+  "note": "The TeX makes an inline formula a display (same kind of fix as pp. 21, 34, 42, 80, 277, 301, 303)."
+ },
+ {
+  "page": 326,
+  "where": "3.3, 'D'après le définition 3.2.ii)'",
+  "scan": "D'après le définition (both scans)",
+  "tex": "D'après le définition (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "D'après la définition",
+  "note": "Gender slip of the typist ('définition' is feminine), as 'le j-ième fonction' on p. 305. The TeX keeps the printed reading; the corrected layer still reads 'le définition'."
+ },
+ {
+  "page": 326,
+  "where": "3.5, label of the first arrow Ĝ×Ĝ → Ĝ×Ĝ",
+  "scan": "(ρ^{-1}.ρ^{-1}): a round typed full stop on the baseline of the label between the two ρ^{-1} (both scans; crops_326_330/c326_arrow_zoom.png, w326_arrow.png); the comma after the display has its tail (c326_comma_zoom.png)",
+  "tex": "\\xrightarrow{(\\rho^{-1},\\rho^{-1})} (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "(\\rho^{-1},\\rho^{-1})",
+   "new": "(\\rho^{-1}.\\rho^{-1})"
+  },
+  "corrected": "(\\rho^{-1},\\rho^{-1})",
+  "note": "The label is the pair of maps (ρ^{-1},ρ^{-1}) on Ĝ×Ĝ; the typist struck a full stop for the comma. The TeX silently corrects; the fix restores the printed reading in the diplomatic layer."
+ },
+ {
+  "page": 326,
+  "where": "3.5, 'Cette nouvelle multiplication sera notée v.'",
+  "scan": "'notée v' typed on a pasted-in correction (lighter typeface): a Latin v (both scans; crops_326_330/c326_notee.png)",
+  "tex": "sera notée \\(v\\). (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "sera notée \\(\\nabla\\).",
+  "note": "From (3.5.1) on the print writes this law with the hand-drawn ∇: (1+Xt)∇(1+Yt), 'la loi ∇', 1_∇, Ĝ_∇; the typed v of the correction stands for it. The TeX keeps the printed v (the corrected layer too); for the corrected layer."
+ },
+ {
+  "page": 327,
+  "where": "after (3.5.1), 'Si K est un λ-anneau, on a donc pour tous x,y ∈ K :'",
+  "scan": "'Si K est un λ-anneau' begins a new, indented paragraph (both scans)",
+  "tex": "\\end{align} followed directly by 'Si \\(K\\) est' (the paragraph runs on)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{align}\nSi \\(K\\) est",
+   "new": "\\end{align}\n\nSi \\(K\\) est"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 327,
+  "where": "after (3.5.2), 'Le n-ième polynôme universel de la loi ∇'",
+  "scan": "'Le n-ième polynôme universel' begins a new, indented paragraph (both scans)",
+  "tex": "\\end{equation} followed directly by 'Le \\(n\\)-ième'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nLe \\(n\\)-ième",
+   "new": "\\end{equation}\n\nLe \\(n\\)-ième"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 327,
+  "where": "after (3.5.3), 'Notons enfin que la loi ∇ admet un élément unité'",
+  "scan": "'Notons enfin' begins a new, indented paragraph (both scans)",
+  "tex": "\\end{equation} followed directly by 'Notons enfin'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nNotons enfin",
+   "new": "\\end{equation}\n\nNotons enfin"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 327,
+  "where": "the unit elements 1̲_∇ and 1̲_o: 'il sera parfois noté 1̲_∇' (p. 327), the display λ'_u(1+Xt) = ... (printed on p. 328, in page_327.tex now) and (3.6.2) (p. 328)",
+  "scan": "the 1 of the unit is underlined in all 8 places: noté 1̲_∇; in the display 1̲_o twice, 1̲_∇ + {1+Xt}u/(1̲_∇ + 1̲_∇.u), ρ_u^{-1}(1̲_∇ + {1+Xt}u); (3.6.2) γ'_u(1+Xt) = 1̲_∇ + {1+Xt}u (both scans; crops_326_330/c327_unit.png, c328_denom.png, w328_denom.png)",
+  "tex": "1_\\nabla, 1_{\\nabla'}, 1_o (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé V transcription (no underlines; as the underlined letters reported for p. 315), reported once. Three examples, in the form to use if the diplomatic layer reproduces them: 'noté \\(1_\\nabla\\)' -> 'noté \\(\\underline{1}_\\nabla\\)'; '{1_o+\\{1+(X+1)t\\}u}{1_o+\\{1+t\\}u}' -> '{\\underline{1}_o+\\{1+(X+1)t\\}u}{\\underline{1}_o+\\{1+t\\}u}'; p. 328 '=1_\\nabla+\\{1+Xt\\}u .' -> '=\\underline{1}_\\nabla+\\{1+Xt\\}u .'. Safe for a script, unlike the sheaf letters: every 1_\\nabla, 1_{\\nabla'} and 1_o of main.tex (8, all on folios 327-328) is underlined in the print. The underline is part of the notation defined here (the unit 1̲_∇ against the integer 1 of 1+Xt)."
+ },
+ {
+  "page": 327,
+  "where": "3.6, 'Les \"opérations λ\" sont définies par le diagramme commutatif'",
+  "scan": "opérations λ \" : λ without a prime, a space before the closing quote (both scans; crops_326_330/c327_lambda_zoom.png, w327_lambda.png)",
+  "tex": "«~opérations \\(\\lambda'\\)~»",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "«~opérations \\(\\lambda'\\)~»",
+   "new": "«~opérations \\(\\lambda\\)~»"
+  },
+  "note": "The sentence names the λ-operations of the new structure and ends 'et seront notées λ'' (last line of the page): the unprimed λ is the printed and intended reading."
+ },
+ {
+  "page": 327,
+  "where": "diagram (3.6.1), bottom arrow 1+K[[t]]^+ → 1+{1+K[[t]]^+}[[u]]^+",
+  "scan": "λ'_u above the bottom arrow (both scans)",
+  "tex": "\\arrow[r,\"\\lambda'_u\"'] (the ' sets the label below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r,\"\\lambda'_u\"']",
+   "new": "\\arrow[r,\"\\lambda'_u\"]"
+  },
+  "note": "Label on the wrong side of the arrow; λ_u (top) and ρ_t (left) stand as printed."
+ },
+ {
+  "page": 327,
+  "where": "diagram (3.6.1), right vertical arrow",
+  "scan": "Ĝ(ρ_t) stands to the left of the right vertical arrow (both scans)",
+  "tex": "\\arrow[d,\"\\Ghat(\\rho_t)\"] (label set to the right)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[d,\"\\Ghat(\\rho_t)\"]",
+   "new": "\\arrow[d,\"\\Ghat(\\rho_t)\"']"
+  },
+  "note": "Label on the wrong side of the arrow."
+ },
+ {
+  "page": 327,
+  "where": "display λ'_u(1+Xt) = ..., third row (printed at the top of p. 328; in page_327.tex now)",
+  "scan": "= Ĝ ( _t)((1̲_o + {1+(X+1)t}u)/(1̲_o + {1+t}u)): the hand-drawn ρ before the index t is missing, a blank between '(' and 't' (both scans; witness p. 328); the rows above and below have Ĝ(ρ_t)",
+  "tex": "\\Ghat(\\rho_t)\\left(\\frac{1_o+... (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ghat(\\rho_t)\\left(\\frac",
+   "new": "\\Ghat({}_t)\\left(\\frac"
+  },
+  "corrected": "\\Ghat(\\rho_t)\\left(\\frac",
+  "note": "The ρ was never drawn; the TeX silently supplies it. {}_t keeps the empty place with its index. Filed under p. 327 because the display stands in page_327.tex now (see the p. 328 marker entry); the old string is also unique after the marker move."
+ },
+ {
+  "page": 327,
+  "where": "same display, fourth row, denominator 1̲_∇ + 1̲_∇.u (printed on p. 328; in page_327.tex now)",
+  "scan": "after the hand-drawn subscript ∇ of the second 1̲_∇ a typed stop on the baseline of the row, just before u; no prime on ∇ (both scans; crops_326_330/c328_dotu.png, w328_dotu.png, c328_denom.png)",
+  "tex": "1_{\\nabla'}u",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "_{\\nabla'}u}",
+   "new": "_\\nabla.u}"
+  },
+  "note": "The denominator is 1_∇ + 1_∇·u (Ĝ(ρ_t) maps 1_o = 1+t to 1_∇); no ∇' occurs anywhere in the text. Filed under p. 327 because the display stands in page_327.tex now; the old string survives an \\underline{1} edit of the underline convention."
+ },
+ {
+  "page": 328,
+  "where": "start of page (folio-328 marker)",
+  "scan": "p. 328 begins with the display 'λ'_u(1+Xt) = Ĝ(ρ_t)(λ_u(ρ_t^{-1}(1+Xt))) = ... = ρ_u^{-1}(1̲_∇ + {1+Xt}u).'; p. 327 ends '... Elles sont définies par leur valeur pour 1+Xt ; on a :' (both scans)",
+  "tex": "'\\[', '\\begin{aligned}' and the five rows of the display are the last lines of page_327.tex; the folio-328 marker stands inside the display, page_328.tex begins '\\end{aligned}'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 328 really begins with the '\\[' that opens the aligned display, right after 'on a :'. python -I move_marker.py 6 328 '\\[' --before (simulated in memory on both layers with crops_326_330/sim_markers.py: '... pour \\(1+Xt\\)~; on a :' / marker / '\\[' / '\\begin{aligned}' / '\\lambda'_u(1+Xt) &=...'). The entries for this display filed under p. 327 work before or after the move."
+ },
+ {
+  "page": 328,
+  "where": "after the display, 'Si on note γ' les opérations γ correspondant aux opérations λ''",
+  "scan": "'Si on note γ'' begins a new, indented paragraph (both scans)",
+  "tex": "\\] followed directly by 'Si on note'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nSi on note",
+   "new": "\\]\n\nSi on note"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 328,
+  "where": "after (3.6.2), 'On notera Q'_{i,j} le coefficient'",
+  "scan": "'On notera' begins a new, indented paragraph (both scans)",
+  "tex": "\\end{equation} followed directly by 'On notera'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nOn notera",
+   "new": "\\end{equation}\n\nOn notera"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 328,
+  "where": "'le coefficient de t^j dans γ'^i(1+...+X_nt^n+...)'",
+  "scan": "typed stops on the baseline, twice (both scans; crops_326_330/c328_dots1.png)",
+  "tex": "\\gamma'^i(1+\\cdots+X_nt^n+\\cdots)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\gamma'^i(1+\\cdots+X_nt^n+\\cdots)",
+   "new": "\\gamma'^i(1+\\ldots+X_nt^n+\\ldots)"
+  },
+  "note": "\\cdots sets the dots at mid-height; the typescript has baseline stops (same fix as pp. 298-299, 308, 310)."
+ },
+ {
+  "page": 328,
+  "where": "before 'Soient K un λ-anneau, x ∈ K. Du diagramme (3.6.1)'",
+  "scan": "'Soient K un λ-anneau' begins a new, indented paragraph after '... de poids variant entre j et ij.' (both scans)",
+  "tex": "'et \\(ij\\). Soient \\(K\\)' (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "et \\(ij\\). Soient",
+   "new": "et \\(ij\\).\n\nSoient"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 328,
+  "where": "after (3.6.4), 'On remarquera enfin que la structure de pré-λ-anneau'",
+  "scan": "'On remarquera enfin' begins a new, indented paragraph (both scans)",
+  "tex": "\\end{equation} followed directly by 'On remarquera'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nOn remarquera",
+   "new": "\\end{equation}\n\nOn remarquera"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 328,
+  "where": "3.7, 'sera noté Ĝ_o (resp. Ĝ_∇)'",
+  "scan": "Ĝ with the typed letter o as index, x-height o as in 1̲_o (p. 328) and Ĝ(A)_o, Ĝ^u(A)_o (p. 329); the small circle of 'le signe ∘' (p. 326) and Ĝ∘Ĝ (p. 327) is a different sign (both scans; crops_326_330/c328_Go.png)",
+  "tex": "\\(\\Gcirc\\) (= \\widehat G_{\\circ})",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "sera noté \\(\\Gcirc\\)",
+   "new": "sera noté \\(\\Ghat_o\\)"
+  },
+  "note": "The TeX writes the same typed o as the letter o elsewhere (1_o on p. 328, \\Ghat(A)_o and \\Ghat^u(A)_o on p. 329); \\Gcirc occurs only here and in the index of notations. Low: the o names the law ∘; decide with the index-zero-as-o convention."
+ },
+ {
+  "page": 329,
+  "where": "first paragraph, 'tel que le diagramme 3.7.1 soit commumatif'",
+  "scan": "commumatif (both scans)",
+  "tex": "commumatif (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "commutatif",
+  "note": "Typing error; the next line has 'soit commutatif'. The TeX keeps the printed reading (the corrected layer too)."
+ },
+ {
+  "page": 329,
+  "where": "between the diagrams (3.7.1) and (3.7.2)",
+  "scan": "nothing between the two diagrams: (3.7.2) follows (3.7.1) after a blank (both scans)",
+  "tex": "'\\]' / 'et' / '\\['",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\net\n\\[",
+   "new": "\\]\n\\["
+  },
+  "note": "The TeX adds the word 'et'."
+ },
+ {
+  "page": 329,
+  "where": "diagram (3.7.1), bottom arrow Ĝ^t(A)_o → Ĝ^u(Ĝ^t(A)_o)_o",
+  "scan": "λ_u above the bottom arrow (both scans)",
+  "tex": "\\arrow[r,\"\\lambda_u\"'] (label set below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r,\"\\lambda_u\"']",
+   "new": "\\arrow[r,\"\\lambda_u\"]"
+  },
+  "note": "Label on the wrong side of the arrow; the other three labels stand as printed."
+ },
+ {
+  "page": 329,
+  "where": "diagram (3.7.2), left vertical arrow A → Ĝ^t(A)_∇ (label γ_t)",
+  "scan": "a plain vertical line without arrowhead; the right vertical arrow and both vertical arrows of (3.7.1) have their heads (both scans; crops_326_330/c329_gline.png, w329_gline.png)",
+  "tex": "\\arrow[d,\"\\gamma_t\"'] (with a head)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[d,\"\\gamma_t\"']",
+   "new": "\\arrow[d,\"\\gamma_t\"',dash]"
+  },
+  "corrected": "\\arrow[d,\"\\gamma_t\"']",
+  "note": "The head was not drawn; the TeX silently supplies it (same kind of entry as pp. 31, 92, 142). dash is tikz-cd's key for a line without tips."
+ },
+ {
+  "page": 329,
+  "where": "diagram (3.7.2), bottom arrow Ĝ^t(A)_∇ → Ĝ^u(Ĝ^t(A)_∇)_∇",
+  "scan": "γ'_u above the bottom arrow (both scans)",
+  "tex": "\\arrow[r,\"\\gamma'_u\"'] (label set below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r,\"\\gamma'_u\"']",
+   "new": "\\arrow[r,\"\\gamma'_u\"]"
+  },
+  "note": "Label on the wrong side of the arrow; γ_u (top), γ_t (left) and Ĝ^u(γ_t) (right) stand as printed."
+ },
+ {
+  "page": 329,
+  "where": "(3.8.1), end",
+  "scan": "'... = exp(-xLog(1-t))' with no punctuation (both scans; crops_326_330/c329_381end.png)",
+  "tex": "=\\exp(-x\\Log(1-t)).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\exp(-x\\Log(1-t)).",
+   "new": "=\\exp(-x\\Log(1-t))"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 329,
+  "where": "after (3.8.1), 'Soit a un élément de K'",
+  "scan": "'Soit a un élément de K' begins a new, indented paragraph (both scans)",
+  "tex": "\\end{equation} followed directly by 'Soit \\(a\\)'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nSoit \\(a\\)",
+   "new": "\\end{equation}\n\nSoit \\(a\\)"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 329,
+  "where": "display after 'soit :' (γ_t(a)∇(1+Xt) = ρ_t(...) = ρ_t((...)^a)), end",
+  "scan": "the display ends with the closing parenthesis, no punctuation (both scans; crops_326_330/c329_dispend.png)",
+  "tex": "...\\right)^a\\right).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\right)^a\\right).",
+   "new": "\\right)^a\\right)"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 330,
+  "where": "Définition 3.9 (the statement)",
+  "scan": "underlined word group by word group: 'Soit', 'un', 'anneau', 'on appelle', 'la donnée d'une', 'algèbre', 'et d'un', 'homomorphisme de', 'algèbres', 'est un', 'homomorphisme compatible aux augmentations'; the defined terms K-λ-algèbre augmentée and homomorphisme de K-λ-algèbres augmentées are left plain (both scans)",
+  "tex": "the statement in roman (no \\underline, no \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé V continues the Exposé II-IV pattern of GLOBAL_ISSUES 82 (as reported for pp. 298, 306-311, 314): not itemized, for the scripted per-exposé decision. No \\emph on the plain defined terms (as the print)."
+ },
+ {
+  "page": 330,
+  "where": "Exemple 3.9.1: the constant sheaf ℤ̲ (7 places) and the sheaves F̲, F̲' (2 places)",
+  "scan": "ℤ underlined in H^o(X,ℤ̲) (5 times), 'faisceau constant ℤ̲ sur X', 'une section de ℤ̲'; 'soit alors F̲ le faisceau', 'et soit F̲' le faisceau' (the underline stops before the prime). Plain in the print: 'l'élément F - F'', A, A^n, U_n (both scans; witness p. 330)",
+  "tex": "\\mathbb Z, F, F' (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé V transcription (no underlines), reported once as for the letters of p. 315. Three examples, in the form to use if the diplomatic layer reproduces them: 'et que \\(H^0(X,\\mathbb Z)\\) est' -> 'et que \\(H^0(X,\\underline{\\mathbb Z})\\) est'; 'faisceau constant \\(\\mathbb Z\\) sur' -> 'faisceau constant \\(\\underline{\\mathbb Z}\\) sur'; 'et soit \\(F'\\) le faisceau' -> 'et soit \\(\\underline{F}'\\) le faisceau'. Not for a blind script on F (plain in F - F'). main.tex has no underlined Z anywhere (23 times H^0(X,\\mathbb Z)): other pages may have the same omission (not checked)."
+ },
+ {
+  "page": 330,
+  "where": "'l'additivité du rang entraine qu'on définit ainsi'",
+  "scan": "entraine: a plain dotted i, no circumflex (both scans; crops_326_330/c330_entraine.png, w330_entraine.png; the a is broken)",
+  "tex": "entraîne (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "entraîne",
+   "new": "entraine"
+  },
+  "corrected": "entraîne",
+  "note": "Missing circumflex (the typescript types its accents: même, être, binômial, polynôme). The TeX silently corrects; the fix restores the printed reading in the diplomatic layer."
+ },
+ {
+  "page": 330,
+  "where": "before 'Il est immédiat de vérifier qu'on obtient bien ainsi'",
+  "scan": "'Il est immédiat' begins a new, indented paragraph after '... l'élément F - F' de K˙(X).' (both scans)",
+  "tex": "'de \\(K^\\bullet(X)\\). Il est immédiat' (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "de \\(K^\\bullet(X)\\). Il est immédiat",
+   "new": "de \\(K^\\bullet(X)\\).\n\nIl est immédiat"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 330,
+  "where": "last line of page_330.tex: the heading '3.10' (printed at the top of p. 331)",
+  "scan": "'3.10  Soit A une K-λ-algèbre augmentée.': no stop after 3.10 (both scans; crops_326_330/c331_310.png from the main PDF, w331_310.png)",
+  "tex": "\\textbf{3.10.}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textbf{3.10.}",
+   "new": "\\textbf{3.10}"
+  },
+  "note": "Filed under p. 330 because the heading stands in page_330.tex now (see the folio-331 marker entry); the marker command's anchor '\\textbf{3.10' works before or after this edit. The bold is the pending paragraph-number decision (not reported)."
+ },
+ {
+  "page": 330,
+  "where": "end of page (folio-331 marker)",
+  "scan": "p. 330 ends '... C'est toujours de celle-ci qu'il sera question dans la suite.'; p. 331 begins '3.10  Soit A une K-λ-algèbre augmentée.' (both scans)",
+  "tex": "'\\textbf{3.10.}' is the last line of page_330.tex, above the folio-331 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 331 really begins with the heading '\\textbf{3.10.}' (a heading at the top of a page, not moved by the 10 Nov script). python -I move_marker.py 6 331 '\\textbf{3.10' --before (anchor without the stop, so it works before or after the p. 330 punctuation entry; simulated in memory on both layers with crops_326_330/sim_markers.py: '... dans la suite.' / blank / marker / '\\textbf{3.10.}' / 'Soit \\(A\\) une ...'). The checker of p. 331 may report the same boundary: apply once."
+ }
+]

@@ -1,0 +1,417 @@
+[
+ {
+  "page": 136,
+  "where": "Lemme 5.8.3, first line of the statement",
+  "scan": "underlined by word groups: 'Soit', 'un', 'Module à gauche', 'Conditions équivalentes'; E, 'A-', the full stop and the colon not (both scans)",
+  "tex": "Soit \\(E\\) un \\(A\\)-Module à gauche. Conditions équivalentes : (roman, no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(E\\) un \\(A\\)-Module à gauche. Conditions équivalentes :",
+   "new": "\\emph{Soit \\(E\\) un \\(A\\)-Module à gauche. Conditions équivalentes} :"
+  },
+  "note": "The statement is in roman in the TeX, as Corollaire 1.4.5 and 2.4-2.7 (pp. 93-100, fixed singly). The formulas inside the emphasis are left to the volume decision on block underlines."
+ },
+ {
+  "page": 136,
+  "where": "Lemme 5.8.3, items (i) and (ii)",
+  "scan": "(i) 'est localement facteur direct d'un Module libre de type fini', (ii) 'est plat et de présentation finie' underlined; E and the final ; and . not (both scans)",
+  "tex": "\\item \\(E\\) est localement ... fini; / \\item \\(E\\) est plat et de présentation finie. (roman)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item \\(E\\) est localement facteur direct d'un Module libre de type fini;\n\\item \\(E\\) est plat et de présentation finie.",
+   "new": "\\item \\(E\\) \\emph{est localement facteur direct d'un Module libre de type fini};\n\\item \\(E\\) \\emph{est plat et de présentation finie}."
+  },
+  "note": "Rest of the statement of the entry above."
+ },
+ {
+  "page": 136,
+  "where": "proof of 5.8.3, 'le foncteur Hom_A(E,.) est exact'",
+  "scan": "Hom underlined (the Module Hom; both scans)",
+  "tex": "\\(\\Hom_A(E,\\cdot)\\) (\\Hom = \\operatorname{Hom}, plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "foncteur \\(\\Hom_A(E",
+   "new": "foncteur \\(\\underline{\\Hom}_A(E"
+  },
+  "note": "All ten Hom of this page are underlined in the print; the TeX writes plain \\Hom (main.tex line 2847). The lemma cited in this sentence, (1.3.1), is written \\underline{\\Hom}(P,.) in main.tex (line 1939), as are Notation 4.5 and its formulas. See the message."
+ },
+ {
+  "page": 136,
+  "where": "same formula, 'Hom_A(E,.)'",
+  "scan": "a typed full stop on the baseline (both scans)",
+  "tex": "(E,\\cdot)",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "(E,\\cdot)",
+   "new": "(E,.)"
+  },
+  "note": "As (P,\\cdot) -> (P,.) on p. 89 (findings_086_090, applied: main.tex line 1939). Independent of the underline entry before it."
+ },
+ {
+  "page": 136,
+  "where": "display after 'On doit montrer que la suite'",
+  "scan": "Hom_A(E,F) -> Hom_A(E,F\") -> 0 with both Hom underlined (both scans)",
+  "tex": "\\Hom_A(E,F)\\longrightarrow \\Hom_A(E,F'')\\longrightarrow 0",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom_A(E,F)\\longrightarrow \\Hom_A(E,F'')",
+   "new": "\\underline{\\Hom}_A(E,F)\\longrightarrow \\underline{\\Hom}_A(E,F'')"
+  },
+  "note": "As the entry above."
+ },
+ {
+  "page": 136,
+  "where": "'la suite déduite par application du foncteur Hom(.,I)'",
+  "scan": "Hom underlined (both scans)",
+  "tex": "\\(\\Hom_{\\mathbb Z_S}(\\cdot,I)\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "foncteur \\(\\Hom_{\\mathbb Z_S}",
+   "new": "foncteur \\(\\underline{\\Hom}_{\\mathbb Z_S}"
+  },
+  "note": "As above. Apply before the misprint entry for the same formula (its old is the text this entry and the next one leave)."
+ },
+ {
+  "page": 136,
+  "where": "same formula, '(.,I)'",
+  "scan": "a typed full stop on the baseline (both scans)",
+  "tex": "(\\cdot,I)",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "(\\cdot,I)",
+   "new": "(.,I)"
+  },
+  "note": "As (E,\\cdot) above. Apply before the misprint entry that follows."
+ },
+ {
+  "page": 136,
+  "where": "same formula, the index of Hom",
+  "scan": "Hom_Z(.,I): the index is a double-struck Z alone, no S (both scans; crops_136_140/p136_homZ.png, w136_homZ.png)",
+  "tex": "\\Hom_{\\mathbb Z_S}(\\cdot,I) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\underline{\\Hom}_{\\mathbb Z_S}(.,I)",
+   "new": "\\underline{\\Hom}_{\\mathbb Z}(.,I)"
+  },
+  "corrected": "\\underline{\\Hom}_{\\mathbb Z_S}(.,I)",
+  "note": "The functor is the Hom of Z_S-Modules into the Z_S-Module injectif I of the same sentence; the diagram below has Hom_{Z_S} four times. The typist left out the index S; the TeX silently supplies it. The old is the text left by the two entries before this one (apply in JSON order); the edit removes only the S."
+ },
+ {
+  "page": 136,
+  "where": "diagram (3.17.1), upper row",
+  "scan": "Hom_{Z_S}(F\",I) (x)_A E -> Hom_{Z_S}(F,I) (x)_A E, both Hom underlined (both scans)",
+  "tex": "0&\\to&\\Hom_{\\mathbb Z_S}(F'',I)\\otimes_A E&\\to&\\Hom_{\\mathbb Z_S}(F,I)\\otimes_A E",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "0&\\to&\\Hom_{\\mathbb Z_S}(F'',I)\\otimes_A E&\\to&\\Hom_{\\mathbb Z_S}(F,I)\\otimes_A E",
+   "new": "0&\\to&\\underline{\\Hom}_{\\mathbb Z_S}(F'',I)\\otimes_A E&\\to&\\underline{\\Hom}_{\\mathbb Z_S}(F,I)\\otimes_A E"
+  },
+  "note": "As above."
+ },
+ {
+  "page": 136,
+  "where": "diagram (3.17.1), lower row",
+  "scan": "Hom_{Z_S}(Hom_A(E,F\"),I) -> Hom_{Z_S}(Hom_A(E,F),I) . with all four Hom underlined (both scans)",
+  "tex": "0&\\to&\\Hom_{\\mathbb Z_S}(\\Hom_A(E,F''),I)&\\to&\\Hom_{\\mathbb Z_S}(\\Hom_A(E,F),I).",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "0&\\to&\\Hom_{\\mathbb Z_S}(\\Hom_A(E,F''),I)&\\to&\\Hom_{\\mathbb Z_S}(\\Hom_A(E,F),I).",
+   "new": "0&\\to&\\underline{\\Hom}_{\\mathbb Z_S}(\\underline{\\Hom}_A(E,F''),I)&\\to&\\underline{\\Hom}_{\\mathbb Z_S}(\\underline{\\Hom}_A(E,F),I)."
+  },
+  "note": "As above."
+ },
+ {
+  "page": 136,
+  "where": "'Preuve de (5.8).'",
+  "scan": "only 'Preuve de' underlined; '(5.8).' not (both scans; crops_136_140/w136_preuvede.png)",
+  "tex": "\\emph{Preuve de (5.8).}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Preuve de (5.8).}",
+   "new": "\\emph{Preuve de} (5.8)."
+  },
+  "note": "The emphasis covers the reference and the full stop, which the print leaves plain."
+ },
+ {
+  "page": 137,
+  "where": "start of the page",
+  "scan": "p. 137 begins 'flèche de troncature' (both scans; OCR page_137.txt agrees); p. 136 ends '... en degré < m, la'",
+  "tex": "page_136.tex ends '... acyclique en degré \\(<m\\), la flèche de'; the folio-137 marker stands before 'troncature'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 137 really begins with 'flèche de'. Move the marker up: python -I move_marker.py 6 137 'flèche de' --before (simulated on both layers: '... en degré \\(<m\\), la' / marker / 'flèche de' / 'troncature')."
+ },
+ {
+  "page": 137,
+  "where": "diagram of the truncation, upper row",
+  "scan": "the row begins with an arrow: '-> E^{m-1} -> E^m -> E^{m+1} -> ...', no dots before it (both scans)",
+  "tex": "\\cdots&\\to&E^{m-1}&\\to&E^m&\\to&E^{m+1}\\to\\cdots\\\\",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cdots&\\to&E^{m-1}",
+   "new": "&\\to&E^{m-1}"
+  },
+  "note": "The TeX adds leading dots that the print does not have. Independent of the entry for the final dots."
+ },
+ {
+  "page": 137,
+  "where": "diagram of the truncation, lower row",
+  "scan": "the row begins with an arrow: '-> 0 -> E^m/B^m -> E^{m+1} -> ...', no dots before it (both scans)",
+  "tex": "\\cdots&\\to&0&\\to&E^m/B^m&\\to&E^{m+1}\\to\\cdots",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cdots&\\to&0",
+   "new": "&\\to&0"
+  },
+  "note": "As the upper row."
+ },
+ {
+  "page": 137,
+  "where": "diagram of the truncation, end of the upper row",
+  "scan": "three typed full stops on the baseline after the last arrow (both scans)",
+  "tex": "E^{m+1}\\to\\cdots\\\\",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "E^{m+1}\\to\\cdots\\\\",
+   "new": "E^{m+1}\\to\\ldots\\\\"
+  },
+  "note": "\\cdots sets the dots at mid-height (same kind of fix as pp. 49, 79, 80, 86, 95)."
+ },
+ {
+  "page": 137,
+  "where": "diagram of the truncation, end of the lower row",
+  "scan": "three typed full stops on the baseline after the last arrow (both scans)",
+  "tex": "E^{m+1}\\to\\cdots",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "E^{m+1}\\to\\cdots\n\\end{array}",
+   "new": "E^{m+1}\\to\\ldots\n\\end{array}"
+  },
+  "note": "As the upper row."
+ },
+ {
+  "page": 137,
+  "where": "distinguished triangle E\" -> E' -> E'^m[-m]",
+  "scan": "a comma to the right of the triangle, on the line of E\" -> E' (both scans)",
+  "tex": "tikzcd without punctuation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "E' \\arrow[ul]\n\\end{tikzcd}",
+   "new": "E' \\arrow[ul] & ,\n\\end{tikzcd}"
+  },
+  "note": "Set in a cell of its own, as the full stop after the triangle on p. 99 (findings_096_100)."
+ },
+ {
+  "page": 137,
+  "where": "'donc que l'on a parf.amp(E) ⊂ [m,n]'",
+  "scan": "parf.amp(E) (both scans; crops_136_140/p137_parfamp.png)",
+  "tex": "\\perfamp(E), which prints perf.amp (\\providecommand{\\perfamp}{\\operatorname{perf.amp}}, main.tex line 2852)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\perfamp(E)",
+   "new": "\\operatorname{parf.amp}(E)"
+  },
+  "note": "The print types parf.amp throughout Exposé I (also p. 128 on the witness; the OCR of pp. 121-149 reads parf.amp), and parf.dim where \\perfdim (line 2853) prints perf.dim. Changing the two definitions repairs all 16 \\perfamp and 4 \\perfdim; with that change this page edit is unnecessary but harmless (\\operatorname{parf.amp} is the file's own form, line 4360)."
+ },
+ {
+  "page": 137,
+  "where": "Remarques 5.8.4 b), 'Notons D(_AS)_parf'",
+  "scan": "the index 'parf' underlined (both scans)",
+  "tex": "\\Dpx({}_A S)_{\\mathrm{parf}}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Notons \\(\\Dpx({}_A S)_{\\mathrm{parf}}\\)",
+   "new": "Notons \\(\\Dpx({}_A S)_{\\underline{\\mathrm{parf}}}\\)"
+  },
+  "note": "The underlined index is the notation defined here (complexes parfaits et de tor-dimension finie), distinct from the plain parf of D^b(_AX)_parf (5.10, p. 138, not underlined); the volume's index of notations writes the same distinction as \\Dcat(f)_{\\underline{\\parf}} (III 4.2)."
+ },
+ {
+  "page": 137,
+  "where": "display after 'induit un foncteur'",
+  "scan": "D(S)_parf with the index 'parf' underlined; 'coh' not (both scans)",
+  "tex": "\\Dpx(S)_{\\mathrm{parf}}\\times_S \\Dpx^b(S)_{\\mathrm{coh}}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Dpx(S)_{\\mathrm{parf}}\\times_S",
+   "new": "\\Dpx(S)_{\\underline{\\mathrm{parf}}}\\times_S"
+  },
+  "note": "As the entry above."
+ },
+ {
+  "page": 137,
+  "where": "the site S, pp. 137-139",
+  "scan": "S underlined (S̲) wherever it names the site: p. 137 'D(_AS̲)', 'si S̲ est de type fini', 'sous-S̲-catégorie', 'D(S̲)_parf x_S̲ D^b(S̲)_coh'; p. 138 'S̲ = (Ens)', 'où S est l'objet final de S̲' (the object S plain), 'S̲_/X'; p. 139 'objet s-ponctué U de S̲', '(S̲,A)' (both scans)",
+  "tex": "plain \\(S\\): 'C'est cependant le cas si \\(S\\) est de type fini' (p. 137), 'où \\(S\\) est l'objet final de \\(S\\)' (p. 138), '\\((S,A)\\) est défini' (p. 139)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, reported for pp. 84-100 (findings_081_085 to 096_100): one decision for the exposé, not itemized."
+ },
+ {
+  "page": 138,
+  "where": "Corollaire 5.9, statement before the display",
+  "scan": "underlined by word groups from 'Supposons que' to 'voir', then 'et' and 'Alors on a'; the references '(MULT VI 2.6)' and '(EGA O_IV 17.2.8)).' are not underlined (both scans)",
+  "tex": "no emphasis: the statement is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Supposons que \\(S=(\\mathrm{Ens})\\) (donc \\(A\\) «~est~» un anneau ordinaire) et que tout \\(A\\)-module à gauche soit de tor-dimension finie (c'est le cas par exemple si \\(A\\) est de dimension cohomologique globale finie, voir (MULT VI 2.6) et (EGA \\(0_{\\mathrm{IV}}\\) 17.2.8)). Alors on a",
+   "new": "\\emph{Supposons que \\(S=(\\mathrm{Ens})\\) (donc \\(A\\) «~est~» un anneau ordinaire) et que tout \\(A\\)-module à gauche soit de tor-dimension finie (c'est le cas par exemple si \\(A\\) est de dimension cohomologique globale finie, voir} (MULT VI 2.6) \\emph{et} (EGA \\(0_{\\mathrm{IV}}\\) 17.2.8)). \\emph{Alors on a}"
+  },
+  "note": "One edit, so that the braces stay balanced; the references stay in roman as the print has them."
+ },
+ {
+  "page": 138,
+  "where": "Corollaire 5.9 (i)",
+  "scan": "', et' after (i) with 'et' underlined (both scans)",
+  "tex": "\\quad\\text{et}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{et}",
+   "new": "\\text{\\emph{et}}"
+  },
+  "note": "The statement's word inside the display (as pp. 73-74)."
+ },
+ {
+  "page": 138,
+  "where": "Corollaire 5.9 (ii)",
+  "scan": "D(_AS)_parf with the index 'parf' underlined (both scans; crops_136_140/w138_i_ii.png); 'torf' and 'coh' not",
+  "tex": "\\Dpx({}_A S)_{\\mathrm{parf}}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\Dpx({}_A S)_{\\mathrm{parf}}",
+   "new": "=\\Dpx({}_A S)_{\\underline{\\mathrm{parf}}}"
+  },
+  "note": "The notation of 5.8.4 b) (p. 137): perfect and of finite tor-dimension, as the paraphrase 'Autrement dit' says."
+ },
+ {
+  "page": 138,
+  "where": "Corollaire 5.9, 'Autrement dit ...'",
+  "scan": "underlined by word groups from 'Autrement dit' to 'pseudo-cohérent)'; the final full stop not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Autrement dit, pour que \\(E\\in\\Ob\\Dpx({}_A S)\\) soit de tor-dimension finie (resp. de tor-dimension finie et parfait) il faut et il suffit que \\(E\\) soit à cohomologie bornée (resp. à cohomologie bornée et pseudo-cohérent).",
+   "new": "\\emph{Autrement dit, pour que \\(E\\in\\Ob\\Dpx({}_A S)\\) soit de tor-dimension finie (resp. de tor-dimension finie et parfait) il faut et il suffit que \\(E\\) soit à cohomologie bornée (resp. à cohomologie bornée et pseudo-cohérent)}."
+  },
+  "note": "End of the statement of Corollaire 5.9."
+ },
+ {
+  "page": 138,
+  "where": "'Preuve.' (p. 138; p. 139 twice)",
+  "scan": "only the word underlined, the full stop after the underline (both scans; crops_136_140/w138_preuve.png)",
+  "tex": "\\emph{Preuve.} (stop inside the emphasis)",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention: main.tex has \\emph{Preuve.} 132 times; p. 90 reported \\emph{Démonstration.} the same way (findings_086_090). A scripted pass \\emph{Preuve.} -> \\emph{Preuve}. would follow the print here. Not itemized."
+ },
+ {
+  "page": 138,
+  "where": "label of Corollaire 5.10",
+  "scan": "'Corollaire 5.10' with no full stop after the number (both scans; crops_136_140/p138_cor510.png, w138_cor510.png)",
+  "tex": "\\textbf{Corollaire 5.10.}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textbf{Corollaire 5.10.}",
+   "new": "\\textbf{Corollaire 5.10}"
+  },
+  "note": "The TeX adds the full stop (5.9, 5.10.1 and 5.11 have theirs in the print)."
+ },
+ {
+  "page": 138,
+  "where": "Corollaire 5.10, statement",
+  "scan": "underlined by word groups: 'Soit', S̲, 'Supposons que', 'ait assez de points', then 'et que', 'pour tout point', 'de', 'tout', 'module à gauche soit de tor-dimension finie', 'Alors on a'; the reference '(SGA 4 IV 6.4.1.)' is not (both scans)",
+  "tex": "no emphasis: the statement is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(X\\in\\Ob S\\). Supposons que \\(S_{/X}\\) ait assez de points (SGA 4 IV 6.4.1.) et que, pour tout point \\(s\\) de \\(S_{/X}\\), tout \\(A_s\\)-module à gauche soit de tor-dimension finie. Alors on a",
+   "new": "\\emph{Soit \\(X\\in\\Ob S\\). Supposons que \\(S_{/X}\\) ait assez de points} (SGA 4 IV 6.4.1.) \\emph{et que, pour tout point \\(s\\) de \\(S_{/X}\\), tout \\(A_s\\)-module à gauche soit de tor-dimension finie. Alors on a}"
+  },
+  "note": "One edit (balanced braces). Independent of the label entry. The display after it is not underlined, and the sentence 'Autrement dit ...' at the top of p. 139 is not underlined either (as the TeX)."
+ },
+ {
+  "page": 140,
+  "where": "Définition 6.1, statement before the diagram",
+  "scan": "underlined by word groups: 'Soient', 'une catégorie additive (resp. triangulée)', 'et', 'un groupe abélien', 'On dit qu'une fonction f', 'est une', then 'si pour tous', 'tels que l'on ait', '(resp. un triangle distingué'; the defined term 'fonction additive de C dans F' is not underlined (both scans; crops_136_140/w140_def61.png)",
+  "tex": "no emphasis: the definition is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient \\(\\mathcal C\\) une catégorie additive (resp. triangulée) et \\(F\\) un groupe abélien. On dit qu'une fonction \\(f:\\Ob(\\mathcal C)\\longrightarrow F\\) est une fonction additive de \\(\\mathcal C\\) dans \\(F\\) si pour tous \\(L,L',L''\\in\\Ob(\\mathcal C)\\) tels que l'on ait \\(L\\simeq L'+L''\\) (resp. un triangle distingué",
+   "new": "\\emph{Soient \\(\\mathcal C\\) une catégorie additive (resp. triangulée) et \\(F\\) un groupe abélien. On dit qu'une fonction \\(f:\\Ob(\\mathcal C)\\longrightarrow F\\) est une} fonction additive de \\(\\mathcal C\\) dans \\(F\\) \\emph{si pour tous \\(L,L',L''\\in\\Ob(\\mathcal C)\\) tels que l'on ait \\(L\\simeq L'+L''\\) (resp. un triangle distingué}"
+  },
+  "note": "As Définitions 1.4.3 and 2.1 (pp. 93, 95): the defined term stays out of the underline. One edit (balanced braces)."
+ },
+ {
+  "page": 140,
+  "where": "Définition 6.1, after the diagram",
+  "scan": "'on a' underlined; 'f(L) = f(L') + f(L\")' and the full stop not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": ") on a \\(f(L)=f(L')+f(L'')\\).",
+   "new": ") \\emph{on a} \\(f(L)=f(L')+f(L'')\\)."
+  },
+  "note": ""
+ },
+ {
+  "page": 140,
+  "where": "'Les fonctions additives de C dans F forment ...'",
+  "scan": "underlined by word groups: 'Les fonctions additives de', 'dans', 'forment un groupe abélien,', 'noté'; 'Add(C,F).' not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Les fonctions additives de \\(\\mathcal C\\) dans \\(F\\) forment un groupe abélien, noté \\(\\Add(\\mathcal C,F)\\).",
+   "new": "\\emph{Les fonctions additives de \\(\\mathcal C\\) dans \\(F\\) forment un groupe abélien, noté} \\(\\Add(\\mathcal C,F)\\)."
+  },
+  "note": "Last sentence of the definition; the notation Add(C,F) stays in roman as printed."
+ },
+ {
+  "page": 140,
+  "where": "the category letter C of §6",
+  "scan": "a plain typed C, neither underlined nor double-struck: 'Soient C une catégorie additive', 'ob(C)', 'Add(C,F)' (both scans; also p. 141 '6.2. Soient C une catégorie triangulée' on the witness)",
+  "tex": "\\mathcal C (6 times on p. 140)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Pending volume decision on the category letter (NOTE_6), not itemized: in §6 the category is an arbitrary additive or triangulated category, not an S-category, and the typist leaves it plain."
+ },
+ {
+  "page": 140,
+  "where": "end of the page",
+  "scan": "p. 140 ends with 'noté Add(C,F).'; the paragraph number '6.2.' is the first line of p. 141 (both scans; witness p. 141)",
+  "tex": "page_140.tex ends with '\\textbf{6.2.}'; the folio-141 marker stands after it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 141 really begins with '6.2.' (a heading at the top of a page, which the script did not move). Move the folio-141 marker up: python -I move_marker.py 6 141 '\\textbf{6.2.}' --before (simulated on both layers: '... \\(\\Add(\\mathcal C,F)\\).' / blank line / marker / '\\textbf{6.2.}' / 'Soient ...')."
+ }
+]

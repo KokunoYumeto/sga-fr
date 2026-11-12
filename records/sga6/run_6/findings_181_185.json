@@ -1,0 +1,428 @@
+[
+ {
+  "page": 181,
+  "where": "start of page",
+  "scan": "p. 181 begins 'où Lib(A) désigne la catégorie des A-modules libres de type fini et (*)'; p. 180 ends with the display K⁻(Lib(S)) --(*)--> K⁻(Lib(A)) --(**)--> D(A) (both scans; OCR of p. 181)",
+  "tex": "'où $\\Lib(A)$' is the last line of page_180.tex (under the folio-180 marker); page_181.tex begins 'désigne la catégorie'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 181 really begins with 'où $\\Lib(A)$'. Already done in main.tex: both layers now have the folio-181 marker above that line (the snapshot page_181.tex predates the move; checked at the end of this check with crops_181_185/sim_markers.py and chk_main.py: the live span differs from the snapshot only by this line). Nothing to do: python -I move_marker.py 6 181 'où $\\Lib(A)$' --before now reports 'anchor not found' and changes nothing."
+ },
+ {
+  "page": 181,
+  "where": "Preuve of Lemme 2.4.4, 'avec A = Coh(S), B = Mod(S), φ : A → B'",
+  "scan": "plain typed capitals A and B, neither underlined nor script (both scans; crops_181_185/p181_AB.png, w181_AB.png)",
+  "tex": "$\\mathcal A=\\Coh(S)$, $\\mathcal B=\\Mod(S)$, $\\varphi:\\mathcal A\\to\\mathcal B$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathcal A=\\Coh(S)$, $\\mathcal B=\\Mod(S)$, $\\varphi:\\mathcal A\\to\\mathcal B$",
+   "new": "$A=\\Coh(S)$, $B=\\Mod(S)$, $\\varphi:A\\to B$"
+  },
+  "note": "The cited Lemme 2.1.3 prints the same plain A and B; its statement on p. 165 was fixed the same way (findings_161_165.json, applied: 'Soient $A$ et $B$'), pp. 166-167 are a convention entry of findings_166_170.json."
+ },
+ {
+  "page": 181,
+  "where": "Proposition 2.4.5 a), 'En outre le foncteur RΓ_S : D⁺(S) → D⁺(A)'",
+  "scan": "R with a double underline, R̳Γ_S (both scans; crops_181_185/p181_RGamma.png)",
+  "tex": "$R\\Gamma_S:\\mathrm D^+(S)\\to\\mathrm D^+(A)$ (plain R)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "le foncteur $R\\Gamma_S:",
+   "new": "le foncteur $\\mathbb R\\Gamma_S:"
+  },
+  "note": "The typist's double underline of the derived functor; same form as the applied p. 175 entry ($\\mathbb R\\Gamma_S$, findings_171_175.json) and the p. 176 diagram entries; the TeX also writes the same double underline as \\mathbb under Z (p. 182) and R^n (p. 184). Five places on pp. 181-182."
+ },
+ {
+  "page": 181,
+  "where": "Proposition 2.4.5 a), display 'RΓ_S = D^b(S)_coh → D⁺(A) ,'",
+  "scan": "R̳Γ_S: R with a double underline (both scans; crops_181_185/p181_RGamma.png)",
+  "tex": "R\\Gamma_S=\\mathrm D^b(S)_{\\coh}\\longrightarrow\\mathrm D^+(A), (plain R)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "R\\Gamma_S=\\mathrm D^b",
+   "new": "\\mathbb R\\Gamma_S=\\mathrm D^b"
+  },
+  "note": "As the previous entry. Listed before the misprint entry for the same display (that one has no fix)."
+ },
+ {
+  "page": 181,
+  "where": "Proposition 2.4.5 a), display 'RΓ_S = D^b(S)_coh → D⁺(A) ,'",
+  "scan": "an equals sign between RΓ_S and D^b(S)_coh (both scans; crops_181_185/p181_RGamma.png, w181_small.png)",
+  "tex": "R\\Gamma_S=\\mathrm D^b(S)_{\\coh} (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\mathbb R\\Gamma_S:\\mathrm D^b(S)_{\\coh}\\longrightarrow\\mathrm D^+(A)",
+  "note": "The display names the induced fully faithful functor, as in c) on p. 182 ('RΓ_S : D(S)_parf → D⁺(A)'): a colon is meant. The TeX keeps the printed reading; the corrected layer already has ':'. The corrected reading assumes the R entry above."
+ },
+ {
+  "page": 181,
+  "where": "statements of Exposé II on pp. 181-185 (convention)",
+  "scan": "the statements are underlined by word groups: Lemme 2.4.4 'Sous les hypothèses de', 'le foncteur canonique', 'est pleinement fidèle et a pour image essentielle' (p. 181); Proposition 2.4.5 a)-c) (pp. 181-182); Définition 2.4.7 and its two following sentences, where 'de Stein' is left out of the underline (p. 183); Proposition 2.4.8 and Lemme 2.4.8.1 (p. 184) (both scans)",
+  "tex": "all in roman; only the defined term of 2.4.7 is in \\emph ('On appelle \\emph{espace pseudo-analytique complexe} tout espace annelé ...')",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, not a page fix, as reported for pp. 160-165 and 177-180 (findings_156_160, 161_165, 176_180): the TeX sets Exposé II's statements in roman (pp. 166-170 were itemized and applied, so main.tex now mixes both). One pass for the exposé (block or word-group form: the pending decision of items 48/73). See the message."
+ },
+ {
+  "page": 182,
+  "where": "Proposition 2.4.5 c), 'En outre, le foncteur RΓ_S : D⁺(S) → D⁺(A)'",
+  "scan": "R̳Γ_S: R with a double underline (both scans)",
+  "tex": "$R\\Gamma_S:\\mathrm D^+(S)\\to\\mathrm D^+(A)$ (plain R)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "le foncteur $R\\Gamma_S:",
+   "new": "le foncteur $\\mathbb R\\Gamma_S:"
+  },
+  "note": "As p. 181."
+ },
+ {
+  "page": 182,
+  "where": "Proposition 2.4.5 c), display 'RΓ_S : D(S)_parf → D⁺(A) ,'",
+  "scan": "R̳Γ_S: R with a double underline (both scans)",
+  "tex": "R\\Gamma_S:\\mathrm D(S)_{\\parf}\\longrightarrow\\mathrm D^+(A), (plain R)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "R\\Gamma_S:\\mathrm D(S)",
+   "new": "\\mathbb R\\Gamma_S:\\mathrm D(S)"
+  },
+  "note": "As p. 181."
+ },
+ {
+  "page": 182,
+  "where": "Preuve of 2.4.5 a), label of the last arrow of 'D^b(Coh(S)) → D^b(S)_coh --RΓ_S--> D(A) ,'",
+  "scan": "R̳Γ_S over the arrow: R with a double underline (both scans)",
+  "tex": "\\xrightarrow{R\\Gamma_S} (plain R)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{R\\Gamma_S}",
+   "new": "\\xrightarrow{\\mathbb R\\Gamma_S}"
+  },
+  "note": "As p. 181. The arrow of the display above is labelled Γ_S without R in the print, as in the TeX."
+ },
+ {
+  "page": 182,
+  "where": "Proposition 2.4.5 b), 'F tel que F^i = 0 pour i ∈ [m,n]'",
+  "scan": "i ∈ [m,n]: the plain membership sign (both scans; crops_181_185/p182_Fi.png, w182_top.png)",
+  "tex": "pour $i\\in[m,n]$ (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "pour $i\\notin[m,n]$",
+  "note": "F is to vanish outside [m,n] (it has F^i ∈ ob Lib(S) for i > m and F^m ∈ ob Loclib(S)): ∉ is meant. The TeX keeps the printed reading; the corrected layer already has \\notin."
+ },
+ {
+  "page": 183,
+  "where": "first sentence, 'on a alors E^m ∈ ob Loclib(S)), d'où l'assertion'",
+  "scan": "Loclib(S)), with a second closing parenthesis that closes nothing (both scans)",
+  "tex": "$E^m\\in\\Ob\\Loclib(S))$ (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$E^m\\in\\Ob\\Loclib(S)$",
+  "note": "No parenthesis is open in the sentence. The TeX keeps the printed reading; the corrected layer already has one parenthesis."
+ },
+ {
+  "page": 183,
+  "where": "Preuve of 2.4.5 c), 'on voit que le foncteur K^b(Loclib(S)) → D(S) induit par Γ_S'",
+  "scan": "D(S) (both scans; crops_181_185/p183_DS.png, w183_mid.png)",
+  "tex": "$\\mathrm K^b(\\Loclib(S))\\to\\mathrm D(S)$ induit par $\\Gamma_S$ (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\mathrm K^b(\\Loclib(S))\\to\\mathrm D(A)$",
+  "note": "A functor induced by Γ_S lands in D(A) (statement c): 'RΓ_S : D(S)_parf → D⁺(A), dont l'image essentielle est D(A)_parf'; in (2.4.3 c)), whose argument is repeated here, Γ_S : D⁻(Coh(S)) → D(A)); with D(S) the sentence repeats the one before it. The TeX keeps the printed reading; the corrected layer still has D(S)."
+ },
+ {
+  "page": 183,
+  "where": "Preuve of 2.4.5 c), 'et a pour image essentielle D(S)_parf, et l'on achève'",
+  "scan": "D(S)_parf (both scans)",
+  "tex": "a pour image essentielle $\\mathrm D(S)_{\\parf}$, et l'on achève (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\mathrm D(A)_{\\parf}$",
+  "note": "Same slip as the previous entry: the essential image of the functor induced by Γ_S is D(A)_parf, as stated in c). The TeX keeps the printed reading; the corrected layer still has D(S)."
+ },
+ {
+  "page": 183,
+  "where": "after Définition 2.4.7, 'On dit qu'un espace pseudo-analytique complexe est de Stein ...'",
+  "scan": "'Le faisceau structural ... est donc cohérent.' and 'On dit qu'un espace pseudo-analytique complexe est de Stein si le topos correspondant l'est (2.4.1).' are two paragraphs, each with an indented first line (both scans)",
+  "tex": "one paragraph: '... est donc cohérent. On dit qu'un espace ...'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "est donc cohérent. On dit",
+   "new": "est donc cohérent.\n\nOn dit"
+  },
+  "note": ""
+ },
+ {
+  "page": 183,
+  "where": "macro block 'Exposé II continuation macros' at the end of page_183.tex (no text of this page)",
+  "scan": "the print types 'ob' (small o) throughout Exposé II: pp. 181-183 'M ∈ ob Coh(S)', 'E ∈ ob D(S)', 'E^m ∈ ob Loclib(S))'; the 20 \\Ob of pp. 187-198 that follow this block are all a typed 'ob' (OCR of each page: 'E ∈ ob Qcoh(S)', 'F ∈ ob Mod(S)', 'E ∈ ob D(Qcoh(S))')",
+  "tex": "\\renewcommand{\\Ob}{\\operatorname{Ob}}: from here to the next \\renewcommand{\\Ob} (p. 221, Appendice II) \\Ob prints 'Ob'; up to here it printed 'ob' (the \\renewcommand{\\Ob}{\\operatorname{ob}} of p. 159)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\renewcommand{\\Ob}{\\operatorname{Ob}}",
+   "new": "\\renewcommand{\\Ob}{\\operatorname{ob}}"
+  },
+  "note": "One edit instead of 20 on pp. 187-198: per folio the TeX's count of \\Ob equals the OCR's count of 'ob', and no 'Ob' (crops_181_185/ob_range.py). pp. 183-185 use no \\Ob after the block. The macro counts as the TeX's own text. See the message."
+ },
+ {
+  "page": 184,
+  "where": "footnote (1) of Proposition 2.4.8, 'il a été obtenu indépendamment par J. Frish [5]'",
+  "scan": "J. Frish (both scans; crops_181_185/p184_fn.png, w184_bot.png)",
+  "tex": "J. Frish [5] (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "J. Frisch [5]",
+  "note": "The bibliography of the exposé prints 'Frisch, J., Fonctions analytiques sur un ensemble semi-analytique' (OCR of p. 220; main.tex has \\item Frisch, J.). The TeX keeps the printed reading here; the corrected layer too."
+ },
+ {
+  "page": 184,
+  "where": "Preuve of Lemme 2.4.8.1, 'il existe un entier n_o tel (E_n)_s = (E_{n_o})_s'",
+  "scan": "'tel' at the end of the line, '(E_n)_s = (E_{n_o})_s pour n ≥ n_o.' on the next: no 'que' (both scans)",
+  "tex": "il existe un entier $n_0$ tel $(E_n)_s=(E_{n_0})_s$ (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "tel que $(E_n)_s=(E_{n_0})_s$",
+  "note": "The typist left out 'que'. The TeX keeps the printed reading; the corrected layer too."
+ },
+ {
+  "page": 184,
+  "where": "Preuve of Lemme 2.4.8.1, display 'M = M_o ⊃ M_1 ⊃ ... ⊃ M_q = 0'",
+  "scan": "three typed full stops on the baseline (both scans; crops_181_185/p184_filt.png)",
+  "tex": "M_1\\supset\\cdots\\supset M_q",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "M_1\\supset\\cdots\\supset M_q",
+   "new": "M_1\\supset\\ldots\\supset M_q"
+  },
+  "note": "\\cdots sets the dots at mid-height (same kind of fix as pp. 49, 79, 80)."
+ },
+ {
+  "page": 184,
+  "where": "Preuve of Lemme 2.4.8.1, 'telle que M_i/M_{i+1} ≃ O_s/p_i , où p_i est un idéal premier de O_s'",
+  "scan": "p_i twice: a plain typed p, not Fraktur and not underlined (both scans; crops_181_185/p184_pi_zoom.png)",
+  "tex": "\\mathcal O_s/\\mathfrak p_i$, où $\\mathfrak p_i$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal O_s/\\mathfrak p_i$, où $\\mathfrak p_i$",
+   "new": "\\mathcal O_s/p_i$, où $p_i$"
+  },
+  "note": "The typescript has no Fraktur p on these pages: the prime ideals of O_s are a plain p (also p. 185 '(resp. p_i)'), the coherent Ideals of p. 185 an underlined p."
+ },
+ {
+  "page": 185,
+  "where": "start of page",
+  "scan": "p. 184 ends 'on peut supposer, quitte à se loca-'; p. 185 begins 'liser au voisinage de s' (both scans; OCR of pp. 184-185)",
+  "tex": "'quitte à se' ends page_184.tex; page_185.tex begins with the whole word 'localiser'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 185 really begins with 'liser' ('localiser' is divided at the page break). python -I marker_split_word.py 6 185 split loca liser (simulated on both layers of the present main.tex with crops_181_185/sim_markers.py: '... quitte à se', 'loca%', the marker, 'liser au voisinage de $s$, ...'). No other entry touches these lines."
+ },
+ {
+  "page": 185,
+  "where": "first sentence, 'que les M_i (resp. p_i) sont les fibres en s'",
+  "scan": "a plain typed p (both scans; crops_181_185/p185_pi1.png)",
+  "tex": "(resp. $\\mathfrak p_i$) sont",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. $\\mathfrak p_i$) sont",
+   "new": "(resp. $p_i$) sont"
+  },
+  "note": "The prime ideals p_i of p. 184 (plain p there too)."
+ },
+ {
+  "page": 185,
+  "where": "first sentence, '(resp. Idéaux cohérents p_i) de F (resp. O_S)'",
+  "scan": "p̲_i: the p underlined, as the typist underlines the sheaf letter O̲ (both scans; crops_181_185/p185_pi3.png, w185_top.png)",
+  "tex": "Idéaux cohérents $\\mathfrak p_i$)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "Idéaux cohérents $\\mathfrak p_i$)",
+   "new": "Idéaux cohérents $\\underline{p}_i$)"
+  },
+  "note": "The print tells the coherent Ideal p̲_i of O_S from the ideal p_i of O_s, its fibre; \\mathfrak p merges them. If the volume writes the typist's underlined sheaf letters otherwise (O̲ as \\mathcal O, pending), follow that form here."
+ },
+ {
+  "page": 185,
+  "where": "display 'F = F_o ⊃ F_1 ⊃ ... ⊃ F_q = 0'",
+  "scan": "three typed full stops on the baseline (both scans; crops_181_185/p185_filt.png)",
+  "tex": "F_1\\supset\\cdots\\supset F_q",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "F_1\\supset\\cdots\\supset F_q",
+   "new": "F_1\\supset\\ldots\\supset F_q"
+  },
+  "note": "As p. 184."
+ },
+ {
+  "page": 185,
+  "where": "'et F_i/F_{i+1} ≃ O_S/p_i .'",
+  "scan": "p̲_i: the p underlined (the coherent Ideal) (both scans; crops_181_185/p185_quot2.png)",
+  "tex": "\\mathcal O_S/\\mathfrak p_i$",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\mathcal O_S/\\mathfrak p_i$",
+   "new": "\\mathcal O_S/\\underline{p}_i$"
+  },
+  "note": "As the entry for 'Idéaux cohérents'."
+ },
+ {
+  "page": 185,
+  "where": "'tels que (E_n)_s = 0. Comme O_s est intègre'",
+  "scan": "one paragraph: 'Comme O_s est' follows '(E_n)_s = 0.' on the same line (both scans; witness crops_181_185/w185_mid.png)",
+  "tex": "a new paragraph (blank line) before 'Comme $\\mathcal O_s$ est intègre'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "$(E_n)_s=0$.\n\nComme $\\mathcal O_s$",
+   "new": "$(E_n)_s=0$. Comme $\\mathcal O_s$"
+  },
+  "note": "The TeX adds a paragraph break."
+ },
+ {
+  "page": 185,
+  "where": "'quitte à se localiser en s, que S est réduit.'",
+  "scan": "'réduit' underlined (both scans)",
+  "tex": "que $S$ est réduit. (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "que $S$ est réduit.",
+   "new": "que $S$ est \\emph{réduit}."
+  },
+  "note": "The file writes underlined words as \\emph on these pages."
+ },
+ {
+  "page": 185,
+  "where": "'On sait (loc. cit.) que S est le spectre analytique ([10] II §3) d'une O_S-Algèbre finie Õ_S'",
+  "scan": "S without tilde (both scans; crops_181_185/p185_spec.png, w185_mid.png)",
+  "tex": "que $S$ est le spectre analytique (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "que $\\widetilde S$ est le spectre analytique",
+  "note": "The normalisation S̃ introduced in the sentence before is the analytic spectrum of the finite O_S-Algebra Õ_S (the next sentences use p : S̃ → S); the tilde is missing. The TeX keeps the printed reading; the corrected layer too."
+ },
+ {
+  "page": 185,
+  "where": "'Or on a (10 II §3 Prop.8)'",
+  "scan": "(10 II §3 Prop.8): the reference number without its brackets, where the page has '([10] IV §3)', '([10] IV §4)', '([10] II §3)' (both scans)",
+  "tex": "(10 II \\S3 Prop.8) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "([10] II \\S3 Prop.8)",
+  "note": "Typing slip in the citation form. The TeX keeps the printed reading; the corrected layer too."
+ },
+ {
+  "page": 185,
+  "where": "'où p : S̃ → S est la projection canonique, et (E_n.Õ_S)~ l'Idéal de O_S̃'",
+  "scan": "a wide tilde over the whole E_n.Õ_S (the Ideal on S̃ defined by E_n.Õ_S), as in the display above and in '(E_n.Õ_S)~|U = 0' below (both scans; crops_181_185/p185_ideal.png, p185_OS.png)",
+  "tex": "et $E_n\\cdot\\widetilde{\\mathcal O}_S$ l'Idéal (no wide tilde)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "canonique, et $E_n\\cdot\\widetilde{\\mathcal O}_S$",
+   "new": "canonique, et $\\widetilde{E_n\\cdot\\widetilde{\\mathcal O}_S}$"
+  },
+  "note": "Without the tilde the sentence defines E_n.Õ_S by itself ('... défini canoniquement par E_n.Õ_S')."
+ },
+ {
+  "page": 185,
+  "where": "'l'Idéal de O_S̃ défini canoniquement par E_n.Õ_S'",
+  "scan": "O_S̃: underlined O with index S, the tilde over the index S, right of the O (both scans; crops_181_185/p185_OS.png)",
+  "tex": "l'Idéal de $\\widetilde{\\mathcal O}_S$",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "l'Idéal de $\\widetilde{\\mathcal O}_S$",
+   "new": "l'Idéal de $\\mathcal O_{\\widetilde S}$"
+  },
+  "note": "The structure sheaf of S̃ (the Ideal lives on S̃); everywhere else on the page Õ_S has its tilde over the O. Independent of the previous entry (disjoint texts)."
+ },
+ {
+  "page": 185,
+  "where": "'un voisinage ouvert V de s dans S̃ tel que (E_n.Õ_S)~|U = 0'",
+  "scan": "|U (both scans; crops_181_185/p185_ideal.png)",
+  "tex": "\\widetilde{E_n\\cdot\\widetilde{\\mathcal O}_S}|U=0 (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\widetilde{E_n\\cdot\\widetilde{\\mathcal O}_S}|V=0",
+  "note": "The neighbourhood just introduced is V (in S̃); U is the neighbourhood in S of the sentence 'Montrons qu'il existe un voisinage ouvert U'. The TeX keeps the printed reading; the corrected layer already has |V."
+ },
+ {
+  "page": 185,
+  "where": "'ce qui nous ramène au cas où S est normal, ce que nous supposerons'",
+  "scan": "'normal' underlined (both scans)",
+  "tex": "où $S$ est normal, ce que (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où $S$ est normal, ce que",
+   "new": "où $S$ est \\emph{normal}, ce que"
+  },
+  "note": ""
+ },
+ {
+  "page": 185,
+  "where": "'ce que nous supposerons maintenant. Comme (E_n)_s = 0, l'immersion fermée'",
+  "scan": "one paragraph: 'Comme (E_n)_s = 0' follows 'maintenant.' on the same line (both scans)",
+  "tex": "a new paragraph (blank line) before 'Comme $(E_n)_s=0$, l'immersion'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "supposerons maintenant.\n\nComme",
+   "new": "supposerons maintenant. Comme"
+  },
+  "note": "The TeX adds a paragraph break."
+ },
+ {
+  "page": 185,
+  "where": "'l'immersion fermée i_n : S_n → S définie par E_n est étale en s'",
+  "scan": "'étale' underlined (both scans)",
+  "tex": "est étale en $s$ (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est étale en $s$",
+   "new": "est \\emph{étale} en $s$"
+  },
+  "note": "The two later 'étale' of the page are not underlined, as in the TeX."
+ },
+ {
+  "page": 185,
+  "where": "end of page, 'Il reste donc à établir le'",
+  "scan": "p. 185 ends 'on a gagné. Il reste donc à établir le'; p. 186 begins with the heading 'Lemme 2.4.8.2. (cf. EGA IV 18.10.3)' (both scans: witness pp. 185-186, crops_181_185/w185_bot.png, w186_top.png; OCR of pp. 185-186)",
+  "tex": "Il reste donc à établir le lemme suivant :",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "établir le lemme suivant :",
+   "new": "établir le"
+  },
+  "note": "The words 'lemme suivant :' are printed nowhere: the sentence runs into the heading of the lemma at the top of p. 186. With them removed, the folio-186 marker stands right."
+ }
+]

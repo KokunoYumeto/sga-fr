@@ -1,0 +1,153 @@
+[
+  {
+    "page": 26,
+    "where": "'engendré par les classes des réprésentations rationnelles irréductibles'",
+    "scan": "des réprésentations rationnelles (acute accent on the first e, both scans)",
+    "tex": "réprésentations (printed reading kept)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "représentations",
+    "note": "The print has an accent on the first e; the TeX keeps it. The corrected layer still reads 'réprésentations'."
+  },
+  {
+    "page": 26,
+    "where": "'on a K(T) = K_r(T) = Z(T^), algébre du groupe T^ des caractères rationnels'",
+    "scan": "algébre (acute accent, both scans)",
+    "tex": "algébre (printed reading kept)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "algèbre",
+    "note": "Acute for grave accent in the print; the TeX keeps it. The corrected layer still reads 'algébre'."
+  },
+  {
+    "page": 26,
+    "where": "footnote (*), 'Groupes de Lie albébriques'",
+    "scan": "albébriques",
+    "tex": "albébriques (printed reading kept)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "algébriques",
+    "note": "b for g in the print; the TeX keeps it; the corrected layer already reads 'algébriques'."
+  },
+  {
+    "page": 26,
+    "where": "throughout (here: 'Théorème 1.1.')",
+    "scan": "Théorème 1.1. (the word Théorème underlined, number and full stop not)",
+    "tex": "\\textbf{Théorème 1.1.}",
+    "kind": "underline",
+    "confidence": "medium",
+    "fix": null,
+    "note": "Convention of the transcription, not a page fix: the typescript underlines the label word of statements and remarks and the words of section titles; the TeX sets the labels in bold together with their number and punctuation, and the section titles as plain \\subsection* without underline. In this batch: \\textbf{Théorème 1.1.} (p. 26), \\textbf{Corollaire :} and \\textbf{Remarques :} (p. 27), \\subsection*{\\S 3. Le $\\lambda$-anneau défini par un anneau gradué} (p. 28; the print underlines 'Le' and 'anneau défini par un anneau gradué'), \\textbf{Proposition 1.2.} (p. 30). The same \\textbf form is used for all labels of main.tex (Proposition, Lemme, Corollaire, Remarque, Définition, Théorème ...). One decision for the volume (SGA 5 item 75 accepted the same as typesetting)."
+  },
+  {
+    "page": 27,
+    "where": "footnote (*), 'Il faut supposer le groupe dévisé G' de G'",
+    "scan": "le groupe dévisé G' (both scans)",
+    "tex": "dévisé (printed reading kept)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "dérivé",
+    "note": "The derived group G' is meant; the TeX keeps the printed reading; the corrected layer already reads 'dérivé'."
+  },
+  {
+    "page": 28,
+    "where": "'avec n ∈ Z et x = 1 + Σ_{i≥1} x^i ∈ 1+Â^+ (x^i∈A^i)'",
+    "scan": "Σ x^i_i: the x carries a typed i above and a second typed i below it; the summation index i≥1 stands lower, under the Σ (both scans)",
+    "tex": "\\sum_{i\\geq 1}x^i\\in1+\\Ahp",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": {
+      "old": "x^i\\in1+\\Ahp",
+      "new": "x^i_i\\in1+\\Ahp"
+    },
+    "corrected": "x^i\\in1+\\Ahp",
+    "note": "A stray subscript i on x (the components are the x^i ∈ A^i of the parenthesis that follows); the TeX silently drops it. The corrected layer reads x^i."
+  },
+  {
+    "page": 28,
+    "where": "'compatible avec sa strucutre additive'",
+    "scan": "strucutre",
+    "tex": "strucutre (printed reading kept)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "structure",
+    "note": "Transposed letters in the print; the TeX keeps them; the corrected layer already reads 'structure'."
+  },
+  {
+    "page": 28,
+    "where": "(1.16), after (i≥1)",
+    "scan": "(i≥1) with no punctuation after it (both scans)",
+    "tex": "\\qquad (i\\geq1),",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+      "old": "(i\\geq1),",
+      "new": "(i\\geq1)"
+    },
+    "note": "The TeX adds a comma at the end of (1.16); the print runs on to 'le polynôme Q_i' (p. 29) without one."
+  },
+  {
+    "page": 29,
+    "where": "start of page",
+    "scan": "p. 29 begins 'le polynôme Q_i étant isobare de poids i' (both scans)",
+    "tex": "'le' is the last line of page_028.tex (under the folio-28 marker, after \\end{equation} of (1.16)); page_029.tex begins 'polynôme'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 29 really begins with 'le'. Move the folio-29 marker up one line, above 'le': python -I move_marker.py 6 29 \"le\" --before (the same lines stand in both layers)."
+  },
+  {
+    "page": 30,
+    "where": "before (1.20), 'par des polynômes universels à coefficients entiers'",
+    "scan": "à coefficients entiers (no colon, both scans)",
+    "tex": "à coefficients entiers~:",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+      "old": "coefficients entiers~:",
+      "new": "coefficients entiers"
+    },
+    "note": "The TeX adds a colon before the display (1.20)."
+  },
+  {
+    "page": 30,
+    "where": "Proposition 1.2, '(on a donc x^i = 0 pour i > n),'",
+    "scan": "underlined: 'Pour', 'de la forme', 'on a', 'pour', 'on a', 'et enfin'; the remark '(on a donc x^i = 0 pour i > n),' is not underlined (both scans)",
+    "tex": "one \\emph{...} from 'Pour' to 'et enfin', the remark included",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {
+      "old": "$[n,1+x^1+\\cdots+x^n]$ (on a donc $x^i=0$ pour $i>n$), on a",
+      "new": "$[n,1+x^1+\\cdots+x^n]$} (on a donc $x^i=0$ pour $i>n$), \\emph{on a"
+    },
+    "note": "Close the emphasis before the parenthetical remark and reopen it at 'on a', as the print underlines the statement but not the remark."
+  },
+  {
+    "page": 30,
+    "where": "(1.22), end of the display",
+    "scan": "[0, 1 - (n - 1)! x^n + ... ] with no full stop (both scans)",
+    "tex": "x^n+\\cdots].",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+      "old": "x^n+\\cdots].",
+      "new": "x^n+\\cdots]"
+    },
+    "note": "The TeX adds a full stop at the end of (1.22)."
+  },
+  {
+    "page": 30,
+    "where": "end of page",
+    "scan": "p. 30 ends '... que l'on ait ou non x^i = 0 pour i > n.'; p. 31 begins 'La formule (1.22) admet les généralisations suivantes' (DjVu witness p. 42)",
+    "tex": "page_030.tex ends with a line 'La' (above the folio-31 marker); the folio-31 text begins 'formule (1.22)'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 31 really begins with 'La'. Move the folio-31 marker up one line, above 'La': python -I move_marker.py 6 31 \"La\" --before (the same lines stand in both layers)."
+  }
+]

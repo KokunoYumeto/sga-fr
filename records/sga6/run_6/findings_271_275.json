@@ -1,0 +1,308 @@
+[
+ {
+  "page": 271,
+  "where": "start of page",
+  "scan": "p. 271 begins 'y ⟼ rg_{k(x)} H^p(E ⊗^L_X k(y)) est localement constante d'après (5.5 (ii)).'; p. 270 ends '... soit exact sur Mod(U), et, sur U, la fonction' (both scans)",
+  "tex": "'\\(y\\mapsto\\operatorname{rg}_{k(x)}H^p(E\\otimes_X^{\\mathrm L}k(y))\\) est' ends the last line of page_270.tex (under the folio-270 marker); page_271.tex begins 'localement constante'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 271 really begins with the formula y ⟼ rg ... and 'est'. Split the last line of p. 270 before it: python -I move_marker.py 6 271 '\\(y\\mapsto\\operatorname{rg}_{k(' --before (simulated on both layers: '... et, sur \\(U\\), la fonction ', the marker, '\\(y\\mapsto\\operatorname{rg}_{k(x)}H^p(...)\\) est' (k(y) in the corrected layer), 'localement constante d'après ...'). The anchor stops before k(x)/k(y), so it fits both layers."
+ },
+ {
+  "page": 271,
+  "where": "first line (text now under the folio-270 marker): 'y ⟼ rg_{k(x)} H^p(E ⊗^L_X k(y)) est localement constante'",
+  "scan": "rg_{k(x)}: the index of rg is k(x) (both scans; crops_271_275/c271_top.png, w282_a.png)",
+  "tex": "\\operatorname{rg}_{k(x)} in the last line of page_270.tex (printed reading kept); the corrected layer has k(y)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\operatorname{rg}_{k(y)}",
+  "note": "The rank of the k(y)-vector space H^p(E ⊗^L_X k(y)) is taken over k(y) (5.6 (i): x ⟼ rg_{k(x)} H^p(E ⊗ k(x))); x is the generic point of X, fixed before. The diplomatic layer keeps the printed reading; no edit. The text moves to p. 271 with the marker move above."
+ },
+ {
+  "page": 271,
+  "where": "Proposition 5.7, 'E ∈ ob D^b(f)_parf (4.2)'",
+  "scan": "parf underlined: a short underline of its own below the lowered subscript, while the statement's word underlines leave 'E ∈ ob D^b(f)' and '(4.2)' plain (both scans; crops_271_275/c271_parf.png)",
+  "tex": "D^b(f)_{\\parf} (plain parf)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "D^b(f)_{\\parf}",
+   "new": "D^b(f)_{\\uparf}"
+  },
+  "note": "Notation 4.2 (p. 251) distinguishes D(f)_parf (complexes parfaits) from D(f) with underlined parf (d'amplitude parfaite finie), which the TeX writes \\uparf (pp. 251, 257, 258); the '(4.2)' here refers to it. X is quasi-compact, so the two agree (4.2), but the print writes the underlined one."
+ },
+ {
+  "page": 271,
+  "where": "Proposition 5.7 (i), 'les H^i(Rf_*(E) ⊗^L_Y k(y) sont des espaces vectoriels'",
+  "scan": "H^i(Rf_*(E) ⊗^L_Y k(y) sont: only the parenthesis of k(y) is closed, the one of H^i( is not (both scans; crops_271_275/c271_i.png, w282_a.png)",
+  "tex": "H^i(Rf_*(E)\\otimes_Y^{\\mathrm L}k(y))\\) sont (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "k(y))\\) sont",
+   "new": "k(y)\\) sont"
+  },
+  "corrected": "H^i(Rf_*(E)\\otimes_Y^{\\mathrm L}k(y))",
+  "note": "The edit restores the printed reading (removes one closing parenthesis)."
+ },
+ {
+  "page": 271,
+  "where": "Proposition 5.7 (i), display 'y ⟼ Σ (-1)^i rg_{k(y)} H^i(Rf_*(E) ⊗^L_Y k(y)'",
+  "scan": "the display ends 'k(y)': the parenthesis of H^i( is not closed (both scans; crops_271_275/c271_disp1.png)",
+  "tex": "...H^i(Rf_*(E)\\otimes_Y^{\\mathrm L}k(y)) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "H^i(Rf_*(E)\\otimes_Y^{\\mathrm L}k(y))\n\\]",
+   "new": "H^i(Rf_*(E)\\otimes_Y^{\\mathrm L}k(y)\n\\]"
+  },
+  "corrected": "H^i(Rf_*(E)\\otimes_Y^{\\mathrm L}k(y))",
+  "note": "Same omission as in the sentence before it. The edit restores the printed reading."
+ },
+ {
+  "page": 271,
+  "where": "Proposition 5.7 (ii), display 'y ⟼ rg_{k(y)} H^p(Rf_*(E) ⊗^L_Y k(y)).' before 'est constructible'",
+  "scan": "a full stop after the display, although the sentence goes on with 'est constructible et semi-continue' (both scans; crops_271_275/c271_disp2.png, w282_b.png)",
+  "tex": "no full stop (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "H^p(Rf_*(E)\\otimes_Y^{\\mathrm L}k(y))\n\\]",
+   "new": "H^p(Rf_*(E)\\otimes_Y^{\\mathrm L}k(y)).\n\\]"
+  },
+  "corrected": "H^p(Rf_*(E)\\otimes_Y^{\\mathrm L}k(y))",
+  "note": "A stray full stop inside the sentence 'La fonction ... est constructible'. The edit restores the printed stop in the diplomatic layer; the corrected reading has none."
+ },
+ {
+  "page": 271,
+  "where": "Proposition 5.7 (statement, items (i)-(iii))",
+  "scan": "the statement is underlined word group by word group: 'Soient', 'un morphisme propre de schémas quasi-compacts', 'et' (also the 'et' of '(EGA III 7.7.5 et 7.9.4)'), 'Alors', 'sous réserve de validité de', 'donc par exemple si', 'est projectif ou', 'si', 'est noethérien'; (i) 'Pour', 'les', 'sont des espaces vectoriels de rang fini sur', 'nuls sauf un nombre fini', 'et la fonction', 'est localement constante sur'; (ii), (iii) likewise (both scans)",
+  "tex": "the statement in roman (no \\underline, no \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé III follows the Exposé II pattern of GLOBAL_ISSUES 82 (as reported for pp. 222 and 227): not itemized, for the scripted per-exposé decision."
+ },
+ {
+  "page": 271,
+  "where": "proof of 5.6, last line: 'au foncteur T_{-p} = H^p(E ⊗ . ) .'",
+  "scan": "the place-holder is a typed full stop on the baseline (both scans; crops_271_275/c271_Tp.png)",
+  "tex": "H^p(E\\otimes\\,\\cdot\\,)",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "H^p(E\\otimes\\,\\cdot\\,)",
+   "new": "H^p(E\\otimes\\,.\\,)"
+  },
+  "note": "\\cdot raises the typed stop to mid-height; same kind of entry as (P,\\cdot) -> (P,.) on p. 89 (applied) and pp. 117, 136."
+ },
+ {
+  "page": 272,
+  "where": "Preuve of 5.7, before 'L'assertion (i) (resp. (ii)) résulte'",
+  "scan": "after 'Rf_*(E) est un complexe parfait.' (a short line) a blank of about two lines, then 'L'assertion (i) (resp. (ii)) résulte' starts a new line, indented, and the next line 'donc de (5.5 (i)) ...' starts at the margin (a pasted-in strip; both scans)",
+  "tex": "one paragraph: 'complexe parfait. L'assertion (i) ...'",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "complexe parfait. L'assertion (i)",
+   "new": "complexe parfait.\n\nL'assertion (i)"
+  },
+  "note": "The print begins a new indented line after the gap; low because the gap and the indent come from the paste-up of a corrected strip."
+ },
+ {
+  "page": 272,
+  "where": "Remarques 5.8 a), 'On peut montrer (cf. (EGA III 6 et (IV 3.1.0) que pour f plat'",
+  "scan": "(cf. (EGA III 6 et (IV 3.1.0) que: three opening parentheses, one closing (both scans; crops_271_275/c272_cf.png, w283_cf.png)",
+  "tex": "(cf. (EGA III 6 et (IV 3.1.0) que (printed reading kept, both layers)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(cf. (EGA III 6) et (IV 3.1.0)) que",
+  "note": "Two closing parentheses are missing. The TeX keeps the printed reading; the corrected layer has it too. Where the two parentheses belong is a guess (each reference in its own parentheses, as '(5.5 (ii) et (iii)) et (5.2 (iv))' on p. 271)."
+ },
+ {
+  "page": 273,
+  "where": "start of page",
+  "scan": "p. 273 begins 'b) On peut développer pour les espaces analytiques complexes'; p. 272 ends 'où E_y = Li_y^*(E) (resp. i_y^*(E)).' and blank space (both scans)",
+  "tex": "'\\item On' is the last line of page_272.tex (under the folio-272 marker); page_273.tex begins 'peut développer'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 273 really begins with item b). Move the folio-273 marker above that line: python -I move_marker.py 6 273 '\\item On' --before (simulated on both layers: '... (resp. \\(i_y^*(E)\\)).', the marker, '\\item On', 'peut développer ...')."
+ },
+ {
+  "page": 273,
+  "where": "Remarque 5.8 b), display 'Rf_*(E) ⊗^L M) ⟶ Rf_*(E ⊗^L_Y M)'",
+  "scan": "the left side ends 'M)' with a closing parenthesis that nothing opens (both scans; crops_271_275/c273_disp.png, w284_a.png)",
+  "tex": "Rf_*(E)\\otimes^{\\mathrm L}M)\\longrightarrow (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Rf_*(E)\\otimes^{\\mathrm L}M\\longrightarrow Rf_*(E\\otimes_Y^{\\mathrm L}M)",
+  "note": "The TeX keeps the printed reading; the corrected layer already has it without the parenthesis."
+ },
+ {
+  "page": 273,
+  "where": "Remarque 5.8 b), 'est un isomorphime (l'hypothèse sur X'",
+  "scan": "isomorphime (both scans)",
+  "tex": "isomorphime (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "isomorphisme",
+  "note": "The TeX keeps the printed reading; the corrected layer already has 'isomorphisme'."
+ },
+ {
+  "page": 273,
+  "where": "Remarque 5.8 b), before 'A la différence de l'énoncé 1)'",
+  "scan": "'... donc que Rf_* est défini sur D(X)).' ends a short line; 'A la différence de l'énoncé 1), l'énoncé 2) est essentiellement trivial,' starts an indented new paragraph (both scans)",
+  "tex": "same paragraph: 'défini sur \\(D(X)\\)). A la différence'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "sur \\(D(X)\\)). A la différence",
+   "new": "sur \\(D(X)\\)).\n\nA la différence"
+  },
+  "note": "Missing paragraph break (inside item b))."
+ },
+ {
+  "page": 273,
+  "where": "heading of the bibliography",
+  "scan": "BIBLIOGRAPHIE: typed capitals, underlined (both scans)",
+  "tex": "\\subsection*{Bibliographie}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\subsection*{Bibliographie}",
+   "new": "\\subsection*{BIBLIOGRAPHIE}"
+  },
+  "note": "As the p. 220 heading (findings_216_220) and pp. 19, 158; the missing underline of a section title is accepted."
+ },
+ {
+  "page": 273,
+  "where": "bibliography entry [1], title",
+  "scan": "'Ein Theorem der Analytischen Garbentheorie ...': plain type, not underlined (both scans)",
+  "tex": "\\emph{Ein Theorem der Analytischen Garbentheorie}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Ein Theorem der Analytischen Garbentheorie}",
+   "new": "Ein Theorem der Analytischen Garbentheorie"
+  },
+  "note": "The typescript neither underlines nor italicizes the titles; same fix as the bibliographies of pp. 19 and 159 (applied)."
+ },
+ {
+  "page": 273,
+  "where": "bibliography entry [H], title",
+  "scan": "'Residues and Duality': plain type, not underlined (both scans)",
+  "tex": "\\emph{Residues and Duality}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Residues and Duality}",
+   "new": "Residues and Duality"
+  },
+  "note": "As entry [1]."
+ },
+ {
+  "page": 273,
+  "where": "bibliography entry [T.F], title",
+  "scan": "'Théorie des faisceaux': plain type, not underlined (both scans)",
+  "tex": "\\emph{Théorie des faisceaux}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Théorie des faisceaux}",
+   "new": "Théorie des faisceaux"
+  },
+  "note": "As entry [1]."
+ },
+ {
+  "page": 273,
+  "where": "footnote (1), 'C'est d'ailleurs dans ce oadre que ces propriétés'",
+  "scan": "oadre: a closed round o, unlike the open c of 'ce' and 'ces' beside it (both scans; crops_271_275/c273_oadre.png, w284_oadre.png)",
+  "tex": "ce cadre que (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "ce cadre que",
+   "new": "ce oadre que"
+  },
+  "corrected": "cadre",
+  "note": "A typing error, not a filled c: the letter has the shape of the typewriter's o. The edit restores the printed reading."
+ },
+ {
+  "page": 274,
+  "where": "exposé heading and title",
+  "scan": "EXPOSE IV in typed capitals with a single underline and no full stop, on its own line; then the title GROUPES DE GROTHENDIECK DES TOPOS ANNELES in capitals with a double underline (both scans)",
+  "tex": "\\section*{Exposé IV. Groupes de Grothendieck des topos annelés}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\section*{Exposé IV. Groupes de Grothendieck des topos annelés}",
+   "new": "\\section*{\\underline{EXPOSÉ IV}\\\\[3pt] \\underline{\\underline{GROUPES DE GROTHENDIECK DES TOPOS ANNELÉS}}}"
+  },
+  "note": "Same form as the applied Exposé II and III headings (main.tex: \\section*{\\underline{EXPOSÉ III}\\\\[3pt] \\underline{\\underline{CONDITIONS DE FINITUDE RELATIVES}}}); É keeps the TeX's accent (rule for typed capitals)."
+ },
+ {
+  "page": 274,
+  "where": "author line",
+  "scan": "par L. ILLUSIE: the name in capitals, the whole line underlined (both scans)",
+  "tex": "par L. Illusie",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "par L. Illusie",
+   "new": "\\underline{par L. ILLUSIE}"
+  },
+  "note": "As the applied author lines of pp. 78, 160 and 222."
+ },
+ {
+  "page": 274,
+  "where": "1.1, 'Soit C une catégorie triangulée.'",
+  "scan": "'triangulée' underlined (both scans)",
+  "tex": "une catégorie triangulée. (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "une catégorie triangulée. Rappelons",
+   "new": "une catégorie \\emph{triangulée}. Rappelons"
+  },
+  "note": "\\emph is the file's command for underlined words here (\\emph{additive} in the same paragraph)."
+ },
+ {
+  "page": 274,
+  "where": "statements of Exposé IV: Lemme 1.2 here, Lemmes 1.3 and 1.4 on p. 275",
+  "scan": "the statements are underlined word group by word group: Lemme 1.2 'Soient', 'une catégorie triangulée', 'et', a) 'Pour tout', 'on a', 'Si', 'sont des objets de', 'tels qu'on ait', 'alors on a', b) 'Supposons qu'il existe', 'tel que', 'soit représen-table', 'Alors on a'; Lemme 1.3 'Soient', 'une catégorie triangulée', 'une sous-catégorie épaisse', 'Les foncteurs d'inclusion et de passage au quotient définissent une suite exacte'; Lemme 1.4 'Soient', 'une catégorie additive', 'resp.', 'abélienne', 'et', 'une fonction additive', 'sur', 'Pour', 'on a' (both scans)",
+  "tex": "the statements in roman (no \\underline, no \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé IV continues the Exposé II/III pattern of GLOBAL_ISSUES 82: not itemized; the scripted per-exposé decision should include Exposé IV."
+ },
+ {
+  "page": 275,
+  "where": "start of page",
+  "scan": "p. 275 begins with the display ∐_{i≥0} L[2ni] ≃ L ⊕ (∐_{i≥0} L[2ni])[2n] ,; p. 274 ends 'Pour b), il suffit de remarquer qu'on a' (both scans)",
+  "tex": "page_275.tex begins with the line 'remarquer qu'on a' under the folio-275 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "'remarquer qu'on a' ends p. 274: move the folio-275 marker down one line, below it and above the display: python -I move_marker.py 6 275 '\\[' (simulated on both layers: '... il suffit de', 'remarquer qu'on a', the marker, '\\[', the display)."
+ },
+ {
+  "page": 275,
+  "where": "1.5, 'Soient C une catégorie abélienne et A une sous-catégorie pleine'",
+  "scan": "'abélienne' underlined (both scans)",
+  "tex": "une catégorie abélienne et (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "une catégorie abélienne et",
+   "new": "une catégorie \\emph{abélienne} et"
+  },
+  "note": "As 'triangulée' in 1.1 (p. 274); \\emph{additive} in the same paragraph."
+ }
+]

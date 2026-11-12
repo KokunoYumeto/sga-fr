@@ -1,0 +1,601 @@
+[
+ {
+  "page": 146,
+  "where": "start of page",
+  "scan": "p. 146 begins '(les deux de gauche étant des homomorphismes de préfaisceaux d'anneaux)' (both scans)",
+  "tex": "page_146.tex begins 'deux de gauche'; the line '(les' stood above the folio-146 marker (end of page_145.tex)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Already reported by batch 141-145 (findings_141_145, p. 145 'end of page') and already applied: in the current main.tex (both layers) the folio-146 marker stands before '(les'. No action; do not run the move again."
+ },
+ {
+  "page": 146,
+  "where": "Définition 6.11, statement",
+  "scan": "underlined by word groups: 'On appelle', 'et l'on note', 'la', 'S-fonction additive', 'de', 'dans', 'définie par'; the defined term 'rang,' and its notation 'rg' are not underlined (both scans; crops_146_150/p146_s2_def611.png)",
+  "tex": "no emphasis: the definition is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "On appelle rang, et l'on note \\(\\rg\\) la \\(S\\)-fonction additive de \\(\\mathcal C_1\\) dans \\(\\mathbb Z_S\\) définie par",
+   "new": "\\emph{On appelle} rang, \\emph{et l'on note} \\(\\rg\\) \\emph{la \\(S\\)-fonction additive de \\(\\mathcal C_1\\) dans \\(\\mathbb Z_S\\) définie par}"
+  },
+  "note": "Defined term and notation left out of the emphasis, as Définitions 2.8 and 6.1 (findings_101_105, findings_136_140). One edit (balanced braces)."
+ },
+ {
+  "page": 146,
+  "where": "Proposition 6.12 a)",
+  "scan": "'Pour' and 'on a' underlined; L, M ∈ ob D⁻(X)_parf (X ∈ ob S) not (both scans; crops_146_150/p146_s3_prop612a.png)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour \\(L,M\\in\\Ob\\Dpx^-(X)_{\\mathrm{parf}}\\) (\\(X\\in\\Ob S\\)), on a",
+   "new": "\\emph{Pour} \\(L,M\\in\\Ob\\Dpx^-(X)_{\\mathrm{parf}}\\) (\\(X\\in\\Ob S\\)), \\emph{on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 146,
+  "where": "Proposition 6.12 b), first sentence and 'Pour'",
+  "scan": "underlined: 'Soit', 'un morphisme de topos localement annelés.', 'Pour'; the 'on a' of the next clause is not underlined (both scans; crops_146_150/p146_s3_prop612b.png)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(u:(S',A')\\longrightarrow(S,A)\\) un morphisme de topos localement annelés. Pour",
+   "new": "\\emph{Soit \\(u:(S',A')\\longrightarrow(S,A)\\) un morphisme de topos localement annelés. Pour}"
+  },
+  "note": "Block over the formula, as the file's other statements; 'on a' stays roman as printed."
+ },
+ {
+  "page": 146,
+  "where": "Proposition 6.12 b), 'rg(Lu*(M)) = u*(rg(M))'",
+  "scan": "𝕃u*: an L with a doubled stem, double-struck (both scans; crops_146_150/p146_s3_Lu.png)",
+  "tex": "\\(\\rg(\\mathrm L u^*(M))=u^*(\\rg(M))\\) (plain L)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathrm L u^*",
+   "new": "\\mathbb L u^*"
+  },
+  "note": "Same functor and form as p. 145 (findings_141_145, applied as \\mathbb L u^*). The L over the tensor sign in a) is a plain typed L (\\overset{\\mathrm L}{\\otimes} right)."
+ },
+ {
+  "page": 146,
+  "where": "Proposition 6.12 b), 'En d'autres termes, ...'",
+  "scan": "underlined: 'En d'autres termes,', 'l'homomorphisme rang', 'est un homomorphisme de préfaisceaux d'anneaux, compatible avec les images inverses'; the colon, k(D⁻(S)_parf) → Z_S and the final stop not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "En d'autres termes, l'homomorphisme rang : \\(k(\\Dpx^-(S)_{\\mathrm{parf}})\\longrightarrow \\mathbb Z_S\\) est un homomorphisme de préfaisceaux d'anneaux, compatible avec les images inverses.",
+   "new": "\\emph{En d'autres termes, l'homomorphisme rang} : \\(k(\\Dpx^-(S)_{\\mathrm{parf}})\\longrightarrow \\mathbb Z_S\\) \\emph{est un homomorphisme de préfaisceaux d'anneaux, compatible avec les images inverses}."
+  },
+  "note": "One edit (balanced braces)."
+ },
+ {
+  "page": 146,
+  "where": "'Preuve.' (pp. 146, 147, 148, 149 twice, 150)",
+  "scan": "only the word underlined, the full stop after the underline (both scans; crops_146_150/p146_s2_preuve.png)",
+  "tex": "\\emph{Preuve.} (stop inside the emphasis)",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention, as reported for pp. 138-139 (findings_136_140): one scripted pass \\emph{Preuve.} -> \\emph{Preuve}. Not itemized."
+ },
+ {
+  "page": 147,
+  "where": "6.13, 'L'application i_X : ...'",
+  "scan": "'L'application i_X : H⁰(X, Z_S) → k(Parf(X)), ...' continues the paragraph of 6.13: no indent, ordinary line spacing after '... ⊗ L .).' (both scans)",
+  "tex": "blank line (new paragraph) before 'L'application'",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "\\otimes L\\).).\n\nL'application",
+   "new": "\\otimes L\\).).\nL'application"
+  },
+  "note": "New paragraphs of this exposé are indented (p. 146 'En vertu de (6.7)', p. 148 'On en déduit'); this line is not."
+ },
+ {
+  "page": 147,
+  "where": "Proposition 6.14, first line",
+  "scan": "'Sous les hypothèses de' and 'on a' underlined; '(6.13),' not (both scans; witness w147_bot.png)",
+  "tex": "no emphasis: the statement is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de (6.13), on a",
+   "new": "\\emph{Sous les hypothèses de} (6.13), \\emph{on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 147,
+  "where": "Proposition 6.14, '(autrement dit, ...). En outre le rang'",
+  "scan": "underlined by word groups: 'autrement dit,', 'considéré comme préfaisceau de', '-algèbres au', 'moyen de', 'est augmenté vers', 'par le rang', 'En outre le rang'; the parentheses and the stop not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(autrement dit, \\(k(\\Parf(S))\\), considéré comme préfaisceau de \\(\\mathbb Z_S\\)-algèbres au moyen de \\(i\\), est augmenté vers \\(\\mathbb Z_S\\) par le rang). En outre le rang",
+   "new": "(\\emph{autrement dit, \\(k(\\Parf(S))\\), considéré comme préfaisceau de \\(\\mathbb Z_S\\)-algèbres au moyen de \\(i\\), est augmenté vers \\(\\mathbb Z_S\\) par le rang}). \\emph{En outre le rang}"
+  },
+  "note": "One edit (balanced braces)."
+ },
+ {
+  "page": 147,
+  "where": "Proposition 6.14, last line",
+  "scan": "'définit un isomorphisme sur les faisceaux associés' underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "définit un isomorphisme sur les faisceaux associés.",
+   "new": "\\emph{définit un isomorphisme sur les faisceaux associés}."
+  },
+  "note": "End of the statement 6.14."
+ },
+ {
+  "page": 148,
+  "where": "Corollaire 6.15, statement",
+  "scan": "underlined by word groups from 'Sous les hypothèses de' to 'canoniquement à' ('(6.13),' not), then 'objet final de', 'la fonction rang correspondant à', 'et à la section unité de'; H⁰(S,F), '(S =' and the final Z_S . not (both scans)",
+  "tex": "no emphasis: the statement is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de (6.13), pour tout faisceau abélien \\(F\\) sur \\(S\\), le groupe des \\(S\\)-fonctions additives de \\(\\Parf(S)\\) dans \\(F\\) s'identifie canoniquement à \\(H^0(S,F)\\) (\\(S\\) = objet final de \\(S\\)), la fonction rang correspondant à \\(F=\\mathbb Z_S\\) et à la section unité de \\(\\mathbb Z_S\\).",
+   "new": "\\emph{Sous les hypothèses de} (6.13), \\emph{pour tout faisceau abélien \\(F\\) sur \\(S\\), le groupe des \\(S\\)-fonctions additives de \\(\\Parf(S)\\) dans \\(F\\) s'identifie canoniquement à} \\(H^0(S,F)\\) (\\(S\\) = \\emph{objet final de \\(S\\)}), \\emph{la fonction rang correspondant à \\(F=\\mathbb Z_S\\) et à la section unité de} \\(\\mathbb Z_S\\)."
+  },
+  "note": "One edit (balanced braces)."
+ },
+ {
+  "page": 148,
+  "where": "Proposition 7.1, 'Soient E ∈ ob D(S)_parf, ...'",
+  "scan": "'Soient' underlined (both scans; witness w148_bot.png)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient \\(E\\in\\Ob\\Dpx(S)_",
+   "new": "\\emph{Soient} \\(E\\in\\Ob\\Dpx(S)_"
+  },
+  "note": ""
+ },
+ {
+  "page": 148,
+  "where": "Proposition 7.1 a), first sentence",
+  "scan": "underlined: 'Si', 'est à cohomologie localement bornée,', 'il en est de même de' (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Si \\(F\\) est à cohomologie localement bornée, il en est de même de",
+   "new": "\\emph{Si \\(F\\) est à cohomologie localement bornée, il en est de même de}"
+  },
+  "note": ""
+ },
+ {
+  "page": 148,
+  "where": "Proposition 7.1 a), 'R Hom(E,F). Si' at the start of the line",
+  "scan": "ℝ Hom̲(E,F): double-struck R (doubled stem, thick at the margin), Hom underlined; the following 'Si' underlined (both scans; crops_146_150/p148_s3_RHom1.png, w148_bot.png)",
+  "tex": "\\(\\RHom(E,F)\\) (\\RHom = \\mathrm R\\!\\operatorname{Hom}: plain R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\RHom(E,F)\\). Si",
+   "new": "\\(\\mathbb{R}\\underline{\\Hom}(E,F)\\). \\emph{Si}"
+  },
+  "note": "The same edit underlines Hom (the sheaf Hom). Forms already applied on pp. 116-118: \\mathbb{R}\\underline{\\Hom}. The edit also sets the underlined 'Si' that opens the second sentence (the entry below covers the rest)."
+ },
+ {
+  "page": 148,
+  "where": "Proposition 7.1 a), second sentence",
+  "scan": "underlined: 'est pseudo-cohérent', 'resp.', 'localement de tor-dimension finie,', 'resp. parfait),', 'il en est de même de'; F ∈ ob D(S) not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est pseudo-cohérent (resp. localement de tor-dimension finie, resp. parfait), il en est de même de",
+   "new": "\\emph{est pseudo-cohérent (resp. localement de tor-dimension finie, resp. parfait), il en est de même de}"
+  },
+  "note": ""
+ },
+ {
+  "page": 148,
+  "where": "Proposition 7.1 a), last formula 'R Hom(E,F).'",
+  "scan": "ℝHom̲(E,F): double-struck R, Hom underlined (both scans)",
+  "tex": "\\(\\RHom(E,F)\\) (\\RHom = \\mathrm R\\!\\operatorname{Hom}: plain R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\RHom(E,F)\\).\n",
+   "new": "\\(\\mathbb{R}\\underline{\\Hom}(E,F)\\).\n"
+  },
+  "note": "The same edit underlines Hom (the sheaf Hom). Forms already applied on pp. 116-118: \\mathbb{R}\\underline{\\Hom}."
+ },
+ {
+  "page": 149,
+  "where": "start of page",
+  "scan": "p. 149 begins 'b) Supposons que E soit en outre de tor-dimension finie'; p. 148 ends '... il en est de même de ℝHom(E,F).' (both scans; witness DjVu p. 160)",
+  "tex": "'\\textbf{b)}' is the last line of page_148.tex (above the folio-149 marker); page_149.tex begins 'Supposons que'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 149 really begins with the item letter b). Move the folio-149 marker above it: python -I move_marker.py 6 149 '\\textbf{b)}' --before (simulated on both layers: '... de \\(\\RHom(E,F)\\).', blank line, the marker, '\\textbf{b)}', 'Supposons que ...'). If the bold item-letter pass has already turned it into 'b)', use the anchor 'b)'."
+ },
+ {
+  "page": 149,
+  "where": "Proposition 7.1 b), 'il en est de même de R Hom(E,F)'",
+  "scan": "ℝHom̲(E,F): double-struck R, Hom underlined (both scans; witness w149_top.png)",
+  "tex": "\\(\\RHom(E,F)\\) (\\RHom = \\mathrm R\\!\\operatorname{Hom}: plain R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\RHom(E,F)\\). Plus",
+   "new": "\\(\\mathbb{R}\\underline{\\Hom}(E,F)\\). Plus"
+  },
+  "note": "The same edit underlines Hom (the sheaf Hom). Forms already applied on pp. 116-118: \\mathbb{R}\\underline{\\Hom}. Part b) of 7.1 is not underlined in the print (TeX right)."
+ },
+ {
+  "page": 149,
+  "where": "Proposition 7.1 b), 'H^i(R Hom(E,F)) = 0'",
+  "scan": "H^i( ℝHom̲(E,F)): double-struck R, Hom underlined; this H is plain (both scans; crops_146_150/p149_s1_lines56.png)",
+  "tex": "\\(\\RHom(E,F)\\) (\\RHom = \\mathrm R\\!\\operatorname{Hom}: plain R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ho^i(\\RHom(E,F))",
+   "new": "\\Ho^i(\\mathbb{R}\\underline{\\Hom}(E,F))"
+  },
+  "note": "The same edit underlines Hom (the sheaf Hom). Forms already applied on pp. 116-118: \\mathbb{R}\\underline{\\Hom}."
+ },
+ {
+  "page": 149,
+  "where": "Proposition 7.1 b), '(resp. tor.amp(R Hom(E,F)) ⊂ [m-b,n-a])'",
+  "scan": "R with a thickened, doubled stem (the two strokes overlap closely), Hom underlined (both scans; crops_146_150/p149_s1_resp_R.png, w149_resp_R.png)",
+  "tex": "\\(\\RHom(E,F)\\) (\\RHom = \\mathrm R\\!\\operatorname{Hom}: plain R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\tamp(\\RHom(E,F))",
+   "new": "\\tamp(\\mathbb{R}\\underline{\\Hom}(E,F))"
+  },
+  "note": "The same edit underlines Hom (the sheaf Hom). Forms already applied on pp. 116-118: \\mathbb{R}\\underline{\\Hom}. Same shape as the first ℝ of p. 148 a); every other R of this paragraph is plainly double-struck."
+ },
+ {
+  "page": 149,
+  "where": "Lemme 7.1.1, statement",
+  "scan": "underlined: 'Soit', 'Si', 'est strictement pseudo-cohérent', 'à composantes facteurs directs de Modules libres de type fini', 'la flèche canonique de'; the formulas, '(i.e. (2.1)', '),' and D⁺(S) not (both scans)",
+  "tex": "no emphasis: the statement is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(E\\in\\Ob\\Dpx^-(S)\\), \\(F\\in\\Ob\\Dpx^+(S)\\). Si \\(E\\) est strictement pseudo-cohérent (i.e. (2.1) à composantes facteurs directs de Modules libres de type fini), la flèche canonique de",
+   "new": "\\emph{Soit} \\(E\\in\\Ob\\Dpx^-(S)\\), \\(F\\in\\Ob\\Dpx^+(S)\\). \\emph{Si \\(E\\) est strictement pseudo-cohérent} (i.e. (2.1) \\emph{à composantes facteurs directs de Modules libres de type fini}), \\emph{la flèche canonique de}"
+  },
+  "note": "One edit (balanced braces)."
+ },
+ {
+  "page": 149,
+  "where": "Lemme 7.1.1, display 'Hom(E,F) → R Hom(E,F)'",
+  "scan": "Hom̲˙(E,F) → ℝHom̲(E,F): both Hom underlined, R double-struck (both scans; witness w149_bot.png)",
+  "tex": "\\Hom^\\bullet(E,F)\\longrightarrow\\RHom(E,F) (plain Hom, plain R)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom^\\bullet(E,F)\\longrightarrow\\RHom(E,F)",
+   "new": "\\underline{\\Hom}^\\bullet(E,F)\\longrightarrow\\mathbb{R}\\underline{\\Hom}(E,F)"
+  },
+  "note": "The same edit underlines both Hom. The raised typed dot is \\bullet as in Gr (handled globally)."
+ },
+ {
+  "page": 149,
+  "where": "Lemme 7.1.1, 'est un isomorphisme.'",
+  "scan": "'est un isomorphisme' underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nest un isomorphisme.",
+   "new": "\\]\n\\emph{est un isomorphisme}."
+  },
+  "note": "End of the statement 7.1.1."
+ },
+ {
+  "page": 149,
+  "where": "proof of 7.1.1, spectral sequence display",
+  "scan": "E_2^{pq} = H̲^p(Ext̲^q(E,F)˙) ⟹ Ext̲^*(E,F): H and both Ext underlined (cohomology and Ext sheaves; both scans)",
+  "tex": "\\Ho^p, \\Ext (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "E_2^{pq}=\\Ho^p(\\Ext^q(E,F)^\\bullet)\\Longrightarrow \\Ext^*(E,F),",
+   "new": "E_2^{pq}=\\underline{\\Ho}^p(\\underline{\\Ext}^q(E,F)^\\bullet)\\Longrightarrow \\underline{\\Ext}^*(E,F),"
+  },
+  "note": "Forms main.tex already uses for the underlined sheaves: \\underline{\\Ext}^i (p. 117), \\underline{\\Ho}^i (p. 131)."
+ },
+ {
+  "page": 149,
+  "where": "proof of 7.1.1, display 'où Ext^q(E,F)^i = ...'",
+  "scan": "both Ext underlined (both scans)",
+  "tex": "\\Ext (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ext^q(E,F)^i=\\coprod_{i_2-i_1=i}\\Ext^q(E^{i_1},F^{i_2}),",
+   "new": "\\underline{\\Ext}^q(E,F)^i=\\coprod_{i_2-i_1=i}\\underline{\\Ext}^q(E^{i_1},F^{i_2}),"
+  },
+  "note": ""
+ },
+ {
+  "page": 149,
+  "where": "proof of 7.1.1, 'dégénère puisque Ext^q(E,F) = 0'",
+  "scan": "Ext underlined (both scans)",
+  "tex": "\\(\\Ext^q(E,F)^\\bullet=0\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "puisque \\(\\Ext^q(E,F)^\\bullet=0\\)",
+   "new": "puisque \\(\\underline{\\Ext}^q(E,F)^\\bullet=0\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 150,
+  "where": "start of page",
+  "scan": "p. 150 begins with the display 'E_2^{po} = H^p(Hom(E,F)) ⥲ Ext^p(E,F) = H^p(R Hom(E,F)) ,'; 'isomorphismes' is the last line of p. 149 (both scans; witness DjVu pp. 160-161)",
+  "tex": "page_150.tex begins 'isomorphismes' (under the folio-150 marker)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The marker stands one line too early. Move it below 'isomorphismes': python -I move_marker.py 6 150 '\\[' (simulated on both layers: '... On en déduit des', 'isomorphismes', the marker, '\\[', 'E_2^{p0}=...')."
+ },
+ {
+  "page": 150,
+  "where": "first display, left side",
+  "scan": "E_2^{po} = H̲^p(Hom̲˙(E,F)): H and Hom underlined (both scans; witness w150_top.png)",
+  "tex": "\\Ho^p(\\Hom^\\bullet(E,F)) (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "E_2^{p0}=\\Ho^p(\\Hom^\\bullet(E,F))",
+   "new": "E_2^{p0}=\\underline{\\Ho}^p(\\underline{\\Hom}^\\bullet(E,F))"
+  },
+  "note": ""
+ },
+ {
+  "page": 150,
+  "where": "first display, 'Ext^p(E,F) = H^p('",
+  "scan": "Ext̲^p(E,F) = H̲^p( : Ext and H underlined (both scans)",
+  "tex": "\\Ext^p(E,F)=\\Ho^p( (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim}\\Ext^p(E,F)=\\Ho^p",
+   "new": "\\xrightarrow{\\sim}\\underline{\\Ext}^p(E,F)=\\underline{\\Ho}^p"
+  },
+  "note": "This isomorphism sign has an arrowhead (⥲): \\xrightarrow{\\sim} right here."
+ },
+ {
+  "page": 150,
+  "where": "first display, 'R Hom(E,F))'",
+  "scan": "ℝHom̲(E,F): double-struck R, Hom underlined (both scans)",
+  "tex": "\\(\\RHom(E,F)\\) (\\RHom = \\mathrm R\\!\\operatorname{Hom}: plain R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\RHom(E,F)),",
+   "new": "(\\mathbb{R}\\underline{\\Hom}(E,F)),"
+  },
+  "note": "The same edit underlines Hom (the sheaf Hom). Forms already applied on pp. 116-118: \\mathbb{R}\\underline{\\Hom}."
+ },
+ {
+  "page": 150,
+  "where": "Proposition 7.1.2, 'Soit ... tels que l'on ait'",
+  "scan": "underlined: 'Soit', 'un morphisme de topos annelés.', 'Soient', 'et', 'tels que l'on ait' (both scans)",
+  "tex": "no emphasis: the statement is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(f:(S',A')\\longrightarrow(S,A)\\) un morphisme de topos annelés. Soient \\(E\\in\\Ob\\Dpx^-(S)\\) et \\(F\\in\\Ob\\Dpx^b(S)\\) tels que l'on ait",
+   "new": "\\emph{Soit \\(f:(S',A')\\longrightarrow(S,A)\\) un morphisme de topos annelés. Soient \\(E\\in\\Ob\\Dpx^-(S)\\) et \\(F\\in\\Ob\\Dpx^b(S)\\) tels que l'on ait}"
+  },
+  "note": "Block over the formulas, as the file's other statements."
+ },
+ {
+  "page": 150,
+  "where": "Proposition 7.1.2, 'R Hom(E,F) ∈ ob D^b(S)'",
+  "scan": "ℝHom̲(E,F): double-struck R, Hom underlined (both scans)",
+  "tex": "\\(\\RHom(E,F)\\) (\\RHom = \\mathrm R\\!\\operatorname{Hom}: plain R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\RHom(E,F)\\in",
+   "new": "\\(\\mathbb{R}\\underline{\\Hom}(E,F)\\in"
+  },
+  "note": "The same edit underlines Hom (the sheaf Hom). Forms already applied on pp. 116-118: \\mathbb{R}\\underline{\\Hom}."
+ },
+ {
+  "page": 150,
+  "where": "Proposition 7.1.2, 'et Lf*(F) ∈ ob D^b(S')', the word 'et'",
+  "scan": "'et' underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Dpx^b(S)\\) et \\(",
+   "new": "\\Dpx^b(S)\\) \\emph{et} \\("
+  },
+  "note": ""
+ },
+ {
+  "page": 150,
+  "where": "Proposition 7.1.2, 'Lf*(F)'",
+  "scan": "𝕃f*(F): double-struck L (both scans)",
+  "tex": "\\(\\mathrm Lf^*(F)\\in...\\) (plain L)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathrm Lf^*(F)",
+   "new": "\\mathbb{L}f^*(F)"
+  },
+  "note": "Form as applied on pp. 111 and 118 (\\mathbb{L}f^*)."
+ },
+ {
+  "page": 150,
+  "where": "Proposition 7.1.2, 'Il existe une flèche canonique fonctorielle'",
+  "scan": "underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Il existe une flèche canonique fonctorielle",
+   "new": "\\emph{Il existe une flèche canonique fonctorielle}"
+  },
+  "note": ""
+ },
+ {
+  "page": 150,
+  "where": "Proposition 7.1.2, display",
+  "scan": "𝕃f* ℝHom̲(E,F) → ℝHom̲(𝕃f*E, 𝕃f*F) . : every L and R double-struck, both Hom underlined (both scans; crops_146_150/p150_s2_disp712.png, w150_disp712.png)",
+  "tex": "\\mathrm Lf^*\\RHom(E,F) ... \\RHom(\\mathrm Lf^*E,\\mathrm Lf^*F). (plain L and R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathrm Lf^*\\RHom(E,F)\n  \\longrightarrow\n  \\RHom(\\mathrm Lf^*E,\\mathrm Lf^*F).",
+   "new": "\\mathbb{L}f^*\\mathbb{R}\\underline{\\Hom}(E,F)\n  \\longrightarrow\n  \\mathbb{R}\\underline{\\Hom}(\\mathbb{L}f^*E,\\mathbb{L}f^*F)."
+  },
+  "note": "The same edit underlines both Hom."
+ },
+ {
+  "page": 150,
+  "where": "Proposition 7.1.2, 'Celle-ci est un isomorphisme si E est parfait.'",
+  "scan": "underlined: 'Celle-ci est un isomorphisme si', 'est parfait'; E and the stop not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Celle-ci est un isomorphisme si \\(E\\) est parfait.",
+   "new": "\\emph{Celle-ci est un isomorphisme si} \\(E\\) \\emph{est parfait}."
+  },
+  "note": ""
+ },
+ {
+  "page": 150,
+  "where": "proof of 7.1.2, 'des foncteurs Lf* et Rf_*'",
+  "scan": "𝕃f* and ℝf_*: double-struck L and R (both scans)",
+  "tex": "\\(\\mathrm Lf^*\\) et \\(\\mathrm Rf_*\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mathrm Lf^*\\) et \\(\\mathrm Rf_*\\)",
+   "new": "\\(\\mathbb{L}f^*\\) et \\(\\mathbb{R}f_*\\)"
+  },
+  "note": "As p. 83 (\\mathbb{R}f_*) and p. 111 (\\mathbb{L}f^*)."
+ },
+ {
+  "page": 150,
+  "where": "proof of 7.1.2, first display",
+  "scan": "ℝHom̲(E,F) → ℝf_* ℝHom̲(𝕃f*E , 𝕃f*F) . : every L and R double-struck, both Hom underlined (both scans; crops_146_150/p150_s2_disp_fleche.png, w150_disp_fleche.png)",
+  "tex": "\\RHom(E,F) ... \\mathrm Rf_*\\RHom(\\mathrm Lf^*E,\\mathrm Lf^*F).",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(E,F)\n  \\longrightarrow\n  \\mathrm Rf_*\\RHom(\\mathrm Lf^*E,\\mathrm Lf^*F).",
+   "new": "\\mathbb{R}\\underline{\\Hom}(E,F)\n  \\longrightarrow\n  \\mathbb{R}f_*\\mathbb{R}\\underline{\\Hom}(\\mathbb{L}f^*E,\\mathbb{L}f^*F)."
+  },
+  "note": "The same edit underlines both Hom."
+ },
+ {
+  "page": 150,
+  "where": "proof of 7.1.2, 'la flèche d'adjonction F → Rf_* Lf*F'",
+  "scan": "ℝf_* 𝕃f*F: double-struck R and L (both scans)",
+  "tex": "\\(F\\to\\mathrm Rf_*\\mathrm Lf^*F\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(F\\to\\mathrm Rf_*\\mathrm Lf^*F\\)",
+   "new": "\\(F\\to\\mathbb{R}f_*\\mathbb{L}f^*F\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 150,
+  "where": "proof of 7.1.2, duality display, left side",
+  "scan": "ℝf_* ℝHom̲(𝕃f*E, 𝕃f*F): double-struck R and L, Hom underlined (both scans)",
+  "tex": "\\mathrm Rf_*\\RHom(\\mathrm Lf^*E,\\mathrm Lf^*F)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathrm Rf_*\\RHom(\\mathrm Lf^*E,\\mathrm Lf^*F)\n",
+   "new": "\\mathbb{R}f_*\\mathbb{R}\\underline{\\Hom}(\\mathbb{L}f^*E,\\mathbb{L}f^*F)\n"
+  },
+  "note": "The same edit underlines Hom. Disjoint from the entry for the first display (that one ends with a full stop)."
+ },
+ {
+  "page": 150,
+  "where": "proof of 7.1.2, duality display, the isomorphism sign",
+  "scan": "≃: a tilde over a long plain line, no arrowhead (both scans; crops_146_150/p150_s2_simeq.png, w150_simeq.png); the isomorphism of the first display of the page has an arrowhead",
+  "tex": "\\xrightarrow{\\sim}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim}\n",
+   "new": "\\simeq\n"
+  },
+  "note": "\\simeq as for the same sign on p. 146 (A_U^p ≃ A_U^q); its length is not significant."
+ },
+ {
+  "page": 150,
+  "where": "proof of 7.1.2, duality display, right side",
+  "scan": "ℝHom̲(E, ℝf_*𝕃f*F) . : double-struck R and L, Hom underlined (both scans)",
+  "tex": "\\RHom(E,\\mathrm Rf_*\\mathrm Lf^*F).",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(E,\\mathrm Rf_*\\mathrm Lf^*F).",
+   "new": "\\mathbb{R}\\underline{\\Hom}(E,\\mathbb{R}f_*\\mathbb{L}f^*F)."
+  },
+  "note": "The same edit underlines Hom."
+ },
+ {
+  "page": 150,
+  "where": "Proposition 7.2, statement before the display",
+  "scan": "underlined: 'Il existe', 'pour', 'et', 'une flèche canonique fonctorielle'; '(cf. SGA 5 I 1.6),' and the formulas not (both scans)",
+  "tex": "no emphasis: the statement is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Il existe (cf. SGA 5 I 1.6), pour \\(E\\in\\Ob\\Dpx(S)\\) et \\(F\\in\\Ob\\Dpx^+(S)\\), une flèche canonique fonctorielle",
+   "new": "\\emph{Il existe} (cf. SGA 5 I 1.6), \\emph{pour \\(E\\in\\Ob\\Dpx(S)\\) et \\(F\\in\\Ob\\Dpx^+(S)\\), une flèche canonique fonctorielle}"
+  },
+  "note": "The reference stays roman as printed. One edit (balanced braces)."
+ },
+ {
+  "page": 150,
+  "where": "Proposition 7.2, display",
+  "scan": "E → ℝHom̲( ℝHom̲(E,F),F) . : both R double-struck, both Hom underlined (both scans)",
+  "tex": "E\\longrightarrow\\RHom(\\RHom(E,F),F).",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "E\\longrightarrow\\RHom(\\RHom(E,F),F).",
+   "new": "E\\longrightarrow\\mathbb{R}\\underline{\\Hom}(\\mathbb{R}\\underline{\\Hom}(E,F),F)."
+  },
+  "note": "The same edit underlines both Hom."
+ },
+ {
+  "page": 150,
+  "where": "Proposition 7.2, 'Celle-ci est un isomorphisme si ...'",
+  "scan": "'Celle-ci est un isomorphisme si' underlined; the rest of the line not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Celle-ci est un isomorphisme si \\(E\\in",
+   "new": "\\emph{Celle-ci est un isomorphisme si} \\(E\\in"
+  },
+  "note": ""
+ }
+]

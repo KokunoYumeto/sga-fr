@@ -1,0 +1,17 @@
+[
+ {
+  "page": 245,
+  "where": "end of page_245.tex, macro block '% Additions for Exposé III, pages 253--280' (live main.tex line 5948)",
+  "scan": "the print types 'ob' (E ∈ ob D(X)) on pp. 241-245 (6 places, main scan) and, by the OCR, on every page 246-280 (e.g. p. 246 'E ∈ ob D(X)', p. 260 'ob Mod(X)', p. 274 'ob C', p. 280 'ob D'); the OCR keeps capital 'Ob' where p. 222 has it, so its case is reliable",
+  "tex": "\\renewcommand{\\Ob}{\\operatorname{Ob}}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\renewcommand{\\Ob}{\\operatorname{Ob}}",
+   "new": "\\renewcommand{\\Ob}{\\operatorname{ob}}"
+  },
+  "note": "The live main.tex already prints 'ob' for pp. 222-245 (line 5323 changed to \\operatorname{ob}, so the six \\Ob of pp. 241-245, still 'Ob' in the page snapshots, need no edit), but this second \\renewcommand, after the last display of p. 245, switches \\Ob back to 'Ob' for pp. 246-280. Page 245's own text is not affected. Per-page \\ob edits of later batches stay harmless after this change. The same line recurs in main.tex for later exposés (lines 6540, 7189, 13288, 17025): apply this edit inside the folio-245 span only.",
+  "why": "old occurs 0 times on the page",
+  "resolved": "already done by the Exposé III pass of 10 Nov (sga6_expose3_pass.py): the folio-245 block prints ob"
+ }
+]

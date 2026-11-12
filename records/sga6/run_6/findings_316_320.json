@@ -1,0 +1,353 @@
+[
+ {
+  "page": 316,
+  "where": "page start: 'F^pΛ^n(E) = Λ^n(E), et si p < 0, F^pΛ^n(E) = 0. Ceci définit bien une filtration finie sur Λ^n(E).'",
+  "scan": "the page's first line is running text at the left margin, continued on the same line by 'Ceci définit bien une filtra-'; p. 315 ends with the one-line display 'Λ^{n-p}(E')⊗_AΛ^p(E) → Λ^n(E)  pour 0 ≤ p ≤ n ; si p ≥ n ,' (both scans)",
+  "tex": "the second line of a gathered display opened on p. 315 (its first line ends '\\text{si } p\\geq n,\\\\' just above the folio-316 marker), closed by \\end{gathered} \\] before 'Ceci définit'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "  F^p\\Lambda^n(E)=\\Lambda^n(E),\\quad \\text{et si } p<0,\\quad F^p\\Lambda^n(E)=0.\n\\end{gathered}\n\\]\nCeci définit",
+   "new": "\\(F^p\\Lambda^n(E)=\\Lambda^n(E)\\), et si \\(p<0\\), \\(F^p\\Lambda^n(E)=0\\). Ceci définit"
+  },
+  "note": "APPLY TOGETHER with its p. 315 half, which lies above the marker: in both layers of main.tex replace '\\text{si } p\\geq n,\\\\\\n%%%%%%%%%%  scan idx 329  |  folio 316  %%%%%%%%%%' by '\\text{si } p\\geq n,\\n\\end{gathered}\\n\\]\\n%%%%%%%%%%  scan idx 329  |  folio 316  %%%%%%%%%%' (once in each layer). Simulated on both layers with this page's edit: the display closes on p. 315 and p. 316 opens with the sentence in the running text, same paragraph. Either half alone breaks the gathered environment."
+ },
+ {
+  "page": 316,
+  "where": "'Dans le cas ou E', E, E'' sont localement facteurs directs'",
+  "scan": "ou, without the grave accent (both scans)",
+  "tex": "Dans le cas ou",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Dans le cas où",
+  "note": "The TeX keeps the printed reading; the corrected layer also still reads 'ou'."
+ },
+ {
+  "page": 316,
+  "where": "'f : (T,A) → (T',A') un morphisme de topos annelés', the second A'",
+  "scan": "(T',A!): after the underlined A an exclamation mark (a tapering stroke with a dot at its foot, taller than the primes of T' on the same line and of (T',A') on the line above); clear in the witness, the lower part fainter in the main scan (crops_316_320/c316_Aprime2.png, w316_Aprime.png)",
+  "tex": "\\longrightarrow(T',A')\\)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\longrightarrow(T',A')\\) un morphisme",
+   "new": "\\longrightarrow(T',A!)\\) un morphisme"
+  },
+  "corrected": "\\longrightarrow(T',A')\\) un morphisme",
+  "note": "The typist struck '!' for the prime; the TeX silently corrects. The diplomatic layer keeps A! as printed."
+ },
+ {
+  "page": 316,
+  "where": "'Signalons deux cas particuliers :', the list markers (pp. 316-317)",
+  "scan": "each item begins with a typed hyphen: '- Soit X un schéma ;' (p. 316), '- Soit A un anneau' (p. 317) (both scans)",
+  "tex": "\\begin{itemize} with the default label (a bullet)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\begin{itemize}",
+   "new": "\\begin{itemize}[label=-]"
+  },
+  "note": "main.tex writes the typed hyphen of a list as \\begin{itemize}[label=-] (Exemples 3.6 of Exposé I, line 2611, after the p. 116 fix)."
+ },
+ {
+  "page": 316,
+  "where": "'c'est ce cas qui servira dans la suite du séminaire'",
+  "scan": "c'èst: a thin accent stroke over the e in both scans (grave-like in the main scan, a small tick in the witness), smaller and lighter than the typed accents of 'pré' and 'modèle' on the same lines (crops_316_320/c316_cest3.png, w316_cest2.png)",
+  "tex": "c'est",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": {
+   "old": "c'est ce cas",
+   "new": "c'èst ce cas"
+  },
+  "corrected": "c'est ce cas",
+  "note": "If the mark is what remains of an accent the typist erased, the TeX's c'est stands and this entry is to be dropped; the size of the mark leaves that open."
+ },
+ {
+  "page": 316,
+  "where": "Module letters and the ring of the topos, pp. 316 and 320 (convention of the Exposé V transcription, reported once)",
+  "scan": "E, E', E'', F (Modules) and A (the ring of the ringed topos) are underlined, the underline under the letter only, the primes after it: p. 316 'F^pΛ^n(E̲) = Λ^n(E̲)', 'Dans le cas ou E̲', E̲, E̲''', '(T,A̲), (T',A̲') deux topos'; p. 320 'pour tous A-Modules E̲, F̲', 'au cas où E̲ et F̲ sont des modules inversibles' (both scans). Left plain in the print: the classes in K (λ^n(E), λ^{n-p}(E').λ^p(E'') on p. 316, the display λ_t(EF) = ... on p. 320), the index A of ⊗_A, the A of 'A-Modules', and (T,A) on p. 317",
+  "tex": "plain E, E', E'', F, A",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Not itemized: 24 places on p. 316 (every Λ^n(E), Λ^p(E'), Λ^q(E''), Gr^pΛ^n(E), F^pΛ^n(E), E', E, E'', x''_i de E'', and the six A of (T,A), (T',A')), 4 on p. 320. One decision for Exposé V: \\underline{E}', \\underline{E}'', \\underline{F}, \\underline{A} where the print underlines; not a blind replacement, since the K-classes and the displays keep plain letters. Exposé 0 already writes the underlined Module as \\underline E (p. 6)."
+ },
+ {
+  "page": 317,
+  "where": "page start",
+  "scan": "p. 317 begins 'λ-anneaux.' and then the second item '- Soit A un anneau, X = Spec A ; ...'; p. 316 ends '... considéré comme \"modèle\" pour la théorie générale des' (both scans)",
+  "tex": "'\\(\\lambda\\)-anneaux.' ends the first \\item line of page_316.tex and the second '\\item' stands alone on the line above the folio-317 marker; page_317.tex begins 'Soit \\(A\\) un anneau'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 317 really begins with '\\(\\lambda\\)-anneaux.'. Exact fix in main.tex (both layers, once each): replace 'pour la théorie générale des \\(\\lambda\\)-anneaux.\\n\\item\\n%%%%%%%%%%  scan idx 330  |  folio 317  %%%%%%%%%%\\nSoit \\(A\\)' by 'pour la théorie générale des\\n%%%%%%%%%%  scan idx 330  |  folio 317  %%%%%%%%%%\\n\\(\\lambda\\)-anneaux.\\n\\item\\nSoit \\(A\\)' (simulated on both layers; the line end after 'des' keeps the space). Equivalent: python -I move_marker.py 6 317 '\\(\\lambda\\)-anneaux.' --before."
+ },
+ {
+  "page": 317,
+  "where": "'On définit d'abord la multiplication en se donnant un morphisme de Z-bilinéaire de foncteurs'",
+  "scan": "'un morphisme de' at the end of the line, 'ℤ-bilinéaire de foncteurs' on the next (both scans)",
+  "tex": "un morphisme de \\(\\mathbb Z\\)-bilinéaire de foncteurs",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "un morphisme \\(\\mathbb Z\\)-bilinéaire de foncteurs",
+  "note": "A stray 'de' at the line end: the morphism Ĝ x Ĝ → Ĝ is Z-bilinear. The TeX keeps the printed reading; the corrected layer also."
+ },
+ {
+  "page": 317,
+  "where": "same sentence, 'par élément 1+XYt de Ĝ(Z[X,Y])'",
+  "scan": "par élément 1+XYt, without article (both scans)",
+  "tex": "par élément \\(1+XYt\\)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "par l'élément \\(1+XYt\\)",
+  "note": "The exposé writes 'déterminés par l'élément Φ(...)' in §1 (main.tex line 7577). The TeX keeps the printed reading; the corrected layer also."
+ },
+ {
+  "page": 317,
+  "where": "second diagram after 'associative et commutative par les diagrammes :', lower horizontal arrow",
+  "scan": "the label Id stands above the lower arrow Ĝ → Ĝ, at its head (both scans; crops_316_320/c317_diag2.png, w317_id.png)",
+  "tex": "\\arrow[r,\"\\id\"'] (label set below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r,\"\\id\"']",
+   "new": "\\arrow[r,\"\\id\"]"
+  },
+  "note": "Label on the wrong side of the arrow; \\id prints Id in Exposé V (\\renewcommand at main.tex line 7187), as printed. Apply before the next entry."
+ },
+ {
+  "page": 317,
+  "where": "same label",
+  "scan": "Id: a typed colon after Id, two dots one above the other right of the d (both scans; crops_316_320/c317_id.png, w317_id.png)",
+  "tex": "\\id, no colon",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": {
+   "old": "\\id\"",
+   "new": "\\id:\""
+  },
+  "corrected": "\\arrow[r,\"\\id\"]",
+  "note": "A stray colon in the label; the TeX drops it silently. The old string is in the text the previous entry leaves (and also before it); the corrected layer takes only the previous entry."
+ },
+ {
+  "page": 318,
+  "where": "'(resp. 1+Xt, 1+Xt de Ĝ(Z[X,Y]))'",
+  "scan": "1+Xt, 1+Xt (both scans)",
+  "tex": "(resp. \\(1+Xt,1+Xt\\) de",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(resp. \\(1+Xt,1+Yt\\) de",
+  "note": "The commutativity is checked on the two elements 1+Xt, 1+Yt of Ĝ(Z[X,Y]), as on 1+Xt,1+Yt,1+Zt of Ĝ(Z[X,Y,Z]) just before. The TeX keeps the printed reading; the corrected layer also still reads 1+Xt,1+Xt."
+ },
+ {
+  "page": 318,
+  "where": "'Donnons à titre d'exemple la valeur de p_2 :'",
+  "scan": "a small p with its stem below the line (p_2), unlike the capital P of 'sera noté P_n' above and of the display P_2(X_1,X_2;Y_1,Y_2) below (both scans; crops_316_320/c318_p2.png, c318_Pn.png)",
+  "tex": "la valeur de \\(P_2\\) :",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "valeur de \\(P_2\\)",
+   "new": "valeur de \\(p_2\\)"
+  },
+  "corrected": "valeur de \\(P_2\\)",
+  "note": "The TeX silently corrects; the diplomatic layer keeps the printed small p."
+ },
+ {
+  "page": 318,
+  "where": "after the display of P_2",
+  "scan": "On a également la relation suivante : ... begins a new, indented paragraph (both scans)",
+  "tex": "\\]\\nOn a également (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nOn a également",
+   "new": "\\]\n\nOn a également"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 318,
+  "where": "'nous le noterons parfois 1, ou encore 1_∘ .'",
+  "scan": "both 1 underlined (1̲ and 1̲_∘, the underline under the 1 only; both scans; crops_316_320/w318_unit.png, w318_unit2.png)",
+  "tex": "\\(1\\), ou encore \\(1_\\circ\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "parfois \\(1\\), ou encore \\(1_\\circ\\)",
+   "new": "parfois \\(\\underline{1}\\), ou encore \\(\\underline{1}_\\circ\\)"
+  },
+  "note": "The underlined 1 names the unit 1+t of Ĝ(K); it recurs twice on p. 319 (entries there)."
+ },
+ {
+  "page": 318,
+  "where": "'et par conséquent être composé avec lui même'",
+  "scan": "lui même, without hyphen (both scans); p. 319 has 'lui-même'",
+  "tex": "lui même",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "lui-même",
+  "note": "The TeX keeps the printed reading."
+ },
+ {
+  "page": 319,
+  "where": "page start",
+  "scan": "p. 319 begins 'choisirons des indéterminées différentes pour chacun des facteurs'; p. 318 ends '... pour éviter des confusions, nous' (both scans)",
+  "tex": "page_319.tex begins 'nous choisirons': 'nous', the last word of p. 318, stands under the folio-319 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 319 really begins with 'choisirons'. Exact fix in main.tex (both layers, once each): replace 'pour éviter des confusions,\\n%%%%%%%%%%  scan idx 332  |  folio 319  %%%%%%%%%%\\nnous choisirons' by 'pour éviter des confusions, nous\\n%%%%%%%%%%  scan idx 332  |  folio 319  %%%%%%%%%%\\nchoisirons' (simulated on both layers). Equivalent: python -I move_marker.py 6 319 'choisirons'."
+ },
+ {
+  "page": 319,
+  "where": "'L'élément définissant le morphisme λ_u est 1 + {1+Xt}u'",
+  "scan": "the first 1 underlined (1̲ + {1+Xt}u; both scans)",
+  "tex": "\\(1+\\{1+Xt\\}u\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est \\(1+\\{1+Xt\\}u\\)",
+   "new": "est \\(\\underline{1}+\\{1+Xt\\}u\\)"
+  },
+  "note": "The unit 1̲ of p. 318."
+ },
+ {
+  "page": 319,
+  "where": "display (2.3.3)",
+  "scan": "λ_u(1 + Xt) = 1̲ + {1 + Xt} u. : the first 1 of the right side underlined (both scans)",
+  "tex": "\\lambda_u(1+Xt)=1+\\{1+Xt\\}u.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "=1+\\{1+Xt\\}u.",
+   "new": "=\\underline{1}+\\{1+Xt\\}u."
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 319,
+  "where": "after (2.3.3)",
+  "scan": "Donnons à titre d'exemple la valeur de Q_{2,2} : begins a new, indented paragraph (both scans)",
+  "tex": "\\end{equation}\\nDonnons (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nDonnons",
+   "new": "\\end{equation}\n\nDonnons"
+  },
+  "note": "Missing paragraph break. Independent of the folio-320 marker fix (no common text)."
+ },
+ {
+  "page": 319,
+  "where": "series with the typed dots on the line (convention, reported once)",
+  "scan": "'...' typed on the line: '1+ψ_1u+...+ψ_iu^i+...', 'λ_u(1+...+X_nt^n+...)', 'λ^i(1+...+X_nt^n+...)' (both scans)",
+  "tex": "\\cdots: 1+\\psi_1u+\\cdots+\\psi_i u^i+\\cdots, \\lambda_u(1+\\cdots+X_nt^n+\\cdots), \\lambda^i(1+\\cdots+X_nt^n+\\cdots)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": null,
+  "note": "GLOBAL_ISSUES 87 (volume decision for the closing pass), not itemized. The dots between the lowered wedges on p. 316 (x'_1∧...∧x'_{n-p}) stand at the height of the wedge tops and may stay \\cdots."
+ },
+ {
+  "page": 320,
+  "where": "page start",
+  "scan": "p. 320 begins with the display 'Q_{2,2}(X_1,X_2,X_3,X_4) = X_1X_3 - X_4 .'; p. 319 ends 'Donnons à titre d'exemple la valeur de Q_{2,2} :' (both scans)",
+  "tex": "the display \\[ Q_{2,2}(X_1,X_2,X_3,X_4)=X_1X_3-X_4. \\] ends page_319.tex, above the folio-320 marker; page_320.tex begins 'Indiquons'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 320 really begins with the display. Exact fix in main.tex (both layers, once each): replace 'la valeur de \\(Q_{2,2}\\) :\\n\\[\\n  Q_{2,2}(X_1,X_2,X_3,X_4)=X_1X_3-X_4.\\n\\]\\n\\n%%%%%%%%%%  scan idx 333  |  folio 320  %%%%%%%%%%\\nIndiquons' by 'la valeur de \\(Q_{2,2}\\) :\\n%%%%%%%%%%  scan idx 333  |  folio 320  %%%%%%%%%%\\n\\[\\n  Q_{2,2}(X_1,X_2,X_3,X_4)=X_1X_3-X_4.\\n\\]\\n\\nIndiquons' (simulated on both layers). Equivalent: python -I move_marker.py 6 320 '\\[' --before."
+ },
+ {
+  "page": 320,
+  "where": "Définition 2.4, the statement",
+  "scan": "underlined word group by word group: 'Un pré-', 'anneau', 'sera appelé un', 'anneau si l'homomor-phisme de groupes abéliens', 'est un', 'homomorphisme', 'pour la structure de pré-', 'anneau sur le deuxième membre définie en'; λ, K, the formula and '2.3.' plain (both scans)",
+  "tex": "the statement in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "The GLOBAL_ISSUES 82 pattern, which Exposé V continues (findings_296_300, p. 298): not itemized. No \\emph on defined terms and no category L on pp. 316-320."
+ },
+ {
+  "page": 320,
+  "where": "after Définition 2.4",
+  "scan": "Cela signifie donc qu'on a les relations : ∀x,y ∈ K, begins a new, indented paragraph (both scans)",
+  "tex": "définie en 2.3. Cela signifie (same paragraph as the definition)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "définie en 2.3. Cela signifie",
+   "new": "définie en 2.3.\n\nCela signifie"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 320,
+  "where": "after (2.4.1)",
+  "scan": "En termes des applications λ^i, ... begins a new, indented paragraph (both scans)",
+  "tex": "\\end{equation}\\nEn termes (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nEn termes",
+   "new": "\\end{equation}\n\nEn termes"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 320,
+  "where": "'les deux dernières relations équivalent à : x,y ∈ K, i.j ∈ ℕ,'",
+  "scan": "i.j with a full stop on the line (both scans; crops_316_320/c320_ij.png)",
+  "tex": "\\(i.j\\in\\mathbb N\\)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\(i,j\\in\\mathbb N\\)",
+  "note": "The TeX keeps the printed reading; the corrected layer also still reads i.j."
+ },
+ {
+  "page": 320,
+  "where": "display (2.4.2), end of the first line",
+  "scan": "λ^i(xy) = P_i(λ^1(x),...,λ^i(x); λ^1(y),..., λ^i(y)) with no punctuation after it (both scans)",
+  "tex": "\\lambda^i(y)), \\tag{2.4.2}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lambda^i(y)),",
+   "new": "\\lambda^i(y))"
+  },
+  "note": "The TeX adds a comma at the end of the display line."
+ },
+ {
+  "page": 320,
+  "where": "display (2.4.2), end of the second line",
+  "scan": "λ^j(λ^i(x)) = Q_{i,j}(λ^1(x),...,λ^{ij}(x)) with no punctuation after it (both scans)",
+  "tex": "\\lambda^{ij}(x)). \\tag{2.4.3}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lambda^{ij}(x)).",
+   "new": "\\lambda^{ij}(x))"
+  },
+  "note": "The TeX adds a full stop at the end of the display. Independent of the next entry (adjacent texts, no overlap)."
+ },
+ {
+  "page": 320,
+  "where": "display (2.4.2), the equation numbers",
+  "scan": "one number, (2.4.2), at the left between the two lines; no (2.4.3) (both scans)",
+  "tex": "\\tag{2.4.2} on the first line and \\tag{2.4.3} on the second",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tag{2.4.3}",
+   "new": "\\notag"
+  },
+  "note": "The TeX adds the number (2.4.3). The two relations share the number 2.4.2, and the text cites them so ('les relations 2.4.2', main.tex line 7845; 'V 2.4.2' in Exp. VI). With \\notag the one number stays on the first line; a single number centred between the lines would need equation+aligned."
+ }
+]

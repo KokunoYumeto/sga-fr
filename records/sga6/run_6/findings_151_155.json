@@ -1,0 +1,766 @@
+[
+ {
+  "page": 151,
+  "where": "proof of 7.2, display 'E -> Hom(Hom(E,F),F) .'",
+  "scan": "both Hom underlined: Hom̲•(Hom̲•(E,F),F) (both scans)",
+  "tex": "E\\longrightarrow\\Hom^\\bullet(\\Hom^\\bullet(E,F),F). (\\Hom = \\operatorname{Hom}, plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "E\\longrightarrow\\Hom^\\bullet(\\Hom^\\bullet(E,F),F)",
+   "new": "E\\longrightarrow\\underline{\\Hom}^\\bullet(\\underline{\\Hom}^\\bullet(E,F),F)"
+  },
+  "note": "\\underline{\\Hom} is the file's form (main.tex line 1939, pp. 135-136)."
+ },
+ {
+  "page": 151,
+  "where": "Définition 7.3, 'Nous poserons RHom(E,A) = E^v'",
+  "scan": "ℝHom̲(E,A): double-struck R (doubled stem), Hom underlined (both scans; crops_151_155/w151_def73.png)",
+  "tex": "\\(\\RHom(E,A)=E^\\vee\\) (\\RHom = \\mathrm R\\!\\operatorname{Hom} (main.tex line 1847): plain R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\RHom(E,A)=E^\\vee\\)",
+   "new": "\\(\\mathbb{R}\\underline{\\Hom}(E,A)=E^\\vee\\)"
+  },
+  "note": "The same edit underlines Hom. \\mathbb{R}\\underline{\\Hom} as applied on pp. 116-118."
+ },
+ {
+  "page": 151,
+  "where": "after 7.3, 'le foncteur RHom( ,A)'",
+  "scan": "ℝHom̲: double-struck R, Hom underlined (both scans; crops_151_155/p151_foncteur.png, w151_foncteur.png)",
+  "tex": "\\(\\RHom(\\,\\cdot\\,,A)\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "foncteur \\(\\RHom",
+   "new": "foncteur \\(\\mathbb{R}\\underline{\\Hom}"
+  },
+  "note": "Also underlines Hom. Independent of the next entry (adjacent texts, no overlap)."
+ },
+ {
+  "page": 151,
+  "where": "same formula, the argument place of 'RHom( ,A)'",
+  "scan": "an empty place about three letters wide between '(' and ',A)': no dot, no letter (both scans; crops_151_155/p151_foncteur.png, w151_foncteur.png)",
+  "tex": "(\\,\\cdot\\,,A)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\,\\cdot\\,,A)",
+   "new": "(\\quad,A)"
+  },
+  "note": "The TeX adds a centred dot. Where the typescript types a full stop as place-holder it was kept as '.' (pp. 89, 136, 141); here it has none."
+ },
+ {
+  "page": 151,
+  "where": "after 7.3, '(resp. D(S)_parf (5.8.4.b)))'",
+  "scan": "the second index 'parf' underlined (the notation of 5.8.4 b)); the first D(S)_parf of the sentence is plain (both scans)",
+  "tex": "\\(\\Dpx(S)_{\\parf}\\) (\\parf = \\operatorname{parf}, plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Dpx(S)_{\\parf}",
+   "new": "\\Dpx(S)_{\\underline{\\mathrm{parf}}}"
+  },
+  "note": "Form applied on p. 137 (main.tex line 3144)."
+ },
+ {
+  "page": 151,
+  "where": "Lemme 7.4, statement before the displays",
+  "scan": "'Pour' and 'il existe des isomorphismes fonctoriels canoniques' underlined; the formulas and ' :' not (both scans)",
+  "tex": "no emphasis: the statement is in roman (Définition 7.3 above has \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour \\(E\\in\\Ob\\Dpx(S)\\), \\(F\\in\\Ob\\Dpx^-(S)\\), \\(G\\in\\Ob\\Dpx^+(S)\\), il existe des isomorphismes fonctoriels canoniques",
+   "new": "\\emph{Pour \\(E\\in\\Ob\\Dpx(S)\\), \\(F\\in\\Ob\\Dpx^-(S)\\), \\(G\\in\\Ob\\Dpx^+(S)\\), il existe des isomorphismes fonctoriels canoniques}"
+  },
+  "note": "Block form (volume decision); the colon stays outside."
+ },
+ {
+  "page": 151,
+  "where": "Lemme 7.4, first display line",
+  "scan": "RHom̲(E ⊗L F, G) ⥲ RHom̲(E, RHom̲(F,G)) , : a plain typed R, all three Hom underlined (both scans; crops_151_155/p151_cartan1.png, p151_cartan2.png)",
+  "tex": "\\RHom three times (plain Hom); the TeX's first and second lines are identical",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{aligned}\n\\RHom(E\\otL F,G)&\\xrightarrow{\\sim}\\RHom(E,\\RHom(F,G)),",
+   "new": "\\begin{aligned}\n\\mathrm R\\underline{\\Hom}(E\\otL F,G)&\\xrightarrow{\\sim}\\mathrm R\\underline{\\Hom}(E,\\mathrm R\\underline{\\Hom}(F,G)),"
+  },
+  "note": "The print tells the three lines apart by the underline: sheaf RHom̲ (line 1), global RHom (line 2, first two terms), Hom (line 3, first two terms). The R of these displays is a plain typed R, as \\RHom has it."
+ },
+ {
+  "page": 151,
+  "where": "Lemme 7.4, second display line, last term",
+  "scan": "RHom(E ⊗L F, G) ⥲ RHom(E, RHom̲(F,G)) , : only the third Hom underlined (both scans; crops_151_155/p151_cartan2.png)",
+  "tex": "\\RHom(E\\otL F,G)&\\xrightarrow{\\sim}\\RHom(E,\\RHom(F,G)),",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(F,G)),\\\\\n\\Hom(E\\otL",
+   "new": "\\mathrm R\\underline{\\Hom}(F,G)),\\\\\n\\Hom(E\\otL"
+  },
+  "note": "The first two terms are the global RHom and stay plain."
+ },
+ {
+  "page": 151,
+  "where": "Lemme 7.4, third display line, last term",
+  "scan": "Hom(E ⊗L F, G) ⥲ Hom(E, RHom̲(F,G)) . : only RHom̲(F,G) underlined (both scans)",
+  "tex": "\\Hom(E,\\RHom(F,G)).",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(E,\\RHom(F,G)).",
+   "new": "\\Hom(E,\\mathrm R\\underline{\\Hom}(F,G))."
+  },
+  "note": ""
+ },
+ {
+  "page": 152,
+  "where": "Lemme 7.5, statement before the display",
+  "scan": "'Pour' and 'il existe un homomorphisme fonctoriel canonique' underlined; the formulas not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour \\(E\\in\\Ob\\Dpx^-(S)\\), \\(F\\in\\Ob\\Dpx^+(S)\\), il existe un homomorphisme fonctoriel canonique",
+   "new": "\\emph{Pour \\(E\\in\\Ob\\Dpx^-(S)\\), \\(F\\in\\Ob\\Dpx^+(S)\\), il existe un homomorphisme fonctoriel canonique}"
+  },
+  "note": "Block form (volume decision)."
+ },
+ {
+  "page": 152,
+  "where": "Lemme 7.5, display 'E ⊗L RHom(E,F) -> F'",
+  "scan": "a plain typed R, Hom underlined (both scans; crops_151_155/p152_l75disp.png, w152_l75disp.png)",
+  "tex": "E\\otL\\RHom(E,F)\\longrightarrow F.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "E\\otL\\RHom(E,F)\\longrightarrow",
+   "new": "E\\otL\\mathrm R\\underline{\\Hom}(E,F)\\longrightarrow"
+  },
+  "note": "Independent of the next entry."
+ },
+ {
+  "page": 152,
+  "where": "Lemme 7.5, end of the display",
+  "scan": "nothing after F (both scans; crops_151_155/p152_l75disp.png, w152_l75disp.png)",
+  "tex": "\\longrightarrow F.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "F.\n\\]",
+   "new": "F\n\\]"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 152,
+  "where": "Proposition 7.6, 'Soient'",
+  "scan": "'Soient' underlined; the formulas not (both scans)",
+  "tex": "no emphasis: the whole proposition is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient \\(E\\in",
+   "new": "\\emph{Soient} \\(E\\in"
+  },
+  "note": "Word groups for this statement, so that the entry for the stop after D^+(S) stays independent; the statement continues in the next entries."
+ },
+ {
+  "page": 152,
+  "where": "Proposition 7.6, 'F ∈ ob D^+(S) ,'",
+  "scan": "the main scan has a pale speck between ')' and ',', smaller and lighter than the typed full stops of the page; the witness has nothing there (crops_151_155/p152_Fdot.png, w152_Fdot.png): no full stop is printed",
+  "tex": "\\(F\\in\\Ob\\Dpx^+(S)\\).,",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\(F\\in\\Ob\\Dpx^+(S)\\).,",
+   "new": "\\(F\\in\\Ob\\Dpx^+(S)\\),"
+  },
+  "note": "A speck (or the trace of an erased stop) taken for a full stop."
+ },
+ {
+  "page": 152,
+  "where": "Proposition 7.6, 'Sous l'une des hypothèses suivantes'",
+  "scan": "underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous l'une des hypothèses suivantes",
+   "new": "\\emph{Sous l'une des hypothèses suivantes}"
+  },
+  "note": ""
+ },
+ {
+  "page": 152,
+  "where": "Proposition 7.6 i)",
+  "scan": "'de tor-dimension finie' underlined, G and the comma not (both scans; crops_151_155/p152_items.png)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(G\\) de tor-dimension finie",
+   "new": "\\(G\\) \\emph{de tor-dimension finie}"
+  },
+  "note": ""
+ },
+ {
+  "page": 152,
+  "where": "Proposition 7.6 ii)",
+  "scan": "'de tor-dimension finie et' underlined, the formulas not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(F\\) de tor-dimension finie et",
+   "new": "\\(F\\) \\emph{de tor-dimension finie et}"
+  },
+  "note": ""
+ },
+ {
+  "page": 152,
+  "where": "Proposition 7.6, 'il existe un homomorphisme fonctoriel canonique' after the items",
+  "scan": "underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{enumerate}\nil existe un homomorphisme fonctoriel canonique",
+   "new": "\\end{enumerate}\n\\emph{il existe un homomorphisme fonctoriel canonique}"
+  },
+  "note": ""
+ },
+ {
+  "page": 152,
+  "where": "Proposition 7.6, display 'RHom(E,F) ⊗L G -> RHom(E, F ⊗L G) .'",
+  "scan": "a plain typed R in both terms, both Hom underlined (both scans; crops_151_155/p152_76disp.png)",
+  "tex": "\\RHom(E,F)\\otL G ... \\RHom(E,F\\otL G). (plain Hom)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(E,F)\\otL G\n  \\longrightarrow\n  \\RHom(E,F\\otL G)",
+   "new": "\\mathrm R\\underline{\\Hom}(E,F)\\otL G\n  \\longrightarrow\n  \\mathrm R\\underline{\\Hom}(E,F\\otL G)"
+  },
+  "note": ""
+ },
+ {
+  "page": 152,
+  "where": "Proposition 7.6, 'Celui-ci est un isomorphisme quand E est parfait.'",
+  "scan": "'Celui-ci est un isomorphisme quand' and 'est parfait' underlined; E and the full stop not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Celui-ci est un isomorphisme quand \\(E\\) est parfait",
+   "new": "\\emph{Celui-ci est un isomorphisme quand \\(E\\) est parfait}"
+  },
+  "note": "End of the statement."
+ },
+ {
+  "page": 152,
+  "where": "proof of 7.6, display 'E ⊗L RHom(E,F) ⊗L G -> F ⊗L G .'",
+  "scan": "ℝ Hom̲(E,F): double-struck R, Hom underlined (both scans; crops_151_155/p152_proofdisp.png)",
+  "tex": "E\\otL\\RHom(E,F)\\otL G (\\RHom = \\mathrm R\\!\\operatorname{Hom} (main.tex line 1847): plain R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "E\\otL\\RHom(E,F)\\otL G",
+   "new": "E\\otL\\mathbb{R}\\underline{\\Hom}(E,F)\\otL G"
+  },
+  "note": "Also underlines Hom."
+ },
+ {
+  "page": 152,
+  "where": "proof of 7.6, 'On applique le foncteur ⊗L G'",
+  "scan": "the tensor sign with L over it, then G; nothing before the tensor sign (both scans; crops_151_155/p152_foncteur.png)",
+  "tex": "\\(-\\otL G\\)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(-\\otL G\\)",
+   "new": "\\(\\otL G\\)"
+  },
+  "note": "The TeX adds the dash of the empty argument."
+ },
+ {
+  "page": 153,
+  "where": "Corollaire 7.7, 'Il existe, pour'",
+  "scan": "'Il existe,' and 'pour' underlined; the formulas and 'et' not; then 'un isomorphisme fonctoriel' underlined (both scans)",
+  "tex": "no emphasis: the statement is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Il existe, pour",
+   "new": "\\emph{Il existe, pour}"
+  },
+  "note": "Word groups, so that the index entry of the same sentence stays independent."
+ },
+ {
+  "page": 153,
+  "where": "Corollaire 7.7, 'E ∈ ob D(S)_parf'",
+  "scan": "the index 'parf' underlined (both scans)",
+  "tex": "\\Dpx(S)_{\\mathrm{parf}}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Dpx(S)_{\\mathrm{parf}}\\) et",
+   "new": "\\Dpx(S)_{\\underline{\\mathrm{parf}}}\\) et"
+  },
+  "note": "The notation of 5.8.4 b), as on p. 151 '(resp. D(S)_parf̲ (5.8.4.b)))'; also in the proof, 7.8, 7.9, 8.1 and 8.2."
+ },
+ {
+  "page": 153,
+  "where": "Corollaire 7.7, 'un isomorphisme fonctoriel'",
+  "scan": "underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "un isomorphisme fonctoriel",
+   "new": "\\emph{un isomorphisme fonctoriel}"
+  },
+  "note": ""
+ },
+ {
+  "page": 153,
+  "where": "Corollaire 7.7, display 'E^v ⊗L F ⥲ RHom(E,F) ,'",
+  "scan": "ℝHom̲(E,F): double-struck R, Hom underlined (both scans; crops_151_155/p153_77disp.png)",
+  "tex": "\\xrightarrow{\\sim}\\RHom(E,F) (\\RHom = \\mathrm R\\!\\operatorname{Hom} (main.tex line 1847): plain R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim}\\RHom(E,F)",
+   "new": "\\xrightarrow{\\sim}\\mathbb{R}\\underline{\\Hom}(E,F)"
+  },
+  "note": "Also underlines Hom. The arrow of this display has its head (unlike the three signs of the display in the proof of 7.8)."
+ },
+ {
+  "page": 153,
+  "where": "Corollaire 7.7, 'avec la notation de (7.3).'",
+  "scan": "'avec la notation de' underlined, '(7.3).' not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "avec la notation de",
+   "new": "\\emph{avec la notation de}"
+  },
+  "note": "End of the statement."
+ },
+ {
+  "page": 153,
+  "where": "proof of 7.7, 'que E^v ∈ ob D(S)_parf .'",
+  "scan": "the index 'parf' underlined (both scans)",
+  "tex": "\\Dpx(S)_{\\mathrm{parf}}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "E^\\vee\\in\\Ob\\Dpx(S)_{\\mathrm{parf}}",
+   "new": "E^\\vee\\in\\Ob\\Dpx(S)_{\\underline{\\mathrm{parf}}}"
+  },
+  "note": "In the proof (roman text) the underline is the notation, not emphasis."
+ },
+ {
+  "page": 153,
+  "where": "Corollaire 7.8, 'Soient'",
+  "scan": "'Soient' underlined, the formula not (both scans)",
+  "tex": "no emphasis: the statement is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "7.8.} Soient",
+   "new": "7.8.} \\emph{Soient}"
+  },
+  "note": "Word groups, so that the index entry stays independent."
+ },
+ {
+  "page": 153,
+  "where": "Corollaire 7.8, 'E, F ∈ ob D(S)_parf'",
+  "scan": "the index 'parf' underlined (both scans); the sign ∈ is broken in both scans (physical, not reported)",
+  "tex": "\\Dpx(S)_{\\mathrm{parf}}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "E,F\\in\\Ob\\Dpx(S)_{\\mathrm{parf}}",
+   "new": "E,F\\in\\Ob\\Dpx(S)_{\\underline{\\mathrm{parf}}}"
+  },
+  "note": ""
+ },
+ {
+  "page": 153,
+  "where": "Corollaire 7.8, 'Il existe une flèche naturelle'",
+  "scan": "underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Il existe une flèche naturelle",
+   "new": "\\emph{Il existe une flèche naturelle}"
+  },
+  "note": ""
+ },
+ {
+  "page": 153,
+  "where": "Corollaire 7.8, display 'RHom(E,F) ⊗L RHom(F,E) -> A ,'",
+  "scan": "both terms ℝHom̲: double-struck R, Hom underlined (both scans)",
+  "tex": "\\RHom(E,F)\\otL\\RHom(F,E) (\\RHom = \\mathrm R\\!\\operatorname{Hom} (main.tex line 1847): plain R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(E,F)\\otL\\RHom(F,E)",
+   "new": "\\mathbb{R}\\underline{\\Hom}(E,F)\\otL\\mathbb{R}\\underline{\\Hom}(F,E)"
+  },
+  "note": "Also underlines Hom."
+ },
+ {
+  "page": 153,
+  "where": "Corollaire 7.8, 'qui est une \"dualité parfaite\", i.e. identifie modulo (7.4) chacun des complexes'",
+  "scan": "underlined by word groups: 'qui est une', 'dualité parfaite' (inside the quotes), 'identifie modulo', 'chacun des complexes'; ', i.e.' and '(7.4)' not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "qui est une «~dualité parfaite~», i.e.\\ identifie modulo (7.4) chacun des complexes",
+   "new": "\\emph{qui est une «~dualité parfaite~», i.e.\\ identifie modulo (7.4) chacun des complexes}"
+  },
+  "note": "Block form up to the formulas, which have their own entry."
+ },
+ {
+  "page": 153,
+  "where": "Corollaire 7.8, 'RHom(E,F) , RHom(F,E)' in the text",
+  "scan": "both ℝHom̲: double-struck R, Hom underlined (both scans)",
+  "tex": "\\(\\RHom(E,F)\\), \\(\\RHom(F,E)\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\RHom(E,F)\\), \\(\\RHom(F,E)\\)",
+   "new": "\\(\\mathbb{R}\\underline{\\Hom}(E,F)\\), \\(\\mathbb{R}\\underline{\\Hom}(F,E)\\)"
+  },
+  "note": "Also underlines Hom."
+ },
+ {
+  "page": 153,
+  "where": "Corollaire 7.8, 'au dual de l'autre (au sens de (7.3)).'",
+  "scan": "'au dual de l'autre' and 'au sens de' underlined; the parentheses, '(7.3)' and the full stop not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "au dual de l'autre (au sens de (7.3))",
+   "new": "\\emph{au dual de l'autre (au sens de (7.3))}"
+  },
+  "note": "End of the statement."
+ },
+ {
+  "page": 153,
+  "where": "proof of 7.8, 'l'accouplement annoncé sur les RHom.'",
+  "scan": "ℝ Hom̲: double-struck R, Hom underlined (both scans; crops_151_155/p153_lesRHom.png)",
+  "tex": "les \\(\\RHom\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "les \\(\\RHom\\)",
+   "new": "les \\(\\mathbb{R}\\underline{\\Hom}\\)"
+  },
+  "note": "Also underlines Hom."
+ },
+ {
+  "page": 153,
+  "where": "proof of 7.8, display, 'RHom(F^v ⊗L E , A)'",
+  "scan": "double-struck R, Hom underlined (both scans; crops_151_155/p153_align.png)",
+  "tex": "\\RHom(F^\\vee\\otL E,A)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(F^\\vee\\otL E",
+   "new": "\\mathbb{R}\\underline{\\Hom}(F^\\vee\\otL E"
+  },
+  "note": "Also underlines Hom. Independent of the sign entries below (no overlap)."
+ },
+ {
+  "page": 153,
+  "where": "proof of 7.8, display, 'RHom(F^v, E^v)'",
+  "scan": "double-struck R, Hom underlined (both scans; crops_151_155/p153_align.png)",
+  "tex": "\\RHom(F^\\vee,E^\\vee)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(F^\\vee,E^\\vee)",
+   "new": "\\mathbb{R}\\underline{\\Hom}(F^\\vee,E^\\vee)"
+  },
+  "note": "Also underlines Hom."
+ },
+ {
+  "page": 153,
+  "where": "proof of 7.8, display, first sign (before (7.4))",
+  "scan": "≃: a hand-drawn tilde over a straight stroke, no arrowhead (both scans; crops_151_155/p153_sim.png, w153_small.png); the arrow of the display of 7.7 on this page has its head",
+  "tex": "\\xrightarrow{\\sim}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": ",A)&\\xrightarrow{\\sim}",
+   "new": ",A)&\\simeq"
+  },
+  "note": "As the headless ≃ fixed on pp. 110 and 118. One entry per sign; the three are independent."
+ },
+ {
+  "page": 153,
+  "where": "proof of 7.8, display, second sign (before (7.6))",
+  "scan": "≃ without arrowhead, as the first (both scans)",
+  "tex": "\\xrightarrow{\\sim}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "&\\xrightarrow{\\sim}F^{\\vee\\vee}",
+   "new": "&\\simeq F^{\\vee\\vee}"
+  },
+  "note": ""
+ },
+ {
+  "page": 153,
+  "where": "proof of 7.8, display, third sign (before (7.2))",
+  "scan": "≃ without arrowhead, as the first (both scans)",
+  "tex": "\\xrightarrow{\\sim}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "&\\xrightarrow{\\sim}F\\otL E^\\vee",
+   "new": "&\\simeq F\\otL E^\\vee"
+  },
+  "note": ""
+ },
+ {
+  "page": 154,
+  "where": "Exercice 7.9, 'Soient E, F ∈ ob D(S)_parf'",
+  "scan": "the index 'parf' underlined (both scans)",
+  "tex": "\\Dpx(S)_{\\mathrm{parf}}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "E,F\\in\\Ob\\Dpx(S)_{\\mathrm{parf}}",
+   "new": "E,F\\in\\Ob\\Dpx(S)_{\\underline{\\mathrm{parf}}}"
+  },
+  "note": "The notation of 5.8.4 b) (see p. 153)."
+ },
+ {
+  "page": 154,
+  "where": "8.1, 'Soit E ∈ ob D(S)_parf (5.8.4.b)).'",
+  "scan": "the index 'parf' underlined (both scans)",
+  "tex": "\\Dpx(S)_{\\parf} (\\parf = \\operatorname{parf}, plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Dpx(S)_{\\parf}",
+   "new": "\\Dpx(S)_{\\underline{\\mathrm{parf}}}"
+  },
+  "note": ""
+ },
+ {
+  "page": 154,
+  "where": "8.1, display 'τ : RHom(E,E) -> A ,'",
+  "scan": "ℝ Hom̲(E,E): double-struck R, Hom underlined (both scans)",
+  "tex": "\\tau:\\RHom(E,E) (\\RHom = \\mathrm R\\!\\operatorname{Hom} (main.tex line 1847): plain R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tau:\\RHom(E,E)",
+   "new": "\\tau:\\mathbb{R}\\underline{\\Hom}(E,E)"
+  },
+  "note": "Also underlines Hom."
+ },
+ {
+  "page": 154,
+  "where": "8.1, 'l'isomorphisme inverse de (7.7) RHom(E,E) ⥲ E^v ⊗L E'",
+  "scan": "ℝ Hom̲(E,E): double-struck R, Hom underlined (both scans)",
+  "tex": "\\(\\RHom(E,E)\\xrightarrow{\\sim}E^\\vee\\otL E\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "(7.7) \\(\\RHom(E,E)",
+   "new": "(7.7) \\(\\mathbb{R}\\underline{\\Hom}(E,E)"
+  },
+  "note": "Also underlines Hom."
+ },
+ {
+  "page": 154,
+  "where": "'Appliquant à τ le foncteur H^o(U,.)'",
+  "scan": "the empty argument is a typed full stop on the baseline: H^o(U,.) (both scans; crops_151_155/p154_H0dot.png)",
+  "tex": "\\(H^0(U,\\cdot)\\)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "H^0(U,\\cdot)",
+   "new": "H^0(U,.)"
+  },
+  "note": "As the typed place-holder stops applied on pp. 89, 136, 141 (main.tex lines 1939, 3108, 3211)."
+ },
+ {
+  "page": 154,
+  "where": "'tenant compte du fait que H^o(U, RHom(E,E))'",
+  "scan": "ℝ Hom̲(E,E): double-struck R, Hom underlined (both scans; crops_151_155/p154_H0RHom.png)",
+  "tex": "\\(H^0(U,\\RHom(E,E))\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "H^0(U,\\RHom(E,E))",
+   "new": "H^0(U,\\mathbb{R}\\underline{\\Hom}(E,E))"
+  },
+  "note": "Also underlines Hom. Hom_D(U)(E|U,E|U) after it is plain in the print, as in the TeX."
+ },
+ {
+  "page": 155,
+  "where": "start of page",
+  "scan": "p. 155 begins '8.1.1. Si E = A, Tr_A|U : Hom(A|U,A|U) -> H^o(U,A) n'est autre que l'iso-'; p. 154 ends with '... qui découlent immédiatement de la définition.' and its footnote (both scans)",
+  "tex": "the line '\\textbf{8.1.1.} Si \\(E=A\\), \\(\\Tr_{A|U}:...\\) n'est' is the last line of page_154.tex (under the folio-154 marker); page_155.tex begins 'autre que'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 155 really begins with the heading 8.1.1. Move the folio-155 marker above it: python -I move_marker.py 6 155 \"\\textbf{8.1.1.}\" --before (simulated in memory on both layers: '... de la définition.', blank line, the marker, '\\textbf{8.1.1.} Si ... n'est', 'autre que l'isomorphisme ...')."
+ },
+ {
+  "page": 155,
+  "where": "8.1.1, display 'e |-> Σ <e, x_i^v> x_i ,'",
+  "scan": "a bare sum sign, nothing under it (both scans; crops_151_155/p155_mapsto.png)",
+  "tex": "\\sum_i\\langle e,x_i^\\vee\\rangle x_i",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sum_i\\langle e,",
+   "new": "\\sum\\langle e,"
+  },
+  "note": "The TeX adds the summation index."
+ },
+ {
+  "page": 155,
+  "where": "8.1.1, 'la trace correspondante est Σ <x_i , x_i^v>'",
+  "scan": "a bare sum sign (both scans; crops_151_155/p155_sum1.png)",
+  "tex": "\\(\\sum_i\\langle x_i,x_i^\\vee\\rangle\\)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\sum_i\\langle x_i,",
+   "new": "\\(\\sum\\langle x_i,"
+  },
+  "note": "The TeX adds the summation index."
+ },
+ {
+  "page": 155,
+  "where": "8.1.2, display 'Tr_E|U(u) = Σ (-1)^i Tr_E^i|U(u^i) .'",
+  "scan": "a bare sum sign (both scans; crops_151_155/p155_812disp.png)",
+  "tex": "\\Tr_{E|U}(u)=\\sum_i(-1)^i\\Tr_{E^i|U}(u^i).",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(u)=\\sum_i(-1)^i",
+   "new": "(u)=\\sum(-1)^i"
+  },
+  "note": "The TeX adds the summation index."
+ },
+ {
+  "page": 155,
+  "where": "proof of 8.1.2, 'une section de H^o(E^v ⊗ E)'",
+  "scan": "H underlined (H̲^o, the cohomology sheaf) (both scans; crops_151_155/p155_H0.png)",
+  "tex": "\\(H^0(E^\\vee\\otimes E)\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(H^0(E^\\vee\\otimes E)\\)",
+   "new": "\\(\\underline{H}^0(E^\\vee\\otimes E)\\)"
+  },
+  "note": "The H^o(U,...) of sections on pp. 154-155 are plain in the print, as in the TeX."
+ },
+ {
+  "page": 155,
+  "where": "proof of 8.1.2, 'Explicitant la flèche (7.5) E^v ⊗ E -> A'",
+  "scan": "a filled tensor sign with no L over it (both scans; crops_151_155/p155_75.png, w155_75.png)",
+  "tex": "\\(E^\\vee\\otL E\\to A\\)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(7.5) \\(E^\\vee\\otL E\\to A\\)",
+   "new": "(7.5) \\(E^\\vee\\otimes E\\to A\\)"
+  },
+  "note": "The same paragraph has the plain tensor sign in H^o(E^v ⊗ E) and x_ij^v ⊗ x_ij (E strictly perfect); the arrow (7.5) of 8.1 on p. 154 has the L."
+ },
+ {
+  "page": 155,
+  "where": "proof of 8.1.2, display, first sum 'Σ (-1)^i <x_ij, x_ij^v>'",
+  "scan": "a bare sum sign (both scans; crops_151_155/p155_cqfd.png)",
+  "tex": "\\sum_{i,j}(-1)^i",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sum_{i,j}(-1)^i",
+   "new": "\\sum(-1)^i"
+  },
+  "note": "The TeX adds the summation indices."
+ },
+ {
+  "page": 155,
+  "where": "proof of 8.1.2, display, second sum 'Σ (-1)^i Tr_E^i|U(u^i) , cqfd.'",
+  "scan": "a bare sum sign (both scans; crops_151_155/p155_cqfd.png)",
+  "tex": "\\sum_i(-1)^i\\Tr_{E^i|U}(u^i),",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sum_i(-1)^i\\Tr_{E^i|U}(u^i),",
+   "new": "\\sum(-1)^i\\Tr_{E^i|U}(u^i),"
+  },
+  "note": "The TeX adds the summation index."
+ },
+ {
+  "page": 155,
+  "where": "8.2, 'Soient E, F ∈ ob D(S)_parf'",
+  "scan": "the index 'parf' underlined (both scans)",
+  "tex": "\\Dpx(S)_{\\mathrm{parf}}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "E,F\\in\\Ob\\Dpx(S)_{\\mathrm{parf}}",
+   "new": "E,F\\in\\Ob\\Dpx(S)_{\\underline{\\mathrm{parf}}}"
+  },
+  "note": "The notation of 5.8.4 b), as in 7.8."
+ },
+ {
+  "page": 155,
+  "where": "8.2, display 'γ : RHom(E,F) ⊗L RHom(F,E) -> A .'",
+  "scan": "both terms ℝ Hom̲: double-struck R, Hom underlined (both scans; crops_151_155/p155_last.png)",
+  "tex": "\\gamma:\\RHom(E,F)\\otL\\RHom(F,E) (\\RHom = \\mathrm R\\!\\operatorname{Hom} (main.tex line 1847): plain R, Hom not underlined)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\gamma:\\RHom(E,F)\\otL\\RHom(F,E)",
+   "new": "\\gamma:\\mathbb{R}\\underline{\\Hom}(E,F)\\otL\\mathbb{R}\\underline{\\Hom}(F,E)"
+  },
+  "note": "Also underlines Hom."
+ },
+ {
+  "page": 155,
+  "where": "8.2, 'u ∈ H^o(U, RHom(E,F))'",
+  "scan": "ℝ Hom̲(E,F): double-struck R, Hom underlined (both scans; crops_151_155/p155_last.png)",
+  "tex": "\\(u\\in H^0(U,\\RHom(E,F))\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "u\\in H^0(U,\\RHom(E,F))",
+   "new": "u\\in H^0(U,\\mathbb{R}\\underline{\\Hom}(E,F))"
+  },
+  "note": "Also underlines Hom."
+ },
+ {
+  "page": 155,
+  "where": "8.2, 'v ∈ H^o(U, RHom(F,E))'",
+  "scan": "ℝ Hom̲(F,E): double-struck R, Hom underlined (both scans; crops_151_155/p155_last.png)",
+  "tex": "\\(v\\in H^0(U,\\RHom(F,E))\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "v\\in H^0(U,\\RHom(F,E))",
+   "new": "v\\in H^0(U,\\mathbb{R}\\underline{\\Hom}(F,E))"
+  },
+  "note": "Also underlines Hom."
+ }
+]

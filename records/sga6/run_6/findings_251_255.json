@@ -1,0 +1,261 @@
+[
+  {
+    "page": 251,
+    "where": "start of page",
+    "scan": "p. 251 begins 'd'une immersion régulière et d'un morphisme lisse)'; p. 250 ends '(i.e. localement composé' (both scans; DjVu witness p. 262)",
+    "tex": "'d'une' is the last word of page_250.tex (under the folio-250 marker); page_251.tex begins 'immersion régulière'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 251 really begins with 'd'une'. Move the folio-251 marker before it: python -I move_marker.py 6 251 \"d'une\" --before (simulated on both layers: '... localement composé', the marker, 'd'une', 'immersion régulière')."
+  },
+  {
+    "page": 251,
+    "where": "first line, the sentence before Notation 4.2",
+    "scan": "'... est un morphisme parfait' with no full stop (both scans; crops_251_255/c251_parfait.png, w251_parfait.png)",
+    "tex": "est un morphisme parfait. (silently corrected)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": {
+      "old": "est un morphisme parfait.",
+      "new": "est un morphisme parfait"
+    },
+    "corrected": "est un morphisme parfait.",
+    "note": "The typist left out the full stop that ends the sentence; the TeX adds it."
+  },
+  {
+    "page": 251,
+    "where": "proof of 4.3, the complex (0 → E^a/B^a → E^{a+1} → ... E^b → 0)",
+    "scan": "three typed full stops on the baseline (both scans; crops_251_255/c251_dots.png, w262_mid.png)",
+    "tex": "E^{a+1}\\to\\cdots E^b",
+    "kind": "symbol",
+    "confidence": "medium",
+    "fix": {
+      "old": "E^{a+1}\\to\\cdots E^b",
+      "new": "E^{a+1}\\to\\ldots E^b"
+    },
+    "note": "\\cdots sets the dots at mid-height; the typescript has baseline stops (as on p. 49)."
+  },
+  {
+    "page": 252,
+    "where": "'tel que g_α*(F_α) ≃ F , où g_α : X → X_α'",
+    "scan": "≃: a typed tilde over a straight line, no arrowhead (both scans; crops_251_255/c252_iso1.png, w252_iso1.png)",
+    "tex": "g_\\alpha^*(F_\\alpha)\\xrightarrow{\\sim}F (an arrow)",
+    "kind": "symbol",
+    "confidence": "high",
+    "fix": {
+      "old": "g_\\alpha^*(F_\\alpha)\\xrightarrow{\\sim}F\\)",
+      "new": "g_\\alpha^*(F_\\alpha)\\simeq F\\)"
+    },
+    "note": "\\simeq, as for the same sign on pp. 110, 118 and 150."
+  },
+  {
+    "page": 252,
+    "where": "'on a g_α*(F) ≃ F_α ⊗L_{Y_α} O_Y'",
+    "scan": "≃ without arrowhead, as above (both scans; crops_251_255/c252_iso2.png, w252_iso2.png)",
+    "tex": "g_\\alpha^*(F)\\xrightarrow{\\sim}F_\\alpha",
+    "kind": "symbol",
+    "confidence": "high",
+    "fix": {
+      "old": "g_\\alpha^*(F)\\xrightarrow{\\sim}F_\\alpha",
+      "new": "g_\\alpha^*(F)\\simeq F_\\alpha"
+    },
+    "note": "Separate from the misprint g_α*(F) below, whose printed reading the TeX keeps. On the current layer, which already reads g_\\alpha^*(F_\\alpha) here, the same edit is old 'g_\\alpha^*(F_\\alpha)\\xrightarrow{\\sim}F_\\alpha', new 'g_\\alpha^*(F_\\alpha)\\simeq F_\\alpha'."
+  },
+  {
+    "page": 252,
+    "where": "'on a g_α*(F) ≃ F_α ⊗L_{Y_α} O_Y'",
+    "scan": "g_α*(F): the argument is F without index (both scans; crops_251_255/c252_iso2.png, w252_iso2.png)",
+    "tex": "g_\\alpha^*(F) (printed reading kept)",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "g_\\alpha^*(F_\\alpha)",
+    "note": "g_α : X → X_α and F lives on X; the line above has g_α*(F_α) ≃ F, and the point is F ≃ F_α ⊗L_{Y_α} O_Y. The current layer already reads g_\\alpha^*(F_\\alpha)."
+  },
+  {
+    "page": 252,
+    "where": "Proposition 4.4, after the triangle X → Y, X → S, Y → S",
+    "scan": "a comma to the right of S, after the diagram (both scans; crops_251_255/w252_diag.png)",
+    "tex": "no punctuation after \\end{tikzcd}",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+      "old": "S &\n\\end{tikzcd}\n\\]",
+      "new": "S &\n\\end{tikzcd},\n\\]"
+    },
+    "note": "Placed as elsewhere in main.tex (\\end{tikzcd}, before \\])."
+  },
+  {
+    "page": 253,
+    "where": "Proposition 4.4 (i)",
+    "scan": "parf.amp(i_*(E)⊂[a,b]: one closing parenthesis only, where (ii) has parf.amp(i_*(E))⊂ (both scans; crops_251_255/c253_i.png, w253_i.png)",
+    "tex": "\\parfamp(i_*(E)\\subset[a,b] (printed reading kept)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "\\parfamp(i_*(E))\\subset[a,b]",
+    "note": "The current layer already has the second parenthesis."
+  },
+  {
+    "page": 253,
+    "where": "proof of 4.5, 'Conjuguer (1.11) et (3.4).'",
+    "scan": "(1.11): a second 1 after '1.1', pressed against the closing parenthesis (both scans; crops_251_255/c253_conj.png, c253_ref4.png, w253_conj.png)",
+    "tex": "Conjuguer (1.1) et (3.4).",
+    "kind": "number",
+    "confidence": "high",
+    "fix": {
+      "old": "Conjuguer (1.1) et (3.4)",
+      "new": "Conjuguer (1.11) et (3.4)"
+    },
+    "note": "Proposition 1.11 of this exposé is the statement on E ⊗L_Y F for a triangle of morphisms, which the proof combines with (3.4)."
+  },
+  {
+    "page": 254,
+    "where": "proof of 4.6, 'Elle entraîne aussi. d'après 4.3),'",
+    "scan": "'aussi. d'après 4.3),': a full stop after 'aussi' and no opening parenthesis (both scans; crops_251_255/c254_aussi.png, w265_half.png)",
+    "tex": "Elle entraîne aussi. d'après 4.3), (printed reading kept)",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "Elle entraîne aussi (d'après 4.3),",
+    "note": "The stop stands where the opening parenthesis belongs; the current layer keeps the printed reading too."
+  },
+  {
+    "page": 255,
+    "where": "start of page",
+    "scan": "p. 255 begins 'qui achève la preuve de (ii) ⟹(i).'; p. 254 ends '... ⊂ [a,b] , ce' (both scans; DjVu witness pp. 265-266)",
+    "tex": "'qui achève la' ends page_254.tex (under the folio-254 marker); page_255.tex begins 'preuve de (ii)'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 255 really begins with 'qui achève la'. Move the folio-255 marker before it: python -I move_marker.py 6 255 \"qui achève la\" --before (simulated on both layers: '... \\subset[a,b]\\), ce', the marker, 'qui achève la', 'preuve de (ii)')."
+  },
+  {
+    "page": 255,
+    "where": "end of page",
+    "scan": "p. 255 ends '... implique, toujours d'après (I 5.1.1),'; p. 256 begins 'que E^a/B^a est h-plat.' (both scans; b256_260/page_256_s1.png)",
+    "tex": "page_255.tex ends with 'que \\(E^a/B^a\\) est \\(h\\)-', which belongs to p. 256",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 256 really begins with 'que'. python -I marker_split_word.py 6 256 pull 'que \\(E^a/B^a\\) est \\(h\\)-' (simulated on both layers: '... (I 5.1.1),', the marker, 'que \\(E^a/B^a\\) est \\(h\\)-plat. Grâce ...'). move_marker.py would keep the line break after '\\(h\\)-', which prints 'h- plat'."
+  },
+  {
+    "page": 255,
+    "where": "label of the first display (the truncation arrow)",
+    "scan": "label 't)' at the left, without opening parenthesis (both scans; crops_251_255/c255_t.png, w255_t.png); the second display is labelled 'i*(t)'",
+    "tex": "\\tag{$t$}, printed '(t)'",
+    "kind": "punctuation",
+    "confidence": "medium",
+    "fix": {
+      "old": "\\tag{$t$}",
+      "new": "\\tag*{$t)$}"
+    },
+    "note": "Perhaps a slip for (t); the label's left position is layout."
+  },
+  {
+    "page": 255,
+    "where": "first display, E → (0 → E^a/B^a → E^{a+1} → ... → E^b → 0)",
+    "scan": "three typed full stops on the baseline (both scans; crops_251_255/c255_t.png)",
+    "tex": "E^{a+1}\\longrightarrow\\cdots\\longrightarrow E^b",
+    "kind": "symbol",
+    "confidence": "medium",
+    "fix": {
+      "old": "E^{a+1}\\longrightarrow\\cdots\\longrightarrow E^b",
+      "new": "E^{a+1}\\longrightarrow\\ldots\\longrightarrow E^b"
+    },
+    "note": "As on p. 251."
+  },
+  {
+    "page": 255,
+    "where": "'(l'hypothèse (i) implique en effet que E est, au voisinage de s, acyclique en dehors de [a,b])'",
+    "scan": "'au voisinage de s' (both scans; crops_251_255/c255_s.png, w266_half.png)",
+    "tex": "au voisinage de \\(s\\) (printed reading kept)",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "au voisinage de \\(x\\)",
+    "note": "E is a complex on X and hypothesis (i) holds near the point x of X (s is a point of S); the next sentence says 'au voisinage de x'. The current layer already reads x."
+  },
+  {
+    "page": 255,
+    "where": "display (*), E_x ⊗L O_{Y_s,y} ≃ i*(E)_x",
+    "scan": "≃: a tilde over a straight line, no arrowhead (both scans; crops_251_255/c255_iso.png, w255_star.png)",
+    "tex": "\\xrightarrow{\\sim}i^*(E)_x",
+    "kind": "symbol",
+    "confidence": "high",
+    "fix": {
+      "old": "\\xrightarrow{\\sim}i^*(E)_x",
+      "new": "\\simeq i^*(E)_x"
+    },
+    "note": ""
+  },
+  {
+    "page": 255,
+    "where": "display (*)",
+    "scan": "the display has no label, though the text below refers to 'la flèche (*)' (both scans; crops_251_255/c255_star.png, w255_star.png)",
+    "tex": "\\tag{$*$} (silently corrected)",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": {
+      "old": "\\tag{$*$}",
+      "new": "\\notag"
+    },
+    "corrected": "\\tag{$*$}",
+    "note": "The typist left out the label that the text uses."
+  },
+  {
+    "page": 255,
+    "where": "'Donc quitte à se localiser,. on peut supposer'",
+    "scan": "'localiser,.': a comma followed by a typed full stop (both scans; crops_251_255/c255_loc.png, w255_loc.png)",
+    "tex": "Donc quitte à se localiser, on (silently corrected)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": {
+      "old": "Donc quitte à se localiser, on",
+      "new": "Donc quitte à se localiser,. on"
+    },
+    "corrected": "Donc quitte à se localiser, on",
+    "note": "The marks above this line (fragments of an underlined O and an s) are remains of covered typing, not text."
+  },
+  {
+    "page": 255,
+    "where": "label of the second display",
+    "scan": "label 'i*(t)' at the left, without outer parentheses (both scans; crops_251_255/c255_it.png, w266_half.png)",
+    "tex": "\\tag{$i^*(t)$}, printed '(i*(t))'",
+    "kind": "extra",
+    "confidence": "medium",
+    "fix": {
+      "old": "\\tag{$i^*(t)$}",
+      "new": "\\tag*{$i^*(t)$}"
+    },
+    "note": "\\tag adds parentheses the print does not have."
+  },
+  {
+    "page": 255,
+    "where": "second display, ... → ... → i*(E^b) → 0",
+    "scan": "three typed full stops on the baseline (both scans; crops_251_255/c255_it.png)",
+    "tex": "\\longrightarrow\\cdots\\longrightarrow i^*(E^b)",
+    "kind": "symbol",
+    "confidence": "medium",
+    "fix": {
+      "old": "\\longrightarrow\\cdots\\longrightarrow i^*(E^b)",
+      "new": "\\longrightarrow\\ldots\\longrightarrow i^*(E^b)"
+    },
+    "note": "As on p. 251."
+  },
+  {
+    "page": 255,
+    "where": "'L'hypothèse tor.amp_{O_{Y_s,y}} i*(E)_x ⊂ [a,b] entraîne alors'",
+    "scan": "tor.amp_{O_{Y_s,y}} i*(E)_x ⊂ [a,b]: no parentheses around i*(E)_x (both scans; crops_251_255/c255_it.png, w266_half.png)",
+    "tex": "\\tamp_{\\mathcal O_{Y_s,y}}(i^*(E)_x)\\subset[a,b]",
+    "kind": "extra",
+    "confidence": "high",
+    "fix": {
+      "old": "(i^*(E)_x)\\subset[a,b]",
+      "new": "i^*(E)_x\\subset[a,b]"
+    },
+    "note": "The TeX adds the parentheses."
+  }
+]

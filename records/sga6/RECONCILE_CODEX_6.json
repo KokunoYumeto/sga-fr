@@ -1,0 +1,5111 @@
+{
+ "title": "Reconciliation of Codex's earlier corrections of the French SGA 6 with the scan-check layers",
+ "made": "10-11 Nov 2026, Claude (Opus 5.5), subagent of session 329fb1e6",
+ "layers": [
+  "sga6/current",
+  "sga6/diplomatic"
+ ],
+ "statuses": {
+  "present": "the corrected layer already has the reading at that place",
+  "applied": "carried into the corrected layer (and the diplomatic layer where the print reads otherwise than the TeX); logged in FIXLOG_6_CURRENT.jsonl / FIXLOG_6.jsonl",
+  "superseded": "the scan check decided otherwise (FIXLOG or MISPRINTS entry named)",
+  "rejected": "not a correction of a reading (editorial addition, notation, rewording, wrong claim) or not established; reason given"
+ },
+ "counts": {
+  "queue": {
+   "rejected": 100,
+   "applied": 203,
+   "present": 7,
+   "superseded": 3
+  },
+  "ref_hold+fr_r1 (72 SGA-SRC)": {
+   "applied": 28,
+   "superseded": 1,
+   "rejected": 41,
+   "present": 2
+  }
+ },
+ "entries": [
+  {
+   "id": "SGA-SRC-000142",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X, section 2 (Polynômes de Snapper)",
+   "codex_status": "accepted",
+   "codex_claim": "In corrected/current French replace only `r\\in\\mathbb Z` by `r\\in\\mathbb Z_{\\geq1}`; preserve printed `r\\in\\mathbb Z` diplomatically.",
+   "status": "rejected",
+   "why": "editorial (Z_{>=1} for the print's Z), not a misreading"
+  },
+  {
+   "id": "SGA-SRC-000143",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X, section 2 (Polynômes de Snapper)",
+   "codex_status": "accepted",
+   "codex_claim": "In corrected/current French replace only suivant G'' by suivant G'; preserve the printed quotient symbol diplomatically.",
+   "status": "rejected",
+   "why": "the print is inconsistent ('suivant G''' but 'h : G' -> Q', scan p. 533 checked); which one to correct is not settled"
+  },
+  {
+   "id": "SGA-SRC-000144",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X, section 2 (Polynômes de Snapper)",
+   "codex_status": "accepted",
+   "codex_claim": "In corrected/current French replace only C'' by G''; preserve printed C double-prime diplomatically.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 533,
+     "old": "par hypothèse $C''$ est",
+     "new": "par hypothèse $G''$ est"
+    }
+   ],
+   "note": "print C'' (scan p. 533 checked)"
+  },
+  {
+   "id": "SGA-SRC-000145",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X, section 2 (Polynômes de Snapper)",
+   "codex_status": "accepted",
+   "codex_claim": "Restore the scan-faithful sourcekeeper reading h:G''\\to\\mathbb Q; do not create a diplomatic variant because the print is already correct.",
+   "status": "rejected",
+   "why": "the record calls 'h : G'' -> Q' the print's reading, but the scan (p. 533, 600 dpi) shows 'h : G' -> Q', as the TeX has"
+  },
+  {
+   "id": "SGA-SRC-000146",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X, section 2 (Polynômes de Snapper)",
+   "codex_status": "accepted",
+   "codex_claim": "Restore the scan-faithful sourcekeeper reading `$\\Filt^1(X)/\\Filt^{j+1}(X)$`; do not create a diplomatic variant because the print is already correct.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 535,
+     "old": "l'idéal $\\Filt^j(X)/\\Filt^{j+1}(X)$",
+     "new": "l'idéal $\\Filt^1(X)/\\Filt^{j+1}(X)$"
+    },
+    {
+     "layer": "diplomatic",
+     "page": 535,
+     "old": "l'idéal $\\Filt^j(X)/\\Filt^{j+1}(X)$",
+     "new": "l'idéal $\\Filt^1(X)/\\Filt^{j+1}(X)$"
+    }
+   ],
+   "transcription_error": true,
+   "note": "transcription error: the print reads Filt^1 (scan p. 535, 600 dpi)"
+  },
+  {
+   "id": "SGA-SRC-001310",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14364 `R'(f_T)_*` in the units/Picard long exact sequence must be `R^1(f_T)_*`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 605,
+     "old": "R'(f_T)_*(\\mathcal O_{X'_T}^{*})",
+     "new": "R^1(f_T)_*(\\mathcal O_{X'_T}^{*})"
+    }
+   ],
+   "note": "diplomatic: not individually verified against the scan"
+  },
+  {
+   "id": "SGA-SRC-001311",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14386 `g_β\\otimes t_α` has unbound alpha; correct to `g_β\\otimes t_β`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 606,
+     "old": "\\(g=\\sum g_\\beta\\otimes t_\\alpha\\in",
+     "new": "\\(g=\\sum g_\\beta\\otimes t_\\beta\\in"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001312",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14387 decompose `g_β=v(h)+n_β` with bound lift `h_β`, and place `n_β` in `nilrad Γ(X,O_{X'})`, not `nilrad Γ(X,O_X)`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 606,
+     "old": "\\(g_\\beta=v(h)+n_\\beta\\)",
+     "new": "\\(g_\\beta=v(h_\\beta)+n_\\beta\\)"
+    },
+    {
+     "layer": "corrected",
+     "page": 606,
+     "old": "\\operatorname{nilrad}(\\Gamma(X,\\mathcal O_X))\\)",
+     "new": "\\operatorname{nilrad}(\\Gamma(X,\\mathcal O_{X'}))\\)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001313",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14393 `(f_t)_*` must be `(f_T)_*`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 606,
+     "old": "R^1(f_t)_*(\\mathcal O_{X_T}^{*})",
+     "new": "R^1(f_T)_*(\\mathcal O_{X_T}^{*})"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001314",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14395 units/Picard sequence omits the star: `O_{X'_T}` must be `O_{X'_T}^*`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 606,
+     "old": "R^1(f_T)_*(\\mathcal O_{X'_T})\n  \\longrightarrow\n  \\mathbb V(Q)",
+     "new": "R^1(f_T)_*(\\mathcal O_{X'_T}^{*}) \\longrightarrow \\mathbb V(Q)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001315",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "ll14447–14461 Proposition 3.5 states `f:X\\hookrightarrow Y`, but its proof mixes undefined `X'` with `X`; HOLD for scan-based variable reconciliation.",
+   "status": "rejected",
+   "why": "inserted phrase by inference, not a reading"
+  },
+  {
+   "id": "SGA-SRC-001316",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14504 malformed `\\Gamma\\ Y,N)` must be `\\Gamma(Y,N)`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 611,
+     "old": "\\Gamma\\ Y,N)\\longrightarrow",
+     "new": "\\Gamma(Y,N)\\longrightarrow"
+    }
+   ],
+   "note": "diplomatic: not individually verified against the scan"
+  },
+  {
+   "id": "SGA-SRC-001317",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14544 definition of `S_n` has unbound `i` inside `R^1(f_T)_*(F_T)`; must be `R^i`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 613,
+     "old": "si \\(R^1(f_T)_*(F_T)\\) est plat pour tout",
+     "new": "si \\(R^i(f_T)_*(F_T)\\) est plat pour tout"
+    }
+   ],
+   "note": "diplomatic: not individually verified against the scan"
+  },
+  {
+   "id": "SGA-SRC-001318",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14550 after replacing `S` by `S_{n+1}`, `R^n f_*(F)` flat for `i\\ge n+1` must be `R^i f_*(F)`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 614,
+     "old": "supposer que \\(R^nf_*(F)\\) est \\(S\\)-plat pour \\(i\\ge n+1\\)",
+     "new": "supposer que \\(R^if_*(F)\\) est \\(S\\)-plat pour \\(i\\ge n+1\\)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001319",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14558 `lambda:X\\to S` but `F,G` are called `O_Y`-modules with no `Y`; must be `O_X`-modules.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 614,
+     "old": "homomorphisme de \\(\\mathcal O_Y\\)-Modules de présentation finie",
+     "new": "homomorphisme de \\(\\mathcal O_X\\)-Modules de présentation finie"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001320",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14516 `catégoire` → `catégorie`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 611,
+     "old": "catégoire",
+     "new": "catégorie"
+    }
+   ],
+   "note": "print 'catégoire' (IA text layer)"
+  },
+  {
+   "id": "SGA-SRC-001321",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14540 `la donnée ... restreindre` → `la donnée ... restreinte`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 613,
+     "old": "sur \\(L\\) restreindre au-dessus",
+     "new": "sur \\(L\\) restreinte au-dessus"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001322",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14560 `commute au diagramme de base` → `commute au changement de base`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 615,
+     "old": "commute au diagramme de base",
+     "new": "commute au changement de base"
+    },
+    {
+     "layer": "diplomatic",
+     "page": 615,
+     "old": "commute au diagramme de base",
+     "new": "commute au changement de base"
+    }
+   ],
+   "transcription_error": true,
+   "note": "transcription error: the print reads 'changement de base' (IA text layer, p. 615)"
+  },
+  {
+   "id": "SGA-SRC-001323",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l12926 tag(3.2.2) malformed `f_*((f^*(x)·y)=x·f_*(Y)` → internally forced `f_*(f^*(x)·y)=x·f_*(y)`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 539,
+     "old": "f_*((f^*(x)\\cdot y)=x\\cdot f_*(Y)",
+     "new": "f_*(f^*(x)\\cdot y)=x\\cdot f_*(y)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001324",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l12951 `dim(f^{-1}(Supp(F))≤...` lacks closing `)` after the inverse-image support.;",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 540,
+     "old": "\\dim(f^{-1}(\\Supp(F))\\leq",
+     "new": "\\dim(f^{-1}(\\Supp(F)))\\leq"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001325",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "§4: l12991 `ou Z est`→`où`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 542,
+     "old": "\\), ou \\(Z\\) est un sous-schéma intègre",
+     "new": "\\), où \\(Z\\) est un sous-schéma intègre"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001326",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l12997 unmatched `cl°(γ^i(x-ε(x))`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 542,
+     "old": "\\cl^\\circ(\\gamma^i(x-\\epsilon(x))\\in\\Gr^i(X)",
+     "new": "\\cl^\\circ(\\gamma^i(x-\\epsilon(x)))\\in\\Gr^i(X)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001327",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13002 `c_n(X)` conflicts with argument x",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 542,
+     "old": "\\ldots,c_n(X))\\in\\Gr^n(X).",
+     "new": "\\ldots,c_n(x))\\in\\Gr^n(X)."
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001328",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13006 malformed pairing argument grouping",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 542,
+     "old": "\\bigl\\langle P(c_1(x)),\\ldots,c_n(x),y\\bigr\\rangle",
+     "new": "\\bigl\\langle P(c_1(x),\\ldots,c_n(x)),y\\bigr\\rangle"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001329",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13019 `c_d(L_d)` conflicts with first-Chern pattern",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 543,
+     "old": "\\cdots c_d(L_d)^{\\alpha_d},\\lvert F\\rvert",
+     "new": "\\cdots c_1(L_d)^{\\alpha_d},\\lvert F\\rvert"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001330",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13023 unbound `a_d!` likely `α_d!`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 543,
+     "old": "\\cdots a_d!))",
+     "new": "\\cdots \\alpha_d!))"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001331",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13029 Snapper exponents α_i likely coefficient variables n_i",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 543,
+     "old": "Snapper \\(\\chi(L_1^{\\alpha_1}\\cdots L_d^{\\alpha_d}F)\\)",
+     "new": "Snapper \\(\\chi(L_1^{n_1}\\cdots L_d^{n_d}F)\\)"
+    }
+   ],
+   "note": "print L^{alpha} (scan p. 543 checked); the polynomial is in the n_i (cf. Prop. 4.3.1)"
+  },
+  {
+   "id": "SGA-SRC-001332",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13040 sum α_i=d likely ≤d modulo Fil^{d+1}",
+   "status": "rejected",
+   "why": "'= d' may be right if the congruence is taken in top degree; not established"
+  },
+  {
+   "id": "SGA-SRC-001333",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13058 `O_{,x}` missing X",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 544,
+     "old": "\\operatorname{long}_{\\mathcal O_{,x}}(F_x)",
+     "new": "\\operatorname{long}_{\\mathcal O_{X,x}}(F_x)"
+    }
+   ],
+   "note": "print 'O_{,x}' (scan p. 544 checked)"
+  },
+  {
+   "id": "SGA-SRC-001334",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13093 unmatched parenthesis in `cl_•(f_*(O_Y)`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 545,
+     "old": "\\cl_\\bullet(f_*(\\mathcal O_Y)\n \\equiv",
+     "new": "\\cl_\\bullet(f_*(\\mathcal O_Y)) \\equiv"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001335",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13128 ref 2.3.4 likely 2.4.4",
+   "status": "rejected",
+   "why": "reference 2.3.4 -> 2.4.4 not established"
+  },
+  {
+   "id": "SGA-SRC-001336",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13130 Corollary 4.5.3 duplicates equation (4.5.3), needs numbering audit.;",
+   "status": "rejected",
+   "why": "renumbering of a statement; not established"
+  },
+  {
+   "id": "SGA-SRC-001337",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "§5: l13173 Cartier divisor `on X` though X is the Zariski topos of scheme S and formula uses O_S(D), likely S",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 548,
+     "old": "diviseur de Cartier \\(\\geq0\\) sur \\(X\\) et",
+     "new": "diviseur de Cartier \\(\\geq0\\) sur \\(S\\) et"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001338",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13240 unbound N in (5.3.3), consistently rank n",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 550,
+     "old": "\\cl^\\circ(E)+N-1\\in\\Filt^2(X).",
+     "new": "\\cl^\\circ(E)+n-1\\in\\Filt^2(X)."
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001339",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13260 plural refs with singular `donne`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 550,
+     "old": "(6.5.8) ci-dessous donne par linéarité",
+     "new": "(6.5.8) ci-dessous donnent par linéarité"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001340",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13279 binomial `n+k-1` conflicts with E−n+k−1 and later correct `−n+k−1`, likely missing minus.;",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 551,
+     "old": "\\binom{n+k-1}{p}\\lambda^q(E)",
+     "new": "\\binom{-n+k-1}{p}\\lambda^q(E)"
+    }
+   ],
+   "note": "lambda_t(E+m)=lambda_t(E)(1+t)^m with m=k-1-n; print binom(n+k-1) (scan p. 551 checked)"
+  },
+  {
+   "id": "SGA-SRC-001341",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "§6: l13333 duplicate tag 6.1.3",
+   "status": "rejected",
+   "why": "duplicate equation number of the print; renumbering not established"
+  },
+  {
+   "id": "SGA-SRC-001342",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13340 Aut_O(M) representation said to act on O^m though (6.1.4) contracts with M",
+   "status": "rejected",
+   "why": "O^m for M (free of rank m) is not a certain slip"
+  },
+  {
+   "id": "SGA-SRC-001343",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13357 extra `)` after Gl(n)",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 554,
+     "old": "commutateurs de \\(\\Gl(n))\\) est",
+     "new": "commutateurs de \\(\\Gl(n)\\) est"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001344",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "ll13387-88 (6.2.8) `E_i\\otimes E_2` likely `E_1\\otimes E_2`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 554,
+     "old": "\\det(E_i\\otimes E_2)&=",
+     "new": "\\det(E_1\\otimes E_2)&="
+    }
+   ],
+   "note": "print E_i (scan p. 554 checked)"
+  },
+  {
+   "id": "SGA-SRC-001345",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "ll13387-88 (6.2.9) repeats a tensor product where the determinant identity requires a direct sum.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 554,
+     "old": "\\det(E_1\\otimes E_2)&=(\\det(E_1))\\otimes(\\det(E_2))",
+     "new": "\\det(E_1\\oplus E_2)&=(\\det(E_1))\\otimes(\\det(E_2))"
+    }
+   ],
+   "note": "(6.2.9) is the direct sum"
+  },
+  {
+   "id": "SGA-SRC-001346",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "ll13407/11 unbound n_i after r=1,G=Gl(n_1)",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 555,
+     "old": "\\det:\\operatorname{G\\ell}(n_i)\\longrightarrow\\Gm",
+     "new": "\\det:\\operatorname{G\\ell}(n_1)\\longrightarrow\\Gm"
+    },
+    {
+     "layer": "corrected",
+     "page": 555,
+     "old": "\\operatorname{G\\ell}(n_i)/\\operatorname{S\\ell}(n_i)\\longrightarrow\\Gm",
+     "new": "\\operatorname{G\\ell}(n_1)/\\operatorname{S\\ell}(n_1)\\longrightarrow\\Gm"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001347",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13419 extra prose `)`",
+   "status": "rejected",
+   "why": "the closing parenthesis after 'via 6.2.2' may close one opened earlier in the paragraph; not established"
+  },
+  {
+   "id": "SGA-SRC-001348",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13427 §6.4 formula tagged/referred 6.3.1 likely 6.4.1",
+   "status": "rejected",
+   "why": "renumbering of a display; not established"
+  },
+  {
+   "id": "SGA-SRC-001349",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13422 elementary row/column action reversed, with dependent ll13439-46 elimination cluster inconsistent",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 557,
+     "old": "tel que le produit \\(s'",
+     "new": "telle que le produit \\(s'"
+    }
+   ],
+   "note": "grammar only; the rewriting of the row/column descriptions and products is rejected (rewrites the argument)"
+  },
+  {
+   "id": "SGA-SRC-001350",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13458 diagonal conjugator denominators reversed algebraically",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 558,
+     "old": "\\(a_{hh}=1/\\mu\\), \\(a_{kk}=1/\\lambda\\)",
+     "new": "\\(a_{hh}=1/\\lambda\\), \\(a_{kk}=1/\\mu\\)"
+    }
+   ],
+   "note": "a c_{h,k,lambda} a^{-1} = c_{h,k,mu} needs lambda a_hh/a_kk = mu"
+  },
+  {
+   "id": "SGA-SRC-001351",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13462 corrupted quantifier `pour tout h,β`. These are queued as candidates, not silently rewritten.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 558,
+     "old": "pour tout \\(h,\\beta\\), de sorte",
+     "new": "pour tout \\(h,k\\), de sorte"
+    }
+   ],
+   "note": "minimal: beta -> k (Codex's added 'tels que h != k' not taken)"
+  },
+  {
+   "id": "SGA-SRC-001352",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14196 feminine `composante` + `muni` → `munie`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 597,
+     "old": "de \\(X_{S_1}\\), muni de la structure",
+     "new": "de \\(X_{S_1}\\), munie de la structure"
+    }
+   ],
+   "note": "agreement only"
+  },
+  {
+   "id": "SGA-SRC-001353",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14196 chooses `S_2\\subset S_1` but then says `X_{S_1}` is integral over `S_1`; likely `X_{S_2}` over `S_2`.",
+   "status": "rejected",
+   "why": "S_1 -> S_2 not established"
+  },
+  {
+   "id": "SGA-SRC-001354",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14198 after restricting `S'`, says `Z_i` is integral over `S`; likely `S'`.",
+   "status": "rejected",
+   "why": "S -> S' not established"
+  },
+  {
+   "id": "SGA-SRC-001355",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14198 uses undefined `Pic_{Z'/S'}` after `Z=\\coprod Z_i`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 597,
+     "old": "\\longrightarrow \\Pic_{Z'/S'}\\) est représentable",
+     "new": "\\longrightarrow \\Pic_{Z/S'}\\) est représentable"
+    }
+   ],
+   "note": "Z' is undefined; Z = coprod Z_i"
+  },
+  {
+   "id": "SGA-SRC-001356",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14213 `critère voluatif`→`valuatif`.;",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 598,
+     "old": "critère voluatif",
+     "new": "critère valuatif"
+    }
+   ],
+   "note": "print 'voluatif'"
+  },
+  {
+   "id": "SGA-SRC-001357",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "§2: l14265 `Pic_{⊔X'_i/S}` conflicts with unprimed X_i throughout, likely remove prime",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 600,
+     "old": "\\Pic_{\\coprod_iX'_i/S}\\longleftarrow",
+     "new": "\\Pic_{\\coprod_iX_i/S}\\longleftarrow"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001358",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14269 coproduct morphism `⊔ f_k: ...→Y_k` has free k, likely codomain `⊔Y_k`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 601,
+     "old": "\\longrightarrow Y_k\\), et l'assertion",
+     "new": "\\longrightarrow \\coprod_kY_k\\), et l'assertion"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001359",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14279 `celà`→`cela`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 601,
+     "old": "celà",
+     "new": "cela"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001360",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14291 rigidification uses `\\alpha^*L` although beta is the induced section of Y; likely `\\beta^*L`.",
+   "status": "rejected",
+   "why": "alpha -> beta in the rigidification not established"
+  },
+  {
+   "id": "SGA-SRC-001361",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14291 has a malformed/unbound `Pic` / `f_*` target cluster requiring exact reconstruction.",
+   "status": "rejected",
+   "why": "no specific correction in the record"
+  },
+  {
+   "id": "SGA-SRC-001362",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14298 `sous-foncteur ... formée`→`formé`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 603,
+     "old": "\\(\\Isom(L,M)\\) formée des isomorphismes",
+     "new": "\\(\\Isom(L,M)\\) formé des isomorphismes"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001363",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14300 concludes `F\\simeq I` in the proof of representability of `Isom(L,M)`; likely `F\\simeq Isom(L,M)`.",
+   "status": "rejected",
+   "why": "F = I (I for Isom) is not a certain slip"
+  },
+  {
+   "id": "SGA-SRC-001364",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "ll14306-10 linked repair: `f_*O_Y` for `f:X\\to Y` must be `f_*O_X`, and both `X\\times_yX` fibre products must have base `Y`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 603,
+     "old": "\\mathcal O_Y\n  \\longrightarrow f_*\\mathcal O_Y\n  \\rightrightarrows",
+     "new": "\\mathcal O_Y \\longrightarrow f_*\\mathcal O_X \\rightrightarrows"
+    },
+    {
+     "layer": "corrected",
+     "page": 603,
+     "old": "\\mathcal O_{X\\times_yX}",
+     "new": "\\mathcal O_{X\\times_YX}"
+    },
+    {
+     "layer": "corrected",
+     "page": 603,
+     "old": "(où \\(g:X\\times_yX\\to Y\\)",
+     "new": "(où \\(g:X\\times_YX\\to Y\\)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001365",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "l14322 variable cluster A/B_i vs undefined A_i/B is structurally corrupted and needs scan reconstruction.",
+   "status": "rejected",
+   "why": "renaming of rings by inference, not a reading"
+  },
+  {
+   "id": "SGA-SRC-001366",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13582 reference `1.14` → `1.1.4`.",
+   "status": "rejected",
+   "why": "1.14 -> 1.1.4 not verified (missing stop or real reference)"
+  },
+  {
+   "id": "SGA-SRC-001367",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13582 malformed `soit Y d'adhérence` → `soit Y l'adhérence`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 562,
+     "old": "Or soit \\(Y\\) d'adhérence schématique",
+     "new": "Or soit \\(Y\\) l'adhérence schématique"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001368",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13725 conservation-of-number specialization says `pour X=S` but bound map is g:X→Y, so `Y=S`",
+   "status": "rejected",
+   "why": "X=S -> Y=S not established"
+  },
+  {
+   "id": "SGA-SRC-001369",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13770 f_t/f_s→g_t/g_s",
+   "status": "rejected",
+   "why": "f_t, f_s -> g_t, g_s not established"
+  },
+  {
+   "id": "SGA-SRC-001370",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13812 sections x_i of C/S target X but must target C",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 574,
+     "old": "les immersions \\(x_i:S\\to X\\)",
+     "new": "les immersions \\(x_i:S\\to C\\)"
+    }
+   ],
+   "note": "sections of C/S (restricted to x_i: s -> C_s)"
+  },
+  {
+   "id": "SGA-SRC-001371",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13826 `X_s×_{k(x)}C_s` has unbound x, should k(s)",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 574,
+     "old": "X_s\\times_{k(x)}C_s",
+     "new": "X_s\\times_{k(s)}C_s"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001372",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13879 bottom-right cohomology object K^{2i}→H^{2i}",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 576,
+     "old": "\\arrow[r,\"c^i\"] &\nK^{2i}(X_s,\\mathbb Z_\\ell(i))",
+     "new": "\\arrow[r,\"c^i\"] & H^{2i}(X_s,\\mathbb Z_\\ell(i))"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001373",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13958 ref 7.11.5→7.12.5",
+   "status": "rejected",
+   "why": "reference 7.11.5 -> 7.12.5 not established"
+  },
+  {
+   "id": "SGA-SRC-001374",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13981 unbound Z in quasi-projectivity clause likely T",
+   "status": "rejected",
+   "why": "Z -> T not established"
+  },
+  {
+   "id": "SGA-SRC-001375",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "ll13994/96 generic/special inclusion labels appear swapped",
+   "status": "rejected",
+   "why": "exchange of diagram labels not established"
+  },
+  {
+   "id": "SGA-SRC-001376",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l14005 lower specialization arrow σ_X likely σ_{X'}",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 584,
+     "old": "K_\\bullet(X'_{t'}) \\arrow[r,\"\\sigma_X\"]",
+     "new": "K_\\bullet(X'_{t'}) \\arrow[r,\"\\sigma_{X'}\"]"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001377",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l14012 defines only bar A_i then uses A_i in B_i=(A_i)_{m_i}, k_i=A_i/m_i, likely bar A_i",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 585,
+     "old": "\\(B_i=(A_i)_{\\mathfrak m_i}\\)",
+     "new": "\\(B_i=(\\bar A_i)_{\\mathfrak m_i}\\)"
+    },
+    {
+     "layer": "corrected",
+     "page": 585,
+     "old": "\\(k_i=A_i/\\mathfrak m_i",
+     "new": "\\(k_i=\\bar A_i/\\mathfrak m_i"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001378",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l14098 F(k)→K(K)→F(k)→F(K)",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 591,
+     "old": "\\(F(k)\\to K(K)\\) est injective",
+     "new": "\\(F(k)\\to F(K)\\) est injective"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001379",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l14138 claims `X_K` remains finite type from `X` merely noetherian; likely `noetherian`.",
+   "status": "rejected",
+   "why": "'de type fini' -> 'noethérien' changes the author's statement"
+  },
+  {
+   "id": "SGA-SRC-001380",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l14138 has an unmatched opening parenthesis.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 593,
+     "old": "est encore de type fini. De plus",
+     "new": "est encore de type fini). De plus"
+    }
+   ],
+   "note": "closing parenthesis only (cf. 1379)"
+  },
+  {
+   "id": "SGA-SRC-001381",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "Grammar/forms: l13508 `l'nomomorphisme`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 560,
+     "old": "l'nomomorphisme",
+     "new": "l'homomorphisme"
+    }
+   ],
+   "note": "print 'l'nomomorphisme' (scan p. 560 checked)"
+  },
+  {
+   "id": "SGA-SRC-001382",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13643 plural agreement",
+   "status": "rejected",
+   "why": "agreement of 'définie' is ambiguous"
+  },
+  {
+   "id": "SGA-SRC-001383",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13693 `exceptionellement`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 567,
+     "old": "exceptionellement",
+     "new": "exceptionnellement"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001384",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13791 `un éléments`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 572,
+     "old": "le produit d'un éléments de",
+     "new": "le produit d'un élément de"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001385",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13835 agreement",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 574,
+     "old": "leurs points d'intersections rationnelles sur",
+     "new": "leurs points d'intersection rationnels sur"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001386",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13946 `ce trouve`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 580,
+     "old": "que ce trouve défini",
+     "new": "que se trouve défini"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001387",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l13956 agreement",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 580,
+     "old": "associée~» définie dans (SGA 5 IV)",
+     "new": "associée~» définis dans (SGA 5 IV)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001388",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l14064 `Un autre façon`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 588,
+     "old": "Un autre façon de définir",
+     "new": "Une autre façon de définir"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001389",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l14124 unmatched opening parenthesis",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 593,
+     "old": "(grâce à (IV 2.12). En vertu",
+     "new": "(grâce à (IV 2.12)). En vertu"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001390",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "l14138 `résultats restent valable`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 593,
+     "old": "Ces résultats restent valable si",
+     "new": "Ces résultats restent valables si"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001391",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l15159 grammar `on a donc établit`→`établi`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 649,
+     "old": "on a donc \\'etablit (a)",
+     "new": "on a donc \\'etabli (a)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001392",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l15200 last intersection pairing is `⟨b,a_m⟩` while preceding terms use product dots; should `⟨b.a_m⟩`.",
+   "status": "rejected",
+   "why": "punctuation of the typescript (comma for dot)"
+  },
+  {
+   "id": "SGA-SRC-001393",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l15244, invoking Lemma 6.2, defines p as P_r(a_{m,*}) although 6.2 explicitly requires the dominating c_{m,*}; correct to P_r(c_{m,0},...,c_{m,r}).",
+   "status": "rejected",
+   "why": "P_r(a) -> P_r(c) not established"
+  },
+  {
+   "id": "SGA-SRC-001394",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l15275 defines F'=O_X·σ although the entire appendix is on P=P^N_k; O_P.",
+   "status": "rejected",
+   "why": "O_X -> O_P not established"
+  },
+  {
+   "id": "SGA-SRC-001395",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l15286 similarly chooses σ of O_X(1); O_P(1).",
+   "status": "rejected",
+   "why": "O_X -> O_P not established"
+  },
+  {
+   "id": "SGA-SRC-001396",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l15296 has malformed `h^0(F_q(-1)≤...`, missing the closing parenthesis after F_q(-1). Spanish current carries apparatus for these source readings.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 657,
+     "old": "$h^0(F_q(-1)\\le h^0(F(-1))",
+     "new": "$h^0(F_q(-1))\\le h^0(F(-1))"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001397",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "l15460 `foncteurs (non addifs...)`→`non additifs`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 667,
+     "old": "(non addifs",
+     "new": "(non additifs"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001398",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "l15473 `coéfficients`→`coefficients`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 668,
+     "old": "coéfficients dans $\\mathcal O_X$",
+     "new": "coefficients dans $\\mathcal O_X$"
+    }
+   ],
+   "note": "print 'coéfficients'"
+  },
+  {
+   "id": "SGA-SRC-001399",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "l15485 `espéces analytiques`→`espaces analytiques`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 669,
+     "old": "que des espéces analytiques",
+     "new": "que des espaces analytiques"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001400",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "substantive l15487 proposes replacing properness of f by requiring H^i(L•) to have `leurs groupes propres sur Y`, which is nonsensical—the standard and contextually forced reading is `leurs supports propres sur Y`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 669,
+     "old": "aient leurs groupes propres sur",
+     "new": "aient leurs supports propres sur"
+    }
+   ],
+   "note": "print 'groupes' (scan p. 669 checked)"
+  },
+  {
+   "id": "SGA-SRC-001401",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "l15509 says a sought integral f_* should induce natural `f:` on rational graded groups, should `f_*`",
+   "status": "rejected",
+   "why": "f -> f_* not established (the map goes from Gr(Y) to Gr(X))"
+  },
+  {
+   "id": "SGA-SRC-001402",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "l15529 `classes de Chern style Chow`→`de style Chow`",
+   "status": "rejected",
+   "why": "elliptic wording of the author"
+  },
+  {
+   "id": "SGA-SRC-001403",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "l15541 `morphisme propre dans un Z`→`sur un Z`",
+   "status": "rejected",
+   "why": "'dans un Z' can stand"
+  },
+  {
+   "id": "SGA-SRC-001404",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "l15537 says formula is 0=0 for i<d and interesting only for i>d, yet immediately discusses i=d=2, so the inequality likely should be `i≥d`/phrase `i\\ge d` (needs scan/adjudication). Spanish uses apparatus for supports and f_*; preserves the i>d tension explicitly.",
+   "status": "present",
+   "note": "the scan-check text already reads 'pour i >= d'"
+  },
+  {
+   "id": "SGA-SRC-001405",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l14622 `H^0(G(n+1)` missing `)`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 617,
+     "old": "H^0(G(n+1) \\arrow[d]",
+     "new": "H^0(G(n+1)) \\arrow[d]"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001406",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l14655 ref `2.3(i)` likely `1.3(i)`",
+   "status": "rejected",
+   "why": "reference 2.3 -> 1.3 not established"
+  },
+  {
+   "id": "SGA-SRC-001407",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l14678 reference `2.3(ii)` likely `1.3(ii)`.",
+   "status": "rejected",
+   "why": "reference 2.3 -> 1.3 not established"
+  },
+  {
+   "id": "SGA-SRC-001408",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l14678 malformed `mapsto n^1(F(n))` likely `n\\mapsto h^1(F(n))`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 619,
+     "old": "donc \\(\\mapsto n^1(F(n))\\) est",
+     "new": "donc \\(n\\mapsto h^1(F(n))\\) est"
+    }
+   ],
+   "note": "diplomatic: not individually verified against the scan (probably a transcription error)"
+  },
+  {
+   "id": "SGA-SRC-001409",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "ll14689/14693 zeros of `σ_1,...,σ_1` should end `σ_i`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 619,
+     "old": "zéros de \\(\\sigma_1,\\ldots,\\sigma_1\\), alors \\(h^0(F_i",
+     "new": "zéros de \\(\\sigma_1,\\ldots,\\sigma_i\\), alors \\(h^0(F_i"
+    },
+    {
+     "layer": "corrected",
+     "page": 619,
+     "old": "zéros de \\(\\sigma_1,\\ldots,\\sigma_1\\), alors \\(h^0(F_{\\sigma,i}",
+     "new": "zéros de \\(\\sigma_1,\\ldots,\\sigma_i\\), alors \\(h^0(F_{\\sigma,i}"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001410",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l14697 T called open of undefined/reused S though parameter space is S', likely T⊂S'",
+   "status": "rejected",
+   "why": "S -> S' not established"
+  },
+  {
+   "id": "SGA-SRC-001411",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l14699 exact seq `0→F(1)→F→G→0` conflicts with ensuing F(n−1), likely F(−1)",
+   "status": "rejected",
+   "why": "F(1) -> F(-1) not established on the scan"
+  },
+  {
+   "id": "SGA-SRC-001412",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l14745 claim `r=0` implies `m=0` conflicts with Definition 1.9, `P_0(c_0)=c_0`.",
+   "status": "rejected",
+   "why": "inference"
+  },
+  {
+   "id": "SGA-SRC-001413",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l14745 bound justification cites `b_i\\ge0` where the operative condition appears to be `c_i\\ge b_i-a_i`.",
+   "status": "rejected",
+   "why": "inserted comparison by inference, not a reading"
+  },
+  {
+   "id": "SGA-SRC-001414",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "Later block: l15068 definition quantifies K but calls Z a k-scheme, likely K-scheme",
+   "status": "rejected",
+   "why": "k -> K not established (the print reads k)"
+  },
+  {
+   "id": "SGA-SRC-001415",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l15075 ill-typed `Φ(G'^τ)⊃G^τ`, should `Φ^{-1}(G'^τ)⊃G^τ` (or equivalent image inclusion)",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 644,
+     "old": "l'inclusion \\(\\Phi(G'^\\tau)\\supset G^\\tau\\)",
+     "new": "l'inclusion \\(\\Phi^{-1}(G'^\\tau)\\supset G^\\tau\\)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001416",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l15102 agreement `f est surjective`→`surjectif`",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 645,
+     "old": "lorsque \\(f\\) est surjective,",
+     "new": "lorsque \\(f\\) est surjectif,"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001417",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l15135 reuses L for the bounding family object and fixed line bundle, then chooses p,q but writes L^r and L^q—first exponent must p",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 647,
+     "old": "tels que \\(L^{\\otimes r}\\) et \\(L^{\\otimes q}\\)",
+     "new": "tels que \\(L^{\\otimes p}\\) et \\(L^{\\otimes q}\\)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001418",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "l15146 phrase `ouvert (resp. et fermé)` requires `ouvert (resp. ouvert et fermé)`.",
+   "status": "rejected",
+   "why": "'ouvert (resp. et fermé)' is the usual elliptic use of 'resp.'"
+  },
+  {
+   "id": "SGA-SRC-001419",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "l15732 singular `g'` followed by `tels que` → `tel que`.",
+   "status": "rejected",
+   "why": "'tels que' can refer to the plural g^i"
+  },
+  {
+   "id": "SGA-SRC-001420",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "l15732 capitalized `Module` → `module`.",
+   "status": "rejected",
+   "why": "capital 'Module' is the volume's convention"
+  },
+  {
+   "id": "SGA-SRC-001421",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "l15732 says `g^i` sends `c_i(E)`, then uses `c^i(E)` in generation; likely `c_i(E)` consistently.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 681,
+     "old": "engendré par les $c^i(E)$, on voit",
+     "new": "engendré par les $c_i(E)$, on voit"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001422",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "l15752 image of the full graded map is put in `H^2(X,Z_l(\\bullet))`; degree reasons require `H^{2\\bullet}(X,Z_l(\\bullet))`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 681,
+     "old": "contenue dans celle de $H^2(X,\\Zell(\\bullet))$",
+     "new": "contenue dans celle de $H^{2\\bullet}(X,\\Zell(\\bullet))$"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001423",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "l15752 `se résoud` → `se résout`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 681,
+     "old": "de $g'$ se résoud affirmativement",
+     "new": "de $g'$ se résout affirmativement"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001424",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "l15752 `à priori` → `a priori`.",
+   "status": "rejected",
+   "why": "'à priori' is the spelling of the period"
+  },
+  {
+   "id": "SGA-SRC-001425",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "14759: constancy of fibre Hilbert polynomial prints χ(F(n)); likely χ(F_t(n)).",
+   "status": "rejected",
+   "why": "F -> F_t not established"
+  },
+  {
+   "id": "SGA-SRC-001426",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "14769: after L_1→E′, uses undefined L′_K→E′_K; likely L_{1,K}.",
+   "status": "rejected",
+   "why": "L'_K -> L_{1,K} not established"
+  },
+  {
+   "id": "SGA-SRC-001427",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "14801: c(L), while degree was defined using c_1(L); likely c_1(L).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 626,
+     "old": "\\langle c(L)\\cdot c_1(H)^{r-1}\\rangle",
+     "new": "\\langle c_1(L)\\cdot c_1(H)^{r-1}\\rangle"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001428",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "Source jumps Lemma 2.5→2.7; 14813 invokes missing 2.6.",
+   "status": "rejected",
+   "why": "renumbering of Lemme 2.7 and (2.7.1) as 2.6 not established (later references may use 2.7)"
+  },
+  {
+   "id": "SGA-SRC-001429",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "14826: h^2(L(-a_1-2)=0 lacks closing parenthesis.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 628,
+     "old": "\\(h^2(L(-a_1-2)=0\\)",
+     "new": "\\(h^2(L(-a_1-2))=0\\)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001430",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "14868: derives negative-twist vanishing from h^1(L(n))=0 for n≫0; likely h^1(L(-n))=0.",
+   "status": "rejected",
+   "why": "inference"
+  },
+  {
+   "id": "SGA-SRC-001431",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "14891 binomial shift is false for r=1; likely lower entry \\binom{m-1+j}{j}, not \\binom{m-1+i}{j}.",
+   "status": "rejected",
+   "why": "inference"
+  },
+  {
+   "id": "SGA-SRC-001432",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "14905 δ=\\operatorname{supp}{d(L_K)} is used numerically; likely \\sup.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 631,
+     "old": "\\(\\delta=\\operatorname{supp}\\{d(L_K)\\}\\)",
+     "new": "\\(\\delta=\\sup\\{d(L_K)\\}\\)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001433",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "14918 defines L′_α but later says pullback of L_α; likely restore prime.",
+   "status": "rejected",
+   "why": "L -> L' not established"
+  },
+  {
+   "id": "SGA-SRC-001434",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "14941 Picard-family definition says only classes of sheaves; must be invertible sheaves.",
+   "status": "rejected",
+   "why": "editorial insertion ('inversibles')"
+  },
+  {
+   "id": "SGA-SRC-001435",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "15309 duplicates a_q^{(q)}.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 657,
+     "old": "\\le a_{q-1}$ et $a_q^{(q)}$ et $a_q^{(q)}=a_q",
+     "new": "\\le a_{q-1}$ et $a_q^{(q)}=a_q"
+    }
+   ],
+   "note": "diplomatic: not individually verified against the scan"
+  },
+  {
+   "id": "SGA-SRC-001436",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "15311 0→F(-1→F→G→0 lacks ).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 657,
+     "old": "$0\\to F(-1\\to F\\to G\\to0$",
+     "new": "$0\\to F(-1)\\to F\\to G\\to0$"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001437",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "15340 defines O_{X_n}, then uses undefined O_X twice in 0→O_X(-Z)→O_X→O_Z→0; likely X_n.",
+   "status": "rejected",
+   "why": "inference"
+  },
+  {
+   "id": "SGA-SRC-001438",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "15355 sums coefficients i=0..n although n is polynomial variable and coefficient range is 0..N; likely N.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 661,
+     "old": "\\chi(\\mathcal O_X(n))=\\sum_{i=0}^{n}a_i",
+     "new": "\\chi(\\mathcal O_X(n))=\\sum_{i=0}^{N}a_i"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001439",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "15372–15377 labels (i), (i′), then automatic (iii), but proof calls third (ii).",
+   "status": "present",
+   "note": "the TeX enumerate already numbers the third item (ii) (the [(i')] item does not step the counter)"
+  },
+  {
+   "id": "SGA-SRC-001440",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "15397 blows up “ideal I of O_Y” although blow-up of X needs ideal of Y in O_X.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 664,
+     "old": "l'\\'eclatement de l'id\\'eal $I$ de $\\mathcal O_Y$.",
+     "new": "l'\\'eclatement de l'id\\'eal $I$ de $\\mathcal O_X$."
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001441",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "15401–15403 defines d=<M,H>, h=<H²>, then L=M^⊗n⊗H^{-d} with unbound n; orthogonality forces n=h.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 664,
+     "old": "soit $L=M^{\\otimes n}\\otimes H^{\\otimes -d}$",
+     "new": "soit $L=M^{\\otimes h}\\otimes H^{\\otimes -d}$"
+    }
+   ],
+   "note": "<c1(L).c1(H)> = n d - d h = 0 needs n = h"
+  },
+  {
+   "id": "SGA-SRC-001442",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "15403 and 15413–15418 claim strict Hodge inequality under “M not numerically equivalent to H”; multiples such as M=H^⊗2 give equality. Hypothesis likely “not numerically proportional to H”.",
+   "status": "rejected",
+   "why": "inference"
+  },
+  {
+   "id": "SGA-SRC-001443",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "15353 engendré→engendrée",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 661,
+     "old": "de $I$ est engendr\\'e par",
+     "new": "de $I$ est engendr\\'ee par"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001444",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "15340 French fragment `d’où que` requires grammatical repair.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 660,
+     "old": "d'o\\`u que $a_0=",
+     "new": "d'o\\`u $a_0="
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001445",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "15430 duplicates the bibliography.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 666,
+     "old": "p. 94-103 Amer. J. Math 1967 p.94-103.",
+     "new": "p. 94-103."
+    },
+    {
+     "layer": "corrected",
+     "page": 666,
+     "old": "Grothendieck A. . et Dieudonn",
+     "new": "Grothendieck A. et Dieudonn"
+    }
+   ],
+   "note": "the print repeats the reference (scan p. 666 checked)"
+  },
+  {
+   "id": "SGA-SRC-001446",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "15431/15433 contain double periods.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 666,
+     "old": "Grothendieck A. . et alii",
+     "new": "Grothendieck A. et alii"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001447",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIII",
+   "codex_status": "accepted",
+   "codex_claim": "15433 J.H.E.S. likely I.H.E.S.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 666,
+     "old": "1960-66, J.H.E.S.",
+     "new": "1960-66, I.H.E.S."
+    }
+   ],
+   "note": "print 'J,H.E.S' (IA text layer)"
+  },
+  {
+   "id": "SGA-SRC-001448",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "15575 Gr′_top omits (X)",
+   "status": "rejected",
+   "why": "the record's surface is fr_r1's re-transcription of pp. 672-689; the scan-check text of these pages is older and reads otherwise; left to the scan check of those pages"
+  },
+  {
+   "id": "SGA-SRC-001449",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "15613 c_i(Y)=n(Y)cl(Y) conflicts with (4.5), whose first member is c_i(O_Y)",
+   "status": "rejected",
+   "why": "notation c_i(Y) for c_i(O_Y); not a certain slip"
+  },
+  {
+   "id": "SGA-SRC-001450",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "15615 deg(Y·ξ^i)>0 is dimensionally suspect (zero-cycle exponent normally dimY)",
+   "status": "rejected",
+   "why": "inference"
+  },
+  {
+   "id": "SGA-SRC-001451",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "15661 SO(n) conflicts with simply-connected hypothesis (Spin(n))",
+   "status": "rejected",
+   "why": "SO(n) -> Spin(n) corrects the author's mathematics, not a misprint; a note at most"
+  },
+  {
+   "id": "SGA-SRC-001452",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "15669 cl^i(Y)∈K′(X) likely cl′(Y)",
+   "status": "rejected",
+   "why": "the record's surface is fr_r1's re-transcription of pp. 672-689; the scan-check text of these pages is older and reads otherwise; left to the scan check of those pages"
+  },
+  {
+   "id": "SGA-SRC-001453",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "15679–15682 localization kernel likely image K′(Z)→K′(X), not K(Z)",
+   "status": "rejected",
+   "why": "the record's surface is fr_r1's re-transcription of pp. 672-689; the scan-check text of these pages is older and reads otherwise; left to the scan check of those pages"
+  },
+  {
+   "id": "SGA-SRC-001454",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "15702 `A^0(X)=Z` while discussing `A(G)`; likely `A^0(G)`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 679,
+     "old": "réduit à $A^0(X)=\\Z$",
+     "new": "réduit à $A^0(G)=\\Z$"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001455",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "15698 capitalized `Modules` → `modules`.",
+   "status": "rejected",
+   "why": "capital 'Modules' is the volume's convention"
+  },
+  {
+   "id": "SGA-SRC-001456",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "15850 “au sommet d’un cône projectant C” likely “cône projectif C”",
+   "status": "rejected",
+   "why": "the scan-check text already reads 'cône projetant' (the right word); Codex's 'projectif' is wrong"
+  },
+  {
+   "id": "SGA-SRC-001457",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "15871 attributes Deligne Exp. XVIII/topos title to SGA6, but belongs to SGA4",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 688,
+     "old": "des schémas (SGA 6)}",
+     "new": "des schémas (SGA 4)}"
+    }
+   ],
+   "note": "print '(SGA 6)' (IA text layer)"
+  },
+  {
+   "id": "SGA-SRC-001458",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "15872 “U. Mausin” likely Manin",
+   "status": "present",
+   "note": "the scan-check text already reads 'Yu. I. Manin' (print 'U. Mausin'; the diplomatic layer to be checked by the scan check)"
+  },
+  {
+   "id": "SGA-SRC-001459",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "15883 “sans hyperplan quasi-projectif” likely corruption of “sans hypothèse quasi-projective”",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 689,
+     "old": "(sans hyperplan quasi-projectif,",
+     "new": "(sans hypothèse quasi-projective,"
+    }
+   ],
+   "note": "print 'hyperplan' (IA text layer)"
+  },
+  {
+   "id": "SGA-SRC-001460",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "15887 bare MANIN 17 / dans 16 likely [17]/[16].",
+   "status": "rejected",
+   "why": "typesetting of citation numbers, left to the scan check of p. 689"
+  },
+  {
+   "id": "SGA-SRC-001461",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "16088 duplicates Dcat(f)_parf; III 4.2 line5676 defines second as Dcat(f)_uparf.",
+   "status": "present",
+   "note": "the scan-check index already distinguishes parf and underlined parf"
+  },
+  {
+   "id": "SGA-SRC-001462",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "16096 Dcat(X)_{\\underline f-text-parf} conflicts with III4.2 Dcat(X)_{f-text-uparf}.",
+   "status": "present",
+   "note": "the scan-check index already distinguishes parf and underlined parf"
+  },
+  {
+   "id": "SGA-SRC-001463",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XIV",
+   "codex_status": "accepted",
+   "codex_claim": "16100 duplicates Dcat(X)_{Y-text-parf}; III4.2 defines second as Dcat(X)_{Y-text-uparf}.",
+   "status": "present",
+   "note": "the scan-check index already distinguishes parf and underlined parf"
+  },
+  {
+   "id": "SGA-SRC-001464",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IX",
+   "codex_status": "accepted",
+   "codex_claim": "line 12180 says `Pour calculer $g^*(g_*(f))$` although the paragraph fixes the coherent module/class `F` and every surrounding occurrence is `g_*(F)`, `Lg^*(F)`. Conservative correction: lowercase `f` → uppercase `F`; Spanish carries `\\sisi{f}{F}`. Same witness SHA 0D2158B9FE3B466309A92165727A0B1914",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 506,
+     "old": "$g^*(g_*(f))$",
+     "new": "$g^*(g_*(F))$"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001465",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IX",
+   "codex_status": "accepted",
+   "codex_claim": "line12252 second factor `K^\\circ(S)` must be `K^\\circ(X)` in the map to `K_\\bullet(X)`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 510,
+     "old": "K_\\bullet(S)\\otimes_{K^\\circ(S)}K^\\circ(S)\\longrightarrow K_\\bullet(X)",
+     "new": "K_\\bullet(S)\\otimes_{K^\\circ(S)}K^\\circ(X)\\longrightarrow K_\\bullet(X)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001466",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IX",
+   "codex_status": "accepted",
+   "codex_claim": "line12357 representatives of a basis class differ by `G_{0,S''}^{(i+1)}` although the quotient definition suggests `G_{0,S''}^{(i)}`; HOLD for scan/index adjudication.",
+   "status": "rejected",
+   "why": "G^{(i+1)} -> G^{(i)} not established from the passage"
+  },
+  {
+   "id": "SGA-SRC-001467",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IX",
+   "codex_status": "accepted",
+   "codex_claim": "line12270 `réccurrence` → `récurrence`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 511,
+     "old": "réccurrence",
+     "new": "récurrence"
+    }
+   ],
+   "note": "print 'réccurrence'"
+  },
+  {
+   "id": "SGA-SRC-001468",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "accepted",
+   "codex_claim": "lines250/346 reference `(2.1)` for `T_f`, but defining class formula is `(2.2)`; correct both to `(2.2)`.",
+   "status": "rejected",
+   "why": "not a certain error: T_f is defined through the factorization (2.1) and formula (2.2); 'défini par (2.1)' can stand"
+  },
+  {
+   "id": "SGA-SRC-001469",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "accepted",
+   "codex_claim": "line288 says section 3 gives meaning to `(2.2)` although the generalized Riemann–Roch formula is `(1.2)`; likely `(1.2)`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 6,
+     "old": "donner un sens à la formule (2.2) lorsqu'on abandonne",
+     "new": "donner un sens à la formule (1.2) lorsqu'on abandonne"
+    }
+   ],
+   "note": "section 3 generalizes the Riemann-Roch formula (1.2) (end of 2.4); print (2.2), p. 6 checked"
+  },
+  {
+   "id": "SGA-SRC-001470",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "accepted",
+   "codex_claim": "line301 naïve formula has `cl^\\bullet(E)` on the left but `R^i f_*(F)` on the right; HOLD for exact variable reconciliation.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 6,
+     "old": "f_*(\\cl^\\bullet(\\underline E))=\\sum_i",
+     "new": "f_*(\\cl^\\bullet(\\underline F))=\\sum_i"
+    }
+   ],
+   "note": "same reading as MISPRINTS_6 p. 6"
+  },
+  {
+   "id": "SGA-SRC-001471",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "accepted",
+   "codex_claim": "line314 map `K^\\bullet(X)\\to K(Parf(Y))` while the paragraph concerns perfect complexes on `Y`; likely `K^\\bullet(Y)`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 7,
+     "old": "K^\\bullet(X)\\longrightarrow K(\\Parf(Y))",
+     "new": "K^\\bullet(Y)\\longrightarrow K(\\Parf(Y))"
+    }
+   ],
+   "note": "same reading as MISPRINTS_6 p. 7"
+  },
+  {
+   "id": "SGA-SRC-001472",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "accepted",
+   "codex_claim": "line324 `cl(L_\\bullet)` immediately after defining `cl^\\bullet(L_\\bullet)`; restore superscript bullet.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 8,
+     "old": "\\cl(L_\\bullet)=\\sum_i(-1)^i\\cl^\\bullet(L'_i)",
+     "new": "\\cl^\\bullet(L_\\bullet)=\\sum_i(-1)^i\\cl^\\bullet(L'_i)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001473",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "accepted",
+   "codex_claim": "line259 delete the stray comma.",
+   "status": "rejected",
+   "why": "punctuation of the typescript (',)'), no effect on the meaning"
+  },
+  {
+   "id": "SGA-SRC-001474",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "accepted",
+   "codex_claim": "line268 `sommes d’expression` → plural `sommes d’expressions`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 4,
+     "old": "les sommes d'expression de la forme",
+     "new": "les sommes d'expressions de la forme"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001475",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "I",
+   "codex_status": "accepted",
+   "codex_claim": "line1713 malformed footnote `F/Dpx(C_Y)` changes the bound object and breaks the resp. pair; HOLD for exact scan reconstruction.",
+   "status": "superseded",
+   "superseded_by": "FIXLOG_6 p. 85 (scan check): the print reads '(resp. Fl D(C_Y))'; Codex's reconstruction 'a in Ob D(C_Y)' is superseded"
+  },
+  {
+   "id": "SGA-SRC-001476",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "I",
+   "codex_status": "accepted",
+   "codex_claim": "lines1739–1740 lifting diagram labels desired diagonal `H_U\\to E_U` as `u` and bottom `E_U\\to F_U` as `U`; correct to `v` and `u_U`.",
+   "status": "superseded",
+   "superseded_by": "MISPRINTS_6 p. 86: the scan check gives a different corrected diagram (horizontal arrow u_U, diagonal unlabelled); Codex's diagonal 'v' is superseded"
+  },
+  {
+   "id": "SGA-SRC-001477",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "I",
+   "codex_status": "accepted",
+   "codex_claim": "lines1788/1906 reuse `S` as both site and object; use calligraphic `\\mathcal S` for the site.",
+   "status": "rejected",
+   "why": "typeface of the site letter (plain S in the print, p. 89 checked); notation, not a misreading"
+  },
+  {
+   "id": "SGA-SRC-001478",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "I",
+   "codex_status": "accepted",
+   "codex_claim": "line1778 insert the missing phrase `les conditions suivantes sont équivalentes`.",
+   "status": "superseded",
+   "superseded_by": "MISPRINTS_6 p. 89: corrected reading 'O_S-Module. Conditions équivalentes' (print: comma); Codex's inserted phrase is superseded"
+  },
+  {
+   "id": "SGA-SRC-001479",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line9903 inside Proposition 1.7, `suite (1.8.1)` must be the conormal sequence `(1.6.1)`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 424,
+     "old": "donc que la suite (1.8.1) est exacte",
+     "new": "donc que la suite (1.6.1) est exacte"
+    }
+   ],
+   "note": "(1.6.1) is the conormal sequence; (1.8.1) comes later"
+  },
+  {
+   "id": "SGA-SRC-001480",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line9940 coordinate ring ending `X_2/X_1,...,X_d,X_1` must end `X_2/X_1,...,X_d/X_1`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 426,
+     "old": "X_2/X_1,\\ldots,X_d,X_1]\\)",
+     "new": "X_2/X_1,\\ldots,X_d/X_1]\\)"
+    }
+   ],
+   "note": "print 'X_d,X_1' (scan p. 426 checked)"
+  },
+  {
+   "id": "SGA-SRC-001481",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "rejected",
+   "codex_claim": "line9926 citation is only `EGA II` with no locator; HOLD unresolved reference gap.",
+   "status": "rejected",
+   "why": "rejected by Codex's canon (no correction)"
+  },
+  {
+   "id": "SGA-SRC-001482",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line9806 `nécéssaire` → `nécessaire`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 419,
+     "old": "il est donc nécéssaire et suffisant qu'elle",
+     "new": "il est donc nécessaire et suffisant qu'elle"
+    }
+   ],
+   "note": "print 'nécéssaire'"
+  },
+  {
+   "id": "SGA-SRC-001483",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line9812 repair the grouped language defects `engendré soit les f_i` and `isomorphime`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 420,
+     "old": "engendré soit les $f_i$",
+     "new": "engendré soit par les $f_i$"
+    },
+    {
+     "layer": "corrected",
+     "page": 420,
+     "old": "définir un isomorphime du complexe",
+     "new": "définir un isomorphisme du complexe"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001484",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line9814 `un base` → `une base`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 420,
+     "old": "ils donnent un base de",
+     "new": "ils donnent une base de"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001485",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line9957 malformed reference punctuation `(III 4.1.).` → `(III 4.1).`.",
+   "status": "rejected",
+   "why": "punctuation of the typescript '(III 4.1.)'"
+  },
+  {
+   "id": "SGA-SRC-001486",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line10058 `Tor_1\\simeq(O_T)^n` must be `(O_T)^p`; `n` is unbound and the Koszul block has rank `p`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 433,
+     "old": "\\xrightarrow{\\sim}(\\cO_T)^n,",
+     "new": "\\xrightarrow{\\sim}(\\cO_T)^p,"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001487",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line10064 `(2.5.3)` right side `wedge^i Tor_i` must be `wedge^i Tor_1`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 433,
+     "old": "\\bigwedge^i\\Tor_i^{\\cO_X}(\\cO_Y,\\cO_Z).",
+     "new": "\\bigwedge^i\\Tor_1^{\\cO_X}(\\cO_Y,\\cO_Z)."
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001488",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line10074 `wedge Tor_i` has free `i`; must be `wedge Tor_1`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 434,
+     "old": "\\bigwedge\\Tor_i^{\\cO_X}(\\cO_Y,\\cO_Z)\\xrightarrow{\\sim}",
+     "new": "\\bigwedge\\Tor_1^{\\cO_X}(\\cO_Y,\\cO_Z)\\xrightarrow{\\sim}"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001489",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "§2.5 switches from the established ambient-first conormal notation `N_{X/Y}` to `N_{Y/X},N_{Z/X},N_{T/X}` while citing `(1.6.1)`; HOLD for convention reconciliation at lines10058–10074.",
+   "status": "rejected",
+   "why": "normalization of the conormal notation by inference (scan inconclusive per Codex)"
+  },
+  {
+   "id": "SGA-SRC-001490",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line10146 linked repair: ideal of `O_X` → ideal of `O_{X'}`, and `j:Y'\\to X` → `j:Y'\\to X'`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 437,
+     "old": "défini par un idéal de \\(\\cO_X\\), canoniquement",
+     "new": "défini par un idéal de \\(\\cO_{X'}\\), canoniquement"
+    },
+    {
+     "layer": "corrected",
+     "page": 437,
+     "old": "l'immersion \\(j:Y'\\to X\\) étant",
+     "new": "l'immersion \\(j:Y'\\to X'\\) étant"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001491",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line10192 `E=(A)^n` must be `E=(A)^d`, matching basis `f_1,...,f_d` and rank `d`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 438,
+     "old": "avec \\(E=(A)^n\\).",
+     "new": "avec \\(E=(A)^d\\)."
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001492",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line10199 replace the comma after the display before `Posons A'` by a period.",
+   "status": "rejected",
+   "why": "punctuation after a display"
+  },
+  {
+   "id": "SGA-SRC-001493",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "accepted",
+   "codex_claim": "line432 cites Grauert finiteness as [4], but bibliography [3] is Grauert and [4] Grothendieck/RRR: [4]→[3].",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 14,
+     "old": "de Grauert [4] pour un morphisme propre",
+     "new": "de Grauert [3] pour un morphisme propre"
+    }
+   ],
+   "note": "bibliography of Exp. 0: [3] Grauert, [4] RRR"
+  },
+  {
+   "id": "SGA-SRC-001494",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "accepted",
+   "codex_claim": "Line440 attributes generalizations to Shih [7], but [6] is Shih and [7] Atiyah–Hirzebruch: [7]→[6].",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 14,
+     "old": "Shih [7] et Atiyah",
+     "new": "Shih [6] et Atiyah"
+    }
+   ],
+   "note": "bibliography of Exp. 0: [6] Shih"
+  },
+  {
+   "id": "SGA-SRC-001495",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "accepted",
+   "codex_claim": "Line518 Picard results cited in [6] and [6,C-07(i)], but FGA with C-pages is [5], whereas [6] is Shih: both [6]→[5].",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 17,
+     "old": "dans [6]) est faite par Kleiman",
+     "new": "dans [5]) est faite par Kleiman"
+    },
+    {
+     "layer": "corrected",
+     "page": 17,
+     "old": "est [6, C-07",
+     "new": "est [5, C-07"
+    }
+   ],
+   "note": "bibliography of Exp. 0: [5] Grothendieck, FGA (C-07)"
+  },
+  {
+   "id": "SGA-SRC-001496",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "rejected",
+   "codex_claim": "Corpus alignment: line520 points to Exposé XI (determinant functor), but live fr.tex structurally jumps from X to XII and contains no Exposé XI unit.",
+   "status": "rejected",
+   "why": "rejected by Codex's canon (no correction)"
+  },
+  {
+   "id": "SGA-SRC-001497",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "accepted",
+   "codex_claim": "Editorial: 455 variantes...valable→valables",
+   "status": "rejected",
+   "why": "'valable' can agree with 'théorème'; not a certain slip"
+  },
+  {
+   "id": "SGA-SRC-001498",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "accepted",
+   "codex_claim": "505 rôles duals→duaux",
+   "status": "rejected",
+   "why": "'duals' is an attested plural of 'dual'"
+  },
+  {
+   "id": "SGA-SRC-001499",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "0",
+   "codex_status": "accepted",
+   "codex_claim": "518 compound subject ...occupe→occupent.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 17,
+     "old": "Picard) occupe l'expos",
+     "new": "Picard) occupent l'expos"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001500",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line10293 citation truncates at bare `(IV` immediately before four projective perfect pushforwards; likely `(IV 2.12)` (Spanish sisi).",
+   "status": "rejected",
+   "why": "the print breaks off at '(IV' (scan p. 440 checked); the completion '2.12' is not established"
+  },
+  {
+   "id": "SGA-SRC-001501",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "Line10460 computes v∘u(y) but ends `f^*(i_*(x))`; variable must y (sisi).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 445,
+     "old": "-f^*(i_*(x))=0,",
+     "new": "-f^*(i_*(y))=0,"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001502",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "Line10484 from j_*(y′)+f^*(x)=0 drops the minus and says j_*(y′)=f^*(x); must be `=-f^*(x)` for the next equality using x=-i_*(y) (sisi).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 446,
+     "old": "par hypothèse: \\(j_*(y')=f^*(x)\\),",
+     "new": "par hypothèse: \\(j_*(y')=-f^*(x)\\),"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001503",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "Line10499 triangle names N^bullet but prose says cohomology of N′; must N^bullet (sisi).",
+   "status": "present",
+   "note": "the scan-check layer already reads N^bullet"
+  },
+  {
+   "id": "SGA-SRC-001504",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11163 q∘i ill-typed; context requires q∘j.",
+   "status": "rejected",
+   "why": "q o i -> q o j not established from the passage"
+  },
+  {
+   "id": "SGA-SRC-001505",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11193 local ring of U_y “at y” should be at x.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 470,
+     "old": "l'anneau local de $U_y$ en $y$ est",
+     "new": "l'anneau local de $U_y$ en $x$ est"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001506",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11214 W undefined, displayed construction requires Z.",
+   "status": "rejected",
+   "why": "W -> Z not established from the passage"
+  },
+  {
+   "id": "SGA-SRC-001507",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11257–11263 diagram reverses `p`; definitions require `p:V'\\to V`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 474,
+     "old": "V \\arrow[r,\"p\"] \\arrow[dr] & V' \\arrow[d]",
+     "new": "V' \\arrow[r,\"p\"] \\arrow[dr] & V \\arrow[d]"
+    }
+   ],
+   "note": "p: V' -> V (Omega_{V'/V}); the print draws V -> V' (scan p. 474 checked)"
+  },
+  {
+   "id": "SGA-SRC-001508",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11193 capitalized `Module` → `module`.",
+   "status": "rejected",
+   "why": "capital 'Module' is the volume's convention (sheaves of modules)"
+  },
+  {
+   "id": "SGA-SRC-001509",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11216 missing conjunction",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 472,
+     "old": "un morphisme $g:Y'\\to Y$ un changement",
+     "new": "un morphisme et $g:Y'\\to Y$ un changement"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001510",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11222 ou→où.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 472,
+     "old": "au cas ou $f$ est une immersion fermée",
+     "new": "au cas où $f$ est une immersion fermée"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001511",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11321 `(1.5.1)` evidently `(2.1.1)`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 475,
+     "old": "$L^{X/Y}_1\\to L^{X/Y}_0$ l'homomorphisme (1.5.1).",
+     "new": "$L^{X/Y}_1\\to L^{X/Y}_0$ l'homomorphisme (2.1.1)."
+    }
+   ],
+   "note": "(2.1.1) is J/J^2 -> i^*Omega, defined just before"
+  },
+  {
+   "id": "SGA-SRC-001512",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11350 differential modules live on O_{V′}, not O_V.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 476,
+     "old": "localement libres sur $\\mathcal O_V$, on trouve",
+     "new": "localement libres sur $\\mathcal O_{V'}$, on trouve"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001513",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11362 Proposition 2.2 only assumes `f` alisable, so the claim that `i',j,j'` are all regular is unsupported; only section `j'` is automatic.",
+   "status": "rejected",
+   "why": "changes the statement ('les immersions i',j,j' sont régulières'); not a reading"
+  },
+  {
+   "id": "SGA-SRC-001514",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11366 `entrainera` → `entraînera`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 477,
+     "old": "; cela entrainera que le mapping",
+     "new": "; cela entraînera que le mapping"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001515",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11378 peut-être défini→peut être défini",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 478,
+     "old": "peut-être défini comme suit",
+     "new": "peut être défini comme suit"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001516",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11384/11386 capitalization",
+   "status": "rejected",
+   "why": "capital 'Idéal'/'Module' is the volume's convention"
+  },
+  {
+   "id": "SGA-SRC-001517",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "11397 malformed `cas respé / cas non respé`.",
+   "status": "rejected",
+   "why": "'respé': the typescript's abbreviation (see 1533)"
+  },
+  {
+   "id": "SGA-SRC-001518",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "line 10712. Printed/current TeX: `i_*\\bigl(\\gamma^p(N,y)\\bigr)\\equiv \\gamma^p(i'_*(y))`. Candidate minimal correction: remove only the prime, `i'_*` -> `i_*`. Evidence: Theorem 4.3 lines10566–10708 fixes only `i:Y->X` and proves `i_*(lambda^p(N,y)) ≡ lambda^p(i_*(y))`; Cor.4.4 explicitly says it fol",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 453,
+     "old": "\\equiv \\gamma^p(i'_*(y))",
+     "new": "\\equiv \\gamma^p(i_*(y))"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001519",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9227 orthographic: réprésentable→représentable.; L9229/L9345: grassmanienne→grassmannienne.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 394,
+     "old": "réprésentable par un",
+     "new": "représentable par un"
+    },
+    {
+     "layer": "corrected",
+     "page": 394,
+     "old": "=G_{r,n}(E)\\), grassmanienne de type",
+     "new": "=G_{r,n}(E)\\), grassmannienne de type"
+    },
+    {
+     "layer": "corrected",
+     "page": 399,
+     "old": "la grassmanienne de type \\((n,r-n)\\)",
+     "new": "la grassmannienne de type \\((n,r-n)\\)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001520",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9265, substantive/high: printed `\\sum_{i=1}^{n}c_i=\\prod_{j=1}^{k}(\\sum_{i=1}^{p_j}c_i^{(j)})` cannot encode the claimed n isobaric relations and omits constant terms/formal degree markers. Context strongly suggests equality of total elementary-symmetric polynomials (likely `1+\\sum c_it^i=\\prod_j(1",
+   "status": "rejected",
+   "why": "the print has the relation without 1+ (scan p. 395 checked); the correction (1+ or sums from i=0) is not determined; Codex marked it inference"
+  },
+  {
+   "id": "SGA-SRC-001521",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9293 high: `E ... localement de rang n`→`localement libre de rang n`; theorem requires E locally free and French is incomplete. Spanish apparatus inserts only `libre`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 397,
+     "old": "\\(\\mathcal O_S\\)-Module localement de rang \\(n\\)",
+     "new": "\\(\\mathcal O_S\\)-Module localement libre de rang \\(n\\)"
+    }
+   ],
+   "note": "print omits 'libre' (scan p. 397 checked)"
+  },
+  {
+   "id": "SGA-SRC-001522",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9400 proof-critical/high: after x=1−ξ^{-1}, x′=ξ−1=ξx and x≡x′ mod Fil², printed `\\bar x'=-\\bar x` contradicts the immediately preceding congruence. Correct only sign: `\\bar x'=\\bar x`. Spanish apparatus.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 402,
+     "old": "\\bar x'= -\\bar x",
+     "new": "\\bar x'= \\bar x"
+    }
+   ],
+   "note": "print '-x-bar' (scan p. 402 checked)"
+  },
+  {
+   "id": "SGA-SRC-001523",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9429 high: Proposition 5.3 says hypotheses/notations of 4.1, but all variables and the projective-bundle setup are those of 5.1. Correct 4.1→5.1. Spanish apparatus.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 403,
+     "old": "Avec les notations et les hypothèses de 4.1, on a",
+     "new": "Avec les notations et les hypothèses de 5.1, on a"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001524",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9511 and L9515 high: two `\\bar f` occurrences omit the subscript star; only `\\bar f_*` is defined at L9497 and used throughout. Correct both to `\\bar f_*`. Spanish apparatus.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 405,
+     "old": "\\bar f(\\lambda_t(F))=",
+     "new": "\\bar f_*(\\lambda_t(F))="
+    },
+    {
+     "layer": "corrected",
+     "page": 405,
+     "old": "Or $\\bar f(\\lambda_t(-\\xi))=",
+     "new": "Or $\\bar f_*(\\lambda_t(-\\xi))="
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001525",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9515 high: relation reference `(4.2.3)`→`(5.2.3)`; the displayed values of f_*(ξ^n) are exactly equation 5.2.3 at L9413–18. Spanish apparatus.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 405,
+     "old": "=\\sigma_{-t}(E)$ d'après (4.2.3).",
+     "new": "=\\sigma_{-t}(E)$ d'après (5.2.3)."
+    }
+   ],
+   "note": "no (4.2.3) in Exp. VI; (5.2.3) gives f_*(xi^n)"
+  },
+  {
+   "id": "SGA-SRC-001526",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9560 proof-critical/high: `E-r-1-x'=F-x'` is algebraically false. Since E=F+ξ and x′=ξ−1, the left side equals F−r, which also makes the next identity `γ^r(F-r)=λ^r(F-1)` coherent. Correct only `F-x'`→`F-r`. Spanish apparatus.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 407,
+     "old": "&=(-1)^r\\gamma^r(F-x')\\\\",
+     "new": "&=(-1)^r\\gamma^r(F-r)\\\\"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001527",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9195 grammar: `S est un quasi-compact`→`S est quasi-compact`; L9197 `somme de classe`→`somme de classes`; Spanish already idiomatic/evidence-only.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 391,
+     "old": "Comme \\(S\\) est un quasi-compact",
+     "new": "Comme \\(S\\) est quasi-compact"
+    },
+    {
+     "layer": "corrected",
+     "page": 392,
+     "old": "en somme de classe de",
+     "new": "en somme de classes de"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001528",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9179 substantive open: after reducing a preceding parameter n to n=1, the proof immediately uses X_1,…,X_n as complete-flag stages without rebinding n as rank(E), while E is only locally free finite type, not constant rank. Likely must first split S into finitely many clopen rank strata and bind a ",
+   "status": "rejected",
+   "why": "reconstruction by inference (inserted sentence, renamed indices), not a reading"
+  },
+  {
+   "id": "SGA-SRC-001529",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9352 grammar `F_1,F_2 leur classe`→`leurs classes`; L9354 punctuation `isomorphisme.~:`→`isomorphisme~:`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 400,
+     "old": "\\(F_1,F_2\\) leur classe dans",
+     "new": "\\(F_1,F_2\\) leurs classes dans"
+    },
+    {
+     "layer": "corrected",
+     "page": 400,
+     "old": "un isomorphisme.~:",
+     "new": "un isomorphisme~:"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001530",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "I",
+   "codex_status": "accepted",
+   "codex_claim": "L2702 high/type-forced: \\perfdim(F)\\subset[a,b] → \\perfamp(F)\\subset[a,b); numeric perfect dimension cannot be contained in an interval; Prop.4.17(ii)/Lemma4.16 require amplitude. (Please note likely closing bracket remains source [a,b], so exact corrected token is only \\perfdim→\\perfamp.)",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 129,
+     "old": "Comme on a \\(\\perfdim(F)\\subset[a,b]\\)",
+     "new": "Comme on a \\(\\perfamp(F)\\subset[a,b]\\)"
+    }
+   ],
+   "note": "the print has 'parf.dim' (IA text layer)"
+  },
+  {
+   "id": "SGA-SRC-001531",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "I",
+   "codex_status": "accepted",
+   "codex_claim": "L2715 high: ambient \\Dpx^*(\\mathcal C) → \\Dpx^*(\\mathcal C') for subcategory \\Dpx^*(\\mathcal C')_{\\mathcal C'_0-parf}.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 129,
+     "old": "est une sous-catégorie triangulée de \\(\\Dpx^*(\\mathcal C)\\) (4.10)",
+     "new": "est une sous-catégorie triangulée de \\(\\Dpx^*(\\mathcal C')\\) (4.10)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001532",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "I",
+   "codex_status": "accepted",
+   "codex_claim": "L2727/2733/2736/2742/2748 high systematic transcription loss: malformed `{}_A, S'_A` / `{}_A, S'` notation → `{}_{A'}\\mathcal S'_A` / `{}_{A'}\\mathcal S'`, matching defining 2.16 categories and earlier parallel apparatus.",
+   "status": "rejected",
+   "why": "the TeX's '{}_A, S'_A' is garbled, but Codex's '{}_{A'}\\mathcal S'_A' is a reconstruction not read on the scan (OCR of p. 129 unreadable); left to the scan check of p. 129"
+  },
+  {
+   "id": "SGA-SRC-001533",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L3569 orthographic corruption `respée` in “(1.1 (i) et (ii) respée)” → intended “respectivement”/standard resp. form.",
+   "status": "rejected",
+   "why": "the print reads 'respée' (scan p. 162 checked): the typescript's own abbreviation, repeated on pp. 168, 174, 183, 278, 479; not written out"
+  },
+  {
+   "id": "SGA-SRC-001534",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L3642 high/math: spectral sequence `E_2^{pq}=... \\Longrightarrow \\Ext^{n}(G,E)` uses unbound n; abutment must be `\\Ext^{p+q}(G,E)`. Spanish apparatus.",
+   "status": "rejected",
+   "why": "Ext^n with n = p+q is the usual notation for the abutment"
+  },
+  {
+   "id": "SGA-SRC-001535",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L3660 high/type: prose applies `Hom_{A(S)}(·,Γ_S(F))` while comparing Hom(F,G); must be `Γ_S(G)`. In diagram L3666, bottom-left `Hom_{A(S)}(F,G)` is ill-typed and must be `Hom_{A(S)}(Γ_S(F),Γ_S(G))`. Spanish apparatus.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 165,
+     "old": "\\operatorname{Hom}_{A(S)}(\\cdot,\\Gamma_S(F))",
+     "new": "\\operatorname{Hom}_{A(S)}(\\cdot,\\Gamma_S(G))"
+    }
+   ],
+   "note": "first part only; the diagram's Hom_{A(S)}(F,G) is an abuse of notation (rejected)"
+  },
+  {
+   "id": "SGA-SRC-001536",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L3745 typos: `conditions ... non respée` and `tous O_S-Module` → standard “non respectivement” and “tout O_S-Module”.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 168,
+     "old": "le fait que tous $\\mathcal O_S$-Module",
+     "new": "le fait que tout $\\mathcal O_S$-Module"
+    }
+   ],
+   "note": "'tous'->'tout' only; 'respée' kept (see 1533)"
+  },
+  {
+   "id": "SGA-SRC-001537",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L3818 high/notation: after Cartesian base change and diagram defining U′, printed `Y'=X'-U` must be `Y'=X'-U'`. Spanish apparatus.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 171,
+     "old": "où $Y'=X'-U$.",
+     "new": "où $Y'=X'-U'$."
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001538",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L3865 high/reference: `(1 1)`→`(1.1)`; same line has `non respée` and extra c)) punctuation.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 174,
+     "old": "(non respée) de (1 1)",
+     "new": "(non respée) de (1.1)"
+    },
+    {
+     "layer": "diplomatic",
+     "page": 174,
+     "old": "(non respée) de (1 1)",
+     "new": "(non respée) de (1.1)"
+    },
+    {
+     "layer": "corrected",
+     "page": 174,
+     "old": "les assertions c)) résultent",
+     "new": "les assertions c) résultent"
+    }
+   ],
+   "transcription_error": true,
+   "note": "(1 1)->(1.1) in both layers by the NOTE_6 convention (missing stop between digits: write it); 'respée' kept"
+  },
+  {
+   "id": "SGA-SRC-001539",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L3869 grammar: `Les foncteur canoniques`→`Les foncteurs canoniques`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 174,
+     "old": "Les foncteur canoniques",
+     "new": "Les foncteurs canoniques"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001540",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L3888 high/TeX: `F^i\\in\\Ob L(S))` has one unmatched final parenthesis; remove only the extra `)`. Spanish apparatus.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 175,
+     "old": "$F^i\\in\\Ob L(S))$ pour $i>m$",
+     "new": "$F^i\\in\\Ob L(S)$ pour $i>m$"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001541",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L3914 grammar: `à cohomologique bornée`→`à cohomologie bornée`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 176,
+     "old": "à cohomologique bornée",
+     "new": "à cohomologie bornée"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001542",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9586 plural agreement `La quasi-compacité ... et la commutation ... permet`→`permettent`; `d'éxistence`→`d'existence`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 408,
+     "old": "finies permet de se ramener",
+     "new": "finies permettent de se ramener"
+    },
+    {
+     "layer": "corrected",
+     "page": 408,
+     "old": "d'éxistence",
+     "new": "d'existence"
+    }
+   ],
+   "note": "print 'd'éxistence'"
+  },
+  {
+   "id": "SGA-SRC-001543",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9592 medium-high syntax/semantics: multiplying nilpotent `1-EL^{-n}` by invertible `L^n` gives `L^n-E`; phrase should be “ou encore son produit par L^n, L^n-E, est nilpotent”, not printed misordered “son produit L^n-E par L^n”.",
+   "status": "rejected",
+   "why": "rewording ('son produit L^n-E par L^n'), not a misprint"
+  },
+  {
+   "id": "SGA-SRC-001544",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9605 `c'ést-à-dire`→`c'est-à-dire`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 409,
+     "old": "c'ést-à-dire",
+     "new": "c'est-à-dire"
+    }
+   ],
+   "note": "print 'c'ést-à-dire' (IA text layer)"
+  },
+  {
+   "id": "SGA-SRC-001545",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9646 high/math: support filtration of a perfect complex must use all bounded cohomological degrees, `\\bigoplus_{i\\in\\mathbb Z}H^i`, not shift-dependent `i\\ge0`. Spanish apparatus.",
+   "status": "rejected",
+   "why": "changes the author's index range (i>=0 -> i in Z); not a certain misprint"
+  },
+  {
+   "id": "SGA-SRC-001546",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9656 high/ref: `filtration 5.5`→`filtration 6.5`.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 411,
+     "old": "La filtration 5.5 de $K'(X)$",
+     "new": "La filtration 6.5 de $K'(X)$"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001547",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9676 high/topology: `x'_i\\in\\{x_i\\}`→`x'_i\\in\\overline{\\{x_i\\}}`; chosen closed specialization need only lie in closure. Also “fans la famille”→“dans”.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 412,
+     "old": "tel que $x'_i\\in\\{x_i\\}$.",
+     "new": "tel que $x'_i\\in\\overline{\\{x_i\\}}$."
+    },
+    {
+     "layer": "corrected",
+     "page": 412,
+     "old": "fans la famille",
+     "new": "dans la famille"
+    }
+   ],
+   "note": "print 'fans' (scan p. 412 checked)"
+  },
+  {
+   "id": "SGA-SRC-001548",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9678/9680/9688/9690/9692 reuse fixed k (number of points/components) as twist multiplier; Spanish apparatus consistently rebinds multiplier q/q′. Please adjudicate exact French renaming.",
+   "status": "rejected",
+   "why": "renaming of the twist index k->q by inference, not a reading"
+  },
+  {
+   "id": "SGA-SRC-001549",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9716 high/math: product lower bound i=0→i=1; relative dimension r requires r factors for top basis element (empty product for r=0), while 0…r gives r+1 factors.",
+   "status": "rejected",
+   "why": "lower bound of the product not established from the passage"
+  },
+  {
+   "id": "SGA-SRC-001550",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "accepted",
+   "codex_claim": "L9727 bibliography: “Lectures notes”→“Lecture Notes”.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 415,
+     "old": "Lectures notes in Mathematics",
+     "new": "Lecture Notes in Mathematics"
+    }
+   ],
+   "note": "print 'Lectures notes'"
+  },
+  {
+   "id": "SGA-SRC-001551",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "fr.tex L4017: `R\\Gamma_S=` introduces a functor arrow and must be `R\\Gamma_S:`. High; punctuation/type syntax.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 181,
+     "old": "R\\Gamma_S=\\mathrm D^b(S)_{\\coh}",
+     "new": "R\\Gamma_S:\\mathrm D^b(S)_{\\coh}"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001552",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4020: the stated condition for amplitude in [m,n] prints `F^i=0 pour i\\in[m,n]`; it must be `i\\notin[m,n]`. Otherwise the complex vanishes inside rather than outside its amplitude. High.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 182,
+     "old": "$F^i=0$ pour $i\\in[m,n]$, $F^i\\in\\Ob\\Lib(S)$",
+     "new": "$F^i=0$ pour $i\\notin[m,n]$, $F^i\\in\\Ob\\Lib(S)$"
+    }
+   ],
+   "note": "print reads i in [m,n] (scan p. 182 checked)"
+  },
+  {
+   "id": "SGA-SRC-001553",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4042: `\\Loclib(S))` has one unmatched final `)`; delete it. High.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 183,
+     "old": "$E^m\\in\\Ob\\Loclib(S))$, d'où",
+     "new": "$E^m\\in\\Ob\\Loclib(S)$, d'où"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001554",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4052: under `\\Gamma_S`, the codomain/image categories print `\\mathrm D(S)` and `\\mathrm D(S)_{\\parf}`; they must be `\\mathrm D(A)` and `\\mathrm D(A)_{\\parf}`, as in the surrounding affine equivalence. High.",
+   "status": "rejected",
+   "why": "the first D(S)_parf is right (image of K^b(Loclib(S)) -> D(S)); the second sentence is not a certain slip"
+  },
+  {
+   "id": "SGA-SRC-001555",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4099: in the proof concerning the open V, the restriction prints `|U`; it must be `|V`. High.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 185,
+     "old": "}|U=0$ pour $n$ assez grand",
+     "new": "}|V=0$ pour $n$ assez grand"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001556",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4105: after choosing x in X and an ideal defining X in Y, the conclusion prints “Y est de codimension >0 en x”; it must be X. High.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 186,
+     "old": "Donc $Y$ est de codimension $>0$ en $x$",
+     "new": "Donc $X$ est de codimension $>0$ en $x$"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001557",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4217: the quotient in the lifted resolution prints `QE^n/E^n`, but the immediately defined lifted complex is E' and the subsequent map is from `QE'{}^n`; correct to `QE'{}^n/E'{}^n`. High.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 190,
+     "old": "on a $QE^n\\xrightarrow{\\sim} E^n$ pour",
+     "new": "on a $QE'{}^n\\xrightarrow{\\sim} E'{}^n$ pour"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001558",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4382: `H_2^A(\\mathbf f^n,A\\simeq (\\mathbf f^n)^M` lacks the closing parenthesis of the first argument; insert only `)` after A. High.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 196,
+     "old": "H_2^A(\\mathbf f^n,A\\simeq",
+     "new": "H_2^A(\\mathbf f^n,A)\\simeq"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001559",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4386: `H^2_Y(X,I)\\simeq H^1(U,I)` uses the A-module I where the sheaf cohomology sequence requires the associated sheaf `\\widetilde I`; both the immediately preceding and following sentences explicitly use `\\widetilde I`. Correct both I occurrences to `\\widetilde I`. High.",
+   "status": "rejected",
+   "why": "I for its associated sheaf is an abuse of notation, not a misprint"
+  },
+  {
+   "id": "SGA-SRC-001560",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "fr.tex L4425: `R\\Hom_{\\Qcoh}(j_1^*E,I)` must use the associated quasi-coherent sheaf `\\widetilde I`. The same displayed chain has `\\widetilde I` in the preceding and following terms, and I itself was defined as an A-module. High.",
+   "status": "rejected",
+   "why": "I for its associated sheaf is an abuse of notation, not a misprint"
+  },
+  {
+   "id": "SGA-SRC-001561",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4515: French typo `où faisceau cotangent relatif` → `ou faisceau cotangent relatif`. High/language-only; Spanish already idiomatic.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 201,
+     "old": "par rapport à $S$ où \\emph{faisceau cotangent relatif}",
+     "new": "par rapport à $S$ ou \\emph{faisceau cotangent relatif}"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001562",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4528: a differential operator relative to `f:X→S` is printed `f^{-1}(\\cO_X)`-linear. This is ill-typed; it must be `f^{-1}(\\cO_S)`-linear, as correctly stated in L4517 and in the complex-coefficient definition L4536. High.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 201,
+     "old": "homomorphisme $f^{-1}(\\cO_X)$-linéaire de $E$",
+     "new": "homomorphisme $f^{-1}(\\cO_S)$-linéaire de $E$"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001563",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4557: after applying Hom to (1.2.4.1), the two identifications are cited as (1.2.2.1) and (1.2.4.1). The second must be (1.2.3.1), the immediately preceding complex-coefficient identification; citing the exact sequence itself twice does not yield the resp. identification. High.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 202,
+     "old": "identifications (1.2.2.1) et (1.2.4.1), une suite exacte",
+     "new": "identifications (1.2.2.1) et (1.2.3.1), une suite exacte"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001564",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4628: the proof begins `Soit X' un voisinage ouvert de x` but x is never quantified. Minimal repair: insert `Soit x\\in X_s` before choosing X'. High syntactic/proof-localization omission.",
+   "status": "rejected",
+   "why": "editorial insertion ('Soit x in X_s'), not a reading"
+  },
+  {
+   "id": "SGA-SRC-001565",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4855–4856: `φ_r u` maps `C_2^r(V,E)→C_2^{r-n}(V,F)`, but the induced pre-sheaf morphism is printed with target `C_2^r(V,F)`. Correct only its target exponent to `r-n`. High/type-forced.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 214,
+     "old": "\\underline C'(S,C^r_2(V,F)).",
+     "new": "\\underline C'(S,C^{r-n}_2(V,F))."
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001566",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "II",
+   "codex_status": "accepted",
+   "codex_claim": "L4950: after defining `H` and `I(H)`, the relation is asked between `[S,I(S)]` and `K^•(S)`; `I(S)` is undefined. Correct to `[S,I(H)]`, matching the same sentence’s preceding occurrence. High.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 219,
+     "old": "les groupes $[S,I(S)]$ et",
+     "new": "les groupes $[S,I(H)]$ et"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001567",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Lines 5032–5040, HIGH: the proof announces descending induction on m, but then reverts throughout the induction step to n: (n+1)-pseudocoherent, E''^i=0 for i>n, n-pseudocoherent, H^n. Those occurrences must consistently be m+1, >m, m-pseudocoherent, H^m. Otherwise there is no induction variable.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 223,
+     "old": "On peut supposer déjà prouvé que \\(E\\) est \\((n+1)\\)-pseudo-cohérent.",
+     "new": "On peut supposer déjà prouvé que \\(E\\) est \\((m+1)\\)-pseudo-cohérent."
+    },
+    {
+     "layer": "corrected",
+     "page": 223,
+     "old": "\\(E''^i=0\\) pour \\(i>n\\). D'après",
+     "new": "\\(E''^i=0\\) pour \\(i>m\\). D'après"
+    },
+    {
+     "layer": "corrected",
+     "page": 223,
+     "old": "on est ramené à montrer que \\(E''\\) est \\(n\\)-pseudo-cohérent.",
+     "new": "on est ramené à montrer que \\(E''\\) est \\(m\\)-pseudo-cohérent."
+    },
+    {
+     "layer": "corrected",
+     "page": 223,
+     "old": "\\(i_*(E'')\\) est \\(n\\)-pseudo-cohérent. Comme \\(i_*(E'')\\) est nul en degré \\(>n\\),",
+     "new": "\\(i_*(E'')\\) est \\(m\\)-pseudo-cohérent. Comme \\(i_*(E'')\\) est nul en degré \\(>m\\),"
+    },
+    {
+     "layer": "corrected",
+     "page": 223,
+     "old": "que \\(H^n(i_*(E'')\\) est de type fini. Comme \\(H^n(i_*(E''))\\xrightarrow{\\sim}i_*H^n(E'')\\),",
+     "new": "que \\(H^m(i_*(E'')\\) est de type fini. Comme \\(H^m(i_*(E''))\\xrightarrow{\\sim}i_*H^m(E'')\\),"
+    }
+   ],
+   "note": "descending induction on m: the step must use m throughout"
+  },
+  {
+   "id": "SGA-SRC-001568",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Lines 5044–5057, HIGH structural: Lemma 1.1.3 has a second part explicitly numbered “(ii)” but the base-change assertion preceding it lacks “(i)”. Insert only the missing (i) before the first assertion.",
+   "status": "rejected",
+   "why": "editorial insertion of '(i)'; the print has none"
+  },
+  {
+   "id": "SGA-SRC-001569",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Line 5042, orthographic: “complexe de Kozsul” -> “complexe de Koszul”.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 224,
+     "old": "complexe de Kozsul",
+     "new": "complexe de Koszul"
+    }
+   ],
+   "note": "print 'Kozsul' (IA text layer)"
+  },
+  {
+   "id": "SGA-SRC-001570",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Line 5072, HIGH: equivalence ends “i''_* n-pseudo-cohérent” with no argument. It must be i''_*(E), parallel to i'_*(E).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 225,
+     "old": "i''_*\\ n\\text{-pseudo-cohérent}",
+     "new": "i''_*(E)\\ n\\text{-pseudo-cohérent}"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001571",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Line 5103, HIGH: in the factorization diagram the closed immersion X'->Y' is labelled i'', but the immediately established notation and ensuing proof use i'; change label i'' -> i'.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 226,
+     "old": "X' \\arrow[r,\"i''\"]",
+     "new": "X' \\arrow[r,\"i'\"]"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001572",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Line 5280, HIGH: commutative triangle has arrows f:X->Y, g:Y->Z, and the diagonal X->Z is printed f again; statement/proof bind the composite as h. Change only diagonal label f -> h.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 234,
+     "old": "X \\arrow[r,\"f\"] \\arrow[dr,\"f\"']",
+     "new": "X \\arrow[r,\"f\"] \\arrow[dr,\"h\"']"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001573",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Line 5307, HIGH: proof of 1.11(b) assumes f_*(E) is a-pseudocoherent and concludes f_*(E) is a-pseudocoherent, making it tautological. The hypothesis from (b), after the closed-immersion reduction, is h_*(E) a-pseudocoherent; change the first f_*(E) in the premise to h_*(E), leaving the conclusion f",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 235,
+     "old": "l'assertion suivante : supposons \\(f_*(E)\\) \\(a\\)-pseudo-cohérent",
+     "new": "l'assertion suivante : supposons \\(h_*(E)\\) \\(a\\)-pseudo-cohérent"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001574",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Line 5376, HIGH: conclusion reads R^q f_*(E)=0 for i>a+r; i is the wrong/unbound degree there. Change i -> q.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 238,
+     "old": "\\(R^qf_*(E)=0\\) pour \\(i>a+r\\)",
+     "new": "\\(R^qf_*(E)=0\\) pour \\(q>a+r\\)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001575",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Line 5396, HIGH: Cor. 2.3 assumes acyclicity in degree >a and claims the same condition after pushforward; its reduction incorrectly says E acyclic in degree >=a. Change >=a -> >a.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 240,
+     "old": "acyclique en degré \\(\\geq a\\), et l'on gagne",
+     "new": "acyclique en degré \\(>a\\), et l'on gagne"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001576",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Line 5410, HIGH cross-reference: proof of Cor. 2.5 says it is a consequence of (2.2), (2.5), (1.12), circularly citing itself. The boundedness ingredient is Cor. 2.4; change the middle reference (2.5) -> (2.4).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 241,
+     "old": "Conséquence de (2.2), (2.5) et (1.12).",
+     "new": "Conséquence de (2.2), (2.4) et (1.12)."
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001577",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Line 5684, HIGH/type error: after defining g_alpha:X->X_alpha and g_alpha^*(F_alpha)≅F, the next sentence prints g_alpha^*(F)≅F_alpha⊗^L_{Y_alpha}O_Y. F lives on X and cannot be pulled back by g_alpha. Change only the left side to g_alpha^*(F_alpha).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 252,
+     "old": "on a \\(g_\\alpha^*(F)\\xrightarrow{\\sim}F_\\alpha\\otimes",
+     "new": "on a \\(g_\\alpha^*(F_\\alpha)\\xrightarrow{\\sim}F_\\alpha\\otimes"
+    }
+   ],
+   "note": "only the left side, as the record says; Codex's patch in sga6_fr_r1 also replaced the right side by F, which is wrong (F lives on X)"
+  },
+  {
+   "id": "SGA-SRC-001578",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Line 5703, HIGH malformed formula: parfamp(i_*(E) lacks its closing parenthesis before \\subset. Insert one ).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 253,
+     "old": "\\(\\parfamp(i_*(E)\\subset[a,b]\\Longrightarrow",
+     "new": "\\(\\parfamp(i_*(E))\\subset[a,b]\\Longrightarrow"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001579",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Line 5768, typographic reference: “d'après 4.3)” -> “d'après (4.3)”.",
+   "status": "rejected",
+   "why": "the scan-check text reads 'Elle entraîne aussi. d'après 4.3),': a transcription defect around the parenthesis (probably '(d'après 4.3)'), left to the scan check of p. 255"
+  },
+  {
+   "id": "SGA-SRC-001580",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Line 5774, HIGH/type locator: E is a complex on X and the truncation is asserted locally near x; “au voisinage de s” uses a point of S as if it were a point of X. Change s -> x.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 255,
+     "old": "au voisinage de \\(s\\), acyclique",
+     "new": "au voisinage de \\(x\\), acyclique"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001581",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Line 5424 citation candidate, MEDIUM/open: “(SGA 4 XVII IV 6.4)” contains two Exposé numerals. Please scan/adjudicate whether the intended enough-points reference is SGA 4 IV 6.4 or XVII 6.4; Spanish preserves it unchanged pending evidence.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 242,
+     "old": "(SGA 4 XVII IV 6.4)",
+     "new": "(SGA 4 IV 6.4)"
+    }
+   ],
+   "note": "diplomatic: not individually verified against the scan"
+  },
+  {
+   "id": "SGA-SRC-001582",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "5916 b'))→b') (unmatched close).",
+   "status": "rejected",
+   "why": "the parentheses of 'a) (resp. a'), b), b'))' are balanced; not an error"
+  },
+  {
+   "id": "SGA-SRC-001583",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "5996 rep.→resp.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 267,
+     "old": "semi-continue inférieurement, rep. localement",
+     "new": "semi-continue inférieurement, resp. localement"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001584",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "6034 \\(Z'^p(E)\\))→\\(Z'^p(E)\\); also localement libre→localement libres for plural subject.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 269,
+     "old": "\\(Z'^p(E)\\)) sont plats",
+     "new": "\\(Z'^p(E)\\) sont plats"
+    },
+    {
+     "layer": "corrected",
+     "page": 269,
+     "old": "donc (I 5.8.3) localement libre de type fini",
+     "new": "donc (I 5.8.3) localement libres de type fini"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001585",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "6048 rg_{k(x)} H^p(E⊗^L_X k(y))→rg_{k(y)} (scalar field forced).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 270,
+     "old": "y\\mapsto\\operatorname{rg}_{k(x)}H^p(E",
+     "new": "y\\mapsto\\operatorname{rg}_{k(y)}H^p(E"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001586",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "6073 malformed \"(cf. (EGA III 6 et (IV 3.1.0)\"→\"(cf. EGA III 6 et IV 3.1.0)\".",
+   "status": "rejected",
+   "why": "unbalanced parentheses '(cf. (EGA III 6 et (IV 3.1.0)': the intended reading is not certain (Codex removes them); left to the scan check of p. 272"
+  },
+  {
+   "id": "SGA-SRC-001587",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "6078 oadre→cadre.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 273,
+     "old": "dans ce oadre que",
+     "new": "dans ce cadre que"
+    },
+    {
+     "layer": "diplomatic",
+     "page": 273,
+     "old": "dans ce oadre que",
+     "new": "dans ce cadre que"
+    }
+   ],
+   "transcription_error": true,
+   "note": "transcription error: the print reads 'cadre' (IA text layer)"
+  },
+  {
+   "id": "SGA-SRC-001588",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "6080 delete unmatched final ) in Rf_*(E)⊗^L M).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 273,
+     "old": "Rf_*(E)\\otimes^{\\mathbf L}M)\\longrightarrow Rf_*(E\\otimes_Y",
+     "new": "Rf_*(E)\\otimes^{\\mathbf L}M\\longrightarrow Rf_*(E\\otimes_Y"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001589",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "6082 isomorphime→isomorphisme.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 273,
+     "old": "est un isomorphime (l'hypothèse",
+     "new": "est un isomorphisme (l'hypothèse"
+    }
+   ],
+   "note": "print 'isomorphime'"
+  },
+  {
+   "id": "SGA-SRC-001590",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IV",
+   "codex_status": "accepted",
+   "codex_claim": "6203 \"cas non respé\"→\"cas non resp.\"",
+   "status": "rejected",
+   "why": "'respé': the typescript's abbreviation (see 1533)"
+  },
+  {
+   "id": "SGA-SRC-001591",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IV",
+   "codex_status": "accepted",
+   "codex_claim": "6349 swap refs: (2.6.2) (resp. (2.6.5))→(2.6.5) (resp. (2.6.2)); derived K' is 2.6.5, naïve branch 2.6.2.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 283,
+     "old": "dans (2.6.2) (resp. (2.6.5)).",
+     "new": "dans (2.6.5) (resp. (2.6.2))."
+    }
+   ],
+   "note": "(2.7.1) is the derived product (2.6.5), (2.7.2) the naive one (2.6.2)"
+  },
+  {
+   "id": "SGA-SRC-001592",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IV",
+   "codex_status": "accepted",
+   "codex_claim": "6402 Deligne [5]→Deligne [1]; bibliography has Deligne at [1], no [5].",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 285,
+     "old": "Deligne [5] a prouvé",
+     "new": "Deligne [1] a prouvé"
+    }
+   ],
+   "note": "bibliography of Exp. IV: [1] Deligne"
+  },
+  {
+   "id": "SGA-SRC-001593",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IV",
+   "codex_status": "accepted",
+   "codex_claim": "6468 f^*(ay)=a f^*(y)→f^*(ay)=f^*(a)f^*(y).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 288,
+     "old": "f^*(ay)=a f^*(y).",
+     "new": "f^*(ay)=f^*(a)f^*(y)."
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001594",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IV",
+   "codex_status": "accepted",
+   "codex_claim": "6479 close missing parenthesis after K'(Y).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 289,
+     "old": "(resp. \\(K'(Y)\\) et \\(x\\in K'(X)\\)",
+     "new": "(resp. \\(K'(Y)\\)) et \\(x\\in K'(X)\\)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001595",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IV",
+   "codex_status": "accepted",
+   "codex_claim": "6555 homomorphisme canonique→morphisme canonique for scheme map f_i:X→X_i.",
+   "status": "rejected",
+   "why": "'homomorphisme canonique' for a morphism of schemes is the author's wording"
+  },
+  {
+   "id": "SGA-SRC-001596",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IV",
+   "codex_status": "accepted",
+   "codex_claim": "6576 tag 3.2.2.1→3.2.3.1; duplicate otherwise.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 293,
+     "old": "\\tag{3.2.2.1}\n \\varinjlim_i K_{\\bullet}(X_i)",
+     "new": "\\tag{3.2.3.1} \\varinjlim_i K_{\\bullet}(X_i)"
+    }
+   ],
+   "note": "the isomorphism of 3.2.3 repeats the number of 3.2.2"
+  },
+  {
+   "id": "SGA-SRC-001597",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IV",
+   "codex_status": "accepted",
+   "codex_claim": "6581 two refs (3.2.2.1)→(3.2.3.1).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 293,
+     "old": "via les isomorphismes (3.2.1.1) et (3.2.2.1) avec",
+     "new": "via les isomorphismes (3.2.1.1) et (3.2.3.1) avec"
+    },
+    {
+     "layer": "corrected",
+     "page": 293,
+     "old": "définies par (3.2.1.1) et (3.2.2.1)~:",
+     "new": "définies par (3.2.1.1) et (3.2.3.1)~:"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001598",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IV",
+   "codex_status": "accepted",
+   "codex_claim": "6612 de morphisme→de morphismes.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 294,
+     "old": "triangle commutatif de morphisme localement de type fini",
+     "new": "triangle commutatif de morphismes localement de type fini"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001599",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "IV",
+   "codex_status": "accepted",
+   "codex_claim": "6651 domain K_bullet(X)→K_bullet(X/S); coefficient a∈K_bullet(S)→a∈K'(S), forced by relative pushforward/projection formula.",
+   "status": "rejected",
+   "why": "the exchange of K'(S)/K_bullet(S) and K'(X/S)/K_bullet(X/S) is not established from the passage"
+  },
+  {
+   "id": "SGA-SRC-001600",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "6883–6898 repair internally forced notation family: formal-series inputs X_1,X_2,X→χ_1,χ_2,χ; f_X,f'_X→f_χ,f'_χ; coefficient refs X_1,X_2→χ_1,χ_2; Φ(X_1)→Φ(χ_1). The proof already prints Φ(χ), f_χ, f'_χ; X_i are universal polynomial variables.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 304,
+     "old": "Soient donc \\(X_1,X_2\\) deux éléments",
+     "new": "Soient donc \\(\\chi_1,\\chi_2\\) deux éléments"
+    },
+    {
+     "layer": "diplomatic",
+     "page": 304,
+     "old": "Soient donc \\(X_1,X_2\\) deux éléments",
+     "new": "Soient donc \\(\\chi_1,\\chi_2\\) deux éléments"
+    },
+    {
+     "layer": "corrected",
+     "page": 304,
+     "old": "et \\(X\\) leur produit",
+     "new": "et \\(\\chi\\) leur produit"
+    },
+    {
+     "layer": "diplomatic",
+     "page": 304,
+     "old": "et \\(X\\) leur produit",
+     "new": "et \\(\\chi\\) leur produit"
+    },
+    {
+     "layer": "corrected",
+     "page": 304,
+     "old": "\\arrow[rr,\"f_X\"]",
+     "new": "\\arrow[rr,\"f_\\chi\"]"
+    },
+    {
+     "layer": "diplomatic",
+     "page": 304,
+     "old": "\\arrow[rr,\"f_X\"]",
+     "new": "\\arrow[rr,\"f_\\chi\"]"
+    },
+    {
+     "layer": "corrected",
+     "page": 304,
+     "old": "\\arrow[urr,\"f'_X\"']",
+     "new": "\\arrow[urr,\"f'_\\chi\"']"
+    },
+    {
+     "layer": "diplomatic",
+     "page": 304,
+     "old": "\\arrow[urr,\"f'_X\"']",
+     "new": "\\arrow[urr,\"f'_\\chi\"']"
+    },
+    {
+     "layer": "corrected",
+     "page": 305,
+     "old": "coefficient de \\(X_1\\) (resp. \\(X_2\\))",
+     "new": "coefficient de \\(\\chi_1\\) (resp. \\(\\chi_2\\))"
+    },
+    {
+     "layer": "diplomatic",
+     "page": 305,
+     "old": "coefficient de \\(X_1\\) (resp. \\(X_2\\))",
+     "new": "coefficient de \\(\\chi_1\\) (resp. \\(\\chi_2\\))"
+    },
+    {
+     "layer": "corrected",
+     "page": 305,
+     "old": "\\Phi(X_1)\n&=",
+     "new": "\\Phi(\\chi_1) &="
+    },
+    {
+     "layer": "diplomatic",
+     "page": 305,
+     "old": "\\Phi(X_1)\n&=",
+     "new": "\\Phi(\\chi_1) &="
+    },
+    {
+     "layer": "corrected",
+     "page": 305,
+     "old": "(\\text{resp. }X_2,\\ i=n+1",
+     "new": "(\\text{resp. }\\chi_2,\\ i=n+1"
+    },
+    {
+     "layer": "diplomatic",
+     "page": 305,
+     "old": "(\\text{resp. }X_2,\\ i=n+1",
+     "new": "(\\text{resp. }\\chi_2,\\ i=n+1"
+    }
+   ],
+   "transcription_error": true,
+   "note": "transcription error: the print writes the handwritten chi (scan pp. 304-305 checked), as in Phi(chi), f_chi"
+  },
+  {
+   "id": "SGA-SRC-001601",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "7417 v→∇ (definition and all later uses).",
+   "status": "rejected",
+   "why": "the print reads 'notée v' (scan p. 326 checked); nabla is a guess"
+  },
+  {
+   "id": "SGA-SRC-001602",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "7725 x·_N y→x·_N x' (y unbound).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 341,
+     "old": "nx'+n'x+x\\cdot_N y)",
+     "new": "nx'+n'x+x\\cdot_N x')"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001603",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "7835 (1.1)→(1,1), unit pair of K×(1+Â+).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 345,
+     "old": "admet (1.1) pour l'élément unité",
+     "new": "admet (1,1) pour l'élément unité"
+    }
+   ],
+   "note": "print '(1.1)' (scan p. 345 checked)"
+  },
+  {
+   "id": "SGA-SRC-001604",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "8004 sum i=1..n→i=0..n in λ_{-1}, includes λ^0=1.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 351,
+     "old": "\\sum_{i=1}^n(-1)^i\\lambda^i(x)=\\lambda_{-1}(x)",
+     "new": "\\sum_{i=0}^n(-1)^i\\lambda^i(x)=\\lambda_{-1}(x)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001605",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "8065 completed Chern class c→\\widetilde c; also remove comma separating subject from est.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 353,
+     "old": "complétée \\(c:A\\longrightarrow\\Ch(\\Gr A)\\)",
+     "new": "complétée \\(\\widetilde c:A\\longrightarrow\\Ch(\\Gr A)\\)"
+    }
+   ],
+   "note": "print 'c' (scan p. 353 checked; c-tilde defined in 6.7.2); the comma before 'est' kept"
+  },
+  {
+   "id": "SGA-SRC-001606",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "8146 z_{α,j}→x_{α,j}; all expansion/augmentation/universal/specialization uses x.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 355,
+     "old": "des éléments \\(z_{\\alpha,j}\\) \\(R\\)",
+     "new": "des éléments \\(x_{\\alpha,j}\\in R\\)"
+    }
+   ],
+   "note": "print 'z_{alpha,j} R' (scan p. 355 checked)"
+  },
+  {
+   "id": "SGA-SRC-001607",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "8184 X_0 maps to X→X_0 maps to x (x bound; X unbound).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 356,
+     "old": "et \\(X_0\\) sur \\(X\\), d'où",
+     "new": "et \\(X_0\\) sur \\(x\\), d'où"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001608",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "8198 i>1→i≥1 (map needed degree1; inverse defined all i≥1).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 357,
+     "old": "\\forall\\, i>1,\\quad\\forall\\, a_i",
+     "new": "\\forall\\, i\\ge1,\\quad\\forall\\, a_i"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001609",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "8206 and 8305 delete unmatched ) in Ch(Gr Λ)).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 357,
+     "old": "\\(\\Lambda\\to\\Ch(\\Gr\\Lambda))\\)",
+     "new": "\\(\\Lambda\\to\\Ch(\\Gr\\Lambda)\\)"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001610",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "8256 add missing ) in R_{k,a}(c^i(x)).",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 358,
+     "old": "c^k(ax)=R_{k,a}(c^i(x)\n \\quad",
+     "new": "c^k(ax)=R_{k,a}(c^i(x)) \\quad"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001611",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "6759 permier→premier",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 300,
+     "old": "d'identifier le permier à",
+     "new": "d'identifier le premier à"
+    }
+   ],
+   "note": "print 'permier'"
+  },
+  {
+   "id": "SGA-SRC-001612",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "6891 le j-ième fonction→la j-ième fonction",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 305,
+     "old": "sur le \\(j\\)-ième fonction",
+     "new": "sur la \\(j\\)-ième fonction"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001613",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "7721 \"opérations ... définie\"→définies",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 341,
+     "old": "Ses opérations sont donc définie par",
+     "new": "Ses opérations sont donc définies par"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001614",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "7828 \"lois ... définie\"→définies",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 345,
+     "old": "muni des lois de composition définie par",
+     "new": "muni des lois de composition définies par"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001615",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "8206 graudés→gradués.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 357,
+     "old": "aux graudés associés",
+     "new": "aux gradués associés"
+    }
+   ]
+  },
+  {
+   "id": "SGA-SRC-001616",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "12524 C_X→O_X; F is a coherent structural-module and C_X undefined.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 523,
+     "old": "$F$ un $\\mathcal C_X$-module cohérent",
+     "new": "$F$ un $\\mathcal O_X$-module cohérent"
+    },
+    {
+     "layer": "diplomatic",
+     "page": 523,
+     "old": "$F$ un $\\mathcal C_X$-module cohérent",
+     "new": "$F$ un $\\mathcal O_X$-module cohérent"
+    }
+   ],
+   "transcription_error": true,
+   "note": "transcription error: the print has the underlined O (scan p. 523 checked)"
+  },
+  {
+   "id": "SGA-SRC-001617",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "12678 dans Z→dans X; X is glued ambient scheme, Z undefined. Same line biéquidimensionne→biéquidimensionnel.",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 530,
+     "old": "biéquidimensionne (EGA",
+     "new": "biéquidimensionnel (EGA"
+    },
+    {
+     "layer": "corrected",
+     "page": 530,
+     "old": "et alors dans $Z$, $Y_1\\cap",
+     "new": "et alors dans $X$, $Y_1\\cap"
+    }
+   ],
+   "note": "print 'biéquidimensionne'"
+  },
+  {
+   "id": "SGA-SRC-001469",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001469"
+  },
+  {
+   "id": "SGA-SRC-001470",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001470"
+  },
+  {
+   "id": "SGA-SRC-001471",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001471"
+  },
+  {
+   "id": "SGA-SRC-001475",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "superseded",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001475"
+  },
+  {
+   "id": "SGA-SRC-001581",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001581"
+  },
+  {
+   "id": "SGA-SRC-001528",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001528"
+  },
+  {
+   "id": "SGA-SRC-001520",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001520"
+  },
+  {
+   "id": "SGA-SRC-001543",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001543"
+  },
+  {
+   "id": "SGA-SRC-001548",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001548"
+  },
+  {
+   "id": "SGA-SRC-001489",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001489"
+  },
+  {
+   "id": "SGA-SRC-001500",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001500"
+  },
+  {
+   "id": "SGA-SRC-001509",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001509"
+  },
+  {
+   "id": "SGA-SRC-001513",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001513"
+  },
+  {
+   "id": "SGA-SRC-001466",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001466"
+  },
+  {
+   "id": "SGA-SRC-001616",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001616"
+  },
+  {
+   "id": "SGA-SRC-001330",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001330"
+  },
+  {
+   "id": "SGA-SRC-001331",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001331"
+  },
+  {
+   "id": "SGA-SRC-001332",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001332"
+  },
+  {
+   "id": "SGA-SRC-001335",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001335"
+  },
+  {
+   "id": "SGA-SRC-001336",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001336"
+  },
+  {
+   "id": "SGA-SRC-001337",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001337"
+  },
+  {
+   "id": "SGA-SRC-001340",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001340"
+  },
+  {
+   "id": "SGA-SRC-001344",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001344"
+  },
+  {
+   "id": "SGA-SRC-001349",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001349"
+  },
+  {
+   "id": "SGA-SRC-001348",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001348"
+  },
+  {
+   "id": "SGA-SRC-001350",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001350"
+  },
+  {
+   "id": "SGA-SRC-001351",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001351"
+  },
+  {
+   "id": "SGA-SRC-001374",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001374"
+  },
+  {
+   "id": "SGA-SRC-001375",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001375"
+  },
+  {
+   "id": "SGA-SRC-001376",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001376"
+  },
+  {
+   "id": "SGA-SRC-001377",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001377"
+  },
+  {
+   "id": "SGA-SRC-001390",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001390"
+  },
+  {
+   "id": "SGA-SRC-001379",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001379"
+  },
+  {
+   "id": "SGA-SRC-001353",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the correction; the surrounding text differs (Exp. XIV lineage, or comment lines)",
+   "note": "decision as the queue record SGA-SRC-001353"
+  },
+  {
+   "id": "SGA-SRC-001354",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the correction; the surrounding text differs (Exp. XIV lineage, or comment lines)",
+   "note": "decision as the queue record SGA-SRC-001354"
+  },
+  {
+   "id": "SGA-SRC-001357",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001357"
+  },
+  {
+   "id": "SGA-SRC-001358",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001358"
+  },
+  {
+   "id": "SGA-SRC-001360",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001360"
+  },
+  {
+   "id": "SGA-SRC-001363",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001363"
+  },
+  {
+   "id": "SGA-SRC-001365",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001365"
+  },
+  {
+   "id": "SGA-SRC-001315",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001315"
+  },
+  {
+   "id": "SGA-SRC-001406",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001406"
+  },
+  {
+   "id": "SGA-SRC-001407",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001407"
+  },
+  {
+   "id": "SGA-SRC-001408",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001408"
+  },
+  {
+   "id": "SGA-SRC-001410",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001410"
+  },
+  {
+   "id": "SGA-SRC-001411",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001411"
+  },
+  {
+   "id": "SGA-SRC-001412",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001412"
+  },
+  {
+   "id": "SGA-SRC-001413",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001413"
+  },
+  {
+   "id": "SGA-SRC-001425",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001425"
+  },
+  {
+   "id": "SGA-SRC-001426",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001426"
+  },
+  {
+   "id": "SGA-SRC-001427",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001427"
+  },
+  {
+   "id": "SGA-SRC-001428",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001428"
+  },
+  {
+   "id": "SGA-SRC-001430",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001430"
+  },
+  {
+   "id": "SGA-SRC-001431",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001431"
+  },
+  {
+   "id": "SGA-SRC-001432",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001432"
+  },
+  {
+   "id": "SGA-SRC-001433",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001433"
+  },
+  {
+   "id": "SGA-SRC-001414",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001414"
+  },
+  {
+   "id": "SGA-SRC-001437",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the correction; the surrounding text differs (Exp. XIV lineage, or comment lines)",
+   "note": "decision as the queue record SGA-SRC-001437"
+  },
+  {
+   "id": "SGA-SRC-001438",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001438"
+  },
+  {
+   "id": "SGA-SRC-001442",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001442"
+  },
+  {
+   "id": "SGA-SRC-001441",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001441"
+  },
+  {
+   "id": "SGA-SRC-001447",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001447"
+  },
+  {
+   "id": "SGA-SRC-001404",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "present",
+   "trees": "both trees carry the correction; the surrounding text differs (Exp. XIV lineage, or comment lines)",
+   "note": "decision as the queue record SGA-SRC-001404"
+  },
+  {
+   "id": "SGA-SRC-001450",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the correction; the surrounding text differs (Exp. XIV lineage, or comment lines)",
+   "note": "decision as the queue record SGA-SRC-001450"
+  },
+  {
+   "id": "SGA-SRC-001452",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the correction; the surrounding text differs (Exp. XIV lineage, or comment lines)",
+   "note": "decision as the queue record SGA-SRC-001452"
+  },
+  {
+   "id": "SGA-SRC-001453",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the correction; the surrounding text differs (Exp. XIV lineage, or comment lines)",
+   "note": "decision as the queue record SGA-SRC-001453"
+  },
+  {
+   "id": "SGA-SRC-001454",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the correction; the surrounding text differs (Exp. XIV lineage, or comment lines)",
+   "note": "decision as the queue record SGA-SRC-001454"
+  },
+  {
+   "id": "SGA-SRC-001421",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001421"
+  },
+  {
+   "id": "SGA-SRC-001456",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the correction; the surrounding text differs (Exp. XIV lineage, or comment lines)",
+   "note": "decision as the queue record SGA-SRC-001456"
+  },
+  {
+   "id": "SGA-SRC-001458",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "present",
+   "trees": "both trees carry the same corrected text",
+   "note": "decision as the queue record SGA-SRC-001458"
+  },
+  {
+   "id": "SGA-SRC-001459",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "applied",
+   "trees": "both trees carry the correction; the surrounding text differs (Exp. XIV lineage, or comment lines)",
+   "note": "decision as the queue record SGA-SRC-001459"
+  },
+  {
+   "id": "SGA-SRC-001460",
+   "source": "ref_hold/main.tex and sga6_fr_r1/src/fr.tex (SGA-SRC tag)",
+   "status": "rejected",
+   "trees": "both trees carry the correction; the surrounding text differs (Exp. XIV lineage, or comment lines)",
+   "note": "decision as the queue record SGA-SRC-001460"
+  }
+ ],
+ "notes": [
+  "sga6_fr_r1/src/fr.tex also holds Codex's image-checked re-transcription of Exposé XIV pp. 672-689 (5 Aug, scan idx 685-702; about 150 differences from its 30 Jul base). The scan-check layers have the older text of these pages. Not carried (transcription, not corrections): the checkers of pp. 672-689 should be given fr_r1's text of these pages as a second reading.",
+  "ref_hold/main.tex has none of the 234 untagged accepted corrections (SGA-SRC-001310..001617, 23 Aug 16:41); they are only in sga6_fr_r1 (patch global_transcript_reconciliation_20260823/SGA6_ACCEPTS_FR_CURRENT.patch). The 72 tagged ones are in both trees.",
+  "Same misprints elsewhere, not in any record (corrected layer still has the print's spelling): 'nécéssaire' x2 (Exp. V, VII 'nécéssairement'), 'entrainera' x2, 'se résoud' (XIV 5.4 region), 'respée'/'respé' throughout (kept as the typescript's abbreviation)."
+ ]
+}

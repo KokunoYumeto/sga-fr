@@ -1,0 +1,314 @@
+[
+ {
+  "page": 301,
+  "where": "page start: end of the sentence begun on p. 300 ('qui par suite prend ses valeurs dans')",
+  "scan": "H(K[X_1,...,X_n]) d'après (1.3.ii)). : the page's first line, in the running text at the left margin; p. 300 ends '... le morphisme u^n_H, qui par suite prend ses valeurs dans' (both scans). Neither page has H(K[T_1,...,T_n])^{S_n} ≃ here.",
+  "tex": "\\[ H(K[T_1,\\ldots,T_n])^{\\mathfrak S_n} \\simeq H(K[X_1,\\ldots,X_n]) \\] d'après (1.3.ii)).",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\[\n  H(K[T_1,\\ldots,T_n])^{\\mathfrak S_n}\n  \\simeq H(K[X_1,\\ldots,X_n])\n\\]\nd'après",
+   "new": "\\(H(K[X_1,\\ldots,X_n])\\) d'après"
+  },
+  "note": "The TeX interpolates 'H(K[T_1,…,T_n])^{S_n} ≃' and turns the end of the sentence into a display; the print reads 'prend ses valeurs dans H(K[X_1,…,X_n]) d'après (1.3.ii)).' (H(K[X_1,…,X_n]) identified with the invariants as in 1.5). Not a misprint: the same fix applies to the corrected layer. The folio-301 marker itself is right."
+ },
+ {
+  "page": 301,
+  "where": "after 'd'après (1.3.ii)).'",
+  "scan": "Remarquons enfin que si H = Ĝ, ... begins a new, indented paragraph (both scans)",
+  "tex": "d'après (1.3.ii)).\\nRemarquons enfin (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "(1.3.ii)).\nRemarquons",
+   "new": "(1.3.ii)).\n\nRemarquons"
+  },
+  "note": "Missing paragraph break. Independent of the entry above (the two old strings do not overlap)."
+ },
+ {
+  "page": 301,
+  "where": "Théorème 1.6, line 3",
+  "scan": "son image est le sous groupe de H(K[X]): 'sous groupe' without hyphen, inside the underlined word group (both scans); the typist writes 'sous-groupe' on pp. 299 and 300",
+  "tex": "son image est le sous-groupe de",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "sous-groupe",
+   "new": "sous groupe"
+  },
+  "corrected": "sous-groupe",
+  "note": "The TeX silently supplies the hyphen; the diplomatic layer should keep the printed 'sous groupe'."
+ },
+ {
+  "page": 301,
+  "where": "Théorème 1.6, index of Hom (convention of the Exposé V transcription, reported once)",
+  "scan": "Hom with the index 'Ab fil', 'Ab' and 'fil' each underlined (both scans)",
+  "tex": "\\Hom_{\\Abfil}(\\Ghat_K,H), with \\providecommand{\\Abfil}{\\mathrm{Ab\\,fil}} (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "The print underlines the name of the category of filtered abelian groups wherever it occurs, inside statements and outside them; the macro \\Abfil prints it plain. Three examples: p. 299 (1.3) 'à valeurs dans Ab fil' underlined (and 'la catégorie Ab.fil.', printed with stops); p. 301 Théorème 1.6 'Hom_{Ab fil}(Ĝ_K,H)'; p. 306 Lemme 1.9 'H : 𝒞_o → Ab fil' and the display 'Hom_{Ab fil}(Ĝ,H∘g) → Hom_{Ab fil}(Ĝ∘i,H)' (witness). Global fix, both layers: replace '\\providecommand{\\Abfil}{\\mathrm{Ab\\,fil}}' by '\\providecommand{\\Abfil}{\\underline{\\mathrm{Ab}}\\,\\underline{\\mathrm{fil}}}' (14 uses, all in Exposé V §1, folios 299-311); p. 299's 'Ab.fil.' needs its own fix for the stops."
+ },
+ {
+  "page": 301,
+  "where": "proof of injectivity: 'est nul sur φ = ...'",
+  "scan": "φ = 1+X_1t + ... + X_nt^n + .... Le diagramme commutatif : , all on one line of the running text at the left margin (both scans)",
+  "tex": "est nul sur \\[ \\varphi=1+X_1t+\\cdots+X_nt^n+\\cdots . \\] Le diagramme commutatif",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "est nul sur\n\\[\n  \\varphi=1+X_1t+\\cdots+X_nt^n+\\cdots .\n\\]\n",
+   "new": "est nul sur \\(\\varphi=1+X_1t+\\cdots+X_nt^n+\\cdots\\). "
+  },
+  "note": "The print sets the series inline, the sentence 'Le diagramme commutatif :' following on the same line; the TeX makes it a display (same kind of fix as pp. 21, 34, 42, 80, 105, 277). Independent of the colon entry below."
+ },
+ {
+  "page": 301,
+  "where": "'Le diagramme commutatif' before (1.6.1)",
+  "scan": "Le diagramme commutatif : (colon; both scans)",
+  "tex": "Le diagramme commutatif (no colon) followed by the diagram",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Le diagramme commutatif\n\\[",
+   "new": "Le diagramme commutatif~:\n\\["
+  },
+  "note": "Missing colon."
+ },
+ {
+  "page": 301,
+  "where": "diagram (1.6.1), lower horizontal arrow",
+  "scan": "u^n_H stands above the lower arrow H(K[X]) → H(K[X_1,...,X_n]) (both scans)",
+  "tex": "\\arrow[r,\"u_H^n\"'] (label set below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r,\"u_H^n\"']",
+   "new": "\\arrow[r,\"u_H^n\"]"
+  },
+  "note": "Label on the wrong side of the arrow; the other three labels stand as printed (u^n_Ĝ above, Φ left, Φ right)."
+ },
+ {
+  "page": 301,
+  "where": "after 'Φ(1+X_1t+...+X_nt^n) = 0 .'",
+  "scan": "Or φ ≡ 1+X_1t+...+X_nt^n mod. F^{n+1}Ĝ ; ... begins a new, indented paragraph (both scans)",
+  "tex": "...=0\\). Or \\(\\varphi\\equiv ... (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "=0\\). Or \\(\\varphi",
+   "new": "=0\\).\n\nOr \\(\\varphi"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 302,
+  "where": "page start",
+  "scan": "p. 302 begins 'θ = Φ(1+Xt) ; montrons que θ vérifie les conditions i) et ii).'; p. 301 ends 'Soit maintenant Φ un élément quelconque de Hom(Ĝ,H), et soit' (both scans)",
+  "tex": "'\\(\\theta=\\Phi(1+Xt)\\)~;' ends the last line of page_301.tex, above the folio-302 marker; page_302.tex begins 'montrons que'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-302 marker stands one formula late. Page 302 really begins at '\\(\\theta=\\Phi(1+Xt)\\)~; montrons que'. Exact fix in main.tex (both layers): replace 'et soit \\(\\theta=\\Phi(1+Xt)\\)~;\\n%%%%%%%%%%  scan idx 315  |  folio 302  %%%%%%%%%%\\nmontrons que' by 'et soit\\n%%%%%%%%%%  scan idx 315  |  folio 302  %%%%%%%%%%\\n\\(\\theta=\\Phi(1+Xt)\\)~; montrons que' (same paragraph; the comment line keeps the space after 'soit')."
+ },
+ {
+  "page": 302,
+  "where": "after 'tel que θ = Φ(1+Xt).'",
+  "scan": "On détermine d'abord la valeur de Φ ... begins a new, indented paragraph (both scans)",
+  "tex": "tel que \\(\\theta=\\Phi(1+Xt)\\).\\nOn détermine (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Phi(1+Xt)\\).\nOn détermine",
+   "new": "\\Phi(1+Xt)\\).\n\nOn détermine"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 302,
+  "where": "diagram (1.6.2), right vertical arrow",
+  "scan": "σ'_n stands to the left of the right vertical arrow (both scans)",
+  "tex": "\\arrow[d,\"\\sigma'_n\"] (label set to the right)",
+  "kind": "formula",
+  "confidence": "low",
+  "fix": {
+   "old": "\\arrow[d,\"\\sigma'_n\"]",
+   "new": "\\arrow[d,\"\\sigma'_n\"']"
+  },
+  "note": "Label on the wrong side of the arrow (the σ is hand-drawn, the label clearly left of the shaft)."
+ },
+ {
+  "page": 302,
+  "where": "diagram (1.6.2), lower horizontal arrow",
+  "scan": "f'_n stands above the lower arrow K[T_1,...,T_n] → K[T_1,...,T_n] (both scans)",
+  "tex": "\\arrow[r,\"f'_n\"'] (label set below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r,\"f'_n\"']",
+   "new": "\\arrow[r,\"f'_n\"]"
+  },
+  "note": "Label on the wrong side of the arrow, as the lower label of (1.6.1) on p. 301; f_n above and σ̃_n left stand as printed."
+ },
+ {
+  "page": 303,
+  "where": "after '(en se plaçant ... grâce aux identifications 1.4).'",
+  "scan": "Compte tenu de 1.6.ii), ... begins a new, indented paragraph (both scans)",
+  "tex": "identifications 1.4). Compte tenu de 1.6.ii), (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "identifications 1.4). Compte tenu",
+   "new": "identifications 1.4).\n\nCompte tenu"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 303,
+  "where": "end of the paragraph 'Compte tenu de 1.6.ii) ...'",
+  "scan": "... on posera donc / Φ(φ) = ψ . : the formula wraps to the next text line at the left margin, at ordinary line spacing, and ends the paragraph (both scans)",
+  "tex": "on posera donc \\[ \\Phi(\\varphi)=\\psi . \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "on posera donc\n\\[\n  \\Phi(\\varphi)=\\psi .\n\\]",
+   "new": "on posera donc \\(\\Phi(\\varphi)=\\psi\\)."
+  },
+  "note": "The print sets the formula inline at the end of the sentence; the TeX makes it a display (as p. 301 above)."
+ },
+ {
+  "page": 303,
+  "where": "'On a donc défini ainsi un système d'application Φ_A'",
+  "scan": "un système d'application Φ_A: Ĝ(A) → H(A) ; pour vérifier qu'elles constituent ... (both scans)",
+  "tex": "un système d'application",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "un système d'applications",
+  "note": "The pronoun 'elles' refers to the maps: the typist dropped the plural s. The TeX keeps the printed reading; the corrected layer also still reads 'application'."
+ },
+ {
+  "page": 303,
+  "where": "diagram at the foot of the page, lower horizontal arrow",
+  "scan": "H(h) stands above the lower arrow H(A) → H(A') (both scans)",
+  "tex": "\\arrow[r,\"H(h)\"'] (label set below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r,\"H(h)\"']",
+   "new": "\\arrow[r,\"H(h)\"]"
+  },
+  "note": "Label on the wrong side of the arrow; Ĝ(h) above, Φ_A left and Φ_{A'} right stand as printed."
+ },
+ {
+  "page": 304,
+  "where": "display after 'd'où :', second member",
+  "scan": "H(h)oH(f_χ(ψ)): the closing parenthesis of H( stands after (ψ); no parenthesis between f_χ and (ψ) (both scans)",
+  "tex": "H(h)\\circ H(f_\\chi)(\\psi)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "H(h)\\circ H(f_\\chi)(\\psi)",
+   "new": "H(h)\\circ H(f_\\chi(\\psi))"
+  },
+  "corrected": "H(h)\\circ H(f_\\chi)(\\psi)",
+  "note": "H(f_χ) is applied to ψ, as in the definition Φ(χ) = H(f_χ)(ψ) on p. 303. The TeX silently corrects; the diplomatic layer should keep the printed reading. Independent of the next entry."
+ },
+ {
+  "page": 304,
+  "where": "display after 'd'où :', last member",
+  "scan": "= Φ_{A'}(Ĝ(h)(χ). : one closing parenthesis only (both scans)",
+  "tex": "=\\Phi_{A'}(\\Ghat(h)(\\chi)).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Phi_{A'}(\\Ghat(h)(\\chi)).",
+   "new": "\\Phi_{A'}(\\Ghat(h)(\\chi)."
+  },
+  "corrected": "\\Phi_{A'}(\\Ghat(h)(\\chi)).",
+  "note": "The print leaves the parenthesis after Φ_{A'} unclosed; the TeX silently closes it."
+ },
+ {
+  "page": 304,
+  "where": "after the display ending 'Φ_{A'}(Ĝ(h)(χ).'",
+  "scan": "Il reste donc à montrer que le morphisme de foncteurs ... begins a new, indented paragraph (both scans)",
+  "tex": "\\]\\nIl reste donc (same paragraph as the display)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nIl reste donc",
+   "new": "\\]\n\nIl reste donc"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 304,
+  "where": "diagram of the additivity proof, vertical arrow",
+  "scan": "the vertical arrow K[X_1,...,X_{2n}] → (K[T_1,...,T_{2n}])^{S_n×S_n} has a hook at its tail (top), curling to the right: an inclusion arrow (both scans)",
+  "tex": "\\arrow[d] (plain arrow)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[d] && A",
+   "new": "\\arrow[d,hook] && A"
+  },
+  "note": "The file writes hooked arrows as \\arrow[r,hook]; the text calls this map the embedding into the ring of invariants (p. 305)."
+ },
+ {
+  "page": 304,
+  "where": "diagram of the additivity proof, diagonal arrow",
+  "scan": "f'_χ stands on the upper-left side of the diagonal arrow to A (both scans)",
+  "tex": "\\arrow[urr,\"f'_\\chi\"'] (label set on the lower-right side)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[urr,\"f'_\\chi\"']",
+   "new": "\\arrow[urr,\"f'_\\chi\"]"
+  },
+  "note": "Label on the wrong side of the arrow; f_χ above the horizontal arrow stands as printed. Independent of the comma entry below."
+ },
+ {
+  "page": 304,
+  "where": "after the diagram of the additivity proof",
+  "scan": "a comma after the diagram, at the level of its bottom row, right (both scans)",
+  "tex": "no punctuation after the diagram",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "&&\n\\end{tikzcd}",
+   "new": "&& ,\n\\end{tikzcd}"
+  },
+  "note": "Punctuation printed after a diagram; set in the last cell, as on pp. 7 and 59."
+ },
+ {
+  "page": 305,
+  "where": "page start",
+  "scan": "p. 305 begins 'de façon que le premier facteur permute T_1,...,T_n'; p. 304 ends '... opère sur K[T_1,...,T_{2n}]' (both scans)",
+  "tex": "'de façon que le' ends the last line of page_304.tex, above the folio-305 marker; page_305.tex begins 'premier facteur'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-305 marker stands four words late. Page 305 really begins at 'de façon que le premier facteur'. Exact fix in main.tex (both layers): replace '\\(K[T_1,\\ldots,T_{2n}]\\) de façon que le\\n%%%%%%%%%%  scan idx 318  |  folio 305  %%%%%%%%%%\\npremier facteur' by '\\(K[T_1,\\ldots,T_{2n}]\\)\\n%%%%%%%%%%  scan idx 318  |  folio 305  %%%%%%%%%%\\nde façon que le premier facteur'."
+ },
+ {
+  "page": 305,
+  "where": "first paragraph, 'en envoyant X_j sur le j-ième fonction symétrique'",
+  "scan": "sur le j-ième fonction symétrique des T_i (both scans)",
+  "tex": "sur le \\(j\\)-ième fonction symétrique",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "sur la \\(j\\)-ième fonction symétrique",
+  "note": "Gender slip of the typist ('fonction' is feminine). The TeX keeps the printed reading; the corrected layer already reads 'la'."
+ },
+ {
+  "page": 305,
+  "where": "page end",
+  "scan": "p. 305 ends 'ils sont déterminés par leur valeur pour l'élément' (both scans); p. 306 begins '(1+X^{(j)}t)_{j=1,..,k} de (Ĝ(K[(X^{(j)})_j]))^k; un élément θ de H(K[(X^{(j)})_j]) déter-' (witness)",
+  "tex": "the last TeX line of page_305.tex, '\\((1+X^{(j)}t)_{j=1,\\ldots,k}\\) de \\(\\bigl(\\Ghat(K[(X^{(j)})_j])\\bigr)^k\\)~; un', stands above the folio-306 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-306 marker stands one TeX line late (not moved by the script). Exact fix in main.tex (both layers): replace 'pour l'élément\\n\\((1+X^{(j)}t)_{j=1,\\ldots,k}\\) de \\(\\bigl(\\Ghat(K[(X^{(j)})_j])\\bigr)^k\\)~; un\\n%%%%%%%%%%  scan idx 319  |  folio 306  %%%%%%%%%%\\n' by 'pour l'élément\\n%%%%%%%%%%  scan idx 319  |  folio 306  %%%%%%%%%%\\n\\((1+X^{(j)}t)_{j=1,\\ldots,k}\\) de \\(\\bigl(\\Ghat(K[(X^{(j)})_j])\\bigr)^k\\)~; un\\n'. The moved line was checked here against the witness of p. 306 and agrees with the print."
+ }
+]

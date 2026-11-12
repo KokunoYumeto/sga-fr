@@ -1,0 +1,487 @@
+[
+ {
+  "page": 361,
+  "where": "7.3, 'il est nécéssaire et suffisant'",
+  "scan": "nécéssaire, with an acute accent on the second e as well (both scans; crops_361_365/p361_necessaire.png, wit_361_bot.png)",
+  "tex": "nécéssaire (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "nécessaire",
+  "note": "Spelling slip of the typescript; the diplomatic layer is right (main.tex has the same spelling once more, line 10546, outside these pages)."
+ },
+ {
+  "page": 361,
+  "where": "Exemples 7.4 i), display 'd/dt(λ_t(n))/λ_t(n) = n(1+t)^{n-1}/(1+t)^n = n.Σ_{k=1}(-1)^{k-1}t^{k-1} .'",
+  "scan": "the Σ has only k=1 under it, no ∞ above it (both scans; crops_361_365/p361_sigma.png, wit_361_bot.png), unlike (7.2.1) on the same page",
+  "tex": "n.\\sum_{k=1}^{\\infty}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "n.\\sum_{k=1}^{\\infty}",
+   "new": "n.\\sum_{k=1}"
+  },
+  "note": "Upper limit of the sum added by the transcription."
+ },
+ {
+  "page": 361,
+  "where": "before 'D'après (7.1.1), les ψ^k sont des polynomes isobares'",
+  "scan": "'D'après (7.1.1)' begins a new, indented paragraph after the display ψ^k(x+y) = ψ^k(x) + ψ^k(y). (both scans; wit_361_top.png)",
+  "tex": "\\] followed directly by 'D'après (7.1.1)' (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "D'après (7.1.1),",
+   "new": "\nD'après (7.1.1),"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 362,
+  "where": "start of page (folio-362 marker)",
+  "scan": "p. 362 begins 'opérations ψ^k définissent d'après 7.3 des endomorphismes additifs du'; p. 361 ends '... des Z-algèbres (1.8). Les' (both scans)",
+  "tex": "'opérations \\(\\psi^k\\)' ends the last line of page_361.tex, above the folio-362 marker; page_362.tex begins 'définissent'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-362 marker stands two words late. Page 362 really begins at 'opérations \\(\\psi^k\\)'. Exact fix in main.tex (both layers, once each): replace '(1.8). Les opérations \\(\\psi^k\\)\\n%%%%%%%%%%  scan idx 375  |  folio 362  %%%%%%%%%%\\ndéfinissent' by '(1.8). Les\\n%%%%%%%%%%  scan idx 375  |  folio 362  %%%%%%%%%%\\nopérations \\(\\psi^k\\)\\ndéfinissent'. Equivalent: python -I move_marker.py 6 362 'opérations \\(\\psi^k\\)' --before (the nearest match before the marker is the right one; it leaves a trailing space after 'Les'). Both simulated in memory on both layers with crops_361_365/sim_markers.py (one match each). Independent of the folio-363 move."
+ },
+ {
+  "page": 362,
+  "where": "'du foncteur en λ-anneaux Ĝ ; d'après 1.10'",
+  "scan": "Ĝ with its hat (both scans; crops_361_365/p362_Ghat.png, wit_362_top.png)",
+  "tex": "anneaux \\(G\\)~;",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "anneaux \\(G\\)~;",
+   "new": "anneaux \\(\\widehat G\\)~;"
+  },
+  "note": "The hat is dropped; \\widehat G is the file's form for this functor (diagram (7.5.2), 'source \\widehat G\\times\\widehat G' p. 363)."
+ },
+ {
+  "page": 362,
+  "where": "first display, left member 'd/dt(λ_u(1+Xt))/λ_u(1+Xt))='",
+  "scan": "after the second λ_u(1+Xt) a further, hand-drawn closing parenthesis before '=': three opening, four closing (both scans; crops_361_365/p362_disp1.png, w362_disp1.png)",
+  "tex": "\\frac{d}{dt}(\\lambda_u(1+Xt))/\\lambda_u(1+Xt) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "/\\lambda_u(1+Xt)",
+   "new": "/\\lambda_u(1+Xt))"
+  },
+  "corrected": "/\\lambda_u(1+Xt)",
+  "note": "Unbalanced parenthesis of the print; the TeX silently drops it, the fix restores the printed reading. Independent of the d/dt and underline entries below."
+ },
+ {
+  "page": 362,
+  "where": "same display, 'd/dt' in front of (λ_u(1+Xt))",
+  "scan": "d/dt (both scans), as in the definition (7.1.1)",
+  "tex": "\\frac{d}{dt}(\\lambda_u(1+Xt)) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\frac{d}{du}(\\lambda_u(1+Xt))/\\lambda_u(1+Xt)",
+  "note": "The λ-structure of Ĝ is written in the variable u (λ_u(1+Xt) = 1̲ + {1+Xt}u), and the right member is the series in u whose coefficients give ψ^k(1+Xt) = {1+Xt}^{∘k}: the logarithmic derivative is taken with respect to u; the d/dt of (7.1.1) was carried over. The TeX keeps the printed reading."
+ },
+ {
+  "page": 362,
+  "where": "same display, denominator '1̲ + {1+Xt}u'",
+  "scan": "the 1 is underlined: the unit of Ĝ (both scans; crops_361_365/p362_disp1.png, w362_disp1.png)",
+  "tex": "\\frac{1+Xt}{1+\\{1+Xt\\}u}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "{1+\\{1+Xt\\}u}",
+   "new": "{\\underline{1}+\\{1+Xt\\}u}"
+  },
+  "note": "\\underline{1} is the file's form for this unit (21 times in Exposé V, e.g. '\\(\\lambda_u\\) est \\(\\underline{1}+\\{1+Xt\\}u\\)')."
+ },
+ {
+  "page": 362,
+  "where": "Proposition 7.5 ii), 'si les ψ^t vérifient ces identités'",
+  "scan": "ψ^t: the exponent is a t (both scans; crops_361_365/p362_psit.png, wit_362_top.png)",
+  "tex": "\\(\\psi^k\\) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "si les \\(\\psi^k\\) vérifient",
+   "new": "si les \\(\\psi^t\\) vérifient"
+  },
+  "corrected": "si les \\(\\psi^k\\) vérifient",
+  "note": "Typing slip: the operations are the ψ^k of i). The fix restores the printed reading."
+ },
+ {
+  "page": 362,
+  "where": "Proposition 7.5 (the statement)",
+  "scan": "underlined word groups: i) 'Si', 'est un', 'anneau' (λ- plain), 'les opérations', 'vérifient', 'les identités'; ii) 'Réciproquement', 'si les', 'vérifient ces identités', 'et si', 'est de', 'caractéristique nulle', 'est un', 'anneau' (λ- plain); K, ψ^k, ψ^t, (7.5.1) and the punctuation plain (both scans)",
+  "tex": "the statement in roman (no \\underline, no \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé V continues the GLOBAL_ISSUES 82 pattern (as reported for pp. 330 and 351-355): not itemized, for the scripted per-exposé decision; the word groups are listed for that script."
+ },
+ {
+  "page": 362,
+  "where": "proof of 7.5 i): 'd'où : d/dt(λ_t(1))/λ_t(1) = 1/1+t = Σ_{k=1}^∞(-1)^{k-1}t^{k-1}, et par suite :'",
+  "scan": "the formula stands at the left margin of the next text line and the sentence goes on in the same line ', et par suite :' (both scans; wit_362_bot.png)",
+  "tex": "d'où : \\[ ... \\] et par suite : (a display)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "d'où :\n\\[\n  \\frac{d}{dt}(\\lambda_t(1))/\\lambda_t(1)\n  =\n  \\frac1{1+t}\n  =\n  \\sum_{k=1}^{\\infty}(-1)^{k-1}t^{k-1},\n\\]\net par suite :",
+   "new": "d'où : \\(\\frac{d}{dt}(\\lambda_t(1))/\\lambda_t(1)=\\frac1{1+t}=\\sum_{k=1}^{\\infty}(-1)^{k-1}t^{k-1}\\), et par suite :"
+  },
+  "note": "Inline formula made a display (same kind of fix as pp. 351-352). Apply before the next entry: this edit keeps \\frac1{1+t}, which the next entry then replaces (the next entry alone also works)."
+ },
+ {
+  "page": 362,
+  "where": "same formula, '1/1+t'",
+  "scan": "1/1+t typed on the line with a solidus, no fraction bar, no parentheses (both scans; wit_362_bot.png)",
+  "tex": "\\frac1{1+t}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\frac1{1+t}",
+   "new": "1/1+t"
+  },
+  "note": "The typescript's notation (as 'X/1+Xt' on p. 363, which the TeX keeps); the TeX builds a fraction. The old string is unique before and after the inline entry above."
+ },
+ {
+  "page": 362,
+  "where": "diagram (7.5.2), label of the middle vertical arrow",
+  "scan": "the small circle ∘ stands to the left of the arrow Ĝ(K) x Ĝ(K) → Ĝ(K) (both scans; wit_362_bot.png)",
+  "tex": "\\arrow[d,\"\\circ\"] (label set to the right of the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[d,\"\\circ\"]",
+   "new": "\\arrow[d,\"\\circ\"']"
+  },
+  "note": "Label on the wrong side of the arrow."
+ },
+ {
+  "page": 362,
+  "where": "diagram (7.5.2), labels of the two lower arrows",
+  "scan": "λ_t and Φ^k above the lower arrows K → Ĝ(K) → K (both scans; wit_362_bot.png)",
+  "tex": "\\arrow[r,\"\\lambda_t\"'] and \\arrow[r,\"\\Phi^k\"'] (the ' sets the labels below the arrows)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "K \\arrow[r,\"\\lambda_t\"'] &\n\\widehat G(K) \\arrow[r,\"\\Phi^k\"'] &",
+   "new": "K \\arrow[r,\"\\lambda_t\"] &\n\\widehat G(K) \\arrow[r,\"\\Phi^k\"] &"
+  },
+  "note": "Labels on the wrong side of the arrows (as reported on pp. 41, 59, 74, 354, 369); the labels of the upper arrows stand as printed."
+ },
+ {
+  "page": 363,
+  "where": "start of page (folio-363 marker)",
+  "scan": "p. 363 begins 'un homomorphisme de groupes de Ĝ(K) dans K[[t]]'; p. 362 ends '... l'application \"dérivée logarithmique\" est' (both scans)",
+  "tex": "'un' ends the last line of page_362.tex ('... « dérivée logarithmique » est un'), above the folio-363 marker; page_363.tex begins 'homomorphisme'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-363 marker stands one word late. Page 363 really begins at 'un homomorphisme'. Exact fix in main.tex (both layers, once each): replace '« dérivée logarithmique » est un\\n%%%%%%%%%%  scan idx 376  |  folio 363  %%%%%%%%%%\\nhomomorphisme de groupes' by '« dérivée logarithmique » est\\n%%%%%%%%%%  scan idx 376  |  folio 363  %%%%%%%%%%\\nun homomorphisme de groupes'. Simulated in memory on both layers with crops_361_365/sim_markers.py (one match each). Independent of the folio-362 move."
+ },
+ {
+  "page": 363,
+  "where": "'Φ^k(1+Xt) = X^k ( (k-1)-ième coefficient de X/1+Xt ) ; Φ(1+Yt) = Y^k ;'",
+  "scan": "Φ(1+Yt) = Y^k: no exponent k on this Φ (both scans; crops_361_365/p363_PhiY.png, wit_363_top.png)",
+  "tex": "\\Phi^k(1+Yt)=Y^k (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Phi^k(1+Yt)=Y^k",
+   "new": "\\Phi(1+Yt)=Y^k"
+  },
+  "corrected": "\\Phi^k(1+Yt)=Y^k",
+  "note": "The k was not typed (Φ^k(1+Xt) = X^k just before it). The fix restores the printed reading."
+ },
+ {
+  "page": 363,
+  "where": "'Φ^k((1+Xt)∘(1+Yt)) = Φ^k(1+XYt) = (XY)^k = Φ^k(1+Xt)Φ^k(1+Yt), ce qui donne le résultat.'",
+  "scan": "the formula stands at the left margin at ordinary line spacing and the sentence goes on in the same line ', ce qui donne' (both scans; wit_363_top.png)",
+  "tex": "\\[ ... \\Phi^k(1+Xt)\\Phi^k(1+Yt), \\] ce qui donne le résultat. (a display)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\[\n  \\Phi^k\\bigl((1+Xt)\\circ(1+Yt)\\bigr)\n  =\n  \\Phi^k(1+XYt)\n  =\n  (XY)^k\n  =\n  \\Phi^k(1+Xt)\\Phi^k(1+Yt),\n\\]\nce qui donne",
+   "new": "\\(\\Phi^k\\bigl((1+Xt)\\circ(1+Yt)\\bigr)=\\Phi^k(1+XYt)=(XY)^k=\\Phi^k(1+Xt)\\Phi^k(1+Yt)\\), ce qui donne"
+  },
+  "note": "Inline formula made a display (as p. 352). The line before (Φ^k(1+Xt) = X^k ... ; Φ(1+Yt) = Y^k ;) stands on a line of its own and is left as a display. Independent of the misprint entry above."
+ },
+ {
+  "page": 363,
+  "where": "diagram (7.5.3), label of the lower arrow",
+  "scan": "Φ^k above the lower arrow (both scans; crops_361_365/m363_bottomarrow.png, wit_363_bot.png)",
+  "tex": "K \\arrow[r,\"\\Phi^k\"'] (the ' sets the label below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "K \\arrow[r,\"\\Phi^k\"']",
+   "new": "K \\arrow[r,\"\\Phi^k\"]"
+  },
+  "note": "Label on the wrong side of the arrow, as in (7.5.2); the other three labels stand as printed (λ_u above, Φ^{kk'} left, Φ^{k'}_u right). Independent of the arrow-direction entry below (fix null)."
+ },
+ {
+  "page": 363,
+  "where": "diagram (7.5.3), direction of the lower arrow K — Ĝ^t(K)",
+  "scan": "the lower arrow points from K to Ĝ^t(K), arrowhead at the right (both scans; crops_361_365/m363_bottomarrow.png, wit_363_bot.png)",
+  "tex": "K \\arrow[r,\"\\Phi^k\"'] & \\widehat G^t(K), (printed direction kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "K &\n\\widehat G^t(K), \\arrow[l,\"\\Phi^k\"']",
+  "note": "Φ^k is a map Ĝ(K) → K (the composite described on pp. 362-363), and the square states Φ^{kk'} = Φ^k∘Φ^{k'}_u∘λ_u, as the text then checks on 1+Xt: the lower arrow must point from Ĝ^t(K) to K. The TeX keeps the printed direction. For the corrected layer, replace the lower row 'K \\arrow[r,...] &' / '\\widehat G^t(K),' by the corrected reading (the ' keeps the label above a leftward arrow)."
+ },
+ {
+  "page": 363,
+  "where": "between '... = 1+X^{k'}t ;' and 'Φ^k(1+X^{k'}t) = X^{kk'} = Φ^{kk'}(1+Xt).'",
+  "scan": "nothing between the two formula lines (both scans; wit_363_bot.png)",
+  "tex": "\\] / puis / \\[",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\npuis\n\\[",
+   "new": "\\]\n\\["
+  },
+  "note": "Word added by the transcription."
+ },
+ {
+  "page": 363,
+  "where": "before 'Par suite, ψ^{kk'} = ...'",
+  "scan": "'Par suite,' begins a new, indented paragraph (both scans; wit_363_bot.png)",
+  "tex": "'Par suite,' follows the \\] of the display before (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "Par suite,",
+   "new": "\nPar suite,"
+  },
+  "note": "Missing paragraph break. Order-free with the next entry (each old survives the other edit)."
+ },
+ {
+  "page": 363,
+  "where": "'Par suite, ψ^{kk'} = Φ^k∘Φ^{k'}_u∘λ_u∘λ_t = Φ^k∘ψ^{k'}∘λ_t .'",
+  "scan": "the formula follows 'Par suite,' in the same line, then the full stop (both scans; crops_361_365/p363_parsuite_start.png)",
+  "tex": "Par suite, \\[ \\psi^{kk'} = ... \\] (a display)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "Par suite,\n\\[\n  \\psi^{kk'}\n  =\n  \\Phi^k\\circ\\Phi^{k'}_u\\circ\\lambda_u\\circ\\lambda_t\n  =\n  \\Phi^k\\circ\\psi^{k'}\\circ\\lambda_t.\n\\]",
+   "new": "Par suite, \\(\\psi^{kk'}=\\Phi^k\\circ\\Phi^{k'}_u\\circ\\lambda_u\\circ\\lambda_t=\\Phi^k\\circ\\psi^{k'}\\circ\\lambda_t\\)."
+  },
+  "note": "Inline in the print, display in the TeX (as 'Enfin,' p. 351)."
+ },
+ {
+  "page": 363,
+  "where": "before 'Par ailleurs, ψ^k∘ψ^{k'} = ...'",
+  "scan": "'Par ailleurs,' begins a new, indented paragraph (both scans; crops_361_365/p363_parailleurs.png)",
+  "tex": "'Par ailleurs,' follows the \\] of the display before (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "Par ailleurs,",
+   "new": "\nPar ailleurs,"
+  },
+  "note": "Missing paragraph break. Order-free with the next entry and with the 'Par suite' entries."
+ },
+ {
+  "page": 363,
+  "where": "'Par ailleurs, ψ^k∘ψ^{k'} = Φ^k∘λ_t∘Φ^{k'}∘λ_t = Φ^k∘λ_t∘ψ^{k'}.'",
+  "scan": "the formula follows 'Par ailleurs,' in the same line, then the full stop (both scans; crops_361_365/p363_parailleurs.png)",
+  "tex": "Par ailleurs, \\[ \\psi^k\\circ\\psi^{k'} = ... \\] (a display)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "Par ailleurs,\n\\[\n  \\psi^k\\circ\\psi^{k'}\n  =\n  \\Phi^k\\circ\\lambda_t\\circ\\Phi^{k'}\\circ\\lambda_t\n  =\n  \\Phi^k\\circ\\lambda_t\\circ\\psi^{k'}.\n\\]",
+   "new": "Par ailleurs, \\(\\psi^k\\circ\\psi^{k'}=\\Phi^k\\circ\\lambda_t\\circ\\Phi^{k'}\\circ\\lambda_t=\\Phi^k\\circ\\lambda_t\\circ\\psi^{k'}\\)."
+  },
+  "note": "Inline in the print, display in the TeX."
+ },
+ {
+  "page": 364,
+  "where": "start of page, 'Or si K est un λ-anneau, le diagramme :'",
+  "scan": "'Or si' is indented: a new paragraph after the display that ends p. 363 (both scans; wit_364_top.png)",
+  "tex": "'Or si' follows the last \\] of p. 363 with only the marker line between",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "Or si \\(K\\) est un",
+   "new": "\nOr si \\(K\\) est un"
+  },
+  "note": "Paragraph break of the print missing; the blank line comes after the marker line (as p. 349). Independent of the next entry."
+ },
+ {
+  "page": 364,
+  "where": "same line, 'λ-anneau'",
+  "scan": "λ-anneau in one piece (both scans)",
+  "tex": "'\\(\\lambda\\)-' at the end of a line, 'anneau' on the next: prints 'λ- anneau' with a space",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\lambda\\)-\nanneau",
+   "new": "\\(\\lambda\\)-anneau"
+  },
+  "note": "A line end left inside the word (probably by an earlier marker split) becomes a space."
+ },
+ {
+  "page": 364,
+  "where": "diagram (7.5.4), label of the lower arrow",
+  "scan": "λ_t above the lower arrow K → Ĝ(K), as above the upper one (both scans; wit_364_top.png)",
+  "tex": "K \\arrow[r,\"\\lambda_t\"'] (the ' sets the label below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "K \\arrow[r,\"\\lambda_t\"']",
+   "new": "K \\arrow[r,\"\\lambda_t\"]"
+  },
+  "note": "Label on the wrong side of the arrow, as in (7.5.2) and (7.5.3); the other three labels stand as printed."
+ },
+ {
+  "page": 364,
+  "where": "before 'Enfin, la relation λ_t(1) = 1+t s'obtient par intégration'",
+  "scan": "'Enfin,' begins a new, indented paragraph (both scans; wit_364_bot.png)",
+  "tex": "'... \\(\\psi^{kk'}=\\psi^k\\circ\\psi^{k'}\\). Enfin, ...' in one paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": " Enfin, la relation",
+   "new": "\n\nEnfin, la relation"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 364,
+  "where": "heading of the bibliography",
+  "scan": "BIBLIOGRAPHIE: typed capitals, underlined (both scans)",
+  "tex": "\\subsection*{Bibliographie}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\subsection*{Bibliographie}",
+   "new": "\\subsection*{BIBLIOGRAPHIE}"
+  },
+  "note": "As the headings fixed on pp. 19, 159, 220, 273 and 296; the missing underline of a section title is accepted."
+ },
+ {
+  "page": 364,
+  "where": "bibliography [1] Grothendieck, title",
+  "scan": "'La théorie des classes de Chern,' typed plain, not underlined (both scans; crops_361_365/m364_items.png, wit_364_bot.png)",
+  "tex": "\\emph{La théorie des classes de Chern}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{La théorie des classes de Chern}",
+   "new": "La théorie des classes de Chern"
+  },
+  "note": "The typescript neither underlines nor italicizes the titles of this bibliography; same fix as pp. 19, 159, 273, 296."
+ },
+ {
+  "page": 364,
+  "where": "bibliography [2] Hirzebruch, title",
+  "scan": "'Neue topologische Methoden in der algebraischen Geometrie.' typed plain, not underlined (both scans)",
+  "tex": "\\emph{Neue topologische Methoden in der algebraischen Geometrie}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Neue topologische Methoden in der algebraischen Geometrie}",
+   "new": "Neue topologische Methoden in der algebraischen Geometrie"
+  },
+  "note": "As [1]."
+ },
+ {
+  "page": 365,
+  "where": "heading of Exposé VI",
+  "scan": "three blocks: 'Exposé VI' (small letters, underlined, no full stop) at the left; the title on two centred lines 'LE K˙ D'UN FIBRE PROJECTIF :' / 'CALCULS ET CONSEQUENCES', typed capitals with a double underline (both scans; wit_365_top.png)",
+  "tex": "\\section*{Exposé VI. Le \\(K^{\\bullet}\\) d'un fibré projectif : calculs et conséquences}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\section*{Exposé VI. Le \\(K^{\\bullet}\\) d'un fibré projectif : calculs et conséquences}",
+   "new": "\\section*{\\underline{Exposé VI}\\\\[3pt] \\underline{\\underline{LE \\(K^{\\bullet}\\) D'UN FIBRÉ PROJECTIF :}}\\\\[3pt] \\underline{\\underline{CALCULS ET CONSÉQUENCES}}}"
+  },
+  "note": "The TeX joins the lines with an added full stop and sets the title in small letters. Same form as the applied headings of Exposés II-V and the two-line title of Exposé I (main.tex line 1774); É keeps the TeX's accents (rule for typed capitals)."
+ },
+ {
+  "page": 365,
+  "where": "author line of the heading",
+  "scan": "'par Pierre BERTHELOT': the name in capitals, the line underlined (both scans)",
+  "tex": "par Pierre Berthelot",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "par Pierre Berthelot",
+   "new": "\\underline{par Pierre BERTHELOT}"
+  },
+  "note": "As the applied author lines of Exposés I-V (\\underline{par P. BERTHELOT}, p. 297); here the first name is written out."
+ },
+ {
+  "page": 365,
+  "where": "Théorème 1.1, 'définit un homomorphisme d'anneaux : K˙(S) →^{f*} K˙(X) munissant'",
+  "scan": "the formula follows 'd'anneaux :' in the same text line; 'munissant' begins the next line at the margin (both scans; wit_365_top.png)",
+  "tex": "d'anneaux : \\[ K^{\\bullet}(S) \\xrightarrow{f^*} K^{\\bullet}(X) \\] munissant (a display)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "d'anneaux :\n\\[\n  K^{\\bullet}(S) \\xrightarrow{f^*} K^{\\bullet}(X)\n\\]\nmunissant",
+   "new": "d'anneaux : \\(K^{\\bullet}(S) \\xrightarrow{f^*} K^{\\bullet}(X)\\) munissant"
+  },
+  "note": "Inline formula made a display (as pp. 351-352)."
+ },
+ {
+  "page": 365,
+  "where": "Plan b), '0 → L_{r+1} →... → L_o → M → 0'",
+  "scan": "typed baseline dots between the arrows (both scans; wit_365_bot.png)",
+  "tex": "\\longrightarrow\\cdots\\longrightarrow",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "\\longrightarrow\\cdots\\longrightarrow",
+   "new": "\\longrightarrow\\ldots\\longrightarrow"
+  },
+  "note": "GLOBAL_ISSUES 87 leaves the \\cdots for the typed baseline dots to a volume decision (Exposé V, itemized on pp. 298-299); this is the same case in Exposé VI. Drop if that decision keeps \\cdots."
+ },
+ {
+  "page": 365,
+  "where": "Plan a), 'il existe un S(E)-Module module gradué M'",
+  "scan": "'Module module': the word typed twice (both scans; wit_365_bot.png)",
+  "tex": "\\(\\Sym(E)\\)-Module module gradué (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "il existe un \\(\\Sym(E)\\)-Module gradué \\(M\\)",
+  "note": "Doubled word of the typescript; the diplomatic layer is right."
+ },
+ {
+  "page": 365,
+  "where": "Plan a), '(S(E) étant l'algèbre symétrique de E ; pour la notation Proj_o, voir EGA II 8.12.1 .'",
+  "scan": "no closing parenthesis before the final full stop (both scans; crops_361_365/m365_ega.png, wit_365_bot.png)",
+  "tex": "voir EGA II 8.12.1. (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "voir EGA II 8.12.1).",
+  "note": "The parenthesis opened at '(S(E) étant' is never closed; the TeX keeps the printed reading."
+ },
+ {
+  "page": 365,
+  "where": "Théorème 1.1 (the statement)",
+  "scan": "underlined word groups: 'Soient', 'un schéma quasi-compact', 'un', '-Module localement libre de rang', 'le fibré projectif associé', 'le morphisme structural', 'définit un homomorphisme d'anneaux', 'munissant', 'd'une structure de', 'algèbre', 'Soit', 'la classe du faisceau', 'Alors', 'est un', 'module libre admettant pour base'; S, r+1, X, the formulas, K˙(X), K˙(S)-, ξ ∈ K˙(X), 1,...,ξ^r and the punctuation plain (the letters E, O_S, P(E), O_X carry their own underlines) (both scans)",
+  "tex": "the statement in roman (no \\underline, no \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé VI follows the GLOBAL_ISSUES 82 pattern from its first statement (as findings_366_370 for pp. 367-370): not itemized, for the scripted per-exposé decision; the word groups are listed for that script."
+ },
+ {
+  "page": 365,
+  "where": "sheaf letters of pp. 365 (Théorème 1.1 and the plan a)-c))",
+  "scan": "underlined: E (7 times: 'E un', P(E), S(E) four times, 'de E'), F (twice), M (4 times), L_i (twice), L_{r+1}, L_o, N_j (twice); the S of S(E) and the P of P(E) doubly underlined; S, X, r, j plain (both scans)",
+  "tex": "plain \\(E\\), \\(F\\), \\(M\\), \\(L_i\\), \\(L_{r+1}\\), \\(L_0\\), \\(N_j\\); \\Sym and \\mathbf P give the bold S and P as printed",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé VI transcription, reported once in findings_366_370 (p. 366 entry, with three example edits); the p. 365 letters listed for the same script. The underlined O of O_S, O_X is the pending structure-sheaf decision (not itemized)."
+ }
+]

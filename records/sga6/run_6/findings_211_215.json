@@ -1,0 +1,159 @@
+[
+ {
+  "page": 211,
+  "where": "top of the page",
+  "scan": "p. 211 begins with '(loc.cit.)' on its own line, followed by the display C^oo(X,E) = lim_r C^r_2(X,E) .",
+  "tex": "'(loc.cit.)' ends the last line of page_210.tex ('... d'image dense, et l'on a (loc.cit.)'), under the folio-210 marker; page_211.tex begins with the display.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 211 really begins with '(loc.cit.)'. Move the folio-211 marker up: python -I move_marker.py 6 211 '(loc.cit.)' --before (simulated in memory on both layers: '... et l'on a ' / marker / '(loc.cit.)' / '\\[ C^\\infty(X,E)=...'). Not a whole TeX line, so the 10 Nov script could not move it."
+ },
+ {
+  "page": 211,
+  "where": "3.0.5, 'dans celle des O_S rep. O_S (x) C -Modules'",
+  "scan": "des O_S rep. O_S(x)C -Modules: 'rep.' for 'resp.' (the same sentence has 'reels resp. complexes').",
+  "tex": "des $\\cO_S$ rep. $\\cO_S\\otimes\\mathbb C$-Modules",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "resp.",
+  "note": "Typing slip of the print; the TeX keeps the printed reading."
+ },
+ {
+  "page": 212,
+  "where": "3.1.3, item (i), 'les phi_r sont continues'",
+  "scan": "(i) les phi_r sont continues (l'espace d'arrivee est un espace de Banach: the single word 'continues' is underlined.",
+  "tex": "\\item les $\\varphi_r$ sont continues (l'espace",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "sont continues (l'espace",
+   "new": "sont \\emph{continues} (l'espace"
+  },
+  "note": "An emphasized word in the running text of 3.1.3, not a statement underlined word group by word group (GLOBAL_ISSUES 82), so a script for the statements would not catch it. \\emph is the file's command for underlined words (\\emph{Preuve.})."
+ },
+ {
+  "page": 213,
+  "where": "top of the page",
+  "scan": "p. 213 begins with '(3.0.2)) ;' (the end of item (i)), then '(ii) phi = lim phi_r (i.e. pour u in Diff^n_C(E,F), ...'; p. 212 ends with '(i) les phi_r sont continues (l'espace d'arrivee est un espace de Banach' and the footnote.",
+  "tex": "'(3.0.2))~;' (end of the \\item line) and the line '\\item $\\varphi=\\varprojlim\\varphi_r$ (i.e.' stand at the end of page_212.tex, above the folio-213 marker; page_213.tex begins with 'pour $u\\in...'.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 213 really begins with '(3.0.2))~;'. Move the folio-213 marker up: python -I move_marker.py 6 213 '(3.0.2))~;' --before (simulated in memory on both layers: '\\item les $\\varphi_r$ sont continues (l'espace d'arrivée est un espace de Banach ' / marker / '(3.0.2))~;' / '\\item $\\varphi=\\varprojlim\\varphi_r$ (i.e.' / 'pour $u\\in ...'). The marker stood two TeX lines too late."
+ },
+ {
+  "page": 213,
+  "where": "Lemme 3.1.4, 'V une variete compacte, E et F des fibres vectoriels complexes'",
+  "scan": "Soient S un espace topologique, V une variete compacte, E et F des fibres vectoriels complexes de rang fini sur V, et n in N.",
+  "tex": "$V$ une variété compacte, et $E,F$ des fibrés vectoriels complexes",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "compacte, et $E,F$ des fibrés",
+   "new": "compacte, $E$ et $F$ des fibrés"
+  },
+  "note": "The TeX adds 'et' before E and writes 'E,F' for the printed 'E et F'."
+ },
+ {
+  "page": 213,
+  "where": "Lemme 3.1.4, 'Pour u in Diff^n_C(pr_2^*(E),pr_2^*(F)), l'application'",
+  "scan": "the formula stands in the running text: 'Notons X la S-variete mixte S x V. Pour u in Diff^n_C(pr_2^*(E),pr_2^*(F)),' is one line, followed by 'l'application s |-> i_s^*(u) de S dans ...'.",
+  "tex": "a display \\[ u\\in\\Diff^n_\\mathbb C(\\pr_2^*(E),\\pr_2^*(F)), \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "Pour\n\\[\n  u\\in\\Diff^n_\\mathbb C(\\pr_2^*(E),\\pr_2^*(F)),\n\\]\nl'application",
+   "new": "Pour $u\\in\\Diff^n_\\mathbb C(\\pr_2^*(E),\\pr_2^*(F))$, l'application"
+  },
+  "note": "The print sets the formula inline; the TeX makes it a display (same kind of fix as SGA 6 pp. 21, 34, 42)."
+ },
+ {
+  "page": 213,
+  "where": "Preuve of 3.1.4, 'on est alors ramene a montrer que pour u in Gamma(X,pr_2^*(G))'",
+  "scan": "montrer que pour (no comma after 'que').",
+  "tex": "montrer que, pour",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "montrer que, pour",
+   "new": "montrer que pour"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 213,
+  "where": "3.1.5, display u in Diff^n(pr_2^*(E),pr_2^*(F)) and the call of footnote (1)",
+  "scan": "the call (1) stands after the display and its full stop: 'u in Diff^n(pr_2^*(E),pr_2^*(F))  . (1)'; nothing follows 'soit' in the text line.",
+  "tex": "soit\\footnote{On omet l'indice $\\mathbb C$ pour abréger.} followed by the display",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "soit\\footnote{On omet l'indice $\\mathbb C$ pour abréger.}\n\\[\n  u\\in\\Diff^n(\\pr_2^*(E),\\pr_2^*(F)).\n\\]",
+   "new": "soit\n\\[\n  u\\in\\Diff^n(\\pr_2^*(E),\\pr_2^*(F)).\\text{\\footnotemark}\n\\]\n\\footnotetext{On omet l'indice $\\mathbb C$ pour abréger.}"
+  },
+  "note": "Puts the call where the print has it, with \\text{\\footnotemark} in the display and \\footnotetext after it, as main.tex does elsewhere (e.g. '\\longrightarrow G\\text{\\footnotemark}.' and its \\footnotetext)."
+ },
+ {
+  "page": 213,
+  "where": "parenthesis after item (ii), '(loc.cit) : on se ramene aussitot a n = 0'",
+  "scan": "(loc.cit) : no full stop after 'cit' (p. 211 prints '(loc.cit.)').",
+  "tex": "(loc.cit)~:",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "(loc.cit.)",
+  "note": "Typing slip (abbreviation stop left out); the TeX keeps the printed reading."
+ },
+ {
+  "page": 214,
+  "where": "display u_r : C'(S,C^r_2(V,E)) -> C'(S,C^r_2(V,F)) .",
+  "scan": "u_r : C'(S,C^r_2(V,E)) --> C'(S,C^r_2(V,F))  . : the target has C^r_2, superscript r (main scan clear).",
+  "tex": "u_r:\\underline C'(S,C^r_2(V,E)) \\longrightarrow \\underline C'(S,C^r_2(V,F)).",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\underline C'(S,C^{r-n}_2(V,F))",
+  "note": "u_r is defined by phi_r u : S --> L(C^r_2(V,E),C^{r-n}_2(V,F)) (display just above; also the morphism S x C^r_2(V,E) --> S x C^{r-n}_2(V,F) at the foot of the page, and d^i_{r-m_i} on p. 215), so its target is C'(S,C^{r-n}_2(V,F)). The TeX keeps the printed reading; in the corrected layer replace '\\underline C'(S,C^r_2(V,F))' (once on the page)."
+ },
+ {
+  "page": 215,
+  "where": "Theoreme 3.2.1, 'Alors le complexe Rp_*(E^.)'",
+  "scan": "R with a double underline (the typescript's double-struck R of the derived functor), then p_*(E^.).",
+  "tex": "$Rp_*(E^\\bullet)$ (plain R)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$Rp_*(E^\\bullet)$",
+   "new": "$\\mathbb{R}p_*(E^\\bullet)$"
+  },
+  "note": "Double-struck derived-functor R written plain (reported singly as asked); main.tex writes \\mathbb{R}f_* elsewhere."
+ },
+ {
+  "page": 215,
+  "where": "Preuve of 3.2.1, 'un complexe de prefaisceaux (C'(S,C_2^{r-m_i}(V,F^i)),d^i_{r-m_i}), que nous noterons C'(S,C^r_2(V,F^.)).'",
+  "scan": "the formula and 'que nous noterons C'(S,C^r_2(V,F^.)).' are one line of running text at the left margin, followed by 'Les C'(S,C^r_2(V,F^.)) forment un systeme projectif'.",
+  "tex": "a display \\[ \\bigl(\\underline C'(S,C_2^{r-m_i}(V,F^i)),d_{r-m_i}^i\\bigr),\\quad\\text{que nous noterons } \\underline C'(S,C_2^r(V,F^\\bullet)). \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "un complexe de préfaisceaux\n\\[\n  \\bigl(\\underline C'(S,C_2^{r-m_i}(V,F^i)),d_{r-m_i}^i\\bigr),\\quad\\text{que nous noterons } \\underline C'(S,C_2^r(V,F^\\bullet)).\n\\]\nLes",
+   "new": "un complexe de préfaisceaux $\\bigl(\\underline C'(S,C_2^{r-m_i}(V,F^i)),d_{r-m_i}^i\\bigr)$, que nous noterons $\\underline C'(S,C_2^r(V,F^\\bullet))$.\nLes"
+  },
+  "note": "The print sets this in the running text; the TeX makes it a display with the words in \\text."
+ },
+ {
+  "page": 215,
+  "where": "Preuve of 3.2.1, 'que le complexe de faisceaux associes a C'(S,C^r_2(V,F^.))'",
+  "scan": "associés (plural, as 'le morphisme de faisceaux associés à u_r' at the top of the page).",
+  "tex": "que le complexe de faisceaux associé à",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "de faisceaux associé à",
+   "new": "de faisceaux associés à"
+  },
+  "note": "The TeX changes the printed plural (agreeing with 'faisceaux') to the singular (agreeing with 'complexe'); the printed reading is good French and stands."
+ }
+]

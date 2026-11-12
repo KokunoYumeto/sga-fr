@@ -1,0 +1,289 @@
+[
+ {
+  "page": 346,
+  "where": "'Utilisant le morphisme canonique : G^ -> 1+(Gr.)^+'",
+  "scan": "1+\\widehat{Gr.}^+: the hat covers 'Gr.' with its dot, the placeholder dot of 1+.^+ (both scans; crops_346_350/w346_line5.png)",
+  "tex": "1+\\widehat{\\operatorname{Gr}}^{+}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "1+\\widehat{\\operatorname{Gr}}^{+}\\), qui donne",
+   "new": "1+\\widehat{\\operatorname{Gr}\\,\\cdot\\,}^{+}\\), qui donne"
+  },
+  "note": "The TeX drops the dot of Gr. (GLOBAL_ISSUES 88 lists p. 346); \\,\\cdot\\, is the form of the fixes on pp. 312-313."
+ },
+ {
+  "page": 346,
+  "where": "'qui donne : G^ -> K x (1+Gr.^+)'",
+  "scan": "Gr. with its dot (both scans; w346_line5.png)",
+  "tex": "K\\times(1+\\widehat{\\operatorname{Gr}}^{+})",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "K\\times(1+\\widehat{\\operatorname{Gr}}^{+})\\),",
+   "new": "K\\times(1+\\widehat{\\operatorname{Gr}\\,\\cdot\\,}^{+})\\),"
+  },
+  "note": "Dot of Gr. dropped, as the previous entry. Apply before the next entry, whose old is the text this edit leaves."
+ },
+ {
+  "page": 346,
+  "where": "same place, 'K x (1+Gr.^+)'",
+  "scan": "no hat over Gr. here (both scans; w346_line5.png, m346_line5.png), while the same expression has its hand-drawn hat on the same line (1+\\widehat{Gr.}^+) and in the display below (Kx(1+\\widehat{Gr.}^+))",
+  "tex": "K\\times(1+\\widehat{\\operatorname{Gr}}^{+})",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "K\\times(1+\\widehat{\\operatorname{Gr}\\,\\cdot\\,}^{+})\\),",
+   "new": "K\\times(1+\\operatorname{Gr}\\,\\cdot\\,{}^{+})\\),"
+  },
+  "corrected": "K\\times(1+\\widehat{\\operatorname{Gr}\\,\\cdot\\,}^{+})",
+  "note": "The hand-drawn hat was left out: the canonical morphism G^ -> 1+\\widehat{Gr.}^+ of the same sentence gives G^ -> K x (1+\\widehat{Gr.}^+), as the next display writes it. The TeX silently adds the hat; the fix restores the printed reading. Its old is the text the previous entry leaves (apply after it)."
+ },
+ {
+  "page": 346,
+  "where": "first display 'G^t --gamma'--> G^u o i o (Kx(1+(Gr.)^+)) ,'",
+  "scan": "Gr. with its dot under the hat (both scans; w346_disp1.png)",
+  "tex": "(K\\times(1+\\widehat{\\operatorname{Gr}}^{+})),",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(K\\times(1+\\widehat{\\operatorname{Gr}}^{+})),",
+   "new": "(K\\times(1+\\widehat{\\operatorname{Gr}\\,\\cdot\\,}^{+})),"
+  },
+  "note": "Dot of Gr. dropped, as above."
+ },
+ {
+  "page": 346,
+  "where": "'qui d'après 1.12 définit un morphisme de foncteurs sur   :'",
+  "scan": "a blank between 'sur' and ':' (both scans; crops_346_350/m346_sur.png, w346_sur.png): the hand-drawn letter of the category was not written in",
+  "tex": "sur\\qquad:",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "foncteurs sur \\(\\mathcal G\\) :",
+  "note": "The TeX keeps the printed blank. The functors are defined on the category of graded K-algebras, the hand-drawn script G (\\mathcal G, GLOBAL_ISSUES 88); the parallel sentence at the foot of p. 344 reads 'deux morphismes de foncteurs sur G :' with that letter (witness)."
+ },
+ {
+  "page": 346,
+  "where": "second display '1+.^+ --> G^u o i o (Kx(1+.^+)) .'",
+  "scan": "only a typed prime above the arrow; the hand-drawn gamma is missing (both scans; w346_disp2.png, m346_disp2.png)",
+  "tex": "\\xrightarrow{\\gamma'}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "{}^{+}\\xrightarrow{\\gamma'}",
+   "new": "{}^{+}\\xrightarrow{'}"
+  },
+  "corrected": "{}^{+}\\xrightarrow{\\gamma'}",
+  "note": "The arrow is the gamma' of the display above (and of 'seront notées gamma au lieu de gamma''); the gamma was not written in. The TeX silently supplies it; the fix restores the printed reading."
+ },
+ {
+  "page": 347,
+  "where": "Définition 6.2, 'sa valeur pour A ∈ Ob(G)'",
+  "scan": "Ob(G) with the hand-drawn script G of graded K-algebras (a C-like letter running into a long descender), the letter of pp. 308-313 and of the foot of p. 344 (both scans; m347_Ob.png, w347_Ob.png)",
+  "tex": "\\operatorname{Ob}(\\mathcal C_g)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\operatorname{Ob}(\\mathcal C_g)",
+   "new": "\\operatorname{Ob}(\\mathcal G)"
+  },
+  "note": "GLOBAL_ISSUES 88 asks to check folio 347: confirmed; written \\mathcal G as fixed on pp. 306-313."
+ },
+ {
+  "page": 347,
+  "where": "'on déduit les relations :' before (6.2.1)",
+  "scan": "'les relations :' with a typed colon (both scans)",
+  "tex": "on déduit les relations",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "on déduit les relations\n",
+   "new": "on déduit les relations :\n"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 348,
+  "where": "start of page",
+  "scan": "p. 348 begins '6.3. Pour toute K-algèbre graduée A' (both scans); p. 347 ends '... est un λ-homomorphisme).'",
+  "tex": "\\textbf{6.3.} stands at the end of the text of p. 347, above the folio-348 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 348 really begins with the heading 6.3. Move the folio-348 marker above \\textbf{6.3.}: python -I move_marker.py 6 348 \"\\textbf{6.3.}\" --before (simulated on both layers: '... λ-homomorphisme).', blank line, the marker, \\textbf{6.3.}, 'Pour toute')."
+ },
+ {
+  "page": 348,
+  "where": "before 'Cet homomorphisme est compatible avec la multiplication'",
+  "scan": "'Cet homomorphisme' is indented: a new paragraph after (6.3.1) (both scans)",
+  "tex": "\\end{equation} followed directly by 'Cet homomorphisme'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nCet homomorphisme",
+   "new": "\\end{equation}\n\nCet homomorphisme"
+  },
+  "note": "Paragraph break of the print missing."
+ },
+ {
+  "page": 348,
+  "where": "'pour les éléments 1+X, 1+Y de 1+\\widehat{K[X,Y]}^+ ; or on a :'",
+  "scan": "a hand-drawn hat over K[X,Y] (both scans; m348_KXY.png)",
+  "tex": "1+K[X,Y]^+",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(1+K[X,Y]^+\\)",
+   "new": "\\(1+\\widehat{K[X,Y]}{}^{+}\\)"
+  },
+  "note": "The TeX drops the hat; written as (1+\\widehat{K[X,Y]}{}^{+})^{2} on p. 345."
+ },
+ {
+  "page": 348,
+  "where": "last display, first line '∀a ∈ K,  ch(1+X)^a)'",
+  "scan": "ch(1+X)^a): one opening parenthesis after ch, two closing (both scans; m348_cha.png, w348_cha.png)",
+  "tex": "\\ch((1+X)^a)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\ch((1+X)^a)",
+   "new": "\\ch(1+X)^a)"
+  },
+  "corrected": "\\ch((1+X)^a)",
+  "note": "The TeX silently supplies the missing parenthesis; the fix restores the printed reading."
+ },
+ {
+  "page": 349,
+  "where": "start of page, 'On peut donc de façon évidente étendre ch'",
+  "scan": "'On peut donc' is indented: a new paragraph after the display that ends p. 348 (both scans)",
+  "tex": "'On' follows the \\] of p. 348 with only the marker line between",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "On\npeut donc",
+   "new": "\nOn\npeut donc"
+  },
+  "note": "Paragraph break of the print missing; the blank line comes after the marker line."
+ },
+ {
+  "page": 349,
+  "where": "Proposition 6.5, 'où Â^{≥n} = ∏_{i≥n} A^i, On a les congruences suivantes'",
+  "scan": "a comma after A^i: it reaches as far below the baseline as the page's commas (main scan 7-8 px, witness 5 px; full stops 4 and 3 px), both scans (m349_prod_mark.png, w349_mark8.png); a capital 'On' follows",
+  "tex": "A^i\\). On a",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "A^i\\). On a",
+   "new": "A^i\\), On a"
+  },
+  "corrected": "A^i\\). On a",
+  "note": "Comma typed for the full stop that ends the sentence. The TeX silently corrects it; the fix restores the printed reading."
+ },
+ {
+  "page": 349,
+  "where": "(6.5.2), 'ch(φ) = (-1)^{n-1}/(n-1)! .a_n +.. ;'",
+  "scan": "+.. : two dots (both scans; m349_652.png, w349_652.png)",
+  "tex": ".a_n+\\cdots~;",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": ".a_n+\\cdots~;",
+   "new": ".a_n+..~;"
+  },
+  "corrected": ".a_n+\\cdots~;",
+  "note": "Two-dot ellipsis of the typist, handled as on pp. 37, 50 and 332; the TeX writes the three-dot form."
+ },
+ {
+  "page": 349,
+  "where": "(6.5.3), 'a_m b_n +.. ,'",
+  "scan": "+.. : two dots (both scans; m349_653.png, w349_653.png)",
+  "tex": "b_n+\\cdots,",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "b_n+\\cdots,",
+   "new": "b_n+..,"
+  },
+  "corrected": "b_n+\\cdots,",
+  "note": "Two-dot ellipsis, as (6.5.2)."
+ },
+ {
+  "page": 350,
+  "where": "first display '= (-1)^{n-1}/(n-1)! a_n + ...'",
+  "scan": "the display ends with the three dots of the series; nothing follows them (both scans; m350_disp1.png, w350_disp1end.png)",
+  "tex": "a_n+\\cdots .",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "a_n+\\cdots .",
+   "new": "a_n+\\cdots"
+  },
+  "note": "The TeX adds a full stop after the series."
+ },
+ {
+  "page": 350,
+  "where": "display after 'd'après (6.5.2) :', last factor '(1 + (-1)^{n-1}/(n-1)! .Y_n+..),'",
+  "scan": "+.. : two dots, while Z_p +... and X_m + ... of the same display have three (both scans; m350_disp2.png, w350_disp2.png)",
+  "tex": "Y_n+\\cdots\\right)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Y_n+\\cdots\\right)",
+   "new": "Y_n+..\\right)"
+  },
+  "corrected": "Y_n+\\cdots\\right)",
+  "note": "Two-dot ellipsis, as (6.5.2) and (6.5.3)."
+ },
+ {
+  "page": 350,
+  "where": "Proposition 6.6.1 i), 'λ^i(x) = 0 pour i ≥ n ;'",
+  "scan": "i ≥ n: the slanted ≥ with its lower stroke (as in 'n ≥ 1' of p. 349), not the plain > of 'degré > n' at the end of the statement (both scans; m350_i.png, w350_items.png)",
+  "tex": "i>n",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{pour }i>n~;",
+   "new": "\\text{pour }i\\ge n~;"
+  },
+  "corrected": "\\text{pour }i>n~;",
+  "note": "By ii) λ^n(x) = (1,1+a_1) is not 0, so λ^i(x) = 0 only for i > n. The TeX silently corrects; the fix restores the printed reading."
+ },
+ {
+  "page": 350,
+  "where": "Proposition 6.6.1 ii), 'λ^n(x) = (1,1+a_1)'",
+  "scan": "no punctuation after (1,1+a_1) (both scans; m350_ii.png, w350_items.png)",
+  "tex": "(1,1+a_1),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=(1,1+a_1),",
+   "new": "=(1,1+a_1)"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 350,
+  "where": "Proposition 6.6.1 iii), '= 0,1-(n-1)!a_n+...),'",
+  "scan": "no opening parenthesis before 0; the closing one after '+...' is printed (both scans; m350_iii.png, w350_iii.png)",
+  "tex": "=(0,1-(n-1)!a_n",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "=(0,1-(n-1)!a_n",
+   "new": "=0,1-(n-1)!a_n"
+  },
+  "corrected": "=(0,1-(n-1)!a_n",
+  "note": "The TeX silently supplies the parenthesis; the fix restores the printed reading."
+ },
+ {
+  "page": 350,
+  "where": "end of page",
+  "scan": "p. 350 ends '... il suffit de faire la démonstration dans le cas'; p. 351 begins 'où A est l'anneau K[X_1,...,X_n]' (both scans)",
+  "tex": "'où \\(A\\) est l'%' stands above the folio-351 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Move the folio-351 marker before 'où': python -I move_marker.py 6 351 \"où \\(A\\) est l'\" --before (simulated on both layers: '... dans le cas ', the marker, \"où \\(A\\) est l'%\", 'anneau \\(K[X_1,\\ldots,X_n]\\)'; the % keeps l'anneau joined)."
+ }
+]

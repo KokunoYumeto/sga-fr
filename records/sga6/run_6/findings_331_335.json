@@ -1,0 +1,147 @@
+[
+ {
+  "page": 331,
+  "where": "start of page",
+  "scan": "p. 331 begins '3.10  Soit A une K-λ-algèbre augmentée.' (both scans); p. 330 ends '... C'est toujours de celle-ci qu'il sera question dans la suite.'",
+  "tex": "'\\textbf{3.10.}' is the last line of page_330.tex, above the folio-331 marker; page_331.tex begins 'Soit \\(A\\) une'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Heading at the top of a page, not moved by the script: page 331 really begins with the paragraph number 3.10. Fix in both layers: python -I move_marker.py 6 331 '\\textbf{3.10' --before (simulated on both layers: '... dans la suite.', blank line, the marker, '\\textbf{3.10.}', 'Soit \\(A\\) une ...'; the anchor without the stop also matches once the misprint fix filed under page 330 is in). Literal form: replace '\\textbf{3.10.}\\n%%%%%%%%%%  scan idx 344  |  folio 331  %%%%%%%%%%\\nSoit' by '%%%%%%%%%%  scan idx 344  |  folio 331  %%%%%%%%%%\\n\\textbf{3.10.}\\nSoit' (diplomatic layer: \\textbf{3.10} once that fix is applied)."
+ },
+ {
+  "page": 330,
+  "where": "paragraph number 3.10 at the top of printed p. 331 (in the TeX still the last line of page_330.tex, under the folio-330 marker)",
+  "scan": "'3.10  Soit A une K-λ-algèbre augmentée': no full stop after 3.10 (both scans)",
+  "tex": "\\textbf{3.10.} (stop supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {"old": "\\textbf{3.10.}", "new": "\\textbf{3.10}"},
+  "corrected": "\\textbf{3.10.}",
+  "note": "The typist left out the stop of the paragraph number (3.7., 3.8., 4.1., 4.3., 4.9.1., 4.10. have it); the TeX silently supplies it. Filed under page 330 because the number stands under that marker until the folio-331 marker is moved (p. 331 marker entry): apply before the move, or by hand on p. 331 after it. The bold of the number is the pending volume decision."
+ },
+ {
+  "page": 332,
+  "where": "Proposition 3.11 i), end of the item",
+  "scan": "'i) pour k > n, on a γ^k(x-n) = 0': nothing after the 0 (both scans)",
+  "tex": "\\(\\gamma^k(x-n)=0\\)~;",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {"old": "\\(\\gamma^k(x-n)=0\\)~;", "new": "\\(\\gamma^k(x-n)=0\\)"},
+  "note": "The TeX adds a semicolon at the end of item i); item ii) ends with the printed full stop."
+ },
+ {
+  "page": 332,
+  "where": "Proposition 3.11, first line, 'et y_i, i=1,..,n des éléments de'",
+  "scan": "i=1,..,n: two dots between the commas (both scans)",
+  "tex": "\\(i=1,\\dots,n\\) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {"old": "\\(i=1,\\dots,n\\)", "new": "\\(i=1,..,n\\)"},
+  "corrected": "\\(i=1,\\dots,n\\)",
+  "note": "Two-dot ellipsis of the typist, handled as on pp. 37 and 50 (findings_036_040, findings_046_050); the series of pp. 331 and 335 have three dots."
+ },
+ {
+  "page": 332,
+  "where": "end of the proof of Proposition 3.11, 'La proposition résulte alors de ce que γ_t(x-n) = ∏ γ_t(y_i-1).'",
+  "scan": "the formula stands in the running line after 'de ce que' (i=1 below and n above the product sign), followed by the full stop",
+  "tex": "a separate display \\[ ... \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {"old": "de ce que\n\\[\n  \\gamma_t(x-n)=\\prod_{i=1}^{n}\\gamma_t(y_i-1).\n\\]", "new": "de ce que \\(\\gamma_t(x-n)=\\prod_{i=1}^{n}\\gamma_t(y_i-1)\\)."},
+  "note": "The print sets the formula inline at the end of the sentence; the TeX makes it a display (same kind of fix as pp. 301 and 303)."
+ },
+ {
+  "page": 333,
+  "where": "first line, 'Le λ-anneau A est caractérisé par la propriété universelle suivante :'",
+  "scan": "Le λ-anneau A est caractérisé ...",
+  "tex": "'Le \\(\\lambda\\)-' and 'anneau' on two lines: the line break prints a space ('λ- anneau')",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {"old": "Le \\(\\lambda\\)-\nanneau \\(A\\)", "new": "Le \\(\\lambda\\)-anneau \\(A\\)"},
+  "note": "Both layers have the same break."
+ },
+ {
+  "page": 334,
+  "where": "start of page",
+  "scan": "p. 334 begins 'd'une structure de λ-anneau, les relations (2.4.2) passant au quotient.'; p. 333 ends '... par A/J, qui se trouve ainsi muni' (both scans)",
+  "tex": "'d'une' ends the last line of page_333.tex, above the folio-334 marker; page_334.tex begins 'structure de'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-334 marker stands one word late; page 334 really begins at 'd'une structure'. Exact fix in main.tex (both layers): replace 'qui se trouve ainsi muni d'une\\n%%%%%%%%%%  scan idx 347  |  folio 334  %%%%%%%%%%\\nstructure de' by 'qui se trouve ainsi muni\\n%%%%%%%%%%  scan idx 347  |  folio 334  %%%%%%%%%%\\nd'une structure de'. Equivalent: python -I move_marker.py 6 334 \"d'une\" --before (simulated on both layers: '... ainsi muni ', the marker, 'd'une', 'structure de ...'; prints 'muni d'une structure')."
+ },
+ {
+  "page": 334,
+  "where": "'Soient toujours K un λ-anneau, ..., et soit (P_i)_{i'∈I'} une famille d'éléments de A'",
+  "scan": "(P_i)_{i'∈I'}: the index of P has no prime (both scans; the closing parenthesis stands in the typewriter cell right after the i)",
+  "tex": "\\((P_{i'})_{i'\\in I'}\\) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {"old": "et soit \\((P_{i'})_{i'\\in I'}\\)", "new": "et soit \\((P_i)_{i'\\in I'}\\)"},
+  "corrected": "\\((P_{i'})_{i'\\in I'}\\)",
+  "note": "The family is indexed by i' ∈ I' (Définition 4.6 and Proposition 4.7 on the same page print (P_{i'})_{i'∈I'}); the typist left out the prime."
+ },
+ {
+  "page": 334,
+  "where": "Proposition 4.7, 'il existe un K-λ-homomorphisme et un seul A/J → B tel que pour tout i, on ait f'(X_i) = b_i'",
+  "scan": "'et un seul   A/J → B': the map is not named (a gap of a few spaces before A/J), while the end of the statement and the proof use f' (both scans)",
+  "tex": "et un seul \\(A/J\\to B\\) (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "et un seul \\(f':A/J\\to B\\)",
+  "note": "Compare Proposition 4.2 ('et un seul f de A dans B'). The TeX keeps the printed reading; so does the corrected layer."
+ },
+ {
+  "page": 334,
+  "where": "Proposition 4.7, end, 'tel que pour tout i, on ait f'(X_i) = b_i'",
+  "scan": "f'(X_i) = b_i with no full stop (both scans; the dot over the subscript is the dot of the i, as in X_i)",
+  "tex": "\\(f'(X_i)=b_i\\). (stop supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {"old": "\\(f'(X_i)=b_i\\).", "new": "\\(f'(X_i)=b_i\\)"},
+  "corrected": "\\(f'(X_i)=b_i\\).",
+  "note": "The typist left out the full stop that ends the statement; the TeX silently supplies it (as p. 251)."
+ },
+ {
+  "page": 335,
+  "where": "start of page",
+  "scan": "p. 335 begins 'f', évidemment unique.'; p. 334 ends '... f passe donc au quotient et définit' (both scans)",
+  "tex": "'\\(f'\\),' ends the last line of page_334.tex, above the folio-335 marker; page_335.tex begins 'évidemment unique.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-335 marker stands one formula late; page 335 really begins at '\\(f'\\), évidemment'. Exact fix in main.tex (both layers): replace 'et définit \\(f'\\),\\n%%%%%%%%%%  scan idx 348  |  folio 335  %%%%%%%%%%\\névidemment unique.' by 'et définit\\n%%%%%%%%%%  scan idx 348  |  folio 335  %%%%%%%%%%\\n\\(f'\\), évidemment unique.'. Equivalent: python -I move_marker.py 6 335 \"\\(f'\\),\" --before (simulated on both layers: '... et définit ', the marker, '\\(f'\\),', 'évidemment unique.'; prints 'définit f', évidemment unique')."
+ },
+ {
+  "page": 335,
+  "where": "proof of Proposition 4.8, 'on peut écrire : 1+X_1t+...+X_nt^n = ∏_{i=1} (1+T_it), d'où'",
+  "scan": "the product sign has only the lower limit i=1; the n standing over it is the subscript of T_n] on the line above (both scans); the two products of the next display have their n",
+  "tex": "\\prod_{i=1}^{n}(1+T_it)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {"old": "\\prod_{i=1}^{n}(1+T_it)", "new": "\\prod_{i=1}(1+T_it)"},
+  "note": "The TeX adds the upper limit (the added-index pattern of NOTE_6). If the corrected layer should keep the n, treat this as misprint_in_print."
+ },
+ {
+  "page": 335,
+  "where": "display after 'd'où', last member",
+  "scan": "∏_{i=1}^n (1̲ + {1+T_it}u), : the first 1 is underlined (both scans)",
+  "tex": "\\bigl(1+\\{1+T_it\\}u\\bigr)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {"old": "\\bigl(1+\\{1+T_it\\}u\\bigr)", "new": "\\bigl(\\underline{1}+\\{1+T_it\\}u\\bigr)"},
+  "note": "The underline marks the unit of the λ-ring structure on Ĝ (as the underlined 1_o, 1_∇ of the display at the top of p. 328), not emphasis."
+ },
+ {
+  "page": 335,
+  "where": "end of page",
+  "scan": "p. 335 ends '... le λ-anneau libre engendré par X sur A ;'; p. 336 begins 'on définit un λ-homomorphisme : B → K' (witness of p. 336)",
+  "tex": "'on' is the last word of page_335.tex, above the folio-336 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-336 marker stands one word late. Exact fix in main.tex (both layers): replace 'sur \\(A\\)~; on\\n%%%%%%%%%%  scan idx 349  |  folio 336  %%%%%%%%%%\\ndéfinit un' by 'sur \\(A\\)~;\\n%%%%%%%%%%  scan idx 349  |  folio 336  %%%%%%%%%%\\non définit un'. Equivalent: python -I move_marker.py 6 336 \"on\" --before (simulated on both layers: '... sur \\(A\\)~; ', the marker, 'on', 'définit un ...'). The batch of pp. 336-340 may report the same: apply once."
+ }
+]

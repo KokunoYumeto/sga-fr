@@ -1,0 +1,84 @@
+[
+  {
+    "page": 36,
+    "where": "start of page",
+    "scan": "p. 36 begins 'ment de K tel que λ^iN = 0' (second half of 'élé-ment', hyphenated across the page break; p. 35 ends 'et soit N un élé-', DjVu witness p. 46)",
+    "tex": "page_036.tex begins with the whole word 'élément'; the text before the folio-36 marker ends 'soit $N$ un'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 36 really begins with 'ment'. Split the word at the marker as at folio 18 ('cet ex%'): in both layers of main.tex replace 'soit $N$ un\\n%%%%%%%%%%  scan idx 49  |  folio 36  %%%%%%%%%%\\nélément de $K$' by 'soit $N$ un élé%\\n%%%%%%%%%%  scan idx 49  |  folio 36  %%%%%%%%%%\\nment de $K$' (the old text occurs once in each layer; the % keeps 'élément' one word)."
+  },
+  {
+    "page": 36,
+    "where": "'il est commode d'introduite un nouvel λ-anneau noté K_N'",
+    "scan": "d'introduite (both scans)",
+    "tex": "d'introduite (printed reading kept)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "d'introduire",
+    "note": "t for r in the print; the TeX keeps the printed reading. The corrected layer also still reads 'd'introduite'."
+  },
+  {
+    "page": 37,
+    "where": "start of page",
+    "scan": "p. 37 begins 'sa restriction à K est injective' (both scans); p. 36 ends 'Dans le cas actuel,'",
+    "tex": "'sa' is the last word of page_036.tex (the marker line splits the source line after it); page_037.tex begins 'restriction'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 37 really begins with 'sa'. In both layers of main.tex replace 'Dans le cas actuel, sa\\n%%%%%%%%%%  scan idx 50  |  folio 37  %%%%%%%%%%\\nrestriction à' by 'Dans le cas actuel,\\n%%%%%%%%%%  scan idx 50  |  folio 37  %%%%%%%%%%\\nsa restriction à' (once in each layer). python -I move_marker.py 6 37 \"sa\" --before gives the same page split."
+  },
+  {
+    "page": 37,
+    "where": "before (1.40), 'Comme on a évidemment, combinant (1.32) et (1.37)'",
+    "scan": "combinant (1.32) et (1.37) with no comma before the display (both scans)",
+    "tex": "combinant (1.32) et (1.37),",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+      "old": "combinant (1.32) et (1.37),",
+      "new": "combinant (1.32) et (1.37)"
+    },
+    "note": "The TeX adds a comma before the display (1.40)."
+  },
+  {
+    "page": 37,
+    "where": "(1.38), arguments of G_{q,j}",
+    "scan": "G_{q,j}(ν,x^1,..,x^j;N^1,..,N^j): two dots between the commas, twice (both scans; the witness shows comma, dot, dot, comma at consecutive typewriter positions)",
+    "tex": "x^1,\\ldots,x^j;N^1,\\ldots,N^j (silently corrected)",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": {
+      "old": "x^1,\\ldots,x^j;N^1,\\ldots,N^j",
+      "new": "x^1,..,x^j;N^1,..,N^j"
+    },
+    "corrected": "x^1,\\ldots,x^j;N^1,\\ldots,N^j",
+    "note": "Two-dot ellipsis of the typist; the same pages have three dots elsewhere (N^1 + ... + N^q in Proposition 1.5, 'position générale ...)' on p. 39). The TeX writes three dots."
+  },
+  {
+    "page": 37,
+    "where": "(1.39), arguments of G_{q,j}",
+    "scan": "G_{q,j}(ν,x^1,..,N^j): two dots between the commas (both scans)",
+    "tex": "x^1,\\ldots,N^j (silently corrected)",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": {
+      "old": "x^1,\\ldots,N^j",
+      "new": "x^1,..,N^j"
+    },
+    "corrected": "x^1,\\ldots,N^j",
+    "note": "Same two-dot ellipsis as in (1.38)."
+  },
+  {
+    "page": 38,
+    "where": "start of page",
+    "scan": "p. 38 begins 'd'augmentation nulle), tandis que' (both scans); p. 37 ends 'en tenant compte de ce que x λ_{-1}(N) est'",
+    "tex": "page_037.tex ends 'est d'' and page_038.tex begins 'augmentation nulle)': the marker line splits the word after the apostrophe, so the TeX also prints 'd' augmentation' with a space (the line end after d' becomes a space)",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 38 really begins with 'd'augmentation'. In both layers of main.tex replace 'est d'\\n%%%%%%%%%%  scan idx 51  |  folio 38  %%%%%%%%%%\\naugmentation nulle)' by 'est\\n%%%%%%%%%%  scan idx 51  |  folio 38  %%%%%%%%%%\\nd'augmentation nulle)' (once in each layer). move_marker.py alone would leave d' and augmentation on separate lines, keeping the space."
+  }
+]

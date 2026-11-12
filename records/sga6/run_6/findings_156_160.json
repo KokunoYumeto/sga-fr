@@ -1,0 +1,485 @@
+[
+ {
+  "page": 156,
+  "where": "paragraph before Proposition 8.3, 'Le lien entre trace et cup-produit s'exprime dans la'",
+  "scan": "the sentence stops at 'dans la' and runs into the label 'Proposition 8.3.' of the next line; nothing else on the line (both scans)",
+  "tex": "s'exprime dans la proposition suivante.",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "s'exprime dans la proposition suivante.",
+   "new": "s'exprime dans la"
+  },
+  "note": "The words 'proposition suivante.' are not in the print. With the fix the paragraph ends 'dans la' and the next paragraph is \\textbf{Proposition 8.3.}, as printed."
+ },
+ {
+  "page": 156,
+  "where": "first paragraph, 'dans RHom(E,F)|U'",
+  "scan": "double-struck R and Hom underlined (both scans; crops_156_160/p156_RHom.png)",
+  "tex": "\\RHom = \\mathrm R\\!\\operatorname{Hom} (main.tex line 1847): plain R, Hom not underlined",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(E,F)|U",
+   "new": "\\mathbb{R}\\underline{\\Hom}(E,F)|U"
+  },
+  "note": "Same form as main.tex line 2622 (f^*\\mathbb{R}\\underline{\\Hom}(F,G))."
+ },
+ {
+  "page": 156,
+  "where": "first paragraph, '(resp. RHom(F,E)|U)'",
+  "scan": "double-struck R and Hom underlined (both scans)",
+  "tex": "\\RHom = \\mathrm R\\!\\operatorname{Hom} (main.tex line 1847): plain R, Hom not underlined",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(F,E)|U",
+   "new": "\\mathbb{R}\\underline{\\Hom}(F,E)|U"
+  },
+  "note": "As the entry before."
+ },
+ {
+  "page": 156,
+  "where": "display 'u (x)L v : A|U --> (RHom(E,F) (x)L RHom(F,E))|U .', first factor",
+  "scan": "double-struck R and Hom underlined (both scans)",
+  "tex": "\\RHom = \\mathrm R\\!\\operatorname{Hom} (main.tex line 1847): plain R, Hom not underlined",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\RHom(E,F)\\otL",
+   "new": "(\\mathbb{R}\\underline{\\Hom}(E,F)\\otL"
+  },
+  "note": "As above."
+ },
+ {
+  "page": 156,
+  "where": "same display, second factor",
+  "scan": "double-struck R and Hom underlined (both scans)",
+  "tex": "\\RHom = \\mathrm R\\!\\operatorname{Hom} (main.tex line 1847): plain R, Hom not underlined",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom(F,E))|U",
+   "new": "\\mathbb{R}\\underline{\\Hom}(F,E))|U"
+  },
+  "note": "As above."
+ },
+ {
+  "page": 156,
+  "where": "Proposition 8.3, first sentence",
+  "scan": "underlined: 'Dans la situation de', 'pour', 'et', 'on a'; '(8.2),' and the formulas not (both scans)",
+  "tex": "no emphasis (the statements of Exposé I up to 7.3 have \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Dans la situation de (8.2), pour \\(u\\in\\Hom(E|U,F|U)\\) et \\(v\\in\\Hom(F|U,E|U)\\), on a",
+   "new": "\\emph{Dans la situation de} (8.2), \\emph{pour} \\(u\\in\\Hom(E|U,F|U)\\) \\emph{et} \\(v\\in\\Hom(F|U,E|U)\\), \\emph{on a}"
+  },
+  "note": "Statements are in roman in main.tex from Lemme 7.4 (line 3499) to the end of Exposé I (7.4-7.8 lie on pp. 152-155); here fixed singly, by the print's word groups."
+ },
+ {
+  "page": 156,
+  "where": "Proposition 8.3, 'En particulier, si E = F, on a'",
+  "scan": "underlined: 'En particulier', 'si', 'on a' (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "En particulier, si \\(E=F\\), on a",
+   "new": "\\emph{En particulier}, \\emph{si} \\(E=F\\), \\emph{on a}"
+  },
+  "note": "Part of the statement of 8.3."
+ },
+ {
+  "page": 156,
+  "where": "diagrams printed at the top of p. 157 (in the TeX under the folio-156 marker): left triangle, vertical arrow",
+  "scan": "label Id (x)^L tau_F: an L over the tensor sign (both scans; crops_156_160/p157_tri_labels.png)",
+  "tex": "\\arrow[d,\"\\Id\\otimes\\tau_F\"]",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[d,\"\\Id\\otimes\\tau_F\"]",
+   "new": "\\arrow[d,\"\\Id\\otL\\tau_F\"]"
+  },
+  "note": "Filed under p. 156 because the diagram stands in page_156.tex now: apply before the folio-157 marker move. The old string is also unique in pp. 156-157 together (the square's arrow has \"'] )."
+ },
+ {
+  "page": 156,
+  "where": "diagrams printed at the top of p. 157: right triangle, vertical arrow",
+  "scan": "label tau_E (x)^L Id: an L over the tensor sign (both scans; crops_156_160/p157_tri_labels.png)",
+  "tex": "\\arrow[d,\"\\tau_E\\otimes\\Id\"]",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[d,\"\\tau_E\\otimes\\Id\"]",
+   "new": "\\arrow[d,\"\\tau_E\\otL\\Id\"]"
+  },
+  "note": "As the entry before (filed under p. 156; apply before the marker move)."
+ },
+ {
+  "page": 157,
+  "where": "start of page",
+  "scan": "p. 157 begins with the two triangle diagrams (A --u(x)v--> E^v(x)F(x)F^v(x)E, with vu and uv), then the square; p. 156 ends '... (laquelle est de vérification \"purement mécanique\") :' and its footnote (both scans)",
+  "tex": "the display of the two triangles and the opening '\\[' '\\begin{tikzcd}[column sep=' of the square are the last lines of page_156.tex (under the folio-156 marker); the folio-157 marker stands inside the square's option list, page_157.tex begins 'large,row sep=large]'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 157 really begins with the '\\[' that opens the two triangles, right after '«~purement mécanique~») :'. Move the folio-157 marker up past two '\\[': python -I move_marker.py 6 157 '\\[' --before, run twice (the first run sets it above the square's '\\[', the second above the triangles' '\\['). Simulated on both layers, before and after this batch's fixes (crops_156_160/sim_markers2.py): '... mécanique~») :', the marker, '\\[', '\\begin{tikzcd}[column sep=large,row sep=large]', ' A \\arrow[r,\"u\\otL v\"] ...'; page 156 then ends with ' :' and holds no tikzcd. The square's options stay split as 'column sep=' / 'large,row sep=large]' (compiles)."
+ },
+ {
+  "page": 157,
+  "where": "square diagram, top arrow",
+  "scan": "label Id (x)^L tau_E: an L over the tensor sign (both scans; crops_156_160/p157_square_top.png, w157_square.png)",
+  "tex": "\\arrow[r,\"\\Id\\otimes\\tau_E\"]",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"\\Id\\otimes\\tau_E\"]",
+   "new": "\\arrow[r,\"\\Id\\otL\\tau_E\"]"
+  },
+  "note": "The other labels with L: the two triangles (p. 156 entries)."
+ },
+ {
+  "page": 157,
+  "where": "square diagram, left vertical arrow",
+  "scan": "label Id (x) tau_F: plain tensor sign, no L (both scans; crops_156_160/w157_square.png)",
+  "tex": "\\arrow[d,\"\\Id\\otimes\\tau_F\"'] (keeps the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\Id\\otL\\tau_F",
+  "note": "The same arrow is labelled Id (x)^L tau_F in the left triangle, and the three other tensor labels of the diagrams carry the L: the typist left out the L here."
+ },
+ {
+  "page": 157,
+  "where": "Corollaire 8.4, statement",
+  "scan": "underlined: 'étant donnés comme en', 'soient', 'un isomorphisme', 'd'où', 'On a alors'; 'E, F, U', '(8.2),' and the formulas not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(E,F,U\\) étant donnés comme en (8.2), soient \\(u\\in\\Hom(E|U,E|U)\\), \\(s:E|U\\to F|U\\) un isomorphisme, d'où \\(sus^{-1}\\in\\Hom(F|U,F|U)\\). On a alors",
+   "new": "\\(E,F,U\\) \\emph{étant donnés comme en} (8.2), \\emph{soient} \\(u\\in\\Hom(E|U,E|U)\\), \\(s:E|U\\to F|U\\) \\emph{un isomorphisme}, \\emph{d'où} \\(sus^{-1}\\in\\Hom(F|U,F|U)\\). \\emph{On a alors}"
+  },
+  "note": "As Proposition 8.3 (p. 156)."
+ },
+ {
+  "page": 157,
+  "where": "Remarque 8.5, 'notons E(C) la S-catégorie fibrée'",
+  "scan": "plain typed capital E, not underlined (both scans; crops_156_160/w157_rem_lines.png)",
+  "tex": "\\mathcal E",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mathcal E(\\mathcal C)\\)",
+   "new": "\\(E(\\mathcal C)\\)"
+  },
+  "note": "The five \\mathcal E of main.tex that stand for this E (pp. 157-158) are each listed; the print types E like the complex E elsewhere on the page."
+ },
+ {
+  "page": 157,
+  "where": "Remarque 8.5, 'S-foncteur de E(D(S)_parf)^is dans A'",
+  "scan": "plain typed E (both scans)",
+  "tex": "\\mathcal E",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "de \\(\\mathcal E(",
+   "new": "de \\(E("
+  },
+  "note": "As the entry before."
+ },
+ {
+  "page": 157,
+  "where": "Remarque 8.5, same formula, index of D(S)",
+  "scan": "the index 'parf' underlined (both scans; witness p. 157)",
+  "tex": "\\Dpx(S)_{\\parf} (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\parf})^{\\mathrm{is}}\\)",
+   "new": "\\underline{\\parf}})^{\\mathrm{is}}\\)"
+  },
+  "note": "The underlined index is the notation of 5.8.4 b) (perfect and of finite tor-dimension), as fixed on pp. 137-138 (\\Dpx({}_A S)_{\\underline{\\mathrm{parf}}}); 8.1 refers to it. The target of the forgetful functor in the display and the index on p. 158 are plain parf in the print."
+ },
+ {
+  "page": 157,
+  "where": "Remarque 8.5, 'dans A (où l'exposant is signifie'",
+  "scan": "A underlined (both scans)",
+  "tex": "\\mathcal A",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "dans \\(\\mathcal A\\)",
+   "new": "dans \\(\\underline A\\)"
+  },
+  "note": "The discrete S-category defined by the sheaf A (6.6 a)), which the TeX writes \\underline F for a sheaf F (main.tex lines 3239-3300); the print underlines the typed A."
+ },
+ {
+  "page": 157,
+  "where": "Remarque 8.5, 'et A est la S-catégorie à fibres discrètes'",
+  "scan": "A underlined (both scans)",
+  "tex": "\\mathcal A",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "et \\(\\mathcal A\\) est",
+   "new": "et \\(\\underline A\\) est"
+  },
+  "note": "As the entry before."
+ },
+ {
+  "page": 157,
+  "where": "display of the forgetful functor, source",
+  "scan": "plain typed E (both scans)",
+  "tex": "\\mathcal E",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\[\n  \\mathcal E(",
+   "new": "\\[\n  E("
+  },
+  "note": "As above."
+ },
+ {
+  "page": 157,
+  "where": "display of the forgetful functor, index of the source",
+  "scan": "'parf' underlined in the source, plain in the target (both scans; witness p. 157)",
+  "tex": "\\Dpx(S)_{\\parf} on both sides",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\parf})^{\\mathrm{is}}\n  \\longrightarrow",
+   "new": "\\underline{\\parf}})^{\\mathrm{is}}\n  \\longrightarrow"
+  },
+  "note": "The print maps E(D(S)_parf-underlined)^is to E(D(S)_parf)^is (finite tor-dimension forgotten); the TeX has the same category on both sides."
+ },
+ {
+  "page": 157,
+  "where": "display of the forgetful functor, target",
+  "scan": "plain typed E (both scans)",
+  "tex": "\\mathcal E",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "  \\mathcal E(\\Dpx(S)_{\\parf})^{\\mathrm{is}}\n\\]",
+   "new": "  E(\\Dpx(S)_{\\parf})^{\\mathrm{is}}\n\\]"
+  },
+  "note": "As above; the index of the target stays plain."
+ },
+ {
+  "page": 158,
+  "where": "line 1, 'S-foncteur de E(D(S)_parf)^is dans A.'",
+  "scan": "plain typed E (both scans)",
+  "tex": "\\mathcal E",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "de \\(\\mathcal E(",
+   "new": "de \\(E("
+  },
+  "note": "As p. 157. The index parf is plain here in the print, as in the TeX."
+ },
+ {
+  "page": 158,
+  "where": "line 1, 'dans A.'",
+  "scan": "A underlined (both scans)",
+  "tex": "\\mathcal A",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "dans \\(\\mathcal A\\).",
+   "new": "dans \\(\\underline A\\)."
+  },
+  "note": "As p. 157."
+ },
+ {
+  "page": 158,
+  "where": "Proposition 8.6, statement",
+  "scan": "underlined: 'Soient', 'd'où', 'On a'; the formulas not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient \\(U\\in\\Ob S\\), \\(E,F\\in\\Parf(U)\\), \\(u\\in\\Hom(E,E)\\), \\(v\\in\\Hom(F,F)\\), d'où \\(u\\otL v\\in\\Hom(E\\otL F,E\\otL F)\\). On a",
+   "new": "\\emph{Soient} \\(U\\in\\Ob S\\), \\(E,F\\in\\Parf(U)\\), \\(u\\in\\Hom(E,E)\\), \\(v\\in\\Hom(F,F)\\), \\emph{d'où} \\(u\\otL v\\in\\Hom(E\\otL F,E\\otL F)\\). \\emph{On a}"
+  },
+  "note": "As Proposition 8.3 (p. 156)."
+ },
+ {
+  "page": 158,
+  "where": "heading of the bibliography (printed at the top of p. 159; the TeX has it under the folio-158 marker)",
+  "scan": "BIBLIOGRAPHIE: typed capitals, no underline (both scans)",
+  "tex": "\\section*{Bibliographie}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\section*{Bibliographie}",
+   "new": "\\section*{BIBLIOGRAPHIE}"
+  },
+  "note": "Filed under p. 158 because the line stands in page_158.tex now: apply before the folio-159 marker move (the marker command's anchor '\\section*{' works before or after this edit). As the p. 19 heading (applied: \\section*{\\underline{BIBLIOGRAPHIE}}, which the print underlines there)."
+ },
+ {
+  "page": 159,
+  "where": "start of page",
+  "scan": "p. 159 begins with the heading BIBLIOGRAPHIE; p. 158 ends '... On termine grâce à (8.1.1).' (both scans)",
+  "tex": "\\section*{Bibliographie}, \\begin{description}[...] and '\\item[{[H]}]' are the last lines of page_158.tex (under the folio-158 marker); page_159.tex begins 'Hartshorne, R.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 159 really begins with the heading. Move the folio-159 marker above it: python -I move_marker.py 6 159 '\\section*{' --before (the nearest '\\section*{' before the marker is this heading, before or after the BIBLIOGRAPHIE edit; simulated on both layers, crops_156_160/sim_markers2.py: '... grâce à (8.1.1).', blank line, the marker, the heading, '\\begin{description}...', '\\item[{[H]}]', 'Hartshorne, R. ...'). A heading at the top of a page, which the script did not move."
+ },
+ {
+  "page": 159,
+  "where": "bibliography entry [H], title",
+  "scan": "title in plain type, not underlined (both scans)",
+  "tex": "\\emph{Residues and Duality}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Residues and Duality}",
+   "new": "Residues and Duality"
+  },
+  "note": "The typescript neither underlines nor italicizes the titles; same fix as the p. 19 bibliography (applied)."
+ },
+ {
+  "page": 159,
+  "where": "bibliography entry [V], title",
+  "scan": "title in plain type, not underlined (both scans)",
+  "tex": "\\emph{Catégories dérivées}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Catégories dérivées}",
+   "new": "Catégories dérivées"
+  },
+  "note": "As entry [H]."
+ },
+ {
+  "page": 159,
+  "where": "bibliography entry [G], title",
+  "scan": "title in plain type, not underlined (both scans)",
+  "tex": "\\emph{Cohomologie non abélienne}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Cohomologie non abélienne}",
+   "new": "Cohomologie non abélienne"
+  },
+  "note": "As entry [H]."
+ },
+ {
+  "page": 159,
+  "where": "bibliography entry SGA 4, title",
+  "scan": "title in plain type, not underlined (both scans)",
+  "tex": "\\emph{Cohomologie étale des schémas}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Cohomologie étale des schémas}",
+   "new": "Cohomologie étale des schémas"
+  },
+  "note": "As entry [H]."
+ },
+ {
+  "page": 159,
+  "where": "bibliography entry SGA 5, title",
+  "scan": "title in plain type, not underlined (both scans)",
+  "tex": "\\emph{Cohomologie \\(\\ell\\)-adique et fonctions L}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Cohomologie \\(\\ell\\)-adique et fonctions L}",
+   "new": "Cohomologie \\(\\ell\\)-adique et fonctions L"
+  },
+  "note": "As entry [H]."
+ },
+ {
+  "page": 159,
+  "where": "bibliography entry [1], title",
+  "scan": "title in plain type, not underlined (both scans)",
+  "tex": "\\emph{Topos annelés et schémas relatifs}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Topos annelés et schémas relatifs}",
+   "new": "Topos annelés et schémas relatifs"
+  },
+  "note": "As entry [H]."
+ },
+ {
+  "page": 159,
+  "where": "bibliography entry [2], title",
+  "scan": "title in plain type, not underlined (both scans)",
+  "tex": "\\emph{Les catégories dérivées des catégories abéliennes}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Les catégories dérivées des catégories abéliennes}",
+   "new": "Les catégories dérivées des catégories abéliennes"
+  },
+  "note": "As entry [H]."
+ },
+ {
+  "page": 159,
+  "where": "bibliography entry [MULT], title",
+  "scan": "title in plain type, not underlined (both scans)",
+  "tex": "\\emph{Homological Algebra}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Homological Algebra}",
+   "new": "Homological Algebra"
+  },
+  "note": "As entry [H]."
+ },
+ {
+  "page": 160,
+  "where": "exposé heading",
+  "scan": "'Exposé II' on a line of its own, underlined, no full stop; the title on the next line (both scans)",
+  "tex": "\\section*{Exposé II. Existence de résolutions globales}: number and title run together with a full stop",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\section*{Exposé II. ",
+   "new": "\\section*{\\underline{Exposé II}\\\\[3pt] "
+  },
+  "note": "Form of the applied headings of p. 1 (\\section*{\\underline{Exposé 0}}) and p. 78 (two-line title with \\\\[3pt]). Apply together with the next entry (the two edits make one heading); if exposé headings are to stay without underline, drop \\underline and keep the line break."
+ },
+ {
+  "page": 160,
+  "where": "exposé title",
+  "scan": "EXISTENCE DE RÉSOLUTIONS GLOBALES: capitals (the accent of RÉSOLUTIONS added by hand), double underline (both scans)",
+  "tex": "Existence de résolutions globales (small letters, no underline)",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "Existence de résolutions globales}",
+   "new": "\\underline{\\underline{EXISTENCE DE RÉSOLUTIONS GLOBALES}}}"
+  },
+  "note": "As the applied p. 78 title (\\underline{\\underline{GÉNÉRALITÉS ...}})."
+ },
+ {
+  "page": 160,
+  "where": "author line",
+  "scan": "par L. ILLUSIE: the name in capitals, the line underlined (both scans)",
+  "tex": "par L. Illusie",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "par L. Illusie",
+   "new": "\\underline{par L. ILLUSIE}"
+  },
+  "note": "As the applied p. 78 author line."
+ },
+ {
+  "page": 160,
+  "where": "Proposition 1.1 (all statements of Exposé II)",
+  "scan": "the statement is underlined by word groups: 'Soit', 'et supposons que'; (i) 'est quasi-relevable dans', 'étant considérée comme catégorie fibrée sur un site ponctuel'; 'Alors'; b) 'Soient', 'et', 'Si', 'est', '-pseudo-cohérent', 'En d'autres termes', 'on a'; 'En outre', 'le foncteur canonique', 'où', 'désigne la sous-catégorie épaisse de', 'formée des com-' (both scans)",
+  "tex": "roman throughout",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription: no statement of Exposé II is underlined in main.tex (lines 3744-4778 use \\emph only for 'Preuve.' and some defined terms: famille ample 4065, divisoriel 4067, mou 4186, Stein 4230). Three examples on this page: 'Soit S in ob S, et supposons que :', '(i) C_oS est quasi-relevable dans C_S', 'Alors :'. One pass for the exposé (word groups or one block per statement, see the pending block decision)."
+ }
+]

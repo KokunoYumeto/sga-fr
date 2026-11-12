@@ -1,0 +1,141 @@
+[
+  {
+    "page": 267,
+    "where": "Définition 5.4, second sentence: '(resp. semi-continue inférieurement, rep. localement constante) si elle l'est en tout point'",
+    "scan": "rep. localement constante",
+    "tex": "rep. localement constante",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "resp. localement constante",
+    "note": "Typing error for 'resp.' (the first sentence of the definition has 'resp.' in both places). The TeX keeps the printed reading; the corrected layer already reads 'resp.'."
+  },
+  {
+    "page": 267,
+    "where": "statements of these pages: Définition 5.4 (p. 267), Lemme 5.5 with (i)-(iii) (pp. 267-268), Corollaire 5.6 with (i)-(ii) (p. 270)",
+    "scan": "the typescript underlines each statement word group by word group (e.g. 'Soit' ... 'un topos', 'notons' ... 'l'ensemble de ses points'; 'Soient' ... 'un topos localement annelé'; 'Soient' ... 'un schéma')",
+    "tex": "the statements in roman, without \\underline or \\emph",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": null,
+    "note": "Exposé III follows the Exposé II pattern of GLOBAL_ISSUES 82 (as already reported for pp. 222-230): one per-exposé decision, not itemized. No \\emph on defined terms that the print leaves plain on these pages; no category L."
+  },
+  {
+    "page": 268,
+    "where": "Preuve (i): 'On a' and display (5.5.1); call of footnote (1) 'rg( ) désigne le rang d'un complexe parfait (I 6.11).'",
+    "scan": "the call (1) stands at the end of display (5.5.1), after its final comma; 'On a' has no call",
+    "tex": "\\footnote{...} after 'On a', before the display",
+    "kind": "other",
+    "confidence": "high",
+    "fix": {
+      "old": "On a\\footnote{\\(\\operatorname{rg}(\\ )\\) désigne le rang d'un complexe parfait (I 6.11).}\n\\begin{equation}\n \\operatorname{rg}(E_x\\otimes_{\\mathcal O_{X,x}}^{\\mathrm L}k(x))=\\sum(-1)^i\\operatorname{rg}_{k(x)}H^i(E_x\\otimes_{\\mathcal O_{X,x}}^{\\mathrm L}k(x)),\\tag{5.5.1}\n\\end{equation}",
+      "new": "On a\n\\begin{equation}\n \\operatorname{rg}(E_x\\otimes_{\\mathcal O_{X,x}}^{\\mathrm L}k(x))=\\sum(-1)^i\\operatorname{rg}_{k(x)}H^i(E_x\\otimes_{\\mathcal O_{X,x}}^{\\mathrm L}k(x)),\\qquad\\mbox{\\footnotemark}\\tag{5.5.1}\n\\end{equation}\n\\footnotetext{\\(\\operatorname{rg}(\\ )\\) désigne le rang d'un complexe parfait (I 6.11).}%"
+    },
+    "note": "One edit: takes the footnote off 'On a' and sets its call in the display with \\mbox{\\footnotemark} and \\footnotetext after the display, the form of the applied p. 222 fix (\\mbox, because \\text steps the counter four times); the % after \\footnotetext keeps 'comme' from starting with a space. Test-compiled with amsmath and hyperref: the call and the note get the same number, the next footnote the following one. Footnote text unchanged."
+  },
+  {
+    "page": 269,
+    "where": "start of page",
+    "scan": "p. 268 ends '... l'assertion (i) résulte donc de' (then its footnote); p. 269 begins 'la compatibilité du rang avec les images inverses (I 6.12).' (both scans)",
+    "tex": "'la' is the last word of page_268.tex (under the folio-268 marker); page_269.tex begins 'compatibilité du rang'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 269 really begins with 'la'. Move the folio-269 marker before it: python -I move_marker.py 6 269 \"la\" --before (simulated read-only on both layers: '... résulte donc de', the marker, then 'la', then 'compatibilité du rang')."
+  },
+  {
+    "page": 269,
+    "where": "(ii), first assertion: 'donc il suffit de prouver que la fonction x ⟼ rg_{k(x)}H^{-1}(E_{k(x)}) (resp. rg_{k(x)}H^1(E_{k(x)}) est semi-continue supérieurement'",
+    "scan": "(resp. rg_{k(x)}H^1(E_{k(x)}) est semi-continue: the parenthesis opened before 'resp.' is never closed (both scans)",
+    "tex": "(resp. \\(\\operatorname{rg}_{k(x)}H^1(E_{k(x)})\\)) est semi-continue",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": {
+      "old": "H^1(E_{k(x)})\\))",
+      "new": "H^1(E_{k(x)})\\)"
+    },
+    "corrected": "(resp. \\(\\operatorname{rg}_{k(x)}H^1(E_{k(x)})\\))",
+    "note": "Closing parenthesis missing in the print; the TeX silently supplies it. The fix restores the printed reading."
+  },
+  {
+    "page": 269,
+    "where": "(ii), first assertion: '(puisque la fonction x ⟼ rg(E_x) = rg(E_{k(X)}) est localement constante)'",
+    "scan": "rg(E_{k(X)}) with a capital X in the index (both scans)",
+    "tex": "\\operatorname{rg}(E_{k(x)})",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": {
+      "old": "\\operatorname{rg}(E_{k(x)})",
+      "new": "\\operatorname{rg}(E_{k(X)})"
+    },
+    "corrected": "\\operatorname{rg}(E_{k(x)})",
+    "note": "Capital X for the point x; the TeX silently corrects it. The fix restores the printed reading."
+  },
+  {
+    "page": 269,
+    "where": "(ii), second assertion: 'Z'^{p+1}(E) et Z'^p(E)) sont plats d'après (5.2 (iii))'",
+    "scan": "Z'^p(E)) with a second closing parenthesis (both scans)",
+    "tex": "\\(Z'^p(E)\\)) sont plats",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "\\(Z'^p(E)\\) sont plats",
+    "note": "Stray parenthesis of the print; the TeX keeps the printed reading; the corrected layer already drops it."
+  },
+  {
+    "page": 269,
+    "where": "(ii), second assertion: '... sont plats d'après (5.2 (iii)), donc (I 5.8.3) localement libre de type fini' (the first of the two 'localement libre de type fini' on the page)",
+    "scan": "localement libre de type fini (both scans)",
+    "tex": "localement libre de type fini",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "localement libres de type fini",
+    "note": "Agreement slip: the subject is 'Z'^{p+1}(E) et Z'^p(E)'. The TeX keeps the printed reading; the corrected layer already reads 'libres'. The second occurrence ('H^p(E) est localement libre de type fini') is right."
+  },
+  {
+    "page": 269,
+    "where": "footnote (*): 'compte tenu de ce que l'on a H^1(E_{k(x)} ≃ H^1(E)_{k(x)}.'",
+    "scan": "H^1(E_{k(x)} ≃ H^1(E)_{k(x)}: the parenthesis of H^1( is not closed (both scans)",
+    "tex": "\\(H^1(E_{k(x)})\\simeq H^1(E)_{k(x)}\\)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": {
+      "old": "H^1(E_{k(x)})\\simeq",
+      "new": "H^1(E_{k(x)}\\simeq"
+    },
+    "corrected": "H^1(E_{k(x)})\\simeq",
+    "note": "Closing parenthesis missing in the print; the TeX silently supplies it. The fix restores the printed reading."
+  },
+  {
+    "page": 270,
+    "where": "start of page",
+    "scan": "p. 269 ends '... = rg(H^p(E)_x)' (then its footnote); p. 270 begins 'est localement constante, ce qui achève la preuve de (ii).' (both scans)",
+    "tex": "'est' is the last word of page_269.tex (under the folio-269 marker); page_270.tex begins 'localement constante'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 270 really begins with 'est'. Move the folio-270 marker before it: python -I move_marker.py 6 270 \"est\" --before (simulated read-only on both layers: '... =\\operatorname{rg}(H^p(E)_x)\\)', the marker, then 'est', then 'localement constante')."
+  },
+  {
+    "page": 270,
+    "where": "end of page",
+    "scan": "p. 270 ends '... et, sur U, la fonction'; p. 271 begins 'y ⟼ rg_{k(x)}H^p(E ⊗^L_X k(y)) est localement constante d'après (5.5 (ii)).'",
+    "tex": "page_270.tex ends with '\\(y\\mapsto\\operatorname{rg}_{k(x)}H^p(E\\otimes_X^{\\mathrm L}k(y))\\) est', which belongs to p. 271",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 271 really begins with the formula y ⟼ ... and 'est'. Move the folio-271 marker before it: python -I move_marker.py 6 271 \"\\(y\\mapsto\" --before (simulated read-only on both layers: '... sur \\(U\\), la fonction', the marker, then '\\(y\\mapsto...\\) est', then 'localement constante d'après (5.5 (ii))')."
+  },
+  {
+    "page": 270,
+    "where": "end of page_270.tex: the formula 'y ⟼ rg_{k(x)}H^p(E ⊗^L_X k(y))', printed as the first line of p. 271",
+    "scan": "y ⟼ rg_{k(x)}H^p(E ⊗^L_X k(y)) (p. 271)",
+    "tex": "\\operatorname{rg}_{k(x)}H^p(E\\otimes_X^{\\mathrm L}k(y))",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "\\operatorname{rg}_{k(y)}H^p(E\\otimes_X^{\\mathrm L}k(y))",
+    "note": "The function of y needs the rank over k(y). The TeX keeps the printed reading; the corrected layer already reads k(y). Printed on p. 271: record it there once the folio-271 marker is moved (entry above)."
+  }
+]

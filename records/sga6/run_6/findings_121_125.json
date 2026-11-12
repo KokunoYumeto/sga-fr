@@ -1,0 +1,578 @@
+[
+ {
+  "page": 121,
+  "where": "first line, 'localement cofinale dans (Qis/F).'",
+  "scan": "'Qis/F' underlined inside the parentheses (both scans; crops_121_125/p121_top.png, w121_top.png): the fibred category of Scholie 4.4, underlined there too on p. 120 ('une catégorie (Qis/F) fibrée'), while its fibre (Qis/F_X)° is not",
+  "tex": "\\((\\Qis/F)\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\((\\Qis/F)\\)",
+   "new": "\\((\\underline{\\Qis/F})\\)"
+  },
+  "note": "Same reading as the p. 120 entry of findings_116_120.json ('une catégorie \\((\\Qis/F)\\) fibrée', applied)."
+ },
+ {
+  "page": 121,
+  "where": "Notation 4.5, 'le faisceau sur S/X associé au préfaisceau'",
+  "scan": "S̲ followed by '/X' lowered as an index, S̲_{/X} (both scans; crops_121_125/p121_SX.png, w121_SX.png)",
+  "tex": "\\(S/X\\) on the line",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "sur \\(S/X\\)",
+   "new": "sur \\(S_{/X}\\)"
+  },
+  "note": "The TeX writes \\(S_{/X}\\) for the same notation elsewhere in Exposé I (main.tex lines 1868, 1871, 1898, 2477)."
+ },
+ {
+  "page": 121,
+  "where": "Corollaire 4.6, statement before the display",
+  "scan": "underlined by word groups: 'Soient', 'étant strictement parfait', 'La flèche canonique' (both scans)",
+  "tex": "no emphasis: the statement is in roman (Corollaire 4.3 on p. 120 has \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient \\(E,F\\in\\Ob\\Cpx(\\mathcal C_S)\\), \\(E\\) étant strictement parfait. La flèche canonique",
+   "new": "\\emph{Soient \\(E,F\\in\\Ob\\Cpx(\\mathcal C_S)\\), \\(E\\) étant strictement parfait. La flèche canonique}"
+  },
+  "note": "The display between the two parts is not underlined."
+ },
+ {
+  "page": 121,
+  "where": "Corollaire 4.6, after the display: 'est un isomorphisme.'",
+  "scan": "'est un isomorphisme' underlined, the full stop not (both scans)",
+  "tex": "est un isomorphisme. in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est un isomorphisme.",
+   "new": "\\emph{est un isomorphisme}."
+  },
+  "note": "Second part of the statement."
+ },
+ {
+  "page": 121,
+  "where": "Preuve of 4.6, display 'Hom_{D(C_X)}(E_X,F_X) = lim_{(Qis/E_X)°} Hom_{K(C_X)}(· , F_X)'",
+  "scan": "both Hom typed without underline, unlike the underlined Hom of the corollary's display just above (both scans; crops_121_125/p121_proofformula.png, p121_cor46formula.png)",
+  "tex": "\\underline{\\Hom} twice",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{\\Hom}_{\\Dpx(\\mathcal C_X)}(E_X,F_X)\n  = \\varinjlim_{(\\Qis/E_X)^\\circ}\\underline{\\Hom}_{\\Kpx(\\mathcal C_X)}",
+   "new": "\\Hom_{\\Dpx(\\mathcal C_X)}(E_X,F_X)\n  = \\varinjlim_{(\\Qis/E_X)^\\circ}\\Hom_{\\Kpx(\\mathcal C_X)}"
+  },
+  "note": "The formula is the one for the Hom groups at each X (4.6 follows by passing to the associated sheaves); the print is right, the TeX adds the sheaf-Hom underline."
+ },
+ {
+  "page": 121,
+  "where": "Définition 4.7, opening 'Soit F ∈ ob D(C_S) et soient a, b ∈ Z tels que a ≤ b. Nous dirons que F est d'amplitude ...'",
+  "scan": "underlined: 'Soit', 'et soient', 'tels que', 'Nous dirons que', 'est d'; the defined term 'amplitude C_o-parfaite contenue dans l'intervalle [a,b]' is not underlined (both scans; crops_121_125/p121_def47.png)",
+  "tex": "no emphasis: the definition is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(F\\in\\Ob\\Dpx(\\mathcal C_S)\\) et soient \\(a,b\\in\\mathbb Z\\) tels que \\(a\\leq b\\). Nous dirons que \\(F\\) est d'amplitude",
+   "new": "\\emph{Soit \\(F\\in\\Ob\\Dpx(\\mathcal C_S)\\) et soient \\(a,b\\in\\mathbb Z\\) tels que \\(a\\leq b\\). Nous dirons que \\(F\\) est d'}amplitude"
+  },
+  "note": "The defined term stays in roman, as in Définitions 1.4.3, 2.1 and 2.3 (pp. 93-98)."
+ },
+ {
+  "page": 121,
+  "where": "Définition 4.7, 'et nous écrirons'",
+  "scan": "underlined (both scans)",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et nous écrirons",
+   "new": "\\emph{et nous écrirons}"
+  },
+  "note": ""
+ },
+ {
+  "page": 121,
+  "where": "Définition 4.7, display 'C_o-parf-amp(F) ⊂ [a,b] ,'",
+  "scan": "'parf' in small letters (both scans)",
+  "tex": "\\Parf, defined as \\operatorname{Parf} (main.tex line 26): renders 'Parf' with a capital P",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal C_0\\text{-}\\Parf\\text{-}\\amp(F)",
+   "new": "\\mathcal C_0\\text{-}\\mathrm{parf}\\text{-}\\amp(F)"
+  },
+  "note": "The print capitalizes Parf only in the category name Parf(C,C_o); the index '-parf' and the name 'C_o-parf-amp' are small (pp. 122, 124 likewise). These five are the only \\Parf of main.tex in such places."
+ },
+ {
+  "page": 121,
+  "where": "Définition 4.7, 'si l'ensemble des X au-dessus de S tels qu'il existe un quasi-isomorphisme'",
+  "scan": "underlined: 'si l'ensemble des', 'au-dessus de', 'tels qu'il existe un quasi-isomorphisme' (both scans)",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "si l'ensemble des \\(X\\) au-dessus de \\(S\\) tels qu'il existe un quasi-isomorphisme",
+   "new": "\\emph{si l'ensemble des \\(X\\) au-dessus de \\(S\\) tels qu'il existe un quasi-isomorphisme}"
+  },
+  "note": "Ends where p. 121 ends; the next words are printed on p. 122 (next entry)."
+ },
+ {
+  "page": 121,
+  "where": "Définition 4.7, 'F' → F de C(C_X)' (printed at the top of p. 122)",
+  "scan": "'de' underlined (p. 122, first line; both scans)",
+  "tex": "\\(F'\\to F\\) de \\(\\Cpx(\\mathcal C_X)\\) in roman, at the end of page_121.tex",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(F'\\to F\\) de \\(\\Cpx(\\mathcal C_X)\\)",
+   "new": "\\(F'\\to F\\) \\emph{de} \\(\\Cpx(\\mathcal C_X)\\)"
+  },
+  "note": "These words belong to p. 122 (marker entry there); the fix is given here, where the text stands now: if the folio-122 marker is moved first, apply this edit on p. 122 (its old is then unique there). The p. 122 anchor '\\(F'\\to F\\)' works before or after this fix."
+ },
+ {
+  "page": 121,
+  "where": "pp. 121-125: the site S̲",
+  "scan": "S underlined where it names the site: p. 121 'une S̲-catégorie fibrée', 'X ∈ ob S̲'; p. 122 '(S̲,A) un topos annelé', 'dans D(S̲)'; p. 125 'Supposons que S̲ soit un site ponctuel' (both scans)",
+  "tex": "plain \\(S\\) throughout",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, as reported for pp. 84-85, 93-95 and 100: one decision for the exposé, not a page fix."
+ },
+ {
+  "page": 122,
+  "where": "start of page",
+  "scan": "p. 122 begins 'F' → F de C(C_X) avec F' strictement C_o-parfait (2.1)'; p. 121 ends '... tels qu'il existe un quasi-isomorphisme' (both scans)",
+  "tex": "'\\(F'\\to F\\) de \\(\\Cpx(\\mathcal C_X)\\)' ends the last line of page_121.tex (under the folio-121 marker); page_122.tex begins 'avec \\(F'\\) strictement'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 122 really begins with '\\(F'\\to F\\)'. python -I move_marker.py 6 122 \"\\(F'\\to F\\)\" --before (the last occurrence before the marker is this one, before or after the p. 121 entries; simulated on both layers: '... un quasi-isomorphisme ', the marker, '\\(F'\\to F\\) de \\(\\Cpx(\\mathcal C_X)\\)', 'avec \\(F'\\) strictement ...')."
+ },
+ {
+  "page": 122,
+  "where": "Définition 4.7 continued, 'avec F' strictement C_o-parfait (2.1), et tel que F'^i = 0 pour i ∉ [a,b], est un raffinement de S.'",
+  "scan": "underlined: 'avec', 'strictement', '-parfait', 'et tel que', 'pour', 'est un raffinement de'; 'S.' not (both scans)",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "avec \\(F'\\) strictement \\(\\mathcal C_0\\)-parfait (2.1), et tel que \\(F'^i=0\\) pour \\(i\\notin[a,b]\\), est un raffinement de",
+   "new": "\\emph{avec \\(F'\\) strictement \\(\\mathcal C_0\\)-parfait (2.1), et tel que \\(F'^i=0\\) pour \\(i\\notin[a,b]\\), est un raffinement de}"
+  },
+  "note": ""
+ },
+ {
+  "page": 122,
+  "where": "'(En vertu de (4.3) cette condition équivaut ... par \"isomorphisme de D(C_X)\".) Nous dirons que F est d'amplitude C_o-parfaite finie'",
+  "scan": "the parenthesis is underlined by word groups ('En vertu de', 'cette condition équivaut à celle obtenue en remplaçant l'expression', 'quasi-isomorphisme de', 'par', 'isomorphisme de'), then 'Nous dirons que', 'est d'; the defined term 'amplitude C_o-parfaite finie' is not (both scans; crops_121_125/w122_top.png)",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(En vertu de (4.3) cette condition équivaut à celle obtenue en remplaçant l'expression « quasi-isomorphisme de \\(\\Cpx(\\mathcal C_X)\\) » par « isomorphisme de \\(\\Dpx(\\mathcal C_X)\\) ».) Nous dirons que \\(F\\) est d'amplitude",
+   "new": "(\\emph{En vertu de (4.3) cette condition équivaut à celle obtenue en remplaçant l'expression « quasi-isomorphisme de \\(\\Cpx(\\mathcal C_X)\\) » par « isomorphisme de \\(\\Dpx(\\mathcal C_X)\\) ».}) \\emph{Nous dirons que \\(F\\) est d'}amplitude"
+  },
+  "note": ""
+ },
+ {
+  "page": 122,
+  "where": "'s'il existe des entiers a et b tels que'",
+  "scan": "underlined: 's'il existe des entiers', 'et', 'tels que' (both scans)",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "s'il existe des entiers \\(a\\) et \\(b\\) tels que",
+   "new": "\\emph{s'il existe des entiers \\(a\\) et \\(b\\) tels que}"
+  },
+  "note": ""
+ },
+ {
+  "page": 122,
+  "where": "'tels que C_o-parf-amp(F) ⊂ [a,b].'",
+  "scan": "'parf' in small letters (both scans)",
+  "tex": "\\(\\Parf\\): renders 'Parf'",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\Parf\\)-\\(\\amp(F)",
+   "new": "\\(\\mathrm{parf}\\)-\\(\\amp(F)"
+  },
+  "note": "As the display of p. 121."
+ },
+ {
+  "page": 122,
+  "where": "'Nous dirons que F est C_o-parfait si F est localement d'amplitude C_o-parfaite finie (*).'",
+  "scan": "underlined: 'Nous dirons que', 'est', 'si', 'est localement', 'd'amplitude', '-parfaite finie'; the defined term 'C_o-parfait' is not (both scans; crops_121_125/p122_lines5to7.png)",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Nous dirons que \\(F\\) est \\(\\mathcal C_0\\)-parfait si \\(F\\) est localement d'amplitude \\(\\mathcal C_0\\)-parfaite finie\\footnote",
+   "new": "\\emph{Nous dirons que \\(F\\) est} \\(\\mathcal C_0\\)-parfait \\emph{si \\(F\\) est localement d'amplitude \\(\\mathcal C_0\\)-parfaite finie}\\footnote"
+  },
+  "note": "The footnote mark stays outside, as in the print."
+ },
+ {
+  "page": 122,
+  "where": "Exemple 4.8, 'C la S-catégorie définie par U ↦ (catégorie des A_U-Modules à gauche), C_o la sous-S-catégorie'",
+  "scan": "the map stands in the running text: 'U ⊢→ (catégorie des A_U -Modules à gauche), C_o la sous-S-catégorie définie' is one line (both scans)",
+  "tex": "a display \\[ U\\longmapsto (\\text{catégorie des }A_U\\text{-Modules à gauche}), \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "définie par\n\\[\n  U\\longmapsto (\\text{catégorie des }A_U\\text{-Modules à gauche}),\n\\]\n\\(\\mathcal C_0\\)",
+   "new": "définie par \\(U\\longmapsto\\) (catégorie des \\(A_U\\)-Modules à gauche), \\(\\mathcal C_0\\)"
+  },
+  "note": "The TeX makes an inline formula a display (same kind of fix as pp. 21 and 80). The words in parentheses are set as text so that the line can break."
+ },
+ {
+  "page": 122,
+  "where": "Exemple 4.8, 'définie par U ↦ (catégorie des A_U-Modules à gauche facteurs directs de Modules libres de type fini). Le couple'",
+  "scan": "in the running text, over two lines (both scans)",
+  "tex": "a display \\[ U\\longmapsto (\\text{catégorie des }A_U\\text{-Modules à gauche facteurs directs de Modules libres de type fini}). \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "définie par\n\\[\n  U\\longmapsto (\\text{catégorie des }A_U\\text{-Modules à gauche facteurs directs de Modules libres de type fini}).\n\\]\nLe couple",
+   "new": "définie par \\(U\\longmapsto\\) (catégorie des \\(A_U\\)-Modules à gauche facteurs directs de Modules libres de type fini). Le couple"
+  },
+  "note": "As the entry before."
+ },
+ {
+  "page": 122,
+  "where": "Notation 4.9, 'D(C)_{C_o-parf}'",
+  "scan": "index '-parf' in small letters (both scans)",
+  "tex": "_{\\mathcal C_0\\text{-}\\Parf}: renders 'Parf'",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal C_0\\text{-}\\Parf}",
+   "new": "\\mathcal C_0\\text{-}\\mathrm{parf}}"
+  },
+  "note": "As p. 121; the following Parf(C,C_o) is capital in the print and stays \\Parf."
+ },
+ {
+  "page": 122,
+  "where": "Notation 4.9, 'nous écrirons D(_A S)_parf , ou Parf(_A S)'",
+  "scan": "index 'parf' in small letters (both scans)",
+  "tex": "_{\\Parf}: renders 'Parf'",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(_A S)_{\\Parf}",
+   "new": "(_A S)_{\\mathrm{parf}}"
+  },
+  "note": "As the entry before; Parf(_A S) and Parf(S) are capital in the print."
+ },
+ {
+  "page": 123,
+  "where": "label 'Proposition 4.10'",
+  "scan": "'Proposition 4.10' with no full stop after the number (both scans; crops_121_125/p123_label.png, w123_full.png); the other labels of pp. 121-125 have one",
+  "tex": "\\textbf{Proposition 4.10.} (silently supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textbf{Proposition 4.10.}",
+   "new": "\\textbf{Proposition 4.10}"
+  },
+  "corrected": "\\textbf{Proposition 4.10.}",
+  "note": "The typist left out the label's full stop; the TeX silently supplies it (as Proposition 2.7, p. 100)."
+ },
+ {
+  "page": 123,
+  "where": "Proposition 4.10, 'La catégorie Parf(C,C_o) est une sous-S-catégorie triangulée de D(C) (1.1.4). Le foncteur canonique'",
+  "scan": "underlined: 'La catégorie Parf', 'est une sous-', '-catégorie triangulée', 'de', 'Le foncteur canonique' (both scans)",
+  "tex": "no emphasis: the statement is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "La catégorie \\(\\Parf(\\mathcal C,\\mathcal C_0)\\) est une sous-\\(S\\)-catégorie triangulée de \\(\\Dpx(\\mathcal C)\\) (1.1.4). Le foncteur canonique",
+   "new": "\\emph{La catégorie \\(\\Parf(\\mathcal C,\\mathcal C_0)\\) est une sous-\\(S\\)-catégorie triangulée de \\(\\Dpx(\\mathcal C)\\) (1.1.4). Le foncteur canonique}"
+  },
+  "note": ""
+ },
+ {
+  "page": 123,
+  "where": "Proposition 4.10, 'induit une S-équivalence sur les champs associés ([G] II 2.2.4), ce qui signifie :'",
+  "scan": "underlined: 'induit une', '-équivalence sur les champs associés', 'ce qui', 'signifie' (both scans); the line '(resp. Tr(K^b(C_o)) → Tr(Parf(C,C_o)) (1.1.3))' before it is not underlined",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "induit une \\(S\\)-équivalence sur les champs associés ([G] II 2.2.4), ce qui signifie",
+   "new": "\\emph{induit une \\(S\\)-équivalence sur les champs associés ([G] II 2.2.4), ce qui signifie}"
+  },
+  "note": ""
+ },
+ {
+  "page": 123,
+  "where": "Proposition 4.10 (i), 'pour tout X ∈ ob S et tous'",
+  "scan": "underlined: 'pour tout', 'et tous' (both scans)",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "pour tout \\(X\\in\\Ob S\\) et tous",
+   "new": "\\emph{pour tout \\(X\\in\\Ob S\\) et tous}"
+  },
+  "note": "The rest of the line 'E,F ∈ ob K^b(C_oX) (resp. Tr(K^b(C_oX))),' is not underlined."
+ },
+ {
+  "page": 123,
+  "where": "Proposition 4.10 (i), 'la flèche canonique'",
+  "scan": "underlined (both scans)",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "la flèche canonique",
+   "new": "\\emph{la flèche canonique}"
+  },
+  "note": ""
+ },
+ {
+  "page": 123,
+  "where": "Proposition 4.10 (i), 'E,F ∈ ob K^b(C_oX)'",
+  "scan": "C̲ with the indices o and X side by side, no comma (both scans)",
+  "tex": "\\mathcal C_{0,X}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ob\\Kpx^b(\\mathcal C_{0,X})",
+   "new": "\\Ob\\Kpx^b(\\mathcal C_{0X})"
+  },
+  "note": "As pp. 91-92, 95 and 100: the TeX adds a comma between the indices."
+ },
+ {
+  "page": 123,
+  "where": "Proposition 4.10 (i), '(resp. Tr(K^b(C_oX)))'",
+  "scan": "C̲_oX, no comma (both scans)",
+  "tex": "\\mathcal C_{0,X}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tr(\\Kpx^b(\\mathcal C_{0,X}))",
+   "new": "\\Tr(\\Kpx^b(\\mathcal C_{0X}))"
+  },
+  "note": "As the entry before."
+ },
+ {
+  "page": 123,
+  "where": "Proposition 4.10 (i), display 'Hom_{K^b(C_o)}(E,F) → Hom_{D(C)}(E,F)'",
+  "scan": "both Hom underlined, the sheaf Hom of 4.5 (both scans)",
+  "tex": "\\Hom without underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom_{\\Kpx^b(\\mathcal C_0)}(E,F)\n  \\longrightarrow\n  \\Hom_{\\Dpx(\\mathcal C)}(E,F)",
+   "new": "\\underline{\\Hom}_{\\Kpx^b(\\mathcal C_0)}(E,F)\n  \\longrightarrow\n  \\underline{\\Hom}_{\\Dpx(\\mathcal C)}(E,F)"
+  },
+  "note": "Assertion (i) is the sheaf statement ('un cas particulier de (4.6)', whose display has the underlined Hom)."
+ },
+ {
+  "page": 123,
+  "where": "Proposition 4.10 (i), '(resp. Hom_{Tr(K^b(C_o))}(E,F) → Hom_{Tr(D(C))}(E,F) )'",
+  "scan": "'resp.' underlined and both Hom underlined (both scans)",
+  "tex": "(resp. \\(\\Hom_{\\Tr(...)}(E,F)\\to\\Hom_{\\Tr(...)}(E,F)\\)) without underlines",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. \\(\\Hom_{\\Tr(\\Kpx^b(\\mathcal C_0))}(E,F)\\to\\Hom_{\\Tr(\\Dpx(\\mathcal C))}(E,F)\\))",
+   "new": "(\\emph{resp.} \\(\\underline{\\Hom}_{\\Tr(\\Kpx^b(\\mathcal C_0))}(E,F)\\to\\underline{\\Hom}_{\\Tr(\\Dpx(\\mathcal C))}(E,F)\\))"
+  },
+  "note": "Layout, not given as a fix: the print sets this formula as a display aligned under the one above, with '(resp.' in the margin and ')' after it; the TeX has it inline."
+ },
+ {
+  "page": 123,
+  "where": "Proposition 4.10 (i), 'est un isomorphisme, et'",
+  "scan": "underlined (both scans)",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est un isomorphisme, et",
+   "new": "\\emph{est un isomorphisme, et}"
+  },
+  "note": ""
+ },
+ {
+  "page": 123,
+  "where": "Proposition 4.10 (ii), 'tout objet de Parf(C,C_o) (resp. ...) est localement isomorphe dans D(C) (resp.'",
+  "scan": "underlined: 'tout objet de Parf', 'est localement isomorphe', 'dans', the second 'resp.' (both scans; crops_121_125/p123_ii_start.png, p123_ii_end.png)",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "tout objet de \\(\\Parf(\\mathcal C,\\mathcal C_0)\\) (resp. \\(\\Tr(\\Parf(\\mathcal C,\\mathcal C_0))\\)) est localement isomorphe dans \\(\\Dpx(\\mathcal C)\\) (resp.",
+   "new": "\\emph{tout objet de \\(\\Parf(\\mathcal C,\\mathcal C_0)\\) (resp. \\(\\Tr(\\Parf(\\mathcal C,\\mathcal C_0))\\)) est localement isomorphe dans \\(\\Dpx(\\mathcal C)\\) (resp.}"
+  },
+  "note": "The emphasis ends after 'resp.': 'Tr(D(C))' that follows is not underlined. Independent of the misprint entries below (disjoint texts)."
+ },
+ {
+  "page": 123,
+  "where": "Proposition 4.10 (ii), 'à un objet de K^b(C_o) (resp.'",
+  "scan": "underlined: 'à un objet de', 'resp.'; the final 'Tr(K^b(C_o)).' is not (both scans)",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "à un objet de \\(\\Kpx^b(\\mathcal C_0)\\) (resp.",
+   "new": "\\emph{à un objet de \\(\\Kpx^b(\\mathcal C_0)\\) (resp.}"
+  },
+  "note": "Independent of the misprint entries below (disjoint texts)."
+ },
+ {
+  "page": 123,
+  "where": "Proposition 4.10 (ii), 'dans D(C) (resp. Tr(D(C)) à un objet de'",
+  "scan": "'(resp. Tr(D(C))': three opening and two closing parentheses (both scans; crops_121_125/p123_ii_end.png)",
+  "tex": "(resp. \\(\\Tr(\\Dpx(\\mathcal C))\\)): closed (silent correction)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\Tr(\\Dpx(\\mathcal C))\\))",
+   "new": "\\(\\Tr(\\Dpx(\\mathcal C))\\)"
+  },
+  "corrected": "\\(\\Tr(\\Dpx(\\mathcal C))\\))",
+  "note": "The typist left out the parenthesis that closes '(resp.'."
+ },
+ {
+  "page": 123,
+  "where": "Proposition 4.10 (ii), end '(resp. Tr(K^b(C_o)).'",
+  "scan": "'(resp. Tr(K^b(C_o)).': three opening and two closing parentheses (both scans)",
+  "tex": "(resp. \\(\\Tr(\\Kpx^b(\\mathcal C_0))\\)).: closed (silent correction)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Kpx^b(\\mathcal C_0))\\))",
+   "new": "\\Kpx^b(\\mathcal C_0))\\)"
+  },
+  "corrected": "\\Kpx^b(\\mathcal C_0))\\))",
+  "note": "As the entry before."
+ },
+ {
+  "page": 124,
+  "where": "start of page",
+  "scan": "p. 124 begins 'est parfait. Quitte à localiser'; p. 123 ends '... tel que E et F soient parfaits, alors G' (both scans)",
+  "tex": "'est' ends the last line of page_123.tex ('alors \\(G\\) est', under the folio-123 marker); page_124.tex begins 'parfait.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 124 really begins with 'est'. python -I move_marker.py 6 124 \"est\" --before (the last 'est' before the marker is this one; simulated on both layers: '... alors \\(G\\) ', the marker, 'est', 'parfait. Quitte ...')."
+ },
+ {
+  "page": 124,
+  "where": "'Soient donc X ∈ ob S, et E = (E_1 → E_2 → E_3 → E_1), F = (F_1 → F_2 → F_3 → F_1) des triangles distingués'",
+  "scan": "both triangles stand in the running text ('X ∈ ob S, et E = (...), F = (F_1 → F_2 →' on one line, 'F_3 → F_1) des triangles distingués de ...' on the next; both scans)",
+  "tex": "a display \\[ E=(...), \\quad F=(...) \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "et\n\\[\nE=(E_1\\xrightarrow{a_1}E_2\\xrightarrow{a_2}E_3\\xrightarrow[+1]{a_3}E_1),\n\\quad\nF=(F_1\\xrightarrow{b_1}F_2\\xrightarrow{b_2}F_3\\xrightarrow[+1]{b_3}F_1)\n\\]\ndes triangles",
+   "new": "et \\(E=(E_1\\xrightarrow{a_1}E_2\\xrightarrow{a_2}E_3\\xrightarrow[+1]{a_3}E_1)\\), \\(F=(F_1\\xrightarrow{b_1}F_2\\xrightarrow{b_2}F_3\\xrightarrow[+1]{b_3}F_1)\\) des triangles"
+  },
+  "note": "The TeX makes inline formulas a display (as p. 122)."
+ },
+ {
+  "page": 124,
+  "where": "'des triangles distingués de K^b(C_oX)'",
+  "scan": "C̲_oX, no comma (both scans)",
+  "tex": "\\mathcal C_{0,X}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Kpx^b(\\mathcal C_{0,X})",
+   "new": "\\Kpx^b(\\mathcal C_{0X})"
+  },
+  "note": "As p. 123."
+ },
+ {
+  "page": 124,
+  "where": "display (**) 'Hom_{Tr(K^b(C_o))}(E,F) → Hom_{Tr(D(C))}(E,F)'",
+  "scan": "both Hom underlined (both scans)",
+  "tex": "\\Hom without underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom_{\\Tr(\\Kpx^b(\\mathcal C_0))}(E,F)\n  \\longrightarrow\n  \\Hom_{\\Tr(\\Dpx(\\mathcal C))}(E,F)",
+   "new": "\\underline{\\Hom}_{\\Tr(\\Kpx^b(\\mathcal C_0))}(E,F)\n  \\longrightarrow\n  \\underline{\\Hom}_{\\Tr(\\Dpx(\\mathcal C))}(E,F)"
+  },
+  "note": "The sheaf map of 4.10 (i) resp., as on p. 123."
+ },
+ {
+  "page": 124,
+  "where": "Remarque 4.10.1, 'D*(C)_{C_o-parf} = D*(C) ∩ Parf(C,C_o)'",
+  "scan": "index '-parf' in small letters (both scans; crops_121_125/p124_rem4101.png)",
+  "tex": "_{\\mathcal C_0\\text{-}\\Parf}: renders 'Parf'",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal C_0\\text{-}\\Parf}",
+   "new": "\\mathcal C_0\\text{-}\\mathrm{parf}}"
+  },
+  "note": "As pp. 121-122; the Parf(C,C_o) after the ∩ is capital in the print."
+ },
+ {
+  "page": 125,
+  "where": "start of page",
+  "scan": "p. 125 begins with 'Soit' and the triangle E → F → G (+1); p. 124 ends 'E[n] est d'amplitude parfaite contenue dans [a-n,b-n].' (both scans)",
+  "tex": "the line 'Soit' and the tikzcd triangle are the last lines of page_124.tex (under the folio-124 marker); page_125.tex begins 'un' 'triangle distingué'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 125 really begins with 'Soit'. python -I move_marker.py 6 125 \"Soit\" --before (the last 'Soit' before the marker is that line; simulated on both layers: '... \\([a-n,b-n]\\).', a blank line, the marker, 'Soit', the diagram, 'un', 'triangle distingué ...')."
+ },
+ {
+  "page": 125,
+  "where": "'De (4.10) on déduit aussitôt le'",
+  "scan": "no colon after 'le' (both scans; crops_121_125/p125_De410.png, w125_full.png)",
+  "tex": "De (4.10) on déduit aussitôt le :",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "aussitôt le :",
+   "new": "aussitôt le"
+  },
+  "note": "The TeX adds the colon."
+ },
+ {
+  "page": 125,
+  "where": "Corollaire 4.12, statement before the displays",
+  "scan": "underlined: 'Supposons que', 'soit un site ponctuel', 'Pour que', 'soit d'amplitude parfaite', 'rel', 'contenue dans', 'il faut et il suffit qu'il existe un quasi-isomorphisme', 'avec', 'strictement parfait et tel que', 'pour', 'Les foncteurs canoniques' (both scans)",
+  "tex": "no emphasis: the statement is in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Supposons que \\(S\\) soit un site ponctuel. Pour que \\(F\\in\\Ob\\Dpx(\\mathcal C)\\) soit d'amplitude parfaite (rel.\\ à \\(\\mathcal C_0\\)) contenue dans \\([a,b]\\), il faut et il suffit qu'il existe un quasi-isomorphisme \\(F'\\to F\\), avec \\(F'\\) strictement parfait et tel que \\(F'^i=0\\) pour \\(i\\notin[a,b]\\). Les foncteurs canoniques",
+   "new": "\\emph{Supposons que \\(S\\) soit un site ponctuel. Pour que \\(F\\in\\Ob\\Dpx(\\mathcal C)\\) soit d'amplitude parfaite (rel.\\ à \\(\\mathcal C_0\\)) contenue dans \\([a,b]\\), il faut et il suffit qu'il existe un quasi-isomorphisme \\(F'\\to F\\), avec \\(F'\\) strictement parfait et tel que \\(F'^i=0\\) pour \\(i\\notin[a,b]\\). Les foncteurs canoniques}"
+  },
+  "note": ""
+ },
+ {
+  "page": 125,
+  "where": "Corollaire 4.12, 'et' between the two displays",
+  "scan": "underlined (both scans)",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\net\n\\[",
+   "new": "\\]\n\\emph{et}\n\\["
+  },
+  "note": ""
+ },
+ {
+  "page": 125,
+  "where": "Corollaire 4.12, 'sont des équivalences de catégories.'",
+  "scan": "underlined, the full stop not (both scans)",
+  "tex": "roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "sont des équivalences de catégories.",
+   "new": "\\emph{sont des équivalences de catégories}."
+  },
+  "note": ""
+ }
+]

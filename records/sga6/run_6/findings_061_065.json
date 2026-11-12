@@ -1,0 +1,529 @@
+[
+ {
+  "page": 61,
+  "where": "start of page",
+  "scan": "p. 61 begins 'Ã soumis aux restrictions ε(ξ_i) = 0 et η_j = [...]'; p. 60 ends '... et aux E_j des éléments η_j de' (both scans; DjVu witness pp. 71-72)",
+  "tex": "the first part of the statement of Théorème 2.14, '\\emph{Soient $x_i$ ... des éléments $\\eta_j$ de', stands under the folio-61 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 61 really begins with '$\\Atil$ soumis aux restrictions'. Move the folio-61 marker down, inside the \\emph group: python -I move_marker.py 6 61 '$\\Atil$ soumis aux restrictions' (forward search, single quotes; simulated on both layers: '... des éléments $\\eta_j$ de ' / marker / '$\\Atil$ soumis aux restrictions ...'). Same move as the end-of-page entry of p. 60 in findings_056_060.json: apply once."
+ },
+ {
+  "page": 61,
+  "where": "first line, η_j = [n_j, 1 + η_j^(1) + ... + η_j^(nj)]",
+  "scan": "last term η_j^(nj): the j of n_j typed on the line of the n, inside the superscript (both scans)",
+  "tex": "\\eta_j^{(n_j)}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": {
+   "old": "\\eta_j^{(n_j)}]",
+   "new": "\\eta_j^{(nj)}]"
+  },
+  "corrected": "\\eta_j^{(n_j)}]",
+  "note": "The typist did not lower the j of the index inside the superscript; the TeX writes n_j. Apply only if the diplomatic layer keeps such typewriter forms of nested indices; the corrected layer keeps n_j."
+ },
+ {
+  "page": 61,
+  "where": "Théorème 2.14, '(donc η_j^(k) = 0 pour k > n_j), on ait :'",
+  "scan": "the parenthesis '(donc ... pour k > n_j),' is not underlined; 'on ait' is (both scans)",
+  "tex": "the whole remark inside the \\emph of the statement",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": " (donc $\\eta_j^{(k)}=0$ pour $k>n_j$), on ait}",
+   "new": "} (donc $\\eta_j^{(k)}=0$ pour $k>n_j$), \\emph{on ait}"
+  },
+  "note": "Close the emphasis before the parenthetical remark and reopen it at 'on ait', as for Propositions 1.2 and 1.3 (pp. 30, 32). Either order with the next entry works."
+ },
+ {
+  "page": 61,
+  "where": "Théorème 2.14, 'on ait :'",
+  "scan": "on ait : (colon, both scans)",
+  "tex": "on ait} (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "on ait}",
+   "new": "on ait}~:"
+  },
+  "note": "The TeX drops the printed colon before the display."
+ },
+ {
+  "page": 61,
+  "where": "display R((λ^k(ξ_i)),(λ^k(η_j))) ∈ Ã^p",
+  "scan": "no punctuation after Ã^p (both scans)",
+  "tex": "\\in\\Atil^p.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\in\\Atil^p.",
+   "new": "\\in\\Atil^p"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 61,
+  "where": "footnote call (*), display R((λ^k(x'_i)),(λ^k(γ(E'_j))) ∈ K(X)^p",
+  "scan": "the footnote's only call is the (*) typed to the right of the display, followed by the full stop: 'K(X)^p   (*)   .' (both scans); equation numbers stand at the left in this typescript ((2.35), (2.36)); nothing is printed after 'on a'",
+  "tex": "\\footnote{...} called after 'on a}', and the display tagged \\tag{*}",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "on a}\\footnote{",
+   "new": "on a}\n\\[\n R((\\lambda^k(x'_i)),(\\lambda^k(\\gamma(E'_j))))\\in\\underline K(X)^p\\qquad\\text{\\footnotemark}\\ .\n\\]\n\\footnotetext{"
+  },
+  "note": "Moves the call to the place of the printed (*), with the \\footnotemark/\\footnotetext pair already used in main.tex (\\text{\\footnotemark} in a display, then \\footnotetext). Apply together with the next entry, which deletes the old display; then the misprint entry of the same display."
+ },
+ {
+  "page": 61,
+  "where": "same display (old copy)",
+  "scan": "(see the previous entry)",
+  "tex": "\\begin{equation}\\tag{*} ... \\end{equation} after the footnote",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\begin{equation}\\tag{*}\n R((\\lambda^k(x'_i)),(\\lambda^k(\\gamma(E'_j))))\\in\\underline K(X)^p.\n\\end{equation}\n",
+   "new": ""
+  },
+  "note": "Apply right after the previous entry (the display now stands before the footnote text). The misprint entry below comes after both."
+ },
+ {
+  "page": 61,
+  "where": "display R((λ^k(x'_i)),(λ^k(γ(E'_j))) ∈ K(X)^p, closing parentheses",
+  "scan": "(λ^k(γ(E'_j))) ∈: three closing parentheses after E'_j, so the parenthesis opened after R is never closed (both scans)",
+  "tex": "four closing parentheses (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\gamma(E'_j))))",
+   "new": "\\gamma(E'_j)))"
+  },
+  "corrected": "\\gamma(E'_j))))",
+  "note": "Apply after the two footnote-call entries above (in between, the display exists twice). Diplomatic layer: three parentheses; the corrected layer keeps four."
+ },
+ {
+  "page": 61,
+  "where": "proof of Théorème 2.14, 'qu'on est ramené au cas où X est un produit de grasmaniennes.'",
+  "scan": "'on est ramené au cas où' and 'est un produit de grasmaniennes' underlined; qu', X and the full stop not (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "qu'on est ramené au cas où $X$ est un produit de grasmaniennes.",
+   "new": "qu'\\emph{on est ramené au cas où} $X$ \\emph{est un produit de grasmaniennes}."
+  },
+  "note": "Missing underline."
+ },
+ {
+  "page": 61,
+  "where": "footnote (*), 'l'hypothèse faite implique si R est exprimé'",
+  "scan": "implique  si (no comma; a wide space, both scans); the comma after 'que' is printed",
+  "tex": "implique, si",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "implique, si",
+   "new": "implique si"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 61,
+  "where": "footnote (*), 'en termes des γ^k(ξ_i), γ^k(E_i-ε(E_i))'",
+  "scan": "E_i - ε(E_i) (index i, both scans)",
+  "tex": "\\gamma^k(E_i-\\varepsilon(E_i)) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\gamma^k(E_j-\\varepsilon(E_j))",
+  "note": "The bundles are E_j (1 ≤ j ≤ r) in the statement; i indexes the x_i. The TeX keeps the printed reading."
+ },
+ {
+  "page": 62,
+  "where": "start of page",
+  "scan": "p. 62 begins 'Ã (où A est un anneau gradué), compatible avec les filtrations'; p. 61 ends with the first two lines of Lemme 2.15, '... sans torsion de la forme' (both scans; DjVu witness pp. 72-73)",
+  "tex": "'\\emph{Supposons que $X$ soit ... de la forme' (printed on p. 61) stands under the folio-62 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 62 really begins with '$\\Atil$ (où'. Move the folio-62 marker down, inside the \\emph group: python -I move_marker.py 6 62 '$\\Atil$ (où' (forward search, single quotes; simulated on both layers: '... sans torsion de la forme ' / marker / '$\\Atil$ (où $A$ est un anneau gradué), ...'). The moved text agrees with the print of p. 61."
+ },
+ {
+  "page": 62,
+  "where": "Lemme 2.15 (first), 'G(K(X)) ⟶ G(A) soit injectif'",
+  "scan": "G(K(X)): this K is not underlined (both scans), unlike K(X) in the line above",
+  "tex": "G(\\underline K(X)) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "G(\\underline K(X))\\longrightarrow G(A)",
+   "new": "G(K(X))\\longrightarrow G(A)"
+  },
+  "corrected": "G(\\underline K(X))\\longrightarrow G(A)",
+  "note": "The typist dropped the underline of K, as in (2.34) on p. 59; the corrected layer reads \\underline K."
+ },
+ {
+  "page": 62,
+  "where": "'Pour le prouver le lemme, nous utiliserons'",
+  "scan": "Pour le prouver le lemme (both scans)",
+  "tex": "Pour le prouver le lemme (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Pour prouver le lemme",
+  "note": "One object too many: 'le' and 'le lemme'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 62,
+  "where": "before 'Nous considérerons l'homomorphisme C̃'",
+  "scan": "'(cf. § 5).' ends a short line; 'Nous considérerons' starts an indented new paragraph (both scans)",
+  "tex": "(cf.\\ \\S 5). Nous considérerons (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "(cf.\\ \\S 5). Nous",
+   "new": "(cf.\\ \\S 5).\n\nNous"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 62,
+  "where": "'comme X est un produit de grasmaniennes C_j'",
+  "scan": "C_j (typed C, both scans)",
+  "tex": "C_j (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "G_j",
+  "note": "The grassmannian is G on p. 61, and C̃, C^i name the Chow maps in the same paragraph; G_j is probably meant. The TeX keeps the printed reading."
+ },
+ {
+  "page": 62,
+  "where": "before 'De a) résulte que φ : A(X) ⟶ G(K(X))'",
+  "scan": "'De a) résulte' is indented like the items a), b) and the other new paragraphs (both scans)",
+  "tex": "\\end{enumerate} followed directly by 'De a)'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{enumerate}\nDe a)",
+   "new": "\\end{enumerate}\n\nDe a)"
+  },
+  "note": "Missing paragraph break (text that continues a sentence after a display or list starts at the margin, as 'où, par définition' on p. 65)."
+ },
+ {
+  "page": 63,
+  "where": "start of page",
+  "scan": "p. 63 begins '1 pour F = O_(x) pour tout x ∈ X.'; p. 62 ends '... cette fonction est égale à' (both scans)",
+  "tex": "'$1$' is the last token of page_062.tex (under the folio-62 marker); page_063.tex begins 'pour $F=...'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 63 really begins with '$1$'. Move the folio-63 marker before it: python -I move_marker.py 6 63 '$1$' --before (single quotes; the last '$1$' before the marker is that one; simulated on both layers: '... est égale à ' / marker / '$1$' / 'pour $F=\\cO_{(x)}$ ...')."
+ },
+ {
+  "page": 63,
+  "where": "'que l'application C̃ de K(X) dans Ã(X) est surjective'",
+  "scan": "a wide hand-drawn tilde over the whole A(X) (both scans); on p. 62 'dans Ã(X)' has the typed tilde over A only",
+  "tex": "$\\Atil(X)$ (\\Atil = \\widetilde A)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "dans $\\Atil(X)$ est surjective",
+   "new": "dans $\\widetilde{A(X)}$ est surjective"
+  },
+  "note": "As \\widetilde{G(\\underline K(X))} in (Th. 2.16) and the wide hat of p. 32."
+ },
+ {
+  "page": 63,
+  "where": "'de G(K(X)) dans G(Ã(X)) est bijectif'",
+  "scan": "the same wide tilde over A(X) (both scans)",
+  "tex": "$G(\\Atil(X))$",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "$G(\\Atil(X))$",
+   "new": "$G(\\widetilde{A(X)})$"
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 63,
+  "where": "heading '§ 5. Définition faisceautique des classes de Chern. ...'",
+  "scan": "§ 5. (section sign, both scans)",
+  "tex": "\\subsection*{5. Définition ...}",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{5. Définition",
+   "new": "\\subsection*{\\S 5. Définition"
+  },
+  "note": "As § 4 on p. 54 (applied); §§ 1-4 of this chapter have \\S."
+ },
+ {
+  "page": 63,
+  "where": "end of the heading '... des morphismes d'injection.'",
+  "scan": "d'injection. (full stop after the underlined title, both scans; § 4 on p. 54 has none)",
+  "tex": "... d'injection} (no full stop)",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "morphismes d'injection}",
+   "new": "morphismes d'injection.}"
+  },
+  "note": "The printed heading ends with a full stop."
+ },
+ {
+  "page": 63,
+  "where": "Théorème 2.16, 'pour tout x ∈ K(X), et pour tout entier i ≥ 0'",
+  "scan": "x ∈ K(X): this K is not underlined (both scans), unlike G^i(K(X)) and K(X)^{i+1} two lines below",
+  "tex": "x\\in\\underline K(X) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "pour tout $x\\in\\underline K(X)$",
+   "new": "pour tout $x\\in K(X)$"
+  },
+  "corrected": "pour tout $x\\in\\underline K(X)$",
+  "note": "Dropped underline of K, as on p. 62; the corrected layer reads \\underline K."
+ },
+ {
+  "page": 63,
+  "where": "Théorème 2.16, display c̃(x) = [ε(x), 1 + Σ c^i(x)], index of the sum",
+  "scan": "Σ with index i≥φ: the last character is the typed φ (same glyph as 'que φ' on p. 62), not a 0 (both scans)",
+  "tex": "\\sum_{i\\geq0} (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sum_{i\\geq0}c^i(x)",
+   "new": "\\sum_{i\\geq\\varphi}c^i(x)"
+  },
+  "corrected": "\\sum_{i\\geq1}c^i(x)",
+  "note": "Diplomatic layer: φ as printed. For the corrected layer the sum must start at 1: c^0(x) is the class of γ^0 = 1, already written as the leading 1 (the elements of Ã are [n, 1 + Σ_{i≥1} x^i], Chap. I § 3); the TeX's i≥0 counts it twice. If only the typist's φ is to be undone, the reading is i≥0."
+ },
+ {
+  "page": 64,
+  "where": "start of page",
+  "scan": "p. 64 begins '(2.8) résulte de (2.31).' and 'cqfd'; p. 63 ends '... se vérifie immédiatement, et' (both scans)",
+  "tex": "'(2.8) résulte de (2.31).' ends the last line of page_063.tex (under the folio-63 marker)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 64 really begins with '(2.8)'. Move the folio-64 marker before it: python -I move_marker.py 6 64 '(2.8) résulte' --before (simulated on both layers: '... se vérifie immédiatement, et ' / marker / '(2.8) résulte de (2.31).' / '\\begin{flushright}cqfd...')."
+ },
+ {
+  "page": 64,
+  "where": "'cqfd' after '(2.8) résulte de (2.31).'",
+  "scan": "cqfd (no full stop, both scans; the cqfd of p. 63 has one)",
+  "tex": "cqfd.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "cqfd.\\end{flushright}",
+   "new": "cqfd\\end{flushright}"
+  },
+  "note": "The TeX adds a full stop."
+ },
+ {
+  "page": 64,
+  "where": "label 'Corollaire 1' (of Théorème 2.16)",
+  "scan": "Corollaire 1 : On a ... (colon, both scans)",
+  "tex": "\\textbf{Corollaire 1.}",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{Corollaire 1.}",
+   "new": "\\textbf{Corollaire 1~:}"
+  },
+  "note": "As pp. 57 and 59 (applied): the label's colon became a full stop."
+ },
+ {
+  "page": 64,
+  "where": "proof of Corollaire 1, 'par la détermination explicité de K(Y)'",
+  "scan": "explicité (accent on the last e, both scans)",
+  "tex": "explicité (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "explicite",
+  "note": "The adjective is 'explicite'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 64,
+  "where": "label 'Corollaire 2'",
+  "scan": "Corollaire 2 : Supposons que ... (colon, both scans)",
+  "tex": "\\textbf{Corollaire 2.}",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{Corollaire 2.}",
+   "new": "\\textbf{Corollaire 2~:}"
+  },
+  "note": "As Corollaire 1."
+ },
+ {
+  "page": 64,
+  "where": "after (2.35), 'Comme φ est surjective'",
+  "scan": "'Comme φ est surjective' starts an indented new paragraph (both scans)",
+  "tex": "\\end{equation} followed directly by 'Comme'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nComme",
+   "new": "\\end{equation}\n\nComme"
+  },
+  "note": "Missing paragraph break (same kind of fix as p. 50, applied)."
+ },
+ {
+  "page": 64,
+  "where": "display γ^i(x - ε(X)) ≡ (-1)^{i-1}(i-1)! x mod K(X)^{i+1}",
+  "scan": "ε(X): capital X (both scans; the x before it is small)",
+  "tex": "\\varepsilon(X) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\gamma^i(x-\\varepsilon(x))",
+  "note": "ε is taken of the element x, as in Théorème 2.16 (γ^i(x - ε(x))). The TeX keeps the printed reading."
+ },
+ {
+  "page": 64,
+  "where": "'Comme ψ est injective, il suffit de prouver la relation analogue'",
+  "scan": "'injective' underlined (both scans)",
+  "tex": "plain 'injective'",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Comme $\\psi$ est injective",
+   "new": "Comme $\\psi$ est \\emph{injective}"
+  },
+  "note": "Missing underline."
+ },
+ {
+  "page": 64,
+  "where": "label 'Remarque'",
+  "scan": "Remarque : Le corollaire 2 ... (colon, both scans)",
+  "tex": "\\textbf{Remarque.}",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{Remarque.}",
+   "new": "\\textbf{Remarque~:}"
+  },
+  "note": "As the Corollaire labels above."
+ },
+ {
+  "page": 65,
+  "where": "'On a alors, pour i^! et i_! les formules suivantes :'",
+  "scan": "et i_! (lower shriek, both scans)",
+  "tex": "et $i_*$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "et $i_*",
+   "new": "et $i_!"
+  },
+  "note": "the print writes the direct image with a lower shriek, i_! (an exclamation mark typed under the i), in all ten places of this page (both scans); the TeX has i_* in all ten, each given with its own fix; same as f_! on pp. 53-54 (applied)."
+ },
+ {
+  "page": 65,
+  "where": "same line, after i_!",
+  "scan": "'i_! les formules': no comma; the stroke right of the i is the stem of the lower shriek, whose dot is under it (same shape in (ii)-(iv), both scans)",
+  "tex": "$i_*$, les formules",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "$, les formules suivantes",
+   "new": "$ les formules suivantes"
+  },
+  "note": "The TeX adds a comma (probably the shriek's stem read as a comma)."
+ },
+ {
+  "page": 65,
+  "where": "(ii), first line",
+  "scan": "i_!(x.i^!(y)) = i_!(x).y (lower shriek twice)",
+  "tex": "$i_*(x.i^!(y))=i_*(x).y$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$i_*(x.i^!(y))=i_*(x).y$",
+   "new": "$i_!(x.i^!(y))=i_!(x).y$"
+  },
+  "note": "Lower shriek, twice."
+ },
+ {
+  "page": 65,
+  "where": "(ii), second line",
+  "scan": "i_!i^!(y) = ξ y avec ξ = i_!i^!(1) = γ_X(Y) (lower shriek twice)",
+  "tex": "$i_*i^!(y)=\\xi y$ avec $\\xi=i_*i^!(1)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$i_*i^!(y)=\\xi y$ avec $\\xi=i_*i^!(1)",
+   "new": "$i_!i^!(y)=\\xi y$ avec $\\xi=i_!i^!(1)"
+  },
+  "note": "Lower shriek, twice."
+ },
+ {
+  "page": 65,
+  "where": "(iii), first line",
+  "scan": "i^!(i_!(x)) = x.λ_{-1}(N)",
+  "tex": "$i^!(i_*(x))",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$i^!(i_*(x))",
+   "new": "$i^!(i_!(x))"
+  },
+  "note": "Lower shriek."
+ },
+ {
+  "page": 65,
+  "where": "(iii), second line",
+  "scan": "i^!(ξ) = i^!i_!(1) = λ_{-1}(N)",
+  "tex": "i^!i_*(1)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "i^!i_*(1)",
+   "new": "i^!i_!(1)"
+  },
+  "note": "Lower shriek."
+ },
+ {
+  "page": 65,
+  "where": "(iv)",
+  "scan": "i_!(x) i_!(x') = i_!(xx' λ_{-1}(N) (lower shriek three times)",
+  "tex": "$i_*(x)i_*(x')=i_*",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$i_*(x)i_*(x')=i_*",
+   "new": "$i_!(x)i_!(x')=i_!"
+  },
+  "note": "Lower shriek, three times. Does not overlap the misprint entry that follows."
+ },
+ {
+  "page": 65,
+  "where": "(iv), closing parenthesis",
+  "scan": "i_!(xx' λ_{-1}(N) , : the parenthesis opened after i_! is not closed (both scans)",
+  "tex": "i_*(xx'\\lambda_{-1}(N)) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(xx'\\lambda_{-1}(N))$",
+   "new": "(xx'\\lambda_{-1}(N)$"
+  },
+  "corrected": "(xx'\\lambda_{-1}(N))$",
+  "note": "Diplomatic layer: one parenthesis, as printed; the corrected layer keeps two."
+ },
+ {
+  "page": 65,
+  "where": "end of page",
+  "scan": "p. 65 ends with (2.36) '... = O_Y(∧^i N) . )' and the footnote '(*) Non, cf. note de la page 30.'; p. 66 begins 'La formule (iv) exprime que i_! est' (DjVu witness p. 77)",
+  "tex": "page_065.tex ends with the line 'La', which belongs to p. 66 (the folio-66 marker stands between 'La' and 'formule (iv)')",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Move the folio-66 marker above 'La': python -I move_marker.py 6 66 'La' --before (the last 'La' before the marker is that line; simulated on both layers: ')' / marker / 'La' / 'formule (iv) exprime ...'). The checker of pp. 66-70 may report the same move: apply once."
+ }
+]

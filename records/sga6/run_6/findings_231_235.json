@@ -1,0 +1,351 @@
+[
+ {
+  "page": 231,
+  "where": "start of page",
+  "scan": "p. 231 begins 'C'est une condition de nature locale ; si X, Y, S sont affines d'anneaux respectifs B, C, A, ...'",
+  "tex": "'C'est une' ends the last line of page_230.tex ('... définis dans (EGA III 6.5). C'est une'), above the folio-231 marker; page_231.tex begins 'condition de nature locale'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 231 really begins with 'C'est une'. Split the last line of p. 230 before 'C'est une' and put the marker there: python -I move_marker.py 6 231 \"C'est une\" --before (simulated on copies of both layers: the marker then stands between '(EGA III 6.5).' and 'C'est une'; the lines are the same in both layers)."
+ },
+ {
+  "page": 231,
+  "where": "Notation 1.6, 'Soient X et Y deux S-schémas, E ∈ ob D⁻(X), F ∈ ob D⁻(Y).'",
+  "scan": "E ∈ ob D⁻(X), F ∈ ob D⁻(Y) (lower-case ob)",
+  "tex": "E\\in\\Ob D^{-}(X), F\\in\\Ob D^{-}(Y) (\\Ob prints 'Ob' in Exposé III)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "E\\in\\Ob D^{-}(X)\\), \\(F\\in\\Ob D^{-}(Y)",
+   "new": "E\\in\\operatorname{ob} D^{-}(X)\\), \\(F\\in\\operatorname{ob} D^{-}(Y)"
+  },
+  "note": "Exposé III defines \\Ob as \\operatorname{Ob} (main.tex l. 5335, '% Exposé III additions'), so the TeX prints 'Ob'; the typescript types lower-case 'ob' here, as on all pages of this batch. Changing that definition to \\operatorname{ob} would cover the exposé instead of these single edits."
+ },
+ {
+  "page": 231,
+  "where": "Lemme 1.7, 'Alors, pour E_i ∈ ob D⁻(X_i)_qcoh (1), il existe ...'",
+  "scan": "E_i ∈ ob D⁻(X_i)_qcoh (lower-case ob)",
+  "tex": "E_i\\in\\Ob D^{-}(X_i)_{\\mathrm{qcoh}} ('Ob')",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "E_i\\in\\Ob D^{-}(X_i)",
+   "new": "E_i\\in\\operatorname{ob} D^{-}(X_i)"
+  },
+  "note": "As above (\\Ob prints 'Ob' in Exposé III)."
+ },
+ {
+  "page": 231,
+  "where": "'elle signifie que la flèche canonique B ⊗^L_A C ⟶ B ⊗_A C est un isomorphisme'",
+  "scan": "a plain typed L over the tensor sign (the same typewriter L as in the TeX's plain L of Lpr_1^*, Lg^*)",
+  "tex": "B\\otimes_A^{\\mathbf L}C",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "B\\otimes_A^{\\mathbf L}C",
+   "new": "B\\otimes_A^{L}C"
+  },
+  "note": "The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 231,
+  "where": "Notation 1.6, display E ⊗^L_S F = Lpr_1*(E) ⊗^L Lpr_2*(F)",
+  "scan": "both tensor signs carry a plain typed L, like the L of Lpr_1*, Lpr_2*",
+  "tex": "E\\otimes_S^{\\mathbf L}F = L\\pr_1^*(E)\\otimes^{\\mathbf L}L\\pr_2^*(F)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "E\\otimes_S^{\\mathbf L}F\n  =\n  L\\pr_1^*(E)\\otimes^{\\mathbf L}L\\pr_2^*(F)",
+   "new": "E\\otimes_S^{L}F\n  =\n  L\\pr_1^*(E)\\otimes^{L}L\\pr_2^*(F)"
+  },
+  "note": "Two \\mathbf L in one display; The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 231,
+  "where": "Lemme 1.7, display f_{1*}(E_1) ⊗^L_S f_{2*}(E_2) ⟶~ (f_1 ×_S f_2)_*(E_1 ⊗^L_S E_2)",
+  "scan": "plain typed L over both tensor signs",
+  "tex": "\\otimes_S^{\\mathbf L} (twice)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "f_{1*}(E_1)\\otimes_S^{\\mathbf L}f_{2*}(E_2)\n  \\xrightarrow{\\sim}\n  (f_1\\times_Sf_2)_*(E_1\\otimes_S^{\\mathbf L}E_2)",
+   "new": "f_{1*}(E_1)\\otimes_S^{L}f_{2*}(E_2)\n  \\xrightarrow{\\sim}\n  (f_1\\times_Sf_2)_*(E_1\\otimes_S^{L}E_2)"
+  },
+  "note": "Two \\mathbf L in one display; The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 232,
+  "where": "start of page",
+  "scan": "p. 231 ends '... On définit facilement, par adjonction, une flèche canonique' (then the footnote); p. 232 begins with the display f_{1*}(E_1) ⊗^L_S f_{2*}(E_2) ⟶ f_*(E_1 ⊗^L_S E_2) .",
+  "tex": "page_232.tex begins with the line 'canonique' under the folio-232 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "'canonique' is the last word of p. 231: move the folio-232 marker down one line, below 'canonique' and above the display: python -I move_marker.py 6 232 \"\\[\" (simulated on copies of both layers; the lines are the same in both)."
+ },
+ {
+  "page": 232,
+  "where": "first display, f_{1*}(E_1) ⊗^L_S f_{2*}(E_2) ⟶ f_*(E_1 ⊗^L_S E_2)",
+  "scan": "plain typed L over both tensor signs",
+  "tex": "\\otimes_S^{\\mathbf L} (twice)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "f_{1*}(E_1)\\otimes_S^{\\mathbf L}f_{2*}(E_2)\n  \\longrightarrow\n  f_*(E_1\\otimes_S^{\\mathbf L}E_2)",
+   "new": "f_{1*}(E_1)\\otimes_S^{L}f_{2*}(E_2)\n  \\longrightarrow\n  f_*(E_1\\otimes_S^{L}E_2)"
+  },
+  "note": "Two \\mathbf L in one display; The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 232,
+  "where": "display A_1 ⊗^L_{B_1} B ⊗^L_{B_2} A_2 ⟶ A",
+  "scan": "plain typed L over both tensor signs",
+  "tex": "\\otimes_{B_1}^{\\mathbf L}, \\otimes_{B_2}^{\\mathbf L}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "A_1\\otimes_{B_1}^{\\mathbf L}B\\otimes_{B_2}^{\\mathbf L}A_2",
+   "new": "A_1\\otimes_{B_1}^{L}B\\otimes_{B_2}^{L}A_2"
+  },
+  "note": "Two \\mathbf L; The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 232,
+  "where": "Proposition 1.8, '... et E_i ∈ ob D⁻(X_i)_qcoh un complexe a_i-pseudo-cohérent ...'",
+  "scan": "E_i ∈ ob D⁻(X_i)_qcoh (lower-case ob)",
+  "tex": "E_i\\in\\Ob D^{-}(X_i)_{\\mathrm{qcoh}} ('Ob')",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "E_i\\in\\Ob D^{-}(X_i)",
+   "new": "E_i\\in\\operatorname{ob} D^{-}(X_i)"
+  },
+  "note": "As p. 231 (\\Ob prints 'Ob' in Exposé III)."
+ },
+ {
+  "page": 232,
+  "where": "Proposition 1.8, 'Alors E_1 ⊗^L_S E_2 est a-pseudo-cohérent rel. à f'",
+  "scan": "a plain typed L over the tensor sign (the same typewriter L as in the TeX's plain L of Lpr_1^*, Lg^*)",
+  "tex": "E_1\\otimes_S^{\\mathbf L}E_2",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "Alors \\(E_1\\otimes_S^{\\mathbf L}E_2\\)",
+   "new": "Alors \\(E_1\\otimes_S^{L}E_2\\)"
+  },
+  "note": "The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 232,
+  "where": "Preuve of 1.8, 'on doit montrer que f'_*(E_1 ⊗^L_S E_2) est a-pseudo-cohérent'",
+  "scan": "a plain typed L over the tensor sign (the same typewriter L as in the TeX's plain L of Lpr_1^*, Lg^*)",
+  "tex": "f'_*(E_1\\otimes_S^{\\mathbf L}E_2)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "f'_*(E_1\\otimes_S^{\\mathbf L}E_2)",
+   "new": "f'_*(E_1\\otimes_S^{L}E_2)"
+  },
+  "note": "The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 232,
+  "where": "Preuve of 1.8, 'donc (I 2.16) f_{1*}(E_1) ⊗^L_S f_{2*}(E_2) est a-pseudo-cohérent'",
+  "scan": "a plain typed L over the tensor sign (the same typewriter L as in the TeX's plain L of Lpr_1^*, Lg^*)",
+  "tex": "f_{1*}(E_1)\\otimes_S^{\\mathbf L}f_{2*}(E_2)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "(I 2.16) \\(f_{1*}(E_1)\\otimes_S^{\\mathbf L}f_{2*}(E_2)\\)",
+   "new": "(I 2.16) \\(f_{1*}(E_1)\\otimes_S^{L}f_{2*}(E_2)\\)"
+  },
+  "note": "The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 233,
+  "where": "start of page",
+  "scan": "p. 232 ends 'degré > b. On conclut grâce à (1.7).'; p. 233 begins 'Corollaire 1.9. Sous les hypothèses de (1.8), le foncteur'",
+  "tex": "page_233.tex begins with the line 'grâce à (1.7).' under the folio-233 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "'grâce à (1.7).' ends p. 232: move the folio-233 marker down below it (and the blank line), above Corollaire 1.9: python -I move_marker.py 6 233 \"\\textbf{Corollaire 1.9.}\" (simulated on copies of both layers; the lines are the same in both)."
+ },
+ {
+  "page": 233,
+  "where": "Corollaire 1.9, '⊗^L_S : D⁻(X_1) x D⁻(X_2) ⟶ D⁻(X) induit un foncteur'",
+  "scan": "a plain typed L over the tensor sign (the same typewriter L as in the TeX's plain L of Lpr_1^*, Lg^*)",
+  "tex": "\\otimes_S^{\\mathbf L}:D^{-}(X_1)\\times D^{-}(X_2)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\otimes_S^{\\mathbf L}:D^{-}(X_1)",
+   "new": "\\otimes_S^{L}:D^{-}(X_1)"
+  },
+  "note": "The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 233,
+  "where": "Corollaire 1.9, display ⊗^L_S : D⁻(f_1)_coh x D⁻(f_2)_coh ⟶ D⁻(f)_coh (cf. (1.2)) .",
+  "scan": "a plain typed L over the tensor sign (the same typewriter L as in the TeX's plain L of Lpr_1^*, Lg^*)",
+  "tex": "\\otimes_S^{\\mathbf L}:D^{-}(f_1)_{\\mathrm{coh}}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\otimes_S^{\\mathbf L}:D^{-}(f_1)",
+   "new": "\\otimes_S^{L}:D^{-}(f_1)"
+  },
+  "note": "The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 233,
+  "where": "Corollaire 1.10 b), 'soient n ∈ Z ∪ {-∞} et E ∈ ob D⁻(X) un complexe à cohomologie quasi-cohérente'",
+  "scan": "E ∈ ob D⁻(X) (lower-case ob)",
+  "tex": "E\\in\\Ob D^{-}(X) ('Ob')",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "E\\in\\Ob D^{-}(X)",
+   "new": "E\\in\\operatorname{ob} D^{-}(X)"
+  },
+  "note": "As p. 231 (\\Ob prints 'Ob' in Exposé III)."
+ },
+ {
+  "page": 234,
+  "where": "Proposition 1.11, triangle X → Y → Z: label of the arrow X → Z",
+  "scan": "the arrow X → Z is labelled f (both scans), the same letter as the arrow X → Y; a) and b) then speak of 'rel. à h'",
+  "tex": "X \\arrow[r,\"f\"] \\arrow[dr,\"f\"'] (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\arrow[dr,\"h\"']",
+  "note": "The composite X → Z is h (a): 'm-pseudo-cohérent rel. à h'; b): 'rel. à h'; Preuve de a): h_*). The print labels it f; the TeX keeps the printed reading."
+ },
+ {
+  "page": 234,
+  "where": "Proposition 1.11, 'soient E ∈ ob D(X), F ∈ ob D(Y), et [a,b], [c,d] des intervalles de Z'",
+  "scan": "E ∈ ob D(X), F ∈ ob D(Y) (lower-case ob)",
+  "tex": "E\\in\\Ob D(X), F\\in\\Ob D(Y) ('Ob')",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(E\\in\\Ob D(X)\\), \\(F\\in\\Ob D(Y)\\)",
+   "new": "\\(E\\in\\operatorname{ob} D(X)\\), \\(F\\in\\operatorname{ob} D(Y)\\)"
+  },
+  "note": "As p. 231 (\\Ob prints 'Ob' in Exposé III)."
+ },
+ {
+  "page": 234,
+  "where": "Proposition 1.11 a), 'alors E ⊗^L_Y F (cf. (1.6)) est m-pseudo-cohérent rel. à h'",
+  "scan": "a plain typed L over the tensor sign (the same typewriter L as in the TeX's plain L of Lpr_1^*, Lg^*)",
+  "tex": "E\\otimes_Y^{\\mathbf L}F",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "E\\otimes_Y^{\\mathbf L}F",
+   "new": "E\\otimes_Y^{L}F"
+  },
+  "note": "The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 235,
+  "where": "'Preuve de a). D'après (1.1 (iii)), ...'",
+  "scan": "'Preuve de' underlined; 'a).' not underlined (both scans)",
+  "tex": "\\emph{Preuve de a).}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Preuve de a).}",
+   "new": "\\emph{Preuve de} a)."
+  },
+  "note": "The item letter is outside the underline in the print; not the global case of a full stop after an underlined word."
+ },
+ {
+  "page": 235,
+  "where": "'Preuve de b). On doit prouver l'assertion suivante : ...'",
+  "scan": "'Preuve de' underlined; 'b).' not underlined (both scans)",
+  "tex": "\\emph{Preuve de b).}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Preuve de b).}",
+   "new": "\\emph{Preuve de} b)."
+  },
+  "note": "As for a)."
+ },
+ {
+  "page": 235,
+  "where": "Preuve de a), 'alors h_*(E ⊗^L_Y F) est m-pseudo-cohérent'",
+  "scan": "a plain typed L over the tensor sign (the same typewriter L as in the TeX's plain L of Lpr_1^*, Lg^*)",
+  "tex": "h_*(E\\otimes_Y^{\\mathbf L}F)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "h_*(E\\otimes_Y^{\\mathbf L}F)",
+   "new": "h_*(E\\otimes_Y^{L}F)"
+  },
+  "note": "The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 235,
+  "where": "Preuve de a), display f_*(E) ⊗^L F ⟶~ f_*(E ⊗^L_Y F)",
+  "scan": "plain typed L over both tensor signs",
+  "tex": "\\otimes^{\\mathbf L}, \\otimes_Y^{\\mathbf L}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "f_*(E)\\otimes^{\\mathbf L}F\\xrightarrow{\\sim} f_*(E\\otimes_Y^{\\mathbf L}F)",
+   "new": "f_*(E)\\otimes^{L}F\\xrightarrow{\\sim} f_*(E\\otimes_Y^{L}F)"
+  },
+  "note": "Two \\mathbf L in one display; The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 235,
+  "where": "Preuve de a), 'Comme le foncteur g_*(. ⊗^L F) transforme ...'",
+  "scan": "a plain typed L over the tensor sign (the same typewriter L as in the TeX's plain L of Lpr_1^*, Lg^*)",
+  "tex": "g_*(.\\otimes^{\\mathbf L}F)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "g_*(.\\otimes^{\\mathbf L}F)",
+   "new": "g_*(.\\otimes^{L}F)"
+  },
+  "note": "The typescript types the L of the derived tensor product with the ordinary typewriter L; the TeX writes \\mathbf L (bold) here while it keeps the same typed L plain in L\\pr_1^*(E) and Lg^*. Report of the print's form (no blanket rule for L)."
+ },
+ {
+  "page": 235,
+  "where": "Preuve de b), 'quitte à se localiser, un triangle distingué [diagram] , où E'^i est localement libre ...'",
+  "scan": "a triangle diagram: E' ⟶ E on the bottom line, E'' above, arrows E → E'' (up-left) and E'' → E' (down-left), a comma after it; no E'[1] (both scans)",
+  "tex": "E'\\longrightarrow E\\longrightarrow E''\\longrightarrow E'[1] (linear, with E'[1], no comma)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "E'\\longrightarrow E\\longrightarrow E''\\longrightarrow E'[1]",
+   "new": "\\begin{tikzcd}\n& E'' \\arrow[dl] & \\\\\nE' \\arrow[rr] & & E \\arrow[ul],\n\\end{tikzcd}"
+  },
+  "note": "Same arrows, but the print draws the triangle and has no E'[1]; it ends with a comma. A small hook '(' stands at the tail of the arrow E'' → E' (both scans; perhaps the degree-one mark), not rendered in the fix. The TeX of Exposé III writes the print's triangles in this linear form elsewhere too (p. 230, Prop. 1.4)."
+ },
+ {
+  "page": 235,
+  "where": "Preuve de b), 'supposons f_*(E) a-pseudo-cohérent et acyclique en degré > b, et g_*(O_Y) (a+1-b)-pseudo-cohérent, alors f_*(E) est a-pseudo-cohérent'",
+  "scan": "supposons f_*(E) a-pseudo-cohérent (both scans)",
+  "tex": "supposons \\(f_*(E)\\) \\(a\\)-pseudo-cohérent (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "supposons \\(h_*(E)\\) \\(a\\)-pseudo-cohérent",
+  "note": "The hypothesis of 1.11 b) is that E is a-pseudo-cohérent rel. à h (f, g, h closed immersions after the reduction), i.e. h_*(E) a-pseudo-cohérent; with f_*(E) the assertion assumes its own conclusion. After 'on peut supposer X = Y et f = Id_X' (so h = g) the proof uses 'Comme g_*(E) est a-pseudo-cohérent'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 235,
+  "where": "Preuve de a), '(cas particulier de l'isomorphisme (*) de la preuve de (1.8))'",
+  "scan": "de la preuve de (1.8)) (both scans)",
+  "tex": "de la preuve de (1.8)) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "(1.7)",
+  "note": "The isomorphism f_*(E) ⊗^L F ≅ f_*(E ⊗^L_Y F) is the case S = Y, f_2 = id_Y of Lemme 1.7, whose proof (pp. 231-232) defines the arrow; the proof of (1.8) only cites (1.7), and no '(*)' stands in either proof (both scans). A stale cross-reference of the typescript; the intended reading is uncertain, hence low confidence."
+ }
+]
