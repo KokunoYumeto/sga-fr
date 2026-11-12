@@ -1,0 +1,107 @@
+[
+ {
+  "page": 401,
+  "where": "Exercice 6.9 c), end of line 1 / start of line 2 of c)",
+  "scan": "que pour toute partie I' de I de foncteur phi_{I'} sur C proreprésenté ...",
+  "tex": "que pour toute partie $I'$ de $I$\nle foncteur $\\varphi_{I'}$ sur $C$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "le foncteur",
+  "note": "Typing error of the print: 'de foncteur' for 'le foncteur'. The TeX silently corrects it to 'le foncteur'."
+ },
+ {
+  "page": 401,
+  "where": "Exercice 6.9 d), line 2",
+  "scan": "Fib(C) ≊ Fib(C) (both sides identical, Fib underlined; no trace of a tilde over either C)",
+  "tex": "$\\Ffib(C)\\approxeq \\Ffib(C)$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\Ffib(C)\\approxeq \\Ffib(C^{\\sim})",
+  "note": "The print states the tautology 'Fib(C) ≊ Fib(C)'; presumably one side is the category of fibre functors on the topos, Fib(C^~), cf. the equivalence \\Ffib(C^{\\sim})\\xrightarrow{\\approx}\\Ffib(C) of 6.3 (04.tex line 3532); which side carries the tilde cannot be read from the page. The TeX keeps the printed reading."
+ },
+ {
+  "page": 401,
+  "where": "Exercice 6.10, line 3",
+  "scan": "Fais(C,D) la catégorie des faisceaux sur C à valeurs dans F (II 6.1)).",
+  "tex": "$\\Fais(C,D)$ la catégorie des\nfaisceaux sur $C$ à valeurs dans $F$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "à valeurs dans $D$",
+  "note": "The print reads 'à valeurs dans F'; Fais(C,D) is the category of sheaves on C with values in D (F only appears afterwards, as a sheaf, in (6.10.1)). The TeX keeps the printed 'F'."
+ },
+ {
+  "page": 401,
+  "where": "Exercice 6.10, line 3, reference to II 6.1",
+  "scan": "(II 6.1)). Définir",
+  "tex": "(\\hyperrefext[II][II.def6.1]{6.1}). Définir",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(\\hyperrefext[II][II.def6.1]{6.1}).",
+  "note": "The print closes the parenthesis twice, with no matching opening parenthesis; the TeX silently drops the extra ')'."
+ },
+ {
+  "page": 402,
+  "where": "formula (7.1.4), index of lim",
+  "scan": "F_Z = lim-> over U∩Z≠∅ F(U) , (handwritten empty-set sign)",
+  "tex": "F_Z=\\varinjlim_{U\\cap Z\\neq \\phi} F(U){\\quoi},",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "U\\cap Z\\neq \\phi}",
+   "new": "U\\cap Z\\neq \\emptyset}"
+  },
+  "note": "The print has the empty-set sign; \\phi prints the Greek letter phi (macros.tex does not redefine \\phi; it lets \\emptyset be \\varnothing). Exposé IV writes \\phi for the empty set throughout (convention, reported once in the coordinator message)."
+ },
+ {
+  "page": 404,
+  "where": "7.1.7, line 1",
+  "scan": "On vient de voir comment on peut réconstituer un espace sobre X",
+  "tex": "On vient de voir comment on peut reconstituer un espace sobre $X$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "reconstituer",
+  "note": "Spelling error of the typescript ('réconstituer', with an accent); the TeX silently corrects it to 'reconstituer'."
+ },
+ {
+  "page": 404,
+  "where": "7.1.7, sentence 'D'après ce qui a été dit dans 2.1'",
+  "scan": "D'après ce qui a été dit dans 2.1, on réconstitue également la topologie de X",
+  "tex": "on reconstitue également la topologie",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "reconstitue",
+  "note": "Same spelling error of the typescript ('réconstitue'); the TeX silently corrects it to 'reconstitue'."
+ },
+ {
+  "page": 404,
+  "where": "7.1.7, definition of Pt(U)",
+  "scan": "l'ensemble des x ∈ X tels que U_x ≠ ∅ (typed empty-set sign)",
+  "tex": "l'ensemble des $x\\in X$ tels que $U_x\\neq\\phi$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "U_x\\neq\\phi",
+   "new": "U_x\\neq\\emptyset"
+  },
+  "note": "The print has the empty-set sign; \\phi prints the Greek letter phi (macros.tex does not redefine \\phi; it lets \\emptyset be \\varnothing). Exposé IV writes \\phi for the empty set throughout (convention, reported once in the coordinator message)."
+ },
+ {
+  "page": 405,
+  "where": "Exercice 7.1.10 b), the Bourbaki reference",
+  "scan": "(Bourbaki, Top. Gen. Chap. III § 4)",
+  "tex": "(Bourbaki,\nTop. Gen. Chap. \\hyperrefext[III][III.sec4]{4})",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "Chap. \\hyperrefext[III][III.sec4]{4})",
+   "new": "Chap. III \\S 4)"
+  },
+  "note": "\\hyperrefext[III][III.sec4]{4} prints 'III 4' (macros.tex: \\hyperref[#2]{#1 #3}), so the TeX loses the § sign and makes the reference a link to SGA 4 Exposé III § 4, whereas the print cites Bourbaki, Topologie générale, Chap. III § 4. The fix restores the § and drops the wrong link (04.tex writes § as \\S, line 1040 '\\S 12')."
+ }
+]

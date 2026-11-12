@@ -1,0 +1,41 @@
+[
+ {
+  "page": "43",
+  "where": "chapter title",
+  "scan": "DIMENSION COHOMOLOGIQUE : PREMIERS RESULTATS",
+  "tex": "premier résultats",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "premier résultats",
+   "new": "premiers résultats"
+  },
+  "note": "The plural 's' of 'premiers' is missing in the TeX."
+ },
+ {
+  "page": "43",
+  "where": "after the author line, before § 1",
+  "scan": "Sommaire : 1. Introduction 2. Résultats auxiliaires pour un corps 3. Corps des fractions d'un anneau strictement local 4. Dimension cohomologique : cas ℓ inversible dans O_X 5. Dimension cohomologique : cas ℓ = p . 6. Dimension cohomologique pour un préschéma de type fini sur Spec Z .",
+  "tex": "(absent)",
+  "kind": "missing",
+  "confidence": "low",
+  "fix": {
+   "old": "\\section{Introduction}",
+   "new": "Sommaire :\n\\begin{itemize}\n\\item[1.] Introduction\n\\item[2.] Résultats auxiliaires pour un corps\n\\item[3.] Corps des fractions d'un anneau strictement local\n\\item[4.] Dimension cohomologique : cas $\\ell$ inversible dans $\\Oo_X$\n\\item[5.] Dimension cohomologique : cas $\\ell=p$.\n\\item[6.] Dimension cohomologique pour un préschéma de type fini sur $\\Spec\\ZZ$.\n\\end{itemize}\n\n\\section{Introduction}"
+  },
+  "note": "The printed table of contents is not in the TeX. The edition may replace it by a generated table of contents. Its wording differs from the section titles: 'pour un corps' here, 'sur un corps' in § 2."
+ },
+ {
+  "page": "45",
+  "where": "Rappelons que lorsque ℓ = car k … (CG II 2.2)",
+  "scan": "(CG II 2.2 )",
+  "tex": "(CG II\n\\hyperref[X.thm2.2]{2.2})",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\hyperref[X.thm2.2]{2.2})",
+   "new": "2.2)"
+  },
+  "note": "The reference is to Serre's Cohomologie galoisienne II 2.2. The TeX links it to the label X.thm2.2 of this exposé, which is a wrong link. The printed number is the same."
+ }
+]

@@ -1,0 +1,206 @@
+[
+ {
+  "page": 466,
+  "where": "Diagramme (7.1.1.0), flèche horizontale",
+  "scan": "La flèche X_1 → T_1 n'est pas étiquetée.",
+  "tex": "X_1 \\ar[r]^{\\sisi{}{j_1}}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "X_1\\xrightarrow{j_1}T_1",
+  "note": "L'étiquette j_1, utilisée dans la phrase suivante, manque dans l'imprimé. Le premier argument vide de \\sisi conserve l'omission; l'édition ajoute l'étiquette."
+ },
+ {
+  "page": 466,
+  "where": "7.1.2, définition de R^{+(1)}f_!",
+  "scan": "L^{+}\\bar{u}_{p_{1}}\\cdot j_{1!}\\circ R^{+}\\bar{u}_{f_{1}}",
+  "tex": "L^{+}\\bar{u}_{p_{1}}\\cdot\nj_{1!}\\circ R^{+}\\bar{u}_{f_{1}}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R^{+(1)}f_{!}=R^{+}\\bar{u}_{f_{1}*}\\circ j_{1!}\\circ L^{+}\\bar{u}_{p_{1}}^{*}",
+  "note": "Les foncteurs sont composés dans l'ordre inverse dans l'imprimé. Le TeX reproduit cette formule dans le premier argument de \\sisi et la corrige dans le second."
+ },
+ {
+  "page": 466,
+  "where": "7.1.3 a), première formule",
+  "scan": "[[X_{1},X_{2}|X]]_{[n]\\times[m]}=[X_{1}|X]_{n}\\times[X_{2}|X]_{n}",
+  "tex": "[[X_{1},X_{2}|X]]_{[n]\\times [m]}=[X_{1}|X]_{n}\\times\n[X_{2}|X]_{n}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "[[X_{1},X_{2}|X]]_{[n]\\times[m]}=[X_{1}|X]_{n}\\times[X_{2}|X]_{m}",
+  "note": "Le second facteur doit porter l'indice m. Le TeX conserve le second n erroné de l'imprimé."
+ },
+ {
+  "page": 466,
+  "where": "7.1.3 a), formule après « De même on pose »",
+  "scan": "[[X_{1}|X]]_{[n]\\times[m]}=[X_{1}|S]_{n}",
+  "tex": "[[X_{1}|X]]_{[n]\\times[m]}=[X_{1}|S]_{n}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "[[X_{1}|X]]_{[n]\\times[m]}=[X_{1}|X]_{n}",
+  "note": "La base du membre droit doit être X, non S. Le TeX conserve la coquille de l'imprimé."
+ },
+ {
+  "page": 467,
+  "where": "Après le premier diagramme, référence au procédé de calcul",
+  "scan": "VI b (2.3)",
+  "tex": "\\sisi{VI b (\\refnoexpose{Vbis.subsec2.3})}{\\hyperrefext[Vbis][Vbis.subsec2.3]{2.3}}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\hyperrefext[Vbis][Vbis.subsec2.3]{2.3}",
+  "note": "La référence correcte est V bis 2.3, non VI b 2.3. Le premier argument de \\sisi reproduit l'imprimé; le second corrige la référence."
+ },
+ {
+  "page": 467,
+  "where": "Formule définissant α_1, dernier facteur",
+  "scan": "L^{+}\\bar{u}_{p_{1}p_{2}}^{+}",
+  "tex": "L^{+}\\bar{u_{p_{1}p_{2}}}^{\\sisi{+}{\\ast}}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "L^{+}\\bar{u_{p_{1}p_{2}}}^{\\ast}",
+  "note": "Le signe supérieur imprimé est + au lieu de *. Le TeX le conserve dans le premier argument de \\sisi et le corrige dans le second."
+ },
+ {
+  "page": 467,
+  "where": "7.1.3 b), objet dont provient le premier indice n",
+  "scan": "[[T_{1},T_{2}|S]]_{[n]\\times[m]}",
+  "tex": "\\bigl[[T_{1},T_{2}]\\bigr]_{[n]\\times[m]}",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigl[[T_{1},T_{2}]\\bigr]",
+   "new": "\\bigl[[T_{1},T_{2}|S]\\bigr]"
+  },
+  "note": "Le TeX omet « |S » dans le nom du système simplicial double."
+ },
+ {
+  "page": 467,
+  "where": "7.1.3 c), formule définissant α_2",
+  "scan": "R^{+}\\bar{u}_{f_{1}f_{2}+}",
+  "tex": "R^{+}\\bar{u_{f_{1}f_{2}}}_{\\sisi{+}{*}}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R^{+}\\bar{u_{f_{1}f_{2}}}_{*}",
+  "note": "L'indice + imprimé doit être *. Le premier argument de \\sisi conserve la coquille; le second la corrige."
+ },
+ {
+  "page": 468,
+  "where": "Diagramme initial, sommet inférieur gauche",
+  "scan": "R^{+(2)}f_!",
+  "tex": "R^{+(\\sisi{2}{3})}f_!",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R^{+(3)}f_!",
+  "note": "L'exposant doit désigner la troisième pseudo-compactification. Le TeX reproduit 2 dans le premier argument de \\sisi et le corrige en 3 dans le second."
+ },
+ {
+  "page": 468,
+  "where": "Diagramme initial, deux flèches vers le sommet inférieur R^{+(1,3)}f_!",
+  "scan": "Les deux flèches obliques venant des sommets latéraux inférieurs sont absentes.",
+  "tex": "\\sisi{}{\\ar[rd]} ; \\sisi{}{\\ar[ld]}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R^{+(3)}f_{!}\\longrightarrow R^{+(1,3)}f_{!}\\longleftarrow R^{+(1)}f_{!}",
+  "note": "Ces deux flèches manquent dans le diagramme imprimé nécessaire à la vérification du cocycle. Les premiers arguments vides de \\sisi conservent les omissions; l'édition restitue les flèches."
+ },
+ {
+  "page": 468,
+  "where": "Construction 7.1.4, deuxième élément du triple",
+  "scan": "(p_{2},j_{2},g_{2})",
+  "tex": "(p_{2},j_{2}g_{2})",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(p_{2},j_{2}g_{2})",
+   "new": "(p_{2},j_{2},g_{2})"
+  },
+  "note": "Il manque la virgule séparant j_2 de g_2."
+ },
+ {
+  "page": 468,
+  "where": "Construction 7.1.4, isomorphisme annoncé",
+  "scan": "R^{+(3)}fg_{!}\\isomfrom R^{+(2)}g_{!}\\circ R^{+(1)}f_{!}",
+  "tex": "R^{+(3)}fg_{!}\\isomfrom  R^{+(2)}g_{!}\\circ\nR^{+(1)}f_{!}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R^{+(3)}(fg)_{!}\\isomfrom R^{+(1)}f_{!}\\circ R^{+(2)}g_{!}",
+  "note": "L'ordre des deux foncteurs du membre droit est inversé dans l'imprimé. Le premier argument de \\sisi reproduit cet ordre; le second le corrige."
+ },
+ {
+  "page": 468,
+  "where": "7.1.4.1, parenthèse après « Soit »",
+  "scan": "(p_{2},j_{2},f_{2})",
+  "tex": "(p_{2},j_{2},f_{2})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(p_{2},j_{2},g_{2})",
+  "note": "Il s'agit de la pseudo-compactification de g, dont le morphisme propre est nommé g_2 dans l'énoncé précédent et dans le diagramme. Le TeX conserve f_2."
+ },
+ {
+  "page": 469,
+  "where": "Après (7.1.4.1.3), « on notera »",
+  "scan": "R^{+(12)}\\int g_{!}",
+  "tex": "R^{+(12)}\\sisi{\\int g}{(fg)}_{!}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "R^{+(12)}(fg)_{!}",
+  "note": "Le signe imprimé devant g est une intégrale à la place de la lettre f du composé fg. Le premier argument de \\sisi reproduit ce signe; le second donne le composé correctement."
+ },
+ {
+  "page": 469,
+  "where": "7.1.4.2, membre gauche de l'isomorphisme",
+  "scan": "R^{+(12)}\\int g_{!}",
+  "tex": "R^{+(12)}\\sisi{\\int g}{(fg)}_{!}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "R^{+(12)}(fg)_{!}",
+  "note": "Même substitution du signe intégral à f que dans la notation introduite juste avant. Le TeX conserve le signe dans le premier argument de \\sisi et le corrige dans le second."
+ },
+ {
+  "page": 469,
+  "where": "7.1.4.2, phrase introduisant (7.1.4.2.1)",
+  "scan": "où toutes les flèches se déduisent naturellement",
+  "tex": "où $Z_2''=\\fprod{T''_2}{Z'_2}{T'_2}$ et toutes les flèches se",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "où $Z_2''=\\fprod{T''_2}{Z'_2}{T'_2}$ et toutes",
+   "new": "où \\sisi{}{$Z_2''=\\fprod{T''_2}{Z'_2}{T'_2}$ et }toutes"
+  },
+  "note": "La définition de Z_2'' et le mot « et » sont absents de l'imprimé. Cet ajout lié à la modification éditoriale doit être marqué comme tel; le remplacement conserve l'ajout dans la lecture corrigée seulement."
+ },
+ {
+  "page": 470,
+  "where": "Lemme 7.1.4.2.2, hypothèse sur j et j_1",
+  "scan": "j, j_1 sont les immersions",
+  "tex": "$j_{1}$ sont les immersions.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$j$, $j_{1}$ sont des immersions.",
+  "note": "Coquille « les » pour « des » dans l'hypothèse. Le TeX conserve le texte imprimé."
+ },
+ {
+  "page": 470,
+  "where": "Lemme 7.1.4.2.2, cible de la flèche canonique",
+  "scan": "R^{+(1)}(hh')_{!}",
+  "tex": "R^{+(1)}\\sisi{(hh')}{f}_{!}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R^{+(1)}f_{!}",
+  "note": "La pseudo-compactification considérée est celle de f; hh' est seulement son morphisme propre vers S. Le premier argument de \\sisi reproduit la mauvaise cible imprimée et le second la corrige."
+ }
+]

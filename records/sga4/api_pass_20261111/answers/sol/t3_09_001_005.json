@@ -1,0 +1,153 @@
+[
+ {
+  "page": 1,
+  "where": "Bloc d'auteur",
+  "scan": "par M. ARTIN",
+  "tex": "M. Artin",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{center}\nM. Artin",
+   "new": "\\begin{center}\npar M. Artin"
+  },
+  "note": "Le mot « par » manque devant le nom de l'auteur."
+ },
+ {
+  "page": 1,
+  "where": "Entre le bloc d'auteur et l'introduction",
+  "scan": "Sommaire :\n0. Introduction\n1. Le sorite des faisceaux de torsion\n2. Faisceaux constructibles\n3. Théories de Kummer et d'Artin-Schreier\n4. Cas d'une courbe algébrique\n5. La méthode de la trace.",
+  "tex": "\\setcounter{section}{-1}\n\\section{Introduction}\\etiquette[0]{IX.sec0}\\pageoriginale",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\setcounter{section}{-1}",
+   "new": "\\noindent Sommaire :\n\\begin{enumerate}\n\\item[0.] Introduction\n\\item[1.] Le sorite des faisceaux de torsion\n\\item[2.] Faisceaux constructibles\n\\item[3.] Théories de Kummer et d'Artin-Schreier\n\\item[4.] Cas d'une courbe algébrique\n\\item[5.] La méthode de la trace.\n\\end{enumerate}\n\n\\setcounter{section}{-1}"
+  },
+  "note": "Le sommaire et ses six entrées sont absents du TeX fourni."
+ },
+ {
+  "page": 1,
+  "where": "Introduction, « variété abélienne sur k »",
+  "scan": "si X est une variété abélienne sur k",
+  "tex": "si $X$ est une variété abélienne sur $k$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "si $X$ est une variété abélienne sur $K$",
+  "note": "Le corps sur lequel le foncteur est défini vient d'être nommé K. L'imprimé passe ici à k, discordance de casse conservée par le TeX; la correction proposée harmonise avec K."
+ },
+ {
+  "page": 2,
+  "where": "Suite de l'introduction, algèbre de quaternions",
+  "scan": "algèbre de quaternions définie sur $\\mathbb{Z}$",
+  "tex": "algèbre de quaternions définie sur\n$\\ZZ$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "algèbre de quaternions définie sur $\\mathbb{Q}$",
+  "note": "L'algèbre de quaternions dont A est un ordre maximal est ici une algèbre sur Q. Le TeX conserve le Z imprimé. En revanche, l'indice Z dans le produit tensoriel qui suit est correct."
+ },
+ {
+  "page": 2,
+  "where": "Définition 1.1, entre les deux dénominations",
+  "scan": "où un p-faisceau",
+  "tex": "\\sisi{où}{ou} un $p$-faisceau",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "ou",
+  "note": "L'imprimé porte bien « où », pour la conjonction « ou ». Le TeX enregistre la coquille et la corrige au moyen de \\sisi."
+ },
+ {
+  "page": 2,
+  "where": "Proposition 1.2 (i), formule définissant P",
+  "scan": "P est la limite inductive, dans les préfaisceaux, des ${}_nF$, pour $\\ass n\\subset p$; la flèche de limite est présente.",
+  "tex": "P=\\frac{\\lim(\\text{\\rm préf})}{\\ass n\\subset p} {}_nF",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\frac{\\lim(\\text{\\rm préf})}{\\ass n\\subset p}",
+   "new": "\\underset{\\ass n\\subset p}{\\underrightarrow{\\lim(\\text{\\rm préf})}}"
+  },
+  "note": "La fraction remplace à tort le symbole de limite inductive : sa barre n'a pas la flèche imprimée."
+ },
+ {
+  "page": 3,
+  "where": "Proposition 1.2 (iv), image inverse",
+  "scan": "$u^{\\ast}F$",
+  "tex": "$u^{\\ast}F$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "u^{\\ast}F'",
+  "note": "Le faisceau donné sur T' est F'. La prime manque dans l'imprimé après l'image inverse; le TeX conserve cette coquille."
+ },
+ {
+  "page": 3,
+  "where": "Proposition 1.2 (v), argument de l'image directe supérieure",
+  "scan": "$R^qu_{\\ast}F'$",
+  "tex": "$R^qu_{\\ast}F'$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R^qu_{\\ast}F",
+  "note": "L'hypothèse porte sur F, faisceau sur T, et non sur F'. La prime superflue est conservée par le TeX."
+ },
+ {
+  "page": 3,
+  "where": "Proposition 1.2 (v), topos portant les images directes supérieures",
+  "scan": "sur $T$ pour tout $q$",
+  "tex": "sur $T$ pour\n  tout $q$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "sur $T'$ pour tout $q$",
+  "note": "Pour u:T→T', les images directes supérieures sont des faisceaux sur T'. Le TeX conserve l'absence de prime de l'imprimé."
+ },
+ {
+  "page": 4,
+  "where": "Démonstration de 1.2 (i), première limite inductive",
+  "scan": "Limite inductive dans les préfaisceaux des ${}_nP$, indexée par $\\ass n\\subset p$.",
+  "tex": "\\frac{\\lim(\\text{\\rm préf})}{\\ass n\\subset p}{}_nP\\xrightarrow{\\sim}P",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\frac{\\lim(\\text{\\rm préf})}{\\ass n\\subset p}",
+   "new": "\\underset{\\ass n\\subset p}{\\underrightarrow{\\lim(\\text{\\rm préf})}}"
+  },
+  "note": "Comme à la page 2, la flèche du symbole de limite inductive est remplacée par une barre de fraction."
+ },
+ {
+  "page": 4,
+  "where": "Démonstration de 1.2 (iii), dernière phrase",
+  "scan": "La deuxième assertion est une conséquence de",
+  "tex": "La deuxième assertion est une conséquence de",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "La deuxième assertion est une conséquence de la commutation de la cohomologie aux limites inductives filtrantes.",
+  "note": "La phrase est déjà inachevée dans l'imprimé, et le TeX conserve la lacune. La correction proposée explicite le résultat invoqué; aucun numéro de référence ne peut être restitué à partir de ces pages."
+ },
+ {
+  "page": 4,
+  "where": "Démonstration de 1.2 (iv), membre droit de l'égalité",
+  "scan": "$u^{\\ast}(\\underline{a}P')=\\underline{a}(u\\cdot P)$",
+  "tex": "$u^{\\ast}(\\underline{a}P')=\\underline{a}(u\\cdot P)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "u^{\\ast}(\\underline{a}P')=\\underline{a}(u\\cdot P')",
+  "note": "Le préfaisceau doit être P' dans les deux membres. La prime manque à droite dans l'imprimé et dans le TeX."
+ },
+ {
+  "page": 5,
+  "where": "Démonstration de 1.6 (i), formule de la fibre",
+  "scan": "Alors $F=\\varinjlim F(X')$",
+  "tex": "Alors $F=\\varinjlim F(X')$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "F_{\\xi}=\\varinjlim F(X')",
+  "note": "La limite décrit la fibre au point géométrique ξ, non le faisceau F. L'indice ξ manque déjà dans l'imprimé; le TeX conserve cette omission."
+ }
+]

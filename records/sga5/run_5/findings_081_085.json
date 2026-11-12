@@ -1,0 +1,525 @@
+[
+ {
+  "page": 81,
+  "where": "heading of § 2, top of the page",
+  "scan": "'2. Fonctorialité de RHom et produits tensoriels externes.': the number 2. and a full stop after externes (the rule runs from 2. to externes.)",
+  "tex": "\\section*{Fonctorialité de \\texorpdfstring{$\\uRHom$}{RHom} et produits tensoriels externes} (no number, no full stop)",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{Fonctorialité de \\texorpdfstring{$\\uRHom$}{RHom} et produits tensoriels externes}",
+   "new": "\\section*{2. Fonctorialité de \\texorpdfstring{$\\uRHom$}{RHom} et produits tensoriels externes.}"
+  },
+  "note": "As the § 1 heading of p. 76, now '\\section*{1. Notations et rappels de formules de Künneth.}'. The underline is the accepted \\section* setting."
+ },
+ {
+  "page": 81,
+  "where": "2.1, 'La flèche canonique évidente au niveau des complexes f*Hom˙(P,Q) ⟶ Hom˙(f*P,f*Q)'",
+  "scan": "Hom˙ twice: the typed word Hom underlined, with a raised dot",
+  "tex": "\\mathcal Hom^{\\bullet} twice (a script H followed by math-italic om, no underline)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "f^{*}\\mathcal Hom^{\\bullet}(P,Q)\\longrightarrow\\mathcal Hom^{\\bullet}(f^{*}P,f^{*}Q)",
+   "new": "f^{*}\\underline{\\Hom}^{\\bullet}(P,Q)\\longrightarrow\\underline{\\Hom}^{\\bullet}(f^{*}P,f^{*}Q)"
+  },
+  "note": "\\underline{\\Hom} is this file's form for the underlined Hom (Exposé III). Two adjacent signs in one edit. The print runs the formula into the text (the TeX's display is layout, not reported). Same sign on p. 82."
+ },
+ {
+  "page": 81,
+  "where": "end of 2.1, 'RHom(u,v) est l'isomorphisme de \"dualité triviale\"'",
+  "scan": "'isomorphisme de \"dualité triviale\"' underlined, from isomorphisme through the closing quote; l' not underlined",
+  "tex": "est l'isomorphisme de ``dualité triviale'' (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "l'isomorphisme de ``dualité triviale''",
+   "new": "l'\\emph{isomorphisme de ``dualité triviale''}"
+  },
+  "note": "\\emph is this file's command for the print's underline in Exposé III (\\emph{flèche d'évaluation} p. 82)."
+ },
+ {
+  "page": 82,
+  "where": "start of the page",
+  "scan": "p. 82 begins '2.2 Soient X un S-schéma. Rappelons que ...'; p. 81 ends with (2.1.6)",
+  "tex": "\\subsection*{2.2} is the last line of page_081.tex (both layers); the folio-82 marker follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 82 really begins at '\\subsection*{2.2}'. Exact fix: python -I move_marker.py 5 82 '\\subsection*{2.2}' --before (single quotes; simulated in memory on both layers: the marker then stands on its own line after the blank line that follows (2.1.6), directly before \\subsection*{2.2})."
+ },
+ {
+  "page": 82,
+  "where": "2.2, the complex-level evaluation arrow 'Hom˙(E,F) ⊗ E ⟶ F , f ⊗ x ⟼ f(x) .'",
+  "scan": "Hom˙: the typed word Hom underlined, with a raised dot (the mark over the o is a speck)",
+  "tex": "\\mathcal Hom^{\\bullet}(E,F) (script H, italic om, no underline)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal Hom^{\\bullet}(E,F)\\otimes E",
+   "new": "\\underline{\\Hom}^{\\bullet}(E,F)\\otimes E"
+  },
+  "note": "As p. 81."
+ },
+ {
+  "page": 82,
+  "where": "label of Proposition 2.3",
+  "scan": "'Proposition 2.3 - La flèche ...': Proposition underlined, then the number and a typewriter dash, the statement run in",
+  "tex": "\\subsection*{Proposition 2.3} (no dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{Proposition 2.3}",
+   "new": "\\subsection*{Proposition 2.3 -}"
+  },
+  "note": "Exposé III label form, as '\\subsection*{Proposition 1.7.4 -}' (p. 79)."
+ },
+ {
+  "page": 82,
+  "where": "statement of Proposition 2.3",
+  "scan": "'La flèche 2.2.4 est un isomorphisme' underlined; the rule stops before the full stop",
+  "tex": "La flèche 2.2.4 est un isomorphisme. (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "La flèche 2.2.4 est un isomorphisme.",
+   "new": "\\emph{La flèche 2.2.4 est un isomorphisme}."
+  },
+  "note": "As the statement of Proposition 1.7.4 (p. 79)."
+ },
+ {
+  "page": 83,
+  "where": "square (2), label of the upper horizontal arrow",
+  "scan": "2.2.3 (clear)",
+  "tex": "\\arrow[r,\"2.2.3\"] (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\arrow[r,\"2.2.4\"]",
+  "note": "The upper arrow RHom(f_1!A_U1,F_1) ⊗^L_S RHom(f_2!A_U2,F_2) ⟶ RHom(f_!A_U,F) is the external arrow 2.2.4 that Proposition 2.3 asserts to be an isomorphism (E_i = f_i!A_Ui, E = E_1 ⊗^L_S E_2); 2.2.3 is the arrow on a single scheme. The TeX keeps the printed reading; the corrected layer already has 2.2.4 (Codex SGA-SRC-001845)."
+ },
+ {
+  "page": 83,
+  "where": "square (2), the two vertical arrows",
+  "scan": "beside each vertical arrow a hand-drawn tilde over a short bar (≃), as the sign of the lower arrow of (4); the arrows of (1) and (3) carry a plain tilde",
+  "tex": "\\arrow[d,\"\\sim\"'] and \\arrow[d,\"\\sim\"] (a plain tilde)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[d,\"\\sim\"'] & \\uRHom(f_{!}A_U,F) \\arrow[d,\"\\sim\"]",
+   "new": "\\arrow[d,\"\\simeq\"'] & \\uRHom(f_{!}A_U,F) \\arrow[d,\"\\simeq\"]"
+  },
+  "note": "Two labels on one line in one edit; the edit also applies to the corrected layer (it does not touch the 2.2.3 label)."
+ },
+ {
+  "page": 83,
+  "where": "square (4), lower left corner 'f_1*F_1 ⊗ f_2*F_2'",
+  "scan": "the L above the tensor sign but no S below it (clean paper; every other external product of (2) and (4) has its S)",
+  "tex": "f_1^{*}F_1\\overset{\\mathrm{L}}{\\otimes}_{S}f_2^{*}F_2",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "{\\otimes}_{S}f_2^{*}F_2",
+   "new": "{\\otimes}f_2^{*}F_2"
+  },
+  "corrected": "{\\otimes}_{S}f_2^{*}F_2",
+  "note": "f_1*F_1 and f_2*F_2 live on U_1 and U_2: their product is the external product over S, as in the upper corner of (4) and the lower left corner of (2). The TeX silently supplies the S; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 83,
+  "where": "square (4), lower horizontal arrow",
+  "scan": "a hand-drawn tilde over a short bar (≃) above the arrow",
+  "tex": "\\arrow[r,\"\\sim\"]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"\\sim\"]",
+   "new": "\\arrow[r,\"\\simeq\"]"
+  },
+  "note": "As the vertical arrows of (2)."
+ },
+ {
+  "page": 83,
+  "where": "2.4, end of the definitions 'Q = Q_1 ⊗^L_S Q_2 :'",
+  "scan": "a colon after Q_2 (the diagram (2.4.0) follows)",
+  "tex": "Q=Q_1\\overset{\\mathrm{L}}{\\otimes}_{S}Q_2. (a full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{\\otimes}_{S}Q_2.",
+   "new": "{\\otimes}_{S}Q_2 :"
+  },
+  "note": "The print sets the four definitions inline on one line (the TeX's display is layout, not reported)."
+ },
+ {
+  "page": 83,
+  "where": "2.4, between the definitions and (2.4.0)",
+  "scan": "no words: 'Q = Q_1 ⊗^L_S Q_2 :' is followed directly by '(2.4.0)' and the diagram",
+  "tex": "Considérons le diagramme",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nConsidérons le diagramme",
+   "new": "\\]"
+  },
+  "note": "Words added by the transcription. The diagram (2.4.0) that follows is printed on this page but stands under the folio-84 marker (see p. 84)."
+ },
+ {
+  "page": 84,
+  "where": "start of the page",
+  "scan": "p. 84 begins 'Donnons-nous (u_1,v_1) ∈ Hom_{f_1}^(3,4)((E_1,F_1) , (P_1,Q_1)) ,'; the diagram (2.4.0) is printed at the foot of p. 83",
+  "tex": "page_084.tex begins with \\begin{equation}\\tag{2.4.0} ... \\end{equation} (both layers); 'Donnons-nous' follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 84 really begins at 'Donnons-nous'. Exact fix: python -I move_marker.py 5 84 'Donnons-nous' (the anchor's first occurrence after the marker; simulated in memory on both layers: the marker then stands between \\end{equation} of (2.4.0) and 'Donnons-nous'). The (2.4.0) edit below is listed under p. 84, where the TeX has it now."
+ },
+ {
+  "page": 84,
+  "where": "end of the diagram (2.4.0) (printed at the foot of p. 83)",
+  "scan": "a round full stop far to the right, just below the line of the labels (P_2,Q_2), (E_2,F_2)",
+  "tex": "no punctuation after the tikzpicture",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "node[below] {$f_2$} (Y2);\n\\end{tikzpicture}}",
+   "new": "node[below] {$f_2$} (Y2);\n\\end{tikzpicture}}\\,."
+  },
+  "note": "Same size and shape as the typed full stop that ends 2.5.1, but set a little below the last line; medium for that reason. The 'old' is on p. 83 once the folio-84 marker is moved."
+ },
+ {
+  "page": 84,
+  "where": "square 2.4.1, label of the right vertical arrow '(u_1 ⊗_S E_2 , v_1 ⊗^L_S F_2)'",
+  "scan": "no L above the first tensor sign (clean paper at the height of the second label's L); the second tensor sign has its L",
+  "tex": "(u_1\\overset{\\mathrm{L}}{\\otimes}_S E_2,\\,v_1\\overset{\\mathrm{L}}{\\otimes}_S F_2)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "{(u_1\\overset{\\mathrm{L}}{\\otimes}_S E_2",
+   "new": "{(u_1\\otimes_S E_2"
+  },
+  "corrected": "{(u_1\\overset{\\mathrm{L}}{\\otimes}_S E_2",
+  "note": "Every other tensor sign of 2.4.1 is the derived one, with its L; the typist left this L out. The TeX silently supplies it; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 84,
+  "where": "end of the square 2.4.1",
+  "scan": "a comma at the right of the lower row",
+  "tex": "no punctuation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{\\otimes}_S F_2) \\arrow[l,",
+   "new": "{\\otimes}_S F_2), \\arrow[l,"
+  },
+  "note": "The comma goes into the last cell, as the file does for (2) on p. 83 ('f_{*}f^{*}F,')."
+ },
+ {
+  "page": 84,
+  "where": "'dans la vérification de la formule de Lefschetz-Verdier.'",
+  "scan": "Lefschetz-Verdier with a typed hyphen",
+  "tex": "Lefschetz--Verdier (an en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Lefschetz--Verdier",
+   "new": "Lefschetz-Verdier"
+  },
+  "note": "En dash added by the transcription."
+ },
+ {
+  "page": 84,
+  "where": "label of Proposition 2.5",
+  "scan": "'Proposition 2.5 - Le diagramme ...': Proposition underlined, then the number and a typewriter dash, the statement run in",
+  "tex": "\\subsection*{Proposition 2.5} (no dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{Proposition 2.5}",
+   "new": "\\subsection*{Proposition 2.5 -}"
+  },
+  "note": "Exposé III label form, as Proposition 1.7.4 and 2.3."
+ },
+ {
+  "page": 84,
+  "where": "statement of Proposition 2.5",
+  "scan": "underlined: 'Le diagramme 2.5.1 ci-après' | 'où le carré de droite est déduit de' + '2.4.1 par application de' (across the line break) | 'au sens de 2.1.3 et 2.1.5' | 'est commutatif'; not underlined: the two commas, RHom (only its Hom, as everywhere), the final colon",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Le diagramme 2.5.1 ci-après, où le carré de droite est déduit de 2.4.1 par application de $\\uRHom$ au sens de 2.1.3 et 2.1.5, est commutatif :",
+   "new": "\\emph{Le diagramme 2.5.1 ci-après}, \\emph{où le carré de droite est déduit de 2.4.1 par application de} $\\uRHom$ \\emph{au sens de 2.1.3 et 2.1.5}, \\emph{est commutatif} :"
+  },
+  "note": ""
+ },
+ {
+  "page": 84,
+  "where": "diagram 2.5.1",
+  "scan": "no equation number: the diagram starts at the left margin, nothing beside it (the statement names it 'Le diagramme 2.5.1 ci-après')",
+  "tex": "\\begin{equation}\\tag{2.5.1}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{equation}\\tag{2.5.1}",
+   "new": "\\begin{equation}\\notag"
+  },
+  "note": "Number added by the transcription. \\notag (amsmath) in an equation environment suppresses the number (tested); one edit, the \\end{equation} stays."
+ },
+ {
+  "page": 84,
+  "where": "diagram 2.5.1, upper left diagonal RHom(E,F) — RHom(E_1 ⊗^L_S P_2 , F_1 ⊗^L_S Q_2)",
+  "scan": "a plain ruled line with no arrowhead at its lower end (crisp end, clean paper; the other three diagonals have drawn heads)",
+  "tex": "\\draw[->] (D) -- (E);",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\draw[->] (D) -- (E);",
+   "new": "\\draw (D) -- (E);"
+  },
+  "corrected": "\\draw[->] (D) -- (E);",
+  "note": "The arrow goes from RHom(E,F) to RHom(E_1 ⊗ P_2, F_1 ⊗ Q_2) (RHom of the (2,1) arrow of 2.4.1); the draughtsman left the head out. The TeX silently draws it; the fix restores the printed reading (diplomatic layer only). Medium: an omitted head rather than a misprint proper."
+ },
+ {
+  "page": 84,
+  "where": "end of diagram 2.5.1",
+  "scan": "a full stop at the right of the lower row, after RHom(P,Q)",
+  "tex": "no punctuation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\draw[->] (F) -- (G);\n\\end{tikzpicture}}",
+   "new": "\\draw[->] (F) -- (G);\n\\end{tikzpicture}}\\,."
+  },
+  "note": ""
+ },
+ {
+  "page": 85,
+  "where": "'on voit qu'il suffit de prouver les cas particuliers suivants de 2.5 :'",
+  "scan": "a colon after 2.5 (Corollaire 2.6.1 follows)",
+  "tex": "suivants de 2.5. (a full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "suivants de 2.5.",
+   "new": "suivants de 2.5 :"
+  },
+  "note": ""
+ },
+ {
+  "page": 85,
+  "where": "label of Corollaire 2.6.1",
+  "scan": "'Corollaire 2.6.1. - Soient ...': Corollaire underlined, then the number with a full stop and a typewriter dash, the statement run in",
+  "tex": "\\subsection*{Corollaire 2.6.1} (no full stop, no dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{Corollaire 2.6.1}",
+   "new": "\\subsection*{Corollaire 2.6.1. -}"
+  },
+  "note": "Exposé III label form ('Proposition 1.7.4 -'), here with the print's full stop after the number."
+ },
+ {
+  "page": 85,
+  "where": "statement of Corollaire 2.6.1, first two lines",
+  "scan": "underlined: Soient | un | morphisme (not S-) | un | schéma (not S-) | le morphisme déduit de | par le changement de base; the formulas, S' and f are not underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $f:X\\to Y$ un $S$-morphisme, $S'$ un $S$-schéma, $f':X'\\to Y'$ le morphisme déduit de $f$ par le changement de base $S'\\to S$",
+   "new": "\\emph{Soient} $f:X\\to Y$ \\emph{un} $S$-\\emph{morphisme}, $S'$ \\emph{un} $S$-\\emph{schéma}, $f':X'\\to Y'$ \\emph{le morphisme déduit de} $f$ \\emph{par le changement de base} $S'\\to S$"
+  },
+  "note": ""
+ },
+ {
+  "page": 85,
+  "where": "statement of Corollaire 2.6.1, '(resp. Hom_f^(3,4)((E,F) , (P,Q)) )'",
+  "scan": "resp underlined (not the parenthesis, not the full stop)",
+  "tex": "(resp. (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. $\\Hom_f^{(3,4)}",
+   "new": "(\\emph{resp}. $\\Hom_f^{(3,4)}"
+  },
+  "note": ""
+ },
+ {
+  "page": 85,
+  "where": "statement of Corollaire 2.6.1, last sentence",
+  "scan": "underlined: 'On a alors un' + 'carré commutatif' (across the line break) | 'où les flèches verticales sont de type' | 'au-dessus de'; not underlined: the comma, the 1, f' and the colon",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "On a alors un carré commutatif, où les flèches verticales sont de type~1 au-dessus de $f'$ :",
+   "new": "\\emph{On a alors un carré commutatif}, \\emph{où les flèches verticales sont de type}~1 \\emph{au-dessus de} $f'$ :"
+  },
+  "note": ""
+ },
+ {
+  "page": 85,
+  "where": "2.6.1.1, upper right corner 'RHom(E ⊗^L_S P' , F' ⊗^L_S Q')'",
+  "scan": "F' with a prime (clear)",
+  "tex": "F'\\overset{\\mathrm{L}}{\\otimes}_SQ' (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\uRHom(E\\overset{\\mathrm{L}}{\\otimes}_SP',F\\overset{\\mathrm{L}}{\\otimes}_SQ')",
+  "note": "The upper arrow is 2.2.4 for (E,F) on X and (P',Q') on S': its target is RHom(E ⊗^L_S P', F ⊗^L_S Q'); no F' is defined. The TeX keeps the printed reading; the corrected layer already has F."
+ },
+ {
+  "page": 85,
+  "where": "'Examinons d'abord le cas où (u,v) est le type (2,1).'",
+  "scan": "est le type (clear: 'le', as in 'le cas' on the same line)",
+  "tex": "est de type $(2,1)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "est de type $(2,1)$",
+   "new": "est le type $(2,1)$"
+  },
+  "corrected": "est de type $(2,1)$",
+  "note": "'est de type (2,1)', as 'est de type (3,4)' below and in 2.4. The TeX silently corrects; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 85,
+  "where": "unnumbered square after 'le carré', label of the left vertical arrow '2.1.1 ⊗^L 2.1.1'",
+  "scan": "an L above the tensor sign",
+  "tex": "{2.1.1\\otimes 2.1.1} (no L)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "{2.1.1\\otimes 2.1.1}",
+   "new": "{2.1.1\\overset{\\mathrm{L}}{\\otimes} 2.1.1}"
+  },
+  "note": "Applies to both layers."
+ },
+ {
+  "page": 85,
+  "where": "same square, upper right corner 'f*RHom(E ⊗^L L , F ⊗^L M))', first tensor product",
+  "scan": "E ⊗ L: a capital L after the tensor sign (crisp, as the L of 'f*RHom(L,M)'), the L above the sign",
+  "tex": "E\\overset{\\mathrm{L}}{\\otimes}1 (the digit 1)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "{\\otimes}1,",
+   "new": "{\\otimes}L,"
+  },
+  "note": "The digit 1 is printed in the LOWER right corner ('f*(E ⊗ 1)', next findings); the TeX has the two readings swapped. Diplomatic layer only: the corrected layer reads P\\otimes^LL, here and needs only the form change (P\\overset{\\mathrm{L}}{\\otimes}L,)."
+ },
+ {
+  "page": 85,
+  "where": "same corner, second tensor product 'F ⊗^L M'",
+  "scan": "the L above the tensor sign",
+  "tex": "F\\otimes^LM (a math-italic L as a superscript to the right)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes^LM) ",
+   "new": "\\overset{\\mathrm{L}}{\\otimes}M) "
+  },
+  "note": "Not converted to the Exposé III form \\overset{\\mathrm{L}}{\\otimes} (three such signs left in Exposé III, all in this square). Applies to both layers. Apply before the next edit."
+ },
+ {
+  "page": 85,
+  "where": "same corner, end 'M))'",
+  "scan": "two closing parentheses after M (only one is open)",
+  "tex": "M) (one parenthesis)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "M) \\arrow[d,\"2.1.1\"]",
+   "new": "M)) \\arrow[d,\"2.1.1\"]"
+  },
+  "corrected": "M) \\arrow[d,\"2.1.1\"]",
+  "note": "A stray parenthesis. The TeX silently corrects; the fix restores the printed reading (diplomatic layer only). Listed after the form edit of the same corner, whose 'old' it shares in part."
+ },
+ {
+  "page": 85,
+  "where": "same square, lower right corner 'RHom(f*(E ⊗^L 1),f*(F ⊗ M))', first tensor product",
+  "scan": "the L above the tensor sign",
+  "tex": "E\\otimes^LL (a math-italic L as a superscript)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes^LL)",
+   "new": "\\overset{\\mathrm{L}}{\\otimes}L)"
+  },
+  "note": "Not converted to the Exposé III form. Applies to both layers. Apply before the next edit."
+ },
+ {
+  "page": 85,
+  "where": "same corner, 'f*(E ⊗^L 1)'",
+  "scan": "the digit 1 after the tensor sign (flag and foot, as the 1 of 2.1.1)",
+  "tex": "L (silently corrected; the TeX's 1 stands in the upper right corner instead)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "L),f^{*}(",
+   "new": "1),f^{*}("
+  },
+  "corrected": "L),f^{*}(",
+  "note": "The second factor is L (as in the upper right corner and in the evaluation arrows): 1 is a typing error for L. The fix restores the printed reading (diplomatic layer only); listed after the form edit of the same sign."
+ },
+ {
+  "page": 85,
+  "where": "same corner, second tensor product 'f*(F ⊗ M)'",
+  "scan": "a plain tensor sign without L (next finding); this edit only brings the TeX's sign to the Exposé III form, for the corrected layer",
+  "tex": "F\\otimes^LM (a math-italic L as a superscript)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes^LM))",
+   "new": "\\overset{\\mathrm{L}}{\\otimes}M))"
+  },
+  "note": "Form edit for the corrected layer (Exposé III form); applies to both layers. Must precede the next edit, whose 'old' it creates."
+ },
+ {
+  "page": 85,
+  "where": "same corner, 'f*(F ⊗ M)'",
+  "scan": "no L above this tensor sign (clean paper; the first sign of the corner has its L)",
+  "tex": "F\\otimes^LM (with L)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(F\\overset{\\mathrm{L}}{\\otimes}M))",
+   "new": "(F\\otimes M))"
+  },
+  "corrected": "(F\\overset{\\mathrm{L}}{\\otimes}M))",
+  "note": "The derived tensor product, as in the upper right corner; the typist left the L out. The TeX silently supplies it; the fix restores the printed reading (diplomatic layer only). Its 'old' is the text after the preceding form edit (it does not occur before it)."
+ },
+ {
+  "page": 85,
+  "where": "same square, all four corners",
+  "scan": "E,F where the objects of Y are meant: f*RHom(E,F) ⊗ f*RHom(L,M) ; f*RHom(E ⊗ L , F ⊗ M)) ; RHom(f*E,f*F) ⊗ RHom(f*L,f*M) ; RHom(f*(E ⊗ 1),f*(F ⊗ M))",
+  "tex": "E,F (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "f^{*}\\uRHom(P,Q)\\overset{\\mathrm{L}}{\\otimes} f^{*}\\uRHom(L,M) ; f^{*}\\uRHom(P\\overset{\\mathrm{L}}{\\otimes}L,Q\\overset{\\mathrm{L}}{\\otimes}M) ; \\uRHom(f^{*}P,f^{*}Q)\\overset{\\mathrm{L}}{\\otimes}\\uRHom(f^{*}L,f^{*}M) ; \\uRHom(f^{*}(P\\overset{\\mathrm{L}}{\\otimes}L),f^{*}(Q\\overset{\\mathrm{L}}{\\otimes}M))",
+  "note": "After the reduction E = f*P, F = f*Q, the square concerns P,Q (and L,M) in D_ctf(Y): f* is applied to them, and RHom(f*P,f*Q) is the term of 2.1.1. The TeX keeps the printed reading; the corrected layer already has P,Q (Codex SGA-SRC-001847). 'corrected' gives the four corners, upper left, upper right, lower left, lower right."
+ },
+ {
+  "page": 85,
+  "where": "first evaluation arrow 'f*E ⊗^L f*RHom(E,F) ⟶ f*F'",
+  "scan": "E,F as printed",
+  "tex": "E,F (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "f^{*}P\\overset{\\mathrm{L}}{\\otimes} f^{*}\\uRHom(P,Q)\\longrightarrow f^{*}Q",
+  "note": "The evaluation arrow of 2.2.2 for (P,Q), pulled back by f, as in the square above. The TeX keeps the printed reading; the corrected layer already has P,Q (Codex SGA-SRC-001847)."
+ },
+ {
+  "page": 85,
+  "where": "end of the page",
+  "scan": "p. 85 ends 'On doit prouver la commutativité du carré'; the square that follows is printed at the top of p. 86",
+  "tex": "page_085.tex ends with '\\[' and '\\begin{tikzcd}[': the folio-86 marker splits the tikzcd option list ('column sep=large,row sep=large]' is under folio 86; both layers)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 86 really begins at the '\\[' that opens this square. Exact fix: python -I move_marker.py 5 86 '\\[' --before (single quotes; the last '\\[' before the marker is that line; simulated in memory on both layers: the marker then stands on its own line between 'du carré' and '\\[')."
+ }
+]

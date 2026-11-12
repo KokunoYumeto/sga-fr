@@ -1,0 +1,799 @@
+[
+ {
+  "page": 201,
+  "where": "label of Lemme 6.23.3",
+  "scan": "'Lemme 6.23.3 - (cf. ...': the label is followed by ' -' ('Lemme' underlined)",
+  "tex": "\\begin{statement}{Lemme 6.23.3}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Lemme 6.23.3}",
+   "new": "\\begin{statement}{Lemme 6.23.3 -}"
+  },
+  "note": "Exposé III B keeps Exposé III's run-in labels with ' -' (the environment adds no stop there)."
+ },
+ {
+  "page": 201,
+  "where": "Lemme 6.23.3, the reference before 'Soient'",
+  "scan": "'(cf. (SGA 4^{1/2} Rapport 4.7).': two opening parentheses, one closing (clear at 2x)",
+  "tex": "(cf. SGA $4^{1/2}$ Rapport 4.7).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(cf. SGA",
+   "new": "(cf. (SGA"
+  },
+  "corrected": "(cf. SGA",
+  "note": "The parentheses of the print do not balance; the TeX silently corrects. The fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 201,
+  "where": "Lemme 6.23.3, statement before the diagram (*)",
+  "scan": "underlined: 'Soient', 'un', '-module localement / facteur direct d'un module libre de type fini', 'et', 'un complexe de', '-modules, parfait sur', 'Alors', 'considéré comme objet de', 'par l'action diagonale de', 'est parfait sur', 'et l'on a un carré commu-/tatif'; the math letters, the reference and the commas between are not underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $P$ un $G_V$-module localement facteur direct d'un module libre de type fini, $P'=i_!P$, et $Q$ un complexe de $\\Lambda[G]$-modules, parfait sur $\\Lambda$. Alors $P\\lten_{\\Lambda}Q$, considéré comme objet de $D({}_{\\Lambda[G]}V)$ par l'action diagonale de $G$, est parfait sur $\\Lambda[G]$, et l'on a un carré commutatif",
+   "new": "\\emph{Soient} $P$ \\emph{un} $G_V$-\\emph{module localement facteur direct d'un module libre de type fini}, $P'=i_!P$, \\emph{et} $Q$ \\emph{un complexe de} $\\Lambda[G]$-\\emph{modules, parfait sur} $\\Lambda$. \\emph{Alors} $P\\lten_{\\Lambda}Q$, \\emph{considéré comme objet de} $D({}_{\\Lambda[G]}V)$ \\emph{par l'action diagonale de} $G$, \\emph{est parfait sur} $\\Lambda[G]$, \\emph{et l'on a un carré commutatif}"
+  },
+  "note": "Exposé III B statement underline, \\emph as in the logged III B fixes (pp. 142-175). The misprint fix '(cf. (SGA' does not overlap this edit."
+ },
+ {
+  "page": 201,
+  "where": "diagram (*), top row, the tensor sign between the two RHom",
+  "scan": "'... p_2^!P') ⊗^L RHom_Λ[G](Q,Q)': L above the sign, no subscript Λ (clear at 2x; the Λ under ⊗ in the statement and the proof is crisp)",
+  "tex": "p_2^!P')\\lten_{\\Lambda}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "p_2^!P')\\lten_{\\Lambda}",
+   "new": "p_2^!P')\\lten"
+  },
+  "note": "The TeX adds the subscript."
+ },
+ {
+  "page": 201,
+  "where": "diagram (*), top row, second RHom",
+  "scan": "'⊗ RHom_Λ[G](Q,Q)': RHom typed without any underline (the first RHom of the row has Hom underlined)",
+  "tex": "\\uRHom_{\\Lambda[G]}(Q,Q) \\arrow[r",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom_{\\Lambda[G]}(Q,Q) \\arrow[r",
+   "new": "\\mathrm{R}\\mathrm{Hom}_{\\Lambda[G]}(Q,Q) \\arrow[r"
+  },
+  "note": "\\mathrm{R}\\mathrm{Hom} is the file's form for a plain RHom in Exposé III. The same RHom in the display after 'et' below and in the bottom row has Hom underlined, as in the TeX."
+ },
+ {
+  "page": 201,
+  "where": "diagram (*), bottom row",
+  "scan": "'δ*RHom_Λ[G](p_1^*P' ⊗^L Q, p_2^!P' ⊗^L Q)': both tensor signs with L above and no subscript Λ",
+  "tex": "(p_1^*P'\\lten_{\\Lambda}Q,p_2^!P'\\lten_{\\Lambda}Q)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(p_1^*P'\\lten_{\\Lambda}Q,p_2^!P'\\lten_{\\Lambda}Q)",
+   "new": "(p_1^*P'\\lten Q,p_2^!P'\\lten Q)"
+  },
+  "note": "The TeX adds both subscripts."
+ },
+ {
+  "page": 201,
+  "where": "Lemme 6.23.3, 'où δ : Y → Y ×_S Y est la diagonale, (1) est produit tensoriel des flèches'",
+  "scan": "underlined: 'où', 'est la diagonale', 'est produit tensoriel des flèches'; not the formula, the comma, '(1)'",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où $\\delta:Y\\to Y\\times_SY$ est la diagonale, (1) est produit tensoriel des flèches",
+   "new": "\\emph{où} $\\delta:Y\\to Y\\times_SY$ \\emph{est la diagonale}, (1) \\emph{est produit tensoriel des flèches}"
+  },
+  "note": "Exposé III B statement underline."
+ },
+ {
+  "page": 201,
+  "where": "Lemme 6.23.3, the 'et' between the two displays",
+  "scan": "'et' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\net\n\\[",
+   "new": "\\]\n\\emph{et}\n\\["
+  },
+  "note": "Exposé III B statement underline."
+ },
+ {
+  "page": 201,
+  "where": "Lemme 6.23.3, '(2) est la flèche déduite ... selon la diagonale'",
+  "scan": "'est la flèche déduite du produit tensoriel externe par restriction selon la / diagonale' underlined; '(2)' not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(2) est la flèche déduite du produit tensoriel externe par restriction selon la diagonale",
+   "new": "(2) \\emph{est la flèche déduite du produit tensoriel externe par restriction selon la diagonale}"
+  },
+  "note": "Exposé III B statement underline."
+ },
+ {
+  "page": 201,
+  "where": "Lemme 6.23.3, ', et (3) est composé de 6.5.3 (définie car'",
+  "scan": "underlined: 'et', 'est composé de', 'définie car'; not '(3)', '6.5.3', the parenthesis, nor 'et de' further on",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et (3) est composé de 6.5.3 (définie car",
+   "new": "\\emph{et} (3) \\emph{est composé de} 6.5.3 (\\emph{définie car}"
+  },
+  "note": "Exposé III B statement underline; the subscript fix of the same line (next finding) does not overlap."
+ },
+ {
+  "page": 201,
+  "where": "Lemme 6.23.3, '(définie car P' ⊗^L Q ∈ ob D_ctf(Λ[G]Y))'",
+  "scan": "P' ⊗^L Q: L above the sign, no subscript Λ",
+  "tex": "P'\\lten_{\\Lambda}Q\\in",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "P'\\lten_{\\Lambda}Q\\in",
+   "new": "P'\\lten Q\\in"
+  },
+  "note": "The TeX adds the subscript."
+ },
+ {
+  "page": 201,
+  "where": "proof, display after 'on a', first sign",
+  "scan": "δ*RHom(...) ≃ D_Λ[G](i_!P) ⊗^L i_!P: a tilde over a plain typed bar, no arrowhead (zoomed 5x: the bar ends flat)",
+  "tex": "\\xrightarrow{\\sim} (after p_2^!P')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "p_2^!P')\n\\xrightarrow{\\sim}",
+   "new": "p_2^!P')\n\\simeq"
+  },
+  "note": "As the logged findings of pp. 10 and 17-20 (bar without head written \\simeq)."
+ },
+ {
+  "page": 201,
+  "where": "proof, display after 'on a', second sign",
+  "scan": "... ⊗^L i_!P ≃ i_!(D_Λ[G]P ⊗^L P): a tilde over a plain typed bar, no arrowhead",
+  "tex": "\\xrightarrow{\\sim} (after i_!P)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "i_!P\n\\xrightarrow{\\sim}",
+   "new": "i_!P\n\\simeq"
+  },
+  "note": ""
+ },
+ {
+  "page": 201,
+  "where": "diagram (**), top row, second RHom (printed at the top of p. 202; in page_201.tex as the files stand)",
+  "scan": "'RHom_Λ[G](P, K_Y ⊗^L P) ⊗^L RHom_Λ[G](Q,Q)': the second RHom without any underline (the first and the bottom-row RHom have Hom underlined)",
+  "tex": "\\lten\\uRHom_{\\Lambda[G]}(Q,Q)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lten\\uRHom_{\\Lambda[G]}(Q,Q)",
+   "new": "\\lten\\mathrm{R}\\mathrm{Hom}_{\\Lambda[G]}(Q,Q)"
+  },
+  "note": "Filed under p. 201 because its TeX stands there until the folio-202 marker move; the old is unique in s5.tex."
+ },
+ {
+  "page": 202,
+  "where": "top of the page: diagram (**)",
+  "scan": "p. 202 begins with the whole diagram (**); p. 201 ends with 'Le carré (*) s'écrit alors' and the footnote",
+  "tex": "'\\begin{equation}', '\\tag{**}', the tikzcd's first row and '& K_Y \\arrow[d,' (s5.tex lines 6813-6818 in the diplomatic layer) end page_201.tex; the folio-202 marker (line 6819) stands inside the tikzcd, before 'equal]\\\\'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 202 really begins at s5.tex line 6813 '\\begin{equation}' (the diagram (**)). Exact fix: python -I move_marker.py 5 202 '\\begin{equation}' --before (simulated in memory on both layers: the marker then stands after 'Le carré (*) s'écrit alors', just before '\\begin{equation}' and '\\tag{**}'). Text not moved."
+ },
+ {
+  "page": 202,
+  "where": "'(1) est donné par Tr_Λ[G](-)(e) ⊗ Tr_Λ (traces au sens du n° 5)'",
+  "scan": "the formula runs into the text; no comma after Tr_Λ (clean paper before the line break)",
+  "tex": "\\Tr_{\\Lambda[G]}(-)(e)\\otimes\\Tr_{\\Lambda}, (end of the display)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes\\Tr_{\\Lambda},",
+   "new": "\\otimes\\Tr_{\\Lambda}"
+  },
+  "note": "The TeX adds punctuation at the end of the display."
+ },
+ {
+  "page": 202,
+  "where": "paragraph number 6.24",
+  "scan": "'6.24.' with a full stop",
+  "tex": "\\subsection*{6.24}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.24}",
+   "new": "\\subsection*{6.24.}"
+  },
+  "note": "As the logged fixes '\\subsection*{6.2.}' etc. of pp. 183-185."
+ },
+ {
+  "page": 202,
+  "where": "6.24, 'est l'identité (mais, ... n'est pas sérieuse). Si Y est'",
+  "scan": "'l'identité (mais, comme on l'a déjà observé, cette restriction n'est pas sérieuse). Si'",
+  "tex": "l'identité; mais, comme on l'a déjà observé, cette restriction n'est pas sérieuse. Si",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "l'identité; mais, comme on l'a déjà observé, cette restriction n'est pas sérieuse.",
+   "new": "l'identité (mais, comme on l'a déjà observé, cette restriction n'est pas sérieuse)."
+  },
+  "note": "The TeX replaces the printed parenthesis by a semicolon."
+ },
+ {
+  "page": 202,
+  "where": "heading of the bibliography (printed at the top of p. 203; in page_202.tex as the files stand)",
+  "scan": "'BIBLIOGRAPHIE.': capitals, underlined, then a full stop",
+  "tex": "\\section*{Bibliographie}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{Bibliographie}",
+   "new": "\\section*{BIBLIOGRAPHIE.}"
+  },
+  "note": "Capitals and full stop as printed (as the logged BIBLIOGRAPHIE. fix of p. 135/136); the underline is the accepted \\section* setting. Filed under p. 202: the anchor of the folio-203 marker move ('\\section*{B') matches either spelling."
+ },
+ {
+  "page": 203,
+  "where": "top of the page: the heading BIBLIOGRAPHIE. and the start of the list",
+  "scan": "p. 203 begins with 'BIBLIOGRAPHIE.' and '[1] Cartan, H. et Eilenberg, S.'; p. 202 ends '... et la partie I du présent exposé).'",
+  "tex": "'\\section*{Bibliographie}' and '\\begin{enumerate}[' (s5.tex lines 6840-6842, diplomatic) end page_202.tex; the folio-203 marker (line 6843) splits the enumerate option before 'label={[\\arabic*]}]'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 203 really begins at s5.tex line 6840 '\\section*{Bibliographie}'. Exact fix: python -I move_marker.py 5 203 '\\section*{B' --before (simulated in memory on both layers; run it once only: an earlier '\\section*{B' would catch a second run). Text not moved."
+ },
+ {
+  "page": 203,
+  "where": "[1] Cartan-Eilenberg, between author and title",
+  "scan": "' - ' (typewriter hyphen between spaces)",
+  "tex": "Eilenberg, S. --",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Eilenberg, S. --",
+   "new": "Eilenberg, S. -"
+  },
+  "note": "The TeX writes an en dash."
+ },
+ {
+  "page": 203,
+  "where": "[2] Grothendieck, between author and title",
+  "scan": "' - ' (typewriter hyphen between spaces)",
+  "tex": "Grothendieck, A. --",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Grothendieck, A. --",
+   "new": "Grothendieck, A. -"
+  },
+  "note": "The TeX writes an en dash."
+ },
+ {
+  "page": 203,
+  "where": "[3] Illusie, between author and title",
+  "scan": "' - ' (typewriter hyphen between spaces)",
+  "tex": "Illusie, L. --",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Illusie, L. --",
+   "new": "Illusie, L. -"
+  },
+  "note": "The TeX writes an en dash."
+ },
+ {
+  "page": 203,
+  "where": "[6] Verdier, between author and title",
+  "scan": "' - ' (typewriter hyphen between spaces)",
+  "tex": "Verdier, J.-L. --",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Verdier, J.-L. --",
+   "new": "Verdier, J.-L. -"
+  },
+  "note": "The TeX writes an en dash."
+ },
+ {
+  "page": 203,
+  "where": "[4] Langlands, between author and title",
+  "scan": "'Langlands, R.P.- Modular': the hyphen right after 'R.P.' (no space before it, none between the initials)",
+  "tex": "Langlands, R. P. --",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Langlands, R. P. --",
+   "new": "Langlands, R.P.-"
+  },
+  "note": "The TeX writes an en dash; the edit also closes up 'R. P.' as printed."
+ },
+ {
+  "page": 203,
+  "where": "[5] Stallings, between author and title",
+  "scan": "' - ' (typewriter hyphen)",
+  "tex": "Stallings, J. --",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Stallings, J. --",
+   "new": "Stallings, J. -"
+  },
+  "note": "The TeX writes an en dash."
+ },
+ {
+  "page": 203,
+  "where": "[5] Stallings, title 'Centerless groups - an algebraic formulation'",
+  "scan": "' - ' (typewriter hyphen)",
+  "tex": "Centerless groups --",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Centerless groups --",
+   "new": "Centerless groups -"
+  },
+  "note": "The TeX writes an en dash."
+ },
+ {
+  "page": 203,
+  "where": "[5] Stallings, 'p. 129-134'",
+  "scan": "p. 129-134 (typewriter hyphen)",
+  "tex": "129--134",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "129--134",
+   "new": "129-134"
+  },
+  "note": "As the logged page ranges of p. 136."
+ },
+ {
+  "page": 203,
+  "where": "title 'Homological Algebra'",
+  "scan": "typed plain (no italic, no underline)",
+  "tex": "\\textit{Homological Algebra}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textit{Homological Algebra}",
+   "new": "Homological Algebra"
+  },
+  "note": "The TeX adds italics the typescript does not have."
+ },
+ {
+  "page": 203,
+  "where": "title 'Dix exposés sur la cohomologie des schémas'",
+  "scan": "typed plain (no italic, no underline)",
+  "tex": "\\textit{Dix exposés sur la cohomologie des schémas}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textit{Dix exposés sur la cohomologie des schémas}",
+   "new": "Dix exposés sur la cohomologie des schémas"
+  },
+  "note": "The TeX adds italics the typescript does not have."
+ },
+ {
+  "page": 203,
+  "where": "title 'Modular Functions of One Variable II'",
+  "scan": "typed plain (no italic, no underline)",
+  "tex": "\\textit{Modular Functions of One Variable II}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textit{Modular Functions of One Variable II}",
+   "new": "Modular Functions of One Variable II"
+  },
+  "note": "The TeX adds italics the typescript does not have."
+ },
+ {
+  "page": 203,
+  "where": "title 'Proceedings of a conference on local fields'",
+  "scan": "typed plain (no italic, no underline)",
+  "tex": "\\textit{Proceedings of a conference on local fields}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textit{Proceedings of a conference on local fields}",
+   "new": "Proceedings of a conference on local fields"
+  },
+  "note": "The TeX adds italics the typescript does not have."
+ },
+ {
+  "page": 203,
+  "where": "title 'Cohomologie étale'",
+  "scan": "typed plain (no italic, no underline)",
+  "tex": "\\textit{Cohomologie étale}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textit{Cohomologie étale}",
+   "new": "Cohomologie étale"
+  },
+  "note": "The TeX adds italics the typescript does not have."
+ },
+ {
+  "page": 203,
+  "where": "[5] Stallings, 'Topology, 4, p. 129-134'",
+  "scan": "'Topology, 4,': plain, with a comma after Topology",
+  "tex": "\\textit{Topology} 4,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textit{Topology} 4,",
+   "new": "Topology, 4,"
+  },
+  "note": "The TeX drops the comma and adds italics (one edit: the two changes touch)."
+ },
+ {
+  "page": 203,
+  "where": "SGA 4^{1/2} entry, 'Springer-Verlag 1977.'",
+  "scan": "no comma between Springer-Verlag and 1977",
+  "tex": "Springer-Verlag, 1977.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Springer-Verlag, 1977.",
+   "new": "Springer-Verlag 1977."
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 203,
+  "where": "'(Dans SGA 4^{1/2} : Th. Finitude : ...'",
+  "scan": "the three lines are in parentheses: '(Dans SGA 4^{1/2} : ...' ... 'formule des traces).'",
+  "tex": "Dans SGA $4^{1/2}$:",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Dans SGA $4^{1/2}$:",
+   "new": "(Dans SGA $4^{1/2}$:"
+  },
+  "note": "Apply together with the closing parenthesis after 'traces' (below)."
+ },
+ {
+  "page": 203,
+  "where": "'Théorèmes de finitude en cohomologie ℓ-adique.'",
+  "scan": "full stop after 'ℓ-adique'",
+  "tex": "\\ell\\text{-adique;}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "-adique;}",
+   "new": "-adique.}"
+  },
+  "note": "The TeX has a semicolon."
+ },
+ {
+  "page": 203,
+  "where": "'Cycle : La classe de cohomologie associée à un cycle.'",
+  "scan": "full stop after 'cycle'",
+  "tex": "\\text{Cycle: La classe de cohomologie associée à un cycle;}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "un cycle;}",
+   "new": "un cycle.}"
+  },
+  "note": "The TeX has a semicolon."
+ },
+ {
+  "page": 203,
+  "where": "'Rapport : Rapport sur la formule des traces).'",
+  "scan": "closing parenthesis before the full stop",
+  "tex": "\\text{Rapport: Rapport sur la formule des traces.}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "des traces.}",
+   "new": "des traces).}"
+  },
+  "note": "Closes the parenthesis opened before 'Dans'; apply together with that edit."
+ },
+ {
+  "page": 204,
+  "where": "exposé heading, first line",
+  "scan": "'E X P O S E  V' (capitals, letter-spaced, dashed underline) on a line of its own; no full stop (the speck to the right of V is a tiny mark at mid-height, not a typed stop)",
+  "tex": "\\section*{Exposé V. Systèmes projectifs $J$-adiques}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "{Exposé V. ",
+   "new": "{EXPOSÉ V\\\\"
+  },
+  "note": "Capitals as printed (the typescript's capital E has no accent: the accented capital stands); the title on a line of its own as in '\\section*{Exposé III B\\\\CALCULS DE TERMES LOCAUX}'. Medium only for the full stop."
+ },
+ {
+  "page": 204,
+  "where": "exposé heading, title",
+  "scan": "'SYSTEMES PROJECTIFS J- ADIQUES' in capitals, underlined, centred",
+  "tex": "Systèmes projectifs $J$-adiques",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Systèmes projectifs $J$-adiques}",
+   "new": "SYSTÈMES PROJECTIFS $J$-ADIQUES}"
+  },
+  "note": "Capitals as printed, as the titles of Exposés I, III and III B; accented capital as the volume's rule."
+ },
+ {
+  "page": 204,
+  "where": "author line",
+  "scan": "'par' / 'J.P. JOUANOLOU': no hyphen between the initials, surname in capitals",
+  "tex": "par J.-P. Jouanolou",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "par J.-P. Jouanolou",
+   "new": "par J.P. JOUANOLOU"
+  },
+  "note": "As 'A.~GROTHENDIECK' on p. 1. The TeX adds the hyphen."
+ },
+ {
+  "page": 204,
+  "where": "section heading 1",
+  "scan": "'1. Généralités sur les A-catégories abéliennes.' with a full stop (words underlined)",
+  "tex": "\\subsection*{1. Généralités sur les $A$-catégories abéliennes}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$A$-catégories abéliennes}",
+   "new": "$A$-catégories abéliennes.}"
+  },
+  "note": "Underlined title: the print's full stop."
+ },
+ {
+  "page": 204,
+  "where": "label of Définition 1.1",
+  "scan": "'DEFINITION 1.1. - On appelle': capitals, not underlined, then '. -'",
+  "tex": "\\begin{statement}{Définition 1.1} (the Exposé V environment prints 'Définition 1.1.')",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "{Définition 1.1}\n",
+   "new": "{DÉFINITION 1.1}\n- "
+  },
+  "note": "With the environment as restored at p. 204 (it adds the stop) this prints 'DÉFINITION 1.1. - On appelle'. Exposé V's labels differ from the volume's 'Définition 1.1. :' form: see the coordinator message."
+ },
+ {
+  "page": 204,
+  "where": "Définition 1.1, first sentence up to 'd'anneaux'",
+  "scan": "underlined: 'On appelle', 'catégorie (resp.', 'catégorie abélienne)', 'un couple', 'formé d'une catégorie additive (resp. abélienne)', 'et / d'un homomorphisme d'anneaux'; not A-, (C,ρ), C, nor the colon",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "On appelle $A$-catégorie (resp. $A$-catégorie abélienne) un couple $(\\cC,\\rho)$ formé d'une catégorie additive (resp. abélienne) $\\cC$ et d'un homomorphisme d'anneaux",
+   "new": "\\emph{On appelle} $A$-\\emph{catégorie (resp.} $A$-\\emph{catégorie abélienne)} \\emph{un couple} $(\\cC,\\rho)$ \\emph{formé d'une catégorie additive (resp. abélienne)} $\\cC$ \\emph{et d'un homomorphisme d'anneaux}"
+  },
+  "note": "The TeX of Exposé V has no underline markup; \\emph as in III B. Does not overlap the label edit before it or the colon edit after it."
+ },
+ {
+  "page": 204,
+  "where": "Définition 1.1, 'd'un homomorphisme d'anneaux :'",
+  "scan": "a colon before the display",
+  "tex": "no colon",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\\[\n\\rho:A\\longrightarrow",
+   "new": ":\n\\[\n\\rho:A\\longrightarrow"
+  },
+  "note": "The colon follows the underlined words directly."
+ },
+ {
+  "page": 204,
+  "where": "Définition 1.1, 'de A dans l'anneau des endomorphismes ... de C dans C .'",
+  "scan": "underlined: 'de', 'dans l'anneau des endomorphismes du foncteur identique de', 'dans'; not A, C, the stop",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "de $A$ dans l'anneau des endomorphismes du foncteur identique de $\\cC$ dans $\\cC$.",
+   "new": "\\emph{de} $A$ \\emph{dans l'anneau des endomorphismes du foncteur identique de} $\\cC$ \\emph{dans} $\\cC$."
+  },
+  "note": ""
+ },
+ {
+  "page": 204,
+  "where": "'(resp. de A-catégories abéliennes de (C,ρ) dans (C',ρ')'",
+  "scan": "no closing parenthesis after 'abéliennes': '(resp. de A - / catégories abéliennes de (C,ρ) dans (C',ρ') un foncteur' (clean paper after 'abéliennes')",
+  "tex": "(resp. de $A$-catégories abéliennes) de $(\\cC,\\rho)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "abéliennes) de $(\\cC,\\rho)$",
+   "new": "abéliennes de $(\\cC,\\rho)$"
+  },
+  "corrected": "abéliennes) de $(\\cC,\\rho)$",
+  "note": "The '(resp.' is never closed in the print; the TeX silently corrects. The fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 204,
+  "where": "'tel que pour tout objet M de C et tout élément a de A l'égalité ci-dessous soit vérifiée :'",
+  "scan": "no comma after 'que' nor after 'de A'",
+  "tex": "tel que, pour tout objet ... de $A$, l'égalité",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "tel que, pour tout objet $M$ de $\\cC$ et tout élément $a$ de $A$, l'égalité",
+   "new": "tel que pour tout objet $M$ de $\\cC$ et tout élément $a$ de $A$ l'égalité"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 204,
+  "where": "Exemple 1.1.1, 'des (A,C)-modules (à gauche) et qu'on note'",
+  "scan": "'(à gauche)' in parentheses, no comma before 'et'",
+  "tex": "$(A,\\cC)$-modules à gauche, et",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "-modules à gauche, et",
+   "new": "-modules (à gauche) et"
+  },
+  "note": ""
+ },
+ {
+  "page": 204,
+  "where": "Exemple 1.1.1, '(A,C)-mod la catégorie décrite comme suit :'",
+  "scan": "no comma after 'mod'",
+  "tex": "$(A,\\cC)$-mod, la catégorie",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "-mod, la catégorie",
+   "new": "-mod la catégorie"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 205,
+  "where": "top of the page: '(i) Ses objets sont les couples'",
+  "scan": "p. 205 begins with '(i) Ses objets sont les couples (X,α)'; p. 204 ends 'la catégorie décrite comme suit :'",
+  "tex": "'\\begin{enumerate}[label=(\\roman*)]' and '\\item Ses' (s5.tex lines 6895-6896, diplomatic) end page_204.tex; the folio-205 marker (line 6897) stands between 'Ses' and 'objets'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 205 really begins at s5.tex line 6895 '\\begin{enumerate}[label=(\\roman*)]'. Exact fix: python -I move_marker.py 5 205 '\\begin{enumerate}[label=(\\roman*)]' --before (simulated in memory on both layers). Text not moved; it agrees with the print."
+ },
+ {
+  "page": 205,
+  "where": "(ii), 'tel que pour tout élément a de A la diagramme'",
+  "scan": "no comma after 'que' nor after 'de A'",
+  "tex": "tel que, pour tout élément $a$ de $A$, le diagramme",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "tel que, pour tout élément $a$ de $A$,",
+   "new": "tel que pour tout élément $a$ de $A$"
+  },
+  "note": "The TeX adds two commas. Listed before the misprint fix of the next word, which it does not overlap."
+ },
+ {
+  "page": 205,
+  "where": "(ii), 'la diagramme ci-dessous soit commutatif'",
+  "scan": "'la diagramme' (clear: l-a)",
+  "tex": "le diagramme ci-dessous",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "le diagramme ci-dessous",
+   "new": "la diagramme ci-dessous"
+  },
+  "corrected": "le diagramme ci-dessous",
+  "note": "Wrong article ('diagramme' is masculine); the TeX silently corrects. The fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 205,
+  "where": "(ii), the square, bottom row",
+  "scan": "'X ——> Y' with nothing after Y (clean paper)",
+  "tex": "X \\arrow[r] & Y .",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "X \\arrow[r] & Y .",
+   "new": "X \\arrow[r] & Y"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 205,
+  "where": "property (a)",
+  "scan": "underlined: 'Le foncteur', 'mod', 'obtenu en oubliant la structure de', 'module commute aux limites inductives et projectives'; not (A,C)-, → C, A-, the stop",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Le foncteur $(A,\\cC)$-mod $\\to\\cC$ obtenu en oubliant la structure de $A$-module commute aux limites inductives et projectives.",
+   "new": "\\emph{Le foncteur} $(A,\\cC)$-\\emph{mod} $\\to\\cC$ \\emph{obtenu en oubliant la structure de} $A$-\\emph{module commute aux limites inductives et projectives}."
+  },
+  "note": "Exposé V: no underline markup in the TeX; \\emph as in III B."
+ },
+ {
+  "page": 205,
+  "where": "property (b)",
+  "scan": "underlined: 'Soit', 'une catégorie', 'Pour que les', 'limites inductives', '(resp. / projectives)', 'de', 'mod soient représentables, il suffit qu'il en soit / ainsi pour les', 'limites inductives (resp. projectives) de'; not I, I-, (A,C)-, C, the stops",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $I$ une catégorie. Pour que les $I$-limites inductives (resp. projectives) de $(A,\\cC)$-mod soient représentables, il suffit qu'il en soit ainsi pour les $I$-limites inductives (resp. projectives) de $\\cC$.",
+   "new": "\\emph{Soit} $I$ \\emph{une catégorie}. \\emph{Pour que les} $I$-\\emph{limites inductives} \\emph{(resp. projectives)} \\emph{de} $(A,\\cC)$-\\emph{mod soient représentables, il suffit qu'il en soit ainsi pour les} $I$-\\emph{limites inductives (resp. projectives) de} $\\cC$."
+  },
+  "note": ""
+ },
+ {
+  "page": 205,
+  "where": "heading 1.2",
+  "scan": "'1.2. Produit tensoriel externe.' with a full stop (title underlined)",
+  "tex": "\\subsubsection*{1.2. Produit tensoriel externe}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{1.2. Produit tensoriel externe}",
+   "new": "\\subsubsection*{1.2. Produit tensoriel externe.}"
+  },
+  "note": "Underlined title: the print's full stop."
+ },
+ {
+  "page": 205,
+  "where": "1.2, 'on appelle produit tensoriel externe de X par M'",
+  "scan": "underlined: 'produit / tensoriel externe de', 'par'; not X, M",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "on appelle produit tensoriel externe de $X$ par $M$",
+   "new": "on appelle \\emph{produit tensoriel externe de} $X$ \\emph{par} $M$"
+  },
+  "note": "The term being defined."
+ },
+ {
+  "page": 205,
+  "where": "1.2, 'un A-module à droite grâce à l'action'",
+  "scan": "'à droite' underlined (the earlier 'A-module à droite et X' is not)",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "un $A$-module à droite grâce",
+   "new": "un $A$-module \\emph{à droite} grâce"
+  },
+  "note": ""
+ },
+ {
+  "page": 205,
+  "where": "1.2, 'Ĉ = Hom(C,Ens)°'",
+  "scan": "Hom underlined",
+  "tex": "\\widehat{\\cC}=\\Hom(\\cC,\\Ens)^{\\circ}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\Hom(\\cC,\\Ens)",
+   "new": "=\\uHom(\\cC,\\Ens)"
+  },
+  "note": "\\uHom (\\underline{\\Hom}) is defined in the preamble."
+ },
+ {
+  "page": 205,
+  "where": "end of the page: 'l'allure plus familière suivante :'",
+  "scan": "p. 205 ends with 'suivante :'; the display Hom_Ĉ(M ⊗_A X, Y) = ... is not on this page",
+  "tex": "'suivante:' (s5.tex line 6923, diplomatic) is the first line of page 206: the folio-206 marker (line 6922) stands between 'familière' and 'suivante:'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 206 really begins at the display '\\[' after 'suivante:' (s5.tex line 6924). Exact fix: python -I move_marker.py 5 206 '\\[' (forward, no --before; simulated in memory on both layers: the marker then stands between 'suivante:' and '\\['). Text not moved."
+ }
+]

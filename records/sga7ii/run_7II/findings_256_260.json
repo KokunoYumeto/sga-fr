@@ -1,0 +1,201 @@
+[
+ {
+  "page": 256,
+  "where": "Théorème 1.1, third line: 'et 𝔉 un ℤ_ℓ-faisceau (resp. ℚ_ℓ-faisceau) sur X'",
+  "scan": "ℤ_ℓ-faisceau (resp. ℚ_ℓ-faisceau): the underline covers only the word faisceau, both times; the hyphens and the closing parenthesis are not underlined (checked at 3x)",
+  "tex": "$\\mathbb{Z}_\\ell$\\underline{-faisceau} (resp. $\\mathbb{Q}_\\ell$\\underline{-faisceau)}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathbb{Z}_\\ell$\\underline{-faisceau} (resp. $\\mathbb{Q}_\\ell$\\underline{-faisceau)}",
+   "new": "$\\mathbb{Z}_\\ell$-\\underline{faisceau} (resp. $\\mathbb{Q}_\\ell$-\\underline{faisceau})"
+  },
+  "note": "The TeX starts the underline with the hyphen after the math letter and takes the closing parenthesis into it; the typescript underlines only the word (as SGA 7 I, global item 17)."
+ },
+ {
+  "page": 256,
+  "where": "Théorème 1.1, line after (1.1.1): 'soit un isomorphisme de ℤ_ℓ-faisceaux(resp. de ℚ_ℓ-faisceaux) sur S'",
+  "scan": "only the word faisceaux is underlined, both times; the hyphens and the closing parenthesis are not (checked at 3x)",
+  "tex": "$\\mathbb{Z}_\\ell$\\underline{-faisceaux}(resp. \\underline{de} $\\mathbb{Q}_\\ell$\\underline{-faisceaux)}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathbb{Z}_\\ell$\\underline{-faisceaux}(resp. \\underline{de} $\\mathbb{Q}_\\ell$\\underline{-faisceaux)}",
+   "new": "$\\mathbb{Z}_\\ell$-\\underline{faisceaux}(resp. \\underline{de} $\\mathbb{Q}_\\ell$-\\underline{faisceaux})"
+  },
+  "note": "Same convention as the previous finding. The x of the first faisceaux is overtyped in the print; the reading faisceaux stands."
+ },
+ {
+  "page": 256,
+  "where": "Théorème 1.1, lines 2-3: 'u ∈ H^2(X,ℤ_ℓ(1)) (resp. u ∈ H^2(X,ℚ_ℓ(1)) une classe de cohomologie sur X'",
+  "scan": "(resp. u ∈ H^2(X,ℚ_ℓ(1)) followed directly by 'une classe': only two closing parentheses (checked at 2x)",
+  "tex": "(resp. $u \\in H^2(X,\\mathbb{Q}_\\ell(1))$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(resp. $u \\in H^2(X,\\mathbb{Q}_\\ell(1))$)",
+  "note": "The parenthesis opened by 'resp.' is never closed (compare '(resp. ℚ_ℓ-faisceau)' on the next line). The TeX keeps the printed reading; the corrected layer too."
+ },
+ {
+  "page": 257,
+  "where": "(1.2.2), range under the ⊕",
+  "scan": "0≤j≤n (checked at 2x)",
+  "tex": "\\underset{0 \\leq j \\leq n}{\\oplus}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\underset{0 \\leq j \\leq r}{\\oplus}",
+  "note": "n is not a variable of Théorème 1.2 (ℰ has rank 1 + r, the fibres are ℙ^r); p. 258 writes the same sum over 0 ≤ j ≤ r. The TeX keeps the printed reading; the corrected layer already reads r (SGA7II-FR-XVIII-003)."
+ },
+ {
+  "page": 257,
+  "where": "(1.2.2), degree of the source group",
+  "scan": "H^{q-2-j} (checked at 2x)",
+  "tex": "H^{q-2-j}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^{q-2j}",
+  "note": "The map is defined on τ_{q-2j} ↦ Σ f^*(τ_{q-2j}) ∧ u^j (next line), and p. 258 writes ⊕ H^{q-2j}(X,ℤ_ℓ(-j)). The TeX keeps the printed reading; the corrected layer already reads q-2j (SGA7II-FR-XVIII-004)."
+ },
+ {
+  "page": 257,
+  "where": "(1.2.2), source group H^{q-2-j}(X,ℤ_ℓ(-j)",
+  "scan": "(X,ℤ_ℓ(-j) ⟶ : one closing parenthesis only (checked at 2x)",
+  "tex": "\\mathbb{Z}_\\ell(-j) \\ \\longrightarrow",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\mathbb{Z}_\\ell(-j)) \\ \\longrightarrow",
+  "note": "Missing closing parenthesis of H^{q-2-j}(X, ...). The TeX keeps the printed reading; the corrected layer already has it (SGA7II-FR-XVIII-004)."
+ },
+ {
+  "page": 257,
+  "where": "b), line after (1.2.2): 'défini par ⊕ τ_{q-2j} ⟶ Σ f*(τ_{q-2j}) ∧ u^j'",
+  "scan": "défini par (underlined; checked at 1.6x)",
+  "tex": "\\underline{défini par}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\underline{définie par}",
+  "note": "Agreement slip: the participle refers to 'la flèche' (b) la flèche (1.2.2) définie par ... est un isomorphisme). The TeX keeps the printed reading; the corrected layer too."
+ },
+ {
+  "page": 258,
+  "where": "filtration F^i on ⊕ H^{q-2j}(X,ℤ_ℓ(-j)), second line of the range under the ⊕",
+  "scan": "q-2j≤i",
+  "tex": "q-2j \\leq i",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "q-2j \\geq i",
+  "note": "Inequality reversed. The summand H^{q-2j}(X,ℤ_ℓ(-j)) goes to f^*(τ) ∧ u^j, which lies in F^{q-2j} of the decreasing Leray filtration (f^*(τ) in F^{q-2j}, u^j in F^0). The arrow 1.2.2 is compatible with the filtrations and induces the identity on the graded pieces only for F^i = ⊕ over q-2j ≥ i; with ≤, F^q would be the whole sum while F^q H^q is the image of H^q(X). The TeX keeps the printed reading; the corrected layer too."
+ },
+ {
+  "page": 259,
+  "where": "2.1.5, display: 'x ∈ X - Δ ⟶ (g_o(x),...,g_r(x) ∈ ℙ^r ,'",
+  "scan": "(g_o(x),...,g_r(x) ∈ ℙ^r: the tuple is not closed (checked at 1.4x)",
+  "tex": "g_r(x) \\in \\mathbb{P}^r",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "g_r(x)) \\in \\mathbb{P}^r",
+  "note": "Missing closing parenthesis of the coordinate tuple (2.1.6 prints (G_o(x),...,G_r(x)) closed). The TeX keeps the printed reading; the corrected layer already has it (SGA7II-FR-XVIII-005)."
+ },
+ {
+  "page": 259,
+  "where": "(2.1.4), top right node ℙ̌ (N_{Δ|X})",
+  "scan": "N with subscript Δ|X, a vertical bar (checked at 1.3x)",
+  "tex": "\\check{\\mathbb{P}}\\,(\\underline{N}_{\\Delta|X}) \\arrow[ld",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\check{\\mathbb{P}}\\,(\\underline{N}_{\\Delta/X}) \\arrow[ld",
+  "note": "The same normal bundle is N_{Δ/X} in the line above the diagram, on p. 258 and twice on p. 260; the bar is probably a slip for the slash (it can also be read as a variant notation, in which case it stands). The TeX keeps the printed reading and its STRUCTURE comment records the bar; the corrected layer too. If corrected, the STRUCTURE comment there mentions the bar twice."
+ },
+ {
+  "page": 260,
+  "where": "(2.1.6.2), end of the display",
+  "scan": "a full stop far right, level with the bottom node Δ",
+  "tex": "{} & \\Delta &\n{} \\end{tikzcd} (no full stop; the STRUCTURE comment says it cannot be carried inside the tikzcd)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{} & \\Delta &\n{} \\end{tikzcd}",
+   "new": "{} & \\Delta & .\n\\end{tikzcd}"
+  },
+  "note": "Set in the bottom-right cell, as the TeX does for the full stop of (2.1.4) on p. 259. Apply together with the next finding (STRUCTURE comment)."
+ },
+ {
+  "page": 260,
+  "where": "STRUCTURE comment under (2.1.6.2), last sentence",
+  "scan": "full stop printed after the display",
+  "tex": "it cannot be carried inside the tikzcd block and is recorded here.",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "; it cannot be\n%   carried inside the tikzcd block and is recorded here.",
+   "new": "; it is set in\n%   the bottom-right cell of the tikzcd block."
+  },
+  "note": "Goes with the previous fix; without it the comment says the full stop is left out."
+ },
+ {
+  "page": 260,
+  "where": "(2.1.6.3), end of the display",
+  "scan": "a comma far right, level with the bottom row Δ ↪ X",
+  "tex": "{} & \\Delta \\arrow[r, hook] & X &\n{} \\end{tikzcd} (no comma; the STRUCTURE comment says it cannot be carried inside the tikzcd)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "& X &\n{} \\end{tikzcd}",
+   "new": "& X & ,\n\\end{tikzcd}"
+  },
+  "note": "The sentence runs on into 'et l'inclusion composée ...'. Apply together with the next finding (STRUCTURE comment)."
+ },
+ {
+  "page": 260,
+  "where": "STRUCTURE comment under (2.1.6.3), last sentence",
+  "scan": "comma printed after the display",
+  "tex": "and cannot be carried inside the tikzcd block, so it is recorded here.",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "and cannot be carried inside the tikzcd\n%   block, so it is recorded here.",
+   "new": "and is set in the bottom-right\n%   cell of the tikzcd block."
+  },
+  "note": "Goes with the previous fix; without it the comment says the comma is left out."
+ },
+ {
+  "page": 260,
+  "where": "(2.1.6.2), label of the arrow Δ × ℙ^r ⟶ Δ",
+  "scan": "pr_i, subscript a dotted i (checked at 3x); (2.1.6.3) prints pr_1 with the digit",
+  "tex": "\\arrow[dl, \"\\mathrm{pr}_i\"]",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\arrow[dl, \"\\mathrm{pr}_1\"]",
+  "note": "The arrow is the first projection of Δ × ℙ^r onto Δ; (2.1.6.3) labels the same map pr_1. The TeX keeps the printed reading (its STRUCTURE comment records the dotted i); the corrected layer already reads pr_1 (SGA7II-FR-XVIII-006)."
+ },
+ {
+  "page": 260,
+  "where": "(2.2.1), E_2 term 'H^p(X,R^q f_* ℤ_ℓ'",
+  "scan": "H^p(X,R^qf_*ℤ_ℓ ⟹ : no closing parenthesis (checked at 1.6x)",
+  "tex": "H^p(X, R^q f_* \\mathbb{Z}_\\ell \\quad",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^p(X, R^q f_* \\mathbb{Z}_\\ell) \\quad",
+  "note": "Missing closing parenthesis. The TeX keeps the printed reading. The corrected layer already has it, but records it as a transcription repair (see the next finding)."
+ },
+ {
+  "page": 260,
+  "where": "(2.2.1), abutment 'H^{p+q}(X̃_o ℤ_ℓ)'",
+  "scan": "(X̃_o ℤ_ℓ): a small subscript o after X̃ and no comma (checked at 4x)",
+  "tex": "H^{p+q}(\\widetilde{X}_o \\;\\; \\mathbb{Z}_\\ell)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "H^{p+q}(\\widetilde{X}, \\mathbb{Z}_\\ell)",
+  "note": "The abutment is H^{p+q}(X̃, ℤ_ℓ) (compare (1.2.1)); the o stands where the comma belongs. The TeX keeps the printed reading. The corrected layer reads H^{p+q}(\\widetilde{X},\\mathbb{Z}_\\ell), but its comment ('Réparation de transcription : parenthèses et virgule rétablies; X-tilde sans indice o.', current/expose_XVIII_body.tex) and corrections.md SGA7II-FR-XVIII-007 (classed transcription_repair) treat the missing parenthesis, the o and the missing comma as transcription errors; the scan has all three, so the entry corrects misprints of the print and its record should say so."
+ }
+]

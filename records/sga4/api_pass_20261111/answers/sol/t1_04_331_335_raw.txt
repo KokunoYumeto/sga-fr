@@ -1,0 +1,90 @@
+{
+  "findings": [
+    {
+      "page": 331,
+      "where": "3.4, identities corresponding to the composites uv and vu",
+      "scan": "uv et vu ... respectivement au morphisme identique de E et de E'",
+      "tex": "$uv$ et vu soient isomorphes respectivement au morphisme identique\nde $E$ et de $E'$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$vu$ et $uv$ soient isomorphes respectivement au morphisme identique de $E$ et de $E'$",
+      "note": "The TeX keeps the printed inversion: vu is an endomorphism of E, whereas uv is an endomorphism of E'."
+    },
+    {
+      "page": 333,
+      "where": "4.1.1, after « continu et exact à gauche »",
+      "scan": "donc définit bien un",
+      "tex": "dont définit bien un",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "dont définit",
+        "new": "donc définit"
+      },
+      "note": "The print reads « donc », not « dont »."
+    },
+    {
+      "page": 333,
+      "where": "4.1.1, first description of the adjoint of f_*",
+      "scan": "admettant un adjoint à droite f^*",
+      "tex": "admettant un adjoint à droite\n$f^{\\ast}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "admettant un adjoint à gauche $f^{\\ast}$",
+      "note": "The TeX keeps the printed « à droite ». The inverse-image functor f^* is left adjoint to f_*."
+    },
+    {
+      "page": 333,
+      "where": "4.1.1, sentence about choosing the adjoint",
+      "scan": "du choix de l'adjoint à droite f^* de f_*",
+      "tex": "choix de l'adjoint à droite $f^{\\ast}$ de $f_{\\ast}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "choix de l'adjoint à gauche $f^{\\ast}$ de $f_{\\ast}$",
+      "note": "The TeX keeps the second printed occurrence of « à droite », again incorrectly describing f^* as a right adjoint."
+    },
+    {
+      "page": 334,
+      "where": "4.1.1, between the composable maps X → Y → Z and « de morphismes de topos »",
+      "scan": "on trouve un isomorphisme canonique\n\\Top(gf)\\simeq \\Top(g)\\Top(f)",
+      "tex": "X\\xrightarrow{f}Y\\xrightarrow{g}Z{\\quoi},\n$$\nde morphismes de topos.",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "de morphismes de topos. Ces",
+        "new": "on trouve un isomorphisme canonique\n$$\n\\Top(gf)\\simeq \\Top(g)\\Top(f)\n$$\nde morphismes de topos. Ces"
+      },
+      "note": "The introductory clause and the displayed canonical isomorphism are both missing."
+    },
+    {
+      "page": 334,
+      "where": "4.1.1, parenthesis following the reference to SGA 1 VI 7.4 B)",
+      "scan": "$\\mathcal{E} = (\\Esp)^{\\circ}$",
+      "tex": "$\\epsilon = (\\Esp)^{\\circ}$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\epsilon",
+        "new": "\\mathcal{E}"
+      },
+      "note": "The printed symbol is a calligraphic capital E, not a Greek epsilon."
+    },
+    {
+      "page": 335,
+      "where": "4.1.2, display defining the two components of f",
+      "scan": "f^{es}:X → Y et f^{gr}:G → H",
+      "tex": "f^{\\es}:X\\longrightarrow Y\\quav f^{\\gr}:G\\longrightarrow H",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Y\\quav f^{\\gr}",
+        "new": "Y\\quad\\text{et}\\quad f^{\\gr}"
+      },
+      "note": "The print joins the two maps with « et »; the TeX instead uses the comma separator \\quav."
+    }
+  ],
+  "coordinator": "331: 0/1; 332: 0/0; 333: 1/2; 334: 2/0; 335: 1/0 (normal/misprint)."
+}

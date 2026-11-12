@@ -1,0 +1,271 @@
+{
+  "findings": [
+    {
+      "page": 476,
+      "where": "Début de page, avant « d'où un triangle distingué »",
+      "scan": "La page commence par la suite exacte 0 → (σ≤n(K))s → (σ≤n+1(K))s → (-1)^{n+1}K^{n+1,·} → 0.",
+      "tex": "L'extrait commence à « d'où\\pageoriginale un triangle distingué ».",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "La suite exacte initiale manque dans la coupe fournie. Vérifier la fin de la coupe précédente et faire commencer celle de p. 476 avant ce display, sans ajouter une seconde copie du texte."
+    },
+    {
+      "page": 476,
+      "where": "Triangle distingué, origine de la flèche oblique gauche",
+      "scan": "La flèche issue de K^{n+1,·} vers le sommet inférieur gauche porte un petit cercle à son origine.",
+      "tex": "\\sisi{\\ar[ld]}{\\ar[rd]}",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\sisi{\\ar[ld]}{\\ar[rd]}",
+        "new": "\\sisi{\\ar@{o->}[ld]}{\\ar[rd]}"
+      },
+      "note": "Le cercle fait partie du signe de la flèche dans les deux scans. Il manque dans la lecture originale enregistrée par le premier argument de \\sisi."
+    },
+    {
+      "page": 476,
+      "where": "Triangle distingué, sens des trois flèches",
+      "scan": "Le cycle imprimé va de K^{n+1,·} à σ≤n, puis à σ≤n+1, puis à K^{n+1,·}.",
+      "tex": "\\sisi{\\ar[ld]}{\\ar[rd]}, \\sisi{\\ar[rr]}{\\ar[ur]}, \\sisi{\\ar[lu]}{\\ar[ll]}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\xymatrix@C=1em{ & K^{n+1,\\bigdot}_{\\Uu}\\ar[rd] & \\\\ (\\sigma_{\\leq n}(K^{\\bigdot\\bigdot}_{\\Uu}))_s\\ar[ur] && (\\sigma_{\\leq n+1}(K^{\\bigdot\\bigdot}_{\\Uu}))_s\\ar[ll] }",
+      "note": "Les morphismes canoniques des troncations bêtes vont dans les sens opposés. La TeX enregistre les trois sens imprimés et les rectifie avec \\sisi."
+    },
+    {
+      "page": 476,
+      "where": "Paragraphe « Utilisant le fait », fin de la première phrase",
+      "scan": "pour tout $n$",
+      "tex": "pour tout $\\sim$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "pour tout $\\sim$",
+        "new": "pour tout $n$"
+      },
+      "note": "Le signe manuscrit est la lettre n, indice du complexe considéré, et non une relation tilde."
+    },
+    {
+      "page": 476,
+      "where": "Renvoi à 5.2.10 après « pour tout n »",
+      "scan": "(XVII (5.2.10))",
+      "tex": "(\\hyperref[XVII.thm5.2.10]{5.2.10})",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hyperref[XVII.thm5.2.10]{5.2.10}",
+        "new": "XVII \\hyperref[XVII.thm5.2.10]{5.2.10}"
+      },
+      "note": "Suppression récurrente du préfixe d'exposé dans les renvois internes, signalée une seule fois comme convention ; trois exemples sont indiqués au coordinator."
+    },
+    {
+      "page": 476,
+      "where": "Remarque 7.2.3, renvoi final",
+      "scan": "(cf. (3.7))",
+      "tex": "\\sisi{(3.7)}{\\hyperref[XVII.subsubsec7.3.7]{7.3.7}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(7.3.7)",
+      "note": "Le renvoi imprimé omet le premier 7. La TeX conserve cette lecture dans le premier argument de \\sisi et donne le bon renvoi dans le second."
+    },
+    {
+      "page": 476,
+      "where": "Proposition 7.2.4, but du morphisme de changement de base",
+      "scan": "R^{+}f_{!}\\circ {g'}^{\\ast}(K^{\\bigdot})",
+      "tex": "R^{+}f_{!}\\sisi{}{'}\\circ {g'}^{\\ast}(K^{\\bigdot})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{+}f'_{!}\\circ {g'}^{\\ast}(K^{\\bigdot})",
+      "note": "Il manque le prime de f dans l'imprimé. La TeX le rétablit avec \\sisi."
+    },
+    {
+      "page": 477,
+      "where": "Carré de suites spectrales, terme supérieur gauche",
+      "scan": "\\pi^{p+}_1",
+      "tex": "\\pi^{p\\sisi{+}{\\ast}}_1",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\pi^{p\\ast}_1",
+      "note": "Le signe + imprimé doit être une étoile d'image inverse. La TeX le corrige avec \\sisi."
+    },
+    {
+      "page": 477,
+      "where": "Carré de suites spectrales, flèche horizontale supérieure",
+      "scan": "\\Longrightarrow",
+      "tex": "\\ar[r]&",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\ar[r]&",
+        "new": "\\ar@{=>}[r]&"
+      },
+      "note": "L'imprimé donne une flèche double de convergence de suite spectrale, et non une flèche simple."
+    },
+    {
+      "page": 477,
+      "where": "Carré de suites spectrales, terme supérieur droit",
+      "scan": "R^{p+q}f_{!}(K^{\\bigdot})",
+      "tex": "R^{p+q}f_{l}(K^{\\bigdot})",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "f_{l}",
+        "new": "f_{!}"
+      },
+      "note": "Le sous-indice imprimé est un point d'exclamation, également net dans le second scan, et non la lettre l."
+    },
+    {
+      "page": 477,
+      "where": "Carré de suites spectrales, second π du terme inférieur gauche",
+      "scan": "\\pi'^{p}_1(g'^{\\ast}(K^{\\bigdot}))",
+      "tex": "\\pi'^{p}_1 (g'^{\\ast}(K^{\\bigdot}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\pi'^{p\\ast}_1(g'^{\\ast}(K^{\\bigdot}))",
+      "note": "L'étoile d'image inverse manque après p dans l'imprimé. La TeX garde cette omission."
+    },
+    {
+      "page": 477,
+      "where": "Carré de suites spectrales, flèche horizontale inférieure",
+      "scan": "\\Longrightarrow",
+      "tex": "\\ar[r] &",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\ar[r] &",
+        "new": "\\ar@{=>}[r] &"
+      },
+      "note": "Cette seconde flèche de convergence est elle aussi double dans les deux scans."
+    },
+    {
+      "page": 477,
+      "where": "Carré de suites spectrales, exposant de R dans le terme inférieur droit",
+      "scan": "R^{+}f'_!",
+      "tex": "R^{+}f'_!",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{p+q}f'_!",
+      "note": "L'aboutissement doit être de degré p+q, comme dans la ligne supérieure, et non le foncteur dérivé entier R^{+}. La TeX garde le + imprimé."
+    },
+    {
+      "page": 477,
+      "where": "Carré de suites spectrales, argument final du terme inférieur droit",
+      "scan": "g'^{\\ast}(K)",
+      "tex": "g'^{\\ast}(K\\sisi{}{^{\\bigdot}})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "g'^{\\ast}(K^{\\bigdot})",
+      "note": "Le point de complexe est omis sur K dans l'imprimé. La TeX le restitue avec \\sisi."
+    },
+    {
+      "page": 478,
+      "where": "Formule (7.3.1.1), premier différentiel",
+      "scan": "\\Xx^{0}(F)\\xrightarrow{S^{1}(F)}\\Xx^{1}(F)",
+      "tex": "\\Xx^{0}(F)\\xrightarrow{S^{1}(F)}\\Xx^{1}(F)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Xx^{0}(F)\\xrightarrow{S^{0}(F)}\\Xx^{1}(F)",
+      "note": "Avec l'indexation S^{n}: \\Xx^{n}→\\Xx^{n+1} donnée ensuite, le premier différentiel est S^{0}. La TeX garde le S^{1} imprimé."
+    },
+    {
+      "page": 478,
+      "where": "Démonstration du lemme 7.3.2, première colonne du diagramme",
+      "scan": "\\Ker S^{2d}(F'), \\Ker S^{2d}(F), \\Ker S^{2d}(F'')",
+      "tex": "\\Ker S^{2d}(F'), \\ker S^{2d}(F), \\ker S^{2d}(F'')",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\Ker S^{2d+1}(F'),\\quad \\Ker S^{2d+1}(F),\\quad \\Ker S^{2d+1}(F'')",
+      "note": "Le noyau augmentant le complexe qui commence par \\Xx^{2d+1} est celui de S^{2d+1}, conformément aux troncations σ≥2d+1 de la ligne suivante. Le +1 manque dans les trois cases ; la TeX garde les indices imprimés."
+    },
+    {
+      "page": 478,
+      "where": "Diagramme de la démonstration du lemme 7.3.2, case inférieure droite",
+      "scan": "\\Xx^{2d+2}(F''')",
+      "tex": "\\Xx^{2d+2}{(F'')}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\Xx^{2d+2}(F'')",
+      "note": "Le troisième prime imprimé est une coquille : toute cette ligne concerne F''. La TeX corrige silencieusement en F''."
+    },
+    {
+      "page": 479,
+      "where": "Démonstration du lemme 7.3.3, renvoi à la Remarque 2.3.2.2",
+      "scan": "VI b (2.3.2.2). Remarque",
+      "tex": "\\sisi{VI b (\\refnoexpose{Vbis.lem2.3.2.2})}{\\hyperrefext[Vbis][Vbis.lem2.3.2.2]{2.3.2.2}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "V bis (2.3.2.2), Remarque",
+      "note": "Le numéro d'exposé imprimé VI b est erroné ; il s'agit de V bis. La TeX enregistre et corrige ce renvoi avec \\sisi."
+    },
+    {
+      "page": 479,
+      "where": "7.3.5, renvoi après « grâce à »",
+      "scan": "7.2.3",
+      "tex": "\\sisi{\\hyperref[XVII.rem7.2.3]{7.2.3}}{\\hyperref[XVII.lem7.3.3]{7.3.3}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "7.3.3",
+      "note": "Le foncteur est défini grâce au lemme 7.3.3, non à la remarque 7.2.3. La TeX corrige le renvoi avec \\sisi."
+    },
+    {
+      "page": 479,
+      "where": "7.3.5, renvoi après « En vertu de »",
+      "scan": "7.2.4",
+      "tex": "\\sisi{\\hyperref[XVII.prop7.2.4]{7.2.4}}{\\hyperref[XVII.exer7.3.4]{7.3.4}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "7.3.4",
+      "note": "Le calcul par (7.3.1.1) repose sur l'exercice 7.3.4, non sur la proposition 7.2.4. La TeX corrige le renvoi avec \\sisi."
+    },
+    {
+      "page": 480,
+      "where": "Bibliographie, Gabriel–Zisman, titre",
+      "scan": "Calculus of fraction and homotopy theory",
+      "tex": "Calculus of fraction and homotopy theory",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Calculus of fractions and homotopy theory",
+      "note": "Le titre du livre comporte fractions au pluriel. La TeX garde le singulier erroné de l'imprimé."
+    },
+    {
+      "page": 480,
+      "where": "Bibliographie, N. Roby, première page de l'article",
+      "scan": "p.213-248",
+      "tex": "231--\\sisi{2}{3}48",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "231--",
+        "new": "213--"
+      },
+      "note": "La première page imprimée est 213, non 231. La coquille distincte concernant la borne finale est signalée séparément."
+    },
+    {
+      "page": 480,
+      "where": "Bibliographie, N. Roby, dernière page de l'article",
+      "scan": "248",
+      "tex": "\\sisi{2}{3}48",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "213--348",
+      "note": "La borne finale 248 est une coquille pour 348. La TeX la corrige avec \\sisi ; sa transcription fautive de la borne initiale fait l'objet de l'édition précédente."
+    }
+  ],
+  "coordinator": "476: 4/3; 477: 3/4; 478: 0/3; 479: 0/3; 480: 1/2 (normal/misprint).\nMarqueur 476 : vérifier la fin de la coupe de p. 475 et inclure la suite exacte initiale avant « d'où » dans la coupe de p. 476.\nConvention à arbitrer globalement : omission de XVII dans les renvois internes ; exemples imprimés XVII (5.2.10) p. 476, XVII (5.2.6) p. 477 et XVII (4.2) p. 477. Une occurrence représentative est signalée."
+}

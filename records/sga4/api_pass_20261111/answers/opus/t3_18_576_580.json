@@ -1,0 +1,107 @@
+[
+ {
+  "page": "578",
+  "where": "remark after 3.1.14 b)",
+  "scan": "vérifient chacun deux compatibilité du type XII 4.4",
+  "tex": "vérifient chacun deux\ncompatibilités du type",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "compatibilités",
+  "note": "The print has the singular after « deux » (agreement error). The TeX corrects it silently to « compatibilités »."
+ },
+ {
+  "page": "578",
+  "where": "3.1.15 a)",
+  "scan": "φ ∈ Hom(X, φ^*V)",
+  "tex": "\\varphi\\in \\Hom\n(U,f^{\\ast}V)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\varphi\\in \\Hom(U,f^{\\ast}V)",
+  "note": "The print reads Hom(X,φ^*V), which is wrong. The TeX corrects it silently to Hom(U,f^*V)."
+ },
+ {
+  "page": "578",
+  "where": "3.1.15 b)",
+  "scan": "les morphismes u_i : U_i → U couvrant U",
+  "tex": "couvrent $U$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "couvrent",
+  "note": "The print has the typing error « couvrant ». The TeX corrects it silently to « couvrent »."
+ },
+ {
+  "page": "578",
+  "where": "3.1.15.2",
+  "scan": "Il vérifie f_Γγ = f",
+  "tex": "f_{\\Gamma}\\gamma\\simeq f",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\gamma\\simeq f",
+   "new": "\\gamma= f"
+  },
+  "note": "The print has an equals sign here. Elsewhere on these pages the typescript writes ≃ with a tilde over the bar, and that is not what this sign shows."
+ },
+ {
+  "page": "578",
+  "where": "3.1.15.2",
+  "scan": "admet un adjoint à droite f_Γ.",
+  "tex": "adjoint à gauche $f_{\\Gamma\\bigdot}$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "adjoint à gauche",
+  "note": "The print says « à droite ». The functor (U,V,φ)↦V is in fact left adjoint to f^*_Γ, so the print is wrong. The TeX corrects it silently, without \\sisi."
+ },
+ {
+  "page": "579",
+  "where": "diagram (3.1.15.3), arrow Γ(f) → X",
+  "scan": "label * above the arrow and ≈ below it",
+  "tex": "\\ar[ll]^{\\approx}",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\ar[ll]^{\\approx}",
+   "new": "\\ar[ll]^{\\ast}_{\\approx}"
+  },
+  "note": "The TeX drops the asterisk printed above the horizontal arrow."
+ },
+ {
+  "page": "579",
+  "where": "3.1.16.1",
+  "scan": "(A, f_*(B|U))-modules",
+  "tex": "f_{|U\\ast}(\\mathcal{B}|U)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "f_{|U\\ast}(\\mathcal{B}|U)",
+   "new": "f_{\\ast}(\\mathcal{B}|U)"
+  },
+  "note": "The print has the plain f_*. The TeX adds |U to the index."
+ },
+ {
+  "page": "579",
+  "where": "last sentence",
+  "scan": "Si U : K_1 → K_2 est un morphisme d'objets (3.1.11.1), alors U induit",
+  "tex": "Si $U:K_{1}\\rightarrow K_{2}$ ... alors $U$ induit",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Si $u:K_{1}\\rightarrow K_{2}$ ... alors $u$ induit",
+  "note": "The print names the morphism U, but it is u (it gives ^t u on p. 580). The TeX keeps U."
+ },
+ {
+  "page": "580",
+  "where": "(3.1.17.2)",
+  "scan": "Ext^p(H^{-q}(K(W)),L)",
+  "tex": "\\Ext^{p}(ℋ^{-q}(K(U)),L)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Ext^{p}(ℋ^{-q}(K(U)),L)",
+  "note": "The print has K(W). The TeX corrects it silently to K(U)."
+ }
+]

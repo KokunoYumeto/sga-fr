@@ -1,0 +1,128 @@
+{
+  "findings": [
+    {
+      "page": 47,
+      "where": "Fin de la démonstration du lemme 2.2.1",
+      "scan": "et comme $K'$ en est l'anneau total des fractions",
+      "tex": "et comme $K'$ en\nest l'anneau total des fractions",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\widehat{K}'",
+      "note": "Il manque le chapeau : le corps des fractions de $\\widehat{R}'$ est $\\widehat{K}'$. Le TeX conserve la coquille."
+    },
+    {
+      "page": 47,
+      "where": "Début du traitement de l'assertion (i)",
+      "scan": "Traitons l'assertion i) de 3.1.",
+      "tex": "\\sisi{\\eqhyperref[X.eq3.1]{3.1}}{\\hyperref[X.thm2.2]{2.2}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "2.2",
+      "note": "Le renvoi imprimé à 3.1 est fautif : il s'agit du théorème 2.2. Le TeX le corrige par \\sisi."
+    },
+    {
+      "page": 47,
+      "where": "Parenthèse sur l'hypothèse de CG II, proposition 12",
+      "scan": "l'hypothèse […] n'est utilisé",
+      "tex": "n'est \\sisi{utilisé}{utilisée}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "utilisée",
+      "note": "Accord fautif avec « l'hypothèse » dans l'imprimé. Le TeX le corrige par \\sisi."
+    },
+    {
+      "page": 48,
+      "where": "Après la suite exacte des groupes multiplicatifs",
+      "scan": "strictement local et inversible dans $\\widetilde{R}$",
+      "tex": "$\\ell$ inversible dans\n$\\widetilde{R}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "strictement local et $\\ell$ inversible dans $\\widetilde{R}$",
+      "note": "L'imprimé omet $\\ell$ entre « et » et « inversible ». Le TeX rétablit silencieusement ce symbole."
+    },
+    {
+      "page": 48,
+      "where": "Même paragraphe, renvoi après « d'où »",
+      "scan": "d'où (2.2.1)",
+      "tex": "\\sisi{\\hyperref[X.lem2.2.1]{2.2.1}}{\\eqhyperref[X.eq2.2.2]{2.2.2}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(2.2.2)",
+      "note": "Le renvoi vise l'égalité (2.2.2), non le lemme 2.2.1. Le TeX le corrige par \\sisi."
+    },
+    {
+      "page": 48,
+      "where": "Paragraphe « Posons R' », définition de G'",
+      "scan": "G'=G(\\bar{K}/k')",
+      "tex": "G'=G(\\bar{K}/\\sisi{k}{K}')",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "G'=G(\\bar{K}/K')",
+      "note": "Le dénominateur imprimé porte un k minuscule au lieu de K. Le TeX le corrige par \\sisi."
+    },
+    {
+      "page": 49,
+      "where": "Morphisme sous le diagramme triangulaire",
+      "scan": "\\ZZ/r=H^1(H,𝛍_{\\ell})",
+      "tex": "\\ZZ/r=H^1(H,𝛍_{\\ell})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\ZZ/\\ell",
+      "note": "Le dénominateur r est une coquille pour $\\ell$, comme le montrent (2.2.2) et le membre de droite. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 50,
+      "where": "Corollaire 2.4, hypothèse",
+      "scan": "où qu'aucun corps résiduel",
+      "tex": "\\sisi{où}{ou}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "ou",
+      "note": "L'accent de « où » est fautif : il s'agit de la conjonction « ou ». Le TeX le corrige par \\sisi."
+    },
+    {
+      "page": 50,
+      "where": "Première phrase de la démonstration du corollaire 2.4",
+      "scan": "intègre, a corps des fractions",
+      "tex": "intègre, \\sisi{a}{de} corps des fractions",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "de corps des fractions",
+      "note": "Le « a corps » sans accent de l'imprimé est fautif. Le TeX corrige la tournure en « de corps » par \\sisi."
+    },
+    {
+      "page": 50,
+      "where": "Démonstration du corollaire 2.4, choix de x",
+      "scan": "x\\in\\mathfrak{r}_A",
+      "tex": "$x\\in 𝔪_A$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "𝔪_A",
+        "new": "\\mathfrak{r}_A"
+      },
+      "note": "Le symbole manuscrit de l'imprimé est un r gothique, non un m."
+    },
+    {
+      "page": 50,
+      "where": "Passage au hensélisé, corps de base de l'extension séparable",
+      "scan": "extension séparable de $R(\\widetilde{A})=K$",
+      "tex": "$R(\\widetilde{A})=K$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R(A)=K",
+      "note": "Le second tilde est fautif : les corps résiduels de $R(\\widetilde{A})$ sont des extensions séparables de $R(A)=K$. Le TeX conserve la coquille."
+    }
+  ],
+  "coordinator": "46: 0/0; 47: 0/3; 48: 0/3; 49: 0/1; 50: 1/3 (normal/misprint)."
+}

@@ -1,0 +1,576 @@
+[
+ {
+  "page": 191,
+  "where": "end of the first paragraph: 'constructible). De même, si B ...'",
+  "scan": "'(resp. de tor-dimension finie et à cohomologie constructible). De' / 'même, si B ...': one paragraph",
+  "tex": "blank line before 'De même' (new paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "constructible).\n\nDe même",
+   "new": "constructible). De même"
+  },
+  "note": "Paragraph break the print does not have."
+ },
+ {
+  "page": 191,
+  "where": "'un A[G]-module à gauche sur X (sans groupe d'opérateurs), donc'",
+  "scan": "(sans groupe d'opérateurs),",
+  "tex": "sans groupe d'opérateurs,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "sur $X$ sans groupe d'opérateurs,",
+   "new": "sur $X$ (sans groupe d'opérateurs),"
+  },
+  "note": "Parentheses dropped."
+ },
+ {
+  "page": 191,
+  "where": "'la définition des \"six opérations\"'",
+  "scan": "straight typewriter double quotes",
+  "tex": "« six opérations »",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "« six opérations »",
+   "new": "``six opérations''"
+  },
+  "note": "Guillemets for the print's straight quotes (the accepted forms are ``...'' and \"...\"), as on p. 183."
+ },
+ {
+  "page": 191,
+  "where": "'envisagées en (loc. cit) (changement de base,'",
+  "scan": "(loc. cit) : no full stop after 'cit' (clean scan)",
+  "tex": "(loc. cit.)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(loc. cit.)",
+   "new": "(loc. cit)"
+  },
+  "corrected": "(loc. cit.)",
+  "note": "Typing slip of the print (abbreviation without its full stop); the TeX silently corrects it."
+ },
+ {
+  "page": 191,
+  "where": "'Cette extension n'offre pas de difficulté (pour la définition ... équivariantes).'",
+  "scan": "difficulté (pour la définition des foncteurs f_! , f^! , il suffit d'utiliser des compactifications équivariantes).",
+  "tex": "difficulté: pour la définition ... équivariantes.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "difficulté: pour la définition des foncteurs $f_!$, $f^!$, il suffit d'utiliser des compactifications équivariantes.",
+   "new": "difficulté (pour la définition des foncteurs $f_!$, $f^!$, il suffit d'utiliser des compactifications équivariantes)."
+  },
+  "note": "The print's parenthesis became a colon; one edit for both parentheses."
+ },
+ {
+  "page": 191,
+  "where": "'dans le cadre des G-S-schémas. Si, pour i = 1, 2,'",
+  "scan": "'... dans le cadre des G-S-schémas. Si, pour i = 1, 2, X_i est': one paragraph",
+  "tex": "blank line before 'Si, pour' (new paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "$G$-$S$-schémas.\n\nSi, pour",
+   "new": "$G$-$S$-schémas. Si, pour"
+  },
+  "note": "Paragraph break the print does not have."
+ },
+ {
+  "page": 191,
+  "where": "'les éléments de Hom_A(c_1^*L_1,c_2^!L_2)'",
+  "scan": "Hom_A not underlined (global Hom: its elements are the correspondences)",
+  "tex": "\\uHom_A(c_1^*L_1,c_2^!L_2)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uHom_A(c_1^*L_1,c_2^!L_2)",
+   "new": "\\Hom_A(c_1^*L_1,c_2^!L_2)"
+  },
+  "note": "Plain Hom, as the u ∈ Hom_{A[G]}(c_1^*L,c_2^!L) further down and p. 181 (5.13.3)."
+ },
+ {
+  "page": 191,
+  "where": "parenthesis after Hom_A(c_1^*L_1,c_2^!L_2)",
+  "scan": "(Hom_A = Hom dans la catégorie D(G,_A-) ) s'appelleront",
+  "tex": "où $\\Hom_A$ est pris dans la catégorie $D(G,{}_A-)$, s'appelleront",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "où $\\Hom_A$ est pris dans la catégorie $D(G,{}_A-)$, s'appelleront",
+   "new": "($\\Hom_A=\\Hom$ dans la catégorie $D(G,{}_A-)$) s'appelleront"
+  },
+  "note": "The TeX rewords the print's parenthesis ('où ... est pris'); Hom not underlined in it."
+ },
+ {
+  "page": 191,
+  "where": "definition of the equivariant correspondences",
+  "scan": "underlined: 'correspondances (cohomologiques) équivariantes de' | 'à support' + 'dans' (across the line break); not underlined: L_1 à L_2, c, the full stop",
+  "tex": "correspondances cohomologiques équivariantes de $L_1$ à $L_2$ à support dans $c$.  (no underline, no parentheses)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "correspondances cohomologiques équivariantes de $L_1$ à $L_2$ à support dans $c$.",
+   "new": "\\emph{correspondances (cohomologiques) équivariantes de} $L_1$ à $L_2$ \\emph{à support dans} $c$."
+  },
+  "note": "Also the print's parentheses around 'cohomologiques', dropped in the TeX; one edit for both. \\emph is this exposé's command for the print's underline (as pp. 146-150)."
+ },
+ {
+  "page": 191,
+  "where": "'l'isomorphisme 6.4.1 (dans D(G,X) ) se \"raffine\"'",
+  "scan": "(dans D(G,X) )",
+  "tex": "dans $D(G,X)$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "6.4.1 dans $D(G,X)$",
+   "new": "6.4.1 (dans $D(G,X)$)"
+  },
+  "note": "Parentheses dropped."
+ },
+ {
+  "page": 191,
+  "where": "same sentence: 'se \"raffine\" en un isomorphisme'",
+  "scan": "\"raffine\" in straight double quotes",
+  "tex": "se raffine en (no quotes)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "se raffine en",
+   "new": "se ``raffine'' en"
+  },
+  "note": "Quotation marks dropped."
+ },
+ {
+  "page": 191,
+  "where": "'et L ∈ ob D_ctf(_{A[G]}X) ⊂ D_ctf(G,_AX) ) on peut, pour'",
+  "scan": "a stray closing parenthesis after D_ctf(G,_AX) and no comma (clean scan)",
+  "tex": "D_{\\mathrm{ctf}}(G,{}_AX)$, on peut",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "{}_AX)$, on peut",
+   "new": "{}_AX)$) on peut"
+  },
+  "corrected": "{}_AX)$, on peut",
+  "note": "Unbalanced parenthesis of the print; the TeX silently replaces it by a comma. The comma is the evident reading (alternatively an opening parenthesis is missing before 'avec action triviale')."
+ },
+ {
+  "page": 191,
+  "where": "'plus fin (en un sens évident) que le terme local'",
+  "scan": "plus fin (en un sens évident) que",
+  "tex": "plus fin, en un sens évident, que",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "plus fin, en un sens évident, que",
+   "new": "plus fin (en un sens évident) que"
+  },
+  "note": "Parentheses became commas."
+ },
+ {
+  "page": 192,
+  "where": "number of no. 6.10",
+  "scan": "'6.10.' with a full stop",
+  "tex": "\\subsection*{6.10}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.10}",
+   "new": "\\subsection*{6.10.}"
+  },
+  "note": "As 6.2. (p. 183)."
+ },
+ {
+  "page": 192,
+  "where": "(6.10.1), right-hand side",
+  "scan": "H^o(X^c;K_{X^c} ⊗ Λ[G_♮]) : a semicolon after X^c (clean scan)",
+  "tex": "=H^0(X^c,K_{X^c}\\otimes\\Lambda[G_{\\natural}])",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "=H^0(X^c,K_{X^c}",
+   "new": "=H^0(X^c;K_{X^c}"
+  },
+  "corrected": "=H^0(X^c,K_{X^c}",
+  "note": "The left side and the projection two lines below have the comma; the TeX silently corrects."
+ },
+ {
+  "page": 192,
+  "where": "'on peut considérer la \"valeur de Tr_{Λ[G]}(u) en x\"'",
+  "scan": "straight typewriter double quotes",
+  "tex": "« valeur de $\\Tr_{\\Lambda[G]}(u)$ en $x$ »",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "« valeur de $\\Tr_{\\Lambda[G]}(u)$ en $x$ »",
+   "new": "``valeur de $\\Tr_{\\Lambda[G]}(u)$ en $x$''"
+  },
+  "note": "Guillemets for the print's straight quotes."
+ },
+ {
+  "page": 192,
+  "where": "after (6.10.2): 'où e désigne l'élément neutre de G . Plus généralement,'",
+  "scan": "'... l'élément neutre de G . Plus généralement, soit g ∈ G , notons': one paragraph",
+  "tex": "blank line before 'Plus généralement' (new paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "neutre de $G$.\n\nPlus généralement",
+   "new": "neutre de $G$. Plus généralement"
+  },
+  "note": "Paragraph break the print does not have."
+ },
+ {
+  "page": 192,
+  "where": "number of no. 6.11",
+  "scan": "'6.11.' with a full stop",
+  "tex": "\\subsection*{6.11}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.11}",
+   "new": "\\subsection*{6.11.}"
+  },
+  "note": "As 6.2. (p. 183)."
+ },
+ {
+  "page": 192,
+  "where": "diagram (6.11.1)",
+  "scan": "X x_S X <--c-- C above Y x_S Y <--d-- D: the products on the left, horizontal arrows pointing left with c and d above them, f x_S f to the left of the left vertical arrow, C -> D unlabelled on the right",
+  "tex": "mirror image: C --c--> X x_S X over D --d--> Y x_S Y (d below), f x_S f on the right",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "C \\arrow[r,\"c\"] \\arrow[d] & X\\times_SX \\arrow[d,\"f\\times_Sf\"]\\\\\nD \\arrow[r,\"d\"'] & Y\\times_SY",
+   "new": "X\\times_SX \\arrow[d,\"f\\times_Sf\"'] & C \\arrow[l,\"c\"'] \\arrow[d]\\\\\nY\\times_SY & D \\arrow[l,\"d\"']"
+  },
+  "note": "Same morphisms; the TeX mirrors the printed diagram. In the new text the swapped labels (') put c and d above the leftward arrows and f x_S f on the left."
+ },
+ {
+  "page": 193,
+  "where": "top of the page",
+  "scan": "p. 193 begins with the display '(6.11.2) f^{c/d} (ou f^c) : X^c ---> Y^d', then 'le morphisme induit par 6.11.1'; p. 192 ends '... agit trivialement sur Y et D . On note'",
+  "tex": "the display (6.11.2) and 'le' are the last five lines of page_192.tex; the folio-193 marker follows them",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 193 really begins at the '\\begin{equation}' of (6.11.2). Exact fix: python -I move_marker.py 5 193 '\\begin{equation}' --before (single quotes; the last \\begin{equation} before the marker is that of (6.11.2); simulated read-only on both layers: the marker then stands on its own line between '... sur $Y$ et $D$. On note' and '\\begin{equation}', no other text moves). The moved display and 'le' agree with the print."
+ },
+ {
+  "page": 193,
+  "where": "'Soient L ∈ ob D_ctf(G,X) , et u ∈ Hom(...)'",
+  "scan": "D_ctf(G,X): no index A (clean scan)",
+  "tex": "D_{\\mathrm{ctf}}(G,{}_AX)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "D_{\\mathrm{ctf}}(G,{}_AX)$, et",
+   "new": "D_{\\mathrm{ctf}}(G,X)$, et"
+  },
+  "note": "The TeX adds an index A that the print does not have (the coefficients here are Λ: f_*u ∈ Hom_{Λ[G]})."
+ },
+ {
+  "page": 193,
+  "where": "end of (6.11.4)",
+  "scan": "gc =^{dfn} (gc_1 = c_1g,c_2) : C ---> X x_S X with no punctuation (only a speck below the baseline, much smaller than the page's typed full stops)",
+  "tex": "C\\to X\\times_SX,",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "X\\times_SX,\n\\tag{6.11.4}",
+   "new": "X\\times_SX\n\\tag{6.11.4}"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 193,
+  "where": "Proposition 6.12, label",
+  "scan": "Proposition 6.12 - Sous les hypothèses de 6.11, ...",
+  "tex": "\\begin{statement}{Proposition 6.12}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Proposition 6.12}",
+   "new": "\\begin{statement}{Proposition 6.12 -}"
+  },
+  "note": "The print's ' -' after the label (as Lemme 2.2, p. 146)."
+ },
+ {
+  "page": 193,
+  "where": "statement of Proposition 6.12, first line",
+  "scan": "underlined: 'Sous les hypothèses de' | 'on suppose que l'on a'; not underlined: '6.11,'",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 6.11, on suppose que l'on a",
+   "new": "\\emph{Sous les hypothèses de} 6.11, \\emph{on suppose que l'on a}"
+  },
+  "note": "Exposé III B has no underline markup for statements; \\emph as on pp. 146-150."
+ },
+ {
+  "page": 193,
+  "where": "statement of Proposition 6.12, 'Alors, pour tout g ∈ G , on a'",
+  "scan": "underlined: 'Alors' | 'pour tout' | 'on a'; not underlined: the commas, g ∈ G",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors, pour tout $g\\in G$, on a",
+   "new": "\\emph{Alors}, \\emph{pour tout} $g\\in G$, \\emph{on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 193,
+  "where": "statement of Proposition 6.12, after (6.12.1)",
+  "scan": "underlined: 'où' | 'est le morphisme \"de Gysin\" défini par la' + 'flèche d'adjonction' (one line through the quotes); not underlined: the formulas and the full stop",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où\n\\[\nf_*^{gc}:H^0(X^{gc},K_{X^{gc}})\\longrightarrow H^0(Y^d,K_{Y^d})\n\\]\nest le morphisme ``de Gysin'' défini par la flèche d'adjonction",
+   "new": "\\emph{où}\n\\[\nf_*^{gc}:H^0(X^{gc},K_{X^{gc}})\\longrightarrow H^0(Y^d,K_{Y^d})\n\\]\n\\emph{est le morphisme ``de Gysin'' défini par la flèche d'adjonction}"
+  },
+  "note": "The display between the two pieces is unchanged."
+ },
+ {
+  "page": 193,
+  "where": "number of no. 6.13",
+  "scan": "'6.13.' with a full stop",
+  "tex": "\\subsection*{6.13}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.13}",
+   "new": "\\subsection*{6.13.}"
+  },
+  "note": "As 6.2. (p. 183)."
+ },
+ {
+  "page": 194,
+  "where": "top of the page",
+  "scan": "p. 194 begins 'd'objets de D_ctf(G,X,Λ_n) tel que'; p. 193 ends '... soit L = (L_n) un système projectif'",
+  "tex": "'d'%' ends the last line of page_193.tex (the line before the folio-194 marker); page_194.tex begins 'objets de'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 194 really begins at 'd'objets'. Exact fix: python -I move_marker.py 5 194 \"d'%\" --before (bash double quotes; simulated read-only on both layers: '... un système projectif ' / marker / 'd'%' / 'objets de', so the output still reads 'd'objets'). Do not use marker_split_word.py pull \"d'%\": it would put 'd'%objets' and comment out 'objets de'."
+ },
+ {
+  "page": 194,
+  "where": "first line: 'L_m ⊗^L_{Λ_m} Λ_n ---~--> L_n pour m ≥ n , et soit'",
+  "scan": "pour m ≥ n ,",
+  "tex": "L_n\\quad (m\\ge n),",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "L_n\\quad (m\\ge n),\n\\]\net soit",
+   "new": "L_n\n\\]\npour $m\\ge n$, et soit"
+  },
+  "note": "The word 'pour' replaced by parentheses."
+ },
+ {
+  "page": 194,
+  "where": "'les termes locaux (pour g ∈ G ) Tr_{Λ_n}(gu_n)'",
+  "scan": "(pour g ∈ G )",
+  "tex": "les termes locaux, pour $g\\in G$,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "les termes locaux, pour $g\\in G$,",
+   "new": "les termes locaux (pour $g\\in G$)"
+  },
+  "note": "Parentheses became commas."
+ },
+ {
+  "page": 194,
+  "where": "'Supposons de plus que f_*M_n ∈ ob D_ctf(_{Λ_n[G]}Y)'",
+  "scan": "f_*M_n (clean scan)",
+  "tex": "f_*L_n\\in\\Ob D_{\\mathrm{ctf}}({}_{\\Lambda_n[G]}Y)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "f_*L_n\\in\\Ob",
+   "new": "f_*M_n\\in\\Ob"
+  },
+  "corrected": "f_*L_n\\in\\Ob",
+  "note": "No M is defined (L = (L_n)); the TeX silently corrects."
+ },
+ {
+  "page": 194,
+  "where": "number of no. 6.14",
+  "scan": "'6.14.' with a full stop",
+  "tex": "\\subsection*{6.14}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.14}",
+   "new": "\\subsection*{6.14.}"
+  },
+  "note": "As 6.2. (p. 183)."
+ },
+ {
+  "page": 194,
+  "where": "6.14: 'j : U ---> X une immersion ouverte équivariante'",
+  "scan": "j : U ---> X",
+  "tex": "$j:U\\to X$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$i:U\\to X$",
+  "note": "The diagram (6.14.1) labels U -> X with i and X-U -> X with j, and p. 195 uses i_!Λ_U, Λ_{U,X} = i_!Λ_U, j_*Λ_{X-U} and j^c : (X-U)^c -> X^c: the open immersion is i. The TeX keeps the printed j."
+ },
+ {
+  "page": 194,
+  "where": "'On suppose que c_1^{-1}(U) ⊂ c_2^{-1}(U) ; on a donc'",
+  "scan": "; on a donc",
+  "tex": ". On a donc",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "c_2^{-1}(U).\n\\]\nOn a donc",
+   "new": "c_2^{-1}(U);\n\\]\non a donc"
+  },
+  "note": "Semicolon and lower-case 'on' in the print."
+ },
+ {
+  "page": 194,
+  "where": "'on a donc des carré commutatifs'",
+  "scan": "des carré commutatifs (no s)",
+  "tex": "des carrés commutatifs",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "des carrés commutatifs",
+   "new": "des carré commutatifs"
+  },
+  "corrected": "des carrés commutatifs",
+  "note": "Agreement slip of the print; the TeX silently corrects."
+ },
+ {
+  "page": 194,
+  "where": "diagram (6.14.1), vertical arrows",
+  "scan": "all seven vertical arrows are hooked (inclusions): U -> X (i), c_1^{-1}(U) -> c_2^{-1}(U), c_2^{-1}(U) -> C, U -> X (right) with the hook at the top; X-U -> X (j), c_2^{-1}(X-U) -> C, X-U -> X (right) with the hook at the bottom; the horizontal arrows are plain",
+  "tex": "all arrows \\draw[->] (no hooks)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\draw[->] (C1U) -- (C2U);\n\\draw[->] (C2U) -- (U2);\n\\draw[->] (U1) -- node[left] {$i$} (X1);\n\\draw[->] (U2) -- (X2);\n\\draw[->] (C2U) -- (C);\n\\draw[->] (C2XU) -- (C);\n\\draw[->] (C) -- node[above] {$c_1$} (X1);\n\\draw[->] (C) -- node[above] {$c_2$} (X2);\n\\draw[->] (XU1) -- node[left] {$j$} (X1);\n\\draw[->] (XU2) -- (X2);",
+   "new": "\\draw[{Hooks[right]}->] (C1U) -- (C2U);\n\\draw[->] (C2U) -- (U2);\n\\draw[{Hooks[right]}->] (U1) -- node[left] {$i$} (X1);\n\\draw[{Hooks[right]}->] (U2) -- (X2);\n\\draw[{Hooks[right]}->] (C2U) -- (C);\n\\draw[{Hooks[right]}->] (C2XU) -- (C);\n\\draw[->] (C) -- node[above] {$c_1$} (X1);\n\\draw[->] (C) -- node[above] {$c_2$} (X2);\n\\draw[{Hooks[right]}->] (XU1) -- node[left] {$j$} (X1);\n\\draw[{Hooks[right]}->] (XU2) -- (X2);"
+  },
+  "note": "Hooks[right] is the arrows.meta tip (loaded by tikz-cd); the side of the hook is a glyph detail. Only the seven vertical arrows change."
+ },
+ {
+  "page": 194,
+  "where": "after diagram (6.14.1)",
+  "scan": "a full stop to the right of the bottom row",
+  "tex": "nothing after the diagram",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzpicture}\n\\tag{6.14.1}",
+   "new": "\\end{tikzpicture}\\quad.\n\\tag{6.14.1}"
+  },
+  "note": "Full stop dropped."
+ },
+ {
+  "page": 195,
+  "where": "filtration of Λ_X",
+  "scan": "i_!Λ_U (i.e. F^nΛ_X = Λ_X pour n ≤ 0 , F^1Λ_X = i_!Λ_U , F^nΛ_X = 0 pour n ≥ 1 ) .",
+  "tex": "$i_!\\Lambda_U$, c'est-à-dire \\[ F^n\\Lambda_X=\\Lambda_X\\quad(n\\le0),\\qquad F^1\\Lambda_X=i_!\\Lambda_U,\\qquad F^n\\Lambda_X=0\\quad(n\\ge1). \\]",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$i_!\\Lambda_U$, c'est-à-dire\n\\[\nF^n\\Lambda_X=\\Lambda_X\\quad(n\\le0),\\qquad\nF^1\\Lambda_X=i_!\\Lambda_U,\\qquad\nF^n\\Lambda_X=0\\quad(n\\ge1).\n\\]",
+   "new": "$i_!\\Lambda_U$ (i.e. $F^n\\Lambda_X=\\Lambda_X$ pour $n\\le0$, $F^1\\Lambda_X=i_!\\Lambda_U$, $F^n\\Lambda_X=0$ pour $n\\ge1$)."
+  },
+  "note": "The print's abbreviation 'i.e.' written out as 'c'est-à-dire', the parentheses dropped, 'pour n ≤ 0' and 'pour n ≥ 1' set as (n\\le0), (n\\ge1). The printed 'n ≥ 1' is a misprint (next finding)."
+ },
+ {
+  "page": 195,
+  "where": "filtration of Λ_X: 'F^nΛ_X = 0 pour n ≥ 1'",
+  "scan": "n ≥ 1 (clean scan)",
+  "tex": "(n\\ge1)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$F^n\\Lambda_X=0$ pour $n\\ge2$",
+  "note": "Contradicts F^1Λ_X = i_!Λ_U and gr^1 = i_!Λ_U (6.14.3): F^n = 0 for n ≥ 2. The TeX keeps the printed 1. The corrected reading is given for the text after the word fix above."
+ },
+ {
+  "page": 195,
+  "where": "(6.14.3)",
+  "scan": "gr^oc = c_{X-U,X} ∈ Hom(c*_1(Λ_{X-U,X}),c^!_2(Λ_{X-U,X})) , / gr^1c = c_{U,X} ∈ Hom(c*_1(Λ_{U,X}),c^!_2(Λ_{X-U,X})) , with the number (6.14.3) at the first line",
+  "tex": "no parentheses around the Λ's; the first line unnumbered, \\tag{6.14.3} on the second",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\[\n\\operatorname{gr}^0\\underline c=\\underline c_{X-U,X}\n\\in\\Hom(c_1^*\\Lambda_{X-U,X},c_2^!\\Lambda_{X-U,X}),\n\\]\n\\begin{equation}\n\\operatorname{gr}^1\\underline c=\\underline c_{U,X}\n\\in\\Hom(c_1^*\\Lambda_{U,X},c_2^!\\Lambda_{X-U,X}),\n\\tag{6.14.3}\n\\end{equation}",
+   "new": "\\begin{equation}\n\\operatorname{gr}^0\\underline c=\\underline c_{X-U,X}\n\\in\\Hom(c_1^*(\\Lambda_{X-U,X}),c_2^!(\\Lambda_{X-U,X})),\n\\tag{6.14.3}\n\\end{equation}\n\\[\n\\operatorname{gr}^1\\underline c=\\underline c_{U,X}\n\\in\\Hom(c_1^*(\\Lambda_{U,X}),c_2^!(\\Lambda_{X-U,X})),\n\\]"
+  },
+  "note": "Four pairs of parentheses dropped, and the number moved to the second line; one edit for both. The second argument of the gr^1 line is a misprint of the print (next finding)."
+ },
+ {
+  "page": 195,
+  "where": "(6.14.3), second line: c^!_2(Λ_{X-U,X})",
+  "scan": "gr^1c = c_{U,X} ∈ Hom(c*_1(Λ_{U,X}),c^!_2(Λ_{X-U,X}))",
+  "tex": "c_2^!\\Lambda_{X-U,X}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "c_2^!(\\Lambda_{U,X})",
+  "note": "gr^1 c is a correspondence from Λ_{U,X} to Λ_{U,X}: the print repeats the target of the line above. The TeX keeps the printed reading; corrected reading for the text after the formula fix above."
+ },
+ {
+  "page": 195,
+  "where": "(6.14.4)",
+  "scan": "c_{X-U,U} = j_*c_{X-U} : index X-U,U (clean scan)",
+  "tex": "\\underline c_{X-U,X}=j_*\\underline c_{X-U},",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline c_{X-U,X}=j_*",
+   "new": "\\underline c_{X-U,U}=j_*"
+  },
+  "corrected": "\\underline c_{X-U,X}=j_*",
+  "note": "The correspondence is c_{X-U,X} (6.14.3, 6.14.5-6.14.7); the TeX silently corrects."
+ },
+ {
+  "page": 195,
+  "where": "'Nous écrirons c , c_{U,X} , etc. , quand nous voudrons préciser l'anneau de base.'",
+  "scan": "c and c_{U,X} without an index of the ring, a typed gap after each (handwritten symbols not filled in)",
+  "tex": "$\\underline c$, $\\underline c_{U,X}$, etc.",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "$\\underline c_{\\Lambda}$, $\\underline c_{\\Lambda,U,X}$",
+  "note": "Without the ring index the sentence introduces no notation; p. 196 writes c_ℓ, c_{ℓ,U,X}, c_{ℓ,X-U}. The TeX keeps the printed reading; the corrected reading is inferred, hence low confidence."
+ },
+ {
+  "page": 195,
+  "where": "'Rappelons (III 4.3) que si X est lisse,'",
+  "scan": "que si (no comma)",
+  "tex": "que, si",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(III 4.3) que, si",
+   "new": "(III 4.3) que si"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 195,
+  "where": "end of the page",
+  "scan": "p. 195 ends '... alors la formule de Lefschetz'; p. 196 begins '(III 4.7) entraîne que' (page_196_s1.png)",
+  "tex": "'Lefschetz' opens the line after the folio-196 marker; page_195.tex ends 'alors la formule de'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 196 really begins at '(III 4.7) entraîne que'. Exact fix: python -I move_marker.py 5 196 '(III 4.7) entraîne' (no --before; simulated read-only on both layers: '... alors la formule de' / 'Lefschetz ' / marker / '(III 4.7) entraîne que'; no other text moves)."
+ }
+]

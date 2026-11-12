@@ -1,0 +1,2 @@
+Counts (normal/misprint): p196 0/0; p197 0/0; p198 1/2; p199 1/0; p200 0/1.
+Convention: \sisi{(}{}…\sisi{)}{} claims printed parentheses that the print often lacks; examples: p196 'quotient 2.4 ,' (no parens), p197 'finie EGA IV 7.8.3 (vi) ,' (no parens), p199 '(SGA1I 10.1 ,' (no closing paren). The edition also adds parentheses around SGA 1 IX 6.2 in Lemma 3.1 (p197), which the print does not have.

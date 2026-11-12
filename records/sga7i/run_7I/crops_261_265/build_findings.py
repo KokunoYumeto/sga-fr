@@ -1,0 +1,156 @@
+import json
+import os
+
+RUN = r"C:\Users\user\Documents\sga_scan_check_20261105\run_7I"
+PAGES = os.path.join(RUN, "b261_265")
+OUT = os.path.join(RUN, "findings_261_265_recheck.json")
+
+findings = [
+    {
+        "page": 261,
+        "where": "proof of uniqueness, 'deux telles sections f , g \"différent\" par un morphisme h'",
+        "scan": "deux telles sections f , g \"différent\" par un morphisme",
+        "tex": "``différent''",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "``diffèrent''",
+        "note": "The word is the main verb of the clause, différer in the third person plural ('diffèrent'); the print gives it the acute accent of the adjective. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring.",
+    },
+    {
+        "page": 262,
+        "where": "display (3.5.1), after the right-hand side BIEXT(P,Q;G_m)",
+        "scan": "BIEXT(P,Q\"; G_m) ≈⟶ BIEXT(P,Q;G_m) with no full stop: only a faint speck in the character cell after the parenthesis",
+        "tex": "\\mathrm{BIEXT}(P,Q;\\underline{G}_m).",
+        "kind": "punctuation",
+        "confidence": "medium",
+        "fix": {
+            "old": "\\mathrm{BIEXT}(P,Q;\\underline{G}_m).",
+            "new": "\\mathrm{BIEXT}(P,Q;\\underline{G}_m)",
+        },
+        "note": "Checked at pixel level: the dot is 5x5 px at grey level 125-135, like the speck beside '= 0' in the first display of p. 264, while the typed full stops of this page are about 8x9 px at grey level 60-70. The sentence runs on after the display ('... BIEXT(P,Q;G_m) est une équivalence de catégories'), the typist sets a display-final full stop after a space ((3.5.2), (3.6.2), (3.7.1)), and the parallel display (3.6.1) has none. If the dot is judged a lightly struck full stop instead, keep the TeX and record it as a misprint (corrected: no full stop).",
+    },
+    {
+        "page": 263,
+        "where": "display (3.6.2), right-hand side",
+        "scan": "Biext^i(P\",Q\";G_m) ~⟶ Biext^1(P,Q;G_m) , i = 0, 1 .",
+        "tex": "\\mathrm{Biext}^1(P,Q;\\underline{G}_m)",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "\\mathrm{Biext}^i(P,Q;\\underline{G}_m)",
+        "note": "Checked at 6x zoom: the left exponent is an i with its dot, the right one a typed 1 (flag, no dot). The formula is stated for i = 0, 1, like (3.5.2). The TeX keeps the printed 1. 'corrected' replaces the 'tex' substring.",
+    },
+    {
+        "page": 264,
+        "where": "sentence after the first unnumbered display",
+        "scan": "La première relation a été déjà été rappelée dans (3.2.1)",
+        "tex": "La première relation a été déjà été rappelée",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "La première relation a déjà été rappelée",
+        "note": "'été' is typed twice. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring.",
+    },
+    {
+        "page": 264,
+        "where": "proof of Ext^1(M,G_m) = 0, cyclic case",
+        "scan": "et au cas Z = Z/nZ , qui provient du fait que G_m est n-divisible",
+        "tex": "au cas $\\mathbb{Z} = \\mathbb{Z}/n\\mathbb{Z}$",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "au cas $M = \\mathbb{Z}/n\\mathbb{Z}$",
+        "note": "The case M = Z/nZ is meant, after 'au cas où M = Z' in the same sentence. The TeX keeps the printed Z. 'corrected' replaces the 'tex' substring.",
+    },
+    {
+        "page": 264,
+        "where": "last sentence, '=Biext^1(A,M,G_m))'",
+        "scan": "Ext^1(A ⊗^L M,G_m) =Biext^1(A,M,G_m)).",
+        "tex": "\\mathrm{Biext}^1(A,\\underline{M},\\underline{G}_m)",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "\\mathrm{Biext}^1(A,\\underline{M};\\underline{G}_m)",
+        "note": "Checked at 4x zoom: a comma, not a semicolon, before G_m. Everywhere else the coefficient group follows a semicolon (BIEXT(A,M; G_m) in 3.7, Biext^i(P,Q;G_m) in (3.5.2) and (3.6.2)). The TeX keeps the printed comma. 'corrected' replaces the 'tex' substring.",
+    },
+    {
+        "page": 265,
+        "where": "Proposition 4.2, 'est pleinement fidèle. Son image essentielle'",
+        "scan": "est pleinement fidèle. Son image essentielle: the underline stops after 'fidèle' and restarts at 'Son'; the full stop and the space are not underlined",
+        "tex": "\\underline{est pleinement fidèle. Son image essentielle est formée des Modules inversibles rigidifiés}",
+        "kind": "underline",
+        "confidence": "high",
+        "fix": {
+            "old": "\\underline{est pleinement fidèle. Son image essentielle",
+            "new": "\\underline{est pleinement fidèle}. \\underline{Son image essentielle",
+        },
+        "note": "Underline extent only. The full stop sits inside the \\underline, not at its end, so neither global rule (final comma or full stop, inner comma) reaches it.",
+    },
+    {
+        "page": 265,
+        "where": "Proposition 4.2, condition on the Module L",
+        "scan": "π*(P) ≃ pr_1*(P)pr_2*(P)",
+        "tex": "$\\pi^*(P) \\simeq \\mathrm{pr}_1^*(P)\\mathrm{pr}_2^*(P)$",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "$\\pi^*(\\underline{L}) \\simeq \\mathrm{pr}_1^*(\\underline{L})\\mathrm{pr}_2^*(\\underline{L})$",
+        "note": "The condition is on the rigidified invertible Module L named just before, not on the group P (P typed three times for L). The TeX keeps the printed P. 'corrected' replaces the 'tex' substring and writes L underlined, as the statement does.",
+    },
+    {
+        "page": 265,
+        "where": "Proposition 4.2, first word after the label",
+        "scan": "Soient P un groupe lisse et connexe sur le corps k.",
+        "tex": "\\underline{Soient} $P$ \\underline{un groupe lisse",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "\\underline{Soit} $P$ \\underline{un groupe lisse",
+        "note": "Agreement slip: only one object is introduced, so 'Soit' (4.3 has 'Soient P et Q'). The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring.",
+    },
+]
+
+# Checks: every fix 'old' occurs exactly once; every 'tex' occurs in its page;
+# the fix 'old' never contains a marker line.
+ok = True
+for f in findings:
+    path = os.path.join(PAGES, "page_%03d.tex" % f["page"])
+    with open(path, encoding="utf-8", newline="") as fh:
+        text = fh.read()
+    n_tex = text.count(f["tex"])
+    msg = "p%d %-18s tex x%d" % (f["page"], f["kind"], n_tex)
+    if n_tex < 1:
+        ok = False
+        msg += "  <-- TEX NOT FOUND"
+    if f["fix"] is not None:
+        old = f["fix"]["old"]
+        n_old = text.count(old)
+        msg += "  old x%d" % n_old
+        if n_old != 1 or "%%%%%%%%%%" in old:
+            ok = False
+            msg += "  <-- BAD OLD"
+        else:
+            new_text = text.replace(old, f["fix"]["new"])
+            assert new_text != text
+    if f["kind"] == "misprint_in_print":
+        if "corrected" not in f:
+            ok = False
+            msg += "  <-- NO CORRECTED"
+    else:
+        assert "corrected" not in f
+    print(msg)
+
+with open(OUT, "w", encoding="utf-8", newline="\n") as fh:
+    json.dump(findings, fh, ensure_ascii=False, indent=1)
+    fh.write("\n")
+
+# Re-read to confirm valid JSON.
+with open(OUT, encoding="utf-8") as fh:
+    back = json.load(fh)
+print("written", len(back), "findings; all checks ok" if ok else "CHECK FAILURES")
+counts = {}
+for f in back:
+    c = counts.setdefault(f["page"], [0, 0])
+    c[1 if f["kind"] == "misprint_in_print" else 0] += 1
+print(", ".join("p%d %d/%d" % (p, c[0], c[1]) for p, c in sorted(counts.items())))

@@ -1,0 +1,2 @@
+Normal/misprint : 256: 1/0 ; 257: 1/0 ; 258: 2/1 ; 259: 1/0 ; 260: 1/1.
+Convention récurrente « à valeur » → « à valeurs » : p. 258, 6.2(2), « faisceaux à valeur dans D » (deux emplois dans la phrase) ; p. 258, 6.3.1, « faisceaux sur C à valeur dans 𝒰-γ » ; p. 259, 6.3.2, « un faisceau à valeur dans 𝒰-γ ». Le correctif donné traite le premier passage ; les deux autres relèvent de la même restitution du singulier.

@@ -1,0 +1,118 @@
+{
+  "findings": [
+    {
+      "page": 131,
+      "where": "Formula (3.2.2.3); recurring simplification of derived-functor notation",
+      "scan": "\\xi_G : \\mathbf{L}^{+}_G g_{\\ast}\\circ\\RR^{+}_G f^{\\ast}\\longrightarrow\\RR^{+}_G {f'}^{\\ast}\\circ\\mathbf{L}^{+}_G {g'}_{\\ast}",
+      "tex": "\\xi_G : g_{G\\ast}\\circ\\RR^{+}_G f^{\\ast}\\longrightarrow\\RR^{+}_G {f'}^{\\ast}\\circ {g'}_{G\\ast}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "g_{G\\ast} \\circ  \\sisi{\\RR^+}{R}_G f^{\\ast}\n\\longrightarrow  \\sisi{\\RR^+}{R}_G {f'}^{\\ast} \\circ\n         {g'}_{G\\ast}",
+        "new": "\\mathbf{L}^{+}_G g_{\\ast} \\circ  \\sisi{\\RR^+}{R}_G f^{\\ast}\n\\longrightarrow  \\sisi{\\RR^+}{R}_G {f'}^{\\ast} \\circ\n         \\mathbf{L}^{+}_G {g'}_{\\ast}"
+      },
+      "note": "Recurring simplification, reported once with a representative fix. Three examples: (3.2.2.3) replaces printed L_G^+g_* by g_{G*}; the formula for eta_G^f replaces L^+\\bar u'^* by \\bar u'^*; diagram (3.2.3.2), p.132, replaces R_G^+\\bar u'_* by R^+\\bar u'_*. Restore the omitted L^+ throughout these formulas on pp.131–132, and the G subscripts on both R^+ in (3.2.3.2). The first arguments of the existing \\sisi commands otherwise agree with the printed R^+."
+    },
+    {
+      "page": 131,
+      "where": "Introduction of K^{\\bigdot}, immediately after diagram (3.2.3.1)",
+      "scan": "D^{+}(S')",
+      "tex": "D^{+}_G(S')",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "D^{+}_G(S')",
+        "new": "D^{+}(S')"
+      },
+      "note": "The printed category has no subscript G; the TeX adds one."
+    },
+    {
+      "page": 131,
+      "where": "The two displayed identities following eta_G^f; also diagram (3.2.3.2), p.132",
+      "scan": "R^{+}h^{\\ast};\\quad L^{+}h_{\\ast};\\quad L_G^{+}h_{\\ast}(K^{\\bigdot})",
+      "tex": "R^{+}h_c^{\\ast};\\quad h_{c\\ast};\\quad h_{c\\ast}(K^{\\bigdot})",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "h^{\\ast}_c",
+        "new": "h^{\\ast}"
+      },
+      "note": "Recurring addition of c, reported once with three examples: R^+h^* in the first identity, L^+h_* at the end of the second identity, and L_G^+h_*(K) at the bottom of (3.2.3.2). The print uses h, not h_c, in all standalone h-factors in these identities and that diagram. The fix is representative. Keep the printed c in composites h_c\\circ u and in the later Gamma(h_c^*) formulas."
+    },
+    {
+      "page": 132,
+      "where": "Diagram (3.2.3.2), ascending right-hand diagonal",
+      "scan": "\\alpha(\\mathbf{L}^{+}_G h_{\\ast}(K^{\\bigdot}))",
+      "tex": "The diagonal arrow has no label.",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\ar[ru]&.",
+        "new": "\\ar[ru]_{\\alpha(\\mathbf{L}^{+}_G h_{\\ast}(K^{\\bigdot}))}&."
+      },
+      "note": "The printed right-hand diagonal is labelled alpha(L_G^+h_*(K)); this label is entirely absent from the TeX."
+    },
+    {
+      "page": 132,
+      "where": "Target of the augmentation X f X'",
+      "scan": "C^{\\Delta'}_S",
+      "tex": "C^{\\Delta'}_S",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "C^{\\Delta'}_{S'}",
+      "note": "The print omits the prime on S, and the TeX keeps this misprint. Both h_c\\circ u and u' have target the constant object over S', so the combined augmentation must also have target over S'."
+    },
+    {
+      "page": 132,
+      "where": "Displayed definition of t",
+      "scan": "K^+(\\Gamma(u'_{\\alpha}))",
+      "tex": "K^+(\\Gamma(u'_{\\alpha}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "K^+(\\Gamma(u'_{\\ast}))",
+      "note": "The print has alpha instead of the direct-image asterisk, and the TeX keeps it. The factorization opening p.133 correctly uses u'_{\\ast} in this same factor."
+    },
+    {
+      "page": 133,
+      "where": "Functor applied to t, immediately after the opening factorization",
+      "scan": "\\epsilon_{Z^{\\bigdot}\\ast}",
+      "tex": "\\epsilon_{Z^{\\bigdot\\ast}}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\epsilon_{Z^{\\bigdot\\ast}}",
+        "new": "\\epsilon_{Z^{\\bigdot}\\ast}"
+      },
+      "note": "The direct-image asterisk follows Z^{\\bigdot} in epsilon's subscript. The TeX instead puts it in the exponent of Z alongside the complex dot."
+    },
+    {
+      "page": 133,
+      "where": "Footnote to Proposition (3.2.4)",
+      "scan": "conditions précédentes et telle que la famille",
+      "tex": "conditions précédentes et tels que la famille",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "précédentes et tels que la",
+        "new": "précédentes et telle que la"
+      },
+      "note": "The print reads « telle », referring to the family; the TeX substitutes « tels »."
+    },
+    {
+      "page": 135,
+      "where": "Proof of (f), sentence introducing the canonical equivalence",
+      "scan": "que l'on dispose d'une équivalence canonique",
+      "tex": "que l'on dispose d'un équivalence canonique",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "que l'on dispose d'un",
+        "new": "que l'on dispose d'une"
+      },
+      "note": "The final e of « d'une » is present in the print but missing from the TeX."
+    }
+  ],
+  "coordinator": "131: 3/0; 132: 1/2; 133: 2/0; 134: 0/0; 135: 1/0 (normal/misprint).\nDerived-functor convention: restore omitted L^+ on pp.131–132 and G on both R^+ in (3.2.3.2); three examples are given in the first finding.\nh versus h_c convention: remove c from standalone h-factors in the two p.131 identities and in (3.2.3.2); retain c in h_c\\circ u and Gamma(h_c^*). Three examples are given in the corresponding finding.\nApply the derived-functor restoration, h_c-to-h changes, and missing right-diagonal label together in (3.2.3.2)."
+}

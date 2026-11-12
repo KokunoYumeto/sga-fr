@@ -1,0 +1,131 @@
+[
+ {
+  "page": 116,
+  "where": "f), parenthèse « c'est possible grâce a b) »",
+  "scan": "grâce a b)",
+  "tex": "grâce a\nb)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "grâce à b)",
+  "note": "Il manque l'accent grave de la préposition « à ». Le TeX conserve la coquille de l'imprimé."
+ },
+ {
+  "page": 116,
+  "where": "ST), terme initial de la suite",
+  "scan": "Z_0=Z",
+  "tex": "Z_\\circ=Z",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "Z_\\circ=Z",
+   "new": "Z_0=Z"
+  },
+  "note": "L'indice rond est le zéro initial de la suite indexée par les entiers n≥0, non un symbole de composition."
+ },
+ {
+  "page": 116,
+  "where": "ST), formule de récurrence",
+  "scan": "Z_n=Sup(Z_n,s(Z_n),Z_n\\circ Z_n)",
+  "tex": "Z_n=\\Sup(Z_n,s(Z_n),Z_n\\circ Z_n)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Z_{n+1}=\\Sup(Z_n,s(Z_n),Z_n\\circ Z_n)",
+  "note": "La récurrence doit définir Z_{n+1} à partir de Z_n. Le TeX conserve l'indice n erroné du membre de gauche."
+ },
+ {
+  "page": 117,
+  "where": "Exercice 8.9.10 b), « la somme des X(α) dans Ind(C) »",
+  "scan": "dans Ind(C)",
+  "tex": "dans $\\Ind(C)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "dans $\\Pro(C)$",
+  "note": "Les X(α) sont des pro-objets et la somme considérée est dans Pro(C). Le TeX conserve la coquille Ind(C) de l'imprimé."
+ },
+ {
+  "page": 117,
+  "where": "Exercice 8.9.10 b), expression après « chacune des familles »",
+  "scan": "familles \\varprojlim_J X_{i_\\alpha}",
+  "tex": "familles $\\varprojlim_J X_{i_\\alpha}$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "familles $(X_{i_\\alpha})_{\\alpha\\in J}$",
+  "note": "Il faut considérer les familles de composants indexées par J, non leurs limites projectives sur J. Le TeX conserve la formule imprimée."
+ },
+ {
+  "page": 117,
+  "where": "Exercice 8.9.10 b), indice du tuple (i_α)",
+  "scan": "(i_\\alpha)_{\\alpha\\in I}",
+  "tex": "(i_\\alpha)_{a\\in I}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(i_\\alpha)_{a\\in I}",
+   "new": "(i_\\alpha)_{\\alpha\\in I}"
+  },
+  "note": "L'imprimé porte un alpha grec, non un a latin. Le I imprimé est une autre coquille, signalée séparément."
+ },
+ {
+  "page": 117,
+  "where": "Exercice 8.9.10 b), ensemble d'indexation du tuple (i_α)",
+  "scan": "(i_\\alpha)_{\\alpha\\in I}\\in\\prod_{\\alpha\\in J}I_\\alpha",
+  "tex": "(i_\\alpha)_{a\\in I}\\in\n\\prod_{\\alpha\\in J}I_\\alpha",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(i_\\alpha)_{\\alpha\\in J}\\in\\prod_{\\alpha\\in J}I_\\alpha",
+  "note": "L'ensemble d'indexation doit être J, comme dans le produit qui suit. Le TeX conserve le I erroné de l'imprimé; la confusion a/alpha est signalée séparément."
+ },
+ {
+  "page": 117,
+  "where": "Exercice 8.9.11 a), dernière ligne",
+  "scan": "morphismes de but X_i",
+  "tex": "morphismes de but $X_i$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "morphismes de but $X$",
+  "note": "Les sous-familles de la famille donnée ont pour but X. Le TeX conserve le i superflu de l'imprimé."
+ },
+ {
+  "page": 119,
+  "where": "§8.10, références définissant les morphismes de pro-objets",
+  "scan": "(8.2.4.2), (8.2.5.1)",
+  "tex": "(8.2.4.2).\n(8.2.5.1)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(8.2.4.2).\n(8.2.5.1)",
+   "new": "(8.2.4.2),\n(8.2.5.1)"
+  },
+  "note": "L'imprimé relie les deux références par une virgule; le point du TeX coupe la phrase."
+ },
+ {
+  "page": 119,
+  "where": "§8.10, après les références (8.2.4.2), (8.2.5.1)",
+  "scan": "pour les in-objets",
+  "tex": "pour les in-objets",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "pour les ind-objets",
+  "note": "Il manque le d dans l'imprimé. Le TeX conserve cette coquille."
+ },
+ {
+  "page": 120,
+  "where": "Paragraphe entre (8.10.5) et (8.10.6)",
+  "scan": "Le foncteur (8.4.1) appliqué à",
+  "tex": "Le foncteur (8.4.1) appliquée à",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "appliquée",
+   "new": "appliqué"
+  },
+  "note": "L'imprimé porte « appliqué », accordé avec « foncteur »; le TeX ajoute un e."
+ }
+]

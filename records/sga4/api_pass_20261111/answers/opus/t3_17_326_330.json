@@ -1,0 +1,127 @@
+[
+ {
+  "page": "326",
+  "where": "4.2.1, «une famille de point de S»",
+  "scan": "une famille de point de S",
+  "tex": "une famille de point\\sisi{}{s} de $S$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "points",
+  "note": "The print has «point» for «points». The TeX corrects it with \\sisi, and the A reading matches the print."
+ },
+ {
+  "page": "326",
+  "where": "4.2.3 (i)",
+  "scan": "est un faisceau flasque (V 3.7)",
+  "tex": "\\sisi{(V 3.7)}{\\hyperrefext[V][V.def4.1]{4.1}}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "V 4.1",
+  "note": "The printed reference V 3.7 looks wrong. The TeX corrects it with \\sisi to V 4.1, and the A reading matches the print."
+ },
+ {
+  "page": "327",
+  "where": "diagram, first row, left",
+  "scan": "\\Zz^{n-1}(F^1)",
+  "tex": "\\Zz^{n-1}(F\\sisi{^1}{'})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Zz^{n-1}(F')",
+  "note": "The print has F^1 for F'. The TeX corrects it with \\sisi, and the A reading matches the print."
+ },
+ {
+  "page": "327",
+  "where": "short exact sequences before 4.2.3.1",
+  "scan": "0 → Z^{n+1}(F) → C^n(F) → Z^n(F) → 0",
+  "tex": "0\\longrightarrow \\mathcal{Z}^{n+1}(F)\\longrightarrow",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "0\\longrightarrow \\mathcal{Z}^{n-1}(F)\\longrightarrow \\Cc^{n}(F)\\longrightarrow \\mathcal{Z}^{n}(F)\\longrightarrow 0",
+  "note": "The substitution F ↦ Z^{n-1}(F) in (4.2.3.1) gives Z^{n-1}, not Z^{n+1}. The TeX keeps the printed n+1."
+ },
+ {
+  "page": "329",
+  "where": "4.2.7, «Il permettent»",
+  "scan": "Il permettent",
+  "tex": "\\sisi{Il}{Elles} permettent",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Elles",
+  "note": "The print has «Il» for «Elles». The TeX corrects it with \\sisi, and the A reading matches the print."
+ },
+ {
+  "page": "329",
+  "where": "4.2.7, «compréhenseible»",
+  "scan": "plus compréhenseible des",
+  "tex": "plus compréhensible des",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "compréhensible",
+  "note": "The print has the typing error «compréhenseible». The TeX corrects it silently."
+ },
+ {
+  "page": "329",
+  "where": "4.2.8 (a)",
+  "scan": "bornés supériaurement",
+  "tex": "bornés supérieurement",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "supérieurement",
+  "note": "The print has the typing error «supériaurement». The TeX corrects it silently."
+ },
+ {
+  "page": "329",
+  "where": "4.2.8 (b)",
+  "scan": "Tor-dimension finie sur f*B",
+  "tex": "$f^{\\sisi{\\ast}{-1}}\\Bb$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "f^{-1}\\Bb",
+  "note": "The print has f^*. The TeX corrects it with \\sisi to f^{-1}, and the A reading matches the print."
+ },
+ {
+  "page": "330",
+  "where": "4.2.8 (ii)",
+  "scan": "déployé à gauche pour ⊗^L Lf*(1.2.1)",
+  "tex": "${}\\overset{\\LL}{\\otimes} f^{\\ast}$ \\eqhyperref",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "${}\\overset{\\LL}{\\otimes} f^{\\ast}$ \\eqhyperref",
+   "new": "${}\\overset{\\LL}{\\otimes}\\LL f^{\\ast}$ \\eqhyperref"
+  },
+  "note": "The print has the derived functor Lf^*. The TeX drops the \\LL before f^{\\ast}."
+ },
+ {
+  "page": "330",
+  "where": "4.2.8 (iii)",
+  "scan": "le foncteur K ⊗^L Lf*L en L",
+  "tex": "$K\\overset{\\LL}{\\otimes} f^{\\ast}L$ en $L$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$K\\overset{\\LL}{\\otimes} f^{\\ast}L$ en $L$",
+   "new": "$K\\overset{\\LL}{\\otimes}\\LL f^{\\ast}L$ en $L$"
+  },
+  "note": "The print has the derived functor Lf^*. The TeX drops the \\LL before f^{\\ast}."
+ },
+ {
+  "page": "330",
+  "where": "4.2.8 (iii), «∀ x ∈ V»",
+  "scan": "∀ x ∈ V",
+  "tex": "$\\forall x \\in V$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\forall x \\in X",
+  "note": "V stands for the set of points X. The TeX keeps the printed V."
+ }
+]

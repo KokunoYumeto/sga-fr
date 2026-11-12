@@ -1,0 +1,53 @@
+{
+  "findings": [
+    {
+      "page": 531,
+      "where": "Premier paragraphe, hypothèse de platitude",
+      "scan": "$K^0_{1}$ ou $K^0_{2}$ est plat",
+      "tex": "$K^0_{1}$ ou $K^0_{2}$ plat",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "$K^0_{2}$ plat",
+        "new": "$K^0_{2}$ est plat"
+      },
+      "note": "Le mot « est » a été omis."
+    },
+    {
+      "page": 531,
+      "where": "1.4.24, item b)",
+      "scan": "un morphisme de champ",
+      "tex": "un morphisme de \\emph{champs}",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "\\emph{champs}",
+        "new": "\\emph{champ}"
+      },
+      "note": "Le texte imprimé porte le singulier « champ »."
+    },
+    {
+      "page": 532,
+      "where": "Premier affichage, troncature du membre de gauche",
+      "scan": "\\tau_{\\leq} R\\Hhom(\\ZZ^{(F)},C^{\\flat})",
+      "tex": "\\tau_{\\leq 0} R\\Hhom(\\ZZ^{(F)},C^{\\flat})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\tau_{\\leq 0} R\\Hhom(\\ZZ^{(F)},C^{\\flat})",
+      "note": "La borne 0 manque dans l'imprimé, également dans le témoin. Le TeX la rétablit silencieusement."
+    },
+    {
+      "page": 535,
+      "where": "Suite exacte (1.5.4.2), terme central",
+      "scan": "R'f_{\\ast}G",
+      "tex": "R^1f_{\\ast}G",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "R^{1}f_{\\ast}G",
+      "note": "L'exposant imprimé est une prime au lieu de 1 pour le premier foncteur dérivé. Le TeX corrige silencieusement."
+    }
+  ],
+  "coordinator": "531 : 2/0 ; 532 : 0/1 ; 533 : 0/0 ; 534 : 0/0 ; 535 : 0/1 (normal/misprint)."
+}

@@ -1,0 +1,72 @@
+[
+ {
+  "page": 31,
+  "where": "Supposons que u_! commute aux limites projectives finies (…)",
+  "scan": "(5.4 4) et 5.6)",
+  "tex": "(\\hyperref[I.prop5.4]{5.4}) et (\\hyperref[I.prop5.6]{5.6})",
+  "kind": "number",
+  "confidence": "medium",
+  "fix": {
+   "old": "(\\hyperref[I.prop5.4]{5.4}) et (\\hyperref[I.prop5.6]{5.6})",
+   "new": "(\\hyperref[I.prop5.4]{5.4}~4) et \\hyperref[I.prop5.6]{5.6})"
+  },
+  "note": "The print refers to item 4) of 5.4 (\"5.4 4)\"). The TeX drops the \"4)\"."
+ },
+ {
+  "page": 32,
+  "where": "last line, 5.10: « est toujours adjoint à droite au foncteur j_X^* »",
+  "scan": "adjoint à droite",
+  "tex": "adjoint à droite",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "adjoint à gauche",
+  "note": "j_{X!}, given by the coproduct formula, is the left adjoint of j_X^*. The print says « à droite » and the TeX keeps it."
+ },
+ {
+  "page": 33,
+  "where": "Preuve 2): « le foncteur e_X∘j^* est canoniquement isomorphe »",
+  "scan": "e_X∘j^*",
+  "tex": "e_X\\circ j^\\ast",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "e_X\\circ j^\\ast_X",
+  "note": "The subscript X is missing in the print (it is present a line earlier). The TeX keeps the printed reading."
+ },
+ {
+  "page": 34,
+  "where": "after « On a donc un diagramme commutatif à isomorphisme près: »",
+  "scan": "diagram (5.13.2): (C/H)^ --(u/H)_!--> (C'/u·H)^ ; verticals (j_H)_!, (j_{u!H})_! ; C^ --u_!--> C'^ ,",
+  "tex": "diagram present only as a % comment",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "%\\[\\vcenter{\n%\\xymatrix@C=2.5cm@R=1.5cm{ (C/H){\\widehat{\\phantom{a}}}\n%\\ar[r]^{(u/H)_{!}} \\ar[d]_{(j_H)_!}&\n%  (C'/u^·H){\\widehat{\\phantom{a}}} \\ar[d]_{(j_{u!H})_{!}}\\\\\n%  C{\\widehat{\\phantom{\\;a}}} \\ar[r]^{u_!}& C'{\\widehat{\\phantom{\\;a}}}\\quad,\n%}}\\leqno{(5.13.2)}\n%\\]",
+   "new": "\\[\\vcenter{\n\\xymatrix@C=2.5cm@R=1.5cm{ (C/H)\\widehat{\\phantom{a}}\n\\ar[r]^{(u/H)_{!}} \\ar[d]_{(j_H)_!}&\n  (C'/u_{!}H)\\widehat{\\phantom{a}} \\ar[d]_{(j_{u_{!}H})_{!}}\\\\\n  C\\widehat{\\phantom{a}} \\ar[r]^{u_!}& C'\\widehat{\\phantom{a}}\\quad,\n}}\\leqno{(5.13.2)}\n\\]"
+  },
+  "note": "The printed diagram (5.13.2) is commented out in the TeX, so the edition does not print it. The print's top-right corner reads (C'/u·H)^, a misprint for (C'/u_!H)^."
+ },
+ {
+  "page": 34,
+  "where": "diagram (5.13.1), left vertical label",
+  "scan": "J_H",
+  "tex": "J_H",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "j_H",
+  "note": "Capital J in the print where j_H (the source functor) is meant. The TeX keeps J_H."
+ },
+ {
+  "page": 35,
+  "where": "Prop. 5.14 3), right vertical arrow of the cartesian square",
+  "scan": "u.u·(α)",
+  "tex": "u.u^{\\bigdot}(\\alpha)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "u^{*}u_{!}(\\alpha)",
+  "note": "The print's label u.u·(α) stands for u^*u_!(α). The TeX keeps the printed reading."
+ }
+]

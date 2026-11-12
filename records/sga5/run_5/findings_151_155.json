@@ -1,0 +1,560 @@
+[
+ {
+  "page": 151,
+  "where": "first paragraph, 'Par l'isomorphisme de dualité (SGA 4 XVIII 3.19.6) (plus un passage à la limite), on a'",
+  "scan": "'(SGA 4 XVIII 3.19.6) (plus un passage à la limite), on a': the second clause in parentheses",
+  "tex": "(SGA 4 XVIII 3.19.6), plus un passage à la limite, on a",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(SGA 4 XVIII 3.19.6), plus un passage à la limite, on a",
+   "new": "(SGA 4 XVIII 3.19.6) (plus un passage à la limite), on a"
+  },
+  "note": "The TeX turns the printed parentheses into commas."
+ },
+ {
+  "page": 151,
+  "where": "display of the inclusions f', g', f, g: second line, 'f : T - Z ↪ T'",
+  "scan": "f : T - Z ↪ T (a clear Z; the line above reads f' : Z - Y ↪ Z)",
+  "tex": "f:T-Y\\hookrightarrow T",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "f:T-Y\\hookrightarrow T",
+   "new": "f:T-Z\\hookrightarrow T"
+  },
+  "corrected": "f:T-Y\\hookrightarrow T",
+  "note": "f is the inclusion of T - Y in T, as f' : Z - Y ↪ Z above (g : T - (X ∪ Y) ↪ T - Y lands in its source; (2.6.3) applies Rf_* to g_!(...)). The TeX silently corrects the printed Z; the edit restores it and changes only that letter."
+ },
+ {
+  "page": 151,
+  "where": "same display, end of the second line 'g : T - (X ∪ Y) ↪ T - Y ,'",
+  "scan": "a comma after T - Y, as after Z - Y at the end of the first line",
+  "tex": "g:T-(X\\cup Y)\\hookrightarrow T-Y (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\hookrightarrow T-Y\n\\]",
+   "new": "\\hookrightarrow T-Y,\n\\]"
+  },
+  "note": ""
+ },
+ {
+  "page": 151,
+  "where": "last paragraph, 'une ramification modérée (l'action de l'inertie ... pour un nombre premier ℓ ≠ p) , puis traiterons'",
+  "scan": "the clause 'l'action de l'inertie se faisant plus précisément à travers un ℓ-groupe, pour un nombre premier ℓ ≠ p' stands in parentheses",
+  "tex": "the clause set off by commas",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "modérée, l'action de l'inertie se faisant plus précisément à travers un $\\ell$-groupe, pour un nombre premier $\\ell\\ne p$, puis",
+   "new": "modérée (l'action de l'inertie se faisant plus précisément à travers un $\\ell$-groupe, pour un nombre premier $\\ell\\ne p$), puis"
+  },
+  "note": "Both parentheses in one edit."
+ },
+ {
+  "page": 152,
+  "where": "heading of n° 3",
+  "scan": "'3.- Réduction au cas modéré.' (underlined; a hyphen right after '3.', a full stop after the title)",
+  "tex": "\\subsection*{3. Réduction au cas modéré}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{3. Réduction au cas modéré}",
+   "new": "\\subsection*{3.- Réduction au cas modéré.}"
+  },
+  "note": "Underlined titles end with a full stop in the print; the underline is the accepted \\subsection* setting. This heading has no space between '3.' and the hyphen (p. 146 prints '2. - ')."
+ },
+ {
+  "page": 152,
+  "where": "end of 3.2, 'l'image inverse de A (resp. B) dans T' , E' = ...'",
+  "scan": "'dans T' ,' and then the formula E' = (P ⊗_S Q)|T' - (X' ∪ Y') = ... on the next line; no 'et'",
+  "tex": "dans $T'$, et",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $T'$, et",
+   "new": "dans $T'$,"
+  },
+  "note": "Word added by the TeX."
+ },
+ {
+  "page": 153,
+  "where": "'pourvu que l'on s'assure que A', B' vérifient les hyptohèses de position générale de 1.2'",
+  "scan": "hyptohèses (t and o transposed)",
+  "tex": "hypothèses",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "vérifient les hypothèses",
+   "new": "vérifient les hyptohèses"
+  },
+  "corrected": "hypothèses",
+  "note": "Typing error; the TeX silently corrects it. The edit changes only the two transposed letters."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.3, label",
+  "scan": "'Lemme 3.3 - Sous les hypothèses de 1.2, ...' (Lemme underlined, then ' -', no full stop)",
+  "tex": "\\begin{statement}{Lemme 3.3}  (renders 'Lemme 3.3.')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Lemme 3.3}",
+   "new": "\\begin{statement}{Lemme 3.3 -}"
+  },
+  "note": "Exposé III B prints its run-in labels with ' -', as Exposé III does. The III B statement environment (s5.tex line 4329) still appends a full stop, so this edit gives the print's 'Lemme 3.3 -' only together with an environment that adds none for III B (as Exposé III, line 1938); same as the labels of pp. 146-150."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.3, first line 'Sous les hypothèses de 1.2, a et b étant des immersions fermées, soient'",
+  "scan": "underlined: 'Sous les hypothèses de', 'et', 'étant des immersions fermées' and 'soient' (not 1.2, a, b)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 1.2, $a$ et $b$ étant des immersions fermées, soient",
+   "new": "\\emph{Sous les hypothèses de} 1.2, $a$ \\emph{et} $b$ \\emph{étant des immersions fermées}, \\emph{soient}"
+  },
+  "note": "The print underlines the statements of Exposé III B word group by word group (letters, formulas and punctuation not underlined); the III B TeX has no underlining at all. \\emph is the file's command for the print's underline in statements (Exposé III)."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.3, 'des revêtements finis de S-traits strictement locaux, de même degré d'",
+  "scan": "underlined: 'des revêtements finis de', 'traits strictement locaux' (not S-), 'de même degré' (across the line break; not d)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "des revêtements finis de $S$-traits strictement locaux, de même degré",
+   "new": "\\emph{des revêtements finis de} $S$-\\emph{traits strictement locaux}, \\emph{de même degré}"
+  },
+  "note": "Underlined statement (see the first underline finding of Lemme 3.3)."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.3, 'de même degré d , notons A' (resp. B')'",
+  "scan": "'d , notons': a comma and a small n, one sentence; 'notons' underlined",
+  "tex": "$d$. Notons",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$d$. Notons",
+   "new": "$d$, \\emph{notons}"
+  },
+  "note": "The TeX splits the statement into two sentences. The new text also carries the print's underline of 'notons'."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.3, 'l'image inverse de A (resp. B) dans X' ×_S Y' . Alors les couples'",
+  "scan": "underlined: 'l'image inverse de', 'dans', 'Alors les couples' (not the letters, not X' ×_S Y')",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "l'image inverse de $A$ (resp. $B$) dans $X'\\times_S Y'$. Alors les couples",
+   "new": "\\emph{l'image inverse de} $A$ (resp. $B$) \\emph{dans} $X'\\times_S Y'$. \\emph{Alors les couples}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.3, 'sont chacun en position générale (au sens de 1.2) (*)'",
+  "scan": "'sont chacun en po-sition générale (au sens de' underlined across the line break; '1.2) (*).' not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "sont chacun en position générale (au sens de 1.2)",
+   "new": "\\emph{sont chacun en position générale (au sens de} 1.2)"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.4, label",
+  "scan": "'Lemme 3.4 - Soient ...' (Lemme underlined, then ' -', no full stop)",
+  "tex": "\\begin{statement}{Lemme 3.4}  (renders 'Lemme 3.4.')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Lemme 3.4}",
+   "new": "\\begin{statement}{Lemme 3.4 -}"
+  },
+  "note": "Exposé III B prints its run-in labels with ' -', as Exposé III does. The III B statement environment (s5.tex line 4329) still appends a full stop, so this edit gives the print's 'Lemme 3.4 -' only together with an environment that adds none for III B (as Exposé III, line 1938); same as the labels of pp. 146-150."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.4, first line 'Soient X ← W → Y des morphismes finis de S-traits,'",
+  "scan": "underlined: 'Soient', 'des morphismes finis de', 'traits' (not S-, not the comma)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $X\\xleftarrow{s_1}W\\xrightarrow{s_2}Y$ des morphismes finis de $S$-traits,",
+   "new": "\\emph{Soient} $X\\xleftarrow{s_1}W\\xrightarrow{s_2}Y$ \\emph{des morphismes finis de} $S$-\\emph{traits},"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.4, 's = (s_1,s_2) : W → X ×_S Y , u, v, w des uniformisantes de X, Y, W'",
+  "scan": "'X ×_S Y , u, v, w des uniformisantes': no 'et'",
+  "tex": "$s=(s_1,s_2):W\\to X\\times_SY$, et $u,v,w$",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "X\\times_SY$, et $u,v,w$",
+   "new": "X\\times_SY$, $u,v,w$"
+  },
+  "note": "Word added by the TeX."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.4, 'des uniformisantes de X, Y, W respectivement, de sorte que'",
+  "scan": "underlined: 'des uniformisantes de', 'respecti-vement', 'de sorte que' (not the comma)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "des uniformisantes de $X,Y,W$ respectivement, de sorte que",
+   "new": "\\emph{des uniformisantes de} $X,Y,W$ \\emph{respectivement}, \\emph{de sorte que}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.4, display 's_1^*u = aw^m mod w^{m+1} , s_2^*v = bw^n mod w^{n+1} ,'",
+  "scan": "plain 'mod' in both congruences, no parentheses",
+  "tex": "\\pmod {w^{m+1}} and \\pmod {w^{n+1}} (render '(mod ...)')",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "aw^m\\pmod {w^{m+1}},\\qquad\ns_2^*v=bw^n\\pmod {w^{n+1}}",
+   "new": "aw^m\\mod {w^{m+1}},\\qquad\ns_2^*v=bw^n\\mod {w^{n+1}}"
+  },
+  "note": "\\pmod adds parentheses the print does not have; \\mod gives the plain 'mod'."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.4, 'avec a,b ∈ k* . Alors : (i)'",
+  "scan": "'avec' and 'Alors' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "avec $a,b\\in k^*$. Alors:",
+   "new": "\\emph{avec} $a,b\\in k^*$. \\emph{Alors}:"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.4, '(i) Si m < n'",
+  "scan": "'Si' with a capital S (underlined)",
+  "tex": "(i) si $m<n$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "(i) si $m<n$",
+   "new": "(i) \\emph{Si} $m<n$"
+  },
+  "note": "Capital S in the print; the new text also carries the print's underline of 'Si'."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.4 (i), 's(W) est tangent à X en z = (x,y)'",
+  "scan": "'est tangent à' and 'en' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est tangent à $X$ en",
+   "new": "\\emph{est tangent à} $X$ \\emph{en}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.4, end of (i), 'en z = (x,y).'",
+  "scan": "a full stop after (x,y); (ii) starts a new indented line",
+  "tex": "$z=(x,y)$; (ii)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$z=(x,y)$;",
+   "new": "$z=(x,y)$."
+  },
+  "note": "The new line before (ii) is layout and is left out of the edit."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.4, '(ii) Si m = n'",
+  "scan": "'Si' with a capital S (underlined)",
+  "tex": "(ii) si $m=n$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "(ii) si $m=n$",
+   "new": "(ii) \\emph{Si} $m=n$"
+  },
+  "note": "Capital S in the print; the new text also carries the print's underline of 'Si'."
+ },
+ {
+  "page": 153,
+  "where": "Lemme 3.4 (ii), 'est tangent au sous-schéma de X ×_S Y d'équation'",
+  "scan": "'est tangent au sous-schéma de' and 'd'équation' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est tangent au sous-schéma de $X\\times_SY$ d'équation",
+   "new": "\\emph{est tangent au sous-schéma de} $X\\times_SY$ \\emph{d'équation}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 154,
+  "where": "'Dans la situation de 3.4, nous définirons la pente de W par rapport à ((X,u), (Y,v))'",
+  "scan": "'pente' underlined (the term being defined)",
+  "tex": "la pente de $W$ (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "définirons la pente de",
+   "new": "définirons la \\emph{pente} de"
+  },
+  "note": ""
+ },
+ {
+  "page": 154,
+  "where": "Lemme 3.5, label",
+  "scan": "'Lemme 3.5 - Soient ...' (Lemme underlined, then ' -', no full stop)",
+  "tex": "\\begin{statement}{Lemme 3.5}  (renders 'Lemme 3.5.')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Lemme 3.5}",
+   "new": "\\begin{statement}{Lemme 3.5 -}"
+  },
+  "note": "Exposé III B prints its run-in labels with ' -', as Exposé III does. The III B statement environment (s5.tex line 4329) still appends a full stop, so this edit gives the print's 'Lemme 3.5 -' only together with an environment that adds none for III B (as Exposé III, line 1938); same as the labels of pp. 146-150."
+ },
+ {
+  "page": 154,
+  "where": "Lemme 3.5, 'Soient f : X' → X , g : Y' → Y des morphismes finis de S-traits de même indice de ramification d'",
+  "scan": "underlined: 'Soient', 'des morphismes finis de', 'traits' and 'de même indice de ramification' (across the line break; not S-, not d)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $f:X'\\to X$, $g:Y'\\to Y$ des morphismes finis de $S$-traits de même indice de ramification",
+   "new": "\\emph{Soient} $f:X'\\to X$, $g:Y'\\to Y$ \\emph{des morphismes finis de} $S$-\\emph{traits de même indice de ramification}"
+  },
+  "note": "The print underlines the statements of Exposé III B word group by word group (letters, formulas and punctuation not underlined); the III B TeX has no underlining at all. \\emph is the file's command for the print's underline in statements (Exposé III)."
+ },
+ {
+  "page": 154,
+  "where": "Lemme 3.5, 'de même indice de ramification d , u , v , u' , v' des uniformisantes'",
+  "scan": "no 'et' before u , v , u' , v'",
+  "tex": "$d$, et $u,v,u',v'$",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "$d$, et $u,v,u',v'$",
+   "new": "$d$, $u,v,u',v'$"
+  },
+  "note": "Word added by the TeX."
+ },
+ {
+  "page": 154,
+  "where": "Lemme 3.5, 'des uniformisantes de X , Y , X' , Y' respectivement. Il existe alors C ∈ k*'",
+  "scan": "underlined: 'des uniformisantes de', 'respectivement' (not the full stop), 'Il existe alors'",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "des uniformisantes de $X,Y,X',Y'$ respectivement. Il existe alors",
+   "new": "\\emph{des uniformisantes de} $X,Y,X',Y'$ \\emph{respectivement}. \\emph{Il existe alors}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 154,
+  "where": "Lemme 3.5, 'tel que, pour tout diagramme commutatif de morphismes finis de S-traits'",
+  "scan": "underlined: 'tel que', 'pour tout diagramme com-mutatif de morphismes finis de', 'traits' (not the comma, not S-)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "tel que, pour tout diagramme commutatif de morphismes finis de $S$-traits",
+   "new": "\\emph{tel que}, \\emph{pour tout diagramme commutatif de morphismes finis de} $S$-\\emph{traits}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 154,
+  "where": "Lemme 3.5, diagram, middle vertical arrow W' → W",
+  "scan": "h stands to the left of the arrow (as f; g stands to the right of the right arrow)",
+  "tex": "\\arrow[d,\"h\"] (label to the right)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[d,\"h\"]",
+   "new": "\\arrow[d,\"h\"']"
+  },
+  "note": ""
+ },
+ {
+  "page": 154,
+  "where": "Lemme 3.5, diagram, bottom row X ← W → Y",
+  "scan": "s_1 and s_2 stand above their arrows, as s'_1 and s'_2 in the top row",
+  "tex": "\\arrow[l,\"s_1\"] \\arrow[r,\"s_2\"'] (both labels below the arrows)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "W \\arrow[l,\"s_1\"] \\arrow[r,\"s_2\"']",
+   "new": "W \\arrow[l,\"s_1\"'] \\arrow[r,\"s_2\"]"
+  },
+  "note": ""
+ },
+ {
+  "page": 154,
+  "where": "Lemme 3.5, after the diagram, 'on ait λ = C λ'^d , où λ (resp. λ') est la pente de W (resp. W') par rapport à'",
+  "scan": "underlined: 'on ait', 'où', 'est la pente de', 'par rapport à' (across the line break)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "on ait $\\lambda=C{\\lambda'}^d$, où $\\lambda$ (resp. $\\lambda'$) est la pente de $W$ (resp. $W'$) par rapport à",
+   "new": "\\emph{on ait} $\\lambda=C{\\lambda'}^d$, \\emph{où} $\\lambda$ (resp. $\\lambda'$) \\emph{est la pente de} $W$ (resp. $W'$) \\emph{par rapport à}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 154,
+  "where": "proof of 3.5, display 'f*u = α u'^d mod u'^{d+1} , g*v = β v'^d mod v'^{d+1} ,'",
+  "scan": "plain 'mod', no parentheses",
+  "tex": "\\pmod {u'{}^{d+1}}, \\pmod {v'{}^{d+1}}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\alpha u'{}^d\\pmod {u'{}^{d+1}},\\qquad\ng^*v=\\beta v'{}^d\\pmod {v'{}^{d+1}}",
+   "new": "\\alpha u'{}^d\\mod {u'{}^{d+1}},\\qquad\ng^*v=\\beta v'{}^d\\mod {v'{}^{d+1}}"
+  },
+  "note": "\\pmod adds parentheses the print does not have; \\mod gives the plain 'mod'."
+ },
+ {
+  "page": 154,
+  "where": "proof of 3.5, display 's_1^*u = aw^m mod w^{m+1} , s_2^*v = bw^n mod w^{n+1} ,'",
+  "scan": "plain 'mod', no parentheses",
+  "tex": "\\pmod {w^{m+1}}, \\pmod {w^{n+1}}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "aw^m\\pmod {w^{m+1}},\\qquad\ns_2^*v=bw^n\\pmod {w^{n+1}}",
+   "new": "aw^m\\mod {w^{m+1}},\\qquad\ns_2^*v=bw^n\\mod {w^{n+1}}"
+  },
+  "note": "\\pmod adds parentheses the print does not have; \\mod gives the plain 'mod'."
+ },
+ {
+  "page": 154,
+  "where": "proof of 3.5, display 's'_1^*u' = a'w'^{m'} mod w'^{m'+1} , s'_2^*v' = b'w'^{n'} mod w'^{n'+1} ,'",
+  "scan": "plain 'mod', no parentheses",
+  "tex": "\\pmod {w'{}^{m'+1}}, \\pmod {w'{}^{n'+1}}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "a'w'{}^{m'}\\pmod {w'{}^{m'+1}},\\qquad\ns'_2{}^*v'=b'w'{}^{n'}\\pmod {w'{}^{n'+1}}",
+   "new": "a'w'{}^{m'}\\mod {w'{}^{m'+1}},\\qquad\ns'_2{}^*v'=b'w'{}^{n'}\\mod {w'{}^{n'+1}}"
+  },
+  "note": "\\pmod adds parentheses the print does not have; \\mod gives the plain 'mod'."
+ },
+ {
+  "page": 154,
+  "where": "proof of 3.5, display 'h^*w = γ w'^r mod w'^{r+1} ,'",
+  "scan": "plain 'mod', no parentheses",
+  "tex": "\\pmod {w'{}^{r+1}}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\gamma w'{}^r\\pmod {w'{}^{r+1}}",
+   "new": "\\gamma w'{}^r\\mod {w'{}^{r+1}}"
+  },
+  "note": "\\pmod adds parentheses the print does not have; \\mod gives the plain 'mod'."
+ },
+ {
+  "page": 155,
+  "where": "top of the page",
+  "scan": "p. 155 begins 'm'd = rm , n'd = rn , d'où m'/n' = m/n . Supposons d'abord m = n .'; p. 154 ends '... La commutativité des carrés du diagramme entraîne'",
+  "tex": "the display '\\[ m'd=rm,\\qquad n'd=rn, \\]' and 'd'où $m'/n'=m/n$.' are the last four lines of page_154.tex (s5.tex lines 4904-4907); the folio-155 marker (line 4908) follows them",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 155 really begins at the '\\[' that opens 'm'd=rm,\\qquad n'd=rn,' (s5.tex line 4904 in both layers, as of 20:16). Exact fix: python -I move_marker.py 5 155 '\\[' --before (simulated in memory on both layers: the marker then stands between '... du diagramme entraîne' and '\\[', and no other text moves). No edit of this batch has its 'old' in the four lines that move."
+ },
+ {
+  "page": 155,
+  "where": "display '(fs'_1)^*u = αa'^d w'^N mod w'^{N+1} , (s_1h)^*u = a γ^m w'^N mod w'^{N+1} ,'",
+  "scan": "plain 'mod', no parentheses",
+  "tex": "\\pmod {w'{}^{N+1}} twice",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "w'{}^N\\pmod {w'{}^{N+1}},\\qquad\n(s_1h)^*u=a\\gamma^m w'{}^N\\pmod {w'{}^{N+1}}",
+   "new": "w'{}^N\\mod {w'{}^{N+1}},\\qquad\n(s_1h)^*u=a\\gamma^m w'{}^N\\mod {w'{}^{N+1}}"
+  },
+  "note": "\\pmod adds parentheses the print does not have; \\mod gives the plain 'mod'."
+ },
+ {
+  "page": 155,
+  "where": "'Soient (x_i)_{1 ≤ i ≤ m} (resp. (y_j)_{1 ≤ i ≤ m}) les points de Ã (resp. B̃)'",
+  "scan": "(y_j)_{1 ≤ i ≤ m}: the index range of (x_i) repeated",
+  "tex": "$(y_j)_{1\\le i\\le m}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$(y_j)_{1\\le j\\le n}$",
+  "note": "The points y_j of B̃ above y are indexed by 1 ≤ j ≤ n (B̃ = ∐_{1≤j≤n} B_j below). The TeX keeps the printed reading."
+ },
+ {
+  "page": 155,
+  "where": "'Choisissons des uniformisantes u , v , u' , v\" , de X , Y , X' , Y' respectivement'",
+  "scan": "v\" (double prime, as in U\" of p. 152) and a comma before 'de'",
+  "tex": "$u,v,u',v''$ de $X,Y,X',Y'$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$u,v,u',v''$ de",
+   "new": "$u,v,u',v''$, de"
+  },
+  "corrected": "$u,v,u',v'$ de",
+  "note": "The uniformizer of Y' is v' (used below in ((X',u'),(Y',v'))); the typed double prime and the stray comma are one typing slip. The TeX keeps v'' but drops the comma; the edit restores only the comma."
+ },
+ {
+  "page": 155,
+  "where": "same sentence, 'respectivement, notons λ_i (resp. μ_j)'",
+  "scan": "a comma after 'respectivement'",
+  "tex": "respectivement; notons",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "respectivement; notons",
+   "new": "respectivement, notons"
+  },
+  "note": ""
+ },
+ {
+  "page": 155,
+  "where": "(2), third condition 'λ'_j ≠ μ'_j pour tous i , j'",
+  "scan": "λ'_j ≠ μ'_j (j under the λ', a clear descender, as under μ'_j)",
+  "tex": "\\lambda'_i\\ne\\mu'_j",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lambda'_i\\ne\\mu'_j",
+   "new": "\\lambda'_j\\ne\\mu'_j"
+  },
+  "corrected": "\\lambda'_i\\ne\\mu'_j",
+  "note": "(2) is (1) for the primed data ('pour tous i , j', and (1) prints λ_i ≠ μ_j); the TeX silently corrects the index. The edit changes only that index."
+ }
+]

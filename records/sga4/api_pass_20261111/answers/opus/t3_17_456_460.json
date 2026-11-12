@@ -1,0 +1,50 @@
+[
+ {
+  "page": "456",
+  "where": "6.3.25.1, sentence after the diagram",
+  "scan": "Pour K torseur sous G sur X, on a",
+  "tex": "Pour $X$ torseur sous $G$ sur $X$, on a",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour $X$ torseur",
+   "new": "Pour $K$ torseur"
+  },
+  "note": "The print names the torseur K, not X."
+ },
+ {
+  "page": "457",
+  "where": "6.3.25.4, displayed isomorphism",
+  "scan": "d*K_n ≃ pr_1^* K_{n_1} + pr_2^* K_{n_2}",
+  "tex": "\\alpha^{\\ast}K_{n}\\simeq \\pr^{\\ast}_{1}K_{n_{1}}+\\pr^{\\ast}_{2}K_{n_{2}}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\alpha^{\\ast}K_{n}",
+  "note": "The print types d* for α*, the arrow α defined just above. The TeX silently corrects it to \\alpha^{\\ast}."
+ },
+ {
+  "page": "458",
+  "where": "first line",
+  "scan": "Si f est fini localement libre, on définit Tr_f(K)",
+  "tex": "Si\\pageoriginale $f$ est localement libre",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "Si\\pageoriginale $f$ est localement libre",
+   "new": "Si\\pageoriginale $f$ est fini localement libre"
+  },
+  "note": "The word « fini » is dropped."
+ },
+ {
+  "page": "459",
+  "where": "Proposition 6.3.29",
+  "scan": "et c : A → B* le morphisme structural ... ε* soit fidèle",
+  "tex": "et $c:A\\rightarrow B^{\\ast}$ le morphisme structural ... $\\epsilon^{\\ast}$ soit fidèle",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "$\\epsilon:A\\rightarrow B^{\\ast}$",
+  "note": "The print calls the structural morphism c and then writes its pull-back ε*. The letters are inconsistent, probably a misprint for ε. The TeX keeps the printed reading."
+ }
+]

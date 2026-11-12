@@ -1,0 +1,2171 @@
+\ifx\danslelivre\undefined
+\RequirePackage{luatex85}
+\documentclass[10pt]{../fichiers-configuration-latex/smfart}
+\input{../fichiers-configuration-latex/paquets}
+\input{../fichiers-configuration-latex/numerotation}
+\input{../fichiers-configuration-latex/macros}
+
+
+\externaldocument{../01/01.tex}
+\externaldocument{../02/02.tex}
+\externaldocument{../03/03.tex}
+\externaldocument{../04/04.tex}
+\externaldocument{../05/05.tex}
+\externaldocument{../05bis/05bis.tex}
+\externaldocument{../06/06.tex}
+\externaldocument{../07/07.tex}
+\externaldocument{../08/08.tex}
+\externaldocument{../09/09.tex}
+\externaldocument{../10/10.tex}
+\externaldocument{../11/11.tex}
+%\externaldocument{../12/12.tex}
+\externaldocument{../13/13.tex}
+\externaldocument{../14/14.tex}
+\externaldocument{../15/15.tex}
+\externaldocument{../16/16.tex}
+\externaldocument{../17/17.tex}
+\externaldocument{../18/18.tex}
+\externaldocument{../19/19.tex}
+
+\setboolean{original}{false}
+
+\begin{document}
+
+\begin{center}
+XII. Théorème de changement de base pour un morphisme propre\\
+M. Artin 
+\end{center}
+
+\selectlanguage{english}version : \showgitstatus\selectlanguage{french}
+\tableofcontents
+
+\else
+\chapter{Théorème de changement de base pour un morphisme propre}
+%\addtocontents{toc}{. }
+\begin{center}
+M. Artin 
+\end{center}
+\fi
+
+\setcounter{pageoriginal}{78}
+
+\section{Introduction}\etiquette[1]{XII.sec1}\pageoriginale
+
+Nous donnons dans cet exposé le théorème fondamental qui dit, sous une
+forme un peu plus précise, que pour un morphisme \emph{propre}
+$f:X\rightarrow Y$ de schémas, et pour un faisceau abélien $F$ de
+torsion sur $X$, la fibre de $R^qf_{\ast}F$ en un point géométrique de
+$Y$ est isomorphe à la cohomologie $H^q(X_{\xi}, F| X_{\xi})$ de la
+fibre $X_{\xi}$.
+
+Rappelons que pour un morphisme propre d'espaces paracompacts le
+résultat analogue est bien connu (GODEMENT II 4.11) et facile. Il est
+beaucoup plus délicat dans le cas des schémas. Par exemple,
+l'hypothèse que $F$ soit de torsion est bien nécessaire, contrairement
+à ce qui se passe pour les espaces paracompacts.
+
+La démonstration se fait en plusieurs étapes: on se réduit par des
+méthodes de dévissage plus ou moins formelles au cas où $Y$ est
+noethérien, où la dimension relative de $f$ est $\leq 1$, et où le
+faisceau $F$ est constant. Pour traiter ce cas particulier, on se sert
+du théorème de spécialisation pour le groupe fondamental
+(\hyperref[XII.thm5.9]{5.9}) qui est 
+une variante non-abélienne du théorème énoncé plus haut, et qu'on peut
+démontrer directement dans le cas particulier envisagé (\hyperrefext[XIII][XIII.sec2]{2}).
+
+\section{Un exemple}\etiquette[2]{XII.sec2}\pageoriginale
+
+Montrons que l'hypothèse que $F$ soit de torsion est nécessaire: Soit
+$X$ une surface non singulière sur un corps $k$ algébriquement clos,
+$Y$ une courbe non singulière sur $k$, et $f:X\rightarrow Y$ un
+morphisme propre dont la fibre générique est lisse et la fibre
+géométrique en le point géométrique $\bar{y}$ de $Y$ a un point double
+ordinaire, et est irréductible. Soit $F$ le faisceau constant
+$\ZZ_X$.
+
+Rappelons le fait suivant: pour un point quelconque $z$ d'un schéma
+$Z$, soit $i:z\rightarrow Z$ l'inclusion. On a
+$H^1(Z,i_{\ast}\ZZ_z)=0$ (\hyperrefext[IX][IX.prop3.6]{3.6} (i)). Or puisque $X$ est
+normal donc unibranche, il s'ensuit que $\ZZ_X\simeq
+i_{\ast}\ZZ_x$, où $i:x\rightarrow X$ est l'inclusion du point
+générique. Donc $H^1(X,\ZZ_X)=0$ et de même
+$R^1f_{\ast}\ZZ_X=0$. Mais je dis que pour la fibre géométrique
+$X_{\circ}$ de $X/Y$ avec le point double ordinaire on a
+$H^1(X_{\circ},\ZZ_{X_{\circ}})\simeq \ZZ$\footnote[1]{Comparer, du point de vue $\Pi_1$, avec \SGA 3 X (6, Exemples) et (1.6).}, ce qui donne le contre-exemple, puisque
+$\ZZ_{X_{\circ}}\simeq \ZZ_X| X_{\circ}$.
+
+Soit $i_{\circ}:x_{\circ}\rightarrow X_{\circ}$ l'inclusion du point
+générique de $X_{\circ}$, et soit $Q$ le point singulier de
+$X_{\circ}$. La courbe $X_{\circ}$ a deux « branches »  en $Q$ et
+il s'ensuit que la fibre de $i_{\circ^{\ast}}(\ZZ_{x_{\circ}})$
+au point $Q$ est isomorphe à $\ZZ\times \ZZ$. En dehors
+de $Q$ la courbe $X_{\circ}$ est normale et donc
+$i_{\circ^{\ast}}(\ZZ_{x_{\circ}})\simeq
+\ZZ_{X_{\circ}}$ dans $X_{\circ}-Q$. On a donc une suite exacte
+$$
+0\longrightarrow \ZZ_{X_{\circ}}\longrightarrow
+i_{\circ^{\ast}}(\ZZ_{x_{\circ}})\longrightarrow
+(\ZZ)_Q\longrightarrow 0{\quoi},
+$$
+où le dernier membre est l'extension par $0$ du faisceau $\ZZ$ au
+point $Q$. Tous les trois membres ont un $H^{\circ}$ isomorphe à
+$\ZZ$, et $H^1(X_{\circ},
+i_{\circ^{\ast}}(\ZZ_{x_{\circ}}))=0$, d'où
+$H^1(X_{\circ},\ZZ_{X_{\circ}})=\ZZ$\pageoriginale 
+par la suite exacte de cohomologie.
+
+\section{Rappels sur le $H^1$ non-abélien}\etiquette[3]{XII.sec3}
+
+On va indiquer brièvement quelques résultats sur la cohomologie
+non-abélienne dont nous aurons besoin dans la suite. Nous omettrons la
+plupart des démonstrations, bien connues dans divers cas particuliers,
+et qu'on trouvera dans la thèse de \textsc{Giraud} [1].
+
+Soient $X$ un schéma, et $F$ un faisceau en groupes sur $X$. Pour
+chaque $X'/X$ étale, on définit un ensemble pointé $H^1(X',F)$,
+fonctoriel covariant en $F$ et contravariant en $X'$. Le $H^1$ commute
+aux produits finis de faisceaux. Si $f:X\rightarrow Y$ est un
+morphisme, on définit un faisceau d'ensembles pointés (c'est-à-dire,
+avec section distinguée) $R^1f_{\ast}F$. C'est le faisceau associé au
+préfaisceau (d'ensembles pointés) $\Rr^1F$, qui, à chaque
+$Y'/Y$ étale, associe l'ensemble $H^1(\fprod{X}{Y'}{Y},F)$.
+
+On a les suites exactes de cohomologie habituelles, dont nous nous
+contenterons d'indiquer une:
+
+\begin{enonce*}{Proposition 3.1}\etiquette[3.1]{XII.prop3.1}
+Soit $0\rightarrow F\xrightarrow{u} G$ une injection de faisceaux de
+groupes, et soit $C=G/F$ le faisceau d'ensembles homogènes sous
+$G$. On a une suite exacte de faisceaux d'ensembles pointés
+$$
+0\rightarrow f_{\ast}F\rightarrow f_{\ast}G\rightarrow
+f_{\ast}C\xrightarrow{\partial} R^1f_{\ast}F\xrightarrow{u^1}
+R^1f_{\ast}G{\quoi}.
+$$
+\end{enonce*}
+
+Bien entendu, cette suite exacte est obtenue en passant à la suite de
+faisceaux associée à la suite exacte de préfaisceaux dont la valeur
+pour $Y'/Y$ étale est
+$$
+0\rightarrow F(X')\rightarrow G(X')\rightarrow C(X')
+\xrightarrow{\partial} H^1(X',F)\rightarrow H^1(X',G){\quoi},
+$$
+où\pageoriginale $X'=\fprod{X}{Y'}{Y}$. La relation d'équivalence
+induite par $\partial$ est celle donnée par l'opération de $f_{\ast}G$
+sur $F_{\ast}C$. On peut comme d'habitude expliciter la relation
+d'équivalence induite par $u^1$ grâce à la notion de « torsion » 
+[1].
+
+\begin{enonce*}{Proposition 3.2}\etiquette[3.2]{XII.prop3.2}
+Soient $X\xrightarrow{f}Y\xrightarrow{g}Z$ des morphismes de
+schémas. On a une suite exacte pour chaque $Z'/Z$ étale, posant
+$Y'=\fprod{Y}{Z'}{Z}$, $X'=\fprod{X}{Z'}{Z}$:
+$$
+0\longrightarrow H^1(Y',f_{\ast}F)\longrightarrow
+H^1(X',F)\longrightarrow H^{\circ}(Y',R^1f_{\ast}F){\quoi},
+$$
+d'où en passant aux faisceaux associés, une suite exacte de faisceaux
+pointés sur $Z$:
+$$
+0\longrightarrow (R^1g_{\ast})f_{\ast}F\longrightarrow
+R^1(gf)_{\ast}F\longrightarrow g_{\ast}(R^1f_{\ast})F{\quoi}.
+$$
+\end{enonce*}
+
+\begin{enonce*}{Proposition 3.3}\etiquette[3.3]{XII.prop3.3}
+La famille des foncteurs de la forme $H^1(X',F)$, pour $X'$ étale sur
+$X$, et de la forme $R^1f_{\ast}F$, pour un morphisme quelconque
+$f:X\rightarrow Y$, est effaçable, c'est-à-dire il existe une
+injection $F\xrightarrow{u}G$ tel que les morphismes induits
+$H^1(X',F)\rightarrow H^1(X',G)$ et $R^1f_{\ast}F\rightarrow
+R^1f_{\ast}G$ soient tous nuls. Plus précisément, il existe une
+injection $F\xrightarrow{u}G$ tel que chacun des ensembles
+$H^1(X',G)$, avec $X'$ étale sur $X$, et chacun des faisceaux pointés
+$R^1f_{\ast}G$, soient nuls. Si $X$ est noethérien et $F$ est un
+faisceau de ind-$\LL$-groupes constructible, alors il existe
+une telle injection, où de plus $G$ est un faisceau de
+ind-$\LL$-groupes.
+\end{enonce*}
+
+Démonstration. La première assertion est sans doute vraie dans un
+topos quelconque, mais pour la topologie étale, il est commode de
+faire l'effacement avec la « résolution de Godement » 
+\begin{equation*}
+F\longrightarrow G=\prod_{x\in X}i_{x^{\ast}}i_{x}{}^{\ast}F{\quoi},\tag{3.4}
+\end{equation*}\etiquette[3.4]{XII.eq3.4}
+où\pageoriginale $x$ parcourt l'ensemble des points de $X$ et où
+$i_{x}:\bar{x}\rightarrow X$ est un point géométrique de $X$ au-dessus
+de $x$. Notons que pour $X'/X$ étale, on a
+$$
+G(X')=\prod_{x\in
+  X}(i_{x}{}^{\ast}F)(\fprod{X'}{\bar{x}}{X})=\prod_{x\in
+  X}(\prod_{\bar{x}' /\bar{x}}F_{\bar{x}'}){\quoi},
+$$
+où les $\bar{x}'$ sont des points géométriques de $X'$. Or il est
+clair que pour chaque point de $X'$ il y a au moins un $\bar{x}'$
+au-dessus, d'où $F(X')\subset G(X')$ (VIII 3), donc $F\subset
+G$. D'autre part, un $\bar{u}/\bar{x}$ étale quelconque est somme de
+spectres de corps séparablement clos, d'où $H^1(\bar{u},\bar{G})=0$,
+quel que soit le faisceau $\bar{G}$ sur $\bar{x}$. Il résulte alors de
+\hyperref[XII.prop3.2]{3.2} que $H^1(X', i_{x^{\ast}}i_x{}^{\ast}F)=0$ pour chaque $X'/X$
+étale, d'où (puisque $H^1$ commute aux produits) $H^1(X',G)=0$, donc
+de même $R^1f_{\ast}G=0$ pour tout $f:X\rightarrow Y$, grâce à la
+description de $R^1f_{\ast}(G)$ comme faisceau associé au préfaisceau
+$Y'\mapsto H^1(\fprod{X}{Y'}{Y},G)$.
+
+Supposons maintenant que de plus $F$ est constructible et $X$
+noethérien. Alors on voit immédiatement qu'il existe un ensemble fini
+de points $\{x_1,\ldots,x_n\}$ de $X$ tel que le morphisme
+$$
+F\longrightarrow \prod_{1\leq i\leq n}i_{x^{\ast}}i_{x}{}^{\ast}F
+$$
+soit déjà injectif. Le faisceau $i_{x^{\ast}}i_{x}{}^{\ast}F$ est
+un faisceau de groupes ind-fini (IX 1.5), donc le produit fini l'est
+aussi (\hyperrefext[IX][IX.prop1.4]{1.4} et \hyperrefext[IX][IX.prop1.6]{1.6} (iii)). 
+En remplaçant $G$ par ce faisceau, on
+obtient la dernière assertion.
+
+\setcounter{subsection}{4}
+\subsection{}\etiquette[3.5]{XII.subsec3.5}
+Comme dans le cas de la cohomologie abélienne (traité dans V 2.4), on
+peut calculer le $H^1$ par le procédé de \v{C}ECH [1].
+
+\section{Le morphisme de changement de
+  base}\etiquette[4]{XII.sec4}\pageoriginale 
+
+Soit
+$$
+\xymatrix@C=2.75cm@R=1.5cm{
+X   \ar[d]_{f}& X'\ar[l]_{g'}\ar[d]^{f'}\\
+S       & S'\ar[l]
+}
+$$
+un carré cartésien de morphisme de schémas. On en déduit un morphisme
+de foncteur $\varphi=\varphi_g$
+\begin{equation*}
+g^{\ast}f_{\ast}\xrightarrow{\varphi}f'_{\ast}{g'}^{\ast}\tag{4.1}
+\end{equation*}\etiquette[4.1]{XII.eq4.1}
+de la manière suivante: donner un tel morphisme équivaut à donner un
+morphisme de foncteurs
+\begin{equation*}
+f_{\ast}\longrightarrow g_{\ast}{f'}_{\ast}{g'}^{\ast}{\quoi},\tag{4.1 adj}
+\end{equation*}\label{4.1 adj} 
+parce que $g_{\ast}$ et $g^{\ast}$ sont adjoints. Nous prenons pour ce
+morphisme le morphisme
+$$
+f_{\ast}\xrightarrow{(\id\rightarrow {g'}_{\ast}{g'}^{\ast})}
+f_{\ast}{g'}_{\ast}{g'}^{\ast}=g_{\ast}{f'}_{\ast}{g'}^{\ast}{\quoi},
+$$
+en tenant compte que
+$$
+g_{\ast}{f'}_{\ast}=(gf')_{\ast}=(fg')_{\ast}=f_{\ast}{g'}_{\ast}{\quoi}.
+$$
+
+Notons qu'il y a un autre candidat pour \eqhyperref[XII.eq4.1]{4.1}. En effet, donner un tel
+morphisme équivaut à donner
+$$
+{f'}^{\ast}g^{\ast}f_{\ast}\longrightarrow {g'}^{\ast}
+$$
+et on peut prendre
+$$
+{f'}^{\ast}g^{\ast}f_{\ast}\simeq
+{g'}^{\ast}f^{\ast}f_{\ast}\xrightarrow{(f^{\ast}f_{\ast}\rightarrow
+  \id)} {g'}^{\ast}{\quoi}.
+$$
+
+J'ignore\pageoriginale si ces deux choix coïncident toujours
+\footnote[1]{Mr. \textsc{Deligne} a résolu par l'affirmative cette perplexité,
+dans un contexte sensiblement plus général, \cf Exp. XVII.}, et en
+tout cas nous nous servirons uniquement du premier. Nous l'appelons
+\emph{morphisme de changement de base.}
+
+En restreignant \eqhyperref[XII.eq4.1]{4.1} aux faisceaux abéliens (\resp de groupes) on
+déduit un morphisme $\varphi^q=\varphi^g g$ pour chaque $q\geq 0$
+(\resp pour $q=0$, 1):
+\begin{equation*}
+g^{\ast}(R^qf_{\ast})\xrightarrow{\varphi^q}(R^q{f'}_{\ast}){g'}^{\ast}{\quoi}.
+\tag{4.2}
+\end{equation*}\etiquette[4.2]{XII.eq4.2}
+En effet, cela revient au même que de donner
+\begin{equation*}
+(R^qf_{\ast})\longrightarrow
+  g_{\ast}(R^q{f'}_{\ast}){g'}^{\ast}{\quoi},\tag{4.2 adj}
+\end{equation*}\label{4.2 adj}
+et on a des morphismes « évidents » 
+\begin{gather*}
+(R^qf_{\ast})\xrightarrow{a}
+  (R^qf_{\ast}){g'}_{\ast}{g'}^{\ast}\xrightarrow{b}
+  R^q{'}fg')_{\ast}{g'}^{\ast}=\\
+=(R^q(gf')_{\ast}{g'}^{\ast}\xrightarrow{c}
+  g^{\ast}(R^q{f'}_{\ast}){g'}^{\ast}{\quoi}.
+\end{gather*}
+
+\begin{enonce*}[remark]{Remarque 4.3}\etiquette[4.3]{XII.rem4.3}
+Supposons que $g$ (donc $g'$) soit une immersion fermée. Alors les
+morphismes $b$ et $c$ ci-dessus sont des isomorphismes (VIII 5.7). Il
+suit que \eqhyperref[XII.eq4.2]{4.2} n'est autre essentiellement que le morphisme a
+ci-dessus, qui est défini en appliquant $R^qf_{\ast}$ au morphisme
+canonique $F\rightarrow {g'}_{\ast}{g'}^{\ast}F$.
+\end{enonce*}
+
+\begin{enonce*}{Proposition 4.4}\etiquette[4.4]{XII.prop4.4}
+(Composition des morphismes de changement de base).
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Soit
+$$
+\xymatrix@C=2.5cm@R=1.5cm{
+X   \ar[d]_{f}& X' \ar[l]_{g'} \ar[d]_{f'} & X'' \ar[l]_{h'}\ar[d]_{f''}\\
+S   & S' \ar[l]_{g} &  S''\ar[l]_{h}
+}
+$$
+un\pageoriginale diagramme cartésien de morphismes de schémas. Alors
+le diagramme suivant est commutatif:
+$$
+\xymatrix@C=2cm@R=1.5cm{
+(gh)^{\ast}f_{\ast}  \ar[rr]^{gh} \ar[d]^{\text{\rotatebox{90}{$\backsim$}}}& &f''_{\ast}(g'h')^{\ast}\ar[d]^{\text{\rotatebox{90}{$\backsim$}}}\\
+h^{\ast}g^{\ast}f_{\ast} \ar[r]^{h^{\ast}{}_{\ast}g} &
+h^{\ast}f'_{\ast}g'^{\ast} \ar[r]^{h ^{}\ast g'^{\ast}} &
+f''_{\ast}h'^{\ast}g'^{\ast}}
+$$
+et le diagramme avec $f_{\ast}$, $f'_{\ast}$, $f''_{\ast}$ remplacé par
+$R^qf_{\ast}$, $R^q{f'}_{\ast}$, $R^q{f''}_{\ast}$ l'est aussi, dans
+les domaines de définition naturels des foncteurs en question {\rm
+  (\cf ${\rm n^{\circ}}$ 3).}
+
+\item Soit
+$$
+\xymatrix@C=3.25cm@R=1.25cm{
+Y \ar[d]_{e}& Y'\ar[l]_{g''} \ar[d]^{e'}\\
+X \ar[d]_{f}& X'\ar[l]_{g'}\ar[d]^{f'}\\
+S & S'\ar[l]_{g}
+}$$
+un diagramme cartésien de morphismes de schémas. Alors le diagramme
+suivant est commutatif:
+$$
+\xymatrix@C=2.75cm@R=1.5cm{
+g^{\ast}(fe)_{\ast} \ar[rr]\ar@{=}[d]& & (f'e')_{\ast}g''^{\ast}\ar@{=}[d]\\
+g^{\ast}f_{\ast}e_{\ast}   \ar[r] &f'_{\ast}g'{}^{\ast}e_{\ast} \ar[r] 
+&f'_{\ast}e'_{\ast}g''^{\ast},
+}
+$$
+où les trois flèches horizontales proviennent des homomorphismes de
+changement de base pour $fe$, $f$ et $e$ respectivement.
+
+Dans le cas abélien, les morphismes de changement de base pour $fe$
+sont induits par un morphisme de suites spectrales
+$$
+\xymatrix{
+E^{p,q}_2 = g^{\ast}(R^p f_{\ast})(R^{q} e_{\ast})F \ar@{=>}[r] \ar[d]_{\varphi}&
+g^{\ast}R^{p+q}(fe)_{\ast}F\ar[d]_{{\varphi}}\\
+(R^{p}f'_{\ast})(R^q e'_{\ast})g''^{\ast}F \ar@{=>}[r]& R^{p+q}(f'e')_{\ast}g''^{\ast}F
+}
+$$
+qui,\pageoriginale pour les termes initiaux, est induit par les
+morphismes de changement de base pour $e$ et $f$; et pour un faisceau
+de groupes, on a un morphisme de suites exactes
+$$
+\xymatrix{
+0  \ar[r] & g^{\ast}(R^{1}f_{\ast})e_{\ast}F \ar[r]\ar[d]^{\varphi} &
+g^{\ast}R^{1}(fe)_{\ast}F \ar[r] \ar[d]^{\varphi}&
+g^{\ast}f_{\ast}(R^{1}e_{\ast})F \ar[d]^{\varphi}\\
+0 \ar[r]& ((R^{1}f'_{\ast})e'_{\ast}g''^{\ast}F) \ar[r] &
+R^1(f' e')_{\ast}g''^{\ast}F  \ar[r] & f'_{\ast}(R^{1}e'_{\ast})g''^{\ast}F
+}
+$$
+\end{enumerate}
+\end{enonce*}
+
+Nous laissons la démonstration au lecteur.
+
+\section{Énoncé du théorème principal et de quelques variantes}\etiquette[5]{XII.sec5}
+
+Le théorème est le suivant:
+
+\begin{enonce*}{Théorème 5.1}\etiquette[5.1]{XII.thm5.1}
+(Théorème de changement de base pour un morphisme propre). Soit
+$$
+\xymatrix@C=3.25cm@R=1.5cm{
+X \ar[d]_{f} &   X' \ar[l]_{g'} \ar[d]^{f'}\\
+S                      & S' \ar[l]_{g}
+}
+$$
+un diagramme cartésien de schémas, avec $f$ propre.
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Soit $F$ un faisceau d'ensembles sur $X$. Alors le morphisme
+  \eqhyperref[XII.eq4.1]{4.1}
+$$
+\varphi:g^{\ast}f_{\ast}F\longrightarrow {f'}_{\ast}{g'}^{\ast}F
+$$
+est bijectif.
+
+\item Soit\pageoriginale $f$ un faisceau de groupes 
+(\resp de groupes ind-finis) sur
+  $X$. Alors le morphisme \eqhyperref[XII.eq4.2]{4.2}
+$$
+\varphi^1:g^{\ast}(R^1f_{\ast})F\rightarrow
+(R^1{f'}_{\ast}){g'}^{\ast}F
+$$
+est injectif (\resp bijectif).
+
+\item Soit $F$ un faisceau abélien de torsion sur $X$. Alors le
+  morphisme \eqhyperref[XII.eq4.2]{4.2}
+$$
+\varphi^q:g^{\ast}(R^qf_{\ast})F\longrightarrow
+(R^q{f'}_{\ast}){g'}^{\ast}F
+$$
+est bijectif pour chaque $q\geq 0$.
+\end{enumerate}
+\end{enonce*}
+
+On va d'abord énoncer des conséquences immédiates du théorème. Si
+$S'=\xi$ est un point géométrique de $S$, de sorte qu'un faisceau sur
+$\xi$ est déterminé par ses sections globales, on a
+$H^{\circ}(\xi,R^q{f'}_{\ast}G)=H^q(X',G)$ pour chaque faisceau $G$
+sur $X$, d'où le corollaire suivant (qui est d'ailleurs
+essentiellement équivalent à (\hyperref[XII.thm5.1]{5.1})):
+
+\begin{enonce*}{Corollaire 5.2}\etiquette[5.2]{XII.cor5.2}
+Soient $f:X\rightarrow S$ propre, $\xi\rightarrow S$ un point
+géométrique, et $X_{\xi}$ la fibre de $f$ au point $\xi$.
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Si $F$ est un faisceau d'ensembles sur $X$, le morphisme
+  canonique de changement de base
+$$
+(f_{\ast}F)_{\xi}\longrightarrow H^{\circ}(X_{\xi},F| X_{\xi})
+$$
+est bijectif.
+
+\item Si $F$ est un faisceau de groupes (\resp de groupes ind-finis)
+  le morphisme de changement de base
+$$
+R^1f_{\ast}(F)_{\xi}\longrightarrow H^1(X_{\xi},F| X_{\xi})
+$$
+est injectif (\resp bijectif).
+
+\item Si\pageoriginale $F$ est un faisceau abélien de torsion, alors
+  pour chaque $q\geq 0$ le morphisme de changement de base
+$$
+(R^qf_{\ast})F_{\xi}\longrightarrow H^q(X_{\xi},F| X_{\xi})
+$$
+est bijectif.
+\end{enumerate}
+\end{enonce*}
+
+Tenant compte de (\hyperrefext[X][X.cor4.3]{4.3}) et (\hyperrefext[X][X.cor5.2]{5.2}), on trouve:
+
+\begin{enonce*}{Corollaire 5.3}\etiquette[5.3]{XII.cor5.3}
+Sous les conditions de (\hyperrefext[X][X.cor5.2]{5.2}), soit $n$ la dimension de la fibre
+$X_{\xi}$. Alors pour chaque faisceau abélien de torsion $F$ sur $X$,
+la fibre $(R^qf_{\ast}F)_{\xi}$ est nulle pour $q>2n$. Si $F$ est un
+faisceau de $p$-torsion ($p$ la caractéristique de $\xi$), alors la
+fibre de $R^qf_{\ast}(F)$ en $\xi$ est nulle pour $q>n$.
+\end{enonce*}
+
+Rappelons qu'on dit que la \emph{dimension relative de $X/S$ est}
+$\leq n$ si la dimension de chaque fibre est $\leq n$. On a donc
+
+\begin{enonce*}{Corollaire 5.3 bis}\etiquette[5.3 bis]{XII.corbis5.3}
+Soit $f:X\rightarrow S$ propre et $X/S$ de dimension relative $\leq
+n$. Alors $R^qf_{\ast}F=0$ si $q>2n$ pour chaque faisceau abélien $F$
+de torsion sur $X$. Si $S$ est de caractéristique $p$, et si $F$ est
+un faisceau abélien de $p$-torsion, alors $R^qf_{\ast}F=0$ si $q>n$.
+\end{enonce*}
+
+En appliquant (\hyperref[XII.thm5.1]{5.1}) a un morphisme de spectres de corps séparablement
+clos, on obtient
+
+\begin{enonce*}{Corollaire 5.4}\etiquette[5.4]{XII.cor5.4}
+(Invariance de la cohomologie par changement de corps de base dans le
+  cas propre). Soient $k\subset K$ des corps séparablement clos et $X$
+  un schéma propre sur $\Spec k$. Soit $X'=X_K$. Soit $F$ un faisceau
+  sur $X$ et $F'$ le faisceau image inverse sur $X'$. Alors
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item $H^{\circ}(X,F)\xrightarrow{\sim} H^{\circ}(X',F')$.
+
+\item Si\pageoriginale $F$ est un faisceau de groupes (\resp de
+  groupes ind-finis)
+$$
+H^1(X,F)\xrightarrow{\sim} H^1(X',F')
+$$
+est injectif (\resp bijectif).
+
+\item Si $F$ est un faisceau abélien de torsion,
+$$
+H^q(X,F)\xrightarrow{\sim} H^q(X',F')
+$$
+pour tout $q$.
+\end{enumerate}
+\end{enonce*}
+
+Une variante légèrement différente de (\hyperref[XII.cor5.2]{5.2}) est la suivante:
+
+\begin{enonce*}{Corollaire 5.5}\etiquette[5.5]{XII.cor5.5}
+Soit $S$ le spectre d'un anneau hensélien et soit $S'=s_{\circ}$ le
+point fermé. Soit $f:X\rightarrow S$ propre. Posons $X_{\circ}=X'$,
+$F_{\circ}={g'}^{\ast}F$. Alors on a:
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item $H^{\circ}(X,F)\xrightarrow{\sim}
+  H^{\circ}(X_{\circ},F_{\circ})$
+
+pour tout faisceau d'ensembles $F$.
+
+\item $H^1(X,F)\rightarrow H^1(X_{\circ},F_{\circ})$
+
+est injectif (\resp bijectif) pour tout faisceau de groupes (\resp de
+groupes ind-finis)~$F$.
+
+\item $H^q(X,F)\xrightarrow{\sim} H^q(X_{\circ},F_{\circ})$
+
+pour tout faisceau abélien de torsion $F$, et tout $q$.
+\end{enumerate}
+\end{enonce*}
+
+En effet, cet énoncé n'est qu'un cas particulier de (\hyperref[XII.cor5.2]{5.2}) si $S$ est
+strictement local. Supposons que (\hyperref[XII.cor5.2]{5.2}) soit connu. Soit $\bar{S}$ le
+localisé strict de $S$, $\bar{s}$ le point fermé de $\bar{S}$, et $G$
+le groupe de Galois de $\bar{S}/S$ (qui est aussi le groupe de Galois
+de $\bar{s}/s_{\circ}$). Alors $G$ opère sur les fibres des $R^q$, et
+on a (avec des notations évidentes)
+\begin{align*}
+H^{\circ}(X,F) &\simeq H^{\circ}(\bar{X},\bar{F})^G\\
+H^{\circ}(X_{\circ},F_{\circ}) &\simeq H^{\circ}(\bar{X}_{\circ}, \bar{F}_{\circ})^G
+\end{align*}
+pour\pageoriginale un faisceau d'ensembles $F$, d'où (i) puisque
+$H^{\circ}(\bar{X},\bar{F})\xrightarrow{\sim}H^{\circ}(\bar{X}_{\circ},\bar{F}_{\circ})$et que l'isomorphisme commute évidemment avec l'opération de $G$.
+
+Si $F$ est un faisceau de groupes, on définit aisément un morphisme de
+suites exactes d'ensembles pointés
+$$\vcenter{\etiquette[5.5.1]{XII.eq5.5.1}
+\xymatrix{
+0  \ar[r] & H^{1}(G,H^{0}(\bar{X},\bar{F})) \ar[r]\ar[d]& H^{1}(X,F) \ar[r]\ar[d] &
+H^{1}(\bar{X},\bar{F})^G \ar[d]\\
+0  \ar[r] & H^{1}(G,H^{0}(\bar{X}_0,\bar{F}_0)) \ar[r]& H^{1}(X_0,F_0) \ar[r] &
+H^{1}(\bar{X}_0,\bar{F}_0)^G ,
+}}\leqno{(5.5.1)}
+$$
+où les flèches verticales extrêmes sont des isomorphismes d'après
+(\hyperref[XII.cor5.2]{5.2}). Soient $\alpha$, $\beta\in H^1(X,F)$ des classes
+qui ont même 
+image dans $H^{\circ}(X_{\circ},F_{\circ})$, et soit $F^{\alpha}$ le
+faisceau obtenu en tordant $F$ à l'aide de $\alpha$ \cite{SGA4-12:1}. Soit $\beta'$
+la classe $H^1(X,F^{\alpha})$ correspondant à $\beta$. Alors, puisque
+la classe $\alpha'$ correspondant à $\alpha$ est nulle, l'image de
+$\beta'$ dans $H^1(X_{\circ},(F^{\alpha})_{\circ})$ est nulle.
+
+Examinons le diagramme déduit de \eqhyperref[XII.eq5.5.1]{5.5.1} en remplaçant $F$ par
+$F^{\alpha}$: on trouve que l'image de $\beta'$ dans
+$H^{\circ}(\bar{X},\bar{F}^{\alpha})^G$ est nulle, donc que $\beta'$
+est image d'un élément de $H^1(G,H^{\circ}(\bar{X},\bar{F}))$, et que
+cet élément doit être nul. Donc $\beta'$ est nul, \ie
+$\beta'=\alpha'$, d'où $\beta=\alpha$. Cela donne l'injectivité du
+morphisme de (ii).
+
+Supposons maintenant que $F$ soit un faisceau de groupes ind-finis, et
+démontrons la surjectivité de la flèche (ii). Or il suffit de
+démontrer que le foncteur $F\mapsto H^1(X_{\circ},F_{\circ})$ est
+effaçable. En effet, soit $0\rightarrow F\xrightarrow{u}G$ une
+injection qui efface ce foncteur. Soit $C=G/F$. On a un morphisme de
+suites exactes (\hyperref[XII.prop4.4]{4.4})
+$$
+\xymatrix{
+H^{0}(X,C)      \ar[r]\ar[d] & H^{1}(X,F) \ar[d]_{\epsilon}         \ar[r]         &
+H^{1}(X,G) \ar[d]\\
+H^{0}(X_0,C_0) \ar[r] & H^{1}(X_{0},F_{0})  \ar[r]^{u_0^1} & H^{1}(X_0,G_0)
+}
+$$
+où le morphisme $u^1_{\circ}$ est nul, ce qui implique bien la
+surjectivité de $\epsilon$.
+
+Démontrons\pageoriginale que le foncteur $F\mapsto
+H^1(X_{\circ},F_{\circ})$ est effaçable pour les faisceaux $F$ de
+groupes ind-finis. Soit $F\xrightarrow{u}C$ la « résolution de
+Godement »  \eqhyperref[XII.eq3.4]{3.4}. On a
+$$
+H^1(G,H^{\circ}(\bar{X}_{\circ},
+\bar{C}_{\circ}))\simeq H^1(G,H^{\circ}(\bar{X},\bar{C}))\subset
+H^1(X,C)=0{\quoi}.
+$$
+
+De plus, on a le carré commutatif:
+$$
+\xymatrix{
+H^{1}(\bar{X},\bar{F}) \ar@{-}[r]^{\sim} \ar[d]& H^{1}(\bar{X}_0,\bar{F}_0)\ar[d]\\
+0 = H^{1}(\bar{X},\bar{C})  \ar[r]     & H^{1}(\bar{X}_0,\bar{C}_0)
+}
+$$
+(puisque $H^1(\bar{X},\bar{G})=\varinjlim H^1(X',C)=0$, $X'/X$ étale),
+donc est nul. On a donc un morphisme de suites exactes
+$$
+\xymatrix{
+0 \ar[r] & H^{1}(G,H^{0}(\bar{X}_0, \bar{F}_0))  \ar[r] \ar[d]&
+H^{1}(X_0,F_0) \ar[r] \ar[d]^{\beta}& H^{1}(\bar{X}_0,\bar{F}_0)^G \ar[d]^{\alpha^G}\\
+&0  \ar[r] & H^{1}(X_0,G_0)  \ar[r] & H^{1}(\bar{X}_0,\bar{G}_0)^G
+}
+$$
+où $\alpha^G$ est nul, ce qui implique que $\beta$ est également nul,
+d'où l'effaçabilité.
+
+Démontrons enfin l'assertion (iii) de (\hyperref[XII.cor5.5]{5.5}): On a un morphisme de
+suites spectrales
+$$
+\xymatrix{
+**[l]E_2^{p,q} = H^{p}(G,H^{q} (\bar{X},\bar{F})  \ar@{=>}[r] \ar[d]& H^{n}(X,F) \ar[d]^{\varphi}\\
+H^{p}(G,H^q,\bar{X}_0,\bar{F}_0 ))     \ar@{=>}[r] &  H^{n}(\bar{X}_0,\bar{F}_0)&.
+}
+$$
+D'après (\hyperref[XII.cor5.2]{5.2}), les morphismes $H^q(\bar{X},\bar{F})\rightarrow
+H^q(\bar{X}_{\circ},\bar{F}_{\circ})$ sont des isomorphismes. Cela
+implique que $\varphi$ est un isomorphisme pour $E^{p,q}_2$, donc
+pour les aboutissements, d'où le résultat, \cqfd
+
+\setcounter{subsection}{5}
+\subsection{}\etiquette[5.6]{XII.subsec5.6}
+Examinons\pageoriginale (\hyperref[XII.cor5.5]{5.5}) (i) et (ii) dans le cas où $F$ est
+constant: Soit $F=S_X$ un faisceau d'ensembles constant sur le schéma
+$X$, de valeur $T$. Alors $F(X)$ n'est autre que l'ensemble des
+applications localement constantes de $X$ dans $T$. Si $X_{\circ}$ est
+un sous-schéma de $X$, et si $T$ a au moins deux éléments, on en
+conclut que $F(X)\rightarrow F(X_{\circ})$ est bijectif si et
+seulement si l'application $U\mapsto U_{\circ}=U\cap X_{\circ}$ de
+l'ensemble $\Theta(X)$ des parties à la fois ouvertes et fermées de
+$X$ dans l'ensemble analogue $\Theta(X_{\circ})$ est bijective. Si
+l'ensemble $\Pi_{\circ}(X_{\circ})$ des composantes connexes de
+$X_{\circ}$ est fini, cela revient au même que de dire que
+l'application $\Pi_{\circ}(X_{\circ})\rightarrow \Pi_{\circ}(X)$ est
+bijective. Ainsi, (\hyperref[XII.cor5.5]{5.5}) (i) peut aussi se reformuler de la façon
+suivante (compte tenu que dans ce cas $X_{\circ}$ est de type fini sur
+un corps, donc est noethérien, donc $\Pi_{\circ}(X_{\circ})$ est
+fini):
+
+\begin{enonce*}{Corollaire 5.7}\etiquette[5.7]{XII.cor5.7}
+Soient $S$ le spectre d'un anneau hensélien, $s_{\circ}$ son point
+fermé. Soit $f:X\rightarrow S$ un morphisme propre et $X_{\circ}$ la
+fibre fermée de $X/S$. Alors l'application $\Pi_{\circ}(X)\rightarrow
+\Pi_{\circ}(X_{\circ})$ induite par $X_{\circ}\rightarrow X$ est
+bijective.
+\end{enonce*}
+
+(En particulier, cela implique que l'ensemble $\Pi_{\circ}(X)$ est
+fini). Nous allons démontrer directement (\hyperref[XII.cor5.7]{5.7}) dans le cas noethérien:
+
+\begin{enonce*}{Lemme 5.8}\etiquette[5.8]{XII.lem5.8}
+L'énoncé $(5.7)$ est vrai si $S$ est noethérien \footnote[1]{\Cf \EGA
+  IV 18.5.19.}.
+\end{enonce*}
+
+Démonstration. Dans le cas noethérien, $\Pi_{\circ}(X)$ est
+certainement fini, et en remplaçant $X$ par une composante connexe
+on peut supposer que $\Pi_{\circ}(X)$ est un ensemble à un élément,
+c'est-à-dire que $X$ est connexe et non-vide. Il faut démontrer
+qu'alors $X_{\circ}$ est également connexe et non-vide. Or l'image de
+$X$ dans $S$ est fermée puisque $f$ est propre et non-vide car $X$ est
+non-vide, donc contient $S_{\circ}$, ce qui explique que $X_{\circ}$
+est non-vide. Soit
+$$
+\xymatrix@R=1cm@C=1.5cm{
+X \ar[rd]^{f'} \ar[dd]_{f}& \\
+  & S'\ar[ld]^{\pi}\\
+S & 
+}
+$$
+la\pageoriginale factorisation de Stein de $f$ (\EGA III 4.3.3) de
+sorte que $S'/S$ est fini et $S'$ est connexe. On sait que chaque
+fibre de $f'$ est connexe non-vide, et l'espace sous-jacent à
+$X_{\circ}$ est la réunion des espaces sous-jacents aux fibres fermées
+de $S'$. Tout revient donc à démontrer que $S'$ est le spectre d'un
+anneau \emph{local}. Mais puisque $S$ est hensélien, l'anneau $A'$ de
+$S'$ est produit d'anneaux locaux (VII 4.1 (i)), donc $A'$ est local
+puisque $S'$ est connexe, ce qui prouve \hyperref[XII.lem5.8]{5.8}.
+
+\setcounter{subsection}{9}
+\setcounter{subsubsection}{-1}
+\subsubsection{}\etiquette[5.9.0]{XII.subsubsec5.9.0}
+Supposons maintenant que $F=G_X$ est un faisceau constant de groupes,
+de valeur $G$, où $G$ est un groupe fini. Alors $H^1(X,G_X)$ classifie
+les revêtements principaux galoisiens de $X$, de groupe $G$ (VII
+2.1)). Le corollaire \hyperref[XII.cor5.5]{5.5} (ii) dit que le morphisme
+$X_{\circ}\rightarrow X$ induit une bijection entre les ensembles de
+classes de ces revêtements. Il s'ensuit donc, de la définition des
+$\Pi_1$, que \hyperref[XII.cor5.5]{5.5} (ii) pour les faisceaux de groupes finis constants
+(en présence de (i)) équivaut à:
+
+\begin{enonce*}{Théorème 5.9}\etiquette[5.9]{XII.thm5.9}
+(Théorème de spécialisation pour le groupe fondamental). Avec les
+  notations de $(5.5)$, supposons $X$ connexe non-vide. Alors
+  $X_{\circ}$ est connexe non-vide, et si $\bar{x}_{\circ}$ est un
+  point géométrique de $X_{\circ}$, le morphisme de groupes
+  fondamentaux
+$$
+\Pi_1(X_{\circ},\bar{x}_{\circ})\longrightarrow
+\Pi_1(X,\bar{x}_{\circ})
+$$
+est bijectif.
+\end{enonce*}
+
+D'autre\pageoriginale part, d'après la théorie de Galois (\SGA V)
+l'énoncé \hyperref[XII.thm5.9]{5.9} (dans le cas $X_{\circ}$ connexe, ce qu'on peut supposer,
+grâce à \hyperref[XII.cor5.7]{5.7}) équivaut à
+
+\begin{enonce*}{Théorème 5.9 bis}\etiquette[5.9 bis]{XII.thmbis5.9}
+Soient $S$ le spectre d'un anneau hensélien, $s_{\circ}$ le point
+fermé de $S$, $f:X\rightarrow S$ un morphisme propre, et $X_{\circ}$
+la fibre fermée de $X/S$. Pour un schéma $Z$, notons $\Et(Z)$ la
+catégorie des revêtements étales de $Z$. Alors le foncteur restriction
+$$
+\Et(X)\longrightarrow \Et(X_{\circ})
+$$
+est une équivalence de catégories.
+\end{enonce*}
+
+\begin{enonce*}[remark]{Remarque 5.10}\etiquette[5.10]{XII.rem5.10}
+Rappelons que \hyperref[XII.thm5.9]{5.9} a été déjà démontré (\SGA 1 X 2.1) dans le cas où
+$S$ est le spectre d'un anneau local noethérien
+complet. Malheureusement on n'arrive pas à utiliser ce résultat pour
+prouver \hyperref[XII.thm5.9]{5.9} en général \footnote[1]{La situation a changé depuis ces
+  lignes ont été écrites, \cf th.~\hyperref[XII.prop3.1]{3.1} dans M. Artin, Algebraic
+  approximation of structures over complete local rings (à
+  paraître).}, et la démonstration donnée de 5.9, dans le présent
+exposé et le suivant, est très différente de celle donnée dans \SGA 1 X.
+\end{enonce*}
+
+\setcounter{subsection}{10}
+\subsection{}\etiquette[5.11]{XII.subsec5.11}
+On peut donner une autre variante « non commutative »  de (\hyperref[XII.cor5.5]{5.5})
+(ii), en utilisant la théorie de la 2-cohomologie de J. \textsc{Giraud} (\cf
+Thèse de J. \textsc{Giraud}, en préparation). Supposons $S$ noethérien. Prenons
+un \emph{lien} $L$ sur $X$, et supposons que $L$ se réalise localement
+(pour la topologie étale) par un faisceau en groupes
+ind-finis. Considérons l'application
+$$
+\varphi^{(2)}:H^2(X,L)\longrightarrow H^2(X_{\circ},L_{\circ}){\quoi},
+$$
+où $L_{\circ}$ est la restriction de $L$ à $X_{\circ}$. Alors on a
+\begin{equation*}
+(\varphi^{(2)})^{-1}(H^2(X_{\circ},L_{\circ})')=H^2(X,L)'{\quoi},\tag{5.11.1}
+\end{equation*}\etiquette[5.11.1]{XII.eq5.11.1}
+où\pageoriginale les « primes »  désignent les parties formées des
+éléments neutres.
+
+Compte tenu de \hyperref[XII.cor5.5]{5.5} (iii), cet énoncé équivaut aussi au suivant:
+
+\emph{Pour toute gerbe $\mathcal{G}$ sur $X$, de lien $L$ comme ci-dessus,
+  désignant par $\mathcal{G}_{\circ}$ la restriction de $\mathcal{G}$ à
+  $X_{\circ}$, le foncteur restriction sur les catégories de sections}
+$$
+\mathcal{G}(X)\longrightarrow \mathcal{G}_{\circ}(X_{\circ})
+$$
+\emph{est une équivalence de catégories.}
+
+Le fait que ce foncteur soit pleinement fidèle résulte en effet de \hyperref[XII.cor5.5]{5.5}
+(i), et le fait qu'il soit essentiellement surjectif lorsque
+$\mathcal{G}(X)\neq ∅$ \ie lorsque la classe $\xi \in H^2(X,\sisi{\mathcal{G}}{L})$
+de $\mathcal{G}$ est neutre, résulte de \hyperref[XII.cor5.5]{5.5} (ii). 
+Il reste donc à exprimer que 
+$\mathcal{G}_{\circ}(X_{\circ})\neq ∅$ implique $\mathcal{G}(X)\neq
+∅$, ce  qui n'est autre que \eqhyperref[XII.eq5.11.1]{5.11.1}.
+
+Nous ne donnerons pas ici la démonstration de \eqhyperref[XII.eq5.11.1]{5.11.1}, et nous nous
+contenterons de signaler que pour tout schéma noethérien $X$ et tout
+sous-schéma fermé, on peut montrer en fait que la validité des énoncés
+\hyperref[XII.cor5.5]{5.5} (i) (ii) implique celle de \eqhyperref[XII.eq5.11.1]{5.11.1}; la démonstration se fait
+assez élémentairement, en utilisant le résultat de descente VIII 9.4
+a).
+
+\section{Premières réductions}\etiquette[6]{XII.sec6}
+
+Nous utilisons l'abréviation $(f,F,g)$ pour désigner les données de
+\hyperref[XII.thm5.1]{5.1} dans l'un quelconque des trois cas (i), (ii) ou (iii) de ce
+théorème.
+
+\begin{enonce*}{Lemme 6.1}\etiquette[6.1]{XII.lem6.1}
+Pour que $5.1$ soit vrai pour les données $(f,F,g)$, où $f$, $F$ sont
+fixés, et $g$ quelconque, il suffit que pour tout $S$-schéma
+$\bar{S}$, localisé strict d'un schéma localement\pageoriginale de
+type fini $S'$ sur $S$ en un point qui est fermé dans sa fibre, le
+théorème soit vrai pour $(\bar{f},\bar{F},\bar{g})$, où $\bar{f}$,
+$\bar{F}$ sont déduits de $f$, $F$ par le changement de base
+$\bar{S}\rightarrow S$, et où $\bar{g}:\bar{s}\rightarrow \bar{S}$ est
+l'inclusion du point fermé de $\bar{S}$.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration.} On peut supposer évidemment $S$, $S'$ affines,
+spectres d'anneaux $A$, $A'$. Alors $A'$ est la limite inductive de
+ses sous-$A$-algèbres de type fini $A'_i$, et utilisant la théorie de
+passage à la limite (VII 5.11 et 5.14), on est ramené à prouver \hyperref[XII.thm5.1]{5.1}
+pour les $(f,F,g_i)$ où $g_i$: $\Spec(A'_i)=S'_i\rightarrow S$, ce qui
+nous ramène au cas où $g$ est de type fini. Pour prouver que les
+homomorphisme de changement de base sont des isomorphismes, il suffit
+de prouver qu'ils induisent des isomorphismes sur les fibres des
+faisceaux en jeu, et il suffit de regarder les fibres géométriques en
+des points $s'$ de $S'$ qui sont fermés dans leur fibre sur $S$ (VIII
+3.13). Soit $\bar{s}'$ un point géométrique de $S'$ correspondant à
+une clôture séparable de $k(s')$; comme $s'$ est algébrique sur le
+point correspondant $s$ de $S$, $k(\bar{s}')$ est donc aussi une
+clôture séparable de $k(s)$. Désignons par $\bar{s}$ le préschéma
+$\bar{s}'$, considéré comme étant au-dessus de $S$, \ie considéré
+comme point géométrique de $S$, et considérons les localisés stricts
+$\bar{S}$ et $\bar{S}'$ de $S$ en $\bar{s}$ et en $\bar{s}'$
+respectivement, de sorte qu'on a un carré commutatif.
+$$
+\vcenter{
+\xymatrix@C=3cm@R=1.25cm{
+\bar{s}'  \ar[r] \ar[d]& \bar{s}\ar[d]\\
+\bar{S}'  \ar[r] &  \bar{S},
+}}
+$$
+où la première flèche horizontale est un isomorphisme. Compte tenu de
+VIII 5.2 et 5.3, l'homomorphisme induit sur les fibres en $\bar{s}'$
+par l'homomorphisme de changement de base relatif à $(f,F,g)$
+s'identifie à l'homomorphisme 
+$$
+H^{i}(\bar{X},\bar{F})\longrightarrow H^{i}(\bar{X}',\bar{F}')
+$$
+induit\pageoriginale par $\bar{X}'\rightarrow \bar{X}$, où $\bar{X}$ 
+et $\bar{X}'$
+désignent les schémas déduits de $X$ par les changements de base
+$\bar{S}\rightarrow S$ et $\bar{S}'\rightarrow S$. Or le carré
+commutatif ci-dessus fournit de façon évidente un carré commutatif
+$$
+\xymatrix@C=3cm@R=1.5cm{
+H^{i}(\bar{X}_{\bar{s}}, \bar{F}) \ar[r]& H^{i}(\bar{X}'_{\bar{s}'},\bar{F}')
+\\
+H^{i}(\bar{X},\bar{F})  \ar[r] \ar[u]& H^{i}(\bar{X}',\bar{F}')
+\ar[u],
+}
+$$
+où la première flèche horizontale est encore un isomorphisme, donc la
+deuxième flèche horizontale est un isomorphisme dès que les deux
+flèches verticales le sont. Or c'est ce qu'assure l'hypothèse de
+(\hyperref[XII.lem6.1]{6.1}), \cqfd
+
+\setcounter{subsection}{1}
+\subsubsection{}\etiquette[6.1.1]{XII.subsubsec6.1.1}
+Ainsi, pour prouver \hyperref[XII.thm5.1]{5.1} dans une situation $(F,f,-)$, on est ramené à
+étudier le cas particulier \hyperref[XII.cor5.5]{5.5}, avec $S$ strictement local. Cela nous
+amène à étudier de façon générale la situation où on a un morphisme
+$h:Y\rightarrow X$ de schémas, et où on se propose de donner les
+conditions générales moyennant lesquelles les homomorphismes
+correspondants
+$$
+H^{i}(X,F)\longrightarrow H^{i}(Y,h^{\ast}(F))
+$$
+sont bijectifs. Le présent numéro donnera quelques résultats
+auxiliaires faciles sur cette situation, que (pour la commodité de
+références ultérieures) nous énoncerons avec plus de généralité et de
+précision qu'il ne serait nécessaire pour la démonstration de \hyperref[XII.thm5.1]{5.1}.
+
+\begin{enonce*}{Lemme 6.2}\etiquette[6.2]{XII.lem6.2}
+Soient $C$, $C'$ deux catégories abéliennes, $T^{\bigdot}=(T^{i})$ et
+$T'^{\bigdot}=({T'}^{i})$ deux foncteurs cohomologiques de $C$ dans $C'$,
+$\varphi=(\varphi^{i})$ un homomorphisme de foncteurs\pageoriginale
+cohomologiques de $T^{\bigdot}$ dans $T'^{\bigdot}$. On suppose 
+$T^{\bigdot}$ et $T'^{\bigdot}$ nuls en
+degrés $<0$, et $T^{i}$ effaçable pour $i>0$. Soit $n$ un entier. Les
+conditions suivantes sont équivalentes:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\item $\varphi^{i}$ est un isomorphisme pour $i\leq n$, un
+  monomorphisme pour $i=n+1$.
+
+\item (Si $n\geq -1$). L'homomorphisme $\varphi^{i}$ est un
+  monomorphisme si $i=0$, et un épimorphisme si $i\leq n$.
+
+\item (Si $n\geq 0$). L'homomorphisme $\varphi^{\circ}$ est un
+  isomorphisme, et les ${T'}^{i}$ sont effaçables pour $0<i\leq n$.
+\end{enumerate}
+
+Si ces conditions sont remplies, et si $A\in \Ob(C)$, alors
+$\varphi^{n+1}(A):T^{n+1}(A)\rightarrow {T'}^{n+1}(A)$ est un
+épimorphisme (donc un isomorphisme) si et seulement si ${T'}^{n+1}(A)$
+est effaçable, \ie s'il existe un monomorphisme $A\rightarrow B$ tel que
+l'homomorphisme ${T'}^{n+1}(A)\rightarrow {T'}^{n+1}(B)$ correspondant
+soit nul. Si $C'=(\Ab)$ (catégorie des groupes abéliens), et si $\xi\in
+{T'}^{n+1}(A)$, alors $\xi$ est dans l'image de $T^{n+1}(A)$ si et
+seulement si $\xi$ est effaçable, \ie s'il existe un monomorphisme
+$A\rightarrow B$ tel que l'image de $\xi$ dans ${T'}^{n+1}(B)$ soit nulle.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. Évidemment a) implique b) et c). Comme les
+hypothèses faites sur $T^{\bigdot}$ impliquent que les $T^{i}$ $(i>0)$ sont les
+satellites droits de $T^{\circ}$, l'implication c) $\Rightarrow$ b)
+résulte de la caractérisation axiomatique des foncteurs satellites;
+elle résulte également, par récurrence sur $n$, de la dernière
+assertion de 6.2, qui se démontre par l'argument bien connu qu'on se
+dispense se répéter ici (\cf démonstration de 6.$''$
+ci-dessous). L'implication b) $\Rightarrow$ c) est triviale si $n=1$,
+et si $n\geq 0$ on procède par récurrence sur $n$: l'hypothèse de
+récurrence nous permet de supposer que $\varphi^{i}$ est un
+isomorphisme pour $i\leq n-1$,\pageoriginale un monomorphisme pour
+$i=n$, donc par l'hypothèse un isomorphisme aussi pour $i=n$, et il
+reste à montrer que c'est un monomorphisme pour $i=n+1$, utilisant que
+$\varphi^n$ est un isomorphisme. Soit $A\rightarrow B$ un
+monomorphisme qui efface $T^{n+1}$, d'où une suite exacte $0\rightarrow
+A\rightarrow B\rightarrow C\rightarrow 0$ dans $C$, et un
+homomorphisme de suites exactes dans $C'$:
+$$
+\xymatrix@R=1.25cm{
+T^{n}(B)  \ar[r] \ar[d]& T^{n}(C)  \ar[r]\ar[d] & T^{n+1}(A) \ar[d] \ar[r] & T^{n+1}(B)\ar[d]\\
+T'^{n}(B)  \ar[r] & T'^{n}(C) \ar[r] & T'^{n+1}(A)  \ar[r] &
+T'^{n+1}(B),
+}
+$$
+où les deux premières flèches verticales sont des isomorphismes
+d'après ce qu'on vient de voir, et $T^{n+1}(A)\rightarrow T^{n+1}(B)$
+est nul par construction. Alors le lemme des cinq implique que
+$T^{n+1}(A)\rightarrow {T'}^{n+1}(A)$ est un monomorphisme, \cqfd
+
+\begin{enonce*}{Corollaire 6.3}\etiquette[6.3]{XII.cor6.3}
+Supposons que $T^{\bigdot}$, ${T'^{\bigdot}}$ proviennent de foncteurs
+cohomologiques (dénotés par les mêmes symboles) sur la catégorie
+dérivée droite $[3]$ $D^{+}(C)$, à valeur dans $C'$; on ne suppose pas
+nécessairement les $T^{i}(i>0)$ effaçables. On suppose que
+$K^{\bigdot}\in D^{+}(C)$, $H^{i}(K^{\bigdot})=0$ pour $i<0$ implique 
+$T^{i}(K^{\bigdot})=T'^{\bigdot}(K^{\bigdot})=0$ pour $i<0$. Soit
+$K^{\bigdot}\in \Ob D^{+}(C)$ un complexe borné à gauche dans $C$ tel
+que $H^{i}(K^{\bigdot})=0$ pour $i<0$.
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Si la condition {\rm a)} de $6.2$ est satisfaite, alors
+  l'homomorphisme
+  $\varphi^{i}(K^{\bigdot})=T^{i}(K^{\bigdot})\rightarrow
+  {T'}^{i}(K^{\bigdot})$ est un isomorphisme pour $i<n$, un
+  monomorphisme pour $i=n+1$.
+
+\item Soit de plus $L^{\bigdot}\in \Ob D^{+}(C)$ tel que
+  $H^{i}(L^{\bigdot})=0$ pour $i<0$, et soit $u:L^{\bigdot}\rightarrow
+  K^{\bigdot}$ un homomorphisme dans $D^{+}(C)$, induisant un
+  homomorphisme injectif
+  $H^{\circ}(u):H^{\circ}(L^{\bigdot})\rightarrow
+  H^{\circ}(K^{\bigdot})$. Alors, pour que
+  $T^{n+1}(L^{\bigdot})\rightarrow {T'}^{n+1}(L^{\bigdot})$ soit
+  surjectif,\pageoriginale il faut et il suffit que l'image de
+  $T^{n+1}(L^{\bigdot})$ dans $T^{n+1}(K^{\bigdot})$ soit contenue dans
+  celle de $T^{n+1}(K^{\bigdot})$. Si $C'=(\Ab)$, et si $\xi \in
+  {T'}^{n+1}(A)$, alors $\xi$ est dans l'image de $T^{n+1}(A)$ si et
+  seulement si son image dans ${T'}^{n+1}(K^{\bigdot})$ est dans celle
+  de $T^{n+1}(K^{\bigdot})$.
+\end{enumerate}
+\end{enonce*}
+
+Rappelons que l'hypothèse que $T^{\bigdot}$ et $T'^{\bigdot}$
+proviennent de foncteurs cohomologiques sur $D^{+}(C)$ peut
+s'expliciter en disant qu'ils proviennent de foncteurs cohomologiques
+sur la catégorie abélienne des complexes bornés à gauche de $C$,
+commutant aux translations des degrés, transformant des homomorphismes
+de complexes homotopes à zéro en des homomorphismes nuls de $C'$, et
+transformant tout homomorphisme $u:K^{\bigdot}\rightarrow L^{\bigdot}$
+de complexes qui est un quasi-isomorphisme (\ie qui induit des
+isomorphismes $H^{i}(K^{\bigdot})\rightarrow H^{i}(L^{\bigdot})$) en un
+isomorphisme de $C'$. Pratiquement, tous les foncteurs cohomologiques
+de $C$ dans $C'$ qu'on rencontre sont obtenus ainsi.
+
+\medskip
+\noindent
+\emph{Démonstration de} \hyperref[XII.cor6.3]{6.3}. Prouvons d'abord (i). L'assertion est
+évidente si $H^{i}(K^{\bigdot})=0$ pour $i\leq n+1$, car alors d'après
+les propriétés de degrés imposées à $T^{\bigdot}$, $T'^{\bigdot}$, on
+aura $T^{i}(K^{\bigdot})={T'}^{i}(K^{\bigdot})=0$ pour $i\leq
+n+1$. Soit d'autre part $m$ un entier $\geq 0$ tel que
+$H^{i}(K^{\bigdot})=0$ pour $i<m$: il en existe, par exemple $m=0$
+fait l'affaire. Nous procédons par récurrence descendante sur $m$,
+l'assertion étant prouvée si $m=n+2$. Nous supposons donc l'assertion
+prouvée pour les $m'>m$, et la prouvons pour $m$. D'après l'hypothèse
+sur les degrés de $K^{\bigdot}$, $K^{\bigdot}$ est quasi-isomorphe à
+un complexe à degrés $\geq m$, donc on peut le supposer à degrés $\geq
+m$. Il s'ensuit une suite exacte de complexes
+$$
+0\longrightarrow H^m[-m]\longrightarrow K^{\bigdot}\longrightarrow
+K'^{\bigdot}\longrightarrow 0{\quoi},
+$$
+où $H^m=H^m(K^{\bigdot})$, où le signe $[-m]$ indique translation de
+$-m$ sur les degrés d'un complexe,\pageoriginale et où $K'^{\bigdot}$
+est défini comme conoyau. Donc les objets de cohomologie de
+$K'^{\bigdot}$ sont ceux de $K^{\bigdot}$ en degrés $\geq m+1$, et
+nuls en degrés $\leq m+1$; en particulier, on peut appliquer
+l'hypothèse de récurrence à $K'^{\bigdot}$. La suite exacte précédente
+donne lieu à un homomorphisme de suites exactes
+$$
+\xymatrix{
+T^{i-1} (K'^{\;\bigdot}) \ar[d] \ar[r] & T^{i-m}(H^m)  \ar[r]\ar[d] &
+T^{i}(K^{\bigdot}) \ar[r] \ar[d]& T^{i} (K'^{\;\bigdot})  \ar[r] \ar[d]&
+T^{i+1-m}(H^m) \ar[d]\\
+T'^{i-1}(K'^{\;\bigdot})  \ar[r] & T'^{i-m}(H^m)  \ar[r] &
+T'^{i}(K^{\bigdot})  \ar[r] & T'^{i}(K'^{\;\bigdot})  \ar[r] & T'^{i+1-m}(H^m).
+}
+$$
+Faisant alors $i\leq n$ dans le diagramme précédent, et tenant compte
+de l'hypothèse de récurrence et de $m\geq 0$, on trouve que les
+flèches verticales autour de la flèche verticale médiane sont des
+isomorphismes et a fortiori des épimorphismes , et que la flèche
+verticale de droite est un monomorphisme, donc par le lemme des cinq
+la flèche verticale médiane est un épimorphisme. Faisant $i\leq n+1$,
+on trouve de même que les flèches verticales autour de la médiane sont
+des monomorphismes, la flèche verticale de gauche étant un
+isomorphisme et a fortiori un épimorphisme, d'où on conclut par le
+lemme des cinq que la flèche verticale médiane est un monomorphisme,
+ce qui établit \hyperref[XII.cor6.3]{6.3} (i).
+
+Pour établir la deuxième assertion \hyperref[XII.cor6.3]{6.3} (ii), on utilise de même la
+suite exacte
+$$
+0\longrightarrow L^{\bigdot}\longrightarrow K^{\bigdot}\longrightarrow
+K'^{\bigdot}\longrightarrow 0{\quoi},
+$$
+où $K'^{\bigdot}$ est défini comme le mapping-cylinder de
+$L^{\bigdot}\rightarrow K^{\bigdot}$, donc est encore à cohomologie à
+degrés positifs. La « chasse au diagramme »  habituelle dans
+$$
+\xymatrix{
+T^{n}(K^{\bigdot})  \ar[r] \ar[d]& T^{n}(K'^{\;\bigdot})  \ar[r] \ar[d]& T^{n+1}
+(L^{\cdot})  \ar[r]\ar[d] & {T^{n+1}(K^{\bigdot})}  \ar[r]
+\ar[d]&{T^{n+1}(K'^{\;\bigdot})} \ar[d]\\
+T'^{n}(K^{\bigdot}) \ar[r] & T'^{n}(K'^{\;\bigdot})  \ar[r] &
+T'^{n+1}(L^{\bigdot}) \ar[r] & T'^{n+1}(K^{\bigdot}) \ar[r] & T'^{n+1}(K'^{\bigdot})
+}
+$$
+donne\pageoriginale alors la dernière assertion de \hyperref[XII.cor6.3]{6.3}, compte tenu du
+fait que (en vertu de la première partie déjà démontrée) les deux
+premières flèches verticales sont des isomorphismes, les deux
+dernières des monomorphismes. Cela achève la démonstration de \hyperref[XII.cor6.3]{6.3}.
+
+\begin{enonce*}{Lemme 6.4}\etiquette[6.4]{XII.lem6.4}
+Le théorème $(5.1)$ est vrai si $f$ est fini.
+\end{enonce*}
+
+Cela résulte aussitôt en effet de VIII 5.5 et 5.8.
+
+\begin{enonce*}{Proposition 6.5}\etiquette[6.5]{XII.prop6.5}
+Soit $h:Y\rightarrow X$ un morphisme de schémas quasi-compacts et
+quasi-séparés. Dans {\rm(i)} ci-dessous, $I$ désigne un ensemble donné
+ayant au moins deux points, dans {\rm(ii)} et {\rm(iii)}, $\LL$
+désigne une partie non-vide de l'ensemble $\PP$ des nombres
+premiers, et dans {\rm(iii)} $n$ désigne un entier.
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Les conditions suivantes sont équivalentes:
+\begin{itemize}
+\item[a)] Pour tout faisceau d'ensembles $F$ sur $X$, l'application
+canonique
+$$
+H^{\circ}(X,F)\longrightarrow H^{\circ}(Y,h^{\ast}(F))
+$$
+est injective (\resp bijective).
+
+\item[b)] Pour tout morphisme fini $X'\rightarrow X$, désignant par
+$h^{\circ}:Y'\rightarrow X'$ le morphisme déduit de $h$ par le
+changement de base $X'\rightarrow X$, l'application canonique
+$$
+H^{\circ}(X', I_{X'})\longrightarrow H^{\circ}(Y',I_{Y'})
+$$
+déduite de $h'$ est injective (\resp bijective).
+
+\item[${\rm b')}$] Avec les notations de {\rm b)}, l'application
+$U\mapsto {h'}^{-1}(U)$ de l'ensemble des parties de $Y'$ à la fois
+ouvertes et fermées dans l'ensemble des parties de $X'$ à la fois
+ouvertes et fermées est injective (\resp bijective).
+
+\item[${\rm b'')}$] (Si\pageoriginale $X$ localement noethérien). 
+Avec les notations de {\rm b)}, l'application induite sur 
+les ensembles de composantes connexes
+$$
+\Pi_{\circ}(h'):\Pi_{\circ}(X')\longrightarrow \Pi_{\circ}(Y')
+$$
+est surjective (\resp bijective), ou encore: si $X'$ est non-vide
+(\resp connexe non-vide) il en est de même de $Y'$.
+\end{itemize}
+
+De plus, si ces conditions sont satisfaites, alors pour tout faisceau
+en groupes $F$ sur $X$, le foncteur $P\mapsto h^{\ast}(P)$ de la
+catégorie des torseurs ($=$ fibrés principaux homogènes) sous $F$ dans
+la catégorie des torseurs sous $h^{\ast}(F)$ est fidèle (\resp
+pleinement fidèle), et a fortiori, dans le cas respé, l'application
+canonique
+$$
+H^1(X,F)\longrightarrow H^1(Y,h^{\ast}(F))
+$$
+est injective. Enfin, sous les mêmes hypothèses, le foncteur
+$X'\mapsto Y'=\fprod{X'}{Y}{X}$ de la catégorie des revêtements étales
+de $X$ dans la catégorie des revêtements étales de $Y$ est fidèle
+(\resp pleinement fidèle).
+
+\item Les conditions suivantes sont équivalentes:
+\begin{itemize}
+\item[a)] Pour tout faisceau $F$ de groupes ind-$\LL$-finis sur
+$X$, l'application canonique
+$$
+H^1(X,F)\longrightarrow H^1(Y,h^{\ast}(F))
+$$
+est bijective pour $i=0$, $1$.
+
+\item[b)] Pour tout morphisme fini $X'\rightarrow X$, désignant par
+$h':Y'\rightarrow X'$ le morphisme déduit de $h$ par changement de
+base, et pour tout $\LL$-groupe fini ordinaire $G$,
+l'application canonique
+$$
+H^1(X',G_{X'})\longrightarrow H^1(Y',G_{X'})
+$$
+est bijective pour $i=0$, $1$.
+
+\item[${\rm b')}$] (Si\pageoriginale $\LL=\PP$). Avec
+les notations de ${\rm b)}$, le foncteur image inverse par $h'$ induit
+une équivalence de la catégorie des revêtements étales de $X'$ avec la
+catégorie des revêtements étales de $Y'$.
+
+\item[${\rm b'')}$] (Si $X$ noethérien, $\LL=\PP$). Avec
+les notations de {\rm b)}, si $X'$ est non-vide, il en est de même de
+$Y'$, et si $y'$ est un point géométrique de $Y'$, $x'$ son image dans
+$X'$, l'application canonique
+$$
+\Pi_i(Y',y')\longrightarrow \Pi_i(X', x')\quav \mbox{ pour }
+i=0,1{\quoi},
+$$
+est bijective.
+\end{itemize}
+
+\item Les conditions suivantes sont équivalentes:
+\begin{itemize}
+\item[a)] Pour tout faisceau $F$ de $\LL$-torsion sur $X$,
+l'homomorphisme
+$$
+H^{i}(X,F)\longrightarrow H^{i}(Y,h^{\ast}(F))
+$$
+est un isomorphisme si $i\leq n$, un monomorphisme si $i=n+1$.
+
+\item[${\rm a')}$] (Si $n\geq -1$). Pour tout $F$ comme ci-dessus,
+l'homomorphisme envisagé est injectif si $i=0$, et surjectif si $i\leq
+n$.
+
+\item[b)] (Si $n\geq -1$). Pour tout morphisme fini $X'\rightarrow X$,
+désignant par $h':Y'\rightarrow X'$ le morphisme déduit de $h$ par
+changement de base $X'\rightarrow X$, et pour tout $\ell\in
+\LL$, $\nu>0$, l'homomorphisme canonique
+$$
+H^{i}(X',(\ZZ/\ell^{\nu}\ZZ_{X'})\longrightarrow
+H^{i}(Y',\ZZ/\ell^{\nu}\ZZ)_{Y'})
+$$
+est injectif pour $i=0$, surjectif pour $i\leq n$.
+\end{itemize}
+\end{enumerate}
+\end{enonce*}
+
+De plus, on a le complément suivant à l'énoncé précédent:
+
+\begin{enonce*}{Corollaire 6.6}\etiquette[6.6]{XII.cor6.6}
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Supposons la condition non respée \hyperref[XII.prop6.5]{6.5} {\rm (i) a)} satisfaite,
+soit $F$ un faisceau d'ensembles sur $X$, et soit $\xi\in
+H^{\circ}(Y,h^{\ast}(F))$. Supposons qu'il\pageoriginale 
+existe un monomorphisme de
+faisceaux d'ensembles $F\rightarrow G$ tel que l'image de $\xi$ dans
+$H^{\circ}(Y,h^{\ast}(G))$ soit dans l'image de
+$H^{\circ}(X,G)$. Alors $\xi$ est dans l'image de $H^{\circ}(X,F)$.
+
+\item Supposons la condition {\rm \hyperref[XII.prop6.5]{6.5} (i) a)} respée satisfaite, soit
+$F$ un faisceau de groupes sur $X$, et soit $\xi\in
+H^1(Y,h^{\ast}(F))$. Supposons qu'il existe un monomorphisme de
+faisceaux de groupes $F\rightarrow G$ tel que l'image de $\xi$ dans
+$H^1(Y,h^{\ast}(G))$ soit dans l'image de $H^1(X,G)$, alors $\xi$ est
+dans l'image de $H^1(X,F)$.
+
+\item Supposons la condition {\rm \hyperref[XII.prop6.5]{6.5} (iii) a)} satisfaite (pour une
+valeur donnée $n$), soit $F$ un faisceau de $\LL$-torsion sur
+$X$ et soit $\xi\in H^{n+1}(Y,h^{\ast}(F))$. Supposons qu'il existe
+un monomorphisme $F\rightarrow G$ de faisceaux de
+$\LL$-torsion, tel que l'image de $\xi$ dans $H^{n+1}
+(Y,h^{\ast}(G))$ soit dans l'image de $H^{n+1}(X,G)$, alors $\xi$
+est dans l'image de $H^{n+1}(X,F)$.
+\end{enumerate}
+\end{enonce*}
+
+\noindent
+\emph{Démonstration de \hyperref[XII.prop6.5]{6.5} et \hyperref[XII.cor6.6]{6.6}.} 
+Prouvons d'abord \hyperref[XII.cor6.6]{6.6}. Le cas
+de \hyperref[XII.cor6.6]{6.6} (iii) est un cas particulier de la dernière assertion dans \hyperref[XII.cor6.3]{6.3},
+appliqué au cas où $C$ est la catégorie des faisceaux abéliens de
+$\LL$-torsion sur $X$, $C'$ est la catégorie $(\Ab)$, et
+$T^{i}(F)=H^{i}(X,F)$, ${T'}^{i}(F)=H^{i}(Y,g^{\ast}(F))$ (noter que
+$T'^{\bigdot}$ est bien un foncteur cohomologique en $F$, grâce au
+fait que le foncteur $h^{\bigdot}$ est exact). Bien entendu, ici la
+considération des complexes comme dans \hyperref[XII.cor6.3]{6.3} est inutile (elle nous sera
+commode plus loin (\hyperref[XII.prop6.8]{6.8})) et nous utilisons uniquement la dernière
+assertion de \hyperref[XII.cor6.3]{6.3}.
+
+Pour prouver (i), considérons la somme amalgamée $H=G\amalg_F G$,
+limite inductive, dans la catégorie des faisceaux d'ensembles sur $X$,
+du diagramme
+$$
+\xymatrix@R=.5cm{
+  & G\\
+F \ar[ru] \ar[rd]&\\
+  & G
+}
+$$
+Les\pageoriginale propriétés d'exactitude habituelles du topos des
+faisceaux d'ensembles montrent, comme $F\rightarrow G$ est un
+monomorphisme, que l'on a un diagramme \emph{exact} de faisceaux
+d'ensembles sur $X$
+$$
+F\to G\rightrightarrows H
+$$
+(ce que l'on peut exprimer en disant que dans un topos, tout
+monomorphisme est effectif, et prouver en se ramenant comme d'habitude
+à la catégorie des ensembles). Comme les foncteurs $H^{\circ}$ et
+$h^{\ast}$ sont exacts à gauche, on en conclut un homomorphisme de
+diagrammes exacts d'ensembles
+$$
+\xymatrix@R=1.25cm{
+H^{0}(X,F) \ar[r]\ar[d]& H^{0}(X,G)  \ar[d]\ar@<2pt>[r]\ar@<-2pt>[r]& H^{0}(X,H)\ar[d]\\
+H^{0}(Y,h^{\ast}(F)) \ar[r]& H^{0}(Y,h^{\ast}(G)) \ar@<2pt>[r]\ar@<-2pt>[r]& H^{0}(Y,h^{\ast}(H)),
+}
+$$
+où les flèches verticales sont injectives. Une « chasse de
+diagramme » immédiate prouve alors l'assertion \hyperref[XII.cor6.6]{6.6} (i).
+
+Pour prouver \hyperref[XII.cor6.6]{6.6} (ii), nous allons d'abord prouver la deuxième
+assertion de \hyperref[XII.prop6.5]{6.5} (i), savoir que moyennant la condition a) de \hyperref[XII.prop6.5]{6.5} (i),
+pour tout faisceau de groupes $F$ sur $X$, le foncteur $P\mapsto
+h^{\ast}(P)$, de la catégorie des torseurs sous $F$ dans la catégorie
+des torseurs sous $h^{\ast}(F)$, est fidèle (\resp pleinement fidèle),
+donc, dans le cas respé, induit une injection sur les $H^1$. Pour
+ceci, si $P$ et $P'$ sont deux torseurs sous $F$, désignons par
+$\sheaf{\Isom}_F(P,P')$ le faisceau des $F$-isomorphismes de $P$ sur
+$P'$. Il est immédiat que la formation de ce faisceau commute à toute
+extension de la base, en particulier à l'extension de la base par
+$h$. (C'est là une assertion valable pour tout morphisme de
+sites). Utilisant l'hypothèse sur l'effet de $h^{\ast}$ sur les
+$H^{\circ}$ pour le faisceau $\sheaf{\Isom}_F(P,P')$, on trouve que
+l'application $\Isom_F(P,P')\rightarrow
+\Isom_F(h^{\ast}(P),h^{\ast}(P'))$ est injective (\resp bijective), ce
+qui signifie que le foncteur $P\mapsto h^{\ast}(P)$ est\pageoriginale 
+fidèle (\resp
+pleinement fidèle). (NB dans la catégorie des torseurs sous un
+faisceau en groupes, tout homomorphisme est un isomorphisme). Notons
+d'autre part, que si $F$ est un sous-faisceau en groupes d'un faisceau
+en groupes $G$, alors la donnée d'un torseur $P$ sous $F$ revient à la
+donnée d'un torseur sous $G$ (savoir celui déduit de $P$ par extension
+$F\rightarrow G$ du Groupe structural), \emph{muni} d'une section de
+$Q/F$ (qui s'interprète en effet comme une « restriction du Groupe
+structural »  de $G$ à $F$). Ceci posé, avec les notations de 6.6
+(ii), comme l'image de $\eta$ de $\xi$ dans $H^1(Y,h^{\ast}(G))$ provient d'un
+élément de $H^1(X,G)$, ce dernier est défini par un torseur $Q$ sous
+$G$, de sorte que $\eta$ est la classe du torseur $h^{\ast}(Q)$ sous
+$h^{\ast}(G)$. Le fait que $\eta$ provient d'un $\xi\in
+H^1(Y,h^{\ast}(F))$ s'explicite alors en disant que $\xi$ est la
+classe du $h^{\ast}(F)$-torseur défini par $h^{\ast}(Q)$ et une
+section convenable de $h^{\ast}(Q)/h^{\ast}(F)$. Comme le foncteur
+$h^{\ast}$ est exact à droite, ce dernier faisceau n'est autre que
+$h^{\ast}(Q/F)$, et comme $h^{\ast}$ induit une bijection sur les
+$H^{\circ}$ des faisceaux d'ensembles, il s'ensuit que la section
+envisagée de $h^{\ast}(Q)/h^{\ast}(F)$ provient d'une section de
+$Q/F$. Cette dernière définit alors un $F$-torseur par restriction du
+groupe structural, et la classe de ce torseur dans $H^1(X,F)$ a
+évidemment $\xi$ comme image dans $H^1(Y,h\xi (F))$. Cela prouve \hyperref[XII.cor6.6]{6.6}
+(ii) et achève la démonstration de \hyperref[XII.cor6.6]{6.6}.
+
+Prouvons maintenant \hyperref[XII.prop6.5]{6.5}, en commençant par \hyperref[XII.prop6.5]{6.5} (iii). Évidemment a)
+implique ${\rm a'}$), et l'implication inverse est un cas particulier
+de \hyperref[XII.lem6.2]{6.2} (appliqué encore au cas où $C$ est la catégorie des faisceaux
+de $\LL$-torsion sur $X$, et $C'$ la catégorie des faisceaux de
+groupes abéliens), pourvu qu'on prouve l'effaçabilité dans $C$ des
+foncteurs $H^{i}(X,F)$ pour $i>0$. Cela n'offre en effet pas de
+difficulté, mais nous pouvons aussi nous dispenser de prouver ce
+résultat, en\pageoriginale notant que $F$ est limite inductive
+filtrante de ses sous-faisceaux $F_i$ pour lesquels il existe un
+entier $n>0$ annulant $F_i$ (\hyperrefext[IX][IX.def1.1]{1.1}). Alors $h^{\ast}(F)$ est limite
+inductive des $h^{\ast}(F_i)$, et compte tenu de la commutation de la
+cohomologie à la limite inductive (VII 3.3), résultant des hypothèses
+de quasi-compacité et de quasi-séparation faites sur $X$ et $Y$ (qui
+n'avaient pas servi pour \hyperref[XII.cor6.6]{6.6}), on se ramène à prouver la condition a)
+pour les $F_i$, ce qui nous ramène au cas où il existe un entier $m>0$
+tel que $mF=0$. On peut évidemment supposer que les diviseurs premiers
+de $m$ sont $\in \LL$, et on peut alors prendre pour $C$ la
+catégorie des faisceaux de $\ZZ/m\ZZ$-Modules sur
+$X$. Or on sait que dans cette catégorie, les foncteurs $H^{i}(X, -)$
+pour $i\geq 1$ sont effaçables (\quad). Cela montre l'équivalence
+des conditions a) et ${\rm a'}$) de \hyperref[XII.prop6.5]{6.5} (iii). D'autre part,
+appliquant a) à l'image directe d'un faisceau de $\LL$-torsion
+$F'$ sur $X'$, $X'$ fini sur $X$, qui est de $\LL$-torsion
+grâce à \hyperrefext[IX][IX.prop1.2]{1.2} (v), \hyperrefext[IX][IX.prop1.6]{1.6} (iii), et 
+utilisant \hyperref[XII.lem6.4]{6.4} et VIII 5.5, on trouve
+que l'homomorphisme
+$$
+H^{i}(X',F')\longrightarrow H^{i}(Y',{h'}^{\ast}(F'))
+$$
+est un isomorphisme pour $i\leq n$, un monomorphisme pour $i=n+1$,
+d'où a fortiori la condition b). Reste à prouver que cette condition
+implique ${\rm a'}$). Pour ceci, utilisons le fait (\hyperrefext[IX][IX.cor2.7.2]{2.7.2}) que tout
+faisceau de $\LL$-torsion $F$ sur $X$ est limite inductive
+filtrante de faisceaux de $\LL$-torsion constructibles; alors
+l'argument de passage à la limite déjà utilisé montre que dans ${\rm
+a'}$), on peut se limiter au cas où $F$ est constructible. En vertu de
+\hyperrefext[IX][IX.prop2.14]{2.14} il existe alors un nombre fini de morphismes finis
+$p_i:X'_i\rightarrow X$, de faisceaux constants de
+$\LL$-torsion $G_{X'_i}$ sur les $X'_i$, et un homomorphisme
+injectif
+$$
+F\longrightarrow \prod_{i}p_{i_{\ast}}(G_{i X'_i})
+$$
+Ceci\pageoriginale dit, si $n=-1$, \ie lorsque la conclusion voulue se
+réduit à l'assertion d'injectivité pour $H^{\circ}(X,F)\rightarrow
+H^{\circ}(Y,h^{\ast}(F))$, on voit aussitôt qu'on peut dans cette
+question remplacer $F$ par un faisceau $G$ tel qu'il existe un
+monomorphisme $F\rightarrow G$, et par suite on peut remplacer $F$ par
+le produit des $p_{i^{\ast}}(G_{i X'_i})$. Compte tenu de \hyperref[XII.lem6.4]{6.4}, on est
+donc ramené à prouver l'assertion d'injectivité en remplaçant
+$h:Y\rightarrow X$ par $h':Y'\rightarrow X'$, et $F$ par un faisceau
+constant sur $X'$ de valeur un groupe fini de $\LL$-torsion
+ordinaire $G$. Or $G$ est isomorphe à une somme de groupes de la forme
+$\ZZ/\ell^{\nu}\ZZ$, avec $\ell\in \LL$. On est
+donc bien réduit à vérifier b). Lorsque $n\geq 0$, on procède de fa\c
+con analogue. Par récurrence sur $n$, on peut supposer la conclusion
+voulue (et par suite a)) prouvée pour l'entier $n-1$ au lieu de
+$n$. Utilisant alors \hyperref[XII.cor6.6]{6.6} (iii), on voit qu'on peut encore remplacer
+$F$ par un faisceau $G$ tel qu'il existe un monomorphisme
+$F\rightarrow G$, et on prendra encore pour $G$ le faisceau
+$p_{\ast}(G_{X'})$. Compte tenu de \hyperref[XII.lem6.4]{6.4} et de la nullité des
+$R^{i}p_{\ast}$ $(i\geq 1)$ pour un morphisme fini (VIII 5.5), cela
+nous ramène encore à prouver la surjectivité pour $H^n$ en rempla\c
+cant $h:Y\rightarrow X$ par un $h':Y'\rightarrow X'$, et $F$ par un
+faisceau constant sur $X'$ de valeur un groupe fini de
+$\LL$-torsion ordinaire. Comme l'injectivité est déjà acquise
+grâce à l'hypothèse de récurrence et l'implication ${\rm
+a')\Rightarrow a)}$, on est encore ramené, par dévissage sur $G$, au
+cas où $G$ est de la forme $\ZZ/\ell^{\nu}\ZZ$,
+c'est-à-dire au cas envisagé dans la condition b) de \hyperref[XII.prop6.5]{6.5} (iii). Cela
+prouve le cas (iii) de \hyperref[XII.prop6.5]{6.5}.
+
+Les cas (i) et (ii) se démontrent exactement de la même façon, pour
+ce qui est de l'équivalence des conditions a) et b) dans
+\hyperref[XII.prop6.5]{6.5} (i) \resp 
+\hyperref[XII.prop6.5]{6.5} (ii): on\pageoriginale utilise \hyperrefext[IX][IX.cor2.7.2]{2.7.2} et
+la commutation du 
+$H^{\circ}$ et $H^1$ aux limites inductives filtrantes de faisceaux
+(VII 5.14) pour se ramener au cas où $F$ est constructible, puis 
+\hyperrefext[IX][IX.prop2.14]{2.14}, \hyperref[XII.cor6.6]{6.6} (i) (ii) et VIII 5.8 pour 
+se ramener au cas particulier
+envisagé dans b). Par ailleurs, dans (i), l'équivalence des conditions
+b), ${\rm b'}$) et ${\rm b''}$) est triviale et n'est mise que pour
+mémoire, ainsi que le fait qu'elles impliquent la fidélité (\resp la
+pleine fidélité) du foncteur $X'\mapsto Y'$ de la catégorie des
+revêtements étales de $X$ dans la catégorie des revêtements étales de
+$Y$. Il en est de même de l'équivalence des conditions b), ${\rm b'}$)
+et ${\rm b''}$) dans \hyperref[XII.prop6.5]{6.5} (ii), qui ont été ajoutées pour
+faire bon 
+poids. La démonstration de \hyperref[XII.prop6.5]{6.5} est ainsi achevée.
+
+\begin{enonce*}[remark]{Remarque 6.7}\etiquette[6.7]{XII.rem6.7}
+\footnote{Le rédacteur recommande d'omettre la lecture de ces
+remarques, ainsi que de (\hyperref[XII.rems6.13]{6.13}), introduites subrepticement (en même
+temps que diverses autres modifications plus ou moins heureuses du
+texte original) par un collaborateur irrévérencieux.}.
+\begin{enumerate}
+\renewcommand{\labelenumi}{\theenumi)}
+\item Évidemment, les arguments démontrant \hyperref[XII.prop6.5]{6.5} et
+  \hyperref[XII.cor6.6]{6.6} sont de nature 
+très générale et essentiellement triviale et auraient intérêt à être
+dégagés en des lemmes abstraits de la même eau que \hyperref[XII.lem6.2]{6.2}
+(les faisceaux 
+$p_{\ast}(G_{X'})$ jouant le rôle de cogénérateurs de la catégorie $C$
+dans laquelle on travaille). On laisse ce plaisant exercice au
+lecteur, et nous nous bornons à signaler que le même énoncé
+essentiellement pourrait être donné en regardant des foncteurs tels
+que $R^{i}f_{\ast}$ au lieu des foncteurs $H^{i}$. Les mêmes remarques
+s'appliquent à \hyperref[XII.prop6.8]{6.8}, \hyperref[XII.prop6.11]{6.11} ci-dessous.
+
+\item Lorsque $X$ est noethérien, alors les arguments donnés montrent
+que dans l'énoncé des conditions b) et leurs variantes dans \hyperref[XII.prop6.5]{6.5} (i)
+(ii) (iii), on peut se borner à prendre $X'$ \emph{intègre}; lorsque
+$X$ est universellement japonais, on peut même les prendre intègre et
+normaux; c'est également possible sans la\pageoriginale restriction
+japonaise sur $X$, à condition de prendre des morphismes $p:X'\rightarrow X$
+\emph{entiers} au lieu de morphismes finis. Nous ne nous servirons
+d'aucune de ces variantes dans la suite du séminaire.
+
+\item La démonstration de \hyperref[XII.cor6.6]{6.6} n'utilise pas l'hypothèse de
+quasi-compacité et de quasi-séparation faite sur $X$, et il en est de
+même pour le fait que dans (i) (ii) (iii) la condition a) implique les
+autres, ainsi que pour l'équivalence des conditions b), ${\rm b'}$),
+${\rm b''}$) entre elles. Notons d'autre part que la forme b) des
+conditions 6.5 (i) montre que, pour $\LL=\phi$, ce sont des cas
+particuliers (lorsque $X$ est quasi-compact quasi-séparé) de \hyperref[XII.prop6.5]{6.5}
+(iii), pour $n=-1$ \resp pour $n=0$. Cela reste d'ailleurs vrai (en
+se bornant aux conditions sous la forme a)) sans la restriction
+énoncée sur $X$, comme on voit aisément grâce au fait que pour tout
+faisceau d'ensembles $F$, et tout nombre premier $\ell$, on peut
+trouver deux faisceaux abéliens de $\ell$-torsion $G$ et $H$, et un
+homomorphisme $u:G\rightarrow H$ des faisceaux d'ensembles
+sous-jacents, tels que $F$ soit isomorphe à l'image inverse de la
+section nulle (on prendra pour $F$ le $\ZZ/\ell
+\ZZ$-Module libre engendré par $F$, et pour $H$ le faisceau
+constant $\ZZ/\ell\ZZ$ sur $X$). Le même argument montre
+que (sans restriction de quasi-compacité et de quasi-séparation) \hyperref[XII.prop6.5]{6.5}
+(ii) a) (où il suffit même de faire $i=0$) implique la condition
+respée \hyperref[XII.prop6.5]{6.5} (i) a); cela permet par suite, compte tenu que cette
+dernière implique déjà l'injectivité de $H^1(X,F)\rightarrow
+H^1(Y,h^{\ast}(F))$ pour tout faisceau en groupes $F$ sur $X$, de se
+borner dans l'énoncé de \hyperref[XII.prop6.5]{6.5} (ii) a) d'exiger pour $i=1$ la
+\emph{surjectivité} de $H^1(X,F)\rightarrow
+H^1(Y,h^{\ast}(F))$. Malheureusement, le cas \hyperref[XII.prop6.5]{6.5} (ii) ne peut être
+envisagé comme cas particulier de \hyperref[XII.prop6.5]{6.5} (iii), ce qui nous oblige
+souvent de répéter dans le cas non commutatif un argument déjà fait
+pour l'essentiel dans le cas commutatif. Notons également que, sauf
+\hyperref[XII.cor6.10]{6.10}, les résultats qui suivent sont énoncés de sorte qu'ils sont valables
+sans\pageoriginale hypothèse de quasi-compacité et de quasi-séparation.
+\end{enumerate}
+\end{enonce*}
+
+\begin{enonce*}{Proposition 6.8}\etiquette[6.8]{XII.prop6.8}
+(Lemme de descente). Avec les notations générales de \hyperref[XII.prop6.5]{6.5}, supposons
+donné de plus un morphisme $p:\bar{X}\rightarrow X$, désignons par
+$\bar{h}:\bar{Y}\rightarrow \bar{X}$ le morphisme déduit de $h$ par le
+changement de base $p$, et par $p_y:\bar{Y}\rightarrow Y$ le morphisme
+canonique. Nous supposons, ou bien que $p$ est surjectif, ou bien que
+$h$ est une immersion fermée et que $X=p(\bar{X})\cup h(Y)$.
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Supposons que le morphisme $\bar{h}:\bar{Y}\rightarrow \bar{X}$
+satisfasse à la condition d'injectivité (\resp de bijectivité) de
+\hyperref[XII.prop6.5]{6.5} {\rm(i) a)}. Dans le cas respé, supposons de plus que le
+morphisme de changement de base
+\begin{equation*}
+h^{\ast}(p_{\ast}(\bar{F}))\longrightarrow
+p_{Y_{\ast}}(\bar{h}^{\ast}(\bar{F}))\tag{$\ast$} 
+\end{equation*}
+est injectif pour tout faisceau d'ensembles $\bar{F}$ sur
+$\bar{X}$. Alors le morphisme $h:X\rightarrow Y$ satisfait également
+la condition d'injectivité (\resp de bijectivité) de $6.5$ {\rm(i)
+a).}
+
+\item Supposons que $\bar{h}:\bar{Y}\rightarrow \bar{X}$ satisfasse la
+condition de $6.5$ {\rm(ii) a)}, et que pour tout faisceau de
+{\rm ind}-$\LL$-groupes $\bar{F}$ sur $\bar{X}$, le morphisme de
+changement de base $(\ast)$ soit bijectif. Alors $h:Y\rightarrow X$
+satisfait également la condition de {\rm \hyperref[XII.prop6.5]{6.5} (ii) a).}
+
+\item Supposons que $\bar{h}:\bar{Y}\rightarrow \bar{X}$ satisfasse à
+la condition de {\rm \hyperref[XII.prop6.5]{6.5} (iii) a),} et que pour tout faisceau abélien
+$\bar{F}$ de $\LL$-torsion sur $\bar{X}$, l'homomorphisme de
+changement de base
+$$
+h^{\ast}(R^{i}p_{\ast}(\bar{F}))\longrightarrow
+R^{i}p_{Y_{\ast}}(\bar{h}^{\ast}(\bar{F}))
+$$
+soit bijectif pour $i\leq n-1$, injectif pour $i=n$ (où $n$ est un
+entier $\geq 1$ donné). Alors le morphisme $h:Y\rightarrow X$
+satisfait également à la condition de {\rm \hyperref[XII.prop6.5]{6.5} (iii) a).}
+\end{enumerate}
+\end{enonce*}
+
+\noindent
+\emph{Démonstration de} \hyperref[XII.prop6.8]{6.8}.\pageoriginale Dans le cas où on ne
+suppose pas $p$ surjectif, mais $h$ une immersion fermée et
+$X=p(\bar{X})\cup h(Y)$, nous considérons le schéma somme $\bar{X}'$
+de $\bar{X}$ et $Y$, et le morphisme $p':\bar{X}'\rightarrow X$ déduit
+de $p$ et $h$. Alors $p'$ est surjectif, de plus on vérifie
+trivialement, dans chacun des trois cas envisagés (i) (ii) (iii), que
+les hypothèses faites sur le couple $(h,p)$ sont encore satisfaites
+pour le couple $(h,p')$. Cela nous ramène donc au cas où $p$ est
+surjectif, dans lequel nous allons nous placer dans la suite. Dans ce
+cas pour tout faisceau $F$ sur $X$, l'homomorphisme canonique
+$$
+F\longrightarrow p_{\ast}(p^{\ast}(F))
+$$
+est injectif. Dans le cas (i), pour vérifier l'injectivité de
+$H^{\circ}(X,F)\rightarrow H^{\circ}(Y,h^{\ast}(F))$, on est ramené
+aussitôt au cas où on remplace $F$ par $p_{\ast}(\bar{F})$ (où on pose
+$\bar{F}=p^{\ast}(F)$). Or considérons le diagramme commutatif
+$$
+\xymatrix@C=2.75cm@R=.75cm{
+**[r]H^{\circ}(X,p_{\ast}(\bar{F})) \ar[dd]^{\text{\rotatebox{90}{$\backsim$}}} \ar[r]& **[r]H^{\circ}(Y,h^{\ast}(\bar{F})) \ar[d]\\
+                           &**[r]H^{\circ}(Y,p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F})))\ar[d]_{\text{\rotatebox{90}{$\backsim$}}}\\
+**[r]H^{\circ}(\bar{X},\bar{F})  \ar[r] &
+                           **[r]H^{\circ}(\bar{Y},\bar{h}^{\ast}(\bar{F})),  
+}
+$$
+où la flèche verticale gauche et la deuxième flèche verticale droite
+sont les isomorphismes canoniques, la première flèche verticale droite
+provenant de l'homomorphisme de changement de base par $h$. Par
+hypothèse la deuxième flèche horizontale est injective, ce qui
+implique aussitôt qu'il en est de même de la première, ce qui prouve
+l'assertion non respée de (i). Pour l'assertion respée, on suppose que
+la deuxième flèche horizontale est surjective, de plus l'homomorphisme
+de changement de base étant un monomorphisme par hypothèse, il en est
+de même de la première flèche verticale droite, donc du
+composé\pageoriginale des deux flèches verticales droites. Il s'ensuit
+aussitôt que la première flèche horizontale est également surjective,
+ce qui achève de prouver (i). Pour prouver (ii), grâce à ce qui
+précède et \hyperref[XII.prop6.5]{6.5} (i) on est ramené à prouver la surjectivité pour
+$H^1(X,F)\rightarrow H^1(Y,h^{\ast}(F))$. Utilisant \hyperref[XII.cor6.6]{6.6} (ii) on est
+encore ramené à la prouver pour $F$ de la forme $p_{\ast}(\bar{F})$,
+où $\bar{F}$ est un faisceau de ind-$\LL$-groupes sur $\bar{X}$
+(\hyperrefext[IX][IX.prop1.6]{1.6} (ii)). Écrivant les suites exactes pour les $H^1$, (variantes
+de (\hyperref[XII.prop3.2]{3.2})) pour les morphismes $p$ et $p_Y$, on trouve un homomorphisme
+de suites exactes non commutatives:
+$$
+\xymatrix@R=1.5cm{
+H^{1} (X,p_{\ast}(\bar{F}))  \ar[r] \ar[d] & H^{1}(\bar{X},\bar{F})  \ar[r]\ar[d] &
+H^{0}(X,R^{1}p_{\ast}(\bar{F})) \ar[d]&\\
+H^{1}(Y,p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F})) \ar[r] &
+H^{1}(\bar{Y},\bar{h}^{\ast}(\bar{F}))  \ar[r] &
+H^{0}(Y,R^{1}(p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F})))), 
+}
+$$
+où dans chaque ligne la première flèche est injective et identifie le
+premier terme à l'image inverse, par la deuxième flèche, du point
+marqué du troisième terme. Par hypothèse sur $\bar{h}$, la flèche
+verticale médiane est bijective. D'autre part, les deux flèches
+verticales extrêmes se factorisent respectivement par
+$H^1(Y,h^{\ast}(p_{\ast}(\bar{F}))$ et
+$H^{\circ}(Y,h^{\ast}(R^1(p_{\ast}(\bar{F}))$, en composant les
+homomorphismes $H^{i}(X,-)\rightarrow H^1(Y,-)$ (pour $i=1$ et $i=0$
+respectivement) et les homomorphismes déduits en appliquant
+$H^{i}(Y,-)$ (pour ces mêmes valeurs de i) à l'homomorphisme de
+changement de base $h^{\ast}(p_{\ast}(\bar{F}))\rightarrow
+p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F}))$ \resp
+$h^{\ast}(R^1p_{\ast}(\bar{F}))\rightarrow
+R^1p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F}))$. Comme la première de ces
+flèches est un isomorphisme par hypothèse, il s'ensuit que la première
+flèche verticale du diagramme ci-dessus s'identifie à l'homomorphisme
+$H^1(C,-)\rightarrow H^1(Y,-)$ que nous voulons étudier. Pour prouver
+sa bijectivité, il reste donc à prouver que la dernière flèche
+verticale du diagramme est injective. Or d'après ce qu'on vient de
+dire, elle est composée de deux applications,\pageoriginale dont la
+première est un homomorphisme canonique $H^{\circ}(X,-)\rightarrow
+H^{\circ}(Y,-)$, donc bijective, et la deuxième est injective, car
+déduite par le foncteur exact à gauche $H^{\circ}(Y,-)$ d'un
+homomorphisme $H^{\ast}(R^1(p_{\ast}(\bar{F}))\rightarrow
+R^1p_{\ast}(\bar{h}^{\ast}(\bar{F}))$ qui est un monomorphisme. Ce
+dernier fait résulte en effet aisément de l'hypothèse de bijectivité
+faite pour l'homomorphisme de changement de base dans la dimension
+précédente 0, par exemple en utilisant la deuxième assertion de \hyperref[XII.prop6.5]{6.5}
+(i) et le calcul habituel des fibres des images directes supérieures
+(VIII 5.3). Cela prouve \hyperref[XII.prop6.8]{6.8} (ii).
+
+Reste à prouver \hyperref[XII.prop6.8]{6.8} (iii). Pour ceci, il nous sera plus commode, au
+lieu d'utiliser directement l'injection $F\rightarrow
+p_{\ast}(p^{\ast}(F))$ comme ci-dessus, d'utiliser l'homomorphisme
+$$
+F\longrightarrow Rp_{\ast}(\bar{F})
+$$
+dans la catégorie dérivée droite $D^{+}(C)$, où $C$ désigne la
+catégorie des faisceaux abéliens sur $X$. Rappelons que par
+définition, $Rp_{\ast}(\bar{F})$ est le complexe
+$p_{\ast}(C(\bar{F}))$, où $C(\bar{F})$ est un complexe résolution
+injective de $\bar{F}$ dans la catégorie des faisceaux abéliens sur
+$\bar{X}$. Si $K^{\bigdot}$ est un complexe sur $X$, nous désignons
+par $H^{i}(X,K^{\bigdot})$ les groupes d'hypercohomologie de $X$ à
+coefficients dans $K^{\bigdot}$, et on utilise les notations analogues
+sur $Y$. En vertu de \hyperref[XII.cor6.3]{6.3}, on est ramené à prouver la surjectivité pour
+\begin{equation*}
+H^n(X,Rp_{\ast}(\bar{F}))\longrightarrow
+H^n(Y,h^{\ast}Rp_{\ast}(\bar{F})){\quoi}.\tag{1}
+\end{equation*}\etiquette[1]{XII.eq1}
+Or par hypothèse, l'homomorphisme de changement de base
+\begin{equation*}
+H^{\ast}(Rp_{\ast}(\bar{F}))\longrightarrow Rp_{Y\ast}(\bar{h}^{\ast}(\bar{F}))\tag{2}
+\end{equation*}\etiquette[2]{XII.eq2}
+induit un isomorphisme sur les faisceaux de cohomologie en degrés
+$\leq n-1$, et un monomorphisme en degrés $n$, ce qui peut s'exprimer
+en disant que le « mapping-cylinder » \pageoriginale $K^{\bigdot}$
+de l'homomorphisme précédent n'a des faisceaux de cohomologie non nuls
+qu'en degrés $\geq n$. Donc $H^{i}(Y,K^{\bigdot})=0$ si $i<n$, ce qui
+implique, par la suite exacte de cohomologie, que les homomorphismes
+\begin{equation*}
+H^{i}(Y,h^{\ast}(Rp_{\ast}(\bar{F}))\longrightarrow H^{i}(Y,Rp_{Y\ast}(\bar{h}^{\ast}(\bar{F})){\quoi},\tag{3}
+\end{equation*}\etiquette[3]{XII.eq3}
+induits par l'homomorphisme ci-dessus, sont des isomorphismes pour
+$i\leq n-1$, un monomorphisme pour $i=n$. Considérons le composé de
+(1) et (3)
+\begin{equation*}
+H^n(X,Rp_{\ast}(\bar{F}))\longrightarrow
+H^n(Y,h^{\ast}(Rp_{\ast}(\bar{F})))\longrightarrow H^n(Y,Rp_{Y\ast}(\bar{h}^{\ast}(\bar{F})){\quoi}.\tag{4}
+\end{equation*}\etiquette[4]{XII.eq4}
+Les termes extrêmes sont respectivement isomorphes, en vertu des
+définitions, à $H^n(\bar{X},\bar{F})$ et
+$H^n(\bar{Y},\bar{h}^{\ast}(\bar{F}))$, et le composé de (4) n'est
+autre que l'homomorphisme déduit de $\bar{h}$, qui est bijectif grâce
+à l'hypothèse faite sur $\bar{h}$. Comme la deuxième flèche de (4) est
+injective d'après ce qu'on vient de voir, la première est également
+bijective, ce qui achève la démonstration de \hyperref[XII.prop6.8]{6.8}.
+
+D'ailleurs, on constate aussitôt que la démonstration précédente
+fournit le résultat suivant, légèrement plus précis et plus général:
+
+\begin{enonce*}{Corollaire 6.9}\etiquette[6.9]{XII.cor6.9}
+Les notations sont celles de \hyperref[XII.prop6.8]{6.8}. On suppose de plus satisfaite pour
+$h$ la condition non respée de \hyperref[XII.prop6.5]{6.5} {\rm(i)} (\resp la condition
+respée de \hyperref[XII.prop6.5]{6.5} {\rm(i)}, \resp la condition de {\rm \hyperref[XII.prop6.5]{6.5} 
+(iii)}, avec
+$n\geq -1$), et que pour tout faisceau d'ensembles $\bar{F}$ sur
+$\bar{X}$, l'homomorphisme de changement de base
+$h^{\ast}(p_{\ast}(\bar{F}))\rightarrow
+p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F}))$ est injectif (\resp bijectif,
+\resp que pour tout faisceau de $\LL$-torsion $\bar{F}$ sur
+$\bar{X}$, l'homomorphisme de changement de base
+$h^{\ast}R^{i}p_{\ast}(\bar{F})\rightarrow
+R^{i}p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F}))$ soit bijectif pour $i\leq
+n$, injectif pour $i=n+1$). Soit $F$ un faisceau d'ensembles (\resp de
+ind-$\LL$-groupes, \resp un faisceau de $\LL$-torsion)
+sur $X$, et soit $\xi \in H^{n+1}(Y,h^{\ast}(F))$ (où on prend $n=-1$
+dans le cas\pageoriginale {\rm(i)}, $n=0$ dans le cas {\rm(ii)}). Posons
+$\bar{F}=p^{\ast}(F)$. Alors, pour que $\xi$ soit dans l'image de
+$H^{n+1}(X,F)$, il faut et il suffit que son image inverse dans
+$H^{n+1}(\bar{Y},p_{Y^{\ast}}(h^{\ast}(F))=H^{n+1}(\bar{Y},\bar{h}^{\ast}(\bar{F}))$ 
+soit dans l'image de $H^{n+1}(\bar{X},\bar{F})$.
+\end{enonce*}
+
+Nous utiliserons cette forme précisée de \hyperref[XII.prop6.8]{6.8} pour prouver le
+
+\begin{enonce*}{Corollaire 6.10}\etiquette[6.10]{XII.cor6.10}
+Les notations sont celles de \hyperref[XII.prop6.5]{6.5}. On suppose, pour simplifier,
+vérifiée la condition non respée de {\rm \hyperref[XII.prop6.5]{6.5} (i)}.
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Pour que la condition respée de {\rm \hyperref[XII.prop6.5]{6.5} (i)} soit satisfaite
+(\resp pour qu'on ait {\rm \hyperref[XII.prop6.5]{6.5} (ii) a),} \resp pour qu'on ait {\rm \hyperref[XII.prop6.5]{6.5}
+(iii) a))}, il faut et il suffit que la condition suivante soit
+satisfaite: Pour tout faisceau $F$ d'ensembles (\resp de
+ind-$\LL$-groupes, \resp de groupes abéliens de
+$\LL$-torsion) sur $X$, tout $\xi\in H^{\circ}(Y,h^{\ast}(F))$
+(\resp tout $\xi\in H^{i}(Y,h^{\ast}(F))$ avec $i=0,1$, \resp tout
+$\xi \in H^{i}(Y,h^{\ast}(F))$ avec $i\leq n$), et toute partie fermée
+non vide $X'$ de $X$, désignant par $Y'$ son image inverse dans $Y$,
+il existe un morphisme $p:\bar{X}\rightarrow X$ satisfaisant les
+conditions suivantes:
+\begin{itemize}
+\item[$1^{\circ}$)] L'image $p(\bar{X})$ est contenue dans $X'$ et
+contient un ouvert non vide de $X'$.
+
+\item[$2^{\circ}$)] Pour tout faisceau d'ensembles $\bar{F}$ sur
+$\bar{X}$ (\resp\ldots) l'homomorphisme de changement de base
+$h^{\ast}(p_{\ast}(\bar{F}))\rightarrow p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F}))$ 
+est un isomorphisme (\resp pour
+tout faisceau de ind-$\LL$-groupes $\bar{F}$ sur $X$,
+l'homomorphisme de changement de base
+$h^{\ast}(R^{i}p_{\ast}(\bar{F}))\rightarrow
+R^{i}p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F}))$ pour $i=0,1$ est bijectif,
+\resp pour tout faisceau abélien de $\LL$-torsion $\bar{F}$ sur
+$\bar{X}$, l'homomorphisme de changement de base est bijectif pour
+$i\leq n$).
+
+\item[$3^{\circ}$)] L'image inverse de $\xi$ dans
+$H^{i}(\bar{Y},p_Y\ast(h^{\ast}(F)))=H^{i}(\bar{Y},
+\bar{h}^{\ast}(p^{\ast}(F)))$ est contenue dans l'image de
+$H^{i}(\bar{X},p^{\ast}(F))$.
+\end{itemize}
+
+\item Soit\pageoriginale $n\geq -1$, et supposons que pour tout
+faisceau d'ensembles $F$ (\resp tout faisceau de
+ind-$\LL$-groupes, \resp tout faisceau abélien de
+$\LL$-torsion) $F$ sur $X$, l'homomorphisme
+$H^{i}(X,F)\rightarrow H^{i}(Y,h^{\ast}(F))$ soit bijectif pour $i\leq
+n$, injectif pour $i=n+1$, (dans le premier cas, on suppose $n=1$,
+dans le deuxième, $n=-1$ ou $0$). Soit $\xi \in
+H^{n+1}(Y,h^{\ast}(F))$. Pour que $\xi$ soit dans l'image de
+$H^{n+1}(X,F)$, il faut et il suffit qu'il satisfasse à la condition
+énoncée dans {\rm(i)} ci-dessus, avec $i=n+1$).
+\end{enumerate}
+\end{enonce*}
+
+\noindent
+\emph{Démonstration de} \hyperref[XII.cor6.10]{6.10}. Utilisant \hyperref[XII.prop6.5]{6.5} 
+et une récurrence
+immédiate sur $n$, on constate que \hyperref[XII.cor6.10]{6.10} (i) est conséquence de 
+\hyperref[XII.cor6.10]{6.10} (ii), que nous allons maintenant démontrer.
+
+Supposons que $\xi$ ne soit pas dans l'image de $H^n(X,F)$. Soit
+$\Phi$ l'ensemble des parties fermées $X'$ de $X$ telles que l'image
+$\xi$ dans $H^n(Y',h^{\ast}(F)| Y')$ ne soit pas contenue dans
+celle de $H^n(X',F| X')$. Par hypothèse, $X\in \Phi$, donc $\Phi$
+n'est pas vide. Ordonnons $\Phi$ par la relation $\supset$, et
+montrons que $\Phi$ est inductif. Pour ceci, il suffit de prouver que
+si $(X'_{\lambda})$ est une famille totalement ordonnée d'éléments de
+$\Phi$, et si $X'$ est leur intersection, alors $X'\in \Phi$. Or,
+munissant les $X'_{\lambda}$ et $X'$ de la structure induite 
+réduite, on voit que les morphismes $X'_{\lambda}\rightarrow
+X$ sont affines (puisque ce sont des immersions fermées), donc le
+système projectif des $X'_{\lambda}$ satisfait aux conditions
+envisagées dans VII 5. De plus, on constate aussitôt que $X'$ est la
+limite projective des $X'_{\lambda}$. De même, $Y'$ est la limite
+projective du système projectif des $Y'_{\lambda}$, qui sont affines
+sur $Y$. Utilisant VII 5.8, on trouve donc
+$$
+\varinjlim H^n(X'_{\lambda},F|X'_{\lambda})\xrightarrow{\sim}
+H^n(X',F|X')\quav \varinjlim H^n(Y'_{\lambda},
+h^{\ast}(F)|Y'_{\lambda})\xrightarrow{\sim}
+H^n(Y',h^{\ast}(F)|Y'){\quoi}.
+$$
+De ceci, on conclut aussitôt que si on avait $(\xi|Y')\in \Iim
+H^n(X',F|X')$, alors il\pageoriginale existerait un indice $\lambda$
+tel que $(\xi|Y'_{\lambda})\in \Iim H^n(X'_{\lambda},F|X'_{\lambda})$, ce
+qui est absurde; donc on a bien $X'\in \Phi$. Donc $\Phi$ est
+inductif, et contient par suite un élément minimal, soit $X'$. Comme
+évidemment $∅\not\in \Phi$, $X'$ est non-vide. Appliquons à $\xi$
+et à $X'$ l'hypothèse de \hyperref[XII.cor6.10]{6.10}, d'où un morphisme $p:\bar{X}\rightarrow
+X$ satisfaisant aux conditions $1^{\circ}$) à $3^{\circ}$) énoncées
+dans \hyperref[XII.cor6.10]{6.10}. Notons qu'on peut supposer même $p$ \emph{surjectif}. En
+effet, soit $U$ un ouvert non vide de $X'$ contenu dans $p(\bar{X})$,
+et soit $X'_1$ son complémentaire dans $X'$, de sorte que par
+construction on a $X'_1\not\in \Phi$. Utilisant cette relation, on
+voit tout de suite que, posant $\bar{X}_1=\bar{X}\amalg X'_1$ et
+désignant par $\bar{p}_1:\bar{X}_1\rightarrow X$ le morphisme défini
+par $\bar{p}$ et l'inclusion de $X'_1$ dans $X$, le morphisme
+$\bar{p}_1$ satisfait encore aux mêmes hypothèses que $\bar{p}$; de
+plus, il est surjectif. Nous supposons donc $p$ surjectif, et
+appliquons maintenant \hyperref[XII.cor6.9]{6.9}, en y remplaçant le morphisme
+$h:Y\rightarrow X$ par le morphisme $h':Y'\rightarrow X'$ ($X'$ étant
+muni, disons, de la structure induite réduite), et $\xi$ par
+$\xi|Y'$. On conclut alors de \hyperref[XII.cor6.9]{6.9} que l'on a $(\xi|Y')\in \Iim
+H^n(X',F|X')$, ce qui contredit la relation $X'\in \Phi$ et achève la
+démonstration de \hyperref[XII.cor6.10]{6.10}.
+
+Nous utiliserons \hyperref[XII.cor6.10]{6.10} pour ramener \hyperref[XII.cor5.5]{5.5} 
+au cas où $f$ est un morphisme
+projectif; mais pour ceci, dans le cas non noethérien, nous aurons
+besoin d'une variante non noethérienne du lemme de Chow, qui sera
+donnée au numéro suivant.
+
+\begin{enonce*}{Proposition 6.11}\etiquette[6.11]{XII.prop6.11}
+(Lemme de transitivité). Les notations sont celles de \hyperref[XII.prop6.8]{6.8}, mais on
+ne fait aucune hypothèse de surjectivité relativement à $p$. On
+suppose que $h$ satisfait à la condition {\rm (i) a)} (\resp {\rm (ii)
+a)}, \resp {\rm (iii) a)} de \hyperref[XII.prop6.5]{6.5}. On suppose de plus, dans le cas
+{\rm(i)}, que pour tout faisceau d'ensembles $\bar{F}$ sur $\bar{X}$,
+l'homomorphisme de changement de base de \hyperref[XII.prop6.8]{6.8} est un monomorphisme
+(\resp un isomorphisme); dans le cas {\rm(ii)}, que $\bar{X}$ est
+noethérien et que pour tout faisceau $\bar{F}$ de
+ind-$\LL$-groupes, l'homomorphisme de changement de base
+$h^{\ast}(R^1p_{\ast}(\bar{F}))\rightarrow
+R^1p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F}))$\pageoriginale est bijectif
+pour $i=0,1$; enfin, dans le cas {\rm(iii)}, que l'homomorphisme de
+changement de base est bijectif pour $i\leq n$, injectif pour
+$i=n+1$. Alors le morphisme $\bar{h}:\bar{Y}\rightarrow \bar{X}$
+satisfait également à la condition {\rm(i)} (\resp {\rm(ii)}, \resp
+{\rm(iii)}) de \hyperref[XII.prop6.5]{6.5}.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration de} \hyperref[XII.prop6.11]{6.11}. Dans le cas (i), on considère le
+diagramme commutatif de la démonstration de \hyperref[XII.prop6.8]{6.8} (i). Ici les
+hypothèses impliquent que la première flèche horizontale et la
+première flèche verticale de droite sont injectives (\resp
+bijectives), donc il en est de même de la deuxième flèche horizontale,
+ce qu'on voulait établir. Dans le cas (ii), on se donne un faisceau
+$\bar{F}$ de ind-$\LL$-groupes sur $\bar{X}$, et il faut
+montrer que tout élément de $H^1(\bar{Y},\bar{h}^{\ast}(\bar{F}))$
+provient d'un élément de $H^1(\bar{X},\bar{F})$. En vertu de \hyperref[XII.cor6.6]{6.6} (ii)
+appliqué à $\bar{h}$, il suffit de trouver un monomorphisme
+$\bar{F}\rightarrow \bar{G}$ de faisceaux en groupes sur $\bar{X}$ qui
+\emph{efface} $H^1(\bar{Y},\bar{h}^{\ast}(\bar{F}))$. Or considérons
+la deuxième ligne du diagramme utilisé dans la démonstration de \hyperref[XII.prop6.8]{6.8}
+(ii). Il suffit successivement de trouver un monomorphisme
+$\bar{F}\rightarrow \bar{G}$, avec $\bar{G}$ un faisceau en groupes
+in-$\LL$-finis, qui efface le dernier terme $H^{\circ}(Y,R^1
+p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F}))$, puis un monomorphisme de
+faisceaux en groupes $\bar{G}\rightarrow \bar{H}$ qui efface
+$H^1(Y,p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F}))$. Or, comme on a remarqué
+dans la démonstration de \hyperref[XII.prop6.8]{6.8} (i), les deux termes qu'il s'agit
+d'effacer sont isomorphes respectivement, par les flèches verticales
+extrêmes du diagramme envisagé, à $H^{\circ}(X,R^1p_{\ast}(\bar{F}))$
+et à $H^1(X,p_{\ast}(\bar{F}))$, compte tenu de l'hypothèse sur les
+homomorphismes de changement de base faites ici sur $p$,
+$h$. D'ailleurs, les isomorphismes envisagés sont évidemment
+fonctoriels en $\bar{F}$, de sorte qu'il suffit d'effacer les deux
+termes précédents. Or en vertu de \hyperref[XII.prop3.3]{3.3} on peut effacer
+$R^1p_{\ast}(\bar{F})$ (et à fortiori
+$H^{\circ}(X,R^1p_{\ast}(\bar{F}))$ par un monomorphisme de $\bar{F}$
+dans un ind-$\LL$-groupe $\GG$. Il reste à effacer
+$H^1(X,p_{\ast}(\bar{F}))$, ce qui est possible grâce au fait que par
+le\pageoriginale diagramme envisagé, ce dernier terme s'envoie dans
+$H^1(\bar{X},\bar{F})$ par un monomorphisme fonctoriel en $\bar{F}$,
+et que $H^1(\bar{X},\bar{F})$ est encore effaçable grâce à \hyperref[XII.prop3.3]{3.3}.
+
+Il reste à traiter le cas (iii), et pour celui-ci encore nous
+reprenons à rebours la démonstration de \hyperref[XII.prop6.8]{6.8} \footnote[1]{On pourrait
+aussi, au lieu de \hyperref[XII.cor6.3]{6.3}, utiliser la suite spectrale de Leray pour $p$,
+$p_Y$.}. Il faut prouver que l'homomorphisme
+$$
+H^{i}(\bar{X},\bar{F})\longrightarrow
+H^{i}(\bar{Y},\bar{h}^{\ast}(\bar{F}))
+$$
+est un isomorphisme pour $i\leq n$, et un monomorphisme pour
+$i=n+1$. Or les homomorphismes précédents sont induits par un
+homomorphisme de complexes
+$$
+\RR\Gamma_{\bar{X}}(\bar{F})\longrightarrow
+\RR\Gamma_{\bar{Y}}(\bar{h}^{\ast}(\bar{F})){\quoi},
+$$
+déduit d'une résolution injective $C(\bar{F})$ et d'un homomorphisme
+de $\bar{h}^{\ast}(C(\bar{F}))$ (qui est une résolution de
+$h^{\ast}(\bar{F})$) dans une résolution injective de
+$\bar{h}^{\ast}(\bar{F})$. L'homomorphisme ci-dessus s'identifie
+également à l'homomorphisme composé
+$$
+\RR\Gamma_X(Rp_{\ast}(\bar{F}))\longrightarrow
+\RR\Gamma_Y(h^{\ast}(\bar{F}))\longrightarrow
+\RR\Gamma_Y(Rp_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F})){\quoi},
+$$
+où le premier homomorphisme est l'homomorphisme $h^{\ast}$ relatif à
+$\RR p_{\ast}(\bar{F})$, et le deuxième est déduit des
+homomorphismes de changement de base
+$h^{\ast}(\RR p_{\ast}(\bar{F}))\rightarrow
+\RR p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F}))$ en appliquant
+$\RR\Gamma_Y$. Le premier homomorphisme induit donc un
+isomorphisme sur les groupes de cohomologie des complexes envisagés,
+en vertu de l'hypothèse faite sur $h$ et de \hyperref[XII.cor6.3]{6.3} (i). Il en est de même
+pour le deuxième, en vertu de l'hypothèse que nous avons faite sur les
+homomorphismes de changement de base, en utilisant l'argument donné
+dans la démonstration de \hyperref[XII.prop6.8]{6.8} (iii). Par suite, la même conclusion
+s'applique au composé des deux, ce qui achève de prouver \hyperref[XII.prop6.11]{6.11}.
+
+\begin{enonce*}[remark]{Remarque 6.12}\etiquette[6.12]{XII.rem6.12}
+L'argument\pageoriginale donné pour \hyperref[XII.prop6.11]{6.11} dans les cas (i) et (iii)
+donne encore un résultat plus précis: pour pouvoir conclure, pour un
+faisceau $\bar{F}$ \emph{donné} sur $\bar{X}$, que
+$H^{i}(\bar{X},\bar{F})\rightarrow
+H^{i}(\bar{Y},\bar{h}^{\ast}(\bar{F}))$ est bijectif pour $i\leq n$,
+injectif pour $i=n+1$, il suffit de supposer
+\begin{itemize}
+\item[$1^{\circ}$)] l'homomorphisme de changement de base
+$h^{\ast}(R^{i}p_{\ast}(\bar{F}))\rightarrow
+R^{i}p_{Y^{\ast}}(\bar{h}^{\ast}(\bar{F}))$ est un isomorphisme pour
+$i\leq n$, un monomorphisme pour $i=n+1$, et
+
+\item[$2^{\circ}$)] pour tout couple d'entiers $i$, $j\geq 0$,
+l'homomorphisme $H^{i}(X,\RR^jp_{\ast}(\bar{F}))\rightarrow
+H^{i}(Y,h^{\ast}(\RR^jp_{\ast}(\bar{F}))$ induit par $h$ est un
+isomorphisme si $i+j\leq n$, un monomorphisme si $i+j=n+1$.
+\end{itemize}
+
+Il est plausible qu'on a un résultat analogue dans le cas (ii), mais
+son énoncé devrait nécessairement faire intervenir de la 2-cohomologie
+non commutative. C'est pour éviter le recours à cette théorie que nous
+avons utilisé un argument différent dans \hyperref[XII.cor6.10]{6.10} (ii), utilisant les
+propriétés d'effaçabilité du $H^1$ non commutatif, argument qui ne
+donne pas en revanche de résultat, comme ci-dessus, pour un $\bar{F}$ fixé.
+\end{enonce*}
+
+\begin{enonce*}[remark]{Remarques 6.13}\etiquette[6.13]{XII.rems6.13}
+Le cas le plus important où les conditions de \hyperref[XII.prop6.5]{6.5} (i) (ii) (iii) sont
+remplies est celui envisagé dans \hyperref[XII.cor5.5]{5.5}, qui sera prouvé dans l'exposé
+suivant en utilisant les réductions faites dans le présent exposé. Un
+autre cas intéressant (où $h$ n'est plus une immersion fermée comme
+dans \hyperref[XII.cor5.5]{5.5} sera étudié dans $XV$. Signalons également le cas, assez voisin
+de 5.5, où $X$ est le spectre d'un anneau noethérien, séparé et
+complet pour la topologie définie par un idéal $J$, et où $Y=\Spec
+(A/J)$ est le sous-schéma fermé de $X$ défini par $J$. On vérifie
+alors directement les conditions de \hyperref[XII.prop6.5]{6.5} (ii) (avec
+$\LL=\PP$) sous la forme\pageoriginale ${\rm b''}$) (\EGA
+IV 18.3.2); il est très plausible que les conditions de \hyperref[XII.prop6.5]{6.5} (iii) sont
+également vérifiées pour tout $n$, \ie que pour tout faisceau de
+torsion $F$ sur $X$, les homomorphismes $H^n(X,F)\rightarrow
+H^n(Y,F|Y)$ soient bijectifs. On peut faire des conjectures
+considérablement plus générales, liées à une généralisation à des
+schémas non locaux de la construction de hensélisation. Tout d'abord,
+notons qu'on ne connaît pas d'exemple, $h$ étant une immersion fermée,
+où les conditions de \hyperref[XII.prop6.5]{6.5} (ii) (iii) ne soient satisfaites (avec
+$\LL=\PP$) lorsque la condition respée de \hyperref[XII.prop6.5]{6.5} (i) l'est,
+c'est-à-dire lorsque le couple $(X,Y)$ est un \emph{couple hensélien}
+dans la terminologie de (\EGA IV 18.5.5); on peut donc conjecturer
+qu'un tel couple satisfait aux conditions de \hyperref[XII.prop6.5]{6.5} (ii) (iii) (avec
+$\LL=\PP$, tout $n$). D'autre part, on peut se demander
+sous quelles conditions la propriété suivante pour un couple $(X,Y)$
+d'un schéma $X$ quasi-complet et quasi-séparé et d'un sous-schéma
+fermé $Y$ implique que le couple est hensélien:
+
+$(\ast)$ Pour tout schéma $X'$ étale sur $X$, posant
+$Y'=\fprod{X'}{Y}{X}$, l'application canonique
+$\Gamma(Y'/Y)\rightarrow \Gamma(X'/X)$ est bijective.
+(\Cf \EGA IV 18.5.4 b)). Cette condition est évidemment plus faible à
+priori que la condition hensélienne \hyperref[XII.prop6.5]{6.5} (i); elle est même strictement
+plus faible, car elle est vérifiée par exemple si $X$ est un schéma
+projectif normal irréductible de dimension $\geq 2$ sur un corps $k$,
+et $Y$ une section hyperplane de $X$ (comme il résulte facilement de
+\SGA 2 XII 2.1, où on fait $S=\Spec(k)$), mais évidemment le couple
+$(X,Y)$ n'est pas hensélien. Il est possible par contre que si $X$ est
+affine, la condition $(\ast)$ implique que $(X,Y)$ est un couple
+hensélien; s'il en était ainsi, pour tout schéma affine $X$ et tout
+partie fermée $Y$ de $X$, un\pageoriginale procédé de localisation
+étale le long dé $Y$, analogue à celui de la hensélisation des anneaux
+locaux, devrait permettre de lui associer un couple \emph{hensélien}
+$(X',Y)$, où $X'$ est « proétale »  sur $X$. Une autre hypothèse
+sur $(X,Y)$ (suggérée par des résultats de Hironaka et Rossi sur la
+contractibilité de certaines sous-variétés de variétés algébriques),
+qui permettrait peut-être de déduire la propriété hensélienne de la
+propriété plus faible $(\ast)$, est la suivante: l'immersion
+$Y\rightarrow X$ est régulière de codimension 1, et le faisceau
+conormal $\NN_{Y/X}=\JJ/\JJ^2$ (où $\JJ$ est l'idéal qui définit $Y$
+dans $X$) est un faisceau inversible \emph{ample} sur $Y$. (NB. Dans
+le cas du contre-exemple envisagé plus haut, ce faisceau conormal
+était un contraire anti-ample, \ie son inverse étant ample).
+\end{enonce*}
+
+\begin{NoHyper}
+\footnotetext{Le lecteur qui ne s'intéresse aux énoncés du par. 5
+que dans le cas noethérien peut omettre la lecture du présent numéro.}
+\end{NoHyper}
+\section{Une variante du Lemme de Chow ${}^{(*)}$.}\etiquette[7]{XII.sec7}
+
+Nous aurons besoin de la variante suivante de (\EGA II 5.6.1)
+débarrassée de toutes hypothèses noethérienne ou d'irréductibilité.
+
+\begin{enonce*}{Lemme 7.1}\etiquette[7.1]{XII.lem7.1}
+Soit $S$ un schéma quasi-compact et quasi-séparé, et $f:X\rightarrow
+S$ un morphisme séparé de type fini, avec $X$ non vide. Il existe un
+diagramme commutatif
+$$
+\xymatrix@=1.25cm{
+X \ar[rd]_{f}&    &\bar{X}\ar[ll]_{\pi}\ar[ld]^{\bar{f}}\\
+  &  S & 
+}
+$$
+avec\pageoriginale $\pi$ projectif et $\bar{f}$ quasi-projectif, et un
+ouvert non-vide $U$ de $X$, tels que $\pi$ induise un isomorphisme de
+$\bar{U}=\fprod{U}{\bar{X}}{X}=\pi^{-1}(U)$ sur $U$.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. Notons d'abord: Soit $i:X'\rightarrow X$ un
+sous-schéma fermé de $X/S$ et $V\subset X'$ un sous-schéma ouvert dans
+$X$ et dense dans $X'$. Si le lemme est vrai pour $X'$, il l'est pour
+$X$. En effet, soit
+$$
+\xymatrix@=1.25cm{
+X' \ar[rd]_{f'}&    &\bar{X}'\ar[ll]_{\pi'}\ar[ld]^{\bar{f}'}\\
+  &  S & 
+}
+$$
+un diagramme comme dans l'énoncé, et $U'\neq \phi$ un ouvert de $X'$
+tel que $\pi'$ induise un isomorphisme
+$\bar{U}'={\pi'}^{-1}(U')\rightarrow U'$. Puisque $V$ est dense dans
+$X'$, $U'\cap V\neq \phi$ et on peut donc remplacer $U'$ par cet
+ouvert. Alors $U'$ est un ouvert de $X$, et on pose $\pi=i \pi'$,
+$\bar{f}=\bar{f}'$, $U=U'$.
+
+Or il existe un recouvrement fini de $X$ par des ouverts affines non
+vides $U_k$, $k=1,\ldots,n$; de l'hypothèse sur $S$ résulte que chaque
+$U_k\rightarrow S$ est quasi-affine, et a fortiori
+quasi-compact. Démontrons le théorème pour tout $X$, par récurrence
+sur $n$: Si l'intersection $U$ des $U_k$ est dense dans $X$ on peut
+copier la démonstration de (\EGA II 5.6, B, C, D), tenant compte des
+modifications de la notation. Si l'intersection est non-vide, on se
+ramène au cas où elle est dense en remplaçant $X$ par l'adhérence
+$X'$ de $U$ (\cf plus haut), et $U_k$ par $U'_k=U_k\cap X'$. Supposons
+enfin que $U$ soit vide et choisissons $r$, $1\leq r\leq n$, tel que
+$V=\cap^n_{k=1}U_k\neq \phi$ mais $V\cap U_{r+1}=\phi$ - c'est
+évidemment possible puisque $U_1\neq \phi$. Nous pouvons maintenant
+remplacer $X$ par l'adhérence $X'$ de $V$ et les $U$ par les $U_k\cap
+V$ non-vides. Comme alors $U_{r+1}\cap V$ est vide, on obtient le
+résultat par l'hypothèse de récurrence.
+
+\section{Réductions définitives}\etiquette[8]{XII.sec8}\pageoriginale
+
+\begin{enonce*}{Lemme 8.1}\etiquette[8.1]{XII.lem8.1}
+Pour prouver l'un des énoncés {\rm \hyperref[XII.thm5.1]{5.1} (i) (ii) (iii)}, il suffit de
+le faire lorsque l'on suppose $f$ \emph{projectif} et $S$ noethérien.
+\end{enonce*}
+
+Supposons d'abord \hyperref[XII.thm5.1]{5.1} démontré pour $f$ projectif, montrons comment on
+en conclut le même énoncé pour tout $f$. Utilisant \hyperref[XII.lem6.1]{6.1}, on est réduit
+au cas de \hyperref[XII.cor5.5]{5.5}, avec $S$ strictement local. Appliquons maintenant \hyperref[XII.cor6.10]{6.10}
+en faisant $Y=X_{\circ}$. Étant donné $(\xi, X')$ comme énoncé dans
+\hyperref[XII.cor6.10]{6.10}, nous appliquons le lemme de Chow \hyperref[XII.lem7.1]{7.1} pour trouver un
+$S$-morphisme $p:\bar{X}\rightarrow X'$, avec $\bar{X}$ projectif sur
+$S$, tel que $p(\bar{X})$ contienne un ouvert non vide de $X'$
+(condition $1^{\circ}$) de \hyperref[XII.cor6.10]{6.10}). Comme $p$ est projectif, par
+hypothèse les homomorphismes de changement de base pour $(p,h)$ sont
+des isomorphismes (condition $2^{\circ}$) de \hyperref[XII.cor6.10]{6.10}). Enfin, comme $X$
+est projectif sur $S$, par hypothèse le morphisme d'inclusion
+$\bar{Y}=\bar{X}_{\circ}\rightarrow \bar{X}$ induit un isomorphisme
+pour les groupes de cohomologie $H^{i}(\bar{X},\bar{F})\rightarrow
+H^{i}(\bar{X}_{\circ},\bar{h}^{\ast}(\bar{F}))$, (condition
+$3^{\circ}$) de \hyperref[XII.cor6.10]{6.10}). Donc les conditions de \hyperref[XII.cor6.10]{6.10} sont bien
+satisfaites, d'où la conclusion.
+
+Montrons maintenant que pour vérifier l'un des trois énoncés \hyperref[XII.thm5.1]{5.1} pour
+toute situation $(f,F,g)$, avec $f$ projectif, on peut supposer de
+plus que $S$ est noethérien. Pour ceci, on note qu'on peut supposer
+grâce à \hyperref[XII.lem6.1]{6.1} que $S$ est strictement local et que $S'\rightarrow S$ est
+l'inclusion du point fermé, et on est ramené à vérifier l'énoncé \hyperref[XII.cor5.5]{5.5}
+avec $S$ strictement local. De plus, comme $X$ se plonge dans le
+schéma projectif-type $\PP^r_S$, on peut (grâce à la compatibilité \hyperref[XII.prop4.4]{4.4}
+(ii)) remplacer $X$ par $\PP^r_S$, $F$ par son image dans $\PP^r_S$,
+ce qui nous ramène au cas où $X=\PP^r_S$. Notons que $A$ est limite
+inductive filtrante de sous-anneaux\pageoriginale locaux henséliens
+noethériens $A_i$ tels que l'homomorphisme d'inclusion $A_i\rightarrow
+A$ soit local: prendre les hensélisés stricts des sous-$\ZZ$-algèbres
+de type fini de $A$ en les idéaux premiers induits par l'idéal maximal
+de $A$. Sous ces conditions, le corps résiduel $k$ de $A$ est
+également la limite inductive des corps $k$ des $A_i$ (\EGA IV
+5.13.1). Soient $S=\Spec (A_i)$, $X_i=\PP^r_{S_i}$, et supposons
+donné un système inductif $(F_i)$ de faisceaux d'ensembles
+(\resp\ldots) sur les $X_i$ comme dans VII 5.7, et soit $F$ le
+faisceau qu'il définit sur $X$. Soit $F_{i\circ}$ (\resp $F_{\circ}$)
+le faisceau induit par $F_i$ sur la fibre $X_{i\circ}$ du point fermé
+$s_i$ de $S_i$ (\resp sur la fibre $X_{\circ}$ du point fermé $s$ de
+$S$). Alors on a un diagramme commutatif
+$$
+\xymatrix{
+\displaystyle\mathop{\varinjlim}_{i} H^{n}(X_i,F_i) \ar[r] \ar[d]&
+H^{n}(X,F)\ar[d]\\ 
+\displaystyle\mathop{\varinjlim}_{i} H^{n}(X_{i0},F_{i0}) \ar[r] &
+H^{n}(X_0,F_0), 
+}
+$$
+dont les deux flèches horizontales sont des isomorphismes, en vertu de
+VII 5.7. Par suite, pour prouver que la deuxième flèche verticale est
+un isomorphe, il suffit de le prouver pour la première, donc il suffit
+de prouver que les homomorphismes $H^n(X_i,F_i)\rightarrow
+H^n(X_{i\circ},F_{i\circ})$ sont des isomorphismes. D'autre part, tout
+faisceau d'ensembles (\resp\ldots) $F$ sur $X$ est isomorphe à la
+limite d'un système inductif comme ci-dessus, en prenant par exemple
+$F_i=u_{i^{\ast}}(F)$, $u_i:X\rightarrow X_i$ étant le morphisme
+canonique, en vertu de (\hyperref[XII.cor5.2]{5.2}) et (\hyperrefext[IX][IX.prop1.6]{1.6}
+(iii)). Cela achève la 
+démonstration de \hyperref[XII.lem8.1]{8.1}.
+
+\begin{enonce*}{Corollaire 8.2}\etiquette[8.2]{XII.cor8.2}
+Le théorème {\rm 5.1 (i)} est vrai.
+\end{enonce*}
+
+En effet, il suffit de conjuguer \hyperref[XII.lem8.1]{8.1}, le critère \hyperref[XII.prop6.5]{6.5} (i) ${\rm b''}$), et \hyperref[XII.lem5.8]{5.8}.
+
+\begin{enonce*}{Lemme 8.3}\etiquette[8.3]{XII.lem8.3}
+Pour\pageoriginale prouver l'un des énoncés {\rm \hyperref[XII.thm5.1]{5.1} (i) (ii) (iii)},
+il suffit de le faire lorsqu'on suppose $f$ projectif de dimension
+relative $\leq 1$, et $S$ noethérien.
+\end{enonce*}
+
+En effet, nous savons déjà par \hyperref[XII.lem8.1]{8.1} qu'on peut se borner au cas $f$
+projectif, $S$ noethérien, et un argument déjà signalé nous permet de
+supposer de plus qu'on a $X=\PP^r_S$. Nous procédons alors par
+récurrence sur $r$, en notant que le théorème est vrai par hypothèse
+pour $r=1$. On peut donc supposer $r\geq 2$, et le théorème démontré
+pour $\PP^{r-1}_S\rightarrow S$ (toute base $S$). Considérons
+$Z=\PP^{r-2}_S$ comme plongé dans $X=\PP^r_S$ de la façon
+habituelle, et soit $p:\bar{X}\rightarrow X$ obtenu en faisant éclater
+$Z$ dans $X$. Un calcul immédiat (\cf \EGA V) montre que l'on a un
+morphisme naturel $p_1:\bar{X}\rightarrow X_1=\PP^1_S$, qui fait de
+$\bar{X}$ un $X_1$-schéma localement isomorphe à $\PP^{r-1}_{X_1}$
+(c'est le fibré projectif sur $X_1$ associé à un faisceau localement
+libre de rang $r$ convenable sur $X_1$). D'autre part, les fibres de
+$p$ sont de dimension $\leq 1$, ainsi que celles de
+$f_1:X_1\rightarrow X$. Nous pouvons donc appliquer l'hypothèse, et
+l'hypothèse de récurrence, aux trois morphismes $p$, $p_1$, $f_1$ dans
+le diagramme commutatif
+$$
+\xymatrix{
+   & \bar{X} \ar[ld]_{p} \ar[rd]^{p_1} &          \\
+ X \ar[rd]_{f}&           & X_1\ar[ld]^{f_1}\\
+   &    S      &       
+}$$
+Comme $p$ est surjectif, le lemme \hyperref[XII.prop6.8]{6.8} nous ramène à prouver \hyperref[XII.thm5.1]{5.1} pour
+le composé $\bar{f}=fp=f_1p_1$. Or nous pouvons déjà appliquer \hyperref[XII.thm5.1]{5.1} aux
+deux morphismes $f_1$ et $p_1$. Compte tenu de \hyperref[XII.prop6.11]{6.11}, on en conclut que
+\hyperref[XII.thm5.1]{5.1} est vrai également pour leur composé $f_1p_1$. Cela achève la
+démonstration de \hyperref[XII.lem8.3]{8.3}.
+
+\begin{enonce*}{Lemme 8.4}\etiquette[8.4]{XII.lem8.4}
+Pour\pageoriginale démontrer {\rm \hyperref[XII.thm5.1]{5.1} (ii)}, il suffit de
+démontrer le 
+« théorème de spécialisation pour le groupe fondamental » {\rm
+\hyperref[XII.thmbis5.9]{5.9 bis}}, dans le cas où $f$ est projectif de
+dimension relative $\leq 
+  1$, et où $S$ est strictement local noethérien.
+\end{enonce*}
+
+Cela résulte en effet aussitôt de \hyperref[XII.lem8.3]{8.3}, \hyperref[XII.lem6.1]{6.1}
+et \hyperref[XII.prop6.5]{6.5} (ii) (critère b)). 
+
+On démontrera directement le théorème de spécialisation, dans le cas
+\hyperref[XII.lem8.4]{8.4}, dans l'exposé suivant (\hyperrefext[XIII][XIII.sec2]{2}).
+
+\begin{enonce*}{Lemme 8.5}\etiquette[8.5]{XII.lem8.5}
+Pour démontrer {\rm \hyperref[XII.thm5.1]{5.1} (iii)}, il suffit de démontrer
+{\rm \hyperref[XII.thm5.1]{5.1} (ii)} 
+et, de plus, la proposition suivante (qui sera démontrée dans l'exposé
+suivant {\rm (\hyperrefext[XIII][XIII.sec3]{3})} ou {\rm(\EGA IV 21.9.12)}):
+\end{enonce*}
+
+\begin{enonce*}{Proposition 8.6}\etiquette[8.6]{XII.prop8.6}
+Soit $S$ hensélien et noethérien, $f:X\rightarrow S$ projectif de
+dimension relative $\leq 1$, et $X_{\circ}$ la fibre fermée de
+$X/S$. Pour tout schéma $Z$, soit $\Pic Z=H^1(Z,(G_m)_Z)$ le groupe de
+Picard de $Z$. Le morphisme de restriction
+$$
+\Pic X\longrightarrow \Pic X_{\circ}
+$$
+est surjectif.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration de} \hyperref[XII.lem8.5]{8.5}. D'après \hyperref[XII.prop6.5]{6.5} 
+(iii) et \hyperref[XII.cor8.2]{8.2}, il suffit de démontrer que
+$$
+\varphi^q:H^q(X,\ZZ/\ell^\nu \ZZ)\longrightarrow
+H^q(X_{\circ},\ZZ/\ell^{\nu}\ZZ)
+$$
+est surjectif pour tout $q\geq 1$, et tout nombre premier 1. Or on
+connaît la surjectivité si $q=1$, d'après \hyperref[XII.thm5.1]{5.1} (ii). De
+plus, puisque 
+$X_{\circ}$ est un schéma projectif de dimension $\leq 1$ sur un corps
+$k$ séparablement clos, on a
+$$
+H^q(X_{\circ},\ZZ/\ell^{\nu}\ZZ)=0
+$$
+si $q>2$ dans le cas $\ell\neq \car. k$ (\hyperrefext[X][X.cor4.3]{4.3}), et si $q>1$ dans le
+cas $\ell=\car. k$ (\hyperrefext[X][X.cor5.2]{5.2}). La surjectivité est donc triviale pour ces
+valeurs de $q$! 
+
+Il\pageoriginale reste à traiter le cas $q=2$ et $\ell\neq
+\car.k$. Notons $n=\ell^{\nu}$. Comme le faisceau des racines
+$n$-ièmes de l'unité $(𝛍_n)_S$ est localement
+isomorphe à $(\ZZ/n)_S$, et que $S$ est strictement local, il
+existe un isomorphisme (non canonique)
+$(𝛍_n)_S\simeq (\ZZ/n\ZZ)_S$ d'où
+$(𝛍_n)_X\simeq (\ZZ/n\ZZ)_X$.
+
+Par théorie de Kummer \hyperrefext[IX][IX.Thr3.2]{3.2} appliquée à $X$ et $X_{\circ}$, on a un
+morphisme de suites exactes
+$$
+\xymatrix@R=1.5cm{
+\Pic X \ar[r] \ar[d]^{\epsilon}& H^{2}(X, {\phantom{a}}_n) \ar[d]^{\varphi^2}\ar[r]& H^{2}(X,G_m)\ar[d]\\
+\Pic X_0 \ar[r]& H^2(X_0, {\phantom{a}}_n) \ar[r]& H^2(X_0,G_m).
+}
+$$
+Or $H^2(X_{\circ},G_m)=0$ d'après \hyperrefext[IX][IX.thm4.6]{4.6}. Donc la surjectivité de
+$\epsilon$ implique celle de $\varphi^2$, d'où le lemme.
+
+\begin{thebibliography}{99}
+\bibitem{SGA4-12:1} \textsc{Giraud} J., Cohomologie non-abélienne, thèse (à
+paraître), et deux notes aux C.R. t.260, p.2392 et 2656 (1965).
+
+\bibitem{SGA4-12:2} \textsc{Godement} R., Théorie des faisceaux, Paris (1958).
+
+\bibitem{SGA4-12:3} \textsc{Verdier} J.L., Catégories dérivées, Institut des
+Hautes Études Scientifiques (1964).
+\end{thebibliography}
+
+\ifx\danslelivre\undefined
+\end{document}
+\fi

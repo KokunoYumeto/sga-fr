@@ -1,0 +1,66 @@
+{
+  "findings": [
+    {
+      "page": 43,
+      "where": "Titre de l'exposé",
+      "scan": "DIMENSION COHOMOLOGIQUE : PREMIERS RESULTATS",
+      "tex": "Dimension cohomologique : premier résultats",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "premier résultats",
+        "new": "premiers résultats"
+      },
+      "note": "Il manque le s de « premiers » dans le TeX."
+    },
+    {
+      "page": 43,
+      "where": "Signature sous le titre",
+      "scan": "par M. ARTIN",
+      "tex": "M. Artin",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "M. Artin\n\\end{center}",
+        "new": "par M. Artin\n\\end{center}"
+      },
+      "note": "Le mot « par » manque devant le nom de l'auteur."
+    },
+    {
+      "page": 43,
+      "where": "Entre la signature et la section 1",
+      "scan": "Sommaire : 1. Introduction ; 2. Résultats auxiliaires pour un corps ; 3. Corps des fractions d'un anneau strictement local ; 4. Dimension cohomologique : cas \\ell inversible dans \\mathcal{O}_X ; 5. Dimension cohomologique : cas \\ell=p. ; 6. Dimension cohomologique pour un préschéma de type fini sur \\Spec\\mathbf{Z}.",
+      "tex": "\\section{Introduction}",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\section{Introduction}",
+        "new": "\\noindent Sommaire :\n\\begin{enumerate}\n\\item Introduction\n\\item Résultats auxiliaires pour un corps\n\\item Corps des fractions d'un anneau strictement local\n\\item Dimension cohomologique : cas $\\ell$ inversible dans $\\mathcal{O}_X$\n\\item Dimension cohomologique : cas $\\ell=p$.\n\\item Dimension cohomologique pour un préschéma de type fini sur $\\Spec\\mathbf{Z}$.\n\\end{enumerate}\n\n\\section{Introduction}"
+      },
+      "note": "Le sommaire imprimé, comprenant son intitulé et ses six entrées, est entièrement absent du TeX."
+    },
+    {
+      "page": 45,
+      "where": "Démonstration de 2.1, avant la distinction des cas a) et b)",
+      "scan": "implique",
+      "tex": "\\sisi{implique}{impliquent}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "impliquent",
+      "note": "L'imprimé porte le singulier « implique » après les deux hypothèses coordonnées. Le premier argument de \\sisi reproduit bien cette lecture ; l'édition corrige l'accord au pluriel."
+    },
+    {
+      "page": 45,
+      "where": "Cas a), définition du groupe de Galois H",
+      "scan": "$H=G(\\widetilde{k}/k')$",
+      "tex": "$H=G(\\bar{k}/k')$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$H=G(\\bar{k}/k')$",
+      "note": "L'imprimé met un tilde sur le k dans la définition de H, tandis que le groupe G qui suit utilise bien la clôture algébrique \\bar{k}. Il faut également \\bar{k} pour H ; le TeX corrige silencieusement cette coquille."
+    }
+  ],
+  "coordinator": "43 : 3/0 ; 44 : 0/0 ; 45 : 0/2 (normal/misprint)"
+}

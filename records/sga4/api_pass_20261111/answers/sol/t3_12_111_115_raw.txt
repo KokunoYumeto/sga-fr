@@ -1,0 +1,167 @@
+{
+  "findings": [
+    {
+      "page": 111,
+      "where": "Remarque 6.7, 2), « on peut même les prendre… »",
+      "scan": "les prendre intègre et normaux",
+      "tex": "les prendre intègre et\nnormaux",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "les prendre intègres et normaux",
+      "note": "Faute d’accord dans l’imprimé, conservée par le TeX : « intègres » doit être au pluriel."
+    },
+    {
+      "page": 112,
+      "where": "Remarque 6.7, 3), parenthèse donnant la construction de G et H",
+      "scan": "on prendra pour F",
+      "tex": "on prendre pour $F$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "on prendre pour $F$",
+        "new": "on prendra pour $F$"
+      },
+      "note": "Le verbe imprimé est « prendra »."
+    },
+    {
+      "page": 112,
+      "where": "Même parenthèse, lettre désignant le Module libre",
+      "scan": "pour F le Z/ℓZ-Module libre engendré par F",
+      "tex": "pour $F$ le $\\ZZ/\\ell\n\\ZZ$-Module libre engendré par $F$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "pour $G$ le $\\ZZ/\\ell\\ZZ$-Module libre engendré par $F$",
+      "note": "Le premier F doit être G, l’un des deux faisceaux que l’on construit. Le TeX conserve la lettre fautive de l’imprimé."
+    },
+    {
+      "page": 113,
+      "where": "Proposition 6.8, introduction, morphisme canonique vers Y",
+      "scan": "p_Y",
+      "tex": "p_y",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "p_y:",
+        "new": "p_Y:"
+      },
+      "note": "L’indice imprimé est un Y majuscule."
+    },
+    {
+      "page": 113,
+      "where": "Proposition 6.8 (i), conclusion après la formule (*)",
+      "scan": "h:X\\rightarrow Y",
+      "tex": "h:X\\rightarrow Y",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "h:Y\\rightarrow X",
+      "note": "L’imprimé inverse la source et le but de h ; le TeX conserve cette coquille. Le sens correct est celui donné en (ii) et (iii)."
+    },
+    {
+      "page": 114,
+      "where": "Démonstration de 6.8, première phrase",
+      "scan": "X=p(\\bar{X})\\cup h(Y)",
+      "tex": "X=p(\\bar{x})\\cup h(Y)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "p(\\bar{x})",
+        "new": "p(\\bar{X})"
+      },
+      "note": "Le X sous la barre est majuscule dans l’imprimé."
+    },
+    {
+      "page": 114,
+      "where": "Cas (i), application dont on vérifie l’injectivité, avant le diagramme",
+      "scan": "H^0(X,F)\\rightarrow H^0(Y,h^{\\ast}(F))",
+      "tex": "H^{\\circ}(X,F)\\rightarrow H^{\\ast}(Y,h^{\\ast}(F))",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "H^{\\ast}(Y,h^{\\ast}(F))",
+        "new": "H^{\\circ}(Y,h^{\\ast}(F))"
+      },
+      "note": "L’exposant du second H est zéro, non un astérisque."
+    },
+    {
+      "page": 114,
+      "where": "Diagramme commutatif, sommet supérieur droit",
+      "scan": "H^{\\circ}(Y,h^{\\ast}(\\bar{F}))",
+      "tex": "H^{\\circ}(Y,h^{\\ast}(\\bar{F}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{\\circ}(Y,h^{\\ast}(p_{\\ast}(\\bar{F})))",
+      "note": "L’imprimé omet p_* dans ce terme, et le TeX conserve l’omission. Le faisceau sur X auquel on applique h^* est p_*(\\bar F), non \\bar F."
+    },
+    {
+      "page": 115,
+      "where": "Diagramme de suites exactes, premier terme de la ligne inférieure",
+      "scan": "H^{1}(Y,p_{Y_{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))",
+      "tex": "H^{1}(Y,p_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{1}(Y,p_{Y_{\\ast}}(\\bar{h}^{\\ast}(\\bar{F})))",
+      "note": "La parenthèse extérieure de H^1 n’est pas refermée dans l’imprimé. Le TeX conserve cette omission."
+    },
+    {
+      "page": 115,
+      "where": "Diagramme de suites exactes, dernier terme de la ligne inférieure",
+      "scan": "H^{0}(Y,R^{1}(p_{Y_{\\ast}}(\\bar{h}^{\\ast}(\\bar{F})))",
+      "tex": "H^{0}(Y,R^{1}(p_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{0}(Y,R^{1}(p_{Y_{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))))",
+      "note": "Il manque la dernière parenthèse fermante dans l’imprimé. Le TeX la rétablit silencieusement."
+    },
+    {
+      "page": 115,
+      "where": "Après le diagramme, premier des deux termes par lesquels les flèches se factorisent",
+      "scan": "H^1(Y,h^{\\ast}(p_{\\ast}(\\bar{F}))",
+      "tex": "H^1(Y,h^{\\ast}(p_{\\ast}(\\bar{F}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^1(Y,h^{\\ast}(p_{\\ast}(\\bar{F})))",
+      "note": "La parenthèse extérieure de H^1 manque dans l’imprimé ; le TeX conserve ce parenthésage incomplet."
+    },
+    {
+      "page": 115,
+      "where": "Même phrase, second terme de factorisation",
+      "scan": "H^{\\circ}(Y,h^{\\ast}(R^1(p_{\\ast}(\\bar{F}))",
+      "tex": "H^{\\circ}(Y,h^{\\ast}(R^1(p_{\\ast}(\\bar{F}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{\\circ}(Y,h^{\\ast}(R^1(p_{\\ast}(\\bar{F}))))",
+      "note": "Deux parenthèses fermantes manquent pour refermer h^* et H^0. Le TeX conserve l’erreur de l’imprimé."
+    },
+    {
+      "page": 115,
+      "where": "« en composant les homomorphismes », exposant du terme d’arrivée",
+      "scan": "H^{i}(X,-)\\rightarrow H^1(Y,-)",
+      "tex": "H^{i}(X,-)\\rightarrow H^1(Y,-)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{i}(X,-)\\rightarrow H^{i}(Y,-)",
+      "note": "L’exposant imprimé 1 doit être i, puisque la phrase traite aussi de i=0. Le TeX conserve 1."
+    },
+    {
+      "page": 115,
+      "where": "Identification de la première flèche verticale, près du bas de la page",
+      "scan": "H^1(C,-)\\rightarrow H^1(Y,-)",
+      "tex": "H^1(C,-)\\rightarrow H^1(Y,-)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^1(X,-)\\rightarrow H^1(Y,-)",
+      "note": "Le C imprimé doit être X. Le TeX conserve cette coquille."
+    }
+  ],
+  "coordinator": "Comptes normal/misprint : 111 : 0/1 ; 112 : 1/1 ; 113 : 1/1 ; 114 : 2/1 ; 115 : 0/6."
+}

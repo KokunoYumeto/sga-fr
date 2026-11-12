@@ -1,0 +1,122 @@
+[
+ {
+  "page": 86,
+  "where": "first line",
+  "scan": "Dans le cas de \"coefficients constant\"",
+  "tex": "« coefficients constant »",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "« coefficients constants »",
+  "note": "Agreement error in the print. The TeX keeps the printed reading."
+ },
+ {
+  "page": 86,
+  "where": "item 4, before (4.1)",
+  "scan": "le faisceau contient C",
+  "tex": "le faisceau constant $\\CC$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "le faisceau constant $\\CC$",
+  "note": "The print has 'contient', a typing error for 'constant'. The TeX corrects it silently."
+ },
+ {
+  "page": 86,
+  "where": "formula (4.1)",
+  "scan": "H^q(X_p, C) ══> H^{p+q}(X, C) (heavy double arrow of a spectral sequence)",
+  "tex": "\\longrightarrow",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "H^q(X_p, \\CC) \\longrightarrow H^{p+q}(X, \\CC)",
+   "new": "H^q(X_p, \\CC) \\Longrightarrow H^{p+q}(X, \\CC)"
+  },
+  "note": "The print's arrow in (4.1) is the heavy double arrow of convergence, not a simple arrow."
+ },
+ {
+  "page": 87,
+  "where": "last paragraph before §1",
+  "scan": "des sytèmes simpliciaux d'espaces",
+  "tex": "des systèmes simpliciaux d'espaces",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "systèmes",
+  "note": "Typing error in the print. The TeX corrects it silently."
+ },
+ {
+  "page": 88,
+  "where": "1.1.2, end",
+  "scan": "chacun de ces foncteurs est définit",
+  "tex": "est défini",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "défini",
+  "note": "The print has 'définit'. The TeX corrects it silently."
+ },
+ {
+  "page": 88,
+  "where": "Définition 1.2.1",
+  "scan": "au-dessus de D où que E est un D-topos",
+  "tex": "au-dessus de $D$ ou que $E$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "ou que",
+  "note": "The print has 'où', with an accent. The TeX corrects it silently to 'ou'."
+ },
+ {
+  "page": 89,
+  "where": "Remarque 1.2.3 (b)",
+  "scan": "Pour tout morphisme m : i → j de D",
+  "tex": "$m : i \\to j$ dans $D$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$m : i \\to j$ dans $D$, le foncteur",
+   "new": "$m : i \\to j$ de $D$, le foncteur"
+  },
+  "note": "The print reads 'de D', not 'dans D'."
+ },
+ {
+  "page": 89,
+  "where": "Remarque 1.2.3 (b)",
+  "scan": "le foncteur m* est exact à droite.",
+  "tex": "est exact à gauche",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "exact à\n    gauche",
+   "new": "exact à\n    droite"
+  },
+  "note": "The print says 'à droite', which is correct by duality. The TeX changed it to 'à gauche' without \\sisi."
+ },
+ {
+  "page": 90,
+  "where": "1.2.7, 'Enfin si X et X'...'",
+  "scan": "un morphisme fonctoriel. Nous introduirons pour des raisons techniques",
+  "tex": "un morphisme fonctoriel nous introduirons",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "un morphisme fonctoriel nous introduirons",
+   "new": "un morphisme fonctoriel. Nous introduirons"
+  },
+  "note": "The full stop and the new sentence are missing in the TeX."
+ },
+ {
+  "page": 90,
+  "where": "1.2.8",
+  "scan": "la catégorie Hom_D(D,E) with Hom underlined",
+  "tex": "$\\Hom_D (D, E)$",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "catégorie $\\Hom_D (D, E)$",
+   "new": "catégorie $\\Hhom_D (D, E)$"
+  },
+  "note": "The print underlines this Hom, as it underlines Γ just before; the TeX renders that underlined Γ as \\Ysheaf{\\Gamma}."
+ }
+]

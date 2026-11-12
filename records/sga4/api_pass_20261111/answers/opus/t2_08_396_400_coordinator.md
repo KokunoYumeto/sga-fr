@@ -1,0 +1,1 @@
+p396: 2/0; p397: 2/1; p398: 1/0; p399: 0/2; p400: 1/3. Convention: the TeX renders the print's underlined E as ℰ (p397: ℰ in 'Si ℰ est un topos' and in φ = ℰ → (Ens); p400: ℰ_{/Y} in 7.9.2); the one plain $E$ for an underlined E (p397, 'du topos E') is reported.

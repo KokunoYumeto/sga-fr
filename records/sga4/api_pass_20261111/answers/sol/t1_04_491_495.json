@@ -1,0 +1,117 @@
+[
+ {
+  "page": 491,
+  "where": "Formula (10.2.1), right-hand member",
+  "scan": "\\Hom_E(Z,\\scrHom_E(X,Y))\\simeq \\scrHom_E(Z\\times X,Y)",
+  "tex": "\\Hom_E(Z,\\scrHom_E(X,Y))\\simeq \\scrHom_E(Z\\times X,\nY)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom_E(Z,\\scrHom_E(X,Y))\\simeq \\Hom_E(Z\\times X,Y)",
+  "note": "The printed right-hand Hom has a script H, although this member must be the set of morphisms. The TeX keeps the misprint."
+ },
+ {
+  "page": 491,
+  "where": "Proof of 10.3, introduction to the chain of isomorphisms",
+  "scan": "fonctoriels en tous les arguments",
+  "tex": "fonctoriels en tout les arguments",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "en tout les arguments",
+   "new": "en tous les arguments"
+  },
+  "note": "The print has « tous », not « tout »."
+ },
+ {
+  "page": 492,
+  "where": "10.4.1, reference following the equivalence of topoi",
+  "scan": "(III 4 et IV 1)",
+  "tex": "(\\hyperrefext[III][III.sec4]{4} et\n\\hyperref[IV.sec1]{1})",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "\\hyperref[IV.sec1]{1}",
+   "new": "IV~\\hyperref[IV.sec1]{1}"
+  },
+  "note": "The exposé numeral IV is omitted. This recurring reference convention is reported once; three examples are listed in the coordinator."
+ },
+ {
+  "page": 492,
+  "where": "Lemma 10.4.2, final formula",
+  "scan": "\\scrHom_{E^{\\sim}_{V}}(X,Y), with V not underlined",
+  "tex": "\\scrHom_{E^{\\sim}_{V}}(X,Y)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\scrHom_{E^{\\sim}_{𝒱}}(X,Y)",
+  "note": "The subscript should be the universe 𝒱 defined immediately before. Its distinguishing underline is absent here in the print; the TeX keeps the plain V."
+ },
+ {
+  "page": 493,
+  "where": "10.5.2, object Y used to define Lambda",
+  "scan": "pour tout objet Y de E",
+  "tex": "tout objet $Y$ de $E$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "tout objet $Y$ de $E'$",
+  "note": "Y must belong to E' for v^{\\ast}Y to be defined. The print says E, and the TeX keeps it."
+ },
+ {
+  "page": 493,
+  "where": "10.5.3, right-hand Hom in the inline trifunctional morphism",
+  "scan": "\\Hom_{E'}(v_{!}(X\\times v^{\\ast}Z,Y)",
+  "tex": "\\Hom_{E'}(v_{!}(X\\times v^{\\ast}Z),Y))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom_{E'}(v_{!}(X\\times v^{\\ast}Z),Y)",
+  "note": "The print lacks the closing parenthesis after Z. The TeX supplies it, correcting that misprint, but also introduces the extra final parenthesis reported separately."
+ },
+ {
+  "page": 493,
+  "where": "10.5.3, end of the same inline right-hand Hom",
+  "scan": "Only one closing parenthesis follows Y.",
+  "tex": "\\Hom_{E'}(v_{!}(X\\times v^{\\ast}Z),Y))",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom_{E'}(v_{!}(X\\times v^{\\ast}Z),Y))",
+   "new": "\\sisi{\\Hom_{E'}(v_{!}(X\\times v^{\\ast}Z,Y)}{\\Hom_{E'}(v_{!}(X\\times v^{\\ast}Z),Y)}"
+  },
+  "note": "There is an extra final parenthesis in the TeX. The replacement records the printed reading in the first argument of \\sisi and the balanced correction in the second."
+ },
+ {
+  "page": 493,
+  "where": "10.5.4, last displayed formula",
+  "scan": "\\Hom_E(v^{\\ast}(Z)\\times v^{\\ast}(X),v^{\\ast}y)",
+  "tex": "\\Hom_E (v^{\\ast}(Z)\\times\nv^{\\ast}(X), v^{\\ast}Y)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom_E(v^{\\ast}(Z)\\times v^{\\ast}(X),v^{\\ast}Y)",
+  "note": "The print has a lowercase y in the last argument, although the object introduced is Y. The TeX silently corrects it."
+ },
+ {
+  "page": 495,
+  "where": "Opening formula; boundary between pages 494 and 495",
+  "scan": "Page 495 begins with the complete chain \\scrHom(\\amalg_I v^{\\ast}(e'),v^{\\ast}Y)\\simeq\\Pi_i\\scrHom(v^{\\ast}(e'),v^{\\ast}Y)\\simeq\\Pi_I v^{\\ast}Y.",
+  "tex": "v^{\\ast}Y$.\\pageoriginale Le morphisme fonctoriel $\\Phi_v$ induit",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 494 actually ends after « \\Pi_I Y$ et ». The opening Hom chain of page 495 has its first two TeX lines assigned to page 494, beyond the overlap allowed by the comments. The cut must be corrected; no text should be inserted or duplicated."
+ },
+ {
+  "page": 495,
+  "where": "Proof of 10.8, description of the final object e_Z",
+  "scan": "(i.e. l'objet id_Z : Z → Z) ).",
+  "tex": "(\\ie l'objet\n$\\id_Z:Z\\rightarrow Z$)).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(\\ie l'objet $\\id_Z:Z\\rightarrow Z$).",
+  "note": "The print has an unmatched second closing parenthesis. The TeX keeps it."
+ }
+]

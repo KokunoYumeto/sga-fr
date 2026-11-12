@@ -1,0 +1,674 @@
+[
+ {
+  "page": 436,
+  "where": "(6.2.4), first line of the brace",
+  "scan": "H^o( ℙ^{n+1}, 𝒪_ℙ) ≃ 𝔽_q  (the brace has three lines)",
+  "tex": "the cases begin with H^i(\\mathbb P^{n+1},\\mathcal O_{\\mathbb P})=0",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{cases}\nH^i(",
+   "new": "\\begin{cases}\nH^0(\\mathbb P^{n+1},\\mathcal O_{\\mathbb P})\\simeq\\mathbb F_q\\\\\nH^i("
+  },
+  "note": "The first line of (6.2.4) is missing from the TeX."
+ },
+ {
+  "page": 436,
+  "where": "(6.2.4), second and third lines",
+  "scan": "H^i(ℙ^{n+1}, 𝒪_ℙ) = 0   i ≠ 0 / H^i(ℙ^{n+1}, 𝒪_ℙ(-d)) = 0   i ≠ 0, n+1   ,  (only the final comma)",
+  "tex": "=0,&i\\ne0,\\\\ ... =0,&i\\ne0,n+1,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=0,&i\\ne0,\\\\\nH^i(\\mathbb P^{n+1},\\mathcal O_{\\mathbb P}(-d))=0,&i\\ne0,n+1,",
+   "new": "=0&i\\ne0\\\\\nH^i(\\mathbb P^{n+1},\\mathcal O_{\\mathbb P}(-d))=0&i\\ne0,n+1,"
+  },
+  "note": "The TeX adds three commas: after = 0 in both lines and after the first i ≠ 0."
+ },
+ {
+  "page": 436,
+  "where": "sentence before (6.2.5)",
+  "scan": "la suite exacte longue de cohomologie associé à (6.2.2), donne",
+  "tex": "associée à (6.2.2) donne",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "associée à",
+   "new": "associé à"
+  },
+  "corrected": "associée à",
+  "note": "Agreement error of the print (la suite ... associée). The TeX silently corrects."
+ },
+ {
+  "page": 436,
+  "where": "sentence before (6.2.5)",
+  "scan": "associé à (6.2.2), donne",
+  "tex": "associée à (6.2.2) donne",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(6.2.2) donne",
+   "new": "(6.2.2), donne"
+  },
+  "note": "The print has a comma after (6.2.2)."
+ },
+ {
+  "page": 436,
+  "where": "(6.2.5), first and second lines",
+  "scan": "H^o(V, 𝒪_V) ≃ 𝔽_q / H^i(V, 𝒪_V) = 0  si  i ≠ 0,n  (no punctuation; full stop only after the third line)",
+  "tex": "\\simeq\\mathbb F_q,\\\\ ... =0,&\\text{si }i\\ne0,n,\\\\",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\simeq\\mathbb F_q,\\\\\nH^i(V,\\mathcal O_V)=0,&\\text{si }i\\ne0,n,\\\\",
+   "new": "\\simeq\\mathbb F_q\\\\\nH^i(V,\\mathcal O_V)=0&\\text{si }i\\ne0,n\\\\"
+  },
+  "note": "The TeX adds three commas."
+ },
+ {
+  "page": 436,
+  "where": "(6.2.7), right-hand side",
+  "scan": "det (1-t(f^{q-1}𝔉_q)| H^{n+1}(ℙ^{n+1}, 𝒪_ℙ(-d))  .",
+  "tex": "1-tf^{q-1}\\mathfrak F_q",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "=\n\\det\\!\\left(\n1-tf^{q-1}\\mathfrak F_q\n",
+   "new": "=\n\\det\\!\\left(\n1-t(f^{q-1}\\mathfrak F_q)\n"
+  },
+  "note": "The print puts f^{q-1}𝔉_q in parentheses."
+ },
+ {
+  "page": 436,
+  "where": "(6.2.7), right-hand side, end",
+  "scan": "det (1-t(f^{q-1}𝔉_q)| H^{n+1}(ℙ^{n+1}, 𝒪_ℙ(-d))  .  (four opening, three closing parentheses)",
+  "tex": "\\right).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\right).",
+   "new": "\\right.."
+  },
+  "corrected": "\\right).",
+  "note": "The parenthesis after det is never closed in the print. The TeX silently closes it; the fix keeps \\left( and drops the closing parenthesis."
+ },
+ {
+  "page": 436,
+  "where": "(6.2.8), left-hand side",
+  "scan": "det(1-t(f^{q-1}𝔉_q)|H^{n+1}(ℙ^{n+1},𝒪_ℙ(-d))  =",
+  "tex": "1-tf^{q-1}\\mathfrak F_q",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "&\\det\\!\\left(\n1-tf^{q-1}\\mathfrak F_q\n",
+   "new": "&\\det\\!\\left(\n1-t(f^{q-1}\\mathfrak F_q)\n"
+  },
+  "note": "The print puts f^{q-1}𝔉_q in parentheses, as in (6.2.7)."
+ },
+ {
+  "page": 436,
+  "where": "(6.2.8), left-hand side, end",
+  "scan": "det(1-t(f^{q-1}𝔉_q)|H^{n+1}(ℙ^{n+1},𝒪_ℙ(-d))  =  (four opening, three closing parentheses)",
+  "tex": "\\right)\\\\",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\right)\\\\",
+   "new": "\\right.\\\\"
+  },
+  "corrected": "\\right)\\\\",
+  "note": "As in (6.2.7): the parenthesis after det is never closed. The TeX silently closes it."
+ },
+ {
+  "page": 436,
+  "where": "(6.2.8), right-hand side",
+  "scan": "Ψ_q·(X_o f(X))^{q-1}  (filled centred dot)",
+  "tex": "\\psi_q\\circ(X_0f(X))^{q-1}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\psi_q\\circ(X_0f(X))^{q-1}\n\\mathrel",
+   "new": "\\psi_q\\cdot(X_0f(X))^{q-1}\n\\mathrel"
+  },
+  "note": "A filled centred dot, not the small circle of (6.3.2)."
+ },
+ {
+  "page": 436,
+  "where": "(6.2.8), right-hand side",
+  "scan": "det(1-t(Ψ_q·(X_o f(X))^{q-1}|W_S(1))  (the parenthesis before Ψ_q is never closed)",
+  "tex": "\\det\\!\\left(\n1-t\\,\\psi_q",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "1-t\\,",
+   "new": "1-t\\,("
+  },
+  "corrected": "1-t\\,",
+  "note": "The print opens a parenthesis before Ψ_q and closes none for it (five opening, four closing). The TeX silently drops it; its reading without the parenthesis is the corrected one."
+ },
+ {
+  "page": 436,
+  "where": "(6.2.8), end",
+  "scan": "...|W_S(1))  (no punctuation; the line is the right-most text of the page)",
+  "tex": "\\right),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\right),",
+   "new": "\\right)"
+  },
+  "note": "The TeX adds a comma after (6.2.8)."
+ },
+ {
+  "page": 436,
+  "where": "Proposition 6.3, label and first words",
+  "scan": "Proposition (underlined) 6.3. (not underlined)  Il y a un isomorphisme (underlined)",
+  "tex": "\\underline{Proposition 6.3.}\nIl y a un isomorphisme",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Proposition 6.3.}\nIl y a un isomorphisme",
+   "new": "\\underline{Proposition} 6.3.\n\\underline{Il y a un isomorphisme}"
+  },
+  "note": "The number is not underlined; the statement is."
+ },
+ {
+  "page": 436,
+  "where": "Proposition 6.3, after (6.3.1)",
+  "scan": "par rapport auquel l'opérateur (underlined)",
+  "tex": "par rapport auquel l'opérateur",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "par rapport auquel l'opérateur",
+   "new": "\\underline{par rapport auquel l'opérateur}"
+  },
+  "note": "Part of the statement of Proposition 6.3."
+ },
+ {
+  "page": 436,
+  "where": "(6.3.1)",
+  "scan": "Hom_{𝔽_q}(H^{n+1}( ℙ^{n+1}. 𝒪_ℙ(-d), 𝔽_q)  (full stop after ℙ^{n+1})",
+  "tex": "H^{n+1}(\\mathbb P^{n+1},\\mathcal O_{\\mathbb P}(-d)),",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\left(\nH^{n+1}(\\mathbb P^{n+1},",
+   "new": "\\left(\nH^{n+1}(\\mathbb P^{n+1}."
+  },
+  "corrected": "\\left(\nH^{n+1}(\\mathbb P^{n+1},",
+  "note": "A round full stop on the baseline (7 px high), without the tail of the comma before 𝔽_q in the same line (12 px). The TeX silently corrects."
+ },
+ {
+  "page": 436,
+  "where": "(6.3.1)",
+  "scan": "𝒪_ℙ(-d), 𝔽_q)  (H^{n+1}( is never closed)",
+  "tex": "(-d)),",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(-d)),",
+   "new": "(-d),"
+  },
+  "corrected": "(-d)),",
+  "note": "The print has one closing parenthesis after -d. The TeX silently supplies the second."
+ },
+ {
+  "page": 437,
+  "where": "first line",
+  "scan": "est le transposé de (underlined)",
+  "tex": "est le transposé de",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est le transposé de",
+   "new": "\\underline{est le transposé de}"
+  },
+  "note": "End of the statement of Proposition 6.3."
+ },
+ {
+  "page": 437,
+  "where": "(6.3.4), left-hand side",
+  "scan": "H^{i+1}(ℙ^{n+1}, 𝒪_ℙ(-d))",
+  "tex": "H^{i+1}(\\mathbb P^{n+1},\\mathcal O_{\\mathbb P}(-d))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^{n+1}(\\mathbb P^{n+1},\\mathcal O_{\\mathbb P}(-d))",
+  "note": "The group computed is H^{n+1} (named in the sentence before). The TeX keeps the printed i+1."
+ },
+ {
+  "page": 437,
+  "where": "(6.3.4), second line",
+  "scan": "X_1^{W_1}...X_{n+2}^{W_{n+2}} / les W_i ∈ ℤ vérifiant Σ W_i = -d",
+  "tex": "X_{n+2}^{W_{n+2}},\n\\qquad W_i\\in\\mathbb Z,\\quad",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "X_{n+2}^{W_{n+2}},\n\\qquad W_i\\in\\mathbb Z,\\quad",
+   "new": "X_{n+2}^{W_{n+2}}\n\\qquad\\text{les }W_i\\in\\mathbb Z\\text{ vérifiant }"
+  },
+  "note": "The TeX drops the words 'les' and 'vérifiant' and puts commas (after the monomial and after ℤ) in their place."
+ },
+ {
+  "page": 437,
+  "where": "(6.3.4), second line",
+  "scan": "Σ W_i = -d  (Σ without index)",
+  "tex": "\\sum_iW_i",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sum_iW_i",
+   "new": "\\sum W_i"
+  },
+  "note": "The TeX adds the index i under Σ."
+ },
+ {
+  "page": 437,
+  "where": "(6.3.4), second line, end",
+  "scan": "= -d  (no punctuation)",
+  "tex": "=-d,\\\\",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=-d,\\\\",
+   "new": "=-d\\\\"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 437,
+  "where": "(6.3.5), second line",
+  "scan": "(π X_o) X_1^{U_1}... X_{n+2}^{U_{n+2}} vérifiant Σ U_i = d,  U_i > 0 ∀_i .",
+  "tex": "X_{n+2}^{U_{n+2}},\n\\qquad\n\\sum_iU_i",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "X_{n+2}^{U_{n+2}},\n\\qquad\n",
+   "new": "X_{n+2}^{U_{n+2}}\n\\text{ vérifiant }\n"
+  },
+  "note": "The TeX drops 'vérifiant' and puts a comma in its place."
+ },
+ {
+  "page": 437,
+  "where": "(6.3.5), second line",
+  "scan": "Σ U_i = d  (Σ without index)",
+  "tex": "\\sum_iU_i",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sum_iU_i",
+   "new": "\\sum U_i"
+  },
+  "note": "The TeX adds the index i under Σ."
+ },
+ {
+  "page": 437,
+  "where": "(6.3.5), second line, end",
+  "scan": "U_i > 0 ∀_i .  (the i after ∀ is a subscript)",
+  "tex": "\\forall i.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\forall i.",
+   "new": "\\forall_i."
+  },
+  "note": "The i after ∀ is typed at the level of the subscript of U_i."
+ },
+ {
+  "page": 437,
+  "where": "(6.3.7), left-hand side",
+  "scan": "(classe de π X_o X_1^{U_1}...X_{n+2}^{U_{n+2}}, X_1^{W_1}...X_{n+2}^{W_{n+2}})",
+  "tex": "\\operatorname{classe}\\!\\left(\n\\pi X_0X_1^{U_1}\\cdots X_{n+2}^{U_{n+2}}\n\\right),",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\operatorname{classe}\\!\\left(\n\\pi X_0X_1^{U_1}\\cdots X_{n+2}^{U_{n+2}}\n\\right),",
+   "new": "\\text{classe de }\\pi X_0X_1^{U_1}\\cdots X_{n+2}^{U_{n+2}},"
+  },
+  "note": "The print reads 'classe de' with no parentheses round the monomial; the TeX writes classe(...) without 'de'."
+ },
+ {
+  "page": 437,
+  "where": "(6.3.7), first case",
+  "scan": "1 si U_1 = -W_i pour tout i  (no punctuation)",
+  "tex": "1,&\\text{si }",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "1,&\\text{si }",
+   "new": "1&\\text{si }"
+  },
+  "note": "The TeX adds a comma after the value 1."
+ },
+ {
+  "page": 437,
+  "where": "(6.3.7), first case",
+  "scan": "1 si U_1 = -W_i pour tout i  (subscript 1, the digit of the value 1)",
+  "tex": "U_i=-W_i",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "U_i=-W_i",
+   "new": "U_1=-W_i"
+  },
+  "corrected": "U_i=-W_i",
+  "note": "U_1 for U_i (against W_i and 'pour tout i'). The TeX silently corrects."
+ },
+ {
+  "page": 437,
+  "where": "(6.3.7), end of both cases",
+  "scan": "... pour tout i / 0 sinon  (no punctuation)",
+  "tex": "i,\\\\\n0,&\\text{sinon},",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "i,\\\\\n0,&\\text{sinon},",
+   "new": "i\\\\\n0&\\text{sinon}"
+  },
+  "note": "The TeX adds three commas (after 'tout i', after 0 and after 'sinon')."
+ },
+ {
+  "page": 437,
+  "where": "last paragraph",
+  "scan": "Ψ_q.(X_o f(X))^{q-1}  (dot typed low, as a full stop)",
+  "tex": "\\psi_q\\circ(X_0f(X))^{q-1}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\psi_q\\circ",
+   "new": "\\psi_q\\cdot"
+  },
+  "note": "A filled dot, not the small circle (the circle next to it is the index o of X_o)."
+ },
+ {
+  "page": 437,
+  "where": "last paragraph",
+  "scan": "f(X)^{q-1}•f_q  (centred dot)",
+  "tex": "$f(X)^{q-1}\\mathfrak F_q$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$f(X)^{q-1}",
+   "new": "$f(X)^{q-1}\\cdot "
+  },
+  "note": "The print's centred dot is omitted. The trailing space keeps the next command separate."
+ },
+ {
+  "page": 437,
+  "where": "last paragraph",
+  "scan": "f(X)^{q-1}•f_q, ce qui  (small typed f)",
+  "tex": "\\mathfrak F_q$, ce qui",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathfrak F_q$, ce",
+   "new": "f_q$, ce"
+  },
+  "corrected": "\\mathfrak F_q$, ce",
+  "note": "The print types the letter f of f(X) for the Fraktur 𝔉_q of (6.3.3). The TeX silently corrects."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [1], author",
+  "scan": "AX, J. (capitals)",
+  "tex": "Ax, J.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Ax, J.",
+   "new": "\\item AX, J."
+  },
+  "note": "Author's name in capitals in the print."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [1], title",
+  "scan": "Zeroes of Polynomials Over Finite Fields (plain type, not underlined)",
+  "tex": "\\emph{Zeroes of Polynomials Over Finite Fields}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Zeroes of Polynomials Over Finite Fields}",
+   "new": "Zeroes of Polynomials Over Finite Fields"
+  },
+  "note": "Titles are typed plain in the print; the TeX sets them in \\emph."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [2], author",
+  "scan": "DWORK, B. (capitals)",
+  "tex": "Dwork, B.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "255--261.\n\\item Dwork, B.",
+   "new": "255--261.\n\\item DWORK, B."
+  },
+  "note": "Author's name in capitals in the print."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [2], title",
+  "scan": "On the Rationality of the Zeta Function of an Algebraic Variety (plain type, not underlined)",
+  "tex": "\\emph{On the Rationality of the Zeta Function of an Algebraic Variety}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{On the Rationality of the Zeta Function of an\n  Algebraic Variety}",
+   "new": "On the Rationality of the Zeta Function of an\n  Algebraic Variety"
+  },
+  "note": "As in [1]."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [2], title",
+  "scan": "On the Rationality of the Zéta Function  (é)",
+  "tex": "Zeta Function of an",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "Zeta Function of an",
+   "new": "Zéta Function of an"
+  },
+  "corrected": "Zeta Function of an",
+  "note": "Typed é (the accent of 'Algébriques' on this page) in the English title; [4] prints Zeta. The TeX silently corrects. Apply after the \\emph fix of this title (overlapping strings)."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [3], author",
+  "scan": "DWORK, B. (capitals)",
+  "tex": "Dwork, B.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "631--648.\n\\item Dwork, B.",
+   "new": "631--648.\n\\item DWORK, B."
+  },
+  "note": "Author's name in capitals in the print."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [3], title",
+  "scan": "An Algebraic Variety (plain type, not underlined)",
+  "tex": "\\emph{An Algebraic Variety}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{An Algebraic Variety}",
+   "new": "An Algebraic Variety"
+  },
+  "note": "As in [1]."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [4], author",
+  "scan": "DWORK, B. (capitals)",
+  "tex": "Dwork, B.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "(miméo).\n\\item Dwork, B.",
+   "new": "(miméo).\n\\item DWORK, B."
+  },
+  "note": "Author's name in capitals in the print."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [4], title",
+  "scan": "On the Zeta Function of Hypersurface II (plain type, not underlined)",
+  "tex": "\\emph{On the Zeta Function of Hypersurface II}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{On the Zeta Function of Hypersurface II}",
+   "new": "On the Zeta Function of Hypersurface II"
+  },
+  "note": "As in [1]."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [5], author",
+  "scan": "GROTHENDIECK, A., (capitals)",
+  "tex": "Grothendieck,",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Grothendieck,",
+   "new": "\\item GROTHENDIECK,"
+  },
+  "note": "Author's name in capitals in the print."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [5], after the initial",
+  "scan": "GROTHENDIECK, A.,  Le Groupe",
+  "tex": "Grothendieck, A. \\emph{Le Groupe",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": " A. ",
+   "new": " A., "
+  },
+  "note": "The print has a comma after the initial."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [5], title",
+  "scan": "Le Groupe de Brauer III, dans Dix Exposés sur la Cohomologie des Schémas (plain type, not underlined)",
+  "tex": "\\emph{Le Groupe de Brauer III}, dans \\emph{Dix Exposés sur la Cohomologie des Schémas}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Le Groupe de Brauer III}, dans\n  \\emph{Dix Exposés sur la Cohomologie des Schémas}",
+   "new": "Le Groupe de Brauer III, dans\n  Dix Exposés sur la Cohomologie des Schémas"
+  },
+  "note": "As in [1]."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [6], author",
+  "scan": "SERRE, J.P. (capitals)",
+  "tex": "Serre, J.P.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "1968.\n\\item Serre, J.P.",
+   "new": "1968.\n\\item SERRE, J.P."
+  },
+  "note": "Author's name in capitals in the print."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [6], title",
+  "scan": "Groupes Algébriques et Corps de Classes (plain type, not underlined)",
+  "tex": "\\emph{Groupes Algébriques et Corps de Classes}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Groupes Algébriques et Corps de Classes}",
+   "new": "Groupes Algébriques et Corps de Classes"
+  },
+  "note": "As in [1]."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [7], author",
+  "scan": "SERRE, J.P. (capitals)",
+  "tex": "Serre, J.P.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "1959.\n\\item Serre, J.P.",
+   "new": "1959.\n\\item SERRE, J.P."
+  },
+  "note": "Author's name in capitals in the print."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [7], title",
+  "scan": "Endomorphismes Complètement Continus des Espaces de Banach $p$-Adiques (plain type, not underlined)",
+  "tex": "\\emph{Endomorphismes Complètement Continus des Espaces de Banach $p$-Adiques}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Endomorphismes Complètement Continus des Espaces\n  de Banach $p$-Adiques}",
+   "new": "Endomorphismes Complètement Continus des Espaces\n  de Banach $p$-Adiques"
+  },
+  "note": "As in [1]."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [7], title",
+  "scan": "Endomorphismes Complétement, Continus  (acute accent)",
+  "tex": "Complètement",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "Complètement",
+   "new": "Complétement"
+  },
+  "corrected": "Complètement",
+  "note": "Acute accent (the grave of 'hypothèse' in [8] slopes the other way); Serre's title has 'complètement'. The TeX silently corrects. Apply after the \\emph fix of this title."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [7], title",
+  "scan": "Complétement, Continus  (comma inside the title)",
+  "tex": "Complètement Continus",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": " Continus",
+   "new": ", Continus"
+  },
+  "corrected": " Continus",
+  "note": "Stray comma inside the title. The TeX silently drops it. Apply after the \\emph fix of this title."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [8], author",
+  "scan": "CHEVALLEY, C. (capitals)",
+  "tex": "Chevalley, C.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Chevalley, C.",
+   "new": "\\item CHEVALLEY, C."
+  },
+  "note": "Author's name in capitals in the print."
+ },
+ {
+  "page": 438,
+  "where": "Bibliographie [8], title",
+  "scan": "Démonstration d'une hypothèse de M. Artin (plain type, not underlined)",
+  "tex": "\\emph{Démonstration d'une hypothèse de M. Artin}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Démonstration d'une hypothèse de M. Artin}",
+   "new": "Démonstration d'une hypothèse de M. Artin"
+  },
+  "note": "As in [1]."
+ }
+]

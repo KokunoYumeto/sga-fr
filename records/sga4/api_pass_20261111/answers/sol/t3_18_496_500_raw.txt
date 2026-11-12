@@ -1,0 +1,267 @@
+{
+  "findings": [
+    {
+      "page": 496,
+      "where": "1.2.7, condition sur φ",
+      "scan": "\\varphi\\in\\Hom(U,G)",
+      "tex": "\\varphi\\in \\Hom(U,G)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\varphi\\in \\Hom(U_{m},G)",
+      "note": "Le groupe introduit est U_m. L'imprimé omet son indice dans Hom(U,G), et le TeX conserve cette omission."
+    },
+    {
+      "page": 496,
+      "where": "Fin de 1.2.7",
+      "scan": "Le paragraphe se termine après « sur P^r_L. », sans note correspondante.",
+      "tex": "\\acorriger{Le lecteur\npourra trouver une introduction au langage de la géométrie",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\acorriger{Le lecteur\npourra trouver une introduction au langage de la géométrie\nanalytique rigide dans \\cite{SGA4-18:5bis}. L'inexistence de sections\nnon-triviales pour les faisceaux $\\Oo(n)$ pour $n<0$ dans ce contexte\nrésulte par exemple d'une version rigide de GAGA, voir \\cite{SGA4-18:3ter}.}",
+        "new": ""
+      },
+      "note": "Tout le passage inclus dans \\acorriger est absent de la page imprimée."
+    },
+    {
+      "page": 496,
+      "where": "Preuve de 1.2.8, fin de la réduction aux groupes élémentaires",
+      "scan": "𝛍_{\\ell_{i}}",
+      "tex": "𝛍_{\\ell i}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "𝛍_{\\ell i}",
+        "new": "𝛍_{\\ell_{i}}"
+      },
+      "note": "L'indice est ℓ_i : i doit être en indice de ℓ."
+    },
+    {
+      "page": 497,
+      "where": "Preuve de 1.2.9 b), dernière phrase",
+      "scan": "Les groupes G^n étant affine",
+      "tex": "Les groupes $G^{n}$ étant affines",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Les groupes $G^{n}$ étant affines",
+      "note": "L'imprimé porte « affine » au singulier. Le TeX corrige silencieusement l'accord."
+    },
+    {
+      "page": 498,
+      "where": "Paragraphe sur le complexe de Lie, première désignation du complexe cotangent",
+      "scan": "L\\Omega(G_s/k(s))",
+      "tex": "$L\\cap (G_{s}/k(s))$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$L\\cap (G_{s}/k(s))$",
+        "new": "$L\\Omega(G_{s}/k(s))$"
+      },
+      "note": "Les deux scans montrent un oméga majuscule, non un signe d'intersection."
+    },
+    {
+      "page": 498,
+      "where": "Même paragraphe, après « complexe cotangent relatif »",
+      "scan": "complexe cotangent relatif d de G_s",
+      "tex": "complexe cotangent relatif de $G_{s}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "complexe cotangent relatif de $G_{s}$",
+      "note": "Un d superflu termine la ligne imprimée avant « de G_s ». Le TeX le supprime silencieusement."
+    },
+    {
+      "page": 498,
+      "where": "Même paragraphe, expression dont L est le dual",
+      "scan": "Le^{\\ast}(L\\Omega(G_s/k(s)))",
+      "tex": "Le^{\\ast}(L\\cap (G_{s}/k(s)))",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "Le^{\\ast}(L\\cap (G_{s}/k(s)))",
+        "new": "Le^{\\ast}(L\\Omega(G_{s}/k(s)))"
+      },
+      "note": "La seconde occurrence porte également Ω dans les deux scans."
+    },
+    {
+      "page": 498,
+      "where": "Classification des déformations, avant la référence à Illusie",
+      "scan": "(resp. par H^1(X_s,f^{\\ast}(L\\otimes I)) (Illusie [1]).",
+      "tex": "(\\resp par $H^{1}(X_{s},f^{\\ast}(L\\otimes I))$ (\\textsc{Illusie}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\resp par $H^{1}(X_{s},f^{\\ast}(L\\otimes I))$)",
+      "note": "Il manque la parenthèse fermant « (resp. par… » avant la référence à Illusie. Le TeX conserve cette omission à cet endroit."
+    },
+    {
+      "page": 498,
+      "where": "Référence à Illusie après la classification des déformations",
+      "scan": "Illusie [1]",
+      "tex": "\\cite[VII~2.4.4~(ii)]{SGA4-18:3}",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\cite[VII~2.4.4~(ii)]{SGA4-18:3}",
+        "new": "\\cite{SGA4-18:3}"
+      },
+      "note": "L'imprimé ne donne pas le complément « VII 2.4.4 (ii) »."
+    },
+    {
+      "page": 498,
+      "where": "Après « Par hypothèse », second isomorphisme",
+      "scan": "H^0(X_s,ℋ^1(f^{\\ast}(L\\otimes I))).",
+      "tex": "H^0(X_{s}, ℋ^{1}(f^{\\ast}L\\otimes I))$).",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "H^0(X_{s}, ℋ^{1}(f^{\\ast}L\\otimes I))$)",
+        "new": "H^0(X_{s}, ℋ^{1}(f^{\\ast}(L\\otimes I)))$"
+      },
+      "note": "Dans l'imprimé, f* porte sur tout L⊗I. Il n'y a pas de parenthèse textuelle supplémentaire après la formule."
+    },
+    {
+      "page": 498,
+      "where": "1.2.11, « il existe par… un unique couple »",
+      "scan": "1.2.0",
+      "tex": "\\hyperref[XVIII.subsubsec1.2.10]{1.2.10}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "1.2.10",
+      "note": "La référence imprimée a perdu le 1 de 10. Le TeX corrige silencieusement en renvoyant au cas artinien."
+    },
+    {
+      "page": 499,
+      "where": "Première formule, source de l'isomorphisme formel",
+      "scan": "p^{\\ast}s^{\\ast}K+\\widehat{\\varphi}\\Oo(1)",
+      "tex": "\\widehat{p^{\\ast}s^{\\ast}K}+\n\\widehat{\\varphi}\\widehat{\\Oo(1)}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\widehat{p^{\\ast}s^{\\ast}K}+\n\\widehat{\\varphi}\\widehat{\\Oo(1)}",
+        "new": "p^{\\ast}s^{\\ast}K+\n\\widehat{\\varphi}\\Oo(1)"
+      },
+      "note": "L'imprimé ne porte de chapeau ni sur p*s*K ni sur O(1) dans cette formule."
+    },
+    {
+      "page": 499,
+      "where": "Premier paragraphe, annonce de la preuve d'algébricité",
+      "scan": "(1.2.7.3)",
+      "tex": "(\\hyperref[XVIII.subsubsec1.2.13]{1.2.13})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "1.2.13",
+      "note": "La référence imprimée est erronée. Le TeX la corrige silencieusement vers le paragraphe d'algébricité."
+    },
+    {
+      "page": 499,
+      "where": "Numéro du titre « Algébraïcité… vérification préliminaire »",
+      "scan": "1.2.2.12",
+      "tex": "\\etiquette[1.2.12]{XVIII.subsubsec1.2.12}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "1.2.12",
+      "note": "Un 2 supplémentaire figure dans le numéro imprimé. Le TeX corrige silencieusement."
+    },
+    {
+      "page": 499,
+      "where": "Titre de 1.2.12",
+      "scan": "Algébraïcité",
+      "tex": "Algébricité",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Algébricité de $\\widehat{\\varphi}$:",
+        "new": "Algébraïcité de $\\widehat{\\varphi}$:"
+      },
+      "note": "Le titre imprimé emploie la graphie « Algébraïcité »."
+    },
+    {
+      "page": 499,
+      "where": "1.2.12 b), deuxième référence initiale",
+      "scan": "(1.2.2.11)",
+      "tex": "(\\hyperref[XVIII.subsubsec1.2.11]{1.2.11})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "1.2.11",
+      "note": "La référence imprimée contient un 2 supplémentaire. Le TeX corrige silencieusement."
+    },
+    {
+      "page": 499,
+      "where": "1.2.12 b), « Le morphisme formel… de 1.2.11 »",
+      "scan": "\\widehat{\\varphi}",
+      "tex": "\\widehat{\\Psi}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "formel $\\widehat{\\Psi}$ de",
+        "new": "formel $\\widehat{\\varphi}$ de"
+      },
+      "note": "L'imprimé désigne l'homomorphisme φ̂, non l'isomorphisme Ψ̂."
+    },
+    {
+      "page": 499,
+      "where": "Numéro du titre suivant",
+      "scan": "1.2.2.13",
+      "tex": "\\etiquette[1.2.13]{XVIII.subsubsec1.2.13}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "1.2.13",
+      "note": "Un 2 supplémentaire figure dans le numéro imprimé. Le TeX corrige silencieusement."
+    },
+    {
+      "page": 499,
+      "where": "Titre de 1.2.13",
+      "scan": "Algébraïcité",
+      "tex": "Algébricité",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Algébricité de $\\widehat{\\varphi}$}",
+        "new": "Algébraïcité de $\\widehat{\\varphi}$}"
+      },
+      "note": "Ce second titre porte lui aussi « Algébraïcité »."
+    },
+    {
+      "page": 500,
+      "where": "Conclusion du premier paragraphe",
+      "scan": "\\varphi est donc algébrisable",
+      "tex": "$\\widehat{\\varphi}$ est donc algébrisable",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\widehat{\\varphi}$ est donc algébrisable",
+      "note": "Il s'agit de l'application formelle φ̂ introduite en 1.2.11 ; son chapeau manque dans la conclusion imprimée. Le TeX le rétablit silencieusement."
+    },
+    {
+      "page": 500,
+      "where": "Variantes 1.2.15, première explication après l'énumération",
+      "scan": "Dans le cas (i), les flèches […] sont des isomorphismes d'après le théorème de changement de base",
+      "tex": "Dans le cas (ii), les flèches",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Dans le cas (ii)",
+      "note": "Cet argument concerne le faisceau de torsion étale, donc (ii). L'imprimé intervertit les renvois aux deux cas ; le TeX corrige en intervertissant les deux paragraphes de preuve."
+    },
+    {
+      "page": 500,
+      "where": "Variantes 1.2.15, seconde explication après l'énumération",
+      "scan": "Dans le cas (ii), que les flèches […] soient des isomorphismes est standard […] pour la topologie de Zariski",
+      "tex": "Dans le cas (i), que les flèches",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Dans le cas (i)",
+      "note": "Cet argument concerne le Module quasi-cohérent, donc (i). Le TeX corrige l'interversion imprimée en plaçant cette preuve avant celle du cas étale."
+    }
+  ],
+  "coordinator": "496 : 2/1 ; 497 : 0/1 ; 498 : 4/3 ; 499 : 4/4 ; 500 : 0/3 (normal/misprint)."
+}

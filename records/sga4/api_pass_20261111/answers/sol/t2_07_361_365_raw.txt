@@ -1,0 +1,218 @@
+{
+  "findings": [
+    {
+      "page": 361,
+      "where": "Paragraphe précédant le théorème 5.7",
+      "scan": "les résultats de [blanc] à la situation présente",
+      "tex": "les résultats de à la\nsituation présente",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "les résultats de VI à la situation présente",
+      "note": "La référence après « de » est laissée en blanc; le TeX conserve cette lacune. La preuve suivante identifie l'exposé VI, mais le numéro précis du renvoi ne peut pas être restitué sur ces pages."
+    },
+    {
+      "page": 361,
+      "where": "Théorème 5.7, définition d'un faisceau sur le site fibré",
+      "scan": "(i.e. (3)) un foncteur",
+      "tex": "(\\ie $(3)$) un foncteur",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\ie $(3)$ un foncteur",
+      "note": "Parenthèse fermante en trop après (3). La parenthèse explicative se ferme après « un faisceau sur X_i ». Le TeX conserve cette erreur."
+    },
+    {
+      "page": 361,
+      "where": "Théorème 5.7, introduction de F∞",
+      "scan": "Soit F∞",
+      "tex": "Sont $F_{\\infty}",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Sont $F_{\\infty} =",
+        "new": "Soit $F_{\\infty} ="
+      },
+      "note": "L'imprimé porte « Soit », non « Sont »."
+    },
+    {
+      "page": 362,
+      "where": "Phrase introduisant le corollaire 5.8",
+      "scan": "explicité également dans [blanc]",
+      "tex": "explicité également dans",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "explicité également dans VI.",
+      "note": "La référence annoncée par « dans » manque dans l'imprimé; le TeX conserve la lacune. Le contexte renvoie aux résultats généraux de VI, sans permettre de restituer le numéro précis."
+    },
+    {
+      "page": 362,
+      "where": "Corollaire 5.8, choix de i₀",
+      "scan": "soit i₀ ∈ I",
+      "tex": "sont $i_0 \\in I$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "sont $i_0 \\in I$",
+        "new": "soit $i_0 \\in I$"
+      },
+      "note": "L'imprimé porte « soit »."
+    },
+    {
+      "page": 362,
+      "where": "Corollaire 5.8, définition de F∞",
+      "scan": "$F_{\\infty}=u_i^{\\ast}(F_{i_0})$",
+      "tex": "$F_{\\infty} = u^{\\ast}_i\n(F_{i_0})$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$F_{\\infty} = u^{\\ast}_{i_0}(F_{i_0})$",
+      "note": "L'indice du morphisme doit être i₀ puisque F_{i₀} est sur X_{i₀}. Le TeX conserve l'indice i de l'imprimé."
+    },
+    {
+      "page": 362,
+      "where": "Corollaire 5.9, définition de G∞",
+      "scan": "$G_{\\infty}=G\\times_{X_{i_0}}X$",
+      "tex": "$G_{\\infty} = \\fprod{G_{i_0}}{X}{X_{i_0}}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$G_{\\infty} = \\fprod{G_{i_0}}{X}{X_{i_0}}$",
+      "note": "L'imprimé omet l'indice i₀ du premier facteur G. Le TeX le rétablit silencieusement."
+    },
+    {
+      "page": 363,
+      "where": "Début de page, continuation de la démonstration de 5.9",
+      "scan": "$\\Gg_i$ est canoniquement isomorphe",
+      "tex": "est\\pageoriginale canoniquement isomorphe",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le symbole initial \\Gg_i figure à la fin du bloc TeX de la page 362, sans que son commentaire annonce ce chevauchement. La page 362 finit par « dont la restriction à »; la page 363 commence par « \\Gg_i est ». Il faut rectifier le découpage, non le texte."
+    },
+    {
+      "page": 363,
+      "where": "Démonstration de 5.9, renvoi après F∞",
+      "scan": "de 5.7",
+      "tex": "de 5,7",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "5,7",
+        "new": "5.7"
+      },
+      "note": "Le numéro imprimé du théorème est 5.7."
+    },
+    {
+      "page": 363,
+      "where": "Démonstration de 5.9, valeurs des faisceaux",
+      "scan": "sur les objets du site étale",
+      "tex": "sur les objet du site étale",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "les objet du site",
+        "new": "les objets du site"
+      },
+      "note": "Le pluriel « objets » est imprimé."
+    },
+    {
+      "page": 363,
+      "where": "Démonstration de 5.9, fin de la parenthèse invoquant EGA IV 8.8.2",
+      "scan": "site étale restreint de $G_{\\infty}$",
+      "tex": "site étale\nrestreint de $G_{\\infty}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "site étale restreint de $X$",
+      "note": "Les faisceaux comparés sont sur X : leurs valeurs doivent être considérées sur le site étale restreint de X. Le TeX conserve le G∞ erroné de l'imprimé."
+    },
+    {
+      "page": 363,
+      "where": "Paragraphe précédant le corollaire 5.11",
+      "scan": "variantes de 5.8 et 5.9",
+      "tex": "variantes de \\hyperref[VII.cor5.8]{5.8} et 5,9",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "5,9",
+        "new": "5.9"
+      },
+      "note": "Le numéro imprimé du corollaire est 5.9."
+    },
+    {
+      "page": 364,
+      "where": "Corollaire 5.11, parenthèse définissant le morphisme utilisé pour l'image inverse",
+      "scan": "$u_i:X\\to X_i$",
+      "tex": "$u_i : X \\to X_i$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$u_i : Y \\to Y_i$",
+      "note": "R^n f_{i∗}(F_i) est un faisceau sur Y_i : l'image inverse affichée doit utiliser la projection Y → Y_i, non X → X_i. Le TeX conserve l'incohérence de l'imprimé. On peut aussi noter cette projection v_i, comme en 5.13, en changeant alors également le symbole dans la formule."
+    },
+    {
+      "page": 364,
+      "where": "Démonstration de 5.11, avant l'annonce de 5.12",
+      "scan": "préfaisceaux, On prouve de même :",
+      "tex": "préfaisceaux, On prouve de même :",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "préfaisceaux). On prouve de même :",
+      "note": "La parenthèse ouverte avant « où on se ramène » n'est pas fermée. Le TeX conserve la virgule et l'absence de parenthèse fermante de l'imprimé."
+    },
+    {
+      "page": 365,
+      "where": "Remarque 5.14 a), autre nom des torseurs",
+      "scan": "torseurs (ou fibrés principaux homogènes)",
+      "tex": "torseurs (où\nfibrés principaux homogènes)",
+      "kind": "accent",
+      "confidence": "high",
+      "fix": {
+        "old": "torseurs (où",
+        "new": "torseurs (ou"
+      },
+      "note": "L'imprimé donne la conjonction « ou », sans accent."
+    },
+    {
+      "page": 365,
+      "where": "Remarque 5.14 a), après le renvoi à la thèse de Giraud",
+      "scan": "le contexte général de [blanc] Il est certainement possible",
+      "tex": "le contexte général de Il est certainement possible",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "le contexte général de VI. Il est certainement possible",
+      "note": "La référence après « de » manque, ainsi que la ponctuation terminant la phrase. Le TeX conserve cette lacune. Le cadre général est celui de l'exposé VI; aucun numéro plus précis n'est restituable sur ces pages."
+    },
+    {
+      "page": 365,
+      "where": "Début de la remarque 5.14 b)",
+      "scan": "Les résultats de passage à la limite",
+      "tex": "Les résultats de passante à la limite",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "passante",
+        "new": "passage"
+      },
+      "note": "L'imprimé porte « passage »."
+    },
+    {
+      "page": 365,
+      "where": "Remarque 5.14 b), catégorie associée à un ensemble préordonné",
+      "scan": "qu'elle soit associée",
+      "tex": "qu'elle sont associée",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "qu'elle sont associée",
+        "new": "qu'elle soit associée"
+      },
+      "note": "L'imprimé porte « soit », non « sont »."
+    }
+  ],
+  "coordinator": "361 : 1/2 ; 362 : 1/3 ; 363 : 4/1 ; 364 : 0/2 ; 365 : 3/1 (normal/misprint, marqueur inclus).\nMarqueur 362–363 : le bloc 362 contient le premier symbole de 363, \\Gg_i ; corriger le découpage ou son commentaire, sans modifier le texte."
+}

@@ -1,0 +1,108 @@
+[
+ {
+  "page": 476,
+  "where": "12.7, sentence after (12.7.1)",
+  "scan": "définition 9.2 de u_ℓ pour ℓ ≠ p,. Il reste",
+  "tex": "pour $\\ell \\neq p$,. Il reste",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "pour $\\ell \\neq p$. Il reste",
+  "note": "Stray comma before the full stop. The TeX keeps the printed reading."
+ },
+ {
+  "page": 476,
+  "where": "Remarques 12.7.2, line 4",
+  "scan": "sour la forme classique",
+  "tex": "sour la forme classique",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "sous la forme classique",
+  "note": "Typing error 'sour' for 'sous'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 477,
+  "where": "first sentence",
+  "scan": "la démonstration de 12.5 (donc de (10.4) que nous proposons ici",
+  "tex": "(donc de (10.4) que nous proposons ici",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(donc de (10.4)) que nous proposons ici",
+  "note": "The parenthesis opened before 'donc' is never closed. The TeX keeps the printed reading."
+ },
+ {
+  "page": 477,
+  "where": "display (12.8.1)",
+  "scan": "(12.8.1)   .  D = Σ_{λ∈L} D_λ   ,  (a small isolated dot before D)",
+  "tex": ". \\quad D = \\sum_{\\lambda \\in L} D_\\lambda \\quad ,",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "D = \\sum_{\\lambda \\in L} D_\\lambda \\quad ,",
+  "note": "The dot before D has no meaning. If it is a stray typed full stop, the TeX rightly keeps it. If it is a speck of the scan, the TeX should drop '. \\quad'."
+ },
+ {
+  "page": 478,
+  "where": "diagram (12.8.2), final full stop",
+  "scan": "S̲ ←g— S      .  (full stop printed on the bottom row of the diagram)",
+  "tex": "\\end{equation}, STRUCTURE comment, then a line holding only '.'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "S \\arrow[l, \"g\"']",
+   "new": "S \\arrow[l, \"g\"'] & ."
+  },
+  "note": "The display-final full stop sits on its own line after \\end{equation} and its comment. Put it in a third cell of the bottom tikzcd row, as the file does for (12.8.9). Apply together with the next edit."
+ },
+ {
+  "page": 478,
+  "where": "line after the STRUCTURE comment of (12.8.2)",
+  "scan": "no separate full stop; 'Posons' follows the display flush left (not indented), continuing the paragraph",
+  "tex": "(rendu ci-après en bloc de prose distinct).\n.\n\nPosons",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(rendu ci-après en bloc de prose distinct).\n.\n\nPosons",
+   "new": "(placé dans une troisième colonne de la rangée inférieure).\nPosons"
+  },
+  "note": "Removes the standalone '.' line. Corrects the STRUCTURE comment, which says the full stop is rendered as a separate prose block. Lets 'Posons' run on after the display as in the print. Apply together with the previous edit."
+ },
+ {
+  "page": 478,
+  "where": "sentence after (12.8.3)",
+  "scan": "il s'ensuit que F̲ est cohomologiquement plat en dimension 0",
+  "tex": "il s'ensuit que $\\underline{f}$ est cohomologiquement plat",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "il s'ensuit que $\\underline{f}$",
+   "new": "il s'ensuit que $\\underline{F}$"
+  },
+  "corrected": "\\underline{f}",
+  "note": "The print types an underlined capital F where the morphism f̲ is meant; the line above has lowercase f̲. The TeX silently corrects it, so restore the printed reading."
+ },
+ {
+  "page": 480,
+  "where": "sentence after (12.8.7)",
+  "scan": "de T_ℓ(B_U).",
+  "tex": "de $T_\\ell(B_U)$.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$T_\\ell(P_U)$",
+  "note": "B_U is typed for P_U; the pairing φ is on T_ℓ(P_U). The TeX keeps the printed reading."
+ },
+ {
+  "page": 480,
+  "where": "diagram (12.8.9), identification row under P",
+  "scan": "T_ℓ(P)^t ≃ Hom(M,T_ℓ(G_mS̲)",
+  "tex": "\\underline{\\mathrm{Hom}}(M,T_\\ell(\\mathbb{G}_{m\\underline{S}})",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\underline{\\mathrm{Hom}}(M,T_\\ell(\\mathbb{G}_{m\\underline{S}}))",
+  "note": "One closing parenthesis is missing in the print. The TeX keeps the printed reading, as its comment says."
+ }
+]

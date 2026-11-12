@@ -1,0 +1,14 @@
+```json
+{"findings":[
+{"page":236,"where":"display after (IV 9)","scan":"E'' = E_{∁U}","tex":"E'' = E_{/U}{\\quoi}","kind":"formula","confidence":"high","fix":{"old":"E'' = E_{/U}{\\quoi}","new":"E'' = E_{\\complement U}{\\quoi}"},"note":"The closed subtopos is indexed by the complement ∁U, not /U."},
+{"page":237,"where":"proof of 4.2.1, line 2","scan":"commutant aux produits fibrés","tex":"commuant aux produits fibrés","kind":"word","confidence":"high","fix":{"old":"commuant","new":"commutant"},"note":""},
+{"page":237,"where":"proof of 4.2.1, 'identifiant (par i_*) E' à la sous-catégorie pleine'","scan":"E'","tex":"E'","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"$E''$","note":"i_* identifies E'' (not E') with a full subcategory of E. The TeX keeps the printed E'."},
+{"page":237,"where":"proof of 4.2.1, 'les sous-objets dans E' de l'objet Z'","scan":"sous-objets dans E'","tex":"sous-objets sans $E'$","kind":"word","confidence":"high","fix":{"old":"sous-objets sans $E'$","new":"sous-objets dans $E'$"},"note":"The print has 'dans'. E' itself is a misprint of the print for E'', and the TeX keeps it."},
+{"page":237,"where":"proof of 4.2.1, 'couple formé d'un sous-objet Y_1'","scan":"formé d'un sous-objet","tex":"formé un sous-objet","kind":"missing","confidence":"high","fix":{"old":"formé un sous-objet","new":"formé d'un sous-objet"},"note":""},
+{"page":237,"where":"last line","scan":"... qui contiennent X_U . Il","tex":"des sous-objets de $X$ qui contiennent $X_U$. Il est","kind":"marker","confidence":"low","fix":null,"note":"The word 'est' is printed at the top of p. 238 ('est clair que ...') but stands in p. 237's TeX chunk."},
+{"page":239,"where":"line 5, 'Lorsqu'on suppose Y quasi-compact'","scan":"Y quasi-compact","tex":"$Y$\nquasi-compact, on note","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"$U$","note":"The first hypothesis of 4.4 is that U is quasi-compact (it is used for 4.3 b)). The TeX keeps the printed Y."},
+{"page":239,"where":"'limite inductive filtrante de sous sous-objets'","scan":"de sous sous-objets","tex":"de sous-objets","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"de ses sous-objets","note":"The print has the typo 'sous sous-objets'. The TeX corrects it silently to 'de sous-objets'."},
+{"page":239,"where":"'il est égal à un des i^*(X'_α)'","scan":"égal","tex":"égale","kind":"word","confidence":"high","fix":{"old":"il est\négale","new":"il est\négal"},"note":""}
+],
+"coordinator":"p236: 1/0; p237: 3/1 (+1 marker); p238: 0/0; p239: 1/2; p240: 0/0\nMarker: the word 'est' at the end of p. 237's TeX ('Il est') belongs to p. 238, which begins 'est clair que'."}
+```

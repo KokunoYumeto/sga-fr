@@ -1,0 +1,138 @@
+[
+ {
+  "page": 101,
+  "where": "Opening sentence, exponent of T(K)",
+  "scan": "$T^{n+1}(K^{\\bigdot})$",
+  "tex": "$T^{n1}(K^{\\bigdot})$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "T^{n1}(K^{\\bigdot})",
+   "new": "T^{n+1}(K^{\\bigdot})"
+  },
+  "note": "The plus sign in the printed exponent is missing from the TeX."
+ },
+ {
+  "page": 101,
+  "where": "Opening sentence, criterion for surjectivity",
+  "scan": "l'image de $T^{n+1}(L^{\\bigdot})$ dans $T^{n+1}(K^{\\bigdot})$",
+  "tex": "l'image de $T^{n+1}(L^{\\bigdot})$ dans $T^{n1}(K^{\\bigdot})$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "l'image de $T'^{n+1}(L^{\\bigdot})$ dans $T'^{n+1}(K^{\\bigdot})$",
+  "note": "Both T's should be primed, as the diagram argument on p. 102 shows. Without these primes the containment is automatic. TeX keeps the missing primes; its separate loss of the plus sign is reported above."
+ },
+ {
+  "page": 102,
+  "where": "First paragraph, vanishing degrees of K'",
+  "scan": "nuls en degrés $\\leq m+1$",
+  "tex": "nuls en degrés $\\leq m+1$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "nuls en degrés $\\leq m$",
+  "note": "TeX keeps the printed inequality. The quotient removes H^m, but its cohomology in degree m+1 need not vanish."
+ },
+ {
+  "page": 102,
+  "where": "Paragraph following the first diagram",
+  "scan": "les flèches verticales autours de la flèche verticale médiane",
+  "tex": "les flèches verticales autour de la flèche verticale médiane",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "autour",
+  "note": "The print has an erroneous final s in «autours»; TeX silently corrects it."
+ },
+ {
+  "page": 102,
+  "where": "Definition preceding the second diagram",
+  "scan": "le mapping-cylinders",
+  "tex": "le mapping-cylinder",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "le mapping-cylinder",
+  "note": "TeX silently corrects the erroneous plural ending. The complex dot after K' here, and the first lower-row arrowhead in the second diagram, are not securely legible; no further difference is inferred from those doubtful strokes."
+ },
+ {
+  "page": 103,
+  "where": "Proposition 6.5 (i), condition b), name of the base-changed morphism",
+  "scan": "$h^{\\circ}:Y'\\rightarrow X'$",
+  "tex": "$h^{\\circ}:Y'\\rightarrow X'$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "h':Y'\\rightarrow X'",
+  "note": "The printed superscript circle should be a prime. The following text and conditions use h'. TeX keeps the printed circle."
+ },
+ {
+  "page": 103,
+  "where": "Proposition 6.5 (i), condition b'), domain and codomain of inverse image",
+  "scan": "de l'ensemble des parties de $Y'$ à la fois ouvertes et fermées dans l'ensemble des parties de $X'$ à la fois ouvertes et fermées",
+  "tex": "de l'ensemble des parties de $Y'$ à la fois ouvertes et fermées dans l'ensemble des parties de $X'$ à la fois ouvertes et fermées",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "de l'ensemble des parties de $X'$ à la fois ouvertes et fermées dans l'ensemble des parties de $Y'$ à la fois ouvertes et fermées",
+  "note": "Inverse image under h':Y'→X' takes subsets of X' to subsets of Y'. TeX keeps the printed interchange of X' and Y'."
+ },
+ {
+  "page": 104,
+  "where": "Proposition 6.5 (i), condition b''), displayed map on connected components",
+  "scan": "\\Pi_{\\circ}(h'):\\Pi_{\\circ}(X')\\longrightarrow \\Pi_{\\circ}(Y')",
+  "tex": "\\Pi_{\\circ}(h'):\\Pi_{\\circ}(X')\\longrightarrow \\Pi_{\\circ}(Y')",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Pi_{\\circ}(h'):\\Pi_{\\circ}(Y')\\longrightarrow \\Pi_{\\circ}(X')",
+  "note": "The map induced by h' on connected components goes from Y' to X'. TeX keeps the reversed source and target."
+ },
+ {
+  "page": 104,
+  "where": "Proposition 6.5 (ii), condition a), displayed cohomology map",
+  "scan": "H^1(X,F)\\longrightarrow H^1(Y,h^{\\ast}(F))",
+  "tex": "H^1(X,F)\\longrightarrow H^1(Y,h^{\\ast}(F))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^{i}(X,F)\\longrightarrow H^{i}(Y,h^{\\ast}(F))",
+  "note": "Both printed exponents are 1, although the following clause quantifies over i=0,1. They should be i. TeX keeps the printed exponents."
+ },
+ {
+  "page": 104,
+  "where": "Proposition 6.5 (ii), condition b), displayed cohomology map",
+  "scan": "H^1(X',G_{X'})\\longrightarrow H^1(Y',G_{X'})",
+  "tex": "H^1(X',G_{X'})\\longrightarrow H^1(Y',G_{X'})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^{i}(X',G_{X'})\\longrightarrow H^{i}(Y',G_{Y'})",
+  "note": "As in a), both exponents should be i for the following quantification i=0,1. The target coefficient sheaf should also have subscript Y', not X'. TeX keeps all these printed errors."
+ },
+ {
+  "page": 105,
+  "where": "Proposition 6.5 (ii), condition b''), nonemptiness hypothesis",
+  "scan": "si $X'$ est non-vide",
+  "tex": "si $x'$ est non-vide",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "si $x'$ est non-vide",
+   "new": "si $X'$ est non-vide"
+  },
+  "note": "The print refers to the scheme X', not the geometric point x' introduced later."
+ },
+ {
+  "page": 105,
+  "where": "Proposition 6.5 (iii), condition b), displayed cohomology map",
+  "scan": "H^{i}(X',(\\ZZ/\\ell^{\\nu}\\ZZ_{X'})\\longrightarrow H^{i}(Y',\\ZZ/\\ell^{\\nu}\\ZZ)_{Y'})",
+  "tex": "H^{i}(X',(\\ZZ/\\ell^{\\nu}\\ZZ_{X'})\\longrightarrow\nH^{i}(Y',\\ZZ/\\ell^{\\nu}\\ZZ)_{Y'})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^{i}(X',(\\ZZ/\\ell^{\\nu}\\ZZ)_{X'})\\longrightarrow H^{i}(Y',(\\ZZ/\\ell^{\\nu}\\ZZ)_{Y'})",
+  "note": "The printed coefficient parentheses are malformed: a closing parenthesis is missing before the source subscript, and an opening parenthesis is missing before the target coefficient. TeX keeps the printed grouping."
+ }
+]

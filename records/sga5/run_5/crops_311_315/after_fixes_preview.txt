@@ -1,0 +1,170 @@
+===== 311
+% from s5.tex
+%%%%%%%%%%  scan idx 322  |  folio 311  %%%%%%%%%%
+Le $A$-
+module $Q(Y,M)$ est canoniquement muni d'une structure de $A^\bullet(Y)$-module, provenant du cup-produit. Si $u:Z\to Y$ est un morphisme de schémas, le morphisme image réciproque
+\[
+u^*:Q(Y,M)\to Q(Z,u^*M)
+\]
+est compatible avec les structures de $A^\bullet(Y)$-module de $Q(Y,M)$ et de $A^\bullet(Z)$-module de $Q(Z,u^*M)$. On en déduit un morphisme de $A^\bullet(Z)$-modules, dit canonique,
+\[
+A^\bullet(Z)\otimes_{A^\bullet(Y)}Q(Y,M)\to Q(Z,u^*M).
+\]
+
+\begin{statement}{Proposition 5.5}
+\emph{Soient} $S$ \emph{un schéma}, $E$ \emph{un} $\mathcal O_S$-\emph{Module localement libre de rang} $r$. \emph{On note} $f:X\to S$ \emph{le} $S$-\emph{schéma des drapeaux de type} $(p_1,\ldots,p_m)$ \emph{de} $E$. \emph{Alors, pour tout} $A_S$-\emph{Module} $L$, \emph{le morphisme canonique}
+\[
+\alpha:A^\bullet(X)\otimes_{A^\bullet(S)}Q(S,L)\to Q(X,f^*L)
+\]
+\emph{est un isomorphisme}.
+\end{statement}
+
+\emph{Preuve} : Lorsque $X=P_S(E)$, c'est une conséquence immédiate de (2.2.4) et (2.2.6). On en conclut que c'est vrai pour $X=D$. Dans le cas général, comme les morphismes canoniques $g:D\to X$ et $h:D\to S$ sont composés de fibrés projectifs, les morphismes canoniques
+\[
+A^\bullet(D)\otimes_{A^\bullet(S)}Q(S,L)\to Q(D,h^*L)
+\]
+et
+\[
+A^\bullet(D)\otimes_{A^\bullet(X)}Q(X,g^*L)\to Q(D,g^*L)
+\]
+sont des isomorphismes. Par suite $\mathrm{id}_{A^\bullet(D)}\otimes\alpha$ est un isomorphisme, d'où le résultat puisque $A^\bullet(D)$ est libre sur $A^\bullet(X)$.
+
+Nous allons maintenant donner une variante relative de (5.4) et (5.5). Avec les notations précédentes, soit $u:S\to T$ un morphisme de schémas. On pose
+\[
+A^\bullet(X/T)=\bigoplus_i \mathrm{R}^{2i}(u\circ f)_*(A_X)
+\]
+et de même
+\[
+A^\bullet(S/T)=\bigoplus_i \mathrm{R}^{2i}u_*(A_S).
+\]
+Enfin, pour tout $A_S$-Module $L$, on pose
+\[
+Q(S/T,L)=\bigoplus_{n,i}\mathrm{R}^{2i} u_*(L\otimes\mu_S^{\otimes i})
+\]
+
+
+===== 312
+% from s5.tex
+%%%%%%%%%%  scan idx 323  |  folio 312  %%%%%%%%%%
+et
+\[
+Q(X/T,f^*L)=\bigoplus_{n,i}\mathrm{R}^n(u\circ f)_*(f^*L\otimes\mu_X^{\otimes i}).
+\]
+
+Pour tout couple $(i,j)$ d'entiers, avec $1\le i\le m$, $1\le j\le p_i$, l'image de la classe de Chern $c_j(E_i)$ par le morphisme canonique
+\[
+H^{2j}(X,\mu_X^{\otimes j})
+\to H^0(T,\mathrm{R}^{2j}(u\circ f)_*(\mu_X^{\otimes j})
+\]
+définit un $A_T$-morphisme.
+\[
+c_{ij}:A_T\to \mathrm{R}^{2j}(u\circ f)_*(\mu_X^{\otimes j}).
+\]
+La donnée des $c_{ij}$ et l'image réciproque $f^*$ permettent de définir un morphisme de $A^\bullet(S/T)$-Algèbres
+\[
+\theta_1:A^\bullet(S/T)[T_{i,j_i}]_{(i,j_i)}\to A^\bullet(X/T)
+\]
+Notant $c_i$ les sections de $A^\bullet(S/T)$ définies par les classes de Chern $c_i(E)$, on voit comme dans (5.4) que $\theta_1$ s'annule sur l'Idéal $J$ engendré localement par les relations
+\[
+\sum_{i_1+\cdots+i_m=p}T_{1,i_1}\cdots T_{m,i_m}=c_p\qquad(p\in\mathbb N).
+\]
+D'où un morphisme de $A^\bullet(S/T)$-Algèbres
+\[
+\theta:A^\bullet(S/T)[T_{i,j_i}]_{(i,j_i)}/J\to A^\bullet(X/T).
+\]
+
+\begin{statement}{Proposition 5.6}
+\emph{Avec les notations précédentes} :
+\begin{enumerate}[label=\alph*)]
+\item \emph{Le morphisme de} $A^\bullet(S/T)$-\emph{Algèbres}
+\[
+\theta:A^\bullet(S/T)[T_{i,j_i}]_{(i,j_i)}/J\to A^\bullet(X/T)
+\]
+\emph{est un isomorphisme}.
+\item \emph{Pour tout} $A_S$-\emph{Module} $L$, \emph{le morphisme canonique de} $A^\bullet(X/T)$-\emph{Modules}
+
+
+===== 313
+% from s5.tex
+%%%%%%%%%%  scan idx 324  |  folio 313  %%%%%%%%%%
+\[
+A^\bullet(X/T)\otimes_{A^\bullet(S/T)}Q(S/T,L)\to Q(X/T,f^*L)
+\]
+\emph{est un isomorphisme}.
+\end{enumerate}
+\end{statement}
+
+\emph{Preuve} : Simple faisceautisation de (5.4) et (5.5) respectivement.
+
+
+
+===== 314
+% from s5.tex
+%%%%%%%%%%  scan idx 325  |  folio 314  %%%%%%%%%%
+\section*{6. SCHÉMAS EN GROUPES}
+
+Commençons par une propriété générale des objets tordus par des torseurs.
+
+\begin{statement}{Proposition 6.1}
+\emph{Soient} $S$ \emph{un schéma}, $G$ \emph{un} $S$-\emph{schéma en groupes quasi-compact, lisse et à fibres connexes, et} $X$ \emph{un} $S$-\emph{schéma muni d'une opération à gauche de} $G$. \emph{Si} $f:E\to S$ \emph{est un} $S$-\emph{torseur} (à droite) \emph{sous} $G$, \emph{on note} $X_E$ \emph{le} $S$-\emph{schéma obtenu à partir de} $X$ \emph{par torsion au moyen de} $E$ \emph{et de l'opération de} $G$ \emph{sur} $X$. \emph{On note} $p:X\to S$ \emph{et} $q:X_E\to S$ \emph{les projections canoniques. Dans ces conditions, pour tout} $A_S$-\emph{Module} $M$ \emph{et tout entier} $i$, \emph{le} $A_S$-\emph{Module} $\mathrm{R}^iq_*(q^*M)$ \emph{est canoniquement isomorphe à} $\mathrm{R}^ip_*(p^*M)$.
+\end{statement}
+
+\emph{Preuve} :
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+E\times_S X \arrow[r,"\varphi"] \arrow[d,"\pr_1"'] & X_E \arrow[d,"q"]\\
+E \arrow[r,"f"] & S
+\end{tikzcd}
+\qquad
+\begin{tikzcd}[column sep=large,row sep=large]
+E\times_S X \arrow[r,"\pr_2"] \arrow[d,"\pr_1"'] & X \arrow[d,"p"]\\
+E \arrow[r,"f"] & S
+\end{tikzcd}
+\]
+\[
+(D_1)\qquad\qquad\qquad\qquad(D_2)
+\]
+On sait que le diagramme $(D_1)$, dans lequel $\varphi$ désigne l'application canonique de passage au quotient, est cartésien. Le morphisme $f$ étant lisse, le théorème de changement de base lisse fournit un isomorphisme
+\[
+u:f^*\mathrm{R}^iq_*(q^*M)\xrightarrow{\sim}\mathrm{R}^i(\pr_1)_*(\varphi^*q^*M).
+\]
+De même, on déduit du diagramme cartésien $(D_2)$ un isomorphisme
+\[
+v:f^*\mathrm{R}^ip_*(p^*M)\xrightarrow{\sim}\mathrm{R}^i(\pr_1)_*((\pr_2)^*p^*M).
+\]
+Mais $p\circ\pr_2=q\circ\varphi$ donc, identifiant de façon claire $\varphi^*\circ q^*$ et $(\pr_2)^*\circ p^*$, on définit un isomorphisme
+\[
+v^{-1}\circ u:f^*\mathrm{R}^iq_*(q^*M)\xrightarrow{\sim} f^*\mathrm{R}^ip_*(p^*M).
+\]
+Le morphisme $f$ étant à fibres géométriques non vides et connexes, il
+
+
+===== 315
+% from s5.tex
+%%%%%%%%%%  scan idx 326  |  folio 315  %%%%%%%%%%
+résulte de il résulte de (SGA 4 XII 6.5 (i)) que le morphisme d'adjonction
+\[
+\operatorname{adj}:\mathrm{id}\to f_*f^*
+\]
+est un isomorphisme, de sorte que
+\[
+(\operatorname{adj})^{-1}\circ f_*(v^{-1}\circ u)\circ(\operatorname{adj})
+\]
+est l'isomorphisme désiré.
+
+\begin{statement}{Proposition 6.2}
+(Mme RAYNAUD ([5]). \emph{Soient} $S$ \emph{un schéma et} $p:G\to S$ \emph{un} $S$-\emph{schéma en groupes réductifs} (SGA 3 XIX). \emph{Pour tout} $A_S$-\emph{Module localement constant constructible} $M$ \emph{et pour tout entier} $i$, \emph{le} $A_S$-\emph{Module} $\mathrm{R}^ip_*(p^*M)$ \emph{est localement constant et constructible. De plus, pour tout morphisme} $u:S'\to S$ \emph{définissant un diagramme cartésien}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+G' \arrow[r,"u'"] \arrow[d,"p'"'] & G \arrow[d,"p"]\\
+S' \arrow[r,"u"] & S
+\end{tikzcd}
+\]
+\emph{le morphisme de changement de base}
+\[
+u^*\mathrm{R}^ip_*(p^*M)\to \mathrm{R}^ip'_*(p\circ u')^*(M)
+\]
+\emph{est un isomorphisme}.
+\end{statement}
+
+\emph{Preuve} : Les deux assertions de l'énoncé sont locales pour la topologie étale de $S$. D'après (SGA 3 XII 2.3), on peut donc supposer que $G$ est déployé. Soient alors $B$ un sous-groupe de Borel de $G$ du type indiqué dans (SGA 3 XXII 5.1.1), de sorte que le quotient $G/B$ existe d'après (SGA 3 XXII 5.8.5), et $q:G\to G/B$ et $r:G/B\to S$ les morphismes canoniques. Le morphisme $r$ étant propre et lisse, il satisfait au théorème de changement de base propre et les foncteurs $\mathrm{R}^ir_*$ transforment faisceaux abéliens localement constants constructibles en faisceaux du même type (SGA 4 XVI 2.2). Par ailleurs, par (SGA 4 XXII 5.5.1), le $S$-schéma $B$ est isomorphe à un produit fini de fibrés vectoriels et de fibrés vectoriels épointés et par

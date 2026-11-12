@@ -1,0 +1,95 @@
+{
+  "findings": [
+    {
+      "page": 76,
+      "where": "Théorème 8.3.3, (iii bis), dernière flèche",
+      "scan": "$X_i\\rightarrow X$",
+      "tex": "$X_i\\rightarrow X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$X\\rightarrow X_i$",
+      "note": "La flèche imprimée est inversée : pour que X soit majoré par X_i, le F-morphisme doit aller de X vers X_i. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 76,
+      "where": "Théorème 8.3.3, hypothèse de (v)",
+      "scan": "les limites inductives filtrantes",
+      "tex": "les limites inductives filtrantes",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "les limites inductives finies",
+      "note": "Il faut « finies », comme dans (iii), auquel (v) est déclaré équivalent lorsque C est équivalente à une petite catégorie. Le TeX conserve « filtrantes »."
+    },
+    {
+      "page": 77,
+      "where": "Démonstration de (i) ⇒ (ii), relèvement du morphisme issu de X'",
+      "scan": "$X'\\rightarrow X'_i$",
+      "tex": "$X'\\rightarrow X'_i$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$X'\\rightarrow X_{i'}$",
+      "note": "Le prime est placé sur X au lieu d'appartenir à l'indice i ; la phrase suivante prend précisément un majorant commun de i et i'. Le TeX conserve la coquille imprimée."
+    },
+    {
+      "page": 77,
+      "where": "Démonstration de (i) ⇒ (ii), égalité après « tel que »",
+      "scan": "$\\varphi(\\alpha)h_if)=\\varphi(\\alpha)(h_ig)$",
+      "tex": "$\\varphi(\\alpha)(h_if)=\\varphi(\\alpha)(h_ig)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\varphi(\\alpha)(h_if)=\\varphi(\\alpha)(h_ig)$",
+      "note": "Il manque dans l'imprimé la parenthèse ouvrante devant h_if. Le TeX la rétablit silencieusement."
+    },
+    {
+      "page": 77,
+      "where": "Fin du premier paragraphe de la démonstration, famille cofinale",
+      "scan": "$(X_i\\rightarrow F)_{i\\in \\Ob I}$",
+      "tex": "$(X_i\\rightarrow F)_{\\in \\Ob I}$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$(X_i\\rightarrow F)_{\\in \\Ob I}$",
+        "new": "$(X_i\\rightarrow F)_{i\\in \\Ob I}$"
+      },
+      "note": "Le TeX omet le i qui précède le signe d'appartenance dans l'indice de la famille."
+    },
+    {
+      "page": 77,
+      "where": "Démonstration de (ii) ⇒ (i), foncteur canonique affiché",
+      "scan": "$\\varphi:I=C_{/F}\\longrightarrow F$",
+      "tex": "\\varphi:I=C_{/F}\\longrightarrow F{\\quoi}.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\varphi:I=C_{/F}\\longrightarrow C$",
+      "note": "Le foncteur canonique oublie le morphisme vers F et prend ses valeurs dans C. La cible F est une coquille de l'imprimé, conservée par le TeX."
+    },
+    {
+      "page": 78,
+      "where": "Remarque 8.3.4, parenthèse « considéré comme préfaisceau »",
+      "scan": "préfaisceau sur $C^\\circ$",
+      "tex": "préfaisceau sur\n$C^\\circ$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "préfaisceau sur $C$",
+      "note": "Puisque C'=C^\\circ et que F est un foncteur de C' vers les ensembles, F est un préfaisceau sur C, non sur C^\\circ. Le TeX conserve l'exposant erroné de l'imprimé."
+    },
+    {
+      "page": 80,
+      "where": "8.4.3, deuxième phrase",
+      "scan": "Le foncteur constant sur I de valeur sur un objet X de C",
+      "tex": "Le foncteur constant sur $I$ de valeur sur un objet $X$ de $C$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "Le foncteur constant sur $I$ de valeur un objet $X$ de $C$",
+      "note": "Le second « sur » est une répétition fautive dans l'imprimé. Le TeX la conserve."
+    }
+  ],
+  "coordinator": "76: 0/2; 77: 1/3; 78: 0/1; 79: 0/0; 80: 0/1 (normal/misprint)."
+}

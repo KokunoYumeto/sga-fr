@@ -1,0 +1,96 @@
+[
+ {
+  "page": 21,
+  "where": "Prop. 2.13 (i)",
+  "scan": "si et suelement si",
+  "tex": "si et\nseulement si",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "seulement",
+  "note": "Typing error in the print; the TeX silently corrects it."
+ },
+ {
+  "page": 21,
+  "where": "Démonstration (i)",
+  "scan": "Soit V' un voisinage étale de P tel que F(V) → F_P soit surjectif",
+  "tex": "$F(V)\\rightarrow F_P$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$F(V')\\rightarrow F_P$",
+  "note": "The neighbourhood is named V', so F(V) should be F(V'). The TeX keeps the printed reading."
+ },
+ {
+  "page": 22,
+  "where": "(ii) of the proof",
+  "scan": "U → X de P tel que F(U) s'envoie ... pour chaque point géométrique Q de V ... l'image U de V dans X",
+  "tex": "$U\\rightarrow X$ de $P$ tel que $F(U)$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "$V\\rightarrow X$ de $P$ tel que $F(V)$",
+  "note": "The étale neighbourhood is called U and then V; it should be V, with U its image in X. The TeX keeps the printed reading."
+ },
+ {
+  "page": 23,
+  "where": "Prop. 2.14 (ii)",
+  "scan": "(p_i:X'_i → X_i)",
+  "tex": "$(p_i:X'_i\\rightarrow X_i)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$(p_i:X'_i\\rightarrow X)$",
+  "note": "The target should be X, since F embeds in the product of the p_{i*}(C_i) on X. The TeX keeps the printed X_i."
+ },
+ {
+  "page": 24,
+  "where": "line 'se plonge dans s_{i*}(C_{i\\bar Y'_i}), donc'",
+  "scan": "donc",
+  "tex": "dons",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "dons $v_{i\\ast}",
+   "new": "donc $v_{i\\ast}"
+  },
+  "note": "Typo in the TeX."
+ },
+ {
+  "page": 24,
+  "where": "'est limite inductive des t_{ij*}(C_{iZ_{ij}})'",
+  "scan": "t_{ij*}",
+  "tex": "t_{ij^{\\ast}}",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "$t_{ij^{\\ast}}(C_{iZ_{ij}})$",
+   "new": "$t_{ij\\ast}(C_{iZ_{ij}})$"
+  },
+  "note": "In the TeX the star is an exponent of j; in the print it is a subscript star following ij."
+ },
+ {
+  "page": 24,
+  "where": "'En vertu de (2.7.3,'",
+  "scan": "(2.7.3,",
+  "tex": "(\\hyperref[IX.cor2.7.3]{2.7.3}),",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "(2.7.3),",
+  "note": "The closing parenthesis is missing in the print; the TeX silently adds it."
+ },
+ {
+  "page": 25,
+  "where": "proof of 2.14.1, second assertion",
+  "scan": "grâce à (VIII 5.3 ) et loc. cit. au cas",
+  "tex": "grâce à (VIII 5.3) \\loccit au cas",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "(VIII 5.3) \\loccit",
+   "new": "(VIII 5.3) et \\loccit"
+  },
+  "note": "The word 'et' is missing in the TeX."
+ }
+]

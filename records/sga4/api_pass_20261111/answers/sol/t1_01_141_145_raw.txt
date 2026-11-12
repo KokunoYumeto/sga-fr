@@ -1,0 +1,144 @@
+{
+  "findings": [
+    {
+      "page": 141,
+      "where": "9.3.1, indice de E ; notation du cardinal dans ces pages",
+      "scan": "$E_\\pi$",
+      "tex": "$E_{\\Pi}$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "E_{\\Pi}",
+        "new": "E_{\\pi}"
+      },
+      "note": "Le cardinal est noté π minuscule dans le tirage, comme dans les passages où le TeX emploie déjà \\pi. Cette différence répétée est regroupée ici ; voir la convention signalée au coordinateur."
+    },
+    {
+      "page": 142,
+      "where": "Fin de page, preuve de 9.6 ; raccord avec la p. 143",
+      "scan": "La page finit par « de foncteurs π-accessibles $E\\longrightarrow F$, ». La p. 143 commence par « $f=\\varprojlim f_j$ sa limite projective ».",
+      "tex": "de foncteurs $\\Pi$-accessibles $E\\rightarrow F$, $f=\\varprojlim",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le fragment $f=\\varprojlim appartient entièrement à la p. 143, contrairement à la coupe fournie et sans que le commentaire initial autorise ce débordement. Recaler la coupe avant $f=, sans modifier le texte source."
+    },
+    {
+      "page": 143,
+      "where": "Corollaire 9.8, condition sur le cardinal des flèches de J",
+      "scan": "$\\card F\\ell\\leq\\pi$",
+      "tex": "$\\card F\\ell\n\\leq \\Pi$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\card F\\ell\\, J\\leq\\pi$",
+      "note": "Le tirage omet J après Fℓ. Le TeX conserve cette omission ; comparer la condition complète dans 9.6 et au début de la p. 144."
+    },
+    {
+      "page": 144,
+      "where": "Formule (9.8.3)",
+      "scan": "$\\varprojlim_j:\\Hhom(J,F)\\longrightarrow F$",
+      "tex": "\\varinjlim_j:\\Hhom(J,F)\\longrightarrow F\\tag{9.8.3}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\varinjlim_j:",
+        "new": "\\varprojlim_j:"
+      },
+      "note": "La flèche sous lim pointe à gauche dans le tirage : il s'agit du foncteur limite projective."
+    },
+    {
+      "page": 144,
+      "where": "Preuve de l'injectivité, images de a et b dans le deuxième membre",
+      "scan": "les éléments $\\prod_j h(\\infty,j)$ du deuxième membre",
+      "tex": "les éléments $\\prod_j\nh(\\infty, j)$ du deuxième membre",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "les éléments de $\\prod_j h(\\infty, j)$ du deuxième membre",
+      "note": "Il manque « de » avant le produit, qui est l'ensemble contenant les deux éléments. Le TeX conserve l'omission imprimée."
+    },
+    {
+      "page": 144,
+      "where": "Preuve de l'injectivité, choix de i(j)",
+      "scan": "il existe $i(j)\\geq i_\\circ$ tel que […] aient même image dans $h(i,j)$",
+      "tex": "il existe $i(j)\\geq i_\\circ$ tel que\n$a(i_\\circ, j)$ et $b(i_\\circ, j)$ aient même image dans $h(i,j)$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "$h(i(j),j)$",
+      "note": "L'indice choisi dans cette phrase est i(j), et non un i indépendant. Le TeX conserve le raccourci fautif h(i,j) du tirage."
+    },
+    {
+      "page": 144,
+      "where": "Preuve de l'injectivité, majorant commun",
+      "scan": "de tous les $i(j)$",
+      "tex": "de tout les $i(j)$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "de tout les $i(j)$",
+        "new": "de tous les $i(j)$"
+      },
+      "note": "Le tirage porte bien le pluriel « tous »."
+    },
+    {
+      "page": 145,
+      "where": "Corollaire 9.9, conclusion",
+      "scan": "$\\varprojlim X_j$",
+      "tex": "$\\varprojlim X_j$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\varinjlim X_j$",
+      "note": "Le TeX conserve la flèche vers la gauche imprimée. La conclusion concerne pourtant la limite inductive annoncée dans l'hypothèse et utilisée dans la preuve."
+    },
+    {
+      "page": 145,
+      "where": "Preuve de 9.9, « le foncteur […] représente par »",
+      "scan": "représente par",
+      "tex": "représente par",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "représenté par",
+      "note": "Le participe passé doit porter un accent final. Le TeX conserve « représente » du tirage."
+    },
+    {
+      "page": 145,
+      "where": "Remarque 9.10, premier terme de remplacement",
+      "scan": "« π-préaccessible »",
+      "tex": "« $\\Pi$-préaccessible »",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "« $\\pi$-préaccessibles »",
+      "note": "Le tirage omet le s final du terme remplaçant « π-accessibles ». Le TeX conserve ce singulier."
+    },
+    {
+      "page": 145,
+      "where": "Remarque 9.10, dernière phrase",
+      "scan": "cette veriante des énoncés précédents",
+      "tex": "cette variante des énoncés\nprécédents",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "variante",
+      "note": "Le TeX corrige silencieusement « veriante » en « variante »."
+    },
+    {
+      "page": 145,
+      "where": "Proposition 9.11, condition a), catégorie des doubles flèches",
+      "scan": "sur la catégorie",
+      "tex": "sur le catégorie",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "sur le catégorie",
+        "new": "sur la catégorie"
+      },
+      "note": "Le tirage porte « la catégorie »."
+    }
+  ],
+  "coordinator": "Comptes normal/misprint : 141 : 1/0 ; 142 : 1/0 ; 143 : 0/1 ; 144 : 2/2 ; 145 : 1/4.\nMarqueur 142–143 : la p. 142 finit après « $E\\rightarrow F$, » ; la p. 143 commence par « $f=\\varprojlim f_j$ » ; recaler les coupes, sans déplacer le texte source.\nConvention : uniformiser en \\pi les \\Pi désignant ce cardinal dans ces pages ; trois exemples du tirage : p. 141 $E_\\pi$, p. 143 « grand devant $\\pi$ », p. 145 $\\card F\\ell J\\leq\\pi$."
+}

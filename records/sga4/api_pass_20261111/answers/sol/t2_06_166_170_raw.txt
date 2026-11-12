@@ -1,0 +1,178 @@
+{
+  "findings": [
+    {
+      "page": 166,
+      "where": "Premier paragraphe, définition du localisé en un point",
+      "scan": "la limite projective des « voisinages »",
+      "tex": "projectives des",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "projectives des",
+        "new": "projective des"
+      },
+      "note": "L'imprimé porte le singulier « projective »."
+    },
+    {
+      "page": 166,
+      "where": "Second paragraphe, phénomènes propres aux faisceaux étales",
+      "scan": "d'ailleurs dans ce cas des phénomènes spéciaux",
+      "tex": "d'ailleurs dans ce des phénomènes spéciaux",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "d'ailleurs dans ce des",
+        "new": "d'ailleurs dans ce cas des"
+      },
+      "note": "Le mot « cas » manque."
+    },
+    {
+      "page": 167,
+      "where": "Premier paragraphe, « nous nous sommes bornés »",
+      "scan": "nous nous sommes bornés à la fin de l'exposé IX de prouver",
+      "tex": "nous nous sommes bornés à la fin de l'exposé IX de\nprouver",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "nous nous sommes bornés à la fin de l'exposé IX à prouver",
+      "note": "Le TeX conserve « de prouver » de l'imprimé. La construction correcte est « se borner à prouver »."
+    },
+    {
+      "page": 168,
+      "where": "Fin de la preuve de la proposition 1.2, après l'extraction d'une sous-famille finie",
+      "scan": "il résulte de nouveau de loc. cit. que les morphismes correspondants",
+      "tex": "il résulte de\nnouveau une famille épimorphismes correspondants",
+      "kind": "other",
+      "confidence": "high",
+      "fix": {
+        "old": "nouveau une famille épimorphismes",
+        "new": "nouveau de \\loccit que les morphismes"
+      },
+      "note": "Le passage est corrompu : l'imprimé contient le renvoi « de loc. cit. » suivi de « que les morphismes »."
+    },
+    {
+      "page": 168,
+      "where": "Paragraphe précédant la proposition 1.3",
+      "scan": "dans les sites se ramène",
+      "tex": "dans les sites de ramène",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "sites de ramène",
+        "new": "sites se ramène"
+      },
+      "note": "L'imprimé porte « se ramène »."
+    },
+    {
+      "page": 169,
+      "where": "Première ligne du bloc de TeX, avant le corollaire 1.4",
+      "scan": "La page 168 se termine par « localement, cqfd. » ; la page 169 commence par « Corollaire 1.4. ».",
+      "tex": "\\cqfd",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le \\cqfd fourni en tête du bloc de la page 169 appartient encore à la page 168. Il s'agit d'une erreur de coupe, non d'une omission dans la source."
+    },
+    {
+      "page": 169,
+      "where": "Preuve du corollaire 1.4, justification de la suffisance",
+      "scan": "les sommandes vides",
+      "tex": "les commandes vides",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "les commandes vides",
+        "new": "les sommandes vides"
+      },
+      "note": "Le terme imprimé est « sommandes »."
+    },
+    {
+      "page": 169,
+      "where": "Preuve du corollaire 1.4, les deux indices de coproducts",
+      "scan": "\\amalg_{j=J} (deux occurrences)",
+      "tex": "\\amalg_{j=J} (deux occurrences)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\amalg_{j\\in J}",
+      "note": "Le TeX conserve les deux indices imprimés « j=J ». Il faut lire « j∈J » dans les deux occurrences."
+    },
+    {
+      "page": 169,
+      "where": "Preuve du corollaire 1.4, famille couvrante obtenue en ajoutant le complément de X_i",
+      "scan": "Y_j \\amalg X'_i \\to X_i \\amalg X'_i = X",
+      "tex": "\\to X_j \\amalg {X'}_i = X",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\to X_j \\amalg {X'}_i = X",
+        "new": "\\to X_i \\amalg {X'}_i = X"
+      },
+      "note": "Le premier sommande du but est X_i, non X_j."
+    },
+    {
+      "page": 169,
+      "where": "Remarque 1.5.1, topos induit",
+      "scan": "$E_{/X}$, et signifie",
+      "tex": "$E_{/X'}$ et signifie",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$E_{/X'}$ et",
+        "new": "$E_{/X}$, et"
+      },
+      "note": "La marque suivant X est la virgule de la phrase, non une prime de l'indice."
+    },
+    {
+      "page": 169,
+      "where": "1.5.2, famille filtrante croissante",
+      "scan": "de sous-objets de X",
+      "tex": "de sous-objet de $X$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "de sous-objet de $X$",
+        "new": "de sous-objets de $X$"
+      },
+      "note": "L'imprimé porte le pluriel « sous-objets »."
+    },
+    {
+      "page": 170,
+      "where": "1.5.3, reformulation du recouvrement fini par les générateurs",
+      "scan": "isomorphe à un objet quotient d'une somme finie d'objets de E",
+      "tex": "isomorphe à un objet quotient d'une somme finie d'objets de $E$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "isomorphe à un objet quotient d'une somme finie d'objets pris parmi les $X_i$",
+      "note": "Le TeX conserve cette omission de l'imprimé. La somme doit être formée de générateurs X_i ; avec des objets arbitraires de E, la condition énoncée serait tautologique."
+    },
+    {
+      "page": 170,
+      "where": "1.5.3, cardinal des classes d'isomorphie",
+      "scan": "le cardinal de l'ensemble",
+      "tex": "le cardinale de l'ensemble",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "le cardinale de",
+        "new": "le cardinal de"
+      },
+      "note": "L'imprimé ne porte pas de e final à « cardinal »."
+    },
+    {
+      "page": 170,
+      "where": "Titre de 1.6.1",
+      "scan": "Exemples 1.6.1.",
+      "tex": "{Exemple 1.6.1}",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "{Exemple 1.6.1}",
+        "new": "{Exemples 1.6.1}"
+      },
+      "note": "Le titre imprimé est au pluriel."
+    }
+  ],
+  "coordinator": "166: 2/0 ; 167: 0/1 ; 168: 2/0 ; 169: 5/1 ; 170: 2/1 (normal/misprint).\nCoupe 168/169 : \\cqfd termine la page 168 ; le bloc de la page 169 doit commencer au corollaire 1.4."
+}

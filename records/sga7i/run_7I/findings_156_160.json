@@ -1,0 +1,140 @@
+[
+ {
+  "page": 156,
+  "where": "2.0, after (2.0.1): 'Nous n'aurons d'ailleurs partiquement jamais à utiliser la structure de groupe produit'",
+  "scan": "partiquement",
+  "tex": "partiquement",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "pratiquement",
+  "note": "Typing error of the print (checked at 2x zoom). The TeX keeps the printed reading."
+ },
+ {
+  "page": 157,
+  "where": "after (2.0.4): 'Les conditions à imposer aux données (2.0.4) sont la fonctorialité en S'",
+  "scan": "the underline runs under 'fonctorialité en' and the following space and stops where S begins; S is not underlined",
+  "tex": "\\underline{fonctorialité en $S$}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\underline{fonctorialité en $S$}",
+   "new": "\\underline{fonctorialité en} $S$"
+  },
+  "note": "Measured on strip 2: underline x=1185-1587, the S glyph x=1589-1606 (character pitch about 23 px; the underline of 'associativité' two lines below matches its letters to within 5 px). Same as the two 'fonctoriels en S' of Définition 2.1 on p. 159, where the TeX already leaves S outside the underline."
+ },
+ {
+  "page": 157,
+  "where": "(2.0.5), label of the arrow from E_{p,q}E_{p',q}E_{p'',q} up to E_{pp',q}E_{p'',q}",
+  "scan": "φ_{p,p;q}∧id (second p without prime)",
+  "tex": "\\varphi_{p,p';q}\\wedge \\mathrm{id}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\varphi_{p,p';q}\\wedge",
+   "new": "\\varphi_{p,p;q}\\wedge"
+  },
+  "corrected": "\\varphi_{p,p';q}\\wedge",
+  "note": "Checked at 3x zoom: p , p ; q stand in consecutive typewriter cells, so no prime was typed (not a lost stroke). The TeX silently corrects it (its own STRUCTURE comment records 'p,p;q ... printed exactly so'); the fix restores the print. 'corrected' is the current TeX (cf. (1.1.4.1): phi_{p,p'} wedge id)."
+ },
+ {
+  "page": 158,
+  "where": "(2.0.7), target of psi_{p;q,q'}",
+  "scan": "ψ_{p; q,q'}: E_{p,q}E_{p,q'} --~--> E_{pp',q}",
+  "tex": "E_{pp',q} \\qquad ,",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "E_{p,qq'}",
+  "note": "The print repeats the target of (2.0.4); psi_{p;q,q'} lands in E_{p,qq'}, as in the diagrams (2.0.8) and (2.0.9) and in (2.1.1). The TeX keeps the printed reading."
+ },
+ {
+  "page": 158,
+  "where": "(2.0.8), label of the arrow from E_{p,q}E_{p,q'q''} up to E_{p,qq'q''}",
+  "scan": "ψ_{p;q;q'q''} (second semicolon)",
+  "tex": "\\psi_{p;q;q'q''}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\psi_{p;q,q'q''}",
+  "note": "Checked at 3x zoom. The other labels have the pattern psi_{p;a,b}. The TeX keeps the printed semicolon."
+ },
+ {
+  "page": 159,
+  "where": "Définition 2.1, line 2: 'muni de plus d'une structure d'extension de Q_P par G_P défini par des isomorphismes (2.0.4)'",
+  "scan": "défini",
+  "tex": "\\underline{défini par}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\underline{définie par}",
+  "note": "Agreement slip: it is the structure that is defined by the isomorphisms (feminine). The same 'défini' occurs again for (2.0.7) in the same sentence (next finding); correct both or neither. The TeX keeps the printed reading."
+ },
+ {
+  "page": 159,
+  "where": "Définition 2.1, line 5: 'et d'une structure d'extension de P_Q par G_Q, défini par des isomorphismes (2.0.7)'",
+  "scan": "défini",
+  "tex": "\\underline{défini par des isomorphismes}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\underline{définie par des isomorphismes}",
+  "note": "Same agreement slip as in line 2; correct both or neither. The TeX keeps the printed reading."
+ },
+ {
+  "page": 159,
+  "where": "last sentence of Définition 2.1: 'et d'une structure d'extension de G_Q par P_Q, ces deux structures étant compatibles'",
+  "scan": "de G_Q par P_Q",
+  "tex": "$G_Q$ \\underline{par} $P_Q$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$P_Q$ \\underline{par} $G_Q$",
+  "note": "The two groups are swapped: the structure is an extension of P_Q by G_Q, as earlier in the same definition ('structure d'extension de P_Q par G_Q') and in 2.0. Checked at 1.2x zoom. The TeX keeps the printed reading."
+ },
+ {
+  "page": 160,
+  "where": "2.1.1: 'Les axiomes, en plus des associativités du type (2.1.1.1) et des relations analogues en psi, s'exprimant alors par l'associativité'",
+  "scan": "s'exprimant",
+  "tex": "s'exprimant alors",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "s'expriment alors",
+  "note": "The sentence 'Les axiomes ... s'exprimant alors par ... et par la relation (2.1.1.2) ...' has no finite verb; 's'expriment' is meant. The TeX keeps the printed reading."
+ },
+ {
+  "page": 160,
+  "where": "2.2, heading: 'Sections unité, Il y a lieu de considérer'",
+  "scan": "a comma after the underlined heading, followed by capital 'Il'",
+  "tex": "\\underline{Sections unité}, Il",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\underline{Sections unité}. Il",
+  "note": "Checked at 2.5x zoom: a comma with a tail. Other headings of the exposé end with a full stop (p. 143 in the TeX: '1.2. Cas commutatif. Dans toute la suite'). The TeX keeps the printed comma."
+ },
+ {
+  "page": 160,
+  "where": "2.2, before (2.2.2): 'la section unité de E, considéré comme extension de P_G par G_Q'",
+  "scan": "P_G",
+  "tex": "$P_G$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$P_Q$",
+  "note": "Wrong index (checked at 3x zoom): the Q-group P_Q of (2.0.3), symmetric to 'Q_P par G_P' before (2.2.1). The TeX keeps the printed reading."
+ },
+ {
+  "page": 160,
+  "where": "2.2, last lines: 'ces trivialisations coïncident au-dessus de la section unité'",
+  "scan": "coîncident (peaked circumflex over the i, checked at 8x zoom; not a diaeresis)",
+  "tex": "coïncident",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "coïncident",
+  "note": "Same printed spelling as on pp. 144, 145 and 155. The TeX silently corrects it; the fix restores the print. 'corrected' is the current TeX.",
+  "held": "GLOBAL_ISSUES_SGA 33 (typed i-circumflex for i-diaeresis: the TeX stands)"
+ }
+]

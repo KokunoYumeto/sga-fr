@@ -1,0 +1,190 @@
+{
+  "findings": [
+    {
+      "page": 367,
+      "where": "Début de la coupe, avant la section 1",
+      "scan": "La page commence par « 1. Invariance topologique du topos étale », sans titre d'exposé ni nom d'auteur.",
+      "tex": "\\chapter{Foncteurs fibres, supports, étude cohomologique des morphismes finis} et bloc « A. Grothendieck »",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "La coupe comprend un bloc de titre antérieur à cette page, sans que son commentaire initial le signale. Le contenu de p. 367 commence à la section 1. Corriger l'attribution de page, sans supprimer ce bloc du fichier source."
+    },
+    {
+      "page": 367,
+      "where": "Théorème 1.1, définition d'une équivalence de sites",
+      "scan": "une équivalence de catégorie",
+      "tex": "une équivalence de catégories",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "une équivalence de catégories",
+      "note": "Le singulier imprimé est une coquille ; le TeX le corrige silencieusement."
+    },
+    {
+      "page": 367,
+      "where": "Dernière phrase du théorème 1.1",
+      "scan": "quasi-inverses l'une de l'autre",
+      "tex": "quasi-inverses l'une de l'antre",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "l'une de l'antre",
+        "new": "l'une de l'autre"
+      },
+      "note": "Le mot imprimé est « autre », non « antre »."
+    },
+    {
+      "page": 367,
+      "where": "Première référence dans la démonstration",
+      "scan": "SGA IX 4.10 et 4.11",
+      "tex": "\\SGA\\sisi{}{ 1} IX 4.10 et 4.11",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\SGA 1 IX 4.10 et 4.11",
+      "note": "Le numéro 1 du séminaire manque dans l'imprimé. La première branche de \\sisi correspond bien au scan ; le TeX corrige la référence par sa seconde branche."
+    },
+    {
+      "page": 367,
+      "where": "Démonstration, après la première référence",
+      "scan": "lorsque f est de présentation finie",
+      "tex": "lorsque $f$ est présentation finie",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "$f$ est présentation finie",
+        "new": "$f$ est de présentation finie"
+      },
+      "note": "Le TeX omet « de », nettement présent dans l'imprimé."
+    },
+    {
+      "page": 368,
+      "where": "Présentation de A' comme quotient de A''",
+      "scan": "A' ≃ A''/J, ou A'' ≃ A[t₁, …, tₙ]",
+      "tex": "ou $A'' \\simeq A [t_1, \\ldots t_n]$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "où $A'' \\simeq A [t_1, \\ldots t_n]$",
+      "note": "L'imprimé porte « ou » sans accent, au lieu du relatif « où ». Le TeX conserve cette coquille."
+    },
+    {
+      "page": 368,
+      "where": "Conclusion de la démonstration, « Cela prouve… »",
+      "scan": "la première assertion de 2.1",
+      "tex": "\\sisi{\\hyperref[VIII.prop2.1]{2.1}}{\\hyperref[VIII.thm1.1]{1.1}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperref[VIII.thm1.1]{1.1}",
+      "note": "Il s'agit du théorème 1.1, non de la proposition 2.1. Le TeX corrige la référence par \\sisi ; sa première branche reproduit bien l'imprimé."
+    },
+    {
+      "page": 368,
+      "where": "Note de bas de page, « les fibres de S'_i »",
+      "scan": "la fibre de X_i = Spec A'_i […] les fibres de S'_i",
+      "tex": "les fibres de $S'_i$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "les fibres de $X_i$",
+      "note": "La note introduit le schéma sous le nom X_i, puis passe sans définition à S'_i. Le TeX conserve cette incohérence imprimée. Lire X_i dans la seconde occurrence rend la notation cohérente ; on pourrait aussi renommer la définition initiale en S'_i."
+    },
+    {
+      "page": 369,
+      "where": "Exemple 1.3 c), après X_red",
+      "scan": "par définition",
+      "tex": "par définitions",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "par définitions",
+        "new": "par définition"
+      },
+      "note": "L'imprimé porte le singulier."
+    },
+    {
+      "page": 369,
+      "where": "Fin de l'exemple 1.3 c)",
+      "scan": "donc 2.1 s'applique",
+      "tex": "\\sisi{\\hyperref[VIII.prop2.1]{2.1}}{\\hyperref[VIII.thm1.1]{1.1}} s'applique",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperref[VIII.thm1.1]{1.1}",
+      "note": "La référence correcte est 1.1. Le TeX corrige par \\sisi le numéro 2.1 effectivement imprimé."
+    },
+    {
+      "page": 369,
+      "where": "Remarques 1.4, « satisfait aux hypothèses de… »",
+      "scan": "satisfait aux hypothèses de 2.1",
+      "tex": "satisfait aux hypothèses de \\sisi{\\hyperref[VIII.prop2.1]{2.1}}{\\hyperref[VIII.thm1.1]{1.1}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperref[VIII.thm1.1]{1.1}",
+      "note": "Il faut renvoyer à 1.1. Le TeX corrige par \\sisi la référence erronée de l'imprimé."
+    },
+    {
+      "page": 369,
+      "where": "Deuxième paragraphe des remarques 1.4, référence à l'exemple",
+      "scan": "à propos de l'exemple 2.3 c)",
+      "tex": "\\sisi{\\hyperref[VIII.cor2.3]{2.3} c)}{\\hyperref[VIII.exem1.3]{1.3} c)}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperref[VIII.exem1.3]{1.3} c)",
+      "note": "L'exemple visé est 1.3 c). Le TeX corrige par \\sisi le numéro 2.3 imprimé."
+    },
+    {
+      "page": 369,
+      "where": "Deuxième paragraphe des remarques 1.4, référence à la conclusion",
+      "scan": "la conclusion de 2.2",
+      "tex": "\\sisi{\\hyperref[VIII.cor2.2]{2.2}}{\\hyperref[VIII.cor1.2]{1.2}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperref[VIII.cor1.2]{1.2}",
+      "note": "La conclusion visée est celle du corollaire 1.2. Le TeX corrige par \\sisi le numéro 2.2 imprimé."
+    },
+    {
+      "page": 370,
+      "where": "Proposition 2.1, définition du foncteur i",
+      "scan": "i(X')(X'') = Hom_X(X', X'')",
+      "tex": "i(X')(X'') = \\Hom_X (X', X'')",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "i(X')(X'') = \\Hom_X (X'', X')",
+      "note": "Les arguments de Hom sont intervertis dans l'imprimé : le faisceau représenté par X' s'évalue en X'' par Hom_X(X'', X'). Le TeX conserve cette erreur."
+    },
+    {
+      "page": 370,
+      "where": "Fin de la proposition 2.1, « topos classifiant »",
+      "scan": "B_π.) — le point termine la phrase",
+      "tex": "$\\Bb_{\\pi^{\\bigdot}}$)",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$\\Bb_{\\pi^{\\bigdot}}$)",
+        "new": "$\\Bb_{\\pi}$.)"
+      },
+      "note": "Le point imprimé est la ponctuation finale, non un exposant de π dans l'indice de B."
+    },
+    {
+      "page": 370,
+      "where": "Démonstration, référence à la théorie de Galois",
+      "scan": "SGA 1 V",
+      "tex": "\\SGA I V",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "\\SGA I V",
+        "new": "\\SGA 1 V"
+      },
+      "note": "L'imprimé porte le chiffre 1, non la lettre capitale I."
+    }
+  ],
+  "coordinator": "367 : 3/2 ; 368 : 0/3 ; 369 : 1/4 ; 370 : 2/1 (normal/misprint, marqueur compris dans normal).\nP. 367 : faire commencer la coupe à la section « Invariance topologique du topos étale » ; réattribuer le bloc de titre d'exposé et d'auteur qui la précède."
+}

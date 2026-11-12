@@ -1,0 +1,614 @@
+[
+ {
+  "page": 461,
+  "where": "top of the page",
+  "scan": "The page begins with the line 'fr̄_X = fr_X x id_ē = image réciproque de fr_X par X̄ ⟶ X ,'; page 460 ends with 'constant. Posons :' (checked on page_460_s4).",
+  "tex": "page_461.tex begins at 'image réciproque de $\\fr_X$ par ...'; the display \\[ \\overline{\\fr}_X=\\fr_X\\times\\id_{\\bar e}, \\] is the last thing in page_460.tex, after 'Posons'.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-461 marker belongs just before the \\[ that opens \\overline{\\fr}_X=\\fr_X\\times\\id_{\\bar e}, (the last three lines of page_460.tex). The '=' this display should end with is the next finding, filed under page 460 because its old is in page_460.tex."
+ },
+ {
+  "page": 460,
+  "where": "first line of printed p. 461 (its TeX still stands under the folio-460 marker: the last display of page_460.tex)",
+  "scan": "fr̄_X = fr_X x id_ē = image réciproque de fr_X par X̄ ⟶ X ,",
+  "tex": "\\overline{\\fr}_X=\\fr_X\\times\\id_{\\bar e}, \\] image réciproque de $\\fr_X$ ...",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\overline{\\fr}_X=\\fr_X\\times\\id_{\\bar e},",
+   "new": "\\overline{\\fr}_X=\\fr_X\\times\\id_{\\bar e}="
+  },
+  "note": "The print equates the formula with its description ('... x id_ē = image réciproque de ...'); the TeX ends the display with a comma. The line is printed on p. 461; old is in page_460.tex (b456_460) until the marker is moved (finding above). As the next two findings."
+ },
+ {
+  "page": 461,
+  "where": "second formula line, 'f_X = id_X x fr_ē = automorphisme de X̄ ...'",
+  "scan": "f_X = id_X x fr_ē = automorphisme de X̄ défini par f (par transport de structure)",
+  "tex": "f_X=\\id_X\\times\\fr_{\\bar e}, \\] automorphisme de $\\overline X$ ...",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\id_X\\times\\fr_{\\bar e},",
+   "new": "\\id_X\\times\\fr_{\\bar e}="
+  },
+  "note": "The print has '=' between the formula and its description; the TeX has a comma. (The print's text inside the display line, set as running text in the TeX, is layout and not reported.)"
+ },
+ {
+  "page": 461,
+  "where": "same line, end",
+  "scan": "défini par f (par transport de structure)   [nothing follows; the next formula line begins]",
+  "tex": "défini par $f$ par transport de structure, et",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "par $f$ par transport de structure, et",
+   "new": "par $f$ (par transport de structure)"
+  },
+  "note": "The TeX drops the print's parentheses and adds ', et', which the print does not have."
+ },
+ {
+  "page": 461,
+  "where": "third formula line, 'Fr̄*_{F/X} = ... = image réciproque de ...'",
+  "scan": "Fr̄*_{F/X} = Fr*_{F/X} ⊗ id_{Λ_ē} = image réciproque de Fr*_{F/X} par X̄ ⟶ X .",
+  "tex": "\\overline{\\Fr}^*_{F/X}=\\Fr^*_{F/X}\\otimes\\id_{\\Lambda_{\\bar e}}, \\] image réciproque de ...",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes\\id_{\\Lambda_{\\bar e}},",
+   "new": "\\otimes\\id_{\\Lambda_{\\bar e}}="
+  },
+  "note": "As the f_X line: '=' in the print, a comma in the TeX."
+ },
+ {
+  "page": 461,
+  "where": "'On peut écrire :' display, the second fr",
+  "scan": "fr_X̄ = fr̄_X∘f_X = f_X∘fr_X   (no bar over the second fr; the bar over the first is clear)",
+  "tex": "f_X\\circ\\overline{\\fr}_X",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "f_X\\circ\\overline{\\fr}_X",
+   "new": "f_X\\circ\\fr_X"
+  },
+  "corrected": "f_X\\circ\\overline{\\fr}_X",
+  "note": "Checked at 5x: no trace of a bar over the fr of f_X∘fr_X, while the bar over fr̄_X∘f_X just before it is plainly typed. The bar is required (fr̄_X and f_X are the two commuting automorphisms of X̄; fr_X lives on X). The TeX silently corrects; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 461,
+  "where": "'On peut écrire :' display, between the two formulas",
+  "scan": "... = f_X∘fr_X  et  Fr*_{F̄/X̄} = Fr̄*_{F/X} .",
+  "tex": "f_X\\circ\\overline{\\fr}_X, \\qquad \\Fr^*_{\\overline F/\\overline X}=...",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": ",\n\\qquad\n\\Fr^*",
+   "new": "\\quad\\text{et}\\quad\n\\Fr^*"
+  },
+  "note": "The print joins the two formulas with 'et'; the TeX has a comma and \\qquad. Independent of the misprint finding just before (the olds touch but do not overlap)."
+ },
+ {
+  "page": 461,
+  "where": "'Le corollaire de la proposition 3 montre que l'endomorphisme de RΓ_X̄(F̄)'",
+  "scan": "R Γ_X̄(F̄) défini par le couple   (plain typed R, no double underline; checked on a crop)",
+  "tex": "$\\RGamma_{\\overline X}(\\overline F)$ (\\RGamma = \\mathbb{R}\\Gamma)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\RGamma_{\\overline X}(\\overline F)$ défini",
+   "new": "$\\mathrm{R}\\Gamma_{\\overline X}(\\overline F)$ défini"
+  },
+  "note": "Only this first RΓ of the page has a plain R; the two later ones (fr_{RΓ_X̄(F̄)} and 'l'automorphisme de RΓ_X̄(F̄)') have the double-underlined R that \\RGamma gives, and stay."
+ },
+ {
+  "page": 461,
+  "where": "'la correspondance de Frobenius géométrique'",
+  "scan": "géométrique (underlined)",
+  "tex": "géométrique (no markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Frobenius géométrique",
+   "new": "Frobenius \\emph{géométrique}"
+  },
+  "note": "Underlined in the print. Exposé XV of the TeX has no underline markup; \\emph as itemized for Exposés III B and V."
+ },
+ {
+  "page": 461,
+  "where": "'l'opération de Frobenius arithmétique'",
+  "scan": "arithmétique (underlined)",
+  "tex": "arithmétique (no markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Frobenius arithmétique",
+   "new": "Frobenius \\emph{arithmétique}"
+  },
+  "note": "Underlined in the print."
+ },
+ {
+  "page": 461,
+  "where": "heading § 3",
+  "scan": "§ 3. LA FONCTION L .   (capitals, underlined)",
+  "tex": "\\subsection*{§ 3. La fonction $L$}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "La fonction",
+   "new": "LA FONCTION"
+  },
+  "note": "The print sets the § headings of Exposé XV in capitals (also '§ 1. MORPHISME DE FROBENIUS', p. 442, and '§ 2. CORRESPONDANCE DE FROBENIUS.', p. 452); the TeX writes all three in small letters."
+ },
+ {
+  "page": 461,
+  "where": "heading § 3, end",
+  "scan": "§ 3. LA FONCTION L .",
+  "tex": "\\subsection*{§ 3. La fonction $L$}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$L$}",
+   "new": "$L$.}"
+  },
+  "note": "The underlined title ends with a full stop in the print; the TeX drops it."
+ },
+ {
+  "page": 461,
+  "where": "heading n°1",
+  "scan": "n°1. Définition.   (underlined)",
+  "tex": "\\subsubsection*{n\\textsuperscript{o} 1. Définition}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "1. Définition}",
+   "new": "1. Définition.}"
+  },
+  "note": "The underlined title ends with a full stop in the print; the TeX drops it."
+ },
+ {
+  "page": 462,
+  "where": "'l'élément de Frobenius f : λ ⇝ λ^p (λ ∈ F̄_p) ,'",
+  "scan": "f : λ ⇝ λ^p   (hand-drawn wavy arrow; checked on a crop)",
+  "tex": "f: \\lambda\\longmapsto \\lambda^p",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lambda\\longmapsto \\lambda^p",
+   "new": "\\lambda\\rightsquigarrow \\lambda^p"
+  },
+  "note": "The print draws a wavy arrow, not a maps-to arrow; \\rightsquigarrow (amssymb) is used elsewhere in s5.tex."
+ },
+ {
+  "page": 462,
+  "where": "'l'image directe g(F) est de même définie par sa fibre'",
+  "scan": "l'image directe g(F)   (no lower star; checked on a crop)",
+  "tex": "l'image directe $g(F)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$g_*(F)$",
+  "note": "The direct image is g_*(F), as in the rest of the paragraph. The TeX keeps the printed reading; the corrected layer (current/s5.tex) already reads $g_*(F)$."
+ },
+ {
+  "page": 462,
+  "where": "'sa fibre g_*(F)_ē munie des opérations de π_e'",
+  "scan": "g_*(F)_ē",
+  "tex": "$(g_*F)_{\\bar e}$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "sa fibre $(g_*F)_{\\bar e}$",
+   "new": "sa fibre $g_*(F)_{\\bar e}$"
+  },
+  "note": "The print writes g_*(F)_ē (parentheses around F only); the TeX regroups as (g_*F)_ē. Same in the next two findings."
+ },
+ {
+  "page": 462,
+  "where": "'module induit' formula",
+  "scan": "g_*(F)_ē ≃ F_x̄ ⊗_{π_x} π_e .",
+  "tex": "(g_*F)_{\\bar e}\\simeq F_{\\bar x}\\otimes_{\\pi_x}\\pi_e.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(g_*F)_{\\bar e}\\simeq",
+   "new": "g_*(F)_{\\bar e}\\simeq"
+  },
+  "note": "As the previous finding."
+ },
+ {
+  "page": 462,
+  "where": "display 'L_F(t) = L_{g_*(F)}(t) = ...'",
+  "scan": "L_F(t) = L_{g_*(F)}(t) = 1/det(1-f^{-1}_{g_*(F)_ē} t) ;",
+  "tex": "L_F(t)=L_{g_*F}(t)=1/\\det(1-f^{-1}_{(g_*F)_{\\bar e}}t);",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "L_{g_*F}(t)=1/\\det(1-f^{-1}_{(g_*F)_{\\bar e}}t)",
+   "new": "L_{g_*(F)}(t)=1/\\det(1-f^{-1}_{g_*(F)_{\\bar e}}t)"
+  },
+  "note": "Two places in the display: L_{g_*(F)} and the index g_*(F)_ē, as printed."
+ },
+ {
+  "page": 463,
+  "where": "top of the page",
+  "scan": "The page begins with the word 'à' on a line of its own, then the display L_F(t) = 1/det(1-f^{-d}_{F_x̄} t^d) . (page 462 ends with 'cette expression est égale')",
+  "tex": "page_462.tex ends with 'montre que cette expression est égale à'; page_463.tex begins at the display",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-463 marker belongs between 'égale' and 'à' (last line of page_462.tex)."
+ },
+ {
+  "page": 463,
+  "where": "'l'ensemble des points fermés de X'",
+  "scan": "fermés (underlined)",
+  "tex": "fermés (no markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "points fermés de",
+   "new": "points \\emph{fermés} de"
+  },
+  "note": "Underlined in the print."
+ },
+ {
+  "page": 463,
+  "where": "'multipliable dans Ω[[t]] ; explicitons-le en effet'",
+  "scan": "Ω[[t]] ; explicitons-le en effet,en introduisant",
+  "tex": "$\\Omega[[t]]$. Explicitons-le en effet,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\Omega[[t]]$. Explicitons-le",
+   "new": "$\\Omega[[t]]$; explicitons-le"
+  },
+  "note": "The print has a semicolon and a small e; the TeX starts a new sentence."
+ },
+ {
+  "page": 463,
+  "where": "after the display d(x) = [k(x) : F_p]",
+  "scan": "d(x) = [k(x) : F_p] (degré de x) ;   avec ces notations",
+  "tex": "(degré de $x$). Avec ces notations",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(degré de $x$). Avec ces notations",
+   "new": "(degré de $x$); avec ces notations"
+  },
+  "note": "The print has a semicolon and a small a; the TeX has a full stop and a capital."
+ },
+ {
+  "page": 463,
+  "where": "display 'Ainsi la fonction L de (X,F) est'",
+  "scan": "L_F(t) = ∏_{x∈X°} (1/det(1-f^{-d(x)}_{F_x̄} t^{d(x)})   (two opening parentheses, one closing; checked on a crop)",
+  "tex": "L_F(t)=\\prod_{x\\in X^0}1/\\det(1-f_{F_{\\bar x}}^{-d(x)}t^{d(x)}).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\prod_{x\\in X^0}1/\\det",
+   "new": "\\prod_{x\\in X^0}(1/\\det"
+  },
+  "corrected": "\\prod_{x\\in X^0}1/\\det(1-f_{F_{\\bar x}}^{-d(x)}t^{d(x)})",
+  "note": "The print opens a parenthesis before 1/det that it never closes. The TeX silently drops it; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 463,
+  "where": "Proposition 1 a)",
+  "scan": "a) (multiplicativité en F) Soit 0 ⟶ F' ⟶ F ⟶ F'' ⟶ 0",
+  "tex": "\\item Multiplicativité en $F$. Soit",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Multiplicativité en $F$.",
+   "new": "\\item (multiplicativité en $F$)"
+  },
+  "note": "The print puts the item's title in parentheses, with a small m and no full stop."
+ },
+ {
+  "page": 463,
+  "where": "Proposition 1 a), 'Soit'",
+  "scan": "Soit (underlined)",
+  "tex": "Soit (no markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit\n\\[",
+   "new": "\\emph{Soit}\n\\["
+  },
+  "note": "The print underlines the statement's words (Proposition 1 runs on p. 464)."
+ },
+ {
+  "page": 464,
+  "where": "Proposition 1 a), end of the statement (first lines of the page)",
+  "scan": "une suite exacte de Ω-faisceaux constructibles sur X , alors on a   (underlined: 'une suite exacte de', 'faisceaux constructibles sur', 'alors on a')",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "une\nsuite exacte de $\\Omega$-faisceaux constructibles sur $X$, alors on a",
+   "new": "\\emph{une\nsuite exacte de} $\\Omega$-\\emph{faisceaux constructibles sur} $X$, \\emph{alors on a}"
+  },
+  "note": "Underlined statement, word group by word group (math not underlined)."
+ },
+ {
+  "page": 464,
+  "where": "Proposition 1 a), formula",
+  "scan": "L_F = L_{F'}.L_{F''} .   (typed product dot)",
+  "tex": "L_F=L_{F'}L_{F''}.",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "L_{F'}L_{F''}",
+   "new": "L_{F'}\\cdot L_{F''}"
+  },
+  "note": "The TeX drops the print's product dot (a typed full stop, written \\cdot in this file, e.g. p\\cdot 1 on p. 442)."
+ },
+ {
+  "page": 464,
+  "where": "Proposition 1 b), first sentence",
+  "scan": "Soient Y un sous-schéma fermé de X et U = X-Y l'ouvert complémentaire.   (underlined: 'Soient', 'un sous-schéma fermé de', 'et', 'l'ouvert complémentaire')",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $Y$ un sous-schéma fermé de $X$ et $U=X-Y$ l'ouvert complémentaire.",
+   "new": "\\emph{Soient} $Y$ \\emph{un sous-schéma fermé de} $X$ \\emph{et} $U=X-Y$ \\emph{l'ouvert complémentaire}."
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 464,
+  "where": "Proposition 1 b), 'Alors on a'",
+  "scan": "Alors on a (underlined)",
+  "tex": "Alors on a",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors on a",
+   "new": "\\emph{Alors on a}"
+  },
+  "note": "Underlined statement. Independent of the colon and dot findings that follow (the olds do not overlap)."
+ },
+ {
+  "page": 464,
+  "where": "Proposition 1 b), before the formula",
+  "scan": "Alors on a : L_F = L_{F|U}.L_{F|Y}",
+  "tex": "Alors on a \\[ L_F=L_{F|U}\\,L_{F|Y} \\]",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\\[\nL_F=L_{F|U}",
+   "new": " :\n\\[\nL_F=L_{F|U}"
+  },
+  "note": "The TeX drops the colon after 'on a'."
+ },
+ {
+  "page": 464,
+  "where": "Proposition 1 b), formula",
+  "scan": "L_{F|U}.L_{F|Y}   (typed product dot)",
+  "tex": "L_{F|U}\\,L_{F|Y}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\,L_{F|Y}",
+   "new": "\\cdot L_{F|Y}"
+  },
+  "note": "The print has a product dot; the TeX a thin space."
+ },
+ {
+  "page": 464,
+  "where": "Proposition 1 b), after the formula",
+  "scan": "pour tout Ω-faisceau constructible F .   (underlined: 'pour tout', 'faisceau', 'constructible')",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "pour tout $\\Omega$-faisceau constructible $F$.",
+   "new": "\\emph{pour tout} $\\Omega$-\\emph{faisceau constructible} $F$."
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 464,
+  "where": "Proposition 1 c)",
+  "scan": "Soit X ⟶ S un morphisme de schémas de type fini sur F_p , et soit F un Ω-faisceau constructible sur X ; alors   (underlined: 'Soit', 'un morphisme de schémas de type fini sur', 'et soit', 'un', 'faisceau constructible sur', 'alors')",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $X\\to S$ un morphisme de schémas de type fini sur $\\mathbb F_p$, et soit $F$ un $\\Omega$-faisceau constructible sur $X$; alors",
+   "new": "\\emph{Soit} $X\\to S$ \\emph{un morphisme de schémas de type fini sur} $\\mathbb F_p$, \\emph{et soit} $F$ \\emph{un} $\\Omega$-\\emph{faisceau constructible sur} $X$; \\emph{alors}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 464,
+  "where": "proof of Proposition 1, last sentence",
+  "scan": "par un morphisme de préschémas de type fini sur F_p   ('de type fini' underlined)",
+  "tex": "de type fini (no markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "préschémas de type fini sur",
+   "new": "préschémas \\emph{de type fini} sur"
+  },
+  "note": "Underlined in the print."
+ },
+ {
+  "page": 464,
+  "where": "heading n°2",
+  "scan": "n°2. Enoncé du théorème de rationalité et réduction au cas d'une courbe.   (underlined, final full stop)",
+  "tex": "\\subsubsection*{n\\textsuperscript{o} 2. Énoncé du théorème de rationalité et réduction au cas d'une courbe}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "au cas d'une courbe}",
+   "new": "au cas d'une courbe.}"
+  },
+  "note": "The underlined title ends with a full stop in the print; the TeX drops it."
+ },
+ {
+  "page": 464,
+  "where": "Théorème, statement",
+  "scan": "Soient X un schéma de type fini sur F_p , de dimension n , g : X ⟶ e son morphisme structural, et F un Ω-faisceau constructible sur X . On a   (underlined: 'Soient', 'un schéma de type fini sur', 'de dimension', 'son morphisme structural', 'et', 'un', 'faisceau', 'constructible sur', 'On a')",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $X$ un schéma de type fini sur $\\mathbb F_p$, de dimension $n$, $g:X\\to e$ son morphisme structural, et $F$ un $\\Omega$-faisceau constructible sur $X$. On a",
+   "new": "\\emph{Soient} $X$ \\emph{un schéma de type fini sur} $\\mathbb F_p$, \\emph{de dimension} $n$, $g:X\\to e$ \\emph{son morphisme structural}, \\emph{et} $F$ \\emph{un} $\\Omega$-\\emph{faisceau constructible sur} $X$. \\emph{On a}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 464,
+  "where": "Théorème, formula (1)",
+  "scan": "(L_{R^i_! g(F)})^{(-1)^i}   (plain typed R; checked on a crop)",
+  "tex": "L_{\\R^i_!g(F)} (\\R = \\mathbb{R})",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "L_{\\R^i_!g(F)}\\bigr)",
+   "new": "L_{\\mathrm{R}^i_!g(F)}\\bigr)"
+  },
+  "note": "The R of R^i_! is a plain typed R on pp. 464-466 (no double underline); \\R is double-struck."
+ },
+ {
+  "page": 464,
+  "where": "'Dans cet énoncé les R^i_! g(F)'",
+  "scan": "R^i_! g(F)   (plain R)",
+  "tex": "$\\R^i_!g(F)$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "les $\\R^i_!g(F)$",
+   "new": "les $\\mathrm{R}^i_!g(F)$"
+  },
+  "note": "As formula (1)."
+ },
+ {
+  "page": 464,
+  "where": "'On pose H^i_!(X̄,F̄) = R^i_! ḡ(F̄) = R^i_! g(F)_ē'",
+  "scan": "R^i_! ḡ(F̄) = R^i_! g(F)_ē   (both R plain)",
+  "tex": "\\R^i_!\\bar g(\\bar F)=\\R^i_!g(F)_{\\bar e}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^i_!\\bar g(\\bar F)=\\R^i_!g(F)_{\\bar e}",
+   "new": "\\mathrm{R}^i_!\\bar g(\\bar F)=\\mathrm{R}^i_!g(F)_{\\bar e}"
+  },
+  "note": "Two places, as formula (1)."
+ },
+ {
+  "page": 465,
+  "where": "top of the page",
+  "scan": "The page begins 'X̄ , F̄ et ḡ proviennent de X , F et g ...'; page 464 ends with '(théorème du changement de base), où'",
+  "tex": "page_464.tex ends with 'où $\\bar X$, $\\bar F$ et $\\bar g$'; page_465.tex begins at 'proviennent'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-465 marker belongs between 'où' and '$\\bar X$' (last line of page_464.tex)."
+ },
+ {
+  "page": 465,
+  "where": "first display, 'on a d'après le n°1 :'",
+  "scan": "L_{R^i_! g(F)}(t) = ...   (plain R; checked on a crop)",
+  "tex": "L_{\\R^i_!g(F)}(t)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "L_{\\R^i_!g(F)}(t)",
+   "new": "L_{\\mathrm{R}^i_!g(F)}(t)"
+  },
+  "note": "As on p. 464."
+ },
+ {
+  "page": 465,
+  "where": "display (P_{F,u})",
+  "scan": "(P_{F,u}) : L_F = ∏_i (L_{R^i_! u(F)})^{(-1)^i} .   (plain R)",
+  "tex": "L_{\\R^i_!u(F)}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "L_{\\R^i_!u(F)}",
+   "new": "L_{\\mathrm{R}^i_!u(F)}"
+  },
+  "note": "As on p. 464."
+ },
+ {
+  "page": 465,
+  "where": "Lemme 1, statement",
+  "scan": "Soient u : X ⟶ Y un morphisme de schémas de type fini sur F_p et F un Ω-faisceau constructible. Si (P_{F|X_y,u_y}) est vraie pour tout y ∈ Y° , alors (P_{F,u}) est vraie.   (underlined: 'Soient', 'un morphisme de schémas de type fini sur', 'et', 'un', 'faisceau constructible', 'Si', 'est vraie pour tout', 'alors', 'est vraie')",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $u:X\\to Y$ un morphisme de schémas de type fini sur $\\mathbb F_p$ et $F$ un $\\Omega$-faisceau constructible. Si $(P_{F|X_y,u_y})$ est vraie pour tout $y\\in Y^0$, alors $(P_{F,u})$ est vraie.",
+   "new": "\\emph{Soient} $u:X\\to Y$ \\emph{un morphisme de schémas de type fini sur} $\\mathbb F_p$ \\emph{et} $F$ \\emph{un} $\\Omega$-\\emph{faisceau constructible}. \\emph{Si} $(P_{F|X_y,u_y})$ \\emph{est vraie pour tout} $y\\in Y^0$, \\emph{alors} $(P_{F,u})$ \\emph{est vraie}."
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 465,
+  "where": "proof of Lemme 1, 'En effet'",
+  "scan": "En effet   (no comma)",
+  "tex": "En effet,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "En effet,",
+   "new": "En effet"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 465,
+  "where": "proof of Lemme 1, second line of the computation",
+  "scan": "(L_{R^i_! u_y(F|X_y)})^{(-1)^i}   (plain R)",
+  "tex": "L_{\\R^i_!u_y(F|X_y)}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "L_{\\R^i_!u_y(F|X_y)}",
+   "new": "L_{\\mathrm{R}^i_!u_y(F|X_y)}"
+  },
+  "note": "As on p. 464."
+ },
+ {
+  "page": 465,
+  "where": "'or R^i_! u_y(F|X_y) ≃ R^i_! u(F)_y'",
+  "scan": "R^i_! u_y(F|X_y) ≃ R^i_! u(F)_y   (both R plain)",
+  "tex": "\\R^i_!u_y(F|X_y)\\simeq \\R^i_!u(F)_y",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^i_!u_y(F|X_y)\\simeq \\R^i_!u(F)_y",
+   "new": "\\mathrm{R}^i_!u_y(F|X_y)\\simeq \\mathrm{R}^i_!u(F)_y"
+  },
+  "note": "Two places, as on p. 464."
+ },
+ {
+  "page": 465,
+  "where": "end of the page",
+  "scan": "The page ends with '(théorème du changement de base), ce qui'; p. 466 begins with 'donne :' (checked on page_466_s1)",
+  "tex": "page_465.tex ends with '(théorème du changement de base), ce qui donne'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-466 marker belongs between 'ce qui' and 'donne' (last line of page_465.tex)."
+ },
+ {
+  "page": 465,
+  "where": "last word under the folio-465 marker ('ce qui donne'), printed at the top of p. 466",
+  "scan": "donne :   (colon, then the display)",
+  "tex": "ce qui donne",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "ce qui donne",
+   "new": "ce qui donne :"
+  },
+  "note": "The colon is printed at the top of p. 466; the word stands under the folio-465 marker until that marker is moved (finding above)."
+ }
+]

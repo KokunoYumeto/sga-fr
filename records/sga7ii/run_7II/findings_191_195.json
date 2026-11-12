@@ -1,0 +1,224 @@
+[
+ {
+  "page": 191,
+  "where": "3.3.2, after the display: 'Si Λ est un Z/n -algèbre'",
+  "scan": "'un' (masculine) before 'Z/n -algèbre'",
+  "tex": "Si $\\Lambda$ est un $\\mathbb{Z}/n$ -algèbre",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Si $\\Lambda$ est une $\\mathbb{Z}/n$ -algèbre",
+  "note": "Agreement slip: 'algèbre' is feminine. The TeX keeps the printed reading."
+ },
+ {
+  "page": 191,
+  "where": "3.3.3, first paragraph: 'un sous-schéma d'équation Q - b = 0 de A^{n+1}_S comme en 1.3.2 (i)'",
+  "scan": "a plain capital A in the formula typeface, without the double stroke of the Z, C, P, Q on these pages (checked at 8x)",
+  "tex": "$\\mathbb{A}^{n+1}_S$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathbb{A}^{n+1}_S",
+   "new": "A^{n+1}_S"
+  },
+  "note": "p. 188 prints the same plain A ('l'espace affine relatif A^{n+1}_S') and the TeX writes A^{n+1}_{S} there; p. 177 prints a double-struck A (TeX \\mathbb{A}, correct)."
+ },
+ {
+  "page": 191,
+  "where": "3.3.3, second paragraph: 'X~_{s(x)} l'éclaté de X~_s en x'",
+  "scan": "a typed tilde over X_s, the same tilde as over X~_{s(x)} just before it (checked at 6x)",
+  "tex": "l'éclaté de $X_s$ en $x$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "l'éclaté de $X_s$",
+   "new": "l'éclaté de $\\widetilde{X}_s$"
+  },
+  "corrected": "l'éclaté de $X_s$",
+  "note": "Stray tilde: no X~_s is defined; X~_{s(x)} is the blow-up at x (of X_s, or of its henselization X_{s(x)}). The TeX silently corrects; the fix restores the print; 'corrected' is the current TeX."
+ },
+ {
+  "page": 191,
+  "where": "3.3.3, second paragraph: 'X~*_{s(x)} = X_{s(x)} - {x} = X~_{s(x)} - Y'",
+  "scan": "the middle term X_{s(x)} - {x} has no tilde; the first term (tilde and asterisk) and the last term (tilde) have one (checked at 2.5x)",
+  "tex": "\\widetilde{X}^{*}_{s(x)}=\\widetilde{X}_{s(x)}-\\{x\\}=\\widetilde{X}_{s(x)}-Y",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\widetilde{X}_{s(x)}-\\{x\\}",
+   "new": "=X_{s(x)}-\\{x\\}"
+  },
+  "note": "The printed reading is also the correct one: x is a point of X_{s(x)}, and X~_{s(x)} - Y is X_{s(x)} - {x}."
+ },
+ {
+  "page": 191,
+  "where": "diagram, bottom row, middle node: H^n_{x}(X_s, Rψ_η̄(Λ(m)))",
+  "scan": "small psi: the stem rises above the R and descends below the baseline (checked at 6x), the glyph of R^nψ(Λ) on p. 188 (TeX \\psi)",
+  "tex": "R\\Psi_{\\bar\\eta}(\\Lambda(m))) &",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "R\\Psi_{\\bar\\eta}(\\Lambda(m))) &",
+   "new": "R\\psi_{\\bar\\eta}(\\Lambda(m))) &"
+  },
+  "note": "Small psi written \\Psi (coordinator's note on pp. 191-193)."
+ },
+ {
+  "page": 191,
+  "where": "last line: 'deux vecteurs de base ± δ de H^n_{x}(X_s, Rψ_η̄(Λ(m)))'",
+  "scan": "small psi, stem above the R and below the baseline (checked at 5x)",
+  "tex": "R\\Psi_{\\bar\\eta}(\\Lambda(m)))$.",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "R\\Psi_{\\bar\\eta}(\\Lambda(m)))$.",
+   "new": "R\\psi_{\\bar\\eta}(\\Lambda(m)))$."
+  },
+  "note": "Small psi written \\Psi."
+ },
+ {
+  "page": 192,
+  "where": "3.3.4, after the diagram (bottom row H^o(S,R^n f_!Λ(m)) <-~ H^n_c(X_s,Λ(m)) <- H^n_{x}(X_s,Λ(m)))",
+  "scan": "a full stop typed well to the right of the bottom row",
+  "tex": "H^{n}_{\\{x\\}}(X_{s},\\Lambda(m)) \\arrow[l]\n\\end{tikzcd}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzcd}",
+   "new": "\\end{tikzcd}\\quad ."
+  },
+  "note": "Known case of punctuation after a diagram (the STRUCTURE comment under the diagram describes this full stop); written as in the earlier fixes."
+ },
+ {
+  "page": 192,
+  "where": "'est l'image par XIII 2.1.8.4 de la classe (3.3.3) ± δ ∈ H^n_{x}(X_s, Rψ_η̄(Λ(m)))'",
+  "scan": "small psi, stem above the R and below the baseline (checked at 5x)",
+  "tex": "R\\Psi_{\\overline{\\eta}}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "R\\Psi_{\\overline{\\eta}}",
+   "new": "R\\psi_{\\overline{\\eta}}"
+  },
+  "note": "Small psi written \\Psi."
+ },
+ {
+  "page": 193,
+  "where": "(A), second paragraph: 'La construction donnée de ± δ a un analogue transcendant, en cohomologique entière.'",
+  "scan": "'en cohomologique entière' (checked at 1.2x)",
+  "tex": "en cohomologique entière",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "en cohomologie entière",
+  "note": "Wrong word: the noun 'cohomologie' (integral cohomology) is meant. The TeX keeps the printed reading."
+ },
+ {
+  "page": 193,
+  "where": "display: ± δ_{cℓ} ∈ H^n_{0}(X_o, Rψ_{cℓη}(Z))",
+  "scan": "small psi, stem above the R and below the baseline (checked at 4x)",
+  "tex": "H^{n}_{\\{0\\}}(X_o,R\\Psi_{c\\ell\\eta}(\\mathbb{Z}))",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "H^{n}_{\\{0\\}}(X_o,R\\Psi",
+   "new": "H^{n}_{\\{0\\}}(X_o,R\\psi"
+  },
+  "note": "Small psi written \\Psi."
+ },
+ {
+  "page": 193,
+  "where": "'l'image de ± δ_{cℓ} dans H^n_{0}(X_o, Rψ_{cℓη}(Z)) ⊗ Z_ℓ'",
+  "scan": "small psi (checked at 5x)",
+  "tex": "R\\Psi_{c\\ell\\eta}(\\mathbb{Z})) \\otimes",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "R\\Psi_{c\\ell\\eta}(\\mathbb{Z})) \\otimes",
+   "new": "R\\psi_{c\\ell\\eta}(\\mathbb{Z})) \\otimes"
+  },
+  "note": "Small psi written \\Psi."
+ },
+ {
+  "page": 193,
+  "where": "'± δ_{cℓ} sont deux générateurs de H^n_{0}(X_o, Rψ_{cℓη}(Z))'",
+  "scan": "small psi (checked at 5x)",
+  "tex": "R\\Psi_{c\\ell\\eta}(\\mathbb{Z}))$ , et",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "R\\Psi_{c\\ell\\eta}(\\mathbb{Z}))$ , et",
+   "new": "R\\psi_{c\\ell\\eta}(\\mathbb{Z}))$ , et"
+  },
+  "note": "Small psi written \\Psi. This edit ends before ' coïncident', so it does not touch the accent fix below."
+ },
+ {
+  "page": 193,
+  "where": "'..., et coïncident avec les cycles évanescents de XIV 3.2'",
+  "scan": "coîncident: a peaked circumflex over the i (checked at 8x; the same mark as 'coîncide' on p. 178), not a diaeresis",
+  "tex": "coïncident",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "coïncident",
+  "note": "Accent slip of the typescript (as in Exposé X pp. 2, 29 and SGA 7 I pp. 144-155). The TeX silently corrects; the fix restores the print; 'corrected' is the current TeX.",
+  "held": "GLOBAL_ISSUES_SGA 33 (typed i-circumflex for i-diaeresis: the TeX stands)"
+ },
+ {
+  "page": 193,
+  "where": "(C), second paragraph: 'La restriction du faisceau R^i f_* Λ à l'hensélisé strict de S en (T)'",
+  "scan": "'de S en (T)': S without subscript (checked at 3x); S_o has a clear subscript o in the first paragraph of (C)",
+  "tex": "à l'hensélisé strict de $S$ en $(T)$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "à l'hensélisé strict de $S_o$ en $(T)$",
+  "note": "In (C) the base is S_o (X/S_o with b(x) = T); its strict henselization at (T) is the characteristic-0 case covered by (B). Possibly the author's shorthand. The TeX keeps the printed reading."
+ },
+ {
+  "page": 194,
+  "where": "'Pour vérifier que δ_x n'est pas de torsion, il suffit de la faire après extension des scalaires'",
+  "scan": "'de la faire' (checked at 2x)",
+  "tex": "il suffit de la faire",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "il suffit de le faire",
+  "note": "The pronoun has no feminine antecedent (it stands for 'vérifier'); possibly the author's wording for 'la vérification'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 195,
+  "where": "(F): '3.3.6 se réduit du cas général de 3.3.5 comme (B) et (C) de (A).'",
+  "scan": "'se réduit du cas général' (checked at 2.5x)",
+  "tex": "3.3.6 se réduit du cas général",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "3.3.6 se déduit du cas général",
+  "note": "'se réduit du' is not French; 3.3.6 is deduced from the general case of 3.3.5 as (B) and (C) were deduced from (A). The TeX keeps the printed reading."
+ },
+ {
+  "page": 195,
+  "where": "Théorème 3.4 (i): 'un cycle évanescent ± δ_x ∈ H_n(X_η̄)(m)'",
+  "scan": "the n is a subscript: H_n (checked at 2.5x)",
+  "tex": "$\\pm \\delta_x \\in H_n(X_{\\bar{\\eta}})(m)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\pm \\delta_x \\in H^n(X_{\\bar{\\eta}})(m)$",
+  "note": "Wrong index position: the vanishing cycle is a cohomology class (3.3.4 defines ±δ_x as sections of R^n f_! Λ(m); (ii) pairs H^n(X_η̄) with δ_x). The TeX keeps the printed reading."
+ },
+ {
+  "page": 195,
+  "where": "Théorème 3.4 (i): 'sont deux à deux orthogonaux. Pour n pair, on a'",
+  "scan": "the underline of 'sont deux à deux orthogonaux.' continues under 'Pou' and stops before the r (checked at 4x); n is not underlined",
+  "tex": "\\underline{sont deux à deux orthogonaux.} Pour $n$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "orthogonaux.} Pour $n$",
+   "new": "orthogonaux. Pour} $n$"
+  },
+  "note": "The whole statement is underlined except its symbols; the underline stops one letter short of the end of 'Pour'."
+ }
+]

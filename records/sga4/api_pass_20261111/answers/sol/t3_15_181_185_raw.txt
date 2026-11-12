@@ -1,0 +1,99 @@
+{
+  "findings": [
+    {
+      "page": 181,
+      "where": "Paragraphe après la définition 1.11, première phrase",
+      "scan": "les énoncés (i) à (iii) de 1.10",
+      "tex": "les énoncés (i) à (iii) de \\hyperref[XV.prop1.10]{1.10}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "les énoncés (i) à (iv) de \\hyperref[XV.prop1.10]{1.10}",
+      "note": "La borne finale paraît être une coquille : la phrase suivante donne précisément une variante de (iii) et (iv). Le TeX conserve la borne imprimée (iii)."
+    },
+    {
+      "page": 182,
+      "where": "Proposition 1.13 (i), hypothèse sur g",
+      "scan": "supposons que g soit surjective",
+      "tex": "supposons que $g$ soit surjective",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "supposons que $g$ soit surjectif",
+      "note": "Coquille d'accord avec le morphisme g, conservée dans le TeX."
+    },
+    {
+      "page": 182,
+      "where": "Remarques 1.14, début",
+      "scan": "traiter également le cas",
+      "tex": "traiter également la cas",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "traiter également la cas",
+        "new": "traiter également le cas"
+      },
+      "note": "L'imprimé porte bien « le cas »."
+    },
+    {
+      "page": 184,
+      "where": "Corollaire 1.16, première phrase",
+      "scan": "Soit g un morphisme quasi-compact",
+      "tex": "Soit $g$ un morphismes quasi-compact",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "un morphismes",
+        "new": "un morphisme"
+      },
+      "note": "Le mot imprimé est au singulier."
+    },
+    {
+      "page": 184,
+      "where": "Corollaire 1.17, clause concernant les fibres géométriques",
+      "scan": "chaque fibre géométrique X_{\\bar{z}} de g, relativement à un point géométrique \\bar{z} de Y algébrique sur un point z de Y",
+      "tex": "chaque fibre géométrique $X_{\\bar{z}}$ de $g$,\nrelativement à un point géométrique $\\bar{z}$ de $Y$ algébrique sur un\npoint $z$ de $Y$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "chaque fibre géométrique $\\widetilde{X}_{\\bar{z}}$ de $\\widetilde{g}$, relativement à un point géométrique $\\bar{z}$ de $\\widetilde{Y}$ algébrique sur un point $z$ de $\\widetilde{Y}$",
+      "note": "L'imprimé omet les quatre tildes et le TeX conserve cette omission. Le critère doit porter sur les fibres du morphisme des localisés stricts, non sur celles de g ; c'est également ce qu'utilise la démonstration au début de la page 185."
+    },
+    {
+      "page": 185,
+      "where": "Note de bas de page attachée à « Démonstration de 1.15 »",
+      "scan": "est invité à se reporter à 1.18.",
+      "tex": "est invité à se reporter à\n\\sisi{la remarque }{}\\hyperref[XV.rem1.18]{1.18}.",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\sisi{la remarque }{}",
+        "new": "\\sisi{}{}"
+      },
+      "note": "Les mots « la remarque » sont absents de l'imprimé. Ils figurent à tort dans le premier argument de \\sisi, celui qui doit représenter la lecture imprimée ; le second argument est déjà vide."
+    },
+    {
+      "page": 185,
+      "where": "Suite exacte canonique, troisième terme",
+      "scan": "H^{0}(Y,R^{n}g_{\\ast}(g^{\\ast}(F))",
+      "tex": "H^{0}(Y,R^{n}g_{\\ast}(g^{\\ast}(F)){\\quoi},",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{0}(Y,R^{n}g_{\\ast}(g^{\\ast}(F)))",
+      "note": "Il manque dans l'imprimé la parenthèse fermant le terme H^0. Le TeX conserve cette omission ; \\quoi n'imprime rien."
+    },
+    {
+      "page": 185,
+      "where": "Phrase immédiatement après la suite exacte",
+      "scan": "l'image de ξ dans le troisième terme est nul",
+      "tex": "l'image de $\\xi$ dans le\ntroisième terme est nul",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "l'image de $\\xi$ dans le troisième terme est nulle",
+      "note": "Coquille d'accord avec « l'image », conservée dans le TeX."
+    }
+  ],
+  "coordinator": "181 : 0/1 ; 182 : 1/1 ; 183 : 0/0 ; 184 : 1/1 ; 185 : 1/2 (normal/misprint)"
+}

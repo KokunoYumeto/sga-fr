@@ -1,0 +1,227 @@
+{
+  "findings": [
+    {
+      "page": 127,
+      "where": "Première formule, source de la seconde flèche",
+      "scan": "K^+(\\bar{u}^\\ast)(F^{\\bigdot}) \\to r_0^\\ast(J^{\\bigdot})",
+      "tex": "K^+ (\\bar{u}^\\ast)(F^{\\bigdot}) \\to r^{\\ast}_0(J^{\\bigdot})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "K^+ ({\\bar{u}'}^\\ast)(F^{\\bigdot}) \\to r^{\\ast}_0(J^{\\bigdot})",
+      "note": "Le prime manque déjà dans le tirage. La restriction r_0 est celle sur X', comme le confirme le diagramme (3.1.1.8). Le TeX conserve la coquille."
+    },
+    {
+      "page": 127,
+      "where": "Morphisme précédant (3.1.1.8), membre de gauche",
+      "scan": "\\RR^+\\bar{u}'_\\ast\\circ\\mathbf{L}^+{\\bar{u}'}^\\ast(F^{\\bigdot})",
+      "tex": "\\sisi{\\RR^+}{R} \\bar{u}'_\\ast \\circ {\\bar{u}'}^\\ast(F^{\\bigdot})",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\circ {\\bar{u}'}^\\ast(F^{\\bigdot})",
+        "new": "\\circ \\mathbf{L}^{+} {\\bar{u}'}^\\ast(F^{\\bigdot})"
+      },
+      "note": "Le foncteur dérivé L^+ imprimé devant l'image inverse est absent du TeX."
+    },
+    {
+      "page": 127,
+      "where": "Morphisme précédant (3.1.1.8), membre de droite",
+      "scan": "\\RR^+\\bar{u}_\\ast\\circ\\mathbf{L}^+\\bar{u}^\\ast(F^{\\bigdot})",
+      "tex": "\\sisi{\\RR^+}{R} \\bar{u}_\\ast \\circ \\bar{u}^\\ast(F^{\\bigdot})",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\circ \\bar{u}^\\ast(F^{\\bigdot})",
+        "new": "\\circ \\mathbf{L}^{+} \\bar{u}^\\ast(F^{\\bigdot})"
+      },
+      "note": "Le tirage porte également L^+ devant cette image inverse."
+    },
+    {
+      "page": 127,
+      "where": "Diagramme (3.1.1.8), sommet médian supérieur à droite",
+      "scan": "\\RR^+\\bar{u}'_\\ast\\circ\\mathbf{L}^+\\bar{u'}^{\\ast}(F^{\\bigdot})",
+      "tex": "\\sisi{\\RR^{+}}{R}\\bar{u'}_{\\ast}\\circ\n     \\bar{u'}^{\\ast}(F^{\\bigdot})",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\bar{u'}^{\\ast}(F^{\\bigdot})",
+        "new": "\\mathbf{L}^{+} \\bar{u'}^{\\ast}(F^{\\bigdot})"
+      },
+      "note": "L^+ est imprimé dans ce sommet du diagramme."
+    },
+    {
+      "page": 127,
+      "where": "Diagramme (3.1.1.8), sommet inférieur à droite",
+      "scan": "\\RR^+\\bar{u}_\\ast\\circ\\mathbf{L}^+\\bar{u}^{\\ast}(F^{\\bigdot})",
+      "tex": "\\sisi{\\RR^{+}}{R}\\bar{u}_{\\ast}\\circ\\bar{u} {}^{\\ast}(F^{\\bigdot})",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\circ\\bar{u} {}^{\\ast}(F^{\\bigdot})",
+        "new": "\\circ\\mathbf{L}^{+} \\bar{u} {}^{\\ast}(F^{\\bigdot})"
+      },
+      "note": "L^+ manque aussi dans ce sommet."
+    },
+    {
+      "page": 127,
+      "where": "Dernier paragraphe, « Pour achever la démonstration »",
+      "scan": "de (3.11)",
+      "tex": "de (3.11)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "de (3.1.1)",
+      "note": "Le renvoi vise la proposition 3.1.1. Le tirage omet un point et le TeX conserve cette coquille."
+    },
+    {
+      "page": 128,
+      "where": "Début de la démonstration du lemme 3.1.1.9",
+      "scan": "h_n : \\Hom_{\\Delta}([n],[1]) \\to \\Hom_{B/S}(X_n,X'_n)",
+      "tex": "h_n =\\Hom_{\\Delta}([n], [1]) \\to \\Hom_{B/S}(X_n, {X'}_n)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "h_n =\\Hom_{\\Delta}",
+        "new": "h_n : \\Hom_{\\Delta}"
+      },
+      "note": "Le tirage définit une application h_n par deux-points, non par une égalité."
+    },
+    {
+      "page": 128,
+      "where": "But de l'augmentation t",
+      "scan": "C^{\\bar{I\\times D}}_S",
+      "tex": "C^{\\bar{\\Gamma \\times D}}_S",
+      "kind": "symbol",
+      "confidence": "medium",
+      "fix": {
+        "old": "C^{\\bar{\\Gamma \\times D}}_S",
+        "new": "C^{\\bar{I \\times D}}_S"
+      },
+      "note": "Le premier facteur de l'exposant est I, reprenant la catégorie définie dans la phrase précédente, et non Gamma."
+    },
+    {
+      "page": 128,
+      "where": "Complexe dont J est une résolution",
+      "scan": "C^+(\\bar{t}^{\\ast})(F^{\\bigdot})",
+      "tex": "C^+(t^{\\ast})(F^{\\bigdot})",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "C^+(t^{\\ast})(F^{\\bigdot})",
+        "new": "C^+(\\bar{t}^{\\ast})(F^{\\bigdot})"
+      },
+      "note": "Le tirage porte une barre au-dessus de t."
+    },
+    {
+      "page": 128,
+      "where": "Formule à deux flèches, restriction du membre de droite",
+      "scan": "r^+_1(J^{\\bigdot})",
+      "tex": "r^+_1(J^{\\bigdot})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "r^{\\ast}_1(J^{\\bigdot})",
+      "note": "Le signe + est une coquille du tirage pour l'astérisque du foncteur de restriction. Le TeX la conserve."
+    },
+    {
+      "page": 128,
+      "where": "Paragraphe (3.1.3), définition du foncteur colonne",
+      "scan": "c_i : \\Delta \\to \\Delta\\times\\Delta",
+      "tex": "C_i : \\Delta \\to \\Delta \\times\n\\Delta",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\resp $C_i : \\Delta",
+        "new": "\\resp $c_i : \\Delta"
+      },
+      "note": "Le tirage emploie un c minuscule sur cette page."
+    },
+    {
+      "page": 128,
+      "where": "Proposition 3.1.4, variante entre parenthèses",
+      "scan": "\\id_{c_i} : X\\circ c_i \\to X'\\circ c_i",
+      "tex": "\\id_{C_i} :\nX \\circ C_i \\to X'\\circ C_i",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\id_{C_i} :\nX \\circ C_i \\to X'\\circ C_i",
+        "new": "\\id_{c_i} :\nX \\circ c_i \\to X'\\circ c_i"
+      },
+      "note": "Les trois occurrences du foncteur colonne sont également en minuscules dans cette formule imprimée."
+    },
+    {
+      "page": 128,
+      "where": "Proposition 3.1.4, hypothèse",
+      "scan": "équivalence pour de la G-1-descente cohomologique",
+      "tex": "équivalence pour de la\n$G$-$1$-descente cohomologique",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "équivalence pour la $G$-$1$-descente cohomologique",
+      "note": "Le mot « de » est parasite dans le tirage. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 128,
+      "where": "Proposition 3.1.4, conclusion",
+      "scan": "équivalence pour la G-1-descente cohomologique",
+      "tex": "équivalence pour a $G$-$1$-descente cohomologique.",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "équivalence pour a $G$-$1$-descente cohomologique.",
+        "new": "équivalence pour la $G$-$1$-descente cohomologique."
+      },
+      "note": "Le l de « la », présent dans le tirage, manque dans le TeX."
+    },
+    {
+      "page": 128,
+      "where": "Dernière phrase",
+      "scan": "un raisonnement standard par suite spectrales",
+      "tex": "un\nraisonnement standard par suite spectrales",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un raisonnement standard par suites spectrales",
+      "note": "Il manque le s de « suites » dans le tirage; le TeX conserve la coquille."
+    },
+    {
+      "page": 130,
+      "where": "Paragraphe (3.2.2), catégorie à laquelle appartient F",
+      "scan": "\\Mod(\\mathcal{E}^{\\circ}_S,\\mathcal{O}_S)",
+      "tex": "\\Mod(\\mathcal{E}^0_Y, \\mathcal{O}_{Y})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Mod(\\mathcal{E}^0_Y, \\mathcal{O}_{Y})",
+      "note": "Le tirage porte deux indices S; F doit être sur Y pour les foncteurs de la formule suivante. Le TeX corrige silencieusement les deux indices en Y."
+    },
+    {
+      "page": 130,
+      "where": "Diagramme (3.2.2.2), étiquettes des cinq flèches",
+      "scan": "Les cinq flèches sont sans étiquette.",
+      "tex": "Étiquettes f^\\circ, g^\\circ, g'^\\circ, \\Id et f'^\\circ.",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "f^{\\ast}(F) \\ar[r]^{f^\\circ} \\ar[ld]_{g^\\circ}& F\\ar[d]^{g'^\\circ} \\\\\ng_{\\ast}(f^{\\ast}(F))  \\ar[rd]_{\\Id}&             & g'_{\\ast}(F)\\\\\n                      &f'{\\ast}(g'_{\\ast}(F)). \\ar[ru]_{f'^\\circ}",
+        "new": "f^{\\ast}(F) \\ar[r] \\ar[ld]& F\\ar[d] \\\\\ng_{\\ast}(f^{\\ast}(F))  \\ar[rd]&             & g'_{\\ast}(F)\\\\\n                      &f'{\\ast}(g'_{\\ast}(F)). \\ar[ru]"
+      },
+      "note": "Ces étiquettes sont des ajouts éditoriaux au diagramme; elles ne figurent pas dans le tirage."
+    },
+    {
+      "page": 130,
+      "where": "Diagramme (3.2.2.2), sommet inférieur",
+      "scan": "f'^{\\ast}(g'_{\\ast}(F))",
+      "tex": "f'{\\ast}(g'_{\\ast}(F))",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "f'{\\ast}(g'_{\\ast}(F))",
+        "new": "f'^{\\ast}(g'_{\\ast}(F))"
+      },
+      "note": "L'astérisque est en exposant dans le tirage; le caractère ^ manque dans le TeX."
+    }
+  ],
+  "coordinator": "126 : 0/0 ; 127 : 4/2 ; 128 : 6/3 ; 129 : 0/0 ; 130 : 2/1 (normal/misprint).\np.130 : appliquer la suppression des cinq étiquettes de (3.2.2.2) avant la correction de f'^{\\ast}, car les fragments old de ces deux éditions se recouvrent."
+}

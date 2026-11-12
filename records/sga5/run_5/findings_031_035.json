@@ -1,0 +1,307 @@
+[
+ {
+  "page": 31,
+  "where": "top of the page: the first words 'j : V ⟶ U un ouvert non vide de U'",
+  "scan": "p. 31 begins with 'j : V ⟶ U un ouvert non vide de U tel que j*(F) soit localement'; p. 30 ends with 'On peut supposer U ≠ ∅, donc il existe'.",
+  "tex": "'$j : V \\to U$ un' ends s5.tex line 902, the last line of page_030.tex; the folio-31 marker (line 903) follows it, so page_031.tex begins with 'ouvert non vide de $U$'.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 31 really begins at '$j : V \\to U$ un' at the end of s5.tex line 902. Exact fix: python -I move_marker.py 5 31 '$j : V \\to U$ un' --before (single quotes: the anchor contains $ and a backslash); the marker then splits line 902 after 'donc il existe' (simulated in memory on both layers, same place). Text not moved; it agrees with the print."
+ },
+ {
+  "page": 31,
+  "where": "first display, after 'La condition (ii ter) implique que l'on a'",
+  "scan": "R i_* R j_* j^*(F) ≃ R(ij)_* j^*(F) ∈ ob D_c^+(X) . : the sign is a hand-drawn tilde over a straight bar, with no arrowhead at either end",
+  "tex": "\\R i_{*} \\R j_{*} j^{*}(F) \\xrightarrow{\\sim} \\R(ij)_{*} j^{*}(F)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim} \\R(ij)_{*}",
+   "new": "\\simeq \\R(ij)_{*}"
+  },
+  "note": "The TeX writes the same printed sign as \\simeq on pp. 34-35 ('\\R^{!}f(A_S) \\simeq \\R^{!}i', 'f^{!}(A_S) \\simeq A_X[2d]'); the print's tilde arrows with a drawn head (e.g. p. 7) are a different sign."
+ },
+ {
+  "page": 31,
+  "where": "second display, after 'On a par suite'",
+  "scan": "R j_*j^*(F) ≃ i^* R (ij)_* j^*(F) ∈ ob D_c^+(U) . : tilde over a straight bar, no arrowhead",
+  "tex": "\\R j_{*}j^{*}(F) \\xrightarrow{\\sim} i^{*} \\R(ij)_{*} j^{*}(F)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim} i^{*}",
+   "new": "\\simeq i^{*}"
+  },
+  "note": ""
+ },
+ {
+  "page": 31,
+  "where": "the distinguished triangle, after its bottom right vertex",
+  "scan": "a full stop after the bottom right vertex: 'R i_* R j_* j^*(F)  .'",
+  "tex": "no full stop after the tikzcd diagram",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[ul]\n\\end{tikzcd}",
+   "new": "\\arrow[ul]\n\\end{tikzcd}\\quad ."
+  },
+  "note": "Global issue 2 (punctuation after diagrams, reported page by page); \\end{tikzcd}\\quad . is the form used for the same fix in SGA 7 II."
+ },
+ {
+  "page": 32,
+  "where": "section heading 3.4",
+  "scan": "'3.4 : Le théorème de bidualité sur les préschémas réguliers.': no other number",
+  "tex": "\\subsubsection{3.4. Le théorème ...} is unstarred: LaTeX (article class, secnumdepth 3) prints its own number 1.2.4 before '3.4.' (section 1 from \\section{Définition et propriétés formelles ...} at s5.tex line 331, subsection 1.2 from \\subsection{3. Existence de complexes dualisants} at line 701).",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection{",
+   "new": "\\subsubsection*{"
+  },
+  "note": "Convention of the file, reported once: all 11 unstarred \\section/\\subsection/\\subsubsection of s5.tex print automatic numbers that the print does not have (Exposé I lines 331, 595, 701, 703, 791, 847, 928, giving e.g. '1.1 2. Unicité ...', '1.2 3. Existence ...', '1.2.1 3.1. Préliminaires.'; the later \\section at lines 1945, 2082, 2413, 2864 print 2-5): star them in one pass, both layers. The accepted setting of underlined titles as \\section is not in question, only the automatic number."
+ },
+ {
+  "page": 32,
+  "where": "section heading 3.4, after the number",
+  "scan": "'3.4 :' (space and colon; the number not underlined, the title underlined). p. 21 prints '3.1. Préliminaires.' with a full stop.",
+  "tex": "\\subsubsection{3.4. Le théorème de bidualité sur les préschémas réguliers.}",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "{3.4. Le",
+   "new": "{3.4 : Le"
+  },
+  "note": "The print's own variant, not a misprint. Drop it if heading-number punctuation counts as the accepted setting of underlined titles (like the '. :' of run-in labels). Independent of the previous fix (different characters)."
+ },
+ {
+  "page": 32,
+  "where": "label of Théorème 3.4.1, the reference in parentheses",
+  "scan": "'Théorème 3.4.1. (cf. [H] V 2.2.) :': a full stop after 2.2 inside the parenthesis (clear on the scan)",
+  "tex": "\\subsection*{Théorème 3.4.1 (cf. [H] V 2.2)}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "V 2.2)}",
+   "new": "V 2.2.)}"
+  },
+  "note": "The '.' after '3.4.1' and the ' :' after the parenthesis are the accepted label typesetting and are not reported; the full stop inside the reference belongs to the reference (Lemme 1.9 on p. 10 prints '(cf. [H] II 4.3) :' without one)."
+ },
+ {
+  "page": 32,
+  "where": "proof of Théorème 3.4.1, its label",
+  "scan": "'Démonstration : Il s'agit de prouver ...': 'Démonstration' underlined, then ' :', run into the text; no end-of-proof sign where the argument ends on p. 34 ('par hypothèse de récurrence.', end of the proof of Lemme 3.4.2).",
+  "tex": "\\begin{proof}[Démonstration] (amsthm: italic 'Démonstration.'), closed by \\end{proof} on p. 34 (a square)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{proof}[Démonstration]\n",
+   "new": "\\emph{Démonstration} : "
+  },
+  "note": "Apply together with the removal of \\end{proof} on p. 34 (LaTeX fails otherwise). The environment also encloses \\subsection*{Lemme 3.4.2} and its proof (p. 33). Same form as the global '\\emph{Preuve} :'."
+ },
+ {
+  "page": 32,
+  "where": "end of the statement of Théorème 3.4.1: 'Alors A_X est dualisant (1.6).'",
+  "scan": "(1.6), clearly typed",
+  "tex": "Alors $A_X$ est dualisant (1.6).",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(1.7)",
+  "note": "'Dualisant' is Définition 1.7 (p. 8), whose conditions (i)-(iii) the proof checks; Proposition 1.6 (p. 7) is the bound for quasi-finite morphisms. The TeX keeps the printed (1.6). Decide together with the next finding and the three (1.11) of pp. 32-34 (the references of 3.4 seem to follow an older numbering of section 1); pp. 34-35 cite (1.7) for 'dualisant' correctly."
+ },
+ {
+  "page": 32,
+  "where": "start of the proof of 3.4.1: 'satisfait aux conditions (i) à (iii) de (1.6)'",
+  "scan": "(1.6), clearly typed",
+  "tex": "satisfait aux conditions (i) à (iii) de (1.6).",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(1.7)",
+  "note": "Proposition 1.6 has no conditions (i)-(iii); Définition 1.7 has them. The TeX keeps the printed reading. Both or neither with the previous finding. The '(1.7)' four lines below ('reste à prouver, d'après (1.7), que, pour tout A_X-Module constructible F ...') fits 1.7 (iii) with Remarques 1.8 c) and is not reported."
+ },
+ {
+  "page": 32,
+  "where": "'(où l'on a posé D_X = R Hom( ,A_X) )'",
+  "scan": "Hom not underlined: no trace of a rule under it, while the underlines of the D_X on this line and the line above are crisp; Hom is underlined on pp. 7, 8 and 30",
+  "tex": "$\\underline{D}_X = \\R\\,\\underline{\\Hom}(\\quad, A_X)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\R\\,\\underline{\\Hom}(\\quad, A_X)",
+   "new": "\\R\\,\\Hom(\\quad, A_X)"
+  },
+  "corrected": "\\R\\,\\underline{\\Hom}(\\quad, A_X)",
+  "note": "D_X is the sheaf-Hom functor, underlined everywhere else; the typist left the underline out here. The TeX silently supplies it; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 32,
+  "where": "'et par dévissage (3.1.2 (iii bis), on peut se borner'",
+  "scan": "one closing parenthesis only: '(3.1.2 (iii bis),'",
+  "tex": "(3.1.2 (iii~bis)),",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(3.1.2 (iii~bis)),",
+   "new": "(3.1.2 (iii~bis),"
+  },
+  "corrected": "(3.1.2 (iii~bis)),",
+  "note": "Unbalanced parenthesis of the print; the TeX silently closes it, the fix restores the printed reading."
+ },
+ {
+  "page": 32,
+  "where": "'On a grâce au th. de changement de base (cf. SGAA XVII ) i_!(A'_U) ≃ R h_* i'_!(A'_{U'})'",
+  "scan": "tilde over a straight bar, no arrowhead",
+  "tex": "$i_{!}(A'_U) \\xrightarrow{\\sim} \\R h_{*} i'_{!}(A'_{U'})$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "i_{!}(A'_U) \\xrightarrow{\\sim} \\R h_{*}",
+   "new": "i_{!}(A'_U) \\simeq \\R h_{*}"
+  },
+  "note": "The blank after 'XVII' inside the parenthesis is empty on the scan (spacing, not reported)."
+ },
+ {
+  "page": 32,
+  "where": "display 'f_* i_!(A'_U) ≃ f_* R h_* i'_!(A'_{U'}) ≃ R g_* i'_!(A'_{U'}) ,'",
+  "scan": "both signs are a tilde over a straight bar, no arrowhead",
+  "tex": "f_{*} i_{!}(A'_U) \\xrightarrow{\\sim} f_{*} \\R h_{*} i'_{!}(A'_{U'}) \\xrightarrow{\\sim} \\R g_{*} i'_{!}(A'_{U'}),",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim} f_{*} \\R h_{*} i'_{!}(A'_{U'}) \\xrightarrow{\\sim}",
+   "new": "\\simeq f_{*} \\R h_{*} i'_{!}(A'_{U'}) \\simeq"
+  },
+  "note": ""
+ },
+ {
+  "page": 32,
+  "where": "last line: 'En vertu de (1.11), il suffit de prouver que le couple'",
+  "scan": "(1.11), clearly typed",
+  "tex": "En vertu de (1.11), il suffit de prouver que le couple",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(1.13)",
+  "note": "The step is Corollaire 1.13 (g = fh proper: if (F, R^!g(A_X)) is bidualisant, so is (Rg_*F, A_X)); Proposition 1.11 is the exchange of the tensor product and R Hom by D_K. The TeX keeps the printed reading. The same (1.11) stands on p. 33 ('Par (1.11)') and p. 34 ('Appliquant à nouveau (1.11)'): all three or none, together with the two (1.6) of this page."
+ },
+ {
+  "page": 33,
+  "where": "top of the page: '(i'_!(A'_{U'}), R^!g(A_X)) est bidualisant.'",
+  "scan": "p. 33 begins with '(i'_!(A'_{U'}), R^!g(A_X)) est bidualisant. Plongeant localement Y' dans un'; p. 32 ends with 'il suffit de prouver que le couple'.",
+  "tex": "'$(i'_{!}(A'_{U'}), \\R^{!}g(A_X))$ est' ends s5.tex line 940, the last line of page_032.tex; the folio-33 marker (line 941) follows it, so page_033.tex begins with 'bidualisant.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 33 really begins at '$(i'_{!}(A'_{U'}), \\R^{!}g(A_X))$ est' at the end of s5.tex line 940. Exact fix: python -I move_marker.py 5 33 '$(i' --before (the short anchor avoids the quote characters of i'; its last occurrence before the marker is this one; simulated in memory on both layers). The marker then splits line 940 after 'que le couple'. Text not moved; it agrees with the print."
+ },
+ {
+  "page": 33,
+  "where": "a) p = 1: 'R^!i(A_X) ≃ (μ_n)_Y^{⊗-1}[-2]'",
+  "scan": "tilde over a straight bar, no arrowhead",
+  "tex": "\\R^{!}i(A_X) \\xrightarrow{\\sim} (\\mu_n)^{\\otimes -1}_Y[-2]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim} (\\mu_n)",
+   "new": "\\simeq (\\mu_n)"
+  },
+  "note": ""
+ },
+ {
+  "page": 33,
+  "where": "a) p = 1: 'Par (1.11), il suffit de vérifier que (A'_Y, R^!i(A_X)) est bidualisant.'",
+  "scan": "(1.11), clearly typed",
+  "tex": "Par (1.11), il suffit de vérifier que",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(1.13)",
+  "note": "As on p. 32: the reduction along the closed immersion i is Corollaire 1.13. The TeX keeps the printed reading; all three (1.11) of 3.4 or none. Also doubtful, not reported as a finding: Lemme 3.4.2 ends 'est bidualisant (1.4)', but 'bidualisant' is defined in the unnumbered paragraph after Proposition 1.6 (p. 8) and 1.4 defines the quasi-injective dimension; no certain correction."
+ },
+ {
+  "page": 34,
+  "where": "end of the proof of Lemme 3.4.2 (and of Théorème 3.4.1), before Corollaire 3.4.3",
+  "scan": "no end-of-proof sign after 'par hypothèse de récurrence.'",
+  "tex": "\\end{proof} (prints a square)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{proof}\n",
+   "new": ""
+  },
+  "note": "Apply together with the p. 32 label fix (\\begin{proof}[Démonstration] -> \\emph{Démonstration} : )."
+ },
+ {
+  "page": 34,
+  "where": "proof of Corollaire 3.4.3: 'dim.q.inj(R^!f(A_S)) ⩽ 2 Sup(dimX'_{ij})'",
+  "scan": "'Sup' with a capital S",
+  "tex": "2\\sup(\\dim X'_{ij})",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "2\\sup(\\dim X'_{ij})",
+   "new": "2\\operatorname{Sup}(\\dim X'_{ij})"
+  },
+  "note": "Capital against small letter (\\sup prints 'sup')."
+ },
+ {
+  "page": 34,
+  "where": "'Or R^!f'(A_S) est localement isomorphe à A_X (à translation près de 2d)'",
+  "scan": "A_X, with no prime on the X",
+  "tex": "localement isomorphe à $A_X$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$A_{X'}$",
+  "note": "f' : X' -> S is smooth, so R^!f'(A_S) lives on X' and is locally A_{X'} up to the shift 2d. The diplomatic TeX keeps the printed A_X; the current layer already has A_{X'}."
+ },
+ {
+  "page": 34,
+  "where": "'donc en particulier vérifie les conditions (ii) et (ii) de (1.7), cqfd.'",
+  "scan": "(ii) et (ii)",
+  "tex": "les conditions (ii) et (ii) de (1.7)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(ii) et (iii)",
+  "note": "The proof set out to check 'les conditions (ii) et (iii) de (1.7)' (same page). The diplomatic TeX keeps the printed reading; the current layer already has (iii)."
+ },
+ {
+  "page": 34,
+  "where": "first paragraph: 'Appliquant à nouveau (1.11) et la pureté'",
+  "scan": "(1.11), clearly typed",
+  "tex": "Appliquant à nouveau (1.11) et la pureté",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(1.13)",
+  "note": "As on pp. 32-33 (Corollaire 1.13, for the closed immersion of Y_p); the TeX keeps the printed reading; all three or none."
+ },
+ {
+  "page": 35,
+  "where": "end of 4.1: 'un isomorphisme K_{x} ≃ A.'",
+  "scan": "tilde over a straight bar, no arrowhead",
+  "tex": "K_{\\{x\\}}\\xrightarrow{\\sim}A",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "K_{\\{x\\}}\\xrightarrow{\\sim}A",
+   "new": "K_{\\{x\\}}\\simeq A"
+  },
+  "note": "Earlier on the same page the TeX writes the same printed sign as \\simeq ('f^{!}(A_S) \\simeq A_X[2d]')."
+ },
+ {
+  "page": 35,
+  "where": "end of the proof of Corollaire 3.4.4: 'car les hypothèses sont bien vérifiées (voir 3.1)).'",
+  "scan": "two closing parentheses after 3.1; no parenthesis is open earlier in the sentence",
+  "tex": "bien vérifiées (voir 3.1)).",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(voir 3.1).",
+  "note": "The TeX keeps the printed reading. Another correction would open a parenthesis earlier (e.g. before 'donc f^!(A_S)'), but nothing on the page marks where."
+ }
+]

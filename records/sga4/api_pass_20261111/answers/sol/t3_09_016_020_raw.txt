@@ -1,0 +1,117 @@
+{
+  "findings": [
+    {
+      "page": 16,
+      "where": "Suite du lemme 2.8.1, parenthèse « en particulier »",
+      "scan": "chaque $Y_i$ est constructible dans $X$",
+      "tex": "chaque $Y_i$\nest constructible dans $X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "chaque $Y_i$ est constructible dans $Y$",
+      "note": "Coquille conservée par le TeX : les Y_i sont des sous-schémas de Y."
+    },
+    {
+      "page": 16,
+      "where": "Démonstration du lemme, réunion des images T_i",
+      "scan": "la réunion des $T_i$ est $X$ puisque $f$ est surjectif",
+      "tex": "la réunion des $T_i$ est $X$ puisque $f$\nest surjectif",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "la réunion des $T_i$ est $Y$ puisque $f$ est surjectif",
+      "note": "Le TeX conserve X. Les T_i sont les images des ouverts X_i dans Y ; leur réunion est donc Y."
+    },
+    {
+      "page": 16,
+      "where": "Démonstration du lemme, extraction d'une réunion finie",
+      "scan": "que $X$ est réunion d'un nombre fini des $T_i$",
+      "tex": "que $X$ est réunion d'un nombre fini des\n$T_i$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "que $Y$ est réunion d'un nombre fini des $T_i$",
+      "note": "Nouvelle occurrence de X pour Y dans l'imprimé, conservée par le TeX."
+    },
+    {
+      "page": 16,
+      "where": "Démonstration du lemme, réduction au spectre d'un corps",
+      "scan": "La récurrence noethérienne habituelle, et le procédé de passage à la limite […] nous ramène",
+      "tex": "nous ramène au cas où $Y$ est réduit au spectre d'un corps $k$.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "nous ramènent au cas où $Y$ est réduit au spectre d'un corps $k$.",
+      "note": "Accord fautif conservé par le TeX : le sujet coordonne « la récurrence » et « le procédé »."
+    },
+    {
+      "page": 16,
+      "where": "Démonstration de 2.8, factorisation obtenue par le lemme",
+      "scan": "$f$ est de la forme $gh$",
+      "tex": "est de la forme $gh$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "est de la forme $hg$",
+      "note": "Le TeX conserve gh. Avec les conditions respectivement attribuées à g et h, les flèches du lemme donnent le composite h après g, donc hg."
+    },
+    {
+      "page": 19,
+      "where": "Premier paragraphe, sections engendrant l'image inverse de S",
+      "scan": "$f^{\\ast}(S_i)$",
+      "tex": "$f^{\\ast}(S_i)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$f^{\\ast}(s_i)$",
+      "note": "La majuscule S est une coquille conservée par le TeX : les sections considérées sont les s_i."
+    },
+    {
+      "page": 19,
+      "where": "Décomposition des sections s_i en composantes s_ij",
+      "scan": "$s_i\\ (s_{i1},\\ldots,s_{in_i})$",
+      "tex": "$s_i$ $(s_{il},\\ldots,s_{in_i})$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$s_i=(s_{i1},\\ldots,s_{in_i})$",
+      "note": "Aucun signe de relation n'est imprimé entre s_i et le tuple ; le TeX conserve cette omission. Il manque une égalité sous l'identification naturelle des sections sur la somme disjointe."
+    },
+    {
+      "page": 19,
+      "where": "Premier indice du tuple donnant les composantes de s_i",
+      "scan": "s_{i1}",
+      "tex": "s_{il}",
+      "kind": "formula",
+      "confidence": "medium",
+      "fix": {
+        "old": "s_{il}",
+        "new": "s_{i1}"
+      },
+      "note": "Le premier terme est celui d'indice j=1, non celui d'indice l. Le dessin du chiffre 1 est proche d'un l dans cette fonte de machine."
+    },
+    {
+      "page": 20,
+      "where": "Proposition 2.11, choix du point géométrique",
+      "scan": "Soient $x\\in X$, $x$ un point géométrique sur $x$.",
+      "tex": "$x\\in X$, $x$ un point géométrique sur $x$.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$x\\in X$, $\\bar{x}$ un point géométrique sur $x$.",
+      "note": "Le second x est imprimé sans barre, lecture conservée par le TeX. Il désigne le point géométrique noté ensuite systématiquement avec une barre."
+    },
+    {
+      "page": 20,
+      "where": "Démonstration de 2.11, définition de Z",
+      "scan": "l'homomorphisme […] soit bijective",
+      "tex": "bijective, est une partie localement constructible de $X$.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "bijectif",
+      "note": "Coquille d'accord conservée par le TeX : « bijectif » se rapporte à « l'homomorphisme »."
+    }
+  ],
+  "coordinator": "Comptes (normal/misprint) : 16 : 0/5 ; 17 : 0/0 ; 18 : 0/0 ; 19 : 1/2 ; 20 : 0/2."
+}

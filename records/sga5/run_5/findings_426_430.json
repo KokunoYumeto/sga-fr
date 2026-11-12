@@ -1,0 +1,502 @@
+[
+ {
+  "page": 426,
+  "where": "(5.2), first line, left side: the subscript of f' in Tr_{Z_l[G],phi}(...)(g)",
+  "scan": "f'_{ℋ^∨_{U',X'}(ℓ)}: the dual sign stands at the upper right of the hand-drawn ℋ, after it (U',X' below it), not on f'",
+  "tex": "f'^\\vee_{H_{U',X'}(\\ell)}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(f'^\\vee_{H_{U',X'}(\\ell)})(g)",
+   "new": "(f'_{H^\\vee_{U',X'}(\\ell)})(g)"
+  },
+  "note": "Same placement on the right side of this line and in (5.9), (5.11) on p. 427. The fix keeps the file's plain H (script ℋ: convention item below)."
+ },
+ {
+  "page": 426,
+  "where": "(5.2), first line, right side",
+  "scan": "Tr_{Z_ℓ}(g^{-1}_{X'}f')_{ℋ^∨_{U',X'}(ℓ)}: the dual sign after ℋ, nothing on the closing parenthesis",
+  "tex": "(g_{X'}^{-1}f')^\\vee_{H_{U',X'}(\\ell)}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "f')^\\vee_{H_{U',X'}(\\ell)}",
+   "new": "f')_{H^\\vee_{U',X'}(\\ell)}"
+  },
+  "note": "The first line of (5.2) has the dual ℋ^∨ on both sides."
+ },
+ {
+  "page": 426,
+  "where": "(5.2), second line",
+  "scan": "= Tr_{Z_ℓ}(g^{-1}_{X'}f')_{ℋ_{U',X'}(ℓ)} . : no dual sign (clean paper at the upper right of ℋ)",
+  "tex": "(g_{X'}^{-1}f')_{H^\\vee_{U',X'}(\\ell)}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "f')_{H^\\vee_{U',X'}(\\ell)} \\quad .",
+   "new": "f')_{H_{U',X'}(\\ell)} \\quad ."
+  },
+  "note": "The print passes from the trace on ℋ^∨ (first line) to the trace on ℋ (second line), and (5.3), (5.6) continue with ℋ; the TeX moves the dual sign onto this line and keeps it in (5.3), (5.6)."
+ },
+ {
+  "page": 426,
+  "where": "(5.3), left side",
+  "scan": "Tr_{Z_ℓ}(g^{-1}_{X'}f')_{ℋ_{U',X'}(ℓ)}: no dual sign",
+  "tex": "H^\\vee_{U',X'}(\\ell)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "_{H^\\vee_{U',X'}(\\ell)} = \\Tr",
+   "new": "_{H_{U',X'}(\\ell)} = \\Tr"
+  },
+  "note": "The exact sequence of (1.3) concerns ℋ_{U',X'}(ℓ) itself."
+ },
+ {
+  "page": 426,
+  "where": "(5.6), left side",
+  "scan": "Tr_{Z_ℓ}(g^{-1}_{X'}f')_{ℋ_{U',X'}(ℓ)}: no dual sign",
+  "tex": "H^\\vee_{U',X'}(\\ell)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "_{H^\\vee_{U',X'}(\\ell)} = \\sum",
+   "new": "_{H_{U',X'}(\\ell)} = \\sum"
+  },
+  "note": ""
+ },
+ {
+  "page": 426,
+  "where": "(5.6), second line, index of the inner sum",
+  "scan": "x'∈X'^{g^{-1}_{X'}f'}: no subscript x under X' (clean paper; the first line prints X'_x)",
+  "tex": "{X'_x}^{g_{X'}^{-1}f'}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "{X'_x}^{g_{X'}^{-1}f'}} (1",
+   "new": "{X'}^{g_{X'}^{-1}f'}} (1"
+  },
+  "corrected": "{X'_x}^{g_{X'}^{-1}f'}",
+  "note": "The inner sum runs over the fixed points in the fibre X'_x of the outer index x ∈ Y^f, as in (5.4) and the first line. The TeX silently corrects; the fix restores the printed reading (diplomatic layer only). Same omission in (5.9), p. 427."
+ },
+ {
+  "page": 426,
+  "where": "the module ℋ_{U',X'}(ℓ) in (5.2) (both lines), (5.3), (5.6); p. 427 (5.9), (5.11)",
+  "scan": "a hand-drawn script ℋ (a loop at the foot of the left stem, the bar run out to the left), not a typed H",
+  "tex": "plain H",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the transcription for this module, not itemized (the TeX writes the same plain H on p. 425 (5.1.1) and as H_{n,U',X'} on pp. 408-411, 432-433; print not checked there). If it is set as \\mathcal{H}, apply the dual-sign fixes of pp. 426-427 first: their old strings contain the plain H."
+ },
+ {
+  "page": 427,
+  "where": "first sentence, 'l'ensemble X'^{g^{-1}_{X'}f'} est non vide'",
+  "scan": "X'^{g^{-1}_{X'}f'}: no subscript x under X' (clean paper below it)",
+  "tex": "{X'_x}^{g_{X'}^{-1}f'}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "l'ensemble ${X'_x}^",
+   "new": "l'ensemble ${X'}^"
+  },
+  "corrected": "{X'_x}^{g_{X'}^{-1}f'}",
+  "note": "The set depends on the given x ∈ U^f (fixed points in the fibre X'_x, as in (5.7)); the TeX silently corrects. Diplomatic layer only."
+ },
+ {
+  "page": 427,
+  "where": "first sentence, 'si et seulement si NW^{G,φ}_{f'}(x) = 1'",
+  "scan": "NW^{G,φ}_{f'}(x): subscript f' with a clear prime",
+  "tex": "\\mathrm{NW}_{f}^{G,\\varphi}(x)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathrm{NW}_{f}^{G",
+   "new": "\\mathrm{NW}_{f'}^{G"
+  },
+  "note": "The exposé introduces the invariant as NW_{f'}^{G,φ}(x) (s5.tex line 13927, p. 413) before naming it NW_f^{G,φ}(x); (5.9) and (5.11) print NW_f. Reported as the print's reading, not as a misprint."
+ },
+ {
+  "page": 427,
+  "where": "(5.7)",
+  "scan": "Card X'_x^{g^{-1}_{X'}f'} = c^φ(g) , x ∈ U . : 'Card' with a capital C",
+  "tex": "\\card (\\providecommand{\\card}{\\operatorname{card}}, s5.tex line 261: prints 'card')",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\card {X'_x}",
+   "new": "\\operatorname{Card} {X'_x}"
+  },
+  "note": "p. 423 also prints Card(G_1) and Card(G) (twice) where the TeX has \\card: see the message (a redefinition of \\card would cover all)."
+ },
+ {
+  "page": 427,
+  "where": "(5.9), left side",
+  "scan": "Tr_{Z_ℓ[G],φ}(f'_{ℋ^∨_{U',X'}(ℓ)})(g): the dual sign after ℋ, not on f'",
+  "tex": "f'^\\vee_{H_{U',X'}(\\ell)}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "f'^\\vee_{H_{U',X'}(\\ell)})(g)",
+   "new": "f'_{H^\\vee_{U',X'}(\\ell)})(g)"
+  },
+  "note": "As (5.2) on p. 426."
+ },
+ {
+  "page": 427,
+  "where": "(5.9), second line, index of the inner sum",
+  "scan": "x'∈X'^{g^{-1}_{X'}f'}: no subscript x under X' (clean paper)",
+  "tex": "{X'_x}^{g_{X'}^{-1}f'}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "{X'_x}^{g_{X'}^{-1}f'}} \\frac",
+   "new": "{X'}^{g_{X'}^{-1}f'}} \\frac"
+  },
+  "corrected": "{X'_x}^{g_{X'}^{-1}f'}",
+  "note": "As (5.6) on p. 426; the TeX silently corrects. Diplomatic layer only."
+ },
+ {
+  "page": 427,
+  "where": "(5.9), numerator (1-ν_{x'}(g^{-1}_{x'}f'))",
+  "scan": "the subscript of g is a small x' (15 px high, like the x' of ν; the capital X' of g_{X'} in the sum index is 21 px)",
+  "tex": "g_{X'}^{-1}f'",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(g_{X'}^{-1}f'))}{c",
+   "new": "(g_{x'}^{-1}f'))}{c"
+  },
+  "corrected": "g_{X'}^{-1}f'",
+  "note": "g_{X'} is the action of g on X', as everywhere on these pages; the TeX silently corrects. Diplomatic layer only."
+ },
+ {
+  "page": 427,
+  "where": "heading 5.10",
+  "scan": "5.10. Cas particuliers. (underlined title, full stop after it)",
+  "tex": "\\subsection*{5.10. Cas particuliers}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{5.10. Cas particuliers}",
+   "new": "\\subsection*{5.10. Cas particuliers.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 427,
+  "where": "(5.11), left side",
+  "scan": "Tr_{Z_ℓ[G],φ}(f'_{ℋ^∨_{U',X'}(ℓ)}): the dual sign after ℋ, not on f'",
+  "tex": "f'^\\vee_{H_{U',X'}(\\ell)}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "f'^\\vee_{H_{U',X'}(\\ell)}) =",
+   "new": "f'_{H^\\vee_{U',X'}(\\ell)}) ="
+  },
+  "note": "As (5.2) on p. 426."
+ },
+ {
+  "page": 427,
+  "where": "b), 'ν_{x'}(g^{-1}_X f') = 1'",
+  "scan": "g^{-1}_X: capital X without prime (clean paper between X and f')",
+  "tex": "g_{X'}^{-1}f'",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(g_{X'}^{-1}f') = 1$",
+   "new": "(g_{X}^{-1}f') = 1$"
+  },
+  "corrected": "g_{X'}^{-1}f'",
+  "note": "(5.8) prints g^{-1}_{X'}; the TeX silently corrects. Diplomatic layer only."
+ },
+ {
+  "page": 427,
+  "where": "b), '∀x'∈Y'^{...}'",
+  "scan": "the typed quantifier ∀, no words",
+  "tex": "pour tout $x'\\in",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "pour tout $x'\\in",
+   "new": "$\\forall x'\\in"
+  },
+  "note": "Abbreviation written out by the TeX."
+ },
+ {
+  "page": 427,
+  "where": "b), exponent of Y' in '∀x'∈Y'^{g^{-1}_Y f'_Y}'",
+  "scan": "g^{-1}_Y f'_Y: both subscripts Y without prime (clean paper after each Y)",
+  "tex": "{Y'}^{g_{Y'}^{-1}f'_{Y'}}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "{Y'}^{g_{Y'}^{-1}f'_{Y'}}",
+   "new": "{Y'}^{g_{Y}^{-1}f'_{Y}}"
+  },
+  "corrected": "{Y'}^{g_{Y'}^{-1}f'_{Y'}}",
+  "note": "(5.5) on p. 426 prints g^{-1}_{Y'}f'_{Y'}; the TeX silently corrects both. Diplomatic layer only."
+ },
+ {
+  "page": 427,
+  "where": "b), 'et ∀g ∈ G .'",
+  "scan": "et ∀g ∈ G . (typed quantifier)",
+  "tex": "et tout $g\\in G$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "et tout $g\\in G$",
+   "new": "et $\\forall g\\in G$"
+  },
+  "note": "Abbreviation written out by the TeX."
+ },
+ {
+  "page": 427,
+  "where": "last line, 'ν_x(f) = 1 pour tout y ∈ Y'",
+  "scan": "ν_x(f) = 1: argument f",
+  "tex": "\\nu_y(x)=1",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(x)=1$ pour",
+   "new": "(f)=1$ pour"
+  },
+  "note": "The TeX's \\nu_y(x) is neither the print (ν_x(f)) nor the corrected reading (ν_y(f)). This fix restores the argument f in both layers; the next item restores the printed subscript x (no overlap between the two). In the same sentence, the full stop after 'formule 5.11' is only a faint 2x2 grey speck at the stop's position: the TeX's '5.11.' is left as it is."
+ },
+ {
+  "page": 427,
+  "where": "last line, subscript of ν in 'ν_x(f) = 1 pour tout y ∈ Y'",
+  "scan": "ν_x: subscript x, against the bound y of 'pour tout y ∈ Y'",
+  "tex": "\\nu_y",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": ", $\\nu_y",
+   "new": ", $\\nu_x"
+  },
+  "corrected": "\\nu_y(f)=1",
+  "note": "The TeX silently corrects the subscript (the source comment on this line already names ν_x(f) as the diplomatic reading). Diplomatic layer only."
+ },
+ {
+  "page": 428,
+  "where": "heading 6",
+  "scan": "6. Application à une formule de Lefschetz. (underlined title, full stop after it)",
+  "tex": "\\section*{6. Application à une formule de Lefschetz}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{6. Application à une formule de Lefschetz}",
+   "new": "\\section*{6. Application à une formule de Lefschetz.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 428,
+  "where": "number 6.1",
+  "scan": "6.1. Nous garderons ... (number with its full stop, run into the text)",
+  "tex": "\\subsection*{6.1}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.1}",
+   "new": "\\subsection*{6.1.}"
+  },
+  "note": "As reported for \\subsection*{3.6.5} (p. 97)."
+ },
+ {
+  "page": 428,
+  "where": "'et par conséquence un endomorphisme de complexes'",
+  "scan": "par conséquence (clear, 2x crop)",
+  "tex": "par conséquent",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "et par conséquent un endomorphisme",
+   "new": "et par conséquence un endomorphisme"
+  },
+  "note": "The print has 'par conséquence' here and on p. 429 ('et par conséquence M est un'), 'par conséquent' elsewhere; an older form of the locution, reported as a word difference, not as a misprint."
+ },
+ {
+  "page": 428,
+  "where": "display after 'endomorphisme de complexes de A-modules :', left member",
+  "scan": "ℝΓ_x(u,f): the subscript of Γ is a small x (the three others on the line are capital X)",
+  "tex": "\\R\\Gamma_X(u, f)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R\\Gamma_X(u, f) :",
+   "new": "\\R\\Gamma_x(u, f) :"
+  },
+  "corrected": "\\R\\Gamma_X(u, f)",
+  "note": "The TeX silently corrects. Diplomatic layer only."
+ },
+ {
+  "page": 428,
+  "where": "same display, target of the arrow",
+  "scan": "⟶(ℝΓ_X(F) . : an opening parenthesis before ℝ, never closed",
+  "tex": "\\longrightarrow \\R\\Gamma_X(F)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow \\R\\Gamma_X(F) \\quad .",
+   "new": "\\longrightarrow (\\R\\Gamma_X(F) \\quad ."
+  },
+  "corrected": "\\longrightarrow \\R\\Gamma_X(F)",
+  "note": "Stray parenthesis; the TeX silently drops it. Diplomatic layer only."
+ },
+ {
+  "page": 429,
+  "where": "heading 6.2",
+  "scan": "6.2.Définition des termes locaux. (underlined title, full stop after it)",
+  "tex": "\\subsection*{6.2. Définition des termes locaux}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.2. Définition des termes locaux}",
+   "new": "\\subsection*{6.2. Définition des termes locaux.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 429,
+  "where": "'la restruction du faisceau F' = p*(F)'",
+  "scan": "restruction (clear, 3x crop)",
+  "tex": "restriction",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "la restriction du",
+   "new": "la restruction du"
+  },
+  "corrected": "restriction",
+  "note": "Typing error; the TeX silently corrects. Diplomatic layer only."
+ },
+ {
+  "page": 429,
+  "where": "display 'F'|_{U'} ≈ M_{U'} .'",
+  "scan": "≈: two wavy strokes, no straight stroke",
+  "tex": "\\simeq (≃)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "F'|_{U'} \\simeq",
+   "new": "F'|_{U'} \\approx"
+  },
+  "note": "Same sign in the display after 'on a :' (next item but one)."
+ },
+ {
+  "page": 429,
+  "where": "'un point géométrique sur η (resp η' ) on a :'",
+  "scan": "(resp η' ): no full stop after resp (clean paper; the three other resp. of the sentence have it)",
+  "tex": "(resp. $\\eta'$)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. $\\eta'$) on a",
+   "new": "(resp $\\eta'$) on a"
+  },
+  "corrected": "(resp. $\\eta'$)",
+  "note": "The TeX silently supplies the abbreviation's full stop. Diplomatic layer only."
+ },
+ {
+  "page": 429,
+  "where": "display after 'on a :', first line",
+  "scan": "p(η') = η  (on a line of its own, no comma after it)",
+  "tex": "p(\\eta')=\\eta,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "p(\\eta')=\\eta,",
+   "new": "p(\\eta')=\\eta"
+  },
+  "note": "The print sets the two relations on two lines without punctuation between them; the TeX adds the comma."
+ },
+ {
+  "page": 429,
+  "where": "display after 'on a :', second line",
+  "scan": "F_η̄ ≈ F'_η̄' . : two wavy strokes",
+  "tex": "\\simeq (≃)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "F_{\\bar\\eta} \\simeq",
+   "new": "F_{\\bar\\eta} \\approx"
+  },
+  "note": ""
+ },
+ {
+  "page": 429,
+  "where": "'est isomorphe à M et par conséquence M est un A-module parfait'",
+  "scan": "par conséquence (clear, 3x crop)",
+  "tex": "par conséquent",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "et par conséquent $M$",
+   "new": "et par conséquence $M$"
+  },
+  "note": "As p. 428. After the first M there is only a faint 2x2 grey speck where a full stop could stand (the typed full stops of the page are solid 3x4 dots): too faint to read, not reported."
+ },
+ {
+  "page": 430,
+  "where": "'Le dual M̌ de M par rapport à A'",
+  "scan": "the dual sign set above M (an accent, as \\check M); on the same page u^∨_M has it as a superscript",
+  "tex": "M^\\vee",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "dual $M^\\vee$",
+   "new": "dual $\\check{M}$"
+  },
+  "note": "Four places on this page (this and the next three items); the file already uses \\check for such signs (\\check{Sw}). u_M^\\vee stays."
+ },
+ {
+  "page": 430,
+  "where": "display 'u^∨_M : M̌ ⟶ M̌ ,'",
+  "scan": "both M with the dual sign above them",
+  "tex": "M^\\vee (twice)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "u_M^\\vee:M^\\vee\\longrightarrow M^\\vee ,",
+   "new": "u_M^\\vee:\\check{M}\\longrightarrow \\check{M} ,"
+  },
+  "note": ""
+ },
+ {
+  "page": 430,
+  "where": "display 'u^∨_M(gx) = φ(g)u^∨_M(x)  ∀ g ∈ G, ∀ x ∈ M̌ .'",
+  "scan": "x ∈ M̌: the dual sign above M",
+  "tex": "M^\\vee",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "x\\in M^\\vee .",
+   "new": "x\\in \\check{M} ."
+  },
+  "note": ""
+ },
+ {
+  "page": 430,
+  "where": "'En plus M̌ est un A-module parfait'",
+  "scan": "M̌: the dual sign above M",
+  "tex": "M^\\vee",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "plus $M^\\vee$",
+   "new": "plus $\\check{M}$"
+  },
+  "note": ""
+ },
+ {
+  "page": 430,
+  "where": "'(On identifie les points fermés de X avec les points de X(x)) :'",
+  "scan": "X(x)): a small x in the parentheses (clear)",
+  "tex": "$X(x)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$X(k)$",
+  "note": "X is proper over the field k (6.1): its closed points are the points of X(k). The TeX keeps the printed reading."
+ }
+]

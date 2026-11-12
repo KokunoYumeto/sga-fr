@@ -1,0 +1,86 @@
+{
+  "findings": [
+    {
+      "page": 456,
+      "where": "6.3.25.1, sentence immediately before the final formula",
+      "scan": "Pour $K$ torseur sous $G$ sur $X$",
+      "tex": "Pour $X$ torseur sous $G$ sur $X$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "Pour $X$ torseur",
+        "new": "Pour $K$ torseur"
+      },
+      "note": "The torsor is K, not X."
+    },
+    {
+      "page": 458,
+      "where": "Opening sentence",
+      "scan": "Si $f$ est fini localement libre",
+      "tex": "$f$ est localement libre",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "$f$ est localement libre",
+        "new": "$f$ est fini localement libre"
+      },
+      "note": "The word « fini » is omitted."
+    },
+    {
+      "page": 458,
+      "where": "Paragraph beginning « La commutativité », second reference before the composition formula",
+      "scan": "(6.3.25.1) (6.3.25.4)",
+      "tex": "(\\hyperref[XVII.par6.3.25.1]{6.3.25.1}) (\\hyperref[XVII.par6.3.25.4]{6.3.25.4})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\hyperref[XVII.par6.3.25.1]{6.3.25.1}) (\\hyperref[XVII.par6.3.25.5]{6.3.25.5})",
+      "note": "The composition argument uses multiplicativity, 6.3.25.5, rather than additivity, 6.3.25.4. TeX keeps the erroneous printed reference."
+    },
+    {
+      "page": 458,
+      "where": "Formula expressing compatibility with composition",
+      "scan": "\\Tr_{fg}(K)\\simeq \\Tr_{f}(\\Tr_{g}(K).",
+      "tex": "\\Tr_{fg}(K)\\simeq \\Tr_{f}(\\Tr_{g}(K)\\sisi{}{)}{\\quoi}.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Tr_{fg}(K)\\simeq \\Tr_{f}(\\Tr_{g}(K)).",
+      "note": "The print omits the outer closing parenthesis. TeX corrects it explicitly with \\sisi{}{)}."
+    },
+    {
+      "page": 459,
+      "where": "Proposition 6.3.28, « Alors le complexe… »",
+      "scan": "complexe semi-simplicial d'algèbres",
+      "tex": "complexe \\sisi{}{co-}semi-simplicial d'algèbres",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "complexe co-semi-simplicial d'algèbres",
+      "note": "The algebra construction is co-semi-simplicial, not semi-simplicial. TeX corrects the printed variance explicitly."
+    },
+    {
+      "page": 459,
+      "where": "Proposition 6.3.28, « en tant que… »",
+      "scan": "$TS^{n}_{R}(A)$-module différentiel semi-simplicial",
+      "tex": "$TS^{n}_{R}(A)$-module différentiel \\sisi{}{co-}semi-simplicial",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$TS^{n}_{R}(A)$-module différentiel co-semi-simplicial",
+      "note": "The same variance misprint recurs here. TeX explicitly supplies « co- »."
+    },
+    {
+      "page": 459,
+      "where": "Proof of Proposition 6.3.28, opening sentence",
+      "scan": "associé au module semi-simplicial",
+      "tex": "associé au module \\sisi{}{co-}semi-simplicial",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "associé au module co-semi-simplicial",
+      "note": "The same variance misprint recurs in the proof. TeX explicitly supplies « co- »."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 456: 1/0; 457: 0/0; 458: 1/2; 459: 0/3; 460: 0/0."
+}

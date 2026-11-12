@@ -1,0 +1,41 @@
+[
+ {
+  "page": "333",
+  "where": "4.1.1, after 'continu et exact à gauche,'",
+  "scan": "donc définit bien un foncteur f_* ci-dessus",
+  "tex": "dont définit bien un foncteur",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "dont définit bien",
+   "new": "donc définit bien"
+  },
+  "note": "The print reads 'donc'; the TeX has 'dont'."
+ },
+ {
+  "page": "334",
+  "where": "after the display X -f-> Y -g-> Z",
+  "scan": "on trouve un isomorphisme canonique  Top(gf) ≃ Top(g)Top(f)  de morphismes de topos.",
+  "tex": "X\\xrightarrow{f}Y\\xrightarrow{g}Z{\\quoi},\n$$\nde morphismes de topos.",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "X\\xrightarrow{f}Y\\xrightarrow{g}Z{\\quoi},\n$$\nde morphismes",
+   "new": "X\\xrightarrow{f}Y\\xrightarrow{g}Z{\\quoi},\n$$\non trouve un isomorphisme canonique\n$$\n\\Top(gf)\\simeq \\Top(g)\\Top(f)\n$$\nde morphismes"
+  },
+  "note": "The TeX drops the line 'on trouve un isomorphisme canonique' and the display Top(gf) ≃ Top(g)Top(f), so the sentence no longer makes sense."
+ },
+ {
+  "page": "334",
+  "where": "référence à SGA 1 VI 7.4 B)",
+  "scan": "(pour 𝒞 = (Esp)^o)",
+  "tex": "(pour $\\epsilon = (\\Esp)^{\\circ}$)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\epsilon = (\\Esp)^{\\circ}$",
+   "new": "$\\mathcal{C} = (\\Esp)^{\\circ}$"
+  },
+  "note": "The print has a script C (category), not the Greek epsilon."
+ }
+]

@@ -1,0 +1,2338 @@
+# Misprint pass of the corrected French SGA 7 II, misprints_7II_005
+
+=================== PAGE 282 ===================
+----- corrected edition, expose_XVIII_body.tex, page 282 -----
+%%%%%%%%%%  scan idx 289  |  folio 282  %%%%%%%%%%
+
+5.2.2.1.  On conjecture que cette condition est vérifiée si $S$ est lisse. C'est vrai si $k$ est de caractéristique nulle [6], d'où on conclut, grâce au ``théorème de spécialisation'', SGA 4 XVI 2.2 qu'il en est de même si $S$, avec son plongement projectif, se remonte en caractéristique nulle. Donc on trouve que c'est vérifié pour $S$ une intersection complète lisse. On sait également que c'est vrai pour $S$ lisse de dimension $\leq 2$ [2], et pour $S$ une variété abélienne (soit ``directement'' (LIEBERMAN [4] et [2]), soit par le théorème de MUMFORD [5] qui dit qu'une variété abélienne polarisée se remonte, avec sa polarisation, en caractéristique nulle).
+
+Rappelons que pour une variété $S$ projective, on définit pour $i \leq n$ la ``\underline{partie primitive}'' de la cohomologie :
+
+\begin{equation}\tag{5.2.2.2}
+\mathrm{Prim}^i(S,\mathbb{Q}_\ell(j)) = \mathrm{Ker}\ (L^{n-i+1} \ :\ H^i(S,\mathbb{Q}_\ell(j)) \longrightarrow H^{2n-i+2}(S,\mathbb{Q}_\ell(j+n-i+1)).
+\end{equation}
+\underline{Si} $S$ vérifie (LV), on a pour $i \leq n$ la décomposition :
+
+\begin{equation}\tag{5.2.2.3}
+H^i(S,\mathbb{Q}_\ell(j)) \ \xleftarrow[\sim]{\ 1+L\ }\ \mathrm{Prim}^i(S,\mathbb{Q}_\ell(j)) \oplus H^{i-2}(S,\mathbb{Q}_\ell(j-1)) \qquad .
+\end{equation}
+\underline{Proposition} 5.2.3.  \underline{Soit} $X$ \underline{projectif et lisse,} \underline{vérifiant} (LV). \underline{Désignons} \underline{par} $\tau : Y \hookrightarrow X$ \underline{l'inclusion d'une section hyperplane lisse.} \underline{Alors}
+
+\begin{equation}\tag{5.2.3.1}
+\mathrm{Prim}^n(X,\mathbb{Q}_\ell(j)) = \mathrm{Ker}(\tau^* \ :\ H^n(X,\mathbb{Q}_\ell(j)) \longrightarrow H^n(Y,\mathbb{Q}_\ell(j))) \qquad .
+\end{equation}
+\underline{Démonstration.}  On a, grâce à la formule de projection pour $\tau : Y \longrightarrow X$, le diagramme commutatif 
+----- misprints recorded on page 282 -----
+[id 7II:471]
+WHERE: (5.2.2.2), target of L^{n-i+1}
+PRINT: H^{2n-i+2}(S,ℚ_ℓ(j+2n -2i+2)).
+CORRECT: H^{2n-i+2}(S,\mathbb{Q}_\ell(j+n-i+1))).
+TEX BEFORE: H^{2n-i+2}(S,\mathbb{Q}_\ell(j+2n-2i+2)).
+NOTE: Two slips in the print. (1) The parenthesis opened at 'Ker (' is never closed. (2) L^{n-i+1} raises the Tate twist by n-i+1 (L: H^•(j) → H^{•+2}(j+1), 5.2.1), so the twist should be j+n-i+1; the handwritten j+2n-2i+2 doubles it. The TeX keeps the printed reading. If only the parenthesis is accepted, read (j+2n-2i+2))).
+
+[id 7II:472]
+WHERE: proof of Proposition 5.2.3, first line
+PRINT: la formule de projection pour m : Y ⟶ X
+CORRECT: \tau : Y \longrightarrow X
+TEX BEFORE: pour $m : Y \longrightarrow X$
+NOTE: The proposition names the inclusion τ, and diagram 5.2.3.2 uses τ^*, τ_*; 'm' is the letter used in 5.1. The TeX keeps the printed reading.
+
+=================== PAGE 283 ===================
+----- corrected edition, expose_XVIII_body.tex, page 283 -----
+%%%%%%%%%%  scan idx 290  |  folio 283  %%%%%%%%%%
+
+\begin{equation}\tag{5.2.3.2}
+\begin{tikzcd}[column sep=huge, row sep=huge]
+H^n(X,\mathbb{Q}_\ell(j)) \arrow[rr, "L"] \arrow[dr, "\tau^*"'] & {} & H^{n+2}(X,\mathbb{Q}_\ell(j+1)) \arrow[dl, "\tau_*"] \\
+{} & H^n(Y,\mathbb{Q}_\ell(j)) & {} & {.}
+\end{tikzcd}
+\end{equation}
+% STRUCTURE: Triangle with 3 mathematical nodes, plus one typographic full stop printed far to the right
+%   on the bottom line (sentence punctuation closing the sentence begun on folio 282, "le diagramme
+%   commutatif"); it is not a node. NODES — N1 top-left: H^n(X,\mathbb{Q}_\ell(j)) ; N2 top-right:
+%   H^{n+2}(X,\mathbb{Q}_\ell(j+1)) ; N3 bottom-centre (horizontally between N1 and N2, slightly left of
+%   centre): H^n(Y,\mathbb{Q}_\ell(j)). ARROWS — 3 arrows, all plain solid single-shaft, single
+%   (one-barb-pair) heads, no hooks, no tails, no double heads, no dashes, no iso/tilde marks. A1: N1
+%   --> N2, horizontal, pointing RIGHT, arrowhead at N2, label "L" set ABOVE the shaft, centred. A2: N1
+%   --> N3, diagonal running DOWN-RIGHT, arrowhead at N3 (bottom end), label "\tau^*" set to the
+%   UPPER-LEFT (west) side of the shaft, at mid-height. A3: N2 --> N3, diagonal running DOWN-LEFT,
+%   arrowhead at N3 (bottom end), label "\tau_*" set to the UPPER-RIGHT (east) side of the shaft, at
+%   mid-height. Both arrowheads of A2 and A3 were re-rendered at 18x zoom and both point INTO N3;
+%   neither diagonal points away from N3. The tag (5.2.3.2) sits in the left margin, vertically level
+%   with the two labels.
+Par dualité et Lefschetz faible,
+
+\begin{equation*}
+\tau_* \ :\ H^n(Y,\mathbb{Q}_\ell(j)) \longrightarrow H^{n+2}(X,\mathbb{Q}_\ell(j+1))
+\end{equation*}
+est la transposée d'un isomorphisme, donc un isomorphisme, d'où la conclusion.
+
+\underline{Lemme} 5.2.4.  \underline{Soient} $X$ \underline{projectif et lisse,} \underline{et} $\tau : Y \hookrightarrow X$ \underline{l'inclusion d'une section hyperplane lisse.} \underline{Alors} $X$ \underline{vérifie} (LV) \underline{si et seulement si les deux conditions suivantes sont vérifiées.}
+
+5.2.4.1.  $Y$ \underline{vérifie} (LV) .
+
+5.2.4.2.  \underline{La restriction du cup-produit} $H^{n-1}(Y,Q_\ell)$ \underline{au sous-espace} $\mathrm{Im}\ H^{n-1}(X,Q_\ell)$ \underline{est une forme non-dégénérée.}
+
+\underline{Démonstration.}  On a
+
+\begin{equation}\tag{5.2.4.3}
+\left\{
+\begin{aligned}
+L_X &\ =\ \tau_*\tau^* \\[4ex]
+L_Y &\ =\ \tau^*\tau_* \qquad \text{(par 4.2.11),}
+\end{aligned}
+\right. 
+\end{equation}
+----- misprints recorded on page 283 -----
+[id 7II:473]
+WHERE: sentence after the display τ_* : H^n(Y,…) → H^{n+2}(X,…)
+PRINT: est la transposée d'une isomorphisme
+CORRECT: d'un isomorphisme
+TEX BEFORE: est la transposée d'une isomorphisme
+NOTE: 'isomorphisme' is masculine. The TeX keeps the printed reading.
+
+=================== PAGE 284 ===================
+----- corrected edition, expose_XVIII_body.tex, page 284 -----
+%%%%%%%%%%  scan idx 291  |  folio 284  %%%%%%%%%%
+
+ de sorte que
+
+\begin{equation}\tag{5.2.4.4}
+L_X^{i+1} \;=\; \tau_* L_Y^i \, \tau^* \qquad .
+\end{equation}
+Dans le diagramme commutatif
+
+\begin{equation}\tag{5.2.4.5}
+\begin{tikzcd}[column sep=huge, row sep=huge]
+H^{n-i-1}(X,\mathbb{Q}_\ell(j)) \arrow[r, "L_X^{i+1}"] \arrow[d, "\tau^*"] & H^{n+i+1}(X,\mathbb{Q}_\ell(j+i+1)) \\
+H^{n-1-i}(Y,\mathbb{Q}_\ell(j)) \arrow[r, "L_Y^i"] & H^{n-1+i}(Y,\mathbb{Q}_\ell(j+i)) \arrow[u, "\tau_*"']
+\end{tikzcd}
+\end{equation}
+% STRUCTURE: Commutative square, 4 nodes and 4 arrows exactly as printed. NODES: (top-left)
+%   H^{n-i-1}(X,\mathbb{Q}_\ell(j)) — note the printed exponent order is n-i-1; (top-right)
+%   H^{n+i+1}(X,\mathbb{Q}_\ell(j+i+1)); (bottom-left) H^{n-1-i}(Y,\mathbb{Q}_\ell(j)) — printed
+%   exponent order n-1-i, i.e. different order from the top-left node; (bottom-right)
+%   H^{n-1+i}(Y,\mathbb{Q}_\ell(j+i)). ARROWS: (1) top-left -> top-right, horizontal, plain solid arrow
+%   pointing RIGHT, label L_X^{i+1} set ABOVE the shaft; (2) top-left -> bottom-left, vertical, plain
+%   solid arrow pointing DOWN, label \tau^* set to the RIGHT of the shaft; (3) bottom-left ->
+%   bottom-right, horizontal, plain solid arrow pointing RIGHT, label L_Y^i set ABOVE the shaft; (4)
+%   bottom-right -> top-right, vertical, plain solid arrow pointing UP, label \tau_* set to the RIGHT of
+%   the shaft. No hooked/mono arrows, no iso labels, no double-headed (twoheadrightarrow) arrows, no
+%   dashed arrows, no commutativity marker inside the square. The equation tag (5.2.4.5) is printed at
+%   the left margin, vertically level with the middle of the square.
+on sait que $\tau^*$ est un isomorphisme pour $i \geq 1$ par ``Lefschetz faible'', et que $\tau_*$ l'est par dualité. Donc $X$ vérifie (LV) si et seulement si $Y$ vérifie (LV), et la flèche
+
+\begin{equation}\tag{5.2.4.6}
+L_X : H^{n-1}(X,\mathbb{Q}_\ell(j)) \longrightarrow H^{n+1}(X,\mathbb{Q}_\ell(j+1))
+\end{equation}
+est un isomorphisme. Pour achever la démonstration, il suffit de voir l'équivalence de 5.2.4.2 et 5.2.4.6. Pour ceci, soit $a$, $b \in H^{n-1}(X,\mathbb{Q}_\ell(j))$. Par la dualité de Poincaré sur $X$, (5.2.4.6) équivaut à :
+
+(5.2.4.7) La forme bilinéaire
+
+\begin{equation}\tag{5.2.4.7}
+H^{n-1}(X,\mathbb{Q}_\ell(j))\times H^{n-1}(X,\mathbb{Q}_\ell(j)) \longrightarrow H^{2n}(X,\mathbb{Q}_\ell(2j+1))
+\end{equation}
+\begin{equation*}
+(a,b) \longmapsto a.L_X(b)
+\end{equation*}
+est non-dégénérée.
+----- misprints recorded on page 284 -----
+[id 7II:474]
+WHERE: (5.2.4.7), target of the bilinear form
+PRINT: H^{2n}(X,ℚ_ℓ(2j+2)
+CORRECT: H^{2n}(X,\mathbb{Q}_\ell(2j+1))
+TEX BEFORE: H^{2n}(X,\mathbb{Q}_\ell(2j+2)
+NOTE: Two slips in the print. (1) A closing parenthesis is missing. (2) Since a ∈ H^{n-1}(j) and L_X(b) ∈ H^{n+1}(j+1), a.L_X(b) has twist 2j+1, not 2j+2. The TeX keeps the printed reading. If only the parenthesis is accepted, read (2j+2)).
+
+=================== PAGE 285 ===================
+----- corrected edition, expose_XVIII_body.tex, page 285 -----
+%%%%%%%%%%  scan idx 292  |  folio 285  %%%%%%%%%%
+
+Mais par (5.2.4.3) et la formule de projection, on a
+
+\begin{equation*}
+a.L_X(b) = a.\tau_*(\tau^*(b)) = \tau_*(\tau^*(a).\tau^*(b)),
+\end{equation*}
+d'où l'équivalence de (5.2.4.7) et (5.2.4.2).
+
+\underline{Corollaire} 5.2.5. \underline{Soient} $X$ \underline{projectif et lisse}, \underline{de dimension} $n$, \underline{et} $\tau : Y \hookrightarrow X$ \underline{l'inclusion d'une section hyperplan lisse}. \underline{Supposons que} $X$ \underline{satisfait à la condition} (LV). \underline{Alors pour} $i \geq n$, \underline{la flèche}
+
+\begin{equation*}
+\tau^* : H^i(X,\mathbb{Q}_\ell(j)) \longrightarrow H^i(Y,\mathbb{Q}_\ell(j))
+\end{equation*}
+\underline{est surjective.}
+
+\underline{Démonstration}. Par (5.2.4.3), on a, pour $i \geq 0$
+
+\begin{equation*}
+L_Y^{i+1} \;=\; \tau^* \, L_X^i \, \tau_* \quad ,
+\end{equation*}
+d'où le diagramme commutatif
+
+\begin{center}
+\begin{tikzcd}[column sep=huge, row sep=huge]
+H^{n-i}(X,\mathbb{Q}_\ell(j+1)) \arrow[r, "L_X^i"] & H^{n+i}(X,\mathbb{Q}_\ell(j+i+1)) \arrow[d, "\tau^*"] \\
+H^{n-i-2}(Y,\mathbb{Q}_\ell(j)) \arrow[r, "L_Y^{i+1}"] \arrow[u, "\tau_*"'] & H^{n+i}(Y,\mathbb{Q}_\ell(j+i+1))
+\end{tikzcd}
+\end{center}
+% STRUCTURE: Untagged commutative square, 4 nodes and 4 arrows exactly as printed. NODES: (top-left)
+%   H^{n-i}(X,\mathbb{Q}_\ell(j+1)); (top-right) H^{n-i}(X,\mathbb{Q}_\ell(j+i+1)) — the exponent is
+%   printed with a MINUS sign, n-i, verified at 30x zoom against the neighbouring plus signs;
+%   (bottom-left) H^{n-i-2}(Y,\mathbb{Q}_\ell(j)); (bottom-right) H^{n+i}(Y,\mathbb{Q}_\ell(j+i+1)).
+%   ARROWS: (1) top-left -> top-right, horizontal, plain solid arrow pointing RIGHT, label L_X^i set
+%   ABOVE the shaft; (2) bottom-left -> top-left, vertical, plain solid arrow pointing UP, label \tau_*
+%   set to the RIGHT of the shaft; (3) top-right -> bottom-right, vertical, plain solid arrow pointing
+%   DOWN, label \tau^* set to the RIGHT of the shaft; (4) bottom-left -> bottom-right, horizontal, plain
+%   solid arrow pointing RIGHT, label L_Y^{i+1} set ABOVE the shaft. No hooked/mono arrows, no iso
+%   labels, no double-headed (twoheadrightarrow) arrows, no dashed arrows, no commutativity marker
+%   inside the square. A hand-drawn wavy pen stroke runs between the label L_Y^{i+1} and the bottom
+%   arrow shaft; it is an ink artifact of the typescript, carries no label, and is not reproduced.
+ce qui donne le résultat voulu, cqfd.
+----- misprints recorded on page 285 -----
+[id 7II:475]
+WHERE: first line
+PRINT: Mais par (5.2.5) et la formule de projection
+CORRECT: (5.2.4.3)
+TEX BEFORE: Mais par (5.2.5) et la formule de projection
+NOTE: The step a.L_X(b) = a.τ_*(τ^*(b)) uses L_X = τ_*τ^*, which is (5.2.4.3). 5.2.5 is the corollary stated just below. The TeX keeps the printed reading.
+
+[id 7II:476]
+WHERE: Corollaire 5.2.5
+PRINT: l'inclusion d'une section hyperplan lisse
+CORRECT: hyperplane
+TEX BEFORE: \underline{l'inclusion d'une section hyperplan lisse}
+NOTE: Elsewhere the text writes 'section hyperplane'. The TeX keeps the printed reading.
+
+[id 7II:477]
+WHERE: diagram, top-right node
+PRINT: H^{n-i}(X,ℚ_ℓ(j+i+1))
+CORRECT: H^{n+i}(X,\mathbb{Q}_\ell(j+i+1))
+TEX BEFORE: H^{n-i}(X,\mathbb{Q}_\ell(j+i+1))
+NOTE: L_X^i maps H^{n-i}(X) to H^{n+i}(X), and τ^* must land in H^{n+i}(Y). The print has a minus sign, and the STRUCTURE comment confirms that printed reading. The TeX keeps it.
+
+=================== PAGE 286 ===================
+----- corrected edition, expose_XVIII_body.tex, page 286 -----
+%%%%%%%%%%  scan idx 293  |  folio 286  %%%%%%%%%%
+
+\underline{Lemme} 5.2.6. \underline{Soit} $f : F \longrightarrow B$ \underline{un morphisme propre et lisse, avec} $B$ \underline{connexe. Désignons par} $\underline{O}_F(1)$ \underline{un module relativement ample sur} $F$, \underline{et munissons chaque fibre géométrique} $F_{\bar{b}}$ \underline{du module ample induit par} $\underline{O}_F(1)$. \underline{Alors, si une des fibres géométriques satisfait la condition} (LV), \underline{il en est de même pour toutes les autres.}
+
+\underline{Démonstration}. Notons par $\xi_F \in H^2(F,\mathbb{Z}_\ell(1))$ la première classe de Chern de $\underline{O}_F(1)$. Cette classe, et ses puissances $\xi_F^i \in H^{2i}(F,\mathbb{Z}_\ell(i))$ induisent des endomorphismes par cup-produit
+
+\begin{equation}\tag{5.2.6.1}
+\xi_F^i \; : \; R^{n-i}_{f_*}\mathbb{Q}_\ell(j) \longrightarrow R^{n+i}_{f_*}\mathbb{Q}_\ell(j+i)
+\end{equation}
+où $n$ désigne la dimension relative des fibres. Par le théorème de changement de base pour un morphisme propre [SGA 4 XII 5.2], toutes les fibres géométriques satisfont à la condition (LV) si et seulement si toutes les flèches (5.2.6.1) sont des isomorphismes. Or, par le théorème de spécialisation [SGA 4 XVI 2.2], les faisceaux $R^i f_*\mathbb{Q}_\ell(j)$ sont constants tordus, de sorte que les flèches (5.2.6.1) sont des isomorphismes si et seulement ils le sont au-dessus d'un point géométrique donné, cqfd.
+
+\underline{Corollaire} 5.2.7. \underline{Soit} $X$ \underline{projective et lisse. Si une section hyperplane lisse vérifie} (LV), \underline{il en est de même pour} toute \underline{section hyperplane lisse.}
+
+\underline{Démonstration}. En effet, la famille universelle des sections hyperplanes lisses de $X$ vérifie les hypothèses de 5.2.6.
+----- misprints recorded on page 286 -----
+[id 7II:478]
+WHERE: proof of Lemme 5.2.6, 'Cette classe, et ses puissances ξ_F^i ∈ H^{ii}(F,ℤ_ℓ(i))'
+PRINT: H^{ii}(F,ℤ_ℓ(i)): two small i side by side in the superscript (checked at 3x)
+CORRECT: H^{2i}(F,\mathbb{Z}_\ell(i))
+TEX BEFORE: $\xi_F^i \in H^{ii}(F,\mathbb{Z}_\ell(i))$
+NOTE: The i-th power of the degree-2 class ξ_F lies in degree 2i. The TeX keeps the printed reading; the corrected layer has H^{2i} (SGA7II-FR-XVIII-044).
+
+[id 7II:479]
+WHERE: proof of Lemme 5.2.6, last sentence
+PRINT: sont des isomorphismes si et seulement ils le sont au-dessus d'un point géométrique donné, cqfd. (checked at 1.5x)
+CORRECT: si et seulement s'ils le sont au-dessus d'un point géométrique donné
+TEX BEFORE: si et seulement ils le sont au-dessus d'un point géométrique donné
+NOTE: The s' of s'ils is left out. The TeX keeps the printed reading; the corrected layer keeps it too (no corrections record).
+
+[id 7II:480]
+WHERE: Corollaire 5.2.7, first line: 'Soit X propective et lisse'
+PRINT: propective (checked at 2.5x)
+CORRECT: projective
+TEX BEFORE: \underline{propective et lisse. Si une section hyperplane lisse vérifie}
+NOTE: Typing slip for 'projective'. The TeX keeps the printed reading; the corrected layer has 'projective' (SGA7II-FR-XVIII-045).
+
+[id 7II:481]
+WHERE: proof of Corollaire 5.2.7: 'vérifie les hypothèses de 5.2.5.'
+PRINT: les hypothèses de 5.2.5.
+CORRECT: 5.2.6
+TEX BEFORE: vérifie les hypothèses de 5.2.5.
+NOTE: The universal family of smooth hyperplane sections of X is a proper smooth morphism with connected base and a relatively ample module, i.e. the hypotheses of Lemme 5.2.6 just above; 5.2.5 (p. 285) is the corollary on the surjectivity of τ^*. The TeX keeps the printed reading; the corrected layer has 5.2.6 (SGA7II-FR-XVIII-045).
+
+=================== PAGE 288 ===================
+----- corrected edition, expose_XVIII_body.tex, page 288 -----
+%%%%%%%%%%  scan idx 295  |  folio 288  %%%%%%%%%%
+
+ i.e. $R^i_{\rho *}\mathbb{Q}_\ell(j)$ est un faisceau constant pour $i \leq n-2$ et, a fortiori, les flèches (5.3.2) sont des isomorphismes pour $i \leq n-2$ .
+
+5.3.4. On sait, par la théorie locale des cycles évanescents et notamment la \underline{formule de Picard-Lefschetz} (XV 3.4 ), que, \underline{pour un pinceau de Lefschetz, les homomorphismes} 5.3.2 \underline{sont des isomorphismes pour} $i \neq n$ , \underline{et sont surjectifs pour} $i = n$.
+
+5.3.5. On dit que $\rho$ , ou le pinceau dont il provient, \underline{vérifie la condition} (A), si \underline{tous} les homomorphismes (5.3.2) sont des isomorphismes (ou, ce qui revient au même, s'ils le sont pour tout $i$, et $j = 0$) .
+
+On verra plus bas (6.3, 6.4) que cette condition (A) a une nette tendance à être vérifiée.
+
+\underline{Lemme} 5.4. \underline{Si une des sections hyperplanes lisses de} $X$ (\underline{donc toute, par} 5.2.7) \underline{vérifie} (LV) (\underline{p.ex.} \underline{si} $X$ \underline{vérifie} (LV), cf. (5.2.4)), \underline{et si} $\rho$ \underline{vérifie l'hypothèse} (A), \underline{alors toute fibre} (\underline{y compris toute fibre singulière}) \underline{vérifie} (LV), \underline{et les faisceaux} $R^i\rho_*(Q_\ell(j))$ \underline{sont constants pour} $i \neq n-1$ .
+
+\underline{Démonstration.} Désignons par
+
+\begin{equation*}
+L : R^i\rho_*(\mathbb{Q}_\ell(j)) \longrightarrow R^{i+2}\rho_*(\mathbb{Q}_\ell(j+1))
+\end{equation*}
+le morphisme multiplication par $f^*c_1(\mathcal{O}_X(1)) \in H^2(\widetilde{X},\mathbb{Z}_\ell(1))$; fibre par fibre, c'est l'opération envisagée dans (5.2.1). Par hypothèse, on a
+----- misprints recorded on page 288 -----
+[id 7II:482]
+WHERE: Lemme 5.4, 'et les faisceaux R^iρ_*(Q_ℓ(j)) sont constants pour i ≠ n-1'
+PRINT: a plain typed Q, wide and without the inner stroke (checked at 8x); the Q of the display L : R^iρ_*(ℚ_ℓ(j)) → R^{i+2}ρ_*(ℚ_ℓ(j+1)) just below and the other Q of pp. 286-290 are double-struck
+CORRECT: $R^i\rho_*(\mathbb{Q}_\ell(j))$
+TEX BEFORE: $R^i\rho_*(Q_\ell(j))$
+NOTE: Font slip of the typist (as the plain R of p. 147 and the plain P of pp. 215 and 217). The TeX correctly gives the printed plain Q and keeps the printed reading; the corrected layer keeps the plain Q too.
+
+[id 7II:483]
+WHERE: Démonstration of Lemme 5.4, 'le morphisme multiplication par f*c_1(O_X(1) ∈ H^2(X~,ℤ_ℓ(1))'
+PRINT: f*c_1(𝒪_X(1) ∈ H^2(X~,ℤ_ℓ(1)); with a single closing parenthesis after (1 (checked at 6x)
+CORRECT: $f^*c_1(\mathcal{O}_X(1)) \in H^2(\widetilde{X},\mathbb{Z}_\ell(1))$
+TEX BEFORE: $f^*c_1(\mathcal{O}_X(1) \in H^2(\widetilde{X},\mathbb{Z}_\ell(1))$
+NOTE: The parenthesis opened by c_1( is never closed. The TeX keeps the printed reading. The corrected layer closes it, but corrections.md SGA7II-FR-XVIII-046 classes this as a transcription_repair ('Restored the missing closing parenthesis'); the scan lacks it, so the entry corrects a misprint of the print and its record should say so.
+
+=================== PAGE 289 ===================
+----- corrected edition, expose_XVIII_body.tex, page 289 -----
+%%%%%%%%%%  scan idx 296  |  folio 289  %%%%%%%%%%
+un isomorphisme au-dessus de $U$
+
+\begin{equation}\tag{5.4.1}
+\nu^*(L^i) : \nu^*R^{n-1-i}\rho_*(\mathbb{Q}_\ell(j)) \overset{\sim}{\longrightarrow} \nu^*R^{n-1+i}\rho_*(\mathbb{Q}_\ell(j+i))
+\end{equation}
+pour $i > 0$, tout $j$ . Appliquant le foncteur $\nu_*$ , on obtient des \underline{isomorphismes}
+
+\begin{equation}\tag{5.4.2}
+(\nu_*\nu^*) L^i : \nu_*\nu^* R^{n-1-i}\rho_*(\mathbb{Q}_\ell(j)) \overset{\sim}{\longrightarrow} \nu_*\nu^*R^{n-1+i}\rho_*(\mathbb{Q}_\ell(j+i)),
+\end{equation}
+qui, compte tenu de (A) s'identifient aux morphismes
+
+\begin{equation}\tag{5.4.3}
+L^i : R^{n-1-i}\rho_*\mathbb{Q}_\ell(j) \overset{\sim}{\longrightarrow} R^{n-1+i}\rho_*\mathbb{Q}_\ell(j+i) .
+\end{equation}
+On conclut par 5.3.3.
+
+5.4.4. Désignons par $Y$ une fibre lisse de $\rho : \widetilde{X} \longrightarrow \mathbb{P}^1$ . Par ``Lefschetz faible'', la flèche de restriction
+
+\begin{equation*}
+H^{n-1}(X,\mathbb{Q}_\ell(j)) \overset{m^*}{\hookrightarrow} H^{n-1}(Y,\mathbb{Q}_\ell(j))
+\end{equation*}
+est injective, et on a vu (5.2.4) que, si $X$ vérifie (LV), le cup-produit sur $H^{n-1}(Y,\mathbb{Q}_\ell(j))$, restreint à $m^* H^{n-1}(X,\mathbb{Q}_\ell(j))$, reste non dégénéré. L'orthogonal de $H^{n-1}(X,\mathbb{Q}_\ell(j))$ dans $H^{n-1}(Y,\mathbb{Q}_\ell(j))$ est donc un sous-espace complémentaire de $H^{n-1}(X,\mathbb{Q}_\ell(j))$ dans $H^{n-1}(Y,\mathbb{Q}_\ell(j))$, qu'on appelle, suivant la terminologie classique, l'\underline{espace de cohomologie évanescente de} $Y$ . On définit un sous-faisceau correspondant de $\nu_*(R^{n-1}\rho_*\mathbb{Q}_\ell(j))$, où $\nu : U \longrightarrow \mathbb{P}^1$ est un ouvert de lissité $\neq \emptyset$ de $\rho$ , le ``\underline{faisceau de cohomologie évanescente}'' $E^{n-1}\rho_*\mathbb{Q}_\ell(j)$ sur $\mathbb{P}^1$, par 
+----- misprints recorded on page 289 -----
+[id 7II:484]
+WHERE: formula (5.4.3), source of L^i
+PRINT: R^{n-1-i}ρ*ℚ_ℓ(j): the asterisk stands raised, level with the top of the ρ, while the target R^{n-1+i}ρ_*ℚ_ℓ(j+i) has it lowered (checked at 3x)
+CORRECT: L^i : R^{n-1-i}\rho_*\mathbb{Q}_\ell(j)
+TEX BEFORE: L^i : R^{n-1-i}\rho^*\mathbb{Q}_\ell(j)
+NOTE: The source is the direct image R^{n-1-i}ρ_* of (5.4.1)-(5.4.2). The TeX keeps the printed reading. The corrected layer has ρ_*, but corrections.md SGA7II-FR-XVIII-047 calls it a transcription_repair ('the frozen transcription misread it as ρ^*'); the scan prints ρ^*, so the entry corrects a misprint of the print and its record should say so.
+
+[id 7II:485]
+WHERE: 5.4.4, line after the display H^{n-1}(X,ℚ_ℓ(j)) ↪ H^{n-1}(Y,ℚ_ℓ(j))
+PRINT: la flèche de restriction ... est injectif, et on a vu (5.2.4)
+CORRECT: est injective
+TEX BEFORE: est injectif, et on a vu (5.2.4)
+NOTE: Agreement with 'la flèche'. The TeX keeps the printed reading; the corrected layer has 'injective' (SGA7II-FR-XVIII-048).
+
+[id 7II:486]
+WHERE: 5.4.4, 'On définit un sous-faisceau correspondant de ν_*(R^{n-1}ρ_*ℚ_ℓ(j))'
+PRINT: ν_*(R^{n-1}ρ_*ℚ_ℓ(j)), no ν* (checked at 1.5x)
+CORRECT: $\nu_*\nu^*(R^{n-1}\rho_*\mathbb{Q}_\ell(j))$
+TEX BEFORE: $\nu_*(R^{n-1}\rho_*\mathbb{Q}_\ell(j))$
+NOTE: ν : U → ℙ^1, so ν_* takes sheaves on U; the sheaf of (5.4.4.1), ν_*{orthogonal in ν^*R^{n-1}ρ_*ℚ_ℓ(j) ...}, is a subsheaf of ν_*ν^*R^{n-1}ρ_*ℚ_ℓ(j) (compare (5.3.2)). May be an abuse of notation rather than a slip. The TeX keeps the printed reading; the corrected layer keeps it too.
+
+=================== PAGE 290 ===================
+----- corrected edition, expose_XVIII_body.tex, page 290 -----
+%%%%%%%%%%  scan idx 297  |  folio 290  %%%%%%%%%%
+
+\begin{equation}\tag{5.4.4.1}
+ \;\; E^{n-1}\rho_*\mathbb{Q}_\ell(j) \;=\; \nu_*\left\{\begin{array}{l}\text{l'orthogonal dans } \nu^*R^{n-1}\rho_*\mathbb{Q}_\ell(j) \text{ du}\\[2ex]\text{sous-faisceau constant } H^{n-1}(X,\mathbb{Q}_\ell(j))_U\end{array}\right\} \;\;.
+\end{equation}
+Il est clair que ce faisceau est indépendant du choix de $U$ .
+
+\underline{Lemme} 5.5. \underline{Si} $X$ \underline{vérifie} (LV) \underline{et si les flèches} (5.3.2) \underline{sont des isomorphismes pour} $i = n - 1$, \underline{par exemple si} $\rho$ \underline{provient d'un pinceau de Lefschetz} (cf. (5.3.4)), \underline{on a une décomposition en somme directe}
+
+\begin{equation}\tag{5.5.1}
+R^{n-1}\rho_*\mathbb{Q}_\ell(j) \quad \simeq \quad H^{n-1}(X,\mathbb{Q}_\ell(j))_{\mathbb{P}^1} \oplus E^{n-1}\rho_*\mathbb{Q}_\ell(j) \qquad .
+\end{equation}
+\underline{Démonstration.} Par (LV), on a une telle décomposition au-dessus de $U$ :
+
+\begin{equation}\tag{5.5.2}
+\nu^*R^{n-1}\rho_*\mathbb{Q}_\ell(j) \quad \simeq \quad H^{n-1}(X,\mathbb{Q}_\ell(j))_U \oplus \nu^*\, E^{n-1}\rho_*\mathbb{Q}_\ell(j),
+\end{equation}
+à laquelle on applique $\nu_*$ .
+
+\underline{Théorème} 5.6. \underline{Soit} $X$ \underline{une variété projective, lisse et irréductible qui vérifie} (LV) (5.2.2). \underline{Soit} $\{\, H_\tau \,\}$ \underline{un pinceau d'hyperplans dont l'élément générique et l'axe coupent transversalement} $X$, \underline{en} $X_\eta$ \underline{et en} $\Delta$ \underline{respectivement. Supposons que la projection} $\rho : \widetilde{X} \longrightarrow \mathbb{P}^1$ \underline{vérifie la condition} (A) \underline{de} 5.3.5. \underline{Alors} :
+
+(5.6.1) \quad \underline{la suite spectrale de Leray}
+
+\begin{equation*}
+E_2^{p,q} = H^p(\mathbb{P}^1,\; R^q\rho_*\mathbb{Q}_\ell) \;\Longrightarrow\; H^{p+q}(\widetilde{X},\; \mathbb{Q}_\ell)
+\end{equation*}
+\underline{dégénère.} (NB. \underline{Ceci reste valable si, au lieu de supposer que} $X$ \underline{satisfait la condition} (LV), \underline{on suppose seulement qu'une section hyperplane lisse} $Y$ \underline{y satisfait.})
+----- misprints recorded on page 290 -----
+[id 7II:487]
+WHERE: Théorème 5.6, 'Supposons que la projection ρ : X~ → ℙ^1 vérifie la condition (5.3.2).'
+PRINT: vérifie la condition (5.3.2). Alors :
+CORRECT: \underline{vérifie la condition} (A).
+TEX BEFORE: \underline{vérifie la condition} (5.3.2).
+NOTE: (5.3.2) numbers the adjunction maps; the condition that they are all isomorphisms is (A) of 5.3.5, which the proof on p. 291 uses through (5.4.3) and Lemme 5.4. The TeX keeps the printed reading; the corrected layer reads '(A) \underline{de} 5.3.5' (SGA7II-FR-XVIII-049).
+
+[id 7II:488]
+WHERE: (5.6.1), abutment of the Leray spectral sequence
+PRINT: E_2^{p,q} = H^p(ℙ^1, R^qρ_*ℚ_ℓ) ⟹ H^{m+q}(X~, ℚ_ℓ) (checked at 3x)
+CORRECT: H^{p+q}(\widetilde{X},\; \mathbb{Q}_\ell)
+TEX BEFORE: H^{m+q}(\widetilde{X},\; \mathbb{Q}_\ell)
+NOTE: E_2^{p,q} abuts to H^{p+q}. The TeX keeps the printed reading; the corrected layer has p+q (SGA7II-FR-XVIII-050).
+
+=================== PAGE 291 ===================
+----- corrected edition, expose_XVIII_body.tex, page 291 -----
+%%%%%%%%%%  scan idx 298  |  folio 291  %%%%%%%%%%
+
+5.6.2. \underline{Désignons par} $\eta$ \underline{le point générique de} $\mathbb{P}^1$, \underline{par} $\overline{\eta}$ \underline{le point générique géométrique,} \underline{par} $X_{\overline{\eta}}$ \underline{la fibre générique géométrique de} $\rho$, \underline{et par} $\pi$ \underline{le groupe de Galois de} $k(\overline{\eta})/k(\eta)$.
+
+\underline{Pour} $q \neq n-1$, \underline{on a des isomorphismes canoniques} :
+
+\begin{equation}\tag{5.6.2.1}
+E_2^{0,q} \; (=H^{0}(\mathbb{P}^1,R^q\rho_*\mathbb{Q}_\ell)) \quad \simeq \quad H^q(X_{\overline{\eta}},\mathbb{Q}_\ell)
+\end{equation}
+\begin{equation}\tag{5.6.2.2}
+E_2^{2,q}(=H^2(\mathbb{P}^1,R^q\rho_*\mathbb{Q}_\ell)) \quad \simeq \quad H^q(X_{\overline{\eta}},\mathbb{Q}_\ell(-1))
+\end{equation}
+\begin{equation}\tag{5.6.2.3}
+E_2^{p,q}(=H^p(\mathbb{P}^1,R^q\rho_*\mathbb{Q}_\ell)) \;=\; 0,\; p \neq 0,2 \qquad .
+\end{equation}
+\underline{Pour} $q = n-1$, \underline{on a}
+
+\begin{equation}\tag{5.6.2.4}
+\begin{array}{r@{\quad \simeq \quad}l} E_2^{0,n-1}(=H^{0}(\mathbb{P}^1,R^{n-1}\rho_*\mathbb{Q}_\ell)) & H^{n-1}(X_{\overline{\eta}},\mathbb{Q}_\ell)^{\pi}\\[4ex]  & H^{n-1}(X,\mathbb{Q}_\ell) \;\;, \end{array}
+\end{equation}
+\begin{equation}\tag{5.6.2.5}
+\begin{array}{r@{\quad \simeq \quad}l} E_2^{2,n-1}(=H^2(\mathbb{P}^1,R^{n-1}\rho_*\mathbb{Q}_\ell)) & H^{n-1}(X_{\overline{\eta}},\mathbb{Q}_\ell(-1))^{\pi}\\[4ex]  & H^{n-1}(X,\mathbb{Q}_\ell(-1)) \qquad . \end{array}
+\end{equation}
+\underline{(On trouvera la valeur manquante} $E_2^{1,n-1}$ \underline{dans} 5.7 \underline{ci-dessous)}.
+
+\underline{Démonstration.} Le théorème 1.1 s'applique, par (5.4.3), pour donner (5.6.1). Quant aux trois premières formules (5.6.2), elles résultent du fait que les $R^q\rho_*\mathbb{Q}_\ell$ pour $q \neq n-1$ sont constants (5.4) ; pour (5.6.2.3) il faut utiliser bien sûr que $\mathbb{P}^1$ est simplement connexe. La première
+----- misprints recorded on page 291 -----
+[id 7II:489]
+WHERE: (5.6.2.5), left-hand side
+PRINT: E_2^{2,n-1}(=H^2(ℙ^1,R^{n-1}ρ_*ℚ_ℓ)   ≃ ... — only one closing parenthesis; the '(=' is never closed
+CORRECT: E_2^{2,n-1}(=H^2(\mathbb{P}^1,R^{n-1}\rho_*\mathbb{Q}_\ell))
+TEX BEFORE: E_2^{2,n-1}(=H^2(\mathbb{P}^1,R^{n-1}\rho_*\mathbb{Q}_\ell)
+NOTE: Unbalanced parenthesis in the print; (5.6.2.4) prints '))'. The TeX keeps the printed reading.
+
+=================== PAGE 292 ===================
+----- corrected edition, expose_XVIII_body.tex, page 292 -----
+%%%%%%%%%%  scan idx 299  |  folio 292  %%%%%%%%%%
+égalité de (5.6.2.4) résulte de ce que $R^{n-1}\rho_*\mathbb{Q}_{\ell} \xrightarrow{\ \sim\ } \nu_*\nu^*R^{n-1}\rho_*\mathbb{Q}_{\ell}$ , de sorte qu'on a $H^0(\mathbb{P}^1,R^{n-1}\rho_*\mathbb{Q}_{\ell}) \simeq H^0(U,\nu^*R^{n-1}\rho_*\mathbb{Q}_{\ell})$, et de ce que $\nu^*R^{n-1}\rho_*\mathbb{Q}_{\ell}$ est un faisceau ``constant tordu'' sur $U$, donc équivalent au $\pi$-module $H^{n-1}(X_{\overline{\eta}},\mathbb{Q}_{\ell})$. La deuxième égalité de (5.6.2.4) résulte de la dégénérescence, compte tenu de 5.1.6.
+
+Passons à (5.6.2.5). Désignons par $F^{\bullet}$ la filtration définie sur $H^{\bullet}(\widetilde{X},\mathbb{Q}_{\ell})$ par la suite spectrale. Par dégénérescence, $F^2\,H^{n+1}(\widetilde{X},\mathbb{Q}_{\ell}) = E_2^{2,n-1}$, et $\mathrm{gr}^1H^{n+1}(\widetilde{X},\mathbb{Q}_{\ell}) = E_2^{1,n} = 0$ (5.6.2.3), de sorte que (cf. 5.1.0)
+
+\begin{equation}\tag{5.6.3}
+E_2^{2,n-1} = F^1H^{n+1}(\widetilde{X},\mathbb{Q}_{\ell}) = \mathrm{Ker}(H^{n+1}(\widetilde{X},\mathbb{Q}_{\ell}) \longrightarrow H^0(\mathbb{P}^1,R^{n+1}\rho_*\mathbb{Q}_{\ell})
+\end{equation}
+\begin{equation*}
+(\text{par }(A)) = \mathrm{Ker}(k^* : H^{n+1}(\widetilde{X},\mathbb{Q}_{\ell}) \longrightarrow H^{n+1}(X_{\overline{\eta}},\mathbb{Q}_{\ell})) \quad .
+\end{equation*}
+Par (5.1.2), $k^*$ se récrit
+
+\begin{equation}\tag{5.6.4}
+H^{n+1}(X,\mathbb{Q}_{\ell}) \oplus H^{n-1}(\Delta,\mathbb{Q}_{\ell}(-1)) \xrightarrow{\ m^*+h_*\ } H^{n+1}(X_{\overline{\eta}},\mathbb{Q}_{\ell}) \quad ,
+\end{equation}
+et, par (5.2.2.3) se récrit encore
+
+\begin{equation}\tag{5.6.5}
+\mathrm{Prim}^{n-1}(X,\mathbb{Q}_{\ell}(-1)) \oplus H^{n-3}(X,\mathbb{Q}_{\ell}(-2)) \oplus H^{n-1}(\Delta,\mathbb{Q}_{\ell}(-1)) \xrightarrow{\ m^*L+m^*L^2+h_*\ } H^{n+1}(X_{\overline{\eta}},\mathbb{Q}_{\ell})
+\end{equation}
+Or, la flèche
+
+\begin{equation*}
+H^{n-3}(X,\mathbb{Q}_{\ell}(-2)) \xrightarrow{\ m^*L^2\ } H^{n+1}(X_{\overline{\eta}},\mathbb{Q}_{\ell})
+\end{equation*}
+est un isomorphisme, par (LV), car $m^*L_X^2 = L^2_{X_{\overline{\eta}}} \cdot m^*$ (cf.(5.2.4) et (5.2.5)). Donc le noyau de (5.6.5) s'identifie (par $\mathrm{pr}_1 \oplus \mathrm{pr}_3$) à
+----- misprints recorded on page 292 -----
+[id 7II:490]
+WHERE: (5.6.3), first line, end
+PRINT: = Ker(H^{n+1}(X̃,ℚ_ℓ) ⟶ H^o(ℙ^1,R^{n+1}ρ_*ℚ_ℓ) — 'Ker(' is not closed
+CORRECT: R^{n+1}\rho_*\mathbb{Q}_{\ell}))
+TEX BEFORE: R^{n+1}\rho_*\mathbb{Q}_{\ell})
+NOTE: Missing closing parenthesis of Ker( in the print. The TeX keeps the printed reading.
+
+[id 7II:491]
+WHERE: (5.6.5), first summand
+PRINT: Prim^{n-1}(X,ℚ_ℓ(-1) ⊕ H^{n-3}(X,ℚ_ℓ(-2)) ⊕ ...
+CORRECT: \mathrm{Prim}^{n-1}(X,\mathbb{Q}_{\ell}(-1)) \oplus
+TEX BEFORE: \mathrm{Prim}^{n-1}(X,\mathbb{Q}_{\ell}(-1) \oplus
+NOTE: Missing closing parenthesis in the print; the TeX keeps it. The last term of (5.6.5), H^{n+1}(X_η̄,ℚ_ℓ, runs to the right edge of the page; its closing parenthesis may be lost there, so that one is not reported.
+
+[id 7II:492]
+WHERE: (5.6.5), label over the arrow
+PRINT: m*L+m*L²h_* (no '+' before h_*)
+CORRECT: \xrightarrow{\ m^*L+m^*L^2+h_*\ }
+TEX BEFORE: \xrightarrow{\ m^*L+m^*L^2h_*\ }
+NOTE: The map on the three summands is m*L + m*L² + h_* (cf. (5.6.4) m*+h_*); the print drops the second '+'. The TeX keeps the printed reading.
+
+[id 7II:493]
+WHERE: unnumbered display after 'Or, la flèche'
+PRINT: H^{n-3}(X,ℚ_ℓ(-2) —m*L²→ H^{n+1}(X_η̄,ℚ_ℓ)
+CORRECT: H^{n-3}(X,\mathbb{Q}_{\ell}(-2)) \xrightarrow{\ m^*L^2\ }
+TEX BEFORE: H^{n-3}(X,\mathbb{Q}_{\ell}(-2) \xrightarrow{\ m^*L^2\ }
+NOTE: Missing closing parenthesis in the print. The TeX keeps the printed reading.
+
+[id 7II:494]
+WHERE: last line
+PRINT: Donc le noyau de (5.6.8) s'identifie
+CORRECT: Donc le noyau de (5.6.5) s'identifie
+TEX BEFORE: Donc le noyau de (5.6.8) s'identifie
+NOTE: Wrong reference: the kernel is that of the arrow (5.6.5); 5.6.8 is the theorem on the next page. The TeX keeps the printed reading.
+
+[id 7II:495]
+WHERE: end of first paragraph
+PRINT: résulte de la dégénerescence, compte tenu de 5.1.6.
+CORRECT: dégénérescence, compte tenu de 5.1.6
+TEX BEFORE: dégénerescence, compte tenu de 5.1.6
+NOTE: Missing acute accent; the next paragraph spells 'dégénérescence'. The TeX keeps the printed reading.
+
+=================== PAGE 294 ===================
+----- corrected edition, expose_XVIII_body.tex, page 294 -----
+%%%%%%%%%%  scan idx 301  |  folio 294  %%%%%%%%%%
+
+\underline{Démonstration}. Nous allons identifier ,pour la démonstration, le faisceau $\mathbb{Q}_\ell(1)$ à $\mathbb{Q}_\ell$ (possible car on a pris $k$ algébriquement clos). On peut évidemment supposer $X$ connexe, et $\rho$ \underline{surjectif}, donc plat, à fibres de dimension $n-1$. Désignons par
+
+\begin{equation*}
+\xi_X \; \in \; H^2(X,\mathbb{Q}_\ell)
+\end{equation*}
+la première classe de Chern de $\underline{O}_X(1)$. Soit
+
+\begin{equation*}
+\nu \; : \; U \longrightarrow \mathbb{P}^1
+\end{equation*}
+l'inclusion d'un ouvert de lissité de $\rho$ . Par 5.6.8.1 et 5.2.6, les flèches de cup-produit
+
+\begin{equation*}
+\xi_X^i \; : \; \nu^* R^{n-1-i}\rho_* \mathbb{Q}_\ell \longrightarrow \nu^* R^{n-1+i}\rho_* \mathbb{Q}_\ell
+\end{equation*}
+sont des isomorphismes, pour $i \geq 1$, de sorte que, en appliquant le foncteur $\nu_*$ , on trouve des isomorphismes (compte tenu de 5.6.8.2) pour $i \geq 2$
+
+\begin{equation}\tag{5.6.8.3}
+\xi_X^i \; : \; R^{n-1-i}\rho_* \mathbb{Q}_\ell \; \xrightarrow{\;\sim\;} \; R^{n-1+i}\rho_* \mathbb{Q}_\ell \; ,
+\end{equation}
+et, pour $i = 1$, un isomorphisme
+
+\begin{equation}\tag{5.6.8.4}
+\xi_X \; : \; R^{n-2}\rho_* \mathbb{Q}_\ell \; \xrightarrow{\;\sim\;} \; \nu_* \nu^* R^n \rho_* \mathbb{Q}_\ell \quad .
+\end{equation}
+Cette dernière flèche se factorise en
+
+\begin{equation}\tag{5.6.8.5}
+R^{n-2}\rho_* \mathbb{Q}_\ell \; \xrightarrow{\;\xi_X\;} \; R^n \rho_* \mathbb{Q}_\ell \; \xrightarrow{\;\text{flèche d'adjonction}\;} \; \nu_* \nu^* R^n \rho_* \mathbb{Q}_\ell \quad , 
+\end{equation}
+----- misprints recorded on page 294 -----
+[id 7II:496]
+WHERE: 'la première classe de Chern de ...'
+PRINT: O_{X(1)} — '(1)' typed at subscript level
+CORRECT: $\underline{O}_X(1)$
+TEX BEFORE: $\underline{O}_{X(1)}$
+NOTE: Typing slip; the sheaf is O_X(1), as in (5.6.8.1). The TeX keeps the printed reading.
+
+[id 7II:497]
+WHERE: after the display ν : U → ℙ¹
+PRINT: Par 5.6.8.1 et.5.2.6,
+CORRECT: Par 5.6.8.1 et 5.2.6,
+TEX BEFORE: Par 5.6.8.1 et.5.2.6,
+NOTE: Stray full stop after 'et'. The TeX keeps the printed reading.
+
+=================== PAGE 295 ===================
+----- corrected edition, expose_XVIII_body.tex, page 295 -----
+%%%%%%%%%%  scan idx 302  |  folio 295  %%%%%%%%%%
+
+ de sorte qu'on a une décomposition canonique
+
+\begin{multline}\tag{5.6.8.6}
+R^n \rho_* \mathbb{Q}_\ell \; \xleftarrow{\substack{\xi_X + \mathrm{ind} \\ \sim}} \; R^{n-2}\rho_* \mathbb{Q}_\ell \oplus \mathrm{Local}^n \mathbb{Q}_\ell
+\end{multline}
+où l'on a posé
+
+\begin{equation}\tag{5.6.8.7}
+\mathrm{Local}^n \mathbb{Q}_\ell \; = \; \mathrm{Ker}(R^n \rho_* \mathbb{Q}_\ell \longrightarrow \nu_* \nu^* R^n \rho_* \mathbb{Q}_\ell) \quad .
+\end{equation}
+On remarque que le faisceau $\mathrm{Local}^n \mathbb{Q}_\ell$ est concentré aux points de $\mathbb{P}^1$ où la fibre de $\rho$ n'est pas lisse, de sorte que, compte tenu encore de (5.6.8.3), on trouve
+
+\begin{multline}\tag{5.6.8.8}
+H^j(\mathbb{P}^1, \; R^{n-2-i}\rho_* \mathbb{Q}_\ell) \; \xrightarrow{\substack{\xi_X^{i+1} \\ \sim}} \; H^j(\mathbb{P}^1,R^{n+i}\rho_*\mathbb{Q}_\ell) \quad \text{si } i \geq 0,\; j \geq 1 \; .
+\end{multline}
+Démontrons maintenant la dégénérescence. Compte tenu de ce que $E_2^{p,q} = 0$ sauf pour $p = 0$, $1,2$, il suffit de prouver que les opérations
+
+\begin{equation*}
+d_2 \; : \; H^0(\, \mathbb{P}^1,R^i \rho_* \mathbb{Q}_\ell) \longrightarrow H^2(\, \mathbb{P}^1,R^{i-1}\rho_* \mathbb{Q}_\ell)
+\end{equation*}
+sont nulles. Pour $q \leq n - 1$, posons
+
+\begin{equation}\tag{5.6.8.9}
+\mathrm{Prim}(E_2^{p,q}) \; = \; \mathrm{Ker}(\xi_X^{n-q} \; : \; E_2^{p,q} \longrightarrow E_2^{p,2n-q}) \quad .
+\end{equation}
+Grâce à (5.6.8.3) et (5.6.8.6), impliquant l'\underline{injectivité} de $\xi_X \; : \; H^p(\, \mathbb{P}^1,R^{n-2}\rho_* \mathbb{Q}_\ell) \longrightarrow H^p(\, \mathbb{P}^1, R^n \rho_* \mathbb{Q}_\ell)$, pour $q \leq n - 1$, on a
+
+\begin{multline}\tag{5.6.8.10}
+E_2^{p,q} \; \xleftarrow{\substack{1+\xi_X+\xi_X^2+\dots \\ \sim}} \; \mathrm{Prim}\,(E_2^{p,q}) \oplus \mathrm{Prim}(E_2^{p,q-2}) \oplus \mathrm{Prim}(E_2^{p,q-4}) \oplus \cdots \; .
+\end{multline}
+----- misprints recorded on page 295 -----
+[id 7II:498]
+WHERE: (5.6.8.8), source of the arrow
+PRINT: H^j(ℙ^1, R^{n-2-i}ρ_*ℚ_ℓ)
+CORRECT: R^{n-1-i}\rho_* \mathbb{Q}_\ell
+TEX BEFORE: R^{n-2-i}\rho_* \mathbb{Q}_\ell
+NOTE: Degrees n-2-i and n-1+i differ by an odd number, so no power of ξ_X links them. The formula combines (5.6.8.3) for i≥2 with (5.6.8.6) for i=1, i.e. R^{n-1-i} → R^{n-1+i}. The TeX keeps the printed reading.
+
+[id 7II:499]
+WHERE: (5.6.8.8), label over the arrow
+PRINT: ξ_X over ≃
+CORRECT: \xrightarrow{\substack{\xi_X^i \\ \sim}}
+TEX BEFORE: \xrightarrow{\substack{\xi_X \\ \sim}}
+NOTE: The map R^{n-1-i} → R^{n-1+i} is cup product with ξ_X^i, as in (5.6.8.3); the exponent is missing in the print. The TeX keeps the printed reading.
+
+[id 7II:500]
+WHERE: (5.6.8.8), target
+PRINT: H^j(ℙ^1,R^{n-1+i}ℚ_ℓ) — no ρ_*
+CORRECT: H^j(\mathbb{P}^1,R^{n-1+i}\rho_* \mathbb{Q}_\ell)
+TEX BEFORE: H^j(\mathbb{P}^1,R^{n-1+i}\mathbb{Q}_\ell)
+NOTE: ρ_* omitted in the print. The TeX keeps the printed reading.
+
+[id 7II:501]
+WHERE: display d_2 : H^0(...) → H^2(...)
+PRINT: H^2( ℙ^1,R^{i-1}, ρ_*ℚ_ℓ) — stray comma after R^{i-1}
+CORRECT: R^{i-1}\rho_* \mathbb{Q}_\ell
+TEX BEFORE: R^{i-1}, \rho_* \mathbb{Q}_\ell
+NOTE: Stray comma inside R^{i-1}ρ_*. The TeX keeps the printed reading.
+
+[id 7II:502]
+WHERE: sentence before (5.6.8.10), target of ξ_X
+PRINT: H^p( ℙ^1, ℝ^1ρ_*ℚ_ℓ) — double-struck R with exponent 1
+CORRECT: R^n \rho_* \mathbb{Q}_\ell
+TEX BEFORE: \mathbb{R}^1 \rho_* \mathbb{Q}_\ell
+NOTE: ξ_X maps R^{n-2}ρ_* to R^nρ_* (cf. (5.6.8.4)–(5.6.8.6)). The print has a double-struck R and exponent 1. The TeX keeps the printed reading.
+
+=================== PAGE 296 ===================
+----- corrected edition, expose_XVIII_body.tex, page 296 -----
+%%%%%%%%%%  scan idx 303  |  folio 296  %%%%%%%%%%
+
+Pour voir qu'on a
+
+\begin{equation*}
+d_2^{p,q} \;=\; 0 \quad \text{pour } q \leq n - 1 \quad ,
+\end{equation*}
+remarquons simplement que le diagramme commutatif
+
+\begin{center}
+\begin{tikzcd}[column sep=huge, row sep=huge]
+\mathrm{Prim}(E_2^{p,q}) \arrow[r, "\xi_X^{n-q}=0"] \arrow[d, "{d_2^{p,q}}"] & E_2^{p,2n-q} \arrow[d, "{d_2^{p,2n-q}}"] \\
+E_2^{p+2,q-1} \arrow[r, "\xi_X^{n-1-(q-1)}", "\sim"'] & E_2^{p+2,2n-q-1}
+\end{tikzcd}
+\end{center}
+% STRUCTURE: 4 nodes, 4 arrows, arranged as a commutative square (2 rows x 2 columns). NODES: N1
+%   (top-left) : Prim(E_2^{p,q}) N2 (top-right) : E_2^{p,2n-q} N3 (bottom-left) : E_2^{p+2,q-1} N4
+%   (bottom-right) : E_2^{p+2,2n-q-1} ARROWS: A1 : N1 -> N2, horizontal, pointing RIGHT, plain single
+%   solid arrow with standard head; label printed ABOVE the arrow shaft: \xi_X^{n-q}=0 (typewriter sets
+%   the "=0" at superscript height, immediately after the exponent n-q). No hook, no mono/epi
+%   decoration. A2 : N1 -> N3, vertical, pointing DOWN, plain single solid arrow with standard head;
+%   label printed to the RIGHT of the shaft: d_2^{p,q}. A3 : N2 -> N4, vertical, pointing DOWN, plain
+%   single solid arrow with standard head; label printed to the RIGHT of the shaft: d_2^{p,2n-q}. A4 :
+%   N3 -> N4, horizontal, pointing RIGHT, plain single solid arrow with standard head; label printed
+%   ABOVE the shaft: \xi_X^{n-1-(q-1)}; a hand-drawn tilde ~ is printed BELOW the shaft, marking the
+%   arrow as an isomorphism. No dashed arrows, no hooked/monomorphism arrows, no two-headed
+%   (twoheadrightarrow) arrows on this page.
+(la flèche du bas étant un isomorphisme grâce à (5.6.8.8)), entraîne que $d_2^{p,q}$ tue $\mathrm{Prim}(E_2^{p,q})$ pour $q \leq n - 1$, et donc, par (5.6.8.10), que $d_2$ tue $E_2^{p,q}$ pour $q \leq n - 1$. Par (5.6.8.3), ceci implique aussi que $d_2$ tue $E_2^{p,q}$ pour $q \geq n + 1$. Donc il reste à prouver que l'homomorphisme
+
+\begin{equation*}
+d_2^{0,n} \;:\; E_2^{0,n} \;\longrightarrow\; E_2^{2,n-1}
+\end{equation*}
+est nul, ou, ce qui revient au même, que
+
+\begin{equation}\tag{5.6.8.12}
+\dim E_3^{2,n-1} \;=\; \dim E_2^{2,n-1} \quad .
+\end{equation}
+Nous avons déjà démontré qu'on a
+
+\begin{equation}\tag{5.6.8.13}
+\dim E_2^{p,q} \;=\; \dim E_3^{p,q} \quad \text{pour } (p,q) \neq (0,n),\; (2,n-1)
+\end{equation}
+et, pour une raison de degrés,
+
+\begin{equation}\tag{5.6.8.14}
+E_3^{p,q} \;=\; E_\infty^{p,q} \quad \text{pour } \underline{\text{tout}} \text{ couple } (p,q) \quad .
+\end{equation}
+----- misprints recorded on page 296 -----
+[id 7II:503]
+WHERE: paragraph after the diagram: 'Donc il reste à prouver que l'homomorphisme'
+PRINT: Donc ilreste à prouver
+CORRECT: Donc il reste
+TEX BEFORE: Donc il reste à prouver
+NOTE: The typescript runs the two words together. The TeX silently corrects this, while elsewhere it keeps such slips (e.g. 'Par(5.6.8.14)' on p.297). Correct reading: 'il reste'.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: Donc il reste
+  NEW: Donc ilreste
+
+=================== PAGE 297 ===================
+----- corrected edition, expose_XVIII_body.tex, page 297 -----
+%%%%%%%%%%  scan idx 304  |  folio 297  %%%%%%%%%%
+
+Par(5.6.8.14), on a
+
+\begin{equation*}
+b_i(X) \;=\; \dim H^i(X,\mathbb{Q}_\ell) \;=\; \sum_{p+q=i} \dim E_3^{p,q} \quad ,
+\end{equation*}
+et, compte tenu de (5.6.8.13), on a
+
+\begin{equation}\tag{5.6.8.15}
+b_{n-1}(X) \;=\; \dim E_2^{0,n-1} \,+\, \dim E_2^{1,n-2} \,+\, \dim E_2^{2,n-3}
+\end{equation}
+et
+
+\begin{equation}\tag{5.6.8.16}
+b_{n+1}(X) \;=\; \dim E_2^{0,n+1} \,+\, \dim E_2^{1,n} \,+\, \dim E_3^{2,n-1} \quad .
+\end{equation}
+Par la dualité de Poincaré, on a
+
+\begin{equation}\tag{5.6.8.17}
+b_{n-1}(X) \;=\; b_{n+1}(X) \quad .
+\end{equation}
+Remarquons d'abord que, par (5.6.8.8), on a
+
+\begin{equation*}
+\dim E_2^{1,n} \;=\; \dim E_2^{1,n-2} \quad ,
+\end{equation*}
+de sorte que (par 5.6.8.17) la démonstration de (5.6.8.12) est terminée une fois connue
+
+\begin{equation}\tag{5.6.8.18}
+\dim E_2^{2,n-3} \;=\; \dim E_2^{0,n+1} \quad ,
+\end{equation}
+\begin{equation}\tag{5.6.8.19}
+\dim E_2^{0,n-1} \;=\; \dim E_2^{2,n-1} \quad .
+\end{equation}
+Or, ces deux formules résultent de (5.6.8.2) et la dualité de Poincaré pour les fibres lisses de $\rho$, compte tenu du lemme suivant, appliqué à $\mathbb{P}^1$ et aux faisceaux $R^{n-3}\rho_*\mathbb{Q}_\ell$ et $R^{n-1}\rho_*\mathbb{Q}_\ell$ .
+----- misprints recorded on page 297 -----
+[id 7II:504]
+WHERE: (5.6.8.15), first term
+PRINT: dim E_2^{c,n-1}
+CORRECT: \dim E_2^{0,n-1}
+TEX BEFORE: \dim E_2^{c,n-1}
+NOTE: The print has 'c' for the index 0 (cf. (5.6.8.19)). The TeX keeps the printed reading.
+
+[id 7II:505]
+WHERE: (5.6.8.15), last term
+PRINT: dim_2^{2,n-3}
+CORRECT: \dim E_2^{2,n-3}
+TEX BEFORE: \dim_2^{2,n-3}
+NOTE: The letter E is missing in the print (cf. (5.6.8.18)). The TeX keeps the printed reading.
+
+=================== PAGE 299 ===================
+----- corrected edition, expose_XVIII_body.tex, page 299 -----
+%%%%%%%%%%  scan idx 306  |  folio 299  %%%%%%%%%%
+
+\underline{Démonstration.} Par dégénérescence on a
+
+\begin{equation*}
+E_2^{1,n-1} \quad \simeq \quad F^1 H^n(\tilde{X},\mathbb{Q}_\ell) \Big/ F^2 H^n(\tilde{X},\mathbb{Q}_\ell) \quad .
+\end{equation*}
+On a par (A) :
+
+\begin{equation}\tag{5.7.2}
+F^1 H^n(\tilde{X},\mathbb{Q}_\ell) = \mathrm{Ker}\,(k^* : H^n(\tilde{X},\mathbb{Q}_\ell) \longrightarrow H^n(X_{\bar{\eta}},\mathbb{Q}_\ell)) \quad ,
+\end{equation}
+(par 5.1.2) $\simeq \mathrm{Ker}\,(H^n(X,\mathbb{Q}_\ell) \oplus H^{n-2}(\Delta,\mathbb{Q}_\ell(-1)) \xrightarrow{m^*+h_*} H^n(X_{\bar{\eta}},\mathbb{Q}_\ell))$ .
+
+Par (LV), $k^*$ se récrit encore
+
+\begin{equation}\tag{5.7.3}
+\mathrm{Prim}^n(X,\mathbb{Q}_\ell) \oplus H^{n-2}(X,\mathbb{Q}_\ell(-1)) \oplus H^{n-2}(\Delta,\mathbb{Q}_\ell(-1)) \xrightarrow{\;m^*+m^*L+h_*\;} H^n(X_{\bar{\eta}},\mathbb{Q}_\ell),
+\end{equation}
+et la flèche du milieu
+
+\begin{equation}\tag{5.7.4}
+H^{n-2}(X,\mathbb{Q}_\ell(-1)) \xrightarrow{\;m^*L\;} H^n(X_{\bar{\eta}},\mathbb{Q}_\ell)
+\end{equation}
+est un isomorphisme (cf. 5.2.3 et (5.2.2.3)), de sorte que, désignant par
+
+\begin{equation}\tag{5.7.5}
+\wp : H^n(X,\mathbb{Q}_\ell) \longrightarrow \mathrm{Prim}^n(X,\mathbb{Q}_\ell)
+\end{equation}
+la projection sur la partie primitive, on a
+
+\begin{equation}\tag{5.7.6}
+F^1 H^n(\tilde{X},\mathbb{Q}_\ell) \;\xrightarrow[\;\wp f_*\oplus(-g_*i^*)\;]{\sim}\; \mathrm{Prim}^n(X,\mathbb{Q}_\ell) \oplus H^{n-2}(\Delta,\mathbb{Q}_\ell(-1)) \quad .
+\end{equation}
+Par (5.6.2.2) et dégénérescence, on a
+
+\begin{equation}\tag{5.7.7}
+F^2 H^n(\tilde{X},\mathbb{Q}_\ell) \quad \simeq \quad E_2^{2,n-2} \quad \simeq \quad H^{n-2}(X_{\bar{\eta}},\mathbb{Q}_\ell(-1)) \quad .
+\end{equation}
+----- misprints recorded on page 299 -----
+[id 7II:506]
+WHERE: (5.7.6), label under the arrow
+PRINT: ℘f_*⊕(-g_*2*)
+CORRECT: \wp f_*\oplus(-g_*i^*)
+TEX BEFORE: \wp f_*\oplus(-g_*2^*)
+NOTE: '2*' is typed for 'i*'; the same map is labelled ℘f_*⊕-g_*i* in (5.7.9), cf. i_*g^* in (5.7.1). The TeX keeps the printed reading.
+
+=================== PAGE 300 ===================
+----- corrected edition, expose_XVIII_body.tex, page 300 -----
+%%%%%%%%%%  scan idx 307  |  folio 300  %%%%%%%%%%
+
+D'autre part, l'inclusion de $F^2H^n(\widetilde{X},\mathbb{Q}_\ell) = H^{n-2}(X_{\overline{\eta}},\mathbb{Q}_\ell(-1))$ dans $H^n(\widetilde{X},\mathbb{Q}_\ell)$ est par la flèche $k_*$ de \underline{Gysin}. (En toute rigueur, la flèche de Gysin n'est définie que comme une flèche
+
+\begin{equation*}
+H^{i-2}(X_{\overline{\eta}},\mathbb{Q}_\ell(-1)) \longrightarrow H^i(X \times_k k(\overline{\eta}),\mathbb{Q}_\ell) \quad ,
+\end{equation*}
+mais compte tenu de ce qu'on a un isomorphisme canonique (SGA 4 XII 5.4) pour tout corps $K/k$ algébriquement clos
+
+\begin{equation*}
+H^i(X,\mathbb{Q}_\ell) \stackrel{\sim}{\longrightarrow} H^i(X \otimes_k K,\mathbb{Q}_\ell) \quad ,
+\end{equation*}
+nous espérons que le lecteur nous permettra de tels abus.) D'après (5.1.3), la flèche de Gysin s'exprime par
+
+\begin{equation}\tag{5.7.8}
+H^{n-2}(X_{\overline{\eta}},\mathbb{Q}_\ell(-1)) \stackrel{m_* \ \oplus(-h^*)}{\longrightarrow} H^n(X,\mathbb{Q}_\ell) \oplus H^{n-2}(\Delta,\mathbb{Q}_\ell(-1)) \quad .
+\end{equation}
+Par Lefschetz faible,
+
+\begin{equation*}
+m_* \ H^{n-2}(X_{\overline{\eta}},\mathbb{Q}_\ell(-1)) = m_*m^* \ H^{n-2}(X,\mathbb{Q}_\ell(-1)) = L_X H^{n-2}(X,\mathbb{Q}_\ell(-1))
+\end{equation*}
+est l'orthogonal de la partie primitive, de sorte qu'on a le diagramme commutatif
+
+\begin{equation}\tag{5.7.9}
+\begin{tikzcd}[column sep=huge, row sep=huge]
+F^2H^n(\widetilde{X},\mathbb{Q}_\ell) \arrow[r, hook] & F^1H^n(\widetilde{X},\mathbb{Q}_\ell) \arrow[d, "\wr"', "\wp f_*\oplus -g_*i^*"] \\
+H^{n-2}(X_{\overline{\eta}},\mathbb{Q}_\ell(-1)) \arrow[u, "\wr", "k_*"'] \arrow[r, "0 \oplus h^*"] & \mathrm{Prim}^n(X,\mathbb{Q}_\ell)\oplus H^{n-2}(\Delta,\mathbb{Q}_\ell(-1))
+\end{tikzcd}
+\end{equation}
+% STRUCTURE: 4 nodes, 4 arrows. NODES: NW = $F^2H^n(\widetilde{X},\mathbb{Q}_\ell)$ ; NE =
+%   $F^1H^n(\widetilde{X},\mathbb{Q}_\ell)$ ; SW = $H^{n-2}(X_{\overline{\eta}},\mathbb{Q}_\ell(-1))$ ;
+%   SE = $\mathrm{Prim}(X,\mathbb{Q}_\ell)\oplus H^{n-2}(\Delta,\mathbb{Q}_\ell(-1))$. ARROWS: (1) NW ->
+%   NE, horizontal pointing RIGHT, hook/mono arrow (open left hook, long shaft, single arrowhead at
+%   right), NO label. (2) SW -> NW, vertical pointing UP (arrowhead at top), label $k_*$ printed to the
+%   RIGHT of the shaft, hand-drawn iso squiggle "$\wr$" printed to the LEFT of the shaft. (3) NE -> SE,
+%   vertical pointing DOWN (arrowhead at bottom), label $\mathcal{P}f_*\oplus -g_*i^*$ printed to the
+%   RIGHT of the shaft (first glyph is a hand-drawn script capital P), hand-drawn iso squiggle "$\wr$"
+%   printed to the LEFT of the shaft. (4) SW -> SE, horizontal pointing RIGHT, plain long arrow with
+%   single arrowhead, label $0 \oplus h^*$ printed ABOVE the shaft. Tag (5.7.9) sits in the left margin
+%   at the vertical mid-height of the diagram. No dashed, no double-headed, no equality arrows.
+ce qui donne bien (5.7.1), cqfd.
+----- misprints recorded on page 300 -----
+[id 7II:507]
+WHERE: first line, 'l'inclusion de F^2H^N(...)'
+PRINT: F^2H^N(X̃,Q_ℓ)
+CORRECT: F^2H^n(\widetilde{X},\mathbb{Q}_\ell)
+TEX BEFORE: F^2H^N(\widetilde{X},\mathbb{Q}_\ell)
+NOTE: Capital N is typed for the degree n. The TeX keeps the printed reading.
+
+[id 7II:508]
+WHERE: '( En toute riqueur, la flèche de Gysin'
+PRINT: riqueur
+CORRECT: rigueur
+TEX BEFORE: riqueur
+NOTE: Typing error. The TeX keeps the printed reading.
+
+[id 7II:509]
+WHERE: first display (Gysin map), source term
+PRINT: H^{i-2}(X_η̄,Q_ℓ))
+CORRECT: H^{i-2}(X_{\overline{\eta}},\mathbb{Q}_\ell(-1))
+TEX BEFORE: H^{i-2}(X_{\overline{\eta}},\mathbb{Q}_\ell))
+NOTE: The parenthesis is unbalanced in the print; the twist (-1) of the Gysin source has apparently been dropped (cf. H^{n-2}(X_η̄,Q_ℓ(-1)) just before). The TeX keeps the printed reading. A minimal alternative correction is to drop the second ')'.
+
+=================== PAGE 301 ===================
+----- corrected edition, expose_XVIII_body.tex, page 301 -----
+%%%%%%%%%%  scan idx 308  |  folio 301  %%%%%%%%%%
+
+\underline{Remarque} 5.7.10. Dans 5.7, l'hypothèse (A) peut-être remplacée par celle, plus faible, que pour $q = n$, les flèches
+
+\begin{equation}\tag{5.7.11}
+H^q(\widetilde{X},\mathbb{Q}_\ell) \longrightarrow H^0(\mathbb{P}^1,R^q\rho_*\mathbb{Q}_\ell)
+\end{equation}
+et
+
+\begin{equation}\tag{5.7.12}
+H^q(\widetilde{X},\mathbb{Q}_\ell) \longrightarrow H^q(X_{\overline{\eta}},\mathbb{Q}_\ell)
+\end{equation}
+aient même noyau, comme le montre notre démonstration. En l'absence de cette condition, la conclusion peut tomber en défaut, cf. 5.9.
+
+
+5.8. \underline{L'homomorphisme de Griffiths.}
+
+5.8.1. Soit $f: T \longrightarrow S$ un morphisme de schémas. La suite spectrale de Leray définit une filtration $(F^i)$ sur les $H^{\cdot}(T,\mathbb{Q}_\ell(j))$. On définit
+
+\begin{equation}\tag{5.8.1.1}
+\mathrm{Prim}^{\cdot}(T/S,\mathbb{Q}_\ell(j)) \ = \ F^1H^{\cdot}(T,\mathbb{Q}_\ell(j)).
+\end{equation}
+Grâce au fait que la suite spectrale de Leray est contenue dans le ``premier quadrant'', on a
+
+\begin{equation}\tag{5.8.1.2}
+E_\infty^{0,\cdot} \ \lhook\joinrel\longrightarrow \ E_2^{0,\cdot}
+\end{equation}
+de sorte que
+
+\begin{equation}\tag{5.8.1.3}
+\mathrm{Prim}^{\cdot}(T/S,\mathbb{Q}_\ell(j)) \ = \ \mathrm{Ker} \bigl(H^{\cdot}(T,\mathbb{Q}_\ell(j)) \longrightarrow H^0(S,R^{\cdot}f_*\mathbb{Q}_\ell(j))\bigr) \quad .
+\end{equation}
+Pour la même raison, on a
+
+\begin{equation}\tag{5.8.1.4}
+E_\infty^{1,\cdot} \ \lhook\joinrel\longrightarrow \ E_2^{1,\cdot} \quad .
+\end{equation}
+----- misprints recorded on page 301 -----
+[id 7II:510]
+WHERE: Remarque 5.7.10, first line
+PRINT: l'hypothèse (A) peut-être remplacée par celle
+CORRECT: l'hypothèse (A) peut être remplacée par celle
+TEX BEFORE: l'hypothèse (A) peut-être remplacée par celle
+NOTE: The verb 'peut être' (pouvoir + être) is printed with the hyphen of the adverb 'peut-être'. The TeX keeps the printed reading.
+
+[id 7II:511]
+WHERE: sentence after (5.8.1.1)
+PRINT: la suite spectrale de Leray est contenu dans le
+CORRECT: la suite spectrale de Leray est contenue dans le
+TEX BEFORE: la suite spectrale de Leray est contenu dans le
+NOTE: The participle should agree with 'la suite spectrale'. The TeX keeps the printed reading.
+
+[id 7II:512]
+WHERE: (5.8.1.3), left-hand side
+PRINT: Prim˙(T_{/S},Q_ℓ(j)  =  Ker
+CORRECT: \mathrm{Prim}^{\cdot}(T_{/S},\mathbb{Q}_\ell(j)) \ = \
+TEX BEFORE: \mathrm{Prim}^{\cdot}(T_{/S},\mathbb{Q}_\ell(j) \ = \
+NOTE: The print omits the closing parenthesis of Prim˙(. The TeX keeps the printed reading.
+
+[id 7II:513]
+WHERE: (5.8.1.3), right-hand side
+PRINT: Ker (H˙(T,Q_ℓ(j)) ⟶ H^o(S,R˙f_*Q_ℓ(j)) .
+CORRECT: H^0(S,R^{\cdot}f_*\mathbb{Q}_\ell(j))) \quad .
+TEX BEFORE: H^0(S,R^{\cdot}f_*\mathbb{Q}_\ell(j)) \quad .
+NOTE: The parenthesis opened after 'Ker' is never closed in the print. The TeX keeps the printed reading.
+
+=================== PAGE 302 ===================
+----- corrected edition, expose_XVIII_body.tex, page 302 -----
+%%%%%%%%%%  scan idx 309  |  folio 302  %%%%%%%%%%
+
+% CORRECTED-WORKPASS NOTE:
+%   The missing word space in "d'hyperplans dont" is restored.  In (5.8.1.6), the printed
+%   R^{\cdot-1} is corrected to R^{i-1}, as forced by the immediately preceding definition
+%   (5.8.1.5).  The relative notation T/S is standardized across (5.8.1.1)--(5.8.1.6).
+%
+% The vertical arrow from E_infty^{1,i-1} down to E_2^{1,i-1} carries a HOOK at its tail — an
+% inclusion, not a plain map. Set as \arrow[d, hook].
+% ---------------------------------------------------------------------
+Le composé
+
+\begin{equation}\tag{5.8.1.5}
+\begin{tikzcd}[column sep=large, row sep=large]
+\mathrm{Prim}^i(T/S,\mathbb{Q}_\ell(j)) = F^1H^i(T,\mathbb{Q}_\ell(j)) \arrow[r] & \mathrm{gr}^1H^i(T,\mathbb{Q}_\ell(j)) = E_\infty^{1,i-1} \arrow[d, hook] \\
+{} & H^1(S,R^{i-1}f_*\mathbb{Q}_\ell(j)) = E_2^{1,i-1}
+\end{tikzcd}
+\end{equation}
+
+sera dénoté
+
+\begin{equation}\tag{5.8.1.6}
+U^i : \mathrm{Prim}^i(T/S,\mathbb{Q}_\ell(j)) \longrightarrow H^1(S,R^{i-1}f_*\mathbb{Q}_\ell(j)) \quad .
+\end{equation}
+
+5.8.2. Soit maintenant X projective, lisse, et irréductible, D $= \{\mathrm{H}_\tau\}$ un pinceau d'hyperplans dont l'élément générique et l'axe coupent transversalement X. Désignons par U $\overset{\nu}{\longrightarrow} \mathbb{P}^1$ un ouvert de lissité non vide de la projection $\rho : \widetilde{\mathrm{X}} \longrightarrow \mathbb{P}^1$ et soit $\widetilde{\mathrm{X}}|\mathrm{U} = \widetilde{\mathrm{X}} \times_{\mathbb{P}^1} \mathrm{U}$ . On a le diagramme commutatif
+
+\begin{equation}\tag{5.8.2.1}
+\begin{tikzcd}[column sep=large, row sep=large]
+{} & \widetilde{\mathrm{X}} \arrow[dl, "f"'] \arrow[d, "\rho"] & \widetilde{\mathrm{X}}|\mathrm{U} \arrow[l, "\alpha"'] \arrow[d, "\rho|\mathrm{U}"] \\
+\mathrm{X} & \mathbb{P}^1 & \mathrm{U} \arrow[l, "\nu"'] & .
+\end{tikzcd}
+\end{equation}
+----- misprints recorded on page 302 -----
+[id 7II:514]
+WHERE: 5.8.2, second line
+PRINT: un pinceau d'hyperplansdont l'élément générique
+CORRECT: un pinceau d'hyperplans dont l'élément générique
+TEX BEFORE: un pinceau d'hyperplansdont l'élément générique
+NOTE: The word space is missing in the print. The TeX keeps it closed up.
+
+[id 7II:515]
+WHERE: (5.8.1.6), target
+PRINT: H^1(S,R^{·-1}f_*Q_ℓ(j))
+CORRECT: \mathrm{R}^{i-1}f_*
+TEX BEFORE: \mathrm{R}\cdot^{-1}f_*
+NOTE: The degree dot stands where the index i belongs (compare R^{i-1} in (5.8.1.5) and U^i). The TeX keeps the printed reading.
+
+[id 7II:516]
+WHERE: (5.8.1.6), source
+PRINT: U^i : Prim(T_{/S},Q_ℓ(j))
+CORRECT: \mathrm{U}^i : \mathrm{Prim}^i(\mathrm{T}_{/\mathrm{S}}
+TEX BEFORE: \mathrm{U}^i : \mathrm{Prim}(\mathrm{T}_{/\mathrm{S}}
+NOTE: U^i is defined on Prim^i (5.8.1.5), but the print drops the superscript. The TeX keeps the printed reading.
+
+=================== PAGE 303 ===================
+----- corrected edition, expose_XVIII_body.tex, page 303 -----
+%%%%%%%%%%  scan idx 310  |  folio 303  %%%%%%%%%%
+
+% PARTLY LOST LABEL — EDITORIAL RECONSTRUCTION, MARKED AS SUCH.
+%
+% The vertical arrow of (5.8.3.1), from Prim^n(Xtilde|U/U,...) down to H^1(U,...), carries a
+% label whose ink is not fully recoverable from the scan.
+%
+% More dpi cannot help. The scan is 2010 x 3000 px over a 483 x 720 pt page = 300 dpi NATIVE, so
+% anything past roughly 2400 dpi is interpolation inventing pixels that were never captured.
+% The information is not in the file.
+%
+% EDITORIAL READING: U^n. Grounds — (5.8.1.6) on the preceding leaf defines precisely this map,
+%   U^i : Prim(T_{/S},Q_l(j)) --> H^1(S,R^{i-1}f_*Q_l(j)),
+% and (5.8.3.1) is that map in degree n, with the same source and target shapes. The surviving
+% ink is compatible with a struck "U" plus superscript, though it does not establish it.
+%
+% It is set in the output as [U^n], square brackets marking the supplied reading.
+%
+% The visibly damaged proof of (5.8.2.5) is normalized in this corrected workpass: H^o is H^0,
+% the stray alpha is removed, x is restored as the argument, and the claimed equivalence is stated
+% coherently.  The immutable authority snapshot retains the printed form.
+% ---------------------------------------------------------------------
+Le morphisme $\rho|\mathrm{U} : \widetilde{\mathrm{X}}|\mathrm{U} \longrightarrow \mathrm{U}$ étant propre et lisse, on a, par le théorème de la spécialisation de la cohomologie (SGA 4 XVI 2.2)
+
+\begin{equation}\tag{5.8.2.2}
+\mathrm{Prim}^{\cdot}(\widetilde{\mathrm{X}}|\mathrm{U}/\mathrm{U},\mathbb{Q}_\ell(j)) = \mathrm{Ker}(\mathrm{H}^{\cdot}(\widetilde{\mathrm{X}}|\mathrm{U},\mathbb{Q}_\ell(j)) \longrightarrow \mathrm{H}^{\cdot}(\mathrm{X}_{\overline{\eta}},\mathbb{Q}_\ell(j))) \quad ,
+\end{equation}
+
+donc, d'après (5.2.3.1), on a
+
+\underline{Proposition} 5.8.2.3. \underline{Sous les hypothèses} (5.8.2), \underline{pour} $x \in \mathrm{H}^n(\mathrm{X},\mathbb{Q}_\ell(j))$, \underline{on a l'équivalence}
+
+\begin{equation}\tag{5.8.2.4}
+x \in \mathrm{Prim}^n(\mathrm{X},\mathbb{Q}_\ell(j)) \Longleftrightarrow \alpha^*f^*(x) \in \mathrm{Prim}^n(\widetilde{\mathrm{X}}|\mathrm{U}/\mathrm{U},\mathbb{Q}_\ell(j)) \quad .
+\end{equation}
+
+\underline{Si de plus} $\rho$ \underline{vérifie l'hypothèse} (A) \underline{de} 5.3, \underline{on a}
+
+\begin{equation}\tag{5.8.2.5}
+x \in \mathrm{Prim}^n(\mathrm{X},\mathbb{Q}_\ell(j)) \Longleftrightarrow f^*(x) \in \mathrm{Prim}^n(\widetilde{\mathrm{X}}/ \mathbb{P}^1,\mathbb{Q}_\ell(j)) \quad .
+\end{equation}
+
+\underline{Démonstration}. (5.8.2.4) est prouvé. Quant à (5.8.2.5), l'hypothèse (A) implique que $H^0(\mathbb{P}^1,R^n\rho_*\mathbb{Q}_\ell(j)) \xrightarrow[\nu^*]{\sim} H^0(U,\nu^*R^n\rho_*\mathbb{Q}_\ell(j))$, donc $f^*(x)$ est primitif relativement à $\mathbb{P}^1$ si et seulement si $\alpha^*f^*(x)$ l'est relativement à $U$.
+
+\underline{Définition} 5.8.3. \underline{Dans la situation} 5.8.2, \underline{l'homomorphisme composé}
+
+\begin{equation}\tag{5.8.3.1}
+\begin{tikzcd}[column sep=huge, row sep=huge]
+\mathrm{Prim}^n(\mathrm{X},\mathbb{Q}_\ell(j)) \arrow[r, "\alpha^*f^*"] \arrow[dr, "\mathrm{Grif}"'] & \mathrm{Prim}^n(\widetilde{\mathrm{X}}|\mathrm{U}/\mathrm{U},\mathbb{Q}_\ell(j)) \arrow[d, "{[U^n]}"] \\
+{} & \mathrm{H}^1(\mathrm{U},\nu^*\mathrm{R}^{n-1}\rho_*\mathbb{Q}_\ell(j))
+\end{tikzcd}
+\end{equation}
+
+\underline{s'appelle} l'homomorphisme de Griffiths (\underline{pour} X, \underline{relatif au pinceau donné} D).
+----- misprints recorded on page 303 -----
+[id 7II:517]
+WHERE: (5.8.2.2), left-hand side
+PRINT: Prim˙(X̃|U/U,Q_ℓ(j)  = Ker(
+CORRECT: \mathbb{Q}_\ell(j)) = \mathrm{Ker}
+TEX BEFORE: \mathrm{Prim}^{\cdot}(\widetilde{\mathrm{X}}|\mathrm{U}/\mathrm{U},\mathbb{Q}_\ell(j)) = \mathrm{Ker}(
+NOTE: The print closes only (j), leaving Prim˙( unclosed, as in (5.8.1.3). The TeX silently supplies the missing parenthesis; the fix restores the printed reading.
+
+[id 7II:518]
+WHERE: Démonstration of 5.8.2.3, last line
+PRINT: est primitif rel. à ℙ^1α]
+CORRECT: rel. à $\mathbb{P}^1$]
+TEX BEFORE: rel. à $\mathbb{P}^1\alpha$]
+NOTE: A stray α follows ℙ^1 inside the bracket. The TeX keeps the printed reading.
+
+[id 7II:519]
+WHERE: Démonstration of 5.8.2.3, last line
+PRINT: ⟹ α*f*(α) l'est rel. à U
+CORRECT: \Longrightarrow \alpha^*f^*(x)$
+TEX BEFORE: \Longrightarrow \alpha^*f^*(\alpha)$
+NOTE: The argument should be x, as in (5.8.2.4). The TeX keeps the printed reading.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: \mathbb{Q}_\ell(j)) = \mathrm{Ker}
+  NEW: \mathbb{Q}_\ell(j) = \mathrm{Ker}
+
+=================== PAGE 304 ===================
+----- corrected edition, expose_XVIII_body.tex, page 304 -----
+%%%%%%%%%%  scan idx 311  |  folio 304  %%%%%%%%%%
+
+Ajoutons au diagramme (5.8.2.1) la famille constante au-dessus de $U$, de fibre $X$
+
+\begin{equation}\tag{5.8.3.2}
+\begin{tikzcd}[row sep=large, column sep=large]
+ {} & \widetilde{X} \arrow[dl, "f"'] \arrow[dd] & \widetilde{X}|U \arrow[l, "\alpha"] \arrow[r, "f\times\rho|U"] \arrow[dd, "\rho|U"] & X\times U \arrow[ddl, "\mathrm{pr}_2"] \\
+X & {} & {} & {} \\
+ {} & \mathbb{P}^1 & U \arrow[l, "\nu"] & .
+\end{tikzcd}
+\end{equation}
+% STRUCTURE: 6 nodes, laid out on 3 rows of a 4-column grid. Row 1: (r1c2) $\widetilde{X}$ (capital X
+%   with a tilde accent above), (r1c3) $\widetilde{X}|U$ (tilde-X, vertical restriction bar, U), (r1c4)
+%   $X\times U$. Row 2: (r2c1) $X$, sitting below and to the left of $\widetilde{X}$. Row 3: (r3c2)
+%   $\mathbb{P}^1$ (blackboard-bold P with superscript 1), (r3c3) $U$. In addition a sentence-ending
+%   period is printed at the far right of the bottom-row baseline, to the right of the $X\times U$
+%   column; it is punctuation closing the sentence begun in the preceding prose line, NOT a seventh node
+%   (in the tikzcd it occupies cell r3c4). 7 arrows, all plain single-shaft, single-headed solid arrows
+%   (no hooks, no monos, no double heads, no dashes, no iso/tilde marks, no equality bars): 1.
+%   $\widetilde{X}|U \longrightarrow \widetilde{X}$: horizontal, pointing LEFT (from r1c3 to r1c2),
+%   label $\alpha$ centred ABOVE the shaft. 2. $\widetilde{X}|U \longrightarrow X\times U$: horizontal,
+%   pointing RIGHT (from r1c3 to r1c4), label $f\times\rho|U$ centred ABOVE the shaft. 3. $\widetilde{X}
+%   \longrightarrow X$: diagonal, pointing DOWN-LEFT (from r1c2 to r2c1), label $f$ placed above/left of
+%   the shaft. 4. $\widetilde{X} \longrightarrow \mathbb{P}^1$: vertical, pointing DOWN (from r1c2 to
+%   r3c2), UNLABELLED. 5. $\widetilde{X}|U \longrightarrow U$: vertical, pointing DOWN (from r1c3 to
+%   r3c3), label $\rho|U$ placed to the RIGHT of the shaft. 6. $U \longrightarrow \mathbb{P}^1$:
+%   horizontal, pointing LEFT (from r3c3 to r3c2), label $\nu$ centred ABOVE the shaft. 7. $X\times U
+%   \longrightarrow U$: diagonal, pointing DOWN-LEFT (from r1c4 to r3c3), label $\mathrm{pr}_2$ placed
+%   to the RIGHT of the shaft.
+\underline{Théorème} 5.8.4. \underline{Supposons que} $X$ \underline{vérifie} (LV) (5.2.2), \underline{et que} $\rho$ \underline{vérifie} \underline{l'hypothèse} (A) (5.3). \underline{Alors pour tout} $U \xrightarrow{\ \nu\ } \mathbb{P}^1$, \underline{ouvert de lissité} $\neq \emptyset$ \underline{de} $\rho$, \underline{l'homomorphisme de Griffiths} ``\underline{modulo partie fixe}'', \underline{qui est}, \underline{par définition}, \underline{le composé}
+
+\begin{equation}\tag{5.8.4.1}
+\begin{tikzcd}[row sep=huge, column sep=huge]
+\mathrm{Prim}^n(X,\mathbb{Q}_\ell(j)) \arrow[r, "\mathrm{Grif}"] & H^1(U,\nu^*R^{n-1}\rho_*\mathbb{Q}_\ell(j)) \arrow[d] \\
+ {} & H^1(U,\nu^*E^{n-1}\rho_*\mathbb{Q}_\ell(j)) \;\simeq\; \dfrac{H^1(U,\nu^*R^{n-1}\rho_*\mathbb{Q}_\ell(j))}{(f\times\rho|U)^*H^1(U,H^{n-1}(X,\mathbb{Q}_\ell(j))_U)}
+\end{tikzcd}
+\end{equation}
+% STRUCTURE: 3 nodes, on 2 rows of a 2-column grid. (r1c1) $\mathrm{Prim}^n(X,\mathbb{Q}_\ell(j))$.
+%   (r1c2) $H^1(U,\nu^*R^{n-1}\rho_*\mathbb{Q}_\ell(j))$. (r2c2) a single displayed line reading
+%   $H^1(U,E^{n-1}\rho_*(\mathbb{Q}_\ell(j))$ then the relation symbol $\simeq$ then a two-storey
+%   fraction whose numerator is $H^1(U,\nu^*R^{n-1}\rho_*\mathbb{Q}_\ell(j))$ and whose denominator is
+%   $(f\times\rho|U)^*H^1(U,H^{n-1}(X,\mathbb{Q}_\ell(j))_U)$, separated by a long horizontal fraction
+%   rule. The $\simeq$ on that bottom line is printed as an inline relation symbol on the baseline
+%   between the two expressions, NOT as a labelled arrow, so the bottom line counts as ONE node. 2
+%   arrows, both plain solid single-headed arrows (no hooks, no double heads, no dashes): 1. (r1c1)
+%   $\longrightarrow$ (r1c2): horizontal, pointing RIGHT, label $\mathrm{Grif}$ centred ABOVE the shaft
+%   (the arrow shaft runs directly under the word, so the label appears underlined by the shaft). 2.
+%   (r1c2) $\longrightarrow$ (r2c2): long vertical arrow, pointing DOWN, UNLABELLED; its head lands just
+%   above the numerator of the fraction.
+\underline{est injectif}.
+----- misprints recorded on page 304 -----
+[id 7II:520]
+WHERE: (5.8.4.1), bottom node
+PRINT: H^1(U,E^{n-1}ρ_*(Q_ℓ(j)) ≃
+CORRECT: H^1(U,E^{n-1}\rho_*\mathbb{Q}_\ell(j)) \;\simeq\;
+TEX BEFORE: H^1(U,E^{n-1}\rho_*(\mathbb{Q}_\ell(j)) \;\simeq\;
+NOTE: The parentheses are unbalanced: there is an extra '(' before Q_ℓ, against the notation of (5.8.4.2)-(5.8.4.4). The TeX keeps the printed reading.
+
+=================== PAGE 305 ===================
+----- corrected edition, expose_XVIII_body.tex, page 305 -----
+%%%%%%%%%%  scan idx 312  |  folio 305  %%%%%%%%%%
+
+\underline{Démonstration.} Par (5.5.1), on a, au-dessus de $\mathbb{P}^1$ ,
+
+\begin{equation}\tag{5.8.4.2}
+R^{n-1}\rho_*\mathbb{Q}_\ell(j) \;\simeq\; H^{n-1}(X,\mathbb{Q}_\ell(j))_{\mathbb{P}^1} \oplus E^{n-1}\rho_*\mathbb{Q}_\ell(j) \quad ,
+\end{equation}
+et au-dessus de $U$, on a
+
+\begin{equation}\tag{5.8.4.3}
+\nu^*R^{n-1}\rho_*\mathbb{Q}_\ell(j) \;\simeq\; H^{n-1}(X,\mathbb{Q}_\ell(j))_U \oplus \nu^*E^{n-1}\rho_*\mathbb{Q}_\ell(j) \quad ,
+\end{equation}
+ce qui permet de récrire (5.8.4.1) comme indiqué :
+
+\begin{equation}\tag{5.8.4.4}
+\begin{tikzcd}[row sep=huge, column sep=large]
+\mathrm{Prim}^n(X,\mathbb{Q}_\ell(j)) \arrow[r, "\mathrm{Grif}"] & H^1(U,\nu^*R^{n-1}\rho_*\mathbb{Q}_\ell(j)) \arrow[d] \\
+ {} & H^1(U,\nu^*E^{n-1}\rho_*\mathbb{Q}_\ell(j)) \quad .
+\end{tikzcd}
+\end{equation}
+% STRUCTURE: 3 nodes, on 2 rows of a 2-column grid. (r1c1) $\mathrm{Prim}^n(X,\mathbb{Q}_\ell(j))$.
+%   (r1c2) $H^1(U,\nu^*R^{n-1}\rho_*\mathbb{Q}_\ell(j))$. (r2c2)
+%   $H^1(U,\nu^*E^{n-1}\rho_*\mathbb{Q}_\ell(j))$ — note $E$, not $R$, in the bottom node, and the
+%   $\nu^*$ is present here. In addition a sentence-ending period is printed on the bottom-row baseline,
+%   well to the right of the bottom node; it is punctuation, NOT a fourth node (rendered in the tikzcd
+%   as \quad . inside the r2c2 cell). 2 arrows, both plain solid single-headed arrows (no hooks, no
+%   monos, no double heads, no dashes, no iso marks): 1. (r1c1) $\longrightarrow$ (r1c2): horizontal,
+%   pointing RIGHT, label $\mathrm{Grif}$ centred ABOVE the shaft (the shaft runs directly beneath the
+%   word). 2. (r1c2) $\longrightarrow$ (r2c2): long vertical arrow, pointing DOWN, UNLABELLED; it drops
+%   from beneath the middle of the top-right node to the top of the bottom node.
+D'après (5.7.1), la flèche (qui n'est définie que grâce à l'hypothèse (A))
+
+\begin{equation}\tag{5.8.4.5}
+u \;:\; \mathrm{Prim}^n(X,\mathbb{Q}_\ell(j)) \longrightarrow H^1(\mathbb{P}^1,R^{n-1}\rho_*\mathbb{Q}_\ell(j))
+\end{equation}
+est injective. La décomposition (5.8.4.2), compte tenu de ce que $\mathbb{P}^1$ est simplement connexe, donne
+
+\begin{equation}\tag{5.8.4.6}
+H^1(\mathbb{P}^1,R^{n-1}\rho_*\mathbb{Q}_\ell(j)) \;\simeq\; H^1(\mathbb{P}^1,E^{n-1}\rho_*\mathbb{Q}_\ell(j)) \quad ,
+\end{equation}
+de sorte qu'on peut compléter (5.8.4.4) en un diagramme commutatif 
+----- misprints recorded on page 305 -----
+[id 7II:521]
+WHERE: (5.8.4.3), left-hand side
+PRINT: ν*R^{n-1}ρ_*Q_ℓ(j)) ≃
+CORRECT: \nu^*R^{n-1}\rho_*\mathbb{Q}_\ell(j) \;\simeq\;
+TEX BEFORE: \nu^*R^{n-1}\rho_*\mathbb{Q}_\ell(j)) \;\simeq\;
+NOTE: The print has an extra closing parenthesis. The TeX keeps the printed reading.
+
+[id 7II:522]
+WHERE: line before (5.8.4.5)
+PRINT: la flèche (qui n'est défini que grâce à l'hypothèse (A))
+CORRECT: la flèche (qui n'est définie que grâce à l'hypothèse (A))
+TEX BEFORE: la flèche (qui n'est défini que grâce à l'hypothèse (A))
+NOTE: The participle should agree with 'la flèche'. The TeX keeps the printed reading.
+
+=================== PAGE 308 ===================
+----- corrected edition, expose_XVIII_body.tex, page 308 -----
+%%%%%%%%%%  scan idx 315  |  folio 308  %%%%%%%%%%
+
+% LAYOUT NOTE on (5.8.7.1): the printed display is a composite whose lower target is a QUOTIENT,
+% set as a built-up fraction with a full-width rule, and an isomorphism sign links a second
+% expression to it from the left:
+%
+%     Prim^n(X,Q_l(j)) --Grif--> H^1(V,R^{n-1} rho_{V*} Q_l(j))
+%                                            |
+%                                            v
+%     H^1(V,(pi mu)*E^{n-1} rho_*(Q_l(j)))  ~=  ------------------------------------
+%                                               (f x rho_V)* H^1(V,H^{n-1}(X,Q_l(j))_V)
+%
+% The bottom row is emitted as ONE tikzcd node so the fraction and its "~=" stay together; the
+% vertical arrow therefore meets the node's centre rather than the numerator specifically. That
+% is a layout approximation, not a content change.
+%
+% CORRECTED-WORKPASS NOTE:
+%   1. [RESOLVED — not a defect.] (5.8.7.1) sets "(pi mu)*E^{n-1} rho_*" with an E while the
+%      identity at the foot of this page uses R^{n-1}. I first read the E as a mis-struck R.
+%      The NEXT leaf (idx 316, folio 309) settles it: there R^{n-1} and E^{n-1} stand in the
+%      SOURCE and TARGET of one and the same diagram. E is a distinct object, the E is correct
+%      as printed, and R and E must not be unified anywhere in this exposé.
+%   2. The extra closing parenthesis in the final display is removed here.
+% ---------------------------------------------------------------------
+et on a encore (cf. (5.8.2.3))
+
+\begin{equation}\tag{5.8.6.3}
+\alpha_V^*f^* \mathrm{Prim}^n(X,\mathbb{Q}_\ell(j)) \subset \mathrm{Prim}^n(\widetilde X_V/V,\mathbb{Q}_\ell(j)) \quad ,
+\end{equation}
+
+de sorte qu'on peut parler encore de l'homomorphisme de Griffiths
+
+\begin{equation}\tag{5.8.6.4}
+\begin{tikzcd}[column sep=huge]
+\mathrm{Prim}^n(X,\mathbb{Q}_\ell(j)) \arrow[r, "\mathrm{Grif}"] & H^1(V,R^{n-1}\rho_{V*}\mathbb{Q}_\ell(j))
+\end{tikzcd}
+\quad .
+\end{equation}
+
+\underline{Corollaire} 5.8.7. \underline{Avec les notations précédentes}, \underline{et sous les hypothèses de} 5.8.4, \underline{l'homomorphisme de Griffiths ``modulo partie fixe'', i.e. le composé}
+
+\begin{equation}\tag{5.8.7.1}
+\begin{tikzcd}[column sep=huge, row sep=huge]
+\mathrm{Prim}^n(X,\mathbb{Q}_\ell(j)) \arrow[r, "\mathrm{Grif}"] & H^1(V,R^{n-1}\rho_{V*}\mathbb{Q}_\ell(j)) \arrow[d] \\
+{} & H^1(V,(\pi\mu)^*E^{n-1}\rho_*\mathbb{Q}_\ell(j)) \ \simeq \ \dfrac{H^1(V,R^{n-1}\rho_{V*}\mathbb{Q}_\ell(j))}{(f\times\rho_V)^* H^1(V,H^{n-1}(X,\mathbb{Q}_\ell(j))_V)}
+\end{tikzcd}
+\end{equation}
+
+\underline{est injectif}.
+
+\underline{Démonstration}. Par le théorème de la spécialisation pour la cohomologie, on a
+
+\begin{equation*}
+R^{n-1}\rho_{V*}\mathbb{Q}_\ell(j) = (\pi\mu)^*R^{n-1}\rho_*\mathbb{Q}_\ell(j)
+\end{equation*}
+----- misprints recorded on page 308 -----
+[id 7II:523]
+WHERE: last display (proof of 5.8.7), left-hand side
+PRINT: R^{n-1}ρ_{V*}Q_ℓ(j))  =  (π μ)* R^{n-1}ρ_*Q_ℓ(j)
+CORRECT: \mathrm{R}^{n-1}\rho_{\mathrm{V}_*}\mathbb{Q}_\ell(j)
+TEX BEFORE: \mathrm{R}^{n-1}\rho_{\mathrm{V}_*}\mathbb{Q}_\ell(j)) = ...
+NOTE: The print has one closing parenthesis too many. The TeX keeps the printed reading, as its SOURCE DEFECTS comment says.
+
+=================== PAGE 310 ===================
+----- corrected edition, expose_XVIII_body.tex, page 310 -----
+%%%%%%%%%%  scan idx 317  |  folio 310  %%%%%%%%%%
+
+ on conclut que
+
+\begin{equation*}
+\mu^*\pi^*\, E^{n-1}\rho_*\mathbb{Q}_\ell(j) \;=\; \pi_U^*\nu^*\, E^{n-1}\rho_*\mathbb{Q}_\ell(j)
+\end{equation*}
+de sorte que (5.8.7.3) se factorise
+
+\begin{center}
+\begin{tikzcd}[column sep=huge, row sep=huge]
+\mathrm{Prim}^n(X,\mathbb{Q}_\ell(j)) \arrow[r] & H^1(U,\nu^*\, E^{n-1}\rho_*\mathbb{Q}_\ell(j)) \arrow[d, "\pi_U^*"] \\
+ {} & H^1(V,\pi_U^*\nu^*\, E^{n-1}\rho_*\mathbb{Q}_\ell(j)) \quad .
+\end{tikzcd}
+\end{center}
+% STRUCTURE: 3 nodes, 2 arrows, laid out on a 2x2 grid with the bottom-left cell EMPTY. Node 1 (row 1,
+%   col 1): Prim^n(X,\mathbb{Q}_\ell(j)). Node 2 (row 1, col 2): H^1(U,\nu^*
+%   E^{n-1}\rho_*\mathbb{Q}_\ell(j)). Node 3 (row 2, col 2): H^1(V,\pi_U^*\nu^*
+%   E^{n-1}\rho_*\mathbb{Q}_\ell(j)), with a printed full stop set to its right, well separated. Arrow
+%   A: Node 1 -> Node 2, horizontal, pointing RIGHT (east), long plain solid shaft, single ordinary
+%   head, UNLABELLED, not hooked, not dashed, not an iso, not a double head. Arrow B: Node 2 -> Node 3,
+%   vertical, pointing DOWN (south), long plain solid shaft, single ordinary head, labelled \pi_U^* with
+%   the label set to the RIGHT (east) of the shaft at mid-height; not hooked, not dashed, not an iso,
+%   not a double head. There is no arrow out of the bottom-left cell and no diagonal arrow.
+Or, il suffit, grâce à (5.8.4), de vérifier que
+
+\begin{equation*}
+\pi_U^* \;:\; H^1(U,\nu^*\, E^{n-1}\rho_*\mathbb{Q}_\ell(j)) \longrightarrow H^1(V,\pi_U^*\nu^*\, E^{n-1}\rho_*\mathbb{Q}_\ell(j))
+\end{equation*}
+est injectif. Comme $\pi_U : V \longrightarrow U$ est fini et plat, la théorie de la trace [SGA 4 XVII 6.2] nous fournit, pour tout $\mathbb{Q}_\ell$-faisceau $F$ sur $U$ (p.ex. $F = \nu^*\, E^{n-1}\rho_*\mathbb{Q}_\ell(j)$) une application
+
+\begin{equation*}
+\mathrm{tr}_{\pi_U} : H^1(V,\pi_U^*F) \longrightarrow H^1(U,F)
+\end{equation*}
+qui vérifie
+
+\begin{equation*}
+\mathrm{tr}_{\pi_U} \;\circ\; \pi_U^* \;=\; \deg(\pi_U)\,\mathrm{id} \quad ,
+\end{equation*}
+ce qui implique l'injectivité de $H^*(U,F) \longrightarrow H^*(V,\pi_U^*F)$, et achève la démonstration.
+----- misprints recorded on page 310 -----
+[id 7II:524]
+WHERE: first display ('on conclut que'), right-hand side
+PRINT: μ*π* E^{n-1}ρ_*Q_ℓ(j)  =  π_U*ν* E^{n-1}ρ_*Q_ℓ
+CORRECT: \pi_U^*\nu^*\, E^{n-1}\rho_*\mathbb{Q}_\ell(j)
+TEX BEFORE: \pi_U^*\nu^*\, E^{n-1}\rho_*\mathbb{Q}_\ell
+NOTE: The twist (j) of the left-hand side is missing on the right in the print. The TeX keeps the printed reading.
+
+[id 7II:525]
+WHERE: display of the trace map tr_{π_U}
+PRINT: tr_{π_U}: H^1( V,π_U^* ) → H^1(U,F(j))
+CORRECT: H^1(\ V,\pi_U^*F(j)\ )
+TEX BEFORE: H^1(\ V,\pi_U^*\ )
+NOTE: The print leaves the sheaf after π_U^* blank. The TeX keeps the printed reading. The intended source is H^1(V,π_U^*F(j)), matching the target H^1(U,F(j)); cf. H^*(V,π_U^*F) two lines later.
+
+=================== PAGE 311 ===================
+----- corrected edition, expose_XVIII_body.tex, page 311 -----
+%%%%%%%%%%  scan idx 318  |  folio 311  %%%%%%%%%%
+
+
+% Frozen transcription: « vérifiéé »; the scan reads the correctly agreed « vérifiée ».
+5.9. \underline{Un exemple où l'hypothèse} (A) \underline{n'est pas vérifiée}.
+
+Soit $X$ une surface quadratique lisse dans $\mathbb{P}^3$. Alors $X$ vérifie (LV) (5.2.4). Prenons un pinceau (de Lefschetz, si l'on veut) d'\underline{hyperplans} dont l'élément générique et l'axe coupent transversalement $X$ . Alors (comme m'a fait observer Deligne) \underline{la projection} $\rho : \widetilde{X} \longrightarrow \mathbb{P}^1$ \underline{ne vérifie pas} (A). En effet, $R^2\rho_*\mathbb{Q}_\ell$ n'est pas constant, car les fibres singulières sont des courbes coniques singulières, donc sont réductibles, et pour un pinceau de Lefschetz, sont chacun la réunion de deux droites qui se coupent en un point (c'est la définition d'un pinceau de Lefschetz dans ce cas simple). Donc
+
+\begin{equation*}
+\dim_{\mathbb{Q}_\ell}\left(\, H^2\,(\text{fibre sing.},\ \mathbb{Q}_\ell)\right) = 2
+\end{equation*}
+bien que
+
+\begin{equation*}
+\dim_{\mathbb{Q}_\ell}\left(\, H^2\,(\text{fibre lisse},\ \mathbb{Q}_\ell)\right) = 1 \quad .
+\end{equation*}
+De plus, la conclusion du théorème 5.8.4 est ici fausse. Désignons par $U \stackrel{\nu}{\hookrightarrow} \mathbb{P}^1$ un ouvert de lissité $\neq \emptyset$ de $\rho$ . Comme les fibres de $\rho$ au-dessus de $U$ sont des courbes lisses de genre zéro, on a
+
+\begin{equation*}
+\nu^*R^1\rho_*\mathbb{Q}_\ell \;=\; 0
+\end{equation*}
+et donc
+
+\begin{equation*}
+H^1(U,\nu^*R^1\rho_*\mathbb{Q}_\ell) \;=\; 0 \quad , 
+\end{equation*}
+----- misprints recorded on page 311 -----
+[id 7II:526]
+WHERE: heading 5.9
+PRINT: n'est pas vérifiéé
+CORRECT: vérifiée
+TEX BEFORE: \underline{n'est pas vérifiéé}
+NOTE: Typing error in the print (double é). The TeX keeps the printed reading.
+
+[id 7II:527]
+WHERE: paragraph of 5.9, 'sont chacun la réunion'
+PRINT: sont chacun la réunion de deux droites
+CORRECT: sont chacune la réunion
+TEX BEFORE: sont chacun la réunion de deux droites
+NOTE: The subject is 'les fibres singulières', so the agreement requires 'chacune'. The TeX keeps the printed reading.
+
+=================== PAGE 312 ===================
+----- corrected edition, expose_XVIII_body.tex, page 312 -----
+%%%%%%%%%%  scan idx 319  |  folio 312  %%%%%%%%%%
+
+% This leaf opens section 6, "Application de la theorie locale des cycles evanescents
+% (Picard-Lefschetz)". The section heading and the whole Proposition 6.1 statement are UNDERLINED
+% in the typescript, in the running style of this volume, and are set with \underline here.
+%
+% "i_o : D_o ---> P^r" is drawn with a HOOK at the tail (an inclusion) — \hookrightarrow.
+%
+% SOURCE READINGS kept as printed:
+%   - "cycles evanescents" in the section heading has NO accent on the first e, where the body
+%     text of this exposé writes "evanescents" and elsewhere "evanescents" accented. Kept bare.
+%   - The base point is a lower-case a with a MACRON, "abar", not a-hat or a-tilde.
+%   - "pi_1^{mod}" carries the superscript "mod" in roman, set tight on pi_1.
+% ---------------------------------------------------------------------
+de sorte que l'homomorphisme de Griffiths
+
+\begin{equation*}
+\begin{tikzcd}[column sep=huge]
+\mathrm{Prim}^2(\mathrm{X},\mathbb{Q}_\ell) \arrow[r, "\mathrm{Grif}"] & \mathrm{H}^1(\mathrm{U},\nu^*\mathrm{R}^1\rho_*\mathbb{Q}_\ell)
+\end{tikzcd}
+\end{equation*}
+
+est nul. Mais sur une surface quadratique, on a
+
+\begin{equation*}
+\dim_{\mathbb{Q}_\ell} \left( \mathrm{Prim}^2(\mathrm{X},\mathbb{Q}_\ell) \right) = 1 \quad .
+\end{equation*}
+
+On voit de même que la conclusion de 5.7 est ici en défaut.
+
+6. \underline{Application de la théorie locale des cycles evanescents} (\underline{Picard}-\underline{Lefschetz}).
+
+\underline{Proposition} 6.1. \underline{Désignons par} Z \underline{une hypersurface dans l'espace projectif} $\mathbb{P}^r_k$ , $r \geq 2$, k \underline{étant un corps algébriquement clos}. \underline{Soit}
+
+\begin{equation*}
+i_o : \mathrm{D}_o \lhook\joinrel\longrightarrow \mathbb{P}^r
+\end{equation*}
+
+% Frozen transcription: « Choissisons »; the scan reads « Choisissons ».
+\underline{l'inclusion d'une droite qui ne coupe} Z \underline{qu'en son ouvert de lissité, et le coupe transversalement}. \underline{Choisissons un point géométrique} $\overline{a}$ \underline{de} $\mathrm{D}_o - \mathrm{D}_o \cap \mathrm{Z}$, \underline{et désignons par}
+
+\begin{equation*}
+\pi_1^{\mathrm{mod}}(\mathrm{D}_o - \mathrm{D}_o \cap \mathrm{Z}, \ \overline{a})
+\end{equation*}
+
+\underline{le quotient de} $\pi_1(\mathrm{D}_o - \mathrm{D}_o \cap \mathrm{Z}, \overline{a})$ \underline{qui classifie les revêtements étales de} $\mathrm{D}_o - \mathrm{D}_o \cap \mathrm{Z}$ \underline{qui sont modérément ramifiés en tout point de} $\mathrm{D}_o \cap \mathrm{Z}$ .
+
+\underline{Alors}
+----- misprints recorded on page 312 -----
+[id 7II:528]
+WHERE: section heading 6
+PRINT: cycles evanescents
+CORRECT: évanescents
+TEX BEFORE: cycles evanescents
+NOTE: The accent on the initial e is missing in the print. The TeX keeps the printed reading, as its comment says.
+
+[id 7II:529]
+WHERE: Proposition 6.1
+PRINT: Choissisons un point géométrique
+CORRECT: Choisissons
+TEX BEFORE: \underline{Choissisons un point géométrique}
+NOTE: Typing error in the print. The TeX keeps the printed reading.
+
+=================== PAGE 313 ===================
+----- corrected edition, expose_XVIII_body.tex, page 313 -----
+%%%%%%%%%%  scan idx 320  |  folio 313  %%%%%%%%%%
+
+% NOTATION: the products in (6.1.2.1) and (6.1.2.2) are set as a wide \prod with the condition
+% "l != car(k)" BELOW it, and Z_l(1) standing to the right of the product sign rather than
+% directly under it — reproduced with \prod\limits_{...} followed by the factor.
+%
+% Bars: "abar", "xbar_o", "etabar" all carry a MACRON, not a tilde or hat. D_{etabar} in the last
+% paragraph is printed with the bar over the eta subscript.
+%
+% SOURCE READING kept: "la grassmanniene" — one n before the -iene, where standard French is
+% "grassmannienne". Kept as printed.
+% ---------------------------------------------------------------------
+6.1.1. \underline{L'homomorphisme canonique}
+
+\begin{equation}\tag{6.1.1.1}
+i_{o_*} : \pi_1^{\mathrm{mod}}(\mathrm{D}_o - \mathrm{D}_o \cap \mathrm{Z}, \overline{a}) \longrightarrow \pi_1^{\mathrm{mod}}(\mathbb{P}^r - \mathrm{Z}, \overline{a})
+\end{equation}
+
+\underline{est surjectif}.
+
+6.1.2. \underline{Chaque choix d'un point géométrique} $\overline{x}_o \in \mathrm{D}_o \cap \mathrm{Z}$ \underline{et d'un ``chemin'' dans} $\mathrm{D}_o$ \underline{entre} $\overline{x}_o$ \underline{et} $\overline{a}$ \underline{détermine un homomorphisme}
+
+\begin{equation}\tag{6.1.2.1}
+\prod\limits_{\ell \neq \mathrm{car}(k)} \mathbb{Z}_\ell(1) \longrightarrow \pi_1^{\mathrm{mod}}(\mathrm{D}_o - \mathrm{D}_o \cap \mathrm{Z}, \overline{a})
+\end{equation}
+
+\underline{dont l'image est ``le'' groupe d'inertie en} $\overline{x}_o$ . \underline{Prenant le composé de ce morphisme et de} $i_{o_*}$ , \underline{on trouve un homomorphisme}
+
+\begin{equation}\tag{6.1.2.2}
+\prod\limits_{\ell \neq \mathrm{car}(k)} \mathbb{Z}_\ell(1) \longrightarrow \pi_1^{\mathrm{mod}}(\mathbb{P}^r - \mathrm{Z}) \quad .
+\end{equation}
+
+\underline{Si} Z \underline{est irréductible, tous ces homomorphismes sont conjugués entre eux}.
+
+% Print: « grassmanniene formée »; corrected spelling and agreement follow the masculine « sous-schéma ».
+\underline{Démonstration}. Désignons par T le sous-schéma de la grassmannienne formé des droites dans $\mathbb{P}^r$ qui
+
+(i) passent par $\overline{a}$
+
+(ii) ne coupent Z qu'en son ouvert de lissité, et l'y coupent transversalement, par $\eta$ son point générique, et par $i_\eta : \mathrm{D}_\eta \longrightarrow \mathbb{P}^r \otimes_k k(\eta)$ la droite correspondante (qui est donc une droite ``joignant $\overline{a}$ au point générique de $\mathbb{P}^r_k$ ''). Choisissons aussi un point géométrique $\overline{\eta}$ au-dessus de $\eta$, et notons par $\mathrm{D}_{\overline{\eta}}$ la droite ``géométrique'' correspondante. Soit o le point de T correspondant à la droite donnée $\mathrm{D}_o$ .
+----- misprints recorded on page 313 -----
+[id 7II:530]
+WHERE: Démonstration, first line
+PRINT: de la grassmanniene formée
+CORRECT: grassmannienne
+TEX BEFORE: de la grassmanniene formée
+NOTE: Typing error in the print. The TeX keeps the printed reading.
+
+[id 7II:531]
+WHERE: (ii), parenthesis
+PRINT: une droite "joingnant ā au point générique
+CORRECT: joignant
+TEX BEFORE: ``joingnant $\overline{a}$ au point générique
+NOTE: Typing error in the print. The TeX keeps the printed reading.
+
+[id 7II:532]
+WHERE: last sentence
+PRINT: Soit o le point T correspondant
+CORRECT: Soit o le point de T correspondant
+TEX BEFORE: Soit o le point T correspondant
+NOTE: The word 'de' is missing in the print. The TeX keeps the printed reading.
+
+=================== PAGE 314 ===================
+----- corrected edition, expose_XVIII_body.tex, page 314 -----
+%%%%%%%%%%  scan idx 321  |  folio 314  %%%%%%%%%%
+
+D'après (SGA 1, XIII 2.8), il existe un homomorphisme de spécialisation (dépendant d'un chemin entre $\bar{\eta}$ et $O$ dans $T$, donc défini à conjugaison près)
+
+\begin{equation}\tag{6.1.3}
+\pi_1^{\mathrm{mod}}(D_{\bar{\eta}} - D_{\bar{\eta}} \cap Z, \bar{a}) \xrightarrow{\ \bar{\eta} \longrightarrow o\ } \pi_1^{\mathrm{mod}}(D_o - D_o \cap Z, \bar{a})
+\end{equation}
+tel que l'on ait :
+
+% Print: singular « homomorphisme » after plural article; corrected to the plural.
+6.1.4. Les homomorphismes (6.1.2.1) de monodromie locale
+
+\begin{equation*}
+% Print omits « mod » although these are explicitly the homomorphisms (6.1.2.1).
+\prod_{\ell \neq \mathrm{car}(k)} \mathbb{Z}_{\ell}(1) \longrightarrow \pi_1^{\mathrm{mod}}(D_o - D_o \cap Z, \bar{a})
+\end{equation*}
+s'obtiennent en prenant le composé de la flèche de spécialisation (6.1.3) avec les homomorphismes de monodromie locale pour $D_{\bar{\eta}}$ ,
+
+\begin{equation}\tag{6.1.4.1}
+\prod_{\ell \neq \mathrm{car}(k)} \mathbb{Z}_{\ell}(1) \longrightarrow \pi_1^{\mathrm{mod}}(D_{\bar{\eta}} - D_{\bar{\eta}} \cap Z, \bar{a}) \xrightarrow{\ \bar{\eta} \longrightarrow o\ } \pi_1^{\mathrm{mod}}(D_o - D_o \cap Z, \bar{a}) \ ;
+\end{equation}
+(6.1.5) le diagramme suivant est commutatif
+
+\begin{equation}\notag
+\begin{tikzcd}[column sep=huge, row sep=huge]
+ {} & \pi_1^{\mathrm{mod}}(\mathbb{P}^r-Z,\bar{a}) & {} \\
+\pi_1^{\mathrm{mod}}(D_{\eta} - D_{\eta} \cap Z,\bar{a}) \arrow[ur, "i_{\eta_*}"] & {} & \pi_1^{\mathrm{mod}}(D_o - D_o \cap Z,\bar{a}) \arrow[ul, "i_{o_*}"'] \\
+ {} & \pi_1^{\mathrm{mod}}(D_{\bar{\eta}} - D_{\bar{\eta}} \cap Z,\bar{a}) \arrow[uu, "i_{\bar{\eta}*}"'] \arrow[ul] \arrow[ur, "\bar{\eta} \longrightarrow o"'] &
+{} \end{tikzcd} \quad .
+\end{equation}
+% STRUCTURE: Diamond, 4 nodes and 5 arrows, all arrows plain solid single-headed (no hooks, no isos, no
+%   double heads, no dashed). NODES (4): N1 (apex, top centre): \pi_1^{mod}(\mathbb{P}^r - Z, \bar{a}).
+%   N2 (left, middle height): \pi_1^{mod}(D_\eta - D_\eta \cap Z, \bar{a}) -- subscript is plain \eta,
+%   NO bar. N3 (right, below N1, lower than N2): \pi_1^{mod}(D_o - D_o \cap Z, \bar{a}) -- subscript
+%   lower-case o. N4 (bottom centre): \pi_1^{mod}(D_{\bar\eta} - D_{\bar\eta} \cap Z, \bar{a}) --
+%   subscript \bar\eta, WITH bar. ARROWS (5): A1: N2 -> N1, drawn up-and-to-the-right, solid, single
+%   arrowhead at N1. Label i_{\eta_*} (i subscripted by \eta, itself subscripted by *), placed
+%   above-left of the shaft. A2: N4 -> N1, drawn straight vertically upward through the centre of the
+%   diamond, solid, single arrowhead at N1. Label i_{\bar{\eta}_*} (i subscripted by \bar\eta with bar,
+%   itself subscripted by *), placed to the RIGHT of the shaft. A3: N3 -> N1, drawn up-and-to-the-left,
+%   solid, single arrowhead at N1. Label i_{o_*} (i subscripted by o, itself subscripted by *), placed
+%   below-right of the shaft. A4: N4 -> N2, drawn up-and-to-the-left, solid, single arrowhead at N2.
+%   UNLABELLED. A5: N4 -> N3, drawn up-and-to-the-right, solid, single arrowhead at N3. Label \bar{\eta}
+%   \longrightarrow o (bar-eta, long right arrow, lower-case o), placed below-right of the shaft.
+----- misprints recorded on page 314 -----
+[id 7II:533]
+WHERE: first paragraph
+PRINT: entre η̄ et O dans T
+CORRECT: $o$
+TEX BEFORE: entre $\bar{\eta}$ et $O$ dans $T$
+NOTE: The point is called o elsewhere (p. 313 'Soit o le point'; label η̄ → o); the print has a capital O. The TeX keeps the printed reading.
+
+[id 7II:534]
+WHERE: (6.1.3), source
+PRINT: π_1^mod(D_η̄ - D_η̄ ∩ Z), ā)
+CORRECT: \pi_1^{\mathrm{mod}}(D_{\bar{\eta}} - D_{\bar{\eta}} \cap Z, \bar{a})
+TEX BEFORE: \pi_1^{\mathrm{mod}}(D_{\bar{\eta}} - D_{\bar{\eta}} \cap Z), \bar{a})
+NOTE: The print has a superfluous closing parenthesis after Z. The TeX keeps the printed reading.
+
+[id 7II:535]
+WHERE: 6.1.4
+PRINT: Les homomorphisme (6.1.2.1)
+CORRECT: Les homomorphismes
+TEX BEFORE: Les homomorphisme (6.1.2.1)
+NOTE: The plural s is missing in the print. The TeX keeps the printed reading.
+
+=================== PAGE 315 ===================
+----- corrected edition, expose_XVIII_body.tex, page 315 -----
+%%%%%%%%%%  scan idx 322  |  folio 315  %%%%%%%%%%
+
+Admettons ceci, et prouvons d'abord 6.1.1. Or, par la commutativité de 6.1.5, il suffit de démontrer que l'homomorphisme
+
+\begin{equation*}
+i_{\bar{\eta}_*} \ : \ \pi_1^{\mathrm{mod}}(D_{\bar{\eta}} - D_{\bar{\eta}} \cap Z, \bar{a}) \longrightarrow \pi_1^{\mathrm{mod}}(\mathbb{P}^r - Z, \bar{a})
+\end{equation*}
+est surjectif, et pour ceci il suffit de démontrer que l'homomorphisme analogue des $\pi_1$ \underline{immodérés}
+
+\begin{equation}\tag{6.1.6}
+% Print drops the induced-map star carried by the corresponding maps in (6.1.5).
+i_{\bar{\eta}*} \ : \ \pi_1(D_{\bar{\eta}} - D_{\bar{\eta}} \cap Z, \bar{a}) \longrightarrow \pi_1(\mathbb{P}^r - Z, \bar{a})
+\end{equation}
+est surjectif, i.e. que pour tout revêtement étale $E \longrightarrow \mathbb{P}^r - Z$, avec $E$ connexe (et donc irréductible, $\mathbb{P}^r - Z$ étant lisse, donc unibranche (EGA IV 18.10.3)), son image réciproque $E_{\bar{\eta}} = E \times_{\mathbb{P}^r - Z} (D_{\bar{\eta}} - D_{\bar{\eta}} \cap Z)$ au-dessus de $D_{\bar{\eta}} - D_{\bar{\eta}} \cap Z$ reste géométriquement irréductible. Pour ceci, il suffit d'utiliser la variante suivante du théorème de Bertini (EGA V ....) (pour la flèche composée $E \longrightarrow \mathbb{P}^r - Z \hookrightarrow \mathbb{P}^r$, et $s = 1$):
+
+6.1.6.1. \underline{Théorème de Bertini} : Soit $k$ un corps, $\mathbb{P}^r = \mathbb{P}^r_k$, et $f : X \longrightarrow \mathbb{P}^r$ un morphisme non constant, où $X$ est un schéma algébrique géométriquement irréductible. Pour chaque entier $s < \dim \overline{f(X)}$, désignons par $L_t$ le sous-espace linéaire \underline{générique} de codimension $s$ de $\mathbb{P}^r$ . Alors $X_t = f^{-1}(L_t)$ est géométriquement irréductible.
+
+Etablissons maintenant 6.1.2. D'après 6.1.4, et la commutativité de (6.1.5), il suffit de démontrer que tous les homomorphismes de monodromie locale (6.1.3) \underline{pour} $D_{\bar{\eta}}$ 
+----- misprints recorded on page 315 -----
+[id 7II:536]
+WHERE: end of paragraph before 6.1.6.1
+PRINT: (pour la flèche composé E
+CORRECT: la flèche composée
+TEX BEFORE: (pour la flèche composé $E
+NOTE: 'flèche' is feminine, so the agreement requires 'composée'. The TeX keeps the printed reading.
+
+=================== PAGE 316 ===================
+----- corrected edition, expose_XVIII_body.tex, page 316 -----
+%%%%%%%%%%  scan idx 323  |  folio 316  %%%%%%%%%%
+
+\begin{equation}\tag{6.1.7.1}
+ \prod_{\ell \neq \mathrm{car}(k)} \mathbb{Z}_{\ell}(1) \longrightarrow \pi_1^{\mathrm{mod}}(D_{\overline{\eta}} - D_{\overline{\eta}} \cap Z, \overline{a})
+\end{equation}
+deviennent conjugués après la composition avec l'homomorphisme
+
+\begin{equation}\tag{6.1.7.2}
+\pi_1^{\mathrm{mod}}(D_{\overline{\eta}} - D_{\overline{\eta}} \cap Z, \overline{a}) \longrightarrow \pi_1^{\mathrm{mod}}(D_{\eta} - D_{\eta} \cap Z, \overline{a}) \; .
+\end{equation}
+Pour prouver ceci, remarquons que pour tout $K$ fini et galoisien sur $k(\eta)$, $k(\eta) \subset K \subset k(\overline{\eta})$, le schéma
+
+\begin{equation*}
+D_K \stackrel{\mathrm{def}}{=} D_{\eta} \times_{k(\eta)} K
+\end{equation*}
+est un revêtement étale de $D_{\eta}$, de sorte que $D_K - D_K \cap Z$ est un revêtement modéré de $D_{\eta} - D_{\eta} \cap Z$, d'où on déduit une action de $\pi_1^{\mathrm{mod}}(D_{\eta} - D_{\eta} \cap Z, \overline{a})$ sur le schéma $D_K \cap Z$. Nous prenons $K$ suffisamment grand pour que tous les points de $D_K \cap Z$ soient $K$-rationnels, ceci étant possible car par hypothèse le schéma $D_{\eta} \cap Z$ est \underline{étale} sur $k(\eta)$.
+
+Il reste à démontrer que le groupe $\pi_1^{\mathrm{mod}}(D_{\eta}-D_{\eta} \cap Z, \overline{a})$ agit de façon \underline{transitive} sur les points de $D_K \cap Z$, pour établir la conjugaison des homomorphismes composés d'inertie locale
+
+\begin{equation*}
+\prod_{\ell \neq \mathrm{car}(k)} \mathbb{Z}_{\ell}(1) \longrightarrow \pi_1^{\mathrm{mod}}(D_{\eta} - D_{\eta} \cap Z, \overline{a})
+\end{equation*}
+pour les divers points de $D_K \cap Z$. Or, l'action sur $D_K \cap Z$ de $\pi_1^{\mathrm{mod}}(D_{\eta} - D_{\eta} \cap Z, \overline{a})$ se factorise par le quotient canonique
+
+\begin{equation*}
+\pi_1^{\mathrm{mod}}(D_{\eta} - D_{\eta} \cap Z, \overline{a}) \longrightarrow \pi_1(\eta, \overline{\eta}) = \mathrm{Gal}(k(\overline{\eta})/k(\eta)) \quad ,
+\end{equation*}
+----- misprints recorded on page 316 -----
+[id 7II:537]
+WHERE: par. 'Pour prouver ceci', second line
+PRINT: k(η) ⊂ K ⊂ K(η̄), le schéma
+CORRECT: k(\overline{\eta})
+TEX BEFORE: $k(\eta) \subset K \subset K(\overline{\eta})$
+NOTE: The print has a capital K where the residue field k(η̄) of the geometric point is meant. The TeX keeps the printed reading.
+
+[id 7II:538]
+WHERE: par. 'est un revêtement étale', after 'd'où on déduit une action de'
+PRINT: π_1^mod(D_η̄ - D_η ∩ Z, ā)
+CORRECT: \pi_1^{\mathrm{mod}}(D_{\eta} - D_{\eta} \cap Z, \overline{a})
+TEX BEFORE: \pi_1^{\mathrm{mod}}(D_{\overline{\eta}} - D_{\eta} \cap Z, \overline{a})
+NOTE: The acting group comes from the tame covering D_K − D_K∩Z of D_η − D_η∩Z, and the next paragraph has π_1^mod(D_η − D_η∩Z, ā). The first subscript should be η, not η̄. The TeX keeps the printed reading.
+
+[id 7II:539]
+WHERE: 'Nous prenons K suffisament grand'
+PRINT: suffisament
+CORRECT: suffisamment
+TEX BEFORE: suffisament
+NOTE: Spelling slip of the typescript. The TeX keeps it.
+
+[id 7II:540]
+WHERE: last display, after π_1(η, η̄) =
+PRINT: Gal(/k(η)   ,
+CORRECT: \mathrm{Gal}(/k(\eta))
+TEX BEFORE: \mathrm{Gal}(/k(\eta) \quad ,
+NOTE: The closing parenthesis is missing; p. 317 prints Gal(/k(η)) twice. In all three occurrences the field before the slash (presumably k(η̄)) is also absent; that is not corrected here. The TeX keeps the printed reading.
+
+=================== PAGE 317 ===================
+----- corrected edition, expose_XVIII_body.tex, page 317 -----
+%%%%%%%%%%  scan idx 324  |  folio 317  %%%%%%%%%%
+
+et l'action de $\mathrm{Gal}(k(\overline{\eta})/k(\eta))$ sur $D_K \cap Z$ est celle qui est compatible avec l'inclusion
+
+\begin{equation*}
+D_K \cap Z \hookrightarrow \mathbb{P}^r_k \times_k K \quad ,
+\end{equation*}
+où $\mathrm{Gal}(k(\overline{\eta})/k(\eta))$ n'agit sur $\mathbb{P}^r_k \times_k K$ que via le deuxième facteur. Ceci posé, on voit que l'énoncé voulu équivaut à ce que le schéma $D_{\eta} \cap Z$ n'ait qu'un point (i.e. que ce soit le spectre d'un \underline{corps}). Or, en termes terre à terre, ceci n'est autre que le fait suivant (du style \underline{Bertini}) (où l'on prend pour $Z$ une équation affine $F = 0$, et on suppose que le point $\overline{a}$ est l'origine) :
+
+\underline{Fait} 6.1.8. \underline{Soit} $k$ \underline{un corps algébriquement clos}, $r \geq 2$, \underline{et} $F(X_1,\ldots,X_r) \in k[X_1,\ldots,X_r]$ \underline{un polynôme irréductible.} \underline{Alors le polynôme}
+
+\begin{equation*}
+G(T) = F (X_1 T,\ldots,X_r T) \in k (X_1,\ldots,X_r)[T]
+\end{equation*}
+\underline{est irréductible} \underline{(en tant que polynôme en} $T$ \underline{à coefficients dans} $k(X_1,\ldots,X_r)$).
+
+Ceci termine la démonstration de 6.1.2, cqfd.
+
+\underline{Remarque} 6.1.9. Une autre méthode de démonstration de 6.1.2, valable sous des conditions nettement plus générales, consisterait à s'assurer simplement d'une compatibilité générale pour les ``homomorphismes de monodromie'', disant que les homomorphismes composés de 6.1.2 sont conjugués de l'homomorphisme de monodromie relatif au point générique de $Z$ (donc sont conjugués entre eux !).
+----- misprints recorded on page 317 -----
+[id 7II:541]
+WHERE: first line, 'et l'action de Gal(/k(η)) sur ...'
+PRINT: K_K ∩ Z
+CORRECT: D_K \cap Z
+TEX BEFORE: $K_K \cap Z$
+NOTE: D_K ∩ Z is meant (cf. the following display D_K ∩ Z ↪ P^r_k ×_k K). The TeX keeps the printed reading.
+
+[id 7II:542]
+WHERE: end of Fait 6.1.8, '(en tant que polynôme en T à coefficients dans k(X_1,...,X_r).'
+PRINT: k(X_1,...,X_r). (the parenthesis opened before 'en tant' is never closed)
+CORRECT: $k(X_1,\ldots,X_r)$).
+TEX BEFORE: $k(X_1,\ldots,X_r)$.
+NOTE: The closing parenthesis is missing. The TeX keeps the printed reading.
+
+=================== PAGE 318 ===================
+----- corrected edition, expose_XVIII_body.tex, page 318 -----
+%%%%%%%%%%  scan idx 325  |  folio 318  %%%%%%%%%%
+
+\underline{Corollaire} 6.1.10. \underline{Soit} $X$ \underline{une variété projective, lisse et connexe de dimension} $n$ \underline{sur un corps} $k$ \underline{algébriquement clos}. \underline{Supposons que} $n = \dim X$ \underline{soit pair, ou que} $\mathrm{car}(k) \neq 2$. \underline{Soit} $D$ \underline{un pinceau de Lefschetz pour} $X$, $\eta$ \underline{son point générique}, $\bar{\eta}$ \underline{un point géométrique au-dessus de} $\eta$ . \underline{Alors la représentation naturelle de} $\pi_1(D - D \cap \check{X}, \bar{\eta})$ \underline{sur} $H^{n-1}(X_{\bar{\eta}},\mathbb{Q}_\ell)$ \underline{se factorise par} $\pi_1^{\mathrm{mod}}(D - D \cap \check{X}, \bar{\eta})$. \underline{Si cette représentation est non triviale, alors} $D \cap \check{X} \neq \emptyset$ \underline{et le groupe d'inertie en tout point de} $D \cap \check{X}$ \underline{agit non trivialement.}
+
+\underline{Démonstration}. Si $\dim (\check{X}) \leq r-2$, alors $D \cap \check{X}$ est vide, et il n'y a rien à prouver, compte tenu que $\mathbb{P}^1$ est simplement connexe. Sinon, $\check{X}$ est une hypersurface dans $\mathbb{P}^r$ (XVII, 3.1.4), et, par 3.2.10 et XVII 3.5, 6.1.1 s'applique (prenant $\check{X}$ pour $Z$, $D$ pour $D_o$). Le fait que l'action de $\pi_1$ sur $H^{n-1}(X_{\bar{\eta}} , \mathbb{Q}_\ell)$ soit modérée a été vue dans la théorie locale, avec la \underline{formule de Picard-Lefschetz} (XV 3.4) , rappelée plus bas. Compte tenu du fait (non trivial!) que $\pi_1^{\mathrm{mod}}(D - D \cap \check{X}, \bar{\eta})$ est engendré par les groupes d'inertie en les différents points de $D \cap \check{X}$ (SGA 1 XIII 2.10), on a la conclusion voulue. Nous allons utiliser le résultat précédent pour étudier maintenant la condition (A) de (5.3.5). Rappelons d'abord le résultat suivant (XV 3.4) , conséquence facile de la formule de \underline{Picard-Lefschetz} :
+----- misprints recorded on page 318 -----
+[id 7II:543]
+WHERE: Corollaire 6.1.10, 'ou que card(k) ≠ 2'
+PRINT: card(k) ≠ 2
+CORRECT: \mathrm{car}(k) \neq 2
+TEX BEFORE: $\mathrm{card}(k) \neq 2$
+NOTE: The characteristic is meant, as in 6.3.2 'car(k) ≠ 2'. The TeX keeps the printed reading.
+
+[id 7II:544]
+WHERE: Corollaire 6.1.10, second line
+PRINT: sur un corps k algébriquement clos k
+CORRECT: \underline{sur un corps algébriquement clos} $k$
+TEX BEFORE: \underline{sur un corps} $k$ \underline{algébriquement clos} $k$
+NOTE: k is written twice (cf. 6.2 'sur le corps algébriquement clos k'). The TeX keeps the printed reading.
+
+[id 7II:545]
+WHERE: Démonstration, 'Si dim (X̌) ≤ r-2, alor D ∩ X̌ est vide'
+PRINT: alor
+CORRECT: alors
+TEX BEFORE: alor
+NOTE: Typing slip. The TeX keeps it.
+
+=================== PAGE 319 ===================
+----- corrected edition, expose_XVIII_body.tex, page 319 -----
+%%%%%%%%%%  scan idx 326  |  folio 319  %%%%%%%%%%
+
+\underline{Proposition} 6.2. \underline{Soit} $X$ \underline{une variété projective lisse et connexe de dimension} $n$ \underline{sur le corps algébriquement clos} $k$. \underline{Désignons par} $D$ \underline{un pinceau de Lefschetz}, $\eta$ \underline{son point générique}, $\bar{\eta}$ \underline{un point géométrique au-dessus de} $\eta$ . \underline{Alors le pinceau} $D$ \underline{satisfait à la condition} (A) \underline{si et seulement si le groupe d'inertie en tout point de} $D \cap \check{X}$ \underline{agit non trivialement sur} $H^{n-1}(X_{\bar{\eta}},\mathbb{Q}_\ell)$.
+
+\underline{Théorème} 6.3. \underline{Sous les hypothèses de} 6.2, \underline{on a} :
+
+(6.3.1) \underline{Si} $n = \dim X$ \underline{est impair, la condition} (A) \underline{est vérifiée pour tout pinceau de Lefschetz pour} $X$.
+
+(6.3.2) \underline{Supposons que} $n = \dim X$ \underline{soit pair, ou que} $\mathrm{car}(k) \neq 2$. \underline{Alors les conditions suivantes sont équivalentes} :
+
+(i) $D$ \underline{ne satisfait pas à la condition} (A) (5.3.5)
+
+(ii) $\pi_1(D-D \cap \check{X})$ \underline{agit trivialement sur} $H^{n-1}(X_{\bar{\eta}},\mathbb{Q}_\ell)$, \underline{et} $D \cap \check{X} \neq \emptyset$.
+
+(iii) \underline{Il existe un point de} $D \cap \check{X}$ \underline{dont le groupe d'inertie agit trivialement sur} $H^{n-1}(X_{\bar{\eta}},\mathbb{Q}_\ell)$.
+
+(iv) \underline{Le faisceau} $R^{n-1}\rho_*\mathbb{Q}_\ell$ \underline{est un faisceau constant sur} $D$ \underline{et} $D \cap \check{X}$ \underline{est non vide}.
+
+(v) \underline{Le faisceau} $R^{n-1}\rho_*\mathbb{Q}_\ell|U$ \underline{est un faisceau constant sur} $U$ (\underline{où} $U$ \underline{est un ouvert non vide de} $D$ \underline{au-dessus duquel} $\rho$ \underline{soit lisse}), \underline{et} $\rho$ \underline{n'est pas lisse}.
+----- misprints recorded on page 319 -----
+[id 7II:546]
+WHERE: (6.3.2)(v), '(où U est un ouvert non vide D au-dessus duquel ...'
+PRINT: est un ouvert non vide D
+CORRECT: \underline{est un ouvert non vide de} $D$
+TEX BEFORE: \underline{est un ouvert non vide} $D$
+NOTE: The word 'de' is omitted. The TeX keeps the printed reading.
+
+=================== PAGE 320 ===================
+----- corrected edition, expose_XVIII_body.tex, page 320 -----
+%%%%%%%%%%  scan idx 327  |  folio 320  %%%%%%%%%%
+
+(6.3.3)  \underline{Si de plus} $X$ \underline{satisfait à la condition} (LV) (5.2.2), \underline{ces conditions} (i) -(v) \underline{sont aussi équivalentes à la condition} :
+
+(vi)  \underline{la flèche de restriction}
+
+\begin{equation*}
+H^{n-1}(X,\mathbb{Q}_\ell) \longrightarrow H^{n-1}(X_{\bar{\eta}},\mathbb{Q}_\ell)
+\end{equation*}
+\underline{est surjective} \underline{(donc un isomorphisme par} "\underline{le théorème de Lefschetz faible}").
+
+\underline{Démonstration.}  L'assertion 6.3.1  résulte de XV 3.4.
+
+Passons aux équivalences de 6.3.2 ; (i) $\Longleftrightarrow$ (iii) par 6.2, (ii) $\Longleftrightarrow$ (iii) par 6.1.6, (ii) $\Longleftrightarrow$ (v) par tautologie, et (iv) $\Longleftrightarrow$ (v) par 5.3.4. Enfin, si $X$ satisfait à la condition (LV), 5.6.10 donne l'équivalence (ii) $\Longleftrightarrow$ (vi), cqfd.
+
+\underline{Remarque} 6.3.4. On voit que la condition (A) ne \underline{dépend pas du choix du pinceau de Lefschetz} $D$, mais seulement de l'immersion (de Lefschetz) $i : X \longrightarrow \mathbb{P}^r$ envisagée. C'est en effet clair par (6.3.1) si $\dim X$ est impair, et si $\dim X$ est pair, la condition (A) signifie aussi que le système local sur $\mathbb{P}^r - \check{X}$ formé des $H^{n-1}(X \cap H_s, \mathbb{Q}_\ell)$ est constant, comme il résulte du critère (ii), et du fait que le système local envisagé est modérément ramifié en le point générique de $\check{X}$ et de la surjectivité (6.1.2).
+
+\underline{Corollaire} 6.4.  \underline{Sous les hypothèses de} 6.2, \underline{supposons que} ($n = \dim X$ \underline{soit pair}, \underline{ou que} $\mathrm{car}(k) \neq 2$) \underline{et que} $X$ \underline{satisfasse à la condition} (LV). \underline{Alors il existe un entier} $d_o$ \underline{tel que pour} $d \geq d_o$, \underline{tout pinceau de}
+----- misprints recorded on page 320 -----
+[id 7II:547]
+WHERE: Remarque 6.3.4, 'le système local sur P^r - X formé des H^{n-1}(X ∩ H_s, Q_ℓ)'
+PRINT: P^r - X (no check mark over X)
+CORRECT: \mathbb{P}^r - \check{X}
+TEX BEFORE: $\mathbb{P}^r - X$
+NOTE: The local system of the H^{n-1}(X ∩ H_s) lives on the complement of the dual variety X̌ in the (dual) P^r. The handwritten check is missing in the print. The TeX keeps the printed reading.
+
+=================== PAGE 321 ===================
+----- corrected edition, expose_XVIII_body.tex, page 321 -----
+%%%%%%%%%%  scan idx 328  |  folio 321  %%%%%%%%%%
+\underline{Lefschetz de sections de} $X$ \underline{par des hypersurfaces de degré} $d$ \underline{satisfait à la condition} (A).
+
+\underline{Démonstration.}  D'après l'équivalence (i) $\Longleftrightarrow$ (vi) de (6.3.2), il suffit de voir que, désignant par $Y(d)$ une section hypersurface lisse de $X$ de degré $d$, on a
+
+\begin{equation}\tag{6.4.1}
+\dim H^{n-1}(Y(d),\mathbb{Q}_\ell) \longrightarrow \infty \ \mbox{pour} \ d \longrightarrow \infty \qquad .
+\end{equation}
+En effet, on a le résultat précis suivant :
+
+\underline{Lemme} 6.4.2. \underline{Soit} $X$ \underline{une variété projective}, \underline{lisse}, \underline{et connexe de dimension} $n \geq 1$ \underline{sur un corps algébriquement clos} $k$, \underline{et désignons par} $Y(d)$ \underline{une section hypersurface de degré} $d$. \underline{Alors il existe un polynôme} $f(T) \in \mathbb{Z}[T]$ \underline{tel que}
+
+(6.4.2.1)  $f(T) = \deg(X)\ T^n +$ \underline{un polynôme de degré} $\leq n-1$
+
+(6.4.2.2)  \underline{pour} $d \geq 1$, $f(d) = \dim H^{n-1}(Y(d), \mathbb{Q}_\ell)$ \qquad .
+
+\underline{Démonstration.}  D'après (XVII 5.7.5), désignant par $C(X)$ la classe de Chern totale de $X$, et par $H$ la première classe de Chern d'un hyperplan, on a la formule suivante pour la caractéristique d'Euler-Poincaré de $Y(d)$
+
+\begin{equation}\tag{6.4.2.3}
+\chi(Y(d)) \;=\; \int\limits_X \frac{d\ H.C(X)}{1 + dH} \;=\; \sum_{i=1}^{n} \ (-1)^{i-1} d^i \ \int\limits_X H^i . C_{n-i} \qquad .
+\end{equation}
+----- misprints recorded on page 321 -----
+[id 7II:548]
+WHERE: first line of the page (end of the statement begun on p. 320)
+PRINT: Lefschetz de sectionsde X (no space between 'sections' and 'de'; the s appears typed into the space)
+CORRECT: \underline{Lefschetz de sections de}
+TEX BEFORE: \underline{Lefschetz de sectionsde}
+NOTE: Missing word space. The TeX keeps the printed reading (fix null).
+
+[id 7II:549]
+WHERE: formula (6.4.2.3), left-hand side
+PRINT: χ(Y(d)  =  (closing parenthesis missing)
+CORRECT: \chi(Y(d)) \;=\;
+TEX BEFORE: \chi(Y(d) \;=\;
+NOTE: Unbalanced parenthesis; (6.4.2.4) on p. 322 prints χ(Y(d)). The TeX keeps the printed reading (fix null).
+
+=================== PAGE 322 ===================
+----- corrected edition, expose_XVIII_body.tex, page 322 -----
+%%%%%%%%%%  scan idx 329  |  folio 322  %%%%%%%%%%
+
+On a, d'autre part, par dualité de Poincaré et Lefschetz faible
+
+\begin{equation}\tag{6.4.2.4}
+\chi(Y(d)) = (-1)^{n-1}\dim H^{n-1}(Y(d),\mathbb{Q}_\ell) + 2 \sum_{i \geq 1} (-1)^{n-1-i}\dim H^{n-1-i}(X,\mathbb{Q}_\ell).
+\end{equation}
+Mettant ensemble (6.4.2.3) et (6.4.2.4) donne le résultat voulu.
+
+
+6.5. \underline{Un rappel sur la formule de Picard-Lefschetz} (XV 3.4).
+
+Soient $S$ le spectre d'un anneau de valuation hensélien strict, $\eta$ son point générique, $\overline{\eta}$ un point géométrique au-dessus de $\eta$, et $s$ son point fermé. Soit
+
+\begin{equation*}
+\rho : X \longrightarrow S
+\end{equation*}
+un morphisme propre, avec $X$ un schéma régulier connexe de dimension $n$, tel que $\rho$ est \underline{lisse} en dehors d'un point $x$, point qui se trouve dans la fibre spéciale, et qui est une singularité quadratique ordinaire de la fibre spéciale.
+
+Désignons par $I$ le groupe d'inertie de $S$ en $s$. On sait (XV 3.4) que $I$ agit trivialement sur $H^i(X_{\overline{\eta}},\mathbb{Q}_\ell)$ pour $i \neq n-1$, et que son action sur $H^{n-1}(X_{\overline{\eta}},\mathbb{Q}_\ell)$ est donnée par les formules suivantes :
+
+6.5.1. \underline{Si} $n = 2m+1$, alors $I$ agit à travers un quotient isomorphe à $\mathbb{Z}/2\mathbb{Z}$ (NB. si car.$k \neq 2$, il y a \underline{un seul} tel quotient). Il existe un élément $\delta \in H^{n-1}(X_{\overline{\eta}},\mathbb{Q}_\ell(m))$, uniquement déterminé au signe près, qui s'appelle le \underline{cycle évanescent en le point} $s$, tel qu'on ait 
+----- misprints recorded on page 322 -----
+[id 7II:550]
+WHERE: 6.5, first sentence (line end after 'strict')
+PRINT: hensélien strict / η son point générique, (no comma after 'strict')
+CORRECT: strict, $\eta$ son point
+TEX BEFORE: strict $\eta$ son point
+NOTE: Missing comma in the enumeration 'S ..., η ..., η̄ ..., et s ...'; the following line is a pasted-in correction in lighter type. The TeX keeps the printed reading (fix null).
+
+=================== PAGE 323 ===================
+----- corrected edition, expose_XVIII_body.tex, page 323 -----
+%%%%%%%%%%  scan idx 330  |  folio 323  %%%%%%%%%%
+
+\begin{equation}\tag{6.5.1.1}
+ \delta.\delta = (-1)^m 2 \quad \text{dans} \quad H^{2n-2}(X_{\overline{\eta}},\mathbb{Q}_\ell(n-1)) \simeq \mathbb{Q}_\ell \, ,
+\end{equation}
+(6.5.1.2)\quad l'élément non trivial $\sigma$ de $\mathbb{Z}/2\mathbb{Z}$ agit sur $H^{n-1}(X_{\overline{\eta}},\mathbb{Q}_\ell)$ par la \underline{symétrie}
+
+\begin{equation*}
+\sigma x = x - (-1)^m (x\delta)\delta \, .
+\end{equation*}
+[L'élément $x.\delta$ est dans $H^{2n-2}(X_{\overline{\eta}},\mathbb{Q}_\ell(m)) \simeq \mathbb{Q}_\ell(-m)$, donc le produit $(x.\delta)\delta$ définit un élément de $H^{n-1}(X_{\overline{\eta}},\mathbb{Q}_\ell)$.]
+
+6.5.2. \underline{Si} $n = 2m + 2$, alors $I$ agit à travers son quotient canonique $\mathbb{Z}_\ell(1)$. Il existe un élément $\delta \in H^{n-1}(X_{\overline{\eta}},\mathbb{Q}_\ell(m))$, élément canoniquement déterminé au signe près et qui s'appelle le \underline{cycle évanescent en le point} $s$, tel que $\sigma \in \mathbb{Z}_\ell(1)$ agit sur $x \in H^{n-1}(X_{\overline{\eta}},\mathbb{Q}_\ell)$ par la \underline{transvection}
+
+\begin{equation}\tag{6.5.2.1}
+\sigma(x) = x - (-1)^m \sigma.(x.\delta)\delta \, .
+\end{equation}
+[Le produit $x.\delta$ est dans $H^{2n-2}(X_{\overline{\eta}},\mathbb{Q}_\ell(m)) \simeq \mathbb{Q}_\ell(-m-1)$, donc son produit par $\sigma \in \mathbb{Z}_\ell(1)$ définit un élément $\sigma.(x.\delta) \in \mathbb{Q}_\ell(-m)$, et cet élément, multiplié par $\delta \in H^{n-1}(X_{\overline{\eta}},\mathbb{Q}_\ell(m))$, donne l'élément $\sigma.(x.\delta)\delta \in H^{n-1}(X_{\overline{\eta}},\mathbb{Q}_\ell)$.]
+
+Reprenons le cas global :
+
+\underline{Théorème} 6.6. \underline{Soit} $X$ \underline{une variété projective lisse et connexe de dimension} $n$ \underline{sur un corps algébriquement clos} $k$. \underline{On suppose} $n$ \underline{pair ou} car $k \neq 2$. \underline{Soient} $D$ \underline{un pinceau de Lefschetz pour} $X$, $\eta$ \underline{son point générique}, $\overline{\eta}$ \underline{un}
+----- misprints recorded on page 323 -----
+[id 7II:551]
+WHERE: item label before 'l'élément non trivial σ de Z/2Z'
+PRINT: (6.5.2.2)
+CORRECT: (6.5.1.2)
+TEX BEFORE: (6.5.2.2)
+NOTE: Wrong formula number: the item belongs to 6.5.1 and follows (6.5.1.1); 6.5.2 begins later on the page and has only (6.5.2.1). The TeX keeps the printed reading (fix null).
+
+[id 7II:552]
+WHERE: item (6.5.2.2) [= 6.5.1.2], 'agit sur H^i(...)'
+PRINT: agit sur H^i(X_η̄,Q_ℓ) par la symétrie
+CORRECT: H^{n-1}(X_{\overline{\eta}}
+TEX BEFORE: H^i(X_{\overline{\eta}}
+NOTE: Wrong index: the symmetry σx = x - (-1)^m(xδ)δ is the action on H^{n-1} (I acts trivially on H^i for i ≠ n-1, p. 322; the bracket after it places (x.δ)δ in H^{n-1}). The TeX keeps the printed reading (fix null).
+
+[id 7II:553]
+WHERE: bracket after the symmetry formula, 'H^{2n-2}(X_η̄,Q_ℓ( m) ≃ Q_ℓ(-m)'
+PRINT: H^{2n-2}(X_η̄,Q_ℓ( m) ≃ Q_ℓ(-m) (closing parenthesis of H^{2n-2}(...) missing)
+CORRECT: \mathbb{Q}_\ell(m)) \simeq \mathbb{Q}_\ell(-m)$
+TEX BEFORE: \mathbb{Q}_\ell(m) \simeq \mathbb{Q}_\ell(-m)$
+NOTE: Unbalanced parenthesis. The TeX keeps the printed reading (fix null).
+
+[id 7II:554]
+WHERE: 6.5.2, 'Il existe un élément δ ∈ H^{n-1}(X_η̄,Q_ℓ(m) ,'
+PRINT: δ ∈ H^{n-1}(X_η̄,Q_ℓ(m) , élément canoniquement (closing parenthesis missing)
+CORRECT: \mathbb{Q}_\ell(m))$ , élément
+TEX BEFORE: \mathbb{Q}_\ell(m)$ , élément
+NOTE: Unbalanced parenthesis. The TeX keeps the printed reading (fix null).
+
+[id 7II:555]
+WHERE: 6.5.2, 'agit sur χ ∈ H^{n-1}(...)'
+PRINT: agit sur χ ∈ H^{n-1}(X_η̄,Q_ℓ) (Greek chi, same glyph as χ(Y(d)) on p. 321)
+CORRECT: agit sur $x \in
+TEX BEFORE: agit sur $\chi \in
+NOTE: Chi typed for the variable x, which (6.5.2.1) and the following bracket use. The TeX keeps the printed reading (fix null).
+
+[id 7II:556]
+WHERE: bracket after (6.5.2.1), 'H^{2n-2}(X_η̄,Q_ℓ(m) ≃ Q_ℓ(-m-1)'
+PRINT: H^{2n-2}(X_η̄,Q_ℓ(m) ≃ Q_ℓ(-m-1) (closing parenthesis of H^{2n-2}(...) missing)
+CORRECT: \mathbb{Q}_\ell(m)) \simeq \mathbb{Q}_\ell(-m-1)$
+TEX BEFORE: \mathbb{Q}_\ell(m) \simeq \mathbb{Q}_\ell(-m-1)$
+NOTE: Unbalanced parenthesis. The TeX keeps the printed reading (fix null).
+
+[id 7II:557]
+WHERE: bracket after (6.5.2.1), 'multiplié par δ ∈ H^{n-1}(X_η̄,Q_ℓ(m) donne'
+PRINT: δ ∈ H^{n-1}(X_η̄,Q_ℓ(m)   donne (closing parenthesis missing)
+CORRECT: \mathbb{Q}_\ell(m))$ donne
+TEX BEFORE: \mathbb{Q}_\ell(m)$ donne
+NOTE: Unbalanced parenthesis. The TeX keeps the printed reading (fix null).
+
+=================== PAGE 324 ===================
+----- corrected edition, expose_XVIII_body.tex, page 324 -----
+%%%%%%%%%%  scan idx 331  |  folio 324  %%%%%%%%%%
+\underline{point géométrique au-dessus de} $\eta$, \underline{et} $s_{1},\ldots,s_{N}$ \underline{les points de} $D \cap \check{X}$. \underline{Choisissons pour chaque} $i$ \underline{un isomorphisme} $\ell_{i}$ \underline{entre} $\bar{\eta}$ \underline{et le point générique géométrique de} $S_{i}$ = \underline{le hensélisé strict de} $D$ \underline{en} $s_{i}$, \underline{de sorte que le groupe} $I_{i}$ \underline{d'inertie en} $s_i$, \underline{identifié au moyen de} $\ell_i$, \underline{agisse sur} $H^{n-1}(X_{\bar{\eta}},\mathbb{Q}_{\ell}(j))$ \underline{et définisse le cycle évanescent} (6.5) \underline{en} $s_{i}$
+
+\begin{equation*}
+\delta_{i} \in H^{n-1}(X_{\bar\eta},\mathbb{Q}_{\ell}(m)), \qquad m \ = \ \left\{ \begin{array}{ll} \frac{n-1}{2} & \underline{\mbox{si}}\ n\ \underline{\mbox{impair}}, \\[2ex] \frac{n}{2} - 1 & \underline{\mbox{si}}\ n\ \underline{\mbox{pair}}. \end{array} \right.
+\end{equation*}
+\underline{On suppose les} $\ell_{i}$ \underline{choisis de telle façon que les} $I_{i} \subset \pi = \pi_{1}^{\mathrm{mod}}(D-D \cap \check{X},\bar{\eta})$ \underline{engendrent topologiquement le groupe} $\pi$ \underline{(ce qui est possible, en vertu de} SGA 1 XIII 2.10). \underline{Ceci posé}, \underline{on a} :
+
+6.6.1. \underline{Si} $X$ \underline{satisfait à la condition} (LV), \underline{l'espace de cohomologie évanescente} $E^{n-1}(X_{\bar{\eta}},\mathbb{Q}_{\ell}(m))$ ( $\stackrel{\mathrm{dfn}}{=}$ \underline{l'orthogonal de} $H^{n-1}(X,\mathbb{Q}_{\ell}(m))$ \underline{dans} $H^{n-1}(X_{\bar{\eta}},\mathbb{Q}_{\ell}(m))$, cf. 5.4.4) \underline{est engendré par les cycles évanescents} $\delta_{i}$, $i=1,\ldots,N$.
+
+6.6.2. \underline{Les cycles évanescents} $\delta_{i}$ \underline{sont conjugués, au signe près, sous le groupe de monodromie globale} $\pi_{1}(D - D \cap \check{X})$.
+
+\underline{Démonstration}. Pour prouver 6.6.1, notons que, par la formule de Picard-Lefschetz 6.5, on a, posant $\pi = \pi_{1}(D - D \cap \check{X})$, et grâce au fait que les $I_{i}$ engendrent $\pi$ :
+----- misprints recorded on page 324 -----
+[id 7II:558]
+WHERE: first paragraph, 'le groupe I_i d'inertie de δ_i en S_i'
+PRINT: le groupe I_i d'inertie de δ_i en S_i (handwritten δ_i after 'de', typed S_i after 'en')
+CORRECT: \underline{d'inertie de} $S_{i}$ \underline{en} $s_{i}$
+TEX BEFORE: \underline{d'inertie de} $\delta_{i}$ \underline{en} $S_{i}$
+NOTE: δ_i is a cohomology class and has no inertia group; 6.5 says 'le groupe d'inertie de S en s', and S_i is the strict henselization of D at s_i. Corrected reading follows 6.5. The TeX keeps the printed reading (fix null).
+
+[id 7II:559]
+WHERE: display giving δ_i and m, 'δ_i ∈ H^{n-1}(X,...'
+PRINT: δ_i ∈ H^{n-1}(X,Q_ℓ(m) (X without the subscript η̄)
+CORRECT: \delta_{i} \in H^{n-1}(X_{\bar{\eta}},
+TEX BEFORE: \delta_{i} \in H^{n-1}(X,
+NOTE: The vanishing cycles live in the cohomology of the geometric generic fibre (6.5; 6.6.1 has them generate E^{n-1}(X_η̄,Q_ℓ(m)) inside H^{n-1}(X_η̄,Q_ℓ(m))). Independent of the parenthesis finding on the same formula. The TeX keeps the printed reading (fix null).
+
+[id 7II:560]
+WHERE: display giving δ_i and m, 'Q_ℓ(m) , m ='
+PRINT: H^{n-1}(X,Q_ℓ(m) , m = (closing parenthesis missing)
+CORRECT: \mathbb{Q}_{\ell}(m)) \ , \ m
+TEX BEFORE: \mathbb{Q}_{\ell}(m) \ , \ m
+NOTE: Unbalanced parenthesis. The TeX keeps the printed reading (fix null).
+
+[id 7II:561]
+WHERE: 6.6.1, 'E^{n-1}(X_η̄,Q_ℓ(m) ( =dfn'
+PRINT: E^{n-1}(X_η̄,Q_ℓ(m) ( =dfn (closing parenthesis missing)
+CORRECT: E^{n-1}(X_{\bar{\eta}},\mathbb{Q}_{\ell}(m))$
+TEX BEFORE: E^{n-1}(X_{\bar{\eta}},\mathbb{Q}_{\ell}(m)$
+NOTE: Unbalanced parenthesis. The TeX keeps the printed reading (fix null).
+
+[id 7II:562]
+WHERE: 6.6.1, 'dans H^{n-1}(X_η̄,Q_ℓ(m), cf. 5.4.4)'
+PRINT: H^{n-1}(X_η̄,Q_ℓ(m), cf. 5.4.4) (closing parenthesis of H^{n-1}(...) missing)
+CORRECT: \mathbb{Q}_{\ell}(m))$, cf. 5.4.4)
+TEX BEFORE: \mathbb{Q}_{\ell}(m)$, cf. 5.4.4)
+NOTE: Unbalanced parenthesis. The TeX keeps the printed reading (fix null).
+
+=================== PAGE 325 ===================
+----- corrected edition, expose_XVIII_body.tex, page 325 -----
+%%%%%%%%%%  scan idx 332  |  folio 325  %%%%%%%%%%
+
+\begin{equation}\tag{6.6.3}
+\begin{array}{l} H^{n-1}(X_{\bar{\eta}},\mathbb{Q}_{\ell}(m))^{\pi} \ = \ \mbox{l'orthogonal dans } H^{n-1}(X_{\bar{\eta}},\mathbb{Q}_{\ell}(m)) \\[1.5ex] \hspace{7em} \mbox{du sous-espace engendré par les } \delta_{i} \ . \end{array}
+\end{equation}
+Par 5.6.10, on a
+
+\begin{equation}\tag{6.6.4}
+H^{n-1}(X_{\bar{\eta}},\mathbb{Q}_{\ell}(m))^{\pi} \ = \ \mathrm{Im}\bigl(H^{n-1}(X,\mathbb{Q}_{\ell}(m)) \longrightarrow H^{n-1}(X_{\bar\eta},\mathbb{Q}_{\ell}(m))\bigr) \qquad ,
+\end{equation}
+de sorte que prenant les orthogonaux des deux membres de (6.6.3), on trouve 6.6.1.
+
+Pour prouver 6.6.2, on remarque simplement que le cycle évanescent $\delta_{i}$ est déterminé au signe près par la représentation du groupe d'inertie en $s_{i}$. Donc on n'a qu'à appliquer 6.1.2, qui donne la conjugaison dans $\pi_{1}^{\mathrm{mod}}(\check{\mathbb{P}}^{r} - \check X,\bar{\eta})$ des homomorphismes d'inertie composés
+
+\begin{center}
+\begin{tikzcd}[column sep=huge, row sep=huge]
+\mathbb{Z}_{\ell}(1) \arrow[r] & \pi_{1}^{\mathrm{mod}}(D - D \cap \check{X},\ \bar{\eta}) \arrow[d] & {} \\
+{} & \pi_{1}^{\mathrm{mod}}(\check{\mathbb{P}}^{r} - \check{X},\bar{\eta}) & .
+\end{tikzcd}
+\end{center}
+% STRUCTURE: Three nodes, arranged as an L (two on the top row, one below the top-right node), plus one
+%   trailing punctuation cell. NODES: (N1) top-left = $\mathbb{Z}_{\ell}(1)$ (blackboard-bold Z,
+%   subscript script ell, argument (1)); (N2) top-right = $\pi_{1}^{\mathrm{mod}}(D - D \cap \check{X},\
+%   \bar{\eta})$ (pi with subscript 1 and superscript 'mod'; X carries a check/caron accent; eta carries
+%   a macron; note the space after the comma as printed); (N3) bottom, vertically below N2 =
+%   $\pi_{1}^{\mathrm{mod}}(\check{\mathbb{P}}^{r} - \check{X},\bar{\eta})$ (pi with subscript 1 and
+%   superscript 'mod'; the check accent sits over the blackboard-bold P, with r as a following
+%   superscript; X carries a check; eta carries a macron; no space after the comma as printed). ARROWS:
+%   (A1) N1 -> N2, horizontal, pointing RIGHT, plain single-headed long arrow, NO label, not hooked, not
+%   dashed, not iso, not two-headed; (A2) N2 -> N3, vertical, pointing DOWN, plain single-headed long
+%   arrow, NO label, not hooked, not dashed, not iso, not two-headed. There is NO arrow from N1 to N3
+%   and no diagonal, so the diagram is not a commuting triangle — it is a two-arrow composite path.
+%   PUNCTUATION: a full stop is printed on the bottom row, well to the right of N3 (rendered as a
+%   separate empty-column cell containing '.').
+Ceci donne la \underline{conjugaison} (à signe près) des cycles évanescents qu'ils déterminent, par des éléments de $\pi_{1}^{\mathrm{mod}}(\check{\mathbb{P}}^{r} - \check{X},\ \bar{\eta})$, et la démonstration s'achève par 6.1.1, qui donne la surjectivité de
+
+\begin{equation*}
+\pi_{1}^{\mathrm{mod}}(D - D \cap \check{X}) \longrightarrow \pi_{1}^{\mathrm{mod}}(\check{\mathbb{P}}^{r} - \check{X}) \qquad .
+\end{equation*}
+----- misprints recorded on page 325 -----
+[id 7II:563]
+WHERE: formula (6.6.3), left-hand side
+PRINT: H^{n-1}(X_η̄,Q_ℓ(m)^π (closing parenthesis missing; (6.6.4) prints (m))^π)
+CORRECT: \mathbb{Q}_{\ell}(m))^{\pi}
+TEX BEFORE: \mathbb{Q}_{\ell}(m)^{\pi}
+NOTE: Unbalanced parenthesis. The TeX keeps the printed reading (fix null).
+
+[id 7II:564]
+WHERE: formula (6.6.4), right-hand side
+PRINT: Im(H^{n-1}(X,Q_ℓ(i)))
+CORRECT: \mathbb{Q}_{\ell}(m)
+TEX BEFORE: \mathbb{Q}_{\ell}(i)
+NOTE: Wrong twist: both sides concern Q_ℓ(m) (left-hand side, (6.6.3) and 6.6.1); i is the index of s_i, δ_i. The TeX keeps the printed reading (fix null).
+
+[id 7II:565]
+WHERE: proof of 6.6.2, 'Donc on n'a qu'a appliquer 6.1.2'
+PRINT: on n'a qu'a appliquer (a without grave accent)
+CORRECT: qu'à appliquer
+TEX BEFORE: qu'a appliquer
+NOTE: Missing accent. The TeX keeps the printed reading (fix null).
+
+[id 7II:566]
+WHERE: proof of 6.6.2, 'la conjugaison dans π_1^mod(P^r - X,η̄)'
+PRINT: π_1^mod(P^r - X,η̄) with no check accents on P and X (the diagram and the next paragraph print P̌^r - X̌)
+CORRECT: (\check{\mathbb{P}}^{r} - \check{X},\bar{\eta})
+TEX BEFORE: (\mathbb{P}^{r} - X,\bar{\eta})
+NOTE: The hand-drawn checks were left off here; the same group appears with both checks in the diagram and in 'par des éléments de π_1^mod(P̌^r - X̌, η̄)'. The TeX keeps the printed reading (fix null).
+
+=================== PAGE 326 ===================
+----- corrected edition, expose_XVIII_body.tex, page 326 -----
+%%%%%%%%%%  scan idx 333  |  folio 326  %%%%%%%%%%
+
+\underline{Corollaire} 6.7. \underline{Sous les hypothèses de} 6.6, \underline{supposons que} $X$ \underline{satisfait à la condition} (LV). \underline{Alors} :
+
+6.7.1. \underline{La représentation de} $\pi_1(D - D \cap \check{X})$ \underline{sur} $E^{n-1}(X_{\bar{\eta}},\mathbb{Q}_\ell)$ \underline{est absolument irréductible.}
+
+6.7.2. \underline{Si} $n$ \underline{est pair,} \underline{tout sous-groupe d'indice fini dans} $\pi_1(D - D \cap \check{X})$ \underline{agit de façon absolument irréductible sur} $E^{n-1}(X_{\bar{\eta}},\mathbb{Q}_\ell)$.
+
+\underline{Démonstration.} On peut évidemment remplacer le module envisagé par le tordu $E = E^{n-1}(X_{\bar{\eta}},\mathbb{Q}_\ell(m))$. Soit $\overline{E} = E \otimes_{\mathbb{Q}_\ell} \overline{\mathbb{Q}}_\ell$ et soit $\chi$ un élément $\neq 0$ de $\overline{E}$. Pour démontrer 6.7.1, il faut prouver que le sous-espace $\overline{\mathbb{Q}}_\ell$-vectoriel de $\overline{E}$ engendré par $\chi$ et ses conjugués sous $\pi$ est $\overline{E}$ tout entier. D'après 6.6.1 et 6.6.2, il suffit de prouver que ce sous-espace contient \underline{un} des cycles évanescents $\delta_i$. Mais comme $X$ satisfait (LV), la restriction de la forme de cup-produit à $H^{n-1}(X,\mathbb{Q}_\ell(m)) \lhook\joinrel\relbar\joinrel\relbar H^{n-1}(X_{\bar{\eta}},\mathbb{Q}_\ell(m))$ est non dégénérée, donc aussi la restriction à l'orthogonal $E^{n-1}(X_{\bar{\eta}},\mathbb{Q}_\ell(m))$ ; par 6.6.1 il existe donc au moins une valeur de $i$ telle que l'on ait :
+
+\begin{equation*}
+\chi.\delta_i \neq 0 \quad .
+\end{equation*}
+Pour cet $i$, il existe par 6.5 un élément $\sigma_i$ du groupe d'inertie en $s_i$ tel que
+
+\begin{equation}\tag{6.7.3}
+\sigma_i(\chi) - \chi = \text{un multiple non nul de } \delta_i \ ,
+\end{equation}
+ce qui achève la démonstration de 6.7.1.
+----- misprints recorded on page 326 -----
+[id 7II:567]
+WHERE: Démonstration, l. 2: definition of the twisted module E
+PRINT: tordu E = E^{n-1}(X_η̄, Q_ℓ(m).  (only one closing parenthesis)
+CORRECT: $E = E^{n-1}(X_{\bar{\eta}},\mathbb{Q}_\ell(m))$
+TEX BEFORE: $E = E^{n-1}(X_{\bar{\eta}},\mathbb{Q}_\ell(m)$
+NOTE: The print omits the closing parenthesis. The TeX keeps the printed reading.
+
+[id 7II:568]
+WHERE: Démonstration: 'Mais comme χ satisfait (LV)'
+PRINT: Mais comme χ satisfait (LV)
+CORRECT: Mais comme $X$ satisfait (LV)
+TEX BEFORE: Mais comme $\chi$ satisfait (LV)
+NOTE: (LV) is the hypothesis on the variety X (Corollaire 6.7: 'X satisfait à la condition (LV)'), so χ is a typing error. The TeX keeps the print.
+
+[id 7II:569]
+WHERE: Démonstration: 'soit χ un élément ≠ 0 de Ē'
+PRINT: soit χ un élément ≠ 0 de Ē
+CORRECT: soit $x$ un élément
+TEX BEFORE: soit $\chi$ un élément
+NOTE: Every formula that follows calls this element x (x.δ_i ≠ 0, σ_i(x) − x, 6.7.4; on p. 327 an x is typed over a struck letter). The TeX keeps χ.
+
+[id 7II:570]
+WHERE: Démonstration: 'engendré par χ et ses conjugués'
+PRINT: engendré par χ et ses conjugués sous π
+CORRECT: engendré par $x$ et ses conjugués
+TEX BEFORE: engendré par $\chi$ et ses conjugués
+NOTE: Same element as above, called x in the formulas. The TeX keeps χ.
+
+=================== PAGE 327 ===================
+----- corrected edition, expose_XVIII_body.tex, page 327 -----
+%%%%%%%%%%  scan idx 334  |  folio 327  %%%%%%%%%%
+
+Quant à 6.7.2, on a $n-1$ impair, donc $\delta_i.\delta_i = 0$, et, pour toute puissance $k$-ième de $\sigma_i$, on a, en itérant 6.5.2,
+
+\begin{equation}\tag{6.7.4}
+\sigma_i^k(\chi) = \chi + k\,\sigma_i(\chi.\delta_i)\,\delta_i \quad .
+\end{equation}
+Donc un sous-espace $\mathbb{Q}_\ell$-vectoriel $M$ de $E$ est stable sous l'action de $\pi$ si et seulement il l'est sous un sous-groupe d'indice fini, car les deux conditions équivalent à la condition
+
+\begin{equation*}
+\chi \in M \implies \forall_i \text{ tel que le cup-produit } \chi.\delta_i \neq 0, \text{ alors } \delta_i \in M.
+\end{equation*}
+Donc on est ramené à l'énoncé 6.7.1 déjà prouvé.
+
+
+\underline{BIBLIOGRAPHIE}
+
+[1] P. DELIGNE. Théorème de Lefschetz et critères de dégénérescence de suites spectrales, Pub. Math. IHES 35, 1968, 259-278.
+
+[2] S. KLEIMAN. Algebraic cycles and the Weil conjectures, in Dix Exposés sur la cohomologie des schémas, North Holland, 1968.
+
+[3] S. LEFSCHETZ. L'analyse situs et la Géométrie Algébrique, Gauthier-Villars, Paris 1924.
+
+[4] D. LIEBERMAN. Higher Picard Varieties, Amer. J. Math, \underline{90} (4) 1968 p.1165-1199.
+
+[5] D. MUMFORD. non publié.
+
+[6] A. WEIL. Variétés Kählériennes, Hermann, Paris 1958.
+----- misprints recorded on page 327 -----
+[id 7II:571]
+WHERE: formula (6.7.4)
+PRINT: σ_i^k(x) =  X + k σ_i(x.δ_i) δ_i
+CORRECT: \sigma_i^k(x) = \ \ x + k
+TEX BEFORE: \sigma_i^k(x) = \ \ X + k
+NOTE: A capital X stands for the element x. The TeX keeps the printed X.
+
+[id 7II:572]
+WHERE: after (6.7.4): 'si et seulement il l'est'
+PRINT: si et seulement / il l'est sous un sous-groupe d'indice fini
+CORRECT: si et seulement s'il l'est
+TEX BEFORE: si et seulement il l'est
+NOTE: The print drops the 'si'/'s''. The TeX keeps the printed reading.
+
+[id 7II:573]
+WHERE: Bibliographie [3]
+PRINT: Gauthiers-Villars, Paris 1924.
+CORRECT: Gauthier-Villars
+TEX BEFORE: Gauthiers-Villars
+NOTE: The publisher is Gauthier-Villars. The TeX keeps the print.
+
+[id 7II:574]
+WHERE: Bibliographie [4] (Lieberman)
+PRINT: Amer. J. Math, 15 (4) 1968 p.1165-1199.  (15 underlined)
+CORRECT: \underline{90} (4) 1968
+TEX BEFORE: \underline{15} (4) 1968
+NOTE: Lieberman, Higher Picard varieties, is in Amer. J. Math. vol. 90, no. 4 (1968), 1165–1199. The print's volume number is wrong; the TeX keeps it.
+
+=================== PAGE 329 ===================
+----- corrected edition, expose_XIX_body.tex, page 329 -----
+%%%%%%%%%%  scan idx 336  |  folio 329  %%%%%%%%%%
+
+\begin{equation}\tag{1.2.1}
+ \mathrm{Pic}\ (\mathbb{P}^{2+d}) = \mathbb{Z} \overset{\sim}{\longrightarrow} \mathrm{Pic}(V)\ .
+\end{equation}
+Si $C$ est une courbe tracée sur $V$ , (1.2.1) implique que $\mathcal{O}(C) \simeq \mathcal{O}(n)$ pour $n$ convenable; si $H$ est une section hyperplane, $n = (\Pi\ a_i)^{-1}.(C, H) > 0$ . Il reste à prouver que le système linéaire induit sur $V$ par $|n\ H|$ est complet. Ecrivons $V$ comme intersection d'hypersurfaces $H_i$ de degré $a_i$ et soit $V_i = H_1 \cap \ldots \cap H_i$ . On vérifie par récurrence sur $i$ que le système linéaire induit par $|n\ H|$ sur $V_i$ est complet: dans la suite exacte
+
+\begin{equation*}
+H^0(V_i,\ \mathcal{O}(n)) \longrightarrow H^0(V_{i+1},\ \mathcal{O}(n)) \longrightarrow H^1(V_i,\ \mathcal{O}(n - a_{i+1}))\ ,
+\end{equation*}
+le dernier groupe est nul (FAC) .
+
+\underline{Théorème} 1.3 \qquad \underline{Soit} $V \subset \mathbb{P}^{2n+d}$ \underline{une intersection complète de dimension paire} $2n \neq 0$ \underline{et de multidegré} $\underline{a}$ \underline{générique.} \underline{On suppose vérifiée l'une des conditions suivantes}
+
+(a) \quad $k$ \underline{n'est pas de caractéristique} $2$ , \underline{et} $(2n; \underline{a})$ \underline{est distinct de} $(2n; 2)$, $(2n; 2, 2)$ , $(2; 3)$ .
+
+(b) \quad \underline{le nombre de Hodge} $h^{2n,0}$ \underline{est non nul,} \underline{i.e.} $\Sigma\ (a_i-1) > 2n$ .
+
+\underline{Alors, toute classe de cohomologie algébrique dans} $H^{2n}(V,\ \mathbb{Q}_\ell(n))$ \underline{est un multiple rationnel de la classe} $\eta^n$ \underline{des sections linéaires.}
+
+Déduisons 1.2.1 de 1.3. Les cas d'exceptions dans 1.2 sont exactement ceux pour lesquels $\Sigma(a_i -1) \leq 2$ ; on peut donc appliquer 1.3 (b) à la surface $V$ de 1.2. On sait que $\mathrm{Pic}^{\tau}(V) = 0$ (XI 1.8); donc que $\mathrm{Pic}(V)$ s'injecte dans $H^2(V,\ \mathbb{Q}_\ell(1))$ . D'après 1.3, tout élément de $\mathrm{Pic}(V)$ est un multiple rationnel de la classe $\eta$ de $\mathcal{O}(1)$ , et on conclut par (XI 1.8).
+
+Il est clair que la validité de 1.2 et 1.3 ne dépend pas de l'intersection complète générique choisie, mais seulement de $p, n$ et $\underline{a}$ .
+----- misprints recorded on page 329 -----
+[id 7II:575]
+WHERE: 'Déduisons 1.2.1 de 1.3': condition for the exceptional cases
+PRINT: pour lesquels Σ(d_i -1) ≤ 2
+CORRECT: $\Sigma(a_i -1) \leq 2$
+TEX BEFORE: $\Sigma(d_i -1) \leq 2$
+NOTE: The multidegree is a = (a_i); d is the codimension, cf. 1.3(b) Σ(a_i−1) > 2n. The TeX keeps the printed d_i.
+
+=================== PAGE 331 ===================
+----- corrected edition, expose_XIX_body.tex, page 331 -----
+%%%%%%%%%%  scan idx 338  |  folio 331  %%%%%%%%%%
+
+\underline{Corollaire} 1.5 \quad \underline{Soit} $V \subset \mathbb{P}^{2n+d}$ \underline{une intersection complète de dimension paire} $2n$ \underline{et de multidegré} $\underline{a}$ \underline{générique. On a soit}
+
+(a) \underline{Toute classe de cohomologie algébrique dans} $H^{2n}(V, \mathbb{Q}_\ell(n))$ \underline{est multiple rationnel de} $\eta^n$ .
+
+(b) $H^{2n}(V, \mathbb{Q}_\ell(n))$ \underline{est engendré par des classes de cohomologie algébrique.}
+
+\underline{Si} (b) \underline{est vérifié, pour} toute \underline{intersection complète de dimension} $2n$ \underline{et multidegré} $\underline{a}$ \underline{sur un corps algébriquement clos de caractéristique} $p$ , $H^{2n}(V, \mathbb{Q}_\ell(n))$ \underline{est engendré par les classes algébriques.}
+
+On applique 1.4 pour $X$ une intersection complète de dimension $2n+1$ et de multidegré $(a_1 \ldots a_{d-1})$ générique et pour $\ell$ un pinceau générique de sections de $X$ par des hypersurfaces de degré $a_d$ (cf. XVII 2.4). En fait, on pourrait aussi prendre $X$ de multidegré $(a_1 \ldots a_d)$ et $\ell$ un pinceau générique de sections hyperplanes. La remarque finale résulte de ce qu'une classe de cohomologie algébrique reste algébrique par spécialisation.
+
+
+\underline{2. Complément à XVIII}
+
+\underline{Proposition} 2.1 \quad \underline{Soient} $X \subset \mathbb{P}$ \underline{une variété projective lisse purement de dimension impaire} $2n+1$ \underline{sur un corps algébriquement clos} $k$ , \underline{et} $\ell \subset \check{\mathbb{P}}$ \underline{un pinceau de Lefschetz générique de sections hyperplanes de} $X$ . \underline{Soient} $s$ \underline{un point géométrique de} $\ell$ , $H_s$ \underline{la section hyperplane correspondante,} $S \subset \ell$ \underline{l'ensemble des valeurs exceptionnelles du pinceau et} $\pi_1(\ell - S, s)$ \underline{le groupe de monodromie.}
+
+\underline{On suppose que} $X$ \underline{vérifie} (LV) .
+
+\underline{Alors, la représentation de} $\pi_1(\ell - S, s)$ \underline{sur la cohomologie évanescente} $\mathrm{Ev}(H_s, \mathbb{Q}_\ell) \subset H^{2n}(H_s, \mathbb{Q}_\ell)$ \underline{est absolument irréductible.}
+
+Rappelons que $\mathrm{Ev}(H_s, \mathbb{Q}_\ell)$ est l'orthogonal de l'image de $H^{2n}(X, \mathbb{Q}_\ell)$ dans $H^{2n}(H_s, \mathbb{Q}_\ell)$ , image égale au sous-groupe des invariants sous le groupe de monodromie (XVIII 5.6.10).
+----- misprints recorded on page 331 -----
+[id 7II:576]
+WHERE: Proposition 2.1, first line: 'purement de dimension paire 2n'
+PRINT: purement de dimension paire 2n
+CORRECT: \underline{une variété projective lisse purement de dimension impaire} $2n+1$
+TEX BEFORE: \underline{une variété projective lisse purement de dimension paire} $2n$
+NOTE: The TeX keeps the printed reading. Ev(H_s) ⊂ H^{2n}(H_s) needs dim H_s = 2n, so dim X = 2n+1. 1.5 applies the result to X of dimension 2n+1, and Remarque 2.2 says 'Le même résultat vaut pour X de dimension paire'. This is an authorial slip; the editor should decide.
+
+=================== PAGE 332 ===================
+----- corrected edition, expose_XIX_body.tex, page 332 -----
+%%%%%%%%%%  scan idx 339  |  folio 332  %%%%%%%%%%
+
+La droite projective $\mathbb{P}^1$ est simplement connexe. Le groupe $\pi_1(\ell - S, s)$ est donc (topologiquement) engendré par les sous-groupes d'inertie en les points de $S$ - et leurs conjugués. Son image dans $\mathrm{GL}(H^{2n}(H_s, \mathbb{Q}_\ell))$ est donc (topologiquement) engendrée par les $x \longrightarrow x - (-1)^n(x\ \delta)\delta$ , pour $\delta$ conjugué à un cycle évanescent. L'image de $H^{2n}(X, \mathbb{Q}_\ell)$ dans $H^{2n}(H_s, \mathbb{Q}_\ell)$ est donc l'orthogonal du sous-espace engendré par les cycles évanescents et leur conjugués: $\mathrm{Ev}(H_s, \mathbb{Q}_\ell)$ est engendré par les cycles évanescents et leur conjugués.
+
+Pour un pinceau de Lefschetz \underline{générique} , les arguments du n° 6 de XVIII montrent encore que les cycles évanescents $\delta$ relatifs aux différents points de $S$ sont conjugués entre eux.
+
+Soit $V \subset \mathrm{Ev}(H_s, \mathbb{Q}_\ell)$ un sous-espace invariant $\neq 0$ . Il existe un conjugué $\delta$ d'un cycle évanescent et $v \in V$ tels que $(v, \delta) \neq 0$ (c'est ici qu'on utilise (LV)). Puisque $v - (-1)^n(v\ \delta)\delta \in V$ , on a $\delta \in V$ . Le sous-espace $V$ , contenant un cycle évanescent (et tous ses conjugués) coïncide avec $\mathrm{Ev}(H_s, \mathbb{Q}_\ell)$ .
+
+Cet argument reste valable après extension du corps de coefficients $\mathbb{Q}_\ell$ , d'où l'absolue irréductibilité.
+
+\underline{Remarque} 2.2 \quad Lorsqu'on omet l'hypothèse (LV) , les arguments qui précèdent prouvent encore que tout sous-espace invariant de $H^{2n}(H_s, \mathbb{Q}_\ell)$ contient $\mathrm{Ev}(H_s, \mathbb{Q}_\ell)$ ou est contenu dans l'image de $H^{2n}(X, \mathbb{Q}_\ell)$ . Le même résultat vaut pour $X$ de dimension paire (et tout pinceau de Lefschetz).
+
+
+\underline{3. Preuve de 1.3}
+
+3.1 \quad Il s'agit de prouver que, sous les hypothèses du théorème, 1.5 (b) n'est pas vérifié. Le cas où $h^{0,2n} \neq 0$ sera traité par Katz en XXI 4.1 (la condition $h^{0,2n} \neq 0$ équivaut à $\Sigma\, a_i - (2n + r + 1) \geq 0$ , ce nombre étant l'entier $m$ tel que $\Omega^{2n}_V \simeq \mathcal{O}(m)$ ). Les résultats du présent exposé ne serviront plus dans la suite du séminaire, de sorte qu'il n'y a pas de cercle vicieux.
+----- misprints recorded on page 332 -----
+[id 7II:577]
+WHERE: first paragraph, 'Son image dans GL(H^n(H_s, Q_l))'
+PRINT: GL(H^n(H_s, Q_l))
+CORRECT: $\mathrm{GL}(H^{2n}(H_s, \mathbb{Q}_\ell))$
+TEX BEFORE: $\mathrm{GL}(H^n(H_s, \mathbb{Q}_\ell))$
+NOTE: The TeX keeps the printed H^n. The monodromy acts on H^{2n}(H_s), as everywhere else in the text.
+
+[id 7II:578]
+WHERE: paragraph 'Soit V ⊂ Ev(H_s, Q_l)...', 'Puisque v - (-1)^m(v δ)δ ∈ V'
+PRINT: (-1)^m
+CORRECT: $v - (-1)^n(v\ \delta)\delta \in V$
+TEX BEFORE: $v - (-1)^m(v\ \delta)\delta \in V$
+NOTE: The TeX keeps the printed m. The reflection is x -> x - (-1)^n(x δ)δ, as two paragraphs above.
+
+[id 7II:579]
+WHERE: first paragraph, 'les cycles évanescents et leur conjugués: Ev(H_s, Q_l)'
+PRINT: leur conjugués:
+CORRECT: leurs conjugués
+TEX BEFORE: leur conjugués:
+NOTE: The TeX keeps the printed reading. The same paragraph has 'et leurs conjugués' earlier.
+
+[id 7II:580]
+WHERE: first paragraph, end: 'est engendré par les cycles évanescents et leur conjugués.'
+PRINT: leur conjugués.
+CORRECT: leurs conjugués
+TEX BEFORE: leur conjugués.
+NOTE: The TeX keeps the printed reading.
+
+[id 7II:581]
+WHERE: 3.1, 'Les résultats du présent exposé ne servirons plus'
+PRINT: servirons
+CORRECT: serviront
+TEX BEFORE: servirons
+NOTE: The TeX keeps the printed reading.
+
+[id 7II:582]
+WHERE: 3.1, 'dans la suite de séminaire'
+PRINT: la suite de séminaire
+CORRECT: la suite du séminaire
+TEX BEFORE: la suite de séminaire
+NOTE: The TeX keeps the printed reading.
+
+=================== PAGE 333 ===================
+----- corrected edition, expose_XIX_body.tex, page 333 -----
+%%%%%%%%%%  scan idx 340  |  folio 333  %%%%%%%%%%
+
+3.2 \quad Lorsque $k = \mathbb{C}$ , on démontre 1.3 en notant que si 1.5 (b) est vérifié, la cohomologie de $V$ est purement de type $(n,n)$ , la cohomologie algébrique étant de type $(n,n)$ . Ceci n'est le cas que dans les cas exceptionnels exclus de 1.3 (XI 2.9). Par le principe de Lefschetz, 1.3 est donc vrai en caractéristique $0$ .
+
+\underline{Proposition} 3.3 \quad \underline{Plaçons-nous sous les hypothèses de} 1.4, \underline{et supposons} (b) \underline{vérifié.} \underline{Soit} $\mathrm{Ev}(V, \mathbb{Q})$ \underline{le} $\mathbb{Q}$\underline{-sous-espace vectoriel de} $\mathrm{Ev}(V, \mathbb{Q}_\ell(n))$ \underline{engendré par les classes de cohomologie algébrique.}
+
+(a) \underline{On a} $\mathrm{Ev}(V, \mathbb{Q}) \otimes \mathbb{Q}_\ell \stackrel{\sim}{\longrightarrow} \mathrm{Ev}(V, \mathbb{Q}_\ell(n))$ . \underline{Sur} $\mathrm{Ev}(V, \mathbb{Q})$ , \underline{la forme d'intersection est rationnelle définie, de signe} $(-1)^n$ .
+
+(b) \underline{Les cycles évanescents et leurs conjugués sont dans} $\mathrm{Ev}(V, \mathbb{Q})$ ; \underline{ils y forment un système de racines irréductible de type} A, D \underline{ou} E .
+
+(c) \underline{Le groupe de monodromie (image de} $\pi_1(\ell - S, \bar{s})$ \underline{dans} $\mathrm{GL}(\mathrm{Ev}(V, \mathbb{Q}))$ ) \underline{est fini; c'est le groupe de Weyl du système de racines} (b) .
+
+Sauf le caractère défini de la forme d'intersection, (a) résulte de ce que la forme d'intersection est non dégénérée sur $\mathrm{Ev}(V, \mathbb{Q}_\ell(n))$ (par (LV)) et rationnelle sur $\mathrm{Ev}(V, \mathbb{Q})$ .
+
+La condition 1.4 (b) équivaut à dire qu'il existe sur $V$ des cycles algébriques modulo équivalence numérique non invariants par la monodromie. Cette condition est donc indépendante de $\ell$ . Soit $x$ un tel cycle algébrique, et $\delta$ le cycle évanescent relatif à $s_o \in S$ et à un chemin ch de $\bar{s}$ (définissant $V$ ) à $s_o$ . Pour ch convenable, $(x\ \delta) \neq 0$ . Le transformé galoisien $\sigma(x) = x-(-1)^n(x\delta)\delta$ de $x$ est encore algébrique; $(x\delta)\delta$ est donc algébrique, image d'un cycle $y$ indépendant de $\ell$ . Le nombre rationnel $\frac{(-1)^n}{2}(y, y) = (x\delta)^2$ est donc indépendant de $\ell$ ; c'est un carré dans tous les corps $\mathbb{Q}_\ell$ , donc un carré, et $\pm (x, \delta)$ est dans $\mathbb{Q}$ et indépendant de $\ell$ . Ceci montre non seulement que $\delta \in \mathrm{Ev}(V, \mathbb{Q})$ , mais encore que le cycle algébrique modulo équivalence numérique $\pm\, \delta = (\sigma(x) -x)/(x, \delta)$ , est indépendant de $\ell$ .
+----- misprints recorded on page 333 -----
+[id 7II:583]
+WHERE: 3.2, last sentence 'vrai en caractérisitque 0'
+PRINT: caractérisitque
+CORRECT: caractéristique
+TEX BEFORE: caractérisitque
+NOTE: The TeX keeps the printed typo.
+
+[id 7II:584]
+WHERE: Proposition 3.3 (b), 'Les cycles évanescents et leur conjugués sont dans'
+PRINT: leur conjugués
+CORRECT: leurs conjugués
+TEX BEFORE: \underline{Les cycles évanescents et leur conjugués sont dans}
+NOTE: The TeX keeps the printed reading.
+
+[id 7II:585]
+WHERE: Proposition 3.3 (b), 'un système de racine irréductible'
+PRINT: système de racine irréductible
+CORRECT: système de racines irréductible
+TEX BEFORE: système de racine irréductible
+NOTE: The TeX keeps the printed reading. Item (c) of the same proposition has 'système de racines'.
+
+=================== PAGE 334 ===================
+----- corrected edition, expose_XIX_body.tex, page 334 -----
+%%%%%%%%%%  scan idx 341  |  folio 334  %%%%%%%%%%
+
+Un cycle algébrique sur une variété $V$ est toujours défini sur une extension finie de tout corps de définition de $V$ . Il en résulte que $\pi_1(\ell - S, s)$ agit sur $\mathrm{Ev}(V, \mathbb{Q})$ via un groupe fini. Ce groupe est engendré par les réflexions associées aux cycles évanescents $\delta$ et leurs conjugués (XVIII 6.6.1 et n$^\circ$ 2). Les $\delta$ et leurs conjugués forment donc un système de racines ayant pour groupe de Weyl le groupe de monodromie. De plus, toutes les racines de ce système de racines sont conjuguées sous le groupe de Weyl : il est de type $A$, $D$ ou $E$ .
+
+La forme d'intersection est, à un facteur près, l'unique forme invariante sous le groupe de Weyl. Elle est donc définie. Son signe se détermine en calculant
+
+\begin{equation*}
+(\delta, \delta) = (-1)^n . 2 \quad .
+\end{equation*}
+\underline{Proposition} 3.4 \quad \underline{Si} $k = \mathbb{C}$ , \underline{et sous les hypothèses de} 1.4, \underline{les conditions suivantes sont équivalentes}
+
+(i) \underline{le groupe de monodromie est fini};
+
+(ii) \underline{la cohomologie évanescente} $\mathrm{Ev}(V)$ \underline{est purement de type} $(n, n)$ .
+
+Soit $\widetilde{X} \longrightarrow \ell$ le fibré de fibres les sections hyperplanes appartenant au pinceau $\ell$ , et $V_s$ la fibre en $s \in \ell(\mathbb{C})$ . Les $\mathrm{Ev}(V_s)$ forment une variation algébrique de structures de Hodge sur $\ell$ . D'après le théorème de la partie fixe [2] 4.1.2 appliqué à un revêtement fini de $\ell$ (cf. [2] 4.1.3.3), (i) implique que la structure de Hodge des $\mathrm{Ev}(V_s)$ est localement constante. Le groupe de monodromie agit donc par automorphismes de la structure de Hodge. Pour $T$ une transformation de Picard-Lefschetz, $\mathrm{Im}(T-1)$ est une sous-structure de Hodge de rang un, donc de type $(n, n)$ , engendrée par un cycle évanescent $\delta$ . Les cycles évanescents étant de type $(n, n)$ , $\mathrm{Ev}(V_s)$ tout entier l'est.
+
+Réciproquement, si $\mathrm{Ev}(V)$ est purement de type $(n, n)$ , la forme d'intersection sur $\mathrm{Ev}(V)$ est définie et le groupe de monodromie fini (cf. [2] 4.1.3.3).
+----- misprints recorded on page 334 -----
+[id 7II:586]
+WHERE: first paragraph, 'cycles évanescents δ et leur conjugués (XVIII 6.6.1 et n° 2)'
+PRINT: leur conjugués
+CORRECT: leurs conjugués
+TEX BEFORE: $\delta$ et leur conjugués (XVIII 6.6.1
+NOTE: The TeX keeps the printed reading.
+
+[id 7II:587]
+WHERE: first paragraph, 'Les δ et leur conjugués forment donc'
+PRINT: leur conjugués
+CORRECT: leurs conjugués
+TEX BEFORE: Les $\delta$ et leur conjugués forment
+NOTE: The TeX keeps the printed reading.
+
+=================== PAGE 335 ===================
+----- corrected edition, expose_XIX_body.tex, page 335 -----
+%%%%%%%%%%  scan idx 342  |  folio 335  %%%%%%%%%%
+
+\underline{Remarque} 3.5 \quad Si les conditions équivalentes de 3.3 sont vérifiées, on voit comme en 3.3 que les cycles évanescents (et leurs conjugués) forment un système de racines de type $A$, $D$ ou $E$ dont le groupe de monodromie est le groupe de Weyl.
+
+3.6. \quad Prouvons 1.3 pour $k$ de caractéristique finie $\neq 2$ . Soient $S = \mathrm{Spec}(V)$ le spectre d'un anneau de valuation discrète d'inégale caractéristique de corps résiduel $k$ , et $X \subset \mathbb{P}^{2n+d}_S$ une intersection complète de dimension relative $2n+1$ et de multidegré $(a_1 \ldots a_{d-1})$ sur $S$ . Soit $\ell$ un pinceau de Lefschetz de sections hypersurfaces de degré $a_d$ de $X$ (en fibre spéciale, $\ell_s$ est un pinceau de Lefschetz pour $X_s$ ). Soit $f : \widetilde{X} \longrightarrow \ell \simeq \mathbb{P}^1_S$ le fibré de fibres les sections du pinceau. Le lieu exceptionnel $T \subset \ell$ est étale sur $S$ (XVII 6; on utilise ici que $p \neq 2$ ). Le faisceau $R^{2n} f_* \mathbb{Q}_\ell$ est localement constant sur $\ell - T$ ; il est donc modérément ramifié et sa monodromie est la même en caractéristique $p$ et en caractéristique $0$. Si 1.5 (b) est vérifié, on déduit donc de 3.3 (c) et 3.4 que le groupe de cohomologie $H^{2n}(V)$ des intersections complètes \underline{complexes} de dimension $2n$ et multidegré \underline{$a$} est purement de type $(n, n)$ , ce qui n'arrive que dans les cas exclus par 1.3 (XI 2.9).
+
+
+\underline{4. Deuxième complément à XVIII}
+
+Dans ce numéro, nous travaillons sur $\mathbb{C}$ et en cohomologie entière (transcendante). Nous reprenons, avec des méthodes plus proches de celles de Lefschetz, certains des résultats de XVIII. Dans XVIII, ils n'étaient prouvés qu'après tensorisation avec $\mathbb{Q}$ (ou plutôt $\mathbb{Q}_\ell$ , ce qui revient au même).
+
+4.1 \quad Soient $X \subset \mathbb{P}$ une variété projective complexe lisse purement de dimension $n + 1$ et $\ell$ un pinceau de Lefschetz de sections hyperplanes de $X$ , d'axe $A$ . On désigne aussi par $\ell$ l'espace des paramètres du pinceau, isomorphe à $\mathbb{P}^1$ . Soit $S \subset \ell$ l'ensemble des valeurs exceptionnelles. Pour $s \in \ell$ , on notera $H_s$ la section hyperplane correspondante de $X$ (de dimension $n$).
+----- misprints recorded on page 335 -----
+[id 7II:588]
+WHERE: Remarque 3.5, 'Si les conditions équivalentes de 3.3 sont vérifiées'
+PRINT: conditions équivalentes de 3.3
+CORRECT: conditions équivalentes de 3.4
+TEX BEFORE: conditions équivalentes de 3.3
+NOTE: The TeX keeps the printed reading. The equivalent conditions (i), (ii) are those of Proposition 3.4; the following 'comme en 3.3' is correct.
+
+[id 7II:589]
+WHERE: section 4, first paragraph, '(on plutôt Q_l, ce qui revient au même)'
+PRINT: on plutôt
+CORRECT: (ou plutôt
+TEX BEFORE: (on plutôt
+NOTE: The TeX keeps the printed typo.
+

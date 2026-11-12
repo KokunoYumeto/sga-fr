@@ -1,0 +1,175 @@
+{
+  "findings": [
+    {
+      "page": 106,
+      "where": "First paragraph, definition of the associated simple complex",
+      "scan": "complexe simple associé",
+      "tex": "\\emph{complexe simples associé}",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "\\emph{complexe simples associé}",
+        "new": "\\emph{complexe simple associé}"
+      },
+      "note": "The print has singular « simple », without the final s."
+    },
+    {
+      "page": 106,
+      "where": "First paragraph, Tôhoku reference",
+      "scan": "Tohokû",
+      "tex": "\\sisi{Tohokû}{Tôhoku}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Tôhoku",
+      "note": "The print misplaces the circumflex. The TeX records the printed spelling in the first argument of \\sisi and corrects it in the second."
+    },
+    {
+      "page": 106,
+      "where": "2.3.3, sentence beginning « Tout objet F »",
+      "scan": "\\Mod(\\Ysheaf{\\Gamma}(S \\times D, \\mathcal{O}_S), \\mathcal{O}_S)",
+      "tex": "\\Mod(\\Ysheaf{\\Gamma}(S \\times D),\n\\mathcal{O}_S)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Mod(\\Ysheaf{\\Gamma}(S \\times D), \\mathcal{O}_S)",
+      "note": "The print erroneously repeats the coefficient ring inside the argument of Γ. The TeX silently corrects this; compare the domain in (2.3.3.1)."
+    },
+    {
+      "page": 106,
+      "where": "Immediately after (2.3.3.1)",
+      "scan": "De plus, il résulte de (2.3.2.2)",
+      "tex": "qui préserve les quasi-isomorphismes. De plus, il résulte de",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "qui préserve les quasi-isomorphismes. De plus, il résulte de",
+        "new": "De plus, il résulte de"
+      },
+      "note": "The print proceeds directly from the displayed formula to « De plus »; the intervening assertion is added in the TeX."
+    },
+    {
+      "page": 107,
+      "where": "Proposition 2.3.5, augmented complex",
+      "scan": "Z^n \\to Z^{n-1} \\ldots Z^1 \\to Z^0 \\xrightarrow{t} \\ZZ",
+      "tex": "\\ldots Z^n \\to Z^{n - 1}\\to \\ldots Z^{1} \\to Z^0 \\xrightarrow{t} \\ZZ",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\ldots Z^n \\to Z^{n - 1}\\to \\ldots Z^{1}",
+        "new": "Z^n \\to Z^{n - 1} \\ldots Z^{1}"
+      },
+      "note": "The print has neither an initial ellipsis nor an arrow between Z^{n-1} and the following ellipsis."
+    },
+    {
+      "page": 107,
+      "where": "Proposition 2.3.5, immediately after the augmented complex",
+      "scan": "définisse une résolution de",
+      "tex": "définit une résolution de",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "définit une résolution de $\\ZZ$.",
+        "new": "définisse une résolution de $\\ZZ$."
+      },
+      "note": "The print uses the subjunctive « définisse »."
+    },
+    {
+      "page": 108,
+      "where": "Opening display, conclusion of Proposition 2.3.5",
+      "scan": "G \\circ K^+(\\varepsilon_\\ast)(F^{\\bigdot})",
+      "tex": "G \\circ K^+(\\varepsilon_\\ast)(F^{\\bigdot})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "j(F^{\\bigdot}) : Q \\circ K^+(\\varepsilon_\\ast)(F^{\\bigdot}) \\to (\\RR^+ \\varepsilon_{Z^{\\bigdot}\\ast} \\circ Q)(F^{\\bigdot})",
+      "note": "The printed G should be Q, the canonical functor used in (2.3.4.3) and defined in the preceding page's footnote. The TeX keeps the misprint."
+    },
+    {
+      "page": 108,
+      "where": "(2.3.5.3), term containing Z in degree zero",
+      "scan": "\\Hom_{\\Add(D)}(Z^{\\circ}, i)",
+      "tex": "\\Hom_{\\Add(D)}(Z^{\\circ}, [i])",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hom(\\Hom_{\\Add(D)}(Z^{\\circ}, [i]),",
+        "new": "\\Hom(\\Hom_{\\Add(D)}(Z^{\\circ}, i),"
+      },
+      "note": "The print has i without square brackets."
+    },
+    {
+      "page": 108,
+      "where": "(2.3.5.3), term containing Z^1",
+      "scan": "\\Hom_{\\Add(D)}(Z^1, i)",
+      "tex": "\\Hom_{\\Add(D)}(Z^1, [i])",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hom(\\Hom_{\\Add(D)}(Z^1, [i]),",
+        "new": "\\Hom(\\Hom_{\\Add(D)}(Z^1, i),"
+      },
+      "note": "Here too the print has i without square brackets."
+    },
+    {
+      "page": 109,
+      "where": "Corollary 2.3.7, displayed isomorphism",
+      "scan": "\\RR^+\\Gamma(\\theta_\\ast)\\circ\\RR^+\\varepsilon_{Z^{\\bigdot}\\ast}",
+      "tex": "\\sisi{\\RR^+}{R}\n\\Gamma(\\theta_{\\ast}){\\circ} \\sisi{\\RR^+}{R} \\varepsilon_{Z^{\\bigdot}\\ast}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\RR^+\\bar{\\theta}_{\\ast}\\xrightarrow{\\sim}\\RR^+\\varepsilon_{Z^{\\bigdot}\\ast}\\circ\\RR^+\\Gamma(\\theta_{\\ast})",
+      "note": "The composite is printed in the wrong order: Γ(θ_*) must be applied before ε_{Z•*}. The TeX keeps the printed reversal."
+    },
+    {
+      "page": 109,
+      "where": "Remark 2.3.8, isomorphism in the first sentence",
+      "scan": "\\RR^+\\Gamma(\\theta_\\ast)\\circ\\RR^+\\varepsilon_\\ast",
+      "tex": "\\sisi{\\RR^+}{R} \\Gamma(\\theta_{\\ast}) \\circ\n\\sisi{\\RR^+}{R} \\varepsilon_{\\ast}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\RR^+\\bar{\\theta}_{\\ast}\\xrightarrow{\\sim}\\RR^+\\varepsilon_{\\ast}\\circ\\RR^+\\Gamma(\\theta_{\\ast})",
+      "note": "The same reversal of the composite occurs here: Γ(θ_*) must be applied first. The TeX keeps the misprint."
+    },
+    {
+      "page": 110,
+      "where": "(2.3.10.2), first defining equation",
+      "scan": "s^{n,m}_1",
+      "tex": "S^{n, m}_1",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "S^{n, m}_1",
+        "new": "s^{n, m}_1"
+      },
+      "note": "The print uses lowercase s, as in the diagram."
+    },
+    {
+      "page": 110,
+      "where": "(2.3.10.2), second defining equation",
+      "scan": "s^{n,m}_2",
+      "tex": "S^{n, m}_2",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "S^{n, m}_2",
+        "new": "s^{n, m}_2"
+      },
+      "note": "The print again uses lowercase s."
+    },
+    {
+      "page": 110,
+      "where": "(2.3.10.2), lower limit of the second sum",
+      "scan": "\\sum_{i=0}^{m+1}(-1)^j(\\id_{[n]},\\partial^j)",
+      "tex": "\\displaystyle\\mathop{\\sum}^{m+1}_{i=0} (-1)^j (\\id_{[n]}, \\partial^j)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "s^{n,m}_2=\\sum_{j=0}^{m+1}(-1)^j(\\id_{[n]},\\partial^j)",
+      "note": "The summation index should be j, matching the exponent and the face map. The TeX keeps the printed i=0."
+    }
+  ],
+  "coordinator": "106: 2/2; 107: 2/0; 108: 2/1; 109: 0/2; 110: 2/1 (normal/misprint)."
+}

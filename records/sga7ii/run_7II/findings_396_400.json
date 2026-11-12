@@ -1,0 +1,96 @@
+[
+ {
+  "page": 396,
+  "where": "Théorème 5.6, 'G un E-faisceau constructible T-entier sur X'",
+  "scan": "\"un\" underlined; the math letters E and T are not underlined; the underline resumes at \"-faisceau constructible\" and \"-entier sur\"",
+  "tex": "\\underline{un E-faisceau constructible T-entier sur}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\underline{un E-faisceau constructible T-entier sur}",
+   "new": "\\underline{un} $E$\\underline{-faisceau constructible} $T$\\underline{-entier sur}"
+  },
+  "note": "The TeX underlines the letters E and T, which the print leaves out of the underline. The form used is the one the file itself uses on p. 398 ($E$\\underline{-faisceau...})."
+ },
+ {
+  "page": 396,
+  "where": "Théorème 5.6, last line 'les E-faisceaux R^if_*G sur Y sont T-entiers.'",
+  "scan": "E and T not underlined; the underlines are on \"les\", \"-faisceaux\", \"sur\", \"sont\", \"-entiers\"",
+  "tex": "\\underline{les E-faisceaux} ... \\underline{sont T-entiers.}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\underline{les E-faisceaux} $R^i f_*\\underline{G}$ \\underline{sur} $Y$ \\underline{sont T-entiers.}",
+   "new": "\\underline{les} $E$\\underline{-faisceaux} $R^i f_*\\underline{G}$ \\underline{sur} $Y$ \\underline{sont} $T$\\underline{-entiers.}"
+  },
+  "note": "Same point as above: the TeX includes the math letters in the underline."
+ },
+ {
+  "page": 396,
+  "where": "proof, 'pour i = 0, j_*(j^*G) ne différe de G'",
+  "scan": "ne différe de",
+  "tex": "ne différe de",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "ne diffère de",
+  "note": "Wrong accent in the print. The TeX keeps the printed reading."
+ },
+ {
+  "page": 396,
+  "where": "proof, 'pour le faisceau j^*G et les morphisme j et f j'",
+  "scan": "les morphisme j et f j",
+  "tex": "les morphisme $j$ et $f\\,j$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "les morphismes",
+  "note": "The plural s is missing in the print. The TeX keeps the printed reading."
+ },
+ {
+  "page": 397,
+  "where": "after the diagram X ⊂→ X', f, f̄ (full stop right of Y)",
+  "scan": "a full stop printed on Y's line, to the right of the diagram",
+  "tex": "full stop omitted; the STRUCTURE comment says it is not included",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "is not included in the tikzcd.\nLe théorème",
+   "new": "is not included in the tikzcd (transcribed as the separate prose block that follows).\n.\n\nLe théorème"
+  },
+  "note": "Restores the full stop as on p. 398 of the same file and corrects the STRUCTURE comment in the same edit."
+ },
+ {
+  "page": 397,
+  "where": "'les hypothèses suivantes sont vérifiées. :'",
+  "scan": "vérifiées. :",
+  "tex": "vérifiées. :",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "vérifiées :",
+  "note": "Stray full stop before the colon, a typing slip. The TeX keeps the printed reading."
+ },
+ {
+  "page": 398,
+  "where": "Lemme 5.6.2 (i), 'les faisceaux i^{o*}Rj_{1*}G sont constant tordus'",
+  "scan": "sont constant tordus",
+  "tex": "\\underline{sont constant tordus, modérément ramifiés le long de}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "sont constants tordus",
+  "note": "Missing agreement s on 'constant'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 399,
+  "where": "proof of 5.6.1, 'd'après 6.2 (i) et l'hypothèse de récurrence'",
+  "scan": "d'après 6.2 (i)",
+  "tex": "d'après 6.2 (i)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "d'après 5.6.2 (i)",
+  "note": "Wrong reference number: the base change statement is Lemme 5.6.2 (i). The TeX keeps the printed reading."
+ }
+]

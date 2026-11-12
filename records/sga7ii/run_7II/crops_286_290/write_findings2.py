@@ -1,0 +1,167 @@
+import json, sys
+from collections import Counter
+
+sys.stdout.reconfigure(encoding="utf-8")
+B = chr(92)  # backslash; '@' below stands for it
+
+
+def L(s):
+    return s.replace("@", B)
+
+
+base = "C:/Users/user/Documents/sga_scan_check_20261105/run_7II"
+F = []
+F.append({
+    "page": 286,
+    "where": "proof of Lemme 5.2.6, 'Cette classe, et ses puissances ξ_F^i ∈ H^{ii}(F,ℤ_ℓ(i))'",
+    "scan": "H^{ii}(F,ℤ_ℓ(i)): two small i side by side in the superscript (checked at 3x)",
+    "tex": L("$@xi_F^i @in H^{ii}(F,@mathbb{Z}_@ell(i))$"),
+    "kind": "misprint_in_print", "confidence": "high", "fix": None,
+    "corrected": L("H^{2i}(F,@mathbb{Z}_@ell(i))"),
+    "note": "The i-th power of the degree-2 class ξ_F lies in degree 2i. The TeX keeps the printed reading; the corrected layer has H^{2i} (SGA7II-FR-XVIII-044).",
+})
+F.append({
+    "page": 286,
+    "where": "proof of Lemme 5.2.6, last sentence",
+    "scan": "sont des isomorphismes si et seulement ils le sont au-dessus d'un point géométrique donné, cqfd. (checked at 1.5x)",
+    "tex": "si et seulement ils le sont au-dessus d'un point géométrique donné",
+    "kind": "misprint_in_print", "confidence": "high", "fix": None,
+    "corrected": "si et seulement s'ils le sont au-dessus d'un point géométrique donné",
+    "note": "The s' of s'ils is left out. The TeX keeps the printed reading; the corrected layer keeps it too (no corrections record).",
+})
+F.append({
+    "page": 286,
+    "where": "Corollaire 5.2.7, first line: 'Soit X propective et lisse'",
+    "scan": "propective (checked at 2.5x)",
+    "tex": L("@underline{propective et lisse. Si une section hyperplane lisse vérifie}"),
+    "kind": "misprint_in_print", "confidence": "high", "fix": None,
+    "corrected": "projective",
+    "note": "Typing slip for 'projective'. The TeX keeps the printed reading; the corrected layer has 'projective' (SGA7II-FR-XVIII-045).",
+})
+F.append({
+    "page": 286,
+    "where": "proof of Corollaire 5.2.7: 'vérifie les hypothèses de 5.2.5.'",
+    "scan": "les hypothèses de 5.2.5.",
+    "tex": "vérifie les hypothèses de 5.2.5.",
+    "kind": "misprint_in_print", "confidence": "medium", "fix": None,
+    "corrected": "5.2.6",
+    "note": "The universal family of smooth hyperplane sections of X is a proper smooth morphism with connected base and a relatively ample module, i.e. the hypotheses of Lemme 5.2.6 just above; 5.2.5 (p. 285) is the corollary on the surjectivity of τ^*. The TeX keeps the printed reading; the corrected layer has 5.2.6 (SGA7II-FR-XVIII-045).",
+})
+F.append({
+    "page": 288,
+    "where": "Lemme 5.4, first line: '(donc toute, par 5.2.7)'",
+    "scan": "the underline starts under the d of 'donc'; the opening parenthesis is not underlined (checked at 3x)",
+    "tex": L("@underline{(donc toute, par}"),
+    "kind": "underline", "confidence": "high",
+    "fix": {"old": L("@underline{(donc toute, par}"), "new": L("(@underline{donc toute, par}")},
+    "note": "The TeX puts the opening parenthesis inside the underline. The corrected layer (current/expose_XVIII_body.tex, Lemme 5.4) has the same text.",
+})
+F.append({
+    "page": 288,
+    "where": "Lemme 5.4, '(y compris toute fibre singulière) vérifie (LV)'",
+    "scan": "the underline ends under the final e of 'singulière'; the closing parenthesis is not underlined (checked at 3x)",
+    "tex": L("(@underline{y compris toute fibre singulière)}"),
+    "kind": "underline", "confidence": "high",
+    "fix": {"old": L("(@underline{y compris toute fibre singulière)}"), "new": L("(@underline{y compris toute fibre singulière})")},
+    "note": "The TeX puts the closing parenthesis inside the underline. The corrected layer has the same text.",
+})
+F.append({
+    "page": 288,
+    "where": "Lemme 5.4, 'et les faisceaux R^iρ_*(Q_ℓ(j)) sont constants pour i ≠ n-1'",
+    "scan": "a plain typed Q, wide and without the inner stroke (checked at 8x); the Q of the display L : R^iρ_*(ℚ_ℓ(j)) → R^{i+2}ρ_*(ℚ_ℓ(j+1)) just below and the other Q of pp. 286-290 are double-struck",
+    "tex": L("$R^i@rho_*(Q_@ell(j))$"),
+    "kind": "misprint_in_print", "confidence": "low", "fix": None,
+    "corrected": L("$R^i@rho_*(@mathbb{Q}_@ell(j))$"),
+    "note": "Font slip of the typist (as the plain R of p. 147 and the plain P of pp. 215 and 217). The TeX correctly gives the printed plain Q and keeps the printed reading; the corrected layer keeps the plain Q too.",
+})
+F.append({
+    "page": 288,
+    "where": "Démonstration of Lemme 5.4, 'le morphisme multiplication par f*c_1(O_X(1) ∈ H^2(X~,ℤ_ℓ(1))'",
+    "scan": "f*c_1(𝒪_X(1) ∈ H^2(X~,ℤ_ℓ(1)); with a single closing parenthesis after (1 (checked at 6x)",
+    "tex": L("$f^*c_1(@mathcal{O}_X(1) @in H^2(@widetilde{X},@mathbb{Z}_@ell(1))$"),
+    "kind": "misprint_in_print", "confidence": "high", "fix": None,
+    "corrected": L("$f^*c_1(@mathcal{O}_X(1)) @in H^2(@widetilde{X},@mathbb{Z}_@ell(1))$"),
+    "note": "The parenthesis opened by c_1( is never closed. The TeX keeps the printed reading. The corrected layer closes it, but corrections.md SGA7II-FR-XVIII-046 classes this as a transcription_repair ('Restored the missing closing parenthesis'); the scan lacks it, so the entry corrects a misprint of the print and its record should say so.",
+})
+F.append({
+    "page": 289,
+    "where": "formula (5.4.3), source of L^i",
+    "scan": "R^{n-1-i}ρ*ℚ_ℓ(j): the asterisk stands raised, level with the top of the ρ, while the target R^{n-1+i}ρ_*ℚ_ℓ(j+i) has it lowered (checked at 3x)",
+    "tex": L("L^i : R^{n-1-i}@rho^*@mathbb{Q}_@ell(j)"),
+    "kind": "misprint_in_print", "confidence": "high", "fix": None,
+    "corrected": L("L^i : R^{n-1-i}@rho_*@mathbb{Q}_@ell(j)"),
+    "note": "The source is the direct image R^{n-1-i}ρ_* of (5.4.1)-(5.4.2). The TeX keeps the printed reading. The corrected layer has ρ_*, but corrections.md SGA7II-FR-XVIII-047 calls it a transcription_repair ('the frozen transcription misread it as ρ^*'); the scan prints ρ^*, so the entry corrects a misprint of the print and its record should say so.",
+})
+F.append({
+    "page": 289,
+    "where": "5.4.4, line after the display H^{n-1}(X,ℚ_ℓ(j)) ↪ H^{n-1}(Y,ℚ_ℓ(j))",
+    "scan": "la flèche de restriction ... est injectif, et on a vu (5.2.4)",
+    "tex": "est injectif, et on a vu (5.2.4)",
+    "kind": "misprint_in_print", "confidence": "medium", "fix": None,
+    "corrected": "est injective",
+    "note": "Agreement with 'la flèche'. The TeX keeps the printed reading; the corrected layer has 'injective' (SGA7II-FR-XVIII-048).",
+})
+F.append({
+    "page": 289,
+    "where": "5.4.4, 'On définit un sous-faisceau correspondant de ν_*(R^{n-1}ρ_*ℚ_ℓ(j))'",
+    "scan": "ν_*(R^{n-1}ρ_*ℚ_ℓ(j)), no ν* (checked at 1.5x)",
+    "tex": L("$@nu_*(R^{n-1}@rho_*@mathbb{Q}_@ell(j))$"),
+    "kind": "misprint_in_print", "confidence": "low", "fix": None,
+    "corrected": L("$@nu_*@nu^*(R^{n-1}@rho_*@mathbb{Q}_@ell(j))$"),
+    "note": "ν : U → ℙ^1, so ν_* takes sheaves on U; the sheaf of (5.4.4.1), ν_*{orthogonal in ν^*R^{n-1}ρ_*ℚ_ℓ(j) ...}, is a subsheaf of ν_*ν^*R^{n-1}ρ_*ℚ_ℓ(j) (compare (5.3.2)). May be an abuse of notation rather than a slip. The TeX keeps the printed reading; the corrected layer keeps it too.",
+})
+F.append({
+    "page": 290,
+    "where": "Théorème 5.6, 'Supposons que la projection ρ : X~ → ℙ^1 vérifie la condition (5.3.2).'",
+    "scan": "vérifie la condition (5.3.2). Alors :",
+    "tex": L("@underline{vérifie la condition} (5.3.2)."),
+    "kind": "misprint_in_print", "confidence": "medium", "fix": None,
+    "corrected": L("@underline{vérifie la condition} (A)."),
+    "note": L("(5.3.2) numbers the adjunction maps; the condition that they are all isomorphisms is (A) of 5.3.5, which the proof on p. 291 uses through (5.4.3) and Lemme 5.4. The TeX keeps the printed reading; the corrected layer reads '(A) @underline{de} 5.3.5' (SGA7II-FR-XVIII-049)."),
+})
+F.append({
+    "page": 290,
+    "where": "(5.6.1), abutment of the Leray spectral sequence",
+    "scan": "E_2^{p,q} = H^p(ℙ^1, R^qρ_*ℚ_ℓ) ⟹ H^{m+q}(X~, ℚ_ℓ) (checked at 3x)",
+    "tex": L("H^{m+q}(@widetilde{X},@; @mathbb{Q}_@ell)"),
+    "kind": "misprint_in_print", "confidence": "high", "fix": None,
+    "corrected": L("H^{p+q}(@widetilde{X},@; @mathbb{Q}_@ell)"),
+    "note": "E_2^{p,q} abuts to H^{p+q}. The TeX keeps the printed reading; the corrected layer has p+q (SGA7II-FR-XVIII-050).",
+})
+
+out = []
+for x in F:
+    d = {k: x[k] for k in ["page", "where", "scan", "tex", "kind", "confidence", "fix"]}
+    if x["kind"] == "misprint_in_print":
+        d["corrected"] = x["corrected"]
+    d["note"] = x["note"]
+    out.append(d)
+
+path = base + "/findings_286_290.json"
+with open(path, "w", encoding="utf-8", newline="\n") as f:
+    json.dump(out, f, ensure_ascii=False, indent=1)
+    f.write("\n")
+
+data = json.load(open(path, encoding="utf-8"))
+cnt = Counter()
+bad = 0
+for x in data:
+    tex = open(base + "/b286_290/page_%d.tex" % x["page"], encoding="utf-8").read()
+    if x["fix"]:
+        n = tex.count(x["fix"]["old"])
+        print(x["page"], "fix old count:", n, x["fix"]["old"])
+        if n != 1:
+            bad += 1
+    else:
+        present = tex.count(x["tex"]) >= 1
+        print(x["page"], "tex field present:", present, x["tex"][:70])
+        if not present:
+            bad += 1
+    for k in ("tex", "corrected", "note"):
+        v = x.get(k) or ""
+        if any(ord(c) < 32 for c in v):
+            print("CONTROL CHAR in", k, x["page"])
+            bad += 1
+    cnt[(x["page"], "misprint" if x["kind"] == "misprint_in_print" else "normal")] += 1
+print(sorted(cnt.items()))
+print("problems:", bad)

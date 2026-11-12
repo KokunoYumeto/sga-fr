@@ -1,0 +1,181 @@
+import json
+
+FOLDER = r'C:/Users/user/Documents/sga_scan_check_20261105/run_7II/b186_190'
+OUT = r'C:/Users/user/Documents/sga_scan_check_20261105/run_7II/findings_186_190.json'
+
+PSI_NOTE = ("Small psi: the printed glyph is the one the TeX writes \\psi on p. 188 (same shape and size: about 30 px "
+            "high where the capitals Lambda and Phi of the same typeball are 23-25 px, its stem descending 5-9 px below "
+            "the baseline, which a capital Psi does not do). Exposé XV's TeX writes this glyph \\psi 61 times and \\Psi "
+            "9 times: here (also once in the STRUCTURE comment) and on pp. 191, 192, 193 (outside this batch, not checked).")
+
+findings = [
+    # ---------------- page 186 ----------------
+    {"page": 186, "where": "Lemme 2.2.7, first formula",
+     "scan": "ℍ^n_{x}(X_s,Rψ_η̄(Λ(m))) with a double-struck H (typed as I overstruck on H)",
+     "tex": r"$H^{n}_{\{x\}}(X_s,R\Psi_{\bar{\eta}}(\Lambda(m)))$",
+     "kind": "font", "confidence": "high",
+     "fix": {"old": r"identifie}  $H^{n}", "new": r"identifie}  $\mathbb{H}^{n}"},
+     "note": "The Lemme prints the hypercohomology ℍ; the diagram (2.2.6.2) just above prints a plain H for the same group (the TeX has H there, correctly). The exposé's TeX writes this ℍ as \\mathbb{H} elsewhere (2.2.3)."},
+    {"page": 186, "where": "Lemme 2.2.7, first formula",
+     "scan": "Rψ_η̄ (small psi)",
+     "tex": r"R\Psi_{\bar{\eta}}",
+     "kind": "symbol", "confidence": "medium",
+     "fix": {"old": r"(X_s,R\Psi_{\bar{\eta}}(\Lambda(m)))$", "new": r"(X_s,R\psi_{\bar{\eta}}(\Lambda(m)))$"},
+     "note": PSI_NOTE},
+    {"page": 186, "where": "diagram (2.2.6.2), second row, middle node",
+     "scan": "H^n_{x}(X_s,Rψ_η̄(Λ(m))) (small psi)",
+     "tex": r"R\Psi_{\bar{\eta}}(\Lambda(m))) &",
+     "kind": "symbol", "confidence": "medium",
+     "fix": {"old": r"R\Psi_{\bar{\eta}}(\Lambda(m))) & H", "new": r"R\psi_{\bar{\eta}}(\Lambda(m))) & H"},
+     "note": "Same glyph as in Lemme 2.2.7; see the note there."},
+    {"page": 186, "where": "diagram (2.2.6.2), end",
+     "scan": "full stop after the diagram, to the right of H^n_{x}(X_s,Λ(m))",
+     "tex": r"\end{tikzcd} (no full stop)",
+     "kind": "punctuation", "confidence": "high",
+     "fix": {"old": r"\end{tikzcd}", "new": r"\end{tikzcd}\quad ."},
+     "note": "Punctuation after a diagram left out (known issue); the STRUCTURE comment records the printed full stop."},
+    {"page": 186, "where": "2.2.6, 'Soient X_{s(o)} ...', definition of Y_o",
+     "scan": "Y_o l'image réciproque de x_o dans X_{s(o)} (une quadrique) (no tilde)",
+     "tex": r"dans  $X_{s(o)}$  (une quadrique)",
+     "kind": "misprint_in_print", "confidence": "medium",
+     "fix": None,
+     "corrected": r"dans  $\widetilde{X}_{s(o)}$  (une quadrique)",
+     "note": "Missing tilde: the quadric Y_o is the inverse image of x_o in the blow-up X~_{s(o)} (the same sentence has X*_{s(o)} = X~_{s(o)} - Y_o); in X_{s(o)} itself the inverse image of x_o is the point. The TeX keeps the printed reading."},
+    {"page": 186, "where": "2.2.6, end of the paragraph before (2.2.6.2)",
+     "scan": "(cf. XIII, 2.4.6.1)",
+     "tex": "(cf. XIII, 2.4.6.1)",
+     "kind": "misprint_in_print", "confidence": "medium",
+     "fix": None,
+     "corrected": "(cf. XIII, 2.4.7.1)",
+     "note": "Exposé XIII prints two (2.4.6.1): p. 113 and p. 115 (the second, repeated 2.4.6.). The composite cited here is the one in the p. 115 diagram (ℍ^{n-1}(X*_{s(x)},K) -j-> ℍ^n_{x}(X_s,K) -> ℍ^n_{x}(X_s,RΨ(K))). The corrected edition renumbers that tag (2.4.7.1) (global item 20, pp. 114-115), so this reference must follow: apply only together with item 20. The TeX keeps the printed reading."},
+    # ---------------- page 187 ----------------
+    {"page": 187, "where": "first line (end of Lemme 2.2.7)",
+     "scan": "est l'image des générateurs naturels de ce quotient primitif. (p. 186 already ends '± δ est')",
+     "tex": r"\underline{est l'image des générateurs naturels de ce quotient primitif.}",
+     "kind": "misprint_in_print", "confidence": "high",
+     "fix": None,
+     "corrected": r"\underline{l'image des générateurs naturels de ce quotient primitif.}",
+     "note": "The print repeats 'est' across the page break: p. 186 ends '± δ est', p. 187 begins 'est l'image'. The TeX keeps both; the corrected edition drops one (here the second)."},
+    {"page": 187, "where": "'Les cycles ± δ sont caractérisés par leur image dans'",
+     "scan": "H^i_c(X_η̄,Λ(m))",
+     "tex": r"$H^{i}_{c}(X_{\bar{\eta}},\Lambda(m))$",
+     "kind": "misprint_in_print", "confidence": "medium",
+     "fix": None,
+     "corrected": r"$H^{n}_{c}(X_{\bar{\eta}},\Lambda(m))$",
+     "note": "Wrong index: ± δ lives in degree n, and the diagram that follows ends in H^n_c(X_η̄,Λ(m)), the 'dernier groupe' of the next sentence. The TeX keeps the printed reading."},
+    # ---------------- page 188 ----------------
+    {"page": 188, "where": "Proposition 3.1.2 (ii)",
+     "scan": "est seul en dehors de Σ",
+     "tex": r"\underline{est seul en dehors de}",
+     "kind": "misprint_in_print", "confidence": "high",
+     "fix": None,
+     "corrected": r"\underline{est nul en dehors de}",
+     "note": "Wrong word: R^nΦ(Λ) is zero outside Σ (the proof below: 'RΦ est même nul hors de Σ'). The TeX keeps the printed reading."},
+    {"page": 188, "where": "paragraph after Proposition 3.1.2",
+     "scan": "l'hypersurface de l'espace affine relatif A^{n+1}_S défini par une équation quadratique",
+     "tex": r"$A^{n+1}_{S}$ défini par une équation quadratique",
+     "kind": "misprint_in_print", "confidence": "medium",
+     "fix": None,
+     "corrected": r"$A^{n+1}_{S}$ définie par une équation quadratique",
+     "note": "Agreement slip: it is the hypersurface that is defined by the quadratic equation. The TeX keeps the printed reading."},
+    {"page": 188, "where": "Proposition 3.2.1 (i)",
+     "scan": "H^n_{x}(R^nψ_η(Λ(m)) (two closing parentheses)",
+     "tex": r"$H^{n}_{\{x\}}(R^{n}\psi_{\eta}(\Lambda(m)))$",
+     "kind": "misprint_in_print", "confidence": "high",
+     "fix": {"old": r"(\Lambda(m)))$ \underline{a un", "new": r"(\Lambda(m))$ \underline{a un"},
+     "corrected": r"$H^{n}_{\{x\}}(R^{n}\psi_{\eta}(\Lambda(m)))$",
+     "note": "The print leaves one parenthesis unclosed; the TeX silently supplies it. The fix restores the printed reading."},
+    # ---------------- page 190 ----------------
+    {"page": 190, "where": "centre of the Clifford algebra, k(η)(...)",
+     "scan": "k(η)(((-1)^{m+1}.2b det(a_ij))^{1/2})",
+     "tex": r"(-1)^{m+1}\,2b\det(a_{ij})",
+     "kind": "formula", "confidence": "high",
+     "fix": {"old": r"(-1)^{m+1}\,2b", "new": r"(-1)^{m+1}.2b"},
+     "note": "The print has a multiplication point between (-1)^{m+1} and 2b. (The print sets this formula inline in the sentence; the TeX displays it.)"},
+    {"page": 190, "where": "3.3.1, 'une équation Q-b = 0 dans'",
+     "scan": "A^{n+1}_S (plain typed A)",
+     "tex": r"\mathbb{A}^{n+1}_S",
+     "kind": "font", "confidence": "high",
+     "fix": {"old": r"$\mathbb{A}^{n+1}_S$", "new": r"$A^{n+1}_S$"},
+     "note": "Typed roman A, as on p. 188, where the TeX writes A^{n+1}_{S}."},
+    {"page": 190, "where": "3.3.1, 'dans un voisinage de'",
+     "scan": "x (no subscript)",
+     "tex": r"$x_o$",
+     "kind": "symbol", "confidence": "high",
+     "fix": {"old": r"voisinage de $x_o$, il existe", "new": r"voisinage de $x$, il existe"},
+     "note": "The print has x here (x_o only earlier in the paragraph); the paragraph ends with s_x and b(x), so this is the print's own notation, not a misprint."},
+    {"page": 190, "where": "3.3.1, 'soit isomorphe à'",
+     "scan": "𝒪_{s(Spec(A/b))}",
+     "tex": r"\mathcal{O}_{s(\mathrm{Spec}(A/(b)))}",
+     "kind": "formula", "confidence": "high",
+     "fix": {"old": r"\mathcal{O}_{s(\mathrm{Spec}(A/(b)))}", "new": r"\mathcal{O}_{s(\mathrm{Spec}(A/b))}"},
+     "note": "The print writes A/b here (A/(b) twice earlier in the sentence, which the TeX has right)."},
+    {"page": 190, "where": "3.3.1, 'il existe une section s ... de X sur Spec(A/(b)) ,'",
+     "scan": "tel que",
+     "tex": r"$\mathrm{Spec}(A/(b))$, tel que $J^n_{X/S}$",
+     "kind": "misprint_in_print", "confidence": "medium",
+     "fix": None,
+     "corrected": r"$\mathrm{Spec}(A/(b))$, telle que $J^n_{X/S}$",
+     "note": "Agreement slip: 'une section ... telle que'. The TeX keeps the printed reading."},
+]
+
+# validation: every fix's old occurs exactly once in its page file and does not cross or touch a marker line;
+# every tex field of a misprint kept by the TeX occurs in the page file
+ok = True
+for f in findings:
+    path = '%s/page_%03d.tex' % (FOLDER, f['page'])
+    with open(path, encoding='utf-8', newline='') as fh:
+        text = fh.read()
+    if f['fix'] is not None:
+        old = f['fix']['old']
+        n = text.count(old)
+        if n != 1 or '%%%%%%%%%%' in old:
+            ok = False
+            print('BAD old (count %d) p%d: %r' % (n, f['page'], old))
+        # simulate
+        new_text = text.replace(old, f['fix']['new'], 1)
+        assert new_text != text
+    if f['kind'] == 'misprint_in_print' and f['fix'] is None:
+        if f['tex'] not in text:
+            ok = False
+            print('tex not found p%d: %r' % (f['page'], f['tex']))
+    if f['kind'] != 'misprint_in_print' and 'corrected' in f:
+        ok = False
+        print('corrected on non-misprint', f)
+
+# fixes on the same page must not overlap one another
+from collections import defaultdict
+spans = defaultdict(list)
+for f in findings:
+    if f['fix'] is None:
+        continue
+    path = '%s/page_%03d.tex' % (FOLDER, f['page'])
+    with open(path, encoding='utf-8', newline='') as fh:
+        text = fh.read()
+    i = text.find(f['fix']['old'])
+    spans[f['page']].append((i, i + len(f['fix']['old']), f['fix']['old']))
+for p, ss in spans.items():
+    ss.sort()
+    for a, b in zip(ss, ss[1:]):
+        if a[1] > b[0]:
+            ok = False
+            print('overlap p%d: %r / %r' % (p, a[2], b[2]))
+
+# apply all fixes of a page in sequence to confirm they all still apply
+for p in sorted(spans):
+    path = '%s/page_%03d.tex' % (FOLDER, p)
+    with open(path, encoding='utf-8', newline='') as fh:
+        text = fh.read()
+    for f in findings:
+        if f['page'] == p and f['fix'] is not None:
+            if text.count(f['fix']['old']) != 1:
+                ok = False
+                print('sequential apply failed p%d %r' % (p, f['fix']['old']))
+            text = text.replace(f['fix']['old'], f['fix']['new'], 1)
+
+print('valid' if ok else 'INVALID')
+if ok:
+    with open(OUT, 'w', encoding='utf-8', newline='\n') as fh:
+        json.dump(findings, fh, ensure_ascii=False, indent=1)
+        fh.write('\n')
+    print('written', OUT, len(findings))

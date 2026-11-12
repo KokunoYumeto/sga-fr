@@ -1,0 +1,167 @@
+{
+  "findings": [
+    {
+      "page": 576,
+      "where": "(3.1.13.2), right-hand side",
+      "scan": "R{g'}^{!}Rf_{!}",
+      "tex": "Rg^{!} Rf_{!}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\longrightarrow Rg^{!} Rf_{!}",
+        "new": "\\longrightarrow R{g'}^{!} Rf_{!}"
+      },
+      "note": "The printed right-hand g has a prime; the TeX omits it."
+    },
+    {
+      "page": 577,
+      "where": "3.1.14 a), isomorphism for the inverse-image functors",
+      "scan": "Rg_{\\ast}Rf^{!}\\xrightarrow{\\sim}Rf^{!}Rg_{\\ast}",
+      "tex": "Rg_{\\ast} Rf^{!}\\xrightarrow{\\sim} Rf^{!}Rg_{\\ast}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Rg'_{\\ast}R{f'}^{!}\\xrightarrow{\\sim}Rf^{!}Rg_{\\ast}",
+      "note": "Both left-hand functors lack their primes in the print. The TeX keeps this misprint; the correctly primed isomorphism also appears in the supplied continuation of 3.1.12.3."
+    },
+    {
+      "page": 578,
+      "where": "Compatibility assertion following the two constructions",
+      "scan": "deux compatibilité du type",
+      "tex": "deux\ncompatibilités du type",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "deux compatibilités du type",
+      "note": "The print omits the plural s after « deux ». The TeX silently corrects it."
+    },
+    {
+      "page": 578,
+      "where": "3.1.15 a), definition of the triples",
+      "scan": "\\varphi\\in\\Hom(X,f^{\\ast}V)",
+      "tex": "\\varphi\\in \\Hom\n(U,f^{\\ast}V)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\varphi\\in\\Hom(U,f^{\\ast}V)",
+      "note": "The print gives X as the first argument of Hom, instead of the first component U of the triple. The TeX silently corrects it."
+    },
+    {
+      "page": 578,
+      "where": "3.1.15 b), covering condition",
+      "scan": "les morphismes $u_i:U_i\\rightarrow U$ couvrant $U$",
+      "tex": "les morphismes $u_{i}:U_{i}\\rightarrow U$\ncouvrent $U$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "les morphismes $u_{i}:U_{i}\\rightarrow U$ couvrent $U$",
+      "note": "The print has « couvrant » where the finite verb « couvrent » is required. The TeX silently corrects it."
+    },
+    {
+      "page": 578,
+      "where": "3.1.15.2, identity involving the site morphisms",
+      "scan": "f_{\\Gamma}\\gamma=f",
+      "tex": "f_{\\Gamma}\\gamma\\simeq f",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$f_{\\Gamma}\\gamma\\simeq f$",
+        "new": "$f_{\\Gamma}\\gamma=f$"
+      },
+      "note": "The print has an equality sign, not an isomorphism sign."
+    },
+    {
+      "page": 578,
+      "where": "3.1.15.2, adjoint of the functor fΓ*",
+      "scan": "adjoint à droite",
+      "tex": "adjoint à gauche",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "adjoint à gauche $f_{\\Gamma\\bigdot}$",
+      "note": "The projection (U,V,φ) ↦ V is a left adjoint of fΓ*, not a right adjoint. The TeX silently corrects « droite » to « gauche »."
+    },
+    {
+      "page": 579,
+      "where": "Diagram (3.1.15.3), horizontal equivalence",
+      "scan": "X\\xleftarrow[\\approx]{\\ast}\\Gamma(f)",
+      "tex": "\\Gamma(f) \\ar[ll]^{\\approx}",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\ar[ll]^{\\approx}",
+        "new": "\\ar[ll]^{\\ast}_{\\approx}"
+      },
+      "note": "The printed horizontal arrow has an asterisk above it, in addition to the equivalence sign below. The TeX omits the asterisk."
+    },
+    {
+      "page": 579,
+      "where": "3.1.16.1, coefficient ring acting on K(U)",
+      "scan": "(\\mathcal{A},f_{\\ast}(\\mathcal{B}|U))",
+      "tex": "(\\mathcal{A},f_{|U\\ast}(\\mathcal{B}|U))",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "f_{|U\\ast}(\\mathcal{B}|U)",
+        "new": "f_{\\ast}(\\mathcal{B}|U)"
+      },
+      "note": "The print has only f* in this expression. The restriction |U inserted into the subscript of f is absent from the print."
+    },
+    {
+      "page": 579,
+      "where": "Last sentence, name of the morphism between K₁ and K₂",
+      "scan": "Si $U:K_1\\rightarrow K_2$ … alors $U$ induit",
+      "tex": "Si $U:K_{1}\\rightarrow K_{2}$ est un morphisme d'objets \\eqhyperref[XVIII.eq3.1.11.1]{3.1.11.1},\nalors $U$ induit",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$u$",
+      "note": "The morphism is capital U at both occurrences in this sentence, but its transpose on the next page is written with lowercase u, as is the morphism in 3.1.17(iii). Read lowercase u at both occurrences. The TeX keeps the printed capitals."
+    },
+    {
+      "page": 579,
+      "where": "Last sentence, reference after « morphisme d'objets »",
+      "scan": "(3.1.11.1)",
+      "tex": "\\eqhyperref[XVIII.eq3.1.11.1]{3.1.11.1}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\eqhyperref[XVIII.par3.1.16.1]{3.1.16.1}",
+      "note": "The intended reference is to the type of object K just defined in (3.1.16.1). The TeX keeps the printed reference (3.1.11.1)."
+    },
+    {
+      "page": 580,
+      "where": "(3.1.17.2), argument of K",
+      "scan": "K(W)",
+      "tex": "K(U)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "K(U)",
+      "note": "The print has W although the colimit is indexed by U. The TeX silently corrects W to U."
+    },
+    {
+      "page": 580,
+      "where": "(3.1.17.2), abutment",
+      "scan": "\\underline{H}^{n}(K^{!}L)_{x}",
+      "tex": "ℋ^{n}(K^{!}L)_{x}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "ℋ^{n}(RK^{!}L)_{x}",
+      "note": "The spectral sequence must abut to the cohomology of RK!L, as in (i). The print omits R, and the TeX keeps that omission."
+    },
+    {
+      "page": 580,
+      "where": "3.1.17(iii), reference after « morphisme d'objets »",
+      "scan": "(3.1.11.1)",
+      "tex": "\\eqhyperref[XVIII.eq3.1.11.1]{3.1.11.1}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\eqhyperref[XVIII.par3.1.16.1]{3.1.16.1}",
+      "note": "The intended reference is to the definition of the objects K in (3.1.16.1). The TeX keeps the printed reference (3.1.11.1)."
+    }
+  ],
+  "coordinator": "576: 1/0; 577: 0/1; 578: 1/4; 579: 2/2; 580: 0/3 (normal/misprint)."
+}

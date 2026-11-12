@@ -1,0 +1,1 @@
+616: 0/1; 617: 0/0; 618: 1/1; 619: 0/2; 620: 0/0. The footnote (*) is repeated in the print for 5.1, 6.1 and 6.1 bis, but the TeX gives its text only at 5.1 and uses \footnotemark for 6.1 and 6.1 bis; whether to restore the repeated text on p. 618 is an editorial choice.

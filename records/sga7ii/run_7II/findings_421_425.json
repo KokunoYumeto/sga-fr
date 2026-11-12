@@ -1,0 +1,516 @@
+[
+ {
+  "page": 421,
+  "where": "Lemme 4.5.8, reference after 'et sa trace'",
+  "scan": "et sa trace [cf. [4]] est donnée",
+  "tex": "(cf. [4])",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "(cf. [4])",
+   "new": "[cf. [4]]"
+  },
+  "note": "The outer pair is printed as square brackets."
+ },
+ {
+  "page": 421,
+  "where": "display after 'Appliquant ce lemme au cas', line k = q^ν",
+  "scan": "k = q^ν (no comma)",
+  "tex": "k&=q^\\nu,\\\\",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "k&=q^\\nu,\\\\",
+   "new": "k&=q^\\nu\\\\"
+  },
+  "note": "The TeX adds this comma."
+ },
+ {
+  "page": 421,
+  "where": "same display, line G(X) = ...",
+  "scan": "∈ L(p/((p-1)q^ν)) (no comma)",
+  "tex": "\\right),\\\\",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{(p-1)q^\\nu}\\right),\\\\",
+   "new": "{(p-1)q^\\nu}\\right)\\\\"
+  },
+  "note": "The TeX adds this comma."
+ },
+ {
+  "page": 421,
+  "where": "same display, line b = 1/(p-1)",
+  "scan": "b = 1/(p-1) (no comma)",
+  "tex": "b&=\\frac1{p-1},",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "b&=\\frac1{p-1},",
+   "new": "b&=\\frac1{p-1}"
+  },
+  "note": "The TeX adds this comma."
+ },
+ {
+  "page": 421,
+  "where": "(4.5.10), left-hand side",
+  "scan": "(q-1)card V*(F_{q^ν})",
+  "tex": "(q-1)\\operatorname{card}V^*(\\mathbb F_{q^\\nu})",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(q^\\nu-1)\\operatorname{card}V^*(\\mathbb F_{q^\\nu})",
+  "note": "The TeX keeps the printed reading. A handwritten ν is missing: (4.5.10) with (4.5.11) gives (4.5.12) only if this factor is (q^ν-1)."
+ },
+ {
+  "page": 421,
+  "where": "(4.5.10), operator inside tr(",
+  "scan": "Ψ_q ∏ (subscript q only)",
+  "tex": "\\psi_{q^\\nu}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "{q^\\nu}\n\\operatorname{tr}\\!\\left(\n\\left.\\psi_{q^\\nu}",
+   "new": "{q^\\nu}\n\\operatorname{tr}\\!\\left(\n\\left.\\psi_q"
+  },
+  "corrected": "\\psi_{q^\\nu}",
+  "note": "The TeX silently corrects. The lemma with k=q^ν gives ψ_{q^ν}; the handwritten ν was left out."
+ },
+ {
+  "page": 421,
+  "where": "(4.5.10), between ψ and ∏",
+  "scan": "Ψ_q ∏ (no ∘)",
+  "tex": "\\psi_{q^\\nu}\\circ \\prod",
+  "kind": "extra",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\circ\n\\prod_{j=0}^{\\operatorname{ord}(q^\\nu)-1}H^{\\tau^j}(X^{p^j})\n\\right|L\\!",
+   "new": "\n\\prod_{j=0}^{\\operatorname{ord}(q^\\nu)-1}H^{\\tau^j}(X^{p^j})\n\\right|L\\!"
+  },
+  "note": "Only (4.5.12) prints the ∘."
+ },
+ {
+  "page": 421,
+  "where": "(4.5.11), right-hand side",
+  "scan": "tr(Ψ_k∘G |L^o)",
+  "tex": "\\right|L^0(b)\\right)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\right|L^0(b)\\right)",
+   "new": "\\right|L^0\\right)"
+  },
+  "note": "The print has no (b) here."
+ },
+ {
+  "page": 421,
+  "where": "(4.5.12), denominator of second term",
+  "scan": "(q^ν-1)^{n+2}/q",
+  "tex": "\\frac{(q^\\nu-1)^{n+2}}{q}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\frac{(q^\\nu-1)^{n+2}}{q^\\nu}",
+  "note": "The TeX keeps the printed reading. (4.5.10)-(4.5.11) and (4.5.16) require q^ν (ν missing)."
+ },
+ {
+  "page": 421,
+  "where": "(4.5.12), operator inside tr(",
+  "scan": "Ψ_q ∘ ∏",
+  "tex": "\\psi_{q^\\nu}\\circ",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "{q}\n\\operatorname{tr}\\!\\left(\n\\left.\\psi_{q^\\nu}",
+   "new": "{q}\n\\operatorname{tr}\\!\\left(\n\\left.\\psi_q"
+  },
+  "corrected": "\\psi_{q^\\nu}",
+  "note": "The TeX silently corrects, as in (4.5.10)."
+ },
+ {
+  "page": 422,
+  "where": "equation number of the iterates formula",
+  "scan": "(5.4.14)",
+  "tex": "\\tag{5.4.14}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\tag{4.5.14}",
+  "note": "The TeX keeps the printed reading. The formula stands between (4.5.13) and (4.5.15)."
+ },
+ {
+  "page": 422,
+  "where": "after (5.4.14): 'si ord(q)|a'",
+  "scan": "si ord(q)|a, on a",
+  "tex": "si $\\operatorname{ord}(q)$ divise $a$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "si $\\operatorname{ord}(q)$ divise $a$",
+   "new": "si $\\operatorname{ord}(q)\\mid a$"
+  },
+  "note": "The print uses the bar symbol, not the word 'divise'."
+ },
+ {
+  "page": 422,
+  "where": "(4.5.15), first line",
+  "scan": "α : L^o(1/(p-1)) ⟶ L^o(1/(p-1)) (no comma)",
+  "tex": "\\right),\\\\",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow L^0\\!\\left(\\frac1{p-1}\\right),\\\\",
+   "new": "\\longrightarrow L^0\\!\\left(\\frac1{p-1}\\right)\\\\"
+  },
+  "note": "The TeX adds this comma."
+ },
+ {
+  "page": 422,
+  "where": "(4.5.16), argument of tr",
+  "scan": "tr((α)^{ord(q^ν)}|L^o(...)",
+  "tex": "\\alpha^{\\operatorname{ord}(q^\\nu)}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\left.\\alpha^{\\operatorname{ord}(q^\\nu)}",
+   "new": "\\left.(\\alpha)^{\\operatorname{ord}(q^\\nu)}"
+  },
+  "note": "The print writes α in parentheses."
+ },
+ {
+  "page": 422,
+  "where": "(4.5.16), end",
+  "scan": "|L^o(1/(p-1)) .  (the parenthesis of tr( is never closed)",
+  "tex": "\\right)\\right).",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\left(\\frac1{p-1}\\right)\\right).",
+   "new": "\\left(\\frac1{p-1}\\right)\\right.."
+  },
+  "corrected": "\\left(\\frac1{p-1}\\right)\\right).",
+  "note": "The TeX silently supplies the closing parenthesis."
+ },
+ {
+  "page": 422,
+  "where": "(4.5.18), beginning",
+  "scan": "L^A(b) = ensemble des séries Σ ...",
+  "tex": "L^A(b)=\\{\\,&\\text{séries",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "L^A(b)=\\{\\,&\\text{séries",
+   "new": "L^A(b)={}&\\text{ensemble des séries"
+  },
+  "note": "The print has the words 'ensemble des' and no braces. Apply together with the closing-brace edit."
+ },
+ {
+  "page": 422,
+  "where": "(4.5.18), the series",
+  "scan": "Σ B_U X^U (no index under Σ)",
+  "tex": "\\sum_U B_UX^U",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\sum_U B_UX^U",
+   "new": "$\\sum B_UX^U"
+  },
+  "note": "The only subscript U belongs to B."
+ },
+ {
+  "page": 422,
+  "where": "(4.5.18), end",
+  "scan": "j ∈ A.",
+  "tex": "$j\\in A$}\\,\\}.",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "$j\\in A$}\\,\\}.",
+   "new": "$j\\in A$}."
+  },
+  "note": "The print has no closing brace."
+ },
+ {
+  "page": 422,
+  "where": "(4.5.19), end",
+  "scan": "⊕ L^A(b) (no full stop; the sentence continues 'et, pour chaque...')",
+  "tex": "L^A(b).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "}}L^A(b).",
+   "new": "}}L^A(b)"
+  },
+  "note": "The TeX adds this full stop."
+ },
+ {
+  "page": 423,
+  "where": "'qu'il en est de même pour ⊕...'",
+  "scan": "⊕ with subscript A⊋B (⊃ with ≠ under it)",
+  "tex": "\\bigoplus_{A\\not\\supset B}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigoplus_{A\\not\\supset B}",
+   "new": "\\bigoplus_{A\\supsetneq B}"
+  },
+  "note": "The print has strict inclusion, not 'not a superset' (a sum of spaces of the previous type)."
+ },
+ {
+  "page": 423,
+  "where": "(4.5.21), index of the second ⊕",
+  "scan": "A⊋B (single row, ≠ under ⊃)",
+  "tex": "\\substack{A\\supset B\\\\A\\ne B}",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\bigoplus_{\\substack{A\\supset B\\\\A\\ne B}}",
+   "new": "\\bigoplus_{A\\supsetneq B}"
+  },
+  "note": "The print has one compound symbol, not two rows."
+ },
+ {
+  "page": 423,
+  "where": "equation number after 'Récrivons encore (4.5.16)'",
+  "scan": "(4.5.2.3)",
+  "tex": "\\tag{4.5.2.3}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\tag{4.5.23}",
+  "note": "The TeX keeps the printed reading."
+ },
+ {
+  "page": 423,
+  "where": "last sentence",
+  "scan": "déduit de f(X) y faisant la substitution en X_i = 0 pour i ∉ A.",
+  "tex": "déduit de $f(X)$ en y faisant la substitution $X_i=0$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "de $f(X)$ en y faisant la\nsubstitution $X_i=0$",
+   "new": "de $f(X)$ y faisant la\nsubstitution en $X_i=0$"
+  },
+  "corrected": "de $f(X)$ en y faisant la substitution $X_i=0$",
+  "note": "The TeX silently corrects the misplaced 'en'."
+ },
+ {
+  "page": 424,
+  "where": "first sentence, 'pour certaines des variables'",
+  "scan": "des variables (no comma)",
+  "tex": "des variables,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "certaines des variables,",
+   "new": "certaines des variables"
+  },
+  "note": "The TeX adds this comma."
+ },
+ {
+  "page": 424,
+  "where": "'(4.5.23) donne, pour chaque A ⊆ S'",
+  "scan": "A ⊆ S (underlined ⊂)",
+  "tex": "$A\\subset S$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "pour chaque $A\\subset S$",
+   "new": "pour chaque $A\\subseteq S$"
+  },
+  "note": ""
+ },
+ {
+  "page": 424,
+  "where": "end of the sentence before (4.5.25)",
+  "scan": "A ≠∅ (no comma)",
+  "tex": "$A\\ne\\varnothing$,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$A\\ne\\varnothing$,",
+   "new": "$A\\ne\\varnothing$"
+  },
+  "note": "The TeX adds this comma."
+ },
+ {
+  "page": 424,
+  "where": "(4.5.25), left-hand side",
+  "scan": "card (V*_A(F_{q^ν}))",
+  "tex": "\\operatorname{card}V_A^*(\\mathbb F_{q^\\nu})",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\operatorname{card}V_A^*(\\mathbb F_{q^\\nu})\n=",
+   "new": "\\operatorname{card}(V_A^*(\\mathbb F_{q^\\nu}))\n="
+  },
+  "note": "The print has parentheses after card."
+ },
+ {
+  "page": 424,
+  "where": "(4.5.25), first exponent",
+  "scan": "(q^ν-1)^{car(A)-1}",
+  "tex": "\\operatorname{car}(A)-1",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(q^\\nu-1)^{\\operatorname{card}(A)-1}",
+  "note": "The TeX keeps the printed reading."
+ },
+ {
+  "page": 424,
+  "where": "(4.5.25), trace term",
+  "scan": "tr((α_B))^{ord(q^ν)})",
+  "tex": "\\operatorname{tr}\\!\\left((\\alpha_B)^{\\operatorname{ord}(q^\\nu)}\\right)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "(\\alpha_B)^{\\operatorname{ord}(q^\\nu)}\\right).\n\\end{equation}",
+   "new": "(\\alpha_B))^{\\operatorname{ord}(q^\\nu)}\\right).\n\\end{equation}"
+  },
+  "corrected": "\\operatorname{tr}((\\alpha_B)^{\\operatorname{ord}(q^\\nu)})",
+  "note": "The TeX silently corrects the misplaced parenthesis."
+ },
+ {
+  "page": 424,
+  "where": "'Notons que α donc les α_B étant'",
+  "scan": "Notons que α donc les α_B étant (no commas)",
+  "tex": "$\\alpha$, donc les $\\alpha_B$, étant",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "que $\\alpha$, donc les $\\alpha_B$, étant",
+   "new": "que $\\alpha$ donc les $\\alpha_B$ étant"
+  },
+  "note": "The TeX adds both commas."
+ },
+ {
+  "page": 424,
+  "where": "same sentence, 'τ^{-1} linéaire'",
+  "scan": "τ^{-1} linéaire (no hyphen)",
+  "tex": "$\\tau^{-1}$-linéaire",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\tau^{-1}$-linéaire, les",
+   "new": "$\\tau^{-1}$ linéaire, les"
+  },
+  "corrected": "$\\tau^{-1}$-linéaire",
+  "note": "The TeX silently corrects; the print elsewhere writes τ^{-1}-linéaire."
+ },
+ {
+  "page": 424,
+  "where": "(4.5.30), end",
+  "scan": "g(t)/g(qt) (no full stop)",
+  "tex": "g(t)/g(qt).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "g(t)/g(qt).",
+   "new": "g(t)/g(qt)"
+  },
+  "note": "The TeX adds this full stop."
+ },
+ {
+  "page": 425,
+  "where": "(4.5.31)",
+  "scan": "card (V(F_{q^ν}))",
+  "tex": "\\operatorname{card}V(\\mathbb F_{q^\\nu})",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\operatorname{card}V(\\mathbb F_{q^\\nu})",
+   "new": "\\operatorname{card}(V(\\mathbb F_{q^\\nu}))"
+  },
+  "note": "The print has parentheses after card."
+ },
+ {
+  "page": 425,
+  "where": "(4.5.32), exponent in tr",
+  "scan": "(α_B)^{ν ord q}",
+  "tex": "\\nu\\operatorname{ord}(q)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "{\\nu\\operatorname{ord}(q)}",
+   "new": "{\\nu\\operatorname{ord}q}"
+  },
+  "note": "There are no parentheses around q in the print."
+ },
+ {
+  "page": 425,
+  "where": "(4.5.32), end",
+  "scan": "t^ν/ν ) (no comma)",
+  "tex": "\\right),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\frac{t^\\nu}{\\nu}\\right),",
+   "new": "\\frac{t^\\nu}{\\nu}\\right)"
+  },
+  "note": "The TeX adds this comma."
+ },
+ {
+  "page": 425,
+  "where": "equation number after '(4.5.27) se récrit'",
+  "scan": "(4.5.23)",
+  "tex": "\\tag{4.5.23}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\tag{4.5.33}",
+  "note": "The TeX keeps the printed reading. The number repeats (4.5.23); it follows (4.5.32)."
+ },
+ {
+  "page": 425,
+  "where": "'et définissons une filtration sur'",
+  "scan": "filtration underlined",
+  "tex": "une filtration sur",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "une filtration sur",
+   "new": "une \\underline{filtration} sur"
+  },
+  "note": ""
+ },
+ {
+  "page": 425,
+  "where": "(4.6.3)",
+  "scan": "φ(F^i) ⊂ F^{i+1} (no comma)",
+  "tex": "F^{i+1},",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "F^{i+1}, \\tag{4.6.3}",
+   "new": "F^{i+1} \\tag{4.6.3}"
+  },
+  "note": "The TeX adds this comma."
+ },
+ {
+  "page": 425,
+  "where": "(4.6.4)",
+  "scan": "δ(F^i) ⊂ F^i (no comma)",
+  "tex": "F^i,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "F^i, \\tag{4.6.4}",
+   "new": "F^i \\tag{4.6.4}"
+  },
+  "note": "The TeX adds this comma."
+ },
+ {
+  "page": 425,
+  "where": "(4.6.7)",
+  "scan": "jd < card(B) (no comma)",
+  "tex": "jd<\\operatorname{card}(B),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "jd<\\operatorname{card}(B),",
+   "new": "jd<\\operatorname{card}(B)"
+  },
+  "note": "The TeX adds this comma."
+ }
+]

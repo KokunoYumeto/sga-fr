@@ -1,0 +1,230 @@
+{
+  "findings": [
+    {
+      "page": 336,
+      "where": "Corollaire 8.7.9, opening sentence",
+      "scan": "Soient i un objet I",
+      "tex": "Soient\\pageoriginale $i$ un objet $I$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Soient $i$ un objet de $I$",
+      "note": "The print omits « de » before I. The TeX keeps the omission."
+    },
+    {
+      "page": 336,
+      "where": "Formula (8.7.9.1), left-hand side",
+      "scan": "\\Ext^n_{\\underrightarrow{A}}(\\underleftarrow{F}), \\mu_i^{\\ast}(L_i), \\mu_i^{\\ast}(M_i))",
+      "tex": "\\Ext^n_{\\underrightarrow{A}}(\\underleftarrow{F}, \\mu^{\\ast}_i(L_i),\n\\mu^{\\ast}_i (M_i))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Ext^n_{\\underrightarrow{A}}(\\underleftarrow{F}, \\mu_i^{\\ast}(L_i), \\mu_i^{\\ast}(M_i))",
+      "note": "The print has an extra closing parenthesis immediately after F. The TeX silently removes it."
+    },
+    {
+      "page": 336,
+      "where": "Proof of Proposition 9.0, description of the site",
+      "scan": "dans lequel est limites projectives finies",
+      "tex": "dans lequel est limites projectives finies",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "dans lequel les limites projectives finies",
+      "note": "Printed « est » is a typo for « les ». The TeX keeps it."
+    },
+    {
+      "page": 336,
+      "where": "Proof of Proposition 9.0, choice of an object of the site",
+      "scan": "$U \\in \\ob \\Ss$",
+      "tex": "$u \\in \\ob \\Ss$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$u \\in \\ob \\Ss$",
+        "new": "$U \\in \\ob \\Ss$"
+      },
+      "note": "The printed object is uppercase U, consistently with the following F(U) and S/U."
+    },
+    {
+      "page": 337,
+      "where": "Lemme 9.1, name of the sheaf",
+      "scan": "\\Ff",
+      "tex": "\\mathfrak{F}",
+      "kind": "font",
+      "confidence": "high",
+      "fix": {
+        "old": "\\mathfrak{F}",
+        "new": "\\Ff"
+      },
+      "note": "The print uses the same handwritten script F as elsewhere in this argument, not a distinct Fraktur F."
+    },
+    {
+      "page": 337,
+      "where": "First paragraph after Lemme 9.1, « Les foncteurs … »",
+      "scan": "Les foncteurs $p(\\Hh)$ et $P(V)$",
+      "tex": "Les\nfoncteurs $P(\\Hh)$ et $P(V)$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "Les foncteurs $P(\\Hh)$ et $P(V)$",
+      "note": "The first functor has a lowercase p in the print. The TeX silently corrects it to the previously defined uppercase P."
+    },
+    {
+      "page": 337,
+      "where": "Definition of refinement",
+      "scan": "$P$ est la restriction de $Q$ à $J$",
+      "tex": "$P$ est la restriction de $Q$ à\n$J$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$P$ est la restriction de $Q$ à $I$",
+      "note": "Since I is the subset of J indexing P, the restriction must be to I. The TeX keeps the printed J."
+    },
+    {
+      "page": 337,
+      "where": "Lemme 9.3, final clause",
+      "scan": "dans l'image de l'un des $(V_i)$",
+      "tex": "dans l'image de l'un des $(V_i)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "dans l'image de l'un des $Q(V_i)$",
+      "note": "The print omits Q before (V_i). The TeX keeps the omission."
+    },
+    {
+      "page": 337,
+      "where": "Proof of Lemme 9.3, last parenthetical condition",
+      "scan": "pour $i > i_{\\circ}$",
+      "tex": "pour $i >\ni_{\\circ}$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "pour $i \\geq i_{\\circ}$",
+      "note": "The construction was defined for i ≥ i₀; the strict inequality can exclude the entire tail when i₀ is maximal. The TeX keeps the printed >."
+    },
+    {
+      "page": 337,
+      "where": "Page boundary after the final colon",
+      "scan": "Page 337 ends after « (pour i > i₀) : ». The display F(U_i) → ∏_k F(U_{i,k}) opens page 338.",
+      "tex": "$$\n\\Ff (U_i) \\to \\prod_k \\Ff (U_{i, k})\n$$",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The display on source lines 7251–7253 belongs to page 338, although the page-337 cut only allows its last line to extend onto page 338. Correct the cut annotations; do not move source text."
+    },
+    {
+      "page": 338,
+      "where": "Proof of Lemme 9.3, indexed inductive limit",
+      "scan": "\\varinjlim_{i > i_\\circ} \\Ff(U_{i,k})",
+      "tex": "\\varinjlim_{i > i_\\circ} \\Ff\n(U_{i, k})",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\varinjlim_{i \\geq i_\\circ} \\Ff(U_{i,k})",
+      "note": "As in the condition at the foot of page 337, the tail should include i₀. The following definition of I₀ explicitly uses ≥. The TeX keeps the printed >."
+    },
+    {
+      "page": 338,
+      "where": "Proof of Lemme 9.4, condition (ii)",
+      "scan": "l'image de f sans Q_e(V)",
+      "tex": "l'image de $f$ sans $Q_e(V)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "l'image de $f$ dans $Q_e(V)$",
+      "note": "Printed « sans » is a typo for « dans ». The TeX keeps it."
+    },
+    {
+      "page": 339,
+      "where": "Construction of Q_e, parenthetical alternative",
+      "scan": "(resp. en prenant Q_e = Q'_e si e = ∞ .",
+      "tex": "(\\resp en prenant $Q_e =\nQ'_e$ si $e = \\infty$).",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\resp en prenant $Q_e = Q'_e$ si $e = \\infty$).",
+      "note": "The print leaves the parenthesis opened before « resp. » unclosed. The TeX silently supplies its closing parenthesis."
+    },
+    {
+      "page": 339,
+      "where": "Inductive construction of Q_n, condition (iii)",
+      "scan": "\\ss_{Q_n} \\neq \\ss'_{Q^{n}}",
+      "tex": "\\ss_{Q_n} \\neq \\ss'_{Q_n}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\ss_{Q_n} \\neq \\ss'_{Q_n}",
+      "note": "On the right, the printed n is raised beside Q instead of being its lower index. The TeX silently corrects the index placement."
+    },
+    {
+      "page": 339,
+      "where": "Corollaire 9.5, name of the cardinal",
+      "scan": "Soit e le cardinal",
+      "tex": "Soit $e$ le cardinal",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Soit $c$ le cardinal",
+      "note": "The bounds in both (i) and (ii) use c, not e. The TeX keeps the printed e."
+    },
+    {
+      "page": 339,
+      "where": "Corollaire 9.5, formula defining the cardinal",
+      "scan": "sup( [blank] )_o, card(Fl S))",
+      "tex": "$\\sup(\\quad)_{\\circ}$, $\\card(\\text{\\rm Fl }\n\\Ss))$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\sup(\\aleph_0, \\card(\\text{\\rm Fl }\\Ss))",
+      "note": "The printed first argument is unfinished: a blank followed by a closing parenthesis with subscript o. The TeX preserves this malformed expression. The intended first cardinal is aleph-zero."
+    },
+    {
+      "page": 339,
+      "where": "Corollaire 9.5, existence of the set of points",
+      "scan": "il existe un ensemble très dense de points",
+      "tex": "il existe un ensemble très dense de points",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "il existe un ensemble très dense $X$ de points",
+      "note": "The print omits the name X of the set subsequently used in (i) and (ii). The TeX keeps the omission."
+    },
+    {
+      "page": 340,
+      "where": "Bibliography [1], title",
+      "scan": "Calculus of Fraction",
+      "tex": "Calculus   of Fraction",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Calculus of Fractions",
+      "note": "The printed title has singular « Fraction » instead of « Fractions ». The TeX keeps this bibliographical typo."
+    },
+    {
+      "page": 340,
+      "where": "Bibliography [4], EGA part number",
+      "scan": "Géométrie Algébrique IV 1,",
+      "tex": "Géométrie Algébrique IV I,",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "Géométrie Algébrique IV I,",
+        "new": "Géométrie Algébrique IV 1,"
+      },
+      "note": "The printed part number after IV is Arabic 1, not Roman I."
+    },
+    {
+      "page": 340,
+      "where": "Bibliography [7], article title",
+      "scan": "Sur quelques points d'algèbres homologiques",
+      "tex": "Sur quelques points d'algèbres\n  homologiques",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Sur quelques points d'algèbre homologique",
+      "note": "The article's title uses the singular « d'algèbre homologique ». The TeX retains the printed plurals."
+    }
+  ],
+  "coordinator": "336: 1/3; 337: 2/4; 338: 0/2; 339: 0/5; 340: 1/2 (normal/misprint; marker counted as normal).\nMarker 337–338: assign the opening display on source lines 7251–7253 to page 338; page 337 ends at the preceding colon."
+}

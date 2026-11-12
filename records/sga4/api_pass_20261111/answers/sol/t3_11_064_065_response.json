@@ -1,0 +1,189 @@
+{
+ "id": "resp_04984873f1c80793006af45379560487d2823627254ffe4e38",
+ "object": "response",
+ "created_at": 1794397049,
+ "status": "completed",
+ "access_programs": {
+  "cyber": "standard"
+ },
+ "background": true,
+ "billing": {
+  "payer": "developer"
+ },
+ "completed_at": 1794397224,
+ "error": null,
+ "frequency_penalty": 0.0,
+ "image": {
+  "context_compression": "disabled"
+ },
+ "incomplete_details": null,
+ "max_output_tokens": 128000,
+ "max_tool_calls": null,
+ "model": "gpt-6.1-sol",
+ "moderation": null,
+ "output": [
+  {
+   "id": "rs_04984873f1c80793006af4537c991887d2bc6b04f0d118588a",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af4538807d887d2a73e6928aa630717",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af4538fbec887d28e7bced627366c13",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af45399a3a887d2858248312dc775a8",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af453a46e6c87d281d64a593e79461e",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af453ad768487d29d4343a1b4c08dad",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af453bb6e6c87d29f4a245530bdc52c",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af453c5fb8c87d2aa0bb1b6c9311351",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af453d07aa887d2afac3a65d69b17a7",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af453dcdbd087d28d82980b5c567487",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af453e7fd4087d2bcf571f90ab60d50",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af453f227d887d29d51b80f439253db",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af453fd406887d2b3806c6d2b0ca325",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af4540b206487d299bbe1221be5a768",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_04984873f1c80793006af45418753c87d2b671559fdace3207",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "msg_04984873f1c80793006af4541fcbd887d2a1f997f4179eff45",
+   "type": "message",
+   "status": "completed",
+   "content": [
+    {
+     "type": "output_text",
+     "annotations": [],
+     "logprobs": [],
+     "text": "{\n  \"findings\": [\n    {\n      \"page\": 64,\n      \"where\": \"Mention de l'auteur\",\n      \"scan\": \"par M. ARTIN\",\n      \"tex\": \"M. Artin\",\n      \"kind\": \"missing\",\n      \"confidence\": \"high\",\n      \"fix\": {\n        \"old\": \"M. Artin\",\n        \"new\": \"par M. Artin\"\n      },\n      \"note\": \"Le mot « par » est omis.\"\n    },\n    {\n      \"page\": 64,\n      \"where\": \"Entre la mention de l'auteur et la section 1\",\n      \"scan\": \"Sommaire :\\n1. Introduction\\n2. Existence de sections hyperplanes assez générales\\n3. Construction des bons voisinages\\n4. Le théorème de comparaison.\",\n      \"tex\": \"\\\\section{Introduction}\",\n      \"kind\": \"missing\",\n      \"confidence\": \"high\",\n      \"fix\": {\n        \"old\": \"\\\\section{Introduction}\",\n        \"new\": \"Sommaire :\\n\\\\begin{enumerate}\\n\\\\item Introduction\\n\\\\item Existence de sections hyperplanes assez générales\\n\\\\item Construction des bons voisinages\\n\\\\item Le théorème de comparaison.\\n\\\\end{enumerate}\\n\\n\\\\section{Introduction}\"\n      },\n      \"note\": \"Le titre du sommaire et ses quatre entrées sont absents.\"\n    },\n    {\n      \"page\": 65,\n      \"where\": \"Théorème 2.1 (ii), « un système… »\",\n      \"scan\": \"un système d'hyperplane de degré\",\n      \"tex\": \"un système d'hyperplans de\",\n      \"kind\": \"misprint_in_print\",\n      \"confidence\": \"high\",\n      \"fix\": null,\n      \"corrected\": \"un système d'hyperplans de\",\n      \"note\": \"Le mot imprimé se termine par « e ». Le TeX corrige silencieusement cette coquille en « hyperplans ».\"\n    },\n    {\n      \"page\": 65,\n      \"where\": \"Dernier paragraphe, condition sur le corps k\",\n      \"scan\": \"si k n'est pas défini\",\n      \"tex\": \"si $k$ n'est pas défini\",\n      \"kind\": \"misprint_in_print\",\n      \"confidence\": \"high\",\n      \"fix\": null,\n      \"corrected\": \"si $k$ n'est pas infini\",\n      \"note\": \"Le TeX conserve la coquille « défini » pour « infini » : sur un corps fini, l'ouvert dense considéré peut ne contenir aucun point rationnel.\"\n    },\n    {\n      \"page\": 65,\n      \"where\": \"Fin de la dernière ligne, raccord avec la page 66\",\n      \"scan\": \"les hyperplans de degré d passant par P sont paramé-\",\n      \"tex\": \"les hyperplans de degré $d$ passant par $P$ sont\",\n      \"kind\": \"marker\",\n      \"confidence\": \"high\",\n      \"fix\": null,\n      \"note\": \"Le segment fourni s'arrête après « sont », tandis que la page imprime encore « paramé- », début d'un mot partagé avec la page 66. Vérifier le raccord avec le segment suivant ; ne pas ajouter ce fragment au texte.\"\n    }\n  ],\n  \"coordinator\": \"64 : 2/0 ; 65 : 1/2 (normal/misprint, marker compris dans normal).\\nMarker 65–66 : le scan finit par « sont paramé- », le segment TeX après « sont » ; vérifier le mot partagé dans le segment suivant.\"\n}"
+    }
+   ],
+   "phase": "final_answer",
+   "role": "assistant"
+  }
+ ],
+ "parallel_tool_calls": true,
+ "presence_penalty": 0.0,
+ "previous_response_id": null,
+ "prompt_cache_key": null,
+ "prompt_cache_retention": "24h",
+ "reasoning": {
+  "context": "all_turns",
+  "effort": "max",
+  "mode": "standard",
+  "summary": null
+ },
+ "safety_identifier": null,
+ "service_tier": "flex",
+ "store": true,
+ "temperature": 1.0,
+ "text": {
+  "format": {
+   "type": "text"
+  },
+  "verbosity": "medium"
+ },
+ "tool_choice": "auto",
+ "tool_usage": {
+  "image_gen": {
+   "input_tokens": 0,
+   "input_tokens_details": {
+    "image_tokens": 0,
+    "text_tokens": 0
+   },
+   "output_tokens": 0,
+   "output_tokens_details": {
+    "image_tokens": 0,
+    "text_tokens": 0
+   },
+   "total_tokens": 0
+  },
+  "web_search": {
+   "num_requests": 0
+  }
+ },
+ "tools": [],
+ "top_logprobs": 0,
+ "top_p": 0.98,
+ "truncation": "disabled",
+ "usage": {
+  "input_tokens": 13833,
+  "input_tokens_details": {
+   "cache_write_tokens": 13830,
+   "cached_tokens": 0
+  },
+  "output_tokens": 8330,
+  "output_tokens_details": {
+   "reasoning_tokens": 7549
+  },
+  "total_tokens": 22163
+ },
+ "user": null,
+ "metadata": {}
+}

@@ -1,0 +1,172 @@
+{
+  "findings": [
+    {
+      "page": 436,
+      "where": "Premier paragraphe, « Traduite en terme d'anneaux »",
+      "scan": "Traduite en terme d'anneaux",
+      "tex": "Traduite en terme d'anneaux",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Traduite en termes d'anneaux",
+      "note": "Faute de nombre dans la locution « en termes de » ; le TeX la conserve."
+    },
+    {
+      "page": 436,
+      "where": "Preuve du lemme 6.3.6, après « de F »",
+      "scan": "de $\\Ff $ localement sur $S$",
+      "tex": "de $\\Ff $\\sisi{ l}{. L}ocalement\nsur $S$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "de $\\Ff $. Localement sur $S$",
+      "note": "Le point séparant les deux phrases manque dans l'imprimé. Le TeX le rétablit avec \\sisi."
+    },
+    {
+      "page": 436,
+      "where": "Proposition 6.3.7, formule finale",
+      "scan": "u(\\sigma(\\Ff ))=\\sigma(u_{\\ast}\\Ff )",
+      "tex": "\\sisi{u}{(\\Sym^n_S u)}(\\sigma(\\Ff ))=\\sigma(u_{\\ast}\\Ff )",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "(\\Sym^n_S u)(\\sigma(\\Ff ))=\\sigma(u_{\\ast}\\Ff )",
+      "note": "La formule nécessite le morphisme induit sur les puissances symétriques, et non le morphisme u : X → Y lui-même. Le TeX explicite cette correction avec \\sisi."
+    },
+    {
+      "page": 437,
+      "where": "6.3.8, référence à Grothendieck",
+      "scan": "[GROTHENDIECK [1])",
+      "tex": "\\sisi{[}{}\\textsc{Grothendieck} \\cite{SGA4-17:Gr})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\textsc{Grothendieck} \\cite{SGA4-17:Gr})",
+      "note": "L'imprimé ouvre la parenthèse bibliographique par un crochet et la ferme par une parenthèse. Le TeX conserve le crochet dans le premier argument de \\sisi et le supprime dans la lecture éditée."
+    },
+    {
+      "page": 437,
+      "where": "6.3.8, définition du faisceau des diviseurs",
+      "scan": "qui sont finis sur S et de degré n",
+      "tex": "qui sont \\emph{finis} sur $S$ et de degré $n$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "qui sont \\emph{finis} sur $S'$ et de degré $n$",
+      "note": "Les diviseurs sur X' associés au schéma test S' doivent être finis sur S'. La prime manque dans l'imprimé ; le TeX conserve cette omission."
+    },
+    {
+      "page": 437,
+      "where": "Paragraphe précédant (6.3.8.1), référence définissant t(E)",
+      "scan": "(6.3.4.3)",
+      "tex": "\\sisi{(6.3.4.3)}{\\eqhyperref[XVII.eq6.3.4.2]{6.3.4.2}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\eqhyperref[XVII.eq6.3.4.2]{6.3.4.2}",
+      "note": "La définition de t est référencée (6.3.4.2), comme le rappelle aussi 6.3.7.1. Le TeX corrige le numéro imprimé avec \\sisi."
+    },
+    {
+      "page": 438,
+      "where": "Preuve de 6.3.9, b), « entre schéma lisses »",
+      "scan": "entre schéma lisses sur S",
+      "tex": "entre schéma\\sisi{}{s} lisses sur $S$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "entre schémas lisses sur $S$",
+      "note": "Le s du pluriel manque dans l'imprimé. Le TeX le rétablit avec \\sisi."
+    },
+    {
+      "page": 439,
+      "where": "Démonstration de 6.3.11.1, a), formule concernant p_*",
+      "scan": "p_{\\ast}(\\Oo_{S(\\Ff )})\\simeq\\Oo_{\\delta(p_{\\ast}\\Ff )}",
+      "tex": "p_{\\ast}(\\Oo_{\\sisi{S}{\\delta}(\\Ff )})\\simeq\n\\Oo_{\\delta(p_{\\ast}\\Ff )}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "p_{\\ast}(\\Oo_{\\delta(\\Ff )})\\simeq\\Oo_{\\delta(p_{\\ast}\\Ff )}",
+      "note": "L'imprimé porte un S au lieu de δ dans le premier indice. Le TeX corrige cette lettre avec \\sisi."
+    },
+    {
+      "page": 439,
+      "where": "Dernière ligne, identification de X à la droite affine",
+      "scan": "X=A'_{S}",
+      "tex": "X=\\sisi{A'}{\\AAA^1}_{S}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "X=\\AAA^{1}_{S}",
+      "note": "L'imprimé emploie une prime à la place de l'exposant 1 de la droite affine. Le TeX reproduit cette lecture dans le premier argument de \\sisi et la corrige dans le second."
+    },
+    {
+      "page": 440,
+      "where": "Première ligne, identification de X à la droite affine",
+      "scan": "X=A'_{S}",
+      "tex": "X=\\AAA\\sisi{'}{^1}_{S}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "X=\\AAA^{1}_{S}",
+      "note": "Comme à la fin de la page précédente, la prime imprimée tient fautivement lieu d'exposant 1. Le TeX la corrige avec \\sisi."
+    },
+    {
+      "page": 440,
+      "where": "Paragraphe « Pour vérifier 6.3.11 »",
+      "scan": "Pour vérifier 6.3.11",
+      "tex": "Pour vérifier \\sisi{6.3.11}{\\hyperref[XVII.prop6.3.11.1]{6.3.11.1}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Pour vérifier \\hyperref[XVII.prop6.3.11.1]{6.3.11.1}",
+      "note": "La proposition à vérifier est 6.3.11.1. Le TeX complète le numéro imprimé avec \\sisi."
+    },
+    {
+      "page": 440,
+      "where": "Phrase suivant l'égalité des déterminants",
+      "scan": "Pour f=P(T)",
+      "tex": "Pour $\\sisi{f}{\\varphi}=P(T)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Pour $\\varphi=P(T)$",
+      "note": "La section considérée est φ, non le morphisme f. Le TeX corrige la lettre imprimée avec \\sisi."
+    },
+    {
+      "page": 440,
+      "where": "Début du cas général, b)",
+      "scan": "Explicitons d'abord",
+      "tex": "Explicitions d'abord",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Explicitions",
+        "new": "Explicitons"
+      },
+      "note": "Le TeX ajoute un i absent des deux scans."
+    },
+    {
+      "page": 440,
+      "where": "Corollaire 6.3.11.2, parenthèse sur les conoyaux",
+      "scan": "sur S et à fibres quasi-finies",
+      "tex": "sur $S$ et à \\sisi{fibres}{supports} quasi-finies",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "sur $S$ et à supports quasi-finis",
+      "note": "La quasi-finitude concerne les supports des faisceaux. Le TeX corrige « fibres » en « supports » avec \\sisi."
+    },
+    {
+      "page": 440,
+      "where": "Corollaire 6.3.11.2, phrase précédant (6.3.11.3)",
+      "scan": "les déterminants par rapports à",
+      "tex": "les déterminants par rapports à",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "les déterminants par rapport à",
+      "note": "Le s est fautif dans la locution « par rapport à ». Le TeX conserve la coquille imprimée."
+    }
+  ],
+  "coordinator": "436: 0/3; 437: 0/3; 438: 0/1; 439: 0/2; 440: 1/5 (normal/misprint)."
+}

@@ -1,0 +1,247 @@
+[
+ {
+  "page": 96,
+  "where": "Opening paragraph, identification with the category of sections",
+  "scan": "\\underline{\\Hom}_D(D,\\underline{\\Mod}(E,A))",
+  "tex": "\\Hom_D\n(D,\\Ysheaf{\\Mod}(E,A))",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\Hom_D\n(D,",
+   "new": "\\underline{\\Hom}_D\n(D,"
+  },
+  "note": "The printed underline marks the category-valued Hom, rather than emphasis."
+ },
+ {
+  "page": 96,
+  "where": "1.3.6, target of the inverse-image functor",
+  "scan": "\\varphi^{\\ast}:\\underline{\\Mod}(E',A')\\to\\Mod(E,A)",
+  "tex": "\\varphi^{\\ast} : \\underline{\\Mod}(E', A') \\to \\Mod(E, A)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\varphi^{\\ast} : \\underline{\\Mod}(E', A') \\to \\underline{\\Mod}(E, A)",
+  "note": "The target is the fibred category of modules, whose categorical underline is omitted in the print. The TeX keeps the omission."
+ },
+ {
+  "page": 96,
+  "where": "Final identification following Proposition 1.3.7",
+  "scan": "\\underline{\\Hom}_D(D,\\underline{\\Mod}(E,A))",
+  "tex": "\\Hom_D(D, \\Ysheaf{\\Mod}(E, A))",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\Hom_D(D,",
+   "new": "\\underline{\\Hom}_D(D,"
+  },
+  "note": "The print again uses the underlined, category-valued Hom."
+ },
+ {
+  "page": 97,
+  "where": "Proposition 1.3.10, definition of I",
+  "scan": "isomorphe à un objet",
+  "tex": "isomorphe à un objet",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "isomorphes à un objet",
+  "note": "The adjective qualifies the plural « objets ». The TeX keeps the printed agreement error."
+ },
+ {
+  "page": 97,
+  "where": "Proposition 1.3.10(i), hypothesis on F",
+  "scan": "Pour tout objet F de Mod(\\underline{\\Gamma}(E),A)",
+  "tex": "Pour tout objet $F$ de $\\Mod(\\Ysheaf{\\Gamma}(E), A)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Pour tout objet $F$ de $I_{(E, A)}$ et tout objet $i$ de $D$, $e^{\\ast}_i(F)$ est totalement acyclique.",
+  "note": "The assertion requires F to belong to I; it is false for arbitrary modules, already when D is terminal. The definition of I and the ensuing proof confirm the intended hypothesis. The TeX keeps the printed error."
+ },
+ {
+  "page": 97,
+  "where": "Proof of Proposition 1.3.10(i), functor whose explicit expression is cited",
+  "scan": "e_{i\\ast}",
+  "tex": "$e_{i^{\\ast}}$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$e_{i^{\\ast}}$",
+   "new": "$e_{i\\ast}$"
+  },
+  "note": "In the print the star is part of the subscript i*, not a superscript on i."
+ },
+ {
+  "page": 97,
+  "where": "Proof of Proposition 1.3.10(i), final words",
+  "scan": "il suffit de montrer le lemme suivant",
+  "tex": "il suffit de montrer lemme suivant:",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "montrer lemme suivant:",
+   "new": "montrer le lemme suivant:"
+  },
+  "note": "The article « le » is missing."
+ },
+ {
+  "page": 98,
+  "where": "Explanation following (1.3.10.2), presheaf assignment",
+  "scan": "U \\xrightarrow{t\\in T} \\prod_{t\\in T} H^q(U,F_t)",
+  "tex": "$U \\rightarrow \\prod_{t\\in T} H^q (U,\nF_t)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "U \\rightarrow \\prod_{t\\in T} H^q(U,F_t)",
+  "note": "The print puts a redundant t∈T above the arrow, in addition to the product's index. The TeX silently corrects this stray label by omitting it."
+ },
+ {
+  "page": 98,
+  "where": "Vanishing assertion immediately after (1.3.10.3), product argument",
+  "scan": "H^n(X,\\prod_{t\\in T})=0",
+  "tex": "$H^n(X, \\prod_{t\\in T}F_t) = 0$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^n(X,\\prod_{t\\in T}F_t)=0",
+  "note": "The factors F_t are omitted after the product sign in the print. The TeX silently supplies them."
+ },
+ {
+  "page": 98,
+  "where": "Same vanishing assertion, range of n",
+  "scan": "pour tout n",
+  "tex": "pour tout $n>0$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "pour tout $n>0$",
+  "note": "The printed assertion omits the positive-degree restriction and is generally false for n=0. The TeX silently corrects it."
+ },
+ {
+  "page": 99,
+  "where": "Lemme 1.3.10.5, F and G terms of the displayed exact sequence",
+  "scan": "\\Gamma(\\varphi_{\\ast})(F)) \\to \\Gamma(\\varphi_{\\ast})(G))",
+  "tex": "\\Gamma(\\varphi_{\\ast})(F)) \\to \\Gamma((\\varphi_{\\ast})(G))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Gamma(\\varphi_{\\ast})(F) \\to \\Gamma(\\varphi_{\\ast})(G)",
+  "note": "Both printed terms have an unmatched final parenthesis. The TeX keeps it for F; for G it restores balance by adding an opening parenthesis instead."
+ },
+ {
+  "page": 99,
+  "where": "Lemme 1.3.10.5, H term of the displayed exact sequence",
+  "scan": "\\Gamma(\\varphi_{\\ast}(H))",
+  "tex": "\\Gamma(\\varphi_{\\ast})(H))",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Gamma(\\varphi_{\\ast})(H))",
+   "new": "\\Gamma(\\varphi_{\\ast}(H))"
+  },
+  "note": "The print encloses φ*(H) within Γ's parentheses; it has no closing parenthesis between φ* and (H)."
+ },
+ {
+  "page": 99,
+  "where": "Proof of Corollaire 1.3.11, description of L",
+  "scan": "complexes fermés d'objets",
+  "tex": "complexes fermés d'objets",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "complexes formés d'objets",
+  "note": "« fermés » is a misprint for « formés ». The TeX keeps it."
+ },
+ {
+  "page": 99,
+  "where": "Proof of Corollaire 1.3.11, reference establishing that L is triangulated",
+  "scan": "((1.3.10), (ii))",
+  "tex": "((\\hyperref[Vbis.prop1.3.10]{1.3.10}), (ii))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "((\\hyperref[Vbis.prop1.3.10]{1.3.10}), (iii))",
+  "note": "Stability under finite direct sums, needed for cones, is property (iii), not (ii). The TeX keeps the printed wrong reference."
+ },
+ {
+  "page": 99,
+  "where": "Corollaire 1.3.12, description of the fibre morphism φ_i",
+  "scan": "le morphisme de D-topos annelé induit",
+  "tex": "le morphisme de $D$-topos annelé induit",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "le morphisme de topos annelés induit",
+  "note": "The fibres are ringed topoi, not D-topoi. The TeX keeps the erroneous D-qualified description."
+ },
+ {
+  "page": 99,
+  "where": "Corollaire 1.3.12, upper-left diagram vertex",
+  "scan": "D^{+}(\\underline{\\Gamma}(E),A)",
+  "tex": "D^{+}(\\Gamma(E),A)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "D^{+}(\\Gamma(E),A)",
+   "new": "D^{+}(\\Ysheaf{\\Gamma}(E),A)"
+  },
+  "note": "The printed Γ denotes the section topos and carries its mathematical underline."
+ },
+ {
+  "page": 99,
+  "where": "Corollaire 1.3.12, lower-left diagram vertex",
+  "scan": "D^{+}(\\underline{\\Gamma}(E'),A')",
+  "tex": "D^{+}(\\Gamma(E'),A')",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "D^{+}(\\Gamma(E'),A')",
+   "new": "D^{+}(\\Ysheaf{\\Gamma}(E'),A')"
+  },
+  "note": "The mathematical underline on the section-topos symbol is likewise missing here."
+ },
+ {
+  "page": 99,
+  "where": "Final sentence",
+  "scan": "dont on vérifie que i est un isomorphisme",
+  "tex": "dont on vérifie que $i$ est un isomorphisme",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "dont on vérifie que c'est un isomorphisme",
+  "note": "The isolated printed « i » is erroneous here; no morphism named i has been introduced. The TeX keeps it as a mathematical variable."
+ },
+ {
+  "page": 100,
+  "where": "Remarque 1.3.13, resolutions used to compute the derived functor",
+  "scan": "résolutions formés",
+  "tex": "résolutions formés",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "résolutions formées",
+  "note": "The participle must agree with the feminine plural « résolutions ». The TeX keeps the printed error."
+ },
+ {
+  "page": 100,
+  "where": "Remarque 1.3.13, clause about the introduction",
+  "scan": "i est ce que l'on fait en particulier",
+  "tex": "$i$ est ce que l'on fait en particulier",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "c'est ce que l'on fait en particulier",
+  "note": "The print has « i est » for « c'est ». The TeX keeps the error, setting i as a mathematical variable."
+ },
+ {
+  "page": 100,
+  "where": "2.1.1, projection of the product category",
+  "scan": "La catégorie S × D, muni de",
+  "tex": "La catégorie $S \\times D$, muni de",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "La catégorie $S \\times D$, munie de",
+  "note": "« munie » must agree with « catégorie ». The TeX keeps the printed agreement error."
+ }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "page": 1,
+    "where": "title 'Résumé des premiers exposés de A. Grothendieck'",
+    "scan": "the title is double-underlined (two parallel rules); 'Exposé I', 'rédigé par P. Deligne' and 'Sommaire' have single underlines",
+    "tex": "\\underline{Résumé des premiers exposés de A. Grothendieck}",
+    "kind": "underline",
+    "confidence": "low",
+    "fix": {
+      "old": "\\underline{Résumé des premiers exposés de A. Grothendieck}",
+      "new": "\\underline{\\underline{Résumé des premiers exposés de A. Grothendieck}}"
+    },
+    "note": "Single against double underline only. The diplomatic files have no double underline elsewhere; nested \\underline is plain LaTeX."
+  },
+  {
+    "page": 2,
+    "where": "(0.1.4)",
+    "scan": "à la Hironoka",
+    "tex": "à la Hironoka",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "Hironaka",
+    "note": "Misspelt name in the print; the TeX keeps the printed reading."
+  },
+  {
+    "page": 3,
+    "where": "end of the paragraph 'De plus, ... constructibilité générique', after f_1 : X_1 -> S",
+    "scan": "les R^i f_* Z/l^n (f without the index 1)",
+    "tex": "$R^i f_* \\mathbb{Z}/\\ell^n$",
+    "kind": "misprint_in_print",
+    "confidence": "low",
+    "fix": null,
+    "corrected": "R^i f_{1*} \\mathbb{Z}/\\ell^n",
+    "note": "The morphism was just named f_1 : X_1 -> S; the print drops the index (possibly a deliberate abuse of notation). The TeX keeps the printed reading."
+  },
+  {
+    "page": 4,
+    "where": "displayed congruence after 'on a pour sigma in I'",
+    "scan": "sigma(u) = phi_n(u).u (mod. éléments de valuation > 1/n)",
+    "tex": "\\sigma(u) \\;\\equiv\\; \\phi_n(u).u",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "\\sigma(u) \\;\\equiv\\; \\phi_n(\\sigma).u",
+    "note": "phi_n is the map I/P -> mu_n, so its argument is sigma, not u. Both the PDF scan and the DjVu witness read phi_n(u). The TeX keeps the printed reading."
+  },
+  {
+    "page": 4,
+    "where": "0.4, 'Soient eta un point géométrique générique de S'",
+    "scan": "eta without a bar",
+    "tex": "Soient  $\\eta$  un point géométrique générique",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "Soient  $\\bar\\eta$  un point géométrique générique",
+    "note": "The geometric generic point is eta-bar (base point of pi_1(S-D, eta-bar) in the same paragraph). No bar in either the PDF scan or the DjVu witness, so it is not a scan loss. The TeX keeps the printed reading."
+  },
+  {
+    "page": 4,
+    "where": "Lemme 0.5.1, last sentence",
+    "scan": "V_o-algébres (acute accent)",
+    "tex": "$V_o$\\underline{-algébres henséliennes",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "algèbres",
+    "note": "French spelling algèbres, as the print itself has on p. 5 ('V_o-algèbres voulues'). The TeX keeps the printed reading."
+  },
+  {
+    "page": 4,
+    "where": "convention of Exposé I; in this batch p. 4 (hat Z(1)(k(s-bar)) four times) and p. 5 (F_p five times, Q_l once)",
+    "scan": "the same typewriter double-struck Z, Q, F as on pp. 2-3",
+    "tex": "\\hat{\\mathbf{Z}}(1)(k(\\bar s)) (p. 4); \\mathbf{F}_p[\\pi]_{(\\pi)} (p. 5); GL(n,\\mathbf{Q}_\\ell) (p. 5)",
+    "kind": "font",
+    "confidence": "medium",
+    "fix": null,
+    "note": "Reported once as a convention: expose_I_body.tex writes the print's double-struck letters as \\mathbf{Z}, \\mathbf{Q}, \\mathbf{F} on pp. 4-12 and 21-22, but as \\mathbb{Z}, \\mathbb{Q} on pp. 2-3 and 13. The print uses one double-struck glyph throughout. Replace \\mathbf{Z}, \\mathbf{Q}, \\mathbf{F} by \\mathbb{Z}, \\mathbb{Q}, \\mathbb{F} in the file (\\mathbb is already used there)."
+  },
+  {
+    "page": 5,
+    "where": "(0.5.2), last sentence",
+    "scan": "spectres de F_p[pi]_(pi)-algèbre henséliennes lisses",
+    "tex": "$\\mathbf{F}_p[\\pi]_{(\\pi)}$-algèbre henséliennes",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "algèbres henséliennes",
+    "note": "Singular noun with plural adjectives; the TeX keeps the printed singular."
+  },
+  {
+    "page": 5,
+    "where": "(0.5.3), 'On peut donc supposer les a_i . dans W(k')'",
+    "scan": "a_i . dans: a small separate period after the subscript i",
+    "tex": "supposer les  $a_i$ . dans",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "supposer les  $a_i$  dans",
+    "note": "Stray period in mid-sentence. The dot is distinct from the dot of the subscript i and appears in both the PDF scan and the DjVu witness, so it belongs to the print. The TeX keeps it."
+  },
+  {
+    "page": 5,
+    "where": "Proposition 1.1, 'GL(n,Q_l) . On suppose remplie la condition suivante :'",
+    "scan": "the period after GL(n,Q_l) is not underlined; the underline starts at 'On'",
+    "tex": "\\underline{. On suppose remplie la condition suivante}",
+    "kind": "underline",
+    "confidence": "low",
+    "fix": {
+      "old": "\\underline{. On suppose",
+      "new": ". \\underline{On suppose"
+    },
+    "note": "Underline extent only."
+  }
+]

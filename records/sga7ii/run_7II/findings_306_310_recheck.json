@@ -1,0 +1,135 @@
+[
+ {
+  "page": 306,
+  "where": "first line after (5.8.4.7): 'la flèche en bas est injective,ce qui résulte du fait'",
+  "scan": "injective,ce (no space after the comma)",
+  "tex": "injective,ce qui",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "injective, ce qui",
+  "note": "Typing slip of the print (missing space after the comma). The TeX keeps the printed reading; the corrected layer already has the space (SGA7II-FR-XVIII-072)."
+ },
+ {
+  "page": 307,
+  "where": "(5.8.6.1 bis), top arrow from ~X_S to ~X, label alpha_S",
+  "scan": "alpha_S stands ABOVE the leftward arrow",
+  "tex": "\\arrow[l, \"\\alpha_S\"] (no swap mark: tikz-cd sets the label of a leftward arrow below it)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[l, \"\\alpha_S\"]",
+   "new": "\\arrow[l, \"\\alpha_S\"']"
+  },
+  "note": "Placement only. Compiled: without the swap mark ' the label of a leftward arrow sits below it, with it above, as printed and as the file's own STRUCTURE comment says ('label \\alpha_S ABOVE the shaft')."
+ },
+ {
+  "page": 307,
+  "where": "(5.8.6.1 bis), bottom arrow from S to P^1, label pi",
+  "scan": "pi stands ABOVE the leftward arrow",
+  "tex": "\\arrow[l, \"\\pi\"] (label set below the arrow)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[l, \"\\pi\"]",
+   "new": "\\arrow[l, \"\\pi\"']"
+  },
+  "note": "Placement only, as for alpha_S; the STRUCTURE comment says 'label \\pi ABOVE the shaft'."
+ },
+ {
+  "page": 307,
+  "where": "(5.8.6.2), top arrow from ~X_V to ~X, label alpha_V",
+  "scan": "alpha_V stands ABOVE the leftward arrow",
+  "tex": "\\arrow[l, \"\\alpha_V\"] (label set below the arrow)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[l, \"\\alpha_V\"]",
+   "new": "\\arrow[l, \"\\alpha_V\"']"
+  },
+  "note": "Placement only, as in (5.8.6.1 bis); the STRUCTURE comment says 'label \\alpha_V ABOVE the shaft'."
+ },
+ {
+  "page": 307,
+  "where": "(5.8.6.2), diagonal arrow from ~X down-left to X, label f",
+  "scan": "f stands ABOVE the diagonal shaft (upper-left side); in (5.8.6.1 bis) the f stands below its shaft",
+  "tex": "\\arrow[dl, \"f\"] in (5.8.6.2) (label set below-right of the shaft)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[dl, \"f\"] \\arrow[dd, \"\\rho\"] & \\widetilde{X}_V",
+   "new": "\\arrow[dl, \"f\"'] \\arrow[dd, \"\\rho\"] & \\widetilde{X}_V"
+  },
+  "note": "Placement only. Compiled: without the swap mark the label of a down-left arrow sits below-right of the shaft (right for (5.8.6.1 bis), where the print has f below), with it above-left, as printed in (5.8.6.2)."
+ },
+ {
+  "page": 307,
+  "where": "(5.8.6.2), bottom arrow from V to P^1, label pi mu",
+  "scan": "pi mu stands ABOVE the leftward arrow",
+  "tex": "\\arrow[l, \"{\\pi\\,\\mu}\"] (label set below the arrow)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[l, \"{\\pi\\,\\mu}\"]",
+   "new": "\\arrow[l, \"{\\pi\\,\\mu}\"']"
+  },
+  "note": "Placement only; the STRUCTURE comment says 'label \\pi\\,\\mu ABOVE the shaft'."
+ },
+ {
+  "page": 308,
+  "where": "last display (specialization), left-hand side",
+  "scan": "R^{n-1}ρ_{V_*}Q_ℓ(j))   =   (π μ)* R^{n-1}ρ_*Q_ℓ(j): two closing parentheses after j, one opening",
+  "tex": "\\mathrm{R}^{n-1}\\rho_{\\mathrm{V}_*}\\mathbb{Q}_\\ell(j)) = (\\pi\\ \\mu)^*",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\mathrm{R}^{n-1}\\rho_{\\mathrm{V}_*}\\mathbb{Q}_\\ell(j) = (\\pi\\ \\mu)^*",
+  "note": "Unbalanced parenthesis in the print (checked at 2x). The TeX keeps the printed reading (its SOURCE DEFECTS comment 2). The corrected layer removes it (SGA7II-FR-XVIII-074), but that record calls it a transcription repair: it is a misprint of the print (record wording, as global items 52/55)."
+ },
+ {
+  "page": 309,
+  "where": "cartesian square at the foot of the page, left vertical arrow V -> U, label pi",
+  "scan": "pi stands to the RIGHT of the left vertical arrow (inside the square)",
+  "tex": "\\arrow[d, \"\\pi\"'] (swap mark: label on the left of the arrow)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[d, \"\\pi\"']",
+   "new": "\\arrow[d, \"\\pi\"]"
+  },
+  "note": "Placement only. Compiled: with the swap mark ' tikz-cd sets the label of a downward arrow on its left; without it on the right, as printed (both pi labels of the square stand to the right of their arrows)."
+ },
+ {
+  "page": 309,
+  "where": "display after 'Il suffit donc de démontrer l'injectivité de' (Prim^n(X,Q_ℓ(j)) -> H^1(V,μ*π*E^{n-1}ρ_*Q_ℓ(j)))",
+  "scan": "no equation number at this display; p. 310 says 'de sorte que (5.8.7.3) se factorise'",
+  "tex": "\\begin{equation*}\n\\begin{tikzcd}[column sep=huge]\n",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\begin{equation*}\\tag{5.8.7.3}\n\\begin{tikzcd}[column sep=huge]\n",
+  "note": "No display of the exposé is numbered (5.8.7.2) or (5.8.7.3); the map that p. 310 factorises through H^1(U,ν*E^{n-1}ρ_*Q_ℓ(j)) is this one (μ*π* = π_U*ν*). The TeX keeps the printed reading (no number); the corrected layer already adds the tag (SGA7II-FR-XVIII-075)."
+ },
+ {
+  "page": 310,
+  "where": "first display, right-hand side: μ*π* E^{n-1}ρ_*Q_ℓ(j) = π_U*ν* E^{n-1}ρ_*Q_ℓ",
+  "scan": "the right-hand side ends with ρ_*Q_ℓ, without (j)",
+  "tex": "\\;=\\; \\pi_U^*\\nu^*\\, E^{n-1}\\rho_*\\mathbb{Q}_\\ell\n",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\;=\\; \\pi_U^*\\nu^*\\, E^{n-1}\\rho_*\\mathbb{Q}_\\ell(j)\n",
+  "note": "Tate twist omitted on the right (the left-hand side and every later occurrence have Q_ℓ(j)). The TeX keeps the printed reading; the corrected layer has the twist (SGA7II-FR-XVIII-077)."
+ },
+ {
+  "page": 310,
+  "where": "trace map after 'une application'",
+  "scan": "tr_{π_U}: H^1( V,π_U^* ) ⟶ H^1(U,F(j)): no sheaf after π_U^* (checked at 2.5x), and the target carries a twist (j)",
+  "tex": "H^1(\\ V,\\pi_U^*\\ ) \\longrightarrow H^1(U,F(j))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^1(\\ V,\\pi_U^*F\\ ) \\longrightarrow H^1(U,F)",
+  "note": "The argument F of π_U^* is missing in the print; the (j) of the target does not fit 'l'injectivité de H*(U,F) -> H*(V,π_U^*F)' two lines below (a trace H^1(V,π_U^*F) -> H^1(U,F)). The TeX keeps the printed reading. The corrected layer has this reading (SGA7II-FR-XVIII-078, which also writes tr_{π_U} ∘ π_U^* for the print's tr_π ∘ π*), but that record calls it a transcription repair: the missing F and the (j) are in the print (record wording, as global items 52/55)."
+ }
+]

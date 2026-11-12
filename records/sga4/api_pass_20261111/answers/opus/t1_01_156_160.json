@@ -1,0 +1,63 @@
+[
+ {
+  "page": 157,
+  "where": "proof of Cor. 9.19, 'Tout revient à …'",
+  "scan": "Tout revient à montre que de dernier est π-accessible.",
+  "tex": "Tout revient à %%\nmontrer que ce%%\ndernier est $\\Pi$-accessible.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "montrer que ce dernier",
+  "note": "The print has two typing errors, 'montre' for 'montrer' and 'de' for 'ce'. The TeX silently corrects both."
+ },
+ {
+  "page": 157,
+  "where": "proof of Cor. 9.19, 'ce dernier'",
+  "scan": "ce dernier (two words)",
+  "tex": "ce%%\ndernier",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "montrer que ce%%\ndernier",
+   "new": "montrer que ce dernier"
+  },
+  "note": "The % comment swallows the end of line, so the edition prints 'cedernier' as one word."
+ },
+ {
+  "page": 159,
+  "where": "Exercice 9.20.1 c)",
+  "scan": "indexés par des ensemble d'indices préordonnés",
+  "tex": "indexés par des ensembles%%\n d'indices",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "des ensembles d'indices",
+  "note": "The print reads 'ensemble' without the plural s (the word is overstruck in the typescript). The TeX silently corrects it to 'ensembles'."
+ },
+ {
+  "page": 159,
+  "where": "Exercice 9.20.1 c), 'ensembles d'indices'",
+  "scan": "ensemble d'indices (two words)",
+  "tex": "ensembles%%\n d'indices",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "ensembles%%",
+   "new": "ensembles"
+  },
+  "note": "The % comment plus TeX skipping the leading space of the next line make the edition print 'ensemblesd'indices' as one word."
+ },
+ {
+  "page": 160,
+  "where": "(9.21.2), subscript of L",
+  "scan": "L_{π'_o} (same letter π as elsewhere)",
+  "tex": "L_{\\prod'_{\\circ}}",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "L_{\\prod'_{\\circ}}",
+   "new": "L_{\\Pi'_{\\circ}}"
+  },
+  "note": "The TeX uses the product operator \\prod here instead of the letter \\Pi used for the cardinal everywhere else, including the same formula."
+ }
+]

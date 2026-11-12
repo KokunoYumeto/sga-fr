@@ -1,0 +1,411 @@
+[
+ {
+  "page": 250,
+  "where": "heading of Exposé VI (printed at the top of p. 251; in page_250.tex as the files stand)",
+  "scan": "E X P O S É  VI: capitals (letter-spaced, underlined)",
+  "tex": "\\section*{Exposé VI}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{Exposé VI}",
+   "new": "\\section*{EXPOSÉ VI}"
+  },
+  "note": "Capitals as printed, as 'EXPOSÉ V' on p. 204. Filed under p. 250, where the line stands now: apply before the marker move of p. 251 (the move's anchor '\\section*{E' matches the line before and after this edit)."
+ },
+ {
+  "page": 251,
+  "where": "top of the page: the heading EXPOSÉ VI",
+  "scan": "p. 251 begins with 'EXPOSÉ VI', then 'COHOMOLOGIE L-ADIQUE' and 'par J.P, JOUANOLOU'; p. 250 ends with 'A.2. a) que : E_inf^(n)(X) = grs T^n(X).'",
+  "tex": "'\\section*{Exposé VI}' and '\\begin{center}' (s5.tex lines 8459-8461 diplomatic, 8458-8460 current) end page_250.tex; the folio-251 marker (line 8462 diplomatic) stands inside the center environment, before '\\textbf{COHOMOLOGIE'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 251 really begins at s5.tex line 8459 '\\section*{Exposé VI}' (diplomatic). Exact fix: python -I move_marker.py 5 251 '\\section*{E' --before (simulated in memory on both layers, before and after the EXPOSÉ capitals fix filed under p. 250: the marker then stands after the '\\renewenvironment{prooftext}' line, just before '\\section*{Exposé VI}', and the center environment is whole on p. 251). Text not moved."
+ },
+ {
+  "page": 251,
+  "where": "title of the exposé",
+  "scan": "COHOMOLOGIE L-ADIQUE (a typed capital L, not the hand-drawn script l)",
+  "tex": "\\textbf{COHOMOLOGIE \\(\\ell\\)-ADIQUE}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "COHOMOLOGIE \\(\\ell\\)-ADIQUE",
+   "new": "COHOMOLOGIE L-ADIQUE"
+  },
+  "note": "The capitals title has the typewriter's L; the script l appears only in the text."
+ },
+ {
+  "page": 251,
+  "where": "byline",
+  "scan": "par J.P, JOUANOLOU: no hyphen between the initials, surname in capitals",
+  "tex": "par J.-P. Jouanolou",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "par J.-P. Jouanolou",
+   "new": "par J.P. JOUANOLOU"
+  },
+  "note": "As the byline of Exposé V on p. 204 (logged 'par J.P. JOUANOLOU'). The mark after P is the next item."
+ },
+ {
+  "page": 251,
+  "where": "byline, after the P of 'J.P'",
+  "scan": "a comma: 'J.P, JOUANOLOU' (ring with a descending tail, as the comma of 'l'exposé,' below; the stop after J has no tail)",
+  "tex": "J.P. (after the byline fix above)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "J.P. JOUANOLOU",
+   "new": "J.P, JOUANOLOU"
+  },
+  "corrected": "J.P. JOUANOLOU",
+  "note": "Typing error, comma for full stop; the TeX silently gives the stop. 'old' is the text after the byline fix above (listed first). Drop this item if the mark is read as a stop."
+ },
+ {
+  "page": 251,
+  "where": "Définition 1.1.1, the defined term",
+  "scan": "'faisceau' and '-adique constructible' underlined (the hand-drawn l is not)",
+  "tex": "On appelle faisceau \\(\\ell\\)-adique constructible sur",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "On appelle faisceau \\(\\ell\\)-adique constructible sur",
+   "new": "On appelle \\emph{faisceau} \\(\\ell\\)-\\emph{adique constructible} sur"
+  },
+  "note": "The file's command for the underline (\\emph, as Exposé V and '\\emph{Preuve}')."
+ },
+ {
+  "page": 251,
+  "where": "'il suffit que F_o soit constructible.'",
+  "scan": "'constructible' underlined",
+  "tex": "soit constructible. En effet",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "soit constructible. En effet",
+   "new": "soit \\emph{constructible}. En effet"
+  },
+  "note": ""
+ },
+ {
+  "page": 251,
+  "where": "'En effet, l'assertion est locale et résulte dans le cas noethérien de (V 5.1.2).'",
+  "scan": "no commas around 'dans le cas noethérien'",
+  "tex": "résulte, dans le cas noethérien, de",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "résulte, dans le cas noethérien, de",
+   "new": "résulte dans le cas noethérien de"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 251,
+  "where": "'la sous-catégorie pleine de Hom(N°, Abc(X))'",
+  "scan": "Hom underlined (the functor category)",
+  "tex": "\\Hom(\\mathbb N^{\\circ},\\Abc(X))",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(\\mathbb N^{\\circ},\\Abc(X))",
+   "new": "\\uHom(\\mathbb N^{\\circ},\\Abc(X))"
+  },
+  "note": "As the logged \\uHom(\\NN^\\circ,...) of Exposé V."
+ },
+ {
+  "page": 252,
+  "where": "top of the page: 'l-adiques constructibles.'",
+  "scan": "p. 252 begins 'ℓ-adiques constructibles. Avec les notations de Exp. V :'; p. 251 ends 'engendrée par les faisceaux'",
+  "tex": "'\\(\\ell\\)-' ends the last line of page_251.tex (s5.tex line 8491 diplomatic, 8490 current); page_252.tex begins 'adiques constructibles.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 252 really begins with '\\(\\ell\\)-adiques'. Exact fix: python -I marker_split_word.py 5 252 pull '\\(\\ell\\)-' (simulated in memory on both layers: the line before the marker then ends 'engendrée par les faisceaux' and the line after the marker begins '\\(\\ell\\)-adiques constructibles.', which also removes the space the line break now prints after the hyphen). Independent of the \\uHom fix on the same line of p. 251. Text not moved."
+ },
+ {
+  "page": 252,
+  "where": "'Avec les notations de Exp. V :'",
+  "scan": "Exp. V (abbreviated, no article)",
+  "tex": "de l'Exposé V:",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "de l'Exposé V:",
+   "new": "de Exp. V:"
+  },
+  "note": "The TeX writes the abbreviation out."
+ },
+ {
+  "page": 252,
+  "where": "'s'identifie clairement à la catégorie notée (lZ)-adn(Ab(X)) dans Exp. V.'",
+  "scan": "dans Exp. V.",
+  "tex": "dans l'Exposé V.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "dans l'Exposé V.",
+   "new": "dans Exp. V."
+  },
+  "note": "The TeX writes the abbreviation out."
+ },
+ {
+  "page": 252,
+  "where": "Proposition 1.1.2, 'un objet de la catégorie Hom(N°, Ab(X))'",
+  "scan": "Hom underlined",
+  "tex": "\\Hom(\\mathbb N^\\circ,\\Ab(X))",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(\\mathbb N^\\circ,\\Ab(X))",
+   "new": "\\uHom(\\mathbb N^\\circ,\\Ab(X))"
+  },
+  "note": ""
+ },
+ {
+  "page": 252,
+  "where": "end of the page: '... possède un noyau et un conoyau.' / p. 253 'En ce qui concerne le conoyau'",
+  "scan": "no paragraph break: p. 253 begins flush left ('En ce qui concerne' is not indented; the paragraphs of the exposé begin with a deep indent)",
+  "tex": "a blank line after 'conoyau.' ends page_252.tex",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "un noyau et un conoyau.\n\n",
+   "new": "un noyau et un conoyau.\n"
+  },
+  "note": "Paragraph break added by the TeX; drop it if paragraphing is left to a global pass. The marker line then follows 'conoyau.' directly."
+ },
+ {
+  "page": 253,
+  "where": "'on sait que la restriction de u à V'",
+  "scan": "no comma after V (the display follows)",
+  "tex": "à \\(V\\),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de \\(u\\) à \\(V\\),\n\\[",
+   "new": "de \\(u\\) à \\(V\\)\n\\["
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 253,
+  "where": "display u_V: F_V -> G_V",
+  "scan": "no punctuation after G_V",
+  "tex": "u_V:F_V\\longrightarrow G_V,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow G_V,\n\\]",
+   "new": "\\longrightarrow G_V\n\\]"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 253,
+  "where": "'Si K est le noyau de u_V dans la catégorie Hom(N°, Ab(V))'",
+  "scan": "Hom underlined",
+  "tex": "\\Hom(\\mathbb N^\\circ,\\Ab(V))",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(\\mathbb N^\\circ,\\Ab(V))",
+   "new": "\\uHom(\\mathbb N^\\circ,\\Ab(V))"
+  },
+  "note": ""
+ },
+ {
+  "page": 253,
+  "where": "'Soit alors (V_i)_{i in I} un recouvrement'",
+  "scan": "new paragraph (indented) after '... est un noyau pour u_W .'",
+  "tex": "pour \\(u_W\\). Soit alors",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "pour \\(u_W\\). Soit alors",
+   "new": "pour \\(u_W\\).\n\nSoit alors"
+  },
+  "note": "Paragraph break dropped by the TeX."
+ },
+ {
+  "page": 253,
+  "where": "numbered paragraph 1.1.4",
+  "scan": "1.1.4. (with a full stop)",
+  "tex": "\\subsubsection*{1.1.4}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{1.1.4}",
+   "new": "\\subsubsection*{1.1.4.}"
+  },
+  "note": "As the logged '1.1.' of p. 140 and '5.3.' of p. 165."
+ },
+ {
+  "page": 254,
+  "where": "'Ceci montre que l-adc(X) est canoniquement munie d'une structure de Z_l-catégorie abélienne.'",
+  "scan": "'est canoniquement munie d'une structure de' and '-catégorie abélienne' underlined (not Z_l, not the stop)",
+  "tex": "est canoniquement munie d'une structure de \\(\\mathbb Z_\\ell\\)-catégorie abélienne.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est canoniquement munie d'une structure de \\(\\mathbb Z_\\ell\\)-catégorie abélienne.",
+   "new": "\\emph{est canoniquement munie d'une structure de} \\(\\mathbb Z_\\ell\\)-\\emph{catégorie abélienne}."
+  },
+  "note": ""
+ },
+ {
+  "page": 254,
+  "where": "label 'Terminologie :'",
+  "scan": "'Terminologie :' (underlined word, then a colon; no full stop)",
+  "tex": "\\begin{statement}{Terminologie} (prints 'Terminologie.')",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\begin{statement}{Terminologie}\nOn appellera dans la suite \\(\\mathbb Z_\\ell\\)-faisceaux constructibles les faisceaux \\(\\ell\\)-adiques constructibles.\n\\end{statement}",
+   "new": "\\emph{Terminologie} : On appellera dans la suite \\(\\mathbb Z_\\ell\\)-faisceaux constructibles les faisceaux \\(\\ell\\)-adiques constructibles."
+  },
+  "note": "The statement environment of Exposé VI adds a full stop after its label; the print has ' :', as '\\emph{Preuve} :' and the logged '\\emph{Exemples} :' of p. 228. One edit (environment and label together). Medium only for the form of the label."
+ },
+ {
+  "page": 254,
+  "where": "underlined title 1.2.",
+  "scan": "'1.2. Z_l-faisceaux constants tordus constructibles.' ends with a full stop",
+  "tex": "\\subsubsection*{1.2. \\(\\mathbb Z_\\ell\\)-faisceaux constants tordus constructibles}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "tordus constructibles}",
+   "new": "tordus constructibles.}"
+  },
+  "note": "Underlined title: the full stop dropped."
+ },
+ {
+  "page": 254,
+  "where": "Définition 1.2.1, 'est dit constant tordu si et seulement si'",
+  "scan": "'constant tordu' underlined",
+  "tex": "est dit constant tordu",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est dit constant tordu",
+   "new": "est dit \\emph{constant tordu}"
+  },
+  "note": ""
+ },
+ {
+  "page": 255,
+  "where": "'Se ramenant pour chaque entier n ...'",
+  "scan": "new paragraph (indented) after the display Z_l(1) = (mu_{l^{n+1}})_{n in N} .",
+  "tex": "'\\]' then 'Se ramenant' on the next line, no blank line",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nSe ramenant",
+   "new": "\\]\n\nSe ramenant"
+  },
+  "note": "Paragraph break dropped by the TeX."
+ },
+ {
+  "page": 255,
+  "where": "'on constate que le système projectif Z_l(1) est l-adique.'",
+  "scan": "'adique' underlined (after the hand-drawn l)",
+  "tex": "est \\(\\ell\\)-adique.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est \\(\\ell\\)-adique.",
+   "new": "est \\(\\ell\\)-\\emph{adique}."
+  },
+  "note": ""
+ },
+ {
+  "page": 255,
+  "where": "'En effet K' contiendrait pour tout entier n une racine primitive'",
+  "scan": "'pour tout entier n' underlined",
+  "tex": "contiendrait pour tout entier \\(n\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "contiendrait pour tout entier \\(n\\)",
+   "new": "contiendrait \\emph{pour tout entier} \\(n\\)"
+  },
+  "note": "The underline runs under the n as well; math kept outside \\emph as in the file."
+ },
+ {
+  "page": 255,
+  "where": "'une racine primitive l^n-ème de l'unité'",
+  "scan": "-ème",
+  "tex": "\\(\\ell^n\\)-ième",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\ell^n\\)-ième",
+   "new": "\\(\\ell^n\\)-ème"
+  },
+  "note": ""
+ },
+ {
+  "page": 255,
+  "where": "Rappels 1.2.3: 'X-groupe abélien. Soit maintenant X un préschéma localement noethérien connexe.'",
+  "scan": "one paragraph: 'Soit maintenant X ...' runs on in the line of 'X-groupe abélien.' and the paragraph of Rappels 1.2.3 continues to the display F_a: R_X -> Ensf ,",
+  "tex": "\\end{statement} after 'abélien.' and a new paragraph 'Soit maintenant'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\begin{statement}{Rappels 1.2.3}\n(SGA 1 V 7).",
+   "new": "\\textbf{Rappels 1.2.3.} (SGA 1 V 7)."
+  },
+  "note": "Pair R with the next item (apply both or neither): the label keeps the environment's bold 'Rappels 1.2.3.', the environment is dropped so that the paragraph runs on. Drop the pair if paragraphing is left to a global pass."
+ },
+ {
+  "page": 255,
+  "where": "same place, end of the statement environment",
+  "scan": "no break before 'Soit maintenant'",
+  "tex": "'abélien.', '\\end{statement}', a blank line, 'Soit maintenant'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "abélien.\n\\end{statement}\n\nSoit maintenant",
+   "new": "abélien. Soit maintenant"
+  },
+  "note": "Pair R with the previous item (apply both or neither)."
+ },
+ {
+  "page": 255,
+  "where": "Rappels 1.2.3, 'revêtements étales de T munis d'une structure de X-groupe abélien'",
+  "scan": "X-groupe abélien (a typed X; the sentence is about a préschéma T)",
+  "tex": "\\(X\\)-groupe abélien",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\(T\\)-groupe abélien",
+  "note": "Wrong letter: the étale coverings and the sheaves are on T, so the group structure is over T. The TeX keeps the printed X."
+ },
+ {
+  "page": 255,
+  "where": "'Soit maintenant X un préschéma localement noethérien connexe.'",
+  "scan": "'connexe' underlined",
+  "tex": "noethérien connexe.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "noethérien connexe.",
+   "new": "noethérien \\emph{connexe}."
+  },
+  "note": ""
+ },
+ {
+  "page": 255,
+  "where": "'soit F_a le foncteur :'",
+  "scan": "colon after 'foncteur' (before the display)",
+  "tex": "le foncteur",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "le foncteur\n\\[",
+   "new": "le foncteur:\n\\["
+  },
+  "note": "The TeX drops the colon."
+ }
+]

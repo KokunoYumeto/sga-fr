@@ -1,0 +1,217 @@
+{
+  "findings": [
+    {
+      "page": 296,
+      "where": "Opening paragraph, the covering sieve",
+      "scan": "$R\\hookrightarrow X$ de $C_i/X$",
+      "tex": "$R\n\\hookrightarrow X$ de $C_i / X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "D_i/X",
+      "note": "The sieve must belong to D_i/X, since m_i has domain D_i. The TeX keeps the printed C_i."
+    },
+    {
+      "page": 296,
+      "where": "7.4.13.4, first displayed canonical morphism",
+      "scan": "f^{\\ast} mj \\longleftarrow m_i f^{\\ast}",
+      "tex": "f^{\\ast} mj \\leftarrow m_i f^{\\ast}{\\quoi}.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f^{\\ast} m_j \\leftarrow m_i f^{\\ast}",
+      "note": "The j is printed on the baseline instead of as the index of m. The TeX keeps this misprint."
+    },
+    {
+      "page": 296,
+      "where": "End-of-page cut, source line 5151",
+      "scan": "Page 296 ends with « ce que nous supposerons désormais. »; the heading 7.4.13.5 starts on page 297.",
+      "tex": "\\paragraph{}\\etiquette[7.4.13.5]{VI.par7.4.13.5}",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The heading-number line 5151 also belongs to page 297, whereas the cut comment only identifies line 5152 as overlapping that page. No content edit is proposed."
+    },
+    {
+      "page": 297,
+      "where": "7.4.13.5, « transforme l'objet final de »",
+      "scan": "\\Hhom_{I^{\\circ}}(I^{\\circ}, D')",
+      "tex": "\\Hhom_{I^{\\circ}}\n({I^{\\circ}}, D)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "({I^{\\circ}}, D)$",
+        "new": "({I^{\\circ}}, D')$"
+      },
+      "note": "The printed D has a prime."
+    },
+    {
+      "page": 297,
+      "where": "7.4.13.6, immediately after the factorization",
+      "scan": "où $\\bar{\\alpha}_i$ est le foncteur évident",
+      "tex": "où $\\bar{\\alpha}_{i}$ est le foncteur évident",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\bar{\\alpha}_{i!}",
+      "note": "The running text omits the ! present in the factorization and the following diagram. The TeX keeps the omission."
+    },
+    {
+      "page": 297,
+      "where": "7.4.13.6, definition of m/i",
+      "scan": "$m/i : D_{/e_i}\\to C_{/m(e_i)}$",
+      "tex": "$m/i : D_{/e_i} \\to D_{m(e_i)}$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "D_{m(e_i)}",
+        "new": "C_{/m(e_i)}"
+      },
+      "note": "The printed codomain is the slice of C, with a slash."
+    },
+    {
+      "page": 298,
+      "where": "7.4.13.7, lower-right object of the diagram",
+      "scan": "C",
+      "tex": "C .",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "C^{\\sim}",
+      "note": "The tilde is missing from the printed lower-right object. It must be the total topos C^{\\sim}, as specified immediately above. The TeX keeps the misprint."
+    },
+    {
+      "page": 298,
+      "where": "7.4.13.7, list of left-exact functors",
+      "scan": "\\alpha_i^{\\ast},\\ m^{\\sim}\\text{ et }\\alpha_i^{\\ast}",
+      "tex": "\\alpha^{\\ast}_i,\\ m^{\\sim}\\text{ et }\\alpha^{\\ast}_i",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\alpha_i^{\\ast},\\ m^{\\sim}\\text{ et }\\alpha_{i!}",
+      "note": "The last functor should be alpha_{i!}, the third factor in the preceding composition, not a second alpha_i^{\\ast}. The TeX keeps the printed repetition."
+    },
+    {
+      "page": 298,
+      "where": "7.4.13.7, final sentence",
+      "scan": "un morphisme du site $C_i$ dans le site $D_i$",
+      "tex": "morphisme de site $C_i$ dans le site $D_i$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "morphisme de site $C_i$",
+        "new": "morphisme du site $C_i$"
+      },
+      "note": "The print says « du site », not « de site »."
+    },
+    {
+      "page": 298,
+      "where": "Exercice 7.4.14, final Hom category",
+      "scan": "\\Hhomtop(\\Top(X), T)",
+      "tex": "\\Hhomtop_I(\\Top(X), T)",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hhomtop_I(\\Top(X), T)",
+        "new": "\\Hhomtop(\\Top(X), T)"
+      },
+      "note": "There is no subscript I on this Homtop in the print."
+    },
+    {
+      "page": 299,
+      "where": "Définition 8.1.1, after the reference to 7.1.8",
+      "scan": "est une équivalence de catégories",
+      "tex": "es une équivalence de\ncatégories",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "es une équivalence de",
+        "new": "est une équivalence de"
+      },
+      "note": "The final t of « est » is present in the print."
+    },
+    {
+      "page": 299,
+      "where": "8.1.2, first occurrence of m_1",
+      "scan": "$m_1 : D\\times I\\to F$",
+      "tex": "$m_I : D\n\\times I \\to F$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$m_I : D",
+        "new": "$m_1 : D"
+      },
+      "note": "The printed index is the numeral 1, not capital I."
+    },
+    {
+      "page": 299,
+      "where": "Diagram (8.1.2.1), vertical arrow",
+      "scan": "m\\times\\id_I",
+      "tex": "\\ar[dddd]_{m\\times \\id_I}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "n\\times\\id_I",
+      "note": "The arrow D×I to C×I must be induced by n:D→C. The TeX keeps the printed m."
+    },
+    {
+      "page": 299,
+      "where": "Diagram (8.1.2.1), diagonal arrow",
+      "scan": "m_1",
+      "tex": "\\ar[rrrruuuu]_{m_1}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "m",
+      "note": "The arrow C×I to F is m from Definition 8.1.1, not m_1. The TeX keeps the printed label."
+    },
+    {
+      "page": 300,
+      "where": "Equation (8.1.2.2)",
+      "scan": "\\gamma\\circ m(\\eta\\times\\id)=\\gamma'",
+      "tex": "\\gamma \\circ m (n \\times \\id) = \\gamma'{\\quoi}.",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "(n \\times \\id)",
+        "new": "(\\eta \\times \\id)"
+      },
+      "note": "The print has Greek eta, the isomorphism introduced at the bottom of page 299, not Latin n."
+    },
+    {
+      "page": 300,
+      "where": "First paragraph, « détermine le couple »",
+      "scan": "le couple $(n,\\gamma)$ isomorphisme canonique près",
+      "tex": "le couple $(n, \\gamma)$\nisomorphisme\ncanonique près",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "le couple $(n, \\gamma)$ à isomorphisme canonique près",
+      "note": "The print omits « à » before « isomorphisme ». The TeX keeps the omission."
+    },
+    {
+      "page": 300,
+      "where": "8.1.3, display defining mu_i",
+      "scan": "\\underleftarrow{F}\\times\\{i\\}",
+      "tex": "\\underleftarrow{F} \\times {i}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\underleftarrow{F} \\times {i}",
+        "new": "\\underleftarrow{F} \\times \\{i\\}"
+      },
+      "note": "The singleton braces are printed; ordinary TeX grouping braces do not reproduce them."
+    },
+    {
+      "page": 300,
+      "where": "End-of-page cut, source lines 5350–5351",
+      "scan": "The page ends after « un morphisme de topos ».",
+      "tex": "morphisme de topos $n : D \\to\n\\underleftarrow{F}$\\pageoriginale et une famille d'isomorphismes:",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The formula n:D→F with the left arrow underneath F begins page 301. Its beginning is already on source line 5350, whereas the cut comment only permits line 5351 to overlap page 301. No text should be moved as a transcription edit."
+    }
+  ],
+  "coordinator": "296: 1/2; 297: 2/1; 298: 2/2; 299: 2/2; 300: 3/1 (normal/misprint).\nMarker p.296: extend the announced p.297 overlap to source line 5151, the heading-number line for 7.4.13.5.\nMarker p.300: p.300 ends after « morphisme de topos »; p.301 begins with $n : D \\to \\underleftarrow{F}$, starting on source line 5350."
+}

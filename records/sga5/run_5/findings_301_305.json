@@ -1,0 +1,480 @@
+[
+ {
+  "page": 301,
+  "where": "'au-dessus de U = X - Y, qui est évidente'",
+  "scan": "a typed minus with a crisp dot centred above it (∸) between X and Y",
+  "tex": "$U=X-Y$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$U=X-Y$",
+   "new": "$U=X\\mathbin{\\dot{-}}Y$"
+  },
+  "note": "The typescript's set-difference sign of Exposé VII, written as the applied fix of p. 285 ('\\mathbb C^r\\mathbin{\\dot{-}}0'). Two occurrences on this page (see the next item), so not a stray mark."
+ },
+ {
+  "page": 301,
+  "where": "'un isomorphisme de U' = X' - Y' sur U'",
+  "scan": "the same dotted minus (∸) between X' and Y'",
+  "tex": "$U'=X'-Y'$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$U'=X'-Y'$",
+   "new": "$U'=X'\\mathbin{\\dot{-}}Y'$"
+  },
+  "note": "As the previous item."
+ },
+ {
+  "page": 301,
+  "where": "'Comme f*i_*(1_Y) ∈ H^{2d}_{Y'}(X',μ_{X'}^{⊗d}) et le morphisme de Gysin'",
+  "scan": "no comma after the closing parenthesis, 'et le morphisme' follows directly",
+  "tex": "\\mu_{X'}^{\\otimes d})$, et le morphisme",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mu_{X'}^{\\otimes d})$, et le morphisme",
+   "new": "\\mu_{X'}^{\\otimes d})$ et le morphisme"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 301,
+  "where": "display after 'Appliquant j* aux deux membres de 4.1.1, il vient'",
+  "scan": "'j*f*   (1_Y) = j*j_*(u) .': a clean blank of about two typewriter characters between f* and (1_Y); no i_* (nothing faint in the gap)",
+  "tex": "j^*f^*i_*(1_Y)=j^*j_*(u).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "j^*f^*i_*(1_Y)",
+   "new": "j^*f^*(1_Y)"
+  },
+  "corrected": "j^*f^*i_*(1_Y)",
+  "note": "The typist left out i_* (j* applied to (4.1.1) f*i_*(1_Y) = j_*(u)); the TeX silently supplies it."
+ },
+ {
+  "page": 301,
+  "where": "display (4.1.3), after ξ^{d-1}",
+  "scan": "'a_{d-1}ξ^{d-1} (a_i ∈ ...' with no comma (a speck far smaller than the line's typed commas is not one)",
+  "tex": "u=a_0+a_1\\xi+\\cdots+a_{d-1}\\xi^{d-1},",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xi^{d-1},\n\\qquad",
+   "new": "\\xi^{d-1}\n\\qquad"
+  },
+  "note": "The TeX adds a comma inside the display."
+ },
+ {
+  "page": 301,
+  "where": "display (4.1.3), the clause on a_i",
+  "scan": "'(a_i ∈ H^{2d-2-2i}(Y,μ_Y^{⊗(d-1-i)}))' in parentheses, no full stop at the end",
+  "tex": "a_i\\in H^{2d-2-2i}(Y,\\mu_Y^{\\otimes(d-1-i)}).",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "a_i\\in H^{2d-2-2i}(Y,\\mu_Y^{\\otimes(d-1-i)}).",
+   "new": "(a_i\\in H^{2d-2-2i}(Y,\\mu_Y^{\\otimes(d-1-i)}))"
+  },
+  "note": "The TeX drops the parentheses and adds a full stop at the end of the display (one edit)."
+ },
+ {
+  "page": 302,
+  "where": "top of the page: display (4.1.4)",
+  "scan": "p. 302 begins with '(4.1.4) ξ^d + c_1(Ň)ξ^{d-1} +...+ c_{d-1}(Ň)ξ + c_d(Ň) = 0 ,' then 'on en déduit l'égalité'; p. 301 ends with '... des classes de Chern de Ň' (rest of the page blank)",
+  "tex": "the display (4.1.4) ends page_301.tex; the folio-302 marker follows its '\\]', before 'on en déduit l'%'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 302 really begins at the '\\[' that opens the display (4.1.4) (the line after 'Compte tenu de la relation de définition des classes de Chern de $\\check N$'; diplomatic s5.tex line 10192, current 10187, at the time of the check). Exact fix: python -I move_marker.py 5 302 '\\[' --before (simulated in memory on both layers: the marker then stands on its own line between '... de Chern de $\\check N$' and '\\[', and '\\]' is followed directly by 'on en déduit l'%'). Text not moved; the display matches the print."
+ },
+ {
+  "page": 303,
+  "where": "end of Remarques 4.4 b), 'a été établi par MUMFORD (cf. 9.2)'",
+  "scan": "MUMFORD in capitals",
+  "tex": "par Mumford",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "par Mumford",
+   "new": "par MUMFORD"
+  },
+  "note": "Capitals as printed (as 'GYSIN' in the label of Corollaire 1.5, p. 285)."
+ },
+ {
+  "page": 303,
+  "where": "Corollaire 4.5, 'Sous les hypothèses de 4.1, soient x et y ∈ A•(Y).'",
+  "scan": "underlined: 'Sous les hypothèses de' | 'soient' | 'et'; 4.1, x, y not",
+  "tex": "Sous les hypothèses de 4.1, soient $x$ et $y",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 4.1, soient $x$ et $y",
+   "new": "\\emph{Sous les hypothèses de} 4.1, \\emph{soient} $x$ \\emph{et} $y"
+  },
+  "note": "Exposé VII: the TeX has no underline markup for statements; \\emph is the file's command (as the applied statements of pp. 283-300)."
+ },
+ {
+  "page": 303,
+  "where": "Corollaire 4.5, 'y ∈ A•(Y)'",
+  "scan": "A with a small raised dot",
+  "tex": "A^*(Y)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "A^*(Y)",
+   "new": "A^\\bullet(Y)"
+  },
+  "note": "The TeX has a star; written A^\\bullet as the itemized A• of pp. 290-295 (global issue 89 (d))."
+ },
+ {
+  "page": 303,
+  "where": "Corollaire 4.5, 'On a :'",
+  "scan": "'On a' underlined",
+  "tex": ". On a",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": ". On a",
+   "new": ". \\emph{On a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 303,
+  "where": "Corollaire 4.5, 'On a :' before the display",
+  "scan": "'On a :' (colon before the display)",
+  "tex": "On a, then the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\\[\ni_*(x)i_*(y)=i_*(xy",
+   "new": " :\n\\[\ni_*(x)i_*(y)=i_*(xy"
+  },
+  "note": "The TeX drops the colon before the display. Independent of the underline edit of 'On a' (the two olds are adjacent, not overlapping)."
+ },
+ {
+  "page": 303,
+  "where": "Corollaire 4.6, first line and 'constant r et'",
+  "scan": "underlined: 'Soient' | 'un' | 'schéma' | 'un' | '-Module localement libre de rang' / 'constant r et' (one line under 'constant r et', r included); S, E, O_S not",
+  "tex": "Soient $S$ un schéma, $E$ un $\\mathcal O_S$-Module localement libre de rang constant $r$ et $g",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $S$ un schéma, $E$ un $\\mathcal O_S$-Module localement libre de rang constant $r$ et $g",
+   "new": "\\emph{Soient} $S$ \\emph{un} \\emph{schéma}, $E$ \\emph{un} $\\mathcal O_S$-\\emph{Module localement libre de rang constant $r$ et} $g"
+  },
+  "note": ""
+ },
+ {
+  "page": 303,
+  "where": "Corollaire 4.6, 'le fibré vectoriel dont E est le faisceau des sections. Pour toute section f de X au-dessus de S , on a'",
+  "scan": "underlined: 'le fibré vectoriel dont' | 'est le faisceau des sections. Pour toute section' | 'de' | 'au-dessus de' | 'on a'; E, f, X, S not",
+  "tex": "le fibré vectoriel dont $E$ est le faisceau des sections. Pour toute section $f$ de $X$ au-dessus de $S$, on a",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "le fibré vectoriel dont $E$ est le faisceau des sections. Pour toute section $f$ de $X$ au-dessus de $S$, on a",
+   "new": "\\emph{le fibré vectoriel dont} $E$ \\emph{est le faisceau des sections. Pour toute section} $f$ \\emph{de} $X$ \\emph{au-dessus de} $S$, \\emph{on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 303,
+  "where": "Corollaire 4.6, 'on a :' before the display f_*(1_S) = g*(c_r(E))",
+  "scan": "'on a :' (colon before the display)",
+  "tex": "on a, then the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\\[\nf_*(1_S)=g^*(c_r(E))",
+   "new": " :\n\\[\nf_*(1_S)=g^*(c_r(E))"
+  },
+  "note": "The TeX drops the colon before the display. Independent of the underline edit above (adjacent olds)."
+ },
+ {
+  "page": 303,
+  "where": "proof of 4.6, 'la suite exacte de (EGA IV 17.2.5) appliqué à la situation'",
+  "scan": "no comma after '(EGA IV 17.2.5)'",
+  "tex": "(EGA IV 17.2.5), appliquée",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "17.2.5),",
+   "new": "17.2.5)"
+  },
+  "note": "The TeX adds a comma. Listed before the misprint item 'appliqué' (the two olds do not overlap)."
+ },
+ {
+  "page": 303,
+  "where": "proof of 4.6, 'appliqué à la situation'",
+  "scan": "'appliqué' (no final e)",
+  "tex": "appliquée",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "appliquée",
+   "new": "appliqué"
+  },
+  "corrected": "appliquée",
+  "note": "Agreement error of the typist (the subject is 'la suite exacte'); the TeX silently corrects it."
+ },
+ {
+  "page": 303,
+  "where": "proof of 4.6, the situation S → X → S, label of the first arrow",
+  "scan": "'S --b--> X --g--> S': the first arrow is labelled with a typed b (closed bowl, short ascender), not f",
+  "tex": "S\\xrightarrow{f} X\\xrightarrow{g} S,",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{f}",
+   "new": "\\xrightarrow{b}"
+  },
+  "corrected": "\\xrightarrow{f}",
+  "note": "The arrow is the section f of Corollaire 4.6; typing error, the TeX silently corrects it."
+ },
+ {
+  "page": 303,
+  "where": "proof of 4.6, end of the situation S → X → S",
+  "scan": "no comma after the second S ('S  fournit un isomorphisme')",
+  "tex": "X\\xrightarrow{g} S,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{g} S,",
+   "new": "\\xrightarrow{g} S"
+  },
+  "note": "The TeX adds a comma at the end of the display (inline in the print). Independent of the arrow-label misprint."
+ },
+ {
+  "page": 303,
+  "where": "proof of 4.6, 'N ≃ f*Ω^1_{X/S} et par ailleurs'",
+  "scan": "no comma before 'et par ailleurs'",
+  "tex": "\\Omega^1_{X/S}$, et par ailleurs",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Omega^1_{X/S}$, et par ailleurs",
+   "new": "\\Omega^1_{X/S}$ et par ailleurs"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 303,
+  "where": "Corollaire 4.7, first sentence",
+  "scan": "underlined: 'Sous les hypothèses de' | 'on suppose de plus' | 'lisse et quasi-' / 'projectif sur un corps séparablement clos.' (continuing under 'Alors notant'); 4.6, S not",
+  "tex": "Sous les hypothèses de 4.6, on suppose de plus $S$ lisse et quasi-projectif sur un corps séparablement clos.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 4.6, on suppose de plus $S$ lisse et quasi-projectif sur un corps séparablement clos.",
+   "new": "\\emph{Sous les hypothèses de} 4.6, \\emph{on suppose de plus} $S$ \\emph{lisse et quasi-projectif sur un corps séparablement clos.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 303,
+  "where": "Corollaire 4.7, 'Alors notant σ_X'",
+  "scan": "'Alors notant' with no comma, underlined",
+  "tex": "Alors, notant",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors, notant",
+   "new": "\\emph{Alors notant}"
+  },
+  "note": "The TeX adds a comma; the edit also gives the underline of 'Alors notant'."
+ },
+ {
+  "page": 303,
+  "where": "Corollaire 4.7, 'le cycle section nulle de X et Y = f^{-1}(σ_X) le cycle des zéros de f , on a'",
+  "scan": "underlined: 'le cycle section nulle' / 'de' | 'et' | 'le cycle des zéros de' | 'on a'; X, Y = f^{-1}(σ_X), f not",
+  "tex": "le cycle section nulle de $X$ et $Y=f^{-1}(\\sigma_X)$ le cycle des zéros de $f$, on a",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "le cycle section nulle de $X$ et $Y=f^{-1}(\\sigma_X)$ le cycle des zéros de $f$, on a",
+   "new": "\\emph{le cycle section nulle de} $X$ \\emph{et} $Y=f^{-1}(\\sigma_X)$ \\emph{le cycle des zéros de} $f$, \\emph{on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 303,
+  "where": "Corollaire 4.7, 'on a :' before the display cl_S(Y) = c_r(E)",
+  "scan": "'on a :' (colon before the display)",
+  "tex": "on a, then the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\\[\n\\cl_S(Y)=c_r(E)",
+   "new": " :\n\\[\n\\cl_S(Y)=c_r(E)"
+  },
+  "note": "The TeX drops the colon before the display. Independent of the underline edit above (adjacent olds)."
+ },
+ {
+  "page": 303,
+  "where": "Corollaire 4.7, 'dans H^{2r}(S,μ_S^{⊗r}) .' after the display",
+  "scan": "'dans' underlined",
+  "tex": "dans $H^{2r}(S,",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $H^{2r}(S,",
+   "new": "\\emph{dans} $H^{2r}(S,"
+  },
+  "note": "The 'dans' after the display of Corollaire 4.6 is not underlined (as the TeX)."
+ },
+ {
+  "page": 304,
+  "where": "'On rappelle (IV) qu'on appelle caractéristique d'Euler-Poincaré ℓ-adique de X l'entier'",
+  "scan": "underlined: 'caractéristique' | 'd'Euler-Poincaré' | 'adique' (ℓ- not)",
+  "tex": "qu'on appelle caractéristique d'Euler-Poincaré $\\ell$-adique de $X$ l'entier",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "qu'on appelle caractéristique d'Euler-Poincaré $\\ell$-adique de $X$ l'entier",
+   "new": "qu'on appelle \\emph{caractéristique} \\emph{d'Euler-Poincaré} $\\ell$-\\emph{adique} de $X$ l'entier"
+  },
+  "note": "The defined term, underlined in running text; \\emph is the file's command for the print's underline in this exposé."
+ },
+ {
+  "page": 304,
+  "where": "Corollaire 4.9, first sentence",
+  "scan": "underlined: 'Soit' | 'un schéma lisse, propre, connexe, de dimension' | 'sur un' / 'corps séparablement clos' | 'avec'; X, n, k, car(k) ≠ ℓ not",
+  "tex": "Soit $X$ un schéma lisse, propre, connexe, de dimension $n$ sur un corps séparablement clos $k$, avec $",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $X$ un schéma lisse, propre, connexe, de dimension $n$ sur un corps séparablement clos $k$, avec $",
+   "new": "\\emph{Soit} $X$ \\emph{un schéma lisse, propre, connexe, de dimension} $n$ \\emph{sur un corps séparablement clos} $k$, \\emph{avec} $"
+  },
+  "note": ""
+ },
+ {
+  "page": 304,
+  "where": "Corollaire 4.9, 'Notant p : X → k la projection canonique, on a'",
+  "scan": "underlined: 'Notant' | 'la projection cano-' / 'nique, on a'; p : X → k not",
+  "tex": "Notant $p:X\\to k$ la projection canonique, on a",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Notant $p:X\\to k$ la projection canonique, on a",
+   "new": "\\emph{Notant} $p:X\\to k$ \\emph{la projection canonique, on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 304,
+  "where": "Corollaire 4.9, 'dans Q_ℓ = H^0(k,Q_ℓ) .' after the display",
+  "scan": "'dans' underlined",
+  "tex": "dans $\\mathbb Q_\\ell=",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $\\mathbb Q_\\ell=",
+   "new": "\\emph{dans} $\\mathbb Q_\\ell="
+  },
+  "note": ""
+ },
+ {
+  "page": 304,
+  "where": "proof of 4.9, display c_n(Ω̌^1_X) = j*j_*(1_X)",
+  "scan": "no punctuation at the end of the display ('d'où' follows on the next line)",
+  "tex": "c_n(\\check\\Omega^1_X)=j^*j_*(1_X),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=j^*j_*(1_X),\n\\]",
+   "new": "=j^*j_*(1_X)\n\\]"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 304,
+  "where": "numbered paragraph 4.10 (printed at the top of p. 305)",
+  "scan": "'4.10.' (with a full stop)",
+  "tex": "\\subsubsection*{4.10}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{4.10}",
+   "new": "\\subsubsection*{4.10.}"
+  },
+  "note": "Printed on p. 305; filed under p. 304, where the line stands until the marker move of p. 305 (the edit keeps the move's anchor '\\subsubsection*{4.10', so either order works). As the logged '2.1.', '3.3.', '3.8.' of pp. 285-295."
+ },
+ {
+  "page": 305,
+  "where": "top of the page: numbered paragraph 4.10",
+  "scan": "p. 305 begins with '4.10.  Lorsque X est projectif sur k , ...'; p. 304 ends with '... la caractéristique d'Euler-Poincaré ℓ-adique de X .' (rest of the page blank)",
+  "tex": "'\\subsubsection*{4.10}' ends page_304.tex; the folio-305 marker follows it, before 'Lorsque'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 305 really begins at '\\subsubsection*{4.10}' (diplomatic s5.tex line 10325, current 10320, at the time of the check). Exact fix: python -I move_marker.py 5 305 '\\subsubsection*{4.10' --before (simulated in memory on both layers, with and without the '4.10.' fix filed under p. 304: the marker then stands on its own line after the blank line that ends p. 304, directly before '\\subsubsection*{4.10'). Text not moved."
+ },
+ {
+  "page": 305,
+  "where": "4.10, 'Ceci nous permettra par conséquent de parler'",
+  "scan": "no commas around 'par conséquent'",
+  "tex": "permettra, par conséquent, de parler",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "permettra, par conséquent, de parler",
+   "new": "permettra par conséquent de parler"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 305,
+  "where": "Proposition 4.11, statement",
+  "scan": "underlined: 'Soit' | 'un schéma lisse, projectif, connexe, de dimension' | 'sur' / 'un corps séparablement clos' | 'Alors on a'; X, n, k not",
+  "tex": "Soit $X$ un schéma lisse, projectif, connexe, de dimension $n$ sur un corps séparablement clos $k$. Alors on a",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $X$ un schéma lisse, projectif, connexe, de dimension $n$ sur un corps séparablement clos $k$. Alors on a",
+   "new": "\\emph{Soit} $X$ \\emph{un schéma lisse, projectif, connexe, de dimension} $n$ \\emph{sur un corps séparablement clos} $k$. \\emph{Alors on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 305,
+  "where": "Proposition 4.11, 'Alors on a :' before the display",
+  "scan": "'Alors on a :' (colon before the display)",
+  "tex": "on a, then the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\\[\n\\operatorname{EP}(X)=\\sum",
+   "new": " :\n\\[\n\\operatorname{EP}(X)=\\sum"
+  },
+  "note": "The TeX drops the colon before the display. Independent of the underline edit above (adjacent olds)."
+ },
+ {
+  "page": 305,
+  "where": "proof of 4.11, 'et notons J l'Idéal de l'immersion diagonale'",
+  "scan": "'Idéal' with a capital I",
+  "tex": "l'idéal de l'immersion",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "l'idéal de l'immersion",
+   "new": "l'Idéal de l'immersion"
+  },
+  "note": "The typescript's capital for a sheaf of ideals, as the logged 'l'Idéal (T^{r+1})' of p. 287."
+ },
+ {
+  "page": 305,
+  "where": "proof of 4.11, 'Or d'après (SGA 6 VII 2.5), ce dernier carré'",
+  "scan": "no comma after 'Or'",
+  "tex": "Or, d'après",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Or, d'après",
+   "new": "Or d'après"
+  },
+  "note": "The TeX adds a comma."
+ }
+]

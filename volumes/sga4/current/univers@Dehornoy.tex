@@ -1,0 +1,301 @@
+\ifx\danslelivre\undefined
+\documentclass[10pt]{fichiers-configuration-latex/smfart}
+
+\begin{document}
+
+\begin{center}
+Commentaires sur SGA~4-I\\
+P. Dehornoy
+\end{center}
+
+
+\else
+\chapter{Commentaires sur SGA~4-I}
+%\addtocontents{toc}{par P. Dehornoy}
+\begin{center}
+par P. Dehornoy
+\end{center}
+\fi
+
+\begin{enumerate}
+\item Tout comme le livre I de Bourbaki, l'exposé SGA4-1 est le
+reflet d'une vue extrêmement naïve de la théorie des
+ensembles telle qu'on pouvait à la rigueur la garder avant
+les théorèmes d'incomplétude de Gödel. Les ensembles sont
+vus essentiellement comme des objets algébriques
+effectivement définissables, et la théorie des ensembles est
+conçue comme la manipulation d'expressions formelles
+compliquées à base d'ensemble vide et d'accolades
+innombrables, sans aucun ingrédient conceptuel
+intrinsèquement logique et infinitiste. La description de la
+structure $U_1$ la structure formée par les ensembles
+usuellement appelés héréditairement finis et la remarque que
+cet objet est presque un univers à la mineure exception
+qu'il ne contient pas d'ensemble infini sont typiques:
+l'introduction d'ensembles infinis est cruciale, et c'est
+exactement le point où la théorie des ensembles commence,
+par opposition à l'arithmétique, qui est le monde où $U_1$
+vit naturellement. Le point le plus négatif dans cette
+approche algébrique de la théorie des ensembles est la
+confusion du monde des formules logiques et celui des
+ensembles; dans toutes les approches modernes, ces mondes
+sont distincts, les formules sont des objets syntaxiques
+(mots), alors que les ensembles sont des objets sémantiques
+(objets mathématiques quelconques) sur lesquelles les
+formules opèrent. Cette distinction --- dont on comprend
+bien que Bourbaki, dans sa démarche unificatrice, ait
+cherché à l'éviter, mais c'était une option malheureuse ---
+est la seule solution pour parvenir à la notion de modèle
+abstrait de la théorie des ensembles (mêmes formules, mais
+différents ensembles), ingrédient essentiel de tous les
+développements ultérieurs de la théorie des ensembles, en
+particulier les théorèmes d'indépendance relative de Cohen
+et les récents résultats laissant espérer une solution
+prochaine du problème du continu. On ne saurait donc trop
+insister sur le fait que l'axiome « il existe un ensemble
+infini » n'est pas juste un petit axiome supplémentaire, mais
+est l'axiome essentiel, et, en particulier, qu'il ne saurait
+être déduit des autres axiomes comme le démontre par exemple
+le second théorème d'incomplétude de Gödel puisqu'en
+montrant l'existence de l'ensemble $U_1$ la théorie des
+ensembles prouve la non-contradiction de l'arithmétique.
+L'un des aspects les plus regrettables dans l'approche
+algébrique de la théorie des ensembles est d'induire le
+sentiment erroné que la théorie des ensembles n'est qu'une
+sorte de prolongement infini plus ou moins trivial de la
+théorie des ensembles finis, masquant ainsi les problèmes
+véritables et suscitant de ce fait un compréhensible
+désintérêt pour tous les développements ultérieurs.
+
+\item Cela dit, le point de vue de SGA diffère de celui du
+traité de Bourbaki en cela que la théorie des ensembles n'y
+est pas invoquée comme base d'une théorie du grand tout,
+mais simplement comme contexte cohérent où développer une
+théorie spécifique des catégories et des faisceaux. Cette
+approche est beaucoup plus modeste, et, de ce fait, les
+aspects négatifs signalés plus haut deviennent secondaires.
+Au total prévaut une approche pragmatique, dans laquelle il
+s'agit simplement de recenser les outils ensemblistes dont
+on aura besoin dans la suite.
+Si ces choses avaient à être rédigées aujourd'hui, on
+pourrait tout à fait reprendre la même approche, et il
+serait simplement naturel de la rattacher au système
+standard de Zermelo-Fraenkel plutôt qu'à la théorie des
+ensembles de Bourbaki, qui, quoique à peu près équivalente,
+n'est plus guère utilisée. Il serait peut-être opportun
+d'éviter le terme « univers », souvent utilisé pour désigner
+un modèle de la théorie ZF, c'est-à-dire une structure
+$(M,E)$ quelconque dans laquelle les axiomes de ZF sont
+satisfaits -- mais ce point de vocabulaire est mineur.
+
+\item Comme chacun sait, il serait contradictoire de considérer
+un ensemble de tous les ensembles (paradoxe de Russell), ce
+qui entraîne immédiatement des problèmes pour introduire des
+catégories dans un contexte de théorie des ensembles. Il
+faut insister sur le fait que ces problèmes de taille des
+ensembles  (par opposition aux problèmes d'existence et de
+complexité) sont, d'un point de vue de théorie des
+ensembles, des problèmes mineurs, pour des raisons précises
+qui vont être expliquées ci-dessous -- et, de là, qu'il n'y
+a aucune raison sérieuse d'opposer les points de vue
+ensembles et catégoriques. Le point de vue adopté dans
+SGA4-1 paraît excellent, et, de fait, il semble le seul pour
+pouvoir développer sans problème toutes les constructions
+basées sur des itérations. Une solution standard pour éviter
+les problèmes d'ensemble de tous les ensembles consiste à
+introduire des classes comme second type d'objet, de sorte
+qu'il existe une classe de tous les ensembles, mais qu'on ne
+forme pas de classe de classes en général.
+Cette solution, qui est pertinente si on veut considérer une
+catégorie particulière, serait peu adaptée dès lors qu'on
+veut pouvoir construire en toute généralité des catégories
+de catégories, catégories dérivées, etc. Il est donc
+précieux de pouvoir considérer les objets et les morphismes
+d'une catégorie quelconque comme des ensembles. Comme cela
+ne peut être de vrais ensembles à cause du paradoxe de
+Russell, on introduit une notion relative d'ensemble, les
+$U$-ensembles, ou ensembles selon $U$, où $U$ est une
+approximation convenable des ensembles, à savoir une qui est
+close par suffisamment d'opérations ensemblistes.
+
+\item D'un point de vue moderne, on peut remarquer qu'il y a
+certainement trop de généralité dans les univers du SGA4-1.
+De fait, dans le système standard ZF, les ensembles sont
+munis d'une filtration par les ordinaux appelée rang. La
+notation traditionnelle est $V_\alpha$ pour les ensembles de
+rang moindre que $\alpha$ (« V » comme « von Neumann »). Par
+exemple, l'univers $U_0$ est $V_0$, et $U_1$ est $V_\omega$.
+Pour tout ordinal limite $\lambda$ (c'est-à-dire un ordinal
+qui n'est pas de la forme $\alpha + 1$), l'ensemble
+$V_\lambda$ est presque un univers, et, d'un autre côté,
+c'est un modèle de la théorie des ensembles de Zermelo (qui
+est Zermelo-Fraenkel moins la clôture par fonction). La
+remarque est qu'il me semble que les seuls univers utiles
+pour SGA4-1 sont des $V_\lambda$. Dans l'approche
+bourbachique, cela peut paraître une faible restriction; en
+fait, dans la jungle de la théorie des ensembles, il existe
+une immense variété d'univers au sens de SGA4-1, et les
+$V_\lambda$ en sont des exemples fort particuliers. Ceci
+traduit le fait que le seul problème posé concerne la taille
+des ensembles, et qu'une filtration par le rang est
+suffisante pour l'éviter. 
+
+\item Le contexte naturel aujourd'hui serait donc plutôt la
+notion de $V_\lambda$-catégorie. Pour assurer que l'ensemble
+$V_\lambda$ soit clos par suite et fonction, il faut
+réclamer davantage que le fait que l'ordinal $\lambda$ soit
+un ordinal limite. Une condition suffisante, et très
+probablement nécessaire, est que $V_\lambda$ soit un modèle
+de ZF. On est donc conduit à supposer l'existence d'une
+classe non bornée d'ordinaux $\lambda$ tels que $V_\lambda$
+soit modèle de ZF. En vertu du second théorème
+d'incomplétude de Gödel, l'existence de tels ordinaux, et
+même d'un seul tel ordinal, est une hypothèse indémontrable
+à partir du système standard ZF, toujours pour la même
+raison que cette existence démontre la non-contradiction de
+ZF et donc ne peut être démontrée à partir de ZF -- ceci n'a
+rien à voir avec Cohen, ainsi que le texte de SGA le suggère
+prudemment.
+Par contre, comme SGA le remarque justement, une condition
+suffisante pour que $V_\lambda$ soit un modèle de ZF -- et
+donc un univers au sens de SGA -- est que $\lambda$ soit un
+cardinal (fortement) inaccessible, et, par conséquent, un
+système axiomatique suffisant pour justifier toutes les
+constructions ultérieures est le système « ZF + il existe une
+classe non bornée de cardinaux inaccessibles ».
+
+\item La situation est donc la suivante, que le système
+axiomatique à partir duquel les constructions sont
+effectuées est le système « ZF + il existe une classe non
+bornée de cardinaux inaccessibles », qu'on notera ZFI, et non
+le système ZF standard. Les questions naturelles à ce stade
+sont: (i) Le système ZFI est-il raisonnable? (ii) Le système
+ZFI est-il nécessaire? 
+
+\item La question (i) se divise elle-même en deux questions
+distinctes: (i') Le système ZFI est-il exempt de
+contradictions? (i'') Le système ZFI est-il objet d'un
+consensus? Pour (i'), la réponse est claire: en vertu du
+second théorème d'incomplétude de Gödel, il ne peut exister
+de preuve de la cohérence de ZFI, ni de preuve de la
+cohérence relative de ZFI par rapport à ZF. Le système ZFI
+est un système d'axiomes strictement plus fort que ZF, et,
+de même qu'il se pourrait que l'arithmétique soit cohérente
+alors que ZF est contradictoire, il se pourrait que ZF soit
+cohérent et que ZFI soit contradictoire. Cela dit, aucun
+résultat à ce jour ne suggère une telle situation, et, à
+côté de la question mathématique (i'), se pose la question
+sociologique (i''), et c'est à ce niveau qu'il peut être
+intéressant d'observer les évolutions récentes. A l'époque
+où SGA a été rédigé, l'existence de cardinaux inaccessibles,
+et plus généralement de ce qu'on commençait à appeler des
+grands cardinaux, était considéré comme une hypothèse
+technique parmi d'autres, sans qu'il existe aucun consensus
+pour considérer cette hypothèse comme vraie, c'est-à-dire
+pour proposer de l'inclure systématiquement dans les axiomes
+de base. Quarante ans plus tard, la vision des experts a
+considérablement évolué, et les axiomes de grands cardinaux
+sont devenus une sorte de toile de fond largement acceptée.
+Le sentiment général est, d'une part, que le système ZF
+n'épuise absolument pas notre intuition de la notion
+d'ensemble et que, par conséquent, il s'agit de poursuivre
+l'étude de façon à dégager des propriétés supplémentaires
+qu'un consensus propose de prendre comme point de départ,
+et, d'autre part, que les axiomes de grands cardinaux, donc
+en particulier l'existence d'une classe non bornée de
+cardinaux inaccessibles qui est l'un des plus modérés
+d'entre eux, font partie de ces propriétés supplémentaires
+qu'il est légitime d'inclure dans les axiomes. Cette opinion
+ne procède pas d'une évidence a priori ou de discutables
+expériences de pensée, mais d'un faisceau convergent de
+théorèmes montrant que la description du monde mathématique
+résultant de l'introduction de ces axiomes est conforme à ce
+que l'intuition recommande. Typiquement, on sait depuis les
+résultats de Steel--Martin et Woodin dans les années 1980
+que le système obtenu en ajoutant à ZF l'axiome dit de
+détermination projective -- qui est un axiome de grand
+cardinal (beaucoup) plus fort que l'existence d'une classe
+non bornée de cardinaux inaccessibles -- est, en un sens
+mathématiquement précis, la bonne axiomatisation de l'infini
+dénombrable à la façon dont ZF est la bonne axiomatisation
+du fini. Dans ce contexte, le fait que SGA parte du système
+ZFI au lieu de ZF apparaît donc aujourd'hui comme
+parfaitement inoffensif et légitime, bien davantage qu'il y
+a quarante ans.
+
+\item Venons-en à la question (ii), c'est-à-dire à la nécessité
+d'utiliser ZFI plutôt que ZF comme base axiomatique. Là
+encore, le problème est double, suivant qu'il s'agit
+d'établir des résultats généraux du type « pour toute
+catégorie, il existe... » ou des résultats particuliers du
+type « pour telle catégorie particulière, il existe... » ou
+reposant sur des énoncés de ce type. Dans tous les cas, il
+n'est pas certain qu'on ait besoin du fait que tout ensemble
+appartient à un univers, pour lequel ZFI est condition
+suffisante: il se peut par exemple qu'on n'utilise que des
+suites dénombrable d'itérations, et qu'alors une condition
+suffisante soit l'existence d'une suite dénombrable de
+cardinaux inaccessibles, mais ZFI semble bien la plus simple
+des hypothèses susceptibles de marcher dans tous les cas
+(l'existence d'une tour de $V_\lambda$ modèles de ZF est, du
+point de vue logique, une hypothèse plus faible, mais moins
+intuitive). Par contre, si on considère une catégorie
+particulière, il est plus que probable qu'on n'a pas besoin
+d'une hypothèse aussi forte que ZFI. En particulier, il
+existe un phénomène général dit de réflexion montrant que,
+pour tout énoncé ensembliste $E$, il existe un ordinal
+$\lambda$ tel que $E$ est équivalent à l'énoncé obtenu en
+bornant toutes les quantifications à $V_\lambda$. Ceci ne
+prouve rien en soi, mais ce genre de phénomène suggère qu'on
+n'utilise probablement jamais la pleine hypothèse qu'un
+ensemble appartient à un univers (au sens de SGA), mais
+simplement qu'il appartient à un ensemble $V_\lambda$ qui
+satisfait non pas tous les axiomes de ZF, mais simplement
+suffisamment de ces axiomes pour les besoins spécifiques,
+typiquement un nombre fini de tels axiomes (il est important
+de réaliser que ZF est un système d'axiomes infini, tout
+comme le système de Bourbaki à cause de la quantification
+sur les termes en $\tau$). Or, pour chaque fragment fini de
+ZF, l'existence d'un tel $V_\lambda$ se démontre dans ZF,
+sans qu'il soit besoin de faire appel à un cardinal
+inaccessible. Il apparaît donc probable -- sans que je
+puisse l'affirmer, il faudrait vérifier pas à pas, et les
+remarques du point 7 montrent que le jeu n'en vaut peut-être
+pas la chandelle -- que, lorsqu'il s'agit de démontrer un
+théorème donné, par exemple, Fermat, en utilisant pour cela
+un certain nombre de résultats sur des catégories, la
+démonstration puisse se miniaturiser de façon à n'utiliser à
+chaque fois que des univers partiels suffisants et, de ce
+fait, puisse être entièrement formalisée à partir de ZF --
+voire même d'un système significativement plus faible du
+point de vue logique ainsi que c'est le cas de la plupart
+des résultats mathématiques usuels. Un parallèle peut-être
+éclairant peut être proposé avec l'énoncé « Tout corps
+possède une clôture algébrique ». Si on souhaite l'énoncé
+général, le seul cadre connu utilise le lemme de Zorn, donc
+l'axiome du choix. Par contre, si on souhaite seulement
+utiliser le fait que les rationnels, ou tel ou tel corps
+explicitement énuméré, admettent une clôture algébrique,
+alors il suffit d'utiliser une construction inductive qui
+n'utilise aucun choix. La seule différence est qu'on sait
+(depuis 1938) que l'axiome du choix, même non impliqué par
+les axiomes de ZF, est inoffensif au sens où son adjonction
+ne saurait introduire de contradiction, alors que
+l'existence d'une classe non bornée de cardinaux
+inaccessibles n'est pas inoffensive -- mais on a dit en 7
+qu'elle est néanmoins l'objet d'un consensus large.
+
+\item Dernière remarque: Les développements de l'appendice sur
+les ensembles appelés artiniens (usuellement appelés
+ensembles purs, ou bien fondés) et la possibilité de se
+restreindre à de tels ensembles correspondent exactement à
+l'inclusion de l'axiome dit de fondation dans le système de
+Zermelo-Fraenkel, lequel correspond aussi à l'affirmation
+ci-dessus utilisée que tout ensemble a un rang. Cette
+hypothèse est donc implicite en théorie des ensembles
+standard.
+\end{enumerate}
+
+\ifx\danslelivre\undefined
+\end{document}
+\fi

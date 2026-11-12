@@ -1,0 +1,132 @@
+{
+  "findings": [
+    {
+      "page": 181,
+      "where": "Définition d’un épimorphisme, après le diagramme",
+      "scan": "la famille de morphisme réduit au seul élément f",
+      "tex": "la famille de morphisme réduit au seul élément $f$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "la famille de morphismes réduite au seul élément $f$",
+      "note": "Le TeX conserve les deux fautes d’accord de l’imprimé."
+    },
+    {
+      "page": 181,
+      "where": "10.4, famille de flèches définie comme monomorphique",
+      "scan": "$f_i:A_i\\rightarrow B$",
+      "tex": "$f_i:A_i\\rightarrow B$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$f_i:B\\rightarrow A_i$",
+      "note": "La définition par passage à la catégorie opposée exige une famille de source commune, non de but commun. Le TeX conserve cette coquille de variance."
+    },
+    {
+      "page": 181,
+      "where": "Dernière ligne, coupure entre les pages 181 et 182",
+      "scan": "si la famille réduite à f est monomorphique",
+      "tex": "si la famille réduite à $f$",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Les mots « est monomorphique », fournis au début du fragment 182 (l. 7522), terminent en réalité la page 181. La page 182 commence par « (resp. monomorphique stricte, …) ». Il s’agit d’un problème de coupe, non d’une omission du source."
+    },
+    {
+      "page": 183,
+      "where": "10.9, phrase suivant la formule définissant la relation d’équivalence",
+      "scan": "sur le graphe",
+      "tex": "sur e graphe",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "sur e graphe",
+        "new": "sur le graphe"
+      },
+      "note": "Le l de l’article manque dans le TeX."
+    },
+    {
+      "page": 183,
+      "where": "Dernière phrase de 10.9",
+      "scan": "en relation d’équivalence sur Φ(C)",
+      "tex": "en relation\nd'équivalence sur $\\Phi (C)$.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "en relations d'équivalence sur $\\Phi (C)$.",
+      "note": "L’imprimé omet le pluriel après « transforme les relations d’équivalence ». Le TeX conserve cette coquille."
+    },
+    {
+      "page": 184,
+      "where": "Premier paragraphe, morphisme de C vers D",
+      "scan": "$\\pi:C\\rightarrow D$",
+      "tex": "$\\Pi:C\\rightarrow D$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$\\Pi:C\\rightarrow D$",
+        "new": "$\\pi:C\\rightarrow D$"
+      },
+      "note": "L’imprimé donne un pi minuscule."
+    },
+    {
+      "page": 184,
+      "where": "10.10, morphisme dont l’existence définit l’effectivité",
+      "scan": "$\\pi:A\\rightarrow B$",
+      "tex": "$\\Pi:A\\rightarrow B$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$\\Pi:A\\rightarrow B$",
+        "new": "$\\pi:A\\rightarrow B$"
+      },
+      "note": "L’imprimé donne le même pi minuscule que dans le carré et dans les phrases suivantes."
+    },
+    {
+      "page": 184,
+      "where": "Bibliographie, éditeur de Theory of categories",
+      "scan": "Academie Press",
+      "tex": "Academie Press",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Academic Press",
+      "note": "Le nom de l’éditeur est fautif dans l’imprimé. Le premier argument de \\sisi conserve cette coquille."
+    },
+    {
+      "page": 185,
+      "where": "Définition 1, condition (U.?)",
+      "scan": "alors le couple",
+      "tex": "alors le coupe",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "alors le coupe",
+        "new": "alors le couple"
+      },
+      "note": "L’imprimé porte bien « couple »."
+    },
+    {
+      "page": 185,
+      "where": "N.B., nom de Kuratowski",
+      "scan": "Kuratowaki",
+      "tex": "\\sisi{Kuratowaki}{Kuratowski}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "Kuratowski",
+      "note": "La fin du nom est surchargée dans la frappe. Le premier argument relève la graphie fautive « Kuratowaki »; le TeX la corrige au second argument de \\sisi."
+    },
+    {
+      "page": 185,
+      "where": "Note (*) au bas de la page, coupure 184–185",
+      "scan": "Nous reproduisons ici, avec son accord, des papiers secrets de N. BOURBAKI. Les références de ce texte se rapportent à son savant ouvrage.",
+      "tex": "\\footnotetext[1]{Nous reproduisons ici, avec son accord, des papiers\nsecrets de N. \\textsc{Bourbaki}. Les références de ce texte se\nrapportent à son savant ouvrage.}",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Cette note est imprimée page 185, mais son TeX est fourni seulement dans le fragment 184, l. 7634–7636, hors des lignes de chevauchement annoncées. La page 184 finit après la bibliographie; la page 185 commence au titre « II. Appendice : Univers ». Le texte de la note concorde."
+    }
+  ],
+  "coordinator": "181: 1/2; 182: 0/0; 183: 1/1; 184: 2/1; 185: 2/1 (normal/misprint).\nCoupe 181–182 : « est monomorphique » termine la page 181; la page 182 commence par « (resp. monomorphique stricte, …) ».\nCoupe 184–185 : inclure dans le fragment 185 la note (*) des l. 7634–7636, actuellement fournie sous 184; la page 184 finit après la bibliographie."
+}

@@ -1,0 +1,204 @@
+[
+  {
+    "page": 341,
+    "where": "title of the exposé, 'LE THEOREME DE GRIFFITHS'",
+    "scan": "double underline: two parallel rules under the whole title (checked at 2x); 'E X P O S E XX', 'par N. KATZ' and 'Introduction' have one rule",
+    "tex": "\\underline{LE THEOREME DE GRIFFITHS}",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {
+      "old": "\\underline{LE THEOREME DE GRIFFITHS}",
+      "new": "\\underline{\\underline{LE THEOREME DE GRIFFITHS}}"
+    },
+    "note": "The other double-underlined exposé titles of the volume are written \\underline{\\underline{...}} (e.g. XI, XVIII, XXI). The corrected layer has the same single underline."
+  },
+  {
+    "page": 341,
+    "where": "§0, line 1: 'qui donne une facon systématique'",
+    "scan": "facon: plain c, no cedilla (checked at 6x)",
+    "tex": "une facon systématique",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "une façon systématique",
+    "note": "Typing slip; the TeX keeps the printed reading. The typewriter of this exposé has ç (Remplaçant, top of p. 351), so it is not a missing key."
+  },
+  {
+    "page": 341,
+    "where": "§0, line 3: 'des cycles algèbriques qui sont'",
+    "scan": "algèbriques with a grave accent (checked at 1.6x); 'algébriquement' and 'purement algébriques' below have the acute",
+    "tex": "des cycles algèbriques qui sont",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "des cycles algébriques qui sont",
+    "note": "The TeX keeps the printed accent."
+  },
+  {
+    "page": 341,
+    "where": "§0, line 3: 'mais donc aucun multiple'",
+    "scan": "mais donc aucun multiple (checked at 1.6x)",
+    "tex": "mais donc aucun multiple",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "mais dont aucun multiple",
+    "note": "The relative pronoun is meant (des cycles ... dont aucun multiple n'est algébriquement équivalent à zéro). The TeX keeps the printed reading."
+  },
+  {
+    "page": 341,
+    "where": "§0, line 6: 'plus au moins transcendante'",
+    "scan": "plus au moins transcendante (checked at 1.6x)",
+    "tex": "plus au moins transcendante",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "plus ou moins transcendante",
+    "note": "The TeX keeps the printed reading."
+  },
+  {
+    "page": 342,
+    "where": "(1.0.3)",
+    "scan": "f, g  lisses de dimensions relatives  ℓ  d_1 et d_2 , : a script ℓ stands between 'relatives' and d_1 (checked at 1.6x)",
+    "tex": "\\text{lisses de dimensions relatives} \\quad \\ell \\quad d_1",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "\\text{lisses de dimensions relatives} \\quad d_1",
+    "note": "The ℓ has no place in the sentence; the TeX keeps it. The print has no (1.0.2) at all ((1.0.1) on p. 341, then (1.0.3)), although p. 344 cites (1.0.2) - (1.0.4); the TeX follows the print there."
+  },
+  {
+    "page": 342,
+    "where": "(1.0.6), source",
+    "scan": "R^q f_*(Q_ℓ(i) followed by the arrow: the parenthesis opened after f_* is not closed (checked at 5x)",
+    "tex": "R^q f_*(\\mathbb{Q}_\\ell(i) \\longrightarrow",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "R^q f_*(\\mathbb{Q}_\\ell(i)) \\longrightarrow",
+    "note": "The TeX keeps the printed reading."
+  },
+  {
+    "page": 342,
+    "where": "(1.0.6), exponent of the target R^{q-2(d_1-d_2)}",
+    "scan": "after d_2 only a short slanting stroke, the bottom third of a raised ')': it stands where the ')' of the same exponent stands in (1.0.5), its foot level with the foot of the '(' before d_1 (checked at 5x and in pixels); the independent DjVu scan (SGA 7-2.tif.djvu, file p. 352) shows the same stroke",
+    "tex": "R^{q-2(d_1-d_2'}",
+    "kind": "symbol",
+    "confidence": "medium",
+    "fix": {
+      "old": "R^{q-2(d_1-d_2'}",
+      "new": "R^{q-2(d_1-d_2)}"
+    },
+    "note": "Broken type, not a misprint: this typewriter's apostrophe sits at cap height and its comma below the baseline, and the typescript breaks parentheses elsewhere (in (1.1.1), p. 343, the '(' after Q_ℓ prints only its top and the TeX gives '('). MISPRINTS_7II.json records this mark as a misprint of the print (p. 342, '(1.0.6), exponent of the target'); drop that record if the fix is applied."
+  },
+  {
+    "page": 342,
+    "where": "(1.0.6), twist of the target",
+    "scan": "g_*(Q_ℓ(i-d_1-d_2)): a minus before d_2 (checked at 8x: one horizontal stroke, no vertical)",
+    "tex": "g_*(\\mathbb{Q}_\\ell(i-d_1-d_2))",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "g_*(\\mathbb{Q}_\\ell(i-d_1+d_2))",
+    "note": "The twist is i-(d_1-d_2), as in (1.0.5) and (1.0.7). The TeX keeps the printed sign."
+  },
+  {
+    "page": 342,
+    "where": "Définition 1.0.8, third line: '(a, b) ∈ ℤ × ℤ  Le décalage de'",
+    "scan": "no full stop after ℤ × ℤ: the gap before 'Le' is blank (pixel check), also in the DjVu witness",
+    "tex": "\\mathbb{Z} \\times \\mathbb{Z}$ \\underline{Le décalage de}",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "\\mathbb{Z} \\times \\mathbb{Z}$. \\underline{Le décalage de}",
+    "note": "A new sentence begins with 'Le'. The TeX keeps the printed reading; the corrected layer already has the full stop."
+  },
+  {
+    "page": 342,
+    "where": "Définition 1.0.8, last line: 'la suite spectrale (\"E_r^{p,q}, \"d^{p,q})'",
+    "scan": "\"d^{p,q} without the subscript r (checked at 4x)",
+    "tex": "({}''E_r^{p,q},\\ {}''d^{p,q})",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "({}''E_r^{p,q},\\ {}''d_r^{p,q})",
+    "note": "Every other differential on the page carries r, (1.0.9) included. The TeX keeps the printed reading."
+  },
+  {
+    "page": 342,
+    "where": "(1.0.9), second line",
+    "scan": "\"d_r^{p,q} = d_r^{p+a,q+b}: no prime on the right-hand d (checked at 4x), while the first line has 'E_r^{p+a,q+b}",
+    "tex": "{}''d_r^{p,q} &= d_r^{p+a,q+b}",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "{}''d_r^{p,q} &= {}'d_r^{p+a,q+b}",
+    "note": "The décalage is that of ('E_r, 'd_r). The TeX keeps the printed reading."
+  },
+  {
+    "page": 343,
+    "where": "Lemme 1.1, bidegree of π_*",
+    "scan": "de bidegré (a,-2(d_1-d_2)) (checked at 5x: a, not o)",
+    "tex": "$(a,-2(d_1-d_2))$",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "$(0,-2(d_1-d_2))$",
+    "note": "π_* keeps p and lowers q by 2(d_1-d_2) ((1.0.6)-(1.0.7)); the proof of 1.3 on p. 345 uses 1.1 with first degree 0. The TeX keeps the printed a."
+  },
+  {
+    "page": 344,
+    "where": "line after (1.2.4): 'l'homomorphisme de Gysin  Par localisation'",
+    "scan": "no full stop after Gysin: the gap before 'Par' is blank (pixel check), also in the DjVu witness",
+    "tex": "l'homomorphisme de Gysin  Par localisation",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "l'homomorphisme de Gysin. Par localisation",
+    "note": "The TeX keeps the printed reading; the corrected layer already has the full stop."
+  },
+  {
+    "page": 344,
+    "where": "(1 2.6), end of the target",
+    "scan": "g_*(Q_ℓ(i+b-d_1)) . : two closing parentheses for the three opened by H^p(S, , g_*( and Q_ℓ( (checked at 4x)",
+    "tex": "g_*(\\mathbb{Q}_\\ell(i+b-d_1)) \\ .",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "g_*(\\mathbb{Q}_\\ell(i+b-d_1))) \\ .",
+    "note": "The parenthesis of H^p(S, ... is never closed. The TeX keeps the printed reading."
+  },
+  {
+    "page": 344,
+    "where": "Lemme 1.3, bidegree",
+    "scan": "de bidegré (0, b-2d_1) (checked at 5x)",
+    "tex": "$(0,\\ b-2d_1)$",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "$(0,\\ a-2d_1)$",
+    "note": "By (1.2.5)-(1.2.6) z raises q by a-2d_1; the proof on p. 345 composes the bidegree (0, a) of the cup product with 1.1 for pr_2. The TeX keeps the printed b."
+  },
+  {
+    "page": 345,
+    "where": "(1.2.9)",
+    "scan": "R^q(pr_1 f)_* (checked at 4x)",
+    "tex": "R^q(\\mathrm{pr}_1\\ f)_*",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "R^q(f\\ \\mathrm{pr}_1)_*",
+    "note": "The map X ×_S Y → S is f pr_1, as the label in (1.2.11) prints it; pr_1 f does not compose. The same slip in (1.2.10): correct both or neither (the corrected layer has f∘pr_1 in both). The TeX keeps the printed order."
+  },
+  {
+    "page": 345,
+    "where": "(1.2.10)",
+    "scan": "R^{q+a}(pr_1 f)_* (checked at 4x)",
+    "tex": "R^{q+a}(\\mathrm{pr}_1\\ f)_*",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "R^{q+a}(f\\ \\mathrm{pr}_1)_*",
+    "note": "As in (1.2.9). The TeX keeps the printed order."
+  }
+]

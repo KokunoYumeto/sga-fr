@@ -1,0 +1,312 @@
+[
+ {
+  "page": 476,
+  "where": "beginning of the page",
+  "scan": "p. 476 begins 'φ = h'' et φ_0 = h'_{ν-1} ; nous obtenons l'existence de'; p. 475 ends 'Appliquons alors le deuxième lemme avec L = K'_ν ,'",
+  "tex": "page_475.tex ends '... lemme avec $L=K'_\\nu$, $\\varphi=h''_\\nu$ et $\\varphi_0=h'_{\\nu-1}$;'; page_476.tex begins 'nous obtenons'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 476 really begins at '$\\varphi=h''_\\nu$ et $\\varphi_0=h'_{\\nu-1}$;', the last line of page_475.tex. Exact fix: python -I move_marker.py 5 476 '$\\varphi=h' --before (bash single quotes: the anchor contains $ and a backslash; the anchor matches before and after the h'' misprint fix filed under p. 475; simulated in memory on both layers: '... deuxième lemme avec $L=K'_\\nu$, ' / marker / '$\\varphi=h''_\\nu$ et $\\varphi_0=h'_{\\nu-1}$;' / 'nous obtenons l'existence de ...'). Text not moved."
+ },
+ {
+  "page": 475,
+  "where": "p. 476, line 1 (text under the folio-475 marker until the folio-476 marker is moved)",
+  "scan": "φ = h''  (no index ν; the next formula has it: φ_0 = h'_{ν-1})",
+  "tex": "$\\varphi=h''_\\nu$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\varphi=h''_\\nu$",
+   "new": "$\\varphi=h''$"
+  },
+  "corrected": "$\\varphi=h''_\\nu$",
+  "note": "Printed on p. 476. The print drops the index of h''_ν (p. 475: 'endomorphisme de complexe h''_ν : K'_ν → K'_ν'); no trace of a subscript in the scan. The TeX silently corrects it; the fix restores the printed reading (diplomatic layer only). Filed under p. 475 because the text stands in page_475.tex until the folio-476 marker is moved (marker item of p. 476): apply before the move; the move's anchor '$\\varphi=h' matches before and after this edit."
+ },
+ {
+  "page": 476,
+  "where": "Lemme 3 (i), line 1",
+  "scan": "est projecfif",
+  "tex": "est projecfif",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "projectif",
+  "note": "The TeX keeps the printed reading (the corrected layer already reads 'projectif')."
+ },
+ {
+  "page": 476,
+  "where": "Lemme 3 (i): 'Soient ... Si P est projecfif'",
+  "scan": "Soient P et Q des A-modules. Si P est projecfif,  (underlined: Soient / et / des / modules / Si / est projecfif)",
+  "tex": "\\item Soient $P$ et $Q$ des $A$-modules. Si $P$ est projecfif, (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Soient $P$ et $Q$ des $A$-modules. Si $P$ est",
+   "new": "\\item \\emph{Soient $P$ et $Q$ des $A$-modules}. \\emph{Si $P$ est"
+  },
+  "note": "The print underlines the statement word group by word group (letters and formulas not underlined); Exposé XV's TeX has no underline markup. \\emph is the file's command for underlining (Exposé XII statements, XV's two \\emph). This edit opens the group of 'Si $P$ est projecfif' and the next edit closes it: APPLY THE TWO TOGETHER. The olds leave out the misprint 'projecfif', so both apply unchanged to the corrected layer ('projectif')."
+ },
+ {
+  "page": 476,
+  "where": "Lemme 3 (i): 'pour toute application ... telle que'",
+  "scan": "pour toute application A_0-linéaire f_0 : T(P) → T(Q) il existe une application A-linéaire f : P → Q telle que T(f) = f_0 .  (underlined: pour toute application / linéaire / il existe / une application / linéaire / telle que)",
+  "tex": ", pour toute application $A_0$-linéaire $f_0:T(P)\\to T(Q)$ il existe une application $A$-linéaire $f:P\\to Q$ telle que $T(f)=f_0$. (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": ", pour toute application $A_0$-linéaire $f_0:T(P)\\to T(Q)$ il existe une application $A$-linéaire $f:P\\to Q$ telle que $T(f)",
+   "new": "}, \\emph{pour toute application $A_0$-linéaire} $f_0:T(P)\\to T(Q)$ \\emph{il existe une application $A$-linéaire} $f:P\\to Q$ \\emph{telle que} $T(f)"
+  },
+  "note": "Closes the \\emph group opened by the previous edit (after 'projecfif') and marks the remaining underlined runs: APPLY TOGETHER WITH THE PREVIOUS EDIT."
+ },
+ {
+  "page": 476,
+  "where": "Lemme 3 (ii), first two sentences",
+  "scan": "Supposons l'idéal I nilpotent. Pour tout A_0-module projectif P_0 il existe un A-module projectif P tel que T(P) ≃ P_0.  (underlined: Supposons l'idéal / nilpotent / Pour tout / module projectif / il existe un / module projectif / tel que)",
+  "tex": "\\item Supposons l'idéal $I$ nilpotent. Pour tout $A_0$-module projectif $P_0$ il existe un $A$-module projectif $P$ tel que $T(P)\\simeq P_0$. (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Supposons l'idéal $I$ nilpotent. Pour tout $A_0$-module projectif $P_0$ il existe un $A$-module projectif $P$ tel que $T(P)",
+   "new": "\\item \\emph{Supposons l'idéal $I$ nilpotent}. \\emph{Pour tout $A_0$-module projectif $P_0$ il existe un $A$-module projectif $P$ tel que} $T(P)"
+  },
+  "note": "The print underlines the statement word group by word group (letters and formulas not underlined); Exposé XV's TeX has no underline markup. \\emph is the file's command for underlining (Exposé XII statements, XV's two \\emph). Full stops left outside the groups."
+ },
+ {
+  "page": 476,
+  "where": "Lemme 3 (ii), last sentence",
+  "scan": "Si de plus P' est un A-module plat tel que T(P') ≃ P_0 , alors on a P' ≃ P .  (underlined: Si de plus / est un / module plat tel que / alors / on a)",
+  "tex": "Si de plus $P'$ est un $A$-module plat tel que $T(P')\\simeq P_0$, alors on a $P'\\simeq P$. (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Si de plus $P'$ est un $A$-module plat tel que $T(P')\\simeq P_0$, alors on a $P'\\simeq P$.",
+   "new": "\\emph{Si de plus $P'$ est un $A$-module plat tel que} $T(P')\\simeq P_0$, \\emph{alors on a} $P'\\simeq P$."
+  },
+  "note": "As the rest of Lemme 3."
+ },
+ {
+  "page": 476,
+  "where": "proof of (i), 'f_0∘u_P = u_Q∘f où f est'",
+  "scan": "f_o∘u_P = u_Q∘f  où  f  est",
+  "tex": "$f_0\\circ u_P=u_Q\\circ f$, où $f$ est",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "u_Q\\circ f$, où",
+   "new": "u_Q\\circ f$ où"
+  },
+  "note": "The TeX adds a comma the print does not have."
+ },
+ {
+  "page": 476,
+  "where": "last line: 'en introduisant un A_0-' / p. 477 'module libre'",
+  "scan": "un A_0-  (end of p. 476) | module libre (start of p. 477): 'A_0-module' divided at the page break",
+  "tex": "en introduisant un $A_0$-  (line end before the folio-477 marker) -> output 'A_0- module'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "en introduisant un $A_0$-",
+   "new": "en introduisant un $A_0$-%"
+  },
+  "note": "The folio-477 marker is in the right place, but the line before it ends with '$A_0$-' and the marker line is a comment, so the output reads 'A_0- module' with a space. The % joins the halves, as marker_split_word.py does; the marker line is not touched."
+ },
+ {
+  "page": 477,
+  "where": "Bourbaki reference",
+  "scan": "Alg. Comm., Chap. III, §4, n°6, lemme 2",
+  "tex": "Alg. comm., chap.~III, §4, n\\textsuperscript{o}~6, lemme 2",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Alg. comm., chap.~III",
+   "new": "Alg. Comm., Chap.~III"
+  },
+  "note": "Capitals C as printed ('Comm.', 'Chap.')."
+ },
+ {
+  "page": 477,
+  "where": "Corollaire, first sentence and first clause",
+  "scan": "Supposons l'idéal I nilpotent. Pour tout complexe acyclique et borné à droite N_0 de A_0-modules projectifs,  (underlined: Supposons l'idéal / nilpotent / Pour tout complexe acyclique et borné à droite / de / modules projectifs)",
+  "tex": "Supposons l'idéal $I$ nilpotent. Pour tout complexe acyclique et borné à droite $N_0$ de $A_0$-modules projectifs, (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Supposons l'idéal $I$ nilpotent. Pour tout complexe acyclique et borné à droite $N_0$ de $A_0$-modules projectifs,",
+   "new": "\\emph{Supposons l'idéal $I$ nilpotent}. \\emph{Pour tout complexe acyclique et borné à droite $N_0$ de $A_0$-modules projectifs},"
+  },
+  "note": "The print underlines the statement word group by word group (letters and formulas not underlined); Exposé XV's TeX has no underline markup. \\emph is the file's command for underlining (Exposé XII statements, XV's two \\emph). Punctuation left outside the groups."
+ },
+ {
+  "page": 477,
+  "where": "Corollaire, second clause",
+  "scan": "il existe un complexe acyclique borné à droite N de A-modules projectifs tel que T(N) ≃ N_0 .  (underlined: il existe / un complexe acyclique borné à droite / de / modules projectifs / tel que)",
+  "tex": "il existe un complexe acyclique borné à droite $N$ de $A$-modules projectifs tel que $T(N)\\simeq N_0$. (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "il existe un complexe acyclique borné à droite $N$ de $A$-modules projectifs tel que $T(N)",
+   "new": "\\emph{il existe un complexe acyclique borné à droite $N$ de $A$-modules projectifs tel que} $T(N)"
+  },
+  "note": "As the first part of the Corollaire."
+ },
+ {
+  "page": 477,
+  "where": "display after 'suites exactes courtes'",
+  "scan": "0 --> Z^i_0 --> N^i_0 --> Z^{i+1}_0 --> 0   (nothing after the last 0)",
+  "tex": "0\\longrightarrow Z_0^i\\longrightarrow N_0^i\\longrightarrow Z_0^{i+1}\\longrightarrow0,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow0,\n\\]",
+   "new": "\\longrightarrow0\n\\]"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 478,
+  "where": "beginning of the page",
+  "scan": "p. 478 begins 'ces suites exactes de proche en proche'; p. 477 ends 'On relève N_0 en relevant toutes'",
+  "tex": "page_477.tex ends 'en relevant toutes ces'; page_478.tex begins 'suites exactes'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 478 really begins at 'ces', the last word of page_477.tex. Exact fix: python -I move_marker.py 5 478 'ces' --before (simulated in memory on both layers: '... On relève $N_0$ en relevant toutes ' / marker / 'ces' / 'suites exactes de proche en proche, ...'). Text not moved."
+ },
+ {
+  "page": 478,
+  "where": "'puis Q_0 → R_0 en une application A-linéaire : Q → R'",
+  "scan": "en une application A-linéaire : Q --> R par le lemme 3(i)",
+  "tex": "en une application $A$-linéaire $Q\\to R$ par le lemme 3(i)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$A$-linéaire $Q\\to R$",
+   "new": "$A$-linéaire: $Q\\to R$"
+  },
+  "note": "The print has a colon before Q → R (no letter for the map); the TeX drops it."
+ },
+ {
+  "page": 478,
+  "where": "'on pose P = Ker(Q → R)'",
+  "scan": "P = Ker(Q --> R)",
+  "tex": "$P=\\ker(Q\\to R)$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\ker(Q\\to R)",
+   "new": "\\Ker(Q\\to R)"
+  },
+  "note": "Capital K as printed; \\Ker is the file's \\operatorname{Ker}."
+ },
+ {
+  "page": 478,
+  "where": "Démonstration du lemme 2: 'est homotope à φ_0'",
+  "scan": "homotope (underlined) à φ_0",
+  "tex": "est homotope à $\\varphi_0$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "homotope à $\\varphi_0$",
+   "new": "\\emph{homotope} à $\\varphi_0$"
+  },
+  "note": "The word is underlined in the print; \\emph as the file's command for underlining in Exposé XV."
+ },
+ {
+  "page": 478,
+  "where": "Démonstration du lemme 1, line 1",
+  "scan": "(quite à remplacer L par un complexe quasi-isomorphe)",
+  "tex": "(quite à remplacer $L$ par un complexe",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "quitte",
+  "note": "The TeX keeps the printed reading (the corrected layer already reads 'quitte')."
+ },
+ {
+  "page": 479,
+  "where": "beginning of the page",
+  "scan": "p. 479 begins 'est projectif en chaque degré'; p. 478 ends 'donc aussi T(L),'",
+  "tex": "page_478.tex ends 'donc aussi $T(L)$, est'; page_479.tex begins 'projectif en chaque degré'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 479 really begins at 'est', the last word of page_478.tex. Exact fix: python -I move_marker.py 5 479 'est' --before (simulated in memory on both layers: '... supposer que le complexe $L$, donc aussi $T(L)$, ' / marker / 'est' / 'projectif en chaque degré, ...'). Text not moved."
+ },
+ {
+  "page": 479,
+  "where": "'remplacer L par L ⊕ N qui lui est quasi-isomorphe'",
+  "scan": "remplacer L par L ⊕ N | qui lui est quasi-isomorphe  (no comma)",
+  "tex": "remplacer $L$ par $L\\oplus N$, qui lui est",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$L\\oplus N$, qui",
+   "new": "$L\\oplus N$ qui"
+  },
+  "note": "The TeX adds a comma the print does not have."
+ },
+ {
+  "page": 479,
+  "where": "'car la suite exacte : 0 → R_0 → T(L) → M → 0 est scindée'",
+  "scan": "car la suite exacte :  0 --> R_0 --> T(L) --> M --> 0  est",
+  "tex": "car la suite exacte \\[ 0\\longrightarrow R_0\\longrightarrow T(L)\\longrightarrow M\\longrightarrow0 \\] est",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "car la suite exacte\n\\[",
+   "new": "car la suite exacte:\n\\["
+  },
+  "note": "The print has a colon before the sequence; the TeX drops it."
+ },
+ {
+  "page": 479,
+  "where": "display 'f_0 = h_0 d_{R_0} + d_{T(L)} h_0 où'",
+  "scan": "f_0 = h_0d_{R_0}+d_{T(L)}h_0  où  h_0 = (h^i_0)_i  (no comma)",
+  "tex": "f_0=h_0d_{R_0}+d_{T(L)}h_0,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d_{T(L)}h_0,\n\\]",
+   "new": "d_{T(L)}h_0\n\\]"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 480,
+  "where": "beginning of the page",
+  "scan": "p. 480 begins 'et on voit que f = hd_R+d_Lh'; p. 479 ends 'avec h^i : R^i --> L^{i-1},'",
+  "tex": "page_479.tex ends 'avec $h^i:R^i\\to L^{i-1}$, et on'; page_480.tex begins 'voit que'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 480 really begins at 'et on', the end of page_479.tex. Exact fix: python -I move_marker.py 5 480 'et on' --before (simulated in memory on both layers: '... avec $h^i:R^i\\to L^{i-1}$, ' / marker / 'et on' / 'voit que' ...). Text not moved."
+ },
+ {
+  "page": 480,
+  "where": "'Coker f = L''",
+  "scan": "Coker f = L'",
+  "tex": "$\\coker f=L'$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\coker f=L'",
+   "new": "\\Coker f=L'"
+  },
+  "note": "The print has 'Coker'; \\coker prints 'coker' in this file (the first \\providecommand{\\coker}{\\operatorname{coker}} wins over the later 'Coker' one). \\Coker is the file's \\operatorname{Coker}. These are the only uses of \\coker in s5.tex."
+ },
+ {
+  "page": 480,
+  "where": "'T(L') ≃ Coker T(f) = Coker f_0 ≃ M'",
+  "scan": "Coker T(f) = Coker f_0",
+  "tex": "\\coker T(f)=\\coker f_0",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\coker T(f)=\\coker f_0",
+   "new": "\\Coker T(f)=\\Coker f_0"
+  },
+  "note": "As the previous item (twice)."
+ }
+]

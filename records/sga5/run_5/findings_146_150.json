@@ -1,0 +1,715 @@
+[
+ {
+  "page": 146,
+  "where": "§2 heading, first line of the page",
+  "scan": "2. - Réduction à un théorème d'annulation.  (underlined; ' - ' after the number, full stop at the end)",
+  "tex": "\\subsection*{2. Réduction à un théorème d'annulation}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{2. Réduction à un théorème d'annulation}",
+   "new": "\\subsection*{2. - Réduction à un théorème d'annulation.}"
+  },
+  "note": "The underlined title has ' - ' after '2.' and ends with a full stop; the TeX drops both."
+ },
+ {
+  "page": 146,
+  "where": "first diagram (squares (1), (2)), the three vertical arrows",
+  "scan": "all three vertical arrows are hooked inclusion arrows, hook at the top: U → X (i), a_1^{-1}(U) → A, V → Y (j)",
+  "tex": "U \\arrow[d,\"i\"] ... \\arrow[d] ... V \\arrow[d,\"j\"]  (plain arrows)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "U \\arrow[d,\"i\"] \\arrow[rd,phantom,\"(1)\"{description}] & a_1^{-1}(U) \\arrow[l,\"a'_1\"'] \\arrow[r,\"a'_2\"] \\arrow[d] \\arrow[rd,phantom,\"(2)\"{description}] & V \\arrow[d,\"j\"]",
+   "new": "U \\arrow[d,hook,\"i\"] \\arrow[rd,phantom,\"(1)\"{description}] & a_1^{-1}(U) \\arrow[l,\"a'_1\"'] \\arrow[r,\"a'_2\"] \\arrow[d,hook] \\arrow[rd,phantom,\"(2)\"{description}] & V \\arrow[d,hook,\"j\"]"
+  },
+  "note": "tikz-cd's hook option puts the hook at the tail (the top), as in the print. Label sides left as they are."
+ },
+ {
+  "page": 146,
+  "where": "end of the first diagram",
+  "scan": "the first diagram is followed by a comma (right of its bottom row), like the second",
+  "tex": "X & A \\arrow[l,\"a_1\"] \\arrow[r,\"a_2\"'] & Y  (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"a_2\"'] & Y",
+   "new": "\\arrow[r,\"a_2\"'] & Y ,"
+  },
+  "note": "The TeX has the comma only after the second diagram."
+ },
+ {
+  "page": 146,
+  "where": "second diagram (squares (3), (4)), vertical arrows",
+  "scan": "the outer vertical arrows are hooked (U → X labelled i, V → Y labelled j); the middle arrow b_2^{-1}(V) → B is plain",
+  "tex": "U \\arrow[d,\"i\"] ... V \\arrow[d,\"j\"]  (plain arrows)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "U \\arrow[d,\"i\"] \\arrow[rd,phantom,\"(3)\"{description}] & b_2^{-1}(V) \\arrow[l,\"b'_1\"'] \\arrow[r,\"b'_2\"] \\arrow[d] \\arrow[rd,phantom,\"(4)\"{description}] & V \\arrow[d,\"j\"]",
+   "new": "U \\arrow[d,hook,\"i\"] \\arrow[rd,phantom,\"(3)\"{description}] & b_2^{-1}(V) \\arrow[l,\"b'_1\"'] \\arrow[r,\"b'_2\"] \\arrow[d] \\arrow[rd,phantom,\"(4)\"{description}] & V \\arrow[d,hook,\"j\"]"
+  },
+  "note": "Only the i and j arrows are hooked in this diagram; the middle arrow stays plain."
+ },
+ {
+  "page": 146,
+  "where": "Lemme 2.2, label",
+  "scan": "Lemme 2.2 - Pour prouver 1.2, ...",
+  "tex": "\\begin{statement}{Lemme 2.2}  (renders 'Lemme 2.2.')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Lemme 2.2}",
+   "new": "\\begin{statement}{Lemme 2.2 -}"
+  },
+  "note": "Exposé III B prints its run-in labels with ' -', as Exposé III does. The III B statement environment (s5.tex line 4360) still appends a full stop, so this edit gives the print's 'Lemme 2.2 -' only together with the Exposé III environments (no automatic full stop) for III B."
+ },
+ {
+  "page": 146,
+  "where": "Lemme 2.2, case b)",
+  "scan": "b) L|U = 0 , M|U = 0 .",
+  "tex": "\\text{b) } L|U=0,\\quad M|U=0 .",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "M|V=0",
+  "note": "M is a complex on Y and V = Y - {y} (Lemme 2.3 on p. 147: L|U = 0, M|V = 0); the print's M|U is a misprint for M|V. The TeX keeps the printed reading."
+ },
+ {
+  "page": 146,
+  "where": "display of F^nL",
+  "scan": "F^nL = { L si n ≤ 0 / i_!i^*L si n = 1 / 0 si n > 1 }  ('si' before each condition, no commas)",
+  "tex": "L,& n\\le 0,\\\\\ni_!i^*L,& n=1,\\\\\n0,& n>1,",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "L,& n\\le 0,\\\\\ni_!i^*L,& n=1,\\\\\n0,& n>1,",
+   "new": "L & \\text{si } n\\le 0\\\\\ni_!i^*L & \\text{si } n=1\\\\\n0 & \\text{si } n>1"
+  },
+  "note": "The TeX replaces the print's 'si' by commas and adds commas at the line ends."
+ },
+ {
+  "page": 146,
+  "where": "between the displays of F^nL and F^nM",
+  "scan": "F^nL = {...} , F^nM = {...} .  (comma between the two systems)",
+  "tex": "\\end{cases}\n\\qquad",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{cases}\n\\qquad",
+   "new": "\\end{cases}\n,\\qquad"
+  },
+  "note": "Missing comma between the two systems."
+ },
+ {
+  "page": 146,
+  "where": "display of F^nM",
+  "scan": "F^nM = { M si n ≤ 0 / j_!j^*M si n = 1 / 0 si n > 1 } .",
+  "tex": "M,& n\\le 0,\\\\\nj_!j^*M,& n=1,\\\\\n0,& n>1.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "M,& n\\le 0,\\\\\nj_!j^*M,& n=1,\\\\\n0,& n>1.",
+   "new": "M & \\text{si } n\\le 0\\\\\nj_!j^*M & \\text{si } n=1\\\\\n0 & \\text{si } n>1."
+  },
+  "note": "As for F^nL: 'si' before each condition, no commas at the line ends."
+ },
+ {
+  "page": 146,
+  "where": "display F^1a_{2*}a_1^*L = ...",
+  "scan": "F^1a_{2*}a^*_1L = j_!(a'_{2!}a'^*_1i^*L) .",
+  "tex": "F^1a_{2*}a_1^*L=j_!(a'_2)_!(a'_1)^*i^*L.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "j_!(a'_2)_!(a'_1)^*i^*L.",
+   "new": "j_!(a'_{2!}a'^*_1i^*L)."
+  },
+  "note": "The print opens the parenthesis after j_! and closes it after L, with the shriek inside the subscript of a'_2 (a'_{2!}); the TeX parenthesizes the maps instead."
+ },
+ {
+  "page": 146,
+  "where": "display F^nb_{1*}b_2^*M after 'On a de même' (printed on p. 147)",
+  "scan": "F^nb_{1*}b^*_2M = { b_{1*}b^*_2M si n ≤ 0 / i_!(b'_{1!}b'^*_2j^*M) si n = 1 / 0 si n > 1 } .",
+  "tex": "b_{1*}b_2^*M,& n\\le 0,\\\\\ni_!(b'_1)_!(b'_2)^*j^*M,& n=1,\\\\\n0,& n>1.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "b_{1*}b_2^*M,& n\\le 0,\\\\\ni_!(b'_1)_!(b'_2)^*j^*M,& n=1,\\\\\n0,& n>1.",
+   "new": "b_{1*}b_2^*M & \\text{si } n\\le 0\\\\\ni_!(b'_{1!}b'^*_2j^*M) & \\text{si } n=1\\\\\n0 & \\text{si } n>1."
+  },
+  "note": "Two differences in one edit: 'si' and no end commas, as in the displays of F^nL and F^nM; and the n = 1 case is i_!(b'_{1!}b'^*_2j^*M) in the print (parenthesis after i_!), not i_!(b'_1)_!(b'_2)^*j^*M. Printed on p. 147; listed under page 146 because the text stands before the folio-147 marker (see the marker finding)."
+ },
+ {
+  "page": 146,
+  "where": "throughout pp. 146-150: formulas run into the text",
+  "scan": "the print runs many formulas in the text line, e.g. p. 146 'donc a_1^{-1}(U) ⊂ a_2^{-1}(V) , b_2^{-1}(V) ⊂ b_1^{-1}(U) , et l'on a des diagrammes commutatifs'; p. 147 'que nous noterons encore u ∈ Hom_DF(...) (resp. ...) . par l'additivité'; p. 149 'la flèche de Künneth (III 4.2.1) a^!P ⊗_Z b^!Q → c^!(P ⊗ Q) en une \"flèche de changement de base\"'",
+  "tex": "sets these formulas as displays \\[ ... \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": null,
+  "note": "A convention of the transcription on all five pages (also p. 146 'filtré par F^na_{2*}a^*_1L = ...', p. 147 'u : a_{2*}a^*_1L → M (resp. ...)', 'L = h_{1*}L', ...', p. 148 '< u_z,v_z > = < u,v >_z', 'h_* : Hom(...) → Hom(...)', p. 149 '< u,v > = < u',v' >' and the base-change and projection arrows). Reported once, not itemized; the other edits keep the TeX's displays."
+ },
+ {
+  "page": 146,
+  "where": "statement of Lemme 2.2",
+  "scan": "underlined: 'Pour prouver' | 'on peut se borner à considérer les deux cas suivants'; not underlined: '1.2,' and the final ' :'",
+  "tex": "Pour prouver 1.2, on peut se borner à considérer les deux cas suivants:  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour prouver 1.2, on peut se borner à considérer les deux cas suivants:",
+   "new": "\\emph{Pour prouver} 1.2, \\emph{on peut se borner à considérer les deux cas suivants}:"
+  },
+  "note": "Exposé III B has no underline markup at all; \\emph is this file's command for the print's underline in statements (Exposé III: \\emph{Sous les hypothèses de} 4.4, ...). Numbers, formulas and the punctuation between the underlined pieces are not underlined in the print."
+ },
+ {
+  "page": 147,
+  "where": "top of the page",
+  "scan": "p. 147 begins 'On a de même' and the display F^nb_{1*}b^*_2M = {...} ., then 'On peut supposer u (resp. v) défini'; p. 146 ends with the display F^1a_{2*}a^*_1L = j_!(...) . and blank space",
+  "tex": "'On a de même' and the first lines of its cases display stand at the end of page_146.tex (s5.tex lines 4611-4617); the folio-147 marker (line 4618) sits inside the cases environment, before \\end{cases}",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 147 really begins at 'On a de même' (s5.tex line 4611; 4610 in the current layer). Exact fix: python -I move_marker.py 5 147 \"On a de même\" --before (the anchor occurs once on p. 146; simulated in memory on both layers: the marker then stands on its own line between the '\\]' that closes F^1a_{2*}a_1^*L=... and 'On a de même'). Apply the page-146 edit of that cases display before the move."
+ },
+ {
+  "page": 147,
+  "where": "display u : a_{2*}a_1^*L → M",
+  "scan": "u : a_{2*}a^*_1L ⟶ M with u underlined (the homomorphism of complexes)",
+  "tex": "u:a_{2*}a_1^*L\\longrightarrow M",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "u:a_{2*}a_1^*L\\longrightarrow M",
+   "new": "\\underline{u}:a_{2*}a_1^*L\\longrightarrow M"
+  },
+  "note": "On this page the print underlines u and v where they denote the homomorphisms of complexes, not where they denote the correspondences ('On peut supposer u (resp. v)', 'Ainsi u (resp. v)', < u_z,v_z >, < u,v >)."
+ },
+ {
+  "page": 147,
+  "where": "same display, resp. part",
+  "scan": "(resp. v : b_{1*}b^*_2M ⟶ L) with v underlined",
+  "tex": "(\\text{resp. }u:b_{1*}b_2^*M\\longrightarrow L).",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\text{resp. }u:b_{1*}b_2^*M",
+   "new": "(\\text{resp. }\\underline{v}:b_{1*}b_2^*M"
+  },
+  "note": "The TeX has u for the print's v, and drops the underline."
+ },
+ {
+  "page": 147,
+  "where": "the composite F^1a_{2*}a_1^*L → a_{2*}a_1^*L → M, arrow label",
+  "scan": "label u underlined",
+  "tex": "\\xrightarrow{u}M",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{u}M",
+   "new": "\\xrightarrow{\\underline{u}}M"
+  },
+  "note": "Underlined label."
+ },
+ {
+  "page": 147,
+  "where": "(resp. F^1b_{1*}b_2^*M → b_{1*}b_2^*M → L), arrow label",
+  "scan": "label underlined",
+  "tex": "\\xrightarrow{v}L",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{v}L",
+   "new": "\\xrightarrow{\\underline{v}}L"
+  },
+  "note": "Apply before the misprint edit of the same label (next finding)."
+ },
+ {
+  "page": 147,
+  "where": "(resp. F^1b_{1*}b_2^*M → b_{1*}b_2^*M → L), arrow label",
+  "scan": "the label is an underlined u, where v (underlined) is meant",
+  "tex": "\\xrightarrow{v}L  (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\underline{v}}L",
+   "new": "\\xrightarrow{\\underline{u}}L"
+  },
+  "corrected": "\\xrightarrow{\\underline{v}}L",
+  "note": "The resp. composite goes through v : b_{1*}b^*_2M → L; the print's u is a misprint, which the TeX silently corrects. The 'old' is the text after the preceding underline edit: apply the two in order."
+ },
+ {
+  "page": 147,
+  "where": "'se factorise (de manière unique)'",
+  "scan": "se factorise (de manière unique) à travers F^1M",
+  "tex": "se factorise de manière unique à travers $F^1M$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "se factorise de manière unique à travers",
+   "new": "se factorise (de manière unique) à travers"
+  },
+  "note": "Parentheses dropped by the TeX."
+ },
+ {
+  "page": 147,
+  "where": "'(resp. F^1L), en d'autres termes que'",
+  "scan": "(resp. F^1L), en d'autres termes que u (resp. v) est un homomorphisme",
+  "tex": "(resp. $F^1L$); en d'autres termes, $u$ (resp. $v$) est un homomorphisme",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. $F^1L$); en d'autres termes,",
+   "new": "(resp. $F^1L$), en d'autres termes que"
+  },
+  "note": "The print has a comma after (resp. F^1L) and 'que' after 'en d'autres termes', with no comma; the TeX has a semicolon, adds a comma and drops 'que'."
+ },
+ {
+  "page": 147,
+  "where": "'que u (resp. v) est un homomorphisme de complexes filtrés'",
+  "scan": "u and v underlined",
+  "tex": "$u$ (resp. $v$) est un homomorphisme",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$u$ (resp. $v$) est un homomorphisme",
+   "new": "$\\underline{u}$ (resp. $\\underline{v}$) est un homomorphisme"
+  },
+  "note": "Underlined in the print (homomorphisms of complexes)."
+ },
+ {
+  "page": 147,
+  "where": "'correspondance filtrée (au sens de (III 4.13))'",
+  "scan": "une correspondance filtrée (au sens de (III 4.13)), que nous noterons encore",
+  "tex": "une correspondance filtrée, au sens de (III 4.13), que nous noterons encore",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "filtrée, au sens de (III 4.13), que",
+   "new": "filtrée (au sens de (III 4.13)), que"
+  },
+  "note": "Parentheses dropped by the TeX."
+ },
+ {
+  "page": 147,
+  "where": "'que nous noterons encore u ∈ Hom_DF(...) (resp. v ∈ Hom_DF(...))'",
+  "scan": "u ∈ Hom_DF(a^*_1L,a^!_2M)   (resp. v ∈ Hom_DF(b^*_2M,b^!_1L)) .   (u, v underlined)",
+  "tex": "u\\in\\Hom_{DF}(a_1^*L,a_2^!M),\\qquad\nv\\in\\Hom_{DF}(b_2^*M,b_1^!L).",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "u\\in\\Hom_{DF}(a_1^*L,a_2^!M),\\qquad\nv\\in\\Hom_{DF}(b_2^*M,b_1^!L).",
+   "new": "\\underline{u}\\in\\Hom_{DF}(a_1^*L,a_2^!M)\\qquad\n(\\text{resp. }\\underline{v}\\in\\Hom_{DF}(b_2^*M,b_1^!L))."
+  },
+  "note": "The TeX drops '(resp. ...)' round the second correspondence, puts a comma between the two, and drops the underlines."
+ },
+ {
+  "page": 147,
+  "where": "'. par l'additivité des cup-produits'",
+  "scan": "(resp. v ∈ Hom_DF(b^*_2M,b^!_1L)) . par l'additi-vité  (lower-case p after the full stop)",
+  "tex": "Par l'additivité",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Par l'additivité",
+   "new": "par l'additivité"
+  },
+  "corrected": "Par l'additivité",
+  "note": "Lower-case 'par' after a full stop, a typing error; the TeX silently corrects it."
+ },
+ {
+  "page": 147,
+  "where": "first cup-product display",
+  "scan": "< u_z,v_z > = < gr^0 u_z , gr^0 v_z > + < gr^1 u_z , gr^1 v_z > ,  (u, v underlined in the gr terms only)",
+  "tex": "=\\langle \\operatorname{gr}^0u_z,\\operatorname{gr}^0v_z\\rangle\n +\\langle \\operatorname{gr}^1u_z,\\operatorname{gr}^1v_z\\rangle,",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\langle \\operatorname{gr}^0u_z,\\operatorname{gr}^0v_z\\rangle\n +\\langle \\operatorname{gr}^1u_z,\\operatorname{gr}^1v_z\\rangle,",
+   "new": "=\\langle \\operatorname{gr}^0\\underline{u}_z,\\operatorname{gr}^0\\underline{v}_z\\rangle\n +\\langle \\operatorname{gr}^1\\underline{u}_z,\\operatorname{gr}^1\\underline{v}_z\\rangle,"
+  },
+  "note": "The left side < u_z,v_z > is not underlined in the print."
+ },
+ {
+  "page": 147,
+  "where": "between the two cup-product displays",
+  "scan": "the two formulas stand one under the other, the first ending with a comma; no 'et'",
+  "tex": "\\]\net\n\\[",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\net\n\\[",
+   "new": "\\]\n\\["
+  },
+  "note": "Word added by the TeX."
+ },
+ {
+  "page": 147,
+  "where": "second cup-product display",
+  "scan": "< u,v > = < gr^0 u , gr^0 v > + < gr^1 u , gr^1 v > .  (u, v underlined in the gr terms only)",
+  "tex": "=\\langle \\operatorname{gr}^0u,\\operatorname{gr}^0v\\rangle\n +\\langle \\operatorname{gr}^1u,\\operatorname{gr}^1v\\rangle.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\langle \\operatorname{gr}^0u,\\operatorname{gr}^0v\\rangle\n +\\langle \\operatorname{gr}^1u,\\operatorname{gr}^1v\\rangle.",
+   "new": "=\\langle \\operatorname{gr}^0\\underline{u},\\operatorname{gr}^0\\underline{v}\\rangle\n +\\langle \\operatorname{gr}^1\\underline{u},\\operatorname{gr}^1\\underline{v}\\rangle."
+  },
+  "note": "The left side < u,v > is not underlined in the print."
+ },
+ {
+  "page": 147,
+  "where": "'tandis que gr^0L (resp. gr^1M) est concentré en x (resp. y)'",
+  "scan": "tandis que gr^oL (resp. gr^1M) est concentré en x (resp. y)",
+  "tex": "tandis que $\\operatorname{gr}^0L$ (resp. $\\operatorname{gr}^1M$) est concentré",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$\\operatorname{gr}^0M$",
+  "note": "gr^1M = j_!j^*M has zero fibre at y (same sentence); the part concentrated at y is gr^0M. The TeX keeps the printed reading."
+ },
+ {
+  "page": 147,
+  "where": "Lemme 2.3, label",
+  "scan": "Lemme 2.3 - Sous les hypothèses de 1.1, ...",
+  "tex": "\\begin{statement}{Lemme 2.3}  (renders 'Lemme 2.3.')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Lemme 2.3}",
+   "new": "\\begin{statement}{Lemme 2.3 -}"
+  },
+  "note": "Exposé III B prints its run-in labels with ' -', as Exposé III does. The III B statement environment (s5.tex line 4360) still appends a full stop, so this edit gives the print's 'Lemme 2.3 -' only together with the Exposé III environments (no automatic full stop) for III B."
+ },
+ {
+  "page": 147,
+  "where": "'concentrés au points fermés'",
+  "scan": "de correspondances entre complexes concentrés au points fermés",
+  "tex": "complexes concentrés aux points fermés",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "concentrés aux points",
+   "new": "concentrés au points"
+  },
+  "corrected": "concentrés aux points",
+  "note": "The print has 'au' for 'aux'; the TeX silently corrects it."
+ },
+ {
+  "page": 147,
+  "where": "'la formule de Lefschetz pour les projections s → S , y → S'",
+  "scan": "pour les projections s ⟶ S , y ⟶ S",
+  "tex": "pour les projections $s\\to S$, $y\\to S$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$x\\to S$",
+  "note": "The reduced data have complexes on the closed points x and y, and the proof on p. 148 applies 'la formule de Lefschetz pour {x} → S , {y} → S'; s (the image of z in A) is a misprint for x. The TeX keeps the printed reading."
+ },
+ {
+  "page": 147,
+  "where": "'tels que A x_(X x_S Y) B soit réduit à un point fermé'",
+  "scan": "A x_{(X x_S Y)} B  (the subscript in parentheses)",
+  "tex": "$A\\times_{X\\times_SY}B$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "A\\times_{X\\times_SY}B",
+   "new": "A\\times_{(X\\times_SY)}B"
+  },
+  "note": "Parentheses round the subscript dropped by the TeX."
+ },
+ {
+  "page": 147,
+  "where": "'L = h_{1*}L' , m = h_{2*}M''",
+  "scan": "L = h_{1*}L' , m = h_{2*}M'",
+  "tex": "L=h_{1*}L',\\quad m=h_{2*}M',\\quad",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "M=h_{2*}M'",
+  "note": "Lower-case m for M (L = h_{1*}L', M = h_{2*}M'); the TeX keeps the printed reading."
+ },
+ {
+  "page": 147,
+  "where": "statement of Lemme 2.3",
+  "scan": "underlined: 'Sous les hypothèses de' | 'supposons' | 'Alors on' + 'a' (across the line break); not underlined: '1.1,', the formulas, the full stops",
+  "tex": "Sous les hypothèses de 1.1, supposons $L|U=0$, $M|V=0$. Alors on a  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 1.1, supposons $L|U=0$, $M|V=0$. Alors on a",
+   "new": "\\emph{Sous les hypothèses de} 1.1, \\emph{supposons} $L|U=0$, $M|V=0$. \\emph{Alors on a}"
+  },
+  "note": "As for Lemme 2.2."
+ },
+ {
+  "page": 148,
+  "where": "first line of the page",
+  "scan": "h_1 : {x} ⟶ X et h_2 : {y} ⟶ Y désignant les inclusions canoniques.  (no 'où'; p. 147 ends 'M' ∈ ob D_ctf({y}) ,')",
+  "tex": "où $h_1:\\{x\\}\\to X$ et $h_2:\\{y\\}\\to Y$ désignant",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "où $h_1:\\{x\\}\\to X$",
+   "new": "$h_1:\\{x\\}\\to X$"
+  },
+  "note": "Word added by the TeX."
+ },
+ {
+  "page": 148,
+  "where": "'On a RΓ(X;L) = RΓ_c(X,L) = L_x'",
+  "scan": "RΓ(X;L) = RΓ_c(X,L) = L_x  (semicolon)",
+  "tex": "\\R\\Gamma(X,L)=\\R\\Gamma_c(X,L)=L_x",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Gamma(X,L)=\\R\\Gamma_c",
+   "new": "\\Gamma(X;L)=\\R\\Gamma_c"
+  },
+  "corrected": "\\R\\Gamma(X,L)",
+  "note": "Semicolon typed for the comma (RΓ(X,L) everywhere else on the page); the TeX silently corrects it. The edit changes only that character."
+ },
+ {
+  "page": 148,
+  "where": "'(III 3.5 b)). D'autre part, si h = ...'",
+  "scan": "the print runs on in the same line: '... le procédé de calcul (III 3.5 b)). D'autre part, si h = h_1 x_S h_2 ...'",
+  "tex": "a blank line (new paragraph) before 'D'autre part, si'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "(III 3.5 b)).\n\nD'autre part, si",
+   "new": "(III 3.5 b)). D'autre part, si"
+  },
+  "note": "No paragraph break in the print."
+ },
+ {
+  "page": 148,
+  "where": "'désignent les fibres de a , b en (x,y) (réduites chacune à un point)'",
+  "scan": "en (x,y) (réduites chacune à un point), on a des isomorphismes canoniques",
+  "tex": "en $(x,y)$, réduites chacune à un point, on a",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$(x,y)$, réduites chacune à un point, on a",
+   "new": "$(x,y)$ (réduites chacune à un point), on a"
+  },
+  "note": "Parentheses dropped by the TeX."
+ },
+ {
+  "page": 148,
+  "where": "'s'écrivent donc (de manière unique)'",
+  "scan": "Les correspondances u et v s'écrivent donc (de manière unique)",
+  "tex": "s'écrivent donc de manière unique",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "s'écrivent donc de manière unique",
+   "new": "s'écrivent donc (de manière unique)"
+  },
+  "note": "Parentheses dropped by the TeX."
+ },
+ {
+  "page": 148,
+  "where": "Lemme 2.4, label",
+  "scan": "Lemme 2.4 - Pour prouver 1.2, ...",
+  "tex": "\\begin{statement}{Lemme 2.4}  (renders 'Lemme 2.4.')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Lemme 2.4}",
+   "new": "\\begin{statement}{Lemme 2.4 -}"
+  },
+  "note": "Exposé III B prints its run-in labels with ' -', as Exposé III does. The III B statement environment (s5.tex line 4360) still appends a full stop, so this edit gives the print's 'Lemme 2.4 -' only together with the Exposé III environments (no automatic full stop) for III B."
+ },
+ {
+  "page": 148,
+  "where": "the derived-functor R, pp. 148 and 150",
+  "scan": "a plain typed R: RΓ(X,L), RΓ_c(Y,M) (p. 148), RΓ_A(T,...), RΓ(T-A,...), RΓ_z(B,...) (p. 150); never double-struck on these pages",
+  "tex": "\\R\\Gamma ..., and \\R is \\mathbb{R} again from Exposé III B on (s5.tex line 4362)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "8 occurrences on p. 148 and 12 on p. 150. Reported once as a convention, no per-occurrence edit: \\renewcommand{\\R}{\\mathrm{R}} for Exposé III B, as in Exposé III, if the other pages of III B agree."
+ },
+ {
+  "page": 148,
+  "where": "statement of Lemme 2.4",
+  "scan": "underlined: 'Pour prouver' | 'on peut supposer que' | 'et' | 'sont des immersions' + 'fermées' | 'et il suffit de démontrer que' | 'si' | 'la flèche de restric-' + 'tion'; not underlined: '1.2,', a, b, the formulas and the commas",
+  "tex": "Pour prouver 1.2, on peut supposer que $a$ et $b$ sont des immersions fermées, ... la flèche de restriction (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour prouver 1.2, on peut supposer que $a$ et $b$ sont des immersions fermées, et il suffit de démontrer que, si $L_x=0$, $M_y=0$, la flèche de restriction",
+   "new": "\\emph{Pour prouver} 1.2, \\emph{on peut supposer que} $a$ \\emph{et} $b$ \\emph{sont des immersions fermées}, \\emph{et il suffit de démontrer que}, \\emph{si} $L_x=0$, $M_y=0$, \\emph{la flèche de restriction}"
+  },
+  "note": "As for Lemme 2.2; the statement ends on p. 149 ('est nulle.')."
+ },
+ {
+  "page": 149,
+  "where": "'images de a et b vérifient les mêmes hypothèses'",
+  "scan": "b' : B' ⟶ Z , images de a et b vérifient  (no comma after b)",
+  "tex": "images de $a$ et $b$, vérifient",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "images de $a$ et $b$, vérifient",
+   "new": "images de $a$ et $b$ vérifient"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 149,
+  "where": "'d'où la première assertion. D'après 2.2 et 2.3'",
+  "scan": "the print runs on in the same line: '< u,v > = < u',v' > , d'où la première assertion. D'après 2.2 et 2.3, on peut supposer'",
+  "tex": "a blank line (new paragraph) before 'D'après 2.2 et 2.3'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "d'où la première assertion.\n\nD'après 2.2 et 2.3",
+   "new": "d'où la première assertion. D'après 2.2 et 2.3"
+  },
+  "note": "No paragraph break in the print."
+ },
+ {
+  "page": 149,
+  "where": "the Künneth arrow (III 4.2.1)",
+  "scan": "a^!P ⊗^L_Z b^!Q ⟶ c^!(P ⊗^L Q)  (a, b without primes)",
+  "tex": "a'{}^!P\\lten_Z b'{}^!Q\\longrightarrow c^!(P\\lten Q)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "a'{}^!P\\lten_Z b'{}^!Q\\longrightarrow c^!",
+   "new": "a^!P\\lten_Z b^!Q\\longrightarrow c^!"
+  },
+  "note": "Here a, b are the closed immersions A → Z, B → Z; the primed a', b' are the inclusions of {z}. The TeX adds the primes."
+ },
+ {
+  "page": 149,
+  "where": "the base-change arrow ('flèche de changement de base')",
+  "scan": "a^!P ⊗^L_Z b^!Q ⟶ a'^!b*P ⊗^L a'*b^!Q ,",
+  "tex": "a'{}^!P\\lten_Z b'{}^!Q\\longrightarrow a'{}^!b^*P\\lten a^*b'{}^!Q,",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "a'{}^!P\\lten_Z b'{}^!Q\\longrightarrow a'{}^!b^*P\\lten a^*b'{}^!Q,",
+   "new": "a^!P\\lten_Z b^!Q\\longrightarrow a'{}^!b^*P\\lten a'{}^*b^!Q,"
+  },
+  "note": "No primes on the left side; on the right the prime is on a (a'*), not on b (b^!)."
+ },
+ {
+  "page": 149,
+  "where": "the projection arrows ('flèches de projection')",
+  "scan": "a'^!b*P ⊗^L a'*b^!Q ⟶ a'^!(b*P ⊗^L b^!Q) ⟶ a'^!b^!(P ⊗^L Q))",
+  "tex": "a'{}^!b^*P\\lten a^*b'{}^!Q\n \\longrightarrow a'{}^!(b^*P\\lten b'{}^!Q)\n \\longrightarrow a'{}^!b'{}^!(P\\lten Q)).",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lten a^*b'{}^!Q\n \\longrightarrow a'{}^!(b^*P\\lten b'{}^!Q)\n \\longrightarrow a'{}^!b'{}^!(P",
+   "new": "\\lten a'{}^*b^!Q\n \\longrightarrow a'{}^!(b^*P\\lten b^!Q)\n \\longrightarrow a'{}^!b^!(P"
+  },
+  "note": "The print has a'* (prime on a) and b^! without prime throughout; the TeX moves the prime from a to b."
+ },
+ {
+  "page": 149,
+  "where": "end of the statement of Lemme 2.4",
+  "scan": "'est nulle' underlined, the full stop not",
+  "tex": "est nulle.  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est nulle.",
+   "new": "\\emph{est nulle}."
+  },
+  "note": "As for the rest of the statement on p. 148."
+ },
+ {
+  "page": 150,
+  "where": "'du résultat plus précis suivant :'",
+  "scan": "1.2 va donc découler du résultat plus précis suivant :",
+  "tex": "du résultat plus précis suivant.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "plus précis suivant.",
+   "new": "plus précis suivant:"
+  },
+  "note": "Colon in the print (written without the space, as the file does elsewhere, e.g. 'suivants:' p. 146)."
+ },
+ {
+  "page": 150,
+  "where": "Proposition 2.5, label",
+  "scan": "Proposition 2.5 - Sous les hypothèses de 1.2, ...",
+  "tex": "\\begin{statement}{Proposition 2.5}  (renders 'Proposition 2.5.')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Proposition 2.5}",
+   "new": "\\begin{statement}{Proposition 2.5 -}"
+  },
+  "note": "Exposé III B prints its run-in labels with ' -', as Exposé III does. The III B statement environment (s5.tex line 4360) still appends a full stop, so this edit gives the print's 'Proposition 2.5 -' only together with the Exposé III environments (no automatic full stop) for III B."
+ },
+ {
+  "page": 150,
+  "where": "2.6, 'le reste du n° 2'",
+  "scan": "va occuper le reste du n° 2",
+  "tex": "le reste du numéro 2",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "du numéro 2",
+   "new": "du n\\textsuperscript{o}~2"
+  },
+  "note": "Abbreviation written out by the TeX; the file writes n° as n\\textsuperscript{o}~ elsewhere (III B introduction)."
+ },
+ {
+  "page": 150,
+  "where": "2.6, 'et les n°s 3 et 4'",
+  "scan": "et les n°s 3 et 4 .",
+  "tex": "et les numéros 3 et 4.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "les numéros 3 et 4",
+   "new": "les n\\textsuperscript{o}s~3 et 4"
+  },
+  "note": "Abbreviation written out by the TeX."
+ },
+ {
+  "page": 150,
+  "where": "first isomorphism after 'les triangles de cohomologie relative'",
+  "scan": "RΓ_A(T,(DL ⊗^L_S M)T)[1]  (no restriction bar before T)",
+  "tex": "\\R\\Gamma_A(T,(DL\\lten_SM)T)[1],",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\R\\Gamma_A(T,(DL\\lten_SM)|T)[1]",
+  "note": "Restriction bar missing, cf. (DL ⊗ M)|T in Proposition 2.5 and (DL ⊗ M)|T-A on the left; the TeX keeps the printed reading."
+ },
+ {
+  "page": 150,
+  "where": "statement of Proposition 2.5",
+  "scan": "underlined: 'Sous les hypothèses de' | 'on suppose que' | 'et' | 'sont des' + 'immersions fermées et que' | 'Désignons par' | 'le localisé strict' + 'de' | 'en' | 'et identifions' | 'à des sous-schémas fermés de' | 'Alors les flèches de restriction'; not underlined: '1.2,', a, b, T, X x_S Y, z = (x,y), A , B, the formulas and the punctuation",
+  "tex": "Sous les hypothèses de 1.2, on suppose que $a$ et $b$ ... Alors les flèches de restriction  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 1.2, on suppose que $a$ et $b$ sont des immersions fermées et que $L_x=0$, $M_y=0$. Désignons par $T$ le localisé strict de $X\\times_SY$ en $z=(x,y)$, et identifions $A$, $B$ à des sous-schémas fermés de $T$. Alors les flèches de restriction",
+   "new": "\\emph{Sous les hypothèses de} 1.2, \\emph{on suppose que} $a$ \\emph{et} $b$ \\emph{sont des immersions fermées et que} $L_x=0$, $M_y=0$. \\emph{Désignons par} $T$ \\emph{le localisé strict de} $X\\times_SY$ \\emph{en} $z=(x,y)$, \\emph{et identifions} $A$, $B$ \\emph{à des sous-schémas fermés de} $T$. \\emph{Alors les flèches de restriction}"
+  },
+  "note": "As for Lemme 2.2."
+ },
+ {
+  "page": 150,
+  "where": "end of the statement of Proposition 2.5",
+  "scan": "'sont nulles' underlined, the full stop not",
+  "tex": "sont nulles.  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "sont nulles.",
+   "new": "\\emph{sont nulles}."
+  },
+  "note": "As for the rest of the statement."
+ }
+]

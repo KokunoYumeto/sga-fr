@@ -1,0 +1,108 @@
+[
+ {
+  "page": "417",
+  "where": "first line of page 417's TeX (source line 4695)",
+  "scan": "p. 416 ends with 'la catégorie Hom(C,Pointess(E)).'",
+  "tex": "\\Ppointess(E))$. (Utiliser $b$)\\pageoriginale",
+  "kind": "marker",
+  "confidence": "medium",
+  "fix": null,
+  "note": "The words '\\Ppointess(E))$.' are the end of printed p. 416, but they sit on p. 417's first line, and that line's comment does not flag it as shared. Page 417 really begins at '(Utiliser b)'."
+ },
+ {
+  "page": "417",
+  "where": "7.6 h), 'Utilisant b), ... conclure'",
+  "scan": "Utilisant b), en conclure que tout morphisme",
+  "tex": "Utilisant b), et conclure que",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Utilisant b), et conclure",
+   "new": "Utilisant b), en conclure"
+  },
+  "note": "The print reads 'en conclure', not 'et conclure'."
+ },
+ {
+  "page": "417",
+  "where": "7.6 i), end",
+  "scan": "(cf. 8.7 b) pour généralisation)",
+  "tex": "\\hyperref[IV.exer8.7]{8.7} l) pour",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "{8.7} l) pour",
+   "new": "{8.7} b) pour"
+  },
+  "note": "The print refers to 8.7 b), not 8.7 l)."
+ },
+ {
+  "page": "417",
+  "where": "7.8 a)",
+  "scan": "Désignons par Point'E) l'ensemble",
+  "tex": "Désignons par $\\Point(E)$ l'ensemble",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$\\Point(E)$",
+  "note": "The print has a typing error, 'Point'E)'. The TeX silently corrects it."
+ },
+ {
+  "page": "418",
+  "where": "7.8 a), first line",
+  "scan": "U_p ≠ ∅",
+  "tex": "U_p\\neq \\phi",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "U_p\\neq \\phi",
+   "new": "U_p\\neq ∅"
+  },
+  "note": "The print has the empty set sign, but \\phi prints the Greek letter φ."
+ },
+ {
+  "page": "418",
+  "where": "7.8 a)",
+  "scan": "commute aux Inf finis aux Sup quelconques",
+  "tex": "commute aux Inf finis aux $\\Sup$ quelconques",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "commute aux Inf finis et aux $\\Sup$ quelconques",
+  "note": "The print drops the word 'et'. The TeX keeps the printed reading."
+ },
+ {
+  "page": "418",
+  "where": "7.8 b), first line",
+  "scan": "admettant des Inf finis et des Sup quelconques",
+  "tex": "admettant des Inf\nfins et",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "des Inf\nfins et",
+   "new": "des Inf\nfinis et"
+  },
+  "note": "The TeX has the typo 'fins'; the print reads 'finis'."
+ },
+ {
+  "page": "418",
+  "where": "7.8 b), 'Montrer que ... est canoniquement isomorphe'",
+  "scan": "Montrer que I est canoniquement isomorphe à Ouv(𝒪~)",
+  "tex": "Montrer que\n$\\Oo$ est canoniquement isomorphe",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\Oo$",
+  "note": "The print has 'I' for 𝒪. The TeX silently corrects it to $\\Oo$."
+ },
+ {
+  "page": "418",
+  "where": "7.8 b), 'Si 𝒪' est un ensemble ordonné'",
+  "scan": "Si 𝒪 est un ensemble ordonné satisfaisant (no prime)",
+  "tex": "Si $\\Oo'$ est un ensemble ordonné",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\Oo'$",
+  "note": "The print lacks the prime. The TeX silently corrects it to 𝒪'."
+ }
+]

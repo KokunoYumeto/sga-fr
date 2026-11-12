@@ -1,0 +1,9 @@
+```json
+{"findings":[
+{"page":96,"where":"(ii bis)","scan":"par épimor-phisme stricts","tex":"par\népimorphisme stricts","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"par épimorphismes stricts","note":"The print has the singular 'épimorphisme' where the plural is required, as in (ii) and (iii). The TeX keeps the printed reading."},
+{"page":97,"where":"end of the proof of (ii) ⇒ (i)","scan":"appliqué à l'inclusion E ↪ E_PF","tex":"$E\\hookrightarrow E_{PF}$","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"$E_{PF}\\hookrightarrow E$","note":"The inclusion runs from E_PF into E; the print reverses it. The TeX keeps the printed reading."},
+{"page":98,"where":"display in 8.7.8 b)","scan":"g ↦ g∘φ : Hom(K,F) → Hom(K,F)","tex":"\\Hhom(K,F)\\longrightarrow \\Hhom(K,F)","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"\\Hhom(K,F)\\longrightarrow \\Hhom(C,F)","note":"Composition with φ : C → K lands in Hom(C,F); the print repeats Hom(K,F). The TeX keeps the printed reading."},
+{"page":98,"where":"(Comparer aussi IV 7.5.)","scan":"IV 7.5","tex":"IV \\hyperref[I.cor7.5]{7.5}","kind":"other","confidence":"low","fix":{"old":"IV \\hyperref[I.cor7.5]{7.5}","new":"IV 7.5"},"note":"The text prints correctly, but the link goes to the Exposé I label I.cor7.5 instead of Exposé IV 7.5. The correct external label for IV 7.5 is not known."}
+],
+"coordinator":"p96: 0/1; p97: 0/1; p98: 1/1; p99: 0/0; p100: 0/0. p98: the link for 'IV 7.5' targets I.cor7.5; it should point to Exposé IV with \\hyperrefext if that label exists."}
+```

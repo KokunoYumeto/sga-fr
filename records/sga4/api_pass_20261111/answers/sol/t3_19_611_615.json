@@ -1,0 +1,137 @@
+[
+ {
+  "page": 611,
+  "where": "Premier isomorphisme, après la flèche",
+  "scan": "(R^{2a}u^{!})𝛍_{n}^{\\otimes a}",
+  "tex": "(R^{2a}u^{!})_{𝛍_{n}}{}^{\\otimes a}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(R^{2a}u^{!})_{𝛍_{n}}{}^{\\otimes a}",
+   "new": "(R^{2a}u^{!})𝛍_{n}{}^{\\otimes a}"
+  },
+  "note": "Le faisceau est l'argument du foncteur, non un indice inférieur."
+ },
+ {
+  "page": 611,
+  "where": "Diagramme (3.4.1), objet supérieur droit",
+  "scan": "(R^{2b}v^{!})𝛍_{n}^{\\otimes b}",
+  "tex": "(R^{2b}v^{!})𝛍_{n} \\boxtimes b",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(R^{2b}v^{!})𝛍_{n} \\boxtimes b",
+   "new": "(R^{2b}v^{!})𝛍_{n}^{\\otimes b}"
+  },
+  "note": "L'imprimé donne une puissance tensorielle en exposant, non un produit par b sur la ligne."
+ },
+ {
+  "page": 611,
+  "where": "Diagramme (3.4.1), étiquette de la flèche verticale droite",
+  "scan": "((Y,X) \\otimes 𝛍_{n}^{\\otimes b})",
+  "tex": "((Y,X) \\boxtimes 𝛍_{n}^{\\boxtimes b})",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "((Y,X) \\boxtimes 𝛍_{n}^{\\boxtimes b})",
+   "new": "((Y,X) \\otimes 𝛍_{n}^{\\otimes b})"
+  },
+  "note": "Les deux signes sont ceux du produit tensoriel, comme dans la formule précédente. L'omission imprimée de varphi est signalée séparément."
+ },
+ {
+  "page": 611,
+  "where": "Diagramme (3.4.1), définition de eta",
+  "scan": "\\eta=(R^{2b}v^{!})((Y,X)\\otimes 𝛍_{n}^{\\otimes b})",
+  "tex": "(R^{2b}v^{!})((Y,X) \\boxtimes 𝛍_{n}^{\\boxtimes b})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\eta=(R^{2b}v^{!})(\\varphi(Y,X)\\otimes 𝛍_{n}^{\\otimes b})",
+  "note": "L'imprimé omet varphi devant (Y,X). Le TeX conserve cette omission."
+ },
+ {
+  "page": 611,
+  "where": "Diagramme (3.4.1), objet inférieur gauche",
+  "scan": "(R^{2c}w^{!})𝛍_{n}^{\\otimes c}",
+  "tex": "(R^{2c}w^{!})𝛍_{n}",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "(R^{2c}w^{!})𝛍_{n} &",
+   "new": "(R^{2c}w^{!})𝛍_{n}^{\\otimes c} &"
+  },
+  "note": "La puissance tensorielle d'exposant c manque dans le TeX."
+ },
+ {
+  "page": 611,
+  "where": "Diagramme (3.4.1), objet inférieur droit",
+  "scan": "(R^{2b}v^{!})(R^{2a}u^{!})𝛍_{n}^{\\otimes c}",
+  "tex": "(R^{2b}v^{!}(R^{2a}u^{!})𝛍_{n}^{\\boxtimes c})",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(R^{2b}v^{!}(R^{2a}u^{!})𝛍_{n}^{\\boxtimes c})",
+   "new": "(R^{2b}v^{!})(R^{2a}u^{!})𝛍_{n}^{\\otimes c}"
+  },
+  "note": "L'imprimé ferme la première parenthèse après v^{!}, non à la fin de l'expression, et donne une puissance tensorielle."
+ },
+ {
+  "page": 611,
+  "where": "Diagramme (3.4.1), flèche horizontale inférieure",
+  "scan": "\\xleftarrow{\\xi}",
+  "tex": "\\ar[l]",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\ar[l]",
+   "new": "\\ar[l]^{\\xi}"
+  },
+  "note": "L'étiquette xi de la flèche manque."
+ },
+ {
+  "page": 613,
+  "where": "Premier paragraphe, troisième objet après « par »",
+  "scan": "Z-C\\cap\\bar{Z}",
+  "tex": "Z-C\\cap \\bar{Z}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\bar{Z}-C\\cap \\bar{Z}",
+  "note": "Le premier Z est imprimé sans barre, alors qu'il s'agit de l'objet bar Z que l'on remplace. Le TeX conserve cette coquille."
+ },
+ {
+  "page": 613,
+  "where": "Paragraphe définissant F, parenthèse « par l'un ou l'autre… »",
+  "scan": "$\\ZZ/n$ (par l'un ou l'autre des isomorphismes $\\Psi(Z,Y_{i},X)$, et",
+  "tex": "$\\ZZ/n$ (par l'un ou l'autre des isomorphismes $\\Psi\n(Z,Y_{i},X)$, et",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$\\ZZ/n$ (par l'un ou l'autre des isomorphismes $\\Psi(Z,Y_{i},X)$), et",
+  "note": "La parenthèse explicative n'est pas refermée dans l'imprimé. Le TeX conserve cette coquille; la fermeture doit suivre l'isomorphisme Psi."
+ },
+ {
+  "page": 614,
+  "where": "Démonstration du théorème 4.1, avant la dernière référence à XV 1.17",
+  "scan": "g et un morphisme local",
+  "tex": "$g$ et un morphisme local",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$g$ est un morphisme local",
+  "note": "L'imprimé porte « et » pour « est »; le TeX conserve la coquille."
+ },
+ {
+  "page": 615,
+  "where": "Dernière ligne du calcul de cohomologie",
+  "scan": "si q>0",
+  "tex": "\\mbox{\\rm si}\\quad a>0",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "a>0",
+   "new": "q>0"
+  },
+  "note": "La condition imprimée porte sur le degré q, non sur a."
+ }
+]

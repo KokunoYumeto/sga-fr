@@ -1,0 +1,93 @@
+[
+ {
+  "page": 342,
+  "where": "Beginning of the TeX cut, before the introductory paragraph",
+  "scan": "The page begins with « Dans le présent exposé et le suivant… »; no title or author block is printed here.",
+  "tex": "\\chapter{Site et topos étales d'un schéma} followed by the author block",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The cut starts too early: the title and author material precedes this printed page. Page 342 begins at Dans\\pageoriginale."
+ },
+ {
+  "page": 342,
+  "where": "Paragraph beginning « Sauf mention expresse du contraire »",
+  "scan": "le présent exposé et les suivants",
+  "tex": "le présent exposé er les suivants",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "exposé er les suivants",
+   "new": "exposé et les suivants"
+  },
+  "note": "The print reads « et », not « er »."
+ },
+ {
+  "page": 343,
+  "where": "First line of the TeX cut; boundary with page 342",
+  "scan": "Page 342 ends with « dans (Sch) »; page 343 begins « est dit étale ».",
+  "tex": "$(\\Sch)$ est dit\\pageoriginale",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The leading $(\\Sch)$ belongs to page 342. This first-line overlap is not declared in the cut's comment; report the boundary issue once rather than adding or deleting source text."
+ },
+ {
+  "page": 343,
+  "where": "End of the TeX cut, subsection 1.3 heading",
+  "scan": "Subsection 1.3 is printed at the top of page 344, not on page 343.",
+  "tex": "\\subsection{}\\etiquette[1.3]{VII.subsec1.3}",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The comment declares only the last text line as belonging to page 344, but the subsection heading also belongs there. Page 343's main text ends with « le topos étale de X »."
+ },
+ {
+  "page": 344,
+  "where": "Subsection 1.3, opening words",
+  "scan": "Pour le suite",
+  "tex": "Pour la\\pageoriginale suite",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Pour la suite",
+  "note": "The print has the grammatical typo « le suite ». The TeX silently corrects it to « la suite »."
+ },
+ {
+  "page": 345,
+  "where": "Paragraph beginning « Évidemment »",
+  "scan": "pour un composé de deux morphisme de schémas",
+  "tex": "pour un composé de deux morphisme de schémas",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "pour un composé de deux morphismes de schémas",
+  "note": "The print incorrectly leaves « morphisme » singular after « deux »; the TeX keeps this misprint."
+ },
+ {
+  "page": 345,
+  "where": "Subsection 1.5, first Leray spectral sequence",
+  "scan": "E_2^{p,q}",
+  "tex": "E^{p. q}_2",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "E^{p. q}_2 = H^{p}",
+   "new": "E^{p, q}_2 = H^{p}"
+  },
+  "note": "The printed bidegree has a comma between p and q, not a full stop."
+ },
+ {
+  "page": 345,
+  "where": "Subsection 1.5, spectral sequence of composite functors",
+  "scan": "E_2^{p,q}",
+  "tex": "E^{p. q}_2",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "E^{p. q}_2 = R^{p}",
+   "new": "E^{p, q}_2 = R^{p}"
+  },
+  "note": "The printed bidegree again has a comma between p and q."
+ }
+]

@@ -1,0 +1,173 @@
+{
+  "findings": [
+    {
+      "page": 36,
+      "where": "5.0, notation for the direct-image functor",
+      "scan": "u_\\ast = E \\to E'",
+      "tex": "u_\\ast\n= E \\to E",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "u_\\ast : E \\to E'",
+      "note": "The printed equals sign should be a colon introducing the source and target. The TeX keeps it; the missing target prime in the TeX is a separate finding."
+    },
+    {
+      "page": 36,
+      "where": "5.0, target of the direct-image functor",
+      "scan": "E \\to E'",
+      "tex": "E \\to E",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "= E \\to E$",
+        "new": "= E \\to E'$"
+      },
+      "note": "The target has a prime in the print."
+    },
+    {
+      "page": 36,
+      "where": "Proposition 5.1, item 3, opening sentence",
+      "scan": "La formation des R^q u_\\ast commute aux localisations.",
+      "tex": "La formation des foncteurs  $R^qu_\\ast$ commute aux localisations.",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "des foncteurs  $R^qu_\\ast$",
+        "new": "des $R^qu_\\ast$"
+      },
+      "note": "The print does not have « foncteurs » in item 3."
+    },
+    {
+      "page": 36,
+      "where": "Proposition 5.1, item 3, definition of the localized morphism",
+      "scan": "u_{/X}",
+      "tex": "u_{/X}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "u_{/X'}",
+      "note": "The print omits the prime, and the TeX keeps the omission. The base object is X', as also indicated in (5.1.1)."
+    },
+    {
+      "page": 37,
+      "where": "Proof of Proposition 5.1, first paragraph",
+      "scan": "u^{\\wedge}_\\ast",
+      "tex": "u^{\\wedge}_x",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "u^{\\wedge}_x",
+        "new": "u^{\\wedge}_\\ast"
+      },
+      "note": "The direct-image subscript is an asterisk, not the letter x."
+    },
+    {
+      "page": 37,
+      "where": "Proof of Proposition 5.1, sentence introducing (5.1.1) for q = 0",
+      "scan": "on a un isomorphisme canonique",
+      "tex": "on a isomorphisme canonique",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "on a isomorphisme canonique",
+        "new": "on a un isomorphisme canonique"
+      },
+      "note": "The article « un » is missing."
+    },
+    {
+      "page": 38,
+      "where": "6.0, description of the category of Modules",
+      "scan": "A-Modules à gauches",
+      "tex": "$A$-Modules à gauches",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$A$-Modules à gauche",
+      "note": "The print erroneously pluralizes « gauche » in « à gauche ». The TeX keeps the misprint."
+    },
+    {
+      "page": 38,
+      "where": "Formula (6.0.4), first member",
+      "scan": "H^{0}(X, \\Eext_A^{0}(M, N)",
+      "tex": "H^{0} (X, \\Eext_A^{0}(M, N))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{0} (X, \\Eext_A^{0}(M, N))",
+      "note": "The print omits the outer closing parenthesis before the first equals sign. The TeX silently supplies it."
+    },
+    {
+      "page": 38,
+      "where": "Formula (6.1.2), arguments of the sheaf Ext",
+      "scan": "H^p(E, \\Eext^q_A(F, G))",
+      "tex": "H^p(E, \\Eext^q_A(F, G))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^p(E, \\Eext^q_A(M, N))",
+      "note": "The print switches incorrectly from M, N to F, G on the right-hand side. The TeX keeps this misprint."
+    },
+    {
+      "page": 39,
+      "where": "Proof of Proposition 6.1, first paragraph",
+      "scan": "compte tenu du fait",
+      "tex": "compte tenu de fait",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "compte tenu de fait",
+        "new": "compte tenu du fait"
+      },
+      "note": "The print reads « du », not « de »."
+    },
+    {
+      "page": 39,
+      "where": "Proof of Proposition 6.1, effect of localization on injective Modules",
+      "scan": "transforment les Modules injectifs et Modules injectifs",
+      "tex": "transforment les Modules\ninjectifs en Modules injectifs",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "transforment les Modules injectifs en Modules injectifs",
+      "note": "The printed « et » is a misprint for « en ». The TeX silently corrects it."
+    },
+    {
+      "page": 40,
+      "where": "6.3, notation for the derived sheaf functors",
+      "scan": "\\underline{H}^q_Z(\\cdot)",
+      "tex": "$H^q_Z(⋅)$",
+      "kind": "font",
+      "confidence": "high",
+      "fix": {
+        "old": "$H^q_Z(⋅)$",
+        "new": "$ℋ^q_Z(⋅)$"
+      },
+      "note": "The print uses the sheaf symbol, distinguished by underlining from the preceding cohomology-group symbol. Elsewhere the TeX represents this sheaf symbol by ℋ."
+    },
+    {
+      "page": 40,
+      "where": "6.3, name of the cohomology groups and sheaves",
+      "scan": "de cohomologie de M à support dans Z",
+      "tex": "de cohomologie de $M$ à supports dans $Z$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "cohomologie de $M$ à supports",
+        "new": "cohomologie de $M$ à support"
+      },
+      "note": "Here the print has singular « support », unlike the earlier quoted phrase « à supports dans Z »."
+    },
+    {
+      "page": 40,
+      "where": "Formula (6.3.5), right-hand side",
+      "scan": "\\underline{H}^{0}_{Z_{/X}}(E_{/X}, M|X)",
+      "tex": "ℋ^{0}_{Z_{/X}}\n(E_{/X}, M |\nX)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{0}_{Z_{/X}}(E_{/X}, M | X)",
+      "note": "The print incorrectly uses the underlined sheaf symbol for this cohomology group. The TeX keeps that reading as ℋ; ordinary H is required."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 36: 2/2; 37: 2/0; 38: 0/3; 39: 1/1; 40: 2/1."
+}

@@ -1,0 +1,70 @@
+[
+ {
+  "page": "161",
+  "where": "line 1 of the text, «pour chaque a ∈ ob B»",
+  "scan": "pour chaque a ∈ ob B",
+  "tex": "$a\\in \\ob B$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\alpha\\in \\ob B$",
+  "note": "The print types a Latin a for α; the context requires α (C_α, E_α). The TeX keeps the printed reading."
+ },
+ {
+  "page": "163",
+  "where": "«en plusieurs étapes ((9.21.11) à 9.21.16))»",
+  "scan": "((9.21.11) à 9.21.16))",
+  "tex": "((9.21.11) à (\\hyperref[I.lem9.21.16]{9.21.16}))",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "((9.21.11) à (9.21.16))",
+  "note": "The print's parentheses are unbalanced: there is no opening parenthesis before 9.21.16. The TeX silently corrects this."
+ },
+ {
+  "page": "163",
+  "where": "«Considérons l'ensemble ordonné produit I = ∏_α I_α»",
+  "scan": "I = ∏_α I_α (product sign, α set beneath it)",
+  "tex": "$I=\\Pi_{\\alpha} I_{\\alpha}$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "$I=\\Pi_{\\alpha} I_{\\alpha}$",
+   "new": "$I=\\prod_{\\alpha} I_{\\alpha}$"
+  },
+  "note": "The print has the product operator. The TeX uses the Greek letter \\Pi, which on these pages is the name of the cardinal Π."
+ },
+ {
+  "page": "165",
+  "where": "diagram of b), left middle node",
+  "scan": "X(α)_{φ(i)}",
+  "tex": "X(\\alpha)_\\varphi(i)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "X(\\alpha)_\\varphi(i)",
+   "new": "X(\\alpha)_{\\varphi(i)}"
+  },
+  "note": "Missing braces: as written, only φ is a subscript and «(i)» sits on the line, so the node reads X(α)_φ(i)."
+ },
+ {
+  "page": "165",
+  "where": "first line of the page's TeX",
+  "scan": "«(9.21.12).» is printed at the foot of p. 164, ending a); p. 165 opens with «b) Pour tout i ∈ I»",
+  "tex": "(9.21.12).",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Source line 6861 «(9.21.12).» belongs to p. 164, whose TeX ends with «déduits de». Page 165 really begins at «\\item Pour tout»."
+ },
+ {
+  "page": "165",
+  "where": "end of c)",
+  "scan": "où les flèches verticales sont celles déduites de (9.21.12).",
+  "tex": "où les flèches verticales sont celles déduites de",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "«(9.21.12).» is printed on p. 165 but falls outside this page's cut; it is presumably the next source line (6887), now given to p. 166. Page 165 really ends after «(9.21.12).»."
+ }
+]

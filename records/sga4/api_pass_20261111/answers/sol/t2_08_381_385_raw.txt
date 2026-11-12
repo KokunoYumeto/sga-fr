@@ -1,0 +1,140 @@
+{
+  "findings": [
+    {
+      "page": 381,
+      "where": "Paragraph following Definition 4.2, description of the section",
+      "scan": "sur Y passant par y",
+      "tex": "sur $Y$ passant par $y$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "sur $Y$ passant par $x$",
+      "note": "The section must pass through the chosen point x of X_y. The TeX retains the printed y."
+    },
+    {
+      "page": 382,
+      "where": "Between (*) and (**), after the local ring at x'",
+      "scan": "où x' est l'image",
+      "tex": "ou $x'$ est l'image",
+      "kind": "accent",
+      "confidence": "high",
+      "fix": {
+        "old": "ou $x'$ est l'image",
+        "new": "où $x'$ est l'image"
+      },
+      "note": "The print has the grave accent on « où »."
+    },
+    {
+      "page": 383,
+      "where": "4.4, parenthetical description of the separably closed extension",
+      "scan": "considérée Ω de k",
+      "tex": "considérée $\\omega$ de",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "considérée $\\omega$ de",
+        "new": "considérée $\\Omega$ de"
+      },
+      "note": "The print uses capital Omega, as elsewhere in this paragraph."
+    },
+    {
+      "page": 383,
+      "where": "4.4, statement of the universal property",
+      "scan": "est solution du problème universel",
+      "tex": "est solution de problème universel",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "est solution de problème universel",
+        "new": "est solution du problème universel"
+      },
+      "note": "The printed article is « du », not « de »."
+    },
+    {
+      "page": 383,
+      "where": "Opening sentence of 4.5",
+      "scan": "Gardons les notations des 4.3",
+      "tex": "Gardons les notations \\sisi{des}{de} \\hyperref[VIII.def4.3]{4.3}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Gardons les notations de \\hyperref[VIII.def4.3]{4.3}",
+      "note": "The printed « des » is a grammatical misprint. The first argument of \\sisi records it correctly; the edition corrects it to « de »."
+    },
+    {
+      "page": 384,
+      "where": "Opening paragraph, parenthetical reference",
+      "scan": "VII 5.12 b",
+      "tex": "VI 5.12 b",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "VI 5.12 b",
+        "new": "VII 5.12 b"
+      },
+      "note": "The printed reference is to Exposé VII, not VI."
+    },
+    {
+      "page": 384,
+      "where": "(***), last condition under the projective limit",
+      "scan": "X' ξ-ponctué",
+      "tex": "X'_{\\xi}\\mbox{\\rm - ponctué}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "X'_{\\xi}\\mbox{\\rm - ponctué}",
+        "new": "X'\\ \\xi\\mbox{\\rm - ponctué}"
+      },
+      "note": "The condition says that X' is ξ-punctured; ξ belongs to the qualifier « ξ-ponctué », rather than indexing X'."
+    },
+    {
+      "page": 384,
+      "where": "Proposition 4.6, fibre functor",
+      "scan": "F ↦ F_x",
+      "tex": "$f \\mapsto F_x$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$f \\mapsto F_x$",
+        "new": "$F \\mapsto F_x$"
+      },
+      "note": "The argument of the fibre functor is capital F in the print."
+    },
+    {
+      "page": 384,
+      "where": "Opening sentence of Corollary 4.7",
+      "scan": "Sous les conditions des 4.6",
+      "tex": "Sous les conditions des \\hyperref[VIII.prop4.6]{4.6}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Sous les conditions de \\hyperref[VIII.prop4.6]{4.6}",
+      "note": "The printed « des » should be « de ». The TeX retains the misprint."
+    },
+    {
+      "page": 384,
+      "where": "Corollary 4.8, definition of the strict localization",
+      "scan": "\\bar{X} = \\Spec O_{X,x}",
+      "tex": "\\Spec O_{X, x}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\bar{X} = \\Spec O_{X, \\xi}",
+      "note": "The strict localization corresponds to the geometric point ξ, so the index should be ξ, not x. The TeX retains the printed x."
+    },
+    {
+      "page": 385,
+      "where": "5.1, display defining the strict localization of Y",
+      "scan": "\\bar{Y} = \\Spec (\\Oo_{Y,\\bar{y}}) = \\varprojlim Y'",
+      "tex": "= \\varinjlim Y'",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "= \\varinjlim Y'",
+        "new": "= \\varprojlim Y'"
+      },
+      "note": "The printed limit arrow points left: this is a projective limit."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 381: 0/1; 382: 1/0; 383: 2/1; 384: 3/2; 385: 1/0."
+}

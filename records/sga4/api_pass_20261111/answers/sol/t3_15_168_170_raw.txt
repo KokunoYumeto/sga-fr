@@ -1,0 +1,51 @@
+{
+  "findings": [
+    {
+      "page": 168,
+      "where": "Ligne d’auteur, sous le titre",
+      "scan": "par M. ARTIN",
+      "tex": "M. Artin",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\begin{center}\nM. Artin",
+        "new": "\\begin{center}\npar M. Artin"
+      },
+      "note": "Le mot « par » manque devant le nom de l’auteur."
+    },
+    {
+      "page": 168,
+      "where": "Introduction, fin du premier paragraphe : « acyclicité locale de f »",
+      "scan": "acyclicité locale de f",
+      "tex": "acyclicité locale de $f$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "acyclicité locale de $g$",
+      "note": "Coquille de l’imprimé conservée par le TeX : le morphisme a été nommé g au début du paragraphe."
+    },
+    {
+      "page": 168,
+      "where": "Introduction, dernière proposition du premier paragraphe",
+      "scan": "implique que f est acyclique.",
+      "tex": "implique\nque $f$ est acyclique.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "implique que $g$ est acyclique.",
+      "note": "Seconde occurrence de la même coquille de notation dans l’imprimé, conservée par le TeX : il s’agit du morphisme g."
+    },
+    {
+      "page": 169,
+      "where": "Proposition 1.1, condition (ii bis), hypothèse entre parenthèses",
+      "scan": "Si f est quasi-compact et quasi-séparé",
+      "tex": "Si $f$ est quasi-compact et quasi-séparé.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Si $g$ est quasi-compact et quasi-séparé.",
+      "note": "Coquille de l’imprimé conservée par le TeX : l’hypothèse porte sur le morphisme g de la proposition."
+    }
+  ],
+  "coordinator": "168 : 1/2 ; 169 : 0/1 ; 170 : 0/0 (normal/misprint)."
+}

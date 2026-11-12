@@ -1,0 +1,97 @@
+[
+  {
+    "page": 6,
+    "where": "1.10, second paragraph, last line before (1.10.1)",
+    "scan": "un faisceau inversible ω_{X/S} sur S, unique à isomorphisme unique près",
+    "tex": "un faisceau inversible $\\omega_{X/S}$ sur $S$, unique",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "un faisceau inversible $\\omega_{X/S}$ sur $X$",
+    "note": "omega_{X/S} is an invertible sheaf on X: (1.10.1) identifies it with Rf^! O_S[-1], a complex on X, and omega = O(K) with K a divisor on X. The TeX keeps the printed reading."
+  },
+  {
+    "page": 6,
+    "where": "1.10, second paragraph, second line",
+    "scan": "il n'est pas fatiguant de définir",
+    "tex": "il n'est pas fatiguant de définir",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "fatigant",
+    "note": "Spelling slip of the typescript: the adjective is 'fatigant' ('fatiguant' is the participle). The TeX keeps the printed reading."
+  },
+  {
+    "page": 6,
+    "where": "end of the triangle diagram D, X, S (after 'son faisceau conormal :')",
+    "scan": "a full stop typed to the right of the diagram, on the baseline of S; the next line starts the new sentence 'On a'",
+    "tex": "no full stop; the STRUCTURE comment says it is omitted from the tikzcd",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+      "old": "{} \\end{tikzcd}",
+      "new": "{} \\end{tikzcd}\\quad ."
+    },
+    "note": "The sentence-final full stop belongs after the tikzcd environment, as the TeX does for the displayed formulas ('\\quad .'). Same pattern on page 8."
+  },
+  {
+    "page": 7,
+    "where": "first display, second member",
+    "scan": "deg_D (Rg^! O_D) (subscript D, clearly printed)",
+    "tex": "\\deg_D\\,(Rg^{!}\\underline{O}_D)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "\\deg_D\\,(Rg^{!}\\underline{O}_S)",
+    "note": "g : D -> S, so g^! applies to O_S; page 6 computes chi(Rg^! O_S) and (1.10.2) gives Rg^! O_S = omega|D (x) N^v, which the next member uses. The TeX keeps the printed reading."
+  },
+  {
+    "page": 7,
+    "where": "Proposition 1.11, first line",
+    "scan": "quelque soit le diviseur (underlined)",
+    "tex": "\\underline{quelque soit le diviseur}",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "\\underline{quel que soit le diviseur}",
+    "note": "Spelling slip of the typescript ('quel que soit'). The TeX keeps the printed reading."
+  },
+  {
+    "page": 8,
+    "where": "end of the two-row diagram (snake lemma), before 'le diagramme du serpent'",
+    "scan": "a comma after the bottom row of the diagram, at the right margin",
+    "tex": "no comma; the STRUCTURE comment says it cannot be placed inside the tikzcd body",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+      "old": "\\end{tikzcd}",
+      "new": "\\end{tikzcd}\\qquad ,"
+    },
+    "note": "The sentence continues after the diagram ('..., le diagramme du serpent fournit ...'); the comma belongs after the tikzcd environment. Same pattern on page 6."
+  },
+  {
+    "page": 8,
+    "where": "line 'Par construction ...' after the exact sequence",
+    "scan": "deg_E(O(-D) = - (D,E) < 0 (only one closing parenthesis)",
+    "tex": "$\\deg_E(\\underline{O}(-D) = - (D,E) < 0$",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "$\\deg_E(\\underline{O}(-D)) = - (D,E) < 0$",
+    "note": "The parenthesis opened after deg_E is never closed in the print. The TeX keeps the printed reading."
+  },
+  {
+    "page": 9,
+    "where": "paragraph after Théorème 1.14 ('On appelle un diviseur D ...')",
+    "scan": "possèdant (grave accent)",
+    "tex": "possédant",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": {
+      "old": "possédant",
+      "new": "possèdant"
+    },
+    "corrected": "possédant",
+    "note": "The accent falls to the right, unlike the acute accents of 'propriétés' on the same line. The TeX silently corrects the misprint."
+  }
+]

@@ -1,0 +1,216 @@
+{
+  "findings": [
+    {
+      "page": 161,
+      "where": "First direction of the proof: «Pour démontrer … (d)»",
+      "scan": "Pour démontrer 2.1 (d)",
+      "tex": "\\sisi{\\ref{XIV.thm3.1}}{\\hyperref[XIV.thm3.1]{3.1}} (d)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperref[XIV.thm3.1]{3.1}~(d)",
+      "note": "The printed reference 2.1 should be 3.1. TeX corrects it even in the first argument of \\sisi, which therefore does not record the printed numeral."
+    },
+    {
+      "page": 161,
+      "where": "Paragraph introducing the induced sheaf F'",
+      "scan": "Soit F' le faisceau",
+      "tex": "Soif $F'$ le faisceau",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Soif $F'$",
+        "new": "Soit $F'$"
+      },
+      "note": "The print reads «Soit», not «Soif»."
+    },
+    {
+      "page": 161,
+      "where": "The scheme on which F' is induced",
+      "scan": "F' le faisceau induit de F sur X",
+      "tex": "$F'$ le faisceau induit de $F$ sur $X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$F'$ le faisceau induit de $F$ sur $X'$",
+      "note": "The induced sheaf is on X', not X. The print omits the prime, and TeX keeps this misprint."
+    },
+    {
+      "page": 161,
+      "where": "Beginning of the converse: «Inversement, supposons que …»",
+      "scan": "supposons que 2.1 (d) soit vrai",
+      "tex": "\\sisi{\\hyperref[XIV.subsec2.1]{2.1}}{\\hyperref[XIV.thm3.1]{3.1}}~(d)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperref[XIV.thm3.1]{3.1}~(d)",
+      "note": "The reference should be 3.1 (d). TeX records the printed 2.1 in the first argument and corrects it in the second."
+    },
+    {
+      "page": 161,
+      "where": "Last paragraph, descent of the constructible sheaf",
+      "scan": "un faisceau de torsion constructible sur X = X ×_Y Y_K",
+      "tex": "constructible \\sisi{}{$F_\\alpha$} sur \n$\\sisi{X=\\fprod{X}{Y_K}{Y}}{X_\\alpha = \\fprod{X}{Y_\\alpha}{Y}}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un faisceau de torsion constructible $F_\\alpha$ sur $X_\\alpha=\\fprod{X}{Y_\\alpha}{Y}$",
+      "note": "The printed descent formula lacks the left subscript alpha and has K instead of alpha on Y; the descended sheaf is also left unnamed before F_alpha is used on the next page. TeX records these readings in the first arguments and supplies the corrected notation in the second arguments."
+    },
+    {
+      "page": 162,
+      "where": "First paragraph: vanishing of R^q f_*F",
+      "scan": "si q > D",
+      "tex": "si $q>\\sisi{D}{d}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "si $q>d$",
+      "note": "The capital D is a misprint for d. TeX records and corrects it with \\sisi."
+    },
+    {
+      "page": 162,
+      "where": "First paragraph: reference following the vanishing assertion",
+      "scan": "d'après 2.1 (d)",
+      "tex": "\\sisi{\\hyperref[XIV.subsec2.1]{2.1}}{\\hyperref[XIV.thm3.1]{3.1}}~(d)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperref[XIV.thm3.1]{3.1}~(d)",
+      "note": "The printed reference should be 3.1 (d). TeX retains 2.1 in the first argument and corrects it in the second."
+    },
+    {
+      "page": 162,
+      "where": "Remarque 3.6: reference for the characteristic-zero result",
+      "scan": "(XX 6)",
+      "tex": "(\\sisi{XX 6}{\\hyperrefext[XIX][XIX.sec6]{6}})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\hyperrefext[XIX][XIX.sec6]{6})",
+      "note": "The exposé numeral should be XIX, not XX. TeX records the printed reference and corrects it with \\sisi."
+    },
+    {
+      "page": 162,
+      "where": "Last words of Remarque 3.6",
+      "scan": "lorsqu'on suppose de plus Y de caractéristique nulle",
+      "tex": "lorsqu'on suppose de plus $Y$ de caractéristique nulle.",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "lorsqu'on suppose de plus $Y'$ de caractéristique nulle.",
+      "note": "The scheme under discussion in the remark is Y'. The print drops its prime here, and TeX keeps the unprimed reading."
+    },
+    {
+      "page": 163,
+      "where": "Opening reference concerning constructibility and the support",
+      "scan": "(IX 2.3 (ii))",
+      "tex": "(\\hyperrefext[IX][IX.def2.3]{2.3}\\sisi{ (ii)}{})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\hyperrefext[IX][IX.def2.3]{2.3})",
+      "note": "The printed reference has an extraneous «(ii)». TeX records it in the first argument of \\sisi and removes it in the correction."
+    },
+    {
+      "page": 163,
+      "where": "Proof of Lemme 4.1, the case q = 1",
+      "scan": "Pour le cas q = 1, notons que l'hypothèse que X soit de dimension ≤ 1. Pour le cas q = 1, notons que l'hypothèse que X soit de dimension ≤ 1 implique",
+      "tex": "Pour le cas $q=1$, notons que\nl'hypothèse que $X$ soit de dimension~$\\leq 1$ implique",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Pour le cas $q=1$, notons que l'hypothèse que $X$ soit de dimension $\\leq 1$ implique",
+      "note": "The print repeats the introductory clause, first leaving it as an incomplete sentence. TeX silently corrects this dittography."
+    },
+    {
+      "page": 163,
+      "where": "Conclusion of the proof of Lemme 4.1",
+      "scan": "d'où d(R^1 f_*F) ≤ 1",
+      "tex": "d'où $d(R^{1}f_{\\ast}F)\\leq 1$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "d'où $d(R^{1}f_{\\ast}F)\\leq 0$",
+      "note": "The support is contained in the finite closed set Z, so the required bound is 0, not 1. TeX keeps the printed misprint."
+    },
+    {
+      "page": 163,
+      "where": "Statement of Lemme 4.2, description of affine space",
+      "scan": "l'espace affine dimension 1",
+      "tex": "l'espace affine dimension $1$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "l'espace affine de dimension $1$",
+      "note": "The preposition «de» is missing in the print. TeX keeps the omission."
+    },
+    {
+      "page": 163,
+      "where": "End of the statement of Lemme 4.2",
+      "scan": "et où f est le morphisme structural",
+      "tex": "et où $f$ est le morphisme structural.",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "et où $f'$ est le morphisme structural.",
+      "note": "The morphism in 3.4 is f': X' → Y'. Its prime is omitted here in both the print and TeX."
+    },
+    {
+      "page": 163,
+      "where": "First sentence of the proof of Lemme 4.2",
+      "scan": "X' = E^N_{Y'} pour n convenable",
+      "tex": "$X'=\\EE^{N}_{Y'}$ pour $n$ convenable",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$X'=\\EE^{N}_{Y'}$ pour $N$ convenable",
+      "note": "The dimension is denoted by capital N throughout the argument. The lower-case n is a printed misprint retained by TeX."
+    },
+    {
+      "page": 165,
+      "where": "First paragraph after the diagram, reference defining Y'",
+      "scan": "comme dans l'énoncé de 2.6",
+      "tex": "\\sisi{2.6}{\\hyperref[XIV.cor3.4]{3.4}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperref[XIV.cor3.4]{3.4}",
+      "note": "The reference should be 3.4, not 2.6. TeX records the printed number and corrects it with \\sisi."
+    },
+    {
+      "page": 165,
+      "where": "Paragraph beginning «Or les …»",
+      "scan": "Or les R^q i_*F, pour q > 0",
+      "tex": "Or les $R^{q}i_{\\ast}F$, pour $q>0$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Or les $R^{q}i_{\\ast}F'$, pour $q>0$",
+      "note": "The sheaf introduced on the affine line is F'. The print omits its prime here, and TeX keeps the misprint."
+    },
+    {
+      "page": 165,
+      "where": "Identification of H^0 on the section at infinity",
+      "scan": "H^0(Y'_\u221e, R^1 i_*(F'))",
+      "tex": "R^{\\sisi{1}{q}}i_{\\ast}(F')",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{0}(Y'_{\\infty},R^{q}i_{\\ast}(F'))",
+      "note": "The derived degree must remain q, not 1. TeX records the printed 1 and corrects it to q with \\sisi."
+    },
+    {
+      "page": 165,
+      "where": "Last formula, definition of the open subscheme of the strict localization",
+      "scan": "\\widetilde{U}=\\widetilde{X}'-\\widetilde{X}\\times_{\\mathbf{P}^{1}}Y'_{\\infty}",
+      "tex": "\\fprod{\\widetilde{X}}{Y'_{\\infty}}{\\PP^{1}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\widetilde{U}=\\widetilde{X}'-\\fprod{\\widetilde{X}'}{Y'_{\\infty}}{\\PP^{1}}",
+      "note": "The first factor of the fibre product is the just-defined scheme \\widetilde{X}'. The print omits its prime, and TeX retains that omission."
+    }
+  ],
+  "coordinator": "Normal/misprint — 161: 1/4; 162: 0/4; 163: 0/6; 164: 0/0; 165: 0/4."
+}

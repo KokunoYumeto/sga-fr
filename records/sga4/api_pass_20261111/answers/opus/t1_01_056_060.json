@@ -1,0 +1,105 @@
+[
+ {
+  "page": 56,
+  "where": "Comme φ_i(X') ≃ ... (fibre product)",
+  "scan": "φ_i(X_α) ×_{φ_{i(Y)}} φ_i(Y')",
+  "tex": "\\fprod{\\varphi(X_\\alpha)}{\\varphi_i(Y')}{\\varphi_{i(Y)}}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\fprod{\\varphi(X_\\alpha)}",
+   "new": "\\fprod{\\varphi_i(X_\\alpha)}"
+  },
+  "note": "The print has the index i on the first factor, φ_i(X_α); the TeX drops it."
+ },
+ {
+  "page": 56,
+  "where": "same formula, base of the fibre product",
+  "scan": "φ_{i(Y)}",
+  "tex": "\\varphi_{i(Y)}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\varphi_i(Y)",
+  "note": "The print sets the whole i(Y) as the subscript; the correct reading is φ_i(Y). The TeX keeps the printed reading."
+ },
+ {
+  "page": 56,
+  "where": "tel que φ_i(X') → φ(X) ne soit pas un isomorphisme",
+  "scan": "φ_i(X') → φ(X)",
+  "tex": "\\varphi_i(X')\\rightarrow \\varphi(X)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\varphi_i(X')\\rightarrow \\varphi_i(X_\\alpha)",
+  "note": "The target should be φ_i(X_α), since X' is a subobject of X_α. The TeX keeps the printed reading."
+ },
+ {
+  "page": 57,
+  "where": "alors Hom'(E,D) est également une U-catégorie",
+  "scan": "Hom(E,D) (no prime)",
+  "tex": "\\Hhom'(E,D)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\Hhom'(E,D)",
+  "note": "The print omits the prime here; the TeX silently corrects to Hom'(E,D)."
+ },
+ {
+  "page": 58,
+  "where": "proof of 7.10, end",
+  "scan": "d'où wu = wv, cqfd",
+  "tex": "d'où $wu=wv$, \\cqfd",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "wu\\neq wv",
+  "note": "The argument requires wu ≠ wv. The TeX keeps the printed '='."
+ },
+ {
+  "page": 58,
+  "where": "Corollaire 7.11, factorized double arrow",
+  "scan": "T ⇉^{u',v'} X'",
+  "tex": "\\xymatrix{ Y\\ar@<2pt>[r]^{u',v'}\\ar@<-2pt>[r]& X }",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\xymatrix{ Y\\ar@<2pt>[r]^{u',v'}\\ar@<-2pt>[r]& X }$",
+   "new": "$\\xymatrix{ T\\ar@<2pt>[r]^{u',v'}\\ar@<-2pt>[r]& X' }$"
+  },
+  "note": "The print has source T and target X' (followed by i: X' → X); the TeX has Y and X."
+ },
+ {
+  "page": 59,
+  "where": "Exemples 7.13, first line",
+  "scan": "de petites sous-catégories cogénératrice",
+  "tex": "de petites sous-catégories cogénératrice",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "cogénératrices",
+  "note": "The plural ending is missing in the print; the TeX keeps it."
+ },
+ {
+  "page": 60,
+  "where": "En effet, si F est un faisceau d'ensembles",
+  "scan": "un faisceaux d'ensembles",
+  "tex": "un %%\nfaisceau d'ensembles",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "faisceau",
+  "note": "The print has 'faisceaux'; the TeX silently corrects to 'faisceau'."
+ },
+ {
+  "page": 60,
+  "where": "un plongement de O_X[F*]",
+  "scan": "O_X[F*]",
+  "tex": "\\mathcal{O}_X[F^\\ast]",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\mathcal{O}_X[F]",
+  "note": "The star appears to be a misprint, since the argument concerns O_X[F]. The TeX keeps F^\\ast."
+ }
+]

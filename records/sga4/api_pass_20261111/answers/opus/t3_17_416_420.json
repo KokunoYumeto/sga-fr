@@ -1,0 +1,65 @@
+[
+ {
+  "page": "417",
+  "where": "after Lemme 6.1.3: « restent valable dans le cas plus général »",
+  "scan": "restent valable",
+  "tex": "restent\nvalable",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "restent valables",
+  "note": "Agreement error in the print (« propriétés … restent valables »); the TeX keeps the printed reading."
+ },
+ {
+  "page": "420",
+  "where": "6.2.1, first sentence: « Quel que soit U ∈ Ob S_et »",
+  "scan": "U ∈ Ob S_et (subscript)",
+  "tex": "U\\in \\Ob S^{\\et}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ob S^{\\et}",
+   "new": "\\Ob S_{\\et}"
+  },
+  "note": "The print has the site index « et » as a subscript; the TeX sets it as a superscript."
+ },
+ {
+  "page": "420",
+  "where": "6.2.1, decomposition f*U = ∐_{i∈I} V_i",
+  "scan": "∐ (disjoint sum)",
+  "tex": "\\prod_{i\\in\nI}V_{i}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "f^{\\ast}U=\\prod_{i\\in",
+   "new": "f^{\\ast}U=\\coprod_{i\\in"
+  },
+  "note": "The print has the coproduct sign (a decomposition into open and closed parts), not a product."
+ },
+ {
+  "page": "420",
+  "where": "6.2.1: « un morphisme σ de I' dans I »",
+  "scan": "morphisme σ de I' dans I",
+  "tex": "morphisme $\\sigma$ de $I'$ de dans $I$",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "de $I'$ de dans $I$",
+   "new": "de $I'$ dans $I$"
+  },
+  "note": "The TeX has an extra « de » that the print does not have."
+ },
+ {
+  "page": "420",
+  "where": "diagram (6.2.1.2), bottom vertex",
+  "scan": "f_! f* 𝔉|U (Fraktur F)",
+  "tex": "f_{!}f^{\\ast}\\Tt|U",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "f_{!}f^{\\ast}\\Tt|U",
+   "new": "f_{!}f^{\\ast}\\Ff|U"
+  },
+  "note": "The print has the sheaf 𝔉 (as everywhere else on the page); the TeX has another letter (\\Tt)."
+ }
+]

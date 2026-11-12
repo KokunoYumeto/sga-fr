@@ -1,0 +1,156 @@
+{
+  "findings": [
+    {
+      "page": 266,
+      "where": "Beginning of page",
+      "scan": "la catégorie des ensembles appartenant à l'univers",
+      "tex": "catégorie\\pageoriginale des ensembles appartenant à l'univers:",
+      "kind": "marker",
+      "confidence": "medium",
+      "fix": null,
+      "note": "The supplied cut omits the printed initial word « la ». Check the end of source line 3556: the article may already be there. The page begins with « la catégorie »; verify the extraction boundary rather than inserting a potentially duplicate article."
+    },
+    {
+      "page": 266,
+      "where": "Proof of Proposition 6.2, after the inverse relations",
+      "scan": "La catégorie ainsi obtenue est notée F(S^{-1}). La catégorie F(S^{-1}) munie du foncteur canonique…",
+      "tex": "La catégorie ainsi obtenue est notée $\\Ff(S^{-1})$ munie du foncteur",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "est notée $\\Ff(S^{-1})$ munie",
+        "new": "est notée $\\Ff(S^{-1})$. La catégorie $\\Ff(S^{-1})$ munie"
+      },
+      "note": "The transcription loses the sentence boundary and the repeated subject, including its formula."
+    },
+    {
+      "page": 266,
+      "where": "Proof of Proposition 6.2, canonical functor Q",
+      "scan": "Q : \\Ff \\to \\Ff(S^{-1})",
+      "tex": "Q = \\Ff \\to \\Ff(S^{-1})",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "Q = \\Ff",
+        "new": "Q : \\Ff"
+      },
+      "note": "The print has a colon, not an equality sign."
+    },
+    {
+      "page": 267,
+      "where": "Display defining u_ξ",
+      "scan": "u_{\\xi} : \\Ff_{\\xi} \\to \\varinjlim_{\\Ee} \\Ff",
+      "tex": "u_{\\xi} : \\Ff_{\\xi} \\to \\varinjlim_{\\mathcal{E}} \\Ff",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "u_{\\xi} : \\Ff_{\\xi} \\to \\varinjlim_{\\mathcal{E}^{\\circ}} \\Ff",
+      "note": "The printed subscript omits the opposite-category sign present in Definition 6.3, the preceding display and the following diagram. The TeX keeps this omission."
+    },
+    {
+      "page": 267,
+      "where": "Description of the pseudo-functor, after the triangular diagram",
+      "scan": "tout ξ ∈ ob, F_ξ",
+      "tex": "tout $\\xi \\in \\ob$, $\\Ff_{\\xi}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "tout $\\xi \\in \\ob(\\Ee)$, $\\Ff_{\\xi}$",
+      "note": "The category whose objects are being taken is missing after « ob ». The TeX preserves the incomplete printed expression."
+    },
+    {
+      "page": 267,
+      "where": "End of L1), after « s'insère dans un diagramme commutatif: »",
+      "scan": "Page 267 ends at the colon; the commuting diamond is printed at the top of page 268.",
+      "tex": "\\xymatrix@C=1.25cm@R=1cm{",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The diamond at source lines 3659–3665 belongs to page 268, although the page-267 cut includes it beyond its declared overlap. Page 268 begins with this diagram, not with L2). Correct the extraction boundary; do not move the source text."
+    },
+    {
+      "page": 268,
+      "where": "L2), opening words",
+      "scan": "Pour tout couple de morphisme",
+      "tex": "Pour\\pageoriginale tout couple de morphisme",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Pour tout couple de morphismes",
+      "note": "The printed singular « morphisme » should be plural after « couple de ». The TeX keeps the typing error."
+    },
+    {
+      "page": 269,
+      "where": "Proposition 6.5 c), second roof diagram, membership condition",
+      "scan": "t' \\in S",
+      "tex": "t\\in S)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "t\\in S)",
+        "new": "t'\\in S)"
+      },
+      "note": "The print includes the prime, agreeing with the vertical arrow labelled t'."
+    },
+    {
+      "page": 270,
+      "where": "Proposition 6.5 e), parenthetical description of Q_!",
+      "scan": "(adjoint à gauche au foncteur Q^{\\ast} (I 5.1) est exact à gauche.",
+      "tex": "$Q^{\\ast}$ \\emph{(I 5.1)} est exact à gauche.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(adjoint à gauche au foncteur $Q^{\\ast}$ \\emph{(I 5.1)}) est exact à gauche.",
+      "note": "The opening parenthesis before « adjoint » is not closed: the printed closing parenthesis closes only the reference. The TeX preserves the mismatch."
+    },
+    {
+      "page": 270,
+      "where": "Exercise 6.6, definition of S(X)",
+      "scan": "on note S(X) la catégorie des morphismes de but X.",
+      "tex": "on note $S(X)$ la catégorie des morphismes\nde but $X$.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "on note $S(X)$ la catégorie des morphismes de $S$ de but $X$.",
+      "note": "The definition omits « de S »: S(X) must contain the morphisms of S with target X, as in Proposition 6.5. The TeX keeps the printed omission."
+    },
+    {
+      "page": 270,
+      "where": "Exercise 6.6 d), second sentence",
+      "scan": "La catégorie S(X)",
+      "tex": "Le catégorie $S(X)$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Le catégorie $S(X)$",
+        "new": "La catégorie $S(X)$"
+      },
+      "note": "The print has « La », not « Le »."
+    },
+    {
+      "page": 270,
+      "where": "Exercise 6.6 e), opening sentence",
+      "scan": "un préfaisceau d'ensemble",
+      "tex": "un préfaisceau d'ensemble",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un préfaisceau d'ensembles",
+      "note": "The printed singular « ensemble » is a typing error for « ensembles ». The TeX preserves it."
+    },
+    {
+      "page": 270,
+      "where": "Exercise 6.6 e), sheafification formula",
+      "scan": "\\sheaf{a}G(X) \\xrightarrow{\\sim} \\varinjlim_{S(X)} G(\\cdot)",
+      "tex": "\\frac{\\lim}{S(X)}",
+      "kind": "formula",
+      "confidence": "medium",
+      "fix": {
+        "old": "\\frac{\\lim}{S(X)}",
+        "new": "\\varinjlim_{S(X)}"
+      },
+      "note": "The print has an indexed inductive-limit sign, not a fraction with denominator S(X). The right end of the stroke beneath « lim » is weak in this scan."
+    }
+  ],
+  "coordinator": "266: 3/0; 267: 1/2; 268: 0/1; 269: 1/0; 270: 2/3 (normal/misprint; markers included in normal).\nMarker 266: check source line 3556 for the initial « la » and extend the cut if it is there.\nMarker 267–268: page 267 ends after « s'insère dans un diagramme commutatif: »; page 268 begins with the commuting diamond, before L2)."
+}

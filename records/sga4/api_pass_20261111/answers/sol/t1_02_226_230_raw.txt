@@ -1,0 +1,53 @@
+{
+  "findings": [
+    {
+      "page": 228,
+      "where": "Remarques 2.7, 2), dernière phrase",
+      "scan": "ne dépend pas dépend pas de l'univers V.",
+      "tex": "ne dépend pas de l'univers $𝒱$.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "ne dépend pas de l'univers $𝒱$.",
+      "note": "The print repeats « dépend pas ». The TeX silently corrects this duplication."
+    },
+    {
+      "page": 228,
+      "where": "Définition 3.0.1, parenthetical alternative name",
+      "scan": "(où lorsqu'aucune confusion n'en résulte, famille génératrice)",
+      "tex": "(où lorsqu'aucune confusion n'en résulte, famille\ngénératrice)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(ou lorsqu'aucune confusion n'en résulte, famille génératrice)",
+      "note": "The alternative designation requires « ou », not « où ». The TeX keeps the printed misprint."
+    },
+    {
+      "page": 229,
+      "where": "Proposition 3.0.4, proof of 1), definition of A(X)",
+      "scan": "\\Hom(Y,X)",
+      "tex": "\\hom(Y,X)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hom(Y,X)",
+        "new": "\\Hom(Y,X)"
+      },
+      "note": "The print has Hom with a capital H, as in the subsequent Hom expressions."
+    },
+    {
+      "page": 230,
+      "where": "Display defining LF(g), immediately before « qui fait »",
+      "scan": "LF(g):LF(X)\\longrightarrow LF(Y)",
+      "tex": "LF(g):LF(X)\\longrightarrow LF(Y){\\quoi}.",
+      "kind": "punctuation",
+      "confidence": "high",
+      "fix": {
+        "old": "LF(g):LF(X)\\longrightarrow LF(Y){\\quoi}.",
+        "new": "LF(g):LF(X)\\longrightarrow LF(Y){\\quoi}"
+      },
+      "note": "The print continues directly with the relative clause « qui fait de … ». The added full stop incorrectly severs that clause from its antecedent."
+    }
+  ],
+  "coordinator": "226: 0/0; 227: 0/0; 228: 0/2; 229: 1/0; 230: 1/0 (normal/misprint)."
+}

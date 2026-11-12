@@ -1,0 +1,109 @@
+{
+  "findings": [
+    {
+      "page": 352,
+      "where": "Après (5.2.1.2), phrase « Si L est borné… »",
+      "scan": "Si L est borné à composante de tor-dimension finie",
+      "tex": "Si $L$ est borné à composante de \\ttor-dimension finie",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "Si $L$ est borné à composantes de \\ttor-dimension finie",
+      "note": "Le singulier « composante » est une coquille pour « composantes », comme dans la même condition p. 353. Le TeX conserve la coquille."
+    },
+    {
+      "page": 353,
+      "where": "Premier paragraphe, second foncteur associé à (5.2.1.2)",
+      "scan": "j'_{!}({f'}^{\\ast}L\\otimes {g'}^{\\ast}K)",
+      "tex": "j'_{!}({f'}^{\\ast}L\\sisi{\\otimes}{\\overset{\\LL}{\\otimes}} {g'}^{\\ast}K)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "j'_{!}({f'}^{\\ast}L\\overset{\\LL}{\\otimes}{g'}^{\\ast}K)",
+      "note": "L'indication du produit tensoriel dérivé manque dans l'imprimé. Le TeX la rétablit par \\sisi ; son premier argument est conforme au scan."
+    },
+    {
+      "page": 354,
+      "where": "Formule définissant c'_1 et c'_2, membre gauche",
+      "scan": "\\bar{g}_{2}^{\\ast}",
+      "tex": "\\bar{g}_{2}^*\\ast",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\bar{g}_{2}^*\\ast",
+        "new": "\\bar{g}_{2}^{\\ast}"
+      },
+      "note": "Le TeX ajoute un astérisque sur la ligne après l'astérisque en exposant. L'imprimé n'en porte qu'un."
+    },
+    {
+      "page": 354,
+      "where": "Même formule, à l'intérieur de j'_{2!}",
+      "scan": "{j'}_{2}^{\\ast}L",
+      "tex": "{j'}_{2}^*\\ast\nL",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "{j'}_{2}^*\\ast",
+        "new": "{j'}_{2}^{\\ast}"
+      },
+      "note": "Un second astérisque parasite est ajouté sur la ligne après l'exposant."
+    },
+    {
+      "page": 354,
+      "where": "Phrase suivant la formule définissant c'_1 et c'_2",
+      "scan": "après s'être restreint à X'_2",
+      "tex": "après s'être restreint à $\\sisi{X}{\\bar{X}}'_{2}$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "X'",
+      "note": "L'ouvert auquel il faut se restreindre est X', source de j'_2 ; aucun X_2 n'est défini dans ces notations. Le TeX signale une correction par \\sisi, dont la lecture A reproduit bien l'imprimé."
+    },
+    {
+      "page": 355,
+      "where": "Diagramme initial, sommet inférieur central",
+      "scan": "Ru'_{!}(u'^{\\ast}L\\overset{\\LL}{\\otimes}g'^{\\ast}Rv_{!})",
+      "tex": "Ru'_{!}(u'^{\\ast}L\n\\overset{\\LL}{\\otimes}g'^{\\ast}Rv_{!}\\sisi{}{K})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Ru'_{!}(u'^{\\ast}L\\overset{\\LL}{\\otimes}g'^{\\ast}Rv_{!}K)",
+      "note": "L'argument K de Rv_! manque dans l'imprimé. Le TeX le fournit dans le second argument de \\sisi."
+    },
+    {
+      "page": 355,
+      "where": "Phrase introduisant (5.2.4.1)",
+      "scan": "Choisissons une compactification de (u,v)",
+      "tex": "Choisissons\\pageoriginale une compactifications de $(u,v)$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "une compactifications",
+        "new": "une compactification"
+      },
+      "note": "Le pluriel est ajouté par le TeX ; les deux scans portent le singulier."
+    },
+    {
+      "page": 355,
+      "where": "Diagramme (5.2.4.1), étiquettes des deux colonnes de flèches verticales",
+      "scan": "X'\\xrightarrow{u'}Y'\\xrightarrow{v'}S',\\qquad X\\xrightarrow{u}Y\\xrightarrow{v}S",
+      "tex": "\\sisi{u}{v}' et \\sisi{u}{v}, puis \\sisi{v}{u}' et \\sisi{v}{u}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "X'\\xrightarrow{v'}Y'\\xrightarrow{u'}S',\\qquad X\\xrightarrow{v}Y\\xrightarrow{u}S",
+      "note": "Les noms u et v, ainsi que u' et v', sont intervertis dans l'imprimé par rapport à f=uv et au diagramme initial. Le TeX corrige les quatre étiquettes par \\sisi ; les arguments A correspondent au scan."
+    },
+    {
+      "page": 355,
+      "where": "Fin de page, après « Soit le diagramme cartésien »",
+      "scan": "La page se termine après « Soit le diagramme cartésien », sans le diagramme annoncé.",
+      "tex": "La coupe contient encore le grand diagramme suivant, lignes source 4325–4336, puis la ligne 4337.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le grand diagramme appartient à la p. 356. Le chevauchement annoncé pour la seule dernière ligne ne couvre pas ce diagramme. La p. 355 finit après la phrase introductive ; corriger la coupe, sans déplacer ni modifier le texte."
+    }
+  ],
+  "coordinator": "Comptes normal/misprint : 351 0/0 ; 352 0/1 ; 353 0/1 ; 354 2/1 ; 355 2/2.\nDécoupage 355/356 : recouper avant le grand diagramme, ligne source 4325 ; la p. 355 se termine après « Soit le diagramme cartésien »."
+}

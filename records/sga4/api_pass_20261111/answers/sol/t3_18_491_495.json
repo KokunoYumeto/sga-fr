@@ -1,0 +1,96 @@
+[
+ {
+  "page": 493,
+  "where": "Démonstration de 1.2.3, remarque sur le lemme de rigidité",
+  "scan": "Mumford n'utilise pas l'hypothèse noethérienne",
+  "tex": "Mumford n'utilise par l'hypothèse noethérienne",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "n'utilise par",
+   "new": "n'utilise pas"
+  },
+  "note": "Les deux scans donnent « pas »."
+ },
+ {
+  "page": 493,
+  "where": "Démonstration de 1.2.3, décomposition du faisceau inversible",
+  "scan": "\\Ll\\sim\\pr_2^{\\ast}(x_{G^{\\ast}})^{\\ast}\\Ll\\otimes\\Mm",
+  "tex": "\\Ll\\sim  \\pr^{\\ast}_{2}(x\\times G^\\ast)^{\\ast}\\Ll\\otimes \\Mm",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(x\\times G^\\ast)",
+   "new": "(x_{G^\\ast})"
+  },
+  "note": "L'imprimé porte x indicé par G*, notation du changement de base, et non le produit x × G*."
+ },
+ {
+  "page": 493,
+  "where": "Dernière formule de la démonstration de 1.2.3",
+  "scan": "\\Hom_S(\\Spec(H^0(X,\\Oo_X),G)\\xrightarrow{\\sim}\\Hom_S(X,G)",
+  "tex": "\\Hom_{S}(\\Spec (H^0(X,\\Oo_{X}),G)\\xrightarrow{\\sim}\\Hom_{S}(X,G)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom_{S}(\\Spec(H^0(X,\\Oo_{X})),G)\\xrightarrow{\\sim}\\Hom_{S}(X,G)",
+  "note": "Il manque une parenthèse fermant l'argument de Spec après H^0(X, O_X). Le TeX conserve cette coquille de l'imprimé."
+ },
+ {
+  "page": 494,
+  "where": "1.2.5, seconde branche de la formule pour Hom",
+  "scan": "\\xleftarrow{\\sim} G",
+  "tex": "\\xleftarrow{\\sim} G(S)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "G(S)",
+   "new": "G"
+  },
+  "note": "Le TeX explicite l'évaluation en S, absente de la formule imprimée. Cette modification est distincte de la coquille dans la condition de cette branche."
+ },
+ {
+  "page": 494,
+  "where": "1.2.5, condition de la seconde branche de la formule pour Hom",
+  "scan": "\\varphi\\neq 0",
+  "tex": "\\varphi= 0",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\varphi=0",
+  "note": "La seconde branche répète par erreur la condition φ ≠ 0 de la première ; il faut φ = 0. Le TeX corrige silencieusement cette coquille."
+ },
+ {
+  "page": 495,
+  "where": "Lemme 1.2.6, identité imposée à Ψ",
+  "scan": "\\Psi(\\lambda v):\\varphi(\\lambda)\\Psi(v).",
+  "tex": "\\Psi(\\lambda v)=\\sisi{\\varphi (\\lambda)\\Psi(v)}{\\Psi(v)\\varphi(\\lambda)}{\\quoi}.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Psi(\\lambda v)=\\varphi(\\lambda)\\Psi(v).",
+  "note": "Les deux scans portent un deux-points à la place du signe d'égalité dans cette identité. Le TeX corrige silencieusement ce signe ; l'ordre des facteurs donné par le premier argument de sisi correspond bien à l'imprimé."
+ },
+ {
+  "page": 495,
+  "where": "Démonstration de 1.2.6, après la translation à droite",
+  "scan": "un homomorphisme de W_n dans G_n qui transforme 0 en e",
+  "tex": "un morphisme de $W_{n}$ dans $G_{n}$ qui transforme $0$ en $e$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "un morphisme de $W_{n}$ dans $G_{n}$ qui transforme $0$ en $e$",
+  "note": "Le TeX corrige silencieusement « homomorphisme » en « morphisme ». La construction fournit un morphisme de schémas pointés, non un homomorphisme de groupes ; ces voisinages infinitésimaux ne sont pas, en général, des sous-groupes."
+ },
+ {
+  "page": 495,
+  "where": "Démonstration de 1.2.6, action des homothéties sur W_n",
+  "scan": "W_n\\subset\\VV(\\epsilon)^{\\ast}",
+  "tex": "W_{n}\\subset \\VV(\\epsilon)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "W_{n}\\subset \\VV(\\epsilon)",
+  "note": "L'astérisque est fautif : W_n est un voisinage infinitésimal de la section nulle et n'est donc pas contenu dans le fibré épointé. Le TeX supprime silencieusement cet astérisque."
+ }
+]

@@ -1,0 +1,917 @@
+[
+ {
+  "page": 291,
+  "where": "display at the top of p. 291 (end of Définition 3.2), 'Â•(S) = Π_i A^i(S) .'",
+  "scan": "A with a hat and a raised dot (A•), as A•(S), A•(P) of Corollaire 2.2.6 (p. 289) and A•(S) at the foot of p. 290",
+  "tex": "\\widehat A^*(S)=\\prod_i A^i(S).",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\widehat A^*(S)=\\prod_i",
+   "new": "\\widehat A^{\\bullet}(S)=\\prod_i"
+  },
+  "note": "Printed on p. 291; filed under p. 290, where the display stands until the marker move of p. 291 (the edit does not touch the move's anchor). The TeX has a star; written like the file's A^{\\bullet}(X) of p. 282. [page set to 291 by the coordinator: the folio-291 marker was moved back first, so this text now stands on p. 291]"
+ },
+ {
+  "page": 291,
+  "where": "numbered paragraph 3.3 (top of p. 291)",
+  "scan": "'3.3.' (with a full stop)",
+  "tex": "\\subsubsection*{3.3}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{3.3}",
+   "new": "\\subsubsection*{3.3.}"
+  },
+  "note": "Printed on p. 291; filed under p. 290 until the marker move. As '2.1.' (p. 285, batch 281-285). [page set to 291 by the coordinator: the folio-291 marker was moved back first, so this text now stands on p. 291]"
+ },
+ {
+  "page": 291,
+  "where": "top of the page",
+  "scan": "p. 291 begins with the display 'Â•(S) = Π_i A^i(S) .' (the end of Définition 3.2), then '3.3. Il est évident que ...'; p. 290 ends with '... on désigne ainsi l'élément correspondant dans'",
+  "tex": "page_290.tex ends with the display '\\widehat A^*(S)=\\prod_i A^i(S).', '\\end{statement}', '\\subsubsection*{3.3}' and 'Il est'; the folio-291 marker stands before 'évident que'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 291 really begins at the '\\[' that opens the display '\\widehat A^*(S)=\\prod_i A^i(S).' (the line after '... l'élément correspondant dans'). Exact fix: python -I move_marker.py 5 291 '\\[' --before (simulated in memory on both layers: the marker then stands on its own line between '... correspondant dans' and '\\['). The anchor is the last '\\[' above the marker, so run the command once only (not again if batch 286-290 reports the same move). Text not moved; the two fixes of the text that moves to p. 291 are filed under p. 290."
+ },
+ {
+  "page": 291,
+  "where": "3.3, 'Il est évident que quels que soient S et E'",
+  "scan": "no comma after 'que'",
+  "tex": "évident que, quels",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "évident que, quels",
+   "new": "évident que quels"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 291,
+  "where": "3.3, 'et que si le rang de E est borné par d'",
+  "scan": "no comma after 'que'",
+  "tex": "et que, si le rang",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "et que, si le rang",
+   "new": "et que si le rang"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 291,
+  "where": "Proposition 3.4, first sentence",
+  "scan": "'Les classes de Chern précédemment définies satisfont aux propriétés / suivantes' underlined, no full stop after 'suivantes' (then (i))",
+  "tex": "Les classes de Chern précédemment définies satisfont aux propriétés suivantes.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Les classes de Chern précédemment définies satisfont aux propriétés suivantes.",
+   "new": "\\emph{Les classes de Chern précédemment définies satisfont aux propriétés suivantes}"
+  },
+  "note": "The TeX adds a full stop. One edit: it also gives the underline. Exposé VII: the TeX has no underline markup for statements; \\emph is the file's command here (as the applied statements of pp. 283-285)."
+ },
+ {
+  "page": 291,
+  "where": "Proposition 3.4 (i), the item title",
+  "scan": "'(i) (Normalisation) Soit': the title in parentheses, not underlined, no full stop",
+  "tex": "\\emph{Normalisation.}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Normalisation.}",
+   "new": "(Normalisation)"
+  },
+  "note": "The TeX drops the parentheses, adds a full stop and sets the title in \\emph (the file's underline), which the print does not have."
+ },
+ {
+  "page": 291,
+  "where": "Proposition 3.4 (i)",
+  "scan": "underlined: 'Soit' | 'un' | 'Module inversible. Désignant par' | 'l'image' / 'de la classe de' | 'par le morphisme bord' (L, O_S, [L] not); Module with a capital M",
+  "tex": "Soit $L$ un $\\mathcal O_S$-module inversible. Désignant par ... (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $L$ un $\\mathcal O_S$-module inversible. Désignant par $[L]$ l'image de la classe de $L$ par le morphisme bord",
+   "new": "\\emph{Soit} $L$ \\emph{un} $\\mathcal O_S$-\\emph{Module inversible. Désignant par} $[L]$ \\emph{l'image de la classe de} $L$ \\emph{par le morphisme bord}"
+  },
+  "note": "One edit: it also gives the print's capital M (word)."
+ },
+ {
+  "page": 291,
+  "where": "Proposition 3.4 (i), 'on a' before c(L) = 1 + [L]",
+  "scan": "'on a' underlined",
+  "tex": "on a",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "on a\n\\[\nc(L)",
+   "new": "\\emph{on a}\n\\[\nc(L)"
+  },
+  "note": ""
+ },
+ {
+  "page": 291,
+  "where": "Proposition 3.4 (ii), the item title",
+  "scan": "'(ii) (Stabilité par changement de base).': in parentheses, not underlined, the full stop after the parenthesis",
+  "tex": "\\emph{Stabilité par changement de base.}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Stabilité par changement de base.}",
+   "new": "(Stabilité par changement de base)."
+  },
+  "note": "The TeX drops the parentheses and sets the title in \\emph."
+ },
+ {
+  "page": 291,
+  "where": "Proposition 3.4 (ii)",
+  "scan": "underlined: 'Soient' | 'un morphisme de schémas' / 'et' | 'un' | 'Module localement libre. Pour tout entier' | 'on a' (f : S'→S, E, O_S, i not); Module with a capital M",
+  "tex": "Soient $f:S'\\to S$ un morphisme de schémas et ... (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $f:S'\\to S$ un morphisme de schémas et $E$ un $\\mathcal O_S$-module localement libre. Pour tout entier $i$, on a",
+   "new": "\\emph{Soient} $f:S'\\to S$ \\emph{un morphisme de schémas et} $E$ \\emph{un} $\\mathcal O_S$-\\emph{Module localement libre. Pour tout entier} $i$, \\emph{on a}"
+  },
+  "note": "One edit: it also gives the capital M (word)."
+ },
+ {
+  "page": 291,
+  "where": "Proposition 3.4 (iii), the item title",
+  "scan": "'(iii) (Additivité).': in parentheses, not underlined",
+  "tex": "\\emph{Additivité.}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Additivité.}",
+   "new": "(Additivité)."
+  },
+  "note": "The TeX drops the parentheses and sets the title in \\emph."
+ },
+ {
+  "page": 291,
+  "where": "Proposition 3.4 (iii), 'Soit' before 0 → E' → E → E'' → 0",
+  "scan": "'Soit' underlined",
+  "tex": "Soit",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit\n\\[\n0\\to E'",
+   "new": "\\emph{Soit}\n\\[\n0\\to E'"
+  },
+  "note": ""
+ },
+ {
+  "page": 291,
+  "where": "Proposition 3.4 (iii)",
+  "scan": "underlined: 'une suite exacte de' | 'Modules localement' / 'libres. Pour tout entier' | 'on a la relation' (O_S, n not); Modules with a capital M",
+  "tex": "une suite exacte de $\\mathcal O_S$-modules ... (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "une suite exacte de $\\mathcal O_S$-modules localement libres. Pour tout entier $n$, on a la relation",
+   "new": "\\emph{une suite exacte de} $\\mathcal O_S$-\\emph{Modules localement libres. Pour tout entier} $n$, \\emph{on a la relation}"
+  },
+  "note": "One edit: it also gives the capital M (word)."
+ },
+ {
+  "page": 291,
+  "where": "Proposition 3.4 (iii), end of the display c_n(E) = Σ_{i+j=n} c_i(E')c_j(E'')",
+  "scan": "no full stop: after (E\") only a 3 x 6 px tick at mid-height (a speck), unlike the 8 x 7 px typed full stops on the baseline of the other displays (crop p291_sumend.png)",
+  "tex": "c_i(E')c_j(E'').",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "c_i(E')c_j(E'').",
+   "new": "c_i(E')c_j(E'')"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 291,
+  "where": "Corollaire 3.5",
+  "scan": "underlined: 'Pour toute suite exacte' | 'de' | 'Modules localement' / 'libres, on a' (the sequence and O_S not); Modules with a capital M",
+  "tex": "Pour toute suite exacte ... (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour toute suite exacte $0\\to E'\\to E\\to E''\\to0$ de $\\mathcal O_S$-modules localement libres, on a",
+   "new": "\\emph{Pour toute suite exacte} $0\\to E'\\to E\\to E''\\to0$ \\emph{de} $\\mathcal O_S$-\\emph{Modules localement libres, on a}"
+  },
+  "note": "One edit: it also gives the capital M (word)."
+ },
+ {
+  "page": 291,
+  "where": "Corollaire 3.5, display",
+  "scan": "'c(E) = c(E').c(E\")': the typewriter's full stop as product dot",
+  "tex": "c(E)=c(E')c(E'')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "c(E)=c(E')c(E'')",
+   "new": "c(E)=c(E')\\cdot c(E'')"
+  },
+  "note": "The TeX drops the product dot (the typewriter's full stop, written \\cdot by the volume's rule)."
+ },
+ {
+  "page": 291,
+  "where": "Corollaire 3.5, 'dans Â•(S) .'",
+  "scan": "'dans' underlined",
+  "tex": "dans $\\widehat A^*(S)$.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $\\widehat",
+   "new": "\\emph{dans} $\\widehat"
+  },
+  "note": ""
+ },
+ {
+  "page": 291,
+  "where": "Corollaire 3.5, 'dans Â•(S) .'",
+  "scan": "A with a hat and a raised dot (A•)",
+  "tex": "\\widehat A^*(S)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "A^*(S)$.",
+   "new": "A^{\\bullet}(S)$."
+  },
+  "note": "As the display at the top of the page (filed under p. 290)."
+ },
+ {
+  "page": 291,
+  "where": "proof label 'Preuve de 3.4.'",
+  "scan": "'Preuve' and 'de' underlined, '3.4.' not",
+  "tex": "\\emph{Preuve de 3.4.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Preuve de 3.4.}",
+   "new": "\\emph{Preuve de} 3.4."
+  },
+  "note": "Proof label: the TeX also underlines the number."
+ },
+ {
+  "page": 291,
+  "where": "reference 'La théorie des classes de Chern.'",
+  "scan": "the title is not underlined",
+  "tex": "\\emph{La théorie des classes de Chern}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{La théorie des classes de Chern}",
+   "new": "La théorie des classes de Chern"
+  },
+  "note": "The TeX adds emphasis."
+ },
+ {
+  "page": 291,
+  "where": "reference 'pp. 137-154'",
+  "scan": "a hyphen",
+  "tex": "137--154",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "137--154",
+   "new": "137-154"
+  },
+  "note": "The TeX writes an en dash."
+ },
+ {
+  "page": 292,
+  "where": "proof of 3.4 (i), 'Soit E un O_S-Module localement libre ;'",
+  "scan": "Module with a capital M",
+  "tex": "$\\mathcal O_S$-module",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathcal O_S$-module localement libre;",
+   "new": "$\\mathcal O_S$-Module localement libre;"
+  },
+  "note": "The typescript's capital M (sheaf of modules), as the applied 'Module' of pp. 282-283."
+ },
+ {
+  "page": 292,
+  "where": "'En particulier si E est inversible'",
+  "scan": "no comma after 'En particulier'",
+  "tex": "En particulier, si",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "En particulier, si",
+   "new": "En particulier si"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 292,
+  "where": "(iii), 'les Modules considérés'",
+  "scan": "Modules with a capital M",
+  "tex": "les modules considérés",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "les modules considérés",
+   "new": "les Modules considérés"
+  },
+  "note": ""
+ },
+ {
+  "page": 292,
+  "where": "Lemme 3.6, first sentence",
+  "scan": "underlined: 'Soit' | 'un' | 'Module localement libre muni d'une filtration finie' (E, O_S not); Module with a capital M",
+  "tex": "Soit $E$ un $\\mathcal O_S$-module ... (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $E$ un $\\mathcal O_S$-module localement libre muni d'une filtration finie",
+   "new": "\\emph{Soit} $E$ \\emph{un} $\\mathcal O_S$-\\emph{Module localement libre muni d'une filtration finie}"
+  },
+  "note": "One edit: it also gives the capital M (word)."
+ },
+ {
+  "page": 292,
+  "where": "Lemme 3.6, the filtration",
+  "scan": "'0 = E_o ⊂ E_1 ⊂ ... E_i ⊂ ... E_r = E': no inclusion sign after either row of dots",
+  "tex": "E_1\\subset\\cdots\\subset E_i\\subset\\cdots\\subset E_r=E",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subset\\cdots\\subset E_i\\subset\\cdots\\subset E_r",
+   "new": "\\subset\\cdots E_i\\subset\\cdots E_r"
+  },
+  "note": "The TeX adds two \\subset (as the logged p. 246)."
+ },
+ {
+  "page": 292,
+  "where": "Lemme 3.6, second sentence",
+  "scan": "underlined: 'dont les quotients consécutifs' | 'sont inversibles. Alors l'éga-' / 'lité ci-dessous est vérifiée' (the formulas and the colon not)",
+  "tex": "dont les quotients consécutifs ... (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dont les quotients consécutifs $L_i=E_i/E_{i-1}$ $(1\\le i\\le r)$ sont inversibles. Alors l'égalité ci-dessous est vérifiée:",
+   "new": "\\emph{dont les quotients consécutifs} $L_i=E_i/E_{i-1}$ $(1\\le i\\le r)$ \\emph{sont inversibles. Alors l'égalité ci-dessous est vérifiée}:"
+  },
+  "note": ""
+ },
+ {
+  "page": 292,
+  "where": "'Il est clair par définition des schémas de drapeaux que'",
+  "scan": "no commas",
+  "tex": "Il est clair, par définition des schémas de drapeaux, que",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Il est clair, par définition des schémas de drapeaux, que",
+   "new": "Il est clair par définition des schémas de drapeaux que"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 292,
+  "where": "end of the display c(h*(E)) = ... = c(h*(E'))c(h*(E''))",
+  "scan": "no comma (p. 293 goes on 'soit grâce à (ii)')",
+  "tex": "=c(h^*(E'))c(h^*(E'')),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=c(h^*(E'))c(h^*(E'')),",
+   "new": "=c(h^*(E'))c(h^*(E''))"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 293,
+  "where": "first line, 'soit grâce à (ii)'",
+  "scan": "no commas",
+  "tex": "soit, grâce à (ii),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "soit, grâce à (ii),",
+   "new": "soit grâce à (ii)"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 293,
+  "where": "number of the display (3.5.1)",
+  "scan": "'(3.5.1.)' with a full stop inside the parenthesis",
+  "tex": "\\tag{3.5.1}",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tag{3.5.1}",
+   "new": "\\tag{3.5.1.}"
+  },
+  "note": "As printed; the reference 'grâce à (3.5.1)' has no stop."
+ },
+ {
+  "page": 293,
+  "where": "display (3.5.1)",
+  "scan": "'h*(c(E').c(E\"))': the typewriter's full stop as product dot",
+  "tex": "h^*(c(E')c(E''))",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "h^*(c(E')c(E''))",
+   "new": "h^*(c(E')\\cdot c(E''))"
+  },
+  "note": "The TeX drops the product dot."
+ },
+ {
+  "page": 293,
+  "where": "'(F O_T-Module loc. libre),'",
+  "scan": "the abbreviation 'loc.'; Module with a capital M",
+  "tex": "\\text{-module localement libre}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{-module localement libre}",
+   "new": "\\text{-Module loc. libre}"
+  },
+  "note": "The TeX writes the abbreviation out and gives a small m."
+ },
+ {
+  "page": 293,
+  "where": "'donc (2.2.5) l'homomorphisme, image réciproque'",
+  "scan": "(2.2.5)",
+  "tex": "(2.2.5)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(2.2.6)",
+  "note": "Wrong reference number: in the print 2.2.5 is the paragraph that introduces the notation A•(X) and the injectivity of the pull-back is Corollaire 2.2.6 (p. 289; p. 290 cites it as '(2.2.6)'). The TeX keeps the printed reading; the current layer already reads 'donc, d'après le corollaire (2.2.6),'."
+ },
+ {
+  "page": 293,
+  "where": "'l'homomorphisme, image réciproque h* : A•(S) → A•(Z) est une injection'",
+  "scan": "a comma after 'l'homomorphisme' (no comma closes the apposition)",
+  "tex": "l'homomorphisme image réciproque",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "l'homomorphisme image réciproque",
+   "new": "l'homomorphisme, image réciproque"
+  },
+  "corrected": "l'homomorphisme image réciproque",
+  "note": "A stray comma of the typist (the phrase is 'L'homomorphisme image réciproque' in Corollaire 2.2.6); the TeX silently drops it. Drop this item if the comma is taken as intended."
+ },
+ {
+  "page": 293,
+  "where": "'h* : A•(S) → A•(Z)'",
+  "scan": "A with a raised dot (A•), twice",
+  "tex": "A^*(S)\\to A^*(Z)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "A^*(S)\\to A^*(Z)",
+   "new": "A^{\\bullet}(S)\\to A^{\\bullet}(Z)"
+  },
+  "note": "The TeX has stars (as p. 291)."
+ },
+ {
+  "page": 293,
+  "where": "'Pour tout i ∈ [1,r] le monomorphisme'",
+  "scan": "no comma",
+  "tex": "Pour tout $i\\in[1,r]$, le",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour tout $i\\in[1,r]$, le",
+   "new": "Pour tout $i\\in[1,r]$ le"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 293,
+  "where": "display S ≃ Y_1 ⊂ Y_2 ... Y_i ⊂ ... ⊂ Y_r = P",
+  "scan": "no inclusion sign before or after the first row of dots",
+  "tex": "Y_2\\subset\\cdots\\subset Y_i",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "Y_2\\subset\\cdots\\subset Y_i",
+   "new": "Y_2\\cdots Y_i"
+  },
+  "note": "The TeX adds two \\subset."
+ },
+ {
+  "page": 293,
+  "where": "'Notons aussi pour tout couple (i,j) d'entiers avec 1 ≤ i ≤ j ≤ r'",
+  "scan": "no commas",
+  "tex": "Notons aussi, pour tout couple $(i,j)$ d'entiers avec $1\\le i\\le j\\le r$,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Notons aussi, pour tout couple $(i,j)$ d'entiers avec $1\\le i\\le j\\le r$,",
+   "new": "Notons aussi pour tout couple $(i,j)$ d'entiers avec $1\\le i\\le j\\le r$"
+  },
+  "note": "The TeX adds two commas (after 'aussi' and before the display)."
+ },
+ {
+  "page": 293,
+  "where": "display α*_{i+1}(p*(Ľ_{i+1}) ⊗ O_p(-1)).",
+  "scan": "O with a small p: 'O_p(-1)'",
+  "tex": "\\mathcal O_P(-1)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\mathcal O_P(-1)",
+   "new": "\\mathcal O_p(-1)"
+  },
+  "corrected": "\\mathcal O_P(-1)",
+  "note": "The subscript is a small p: its bowl takes 14-15 of the letter's 20-22 pixel rows and it sits 4-5 px below the foot of the O, like the p of p^* on the same lines; the capital P of O_P(1) (p. 292) and of O_P(-1) in (3.6.2) (p. 294) has its bowl in 11-12 of 21 rows and its top at the foot of the O. O_P(-1) is the twisting sheaf on P (p is the projection). The TeX silently corrects it. The same O_p(-1) recurs on pp. 294 (three times) and 295."
+ },
+ {
+  "page": 293,
+  "where": "Lemme 3.6.1, first sentences",
+  "scan": "underlined: 'Soit' | 'une suite exacte de' | 'Modules localement libres.' / 'Alors la suite' (the sequence and O_S not); Modules with a capital M",
+  "tex": "Soit $0\\to L\\to E\\to F\\to0$ une suite exacte ... (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $0\\to L\\to E\\to F\\to0$ une suite exacte de $\\mathcal O_S$-modules localement libres. Alors la suite",
+   "new": "\\emph{Soit} $0\\to L\\to E\\to F\\to0$ \\emph{une suite exacte de} $\\mathcal O_S$-\\emph{Modules localement libres. Alors la suite}"
+  },
+  "note": "One edit: it also gives the capital M (word)."
+ },
+ {
+  "page": 293,
+  "where": "Lemme 3.6.1, after the display",
+  "scan": "underlined: 'dans laquelle' | 'désigne le morphisme évident et' | 'est le morphisme de degré un cor-' / 'respondant à l'inclusion de' | 'dans' | 'est une suite exacte de' | 'Modules gradués' (v, u, L, E, O_S not); Modules with a capital M",
+  "tex": "dans laquelle $v$ désigne ... (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dans laquelle $v$ désigne le morphisme évident et $u$ est le morphisme de degré un correspondant à l'inclusion de $L$ dans $E$, est une suite exacte de $\\mathcal O_S$-modules gradués.",
+   "new": "\\emph{dans laquelle} $v$ \\emph{désigne le morphisme évident et} $u$ \\emph{est le morphisme de degré un correspondant à l'inclusion de} $L$ \\emph{dans} $E$, \\emph{est une suite exacte de} $\\mathcal O_S$-\\emph{Modules gradués}."
+  },
+  "note": "One edit: it also gives the capital M (word)."
+ },
+ {
+  "page": 294,
+  "where": "number of the display (3.6.2)",
+  "scan": "'(3.6.2.)' with a full stop inside the parenthesis",
+  "tex": "\\tag{3.6.2}",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tag{3.6.2}",
+   "new": "\\tag{3.6.2.}"
+  },
+  "note": "As printed ((3.6.5) has no stop)."
+ },
+ {
+  "page": 294,
+  "where": "'de S-chémas lisses'",
+  "scan": "'S-chémas': no s between the hyphen and 'chémas'",
+  "tex": "$S$-schémas",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$S$-schémas",
+   "new": "$S$-chémas"
+  },
+  "corrected": "$S$-schémas",
+  "note": "Typing error; the TeX silently corrects it."
+ },
+ {
+  "page": 294,
+  "where": "'définie par un Idéal J de O_X'",
+  "scan": "Idéal with a capital I (sheaf of ideals)",
+  "tex": "par un idéal $J$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "par un idéal $J$",
+   "new": "par un Idéal $J$"
+  },
+  "note": "'(3.6.4) Si l'idéal J' has a small i, as the TeX."
+ },
+ {
+  "page": 294,
+  "where": "'de O_X :' before (3.6.3)",
+  "scan": "a colon",
+  "tex": "$\\mathcal O_X$.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal O_X$.",
+   "new": "\\mathcal O_X$ :"
+  },
+  "note": "The TeX has a full stop."
+ },
+ {
+  "page": 294,
+  "where": "paragraph number (3.6.3)",
+  "scan": "'(3.6.3) Il satisfait à la formule de projection': the number opens the paragraph (new line); the display under it has no number",
+  "tex": "'Il satisfait ...' runs on after 'de $\\mathcal O_X$.'; \\tag{3.6.3} on the display",
+  "kind": "number",
+  "confidence": "medium",
+  "fix": {
+   "old": " Il satisfait",
+   "new": "\n\n(3.6.3) Il satisfait"
+  },
+  "note": "Apply together with the next item (removal of \\tag{3.6.3})."
+ },
+ {
+  "page": 294,
+  "where": "display of (3.6.3)",
+  "scan": "no number at the display",
+  "tex": "\\tag{3.6.3}",
+  "kind": "number",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\tag{3.6.3}\n\\]",
+   "new": "\\]"
+  },
+  "note": "Apply together with the previous item."
+ },
+ {
+  "page": 294,
+  "where": "display of (3.6.3), u_*(x.u*(y)) = u_*(x).y .",
+  "scan": "the typewriter's full stop as product dot twice, and a full stop at the end",
+  "tex": "u_*(x\\,u^*(y))=u_*(x)y,",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "u_*(x\\,u^*(y))=u_*(x)y,",
+   "new": "u_*(x\\cdot u^*(y))=u_*(x)\\cdot y."
+  },
+  "note": "The TeX has a thin space for the first dot, drops the second, and ends with a comma where the print has a full stop (punctuation)."
+ },
+ {
+  "page": 294,
+  "where": "paragraph number (3.6.4)",
+  "scan": "'(3.6.4) Si l'idéal J est inversible, on a la relation': the number opens the paragraph; the display under it has no number",
+  "tex": "\\tag{3.6.4} on the display",
+  "kind": "number",
+  "confidence": "medium",
+  "fix": {
+   "old": "Si l'idéal $J$ est inversible",
+   "new": "\n(3.6.4) Si l'idéal $J$ est inversible"
+  },
+  "note": "Apply together with the next item (removal of \\tag{3.6.4})."
+ },
+ {
+  "page": 294,
+  "where": "display of (3.6.4)",
+  "scan": "no number at the display",
+  "tex": "\\tag{3.6.4}",
+  "kind": "number",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\tag{3.6.4}\n\\]",
+   "new": "\\]"
+  },
+  "note": "Apply together with the previous item."
+ },
+ {
+  "page": 294,
+  "where": "'voir à partir de là par récurrence croissante sur l'entier i que l'on a'",
+  "scan": "no commas",
+  "tex": "voir à partir de là, par récurrence croissante sur l'entier $i$, que",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "voir à partir de là, par récurrence croissante sur l'entier $i$, que",
+   "new": "voir à partir de là par récurrence croissante sur l'entier $i$ que"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 294,
+  "where": "display (3.6.5)",
+  "scan": "O with a small p: 'O_p(-1)'",
+  "tex": "\\mathcal O_P(-1)]\\Bigr)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\mathcal O_P(-1)]\\Bigr)",
+   "new": "\\mathcal O_p(-1)]\\Bigr)"
+  },
+  "corrected": "\\mathcal O_P(-1)]\\Bigr)",
+  "note": "The subscript is a small p: its bowl takes 14-15 of the letter's 20-22 pixel rows and it sits 4-5 px below the foot of the O, like the p of p^* on the same lines; the capital P of O_P(1) (p. 292) and of O_P(-1) in (3.6.2) (p. 294) has its bowl in 11-12 of 21 rows and its top at the foot of the O. O_P(-1) is the twisting sheaf on P (p is the projection). The TeX silently corrects it."
+ },
+ {
+  "page": 294,
+  "where": "display Π_i [p*(Ľ_i) ⊗ O_p(-1)] = 0,",
+  "scan": "O with a small p: 'O_p(-1)'",
+  "tex": "\\mathcal O_P(-1)]=0,",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\mathcal O_P(-1)]=0,",
+   "new": "\\mathcal O_p(-1)]=0,"
+  },
+  "corrected": "\\mathcal O_P(-1)]=0,",
+  "note": "The subscript is a small p: its bowl takes 14-15 of the letter's 20-22 pixel rows and it sits 4-5 px below the foot of the O, like the p of p^* on the same lines; the capital P of O_P(1) (p. 292) and of O_P(-1) in (3.6.2) (p. 294) has its bowl in 11-12 of 21 rows and its top at the foot of the O. O_P(-1) is the twisting sheaf on P (p is the projection). The TeX silently corrects it."
+ },
+ {
+  "page": 294,
+  "where": "display Π_i (ξ + c_1(p*(Ľ_i)) = 0,",
+  "scan": "three opening and two closing parentheses: '(ξ+ c_1(p*(Ľ_i))'",
+  "tex": "(\\xi+c_1(p^*(\\check L_i)))=0,",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\xi+c_1(p^*(\\check L_i)))=0,",
+   "new": "(\\xi+c_1(p^*(\\check L_i))=0,"
+  },
+  "corrected": "(\\xi+c_1(p^*(\\check L_i)))=0,",
+  "note": "A closing parenthesis is missing in the print; the TeX silently adds it."
+ },
+ {
+  "page": 294,
+  "where": "'Supposons la vraie pour i'",
+  "scan": "'Supposons' ends the line and 'la vraie' begins the next, with no hyphen",
+  "tex": "Supposons-la",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": {
+   "old": "Supposons-la",
+   "new": "Supposons la"
+  },
+  "corrected": "Supposons-la",
+  "note": "The imperative needs the hyphen; the TeX silently adds it. Low: the place is a line break; drop this item if line-end hyphens are not checked."
+ },
+ {
+  "page": 294,
+  "where": "'Posons pour simplifier N = Π_{j≤i} [p*(Ľ_j) ⊗ O_p(-1)].'",
+  "scan": "O with a small p: 'O_p(-1)'",
+  "tex": "\\mathcal O_P(-1)].",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\mathcal O_P(-1)].",
+   "new": "\\mathcal O_p(-1)]."
+  },
+  "corrected": "\\mathcal O_P(-1)].",
+  "note": "The subscript is a small p: its bowl takes 14-15 of the letter's 20-22 pixel rows and it sits 4-5 px below the foot of the O, like the p of p^* on the same lines; the capital P of O_P(1) (p. 292) and of O_P(-1) in (3.6.2) (p. 294) has its bowl in 11-12 of 21 rows and its top at the foot of the O. O_P(-1) is the twisting sheaf on P (p is the projection). The TeX silently corrects it."
+ },
+ {
+  "page": 295,
+  "where": "first display, '(α_{i+1})*(N).(α_{i+1})*'",
+  "scan": "the typewriter's full stop as product dot",
+  "tex": "(N)(\\alpha_{i+1})^*",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(N)(\\alpha_{i+1})^*",
+   "new": "(N)\\cdot(\\alpha_{i+1})^*"
+  },
+  "note": "The TeX drops the product dot."
+ },
+ {
+  "page": 295,
+  "where": "first display, 'O_p(-1)'",
+  "scan": "O with a small p: 'O_p(-1)'",
+  "tex": "\\mathcal O_P",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "L_{i+1})\\otimes\\mathcal O_P",
+   "new": "L_{i+1})\\otimes\\mathcal O_p"
+  },
+  "corrected": "L_{i+1})\\otimes\\mathcal O_P",
+  "note": "The subscript is a small p: its bowl takes 14-15 of the letter's 20-22 pixel rows and it sits 4-5 px below the foot of the O, like the p of p^* on the same lines; the capital P of O_P(1) (p. 292) and of O_P(-1) in (3.6.2) (p. 294) has its bowl in 11-12 of 21 rows and its top at the foot of the O. O_P(-1) is the twisting sheaf on P (p is the projection). The TeX silently corrects it."
+ },
+ {
+  "page": 295,
+  "where": "first display, '(p*(Ľ_{i+1}) ⊗ O_p(-1)] = 0,'",
+  "scan": "the parenthesis opened after (α_{i+1})* is never closed: '(-1)]'",
+  "tex": "(-1))\\bigr]",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(-1))\\bigr]",
+   "new": "(-1)\\bigr]"
+  },
+  "corrected": "(-1))\\bigr]",
+  "note": "A closing parenthesis is missing in the print; the TeX silently adds it. Independent of the O_p item (the two olds do not overlap)."
+ },
+ {
+  "page": 295,
+  "where": "Corollaire 3.7 (i)",
+  "scan": "underlined: 'Pour tout' | 'Module localement libre' | 'et tout entier' | 'on a' (O_S, E, i not); Module with a capital M",
+  "tex": "\\item Pour tout $\\mathcal O_S$-module ... (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Pour tout $\\mathcal O_S$-module localement libre $E$ et tout entier $i$, on a",
+   "new": "\\item \\emph{Pour tout} $\\mathcal O_S$-\\emph{Module localement libre} $E$ \\emph{et tout entier} $i$, \\emph{on a}"
+  },
+  "note": "One edit: it also gives the capital M (word)."
+ },
+ {
+  "page": 295,
+  "where": "Corollaire 3.7 (ii)",
+  "scan": "underlined: 'Si' | 'est un' | 'Module localement libre de rang' | 'on a' (E, O_S, r not); Module with a capital M",
+  "tex": "\\item Si $E$ est un $\\mathcal O_S$-module ... (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Si $E$ est un $\\mathcal O_S$-module localement libre de rang $r$, on a",
+   "new": "\\item \\emph{Si} $E$ \\emph{est un} $\\mathcal O_S$-\\emph{Module localement libre de rang} $r$, \\emph{on a}"
+  },
+  "note": "One edit: it also gives the capital M (word)."
+ },
+ {
+  "page": 295,
+  "where": "Corollaire 3.7 (iii)",
+  "scan": "underlined from 'Plus généralement' to 'dans'; '(SGA 6 V 6.1).' not",
+  "tex": "\\item Plus généralement, ... (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Plus généralement, les classes de Chern d'un produit tensoriel ou d'une puissance extérieure s'expriment au moyen des polynômes universels explicités dans (SGA",
+   "new": "\\item \\emph{Plus généralement, les classes de Chern d'un produit tensoriel ou d'une puissance extérieure s'expriment au moyen des polynômes universels explicités dans} (SGA"
+  },
+  "note": ""
+ },
+ {
+  "page": 295,
+  "where": "display Λ^r(E) ≃ ⊗_i(L_i) .",
+  "scan": "(L_i) in parentheses",
+  "tex": "\\bigotimes_i L_i.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigotimes_i L_i.",
+   "new": "\\bigotimes_i (L_i)."
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 295,
+  "where": "numbered paragraph 3.8",
+  "scan": "'3.8.' (with a full stop)",
+  "tex": "\\subsubsection*{3.8}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{3.8}",
+   "new": "\\subsubsection*{3.8.}"
+  },
+  "note": "As '3.3.' (filed under p. 290) and '2.1.' (p. 285)."
+ },
+ {
+  "page": 295,
+  "where": "3.8, 'sur spec(C)'",
+  "scan": "'spec' with a small s",
+  "tex": "\\operatorname{Spec}(\\mathbb C)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\operatorname{Spec}(\\mathbb C)",
+   "new": "\\operatorname{spec}(\\mathbb C)"
+  },
+  "note": "As the applied 'spec(C)' of p. 285."
+ },
+ {
+  "page": 295,
+  "where": "3.8, 'On dispose de ce fait par voie de topologie algébrique d'une théorie'",
+  "scan": "no commas",
+  "tex": "On dispose de ce fait, par voie de topologie algébrique, d'une",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "On dispose de ce fait, par voie de topologie algébrique, d'une",
+   "new": "On dispose de ce fait par voie de topologie algébrique d'une"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 295,
+  "where": "3.8, 'un O_C-Module localement libre de type fini'",
+  "scan": "Module with a capital M (the O is a hand-drawn script O)",
+  "tex": "$\\mathcal O_\\mathbb C$-module",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathcal O_\\mathbb C$-module",
+   "new": "$\\mathcal O_\\mathbb C$-Module"
+  },
+  "note": ""
+ },
+ {
+  "page": 295,
+  "where": "last line, 's'il n'y a pas de confusion possible'",
+  "scan": "no comma after 'possible'",
+  "tex": "confusion possible,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "confusion possible,",
+   "new": "confusion possible"
+  },
+  "note": "The TeX adds a comma."
+ }
+]

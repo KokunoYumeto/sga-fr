@@ -1,0 +1,95 @@
+{
+  "findings": [
+    {
+      "page": 126,
+      "where": "Immediately after (8.11.5.1)",
+      "scan": "induit par F",
+      "tex": "induit par \\sisi{$F$}{$f$}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "induit par $f$",
+      "note": "The inducing functor is f, not F. The TeX records and corrects the printed misprint with \\sisi."
+    },
+    {
+      "page": 126,
+      "where": "(8.11.5.2), domain and codomain of g",
+      "scan": "g:\\Pro(C)\\longrightarrow\\Pro(C')",
+      "tex": "g:\\Pro(\\sisi{C}{C'})\\longrightarrow \\Pro(\\sisi{C'}{C})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "g:\\Pro(C')\\longrightarrow\\Pro(C)",
+      "note": "The printed domain and codomain are interchanged. The TeX corrects both with \\sisi."
+    },
+    {
+      "page": 126,
+      "where": "(8.11.5.3), both occurrences of X",
+      "scan": "\\Hom_{\\Pro(C)}(g(\\underline{Y}'),X)\\simeq\\Hom_{\\Pro(C')}(\\underline{Y}'),f(X))",
+      "tex": "\\Hom_{\\Pro(C)}(g(𝒴'),𝒳)\\simeq\n\\Hom_{\\Pro(C')}(𝒴'\\sisi{)}{},f(𝒳))",
+      "kind": "font",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hom_{\\Pro(C)}(g(𝒴'),𝒳)\\simeq\n\\Hom_{\\Pro(C')}(𝒴'\\sisi{)}{},f(𝒳))",
+        "new": "\\Hom_{\\Pro(C)}(g(𝒴'),X)\\simeq\n\\Hom_{\\Pro(C')}(𝒴'\\sisi{)}{},f(X))"
+      },
+      "note": "Both X's are plain in the print, unlike the underlined Y'. The TeX substitutes the distinct script symbol 𝒳."
+    },
+    {
+      "page": 126,
+      "where": "(8.11.5.3), right-hand Hom",
+      "scan": "\\Hom_{\\Pro(C')}(\\underline{Y}'),f(X))",
+      "tex": "\\Hom_{\\Pro(C')}(𝒴'\\sisi{)}{},f(𝒳))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hom_{\\Pro(C')}(𝒴',f(X))",
+      "note": "The print has an extra closing parenthesis immediately after Y'. The TeX removes it with \\sisi."
+    },
+    {
+      "page": 126,
+      "where": "Paragraph after (8.11.5.3), “Pro(f) … admet un adjoint”",
+      "scan": "admet un adjoint à droite",
+      "tex": "adjoint \\emph{à \\sisi{droite}{gauche}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "admet un adjoint à gauche",
+      "note": "The displayed adjunction makes g a left adjoint to Pro(f). The TeX corrects the printed “droite” with \\sisi."
+    },
+    {
+      "page": 126,
+      "where": "Same paragraph, “le foncteur g précédent est un tel adjoint”",
+      "scan": "est un tel adjoint à droite",
+      "tex": "est un tel adjoint à \\sisi{droite}{gauche}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "est un tel adjoint à gauche",
+      "note": "This repeats the preceding left/right misprint. The TeX corrects it with \\sisi."
+    },
+    {
+      "page": 126,
+      "where": "Same paragraph, immediately after the second “adjoint à droite”",
+      "scan": "de Pro(C)",
+      "tex": "de\n$\\Pro(\\sisi{C}{f})$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "de $\\Pro(f)$",
+      "note": "The intended functor is Pro(f), not the category Pro(C). The TeX corrects the printed C with \\sisi."
+    },
+    {
+      "page": 129,
+      "where": "8.12.3, parenthetical description of u",
+      "scan": "(ou le couple (X,n))",
+      "tex": "(ou le couple $(X,u)$)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(ou le couple $(X,u)$)",
+      "note": "The print has n instead of u in the pair. The TeX silently corrects it."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 126: 1/6; 127: 0/0; 128: 0/0; 129: 0/1; 130: 0/0."
+}

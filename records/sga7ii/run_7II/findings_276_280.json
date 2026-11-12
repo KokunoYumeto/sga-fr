@@ -1,0 +1,208 @@
+[
+ {
+  "page": 276,
+  "where": "formula after 'il suffit de démontrer'",
+  "scan": "g_*(g*(x)[(ρi)* (c_1(ξ_IP1)) - g*(c_1(ξ_Δ)]) = x",
+  "tex": "g^*(c_1(\\xi_\\Delta)])",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "g^*(c_1(\\xi_\\Delta))])",
+  "note": "The print never closes the parenthesis opened by g*( before ']'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 276,
+  "where": "formula (4.3.1)",
+  "scan": "g_*(g*(x) (ρi)*(c_1(ξ_IP1)) = x",
+  "tex": "g_*(g^*(x) (\\rho i)^*(c_1(\\xi_{\\mathbb{P}^1})) = x",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "g_*(g^*(x) (\\rho i)^*(c_1(\\xi_{\\mathbb{P}^1}))) = x",
+  "note": "The print never closes the parenthesis opened by g_*(. The TeX keeps it."
+ },
+ {
+  "page": 276,
+  "where": "computation of ?, first line",
+  "scan": "? = f_*((i_*g*(x))(i_*g*(y))",
+  "tex": "? &= f_*((i_*g^*(x))(i_*g^*(y))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "? &= f_*((i_*g^*(x))(i_*g^*(y)))",
+  "note": "The closing parenthesis of f_*( is missing in the print. The TeX keeps it."
+ },
+ {
+  "page": 277,
+  "where": "line ?' = - g_*(...) + g_*(2g*(xy)...)",
+  "scan": "+ g_*(2g*(xy)g*(c_1(ξ_Δ)(ρi)*(c_1(ξ_IP1))",
+  "tex": "g_*(2g^*(xy)g^*(c_1(\\xi_\\Delta)(\\rho i)^*(c_1(\\xi_{\\mathbb{P}^1}))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "g_*(2g^*(xy)g^*(c_1(\\xi_\\Delta))(\\rho i)^*(c_1(\\xi_{\\mathbb{P}^1})))",
+  "note": "Two closing parentheses are missing in the print: one for g*( and one for g_*(. The TeX keeps them missing."
+ },
+ {
+  "page": 277,
+  "where": "line '? = 0 + 2xy c_1(ξ_Δ) par (4.2.4) et (4.3.1)'",
+  "scan": "? = 0 + 2xy c_1(ξ_Δ)",
+  "tex": "? &= 0 + 2xy",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "?' &= 0 + 2xy",
+  "note": "This line continues the computation of ?' from the line above; the print drops the prime. The TeX keeps the printed '?'."
+ },
+ {
+  "page": 277,
+  "where": "second line of the computation of ?'",
+  "scan": "= -g_*i*(i_*(g*(xy) c_1(N))) par (4.3.2)",
+  "tex": "\\widetilde{X}}))) \\qquad \\text{par (4.3.2)}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\widetilde{X}}))) \\qquad \\text{par (4.2.12)}",
+  "note": "On p. 276 the identical step is justified 'par (4.2.12)'. (4.3.2), g_*(g*(x)c_1(N)) = -x, cannot give this step. The 'par (4.3.2)' on the next line, for i*i_* = c_1(N), is equally doubtful. The TeX keeps the print."
+ },
+ {
+  "page": 277,
+  "where": "'la formule de projection implique Ker f_* ∩ image f* ⊂ Ker f_*'",
+  "scan": "Ker f_* ∩ image f* ⊂ Ker f_*",
+  "tex": "\\mathrm{Ker}\\, f_* \\cap \\mathrm{image}\\, f^*",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\mathrm{Ker}\\, f_* \\cup \\mathrm{image}\\, f^*",
+  "note": "With ∩ the inclusion is trivial. The projection formula gives that the cup product of image f* with Ker f_* lies in Ker f_*. The TeX keeps the printed ∩."
+ },
+ {
+  "page": 278,
+  "where": "commutative diagram, bottom horizontal arrow X ← Δ",
+  "scan": "X <——j——) Δ (label j)",
+  "tex": "\\Delta \\arrow[ll, hook, \"i\"']",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Delta \\arrow[ll, hook, \"i\"']",
+   "new": "\\Delta \\arrow[ll, hook, \"j\"']"
+  },
+  "note": "The print labels Δ → X with j, the map j of j_*, j* on pp. 276–280. The TeX repeats the label i of the upper arrow ~Δ → ~X."
+ },
+ {
+  "page": 278,
+  "where": "STRUCTURE comment of the diagram, item (7)",
+  "scan": "label j on Δ → X",
+  "tex": "next to $\\Delta$ (hook/mono), label $i$",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "next to $\\Delta$ (hook/mono), label $i$",
+   "new": "next to $\\Delta$ (hook/mono), label $j$"
+  },
+  "note": "Companion of the label fix: the comment also describes the label as i."
+ },
+ {
+  "page": 278,
+  "where": "end of the commutative diagram",
+  "scan": "a full stop is typed at the right, level with the bottom row (Y)",
+  "tex": "{} \\end{tikzcd}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{} \\end{tikzcd}",
+   "new": "{} \\quad . \\end{tikzcd}"
+  },
+  "note": "The full stop after the diagram is left out. It is carried in the last cell, as the comma is on p. 276. The STRUCTURE comment does not say it is left out, so the comment needs no change."
+ },
+ {
+  "page": 279,
+  "where": "arrow label in (5.1.2)",
+  "scan": "m*+h*",
+  "tex": "\\xrightarrow{\\;m^*+h^*\\;}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\xrightarrow{\\;m^*+h_*\\;}",
+  "note": "The component H^{·-2}(Δ) → H^·(Y) is the Gysin map h_*. The proof on p. 280 gives k*i_*g* = h_*ℓ*g* and g.ℓ = id. The TeX keeps h^*."
+ },
+ {
+  "page": 280,
+  "where": "end of the proof of (5.1.3)",
+  "scan": "... = -h* , / ce qui donne (5.1.3). (same sentence, continued on the next line)",
+  "tex": ",\n\nce qui donne (5.1.3).",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": ",\n\nce qui donne (5.1.3).",
+   "new": ",\nce qui donne (5.1.3)."
+  },
+  "note": "The blank line starts a new paragraph in the middle of the sentence; the print only breaks the line."
+ },
+ {
+  "page": 280,
+  "where": "'et de k*i_*g* = h_*ℓ*g* par (5.1.5)), et'",
+  "scan": "k*i_*g*  = h_*ℓ*g* par (5.1.5)),",
+  "tex": "$= h_*\\ell^*g^*$ par (5.1.5)),",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "($= h_*\\ell^*g^*$ par (5.1.5)),",
+  "note": "The print has an unbalanced closing parenthesis. Either an opening parenthesis before '= h_*ℓ*g*' is missing, or the second ')' is extra. The TeX keeps it."
+ },
+ {
+  "page": 280,
+  "where": "second composite, source term",
+  "scan": "H˙^{-2}(Y,Z_{ℓ(-1)}) with (-1) typed in the subscript",
+  "tex": "\\mathbb{Z}_{\\ell(-1)}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\mathbb{Z}_{\\ell}(-1)",
+  "note": "The twist (-1) is typed at subscript level with ℓ; everywhere else it reads Z_ℓ(-1). The TeX keeps the printed position."
+ },
+ {
+  "page": 280,
+  "where": "second composite, label of the second arrow",
+  "scan": "f_*⊕(g_*i*)",
+  "tex": "\\stackrel{f_*\\oplus(g_*i^*)}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\stackrel{f_*\\oplus(-g_*i^*)}",
+  "note": "The inverse of (4.2.2) has second component -g_*i*, as in (4.3.3) and ?' on p. 277, and the next line writes -g_*i*k_*. The label lacks the minus. The TeX keeps the print."
+ },
+ {
+  "page": 280,
+  "where": "'et de -g_*i*k_* = g_*ℓ_*h* = -h*'",
+  "scan": "-g_*i*k_* = g_*ℓ_*h* = -h*",
+  "tex": "= g_*\\ell_*h^* =",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "= -g_*\\ell_*h^* =",
+  "note": "By (5.1.5), i*k_* = ℓ_*h*, so -g_*i*k_* = -g_*ℓ_*h* = -h*. The middle term lacks its minus sign. The TeX keeps the print."
+ },
+ {
+  "page": 280,
+  "where": "proof of 5.1.6, 'l'image de h* est égale'",
+  "scan": "l'image de h* est égale",
+  "tex": "l'image de $h^*$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "l'image de $k^*$",
+  "note": "By (5.1.2), the image of k* is the sum of the images of m* and of h_*j*; the corollary concerns k*. The TeX keeps h*."
+ },
+ {
+  "page": 280,
+  "where": "last composite, label of the second arrow",
+  "scan": "--h*--> H^i(Y,Z_ℓ)",
+  "tex": "\\stackrel{h^*}{\\longrightarrow} H^i(Y",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\stackrel{h_*}{\\longrightarrow} H^i(Y",
+  "note": "The map H^{i-2}(Δ) → H^i(Y) raises the degree by 2, so it is the Gysin map h_*, as in (5.1.2). The TeX keeps h^*."
+ }
+]

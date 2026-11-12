@@ -1,0 +1,85 @@
+{
+ "about": "Hand adjudication for sga4_api_score.py (10 Nov 2026). match: reference id -> finding id (same correction in other LaTeX, or the same misprint; exact-effect fix matches are found by the script and not listed). partial: reference id -> finding id (place found, wrong treatment). extras: finding id -> verdict against the scan strips (real / false / doubtful, with the reason). phi: whether the run noticed the convention of Expose IV (\\phi for the empty set).",
+ "configs": {
+  "fable52-medium": {
+   "match": {"p42.1": "p42.1", "p43.2": "p43.4", "p43.3": "p43.4", "p405.1": "p405.1",
+             "p41.1": "p41.1", "p41.4": "p41.3", "p42.3": "p42.2", "p42.4": "p42.3", "p43.5": "p43.1", "p43.6": "p43.3",
+             "p44.1": "p44.1", "p44.5": "p44.2", "p101.1": "p101.1", "p101.2": "p101.2", "p102.2": "p102.2",
+             "p103.1": "p103.1", "p105.1": "p105.1", "p105.2": "p105.2", "p362.1": "p362.1", "p362.3": "p362.2",
+             "p365.1": "p365.1", "p386.1": "p386.1", "p386.2": "p386.2", "p387.1": "p387.1", "p401.1": "p401.1",
+             "p401.3": "p401.2", "p401.4": "p401.2", "p404.1": "p404.2", "p404.2": "p404.2"},
+   "partial": {},
+   "extras": {
+    "p44.6": "real: misprint of the print, 'analogue par les groupes Ext' for 'pour' (scan p. 44 strip 4 reads 'par'; the proof below has 'pour'); the TeX keeps 'par', no edit",
+    "p52.1": "false: parentheses around a formula reference (\\eqhyperref vs \\hyperref) are style, not content",
+    "p104.2": "false: '(F 1)' against the print's 'F 1)' is the typography of labels, which the prompt excludes",
+    "p404.1": "real: misprint of the print, 'algebriquements clos' (scan p. 404 strip 1); the TeX silently corrects it, no edit"
+   },
+   "phi": "no: neither \\phi on pp. 402 and 404 reported, no mention in the coordinator message"
+  },
+  "opus55-high": {
+   "match": {"p43.2": "p43.2", "p43.3": "p43.2", "p405.1": "p405.1",
+             "p41.1": "p41.1", "p41.4": "p41.3", "p42.3": "p42.2", "p44.1": "p44.1", "p101.1": "p101.2",
+             "p102.2": "p102.2", "p103.1": "p103.1", "p105.1": "p105.1", "p105.2": "p105.2", "p362.2": "p362.1",
+             "p362.3": "p362.2", "p363.1": "p363.1", "p365.1": "p365.1", "p386.1": "p386.1", "p386.2": "p386.2",
+             "p401.1": "p401.1", "p401.3": "p401.2", "p401.4": "p401.2", "p404.1": "p404.1", "p404.2": "p404.2"},
+   "partial": {},
+   "extras": {
+    "p44.4": "real: (6.9.2) third line, the TeX writes ``E^{p,q}_2, which prints two left quotes in math mode; the print has a double prime \"E (scan p. 44 strip 1)",
+    "p104.2": "false: '(F 1)' against the print's 'F 1)' is the typography of labels, which the prompt excludes"
+   },
+   "phi": "no: neither \\phi on pp. 402 and 404 reported, no mention in the coordinator message"
+  },
+  "sol61-high": {
+   "match": {"p42.1": "p42.1", "p43.2": "p43.4", "p43.3": "p43.4", "p44.2": "p44.2", "p44.3": "p44.2",
+             "p402.1": "p402.1", "p404.3": "p404.2", "p405.1": "p405.1",
+             "p41.1": "p41.1", "p41.4": "p41.3", "p42.4": "p42.4", "p43.5": "p43.1", "p43.6": "p43.3", "p44.1": "p44.1",
+             "p101.1": "p101.1", "p102.2": "p102.1", "p103.1": "p103.1", "p105.1": "p105.1", "p105.2": "p105.2",
+             "p362.1": "p362.1", "p362.2": "p362.2", "p362.3": "p362.3", "p363.1": "p363.1", "p365.1": "p365.1",
+             "p386.1": "p386.1", "p386.2": "p386.2", "p387.1": "p387.1", "p401.1": "p401.1", "p401.3": "p401.3",
+             "p401.4": "p401.4"},
+   "partial": {"p42.3": "p42.3", "p104.1": "p104.1"},
+   "partial_note": "p42.3: the print's H without underline read as underlined, so a fix H -> sheaf H (would write the corrected reading into the TeX; the reference, Fable and Opus read no underline). p104.1: the print's 'du ind-objet' seen, but reported as a misprint (fix null) instead of a fix of the TeX's 'de ind-objet'",
+   "extras": {
+    "p42.2": "doubtful: 'M est acyclique pour H^0_Z(X;M)', a loose notation (the functor named by its value), not a certain misprint; the TeX follows the print",
+    "p44.3": "real: ``E^{p,q}_2 prints two left quotes in math mode; the print has a double prime (scan p. 44 strip 1); same as opus55-high p44.4",
+    "p44.5": "real: misprint of the print 'par les groupes Ext' for 'pour' (scan p. 44 strip 4); same as fable52-medium p44.6",
+    "p44.6": "false: the print reads 'La suite exacte 6.10.1' (scan p. 44 strip 4), not 'exacre'",
+    "p55.1": "doubtful: F_x for (F_i)_x is an abuse of notation of the author, not a certain misprint",
+    "p389.1": "doubtful: R^q f_*(F_i) for (f_i)_*: a mathematical reading of the author's notation, not a certain misprint",
+    "p390.2": "doubtful: 'le topos etale X_et' without the tilde is the author's usage in places, not a certain misprint",
+    "p401.2": "doubtful: replacing I' by P(I') changes the exercise's statement; not a certain misprint",
+    "p404.1": "real: misprint of the print 'algebriquements clos' (scan p. 404 strip 1); same as fable52-medium p404.1"
+   },
+   "phi": "yes: both \\phi (pp. 402, 404) reported with a fix to \\varnothing; not named as a convention in the coordinator message"
+  },
+  "sol61-max": {
+   "match": {"p43.2": "p43.4", "p43.3": "p43.4", "p44.2": "p44.3", "p44.3": "p44.3", "p402.1": "p402.1",
+             "p404.3": "p404.2", "p405.1": "p405.1",
+             "p41.1": "p41.1", "p41.4": "p41.3", "p42.4": "p42.4", "p43.5": "p43.1", "p43.6": "p43.3", "p44.1": "p44.1",
+             "p44.5": "p44.2", "p101.1": "p101.1", "p102.2": "p102.1", "p103.1": "p103.1", "p105.1": "p105.1",
+             "p105.2": "p105.2", "p362.1": "p362.1", "p362.2": "p362.2", "p362.3": "p362.3", "p363.1": "p363.1",
+             "p365.1": "p365.1", "p386.1": "p386.1", "p386.2": "p386.2", "p387.1": "p387.1", "p401.1": "p401.1",
+             "p401.3": "p401.4"},
+   "partial": {"p42.3": "p42.2"},
+   "partial_note": "p42.3: as sol61-high, the print's H read as underlined and a fix written",
+   "extras": {
+    "p44.4": "real: ``E^{p,q}_2 against the print's double prime (scan p. 44 strip 1); same as opus55-high p44.4",
+    "p44.6": "real: misprint 'par les groupes Ext' for 'pour' (scan p. 44 strip 4); same as fable52-medium p44.6",
+    "p55.1": "doubtful: as sol61-high p55.1",
+    "p389.1": "doubtful: as sol61-high p389.1",
+    "p390.2": "doubtful: as sol61-high p390.2",
+    "p401.2": "doubtful: as sol61-high p401.2",
+    "p401.3": "false: \\sheaf{\\mathcal{U}} prints the plain script U (macros.tex: \\def\\sheaf#1{\\protect\\mathcal{#1}}); there is no 'sheaf accent' to remove, the fix changes nothing",
+    "p403.1": "doubtful: 'U-petite' may agree with 'la famille'; not a certain agreement error",
+    "p404.1": "real: misprint 'algebriquements clos' (scan p. 404 strip 1); same as fable52-medium p404.1"
+   },
+   "phi": "yes: both \\phi (pp. 402, 404) reported with a fix to \\varnothing; not named as a convention in the coordinator message"
+  }
+ },
+ "real_extras_union": {
+  "tex_errors": ["p44 (6.9.2) ``E^{p,q}_2 for the double prime: opus55-high p44.4, sol61-high p44.3, sol61-max p44.4"],
+  "misprints": ["p44 'par les groupes Ext' for 'pour': fable52-medium p44.6, sol61-high p44.5, sol61-max p44.6",
+                "p404 'algebriquements clos': fable52-medium p404.1, sol61-high p404.1, sol61-max p404.1"]
+ }
+}

@@ -1,0 +1,550 @@
+\ifx\danslelivre\undefined
+\RequirePackage{luatex85}
+\documentclass[10pt]{../fichiers-configuration-latex/smfart}
+\input{../fichiers-configuration-latex/paquets}
+\input{../fichiers-configuration-latex/numerotation}
+\input{../fichiers-configuration-latex/macros}
+
+
+\externaldocument{../01/01.tex}
+\externaldocument{../02/02.tex}
+\externaldocument{../03/03.tex}
+\externaldocument{../04/04.tex}
+\externaldocument{../05/05.tex}
+\externaldocument{../05bis/05bis.tex}
+\externaldocument{../06/06.tex}
+\externaldocument{../07/07.tex}
+\externaldocument{../08/08.tex}
+\externaldocument{../09/09.tex}
+\externaldocument{../10/10.tex}
+\externaldocument{../11/11.tex}
+\externaldocument{../12/12.tex}
+%\externaldocument{../13/13.tex}
+\externaldocument{../14/14.tex}
+\externaldocument{../15/15.tex}
+\externaldocument{../16/16.tex}
+\externaldocument{../17/17.tex}
+\externaldocument{../18/18.tex}
+\externaldocument{../19/19.tex}
+
+\setboolean{original}{false}
+
+\begin{document}
+
+\begin{center}
+XIII. Théorème de changement de base pour un morphisme propre : fin de la démonstration\\
+M. Artin 
+\end{center}
+
+\selectlanguage{english}version : \showgitstatus\selectlanguage{french}
+\tableofcontents
+
+\else
+\chapter{Théorème de changement de base pour un morphisme propre : fin de la démonstration}
+%\addtocontents{toc}{M. Artin}
+\begin{center}
+M. Artin 
+\end{center}
+\fi
+
+\setcounter{pageoriginal}{131}
+
+\section{Le cas projectif et plat}\etiquette[1]{XIII.sec1}\pageoriginale
+
+Rappelons l'énoncé de \hyperrefext[XII][XII.thm5.9]{5.9}. bis dans le cas envisagé ici:
+
+\begin{enonce*}{Proposition 1.1}\etiquette[1.1]{XIII.prop1.1}
+Soit $S$ le spectre d'un anneau hensélien noethérien, et
+$f:X\rightarrow S$ un morphisme projectif et plat. Soit $X_{\circ}$ la
+fibre fermée de $X/S$. Le foncteur de restriction
+$$
+\Et(X)\longrightarrow \Et(X_{\circ})
+$$
+est une équivalence de catégories.
+\end{enonce*}
+
+Comme nous l'avons déjà remarqué, il résulte de \hyperrefext[XII][XII.prop6.5]{6.5} (i) que la
+flèche est pleinement fidèle. Il reste à démontrer que chaque
+revêtement étale $Y_{\circ}$ de $X_{\circ}$ est induit par un
+revêtement étale $Y$ de $X$.
+
+\begin{enonce*}{Lemme 1.2}\etiquette[1.2]{XIII.lem1.2}
+Soit $S$ localement noethérien, $f:X\rightarrow S$ projectif et plat,
+et $Y\subset X$ un sous-schéma. Le sous-foncteur
+$\epsilon=\prod_{X/S}Y/X$: $(\Sch)/S(\Ens)$ du foncteur final « qui exprime la condition $Y=X$ », \ie tel que pour $S'\rightarrow
+S$, on ait
+$$
+\epsilon(S')=
+\begin{cases}
+∅ & \mbox{si }\quad Y'\neq X'\\
+\{∅\} &\mbox{si }\quad Y'=X'
+\end{cases}
+$$
+(où\pageoriginale l'on désigne par un prime l'effet du changement de base
+$S'\rightarrow S$) est représentable par un sous-préschéma $Z$ de
+$S$. Si $Y$ est ouvert (\resp fermé), il en est de même de $Z$.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. Soit $Y$ fermé dans l'ouvert $U$ de $X$, et soit
+$C$ le fermé complémentaire de $U$. Puisque $F$ est propre, l'image de
+$C$ dans $S$ est un fermé $D$, et il est évident que la condition
+$U=X$ est représentée par l'ouvert $S-D$ de $S$. On peut donc supposer
+qu'on a déjà $U=X$, \ie que $Y$ est un sous-schéma fermé. Considérons
+le morphisme surjectif $\Oo_{X}\xrightarrow{\alpha}\Oo_{Y}$ de
+$\Oo_X$-modules; dire que $Y=X$ revient au même que de dire qu'il
+existe un morphisme $\Oo_Y\xrightarrow{\beta}\Oo_X$ tel que le
+composé $\beta\alpha$ soit l'identité, c'est-à-dire, qu'il existe une
+section de $\Hhom(\Oo_Y,\Oo_X)$ qui relève la section identique
+de $\Hhom(\Oo_X,\Oo_X)$. Or il résulte de \EGA III 7.7.8 que le
+foncteur qui à $S'/S$ associe l'ensemble des sections de
+$\Hhom(\Oo_Y,\Oo_X)$ (\resp $\Hhom(\Oo_X,\Oo_X)$) est
+représenté par un fibré vectoriel $V_1$ (\resp $V_2$) sur $S$. Soient
+$\varphi:V_1\rightarrow V_2$ le morphisme $u\mapsto u\alpha$ induit
+par $\Oo_X\rightarrow \Oo_Y$, et $s:S\rightarrow V_2$ la section
+correspondant à l'identité $\Oo_X\rightarrow \Oo_X$. L'image
+inverse de la section $s$ par $\varphi$ s'identifie à un sous-schéma
+fermé $Z$ de $S$, et il est clair que $Z$ représente le foncteur
+$\epsilon$, d'où le lemme.
+
+\begin{enonce*}{Lemme 1.3}\etiquette[1.3]{XIII.lem1.3}
+Soient $S$ un schéma localement noethérien, $f:X\rightarrow S$ un
+morphisme projectif et plat, et $E$ un faisceau localement libre sur
+$X$. Soit
+$$
+QE:(\Sch)/S\longrightarrow (\Ens)
+$$
+le foncteur qui à $S'/S$ associe l'ensemble $QE(S')$ des faisceaux
+quotients $A'$ de $E'=E\otimes_{O_S}\Oo_{S'}$ munis d'une structure
+d'Algèbre étale sur $\Oo_{X'}$. Ce foncteur est représentable par un
+schéma localement de type fini sur $S$.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}.\pageoriginale Le foncteur $\sheaf{\Quot}(E)$,
+$\sheaf{\Quot}(E)(S')=$ ensemble des quotients de $E'$ plat au-dessus de
+$S'$, est représentable par un schéma localement de type fini (TDTE
+IV, exp.~221), disons par $Z/S$. Soit $M_u$ le quotient
+« universel » de $E\otimes_{\Oo_S}\Oo_Z$ au-dessus de $X_Z$. Le
+sous-foncteur de $\sheaf{\Quot}(E)$ des quotients que sont plats
+\emph{au-dessus de} $X'$ est représenté par un ouvert $U$ de $Z$. En
+effet, soit $M'$ un quotient de $E'$, donné par un $S$-morphisme
+$S'\rightarrow Z$. Puisque $M'$ est plat au-dessus de $S'$, dire qu'il
+est plat au-dessus de $X'$ revient au même que de dire que pour chaque
+point $s'\in S'$, le module $M'_{s'}$ est plat au-dessus de la fibre
+$X'_{s'}$ (\EGA IV 5.9), ce qui équivaut à $(M_u)_z$ plat au-dessus de
+la fibre $Z_z$ au point $z$ image de $s'$. Or l'ensemble $U$ des $z\in
+Z$ tels que $(M_u)_z$ soit plat sur $Z_z$, \ie que $M_u$ soit plat sur
+$Z$ en les points de $Z_s$, est ouvert dans $Z$ en vertu de \EGA IV
+11.1.5, d'où l'assertion.
+
+Il suffit maintenant de représenter le foncteur relatif $QE/U[f]$. On
+est donc réduit au lemme suivant, en remplaçant $S$ par $U$ et $X$
+par $\fprod{X}{U}{S}$:
+
+\begin{enonce*}{Lemme 1.4}\etiquette[1.4]{XIII.lem1.4}
+Soient $S$ un schéma localement noethérien, $f:X\rightarrow S$ un
+morphisme projectif et plat, et $M$ un faisceau localement libre sur
+$\Oo_X$. Le foncteur $\Alget:(\Sch)/S\rightarrow (\Ens)$, qui à
+$S'/S$ associe l'ensemble $\Alget(S')$ des structures d'algèbre sur
+$M'$ étales au-dessus de $\Oo_{X'}$, est représentable par un schéma
+de type fini sur $S$.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. Nous dirons, pour abréger,
+« représentable » en sous-entendant « par un schéma relatif
+de \emph{type fini} ». Les fibrés vectoriels rencontrés seront tous définis par des
+faisceaux \emph{cohérents}, donc seront de type fini. Une loi de
+composition bilinéaire dans $M'$ est donnée par une section du
+faisceau localement libre $\Hhom$ $(M'\otimes M', M')$. Puisque
+$\Hhom$ $(M'\otimes M', M')$ est $S$-plat, il résulte
+de\pageoriginale \EGA III 7.7.6 que le foncteur « loi de composition
+bilinéaire » est représentée par un fibré vectoriel $Z$ sur $S$. Il
+faut vérifier que les conditions supplémentaires sur la loi d'être
+associative, commutative, et d'avoir une section unité, sont
+représentées par un sous-schéma de $Z$, et on peut (en considérant le
+foncteur relatif) remplacer $S$ par $Z$, donc peut supposer qu'on a
+une loi de composition donnée sur $M$, et montrer qu'on peut
+représenter le sous-foncteur de $S$ exprimant les conditions
+précédentes par un sous-schéma de $S$.
+
+Or pour l'associativité, la condition est que deux sections de
+$\Hhom$ $(M\otimes M\otimes M, M)$ deviennent égales par changement
+de base $S'\rightarrow S$. Soit $Y$ le produit fibré de ces sections
+au-dessus du fibré vectoriel correspondant à $\Hhom$ $(M\times
+M\otimes M, M)$. Le schéma $Y$ s'identifie à un sous-schéma fermé de
+$X$, et l'associativité après $S'\rightarrow S$ est exprimé par la
+condition $Y'=X'$. Elle définit donc un sous-foncteur de $S$
+représentable par un sous-schéma fermé de $S$ d'après \hyperref[XIII.lem1.2]{1.2}. Pour la
+commutativité la condition est que deux sections de $\Hhom$
+$(M\otimes M,M)$ deviennent égales, ce qui définit encore un
+sous-foncteur de $S$ représentable par un sous-schéma fermé d'après
+1.2. Supposons enfin, ce qui est maintenant loisible, que la loi est
+déjà associative et commutative, et examinons la condition pour qu'il
+existe une section unité, qui sera alors unique. Le foncteur qui en
+$S'/S$ a comme valeur l'ensemble des sections de $M'$ est
+représentable par un fibré vectoriel, d'après \EGA III 7.7.6, et tout
+revient à représenter le sous-foncteur de ce dernier correspondant aux
+\emph{sections unités} (compte tenu de l'unicité qu'on vient de
+rappeler). Relativisant comme d'habitude, on peut supposer qu'une
+section $\epsilon$ de $M$ est déjà donnée, et montrer que le
+sous-foncteur de $S$ exprimant qu'elle devient une\pageoriginale
+section unité est représentable. Or, la condition que $\epsilon$ soit
+une unité est que le composé des morphismes évidents $M'\rightarrow
+M'\otimes M'\rightarrow M'$ soit l'identité, c'est-à-dire que deux
+sections déterminées de $\Hom$ $(M,M)$ deviennent égales. On conclut
+encore grâce à~\hyperref[XIII.lem1.2]{1.2}.
+
+Supposons enfin qu'une structure d'algèbre commutative unitaire soit
+donnée sur le module localement libre $M$. La condition d'être étale
+est ouverte dans $X$ (\SGA I 4.5), donc représentable sur $S$ par un
+sous-schéma (ouvert). Ceci achève la démonstration de \hyperref[XIII.lem1.4]{1.4}, donc de
+\hyperref[XIII.lem1.3]{1.3}.
+
+\setcounter{subsection}{4}
+\subsection{}\etiquette[1.5]{XIII.subsec1.5}
+Soit maintenant $Z/S$ l'objet qui représente le foncteur envisagé dans
+\hyperref[XIII.lem1.3]{1.3}, et examinons la condition sur $Z$ d'être lisse sur $S$ en un
+point $z$. En traduisant \SGA 1 III 3.1 en termes du foncteur $QE$, on
+trouve la condition suivante:
+
+Soient $B$ un anneau artinien local, $\Mm=rB$, $J$ un idéal de
+$B$ tel que $J\Mm=0$, $S'=\Spec B$, $S''=\Spec B/J$ et
+$S'\rightarrow S$ un morphisme. On utilise des notations évidentes
+pour les effets des changements de bases $S'\rightarrow S$ et
+$S''\rightarrow S$.
+
+\begin{itemize}
+\item[$(\ast)$] Pour chaque quotient $A''$ de $E''$ muni d'une
+structure d'algèbre étale sur $\Oo_{X''}$, correspondant à un
+$S$-morphisme $S''\rightarrow Z$ d'image $z$, il existe un quotient
+$A'$ de $E'$, muni d'une structure d'algèbre étale sur $\Oo_{X'}$,
+qui l'induise.
+\end{itemize}
+
+Or puisque $X'$ et $X''$ ont même espace sous-jacent, une algèbre $A'$
+qui induit $A''$ est déjà déterminée à isomorphisme unique près (\SGA
+I 8.3). On\pageoriginale peut donc exprimer la condition
+$({\ast}{\ast})$ ainsi:
+
+\begin{itemize}
+\item[$({\ast}{\ast})$] Soit $A'$ une algèbre étale sur $\Oo_{X'}$,
+et $A''$ l'algèbre induite de $A'$ sur $X''$. Chaque homomorphisme
+surjectif
+$$
+E''\xrightarrow{\varphi''}A''
+$$
+correspondant à un morphisme $S''\rightarrow Z$ d'image $z$, se relève
+en un homomorphisme (nécessairement surjectif en vertu du lemme de
+Nakayama)
+$$
+E'\xrightarrow{\varphi'}A'{\quoi}.
+$$
+\end{itemize}
+
+De la suite exacte
+$$
+0\longrightarrow J\longrightarrow B\longrightarrow B/J\longrightarrow
+0
+$$
+on déduit une suite exacte de faisceaux sur $X'$:
+$$
+0\longrightarrow J\otimes \Hhom(E',A')\longrightarrow
+\Hhom(E',A')\longrightarrow \Hhom(E'', A'')\longrightarrow
+0{\quoi}.
+$$
+L'obstruction au relèvement de $\varphi''$ se trouve dans $H^1$
+$(X',J\otimes \Hhom(E',A'))$. Soit $S_{\circ}=\Spec
+B/\Mm$. Puisque $J\Mm=0$, on a
+$$
+J\otimes \Hhom(E',A')\simeq J\otimes
+\Hhom(E_{\circ},A_{\circ}){\quoi},
+$$
+et il est clair que
+$$
+H^1(X',J\otimes \Hhom(E_{\circ},A_{\circ}))\simeq J\otimes
+H^1(X_{\circ},\Hhom(E_{\circ},A_{\circ})){\quoi}.
+$$
+Tenant compte du fait que la cohomologie commute à l'extension des
+corps de base, on trouve le
+
+\begin{enonce*}{Corollaire 1.6}\etiquette[1.6]{XIII.cor1.6}
+Soient $Z/S$ le schéma qui représente le foncteur de $1.3$,
+$X_Z=\fprod{X}{Z}{S}$, et $A_Z$ l'Algèbre étale quotient
+(« générale ») de $E_Z$. Alors $Z/S$ est lisse en tout point $z_{\circ}$ tel que
+$$
+H^1(X_{\circ},\Hhom(E_{\circ},A_{\circ}))=0{\quoi},
+$$
+où\pageoriginale l'indice zéro désigne la restriction à la fibre
+$X_{\circ}$ de $X_Z/Z$ au point $z_{\circ}$.
+\end{enonce*}
+
+Nous pouvons maintenant achever la démonstration du théorème \hyperref[XIII.prop1.1]{1.1}: avec
+les notations du théorème, soit $Y_{\circ}/X_{\circ}$ un revêtement
+étale, donné par un faisceau d'Algèbres $A_{\circ}$, étale sur
+$\Oo_{X_{\circ}}$. Pour $n$ assez grand, $A_{\circ}(n)$ est engendré
+par ses sections (\EGA III 2.2.1). On a donc une surjection
+$$
+\Oo^N_{X_{\circ}}\longrightarrow A_{\circ}(n)\longrightarrow
+0{\quoi},
+$$
+d'où une surjection
+$$
+O^N_{X_{\circ}}(-n)=E_{\circ}\longrightarrow A_{\circ}\longrightarrow
+0{\quoi}.
+$$
+Choisissons $n$ assez grand pour qu'on ait aussi
+\begin{equation*}
+H^1(X_{\circ},\Hhom(E_{\circ}, A_{\circ}))=0{\quoi},\tag{$+$}
+\end{equation*}
+ce qui est possible en vertu de (\EGA III 2.2.1), puisque
+$$
+\Hhom(E_{\circ},A_{\circ})=[\Hhom(\Oo^N_{X_{\circ}},A_{\circ})](n)=
+[A_{\circ}(n)]^N{\quoi}.
+$$
+Posons $E=O^N_X(-n)$, et soit $Z/S$ le schéma qui représente le
+foncteur envisagé dans \hyperref[XIII.lem1.3]{1.3}. Le quotient $A_{\circ}$ de $E_{\circ}$
+correspond à un point $z_{\circ}\in Z$ de la fibre fermée de $Z/S$,
+rationnel sur $k(s)$, et d'après \hyperref[XIII.subsec1.5]{1.5} et $(+)$, $Z/S$ est lisse au
+point $z_{\circ}$. Or puisque $S$ est le spectre d'un anneau
+\emph{hensélien} et $Z/S$ est lisse au point
+$z_{\circ}$ de la fibre fermée, on peut trouver une section de $Z/S$ passant par $z_{\circ}$: c'est par exemple
+immédiat à partir de la définition originale (\SGA II 1.1) de la
+lissité. Il s'ensuit que $A_{\circ}$ est induit par une Algèbre $A$
+étale sur $X$ (quotient de $E$), ce qui achève la démonstration de
+\hyperref[XIII.prop1.1]{1.1}.
+
+\section{Le cas de dimension relative $≤ 1$}\etiquette[2]{XIII.sec2}\pageoriginale 
+
+L'assertion est la suivante:
+
+\begin{enonce*}{Proposition 2.1}\etiquette[2.1]{XIII.prop2.1}
+Avec les notations de \rm{\hyperrefext[XII][XII.thm5.9]{5.9}} bis, le foncteur
+$\Et(X)\rightarrow \Et(X_{\circ})$ est une équivalence de catégories
+si $S$ est noethérien strictement local, et $f$ est projectif et de
+dimension $\leq 1$.
+
+D'après {\rm \hyperrefext[XII][XII.lem8.5]{8.5}}, cela achèvera la démonstration de {\rm
+  \hyperrefext[XII][XII.thm5.1]{5.1} 
+(ii)}, qui généralise à la fois \hyperref[XIII.prop1.1]{1.1} et \hyperref[XIII.prop2.1]{2.1}.
+\end{enonce*}
+
+\begin{enonce*}{Lemme 2.2}\etiquette[2.2]{XIII.lem2.2}
+Soit $S$ le spectre d'un anneau local noethérien $A$, et soit $X/S$
+projectif, de dimension relative $\leq n$. Il existe un $S$-schéma
+projectif et plat $Z/S$ de dimension relative $\leq n$ et une
+immersion fermée $X\hookrightarrow Z$ au-dessus de $S$.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. Soit $X\rightarrow \PP^N_S$ un plongement
+projectif au-dessus de $S$, et soit $J\subset A[x_{\circ},\ldots,x_N]$
+l'idéal homogène qui définit $X$. Soient $k=A/rA$, $S_{\circ}=\Spec
+k$, $X_{\circ}=X\otimes_S k$. Alors $X_{\circ}$ est défini par l'idéal
+homogène $J_{\circ}=\Iim(J\rightarrow k[X_{\circ},\ldots,X_N])$. Comme
+$\dim X_{\circ}\leq n$, il est bien connu qu'il existe des éléments
+$f^{\circ}_1,\ldots,f^{\circ}_{N-n}$ de $J_{\circ}$ qui définissent un
+sous-schéma $Z_{\circ}$ de $\PP^N_k$ de dimension $n$. Soient
+$f_i$ $(0 \leq i\leq N-n)$ des éléments de $J$ qui relèvent les
+$f^{\circ}_i$, et soit $Z$ le sous-schéma de $\PP^N_{\bar{S}}$
+défini par $f_1,\ldots,f_{\nu}$. En vertu de \EGA IV 11.3, $Z$ est plat
+au-dessus de $S$, d'autre part en vertu de \EGA IV 13.1.5 il est de
+dimension relative $\dim Z_{\circ}=n$. Cela achève de prouver \hyperref[XIII.lem2.2]{2.2}.
+
+\noindent
+\emph{Démonstration de} \hyperref[XIII.prop2.1]{2.1}. Soit $X/S$ projectif de dimension
+relative $\leq 1$, avec $S$ noethérien strictement local. Nous pouvons
+supposer $X$ (donc $X_{\circ}$) connexe. Soit $X\rightarrow Z$ une
+immersion fermée au-dessus de $S$ avec $Z$ projectif, plat et de
+dimension $\leq 1$, \cf \hyperref[XIII.lem2.2]{2.2}. Soit $s_{\circ}$ le point fermé de
+$S$. On a un diagramme correspondant\pageoriginale de schémas
+$$
+\xymatrix@C=2.5cm@R=1.25cm{
+\Et(Z)  \ar[r] \ar[d]^{a}& \Et(X) \ar[d]^{b}                  \\
+\Et(Z_0)  \ar[r]^{c} & \Et(X_{0}).
+}
+$$
+On veut démontrer que $b$ est une équivalence. D'après \hyperrefext[XII][XII.lem5.8]{5.8}, $b$
+est pleinement fidèle, et il reste à démontrer qu'il est
+essentiellement surjectif. Or $a$ est essentiellement surjectif d'après
+\hyperref[XIII.prop1.1]{1.1}, et il suffit donc de démontrer que $c$ est essentiellement
+surjectif. On est ainsi réduit (laissant tomber le ${}_{\circ}$) à la
+proposition suivante:
+
+\begin{enonce*}{Proposition 2.3}\etiquette[2.3]{XIII.prop2.3}
+Soient $k$ un corps séparablement clos, $Z$ un $k$-schéma, localement
+de type fini et de dimension $\leq 1$, et $X\hookrightarrow Z$ un
+sous-schéma fermé connexe. Alors tout revêtement étale de $X$ est
+induit par un revêtement étale de $Z$.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. On peut supposer $Z$ et $X$ de dimension
+\hyperref[XIII.sec1]{1}, le 
+cas où $X$ est de dimension nulle étant triviale grâce à l'hypothèse
+faite sur $k$. Alors $Z=X\cup Y$, où $Y$ est le sous-schéma fermé
+adhérence de $Z-X$. Soit $V=X\cap Y$ le schéma intersection, qui est
+un schéma discret \ie localement artinien. Le morphisme $X\amalg
+Y\rightarrow Z$ est fini et surjectif, donc un morphisme de descente
+strict pour la catégorie des revêtements étales (\SGA \hyperrefext[IX][IX.cor4.7]{4.7}). On a
+évidemment
+\begin{equation*}
+\fprod{(X\amalg Y)}{(X\amalg Y)}{Z}=X\amalg Y\amalg V^{(1)}\amalg
+V^{(2)}\quad (V^{(i)}=V){\quoi},\tag{$\ast$}
+\end{equation*}
+où $\pr_i$ envoie $V^{(i)}$ dans le composant $X$ de $X\amalg Y$ et
+$V^{(j)}$ dans le composant $Y$ pour $j\neq i$.
+
+Soit $X'/X$ un revêtement étale de degré $n$, et soit $Y''/Y$ un
+revêtement de degré $n$ (par exemple le revêtement \emph{trivial} de
+degré $n$), de sorte que $X'\amalg Y''$ est\pageoriginale un
+revêtement de $X\amalg Y$ de degré $n$. Il suffit de trouver des
+données de descente pour ce revêtement et pour le morphisme $X\amalg
+Y\rightarrow Z$. En regardant $(\ast)$, on voit qu'une donnée de
+descente pour ce morphisme équivaut simplement à un isomorphisme
+$$
+\fprod{X'}{V}{X}=V'\xrightarrow{\sim} V''=\fprod{Y''}{V}{Y}{\quoi}.
+$$
+Puisque $k$ est séparablement clos, il en est de même de $k(z_i)$, et
+par suite chaque revêtement étale de $V$ est complètement décomposé,
+d'où $V'\simeq V''$, ce qui donne le résultat.
+
+\begin{enonce*}[remark]{Remarque 2.4}\etiquette[2.4]{XIII.rem2.4}
+On peut éviter le recours au délicat résultat de \SGA IX et à la
+théorie de la descente, par un argument direct, montrant que la
+catégorie des revêtements étales de $Z$ est équivalente à la catégorie
+des triples $(X',Y',\theta)$, où $X'(Y')$ est un revêtement étale de
+$X(Y)$ et $\theta$ un $V$-isomorphisme $\fprod{X'}{V}{X}\simeq
+\fprod{Y'}{V}{Y}$. Ce résultat, valable pour tout schéma $Z$ réunion
+de deux sous-schémas fermés $X$, $Y$, s'établit directement à l'aide
+du résultat analogue pour la détermination des Modules quasi-cohérents
+sur $X$ (lorsque $X=V(\mathfrak{J})$, $Y=V(\bar{K})$, $J\cap \bar{K}=0$).
+\end{enonce*}
+
+\footnotetext[1]{Figure aussi dans \EGA IV 21.9.11, 21.9.12 sous une
+forme légèrement plus générale; notamment il suffit dans \hyperref[XIII.cor3.2]{3.2} que $f$
+soit \emph{séparé} au lieu de propre.}
+\section{Un résultat auxiliaire sur le groupe de Picard ${}^{(*)}$}\etiquette[3]{XIII.sec3}
+
+\begin{enonce*}{Proposition 3.1}\etiquette[3.1]{XIII.prop3.1}
+Soient $X$ un schéma noethérien, $X_{\circ}$ un sous-schéma fermé de
+$X$ tel que {\rm a)} $\dim X_{\circ}\leq 1$, et {\rm b)} pour toute
+partie fermée connexe non-vide $Y$ de $X$, $Y_{\circ}=Y\cap X_{\circ}$
+est connexe non-vide.
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Soit\pageoriginale $Z_{\circ}$ la réunion des $\{\bar{x}\}\cap
+X_{\circ}$ pour $x\in \Ass \Oo_X$ tel que $\{\bar{x}\}\cap X_{\circ}$
+soit réduit à un point. Alors pour tout diviseur de Cartier
+$D_{\circ}$ sur $X_{\circ}$ tel que $\supp$ ($D_{\circ}$ ne rencontre
+pas $Z_{\circ}$, il existe un diviseur de Cartier $D$ sur $X$,
+induisant $D_{\circ}$ (et si $D_{\circ}\geq 0$, on peut prendre $D\geq
+0$).
+
+\item Supposons qu'il existe un ouvert affine $U_{\circ}$ de
+$X_{\circ}$ contenant l'ensemble fini $\Ass \Oo_{X_{\circ}}\cup
+Z_{\circ}$ (condition automatiquement satisfaite $X$ est noethérien et
+si $X_{\circ}$ admet un faisceau inversible ample). Alors
+l'homomorphisme $\Pic(X)\rightarrow \Pic(X_{\circ})$ est surjectif.
+\end{enumerate}
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}.
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Comme $\dim X_{\circ}\leq 1$, on voit tout de suite que tout
+diviseur de Cartier $D_{\circ}$ sur $X_{\circ}$ a un support discret,
+donc est la différence de deux diviseurs de Cartier positifs, de
+supports contenus dans celui de $D_{\circ}$. Cela nous ramène dans (i)
+au cas où $D_{\circ}$ est positif, donc où pour tout $x\in \Supp
+D_{\circ}$, $D_{\circ}$ est défini en $x$ par un élément non diviseur
+de zéro $f_x\in \rad$ ($\Oo_{X_{\circ}},x$). Alors $f_x$ est induit
+par une section $g_x$ de $\Oo_X$ sur un voisinage ouvert $U_x$ de
+$x$. Je dis qu'en prenant $U_x$ assez petit, $g_x$ est non diviseur de
+zéro dans $\Oo_{U_x}$, \ie, $V(g_x)\cap\Ass \Oo_{U_x}=∅$. En
+effet, il résulte de a) et b) que pour tout $x\in X$, et en
+particulier pour $z\in \Ass \Oo_X$, $\bar{z}\cap X_{\circ}$ est un
+fermé connexe de $X_{\circ}$ donc est, soit réduit à un seul point
+fermé, soit à une réunion connexe de composantes irréductibles de
+dimension 1 sur $X_{\circ}$. Comme $x\not\in Z_{\circ}$ il s'ensuit
+que dans le premier cas on a $x\not\in \bar{z}$. Mais pour $s\in \Ass
+\Oo_{X}$ du deuxième type, on ne peut pas avoir $x\in \bar{z}$ et
+$z\in V(g_x)$, puisqu'alors $g_x$ donc $f_x$ s'annulerait sur une des
+composantes irréductibles de $\bar{z}\cap \supp X_{\circ}$, qui est
+aussi une composante irréductible de $X_{\circ}$, ce qui est
+incompatible avec le fait que $f_x$ est non diviseur de zéro dans
+$\Oo_{X_{\circ},x}$. Donc quitte à restreindre $U_x$ on peut
+supposer\pageoriginale que $V(g_x)\cap \Ass \Oo_{U_x}=\phi$, \ie
+$g_x$ est non diviseur de zéro. Soit $Y_x$ l'adhérence de $V(g_x)$
+dans $X$, alors $Y_x\cap X_{\circ}\cap U_x\subset V(g_x)\cap
+X_{\circ}$ admet $x$ comme point isolé, donc il en est de même de
+$Y_x\cap X_{\circ}$, donc par la condition b) de la proposition, $Y_x$
+admet une composante connexe $Y'_x$ telle que $Y'_x\cap
+X_{\circ}=\{x\}$. De plus, on a $Y'_x\subset U_x$, car
+$T_x=Y'_n-Y'_x\cap U_x$ est un fermé de $X$ tel que $T_x\cap
+X_{\circ}=\phi$, donc $T_x=\phi$ en vertu de la condition b). Nous
+prenons maintenant le diviseur de Cartier $D'_x$ sur $X$ qui induit
+$Y'_x$ sur $U_x$, et induit zéro sur $X-Y'_x$, et poserons $D=\Sigma_x
+d'_x$, qui est un diviseur de Cartier positif sur $X$, induisant
+évidemment $D_{\circ}$ sur $X_{\circ}$.
+
+\item La conclusion résulte de (i) et du fait que tout module
+inversible $\LL_{\circ}$ sur $X_{\circ}$ est isomorphe au module
+défini par un diviseur de Cartier $D_{\circ}$ dont le support ne
+rencontre pas $Z_{\circ}$. Ce dernier fait signifie en effet que pour
+$\LL_{\circ}$ admet une section définie sur un ouvert $V_{\circ}$
+contenant $\Ass \Oo_{X_{\circ}}\cup Z_{\circ}$, cette section ne
+s'annulant en aucun point de ce dernier ensemble. Or il suffit de
+prouver cela en remplaçant $X_{\circ}$ par l'ouvert affine
+$U_{\circ}$, et dans ce cas cela est bien connu et provient du fait
+qu'un module inversible sur un schéma semi-local est isomorphe au
+faisceau structural. Enfin, on sait bien que si $X_{\circ}$ admet un
+faisceau ample, alors toute partie finie de $X_{\circ}$ est contenue
+dans un ouvert affine. Cela prouve (ii).
+\end{enumerate}
+
+On a le corollaire suivant, qui généralise \hyperrefext[XII][XII.prop8.6]{8.6} et qui achève la
+démonstration de \hyperrefext[XII][XII.thm5.1]{5.1} (iii):
+
+\begin{enonce*}{Corollaire 3.2}\etiquette[3.2]{XIII.cor3.2}
+Soit $S$ le spectre d'un anneau hensélien noethérien, et
+$f:X\rightarrow S$ un morphisme propre et de dimension relative $\leq
+1$. Alors pour tout sous-schéma fermé $X'_{\circ}$ de $X$ ayant même
+espace sous-jacent que la fibre fermée\pageoriginale $X_{\circ}$ de
+$X/S$, l'application canonique $\Pic(X)\rightarrow \Pic(X_{\circ})$
+est surjective.
+\end{enonce*}
+
+En effet, on applique la proposition à $(X,X'_{\circ})$, en notant que
+la condition a) est satisfaite par hypothèse, et b) en vertu de 
+\hyperrefext[XII][XII.cor5.7]{5.7}. Il reste à vérifier l'hypothèse faite dans ii)
+d'existence d'un 
+$U_{\circ}$, ce qui résulte du fait que $X'_{\circ}$ est
+nécessairement projectif (comme toute courbe propre sur un corps).
+
+\begin{enonce*}[remark]{Remarque}
+Le lecteur qui ne voudra pas admettre ou reconstituer le fait que les
+courbes propres sur un corps sont projectives, se bornera à utiliser
+le corollaire en supposant déjà que $f$ est projectif, ce qui suffit
+pour l'application que nous avions en vue ici. Signalons d'autre part
+que, admettant la projectivité des courbes algébriques propres sur un
+corps, on conclut que sous les conditions de \hyperref[XIII.cor3.2]{3.2} $X$ est
+nécessairement projectif sur $S$, comme on voit en choisissant un
+$\xi_{\circ}\in \Pic$ $(X_{\circ})$ ample et le relevant en un $\xi\in
+\Pic(X)$, et appliquant \EGA III 4.7.1.
+\end{enonce*}
+
+\begin{thebibliography}{99}
+\bibitem{SGA4-13:TDTE} Grothendieck A., Technique de descente et
+théorèmes d'existence en Géométrie Algébrique, in Fondements de la
+Géométrie Algébrique (Extraits du Sém. Bourbaki 1957-62) Secrétariat
+mathématique, 11, rue Pierre Curie.
+\end{thebibliography}
+
+\ifx\danslelivre\undefined
+\end{document}
+\fi

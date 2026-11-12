@@ -1,0 +1,260 @@
+"""Write findings_151_155.json and check that every fix's old occurs exactly once on its page."""
+import json
+import pathlib
+
+BASE = pathlib.Path(r"C:\Users\user\Documents\sga_scan_check_20261105\run_7II")
+OUT = BASE / "findings_151_155.json"
+
+F = []
+
+# ---------------------------------------------------------------- page 151
+F.append(dict(
+    page=151,
+    where="left figure ('δ, δ' et ε'), the 2-frame in the upper right annulus: label of the leftward arrow",
+    scan="the label 1 stands below the leftward arrow (the label 2 stands to the right of the upward arrow)",
+    tex="\\arrow[l, \"1\"'] (swap mark: label above the arrow)",
+    kind="other",
+    confidence="medium",
+    fix={"old": "\\arrow[l, \"1\"']", "new": "\\arrow[l, \"1\"]"},
+    note="Placement only. Compiled: with the swap mark ' tikz-cd sets the label of a leftward arrow above it; "
+         "without it the label sits below, as printed and as the file's own STRUCTURE comment says "
+         "('labelled \"1\" set BELOW it').",
+))
+F.append(dict(
+    page=151,
+    where="left figure ('δ, δ' et ε'): the three short arrows on the middle curve",
+    scan="seven drawn arrows: besides the two ← at the radial segment and the 2-frame, three short outward arrows "
+         "on the middle curve: ↖ at its upper left, ↙ at its lower left with δ just above it, ↘ at its lower right",
+    tex="the stand-in tikzcd has four arrows (two [l] arrows and the 2-frame); arrows (e), (f), (g) of its own "
+        "STRUCTURE comment are not set",
+    kind="missing",
+    confidence="medium",
+    fix={"old": "\\delta & {} & {} & {} & {} &\n{} \\end{tikzcd}",
+         "new": "{} & {} & {} & {} & {} & {} \\\\\n"
+                "{} & {} \\arrow[ul] & {} & {} & {} & {} \\\\\n"
+                "{} & \\delta & {} & {} & {} & {} \\\\\n"
+                "{} & {} \\arrow[dl] & {} & {} & {} \\arrow[dr] & {} \\\\\n"
+                "{} & {} & {} & {} & {} &\n{} \\end{tikzcd}"},
+    note="The comment says the tikzcd 'carries only the drawing's text labels and its drawn arrows' and describes "
+         "all seven arrows correctly, but (e), (f), (g) are missing from the tikzcd. The edit adds them in new rows "
+         "below the existing ones (δ moves one column to the right, above the ↙); compiled. The freehand picture "
+         "itself still has to be drawn from the comment.",
+))
+
+# ---------------------------------------------------------------- page 152
+F.append(dict(
+    page=152,
+    where="diagram (4.1.1), the two downward arrows p : X̄ → X and p' : X̄* → X*",
+    scan="both labels p and p' stand to the right of their arrows",
+    tex="\\arrow[d, \"p\"'] ... \\arrow[d, \"p'\"'] (swap marks: labels on the left)",
+    kind="other",
+    confidence="medium",
+    fix={"old": "\\arrow[d, \"p\"'] & \\bar{X}^* \\arrow[l, hook, \"\\bar{j}\"'] \\arrow[d, \"p'\"']",
+         "new": "\\arrow[d, \"p\"] & \\bar{X}^* \\arrow[l, hook, \"\\bar{j}\"'] \\arrow[d, \"p'\"]"},
+    note="Placement only. Compiled: with the swap mark ' tikz-cd sets the label of a downward arrow on its left; "
+         "without it on the right, as printed and as the file's own STRUCTURE comment says "
+         "('printed to the RIGHT of the arrow').",
+))
+F.append(dict(
+    page=152,
+    where="4.1, after (4.1.1): 'le complexe de De Rham des faisceaux de formes différentielles holomorphes "
+          "sur Ω*_{X̄*}'",
+    scan="holomorphes sur Ω*_{X̄*} . C'est une résolution du faisceau constant ℂ",
+    tex="holomorphes sur $\\Omega^*_{\\bar{X}^*}$",
+    kind="misprint_in_print",
+    confidence="medium",
+    fix=None,
+    corrected="holomorphes sur $\\bar{X}^*$",
+    note="The forms are holomorphic on the manifold X̄* ('Son revêtement X̄* est donc lisse'); Ω*_{X̄*} is the "
+         "complex being named, repeated by a slip. The TeX keeps the printed reading.",
+))
+F.append(dict(
+    page=152,
+    where="proof of Proposition 4.2, first sentence: 'Il est clair que 4.1.1 est un quasi-isomorphisme en tout "
+          "point de X̄* ⊂ X̄'",
+    scan="4.1.1 (checked at 2.5x)",
+    tex="Il est clair que 4.1.1 est",
+    kind="misprint_in_print",
+    confidence="medium",
+    fix=None,
+    corrected="Il est clair que 4.1.2 est",
+    note="Wrong reference: (4.1.1) is the diagram; the morphism j̄_* Ω*_{X̄*} → Rj̄_* ℂ that Proposition 4.2 "
+         "declares an isomorphism is (4.1.2). The TeX keeps the printed reading.",
+))
+F.append(dict(
+    page=152,
+    where="proof of 4.2, second paragraph: 'Pour V parcourant un système rondamental de x dans X'",
+    scan="rondamental: the first letter is a typed r (top at the r's x-height with the r's arm, no ascender), "
+         "in the IAS scan and in the independent DjVu witness (compared at 8x with the r of 'parcourant' and the "
+         "f of 'fondamental' on the next line)",
+    tex="un système rondamental de",
+    kind="misprint_in_print",
+    confidence="medium",
+    fix=None,
+    corrected="un système fondamental de",
+    note="Typing slip r for f; the f's crossbar sits lower than this glyph's top, so it is not an f that lost its "
+         "ascender. The TeX keeps the printed reading.",
+))
+F.append(dict(
+    page=152,
+    where="same paragraph: 'les p^{-1}(V) pour V un voisinage de Stein de x dans X forment un système "
+          "fondamental de voisinages de X .'",
+    scan="capital X (checked at 3x)",
+    tex="de voisinages de $X$ .",
+    kind="misprint_in_print",
+    confidence="medium",
+    fix=None,
+    corrected="de voisinages de $x$ .",
+    note="Neighbourhoods of the point x, as in the sentence before ('système fondamental de voisinages de x "
+         "dans X̄'). The TeX keeps the printed reading.",
+))
+
+# ---------------------------------------------------------------- page 153
+F.append(dict(
+    page=153,
+    where="first line: 'Pour tout faisceau cohérent 𝔉 sur X̄*'",
+    scan="typed Fraktur F (3-shaped body under a wavy top bar, with a crossbar), the glyph of the sheaf letters "
+         "of Exposé XIII, p. 87 (checked at 6x)",
+    tex="$\\mathcal{F}$",
+    kind="font",
+    confidence="high",
+    fix={"old": "$\\mathcal{F}$ sur", "new": "$\\mathfrak{F}$ sur"},
+    note="The F of 4.5 ('F un faisceau de f°O_{D*}-modules') is a plain roman F and stays.",
+))
+F.append(dict(
+    page=153,
+    where="display H^q(j̄^{-1} p^{-1}(V), 𝔉) = 0 pour q > 0",
+    scan="the same typed Fraktur F (checked at 6x)",
+    tex="\\mathcal{F})",
+    kind="font",
+    confidence="high",
+    fix={"old": "\\mathcal{F})", "new": "\\mathfrak{F})"},
+    note="Same letter as in the line above.",
+))
+F.append(dict(
+    page=153,
+    where="Variante 4.4, '(un système local complexe).'",
+    scan="the underline runs from the u of 'un' to the last e of 'complexe'; neither parenthesis is underlined "
+         "(checked at 4x)",
+    tex="\\underline{(un système local complexe)}",
+    kind="underline",
+    confidence="high",
+    fix={"old": "\\underline{(un système local complexe)}", "new": "(\\underline{un système local complexe})"},
+    note="The TeX underlines both parentheses.",
+))
+F.append(dict(
+    page=153,
+    where="Variante 4.4, '(lemme de Poincaré) induit un quasi-isomorphisme'",
+    scan="the underline starts under the l of 'lemme': the opening parenthesis is not underlined; the closing one "
+         "is (the rule runs on under ') induit') (checked at 4x)",
+    tex="\\underline{(lemme de Poincaré) induit un quasi-isomorphisme}",
+    kind="underline",
+    confidence="high",
+    fix={"old": "\\underline{(lemme de Poincaré)", "new": "(\\underline{lemme de Poincaré)"},
+    note="Only the opening parenthesis moves out of the underline.",
+))
+F.append(dict(
+    page=153,
+    where="4.5, first sentence: 'son image réciproque sur X̄* = X* ×_{D*} D* .'",
+    scan="the last factor D* has no tilde (checked at 3x; the DjVu witness agrees), while D̃* carries its typed "
+         "tilde four lines below ('On suppose choisie sur D̃*') and on p. 152",
+    tex="\\bar{X}^* = X^* \\times_{D^*} D^*",
+    kind="misprint_in_print",
+    confidence="medium",
+    fix=None,
+    corrected="\\bar{X}^* = X^* \\times_{D^*} \\tilde{D}^*",
+    note="X̄* is the pull-back of the universal cover D̃* of D* (p. 152: 'Son revêtement X̄*'); X* ×_{D*} D* "
+         "would be X* itself. The TeX keeps the printed reading.",
+))
+F.append(dict(
+    page=153,
+    where="4.5, last paragraph: 'engendre un espace vectoriel V(F) de dimension finie sur ℂ'",
+    scan="V(F) with a capital F (checked at 3x)",
+    tex="$V(F)$",
+    kind="misprint_in_print",
+    confidence="medium",
+    fix=None,
+    corrected="$V(f)$",
+    note="The space spanned by the transforms of the section f; p. 154 ('de T agissant sur V(f)') and p. 155 "
+         "('le ℂ[X]-module V(f)') write V(f), and F is the sheaf. The TeX keeps the printed reading.",
+))
+
+# ---------------------------------------------------------------- page 154
+F.append(dict(
+    page=154,
+    where="'(le logarithme d'un autmorphisme est une dérivation).'",
+    scan="autmorphisme (checked at 4x)",
+    tex="d'un autmorphisme",
+    kind="misprint_in_print",
+    confidence="high",
+    fix=None,
+    corrected="d'un automorphisme",
+    note="Typing slip (an o left out). The TeX keeps the printed reading.",
+))
+F.append(dict(
+    page=154,
+    where="heading 'Examples 4.6.'",
+    scan="Examples, with an a, underlined (checked at 4x)",
+    tex="\\underline{Examples}",
+    kind="misprint_in_print",
+    confidence="medium",
+    fix=None,
+    corrected="\\underline{Exemples}",
+    note="English spelling in the French text. The TeX keeps the printed reading.",
+))
+F.append(dict(
+    page=154,
+    where="Examples 4.6, third formula: N((log z)^k/k!) = (log z)^{k-1}/(k-1)!",
+    scan="N(log z)^k) over k!: the fraction bar runs under (log z)^k, so the left member has one opening and two "
+         "closing parentheses (checked at 5x; the DjVu witness agrees)",
+    tex="N\\left(\\frac{(\\log z)^k}{k!}\\right)",
+    kind="misprint_in_print",
+    confidence="high",
+    fix={"old": "N\\left(\\frac{(\\log z)^k}{k!}\\right)", "new": "N\\frac{(\\log z)^k}{k!})"},
+    corrected="N\\left(\\frac{(\\log z)^k}{k!}\\right)",
+    note="The opening parenthesis after N is missing in the print; the TeX silently supplies it. The fix restores "
+         "the printed reading in the diplomatic layer.",
+))
+F.append(dict(
+    page=154,
+    where="'Pour f (resp. g ) une section de détermination finie unipotente de H^0(D*, 𝒪) "
+          "(resp. H^0(X̄*, F̄) ), on a'",
+    scan="H°(D*, 𝒪): D* without a tilde (checked at 4x; the DjVu witness agrees)",
+    tex="$H^0(D^*, \\mathcal{O})$",
+    kind="misprint_in_print",
+    confidence="low",
+    fix=None,
+    corrected="$H^0(\\tilde{D}^*, \\mathcal{O})$",
+    note="For X = D*, F = 𝒪 the sections of finite determination live on X̄* = D̃* (4.5; the examples "
+         "z^α(log z)^k of 4.6); on D* itself T acts trivially. Low: the author may mean the pair (X, F) = (D*, 𝒪) "
+         "of 4.5. The TeX keeps the printed reading.",
+))
+
+OUT.write_text(json.dumps(F, ensure_ascii=False, indent=1), encoding="utf-8")
+
+# ---------------------------------------------------------------- checks
+ok = True
+for x in F:
+    t = (BASE / "b151_155" / f"page_{x['page']}.tex").read_text(encoding="utf-8")
+    fx = x.get("fix")
+    if fx:
+        n = t.count(fx["old"])
+        if n != 1 or "%%%%%%%%%%" in fx["old"] or "%%%%%%%%%%" in fx["new"]:
+            ok = False
+            print("FIX PROBLEM", x["page"], repr(fx["old"]), n)
+    if x["kind"] == "misprint_in_print":
+        n = t.count(x["tex"])
+        if n != 1:
+            print("note: misprint tex string occurs", n, "times on page", x["page"], repr(x["tex"]))
+        if "corrected" not in x:
+            ok = False
+            print("MISSING corrected", x["page"])
+    elif "corrected" in x:
+        ok = False
+        print("corrected on non-misprint", x["page"])
+counts = {}
+for x in F:
+    c = counts.setdefault(x["page"], [0, 0])
+    c[1 if x["kind"] == "misprint_in_print" else 0] += 1
+print("all fixes unique:", ok)
+print(counts)

@@ -1,0 +1,145 @@
+{
+  "findings": [
+    {
+      "page": 272,
+      "where": "Exercice 6.8, 1), foncteur canonique ; convention également présente en 6.7 et 6.10–6.11",
+      "scan": "\\underrightarrow{\\mathrm{Lim}}_{\\Ee^{\\circ}} \\Gg \\to \\varinjlim_{\\Ee^{\\circ}} g",
+      "tex": "\\varinjlim_{\\Ee^{\\circ}} \\Gg \\to \\varinjlim_{\\Ee^{\\circ}} g",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$\\varinjlim_{\\Ee^{\\circ}} \\Gg \\to\n  \\varinjlim_{\\Ee^{\\circ}} g$.",
+        "new": "$\\mathop{\\underrightarrow{\\mathrm{Lim}}}_{\\Ee^{\\circ}} \\Gg \\to\n  \\varinjlim_{\\Ee^{\\circ}} g$."
+      },
+      "note": "Le print distingue Lim, pour la limite de catégories fibrées, de lim, pour la limite ordinaire. Ce contraste est explicite ici et à la fin de 6.11. Le TeX efface cette distinction. Convention signalée une seule fois ; l'édition proposée est représentative."
+    },
+    {
+      "page": 272,
+      "where": "Exercice 6.8, 2), première phrase",
+      "scan": "On suppose",
+      "tex": "On supposons",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "On supposons",
+        "new": "On suppose"
+      },
+      "note": "Le scan porte bien « On suppose »."
+    },
+    {
+      "page": 272,
+      "where": "Proposition 6.9, domaine du foncteur représentable",
+      "scan": "(Cat) \\to (Ens)",
+      "tex": "$(\\Cat) \\to (\\Ens)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\Cat)^{\\circ} \\to (\\Ens)",
+      "note": "Le foncteur C ↦ Hom(C × E, F) est contravariant en C : l'opposé manque dans le print. Le TeX conserve cet oubli."
+    },
+    {
+      "page": 272,
+      "where": "Preuve de 6.9, dernière application, premier Hom",
+      "scan": "\\Hom_{\\Cart/\\Ee}(C\\Ee,\\Ff)",
+      "tex": "\\Hom_{\\Cart/\\Ee} (C \\Ee, \\Ff)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hom_{\\Cart/\\Ee}(C \\times \\Ee, \\Ff)",
+      "note": "Le signe de produit manque entre C et E, alors qu'il figure dans l'énoncé et au début de la preuve. Le TeX conserve la coquille."
+    },
+    {
+      "page": 273,
+      "where": "6.10, première formule",
+      "scan": "\\Hhom_{\\Cart/}(\\Ee,\\Ff)",
+      "tex": "\\Hhom_{\\Cart/} (\\Ee, \\Ff)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hhom_{\\Cart/\\Ee}(\\Ee,\\Ff)",
+      "note": "La base E manque après la barre oblique dans l'indice, contrairement à la notation de 6.9. Le TeX conserve cette omission du print."
+    },
+    {
+      "page": 273,
+      "where": "6.11, diagramme, flèche verticale étiquetée f*",
+      "scan": "Flèche descendante de \\Ff_{\\xi} vers \\Ff_{\\eta}, étiquetée f^{\\ast}",
+      "tex": "\\Ff_{\\xi} \\ar[d]^{f^\\ast}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f^{\\ast}:\\Ff_{\\eta}\\to\\Ff_{\\xi}",
+      "note": "Pour f : ξ → η, le changement de base va de F_η vers F_ξ, comme l'indique le texte précédent. La flèche verticale devrait monter. Le TeX reproduit le sens erroné du print."
+    },
+    {
+      "page": 273,
+      "where": "6.11, après « sens des pseudo-foncteurs »",
+      "scan": "\\xi \\mapsto \\Ff_{\\xi}",
+      "tex": "\\xi \\to \\Ff_{\\xi}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\xi \\to \\Ff_{\\xi}",
+        "new": "\\xi \\mapsto \\Ff_{\\xi}"
+      },
+      "note": "Le print porte une flèche d'affectation, avec barre initiale."
+    },
+    {
+      "page": 273,
+      "where": "Numéro du paragraphe commençant « Il revient au même »",
+      "scan": "7.2.1.",
+      "tex": "\\etiquette[7.1.2]{VI.subsubsec7.1.2}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "7.1.2",
+      "note": "Les deux derniers chiffres sont intervertis dans le print. Le TeX corrige silencieusement le numéro."
+    },
+    {
+      "page": 274,
+      "where": "7.1.3, phrase suivant (7.1.3.1), référence à la propriété de cocycle",
+      "scan": "6.2.2.2",
+      "tex": "6.2.2.2",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "6.1.2.2",
+      "note": "La propriété visée est 6.1.2.2, déjà citée au début du paragraphe. Le TeX conserve la mauvaise référence imprimée."
+    },
+    {
+      "page": 274,
+      "where": "7.1.4, « soit l'image inverse pour la structure… »",
+      "scan": "structure fibrée",
+      "tex": "structure fibrés",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "structure fibrés",
+        "new": "structure fibrée"
+      },
+      "note": "Le scan porte le féminin « fibrée »."
+    },
+    {
+      "page": 275,
+      "where": "7.1.6, phrase précédant (7.1.6.1)",
+      "scan": "f^{\\ast}:G\\to F",
+      "tex": "$f^{\\ast} : G \\to F$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "m^{\\ast}:G\\to F",
+      "note": "Le I-foncteur considéré est m*, défini en 7.1.5, et non un changement de base f*. Le TeX conserve le f* erroné du print."
+    },
+    {
+      "page": 275,
+      "where": "(7.1.6.2), facteur situé entre m_i*(c_{f,g}) et f*(b_g)",
+      "scan": "b_f^{\\ast}",
+      "tex": "b^{\\ast}_f",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "b_f g^{\\ast}",
+      "note": "La compatibilité des transitions de (7.1.6.1) exige b_f composé à droite avec g*, et non un b_f* non défini. Le TeX conserve la coquille imprimée."
+    }
+  ],
+  "coordinator": "271 : 0/0 ; 272 : 2/2 ; 273 : 1/3 ; 274 : 1/1 ; 275 : 0/2 (normal/misprint).\nConvention Lim/lim : appliquer la distinction signalée à tous les Lim imprimés des pp. 272–273, avec flèche inférieure droite ou gauche, sans modifier les lim ordinaires ; trois exemples : p. 272, 6.7(1) ; p. 272, 6.8(1) ; p. 273, contraste final de 6.11."
+}

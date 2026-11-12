@@ -1,0 +1,171 @@
+[
+ {
+  "page": 46,
+  "where": "1.17, display 'f(k + v ε) = k + (u(v) + D d k)'",
+  "scan": "f(k + v ε) = k + (u(v) + D d k) : nothing follows the closing parenthesis",
+  "tex": "f(k + v\\,\\varepsilon) = k + (u(v) + D\\,d\\,k)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "f(k + v\\,\\varepsilon) = k + (u(v) + D\\,d\\,k)\\,\\varepsilon",
+  "note": "The ε of the image is missing: elements of D_W(K) are written k + wε (p. 45), and the composition law (uu', D + uD') two lines below follows from f(k + vε) = k + (u(v) + D dk)ε. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 47,
+  "where": "Lemma 1.18 (2), display '[A((k, D))] : [A(D_K'(K))] → [A(D_K'(K))] is x ⟼ x + γ(D)'",
+  "scan": "[A((k, D))] : a clear typewriter k (the 1 of F(1, D) further down has its flag)",
+  "tex": "[\\underline{A}((k, D))]",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "[\\underline{A}((1, D))]",
+  "note": "The map acting as x ⟼ x + γ(D) is the one induced by (1, D): cf. 'F(D) = F(1, D)' and the general formula x ⟼ u(x) + γ(D) in (3); k is the key next to l, the typewriter's 1. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 47,
+  "where": "Proof of 1.18, display of the maps i and p, 'i ; V ↪ V ⊕ K'^n'",
+  "scan": "i ; V : a semicolon after i (p is followed by a colon)",
+  "tex": "i \\ ; \\ V",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "i : V",
+  "note": "Shift slip on the ;/: key. The TeX keeps the printed semicolon. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 47,
+  "where": "Proof of 1.18, same display, 'p : V ⊕ K'^n ⟶ K^n ,'",
+  "scan": "target K^n without a prime (the source V ⊕ K'^n has it)",
+  "tex": "\\longrightarrow K^{n}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\longrightarrow K'^{\\,n}",
+  "note": "p is the projection of V ⊕ K'^n onto the summand K'^n (the right-hand column of the diagram on p. 48 is K'^n ⊗ A). The same prime is missing in 'x : K^n → V' on p. 48. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 48,
+  "where": "First line, 'the following diagramm is commutative'",
+  "scan": "diagramm",
+  "tex": "diagramm",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "diagram",
+  "note": "Spelling slip. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 48,
+  "where": "Diagram after 'the following diagramm is commutative', left vertical arrow V ⊗ A → V ⊗ A",
+  "scan": "label F(D) typed to the right of the downward arrow",
+  "tex": "\\arrow[d, \"F(D)\"']",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "\\arrow[d, \"F(D)\"']",
+   "new": "\\arrow[d, \"F(D)\"]"
+  },
+  "note": "The swap mark ' sets the label to the left of a downward arrow; without it tikz-cd sets it to the right, as printed (the file's own comment block also records the label to the RIGHT of the shaft)."
+ },
+ {
+  "page": 48,
+  "where": "Same diagram, middle vertical arrow (V ⊕ K'^n) ⊗ A → (V ⊕ K'^n) ⊗ A",
+  "scan": "label F(i,D) typed to the right of the downward arrow",
+  "tex": "\\arrow[d, \"{F(i,D)}\"']",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "\\arrow[d, \"{F(i,D)}\"']",
+   "new": "\\arrow[d, \"{F(i,D)}\"]"
+  },
+  "note": "As for F(D): the swap mark puts the label on the left; the print has it on the right."
+ },
+ {
+  "page": 48,
+  "where": "Same diagram, label of the middle vertical arrow 'F(i,D)'",
+  "scan": "F(i,D) with a comma; the formula four lines below has F(i D)",
+  "tex": "{F(i,D)}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "{F(i\\,D)}",
+  "note": "The middle vertical arrow is the endomorphism F(iD) = F(1, iD) of (V ⊕ K'^n) ⊗ A (an F(i,D) would be a map out of V ⊗ A); the text applies F(i D) to Σ e_i a_i below. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring and does not overlap the label-side edit."
+ },
+ {
+  "page": 48,
+  "where": "'Let x : K^n → V be a map'",
+  "scan": "x : K^n → V, K without a prime",
+  "tex": "x : K^{n} \\rightarrow V",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "x : K'^{\\,n} \\rightarrow V",
+  "note": "x is defined on the summand K'^n of V ⊕ K'^n (1_V + x is composed with i in the next sentence), as for the target of p on p. 47. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 48,
+  "where": "Display 'F(i D)(Σ e_i a_i) = Σ e_i a_i + a (a ∈ V ⊗ H) , then'",
+  "scan": "(a ∈ V ⊗ H)",
+  "tex": "(a \\in V \\otimes H)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(a \\in V \\otimes A)",
+  "note": "a lies in V ⊗ A = F(V): by the right-hand square of the diagram F(iD) does not change the K'^n ⊗ A component; no H is defined at this point (H is introduced after Theorem 1.20). The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 48,
+  "where": "Display after 'Hence,', third line 'u G(D) = F(u D) (for any u : V → W)'",
+  "scan": "u G(D) = F(u D)",
+  "tex": "&= F(u\\,D) &&",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "&= G(u\\,D) &&",
+  "note": "Applying (u ⊗ 1) ∘ F(D) = F(uD) ∘ (u ⊗ 1_A) (p. 47) to F(D)(y) = y + G(D) gives u G(D) = G(uD); F(uD) is a map, not an element. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 48,
+  "where": "Definition 1.19 (2), 'A formal versal object ξ in Â , with image (R, s)'",
+  "scan": "Â with its hat but no underline under the A (the Â of (1) and the two Hom_Â subscripts are underlined)",
+  "tex": "\\underline{in}  $\\widehat{A}$  , \\underline{with image}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\underline{in}  $\\widehat{\\underline{A}}$  , \\underline{with image}",
+  "note": "The category letter lost its underline. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 48,
+  "where": "Definition 1.19 (2), last line, 'i.e. φ_2-φ_2 = D s'",
+  "scan": "φ_2-φ_2 = D s : both indices are 2",
+  "tex": "\\varphi_{2}\\text{-}\\varphi_{2} = D\\,s",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\varphi_{2}\\text{-}\\varphi_{1} = D\\,s",
+  "note": "(1, D)(φ_1) = φ_2 means φ_2 = φ_1 + D s, i.e. φ_2 - φ_1 = D s. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 48,
+  "where": "Theorem 1.20, display 'dim_K' ([A(D_K'(K))]) < ∞ ,'",
+  "scan": "[A(D_K'(K))] with no underline under the A",
+  "tex": "\\dim_{K'}\\ ([A(D_{K'}(K))])",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\dim_{K'}\\ ([\\underline{A}(D_{K'}(K))])",
+  "note": "The cofibered groupoid A is underlined everywhere else, including twice in the statement of 1.20 itself. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 49,
+  "where": "Section 2, first paragraph, 'out of ξ alone..One has to know'",
+  "scan": "alone..One : a full stop, then a second smaller dot (a speck between them), no space before One",
+  "tex": "alone..One",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "alone. One",
+  "note": "Doubled full stop. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ }
+]

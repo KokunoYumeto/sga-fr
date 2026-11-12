@@ -1,0 +1,107 @@
+{
+  "findings": [
+    {
+      "page": 521,
+      "where": "Lemme 1.4.3, target of the isomorphism a_{n,m}",
+      "scan": "\\Sigma(n)+\\Sigma(m)",
+      "tex": "\\Sigma(\\underline{n})+\\Sigma(\\underline{m})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Sigma(\\underline{n})+\\Sigma(\\underline{m})",
+      "note": "The print omits the mathematical multi-index underlines on both target arguments, although it uses them in the subscripts and in the source of this isomorphism. The TeX silently supplies them."
+    },
+    {
+      "page": 522,
+      "where": "1.4.6, introduction to the two compatibility diagrams",
+      "scan": "rendant commutatif les diagrammes",
+      "tex": "rendant commutatif les diagrammes",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "rendant commutatifs les diagrammes",
+      "note": "The adjective should agree with the plural « les diagrammes ». The TeX keeps the printed misprint."
+    },
+    {
+      "page": 523,
+      "where": "1.4.8, base of the fibre product defining the domain of F",
+      "scan": "\\fprod{\\Pp_{1}}{\\Pp_{2}}{\\Ss}",
+      "tex": "\\fprod{\\Pp_{1}}{\\Pp_{2}}{S}",
+      "kind": "font",
+      "confidence": "high",
+      "fix": {
+        "old": "\\fprod{\\Pp_{1}}{\\Pp_{2}}{S}",
+        "new": "\\fprod{\\Pp_{1}}{\\Pp_{2}}{\\Ss}"
+      },
+      "note": "The printed subscript is the script site letter used in the surrounding sentence, not an ordinary S."
+    },
+    {
+      "page": 523,
+      "where": "1.4.8(a), final reference",
+      "scan": "les compatibilités de 1.4.3.",
+      "tex": "\\hyperref[XVIII.subsubsec1.4.6]{1.4.6}.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "1.4.6",
+      "note": "The intended reference is to the compatibility conditions for additive functors in 1.4.6. The TeX silently corrects the printed 1.4.3; its reference line is supplied in the p.524 cut."
+    },
+    {
+      "page": 524,
+      "where": "Opening boundary of the supplied TeX cut",
+      "scan": "The page begins with 1.4.8(b), « Pour U ... ».",
+      "tex": "  \\hyperref[XVIII.subsubsec1.4.6]{1.4.6}.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The first TeX line, source line 2458, belongs to the end of p.523: the print there ends with « compatibilités de 1.4.3. ». Page 524 begins with item (b), « Pour ». This neighbouring-page line is not covered by the cut's comment."
+    },
+    {
+      "page": 524,
+      "where": "1.4.8(b), upper-right expanded vertex of the diagram",
+      "scan": "F(x_1,x_2)+F(y_1,x_2)+F(y_1,x_2)+F(y_1,y_2)",
+      "tex": "F(x_1,x_2) + F(y_1,x_2) +F(x_1,y_2)+F(y_1,y_2)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "F(x_1,x_2)+F(y_1,x_2)+F(x_1,y_2)+F(y_1,y_2)",
+      "note": "The print repeats F(y_1,x_2) as the third summand instead of F(x_1,y_2). Both scans confirm this. The TeX silently corrects it."
+    },
+    {
+      "page": 524,
+      "where": "1.4.8(b), bottom vertex of the diagram",
+      "scan": "F(y_1,x_2)+F(y_1,y_2)",
+      "tex": "f(y_1,x_2)+f(y_1,y_2)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "f(y_1,x_2)+f(y_1,y_2)",
+        "new": "F(y_1,x_2)+F(y_1,y_2)"
+      },
+      "note": "Both final summands have capital F in the print."
+    },
+    {
+      "page": 524,
+      "where": "1.4.9, final sentence",
+      "scan": "l'image directe u_{\\ast} est un 2-foncteur.",
+      "tex": "L'image\ndirecte $u_{\\ast}$ est un $2$-foncteur.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "L'image directe $u_{\\ast}$ est un $2$-foncteur.",
+      "note": "The print starts this new sentence with a lowercase l. The TeX silently supplies the initial capital."
+    },
+    {
+      "page": 525,
+      "where": "1.4.10, naming the generated Picard stack",
+      "scan": "munis de ces données, le couple",
+      "tex": "munis de ces données, le couple",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "muni de ces données, le couple",
+      "note": "The participle should agree with the singular « le couple ». The TeX keeps the printed plural."
+    }
+  ],
+  "coordinator": "521: 0/1; 522: 0/1; 523: 1/1; 524: 2/2; 525: 0/1 (normal/misprint).\nCut boundary: source line 2458 belongs to p.523; p.524 begins with 1.4.8(b), « Pour »."
+}

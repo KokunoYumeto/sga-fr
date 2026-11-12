@@ -1,0 +1,143 @@
+[
+ {
+  "page": "196",
+  "where": "(FI.2), « et si card(I) < d »",
+  "scan": "card(I) < d  (plain d, not the double-underlined cardinal)",
+  "tex": "$\\card(I)<d$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\card(I)<\\sheaf{\\sheaf{d}}$",
+  "note": "The print has a plain d here instead of the cardinal \\underline{\\underline{d}}. The TeX keeps the printed reading."
+ },
+ {
+  "page": "197",
+  "where": "first line and throughout pp. 197-199: the smallest element of I",
+  "scan": "ε (Greek epsilon)",
+  "tex": "$\\mathcal{E}$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "Nous\\pageoriginale noterons $\\mathcal{E}$ le",
+   "new": "Nous\\pageoriginale noterons $\\varepsilon$ le"
+  },
+  "note": "The print uses a Greek ε, not a script E. The same substitution recurs in every B_ε, s(ε) and [ε, α(λ)] on pp. 197-199."
+ },
+ {
+  "page": "197",
+  "where": "end of the induction proving (4)",
+  "scan": "Σ_{β∈I'} oard(B_β) < c",
+  "tex": "\\Sigma_{\\beta\\in\nI'}\\card(B_{\\beta})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\card(B_{\\beta})",
+  "note": "The print has the typo « oard ». The TeX silently corrects it."
+ },
+ {
+  "page": "198",
+  "where": "first line of the page's TeX",
+  "scan": "« Ceci démontre (4). » ends p. 197; p. 198 begins « Montrons maintenant qu'on a »",
+  "tex": "(4).\n\nMontrons\\pageoriginale",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The « (4). » that closes p. 197 sits in p. 198's cut. Page 198 really begins at « Montrons maintenant »."
+ },
+ {
+  "page": "198",
+  "where": "proof of (5), case α = ε",
+  "scan": "d'où X ⊂ A_{n+1} par (2)",
+  "tex": "d'où $X\\subset A_{n+1}$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$x\\subset A_{n+1}$",
+  "note": "The print has a capital X for the small x. The TeX keeps the printed reading."
+ },
+ {
+  "page": "198",
+  "where": "(U.I), first sentence",
+  "scan": "Il s'agit de montrer qu'on y ∈ U.",
+  "tex": "qu'on a $y\\in U$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "qu'on a $y\\in U$",
+  "note": "The print omits « a ». The TeX silently corrects it."
+ },
+ {
+  "page": "199",
+  "where": "(U.III), « La passage à un élément α »",
+  "scan": "La passage",
+  "tex": "Le passage",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Le passage",
+  "note": "The print has « La passage ». The TeX silently corrects it."
+ },
+ {
+  "page": "199",
+  "where": "(U.IV), displayed formula",
+  "scan": "I = ∪_{λ α K} [ε, α(λ)]",
+  "tex": "I=\\bigcup_{\\lambda%%\n\\in K}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\bigcup_{\\lambda\\in K}",
+  "note": "The index of the union is printed with α instead of ∈. The TeX silently corrects it."
+ },
+ {
+  "page": "199",
+  "where": "(U.IV), « card([ε, α(λ)]) < c »",
+  "scan": "card([ ε , α(λ)]) < c",
+  "tex": "\\card([\\mathcal{E},\\alpha(\\lambda)]<",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\card([\\mathcal{E},\\alpha(\\lambda)]<",
+   "new": "\\card([\\mathcal{E},\\alpha(\\lambda)])<"
+  },
+  "note": "The TeX lacks the closing parenthesis that the print has."
+ },
+ {
+  "page": "199",
+  "where": "(U.IV), « On a donc x_λ ⊂ B_β »",
+  "scan": "x_λ ⊂ B_β",
+  "tex": "$x_{\\lambda}\\in B_{\\beta}$ d'après",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "On a donc\n$x_{\\lambda}\\in B_{\\beta}$",
+   "new": "On a donc\n$x_{\\lambda}\\subset B_{\\beta}$"
+  },
+  "note": "The print has an inclusion here; the TeX repeats the ∈ of the preceding sentence."
+ },
+ {
+  "page": "200",
+  "where": "Définition 4",
+  "scan": "On dit qu'un ensemble x",
+  "tex": "On dit qu'on ensemble",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "qu'on ensemble",
+   "new": "qu'un ensemble"
+  },
+  "note": "The print reads « qu'un »; the TeX has « qu'on »."
+ },
+ {
+  "page": "200",
+  "where": "Définition 4",
+  "scan": "si tous les composants de x",
+  "tex": "si tout les composants",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "si tout les composants",
+   "new": "si tous les composants"
+  },
+  "note": "The print reads « tous »; the TeX has « tout »."
+ }
+]

@@ -1,0 +1,103 @@
+{
+  "findings": [
+    {
+      "page": 206,
+      "where": "2.4.7, première phrase",
+      "scan": "cohérent (resp. quasi-séparé d'un topos E",
+      "tex": "cohérent (\\resp quasi-séparé d'un\ntopos $E$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "cohérent (\\resp quasi-séparé) d'un topos $E$",
+      "note": "La parenthèse fermante après « quasi-séparé » manque dans l'imprimé. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 206,
+      "where": "2.4.7, alinéa « D'autre part »",
+      "scan": "D'autre part, nous nous sommes abstenus",
+      "tex": "D'autre part, nous sommes abstenus",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "nous sommes abstenus",
+        "new": "nous nous sommes abstenus"
+      },
+      "note": "Le second « nous » de l'imprimé est omis."
+    },
+    {
+      "page": 206,
+      "where": "2.4.7, dernière phrase",
+      "scan": "les topos algébriques sont l'objet final est quasi-compact",
+      "tex": "les topos \\emph{algébriques} sont l'objet final est\nquasi-compact.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "les topos \\emph{algébriques} dont l'objet final est quasi-compact",
+      "note": "« sont » est une coquille pour « dont », conservée par le TeX."
+    },
+    {
+      "page": 207,
+      "where": "Premier alinéa, après « même algébrique »",
+      "scan": "Cette condition est vérifiée",
+      "tex": "Cette conditions est vérifiée",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Cette conditions",
+        "new": "Cette condition"
+      },
+      "note": "L'imprimé porte « condition » au singulier."
+    },
+    {
+      "page": 207,
+      "where": "Démonstration de 2.5, deuxième phrase",
+      "scan": "La nécessité dans le cas non respé",
+      "tex": "La nécessité dans la cas non respé",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "dans la cas non respé",
+        "new": "dans le cas non respé"
+      },
+      "note": "L'article imprimé est « le », non « la »."
+    },
+    {
+      "page": 208,
+      "where": "Corollaire 2.6, « Pour que f soit… »",
+      "scan": "Pour que $f$ soit quasi-séparé",
+      "tex": "Pour que $f$ soit quasi-sépare",
+      "kind": "accent",
+      "confidence": "high",
+      "fix": {
+        "old": "soit quasi-sépare",
+        "new": "soit quasi-séparé"
+      },
+      "note": "L'accent aigu final de « quasi-séparé » manque dans le TeX."
+    },
+    {
+      "page": 209,
+      "where": "Démonstration de 2.8, définition des morphismes f_i",
+      "scan": "f_i : X_i = X \\times_Y Y_i \\to Y_i",
+      "tex": "f_i : X_i = \\fprod{X}{X_i}{Y} \\to Y_i",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\fprod{X}{X_i}{Y}",
+        "new": "\\fprod{X}{Y_i}{Y}"
+      },
+      "note": "Le deuxième facteur du produit fibré est Y_i dans l'imprimé, non X_i."
+    },
+    {
+      "page": 210,
+      "where": "Démonstration de 2.9, premier alinéa",
+      "scan": "formée d'objet quasi-compacts",
+      "tex": "formée d'objet quasi-compacts",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "formée d'objets quasi-compacts",
+      "note": "Le singulier fautif « objet » est une coquille de l'imprimé, conservée par le TeX."
+    }
+  ],
+  "coordinator": "Comptes (normal/misprint) : 206 : 1/2 ; 207 : 2/0 ; 208 : 1/0 ; 209 : 1/0 ; 210 : 0/1."
+}

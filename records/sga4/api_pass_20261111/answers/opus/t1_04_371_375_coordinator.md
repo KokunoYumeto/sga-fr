@@ -1,0 +1,1 @@
+371: 0/1; 372: 1/1; 373: 0/1; 374: 0/0; 375: 0/1. Convention: the print's underlined G for the pro-group in 5.8.4 is set as script 𝒢 (𝒢=(G_i), 𝒢\rightarrow G_{i_\circ}); it occurs only on p. 374, so there are no three examples. It is noted only, not reported as an error.

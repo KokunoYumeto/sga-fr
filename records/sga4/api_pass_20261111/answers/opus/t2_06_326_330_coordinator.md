@@ -1,0 +1,1 @@
+Counts (normal/misprint): p326 0/2, p327 0/1, p328 0/0, p329 2/0, p330 1/0. Edits to apply together: on p329, if Φ is adopted, change both \phi (in « Soit alors $\phi : I » and in « $\phi^{\circ} ») to \Phi.

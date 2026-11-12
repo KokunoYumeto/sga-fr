@@ -1,0 +1,134 @@
+{
+  "findings": [
+    {
+      "page": 86,
+      "where": "Après la proposition 8.6.3, première phrase",
+      "scan": "a été mis",
+      "tex": "a\nété mis",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "a été mise",
+      "note": "Accord fautif avec « assertion ». Le TeX conserve « mis »."
+    },
+    {
+      "page": 87,
+      "where": "Proposition 8.6.4 b)",
+      "scan": "soit isomorphe à un facteur direct",
+      "tex": "soit isomorphe à facteur direct",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "isomorphe à facteur direct",
+        "new": "isomorphe à un facteur direct"
+      },
+      "note": "Le TeX omet « un »."
+    },
+    {
+      "page": 87,
+      "where": "Démonstration de 8.6.4 b), première phrase",
+      "scan": "On peut supposer déjà $g$ donc $\\Ind(f)$ pleinement fidèle.",
+      "tex": "On peut supposer déjà $g$ donc $\\Ind(f)$ pleinement\nfidèle.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "On peut supposer déjà $f$ donc $\\Ind(f)$ pleinement fidèle.",
+      "note": "La lettre doit être f, le foncteur considéré, et non g. Le TeX conserve la coquille."
+    },
+    {
+      "page": 87,
+      "where": "Démonstration de 8.6.4 b), condition de surjectivité essentielle",
+      "scan": "pour ce foncteur soit essentiellement surjectif",
+      "tex": "pour ce foncteur soit essentiellement\nsurjectif",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "pour que ce foncteur soit essentiellement surjectif",
+      "note": "Il manque « que » après « pour » dans l'imprimé. Le TeX conserve cette omission."
+    },
+    {
+      "page": 88,
+      "where": "Corollaire 8.6.5, début",
+      "scan": "$\\Ind(E)$",
+      "tex": "$\\Ind(E)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\Ind(C)$",
+      "note": "Les notations et la démonstration portent sur C. Le TeX conserve le E imprimé."
+    },
+    {
+      "page": 88,
+      "where": "Démonstration de 8.6.5, système inductif indexé par les entiers",
+      "scan": "X\\xrightarrow{p}X\\xrightarrow{p}X\\longrightarrow\\ldots",
+      "tex": "X\\xrightarrow{P}X\\xrightarrow{P}X\\longrightarrow\\ldots",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "X\\xrightarrow{P}X\\xrightarrow{P}X",
+        "new": "X\\xrightarrow{p}X\\xrightarrow{p}X"
+      },
+      "note": "Les deux flèches portent le projecteur p minuscule, non P."
+    },
+    {
+      "page": 88,
+      "where": "Démonstration de 8.6.5, flèche non identique de la catégorie P",
+      "scan": "$\\pi$ telle que $\\pi^2=\\pi$",
+      "tex": "$\\Pi$ telle que $\\Pi^2=\\Pi$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$\\Pi$ telle que $\\Pi^2=\\Pi$",
+        "new": "$\\pi$ telle que $\\pi^2=\\pi$"
+      },
+      "note": "L'imprimé emploie pi minuscule aux trois endroits."
+    },
+    {
+      "page": 88,
+      "where": "8.7.1, phrase précédant (8.7.1.2)",
+      "scan": "et que dans le cas",
+      "tex": "et que dans le cas",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "et que dans ce cas",
+      "note": "Il s'agit du cas où les conditions équivalentes précédentes sont satisfaites : lire « ce cas ». Le TeX conserve « le cas »."
+    },
+    {
+      "page": 88,
+      "where": "8.7.1, fin de la phrase précédant (8.7.1.2)",
+      "scan": "dudit afjoint à gauche",
+      "tex": "dudit adjoint à\ngauche:",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "dudit adjoint à gauche",
+      "note": "L'imprimé porte « afjoint ». Le TeX corrige silencieusement cette coquille."
+    },
+    {
+      "page": 89,
+      "where": "8.7.1.7, début",
+      "scan": "De la construction précédente de $\\varinjlim_C$",
+      "tex": "De la construction précédente du $\\varinjlim_C$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "construction précédente du $\\varinjlim_C$",
+        "new": "construction précédente de $\\varinjlim_C$"
+      },
+      "note": "L'imprimé porte « de », non « du »."
+    },
+    {
+      "page": 89,
+      "where": "8.7.1.7, dernière ligne, domaine de la variable X",
+      "scan": "$X\\in \\ob \\Ind(C)'$",
+      "tex": "$X\\in \\ob \\Ind(C)'$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$X\\in \\ob C$",
+      "note": "Pour que c(X) dans (8.7.1.8) soit défini, X doit être un objet de C. Le TeX conserve le domaine erroné de l'imprimé."
+    }
+  ],
+  "coordinator": "86: 0/1; 87: 1/2; 88: 2/3; 89: 1/1; 90: 0/0 (normal/misprint)."
+}

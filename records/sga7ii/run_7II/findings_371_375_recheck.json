@@ -1,0 +1,152 @@
+[
+ {
+  "page": 371,
+  "where": "first paragraph, 'On suppose donc que p > 0'",
+  "scan": "On suppose donc que p > 0 ;",
+  "tex": "On suppose donc que $p > 0$ ;",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "$p > 1$",
+  "note": "p is the characteristic exponent (Théorème 1.3, p. 370) and the case p = 1 has just been settled, so the remaining case is p > 1; the parallel passage on p. 367 has 'Supposons p ≥ 2'. Possibly an author's slip rather than a typing error. The TeX keeps the printed reading."
+ },
+ {
+  "page": 372,
+  "where": "end of the first paragraph",
+  "scan": "et que X.H est non-spécial (1.5).",
+  "tex": "et que $X.H$ est non-spécial (1.5).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(1.1.5)",
+  "note": "Wrong reference number: Exposé XXI has no 1.5 (§1 runs 1.0 to 1.4, §2 starts on p. 377); the result used is Proposition 1.1.5 (p. 367: an intersection complète without F_q-rational points is non spéciale). The TeX keeps the printed reading."
+ },
+ {
+  "page": 372,
+  "where": "sentence after (1.3.12), U = P(H^0(X,O_X(d)))",
+  "scan": "U = ℙ(H^o(X,𝒪_X(d)). (two closing parentheses: the one opened at ℙ( is not closed)",
+  "tex": "$U = \\mathbb{P}(H^0(X,\\mathcal{O}_X(d)))$.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {"old": "\\mathcal{O}_X(d)))$", "new": "\\mathcal{O}_X(d))$"},
+  "corrected": "\\mathcal{O}_X(d)))$",
+  "note": "The TeX silently supplies the third closing parenthesis; the fix restores the printed reading. (1.3.1) on p. 370 prints the same unclosed P(H^0(X,O_X(d)) and the TeX keeps it there."
+ },
+ {
+  "page": 373,
+  "where": "sentence after (1.3.13)",
+  "scan": "Ces copstructions s'insèrent (third letter: closed bowl with a descender, read as p)",
+  "tex": "Ces copstructions s'insèrent",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "constructions",
+  "note": "Typing error kept by the TeX. The third letter has a p's closed bowl and descender, but the descender is shorter than a normal p's and the bottom right shows an n-like foot; if it is an n typed over the p (a typist's correction), the TeX should read 'constructions' instead."
+ },
+ {
+  "page": 373,
+  "where": "(1.3.14), top right node",
+  "scan": "X.H_u = (X̃.H_T) ×_U T",
+  "tex": "X.H_u = (\\widetilde{X}.H_T) \\times_U T",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(\\widetilde{X}.H_T) \\times_T U",
+  "note": "Base and factor interchanged: the square is cartesian over T (X̃.H_T → T ← U), written like the next row U = T ×_S Sp(k); (X̃.H_T) ×_U T is not defined, since neither factor lies over U. The TeX keeps the printed reading, also three times in the STRUCTURE comment."
+ },
+ {
+  "page": 373,
+  "where": "(1.3.14), end of the diagram",
+  "scan": "a comma far right, level with the bottom row S ← Sp(k)",
+  "tex": "S & \\mathrm{Sp}(k) \\arrow[l]\n\\end{tikzcd} (no comma in the display; the comma opens the prose line after the STRUCTURE comment)",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {"old": "S & \\mathrm{Sp}(k) \\arrow[l]\n\\end{tikzcd}", "new": "S & \\mathrm{Sp}(k) \\arrow[l] & ,\n\\end{tikzcd}"},
+  "note": "The comma belongs to the display; as the TeX stands it renders at the start of the line after the diagram (', et nous avons ...'). Set in a third cell of the bottom row, as for (2.1.6.3) on p. 260. Apply together with the next two findings."
+ },
+ {
+  "page": 373,
+  "where": "prose line after (1.3.14)",
+  "scan": "et nous avons encore que le 𝒪_T-module (the comma stands at the end of the diagram, not before 'et')",
+  "tex": ", et nous avons encore que le $\\mathcal{O}_T$-module",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {"old": "\n, et nous avons encore", "new": "\net nous avons encore"},
+  "note": "Goes with the previous finding (the comma moves into the diagram); apply both or neither."
+ },
+ {
+  "page": 373,
+  "where": "STRUCTURE comment under (1.3.14), last sentence",
+  "scan": "comma printed at the right end of the diagram's bottom row",
+  "tex": "it is not a node and is carried at the head of the following prose block.",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {"old": "it is not a node and is carried at the head of the following prose block.", "new": "it is not a node of the diagram and is set in a third cell of the bottom row of the tikzcd block."},
+  "note": "Goes with the two previous findings; without it the comment describes the old placement."
+ },
+ {
+  "page": 373,
+  "where": "sentence after (1.3.15)",
+  "scan": "est localement libre, et se formation y commute",
+  "tex": "et se formation y commute",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "sa formation",
+  "note": "Typing error (se for sa); the parallel sentence on p. 367 prints 'et sa formation commute'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 374,
+  "where": "(1.4.2)",
+  "scan": "il y a des coordonnés projectives",
+  "tex": "il y a des coordonnés projectives",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "coordonnées",
+  "note": "Missing e; p. 371 prints 'coordonnées homogènes'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 375,
+  "where": "sentence before (1.4.6)",
+  "scan": "D'après la formule de la trace (XX, 3.2.1), on a",
+  "tex": "D'après la formule de la trace (XX, 3.2.1), on a",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(XXII, 3.2.1)",
+  "note": "Wrong exposé number: the congruence trace formula used here is XXII 3.2.1 (p. 410, Corollaire 3.2), as p. 368 says ('prouvée dans l'exposé suivant XXII, 3.2'); XX 3.2.1 (p. 353) is a statement on Lefschetz pencils. The TeX keeps the printed reading."
+ },
+ {
+  "page": 375,
+  "where": "(1.4.6), second line, sign of the last term",
+  "scan": "+(1)^{n-1}tr(𝔉_q sur(",
+  "tex": "+(1)^{n-1}\\mathrm{tr}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(-1)^{n-1}",
+  "note": "Minus sign missing: the term i = n-1 of the alternating sum carries (-1)^{n-1}. The TeX keeps the printed reading."
+ },
+ {
+  "page": 375,
+  "where": "(1.4.6), end of the second line",
+  "scan": "the line ends with the fraction H^{n-1}(X.H,𝒪_{X.H}) / H^{n-1}(X,𝒪_X); no full stop (the display's only full stop stands after the first line)",
+  "tex": "\\right)\\right) .",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {"old": " .\n\\end{aligned}", "new": "\n\\end{aligned}"},
+  "note": "Full stop added by the TeX. The fraction runs far into the right margin and nothing follows it on the scan, which is cropped to the ink with the same margin as the other pages. Listed before the next finding (adjacent, not overlapping)."
+ },
+ {
+  "page": 375,
+  "where": "(1.4.6), end of the second line, closing parentheses",
+  "scan": "tr(𝔉_q sur( H^{n-1}(X.H,𝒪_{X.H}) / H^{n-1}(X,𝒪_X): the parentheses opened at tr( and sur( are not closed",
+  "tex": "\\right)\\right)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {"old": "\\right)\\right)", "new": "\\right.\\right."},
+  "corrected": "\\right)\\right)",
+  "note": "The TeX silently closes both parentheses; the fix restores the printed reading with null delimiters, and the corrected edition keeps \\right)\\right)."
+ }
+]

@@ -1,0 +1,140 @@
+[
+ {
+  "page": 441,
+  "where": "1st paragraph: 'des fibres epéciales'",
+  "scan": "fibres epéciales",
+  "tex": "fibres epéciales",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "fibres spéciales",
+  "note": "Typing error in the print (e for s). The TeX keeps the printed reading."
+ },
+ {
+  "page": 441,
+  "where": "paragraph after (10.2.7): 'pour un schéma abélien A_K a réduction semi-stable variable'",
+  "scan": "A_K a réduction",
+  "tex": "$A_K$ a réduction",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "$A_K$ à réduction",
+  "note": "The print has 'a' without the grave accent. The TeX keeps the printed reading."
+ },
+ {
+  "page": 441,
+  "where": "(10.2.7), right-hand formula",
+  "scan": "φ^t(x,y) = φ^t(x,ξ_t(y))",
+  "tex": "\\varphi^t(x,y) = \\varphi^t(x,\\xi_t(y))",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\varphi^t(x,y) = u_\\ell(x,\\xi_t(y))",
+  "note": "The printed definition is circular. ξ_t(y) lies in M'_ℓ, so the right side must be the monodromy pairing (cf. (10.4.2): φ^t(x,y) = u(x,ξ_t(y))). The TeX keeps the printed reading."
+ },
+ {
+  "page": 442,
+  "where": "last paragraph: 'l'accouplement u_ℓ^{A_K} défini par A_{K'}'",
+  "scan": "u_ℓ^{A_K} défini par A_{K'}",
+  "tex": "$u_\\ell^{A_K}$ défini par $A_{K'}$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$u_\\ell^{A_{K'}}$ défini par $A_{K'}$",
+  "note": "The pairing defined by A_{K'} is u_ℓ^{A_{K'}}, as in the display that follows and in (10.3.5). The print drops the prime; the TeX keeps the printed reading."
+ },
+ {
+  "page": 443,
+  "where": "1st paragraph: 'montre inmédiatement'",
+  "scan": "inmédiatement",
+  "tex": "inmédiatement",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "immédiatement",
+  "note": "The TeX keeps the printed misspelling."
+ },
+ {
+  "page": 443,
+  "where": "1st paragraph: 'jointe à la formule (10.2.3)'",
+  "scan": "(10.2.3)",
+  "tex": "(10.2.3)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "(10.3.4)",
+  "note": "(10.2.3) is the homomorphism ξ_t defined by a polarisation (cf. 10.4 b)). The formula that yields (10.3.5) is g_*(x) = e(S'/S)x, i.e. (10.3.4). Wrong reference in the print; the TeX keeps it."
+ },
+ {
+  "page": 443,
+  "where": "commutative diagram: '.)' printed to the right of the bottom row",
+  "scan": "K'*/V'* --~--> Z        .)",
+  "tex": "'.)' alone on a line after \\end{center} and the STRUCTURE comment",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "& \\mathbb{Z}\n\\end{tikzcd}",
+   "new": "& \\mathbb{Z} & .)\n\\end{tikzcd}"
+  },
+  "note": "The '.)' that closes the parenthesis '(On notera que ...' ends the diagram's bottom row in the print. Apply together with the next edit, which removes the stray line."
+ },
+ {
+  "page": 443,
+  "where": "STRUCTURE comment after the diagram and the stray '.)' line",
+  "scan": ".) at the end of the diagram's bottom row",
+  "tex": "is carried in the following\n%   prose block.\n.)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "is carried in the following\n%   prose block.\n.)",
+   "new": "is set in a third\n%   column of the bottom row, after \\mathbb{Z}."
+  },
+  "note": "Companion of the previous edit. It deletes the '.)' line and corrects the comment."
+ },
+ {
+  "page": 444,
+  "where": "heading 'Théorème 10.4.'",
+  "scan": "Théorème (underlined) 10.4. (not underlined)",
+  "tex": "\\underline{Théorème 10.4.}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\underline{Théorème 10.4.}",
+   "new": "\\underline{Théorème} 10.4."
+  },
+  "note": "In the print only the word 'Théorème' is underlined."
+ },
+ {
+  "page": 444,
+  "where": "last paragraph: 'Quand à l'accouplement (10.4.1)'",
+  "scan": "Quand à",
+  "tex": "Quand à",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Quant à",
+  "note": "The TeX keeps the printed reading."
+ },
+ {
+  "page": 444,
+  "where": "last paragraph: 'on l'appelera encore'",
+  "scan": "appelera",
+  "tex": "appelera",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "appellera",
+  "note": "Spelling error in the print; the TeX keeps it."
+ },
+ {
+  "page": 445,
+  "where": "10.5.2: 'un schéma abélien Ā_K sur k à réduction semi-stable'",
+  "scan": "Ā_K sur k",
+  "tex": "$\\bar{A}_K$ sur $k$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\bar{A}_K$ sur $K$",
+  "note": "Ā_K is an abelian scheme over the fraction field K, not over the residue field k. The print has a lowercase k; the TeX keeps it."
+ }
+]

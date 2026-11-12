@@ -1,0 +1,58 @@
+\usepackage{polyglossia}
+%\usepackage[francais]{babel}
+\usepackage{fontspec}
+\usepackage[math-style=ISO,bold-style=upright,sans-style=upright]{unicode-math}
+%\usepackage[mathletters]{ucs}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage[unicode,colorlinks=true,linkcolor=blue,citecolor=Sepia,urlcolor=magenta]{hyperref}
+\setmainlanguage{french}
+\setmainfont[Ligatures=TeX]{Linux Libertine O}
+% variante possible : TeXGyrePagella ?
+\setmathfont{XITS Math}
+
+% maths
+\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{mathrsfs}
+%\usepackage{stmaryrd}
+%\usepackage{euscript}
+
+% couleurs
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% graphiques
+\usepackage{graphicx}
+\usepackage[all]{xy}
+% Xy-pic 3.8.9's PDF driver assumes that \fontdimen8\textfont3 is a
+% legacy TeX rule width.  Under LuaTeX with unicode-math/XITS Math it is
+% instead 6.62pt, which turns every arrow shaft into a thick black bar.
+% Override only xypdf's private cached width; do not alter the math font.
+\makeatletter
+\AtBeginDocument{%
+  \@ifundefined{xP@preclw}{}{%
+    \edef\xP@preclw{0.4pt}%
+    \edef\xP@lw{\xP@dim\xP@preclw}%
+    \PackageInfo{sga4-xypdf-compat}{Xy-pic PDF line width set to \xP@preclw}%
+  }%
+}
+\makeatother
+%\usepackage{tikz}
+%\usetikzlibrary{matrix,arrows,calc}
+%\tikzset{column sep=3em,row sep=2em,text height=1.5ex, text depth=0.25ex,>=angle 90}
+%\tikzset{description/.style={fill=white,inner sep=1pt}}
+
+% hyperliens, 'etiquettes
+\usepackage{xr-hyper}
+\usepackage{../fichiers-configuration-latex/smfthm}
+%\ifx\cacheretiquettes\undefined
+%\usepackage[inline]{showlabels} \else \fi % pour rendre visibles les 'etiquettes
+%\usepackage{../fichiers-configuration-latex/makeidx} % pour faire un index
+%\usepackage[pagebackref,unicode]{hyperref}  % pour voir o`u sont cit'ees les r'ef'erences
+\hypersetup{unicode,colorlinks=true,linkcolor=blue,citecolor=Sepia,urlcolor=magenta,
+  hypertexnames=false}
+%\hypersetup{breaklinks=true} %permet le retour `a la ligne dans les liens trop longs. Incompatible avec pdflatex
+%\renewcommand*{\backref}[1]{{\small [cit\'e page(s)~#1.]}}
+
+\usepackage{xspace}
+\usepackage{pifont} % pour expose XVII

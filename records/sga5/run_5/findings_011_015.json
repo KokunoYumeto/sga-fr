@@ -1,0 +1,218 @@
+[
+ {
+  "page": 11,
+  "where": "top of the page: Proposition 1.11 b), 'b) Si K satisfait aux conditions (i) et (ii) de (1.7)'",
+  "scan": "The page begins with 'b) Si K satisfait aux conditions (i) et (ii) de (1.7), on a l'implication'; p. 10 ends with the display of a).",
+  "tex": "'\\item[b)] Si $K$' (s5.tex line 496) is the last line of page_010.tex; the folio-11 marker (line 497) stands between 'Si $K$' and 'satisfait'.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 11 really begins at s5.tex line 496 '\\item[b)] Si $K$'. Exact fix: move the folio-11 marker line from line 497 to just before line 496 (python -I move_marker.py 5 11 \"\\item[b)] Si\" --before; simulated in memory on both layers: the anchor found is line 496). Text not moved; it agrees with the print."
+ },
+ {
+  "page": 11,
+  "where": "c), the display after 'On a en outre l'implication', its last words",
+  "scan": "'G satisfait / à (1.7. (ii).' with one closing parenthesis only; the display of b) at the top of the page prints 'à (1.7. (ii)).' with two.",
+  "tex": "G \\text{ satisfait à (1.7.(ii)).}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "G \\text{ satisfait à (1.7.(ii)).}",
+   "new": "G \\text{ satisfait à (1.7.(ii).}"
+  },
+  "corrected": "G \\text{ satisfait à (1.7.(ii)).}",
+  "note": "Unbalanced parenthesis of the print; the TeX silently corrects it, the fix restores the printed reading."
+ },
+ {
+  "page": 11,
+  "where": "proof of Proposition 1.11, its label",
+  "scan": "'Preuve : a) n'est autre que la formule d'adjonction chère à Cartan': 'Preuve' underlined, then ' :', the text running on; no end-of-proof sign at the end of the proof (p. 12).",
+  "tex": "\\begin{proof}[Preuve] (amsthm: italic 'Preuve.', and a square at the \\end{proof} on p. 12)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{proof}[Preuve]\n",
+   "new": "\\emph{Preuve} : "
+  },
+  "note": "The form the global pass gave to '\\emph{Preuve.}'. Apply together with the removal of '\\end{proof}' on p. 12 (LaTeX fails otherwise). Exposé I writes \\begin{proof}[Preuve] 16 times (s5.tex lines 478-1006; also \\begin{proof}[Démonstration] at line 959): one pass may be simpler. The later \\begin{prooftext}[Preuve] (from line 1087) also prints 'Preuve.': to check against the print there."
+ },
+ {
+  "page": 12,
+  "where": "top of the page: 'd) Prouvons par exemple l'implication réciproque de b)'",
+  "scan": "The page begins with 'd) Prouvons par exemple ...'; p. 11 ends with 'raisonnement analogue à b).'",
+  "tex": "'d)' (s5.tex line 520) is the last line of page_011.tex; the folio-12 marker (line 521) stands between 'd)' and 'Prouvons'.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 12 really begins at s5.tex line 520 'd)'. Exact fix: python -I move_marker.py 5 12 \"d)\" --before (marker to just before line 520; simulated on both layers). Text not moved."
+ },
+ {
+  "page": 12,
+  "where": "end of the proof of 1.11, after 'se démontre de manière analogue.'",
+  "scan": "No end-of-proof sign; 'Remarques 1.11.1' follows.",
+  "tex": "\\end{proof} (prints a square)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{proof}\n",
+   "new": ""
+  },
+  "note": "Apply together with the p. 11 label fix (\\begin{proof}[Preuve] -> \\emph{Preuve} : )."
+ },
+ {
+  "page": 12,
+  "where": "Proposition 1.12, first sentence: 'K ∈ ob D^+(Y)'",
+  "scan": "'K ∈ ob D^+(Y)' with no subscript, while the same sentence goes on 'posons K_X = R^!f(K_Y) ..., D_Y = D_{K_Y}'.",
+  "tex": "$K \\in \\ob \\D^{+}(Y)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "K_Y \\in \\ob \\D^{+}(Y)",
+  "note": "The TeX keeps the printed K. K_Y is not introduced otherwise; Corollaire 1.15 (p. 15) restates the setting as 'Soit K_Y ∈ ob D^+(Y), et posons, comme en 1.12, K_X = R^!f(K_Y)'."
+ },
+ {
+  "page": 13,
+  "where": "top of the page: 'Si en outre K_X et K_Y sont dualisants (1)'",
+  "scan": "The page begins with 'Si en outre K_X et K_Y sont dualisants (1), il existe, pour F ∈ ob D_c^b(X),'; p. 12 ends with display (i) of a).",
+  "tex": "'Si en' (s5.tex line 538) is the last line of page_012.tex; the folio-13 marker (line 539) stands between 'Si en' and 'outre'.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 13 really begins at s5.tex line 538 'Si en'. Exact fix: python -I move_marker.py 5 13 \"Si en\" --before (simulated on both layers). Text not moved."
+ },
+ {
+  "page": 13,
+  "where": "proof of Proposition 1.12, its label",
+  "scan": "'Preuve : a) (i) n'est autre que l'isomorphisme de dualité': 'Preuve' underlined, then ' :', the text running on; no end-of-proof sign at the end of the proof ('utilisant (1.9. b)).').",
+  "tex": "\\begin{proof}[Preuve] ... \\end{proof}",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{proof}[Preuve]\n",
+   "new": "\\emph{Preuve} : "
+  },
+  "note": "Apply together with the next finding (the \\end{proof} of the same proof)."
+ },
+ {
+  "page": 13,
+  "where": "end of the proof of 1.12, before 'Scholie'",
+  "scan": "No end-of-proof sign.",
+  "tex": "\\end{proof} (prints a square)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{proof}\n",
+   "new": ""
+  },
+  "note": "Apply together with the previous finding."
+ },
+ {
+  "page": 14,
+  "where": "top of the page: 'D_X et D_Y échangent les notions d'image directe'",
+  "scan": "The page begins with 'D_X et D_Y échangent ...'; the text of p. 13 ends with 'que les foncteurs dualisants' (the footnotes follow).",
+  "tex": "'$\\underline{D}_X$ et $\\underline{D}_Y$' ends s5.tex line 564, the last line of page_013.tex; the folio-14 marker (line 565) follows it.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 14 really begins at '$\\underline{D}_X$ et $\\underline{D}_Y$' at the end of s5.tex line 564. Exact fix: python -I move_marker.py 5 14 '$\\underline{D}_X$ et $\\underline{D}_Y$' --before (single quotes: the anchor contains $); the marker then splits line 564 after 'dualisants' (simulated on both layers)."
+ },
+ {
+  "page": 14,
+  "where": "proof of Corollaire 1.13, its label",
+  "scan": "'Preuve : Supposons (F,K_X) bidualisant.': 'Preuve' underlined, then ' :', the text running on; no end-of-proof sign at the end of the proof ('ce qui achève la démonstration.').",
+  "tex": "\\begin{proof}[Preuve] ... \\end{proof}",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{proof}[Preuve]\n",
+   "new": "\\emph{Preuve} : "
+  },
+  "note": "Apply together with the next finding."
+ },
+ {
+  "page": 14,
+  "where": "end of the proof of 1.13, before 'Lemme 1.14'",
+  "scan": "No end-of-proof sign.",
+  "tex": "\\end{proof} (prints a square)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{proof}\n",
+   "new": ""
+  },
+  "note": "Apply together with the previous finding."
+ },
+ {
+  "page": 15,
+  "where": "top of the page: Lemme 1.14 b)",
+  "scan": "The page begins with 'b) Soit F ∈ ob D(X).'; p. 14 ends with a), '... il faut et il suffit que f_*u le soit.'",
+  "tex": "'\\item[b)]' (s5.tex line 587) is the last line of page_014.tex; the folio-15 marker (line 588) follows it.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 15 really begins at s5.tex line 587 '\\item[b)]'. Exact fix: python -I move_marker.py 5 15 \"\\item[b)]\" --before (simulated on both layers). Text not moved."
+ },
+ {
+  "page": 15,
+  "where": "Lemme 1.14 b), end of the statement: 'il suffit que f_*F ∈ ob D_c(F)'",
+  "scan": "'f_*F ∈ ob D_c(F).': a clearly typed F inside the parentheses.",
+  "tex": "f_{*}F \\in \\ob \\D_c(Y)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "f_{*}F \\in \\ob \\D_c(Y)",
+   "new": "f_{*}F \\in \\ob \\D_c(F)"
+  },
+  "corrected": "f_{*}F \\in \\ob \\D_c(Y)",
+  "note": "f_*F is a complex on Y. The TeX silently corrects; the fix restores the printed reading."
+ },
+ {
+  "page": 15,
+  "where": "proof of 1.14 b), 'on a f_{i*}(F_i) -> (f_*F)|Y_i' (base change for a finite morphism)",
+  "scan": "A plain long arrow, with no tilde and no trace of one (the tildes of the isomorphism arrows on pp. 11-14 are crisp).",
+  "tex": "f_{i*}(F_i) \\xrightarrow{\\sim} (f_{*}F)|Y_i",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "f_{i*}(F_i) \\xrightarrow{\\sim}",
+   "new": "f_{i*}(F_i) \\to"
+  },
+  "note": "The base-change map is an isomorphism, but the print's plain arrow is not an error; the TeX added the tilde."
+ },
+ {
+  "page": 15,
+  "where": "proof of Lemme 1.14, its label",
+  "scan": "'Preuve : a) Le foncteur f_* étant exact': 'Preuve' underlined, then ' :', the text running on; no end-of-proof sign at the end of the proof ('d'où la conclusion voulue.').",
+  "tex": "\\begin{proof}[Preuve] ... \\end{proof}",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{proof}[Preuve]\n",
+   "new": "\\emph{Preuve} : "
+  },
+  "note": "Apply together with the next finding."
+ },
+ {
+  "page": 15,
+  "where": "end of the proof of 1.14, before 'Corollaire 1.15'",
+  "scan": "No end-of-proof sign.",
+  "tex": "\\end{proof} (prints a square)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{proof}\n",
+   "new": ""
+  },
+  "note": "Apply together with the previous finding."
+ },
+ {
+  "page": 15,
+  "where": "end of the page: the label of the proof of Corollaire 1.15 (folio-16 marker)",
+  "scan": "p. 15 ends with the statement of 1.15, '... K_X est dualisant.'; the proof's label 'Preuve' is on p. 16.",
+  "tex": "page_015.tex ends with '\\begin{proof}[' (s5.tex line 601); the folio-16 marker (line 602) splits the command, and 'Preuve]' (line 603) stands under page 16.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 16 really begins at s5.tex line 601 '\\begin{proof}['. Exact fix: python -I move_marker.py 5 16 \"\\begin{proof}[\" --before (simulated on both layers). After the move, '\\begin{proof}[' and 'Preuve]' are adjacent lines of page 16: rejoin them, or give that proof the label fix of this report (its \\end{proof} is line 605): page 16."
+ }
+]

@@ -1,0 +1,29 @@
+{
+  "findings": [
+    {
+      "page": 201,
+      "where": "Formule en tête de page",
+      "scan": "\\mathcal{B}'\\xrightarrow{\\sim}i_{\\ast}(\\mathcal{C})",
+      "tex": "\\mathcal{B}\\xrightarrow{\\sim}i_{\\ast}(\\mathcal{C})",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\mathcal{B}\\xrightarrow{\\sim}",
+        "new": "\\mathcal{B}'\\xrightarrow{\\sim}"
+      },
+      "note": "Le B souligné porte une prime dans le tirage; elle manque dans le TeX."
+    },
+    {
+      "page": 201,
+      "where": "Premier paragraphe, définition de \\mathcal{C}",
+      "scan": "\\Oo_{U'}-algèbres définissant U'",
+      "tex": "\\Oo_{U'}$-algèbres définissant $U'$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Oo_U",
+      "note": "Le tirage porte bien U' en indice, et le TeX conserve cette coquille. Le faisceau d'algèbres sur U qui définit le revêtement U' doit être une \\Oo_U-algèbre."
+    }
+  ],
+  "coordinator": "Comptes (normal/misprint) : 201 : 1/1 ; 202 : 0/0 ; 203 : 0/0 ; 204 : 0/0 ; 205 : 0/0."
+}

@@ -1,0 +1,81 @@
+[
+ {
+  "page": 568,
+  "where": "Diagramme (3.1.4.4), flèche horizontale supérieure d’adjonction",
+  "scan": "La flèche porte « adj. » sous le signe d’isomorphisme.",
+  "tex": "\\ar@{<->}[r]^-{\\sim}&",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\ar@{<->}[r]^-{\\sim}&",
+   "new": "\\ar@{<->}[r]^-{\\sim}_-{\\txt{\\rm adj.}}&"
+  },
+  "note": "L’étiquette d’adjonction manque sur la flèche supérieure."
+ },
+ {
+  "page": 568,
+  "where": "Diagramme (3.1.4.4), terme inférieur gauche",
+  "scan": "\\Hom(Rf_!K)[1],L)",
+  "tex": "\\Hom((Rf_!K)[1],L)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom((Rf_!K)[1],L)",
+  "note": "L’imprimé omet la parenthèse ouvrante interne devant Rf_!K. Le TeX la rétablit silencieusement."
+ },
+ {
+  "page": 568,
+  "where": "Diagramme (3.1.4.4), terme inférieur central",
+  "scan": "\\Hom((Rf_!K,L[-1]",
+  "tex": "\\Hom(Rf_!K,L[-1]",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom(Rf_!K,L[-1])",
+  "note": "L’imprimé présente une ouvrante surnuméraire et omet la fermante finale du Hom. Le TeX supprime l’ouvrante surnuméraire, mais conserve l’absence de fermeture."
+ },
+ {
+  "page": 568,
+  "where": "Phrase « Pour tout faisceau F », complexe précédant (3.1.4.5)",
+  "scan": "\\tau_{\\leq 2d}C^\\ast j_{!}F",
+  "tex": "\\tau_{\\leq 2d}C^\\ast_{\\ell}j_{!}F",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\tau_{\\leq 2d}C^\\ast_{\\ell}j_{!}F",
+  "note": "L’indice \\ell de la résolution flasque canonique modifiée manque dans l’imprimé. Le TeX le rétablit silencieusement."
+ },
+ {
+  "page": 569,
+  "where": "Remarque 3.1.4.9, première phrase",
+  "scan": "d’anneau",
+  "tex": "d'anneau",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "d'anneaux",
+  "note": "Il manque le x du pluriel dans « faisceau d’anneaux ». Le TeX conserve la coquille."
+ },
+ {
+  "page": 570,
+  "where": "Remarque 3.1.5, formule (3.1.5.1)",
+  "scan": "Rf^{!}:D(S,\\mathcal{A})\\longrightarrow D(X,\\mathcal{A})",
+  "tex": "Rf^{!}:D(S,\\mathcal{A})\\longrightarrow D(X,\\mathcal{A})",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Rf^{!}:D(S,\\mathcal{A})\\longrightarrow D(X,f^{\\ast}\\mathcal{A})",
+  "note": "Le coefficient sur X doit être f^{\\ast}\\mathcal{A}, comme dans les autres formules définissant ce foncteur. Le TeX conserve l’omission de f^{\\ast}."
+ },
+ {
+  "page": 570,
+  "where": "Remarque 3.1.5, dernière égalité après « et, par adjonction »",
+  "scan": "\\Hom_{K(X)}(K',L')",
+  "tex": "\\Hom_{K(X)}(K',L')",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom_{K(X)}(K',f^{!}_{\\bigdot}L')",
+  "note": "Le foncteur f^{!}_{\\bigdot} manque devant L' dans le dernier terme. Le TeX conserve cette omission de l’imprimé."
+ }
+]

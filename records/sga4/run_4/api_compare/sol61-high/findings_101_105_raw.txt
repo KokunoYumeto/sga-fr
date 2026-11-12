@@ -1,0 +1,97 @@
+{
+  "findings": [
+    {
+      "page": 101,
+      "where": "Démonstration de 8.8.2, avant (8.8.2.1)",
+      "scan": "\\underline{\\mathrm{Hom}}(C,J)",
+      "tex": "\\Hhom(C,J)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hhom(J,C)",
+      "note": "Les arguments sont intervertis dans l'imprimé : φ est un foncteur de J dans C. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 101,
+      "where": "Proposition 8.8.3 a), fin de la parenthèse",
+      "scan": "\\underline{\\mathrm{Hom}}(J,C)",
+      "tex": "\\Hom(J,C)",
+      "kind": "font",
+      "confidence": "high",
+      "fix": {
+        "old": "$\\Hom(J,C)$) est filtrante.",
+        "new": "$\\Hhom(J,C)$) est filtrante."
+      },
+      "note": "L'imprimé emploie le Hom souligné désignant la catégorie de foncteurs, comme au début de a), et non le Hom des ensembles de morphismes."
+    },
+    {
+      "page": 102,
+      "where": "Démonstration de 8.8.3, après l'homomorphisme défini argument par argument",
+      "scan": "Comme de dernier est cofinal",
+      "tex": "Comme ce dernier est cofinal",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Comme ce dernier est cofinal",
+      "note": "L'imprimé porte « de dernier ». Le TeX corrige silencieusement cette coquille."
+    },
+    {
+      "page": 103,
+      "where": "Lemme 8.8.3.4, après la formule définissant les f_j",
+      "scan": "une petite famille de foncteur cofinaux",
+      "tex": "une petite famille de foncteur cofinaux",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "une petite famille de foncteurs cofinaux",
+      "note": "Il manque le s de « foncteurs » dans l'imprimé. Le TeX conserve la coquille."
+    },
+    {
+      "page": 104,
+      "where": "Première phrase après le diagramme ouvrant la page",
+      "scan": "déduit du ind-objet",
+      "tex": "déduit\\pageoriginale de ind-objet",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "déduit de l'ind-objet",
+      "note": "L'imprimé porte la construction fautive « du ind-objet ». Le TeX la modifie en « de ind-objet », mais ne la corrige que partiellement : il manque encore l'article élidé."
+    },
+    {
+      "page": 104,
+      "where": "Intitulé de 8.8.4",
+      "scan": "Remarques 8.8.4.",
+      "tex": "Remarque 8.8.4",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "{Remarque 8.8.4}",
+        "new": "{Remarques 8.8.4}"
+      },
+      "note": "L'intitulé imprimé est au pluriel."
+    },
+    {
+      "page": 105,
+      "where": "Lemme 8.8.5.1, première phrase",
+      "scan": "deux sous-catégories pleine telles que",
+      "tex": "deux sous-catégories\npleine telles que",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "deux sous-catégories pleines telles que",
+      "note": "Il manque le s de « pleines » dans l'imprimé. Le TeX conserve la coquille."
+    },
+    {
+      "page": 105,
+      "where": "Lemme 8.8.5.1, quantification des objets de J' et J''",
+      "scan": "J''\\in\\Ob J''",
+      "tex": "$J''\\in \\Ob J''$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$j''\\in \\Ob J''$",
+      "note": "L'objet est désigné par un J majuscule au lieu de j minuscule ; la formule suivante emploie bien j''. Le TeX conserve cette coquille."
+    }
+  ],
+  "coordinator": "101 : 1/1 ; 102 : 0/1 ; 103 : 0/1 ; 104 : 1/1 ; 105 : 0/2 (normal/misprint)."
+}

@@ -1,0 +1,148 @@
+{
+  "findings": [
+    {
+      "page": 181,
+      "where": "Proof of Corollary 1.18, sufficiency",
+      "scan": "tout morphisme $Z'\\to Y$",
+      "tex": "tout morphisme $Z'\\to Y$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "tout morphisme $Z\\to Y$",
+      "note": "The print has an extraneous prime: the object just introduced, and used in the subsequent fibre product, is Z. The TeX retains this misprint."
+    },
+    {
+      "page": 182,
+      "where": "Heading of 1.20.1",
+      "scan": "Remarques 1.20.1.",
+      "tex": "Remarque 1.20.1",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Remarque 1.20.1",
+        "new": "Remarques 1.20.1"
+      },
+      "note": "The printed heading is plural."
+    },
+    {
+      "page": 182,
+      "where": "1.20.1, final sentence",
+      "scan": "des conditions de finitude restrictive",
+      "tex": "des conditions de finitude restrictive",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "des conditions de finitude restrictives",
+      "note": "The adjective modifying « conditions » lacks its plural ending. The TeX retains the printed misprint."
+    },
+    {
+      "page": 182,
+      "where": "1.20.2, opening sentence",
+      "scan": "le fait que pour un objet X du topos E d'être quasi-séparé",
+      "tex": "le fait que pour un objet $X$ du topos\n$E$ d'être quasi-séparé",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "le fait pour un objet $X$ du topos $E$ d'être quasi-séparé",
+      "note": "The « que » immediately after « fait » is superfluous before the infinitive construction. The TeX retains it."
+    },
+    {
+      "page": 183,
+      "where": "1.21, reduction to nested universes",
+      "scan": "donc E est un V-site",
+      "tex": "donc $E$ est une $𝒱$-site",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "une $𝒱$-site",
+        "new": "un $𝒱$-site"
+      },
+      "note": "The print reads « un », not « une »."
+    },
+    {
+      "page": 183,
+      "where": "1.21, property of a flèche f in E",
+      "scan": "f est quasi-compacte (resp. quasi-séparé)",
+      "tex": "quasi-compacte (\\resp quasi-séparé)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "quasi-compacte (\\resp quasi-séparée)",
+      "note": "With « toute flèche », the parenthetical adjective should also be feminine. The TeX retains the printed agreement error."
+    },
+    {
+      "page": 183,
+      "where": "1.21, corresponding flèche in E'",
+      "scan": "une flèche quasi-compacte",
+      "tex": "une flèche quasi-compacts",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "une flèche quasi-compacts",
+        "new": "une flèche quasi-compacte"
+      },
+      "note": "The printed ending is « -compacte », not « -compacts »."
+    },
+    {
+      "page": 184,
+      "where": "Conclusion of 1.21, reduction using 1.18",
+      "scan": "encore ramené au cas « f quasi-compact »",
+      "tex": "encore ramené au cas « $X$ quasi-compact »",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$X$ quasi-compact",
+        "new": "$f$ quasi-compact"
+      },
+      "note": "The print reduces this case to quasi-compactness of f, not of X."
+    },
+    {
+      "page": 184,
+      "where": "1.22, sentence beginning « On laisse au lecteur »",
+      "scan": "est quasi-compacte (resp. quasi-séparé)",
+      "tex": "est quasi-compacte (\\resp quasi-séparé)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "est quasi-compacte (\\resp quasi-séparée)",
+      "note": "The subject is « une flèche »; the parenthetical adjective lacks its feminine ending. The TeX retains this printed agreement error."
+    },
+    {
+      "page": 184,
+      "where": "1.22, terminology following « morphisme cohérent de schémas »",
+      "scan": "schéma cohérent",
+      "tex": "schémas\n  cohérent",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "schémas\n  cohérent",
+        "new": "schéma\n  cohérent"
+      },
+      "note": "The second noun is singular in the print."
+    },
+    {
+      "page": 185,
+      "where": "1.22.1, notation for the site of étale schemes",
+      "scan": "$X_{\\text{ét}}$",
+      "tex": "$X_{\\text{et}}$",
+      "kind": "accent",
+      "confidence": "high",
+      "fix": {
+        "old": "$X_{\\text{et}}$",
+        "new": "$X_{\\text{ét}}$"
+      },
+      "note": "The printed subscript has an acute accent on e."
+    },
+    {
+      "page": 185,
+      "where": "End of the supplied TeX, after Theorem 1.23",
+      "scan": "The page ends after « l'application (1.23.1) soit bijective. »",
+      "tex": "\\item \\underline{Nécessité}.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The proof-enumeration block following \\end{enonce*}, including « (i) Nécessité. », is not printed on p. 185 and belongs to the following page. This overrun is not covered by the cut's opening comment."
+    }
+  ],
+  "coordinator": "181: 0/1; 182: 1/2; 183: 2/1; 184: 2/1; 185: 2/0 (normal/misprint; marker included in normal).\nMarker p. 185: end the cut after Theorem 1.23(ii); assign the following proof-enumeration block, beginning « (i) Nécessité. », to p. 186."
+}

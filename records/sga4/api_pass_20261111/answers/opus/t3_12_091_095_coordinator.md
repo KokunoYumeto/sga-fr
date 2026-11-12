@@ -1,0 +1,1 @@
+p91 0/3; p92 0/2; p93 1/1; p94 0/0; p95 1/0. Convention: the TeX writes \Pi_0 and \Pi_1 where the print seems to have small π (p93 π_o(X_o), p93 π_o(X), p94 π_1(X_o,x̄_o)); the case of the glyph is uncertain, so check before changing globally.

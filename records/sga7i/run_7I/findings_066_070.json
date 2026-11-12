@@ -1,0 +1,231 @@
+[
+ {
+  "page": 66,
+  "where": "Proof of 2.14, 'Since h_(R_0,R_1,...)(k[ε]) is totally disconnected, [h_(α_0,α_1)(k[ε]) and [ε(k[ε])] are both bijections'",
+  "scan": "[h_(α_0,α_1)(k[ε])  and  [ε(k[ε])] : the first square bracket (faint but present) is opened and never closed",
+  "tex": "[\\underline{h}_{(\\alpha_0,\\alpha_1)}(k[\\epsilon])",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "[\\underline{h}_{(\\alpha_0,\\alpha_1)}(k[\\epsilon])]",
+  "note": "Closing bracket missing: [ ] is the map induced on isomorphism classes, as in the parallel [ε(k[ε])] and in '[h_(R_0,R_1,...)(k[ε])]' in the proof of 2.12(b) (p. 65). The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 66,
+  "where": "Diagram of the proof of 2.14, left vertical arrow h_{R_0} → h_(R_0,R_1,...) labelled ε",
+  "scan": "ε to the LEFT of the shaft (outside the square)",
+  "tex": "\\arrow[u, \"\\epsilon\"']",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "\\arrow[u, \"\\epsilon\"'] \\arrow[r",
+   "new": "\\arrow[u, \"\\epsilon\"] \\arrow[r"
+  },
+  "note": "For an upward arrow the swap mark ' puts the label to the right of the shaft (inside the square); without it tikz-cd sets it to the left, as printed (checked by compiling a test diagram; the file's own comment block also records ε to the LEFT). Independent of the next fix."
+ },
+ {
+  "page": 66,
+  "where": "Same diagram, right vertical arrow h_{R_0} → h_(R_0,R_1,...) labelled ε",
+  "scan": "ε to the RIGHT of the shaft (outside the square)",
+  "tex": "& \\underline{h}_{R_0} \\arrow[u, \"\\epsilon\"]",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "& \\underline{h}_{R_0} \\arrow[u, \"\\epsilon\"]",
+   "new": "& \\underline{h}_{R_0} \\arrow[u, \"\\epsilon\"']"
+  },
+  "note": "Without the swap mark an upward arrow gets its label on the left of the shaft (inside the square); the print, and the file's comment block, have ε on the right."
+ },
+ {
+  "page": 66,
+  "where": "First lines, end of Proposition 2.14, 'a normalized prorepresentation, if it exists, is unique'",
+  "scan": "prorepresenta- | tion : the word is divided at the line end",
+  "tex": "\\underline{a normalized prorepresenta-} \\underline{tion, if it exists,",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "prorepresenta-} \\underline{tion",
+   "new": "prorepresentation"
+  },
+  "note": "The TeX keeps the print's line-end hyphen, so the word is set mid-line as 'prorepresenta- tion' (as 'equi- valence' on p. 65); the file joins the other divided words."
+ },
+ {
+  "page": 66,
+  "where": "Lemma 2.15, 'φ : A → B a minimally smooth functor'",
+  "scan": "a mini- | mally : the word is divided at the line end",
+  "tex": "\\underline{a mini-} \\underline{mally smooth functor. If}",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\underline{a mini-} \\underline{mally",
+   "new": "\\underline{a minimally"
+  },
+  "note": "Line-end hyphen kept mid-line ('mini- mally'), as above. Does not overlap the underline fix on 'functor. If' below."
+ },
+ {
+  "page": 66,
+  "where": "Lemma 2.15, 'a minimally smooth functor. If A, B are homogeneous'",
+  "scan": "the underline stops after 'functor'; the full stop and the space are not underlined; 'If' has its own underline",
+  "tex": "\\underline{mally smooth functor. If}",
+  "kind": "underline",
+  "confidence": "low",
+  "fix": {
+   "old": "smooth functor. If}",
+   "new": "smooth functor}. \\underline{If}"
+  },
+  "note": "Underline extent only. The full stop sits inside the \\underline, not at its end, so the global pass on final punctuation does not reach it."
+ },
+ {
+  "page": 66,
+  "where": "Lemma 2.15, 'If A, B are homogeneous, then φ is a C_Λ-equivalence'",
+  "scan": "'are homogeneous' and 'then' are underlined separately; the comma is not underlined",
+  "tex": "\\underline{are homogeneous, then}",
+  "kind": "underline",
+  "confidence": "low",
+  "fix": {
+   "old": "\\underline{are homogeneous, then}",
+   "new": "\\underline{are homogeneous}, \\underline{then}"
+  },
+  "note": "Underline extent only, as above."
+ },
+ {
+  "page": 67,
+  "where": "Corollary 2.16, 'the functor Isom_ξ : C_{R ⊗̂_Λ R} → (Ens) is prorepresentable'",
+  "scan": "C underlined with the subscript R ⊗ R; the caret is typed directly above the ⊗ (Λ under it), i.e. the completed tensor product R ⊗̂_Λ R; no hat on C",
+  "tex": "\\underline{C}^{\\wedge}_{R \\otimes_{\\wedge} R}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{C}^{\\wedge}_{R \\otimes_{\\wedge} R} \\longrightarrow (\\mathrm{Ens})",
+   "new": "\\underline{C}_{R \\hat{\\otimes}_{\\wedge} R} \\longrightarrow (\\mathrm{Ens})"
+  },
+  "note": "The TeX moves the hat from the ⊗ to the C (a superscript ∧ on C). The caret stands over the ⊗ in all three places on this page, exactly as in C_{R_0 ⊗̂_Λ R_0} on pp. 68-69, which the file writes with \\hat{\\otimes} (also R_0 ⊗̂_Λ R_0 on p. 65). This answers the open question on 'p. 67 \\underline{C}^{\\wedge}' in the global issues list."
+ },
+ {
+  "page": 67,
+  "where": "Proof of 2.16, 'a minimally smooth functor Φ : h_{R_1} → Isom_ξ , which is a C_{R ⊗̂_Λ R}-equivalence by 2.15'",
+  "scan": "caret above the ⊗ of the subscript, as in the statement",
+  "tex": "\\underline{C}^{\\wedge}_{R \\otimes_{\\wedge} R}$-equivalence",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{C}^{\\wedge}_{R \\otimes_{\\wedge} R}$-equivalence",
+   "new": "\\underline{C}_{R \\hat{\\otimes}_{\\wedge} R}$-equivalence"
+  },
+  "note": "Same reading as in the statement of 2.16."
+ },
+ {
+  "page": 67,
+  "where": "Proof of 2.16, after the diagram T_1 → T ← T_2, 'in C_{R ⊗̂_Λ R} where T_2 → T is surjective'",
+  "scan": "caret centred above the ⊗ of the subscript",
+  "tex": "in  $\\underline{C}^{\\wedge}_{R \\otimes_{\\wedge} R}$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "in  $\\underline{C}^{\\wedge}_{R \\otimes_{\\wedge} R}$",
+   "new": "in  $\\underline{C}_{R \\hat{\\otimes}_{\\wedge} R}$"
+  },
+  "note": "Same reading as in the statement of 2.16."
+ },
+ {
+  "page": 67,
+  "where": "Corollary 2.16, 'such that Aut_{A(k[ε])}(1_ε) is of finite-dimensional'",
+  "scan": "is of finite-dimensional",
+  "tex": "is of finite-dimensional",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "is finite-dimensional",
+  "note": "Two constructions run together ('is of finite dimension' / 'is finite-dimensional'); Theorem 2.17 (2) has 'are both finite-dimensional vector spaces'. Low: possibly the author's own wording. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 67,
+  "where": "Theorem 2.17, 'Then it is prorepresentable by a (normalized) smooth cogroupoid'",
+  "scan": "prorepresen- | table : the word is divided at the line end",
+  "tex": "prorepresen-table",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "prorepresen-table",
+   "new": "prorepresentable"
+  },
+  "note": "The TeX keeps the line-end hyphen inside the word ('prorepresen-table'); as on p. 66."
+ },
+ {
+  "page": 68,
+  "where": "Theorem 2.17 (2), '[A(k[ε])] and [Aut(1_ε)] are both finite-dimensional vector spaces over k'",
+  "scan": "[A(k[ε])] with A not underlined",
+  "tex": "$[A(k[\\epsilon])]$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$[\\underline{A}(k[\\epsilon])]$",
+  "note": "Category letter without its underline (A is underlined in (1) and in '[A(k[ε])] is a finite-dimensional vector space' in the proof). The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 68,
+  "where": "Proof of 2.17, display '[h(k[ε])] = Coker (Hom_{Λ-alg}(R_1,k[ε] ⇉ Hom_{Λ-alg}(R_0,k[ε])) as well as'",
+  "scan": "no closing parenthesis after k[ε] in the first Hom",
+  "tex": "(R_{1},k[\\epsilon] \\ \\underset",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(R_{1},k[\\epsilon]) \\ \\underset",
+  "note": "Hom_{Λ-alg}(R_1,k[ε]) is never closed, so the line's parentheses do not balance; the two Ker lines below close the same Hom. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 68,
+  "where": "'where ξ_i(T) = ξ(f_i) and f_i : R_0 → T denotes the composit maps'",
+  "scan": "the composit maps",
+  "tex": "the composit maps",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "the composite maps",
+  "note": "Misspelling of 'composite' (as on pp. 32, 42, 43, 62). The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 68,
+  "where": "'Since ξ is a minimally versal formal object of A , the composit functor h_(R_0,R_0,...) → h_(R_0,R_1,...) → A'",
+  "scan": "the composit functor",
+  "tex": "the composit functor",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "the composite functor",
+  "note": "Misspelling of 'composite', as above. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 69,
+  "where": "Corollary 2.20, 'Let A be a homogeneous cogroupoid over C_Λ prorepresented by a normalized smooth cogroupoid'",
+  "scan": "be a homogeneous cogroupoid over",
+  "tex": "\\underline{be a homogeneous cogroupoid over}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\underline{be a homogeneous groupoid over}",
+  "note": "A is the cofibered groupoid over C_Λ of the paragraph just above ('Now let A be a cofibered groupoid over C_Λ prorepresented by a normalized smooth cogroupoid (R_0,R_1,...) via (ξ,φ)'); homogeneity and prorepresentation are properties of cofibered groupoids (cf. 'Let A be a homogeneous groupoid over C_Λ', Corollary 2.16), while a cogroupoid lives in Ĉ_Λ. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 70,
+  "where": "Remark 2.21, 'k ⊗_Λ φ = the image of φ under Isom_{A(R_0)}(ξ(s_1), ξ(s_2)) → Isom_{A(k ⊗_Λ R_1)}(k ⊗_Λ ξ(s_1), k ⊗_Λ ξ(s_2))'",
+  "scan": "Isom_{A(R_0)}(ξ(s_1), ξ(s_2))",
+  "tex": "\\mathrm{Isom}_{\\underline{A}(R_0)}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\mathrm{Isom}_{\\underline{A}(R_1)}",
+  "note": "ξ(s_1), ξ(s_2) are the direct images of ξ under s_1, s_2 : R_0 → R_1, objects over R_1, and φ : ξ_1(R_1) → ξ_2(R_1) (p. 68) is an isomorphism over R_1; the target of the map is correspondingly over k ⊗_Λ R_1. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 70,
+  "where": "Remark 2.21, 'where k ⊗_Λ ξ = its direct image of ξ under the map R_0 → k ⊗_Λ R_0'",
+  "scan": "its direct image of ξ",
+  "tex": "its direct image of",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "the direct image of",
+  "note": "'its ... of ξ' runs two constructions together; cf. '1_S = the direct image of 1 ∈ A(k) under the map k → S' (p. 69). Low: possibly the author's own wording. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ }
+]

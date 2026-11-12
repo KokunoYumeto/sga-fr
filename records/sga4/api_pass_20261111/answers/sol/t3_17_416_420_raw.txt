@@ -1,0 +1,156 @@
+{
+  "findings": [
+    {
+      "page": 417,
+      "where": "Paragraph before Proposition 6.1.4",
+      "scan": "Les propriétés … restent valable",
+      "tex": "restent\nvalable",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "restent valables",
+      "note": "The printed adjective lacks its plural s. The TeX keeps the misprint."
+    },
+    {
+      "page": 418,
+      "where": "First displayed formula in the proof",
+      "scan": "\\Gamma_{p}(\\Ff)",
+      "tex": "\\Gamma_{\\sisi{p}{P}}(\\Ff )",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Gamma_{P}(\\Ff)",
+      "note": "The support index must be the bound variable P. The TeX corrects the printed lowercase p through \\sisi."
+    },
+    {
+      "page": 418,
+      "where": "Paragraph beginning “L'assertion (iii)”, after “s'envoie dans”",
+      "scan": "f_{!}(\\Ff|U)",
+      "tex": "f_{!}(\\Ff\\sisi{|U}{})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f_{!}(\\Ff)",
+      "note": "The target must use the sheaf on X, not its restriction to U. The TeX removes the erroneous restriction through \\sisi."
+    },
+    {
+      "page": 418,
+      "where": "Displayed inductive-limit formula after “De plus”",
+      "scan": "(fj_{!}(\\Ff|U)",
+      "tex": "(fj\\sisi{}{)}_{!}(\\Ff |U)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(fj)_{!}(\\Ff|U)",
+      "note": "The print omits the closing parenthesis after fj. The TeX supplies it through \\sisi."
+    },
+    {
+      "page": 418,
+      "where": "Application of Chow's lemma, after the definition of p⁰",
+      "scan": "fp_{0}",
+      "tex": "fp\\sisi{_{0}}{^0}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "fp^{0}",
+      "note": "The morphism just defined is p⁰, not p₀. The TeX corrects the misplaced index through \\sisi."
+    },
+    {
+      "page": 418,
+      "where": "Reference following the exact sequence",
+      "scan": "VII 9.2",
+      "tex": "\\sisi{VII 9.2}{\\hyperrefext[VIII][VIII.cor9.2]{9.2}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "VIII 9.2",
+      "note": "The exposé numeral in the printed reference is wrong. The TeX corrects it through \\sisi."
+    },
+    {
+      "page": 419,
+      "where": "Opening paragraph, the two pairs after “pour les couples”",
+      "scan": "$(p^{0}_{\\ast}\\mathcal{G})$ et $(fp^{0}_{\\ast},\\mathcal{G})$",
+      "tex": "$(p^{0}_{\\ast}\\sisi{}{,}\\mathcal{G})$ et\n$(fp^{0}_{\\ast},\\mathcal{G})$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$(p^{0},\\mathcal{G})$ et $(fp^{0},\\mathcal{G})$",
+      "note": "The first components must be the morphisms p⁰ and fp⁰, not direct-image functors; the first pair also lacks a comma. The TeX supplies the comma through \\sisi but keeps both erroneous stars."
+    },
+    {
+      "page": 419,
+      "where": "Last paragraph, reference to EGA IV 18.12",
+      "scan": "via EGA IV 18.12. est de toute façon assez évidente.",
+      "tex": "via \\EGA IV 18.12\\sisi{.}{,} est de toute façon assez évidente.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "via \\EGA IV 18.12, est de toute façon assez évidente.",
+      "note": "The printed full stop incorrectly interrupts the sentence. The TeX corrects it to a comma through \\sisi."
+    },
+    {
+      "page": 420,
+      "where": "6.2.1, first occurrence of the étale site",
+      "scan": "S_{\\et}",
+      "tex": "S^{\\et}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "S^{\\et}",
+        "new": "S_{\\et}"
+      },
+      "note": "The print has a subscript, not a superscript."
+    },
+    {
+      "page": 420,
+      "where": "Definition of Ψ_f(U), decomposition of f*U",
+      "scan": "f^{\\ast}U=\\coprod_{i\\in I}V_i",
+      "tex": "f^{\\ast}U=\\prod_{i\\in\nI}V_{i}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "f^{\\ast}U=\\prod",
+        "new": "f^{\\ast}U=\\coprod"
+      },
+      "note": "The printed operator is a coproduct, not a product."
+    },
+    {
+      "page": 420,
+      "where": "Definition of a morphism from φ to φ′",
+      "scan": "de $I'$ dans $I$",
+      "tex": "de $I'$ de dans $I$",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "de $I'$ de dans $I$",
+        "new": "de $I'$ dans $I$"
+      },
+      "note": "The second “de” is absent from the print."
+    },
+    {
+      "page": 420,
+      "where": "Unnumbered decomposition formula following “On a”",
+      "scan": "\\bigoplus_{i\\neq 0} f_{1\\ast}f_{i}^{\\ast}(\\Ff|U)",
+      "tex": "\\bigoplus_{i\\neq 0} f_{i\\ast}f_{i}^{\\ast}(\\Ff |U)",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\bigoplus_{i\\neq 0} f_{i\\ast}f_{i}^{\\ast}(\\Ff|U)",
+      "note": "The first direct-image subscript reads 1 in both scans, whereas the summation requires i. The TeX silently corrects it."
+    },
+    {
+      "page": 420,
+      "where": "Bottom vertex of diagram (6.2.1.2)",
+      "scan": "f_{!}f^{\\ast}\\Ff|U",
+      "tex": "f_{!}f^{\\ast}\\Tt|U",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "f_{!}f^{\\ast}\\Tt|U",
+        "new": "f_{!}f^{\\ast}\\Ff|U"
+      },
+      "note": "The print has the same sheaf F as elsewhere in the diagram, not T."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 416 0/0; 417 0/1; 418 0/5; 419 0/2; 420 4/1."
+}

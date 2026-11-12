@@ -1,0 +1,94 @@
+{
+  "findings": [
+    {
+      "page": 221,
+      "where": "Lemme 3.2.2, (ii), parties ouvertes et fermées de Y'",
+      "scan": "« ouvertes et fermées des Y' »",
+      "tex": "ouvertes et fermées des $Y'$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "ouvertes et fermées de $Y'$",
+      "note": "Coquille « des » pour « de » devant le schéma singulier Y'. Le TeX conserve la lecture imprimée."
+    },
+    {
+      "page": 223,
+      "where": "Premier paragraphe, référence à la technique de descente",
+      "scan": "SGA IX 4.7",
+      "tex": "\\sisi{\\SGA IX 4.7}{\\SGA 1 IX 4.7}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\SGA 1 IX 4.7",
+      "note": "Le numéro 1 du séminaire manque dans l'imprimé. Le premier argument de \\sisi reproduit exactement cette lecture ; l'édition la corrige."
+    },
+    {
+      "page": 223,
+      "where": "Premier paragraphe, parenthèse sur la finitude du normalisé",
+      "scan": "normal (S̄ → S étant fini (EGA IV 7.8.3 (iii) (vi)).",
+      "tex": "normal ($\\bar{S}\\rightarrow S$ étant fini (\\EGA IV\n7.8.3 (iii) (vi)).",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "normal ($\\bar{S}\\rightarrow S$ étant fini (\\EGA IV 7.8.3 (iii) (vi))).",
+      "note": "La parenthèse ouverte avant le morphisme du normalisé n'est pas refermée. Le TeX conserve cette omission."
+    },
+    {
+      "page": 224,
+      "where": "Démonstration du corollaire 3.4, formule des fibres",
+      "scan": "(R^{q}j_*g^*F)_{\\bar{x}}=H^{q}(\\widetilde{U},G_{\\widetilde{U}})\\simeq H^{q}(\\widetilde{X},G_{\\widetilde{X}})",
+      "tex": "(R^{q}j_{\\ast}g^{\\ast}F)_{\\bar{x}}=H^{q}(\\widetilde{U},G_{\\widetilde{U}})\\simeq\nH^{q}(\\widetilde{X},G_{\\widetilde{X}})",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "(R^{1}j_{\\ast}g^{\\ast}F)_{\\bar{x}}=H^{1}(\\widetilde{U},G_{\\widetilde{U}})\\simeq H^{1}(\\widetilde{X},G_{\\widetilde{X}})",
+      "note": "Les trois exposants q sont conservés par le TeX. Dans cette preuve du corollaire sur R^1, la formule doit être limitée à q=1 : l'équivalence des catégories de revêtements ne donne pas l'isomorphisme affiché en degré arbitraire."
+    },
+    {
+      "page": 225,
+      "where": "Troisième paragraphe, référence après « localement 1-asphérique »",
+      "scan": "(XV 2.1, 1.11 (ii))",
+      "tex": "\\hyperrefext[XV][XV.thm2.1]{2.1}, \\hyperrefext[XV][XV.def1.11]{1.11}",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hyperrefext[XV][XV.def1.11]{1.11}",
+        "new": "\\hyperref[XV.def1.11]{1.11}"
+      },
+      "note": "Le second renvoi n'est pas précédé d'un second « XV » dans l'imprimé ; \\hyperrefext l'ajoute."
+    },
+    {
+      "page": 225,
+      "where": "Troisième paragraphe, propriété des fibres géométriques",
+      "scan": "« les fibres géométriques […] sont 1-asphérique »",
+      "tex": "géométriques de $\\bar{U}/\\widetilde{S}$ sont $1$-asphérique pour",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "géométriques de $\\bar{U}/\\widetilde{S}$ sont $1$-asphériques pour",
+      "note": "Il manque le s d'accord avec « les fibres ». Le TeX conserve le singulier imprimé."
+    },
+    {
+      "page": 225,
+      "where": "Réduction au cas m=1, après « c'est-à-dire »",
+      "scan": "\\bar{U}_m=\\widetilde{U}",
+      "tex": "$\\bar{U}_m=\\widetilde{U}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\widetilde{U}_m=\\widetilde{U}$",
+      "note": "La famille définie plus haut est celle des \\widetilde{U}_m ; \\bar{U} désigne leur limite. L'imprimé porte une barre au lieu du tilde, et le TeX la conserve."
+    },
+    {
+      "page": 225,
+      "where": "Fin de page, dernière ligne",
+      "scan": "« pour conclure que V induit un re- »",
+      "tex": "(\\SGA 1 X 3.6) pour conclure que $V$ induit un",
+      "kind": "marker",
+      "confidence": "medium",
+      "fix": null,
+      "note": "L'imprimé commence encore le mot suivant par « re- », tandis que la coupe TeX s'arrête à « un ». Vérifier la ligne source suivante avec la p. 226 et inclure la ligne partagée dans la coupe ; ne pas ajouter un second exemplaire du mot au texte."
+    }
+  ],
+  "coordinator": "221: 0/1; 222: 0/0; 223: 0/2; 224: 0/1; 225: 2/2 (normal/misprint).\nMarqueur p. 225 : l'imprimé finit par « induit un re- » ; vérifier la ligne source suivante, partagée avec la p. 226."
+}

@@ -1,0 +1,112 @@
+{
+  "findings": [
+    {
+      "page": 386,
+      "where": "Paragraph beginning « Supposons maintenant », base-changed morphism",
+      "scan": "X'\\times_Y Y' \\to Y'",
+      "tex": "\\fprod{X'}{Y'}{Y} \\to Y'",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\fprod{X}{Y'}{Y} \\to Y'",
+      "note": "The print mistakenly primes X, although the original morphism has source X. The TeX keeps this misprint."
+    },
+    {
+      "page": 386,
+      "where": "Theorem 5.2, sentence introducing the isomorphism",
+      "scan": "Alors homomorphisme canonique",
+      "tex": "Alors \\sisi{}{l'}homomorphisme canonique",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Alors l'homomorphisme canonique",
+      "note": "The print omits l'. The first argument of \\sisi matches the print; the edition corrects the omission."
+    },
+    {
+      "page": 387,
+      "where": "Paragraph after (5.4.1), tensor-product subscript",
+      "scan": "X_y \\otimes_{k(y),} k(\\bar{y})",
+      "tex": "X_{y} \\otimes_{k(y),} k(\\bar{y}),",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "X_{y} \\otimes_{k(y)} k(\\bar{y})",
+      "note": "The tensor-product subscript contains a stray comma after k(y). The TeX keeps this printed misprint."
+    },
+    {
+      "page": 388,
+      "where": "Proposition 5.5, indexing set of the product",
+      "scan": "\\bar{x} \\in X_y \\otimes_{k(y)} k(\\bar{y})",
+      "tex": "\\bar{x} \\in X_{y}\\otimes_{k(y)}\n(\\bar{y})",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\otimes_{k(y)}\n(\\bar{y})",
+        "new": "\\otimes_{k(y)}\nk(\\bar{y})"
+      },
+      "note": "The TeX omits k before the parenthesized geometric point."
+    },
+    {
+      "page": 388,
+      "where": "Proposition 5.5, parenthetical base-change assertion",
+      "scan": "Y' \\to Y",
+      "tex": "$y'\\to Y$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$y'\\to Y$",
+        "new": "$Y'\\to Y$"
+      },
+      "note": "The print has capital Y', not lowercase y'."
+    },
+    {
+      "page": 389,
+      "where": "Proof of Corollary 5.6, vanishing assertion for F_i",
+      "scan": "R^q f_*(F_i) = 0",
+      "tex": "R^{q} f_{\\ast} (F_i) = 0",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "R^{q} (f_i)_{\\ast} (F_i) = 0",
+      "note": "Here F_i is a sheaf on X_i, so the direct image must be taken along the induced morphism f_i: X_i \\to Y, not f: X \\to Y. The TeX keeps the printed omission of the index."
+    },
+    {
+      "page": 390,
+      "where": "Opening paragraph, membership in the étale site",
+      "scan": "U \\in \\operatorname{Ob} X_{\\mathrm{ét}}",
+      "tex": "$I \\in \\Ob",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$I \\in \\Ob",
+        "new": "$U \\in \\Ob"
+      },
+      "note": "The print has U, not I."
+    },
+    {
+      "page": 390,
+      "where": "Opening paragraph, « du topos étale … de X »",
+      "scan": "topos étale X_{\\mathrm{ét}} de X",
+      "tex": "étale $X_{\\text{\\rm ét}}$\nde $X$ (IV 8.3).",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "étale $\\widetilde{X_{\\text{\\rm ét}}}$ de $X$ (IV 8.3).",
+      "note": "The print omits the tilde distinguishing the topos from its site, although it uses the tilde immediately beforehand and in Proposition 6.1. The TeX keeps this omission."
+    },
+    {
+      "page": 390,
+      "where": "End of the proof of Proposition 6.1, equality of slice sites",
+      "scan": "X_{\\mathrm{ét}/F} = X_{\\mathrm{ét}/U}",
+      "tex": "X_{\\text{ét}/F'} =  X_{\\text{ét}/U}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "X_{\\text{ét}/F'}",
+        "new": "X_{\\text{ét}/F}"
+      },
+      "note": "The TeX adds a prime to F that is absent from the print."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 386: 0/2; 387: 0/1; 388: 2/0; 389: 0/1; 390: 2/1."
+}

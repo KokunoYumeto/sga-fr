@@ -1,0 +1,156 @@
+{
+  "findings": [
+    {
+      "page": 6,
+      "where": "Condition c), end",
+      "scan": "commute aux sommes directes U-petites (donc commute aux limites inductives U-petites.",
+      "tex": "commute aux sommes directes $𝒰$-petites (donc\n  commute aux limites inductives $𝒰$-petites.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "commute aux sommes directes $𝒰$-petites (donc commute aux limites inductives $𝒰$-petites).",
+      "note": "The opening parenthesis is never closed. The TeX keeps this printed misprint."
+    },
+    {
+      "page": 7,
+      "where": "Opening paragraph, before the Hom display",
+      "scan": "il suffit montrer",
+      "tex": "il suffit montrer",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "il suffit de montrer",
+      "note": "The print omits « de » after « suffit »; the TeX keeps the omission."
+    },
+    {
+      "page": 7,
+      "where": "Second display, the Hom comparison",
+      "scan": "\\Hom(\\epsilon(⨁_\\alpha Z_\\alpha), \\epsilon(Y)) \\to \\Hom(⨁_\\alpha \\epsilon(Z_\\alpha), \\epsilon(Y))",
+      "tex": "\\Hom(\\epsilon(⨁_a Z_a), \\epsilon(Y)) \\to\n\\Hom(⨁_a \\epsilon(Z_a), \\epsilon(Y))",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hom(\\epsilon(⨁_a Z_a), \\epsilon(Y)) \\to\n\\Hom(⨁_a \\epsilon(Z_a), \\epsilon(Y))",
+        "new": "\\Hom(\\epsilon(⨁_\\alpha Z_\\alpha), \\epsilon(Y)) \\to\n\\Hom(⨁_\\alpha \\epsilon(Z_\\alpha), \\epsilon(Y))"
+      },
+      "note": "Both summation indices and both indices of Z are Greek alpha, not Latin a."
+    },
+    {
+      "page": 7,
+      "where": "Beginning of the proof of c) implies a)",
+      "scan": "c) $\\to$ a)",
+      "tex": "c) $\\Rightarrow$ a)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "c) $\\Rightarrow$ a)",
+        "new": "c) $\\to$ a)"
+      },
+      "note": "The printed implication has a single shaft, not a double shaft."
+    },
+    {
+      "page": 7,
+      "where": "End of the proof of c) implies a), after Z = Im(u)",
+      "scan": "Comme est pleinement fidèle",
+      "tex": "Comme \\sisi{}{$\\epsilon$} est pleinement fidèle",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Comme $\\epsilon$ est pleinement fidèle",
+      "note": "The print omits the subject epsilon. The TeX records the omission faithfully and supplies the correction through \\sisi."
+    },
+    {
+      "page": 7,
+      "where": "Same sentence, relation between u and epsilon(v)",
+      "scan": "$u : \\epsilon(v)$",
+      "tex": "$u \\sisi{:}{=} \\epsilon(v)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$u = \\epsilon(v)$",
+      "note": "The printed colon should be an equality sign. The TeX corrects it through \\sisi."
+    },
+    {
+      "page": 7,
+      "where": "Same sentence, Im(epsilon(V))",
+      "scan": "\\epsilon(V)",
+      "tex": "\\epsilon(\\sisi{V}{v})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\epsilon(v)",
+      "note": "The print has capital V instead of the morphism v introduced immediately before. The TeX corrects it through \\sisi."
+    },
+    {
+      "page": 8,
+      "where": "Proof of Proposition 1.2, second occurrence of the equivalence (i), (ii)",
+      "scan": "d'après l'équivalence (i) $\\leftrightarrow$ (ii)",
+      "tex": "d'après l'équivalence (i) $\\Leftrightarrow$ (ii)",
+      "kind": "symbol",
+      "confidence": "medium",
+      "fix": {
+        "old": "d'après l'équivalence (i) $\\Leftrightarrow$ (ii)",
+        "new": "d'après l'équivalence (i) $\\leftrightarrow$ (ii)"
+      },
+      "note": "This handwritten arrow has a single shaft, unlike the double-shaft equivalence arrow earlier in the proof."
+    },
+    {
+      "page": 9,
+      "where": "Proof of Proposition 1.3.2, target of the adjunction morphism",
+      "scan": "i_\\ast i^\\ast (i_\\ast M_A P)",
+      "tex": "i_\\ast i^\\ast (i_\\ast M_A P)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "i_\\ast i^\\ast (i_\\ast M \\otimes_A P)",
+      "note": "The tensor-product sign is omitted inside the parentheses in the print. The TeX keeps the omission."
+    },
+    {
+      "page": 9,
+      "where": "Section 1.4, sentence introducing diagram (1.4.1)",
+      "scan": "commutatif de morphisme de topos",
+      "tex": "commutatif de morphisme de topos",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "commutatif de morphismes de topos",
+      "note": "The plural ending of « morphismes » is missing in the print; the TeX keeps the singular."
+    },
+    {
+      "page": 10,
+      "where": "Proposition 1.5, opening words",
+      "scan": "Pour tout $A_x$-modules",
+      "tex": "Pour tout $A_x$-module\\sisi{s}{}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Pour tout $A_x$-module",
+      "note": "The print has an erroneous plural after « tout ». The TeX removes the s through \\sisi."
+    },
+    {
+      "page": 10,
+      "where": "Formula (1.5.3), index of the outer inverse limit",
+      "scan": "\\varprojlim_{\\mathrm{Voix}(x)}",
+      "tex": "\\varprojlim_{\\Vois(x)}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\varprojlim_{\\Vois(x)}",
+      "note": "The print reads « Voix(x) » instead of « Vois(x) ». The TeX silently corrects this typo."
+    },
+    {
+      "page": 10,
+      "where": "Formula (1.5.4), index of the last direct limit",
+      "scan": "\\varinjlim_{(\\Vois(x)/V)^{\\circ}}",
+      "tex": "\\varinjlim_{(\\Vois(-x)/V)^{\\circ}}",
+      "kind": "symbol",
+      "confidence": "medium",
+      "fix": {
+        "old": "\\Vois(-x)",
+        "new": "\\Vois(x)"
+      },
+      "note": "The printed category index is vois(x)/V, not vois(-x)/V; the minus in the TeX is extra."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): p. 6: 0/1; p. 7: 2/4; p. 8: 1/0; p. 9: 0/2; p. 10: 1/2."
+}

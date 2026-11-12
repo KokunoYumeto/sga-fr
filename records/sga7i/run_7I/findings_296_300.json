@@ -1,0 +1,94 @@
+[
+ {
+  "page": 297,
+  "where": "6.9 a), first sentence",
+  "scan": "Soit j:V ↪ S un ouvert schématiquement dense (the open is U everywhere else: j_*G_mU in the next sentence, U ↪ S in the Corollaire)",
+  "tex": "Soit $j:V \\hookrightarrow S$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$j:U \\hookrightarrow S$",
+  "note": "The print types V for the open U. The TeX keeps the printed V."
+ },
+ {
+  "page": 297,
+  "where": "unnumbered display at the end of 6.9 a)",
+  "scan": "0 → G_mS → j_* G_mS → D → 0 .",
+  "tex": "j_{*} \\, \\underline{G}_{mS}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "j_{*} \\, \\underline{G}_{mU}",
+  "note": "The middle term must be j_*G_mU, as in the sentence just before. The TeX keeps the printed index mS."
+ },
+ {
+  "page": 298,
+  "where": "diagram U ↪ S ← Y in the Corollaire of 6.9",
+  "scan": "U ↪(j) S ←(i) Y      .",
+  "tex": "\\end{tikzcd}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzcd}",
+   "new": "\\end{tikzcd}\\quad ."
+  },
+  "note": "The print sets a full stop to the right of Y and the TeX leaves it out. The STRUCTURE comment only describes the stop, so it needs no change."
+ },
+ {
+  "page": 299,
+  "where": "7.0, second sentence",
+  "scan": "et soit η son point générique, s sont point fermé, k = k(s)",
+  "tex": "$s$ sont point fermé",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "son point fermé",
+  "note": "Typing error 'sont' for 'son'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 300,
+  "where": "7.1 b), sentence after the first display",
+  "scan": "alors le foncteur E ⟼ E_η dans la catégorie des biextensions de (P,Q) par G_mS dans la catégorie des biextensions de (P_η,Q_η)",
+  "tex": "\\underline{dans la catégorie des biextensions de} $(P,Q)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\underline{de la catégorie des biextensions de} $(P,Q)$",
+  "note": "The first 'dans' should be 'de' (cf. 7.1 a): 'de la catégorie des extensions de P ... dans la catégorie ...'). The TeX keeps 'dans'."
+ },
+ {
+  "page": 300,
+  "where": "7.1 b), sentence after (7.1.2)",
+  "scan": "pour que E soit isomorphe à la fibre générique d'une biextension E de (P,Q)",
+  "tex": "\\underline{pour que} $E$ \\underline{soit isomorphe",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$E_\\eta$",
+  "note": "The generic biextension must be E_η (cf. 7.1 a): 'pour que l'extension E_η soit isomorphe'). The TeX keeps the printed E."
+ },
+ {
+  "page": 300,
+  "where": "7.1 b), end of the sentence after (7.1.2)",
+  "scan": "par G_{m S}. (the S is lowered to the index line together with m)",
+  "tex": "$\\underline{G}_m\\ S$",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\underline{G}_m\\ S$",
+   "new": "$\\underline{G}_{m\\,S}$"
+  },
+  "note": "The print gives G_{m S} as on p. 296 (G_{m U}). The TeX puts S on the baseline."
+ },
+ {
+  "page": 300,
+  "where": "Démonstration a), second sentence",
+  "scan": "le foncteur \"restriction à η\" défini sur la catégorie des biextensions par G̅",
+  "tex": "défini sur la catégorie des biextensions par $\\overline{G}$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "défini sur la catégorie des extensions par $\\overline{G}$",
+  "note": "Part a) concerns extensions of P and invokes 6.6 (6.7 is the biextension case), so 'biextensions' looks like a slip. The TeX keeps the printed word."
+ }
+]

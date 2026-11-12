@@ -1,0 +1,52 @@
+\RequirePackage{luatex85}
+\documentclass[12pt]{../fichiers-configuration-latex/amsbook}
+\usepackage[a4paper,left=3cm,right=3cm,marginpar=0.5cm,marginparsep=0.8cm,vmargin=2.8cm]{geometry}
+\input{../fichiers-configuration-latex/paquets}
+\input{../fichiers-configuration-latex/numerotation}
+\input{../fichiers-configuration-latex/macros}
+
+
+%\makeatletter
+%\uc@dclc{128}{default}{}%
+%\makeatother
+
+\begin{document}
+\begin{center}
+{\Large Théorie des topos et cohomologie étale des schémas.\\
+Tome 3}\\
+\end{center}
+
+\vskip1cm
+\begin{center}
+M. Artin, A. Grothendieck, J.-L. Verdier
+\end{center}
+
+\vskip1cm
+\begin{center}
+Avec la participation de N. Bourbaki, P. Deligne, B. Saint-Donat
+\end{center}
+
+\selectlanguage{english}version : \showgitstatus\selectlanguage{french}
+\tableofcontents
+
+\mainmatter
+
+\def\danslelivre{1}
+
+\setcounter{chapter}{8}
+\def\thechapter{\Roman{chapter}}
+\def\chaptername{Exposé}
+
+\input{../09/09.tex}
+\input{../10/10.tex}
+\input{../11/11.tex}
+\input{../12/12.tex}
+\input{../13/13.tex}
+\input{../14/14.tex}
+\input{../15/15.tex}
+\input{../16/16.tex}
+\input{../17/17.tex}
+\input{../18/18.tex}
+\input{../19/19.tex}
+\backmatter
+\end{document}

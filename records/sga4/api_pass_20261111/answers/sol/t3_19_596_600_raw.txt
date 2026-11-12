@@ -1,0 +1,131 @@
+{
+  "findings": [
+    {
+      "page": 596,
+      "where": "First paragraph, definition of B^0_j",
+      "scan": "le normalisé ... de $A[Y]/(f^{0}_{j})$",
+      "tex": "le normalisé ... de $A[Y]/(f^{0}_{j})$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$A^{0}[Y]/(f^{0}_{j})$",
+      "note": "The algebra to be normalized is the algebra over A^0, not its base change to A. The TeX keeps the printed omission of the superscript."
+    },
+    {
+      "page": 596,
+      "where": "First paragraph, « et birationnel à B_j »",
+      "scan": "birationel, divided across lines as « bira- / tionel »",
+      "tex": "birationnel",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "birationnel",
+      "note": "The print has only one n. The TeX silently corrects the spelling."
+    },
+    {
+      "page": 597,
+      "where": "Beginning of the page; boundary between pages 596 and 597",
+      "scan": "The page begins with « Théorème 2.1 (*) » and contains the footnote « Dépend de la résolution des singularités (cf. Introduction). »",
+      "tex": "The excerpt begins with « Introduction).}.\\pageoriginale Soit »; the theorem heading and opening of its footnote are in the page 596 excerpt.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The cut must precede source line 351, beginning \\begin{enonce*}{Théorème 2.1}, rather than source line 353. Source lines 351–352 belong to page 597 but are outside the overlap declared in the comments. Page 596 ends in the main text with « Le théorème est le suivant: »."
+    },
+    {
+      "page": 597,
+      "where": "Lemma 2.2, condition on the images of the parameters",
+      "scan": "dont l'ensemble des images dans $A$",
+      "tex": "dont l'ensemble des images dans $A$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "dont l'ensemble des images dans $A'$",
+      "note": "The images under A → A' must be taken in A'. The TeX keeps the missing prime of the print."
+    },
+    {
+      "page": 598,
+      "where": "Proof of Lemma 2.2, definition of B",
+      "scan": "$B=A/(x)$",
+      "tex": "$B=A/(x)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$B=A/(x_{r})$",
+      "note": "The closed complement is defined by x_r, as stated immediately afterwards. The TeX keeps the printed omission of the index r."
+    },
+    {
+      "page": 599,
+      "where": "Paragraph beginning « Puisque »",
+      "scan": "$(𝛍_{n})_{Y}\\simeq (\\ZZ/n)_{Y}$",
+      "tex": "$(𝛍_{n})\\simeq (\\ZZ/n)_{Y}$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$(𝛍_{n})\\simeq (\\ZZ/n)_{Y}$",
+        "new": "$(𝛍_{n})_{Y}\\simeq (\\ZZ/n)_{Y}$"
+      },
+      "note": "The first member has a printed subscript Y, omitted in the TeX."
+    },
+    {
+      "page": 600,
+      "where": "Opening exact-sequence diagram, lower row",
+      "scan": "The arrow from $H^{m}(U',𝛍_n)$ to $H^{m-1}(Y',\\ZZ/n)$ is unlabelled.",
+      "tex": "H^m(U',𝛍_n) \\ar[r]^(.45){e}",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "H^m(U',𝛍_n) \\ar[r]^(.45){e}",
+        "new": "H^m(U',𝛍_n) \\ar[r]"
+      },
+      "note": "The label e is printed only on the corresponding arrow in the upper row."
+    },
+    {
+      "page": 600,
+      "where": "First paragraph after the opening diagram",
+      "scan": "Pour démontrer que $c'$ est surjectif",
+      "tex": "Pour démontrer que $c'$ est surjectif",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$c$",
+      "note": "The arrow under discussion is c, not c'. The TeX keeps the printed extra prime."
+    },
+    {
+      "page": 600,
+      "where": "Paragraph beginning « Soit », choice of a separably closed field",
+      "scan": "$k\\subset A$",
+      "tex": "$K\\subset A$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$K\\subset A$",
+        "new": "$k\\subset A$"
+      },
+      "note": "The print uses lowercase k, consistently with the rest of the paragraph."
+    },
+    {
+      "page": 600,
+      "where": "« Alors les hypothèses de 2.1 sont satisfaites »",
+      "scan": "2.1",
+      "tex": "\\hyperref[XIX.thm2.1]{2.1}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperref[XIX.lem2.2]{2.2}",
+      "note": "The hypotheses concerning a morphism A^0 → A and a family of parameters are those of Lemma 2.2. The TeX keeps the printed reference 2.1."
+    },
+    {
+      "page": 600,
+      "where": "Commutative square, lower-right term",
+      "scan": "H^{m-1}(Y^{0},\\ZZ/n)",
+      "tex": "H^{m-1}(Y^{0},\\ZZ/n)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{m-1}(Y,\\ZZ/n)",
+      "note": "The lower row concerns U and Y; the superscript 0 belongs only to the upper row. The TeX keeps the printed extra superscript."
+    }
+  ],
+  "coordinator": "596: 0/2; 597: 1/1; 598: 0/1; 599: 1/0; 600: 2/3 (normal/misprint; marker counted as normal).\nMarker 596/597: start page 597 at source line 351, before \\begin{enonce*}{Théorème 2.1}, including the opening of footnote[1]; page 596's main text ends with « Le théorème est le suivant: »."
+}

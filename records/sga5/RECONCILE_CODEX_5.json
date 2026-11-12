@@ -1,0 +1,1228 @@
+{
+ "title": "Reconciliation of Codex's earlier corrections of the French SGA 5 with the scan-check layers",
+ "made": "10-11 Nov 2026, Claude (Opus 5.5), subagent of session 329fb1e6",
+ "layers": [
+  "sga5/current",
+  "sga5/diplomatic"
+ ],
+ "statuses": {
+  "present": "the corrected layer already has the reading at that place",
+  "applied": "carried into the corrected layer (and the diplomatic layer where the print reads otherwise than the TeX); logged in FIXLOG_5_CURRENT.jsonl / FIXLOG_5.jsonl",
+  "superseded": "the scan check decided otherwise (FIXLOG or MISPRINTS entry named)",
+  "rejected": "not a correction of a reading (editorial addition, notation, rewording, wrong claim) or not established; reason given"
+ },
+ "counts": {
+  "queue": {
+   "present": 56,
+   "rejected": 4,
+   "applied": 21
+  },
+  "c4": {
+   "applied": 28,
+   "superseded": 1,
+   "rejected": 7
+  }
+ },
+ "entries": [
+  {
+   "id": "SGA-SRC-000077",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "In corrected/current French replace only `pseudo-cohérents` by `pseudo-cohérentes` in Proposition 5.1; preserve diplomatic/original `pseudo-cohérents` and every mathematical token.",
+   "status": "present",
+   "note": "'pseudo-cohérentes'"
+  },
+  {
+   "id": "SGA-SRC-000079",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XV",
+   "codex_status": "accepted",
+   "codex_claim": "Keep the full printed clause active and move the `% FIX #52` annotation after it (or onto a separate comment line that cannot swallow prose), preserving the accepted pushforward `\\fr_{X*}F`. Verify compiled French contains the concluding `on voit ... id` sentence in both branches.",
+   "status": "present",
+   "note": "the FIX #52 comment stands on its own line; the clause 'on voit que ... id' is active"
+  },
+  {
+   "id": "SGA-SRC-000147",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted",
+   "codex_claim": "In corrected/current French and English replace only `\\otimes` by `\\oplus` in formula (4.2.3); preserve the printed/diplomatic tensor-product reading. Spanish already uses `\\oplus` in its current text and should preserve `\\otimes` only in the original branch apparatus.",
+   "status": "present",
+   "note": "(4.2.3) reads \\oplus"
+  },
+  {
+   "id": "SGA-SRC-000358",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "Front matter",
+   "codex_status": "accepted",
+   "codex_claim": "RETAIN_EMENDED_EXPOSE_VIII; PRESERVE_PRINTED_EXPOSE_VII_IN_DIPLOMATIC_BRANCH",
+   "status": "rejected",
+   "why": "the introduction (printed p. V) is not in the scan-check text yet (front matter to be transcribed from the scan); carry 'exposé VIII' when it is"
+  },
+  {
+   "id": "SGA-SRC-000359",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "replace X-groupe abélien by T-groupe abélien",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000360",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "cite (1.3.3) for Hom and (1.3.4) for both invertibility references",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000361",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "replace (1.3.2) by (1.3.3)",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000362",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VI",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "replace the first (1.4.6) by (1.4.5); retain later Hom references to (1.4.6)",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000363",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "replace (2.2.5) by Corollary (2.2.6)",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000364",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "replace H^2(X,Z) by H^2(X(C),Z)",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000365",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "supply the exact SGA volume, exposé, and result for the descent/Čech spectral sequence after canon verification",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000366",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "X projective; L ample; Y a smooth hyperplane section",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000367",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "insert c_{d-1}(check F)=(-1)^{d-1}c_{d-1}(F)",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000368",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "accepted",
+   "codex_claim": "retain Y' instead of printed Y",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000369",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "move c_{d-1}(check F) outside g*",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000370",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "lambda' o (lambda o lambda')=lambda'",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000371",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "(j_1)_* g_1^*(mu)",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000372",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "c_d(check E) on both sides",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000373",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VII",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "g*(a_{d-2}) xi^{d-1}",
+   "status": "present",
+   "note": "the c5 base already carries the correction (spot-checked: T-groupe, (1.3.3)/(1.3.4), (1.4.5), (2.2.6), H^2(X(C),Z), SGA 4 V bis citation, projective/ample, sign identity, Y', g^*(y)c_{d-1}, lambda', g_1^*, a_{d-2})"
+  },
+  {
+   "id": "SGA-SRC-000374",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "accepted",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000375",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "VIII",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000376",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000377",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000378",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000379",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X, XII, XV, Indexes",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000380",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000381",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000382",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000383",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000384",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X, XII",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000385",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000386",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted",
+   "codex_claim": "HOLD the blank citation exactly as witnessed; do not fabricate a volume, exposé, or result until Canon verifies the locator.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000387",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "maintained_english_current_integrated_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-000388",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "Indexes",
+   "codex_status": "maintained_english_current_integration_complete_r2_pending_remaining_consumers_reader_and_publication",
+   "codex_claim": "Apply the current actions exactly as embedded and preserve the original actions exactly as embedded; no source or publication mutation is part of this allocation transaction.",
+   "status": "present",
+   "note": "Spanish reconciliation record; the French corrected layer already has the reading (spot-checked: Proposition 8.1, (C',y',G), Y'=p^{-1}(Y), generic point of W, NW_f, nu_y(f), index locators XV, \\R macros)"
+  },
+  {
+   "id": "SGA-SRC-001618",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Replace `\\cl(C)\\cl(D)` by `\\cl(C')\\cl(C'')` at both lines 3374 and 3378.",
+   "status": "present",
+   "note": "\\cl(C')\\cl(C'')"
+  },
+  {
+   "id": "SGA-SRC-001619",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted",
+   "codex_claim": "Change only the second `$s$` to `$S$`.",
+   "status": "present",
+   "note": "'au-dessus de $S$'"
+  },
+  {
+   "id": "SGA-SRC-001622",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "I",
+   "codex_status": "accepted",
+   "codex_claim": "In corrected/current French and both active maintained-English surfaces replace only the opening binder K by K_Y; preserve printed/diplomatic K and route the same current/original binding to separate language owners.",
+   "status": "present",
+   "note": "K_Y"
+  },
+  {
+   "id": "SGA-SRC-001623",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "I",
+   "codex_status": "accepted",
+   "codex_claim": "P \\\\xrightarrow{\\\\sim} L[r_0], P' \\\\xrightarrow{\\\\sim} L^{\\\\vee}[-r_0]",
+   "status": "present",
+   "note": "L[r_0], L^vee[-r_0]"
+  },
+  {
+   "id": "SGA-SRC-001840",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XV",
+   "codex_status": "accepted_and_all_known_source_consumers_integrated",
+   "codex_claim": "projection to X (cf. no. 2 / n degree 2)",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 451,
+     "old": "suivi de la projection $X^{(p^\\nu/S)}\\to X$. Le morphisme $\\Fr_{X/S}^\\nu$ dépend fonctoriellement du $S$-préschéma $X$ et il est compatible avec le changement de la base $S$ (cf. n$^\\circ$2, prop. 1b)). D'ailleurs il est clair que",
+     "new": "suivi de la projection $X^{(p^\\nu/S)}\\to X$ (cf. n$^\\circ$2). Le morphisme $\\Fr_{X/S}^\\nu$ dépend fonctoriellement du $S$-préschéma $X$ et il est compatible avec le changement de la base $S$ (cf. n$^\\circ$2, prop. 1b)). D'ailleurs il est clair que"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; the diplomatic layer already has '(cf. n°2)'"
+  },
+  {
+   "id": "SGA-SRC-001842",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "I",
+   "codex_status": "accepted_french_and_maintained_english_integrated_pending_translation_consumers_reader_and_publication",
+   "codex_claim": "SGAA~XVIII~3.1.10",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 45,
+     "old": "l'isomorphisme de dualité (SGAA~3.1.10):",
+     "new": "l'isomorphisme de dualité (SGAA~XVIII~3.1.10):"
+    },
+    {
+     "layer": "corrected",
+     "page": 47,
+     "old": "\\text{par dualité (SGAA~3.1.10)}",
+     "new": "\\text{par dualité (SGAA~XVIII~3.1.10)}"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; the print omits the exposé number (pp. 45-47, scan-checked: diplomatic unchanged)"
+  },
+  {
+   "id": "SGA-SRC-001843",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted_french_and_maintained_english_integrated_pending_translation_consumers_reader_and_publication",
+   "codex_claim": "Par localisation sur $X_1$",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 79,
+     "old": "Par la formule de transitivité, il suffit de traiter le cas où $X_2=Y_2$, $f_2=1$. Par dévissage, on ramène à $M_2=g_{*}j_{!}A_V$, où $j:V\\to U$ est une immersion ouverte et $g:U\\to Y_2$ un morphisme fini, puis, par (SGA~4~XVIII~3.1.12.3), au cas où $M_2=A_{Y_2}$. Par localisation sur $X_2$, on peut supposer d'autre part que $f_1=g_1j_1$, où $j_1$ est une immersion fermée, et $g_1$ un morphisme lisse purement de dimension relative $n_1$. Par transitivité, il suffit de traiter les cas",
+     "new": "Par la formule de transitivité, il suffit de traiter le cas où $X_2=Y_2$, $f_2=1$. Par dévissage, on ramène à $M_2=g_{*}j_{!}A_V$, où $j:V\\to U$ est une immersion ouverte et $g:U\\to Y_2$ un morphisme fini, puis, par (SGA~4~XVIII~3.1.12.3), au cas où $M_2=A_{Y_2}$. Par localisation sur $X_1$, on peut supposer d'autre part que $f_1=g_1j_1$, où $j_1$ est une immersion fermée, et $g_1$ un morphisme lisse purement de dimension relative $n_1$. Par transitivité, il suffit de traiter les cas"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001844",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted_french_and_maintained_english_integrated_pending_translation_consumers_reader_and_publication",
+   "codex_claim": "u_i\\in\\Hom_{f_i}^{(4)}(L_i,M_i)",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 79,
+     "old": "Grâce à 1.7.3, on peut définir, pour $u_i\\in\\Hom_f^{(4)}(L_i,M_i)$,",
+     "new": "Grâce à 1.7.3, on peut définir, pour $u_i\\in\\Hom_{f_i}^{(4)}(L_i,M_i)$,"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001845",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted_french_and_maintained_english_integrated_pending_translation_consumers_reader_and_publication",
+   "codex_claim": "upper horizontal arrow label 2.2.4",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 83,
+     "old": "\\uRHom(f_{1!}A_{U_1},F_1)\\otimes^{L}_{S}\\uRHom(f_{2!}A_{U_2},F_2) \\arrow[r,\"2.2.3\"] \\arrow[d,\"\\sim\"'] & \\uRHom(f_{!}A_U,F) \\arrow[d,\"\\sim\"]\\\\",
+     "new": "\\uRHom(f_{1!}A_{U_1},F_1)\\otimes^{L}_{S}\\uRHom(f_{2!}A_{U_2},F_2) \\arrow[r,\"2.2.4\"] \\arrow[d,\"\\sim\"'] & \\uRHom(f_{!}A_U,F) \\arrow[d,\"\\sim\"]\\\\"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001846",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted_french_and_maintained_english_integrated_pending_translation_consumers_reader_and_publication",
+   "codex_claim": "the same expression labels one direct vertical morphism A→C",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 84,
+     "old": "\\node (B) at (0,1.3) {$\\uRHom(u_1,v_1)\\otimes^L_S\\uRHom(u_2,v_2)$};",
+     "new": ""
+    },
+    {
+     "layer": "corrected",
+     "page": 84,
+     "old": "\\draw[->] (A) -- (B);\n\\draw[->] (B) -- (C);",
+     "new": "\\draw[->] (A) -- node[midway,fill=white,inner sep=2pt] {$\\uRHom(u_1,v_1)\\otimes^L_S\\uRHom(u_2,v_2)$} (C);"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; the diplomatic layer already has the single labelled arrow"
+  },
+  {
+   "id": "SGA-SRC-001847",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted_french_and_maintained_english_integrated_pending_translation_consumers_reader_and_publication",
+   "codex_claim": "replace those local E,F occurrences with the bound Y-objects P,Q",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 85,
+     "old": "f^{*}\\uRHom(E,F)\\otimes^L f^{*}\\uRHom(L,M) \\arrow[r,\"{f^*(2.2.3)}\"] \\arrow[d,\"{2.1.1\\otimes 2.1.1}\"'] & f^{*}\\uRHom(E\\otimes^LL,F\\otimes^LM) \\arrow[d,\"2.1.1\"]\\\\\n\\uRHom(f^{*}E,f^{*}F)\\otimes^L\\uRHom(f^{*}L,f^{*}M) \\arrow[r,\"2.2.3\"'] & \\uRHom(f^{*}(E\\otimes^LL),f^{*}(F\\otimes^LM))",
+     "new": "f^{*}\\uRHom(P,Q)\\otimes^L f^{*}\\uRHom(L,M) \\arrow[r,\"{f^*(2.2.3)}\"] \\arrow[d,\"{2.1.1\\otimes 2.1.1}\"'] & f^{*}\\uRHom(P\\otimes^LL,Q\\otimes^LM) \\arrow[d,\"2.1.1\"]\\\\\n\\uRHom(f^{*}P,f^{*}Q)\\otimes^L\\uRHom(f^{*}L,f^{*}M) \\arrow[r,\"2.2.3\"'] & \\uRHom(f^{*}(P\\otimes^LL),f^{*}(Q\\otimes^LM))"
+    },
+    {
+     "layer": "corrected",
+     "page": 85,
+     "old": "f^{*}E\\otimes^L f^{*}\\uRHom(E,F)\\longrightarrow f^{*}F",
+     "new": "f^{*}P\\otimes^L f^{*}\\uRHom(P,Q)\\longrightarrow f^{*}Q"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001848",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted_french_and_maintained_english_integrated_pending_translation_consumers_reader_and_publication",
+   "codex_claim": "equation environment tagged (2.6.2)",
+   "status": "rejected",
+   "why": "c4 tags the square as (2.6.2); the later references 'commutativité de 2.6.2' do not settle which display is meant, and the print has no number there"
+  },
+  {
+   "id": "SGA-SRC-001849",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted_french_and_maintained_english_integrated_pending_translation_consumers_reader_and_publication",
+   "codex_claim": "p_1,p_2",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 89,
+     "old": "& X \\arrow[dl,\"P_1\"'] \\arrow[dr,\"P_2\"] & \\\\",
+     "new": "& X \\arrow[dl,\"p_1\"'] \\arrow[dr,\"p_2\"] & \\\\"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001850",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "III",
+   "codex_status": "accepted_french_and_maintained_english_integrated_pending_translation_consumers_reader_and_publication",
+   "codex_claim": "A_{X_2}(-N)[-2N]",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 90,
+     "old": "$A_{X_2}(-N)[2N]$",
+     "new": "$A_{X_2}(-N)[-2N]$"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001851",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "I",
+   "codex_status": "accepted_french_both_branches_and_maintained_english_integrated_pending_translation_consumers_reader_and_publication",
+   "codex_claim": "",
+   "status": "present",
+   "note": "(mu_n)_x at (5.1.8)"
+  },
+  {
+   "id": "SGA-SRC-001896",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted_existing_current_postimages_bound_reader_publication_open",
+   "codex_claim": "retain g_checkP instead of printed g_P",
+   "status": "present",
+   "note": "Codex: current surfaces already coherent; spot-checked (g_check P, Sw = check Sw, y'_0 in C', g', k(eta_1), sigma'_y(e), Sw_{G,x})"
+  },
+  {
+   "id": "SGA-SRC-001897",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "(3.8.1)",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 381,
+     "old": "% source check 2026-06-11: scan p382 prints reference (4.3.4) exactly; left unchanged.",
+     "new": "% Source correction: scan p382 prints (4.3.4); current uses the valid reference (3.8.1)."
+    },
+    {
+     "layer": "corrected",
+     "page": 382,
+     "old": "utiliser les isomorphismes (4.3.4). Mais",
+     "new": "utiliser les isomorphismes (3.8.1). Mais"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; the comment line updated as in c4"
+  },
+  {
+   "id": "SGA-SRC-001898",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "Lemma 4.1",
+   "status": "present",
+   "note": "lemme 4.1 (the c5 base carries it)"
+  },
+  {
+   "id": "SGA-SRC-001899",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted_existing_current_postimages_bound_reader_publication_open",
+   "codex_claim": "retain checked target instead of printed self-isomorphism",
+   "status": "present",
+   "note": "Codex: current surfaces already coherent; spot-checked (g_check P, Sw = check Sw, y'_0 in C', g', k(eta_1), sigma'_y(e), Sw_{G,x})"
+  },
+  {
+   "id": "SGA-SRC-001900",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted_existing_current_postimages_bound_reader_publication_open",
+   "codex_claim": "retain C' instead of printed C",
+   "status": "present",
+   "note": "Codex: current surfaces already coherent; spot-checked (g_check P, Sw = check Sw, y'_0 in C', g', k(eta_1), sigma'_y(e), Sw_{G,x})"
+  },
+  {
+   "id": "SGA-SRC-001901",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted_existing_current_postimages_bound_reader_publication_open",
+   "codex_claim": "retain g' instead of printed g*",
+   "status": "present",
+   "note": "Codex: current surfaces already coherent; spot-checked (g_check P, Sw = check Sw, y'_0 in C', g', k(eta_1), sigma'_y(e), Sw_{G,x})"
+  },
+  {
+   "id": "SGA-SRC-001902",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted_existing_current_postimages_bound_reader_publication_open",
+   "codex_claim": "retain eta_1) completion of printed blank",
+   "status": "present",
+   "note": "Codex: current surfaces already coherent; spot-checked (g_check P, Sw = check Sw, y'_0 in C', g', k(eta_1), sigma'_y(e), Sw_{G,x})"
+  },
+  {
+   "id": "SGA-SRC-001903",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted_existing_current_postimages_bound_reader_publication_open",
+   "codex_claim": "retain (5.2.1) instead of printed (6.2.1)",
+   "status": "present",
+   "note": "Codex: current surfaces already coherent; spot-checked (g_check P, Sw = check Sw, y'_0 in C', g', k(eta_1), sigma'_y(e), Sw_{G,x})"
+  },
+  {
+   "id": "SGA-SRC-001904",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted_existing_current_postimages_bound_reader_publication_open",
+   "codex_claim": "retain e instead of printed ell",
+   "status": "present",
+   "note": "Codex: current surfaces already coherent; spot-checked (g_check P, Sw = check Sw, y'_0 in C', g', k(eta_1), sigma'_y(e), Sw_{G,x})"
+  },
+  {
+   "id": "SGA-SRC-001905",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted_existing_current_postimages_bound_reader_publication_open",
+   "codex_claim": "retain x instead of printed n",
+   "status": "present",
+   "note": "Codex: current surfaces already coherent; spot-checked (g_check P, Sw = check Sw, y'_0 in C', g', k(eta_1), sigma'_y(e), Sw_{G,x})"
+  },
+  {
+   "id": "SGA-SRC-001906",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "conditions of 6.1",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 396,
+     "old": "Soient $C$ une courbe algébrique connexe, lisse et propre sur le corps $k$ algébriquement clos, $\\eta$ le point générique de $C$, $\\Delta\\subset D^+(A)$ une sous-catégorie triangulée de $D^+(A)$ stable par facteurs directs, $F$ un complexe de faisceaux de $A$-modules tel que les conditions i), ii) de 7.1 soient remplies. Sous ces conditions on a $\\RG_C(F)\\in\\Ob(\\Delta)$, et la formule suivante (formule d'Euler-Poincaré) est vraie:",
+     "new": "Soient $C$ une courbe algébrique connexe, lisse et propre sur le corps $k$ algébriquement clos, $\\eta$ le point générique de $C$, $\\Delta\\subset D^+(A)$ une sous-catégorie triangulée de $D^+(A)$ stable par facteurs directs, $F$ un complexe de faisceaux de $A$-modules tel que les conditions i), ii) de 6.1 soient remplies. Sous ces conditions on a $\\RG_C(F)\\in\\Ob(\\Delta)$, et la formule suivante (formule d'Euler-Poincaré) est vraie:"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001907",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted_existing_current_postimages_bound_reader_publication_open",
+   "codex_claim": "remove duplicated F",
+   "status": "present",
+   "note": "Codex: current surfaces already coherent; spot-checked (g_check P, Sw = check Sw, y'_0 in C', g', k(eta_1), sigma'_y(e), Sw_{G,x})"
+  },
+  {
+   "id": "SGA-SRC-001908",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "X",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "as in 6.1",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 401,
+     "old": "Soient $C$ une courbe algébrique connexe lisse, propre sur $k$, $V$ un ouvert non vide de $C$, $\\Delta$ une sous-catégorie de $D^+(A)$ comme dans 7.1, et $F$ un complexe de faisceaux de $A$-modules sur $V$ tel que sa restriction à un sous-ouvert non vide convenable de $V$ soit trivialisée par un revêtement galoisien de $V$. Supposons de plus que $F_{\\bar x}\\in\\Ob(\\Delta)$ quelque soit $x\\in V$. Sous ces conditions on a:",
+     "new": "Soient $C$ une courbe algébrique connexe lisse, propre sur $k$, $V$ un ouvert non vide de $C$, $\\Delta$ une sous-catégorie de $D^+(A)$ comme dans 6.1, et $F$ un complexe de faisceaux de $A$-modules sur $V$ tel que sa restriction à un sous-ouvert non vide convenable de $V$ soit trivialisée par un revêtement galoisien de $V$. Supposons de plus que $F_{\\bar x}\\in\\Ob(\\Delta)$ quelque soit $x\\in V$. Sous ces conditions on a:"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001909",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XV",
+   "codex_status": "accepted_current_and_diplomatic_source_layers_integrated_reader_publication_open",
+   "codex_claim": "X is the S-prescheme",
+   "status": "present",
+   "note": "'X un S-préschéma' in Proposition 1 b)"
+  },
+  {
+   "id": "SGA-SRC-001910",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XV",
+   "codex_status": "accepted_current_and_diplomatic_source_layers_integrated_reader_publication_open",
+   "codex_claim": "pullback Fr_{X/S}^*",
+   "status": "present",
+   "note": "Fr_{X/S}^* in the exact sequence"
+  },
+  {
+   "id": "SGA-SRC-001911",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "\\nu(g_R^{-1}f'_R)-1=\\nu(f''_R)-1",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 416,
+     "old": "\\nu(g_R^{-1}f') - 1 = \\nu(f''_R) - 1",
+     "new": "\\nu(g_R^{-1}f'_R) - 1 = \\nu(f''_R) - 1"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001952",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "{X'_x}^{g^{-1}f'}",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 424,
+     "old": "S_x(f',f,G,\\varphi)(g)=\\sum_{x' \\in {X'}^{g^{-1}f'}/G^\\psi}",
+     "new": "S_x(f',f,G,\\varphi)(g)=\\sum_{x' \\in {X'_x}^{g^{-1}f'}/G^\\psi}"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001953",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "S(f',f)",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 425,
+     "old": "\\sum_{x\\in Y^f} S_{x,\\ell}(f,f',G,\\varphi)",
+     "new": "\\sum_{x\\in Y^f} S_{x,\\ell}(f',f,G,\\varphi)"
+    },
+    {
+     "layer": "corrected",
+     "page": 425,
+     "old": "= \\sum_{x\\in U^f}\\nu_x(f)\\mathrm{NW}^{G,\\varphi}_f(x)+\\sum_{x\\in Y^f}S_{x,\\ell}(f,f',G,\\varphi) \\quad .",
+     "new": "= \\sum_{x\\in U^f}\\nu_x(f)\\mathrm{NW}^{G,\\varphi}_f(x)+\\sum_{x\\in Y^f}S_{x,\\ell}(f',f,G,\\varphi) \\quad ."
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001954",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "starred trace retained in current; unstarred scan reading restored diplomatically",
+   "status": "present",
+   "note": "Codex: starred trace kept in the corrected layer"
+  },
+  {
+   "id": "SGA-SRC-001955",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "X(k)",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 430,
+     "old": "Soit $x\\in X^f$ un point fixe fermé de $f$. Le morphisme $u$ induit un endomorphisme du module $F_x$, la fibre du faisceau $F$ dans le point $x$. (On identifie les points fermés de $X$ avec les points de $X(x)$) :",
+     "new": "Soit $x\\in X^f$ un point fixe fermé de $f$. Le morphisme $u$ induit un endomorphisme du module $F_x$, la fibre du faisceau $F$ dans le point $x$. (On identifie les points fermés de $X$ avec les points de $X(k)$) :"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001956",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "(f',f)",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 430,
+     "old": "S_{x,\\ell^n}(f,f',G,\\varphi)(g)\\Tr_A(g^{-1}u_M^\\vee),",
+     "new": "S_{x,\\ell^n}(f',f,G,\\varphi)(g)\\Tr_A(g^{-1}u_M^\\vee),"
+    },
+    {
+     "layer": "corrected",
+     "page": 431,
+     "old": "S_{x,\\ell^n}(f,f',G,\\varphi):G\\longrightarrow\\La_n",
+     "new": "S_{x,\\ell^n}(f',f,G,\\varphi):G\\longrightarrow\\La_n"
+    },
+    {
+     "layer": "corrected",
+     "page": 431,
+     "old": "S_x(f,f',G,\\varphi)$ (cf. 4)",
+     "new": "S_x(f',f,G,\\varphi)$ (cf. 4)"
+    },
+    {
+     "layer": "corrected",
+     "page": 431,
+     "old": "S_{x,\\ell^n}(f,f',G,\\varphi)(g)=\n(i_\\ell\\circ S_x(f,f',G,\\varphi))(g)\\bmod \\ell^n\\bZ.",
+     "new": "S_{x,\\ell^n}(f',f,G,\\varphi)(g)=\n(i_\\ell\\circ S_x(f',f,G,\\varphi))(g)\\bmod \\ell^n\\bZ."
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001957",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "X'_x^{f'}",
+   "status": "present",
+   "note": "X_x^{\\prime f'}"
+  },
+  {
+   "id": "SGA-SRC-001958",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "stabilisateur",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 433,
+     "old": "\\subsubsection*{b)} Soit $x'\\in X_x^{\\prime f'}$ et $G_{x'}$ la stabilisation du point $x'$. Evidemment $G_{x'}$ est stable par $\\varphi$ et on obtient donc un endomorphisme% source errata p433: (1) original prints \"la stabilisation du point x'\" — should be \"stabilisateur\" (stabilizer; cf. p424 \"G_{x'} étant le stabilisateur\"); kept source-faithful. (2) source prints \"Soit x'=X'_x^f\" (with \"=\" and superscript f); corrected to \"\\in\" (b only) and \"f'\" (a+b). NB the a)-clause source ALSO writes superscript \"f\" (\"x'\\in X'_x^f\", zoom-confirmed p433 600dpi) — the source uses \"f\" in BOTH clauses; normalized to \"f'\" per the exposé-wide fixed-point notation X'_x^{f'} (cf. p424 (4.9.1)) + math (f' is the lift on X'; f acts only on X). This f->f' normalization is less-conservative than erratum (3) below, which keeps the analogous F'/f' source-faithful; strict-diplomatic alternative = keep source \"f\".",
+     "new": "\\subsubsection*{b)} Soit $x'\\in X_x^{\\prime f'}$ et $G_{x'}$ le stabilisateur du point $x'$. Evidemment $G_{x'}$ est stable par $\\varphi$ et on obtient donc un endomorphisme% source errata p433: (1) original prints \"la stabilisation du point x'\" — should be \"stabilisateur\" (stabilizer; cf. p424 \"G_{x'} étant le stabilisateur\"); kept source-faithful. (2) source prints \"Soit x'=X'_x^f\" (with \"=\" and superscript f); corrected to \"\\in\" (b only) and \"f'\" (a+b). NB the a)-clause source ALSO writes superscript \"f\" (\"x'\\in X'_x^f\", zoom-confirmed p433 600dpi) — the source uses \"f\" in BOTH clauses; normalized to \"f'\" per the exposé-wide fixed-point notation X'_x^{f'} (cf. p424 (4.9.1)) + math (f' is the lift on X'; f acts only on X). This f->f' normalization is less-conservative than erratum (3) below, which keeps the analogous F'/f' source-faithful; strict-diplomatic alternative = keep source \"f\"."
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001959",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "x' in X'_x^{f'}",
+   "status": "present",
+   "note": "x' in X_x^{\\prime f'}"
+  },
+  {
+   "id": "SGA-SRC-001960",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "nu(g inverse f prime)>1",
+   "status": "present",
+   "note": "nu_{x'}(g^{-1}f') > 1"
+  },
+  {
+   "id": "SGA-SRC-001961",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "On va donc supposer",
+   "status": "present",
+   "note": "'On va donc supposer'"
+  },
+  {
+   "id": "SGA-SRC-001962",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_source_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "la normalisation de X dans K",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 440,
+     "old": "Soit $K\\supset k(\\eta)$ l'extension galoisienne de $k(\\eta)$ correspondante au sous-groupe $H_1$, et $X'$ la normalisée de $X$ dans $K$. Évidemment on peut définir un endomorphisme",
+     "new": "Soit $K\\supset k(\\eta)$ l'extension galoisienne de $k(\\eta)$ correspondante au sous-groupe $H_1$, et $X'$ la normalisation de $X$ dans $K$. Évidemment on peut définir un endomorphisme"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; "
+  },
+  {
+   "id": "SGA-SRC-001963",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_proof_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "direct uniformizer proof using r=nu(f prime sub R) and f prime sub R(pi)-pi in m^r minus m^(r+1)",
+   "status": "rejected",
+   "why": "c4 replaces the printed proof by a new argument (a repair of the mathematics, not a reading); a decision for the user, as GLOBAL_ISSUES_SGA item 45"
+  },
+  {
+   "id": "SGA-SRC-001964",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XII",
+   "codex_status": "accepted_proof_and_available_consumers_integrated_reader_publication_open",
+   "codex_claim": "direct uniformizer proof using r=nu(f prime sub R) and f prime sub R(pi)-pi in m^r minus m^(r+1)",
+   "status": "rejected",
+   "why": "same replacement proof as SGA-SRC-001963; not taken"
+  },
+  {
+   "id": "SGA-SRC-002203",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "V",
+   "codex_status": "accepted",
+   "codex_claim": "n<p+q / n>=p+q; nonnegative n,p; discharge p=q=0 and q>n+1 before the printed argument",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 228,
+     "old": "est contenu dans \\(J^{\\,n+1-q}F^q(X_n)\\), et ce dernier est nul par hypothèse. Si \\(n>p+q\\), l'image de \\(J^pF^q(X_n)\\) dans \\(X_{p+q-1}\\) par le morphisme de transition est contenue dans \\(J^pF^q(X_{p+q-1})\\), égal à zéro par hypothèse. L'inclusion",
+     "new": "est contenu dans \\(J^{\\,n+1-q}F^q(X_n)\\), et ce dernier est nul par hypothèse. Si \\(n\\ge p+q\\), l'image de \\(J^pF^q(X_n)\\) dans \\(X_{p+q-1}\\) par le morphisme de transition est contenue dans \\(J^pF^q(X_{p+q-1})\\), égal à zéro par hypothèse. L'inclusion"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; only the case split n>p+q -> n>=p+q; c4's added hypotheses and sub-cases ('positifs ou nuls', p=q=0, q>n+1) are editorial additions, not taken"
+  },
+  {
+   "id": "SGA-SRC-002204",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XV",
+   "codex_status": "accepted",
+   "codex_claim": "géométrique (c'est l'image inverse par $\\overline X\\to X$ de la correspondance de Frobenius sur $(X,F)$) et",
+   "status": "applied",
+   "applied": [
+    {
+     "layer": "corrected",
+     "page": 461,
+     "old": "Le corollaire de la proposition 3 montre que l'endomorphisme de $\\RGamma_{\\overline X}(\\overline F)$ défini par le couple $(\\overline{\\fr}_X,\\overline{\\Fr}^*_{F/X})$ est l'automorphisme inverse de celui que définit $f_X$. Nous dirons que $(\\overline{\\fr}_X,\\overline{\\Fr}^*_{F/X})$ est la correspondance de Frobenius géométrique, c'est l'image inverse par $\\overline X\\to X$ de la correspondance de Frobenius sur $(X,F)$, et nous désignerons par",
+     "new": "Le corollaire de la proposition 3 montre que l'endomorphisme de $\\RGamma_{\\overline X}(\\overline F)$ défini par le couple $(\\overline{\\fr}_X,\\overline{\\Fr}^*_{F/X})$ est l'automorphisme inverse de celui que définit $f_X$. Nous dirons que $(\\overline{\\fr}_X,\\overline{\\Fr}^*_{F/X})$ est la correspondance de Frobenius géométrique (c'est l'image inverse par $\\overline X\\to X$ de la correspondance de Frobenius sur $(X,F)$) et nous désignerons par"
+    }
+   ],
+   "note": "c4 (21 Sep) has it, c5 (the base) not; the diplomatic layer already has the parentheses (S5-FR-0042)"
+  },
+  {
+   "id": "SGA-SRC-002205",
+   "source": "SGA_SOURCE_ERROR_QUEUE.jsonl",
+   "expose": "XV",
+   "codex_status": "accepted",
+   "codex_claim": " =\\prod_i\\prod_j\\bigl(L_{\\R^j_!v(\\R^i_!u(F))}\\bigr)^{(-1)^i(-1)^j}",
+   "status": "present",
+   "note": "corrected layer flat double product, diplomatic nested (S5-FR-0043) - both already so"
+  },
+  {
+   "id": "c4-hunk-0",
+   "source": "ref_c4 (c5 line 1239)",
+   "record": "SGA-SRC-001842",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001842"
+  },
+  {
+   "id": "c4-hunk-1",
+   "source": "ref_c4 (c5 line 1283)",
+   "record": "SGA-SRC-001842",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001842"
+  },
+  {
+   "id": "c4-hunk-2",
+   "source": "ref_c4 (c5 line 1441)",
+   "status": "superseded",
+   "superseded_by": "c5-only line, not a c4 correction: c5 reads (mu_n)_X with the false FIX #53 comment, c4 the printed (mu_n)_x; the scan-check corrected layer reads (mu_n)_x (p. 52), = SGA-SRC-001851"
+  },
+  {
+   "id": "c4-hunk-3",
+   "source": "ref_c4 (c5 line 1956)",
+   "record": "SGA-SRC-001843",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001843"
+  },
+  {
+   "id": "c4-hunk-4",
+   "source": "ref_c4 (c5 line 1970)",
+   "record": "SGA-SRC-001844",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001844"
+  },
+  {
+   "id": "c4-hunk-5",
+   "source": "ref_c4 (c5 line 2066)",
+   "record": "SGA-SRC-001845",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001845"
+  },
+  {
+   "id": "c4-hunk-6",
+   "source": "ref_c4 (c5 line 2151)",
+   "record": "SGA-SRC-001846",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001846"
+  },
+  {
+   "id": "c4-hunk-7",
+   "source": "ref_c4 (c5 line 2158)",
+   "record": "SGA-SRC-001846",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001846"
+  },
+  {
+   "id": "c4-hunk-8",
+   "source": "ref_c4 (c5 line 2190)",
+   "record": "SGA-SRC-001847",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001847"
+  },
+  {
+   "id": "c4-hunk-9",
+   "source": "ref_c4 (c5 line 2196)",
+   "record": "SGA-SRC-001847",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001847"
+  },
+  {
+   "id": "c4-hunk-10",
+   "source": "ref_c4 (c5 line 2203)",
+   "record": "SGA-SRC-001848",
+   "status": "rejected",
+   "why": "c4 tags the square as (2.6.2); the later references 'commutativité de 2.6.2' do not settle which display is meant, and the print has no number there"
+  },
+  {
+   "id": "c4-hunk-11",
+   "source": "ref_c4 (c5 line 2208)",
+   "record": "SGA-SRC-001848",
+   "status": "rejected",
+   "why": "c4 tags the square as (2.6.2); the later references 'commutativité de 2.6.2' do not settle which display is meant, and the print has no number there"
+  },
+  {
+   "id": "c4-hunk-12",
+   "source": "ref_c4 (c5 line 2324)",
+   "record": "SGA-SRC-001849",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001849"
+  },
+  {
+   "id": "c4-hunk-13",
+   "source": "ref_c4 (c5 line 2410)",
+   "record": "SGA-SRC-001850",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001850"
+  },
+  {
+   "id": "c4-hunk-14",
+   "source": "ref_c4 (c5 line 7360)",
+   "record": "SGA-SRC-002203",
+   "status": "rejected",
+   "why": "c4 (21 Sep) has it, c5 (the base) not; only the case split n>p+q -> n>=p+q; c4's added hypotheses and sub-cases ('positifs ou nuls', p=q=0, q>n+1) are editorial additions, not taken"
+  },
+  {
+   "id": "c4-hunk-15",
+   "source": "ref_c4 (c5 line 7373)",
+   "record": "SGA-SRC-002203",
+   "status": "rejected",
+   "why": "c4 (21 Sep) has it, c5 (the base) not; only the case split n>p+q -> n>=p+q; c4's added hypotheses and sub-cases ('positifs ou nuls', p=q=0, q>n+1) are editorial additions, not taken"
+  },
+  {
+   "id": "c4-hunk-16",
+   "source": "ref_c4 (c5 line 7377)",
+   "record": "SGA-SRC-002203",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-002203"
+  },
+  {
+   "id": "c4-hunk-17",
+   "source": "ref_c4 (c5 line 12503)",
+   "record": "SGA-SRC-001897",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001897"
+  },
+  {
+   "id": "c4-hunk-18",
+   "source": "ref_c4 (c5 line 12932)",
+   "record": "SGA-SRC-001906",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001906"
+  },
+  {
+   "id": "c4-hunk-19",
+   "source": "ref_c4 (c5 line 13089)",
+   "record": "SGA-SRC-001908",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001908"
+  },
+  {
+   "id": "c4-hunk-20",
+   "source": "ref_c4 (c5 line 13467)",
+   "record": "SGA-SRC-001911",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001911"
+  },
+  {
+   "id": "c4-hunk-21",
+   "source": "ref_c4 (c5 line 13579)",
+   "record": "SGA-SRC-001963",
+   "status": "rejected",
+   "why": "c4 replaces the printed proof by a new argument (a repair of the mathematics, not a reading); a decision for the user, as GLOBAL_ISSUES_SGA item 45"
+  },
+  {
+   "id": "c4-hunk-22",
+   "source": "ref_c4 (c5 line 13581)",
+   "record": "SGA-SRC-001963",
+   "status": "rejected",
+   "why": "c4 replaces the printed proof by a new argument (a repair of the mathematics, not a reading); a decision for the user, as GLOBAL_ISSUES_SGA item 45"
+  },
+  {
+   "id": "c4-hunk-23",
+   "source": "ref_c4 (c5 line 13583)",
+   "record": "SGA-SRC-001963",
+   "status": "rejected",
+   "why": "c4 replaces the printed proof by a new argument (a repair of the mathematics, not a reading); a decision for the user, as GLOBAL_ISSUES_SGA item 45"
+  },
+  {
+   "id": "c4-hunk-24",
+   "source": "ref_c4 (c5 line 13728)",
+   "record": "SGA-SRC-001952",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001952"
+  },
+  {
+   "id": "c4-hunk-25",
+   "source": "ref_c4 (c5 line 13743)",
+   "record": "SGA-SRC-001953",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001953"
+  },
+  {
+   "id": "c4-hunk-26",
+   "source": "ref_c4 (c5 line 13749)",
+   "record": "SGA-SRC-001953",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001953"
+  },
+  {
+   "id": "c4-hunk-27",
+   "source": "ref_c4 (c5 line 13886)",
+   "record": "SGA-SRC-001955",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001955"
+  },
+  {
+   "id": "c4-hunk-28",
+   "source": "ref_c4 (c5 line 13896)",
+   "record": "SGA-SRC-001956",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001956"
+  },
+  {
+   "id": "c4-hunk-29",
+   "source": "ref_c4 (c5 line 13900)",
+   "record": "SGA-SRC-001956",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001956"
+  },
+  {
+   "id": "c4-hunk-30",
+   "source": "ref_c4 (c5 line 13902)",
+   "record": "SGA-SRC-001956",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001956"
+  },
+  {
+   "id": "c4-hunk-31",
+   "source": "ref_c4 (c5 line 13904)",
+   "record": "SGA-SRC-001956",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001956"
+  },
+  {
+   "id": "c4-hunk-32",
+   "source": "ref_c4 (c5 line 14013)",
+   "record": "SGA-SRC-001958",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001958"
+  },
+  {
+   "id": "c4-hunk-33",
+   "source": "ref_c4 (c5 line 14196)",
+   "record": "SGA-SRC-001962",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001962"
+  },
+  {
+   "id": "c4-hunk-34",
+   "source": "ref_c4 (c5 line 14520)",
+   "record": "SGA-SRC-001840",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-001840"
+  },
+  {
+   "id": "c4-hunk-35",
+   "source": "ref_c4 (c5 line 14864)",
+   "record": "SGA-SRC-002204",
+   "status": "applied",
+   "note": "same decision as SGA-SRC-002204"
+  }
+ ],
+ "notes": [
+  "c4 (ref_c4, 21 Sep) and c5 (the base, 29 Aug) differ in 36 places: 35 are Codex corrections only in c4 (now reconciled above), 1 is c5-only (FIX #53).",
+  "Most SGA 5 queue records (Exp. VI-VIII, X-XV, the Spanish reconciliation set) were already in c5, the base of the scan check."
+ ]
+}

@@ -1,0 +1,229 @@
+[
+ {
+  "page": 416,
+  "where": "between the displays 'ν(g_R^{-1}f') - 1 = ν(f''_R) - 1' and 'c^φ(g) = c^{φ'}(e) (G_g^φ = G_e^{φ'}) (cf. 4.2)'",
+  "scan": "nothing between the two displays: no ink at all in the 65 pixel rows between them, across the whole width of the page",
+  "tex": "a line 'et' between the two displays",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\net\n\\[",
+   "new": "\\]\n\\["
+  },
+  "note": "The TeX adds the word 'et'."
+ },
+ {
+  "page": 416,
+  "where": "display 'c^φ(g) = c^{φ'}(e) (G_g^φ = G_e^{φ'}) (cf. 4.2)'",
+  "scan": "the display ends with '(cf. 4.2)', no full stop (only dust specks of one or two pixels to its right)",
+  "tex": "(\\text{cf. 4.2}) \\quad .",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\text{cf. 4.2}) \\quad .",
+   "new": "(\\text{cf. 4.2})"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 416,
+  "where": "display 'G_e^{φ'} = (G_e^{φ'})_e^{id_{G_e^{φ'}}}' after 'et qu'on a :'",
+  "scan": "no full stop after the display",
+  "tex": "(G_e^{\\varphi'})_e^{\\id_{G_e^{\\varphi'}}} \\quad .",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "_e^{\\id_{G_e^{\\varphi'}}} \\quad .",
+   "new": "_e^{\\id_{G_e^{\\varphi'}}}"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 416,
+  "where": "Lemme 4.7, display 'c = Card(Im(G ⟶ Aut_k(m/m^2)))'",
+  "scan": "Card, with a capital C",
+  "tex": "\\card(...), which prints 'card' (s5.tex line 261: \\providecommand{\\card}{\\operatorname{card}})",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "c = \\card(\\im(G",
+   "new": "c = \\operatorname{Card}(\\im(G"
+  },
+  "note": "Convention of Exposé XII §4 (see the message): the print types 'Card' wherever the TeX has \\card (p. 414 (4.2), p. 423 three times, and more). If \\card is redefined as \\operatorname{Card} once, this fix is not needed (applying it as well does no harm)."
+ },
+ {
+  "page": 416,
+  "where": "Lemme 4.7, second paragraph: 'Soit'",
+  "scan": "'Soit' typed plain, not underlined (pixel check: no rule under the word); the sentence 'On a alors la relation suivante de divisibilité' below it is underlined",
+  "tex": "\\emph{Soit (the \\emph group opens before 'Soit' and closes after the display c \\mid (r - 1))",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Soit\n\\[",
+   "new": "Soit\n\\emph{\\["
+  },
+  "note": "\\emph is this exposé's markup for the print's underlined statements. The fix only moves the opening of the group after 'Soit'; the closing brace '\\]}' stays as it is."
+ },
+ {
+  "page": 416,
+  "where": "display 'c|(r-1)' that ends Lemme 4.7 (printed at the top of p. 417)",
+  "scan": "c|(r-1) with no full stop",
+  "tex": "c \\mid (r - 1) \\quad .",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "c \\mid (r - 1) \\quad .",
+   "new": "c \\mid (r - 1)"
+  },
+  "note": "The TeX adds a full stop at the end of the display. The display belongs to p. 417 (see the marker item under p. 417); its old is in page_416.tex: apply this fix before the marker is moved, or look for it under p. 417 afterwards."
+ },
+ {
+  "page": 416,
+  "where": "display 'ν(g_R^{-1}f') - 1 = ν(f''_R) - 1' after 'en observant aisément qu'on a :'",
+  "scan": "ν(g_R^{-1}f') - 1: f' without the index R (checked at 2x; the R under g and under f'' are crisp)",
+  "tex": "\\nu(g_R^{-1}f') - 1 = \\nu(f''_R) - 1 (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\nu(g_R^{-1}f'_R) - 1 = \\nu(f''_R) - 1",
+  "note": "The TeX keeps the printed reading; the corrected layer (current/s5.tex) already reads f'_R. The same quantity is ν(g_R^{-1}f'_R) in the statement of 4.6 and at the top of this page."
+ },
+ {
+  "page": 417,
+  "where": "top of the page: the display 'c|(r-1)' that ends Lemme 4.7",
+  "scan": "p. 417 begins with the display 'c|(r-1)', then 'Démonstration. Il est clair que l'entier r satisfait aux conditions suivantes :'; p. 416 ends with 'On a alors la relation suivante de divisibilité :' and blank paper",
+  "tex": "the display '\\[ c \\mid (r - 1) \\quad . \\]}' (diplomatic s5.tex lines 14040-14042) stands at the end of page_416.tex, before the folio-417 marker (line 14047)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 417 really begins at the display '\\[' + 'c \\mid (r - 1)' (diplomatic line 14040). Exact fix: python -I move_marker.py 5 417 '\\[' --before (simulated in memory on both layers: the marker lands on its own line between 'On a alors la relation suivante de divisibilité :' and that '\\[', inside the \\emph group, where a comment line does no harm)."
+ },
+ {
+  "page": 417,
+  "where": "a) and b): 'f'_r : A/m^r ⟶ A/m^r' and 'f'_{r+1} : A/m^{r+1} ⟶ A/m^{r+1}'",
+  "scan": "the ring is typed A (four times)",
+  "tex": "A/\\fm^r, A/\\fm^{r+1} (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "f'_r : R/\\fm^r \\longrightarrow R/\\fm^r ; f'_{r+1} : R/\\fm^{r+1} \\longrightarrow R/\\fm^{r+1}",
+  "note": "The TeX keeps the printed reading. The ring of Proposition 4.6 and Lemme 4.7 is R, also in this proof (x ∈ R on this page, α ∈ R on p. 418, x_o ∈ R on p. 419); A appears only here and in 'le corps K des fractions de A' on p. 420: a slip of notation. For the corrected edition, all five or none."
+ },
+ {
+  "page": 418,
+  "where": "second line of the display after 'groupes abéliens :': 'x ⟶ (f'_R(x)-x)mod m^{r+1}'",
+  "scan": "a plain long arrow, no bar at its tail (checked at 2x), the same arrow as in 'm ⟶ m^r/m^{r+1}' above it",
+  "tex": "x \\longmapsto (f'_R(x) - x) \\bmod \\fm^{r+1}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "x \\longmapsto",
+   "new": "x \\longrightarrow"
+  },
+  "note": "The TeX writes \\longmapsto for the print's plain arrow."
+ },
+ {
+  "page": 419,
+  "where": "'Mais on a :' before the display f'_R(αx) - αf'_R(x) = (f'_R(α) - α)f'_R(x) ,",
+  "scan": "Mais on a :",
+  "tex": "Mais on a (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Mais on a\n\\[",
+   "new": "Mais on a :\n\\["
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 419,
+  "where": "display after 'parce que': 'f'_R(α) - α ∈ m^r (Condition a))'",
+  "scan": "(Condition a)) with a capital C",
+  "tex": "\\hbox{(condition a))}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\hbox{(condition",
+   "new": "\\hbox{(Condition"
+  },
+  "note": "Capital against small."
+ },
+ {
+  "page": 419,
+  "where": "same display, after '(Condition a))'",
+  "scan": "no comma after '(Condition a))'; the print sets 'f'_R(x) ∈ m (x ∈ m) .' on its own line below",
+  "tex": "\\hbox{(condition a))}, \\qquad f'_R(x)\\in\\fm ... (a comma joins the two printed lines on one line)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "a))},\n",
+   "new": "a))}\n"
+  },
+  "note": "The TeX adds a comma; setting the two lines on one is layout and is not reported."
+ },
+ {
+  "page": 419,
+  "where": "display 'u(f'_R)(g(x mod m^2)) = ... = gu(f'_R)(x mod m^2)'",
+  "scan": "the second line ends with 'gu(f'_R)(x mod m^2)', no full stop (pixel check: no ink to the right of it)",
+  "tex": "=gu(f'_R)(x\\bmod\\fm^2).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=gu(f'_R)(x\\bmod\\fm^2).",
+   "new": "=gu(f'_R)(x\\bmod\\fm^2)"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 420,
+  "where": "after the last display '... = 0', end of the page",
+  "scan": "the page ends with the display '= 1/x( ... ) = 0' and blank paper; p. 421 begins with 'Si l'on munit l'espace vectoriel sur k :'",
+  "tex": "et donc $f'_R(x_0) - x_0 \\in \\fm^{r+1}$ , ce qui est absurde.",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\net donc $f'_R(x_0) - x_0 \\in \\fm^{r+1}$ , ce qui est absurde.",
+   "new": "\\]"
+  },
+  "note": "A sentence the print does not have, neither at the foot of p. 420 nor at the head of p. 421: the TeX adds the conclusion of the argument."
+ },
+ {
+  "page": 420,
+  "where": "last display, first line, second term: '- f'_R(x)/x · x'/f_R(x')' (after '= f'_R(x/x')/(x/x')')",
+  "scan": "the denominator is f_R(x') without the prime (checked at 4x; every other prime of the display is crisp)",
+  "tex": "\\frac{x'}{f'_R(x')} (the prime supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\frac{x'}{f'_R(x')}\n= \\frac{x'\\,f'_R",
+   "new": "\\frac{x'}{f_R(x')}\n= \\frac{x'\\,f'_R"
+  },
+  "corrected": "\\frac{x'}{f'_R(x')}",
+  "note": "The TeX silently corrects; the fix restores the printed reading (diplomatic layer only). The same factor is x'/f'_R(x') in the first and third terms of the line."
+ },
+ {
+  "page": 420,
+  "where": "last display, second line, numerator: 'x'f'_R(x')f'_R(x/x') - x'f_R(x)'",
+  "scan": "x'f_R(x) without the prime (checked at 3x)",
+  "tex": "- x'\\,f'_R(x)} (the prime supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "- x'\\,f'_R(x)}",
+   "new": "- x'\\,f_R(x)}"
+  },
+  "corrected": "- x'\\,f'_R(x)}",
+  "note": "The TeX silently corrects; the fix restores the printed reading (diplomatic layer only). The value 0 needs f'_R(x')f'_R(x/x') = f'_R(x)."
+ },
+ {
+  "page": 420,
+  "where": "'On aura donc, dans le corps K des fractions de A :'",
+  "scan": "fractions de A",
+  "tex": "des fractions de $A$ (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "des fractions de $R$",
+  "note": "The TeX keeps the printed reading. Same slip as in a) and b) on p. 417: the ring is R. For the corrected edition, all five or none."
+ }
+]

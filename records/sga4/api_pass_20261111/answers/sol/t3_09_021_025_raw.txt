@@ -1,0 +1,110 @@
+{
+  "findings": [
+    {
+      "page": 21,
+      "where": "Proposition 2.13, démonstration de (i), choix du voisinage V'",
+      "scan": "Soit V' un voisinage étale de P tel que F(V) → F_P soit surjectif.",
+      "tex": "$F(V)\\rightarrow F_P$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "F(V')\\rightarrow F_P",
+      "note": "Le prime manque dans F(V) : le voisinage vient d'être nommé V'. Le TeX conserve la coquille imprimée."
+    },
+    {
+      "page": 22,
+      "where": "Démonstration de 2.13 (ii), premier voisinage étale",
+      "scan": "U → X de P tel que F(U) s'envoie surjectivement sur F_P",
+      "tex": "arcs, $U\\rightarrow X$ de $P$ tel que $F(U)$ s'envoie surjectivement\nsur $F_P$.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "arcs, $V\\rightarrow X$ de $P$ tel que $F(V)$ s'envoie surjectivement\nsur $F_P$.",
+      "note": "Le voisinage est ensuite appelé V, et U désigne son image dans X. Les deux U du choix initial devraient donc être V. Le TeX conserve cette incohérence de l'imprimé."
+    },
+    {
+      "page": 22,
+      "where": "Démonstration de 2.13 (iii), phrase suivant le diagramme",
+      "scan": "Comme c(F_Q) = c(F_P)",
+      "tex": "Comme $c(F_Q)=c(F_P)$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\operatorname{card}(F_Q)=\\operatorname{card}(F_P)",
+      "note": "La fonction c a été définie sur X, non sur les ensembles F_Q et F_P. L'égalité visée est celle des cardinaux des fibres. Le TeX conserve cette erreur de notation de l'imprimé."
+    },
+    {
+      "page": 23,
+      "where": "Proposition 2.14 (i), désignation du faisceau",
+      "scan": "et tout faisceau d'ensembles […] constructible sur X', f_*(F) est constructible",
+      "tex": "et tout faisceau d'ensembles",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "et tout faisceau $F$ d'ensembles",
+      "note": "Le nom F du faisceau est omis dans l'hypothèse, alors qu'il figure dans la conclusion f_*(F). Le TeX conserve l'omission imprimée."
+    },
+    {
+      "page": 23,
+      "where": "Proposition 2.14 (ii), famille des morphismes finis",
+      "scan": "(p_i : X'_i → X_i)",
+      "tex": "$(p_i:X'_i\\rightarrow X_i)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$(p_i:X'_i\\rightarrow X)$",
+      "note": "Le but doit être X pour que les images directes du produit soient des faisceaux sur X, conformément à la démonstration. Le TeX conserve l'indice i superflu de l'imprimé."
+    },
+    {
+      "page": 24,
+      "where": "Démonstration de 2.14 (ii), après les projections r_i et s_i",
+      "scan": "donc v_{i*}(C_{iY'_i}) se plonge",
+      "tex": "dons $v_{i\\ast}(C_{iY'_i})$ se plonge",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "dons",
+        "new": "donc"
+      },
+      "note": "L'imprimé porte « donc »."
+    },
+    {
+      "page": 24,
+      "where": "Démonstration de 2.14 (ii), produit des images directes par p_i r_i",
+      "scan": "p_{i*}(r_{i*}(C_{\\bar Z_i})) = t_{i*}(C_{i\\bar Z_i})",
+      "tex": "p_{i\\ast}(r_{i\\ast}(C_{\\bar{Z}_i}))=t_{i\\ast}(C_{i\\bar{Z}_i})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "p_{i\\ast}(r_{i\\ast}(C_{i\\bar{Z}_i}))=t_{i\\ast}(C_{i\\bar{Z}_i})",
+      "note": "L'indice i désignant l'ensemble constant C_i manque au C du premier membre. Le TeX conserve cette omission de l'imprimé."
+    },
+    {
+      "page": 24,
+      "where": "Démonstration de 2.14 (ii), application de VII 5.11",
+      "scan": "t_{ij*}(C_{iZ_{ij}})",
+      "tex": "t_{ij^{\\ast}}(C_{iZ_{ij}})",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "t_{ij^{\\ast}}",
+        "new": "t_{ij\\ast}"
+      },
+      "note": "L'imprimé porte l'image directe t_{ij*}. Le TeX place à tort l'astérisque en exposant de j."
+    },
+    {
+      "page": 25,
+      "where": "Démonstration de 2.14.1, réduction au cas strictement local",
+      "scan": "grâce à (VIII 5.3) et loc. cit.",
+      "tex": "(VIII 5.3) \\loccit",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "(VIII 5.3) \\loccit",
+        "new": "(VIII 5.3) et \\loccit"
+      },
+      "note": "Le mot « et » imprimé entre la référence et « loc. cit. » manque dans le TeX."
+    }
+  ],
+  "coordinator": "Comptes (normal/misprint) : 21 : 0/1 ; 22 : 0/2 ; 23 : 0/2 ; 24 : 2/1 ; 25 : 1/0."
+}

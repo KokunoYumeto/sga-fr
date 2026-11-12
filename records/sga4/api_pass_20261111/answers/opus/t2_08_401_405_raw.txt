@@ -1,0 +1,12 @@
+```json
+{"findings":[
+{"page":"401","where":"first sentence, 'sous-catégorie pleine de X_ét'","scan":"X_ét without tilde (the topos of the étale sheaves is meant)","tex":"\\widetilde{X_{\\text{ét}}}","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"\\widetilde{X_{\\text{ét}}}","note":"The print lacks the tilde here; 'les ouverts de ce topos' requires the topos, and the tilde is printed later on the page ('Soit F ∈ Ob X̃_ét'). The TeX silently corrects it."},
+{"page":"401","where":"'(On note que pour U ∈ U(X)'","scan":"U ∈ 𝒰(X)","tex":"$u\n\\in \\Uu (X)$","kind":"symbol","confidence":"high","fix":{"old":"pour $u\n\\in","new":"pour $U\n\\in"},"note":"Capital U in the print, as in φ(U) that follows."},
+{"page":"401","where":"display after 'i.e.'","scan":"φ(U) ≠ ∅ ⇔ x ∈ U","tex":"\\varphi (U) = ∅ \\Leftrightarrow  x \\in U","kind":"formula","confidence":"high","fix":{"old":"\\varphi (U) = ∅ \\Leftrightarrow","new":"\\varphi (U) \\neq ∅ \\Leftrightarrow"},"note":"The print has ≠, not =."},
+{"page":"401","where":"last sentence","scan":"correspondant donc à un point géométrique ξ","tex":"correspondant donc à point géométrique","kind":"missing","confidence":"high","fix":{"old":"donc à point géométrique","new":"donc à un point géométrique"},"note":"The TeX drops the word 'un'."},
+{"page":"402","where":"first display","scan":"lim→_{C_φ} F(X')","tex":"\\varinjlim_{C_{\\varphi}} (F) (X')","kind":"formula","confidence":"low","fix":{"old":"\\varinjlim_{C_{\\varphi}} (F) (X')","new":"\\varinjlim_{C_{\\varphi}} F(X')"},"note":"The print has no parentheses around F."},
+{"page":"402","where":"Prop. 8.1, spectral sequence","scan":"H*(X,F) ⇐ E_2^{pq} = H^p(X/Y, 𝓗^q(F))","tex":"H^{\\ast} (X, F) \\Longleftarrow","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"H^{\\ast} (Y, F) \\Longleftarrow","note":"The abutment should be H*(Y,F), as in the sequence actually obtained on p. 403. The TeX keeps the printed X."},
+{"page":"403","where":"proof of 8.2, 'le complexe A*_ȳ est une résolution'","scan":"A^*_{ȳ}","tex":"$A^{\\ast}_{y}$","kind":"symbol","confidence":"medium","fix":{"old":"$A^{\\ast}_{y}$","new":"$A^{\\ast}_{\\bar{y}}$"},"note":"The bar over y in the subscript is missing in the TeX; it is barred in the print, as everywhere else in the proof."}
+],
+"coordinator":"p401: 3/1; p402: 1/1; p403: 1/0; p404: 0/0; p405: 0/0."}
+```

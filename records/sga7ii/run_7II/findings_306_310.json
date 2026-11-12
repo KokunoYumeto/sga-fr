@@ -1,0 +1,113 @@
+[
+ {
+  "page": 306,
+  "where": "diagram (5.8.4.7), end of the bottom row",
+  "scan": "H^1(U,ν*E^{n-1}ρ_*Q_ℓ(j)) .   (full stop printed after the diagram)",
+  "tex": "H^1(U,\\nu^*E^{n-1}\\rho_*\\mathbb{Q}_\\ell(j)) with no full stop",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "H^1(U,\\nu^*E^{n-1}\\rho_*\\mathbb{Q}_\\ell(j))",
+   "new": "H^1(U,\\nu^*E^{n-1}\\rho_*\\mathbb{Q}_\\ell(j)) \\quad ."
+  },
+  "note": "The full stop after the diagram is left out. It is set inside the last node, as the file does on pp. 309-310. Apply together with the STRUCTURE-comment fix below."
+ },
+ {
+  "page": 306,
+  "where": "STRUCTURE comment after (5.8.4.7)",
+  "scan": "full stop printed after node SE",
+  "tex": "... and is omitted from the tikzcd so that the node count stays 4.",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "omitted from the tikzcd so that the node count stays 4.",
+   "new": "set inside node SE's cell (\\quad .), so the node count stays 4."
+  },
+  "note": "The comment must follow the restored full stop. Apply with the previous fix."
+ },
+ {
+  "page": 307,
+  "where": "diagram (5.8.6.1 bis), after node S",
+  "scan": "P^1 <--π-- S   .",
+  "tex": "S \\arrow[l, \"\\pi\"] with no full stop",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "S \\arrow[l, \"\\pi\"]",
+   "new": "S \\arrow[l, \"\\pi\"] \\quad ."
+  },
+  "note": "The full stop after the diagram is left out. Apply together with the STRUCTURE-comment fix."
+ },
+ {
+  "page": 307,
+  "where": "STRUCTURE comment after (5.8.6.1 bis)",
+  "scan": "full stop printed to the right of node S",
+  "tex": "... and is omitted from the tikzcd so the node count stays 5.",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "and is omitted from the tikzcd so the node count stays 5.",
+   "new": "and is set inside node S's cell (\\quad .), so the node count stays 5."
+  },
+  "note": "Apply with the restored full stop."
+ },
+ {
+  "page": 307,
+  "where": "diagram (5.8.6.2), after node V",
+  "scan": "P^1 <--π μ-- V   ,",
+  "tex": "V \\arrow[l, \"{\\pi\\,\\mu}\"] with no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "V \\arrow[l, \"{\\pi\\,\\mu}\"]",
+   "new": "V \\arrow[l, \"{\\pi\\,\\mu}\"] \\quad ,"
+  },
+  "note": "The comma after the diagram is left out; the sentence continues on p. 308 ('et on a encore'). Apply together with the STRUCTURE-comment fix."
+ },
+ {
+  "page": 307,
+  "where": "STRUCTURE comment after (5.8.6.2)",
+  "scan": "comma printed to the right of node V",
+  "tex": "... and is omitted from the tikzcd so the node count stays 6.",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "and is omitted from the tikzcd so the node count stays 6.",
+   "new": "and is set inside node V's cell (\\quad ,), so the node count stays 6."
+  },
+  "note": "Apply with the restored comma."
+ },
+ {
+  "page": 308,
+  "where": "last display (proof of 5.8.7), left-hand side",
+  "scan": "R^{n-1}ρ_{V*}Q_ℓ(j))  =  (π μ)* R^{n-1}ρ_*Q_ℓ(j)",
+  "tex": "\\mathrm{R}^{n-1}\\rho_{\\mathrm{V}_*}\\mathbb{Q}_\\ell(j)) = ...",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\mathrm{R}^{n-1}\\rho_{\\mathrm{V}_*}\\mathbb{Q}_\\ell(j)",
+  "note": "The print has one closing parenthesis too many. The TeX keeps the printed reading, as its SOURCE DEFECTS comment says."
+ },
+ {
+  "page": 310,
+  "where": "first display ('on conclut que'), right-hand side",
+  "scan": "μ*π* E^{n-1}ρ_*Q_ℓ(j)  =  π_U*ν* E^{n-1}ρ_*Q_ℓ",
+  "tex": "\\pi_U^*\\nu^*\\, E^{n-1}\\rho_*\\mathbb{Q}_\\ell",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\pi_U^*\\nu^*\\, E^{n-1}\\rho_*\\mathbb{Q}_\\ell(j)",
+  "note": "The twist (j) of the left-hand side is missing on the right in the print. The TeX keeps the printed reading."
+ },
+ {
+  "page": 310,
+  "where": "display of the trace map tr_{π_U}",
+  "scan": "tr_{π_U}: H^1( V,π_U^* ) → H^1(U,F(j))",
+  "tex": "H^1(\\ V,\\pi_U^*\\ )",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "H^1(\\ V,\\pi_U^*F(j)\\ )",
+  "note": "The print leaves the sheaf after π_U^* blank. The TeX keeps the printed reading. The intended source is H^1(V,π_U^*F(j)), matching the target H^1(U,F(j)); cf. H^*(V,π_U^*F) two lines later."
+ }
+]

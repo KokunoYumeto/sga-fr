@@ -1,0 +1,213 @@
+[
+ {
+  "page": "111",
+  "where": "2.4.0, «images réciproques»",
+  "scan": "\"images réciproques\"",
+  "tex": "« image réciproques »",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "« image réciproques »",
+   "new": "« images réciproques »"
+  },
+  "note": "The print has the plural «images»."
+ },
+ {
+  "page": "111",
+  "where": "2.4.1, cf. Tohokû (1.11)",
+  "scan": "Tohokû",
+  "tex": "\\sisi{Tohokû}{Tôhoku}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Tôhoku",
+  "note": "The print misspells Tôhoku. The TeX corrects it with \\sisi, whose A reading matches the print."
+ },
+ {
+  "page": "111",
+  "where": "2.4.1.1, first functor",
+  "scan": "R^+(h*) : D^+(T) → D^+(S)",
+  "tex": "\\sisi{\\RR^+}{Rh^{\\ast}} : D^+ (T)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\sisi{\\RR^+}{Rh^{\\ast}} : D^+ (T)",
+   "new": "\\sisi{\\RR^+(h^{\\ast})}{Rh^{\\ast}} : D^+ (T)"
+  },
+  "note": "The print reads R^+(h*). The \\sisi A reading drops (h*)."
+ },
+ {
+  "page": "111",
+  "where": "2.4.1.1, R^+(h*)(F)",
+  "scan": "R^+(h*)(F) ∈ D^+_{G_S}(S)",
+  "tex": "\\sisi{\\RR^+}{Rh^{\\ast}}(F)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\sisi{\\RR^+}{Rh^{\\ast}}(F)",
+   "new": "\\sisi{\\RR^+(h^{\\ast})}{Rh^{\\ast}}(F)"
+  },
+  "note": "As above: the \\sisi A reading lacks (h*)."
+ },
+ {
+  "page": "111",
+  "where": "last line, R^+(h*)(D^+_{G_T}(T))",
+  "scan": "R^+(h*)(D^+_{G_T}(T)) ⊂ D^+_{G_S}(S)",
+  "tex": "\\sisi{\\RR^+}{Rh^{\\ast}} (D^{+}_{G_T}",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\sisi{\\RR^+}{Rh^{\\ast}} (D^{+}_{G_T}",
+   "new": "\\sisi{\\RR^+(h^{\\ast})}{Rh^{\\ast}} (D^{+}_{G_T}"
+  },
+  "note": "As above: the \\sisi A reading lacks (h*)."
+ },
+ {
+  "page": "113",
+  "where": "Lemme 2.4.4.2, De plus ...",
+  "scan": "⊂ D^+_G(Γ(X̄'),O).",
+  "tex": "\\subset\n(D^+_G(\\Ysheaf{\\Gamma}(\\bar{X}'), \\Oo))",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\subset\n(D^+_G(\\Ysheaf{\\Gamma}(\\bar{X}'), \\Oo))",
+   "new": "\\subset\nD^+_G(\\Ysheaf{\\Gamma}(\\bar{X}'), \\Oo)"
+  },
+  "note": "The TeX puts parentheses around the right-hand side; the print has none."
+ },
+ {
+  "page": "113",
+  "where": "Prop. 2.4.6, restricted functor",
+  "scan": "K^+(θ̄_*)|K^+_G(Γ(X̄),O)",
+  "tex": "|_{K^+_G(\\Ysheaf{\\Gamma})(\\bar{X}), \\mathcal{O}}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "|_{K^+_G(\\Ysheaf{\\Gamma})(\\bar{X}), \\mathcal{O}}",
+   "new": "|_{K^+_G(\\Ysheaf{\\Gamma}(\\bar{X}), \\mathcal{O})}"
+  },
+  "note": "The parentheses are misplaced: the TeX prints K^+_G(Γ)(X̄),O."
+ },
+ {
+  "page": "113",
+  "where": "Prop. 2.4.6, noté R^+θ̄_*",
+  "scan": "noté R^+ θ̄_* (no index G)",
+  "tex": "\\sisi{\\RR^+}{R}_G\\bar\\theta_{\\ast}$, qui",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\RR^+_G\\bar\\theta_{\\ast}",
+  "note": "The print omits the index G, which the display below has. The TeX silently adds _G."
+ },
+ {
+  "page": "113",
+  "where": "Démonstration laissée",
+  "scan": "Démonstration laissé au lecteur",
+  "tex": "Démonstration laissée au lecteur",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "laissée",
+  "note": "The print has a wrong agreement. The TeX silently corrects it."
+ },
+ {
+  "page": "114",
+  "where": "2.4.7, du foncteur L^+θ̄*",
+  "scan": "du foncteur L^+ θ̄*",
+  "tex": "du foncteur $\\bar{\\theta}^{\\ast}$",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "du foncteur $\\bar{\\theta}^{\\ast}$",
+   "new": "du foncteur $L^{+}\\bar{\\theta}^{\\ast}$"
+  },
+  "note": "The print has the derived functor L^+ (double underlined L); the TeX drops it."
+ },
+ {
+  "page": "114",
+  "where": "2.4.7, nous noterons L^+_G θ̄*",
+  "scan": "nous noterons L^+_G θ̄*",
+  "tex": "nous noterons $\\bar\\theta_{G}^{\\ast}$",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "nous noterons $\\bar\\theta_{G}^{\\ast}$",
+   "new": "nous noterons $L^{+}_{G}\\bar\\theta^{\\ast}$"
+  },
+  "note": "The print reads L^+_G θ̄*: the TeX drops L^+ and moves G onto θ."
+ },
+ {
+  "page": "114",
+  "where": "Lemme 2.4.7.1, α",
+  "scan": "R^+_G θ̄_* ∘ L^+_G θ̄*",
+  "tex": "\\circ \\bar\\theta_{G}^{\\ast}$ et",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\circ \\bar\\theta_{G}^{\\ast}$ et",
+   "new": "\\circ L^{+}_{G}\\bar\\theta^{\\ast}$ et"
+  },
+  "note": "The print has L^+_G θ̄*."
+ },
+ {
+  "page": "114",
+  "where": "Lemme 2.4.7.1, β",
+  "scan": "β : L^+_G θ̄* ∘ R^+_G θ̄_*",
+  "tex": "$\\beta : \\bar\\theta_{G}^{\\ast} \\circ",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\beta : \\bar\\theta_{G}^{\\ast} \\circ",
+   "new": "$\\beta : L^{+}_{G}\\bar\\theta^{\\ast} \\circ"
+  },
+  "note": "The print has L^+_G θ̄*."
+ },
+ {
+  "page": "114",
+  "where": "Déf. 2.4.8, 2°)",
+  "scan": "Le foncteur L^+_G θ̄* est pleinement fidèle.",
+  "tex": "Le foncteur $\\bar\\theta_G^{\\star}$ pleinement fidèle.",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\bar\\theta_G^{\\star}$ pleinement",
+   "new": "$L^{+}_{G}\\bar\\theta^{\\ast}$ est pleinement"
+  },
+  "note": "The word «est» is missing from the TeX, and the TeX drops L^+ as elsewhere."
+ },
+ {
+  "page": "115",
+  "where": "Théorème 2.4.12",
+  "scan": "l'image essentielle de L^+_G θ̄*",
+  "tex": "l'image essentielle de $\\bar{\\theta}_G^{\\ast}$",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "l'image essentielle de $\\bar{\\theta}_G^{\\ast}$",
+   "new": "l'image essentielle de $L^{+}_{G}\\bar{\\theta}^{\\ast}$"
+  },
+  "note": "The print has L^+_G θ̄*."
+ },
+ {
+  "page": "115",
+  "where": "Prop. 2.4.13",
+  "scan": "induire une équivalence",
+  "tex": "induise une",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "induise",
+  "note": "The print has «induire» where the subjunctive is required. The TeX silently corrects it."
+ },
+ {
+  "page": "115",
+  "where": "Déf. 2.4.15",
+  "scan": "représetables",
+  "tex": "représentables",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "représentables",
+  "note": "Typing error in the print. The TeX silently corrects it."
+ }
+]

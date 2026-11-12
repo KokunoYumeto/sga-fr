@@ -1,0 +1,1017 @@
+[
+ {
+  "page": 391,
+  "where": "top of the page: 'formule' and display (5.2.1)",
+  "scan": "p. 391 begins 'où σ'_y est le caractère de Sw'_y ((4.2.7) et (4.2.3)), r_G la représen-'; p. 390 ends with 'for-/mule' and the display (5.2.1) σ_2 = EP(C)r_G - Σ_{y∈Y} σ'_y ,",
+  "tex": "'formule' and the display (5.2.1) (s5.tex lines 13243-13247 of the 15:52 snapshot) stand under the folio-391 marker (line 13242), at the top of page_391.tex",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 391 really begins at 'où $\\sigma'_y$ est le caractère' (snapshot line 13248). Exact fix: python -I move_marker.py 5 391 'où $\\sigma' (simulated in memory on both layers). ALREADY DONE in the live s5.tex (16:17): the folio-391 marker now stands just before 'où $\\sigma'_y$' (diplomatic line 13262, current 13258); the page files of this batch predate it. Nothing else of pp. 391-395 differs between the snapshot and the live file. 'formule' and (5.2.1) agree with the print of p. 390 except the double-struck EP (convention, see p. 393)."
+ },
+ {
+  "page": 391,
+  "where": "display after 'On a évidemment', right-hand side",
+  "scan": "𝓕(G,ℤ_ℓ) = lim←n (G,ℤ/ℓ^nℤ) . : no script F before '(G,'; blank paper between 'lim' and '(' (pixel check: white from x=790 to 839 in strip 2)",
+  "tex": "\\varprojlim_n\\mathcal F(G,\\mathbb Z/\\ell^n\\mathbb Z).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\varprojlim_n\\mathcal F(G,",
+   "new": "\\varprojlim_n(G,"
+  },
+  "corrected": "\\varprojlim_n\\mathcal F(G,",
+  "note": "The space left for the hand-drawn script F was never filled (the three other script F of the two displays are drawn). The TeX silently supplies \\mathcal F; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 391,
+  "where": "'Il suffit donc de démontrer qu'on a, quel que soit n'",
+  "scan": "quel que soit n (no comma; the display follows)",
+  "tex": "quel que soit $n$,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "quel que soit $n$,",
+   "new": "quel que soit $n$"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 391,
+  "where": "'Le premier membre est égal à tr(λ*_n(μ_ν(S_1)) , or'",
+  "scan": "tr(λ*_n(μ_ν(S_1))  , or : three opening parentheses, two closing",
+  "tex": "$\\operatorname{tr}(\\lambda_n^*(\\mu_\\nu(S_1)))$, or",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(S_1)))$, or",
+   "new": "(S_1))$, or"
+  },
+  "corrected": "(S_1)))$, or",
+  "note": "The parenthesis of tr( is not closed in the print; the TeX silently adds it."
+ },
+ {
+  "page": 391,
+  "where": "display λ*_n(μ_ν(S_1)) = cl_{K•(Λ_ν[G])}(R Γ_{C'}(Λ_{ν,U',C'})) ,",
+  "scan": "R Γ_{C'}: a plain typewriter R (one stem), set apart from the hand-drawn Γ",
+  "tex": "\\bigl(\\RG_{C'}(\\Lambda_{n,U',C'})\\bigr)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigl(\\RG_{C'}",
+   "new": "\\bigl(\\mathrm{R}\\Gamma_{C'}"
+  },
+  "note": "On pp. 391-392 the print's R of RΓ is a plain typewriter R 12 times and double-struck twice (tr(cl(ℝΓ...)) on p. 391, 'pour g = e' on p. 392, where the TeX agrees); \\RG = \\R\\Gamma gives ℝ (\\R = \\mathbb{R} in Exposé X). Independent of the two Λ_ν misprint fixes of this display (olds do not overlap)."
+ },
+ {
+  "page": 391,
+  "where": "same display, index of the class map",
+  "scan": "cl_{K•(Λ_ν[G])}: Greek ν (the glyph of μ_ν), not n",
+  "tex": "\\clKstar{\\Lambda_n[G]}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "=\n\\clKstar{\\Lambda_n[G]}",
+   "new": "=\n\\clKstar{\\Lambda_\\nu[G]}"
+  },
+  "corrected": "=\n\\clKstar{\\Lambda_n[G]}",
+  "note": "λ*_n(μ_ν(S_1)) lies in K•(Λ_n[G]); the Künneth formula that follows lifts RΓ_{C'}(Λ_{ν,U',C'}) to RΓ_{C'}(Λ_{n,U',C'}), and the display after it has Λ_n in both places. The TeX silently corrects both ν of this display: apply this and the next fix together (both or neither)."
+ },
+ {
+  "page": 391,
+  "where": "same display, argument of RΓ",
+  "scan": "Λ_{ν,U',C'}: Greek ν, not n",
+  "tex": "(\\Lambda_{n,U',C'})\\bigr),",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\Lambda_{n,U',C'})\\bigr),",
+   "new": "(\\Lambda_{\\nu,U',C'})\\bigr),"
+  },
+  "corrected": "(\\Lambda_{n,U',C'})\\bigr),",
+  "note": "As the previous finding (apply both or neither)."
+ },
+ {
+  "page": 391,
+  "where": "Künneth display, left-hand RΓ",
+  "scan": "RΓ_{C'}(Λ_{n,U',C'}) ⊗ Λ_ν : plain R (one stem)",
+  "tex": "\\RG_{C'}(\\Lambda_{n,U',C'})\\otimes",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RG_{C'}(\\Lambda_{n,U',C'})\\otimes",
+   "new": "\\mathrm{R}\\Gamma_{C'}(\\Lambda_{n,U',C'})\\otimes"
+  },
+  "note": "On pp. 391-392 the print's R of RΓ is a plain typewriter R 12 times and double-struck twice (tr(cl(ℝΓ...)) on p. 391, 'pour g = e' on p. 392, where the TeX agrees); \\RG = \\R\\Gamma gives ℝ (\\R = \\mathbb{R} in Exposé X). Does not overlap the L fix of the same display."
+ },
+ {
+  "page": 391,
+  "where": "Künneth display, the derived tensor",
+  "scan": "a double-struck L (doubled stem) above ⊗, Λ_n below it",
+  "tex": "\\otimes_{\\Lambda_n}^{L} (math-italic L)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "_{\\Lambda_n}^{L}",
+   "new": "_{\\Lambda_n}^{\\mathbb{L}}"
+  },
+  "note": "Outside Exposé III no global form of the derived tensor applies; the print's L is double-struck."
+ },
+ {
+  "page": 391,
+  "where": "Künneth display, right-hand RΓ",
+  "scan": "≃ RΓ_{C'}(Λ_{ν,U',C'}) : plain R (one stem)",
+  "tex": "\\simeq \\RG_{C'}(\\Lambda_{\\nu,U',C'})",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\simeq \\RG",
+   "new": "\\simeq \\mathrm{R}\\Gamma"
+  },
+  "note": "On pp. 391-392 the print's R of RΓ is a plain typewriter R 12 times and double-struck twice (tr(cl(ℝΓ...)) on p. 391, 'pour g = e' on p. 392, where the TeX agrees); \\RG = \\R\\Gamma gives ℝ (\\R = \\mathbb{R} in Exposé X)."
+ },
+ {
+  "page": 391,
+  "where": "'On est donc ramené à prouver l'égalité :'",
+  "scan": "an indented new paragraph (the line starts 140 px right of the margin of 'Désignons' below; the display after it starts at the same place)",
+  "tex": "runs on after the Künneth display (no blank line after \\])",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\]\nOn est donc",
+   "new": "\\]\n\nOn est donc"
+  },
+  "note": "Paragraph break."
+ },
+ {
+  "page": 391,
+  "where": "end of 'On est donc ramené à prouver l'égalité'",
+  "scan": "l'égalité :",
+  "tex": "prouver l'égalité, then the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "prouver l'égalité\n",
+   "new": "prouver l'égalité:\n"
+  },
+  "note": "The TeX drops the colon (the file writes the print's ' :' as ':')."
+ },
+ {
+  "page": 391,
+  "where": "display tr(cl_{K•(Λ_n[G])}(ℝΓ_{C'}(Λ_{n,U',C'}))) = λ_n(σ_2) .",
+  "scan": "λ_n with the hand-drawn ♮ sign above the n (as in λ♮_n(tr(...)) = λ♮_n(σ_2) above), not the typed asterisk of λ*_n",
+  "tex": "\\lambda_n^*(\\sigma_2)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "=\n\\lambda_n^*(\\sigma_2)",
+   "new": "=\n\\lambda_n^\\natural(\\sigma_2)"
+  },
+  "note": "The R of ℝΓ in this display is double-struck, as the TeX's \\RG."
+ },
+ {
+  "page": 391,
+  "where": "end of 'L'élément g induit évidemment un endomorphisme du triangle distingué'",
+  "scan": "du triangle distingué :",
+  "tex": "triangle distingué, then the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "triangle distingué\n",
+   "new": "triangle distingué:\n"
+  },
+  "note": "The TeX drops the colon. Last line of the printed p. 391."
+ },
+ {
+  "page": 391,
+  "where": "triangle diagram, top vertex (printed at the top of p. 392; in page_391.tex as the files stand)",
+  "scan": "R Γ_{Y'}(Λ_{n,Y'}) : plain R (one stem)",
+  "tex": "& \\RG_{Y'}(\\Lambda_{n,Y'})",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "& \\RG_{Y'}",
+   "new": "& \\mathrm{R}\\Gamma_{Y'}"
+  },
+  "note": "On pp. 391-392 the print's R of RΓ is a plain typewriter R 12 times and double-struck twice (tr(cl(ℝΓ...)) on p. 391, 'pour g = e' on p. 392, where the TeX agrees); \\RG = \\R\\Gamma gives ℝ (\\R = \\mathbb{R} in Exposé X). Old stays unique on p. 392 after the folio-392 marker move."
+ },
+ {
+  "page": 391,
+  "where": "triangle diagram, bottom left vertex (printed at the top of p. 392; in page_391.tex as the files stand)",
+  "scan": "RΓ_{C'}(Λ_{n,U',C'}) : plain R",
+  "tex": "\\RG_{C'}(\\Lambda_{n,U',C'}) \\arrow[rr]",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RG_{C'}(\\Lambda_{n,U',C'}) \\arrow",
+   "new": "\\mathrm{R}\\Gamma_{C'}(\\Lambda_{n,U',C'}) \\arrow"
+  },
+  "note": "On pp. 391-392 the print's R of RΓ is a plain typewriter R 12 times and double-struck twice (tr(cl(ℝΓ...)) on p. 391, 'pour g = e' on p. 392, where the TeX agrees); \\RG = \\R\\Gamma gives ℝ (\\R = \\mathbb{R} in Exposé X)."
+ },
+ {
+  "page": 391,
+  "where": "triangle diagram, bottom right vertex (printed at the top of p. 392; in page_391.tex as the files stand)",
+  "scan": "RΓ_{C'}(Λ_{n,C'}) : plain R",
+  "tex": "&& \\RG_{C'}(\\Lambda_{n,C'})",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "&& \\RG_{C'}",
+   "new": "&& \\mathrm{R}\\Gamma_{C'}"
+  },
+  "note": "On pp. 391-392 the print's R of RΓ is a plain typewriter R 12 times and double-struck twice (tr(cl(ℝΓ...)) on p. 391, 'pour g = e' on p. 392, where the TeX agrees); \\RG = \\R\\Gamma gives ℝ (\\R = \\mathbb{R} in Exposé X)."
+ },
+ {
+  "page": 391,
+  "where": "end of the triangle diagram (printed at the top of p. 392; in page_391.tex as the files stand)",
+  "scan": "RΓ_{C'}(Λ_{n,C'})  . : a full stop after the right-hand vertex",
+  "tex": "no full stop",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\Lambda_{n,C'})\n\\end{tikzcd}",
+   "new": "(\\Lambda_{n,C'}).\n\\end{tikzcd}"
+  },
+  "note": "The TeX drops the full stop. Adjacent to, not overlapping, the R fix of this vertex."
+ },
+ {
+  "page": 391,
+  "where": "triangle diagram, right-hand arrow (printed at the top of p. 392; in page_391.tex as the files stand)",
+  "scan": "the right-hand arrow goes from RΓ_{Y'}(Λ_{n,Y'}) down to RΓ_{C'}(Λ_{n,C'}) (arrowhead at the bottom), like the left-hand one",
+  "tex": "\\arrow[dr] from the top vertex (the printed direction)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\arrow[dr, leftarrow]",
+  "note": "In the distinguished triangle RΓ_{C'}(Λ_{n,U',C'}) → RΓ_{C'}(Λ_{n,C'}) → RΓ_{Y'}(Λ_{n,Y'}) → (+1) the right-hand arrow is the restriction to Y' and points up to the top vertex. The TeX keeps the printed direction; corrected layer: replace '\\arrow[dr]' (unique) by '\\arrow[dr, leftarrow]'."
+ },
+ {
+  "page": 391,
+  "where": "'On a donc :' (printed at the top of p. 392; in page_391.tex as the files stand)",
+  "scan": "On a donc :",
+  "tex": "On a donc, then the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "On a donc\n",
+   "new": "On a donc:\n"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 391,
+  "where": "τ(g) display, first member (printed at the top of p. 392; in page_391.tex as the files stand)",
+  "scan": "τ(g) = Tr* g_{RΓ_{C'}(Λ_{n,U',C'})} : plain R",
+  "tex": "\\tau(g)=\\Tr^*g_{\\RG_{C'}(\\Lambda_{n,U',C'})}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tau(g)=\\Tr^*g_{\\RG",
+   "new": "\\tau(g)=\\Tr^*g_{\\mathrm{R}\\Gamma"
+  },
+  "note": "On pp. 391-392 the print's R of RΓ is a plain typewriter R 12 times and double-struck twice (tr(cl(ℝΓ...)) on p. 391, 'pour g = e' on p. 392, where the TeX agrees); \\RG = \\R\\Gamma gives ℝ (\\R = \\mathbb{R} in Exposé X)."
+ },
+ {
+  "page": 391,
+  "where": "τ(g) display, second member (printed at the top of p. 392; in page_391.tex as the files stand)",
+  "scan": "= Tr* g_{RΓ_{C'}(Λ_{n,C'})} : plain R",
+  "tex": "=\\Tr^*g_{\\RG_{C'}(\\Lambda_{n,C'})}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\Tr^*g_{\\RG_{C'}(\\Lambda_{n,C'})}",
+   "new": "=\\Tr^*g_{\\mathrm{R}\\Gamma_{C'}(\\Lambda_{n,C'})}"
+  },
+  "note": "On pp. 391-392 the print's R of RΓ is a plain typewriter R 12 times and double-struck twice (tr(cl(ℝΓ...)) on p. 391, 'pour g = e' on p. 392, where the TeX agrees); \\RG = \\R\\Gamma gives ℝ (\\R = \\mathbb{R} in Exposé X). Old stays unique on p. 392 after the marker move."
+ },
+ {
+  "page": 391,
+  "where": "τ(g) display, third member (printed at the top of p. 392; in page_391.tex as the files stand)",
+  "scan": "- Tr* g_{RΓ_{Y'}(Λ_{n,Y'})} : plain R",
+  "tex": "-\\Tr^*g_{\\RG_{Y'}(\\Lambda_{n,Y'})}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "-\\Tr^*g_{\\RG",
+   "new": "-\\Tr^*g_{\\mathrm{R}\\Gamma"
+  },
+  "note": "On pp. 391-392 the print's R of RΓ is a plain typewriter R 12 times and double-struck twice (tr(cl(ℝΓ...)) on p. 391, 'pour g = e' on p. 392, where the TeX agrees); \\RG = \\R\\Gamma gives ℝ (\\R = \\mathbb{R} in Exposé X)."
+ },
+ {
+  "page": 392,
+  "where": "top of the page: the triangle diagram, 'On a donc :' and the τ(g) display",
+  "scan": "p. 392 begins with the triangle RΓ_{Y'}(Λ_{n,Y'}) / RΓ_{C'}(Λ_{n,U',C'}) → RΓ_{C'}(Λ_{n,C'}) . , then 'On a donc :' and τ(g) = ...; p. 391 ends with 'L'élément g induit évidemment un endomorphisme du triangle distingué :' and blank paper",
+  "tex": "the diagram display, 'On a donc' and the τ(g) display are the last 12 lines of page_391.tex; the folio-392 marker follows them",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 392 really begins at the display '\\[' followed by '\\begin{tikzcd}' (live s5.tex at 16:17: diplomatic line 13296, current 13292, marker at 13308/13304; snapshot: 13281, marker 13293). Exact fix: python -I move_marker.py 5 392 \"$(printf '%s\\n%s' '\\[' '\\begin{tikzcd}')\" --before (simulated in memory on both layers of the live file: the marker lands on its own line just before '\\['; a plain '\\begin{tikzcd}' anchor would put it inside the display). Text not moved; the differences of that text are filed under p. 391, and their olds stay unique on p. 392 after the move."
+ },
+ {
+  "page": 392,
+  "where": "first sentence: '(Pour abréger on a écrit Tr* au lieu de Tr*_{Λ_n}) .'",
+  "scan": "the sentence is in parentheses; the full stop follows the closing parenthesis",
+  "tex": "Pour abréger on a écrit $\\Tr^*$ au lieu de $\\Tr^*_{\\Lambda_n}$.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour abréger on a écrit $\\Tr^*$ au lieu de $\\Tr^*_{\\Lambda_n}$.",
+   "new": "(Pour abréger on a écrit $\\Tr^*$ au lieu de $\\Tr^*_{\\Lambda_n}$)."
+  },
+  "note": "The TeX drops both parentheses."
+ },
+ {
+  "page": 392,
+  "where": "'Or on a, en appliquant'",
+  "scan": "runs on in the same line after '(Pour abréger ... Tr*_{Λ_n}) .'",
+  "tex": "a blank line before 'Or on a' (new paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\nOr on a,",
+   "new": " Or on a,"
+  },
+  "note": "The TeX adds a paragraph break."
+ },
+ {
+  "page": 392,
+  "where": "'une \"formule de Lefschetz\" triviale'",
+  "scan": "une \"formule de Lefschetz\" triviale (typewriter double quotes)",
+  "tex": "une formule de Lefschetz triviale",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "une formule de Lefschetz triviale",
+   "new": "une ``formule de Lefschetz'' triviale"
+  },
+  "note": "The TeX drops the quotes."
+ },
+ {
+  "page": 392,
+  "where": "display after 'lequel g opère :', first member",
+  "scan": "Tr* g_{RΓ_{Y'}(Λ_{n,Y'})} : plain R",
+  "tex": "\\Tr^*g_{\\RG_{Y'}(\\Lambda_{n,Y'})}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{aligned}\n\\Tr^*g_{\\RG_{Y'}",
+   "new": "\\begin{aligned}\n\\Tr^*g_{\\mathrm{R}\\Gamma_{Y'}"
+  },
+  "note": "On pp. 391-392 the print's R of RΓ is a plain typewriter R 12 times and double-struck twice (tr(cl(ℝΓ...)) on p. 391, 'pour g = e' on p. 392, where the TeX agrees); \\RG = \\R\\Gamma gives ℝ (\\R = \\mathbb{R} in Exposé X). The old includes \\begin{aligned} so that it stays unique after the folio-392 marker move."
+ },
+ {
+  "page": 392,
+  "where": "'nous donne, si g ≠ e :'",
+  "scan": "si g ≠ e : (colon before the display)",
+  "tex": "si $g\\ne e$,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "donne, si $g\\ne e$,",
+   "new": "donne, si $g\\ne e$:"
+  },
+  "note": "The TeX has a comma for the colon."
+ },
+ {
+  "page": 392,
+  "where": "Lefschetz display, first member",
+  "scan": "Tr* g_{RΓ_{C'}(Λ_{n,y'})} : plain R",
+  "tex": "\\Tr^*g_{\\RG_{C'}(\\Lambda_{n,C'})} (before '=' and the sum)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tr^*g_{\\RG_{C'}(\\Lambda_{n,C'})}\n=",
+   "new": "\\Tr^*g_{\\mathrm{R}\\Gamma_{C'}(\\Lambda_{n,C'})}\n="
+  },
+  "note": "On pp. 391-392 the print's R of RΓ is a plain typewriter R 12 times and double-struck twice (tr(cl(ℝΓ...)) on p. 391, 'pour g = e' on p. 392, where the TeX agrees); \\RG = \\R\\Gamma gives ℝ (\\R = \\mathbb{R} in Exposé X). Apply before the next (misprint) fix, whose old lies inside this one."
+ },
+ {
+  "page": 392,
+  "where": "Lefschetz display, first member, coefficient index",
+  "scan": "Λ_{n,y'}: a small y with a prime (the y descends below the line), not C'",
+  "tex": "\\Lambda_{n,C'}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "{n,C'})}\n=",
+   "new": "{n,y'})}\n="
+  },
+  "corrected": "{n,C'})}\n=",
+  "note": "The coefficients are Λ_{n,C'} (as in the τ(g) display and in the case g = e below); the TeX silently corrects. Its old lies inside the old of the previous (R) fix and occurs exactly once both before and after that fix: apply the R fix first."
+ },
+ {
+  "page": 392,
+  "where": "Lefschetz display, the summand",
+  "scan": "ν_{y'}(g): Greek ν (round, no serifs; as μ_ν, Λ_ν on p. 391), not the serifed typed v of 'via' below",
+  "tex": "v_{y'}(g)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "Y'} v_{y'}",
+   "new": "Y'} \\nu_{y'}"
+  },
+  "note": "Convention of the TeX in Exposé X: the print's ν_{y'} is written v_{y'} (also (4.2.2) on p. 384 and (5.2.2) on p. 393)."
+ },
+ {
+  "page": 392,
+  "where": "Lefschetz display, after ν_{y'}(g)",
+  "scan": "Σ_{y'∈Y'} ν_{y'}(g) = la somme des multiplicités des points fixes de l'application g_{C'}: C' → C', : an equals sign before 'la somme' (the words stand in the display); no comma after (g)",
+  "tex": "\\sum_{y'\\in Y'} v_{y'}(g),\\n\\]\\nla somme des multiplicités ...",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "(g),\n\\]\nla somme",
+   "new": "(g)\n\\]\n$=$ la somme"
+  },
+  "note": "The words inside or outside the display are layout; the equals sign is missing and the comma is the TeX's own."
+ },
+ {
+  "page": 392,
+  "where": "'et on a :'",
+  "scan": "et on a : (colon before the display)",
+  "tex": "et on a, then the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "et on a\n\\[",
+   "new": "et on a:\n\\["
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 393,
+  "where": "'Künneth (SGA 4 XVII) .' and 'Il en résulte donc la formule suivante pour τ :'",
+  "scan": "'Il en résulte' begins a new line at the left margin after the short line 'Künneth (SGA 4 XVII) .' (an unindented paragraph break)",
+  "tex": "run on: 'Künneth (SGA 4 XVII). Il en résulte'",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "XVII). Il en",
+   "new": "XVII).\n\nIl en"
+  },
+  "note": "Paragraph break without indentation (as p. 58); drop it if such breaks are left to a global pass."
+ },
+ {
+  "page": 393,
+  "where": "(5.2.2), first case, the summand",
+  "scan": "(ν_{y'}(g)-1): Greek ν",
+  "tex": "\\bigl(v_{y'}(g)-1\\bigr)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(v_{y'}",
+   "new": "(\\nu_{y'}"
+  },
+  "note": "As p. 392 (convention of the TeX in Exposé X)."
+ },
+ {
+  "page": 393,
+  "where": "(5.2.2), first case, the condition",
+  "scan": "(ν_{y'}(g)-1)   si g ≠ e  : 'si' before the condition, no comma after either part",
+  "tex": "\\bigl(v_{y'}(g)-1\\bigr),& g\\ne e,\\\\[0.8em]",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigr),& g\\ne e,\\\\[0.8em]",
+   "new": "\\bigr)& \\text{si } g\\ne e\\\\[0.8em]"
+  },
+  "note": "The TeX drops 'si' and adds two commas (the same in (4.2.2) on p. 384: '1 - ν_{y'}(s)  si s ≠ e')."
+ },
+ {
+  "page": 393,
+  "where": "(5.2.2), second case, the condition",
+  "scan": "EP(C') - card(Y')   si g = e   .",
+  "tex": "& g=e.",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "& g=e.",
+   "new": "& \\text{si } g=e."
+  },
+  "note": "The TeX drops 'si'."
+ },
+ {
+  "page": 393,
+  "where": "'Comparant avec (6.2.1) on trouve facilement'",
+  "scan": "Comparant avec (6.2.1) : 6, not 5",
+  "tex": "Comparant avec (5.2.1),",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "avec (5.2.1",
+   "new": "avec (6.2.1"
+  },
+  "corrected": "avec (5.2.1",
+  "note": "Wrong reference: the formula compared is (5.2.1) σ_2 = EP(C) r_G - Σ σ'_y (p. 390); (6.2.1) is defined on p. 395. The TeX silently corrects. Independent of the comma fix (adjacent olds)."
+ },
+ {
+  "page": 393,
+  "where": "same sentence, after (6.2.1)",
+  "scan": "(6.2.1) on trouve (no comma)",
+  "tex": "(5.2.1), on trouve",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "), on trouve",
+   "new": ") on trouve"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 393,
+  "where": "'on trouve facilement τ = λ_n(σ_2) .'",
+  "scan": "λ_n with the hand-drawn ♮ sign above the n",
+  "tex": "$\\tau=\\lambda_n^*(\\sigma_2)$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\tau=\\lambda_n^*(\\sigma_2)$",
+   "new": "$\\tau=\\lambda_n^\\natural(\\sigma_2)$"
+  },
+  "note": "As the right-hand side of the display at the foot of p. 391."
+ },
+ {
+  "page": 393,
+  "where": "'En effet si g ≠ e l'égalité ...'",
+  "scan": "'En effet' begins a new line at the left margin after the short line 'Comparant avec (6.2.1) ... τ = λ_n(σ_2) .' (an unindented paragraph break)",
+  "tex": "run on: '$. En effet'",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": ". En effet",
+   "new": ".\n\nEn effet"
+  },
+  "note": "Paragraph break without indentation (as p. 58); drop it if such breaks are left to a global pass."
+ },
+ {
+  "page": 393,
+  "where": "'En effet si g ≠ e l'égalité'",
+  "scan": "En effet si g ≠ e l'égalité (no commas)",
+  "tex": "En effet, si $g\\ne e$, l'égalité",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": ", si $g\\ne e$, l'égalité",
+   "new": " si $g\\ne e$ l'égalité"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 393,
+  "where": "'l'égalité entre τ(g) et λ_n(σ_2) est immédiate'",
+  "scan": "λ_n with a heavy, ink-filled hand-drawn sign above the n (not the typed six-pointed asterisk of λ*_n on p. 391); read as the ♮ of the line above",
+  "tex": "et $\\lambda_n^*(\\sigma_2)$ est",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "et $\\lambda_n^*(\\sigma_2)$ est",
+   "new": "et $\\lambda_n^\\natural(\\sigma_2)$ est"
+  },
+  "note": "The sign is blotted, but its outline is the ♮ of the line above, and the claim is the equality τ = λ♮_n(σ_2) just stated."
+ },
+ {
+  "page": 393,
+  "where": "'est immédiate (4.5.2) .'",
+  "scan": "est immédiate (4.5.2) . (no 'par')",
+  "tex": "est immédiate par (4.5.2).",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "immédiate par",
+   "new": "immédiate"
+  },
+  "note": "The TeX adds 'par'."
+ },
+ {
+  "page": 393,
+  "where": "'Si g = e la formule à vérifier s'écrit :'",
+  "scan": "an indented new paragraph",
+  "tex": "run on: '(4.5.2). Si $g=e$'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "(4.5.2). Si",
+   "new": "(4.5.2).\n\nSi"
+  },
+  "note": "Paragraph break."
+ },
+ {
+  "page": 393,
+  "where": "same sentence, after 'Si g = e'",
+  "scan": "Si g = e la formule (no comma)",
+  "tex": "Si $g=e$, la formule",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$g=e$, la formule",
+   "new": "$g=e$ la formule"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 393,
+  "where": "end of 'la formule à vérifier s'écrit'",
+  "scan": "s'écrit :",
+  "tex": "s'écrit, then the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "s'écrit\n",
+   "new": "s'écrit:\n"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 393,
+  "where": "display 'EP(C') - card(Y') = N EP(C) - Σ σ'_y(ℓ), où N = card(G) ,'",
+  "scan": "σ'_y(ℓ): a hand-drawn script ℓ, as tall as the parentheses (like the ℓ of 'ℓ distinct' below), not e",
+  "tex": "\\sigma'_y(e)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sigma'_y(e)",
+   "new": "\\sigma'_y(\\ell)"
+  },
+  "corrected": "\\sigma'_y(e)",
+  "note": "The formula is (5.2.1) at g = e, so the characters are evaluated at e; the TeX silently corrects."
+ },
+ {
+  "page": 393,
+  "where": "same display, before N = card(G)",
+  "scan": "σ'_y(ℓ), où N = card(G) ,",
+  "tex": "\\sigma'_y(e),\\n\\qquad N=\\operatorname{card}(G),",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\qquad N=",
+   "new": "\\qquad\\text{où } N="
+  },
+  "note": "The TeX drops 'où'."
+ },
+ {
+  "page": 393,
+  "where": "'c'est-à-dire (4.5.2) :'",
+  "scan": "c'est-à-dire (4.5.2) : (no comma, no 'par'; a colon before the display)",
+  "tex": "c'est-à-dire, par (4.5.2),",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "c'est-à-dire, par (4.5.2),",
+   "new": "c'est-à-dire (4.5.2):"
+  },
+  "note": "The TeX adds 'par' and a comma, and has a comma for the print's colon."
+ },
+ {
+  "page": 393,
+  "where": "number of no. 6.1",
+  "scan": "'6.1.' with a full stop",
+  "tex": "\\subsubsection*{6.1}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{6.1}",
+   "new": "\\subsubsection*{6.1.}"
+  },
+  "note": "As p. 140 '1.1.'."
+ },
+ {
+  "page": 393,
+  "where": "6.1 i), 'on a F_x̄ ∈ (Δ) .'",
+  "scan": "F_x̄ ∈   (Δ) : nothing between ∈ and (Δ) (blank paper about two characters wide: white from x=1198 to 1239 in strip 4)",
+  "tex": "F_{\\bar x}\\in\\Ob(\\Delta)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\in\\Ob(\\Delta)",
+   "new": "\\in(\\Delta)"
+  },
+  "corrected": "\\in\\Ob(\\Delta)",
+  "note": "The print has no 'Ob'; the TeX silently supplies \\Ob (which prints 'ob' in this file: \\providecommand{\\Ob}{\\operatorname{ob}} comes first). Diplomatic layer only."
+ },
+ {
+  "page": 393,
+  "where": "EP on these pages: (5.2.1) (printed on p. 390, in page_391.tex), 'pour g = e' on p. 392, (5.2.2) and the two displays of the case g = e on p. 393",
+  "scan": "EP is double-struck every time (both letters with doubled stems): 𝔼ℙ(C)r_G, 𝔼ℙ(C').1_Λ, 𝔼ℙ(C') - card(Y'), N 𝔼ℙ(C)",
+  "tex": "\\EP = \\operatorname{EP} (roman): '\\EP(C)r_G', '\\EP(C')\\cdot1_\\Lambda', '\\EP(C')-\\operatorname{card}(Y')', 'N\\EP(C)'",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of Exposé X, not itemized: one decision for the exposé (for example \\EP as \\mathbb{E}\\mathbb{P} inside Exposé X)."
+ },
+ {
+  "page": 394,
+  "where": "condition ii): 'soit \"localement constant\", ou ce qui revient au même'",
+  "scan": "soit \"localement constant\", ou : typewriter quotes, then a comma",
+  "tex": "soit localement constant; ou",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "soit localement constant;",
+   "new": "soit ``localement constant'',"
+  },
+  "note": "The TeX drops the quotes and has a semicolon for the comma."
+ },
+ {
+  "page": 394,
+  "where": "condition ii): 'alors F'|U est constant'",
+  "scan": "F'|U : U without a prime",
+  "tex": "$F'|U'$ est constant",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$F'|U'$ est constant",
+   "new": "$F'|U$ est constant"
+  },
+  "corrected": "$F'|U'$ est constant",
+  "note": "F' lives on C'; it is restricted to U' = p^{-1}(U), defined in the same line. The TeX silently corrects."
+ },
+ {
+  "page": 394,
+  "where": "'Le faisceau F|U est donc défini par un complexe M'",
+  "scan": "Le faisceau F|U (no primes), as in 'qui trivalise F|U' below",
+  "tex": "Le faisceau $F'|U'$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "Le faisceau $F'|U'$",
+   "new": "Le faisceau $F|U$"
+  },
+  "note": "Not a misprint: the locally constant F|U, trivialised by the Galois covering, is the G-module M. The TeX changes the printed reading."
+ },
+ {
+  "page": 394,
+  "where": "'le point générique de C(resp. C') et par'",
+  "scan": "(resp. C') et par (no comma)",
+  "tex": "(resp. $C'$), et par",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. $C'$), et par",
+   "new": "(resp. $C'$) et par"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 394,
+  "where": "'un point géométrique sur η(resp.η') on a :'",
+  "scan": "(resp.η') on a : (no comma)",
+  "tex": "(resp. $\\eta'$), on a:",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. $\\eta'$), on a:",
+   "new": "(resp. $\\eta'$) on a:"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 394,
+  "where": "(6.1.1), first line",
+  "scan": "p(η') = η (no comma)",
+  "tex": "p(\\eta')=\\eta,\\qquad",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\eta,\\qquad",
+   "new": "=\\eta\\qquad"
+  },
+  "note": "The TeX adds a comma inside the display."
+ },
+ {
+  "page": 394,
+  "where": "(6.1.1), second line, the middle term",
+  "scan": "F!_{η̄'}: after the F a tall stroke over a dot (an exclamation mark), not the short wedge prime of F'|U or of η̄'",
+  "tex": "F'_{\\bar\\eta'}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "F'_{\\bar\\eta'}",
+   "new": "F^{!}_{\\bar\\eta'}"
+  },
+  "corrected": "F'_{\\bar\\eta'}",
+  "note": "A typed '!' for the prime of F' (the stalk of F' = p*F at η̄'); the TeX silently gives the prime. Diplomatic layer only; adjacent to, not overlapping, the next fix."
+ },
+ {
+  "page": 394,
+  "where": "(6.1.1), end",
+  "scan": "= M (no full stop)",
+  "tex": "=M.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=M.\n",
+   "new": "=M\n"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 394,
+  "where": "'Comme complexe de A-modules M est isomorphe'",
+  "scan": "A-modules  M (no comma)",
+  "tex": "$A$-modules, $M$ est isomorphe",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "modules, $M$ est isomorphe",
+   "new": "modules $M$ est isomorphe"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 394,
+  "where": "'à F_η̄ , et grâce à la condition i) c'est un objet de Δ'",
+  "scan": "F_η̄ , et grâce à la condition i) c'est : comma before 'et', none after 'et' or 'i)'",
+  "tex": "$F_{\\bar\\eta}$ et, grâce à la condition i), c'est",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$F_{\\bar\\eta}$ et, grâce à la condition i), c'est",
+   "new": "$F_{\\bar\\eta}$, et grâce à la condition i) c'est"
+  },
+  "note": "The TeX moves the comma after 'et' and adds one after 'i)'."
+ },
+ {
+  "page": 394,
+  "where": "'du revêtement galoisien C' --p--> C qui trivalise F|U'",
+  "scan": "C' --p--> C : the arrow carries p",
+  "tex": "$C'\\to C$ qui",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "$C'\\to C$ qui",
+   "new": "$C'\\xrightarrow{p}C$ qui"
+  },
+  "note": "The TeX drops the arrow's label p."
+ },
+ {
+  "page": 394,
+  "where": "same sentence, the verb",
+  "scan": "qui trivalise F|U",
+  "tex": "qui trivialise",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "trivialise",
+   "new": "trivalise"
+  },
+  "corrected": "trivialise",
+  "note": "Typing error (one i missing); the TeX silently corrects."
+ },
+ {
+  "page": 394,
+  "where": "display φ : Z_ℓ[G'] → Z_ℓ[G]",
+  "scan": "both Z are plain typewriter Z (one clean diagonal), unlike the double-struck Z of Z_ℓ on p. 390 and of Λ = Z/ℓ^νZ on p. 393",
+  "tex": "\\varphi:\\mathbb Z_\\ell[G']\\longrightarrow \\mathbb Z_\\ell[G]",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\varphi:\\mathbb Z_\\ell[G']\\longrightarrow \\mathbb Z_\\ell[G]",
+   "new": "\\varphi:Z_\\ell[G']\\longrightarrow Z_\\ell[G]"
+  },
+  "corrected": "\\varphi:\\mathbb Z_\\ell[G']\\longrightarrow \\mathbb Z_\\ell[G]",
+  "note": "Treated as the plain Z of pp. 7-8: the TeX silently gives the double-struck Z (diplomatic layer only). Apply with the plain Z's of the Swan relation (p. 395, filed below): both or neither."
+ },
+ {
+  "page": 394,
+  "where": "Swan relation, first member (printed at the top of p. 395; in page_394.tex as the files stand)",
+  "scan": "Sw_{G,n} ≃ Sw_{G',x} ⊗ ... : the first index is G,n (typed n)",
+  "tex": "Sw_{G,x}\\simeq",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Sw_{G,x}\\simeq",
+   "new": "Sw_{G,n}\\simeq"
+  },
+  "corrected": "Sw_{G,x}\\simeq",
+  "note": "Both Swan modules are at the point x; the TeX silently corrects. Old stays unique on p. 395 after the folio-395 marker move."
+ },
+ {
+  "page": 394,
+  "where": "Swan relation, the two Z (printed at the top of p. 395; in page_394.tex as the files stand)",
+  "scan": "⊗_{Z_ℓ[G']} Z_ℓ[G] : both Z plain typewriter Z (one clean diagonal)",
+  "tex": "\\otimes_{\\mathbb Z_\\ell[G']}\\mathbb Z_\\ell[G],",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\otimes_{\\mathbb Z_\\ell[G']}\\mathbb Z_\\ell[G],",
+   "new": "\\otimes_{Z_\\ell[G']}Z_\\ell[G],"
+  },
+  "corrected": "\\otimes_{\\mathbb Z_\\ell[G']}\\mathbb Z_\\ell[G],",
+  "note": "As the display φ above (both or neither)."
+ },
+ {
+  "page": 395,
+  "where": "top of the page: the Swan relation Sw_{G,n} ≃ Sw_{G',x} ⊗_{Z_ℓ[G']} Z_ℓ[G] ,",
+  "scan": "p. 395 begins with this display; p. 394 ends 'Les modules de Swan sont alors liés / par la relation' and blank paper",
+  "tex": "the display is the last three lines of page_394.tex; the folio-395 marker follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 395 really begins at the display '\\[' followed by 'Sw_{G,x}\\simeq' (live s5.tex at 16:17: diplomatic line 13387, current 13383, marker at 13390/13386; snapshot: 13372, marker 13375). Exact fix: python -I move_marker.py 5 395 \"$(printf '%s\\n%s' '\\[' 'Sw_{G,x}')\" --before (simulated in memory on both layers of the live file). Text not moved; the two differences of the display are filed under p. 394."
+ },
+ {
+  "page": 395,
+  "where": "'D'autre part on a un isomorphisme de complexes de A[G']-modules :'",
+  "scan": "A[G']-modules : (colon before the display)",
+  "tex": "$A[G']$-modules, then the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "-modules\n\\[",
+   "new": "-modules:\n\\["
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 395,
+  "where": "display after 'de complexes de A-modules entre', first Hom",
+  "scan": "Hom•_{Λ[G]}(Sw^Λ_{G,x}, F_{η̄'}): one prime after η̄ (two in the F_{η̄''} of the second Hom)",
+  "tex": "(Sw_{G,x}^\\Lambda,F_{\\bar\\eta})",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "(Sw_{G,x}^\\Lambda,F_{\\bar\\eta})",
+   "new": "(Sw_{G,x}^\\Lambda,F_{\\bar\\eta'})"
+  },
+  "note": "The raised mark after x in both Hom's (the shape of a prime) is read as the argument comma, as the TeX has it; not reported."
+ },
+ {
+  "page": 395,
+  "where": "number of no. 6.2",
+  "scan": "'6.2.' with a full stop",
+  "tex": "\\subsubsection*{6.2}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{6.2}",
+   "new": "\\subsubsection*{6.2.}"
+  },
+  "note": "As p. 140 '1.1.'."
+ },
+ {
+  "page": 395,
+  "where": "(6.2.1), end of the display",
+  "scan": "... (Sw^Λ_x , F_η̄)) (no comma)",
+  "tex": "F_{\\bar\\eta})\\bigr),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "F_{\\bar\\eta})\\bigr),",
+   "new": "F_{\\bar\\eta})\\bigr)"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 395,
+  "where": "'Bien entendu dans la formule (6.2.1) F_η̄ est muni'",
+  "scan": "(6.2.1)  F_η̄ (no comma)",
+  "tex": "(6.2.1), $F_{\\bar\\eta}$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(6.2.1), $F",
+   "new": "(6.2.1) $F"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 395,
+  "where": "'on aura (4.6) Sw_x = 0 donc'",
+  "scan": "Sw_x = 0 / donc (no comma)",
+  "tex": "$Sw_x=0$, donc",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$Sw_x=0$, donc",
+   "new": "$Sw_x=0$ donc"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 395,
+  "where": "'donc α_x(Δ) = 0 , donc dans ce cas'",
+  "scan": "α_x(Δ) = 0 : α with the index x only and the argument Δ",
+  "tex": "\\alpha_x^\\Delta(F)=0",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\alpha_x^\\Delta(F)=0",
+   "new": "\\alpha_x(\\Delta)=0"
+  },
+  "corrected": "\\alpha_x^\\Delta(F)=0",
+  "note": "The term of (6.2.1) is α^Δ_x(F); the TeX silently corrects."
+ },
+ {
+  "page": 395,
+  "where": "'(en conformité avec Ogg-Chafarévitch) :'",
+  "scan": "Chafarévitch with é",
+  "tex": "Ogg-Chafarevitch",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "Ogg-Chafarevitch",
+   "new": "Ogg-Chafarévitch"
+  },
+  "note": "The TeX drops the accent."
+ }
+]

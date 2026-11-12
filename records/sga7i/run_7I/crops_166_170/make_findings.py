@@ -1,0 +1,180 @@
+import json
+import sys
+
+BASE = r"C:\Users\user\Documents\sga_scan_check_20261105\run_7I"
+FOLDER = BASE + r"\b166_170"
+OUT = BASE + r"\findings_166_170.json"
+
+M_NOTE = "The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+
+findings = [
+    {
+        "page": 166,
+        "where": "first paragraph, line 3: 'à isomorphismes canoniques près, et laloi de composition envisagée dans BIEXT(P,Q;G)'",
+        "scan": "laloi: 'la' and 'loi' typed in consecutive character cells, no word space",
+        "tex": "laloi",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "la loi",
+        "note": "Missing word space (typing error). " + M_NOTE,
+    },
+    {
+        "page": 166,
+        "where": "first paragraph: 'admet un \"objet neutre bilatère\", appelée la biextension triviale de (P,Q) par G'",
+        "scan": "appelée",
+        "tex": "appelée la",
+        "kind": "misprint_in_print",
+        "confidence": "low",
+        "fix": None,
+        "corrected": "appelé la",
+        "note": "Agreement slip: the participle refers to 'objet neutre bilatère' (masculine). Low: the author may have let it agree with 'la biextension triviale'. " + M_NOTE,
+    },
+    {
+        "page": 166,
+        "where": "after the display E = P×Q×G: 'ses deux structures de Groupes sur P resp  sur Q étant déduites'",
+        "scan": "'resp' followed by a double space and no full stop; the next two lines print 'resp.' twice with a clear full stop",
+        "tex": "$P$ resp  sur",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": r"$P$ resp. sur",
+        "note": "Abbreviation full stop missing in the typescript (nothing lost to the scan at that spot). " + M_NOTE,
+    },
+    {
+        "page": 167,
+        "where": "after (2.5.2.1): 'sa loi de composition est aussi donnéepar (u,v) ↦ u.v ∈ End(1.1)'",
+        "scan": "donnéepar: the final e of 'donnée' was typed in afterwards over the word space (it overlaps the é); no space is left before 'par'",
+        "tex": "donnéepar",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "donnée par",
+        "note": "The typist's added e (agreement with 'loi') used up the space. The TeX keeps the run-together reading. 'corrected' replaces the 'tex' substring.",
+    },
+    {
+        "page": 167,
+        "where": "after (2.5.2.2): 'des classes d'isomorphismesde biextensions de (P,Q) par G'",
+        "scan": "isomorphismesde: the final s of 'isomorphismes' stands in the word-space cell, against the d of 'de'",
+        "tex": "isomorphismesde",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "isomorphismes de",
+        "note": "The typist's added s used up the space. The TeX keeps the run-together reading. 'corrected' replaces the 'tex' substring.",
+    },
+    {
+        "page": 168,
+        "where": "2.5.4, line 4: 'et à ce titre est donnés par les morphismes'",
+        "scan": "est donnés",
+        "tex": "est donnés par",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "sont donnés par",
+        "note": "Verb agreement slip: the subject is 'les automorphismes u de E' (plural), as in 'sont d'abord des automorphismes' earlier in the same sentence. " + M_NOTE,
+    },
+    {
+        "page": 169,
+        "where": "after (2.6.1): 'la structure de composition E.E' sur la catégorie fibre BIEXT(P,P';G) peut se décrire indifféremment'",
+        "scan": "BIEXT(P,P';G)",
+        "tex": "BIEXT$(P,P';G)$",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "BIEXT$(P,Q;G)$",
+        "note": "The fibre of the cofibred category (2.6.1) over (P,Q,G) is BIEXT(P,Q;G), on which E.E' is defined in 2.5.1; no P' occurs in the context. " + M_NOTE,
+    },
+    {
+        "page": 169,
+        "where": "after (2.6.2): 'peuvent être regardées comme deux foncteurs tri-linéaires'",
+        "scan": "regardées",
+        "tex": "regardées",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "regardés",
+        "note": "Agreement slip: the subject is 'les groupes abéliens' (2.6.2) (masculine plural). " + M_NOTE,
+    },
+    {
+        "page": 169,
+        "where": "after (2.6.2): 'P,Q,G dans GRAB(T)^o, GRAB(T)^o et GRAB(T), ou si on préfère'",
+        "scan": "the third T is not underlined; the two before it and GRAB(T) on the next line are",
+        "tex": "GRAB$(T)$",
+        "kind": "misprint_in_print",
+        "confidence": "low",
+        "fix": None,
+        "corrected": r"GRAB($\underline{T}$)",
+        "note": "The topos is an underlined T everywhere else on the page ((2.6.1), the same sentence, the next line). " + M_NOTE,
+    },
+    {
+        "page": 170,
+        "where": "2.8, first sentence: 'Alors le foncteur \"image inverse\" f* transforme une biextension'",
+        "scan": "f followed by the typewriter asterisk at superscript height, the same glyph as in the closing display 'f* : BIEXT(T) -> BIEXT(T')', which the TeX writes f^{*}",
+        "tex": "$f*$",
+        "kind": "symbol",
+        "confidence": "medium",
+        "fix": {"old": "$f*$ transforme", "new": r"$f^{*}$ transforme"},
+        "note": "$f*$ sets a centred binary asterisk on the line. Same treatment as p. 143 (GLOBAL_ISSUES item 29: expose_VII_body.tex lines 880, 898).",
+    },
+    {
+        "page": 170,
+        "where": "2.8, line 2: 'en une biextension f*(E) de (f*(P),f*(Q)) par f*(G)'",
+        "scan": "four times f with the raised typewriter asterisk",
+        "tex": "$f*(E)$ de $(f*(P),f*(Q))$ par $f*(G)$",
+        "kind": "symbol",
+        "confidence": "medium",
+        "fix": {
+            "old": "$f*(E)$ de $(f*(P),f*(Q))$ par $f*(G)$",
+            "new": r"$f^{*}(E)$ de $(f^{*}(P),f^{*}(Q))$ par $f^{*}(G)$",
+        },
+        "note": "As the previous finding; the first f*(E) is overstruck (darker) in the print, same symbol.",
+    },
+    {
+        "page": 170,
+        "where": "2.8: 'la compatibilité des deux structures d'extensions sur f*(E) déduites de celles de E'",
+        "scan": "f with the raised typewriter asterisk",
+        "tex": "$f*(E)$",
+        "kind": "symbol",
+        "confidence": "medium",
+        "fix": {"old": "sur $f*(E)$", "new": r"sur $f^{*}(E)$"},
+        "note": "As above.",
+    },
+    {
+        "page": 170,
+        "where": "2.8, last sentence: 'on obtiendra par E ↦ f*(E) un foncteur canonique'",
+        "scan": "f with the raised typewriter asterisk",
+        "tex": r"$E \longmapsto f*(E)$",
+        "kind": "symbol",
+        "confidence": "medium",
+        "fix": {"old": r"\longmapsto f*(E)$", "new": r"\longmapsto f^{*}(E)$"},
+        "note": "As above; the display that follows already has f^{*}.",
+    },
+]
+
+ok = True
+for f in findings:
+    path = rf"{FOLDER}\page_{f['page']}.tex"
+    with open(path, encoding="utf-8", newline="") as fh:
+        text = fh.read()
+    if f["tex"] not in text:
+        print("TEX NOT FOUND", f["page"], repr(f["tex"]))
+        ok = False
+    if f["fix"] is not None:
+        n = text.count(f["fix"]["old"])
+        if n != 1:
+            print("OLD COUNT", n, f["page"], repr(f["fix"]["old"]))
+            ok = False
+        if "%%%%%%%%%%" in f["fix"]["old"]:
+            print("MARKER IN OLD", f["page"])
+            ok = False
+    else:
+        n = text.count(f["tex"])
+        if n != 1:
+            print("TEX COUNT (misprint)", n, f["page"], repr(f["tex"]))
+
+with open(OUT, "w", encoding="utf-8", newline="\n") as fh:
+    json.dump(findings, fh, ensure_ascii=False, indent=1)
+    fh.write("\n")
+
+print("ok" if ok else "PROBLEMS", len(findings))

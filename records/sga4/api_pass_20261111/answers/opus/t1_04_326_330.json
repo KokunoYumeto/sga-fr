@@ -1,0 +1,54 @@
+[
+ {
+  "page": "327",
+  "where": "first display, between the two morphisms",
+  "scan": "u : F ⟶ E  et  v : E ⟶ F ,",
+  "tex": "u:F\\longrightarrow E \\quav v:E\\longrightarrow F{\\quoi},",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "u:F\\longrightarrow E \\quav v:E\\longrightarrow F",
+   "new": "u:F\\longrightarrow E \\quad\\text{et}\\quad v:E\\longrightarrow F"
+  },
+  "note": "The print joins the two morphisms with « et ». Elsewhere on these pages \\quav stands where the print has a comma (p. 327 « v^*, v_*=u^*=f, u_* », p. 328, p. 330), so it presumably prints a comma, not « et »."
+ },
+ {
+  "page": "327",
+  "where": "footnote (*)",
+  "scan": "Cf. plus bas, dans le cas de faisceaux abéliens.",
+  "tex": "\\Cf plus bas \\hyperref[IV.subsec14.4]{14.4}, dans le cas de faisceaux abéliens.",
+  "kind": "extra",
+  "confidence": "medium",
+  "fix": {
+   "old": "plus bas \\hyperref[IV.subsec14.4]{14.4},",
+   "new": "plus bas,"
+  },
+  "note": "The print gives no reference number in the footnote; the TeX adds « 14.4 » without marking it as an editorial addition (no \\sisi or \\nde)."
+ },
+ {
+  "page": "328",
+  "where": "3.2, display defining u and v",
+  "scan": "v = (v_*, v^*, ψ)",
+  "tex": "v=(v_{\\ast},v^{\\ast},\\Psi)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "v^{\\ast},\\Psi)",
+   "new": "v^{\\ast},\\psi)"
+  },
+  "note": "The print has a lowercase psi; the TeX has a capital Psi."
+ },
+ {
+  "page": "330",
+  "where": "3.3.1, « D'autre part, le foncteur u*v* est exact à gauche »",
+  "scan": "le foncteur u^*v^* est exact à gauche",
+  "tex": "le foncteur $u^{\\ast}v^{\\ast}$ exact à gauche",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "u^{\\ast}v^{\\ast}$ exact",
+   "new": "u^{\\ast}v^{\\ast}$ est exact"
+  },
+  "note": "The verb « est » is missing in the TeX."
+ }
+]

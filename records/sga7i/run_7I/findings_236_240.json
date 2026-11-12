@@ -1,0 +1,135 @@
+[
+ {
+  "page": 236,
+  "where": "lead-in to (2.1.14.5): '(Q étant maintenant un A-Module annulé par a) :'",
+  "scan": "'annulé par' underlined, the underline ends under the r of 'par'; after a gap the ideal a has its own short underline (crop crops_236_240/c236_annule.png)",
+  "tex": "\\underline{annulé par $\\underline{a}$}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{annulé par $\\underline{a}$}",
+   "new": "\\underline{annulé par} $\\underline{a}$"
+  },
+  "note": "The TeX's underline runs on over the space and under the a, which then gets a double underline."
+ },
+ {
+  "page": 236,
+  "where": "diagram (2.1.14.6), arrow 'incl.' from Hom(a∩b/a.b,Tor_1(P,Q)) down-right to the bottom node",
+  "scan": "hooked arrow: the tail below Tor_1 begins with a hand-drawn hook curling to the upper right of the shaft (crop crops_236_240/c236_hooks.png)",
+  "tex": "\\arrow[dr, \"\\mathrm{incl.}\"'] (plain arrow)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[dr, \"\\mathrm{incl.}\"']",
+   "new": "\\arrow[dr, hook, \"\\mathrm{incl.}\"']"
+  },
+  "note": "Both arrows into the bottom node are hooked; they are the injective maps of the text (the inclusion, and '(pq)* désigne l'homomorphisme injectif' on p. 237). The other four arrows are plain. tikz-cd 'hook' puts the hook on the side the print has. The STRUCTURE comment below the diagram (A5, A6, 'No hooked ... arrows') is wrong on this point; it is not edited here."
+ },
+ {
+  "page": 236,
+  "where": "diagram (2.1.14.6), arrow '(pq)*' from Hom(pqa∩pqb / pqa.pqb, Tor_1(P,Q)) down-left to the bottom node",
+  "scan": "hooked arrow: the tail below 'pqb' begins with a hand-drawn hook curling to the lower right of the shaft's top (crop crops_236_240/c236_hooks.png)",
+  "tex": "\\arrow[dl, \"(pq)^{*}\"] (plain arrow)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[dl, \"(pq)^{*}\"]",
+   "new": "\\arrow[dl, hook, \"(pq)^{*}\"]"
+  },
+  "note": "As the previous finding."
+ },
+ {
+  "page": 236,
+  "where": "diagram (2.1.14.6), to the right of the bottom node Hom(a∩b/pqa.b,Tor_1(P,Q))",
+  "scan": "a comma printed on the bottom row of the diagram, right of the node; the sentence continues 'où i : ...' at the top of p. 237",
+  "tex": "the comma stands on a line of its own after \\end{equation} and the STRUCTURE comment, so it is set at the start of the text after the display, before 'où'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzcd}}\n\\end{equation}",
+   "new": "\\end{tikzcd}}\\quad ,\n\\end{equation}"
+  },
+  "note": "Apply together with the next finding, which deletes the stray comma line; either edit alone leaves no comma or two. Same form as the applied fixes on pp. 230-235 (\\quad , after the tikzcd), here after the closing brace of {\\footnotesize ...}."
+ },
+ {
+  "page": 236,
+  "where": "last line of the page's TeX, after the STRUCTURE comment of (2.1.14.6)",
+  "scan": "no comma between the diagram and 'où i : ...' (p. 237); the printed comma belongs to the bottom row of the diagram",
+  "tex": "%   diagram.\n,",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "%   diagram.\n,",
+   "new": "%   diagram."
+  },
+  "note": "Second half of the previous finding: removes the comma that the previous edit moves into the display. Apply both or neither."
+ },
+ {
+  "page": 237,
+  "where": "end of the first paragraph: 'ce diagramme se réécrit sous une forme plus simple (donnée dans (2.1.11.1) pour q = 1),'",
+  "scan": "pour q = 1), followed by a blank line and the new section '2.2.'",
+  "tex": "pour $q = 1$),",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "pour $q = 1$).",
+  "note": "Paragraph and subsection 2.1 end on a comma. Either a full stop was meant or a display announced by the comma was never typed; hence low. The TeX keeps the printed comma; the corrected layer also still has it. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 237,
+  "where": "(2.2.4) ξ ∈ Biext^1(P,Q;G) ,",
+  "scan": "a comma at the right end of the display line (2.2.4); the sentence continues 'on désigne par ...' at the top of p. 238",
+  "tex": "the comma stands on a line of its own after \\end{equation}, so it is set at the start of the text after the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xi \\in \\mathrm{Biext}^1(P,Q;G)\n\\end{equation}\n,",
+   "new": "\\xi \\in \\mathrm{Biext}^1(P,Q;G) \\quad ,\n\\end{equation}"
+  },
+  "note": "As (2.2.2) and (2.2.3) on this page, which carry their punctuation inside the display."
+ },
+ {
+  "page": 238,
+  "where": "after (2.2.8): 'sur l'image de φ^n_{P,Q} : _nP⊗_nQ ⟶ Tor_1(P,Q;G).'",
+  "scan": "φ^n_{P,Q} (crop crops_236_240/c238_phi.png)",
+  "tex": "\\varphi^n_{P,Q} : {}_nP",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\alpha^n_{P,Q} : {}_nP",
+  "note": "The map _nP⊗_nQ ⟶ Tor_1(P,Q) whose image is meant is α^n_{P,Q} of (2.1.1) (p. 237: 'l'homomorphisme α^n_{P,Q} de (2.1.1)'); φ^n_{P,Q} is the map Biext^1(P,Q;G) ⟶ Hom(_nP⊗_nQ,G) of (2.2.2). The TeX keeps the printed reading; the corrected layer already reads \\alpha^n_{P,Q}. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 238,
+  "where": "same formula, its target",
+  "scan": "Tor_1(P,Q;G). (crop crops_236_240/c238_phi.png)",
+  "tex": "\\underline{\\mathrm{Tor}}_1(P,Q;G)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\underline{\\mathrm{Tor}}_1(P,Q)",
+  "note": "Tor_1 takes two arguments; ';G' is carried over from Biext^1(P,Q;G). The TeX keeps the printed reading; the corrected layer already reads Tor_1(P,Q). 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 238,
+  "where": "'Nous allons expliciter maintenant les propriétés de symétrie des accouplements (2.2.4), (2.2.6) associés aux biextensions.'",
+  "scan": "(2.2.4), (2.2.6) (crop crops_236_240/c238_accoupl.png)",
+  "tex": "accouplements (2.2.4)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "accouplements (2.2.5)",
+  "note": "Wrong reference number: (2.2.4) is ξ ∈ Biext^1(P,Q;G); the pairings are φ^n_ξ (2.2.5) and φ^{(ℓ)}_ξ (2.2.6). The TeX keeps the printed reading; the corrected layer already reads (2.2.5). 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 240,
+  "where": "diagram (2.2.11.2), bottom-left node",
+  "scan": "Hom(T_ℓ(P)⊗T_ℓ(Q),T_ℓ(G) followed directly by the arrow: the closing parenthesis of Hom( is missing (crop crops_236_240/c240_node_left.png)",
+  "tex": "\\mathrm{Hom}(T_\\ell(P)\\otimes T_\\ell(Q),T_\\ell(G) \\arrow",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\mathrm{Hom}(T_\\ell(P)\\otimes T_\\ell(Q),T_\\ell(G)) \\arrow",
+  "note": "Missing closing parenthesis (the bottom-right node has both). The TeX keeps the printed reading, as its STRUCTURE comment records; the corrected layer already has it. 'corrected' replaces the 'tex' substring."
+ }
+]

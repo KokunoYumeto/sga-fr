@@ -1,0 +1,216 @@
+{
+  "findings": [
+    {
+      "page": 51,
+      "where": "Preuve de 7.2.1, définition de l'image L[n]'",
+      "scan": "$K_{∙}[n]$",
+      "tex": "$K_{∙}n$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$K_{∙}n$",
+        "new": "$K_{∙}[n]$"
+      },
+      "note": "Les crochets de la troncature manquent dans le TeX."
+    },
+    {
+      "page": 51,
+      "where": "Dernier paragraphe",
+      "scan": "les hypothèses du lemme",
+      "tex": "les hypothèse du lemme",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "les hypothèse du lemme",
+        "new": "les hypothèses du lemme"
+      },
+      "note": "Le pluriel imprimé n'est pas transcrit."
+    },
+    {
+      "page": 52,
+      "where": "Coupure entre les pages 51 et 52",
+      "scan": "La page 51 finit par « sur le morphisme $v_{∙}$ » ; la page 52 commence par « sont stables ».",
+      "tex": "$v_{∙}$ sont\\pageoriginale stables",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "La formule $v_{∙}$ qui ouvre la coupe TeX de la page 52 appartient à la page 51. Le commentaire de coupe de la page 52 ne prévoit pas ce débordement. Le texte est présent dans le corpus : ne pas l'ajouter ni le déplacer."
+    },
+    {
+      "page": 52,
+      "where": "Preuve de 7.2.1, nom du théorème reliant homotopie et homologie",
+      "scan": "d'Hurewitz",
+      "tex": "d'Hurwitz",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "d'Hurwitz",
+        "new": "d'Hurewitz"
+      },
+      "note": "Le TeX omet le e imprimé. Ce changement ne corrige pas le nom en Hurewicz ; la coquille du volume est signalée séparément."
+    },
+    {
+      "page": 52,
+      "where": "Même nom de théorème",
+      "scan": "théorème d'Hurewitz",
+      "tex": "théorème d'Hurwitz",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "théorème d'Hurewicz",
+      "note": "Le nom correct est Hurewicz. Le TeX transforme la coquille imprimée en « Hurwitz », sans rétablir la bonne graphie."
+    },
+    {
+      "page": 52,
+      "where": "Après la référence au théorème d'Hurewicz",
+      "scan": "assertion du lemme",
+      "tex": "assertion de lemme",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "assertion de lemme",
+        "new": "assertion du lemme"
+      },
+      "note": "L'imprimé porte bien « du »."
+    },
+    {
+      "page": 52,
+      "where": "Dernier relèvement de la preuve de 7.2.1",
+      "scan": "se relève en un morphisme dans $L_∙$",
+      "tex": "dans $L_∙$. Donc $v_{∙}$ est surjectif.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "se relève en un morphisme dans $K_∙$",
+      "note": "Le relèvement le long de $v_{∙}:K_∙\\to L_∙$ doit avoir pour but $K_∙$. Le TeX conserve le $L_∙$ fautif de l'imprimé."
+    },
+    {
+      "page": 53,
+      "where": "Premier paragraphe, après « objet semi-simplicial de C »",
+      "scan": "dont tout les objets sont",
+      "tex": "dont tout objets sont",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "dont tout objets sont",
+        "new": "dont tout les objets sont"
+      },
+      "note": "Le mot « les » manque. Le fix conserve volontairement « tout », coquille de l'imprimé signalée séparément."
+    },
+    {
+      "page": 53,
+      "where": "Même proposition du premier paragraphe",
+      "scan": "dont tout les objets sont semi-représentables",
+      "tex": "dont tout objets sont",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "dont tous les objets sont semi-représentables",
+      "note": "L'imprimé a « tout » pour « tous ». Le TeX conserve cette forme fautive ; son omission distincte de « les » est signalée séparément."
+    },
+    {
+      "page": 53,
+      "where": "7.3.1.1, condition HR3",
+      "scan": "est un isomorphisme couvrant de préfaisceaux",
+      "tex": "est un isomorphisme couvrant de\npréfaisceaux",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "est un morphisme couvrant de préfaisceaux",
+      "note": "La condition requiert un morphisme couvrant, non un isomorphisme. Le TeX conserve la coquille imprimée."
+    },
+    {
+      "page": 53,
+      "where": "7.3.1.4, première phrase",
+      "scan": "les produits fibrés soients représentables",
+      "tex": "les produits fibrés soient représentables",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "les produits fibrés soient représentables",
+      "note": "Le s final de « soients » est une coquille de l'imprimé, silencieusement corrigée dans le TeX."
+    },
+    {
+      "page": 54,
+      "where": "Début de page, fin de 7.3.1.4",
+      "scan": "du hyper-recouvrement de type $p$ de $X$",
+      "tex": "du\\pageoriginale hyper-recouvrement de type $p$ de $X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "des hyper-recouvrements de type $p$ de $X$",
+      "note": "La parenthèse désigne la catégorie des hyper-recouvrements de type p. Le TeX conserve le singulier fautif « du hyper-recouvrement »."
+    },
+    {
+      "page": 54,
+      "where": "7.3.1.6, première définition du simplexe type",
+      "scan": "$\\underline{\\Delta}_n^c$",
+      "tex": "$\\sheaf{\\Delta}_n^c$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\sheaf{\\Delta}_n$",
+      "note": "Cette première occurrence définit le simplexe dans les ensembles. L'exposant c appartient au préfaisceau constant introduit dans la phrase suivante, de valeur $\\sheaf{\\Delta}_n$. Le TeX conserve l'exposant prématuré de l'imprimé."
+    },
+    {
+      "page": 54,
+      "where": "7.3.1.6, définition du préfaisceau constant",
+      "scan": "C (à valeur dans la catégorie des ensembles semi-simpliciaux constant de valeur",
+      "tex": "$C$ (à valeur dans la\ncatégorie des ensembles semi-simpliciaux constant de valeur",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$C$ (à valeur dans la catégorie des ensembles semi-simpliciaux) constant de valeur",
+      "note": "La parenthèse ouverte avant « à valeur » n'est pas fermée. Elle doit se fermer après « semi-simpliciaux ». Le TeX conserve cette omission."
+    },
+    {
+      "page": 54,
+      "where": "7.3.1.6, avant le premier diagramme",
+      "scan": "Les deux injections canoniques",
+      "tex": "Les deux injection\ncanoniques",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Les deux injection",
+        "new": "Les deux injections"
+      },
+      "note": "Le s de « injections » est présent dans l'imprimé."
+    },
+    {
+      "page": 55,
+      "where": "Théorème 7.3.2, assertion 3, dernière lettre",
+      "scan": "$\\underline{Z}$",
+      "tex": "$𝒵$",
+      "kind": "font",
+      "confidence": "high",
+      "fix": {
+        "old": "$𝒵$",
+        "new": "$\\underline{Z}$"
+      },
+      "note": "Le scan porte un Z ordinaire souligné, non une capitale calligraphique."
+    },
+    {
+      "page": 55,
+      "where": "Preuve de 7.3.2, propriété a)",
+      "scan": "$K_0\\to e$",
+      "tex": "$K_0 \\to e$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "${K}^{\\sim}_0 \\to e$",
+      "note": "Il s'agit de la composante du faisceau semi-simplicial ${K}^{\\sim}_{∙}$ introduit juste avant, et non du préfaisceau $K_0$. Le tilde manque dans l'imprimé ; le TeX conserve cette omission."
+    },
+    {
+      "page": 55,
+      "where": "Preuve de 7.3.2, propriété b)",
+      "scan": "$K_{n+1}\\to(\\cosk_n(K_∙))_{n+1}$",
+      "tex": "$K_{n + 1}\n  \\to (\\cosk_n(K_∙))_{n + 1}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "${K}^{\\sim}_{n + 1} \\to (\\cosk_n({K}^{\\sim}_{∙}))_{n + 1}$",
+      "note": "Les deux K doivent désigner le faisceau associé, comme dans la phrase qui introduit ces propriétés. Les tildes sont omis dans l'imprimé et dans le TeX."
+    }
+  ],
+  "coordinator": "51 : 2/0 ; 52 : 3/2 ; 53 : 1/3 ; 54 : 1/3 ; 55 : 1/2 (normal/misprint ; marqueur compris dans normal).\nMarqueur 51–52 : attribuer le $v_{∙}$ initial de la coupe 52 à la fin de la page 51 ; la page 52 commence par « sont stables ».\nRapprocher les signalements liés p. 52 (« Hurewitz ») et p. 53 (« tout les objets ») : les fixes rétablissent la lecture imprimée ; les champs corrected donnent les errata du volume."
+}

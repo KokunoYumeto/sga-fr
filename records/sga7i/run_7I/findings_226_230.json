@@ -1,0 +1,143 @@
+[
+ {
+  "page": 226,
+  "where": "beginning of the page: ' d'où en composant un isomorphisme canonique'",
+  "scan": "continues at the left margin, without indent, the sentence of p. 225 whose two displays end with commas ('qu'on a des isomorphismes [display] , [display] , d'où en composant un isomorphisme canonique')",
+  "tex": "blank line after the marker line, then ' d'où en composant'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\n d'où en composant",
+   "new": " d'où en composant"
+  },
+  "note": "Layout: this blank line and the one before the marker (end of p. 225) make LaTeX start a new, indented paragraph in mid-sentence. Apply together with the p. 225 edit of findings_221_225.json (old '\\qquad , \\qquad \\n\\end{equation*}\\n\\n'); either edit alone leaves the paragraph break. The 'old' begins with the newline of the empty line that follows the marker line; the marker line keeps its own newline."
+ },
+ {
+  "page": 226,
+  "where": "(1.6.2), the parenthesis at the end",
+  "scan": "( ≃ Biext^1(P,G;G)) , (crop crops_226_230/c226_a.png)",
+  "tex": "\\mathrm{Biext}^1(P,G;G)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\mathrm{Biext}^1(P,Q;G)",
+  "note": "Wrong letter: the group meant is Biext^1(P,Q;G) (first display of p. 225: Biext^1(P,Q;G) ≃ Hom(Q,Ext^1(P,G)); 'sans passer par Biext^1(P,Q;G)' further down this page). The TeX keeps the printed reading; the corrected layer already reads Biext^1(P,Q;G). 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 226,
+  "where": "end of the first paragraph: 'qui en vertu de (1.6.2) est canoniquement isomorphe à Hom(Q,Ext^1(P,Q))'",
+  "scan": "Hom(Q,Ext^1(P,Q)). (crop crops_226_230/c226_b.png)",
+  "tex": "\\mathrm{Hom}(Q,\\underline{\\mathrm{Ext}}^1(P,Q))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\mathrm{Hom}(Q,\\underline{\\mathrm{Ext}}^1(P,G))",
+  "note": "The right-hand side of (1.6.2) is Hom(Q,Ext^1(P,G)); Q for G is a slip. The TeX keeps the printed reading; the corrected layer already reads Ext^1(P,G). 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 227,
+  "where": "after the paragraph following (2.1.2): 'Supposons seulement nQ = 0. Prenant une résolution plate L. de P'",
+  "scan": "Supposcns: the second o is a c, open on the right with the c's top terminal, the same in the IA scan and in the DjVu witness (crops crops_226_230/c227_e.png, w227_supposons.png); the o of 'Suppos' is closed",
+  "tex": "Supposons",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "Supposons",
+   "new": "Supposcns"
+  },
+  "corrected": "Supposons",
+  "note": "Typing error (c for o). The letter has the shape of the c of 'canoniques' on the next line, not of a broken o; medium only because of a small stray stroke inside it. The TeX silently corrects it; the fix restores the printed reading. 'corrected' is the current TeX."
+ },
+ {
+  "page": 228,
+  "where": "after the display following (2.1.5): 'et où le deu ième homomorphisme provient de l'inclusion'",
+  "scan": "deu ième: no x, also in the DjVu witness (crops crops_226_230/c228_a.png, w228_deuxieme.png)",
+  "tex": "deu ième",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "deuxième",
+  "note": "Typing error (x not typed). The TeX keeps the printed reading; the corrected layer already reads 'deuxième'. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 228,
+  "where": "same sentence: 'provient de l'inclusion _nP ⟶ Q.'",
+  "scan": "_nP ⟶ Q. (crop crops_226_230/c228_b.png; same in the DjVu witness)",
+  "tex": "${}_nP \\longrightarrow Q$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "${}_nP \\longrightarrow P$",
+  "note": "The second map Tor_1(_nP,Q) ⟶ Tor_1(P,Q) of the display comes from the inclusion _nP ⟶ P (p. 227: 'des inclusions _nP ⟶ P, _nQ ⟶ Q'). The TeX keeps the printed reading; the corrected layer already reads P. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 228,
+  "where": "2.1.6, first line: 'pour P et Q quelconque, un homomorphisme (2.1.1)'",
+  "scan": "quelconque (singular; same in the DjVu witness)",
+  "tex": "$Q$ quelconque",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$Q$ quelconques",
+  "note": "Agreement slip: the adjective qualifies 'P et Q'. The TeX keeps the printed reading; the corrected layer also still reads 'quelconque'. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 228,
+  "where": "2.1.7: 'pour toute section q de Q (sur un objet S et T, disons l'objet final pour simplifier)'",
+  "scan": "sur un objet S et T, (crop crops_226_230/c228_c.png; same in the DjVu witness)",
+  "tex": "objet $S$ et $T$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "objet $S$ de $T$",
+  "note": "'et' for 'de': S is an object of the site T, as in the parallel sentence of 2.1.8 on p. 229 ('sur un objet S de T, que nous prendrons égal à l'objet final'). The TeX keeps the printed reading; the corrected layer also still reads 'et'. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 229,
+  "where": "display after 'on est donc ramené à déterminer l'homomorphisme': α : ... ⟶ Tor_1^Z (Z/nZ)_T , (Z/nZ)_T)",
+  "scan": "Tor_1^Z (Z/nZ)_T , (Z/nZ)_T): the opening parenthesis of Tor's argument is missing (two '(' and three ')'; crop crops_226_230/c229_c.png)",
+  "tex": "\\underline{\\mathrm{Tor}}_1^{\\mathbb{Z}} (\\mathbb{Z}/n\\mathbb{Z})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\underline{\\mathrm{Tor}}_1^{\\mathbb{Z}} ((\\mathbb{Z}/n\\mathbb{Z})",
+  "note": "Missing opening parenthesis in the print; the TeX keeps the printed reading; the corrected layer already has it. Same slip in (2.1.8.1) (next finding). 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 229,
+  "where": "(2.1.8.1): (Z/nZ)_T ≃ Tor_1^Z (Z/ nZ)_T , (Z/nZ)_T)",
+  "scan": "Tor_1^Z (Z/ nZ)_T , (Z/nZ)_T): opening parenthesis of Tor's argument missing (crop crops_226_230/c229_d.png)",
+  "tex": "\\underline{\\mathrm{Tor}}_1^{\\mathbb{Z}} (\\mathbb{Z}/ n\\mathbb{Z})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\underline{\\mathrm{Tor}}_1^{\\mathbb{Z}} ((\\mathbb{Z}/ n\\mathbb{Z})",
+  "note": "Missing opening parenthesis in the print, as in the display above; the TeX keeps the printed reading; the corrected layer already has it. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 230,
+  "where": "diagram (2.1.9.2), after the bottom-right node Tor_1(Q,P)",
+  "scan": "a comma to the right of Tor_1(Q,P) on the bottom row of the diagram",
+  "tex": "no comma: the tikzcd ends with \\underline{Tor}_1(Q,P) (the STRUCTURE comment records the comma but leaves it out)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "r, \"\\sim\"] & \\underline{Tor}_1(Q,P)\n\\end{tikzcd}",
+   "new": "r, \"\\sim\"] & \\underline{Tor}_1(Q,P)\n\\end{tikzcd}\\quad ,"
+  },
+  "note": "Punctuation printed after a diagram (NOTE_7I); same form as the applied fixes on pp. 144, 184, 199, 212."
+ },
+ {
+  "page": 230,
+  "where": "diagram (2.1.10.1) of Lemme 2.1.10, after the bottom-right node Tor_1(Q,P)",
+  "scan": "a comma to the right of Tor_1(Q,P) on the bottom row of the diagram, before 'les flèches horizontales étant les isomorphismes de symétrie.'",
+  "tex": "no comma: the tikzcd ends with \\underline{Tor}_1(Q,P) (the STRUCTURE comment records the comma but leaves it out)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "rr, \"\\sim\"] & & \\underline{Tor}_1(Q,P)\n\\end{tikzcd}",
+   "new": "rr, \"\\sim\"] & & \\underline{Tor}_1(Q,P)\n\\end{tikzcd}\\quad ,"
+  },
+  "note": "Punctuation printed after a diagram (NOTE_7I); same form as the applied fixes on pp. 144, 184, 199, 212."
+ }
+]

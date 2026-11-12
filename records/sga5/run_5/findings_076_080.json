@@ -1,0 +1,410 @@
+[
+ {
+  "page": 76,
+  "where": "heading of § 1, top of the page",
+  "scan": "'1. Notations et rappels de formules de Künneth.': the number 1. and a full stop after Künneth (the rule runs from 1. to Künneth)",
+  "tex": "\\section*{Notations et rappels de formules de Künneth} (no number, no full stop)",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{Notations et rappels de formules de Künneth}",
+   "new": "\\section*{1. Notations et rappels de formules de Künneth.}"
+  },
+  "note": "The headings carry the print's own numbers (global '\\section{' -> '\\section*{' pass; cf. '\\section*{5. Dualité locale sur les courbes.}', whose full stop was restored on p. 50). The underline is the accepted \\section* setting."
+ },
+ {
+  "page": 76,
+  "where": "every derived tensor product of pp. 76-80 (27 signs), first 1.1 'E ⊗ F ∈ ob D_ctf(X)'",
+  "scan": "a plain upright typed capital L standing directly above the hand-drawn ⊗, S (where present) at its lower right",
+  "tex": "\\otimes^{L} (a math-italic L set as a superscript): p. 76 'E \\otimes^{L} F', p. 77 (1.6.1) 'f_1^{*}M_1\\otimes^{L}_{S}f_2^{*}M_2', p. 80 (1.7.6) 'K_{X_1}\\otimes^{L}_{S}K_{X_2}'",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé III transcription, not listed per occurrence: s5.tex (lines 1929-4364) writes \\otimes^{L} 48 times (27 of them on pp. 76-80, every one printed with the stacked L) and \\otimes^L 116 times. The fixes of pp. 37, 45, 46 and 70 gave this sign as \\overset{\\mathrm{L}}{\\otimes} (the file's \\lten): one scoped pass '\\otimes^{L}' / '\\otimes^L' -> '\\overset{\\mathrm{L}}{\\otimes}' (subscripts stay), once the later pages of Exposé III confirm the stacked form. See the message."
+ },
+ {
+  "page": 76,
+  "where": "1.1, 'on a aussi RHom(E,F) ∈ ob D_ctf(X)'",
+  "scan": "RHom: a plain typed R; the underline runs under Hom only",
+  "tex": "$\\uRHom(E,F)$ (\\underline{\\mathbb{R}\\mathrm{Hom}}: double-struck R, R underlined too)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "aussi $\\uRHom(E,F)",
+   "new": "aussi $R\\underline{\\Hom}(E,F)"
+  },
+  "note": "As the RHom fixes of pp. 74-75. Exposé III types the derived-functor R plain (as R\\Gamma on p. 73 and RHom on pp. 74-75); \\R is \\mathbb{R}."
+ },
+ {
+  "page": 76,
+  "where": "1.2, display, 'Rf_*D_ctf(X) ⊂ D_ctf(Y) ,'",
+  "scan": "a plain typed R (the typeface of the text)",
+  "tex": "\\R f_{*}D_{\\ctf}(X)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R f_{*}D",
+   "new": "Rf_{*}D"
+  },
+  "note": "Exposé III types the derived-functor R plain (as R\\Gamma on p. 73 and RHom on pp. 74-75); \\R is \\mathbb{R}."
+ },
+ {
+  "page": 76,
+  "where": "1.2, display, 'Rf_!D_ctf(X) ⊂ D_ctf(Y) ,'",
+  "scan": "a plain typed R",
+  "tex": "\\R f_{!}D_{\\ctf}(X)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R f_{!}D",
+   "new": "Rf_{!}D"
+  },
+  "note": "Exposé III types the derived-functor R plain (as R\\Gamma on p. 73 and RHom on pp. 74-75); \\R is \\mathbb{R}. The print sets the three inclusions on three display lines (layout, not reported)."
+ },
+ {
+  "page": 76,
+  "where": "1.2, display, 'Rf^!D_ctf(Y) ⊂ D_ctf(X) ,'",
+  "scan": "a plain typed R",
+  "tex": "\\R f^{!}D_{\\ctf}(Y)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R f^{!}D",
+   "new": "Rf^{!}D"
+  },
+  "note": "Exposé III types the derived-functor R plain (as R\\Gamma on p. 73 and RHom on pp. 74-75); \\R is \\mathbb{R}."
+ },
+ {
+  "page": 76,
+  "where": "1.2, '(l'inclusion relative à Rf_! n'utilise que'",
+  "scan": "a plain typed R",
+  "tex": "$\\R f_{!}$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "relative à $\\R f_{!}$",
+   "new": "relative à $Rf_{!}$"
+  },
+  "note": "Exposé III types the derived-functor R plain (as R\\Gamma on p. 73 and RHom on pp. 74-75); \\R is \\mathbb{R}."
+ },
+ {
+  "page": 76,
+  "where": "1.2, 'nous écrirons parfois f_* , f_! , f^! au lieu de Rf_* , Rf_! , Rf^! ;'",
+  "scan": "three plain typed R",
+  "tex": "$\\R f_{*}$, $\\R f_{!}$, $\\R f^{!}$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "au lieu de $\\R f_{*}$, $\\R f_{!}$, $\\R f^{!}$",
+   "new": "au lieu de $Rf_{*}$, $Rf_{!}$, $Rf^{!}$"
+  },
+  "note": "Exposé III types the derived-functor R plain (as R\\Gamma on p. 73 and RHom on pp. 74-75); \\R is \\mathbb{R}. Three adjacent signs in one edit."
+ },
+ {
+  "page": 76,
+  "where": "1.3, 'et noterons D_X (ou D ) le foncteur RHom(-,K_X)'",
+  "scan": "RHom: a plain typed R; the underline runs under Hom only",
+  "tex": "$\\uRHom(-,K_X)$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "foncteur $\\uRHom(-,K_X)",
+   "new": "foncteur $R\\underline{\\Hom}(-,K_X)"
+  },
+  "note": "As the RHom fixes of pp. 74-75. Does not touch the anchor of the folio-77 marker move."
+ },
+ {
+  "page": 77,
+  "where": "top of the page",
+  "scan": "p. 77 begins '4.3), le complexe K_X est dualisant'; p. 76 ends 'et noterons ... RHom(-,K_X) . D'après (SGA 4^{1/2} Th. Finitude'",
+  "tex": "'4.3), le' ends s5.tex line 1987 (both layers, as of 19:03), the last line of page_076.tex; the folio-77 marker (line 1988) follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 77 really begins at '4.3), le' at the end of s5.tex line 1987. Exact fix: python -I move_marker.py 5 77 '4.3), le' --before (single quotes; the anchor occurs once in s5.tex; simulated in memory on both layers: the marker then splits line 1987 after 'Th.~Finitude ', and page 77 begins '4.3), le' + 'complexe $K_X$ est dualisant'). No other fix of this batch touches the anchor."
+ },
+ {
+  "page": 77,
+  "where": "1.4, display, 'Hom_f^(1)(L,M) = Hom(f^*M,L) ( ≃ Hom(M,f_*L) )'",
+  "scan": "no punctuation after the closing parenthesis (clean paper)",
+  "tex": "\\Hom(M,f_{*}L)), (a comma added)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(M,f_{*}L)),",
+   "new": "\\Hom(M,f_{*}L))"
+  },
+  "note": "Punctuation added at the end of a display. Only the fourth line of the definition ends with a printed full stop."
+ },
+ {
+  "page": 77,
+  "where": "1.4, display, 'Hom_f^(2)(L,M) = Hom(L,f*M)'",
+  "scan": "no punctuation at the end of the line",
+  "tex": "=\\Hom(L,f^{*}M), (a comma added)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\Hom(L,f^{*}M),",
+   "new": "=\\Hom(L,f^{*}M)"
+  },
+  "note": "Punctuation added at the end of a display."
+ },
+ {
+  "page": 77,
+  "where": "1.4, display, 'Hom_f^(3)(L,M) = Hom(f_!L,M) ( ≃ Hom(L,f^!M) )'",
+  "scan": "no punctuation after the closing parenthesis",
+  "tex": "\\Hom(L,f^{!}M)), (a comma added)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(L,f^{!}M)),",
+   "new": "\\Hom(L,f^{!}M))"
+  },
+  "note": "Punctuation added at the end of a display."
+ },
+ {
+  "page": 78,
+  "where": "'Prenant M_i = f_i*L_i , et u_i , de type 1, donné par l'identité de f_i*L_i ,'",
+  "scan": "a comma after u_i (before 'de type 1')",
+  "tex": "et $u_i$ de type~1, (no comma after u_i)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "et $u_i$ de type~1,",
+   "new": "et $u_i$, de type~1,"
+  },
+  "note": "The print sets 'de type 1' off by two commas."
+ },
+ {
+  "page": 78,
+  "where": "'1.6.2 fournit une flèche de Künneth (cf. (SGA 4 XVII 5.4.1.4))'",
+  "scan": "(cf. (SGA 4 XVII 5.4.1.4)): the reference in its own parentheses inside the cf. parentheses",
+  "tex": "(cf.~SGA~4~XVII~5.4.1.4)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(cf.~SGA~4~XVII~5.4.1.4)",
+   "new": "(cf.~(SGA~4~XVII~5.4.1.4))"
+  },
+  "note": "As '(cf. (loc. cit. 5.2.4))' on the same page, which the TeX has."
+ },
+ {
+  "page": 78,
+  "where": "'D'après (SGA 4^{1/2} Th. Finitude 1.9), 1.6.4 est un isomorphisme : par 1.6.3'",
+  "scan": "'est un isomorphisme' underlined (not 1.6.4, not the colon)",
+  "tex": "1.6.4 est un isomorphisme : (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "1.6.4 est un isomorphisme :",
+   "new": "1.6.4 \\emph{est un isomorphisme} :"
+  },
+  "note": "\\emph is this file's command for the print's underline in § 1 (\\emph{flèches de type ...}, \\emph{flèche de Künneth})."
+ },
+ {
+  "page": 78,
+  "where": "'Quant f_1 et f_2 sont propres, il n'est pas nécessaire d'invoquer (loc. cit.)'",
+  "scan": "Quant, with a final t (crisp at 3x)",
+  "tex": "Quand $f_1$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Quand $f_1$",
+   "new": "Quant $f_1$"
+  },
+  "corrected": "Quand $f_1$",
+  "note": "The conjunction is 'Quand'; the TeX silently corrects. The fix restores the printed reading (diplomatic layer only). The line above prints '(loc. cit. App.          ).' with a blank left for a reference that was never filled in (spacing only, not reported, as on p. 26)."
+ },
+ {
+  "page": 78,
+  "where": "1.7, 'on obtient un isomorphisme de Künneth (SGA 4 XVII 5.4.3)'",
+  "scan": "'isomorphisme de Künneth' underlined (across the line break)",
+  "tex": "un isomorphisme de Künneth (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "un isomorphisme de Künneth",
+   "new": "un \\emph{isomorphisme de Künneth}"
+  },
+  "note": "As \\emph{flèche de Künneth}. The earlier 'l'isomorphisme de Künneth (SGA 4 XVII 5.4.3)' at the end of 1.6 is not underlined (right as it stands)."
+ },
+ {
+  "page": 79,
+  "where": "label of Proposition 1.7.4",
+  "scan": "'Proposition 1.7.4 - La flèche ...': 'Proposition' underlined, then the number and a typewriter dash, the statement run in",
+  "tex": "\\subsection*{Proposition 1.7.4} (no dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{Proposition 1.7.4}",
+   "new": "\\subsection*{Proposition 1.7.4 -}"
+  },
+  "note": "Exposé III's label form ('Proposition 1.7.4 -') differs from the 'Définition 1.1. :' form handled globally; drop this edit if the global label decision is meant to cover the dash as well. The run-in and the label's underline are the accepted \\subsection* setting."
+ },
+ {
+  "page": 79,
+  "where": "statement of Proposition 1.7.4",
+  "scan": "'La flèche 1.7.3 est un isomorphisme' underlined; the rule stops before the full stop",
+  "tex": "La flèche 1.7.3 est un isomorphisme. (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "La flèche 1.7.3 est un isomorphisme.",
+   "new": "\\emph{La flèche 1.7.3 est un isomorphisme}."
+  },
+  "note": "Underlined statement (as the statement of p. 62)."
+ },
+ {
+  "page": 79,
+  "where": "proof of 1.7.4, 'Par localisation sur X_2 , on peut supposer d'autre part que f_1 = g_1j_1'",
+  "scan": "X_2 (clear)",
+  "tex": "Par localisation sur $X_2$ (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Par localisation sur $X_1$",
+  "note": "The factorization f_1 = g_1j_1 (closed immersion, then smooth) exists locally on the source X_1 of f_1; after the reduction to X_2 = Y_2, f_2 = 1, localizing on X_2 does nothing for f_1. The TeX keeps the printed reading; the corrected layer already has X_1 (Codex SGA-SRC-001843, FIXLOG_5_CURRENT)."
+ },
+ {
+  "page": 79,
+  "where": "proof of 1.7.4, the two cases 'a) f_1 = g_1' and 'b) f_1 = j_1 .'",
+  "scan": "no punctuation after g_1 (two lines; a full stop after j_1)",
+  "tex": "\\text{a) } f_1=g_1,\\qquad \\text{b) } f_1=j_1. (a comma added after g_1)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "f_1=g_1,\\qquad",
+   "new": "f_1=g_1\\qquad"
+  },
+  "note": "Punctuation added in a display. The two cases on one line is layout (not reported)."
+ },
+ {
+  "page": 79,
+  "where": "case a), 'un isomorphisme f_1^*M_1(n_1)[2n_1] ⟶~ f_1^!M_1 : celui-ci est compatible'",
+  "scan": "a colon after f_1^!M_1 (two dots)",
+  "tex": "f_1^{!}M_1; (a semicolon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "f_1^{!}M_1;",
+   "new": "f_1^{!}M_1 :"
+  },
+  "note": "The print runs the formula into the text (the TeX's display is layout, not reported); only the sign differs."
+ },
+ {
+  "page": 79,
+  "where": "case b), 'on a une suite exact'",
+  "scan": "exact, without a final e (clean paper after the t)",
+  "tex": "une suite exacte",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "une suite exacte",
+   "new": "une suite exact"
+  },
+  "corrected": "une suite exacte",
+  "note": "Agreement with 'suite'; the TeX silently corrects. The fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 79,
+  "where": "case b), display '0 ⟶ j_1*Rj_1^!M_1 ⟶ M_1 ⟶ Ri_1*i_1^*M_1 ⟶ 0 ,', first R",
+  "scan": "a plain typed R",
+  "tex": "j_{1*}\\R j_1^{!}M_1",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "j_{1*}\\R j_1^{!}M_1",
+   "new": "j_{1*}Rj_1^{!}M_1"
+  },
+  "note": "Exposé III types the derived-functor R plain (as R\\Gamma on p. 73 and RHom on pp. 74-75); \\R is \\mathbb{R}."
+ },
+ {
+  "page": 79,
+  "where": "same display, second R, 'Ri_1*i_1^*M_1'",
+  "scan": "a plain typed R",
+  "tex": "\\R i_{1*}i_1^{*}M_1",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R i_{1*}i_1^{*}M_1",
+   "new": "Ri_{1*}i_1^{*}M_1"
+  },
+  "note": "Exposé III types the derived-functor R plain (as R\\Gamma on p. 73 and RHom on pp. 74-75); \\R is \\mathbb{R}."
+ },
+ {
+  "page": 79,
+  "where": "'et la compatibilité de Ri_1* au changement de base'",
+  "scan": "a plain typed R",
+  "tex": "$\\R i_{1*}$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "compatibilité de $\\R i_{1*}$",
+   "new": "compatibilité de $Ri_{1*}$"
+  },
+  "note": "Exposé III types the derived-functor R plain (as R\\Gamma on p. 73 and RHom on pp. 74-75); \\R is \\mathbb{R}."
+ },
+ {
+  "page": 79,
+  "where": "'Grâce à 1.7.3, on peut définir, pour u_i ∈ Hom_f^(4)(L_i,M_i) ,'",
+  "scan": "Hom_f^(4): index f alone, no i below it (clean paper; compare Hom_{f_i}^(3)(L_i,M_i) on p. 78)",
+  "tex": "$u_i\\in\\Hom_f^{(4)}(L_i,M_i)$ (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$u_i\\in\\Hom_{f_i}^{(4)}(L_i,M_i)$",
+  "note": "u_i is an f_i-arrow from L_i to M_i, as in 1.6.2 and 1.7.2 (Hom_{f_i}^(1), Hom_{f_i}^(3)). The TeX keeps the printed reading; the corrected layer already has f_i (Codex SGA-SRC-001844, FIXLOG_5_CURRENT)."
+ },
+ {
+  "page": 80,
+  "where": "1.8, 'L ∈ ob D^-(X)'",
+  "scan": "D^-(X): a raised minus after D, squeezed against the parenthesis",
+  "tex": "$L\\in\\ob D(X)$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$L\\in\\ob D(X)$",
+   "new": "$L\\in\\ob D^{-}(X)$"
+  },
+  "note": "A short stroke at cap height squeezed between D and the parenthesis, far above the typewriter hyphen: a raised minus typed in afterwards (D(X), D(Y), D(S') all three have it; the D(X), D(Y) of 1.4 on p. 77 have none). The external products of 1.5-1.7.5, which 1.8.1 applies, are defined for complexes in D^-. A typist's insertion: both layers."
+ },
+ {
+  "page": 80,
+  "where": "1.8, 'M ∈ ob D^-(Y)'",
+  "scan": "D^-(Y): the same raised minus",
+  "tex": "$M\\in\\ob D(Y)$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$M\\in\\ob D(Y)$",
+   "new": "$M\\in\\ob D^{-}(Y)$"
+  },
+  "note": "As L ∈ ob D^-(X)."
+ },
+ {
+  "page": 80,
+  "where": "1.8, 'P ∈ ob D^-(S')'",
+  "scan": "D^-(S'): the same raised minus",
+  "tex": "$P\\in\\ob D(S')$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$P\\in\\ob D(S')$",
+   "new": "$P\\in\\ob D^{-}(S')$"
+  },
+  "note": "As L ∈ ob D^-(X)."
+ },
+ {
+  "page": 80,
+  "where": "1.8, 'au-dessus de la flèche identique de S' : pour u ∈ Hom_f^(i)(L,M)'",
+  "scan": "a colon after S'",
+  "tex": "de $S'$; pour (a semicolon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$S'$; pour",
+   "new": "$S'$ : pour"
+  },
+  "note": ""
+ }
+]

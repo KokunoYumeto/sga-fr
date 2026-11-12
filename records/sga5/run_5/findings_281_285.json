@@ -1,0 +1,868 @@
+[
+ {
+  "page": 281,
+  "where": "exposé heading (printed at the top of p. 282; in page_281.tex as the files stand)",
+  "scan": "'E X P O S E  VII': letter-spaced capitals, dashed underline (the typescript's capital E has no accent)",
+  "tex": "\\section*{Exposé VII}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{Exposé VII}",
+   "new": "\\section*{EXPOSÉ VII}"
+  },
+  "note": "Capitals as printed, as the logged EXPOSÉ V (p. 204) and EXPOSÉ VI (p. 250); accented capital as the volume's rule. Filed under p. 281, where the line stands now. Independent of the marker move of p. 282 (its anchor '\\section*{E' matches before and after this edit)."
+ },
+ {
+  "page": 282,
+  "where": "top of the page: the heading EXPOSÉ VII",
+  "scan": "p. 282 begins with 'E X P O S E  VII', then the title 'COHOMOLOGIE DE QUELQUES SCHEMAS CLASSIQUES / ET / THEORIE COHOMOLOGIQUE DES CLASSES DE CHERN', 'par', 'J. P. JOUANOLOU'; p. 281 ends with the two footnotes (*) and (**)",
+  "tex": "'\\section*{Exposé VII}' and '\\begin{center}' end page_281.tex (after '\\end{flushleft}' of the footnotes); the folio-282 marker stands inside the center environment, before '\\textbf{COHOMOLOGIE'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 282 really begins at '\\section*{Exposé VII}' (diplomatic s5.tex line 9358, current 9353, at the time of the check; the file is being edited, line numbers move). Exact fix: python -I move_marker.py 5 282 '\\section*{E' --before (simulated in memory on both layers, before and after the EXPOSÉ VII capitals fix filed under p. 281: the marker then stands on its own line between the blank lines after '\\end{flushleft}' and '\\section*{Exposé VII}', and the center environment is whole on p. 282). Text not moved."
+ },
+ {
+  "page": 282,
+  "where": "byline",
+  "scan": "'J. P. JOUANOLOU': a space between the initials, no hyphen, surname in capitals",
+  "tex": "J.-P. Jouanolou",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "J.-P. Jouanolou",
+   "new": "J. P. JOUANOLOU"
+  },
+  "note": "As the logged bylines of Exposés V and VI (pp. 204, 251: 'par J.P. JOUANOLOU'); here the print has a space after 'J.'."
+ },
+ {
+  "page": 282,
+  "where": "'on note μ_X le faisceau des racines ν^èmes de l'unité'",
+  "scan": "ν with a raised 'èmes' (no hyphen, no i)",
+  "tex": "$\\nu$-ièmes",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\nu$-ièmes",
+   "new": "$\\nu^{\\text{èmes}}$"
+  },
+  "note": ""
+ },
+ {
+  "page": 282,
+  "where": "section title 1",
+  "scan": "'1. FIBRES VECTORIELS': hand-drawn capitals, underlined, no full stop",
+  "tex": "\\subsection*{1. Fibres vectoriels}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{1. Fibres vectoriels}",
+   "new": "\\subsection*{1. FIBRES VECTORIELS}"
+  },
+  "note": "Capitals as printed (as the title of Exposé V, p. 204). The same for '2. SCHEMAS PROJECTIFS' on p. 285."
+ },
+ {
+  "page": 282,
+  "where": "'E un O_S-Module localement libre'",
+  "scan": "Module with a capital M",
+  "tex": "$\\mathcal O_S$-module",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathcal O_S$-module",
+   "new": "$\\mathcal O_S$-Module"
+  },
+  "note": "The typescript's capital M (sheaf of modules), as the logged 'Module' of pp. 159, 263, 267. The O is a plain typed O here (no underline): see the message."
+ },
+ {
+  "page": 282,
+  "where": "'localement libre (sous-entendu : de type fini).'",
+  "scan": "parentheses, and a colon after 'sous-entendu'",
+  "tex": "libre, sous-entendu de type fini.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "libre, sous-entendu de type fini.",
+   "new": "libre (sous-entendu : de type fini)."
+  },
+  "note": "The TeX turns the parenthesis into commas and drops the colon."
+ },
+ {
+  "page": 282,
+  "where": "'U = V(E)* (complémentaire de la section nulle) et on'",
+  "scan": "parentheses, no comma",
+  "tex": "$U=\\V(E)^*$, complémentaire de la section nulle, et on",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": ", complémentaire de la section nulle, et",
+   "new": " (complémentaire de la section nulle) et"
+  },
+  "note": "The TeX turns the parenthesis into commas."
+ },
+ {
+  "page": 283,
+  "where": "first line: 'note p : X → S et q : U → S les projections canoniques.'",
+  "scan": "'et' between the two maps, no comma",
+  "tex": "p:X\\to S,  \\qquad  q:U\\to S (display)",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "p:X\\to S,\n\\qquad\nq:U\\to S",
+   "new": "p:X\\to S\n\\quad\\text{et}\\quad\nq:U\\to S"
+  },
+  "note": "The TeX drops the word 'et' and adds a comma. (Inline in the print; the display is not reported.)"
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.1, first sentence 'Soit L un A-Module.'",
+  "scan": "'Soit', 'un' and 'Module' underlined (L and 'A-' not); Module with a capital M",
+  "tex": "Soit $L$ un $A$-module.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $L$ un $A$-module.",
+   "new": "\\emph{Soit} $L$ \\emph{un} $A$-\\emph{Module}."
+  },
+  "note": "Exposé VII: the TeX has no underline markup for statements; \\emph is the file's command here (as \\emph{Preuve} and the logged statements of Exposé V). One edit: it also gives the print's capital M (word)."
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.1 (i) a), 'Pour tout entier j>0 on a'",
+  "scan": "'Pour tout entier' underlined",
+  "tex": "\\item Pour tout entier $j>0$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Pour tout entier",
+   "new": "\\item \\emph{Pour tout entier}"
+  },
+  "note": ""
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.1 (i) a), 'j > 0  on a'",
+  "scan": "no comma after j > 0; 'on a' underlined",
+  "tex": "$j>0$, on a",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$j>0$, on a",
+   "new": "$j>0$ \\emph{on a}"
+  },
+  "note": "The TeX adds a comma. The edit also underlines 'on a', as printed."
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.1 (i) a), R^j p_*(p^*L) = 0",
+  "scan": "R^j: plain typewriter R",
+  "tex": "\\R^j p_*(p^*L)=0.",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^j p_*(p^*L)=0.",
+   "new": "\\mathrm{R}^j p_*(p^*L)=0."
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285)."
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.1 (i) b)",
+  "scan": "'Le morphisme d'adjonction' and 'est un isomorphisme' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Le morphisme d'adjonction\n\\[\nL\\longrightarrow p_*p^*(L)\n\\]\nest un isomorphisme.",
+   "new": "\\item \\emph{Le morphisme d'adjonction}\n\\[\nL\\longrightarrow p_*p^*(L)\n\\]\n\\emph{est un isomorphisme}."
+  },
+  "note": ""
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.1 (ii), 'On suppose E de rang constant r .'",
+  "scan": "'On suppose' and 'de rang constant' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item On suppose $E$ de rang constant $r$.",
+   "new": "\\item \\emph{On suppose} $E$ \\emph{de rang constant} $r$."
+  },
+  "note": ""
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.1 (ii) a), R^i_! p(p^*L) = 0",
+  "scan": "plain typewriter R",
+  "tex": "\\R_!^i p(p^*L)=0",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R_!^i p(p^*L)=0",
+   "new": "\\mathrm{R}_!^i p(p^*L)=0"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285)."
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.1 (ii) a), 'si i ≠ 2r'",
+  "scan": "'si' underlined",
+  "tex": "\\text{si }i\\ne 2r.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{si }i\\ne 2r.",
+   "new": "\\text{\\emph{si} }i\\ne 2r."
+  },
+  "note": ""
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.1 (ii) b), 'Le morphisme trace (SGA 4 XVIII)'",
+  "scan": "'Le morphisme trace' underlined, the reference not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Le morphisme trace (SGA 4 XVIII)",
+   "new": "\\item \\emph{Le morphisme trace} (SGA 4 XVIII)"
+  },
+  "note": ""
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.1 (ii) b), display R^{2r}_! p(p^*L) → L ⊗ μ_S^{⊗-r}",
+  "scan": "plain typewriter R",
+  "tex": "\\R_!^{2r}p(p^*L)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R_!^{2r}p(p^*L)",
+   "new": "\\mathrm{R}_!^{2r}p(p^*L)"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285)."
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.1 (ii) b), 'est un isomorphisme.' after the display",
+  "scan": "underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mu_S^{\\otimes -r}\n\\]\nest un isomorphisme.",
+   "new": "\\mu_S^{\\otimes -r}\n\\]\n\\emph{est un isomorphisme}."
+  },
+  "note": ""
+ },
+ {
+  "page": 283,
+  "where": "Corollaire 1.2, statement before the display",
+  "scan": "underlined: 'Soit' | 'un' | 'Module. Pour tout entier' | 'le morphisme image réciproque'; L, A_S-, i not; Module with a capital M",
+  "tex": "Soit $L$ un $A_S$-module. Pour tout entier $i$, le morphisme image réciproque",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $L$ un $A_S$-module. Pour tout entier $i$, le morphisme image réciproque",
+   "new": "\\emph{Soit} $L$ \\emph{un} $A_S$-\\emph{Module. Pour tout entier} $i$, \\emph{le morphisme image réciproque}"
+  },
+  "note": "One edit: it also gives the print's capital M (word)."
+ },
+ {
+  "page": 283,
+  "where": "Corollaire 1.2, 'est un isomorphisme.' after the display",
+  "scan": "underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "H^i(X,p^*L)\n\\]\nest un isomorphisme.",
+   "new": "H^i(X,p^*L)\n\\]\n\\emph{est un isomorphisme}."
+  },
+  "note": ""
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.3, first sentences",
+  "scan": "'... Pour tout A_S-Module L , les propriétés suivantes sont vérifiées :': underlined 'Supposons' | 'de rang constant' | 'Pour tout' | 'Module' | 'les propriétés suivantes sont vérifiées'; Module with a capital M; a colon at the end",
+  "tex": "... Pour tout $A_S$-module $L$, les propriétés suivantes sont vérifiées.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Supposons $E$ de rang constant $r$. Pour tout $A_S$-module $L$, les propriétés suivantes sont vérifiées.",
+   "new": "\\emph{Supposons} $E$ \\emph{de rang constant} $r$. \\emph{Pour tout} $A_S$-\\emph{Module} $L$, \\emph{les propriétés suivantes sont vérifiées} :"
+  },
+  "note": "One edit: it also gives the capital M (word) and the print's colon for the TeX's full stop (punctuation)."
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.3 (i) a), R^i q_*(q^*L) = 0",
+  "scan": "plain typewriter R",
+  "tex": "\\R^i q_*(q^*L)=0",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^i q_*(q^*L)=0",
+   "new": "\\mathrm{R}^i q_*(q^*L)=0"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285)."
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.3 (i) a), 'si i ≠ 0 , 2r-1'",
+  "scan": "'si' underlined",
+  "tex": "\\text{si }i\\ne 0,2r-1.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{si }i\\ne 0,2r-1.",
+   "new": "\\text{\\emph{si} }i\\ne 0,2r-1."
+  },
+  "note": ""
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.3 (i) b)",
+  "scan": "'Le morphisme d'adjonction' and 'est un isomorphisme' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Le morphisme d'adjonction\n\\[\nL\\longrightarrow q_*q^*(L)\n\\]\nest un isomorphisme.",
+   "new": "\\item \\emph{Le morphisme d'adjonction}\n\\[\nL\\longrightarrow q_*q^*(L)\n\\]\n\\emph{est un isomorphisme}."
+  },
+  "note": ""
+ },
+ {
+  "page": 283,
+  "where": "Proposition 1.3 (i) c), 'Désignant par Y le complémentaire de U'",
+  "scan": "'Désignant par' and 'le complémentaire de' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Désignant par $Y$ le complémentaire de $U$",
+   "new": "\\item \\emph{Désignant par} $Y$ \\emph{le complémentaire de} $U$"
+  },
+  "note": "The rest of the line ('dans X , le morphisme' and the display) is printed on p. 283 too but stands in page_284.tex: filed under p. 284."
+ },
+ {
+  "page": 284,
+  "where": "top of the page: 'composé du morphisme \"bord\",'",
+  "scan": "p. 284 begins with 'composé du morphisme \"bord\",' (then the display (1)); p. 283 ends with '... dans X , le morphisme' and the display 'R^{2r-1} q_*(q^*L) → L ⊗ μ_S^{⊗-r}'",
+  "tex": "page_284.tex begins 'dans $X$, le morphisme' and the display '\\R^{2r-1}q_*(q^*L)\\longrightarrow L\\otimes\\mu_S^{\\otimes -r}' (printed on p. 283)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 284 really begins at 'composé du morphisme bord' (the first line after that display). Exact fix: python -I move_marker.py 5 284 'composé du morphisme' (no --before; run it before the underline fix of that line, after which the anchor is '\\emph{composé du morphisme'). Simulated in memory on both layers, both ways: the marker then stands on its own line between '\\]' and the line 'composé du morphisme ...'. Text not moved; the text that moves to p. 283 is checked there: its underline and plain R are the next two items."
+ },
+ {
+  "page": 284,
+  "where": "Proposition 1.3 (i) c), 'dans X , le morphisme' (printed on p. 283)",
+  "scan": "'dans' and 'le morphisme' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $X$, le morphisme",
+   "new": "\\emph{dans} $X$, \\emph{le morphisme}"
+  },
+  "note": "Filed under p. 284, where the line stands until the marker move; the edit does not touch the move's anchor."
+ },
+ {
+  "page": 284,
+  "where": "display R^{2r-1} q_*(q^*L) → L ⊗ μ_S^{⊗-r} (printed at the foot of p. 283)",
+  "scan": "plain typewriter R",
+  "tex": "\\R^{2r-1}q_*(q^*L)\\longrightarrow L",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^{2r-1}q_*(q^*L)\\longrightarrow L",
+   "new": "\\mathrm{R}^{2r-1}q_*(q^*L)\\longrightarrow L"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285). Filed under p. 284, where the display stands until the marker move."
+ },
+ {
+  "page": 284,
+  "where": "'composé du morphisme \"bord\",'",
+  "scan": "'bord' in typewriter double quotes and a comma after it; 'composé du morphisme \"bord\"' underlined (the comma not)",
+  "tex": "composé du morphisme bord",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "composé du morphisme bord",
+   "new": "\\emph{composé du morphisme ``bord''},"
+  },
+  "note": "The TeX drops the quotes and the comma; the edit also gives the underline. ``...'' as the file's 'd'``algèbre généralisée''' (p. 285). Apply after the marker move of p. 284 or use the anchor given there."
+ },
+ {
+  "page": 284,
+  "where": "display (1), R^{2r-1} q_*(q^*L) → R^{2r}_Y p_*(p^*L)",
+  "scan": "both R plain typewriter R",
+  "tex": "\\R^{2r-1}q_*(q^*L)\\longrightarrow \\R_Y^{2r}p_*(p^*L)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^{2r-1}q_*(q^*L)\\longrightarrow \\R_Y^{2r}p_*(p^*L)",
+   "new": "\\mathrm{R}^{2r-1}q_*(q^*L)\\longrightarrow \\mathrm{R}_Y^{2r}p_*(p^*L)"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285)."
+ },
+ {
+  "page": 284,
+  "where": "'et de l'isomorphisme de pureté (SGA 4 XVIII)'",
+  "scan": "'et de l'isomorphisme de pureté' underlined, the reference not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et de l'isomorphisme de pureté (SGA 4 XVIII)",
+   "new": "\\emph{et de l'isomorphisme de pureté} (SGA 4 XVIII)"
+  },
+  "note": ""
+ },
+ {
+  "page": 284,
+  "where": "display R^{2r}_Y p_*(p^*L) → L ⊗ μ_S^{⊗-r}",
+  "scan": "plain typewriter R",
+  "tex": "\\R_Y^{2r}p_*(p^*L)\\longrightarrow L",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R_Y^{2r}p_*(p^*L)\\longrightarrow L",
+   "new": "\\mathrm{R}_Y^{2r}p_*(p^*L)\\longrightarrow L"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285)."
+ },
+ {
+  "page": 284,
+  "where": "Proposition 1.3 (i) c), 'est un isomorphisme.'",
+  "scan": "underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est un isomorphisme.\n\\end{enumerate}\n\\item",
+   "new": "\\emph{est un isomorphisme}.\n\\end{enumerate}\n\\item"
+  },
+  "note": ""
+ },
+ {
+  "page": 284,
+  "where": "Proposition 1.3 (ii) a), R^i_! q(q^*L) = 0",
+  "scan": "plain typewriter R",
+  "tex": "\\R_!^i q(q^*L)=0",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R_!^i q(q^*L)=0",
+   "new": "\\mathrm{R}_!^i q(q^*L)=0"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285)."
+ },
+ {
+  "page": 284,
+  "where": "Proposition 1.3 (ii) a), 'si i ≠ (1,2r) .'",
+  "scan": "'(1,2r)' in parentheses; 'si' underlined",
+  "tex": "\\text{si }i\\ne 1,2r.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{si }i\\ne 1,2r.",
+   "new": "\\text{\\emph{si} }i\\ne (1,2r)."
+  },
+  "note": "The TeX drops the parentheses; the edit also underlines 'si'."
+ },
+ {
+  "page": 284,
+  "where": "Proposition 1.3 (ii) b), 'Le morphisme bord'",
+  "scan": "underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Le morphisme bord",
+   "new": "\\item \\emph{Le morphisme bord}"
+  },
+  "note": ""
+ },
+ {
+  "page": 284,
+  "where": "Proposition 1.3 (ii) b), L ⟶ R^1_! q(q^*L)",
+  "scan": "plain typewriter R",
+  "tex": "L\\longrightarrow \\R_!^1 q(q^*L)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "L\\longrightarrow \\R_!^1 q(q^*L)",
+   "new": "L\\longrightarrow \\mathrm{R}_!^1 q(q^*L)"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285)."
+ },
+ {
+  "page": 284,
+  "where": "Proposition 1.3 (ii) b), 'provenant de la suite exacte illimitée (f : Y ⟶ S proj. can.)'",
+  "scan": "the abbreviation in parentheses: '(f : Y ⟶ S proj. can.)'; 'provenant de la suite exacte illimitée' and 'proj. can' underlined (f : Y ⟶ S and the final stop not)",
+  "tex": "provenant de la suite exacte illimitée, où $f:Y\\to S$ est la projection canonique,",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "provenant de la suite exacte illimitée, où $f:Y\\to S$ est la projection canonique,",
+   "new": "\\emph{provenant de la suite exacte illimitée} ($f:Y\\to S$ \\emph{proj. can}.)"
+  },
+  "note": "The TeX writes the abbreviation out as a clause; the edit also gives the underlines."
+ },
+ {
+  "page": 284,
+  "where": "Proposition 1.3 (ii) b), the exact sequence",
+  "scan": "'⟶ R^i_! q(q^*L) → R^i_! p(p^*L) → R^i f_*(f^*L) → R^{i+1}_! q(q^*L) → ...': no dots before the first arrow; all four R plain typewriter R",
+  "tex": "\\cdots\\longrightarrow \\R_!^i q(q^*L)... (leading \\cdots, \\R)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cdots\\longrightarrow \\R_!^i q(q^*L)\\longrightarrow \\R_!^i p(p^*L)\n\\longrightarrow \\R^i f_*(f^*L)\\longrightarrow \\R_!^{i+1}q(q^*L)",
+   "new": "\\longrightarrow \\mathrm{R}_!^i q(q^*L)\\longrightarrow \\mathrm{R}_!^i p(p^*L)\n\\longrightarrow \\mathrm{R}^i f_*(f^*L)\\longrightarrow \\mathrm{R}_!^{i+1}q(q^*L)"
+  },
+  "note": "The TeX adds '\\cdots' at the start. One edit with the four plain R (font)."
+ },
+ {
+  "page": 284,
+  "where": "Proposition 1.3 (ii) b) 'est un isomorphisme.' and (ii) c) 'Le morphisme trace'",
+  "scan": "both underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est un isomorphisme.\n\\item Le morphisme trace",
+   "new": "\\emph{est un isomorphisme}.\n\\item \\emph{Le morphisme trace}"
+  },
+  "note": ""
+ },
+ {
+  "page": 284,
+  "where": "Proposition 1.3 (ii) c), display R^{2r}q(q^*L) → L ⊗ μ_S^{⊗-r}",
+  "scan": "plain typewriter R",
+  "tex": "\\R^{2r}q(q^*L)\\longrightarrow",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^{2r}q(q^*L)\\longrightarrow",
+   "new": "\\mathrm{R}^{2r}q(q^*L)\\longrightarrow"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285). Listed before the misprint item on the same R. The current layer already reads \\R_!^{2r}q there: its old is '\\R_!^{2r}q(q^*L)\\longrightarrow'."
+ },
+ {
+  "page": 284,
+  "where": "Proposition 1.3 (ii) c), display R^{2r}q(q^*L) → L ⊗ μ_S^{⊗-r}",
+  "scan": "R^{2r} q(q^*L): no '!' under the R (the '!' is clear under the R of (ii) a) and b) and of 1.1 (ii))",
+  "tex": "\\R^{2r}q(q^*L) (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\mathrm{R}_!^{2r}q(q^*L)",
+  "note": "The trace morphism is defined on R^{2r}_! q (as R^{2r}_! p in 1.1 (ii) b)); R^{2r} q_* vanishes by (i) a). The TeX keeps the printed reading; the current layer already has \\R_!^{2r}q. Corrected reading given after the font fix of the previous item."
+ },
+ {
+  "page": 284,
+  "where": "Proposition 1.3 (ii) c), 'est un isomorphisme.'",
+  "scan": "underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est un isomorphisme.\n\\end{enumerate}\n\\end{enumerate}",
+   "new": "\\emph{est un isomorphisme}.\n\\end{enumerate}\n\\end{enumerate}"
+  },
+  "note": ""
+ },
+ {
+  "page": 284,
+  "where": "proof of 1.3, 'que, posant F = p*(L) , on a :'",
+  "scan": "colon after 'on a'",
+  "tex": "posant $F=p^*(L)$, on a",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "posant $F=p^*(L)$, on a",
+   "new": "posant $F=p^*(L)$, on a :"
+  },
+  "note": "The TeX drops the colon before the display."
+ },
+ {
+  "page": 284,
+  "where": "proof of 1.3, display '... et (R^jα_*)α^*(F) = 0 si j ≠ 0,2r-1'",
+  "scan": "plain typewriter R",
+  "tex": "(\\R^j\\alpha_*)\\alpha^*(F)=0",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\R^j\\alpha_*)\\alpha^*(F)=0",
+   "new": "(\\mathrm{R}^j\\alpha_*)\\alpha^*(F)=0"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285)."
+ },
+ {
+  "page": 284,
+  "where": "proof of 1.3, end of the display '... si j ≠ 0,2r-1 ,'",
+  "scan": "a comma (dot on the baseline with a tail below; no upper dot), although the next sentence 'Par ailleurs' begins with a capital",
+  "tex": "j\\ne0,2r-1.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "j\\ne0,2r-1.",
+   "new": "j\\ne0,2r-1,"
+  },
+  "corrected": "j\\ne0,2r-1.",
+  "note": "Typing error, comma for full stop; the TeX silently gives the stop. Drop this item if the mark is read as a stop with a speck under it."
+ },
+ {
+  "page": 284,
+  "where": "proof of 1.3, 'les faisceaux (R^jα_*)(α^*F) pour j ≥ 1'",
+  "scan": "plain typewriter R",
+  "tex": "$(\\R^j\\alpha_*)\\alpha^*F$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "faisceaux $(\\R^j",
+   "new": "faisceaux $(\\mathrm{R}^j"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285)."
+ },
+ {
+  "page": 284,
+  "where": "proof of 1.3, 'les faisceaux (R^jα_*)(α^*F) pour j ≥ 1'",
+  "scan": "(α^*F) in parentheses",
+  "tex": "$(\\R^j\\alpha_*)\\alpha^*F$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\alpha_*)\\alpha^*F$ pour",
+   "new": "\\alpha_*)(\\alpha^*F)$ pour"
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 284,
+  "where": "proof of 1.3, Leray spectral sequence R^i p_*(R^jα_*)(q^*L) ⇒ R^n q_*(q^*L)",
+  "scan": "all three R plain typewriter R",
+  "tex": "\\R^i p_*\\bigl(\\R^j\\alpha_*\\bigr)(q^*L)\\Longrightarrow \\R^n q_*(q^*L)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^i p_*\\bigl(\\R^j\\alpha_*\\bigr)(q^*L)\\Longrightarrow \\R^n q_*(q^*L)",
+   "new": "\\mathrm{R}^i p_*\\bigl(\\mathrm{R}^j\\alpha_*\\bigr)(q^*L)\\Longrightarrow \\mathrm{R}^n q_*(q^*L)"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285)."
+ },
+ {
+  "page": 284,
+  "where": "proof of 1.3, the exact sequence after 'la suite exacte illimitée'",
+  "scan": "'⟶ R^i_Y p_*(p^*L) → R^i p_*(p^*L) → R^i q_*(q^*L) → R^{i+1}_Y p_*(p^*L) → ... .': no dots before the first arrow; all four R plain typewriter R",
+  "tex": "\\cdots\\longrightarrow \\R_Y^i p_*(p^*L)... (leading \\cdots, \\R)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cdots\\longrightarrow \\R_Y^i p_*(p^*L)\\longrightarrow \\R^i p_*(p^*L)\\longrightarrow \\R^i q_*(q^*L)\n\\longrightarrow \\R_Y^{i+1}p_*(p^*L)",
+   "new": "\\longrightarrow \\mathrm{R}_Y^i p_*(p^*L)\\longrightarrow \\mathrm{R}^i p_*(p^*L)\\longrightarrow \\mathrm{R}^i q_*(q^*L)\n\\longrightarrow \\mathrm{R}_Y^{i+1}p_*(p^*L)"
+  },
+  "note": "The TeX adds '\\cdots' at the start. One edit with the four plain R (font)."
+ },
+ {
+  "page": 284,
+  "where": "footnote at the foot of the page",
+  "scan": "below a rule: '(*) Le faisceau R^{2r}_Y p_*(p^*L) est associé au préfaisceau U ↦ H^{2r}_{Y×_S U}(X ×_S U, p^*L) .'; no (*) call is visible in the text of pp. 284-285",
+  "tex": "'Le faisceau ...' runs on as a paragraph of the proof, without the mark (*)",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nLe faisceau",
+   "new": "\\]\n\n\\(\\quad (*)\\) Le faisceau"
+  },
+  "note": "The footnote mark, written as the file writes the footnotes of p. 281. The footnote has no call in the print."
+ },
+ {
+  "page": 284,
+  "where": "footnote, 'Le faisceau R^{2r}_Y p_*(p^*L)'",
+  "scan": "plain typewriter R",
+  "tex": "$\\R_Y^{2r}p_*(p^*L)$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\R_Y^{2r}p_*(p^*L)$ est associé",
+   "new": "$\\mathrm{R}_Y^{2r}p_*(p^*L)$ est associé"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285)."
+ },
+ {
+  "page": 285,
+  "where": "'les assertions ii) a) et b).'",
+  "scan": "'ii)' without the opening parenthesis",
+  "tex": "(ii) a) et b).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(ii) a) et b).",
+   "new": "ii) a) et b)."
+  },
+  "corrected": "(ii) a) et b).",
+  "note": "Typing error; the TeX silently corrects it (the proof writes '(i) a) et b)' on p. 284)."
+ },
+ {
+  "page": 285,
+  "where": "Remarque 1.4, 'Pour S = spec(C)'",
+  "scan": "'spec' with a small s",
+  "tex": "\\operatorname{Spec}(\\mathbb C)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\operatorname{Spec}(\\mathbb C)",
+   "new": "\\operatorname{spec}(\\mathbb C)"
+  },
+  "note": ""
+ },
+ {
+  "page": 285,
+  "where": "Remarque 1.4, 'rétracte par déformation de C^r ∸ 0 .'",
+  "scan": "a typed dot centred over the minus sign (∸)",
+  "tex": "\\mathbb C^r-0",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "\\mathbb C^r-0",
+   "new": "\\mathbb C^r\\mathbin{\\dot{-}}0"
+  },
+  "note": "The dot is crisp and centred over the dash. Drop this item if it is read as a stray typed mark."
+ },
+ {
+  "page": 285,
+  "where": "label of Corollaire 1.5",
+  "scan": "'COROLLAIRE 1.5. (Suite exacte de GYSIN)-': capital S, GYSIN in capitals",
+  "tex": "\\begin{statement}{Corollaire 1.5 (suite exacte de Gysin)}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "(suite exacte de Gysin)}",
+   "new": "(Suite exacte de GYSIN)}"
+  },
+  "note": "The print's stop after '1.5' and the final '-' belong to the label convention of Exposé VII (message)."
+ },
+ {
+  "page": 285,
+  "where": "Corollaire 1.5, 'La suite spectrale de Leray'",
+  "scan": "underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "La suite spectrale de Leray",
+   "new": "\\emph{La suite spectrale de Leray}"
+  },
+  "note": ""
+ },
+ {
+  "page": 285,
+  "where": "Corollaire 1.5, display H^i(S, R^j q_*(q^*L)) ⇒ H^{i+j}(U,q^*L)",
+  "scan": "R^j: plain typewriter R",
+  "tex": "H^i(S,\\R^j q_*(q^*L))",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "H^i(S,\\R^j q_*(q^*L))",
+   "new": "H^i(S,\\mathrm{R}^j q_*(q^*L))"
+  },
+  "note": "Plain typewriter R (one stem); \\R is \\mathbb{R} in this file (double-struck). The hand-drawn double-struck R of the print occurs only in Rp_* (proof of 1.2), R_!p and Rf_* (p. 285)."
+ },
+ {
+  "page": 285,
+  "where": "Corollaire 1.5, 'définit une suite exacte illimitée (appelée suite exacte de Gysin)'",
+  "scan": "the parenthesis, no commas; 'définit une suite exacte illimitée' underlined",
+  "tex": "définit une suite exacte illimitée, appelée suite exacte de Gysin,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "définit une suite exacte illimitée, appelée suite exacte de Gysin,",
+   "new": "\\emph{définit une suite exacte illimitée} (appelée suite exacte de Gysin)"
+  },
+  "note": "The TeX turns the parenthesis into commas; the edit also gives the underline."
+ },
+ {
+  "page": 285,
+  "where": "Corollaire 1.5, end of the Gysin sequence",
+  "scan": "'→ H^{i+1}(S,L) → ...' with no full stop",
+  "tex": "\\longrightarrow H^{i+1}(S,L)\\longrightarrow\\cdots.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "H^{i+1}(S,L)\\longrightarrow\\cdots.",
+   "new": "H^{i+1}(S,L)\\longrightarrow\\cdots"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 285,
+  "where": "section title 2",
+  "scan": "'2. SCHEMAS PROJECTIFS': hand-drawn capitals, underlined, no full stop",
+  "tex": "\\subsection*{2. Schémas projectifs}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{2. Schémas projectifs}",
+   "new": "\\subsection*{2. SCHÉMAS PROJECTIFS}"
+  },
+  "note": "Capitals as printed, as '1. FIBRES VECTORIELS' (p. 282); accented capital as the volume's rule."
+ },
+ {
+  "page": 285,
+  "where": "end of the introductory paragraph of section 2, 'suites spectrales [6]'",
+  "scan": "no full stop after [6]",
+  "tex": "spectrales [6].",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "spectrales [6].",
+   "new": "spectrales [6]"
+  },
+  "corrected": "spectrales [6].",
+  "note": "The typist left out the stop; the TeX silently adds it."
+ },
+ {
+  "page": 285,
+  "where": "numbered paragraph 2.1",
+  "scan": "'2.1.' (with a full stop)",
+  "tex": "\\subsubsection*{2.1}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{2.1}",
+   "new": "\\subsubsection*{2.1.}"
+  },
+  "note": "As the logged '1.1.4.' of p. 253."
+ },
+ {
+  "page": 285,
+  "where": "display (2.1.1), the tensor sign",
+  "scan": "⊗ with two short bars under it (no letter L); the R of Rf_* hand-drawn double-struck",
+  "tex": "\\otimes^L",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\otimes^L",
+   "new": "\\mathbin{\\underline{\\underline{\\otimes}}}"
+  },
+  "note": "The print has no L at the tensor sign; the two bars may be the typist's mark for the derived tensor. One decision with the later occurrences of the exposé."
+ },
+ {
+  "page": 285,
+  "where": "'Notons pour cela C•(X, A_X)'",
+  "scan": "a raised dot (bullet), as A•(X) on p. 282",
+  "tex": "C^*(X,A_X)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "C^*(X,A_X)",
+   "new": "C^{\\bullet}(X,A_X)"
+  },
+  "note": "The TeX has a star; written like the file's A^{\\bullet}(X) of p. 282."
+ }
+]

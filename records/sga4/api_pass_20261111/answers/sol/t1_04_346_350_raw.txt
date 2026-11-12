@@ -1,0 +1,75 @@
+{
+  "findings": [
+    {
+      "page": 346,
+      "where": "4.6.1, display following « un adjoint à gauche »",
+      "scan": "f_{!}:C\\longrightarrow C'",
+      "tex": "f_{!}:C\\longrightarrow C'{\\quoi},",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f_{!}:\\widehat{C}\\longrightarrow\\widehat{C}'",
+      "note": "Both hats are missing in print. The left adjoint is between the presheaf categories, as the following explanation confirms. The TeX retains this misprint."
+    },
+    {
+      "page": 347,
+      "where": "4.6.2, morphism induced by u:f→g",
+      "scan": "f\\circ g\\longrightarrow F\\circ f",
+      "tex": "f\\circ g\\rightarrow F\\circ f",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "F\\circ g\\rightarrow F\\circ f",
+      "note": "The first letter is a lowercase f in print, but must be the variable presheaf F. The TeX retains the misprint."
+    },
+    {
+      "page": 349,
+      "where": "Paragraph beginning « Lorsque E est de la forme »",
+      "scan": "le composé",
+      "tex": "la composé",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "la composé",
+        "new": "le composé"
+      },
+      "note": "The print has the masculine article « le »."
+    },
+    {
+      "page": 350,
+      "where": "4.6.4, opening paragraph, after the names Verdier and Quillen",
+      "scan": "ont vérifiés",
+      "tex": "ont vérifié",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "ont vérifié",
+      "note": "The print incorrectly adds an agreement s to the past participle. The TeX silently corrects it."
+    },
+    {
+      "page": 350,
+      "where": "4.7, definition of a cocontinuous functor",
+      "scan": "\\widehat{f}_{\\ast}\\text{ ou }f_{\\ast}",
+      "tex": "\\widehat{f}_{\\ast}",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "le foncteur $\\widehat{f}_{\\ast}$",
+        "new": "le foncteur $\\widehat{f}_{\\ast}$ ou $f_{\\ast}$"
+      },
+      "note": "The alternative notation « ou f_* » is omitted. The erroneous action formula following it in print is treated separately below."
+    },
+    {
+      "page": 350,
+      "where": "4.7, action formula following « ou f_* »",
+      "scan": "\\widehat{f}_{\\ast}\\text{ ou }f_{\\ast}:F\\mapsto F\\circ f\\text{ de }\\widehat{C}\\text{ dans }\\widehat{C}'",
+      "tex": "$\\widehat{f}_{\\ast}$\nde $\\widehat{C}$ dans $\\widehat{C}'$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "le foncteur $\\widehat{f}_{\\ast}$ ou $f_{\\ast}$ de $\\widehat{C}$ dans $\\widehat{C}'$",
+      "note": "The printed expansion F↦F∘f describes f^*, from Ĉ′ to Ĉ, not the direct-image functor f_*. The TeX corrects this error by suppressing the expansion. The alternative notation itself is valid and its omission is reported separately."
+    }
+  ],
+  "coordinator": "346: 0/1; 347: 0/1; 348: 0/0; 349: 1/0; 350: 1/2 (normal/misprint).\n350: restore « ou f_{\\ast} » without restoring the erroneous expansion « :F\\mapsto F\\circ f »."
+}

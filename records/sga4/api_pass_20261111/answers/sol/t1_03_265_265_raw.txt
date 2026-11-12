@@ -1,0 +1,42 @@
+{
+  "findings": [
+    {
+      "page": 265,
+      "where": "Ligne du nom de l’auteur",
+      "scan": "par J.L. Verdier",
+      "tex": "J.-L. Verdier",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "J.-L. Verdier\n\\end{center}",
+        "new": "par J.-L. Verdier\n\\end{center}"
+      },
+      "note": "Le mot « par » manque devant le nom de l’auteur."
+    },
+    {
+      "page": 265,
+      "where": "Introduction, première phrase",
+      "scan": "on a étudié le comportement",
+      "tex": "on a étudié la comportement",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "la comportement",
+        "new": "le comportement"
+      },
+      "note": "Le texte imprimé porte bien « le »."
+    },
+    {
+      "page": 265,
+      "where": "Définition 1.1, dernière phrase",
+      "scan": "le préfaisceau … ser C est un faisceau",
+      "tex": "préfaisceau $X\\mapsto F\\circ u(X)$ sur $C$ est un faisceau.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "sur $C$",
+      "note": "L’imprimé porte « ser » au lieu de « sur » ; le TeX corrige silencieusement cette coquille."
+    }
+  ],
+  "coordinator": "265: 2 normal / 1 misprint."
+}

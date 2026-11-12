@@ -1,0 +1,387 @@
+[
+ {
+  "page": 61,
+  "where": "top of the page: display (4.1) and 'est un'",
+  "scan": "p. 61 begins with the display '(4.1) (μ_n)_Y^{⊗-d} [-2d] ⟶ ℝi^!(Z/nZ)_X', then 'est un isomorphisme.'",
+  "tex": "page_061.tex begins with 'isomorphisme.'; the display (4.1) and 'est un' stood at the end of page_060.tex",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Already repaired: the folio-61 marker was moved by the pp. 56-60 report (with its fix of the (4.1) display). Verified in both layers at 17:16: the marker stands right before '\\begin{equation}\\tag{4.1}' (s5.tex line 1663) and the display now reads (\\mu_n)_Y^{\\otimes -d}[-2d] as printed. Nothing left to do; re-running move_marker.py 5 61 '\\begin{equation}\\tag{4.1}' --before is a no-op (anchor not found)."
+ },
+ {
+  "page": 61,
+  "where": "'Alors, pour tout F ∈ ob D^+(_A X), on peut définir'",
+  "scan": "D^+(_A X): the A is a left subscript of X inside the parentheses",
+  "tex": "\\D_A^+(X)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "pour tout $F\\in\\ob\\D_A^+(X)$, on peut",
+   "new": "pour tout $F\\in\\ob\\D^+({}_A X)$, on peut"
+  },
+  "note": "p. 55 (Appendice 1.1) writes this notation as printed, $\\D({}_A X)$; on pp. 61-63 the TeX writes all seven as \\D_A(X), \\D_A^+(X): each is listed."
+ },
+ {
+  "page": 61,
+  "where": "same sentence, 'une flèche canonique de D^+(_A X) :'",
+  "scan": "D^+(_A X), as above",
+  "tex": "\\D_A^+(X)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "canonique de $\\D_A^+(X)$:",
+   "new": "canonique de $\\D^+({}_A X)$:"
+  },
+  "note": ""
+ },
+ {
+  "page": 61,
+  "where": "'Alors, la flèche (4.2) se définit pour tout F ∈ ob D(_A X).'",
+  "scan": "D(_A X)",
+  "tex": "\\D_A(X)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "pour tout $F\\in\\ob\\D_A(X)$.",
+   "new": "pour tout $F\\in\\ob\\D({}_A X)$."
+  },
+  "note": ""
+ },
+ {
+  "page": 61,
+  "where": "'Composant (4.1) et (4.2), on a donc, pour F ∈ ob D^+(_A X), une'",
+  "scan": "D^+(_A X)",
+  "tex": "\\D_A^+(X)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "pour $F\\in\\ob\\D_A^+(X)$, une",
+   "new": "pour $F\\in\\ob\\D^+({}_A X)$, une"
+  },
+  "note": ""
+ },
+ {
+  "page": 61,
+  "where": "display (4.3), printed at the top of p. 62 (it stands under the folio-61 marker)",
+  "scan": "(4.3)  i^*(F) ⊗^L_{Z/nZ} (μ_n)_Y^{⊗-d} [-2d] ⟶ ℝi^!(F) . : the parenthesis closes after μ_n; Y is a subscript and ⊗-d a superscript after it, as in (4.1)",
+  "tex": "(\\mu_n^{\\otimes -d})_Y[-2d]\\longrightarrow \\R i^!(F).",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\mu_n^{\\otimes -d})_Y[-2d]\\longrightarrow \\R i^!(F)",
+   "new": "(\\mu_n)_Y^{\\otimes -d}[-2d]\\longrightarrow \\R i^!(F)"
+  },
+  "note": "Filed under p. 61 because the display stands in page_061.tex; the old stays unique on p. 62 after the folio-62 marker move. The typed n under μ is struck over another character (a typist's correction): it reads n. Same fix as the logged (4.1) fix of p. 60 and the p. 64 restatement below."
+ },
+ {
+  "page": 62,
+  "where": "top of the page: display (4.3)",
+  "scan": "p. 62 begins with the display '(4.3) i^*(F) ⊗^L_{Z/nZ} (μ_n)_Y^{⊗-d} [-2d] ⟶ ℝi^!(F) .', then the indented paragraph 'Supposons que A_X soit ...'; p. 61 ends with 'Composant (4.1) et (4.2), on a donc, pour F ∈ ob D^+(_A X), une flèche canonique' (blank below)",
+  "tex": "the display (4.3) (s5.tex lines 1688-1690 at 17:16) ends page_061.tex; the folio-62 marker (line 1691) follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 62 really begins at s5.tex line 1688 '\\begin{equation}\\tag{4.3}' (at 17:16). Exact fix: python -I move_marker.py 5 62 '\\begin{equation}\\tag{4.3}' --before (single quotes keep the backslashes; simulated in memory on both layers at 17:16: the marker then stands between 'une flèche canonique' and '\\begin{equation}\\tag{4.3}'). Text not moved. The (4.3) fix is filed under p. 61; its old stays unique after the move."
+ },
+ {
+  "page": 62,
+  "where": "'Supposons que A_X soit localement constant' (after the display (4.3))",
+  "scan": "'Supposons que' is indented: a new paragraph after the display",
+  "tex": "\\end{equation} (end of page_061.tex), the marker line, then 'Supposons que' with no blank line: the paragraph runs on from the display, unindented",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "Supposons que $A_X$",
+   "new": "\nSupposons que $A_X$"
+  },
+  "note": "The blank line after the marker comment line gives the paragraph break; it stays right after the folio-62 marker move (the display then ends just before it). Independent of the underline fix of the same line."
+ },
+ {
+  "page": 62,
+  "where": "'Supposons que A_X soit localement constant, et soit'",
+  "scan": "'localement constant,' underlined; the rule runs under the comma",
+  "tex": "soit localement constant, et (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "soit localement constant, et",
+   "new": "soit \\emph{localement constant,} et"
+  },
+  "note": "\\emph is this file's command for the print's underline in the appendix (\\emph{constructible}, \\emph{Preuve}, \\emph{Démonstration}). The TeX has none of the four underlines of this statement."
+ },
+ {
+  "page": 62,
+  "where": "same sentence, 'et soit F ∈ ob D^+(_A X) tel que, pour tout i'",
+  "scan": "D^+(_A X)",
+  "tex": "\\D_A^+(X)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$F\\in\\ob\\D_A^+(X)$ tel que, pour",
+   "new": "$F\\in\\ob\\D^+({}_A X)$ tel que, pour"
+  },
+  "note": "As on p. 61."
+ },
+ {
+  "page": 62,
+  "where": "'H^i(F) soit un A_X-Module localement constant.'",
+  "scan": "'localement constant' underlined; the rule stops before the full stop",
+  "tex": "-Module localement constant. (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "-Module localement constant.",
+   "new": "-Module \\emph{localement constant}."
+  },
+  "note": ""
+ },
+ {
+  "page": 62,
+  "where": "'Alors, si i^! est de dimension cohomologique finie, la flèche (4.2) (et par suite'",
+  "scan": "underlined from 'si' to '(4.2)', the comma after 'finie' included; 'Alors,' and the parenthesis '(et par suite la flèche (4.3) si (Y,X) satisfait à la pureté)' are not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "si $i^!$ est de dimension cohomologique finie, la flèche (4.2)",
+   "new": "\\emph{si $i^!$ est de dimension cohomologique finie, la flèche (4.2)}"
+  },
+  "note": ""
+ },
+ {
+  "page": 62,
+  "where": "'... satisfait à la pureté) est un isomorphisme.'",
+  "scan": "'est un isomorphisme' underlined; the rule stops before the full stop",
+  "tex": "pureté) est un isomorphisme. (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "pureté) est un isomorphisme.",
+   "new": "pureté) \\emph{est un isomorphisme}."
+  },
+  "note": ""
+ },
+ {
+  "page": 62,
+  "where": "Définition 4.4, 'étant donné (localement constant, annulé par n) nous dirons'",
+  "scan": "no comma after the closing parenthesis (it ends the line; the next line begins 'nous dirons')",
+  "tex": "annulé par $n$), nous dirons",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "annulé par $n$), nous",
+   "new": "annulé par $n$) nous"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 62,
+  "where": "Définition 4.4, 'si, pour tout F ∈ ob D^+(_A X) tel que les H^i(F)'",
+  "scan": "D^+(_A X)",
+  "tex": "\\D_A^+(X)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "pour tout $F\\in\\ob\\D_A^+(X)$ tel que les",
+   "new": "pour tout $F\\in\\ob\\D^+({}_A X)$ tel que les"
+  },
+  "note": "As on p. 61."
+ },
+ {
+  "page": 62,
+  "where": "'D'après ce qu'on a vu, pour que (Y,X) satisfasse à la pureté au sens fort'",
+  "scan": "begins a new, indented paragraph after '... satisfait à la pureté au sens fort.'",
+  "tex": "run on in the paragraph 'Nous dirons que le théorème de pureté ...'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "au sens fort. D'après",
+   "new": "au sens fort.\n\nD'après"
+  },
+  "note": ""
+ },
+ {
+  "page": 63,
+  "where": "section heading",
+  "scan": "'5. Majoration de la dimension quasi-injective.' (underlined, with a full stop)",
+  "tex": "\\subsection*{5. Majoration de la dimension quasi-injective}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "quasi-injective}",
+   "new": "quasi-injective.}"
+  },
+  "note": "As the logged heading fixes of § 3 (p. 21) and § 5 (p. 50)."
+ },
+ {
+  "page": 63,
+  "where": "Proposition 5.1, '(Conditions toutes vérifiées si X est lisse'",
+  "scan": "Conditions with a capital C after the parenthesis",
+  "tex": "(conditions toutes vérifiées",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "(conditions toutes",
+   "new": "(Conditions toutes"
+  },
+  "note": "Capital against small letter."
+ },
+ {
+  "page": 63,
+  "where": "Proposition 5.1, 'Soit F ∈ ob D^+(_A X) tel que les H^i(F)'",
+  "scan": "D^+(_A X)",
+  "tex": "\\D_A^+(X)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $F\\in\\ob\\D_A^+(X)$",
+   "new": "Soit $F\\in\\ob\\D^+({}_A X)$"
+  },
+  "note": "As on p. 61."
+ },
+ {
+  "page": 63,
+  "where": "proof of Proposition 5.1, its label",
+  "scan": "'Démonstration. Il n'y a qu'à ...': 'Démonstration' underlined; the rule stops before the full stop",
+  "tex": "\\emph{Démonstration.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Démonstration.}",
+   "new": "\\emph{Démonstration}."
+  },
+  "note": "Proof label in the print's form (as the global '\\emph{Preuve} :'): here a full stop, not a colon."
+ },
+ {
+  "page": 63,
+  "where": "end of the page and top of p. 64: '(A_Y = i^*A_X).' then 'Or on a l'isomorphisme de dualité'",
+  "scan": "p. 64 begins 'Or on a' at the left margin, not indented (new paragraphs on these pages are indented: 'Supposons que', 'En effet', 'Reste à prouver'): the argument goes on in the same paragraph",
+  "tex": "page_063.tex ends with '($A_Y=i^*A_X$).' and a blank line, so 'Or on a' starts a new paragraph",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "($A_Y=i^*A_X$).\n\n",
+   "new": "($A_Y=i^*A_X$).\n"
+  },
+  "note": "The line break itself is the page end (p. 63 ends early, blank below). Drop if paragraph breaks at a page end are left to the transcription."
+ },
+ {
+  "page": 64,
+  "where": "first display, 'R Hom(i_!(M),F) <~ R i_* R Hom(M, R i^!F) .'",
+  "scan": "the sign is a left-pointing arrow with a tilde over it (arrowhead at the left end of the bar)",
+  "tex": "\\R\\underline{\\Hom}(i_!(M),F)\\simeq \\R i_*...",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(i_!(M),F)\\simeq",
+   "new": "(i_!(M),F)\\xleftarrow{\\sim}"
+  },
+  "note": "\\xleftarrow is amsmath, like the file's \\xrightarrow{\\sim}."
+ },
+ {
+  "page": 64,
+  "where": "second display, the isomorphism (4.3)",
+  "scan": "i^*(F) ⊗^L_{Z/nZ} (μ_n)_Y^{⊗-d}[-2d] ⟶~ ℝi^!(F) . : the parenthesis closes after μ_n",
+  "tex": "(\\mu_n^{\\otimes -d})_Y[-2d]\\xrightarrow{\\sim}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\mu_n^{\\otimes -d})_Y[-2d]\\xrightarrow",
+   "new": "(\\mu_n)_Y^{\\otimes -d}[-2d]\\xrightarrow"
+  },
+  "note": "As (4.1) and (4.3)."
+ },
+ {
+  "page": 64,
+  "where": "'Comme M est localement constant constructible, on a (canoniquement)'",
+  "scan": "(canoniquement) in parentheses",
+  "tex": "on a canoniquement",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "on a canoniquement",
+   "new": "on a (canoniquement)"
+  },
+  "note": "Parentheses left out."
+ },
+ {
+  "page": 64,
+  "where": "display after '(canoniquement)': 'R Hom(M, R i^!F)_ȳ ≃ R Hom(M_ȳ, (R i^!F)_ȳ)', the R inside the first Hom",
+  "scan": "a plain typewriter R with one stem (1-3 px, as the R of 'Résolvant' p. 62 and 'Reste' p. 65); the three other R of this display and all R of the next display have two separate stems (double-struck)",
+  "tex": "\\R\\underline{\\Hom}(M,\\R i^!F)_{\\bar{y}} (\\R = \\mathbb{R})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(M,\\R i^!F)_{\\bar{y}}\\simeq \\R\\underline{\\Hom}(M_{\\bar{y}},(",
+   "new": "(M,\\mathrm{R} i^!F)_{\\bar{y}}\\simeq \\R\\underline{\\Hom}(M_{\\bar{y}},("
+  },
+  "corrected": "\\R i^!F",
+  "note": "The TeX silently gives the double-struck R; the fix restores the printed letter (diplomatic layer only), as the plain R of pp. 16, 38, 45."
+ },
+ {
+  "page": 64,
+  "where": "'On a alors F_x̄ ≃ F_ȳ , A_x̄ ≃ A_ȳ , puisque'",
+  "scan": "the two isomorphisms are displayed, centred on a line of their own: 'F_x̄ ≃ F_ȳ ,   A_x̄ ≃ A_ȳ ,'; 'puisque A_X et les H^i(F) ...' begins the next line at the margin",
+  "tex": "inline: On a alors $F_{\\bar{x}}\\simeq F_{\\bar{y}}$, $A_{\\bar{x}}\\simeq A_{\\bar{y}}$, puisque",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "On a alors $F_{\\bar{x}}\\simeq F_{\\bar{y}}$, $A_{\\bar{x}}\\simeq A_{\\bar{y}}$, puisque",
+   "new": "On a alors\n\\[\n        F_{\\bar{x}}\\simeq F_{\\bar{y}},\\qquad A_{\\bar{x}}\\simeq A_{\\bar{y}},\n\\]\npuisque"
+  },
+  "note": "Display against inline formula, as the layout fix logged for p. 44."
+ },
+ {
+  "page": 64,
+  "where": "cartesian square, label of the bottom arrow Z -> X",
+  "scan": "k stands above the arrow (j stands to the left of the vertical arrow Y -> Z)",
+  "tex": "Z \\arrow[r,\"k\"'] (the ' sets the label below the arrow)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"k\"']",
+   "new": "\\arrow[r,\"k\"]"
+  },
+  "note": "\"j\"' (left of the vertical arrow) is right as it stands."
+ },
+ {
+  "page": 65,
+  "where": "'donc R^p i_* (G)_x̄ = 0 pour p > d + dim(O_X,x) + dim.inj(F_x̄) ,'",
+  "scan": "R^p with a plain typewriter R (one stem, 2-3 px, as the R of 'Reste' below); the R^p of the display 'R^p i_*(G)_x̄ = 0 pour p > 2d + ...' above has two stems about 2 px apart (double-struck, as the TeX)",
+  "tex": "\\R^p i_*(G)_{\\bar{x}}=0\\quad\\hbox{pour }p>d+ (\\R = \\mathbb{R})",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^p i_*(G)_{\\bar{x}}=0\\quad\\hbox{pour }p>d+",
+   "new": "\\mathrm{R}^p i_*(G)_{\\bar{x}}=0\\quad\\hbox{pour }p>d+"
+  },
+  "note": "As the plain R^q, R^p of pp. 26-29 (logged as font). Does not overlap the two layout fixes of this line."
+ },
+ {
+  "page": 65,
+  "where": "same line: the formula is run into the text after 'donc' (opening)",
+  "scan": "'donc R^p i_* (G)_x̄ = 0 pour p > ... ,' is one line of running text beginning at the margin, not a display; 'donc a fortiori pour ...' follows on the next line",
+  "tex": "a display \\[ ... \\] between 'donc' and 'donc a fortiori'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "donc\n\\[\n        ",
+   "new": "donc $"
+  },
+  "note": "Apply together with the next finding (closing $): either alone breaks the LaTeX. The \\quad\\hbox{pour } stays inside the inline formula."
+ },
+ {
+  "page": 65,
+  "where": "same line: the formula is run into the text (closing)",
+  "scan": "the comma after dim.inj(F_x̄) ends the formula; 'donc a fortiori' begins the next line",
+  "tex": "...\\dim.\\mathrm{inj}(F_{\\bar{x}}), \\] donc a fortiori",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathrm{inj}(F_{\\bar{x}}),\n\\]\ndonc a fortiori",
+   "new": "\\mathrm{inj}(F_{\\bar{x}})$,\ndonc a fortiori"
+  },
+  "note": "Apply together with the previous finding."
+ }
+]

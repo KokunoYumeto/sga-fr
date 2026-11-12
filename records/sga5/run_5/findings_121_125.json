@@ -1,0 +1,322 @@
+[
+ {
+  "page": 121,
+  "where": "top of the page",
+  "scan": "p. 121 begins 'rappelons qu'on dit que L est parfait rel. à S si L est de tor-dimension finie rel. à S et à cohomologie cohérente. Nous noterons D(X)_parf/S ...'",
+  "tex": "'rappelons qu'on dit que $L$ est parfait rel. à $S$ si $L$ est de tor-dimension finie rel. à $S$ et à' ends s5.tex line 3905, the last line of page_120.tex; the folio-121 marker (line 3906) follows it, so page_121.tex begins 'cohomologie cohérente.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 121 really begins at 'rappelons qu'on dit que' in s5.tex line 3905 (after '$L\\in\\operatorname{ob}D(X)$, '). Exact fix: python -I move_marker.py 5 121 \"rappelons qu'on dit que\" --before (the anchor occurs once before the marker; simulated in memory on both layers: the marker then splits line 3905 after '$L\\in\\operatorname{ob}D(X)$, ', and page 121 begins 'rappelons qu'on dit que $L$ est parfait'). The moved words agree with the print."
+ },
+ {
+  "page": 121,
+  "where": "6.2, 'i.e. (SGA 6 III 1.5) si Tor_i^S(O_X,O_Y) = 0 pour i ≠ 0'",
+  "scan": "Tor underlined (the sheaf Tor), the underline running from T to r",
+  "tex": "$\\Tor_i^S(\\cO_X,\\cO_Y)=0$ (\\Tor is the plain \\DeclareMathOperator)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tor_i^S",
+   "new": "\\underline{\\Tor}_i^S"
+  },
+  "note": "Written like the file's \\underline{\\Hom}. The only Tor of these pages."
+ },
+ {
+  "page": 121,
+  "where": "same formula, 'Tor_i^S(O_X,O_Y)'",
+  "scan": "O_X , O_Y without indices, in the sentence 'si X_1 et X_2 sont tor-indépendants sur S , i.e. ... si Tor_i^S(O_X,O_Y) = 0'",
+  "tex": "\\Tor_i^S(\\cO_X,\\cO_Y) (keeps the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(\\cO_{X_1},\\cO_{X_2})",
+  "note": "The schemes of the sentence are X_1 and X_2; the print copies the letters of the cited definition (SGA 6 III Définition 1.5: 'Soient X et Y deux S-schémas'). The TeX keeps the printed reading. Medium: the letters may be meant as a quotation of that definition."
+ },
+ {
+  "page": 122,
+  "where": "'Rappelons seulement les formules d'adjonction partielle Hom_f^(1)(L,M) = Hom(M,f_*L) ( pour M ∈ ob D^-(Y) , L ∈ ob D^+(X))'",
+  "scan": "the parenthesis begins with 'pour': '( pour M ∈ ob D^-(Y) , L ∈ ob D^+(X))'",
+  "tex": "\\quad(M\\in\\operatorname{ob}D^{-}(Y),\\ L\\in\\operatorname{ob}D^+(X)),",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\quad(M\\in",
+   "new": "\\quad(\\text{pour }M\\in"
+  },
+  "note": "Independent of the three display-to-inline edits of this passage (no overlap)."
+ },
+ {
+  "page": 122,
+  "where": "'Hom_f^(3)(L,M) = Hom(f_*L,M) (pour f propre, L ∈ ob D(X)_coh , M ∈ ob D^+(Y)) .'",
+  "scan": "'(pour f propre, ...'",
+  "tex": "\\quad(f\\text{ propre},\\ L\\in\\operatorname{ob}D(X)_{\\mathrm{coh}},\\ M\\in\\operatorname{ob}D^+(Y)).",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\quad(f\\text{ propre}",
+   "new": "\\quad(\\text{pour }f\\text{ propre}"
+  },
+  "note": "Independent of the three display-to-inline edits of this passage (no overlap)."
+ },
+ {
+  "page": 122,
+  "where": "the two partial adjunction formulas, opening of the first",
+  "scan": "both formulas run in the text: '... seulement les formules d'adjonction partielle Hom_f^(1)(L,M) = Hom(M,f_*L) ( pour M ∈ ob D^-(Y) , L ∈ ob D^+(X)) , Hom_f^(3)(L,M) = Hom(f_*L,M) (pour f propre, L ∈ ob D(X)_coh , M ∈ ob D^+(Y)) .'",
+  "tex": "two displays \\[ ... \\] \\[ ... \\] after 'partielle', before \\subsection*{6.3}",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "partielle\n\\[\n",
+   "new": "partielle $"
+  },
+  "note": "Edit 1 of 3 (display against inline formula, as the logged fix of p. 44); apply together with the two next edits: any one alone breaks the LaTeX. The \\quad and the 'pour' of the two 'missing' edits stay inside the inline formulas."
+ },
+ {
+  "page": 122,
+  "where": "the two partial adjunction formulas, between them",
+  "scan": "both formulas run in the text: '... seulement les formules d'adjonction partielle Hom_f^(1)(L,M) = Hom(M,f_*L) ( pour M ∈ ob D^-(Y) , L ∈ ob D^+(X)) , Hom_f^(3)(L,M) = Hom(f_*L,M) (pour f propre, L ∈ ob D(X)_coh , M ∈ ob D^+(Y)) .'",
+  "tex": "two displays \\[ ... \\] \\[ ... \\] after 'partielle', before \\subsection*{6.3}",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "D^+(X)),\n\\]\n\\[\n",
+   "new": "D^+(X))$, $"
+  },
+  "note": "Edit 2 of 3; the comma stands after the closing parenthesis, as printed."
+ },
+ {
+  "page": 122,
+  "where": "the two partial adjunction formulas, closing of the second",
+  "scan": "both formulas run in the text: '... seulement les formules d'adjonction partielle Hom_f^(1)(L,M) = Hom(M,f_*L) ( pour M ∈ ob D^-(Y) , L ∈ ob D^+(X)) , Hom_f^(3)(L,M) = Hom(f_*L,M) (pour f propre, L ∈ ob D(X)_coh , M ∈ ob D^+(Y)) .'",
+  "tex": "two displays \\[ ... \\] \\[ ... \\] after 'partielle', before \\subsection*{6.3}",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "D^+(Y)).\n\\]\n",
+   "new": "D^+(Y))$.\n"
+  },
+  "note": "Edit 3 of 3; the full stop is printed."
+ },
+ {
+  "page": 122,
+  "where": "'avec f propre afin d'éviter les pro-objets dûs à un f_! )'",
+  "scan": "dûs, with a typed circumflex on the u (clear)",
+  "tex": "pro-objets dus à un $f_!$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "dus à un",
+   "new": "dûs à un"
+  },
+  "corrected": "dus à un",
+  "note": "Plural of the participle dû is dus (the circumflex only in the masculine singular). The TeX silently corrects; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 123,
+  "where": "top of the page",
+  "scan": "p. 123 begins '2.2.3, 2.2.4 (sous réserve qu'elles soient définies) sont des isomorphismes dès que E_1 et E_2 sont parfaits'; p. 122 ends '(2.2.3, 2.2.4) sont définies, et les flèches' above its footnote",
+  "tex": "'2.2.3, 2.2.4 (' ends s5.tex line 3945, the last line of page_122.tex; the folio-123 marker (line 3946) follows it, so page_123.tex begins 'sous réserve qu'elles soient définies)'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 123 really begins at '2.2.3, 2.2.4 (' at the end of s5.tex line 3945. Exact fix: python -I move_marker.py 5 123 \"2.2.3, 2.2.4 (\" --before (the earlier '(2.2.3, 2.2.4) sont' of the same line does not match the anchor; simulated in memory on both layers: the marker then splits line 3945 after 'et les flèches ', and page 123 begins '2.2.3, 2.2.4 ('). The moved words agree with the print."
+ },
+ {
+  "page": 123,
+  "where": "'et les flèches de Künneth f_1^!Q_1 ⊗_S Q_2 ⟶ (f_1 x_S Y_2)^!(Q_1 ⊗_S Q_2) , f_1^!Q_1 ⊗_S F_2 ⟶ (f_1 x_S Y_2)^!(Q_1 ⊗_S F_2) des isomorphismes.'",
+  "scan": "the two arrows run in the text, on the line that begins 'Künneth'; 'des isomorphismes.' follows on the next line; a comma between the arrows, nothing after the second",
+  "tex": "a display \\[ ... ,\\qquad ... \\] between 'Künneth' and 'des isomorphismes'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "Künneth\n\\[\nf_1^!Q_1\\otimes_S^{\\mathbf L}Q_2\\to(f_1\\times_SY_2)^!(Q_1\\otimes_S^{\\mathbf L}Q_2),\\qquad\nf_1^!Q_1\\otimes_S^{\\mathbf L}F_2\\to(f_1\\times_SY_2)^!(Q_1\\otimes_S^{\\mathbf L}F_2)\n\\]\ndes",
+   "new": "Künneth $f_1^!Q_1\\otimes_S^{\\mathbf L}Q_2\\to(f_1\\times_SY_2)^!(Q_1\\otimes_S^{\\mathbf L}Q_2)$, $f_1^!Q_1\\otimes_S^{\\mathbf L}F_2\\to(f_1\\times_SY_2)^!(Q_1\\otimes_S^{\\mathbf L}F_2)$ des"
+  },
+  "note": "Display against inline formula (as p. 44). The derived tensors are left as they stand for the Exposé III tensor pass."
+ },
+ {
+  "page": 123,
+  "where": "'d'où, en composant avec l'isomorphisme de Künneth (6.3) q_1^!O_S ⊗_S L_2 ⥲ p_2^!L_2 une flèche'",
+  "scan": "no comma after p_2^!L_2 (a blank, then 'une')",
+  "tex": "$q_1^!\\cO_S\\otimes_S^{\\mathbf L}L_2\\xrightarrow{\\sim}p_2^!L_2$, une flèche",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "p_2^!L_2$, une flèche",
+   "new": "p_2^!L_2$ une flèche"
+  },
+  "note": "The TeX adds the comma."
+ },
+ {
+  "page": 124,
+  "where": "'et les éléments de Hom(c_1^*L_1,c_2^!L_2) = H^0(X,c_*c^!RHom(p_1^*L_1,p_2^!L_2)) s'appelleront ...'",
+  "scan": "the formula runs in the text, on the line that begins 'et les éléments de', followed by 's'appelleront cor-'",
+  "tex": "a display \\[\\Hom(c_1^*L_1,c_2^!L_2)=H^0(X,c_*c^!\\uRHom(p_1^*L_1,p_2^!L_2))\\]",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "éléments de\n\\[\n\\Hom(c_1^*L_1,c_2^!L_2)=H^0(X,c_*c^!\\uRHom(p_1^*L_1,p_2^!L_2))\n\\]\ns'appelleront",
+   "new": "éléments de $\\Hom(c_1^*L_1,c_2^!L_2)=H^0(X,c_*c^!\\uRHom(p_1^*L_1,p_2^!L_2))$ s'appelleront"
+  },
+  "note": "Display against inline formula (as p. 44). No overlap with the underline edit that follows."
+ },
+ {
+  "page": 124,
+  "where": "'s'appelleront correspondances (cohomologiques) de L_1 à L_2 à support dans C .'",
+  "scan": "underlined: 'cor-respondances', 'de', 'à', 'à support dans' (not the letters L_1, L_2, C); '(cohomologiques)' is not underlined",
+  "tex": "\\emph{correspondances (cohomologiques) de $L_1$ à $L_2$ à support dans $C$}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{correspondances (cohomologiques) de",
+   "new": "\\emph{correspondances} (cohomologiques) \\emph{de"
+  },
+  "note": "\\emph is the file's command for the print's underline in Exposé III; the closing brace of the old \\emph now closes the second one."
+ },
+ {
+  "page": 124,
+  "where": "'d'où, par application de RΓ(Y,-) , un isomorphisme'",
+  "scan": "a plain typed R (the typeface of the text) before the hand-drawn Γ",
+  "tex": "$\\R\\Gamma(Y,-)$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\R\\Gamma(Y,-)$",
+   "new": "$\\mathrm{R}\\Gamma(Y,-)$"
+  },
+  "note": "Exposé III types the derived-functor R plain (as the R of RHom, which the Exposé III \\uRHom renders \\mathrm{R}; per-place fixes of pp. 73-79 logged); \\R is \\mathbb{R} in the diplomatic s5.tex (line 47), \\mathrm{R} only in the current layer."
+ },
+ {
+  "page": 124,
+  "where": "'On en déduit un corollaire analogue à 6.5, et, dans le cas où Y_1 = Y_2 = S est le spectre d'un corps'",
+  "scan": "a comma after 6.5: '6.5, et, dans'",
+  "tex": "analogue à 6.5 et, dans le cas",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "analogue à 6.5 et,",
+   "new": "analogue à 6.5, et,"
+  },
+  "note": "The misprint 6.5 (next finding) is left as printed; its correction changes only the number."
+ },
+ {
+  "page": 124,
+  "where": "same sentence, 'un corollaire analogue à 6.5'",
+  "scan": "'6.5', the number of the paragraph itself",
+  "tex": "analogue à 6.5 (keeps the printed reading; the current layer too)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "analogue à 3.5",
+  "note": "6.5 transposes § 3 point by point: a diagram analogous to 3.4.1, then the corollary, then a description analogous to 3.6; that corollary is Corollaire 3.5 (s5.tex line 2720). The TeX keeps the printed reading."
+ },
+ {
+  "page": 124,
+  "where": "'Etant donné un carré commutatif 3.7.1, avec c propre, on a, pour K ∈ ob D^+(C) une flèche canonique'",
+  "scan": "no comma after D^+(C)",
+  "tex": "pour $K\\in\\operatorname{ob}D^+(C)$, une flèche canonique",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "D^+(C)$, une flèche",
+   "new": "D^+(C)$ une flèche"
+  },
+  "note": "The TeX adds the comma."
+ },
+ {
+  "page": 125,
+  "where": "top of the page",
+  "scan": "p. 125 begins with the displays (6.5.4) and (6.5.5), then 'analogues à 3.7.5, 3.7.6.'; p. 124 ends 'Prenant K = RHom_S(L_1,L_2) , on déduit de 6.5.3 et 6.5.1 des flèches canoniques'",
+  "tex": "the displays (6.5.4) and (6.5.5) (s5.tex lines 4007-4013) stand in page_124.tex; the folio-125 marker (line 4014) sits inside the equation environment of (6.5.5), before its \\end{equation}",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 125 really begins at the \\begin{equation} of (6.5.4), s5.tex line 4007. Exact fix (bash): python -I move_marker.py 5 125 $'\\\\begin{equation}\\n\\\\tag{6.5.4}' --before (the anchor is '\\begin{equation}', a line break, '\\tag{6.5.4}'; '\\tag{6.5.4}' alone would leave the \\begin{equation} on p. 124; simulated in memory on both layers: the marker then stands between '... des flèches canoniques' and '\\begin{equation}'). The two displays agree with the print."
+ },
+ {
+  "page": 125,
+  "where": "foot of the page: the last line of page_125.tex",
+  "scan": "p. 125 ends '... s'identifie canoniquement à e_*K_E (resp. H^0(E,K_E)) .'; the rest of the page is blank",
+  "tex": "page_125.tex ends with the paragraph 'Le théorème 4.4 a l'%' (s5.tex line 4044), which p. 125 does not print; the folio-126 marker (line 4045) follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 126 begins at 'Le théorème 4.4 a l'' (s5.tex line 4044; p. 126 itself is not in this batch). Exact fix: python -I move_marker.py 5 126 \"Le théorème 4.4 a l'\" --before (simulated in memory on both layers: the marker then stands on its own line before line 4044; the % after l' still joins 'l'analogue suivant')."
+ },
+ {
+  "page": 125,
+  "where": "end of display (6.6.2)",
+  "scan": "no punctuation after '... ⊗ Rd_*O_D,K_X)'",
+  "tex": "\\uRHom(\\R c_*\\cO_C\\otimes^{\\mathbf L}\\R d_*\\cO_D,K_X),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "K_X),",
+   "new": "K_X)"
+  },
+  "note": "Punctuation added at the end of a display; (6.6.1) and (6.6.3) end with a printed full stop, as the TeX. No overlap with the R edit of (6.6.2)."
+ },
+ {
+  "page": 125,
+  "where": "'D'après 6.1.1, on a c_*c^!P = RHom(Rc_*O_C,P)'",
+  "scan": "Rc_*O_C with a plain typed R",
+  "tex": "c_*c^!P=\\uRHom(\\R c_*\\cO_C,P)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom(\\R c_*\\cO_C,P)",
+   "new": "\\uRHom(\\mathrm{R}c_*\\cO_C,P)"
+  },
+  "note": "Exposé III types the derived-functor R plain (as the R of RHom, which the Exposé III \\uRHom renders \\mathrm{R}; per-place fixes of pp. 73-79 logged); \\R is \\mathbb{R} in the diplomatic s5.tex (line 47), \\mathrm{R} only in the current layer."
+ },
+ {
+  "page": 125,
+  "where": "(6.6.1), 'RHom(Rc_*O_C ⊗ Rd_*O_D , P ⊗ Q)'",
+  "scan": "both R plain typed",
+  "tex": "\\uRHom(\\R c_*\\cO_C\\otimes^{\\mathbf L}\\R d_*\\cO_D,P\\otimes^{\\mathbf L}Q)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom(\\R c_*\\cO_C\\otimes^{\\mathbf L}\\R d_*\\cO_D,P",
+   "new": "\\uRHom(\\mathrm{R}c_*\\cO_C\\otimes^{\\mathbf L}\\mathrm{R}d_*\\cO_D,P"
+  },
+  "note": "Two signs in one edit. Exposé III types the derived-functor R plain (as the R of RHom, which the Exposé III \\uRHom renders \\mathrm{R}; per-place fixes of pp. 73-79 logged); \\R is \\mathbb{R} in the diplomatic s5.tex (line 47), \\mathrm{R} only in the current layer."
+ },
+ {
+  "page": 125,
+  "where": "(6.6.2), right-hand side 'RHom(Rc_*O_C ⊗ Rd_*O_D,K_X)'",
+  "scan": "both R plain typed",
+  "tex": "\\longrightarrow\\uRHom(\\R c_*\\cO_C\\otimes^{\\mathbf L}\\R d_*\\cO_D,K_X),",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow\\uRHom(\\R c_*\\cO_C\\otimes^{\\mathbf L}\\R d_*",
+   "new": "\\longrightarrow\\uRHom(\\mathrm{R}c_*\\cO_C\\otimes^{\\mathbf L}\\mathrm{R}d_*"
+  },
+  "note": "Two signs in one edit. Exposé III types the derived-functor R plain (as the R of RHom, which the Exposé III \\uRHom renders \\mathrm{R}; per-place fixes of pp. 73-79 logged); \\R is \\mathbb{R} in the diplomatic s5.tex (line 47), \\mathrm{R} only in the current layer."
+ },
+ {
+  "page": 125,
+  "where": "(6.6.3), right-hand side 'Hom(Rc_*O_C ⊗ Rd_*O_D,K_X)'",
+  "scan": "both R plain typed",
+  "tex": "\\longrightarrow\\Hom(\\R c_*\\cO_C\\otimes^{\\mathbf L}\\R d_*\\cO_D,K_X).",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow\\Hom(\\R c_*\\cO_C\\otimes^{\\mathbf L}\\R d_*",
+   "new": "\\longrightarrow\\Hom(\\mathrm{R}c_*\\cO_C\\otimes^{\\mathbf L}\\mathrm{R}d_*"
+  },
+  "note": "Two signs in one edit. Exposé III types the derived-functor R plain (as the R of RHom, which the Exposé III \\uRHom renders \\mathrm{R}; per-place fixes of pp. 73-79 logged); \\R is \\mathbb{R} in the diplomatic s5.tex (line 47), \\mathrm{R} only in the current layer."
+ },
+ {
+  "page": 125,
+  "where": "(6.6.3), the pairing '< , > :'",
+  "scan": "typed less-than and greater-than signs with a comma between: '<  , > :'",
+  "tex": "\\langle\\ ,\\ \\rangle:",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "A typewriter stand-in, like x for the product sign; the TeX writes \\langle ... \\rangle for the pairing throughout (66 times in s5.tex, e.g. lines 2907, 2970, 3467; only this occurrence is on pp. 121-125). Reported once as a convention, no edit: add it to the forms handled globally, or change it volume-wide."
+ }
+]

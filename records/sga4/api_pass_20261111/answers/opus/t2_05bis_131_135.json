@@ -1,0 +1,78 @@
+[
+ {
+  "page": "131",
+  "where": "3.2.3, second paragraph: 'Soit K un complexe de D^+(S')'",
+  "scan": "Soit K· un complexe de D^+(S') : le morphisme",
+  "tex": "Soit $K^{\\bigdot}$ un complexe de $D^{+}_G(S')$ : le morphisme",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "D^{+}_G(S')",
+   "new": "D^{+}(S')"
+  },
+  "note": "The print has no subscript G on D^+; the TeX adds it."
+ },
+ {
+  "page": "131",
+  "where": "identities after 'compte tenu des identités'",
+  "scan": "R^+(\\overline{h_c∘u})_* ≃ R^+h^*∘R^+\\bar u_*",
+  "tex": "\\sisi{\\RR^+}{R}\nh^{\\ast}_c \\circ \\sisi{\\RR^+}{R} \\bar{u}_{\\ast}",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "h^{\\ast}_c \\circ",
+   "new": "h^{\\ast} \\circ"
+  },
+  "note": "In this identity the print writes R^+h^* without the index c; the TeX writes h^*_c. This matches the edition's general use of h_c in this passage (see coordinator)."
+ },
+ {
+  "page": "132",
+  "where": "diagram (3.2.3.2), right ascending arrow",
+  "scan": "label α(L^+_G h_*(K·)) on the right arrow",
+  "tex": "\\ar[ru]&.",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\ar[ru]&.",
+   "new": "\\ar[ru]_{\\alpha(h_{c\\ast}(K^{\\bigdot}))}&."
+  },
+  "note": "The label of the right arrow is missing in the TeX. The new text follows the edition's convention of dropping L^+_G; in the print's notation it reads α(L^+_G h_*(K·))."
+ },
+ {
+  "page": "132",
+  "where": "definition of the morphism t",
+  "scan": "K^+(Γ(u'_α))(r_o^*(J·))",
+  "tex": "K^+(\\Gamma(u'_{\\alpha}))",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "K^+(\\Gamma(u'_{\\ast}))",
+  "note": "The print has u'_α where the factorisation on the next page has u'_*. The TeX keeps the printed u'_α."
+ },
+ {
+  "page": "133",
+  "where": "footnote (*) to Proposition 3.2.4",
+  "scan": "vérifiant les conditions précédentes et telle que la famille de foncteurs",
+  "tex": "vérifiant les conditions précédentes et tels que la",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "et tels que la",
+   "new": "et telle que la"
+  },
+  "note": "The print has 'telle' (agreeing with famille); the TeX has 'tels'."
+ },
+ {
+  "page": "135",
+  "where": "proof of f)",
+  "scan": "que l'on dispose d'une équivalence canonique",
+  "tex": "que l'on dispose d'un\n  équivalence canonique",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "dispose d'un",
+   "new": "dispose d'une"
+  },
+  "note": "The print has 'd'une'; the TeX has 'd'un'."
+ }
+]

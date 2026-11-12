@@ -1,0 +1,201 @@
+{
+  "findings": [
+    {
+      "page": 371,
+      "where": "Corollaire 2.2, first sentence",
+      "scan": "induit une équivalence",
+      "tex": "induit un\néquivalence",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "induit un\néquivalence",
+        "new": "induit une\néquivalence"
+      },
+      "note": "The printed article is « une »."
+    },
+    {
+      "page": 371,
+      "where": "Corollaire 2.2, relation between the two categories",
+      "scan": "équivalence de la catégorie",
+      "tex": "équivalence \\sisi{de}{entre} la catégorie",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "équivalence entre la catégorie",
+      "note": "The construction requires « entre ... et ... ». The first argument of \\sisi faithfully records the printed « de »; the edition corrects it in the second argument."
+    },
+    {
+      "page": 371,
+      "where": "Corollaire 2.4, immediately after the displayed functor",
+      "scan": "est une équivalence de catégorie.",
+      "tex": "est une équivalence de catégories.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "est une équivalence de catégories.",
+      "note": "The print omits the final s of « catégories ». The TeX silently corrects it."
+    },
+    {
+      "page": 372,
+      "where": "3.1, last sentence",
+      "scan": "à k-isomorphisme",
+      "tex": "à $k$-isomorphisme",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "à $k(x)$-isomorphisme",
+      "note": "The relevant base field is the residue field k(x); no separate field k is specified for the general scheme X. The TeX keeps the printed k."
+    },
+    {
+      "page": 373,
+      "where": "3.4, opening sentence",
+      "scan": "(12.4)",
+      "tex": "(12.4)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(2.4)",
+      "note": "The equivalence being invoked is Corollaire 2.4. The TeX keeps the erroneous printed reference 12.4."
+    },
+    {
+      "page": 373,
+      "where": "3.4, sentence beginning « Notons d'ailleurs »",
+      "scan": "que si $\\xi'$ est",
+      "tex": "que si\n$\\xi$ est",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "que si\n$\\xi$ est",
+        "new": "que si\n$\\xi'$ est"
+      },
+      "note": "The point following « si » has a prime in the print."
+    },
+    {
+      "page": 373,
+      "where": "3.4, displayed isomorphism between the fibres",
+      "scan": "F_{\\xi} \\xrightarrow{\\sim} F_{\\xi'}",
+      "tex": "F_{\\xi} \\simeq F_{\\xi'}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "F_{\\xi} \\simeq F_{\\xi'}",
+        "new": "F_{\\xi} \\xrightarrow{\\sim} F_{\\xi'}"
+      },
+      "note": "The print has a right-pointing isomorphism arrow, not a \\simeq sign."
+    },
+    {
+      "page": 373,
+      "where": "3.4, parenthesis about replacing the field",
+      "scan": "la clôture algébrique séparable de $k$ dans $\\Omega$",
+      "tex": "la clôture algébrique séparable de $k$ dans\n$\\Omega$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "la clôture algébrique séparable de $k(x)$ dans $\\Omega$",
+      "note": "The base field whose separable algebraic closure is taken inside Ω is k(x). The TeX keeps the printed k without (x)."
+    },
+    {
+      "page": 373,
+      "where": "3.4, immediately after that parenthesis",
+      "scan": "$\\Omega = k(\\xi)$",
+      "tex": "$\\omega = k(\\xi)$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\omega = k(\\xi)",
+        "new": "\\Omega = k(\\xi)"
+      },
+      "note": "The print uses capital Ω, consistently with the field already introduced."
+    },
+    {
+      "page": 373,
+      "where": "3.4, end of the paragraph on fibres over the same point",
+      "scan": "isomorphes entre eux",
+      "tex": "isomorphes entre aux",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "isomorphes entre aux",
+        "new": "isomorphes entre eux"
+      },
+      "note": "The printed pronoun is « eux »."
+    },
+    {
+      "page": 373,
+      "where": "Paragraph beginning « On désignera »",
+      "scan": "$F_{\\bar{x}}$",
+      "tex": "$F_{\\bar{X}}$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$F_{\\bar{X}}$",
+        "new": "$F_{\\bar{x}}$"
+      },
+      "note": "The barred index is lowercase x in the print."
+    },
+    {
+      "page": 373,
+      "where": "Paragraph beginning « On désignera », following line",
+      "scan": "correspondant au choix",
+      "tex": "correspondant an choix",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "correspondant an choix",
+        "new": "correspondant au choix"
+      },
+      "note": "The print reads « au choix »."
+    },
+    {
+      "page": 373,
+      "where": "Last paragraph, description of $u' : \\xi'\\to X'$",
+      "scan": "un point géométrique de $X$",
+      "tex": "un point\ngéométrique de $X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un point géométrique de $X'$",
+      "note": "Since u' has target X', this first occurrence should be X'. The subsequent composite u = fu' is the point of X. The TeX keeps the missing prime in the print."
+    },
+    {
+      "page": 374,
+      "where": "Théorème 3.5 b), first fibre notation",
+      "scan": "$F_{\\bar{x}}$",
+      "tex": "$F_{\\bar{X}}$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$F_{\\bar{X}}$",
+        "new": "$F_{\\bar{x}}$"
+      },
+      "note": "The printed barred index is lowercase x, as in the rest of b)."
+    },
+    {
+      "page": 375,
+      "where": "Paragraph introducing Proposition 3.9",
+      "scan": "la formule suivante,",
+      "tex": "la formule suivant,",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "la formule suivant,",
+        "new": "la formule suivante,"
+      },
+      "note": "The print includes the final e of « suivante »."
+    },
+    {
+      "page": 375,
+      "where": "Proposition 3.9, definition of the couples",
+      "scan": "couples $(X', u')$, où",
+      "tex": "couples $(X', u')$, o",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "couples $(X', u')$, o",
+        "new": "couples $(X', u')$, où"
+      },
+      "note": "The printed word is « où », not « o »."
+    }
+  ],
+  "coordinator": "371: 1/2; 372: 0/1; 373: 6/3; 374: 1/0; 375: 2/0 (normal/misprint)."
+}

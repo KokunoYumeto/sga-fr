@@ -1,0 +1,55 @@
+{
+  "findings": [
+    {
+      "page": 191,
+      "where": "Exemple * 2), groupe dont le produit tensoriel est un quotient",
+      "scan": "\\ZZ^{(X\\times Y)}",
+      "tex": "\\ZZ^{X\\times Y}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$\\ZZ^{X\\times Y}$, lequel",
+        "new": "$\\ZZ^{(X\\times Y)}$, lequel"
+      },
+      "note": "Les parenthèses de l'exposant distinguent ce groupe du groupe de toutes les applications, mentionné ensuite."
+    },
+    {
+      "page": 193,
+      "where": "Premier paragraphe, description de Fl(E)",
+      "scan": "un ensemble de morphisme fonctoriels",
+      "tex": "un ensemble de morphisme fonctoriels",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un ensemble de morphismes fonctoriels",
+      "note": "Coquille d'accord de l'imprimé : il manque le s de « morphismes ». Le TeX la conserve."
+    },
+    {
+      "page": 193,
+      "where": "Preuve de la proposition 9, après Hom(x,y)",
+      "scan": "c'est le même ensemble",
+      "tex": "c'est la même ensemble",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "c'est la même",
+        "new": "c'est le même"
+      },
+      "note": "L'imprimé porte « le », non « la »."
+    },
+    {
+      "page": 194,
+      "where": "Premier paragraphe, les deux petits univers",
+      "scan": "U_0 et U_1",
+      "tex": "U_{\\circ} et U_1",
+      "kind": "symbol",
+      "confidence": "medium",
+      "fix": {
+        "old": "$U_{\\circ}$",
+        "new": "$U_0$"
+      },
+      "note": "Le premier sous-indice est le chiffre zéro, non le symbole cercle."
+    }
+  ],
+  "coordinator": "191: 1/0; 192: 0/0; 193: 1/1; 194: 1/0; 195: 0/0 (normal/misprint)."
+}

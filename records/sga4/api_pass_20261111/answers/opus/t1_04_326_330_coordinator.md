@@ -1,0 +1,1 @@
+Counts: p326 0/0; p327 2/0; p328 1/0; p329 0/0; p330 1/0. Macro \quav: it stands for the print's comma on pp. 327, 328 and 330 but for « et » in the first display of p. 327; check its definition in macros.tex before applying the p. 327 fix.

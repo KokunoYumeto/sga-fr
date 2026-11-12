@@ -1,0 +1,9 @@
+```json
+{"findings":[
+{"page":"57","where":"Corollaire 4.4, first line","scan":"Soit X noéthérien","tex":"Soit $X$ noethérien","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"noethérien","note":"The print has a stray accent in « noéthérien ». The TeX silently corrects it."},
+{"page":"59","where":"proof of 5.2, property of ε","scan":"ε(rv) = r^p ε(v)","tex":"\\epsilon(rv)=r^p\\epsilon(V)","kind":"symbol","confidence":"high","fix":{"old":"r^p\\epsilon(V)","new":"r^p\\epsilon(v)"},"note":"The print has the small v, the vector, not the space V."},
+{"page":"59","where":"proof of 5.2, « du schéma affine déduit de … »","scan":"déduit de [glyph other than the preceding Φ; apparently φ]","tex":"déduit de $\\Phi$","kind":"symbol","confidence":"low","fix":{"old":"déduit de $\\Phi$","new":"déduit de $\\varphi$"},"note":"The print's glyph here differs from the Φ just before it. In context the affine-scheme map Φ is deduced from the morphism φ:V→V. The scan is doubtful (JBIG2), so verify against the print."},
+{"page":"59","where":"proof of 5.2, « il s'ensuit que Φ est surjectif »","scan":"Φ apparently with a mark beneath (underlined?)","tex":"il s'ensuit que\n$\\Phi$ est surjectif","kind":"symbol","confidence":"low","fix":null,"note":"The glyph appears to carry a stroke underneath, possibly marking the induced map on k-points as distinct from the scheme morphism. The scan is too unclear to decide, so no edit is proposed."}
+],
+"coordinator":"Counts: p56 0/0; p57 0/1; p58 0/0; p59 3/0 (two low-confidence symbol doubts); p60 0/0. No marker problems."}
+```

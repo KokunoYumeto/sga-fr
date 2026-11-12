@@ -1,0 +1,266 @@
+```json
+[
+  {
+    "id": "7I:764",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "$\\hat{\\underline{C}}_{S,s}$",
+    "new": "$\\hat{\\underline{O}}_{S,s}$",
+    "note": "The base is the completed local ring of S at s, as confirmed by the notation for the abelian scheme in the same lemma."
+  },
+  {
+    "id": "7I:765",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "\\underline{sur} $\\hat{\\underline{C}}$",
+    "new": "\\underline{sur} $\\hat{\\underline{O}}$",
+    "note": "The abelian scheme is over the completed local ring, also used in the following projectivity hypothesis."
+  },
+  {
+    "id": "7I:766",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "$R_{\\underline{O}}$",
+    "new": "$\\underline{R}_{\\underline{O}}$",
+    "note": "The parenthesis concerns the same sheaf denoted by underlined R throughout the construction."
+  },
+  {
+    "id": "7I:767",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "$R'{}^{t}_{U}$",
+    "new": "$\\underline{R}'{}^{t}_{U}$",
+    "note": "This is the toric subsheaf of the primed sheaf, paired with the fixed subsheaf of the unprimed one."
+  },
+  {
+    "id": "7I:768",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "espaces rigide  analytiques",
+    "new": "espaces rigide-analytiques",
+    "note": "Restore the spelling of the compound adjective, also used in the heading."
+  },
+  {
+    "id": "7I:769",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "$P'_K : \\underline{M}'_K \\longrightarrow B'_K$",
+    "new": "$p'_K : \\underline{M}'_K \\longrightarrow B'_K$",
+    "note": "The homomorphism being lifted is the lowercase p'_K defined in (14.1.4)."
+  },
+  {
+    "id": "7I:770",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "ridige-analytiquessur",
+    "new": "rigide-analytiques sur",
+    "note": "Correct the transposed letters and restore the word boundary; this also covers 7I:771."
+  },
+  {
+    "id": "7I:771",
+    "decision": "already",
+    "note": "covered by 7I:770"
+  },
+  {
+    "id": "7I:772",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "caractérisé dé façon unique",
+    "new": "caractérisé de façon unique",
+    "note": "The French expression is 'de façon unique'."
+  },
+  {
+    "id": "7I:773",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "stucture entière",
+    "new": "structure entière",
+    "note": "Correct the missing letter."
+  },
+  {
+    "id": "7I:774",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "réconstituer la structure d'extension",
+    "new": "reconstituer la structure d'extension",
+    "note": "Correct the French spelling of 'reconstituer'."
+  },
+  {
+    "id": "7I:775",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "de réconstituer les",
+    "new": "de reconstituer les",
+    "note": "Correct the French spelling of 'reconstituer'."
+  },
+  {
+    "id": "7I:776",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "Ceci dit, supposant pour simplifier",
+    "new": "Ceci dit, supposons pour simplifier",
+    "note": "The independent sentence requires the finite verb 'supposons'."
+  },
+  {
+    "id": "7I:777",
+    "decision": "already",
+    "note": "Both sheaves in the pair defining E are already underlined."
+  },
+  {
+    "id": "7I:778",
+    "decision": "already",
+    "note": "The display already labels the second homomorphism p', consistently with the subsequent pullback by (p,p')."
+  },
+  {
+    "id": "7I:779",
+    "decision": "already",
+    "note": "The displayed Hom expression already has all three required closing parentheses."
+  },
+  {
+    "id": "7I:780",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "modulo un élément $\\mathrm{Hom}(M,g)$",
+    "new": "modulo un élément de $\\mathrm{Hom}(M,g)$",
+    "note": "Restore the missing preposition introducing the group containing the element."
+  },
+  {
+    "id": "7I:781",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "une suite de composition dans les quotients successifs",
+    "new": "une suite de composition dont les quotients successifs",
+    "note": "The relative clause describes the successive quotients of the composition series."
+  },
+  {
+    "id": "7I:782",
+    "decision": "already",
+    "note": "The text already has G_K, the group under consideration, rather than a double-struck G."
+  },
+  {
+    "id": "7I:783",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "points infiniments divisibles",
+    "new": "points infiniment divisibles",
+    "note": "The adverb 'infiniment' is invariable."
+  },
+  {
+    "id": "7I:784",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "un deuxième groupe $G'$ sur $S$",
+    "new": "un deuxième groupe $A'$ sur $S$",
+    "note": "The second group has the hypotheses of A and enters the biextension (A,A'); G' is subsequently its Raynaud extension."
+  },
+  {
+    "id": "7I:785",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "où $T$ est la partie torique",
+    "new": "où $T'$ est la partie torique",
+    "note": "The toric part of G' is T', as confirmed by T_ell(T'_U) immediately before and D(T') immediately after."
+  },
+  {
+    "id": "7I:786",
+    "decision": "already",
+    "note": "The text already cites (14.3.5.3), the displayed exact sequence whose quotient is being identified."
+  },
+  {
+    "id": "7I:787",
+    "decision": "already",
+    "note": "The text already cites (14.3.5.5), which identifies that quotient with the adified lattice and yields (14.3.5.6)."
+  },
+  {
+    "id": "7I:788",
+    "decision": "already",
+    "note": "The text already has 'une et une seule façon'."
+  },
+  {
+    "id": "7I:789",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "limite inductive filtrante sous-anneaux",
+    "new": "limite inductive filtrante de sous-anneaux",
+    "note": "Restore the missing preposition."
+  },
+  {
+    "id": "7I:790",
+    "decision": "already",
+    "note": "The existing reference to 14.3.4 is valid and more precise: that lemma gives the zero kernel needed for uniqueness over the trait with finite residue field."
+  },
+  {
+    "id": "7I:791",
+    "decision": "already",
+    "note": "The English title already reads 'schemes' without an accent."
+  },
+  {
+    "id": "7I:792",
+    "decision": "already",
+    "note": "The publisher already reads 'North Holland'."
+  },
+  {
+    "id": "7I:793",
+    "decision": "already",
+    "note": "The German title already reads 'Abbildungen'."
+  },
+  {
+    "id": "7I:794",
+    "decision": "already",
+    "note": "The title already has a single 'et' between 'faisceau' and 'cohomologie'."
+  },
+  {
+    "id": "7I:795",
+    "decision": "already",
+    "note": "The publisher already reads 'Hermann'."
+  },
+  {
+    "id": "7I:796",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "Sèminaire Pierre Lelong",
+    "new": "Séminaire Pierre Lelong",
+    "note": "Correct the accent in 'Séminaire'."
+  },
+  {
+    "id": "7I:797",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "Séminare de Probabilités IV",
+    "new": "Séminaire de Probabilités IV",
+    "note": "Restore the missing i in 'Séminaire'."
+  },
+  {
+    "id": "7I:798",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "Heidelberg-Saarbrücken-Strasbuorg",
+    "new": "Heidelberg-Saarbrücken-Strasbourg",
+    "note": "Correct the transposed letters in the city name."
+  },
+  {
+    "id": "7I:799",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "Constributions to Ergodic Theory",
+    "new": "Contributions to Ergodic Theory",
+    "note": "Remove the spurious s in 'Contributions'."
+  },
+  {
+    "id": "7I:800",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "Points Singuliers Reguliers",
+    "new": "Points Singuliers Réguliers",
+    "note": "Restore the accent on the lowercase e."
+  },
+  {
+    "id": "7I:801",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "Seminaire sur les Algebres Complètes",
+    "new": "Séminaire sur les Algèbres Complètes",
+    "note": "Restore the missing accents in 'Séminaire' and 'Algèbres'."
+  }
+]
+```

@@ -1,0 +1,8 @@
+```json
+{"findings": [
+{"page": 383, "where": "first line, before Théorème 4.2", "scan": "on trouve de meme .", "tex": "on trouve de meme .", "kind": "misprint_in_print", "confidence": "high", "fix": null, "corrected": "de même", "note": "The typescript omits the circumflex; on p. 385 the typist overstrikes it ('De même'). The TeX keeps the printed reading."},
+{"page": 384, "where": "5.0, second line", "scan": "d'un corps de nombresen une place", "tex": "d'un corps de nombres en une place", "kind": "misprint_in_print", "confidence": "medium", "fix": {"old": "nombres en", "new": "nombresen"}, "corrected": "nombres en", "note": "The word space is missing in the typescript and the TeX silently corrects it. Drop this finding if a missing word space counts as 'spacing'."},
+{"page": 384, "where": "paragraph 'Soient k un corps fini à q' éléments'", "scan": "𝔊 = 𝔊al(k̄/k)", "tex": "\\mathfrak{G} = \\operatorname{Gal}(\\bar{k}/k)", "kind": "font", "confidence": "medium", "fix": {"old": "\\operatorname{Gal}(\\bar{k}/k)", "new": "\\mathfrak{G}\\mathrm{al}(\\bar{k}/k)"}, "note": "The print types the G of 'Gal' with the same Fraktur G as the group symbol 𝔊. The ordinary word 'Galois' further on is in roman type."}
+],
+"coordinator": "381: 0/0; 382: 0/0; 383: 0/1; 384: 1/1; 385: 0/0"}
+```

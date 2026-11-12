@@ -1,0 +1,458 @@
+[
+ {
+  "page": 361,
+  "where": "throughout pp. 361-365 (category letters; first: line 1 'dans D(C)')",
+  "scan": "plain typed capitals C and D (D(C), C_o, C_1, _A C, C_A, _A D), neither underlined nor script",
+  "tex": "\\cC, \\cD (defined as \\mathcal C, \\mathcal D)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription for Exposé VIII, not itemized: the print's category letters are ordinary typed capitals, the TeX sets them calligraphic. Examples: p. 361 'commutatif (dans $D(\\cC)$)', p. 362 'Soit $A$ un anneau et $\\cC$ la catégorie', p. 364 'et par ${}_A\\cD$ la sous-catégorie triangulée pleine'. One pass for the exposé (\\cC -> C, \\cD -> D in the diplomatic layer) or one volume decision (compare GLOBAL_ISSUES 81 and 87, SGA 6, where the print has an underlined or a script C)."
+ },
+ {
+  "page": 361,
+  "where": "'Soit Z le \"mapping cylinder\" de f'",
+  "scan": "\"mapping cylinder\" (straight typewriter quotes)",
+  "tex": "«mapping cylinder»",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "«mapping cylinder»",
+   "new": "``mapping cylinder''"
+  },
+  "note": "Guillemets for the print's straight quotes (the accepted forms are ``...'' and \"...\"), as logged on pp. 335, 337, 343."
+ },
+ {
+  "page": 361,
+  "where": "'(condition (A)). D'autre part' before the triangle",
+  "scan": "D'autre part (no comma; the triangle follows)",
+  "tex": "D'autre part,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "D'autre part,",
+   "new": "D'autre part"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 361,
+  "where": "triangle diagram, base arrow X -> Y",
+  "scan": "the base arrow X· ---> Y· carries no label (only h and g are labelled)",
+  "tex": "\\arrow[rr,\"f\"']",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[rr,\"f\"']",
+   "new": "\\arrow[rr]"
+  },
+  "note": "The label f is the TeX's; the print labels f only in the square above. Checked at full resolution: nothing under or over the base arrow."
+ },
+ {
+  "page": 361,
+  "where": "last paragraph, 'sera appelé pseudo-cohérent'",
+  "scan": "pseudo-cohérent underlined",
+  "tex": "pseudo-cohérent (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "appelé pseudo-cohérent",
+   "new": "appelé \\emph{pseudo-cohérent}"
+  },
+  "note": "Defined term underlined in the print; \\emph is the file's command for underlines in this part of s5.tex (as the applied fixes of Exposé VII)."
+ },
+ {
+  "page": 362,
+  "where": "start of the page",
+  "scan": "p. 362 begins 'pour cela qu'il admette une résolution à gauche'; p. 361 ends '... on prouve qu'il faut et suffit'",
+  "tex": "'pour' is the last word before the folio-362 marker (folio 361's TeX)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 362 really begins at 'pour' (the end of the line before the folio-362 marker). Exact fix: python -I move_marker.py 5 362 'pour' --before (simulated in memory on both layers: '... on prouve qu'il faut et suffit ' / marker / 'pour' / 'cela qu'il admette ...'). Text not moved. Not marker_split_word.py pull 'pour', which would give 'pourcela'."
+ },
+ {
+  "page": 362,
+  "where": "heading 6",
+  "scan": "6. Complexes parfaits. (full stop after the underlined title)",
+  "tex": "\\subsection*{6. Complexes parfaits}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6. Complexes parfaits}",
+   "new": "\\subsection*{6. Complexes parfaits.}"
+  },
+  "note": "Underlined title ends with a full stop in the print; the TeX drops it. The run-in layout is not reported."
+ },
+ {
+  "page": 362,
+  "where": "heading 7",
+  "scan": "7. Cas particulier important. (full stop after the underlined title)",
+  "tex": "\\subsection*{7. Cas particulier important}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{7. Cas particulier important}",
+   "new": "\\subsection*{7. Cas particulier important.}"
+  },
+  "note": "As heading 6."
+ },
+ {
+  "page": 363,
+  "where": "start of the page",
+  "scan": "p. 363 begins '(C). Nous utilisons dans ce cas les notations suivantes'; p. 362 ends '... satisfait les conditions (A), (B),'",
+  "tex": "'(C).' ends folio 362's TeX, before the folio-363 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 363 really begins at '(C).' (the end of the line before the folio-363 marker). Exact fix: python -I move_marker.py 5 363 '(C).' --before (simulated in memory on both layers: '... satisfait les conditions (A), (B), ' / marker / '(C).' / 'Nous utilisons dans ce cas ...'). Text not moved."
+ },
+ {
+  "page": 363,
+  "where": "first display, line 1",
+  "scan": "D^-(A)_coh = D_o^-(C)_coh (no comma)",
+  "tex": "D_o^-(\\cC)_{\\coh},\\qquad",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "D_o^-(\\cC)_{\\coh},\\qquad",
+   "new": "D_o^-(\\cC)_{\\coh}\\qquad"
+  },
+  "note": "The print sets the three equalities on three lines, the first two without punctuation, the third ending with a full stop; the TeX adds the commas (the line layout is not reported)."
+ },
+ {
+  "page": 363,
+  "where": "first display, line 2",
+  "scan": "D^b(A)_coh = D_o^b(C)_coh (no comma)",
+  "tex": "D_o^b(\\cC)_{\\coh},",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "D_o^b(\\cC)_{\\coh},\n\\]",
+   "new": "D_o^b(\\cC)_{\\coh}\n\\]"
+  },
+  "note": "As line 1."
+ },
+ {
+  "page": 363,
+  "where": "'seront appelés simplement des complexes pseudo-cohérents (resp. parfaits)'",
+  "scan": "'complexes pseudo-cohérents' underlined; 'parfaits' underlined (not 'resp.', not the parentheses)",
+  "tex": "plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "des complexes pseudo-cohérents (resp. parfaits).",
+   "new": "des \\emph{complexes pseudo-cohérents} (resp. \\emph{parfaits})."
+  },
+  "note": "Defined terms underlined in the print."
+ },
+ {
+  "page": 363,
+  "where": "display K.(A) = K(D^b(A)_coh)",
+  "scan": "K.(A) = K(D^b(A)_coh) (no comma; the next line K·(A) = K(D(A)_parf) ends with a full stop)",
+  "tex": "K(D^b(A)_{\\coh}),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "K(D^b(A)_{\\coh}),",
+   "new": "K(D^b(A)_{\\coh})"
+  },
+  "note": "Comma added at the end of a display line."
+ },
+ {
+  "page": 363,
+  "where": "'le classique \"groupe des classes de modules projectifs de type fini\" de A'",
+  "scan": "\"groupe des classes de modules projectifs de type fini\" (straight typewriter quotes)",
+  "tex": "«groupe des classes de modules projectifs de type fini»",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "«groupe des classes de modules projectifs de type fini»",
+   "new": "``groupe des classes de modules projectifs de type fini''"
+  },
+  "note": "Guillemets for the print's straight quotes, as on p. 361."
+ },
+ {
+  "page": 363,
+  "where": "'le groupe K.(A) admet aussi une description classique'",
+  "scan": "K (A): no subscript dot (a blank space after K; the other K.(A) of the page have a solid dot)",
+  "tex": "$K_\\bullet(A)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "le groupe $K_\\bullet(A)$ admet",
+   "new": "le groupe $K(A)$ admet"
+  },
+  "corrected": "le groupe $K_\\bullet(A)$ admet",
+  "note": "The TeX silently corrects. At full resolution there is no trace of a dot below or beside the K, while the dots of the neighbouring K.(A) are crisp: read as the typist's omission, not a loss in the scan."
+ },
+ {
+  "page": 363,
+  "where": "last display K(C_1) = K(D^b(C_1)) = K(D^b_{C_1}(C))",
+  "scan": "the display ends the page without punctuation; the sentence goes on 'car on a aussitôt' on p. 364",
+  "tex": "K(D^b_{\\cC_1}(\\cC)),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "K(D^b_{\\cC_1}(\\cC)),",
+   "new": "K(D^b_{\\cC_1}(\\cC))"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 364,
+  "where": "heading 8",
+  "scan": "8. Tor de complexes. (full stop after the underlined title)",
+  "tex": "\\subsection*{8. Tor de complexes}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{8. Tor de complexes}",
+   "new": "\\subsection*{8. Tor de complexes.}"
+  },
+  "note": "As headings 6 and 7 (p. 362)."
+ },
+ {
+  "page": 364,
+  "where": "'Soient A un anneau (non nécessairement commutatif)'",
+  "scan": "(non nécessairement commutatif), in parentheses",
+  "tex": "non nécessairement commutatif",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "un anneau non nécessairement commutatif et",
+   "new": "un anneau (non nécessairement commutatif) et"
+  },
+  "note": "Parentheses dropped by the TeX."
+ },
+ {
+  "page": 364,
+  "where": "'des A-modules (à gauche) plats'",
+  "scan": "(à gauche), in parentheses",
+  "tex": "à gauche",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "des $A$-modules à gauche plats",
+   "new": "des $A$-modules (à gauche) plats"
+  },
+  "note": "Parentheses dropped by the TeX."
+ },
+ {
+  "page": 365,
+  "where": "start of the page",
+  "scan": "p. 365 begins 'positions suivantes sont vraies'; p. 364 ends 'Dans ces conditions, les pro-'",
+  "tex": "folio 365's TeX begins with the whole word 'propositions'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 365 really begins at 'positions': 'propositions' is divided at the page break. Exact fix: python -I marker_split_word.py 5 365 split pro positions (simulated in memory on both layers: '... Dans ces conditions, les' / 'pro%' / marker / 'positions suivantes sont vraies:'). Text not moved."
+ },
+ {
+  "page": 365,
+  "where": "end of the page",
+  "scan": "p. 365 ends 'd'où un bifonc-'",
+  "tex": "folio 365's TeX runs on with 'bifoncteur exact' and the display 'D^-(\\cC_A)\\times D^-({}_A\\cC)\\longrightarrow D^-(\\Ab),'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 366 really begins at 'teur' (second half of 'bifoncteur'): 'teur exact' and the display after it are printed on p. 366. Exact fix, two commands in this order: python -I move_marker.py 5 366 'bifoncteur' --before, then python -I marker_split_word.py 5 366 split bifonc teur (simulated in memory on both layers: \"... d'où un \" / 'bifonc%' / marker / 'teur exact' / '\\[ D^-(\\cC_A)\\times ...'). A single move_marker.py to 'teur exact' would print 'bifonc teur'. Text not moved; that text is p. 366's to check."
+ },
+ {
+  "page": 365,
+  "where": "item 1), before 'En effet, N· étant un objet'",
+  "scan": "'En effet, ...' begins a new indented paragraph after '... de K^-(Ab) .'",
+  "tex": "run on in the item-1) paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "de $K^-(\\Ab)$. En effet",
+   "new": "de $K^-(\\Ab)$.\n\nEn effet"
+  },
+  "note": "Paragraph break; drop it if paragraphing is left to a global pass."
+ },
+ {
+  "page": 365,
+  "where": "item 2), before 'Il suffit pour cela'",
+  "scan": "'Il suffit pour cela ...' begins a new indented paragraph",
+  "tex": "run on in the item-2) paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "${}_A\\cD$. Il suffit",
+   "new": "${}_A\\cD$.\n\nIl suffit"
+  },
+  "note": "Paragraph break; drop it if paragraphing is left to a global pass."
+ },
+ {
+  "page": 365,
+  "where": "display of the left derived functor",
+  "scan": "L with a double underline and a superscript minus: L^- Phi_X· : D^-(_A C) ---> D^-(Ab) .",
+  "tex": "\\underline{L}^{-}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{L}^{-}",
+   "new": "\\underline{\\underline{L}}^{-}"
+  },
+  "note": "The print's derived-functor L is doubly underlined here and in the three places below; the TeX has a single underline here and \\mathbf L elsewhere. Fix in the form used for the double-underlined L on p. 37 (findings_036_040)."
+ },
+ {
+  "page": 365,
+  "where": "'L'objet L^- Phi_X·(Y) peut être obtenu'",
+  "scan": "double-underlined L with a superscript minus: L^- Phi_X·(Y)",
+  "tex": "\\mathbf L\\Phi_{X^\\bullet}(Y^\\bullet)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "L'objet $\\mathbf L",
+   "new": "L'objet $\\underline{\\underline{L}}^{-}"
+  },
+  "note": "The TeX drops the superscript minus and writes bold for the double underline (as the display above). Independent of the misprint item below."
+ },
+ {
+  "page": 365,
+  "where": "'L'objet L^- Phi_X·(Y) peut être obtenu'",
+  "scan": "(Y) without the raised dot (the next two occurrences read Y·)",
+  "tex": "(Y^\\bullet)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "(Y^\\bullet)$ peut",
+   "new": "(Y)$ peut"
+  },
+  "corrected": "(Y^\\bullet)$ peut",
+  "note": "The TeX silently corrects. No trace of a dot after Y at full resolution, while the dot of X· just before is crisp: the typist's omission."
+ },
+ {
+  "page": 365,
+  "where": "'de la manière suivante :'",
+  "scan": "suivante : (colon)",
+  "tex": "suivante. (full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de la manière suivante.",
+   "new": "de la manière suivante:"
+  },
+  "note": "Colon of the print replaced by a full stop."
+ },
+ {
+  "page": 365,
+  "where": "before 'Soient P· un objet de _A D'",
+  "scan": "'Soient ...' begins a new indented paragraph",
+  "tex": "run on after 'de la manière suivante.'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": " Soient $P^\\bullet$",
+   "new": "\n\nSoient $P^\\bullet$"
+  },
+  "note": "Paragraph break; drop it if paragraphing is left to a global pass. Adjacent to, and independent of, the colon item."
+ },
+ {
+  "page": 365,
+  "where": "'Alors L^- Phi_X·(Y·) est isomorphe à'",
+  "scan": "double-underlined L with a superscript minus",
+  "tex": "\\mathbf L",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors $\\mathbf L",
+   "new": "Alors $\\underline{\\underline{L}}^{-}"
+  },
+  "note": "As 'L'objet' above."
+ },
+ {
+  "page": 365,
+  "where": "'est isomorphe à Q(X· (x) P)'",
+  "scan": "Q(X· (x) P): tensor sign without subscript A",
+  "tex": "Q(X^\\bullet\\otimes_A P^\\bullet)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "Q(X^\\bullet\\otimes_A",
+   "new": "Q(X^\\bullet\\otimes"
+  },
+  "note": "Subscript A added by the TeX (the print writes it in X·(x)_A· on p. 364 and in H_n(X·(x)_A N·) above, not here). Independent of the misprint item below."
+ },
+ {
+  "page": 365,
+  "where": "'est isomorphe à Q(X· (x) P)'",
+  "scan": "P without the raised dot",
+  "tex": "P^\\bullet",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "P^\\bullet),",
+   "new": "P),"
+  },
+  "corrected": "P^\\bullet),",
+  "note": "The TeX silently corrects. No trace of a dot after P at full resolution (P· two lines above): the typist's omission."
+ },
+ {
+  "page": 365,
+  "where": "'Il en résulte donc que pour chaque objet'",
+  "scan": "donc que pour (no comma)",
+  "tex": "donc que, pour",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "donc que, pour",
+   "new": "donc que pour"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 365,
+  "where": "'de D^-(_A C) le foncteur'",
+  "scan": "D^-(_A C) le foncteur (no comma)",
+  "tex": "$D^-({}_A\\cC)$, le foncteur",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$D^-({}_A\\cC)$, le foncteur",
+   "new": "$D^-({}_A\\cC)$ le foncteur"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 365,
+  "where": "two-line display K^-(C_A) ---> D^-(Ab) / X· ~~> L^- Phi_X·(Y·)",
+  "scan": "no punctuation after D^-(Ab) (nor at the end of the display)",
+  "tex": "D^-(\\Ab),\\qquad",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "D^-(\\Ab),\\qquad",
+   "new": "D^-(\\Ab)\\qquad"
+  },
+  "note": "Comma added by the TeX (the two lines set side by side is layout, not reported)."
+ },
+ {
+  "page": 365,
+  "where": "same display, second line",
+  "scan": "wavy arrow X· ~~~> (a squiggle, then a straight shaft and head)",
+  "tex": "\\longmapsto",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "X^\\bullet\\longmapsto",
+   "new": "X^\\bullet\\rightsquigarrow"
+  },
+  "note": "The print's arrow is wavy, not a maps-to arrow. \\rightsquigarrow is in amssymb, which s5.tex loads."
+ },
+ {
+  "page": 365,
+  "where": "same display, second line",
+  "scan": "double-underlined L with a superscript minus: L^- Phi_X·(Y·)",
+  "tex": "\\mathbf L\\Phi_{X^\\bullet}(Y^\\bullet)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathbf L\\Phi_{X^\\bullet}(Y^\\bullet)\n\\]",
+   "new": "\\underline{\\underline{L}}^{-}\\Phi_{X^\\bullet}(Y^\\bullet)\n\\]"
+  },
+  "note": "As 'L'objet' above. Independent of the arrow item."
+ }
+]

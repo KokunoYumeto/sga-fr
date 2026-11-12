@@ -1,0 +1,1 @@
+p511: 0/3; p512: 0/0; p513: 0/2; p514: 0/2; p515: 0/0. p513: the TeX's σ_{E,D} (print σ_{E,D_1}) is neither the printed nor the correct reading (σ_{D,E}); the editors should decide whether to restore the print or fix it, e.g. with \sisi.

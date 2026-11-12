@@ -1,0 +1,160 @@
+{
+  "findings": [
+    {
+      "page": 212,
+      "where": "Problème 2.9.5, « théorie de structure »",
+      "scan": "une théorie de structure assez explicite",
+      "tex": "une \\emph{théorie de structure} aussi explicite",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "aussi explicite",
+        "new": "assez explicite"
+      },
+      "note": "Le texte imprimé porte « assez », non « aussi »."
+    },
+    {
+      "page": 212,
+      "where": "Problème 2.9.5, définition d’un topos profini",
+      "scan": "au sens de 6.",
+      "tex": "au sans de\n6.",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "au sans de",
+        "new": "au sens de"
+      },
+      "note": "Le texte imprimé porte « sens »."
+    },
+    {
+      "page": 212,
+      "where": "Problème 2.9.5, limite projective de topos parfaits",
+      "scan": "qu'une limite projective filtrante de topos parfaits est parfait",
+      "tex": "qu'une limite projective filtrante de topos parfaits est parfait",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "qu'une limite projective filtrante de topos parfaits est parfaite",
+      "note": "Faute d’accord avec « une limite ». Le TeX conserve le masculin imprimé."
+    },
+    {
+      "page": 213,
+      "where": "Suite du problème 2.9.5, invariants du schéma X",
+      "scan": "des invariants profinis plus fins",
+      "tex": "des invariants plus fins",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "des invariants plus fins",
+        "new": "des invariants profinis plus fins"
+      },
+      "note": "Le qualificatif « profinis » a été omis."
+    },
+    {
+      "page": 213,
+      "where": "Problème 2.9.5, question sur le recollement de topos finis",
+      "scan": "signalons la question suivante",
+      "tex": "signalons la questions suivante",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "la questions suivante",
+        "new": "la question suivante"
+      },
+      "note": "Le singulier est imprimé."
+    },
+    {
+      "page": 214,
+      "where": "Début de page, démonstration de 2.10",
+      "scan": "de 2.1, et il reste à prouver (ii)",
+      "tex": "\\hyperref[VI.prop2.1]{2.1},\\pageoriginale et il reste à prouver (ii)",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "La page commence par « de 2.1 ». Le mot « de » est à la fin de la ligne source 1701, présente dans le fragment de p. 213 mais absente de celui de p. 214. La coupure réelle est entre « assertion » et « de » ; aucune modification du texte source n’est nécessaire."
+    },
+    {
+      "page": 214,
+      "where": "Démonstration de 2.10, sous-catégorie considérée",
+      "scan": "objets noethériens quasi-séparés",
+      "tex": "objets noethériens\nquasi-séparés",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "objets prénoethériens quasi-séparés",
+      "note": "Il s’agit des objets prénoethériens quasi-séparés de la condition (ii). Le TeX conserve l’omission imprimée du préfixe « pré- »."
+    },
+    {
+      "page": 214,
+      "where": "Démonstration de 2.10, application de la première assertion de 1.32",
+      "scan": "donc noethérien par la première assertion de 1.32",
+      "tex": "donc noethérien par la première assertion de\n\\hyperref[VI.subsec1.32]{1.32}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "donc prénoethérien",
+      "note": "La propriété obtenue ici est d’être prénoethérien ; la quasi-séparation est établie ensuite. Le TeX conserve « noethérien » imprimé."
+    },
+    {
+      "page": 214,
+      "where": "Définition 2.11, parenthèse explicitant « cohérent »",
+      "scan": "cohérent (ou ce qui revient au même (1.32) prénoethérien et quasi-séparé)",
+      "tex": "cohérent (ou ce qui revient au même (\\hyperref[VI.subsec1.32]{1.32}))\nprénoethérien et\nquasi-séparé)",
+      "kind": "punctuation",
+      "confidence": "high",
+      "fix": {
+        "old": "même (\\hyperref[VI.subsec1.32]{1.32}))",
+        "new": "même (\\hyperref[VI.subsec1.32]{1.32})"
+      },
+      "note": "Une parenthèse fermante supplémentaire interrompt à tort l’explication avant « prénoethérien »."
+    },
+    {
+      "page": 214,
+      "where": "2.12, famille de topos induits",
+      "scan": "les E_{/X_i} soient localement noethériens",
+      "tex": "les $E_{X_i}$ soient\nlocalement noethériens",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$E_{X_i}$",
+        "new": "$E_{/X_i}$"
+      },
+      "note": "La barre oblique du topos induit manque."
+    },
+    {
+      "page": 214,
+      "where": "2.12, référence après « stable par produits fibrés »",
+      "scan": "(2.11 (i))",
+      "tex": "(\\hyperref[VI.def2.11]{2.11} (i))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperref[VI.prop2.10]{2.10} (i)",
+      "note": "Le renvoi vise la condition (i) de la proposition 2.10, non la définition 2.11, qui n’a pas de condition (i). Le TeX conserve le numéro erroné imprimé."
+    },
+    {
+      "page": 214,
+      "where": "Fin du fragment, numéro de paragraphe 2.13",
+      "scan": "La page se termine par « noethériens X_i. » dans 2.12.",
+      "tex": "\\subsection{}\\etiquette[2.13]{VI.subsec2.13}",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le numéro 2.13 ouvre la p. 215. Sa ligne source 1737 est incluse dans le fragment de p. 214 sans être annoncée comme ligne de la page voisine ; seule la ligne 1738 est signalée dans le commentaire. Le fragment de p. 215 contient déjà cette rubrique."
+    },
+    {
+      "page": 215,
+      "where": "2.14, sous-catégorie C des objets noethériens",
+      "scan": "noethériens (= cohérents) de E",
+      "tex": "noethériens\n(cohérents) de $E$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "(cohérents) de $E$",
+        "new": "($=$ cohérents) de $E$"
+      },
+      "note": "Le signe d’égalité imprimé dans la parenthèse manque."
+    }
+  ],
+  "coordinator": "211: 0/0; 212: 2/1; 213: 2/0; 214: 4/3; 215: 1/0 (normal/misprint, marqueurs inclus dans normal).\n213/214 : recouper après « assertion » ; p. 214 commence par « de 2.1 », avec « de » en fin de ligne source 1701.\n214/215 : la rubrique 2.13, ligne source 1737, appartient à p. 215 et non à p. 214."
+}

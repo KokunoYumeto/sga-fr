@@ -1,0 +1,625 @@
+[
+ {
+  "page": 236,
+  "where": "Proposition 5.1.6, up to 'système projectif J-adique noethérien'",
+  "scan": "underlined: 'Soient', 'un anneau commutatif noethérien', 'un idéal / de', 'une', 'catégorie abélienne', 'Pour tout système projectif', 'adique / noethérien'; not A, J, 'A,C', 'A-', 'J-', the commas",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient \\(A\\) un anneau commutatif noethérien, \\(J\\) un idéal de \\(A\\), \\(\\mathcal C\\) une \\(A\\)-catégorie abélienne. Pour tout système projectif \\(J\\)-adique noethérien",
+   "new": "\\emph{Soient} \\(A\\) \\emph{un anneau commutatif noethérien}, \\(J\\) \\emph{un idéal de} \\(A\\), \\(\\mathcal C\\) \\emph{une} \\(A\\)-\\emph{catégorie abélienne}. \\emph{Pour tout système projectif} \\(J\\)-\\emph{adique noethérien}"
+  },
+  "note": "Exposé V: the TeX has no underline markup; \\emph as in the logged fixes of pp. 204-205. Ends before ' \\(X\\) (5.1.1)', which the next edit changes."
+ },
+ {
+  "page": 236,
+  "where": "Proposition 5.1.6, 'noethérien (5.1.1) X , le gradué'",
+  "scan": "'J-adique noethérien (5.1.1) X , le gradué': the reference before X",
+  "tex": "\\(J\\)-adique noethérien \\(X\\) (5.1.1), le gradué",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(X\\) (5.1.1)",
+   "new": "(5.1.1) \\(X\\)"
+  },
+  "note": "Order of the print restored. Does not overlap the underline edits before and after it."
+ },
+ {
+  "page": 236,
+  "where": "Proposition 5.1.6, from 'le gradué' to the end",
+  "scan": "underlined: 'le gradué', 'est un', 'module / noethérien'; not grs(X), '(gr_J(A),C)-', the full stop",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": ", le gradué \\(\\grs(X)\\) est un \\((\\gr_J(A),\\mathcal C)\\)-module noethérien.",
+   "new": ", \\emph{le gradué} \\(\\grs(X)\\) \\emph{est un} \\((\\gr_J(A),\\mathcal C)\\)-\\emph{module noethérien}."
+  },
+  "note": ""
+ },
+ {
+  "page": 236,
+  "where": "proof of 5.1.6, label",
+  "scan": "'Preuve : Comme gr_J(A) est' ('Preuve' underlined)",
+  "tex": "\\begin{prooftext} without argument: the Exposé V environment (s5.tex l. 6859, default [Proof]) prints 'Proof.'",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}\nComme \\(\\gr_J(A)\\)",
+   "new": "\\emph{Preuve} : Comme \\(\\gr_J(A)\\)"
+  },
+  "note": "Pair A (with the next edit, same page): the volume's form '\\emph{Preuve} : ' (sga5_proof_pass.py) without the environment; apply both or neither."
+ },
+ {
+  "page": 236,
+  "where": "end of the proof of 5.1.6",
+  "scan": "the proof ends with the display 'gr_J(A) ⊗_A X_o ⟶ grs(X) .' (no end mark)",
+  "tex": "\\end{prooftext} after the display",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\grs(X).\n\\]\n\\end{prooftext}\n",
+   "new": "\\grs(X).\n\\]\n"
+  },
+  "note": "Pair A: closes the environment removed by the previous edit; apply both or neither."
+ },
+ {
+  "page": 236,
+  "where": "heading 5.2",
+  "scan": "'5.2. Structure de J-adn(C) et AR-J-adn(C) .' with a full stop ('Structure de', 'et' underlined)",
+  "tex": "\\subsubsection*{5.2. Structure de \\(J\\)-adn\\((\\mathcal C)\\) et AR-\\(J\\)-adn\\((\\mathcal C)\\)}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "AR-\\(J\\)-adn\\((\\mathcal C)\\)}",
+   "new": "AR-\\(J\\)-adn\\((\\mathcal C)\\).}"
+  },
+  "note": "Underlined title: the print's full stop."
+ },
+ {
+  "page": 236,
+  "where": "5.2, 'la sous-catégorie pleine de Hom(N°,C)'",
+  "scan": "Hom underlined",
+  "tex": "\\(\\Hom(\\mathbb N^\\circ,\\mathcal C)\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "pleine de \\(\\Hom(",
+   "new": "pleine de \\(\\uHom("
+  },
+  "note": "\\uHom (\\underline{\\Hom}) is defined in the preamble, as used on p. 205."
+ },
+ {
+  "page": 236,
+  "where": "Proposition 5.2.1, first sentence",
+  "scan": "underlined: 'La catégorie', 'est stable par noyaux et conoyaux dans', Hom; not E_C, (N°,C), the full stop",
+  "tex": "no underline markup; \\Hom plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "La catégorie \\(\\mathcal E_{\\mathcal C}\\) est stable par noyaux et conoyaux dans \\(\\Hom(\\mathbb N^\\circ,\\mathcal C)\\).",
+   "new": "\\emph{La catégorie} \\(\\mathcal E_{\\mathcal C}\\) \\emph{est stable par noyaux et conoyaux dans} \\(\\uHom(\\mathbb N^\\circ,\\mathcal C)\\)."
+  },
+  "note": ""
+ },
+ {
+  "page": 236,
+  "where": "Proposition 5.2.1, 'Autrement dit, ... et le foncteur'",
+  "scan": "underlined: 'Autrement dit', 'est une catégorie abélienne et le foncteur'; not E_C",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Autrement dit, \\(\\mathcal E_{\\mathcal C}\\) est une catégorie abélienne et le foncteur",
+   "new": "\\emph{Autrement dit}, \\(\\mathcal E_{\\mathcal C}\\) \\emph{est une catégorie abélienne et le foncteur}"
+  },
+  "note": "The underline continues on 'd'inclusion' (next edit)."
+ },
+ {
+  "page": 236,
+  "where": "Proposition 5.2.1, last line of the page: 'd'inclusion :'",
+  "scan": "'d'inclusion :' with a colon before the display ('d'inclusion' underlined)",
+  "tex": "d'inclusion (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d'inclusion",
+   "new": "\\emph{d'inclusion} :"
+  },
+  "note": "The print's colon; the same edit carries the statement's underline on the word. Anchored on the word so that it stays on p. 236 whether the p. 237 marker is moved before or after."
+ },
+ {
+  "page": 236,
+  "where": "Proposition 5.2.1, the display E_C ⟶ Hom(N°,C) (printed at the top of p. 237)",
+  "scan": "Hom underlined",
+  "tex": "\\mathcal E_{\\mathcal C}\\longrightarrow \\Hom(\\mathbb N^\\circ,\\mathcal C)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow \\Hom(",
+   "new": "\\longrightarrow \\uHom("
+  },
+  "note": "Printed on p. 237 (see the p. 237 marker finding); the edit does not cross a marker."
+ },
+ {
+  "page": 236,
+  "where": "proof of 5.2.1, label (printed at the top of p. 237)",
+  "scan": "'Preuve : Soit u : X ⟶ Y un morphisme' ('Preuve' underlined)",
+  "tex": "\\begin{prooftext} without argument (last line of page_236.tex): prints 'Proof.'",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "est exact.\n\\end{statement}\n\n\\begin{prooftext}",
+   "new": "est exact.\n\\end{statement}\n\n\\emph{Preuve} :"
+  },
+  "note": "Pair B (with the p. 237 edit that removes '\\end{prooftext}' before Lemme 5.2.1.1); apply both or neither. The line break before the marker is kept, so 'Soit' follows after the marker (or after the moved marker). Printed on p. 237."
+ },
+ {
+  "page": 237,
+  "where": "top of the page",
+  "scan": "p. 237 begins with the display 'E_C ⟶ Hom(N°,C)', then 'est exact.' and 'Preuve : Soit u'; p. 236 ends 'le foncteur d'inclusion :'",
+  "tex": "the display, 'est exact.', '\\end{statement}' and '\\begin{prooftext}' end page_236.tex; page_237.tex opens with 'Soit \\(u:X\\to Y\\)'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 237 really begins at the display '\\[' after 'd'inclusion' (s5.tex diplomatic line 7966). Exact fix: python -I move_marker.py 5 237 '\\[' --before (the last '\\[' before the marker opens this display; simulated in memory on both layers: '... et le foncteur d'inclusion' / marker / '\\[' / '\\mathcal E_{\\mathcal C}\\longrightarrow ...'). Text not moved; the edits for this display and label are listed under p. 236."
+ },
+ {
+  "page": 237,
+  "where": "proof of 5.2.1, a)",
+  "scan": "'a) Coker(u) est AR-J-adique noethérien.': 'est' and 'noethérien' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "a) \\(\\Coker(u)\\) est AR-\\(J\\)-adique noethérien.",
+   "new": "a) \\(\\Coker(u)\\) \\emph{est} AR-\\(J\\)-adique \\emph{noethérien}."
+  },
+  "note": ""
+ },
+ {
+  "page": 237,
+  "where": "proof of 5.2.1, b)",
+  "scan": "'b) Im(u) est AR-J-adique noethérien.': 'est' and 'noethérien' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "b) \\(\\Im(u)\\) est AR-\\(J\\)-adique noethérien",
+   "new": "b) \\(\\Im(u)\\) \\emph{est} AR-\\(J\\)-adique \\emph{noethérien}"
+  },
+  "note": ""
+ },
+ {
+  "page": 237,
+  "where": "proof of 5.2.1, b), 'Grâce à la suite exacte'",
+  "scan": "'b) Im(u) est AR-J-adique noethérien.' stands alone; 'Grâce à la suite exacte :' begins a new indented paragraph",
+  "tex": "noethérien. Grâce à la suite exacte (same paragraph)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": ". Grâce",
+   "new": ".\n\nGrâce"
+  },
+  "note": "Paragraph break of the print (a) and c) run on, b) does not)."
+ },
+ {
+  "page": 237,
+  "where": "proof of 5.2.1, b), before the display",
+  "scan": "'Grâce à la suite exacte :' with a colon",
+  "tex": "Grâce à la suite exacte (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "la suite exacte\n\\[",
+   "new": "la suite exacte :\n\\["
+  },
+  "note": ""
+ },
+ {
+  "page": 237,
+  "where": "proof of 5.2.1, 'du lemme 5.2.1.1. ci-dessous'",
+  "scan": "'du lemme 5.2.1.1. ci-dessous.' with a full stop after the number",
+  "tex": "du lemme 5.2.1.1 ci-dessous.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "lemme 5.2.1.1 ci-dessous",
+   "new": "lemme 5.2.1.1. ci-dessous"
+  },
+  "note": ""
+ },
+ {
+  "page": 237,
+  "where": "proof of 5.2.1, before Lemme 5.2.1.1",
+  "scan": "the proof of 5.2.1 goes on after the lemma (c) Ker(u) ...); no end mark",
+  "tex": "\\end{prooftext} before \\begin{statement}{Lemme 5.2.1.1}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{prooftext}\n\n\\begin{statement}{Lemme 5.2.1.1}",
+   "new": "\n\\begin{statement}{Lemme 5.2.1.1}"
+  },
+  "note": "Pair B: closes the environment whose '\\begin{prooftext}' the p. 236 edit (label of the proof of 5.2.1) replaces by '\\emph{Preuve} :'; apply both or neither."
+ },
+ {
+  "page": 237,
+  "where": "Lemme 5.2.1.1, statement after the display",
+  "scan": "'Soit' not underlined; underlined: 'une suite exacte dans la catégorie', Hom, 'Si', 'et', 'sont', 'adiques noethériens' (after 'AR-J-' at the line end), 'est', 'adique noethérien'; not M, N, L, 'AR-J-', (N°,C)",
+  "tex": "no underline markup; \\Hom plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "une suite exacte dans la catégorie \\(\\Hom(\\mathbb N^\\circ,\\mathcal C)\\). Si \\(M\\) et \\(N\\) sont AR-\\(J\\)-adiques noethériens, \\(L\\) est AR-\\(J\\)-adique noethérien.",
+   "new": "\\emph{une suite exacte dans la catégorie} \\(\\uHom(\\mathbb N^\\circ,\\mathcal C)\\). \\emph{Si} \\(M\\) \\emph{et} \\(N\\) \\emph{sont} AR-\\(J\\)-\\emph{adiques noethériens}, \\(L\\) \\emph{est} AR-\\(J\\)-\\emph{adique noethérien}."
+  },
+  "note": ""
+ },
+ {
+  "page": 237,
+  "where": "proof of Lemme 5.2.1.1, start",
+  "scan": "no label: the indented paragraph 'Il suffit évidemment de voir' follows the statement",
+  "tex": "\\begin{prooftext} without argument: prints 'Proof.'",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}\nIl suffit évidemment",
+   "new": "Il suffit évidemment"
+  },
+  "note": "Pair C (with the removal of '\\end{prooftext}' after '(4.2.6).' below); apply both or neither."
+ },
+ {
+  "page": 237,
+  "where": "proof of Lemme 5.2.1.1, 'On ne ramène de la même manière'",
+  "scan": "'On ne ramène' (clear n-e)",
+  "tex": "On se ramène",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "On se ramène",
+   "new": "On ne ramène"
+  },
+  "corrected": "On se ramène",
+  "note": "Typing slip ('ne' for 'se'); the TeX silently corrects it. The edit restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 237,
+  "where": "proof of Lemme 5.2.1.1, 'adapté à J et son gradué'",
+  "scan": "'strict, adapté à J et son gradué,' (no comma after J)",
+  "tex": "adapté à \\(J\\), et son gradué",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "adapté à \\(J\\), et",
+   "new": "adapté à \\(J\\) et"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 237,
+  "where": "end of the proof of Lemme 5.2.1.1",
+  "scan": "'... d'Artin-Rees (4.2.6) .' then 'c) Ker(u) ...' (no end mark)",
+  "tex": "\\end{prooftext} after '(4.2.6).'",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "(4.2.6).\n\\end{prooftext}\n",
+   "new": "(4.2.6).\n"
+  },
+  "note": "Pair C: closes the environment removed at the start of the proof; apply both or neither."
+ },
+ {
+  "page": 237,
+  "where": "proof of 5.2.1, c)",
+  "scan": "'c) Ker(u) est AR-J-adique noethérien.': 'est' and 'noethérien' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "c) \\(\\Ker(u)\\) est AR-\\(J\\)-adique noethérien.",
+   "new": "c) \\(\\Ker(u)\\) \\emph{est} AR-\\(J\\)-adique \\emph{noethérien}."
+  },
+  "note": ""
+ },
+ {
+  "page": 238,
+  "where": "Proposition 5.2.2",
+  "scan": "underlined: 'Les objets de la catégorie abélienne', 'sont / noethériens'; not AR-J-adn(C), the full stop",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Les objets de la catégorie abélienne AR-\\(J\\)-adn\\((\\mathcal C)\\) sont noethériens.",
+   "new": "\\emph{Les objets de la catégorie abélienne} AR-\\(J\\)-adn\\((\\mathcal C)\\) \\emph{sont noethériens}."
+  },
+  "note": ""
+ },
+ {
+  "page": 238,
+  "where": "proof of 5.2.2, label",
+  "scan": "'Preuve : On se ramène immédiatement' ('Preuve' underlined)",
+  "tex": "\\begin{prooftext} without argument: prints 'Proof.'",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}\nOn se ramène immédiatement",
+   "new": "\\emph{Preuve} : On se ramène immédiatement"
+  },
+  "note": "Pair D (with the removal of '\\end{prooftext}' at the end of the proof, same page); apply both or neither."
+ },
+ {
+  "page": 238,
+  "where": "proof of 5.2.2, '(Y^n)_{n∈N} et des morphismes'",
+  "scan": "'noethériens (Y^n)_{n ∈ N}  et des' (no comma)",
+  "tex": "\\((Y^n)_{n\\in\\mathbb N}\\), et des",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\((Y^n)_{n\\in\\mathbb N}\\), et des",
+   "new": "\\((Y^n)_{n\\in\\mathbb N}\\) et des"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 238,
+  "where": "proof of 5.2.2, 'morphismes de Hom(N°,C)'",
+  "scan": "Hom underlined",
+  "tex": "\\(\\Hom(\\mathbb N^\\circ,\\mathcal C)\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "morphismes de \\(\\Hom(",
+   "new": "morphismes de \\(\\uHom("
+  },
+  "note": ""
+ },
+ {
+  "page": 238,
+  "where": "proof of 5.2.2, end of (i)",
+  "scan": "'(i) les v_n deviennent des monomorphismes dans AR-J-adn(C) ,' (comma)",
+  "tex": "AR-\\(J\\)-adn\\((\\mathcal C)\\);",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "AR-\\(J\\)-adn\\((\\mathcal C)\\);",
+   "new": "AR-\\(J\\)-adn\\((\\mathcal C)\\),"
+  },
+  "note": ""
+ },
+ {
+  "page": 238,
+  "where": "end of the proof of 5.2.2",
+  "scan": "'... donc aussi celle des Z^n .' then 'Résumons :' (no end mark)",
+  "tex": "\\end{prooftext} after 'celle des \\(Z^n\\).'",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "celle des \\(Z^n\\).\n\\end{prooftext}\n",
+   "new": "celle des \\(Z^n\\).\n"
+  },
+  "note": "Pair D: closes the environment replaced by '\\emph{Preuve} : '; apply both or neither."
+ },
+ {
+  "page": 239,
+  "where": "Théorème 5.2.3",
+  "scan": "underlined: 'Les catégories', 'sont abéliennes / et noethériennes'; not J-adn(C), the 'et' between the two categories, AR-J-adn(C), the full stop",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Les catégories \\(J\\)-adn\\((\\mathcal C)\\) et AR-\\(J\\)-adn\\((\\mathcal C)\\) sont abéliennes et noethériennes.",
+   "new": "\\emph{Les catégories} \\(J\\)-adn\\((\\mathcal C)\\) et AR-\\(J\\)-adn\\((\\mathcal C)\\) \\emph{sont abéliennes et noethériennes}."
+  },
+  "note": ""
+ },
+ {
+  "page": 239,
+  "where": "Proposition 5.2.4, after the label",
+  "scan": "'PROPOSITION 5.2.4. (stabilités par extension). Soit': in parentheses, small s; '(stabilités par extension' and 'Soit' underlined",
+  "tex": "Stabilités par extension. Soit",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Stabilités par extension. Soit",
+   "new": "(\\emph{stabilités par extension}). \\emph{Soit}"
+  },
+  "note": "Capital S and the missing parentheses; the same edit sets the print's underline (the opening parenthesis stands outside the \\emph, as the closing one)."
+ },
+ {
+  "page": 239,
+  "where": "Proposition 5.2.4, 'une suite exacte de Hom(N°,C) , avec ... On suppose que :'",
+  "scan": "underlined: 'une suite exacte de', Hom, 'avec', 'pour tout', 'On / suppose que'; not (N°,C), J^{n+1}Y_n = 0, n, the colon",
+  "tex": "no underline markup; \\Hom plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "une suite exacte de \\(\\Hom(\\mathbb N^\\circ,\\mathcal C)\\), avec \\(J^{n+1}Y_n=0\\) pour tout \\(n\\). On suppose que:",
+   "new": "\\emph{une suite exacte de} \\(\\uHom(\\mathbb N^\\circ,\\mathcal C)\\), \\emph{avec} \\(J^{n+1}Y_n=0\\) \\emph{pour tout} \\(n\\). \\emph{On suppose que}:"
+  },
+  "note": "The same words recur in Lemme 5.2.4.1; this old is unique through 'On suppose que:'."
+ },
+ {
+  "page": 239,
+  "where": "Proposition 5.2.4 (i)",
+  "scan": "'(i) Z est AR-J-adique,': 'est' and 'adique' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item \\(Z\\) est AR-\\(J\\)-adique",
+   "new": "\\item \\(Z\\) \\emph{est} AR-\\(J\\)-\\emph{adique}"
+  },
+  "note": ""
+ },
+ {
+  "page": 239,
+  "where": "Proposition 5.2.4, end of (i)",
+  "scan": "'AR-J-adique,' (comma)",
+  "tex": "AR-\\(J\\)-adique; (semicolon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": ";\n\\item",
+   "new": ",\n\\item"
+  },
+  "note": ""
+ },
+ {
+  "page": 239,
+  "where": "Proposition 5.2.4 (ii)",
+  "scan": "'(ii) X est AR-J-adique artinien.': 'est' and 'adique artinien' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(X\\) est AR-\\(J\\)-adique artinien.",
+   "new": "\\(X\\) \\emph{est} AR-\\(J\\)-\\emph{adique artinien}."
+  },
+  "note": ""
+ },
+ {
+  "page": 239,
+  "where": "Proposition 5.2.4, 'Alors Y est AR-J-adique.'",
+  "scan": "'Alors', 'est', 'adique' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors \\(Y\\) est AR-\\(J\\)-adique.",
+   "new": "\\emph{Alors} \\(Y\\) \\emph{est} AR-\\(J\\)-\\emph{adique}."
+  },
+  "note": ""
+ },
+ {
+  "page": 239,
+  "where": "proof of 5.2.4, label",
+  "scan": "'Preuve : On se ramène comme dans' ('Preuve' underlined)",
+  "tex": "\\begin{prooftext} without argument: prints 'Proof.'",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}\nOn se ramène comme",
+   "new": "\\emph{Preuve} : On se ramène comme"
+  },
+  "note": "Pair E (with the removal of '\\end{prooftext}' before Lemme 5.2.4.1, same page); apply both or neither."
+ },
+ {
+  "page": 239,
+  "where": "proof of 5.2.4, 'le lemme suivant :'",
+  "scan": "'on est ramené à prouver le lemme suivant :' (colon)",
+  "tex": "le lemme suivant.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "le lemme suivant.",
+   "new": "le lemme suivant :"
+  },
+  "note": ""
+ },
+ {
+  "page": 239,
+  "where": "end of the proof of 5.2.4, before Lemme 5.2.4.1",
+  "scan": "no end mark",
+  "tex": "\\end{prooftext} before \\begin{statement}{Lemme 5.2.4.1}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{prooftext}\n\n\\begin{statement}{Lemme 5.2.4.1}",
+   "new": "\n\\begin{statement}{Lemme 5.2.4.1}"
+  },
+  "note": "Pair E: closes the environment replaced by '\\emph{Preuve} : '; apply both or neither."
+ },
+ {
+  "page": 239,
+  "where": "Lemme 5.2.4.1, 'Soit'",
+  "scan": "'LEMME 5.2.4.1. Soit': 'Soit' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit\n\\[\n0\\longrightarrow T",
+   "new": "\\emph{Soit}\n\\[\n0\\longrightarrow T"
+  },
+  "note": ""
+ },
+ {
+  "page": 239,
+  "where": "Lemme 5.2.4.1, statement after the display",
+  "scan": "underlined: 'une suite exacte de', Hom, 'avec', 'pour tout', 'Si', 'est', 'adique artinien', 'est', 'adique et', 'est', 'nul', 'alors', 'est', 'adique'; not the letters, 'J-', 'AR-', 'AR-J-', J^{n+1}Y_n = 0, the commas and stops",
+  "tex": "no underline markup; \\Hom plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "une suite exacte de \\(\\Hom(\\mathbb N^\\circ,\\mathcal C)\\), avec \\(J^{n+1}Y_n=0\\) pour tout \\(n\\). Si \\(X\\) est \\(J\\)-adique artinien, \\(Z\\) est \\(J\\)-adique et \\(T\\) est AR-nul, alors \\(Y\\) est AR-\\(J\\)-adique.",
+   "new": "\\emph{une suite exacte de} \\(\\uHom(\\mathbb N^\\circ,\\mathcal C)\\), \\emph{avec} \\(J^{n+1}Y_n=0\\) \\emph{pour tout} \\(n\\). \\emph{Si} \\(X\\) \\emph{est} \\(J\\)-\\emph{adique artinien}, \\(Z\\) \\emph{est} \\(J\\)-\\emph{adique et} \\(T\\) \\emph{est} AR-\\emph{nul}, \\emph{alors} \\(Y\\) \\emph{est} AR-\\(J\\)-\\emph{adique}."
+  },
+  "note": ""
+ },
+ {
+  "page": 239,
+  "where": "proof of Lemme 5.2.4.1, start",
+  "scan": "no label: the indented paragraph 'Pour montrer le lemme, on va d'abord voir' follows the statement",
+  "tex": "\\begin{prooftext} without argument: prints 'Proof.'",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}\nPour montrer le lemme",
+   "new": "Pour montrer le lemme"
+  },
+  "note": "Pair F (with the p. 240 edit that removes '\\end{prooftext}' after 'Y est AR-J-adique.'); apply both or neither."
+ },
+ {
+  "page": 239,
+  "where": "proof of Lemme 5.2.4.1, last display of the page",
+  "scan": "'X_{n+k}/J^{n+1}X_{n+k}/ ⟶ Y_{n+k}/J^{n+1}Y_{n+k} ,': a second slash after the second X_{n+k}, nothing between it and the arrow",
+  "tex": "X_{n+k}/J^{n+1}X_{n+k}\\longrightarrow",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "X_{n+k}/J^{n+1}X_{n+k}\\longrightarrow",
+   "new": "X_{n+k}/J^{n+1}X_{n+k}/\\longrightarrow"
+  },
+  "corrected": "X_{n+k}/J^{n+1}X_{n+k}\\longrightarrow",
+  "note": "Stray slash typed after X_{n+k} (the same stroke as the quotient slash before J^{n+1}); the TeX silently drops it. The edit restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 240,
+  "where": "'De plus on obtient'",
+  "scan": "'De plus on obtient' (no comma)",
+  "tex": "De plus, on obtient",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "De plus, on",
+   "new": "De plus on"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 240,
+  "where": "'\"par passage à la limite\"'",
+  "scan": "'on obtient \"par passage à la limite\" un diagramme' (typewriter quotes)",
+  "tex": "par passage à la limite (no quotes)",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "par passage à la limite",
+   "new": "``par passage à la limite''"
+  },
+  "note": "Quotes of the print; ``...'' as elsewhere in Exposé V (s5.tex l. 6990, 7566)."
+ },
+ {
+  "page": 240,
+  "where": "end of the proof of Lemme 5.2.4.1",
+  "scan": "'d'où le fait que Y est AR-J-adique.' (no end mark)",
+  "tex": "\\end{prooftext} after 'AR-\\(J\\)-adique.'",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "AR-\\(J\\)-adique.\n\\end{prooftext}\n",
+   "new": "AR-\\(J\\)-adique.\n"
+  },
+  "note": "Pair F: closes the environment removed at the start of the proof (p. 239); apply both or neither."
+ }
+]

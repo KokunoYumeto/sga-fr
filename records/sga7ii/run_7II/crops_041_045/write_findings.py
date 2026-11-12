@@ -1,0 +1,193 @@
+import json
+from pathlib import Path
+
+folder = Path(r"C:\Users\user\Documents\sga_scan_check_20261105\run_7II\b041_045")
+outfile = Path(r"C:\Users\user\Documents\sga_scan_check_20261105\run_7II\findings_041_045.json")
+pages = {n: (folder / f"page_{n:03d}.tex").read_text(encoding="utf-8") for n in range(41, 46)}
+
+NL = "\n"
+
+findings = [
+    {
+        "page": 41,
+        "where": "paragraph 'Le champ de vecteur X défini ...', end of its first sentence",
+        "scan": "est invariant par homothéties, Ce champ de vecteur (a comma, then a capital C)",
+        "tex": "est invariant par homothéties, Ce champ",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "est invariant par homothéties. Ce champ",
+        "note": "Typing error: a comma ends the sentence and the next one starts with a capital. The TeX keeps the printed reading; the corrected layer also keeps the comma.",
+    },
+    {
+        "page": 41,
+        "where": "the exact sequences after 'induit des suites exactes', middle term",
+        "scan": "Ω^i_{V(E)/S} (no star on V(E); checked at 1.3x)",
+        "tex": r"\Omega^i_{\mathbb{V}(\underline{E})/S} \longrightarrow \Omega^1",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": r"\Omega^i_{\mathbb{V}(\underline{E})^*/S} \longrightarrow \Omega^1",
+        "note": "The sequences live on V(E)*: they are induced by the preceding sequence, whose middle term is Ω^1_{V(E)*/S}, their outer terms are sheaves on V(E)*, and their rewritten form (1.1.3) has Ω^i_{V(E)*/S}. The TeX keeps the printed reading; the corrected layer too.",
+    },
+    {
+        "page": 42,
+        "where": "first paragraph, 'la résolution de Kozul'",
+        "scan": "Kozul",
+        "tex": "résolution de Kozul de",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "résolution de Koszul de",
+        "note": "Misspelt name; pp. 43 and 45 print 'Koszul' (typed over a correction). The TeX keeps the printed reading; the corrected layer too.",
+    },
+    {
+        "page": 42,
+        "where": "sentence before (1.1.7)",
+        "scan": "Celle-ci se fractionne en suite exactes courtes",
+        "tex": "en suite exactes courtes",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "en suites exactes courtes",
+        "note": "Agreement error: singular 'suite' with plural adjectives; p. 41 has 'Les suites exactes courtes (1.1.3)'. The TeX keeps the printed reading; the corrected layer too.",
+    },
+    {
+        "page": 43,
+        "where": "(1.1.13), end of Ker( ... )",
+        "scan": "Ker(X⌞ : p_* ∧^i E(n-i) → p_* ∧^{i-1} E(n-i+1)   , (only the parenthesis of E(n-i+1) is closed; the one opened after Ker stays open; checked at 3x)",
+        "tex": r"\underline{E}(n-i+1)) \qquad ,",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": {"old": "(n-i+1))", "new": "(n-i+1)"},
+        "corrected": "(n-i+1))",
+        "note": "The TeX silently adds the closing parenthesis of Ker(...); the fix restores the printed reading. The corrected layer has both parentheses.",
+    },
+    {
+        "page": 43,
+        "where": "paragraph 'Sachant que les R^i p_* Ω^j ... sont des faisceaux inversibles pour 0 ≤ i ≤ r'",
+        "scan": "R^i p_*Ω^j_{P(E)/S} (exponent j on Ω)",
+        "tex": r"Sachant que les $R^i p_* \Omega^j_{\mathbb{P}(\underline{E})/S}$",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": r"Sachant que les $R^i p_* \Omega^i_{\mathbb{P}(\underline{E})/S}$",
+        "note": "Theorem 1.1 (ii) (p. 40) concerns the section η^i of R^i p_*(Ω^i), and R^i p_* Ω^j = 0 for i ≠ j; this page has just shown R^i p_* Ω^i ≅ O_S. Only Ω^i makes 'inversibles pour 0 ≤ i ≤ r' and the next clause 'on a η^i ≠ 0' consistent. The TeX keeps the printed reading; the corrected layer too.",
+    },
+    {
+        "page": 43,
+        "where": "1.2, formula for χ(P^r_k, Ω^j(n)), range of the sum",
+        "scan": "a≤i≤j (letter a; checked at 6x)",
+        "tex": r"\sum_{a \leq i \leq j}",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": r"\sum_{0 \leq i \leq j}",
+        "note": "No a is defined here. The resolution (1.1.10) of Ω^j(n) has the terms p^*∧^i E(n-i) for i = j, ..., 0, which gives χ = Σ_{0≤i≤j} (-1)^{i-j} C(r+1,i) C(r+n-i,r) (check r = j = 1: -(n+1) + 2n = n-1 = χ(O(n-2))). Probably the author's index zero (typed o elsewhere) read as a. The TeX keeps the printed reading; the corrected layer too.",
+    },
+    {
+        "page": 44,
+        "where": "Proposition 1.3, conclusion (i) after 'Alors, on a :'",
+        "scan": "label (i) at the left of R^i f_* (Ω^j_{H/S} ⊗ F) ⥲ R^i f_*(Ω^j_{X/S} ⊗ F) pour i+j < d-c,",
+        "tex": r"\begin{equation*} with no tag (the next display has \tag{ii})",
+        "kind": "missing",
+        "confidence": "high",
+        "fix": {
+            "old": r"\underline{Alors, on a} :" + NL + NL + r"\begin{equation*}",
+            "new": r"\underline{Alors, on a} :" + NL + NL + r"\begin{equation*}\tag{i}",
+        },
+        "note": r"The label (i) is lost. \tag inside equation* is standard amsmath; the edit leaves the formula line alone, since that line differs in the corrected layer (H/X swap).",
+    },
+    {
+        "page": 44,
+        "where": "Proposition 1.3 (b), 'sont les coordonnées de S'",
+        "scan": "les coordonnées de S (capital S)",
+        "tex": r"\underline{sont les coordonnées de} $S$",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": r"\underline{sont les coordonnées de} $s$",
+        "note": "The s_i are the coordinates of the section s : W → O_X of W^∨ in a basis of W^∨; S is the base scheme. The TeX keeps the printed reading; the corrected layer too.",
+    },
+    {
+        "page": 44,
+        "where": "Proposition 1.3 (b), last line",
+        "scan": "forment une suite O_X-régulier et F-régulière",
+        "tex": r"$\underline{O}_X$\underline{-régulier et}",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": r"$\underline{O}_X$\underline{-régulière et}",
+        "note": "Agreement with 'suite', as in 'F-régulière' right after. The TeX keeps the printed reading; the corrected layer too.",
+    },
+    {
+        "page": 44,
+        "where": "Proposition 1.3 (i)",
+        "scan": "R^i f_* (Ω^j_{H/S} ⊗ F) ⥲ R^i f_*(Ω^j_{X/S} ⊗ F)",
+        "tex": r"R^i f_* \; (\Omega^j_{H/S} \otimes \underline{F}) \; \overset{\sim}{\longrightarrow} \; R^i f_*(\Omega^j_{X/S} \otimes \underline{F})",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": r"R^i f_* \; (\Omega^j_{X/S} \otimes \underline{F}) \; \overset{\sim}{\longrightarrow} \; R^i f_*(\Omega^j_{H/S} \otimes \underline{F})",
+        "note": "Source and target interchanged: the map is the restriction from X to H, as in (1.3.5) and (1.3.7) on p. 45, from which the proof deduces (i). The TeX keeps the printed reading; the corrected layer already swaps H and X (SGA7II-FR-XI-002). Goes with (ii).",
+    },
+    {
+        "page": 44,
+        "where": "Proposition 1.3 (ii)",
+        "scan": "R^i f_* (Ω^j_{H/S} ⊗ F) ↪ R^i f_*(Ω^j_{X/S} ⊗ F)",
+        "tex": r"R^i f_* \; (\Omega^j_{H/S} \otimes \underline{F}) \; \hookrightarrow \; R^i f_*(\Omega^j_{X/S} \otimes \underline{F})",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": r"R^i f_* \; (\Omega^j_{X/S} \otimes \underline{F}) \; \hookrightarrow \; R^i f_*(\Omega^j_{H/S} \otimes \underline{F})",
+        "note": "No map runs from the cohomology of H to that of X here; the proof ((1.3.5), (1.3.7)) gives the injective restriction from X to H for i+j = d-c (weak Lefschetz). The TeX keeps the printed reading; the corrected layer already swaps (SGA7II-FR-XI-002). Goes with (i).",
+    },
+    {
+        "page": 44,
+        "where": "(1.3.1), the sentence after it, (1.3.2) and (1.3.3)",
+        "scan": "O_Y (four times)",
+        "tex": r"\underline{O}_Y",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": r"\underline{O}_H",
+        "note": r"No Y is defined in 1.3: the zero scheme of s is H (N_{H/X} and Ω^1_{H/S} in the same sequence (1.3.1)). 1.4 (p. 46) calls the complete intersection Y, which may explain the slip. Applies to all four \underline{O}_Y on this page; p. 45 has six more. The TeX keeps the printed reading; the corrected layer too.",
+    },
+    {
+        "page": 45,
+        "where": "proof of 1.3: 'La filtration ... du Ω^j_{X/S} ⊗ O_Y ⊗ F', the E_1 display, both lines of (1.3.5), the Koszul-resolution sentence and (1.3.6)",
+        "scan": "O_Y (six times)",
+        "tex": r"\underline{O}_Y",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": r"\underline{O}_H",
+        "note": r"Same slip as on p. 44: H is the zero scheme of s and no Y occurs in 1.3. Applies to all six \underline{O}_Y on this page. The TeX keeps the printed reading; the corrected layer too.",
+    },
+]
+
+ok = True
+for f in findings:
+    if f["kind"] != "misprint_in_print":
+        f.pop("corrected", None)
+    fix = f["fix"]
+    if fix is not None:
+        n = pages[f["page"]].count(fix["old"])
+        if n != 1:
+            ok = False
+            print("NOT UNIQUE", f["page"], n, repr(fix["old"]))
+        if "%%%%%%%%%%" in fix["old"]:
+            ok = False
+            print("MARKER IN OLD", f["page"])
+    # the quoted TeX must exist on the page (non-unique allowed for repeated misprints)
+    tex = f["tex"]
+    if f["kind"] == "misprint_in_print" and pages[f["page"]].count(tex) < 1:
+        ok = False
+        print("TEX NOT FOUND", f["page"], repr(tex))
+
+outfile.write_text(json.dumps(findings, ensure_ascii=False, indent=1), encoding="utf-8")
+print("written", outfile, len(findings), "ok" if ok else "PROBLEMS")
+from collections import Counter
+c = Counter((f["page"], f["kind"] == "misprint_in_print") for f in findings)
+for p in range(41, 46):
+    print(p, "normal", c[(p, False)], "misprint", c[(p, True)])

@@ -1,0 +1,201 @@
+[
+ {
+  "page": 101,
+  "where": "Proof of (a), first sentence: 'it suffices to see that [M(k[ε])] is a finite-dimensional vector space over k'",
+  "scan": "[M(k[ε])]: M underlined, with no subscript (checked in a crop)",
+  "tex": "$[\\underline{M}(k[\\epsilon])]$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "$[\\underline{M}_{X_{0}}(k[\\epsilon])]$",
+  "note": "The category of the statement is M_{X_0}; the same vector space is written [M_{X_0}(k[ε])] in (*) and at the end of the proof. The TeX keeps the printed reading. Low: the bare M may be meant loosely, for the general homogeneous category of 1.11 and 2.9(b)."
+ },
+ {
+  "page": 101,
+  "where": "Remark 4.6(a), last sentence: 'There are affine schemes X_0 over k having a non-isolated non-smooth point'",
+  "scan": "over k: only a faint speck before k, no typed character (checked in a crop)",
+  "tex": "over ˙$k$",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "over ˙$k$",
+   "new": "over $k$"
+  },
+  "note": "The TeX carries a stray U+02D9 (dot above) before $k$, which would print as a mark; it renders a speck of the scan."
+ },
+ {
+  "page": 102,
+  "where": "Diagram of a deformation of (X_0, Y_0) to R: label 'flat' of the vertical X → Spec(R)",
+  "scan": "'flat' typed to the RIGHT of the vertical stroke, between it and the Y → Spec(R) diagonal (which crosses its 'l')",
+  "tex": "X \\arrow[d, \"\\text{flat}\"']",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "\"\\text{flat}\"']",
+   "new": "\"\\text{flat}\"]"
+  },
+  "note": "The swap mark ' sets the label to the left of a downward arrow (inside the square); without it tikz-cd sets it to the right, as printed (the file's comment block also records it to the right). Does not overlap the arrowhead edit below."
+ },
+ {
+  "page": 102,
+  "where": "Same diagram, vertical X → Spec(R)",
+  "scan": "a plain stroke with no arrowhead, ending cleanly just above Spec(R) (checked in a crop); the other eight arrows have heads",
+  "tex": "X \\arrow[d, \"\\text{flat}\"']",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "X \\arrow[d,",
+   "new": "X \\arrow[d, no head,"
+  },
+  "corrected": "X \\arrow[d,",
+  "note": "X → Spec(R) is the flat structure morphism of the deformation; its head was not drawn. The TeX silently supplies it (its comment block records the missing head). The fix restores the printed headless stroke with the tikz-cd key 'no head'; 'corrected' is the current TeX."
+ },
+ {
+  "page": 103,
+  "where": "Proof of Lemma 4.7, first sentence: 'whose objects are of the form (k[ε]; X ×_{Spec(k)} Spec(k[ε]), Y)'",
+  "scan": "(k[ε]; X ×_{Spec(k)} Spec(k[ε]), Y): plain X, no subscript 0 (checked in a crop)",
+  "tex": "(k[\\epsilon]; X \\times_{\\mathrm{Spec}(k)}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(k[\\epsilon]; X_0 \\times_{\\mathrm{Spec}(k)}",
+  "note": "The objects of B are the deformations whose underlying scheme is the trivial deformation X_0 ×_{Spec(k)} Spec(k[ε]), as the next sentence says ('inside X_0 ×_{Spec(k)} Spec(k[ε])'). The TeX keeps the printed reading."
+ },
+ {
+  "page": 103,
+  "where": "Diagram of the association (Y, j_Y) ↦ ..., label of the middle vertical arrow O_{X_0} → O_Y",
+  "scan": "𝔍_Y: a Fraktur capital J with subscript Y (checked in a crop)",
+  "tex": "\\arrow[d, \"j_Y\"]",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[d, \"j_Y\"]",
+   "new": "\\arrow[d, \"\\mathfrak{J}_Y\"]"
+  },
+  "corrected": "\\arrow[d, \"j_Y\"]",
+  "note": "The map is the one induced by j_Y : Y → X_0; the display below calls it j (label j|I, a typewriter j). The Fraktur letter is a wrong glyph. The TeX silently writes j_Y (its comment block records the Fraktur J). The fix restores the printed letter (\\mathfrak is used in the file, e.g. \\mathfrak{X} on p. 102); 'corrected' is the current TeX."
+ },
+ {
+  "page": 104,
+  "where": "Remark 4.8, display: 'H^0(Y_0, Hom_{Y_0}(I/I^2, O_{Y_0})) = H^0(Y_0, D^1_{Y_0|X})'",
+  "scan": "D^1_{Y_0|X}: X without subscript 0 (checked in a crop)",
+  "tex": "\\underline{D}^1_{Y_0|X})",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\underline{D}^1_{Y_0|X_0})",
+  "note": "Y_0 is the closed subscheme of X_0 defined by I (the 'where' clause 0 → I → O_{X_0} → O_{Y_0} → 0), and Hom(I/I^2, O_{Y_0}) is D^1 of Y_0 over X_0. The TeX keeps the printed reading. Low: the bare X could be read as the general S-scheme of the preceding sentences."
+ },
+ {
+  "page": 104,
+  "where": "Theorem 4.9, first line: 'Let X_0 be k-scheme of finite type and'",
+  "scan": "'be' underlined; 'k-' not underlined; 'scheme of finite type and' underlined (checked in a crop)",
+  "tex": "\\underline{be $k$-scheme of finite type and}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{be $k$-scheme of finite type and}",
+   "new": "\\underline{be} $k$-\\underline{scheme of finite type and}"
+  },
+  "note": "The TeX underlines the letter k and its hyphen; the print leaves them plain, as it does the other math letters of the statement."
+ },
+ {
+  "page": 104,
+  "where": "Theorem 4.9(a), display: 'Aut_{R'}((X', Y')|X_0) → Aut_R(X' ⊗_{R'} R, Y', ⊗_{R'} R)|X_0)'",
+  "scan": "right-hand side: Aut_R( with a single opening parenthesis, and a comma after Y' before ⊗_{R'} R (checked in a crop)",
+  "tex": "\\mathrm{Aut}_R(X' \\otimes_{R'} R,\\, Y',\\, \\otimes_{R'} R)|X_0)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\mathrm{Aut}_R((X' \\otimes_{R'} R,\\, Y' \\otimes_{R'} R)|X_0)",
+  "note": "The target is the automorphism group of the restricted pair (X' ⊗_{R'} R, Y' ⊗_{R'} R) over X_0, written like the source ((X', Y')|X_0): the opening parenthesis of the pair is missing and the comma after Y' is stray. The TeX keeps both printed readings."
+ },
+ {
+  "page": 105,
+  "where": "'the images of (R, 𝔛) under M_{X_0} → M_{Spec(O_{X_0,x_0})} and M_{X_0} → M_{Spec(O_{X_0,x_0})}': the second functor",
+  "scan": "the second functor is printed identical to the first, with a plain O (no hat; checked in a crop)",
+  "tex": "and  $\\underline{M}_{X_0} \\to \\underline{M}_{\\mathrm{Spec}(\\underline{O}_{X_0,\\ x_0})}$  by",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "and  $\\underline{M}_{X_0} \\to \\underline{M}_{\\mathrm{Spec}(\\widehat{\\underline{O}}_{X_0,\\ x_0})}$  by",
+  "note": "'respectively' pairs the localization and the completion functors of the display above with their two images; the second functor goes to M_{Spec(Ô_{X_0,x_0})}. The TeX keeps the printed reading."
+ },
+ {
+  "page": 105,
+  "where": "Same sentence: 'by (R, 𝔛_{(x_0)}) and (R, 𝔛_{(x_0)}) respectively'",
+  "scan": "(R, 𝔛_{(x_0)}) printed twice, with no hat in the second (checked in a crop)",
+  "tex": "and  $(R,\\ \\mathfrak{X}_{(x_0)})$ respectively",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "and  $(R,\\ \\mathfrak{X}_{(\\hat{x}_0)})$ respectively",
+  "note": "The image under the completion functor is 𝔛_{(x̂_0)}, defined in the second display below; Theorem 4.10(b) likewise pairs (R, 𝔛_{(x)}) with (R, 𝔛_{(x̂)}). The TeX keeps the printed reading."
+ },
+ {
+  "page": 105,
+  "where": "'Therefore if 𝔛 = lim_v 𝔛_v where 𝔛_v = 𝔛 ×_{Spf(R)} ...'",
+  "scan": "index typed as a Latin v (the typewriter v with top serifs, as in 'where'; checked in a crop), three times here",
+  "tex": "\\varinjlim\\limits_{\\nu} \\mathfrak{X}_{\\nu}$  where  $\\mathfrak{X}_{\\nu} =",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\varinjlim\\limits_{\\nu} \\mathfrak{X}_{\\nu}$  where  $\\mathfrak{X}_{\\nu} =",
+   "new": "\\varinjlim\\limits_{v} \\mathfrak{X}_{v}$  where  $\\mathfrak{X}_{v} ="
+  },
+  "note": "The TeX reads the typed v as Greek ν everywhere on this page (8 places); the print has the Latin letter. Apply together with the three other v edits of this page (all or none)."
+ },
+ {
+  "page": 105,
+  "where": "Same sentence: 'Spec(R/m^{v+1})'",
+  "scan": "m^{v+1} with the typed Latin v",
+  "tex": "\\underline{m}^{\\nu+1}",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\underline{m}^{\\nu+1}",
+   "new": "\\underline{m}^{v+1}"
+  },
+  "note": "As the previous entry; apply with it."
+ },
+ {
+  "page": 105,
+  "where": "First display: '𝔛_{(x_0)} = lim_v Spec(O_{𝔛_v, x_0})'",
+  "scan": "lim index and subscript of 𝔛: the typed Latin v",
+  "tex": "\\limits_{\\nu} \\mathrm{Spec}(\\underline{O}_{\\mathfrak{X}_{\\nu},",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\limits_{\\nu} \\mathrm{Spec}(\\underline{O}_{\\mathfrak{X}_{\\nu},",
+   "new": "\\limits_{v} \\mathrm{Spec}(\\underline{O}_{\\mathfrak{X}_{v},"
+  },
+  "note": "As the v entries above; apply with them."
+ },
+ {
+  "page": 105,
+  "where": "Second display: '𝔛_{(X̂_0)} = lim_v Spec(Ô_{𝔛_v, x_0}) .'",
+  "scan": "subscript (X̂_0) with a CAPITAL X under the hat: 29 px high against 20 px for the small x of (x_0) in the first display (checked in a crop)",
+  "tex": "\\mathfrak{X}_{(\\hat{x}_0)}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\mathfrak{X}_{(\\hat{x}_0)}",
+   "new": "\\mathfrak{X}_{(\\hat{X}_0)}"
+  },
+  "corrected": "\\mathfrak{X}_{(\\hat{x}_0)}",
+  "note": "The point is x_0, as in Ô_{𝔛_v, x_0} on the same line. The TeX silently writes the small x. The fix restores the printed capital; 'corrected' is the current TeX. Does not overlap the v edit of this display."
+ },
+ {
+  "page": 105,
+  "where": "Same display: lim_v and 𝔛_v",
+  "scan": "the typed Latin v, twice",
+  "tex": "\\limits_{\\nu} \\mathrm{Spec}(\\widehat{\\underline{O}}_{\\mathfrak{X}_{\\nu},",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\limits_{\\nu} \\mathrm{Spec}(\\widehat{\\underline{O}}_{\\mathfrak{X}_{\\nu},",
+   "new": "\\limits_{v} \\mathrm{Spec}(\\widehat{\\underline{O}}_{\\mathfrak{X}_{v},"
+  },
+  "note": "As the v entries above; apply with them."
+ }
+]

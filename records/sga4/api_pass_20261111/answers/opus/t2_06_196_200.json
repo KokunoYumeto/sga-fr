@@ -1,0 +1,98 @@
+[
+ {
+  "page": 196,
+  "where": "Exemple 1.33, l. 2",
+  "scan": "la catégorie des ensembles ∈ U",
+  "tex": "des ensemble $\\in",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "des ensemble $\\in",
+   "new": "des ensembles $\\in"
+  },
+  "note": "The print has the plural 'ensembles'."
+ },
+ {
+  "page": 196,
+  "where": "first paragraph",
+  "scan": "tout objet X de E au-dessus d'un objet quasi-séparé X de E",
+  "tex": "tout objet $X$ de $E$\n  au-dessus d'un objet quasi-séparé $X$ de $E$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "tout objet $X$ de $E$ au-dessus d'un objet quasi-séparé $Y$ de $E$",
+  "note": "The same letter X is used for both objects. The second one is presumably Y. The TeX keeps the printed reading."
+ },
+ {
+  "page": 197,
+  "where": "De plus, cette sous-catégorie ...",
+  "scan": "(comme il résulte du fait que",
+  "tex": "(comme il résulte de fait que",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "résulte de fait",
+   "new": "résulte du fait"
+  },
+  "note": "The print reads 'du fait'."
+ },
+ {
+  "page": 197,
+  "where": "On voit tout de suite ...",
+  "scan": "l'application induite π_o(f)",
+  "tex": "l'application induit $\\pi_0(f) :",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "l'application induit",
+   "new": "l'application induite"
+  },
+  "note": "The print reads 'induite'."
+ },
+ {
+  "page": 199,
+  "where": "proof of 2.1.1",
+  "scan": "Y_i → X resp. Z_j → Y",
+  "tex": "$Z_j \\to Y$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$Z_j \\to X$",
+  "note": "The composites go to ε(X), so the target should be X. The TeX keeps the printed Y."
+ },
+ {
+  "page": 199,
+  "where": "proof of 2.1.1, end of 1st paragraph",
+  "scan": "déjà noté plus haut pout tout objet",
+  "tex": "noté plus haut pour tout objet",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "pour tout objet",
+  "note": "Typing error 'pout' in the print. The TeX silently corrects it."
+ },
+ {
+  "page": 199,
+  "where": "Corollaire 2.1.1",
+  "scan": "et soient E : C~ ,",
+  "tex": "et soient $E : C^{\\sim}$,",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "$E = C^{\\sim}$",
+  "note": "A colon where '=' is meant. The TeX keeps the printed reading."
+ },
+ {
+  "page": 200,
+  "where": "proof of 2.1.2",
+  "scan": "par changement de base que G×_{ε(X)}H → H est quasi-séparé",
+  "tex": "changement de base que $\\fprod{G}{H}{\\epsilon(X)}$ est quasi-séparé,",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "changement de base que $\\fprod{G}{H}{\\epsilon(X)}$ est",
+   "new": "changement de base que $\\fprod{G}{H}{\\epsilon(X)} \\to H$ est"
+  },
+  "note": "The TeX drops the morphism '→ H': the print speaks of the projection being quasi-separated."
+ }
+]

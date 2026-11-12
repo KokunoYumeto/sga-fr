@@ -1,0 +1,108 @@
+[
+ {
+  "page": "511",
+  "where": "top of page, before 'La formule 13.4.5'",
+  "scan": "The page opens with the three-line display: Hom_A(u^*N, ℋom_E(u^{-1}X,M)) ≃ Hom_{A'}(N, u_*ℋom_E(u^{-1}X,M)) (13.4.1), Hom_{A'}(N, ℋom_{E'}(X,u_*M)) \" \" \" \" (10.3.1), \" \" \" \" Hom_{A'}(X, ℋom_{A'}(N,u_*M)) (12.1).",
+  "tex": "\\end{alignat*}",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 511 begins with this display. In the TeX only its \\end{alignat*} falls in this page's cut; the display's lines are in the source lines before 9382, i.e. in p. 510's cut. Check the display against this scan and move the page start back to the display's \\begin{alignat*}."
+ },
+ {
+  "page": "511",
+  "where": "Corollaire 13.5",
+  "scan": "le foncteur fibre associé (IV 6.1)",
+  "tex": "(\\hyperref[IV.def6.1]{6.1})",
+  "kind": "number",
+  "confidence": "low",
+  "fix": {
+   "old": "(\\hyperref[IV.def6.1]{6.1})",
+   "new": "(IV~\\hyperref[IV.def6.1]{6.1})"
+  },
+  "note": "The print gives the exposé numeral 'IV' in this internal reference; the edition drops it."
+ },
+ {
+  "page": "512",
+  "where": "Exercice 13.9, heading",
+  "scan": "Topos localement annelés ; cf. [9] pour plus de renseignements ... qui suit).",
+  "tex": "\\emph{Topos localement annelés} (\\cf [\\hyperref[IV.sec9]{9}] pour plus de",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\emph{Topos localement annelés} (\\cf [9] pour plus de renseignements dans l'ordre d'idées qui suit).",
+  "note": "The print has a closing parenthesis with no opening one (a ';' stands in its place). The TeX silently corrects it by adding '('."
+ },
+ {
+  "page": "513",
+  "where": "c) (i)",
+  "scan": "Pour tout X ∈ ob E' et s' ∈ O_{E'}(X'), posant X = f^{-1}(X), s = f^*(s'), on a X'_{s'} = f^{-1}(X_s)",
+  "tex": "Pour tout $X\\in \\ob E'$ et $s'\\in {\\Oo}_{E'}(X')$, posant\n$X=f^{-1}(X)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Pour tout $X'\\in \\ob E'$ et $s'\\in {\\Oo}_{E'}(X')$, posant $X=f^{-1}(X')$, $s=f^{\\ast}(s')$, on~a $X_{s}=f^{-1}(X'_{s'})$",
+  "note": "The primes are confused in the print: X should be X' in 'X ∈ ob E'' and in 'f^{-1}(X)', and the formula should read X_s = f^{-1}(X'_{s'}). The TeX keeps the printed reading."
+ },
+ {
+  "page": "513",
+  "where": "d)",
+  "scan": "espace topologique annelé (X,O_X) (IV 2.1)",
+  "tex": "(\\hyperref[IV.subsec2.1]{2.1})",
+  "kind": "number",
+  "confidence": "low",
+  "fix": {
+   "old": "(\\hyperref[IV.subsec2.1]{2.1})",
+   "new": "(IV~\\hyperref[IV.subsec2.1]{2.1})"
+  },
+  "note": "The print gives 'IV 2.1'; the edition drops the exposé numeral."
+ },
+ {
+  "page": "514",
+  "where": "e), end",
+  "scan": "(et même si E est le topos ponctuel), cf. 4.2.3).",
+  "tex": "\\cf\n\\hyperref[IV.subsubsec4.2.3]{4.2.3}.",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\cf 4.2.3.",
+  "note": "The print has a stray closing parenthesis after 4.2.3 (the '(Hint' parenthesis is already closed). The TeX silently drops it."
+ },
+ {
+  "page": "514",
+  "where": "f)",
+  "scan": "et d'une injection de k(p) dans k , où k(p) est le corps résiduel",
+  "tex": "dans $k$. où $k(p)$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $k$. où $k(p)$",
+   "new": "dans $k$, où $k(p)$"
+  },
+  "note": "The print has a comma here, not a full stop."
+ },
+ {
+  "page": "514",
+  "where": "f), end",
+  "scan": "(généralisant EGA I 2.4.4)",
+  "tex": "EGA 1 2.4.4",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "EGA 1 2.4.4",
+   "new": "EGA I 2.4.4"
+  },
+  "note": "The print has the Roman numeral I."
+ },
+ {
+  "page": "515",
+  "where": "diagram (14.2.1), left object",
+  "scan": "(_{A|U} 𝒰) — a handwritten script U",
+  "tex": "({}_{A|U}U)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "({}_{A|U}U)",
+  "note": "The topos is U throughout, so the script letter in the handwritten diagram is the print's slip. The TeX silently corrects it to U."
+ }
+]

@@ -1,0 +1,74 @@
+[
+ {
+  "page": "466",
+  "where": "7.1.3 a), definition of [[X_1|X]]",
+  "scan": "[[X_1|X]]_{[n]×[m]} = [X_1|S]_n",
+  "tex": "[[X_{1}|X]]_{[n]\\times[m]}=[X_{1}|S]_{n}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "[[X_{1}|X]]_{[n]\\times[m]}=[X_{1}|X]_{n}",
+  "note": "X_1 is over X, so [X_1|S] makes no sense here; the TeX keeps the printed reading."
+ },
+ {
+  "page": "466",
+  "where": "7.1.3 a), definition of [[X_1,X_2|X]]",
+  "scan": "[X_1|X]_n × [X_2|X]_n",
+  "tex": "[X_{1}|X]_{n}\\times\n[X_{2}|X]_{n}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "[X_{1}|X]_{n}\\times [X_{2}|X]_{m}",
+  "note": "The second factor should presumably carry the index m of [m]; the TeX keeps the printed n."
+ },
+ {
+  "page": "467",
+  "where": "b), Pour démontrer ceci",
+  "scan": "[[T_1,T_2|S]]_{[n]×[m]}",
+  "tex": "\\bigl[[T_{1},T_{2}]\\bigr]_{[n]\\times[m]}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigl[[T_{1},T_{2}]\\bigr]",
+   "new": "\\bigl[[T_{1},T_{2}|S]\\bigr]"
+  },
+  "note": "The TeX drops \"|S\"."
+ },
+ {
+  "page": "468",
+  "where": "Construction 7.1.4, the triple",
+  "scan": "(p_2,j_2,g_2)",
+  "tex": "(p_{2},j_{2}g_{2})",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(p_{2},j_{2}g_{2})",
+   "new": "(p_{2},j_{2},g_{2})"
+  },
+  "note": "The comma between j_2 and g_2 is missing."
+ },
+ {
+  "page": "468",
+  "where": "7.1.4.1, first line",
+  "scan": "(resp. (p_2,j_2,f_2)) une pseudo-compactification de ... (resp. de g : Z → Y)",
+  "tex": "(\\resp $(p_{2},j_{2},f_{2})$)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(p_{2},j_{2},g_{2})",
+  "note": "This is the pseudo-compactification of g (cf. the diagram, g_2), so f_2 should read g_2; the TeX keeps the printed f_2."
+ },
+ {
+  "page": "469",
+  "where": "7.1.4.2, On dispose d'un diagramme commutatif",
+  "scan": "On dispose d'un diagramme commutatif, où toutes les flèches se déduisent naturellement de",
+  "tex": "commutatif, où $Z_2''=\\fprod{T''_2}{Z'_2}{T'_2}$ et toutes les flèches",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "commutatif, où $Z_2''=\\fprod{T''_2}{Z'_2}{T'_2}$ et toutes",
+   "new": "commutatif, où toutes"
+  },
+  "note": "Editorial addition, not marked by \\sisi, that the print does not have."
+ }
+]

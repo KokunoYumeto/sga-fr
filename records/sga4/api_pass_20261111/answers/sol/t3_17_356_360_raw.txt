@@ -1,0 +1,84 @@
+{
+  "findings": [
+    {
+      "page": 357,
+      "where": "Lemma 5.2.5, lower-left entry of the second diagram",
+      "scan": "Lg_1^{\\ast}Lg_2^{\\ast}Rf_{!}",
+      "tex": "Lg_{\\sisi{1}{2}}^{\\ast}Lg^{\\ast}_{\\sisi{2}{1}} R f_{!}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Lg_2^{\\ast}Lg_1^{\\ast}Rf_{!}",
+      "note": "The printed pullbacks are in the wrong order: pullback reverses composition. The TeX corrects the indices through \\sisi."
+    },
+    {
+      "page": 357,
+      "where": "Lemma 5.2.5, lower-middle entry of the second diagram",
+      "scan": "Lg_1^{\\ast}Rf'_{!}Lg_2^{\\ast}",
+      "tex": "Lg^{\\ast}_{\\sisi{1}{2}} Rf'_{!}\nL\\sisi{g^\\ast_2}{g'^\\ast_1}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Lg_2^{\\ast}Rf'_{!}Lg'^{\\ast}_1",
+      "note": "The first pullback should be along g_2, and the last along g'_1, not g_2. The TeX corrects both printed errors through \\sisi."
+    },
+    {
+      "page": 357,
+      "where": "Lemma 5.2.5, lower-right entry of the second diagram",
+      "scan": "Rf''_{!}Lg'^{\\ast}_1Lg'^{\\ast}_2",
+      "tex": "Rf''_{!} Lg'^{\\ast}_{\\sisi{1}{2}}  L g'^{\\ast}_{\\sisi{2}{1}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Rf''_{!}Lg'^{\\ast}_2Lg'^{\\ast}_1",
+      "note": "The printed pullbacks are in the wrong order. The TeX corrects the indices through \\sisi."
+    },
+    {
+      "page": 357,
+      "where": "Sentence introducing Theorem 5.2.6",
+      "scan": "qui précèdent en le",
+      "tex": "qui précédent en le",
+      "kind": "accent",
+      "confidence": "high",
+      "fix": {
+        "old": "qui précédent en le",
+        "new": "qui précèdent en le"
+      },
+      "note": "The printed verb has a grave accent on its second accented e."
+    },
+    {
+      "page": 357,
+      "where": "Variants 5.2.7(i), final clause",
+      "scan": "commutent aux changement de base.",
+      "tex": "commutent aux changement de base.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "commutent aux changements de base.",
+      "note": "The print omits the plural s after « aux ». The TeX keeps this printed typo."
+    },
+    {
+      "page": 358,
+      "where": "Proof of Corollary 5.2.8.1, dimension bound",
+      "scan": "\\dim(\\bar{X})=\\dim(X)\\leq D",
+      "tex": "\\dim(\\bar{X})=\\dim(X)\\leq \\sisi{D}{d}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\dim(\\bar{X})=\\dim(X)\\leq d",
+      "note": "The capital D is a printed typo for the bound d in the corollary. The TeX corrects it through \\sisi."
+    },
+    {
+      "page": 360,
+      "where": "Last paragraph, reference to a component of the resolution",
+      "scan": "une quelconque composante de L_{\\ast}",
+      "tex": "une quelconque composante de $L\\sisi{_{\\ast}}{^\\ast}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "une quelconque composante de $L^{\\ast}$",
+      "note": "The resolution was introduced as L^{\\ast}; the print inadvertently switches to a subscript. The TeX corrects it through \\sisi."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 356: 0/0; 357: 1/4; 358: 0/1; 359: 0/0; 360: 0/1."
+}

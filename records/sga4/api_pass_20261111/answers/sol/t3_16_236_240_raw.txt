@@ -1,0 +1,113 @@
+{
+  "findings": [
+    {
+      "page": 236,
+      "where": "Début de l'extrait",
+      "scan": "La page commence par « d'où 4.2. ».",
+      "tex": "$$\n(R^{q}g_{\\cl \\ast})j_{!}F\\simeq (R^{q}\\bar{g}_{\\cl\n\\ast})\\bar{j}_{!}\\bar{F}{\\quoi},\n$$",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "L'affichage placé avant « d'où 4.2. » appartient à la page 235. Ce débordement initial n'est pas annoncé dans le commentaire de découpage."
+    },
+    {
+      "page": 236,
+      "where": "Lemme 4.3, première phrase",
+      "scan": "il suffit de le faire",
+      "tex": "il suffit de la faire",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "il suffit de la faire",
+        "new": "il suffit de le faire"
+      },
+      "note": "Le pronom imprimé est « le »."
+    },
+    {
+      "page": 237,
+      "where": "Diagramme des suites spectrales de Leray, terme supérieur gauche",
+      "scan": "\\varepsilon^{\\ast}(R^{p}h_{\\mathrm{et}\\ast})(R^{q}a_{\\mathrm{et}\\ast})F",
+      "tex": "\\varepsilon^{\\ast}(R^{p}h_{\\text{et}\\ast})(R^{q}a_{\\text{et}\\ast})F",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\varepsilon^{\\ast}(R^{p}b_{\\text{et}\\ast})(R^{q}a_{\\text{et}\\ast})F",
+      "note": "Le print porte bien h, conservé par le TeX. Il faut b : la suite spectrale concerne la composée \\bar{g}=b\\circ a."
+    },
+    {
+      "page": 237,
+      "where": "Diagramme des suites spectrales de Leray, terme inférieur gauche",
+      "scan": "(R^{p}b_{\\mathrm{cl}\\ast})(R^{q}a_{\\mathrm{cl}\\ast})\\varepsilon^{\\ast}F",
+      "tex": "(R^{p}b_{\\text{cl}\\ast}(R^{q}{a_{\\text{cl}\\ast}}))\\varepsilon^{\\ast}F",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "(R^{p}b_{\\text{cl}\\ast}(R^{q}{a_{\\text{cl}\\ast}}))",
+        "new": "(R^{p}b_{\\text{cl}\\ast})(R^{q}{a_{\\text{cl}\\ast}})"
+      },
+      "note": "Le print parenthèse séparément les deux facteurs ; le TeX emboîte le second dans le premier."
+    },
+    {
+      "page": 237,
+      "where": "Dernière phrase, après la suite exacte (*)",
+      "scan": "\\dim Y\\leq n",
+      "tex": "\\dim Y\\leq n",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\dim Y<n",
+      "note": "Le TeX conserve l'inégalité large imprimée. Pour le complément fermé Y de l'ouvert dense U, la borne utilisée par la récurrence est strictement inférieure à n."
+    },
+    {
+      "page": 239,
+      "where": "Fin de la démonstration du lemme 4.4, renvois à VIII",
+      "scan": "(VIII 5.5 et 5.8)",
+      "tex": "(\\hyperrefext[VIII][VIII.prop5.5]{5.5} et \\hyperrefext[VIII][VIII.rem5.8]{5.8})",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hyperrefext[VIII][VIII.rem5.8]{5.8}",
+        "new": "\\hyperref[VIII.rem5.8]{5.8}"
+      },
+      "note": "Le print ne répète pas « VIII » devant le second numéro ; le second \\hyperrefext l'ajoute."
+    },
+    {
+      "page": 239,
+      "where": "Paragraphe « Pour traiter ce dernier cas », renvoi sur la dimension cohomologique",
+      "scan": "IX 7.7",
+      "tex": "\\sisi{IX 7.7}{\\hyperrefext[IX][IX.cor5.7]{5.7}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperrefext[IX][IX.cor5.7]{5.7}",
+      "note": "Le renvoi imprimé est erroné : lire IX 5.7. Le TeX conserve exactement IX 7.7 dans la première branche de \\sisi et le corrige dans la seconde."
+    },
+    {
+      "page": 239,
+      "where": "Même paragraphe, parenthèse des deux références",
+      "scan": "dimension cohomologique (IX 7.7 et [2] 4.14.1))",
+      "tex": "dimension cohomologique (\\sisi{IX 7.7}{\\hyperrefext[IX][IX.cor5.7]{5.7}}) et \\cite{SGA4-16:2} 4.14.1))",
+      "kind": "punctuation",
+      "confidence": "high",
+      "fix": {
+        "old": "\\sisi{IX 7.7}{\\hyperrefext[IX][IX.cor5.7]{5.7}})",
+        "new": "\\sisi{IX 7.7}{\\hyperrefext[IX][IX.cor5.7]{5.7}}"
+      },
+      "note": "La parenthèse contenant les références reste ouverte après IX 7.7 dans le print. Le TeX la ferme prématurément et conserve ensuite les deux fermetures finales."
+    },
+    {
+      "page": 240,
+      "where": "Début du cas F constructible",
+      "scan": "La démonstration se fait par récurrence",
+      "tex": "Le démonstration se fait par récurrence",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Le démonstration",
+        "new": "La démonstration"
+      },
+      "note": "L'article imprimé est « La »."
+    }
+  ],
+  "coordinator": "236: 2/0; 237: 1/2; 238: 0/0; 239: 2/1; 240: 1/0 (normal/misprint).\nMarqueur p. 236 : commencer l'extrait à « d'où 4.2. » ; l'affichage initial appartient à la p. 235."
+}

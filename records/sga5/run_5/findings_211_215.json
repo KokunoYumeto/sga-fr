@@ -1,0 +1,856 @@
+[
+ {
+  "page": 211,
+  "where": "page start",
+  "scan": "p. 211 begins 'à S , peut se compléter en un diagramme du type (D_2)' , dans lequel t appartient à S :'",
+  "tex": "the folio-211 marker stands after '... dans lequel $s$ appartient à $S$,' (last line of folio 210's text)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 211 really begins at 'à $S$,' at the end of the last line of folio 210 ('\\item[(c')] Tout diagramme du type $(D_1)'$ ci-dessous, dans lequel $s$ appartient à $S$,'). Exact fix: python -I move_marker.py 5 211 'à $S$,' --before (bash, single quotes; simulated read-only on both layers: '... dans lequel $s$ appartient ' / marker / 'à $S$,' / 'peut se compléter ...'). Text not moved. The same marker problem, with the same command, is filed under page 210 in findings_206_210.json: apply it ONCE (a second run would move the marker back to the earlier 'appartient à $S$, peut' of Définition 2.3.1 (c))."
+ },
+ {
+  "page": 211,
+  "where": "(D_2)' diagram, bottom row",
+  "scan": "X --u--> Y, no full stop after Y",
+  "tex": "& X \\arrow[r,\"u\"'] & Y .",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"u\"'] & Y .",
+   "new": "\\arrow[r,\"u\"'] & Y"
+  },
+  "note": "The TeX adds a full stop at the end of the display; the print has none."
+ },
+ {
+  "page": 211,
+  "where": "item (d)' of Définition 2.3.2",
+  "scan": "(d)' Pour tout diagramme commutatif",
+  "tex": "\\item[(d')]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item[(d')]",
+   "new": "\\item[(d)']"
+  },
+  "note": "The print sets the prime outside the parenthesis, as in (D_1)' and (D_2)' on this page (and (a)', (b)', (c)' in the proofs on pp. 212-214). Folio 210's \\item[(a')]-(c') are outside these pages."
+ },
+ {
+  "page": 211,
+  "where": "(d)', end of the sentence",
+  "scan": "tel que t o f = t o g .",
+  "tex": "tel que $t\\circ f=t\\circ g$:",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "t\\circ f=t\\circ g$:",
+   "new": "t\\circ f=t\\circ g$."
+  },
+  "note": "Full stop in the print, colon in the TeX."
+ },
+ {
+  "page": 211,
+  "where": "(Delta) display, first arrow",
+  "scan": "(Delta) X' ------> X : the arrow X' -> X carries no label",
+  "tex": "X' \\arrow[r,\"s\"] & X",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "X' \\arrow[r,\"s\"]",
+   "new": "X' \\arrow[r]"
+  },
+  "note": "The TeX labels the arrow s; the print's arrow is unlabelled (s is only named in the text)."
+ },
+ {
+  "page": 211,
+  "where": "(Delta) display, end",
+  "scan": "... Y (no full stop)",
+  "tex": "\\arrow[r,shift right,\"g\"'] & Y .",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\"g\"'] & Y .",
+   "new": "\"g\"'] & Y"
+  },
+  "note": "The TeX adds a full stop at the end of the display; the print has none."
+ },
+ {
+  "page": 211,
+  "where": "2.3.3, first line",
+  "scan": "partie de Fl(E) with Fl underlined",
+  "tex": "partie de $\\Fl(\\cE)$",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "Supposons que $S$ soit une partie de $\\Fl",
+   "new": "Supposons que $S$ soit une partie de $\\underline{\\Fl}"
+  },
+  "note": "The print underlines Fl here and in 2.3.4 (and in the underlined statement 2.4.1), but not in 2.3.5 (p. 212) or 2.4.3 (p. 215); \\Fl is plain \\operatorname{Fl}."
+ },
+ {
+  "page": 211,
+  "where": "2.3.3, first line",
+  "scan": "Fl(E) , permettant un calcul de fractions à droite",
+  "tex": "$\\Fl(\\cE)$ permettant un calcul de fractions à droite",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\cE)$ permettant un calcul de fractions à droite",
+   "new": "(\\cE)$, permettant un calcul de fractions à droite"
+  },
+  "note": "The print has a comma after Fl(E); the TeX drops it."
+ },
+ {
+  "page": 211,
+  "where": "2.3.3, second sentence",
+  "scan": "de la partie (d) de (2.3.1) que",
+  "tex": "de la partie (d) de 2.3.1 que,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "partie (d) de 2.3.1",
+   "new": "partie (d) de (2.3.1)"
+  },
+  "note": "The print puts the reference in parentheses."
+ },
+ {
+  "page": 211,
+  "where": "2.3.3, second sentence",
+  "scan": "(2.3.1) que pour tout objet X de E",
+  "tex": "2.3.1 que, pour tout objet",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "que, pour tout objet",
+   "new": "que pour tout objet"
+  },
+  "note": "The TeX adds a comma after 'que'; the print has none."
+ },
+ {
+  "page": 211,
+  "where": "2.3.3, reference",
+  "scan": "(SGA 4 1 2.7) : digit one (same glyph as the 1 of (2.3.1)), not a roman I",
+  "tex": "(SGA 4 I 2.7)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "SGA 4 I 2.7",
+   "new": "SGA 4 1 2.7"
+  },
+  "corrected": "SGA 4 I 2.7",
+  "note": "The typist typed the digit 1 for the roman numeral of Exposé I (crop p211_sga4b.png against p211_231.png; elsewhere in the volume 'SGA 6 I 7.7' has a capital I). The TeX silently corrects; the fix restores the print."
+ },
+ {
+  "page": 211,
+  "where": "2.3.3, list",
+  "scan": "the two items begin with a hyphen: '- Les objets ...', '- Si X et Y ...'",
+  "tex": "\\begin{itemize} (default bullet labels)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\begin{itemize}",
+   "new": "\\begin{itemize}[label=-]"
+  },
+  "note": "The print's item labels are typewriter hyphens; the TeX's itemize prints bullets (enumitem is loaded and the file already uses [label=...])."
+ },
+ {
+  "page": 211,
+  "where": "2.3.3, first item",
+  "scan": "- Les objets de E_S",
+  "tex": "\\item les objets de $\\cE_S$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item les",
+   "new": "\\item Les"
+  },
+  "note": "Capital L in the print."
+ },
+ {
+  "page": 211,
+  "where": "2.3.3, first item, end",
+  "scan": "sont les objets de E ,",
+  "tex": "sont les objets de $\\cE$;",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "objets de $\\cE$;",
+   "new": "objets de $\\cE$,"
+  },
+  "note": "Comma in the print, semicolon in the TeX."
+ },
+ {
+  "page": 211,
+  "where": "2.3.3, second item",
+  "scan": "- Si X et Y sont deux objets de E ,",
+  "tex": "\\item si $X$ et $Y$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item si",
+   "new": "\\item Si"
+  },
+  "note": "Capital S in the print."
+ },
+ {
+  "page": 211,
+  "where": "2.3.3, display Hom_{E_S}(X,Y)",
+  "scan": "Lim (capital L) over a right arrow, (S/X)° below",
+  "tex": "\\varinjlim_{(S/X)^\\circ} (lower-case lim)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\varinjlim_{(S/X)^\\circ}",
+   "new": "\\mathop{\\underrightarrow{\\mathrm{Lim}}}\\limits_{(S/X)^\\circ}"
+  },
+  "note": "The print types 'Lim' with a capital L here (crop p211_lim.png); on p. 215 it types a lower-case 'lim' (\\varinjlim_r stands there)."
+ },
+ {
+  "page": 211,
+  "where": "2.3.4, first line",
+  "scan": "partie de Fl(E) with Fl underlined",
+  "tex": "partie de $\\Fl(\\cE)$",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "Soit maintenant $S$ une partie de $\\Fl",
+   "new": "Soit maintenant $S$ une partie de $\\underline{\\Fl}"
+  },
+  "note": "As in 2.3.3: the print underlines Fl."
+ },
+ {
+  "page": 211,
+  "where": "2.3.4, second sentence",
+  "scan": "le foncteur p_S : E --> E(S^-1) (lower-case p with descender)",
+  "tex": "le foncteur $P_S:\\cE\\to\\cE(S^{-1})$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "foncteur $P_S:",
+   "new": "foncteur $p_S:"
+  },
+  "note": "2.3.4 and 2.3.5 print a lower-case p_S (5 times, pp. 211-212; crops p211_pS1b.png, p211_pS2.png), 2.3.3 a capital P_S (twice, kept); the definition on p. 210 names the functor p and p. 217 has p_AR, so this is the print's notation, not a misprint. The TeX normalizes to P_S."
+ },
+ {
+  "page": 211,
+  "where": "2.3.4, second sentence",
+  "scan": "commute aux limites inductives finies (underlined)",
+  "tex": "commute aux limites inductives finies (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "commute aux limites inductives finies",
+   "new": "\\emph{commute aux limites inductives finies}"
+  },
+  "note": "Underlined in the print; the file writes underlined words as \\emph."
+ },
+ {
+  "page": 211,
+  "where": "2.3.4, last sentence",
+  "scan": "et p_S est un foncteur additif (lower-case p)",
+  "tex": "et $P_S$ est un foncteur additif",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "et $P_S$ est un foncteur additif",
+   "new": "et $p_S$ est un foncteur additif"
+  },
+  "note": "Lower-case p in the print (see the 2.3.4 finding above)."
+ },
+ {
+  "page": 212,
+  "where": "page start",
+  "scan": "p. 212 begins '2.3.5. Si la catégorie E est abélienne ...'",
+  "tex": "'\\subsubsection*{2.3.5}' and 'Si la' end folio 211's text; page 212's text begins 'catégorie $\\cE$ est abélienne'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 212 really begins at '\\subsubsection*{2.3.5}' (print p. 211 ends with 'et p_S est un foncteur additif.'). Exact fix: python -I move_marker.py 5 212 '\\subsubsection*{2.3.5}' --before (simulated read-only on both layers: the marker then stands on its own line after the blank line that ends 2.3.4, before '\\subsubsection*{2.3.5}' / 'Si la' / 'catégorie ...'). Text not moved."
+ },
+ {
+  "page": 212,
+  "where": "2.3.5, first line",
+  "scan": "si S est un partie de Fl(E) ('un', not 'une'; crop p212_unpartie.png)",
+  "tex": "si $S$ est une partie de $\\Fl(\\cE)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "est une partie",
+   "new": "est un partie"
+  },
+  "corrected": "est une partie",
+  "note": "Wrong article in the print; the TeX silently corrects. The fix restores the printed reading."
+ },
+ {
+  "page": 212,
+  "where": "2.3.5",
+  "scan": "le foncteur p_S est exact (lower-case p)",
+  "tex": "le foncteur $P_S$ est exact",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$P_S$ est exact",
+   "new": "$p_S$ est exact"
+  },
+  "note": "Lower-case p_S in the print, as in 2.3.4."
+ },
+ {
+  "page": 212,
+  "where": "2.3.5",
+  "scan": "le couple (p_S,E(S^-1)) (lower-case p)",
+  "tex": "le couple $(P_S,\\cE(S^{-1}))$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$(P_S,\\cE",
+   "new": "$(p_S,\\cE"
+  },
+  "note": "Lower-case p_S in the print."
+ },
+ {
+  "page": 212,
+  "where": "2.3.5, end",
+  "scan": "épaisse p_S^{-1}(0) (lower-case p)",
+  "tex": "épaisse $P_S^{-1}(0)$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$P_S^{-1}",
+   "new": "$p_S^{-1}"
+  },
+  "note": "Lower-case p_S in the print."
+ },
+ {
+  "page": 212,
+  "where": "2.3.5, last sentence",
+  "scan": "est un quotient de E par sous-catégorie abélienne épaisse (no article)",
+  "tex": "par sous-catégorie abélienne épaisse (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "par la sous-catégorie abélienne épaisse",
+  "note": "The article 'la' seems to be missing ('par la sous-catégorie ...'); the TeX keeps the printed reading. Low confidence: may be the author's wording."
+ },
+ {
+  "page": 212,
+  "where": "heading 2.4",
+  "scan": "2.4. La catégorie P_AR = Hom_AR(N°,C) .  (title ends with a full stop)",
+  "tex": "\\subsubsection*{2.4. La catégorie $P_{AR}=\\Hom_{AR}(\\NN^\\circ,\\cC)$}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\NN^\\circ,\\cC)$}",
+   "new": "(\\NN^\\circ,\\cC)$.}"
+  },
+  "note": "Underlined title ending with a full stop in the print; the TeX drops it."
+ },
+ {
+  "page": 212,
+  "where": "heading 2.4",
+  "scan": "Hom_AR(N°,C) with Hom underlined (functor category)",
+  "tex": "$P_{AR}=\\Hom_{AR}(\\NN^\\circ,\\cC)$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "P_{AR}=\\Hom",
+   "new": "P_{AR}=\\uHom"
+  },
+  "note": "The print underlines the Hom of the functor categories Hom(N°,C), Hom_AR(N°,C) on pp. 212-215 (as on pp. 207-208, where \\uHom was used). The underline of 'La catégorie' is the accepted title underline."
+ },
+ {
+  "page": 212,
+  "where": "2.4, first paragraph",
+  "scan": "(cf. 2.1) V_rX : X[r] --> X, with a capital V (cap height, crop p212_vrX2.png)",
+  "tex": "v_{rX}:X[r]\\longrightarrow X,",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "v_{rX}:X[r]",
+   "new": "V_{rX}:X[r]"
+  },
+  "corrected": "v_{rX}:X[r]",
+  "note": "Everywhere else (v_rY, v_rX, v_rZ, pp. 212-215) the print has a lower-case v; the defining occurrence has a capital V. The TeX silently writes v; the fix restores the print."
+ },
+ {
+  "page": 212,
+  "where": "Proposition 2.4.1",
+  "scan": "La partie / de / Fl / permet à la fois ... à gauche underlined; AR, (P) and the final full stop not underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "La partie $AR$ de $\\Fl(P)$ permet à la fois un calcul de fractions à droite et un calcul de fractions à gauche.",
+   "new": "\\emph{La partie} $AR$ \\emph{de} $\\underline{\\Fl}(P)$ \\emph{permet à la fois un calcul de fractions à droite et un calcul de fractions à gauche}."
+  },
+  "note": "Underlined statement (the TeX has no underline markup for statements in this exposé)."
+ },
+ {
+  "page": 212,
+  "where": "Preuve of 2.4.1",
+  "scan": "(a) => (a)'",
+  "tex": "(a) $\\Rightarrow$ (a')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(a) $\\Rightarrow$ (a')",
+   "new": "(a) $\\Rightarrow$ (a)'"
+  },
+  "note": "Prime outside the parenthesis in the print."
+ },
+ {
+  "page": 212,
+  "where": "Preuve of 2.4.1",
+  "scan": "(b) => (b)'",
+  "tex": "(b) $\\Rightarrow$ (b')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(b) $\\Rightarrow$ (b')",
+   "new": "(b) $\\Rightarrow$ (b)'"
+  },
+  "note": "Prime outside the parenthesis in the print."
+ },
+ {
+  "page": 212,
+  "where": "diagram (D_1)",
+  "scan": "the label (D_1) stands at the left of the diagram",
+  "tex": "no (D_1) label in the TeX diagram",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{tikzcd}[column sep=large,row sep=large]\n& Y[r]",
+   "new": "(D_1)\\quad\n\\begin{tikzcd}[column sep=large,row sep=large]\n& Y[r]"
+  },
+  "note": "Label written as for (Delta) on p. 211."
+ },
+ {
+  "page": 212,
+  "where": "diagram (D_1), bottom row",
+  "scan": "X -----> Y, no full stop",
+  "tex": "X \\arrow[r] & Y .",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "X \\arrow[r] & Y .",
+   "new": "X \\arrow[r] & Y"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 212,
+  "where": "sentence before (D_2)",
+  "scan": "d'où l'assertion.",
+  "tex": "d'où l'assertion:",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d'où l'assertion:",
+   "new": "d'où l'assertion."
+  },
+  "note": "Full stop in the print, colon in the TeX."
+ },
+ {
+  "page": 212,
+  "where": "diagram (D_2)",
+  "scan": "the label (D_2) stands at the left of the diagram",
+  "tex": "no (D_2) label in the TeX diagram",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{tikzcd}[column sep=large,row sep=large]\nX[r]",
+   "new": "(D_2)\\quad\n\\begin{tikzcd}[column sep=large,row sep=large]\nX[r]"
+  },
+  "note": "Label written as for (Delta) on p. 211."
+ },
+ {
+  "page": 212,
+  "where": "diagram (D_2), bottom row",
+  "scan": "X --u--> Y, no full stop",
+  "tex": "X \\arrow[r,\"u\"'] & Y .",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\"u\"'] & Y .",
+   "new": "\"u\"'] & Y"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 213,
+  "where": "page start",
+  "scan": "p. 213 begins with the display X =f,g=> Z[r] --v_rZ--> Z .",
+  "tex": "page 213's text begins '\\end{tikzcd}' / '\\]' / 'Montrons (d). Soit un diagramme commutatif :'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 213 really begins at the '\\[' that opens 'X \\arrow[r,shift left,\"f\"] ... & Z .'; the close of the (D_2) display and 'Montrons (d). Soit un diagramme commutatif :' are the end of print p. 212. Exact fix: python -I move_marker.py 5 213 '\\[' (the first '\\[' after the marker; simulated read-only on both layers: 'Montrons (d). Soit un diagramme commutatif :' / marker / '\\['). Text not moved."
+ },
+ {
+  "page": 213,
+  "where": "Appliquant ...",
+  "scan": "la \"translation\" par r\" (quotation marks round translation)",
+  "tex": "la translation par $r$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "la translation",
+   "new": "la ``translation''"
+  },
+  "note": "The TeX drops the print's quotation marks (written ``...'' elsewhere in Exposé V)."
+ },
+ {
+  "page": 213,
+  "where": "Appliquant ...",
+  "scan": "par r\" , on en déduit : a third, unpaired closing quote after r",
+  "tex": "par $r$, on en déduit",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "par $r$,",
+   "new": "par $r$'',"
+  },
+  "corrected": "par $r$,",
+  "note": "Unbalanced quotation marks in the print (either 'translation' or 'translation par r' was meant to be quoted). The TeX omits the stray quote together with the pair; apply after or independently of the quotation-mark fix (disjoint strings)."
+ },
+ {
+  "page": 213,
+  "where": "Appliquant ...",
+  "scan": "on en déduit un diagramme commutatif :",
+  "tex": "on en déduit un diagramme commutatif",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "déduit un diagramme commutatif",
+   "new": "déduit un diagramme commutatif:"
+  },
+  "note": "Colon in the print, none in the TeX."
+ },
+ {
+  "page": 213,
+  "where": "Montrons (c')",
+  "scan": "Remarquons tout d'abord que si Y désigne",
+  "tex": "Remarquons tout d'abord que, si",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d'abord que, si",
+   "new": "d'abord que si"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 213,
+  "where": "Montrons (c')",
+  "scan": "et tel que pour tout objet X de P ,",
+  "tex": "et tel que, pour tout objet",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "et tel que, pour",
+   "new": "et tel que pour"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 213,
+  "where": "Montrons (c')",
+  "scan": "l'homomorphisme de translation par r :",
+  "tex": "l'homomorphisme de translation par $r$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de translation par $r$",
+   "new": "de translation par $r$:"
+  },
+  "note": "Colon before the display in the print, none in the TeX."
+ },
+ {
+  "page": 213,
+  "where": "definition of T",
+  "scan": "T_n est l'objet nul de C pour n >= r-1 et Y_{n-r} sinon",
+  "tex": "pour $n\\ge r-1$ et $Y_{n-r}$ sinon (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$n\\le r-1$",
+  "note": "Since X[r] = (X_{n+r}) (2.1), Y = T[r] needs T_n = Y_{n-r} for n >= r and T_n = 0 for n <= r-1; with the printed >= the 'sinon' case has negative indices. The TeX keeps the printed reading. Correct together with the display w_n = 0 pour n >= r-1 below."
+ },
+ {
+  "page": 213,
+  "where": "display w_n",
+  "scan": "w_n = 0 pour n >= r-1 , w_n = u_{n-r} .",
+  "tex": "w_n=0\\quad\\text{pour } n\\ge r-1,",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "n\\le r-1",
+  "note": "Same slip as in the definition of T_n just above (w_n : T_{n+1} -> T_n is zero for n <= r-1). The TeX keeps the printed reading. Correct both or neither."
+ },
+ {
+  "page": 213,
+  "where": "last sentence",
+  "scan": "dans l'énoncé de (c)' :",
+  "tex": "dans l'énoncé de (c'):",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "l'énoncé de (c'):",
+   "new": "l'énoncé de (c)':"
+  },
+  "note": "Prime outside the parenthesis here; 'Montrons (c')' earlier on this page has it inside in the print, as in the TeX."
+ },
+ {
+  "page": 214,
+  "where": "first diagram",
+  "scan": "X[r] --u'--> Y', v_rX down to X, no full stop",
+  "tex": "& Y'\\\\ X .",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Y'\\\\\nX .",
+   "new": "Y'\\\\\nX"
+  },
+  "note": "The TeX adds a full stop after X."
+ },
+ {
+  "page": 214,
+  "where": "display after 'l'application canonique'",
+  "scan": "Hom_P(X,Y') --> Hom_P(X[r], Y')",
+  "tex": "\\Hom_P(X,Y')\\longrightarrow\\Hom_P(X[r],Y') (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom_P(X,Y)",
+  "note": "The bijection used (u is the unique morphism X -> Y with u' = u[r]; translation as on p. 213) is Hom_P(X,Y) -> Hom_P(X[r],Y'); the printed Y' in the source is a slip. The diplomatic TeX keeps the printed reading; the corrected layer already reads \\Hom_P(X,Y)."
+ },
+ {
+  "page": 214,
+  "where": "square, bottom row",
+  "scan": "X --u--> Y, no full stop",
+  "tex": "X \\arrow[r,\"u\"'] & Y .",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\"u\"'] & Y .",
+   "new": "\"u\"'] & Y"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 214,
+  "where": "Montrons (d)'",
+  "scan": "Montrons (d)' .",
+  "tex": "Montrons (d').",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "Montrons (d').",
+   "new": "Montrons (d)'."
+  },
+  "note": "Prime outside the parenthesis in the print."
+ },
+ {
+  "page": 214,
+  "where": "Montrons (d)', first sentence",
+  "scan": "tel que w o f = w o g .",
+  "tex": "tel que $w\\circ f=w\\circ g$:",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "w\\circ f=w\\circ g$:",
+   "new": "w\\circ f=w\\circ g$."
+  },
+  "note": "Full stop in the print, colon in the TeX."
+ },
+ {
+  "page": 214,
+  "where": "second square, bottom row",
+  "scan": "X =f,g=> Y, no full stop",
+  "tex": "& Y . (before 'En particulier')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "& Y .\n\\end{tikzcd}\n\\]\nEn particulier",
+   "new": "& Y\n\\end{tikzcd}\n\\]\nEn particulier"
+  },
+  "note": "The TeX adds a full stop; the print has none (the display X[r] -> X => Y . above does have one and keeps it)."
+ },
+ {
+  "page": 214,
+  "where": "last sentence",
+  "scan": "de la démonstration de (c)' ,",
+  "tex": "de la démonstration de (c'),",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "démonstration de (c')",
+   "new": "démonstration de (c)'"
+  },
+  "note": "Prime outside the parenthesis in the print."
+ },
+ {
+  "page": 215,
+  "where": "first sentence",
+  "scan": "des morphismes v_rT o f de v_rT o g sont égaux respectivement à ...",
+  "tex": "des morphismes $v_{rT}\\circ f$ de $v_{rT}\\circ g$ (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$v_{rT}\\circ f$ et $v_{rT}\\circ g$",
+  "note": "'respectivement' needs two morphisms: 'de' is a slip for 'et'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 215,
+  "where": "first sentence",
+  "scan": "égaux respectivement à v_rY o f et v_rY o g[r] (no [r] after the first f)",
+  "tex": "à $v_{rY}\\circ f$ et $v_{rY}\\circ g[r]$ (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$v_{rY}\\circ f[r]$",
+  "note": "The translate of v_rT o f is v_rY o f[r] (T[r] = Y), and v_rY o f[r] = v_rY o g[r] is the equality of p. 214 that gives 'donc égaux'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 215,
+  "where": "Définition 2.4.2, first sentence",
+  "scan": "Soit / une catégorie abélienne. On appelle catégorie des systèmes projectifs de / à translations près, et on note underlined; C not underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $\\cC$ une catégorie abélienne. On appelle catégorie des systèmes projectifs de $\\cC$ à translations près, et on note $\\Hom",
+   "new": "\\emph{Soit} $\\cC$ \\emph{une catégorie abélienne. On appelle catégorie des systèmes projectifs de} $\\cC$ \\emph{à translations près, et on note} $\\uHom"
+  },
+  "note": "Underlined statement; the Hom of the functor category Hom_AR(N°,C) is underlined too (\\uHom, as on pp. 207-208)."
+ },
+ {
+  "page": 215,
+  "where": "Définition 2.4.2",
+  "scan": "et on note Hom_AR(N°, C) la catégorie décrite ci-dessous : (no comma)",
+  "tex": "et on note $\\Hom_{AR}(\\NN^\\circ,\\cC)$, la catégorie",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "_{AR}(\\NN^\\circ,\\cC)$, ",
+   "new": "_{AR}(\\NN^\\circ,\\cC)$ "
+  },
+  "note": "The TeX adds a comma. (The C of this Hom_AR(N°, C) is a plain typed C, a typist variant of the script C: not reported, as the decision of item 78.)"
+ },
+ {
+  "page": 215,
+  "where": "Définition 2.4.2",
+  "scan": "la catégorie décrite ci-dessous (underlined) :",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "la catégorie décrite ci-dessous:",
+   "new": "\\emph{la catégorie décrite ci-dessous}:"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 215,
+  "where": "Définition 2.4.2 (i)",
+  "scan": "Les objets de / sont les objets de underlined (and Hom)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Les objets de $\\Hom_{AR}(\\NN^\\circ,\\cC)$ sont les objets de $\\Hom(\\NN^\\circ,\\cC)$.",
+   "new": "\\item \\emph{Les objets de} $\\uHom_{AR}(\\NN^\\circ,\\cC)$ \\emph{sont les objets de} $\\uHom(\\NN^\\circ,\\cC)$."
+  },
+  "note": "Underlined statement, with the underlined Hom of both functor categories (\\uHom); the final full stop is not underlined."
+ },
+ {
+  "page": 215,
+  "where": "Définition 2.4.2 (ii)",
+  "scan": "Si / et / sont deux objets de / un morphisme de / dans / dans la catégorie / est un élément de l'ensemble underlined; X, Y and the comma not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Si $X$ et $Y$ sont deux objets de $\\Hom(\\NN^\\circ,\\cC)$, un morphisme de $X$ dans $Y$ dans la catégorie $\\Hom_{AR}(\\NN^\\circ,\\cC)$ est un élément de l'ensemble",
+   "new": "\\item \\emph{Si} $X$ \\emph{et} $Y$ \\emph{sont deux objets de} $\\uHom(\\NN^\\circ,\\cC)$, \\emph{un morphisme de} $X$ \\emph{dans} $Y$ \\emph{dans la catégorie} $\\uHom_{AR}(\\NN^\\circ,\\cC)$ \\emph{est un élément de l'ensemble}"
+  },
+  "note": "Underlined statement, with the underlined Hom of the functor categories (\\uHom)."
+ },
+ {
+  "page": 215,
+  "where": "Définition 2.4.2 (ii), after the display",
+  "scan": "où, pour tout couple / d'entiers avec / l'application underlined; (r,s), s >= r and the comma not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où, pour tout couple $(r,s)$ d'entiers avec $s\\ge r$, l'application",
+   "new": "\\emph{où, pour tout couple} $(r,s)$ \\emph{d'entiers avec} $s\\ge r$, \\emph{l'application}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 215,
+  "where": "Définition 2.4.2 (ii)",
+  "scan": "provient du morphisme canonique (underlined)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "provient du morphisme canonique",
+   "new": "\\emph{provient du morphisme canonique}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 215,
+  "where": "Dans la suite ...",
+  "scan": "P = Hom(N°,C) et P_AR = Hom_AR(N°,C) .",
+  "tex": "P=\\Hom(\\NN^\\circ,\\cC),\\qquad P_{AR}=\\Hom_{AR}(\\NN^\\circ,\\cC).",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": ",\\qquad P",
+   "new": "\\quad\\text{et}\\quad P"
+  },
+  "note": "The print joins the two definitions with 'et' (run in the text); the TeX replaces the word by a comma (display against run-in text is not reported)."
+ },
+ {
+  "page": 215,
+  "where": "Dans la suite ...",
+  "scan": "P = Hom(N°,C) with Hom underlined",
+  "tex": "P=\\Hom(\\NN^\\circ,\\cC)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "P=\\Hom(",
+   "new": "P=\\uHom("
+  },
+  "note": "The print underlines the Hom of the functor categories Hom(N°,C), Hom_AR(N°,C) on pp. 212-215 (as on p. 207, written \\uHom there); the Hom of morphism sets (Hom_AR(X,Y), Hom(X[r],Y), Hom_P) is plain in print and TeX."
+ },
+ {
+  "page": 215,
+  "where": "Dans la suite ...",
+  "scan": "P_AR = Hom_AR(N°,C) with Hom underlined",
+  "tex": "P_{AR}=\\Hom_{AR}(\\NN^\\circ,\\cC)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "_{AR}=\\Hom_{AR}",
+   "new": "_{AR}=\\uHom_{AR}"
+  },
+  "note": "As the preceding finding."
+ },
+ {
+  "page": 215,
+  "where": "2.4.3",
+  "scan": "Ceci nous permet (2.3.3) de considérer la catégorie :",
+  "tex": "de considérer la catégorie",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de considérer la catégorie",
+   "new": "de considérer la catégorie:"
+  },
+  "note": "Colon before the display in the print, none in the TeX."
+ }
+]

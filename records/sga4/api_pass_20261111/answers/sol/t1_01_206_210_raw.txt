@@ -1,0 +1,84 @@
+{
+  "findings": [
+    {
+      "page": 206,
+      "where": "Paragraphe suivant la démonstration du corollaire 1",
+      "scan": "cor. 1",
+      "tex": "cor. l",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "cor. l",
+        "new": "cor. 1"
+      },
+      "note": "Le renvoi imprimé est au corollaire 1, non à la lettre l."
+    },
+    {
+      "page": 206,
+      "where": "Même phrase, « Il résulte du cor. 1… »",
+      "scan": "qu'un univers",
+      "tex": "qu'on univers",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "qu'on univers",
+        "new": "qu'un univers"
+      },
+      "note": "L'imprimé porte bien « qu'un »."
+    },
+    {
+      "page": 207,
+      "where": "Fin du bloc TeX, titre du lemme 1",
+      "scan": "La page finit par « du lemme suivant : ». Le titre « LEMME 1. » ouvre la p. 208.",
+      "tex": "\\begin{enonce*}{LEMME 1}",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le bloc de la p. 207 contient le titre appartenant à la p. 208, sans chevauchement annoncé dans son commentaire initial. La p. 207 s'arrête après « du lemme suivant: »."
+    },
+    {
+      "page": 208,
+      "where": "Preuve du lemme 1, après le choix de l'élément maximal h",
+      "scan": "$g'\\in S(g)$",
+      "tex": "$g'\\in S(g)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$g'\\in S(h)$",
+      "note": "Coquille de l'imprimé conservée par le TeX : il faut considérer les successeurs de l'élément maximal h qui vient d'être choisi."
+    },
+    {
+      "page": 209,
+      "where": "Construction de l'application θ à partir de la fonction φ",
+      "scan": "du lemme 2",
+      "tex": "du lemme 2",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "du lemme 1",
+      "note": "Renvoi erroné de l'imprimé conservé par le TeX. La fonction φ est celle du lemme 1, p. 208 ; le lemme 2, p. 210, concerne l'existence d'un ensemble artinien de cardinal donné."
+    },
+    {
+      "page": 209,
+      "where": "Mot « Reste » à la fin du bloc TeX",
+      "scan": "La p. 209 finit après la chaîne d'inégalités ; la p. 210 commence par « Reste à voir qu'on a… ».",
+      "tex": "Reste",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le mot « Reste » appartient à la p. 210, dont le bloc TeX commence seulement par « à voir ». Ce chevauchement n'est pas annoncé dans les commentaires initiaux."
+    },
+    {
+      "page": 210,
+      "where": "Preuve du lemme 2, cas où le cardinal a un prédécesseur",
+      "scan": "Si c à un prédécesseur",
+      "tex": "Si $\\sheaf{\\sheaf{c}}$ à un prédécesseur",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Si $\\sheaf{\\sheaf{c}}$ a un prédécesseur",
+      "note": "L'imprimé emploie « à » pour le verbe « a » ; le TeX conserve cette coquille."
+    }
+  ],
+  "coordinator": "206 : 2/0 ; 207 : 1/0 ; 208 : 0/1 ; 209 : 1/1 ; 210 : 0/1 (normal/misprint).\nDécoupage 207/208 : rattacher le titre « LEMME 1 » à la p. 208 ; la p. 207 finit après « du lemme suivant: ».\nDécoupage 209/210 : rattacher « Reste » au début de la p. 210 ; la p. 209 finit après la dernière chaîne d'inégalités."
+}

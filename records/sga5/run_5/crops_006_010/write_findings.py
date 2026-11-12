@@ -1,0 +1,207 @@
+import json
+import pathlib
+
+run = pathlib.Path(r"C:/Users/user/Documents/sga_scan_check_20261105/run_5")
+F = []
+
+# ---------------- page 6 ----------------
+F.append({
+ "page": 6,
+ "where": "proof of Lemme 1.5.1, '(cf. par exemple [H] 1.7.6)'",
+ "scan": "[H] 1.7.6 with the digit 1 (flag, no foot: the same glyph as the 1 of '1.5' below), as in the heading of Proposition 1.3 on p. 4",
+ "tex": "(cf.\\ par exemple [H]~1.7.6)",
+ "kind": "misprint_in_print",
+ "confidence": "low",
+ "fix": None,
+ "corrected": "[H]~I.7.6",
+ "note": "Same misprint as p. 4 (MISPRINTS_5.json): Hartshorne, Residues and Duality, I.7.6. The TeX keeps the printed '1.7.6'. Correct both or neither in the corrected edition. s5.tex line 406."
+})
+F.append({
+ "page": 6,
+ "where": "start of the proof of (1.5), 'Preuve de (1.5) : Supposons'",
+ "scan": "Preuve de (1.5) :  underlined label followed by ' :', no full stop; the underline runs under 'Preuve de (1.5' and stops before the closing parenthesis",
+ "tex": "\\emph{Preuve de (1.5).} Supposons",
+ "kind": "punctuation",
+ "confidence": "high",
+ "fix": {"old": "\\emph{Preuve de (1.5).}", "new": "\\emph{Preuve de (1.5)} :"},
+ "note": "Same form as the global '\\emph{Preuve} :' fix. The closing parenthesis is left inside the \\emph (the extent of underlines over punctuation is a global question). s5.tex line 408."
+})
+F.append({
+ "page": 6,
+ "where": "last paragraph, 'L'hypothèse cd_L(X) <= N'",
+ "scan": "the subscript of cd is the double-struck L (doubled stem with a foot), as on p. 5",
+ "tex": "$\\cd_{\\mathbf{n}}(X) \\leqslant N$",
+ "kind": "symbol",
+ "confidence": "high",
+ "fix": {"old": "\\cd_{\\mathbf{n}}(X)", "new": "\\cd_{\\mathbb{L}}(X)"},
+ "note": "Wrong letter (the set of primes L of Proposition 1.5), not a font variant. s5.tex line 412, listed in the pilot notes."
+})
+F.append({
+ "page": 6,
+ "where": "dim.inj and dim.q.inj throughout pp. 6-7 (Lemme 1.5.1 (i), proof of (1.5), Proposition 1.6 and its proof)",
+ "scan": "'dim.inj(K)', 'dim.q.inj(K)': the whole name typed upright, like 'dim'",
+ "tex": "$\\dim.\\,inj(K) \\leqslant N$, $\\dim.\\,q.\\,inj(K) \\leqslant N'$: 'dim' upright (\\dim), 'q' and 'inj' in math italic",
+ "kind": "font",
+ "confidence": "medium",
+ "fix": None,
+ "note": "Convention of Exposé I (about 20 times, s5.tex lines 379-995; e.g. 399 '\\dim.\\,inj(K)', 408 '\\dim.\\,q.\\,inj(K)', 421 '\\dim.\\,q.\\,inj(\\R^{!}f(K))'), while the later exposés of the same file write \\dim.\\mathrm{q.inj} and \\dim.\\mathrm{inj} (lines 1656 ff.). One upright pass: '\\dim.\\,q.\\,inj' -> '\\dim.\\mathrm{q.inj}', '\\dim.\\,inj' -> '\\dim.\\mathrm{inj}'. Not listed per occurrence."
+})
+
+# ---------------- page 7 ----------------
+F.append({
+ "page": 7,
+ "where": "Proposition 1.6, 'Alors, pour N ∈ Z , on a'",
+ "scan": "plain typewriter Z (one diagonal, clean impression); the Z of 'N ∈ Z' in Lemme 1.5.1 (p. 6) and of Z/nZ (p. 2) is double-struck",
+ "tex": "$N \\in \\Z$, on a",
+ "kind": "misprint_in_print",
+ "confidence": "medium",
+ "fix": {"old": "$N \\in \\Z$", "new": "$N \\in Z$"},
+ "corrected": "$N \\in \\Z$",
+ "note": "The typist's plain Z; the TeX silently gives the double-struck Z (\\Z = \\mathbb{Z}). Diplomatic layer only; the corrected layer keeps \\Z. Same as p. 8 'i ∈ Z': both or neither (as the plain Q of SGA 7 II pp. 416-418). s5.tex line 419."
+})
+
+# ---------------- page 8 ----------------
+F.append({
+ "page": 8,
+ "where": "the underlined sentence after the canonical homomorphism, 'A partir de maintenant, ... localement noethériens.'",
+ "scan": "typed in the ordinary weight of the page, underlined; no overstrike or bold",
+ "tex": "\\textbf{\\underline{À partir de maintenant, ... seront,}}\\\\[-0.1em]\\textbf{\\underline{sauf mention expresse du contraire, supposés localement noethériens.}}",
+ "kind": "font",
+ "confidence": "medium",
+ "fix": {"old": "\\textbf{\\underline{À partir de maintenant, tous les préschémas considérés seront,}}\\\\[-0.1em]\\textbf{\\underline{sauf mention expresse du contraire, supposés localement noethériens.}}",
+         "new": "\\underline{À partir de maintenant, tous les préschémas considérés seront,}\\\\[-0.1em]\\underline{sauf mention expresse du contraire, supposés localement noethériens.}"},
+ "note": "An underlined sentence of the text, not a title, so not covered by the accepted \\textbf for underlined titles; drop the fix if the coordinator counts it as one. The accented 'À' for the print's 'A' stays (global rule). s5.tex line 434."
+})
+F.append({
+ "page": 8,
+ "where": "Définition 1.7, 'est dualisant si les conditions suivantes sont vérifiées'",
+ "scan": "dualisant is not underlined (clean baseline, no trace of a rule; the heading 'Définition 1.7' above is underlined)",
+ "tex": "est \\emph{dualisant} si",
+ "kind": "underline",
+ "confidence": "high",
+ "fix": {"old": "\\emph{dualisant}", "new": "dualisant"},
+ "note": "s5.tex line 437."
+})
+F.append({
+ "page": 8,
+ "where": "Remarques 1.8 a), (ii bis): 'et tout i ∈ Z ,'",
+ "scan": "plain typewriter Z (one diagonal, clean impression), as on p. 7",
+ "tex": "tout $i \\in \\Z$,",
+ "kind": "misprint_in_print",
+ "confidence": "medium",
+ "fix": {"old": "$i \\in \\Z$", "new": "$i \\in Z$"},
+ "corrected": "$i \\in \\Z$",
+ "note": "Apply with the p. 7 'N ∈ Z' (both or neither); diplomatic layer only. s5.tex line 448."
+})
+
+# ---------------- page 9 ----------------
+F.append({
+ "page": 9,
+ "where": "first line, end of Remarques 1.8 b): 'pureté en particulier si X est un excellent préschéma de caractéristique nulle).'",
+ "scan": "no opening parenthesis: one ordinary word space between 'pureté' and 'en', and none at the end of p. 8 ('... et de la'); the closing parenthesis after 'nulle' is printed",
+ "tex": "pureté (en particulier si $X$",
+ "kind": "misprint_in_print",
+ "confidence": "high",
+ "fix": {"old": "pureté (en particulier", "new": "pureté en particulier"},
+ "corrected": "pureté (en particulier",
+ "note": "The TeX silently supplies the missing '('. s5.tex line 452."
+})
+F.append({
+ "page": 9,
+ "where": "Remarques 1.8 c), 'la condition (iii) équivaut à (iii bis) ; tout A_X-Module constructible F'",
+ "scan": "semicolon after (iii bis): ring dot over a dot with a comma tail, the same glyph as the semicolons of p. 8 ('finie;', '(X) ;'); a colon in this typescript is two round dots ('(ii bis) :' on p. 8)",
+ "tex": "(iii~bis) : tout",
+ "kind": "misprint_in_print",
+ "confidence": "medium",
+ "fix": {"old": "(iii~bis) : tout", "new": "(iii~bis) ; tout"},
+ "corrected": "(iii~bis) : tout",
+ "note": "The colon introduces the condition, as with '(ii bis) :' on p. 8; the TeX silently corrects. s5.tex line 454."
+})
+F.append({
+ "page": 9,
+ "where": "'la relation Tor_i(F,G) = 0 pour i > N et tout A_X-Module F'",
+ "scan": "hand-drawn '>' with no bar under it (the same sign as 'n > N' on p. 6, where the TeX has >)",
+ "tex": "pour $i \\geqslant N$ et tout",
+ "kind": "symbol",
+ "confidence": "high",
+ "fix": {"old": "$i \\geqslant N$", "new": "$i > N$"},
+ "note": "Tor-dimension <= N means Tor_i = 0 for i > N, as printed. s5.tex line 469."
+})
+
+# ---------------- page 10 ----------------
+F.append({
+ "page": 10,
+ "where": "proof of Lemme 1.9, 'L'une ou l'autre des hypothèses sur (F,G) implique quela suite spectrale'",
+ "scan": "quela: no space at all between 'que' and 'la' (typed at the normal pitch; the space bar was missed)",
+ "tex": "implique que la suite spectrale",
+ "kind": "misprint_in_print",
+ "confidence": "high",
+ "fix": {"old": "implique que la suite", "new": "implique quela suite"},
+ "corrected": "implique que la suite",
+ "note": "The TeX silently restores the space. s5.tex line 479."
+})
+F.append({
+ "page": 10,
+ "where": "proof of Lemme 1.9, the label",
+ "scan": "Preuve :  underlined, followed by ' :' and run into 'L'assertion b) résulte trivialement de (SGAA IX 2.4).'",
+ "tex": "\\begin{proof}[Preuve] (amsthm: italic 'Preuve.' and, at \\end{proof}, a QED box)",
+ "kind": "other",
+ "confidence": "high",
+ "fix": {"old": "\\begin{proof}[Preuve]\nL'assertion b)", "new": "\\emph{Preuve} : L'assertion b)"},
+ "note": "Apply together with the next fix (the \\end{proof}); either alone breaks the LaTeX. The environment is a convention of Exposé I: 17 \\begin{proof}[...] in s5.tex (lines 478-1006, e.g. 478 (this page), 513, 554; 959 has [Démonstration]), not reached by the global '\\emph{Preuve} :' pass."
+})
+F.append({
+ "page": 10,
+ "where": "end of the proof of Lemme 1.9",
+ "scan": "the proof ends with 'sont constructibles.'; no end-of-proof mark",
+ "tex": "sont constructibles.\n\\end{proof}",
+ "kind": "extra",
+ "confidence": "high",
+ "fix": {"old": "sont constructibles.\n\\end{proof}", "new": "sont constructibles."},
+ "note": "Removes the QED box that the print does not have. Apply together with the previous fix."
+})
+F.append({
+ "page": 10,
+ "where": "proof of Lemme 1.9, 'On a F ⊗^L G ≃ F' ⊗ G'",
+ "scan": "a hand-drawn tilde over a plain bar (≃), no arrowhead at either end; the isomorphism arrows of p. 7 and of Proposition 1.11 below have a drawn head",
+ "tex": "F \\mathop{\\otimes}\\limits^{\\mathrm{L}} G \\xleftarrow{\\sim} F' \\otimes G",
+ "kind": "symbol",
+ "confidence": "high",
+ "fix": {"old": "G \\xleftarrow{\\sim} F'", "new": "G \\simeq F'"},
+ "note": "The TeX supplies a left arrow (the direction of the comparison map) that the print does not draw. s5.tex line 483."
+})
+F.append({
+ "page": 10,
+ "where": "end of the page: '\\item[b)] Si $K$' after the display of Proposition 1.11 a)",
+ "scan": "p. 10 ends with the display D_K(F ⊗^L G) ≃> R Hom(F , D_K(G)) . (nothing below it); p. 11 begins 'b) Si K satisfait aux conditions (i) et (ii) de (1.7), on a l'implication'",
+ "tex": "'\\item[b)] Si $K$' (s5.tex line 496) is the last line of page_010.tex; the folio-11 marker (line 497) sits between 'Si $K$' and 'satisfait aux conditions'",
+ "kind": "marker",
+ "confidence": "high",
+ "fix": None,
+ "note": "Page 11 really begins at s5.tex line 496 '\\item[b)] Si $K$'. Exact fix: move the folio-11 marker line from line 497 to just before line 496 (python -I move_marker.py 5 11 '\\item[b)] Si $K$' --before; single quotes keep the shell from expanding $K). Text not moved; the words agree with the print of p. 11."
+})
+
+out = run / "findings_006_010.json"
+out.write_text(json.dumps(F, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
+
+# check: every fix's old occurs exactly once in its page file
+ok = True
+for x in F:
+    if x["fix"] is None:
+        continue
+    t = (run / "b006_010" / f"page_{x['page']:03d}.tex").read_text(encoding="utf-8")
+    n = t.count(x["fix"]["old"])
+    if n != 1:
+        ok = False
+        print("COUNT", n, x["page"], repr(x["fix"]["old"]))
+    if "%%%%%%%%%%" in x["fix"]["old"] or "%%%%%%%%%%" in x["fix"]["new"]:
+        ok = False
+        print("MARKER IN FIX", x["page"])
+    if x["kind"] == "misprint_in_print" and "corrected" not in x:
+        ok = False
+        print("NO CORRECTED", x["page"])
+print("all unique" if ok else "PROBLEMS")
+from collections import Counter
+c = Counter((x["page"], x["kind"] == "misprint_in_print") for x in F)
+for p in range(6, 11):
+    print(p, c[(p, False)], "/", c[(p, True)])

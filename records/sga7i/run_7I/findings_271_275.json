@@ -1,0 +1,86 @@
+[
+ {
+  "page": 271,
+  "where": "Corollaire 4.8, second line of the statement",
+  "scan": "B (nécessairement lisse et connexe) with the underline under the words only; it starts after '(' and stops before ')'",
+  "tex": "\\underline{(nécessairement lisse et connexe)}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{(nécessairement lisse et connexe)}",
+   "new": "(\\underline{nécessairement lisse et connexe})"
+  },
+  "note": "Parentheses outside the underline in the typescript."
+ },
+ {
+  "page": 271,
+  "where": "display after 'Alors le foncteur de catégories rigides'",
+  "scan": "BIEXT(A,B,G_m) --> BIEXT(P,Q;G_m): comma before G_m in the source",
+  "tex": "\\mathrm{BIEXT}(A,B,\\underline{G}_m)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\mathrm{BIEXT}(A,B;\\underline{G}_m)",
+  "note": "Typing slip: semicolon before the coefficient group everywhere else (target BIEXT(P,Q;G_m), (4.8.1) Biext^1(A,B;G_m)). The TeX keeps the printed comma."
+ },
+ {
+  "page": 271,
+  "where": "statement of Corollaire 4.8, line before (4.8.1)",
+  "scan": "elle donne naissanee",
+  "tex": "\\underline{elle donne naissanee}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "naissance",
+  "note": "Typing error of the print (e for c); the TeX keeps the printed reading."
+ },
+ {
+  "page": 271,
+  "where": "after (4.8.1)",
+  "scan": "'Compte tenu de (4.7.1), il reste à prouver ...' begins a new indented paragraph (indented like 'En effet' on p. 272)",
+  "tex": "\\end{equation}\nCompte tenu de (4.7.1)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{equation}\nCompte tenu",
+   "new": "\\end{equation}\n\nCompte tenu"
+  },
+  "note": "Without a blank line LaTeX continues the paragraph of the display; the print starts the proof as a new paragraph."
+ },
+ {
+  "page": 271,
+  "where": "proof of 4.8, 'Cela se déduit comme (4.7.1)'",
+  "scan": "CeIa (capital I, serifs on both sides at cap height, for the l)",
+  "tex": "CeIa se déduit",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Cela",
+  "note": "Typing error of the print (I for l); the TeX keeps the printed reading."
+ },
+ {
+  "page": 274,
+  "where": "end of the first paragraph, 'donc l'annulateur à gauche de l'accouplement (1.11.1)'",
+  "scan": "(1.11.1)",
+  "tex": "l'accouplement (1.11.1)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(4.11.1)",
+  "note": "Wrong reference number of the print: the pairing meant is (4.11.1) (cf. 'En particulier, ... l'accouplement (4.11.1)' just after). The TeX keeps the printed reading."
+ },
+ {
+  "page": 274,
+  "where": "paragraph 'En particulier', 'séparant à gauche i.e, que C' = 0'",
+  "scan": "i.e, que (comma after the e: same size and descending tail as the comma after '0,' on the same line)",
+  "tex": "gauche i.e. que $C' = 0$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "gauche i.e. que",
+   "new": "gauche i.e, que"
+  },
+  "corrected": "i.e. que",
+  "note": "The typescript types a comma for the abbreviation's final full stop; the TeX silently corrects it. Restore the printed comma in the diplomatic text."
+ }
+]

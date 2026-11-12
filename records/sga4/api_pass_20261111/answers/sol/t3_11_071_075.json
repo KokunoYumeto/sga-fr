@@ -1,0 +1,161 @@
+[
+ {
+  "page": 72,
+  "where": "Premier paragraphe, après « sur P^{n-1} »",
+  "scan": "sur $\\PP^{n-1}$ est définie en chaque point de $Y$",
+  "tex": "sur $\\PP^{n-1}$\\sisi{. De plus, la projection}{} est définie",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sisi{. De plus, la projection}{}",
+   "new": ""
+  },
+  "note": "L'imprimé enchaîne directement avec « est définie ». Cette restitution ne doit pas figurer dans le premier argument de \\sisi, censé donner la lecture imprimée ; le second argument n'est pas évalué."
+ },
+ {
+  "page": 72,
+  "where": "4.0, condition définissant un isomorphisme local",
+  "scan": "Pour chaque $x\\in U$",
+  "tex": "\\sisi{pour}{Pour} chaque $x\\in U$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sisi{pour}{Pour}",
+   "new": "Pour"
+  },
+  "note": "L'imprimé porte une majuscule à « Pour » ; le premier argument donne à tort une minuscule."
+ },
+ {
+  "page": 72,
+  "where": "4.0, définition d'une famille couvrante",
+  "scan": "Une famille … est dit couvrant",
+  "tex": "Une famille … est dite \\emph{couvrante}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "est dite \\emph{couvrante}",
+  "note": "Double faute d'accord dans l'imprimé. Le TeX corrige silencieusement « dit couvrant » en « dite couvrante »."
+ },
+ {
+  "page": 72,
+  "where": "4.0, référence précédant (4.1)",
+  "scan": "morphisme (inclusion) de sites (IV     )",
+  "tex": "morphisme (inclusion) de sites (IV\\quad )",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(IV~4.9.1)",
+  "note": "Le numéro de référence après IV est laissé en blanc dans l'imprimé, lacune conservée par le TeX. La définition des morphismes de sites est IV 4.9.1."
+ },
+ {
+  "page": 72,
+  "where": "4.0, justification de l'équivalence des deux topos",
+  "scan": "et on déduit de (     ) que les topos",
+  "tex": "et on déduit de (\\quad) que les topos",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(III~4.1)",
+  "note": "Référence laissée entièrement en blanc dans l'imprimé et conservée par le TeX. Le résultat invoqué est le lemme de comparaison III 4.1."
+ },
+ {
+  "page": 73,
+  "where": "Démonstration de 4.3 (ii), après la projection Y → X′",
+  "scan": "$Y(\\CC)\\rightarrow X(\\CC)$ est un isomorphisme",
+  "tex": "$Y(\\CC)\\rightarrow X(\\CC)$ est un isomorphisme",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$Y(\\CC)\\rightarrow X'(\\CC)$",
+  "note": "Il manque le prime au but de la projection : le graphe se projette isomorphiquement sur X′(C), non sur X(C). Le TeX conserve la coquille."
+ },
+ {
+  "page": 74,
+  "where": "Premier paragraphe, après la référence à Satz 8",
+  "scan": "D'après … s'étend à un « revêtement analytique »",
+  "tex": "D'après … \\sisi{$\\eta'$}{} s'étend à un",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sisi{$\\eta'$}{}",
+   "new": ""
+  },
+  "note": "Aucun η′ n'est imprimé entre la référence et « s'étend ». Le sujet restitué est placé à tort dans le premier argument de \\sisi."
+ },
+ {
+  "page": 74,
+  "where": "Premier paragraphe, « que η est induite »",
+  "scan": "que $\\eta$ est induite par un morphisme",
+  "tex": "que $\\eta$ est \\sisi{induit}{induite} par un morphisme",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sisi{induit}{induite}",
+   "new": "induite"
+  },
+  "note": "La lecture imprimée est « induite », non « induit ». Le contrôle porte sur le premier argument."
+ },
+ {
+  "page": 75,
+  "where": "Théorème 4.4 (iii), renvoi initial",
+  "scan": "Avec les notations de (i)",
+  "tex": "Avec\\pageoriginale les notations de {\\rm(i)}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Avec les notations de {\\rm(ii)}",
+  "note": "Les notations F sur les deux sites sont introduites en (ii), non en (i). Le TeX conserve le renvoi fautif de l'imprimé."
+ },
+ {
+  "page": 75,
+  "where": "Théorème 4.4 (iii), second affichage",
+  "scan": "H^q(X_{\\et},\\ZZ/n)\\xrightarrow{\\sim} H^q(X_{\\cl},\\ZZ/n)",
+  "tex": "H^q(X_{\\et}, \\ZZ/\\sisi{n\\ZZ}{n})\\xrightarrow{\\sim} H^q(X_{\\cl},\\ZZ/\\sisi{n\\ZZ}{n})",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "H^q(X_{\\et}, \\ZZ/\\sisi{n\\ZZ}{n})\\xrightarrow{\\sim} H^q(X_{\\cl},\\ZZ/\\sisi{n\\ZZ}{n})",
+   "new": "H^q(X_{\\et}, \\ZZ/n)\\xrightarrow{\\sim} H^q(X_{\\cl},\\ZZ/n)"
+  },
+  "note": "Dans les deux coefficients, l'imprimé donne le dénominateur n, sans second Z. Les premiers arguments des deux \\sisi ne correspondent donc pas au scan."
+ },
+ {
+  "page": 75,
+  "where": "Phrase introduisant le lemme 4.5",
+  "scan": "on doit donc démontrer le suivant",
+  "tex": "on doit donc démontrer le \\sisi{lemme}{} suivant",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sisi{lemme}{}",
+   "new": ""
+  },
+  "note": "Le mot « lemme » ne figure pas dans cette phrase imprimée ; il est ajouté dans le premier argument de \\sisi."
+ },
+ {
+  "page": 75,
+  "where": "Démonstration du lemme, première phrase",
+  "scan": "pour la topologie étale, et on peut donc supposer",
+  "tex": "pour la topologie étale, \\sisi{}{et} on peut donc supposer",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sisi{}{et}",
+   "new": "et"
+  },
+  "note": "La conjonction « et » est bien imprimée ; le premier argument est à tort vide."
+ },
+ {
+  "page": 75,
+  "where": "Démonstration du lemme, réduction au faisceau constant cyclique",
+  "scan": "$F=\\ZZ/n$",
+  "tex": "$F=\\ZZ/\\sisi{n\\ZZ}{n}$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$F=\\ZZ/\\sisi{n\\ZZ}{n}$",
+   "new": "$F=\\ZZ/n$"
+  },
+  "note": "L'imprimé donne n au dénominateur, non nZ ; le premier argument de \\sisi est erroné."
+ }
+]

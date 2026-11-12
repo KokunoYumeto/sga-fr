@@ -1,0 +1,279 @@
+[
+ {
+  "page": 116,
+  "where": "top of the page: the two commutative squares (X_12 <- C -> D' -> Y_12 and X_23 <- C'' -> D'' -> Y_23)",
+  "scan": "a full stop to the right of the second square, level with its bottom row (Y_23 <- D'' .)",
+  "tex": "the display ends '\\end{tikzcd}' + '\\]' with no full stop",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Y_{23} & D'' \\arrow[l]\n\\end{tikzcd}",
+   "new": "Y_{23} & D'' \\arrow[l]\n\\end{tikzcd}\\quad ."
+  },
+  "note": "As the diagram full stops restored on pp. 31, 38, 46 and 47 (\\quad .)."
+ },
+ {
+  "page": 116,
+  "where": "top of the page: the top right vertex of the left square",
+  "scan": "'C' without a prime (the square's other vertices are X_12, Y_12, D'; the right square has C'' and D'')",
+  "tex": "'& C \\arrow[l] \\arrow[d]' (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "& C' \\arrow[l] \\arrow[d]",
+  "note": "The TeX keeps the printed reading. p. 115 introduces c': C' -> X_12 and d': D' -> Y_12 for this square, so the vertex is C' (the square of p. 118 prints C')."
+ },
+ {
+  "page": 116,
+  "where": "after (5.2.6): 'où M_1 = f_{1!}L_1 , M_2 = f_{2*}L_2 , M_3 = f_{3*}M_3'",
+  "scan": "'M_3 = f_{3*}M_3' (M_3 on both sides)",
+  "tex": "$M_3=f_{3*}M_3$ (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$M_3=f_{3*}L_3$",
+  "note": "The TeX keeps the printed reading. M_i is the direct image of L_i (M_1 = f_{1!}L_1, M_2 = f_{2*}L_2; p. 118: M_i = f_{i!}L_i si i = 1,3 et f_{i*}L_i sinon), so M_3 = f_{3*}L_3."
+ },
+ {
+  "page": 116,
+  "where": "'compte tenu du fait que le produit fibré X ×_(X_1 ×_S X_1) × X_1 (par p_13 ...'",
+  "scan": "a second typed × after the lowered subscript (X_1 ×_S X_1): 'X ×_{(X_1 ×_S X_1)} × X_1'",
+  "tex": "$X\\times_{(X_1\\times_SX_1)}X_1$ (one ×)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "_{(X_1\\times_SX_1)}X_1",
+   "new": "_{(X_1\\times_SX_1)}\\times X_1"
+  },
+  "corrected": "X\\times_{(X_1\\times_SX_1)}X_1",
+  "note": "The TeX silently corrects the doubled product sign; the fix restores the print. The other fibre products of these pages (C ×_{X_2} C'' on p. 116, C' ×_{X_12} C'' on pp. 117 and 119) have one ×."
+ },
+ {
+  "page": 116,
+  "where": "'... et la diagonale X_1 -> X_1 ×_S X_1) s'identifie à X_1 ×_S X_2) . On voit de même'",
+  "scan": "a closing parenthesis after X_2: 's'identifie à X_1 ×_S X_2)'; the '(par ...' parenthesis already closed after the diagonal",
+  "tex": "s'identifie à $X_1\\times_SX_2$. (no parenthesis)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "s'identifie à $X_1\\times_SX_2$.",
+   "new": "s'identifie à $X_1\\times_SX_2)$."
+  },
+  "corrected": "s'identifie à $X_1\\times_SX_2$.",
+  "note": "Stray parenthesis of the print; the TeX silently drops it."
+ },
+ {
+  "page": 117,
+  "where": "top of the page",
+  "scan": "p. 117 begins 'correspondance composée, et d : C' ×_{X_12} C'' = D -> X_12 la correspondance intersection'; p. 116 ends with the line 'c'' : C'' -> X_21 sont des correspondances, c : C = C ×_{X_2} C'' -> X_1 ×_S X_2 ×_S X_1 la'",
+  "tex": "page_117.tex begins 'sont des correspondances, $c:C=C'\\times_{X_2}C''\\to X_1\\times_SX_2\\times_SX_1$ la' (the last line of p. 116); the folio-117 marker (s5.tex line 3784 diplomatic, 3785 current) stands before it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 117 really begins at 'correspondance composée, et' (same line of s5.tex). Exact fix: python -I move_marker.py 5 117 'correspondance compos' (forward search, no --before; simulated in memory on both layers: the marker then splits the line after '\\times_SX_1$ la'). Text not moved. The misprint fix 'C=C'' below lies in the moved text: apply it before the move, or look for it on p. 116 afterwards."
+ },
+ {
+  "page": 117,
+  "where": "first line of the TeX page (printed as the last line of p. 116): 'c : C = C ×_{X_2} C'' -> X_1 ×_S X_2 ×_S X_1 la correspondance composée'",
+  "scan": "'C = C ×_{X_2} C''': the first factor printed C without a prime",
+  "tex": "$c:C=C'\\times_{X_2}C''\\to X_1\\times_SX_2\\times_SX_1$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$c:C=C'\\times_{X_2}C''\\to X_1",
+   "new": "$c:C=C\\times_{X_2}C''\\to X_1"
+  },
+  "corrected": "$c:C=C'\\times_{X_2}C''\\to X_1",
+  "note": "The TeX silently corrects (C = C' ×_{X_2} C'', as p. 115 defines the composite). Printed on p. 116 (last line); filed here because the text sits under the folio-117 marker until the marker is moved. The old is unique in s5.tex too (p. 115 has 'C''\\to X$')."
+ },
+ {
+  "page": 117,
+  "where": "'l'égalité suivante dans H^0(D,K_D)', before (5.2.10)",
+  "scan": "no punctuation after H^o(D,K_D)",
+  "tex": "dans $H^0(D,K_D)$:",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $H^0(D,K_D)$:",
+   "new": "dans $H^0(D,K_D)$"
+  },
+  "note": "Colon added by the TeX (also p. 119)."
+ },
+ {
+  "page": 117,
+  "where": "'Les formules 5.2.9 et 5.2.10 généralisent une formule bien ... dans le cas des coefficients constants'",
+  "scan": "'une formule bien comme dans le cas'",
+  "tex": "une formule bien connue dans le cas",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "formule bien connue dans",
+   "new": "formule bien comme dans"
+  },
+  "corrected": "bien connue",
+  "note": "Typing error of the print (comme for connue); the TeX silently corrects it."
+ },
+ {
+  "page": 117,
+  "where": "heading 5.3",
+  "scan": "'5.3. Produit tensoriel externe de correspondances.' with a full stop after the underlined title",
+  "tex": "\\subsection*{5.3. Produit tensoriel externe de correspondances} (no final full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "externe de correspondances}",
+   "new": "externe de correspondances.}"
+  },
+  "note": "As the heading full stop restored on p. 76 ('\\section*{1. Notations ... Künneth.}'). The underline itself is the accepted \\subsection* setting."
+ },
+ {
+  "page": 117,
+  "where": "last lines: 'et de l'isomorphisme défini par Künneth E_2 ⊗_S E_4 ~> p^!_24(L_2 ⊗_S L_4) (1.7.3) .' (opening)",
+  "scan": "the formula runs on in the text line after 'défini par Künneth', followed by '(1.7.3) .'; it is not displayed",
+  "tex": "a display \\[ E_2 ... \\quad (1.7.3). \\] after 'défini par Künneth'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "défini par Künneth\n\\[\nE_2",
+   "new": "défini par Künneth $E_2"
+  },
+  "note": "Display against inline formula (as pp. 44 and 65). Apply together with the next finding (closing $): either alone breaks the LaTeX. The two olds avoid the derived tensors, so they survive the global \\overset{\\mathrm{L}}{\\otimes} pass."
+ },
+ {
+  "page": 117,
+  "where": "same formula (closing): '... p^!_24(L_2 ⊗_S L_4) (1.7.3) .'",
+  "scan": "'(1.7.3) .' ends the text line; nothing is displayed",
+  "tex": "...L_4)\\quad (1.7.3). followed by \\]",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "L_4)\\quad (1.7.3).\n\\]",
+   "new": "L_4)$ (1.7.3)."
+  },
+  "note": "Apply together with the previous finding."
+ },
+ {
+  "page": 118,
+  "where": "the two commutative squares (X_12 <- C' -> D' -> Y_12 and X_34 <- C'' -> D'' -> Y_34)",
+  "scan": "a full stop to the right of the second square, level with its bottom row",
+  "tex": "the display ends '\\end{tikzcd}' + '\\]' with no full stop",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Y_{34} & D'' \\arrow[l]\n\\end{tikzcd}",
+   "new": "Y_{34} & D'' \\arrow[l]\n\\end{tikzcd}\\quad ."
+  },
+  "note": "Same as the squares of p. 116."
+ },
+ {
+  "page": 118,
+  "where": "(5.3.6), label of the left vertical arrow",
+  "scan": "'f_12 ⊗ f_34' without asterisks (the right arrow is labelled f_{13,24*}; the corresponding label of (5.2.6) on p. 116 is f_{12*} ⊗ f_{23*})",
+  "tex": "\\arrow[d,\"f_{12}\\otimes f_{34}\"'] (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "f_{12*}\\otimes f_{34*}",
+  "note": "The TeX keeps the printed reading. Probable slip of the print: the arrow is the direct image of correspondences, written f_{12*} ⊗ f_{23*} in (5.2.6); corrected edition only, low confidence."
+ },
+ {
+  "page": 118,
+  "where": "last lines: '... M_ij = M_i ⊗_S M_j . (On a aussi un carré analogue avec des RHom).'",
+  "scan": "a full stop after M_j, then a new sentence in parentheses beginning with a capital: '(On a aussi ... RHom).'",
+  "tex": "$M_{ij}=M_i\\otimes_S^{\\mathbf L}M_j$ (on a aussi un carré analogue avec des $\\uRHom$).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "M_j$ (on a aussi",
+   "new": "M_j$. (On a aussi"
+  },
+  "note": "One edit for the missing full stop and the capital O of 'On' (the capital follows from the full stop)."
+ },
+ {
+  "page": 119,
+  "where": "'l'égalité suivante dans H^0(C,K_C)', before (5.3.8)",
+  "scan": "no punctuation after H^o(C,K_C)",
+  "tex": "dans $H^0(C,K_C)$:",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $H^0(C,K_C)$:",
+   "new": "dans $H^0(C,K_C)$"
+  },
+  "note": "Colon added by the TeX (as p. 117)."
+ },
+ {
+  "page": 120,
+  "where": "heading of § 6",
+  "scan": "'6. Appendice. Formule de Lefschetz pour les faisceaux cohérents.' with a full stop after the underlined title",
+  "tex": "\\section*{6. Appendice. Formule de Lefschetz pour les faisceaux cohérents} (no final full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "pour les faisceaux cohérents}",
+   "new": "pour les faisceaux cohérents.}"
+  },
+  "note": "As the heading full stop restored on p. 76."
+ },
+ {
+  "page": 120,
+  "where": "first line of § 6: 'Dans ce numéro, S désigne un shcéma noethérien.'",
+  "scan": "'shcéma' (h and c transposed)",
+  "tex": "un shcéma noethérien (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "un schéma noethérien",
+  "note": "The TeX keeps the printed reading."
+ },
+ {
+  "page": 120,
+  "where": "6.1, 'Rappelons ([8] App.) que pour tout S-morphisme f : X -> Y'",
+  "scan": "'que pour tout' without a comma (these three words are a pasted-in correction in a smaller typeface)",
+  "tex": "Rappelons ([8] App.) que, pour tout",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "App.) que, pour tout",
+   "new": "App.) que pour tout"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 120,
+  "where": "6.1, 'on dispose d'un foncteur f^! : D^+(Y) -> D^+(X) (et d'isomorphismes de transitivité'",
+  "scan": "the formula runs on in the text line after 'd'un foncteur'; it is not displayed",
+  "tex": "a display \\[ f^!:D^+(Y)\\longrightarrow D^+(X) \\] between 'd'un foncteur' and '(et d'isomorphismes'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "d'un foncteur\n\\[\nf^!:D^+(Y)\\longrightarrow D^+(X)\n\\]\n(et d'isomorphismes",
+   "new": "d'un foncteur $f^!:D^+(Y)\\longrightarrow D^+(X)$ (et d'isomorphismes"
+  },
+  "note": "Display against inline formula (as pp. 44 and 65)."
+ },
+ {
+  "page": 120,
+  "where": "6.1, 'cette adjonction se précisant en un isomorphisme'",
+  "scan": "'cette adjontion' (c missing)",
+  "tex": "cette adjonction",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "cette adjonction",
+   "new": "cette adjontion"
+  },
+  "corrected": "cette adjonction",
+  "note": "Typing error of the print; the TeX silently corrects it."
+ },
+ {
+  "page": 120,
+  "where": "end of the page",
+  "scan": "p. 120 ends '... (SGA 6 III 4). Si X est un S-schéma, et L ∈ ob D(X) ,'; p. 121 begins 'rappelons qu'on dit que L est parfait rel. à S si L est de tor-dimension finie rel. à S et à cohomologie cohérente.'",
+  "tex": "'rappelons qu'on dit que $L$ est parfait rel. à $S$ si $L$ est de tor-dimension finie rel. à $S$ et à' (the first line of p. 121) ends page_120.tex; the folio-121 marker (s5.tex line 3906 diplomatic, 3907 current) follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 121 really begins at 'rappelons qu'on dit que $L$' (same line of s5.tex). Exact fix: python -I move_marker.py 5 121 'rappelons qu' --before (simulated in memory on both layers: the marker then splits the line after 'L\\in\\operatorname{ob}D(X)$,'; the anchor is lower-case, so the page's earlier 'Rappelons que' is not hit). Text not moved; it agrees with the print of p. 121."
+ }
+]

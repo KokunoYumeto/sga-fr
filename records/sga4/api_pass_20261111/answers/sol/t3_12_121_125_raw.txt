@@ -1,0 +1,237 @@
+{
+  "findings": [
+    {
+      "page": 121,
+      "where": "Début de la première ligne",
+      "scan": "h^{\\ast}(R^1p_{\\ast}(\\bar{F}))\\longrightarrow R^1p_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))",
+      "tex": "R^1p_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "La page commence par le membre gauche et la flèche de cet homomorphisme, avant le début de l'extrait fourni. La coupe doit reprendre la ligne précédente du source ; il ne s'agit pas d'une omission à réparer dans le texte de l'édition."
+    },
+    {
+      "page": 121,
+      "where": "Première ligne, exposants de R",
+      "scan": "h^{\\ast}(R^1p_{\\ast}(\\bar{F}))\\longrightarrow R^1p_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F})), puis « pour i=0,1 »",
+      "tex": "R^1p_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "h^{\\ast}(R^{i}p_{\\ast}(\\bar{F}))\\longrightarrow R^{i}p_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))",
+      "note": "Les deux exposants imprimés sont 1, mais l'énoncé fait varier i=0,1 : il faut lire i. Le terme présent dans l'extrait TeX conserve la coquille."
+    },
+    {
+      "page": 121,
+      "where": "Cas (ii), nature du faisceau en groupes G",
+      "scan": "in-$\\LL$-finis",
+      "tex": "in-$\\LL$-finis",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "ind-$\\LL$-finis",
+      "note": "Le d de ind- manque dans le print ; le TeX conserve cette coquille."
+    },
+    {
+      "page": 121,
+      "where": "Cas (ii), formule après « le dernier terme »",
+      "scan": "H^0(Y,R^1p_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))",
+      "tex": "H^{\\circ}(Y,R^1\np_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{\\circ}(Y,R^1p_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F})))",
+      "note": "Il manque la parenthèse fermante extérieure de H^0. Le TeX conserve l'omission imprimée."
+    },
+    {
+      "page": 121,
+      "where": "Cas (ii), formule après « qui efface » suivant G vers H",
+      "scan": "H^1(Y,p_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))",
+      "tex": "H^1(Y,p_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^1(Y,p_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F})))",
+      "note": "Il manque la parenthèse fermante extérieure de H^1. Le TeX conserve la coquille."
+    },
+    {
+      "page": 121,
+      "where": "Après les deux termes isomorphes, accord avec « l'hypothèse »",
+      "scan": "l'hypothèse sur les homomorphismes de changement de base faites ici sur p,h",
+      "tex": "l'hypothèse sur les\nhomomorphismes de changement de base faites ici sur $p$,\n$h$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "l'hypothèse sur les homomorphismes de changement de base faite ici sur $p$, $h$",
+      "note": "Lire faite, accordé avec l'hypothèse. Le TeX garde faites."
+    },
+    {
+      "page": 121,
+      "where": "Fin de page, parenthèse ouverte par « et à fortiori »",
+      "scan": "(et à fortiori H^0(X,R^1p_{\\ast}(\\bar{F})) par un monomorphisme",
+      "tex": "(et à fortiori\n$H^{\\circ}(X,R^1p_{\\ast}(\\bar{F}))$ par un monomorphisme",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(et à fortiori $H^{\\circ}(X,R^1p_{\\ast}(\\bar{F}))$) par un monomorphisme",
+      "note": "La parenthèse de prose n'est pas refermée après le groupe de cohomologie. Le TeX conserve cette omission."
+    },
+    {
+      "page": 122,
+      "where": "Parenthèse « qui est une résolution de »",
+      "scan": "h^{\\ast}(\\bar{F})",
+      "tex": "$h^{\\ast}(\\bar{F})$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\bar{h}^{\\ast}(\\bar{F})",
+      "note": "La résolution considérée est celle de l'image inverse par bar h, non par h. Le print omet la barre sur h et le TeX conserve cette coquille."
+    },
+    {
+      "page": 122,
+      "where": "Homomorphisme composé, terme central",
+      "scan": "\\RR\\Gamma_Y(h^{\\ast}(Rp_{\\ast}(\\bar{F}))",
+      "tex": "\\RR\\Gamma_Y(h^{\\ast}(\\bar{F}))",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\RR\\Gamma_Y(h^{\\ast}(\\bar{F}))",
+        "new": "\\RR\\Gamma_Y(h^{\\ast}(Rp_{\\ast}(\\bar{F}))"
+      },
+      "note": "Le TeX omet Rp_* à l'intérieur de h^*. Le fix restitue la lecture imprimée ; la parenthèse extérieure manquante dans cette lecture est une coquille du print signalée séparément."
+    },
+    {
+      "page": 122,
+      "where": "Homomorphisme composé, parenthésage du terme central",
+      "scan": "\\RR\\Gamma_Y(h^{\\ast}(Rp_{\\ast}(\\bar{F}))",
+      "tex": "\\RR\\Gamma_Y(h^{\\ast}(\\bar{F}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\RR\\Gamma_Y(h^{\\ast}(Rp_{\\ast}(\\bar{F})))",
+      "note": "Le print omet la fermante extérieure de Gamma_Y. Le terme TeX actuel est équilibré, et corrige donc de fait ce défaut de parenthésage, mais seulement dans sa formule raccourcie par l'omission distincte de Rp_*."
+    },
+    {
+      "page": 122,
+      "where": "Homomorphisme composé, dernier terme",
+      "scan": "\\RR\\Gamma_Y(Rp_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))",
+      "tex": "\\RR\\Gamma_Y(Rp_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\RR\\Gamma_Y(Rp_{Y^{\\ast}}(\\bar{h}^{\\ast}(\\bar{F})))",
+      "note": "La fermante extérieure de Gamma_Y manque également dans le dernier terme. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 123,
+      "where": "Remarque 6.12, condition 2°, second groupe de cohomologie",
+      "scan": "H^{i}(Y,h^{\\ast}(\\RR^jp_{\\ast}(\\bar{F}))",
+      "tex": "H^{i}(Y,h^{\\ast}(\\RR^jp_{\\ast}(\\bar{F}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{i}(Y,h^{\\ast}(\\RR^jp_{\\ast}(\\bar{F})))",
+      "note": "La parenthèse fermante extérieure de H^i manque dans le print ; le TeX conserve l'omission."
+    },
+    {
+      "page": 123,
+      "where": "Remarque 6.12, renvoi à l'argument d'effaçabilité",
+      "scan": "6.10 (ii)",
+      "tex": "\\hyperref[XII.cor6.10]{6.10} (ii)",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\hyperref[XII.prop6.11]{6.11} (ii)",
+      "note": "L'argument d'effaçabilité auquel la remarque oppose les cas (i) et (iii) est celui de la démonstration de 6.11 (ii), p. 121. Le TeX conserve le renvoi imprimé à 6.10 (ii)."
+    },
+    {
+      "page": 123,
+      "where": "Remarques 6.13, phrase sur l'exposé XV",
+      "scan": "Un autre cas intéressant (où h n'est plus une immersion fermée comme dans 5.5 sera étudié dans XV.",
+      "tex": "Un\nautre cas intéressant (où $h$ n'est plus une immersion fermée comme\ndans \\hyperref[XII.cor5.5]{5.5} sera étudié dans $XV$.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Un autre cas intéressant (où $h$ n'est plus une immersion fermée comme dans \\hyperref[XII.cor5.5]{5.5}) sera étudié dans $XV$.",
+      "note": "La parenthèse ouverte après intéressant doit se fermer après 5.5. Le TeX conserve son absence."
+    },
+    {
+      "page": 124,
+      "where": "Premier paragraphe, « on ne connaît pas »",
+      "scan": "d'exmeple",
+      "tex": "d'exemple",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "d'exemple",
+      "note": "Le print intervertit e et m dans exemple. Le TeX corrige silencieusement cette coquille."
+    },
+    {
+      "page": 124,
+      "where": "Hypothèses sur le schéma X avant la propriété (*)",
+      "scan": "quasi-complet et quasi-séparé",
+      "tex": "quasi-complet et quasi-séparé",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "quasi-compact et quasi-séparé",
+      "note": "Lire quasi-compact, l'hypothèse de quasi-compacité usuelle ici. Le TeX conserve quasi-complet."
+    },
+    {
+      "page": 124,
+      "where": "Propriété (*), application canonique sur les sections",
+      "scan": "\\Gamma(Y'/Y)\\rightarrow \\Gamma(X'/X)",
+      "tex": "\\Gamma(Y'/Y)\\rightarrow \\Gamma(X'/X)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Gamma(X'/X)\\rightarrow \\Gamma(Y'/Y)",
+      "note": "La restriction canonique des sections va de X à Y, et non en sens inverse. Le TeX conserve l'inversion imprimée."
+    },
+    {
+      "page": 124,
+      "where": "Dernière ligne, quantification de la partie fermée",
+      "scan": "tout partie fermée Y",
+      "tex": "tout\npartie fermée $Y$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "toute partie fermée $Y$",
+      "note": "Lire toute, accordé avec partie. Le TeX conserve tout."
+    },
+    {
+      "page": 125,
+      "where": "Première phrase, localisation étale le long de Y",
+      "scan": "étale le long dé Y",
+      "tex": "étale le long dé $Y$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "étale le long de $Y$",
+      "note": "Le print porte un accent aigu indu sur de. Le TeX le conserve."
+    },
+    {
+      "page": 125,
+      "where": "NB sur le faisceau conormal du contre-exemple",
+      "scan": "était un contraire anti-ample",
+      "tex": "était un contraire anti-ample",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "était au contraire anti-ample",
+      "note": "Lire au contraire. Le TeX conserve un contraire."
+    },
+    {
+      "page": 125,
+      "where": "Introduction du § 7, hypothèses supprimées",
+      "scan": "débarrassée de toutes hypothèses noethérienne ou d'irréductibilité.",
+      "tex": "débarrassée de toutes hypothèses noethérienne ou d'irréductibilité.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "débarrassée de toutes hypothèses noethériennes ou d'irréductibilité.",
+      "note": "Il manque le s d'accord de noethériennes avec hypothèses. Le TeX conserve le singulier imprimé."
+    }
+  ],
+  "coordinator": "121: 1/6 (dont 1 marker); 122: 1/3; 123: 0/3; 124: 0/4; 125: 0/3 (normal/misprint).\np. 121 : reprendre la coupe avant la ligne 1759 pour inclure le membre gauche et la flèche de l'homomorphisme imprimé en tête de page.\np. 122 : traiter conjointement les deux constats sur le terme central du composé ; le fix restitue le facteur perdu en conservant le parenthésage fautif du print."
+}

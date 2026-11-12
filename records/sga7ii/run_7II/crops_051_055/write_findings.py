@@ -1,0 +1,202 @@
+import json
+import os
+
+RUN = r"C:\Users\user\Documents\sga_scan_check_20261105\run_7II"
+FOLDER = os.path.join(RUN, "b051_055")
+OUT = os.path.join(RUN, "findings_051_055.json")
+
+F = []
+
+# ---------------- page 52 ----------------
+F.append({
+    "page": 52,
+    "where": "(2.2), denominator of the product",
+    "scan": "(i+yz)^{a_i}+y(1-z)^{a_i} (a dotted i, not the digit 1; checked at 3x)",
+    "tex": "{(i+yz)^{a_i}+y(1-z)^{a_i}}",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "(1+yz)^{a_i}+y(1-z)^{a_i}",
+    "note": "Hirzebruch's generating function has (1+yz)^{a_i} in the denominator, as the numerator of the same factor, the rewritten II and the formula after 'on trouve que' on this page show. The TeX keeps the printed reading.",
+})
+F.append({
+    "page": 52,
+    "where": "rewriting of I, second line, second sum",
+    "scan": "(-1)^q h_o^{p,q}(a) (yz)^p z^q z^d: the a is not underlined (checked at 5x); the first line has h_o^{p,q}(a) with a underlined",
+    "tex": "(-1)^q\\ h_o^{p,q}(a)\\ (yz)^p",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "h_o^{p,q}(\\underline{a})",
+    "note": "The multidegree a of 2.1 is underlined everywhere else in this computation. The TeX keeps the printed reading.",
+})
+F.append({
+    "page": 52,
+    "where": "rewriting of I, second line, first sum: (-1)^p(yz)^p z^q z^d",
+    "scan": "a typed full stop on the baseline right after z, under the exponent q: z.^q z^d (checked at 5x)",
+    "tex": "(yz)^p z^q z^d",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": {"old": "(yz)^p z^q z^d", "new": "(yz)^p z.^q z^d"},
+    "corrected": "(yz)^p z^q z^d",
+    "note": "A round typed dot of the size of a full stop, not a speck: the second sum has the same dot in the same place. It has no mathematical meaning (probably the typist's mark for the position of the exponent). The TeX silently drops it; the fix restores the printed reading. Coordinator's call whether the diplomatic layer keeps such marks.",
+})
+F.append({
+    "page": 52,
+    "where": "rewriting of I, second line, second sum: (yz)^p z^q z^d",
+    "scan": "the same typed full stop after z, under the exponent q: z.^q  z^d (checked at 5x)",
+    "tex": "(yz)^p z^q\\ z^d",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": {"old": "(yz)^p z^q\\ z^d", "new": "(yz)^p z.^q\\ z^d"},
+    "corrected": "(yz)^p z^q\\ z^d",
+    "note": "As in the first sum of the same line. The TeX silently drops the dot; the fix restores the printed reading.",
+})
+
+# ---------------- page 53 ----------------
+F.append({
+    "page": 53,
+    "where": "Corollaire 2.4 (ii), 'on a, |P| désignent le nombre'",
+    "scan": "|P| désignent le nombre d'élément d'une partie P de [1,d] (checked at 1.3x)",
+    "tex": "\\underline{désignent le nombre d'élément d'une partie}",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "\\underline{désignant le nombre d'élément d'une partie}",
+    "note": "Absolute participle clause ('|P| désignant ...'); 'désignent' is a typing error. The TeX keeps the printed reading.",
+})
+F.append({
+    "page": 53,
+    "where": "Corollaire 2.4 (ii), 'le nombre d'élément d'une partie'",
+    "scan": "le nombre d'élément d'une partie P",
+    "tex": "\\underline{désignent le nombre d'élément d'une partie}",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": None,
+    "corrected": "\\underline{désignent le nombre d'éléments d'une partie}",
+    "note": "Agreement error: 'le nombre d'éléments'. The TeX keeps the printed reading.",
+})
+F.append({
+    "page": 53,
+    "where": "display after 'D'après (2.3), on a', first line, denominator of the inner fraction",
+    "scan": "(1+z)^a·z - (1+z)^a y (checked at 3x)",
+    "tex": "{(1+z)^{a}\\cdot z \\,-\\, (1+z)^{a}y}",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "(1+y)^{a}\\cdot z \\,-\\, (1+z)^{a}y",
+    "note": "Théorème 2.3 for d = 1 has the denominator -(1+y)^a z + (1+z)^a y, and the next two lines of this display have (1+y)^a z - (1+z)^a y; only with (1+y)^a does the numerator of the second line follow. The TeX keeps the printed reading.",
+})
+
+# ---------------- page 54 ----------------
+F.append({
+    "page": 54,
+    "where": "computation of D, second line",
+    "scan": "= (y-z) (-1 + yz Σ_{i,j≥0} (a over i+j+2) y^i z^j  (no closing parenthesis; checked at 1.8x)",
+    "tex": "\\binom{a}{i+j+2}\\ y^{i}z^{j}\\\\[2ex]",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "\\binom{a}{i+j+2}\\ y^{i}z^{j})",
+    "note": "The parenthesis opened before -1 is not closed (the next line closes its own). The TeX keeps the printed reading.",
+})
+F.append({
+    "page": 54,
+    "where": "display after 'Inversons la formule de 2.3, pour d = 1. On trouve', right-hand side",
+    "scan": "= 1 + (1+x)(1+y) H(a)  .",
+    "tex": "1 \\;+\\; (1+x)(1+y)\\ H(a)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "1 \\;+\\; (1+y)(1+z)\\ H(a)",
+    "note": "The variables are y and z; there is no x. Théorème 2.3 for d = 1 gives exactly 1 + (1+y)(1+z)H(a), and Corollaire 2.4 (ii) has (1+y)^{|P|-1}(1+z)^{|P|-1}. The TeX keeps the printed reading.",
+})
+F.append({
+    "page": 54,
+    "where": "display after 'Si l'on substitue cette formule dans 2.3', first line, factor of the product",
+    "scan": "(1+(1+x)(1+y) H(a_i))",
+    "tex": "(1+(1+x)(1+y)\\ H(a_{i}))",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "(1+(1+y)(1+z)\\ H(a_{i}))",
+    "note": "Same x, y for y, z slip as in the preceding display. The TeX keeps the printed reading.",
+})
+F.append({
+    "page": 54,
+    "where": "same display, second line, summand",
+    "scan": "(1+x)^{|P|} (1+y)^{|P|}",
+    "tex": "(1+x)^{|P|}(1+y)^{|P|}",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "(1+y)^{|P|}(1+z)^{|P|}",
+    "note": "Same slip; after division by (1+y)(1+z) it gives the (1+y)^{|P|-1}(1+z)^{|P|-1} of Corollaire 2.4 (ii). The TeX keeps the printed reading.",
+})
+F.append({
+    "page": 54,
+    "where": "same display, second line, range of the sum",
+    "scan": "P⊂[i,d] (dotted i; checked at 1.3x)",
+    "tex": "P \\subset [i,d]",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "P \\subset [1,d]",
+    "note": "P runs over the non-empty subsets of [1,d], as in Corollaire 2.4 (ii); i is the bound index of the product. The TeX keeps the printed reading.",
+})
+
+# ---------------- page 55 ----------------
+F.append({
+    "page": 55,
+    "where": "line after the first display: 'où [ ] désigne la partie entière du quotient.'",
+    "scan": "the underline ends under the t of 'quotient'; the full stop is not underlined (checked at 4x)",
+    "tex": "\\underline{désigne la partie entière du quotient.}",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\underline{désigne la partie entière du quotient.}", "new": "\\underline{désigne la partie entière du quotient}."},
+    "note": "The TeX puts the full stop inside the underline.",
+})
+F.append({
+    "page": 55,
+    "where": "Lemme 2.5.1, end",
+    "scan": "the underline ends under the n of 'multiplication'; the full stop is not underlined (checked at 4x)",
+    "tex": "\\underline{est stable par addition et multiplication.}",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\underline{est stable par addition et multiplication.}", "new": "\\underline{est stable par addition et multiplication}."},
+    "note": "As in the previous finding.",
+})
+
+# ---------------- checks ----------------
+ok = True
+for f in F:
+    path = os.path.join(FOLDER, "page_%03d.tex" % f["page"])
+    with open(path, encoding="utf-8", newline="") as fh:
+        txt = fh.read()
+    if f["fix"] is not None:
+        n = txt.count(f["fix"]["old"])
+        if n != 1:
+            ok = False
+            print("FIX OLD COUNT", n, f["page"], repr(f["fix"]["old"]))
+        if "%%%%%%%%%%" in f["fix"]["old"]:
+            ok = False
+            print("MARKER IN OLD", f["page"])
+    # the 'tex' excerpt should be present on the page as well
+    if f["tex"] not in txt:
+        print("TEX EXCERPT NOT FOUND (info only)", f["page"], repr(f["tex"]))
+    if f["kind"] == "misprint_in_print" and "corrected" not in f:
+        ok = False
+        print("MISSING corrected", f["page"], f["where"])
+    if f["kind"] != "misprint_in_print" and "corrected" in f:
+        ok = False
+        print("UNEXPECTED corrected", f["page"], f["where"])
+
+with open(OUT, "w", encoding="utf-8", newline="\n") as fh:
+    json.dump(F, fh, ensure_ascii=False, indent=1)
+    fh.write("\n")
+
+counts = {}
+for f in F:
+    c = counts.setdefault(f["page"], [0, 0])
+    c[1 if f["kind"] == "misprint_in_print" else 0] += 1
+print("ok" if ok else "PROBLEMS", len(F), counts)

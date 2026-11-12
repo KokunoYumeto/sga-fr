@@ -1,0 +1,108 @@
+{
+  "findings": [
+    {
+      "page": 261,
+      "where": "(1.1.4.4), second row",
+      "scan": "d_j[1_i]^{\\underline{k}}=-d_j[1_i]^{\\underline{k}+1_i}",
+      "tex": "d_j[1_i]^{\\sheafk } = -d_j[1_i]^{\\sheafk +1_i}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "d_j[1_i]^{\\sheafk } = -d_j^{\\sheafk +1_i}",
+      "note": "The printed right-hand side erroneously repeats [1_i]. It should use the original differential at the shifted degree. The TeX keeps this misprint."
+    },
+    {
+      "page": 261,
+      "where": "(1.1.4.5), subscript of the identity",
+      "scan": "\\id_{K^{\\underline{k}+1_i}}",
+      "tex": "\\id_{K^{\\sheafk +1}i}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\id_{K^{\\sheafk +1}i}",
+        "new": "\\id_{K^{\\sheafk +1_i}}"
+      },
+      "note": "The i is a subscript of 1 inside the exponent of K, not a separate factor outside that exponent."
+    },
+    {
+      "page": 262,
+      "where": "(1.1.5.2), exponent of sigma",
+      "scan": "\\sigma^{\\underline{k}}=(-1)^{k+1}\\id_{F(K^{-k-1})}",
+      "tex": "\\sigma^{\\sisi{\\sheafk }{k}}=(-1)^{k+1}\\id_{F(K^{-k-1})}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\sigma^{k}=(-1)^{k+1}\\id_{F(K^{-k-1})}",
+      "note": "The print mistakenly uses the underlined multi-index notation: here k is an ordinary integer degree. The TeX records the printed reading and corrects it through sisi."
+    },
+    {
+      "page": 263,
+      "where": "Paragraph immediately before (1.1.5.5), codomain of F(f)",
+      "scan": "F(f):F(L)[-i]\\longrightarrow K",
+      "tex": "F(f):F(L)[-i]\\rightarrow K",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "F(f):F(L)[-i]\\rightarrow F(K)",
+      "note": "The printed codomain is missing F. The TeX keeps the misprint."
+    },
+    {
+      "page": 263,
+      "where": "Paragraph beginning with the short exact sequence, before the display for d_L",
+      "scan": "d'écrire la différentielle",
+      "tex": "d'écrire le différentielle",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "le différentielle",
+        "new": "la différentielle"
+      },
+      "note": "The printed article is la, not le."
+    },
+    {
+      "page": 263,
+      "where": "Sentence following the dual short exact sequence",
+      "scan": "f^{\\ast} de F(K) dans F(L)",
+      "tex": "$f^{\\ast}$ de $F(K)$ dans $F(\\sisi{L}{M})$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f^{\\ast}\\text{ de }F(K)\\text{ dans }F(M)",
+      "note": "The degree-one connecting morphism has target F(M), not F(L). The TeX records L and corrects it to M through sisi."
+    },
+    {
+      "page": 263,
+      "where": "Tuple naming the triangle, in the paragraph following the dual exact sequence",
+      "scan": "(k,L,M,u,v,f)",
+      "tex": "(K,L,M,u,v,f)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(K,L,M,u,v,f)",
+      "note": "The print has lower-case k, although the complex is K. The TeX silently corrects it to capital K."
+    },
+    {
+      "page": 265,
+      "where": "1.1.6.3, first sentence",
+      "scan": "le produit de foncteur contravariants",
+      "tex": "le produit de foncteur contravariants",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "le produit de foncteurs contravariants",
+      "note": "The printed foncteur lacks its plural s. The TeX keeps the misprint."
+    },
+    {
+      "page": 265,
+      "where": "Proof of Proposition 1.1.7, near the bottom",
+      "scan": "en terme d'un ordre",
+      "tex": "en terme d'un ordre",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "en termes d'un ordre",
+      "note": "The expression requires the plural termes. The TeX keeps the printed singular."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 261: 1/1; 262: 0/1; 263: 1/3; 264: 0/0; 265: 0/2."
+}

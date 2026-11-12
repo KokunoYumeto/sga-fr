@@ -1,0 +1,634 @@
+[
+ {
+  "page": 465,
+  "where": "last word of page_465.tex, printed as the first word of p. 466: 'donne :'",
+  "scan": "p. 466 begins 'donne :' (colon after 'donne'), then the display",
+  "tex": "'(théorème du changement de base), ce qui donne' with no colon",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "ce qui donne",
+   "new": "ce qui donne:"
+  },
+  "note": "Printed on p. 466; filed under p. 465 because the word stands in page_465.tex until the folio-466 marker is moved (marker finding of p. 466): apply before moving the marker (the move anchor 'donne' still matches)."
+ },
+ {
+  "page": 466,
+  "where": "top of the page: 'donne :' (folio-466 marker)",
+  "scan": "p. 466 begins 'donne :', then the display L_F = ∏_i(∏_{y∈Y°} L_{R^i_!u(F)_y})^{(-1)^i} = ...; p. 465 ends '(théorème du changement de base), ce qui' (b461_465/page_465_s4.png)",
+  "tex": "'donne' is the last word of page_465.tex ('(théorème du changement de base), ce qui donne'); the folio-466 marker follows it, so page_466.tex begins with the display",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 466 really begins at 'donne'. Exact fix: python -I move_marker.py 5 466 'donne' --before (simulated in memory on both layers: the marker moves back 6 characters to its own line between '(théorème du changement de base), ce qui' and 'donne'). Run it once only: 'donne' occurs 60 times above the marker, and a second run would move the marker about 39,000 characters back. Apply the colon fix filed under p. 465 first. Text not moved."
+ },
+ {
+  "page": 466,
+  "where": "first display, the L inside the product over y ∈ Y°",
+  "scan": "L_{R^i_!u(F)_y}: no parentheses around R^i_!u(F); plain typed R",
+  "tex": "L_{(\\R^i_!u(F))_y}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "L_{(\\R^i_!u(F))_y}",
+   "new": "L_{\\mathrm{R}^i_!u(F)_y}"
+  },
+  "note": "The parentheses are added by the TeX. The same edit writes the print's plain R (see the font findings)."
+ },
+ {
+  "page": 466,
+  "where": "first display, last member ∏_i(L_{R^i_!u(F)})^{(-1)^i}",
+  "scan": "plain typed R (no double underline)",
+  "tex": "\\R^i_!u(F)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\right)^{(-1)^i}\n=\\prod_i\\bigl(L_{\\R",
+   "new": "\\right)^{(-1)^i}\n=\\prod_i\\bigl(L_{\\mathrm{R}"
+  },
+  "note": "\\R is \\mathbb{R} after Exposé III B (\\renewcommand{\\R}{\\mathbb{R}} at its end), so the TeX sets a double-struck R. On pp. 466-469 the R of R^i_!, R^j_!, R^k_! is a plain typed R (no double underline); on p. 470 both RΓ subscripts have a double-underlined R, where \\R is right. Itemized (no blanket rule)."
+ },
+ {
+  "page": 466,
+  "where": "Corollaire (after Lemme 1)",
+  "scan": "underlined: 'Soient' | 'un morphisme fini de schémas de type fini sur' | 'et' | 'un' | 'faisceau constructible sur' (after the hyphen of Ω-) | 'La propriété' | 'est vraie'",
+  "tex": "the statement in upright type, no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $u:X\\to Y$ un morphisme fini de schémas de type fini sur $\\mathbb F_p$, et $F$ un $\\Omega$-faisceau constructible sur $X$. La propriété $(P_{F,u})$ est vraie.",
+   "new": "\\emph{Soient} $u:X\\to Y$ \\emph{un morphisme fini de schémas de type fini sur} $\\mathbb F_p$, \\emph{et} $F$ \\emph{un} $\\Omega$-\\emph{faisceau constructible sur} $X$. \\emph{La propriété} $(P_{F,u})$ \\emph{est vraie}."
+  },
+  "note": "The statement environment sets an upright body with no underline; \\emph is this exposé's markup for underlined text (\\emph{(Transitivité.)} in § 1) and the form used for underlined statements in Exposés III B, V and XII. Formulas, math letters and punctuation are not underlined in the print; the underline of Ω-faisceau starts after the hyphen."
+ },
+ {
+  "page": 466,
+  "where": "'u_*(F) ≃ ⊕_{x∈X} u_*(F_x) ; pour établir la formule'",
+  "scan": "the formula runs on in the line and is followed by ' ;' and a lower-case 'pour'",
+  "tex": "the display ends 'u_*(F_x).' and the next line begins 'Pour établir'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "u_*(F_x).\n\\]\nPour",
+   "new": "u_*(F_x);\n\\]\npour"
+  },
+  "note": "Full stop for the print's semicolon, capital P for 'pour'. The display for a formula run into the line is not reported (layout)."
+ },
+ {
+  "page": 466,
+  "where": "'pour établir la formule (P_{F,u}) L_F = L_{u_*(F)} on est donc ramené': after (P_{F,u})",
+  "scan": "no comma after (P_{F,u})",
+  "tex": "'la formule $(P_{F,u})$, $L_F=...'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "formule $(P_{F,u})$,",
+   "new": "formule $(P_{F,u})$"
+  },
+  "note": "Comma added by the TeX. The next two findings (u_*(F), second comma) are disjoint edits of the same phrase."
+ },
+ {
+  "page": 466,
+  "where": "same phrase: L_F = L_{u_*(F)}",
+  "scan": "L_F = L_{u_*(F)}: u_*(F) with parentheses",
+  "tex": "L_F=L_{u_*F}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "L_F=L_{u_*F}",
+   "new": "L_F=L_{u_*(F)}"
+  },
+  "note": "The TeX drops the parentheses (also in the display after '(n°1) :', next findings)."
+ },
+ {
+  "page": 466,
+  "where": "same phrase: after L_{u_*(F)}",
+  "scan": "no comma before 'on est donc ramené'",
+  "tex": "'$, on est donc'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$, on est donc",
+   "new": "$ on est donc"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 466,
+  "where": "'on a par définition (n°1) :'",
+  "scan": "(n°1) followed by ' :' and the formula",
+  "tex": "(n\\textsuperscript{o}~1) and the display, no colon",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(n\\textsuperscript{o}~1)\n",
+   "new": "(n\\textsuperscript{o}~1):\n"
+  },
+  "note": "Colon missing in the TeX."
+ },
+ {
+  "page": 466,
+  "where": "display after '(n°1) :'",
+  "scan": "L_F = L_{g_*(F)} = L_{h_*u_*(F)} = L_{u_*(F)} , puisque",
+  "tex": "L_F=L_{g_*F}=L_{h_*u_*F}=L_{u_*F},",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "L_F=L_{g_*F}=L_{h_*u_*F}=L_{u_*F},",
+   "new": "L_F=L_{g_*(F)}=L_{h_*u_*(F)}=L_{u_*(F)},"
+  },
+  "note": "The TeX drops the parentheses around F three times. The comma before 'puisque' is printed."
+ },
+ {
+  "page": 466,
+  "where": "Lemme 2, first sentence",
+  "scan": "underlined: 'Soient' | 'des morphismes de schémas de type fini sur' | 'et' | 'un' | 'faisceau constructible sur' (after the hyphen)",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $u:X\\to Y$, $v:Y\\to Z$ des morphismes de schémas de type fini sur $\\mathbb F_p$ et $F$ un $\\Omega$-faisceau constructible sur $X$.",
+   "new": "\\emph{Soient} $u:X\\to Y$, $v:Y\\to Z$ \\emph{des morphismes de schémas de type fini sur} $\\mathbb F_p$ \\emph{et} $F$ \\emph{un} $\\Omega$-\\emph{faisceau constructible sur} $X$."
+  },
+  "note": "The statement environment sets an upright body with no underline; \\emph is this exposé's markup for underlined text (\\emph{(Transitivité.)} in § 1) and the form used for underlined statements in Exposés III B, V and XII. Formulas, math letters and punctuation are not underlined in the print; the underline of Ω-faisceau starts after the hyphen."
+ },
+ {
+  "page": 466,
+  "where": "Lemme 2, second sentence",
+  "scan": "underlined: 'Si les propriétés' | 'et' | 'pour tout' | 'sont vraies' | 'alors' | 'est vraie'; plain typed R in (P_{R^i_!u(F),v})",
+  "tex": "no underline markup; (P_{\\R^i_!u(F),v})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Si les propriétés $(P_{F,u})$ et $(P_{\\R^i_!u(F),v})$ pour tout $i$ sont vraies, alors $(P_{F,v\\circ u})$ est vraie.",
+   "new": "\\emph{Si les propriétés} $(P_{F,u})$ \\emph{et} $(P_{\\mathrm{R}^i_!u(F),v})$ \\emph{pour tout} $i$ \\emph{sont vraies}, \\emph{alors} $(P_{F,v\\circ u})$ \\emph{est vraie}."
+  },
+  "note": "As the first sentence. The same edit writes the print's plain R in (P_{R^i_!u(F),v}) (\\R is \\mathbb{R} here; see the font findings): one edit because the old of a separate R fix could not avoid this one."
+ },
+ {
+  "page": 466,
+  "where": "'En effet' before the display",
+  "scan": "'En effet' with no punctuation",
+  "tex": "En effet,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "En effet,",
+   "new": "En effet"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 466,
+  "where": "'En effet' display, first line (three R)",
+  "scan": "L_F = ∏_i(L_{R^i_!u(F)})^{(-1)^i} = ∏_i(∏_j(L_{R^j_!v(R^i_!u(F))})...: plain typed R",
+  "tex": "\\R three times",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "L_F=\\prod_i\\bigl(L_{\\R^i_!u(F)}\\bigr)^{(-1)^i}\n =\\prod_i\\Bigl(\\prod_j\\bigl(L_{\\R^j_!v(\\R^i_!u(F))}",
+   "new": "L_F=\\prod_i\\bigl(L_{\\mathrm{R}^i_!u(F)}\\bigr)^{(-1)^i}\n =\\prod_i\\Bigl(\\prod_j\\bigl(L_{\\mathrm{R}^j_!v(\\mathrm{R}^i_!u(F))}"
+  },
+  "note": "As above (plain R). Does not touch the exponents of the misprint finding below."
+ },
+ {
+  "page": 466,
+  "where": "'En effet' display, second member",
+  "scan": "∏_i(∏_j(L_{R^j_!v(R^i_!u(F))})^{(-1)^i})^{(-1)^j}: inner exponent (-1)^i, outer (-1)^j",
+  "tex": "\\prod_i\\Bigl(\\prod_j\\bigl(L_{\\R^j_!v(\\R^i_!u(F))}\\bigr)^{(-1)^i}\\Bigr)^{(-1)^j} (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\prod_i\\Bigl(\\prod_j\\bigl(L_{\\mathrm{R}^j_!v(\\mathrm{R}^i_!u(F))}\\bigr)^{(-1)^j}\\Bigr)^{(-1)^i}",
+  "note": "The exponents are interchanged: the outer exponent (-1)^j uses the index of the inner product. By (P_{R^i_!u(F),v}), L_{R^i_!u(F)} = ∏_j(L_{R^j_!v(R^i_!u(F))})^{(-1)^j}, which gives the next line ∏_{i,j}(...)^{(-1)^{i+j}}. The diplomatic TeX keeps the printed reading; the current layer already has a corrected form, '\\prod_i\\prod_j\\bigl(...\\bigr)^{(-1)^i(-1)^j}'. The corrected reading is given with the R of the font fix."
+ },
+ {
+  "page": 466,
+  "where": "'En effet' display, last line ∏_{i,j}",
+  "scan": "plain typed R twice",
+  "tex": "\\R^j_!v(\\R^i_!u(F))",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\prod_{i,j}\\bigl(L_{\\R^j_!v(\\R^i_!u(F))}",
+   "new": "=\\prod_{i,j}\\bigl(L_{\\mathrm{R}^j_!v(\\mathrm{R}^i_!u(F))}"
+  },
+  "note": "As above (plain R)."
+ },
+ {
+  "page": 466,
+  "where": "'d'après (P_{F,u}) et (P_{R^i_!u(F),v}) . La suite spectrale'",
+  "scan": "plain typed R",
+  "tex": "(P_{\\R^i_!u(F),v})",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "et $(P_{\\R^i_!u(F),v})$. La",
+   "new": "et $(P_{\\mathrm{R}^i_!u(F),v})$. La"
+  },
+  "note": "As above (plain R)."
+ },
+ {
+  "page": 466,
+  "where": "Leray spectral sequence R^j_!v(R^i_!u(F)) ⟹ R^k_!(vou)(F)",
+  "scan": "plain typed R three times",
+  "tex": "\\R^j_!v(\\R^i_!u(F))\\Longrightarrow \\R^k_!(v\\circ u)(F)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^j_!v(\\R^i_!u(F))\\Longrightarrow \\R^k_!(v\\circ u)(F)",
+   "new": "\\mathrm{R}^j_!v(\\mathrm{R}^i_!u(F))\\Longrightarrow \\mathrm{R}^k_!(v\\circ u)(F)"
+  },
+  "note": "As above (plain R). The display for a formula run into the line is not reported (layout)."
+ },
+ {
+  "page": 467,
+  "where": "first display L_F = ∏_k(L_{R^k_!(vou)(F)})^{(-1)^k}",
+  "scan": "plain typed R",
+  "tex": "L_{\\R^k_!(v\\circ u)(F)}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "L_{\\R^k_!(v\\circ u)(F)}",
+   "new": "L_{\\mathrm{R}^k_!(v\\circ u)(F)}"
+  },
+  "note": "\\R is \\mathbb{R} after Exposé III B (\\renewcommand{\\R}{\\mathbb{R}} at its end), so the TeX sets a double-struck R. On pp. 466-469 the R of R^i_!, R^j_!, R^k_! is a plain typed R (no double underline); on p. 470 both RΓ subscripts have a double-underlined R, where \\R is right. Itemized (no blanket rule)."
+ },
+ {
+  "page": 467,
+  "where": "Lemme 3, first sentence",
+  "scan": "underlined: 'Soit' | 'un schéma de type fini sur' | 'et soit' | 'son morphisme structural'",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $X$ un schéma de type fini sur $\\mathbb F_p$, et soit $g:X\\to e$ son morphisme structural.",
+   "new": "\\emph{Soit} $X$ \\emph{un schéma de type fini sur} $\\mathbb F_p$, \\emph{et soit} $g:X\\to e$ \\emph{son morphisme structural}."
+  },
+  "note": "The statement environment sets an upright body with no underline; \\emph is this exposé's markup for underlined text (\\emph{(Transitivité.)} in § 1) and the form used for underlined statements in Exposés III B, V and XII. Formulas, math letters and punctuation are not underlined in the print; the underline of Ω-faisceau starts after the hyphen."
+ },
+ {
+  "page": 467,
+  "where": "Lemme 3 a), first sentence",
+  "scan": "underlined: 'Considérons un' | 'faisceau constructible' (after the hyphen) | 'sur' | 'un' | 'sous-schéma fermé' | 'de' | 'et l'ouvert complémentaire'; 'a)' not underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Considérons un $\\Omega$-faisceau constructible $F$ sur $X$, un sous-schéma fermé $Y$ de $X$ et l'ouvert complémentaire $U=X-Y$.",
+   "new": "\\item \\emph{Considérons un} $\\Omega$-\\emph{faisceau constructible} $F$ \\emph{sur} $X$, \\emph{un sous-schéma fermé} $Y$ \\emph{de} $X$ \\emph{et l'ouvert complémentaire} $U=X-Y$."
+  },
+  "note": "As in Lemme 3."
+ },
+ {
+  "page": 467,
+  "where": "Lemme 3 a), second sentence",
+  "scan": "underlined: 'Si le théorème est vrai pour deux des couples' | 'il est vrai pour le troisième'",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Si le théorème est vrai pour deux des couples $(X,F)$, $(Y,F|Y)$, $(U,F|U)$, il est vrai pour le troisième.",
+   "new": "\\emph{Si le théorème est vrai pour deux des couples} $(X,F)$, $(Y,F|Y)$, $(U,F|U)$, \\emph{il est vrai pour le troisième}."
+  },
+  "note": "As in Lemme 3."
+ },
+ {
+  "page": 467,
+  "where": "Lemme 3 b), 'Considérons une suite exacte'",
+  "scan": "underlined: 'Considérons une suite exacte' (the sequence 0 --> F' --> F --> F\" --> 0 not)",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Considérons une suite exacte",
+   "new": "\\item \\emph{Considérons une suite exacte}"
+  },
+  "note": "As in Lemme 3."
+ },
+ {
+  "page": 467,
+  "where": "Lemme 3 b), after the sequence",
+  "scan": "underlined: 'de' | 'faisceaux constructibles sur' (after the hyphen) | 'si le théorème est vrai pour deux des couples' | 'il est vrai pour le troisième'",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "de $\\Omega$-faisceaux constructibles sur $X$; si le théorème est vrai pour deux des couples $(X,F')$, $(X,F)$, $(X,F'')$, il est vrai pour le troisième.",
+   "new": "\\emph{de} $\\Omega$-\\emph{faisceaux constructibles sur} $X$; \\emph{si le théorème est vrai pour deux des couples} $(X,F')$, $(X,F)$, $(X,F'')$, \\emph{il est vrai pour le troisième}."
+  },
+  "note": "As in Lemme 3."
+ },
+ {
+  "page": 467,
+  "where": "exact sequence after 'La suite exacte' (four R)",
+  "scan": "... --> R^i_!g_U(F|U) --> R^i_!g(F) --> R^i_!g_Y(F|Y) --> R^{i+1}g_U(F|U) --> ...: all four R plain typed",
+  "tex": "\\R four times",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cdots\\longrightarrow \\R^i_!g_U(F|U)\\longrightarrow \\R^i_!g(F)\n\\longrightarrow \\R^i_!g_Y(F|Y)\\longrightarrow \\R^{i+1}",
+   "new": "\\cdots\\longrightarrow \\mathrm{R}^i_!g_U(F|U)\\longrightarrow \\mathrm{R}^i_!g(F)\n\\longrightarrow \\mathrm{R}^i_!g_Y(F|Y)\\longrightarrow \\mathrm{R}^{i+1}"
+  },
+  "note": "As on p. 466 (plain R). Listed before the misprint fix of the same display; the two olds are disjoint."
+ },
+ {
+  "page": 467,
+  "where": "same exact sequence, fourth term",
+  "scan": "R^{i+1}g_U(F|U): no '!' under the R (the three other R of the sequence have it; the scan is clean there, crops_466_470/c467_ri1.png)",
+  "tex": "\\R^{i+1}_!g_U(F|U) (silent correction)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "_!g_U(F|U)\\longrightarrow\\cdots",
+   "new": "g_U(F|U)\\longrightarrow\\cdots"
+  },
+  "corrected": "\\mathrm{R}^{i+1}_!g_U(F|U)",
+  "note": "The exact sequence of cohomology with proper supports needs R^{i+1}_!. The fix removes only the '_!'."
+ },
+ {
+  "page": 467,
+  "where": "'et la proposition 1a) (n°1) donnent :'",
+  "scan": "'donnent :' with a colon",
+  "tex": "donnent, then the display, no colon",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(n\\textsuperscript{o}~1) donnent\n",
+   "new": "(n\\textsuperscript{o}~1) donnent:\n"
+  },
+  "note": "Colon missing in the TeX."
+ },
+ {
+  "page": 467,
+  "where": "product display, left member and first factor",
+  "scan": "∏_i(L_{R^i_!g(F)})^{(-1)^i} = ∏_i(L_{R^i_!g_U(F|U)} ...: plain typed R",
+  "tex": "\\R twice",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\prod_i\\bigl(L_{\\R^i_!g(F)}\\bigr)^{(-1)^i}\n=\\prod_i\\bigl(L_{\\R^i_!g_U",
+   "new": "\\prod_i\\bigl(L_{\\mathrm{R}^i_!g(F)}\\bigr)^{(-1)^i}\n=\\prod_i\\bigl(L_{\\mathrm{R}^i_!g_U"
+  },
+  "note": "As above (plain R). The four edits of this display (two font, symbol, comma) are disjoint."
+ },
+ {
+  "page": 467,
+  "where": "product display, between the two factors",
+  "scan": "L_{R^i_!g_U(F|U)} · L_{R^i_!g_Y(F|Y)}: a product dot between the factors",
+  "tex": "\\, (thin space only)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(F|U)}\\,L_{",
+   "new": "(F|U)}\\cdot L_{"
+  },
+  "note": "The TeX drops the printed product dot (a typed dot, written \\cdot as the volume does for the typewriter's dot)."
+ },
+ {
+  "page": 467,
+  "where": "product display, second factor",
+  "scan": "L_{R^i_!g_Y(F|Y)}: plain typed R",
+  "tex": "\\R^i_!g_Y(F|Y)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^i_!g_Y(F|Y)}",
+   "new": "\\mathrm{R}^i_!g_Y(F|Y)}"
+  },
+  "note": "As above (plain R)."
+ },
+ {
+  "page": 467,
+  "where": "end of the product display",
+  "scan": "no punctuation after (...)^{(-1)^i}; the next line is 'et la proposition 1b) (n°1) permet alors de conclure.'",
+  "tex": "\\bigr)^{(-1)^i},",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigr)^{(-1)^i},\n\\]",
+   "new": "\\bigr)^{(-1)^i}\n\\]"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 468,
+  "where": "top of the page: 'propres.' (folio-468 marker)",
+  "scan": "p. 468 begins 'propres.', then the indented 'Utilisons maintenant les lemmes précédents ...'; p. 467 ends '... analogues à celles de la cohomologie à supports'",
+  "tex": "'propres.' ends page_467.tex ('... la cohomologie à supports propres.' and a blank line); the folio-468 marker follows, and page_468.tex begins 'Utilisons maintenant'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 468 really begins at 'propres.'. Exact fix: python -I move_marker.py 5 468 'propres.' --before (simulated in memory on both layers: the marker moves back 10 characters to its own line between '... cohomologie à supports' and 'propres.'). Run it once only: a second run would move the marker to an earlier 'propres.' about 452,000 characters back. Text not moved."
+ },
+ {
+  "page": 468,
+  "where": "1ère Réduction: 'Il suffit donc de démontrer le théorème dans le cas où X est affine.'",
+  "scan": "a new, indented paragraph after '... puisque X = ⋃_{i⩾1} U_i .'",
+  "tex": "run on in the paragraph of the 1ère Réduction",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "U_i$. Il suffit donc",
+   "new": "U_i$.\n\nIl suffit donc"
+  },
+  "note": "Paragraph break; drop it if paragraphing is left to a global pass."
+ },
+ {
+  "page": 468,
+  "where": "2ème Réduction: 'défini à partir d'un isomorphisme : E^n ≃ E^1 x E^{n-1}'",
+  "scan": "'isomorphisme :' with a colon before the formula",
+  "tex": "'d'un isomorphisme $\\mathbb E^n\\simeq...' (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d'un isomorphisme $\\mathbb E^n",
+   "new": "d'un isomorphisme: $\\mathbb E^n"
+  },
+  "note": "Colon missing in the TeX."
+ },
+ {
+  "page": 468,
+  "where": "end of page_468.tex, printed at the top of p. 469: '(E^1, R^i_!w(F))'",
+  "scan": "plain typed R",
+  "tex": "\\R^i_!w(F)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^i_!w(F)",
+   "new": "\\mathrm{R}^i_!w(F)"
+  },
+  "note": "As on p. 466 (plain R). Filed under p. 468 because the text stands in page_468.tex until the folio-469 marker is moved: apply before moving the marker (the old stays unique on p. 469 after the move; the move's anchor '$(\\mathbb E^1,' is not touched)."
+ },
+ {
+  "page": 469,
+  "where": "top of the page: '(E^1, R^i_!w(F)) . On se ramène' (folio-469 marker)",
+  "scan": "p. 469 begins '(E^1,R^i_!w(F)) . On se ramène ainsi au cas où X = E^1 est la droite affine.'; p. 468 ends 'Grâce au lemme 2 on voit qu'il suffit d'établir le théorème pour les couples'",
+  "tex": "'$(\\mathbb E^1,\\R^i_!w(F))$. On se ramène' ends page_468.tex; the folio-469 marker follows, and page_469.tex begins 'ainsi au cas où'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 469 really begins at '$(\\mathbb E^1,'. Exact fix: python -I move_marker.py 5 469 '$(\\mathbb E^1,' --before (simulated in memory on both layers: the marker moves back 41 characters to its own line between '... pour les couples' and '$(\\mathbb E^1,\\R^i_!w(F))$. On se ramène'; a second run prints 'anchor not found'). Text not moved."
+ },
+ {
+  "page": 469,
+  "where": "3ème Réduction: '... au point à l'infini de P^1 ; comme le théorème est vrai'",
+  "scan": "'P^1 ;' then a lower-case 'comme'",
+  "tex": "'de $\\mathbb P^1$. Comme le théorème'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de $\\mathbb P^1$. Comme",
+   "new": "de $\\mathbb P^1$; comme"
+  },
+  "note": "Full stop for the print's semicolon, capital C for 'comme'."
+ },
+ {
+  "page": 469,
+  "where": "3ème Réduction: '(comme i est une immersion ouverte on a : F = i_!(F)|E^1).'",
+  "scan": "'on a :' with a colon",
+  "tex": "'on a $F=i_!(F)|\\mathbb E^1$' (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "ouverte on a $F",
+   "new": "ouverte on a: $F"
+  },
+  "note": "Colon missing in the TeX."
+ },
+ {
+  "page": 469,
+  "where": "heading 'n°3. Démonstration du théorème.'",
+  "scan": "underlined title ending with a full stop",
+  "tex": "\\subsubsection*{n\\textsuperscript{o} 3. Démonstration du théorème}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Démonstration du théorème}",
+   "new": "Démonstration du théorème.}"
+  },
+  "note": "Final full stop of an underlined title dropped (the \\subsubsection* setting is accepted)."
+ },
+ {
+  "page": 469,
+  "where": "display after 'Reprenons la formule (1) :'",
+  "scan": "L_F = ∏_i(L_{R^i_!g(F)})^{(-1)^i}: plain typed R",
+  "tex": "L_{\\R^i_!g(F)}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "L_{\\R^i_!g(F)}",
+   "new": "L_{\\mathrm{R}^i_!g(F)}"
+  },
+  "note": "As on p. 466 (plain R)."
+ },
+ {
+  "page": 470,
+  "where": "top of the page (folio-470 marker): the display ∑_{n⩾1}(∑_i(-1)^i Tr(f^{-n}_{H^i_!(X̄,F̄)}))t^n/n",
+  "scan": "p. 470 begins with the display ∑_{n⩾1}(...)t^n/n ., then 'En comparant les coefficients ...'; p. 469 ends with the display ∑_{x∈X°}∑_{n=1}^∞ Tr(...)t^{nd(x)}/n = ∑_{n=1}^∞(...)t^n/n and 'tandis que celui du second membre est :'",
+  "tex": "page_470.tex begins with the display '\\sum_{x\\in X^0}...' and 'tandis que celui du second membre est', both printed on p. 469",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 470 really begins at the '\\[' of the display '\\sum_{n\\ge1}...'. Exact fix (bash): python -I move_marker.py 5 470 $'\\\\[\\n\\\\sum_{n\\\\ge1}' (forward; the anchor is '\\[', a line break, '\\sum_{n\\ge1}', unique in s5.tex; simulated in memory on both layers: the marker moves forward 204 characters to its own line between 'membre est' and '\\['; a second run leaves it there). The two fixes filed under p. 470 for the moved lines (comma, colon) keep a unique old on p. 469 after the move. Text not moved."
+ },
+ {
+  "page": 470,
+  "where": "display ∑_{x∈X°} ... = ∑_{n=1}^∞(∑_{d(x)|n} ...)t^n/n (printed on p. 469)",
+  "scan": "no punctuation after t^n/n; the next line is 'tandis que celui du second membre est :'",
+  "tex": "t^n/n,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "t^n/n,\n\\]",
+   "new": "t^n/n\n\\]"
+  },
+  "note": "Comma added at the end of the display. Printed on p. 469 (marker finding above)."
+ },
+ {
+  "page": 470,
+  "where": "'tandis que celui du second membre est :' (printed on p. 469)",
+  "scan": "'membre est :' with a colon",
+  "tex": "membre est (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "membre est",
+   "new": "membre est:"
+  },
+  "note": "Colon missing in the TeX. Printed on p. 469 (marker finding above)."
+ },
+ {
+  "page": 470,
+  "where": "'les morphismes de Frobenius Fr*_{F_ν/X} définissent'",
+  "scan": "Fr*_{F_ν/X} with no bar over Fr (double-underlined Fr, star above), clean scan (crops_466_470/c470_fr1.png); the bars appear only in the two pairs (f̄r̄_X, F̄r̄*_{...}) further down",
+  "tex": "\\overline{\\Fr}^*_{F_\\nu/X}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\overline{\\Fr}^*_{F_\\nu/X}$ définissent",
+   "new": "\\Fr^*_{F_\\nu/X}$ définissent"
+  },
+  "note": "Bar added by the TeX. The print may intend the base change to X̄ here (its display writes fr*_X(F̄) --> F̄ with bars only on F), but the TeX's bar is not printed, and the TeX leaves fr_X without one."
+ },
+ {
+  "page": 470,
+  "where": "display 'Fr*_{F/X} : fr*_X(F̄) --> F̄ , d'où une correspondance'",
+  "scan": "no bar over Fr (nor over fr)",
+  "tex": "\\overline{\\Fr}^*_{F/X}:\\fr_X^*(\\bar F)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\overline{\\Fr}^*_{F/X}:\\fr_X^*",
+   "new": "\\Fr^*_{F/X}:\\fr_X^*"
+  },
+  "note": "As the previous finding. The pairs (\\bar{\\fr}_X,\\overline{\\Fr}^*_{F_\\nu/X}) and (\\bar{\\fr}_X,\\overline{\\Fr}^*_{F/X}) agree with the print."
+ },
+ {
+  "page": 470,
+  "where": "'est l'inverse de f_{RΓ_X̄(F̄)} (§2, n°3, corollaire de la proposition 3)'",
+  "scan": "f_{RΓ_X̄(F̄)}: F̄ without the index ν (crops_466_470/c470_fRG.png), while the endomorphism inverted is fr_{RΓ_X̄(F̄_ν)}",
+  "tex": "f_{\\R\\Gamma_{\\bar X}(\\bar F)} (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "f_{\\R\\Gamma_{\\bar X}(\\bar F_\\nu)}",
+  "note": "An endomorphism of RΓ_X̄(F̄_ν) is the inverse of f on the same object: the index ν is missing (the sentence begins 'Pour chaque entier ν'). The TeX keeps the printed reading. Both RΓ here have a double-underlined R, so \\R is right."
+ },
+ {
+  "page": 470,
+  "where": "'est l'inverse de f_{H^i(X̄,F̄)} ; ainsi :'",
+  "scan": "'ainsi :' with a colon (faint but both dots visible, crops_466_470/c470_ainsi.png)",
+  "tex": "'; ainsi' then the display, no colon",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "$; ainsi",
+   "new": "$; ainsi:"
+  },
+  "note": "Colon missing in the TeX."
+ },
+ {
+  "page": 470,
+  "where": "'pour tout n ⩾ 1 et tout i .' / 'Appliquons ce résultat ...'",
+  "scan": "'Appliquons ce résultat dans le cas particulier ...' starts at the left margin after the display, not indented (new paragraphs on these pages are indented: 'Transformons encore', p. 469 'Au bout de ces réductions', 'Reprenons'): the paragraph goes on",
+  "tex": "a blank line before 'Appliquons' (new paragraph)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "et tout $i$.\n\nAppliquons",
+   "new": "et tout $i$.\nAppliquons"
+  },
+  "note": "Paragraph break added by the TeX; drop it if paragraphing is left to a global pass."
+ },
+ {
+  "page": 470,
+  "where": "end of the page (folio-471 marker): the display f^{-n}_{F_x̄} = fr^n_{F_x̄} = (Fr*_{F_x̄/x̄})^n",
+  "scan": "p. 470 ends 'Nous obtenons :' and the footnote (*); p. 471 begins with the display f^{-n}_{F_x̄} = fr^n_{F_x̄} = (Fr*_{F_x̄/x̄})^n (b471_475/page_471_s1.png)",
+  "tex": "the display '\\[ f^{-n}_{F_{\\bar x}}=\\fr^n_{F_{\\bar x}}=(\\Fr^*_{F_{\\bar x}/\\bar x})^n \\]' ends page_470.tex; the folio-471 marker follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 471 really begins at the '\\[' of that display. Exact fix (bash): python -I move_marker.py 5 471 $'\\\\[\\nf^{-n}_{F_{\\\\bar x}}' --before (the anchor is '\\[', a line break, 'f^{-n}_{F_{\\bar x}}', unique in s5.tex; simulated in memory on both layers: the marker moves back 75 characters to its own line between 'Nous obtenons:' and '\\['; a second run prints 'anchor not found'). Batch 471-475 may report the same move: apply it once. Text not moved; the display agrees with the print of p. 471 apart from the double-underlined fr/Fr (convention, see the message)."
+ }
+]

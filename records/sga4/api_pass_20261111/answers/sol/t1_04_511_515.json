@@ -1,0 +1,130 @@
+[
+ {
+  "page": 511,
+  "where": "Début de page, avant « La formule 13.4.5 »",
+  "scan": "Trois lignes d'isomorphismes portant les renvois (13.4.1), (10.3.1) et (12.1).",
+  "tex": "\\end{alignat*}\nLa\\pageoriginale formule (13.4.5)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "La coupe omet les trois lignes du display imprimées en haut de cette page et n'en fournit que la fermeture. Le début réel de p. 511 est ce display, avant « La formule 13.4.5 ». Recouper l'extrait avec la page précédente, sans ajouter ces lignes au texte source."
+ },
+ {
+  "page": 511,
+  "where": "Corollaire 13.5, référence du foncteur fibre",
+  "scan": "(IV 6.1)",
+  "tex": "(\\hyperref[IV.def6.1]{6.1})",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\hyperref[IV.def6.1]{6.1})",
+   "new": "(\\hyperrefext[IV][IV.def6.1]{6.1})"
+  },
+  "note": "Le numéro d'exposé IV, explicitement imprimé, manque dans le renvoi."
+ },
+ {
+  "page": 513,
+  "where": "Exercice 13.9 c), condition (i), objet quantifié",
+  "scan": "Pour tout $X\\in \\ob E'$",
+  "tex": "Pour tout $X\\in \\ob E'$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Pour tout $X'\\in \\ob E'$",
+  "note": "L'objet du topos cible doit être X', comme dans la section s' qui suit. Le TeX conserve l'absence de prime de l'imprimé."
+ },
+ {
+  "page": 513,
+  "where": "Exercice 13.9 c), condition (i), définition de X",
+  "scan": "$X=f^{-1}(X)$",
+  "tex": "$X=f^{-1}(X)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$X=f^{-1}(X')$",
+  "note": "L'argument de f^{-1} doit être l'objet X' de E'. Le TeX conserve cette coquille de l'imprimé."
+ },
+ {
+  "page": 513,
+  "where": "Exercice 13.9 c), condition (i), égalité affichée",
+  "scan": "X'_{s'}=f^{-1}(X_s)",
+  "tex": "X'_{s'}=f^{-1}(X_s){\\quoi}.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "X_s=f^{-1}(X'_{s'})",
+  "note": "Le membre de gauche doit être le sous-objet de X dans E ; le sous-objet de X' doit figurer dans l'argument de f^{-1}. Le TeX conserve l'égalité fautive de l'imprimé."
+ },
+ {
+  "page": 513,
+  "where": "Exercice 13.9 d), référence du topos associé à un espace annelé",
+  "scan": "(IV 2.1)",
+  "tex": "(\\hyperref[IV.subsec2.1]{2.1})",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\hyperref[IV.subsec2.1]{2.1})",
+   "new": "(\\hyperrefext[IV][IV.subsec2.1]{2.1})"
+  },
+  "note": "Le numéro d'exposé IV, présent dans l'imprimé, est omis."
+ },
+ {
+  "page": 514,
+  "where": "Exercice 13.9 f), après l'injection de k(p) dans k",
+  "scan": "dans $k$, où",
+  "tex": "dans $k$. où",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $k$. où",
+   "new": "dans $k$, où"
+  },
+  "note": "Le scan porte une virgule ; le point du TeX coupe la proposition introduite par « où »."
+ },
+ {
+  "page": 514,
+  "where": "Exercice 13.9 f), référence aux EGA",
+  "scan": "EGA I 2.4.4",
+  "tex": "EGA 1 2.4.4",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "EGA 1 2.4.4",
+   "new": "EGA I 2.4.4"
+  },
+  "note": "Le scan donne le chiffre romain I, non le chiffre arabe 1."
+ },
+ {
+  "page": 515,
+  "where": "14.1, renvoi après j^{\\ast}A",
+  "scan": "(11.2.2)",
+  "tex": "\\sisi{\\hyperref[IV.subsubsec11.2.2]{11.2.2}}{\\hyperref[IV.subsubsec11.2.1]{11.2.1}}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\hyperref[IV.subsubsec11.2.1]{11.2.1}",
+  "note": "Le mauvais renvoi 11.2.2 est une coquille de l'imprimé. Le premier argument de \\sisi est conforme au scan ; le TeX enregistre déjà la correction en 11.2.1 dans le second."
+ },
+ {
+  "page": 515,
+  "where": "14.1, morphisme associé à l'annelage de U",
+  "scan": "et le morphisme de topos $i$",
+  "tex": "et le morphisme de topos $i$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "et le morphisme de topos $j$",
+  "note": "L'annelage de U par j^{\\ast}A fait de j, non de i, un morphisme de topos annelés. Le TeX conserve la coquille de l'imprimé."
+ },
+ {
+  "page": 515,
+  "where": "14.1, morphisme associé à l'annelage de F",
+  "scan": "$j$, complété de manière évidente, est alors un morphisme de topos",
+  "tex": "$j$, complété de manière évidente, est alors un morphisme de topos",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$i$, complété de manière évidente, est alors un morphisme de topos",
+  "note": "Après l'annelage de F par i^{\\ast}A, c'est i qui devient un morphisme de topos annelés. Le TeX conserve cette seconde lettre intervertie de l'imprimé."
+ }
+]

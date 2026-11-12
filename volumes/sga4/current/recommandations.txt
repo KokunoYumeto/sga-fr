@@ -1,0 +1,55 @@
+— Corrections des erreurs.
+
+Les erreurs sont de deux types.
+
+∙ Celles ne figurant pas dans le texte orignal,
+càd ayant été introduites lors de la conversion de l'original
+en LaTeX (par des spécialistes certes, mais ni francophones ni
+géomètres algébristes).
+Elles peuvent bien entendu être modifiées sans plus de commentaire.
+
+∙ Celles figurant dans l'original.
+Les plus triviales (orthographiques/typographiques par exemple) peuvent également
+être modifiées directement (bien qu'il soit possible de procéder
+comme dans le cas suivant). Pour les autres, on remplace :
+	erreur-dans-texte-original
+par
+	\sisi{erreur-dans-texte-original}{correction}
+
+Lors de la compilation, on choisit la version originale/corrigée avec une ligne
+	\setboolean{original}{true/false}
+dans le préambule.
+
+— Commentaires.
+
+Les commentaires mathématiques (pour clarifier, mentionner une amélioration
+ultérieure, signaler une difficulté/un doute etc.) peuvent être signalés par la commande
+	\nde{Commentaire.}
+
+On peut aussi inclure des commentaires temporaires (exprimant des doutes, remarques, etc.)
+sous la forme
+
+%% commentaire \XXX
+
+— Étiquettes.
+
+La numérotation reproduit fidèlement la numérotation
+originale ; par exemple, le paragraphe 3.0 de l'exposé X commence
+ainsi :
+	\subsection{}\etiquette[3.0]{X.subsec3.0}
+En plus de « subsec », sont aussi utilisés :
+subsubsec, thm, lem, prop, cor, rems, eq, etc.
+
+S'il manque des renvois dans le texte original, l'idéal est
+d'ajouter une étiquette du type \etiquette[àafficher dans un \ref]{??.x},
+où ?? est le numéro (en chiffres romains) de l'exposé concerné, et x est
+par exemple prop1.1, def7.3.6, ou encore eq7.1.4.1.1. Si ?? n'est
+pas l'exposé dont vous assurez la relecture, vous pouvez soit
+télécharger, modifier le fichier .tex correspondant et faire
+vous-même la correction, soit nous signaler qu'il faut rajouter
+une telle étiquette (par exemple avec un commentaire
+« % commentaire-contenant-le-mot-étiquette »).
+La référence à une étiquette se fait via la commande \hyperref[àafficher]{??.x}.
+On souhaite qu'in fine, toutes les références soient de ce type
+(cela permettra une navigation hypertexte) ; les références comme « d'après (??.x) »
+sont donc à proscrire des fichiers .tex.

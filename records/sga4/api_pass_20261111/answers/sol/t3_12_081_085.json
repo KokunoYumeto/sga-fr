@@ -1,0 +1,107 @@
+[
+ {
+  "page": 82,
+  "where": "Opening paragraph, action on the quotient sheaf",
+  "scan": "l'opération de f_{\\ast}G sur F_{\\ast}C",
+  "tex": "l'opération de $f_{\\ast}G$\nsur $F_{\\ast}C$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "f_{\\ast}C",
+  "note": "The capital F is a printed typo for the morphism f. The TeX keeps it."
+ },
+ {
+  "page": 82,
+  "where": "Proposition 3.2, definition of X'",
+  "scan": "X'=X\\times_Z Z'",
+  "tex": "X'=\\fprod{X}{Z'}{X}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\fprod{X}{Z'}{X}",
+   "new": "\\fprod{X}{Z'}{Z}"
+  },
+  "note": "The printed fibre product is over Z, not X."
+ },
+ {
+  "page": 82,
+  "where": "Proposition 3.2, last term of the sequence of pointed sheaves",
+  "scan": "f_{\\ast}(R^1g_{\\ast})F",
+  "tex": "g_{\\ast}(R^1f_{\\ast})F",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "g_{\\ast}(R^1f_{\\ast})F",
+  "note": "The print interchanges f and g in this term. The TeX silently corrects the printed error."
+ },
+ {
+  "page": 83,
+  "where": "Proof of Proposition 3.3, finite product indexed by 1≤i≤n",
+  "scan": "F\\longrightarrow\\prod_{1\\leq i\\leq n}i_{x\\ast}i_x^{\\ast}F",
+  "tex": "F\\longrightarrow \\prod_{1\\leq i\\leq n}i_{x^{\\ast}}i_{x}{}^{\\ast}F",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "F\\longrightarrow \\prod_{1\\leq i\\leq n}(i_{x_i})_{\\ast}i_{x_i}^{\\ast}F",
+  "note": "The factors should carry x_i, corresponding to the finite set just chosen, rather than x. The TeX keeps the printed omission of the indices i."
+ },
+ {
+  "page": 83,
+  "where": "Sentence immediately following the finite-product display",
+  "scan": "Le faisceau i_{x\\ast}i_x^{\\ast}F",
+  "tex": "Le faisceau $i_{x^{\\ast}}i_{\\ast}{}^{\\ast}F$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "i_{x^{\\ast}}i_{\\ast}{}^{\\ast}F",
+   "new": "i_{x^{\\ast}}i_{x}{}^{\\ast}F"
+  },
+  "note": "The subscript of the second i is x in the print, not an asterisk."
+ },
+ {
+  "page": 85,
+  "where": "Paragraph introducing (4.2), parentheses around the reference and the parenthetical qualification",
+  "scan": "En restreignant (4.1) aux faisceaux abéliens (resp. de groupes) on déduit",
+  "tex": "En restreignant \\eqhyperref[XII.eq4.1]{4.1}) aux faisceaux abéliens (\\resp de groupes on\ndéduit",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\eqhyperref[XII.eq4.1]{4.1}) aux faisceaux abéliens (\\resp de groupes on",
+   "new": "\\eqhyperref[XII.eq4.1]{4.1} aux faisceaux abéliens (\\resp de groupes) on"
+  },
+  "note": "The reference macro already supplies both parentheses of (4.1). The print closes the qualification after « groupes »."
+ },
+ {
+  "page": 85,
+  "where": "Notation for the derived base-change morphism, before (4.2)",
+  "scan": "\\varphi^q=\\varphi^g g",
+  "tex": "\\varphi^q=\\varphi^g g",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\varphi^q=\\varphi_g^q",
+  "note": "The second superscript is printed as g instead of q. The TeX retains the printed typo; the other g denotes the base-change morphism."
+ },
+ {
+  "page": 85,
+  "where": "Chain of morphisms a, b, c, opening parenthesis on its second line",
+  "scan": "=(R^q(gf')_{\\ast}{g'}^{\\ast}",
+  "tex": "=(R^q(gf')_{\\ast}{g'}^{\\ast}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "=(R^q(gf')_{\\ast}){g'}^{\\ast}",
+  "note": "The opening parenthesis before R^q is not closed; the TeX keeps this imbalance. The small mark before fg' on the preceding line is indistinct—an apostrophe or an incomplete opening parenthesis—so no separate finding is asserted for that mark."
+ },
+ {
+  "page": 85,
+  "where": "Chain of morphisms a, b, c, target of c",
+  "scan": "g^{\\ast}(R^qf'_{\\ast}){g'}^{\\ast}",
+  "tex": "g^{\\ast}(R^q{f'}_{\\ast}){g'}^{\\ast}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "g_{\\ast}(R^q{f'}_{\\ast}){g'}^{\\ast}",
+  "note": "The print has g^*, but the target must involve g_*, as in (4.2 adj). The TeX keeps the printed error."
+ }
+]

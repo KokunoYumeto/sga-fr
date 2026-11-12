@@ -1,0 +1,182 @@
+{
+  "findings": [
+    {
+      "page": 241,
+      "where": "Diagramme final, flèche de X vers LX",
+      "scan": "\\ell(X)",
+      "tex": "\\ell(x)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\ell(x)",
+        "new": "\\ell(X)"
+      },
+      "note": "L'argument imprimé est un X majuscule."
+    },
+    {
+      "page": 242,
+      "where": "Après le diagramme (4.6.2), renvoi au lemme 3.1",
+      "scan": "3.1 1)",
+      "tex": "\\hyperref[II.lem3.1]{3.1} 1)",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\hyperref[II.lem3.1]{3.1} 2)",
+      "note": "Ce relèvement local par \\ell(R) utilise la propriété invoquée comme 3.1 2) au début de la page pour \\ell(LR). Le TeX conserve le renvoi imprimé 1)."
+    },
+    {
+      "page": 242,
+      "where": "Après le diagramme (4.6.2), introduction du crible Q_1",
+      "scan": "J_{Q_1}:Q_1\\hookrightarrow Y",
+      "tex": "J_{Q_i}:Q_1\\hookrightarrow Y",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "J_{Q_i}",
+        "new": "J_{Q_1}"
+      },
+      "note": "Le sous-indice imprimé est le chiffre 1, non la lettre i."
+    },
+    {
+      "page": 243,
+      "where": "Première phrase, renvoi au lemme 3.1",
+      "scan": "3.1 2)",
+      "tex": "\\hyperref[II.lem3.1]{3.1} 2)",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\hyperref[II.lem3.1]{3.1} 3)",
+      "note": "La couverture de l'égaliseur résulte ici de l'égalité après \\ell(X), comme de l'égalité après \\ell(LX) à la page précédente, où cette propriété est référencée 3.1 3). Le TeX conserve 2)."
+    },
+    {
+      "page": 243,
+      "where": "Premier paragraphe, « Pour tout morphisme »",
+      "scan": "\\beta:Y\\rightarrow S",
+      "tex": "\\beta:Y\\rightarrow S",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\beta:Y\\rightarrow S_2",
+      "note": "Le but est S_2, comme à la page précédente et dans le diagramme qui suit. Le TeX conserve l'omission du sous-indice 2."
+    },
+    {
+      "page": 243,
+      "where": "Diagramme, flèche de Q_2 vers R",
+      "scan": "V_2",
+      "tex": "V_2",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "v_2",
+      "note": "Le morphisme vient d'être introduit sous le nom v_2. La légende imprimée porte une majuscule V, conservée par le TeX."
+    },
+    {
+      "page": 243,
+      "where": "Corollaire 4.4.4, nom du site",
+      "scan": "\\mathcal{C}",
+      "tex": "$e$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "site $e$",
+        "new": "site $C$"
+      },
+      "note": "Le caractère manuscrit désigne la catégorie C, également présente dans \\widetilde{C}, non une lettre e."
+    },
+    {
+      "page": 243,
+      "where": "Corollaire 4.4.4, « la topologie la plus fine sur »",
+      "scan": "sur \\mathcal{C}",
+      "tex": "sur $e$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "sur $e$",
+        "new": "sur $C$"
+      },
+      "note": "Il s'agit de la même catégorie C qu'au début de l'énoncé."
+    },
+    {
+      "page": 243,
+      "where": "Corollaire 4.4.4, condition définissant T''",
+      "scan": "(resp. des préfaisceaux)",
+      "tex": "\\emph{(\\resp des\npréfaisceaux)}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\resp des préfaisceaux séparés)",
+      "note": "Il manque « séparés » : être simplement un préfaisceau ne dépend pas de la topologie et ne peut caractériser T''. Le TeX conserve cette omission."
+    },
+    {
+      "page": 243,
+      "where": "Définition 4.5, notation de la somme",
+      "scan": "s=\\amalg_{i\\in I}S_i",
+      "tex": "$s=\\amalg_{i\\in I} S_i$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "$S=\\amalg_{i\\in I} S_i$",
+      "note": "La même somme est immédiatement appelée S dans toute la suite de la définition. Le TeX conserve le s minuscule imprimé."
+    },
+    {
+      "page": 245,
+      "where": "Suite de 2) i) b), première occurrence de « faisceau associé »",
+      "scan": "faisceau associé",
+      "tex": "faisceau associe",
+      "kind": "accent",
+      "confidence": "high",
+      "fix": {
+        "old": "faisceau associe",
+        "new": "faisceau associé"
+      },
+      "note": "L'accent aigu est présent dans le scan."
+    },
+    {
+      "page": 245,
+      "where": "Condition 2) i) c), après « préfaisceau »",
+      "scan": "préfaisceau.",
+      "tex": "préfaisceau.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "préfaisceau $X_i\\times_X X_j$",
+      "note": "Le point parasite sépare le nom « préfaisceau » de sa désignation et de son prédicat. Le TeX le conserve."
+    },
+    {
+      "page": 245,
+      "where": "Preuve, 1), deuxième phrase",
+      "scan": "Par suite",
+      "tex": "Pas suite",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Pas suite",
+        "new": "Par suite"
+      },
+      "note": "Le scan porte bien « Par suite »."
+    },
+    {
+      "page": 245,
+      "where": "Preuve, 2), caractérisation de l'isomorphisme \\underline{a}(\\Phi)",
+      "scan": "un épimorphisme et et monomorphisme de faisceaux",
+      "tex": "un épimorphisme et monomorphisme de faisceaux",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un épimorphisme et monomorphisme de faisceaux",
+      "note": "Le mot « et » est répété dans l'imprimé. Le TeX corrige silencieusement ce redoublement."
+    },
+    {
+      "page": 245,
+      "where": "Preuve, 2), ensemble d'indices de la famille \\Delta_{i,j}",
+      "scan": "(i,j)\\in i\\times I",
+      "tex": "$(i,j)\\in i\\times\nI$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$(i,j)\\in I\\times I$",
+      "note": "Le premier facteur doit être l'ensemble I, non l'indice i. Le TeX conserve la minuscule imprimée."
+    }
+  ],
+  "coordinator": "241: 1/0; 242: 1/1; 243: 2/5; 244: 0/0; 245: 2/3 (normal/misprint)."
+}

@@ -1,0 +1,1 @@
+p191: 2/0; p192: 0/1; p193: 1/0; p194: 2/0; p195: 1/0. Convention: \sisi A arguments record readings the print does not have, although the edition's output matches the print: p193 (SGA 1 II 1.1), p194 (\sisi{Y}{\widetilde{Y}}, two places), p195 (EGA IV 7.8.3).

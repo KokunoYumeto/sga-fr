@@ -1,0 +1,111 @@
+[
+ {
+  "page": 622,
+  "where": "Cela veut dire que si z ∈ E^{N-1} est un point tel que δ(z) … d-q",
+  "scan": "δ(z) > d-q",
+  "tex": "\\delta(z)\\geq d-q",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\delta(z)\\geq d-q$",
+   "new": "$\\delta(z)> d-q$"
+  },
+  "note": "The print has a strict >, the same glyph as in 'q > d', which agrees with δ(R^q g_*F) ≤ d-q. The TeX has ≥."
+ },
+ {
+  "page": 623,
+  "where": "Notons que U est déduit … x ∈ Γ(X,O_X)",
+  "scan": "Γ(X,O_X)",
+  "tex": "\\Gamma(X,0_{X})",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "\\Gamma(X,0_{X})",
+   "new": "\\Gamma(X,O_{X})"
+  },
+  "note": "The structure sheaf. The TeX types the digit zero; in the typewriter face O and 0 are hard to tell apart. Elsewhere (O_Y in Lemme 6.5) the TeX uses the letter O."
+ },
+ {
+  "page": 623,
+  "where": "et F le faisceau induit de F sur Ũ",
+  "scan": "et F le faisceau induit",
+  "tex": "et $F$ le faisceau induit",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "et $\\widetilde{F}$ le faisceau induit",
+  "note": "The induced sheaf is F̃, as in the next display H^q(Ũ,F̃). The print omits the tilde and the TeX keeps the printed reading."
+ },
+ {
+  "page": 623,
+  "where": "Notons que U est déduit de X̃",
+  "scan": "Notons que U",
+  "tex": "Notons que $U$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "Notons que $\\widetilde{U}$",
+  "note": "Ũ is meant. The print has U without a tilde and the TeX keeps it."
+ },
+ {
+  "page": 623,
+  "where": "Il suffit ainsi de démontrer que H^q(Ũ,F)=0",
+  "scan": "H^q(Ũ,F)",
+  "tex": "H^{q}(\\widetilde{U},F)=0",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "H^{q}(\\widetilde{U},\\widetilde{F})=0",
+  "note": "The sheaf is F̃ (pour chaque faisceau de torsion F̃). The print omits the tilde and the TeX keeps it."
+ },
+ {
+  "page": 624,
+  "where": "Soit π : V̄ → V le normalisé de V",
+  "scan": "π : V̄ → V",
+  "tex": "$x:\\bar{V}\\rightarrow",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$x:\\bar{V}\\rightarrow",
+   "new": "$\\pi:\\bar{V}\\rightarrow"
+  },
+  "note": "The print names the normalisation morphism π. The TeX has x, which clashes with the element x. Apply together with the next edit."
+ },
+ {
+  "page": 624,
+  "where": "suite exacte 0 → (Z/ℓ)_V → π_*(Z/ℓ)_V̄ → C → 0",
+  "scan": "π_*(Z/ℓ)_V̄",
+  "tex": "x_{\\ast}(\\ZZ/\\ell)_{\\bar{V}}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "x_{\\ast}(\\ZZ/\\ell)",
+   "new": "\\pi_{\\ast}(\\ZZ/\\ell)"
+  },
+  "note": "Same letter π as in the preceding sentence."
+ },
+ {
+  "page": 624,
+  "where": "6.7.0, Soient A un anneau équidimensionel",
+  "scan": "équidimensionel",
+  "tex": "équidimensionnel",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "équidimensionnel",
+  "note": "Spelling slip in the print, silently corrected by the TeX."
+ },
+ {
+  "page": 625,
+  "where": "B̄ est la k[[x_2,…,x_d]] = Ā -algèbre B/x_1B",
+  "scan": "k[[x_2, …, x_d]] = Ā",
+  "tex": "$[[x_{2},\\ldots, x_{d}]]=\\bar{A}$",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "$[[x_{2},\\ldots, x_{d}]]=\\bar{A}$",
+   "new": "$k[[x_{2},\\ldots, x_{d}]]=\\bar{A}$"
+  },
+  "note": "The letter k before the double brackets is missing in the TeX."
+ }
+]

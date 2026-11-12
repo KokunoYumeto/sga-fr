@@ -1,0 +1,265 @@
+[
+ {
+  "page": 131,
+  "where": "Definition 6.6, first line: 'be a k-scheme of finite type.'",
+  "scan": "'be a' underlined; 'k-' not underlined; the underline resumes at 'scheme of finite type'",
+  "tex": "\\underline{be a k-scheme of finite type.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{be a k-scheme of finite type.}",
+   "new": "\\underline{be a} k-\\underline{scheme of finite type.}"
+  },
+  "note": "The typescript leaves the letter k and its hyphen outside the underline (same in Corollary 6.8 on p. 132; fixed the same way on pp. 92 and 104). The full stop is left as it is (global rule)."
+ },
+ {
+  "page": 131,
+  "where": "Definition 6.6 (i), start of the second line: 'then a is a non-degenerate quadratic singularity rational over k'",
+  "scan": "a",
+  "tex": "$a$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$z$",
+  "note": "The print has the letter a where the point z of the definition is meant ('A closed point z in X is called ... if the following holds: (i) ... then z is a non-degenerate quadratic singularity'). The TeX keeps the printed reading."
+ },
+ {
+  "page": 131,
+  "where": "Proof of Lemma 6.7, last display: 'dF = 1 -> sum_{0<=i<=2n} (df/dX_i) dX_i + dX_0 ,'",
+  "scan": "+ dX_0",
+  "tex": "+ dX_0",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "+ tdX_0",
+  "note": "With F = f + t_1 + tX_0 the coefficient of dX_0 in dF is df/dX_0 + t, so the last term is t dX_0; the next page uses it (I_A(A|R) = (t, x_1, ..., x_{2n})). The print omits the t; the TeX keeps the printed reading."
+ },
+ {
+  "page": 132,
+  "where": "Corollary 6.8, first line: 'be a k-scheme of finite type with isolated non-smooth points only such that'",
+  "scan": "'be a' underlined; 'k-' not underlined; the underline resumes at 'scheme of finite type with isolated non-smooth'",
+  "tex": "\\underline{be a k-scheme of finite type with isolated non-smooth points only such that}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{be a k-scheme of finite type with isolated non-smooth points only such that}",
+   "new": "\\underline{be a} k-\\underline{scheme of finite type with isolated non-smooth points only such that}"
+  },
+  "note": "Same as Definition 6.6 on p. 131."
+ },
+ {
+  "page": 132,
+  "where": "Corollary 6.8 (2): 'I_R(X|R) = _{1<=i<=m} I_R(X_(z_i)|R)'",
+  "scan": "blank space between '=' and the subscript '1<=i<=m': no operator is printed (no trace of it under contrast enhancement)",
+  "tex": "\\mathop{\\hphantom{\\bigcap}}_{1 \\leq i \\leq m}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\prod_{1 \\leq i \\leq m}",
+  "note": "The handwritten operator was never put in; the TeX reproduces the blank with a phantom. Theorem 6.4 (3) states the same thing with a product sign (TeX there: \\prod_{1\\leq\\ i\\leq\\ m}), and the product of the principal ideals (t_i^2) is what makes I_R(X|R) principal."
+ },
+ {
+  "page": 133,
+  "where": "title of Exposé VII: 'BIEXTENSIONS DE FAISCEAUX DE GROUPES'",
+  "scan": "the title is underlined twice",
+  "tex": "\\underline{BIEXTENSIONS DE FAISCEAUX DE GROUPES}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{BIEXTENSIONS DE FAISCEAUX DE GROUPES}",
+   "new": "\\underline{\\underline{BIEXTENSIONS DE FAISCEAUX DE GROUPES}}"
+  },
+  "note": "'E X P O S E VII' and 'par A. Grothendieck' have a single underline. The titles of Exposés I, II, VI and IX are already \\underline{\\underline{...}} in the diplomatic TeX."
+ },
+ {
+  "page": 133,
+  "where": "Introduction, line 6: 'des (x)^L et RHom (3.6.4 et 3.6.5)'",
+  "scan": "RHom with only 'Hom' underlined (the underline starts under H); upright type",
+  "tex": "$\\underline{RHom}$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\underline{RHom}$",
+   "new": "$\\mathrm{R}\\underline{\\mathrm{Hom}}$"
+  },
+  "note": "The R is not underlined. The same edit sets the operator name upright, as \\mathrm{Hom} elsewhere in this exposé (the TeX's math italic RHom is the operator-name issue of item 19)."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2, 'le groupe induit G_P = G x P par G'",
+  "scan": "G_P (capital P)",
+  "tex": "$G_p = GxP$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$G_p = G",
+   "new": "$G_P = G"
+  },
+  "note": "The print has a capital P in the subscript (cap height, no descender), as in every G_P of 1.1.2-1.1.2.1, against the small p with a descender in E_p; the later pages of the TeX already write G_P."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2, 'le groupe induit G_P = G x P par G'",
+  "scan": "G×P: the product sign is a serifless cross, not the letter x (the typeface's x and X have serifs, cf. 'x' in 'x ∈ E(S)' and 'IX' on p. 134)",
+  "tex": "GxP",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "GxP",
+   "new": "G\\times P"
+  },
+  "note": "The TeX of this exposé writes the product as \\times elsewhere (P\\times P, G_{P\\times Q}). Independent of the G_P edit just before it."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2, 'par G dans T_{/P} opère sur E'",
+  "scan": "T underlined with subscript /P (capital P)",
+  "tex": "\\underline{T}_{/p}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{T}_{/p}",
+   "new": "\\underline{T}_{/P}"
+  },
+  "note": "Capital P, as in E_{/P} two lines above and in \\underline{T}_{/P} on the following pages of the TeX."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2, 'sur P, de groupe G_P , et que'",
+  "scan": "G_P",
+  "tex": "de groupe $G_p$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "de groupe $G_p$",
+   "new": "de groupe $G_P$"
+  },
+  "note": "The print has a capital P in the subscript (cap height, no descender), as in every G_P of 1.1.2-1.1.2.1, against the small p with a descender in E_p; the later pages of the TeX already write G_P."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2, 'un bitorseur sous (G_P,G_P). Rappelons [2]'",
+  "scan": "(G_P,G_P)",
+  "tex": "$(G_p,G_p)$. Rappelons",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$(G_p,G_p)$. Rappelons",
+   "new": "$(G_P,G_P)$. Rappelons"
+  },
+  "note": "The print has a capital P in the subscript (cap height, no descender), as in every G_P of 1.1.2-1.1.2.1, against the small p with a descender in E_p; the later pages of the TeX already write G_P."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2, 'par l'action droite de G_P , et que l'action gauche'",
+  "scan": "G_P",
+  "tex": "droite de $G_p$ , et que",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "droite de $G_p$ , et que",
+   "new": "droite de $G_P$ , et que"
+  },
+  "note": "The print has a capital P in the subscript (cap height, no descender), as in every G_P of 1.1.2-1.1.2.1, against the small p with a descender in E_p; the later pages of the TeX already write G_P."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2, 'induit un isomorphisme de G_P avec le Groupe des automorphismes de E_d'",
+  "scan": "G_P",
+  "tex": "isomorphisme de $G_p$ avec",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "isomorphisme de $G_p$ avec",
+   "new": "isomorphisme de $G_P$ avec"
+  },
+  "note": "The print has a capital P in the subscript (cap height, no descender), as in every G_P of 1.1.2-1.1.2.1, against the small p with a descender in E_p; the later pages of the TeX already write G_P."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2, 'qui commutent à l'action droite de G_P sur E)'",
+  "scan": "G_P",
+  "tex": "droite de $G_p$ sur",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "droite de $G_p$ sur",
+   "new": "droite de $G_P$ sur"
+  },
+  "note": "The print has a capital P in the subscript (cap height, no descender), as in every G_P of 1.1.2-1.1.2.1, against the small p with a descender in E_p; the later pages of the TeX already write G_P."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2, 'savoir que l'action gauche de G_P sur E fait de E'",
+  "scan": "G_P",
+  "tex": "gauche de $G_p$ sur",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "gauche de $G_p$ sur",
+   "new": "gauche de $G_P$ sur"
+  },
+  "note": "The print has a capital P in the subscript (cap height, no descender), as in every G_P of 1.1.2-1.1.2.1, against the small p with a descender in E_p; the later pages of the TeX already write G_P."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2, 'du Groupe opposé G_P^o de G_P avec'",
+  "scan": "G_P^o ... G_P",
+  "tex": "$G_p^{\\;o}$ de $G_p$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$G_p^{\\;o}$ de $G_p$",
+   "new": "$G_P^{\\;o}$ de $G_P$"
+  },
+  "note": "The print has a capital P in the subscript (cap height, no descender), as in every G_P of 1.1.2-1.1.2.1, against the small p with a descender in E_p; the later pages of the TeX already write G_P."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2.1, 'la donnée d'un bitorseur E sous (G_P,G_P) équivaut manifestement'",
+  "scan": "(G_P,G_P)",
+  "tex": "sous  $(G_p,G_p)$  équivaut",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "sous  $(G_p,G_p)$  équivaut",
+   "new": "sous  $(G_P,G_P)$  équivaut"
+  },
+  "note": "The print has a capital P in the subscript (cap height, no descender), as in every G_P of 1.1.2-1.1.2.1, against the small p with a descender in E_p; the later pages of the TeX already write G_P."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2.1, 'la donnée d'un bitorseur E sous (G_P,G_P) équivaut à la donnée, pour tout \"point\"'",
+  "scan": "(G_P,G_P)",
+  "tex": "$(G_p,G_p)$ équivaut à",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$(G_p,G_p)$ équivaut à",
+   "new": "$(G_P,G_P)$ équivaut à"
+  },
+  "note": "The print has a capital P in the subscript (cap height, no descender), as in every G_P of 1.1.2-1.1.2.1, against the small p with a descender in E_p; the later pages of the TeX already write G_P."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2, 'comme un objet du topos induit E_{/P} , alors'",
+  "scan": "E_{/P}",
+  "tex": "$E_{/P}$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "$\\underline{T}_{/P}$",
+  "note": "E is to be regarded as an object of the induced topos T_{/P} (named two lines below: 'G_P = G x P par G dans T_{/P}'); E_{/P} is not a topos. The TeX keeps the printed reading."
+ },
+ {
+  "page": 135,
+  "where": "1.1.2.1, 'Une interprétation analogue peut-être donnée dans le cas général'",
+  "scan": "peut-être",
+  "tex": "peut-être",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "peut être",
+  "note": "The verb 'peut être' (can be) is meant, not the adverb 'peut-être'. The TeX keeps the printed reading."
+ }
+]

@@ -1,0 +1,179 @@
+import json
+import sys
+
+OUT = r"C:\Users\user\Documents\sga_scan_check_20261105\run_7II\findings_211_215.json"
+
+F = []
+
+# ---------------- page 212 ----------------
+F.append({
+    "page": 212,
+    "where": "title of Exposé XVII: 'PINCEAUX DE LEFSCHETZ: THEOREME D'EXISTENCE'",
+    "scan": "the title carries a double underline (two parallel rules, checked at 2x); 'EXPOSE XVII' and 'par N. M. KATZ' have a single one",
+    "tex": "\\underline{PINCEAUX DE LEFSCHETZ: THEOREME D'EXISTENCE}",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {
+        "old": "\\underline{PINCEAUX DE LEFSCHETZ: THEOREME D'EXISTENCE}",
+        "new": "\\underline{\\underline{PINCEAUX DE LEFSCHETZ: THEOREME D'EXISTENCE}}"
+    },
+    "note": "Same encoding as the double-underlined titles of the neighbouring exposés (\\underline{\\underline{La formule de Picard-Lefschetz}}, \\underline{\\underline{La formule de Milnor}}, \\underline{\\underline{ETUDE COHOMOLOGIQUE DES PINCEAUX DE LEFSCHETZ}})."
+})
+
+# ---------------- page 213 ----------------
+F.append({
+    "page": 213,
+    "where": "1.1 a): 'le complété Ô_{Y,y} de l'anneau local de y dans Y'",
+    "scan": "an underlined typed O with a handwritten caret above (checked at 3x)",
+    "tex": "$\\hat{\\mathcal{O}}_{Y,y}$",
+    "kind": "font",
+    "confidence": "high",
+    "fix": {
+        "old": "\\hat{\\mathcal{O}}_{Y,y}",
+        "new": "\\hat{\\underline{O}}_{Y,y}"
+    },
+    "note": "The typescript's underlined O, which expose_XVII_body.tex writes \\underline{O} (26 times), the completed local rings of § 3 as \\hat{\\underline{O}}_{\\mathbb{P}^r,x_o}, \\hat{\\underline{O}}_{X,x_o}."
+})
+F.append({
+    "page": 213,
+    "where": "1.1, first sentence: 'Soit Y un k-schéma purement de dimension n'",
+    "scan": "purement de dimension n",
+    "tex": "purement de dimension $n$ .",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": None,
+    "corrected": "purement de dimension $n-1$ .",
+    "note": "In a) the same n is the number of variables, 'n=1+dim_k Y', and b) uses P^{n-1}, n >= 2 and n = 1 accordingly, so Y has dimension n-1. The TeX keeps the printed reading; the corrected layer already has n-1 (SGA7II-FR-XVII-001). 1.2 on p. 214 repeats the slip ('en dimension n'): see the entry there (correct both or neither)."
+})
+F.append({
+    "page": 213,
+    "where": "1.1 a): 'k[[T_1,...,T_n]]/(Q(T)) des series formelles'",
+    "scan": "'series' without accent (checked at 1.5x)",
+    "tex": "des series formelles",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "des séries formelles",
+    "note": "Missing acute accent; p. 214 prints 'd'une série'. The TeX keeps the printed reading; the corrected layer too."
+})
+
+# ---------------- page 214 ----------------
+F.append({
+    "page": 214,
+    "where": "after the Hessian display: 'est inversible, / Comme on voit en s'appuyant ...'",
+    "scan": "comma after 'inversible', then a capital C at the start of the next line (checked at 1.4x)",
+    "tex": "Comme on voit en s'appuyant",
+    "kind": "misprint_in_print",
+    "confidence": "low",
+    "fix": None,
+    "corrected": "comme on voit en s'appuyant",
+    "note": "The clause continues the sentence of b') ('... est inversible, comme on voit ...'); it is not a sentence by itself. The TeX keeps the printed reading."
+})
+F.append({
+    "page": 214,
+    "where": "same sentence: 'sur le critère jacobienne de lissité'",
+    "scan": "'jacobienne' (checked at 1.4x)",
+    "tex": "le critère jacobienne de lissité",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": None,
+    "corrected": "le critère jacobien de lissité",
+    "note": "Agreement with the masculine 'critère'. The TeX keeps the printed reading; the corrected layer too."
+})
+F.append({
+    "page": 214,
+    "where": "after (1.1.1): 'comme on voit par la théorie des formes quadratique'",
+    "scan": "'quadratique' without final s (checked at 1.4x)",
+    "tex": "des formes quadratique (Bourbaki",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "des formes quadratiques (Bourbaki",
+    "note": "Plural agreement. The TeX keeps the printed reading; the corrected layer too."
+})
+F.append({
+    "page": 214,
+    "where": "same sentence: '(Bourbaki, Alg.X)'",
+    "scan": "Alg.X, no I before the X (checked at 1.4x)",
+    "tex": "(Bourbaki, Alg.X).",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": None,
+    "corrected": "(Bourbaki, Alg.IX).",
+    "note": "Wrong chapter number: quadratic forms are Bourbaki, Algèbre, chapitre IX (Formes sesquilinéaires et formes quadratiques, 1959); chapitre X (Algèbre homologique) appeared only in 1980. The TeX keeps the printed reading."
+})
+F.append({
+    "page": 214,
+    "where": "1.2, first sentence: 'Un point fermé y ∈ Y qui vérifie a), b) s'appelle singularité quadratique non-dégénérée'",
+    "scan": "a), b) with no prime on b (checked at 5x; the prime of 'b')' at the top of the page is a clear typed apostrophe)",
+    "tex": "qui vérifie a), b) s'appelle",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "qui vérifie a), b') s'appelle",
+    "note": "a), b) is the definition of the ordinary singularities in 1.1. The next sentence argues from the Hessian determinant (condition b')) and concludes that the non-degenerate ones exist only for n even or char k != 2, 'cas dans lesquels ce sont exactement les singularités quadratiques ordinaires'; with b) this would be false, since T_n^2 + sum T_{2i-1}T_{2i} of (1.1.1) is ordinary in characteristic two for n odd. The TeX keeps the printed reading; the corrected layer too."
+})
+F.append({
+    "page": 214,
+    "where": "1.2: 'les singularités quadratiques non-dégénérées en dimension n n'existent que si, ou bien n est pair'",
+    "scan": "en dimension n",
+    "tex": "non-dégénérées en dimension $n$ n'existent",
+    "kind": "misprint_in_print",
+    "confidence": "low",
+    "fix": None,
+    "corrected": "non-dégénérées en dimension $n-1$ n'existent",
+    "note": "The parity condition concerns the number n of variables (the n x n Hessian), so the singularities live on Y of dimension n-1: the same slip as 'purement de dimension n' in 1.1 (p. 213). The corrected layer changed 1.1 to n-1 but left this one: correct both or neither. Low: 'dimension n' could be read as the embedding dimension. The TeX keeps the printed reading."
+})
+F.append({
+    "page": 214,
+    "where": "1.2, end: 'ou bien si k est de caractéristique différente de deux cas dans lesquels ce sont exactement'",
+    "scan": "no comma between 'deux' and 'cas' (checked at 1.4x)",
+    "tex": "différente de deux cas dans lesquels",
+    "kind": "misprint_in_print",
+    "confidence": "low",
+    "fix": None,
+    "corrected": "différente de deux, cas dans lesquels",
+    "note": "Missing comma before the apposition 'cas dans lesquels'. The TeX keeps the printed reading."
+})
+
+# ---------------- page 215 ----------------
+F.append({
+    "page": 215,
+    "where": "2.1, first words: 'Désignons par P^r l'espace projectif à r dimensions sur k'",
+    "scan": "a plain typed capital P of normal weight with a single stem: stem 4 px, as the l of 'l'espace' beside it, whereas the bold P of 2.2 '(par rapport au plongement X ↪ P^r)' measures 11-12 px against 5 px for the X there; the other P of 2.1 are double-struck (checked at 4x, pixel-measured)",
+    "tex": "Désignons par $\\mathbf{P}^r$ l'espace",
+    "kind": "font",
+    "confidence": "high",
+    "fix": {
+        "old": "$\\mathbf{P}^r$ l'espace",
+        "new": "$P^r$ l'espace"
+    },
+    "note": "The TeX writes bold here; the print has the typewriter's plain P, written $P$ like the plain typed A^{n+1}_S of pp. 188 and 190. The P of 2.2 really is bold: its \\mathbf{P}^r stands."
+})
+F.append({
+    "page": 215,
+    "where": "2.1, first words: 'Désignons par P^r l'espace projectif'",
+    "scan": "plain P (see the font entry above), while the same space is the double-struck P^r in the rest of the sentence and of 2.1",
+    "tex": "$P^r$ l'espace (after the font fix above; at present $\\mathbf{P}^r$)",
+    "kind": "misprint_in_print",
+    "confidence": "low",
+    "fix": None,
+    "corrected": "$\\mathbb{P}^r$ l'espace",
+    "note": "Font slip of the typist (the second stem of the double-struck P left out), as the plain R of p. 147 and the plain E of p. 202. After the font fix the TeX keeps the printed reading. The bold P^r of 2.2 '(par rapport au plongement X \\hookrightarrow \\mathbf{P}^r)' is the other variant for the same space: unify both or neither in the corrected edition."
+})
+F.append({
+    "page": 215,
+    "where": "2.2: 'Un pinceau D = {H_t}_{t ∈ P} d'hyperplans dans P^r'",
+    "scan": "{H_t}_{t ∈ P}: a double-struck P with no exponent (checked at 4x)",
+    "tex": "$D = \\{H_t\\}_{t \\in \\mathbb{P}}$",
+    "kind": "misprint_in_print",
+    "confidence": "low",
+    "fix": None,
+    "corrected": "$D = \\{H_t\\}_{t \\in D}$",
+    "note": "2.1 sets D = {H_t}_{t ∈ D}, and b), c) take t ∈ U ⊂ D and t_o ∈ D-U; a bare P is not defined. P^1 (D is a line) may be meant instead. The TeX keeps the printed reading."
+})
+
+with open(OUT, "w", encoding="utf-8", newline="\n") as fh:
+    json.dump(F, fh, ensure_ascii=False, indent=1)
+    fh.write("\n")
+print(len(F), "findings written")

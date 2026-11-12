@@ -1,0 +1,131 @@
+[
+ {
+  "page": 151,
+  "where": "5.1.4, opening sentence",
+  "scan": "Soient $E \\xrightarrow{\\pi} B$ un foncteur",
+  "tex": "Soient\\pageoriginale $E \\xrightarrow{\\pi} B$ un foncteur",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Soit $E \\xrightarrow{\\pi} B$ un foncteur",
+  "note": "The singular « un foncteur » requires « Soit ». The TeX keeps the printed « Soient »."
+ },
+ {
+  "page": 151,
+  "where": "5.1.4 b), second morphism",
+  "scan": "$z \\to Y$",
+  "tex": "$z \\to y$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$z \\to y$",
+  "note": "The print has a capital Y, although the object introduced in the pair is lowercase y. The TeX silently corrects it."
+ },
+ {
+  "page": 151,
+  "where": "5.1.4 c), fibre containing x'",
+  "scan": "un objet $x'$ de $E_b$",
+  "tex": "un objet $x'$ de $E_b$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "un objet $x'$ de $E_{b'}$",
+  "note": "Since the morphism x' → x lies over t : b' → b, x' must belong to E_{b'}. The TeX keeps the printed missing prime."
+ },
+ {
+  "page": 151,
+  "where": "5.1.4 e), introductory quantifier",
+  "scan": "Pour tout objet $G$ de $B$",
+  "tex": "Pour tout objet $G$ de $B$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Pour tout objet $b$ de $B$",
+  "note": "The quantified object is printed G, but the diagrams are in E_b. Read b consistently with that fibre. The TeX keeps G."
+ },
+ {
+  "page": 152,
+  "where": "Definition 5.1.5 (i), base object",
+  "scan": "par un objet $G$ de $B$.",
+  "tex": "par un objet $G$ de $B$.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "par un objet $b$ de $B$.",
+  "note": "The base object is called G here but b in E_b in condition (ii). Read b to make the two conditions consistent. The TeX keeps G."
+ },
+ {
+  "page": 153,
+  "where": "Proposition 5.1.8 (ii), left vertical arrow of the square",
+  "scan": "The arrow $F(X')\\to F(Y')$ is labelled $\\alpha$, as is the right vertical arrow.",
+  "tex": "\\ar[d]_{\\alpha}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\alpha'",
+  "note": "The left label should be α', consistently with the primed objects and the following text « α et α' ». The TeX keeps both printed labels α."
+ },
+ {
+  "page": 154,
+  "where": "5.2.1, derived category containing the De Rham complex",
+  "scan": "D^+(\\Ysheaf{\\Gamma}(\\bar{X}),\\ZZ)",
+  "tex": "D^+(\\Ysheaf{\\Gamma} (\\bar{X},\n\\ZZ))",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "D^+(\\Ysheaf{\\Gamma} (\\bar{X},\n\\ZZ))",
+   "new": "D^+(\\Ysheaf{\\Gamma} (\\bar{X}),\n\\ZZ)"
+  },
+  "note": "The print closes the argument of Γ after X, before the comma. The TeX instead places the coefficient ring inside that argument."
+ },
+ {
+  "page": 154,
+  "where": "5.2.1, algebraic De Rham complex after « soit le complexe De Rham »",
+  "scan": "\\Omega_{X_i/k}^{\\Zar.}",
+  "tex": "\\Omega_{X/k}^{\\Zar.}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "De Rham\n$\\Omega_{X/k}^{\\Zar.}$",
+   "new": "De Rham\n$\\Omega_{X_i/k}^{\\Zar.}$"
+  },
+  "note": "The printed subscript is X_i/k; the TeX omits i."
+ },
+ {
+  "page": 154,
+  "where": "5.2.1, definition of the three cohomology groups",
+  "scan": "(resp. $H^{\\bigdot}_{DR}(u)$ et $H^{\\bigdot}(u,\\CC)$)",
+  "tex": "$H^{\\bigdot}_{DR}(u)$) et $H^{\\bigdot}(u, \\CC)$)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$H^{\\bigdot}_{DR}(u)$) et",
+   "new": "$H^{\\bigdot}_{DR}(u)$ et"
+  },
+  "note": "The parenthesis introduced by « resp. » encompasses both analytic groups. The TeX adds an intervening closing parenthesis."
+ },
+ {
+  "page": 154,
+  "where": "5.2.1, final complex",
+  "scan": "\\RR^+ \\bar{u}_{\\ast}(\\CC)",
+  "tex": "\\sisi{\\RR^+}{R} \\bar{u} (\\CC)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bar{u} (\\CC)",
+   "new": "\\bar{u}_{\\ast} (\\CC)"
+  },
+  "note": "The print has the direct-image subscript ∗ on the final barred u; the TeX omits it."
+ },
+ {
+  "page": 155,
+  "where": "5.2.4, sentence introducing conditions (i) and (ii)",
+  "scan": "l'un des conditions",
+  "tex": "l'une des conditions",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "l'une des conditions",
+  "note": "The print has the incorrect masculine « l'un » before « conditions ». The TeX silently corrects the agreement."
+ }
+]

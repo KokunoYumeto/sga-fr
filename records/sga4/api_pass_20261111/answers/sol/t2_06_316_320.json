@@ -1,0 +1,251 @@
+[
+ {
+  "page": 316,
+  "where": "Première phrase, famille couvrante après changement de base",
+  "scan": "\\Cov(k^{\\ast}(Y))",
+  "tex": "\\Cov (k^{\\ast} (Y_{\\alpha}))",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Cov (k^{\\ast} (Y_{\\alpha}))",
+   "new": "\\Cov (k^{\\ast} (Y))"
+  },
+  "note": "Le print donne Y sans indice dans l'argument de Cov."
+ },
+ {
+  "page": 316,
+  "where": "Après (8.3.11.1), seconde identification",
+  "scan": "f^{\\ast}(X) \\simeq Y_2",
+  "tex": "f^{\\ast} (X') \\simeq Y_2",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "f^{\\ast} (X') \\simeq Y_2",
+   "new": "f^{\\ast} (X) \\simeq Y_2"
+  },
+  "note": "Le print ne porte pas de prime sur ce X."
+ },
+ {
+  "page": 316,
+  "where": "Phrase introduisant le dernier diagramme",
+  "scan": "f^{\\ast}(m) : Y_2 \\to Y_3",
+  "tex": "f^{\\ast}(m) : Y_2 \\to Y_3",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "f^{\\ast}(m) : Y_3 \\to Y_2",
+  "note": "Le TeX conserve l'interversion imprimée de la source et du but. Le diagramme qui suit donne correctement Y_3 vers Y_2."
+ },
+ {
+  "page": 317,
+  "where": "Deuxième paragraphe, source et but de q'",
+  "scan": "q' : f'^{\\ast}(X') \\to f'^{\\ast}(X)",
+  "tex": "q': f'^{\\ast}(X') \\to f'^{\\ast}(X)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "q' : f'^{\\ast}(f^{\\ast}(X')) \\to f'^{\\ast}(f^{\\ast}(X))",
+  "note": "Le TeX conserve l'omission imprimée de f^{\\ast} dans les deux objets. Comme f' va de j' à i, son image inverse s'applique aux objets f^{\\ast}(X') et f^{\\ast}(X)."
+ },
+ {
+  "page": 317,
+  "where": "Deuxième paragraphe, identité satisfaite par f'^{\\ast}(q)q'",
+  "scan": "\\id_{f'^{\\ast}(f^{\\ast}(X'))}",
+  "tex": "\\id_{f'^{\\ast}(f'^{\\ast}(X'))}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\id_{f'^{\\ast}(f'^{\\ast}(X'))}",
+   "new": "\\id_{f'^{\\ast}(f^{\\ast}(X'))}"
+  },
+  "note": "Le f intérieur n'a pas de prime dans le print."
+ },
+ {
+  "page": 317,
+  "where": "Deuxième paragraphe, « Mais en posant »",
+  "scan": "\\ell^{\\ast} = ff'",
+  "tex": "\\ell^{\\ast} = ff'",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\ell = ff'",
+  "note": "Le TeX conserve l'étoile imprimée en trop : ff' est le morphisme de la base, non son foncteur image inverse."
+ },
+ {
+  "page": 317,
+  "where": "Deuxième paragraphe, après le premier isomorphisme f'^{\\ast}f^{\\ast} \\simeq \\ell^{\\ast}",
+  "scan": "Un seul isomorphisme f'^{\\ast}f^{\\ast} \\simeq \\ell^{\\ast}, suivi de « On a donc un morphisme ... et un morphisme q' ... ».",
+  "tex": "On a donc un morphisme $f'^{\\ast}(q) : \\ell^{\\ast} (X)\n\\to \\ell^{\\ast}(X')$ et un isomorphisme $f'^{\\ast}f^{\\ast} \\simeq\n\\ell^{\\ast}$. ",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "On a donc un morphisme $f'^{\\ast}(q) : \\ell^{\\ast} (X)\n\\to \\ell^{\\ast}(X')$ et un isomorphisme $f'^{\\ast}f^{\\ast} \\simeq\n\\ell^{\\ast}$. ",
+   "new": ""
+  },
+  "note": "Ce passage redouble l'isomorphisme et l'introduction du morphisme f'^{\\ast}(q). Il n'est pas dans le print."
+ },
+ {
+  "page": 317,
+  "where": "8.3.12, familles couvrantes déduites par changement de base",
+  "scan": "Z_{\\alpha\\beta} \\to Z",
+  "tex": "Z_{\\alpha \\beta} \\to Z",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Z_{\\alpha \\beta} \\to Z_{\\alpha}",
+  "note": "Le TeX conserve l'absence imprimée de l'indice alpha au but. Le changement de base par m_alpha : Z_alpha vers Y_alpha produit une famille couvrante de Z_alpha."
+ },
+ {
+  "page": 317,
+  "where": "Théorème 8.3.13, dernier paragraphe",
+  "scan": "la sous-catégorie pleine",
+  "tex": "la sus-catégorie pleine",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "la sus-catégorie pleine",
+   "new": "la sous-catégorie pleine"
+  },
+  "note": "Le print porte « sous-catégorie »."
+ },
+ {
+  "page": 318,
+  "where": "Première phrase, topologie du site des objets cohérents",
+  "scan": "muni de la topologie induite",
+  "tex": "muni de le topologie induite",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "muni de le topologie induite",
+   "new": "muni de la topologie induite"
+  },
+  "note": "Le print porte « de la », non « de le »."
+ },
+ {
+  "page": 318,
+  "where": "Après (8.3.13.1), foncteurs exacts à gauche",
+  "scan": "f^{\\ast} : (F_i)_{\\coh} \\to (F_j)_{\\coh}",
+  "tex": "f^{\\ast} : (F_i)_{\\coh}\n\\to (F_j)_{\\coh}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "f^{\\ast} : (F_j)_{\\coh} \\to (F_i)_{\\coh}",
+  "note": "Le TeX conserve les indices intervertis du print. Pour f : i vers j, l'image inverse va de la fibre j à la fibre i, comme indiqué dans le premier paragraphe."
+ },
+ {
+  "page": 318,
+  "where": "Application du lemme 8.3.4, catégorie où les produits sont représentables",
+  "scan": "Lim muni d'une flèche vers la droite, devant (F_i)_{\\coh}",
+  "tex": "\\varprojlim_{I^{\\circ},F} (F_i)_{\\coh}",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\varprojlim",
+   "new": "\\varinjlim"
+  },
+  "note": "La flèche imprimée sous Lim est dirigée vers la droite : il s'agit du signe de limite inductive."
+ },
+ {
+  "page": 318,
+  "where": "Parenthèse suivant l'application du lemme 8.3.4",
+  "scan": "remord au lemme",
+  "tex": "remords au lemme",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "remords au lemme",
+  "note": "Le print omet le s final de « remords ». Le TeX corrige silencieusement cette faute."
+ },
+ {
+  "page": 318,
+  "where": "Application de 8.3.6",
+  "scan": "que les objets de",
+  "tex": "que les objet de",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "que les objet de",
+   "new": "que les objets de"
+  },
+  "note": "Le print porte le pluriel « objets »."
+ },
+ {
+  "page": 318,
+  "where": "Dernier paragraphe, « Soit X un objet cohérent »",
+  "scan": "(F_{\\coh})^{\\sim}",
+  "tex": "(F_{\\coh})^{\\sim}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(\\underrightarrow{F}_{\\coh})^{\\sim}",
+  "note": "Le TeX conserve l'omission imprimée de la flèche de limite inductive sous F. Le topos considéré est celui de la formule immédiatement précédente."
+ },
+ {
+  "page": 319,
+  "where": "Début de page, raccord avec la page 318",
+  "scan": "un objet cohérent",
+  "tex": "objet\\pageoriginale cohérent",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "La page 318 imprimée finit par « est alors » ; la page 319 commence par « un objet cohérent ». Le mot « un » est resté dans la dernière ligne du fichier fourni pour 318, sans que ce débordement soit annoncé. Revoir la coupe, sans ajouter ni déplacer le mot dans le texte source."
+ },
+ {
+  "page": 319,
+  "where": "Définition de R' après X_i = coker(p_1,p_2)",
+  "scan": "R' = Y' \\times_{X'_i} Y'",
+  "tex": "\\fprod{Y'}{Y'}{X'_i}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R' = \\fprod{Y'}{Y'}{X_i}",
+  "note": "Le TeX conserve la prime imprimée en trop sur X_i. L'objet qui vient d'être défini est X_i, sans prime."
+ },
+ {
+  "page": 319,
+  "where": "Démonstration du corollaire 8.3.14, introduction du foncteur cartésien",
+  "scan": "m^{\\ast}_{\\coh} = G_{\\coh} \\to F_{\\coh}",
+  "tex": "m^{\\ast}_{\\coh} = G_{\\coh} \\to F_{\\coh}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "m^{\\ast}_{\\coh} : G_{\\coh} \\to F_{\\coh}",
+  "note": "Le TeX conserve le signe égal imprimé à la place du deux-points introduisant la source et le but du foncteur."
+ },
+ {
+  "page": 320,
+  "where": "Formule (8.4.1.1), indice de Limtop",
+  "scan": "\\limtop{i_{\\alpha}}",
+  "tex": "\\limtop{I_{\\alpha}}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\limtop{I_{\\alpha}}",
+   "new": "\\limtop{i_{\\alpha}}"
+  },
+  "note": "Le print porte un i minuscule, avec son point, et non un I majuscule."
+ },
+ {
+  "page": 320,
+  "where": "8.4.2, dépendance du topos localisé par rapport au point",
+  "scan": "de façon covariante du point",
+  "tex": "de façon covariant du point",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "de façon covariant du point",
+   "new": "de façon covariante du point"
+  },
+  "note": "Le print porte « covariante », avec e final."
+ },
+ {
+  "page": 320,
+  "where": "Fin de page, après « à isomorphisme près »",
+  "scan": "La page finit par « qui s'insère dans un diagramme commutatif à isomorphisme près » ; aucun diagramme ne figure sur cette page.",
+  "tex": "\\xymatrix@R=1.5cm{\n\\Loc_{\\theta(m)} (\\Loc_p(E))  \\ar[rr]^{\\can\\bigdot} \\ar[rd]_{\\phi}  &&\\Loc_{p'}(E)\\ar[ld]^{m}",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Tout le diagramme suivant appartient à la page 321, et non seulement les mots de la dernière ligne signalés par le commentaire de coupe. La page 320 s'arrête avant le display. Faire contrôler ce diagramme avec 321, sans le déplacer dans le texte source."
+ }
+]

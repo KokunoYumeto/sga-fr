@@ -1,0 +1,617 @@
+[
+ {
+  "page": 181,
+  "where": "top of the page",
+  "scan": "p. 181 begins 'G un A-module à gauche, on a un isomorphisme évident'; p. 180 ends 'Si F est un A-bimodule,'",
+  "tex": "'$G$ un $A$-' ends page_180.tex (the line before the folio-181 marker); page_181.tex opens with 'module à gauche'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 181 really begins at '$G$ un $A$-module à gauche'. The marker also splits the word: the line end after '$A$-' sets 'A- module' with a space. Exact fix (moves '$G$ un $A$-' from the end of the line before the marker to the start of the line after it, joined to 'module'): python -I marker_split_word.py 5 181 pull '$G$ un $A$-'  (simulated in memory on both editions: '...est un $A$-bimodule,' / marker / '$G$ un $A$-module à gauche, ...')."
+ },
+ {
+  "page": 181,
+  "where": "second line, 'qui se dérive (trivialement) en'",
+  "scan": "qui se dérive (trivialement) en",
+  "tex": "qui se dérive trivialement en",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "qui se dérive trivialement en",
+   "new": "qui se dérive (trivialement) en"
+  },
+  "note": "Parentheses left out."
+ },
+ {
+  "page": 181,
+  "where": "'Supposons A plat sur K' after the second display",
+  "scan": "a new, indented paragraph",
+  "tex": "runs on from the display (no blank line after \\])",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nSupposons",
+   "new": "\\]\n\nSupposons"
+  },
+  "note": "Paragraph break."
+ },
+ {
+  "page": 181,
+  "where": "(5.13.3)",
+  "scan": "Tr_{A,φ} : Hom_A(E,_{(φ)}E) ⟶ H^o(T,A_{♮,φ}) — Hom is not underlined (the RHom of 5.13.1-5.13.2 and the Hom of 5.13.4 are)",
+  "tex": "\\uHom_A(E,{}_{(\\varphi)}E)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uHom_A(E,{}_{(\\varphi)}E)",
+   "new": "\\Hom_A(E,{}_{(\\varphi)}E)"
+  },
+  "note": "Plain (global) Hom: the trace takes its values in H^0(T, A_{♮,φ})."
+ },
+ {
+  "page": 181,
+  "where": "end of (5.13.3)",
+  "scan": "no punctuation after the formula",
+  "tex": "H^0(T,A_{\\natural,\\varphi}),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "H^0(T,A_{\\natural,\\varphi}),",
+   "new": "H^0(T,A_{\\natural,\\varphi})"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 181,
+  "where": "'l'action (g,x) ⟼ φ(g)xg^{-1} (les orbites ...)'",
+  "scan": "(g,x) ⟼ φ(g)xg^{-1} (les orbites s'appellent parfois \"classes de φ-conjugaison\" de G ).",
+  "tex": "$(g,x)\\mapsto\\varphi(g)xg^{-1}$; les orbites s'appellent parfois classes de $\\varphi$-conjugaison de $G$.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "; les orbites s'appellent parfois classes de $\\varphi$-conjugaison de $G$.",
+   "new": " (les orbites s'appellent parfois ``classes de $\\varphi$-conjugaison'' de $G$)."
+  },
+  "note": "The parentheses became a semicolon and the quotes are left out."
+ },
+ {
+  "page": 181,
+  "where": "'Les traces 5.14.2 coïncident, pour T ponctuel'",
+  "scan": "5.14.2, clearly typed",
+  "tex": "Les traces 5.14.2 coïncident",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "5.13.3",
+  "note": "Wrong reference: there is no 5.14 (section 5 ends with 5.13; '5.14' occurs nowhere else in s5.tex). The traces meant are those just defined, with values in A_{♮,φ}, i.e. 5.13.3 (the case F = A of 5.13.2; 5.13.2 is the other possible reading). The TeX keeps the printed reading."
+ },
+ {
+  "page": 181,
+  "where": "'rendant commutatif le carré (analogue à 5.10.2)'",
+  "scan": "le carré (analogue à 5.10.2)",
+  "tex": "le carré analogue à 5.10.2",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "le carré analogue à 5.10.2",
+   "new": "le carré (analogue à 5.10.2)"
+  },
+  "note": "Parentheses left out."
+ },
+ {
+  "page": 181,
+  "where": "(5.13.4), label of the bottom arrow",
+  "scan": "év (accented), above the arrow",
+  "tex": "\\arrow[r,\"\\mathrm{ev}\"']",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"\\mathrm{ev}\"']",
+   "new": "\\arrow[r,\"\\mathrm{\\acute{e}v}\"]"
+  },
+  "note": "Accent left out; the print sets the label above the arrow (the ' puts it below). \\mathrm{\\acute{e}...} as in the file's \\et."
+ },
+ {
+  "page": 181,
+  "where": "after (5.13.4), 'où év est la flèche d'évaluation'",
+  "scan": "où év est la flèche d'évaluation",
+  "tex": "où $\\mathrm{ev}$ est",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "où $\\mathrm{ev}$ est",
+   "new": "où $\\mathrm{\\acute{e}v}$ est"
+  },
+  "note": "Accent left out, as in the diagram."
+ },
+ {
+  "page": 182,
+  "where": "top of the page",
+  "scan": "p. 182 begins 'B ⊗_K M) remplacé par (φ)A ⊗_K M'; p. 181 ends 'avec A ⊗_K M (resp.'",
+  "tex": "'$B\\otimes_KM$)' ends page_181.tex (the line before the folio-182 marker); page_182.tex opens with 'remplacé par'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 182 really begins at '$B\\otimes_KM$) remplacé par'. Exact fix: python -I move_marker.py 5 182 '$B\\otimes_KM$)' --before  (simulated in memory on both editions: '... (resp. ' / marker / '$B\\otimes_KM$)' / 'remplacé par ...'; the line ends keep the spaces)."
+ },
+ {
+  "page": 182,
+  "where": "'notons Z_{g,φ} le φ-centralisateur de g dans G , i.e. l'ensemble'",
+  "scan": "i.e. l'ensemble",
+  "tex": "c'est-à-dire l'ensemble",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "c'est-à-dire l'ensemble",
+   "new": "i.e.~l'ensemble"
+  },
+  "note": "Abbreviation written out (the file writes 'i.e.~' elsewhere)."
+ },
+ {
+  "page": 182,
+  "where": "'soient E ∈ ob D(A)_parf , N ∈ ob D^b(K)'",
+  "scan": "N, clearly typed",
+  "tex": "$N\\in\\ob D^b(K)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$M\\in\\ob D^b(K)$",
+  "note": "The object is the M of 5.10.5 and of the next line's u ∈ Hom_A(E,_{(φ)}(M ⊗^L_K E)); no N is used. The TeX keeps the printed reading."
+ },
+ {
+  "page": 182,
+  "where": "'pour u ∈ Hom_A(E,_{(φ)}(M ⊗^L_K E)) , g ∈ G'",
+  "scan": "Hom not underlined",
+  "tex": "\\uHom_A(E,{}_{(\\varphi)}(M\\lten_KE))",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uHom_A(E,{}_{(\\varphi)}(M\\lten_KE))",
+   "new": "\\Hom_A(E,{}_{(\\varphi)}(M\\lten_KE))"
+  },
+  "note": "Plain Hom, as in 5.13.3 (p. 181)."
+ },
+ {
+  "page": 182,
+  "where": "end of (5.13.5)",
+  "scan": "no punctuation after the formula",
+  "tex": "\\Tr_{A,\\varphi}(u)(g^{-1}),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(u)(g^{-1}),",
+   "new": "(u)(g^{-1})"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 182,
+  "where": "after (5.13.5), last line of the page",
+  "scan": "(les détails de la vérification sont laissés au lecteur).",
+  "tex": "les détails de la vérification étant laissés au lecteur.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "les détails de la vérification étant laissés au lecteur.",
+   "new": "(les détails de la vérification sont laissés au lecteur)."
+  },
+  "note": "'sont' rewritten as 'étant' and the parentheses left out."
+ },
+ {
+  "page": 183,
+  "where": "section heading, first line of the page",
+  "scan": "6.- Correspondances équivariantes et divisibilité de termes locaux.  (underlined; '.-' after the number, full stop at the end)",
+  "tex": "\\section*{6. Correspondances équivariantes et divisibilité de termes locaux}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{6. Correspondances équivariantes et divisibilité de termes locaux}",
+   "new": "\\section*{6.- Correspondances équivariantes et divisibilité de termes locaux.}"
+  },
+  "note": "The title has '6.-' and ends with a full stop; the TeX drops both (as '3.- Réduction au cas modéré.' of this exposé)."
+ },
+ {
+  "page": 183,
+  "where": "heading 6.1",
+  "scan": "6.1. Notations.  (underlined, full stop)",
+  "tex": "\\subsection*{6.1. Notations}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.1. Notations}",
+   "new": "\\subsection*{6.1. Notations.}"
+  },
+  "note": "Final full stop left out."
+ },
+ {
+  "page": 183,
+  "where": "6.1, first sentence",
+  "scan": "d'un corps de car. p",
+  "tex": "d'un corps de caractéristique $p$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "corps de caractéristique $p$",
+   "new": "corps de car. $p$"
+  },
+  "note": "Abbreviation written out (the file has 'de car. $p>0$' elsewhere)."
+ },
+ {
+  "page": 183,
+  "where": "6.1, 'les \"termes locaux de Lefschetz-Verdier non commutatifs\"'",
+  "scan": "straight typewriter double quotes; a hyphen in Lefschetz-Verdier",
+  "tex": "« termes locaux de Lefschetz--Verdier non commutatifs »",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "« termes locaux de Lefschetz--Verdier non commutatifs »",
+   "new": "``termes locaux de Lefschetz-Verdier non commutatifs''"
+  },
+  "note": "Guillemets for the print's straight quotes (the accepted forms are ``...'' and \"...\"), and an en dash for the print's hyphen; one edit for both."
+ },
+ {
+  "page": 183,
+  "where": "6.1, 'plates (dans les applications, ...). Si X est un S-schéma'",
+  "scan": "elles seront supposées plates (dans les applications, ce seront des algèbres de groupes finis). Si X est un S-schéma,  (same paragraph)",
+  "tex": "plates; dans les applications, ce seront des algèbres de groupes finis. / new paragraph 'Si $X$'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "plates; dans les applications, ce seront des algèbres de groupes finis.\n\nSi $X$",
+   "new": "plates (dans les applications, ce seront des algèbres de groupes finis). Si $X$"
+  },
+  "note": "The parentheses became a semicolon, and the TeX starts a new paragraph that the print does not have."
+ },
+ {
+  "page": 183,
+  "where": "6.1, '(A,B)-bimodules (à gauche sur A , à droite sur B ).'",
+  "scan": "(A,B)-bimodules (à gauche sur A , à droite sur B ).",
+  "tex": "$(A,B)$-bimodules, à gauche sur $A$, à droite sur $B$.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$(A,B)$-bimodules, à gauche sur $A$, à droite sur $B$.",
+   "new": "$(A,B)$-bimodules (à gauche sur $A$, à droite sur $B$)."
+  },
+  "note": "Parentheses replaced by a comma."
+ },
+ {
+  "page": 183,
+  "where": "number of no. 6.2",
+  "scan": "'6.2.' with a full stop",
+  "tex": "\\subsection*{6.2}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.2}",
+   "new": "\\subsection*{6.2.}"
+  },
+  "note": "As the logged '3.6.5.' (p. 97) and '1.1.' (p. 140)."
+ },
+ {
+  "page": 183,
+  "where": "6.2, 'au cas \"non commutatif\".'",
+  "scan": "straight typewriter double quotes",
+  "tex": "au cas « non commutatif ».",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "au cas « non commutatif ».",
+   "new": "au cas ``non commutatif''."
+  },
+  "note": "Guillemets for the print's straight quotes."
+ },
+ {
+  "page": 183,
+  "where": "last lines of page_183.tex (printed at the top of p. 184)",
+  "scan": "f = f_1 x_S f_2 : X = X_1 x_S X_2 ⟶ Y = Y_1 x_S Y_2 , A une Λ-algèbre.  (no 'et')",
+  "tex": "\\] / et $A$ une $\\Lambda$-algèbre.",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\net $A$ une $\\Lambda$-algèbre.",
+   "new": "\\]\n$A$ une $\\Lambda$-algèbre."
+  },
+  "note": "Word added. This text is printed on p. 184 but stands under the folio-183 marker; apply before the p. 184 marker move."
+ },
+ {
+  "page": 184,
+  "where": "top of the page",
+  "scan": "p. 184 begins 'f = f_1 x_S f_2 : X = X_1 x_S X_2 ⟶ Y = Y_1 x_S Y_2 , A une Λ-algèbre. Pour'; p. 183 ends 'Soient, pour i = 1, 2, f_i : X_i ⟶ Y_i un S-morphisme,'",
+  "tex": "the display '\\[ f=f_1\\times_S f_2:... \\]' and 'et $A$ une $\\Lambda$-algèbre.' end page_183.tex; page_184.tex opens with 'Pour $L_1$'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 184 really begins at the display '\\[ f=f_1\\times_S f_2:X=...'. Exact fix, after this file's fixes are applied: python -I move_marker.py 5 184 '\\[' --before  (the anchor is the last '\\[' before the marker, the one that opens this display; simulated in memory on both editions: '...un $S$-morphisme,' / marker / '\\[' / 'f=f_1...')."
+ },
+ {
+  "page": 184,
+  "where": "'on a une flèche de Künneth (dans D^-(Y))'",
+  "scan": "(dans D^-(Y))",
+  "tex": "dans $D^-(Y)$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Künneth dans $D^-(Y)$",
+   "new": "Künneth (dans $D^-(Y)$)"
+  },
+  "note": "Parentheses left out."
+ },
+ {
+  "page": 184,
+  "where": "end of (6.2.1)",
+  "scan": "no punctuation after the formula",
+  "tex": "f_*(L_1\\lten_{S,A}L_2),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "L_2),\n\\tag{6.2.1}",
+   "new": "L_2)\n\\tag{6.2.1}"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 184,
+  "where": "'(où L_1 ⊗^L_{S,A} L_2 =^{dfn} p_1^*L_1 ⊗^L_A p_2^*L_2) , dont'",
+  "scan": "a comma after the closing parenthesis",
+  "tex": "\\])  dont",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\])\ndont",
+   "new": "\\]),\ndont"
+  },
+  "note": "Comma left out."
+ },
+ {
+  "page": 184,
+  "where": "'(pour pouvoir définir ⊗^L_A : D^-(_B-_A) x D^-(_A-_C) ⟶ D^-(_B-_C) ) ,'",
+  "scan": "the clause is in parentheses: '(pour pouvoir définir ... D^-(_B-_C) ) ,'",
+  "tex": "pour pouvoir définir \\[ ... D^-({}_B{-}_C), \\]  (no parentheses)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "pour pouvoir définir\n\\[\n\\lten_A:D^-({}_B{-}_A)\\times D^-({}_A{-}_C)\\longrightarrow D^-({}_B{-}_C),\n\\]",
+   "new": "(pour pouvoir définir\n\\[\n\\lten_A:D^-({}_B{-}_A)\\times D^-({}_A{-}_C)\\longrightarrow D^-({}_B{-}_C)\n\\]),"
+  },
+  "note": "Parentheses left out; the comma follows the closing parenthesis (as the TeX's '(où \\[...\\])')."
+ },
+ {
+  "page": 184,
+  "where": "'on a un isomorphisme analogue à 6.2.1, dans D^-(_BY_C)'",
+  "scan": "6.2.1, dans",
+  "tex": "6.2.1 dans",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "analogue à 6.2.1 dans",
+   "new": "analogue à 6.2.1, dans"
+  },
+  "note": "Comma left out."
+ },
+ {
+  "page": 184,
+  "where": "'L_2 ∈ ob D^-(_AX_{2B})'",
+  "scan": "_A X_{2B}, clearly typed",
+  "tex": "$L_2\\in\\Ob D^-({}_AX_{2B})$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$L_2\\in\\Ob D^-({}_AX_{2C})$",
+  "note": "For ⊗^L_A : D^-(_B-_A) x D^-(_A-_C) ⟶ D^-(_B-_C) and the target D^-(_BY_C), L_2 is an (A,C)-bimodule (compare M_2 ∈ ob D^-(_AY_{2C}) below). The TeX keeps the printed reading."
+ },
+ {
+  "page": 184,
+  "where": "'on a un isomorphisme de Künneth (dans D^-(X))'",
+  "scan": "(dans D^-(X))",
+  "tex": "dans $D^-(X)$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Künneth dans $D^-(X)$",
+   "new": "Künneth (dans $D^-(X)$)"
+  },
+  "note": "Parentheses left out."
+ },
+ {
+  "page": 184,
+  "where": "end of (6.2.2)",
+  "scan": "no punctuation after the formula",
+  "tex": "f^!(M_1\\lten_{S,A}M_2),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "M_2),\n\\tag{6.2.2}",
+   "new": "M_2)\n\\tag{6.2.2}"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 184,
+  "where": "after (6.2.2), '(et un isomorphisme analogue ... ). Enfin, soient'",
+  "scan": "(et un isomorphisme analogue dans D^-(_BX_C) pour M_1 ∈ ob D^-(_BY_{1A}) , M_2 ∈ ob D^-(_AY_{2C}) ). Enfin, soient,  (one paragraph)",
+  "tex": "no parentheses; 'Enfin, soient' begins a new paragraph",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "et un isomorphisme analogue dans $D^-({}_B X_C)$ pour $M_1\\in\\Ob D^-({}_BY_{1A})$, $M_2\\in\\Ob D^-({}_AY_{2C})$.\n\nEnfin",
+   "new": "(et un isomorphisme analogue dans $D^-({}_B X_C)$ pour $M_1\\in\\Ob D^-({}_BY_{1A})$, $M_2\\in\\Ob D^-({}_AY_{2C})$). Enfin"
+  },
+  "note": "Parentheses left out, and a paragraph break the print does not have."
+ },
+ {
+  "page": 184,
+  "where": "'(D^+(X,A_2) quand A_2 est commutatif)' before (6.2.3)",
+  "scan": "no punctuation after the parenthesis",
+  "tex": "est commutatif),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "commutatif),",
+   "new": "commutatif)"
+  },
+  "note": "Comma added."
+ },
+ {
+  "page": 184,
+  "where": "'la flèche \"image inverse\" (III 2.1.1)'",
+  "scan": "straight typewriter double quotes",
+  "tex": "« image inverse »",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "« image inverse »",
+   "new": "``image inverse''"
+  },
+  "note": "Guillemets for the print's straight quotes."
+ },
+ {
+  "page": 184,
+  "where": "'avec la flèche analogue à 5.4.2.' before the third display",
+  "scan": "a full stop after 5.4.2, clearly typed, before the display that is the object of the sentence",
+  "tex": "avec la flèche analogue à 5.4.2  (no full stop)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "analogue à 5.4.2\n",
+   "new": "analogue à 5.4.2.\n"
+  },
+  "corrected": "analogue à 5.4.2",
+  "note": "A stray full stop inside the sentence ('définie par composition de la flèche ... avec la flèche analogue à 5.4.2 [display] (adjointe ...)'). The TeX silently corrects; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 185,
+  "where": "top of the page",
+  "scan": "p. 185 begins 'que 6.2.3 est un isomorphisme. En particulier,'; p. 184 ends 'On déduit de 6.2.1, comme en (III 2.3),'",
+  "tex": "'que 6.2.3 est un' ends page_184.tex (the line before the folio-185 marker); page_185.tex opens with 'isomorphisme.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 185 really begins at 'que 6.2.3 est un isomorphisme'. Exact fix: python -I move_marker.py 5 185 'que 6.2.3 est un' --before  (simulated in memory on both editions: '...comme en (III 2.3), ' / marker / 'que 6.2.3 est un' / 'isomorphisme. ...'; marker_split_word.py pull would glue 'un' to 'isomorphisme')."
+ },
+ {
+  "page": 185,
+  "where": "number of no. 6.3",
+  "scan": "'6.3.' with a full stop",
+  "tex": "\\subsection*{6.3}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.3}",
+   "new": "\\subsection*{6.3.}"
+  },
+  "note": "As 6.2. (p. 183)."
+ },
+ {
+  "page": 185,
+  "where": "'Il résulte de 6.2.2 qu'on a un isomorphisme'",
+  "scan": "qu'on a",
+  "tex": "que l'on a",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Il résulte de 6.2.2 que l'on a",
+   "new": "Il résulte de 6.2.2 qu'on a"
+  },
+  "note": ""
+ },
+ {
+  "page": 185,
+  "where": "'un isomorphisme canonique (de D^+(_AT_A) )' before (6.3.2)",
+  "scan": "(de D^+(_AT_A) )",
+  "tex": "dans $D^+({}_AT_A)$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "canonique dans $D^+({}_AT_A)$",
+   "new": "canonique (de $D^+({}_AT_A)$)"
+  },
+  "note": "'de' rewritten as 'dans' and the parentheses left out."
+ },
+ {
+  "page": 185,
+  "where": "'le foncteur RHom_A(-,KA_T) : il envoie'",
+  "scan": "a colon after the formula, then 'il' in lower case",
+  "tex": "\\uRHom_A(-,KA_T). \\] Il envoie",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom_A(-,KA_T).\n\\]\nIl envoie",
+   "new": "\\uRHom_A(-,KA_T) :\n\\]\nil envoie"
+  },
+  "note": "The colon became a full stop and a capital 'Il'."
+ },
+ {
+  "page": 185,
+  "where": "'(et vice-versa), et la démonstration'",
+  "scan": "(et vice-versa),",
+  "tex": "et vice versa,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "et vice versa,",
+   "new": "(et vice-versa),"
+  },
+  "note": "Parentheses and the hyphen of vice-versa left out."
+ },
+ {
+  "page": 185,
+  "where": "number of no. 6.4",
+  "scan": "'6.4.' with a full stop",
+  "tex": "\\subsection*{6.4}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.4}",
+   "new": "\\subsection*{6.4.}"
+  },
+  "note": "As 6.2. (p. 183)."
+ },
+ {
+  "page": 185,
+  "where": "6.4, 'Par 6.2.3 appliqué à A_1 = A_2 = A , E_1 = L_1 , F_2 = L_2 , E_2 = KA_{X_1}'",
+  "scan": "E_2 = KA_{X_1}, clearly typed",
+  "tex": "$E_2=KA_{X_1}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$F_1=KA_{X_1}$",
+  "note": "6.2.3 has no E_2: D_A L_1 = RHom_A(L_1,KA_{X_1}) needs F_1 = KA_{X_1} (then 6.2.3 gives the display RHom_A(p_1^*L_1,KA_{X_1} ⊗^L_{S,A} L_2)). The TeX keeps the printed reading."
+ },
+ {
+  "page": 185,
+  "where": "'qui généralise (III 3.1.1). Soit c : C ⟶ X'",
+  "scan": "same paragraph, same line",
+  "tex": "a new paragraph at 'Soit $c$'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "qui généralise (III 3.1.1).\n\nSoit",
+   "new": "qui généralise (III 3.1.1). Soit"
+  },
+  "note": "Paragraph break the print does not have."
+ },
+ {
+  "page": 185,
+  "where": "'un isomorphisme canonique (analogue à (III 3.2.1))' before (6.4.2)",
+  "scan": "(analogue à (III 3.2.1))",
+  "tex": "canonique, analogue à (III 3.2.1),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "canonique, analogue à (III 3.2.1),",
+   "new": "canonique (analogue à (III 3.2.1))"
+  },
+  "note": "Parentheses replaced by commas."
+ },
+ {
+  "page": 185,
+  "where": "foot of the page / top of p. 186",
+  "scan": "p. 185 ends 'd'où, en composant avec 6.4.1, un isomorphisme' (the rest of the page is blank); the display (6.4.3) opens p. 186 (the OCR of p. 186 begins '(6.4.3) H (X,c c^!(D_A L_1 ...')",
+  "tex": "the display (6.4.3) '\\begin{equation} H^0(X,c_*c^!(...)) ... \\tag{6.4.3}' ends page_185.tex; the folio-186 marker stands inside the equation, before '\\end{equation}'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 186 really begins at '\\begin{equation}' of (6.4.3). Exact fix: python -I move_marker.py 5 186 '\\begin{equation}' --before  (the last \\begin{equation} before the marker; simulated in memory on both editions: '...un isomorphisme' / marker / '\\begin{equation}' / 'H^0(X,...'). The display itself was not compared here (it belongs to p. 186)."
+ }
+]

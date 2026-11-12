@@ -1,0 +1,186 @@
+[
+ {
+  "page": 421,
+  "where": "(9.2.9), first member",
+  "scan": "u ∈ (M̌'⊗_Z M̌)⊗_Z Z_ℓ)^I",
+  "tex": "u \\in (\\check{M}'\\otimes_{\\mathbb{Z}}\\check{M})\\otimes_{\\mathbb{Z}}\\mathbb{Z}_\\ell)^I",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "u \\in ((\\check{M}'\\otimes_{\\mathbb{Z}}\\check{M})\\otimes_{\\mathbb{Z}}\\mathbb{Z}_\\ell)^I",
+  "note": "The print opens one parenthesis and closes two. The TeX keeps the printed reading."
+ },
+ {
+  "page": 421,
+  "where": "sentence after (9.3.1): 'des objets X de C, munie d'une filtration'",
+  "scan": "munie d'une filtration en trois crans",
+  "tex": "munie d'une filtration en trois crans",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "munis d'une filtration en trois crans",
+  "note": "Agreement slip: the participle belongs to 'des objets X'. The TeX keeps the printed 'munie'."
+ },
+ {
+  "page": 421,
+  "where": "display of the given isomorphisms after (*)",
+  "scan": "X^o/X^1 ⥲ P , X^1/X^2 ⥲ R, X^2/X^3 = X^2 ⥲ Q .",
+  "tex": "X^o/X^1 \\xrightarrow{\\ \\sim\\ } P \\quad , \\quad X^1/X^2 \\xrightarrow{\\ \\sim\\ } R, \\quad X^2/X^3 = X^2 \\xrightarrow{\\ \\sim\\ } Q",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "X^o/X^1 \\xrightarrow{\\ \\sim\\ } Q \\quad , \\quad X^1/X^2 \\xrightarrow{\\ \\sim\\ } R, \\quad X^2/X^3 = X^2 \\xrightarrow{\\ \\sim\\ } P",
+  "note": "P and Q are interchanged (one correction, both letters). With E = X^o/X^2 and F = X^1 the sequences (9.3.2) 0→P→F→R→0 and 0→R→E→Q→0 need X^o/X^1 ≃ Q and X^2 ≃ P; so do 'X^2 en Im(P,F)' (p. 422), the epimorphism X→Q and monomorphism P→X after (9.3.4), and 'une extension X de E par P' (p. 425). The TeX keeps the printed reading."
+ },
+ {
+  "page": 422,
+  "where": "line 3: 'nous appelerons extension panachée'",
+  "scan": "nous appelerons",
+  "tex": "nous appelerons",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "nous appellerons",
+  "note": "Spelling slip for 'appellerons'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 422,
+  "where": "after (9.3.3): 'et X^2 en Im(P,F),et tels enfin'",
+  "scan": "Im(P,F)",
+  "tex": "\\mathrm{Im}(P,F)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\mathrm{Im}(P \\longrightarrow F)",
+  "note": "A comma is typed where the hand-drawn arrow belongs; compare Im(R → E) in the same sentence. The TeX keeps the printed reading."
+ },
+ {
+  "page": 423,
+  "where": "'Or le premier isomorphisme (9.3.3) nous donne un isomorphisme ... ≃ F'",
+  "scan": "X (tilde over bar) ≃ F,",
+  "tex": "\\widetilde{\\overline{X}} \\simeq F",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\widetilde{\\overline{X}} \\simeq E",
+  "note": "The image of X by F → R is X/X^2 = X^o/X^2, an extension of Q by R; the first isomorphism of (9.3.3) identifies it with E (F is an extension of R by P). The TeX keeps the printed F. Correct together with the next finding."
+ },
+ {
+  "page": 423,
+  "where": "last line: 'Il en résulte un isomorphisme canonique X̃' ≃ F'",
+  "scan": "X̃' ≃ F,",
+  "tex": "\\widetilde{X}' \\simeq F",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\widetilde{X}' \\simeq E",
+  "note": "The first isomorphism of type (9.3.3) for X' is E ≃ X'^o/X'^2 = X̃' (X̃' ≃ G̃̄∧X̃̄ with G̃̄ trivial). The TeX keeps the printed F. Correct together with the previous finding."
+ },
+ {
+  "page": 424,
+  "where": "Proposition 9.3.8, first line",
+  "scan": "Etant donné deux extensions [underlined] E et [underlined] F (9.3.2)",
+  "tex": "\\underline{Etant donné deux extensions $E$ et $F$}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Etant donné deux extensions $E$ et $F$}",
+   "new": "\\underline{Etant donné deux extensions} $E$ \\underline{et} $F$"
+  },
+  "note": "In this statement the typist underlines the words but not the letters E and F. Together with the two other fixes of this kind below, these are the only underlines over a single math letter in expose_IX_body.tex, so no global pass is needed."
+ },
+ {
+  "page": 424,
+  "where": "Proposition 9.3.8, line 2: 'dans la catégorie abélienne C,'",
+  "scan": "heavy, overstruck capital C (filled counter), not underlined",
+  "tex": "$\\underline{C}$, \\underline{on",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\underline{C}$, \\underline{on",
+   "new": "$\\mathbf{C}$, \\underline{on"
+  },
+  "note": "Inside the underlined statement the category is printed as a darker, overstruck C without underline (the underlines of 'abélienne' and 'on' stop on either side of it), unlike the underlined C of the running text. Bold is the closest reading; if it is a hand-made double-struck C, \\mathbf is the edition's accepted form for that too."
+ },
+ {
+  "page": 424,
+  "where": "Proposition 9.3.8, line 3",
+  "scan": "extensions panachées de [underlined] E par [underlined] F. On a alors ce qui suit [underlined] :",
+  "tex": "\\underline{des extensions panachées de $E$ par $F$. On a alors ce qui suit :}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{des extensions panachées de $E$ par $F$. On a alors ce qui suit :}",
+   "new": "\\underline{des extensions panachées de} $E$ \\underline{par} $F$. \\underline{On a alors ce qui suit :}"
+  },
+  "note": "The print leaves E and 'F.' without underline (the colon is left inside, as handled globally)."
+ },
+ {
+  "page": 424,
+  "where": "c), last line",
+  "scan": "i.e. pour qu'il existe une extension panachée de [underlined] E par [underlined] F.",
+  "tex": "\\underline{i.e. pour qu'il existe une extension panachée de $E$ par $F$.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{i.e. pour qu'il existe une extension panachée de $E$ par $F$.}",
+   "new": "\\underline{i.e. pour qu'il existe une extension panachée de} $E$ \\underline{par} $F$."
+  },
+  "note": "The print leaves E and 'F.' without underline."
+ },
+ {
+  "page": 425,
+  "where": "first line",
+  "scan": "Il reste à prouver d).",
+  "tex": "Il reste à prouver d).",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Il reste à prouver c).",
+  "note": "Proposition 9.3.8 (p. 424) has only parts a), b), c); a) and b) are deduced before it, and the proof that follows defines c(E,F), i.e. proves c). The TeX keeps the printed 'd)'."
+ },
+ {
+  "page": 425,
+  "where": "first sentence: 'une extension panachée ... peut aussi être décrit'",
+  "scan": "peut aussi être décrit comme",
+  "tex": "être décrit comme",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "être décrite comme",
+  "note": "Agreement slip: the participle belongs to 'une extension panachée'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 425,
+  "where": "'un élément de Ext^1(E,P) donc l'image dans Ext^1(R,P)'",
+  "scan": "donc l'image",
+  "tex": "donc l'image",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "dont l'image",
+  "note": "Typing error. The TeX keeps the printed reading."
+ },
+ {
+  "page": 425,
+  "where": "unnumbered display of the Ext^i(-,P) exact sequence",
+  "scan": "Ext^1(R,P) →∂ Ext^2(R,Q) ...",
+  "tex": "\\mathrm{Ext}^2(R,Q)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\mathrm{Ext}^2(Q,P)",
+  "note": "The Ext^i(-,P) sequence of 0→R→E→Q→0 continues Ext^1(R,P) → Ext^2(Q,P), where c(E,F) = ∂ξ lies by (9.3.9). The TeX keeps the printed reading."
+ },
+ {
+  "page": 425,
+  "where": "(9.3.12), label of the bottom horizontal arrow",
+  "scan": "ω (no prime)",
+  "tex": "\\arrow[r, \"\\omega\"] & \\mathrm{EXTPAN}(E',F')",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\arrow[r, \"\\omega'\"] & \\mathrm{EXTPAN}(E',F')",
+  "note": "The bottom arrow is the functor for C' that the text of p. 426 names ω' ('la flèche analogue à ω (9.3.5)'); the print labels it ω without a prime, as the STRUCTURE comment records. The TeX keeps the printed reading."
+ }
+]

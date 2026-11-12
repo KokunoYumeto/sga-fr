@@ -1,0 +1,135 @@
+{
+ "id": "resp_069ca418e235eaf7006af43c6bb3c087d2990a6d76750aa9cb",
+ "object": "response",
+ "created_at": 1794391147,
+ "status": "completed",
+ "access_programs": {
+  "cyber": "standard"
+ },
+ "background": true,
+ "billing": {
+  "payer": "developer"
+ },
+ "completed_at": 1794391233,
+ "error": null,
+ "frequency_penalty": 0.0,
+ "image": {
+  "context_compression": "disabled"
+ },
+ "incomplete_details": null,
+ "max_output_tokens": 128000,
+ "max_tool_calls": null,
+ "model": "gpt-6.1-sol",
+ "moderation": null,
+ "output": [
+  {
+   "id": "rs_069ca418e235eaf7006af43c6f2b7887d2857838cfc87a39c4",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_069ca418e235eaf7006af43c7888c087d2a2d29a68af54a797",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_069ca418e235eaf7006af43c80355087d2b0d7a47f752fe16a",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_069ca418e235eaf7006af43c8f3dc087d2ace35408be39d20c",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_069ca418e235eaf7006af43c9c1de887d2a8c552de610147a6",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_069ca418e235eaf7006af43cab919487d2ae90296457dd050d",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "msg_069ca418e235eaf7006af43cbc789c87d2aee7a0ba61ab59fa",
+   "type": "message",
+   "status": "completed",
+   "content": [
+    {
+     "type": "output_text",
+     "annotations": [],
+     "logprobs": [],
+     "text": "{\n  \"findings\": [\n    {\n      \"page\": 265,\n      \"where\": \"Ligne du nom de l’auteur\",\n      \"scan\": \"par J.L. Verdier\",\n      \"tex\": \"J.-L. Verdier\",\n      \"kind\": \"missing\",\n      \"confidence\": \"high\",\n      \"fix\": {\n        \"old\": \"J.-L. Verdier\\n\\\\end{center}\",\n        \"new\": \"par J.-L. Verdier\\n\\\\end{center}\"\n      },\n      \"note\": \"Le mot « par » manque devant le nom de l’auteur.\"\n    },\n    {\n      \"page\": 265,\n      \"where\": \"Introduction, première phrase\",\n      \"scan\": \"on a étudié le comportement\",\n      \"tex\": \"on a étudié la comportement\",\n      \"kind\": \"word\",\n      \"confidence\": \"high\",\n      \"fix\": {\n        \"old\": \"la comportement\",\n        \"new\": \"le comportement\"\n      },\n      \"note\": \"Le texte imprimé porte bien « le ».\"\n    },\n    {\n      \"page\": 265,\n      \"where\": \"Définition 1.1, dernière phrase\",\n      \"scan\": \"le préfaisceau … ser C est un faisceau\",\n      \"tex\": \"préfaisceau $X\\\\mapsto F\\\\circ u(X)$ sur $C$ est un faisceau.\",\n      \"kind\": \"misprint_in_print\",\n      \"confidence\": \"high\",\n      \"fix\": null,\n      \"corrected\": \"sur $C$\",\n      \"note\": \"L’imprimé porte « ser » au lieu de « sur » ; le TeX corrige silencieusement cette coquille.\"\n    }\n  ],\n  \"coordinator\": \"265: 2 normal / 1 misprint.\"\n}"
+    }
+   ],
+   "phase": "final_answer",
+   "role": "assistant"
+  }
+ ],
+ "parallel_tool_calls": true,
+ "presence_penalty": 0.0,
+ "previous_response_id": null,
+ "prompt_cache_key": null,
+ "prompt_cache_retention": "24h",
+ "reasoning": {
+  "context": "all_turns",
+  "effort": "max",
+  "mode": "standard",
+  "summary": null
+ },
+ "safety_identifier": null,
+ "service_tier": "flex",
+ "store": true,
+ "temperature": 1.0,
+ "text": {
+  "format": {
+   "type": "text"
+  },
+  "verbosity": "medium"
+ },
+ "tool_choice": "auto",
+ "tool_usage": {
+  "image_gen": {
+   "input_tokens": 0,
+   "input_tokens_details": {
+    "image_tokens": 0,
+    "text_tokens": 0
+   },
+   "output_tokens": 0,
+   "output_tokens_details": {
+    "image_tokens": 0,
+    "text_tokens": 0
+   },
+   "total_tokens": 0
+  },
+  "web_search": {
+   "num_requests": 0
+  }
+ },
+ "tools": [],
+ "top_logprobs": 0,
+ "top_p": 0.98,
+ "truncation": "disabled",
+ "usage": {
+  "input_tokens": 7618,
+  "input_tokens_details": {
+   "cache_write_tokens": 7615,
+   "cached_tokens": 0
+  },
+  "output_tokens": 3447,
+  "output_tokens_details": {
+   "reasoning_tokens": 3056
+  },
+  "total_tokens": 11065
+ },
+ "user": null,
+ "metadata": {}
+}

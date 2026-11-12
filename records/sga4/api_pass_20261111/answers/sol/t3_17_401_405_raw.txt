@@ -1,0 +1,40 @@
+{
+  "findings": [
+    {
+      "page": 401,
+      "where": "5.5.22.6, « pour chacun des morphismes »",
+      "scan": "$u_i:X_i\\longrightarrow Y_i$",
+      "tex": "$u_{i}:X_{1}\\rightarrow Y_{i}$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$u_{i}:X_{1}\\rightarrow Y_{i}$",
+        "new": "$u_{i}:X_{i}\\rightarrow Y_{i}$"
+      },
+      "note": "Both scans show the index i on X, not the digit 1."
+    },
+    {
+      "page": 404,
+      "where": "5.5.25.3, suite exacte",
+      "scan": "$0\\longrightarrow\\sigma_{\\geq n}K\\longrightarrow K\\longrightarrow\\sigma_{\\leq n}K\\longrightarrow0$",
+      "tex": "\\sigma_{\\geq n} K\\longrightarrow K\\longrightarrow\n\\sigma_{\\leq n} K\\longrightarrow 0",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "0\\longrightarrow\\sigma_{\\geq n}K\\longrightarrow K\\longrightarrow\\sigma_{\\leq n-1}K\\longrightarrow0",
+      "note": "The TeX retains the printed error: the two truncations overlap in degree n. With the left endpoint unchanged, the quotient must be truncated in degrees at most n−1."
+    },
+    {
+      "page": 404,
+      "where": "5.5.25.3, phrase suivant la suite exacte",
+      "scan": "montrent que pour les flèches de Künneth soient un isomorphisme",
+      "tex": "montrent que pour les flèches de Künneth soient un isomorphisme",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "montrent que pour que les flèches de Künneth soient des isomorphismes",
+      "note": "The print omits « que » after « pour » and has singular « un isomorphisme » with plural « les flèches ». The TeX retains the printed wording."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 401: 1/0; 402: 0/0; 403: 0/0; 404: 0/2; 405: 0/0."
+}

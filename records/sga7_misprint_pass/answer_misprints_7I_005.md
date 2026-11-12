@@ -1,0 +1,776 @@
+```json
+[
+  {
+    "id": "7I:470",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "La première relation a été déjà été rappelée",
+    "new": "La première relation a déjà été rappelée",
+    "note": "Suppression du premier « été », redoublé."
+  },
+  {
+    "id": "7I:471",
+    "decision": "already",
+    "note": "Le cas cyclique est déjà écrit M = Z/nZ."
+  },
+  {
+    "id": "7I:808",
+    "decision": "already",
+    "note": "covered by 7I:470"
+  },
+  {
+    "id": "7I:809",
+    "decision": "already",
+    "note": "Le cas cyclique est déjà écrit M = Z/nZ."
+  },
+  {
+    "id": "7I:810",
+    "decision": "keep",
+    "note": "La virgule sépare sans ambiguïté les trois arguments de Biext. Son remplacement par un point-virgule serait une normalisation notationnelle sans effet mathématique."
+  },
+  {
+    "id": "7I:472",
+    "decision": "already",
+    "note": "Les trois images inverses portent déjà sur L, le Module inversible."
+  },
+  {
+    "id": "7I:473",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "\\underline{Soient} $P$ \\underline{un groupe lisse",
+    "new": "\\underline{Soit} $P$ \\underline{un groupe lisse",
+    "note": "Un seul groupe est introduit."
+  },
+  {
+    "id": "7I:811",
+    "decision": "already",
+    "note": "Les trois P sont déjà remplacés par L. Ajouter le soulignement à ces occurrences ne constituerait qu'une harmonisation typographique."
+  },
+  {
+    "id": "7I:812",
+    "decision": "already",
+    "note": "covered by 7I:473"
+  },
+  {
+    "id": "7I:474",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "\\underline{soit trivial}",
+    "new": "\\underline{soit triviale}",
+    "note": "Accord avec « la restriction »."
+  },
+  {
+    "id": "7I:813",
+    "decision": "already",
+    "note": "covered by 7I:474"
+  },
+  {
+    "id": "7I:475",
+    "decision": "keep",
+    "note": "M_2 désigne sans ambiguïté la restriction du Module M définie immédiatement après. Le soulignement manquant est un détail typographique sans effet sur le sens."
+  },
+  {
+    "id": "7I:476",
+    "decision": "already",
+    "note": "Le texte donne déjà Y = P × B, conformément à la définition de Y."
+  },
+  {
+    "id": "7I:814",
+    "decision": "keep",
+    "note": "Même détail typographique que pour 7I:475 : M_2 est identifié sans ambiguïté, avec ou sans soulignement."
+  },
+  {
+    "id": "7I:815",
+    "decision": "already",
+    "note": "Le texte donne déjà Y = P × B."
+  },
+  {
+    "id": "7I:477",
+    "decision": "already",
+    "note": "La restriction est déjà prise sur P × e_Q."
+  },
+  {
+    "id": "7I:816",
+    "decision": "already",
+    "note": "La restriction est déjà prise sur P × e_Q."
+  },
+  {
+    "id": "7I:817",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "\\underline{Alors le foncteur envisagé dans} 1.3",
+    "new": "\\underline{Alors le foncteur envisagé dans} 4.3",
+    "note": "La proposition 4.3 énonce précisément la pleine fidélité du foncteur des biextensions vers les Modules inversibles birigidifiés, dont 4.7 affirme ici l'équivalence."
+  },
+  {
+    "id": "7I:478",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "de l'hypothèses sur $L$",
+    "new": "de l'hypothèse sur $L$",
+    "note": "Correction du singulier après « l' »."
+  },
+  {
+    "id": "7I:479",
+    "decision": "already",
+    "note": "Le texte porte déjà « signalé »."
+  },
+  {
+    "id": "7I:818",
+    "decision": "already",
+    "note": "covered by 7I:478"
+  },
+  {
+    "id": "7I:480",
+    "decision": "keep",
+    "note": "BIEXT(A,B,G_m) désigne sans ambiguïté la catégorie voulue. Remplacer la dernière virgule par un point-virgule serait une harmonisation notationnelle sans effet sur le sens."
+  },
+  {
+    "id": "7I:481",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "\\underline{elle donne naissanee}",
+    "new": "\\underline{elle donne naissance}",
+    "note": "Correction de la faute de frappe dans « naissance »."
+  },
+  {
+    "id": "7I:482",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "CeIa se déduit",
+    "new": "Cela se déduit",
+    "note": "Remplacement du I majuscule par un l."
+  },
+  {
+    "id": "7I:483",
+    "decision": "already",
+    "note": "Le renvoi est déjà (4.11.1), comme dans le paragraphe suivant."
+  },
+  {
+    "id": "7I:484",
+    "decision": "already",
+    "note": "L'abréviation est déjà écrite « i.e. »."
+  },
+  {
+    "id": "7I:485",
+    "decision": "already",
+    "note": "Le Module M est déjà indiqué comme étant sur A, base du morphisme f."
+  },
+  {
+    "id": "7I:486",
+    "decision": "already",
+    "note": "Le morphisme est déjà f : P → A, dans le sens requis pour l'image inverse de M."
+  },
+  {
+    "id": "7I:487",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "qui sont symétriques. Il s'impose",
+    "new": "qui sont symétriques). Il s'impose",
+    "note": "Fermeture de la parenthèse ouverte par « (qui, en vertu de 4.7 »."
+  },
+  {
+    "id": "7I:488",
+    "decision": "already",
+    "note": "Le torseur est déjà donné sous Z_S."
+  },
+  {
+    "id": "7I:489",
+    "decision": "keep",
+    "note": "« Constants tronqués » est intentionnel : 5.7 définit explicitement les schémas constants tronqués Z_{S,T}, étudiés dans la seconde partie du numéro. « Tordus » changerait le sujet du titre."
+  },
+  {
+    "id": "7I:490",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "pleine fidèlité de 5.1",
+    "new": "pleine fidélité de 5.1",
+    "note": "Correction de l'accent."
+  },
+  {
+    "id": "7I:491",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "H^1(\\eta,Z_\\eta))$ est injectif",
+    "new": "H^1(\\eta,Z_\\eta)$ est injectif",
+    "note": "Suppression de la parenthèse fermante surnuméraire."
+  },
+  {
+    "id": "7I:492",
+    "decision": "already",
+    "note": "Le groupe sans torsion est déjà nommé Z."
+  },
+  {
+    "id": "7I:493",
+    "decision": "already",
+    "note": "La catégorie source est déjà celle des torseurs sur P sous Z_P ; la cible porte sur la fibre générique."
+  },
+  {
+    "id": "7I:494",
+    "decision": "already",
+    "note": "Le texte donne déjà P_{iη} comme second schéma ayant le point générique p_i."
+  },
+  {
+    "id": "7I:495",
+    "decision": "already",
+    "note": "Le groupe des coefficients est déjà Z_k, comme dans (5.5.1)."
+  },
+  {
+    "id": "7I:496",
+    "decision": "already",
+    "note": "L'exemple est déjà P de type fini, ce qui assure la finitude de son groupe de composantes."
+  },
+  {
+    "id": "7I:497",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "On se rappelera qu'un",
+    "new": "On se rappellera qu'un",
+    "note": "Correction de l'orthographe du futur."
+  },
+  {
+    "id": "7I:498",
+    "decision": "already",
+    "note": "L'extension est déjà donnée par Z_k."
+  },
+  {
+    "id": "7I:499",
+    "decision": "already",
+    "note": "Les deux groupes Hom ont déjà Z_k pour cible."
+  },
+  {
+    "id": "7I:500",
+    "decision": "already",
+    "note": "V est déjà défini comme Z tensorisé avec Q, conformément à (5.5.2)."
+  },
+  {
+    "id": "7I:501",
+    "decision": "already",
+    "note": "Le texte porte déjà « schémas en groupes »."
+  },
+  {
+    "id": "7I:502",
+    "decision": "already",
+    "note": "Les quotients par les composantes neutres sont déjà appelés groupes des composantes connexes."
+  },
+  {
+    "id": "7I:503",
+    "decision": "already",
+    "note": "Le groupe de coefficients de Biext est déjà Z_k."
+  },
+  {
+    "id": "7I:504",
+    "decision": "already",
+    "note": "Le renvoi est déjà (5.7.2), qui donne effectivement le foncteur représenté."
+  },
+  {
+    "id": "7I:505",
+    "decision": "already",
+    "note": "E et F sont déjà des torseurs sous Z_{S,T}."
+  },
+  {
+    "id": "7I:506",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "gra\\^{c}e à (5.7.1)",
+    "new": "grâce à (5.7.1)",
+    "note": "L'accent circonflexe appartient au a."
+  },
+  {
+    "id": "7I:507",
+    "decision": "already",
+    "note": "Le Groupe libre est déjà indexé par S."
+  },
+  {
+    "id": "7I:508",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "$g_i$ et $g_j$ coïncident",
+    "new": "$\\overline{g}_i$ et $\\overline{g}_j$ coïncident",
+    "note": "Ce sont les sections barrées définies en b), puis utilisées dans les deux égalités suivantes."
+  },
+  {
+    "id": "7I:509",
+    "decision": "already",
+    "note": "Le renvoi est déjà 6.2, lemme qui décrit ces extensions par les couples (F,s)."
+  },
+  {
+    "id": "7I:510",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "pour tout couple d'léments",
+    "new": "pour tout couple d'éléments",
+    "note": "Rétablissement de la lettre manquante."
+  },
+  {
+    "id": "7I:511",
+    "decision": "keep",
+    "note": "L'absence de point après le numéro ne rend ni le numéro ni le texte ambigus. Il s'agit seulement d'un détail typographique de numérotation."
+  },
+  {
+    "id": "7I:512",
+    "decision": "already",
+    "note": "Le couple contient déjà s_{-D}, section canonique de O_S(-D)."
+  },
+  {
+    "id": "7I:513",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "que nous appelerons le",
+    "new": "que nous appellerons le",
+    "note": "Correction de l'orthographe du futur."
+  },
+  {
+    "id": "7I:514",
+    "decision": "already",
+    "note": "L'extension porte déjà la barre : G̅."
+  },
+  {
+    "id": "7I:515",
+    "decision": "already",
+    "note": "L'extension est déjà notée G̅, distinctement du noyau G."
+  },
+  {
+    "id": "7I:516",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "est égal à celle de",
+    "new": "est égale à celle de",
+    "note": "Accord avec « la restriction »."
+  },
+  {
+    "id": "7I:517",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "\\underline{si ces anneaux locaux sont factoriels}",
+    "new": "\\underline{si ses anneaux locaux sont factoriels}",
+    "note": "Il s'agit des anneaux locaux de S."
+  },
+  {
+    "id": "7I:518",
+    "decision": "already",
+    "note": "L'hypothèse de factorialité porte déjà sur les anneaux locaux de S."
+  },
+  {
+    "id": "7I:519",
+    "decision": "already",
+    "note": "L'ouvert est déjà nommé U, conformément aux termes j_*G_{mU}."
+  },
+  {
+    "id": "7I:520",
+    "decision": "already",
+    "note": "Le terme médian est déjà j_*G_{mU}, image directe du faisceau sur U."
+  },
+  {
+    "id": "7I:521",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "$s$ sont point fermé",
+    "new": "$s$ son point fermé",
+    "note": "Correction de « sont » en possessif « son »."
+  },
+  {
+    "id": "7I:522",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "\\underline{dans la catégorie des biextensions de} $(P,Q)$",
+    "new": "\\underline{de la catégorie des biextensions de} $(P,Q)$",
+    "note": "La première catégorie est la source du foncteur ; la seconde, introduite par « dans », est sa cible."
+  },
+  {
+    "id": "7I:523",
+    "decision": "already",
+    "note": "La biextension à prolonger est déjà E_η."
+  },
+  {
+    "id": "7I:524",
+    "decision": "already",
+    "note": "La démonstration a) parle déjà de la catégorie des extensions par G̅."
+  },
+  {
+    "id": "7I:525",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "La pleine fidèlité du foncteur envisagé",
+    "new": "La pleine fidélité du foncteur envisagé",
+    "note": "Correction de l'accent."
+  },
+  {
+    "id": "7I:526",
+    "decision": "already",
+    "note": "Le texte donne déjà le groupe constant (Q/Z)_k avec Q et Z en caractères doubles."
+  },
+  {
+    "id": "7I:527",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "le fait que pourtout",
+    "new": "le fait que pour tout",
+    "note": "Rétablissement de la séparation des deux mots."
+  },
+  {
+    "id": "7I:528",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "De même, si on des morphismes",
+    "new": "De même, si on a des morphismes",
+    "note": "Rétablissement du verbe manquant."
+  },
+  {
+    "id": "7I:529",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "\\underline{\\mathrm{Hom}}(\\Psi ,\\mathbb{Q}/\\mathbb{Z} )_k))",
+    "new": "\\underline{\\mathrm{Hom}}(\\Psi ,(\\mathbb{Q}/\\mathbb{Z} )_k))",
+    "note": "L'indice k appartient au groupe constant cible de Hom, comme dans la phrase précédente ; la parenthèse rétablie équilibre aussi l'expression."
+  },
+  {
+    "id": "7I:530",
+    "decision": "already",
+    "note": "L'argument de q_η^* est déjà E_η."
+  },
+  {
+    "id": "7I:531",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "pour tout section $q$",
+    "new": "pour toute section $q$",
+    "note": "Accord avec « section »."
+  },
+  {
+    "id": "7I:532",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "à l'aise du changement de base",
+    "new": "à l'aide du changement de base",
+    "note": "La locution requise est « à l'aide de »."
+  },
+  {
+    "id": "7I:533",
+    "decision": "apply",
+    "file": "expose_VIII_body.tex",
+    "old": "$e(S'/S) = 1$ ., i.e. où",
+    "new": "$e(S'/S) = 1$, i.e. où",
+    "note": "Suppression du point parasite avant la virgule."
+  },
+  {
+    "id": "7I:534",
+    "decision": "already",
+    "note": "L'entrée [1] porte déjà « à paraître »."
+  },
+  {
+    "id": "7I:535",
+    "decision": "keep",
+    "note": "Le Q ordinaire désigne sans ambiguïté les rationnels dans Q/Z. Le double trait serait une harmonisation de la forme du symbole, sans changement de sens."
+  },
+  {
+    "id": "7I:536",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "comportement assymptotique",
+    "new": "comportement asymptotique",
+    "note": "Suppression du s redoublé."
+  },
+  {
+    "id": "7I:537",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "dont nous avons déjà eû à faire usage",
+    "new": "dont nous avons déjà eu à faire usage",
+    "note": "Le participe passé d'avoir est « eu »."
+  },
+  {
+    "id": "7I:538",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "ces termes étant synonymes, parait-il",
+    "new": "ces termes étant synonymes, paraît-il",
+    "note": "Rétablissement du circonflexe selon l'orthographe de l'édition."
+  },
+  {
+    "id": "7I:539",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "n'utilisant.pas",
+    "new": "n'utilisant pas",
+    "note": "Le point parasite remplace la séparation des mots."
+  },
+  {
+    "id": "7I:540",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "sous la réserve toutesfois, parfois",
+    "new": "sous la réserve toutefois, parfois",
+    "note": "Correction de l'orthographe de « toutefois »."
+  },
+  {
+    "id": "7I:541",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "\\underline{et la biextension cancnique}",
+    "new": "\\underline{et la biextension canonique}",
+    "note": "Correction de la faute de frappe."
+  },
+  {
+    "id": "7I:542",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "La suite de cet exposé est consacré à",
+    "new": "La suite de cet exposé est consacrée à",
+    "note": "Accord avec « La suite »."
+  },
+  {
+    "id": "7I:543",
+    "decision": "already",
+    "note": "La fibre spéciale est déjà A'_o, conformément au quotient (1.1.8)."
+  },
+  {
+    "id": "7I:544",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "changements de base formellements nets",
+    "new": "changements de base formellement nets",
+    "note": "L'adverbe est invariable."
+  },
+  {
+    "id": "7I:545",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "que lui a donné SERRE",
+    "new": "que lui a donnée SERRE",
+    "note": "Accord avec le complément d'objet direct antéposé « la forme »."
+  },
+  {
+    "id": "7I:546",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "(unique à isomorphe unique près)",
+    "new": "(unique à isomorphisme unique près)",
+    "note": "Le substantif requis est « isomorphisme », comme dans la phrase suivante."
+  },
+  {
+    "id": "7I:547",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "de sorte que la suite exacte (2.1.5) s'écrit alors",
+    "new": "de sorte que la suite exacte (2.1.6) s'écrit alors",
+    "note": "La page 329 identifie explicitement (2.1.6) et (2.1.8) comme les deux formes de cette suite exacte."
+  },
+  {
+    "id": "7I:548",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "Il sont encore reliés par les relations",
+    "new": "Ils sont encore reliés par les relations",
+    "note": "Le pronom reprend les quatre entiers."
+  },
+  {
+    "id": "7I:549",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "des groupes-de Barsotti-Tate envisagés",
+    "new": "des groupes de Barsotti-Tate envisagés",
+    "note": "Suppression du trait d'union parasite dans le groupe de mots."
+  },
+  {
+    "id": "7I:550",
+    "decision": "already",
+    "note": "Le renvoi est déjà 2.1.5, également cité en 2.1.13 pour le rang unipotent nul."
+  },
+  {
+    "id": "7I:551",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "qu'on appelera la",
+    "new": "qu'on appellera la",
+    "note": "Correction de l'orthographe du futur."
+  },
+  {
+    "id": "7I:552",
+    "decision": "already",
+    "note": "L'égalité annoncée est déjà référencée (2.2.5.1), celle dont les deux membres sont discutés dans le paragraphe."
+  },
+  {
+    "id": "7I:553",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "schémas abéliens isogénes sur",
+    "new": "schémas abéliens isogènes sur",
+    "note": "Correction de l'accent."
+  },
+  {
+    "id": "7I:554",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "\\underline{(avec les notations de} (2.1.11) \\underline{on a}",
+    "new": "\\underline{(avec les notations de} (2.1.11)) \\underline{on a}",
+    "note": "Fermeture de l'incise ouverte avant « avec »."
+  },
+  {
+    "id": "7I:555",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "appelée la \\underline{partie torique de}",
+    "new": "appelé la \\underline{partie torique de}",
+    "note": "Accord avec le sous-faisceau, également qualifié de « caractérisé » après (2.3.2)."
+  },
+  {
+    "id": "7I:556",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "$(A'(\\overline{K})$ comme les modules",
+    "new": "$A'(\\overline{K})$ comme les modules",
+    "note": "Suppression de la parenthèse ouvrante parasite."
+  },
+  {
+    "id": "7I:557",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "gra\\^ce au théorème suivant",
+    "new": "grâce au théorème suivant",
+    "note": "L'accent circonflexe appartient au a."
+  },
+  {
+    "id": "7I:558",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "\\underline{Thoérème}",
+    "new": "\\underline{Théorème}",
+    "note": "Correction de l'interversion des lettres."
+  },
+  {
+    "id": "7I:559",
+    "decision": "already",
+    "note": "Le couple est déjà écrit (A_K, A'_K)."
+  },
+  {
+    "id": "7I:560",
+    "decision": "already",
+    "note": "L'accouplement est déjà noté varphi_W, en référence à la biextension W."
+  },
+  {
+    "id": "7I:561",
+    "decision": "already",
+    "note": "Le second facteur de (2.4.5) porte déjà une prime et désigne la fibre spéciale de la partie fixe de A'."
+  },
+  {
+    "id": "7I:562",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "relations antre faisceaux",
+    "new": "relations entre faisceaux",
+    "note": "Correction de la faute de frappe."
+  },
+  {
+    "id": "7I:563",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "est \\underline{égale} à cette dernière",
+    "new": "est \\underline{égal} à cette dernière",
+    "note": "Accord avec « l'annulateur »."
+  },
+  {
+    "id": "7I:564",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "désignent les rangs du quotients de deux modules",
+    "new": "désignent les rangs des quotients de deux modules",
+    "note": "Correction de l'article au pluriel."
+  },
+  {
+    "id": "7I:565",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "\\mathrm{rang}\\ V/V \\cap V^{\\perp} \\;=\\; \\mathrm{rang}\\ V/W = 2\\alpha",
+    "new": "\\mathrm{rang}\\ V^{\\perp}/V \\cap V^{\\perp} \\;=\\; \\mathrm{rang}\\ V^{\\perp}/W = 2\\lambda",
+    "note": "Le diagramme donne rang(V^perp/W) = 2λ. C'est cette formule en λ que la preuve de 3.5 utilise pour déduire V^perp = W lorsque λ = 0 ; la formule actuelle en α répète seulement la relation précédente."
+  },
+  {
+    "id": "7I:566",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "\\underline{une générisation de} $S$",
+    "new": "\\underline{une générisation de} $s$",
+    "note": "t est une générisation du point s ; les comparaisons suivantes portent sur les fibres en s et t."
+  },
+  {
+    "id": "7I:567",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "qui est retrocompact dans",
+    "new": "qui est rétrocompact dans",
+    "note": "Rétablissement de l'accent."
+  },
+  {
+    "id": "7I:568",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "en élévant $n$ respectivement",
+    "new": "en élevant $n$ respectivement",
+    "note": "Correction de l'accent dans le participe présent d'élever."
+  },
+  {
+    "id": "7I:569",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "$(K_{\\overline{t}})^{o}_{s}$",
+    "new": "$(K_{\\overline{t}})^{o}_{\\mathrm{red}}$",
+    "note": "Il s'agit de la composante neutre réduite de la fibre géométrique en t, exactement comme dans 3.1 c)."
+  },
+  {
+    "id": "7I:570",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "Pour la premier assertion",
+    "new": "Pour la première assertion",
+    "note": "Accord avec « assertion »."
+  },
+  {
+    "id": "7I:571",
+    "decision": "already",
+    "note": "Le point t est déjà donné comme appartenant à S."
+  },
+  {
+    "id": "7I:572",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "grâce à SGA XVII 4.6.1 (vi)",
+    "new": "grâce à SGA 3 XVII 4.6.1 (vi)",
+    "note": "Le renvoi concerne l'exposé XVII de SGA 3 sur les groupes unipotents et de type multiplicatif, également cité dans ce paragraphe."
+  },
+  {
+    "id": "7I:573",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "(SGA 3 VII 1.1, il en est",
+    "new": "(SGA 3 VII 1.1), il en est",
+    "note": "Fermeture de la parenthèse bibliographique."
+  },
+  {
+    "id": "7I:574",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "au cas $S$ où $S$ est",
+    "new": "au cas où $S$ est",
+    "note": "Suppression de la première occurrence parasite de S."
+  },
+  {
+    "id": "7I:575",
+    "decision": "already",
+    "note": "L'inclusion est déjà V^perp ⊂ V, équivalente à W = V^perp puisque W = V ∩ V^perp."
+  },
+  {
+    "id": "7I:576",
+    "decision": "apply",
+    "file": "expose_IX_body.tex",
+    "old": "$V = V \\cap V^{\\perp}$",
+    "new": "$V^{\\perp} = V \\cap V^{\\perp}$",
+    "note": "L'annulation de λ signifie V^perp/W = 0 ; avec W = V ∩ V^perp, elle donne précisément l'inclusion (ii)."
+  },
+  {
+    "id": "7I:577",
+    "decision": "already",
+    "note": "Le texte donne déjà U/U^I = U/V, quotient sur lequel l'action doit être triviale pour être unipotente d'échelon 2."
+  }
+]
+```

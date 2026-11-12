@@ -1,0 +1,77 @@
+[
+ {
+  "page": 196,
+  "where": "exact sequence at the top of the page (before (iii)), last term: H^{n+1}(X_η) → 0",
+  "scan": "H^{n+1}(X_η) → 0: the η has no bar (checked at 5x; clean paper above it), while H^n(X_η̄) earlier in the same sequence has a clear bar",
+  "tex": "H^{n+1}(X_{\\overline{\\eta}}) \\longrightarrow 0",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "H^{n+1}(X_{\\overline{\\eta}})",
+   "new": "H^{n+1}(X_{\\eta})"
+  },
+  "corrected": "H^{n+1}(X_{\\overline{\\eta}})",
+  "note": "Missing bar: the sequence is in the cohomology of the geometric generic fibre, like H^n(X_η̄) in the same line. The TeX silently corrects; the fix restores the print; 'corrected' is the current TeX."
+ },
+ {
+  "page": 196,
+  "where": "(iii), line before the action formulas: 'L'action du groupe d'inertie I est fournie par'",
+  "scan": "two separate underlines, under 'L'action du groupe d'inertie' and under 'est fournie par'; the I between them is not underlined (checked at 2x)",
+  "tex": "\\underline{L'action du groupe d'inertie $I$ est fournie par}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "d'inertie $I$ est fournie",
+   "new": "d'inertie} $I$ \\underline{est fournie"
+  },
+  "note": "The symbol is left out of the underline, as the TeX already does for X and x in 'Pour X régulier en x' on the same page."
+ },
+ {
+  "page": 197,
+  "where": "title of Exposé XVI, 'La formule de Milnor'",
+  "scan": "La formule de Milnor, underlined twice (two parallel rules; checked at 2.5x); 'Exposé XVI' and 'par P. Deligne' have a single underline",
+  "tex": "\\underline{La formule de Milnor}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{La formule de Milnor}",
+   "new": "\\underline{\\underline{La formule de Milnor}}"
+  },
+  "note": "Same encoding as the double-underlined titles of the earlier exposés (e.g. Exposé XIV, p. 116; Exposé XIII, p. 82)."
+ },
+ {
+  "page": 199,
+  "where": "1.5, paragraph before (1.5.2): 'un élément de V qui engendre l'idéal déscriminant'",
+  "scan": "'déscriminant' with é and s (checked at 2.5x)",
+  "tex": "l'idéal déscriminant",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "l'idéal discriminant",
+  "note": "Spelling slip of the typescript for 'discriminant'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 200,
+  "where": "(1.7.1), end of the display 'dim Sw(V) = dim_{Z/ℓ} Hom_{I_1}(S(I_1) ⊗ Z/ℓ , V)'",
+  "scan": "a full stop typed after 'V)', well to the right (checked at 2x)",
+  "tex": "\\mathbb{Z}/\\ell \\, , \\, V)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\, , \\, V)",
+   "new": "\\, , \\, V) \\quad ."
+  },
+  "note": "The TeX leaves out the full stop; written like the full stop after (1.5.1) on p. 199 ('\\quad .')."
+ },
+ {
+  "page": 200,
+  "where": "(1.7.1): 'Hom_{I_1}(S(I_1) ⊗_{Z/ℓ} Z/ℓ , V)'",
+  "scan": "the subscript of ⊗ is Z/ℓ, the same handwritten double-struck Z/ℓ as the subscript of dim (checked at 2x)",
+  "tex": "S(I_1) \\otimes_{\\mathbb{Z}/\\ell} \\mathbb{Z}/\\ell",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "S(I_1) \\otimes_{\\mathbb{Z}_\\ell} \\mathbb{Z}/\\ell",
+  "note": "Wrong ring: S(I_1) is the projective Z_ℓ[I_1]-module of 1.7 (p. 199); its reduction mod ℓ is S(I_1) ⊗_{Z_ℓ} Z/ℓ, and a tensor product over Z/ℓ is undefined for it. The TeX keeps the printed reading."
+ }
+]

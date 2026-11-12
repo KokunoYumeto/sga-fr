@@ -1,0 +1,107 @@
+"""Write findings_251_255.json and check that every fix's "old" occurs exactly once in its page file."""
+import json
+import pathlib
+
+RUN = pathlib.Path(r"C:\Users\user\Documents\sga_scan_check_20261105\run_7II")
+BATCH = RUN / "b251_255"
+OUT = RUN / "findings_251_255.json"
+
+findings = [
+    {
+        "page": 252,
+        "where": "6.1, second paragraph: 'le schéma sur D de fibres les sections hyperplanes de X paramètrées par D'",
+        "scan": "paramètrées, grave accent on the first e (checked at 2x)",
+        "tex": "paramètrées",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "paramétrées",
+        "note": "Accent slip of the typescript: the past participle of paramétrer is paramétrées. The TeX keeps the printed reading; the corrected layer (current/expose_XVII_body.tex) still reads paramètrées.",
+    },
+    {
+        "page": 253,
+        "where": "paragraph after 6.2: 'pour n(P) la somme des colongeurs de l'idéal jacobien'",
+        "scan": "colongeurs (checked at 1.5x)",
+        "tex": "colongeurs",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "colongueurs",
+        "note": "Typing slip: colongueur (colength), with u after the g. The TeX keeps the printed reading; the corrected layer still reads colongeurs.",
+    },
+    {
+        "page": 253,
+        "where": "paragraph after the proof of Proposition 6.3: '6.3. La proposition devient fausse dans le cas d'exception cité.'",
+        "scan": "6.3. (numbers on the page: 6.2., Proposition 6.3., then 6.3. again; no 6.4 follows)",
+        "tex": "6.3. La proposition devient fausse",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "6.4. La proposition devient fausse",
+        "note": "Duplicated paragraph number: the remark repeats the number of Proposition 6.3 directly above it and is the last numbered paragraph of the exposé; nothing in the SGA 7 II TeX cites XVII 6.3 or 6.4. The TeX keeps the printed reading; the corrected layer too. For the duplicated 5.2.6 of this exposé the corrected layer chose 5.2.6' (SGA7II-FR-XVII-013); here 6.4 shifts no other number.",
+    },
+    {
+        "page": 253,
+        "where": "same paragraph: 'il existe un voisinage U , de S au-dessus duquel (a) est vrai'",
+        "scan": "U , de S with a capital S (cap height like U; Proposition 6.3 on the same page prints 'U de s dans S' with a small s; checked at 2.5x)",
+        "tex": "il existe un voisinage $U$ , de $S$ au-dessus duquel",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "il existe un voisinage $U$ de $s$ au-dessus duquel",
+        "note": "The neighbourhood is one of the point s, as in 6.1 ('au-dessus d'un voisinage U de s dans S') and Proposition 6.3 ('un voisinage U de s dans S'); a neighbourhood U of S would be S itself. The comma after U is a stray slip in the same phrase; if the corrected edition should change only the letter, use '$U$ , de $s$'. The TeX keeps the printed reading; the corrected layer too.",
+    },
+    {
+        "page": 254,
+        "where": "title page of Exposé XVIII, top left, above 'E X P O S E XVIII'",
+        "scan": "S G A  7",
+        "tex": "absent: the page begins with \\underline{E X P O S E XVIII}",
+        "kind": "missing",
+        "confidence": "medium",
+        "fix": {
+            "old": "\\underline{E X P O S E XVIII}",
+            "new": "S G A 7\n\n\n\\underline{E X P O S E XVIII}",
+        },
+        "note": "The TeX of the other exposé title pages keeps this label (expose_XI, XII, XIV, XV, XVI, XVII, XIX, XX, XXI, XXII_body.tex; e.g. 'S G A 7' two blank lines before \\underline{EXPOSE XVII}); Exposé XVIII alone lacks it. Skip if the label is treated as running head.",
+    },
+    {
+        "page": 254,
+        "where": "Sommaire, entry 5.9: 'Un exemple où l'hypothèse (A) n'est pas vérifié.'",
+        "scan": "vérifié",
+        "tex": "n'est pas vérifié.",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "n'est pas vérifiée.",
+        "note": "Agreement slip (hypothèse is feminine). The TeX keeps the printed reading; the corrected layer already reads vérifiée (SGA7II-FR-XVIII-002).",
+    },
+    {
+        "page": 254,
+        "where": "footnote (*) of the title: 'D'après des notes (succintes) de GROTHENDIECK.'",
+        "scan": "succintes, no c before the t (checked at 2.2x)",
+        "tex": "(succintes)",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "(succinctes)",
+        "note": "Spelling slip of the typescript. The TeX keeps the printed reading. The corrected layer reads succinctes, but its comment ('% Réparation de transcription : l'imprimé porte « succinctes ».', current/expose_XVIII_body.tex) and corrections.md SGA7II-FR-XVIII-001 ('Restored printed « succinctes »', classed transcription_repair) say the print has succinctes; the scan has succintes, so the entry is a correction of a printed misprint and its record should say so.",
+    },
+]
+
+problems = []
+for f in findings:
+    if f["fix"]:
+        text = (BATCH / f"page_{f['page']:03d}.tex").read_text(encoding="utf-8")
+        n = text.count(f["fix"]["old"])
+        if n != 1:
+            problems.append((f["page"], f["fix"]["old"], n))
+        if "%%%%%%%%%%" in f["fix"]["old"]:
+            problems.append((f["page"], "marker in old", f["fix"]["old"]))
+    if f["kind"] == "misprint_in_print" and f["fix"] is None:
+        text = (BATCH / f"page_{f['page']:03d}.tex").read_text(encoding="utf-8")
+        if f["tex"] not in text:
+            problems.append((f["page"], "tex excerpt not found", f["tex"]))
+
+OUT.write_text(json.dumps(findings, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+print("written", OUT, len(findings), "findings")
+print("problems:", problems)

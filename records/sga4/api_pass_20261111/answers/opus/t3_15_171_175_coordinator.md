@@ -1,0 +1,2 @@
+Counts: p171 2/0; p172 1/2; p173 1/0; p174 0/0; p175 0/0.
+Convention: in this file the arguments of \sisi are reversed. The print's reading stands in the second argument and the correction in the first. Swap them in every case: p171 \sisi{le morphisme d'adjonction …}{on a …} (reported); p172 \sisi{}{--} (the print has the dash); p174 nul\sisi{ si $1 \leq q \leq n$}{} (the print has no «si 1≤q≤n»); p174 \sisi{déduit de~$f$ par le changement de base~$g$}{} (the print reads only «le morphisme.»).

@@ -1,0 +1,1 @@
+356: 5/2, 357: 1/0, 358: 0/0, 359: 1/1, 360: 4/0. Edits to apply together: the two \Ee→\in fixes on p.360. Convention: the print's capital 'Lim' with arrow, for the limit of fibered categories, is set as \varinjlim (lowercase lim) throughout; examples: p.358 '5.3 des Lim de catégories fibrées', p.359 (*) ψ : Lim_{F_X/Cat I}, p.360 Lemme 5.6.

@@ -1,0 +1,50 @@
+[
+ {
+  "page": 531,
+  "where": "1.4.20, first sentence of the page",
+  "scan": "Si maintenant K_1^0 ou K_2^0 est plat, ainsi que",
+  "tex": "Si\\pageoriginale maintenant $K^0_{1}$ ou $K^0_{2}$ plat,",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "ou $K^0_{2}$ plat,",
+   "new": "ou $K^0_{2}$ est plat,"
+  },
+  "note": "The verb 'est' is dropped in the TeX."
+ },
+ {
+  "page": 531,
+  "where": "1.4.24 b)",
+  "scan": "un morphisme de champ :",
+  "tex": "un morphisme de \\emph{champs}:",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\emph{champs}:",
+   "new": "\\emph{champ}:"
+  },
+  "note": "The print has the singular 'champ' (underlined); the TeX has the plural."
+ },
+ {
+  "page": 532,
+  "where": "first display (before 1.4.24.2)",
+  "scan": "τ_≤ RHom(Z^(F),C^♭) → τ_≤0 Rf_*f^*C^♭",
+  "tex": "\\tau_{\\leq 0} R\\Hhom(\\ZZ^{(F)},C^{\\flat})",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\tau_{\\leq 0} R\\Hhom(\\ZZ^{(F)},C^{\\flat})",
+  "note": "The print omits the 0 in the left-hand truncation τ_≤. The TeX silently corrects it to τ_{≤0}."
+ },
+ {
+  "page": 535,
+  "where": "diagram (1.5.3.6), bottom left",
+  "scan": "τ_≤1 RHom(τ_<0 Rf_2* G_m[1], G)",
+  "tex": "\\tau_{\\leq 1} R\\Hhom(\\tau_{\\leq 0} Rf_{2\\ast} \\GG_m[1], G)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\tau_{\\leq 0}",
+  "note": "The print types τ_{<0} instead of τ_{≤0} in the bottom row. The TeX silently corrects it."
+ }
+]

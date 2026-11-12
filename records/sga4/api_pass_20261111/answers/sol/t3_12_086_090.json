@@ -1,0 +1,103 @@
+[
+ {
+  "page": 86,
+  "where": "Sentence following the first commutative diagram",
+  "scan": "f_{\\ast}, f'_{\\ast}, f''_{\\ast} remplacé par",
+  "tex": "$f_{\\ast}$, $f'_{\\ast}$, $f''_{\\ast}$ remplacé par",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "remplacés par",
+  "note": "The participle should agree with the three functors being replaced. The TeX keeps the printed singular."
+ },
+ {
+  "page": 87,
+  "where": "Spectral-sequence diagram, upper-left term",
+  "scan": "E^{p,q}_2=g^{\\ast}(R^q f_{\\ast})(R^q e_{\\ast})F",
+  "tex": "E^{p,q}_2 = g^{\\ast}(R^p f_{\\ast})(R^{q} e_{\\ast})F",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "E^{p,q}_2 = g^{\\ast}(R^p f_{\\ast})(R^{q} e_{\\ast})F",
+  "note": "The print has q instead of p on the derived direct image under f. The TeX silently corrects it."
+ },
+ {
+  "page": 87,
+  "where": "Spectral-sequence diagram, lower-right term",
+  "scan": "R^{p+q}(f'e')_{\\ast}g'^{\\ast}F",
+  "tex": "R^{p+q}(f'e')_{\\ast}g''^{\\ast}F",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R^{p+q}(f'e')_{\\ast}g''^{\\ast}F",
+  "note": "The print has only one prime on g; the pullback of F requires g''. The TeX silently corrects it."
+ },
+ {
+  "page": 87,
+  "where": "Exact-sequence diagram, first nonzero term of the lower row",
+  "scan": "(R^{1}f'_{\\ast})e'_{\\ast}g''^{\\ast}F)",
+  "tex": "((R^{1}f'_{\\ast})e'_{\\ast}g''^{\\ast}F)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(R^{1}f'_{\\ast})e'_{\\ast}g''^{\\ast}F",
+  "note": "The print has an unmatched closing parenthesis after F. The TeX silently repairs the imbalance by adding an outer opening parenthesis."
+ },
+ {
+  "page": 88,
+  "where": "Theorem 5.1(ii), opening words",
+  "scan": "Soit f un faisceau de groupes",
+  "tex": "Soit\\pageoriginale $f$ un faisceau de groupes",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Soit $F$ un faisceau de groupes",
+  "note": "The sheaf is F, as in the following displayed morphism; lowercase f already denotes the proper morphism. The TeX keeps the printed lowercase letter."
+ },
+ {
+  "page": 88,
+  "where": "Paragraph preceding Corollary 5.2, after the cohomology equality",
+  "scan": "pour chaque faisceau G sur X",
+  "tex": "pour chaque faisceau $G$\nsur $X$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "pour chaque faisceau $G$ sur $X'$",
+  "note": "G must be a sheaf on X', the source of f' and the scheme in H^q(X',G). The print omits the prime, and the TeX keeps that omission."
+ },
+ {
+  "page": 89,
+  "where": "Corollary 5.3, opening reference",
+  "scan": "Sous les conditions de (5.2)",
+  "tex": "Sous les conditions de (\\hyperrefext[X][X.cor5.2]{5.2})",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les conditions de (\\hyperrefext[X][X.cor5.2]{5.2})",
+   "new": "Sous les conditions de (\\hyperref[XII.cor5.2]{5.2})"
+  },
+  "note": "The print refers to Corollary 5.2 of the present exposé, not X 5.2. The external reference to X 5.2 in the preceding sentence is correct and should remain unchanged."
+ },
+ {
+  "page": 89,
+  "where": "Sentence introducing Corollary 5.4",
+  "scan": "En appliquant (5.1) a un morphisme",
+  "tex": "En appliquant (\\hyperref[XII.thm5.1]{5.1}) a un morphisme",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "En appliquant (\\hyperref[XII.thm5.1]{5.1}) à un morphisme",
+  "note": "The preposition à lacks its grave accent in the print. The TeX keeps the misprint."
+ },
+ {
+  "page": 90,
+  "where": "Corollary 5.4(ii), displayed map",
+  "scan": "H^1(X,F)\\xrightarrow{\\sim} H^1(X',F')",
+  "tex": "H^1(X,F)\\xrightarrow{\\sim} H^1(X',F')",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^1(X,F)\\longrightarrow H^1(X',F')",
+  "note": "The printed isomorphism mark is inappropriate in the general groups case: the statement asserts only injectivity, with bijectivity in the ind-finite case. The TeX keeps the printed mark."
+ }
+]

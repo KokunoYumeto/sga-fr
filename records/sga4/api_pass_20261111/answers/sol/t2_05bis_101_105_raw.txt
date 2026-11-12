@@ -1,0 +1,138 @@
+{
+  "findings": [
+    {
+      "page": 101,
+      "where": "2.1.3, category of sections",
+      "scan": "\\underline{\\Hom}_{B^{\\circ}}(B^{\\circ},\\mathcal{E}^{\\circ})",
+      "tex": "\\Hom_{B^{\\circ}}(B^{\\circ}, \\mathcal{E}^{\\circ})",
+      "kind": "underline",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hom_{B^{\\circ}}",
+        "new": "\\underline{\\Hom}_{B^{\\circ}}"
+      },
+      "note": "Systematic notation difference, reported once: the print underlines Hom denoting functor categories, distinguishing it from Hom denoting morphism groups. This is mathematical notation, not emphatic underlining. The edit is representative; three examples are identified in coordinator."
+    },
+    {
+      "page": 101,
+      "where": "2.1.3, sentence immediately after the augmentation display",
+      "scan": "désignerons par la même lettre que le morphisme fonctoriel qui lui donne naissance.",
+      "tex": "désignerons par la même lettre que le morphisme fonctoriel qui lui\ndonne naissance.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Nous la désignerons par la même lettre que le morphisme fonctoriel qui lui donne naissance.",
+      "note": "After the full stop terminating the display, the printed sentence lacks its opening subject and object. The TeX retains this omission; supplying « Nous la » restores the sentence."
+    },
+    {
+      "page": 102,
+      "where": "Definition 2.2.4, condition 2°",
+      "scan": "Le foncteur \\LL^{+}(\\bar{\\theta}^{\\ast}) est pleinement fidèle.",
+      "tex": "\\LL^{+}(\\bar{\\theta}^{\\ast}) est pleinement fidèle.",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\item\n    \\sisi",
+        "new": "\\item Le foncteur\n    \\sisi"
+      },
+      "note": "The printed words « Le foncteur » are missing before the second condition's formula."
+    },
+    {
+      "page": 102,
+      "where": "Remark 2.2.5, opening sentence",
+      "scan": "La condition 2°) la définition précédente",
+      "tex": "La condition $2^{\\circ}$) la définition précédente",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "La condition $2^{\\circ}$) de la définition précédente",
+      "note": "The print omits « de »; the TeX retains the omission."
+    },
+    {
+      "page": 102,
+      "where": "Proof of Proposition 2.2.7, application of the inverse-image functor to K",
+      "scan": "\\LL^{+}(\\bar{\\theta}^{\\ast})(K^{\\bigdot})",
+      "tex": "\\sisi{$\\LL^+ (\\bar{\\theta}^{\\ast})$}{$\\bar{\\theta}^{\\ast}(K^{\\bigdot})$}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\sisi{$\\LL^+ (\\bar{\\theta}^{\\ast})$}",
+        "new": "\\sisi{$\\LL^+ (\\bar{\\theta}^{\\ast})(K^{\\bigdot})$}"
+      },
+      "note": "The print includes the argument K. It is missing from the first, print-reading argument of \\sisi; the editors' second argument already includes it."
+    },
+    {
+      "page": 103,
+      "where": "Proof of Proposition 2.2.7, b), introduction of the truncation",
+      "scan": "\\sigma_{\\leq}(F^{\\bigdot})",
+      "tex": "\\sisi{\\sigma}{\\tau}_{\\leq}(F^{\\bigdot})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\sigma_{\\leq n}(F^{\\bigdot})",
+      "note": "The truncation bound n is missing in the print, although it appears in the following diagram. The TeX retains this omission."
+    },
+    {
+      "page": 103,
+      "where": "Proof of Proposition 2.2.7, b), displayed truncation complex",
+      "scan": "\\ldots F^{n-1} \\to F^{n-1} \\to \\Ker d^n \\to 0 \\to 0 \\ldots",
+      "tex": "\\ldots F^{n-1} \\to F^{n-1} \\to \\Ker d^n \\to 0 \\to 0 \\ldots",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\ldots F^{n-2} \\to F^{n-1} \\to \\Ker d^n \\to 0 \\to 0 \\ldots",
+      "note": "The first displayed exponent repeats n−1 instead of n−2. The TeX keeps the printed error."
+    },
+    {
+      "page": 104,
+      "where": "2.3.1.1, parenthetical reference",
+      "scan": "Tohokû",
+      "tex": "\\sisi{Tohokû}{Tôhoku}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Tôhoku",
+      "note": "The circumflex is misplaced in the print. The TeX records the printed reading and corrects it through the second argument of \\sisi."
+    },
+    {
+      "page": 104,
+      "where": "2.3.1.1, target of the functor \\bar{F}",
+      "scan": "{}^{A^{\\circ}}\\Ens",
+      "tex": "\\Hom(A^{\\circ},\n\\Ens)",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hom(A^{\\circ},\n\\Ens)",
+        "new": "{}^{A^{\\circ}}\\Ens"
+      },
+      "note": "The print uses the left-exponent notation for the functor category. The TeX replaces it with an equivalent Hom expression, a rewriting of the printed formula."
+    },
+    {
+      "page": 105,
+      "where": "2.3.1.3, opening words",
+      "scan": "Pour toute catégorie additive",
+      "tex": "Pour tout catégorie additive",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Pour tout catégorie additive",
+        "new": "Pour toute catégorie additive"
+      },
+      "note": "The print has the feminine form « toute »."
+    },
+    {
+      "page": 105,
+      "where": "2.3.2, name of the double complex",
+      "scan": "$K^{\\bigdot\\bigdot}$",
+      "tex": "$k^{\\bigdot\\bigdot}$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$k^{\\bigdot\\bigdot}$",
+        "new": "$K^{\\bigdot\\bigdot}$"
+      },
+      "note": "The printed letter is capital K, not lowercase k."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 101: 1/1; 102: 2/1; 103: 0/2; 104: 1/1; 105: 2/0.\nConvention: extend the representative Hom-category underlining edit globally, preserving plain Hom for morphisms. Three examples: p.101, 2.1.3, Hom_{B°}; p.104, 2.3.1, Hom(D, Ab); p.105, 2.3.1.3, Hom(Add(D), A)."
+}

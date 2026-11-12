@@ -1,0 +1,624 @@
+[
+ {
+  "page": 126,
+  "where": "label of Théorème 6.7",
+  "scan": "'Théorème 6.7 - Soient, ...': 'Théorème' underlined, the number, then a typewriter dash; the statement run in",
+  "tex": "\\begin{statement}{Théorème 6.7}: no dash",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Théorème 6.7}",
+   "new": "\\begin{statement}{Théorème 6.7 -}"
+  },
+  "note": "Exposé III's statement environment prints the label as given (no full stop), as 'Théorème 4.4 -' (p. 102) and 'Corollaire 4.5 -' (p. 108)."
+ },
+ {
+  "page": 126,
+  "where": "statement of 6.7, first line: 'Soient, pour i = 1,2, f_i : X_i -> Y_i un S-morphisme propre,'",
+  "scan": "underlined: 'Soient', 'pour', 'un', 'morphisme propre' (not 'S-'); the commas and the formulas not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient, pour $i=1,2$, $f_i:X_i\\to Y_i$ un $S$-morphisme propre,",
+   "new": "\\emph{Soient}, \\emph{pour} $i=1,2$, $f_i:X_i\\to Y_i$ \\emph{un} $S$-\\emph{morphisme propre},"
+  },
+  "note": "The whole statement of 6.7 is underlined word by word, the formulas, numbers and most punctuation left plain, as the statements of pp. 84-95; \\emph is this file's command for the print's underline in Exposé III (statements of pp. 84-95). Eight more underline edits below (none overlaps another edit)."
+ },
+ {
+  "page": 126,
+  "where": "statement of 6.7: 'les projections. Soit d'autre part un cube 4.4.0 à faces horizontales cartésiennes, avec'",
+  "scan": "underlined: 'les projections', 'Soit' + 'd'autre part un cube' (one rule across the line break), 'à faces horizontales cartésiennes', 'avec'; the full stop, 4.4.0 and the comma not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "les projections. Soit d'autre part un cube 4.4.0 à faces horizontales cartésiennes, avec",
+   "new": "\\emph{les projections}. \\emph{Soit d'autre part un cube} 4.4.0 \\emph{à faces horizontales cartésiennes}, \\emph{avec}"
+  },
+  "note": ""
+ },
+ {
+  "page": 126,
+  "where": "statement of 6.7: 'propres, et c', c'' (resp. d', d'') de tor-dimension finie aux points au-dessus de c(C) (resp. d(D)) . On pose'",
+  "scan": "underlined: 'propres', 'et', both 'resp' (not the parenthesis, not the full stop), 'de tor-dimension finie aux points au-dessus' + 'de' (across the line break), 'On pose'",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "propres, et $c'$, $c''$ (resp. $d'$, $d''$) de tor-dimension finie aux points au-dessus de $c(C)$ (resp. $d(D)$). On pose",
+   "new": "\\emph{propres}, \\emph{et} $c'$, $c''$ (\\emph{resp}. $d'$, $d''$) \\emph{de tor-dimension finie aux points au-dessus de} $c(C)$ (\\emph{resp}. $d(D)$). \\emph{On pose}"
+  },
+  "note": ""
+ },
+ {
+  "page": 126,
+  "where": "statement of 6.7: 'On pose c'_i = p_ic', c''_i = p_ic'', d'_i = q_id', d''_i = p_id''.'",
+  "scan": "'d''_i = p_i d''' (p, as for c'_i and c''_i; d'_i = q_i d' just before)",
+  "tex": "$d_i''=p_id''$ (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$d_i''=q_id''$",
+  "note": "The TeX keeps the printed reading. d'' is a morphism D'' -> Y (the right column of (6.7.1) is built from d', d'' over Y), so its components are q_i d'', like d'_i = q_i d'."
+ },
+ {
+  "page": 126,
+  "where": "statement of 6.7: 'Soient enfin L_i ∈ ob D(X_i)_parf/S . On suppose les couples'",
+  "scan": "underlined: 'Soient enfin', 'On suppose les couples'",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient enfin $L_i\\in\\operatorname{ob}D(X_i)_{\\mathrm{parf}/S}$. On suppose les couples",
+   "new": "\\emph{Soient enfin} $L_i\\in\\operatorname{ob}D(X_i)_{\\mathrm{parf}/S}$. \\emph{On suppose les couples}"
+  },
+  "note": ""
+ },
+ {
+  "page": 126,
+  "where": "statement of 6.7: '... tor-indépendants sur S , et X_i et Y_i de tor-dimension finie sur S . On a alors un carré commutatif'",
+  "scan": "underlined: 'tor-indépendants sur', 'et', 'et', 'de tor-dimension finie' + 'sur' (across the line break), 'On a alors un carré commutatif'; S, X_i, Y_i, the comma and the full stop not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "tor-indépendants sur $S$, et $X_i$ et $Y_i$ de tor-dimension finie sur $S$. On a alors un carré commutatif",
+   "new": "\\emph{tor-indépendants sur} $S$, \\emph{et} $X_i$ \\emph{et} $Y_i$ \\emph{de tor-dimension finie sur} $S$. \\emph{On a alors un carré commutatif}"
+  },
+  "note": ""
+ },
+ {
+  "page": 126,
+  "where": "(6.7.1), top row, second factor 'f_*c''_*RHom(c''_2^*L_2,c''_1^!L_1)'",
+  "scan": "no rule under this RHom (clean paper); the other four RHom of the square have Hom underlined",
+  "tex": "c''_*\\uRHom(c_2''{}^*L_2,c_1''{}^!L_1): silent correction",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "c''_*\\uRHom(c_2''{}^*L_2",
+   "new": "c''_*\\mathrm{R}\\mathrm{Hom}(c_2''{}^*L_2"
+  },
+  "corrected": "c''_*\\uRHom(c_2''{}^*L_2",
+  "note": "The typist left out the underline, as the top vertex of (3.4.1) on p. 93 (logged the same way). \\mathrm{R}\\mathrm{Hom} is Exposé III's \\uRHom without the underline. Diplomatic layer only."
+ },
+ {
+  "page": 126,
+  "where": "statement of 6.7 after (6.7.1): 'où M_i = f_{i*}L_i , (3) est donné par 6.6.2, (1) est déduit de 6.6.2 par application de f_* et composition avec la flèche canonique'",
+  "scan": "underlined: 'où', 'est donné par', 'est déduit de', 'par application' + 'de' (across the line break), 'et composition avec la flèche canonique'; the formulas, (3), (1) and the numbers not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où $M_i=f_{i*}L_i$, $(3)$ est donné par 6.6.2, $(1)$ est déduit de 6.6.2 par application de $f_*$ et composition avec la flèche canonique",
+   "new": "\\emph{où} $M_i=f_{i*}L_i$, $(3)$ \\emph{est donné par} 6.6.2, $(1)$ \\emph{est déduit de} 6.6.2 \\emph{par application de} $f_*$ \\emph{et composition avec la flèche canonique}"
+  },
+  "note": ""
+ },
+ {
+  "page": 126,
+  "where": "statement of 6.7: '(2) est produit tensoriel des flèches 6.5.4 relatives aux faces contenant f , et (4) est composé de l'isomorphisme de dualité 6.1.1 et de la flèche définie par la flèche canonique'",
+  "scan": "underlined: 'est produit tensoriel des flèches', 'relatives aux faces contenant', 'et', 'est composé de l'isomorphisme de dualité', 'et de la flèche définie par la flèche' + 'canonique' (across the line break); (2), 6.5.4, f, (4), 6.1.1 not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$(2)$ est produit tensoriel des flèches 6.5.4 relatives aux faces contenant $f$, et $(4)$ est composé de l'isomorphisme de dualité 6.1.1 et de la flèche définie par la flèche canonique",
+   "new": "$(2)$ \\emph{est produit tensoriel des flèches} 6.5.4 \\emph{relatives aux faces contenant} $f$, \\emph{et} $(4)$ \\emph{est composé de l'isomorphisme de dualité} 6.1.1 \\emph{et de la flèche définie par la flèche canonique}"
+  },
+  "note": "Its old ends at 'canonique'; the display edit that follows starts at the line break after it (no overlap)."
+ },
+ {
+  "page": 126,
+  "where": "statement of 6.7, the canonical arrow Rd'_*O_D' ⊗ Rd''_*O_D'' -> f_*(Rc'_*O_C' ⊗ Rc''_*O_C'') (opening)",
+  "scan": "the arrow runs in the text: 'par la flèche / canonique Rd'_*O_D' ⊗ Rd''_*O_D'' -> f_*(Rc'_*O_C' ⊗ Rc''_*O_C'') (adjointe du produit tensoriel ...' on one text line",
+  "tex": "a display \\[ ... \\] between 'la flèche canonique' and '(adjointe'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\\[\n\\R d'_*\\cO_{D'}",
+   "new": " $\\R d'_*\\cO_{D'}"
+  },
+  "note": "Display against inline formula (as pp. 117, 120, 122-124). Edit 1 of 2: apply together with the next edit (closing $); either alone breaks the LaTeX."
+ },
+ {
+  "page": 126,
+  "where": "statement of 6.7, the same arrow (closing), before '(adjointe du produit tensoriel'",
+  "scan": "the arrow runs in the text: 'par la flèche / canonique Rd'_*O_D' ⊗ Rd''_*O_D'' -> f_*(Rc'_*O_C' ⊗ Rc''_*O_C'') (adjointe du produit tensoriel ...' on one text line",
+  "tex": "...\\R c''_*\\cO_{C''}) + line break + \\] + line break + (adjointe",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cO_{C''})\n\\]\n(",
+   "new": "\\cO_{C''})$ ("
+  },
+  "note": "Edit 2 of 2; apply together with the previous edit."
+ },
+ {
+  "page": 126,
+  "where": "statement of 6.7: '(adjointe du produit tensoriel des flèches \"de changement de base\" f^*Rd'_*O_D' -> ...'",
+  "scan": "'des flèches \"de changement de base\"' with typewriter double quotes; 'adjointe du produit tensoriel' + 'des flèches \"de changement de base\"' underlined (across the line break, closing quote included; the opening parenthesis not)",
+  "tex": "des flèches de changement de base (no quotes, no underline)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "adjointe du produit tensoriel des flèches de changement de base",
+   "new": "\\emph{adjointe du produit tensoriel des flèches ``de changement de base''}"
+  },
+  "note": "Missing quotes; the same edit sets the underline of this last run of the statement (the quotes lie inside it, so one edit). Quote form `` '' as elsewhere in Exposé III (``ch. b.'' p. 93)."
+ },
+ {
+  "page": 127,
+  "where": "after (6.7.3): 'et de la flèche induite par la flèche canonique Rd'_*O_D' ⊗ Rd''_*O_D'' -> f_*(...) citée dans 6.7' (opening)",
+  "scan": "the arrow runs in the text: 'par la flèche / canonique Rd'_*O_D' ⊗ Rd''_*O_D'' -> f_*(Rc'_*O_C' ⊗ Rc''_*O_C'') citée dans 6.7 . Quand' on one text line",
+  "tex": "a display \\[ ... \\] between 'la flèche canonique' and 'citée dans 6.7'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "canonique\n\\[\n",
+   "new": "canonique $"
+  },
+  "note": "Display against inline formula. Edit 1 of 2: apply together with the next edit (closing $)."
+ },
+ {
+  "page": 127,
+  "where": "same arrow (closing), before 'citée dans 6.7'",
+  "scan": "the arrow runs in the text: 'par la flèche / canonique Rd'_*O_D' ⊗ Rd''_*O_D'' -> f_*(Rc'_*O_C' ⊗ Rc''_*O_C'') citée dans 6.7 . Quand' on one text line",
+  "tex": "...\\R c''_*\\cO_{C''}) + line break + \\] + line break + citée",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cO_{C''})\n\\]\ncitée",
+   "new": "\\cO_{C''})$ citée"
+  },
+  "note": "Edit 2 of 2; apply together with the previous edit."
+ },
+ {
+  "page": 127,
+  "where": "6.8: 'Soient f = X -> S un morphisme lisse purement de dimension relative N'",
+  "scan": "'f = X ---> S': an equals sign where the colon of a map is meant (clear)",
+  "tex": "$f=X\\to S$ (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$f:X\\to S$",
+  "note": "The TeX keeps the printed reading. Every other map of the passage is written with a colon (i : Y -> X, g = fi)."
+ },
+ {
+  "page": 127,
+  "where": "6.8: '... dans une terminologie équivalente ((8 III 1), (SGA 6 VIII 1)) une immersion fermée'",
+  "scan": "'(8 III 1)': the reference number without its square brackets",
+  "tex": "((8 III 1), (SGA~6 VIII 1)) (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(([8] III 1), (SGA~6 VIII 1))",
+  "note": "The TeX keeps the printed reading. The same work is cited '([8] III 9)' and '([8] III 7.2)' on this page and '([8] III 9 R6)' on p. 128."
+ },
+ {
+  "page": 127,
+  "where": "6.8: 'On associe alors à Y un élement'",
+  "scan": "'élement': the second e typed plain (clean, no accent)",
+  "tex": "un élément",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "un élément",
+   "new": "un élement"
+  },
+  "corrected": "un élément",
+  "note": "Typing error of the print; the TeX silently corrects it. The fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 127,
+  "where": "after (6.8.1): 'appelé classe de cohomologie associée à Y , défini ...'",
+  "scan": "'classe de cohomologie associée à' underlined; Y not",
+  "tex": "\\emph{classe de cohomologie associée à $Y$}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{classe de cohomologie associée à $Y$}",
+   "new": "\\emph{classe de cohomologie associée à} $Y$"
+  },
+  "note": "The rule stops before the formula, as 'correspondances (cohomologiques) de ... à ...' (pp. 89, 124)."
+ },
+ {
+  "page": 127,
+  "where": "(6.8.2), left-hand side 'Ext^i_{O_X}(O_Y , Ω^d_X/S)'",
+  "scan": "Ext underlined (the sheaf Ext; the global Ext of (6.8.1) and (6.8.3) is not)",
+  "tex": "\\Ext^i_{\\cO_X} (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ext^i_{\\cO_X}",
+   "new": "\\underline{\\Ext}^i_{\\cO_X}"
+  },
+  "note": "Written like the \\underline{\\Hom} of the same display. A small stray tick above the superscript i is not part of the text."
+ },
+ {
+  "page": 127,
+  "where": "(6.8.2), first case 'O si i ≠ d'",
+  "scan": "'0 si i ≠ d': the word si, no comma after 0 and none at the end of the line",
+  "tex": "0,& i\\ne d,\\\\ (no si; two commas)",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "0,& i\\ne d,\\\\",
+   "new": "0& \\text{si } i\\ne d\\\\"
+  },
+  "note": "One edit for the missing word and the two added commas. \\text{si } as elsewhere in the file (\\text{si }p\\text{ est impair})."
+ },
+ {
+  "page": 127,
+  "where": "(6.8.2), second case 'Hom(Λ^d N_Y/X , Ω^d_X/S ⊗ O_Y) si i = d ,' (the exterior power)",
+  "scan": "a hand-drawn capital Λ, the same sign as the exterior powers of pp. 128-130",
+  "tex": "\\bigwedge^d N_{Y/X}",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\bigwedge^d N_{Y/X}",
+   "new": "\\Lambda^d N_{Y/X}"
+  },
+  "note": "pp. 128-130 (Λ^{d∨}N, Λ^{m∨}N, Λ^{n∨}N, Λ^{m+n∨}N) are transcribed \\Lambda; only the two of p. 127 are \\bigwedge."
+ },
+ {
+  "page": 127,
+  "where": "(6.8.2), second case, end: '... ⊗ O_Y) si i = d ,'",
+  "scan": "'si i = d ,': the word si; no comma between the parenthesis and si",
+  "tex": "...\\otimes\\cO_Y),& i=d,",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cO_Y),& i=d,",
+   "new": "\\cO_Y)& \\text{si } i=d,"
+  },
+  "note": "One edit for the missing word and the added comma; the final comma is printed."
+ },
+ {
+  "page": 127,
+  "where": "(6.8.3), 'H^o(Y,Hom(Λ^d N_Y/X , Ω^d_X/S ⊗ O_Y))'",
+  "scan": "a hand-drawn capital Λ",
+  "tex": "\\bigwedge^dN_{Y/X}",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\bigwedge^dN_{Y/X}",
+   "new": "\\Lambda^dN_{Y/X}"
+  },
+  "note": "As in (6.8.2)."
+ },
+ {
+  "page": 127,
+  "where": "every cℓ of pp. 127-130; examples: (6.8.1) cℓ_X/S(Y) p. 127, (6.8.5) Res_Y/S(y cℓ_X/S(Y)) p. 128, (6.9.4) p. 130",
+  "scan": "cℓ: a typed c followed by a hand-drawn script ℓ",
+  "tex": "\\cl = \\operatorname{cl} (a roman l)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription (macro \\cl; already reported for pp. 96-97 and 110), not listed per occurrence: 1 on p. 127, 3 on p. 128, 10 on p. 130. One decision for the volume (e.g. c\\ell in the diplomatic layer)."
+ },
+ {
+  "page": 128,
+  "where": "top of the page",
+  "scan": "p. 128 begins 'La différentielle d_X/S : O_X -> Ω^1_X/S induit une application O_Y-linéaire'; (6.8.3) is the last line of p. 127",
+  "tex": "the folio-128 marker stands inside the equation environment of (6.8.3), before its \\end{equation}; page_128.tex begins '\\end{equation}'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 128 really begins at 'La différentielle' (the \\end{equation} closes the last display of p. 127). Exact fix: python -I move_marker.py 5 128 \"La différentielle\" (forward search, no --before; simulated in memory on both layers: the marker then stands on its own line after '\\end{equation}' and the blank line, before 'La différentielle'). Text not moved."
+ },
+ {
+  "page": 128,
+  "where": "'induit une application O_Y-linéaire d_X/S ⊗ 1 : N_Y/X -> Ω^1_X/S ⊗ O_Y . La puissance extérieure'",
+  "scan": "the arrow runs in the text (it opens the second line, followed by '. La puissance extérieure d-ième ...'); the full stop stands after the formula",
+  "tex": "a display \\[ ... .\\] between 'linéaire' and 'La puissance'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "linéaire\n\\[\nd_{X/S}\\otimes 1:N_{Y/X}\\longrightarrow \\Omega^1_{X/S}\\otimes\\OO_Y.\n\\]\nLa puissance",
+   "new": "linéaire $d_{X/S}\\otimes 1:N_{Y/X}\\longrightarrow \\Omega^1_{X/S}\\otimes\\OO_Y$. La puissance"
+  },
+  "note": "Display against inline formula; one self-contained edit."
+ },
+ {
+  "page": 128,
+  "where": "'est une section globale, sur Y , de Λ^{d∨}N_Y/S ⊗ Ω^d_X/S'",
+  "scan": "'N_Y/S' (index Y/S)",
+  "tex": "$\\Lambda^d N_{Y/S}^{\\vee}\\otimes\\Omega^d_{X/S}$ (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\Lambda^d N_{Y/X}^{\\vee}",
+  "note": "The TeX keeps the printed reading. N is the conormal sheaf N_Y/X = I/I^2 of Y in X (p. 127, 6.8.2); the d-th exterior power of N_Y/X -> Ω^1_X/S ⊗ O_Y is a section of Λ^d N_Y/X^∨ ⊗ Ω^d_X/S, and Y is not embedded in S (6.9 writes N_A/Z, N_B/Z, N_C/Z). Printed Y/S three times on this page (this and the next two findings). Corrected edition only."
+ },
+ {
+  "page": 128,
+  "where": "'dont l'image dans Ext^d(O_Y,Ω^d_X/S) par l'isomorphisme 6.8.3 est par définition la classe 6.8.1'",
+  "scan": "'6.8.3' (clear, two full stops)",
+  "tex": "l'isomorphisme 6.83 est",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "l'isomorphisme 6.83 est",
+   "new": "l'isomorphisme 6.8.3 est"
+  },
+  "note": "The TeX has the two references of this page swapped: here the print has 6.8.3 and the TeX 6.83; further down (misprint finding '6.83 et de la flèche') the print has 6.83 and the TeX 6.8.3. The two edits do not overlap."
+ },
+ {
+  "page": 128,
+  "where": "'Soit ω ∈ H^o(Y,Λ^{d∨}N_Y/S ⊗ Ω^d_X/S)'",
+  "scan": "'N_Y/S'",
+  "tex": "H^0(Y,\\Lambda^d N_{Y/S}^{\\vee}\\otimes\\Omega^d_{X/S}) (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\Lambda^d N_{Y/X}^{\\vee}",
+  "note": "As the previous N_Y/S. The TeX keeps the printed reading."
+ },
+ {
+  "page": 128,
+  "where": "'on peut voir ω comme un homomorphisme O_Y -> g^!O_S(= ...) , donc, par adjonction,' (opening)",
+  "scan": "the arrow runs in the text: 'O_Y -> g^!O_S(= Λ^{d∨}N_Y/S ⊗ Ω^d_X/S) , donc, par adjonction, comme un homomorphisme' on one text line",
+  "tex": "a display \\[ ... ,\\] between 'comme un homomorphisme' and 'donc, par adjonction'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "homomorphisme\n\\[\n\\OO_Y\\longrightarrow",
+   "new": "homomorphisme $\\OO_Y\\longrightarrow"
+  },
+  "note": "Display against inline formula. Edit 1 of 2: apply together with the next edit (closing $). The two edits leave out the misprinted N_Y/S between them."
+ },
+ {
+  "page": 128,
+  "where": "same formula: 'g^!O_S(= Λ^{d∨}N_Y/S ⊗ Ω^d_X/S)'",
+  "scan": "'N_Y/S'",
+  "tex": "g^!\\OO_S(=\\Lambda^d N_{Y/S}^{\\vee}\\otimes\\Omega^d_{X/S}) (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\Lambda^d N_{Y/X}^{\\vee}",
+  "note": "As the first N_Y/S of the page. The TeX keeps the printed reading."
+ },
+ {
+  "page": 128,
+  "where": "same formula (closing), before 'donc, par adjonction'",
+  "scan": "the arrow runs in the text: 'O_Y -> g^!O_S(= Λ^{d∨}N_Y/S ⊗ Ω^d_X/S) , donc, par adjonction, comme un homomorphisme' on one text line",
+  "tex": "...\\Omega^d_{X/S}), + line break + \\] + line break + donc",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Omega^d_{X/S}),\n\\]\ndonc",
+   "new": "\\Omega^d_{X/S})$, donc"
+  },
+  "note": "Edit 2 of 2; apply together with the previous edit. The comma stands after the formula, as printed."
+ },
+ {
+  "page": 128,
+  "where": "'On définit le résidu (relatif à g) de ω comme la section de O_S'",
+  "scan": "'résidu' underlined",
+  "tex": "le résidu (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "le résidu (relatif",
+   "new": "le \\emph{résidu} (relatif"
+  },
+  "note": "\\emph is this file's command for the print's underline in Exposé III (\\emph{formule de Lefschetz-Verdier} p. 127)."
+ },
+ {
+  "page": 128,
+  "where": "'l'image de ω par le composé de l'isomorphisme 6.83 et de la flèche canonique'",
+  "scan": "'6.83' (one full stop, clear)",
+  "tex": "l'isomorphisme 6.8.3 et de la flèche: silent correction",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "6.8.3 et de la",
+   "new": "6.83 et de la"
+  },
+  "corrected": "6.8.3 et de la",
+  "note": "Typing error of the print (the isomorphism (6.8.3)); the TeX silently corrects it, while it writes 6.83 for the correctly printed 6.8.3 above (number finding). Diplomatic layer only."
+ },
+ {
+  "page": 128,
+  "where": "'et de la flèche canonique Ext^N_{O_X}(O_Y,Ω^N_X/S) -> H^N(X,Ω^N_X/S) . Quand f est propre'",
+  "scan": "the arrow runs in the text (line 'canonique Ext^N ... -> H^N(X,Ω^N_X/S) . Quand f est propre, il découle ...'); the full stop stands after the formula",
+  "tex": "a display \\[ ... .\\] between 'la flèche canonique' and 'Quand'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "canonique\n\\[\n\\Ext^N_{\\OO_X}(\\OO_Y,\\Omega^N_{X/S})\\longrightarrow H^N(X,\\Omega^N_{X/S}).\n\\]\nQuand",
+   "new": "canonique $\\Ext^N_{\\OO_X}(\\OO_Y,\\Omega^N_{X/S})\\longrightarrow H^N(X,\\Omega^N_{X/S})$. Quand"
+  },
+  "note": "Display against inline formula; one self-contained edit (no overlap with the 6.83 misprint fix before it or the 'propre' underline after it)."
+ },
+ {
+  "page": 128,
+  "where": "'Quand f est propre, il découle de la transitivité'",
+  "scan": "'propre' underlined; the comma not",
+  "tex": "est propre, (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est propre, il découle",
+   "new": "est \\emph{propre}, il découle"
+  },
+  "note": ""
+ },
+ {
+  "page": 128,
+  "where": "(6.8.6) 'g^*F -> g^!F = g^*F ⊗ g^!O_S'",
+  "scan": "a plain typed L above the tensor sign",
+  "tex": "g^*F\\otimes^{\\LL}g^!\\OO_S (\\LL = \\mathbf L, set as a right superscript)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "g^*F\\otimes^{\\LL}g^!\\OO_S",
+   "new": "g^*F\\overset{\\mathrm{L}}{\\otimes}g^!\\OO_S"
+  },
+  "note": "The Exposé III form of the derived tensor (handled globally, 11 Nov) is \\overset{\\mathrm{L}}{\\otimes}; this \\otimes^{\\LL} and the one of (6.8.7) are the only two left in Exposé III."
+ },
+ {
+  "page": 128,
+  "where": "(6.8.7) 'g_*g^*F = F ⊗ g_*O_Y -> F' (printed at the top of p. 129)",
+  "scan": "a plain typed L above the tensor sign",
+  "tex": "F\\otimes^{\\LL}g_*\\OO_Y",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "F\\otimes^{\\LL}g_*\\OO_Y",
+   "new": "F\\overset{\\mathrm{L}}{\\otimes}g_*\\OO_Y"
+  },
+  "note": "As (6.8.6). Printed on p. 129; filed here because (6.8.7) sits under the folio-128 marker until that marker is moved (p. 129 marker finding): apply before the move, or look for it on p. 129 afterwards. The letter after g^* is darker than its neighbours (an F typed over an E); read as F, as the TeX."
+ },
+ {
+  "page": 129,
+  "where": "top of the page",
+  "scan": "p. 129 begins with the display (6.8.7) 'g_*g^*F = F ⊗ g_*O_Y -> F', then 'définie par Tr_Y/S : g_*O_Y -> O_S .'; p. 128 ends 'donnée par le produit par cℓ_X/S(Y) correspond par adjonction à la flèche'",
+  "tex": "the display (6.8.7) stands in page_128.tex; the folio-129 marker follows its \\end{equation}",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 129 really begins at the \\begin{equation} of (6.8.7). Exact fix (bash): python -I move_marker.py 5 129 $'\\\\begin{equation}\\n\\\\tag{6.8.7}' --before (the anchor is '\\begin{equation}', a line break, '\\tag{6.8.7}'; simulated in memory on both layers: the marker then stands between '... correspond par adjonction à la flèche' and '\\begin{equation}'). The display agrees with the print apart from its tensor (p. 128 finding)."
+ },
+ {
+  "page": 129,
+  "where": "6.9: '(l'indice part signifie \"parfait au sens absolu\"'",
+  "scan": "'part' (t, clear)",
+  "tex": "l'indice parf: silent correction",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "l'indice parf",
+   "new": "l'indice part"
+  },
+  "corrected": "l'indice parf",
+  "note": "Typing error of the print (the index is parf, as in D(X)_parf just before); the TeX silently corrects it. Diplomatic layer only."
+ },
+ {
+  "page": 129,
+  "where": "'et une décomposition Ω^1 = Ω^1_Z/Y ⊕ Ω^1_Z/X , d'où, pour tout entier r' (opening)",
+  "scan": "the formula runs in the text: 'Ω^1_X/S = Ω^1_Z/Y ⊕ Ω^1_Z/X , d'où, pour tout entier r , une décomposition' on one text line",
+  "tex": "a display \\[ ... ,\\] between 'et une décomposition' and 'd'où'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "et une décomposition\n\\[\n",
+   "new": "et une décomposition $"
+  },
+  "note": "Display against inline formula. Edit 1 of 2: apply together with the edit 'closing' below. The misprint fix between them does not overlap either."
+ },
+ {
+  "page": 129,
+  "where": "same formula, left-hand side",
+  "scan": "'Ω^1_X/S = Ω^1_Z/Y ⊕ Ω^1_Z/X' (X/S, clear)",
+  "tex": "\\Omega^1_{Z/S}: silent correction",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Omega^1_{Z/S}",
+   "new": "\\Omega^1_{X/S}"
+  },
+  "corrected": "\\Omega^1_{Z/S}",
+  "note": "The decomposition is that of Ω^1 of Z = X ×_S Y (the summands are Ω^1_Z/Y and Ω^1_Z/X; (6.9.0) has Ω^r_Z/S). The TeX silently corrects; diplomatic layer only."
+ },
+ {
+  "page": 129,
+  "where": "same formula (closing), before 'd'où, pour tout entier'",
+  "scan": "the formula runs in the text: 'Ω^1_X/S = Ω^1_Z/Y ⊕ Ω^1_Z/X , d'où, pour tout entier r , une décomposition' on one text line",
+  "tex": "...\\Omega^1_{Z/X}, + line break + \\] + line break + d'où",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Omega^1_{Z/X},\n\\]\nd'où",
+   "new": "\\Omega^1_{Z/X}$, d'où"
+  },
+  "note": "Edit 2 of 2; apply together with the opening edit. The comma stands after the formula, as printed."
+ },
+ {
+  "page": 130,
+  "where": "first line of the page: 'La section Tr(u_C v_C) = Tr(v_C u_C) , où ...'",
+  "scan": "'La' with a capital L (clear); the sentence continues 'notons <u,v> ∈ H^o(C,O_C)' at the foot of p. 129",
+  "tex": "la (lower case): silent correction",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "la\nsection",
+   "new": "La\nsection"
+  },
+  "corrected": "la\nsection",
+  "note": "Slip of the print at the page turn; the TeX silently corrects it. Diplomatic layer only."
+ },
+ {
+  "page": 130,
+  "where": "label of Théorème 6.10",
+  "scan": "'Théorème 6.10 - Sous les hypothèses ...': 'Théorème' underlined, the number, then a typewriter dash",
+  "tex": "\\begin{statement}{Théorème 6.10}: no dash",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Théorème 6.10}",
+   "new": "\\begin{statement}{Théorème 6.10 -}"
+  },
+  "note": "Exposé III's statement environment prints the label as given (no full stop), as 'Théorème 4.4 -' (p. 102) and 'Corollaire 4.5 -' (p. 108)."
+ },
+ {
+  "page": 130,
+  "where": "statement of 6.10, first line: 'Sous les hypothèses du premier alinéa de 6.9, soient'",
+  "scan": "underlined: 'Sous les hypothèses du premier alinéa de', 'soient'; '6.9,' not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses du premier alinéa de 6.9, soient",
+   "new": "\\emph{Sous les hypothèses du premier alinéa de} 6.9, \\emph{soient}"
+  },
+  "note": "The statement of 6.10 is underlined word by word, as that of 6.7 (p. 126); \\emph is this file's command for the print's underline in Exposé III (statements of pp. 84-95). Two more edits below; the statement continues on p. 131."
+ },
+ {
+  "page": 130,
+  "where": "statement of 6.10: ', et considérons la correspondance cohomologique u^! (resp. v^!) de L à M (resp. M à L ) à support dans A (resp. B) déduite de u (resp. v) par composition avec la trace'",
+  "scan": "underlined: 'et considérons la correspondance cohomologique', each 'resp', 'de', 'à', 'à', 'à support dans', 'déduite de', 'par composition avec la trace'; the letters, u^!, v^! and the parentheses not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": ", et considérons la correspondance cohomologique $u^!$ (resp. $v^!$) de $L$ à $M$ (resp. $M$ à $L$) à support dans $A$ (resp. $B$) déduite de $u$ (resp. $v$) par composition avec la trace",
+   "new": ", \\emph{et considérons la correspondance cohomologique} $u^!$ (\\emph{resp}. $v^!$) \\emph{de} $L$ \\emph{à} $M$ (\\emph{resp}. $M$ \\emph{à} $L$) \\emph{à support dans} $A$ (\\emph{resp}. $B$) \\emph{déduite de} $u$ (\\emph{resp}. $v$) \\emph{par composition avec la trace}"
+  },
+  "note": ""
+ },
+ {
+  "page": 130,
+  "where": "statement of 6.10: '(resp. b_{1*}b_1^*L -> L ) (6.8.7), et l'homomorphisme (u^!)_* : f_*L -> g_*M (resp. ...) déduit de u^! (resp. v^!) par image directe'",
+  "scan": "underlined: each 'resp', 'et l'homomorphisme', 'déduit de', 'par image directe'; (6.8.7), (6.5.5) and the formulas not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. $b_{1*}b_1^*L\\to L$) (6.8.7), et l'homomorphisme $(u^!)_*:f_*L\\to g_*M$ (resp. $(v^!)_*:g_*M\\to f_*L$) déduit de $u^!$ (resp. $v^!$) par image directe",
+   "new": "(\\emph{resp}. $b_{1*}b_1^*L\\to L$) (6.8.7), \\emph{et l'homomorphisme} $(u^!)_*:f_*L\\to g_*M$ (\\emph{resp}. $(v^!)_*:g_*M\\to f_*L$) \\emph{déduit de} $u^!$ (\\emph{resp}. $v^!$) \\emph{par image directe}"
+  },
+  "note": ""
+ }
+]

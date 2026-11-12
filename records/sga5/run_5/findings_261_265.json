@@ -1,0 +1,483 @@
+[
+  {
+    "page": 261,
+    "where": "proof of Proposition 1.2.6, the label at the top of the page",
+    "scan": "Preuve : (underlined word, then ' :')",
+    "tex": "\\begin{prooftext}[Preuve]: the Exposé VI definition of prooftext (s5.tex l. 8458) prints 'Preuve.'",
+    "kind": "punctuation",
+    "confidence": "medium",
+    "fix": {"old": "\\begin{prooftext}[Preuve]\nIl est clair", "new": "\\emph{Preuve} : Il est clair"},
+    "note": "Pair P with the next item (apply both or neither). This is the only prooftext environment of Exposé VI; the exposé's other proofs are written '\\emph{Preuve} :' in the text. Alternative to the pair: give Exposé VI the Exposé V definition of prooftext ('\\emph{#1} :'). Medium only for the form of the fix."
+  },
+  {
+    "page": 261,
+    "where": "end of the same proof, '... sont des faisceaux localement constants.'",
+    "scan": "the proof ends; heading 1.3 follows",
+    "tex": "\\end{prooftext}",
+    "kind": "other",
+    "confidence": "medium",
+    "fix": {"old": "localement constants.\n\\end{prooftext}", "new": "localement constants."},
+    "note": "Pair P with the previous item (apply both or neither): removes the end of the environment whose beginning the previous edit replaces."
+  },
+  {
+    "page": 261,
+    "where": "(iii) => (i): 'ses fibres géométriques sont l-adiques donc F est l-adique'",
+    "scan": "l-adiques donc (no comma)",
+    "tex": "\\(\\ell\\)-adiques, donc",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "-adiques, donc", "new": "-adiques donc"},
+    "note": "Comma added by the TeX."
+  },
+  {
+    "page": 261,
+    "where": "'son gradué strict grs(F) est un (gr_l Z, Ab(X))-module noethérien'",
+    "scan": "grs(F): 'grs' typed on the line as one word, the s not raised (as 'grs(X)' of Exposé V)",
+    "tex": "\\operatorname{gr}^s(F) (s as a superscript)",
+    "kind": "formula",
+    "confidence": "high",
+    "fix": {"old": "strict \\(\\operatorname{gr}^s(F)\\)", "new": "strict \\(\\grs(F)\\)"},
+    "note": "The file's macro \\grs (\\operatorname{grs}, preamble l. 147), used for the same notation throughout Exposé V (V 5.1.6, cited here)."
+  },
+  {
+    "page": 261,
+    "where": "'l'image réciproque de grs(F) est un faisceau localement constant'",
+    "scan": "grs(F), as above",
+    "tex": "\\operatorname{gr}^s(F)",
+    "kind": "formula",
+    "confidence": "high",
+    "fix": {"old": "réciproque de \\(\\operatorname{gr}^s(F)\\)", "new": "réciproque de \\(\\grs(F)\\)"},
+    "note": "As the previous item."
+  },
+  {
+    "page": 261,
+    "where": "'Par suite (SGA 4 IX 2.9.) X est réunion'",
+    "scan": "(SGA 4 IX 2.9.) with a full stop after 2.9; no comma after the parenthesis",
+    "tex": "(SGA 4 IX 2.9), \\(X\\)",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "IX 2.9), \\(X\\)", "new": "IX 2.9.) \\(X\\)"},
+    "note": "The TeX drops the full stop inside the parenthesis and adds a comma after it."
+  },
+  {
+    "page": 261,
+    "where": "'on en déduit que pour tout entier n, les images réciproques'",
+    "scan": "no comma after 'que'",
+    "tex": "déduit que, pour",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "déduit que, pour", "new": "déduit que pour"},
+    "note": "Comma added by the TeX (the comma after n is printed)."
+  },
+  {
+    "page": 261,
+    "where": "underlined title 1.3",
+    "scan": "'1.3. Opérations ⊗ et Hom sur les Z_l-faisceaux.' ends with a full stop",
+    "tex": "\\subsubsection*{1.3. ... \\(\\mathbb Z_\\ell\\)-faisceaux}: no full stop",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "-faisceaux}", "new": "-faisceaux.}"},
+    "note": "Underlined title: the TeX drops the final full stop."
+  },
+  {
+    "page": 261,
+    "where": "title 1.3, the word Hom",
+    "scan": "Hom with its own typed underline close under the letters; the title's lower ruled line runs under 'Opérations', 'et' and 'sur les Z_l-faisceaux.' and skips Hom",
+    "tex": "\\(\\Hom\\) (plain Hom)",
+    "kind": "underline",
+    "confidence": "medium",
+    "fix": {"old": "et \\(\\Hom\\) sur", "new": "et \\(\\uHom\\) sur"},
+    "note": "The underline belongs to the notation (underlined Hom, as Hom(N°, Ab(X)) in 1.3.1), not to the title. Drop if the title is left to the global rule for underlined titles."
+  },
+  {
+    "page": 261,
+    "where": "1.3.1, 'deux objets de la catégorie Hom(N°, Ab(X))'",
+    "scan": "Hom underlined (the functor category)",
+    "tex": "\\Hom(\\mathbb N^\\circ,\\Ab(X))",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "catégorie \\(\\Hom(\\mathbb N^\\circ", "new": "catégorie \\(\\uHom(\\mathbb N^\\circ"},
+    "note": "As the logged \\uHom(\\mathbb N^\\circ,...) of pp. 251-253."
+  },
+  {
+    "page": 261,
+    "where": "1.3.1, display '⊗ : Hom(N°,Ab(X)) x Hom(N°,Ab(X)) -> Hom(N°,Ab(X)) .'",
+    "scan": "each of the three Hom underlined",
+    "tex": "\\Hom three times",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\otimes:\\Hom(\\mathbb N^\\circ,\\Ab(X))\\times \\Hom(\\mathbb N^\\circ,\\Ab(X))\n\\longrightarrow \\Hom(", "new": "\\otimes:\\uHom(\\mathbb N^\\circ,\\Ab(X))\\times \\uHom(\\mathbb N^\\circ,\\Ab(X))\n\\longrightarrow \\uHom("},
+    "note": "As the previous item."
+  },
+  {
+    "page": 261,
+    "where": "'un bifoncteur additif exact à droite, appelé produit tensoriel :'",
+    "scan": "'produit tensoriel' underlined (the term defined)",
+    "tex": "appelé produit tensoriel: (no underline markup)",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "appelé produit tensoriel:", "new": "appelé \\emph{produit tensoriel}:"},
+    "note": "Exposé VI writes the underline as \\emph (as the logged fixes of pp. 251-260)."
+  },
+  {
+    "page": 262,
+    "where": "proof of 1.3.2, '(SGA 4 IX 2.3.) qu'un produit tensoriel'",
+    "scan": "(SGA 4 IX 2.3.) with a full stop after 2.3",
+    "tex": "(SGA 4 IX 2.3)",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "IX 2.3) qu'un", "new": "IX 2.3.) qu'un"},
+    "note": "The TeX drops the full stop inside the parenthesis."
+  },
+  {
+    "page": 262,
+    "where": "underlined title 1.3.3",
+    "scan": "'1.3.3. Faisceau d'homomorphismes.' ends with a full stop",
+    "tex": "\\subsubsection*{1.3.3. Faisceau d'homomorphismes}: no full stop",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "d'homomorphismes}", "new": "d'homomorphismes.}"},
+    "note": "Underlined title: the TeX drops the final full stop."
+  },
+  {
+    "page": 262,
+    "where": "'On suppose que F est localement libre, ce par quoi on entend'",
+    "scan": "'localement libre' underlined (not the comma)",
+    "tex": "no underline markup",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "est localement libre, ce par quoi", "new": "est \\emph{localement libre}, ce par quoi"},
+    "note": ""
+  },
+  {
+    "page": 262,
+    "where": "'ce par quoi on entend que pour tout entier n, le faisceau F_n'",
+    "scan": "no comma after 'que'",
+    "tex": "on entend que, pour",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "on entend que, pour", "new": "on entend que pour"},
+    "note": "Comma added by the TeX."
+  },
+  {
+    "page": 262,
+    "where": "'Pour tout entier n, la suite exacte structurale :' (before the display G_{n+1} -> G_{n+1} -> G_n -> 0)",
+    "scan": "colon after 'structurale'",
+    "tex": "la suite exacte structurale (no colon)",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "entier \\(n\\), la suite exacte structurale", "new": "entier \\(n\\), la suite exacte structurale:"},
+    "note": "Colon written without a space, as the file's 'flèches:' and 'algèbres:'."
+  },
+  {
+    "page": 262,
+    "where": "'fournit, puisque F_{n+1} est localement libre sur (Z/l^{n+1}Z)_X, une suite exacte'",
+    "scan": "(Z/l^{n+1}Z)_X",
+    "tex": "\\((\\mathbb Z/\\ell^{\\,n+1}\\mathbb Z)_X\\) (the printed reading)",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "(\\mathbb Z/\\ell^{\\,n+2}\\mathbb Z)_X",
+    "note": "Wrong index: by the definition just above, F_m is locally free over (Z/l^{m+1}Z)_X, so F_{n+1} is locally free over (Z/l^{n+2}Z)_X, which is what the exactness of (1) for G_{n+1} needs. The TeX keeps the printed n+1."
+  },
+  {
+    "page": 262,
+    "where": "'une suite exacte :' before display (1)",
+    "scan": "colon after 'exacte'",
+    "tex": "une suite exacte (no colon)",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "une suite exacte\n\\[", "new": "une suite exacte:\n\\["},
+    "note": ""
+  },
+  {
+    "page": 262,
+    "where": "'Comme l^{n+1}G_n = 0 , la suite exacte structurale :' (before the display F_{n+1} -> F_{n+1} -> F_n -> 0)",
+    "scan": "colon after 'structurale'",
+    "tex": "la suite exacte structurale (no colon)",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "G_n=0\\), la suite exacte structurale", "new": "G_n=0\\), la suite exacte structurale:"},
+    "note": ""
+  },
+  {
+    "page": 262,
+    "where": "last line, 'définit de façon claire un isomorphisme :'",
+    "scan": "colon after 'isomorphisme' (display (2) follows on p. 263)",
+    "tex": "un isomorphisme (no colon)",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "claire un isomorphisme", "new": "claire un isomorphisme:"},
+    "note": ""
+  },
+  {
+    "page": 263,
+    "where": "'Combinant (1) et (2), on obtient pour tout entier n un morphisme :'",
+    "scan": "colon after 'morphisme'",
+    "tex": "un morphisme (no colon)",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "entier \\(n\\) un morphisme", "new": "entier \\(n\\) un morphisme:"},
+    "note": ""
+  },
+  {
+    "page": 263,
+    "where": "underlined title 1.3.4",
+    "scan": "'... Application aux faisceaux Z_l(r) (r ∈ Z).' ends with a full stop",
+    "tex": "\\subsubsection*{1.3.4. ... (\\(r\\in\\mathbb Z\\))}: no full stop",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "(\\(r\\in\\mathbb Z\\))}", "new": "(\\(r\\in\\mathbb Z\\)).}"},
+    "note": "Underlined title: the TeX drops the final full stop. The small dot before the hand-drawn Z in the title is a stray mark, not reported."
+  },
+  {
+    "page": 263,
+    "where": "'Nous dirons qu'il est inversible si'",
+    "scan": "'inversible' underlined (the term defined)",
+    "tex": "no underline markup",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "qu'il est inversible", "new": "qu'il est \\emph{inversible}"},
+    "note": ""
+  },
+  {
+    "page": 263,
+    "where": "'inversible si pour tout entier n son n^ème composant'",
+    "scan": "no commas around 'pour tout entier n'",
+    "tex": "si, pour tout entier \\(n\\), son",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "si, pour tout entier \\(n\\), son", "new": "si pour tout entier \\(n\\) son"},
+    "note": "Two commas added by the TeX. Does not overlap the next edit."
+  },
+  {
+    "page": 263,
+    "where": "'son n^ème composant L_n'",
+    "scan": "n with a raised 'ème', no hyphen",
+    "tex": "\\(n\\)-ième",
+    "kind": "word",
+    "confidence": "high",
+    "fix": {"old": "\\(n\\)-ième composant", "new": "\\(n\\)\\textsuperscript{ème} composant"},
+    "note": "\\textsuperscript as the file's n\\textsuperscript{o}."
+  },
+  {
+    "page": 263,
+    "where": "'est un (Z/l^{n+1}Z)_X-Module inversible'",
+    "scan": "Module with a capital M",
+    "tex": "-module",
+    "kind": "word",
+    "confidence": "high",
+    "fix": {"old": "_X\\)-module inversible", "new": "_X\\)-Module inversible"},
+    "note": ""
+  },
+  {
+    "page": 263,
+    "where": "'Il est clair qu'on a un isomorphisme' after the display L^{-1} = Hom(L, Z_l) .",
+    "scan": "new paragraph: the line has the deep indent of 'Si L est un Z_l-faisceau inversible' above",
+    "tex": "'\\]' then 'Il est clair' on the next line, no blank line",
+    "kind": "other",
+    "confidence": "high",
+    "fix": {"old": "\\]\nIl est clair qu'on a", "new": "\\]\n\nIl est clair qu'on a"},
+    "note": "Paragraph break dropped by the TeX."
+  },
+  {
+    "page": 263,
+    "where": "'on convient de poser L^{⊗0} = Z_l et pour n >= 1 L^{⊗-n} = (L^{-1})^{⊗n} .'",
+    "scan": "no commas around 'pour n >= 1'",
+    "tex": "et, pour \\(n\\ge1\\),",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "et, pour \\(n\\ge1\\),", "new": "et pour \\(n\\ge1\\)"},
+    "note": "Two commas added by the TeX; the display that follows in the TeX is run into the text in the print (layout, not reported)."
+  },
+  {
+    "page": 263,
+    "where": "last line, 'De plus cet isomorphisme jouit'",
+    "scan": "no comma after 'De plus'",
+    "tex": "De plus, cet",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "De plus, cet", "new": "De plus cet"},
+    "note": "Comma added by the TeX."
+  },
+  {
+    "page": 264,
+    "where": "top of the page: 'des propriétés d'associativité habituelles.'",
+    "scan": "p. 264 begins 'des propriétés d'associativité habituelles.'; p. 263 ends 'De plus cet isomorphisme jouit'",
+    "tex": "'jouit' begins page_264.tex ('jouit des propriétés'); page_263.tex ends 'De plus, cet isomorphisme'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 264 really begins at 'des propriétés'; 'jouit' belongs to p. 263. Exact fix: python -I move_marker.py 5 264 'des propriétés' (simulated in memory on both layers: the marker then stands between a line 'jouit ' and 'des propriétés d'associativité habituelles.'; the output text is unchanged). Independent of the comma fix 'De plus, cet' of p. 263. Text not moved."
+  },
+  {
+    "page": 264,
+    "where": "'sont des Z_l-Algèbres, graduées respectivement par N et Z .'",
+    "scan": "Algèbres with a capital A",
+    "tex": "-algèbres",
+    "kind": "word",
+    "confidence": "high",
+    "fix": {"old": "-algèbres, graduées", "new": "-Algèbres, graduées"},
+    "note": "The Z_l-algèbre(s) of 1.4.1 below are printed with a small a; only this one has the capital."
+  },
+  {
+    "page": 264,
+    "where": "label 'Exemple :' before 'Le Z_l-faisceau Z_l(1) défini en (1.2.2)'",
+    "scan": "Exemple : (underlined word, then ' :'; no full stop)",
+    "tex": "\\begin{statement}{Exemple} (prints 'Exemple.')",
+    "kind": "punctuation",
+    "confidence": "medium",
+    "fix": {"old": "\\begin{statement}{Exemple}\nLe ", "new": "\\emph{Exemple} : Le "},
+    "note": "Pair E with the next item (apply both or neither). The statement environment of Exposé VI adds a full stop after its label; the print has ' :', as the logged '\\emph{Terminologie} :' of p. 254. Medium only for the form of the fix."
+  },
+  {
+    "page": 264,
+    "where": "end of the Exemple, after the display Z_l(r) = (Z_l(1))^{⊗r} (r ∈ Z) .",
+    "scan": "heading 1.4 follows",
+    "tex": "\\end{statement}",
+    "kind": "other",
+    "confidence": "medium",
+    "fix": {"old": "\\]\n\\end{statement}", "new": "\\]"},
+    "note": "Pair E with the previous item (apply both or neither): removes the end of the environment whose beginning the previous edit replaces. Independent of the colon fix 'de poser:'."
+  },
+  {
+    "page": 264,
+    "where": "'et on conviendra dans la suite de poser :'",
+    "scan": "colon after 'poser'",
+    "tex": "de poser (no colon)",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "de poser\n\\[", "new": "de poser:\n\\["},
+    "note": ""
+  },
+  {
+    "page": 264,
+    "where": "underlined title 1.4",
+    "scan": "'1.4. Diverses catégories construites à partir de la catégorie des Z_l-faisceaux constructibles.' ends with a full stop",
+    "tex": "\\subsubsection*{1.4. ... -faisceaux constructibles}: no full stop",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "faisceaux constructibles}", "new": "faisceaux constructibles.}"},
+    "note": "Underlined title: the TeX drops the final full stop."
+  },
+  {
+    "page": 264,
+    "where": "'dont les objets sont appelés A-faisceaux constructibles, de la manière suivante.'",
+    "scan": "'faisceaux constructibles' underlined (not the A-, not the comma)",
+    "tex": "no underline markup",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "appelés \\(A\\)-faisceaux constructibles,", "new": "appelés \\(A\\)-\\emph{faisceaux constructibles},"},
+    "note": ""
+  },
+  {
+    "page": 264,
+    "where": "(ii), 'tel que pour tout élément a de A le diagramme ci-dessous soit commutatif :'",
+    "scan": "no commas around 'pour tout élément a de A'",
+    "tex": "tel que, pour tout élément \\(a\\) de \\(A\\), le",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "tel que, pour tout élément \\(a\\) de \\(A\\), le", "new": "tel que pour tout élément \\(a\\) de \\(A\\) le"},
+    "note": "Two commas added by the TeX."
+  },
+  {
+    "page": 265,
+    "where": "the square at the top of the page, bottom arrow F -> F'",
+    "scan": "the label f stands above the bottom arrow, as above the top arrow",
+    "tex": "\\arrow[r,\"f\"'] (label set below the arrow)",
+    "kind": "other",
+    "confidence": "low",
+    "fix": {"old": "F \\arrow[r,\"f\"'] & F'.", "new": "F \\arrow[r,\"f\"] & F'."},
+    "note": "Placement of a label only; drop if label placement is left as layout."
+  },
+  {
+    "page": 265,
+    "where": "'On appellera A-faisceau constant tordu constructible un A-faisceau constructible'",
+    "scan": "'constant tordu constructible' underlined (the term defined)",
+    "tex": "no underline markup",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\(A\\)-faisceau constant tordu constructible un", "new": "\\(A\\)-faisceau \\emph{constant tordu constructible} un"},
+    "note": ""
+  },
+  {
+    "page": 265,
+    "where": "'et catégorie des A-faisceaux constants tordus constructibles, la sous-catégorie pleine'",
+    "scan": "comma after 'constructibles' ('construc-/tibles,la')",
+    "tex": "constructibles la sous-catégorie (no comma)",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "tordus constructibles la sous-catégorie", "new": "tordus constructibles, la sous-catégorie"},
+    "note": "The TeX drops the comma."
+  },
+  {
+    "page": 265,
+    "where": "'Il résulte immédiatement de (1.2.4) que si X est connexe, la catégorie'",
+    "scan": "no comma after 'que'",
+    "tex": "(1.2.4) que, si",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "(1.2.4) que, si", "new": "(1.2.4) que si"},
+    "note": "Comma added by the TeX. Does not overlap the next edit."
+  },
+  {
+    "page": 265,
+    "where": "same sentence, 'si X est connexe,'",
+    "scan": "'connexe' underlined (not the comma)",
+    "tex": "no underline markup",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "est connexe, la", "new": "est \\emph{connexe}, la"},
+    "note": ""
+  },
+  {
+    "page": 265,
+    "where": "1.4.2, 'les Z_l-faisceaux constructibles de torsion (i.e. annulés par une puissance de l ) est épaisse.'",
+    "scan": "the i.e. clause in parentheses, no commas",
+    "tex": "de torsion, i.e. annulés par une puissance de \\(\\ell\\), est épaisse.",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "de torsion, i.e. annulés par une puissance de \\(\\ell\\), est épaisse.", "new": "de torsion (i.e. annulés par une puissance de \\(\\ell\\)) est épaisse."},
+    "note": "The TeX replaces the print's parentheses by commas."
+  },
+  {
+    "page": 265,
+    "where": "Définition 1.4.3, 'des Q_l-faisceaux constructibles sur X et on note'",
+    "scan": "no comma after X",
+    "tex": "sur \\(X\\), et on note",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "sur \\(X\\), et on note", "new": "sur \\(X\\) et on note"},
+    "note": "Comma added by the TeX."
+  },
+  {
+    "page": 265,
+    "where": "Définition 1.4.3, display 'Q_l-fc(X)'",
+    "scan": "no punctuation after Q_l-fc(X); the next line begins 'la catégorie abélienne quotient'",
+    "tex": "\\mathbb Q_\\ell\\text{-}\\fc(X),",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "\\fc(X),\n\\]", "new": "\\fc(X)\n\\]"},
+    "note": "Comma added by the TeX at the end of the display."
+  },
+  {
+    "page": 265,
+    "where": "'Elle a même ensemble d'objets que Z_l-fc(X) et si F et G sont deux tels objets,'",
+    "scan": "no comma after 'et'",
+    "tex": "et, si \\(F\\)",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {"old": "et, si \\(F\\)", "new": "et si \\(F\\)"},
+    "note": "Comma added by the TeX."
+  },
+  {
+    "page": 265,
+    "where": "end of page_265.tex: the display Hom_{Q_l}(F,G) = Q_l ⊗ Hom_{Z_l}(F,G) and 'où Hom_{Z_l}(F,G) et Hom_{Q_l}(F,G)'",
+    "scan": "p. 265 ends with '... et si F et G sont deux tels objets,' (the rest of the page is blank); the display follows on p. 266",
+    "tex": "the display and the line 'où \\(\\Hom_{\\mathbb Z_\\ell}(F,G)\\) et \\(\\Hom_{\\mathbb Q_\\ell}(F,G)\\)' stand above the folio-266 marker",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 266 really begins with the display '\\[ \\Hom_{\\mathbb Q_\\ell}(F,G) = ...'. Exact fix: python -I move_marker.py 5 266 '\\[' --before (simulated in memory on both layers: the marker then stands on its own line between 'sont deux tels objets,' and the '\\[' of that display). Text not moved. The display and the 'où' line were not checked here (p. 266 scan not in this batch)."
+  }
+]

@@ -1,0 +1,782 @@
+[
+ {
+  "page": 226,
+  "where": "after the first display: 'Nous allons voir que pour tout couple (m,n)'",
+  "scan": "voir que pour tout couple (no comma)",
+  "tex": "voir que, pour tout couple",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "voir que, pour",
+   "new": "voir que pour"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 226,
+  "where": "'(iii) => (i) : Notant Y le système projectif de (iii)'",
+  "scan": "(iii) => (i) : Notant (colon, as '(i) => (ii) :' and '(ii) => (i) :' on pp. 227-228)",
+  "tex": "$(iii)\\Rightarrow(i)$. Notant",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$(iii)\\Rightarrow(i)$. Notant",
+   "new": "$(iii)\\Rightarrow(i)$: Notant"
+  },
+  "note": "Full stop in the TeX for the print's colon."
+ },
+ {
+  "page": 226,
+  "where": "'soit r un entier tel que :' before the display Im(Y[s] -> Y) = Im(Y[r] -> Y)",
+  "scan": "entier tel que : (colon)",
+  "tex": "un entier tel que (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "un entier tel que\n",
+   "new": "un entier tel que:\n"
+  },
+  "note": ""
+ },
+ {
+  "page": 226,
+  "where": "'... de celle de X_l et par suite, munissant ...'",
+  "scan": "de celle de X_l et par suite, munissant (no comma before or after 'et')",
+  "tex": "de celle de $X_\\ell$, et, par suite,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$X_\\ell$, et, par suite",
+   "new": "$X_\\ell$ et par suite"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 226,
+  "where": "'la condition (iii) s'exprime en disant que dès que l >= n+r'",
+  "scan": "en disant que dès que (no comma)",
+  "tex": "en disant que, dès que",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "disant que, dès",
+   "new": "disant que dès"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 226,
+  "where": "heading 4.1.4 (last lines of page_226.tex; printed at the top of p. 227)",
+  "scan": "'4.1.4.' with a full stop",
+  "tex": "\\subsubsection*{4.1.4}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{4.1.4}",
+   "new": "\\subsubsection*{4.1.4.}"
+  },
+  "note": "Printed on p. 227 (see the marker finding there); as \\subsubsection*{3.6.5.} p. 97 and {5.4.} p. 166."
+ },
+ {
+  "page": 227,
+  "where": "top of the page",
+  "scan": "p. 227 begins with '4.1.4. Si X est un objet de P vérifiant (ML)'; p. 226 ends with 'd'où (i) .' and blank paper",
+  "tex": "'\\subsubsection*{4.1.4}' and 'Si $X$ est un' (s5.tex lines 7578-7579, diplomatic) end page_226.tex; the folio-227 marker (line 7580) stands between 'un' and 'objet'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 227 really begins at s5.tex line 7578 '\\subsubsection*{4.1.4}'. Exact fix: python -I move_marker.py 5 227 '\\subsubsection*{4.1.4}' --before (simulated in memory on both layers). Text not moved."
+ },
+ {
+  "page": 227,
+  "where": "4.1.4, 'Si X est un objet de P vérifiant (ML)'",
+  "scan": "P typed plain (typewriter capital, like the text; the C of this page is the hand-drawn letter)",
+  "tex": "\\(\\mathcal P\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mathcal P\\) vérifiant",
+   "new": "\\(P\\) vérifiant"
+  },
+  "note": "The category P = Hom(N°,C) is typed plain on p. 227 (also Définition 4.2.1 and Lemme 4.2.2); Exposé V's earlier pages write $P$ (s5.tex line 7511)."
+ },
+ {
+  "page": 227,
+  "where": "4.1.4, 'rappelé en (4.1.1) que pour tout entier p le système projectif :'",
+  "scan": "que pour tout entier p le système projectif : (no commas; colon before the display)",
+  "tex": "que, pour tout entier \\(p\\), le système projectif (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(4.1.1) que, pour tout entier \\(p\\), le système projectif\n",
+   "new": "(4.1.1) que pour tout entier \\(p\\) le système projectif:\n"
+  },
+  "note": "The TeX adds two commas and drops the colon."
+ },
+ {
+  "page": 227,
+  "where": "4.1.4, display gr^p(X) = ...",
+  "scan": "gr^p(X) = gr^p(X_n)_{n∈N}: no parentheses around gr^p(X_n)",
+  "tex": "\\gr^p(X)=\\bigl(\\gr^p(X_n)\\bigr)_{n\\in\\mathbb N}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigl(\\gr^p(X_n)\\bigr)_{n\\in\\mathbb N}",
+   "new": "\\gr^p(X_n)_{n\\in\\mathbb N}"
+  },
+  "note": "The TeX adds the parentheses."
+ },
+ {
+  "page": 227,
+  "where": "'Sa limite projective (qui existe ... abélienne C ) sera appelée'",
+  "scan": "the clause in parentheses: '(qui existe sans hypothèse sur la catégorie abélienne C )'",
+  "tex": "commas: 'projective, qui existe ... \\(\\mathcal C\\), sera'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "projective, qui existe sans hypothèse sur la catégorie abélienne \\(\\mathcal C\\), sera",
+   "new": "projective (qui existe sans hypothèse sur la catégorie abélienne \\(\\mathcal C\\)) sera"
+  },
+  "note": ""
+ },
+ {
+  "page": 227,
+  "where": "'sera appelée p-ème composante'",
+  "scan": "p - ème",
+  "tex": "\\(p\\)-ième",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(p\\)-ième",
+   "new": "\\(p\\)-ème"
+  },
+  "note": ""
+ },
+ {
+  "page": 227,
+  "where": "'composante du gradué strict de X'",
+  "scan": "'composante du gradué strict de' underlined (the term being defined); X not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "composante du gradué strict de",
+   "new": "\\emph{composante du gradué strict de}"
+  },
+  "note": ""
+ },
+ {
+  "page": 227,
+  "where": "'de X et notée :' before the display grs^p(X)",
+  "scan": "X et notée : (no comma; colon)",
+  "tex": "\\(X\\), et notée (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(X\\), et notée\n",
+   "new": "\\(X\\) et notée:\n"
+  },
+  "note": ""
+ },
+ {
+  "page": 227,
+  "where": "heading 4.2",
+  "scan": "'4.2. Systèmes projectifs adaptés à J et lemme d'Artin-Rees.' with a full stop (title underlined)",
+  "tex": "\\subsection*{4.2. ... lemme d'Artin-Rees}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "lemme d'Artin-Rees}",
+   "new": "lemme d'Artin-Rees.}"
+  },
+  "note": "Underlined title: the print's full stop."
+ },
+ {
+  "page": 227,
+  "where": "4.2, 'un idéal J de A et une A-catégorie abélienne'",
+  "scan": "de A et une (no comma)",
+  "tex": "de \\(A\\), et une",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de \\(A\\), et une",
+   "new": "de \\(A\\) et une"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 227,
+  "where": "4.2, end of the first sentence",
+  "scan": "'et une A-catégorie abélienne.': the category is not named",
+  "tex": "abélienne \\(\\mathcal C\\).",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "abélienne \\(\\mathcal C\\).",
+   "new": "abélienne."
+  },
+  "note": "The TeX adds C (the abelian category of 4.1, which the definition below uses)."
+ },
+ {
+  "page": 227,
+  "where": "Définition 4.2.1, 'Un objet X de la catégorie'",
+  "scan": "'Un objet', 'de la catégorie' underlined; X not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Un objet \\(X\\) de la catégorie",
+   "new": "\\emph{Un objet} \\(X\\) \\emph{de la catégorie}"
+  },
+  "note": "Exposé V: the print underlines the statements; \\emph as on pp. 204-205."
+ },
+ {
+  "page": 227,
+  "where": "Définition 4.2.1, 'P = Hom(N°,C)'",
+  "scan": "P typed plain",
+  "tex": "\\(\\mathcal P=",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mathcal P=",
+   "new": "\\(P="
+  },
+  "note": "As the P of 4.1.4."
+ },
+ {
+  "page": 227,
+  "where": "Définition 4.2.1, 'Hom(N°,C)'",
+  "scan": "Hom underlined",
+  "tex": "\\Hom(\\mathbb N^\\circ,\\mathcal C)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(\\mathbb N^\\circ",
+   "new": "\\uHom(\\mathbb N^\\circ"
+  },
+  "note": "\\uHom (\\underline{\\Hom}) is defined in the preamble; as Ĉ = Hom(C,Ens)° on p. 205."
+ },
+ {
+  "page": 227,
+  "where": "Définition 4.2.1, from 'est dit adapté à J' to 'est vérifiée'",
+  "scan": "underlined: 'est dit / adapté à', 'si sa filtration', 'de système projectif', 'est / compatible avec la filtration', 'adique de', 'i.e. si pour tout couple', 'd'entiers positifs ou nuls l'inclusion ci-dessous est vérifiée'; not J, (F^pX)_{p∈N}, (4.1.1), J-, X, (p,q), the colon",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est dit adapté à \\(J\\) si sa filtration \\((F^pX)_{p\\in\\mathbb N}\\) de système projectif (4.1.1) est compatible avec la filtration \\(J\\)-adique de \\(X\\), i.e. si pour tout couple \\((p,q)\\) d'entiers positifs ou nuls l'inclusion ci-dessous est vérifiée",
+   "new": "\\emph{est dit adapté à} \\(J\\) \\emph{si sa filtration} \\((F^pX)_{p\\in\\mathbb N}\\) \\emph{de système projectif} (4.1.1) \\emph{est compatible avec la filtration} \\(J\\)-\\emph{adique de} \\(X\\), \\emph{i.e. si pour tout couple} \\((p,q)\\) \\emph{d'entiers positifs ou nuls l'inclusion ci-dessous est vérifiée}"
+  },
+  "note": ""
+ },
+ {
+  "page": 227,
+  "where": "Lemme 4.2.2, 'Soit X un objet de la catégorie P'",
+  "scan": "'Soit', 'un objet de la catégorie' underlined; X, P not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(X\\) un objet de la catégorie",
+   "new": "\\emph{Soit} \\(X\\) \\emph{un objet de la catégorie}"
+  },
+  "note": ""
+ },
+ {
+  "page": 227,
+  "where": "Lemme 4.2.2, 'de la catégorie P .'",
+  "scan": "P typed plain",
+  "tex": "\\(\\mathcal P\\).",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mathcal P\\).",
+   "new": "\\(P\\)."
+  },
+  "note": "As the P of 4.1.4."
+ },
+ {
+  "page": 227,
+  "where": "Lemme 4.2.2, 'Les assertions suivantes sont équivalentes :'",
+  "scan": "underlined, not the colon",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Les assertions suivantes sont équivalentes:",
+   "new": "\\emph{Les assertions suivantes sont équivalentes}:"
+  },
+  "note": ""
+ },
+ {
+  "page": 227,
+  "where": "Lemme 4.2.2 (i)",
+  "scan": "'est adapté à' underlined; X, J not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item \\(X\\) est adapté à \\(J\\).",
+   "new": "\\item \\(X\\) \\emph{est adapté à} \\(J\\)."
+  },
+  "note": ""
+ },
+ {
+  "page": 227,
+  "where": "Lemme 4.2.2 (ii)",
+  "scan": "'Pour tout couple', 'd'entiers avec', 'on a' underlined; (n,p), p <= n+1 not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Pour tout couple \\((n,p)\\) d'entiers avec \\(p\\le n+1\\), on a",
+   "new": "\\item \\emph{Pour tout couple} \\((n,p)\\) \\emph{d'entiers avec} \\(p\\le n+1\\), \\emph{on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 227,
+  "where": "proof of Lemme 4.2.2, label",
+  "scan": "'Preuve :' ('Preuve' underlined) on a line of its own, then '(i) => (ii) : alors ...'",
+  "tex": "\\begin{prooftext} without argument: the Exposé V environment prints 'Proof.'",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}\n\\((i)\\Rightarrow(ii)\\)",
+   "new": "\\emph{Preuve} :\n\n\\((i)\\Rightarrow(ii)\\)"
+  },
+  "note": "The global form \\emph{Preuve} : (as pp. 38-39). Apply together with the removal of the matching \\end{prooftext} on p. 228."
+ },
+ {
+  "page": 228,
+  "where": "top of the page",
+  "scan": "p. 228 begins with '(ii) => (i) : Si n < p+q'; p. 227 ends with '(i) => (ii) : alors J^pF^{n-p+1}(X_n) ⊂ F^{n+1}(X_n) = 0 .' (formula run into the line)",
+  "tex": "page_228.tex begins with the display J^pF^{\\,n-p+1}(X_n)\\subset F^{n+1}(X_n)=0. (s5.tex lines 7617-7619, diplomatic), the end of p. 227",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 228 really begins at s5.tex line 7621 '\\((ii)\\Rightarrow(i)\\): si'. Exact fix: python -I move_marker.py 5 228 '\\((ii)\\Rightarrow(i)\\)' (forward, no --before; simulated in memory on both layers). Text not moved."
+ },
+ {
+  "page": 228,
+  "where": "(ii) => (i), first word",
+  "scan": "'Si' (capital)",
+  "tex": "si",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\): si \\(n<p+q\\)",
+   "new": "\\): Si \\(n<p+q\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 228,
+  "where": "'J^{n+1-q}F^q(X_n) et ce dernier est nul par hypothèse'",
+  "scan": "no comma before 'et ce dernier'",
+  "tex": "\\(J^{\\,n+1-q}F^q(X_n)\\), et ce dernier",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "F^q(X_n)\\), et ce dernier",
+   "new": "F^q(X_n)\\) et ce dernier"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 228,
+  "where": "(ii) => (i), second case 'Si n > p+q'",
+  "scan": "n > p+q (a clear >, no bar)",
+  "tex": "\\(n>p+q\\), as printed",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\(n\\ge p+q\\)",
+  "note": "After 'Si n < p+q' the case n = p+q is left out; the printed argument covers it unchanged. The TeX keeps the printed reading; the corrected layer already reads \\(n\\ge p+q\\) (Codex record SGA-SRC-002203)."
+ },
+ {
+  "page": 228,
+  "where": "end of the proof of Lemme 4.2.2",
+  "scan": "no environment: 'Preuve :' is a plain label (p. 227)",
+  "tex": "\\end{prooftext}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{prooftext}\n",
+   "new": ""
+  },
+  "note": "Only together with the label fix of p. 227 (\\begin{prooftext} -> \\emph{Preuve} :)."
+ },
+ {
+  "page": 228,
+  "where": "label 'Exemples :'",
+  "scan": "'Exemples :' ('Exemples' underlined), on a line of its own",
+  "tex": "\\paragraph{Exemples.}",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\paragraph{Exemples.}\n",
+   "new": "\\emph{Exemples} :\n\n"
+  },
+  "note": "The print has ' :', not a full stop; as p. 90 (\\emph{Exemples.} -> \\emph{Exemples} :) and the global \\emph{Preuve} :. Medium only for the form of the label."
+ },
+ {
+  "page": 228,
+  "where": "heading 4.2.3",
+  "scan": "'4.2.3. Gradué d'un système projectif adapté à J .' (title underlined, full stop)",
+  "tex": "\\subsubsection*{4.2.3. ... adapté à \\(J\\)}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "adapté à \\(J\\)}",
+   "new": "adapté à \\(J\\).}"
+  },
+  "note": "Underlined title: the print's full stop."
+ },
+ {
+  "page": 228,
+  "where": "4.2.3, first display",
+  "scan": "gr^p(X)_{p∈N}: no parentheses",
+  "tex": "\\bigl(\\gr^p(X)\\bigr)_{p\\in\\mathbb N}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigl(\\gr^p(X)\\bigr)_{p\\in\\mathbb N}",
+   "new": "\\gr^p(X)_{p\\in\\mathbb N}"
+  },
+  "note": "The TeX adds the parentheses. The later grs(X) = (grs^p(X))_{p∈N} has them in the print and is right."
+ },
+ {
+  "page": 229,
+  "where": "top of the page",
+  "scan": "p. 229 begins with the display 'ω_pq : J^p/J^{p+1} ⊗_A F^q(X_q) -> F^{p+q}(X_{p+q}) .'; p. 228 ends with 'l'on définit les morphismes correspondants :' and blank paper",
+  "tex": "the display (s5.tex lines 7652-7654, diplomatic) ends page_228.tex; the folio-229 marker (line 7655) stands after it, before 'Le'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 229 really begins at s5.tex line 7652 '\\['. Exact fix: python -I move_marker.py 5 229 '\\[' --before (simulated in memory on both layers). Text not moved."
+ },
+ {
+  "page": 229,
+  "where": "'vu que J^{p+1}F^q(X_{p+q}) ⊂ F^{p+q+1}(X_{p+q}) = 0 , et J^pF^{q+1}(X_{p+q}) ⊂ ...'",
+  "scan": "'= 0 , et' between the two inclusions",
+  "tex": "=0,\\qquad (no 'et')",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "=0,\\qquad\n",
+   "new": "=0,\\qquad\\text{et}\\qquad\n"
+  },
+  "note": "The print runs the two inclusions into the text (layout not reported); only the word is missing."
+ },
+ {
+  "page": 229,
+  "where": "display after 'à travers'",
+  "scan": "(J^p/J^{p+1}) ⊗_A (F^q(X_{p+q})/F^{q+1}(X_{p+q})): parentheses around J^p/J^{p+1}",
+  "tex": "J^p/J^{p+1}\\otimes_A \\bigl(...\\bigr)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\[\nJ^p/J^{p+1}\\otimes_A",
+   "new": "\\[\n(J^p/J^{p+1})\\otimes_A"
+  },
+  "note": "As in the next display (beta)."
+ },
+ {
+  "page": 229,
+  "where": "Lemme 4.2.4, before the display",
+  "scan": "underlined: 'Soit', 'un système projectif', 'adique', 'Le morphisme canonique'; not X, J-, the full stop",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(X\\) un système projectif \\(J\\)-adique. Le morphisme canonique",
+   "new": "\\emph{Soit} \\(X\\) \\emph{un système projectif} \\(J\\)-\\emph{adique}. \\emph{Le morphisme canonique}"
+  },
+  "note": ""
+ },
+ {
+  "page": 229,
+  "where": "Lemme 4.2.4, 'Le morphisme canonique,' before the display",
+  "scan": "a comma after 'canonique'",
+  "tex": "no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\\[\n\\gr_J(A)\\otimes_A X_0",
+   "new": ",\n\\[\n\\gr_J(A)\\otimes_A X_0"
+  },
+  "note": ""
+ },
+ {
+  "page": 229,
+  "where": "Lemme 4.2.4, after the display",
+  "scan": "underlined: 'provenant de la structure de', '-module gradué de', 'est un / épimorphisme'; not gr_J(A), grs(X), the comma, the stop",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "provenant de la structure de \\(\\gr_J(A)\\)-module gradué de \\(\\grs(X)\\), est un épimorphisme.",
+   "new": "\\emph{provenant de la structure de} \\(\\gr_J(A)\\)-\\emph{module gradué de} \\(\\grs(X)\\), \\emph{est un épimorphisme}."
+  },
+  "note": ""
+ },
+ {
+  "page": 229,
+  "where": "proof of Lemme 4.2.4",
+  "scan": "'Preuve : Résulte immédiatement ...' ('Preuve' underlined)",
+  "tex": "\\begin{prooftext} ... \\end{prooftext} (prints 'Proof.')",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}\nRésulte immédiatement de l'explication des morphismes \\(\\omega_{pq}\\) donnée dans (4.2.3).\n\\end{prooftext}",
+   "new": "\\emph{Preuve} : Résulte immédiatement de l'explication des morphismes \\(\\omega_{pq}\\) donnée dans (4.2.3)."
+  },
+  "note": "One edit: the environment begins and ends on this page."
+ },
+ {
+  "page": 229,
+  "where": "Proposition 4.2.5, title",
+  "scan": "'(Caractérisation des systèmes projectifs stricts AR-J-adiques au moyen des gradués associés) .': in parentheses; underlined except AR-J-, the parentheses and the stop",
+  "tex": "Caractérisation ... associés. (no parentheses, no underline)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Caractérisation des systèmes projectifs stricts AR-\\(J\\)-adiques au moyen des gradués associés.",
+   "new": "(\\emph{Caractérisation des systèmes projectifs stricts} AR-\\(J\\)-\\emph{adiques au moyen des gradués associés})."
+  },
+  "note": "One edit: the parentheses and the underline touch."
+ },
+ {
+  "page": 230,
+  "where": "Proposition 4.2.5, 'indexé par N à valeurs dans C'",
+  "scan": "no comma after N",
+  "tex": "\\(\\mathbb N\\), à valeurs",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mathbb N\\),",
+   "new": "\\(\\mathbb N\\)"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 230,
+  "where": "Proposition 4.2.5, 'Soit X un système projectif strict indexé par'",
+  "scan": "'Soit', 'un système projectif strict indexé par' underlined; X not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(X\\) un système projectif strict indexé par",
+   "new": "\\emph{Soit} \\(X\\) \\emph{un système projectif strict indexé par}"
+  },
+  "note": ""
+ },
+ {
+  "page": 230,
+  "where": "Proposition 4.2.5, 'à valeurs dans'",
+  "scan": "underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "à valeurs dans",
+   "new": "\\emph{à valeurs dans}"
+  },
+  "note": ""
+ },
+ {
+  "page": 230,
+  "where": "Proposition 4.2.5, 'On suppose que pour tout entier'",
+  "scan": "underlined; 'C .' before it not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "On suppose que pour tout entier",
+   "new": "\\emph{On suppose que pour tout entier}"
+  },
+  "note": ""
+ },
+ {
+  "page": 230,
+  "where": "Proposition 4.2.5, 'n , on a :'",
+  "scan": "'on a' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(n\\), on a",
+   "new": "\\(n\\), \\emph{on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 230,
+  "where": "Proposition 4.2.5, 'on a :' before the display J^{n+1}X_n = 0",
+  "scan": "a colon after 'on a'",
+  "tex": "no colon",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\\[\nJ^{n+1}X_n=0.",
+   "new": ":\n\\[\nJ^{n+1}X_n=0."
+  },
+  "note": ""
+ },
+ {
+  "page": 230,
+  "where": "Proposition 4.2.5, 'Les assertions suivantes sont équivalentes :'",
+  "scan": "underlined, not the colon",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Les assertions suivantes sont équivalentes:",
+   "new": "\\emph{Les assertions suivantes sont équivalentes}:"
+  },
+  "note": ""
+ },
+ {
+  "page": 230,
+  "where": "Proposition 4.2.5 (i)",
+  "scan": "'est', 'adique' underlined; X, AR-J-, the stop not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item \\(X\\) est AR-\\(J\\)-adique.",
+   "new": "\\item \\(X\\) \\emph{est} AR-\\(J\\)-\\emph{adique}."
+  },
+  "note": ""
+ },
+ {
+  "page": 230,
+  "where": "Proposition 4.2.5 (ii), 'Il existe un entier r > 0 tel que pour tout entier'",
+  "scan": "'Il existe un entier', 'tel que pour tout entier' underlined; r > 0 not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Il existe un entier \\(r>0\\) tel que pour tout entier",
+   "new": "\\emph{Il existe un entier} \\(r>0\\) \\emph{tel que pour tout entier}"
+  },
+  "note": ""
+ },
+ {
+  "page": 230,
+  "where": "Proposition 4.2.5 (ii), 'n l'inclusion ci-dessous soit réalisée :'",
+  "scan": "no comma after n; 'l'inclusion / ci-dessous soit réalisée' underlined",
+  "tex": "\\(n\\), l'inclusion ci-dessous soit réalisée (no underline)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(n\\), l'inclusion ci-dessous soit réalisée",
+   "new": "\\(n\\) \\emph{l'inclusion ci-dessous soit réalisée}"
+  },
+  "note": "The TeX adds a comma. One edit: the comma and the underline touch."
+ },
+ {
+  "page": 230,
+  "where": "Proposition 4.2.5 (iii)",
+  "scan": "underlined: 'Il existe un entier', 'tel que, pour tout entier', 'le morphisme / canonique ci-dessous soit un isomorphisme dès que'; not r, m, n >= m+r, the colon",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Il existe un entier \\(r\\) tel que, pour tout entier \\(m\\), le morphisme canonique ci-dessous soit un isomorphisme dès que",
+   "new": "\\emph{Il existe un entier} \\(r\\) \\emph{tel que, pour tout entier} \\(m\\), \\emph{le morphisme canonique ci-dessous soit un isomorphisme dès que}"
+  },
+  "note": ""
+ },
+ {
+  "page": 230,
+  "where": "Proposition 4.2.5, last sentence 'Dans l'énoncé de (ii) ...'",
+  "scan": "underlined: 'Dans l'énoncé de', 'on convient de poser', 'pour'; not (ii), the formula, n<r",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Dans l'énoncé de (ii), on convient de poser \\(J^{\\,n-r}X_n=X_n\\) pour \\(n<r\\).",
+   "new": "\\emph{Dans l'énoncé de} (ii), \\emph{on convient de poser} \\(J^{\\,n-r}X_n=X_n\\) \\emph{pour} \\(n<r\\)."
+  },
+  "note": ""
+ },
+ {
+  "page": 230,
+  "where": "proof of Proposition 4.2.5, label",
+  "scan": "'Preuve : L'équivalence ...' ('Preuve' underlined)",
+  "tex": "\\begin{prooftext} (prints 'Proof.')",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}\nL'équivalence",
+   "new": "\\emph{Preuve} : L'équivalence"
+  },
+  "note": "Apply together with the removal of the matching \\end{prooftext} at s5.tex line 7752 (p. 231, diplomatic)."
+ },
+ {
+  "page": 230,
+  "where": "proof of Proposition 4.2.5, 'Prouvons celles de (i) et (ii)'",
+  "scan": "'celles' (plural; clear)",
+  "tex": "Prouvons celle de",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Prouvons celle de",
+   "new": "Prouvons celles de"
+  },
+  "corrected": "Prouvons celle de",
+  "note": "Refers to 'l'équivalence' (singular): the print's plural is a typing error; the TeX silently corrects. The fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 230,
+  "where": "'Considérons alors le diagramme commutatif exact ci-dessous.'",
+  "scan": "full stop after 'ci-dessous'",
+  "tex": "ci-dessous: (colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "exact ci-dessous:",
+   "new": "exact ci-dessous."
+  },
+  "note": ""
+ },
+ {
+  "page": 230,
+  "where": "diagram, positions of the two vertical columns",
+  "scan": "the columns 0 -> J^{n+1}X_{m+1} -> X_{m+1} -> X_{m+1}/J^{n+1}X_{m+1} -> 0 and 0 -> J^{n+1}X_m -> X_m -> X_m/J^{n+1}X_m -> 0 stand under X_{m+1} and X_m of the middle row",
+  "tex": "the array puts the columns in array columns 3 and 5, i.e. under F^{m+1}(X_{m+1}) and X_{m+1} (J^{n+1}X_{m+1} above F^{m+1}(X_{m+1}), X_m/J^{n+1}X_m below X_{m+1})",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "&&0&&0\\\\\n&&\\downarrow&&\\downarrow\\\\\n&&J^{n+1}X_{m+1}&\\longrightarrow&J^{n+1}X_m&\\longrightarrow&0\\\\\n&&\\downarrow&&\\downarrow\\\\\n0&\\longrightarrow&F^{m+1}(X_{m+1})&\\longrightarrow&X_{m+1}&\\longrightarrow&X_m&\\longrightarrow&0\\\\\n&&\\downarrow&&\\downarrow\\\\\n&&X_{m+1}/J^{n+1}X_{m+1}&\\longrightarrow&X_m/J^{n+1}X_m&\\longrightarrow&0\\\\\n&&\\downarrow&&\\downarrow\\\\\n&&0&&0",
+   "new": "&&&&0&&0\\\\\n&&&&\\downarrow&&\\downarrow\\\\\n&&&&J^{n+1}X_{m+1}&\\longrightarrow&J^{n+1}X_m&\\longrightarrow&0\\\\\n&&&&\\downarrow&&\\downarrow\\\\\n0&\\longrightarrow&F^{m+1}(X_{m+1})&\\longrightarrow&X_{m+1}&\\longrightarrow&X_m&\\longrightarrow&0\\\\\n&&&&\\downarrow&&\\downarrow\\\\\n&&&&X_{m+1}/J^{n+1}X_{m+1}&\\longrightarrow&X_m/J^{n+1}X_m&\\longrightarrow&0\\\\\n&&&&\\downarrow&&\\downarrow\\\\\n&&&&0&&0"
+  },
+  "note": "Shift the top, bottom and vertical-arrow rows two array columns to the right (columns 5 and 7); the middle row is unchanged."
+ },
+ {
+  "page": 230,
+  "where": "diagram, end",
+  "scan": "no full stop after the bottom 0s",
+  "tex": "&&0&&0 .",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": " .\n\\end{array}",
+   "new": "\n\\end{array}"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 230,
+  "where": "end of the page",
+  "scan": "p. 230 ends with the diagram (bottom row '0   0', then blank paper); 'Il' is not on this page",
+  "tex": "'Il' (s5.tex line 7739, diplomatic), the last line of page_230.tex, stands before the folio-231 marker (line 7740), which splits 'Il montre'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 231 really begins at s5.tex line 7739 'Il'. Exact fix: python -I move_marker.py 5 231 'Il' --before (simulated in memory on both layers). Text not moved."
+ }
+]

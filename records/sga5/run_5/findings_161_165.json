@@ -1,0 +1,542 @@
+[
+ {
+  "page": 161,
+  "where": "top of the page",
+  "scan": "p. 161 begins 'B' ∪ X' . Notons E' l'image inverse de E sur T'-(A' ∪ D ∪ X') et'; p. 160 ends '... hypothèses de position générale sur A, B , X signifient que A' est disjoint de'",
+  "tex": "page_161.tex begins 'maximal de $T$, $D=f^{-1}(z)(\\simeq\\mathbb P^1_s)$ le diviseur exceptionnel' and goes on to 'signifient que $A'$ est disjoint de' (s5.tex lines 5074-5075): the end of 'Prouvons 4.2', printed at the foot of p. 160; the folio-161 marker (line 5073) follows 'l'éclatement de l'idéal'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 161 really begins at '$B'\\cup X'$. Notons' in s5.tex line 5075 (after 'signifient que $A'$ est disjoint de '). Exact fix: python -I move_marker.py 5 161 \"\\$B'\\cup X'\\$. Notons\" (bash, double quotes with \\$; the anchor occurs once after the marker; simulated in memory on both layers: the marker then splits line 5075 after 'est disjoint de ' and stands on its own line before '$B'\\cup X'$. Notons'). The moved text agrees with the print of p. 160 (page_160_s4.png, P^1_s included)."
+ },
+ {
+  "page": 161,
+  "where": "display (*), target of the restriction arrow",
+  "scan": "RΓ(B' ∪ D),i'_!(E')|B'-(B' ∪ D))  - a closing parenthesis after the first 'B' ∪ D', so the parentheses do not balance; both unions are printed ∪ (the ∩ of 'B'_j ∩ D' below is distinct)",
+  "tex": "\\R\\Gamma(B'\\cup D,i'_!(E')|B'-(B'\\cup D))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R\\Gamma(B'\\cup D,i'_!(E')|B'-(B'\\cup D))",
+   "new": "\\R\\Gamma(B'\\cup D),i'_!(E')|B'-(B'\\cup D))"
+  },
+  "corrected": "\\R\\Gamma(B'-(B'\\cap D),i'_!(E')|B'-(B'\\cap D))",
+  "note": "The printed target is garbled: an unbalanced ')' after 'B' ∪ D', and ∪ for ∩ (B'-(B'∪D) is empty). The TeX silently drops the ')' and keeps the two ∪; the edit restores only the ')'. Intended reading (medium confidence): the restriction to B'-(B'∩D), the disjoint union of the B'_j-b_j of the second display, since B'_j ∩ D = {b_j}."
+ },
+ {
+  "page": 162,
+  "where": "heading of Part II",
+  "scan": "II. Correspondances équivariantes.  (underlined; full stop after the underline)",
+  "tex": "\\section*{II. Correspondances équivariantes}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{II. Correspondances équivariantes}",
+   "new": "\\section*{II. Correspondances équivariantes.}"
+  },
+  "note": "Full stop of the underlined title dropped."
+ },
+ {
+  "page": 162,
+  "where": "heading of §5",
+  "scan": "5. - Traces non commutatives.  (underlined)",
+  "tex": "\\subsection*{5. Traces non commutatives}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{5. Traces non commutatives}",
+   "new": "\\subsection*{5. - Traces non commutatives.}"
+  },
+  "note": "The print's ' -' after the number and the final full stop are dropped (as the §2 heading, p. 146)."
+ },
+ {
+  "page": 162,
+  "where": "heading 5.0",
+  "scan": "5.0. - Introduction.  (underlined)",
+  "tex": "\\subsubsection*{5.0. Introduction}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{5.0. Introduction}",
+   "new": "\\subsubsection*{5.0. - Introduction.}"
+  },
+  "note": "The print's ' -' and the final full stop are dropped."
+ },
+ {
+  "page": 162,
+  "where": "5.0, 'On dispose alors d'un homomorphisme trace (de nature locale)'",
+  "scan": "trace underlined",
+  "tex": "homomorphisme trace, (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "homomorphisme trace",
+   "new": "homomorphisme \\emph{trace}"
+  },
+  "note": "Exposé III B writes the print's underlining as \\emph. Independent of the next edit."
+ },
+ {
+  "page": 162,
+  "where": "5.0, same sentence",
+  "scan": "trace (de nature locale)  - in parentheses, no commas, then the display (5.0.1)",
+  "tex": "trace, de nature locale,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": ", de nature locale,",
+   "new": " (de nature locale)"
+  },
+  "note": "Parentheses of the print replaced by commas."
+ },
+ {
+  "page": 162,
+  "where": "'défini par composition de la \"flèche d'évaluation\"'",
+  "scan": "\"flèche d'évaluation\" between straight double quotes",
+  "tex": "de la flèche d'évaluation (no quotes)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de la flèche d'évaluation",
+   "new": "de la ``flèche d'évaluation''"
+  },
+  "note": "Quotes dropped; ``...'' is the file's form for the print's straight quotes."
+ },
+ {
+  "page": 162,
+  "where": "'avec l'inverse de l'isomorphisme canonique \"produit tensoriel\"'",
+  "scan": "\"produit tensoriel\" between straight double quotes",
+  "tex": "canonique produit tensoriel (no quotes)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "canonique produit tensoriel",
+   "new": "canonique ``produit tensoriel''"
+  },
+  "note": "Quotes dropped."
+ },
+ {
+  "page": 162,
+  "where": "'Par dérivation, 5.0.4, 5.0.5 donnent'",
+  "scan": "5.0.4, 5.0.5 donnent",
+  "tex": "5.0.4 et 5.0.5 donnent",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "5.0.4 et 5.0.5 donnent",
+   "new": "5.0.4, 5.0.5 donnent"
+  },
+  "note": "The TeX writes 'et' for the print's comma."
+ },
+ {
+  "page": 162,
+  "where": "'des flèches de D(K) :' before (5.0.6)",
+  "scan": "colon after D(K)",
+  "tex": "des flèches de $D(K)$ (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "des flèches de $D(K)$",
+   "new": "des flèches de $D(K)$:"
+  },
+  "note": "Colon dropped."
+ },
+ {
+  "page": 162,
+  "where": "(5.0.7), first argument",
+  "scan": "RHom_K(E;K)  - semicolon",
+  "tex": "\\uRHom_K(E;K)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\uRHom_K(E,K)",
+  "note": "Semicolon typed for the comma (RHom_K(E,K) in 5.0.6); the TeX keeps the printed reading."
+ },
+ {
+  "page": 163,
+  "where": "'5.0.7 est un isomorphisme (comme on le vérifie ... où E = K) , et,'",
+  "scan": "isomorphisme (comme on le vérifie facilement par réduction au cas où E = K) , et,",
+  "tex": "isomorphisme, comme on le vérifie facilement par réduction au cas où $E=K$, et,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "isomorphisme, comme on le vérifie facilement par réduction au cas où $E=K$, et",
+   "new": "isomorphisme (comme on le vérifie facilement par réduction au cas où $E=K$), et"
+  },
+  "note": "Parenthesis of the print replaced by commas; one edit, both parentheses."
+ },
+ {
+  "page": 163,
+  "where": "'on obtient un homomorphisme trace, de nature globale,'",
+  "scan": "globale underlined (the comma after it is not)",
+  "tex": "de nature globale, (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "de nature globale,",
+   "new": "de nature \\emph{globale},"
+  },
+  "note": "On this page 'trace' is not underlined."
+ },
+ {
+  "page": 163,
+  "where": "'(pour plus de détails, voir (SGA 6 I 7, 8)).'",
+  "scan": "voir (SGA 6 I 7, 8)).",
+  "tex": "voir SGA 6 I 7, 8).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "voir SGA 6 I 7, 8).",
+   "new": "voir (SGA 6 I 7, 8))."
+  },
+  "note": "Inner parentheses dropped."
+ },
+ {
+  "page": 163,
+  "where": "'Nous nous proposons ici d'examiner dans qeulle mesure'",
+  "scan": "qeulle",
+  "tex": "dans quelle mesure",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "dans quelle mesure",
+   "new": "dans qeulle mesure"
+  },
+  "corrected": "dans quelle mesure",
+  "note": "Typing error (u and e transposed); the TeX silently corrects it."
+ },
+ {
+  "page": 163,
+  "where": "'la notion de trace \"non commutative\" introduite par Stallings'",
+  "scan": "\"non commutative\" between straight double quotes",
+  "tex": "trace non commutative introduite (no quotes)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "trace non commutative introduite",
+   "new": "trace ``non commutative'' introduite"
+  },
+  "note": "Quotes dropped."
+ },
+ {
+  "page": 163,
+  "where": "'développée par Grothendieck dans l'exposé XI de ce séminaire (comme on l'a dit ...'",
+  "scan": "one sentence: '... de ce séminaire (comme on l'a dit dans l'introduction, cet exposé, rédigé par I. Bucur, a malheureusement été perdu ; le lecteur pourra ... les points essentiels). Si le remplacement'",
+  "tex": "de ce séminaire. Comme on l'a dit ... les points essentiels. Si le (the parenthesis made a sentence)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de ce séminaire. Comme on l'a dit",
+   "new": "de ce séminaire (comme on l'a dit"
+  },
+  "note": "Opens the parenthesis; apply together with the edit 'les points essentiels). Si le', which closes it."
+ },
+ {
+  "page": 163,
+  "where": "'se reporter à l'exposé de Deligne (SGA 4^{1/2} Rapport)'",
+  "scan": "(SGA 4^{1/2} Rapport)  - no comma",
+  "tex": "(SGA $4^{1/2}$, Rapport)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(SGA $4^{1/2}$, Rapport)",
+   "new": "(SGA $4^{1/2}$ Rapport)"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 163,
+  "where": "'où sont indiqués les points essentiels). Si le remplacement'",
+  "scan": "essentiels). Si",
+  "tex": "essentiels. Si",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "les points essentiels. Si le",
+   "new": "les points essentiels). Si le"
+  },
+  "note": "Closes the parenthesis opened at 'séminaire (comme'; apply both edits together."
+ },
+ {
+  "page": 163,
+  "where": "'Si le remplacement de K par A dans 5.0.3 de présente pas de difficulté'",
+  "scan": "de présente",
+  "tex": "ne présente",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "5.0.3 ne présente",
+   "new": "5.0.3 de présente"
+  },
+  "corrected": "5.0.3 ne présente",
+  "note": "Typing error 'de' for 'ne'; the TeX silently corrects it."
+ },
+ {
+  "page": 163,
+  "where": "unnumbered display 'Hom_A(E,A) ⊗_K E → A , f ⊗ x ↦ f(x)'",
+  "scan": "no punctuation after f(x); the sentence goes on 'ne se factorise pas'",
+  "tex": "f\\otimes x\\longmapsto f(x),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longmapsto f(x),\n\\]",
+   "new": "\\longmapsto f(x)\n\\]"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 164,
+  "where": "top of the page",
+  "scan": "p. 164 begins with the display '(5.0.11) Tr_A : Hom_A(E,E) ⟶ A_♮ ,'; p. 163 ends '... en composant l'inverse de 5.0.10 avec 5.0.9, un homomorphisme trace'",
+  "tex": "'\\begin{equation}\\tag{5.0.11}' and '\\Tr_A:\\uHom_A(E,E)\\longrightarrow A_\\natural,' end page_163.tex (s5.tex lines 5147-5148); the folio-164 marker (line 5149) sits inside the equation environment, before '\\end{equation}'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 164 really begins at '\\begin{equation}\\tag{5.0.11}' (s5.tex line 5147). Exact fix: python -I move_marker.py 5 164 '\\begin{equation}\\tag{5.0.11}' --before (single quotes; simulated in memory on both layers: the marker then stands on its own line between '... un homomorphisme trace' and '\\begin{equation}\\tag{5.0.11}'). The moved display agrees with the print."
+ },
+ {
+  "page": 164,
+  "where": "'au n° 6, de termes locaux de Lefschetz-Verdier'",
+  "scan": "au n° 6",
+  "tex": "au numéro 6",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "au numéro 6",
+   "new": "au n\\textsuperscript{o}~6"
+  },
+  "note": "Abbreviation written out; n\\textsuperscript{o}~ is the file's own form ('Au n\\textsuperscript{o}~1', Exposé III)."
+ },
+ {
+  "page": 164,
+  "where": "'Lefschetz-Verdier'",
+  "scan": "hyphen",
+  "tex": "Lefschetz--Verdier (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Lefschetz--Verdier",
+   "new": "Lefschetz-Verdier"
+  },
+  "note": "En dash added by the TeX."
+ },
+ {
+  "page": 164,
+  "where": "'de termes locaux de Lefschetz-Verdier \"non commutatifs\".'",
+  "scan": "\"non commutatifs\" between straight double quotes",
+  "tex": "« non commutatifs »",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "« non commutatifs »",
+   "new": "``non commutatifs''"
+  },
+  "note": "Guillemets are another sign; the accepted forms for the print's straight quotes are ``...'' and \"...\" (as batch 106-110)."
+ },
+ {
+  "page": 164,
+  "where": "heading 5.1",
+  "scan": "5.1.- Notations.  (underlined; no space between '5.1.' and '-')",
+  "tex": "\\subsubsection*{5.1. Notations}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{5.1. Notations}",
+   "new": "\\subsubsection*{5.1.- Notations.}"
+  },
+  "note": "The print's '-' and the final full stop are dropped."
+ },
+ {
+  "page": 164,
+  "where": "'Si E est un bimodule rappelons ([1] IX 4) que'",
+  "scan": "no comma after 'bimodule'",
+  "tex": "est un bimodule, rappelons",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "est un bimodule, rappelons",
+   "new": "est un bimodule rappelons"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 164,
+  "where": "'par le sous K-module engendré localement par les sections locales de la forme ax - xa'",
+  "scan": "sous K-module  - no hyphen after 'sous' (p. 163 prints sous-K-module)",
+  "tex": "sous-$K$-module",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "par le sous-$K$-module",
+   "new": "par le sous $K$-module"
+  },
+  "corrected": "par le sous-$K$-module",
+  "note": "Hyphen omitted by the typist; the TeX silently supplies it."
+ },
+ {
+  "page": 164,
+  "where": "'on utilisera la notation de Cartan-Eilenberg'",
+  "scan": "hyphen",
+  "tex": "Cartan--Eilenberg (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Cartan--Eilenberg",
+   "new": "Cartan-Eilenberg"
+  },
+  "note": "En dash added by the TeX."
+ },
+ {
+  "page": 164,
+  "where": "end of the text of the page: '(resp. des A-B-bimodules, à gauche sur A , à droite sur B .'",
+  "scan": "no closing parenthesis before the full stop",
+  "tex": "à droite sur $B$).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "à droite sur $B$).",
+   "new": "à droite sur $B$."
+  },
+  "corrected": "à droite sur $B$).",
+  "note": "The parenthesis opened at '(resp. des' is not closed in the print; the TeX silently closes it."
+ },
+ {
+  "page": 165,
+  "where": "top of the page",
+  "scan": "p. 165 begins with the paragraph number: '5.2   Soient A , B des K-algèbres.'; p. 164 ends '... à droite sur B .' and the footnote",
+  "tex": "'\\subsubsection*{5.2}' (s5.tex line 5163) ends page_164.tex; the folio-165 marker (line 5165) follows it, so page_165.tex begins 'Soient $A$, $B$'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 165 really begins at '\\subsubsection*{5.2}' (s5.tex line 5163). Exact fix: python -I move_marker.py 5 165 '\\subsubsection*{5.2}' --before (single quotes; simulated in memory on both layers: the marker then stands on its own line after the blank line that follows '... à droite sur $B$).' and before '\\subsubsection*{5.2}')."
+ },
+ {
+  "page": 165,
+  "where": "'G borné inférieurement et à composantes injectives, on a alors'",
+  "scan": "comma after 'injectives'",
+  "tex": "injectives; on a alors",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "composantes injectives; on a alors",
+   "new": "composantes injectives, on a alors"
+  },
+  "note": "Semicolon for the print's comma."
+ },
+ {
+  "page": 165,
+  "where": "'on a alors RHom_B(F ⊗^L_A E,G) = Hom•_B(F ⊗_A E,G) , RHom_B(F,G) = Hom•_B(F,G)'",
+  "scan": "both Hom• underlined, as every Hom• of 5.2",
+  "tex": "\\Hom_B^\\bullet(F\\otimes_AE,G), \\Hom_B^\\bullet(F,G) (not underlined)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\Hom_B^\\bullet(F\\otimes_AE,G)$, $\\uRHom_B(F,G)=\\Hom_B^\\bullet(F,G)$",
+   "new": "=\\uHom_B^\\bullet(F\\otimes_AE,G)$, $\\uRHom_B(F,G)=\\uHom_B^\\bullet(F,G)$"
+  },
+  "note": "The print underlines all 11 Hom• of 5.2 (this edit and three more); the TeX writes \\Hom^\\bullet without underline, against its own \\uHom_K^\\bullet on p. 162."
+ },
+ {
+  "page": 165,
+  "where": "'et RHom_A(E,Hom•_B(F,G)) = Hom•_A(E,Hom•_B(F,G))'",
+  "scan": "the three Hom• underlined",
+  "tex": "\\Hom_B^\\bullet, \\Hom_A^\\bullet (not underlined)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\uRHom_A(E,\\Hom_B^\\bullet(F,G))=\\Hom_A^\\bullet(E,\\Hom_B^\\bullet(F,G))$",
+   "new": "$\\uRHom_A(E,\\uHom_B^\\bullet(F,G))=\\uHom_A^\\bullet(E,\\uHom_B^\\bullet(F,G))$"
+  },
+  "note": "Underlined Hom• of the print."
+ },
+ {
+  "page": 165,
+  "where": "'= Hom•_A(E,Hom•_B(F,G)) car, si E est acyclique'",
+  "scan": "no comma before 'car'",
+  "tex": "(F,G))$, car, si",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": ", car, si",
+   "new": " car, si"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 165,
+  "where": "'donc Hom•_A(E,Hom•_B(F,G)) ≃ Hom•_B(F ⊗_A E,G) est acyclique'",
+  "scan": "the three Hom• underlined",
+  "tex": "\\Hom_A^\\bullet, \\Hom_B^\\bullet (not underlined)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "donc $\\Hom_A^\\bullet(E,\\Hom_B^\\bullet(F,G))\\simeq\\Hom_B^\\bullet(F\\otimes_AE,G)$",
+   "new": "donc $\\uHom_A^\\bullet(E,\\uHom_B^\\bullet(F,G))\\simeq\\uHom_B^\\bullet(F\\otimes_AE,G)$"
+  },
+  "note": "Underlined Hom• of the print."
+ },
+ {
+  "page": 165,
+  "where": "'est acyclique ; pour E et G comme ci-dessus'",
+  "scan": "semicolon and small p",
+  "tex": "est acyclique. Pour",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "est acyclique. Pour",
+   "new": "est acyclique; pour"
+  },
+  "note": "Full stop and capital for the print's semicolon."
+ },
+ {
+  "page": 165,
+  "where": "isomorphism 'Hom•_A(E,Hom•_B(F,G)) ⟶~ Hom•_B(F ⊗_A E,G) défini par 5.2.1'",
+  "scan": "the three Hom• underlined",
+  "tex": "\\Hom_A^\\bullet, \\Hom_B^\\bullet (not underlined)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom_A^\\bullet(E,\\Hom_B^\\bullet(F,G))\\xrightarrow{\\sim}\\Hom_B^\\bullet(F\\otimes_AE,G)",
+   "new": "\\uHom_A^\\bullet(E,\\uHom_B^\\bullet(F,G))\\xrightarrow{\\sim}\\uHom_B^\\bullet(F\\otimes_AE,G)"
+  },
+  "note": "Underlined Hom• of the print (run into the text there; the display is a layout variant)."
+ },
+ {
+  "page": 165,
+  "where": "(5.2.3)",
+  "scan": "Hom_A(E,RHom_B(F,G)) ⟶~ Hom_B(F ⊗^L_A E,G) .  - the two outer Hom are not underlined (only the Hom of RHom is)",
+  "tex": "\\uHom_A(E,\\uRHom_B(F,G))\\xrightarrow{\\sim}\\uHom_B(F\\lten_AE,G).",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uHom_A(E,\\uRHom_B(F,G))\\xrightarrow{\\sim}\\uHom_B(F\\lten_AE,G).",
+   "new": "\\Hom_A(E,\\uRHom_B(F,G))\\xrightarrow{\\sim}\\Hom_B(F\\lten_AE,G)."
+  },
+  "note": "The plain Hom of the derived categories D(A), D(B); the TeX underlines them."
+ },
+ {
+  "page": 165,
+  "where": "paragraph number 5.3",
+  "scan": "5.3.  (full stop; 5.2 is printed without one)",
+  "tex": "\\subsubsection*{5.3}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{5.3}",
+   "new": "\\subsubsection*{5.3.}"
+  },
+  "note": "Full stop dropped."
+ },
+ {
+  "page": 165,
+  "where": "(5.3.2), second arrow",
+  "scan": "f ⊗ x ⟶ f(x)  - a plain arrow, no bar",
+  "tex": "f\\otimes x\\longmapsto f(x)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "f\\otimes x\\longmapsto f(x)",
+   "new": "f\\otimes x\\longrightarrow f(x)"
+  },
+  "note": "\\longmapsto for the print's plain arrow (the other maps-to arrows of pp. 162-165 have the bar)."
+ }
+]

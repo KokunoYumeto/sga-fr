@@ -1,0 +1,773 @@
+[
+ {
+  "page": 386,
+  "where": "top of the page: paragraph number 4.3",
+  "scan": "p. 386 begins with '4.3. Notons que les modules ainsi obtenus ...'; p. 385 ends with '... sont notés σ_{y'}, σ'_{y'}, a_{y'}.'",
+  "tex": "'\\subsubsection*{4.3}' ends page_385.tex; the folio-386 marker follows it, before 'Notons que'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 386 really begins at '\\subsubsection*{4.3}' (diplomatic s5.tex line 13114, current 13110, at the time of the check). Exact fix: python -I move_marker.py 5 386 '\\subsubsection*{4.3' --before (simulated in memory on both layers: the marker then stands on its own line directly before '\\subsubsection*{4.3}'). Text not moved. The heading also lacks the print's full stop ('4.3.'): '\\subsubsection*{4.3}' -> '\\subsubsection*{4.3.}' (in page_385.tex until the move; not filed here)."
+ },
+ {
+  "page": 386,
+  "where": "4.3, line 1",
+  "scan": "ne dépendent - à isomorphisme près -que du point y ∈ C",
+  "tex": "ne dépendent, à isomorphisme près, que du point",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "dépendent, à isomorphisme près, que",
+   "new": "dépendent - à isomorphisme près - que"
+  },
+  "note": "The print sets the incise between typewriter dashes (spaced hyphens), not commas."
+ },
+ {
+  "page": 386,
+  "where": "4.3, line 2",
+  "scan": "et non du choix du point y' et C' au dessus de y",
+  "tex": "du point $y'$ et $C'$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "du point $y'$ de $C'$",
+  "note": "y' is a point of C' over y (C' is fixed with the situation (C', y', G)); 'et' makes no sense. The TeX keeps the printed reading."
+ },
+ {
+  "page": 386,
+  "where": "4.3, line 2-3",
+  "scan": "au dessus de y (no hyphen)",
+  "tex": "au-dessus de $y$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "au-dessus de $y$",
+   "new": "au dessus de $y$"
+  },
+  "corrected": "au-dessus de $y$",
+  "note": "The typescript drops the hyphen of 'au-dessus'; the TeX silently restores it."
+ },
+ {
+  "page": 386,
+  "where": "4.3, 'Il existe donc g ∈ G tel que'",
+  "scan": "y\" = g·y' (a raised dot between g and y')",
+  "tex": "$y''=g y'$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$y''=g y'$",
+   "new": "$y''=g\\cdot y'$"
+  },
+  "note": "The TeX drops the printed dot of the action."
+ },
+ {
+  "page": 386,
+  "where": "4.3, 'se déduit donc de la situation'",
+  "scan": "(C , y' , G) (no prime on C; the C' of 'sur C'' just after is primed)",
+  "tex": "$(C,y',G)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$(C',y',G)$",
+  "note": "The situation (C', y'', G) is obtained from (C', y', G) by g acting on C'; the print drops the prime. The TeX keeps the printed reading."
+ },
+ {
+  "page": 386,
+  "where": "4.3, int(g) on G",
+  "scan": "int(g) : h ⇝ gh g^{-1} (a wavy arrow)",
+  "tex": "h\\mapsto ghg^{-1}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "h\\mapsto ghg^{-1}",
+   "new": "h\\rightsquigarrow ghg^{-1}"
+  },
+  "note": "The print draws the wavy 'maps to' arrow, not a barred arrow."
+ },
+ {
+  "page": 386,
+  "where": "4.3, 'On en conclut par transport de structure'",
+  "scan": "'transport de structure' underlined",
+  "tex": "transport de structure",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "transport de structure",
+   "new": "\\emph{transport de structure}"
+  },
+  "note": "Exposé X has no underline markup; \\emph as in the rest of the volume (III B, V, VII)."
+ },
+ {
+  "page": 386,
+  "where": "4.3, 'les modules Sw_y etc.'",
+  "scan": "Sw_y etc. associés (no commas)",
+  "tex": "$Sw_y$, etc., associés",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$Sw_y$, etc., associés",
+   "new": "$Sw_y$ etc. associés"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 386,
+  "where": "4.3, last sentence but one",
+  "scan": "int(g) = G ⟶ G (an equals sign: two horizontal bars as in 'Λ = Z_ℓ', unlike the colon of 'int(g) : h' three lines up)",
+  "tex": "\\operatorname{int}(g):G\\to G",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\operatorname{int}(g):G\\to G",
+   "new": "\\operatorname{int}(g)=G\\to G"
+  },
+  "corrected": "\\operatorname{int}(g):G\\to G",
+  "note": "Typist's '=' for ':'; the TeX silently corrects it."
+ },
+ {
+  "page": 386,
+  "where": "Proposition 4.4, statement line 1",
+  "scan": "'Les notations étant celles de', 'avec' underlined; '3.7' not",
+  "tex": "Les notations étant celles de 3.7 avec",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Les notations étant celles de 3.7 avec",
+   "new": "\\emph{Les notations étant celles de} 3.7 \\emph{avec}"
+  },
+  "note": "The statement is underlined word group by word group (formulas and numbers not). Independent of the next items."
+ },
+ {
+  "page": 386,
+  "where": "Proposition 4.4, '(Λ = Z_ℓ'",
+  "scan": "(Λ = Z_ℓ   et M° ... : the parenthesis is opened and never closed",
+  "tex": "$(\\Lambda=\\mathbb Z_\\ell)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathbb Z_\\ell)$",
+   "new": "\\mathbb Z_\\ell$"
+  },
+  "corrected": "\\mathbb Z_\\ell)$",
+  "note": "Unbalanced parenthesis in the print; the TeX silently closes it after Z_ℓ."
+ },
+ {
+  "page": 386,
+  "where": "Proposition 4.4, statement lines 1-2",
+  "scan": "'et' and 'étant un objet de' underlined; M° not",
+  "tex": " et $M^\\bullet$ étant un objet de",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": " et $M^\\bullet$ étant un objet de",
+   "new": " \\emph{et} $M^\\bullet$ \\emph{étant un objet de}"
+  },
+  "note": "Statement underline."
+ },
+ {
+  "page": 386,
+  "where": "Proposition 4.4, after D^+(A[G])",
+  "scan": "D^+(A[G]) on a des isomorphismes (no comma)",
+  "tex": "$D^+(A[G])$, on a",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$D^+(A[G])$,",
+   "new": "$D^+(A[G])$"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 386,
+  "where": "Proposition 4.4, 'on a des isomorphismes'",
+  "scan": "'on a des isomorphismes' underlined (the colon not)",
+  "tex": "on a des isomorphismes:",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "on a des isomorphismes:",
+   "new": "\\emph{on a des isomorphismes}:"
+  },
+  "note": "Statement underline."
+ },
+ {
+  "page": 386,
+  "where": "display (*)",
+  "scan": "(*)   Sw_y ≃ Sw̌_y   (no punctuation)",
+  "tex": "(*)\\qquad Sw_y\\simeq \\check{Sw}_y,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\simeq \\check{Sw}_y,",
+   "new": "\\simeq \\check{Sw}_y"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 386,
+  "where": "proof label",
+  "scan": "'Démonstration.' with 'Démonstration' underlined",
+  "tex": "Démonstration. Pour que",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Démonstration. Pour que",
+   "new": "\\emph{Démonstration}. Pour que"
+  },
+  "note": "Plain text in the TeX; elsewhere in Exposé X the prooftext environment prints \\emph{Démonstration.}."
+ },
+ {
+  "page": 386,
+  "where": "proof, line 2",
+  "scan": "soient isomorphes il suffit (no comma)",
+  "tex": "soient isomorphes, il suffit",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "soient isomorphes, il suffit",
+   "new": "soient isomorphes il suffit"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 386,
+  "where": "proof, line 3",
+  "scan": "le caractère de Sw̌_y on a (3.7.2) : (no comma)",
+  "tex": "$\\check{Sw}_y$, on a (3.7.2):",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\check{Sw}_y$, on a",
+   "new": "$\\check{Sw}_y$ on a"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 386,
+  "where": "proof, before the display of valuations",
+  "scan": "D'autre part on a :",
+  "tex": "D'autre part on a",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "D'autre part on a",
+   "new": "D'autre part on a:"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 386,
+  "where": "proof, last sentence",
+  "scan": "donc Sw_{y'} ≃ Sw_{y'} , d'où ... (no check over the second Sw; nothing faint there, while the checks of (*) and of 'le caractère de Sw̌_y' are clear)",
+  "tex": "$Sw_{y'}\\simeq\\check{Sw}_{y'}$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\simeq\\check{Sw}_{y'}",
+   "new": "\\simeq Sw_{y'}"
+  },
+  "corrected": "\\simeq\\check{Sw}_{y'}",
+  "note": "The hand-drawn check was left out; the TeX silently supplies it."
+ },
+ {
+  "page": 386,
+  "where": "last line of page_386.tex: heading 4.5 (printed at the top of p. 387)",
+  "scan": "4.5. Nous aurons besoin ...",
+  "tex": "\\subsubsection*{4.5}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{4.5}",
+   "new": "\\subsubsection*{4.5.}"
+  },
+  "note": "The paragraph number has a full stop in the print (as fixed on earlier pages). Filed under p. 386 because the heading is in page_386.tex until the folio-387 marker is moved; the marker anchor '\\subsubsection*{4.5' still matches after this fix."
+ },
+ {
+  "page": 387,
+  "where": "top of the page: paragraph 4.5",
+  "scan": "p. 387 begins with '4.5. Nous aurons besoin plus bas ...'; p. 386 ends with '... en résulte grâce à 3.8.'",
+  "tex": "'\\subsubsection*{4.5}', a blank line and 'Nous' end page_386.tex; page_387.tex begins with 'aurons besoin'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 387 really begins at '\\subsubsection*{4.5}' (diplomatic s5.tex line 13144, current 13140, at the time of the check). Exact fix: python -I move_marker.py 5 387 '\\subsubsection*{4.5' --before (simulated in memory on both layers, with and without the '4.5.' fix filed under p. 386: the marker then stands on its own line directly before the heading). Text not moved."
+ },
+ {
+  "page": 387,
+  "where": "(4.5.1), first case",
+  "scan": "(1 - ν_{z'}(s)): a Greek ν (Symbol element), unlike the Latin v of the second case (1+v_{z'}(𝔇...))",
+  "tex": "\\bigl(1-v_{z'}(s)\\bigr)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\sigma_y(s)=\n\\begin{cases}\n\\displaystyle\\sum_{\\substack{p(z')=y\\\\s(z')=z'}}\\bigl(1-v",
+   "new": "\\sigma_y(s)=\n\\begin{cases}\n\\displaystyle\\sum_{\\substack{p(z')=y\\\\s(z')=z'}}\\bigl(1-\\nu"
+  },
+  "corrected": "\\sigma_y(s)=\n\\begin{cases}\n\\displaystyle\\sum_{\\substack{p(z')=y\\\\s(z')=z'}}\\bigl(1-v",
+  "note": "The valuation is v (p. 386, the second cases); the typist's Greek ν here is reproduced in the diplomatic layer, the TeX's v is the corrected reading. All four ν items of this page together (all or none)."
+ },
+ {
+  "page": 387,
+  "where": "(4.5.1), conditions",
+  "scan": "... (1 - ν_{z'}(s))   si s ≠ e  /  ... (1+v_{z'}(𝔇_{C'/C}))-n si s = e (no commas)",
+  "tex": "\\bigr),& s\\ne e,\\\\[0.8em] ... \\bigr)-n,& s=e,",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": ",& s\\ne e,\\\\[0.8em]\n\\displaystyle\\sum_{p(z')=y}\\bigl(1+v_{z'}(\\mathfrak D_{C'/C})\\bigr)-n,& s=e,",
+   "new": "& \\text{si } s\\ne e\\\\[0.8em]\n\\displaystyle\\sum_{p(z')=y}\\bigl(1+v_{z'}(\\mathfrak D_{C'/C})\\bigr)-n& \\text{si } s=e"
+  },
+  "note": "The TeX drops the printed 'si' of both cases and adds three commas."
+ },
+ {
+  "page": 387,
+  "where": "(4.5.2), left side and first case",
+  "scan": "σ*_y(s) = σ *_{y\"}(s) = σ_y(s): no prime on any σ and none on the first subscript (handwritten y; nothing faint where the primes would stand); first case (1 - ν_{z'}(s)) with a Greek ν",
+  "tex": "\\sigma^{\\prime*}_{y'}(s)=\\sigma^{\\prime*}_{y''}(s)=\\sigma'_y(s)= ... \\bigl(1-v_{z'}(s)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\sigma^{\\prime*}_{y'}(s)=\\sigma^{\\prime*}_{y''}(s)=\\sigma'_y(s)=\n\\begin{cases}\n\\displaystyle\\sum_{\\substack{p(z')=y\\\\s(z')=z'}}\\bigl(1-v",
+   "new": "\\sigma^{*}_{y}(s)=\\sigma^{*}_{y''}(s)=\\sigma_y(s)=\n\\begin{cases}\n\\displaystyle\\sum_{\\substack{p(z')=y\\\\s(z')=z'}}\\bigl(1-\\nu"
+  },
+  "corrected": "\\sigma^{\\prime*}_{y'}(s)=\\sigma^{\\prime*}_{y''}(s)=\\sigma'_y(s)=\n\\begin{cases}\n\\displaystyle\\sum_{\\substack{p(z')=y\\\\s(z')=z'}}\\bigl(1-v",
+  "note": "(4.5.2) is the formula for σ' (character of Sw'_y, cf. p. 391); the print repeats the unprimed σ of (4.5.1) and drops the prime of y'; the TeX silently supplies them. One edit with the ν of the first case, because the case lines of (4.5.1) and (4.5.2) are identical: if ν is not reproduced, apply it without the final '1-\\nu' (keep '1-v')."
+ },
+ {
+  "page": 387,
+  "where": "(4.5.2), conditions",
+  "scan": "... (1 - ν_{z'}(s))   si s ≠ e  /  ... (1 + v_{z'}(𝔇_{C'/C})) si s = e (no commas)",
+  "tex": "\\bigr),& s\\ne e,\\\\[0.8em] ... \\bigr),& s=e,",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": ",& s\\ne e,\\\\[0.8em]\n\\displaystyle\\sum_{p(z')=y}\\bigl(1+v_{z'}(\\mathfrak D_{C'/C})\\bigr),& s=e,",
+   "new": "& \\text{si } s\\ne e\\\\[0.8em]\n\\displaystyle\\sum_{p(z')=y}\\bigl(1+v_{z'}(\\mathfrak D_{C'/C})\\bigr)& \\text{si } s=e"
+  },
+  "note": "The TeX drops the printed 'si' of both cases and adds three commas."
+ },
+ {
+  "page": 387,
+  "where": "(4.5.3), first case",
+  "scan": "-Σ ν_{z'}(s) (Greek ν)",
+  "tex": "-\\sum_{...}v_{z'}(s)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "}}v_{z'}",
+   "new": "}}\\nu_{z'}"
+  },
+  "corrected": "}}v_{z'}",
+  "note": "As (4.5.1): the typist's Greek ν for the valuation v; all four ν items together."
+ },
+ {
+  "page": 387,
+  "where": "(4.5.3), first condition",
+  "scan": "ν_{z'}(s)   si s ≠ e (no commas)",
+  "tex": "v_{z'}(s),& s\\ne e,",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "(s),& s\\ne e,",
+   "new": "(s)& \\text{si } s\\ne e"
+  },
+  "note": "The TeX drops the printed 'si' and adds two commas."
+ },
+ {
+  "page": 387,
+  "where": "(4.5.3), second case",
+  "scan": "Σ_{p(z')=y} ν_{z'} 𝔇_{C'/C})  (Greek ν; no opening parenthesis before the hand-drawn 𝔇, the closing one is printed)",
+  "tex": "\\sum_{p(z')=y}v_{z'}(\\mathfrak D_{C'/C})",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "=y}v_{z'}(\\mathfrak",
+   "new": "=y}\\nu_{z'}\\mathfrak"
+  },
+  "corrected": "=y}v_{z'}(\\mathfrak",
+  "note": "Two misprints of the same term in one edit (they are adjacent): the Greek ν (all four ν items together) and the missing '(' that the TeX silently supplies. If ν is not reproduced, apply only the parenthesis: '=y}v_{z'}\\mathfrak'."
+ },
+ {
+  "page": 387,
+  "where": "(4.5.3), second condition",
+  "scan": "... si s = e (no comma, no full stop)",
+  "tex": ",& s=e.",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": ",& s=e.",
+   "new": "& \\text{si } s=e"
+  },
+  "note": "The TeX drops 'si' and adds a comma and a full stop at the end of the display."
+ },
+ {
+  "page": 387,
+  "where": "paragraph after (4.5.3), line 2",
+  "scan": "si l'on fixe un point y'_o ∈ C , alors (no prime on C)",
+  "tex": "$y'_0\\in C'$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$y'_0\\in C'$",
+   "new": "$y'_0\\in C$"
+  },
+  "corrected": "$y'_0\\in C'$",
+  "note": "y'_0 is a point of C' (g'(y') = y'_0 with y' ∈ C'); the print drops the prime, the TeX silently restores it."
+ },
+ {
+  "page": 387,
+  "where": "same paragraph, 'dans G et on a de plus'",
+  "scan": "dans G et on a de plus (no comma)",
+  "tex": "dans $G$, et on a de plus",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $G$, et on a de plus",
+   "new": "dans $G$ et on a de plus"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 387,
+  "where": "last lines of page_387.tex: heading 4.6 (printed at the top of p. 388)",
+  "scan": "4.6. Les invariants ...",
+  "tex": "\\subsubsection*{4.6}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{4.6}",
+   "new": "\\subsubsection*{4.6.}"
+  },
+  "note": "Full stop after the paragraph number in the print. Filed under p. 387 because the heading is in page_387.tex until the folio-388 marker is moved; the anchor '\\subsubsection*{4.6' still matches after this fix."
+ },
+ {
+  "page": 388,
+  "where": "top of the page: paragraph 4.6",
+  "scan": "p. 388 begins with '4.6. Les invariants Sw_y , Sw'_y , Art_y ...'; p. 387 ends with '... on obtient les formules écrites.'",
+  "tex": "'\\subsubsection*{4.6}', a blank line and 'Les' end page_387.tex; page_388.tex begins with 'invariants'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 388 really begins at '\\subsubsection*{4.6}' (diplomatic s5.tex line 13179, current 13175, at the time of the check). Exact fix: python -I move_marker.py 5 388 '\\subsubsection*{4.6' --before (simulated in memory on both layers, with and without the '4.6.' fix filed under p. 387). Text not moved."
+ },
+ {
+  "page": 388,
+  "where": "4.6, line 4",
+  "scan": "un ouvert U de C = C'/G dense dans C ('dense' underlined)",
+  "tex": "dense dans",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dense dans",
+   "new": "\\emph{dense} dans"
+  },
+  "note": "Underlined term."
+ },
+ {
+  "page": 388,
+  "where": "4.6, '(resp. C_1) alors l'extension'",
+  "scan": "(resp. C_1)  alors l'extension (no comma)",
+  "tex": "(resp. $C_1$), alors",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. $C_1$), alors",
+   "new": "(resp. $C_1$) alors"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 388,
+  "where": "4.6, the extension K'_1 ⊃ K_1",
+  "scan": "K'_1 = k(η'_1) ⊃ k(    = K_1: a blank of about four characters after 'k(' where η_1) was never written in (nothing faint in the gap)",
+  "tex": "K'_1=k(\\eta'_1)\\supset k(\\eta_1)=K_1",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\supset k(\\eta_1)=K_1",
+   "new": "\\supset k(=K_1"
+  },
+  "corrected": "\\supset k(\\eta_1)=K_1",
+  "note": "The print leaves η_1) out (a blank meant for it); the TeX silently supplies it."
+ },
+ {
+  "page": 388,
+  "where": "Remarque 4.6, label",
+  "scan": "'Remarque' underlined, '4.6.' not",
+  "tex": "Remarque 4.6. Les modules",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Remarque 4.6. Les modules",
+   "new": "\\emph{Remarque} 4.6. Les modules"
+  },
+  "note": "Plain-text label in the TeX (not an environment), so the print's underline is lost."
+ },
+ {
+  "page": 388,
+  "where": "Remarque 4.6, last sentence",
+  "scan": "modérément ramifiée en y'  ou, ce qui revient au même (no comma after y')",
+  "tex": "en $y'$, ou,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "en $y'$, ou,",
+   "new": "en $y'$ ou,"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 389,
+  "where": "title of section 5",
+  "scan": "5.  La formule de Weil (comparer [3 VI § 4]).  (full stop after the parenthesis)",
+  "tex": "\\subsection*{5. La formule de Weil (comparer [3 VI §4])}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(comparer [3 VI §4])}",
+   "new": "(comparer [3 VI §4]).}"
+  },
+  "note": "Underlined titles end with a full stop in the print (NOTE_5)."
+ },
+ {
+  "page": 389,
+  "where": "heading 5.0",
+  "scan": "5.0. Tous les schémas ...",
+  "tex": "\\subsubsection*{5.0}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{5.0}",
+   "new": "\\subsubsection*{5.0.}"
+  },
+  "note": "Full stop after the paragraph number in the print."
+ },
+ {
+  "page": 389,
+  "where": "before the display of λ_ν^*",
+  "scan": "un homomorphisme de réduction :",
+  "tex": "un homomorphisme de réduction",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de réduction\n\\[",
+   "new": "de réduction:\n\\["
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 389,
+  "where": "'seront désignés par'",
+  "scan": "seront désignés par (masculine: the subject is 'Les images')",
+  "tex": "seront désignées par",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "seront désignées par",
+   "new": "seront désignés par"
+  },
+  "corrected": "seront désignées par",
+  "note": "Agreement error of the typist; the TeX silently corrects it."
+ },
+ {
+  "page": 389,
+  "where": "'L'homormorphisme de réduction'",
+  "scan": "L'homormorphisme (an extra 'r')",
+  "tex": "L'homomorphisme de réduction",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "L'homomorphisme",
+   "new": "L'homormorphisme"
+  },
+  "corrected": "L'homomorphisme",
+  "note": "Typing error; the TeX silently corrects it."
+ },
+ {
+  "page": 389,
+  "where": "'sera désigné par Λ_{ν,X}'",
+  "scan": "sera désigné par Λ_{ν,X} (no full stop; the next paragraph follows)",
+  "tex": "$\\Lambda_{\\nu,X}$.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\Lambda_{\\nu,X}$.",
+   "new": "$\\Lambda_{\\nu,X}$"
+  },
+  "note": "The TeX adds a full stop."
+ },
+ {
+  "page": 390,
+  "where": "Proposition 5.1, statement lines 1-4",
+  "scan": "underlined: 'Soient', 'une courbe algébrique', 'lisse et propre sur le corps', 'algébriquement clos', 'un groupe fini opérant sur', 'la projection canonique', 'un ouvert dense de', 'tel que', 'soit un revêtement principal de', 'de groupe' (formulas and commas not)",
+  "tex": "Soient $C'$ une courbe algébrique, lisse et propre sur le corps $k$ ... de groupe $G$,",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $C'$ une courbe algébrique, lisse et propre sur le corps $k$ algébriquement clos, $G$ un groupe fini opérant sur $C'$, $C=C'/G$, $p:C'\\to C$ la projection canonique, $U$ un ouvert dense de $C$ tel que $U'=p^{-1}(U)$ soit un revêtement principal de $U$ de groupe $G$,",
+   "new": "\\emph{Soient} $C'$ \\emph{une courbe algébrique}, \\emph{lisse et propre sur le corps} $k$ \\emph{algébriquement clos}, $G$ \\emph{un groupe fini opérant sur} $C'$, $C=C'/G$, $p:C'\\to C$ \\emph{la projection canonique}, $U$ \\emph{un ouvert dense de} $C$ \\emph{tel que} $U'=p^{-1}(U)$ \\emph{soit un revêtement principal de} $U$ \\emph{de groupe} $G$,"
+  },
+  "note": "Statement underline, word group by word group."
+ },
+ {
+  "page": 390,
+  "where": "Proposition 5.1, 'Y' = p^{-1}(X)'",
+  "scan": "Y = C-U , Y' = p^{-1}(X) = C'-U'",
+  "tex": "$X'=p^{-1}(X)=C'-U'$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$X'=p^{-1}",
+   "new": "$Y'=p^{-1}"
+  },
+  "note": "The print names the set Y' (as used on pp. 391-393); the TeX's X' is neither the print nor the sense."
+ },
+ {
+  "page": 390,
+  "where": "Proposition 5.1, 'Y' = p^{-1}(X)'",
+  "scan": "p^{-1}(X)",
+  "tex": "p^{-1}(X)=C'-U'",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "p^{-1}(Y)=C'-U'",
+  "note": "Y' = p^{-1}(Y) = C' - U' with Y = C - U; the print has X. The TeX keeps the printed reading."
+ },
+ {
+  "page": 390,
+  "where": "Proposition 5.1, statement line 5-6",
+  "scan": "underlined: 'et soit', 'la caractéristique d'Euler-Poincaré de' (EP(C) not)",
+  "tex": "et soit $\\EP(C)$ la caractéristique d'Euler-Poincaré de",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et soit $\\EP(C)$ la caractéristique d'Euler-Poincaré de",
+   "new": "\\emph{et soit} $\\EP(C)$ \\emph{la caractéristique d'Euler-Poincaré de}"
+  },
+  "note": "Statement underline (the underline runs under 'de')."
+ },
+ {
+  "page": 390,
+  "where": "Proposition 5.1, 'de C , (égale à'",
+  "scan": "d'Euler-Poincaré de C , (égale à (comma before the parenthesis)",
+  "tex": "de $C$ (égale",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$C$ (",
+   "new": "$C$, ("
+  },
+  "note": "The TeX drops the comma."
+ },
+ {
+  "page": 390,
+  "where": "Proposition 5.1, statement line 6",
+  "scan": "underlined: 'égale à', 'si', 'est connexe de genre' (the parenthesis, 2 - 2g, C, g not)",
+  "tex": "égale à $2-2g$ si $C$ est connexe de genre",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "égale à $2-2g$ si $C$ est connexe de genre",
+   "new": "\\emph{égale à} $2-2g$ \\emph{si} $C$ \\emph{est connexe de genre}"
+  },
+  "note": "Statement underline."
+ },
+ {
+  "page": 390,
+  "where": "'Dans ces conditions on a la formule de Weil :'",
+  "scan": "'formule de Weil' underlined",
+  "tex": "la formule de Weil:",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "la formule de Weil:",
+   "new": "la \\emph{formule de Weil}:"
+  },
+  "note": "Underlined term."
+ },
+ {
+  "page": 390,
+  "where": "(5.2), first member",
+  "scan": "cl_{K°(Λ_ν[G])}(R Γ_{C'}(Λ_{ν,U',C'})): a plain typed R before the hand-drawn Γ",
+  "tex": "\\RG_{C'} (\\RG = \\R\\Gamma, \\R = \\mathbb{R} in Exposé X)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RG_{C'}",
+   "new": "\\mathrm{R}\\Gamma_{C'}"
+  },
+  "note": "The print's derived-functor R is plain here (also on p. 391), the macro gives a double-struck R."
+ },
+ {
+  "page": 390,
+  "where": "(5.2), second member",
+  "scan": "EP(C) cl_{K°(Λ_ν[G]}(Λ_ν[G]) - ...: the subscript K°(Λ_ν[G] has no closing parenthesis",
+  "tex": "\\clKstar{\\Lambda_\\nu[G]}(\\Lambda_\\nu[G])",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\clKstar{\\Lambda_\\nu[G]}(\\Lambda_\\nu[G])",
+   "new": "\\operatorname{cl}_{K^{\\bullet}(\\Lambda_\\nu[G]}(\\Lambda_\\nu[G])"
+  },
+  "corrected": "\\clKstar{\\Lambda_\\nu[G]}(\\Lambda_\\nu[G])",
+  "note": "Unbalanced parenthesis in the subscript; \\clKstar silently closes it. The fix writes the macro out without the ')'."
+ },
+ {
+  "page": 390,
+  "where": "after (5.2)",
+  "scan": "où le premier membre de (6.2) est défini grâce à 2.1.",
+  "tex": "le premier membre de (6.2)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "le premier membre de (5.2)",
+  "note": "The first member defined thanks to 2.1 is that of the formula just displayed, (5.2). The TeX keeps the printed reading."
+ },
+ {
+  "page": 390,
+  "where": "proof label",
+  "scan": "'Démonstration.' with 'Démonstration' underlined",
+  "tex": "Démonstration. Désignons",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Démonstration. Désignons",
+   "new": "\\emph{Démonstration}. Désignons"
+  },
+  "note": "Plain text in the TeX; the prooftext environment of Exposé X prints \\emph{Démonstration.}."
+ },
+ {
+  "page": 390,
+  "where": "'D'autre part (3.3.1) l'homomorphisme trace :'",
+  "scan": "D'autre part (3.3.1) l'homomorphisme trace : (no comma, colon)",
+  "tex": "D'autre part (3.3.1), l'homomorphisme trace",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(3.3.1), l'homomorphisme trace",
+   "new": "(3.3.1) l'homomorphisme trace:"
+  },
+  "note": "The TeX adds a comma after (3.3.1) and drops the colon after 'trace'."
+ },
+ {
+  "page": 390,
+  "where": "display K°(Z_ℓ[G]) -> F(G, Z_ℓ)",
+  "scan": "label 'tv' over the arrow",
+  "tex": "\\xrightarrow{\\ tv\\ }",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\xrightarrow{\\ tr\\ }",
+  "note": "The trace homomorphism is 'tr' (the next display: tr(μ_ν(S_1)) = tr(μ_ν(S_2))). The TeX keeps the printed 'tv'."
+ },
+ {
+  "page": 390,
+  "where": "end of the page: display (5.2.1)",
+  "scan": "p. 390 ends with '... donné par la for-/mule' and the display '(5.2.1) σ_2 = EP(C)r_G - Σ_{y∈Y} σ'_y ,'; p. 391 begins with 'où σ'_y est le caractère de Sw'_y ((4.2.7) et (4.2.3)), ...'",
+  "tex": "'formule' and the display (5.2.1) open page_391.tex, under the folio-391 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 391 really begins at 'où $\\sigma'_y$ est le caractère' (the line after the '\\]' of (5.2.1); diplomatic s5.tex line 13262, current 13258, at the time of the check). Exact fix: python -I move_marker.py 5 391 'où $\\sigma' (no --before; the anchor's first occurrence after the marker is that line; simulated in memory on both layers). Text not moved. 'formule' and (5.2.1) agree with the print of p. 390 (the double-struck EP aside, see the message)."
+ }
+]

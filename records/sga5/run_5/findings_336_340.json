@@ -1,0 +1,761 @@
+[
+ {
+  "page": 336,
+  "where": "top of the page: item (b) of Lemme 9.1",
+  "scan": "p. 336 begins with '(b) Pour tout z ∈ C•(N̂), on a :'; p. 335 ends with the display (9.1.3)",
+  "tex": "the '\\item' that prints '(b)' is the last line of page_335.tex, just above the folio-336 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 336 really begins at the '\\item' on the line above the marker (s5.tex diplomatic line 11418, current line 11414). Exact fix: python -I move_marker.py 5 336 '\\item' --before (simulated in memory on both layers: the marker moves 6 characters and then stands on its own line between '\\]' (end of (9.1.3)) and '\\item'). Text not moved."
+ },
+ {
+  "page": 336,
+  "where": "Lemme 9.1 (ii)(b), first words",
+  "scan": "'(b) Pour tout': capital P; 'Pour tout' underlined (z and C•(N̂) not)",
+  "tex": "pour tout $z\\in C^*(\\widehat N)$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "pour tout $z\\in",
+   "new": "\\emph{Pour tout} $z\\in"
+  },
+  "note": "One edit: the capital P and the underline of the statement."
+ },
+ {
+  "page": 336,
+  "where": "Lemme 9.1 (ii)(b), 'on a :' before (9.1.4)",
+  "scan": "', on a :': a colon; 'on a' underlined, the colon not",
+  "tex": "$, on a (no colon, no underline)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\widehat N)$, on a\n\\[",
+   "new": "(\\widehat N)$, \\emph{on a} :\n\\["
+  },
+  "note": "One edit: the colon and the underline."
+ },
+ {
+  "page": 336,
+  "where": "display (9.1.4)",
+  "scan": "'s*(z) = p_*(z c_r(F̌))  , dans  C•(S).': a comma before 'dans'",
+  "tex": "p_*(z\\,c_r(\\check F))\\quad\\text{dans }C^*(S).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(z\\,c_r(\\check F))\\quad",
+   "new": "(z\\,c_r(\\check F)),\\quad"
+  },
+  "note": "The TeX drops the comma."
+ },
+ {
+  "page": 336,
+  "where": "display (9.1.4), 'dans'",
+  "scan": "'dans' underlined (end of the statement)",
+  "tex": "\\text{dans }",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{dans }C^*(S).",
+   "new": "\\text{\\emph{dans} }C^*(S)."
+  },
+  "note": ""
+ },
+ {
+  "page": 336,
+  "where": "proof, 'L'égalité du 1e et du 3e membre de (9.1.2)'",
+  "scan": "'du 1e et du 3e membre': the numerals with a raised e",
+  "tex": "du premier et du troisième membre",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "du premier et du troisième membre",
+   "new": "du 1\\textsuperscript{e} et du 3\\textsuperscript{e} membre"
+  },
+  "note": "The TeX writes the abbreviations out."
+ },
+ {
+  "page": 336,
+  "where": "number of the display after 'on voit que'",
+  "scan": "'(9.1.2) bis': 'bis' outside the parentheses",
+  "tex": "\\tag{9.1.2 bis} (prints '(9.1.2 bis)')",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tag{9.1.2 bis}",
+   "new": "\\tag*{(9.1.2) bis}"
+  },
+  "note": "\\tag* as in the file's \\tag*{(4.2.4)'}. Same form for (9.3.7) bis on p. 340."
+ },
+ {
+  "page": 336,
+  "where": "'et à fortiori des égalités'",
+  "scan": "'à fortiori' with a grave accent on the a",
+  "tex": "et a fortiori",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "et a fortiori",
+   "new": "et à fortiori"
+  },
+  "note": "The print's spelling (a current French spelling, not a misprint)."
+ },
+ {
+  "page": 336,
+  "where": "'Notant α : V(N) → N̂ l'inclusion canonique'",
+  "scan": "a plain arrow, no hook (the hooks of 'i : Y ↪ X' and 's : Y ↪ N̂' on p. 337 are clear)",
+  "tex": "\\alpha:V(N)\\hookrightarrow\\widehat N",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "V(N)\\hookrightarrow\\widehat N$ l'inclusion",
+   "new": "V(N)\\to\\widehat N$ l'inclusion"
+  },
+  "note": ""
+ },
+ {
+  "page": 336,
+  "where": "'on a évidemment α*(O_p(1)) ≃ O_V(N) , d'où'",
+  "scan": "O_p(1): the subscript is a small typed p (bowl at x-height, descender)",
+  "tex": "\\mathcal O_P(1) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\alpha^*(\\mathcal O_P(1))\\simeq",
+   "new": "\\alpha^*(\\mathcal O_p(1))\\simeq"
+  },
+  "corrected": "\\mathcal O_P(1)",
+  "note": "The bundle is P; (9.1.6) on the same page prints O_P with a capital P. Same series as the small p of A_p, mu_p, O_p(1) on pp. 286-288 (all or none)."
+ },
+ {
+  "page": 336,
+  "where": "display α*(ξ) = α*(c_1(O_p(1))) = c_1(O_V(N)) = 0",
+  "scan": "O_p(1): small typed p as subscript",
+  "tex": "c_1(\\mathcal O_P(1)) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "c_1(\\mathcal O_P(1))",
+   "new": "c_1(\\mathcal O_p(1))"
+  },
+  "corrected": "c_1(\\mathcal O_P(1))",
+  "note": "As the line above."
+ },
+ {
+  "page": 336,
+  "where": "display (9.1.6), c_{r+1}(p*(Ň) ⊕ O_P)",
+  "scan": "O_P without a prime: the stroke at the upper right is the tail of the hand-drawn script O (the same tail on O_p(1) and O_V(N) above); the subscript is a capital P",
+  "tex": "\\mathcal O'_P",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal O'_P",
+   "new": "\\mathcal O_P"
+  },
+  "note": "The TeX adds a prime."
+ },
+ {
+  "page": 336,
+  "where": "display z = Σ p*(a_i)ξ^i , avec a_i ∈ C•(S)",
+  "scan": "', avec  a_i ∈ C•(S),': the word 'avec' between the two formulas",
+  "tex": ",\\qquad a_i\\in C^*(S),",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": ",\\qquad a_i\\in C^*(S),",
+   "new": ",\\quad\\text{avec }a_i\\in C^*(S),"
+  },
+  "note": "The TeX drops 'avec'."
+ },
+ {
+  "page": 336,
+  "where": "'([CH] 4 Th 1)'",
+  "scan": "'Th 1': no full stop after Th",
+  "tex": "Th. 1",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Th. 1)",
+   "new": "Th 1)"
+  },
+  "note": "The TeX adds a full stop."
+ },
+ {
+  "page": 336,
+  "where": "the Chow ring C•(-) throughout pp. 336-340 (convention, reported once)",
+  "scan": "C with a small raised dot (C•): e.g. p. 336 'Pour tout z ∈ C•(N̂)' (Lemme 9.1 (b)), p. 337 'y ∈ C•(Y)' (Théorème 9.2), p. 340 'Pour tout y ∈ C•(N̂)' (Lemme 9.4); C^1(Y) on p. 340 has the numeral",
+  "tex": "C^* (a star) in all 13 places on pp. 336-340: C^*(\\widehat N), C^*(S), C^*(Y), C^*(Z')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, not itemized: one global pass C^* -> C^{\\bullet} over section 9 (from p. 335, 'on note $C^*(X)$ l'anneau de Chow'), as A^* -> A^{\\bullet} for the print's A• earlier in the exposé."
+ },
+ {
+  "page": 337,
+  "where": "'la \"formule de self-intersection\" dans l'anneau de Chow'",
+  "scan": "straight typewriter double quotes",
+  "tex": "«formule de self-intersection»",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "«formule de self-intersection»",
+   "new": "``formule de self-intersection''"
+  },
+  "note": "Guillemets for the print's straight quotes (the accepted forms are ``...'' and \"...\")."
+ },
+ {
+  "page": 337,
+  "where": "Théorème 9.2, first sentence",
+  "scan": "underlined: 'Soient' | 'un corps séparablement clos et' | 'une' / 'immersion fermée, purement de codimension' | 'de' | 'schémas quasiprojectifs et lisses' (k, i : Y ↪ X, d, 'k-' and the full stop not)",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $k$ un corps séparablement clos et $i:Y\\hookrightarrow X$ une immersion fermée, purement de codimension $d$, de $k$-schémas quasiprojectifs et lisses.",
+   "new": "\\emph{Soient} $k$ \\emph{un corps séparablement clos et} $i:Y\\hookrightarrow X$ \\emph{une immersion fermée, purement de codimension} $d$, \\emph{de} $k$-\\emph{schémas quasiprojectifs et lisses}."
+  },
+  "note": ""
+ },
+ {
+  "page": 337,
+  "where": "Théorème 9.2, second sentence",
+  "scan": "underlined: 'Alors, notant' | 'le faisceau normal de' | 'on a pour tout' | 'l'égalité' (N, i, y ∈ C•(Y) not)",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors, notant $N$ le faisceau normal de $i$, on a pour tout $y\\in C^*(Y)$ l'égalité",
+   "new": "\\emph{Alors, notant} $N$ \\emph{le faisceau normal de} $i$, \\emph{on a pour tout} $y\\in C^*(Y)$ \\emph{l'égalité}"
+  },
+  "note": ""
+ },
+ {
+  "page": 337,
+  "where": "Théorème 9.2, 'dans C•(Y).' after the display",
+  "scan": "'dans' underlined",
+  "tex": "dans $C^*(Y)$.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $C^*(Y)$.",
+   "new": "\\emph{dans} $C^*(Y)$."
+  },
+  "note": ""
+ },
+ {
+  "page": 337,
+  "where": "'Plongeons X dans Z = X ×_k P^1_k ...'",
+  "scan": "'Plongeons' opens a new, indented paragraph after '... et de schémas auxiliaires.'",
+  "tex": "runs on in the paragraph 'Pour la preuve, ...'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "auxiliaires. Plongeons",
+   "new": "auxiliaires.\n\nPlongeons"
+  },
+  "note": "Paragraph break of the print."
+ },
+ {
+  "page": 337,
+  "where": "cartesian square N̂ → Z' over Y → Z",
+  "scan": "both horizontal arrows are hooked (j_1 and i_1, the hook at the source)",
+  "tex": "plain arrows \\arrow[r,\"j_1\"] and \\arrow[r,\"i_1\"']",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\widehat N \\arrow[r,\"j_1\"] \\arrow[d,\"g_1\"'] & Z' \\arrow[d,\"f_1\"]\\\\\nY \\arrow[r,\"i_1\"']",
+   "new": "\\widehat N \\arrow[r,hook,\"j_1\"] \\arrow[d,\"g_1\"'] & Z' \\arrow[d,\"f_1\"]\\\\\nY \\arrow[r,hook,\"i_1\"']"
+  },
+  "note": "tikz-cd 'hook', as elsewhere in the file (\\arrow[r,hook,\"i_1\"'])."
+ },
+ {
+  "page": 337,
+  "where": "cartesian square, vertex Z",
+  "scan": "'Z' with no comma after it",
+  "tex": "Z ,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "& Z ,\n\\end{tikzcd}",
+   "new": "& Z\n\\end{tikzcd}"
+  },
+  "note": "The TeX adds punctuation to the diagram."
+ },
+ {
+  "page": 337,
+  "where": "'L'inclusion Y ⊂ X permet d'identifier Y × P^1 = W à un sous-schéma fermé'",
+  "scan": "'Y×P^1 = W'",
+  "tex": "$Y\\times\\mathbb P^1$",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "d'identifier $Y\\times\\mathbb P^1$ à",
+   "new": "d'identifier $Y\\times\\mathbb P^1=W$ à"
+  },
+  "note": "The TeX drops '= W'."
+ },
+ {
+  "page": 337,
+  "where": "'On note W' le \"transformé pur de Y × P^1 par f_1\" , i.e.'",
+  "scan": "straight typewriter double quotes",
+  "tex": "«transformé pur de $Y\\times\\mathbb P^1$ par $f_1$»",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "«transformé pur de $Y\\times\\mathbb P^1$ par $f_1$»",
+   "new": "``transformé pur de $Y\\times\\mathbb P^1$ par $f_1$''"
+  },
+  "note": "Guillemets for the print's straight quotes."
+ },
+ {
+  "page": 337,
+  "where": "last line of p. 337, 'sont fixées par le diagramme canonique'",
+  "scan": "the sentence ends with 'canonique' (no '(D_1).'); the label (D_1) stands only at the left of the diagram, at the top of p. 338",
+  "tex": "le diagramme canonique $(D_1)$.",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "le diagramme canonique $(D_1)$.",
+   "new": "le diagramme canonique"
+  },
+  "note": "The TeX adds the label and a full stop."
+ },
+ {
+  "page": 337,
+  "where": "diagram (D_1) (printed at the top of p. 338), arrow j_1 : N̂ → Z'",
+  "scan": "hooked arrow",
+  "tex": "\\arrow[rr,\"j_1\"] (plain)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\widehat N \\arrow[rr,\"j_1\"]",
+   "new": "\\widehat N \\arrow[rr,hook,\"j_1\"]"
+  },
+  "note": "Filed under p. 337, where the TeX of (D_1) stands until the folio-338 marker is moved."
+ },
+ {
+  "page": 337,
+  "where": "diagram (D_1) (printed on p. 338), arrows s : Y → N̂ and δ : Y → W'",
+  "scan": "both hooked (the hook at Y)",
+  "tex": "\\arrow[ur,\"s\"], \\arrow[rr,\"\\delta\"'] (plain)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "Y \\arrow[ur,\"s\"] \\arrow[rr,\"\\delta\"']",
+   "new": "Y \\arrow[ur,hook,\"s\"] \\arrow[rr,hook,\"\\delta\"']"
+  },
+  "note": "Printed on p. 338 (see the j_1 entry)."
+ },
+ {
+  "page": 337,
+  "where": "diagram (D_1) (printed on p. 338), arrow β : W' → Z'",
+  "scan": "hooked arrow",
+  "tex": "\\arrow[ur,\"\\beta\"'] (plain)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "W' \\arrow[ur,\"\\beta\"']",
+   "new": "W' \\arrow[ur,hook,\"\\beta\"']"
+  },
+  "note": "Printed on p. 338."
+ },
+ {
+  "page": 337,
+  "where": "diagram (D_1) (printed on p. 338), arrows γ : Y → Y × P^1 and α : Y × P^1 → X × P^1",
+  "scan": "both hooked",
+  "tex": "\\arrow[rr,\"\\gamma\"'], \\arrow[ur,\"\\alpha\"'] (plain)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "Y \\arrow[rr,\"\\gamma\"'] & & Y\\times\\mathbb P^1 \\arrow[ur,\"\\alpha\"']",
+   "new": "Y \\arrow[rr,hook,\"\\gamma\"'] & & Y\\times\\mathbb P^1 \\arrow[ur,hook,\"\\alpha\"']"
+  },
+  "note": "Printed on p. 338. g_1, id, f_1 and f_2 are plain in the print, as in the TeX."
+ },
+ {
+  "page": 337,
+  "where": "diagram (D_1) (printed on p. 338), arrow f_2 : W' → Y × P^1",
+  "scan": "the isomorphism sign ≀ at the left of the arrow, f_2 at the right",
+  "tex": "\\arrow[ddd,\"f_2\"'] (no ≀; f_2 at the left)",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[ddd,\"f_2\"']",
+   "new": "\\arrow[ddd,\"\\wr\"',\"f_2\"]"
+  },
+  "note": "Written like the file's \\arrow[d,\"f'\"',\"\\wr\"]. Printed on p. 338."
+ },
+ {
+  "page": 337,
+  "where": "diagram (D_1) (printed on p. 338), vertex X × P^1",
+  "scan": "'X × P^1' alone (no '= Z'; it is diagram (D_2) that has 'X × P^1 = Z')",
+  "tex": "X\\times\\mathbb P^1=Z",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "X\\times\\mathbb P^1=Z",
+   "new": "X\\times\\mathbb P^1"
+  },
+  "note": "Printed on p. 338."
+ },
+ {
+  "page": 337,
+  "where": "'De même, notant X' ...' after diagram (D_1) (printed on p. 338)",
+  "scan": "'De même' at the left margin: the sentence continues the paragraph (the typescript indents new paragraphs, e.g. 'L'inclusion', 'Plongeons')",
+  "tex": "a blank line before 'De même' (new paragraph)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\]\n\nDe même,",
+   "new": "\\]\nDe même,"
+  },
+  "note": "Printed on p. 338."
+ },
+ {
+  "page": 337,
+  "where": "'De même, notant X' le ous-schéma fermé de Z'' (printed on p. 338)",
+  "scan": "'ous-schéma' (no s)",
+  "tex": "sous-schéma (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "le sous-schéma fermé de $Z'$",
+   "new": "le ous-schéma fermé de $Z'$"
+  },
+  "corrected": "le sous-schéma fermé de $Z'$",
+  "note": "Printed on p. 338; the TeX silently corrects."
+ },
+ {
+  "page": 337,
+  "where": "statement labels of pp. 337-340 (convention, reported once)",
+  "scan": "'THEOREME 9.2 (MUMFORD).-' (p. 337), 'Lemme 9.3.-' (p. 339, typed in small letters), 'LEMME 9.4.-' (p. 340): not underlined, ending '.-'",
+  "tex": "\\begin{statement}{Théorème 9.2 (Mumford)}, {Lemme 9.3}, {Lemme 9.4}: bold mixed case, the environment adds a full stop, no dash",
+  "kind": "word",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention for the exposé's labels, not itemized. If the closing pass sets the print's capitals, Lemme 9.3 on p. 339 stays in small letters ('Lemme 9.3.-')."
+ },
+ {
+  "page": 337,
+  "where": "the projective line and bundles, pp. 337-338 (convention, reported once)",
+  "scan": "a plain typed P: 'Z = X ×_k P^1_k', 'N̂ = P_Y(N ⊕ O_Y)' (p. 337), 'P(N) = X' ∩ N̂' (p. 338)",
+  "tex": "\\mathbb P everywhere: X\\times_k\\mathbb P^1_k, \\mathbb P_Y(N\\oplus\\mathcal O_Y), \\mathbb P(N), Y\\times\\mathbb P^1, X\\times\\mathbb P^1=Z",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention, not itemized: the plain P of the print written \\mathbb P (as P^r, E^r on pp. 288-289)."
+ },
+ {
+  "page": 338,
+  "where": "top of the page: diagram (D_1)",
+  "scan": "p. 338 begins with the diagram (D_1); p. 337 ends with '... sont fixées par le diagramme canonique' (the rest of p. 337 is blank)",
+  "tex": "page_337.tex goes on with the (D_1) diagram and 'De même, notant $X'$ ... il est'; the folio-338 marker stands before 'clair que'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 338 really begins at the '\\[' that opens the (D_1) diagram (the line after 'le diagramme canonique $(D_1)$.'). Exact fix: python -I move_marker.py 5 338 '\\[' --before (simulated in memory on both layers: the marker moves back 536 characters to its own line between '... canonique $(D_1)$.' and '\\['). The anchor is the last '\\[' above the marker, so run the command once only. The (D_1) and 'De même' findings are filed under p. 337."
+ },
+ {
+  "page": 338,
+  "where": "'sont fixées par le diagramme canonique' before (D_2)",
+  "scan": "the sentence ends with 'canonique' (no '(D_2).'); the label (D_2) stands only at the left of the diagram",
+  "tex": "le diagramme canonique $(D_2)$.",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "le diagramme canonique $(D_2)$.",
+   "new": "le diagramme canonique"
+  },
+  "note": "The TeX adds the label and a full stop."
+ },
+ {
+  "page": 338,
+  "where": "diagram (D_2), arrow j_1 : N̂ → Z'",
+  "scan": "hooked arrow",
+  "tex": "\\arrow[rr,\"j_1\"] (plain)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\widehat N \\arrow[rr,\"j_1\"]",
+   "new": "\\widehat N \\arrow[rr,hook,\"j_1\"]"
+  },
+  "note": ""
+ },
+ {
+  "page": 338,
+  "where": "diagram (D_2), arrows k : H → N̂ and j : H → X'",
+  "scan": "both hooked (the hook at H)",
+  "tex": "\\arrow[ur,\"k\"], \\arrow[rr,\"j\"'] (plain)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "H \\arrow[ur,\"k\"] \\arrow[rr,\"j\"']",
+   "new": "H \\arrow[ur,hook,\"k\"] \\arrow[rr,hook,\"j\"']"
+  },
+  "note": ""
+ },
+ {
+  "page": 338,
+  "where": "diagram (D_2), arrow v : X' → Z'",
+  "scan": "hooked arrow",
+  "tex": "\\arrow[ur,\"v\"'] (plain)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "X' \\arrow[ur,\"v\"']",
+   "new": "X' \\arrow[ur,hook,\"v\"']"
+  },
+  "note": ""
+ },
+ {
+  "page": 338,
+  "where": "diagram (D_2), arrow i : Y → X",
+  "scan": "hooked arrow",
+  "tex": "\\arrow[rr,\"i\"'] (plain)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "Y \\arrow[rr,\"i\"']",
+   "new": "Y \\arrow[rr,hook,\"i\"']"
+  },
+  "note": "u : X → X × P^1 = Z, g, g_1, f and f_1 are plain in the print, as in the TeX."
+ },
+ {
+  "page": 338,
+  "where": "'Nous allons maintenant donner ...' after diagram (D_2)",
+  "scan": "'Nous allons' at the left margin: no new paragraph (the typescript indents new paragraphs)",
+  "tex": "a blank line before 'Nous allons' (new paragraph)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\]\n\nNous allons",
+   "new": "\\]\nNous allons"
+  },
+  "note": ""
+ },
+ {
+  "page": 338,
+  "where": "'On note le O_N̂ - Module localement libre défini par la suite exacte canonique'",
+  "scan": "'On note le O_N̂-Module': the name E of the Module is missing (it first appears in (9.3.0))",
+  "tex": "On note le $\\mathcal O_{\\widehat N}$-Module (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "On note $E$ le $\\mathcal O_{\\widehat N}$-Module",
+  "note": "The TeX keeps the printed reading."
+ },
+ {
+  "page": 339,
+  "where": "top of the page: 'et on pose' and (9.3.1)",
+  "scan": "p. 339 begins with 'et on pose' and the display (9.3.1) ξ̄ = c_1(O_N̂(1)).; p. 338 ends with (9.3.0)",
+  "tex": "'et on pose' and the display (9.3.1) end page_338.tex",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 339 really begins at 'et on pose' (the line after the display (9.3.0)). Exact fix: python -I move_marker.py 5 339 'et on pose' --before (simulated in memory on both layers: the marker moves back 71 characters to its own line between '\\]' (end of (9.3.0)) and 'et on pose'). Text not moved."
+ },
+ {
+  "page": 339,
+  "where": "Lemme 9.3, statement",
+  "scan": "'Avec les notations précédentes, on a les relations' underlined (the full stop not)",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Avec les notations précédentes, on a les relations",
+   "new": "\\emph{Avec les notations précédentes, on a les relations}"
+  },
+  "note": ""
+ },
+ {
+  "page": 339,
+  "where": "Lemme 9.3, end of the sentence",
+  "scan": "'on a les relations.': a full stop",
+  "tex": "relations:",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": ":\n\\[\nj_1^*(\\beta",
+   "new": ".\n\\[\nj_1^*(\\beta"
+  },
+  "note": ""
+ },
+ {
+  "page": 339,
+  "where": "display (9.3.2)",
+  "scan": "'j_1*(β_*(1)) = c_d(Ě) , dans C•(N̂) .': a comma before 'dans', 'dans' underlined, a full stop at the end",
+  "tex": "=c_d(\\check E)\\quad\\text{dans }C^*(\\widehat N), (no comma before dans, no underline, a comma at the end)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=c_d(\\check E)\\quad\\text{dans }C^*(\\widehat N),\n\\tag{9.3.2}",
+   "new": "=c_d(\\check E),\\quad\\text{\\emph{dans} }C^*(\\widehat N).\n\\tag{9.3.2}"
+  },
+  "note": "One edit: both punctuation marks and the underline."
+ },
+ {
+  "page": 339,
+  "where": "display (9.3.3)",
+  "scan": "'j_1*(v_*(1)) = ξ̄ , dans C•(N̂) .': a comma before 'dans', 'dans' underlined, a full stop at the end",
+  "tex": "=\\bar\\xi\\quad\\text{dans }C^*(\\widehat N), (no comma before dans, no underline, a comma at the end)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\bar\\xi\\quad\\text{dans }C^*(\\widehat N),\n\\tag{9.3.3}",
+   "new": "=\\bar\\xi,\\quad\\text{\\emph{dans} }C^*(\\widehat N).\n\\tag{9.3.3}"
+  },
+  "note": "One edit: both punctuation marks and the underline."
+ },
+ {
+  "page": 339,
+  "where": "display (9.3.4)",
+  "scan": "'... + v_*(1), dans C•(Z').': a comma before 'dans', 'dans' underlined",
+  "tex": "+v_*(1)\\quad\\text{dans }C^*(Z').",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "+v_*(1)\\quad\\text{dans }C^*(Z').",
+   "new": "+v_*(1),\\quad\\text{\\emph{dans} }C^*(Z')."
+  },
+  "note": "One edit: the comma and the underline."
+ },
+ {
+  "page": 339,
+  "where": "proof, the pair of equalities j_1*β_*(1) = s_*(1), j_1*v_*(1) = k_*(1)",
+  "scan": "no comma after s_*(1) (only the full stop after k_*(1))",
+  "tex": "s_*(1),\\\\",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=s_*(1),\\\\",
+   "new": "=s_*(1)\\\\"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 339,
+  "where": "'normalisation des classes de Chern ([CH] 4-18)'",
+  "scan": "'4-18': a hyphen",
+  "tex": "4--18",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "([CH] 4--18)",
+   "new": "([CH] 4-18)"
+  },
+  "note": "En dash for the print's hyphen."
+ },
+ {
+  "page": 339,
+  "where": "display (9.3.7)",
+  "scan": "'0 = j_1*(j_1)_* g*(μ) + ξ̄ .': g* without the index 1 (clear in the scan)",
+  "tex": "g^*(\\mu) (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "g_1^*(\\mu)",
+  "note": "(9.3.6) has g_1*(μ), and (j_1)_* g*(μ) needs a class on N̂, so g_1. The TeX keeps the printed reading."
+ },
+ {
+  "page": 340,
+  "where": "display (9.3.7) bis",
+  "scan": "'0 = μ j_1*(j_1)_*(1) + ξ̄ , avec μ ∈ N .': the word 'avec'",
+  "tex": ",\\qquad \\mu\\in\\mathbb N.",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": ",\\qquad \\mu\\in\\mathbb N.",
+   "new": ",\\quad\\text{avec }\\mu\\in\\mathbb N."
+  },
+  "note": "The TeX drops 'avec'."
+ },
+ {
+  "page": 340,
+  "where": "number of the display (9.3.7) bis",
+  "scan": "'(9.3.7) bis': 'bis' outside the parentheses",
+  "tex": "\\tag{9.3.7 bis} (prints '(9.3.7 bis)')",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tag{9.3.7 bis}",
+   "new": "\\tag*{(9.3.7) bis}"
+  },
+  "note": "As (9.1.2) bis on p. 336."
+ },
+ {
+  "page": 340,
+  "where": "'Portant cette expression dans (9.3.7) bis,'",
+  "scan": "'(9.3.7) bis'",
+  "tex": "(9.3.7 bis)",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "dans (9.3.7 bis),",
+   "new": "dans (9.3.7) bis,"
+  },
+  "note": ""
+ },
+ {
+  "page": 340,
+  "where": "'du lemme suivant (qui serait évident ... pour tout y ∈ C•(N̂)).'",
+  "scan": "the clause is in parentheses: '(qui serait ... y ∈ C•(N̂)).'; no comma after 'suivant'",
+  "tex": "suivant, qui serait ... pour tout $y\\in C^*(\\widehat N)$.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "suivant, qui serait évident si on savait, comme c'est le cas en cohomologie, que\n\\[\nj_1^*(j_1)_*(y)=-y\\bar\\xi\n\\]\npour tout $y\\in C^*(\\widehat N)$.",
+   "new": "suivant (qui serait évident si on savait, comme c'est le cas en cohomologie, que\n\\[\nj_1^*(j_1)_*(y)=-y\\bar\\xi\n\\]\npour tout $y\\in C^*(\\widehat N)$)."
+  },
+  "note": "One edit for both parentheses. The print runs the formula into the text (layout, not reported)."
+ },
+ {
+  "page": 340,
+  "where": "Lemme 9.4, 'Pour tout'",
+  "scan": "'Pour tout' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour tout $y",
+   "new": "\\emph{Pour tout} $y"
+  },
+  "note": ""
+ },
+ {
+  "page": 340,
+  "where": "Lemme 9.4, 'on a :'",
+  "scan": "', on a :': a colon; 'on a' underlined, the colon not",
+  "tex": "$, on a (no colon, no underline)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\widehat N)$, on a\n\\[",
+   "new": "(\\widehat N)$, \\emph{on a} :\n\\["
+  },
+  "note": "One edit: the colon and the underline."
+ },
+ {
+  "page": 340,
+  "where": "display (9.4.1)",
+  "scan": "'[j_1* v_*(1)]^p': square brackets",
+  "tex": "\\bigl(j_1^*v_*(1)\\bigr)^p",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigl(j_1^*v_*(1)\\bigr)^p",
+   "new": "[j_1^*v_*(1)]^p"
+  },
+  "note": ""
+ },
+ {
+  "page": 340,
+  "where": "display c_d(Ě) j_1*(j_1)_*(y) = c_d(E) j_1*(j_1)_* g_1*(a_o) ;",
+  "scan": "right-hand side 'c_d(E)': no check over E (the check over the E on the left is clear; no trace of one on the right)",
+  "tex": "c_d(E) (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "c_d(\\check E)",
+  "note": "Lemme 9.4 and (9.1.6) concern c_d(Ě). The TeX keeps the printed reading."
+ }
+]

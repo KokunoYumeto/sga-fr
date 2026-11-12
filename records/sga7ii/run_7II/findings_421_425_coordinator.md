@@ -1,0 +1,3 @@
+421: 6/5; 422: 7/2; 423: 3/3; 424: 7/3; 425: 7/1 (normal/misprint)
+Apply together: p.422 (4.5.18) the two brace edits (old 'L^A(b)=\{\,&\text{séries' and old '$j\in A$}\,\}.').
+Convention (not itemized): the TeX underlines whole lemma headers and statements, numbers, formulas and references included; the print underlines only words. Examples: p.421 \underline{Lemme 4.5.8 (ou lemme de la trace (DWORK)).} (print: 'Lemme', '(ou lemme de la trace'); p.421 \underline{Soient $b\in\mathbb Q$, ... Alors le composé} (print: 'Soient', 'et', 'Alors le composé'); p.425 \underline{Lemme 4.6.6.} and \underline{$\Delta_B(t)\in1+t\mathcal O[[t]]$, et si un entier $j$ vérifie} (print: 'Lemme', 'et si un entier', 'vérifie').

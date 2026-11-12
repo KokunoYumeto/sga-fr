@@ -1,0 +1,207 @@
+{
+  "findings": [
+    {
+      "page": 171,
+      "where": "Cardinal notation throughout pp. 171–175; representative occurrence in the opening paragraph",
+      "scan": "$\\card J(S)\\leq \\pi$",
+      "tex": "$\\card J(S)\\leq \\Pi$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\card J(S)\\leq \\Pi",
+        "new": "\\card J(S)\\leq \\pi"
+      },
+      "note": "The print uses lowercase pi, whereas the TeX systematically uses uppercase Pi. Reported once as a convention; the coordinator gives three examples and the required global action."
+    },
+    {
+      "page": 171,
+      "where": "End of the opening paragraph, before « Cela démontre »",
+      "scan": "$A$ est grand devant $\\pi'_{\\circ}$).",
+      "tex": "$A$ est grand devant $\\Pi'_{\\circ}$,",
+      "kind": "punctuation",
+      "confidence": "high",
+      "fix": {
+        "old": "$,\n\nCela démontre",
+        "new": "$).\n\nCela démontre"
+      },
+      "note": "The closing parenthesis and full stop are replaced by a comma in the TeX, leaving the parenthetical clause open."
+    },
+    {
+      "page": 171,
+      "where": "Heading of the lemma following « Signalons aussi une variante »",
+      "scan": "Lemme 9.21.16.",
+      "tex": "Lemme 9.21.17",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Lemme 9.21.17",
+      "note": "The print repeats the preceding lemma's number. The subsequent references identify this lemma as 9.21.17; the TeX silently corrects the heading."
+    },
+    {
+      "page": 171,
+      "where": "Lemma 9.21.17, introductory sentence",
+      "scan": "sections cartésiennes de E sur F",
+      "tex": "sections cartésiennes de $E$ sur $F$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "sections cartésiennes de $E$ sur $B$",
+      "note": "The base is B, not the category F of sections. The TeX keeps the printed F."
+    },
+    {
+      "page": 171,
+      "where": "Lemma 9.21.17 (i), « X(α) soit un objet d-accessible de E »",
+      "scan": "de E",
+      "tex": "de $E$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "de $E_{\\alpha}$",
+      "note": "The accessibility condition concerns X(α) in its fibre Eα. The print omits the fibre subscript, and the TeX keeps that omission."
+    },
+    {
+      "page": 172,
+      "where": "Lemma 9.21.18, condition on the inverse-image functors",
+      "scan": "foncteurs images inverse",
+      "tex": "foncteurs images inverse",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "foncteurs images inverses",
+      "note": "Agreement error in the print, kept by the TeX."
+    },
+    {
+      "page": 172,
+      "where": "End of the supplied TeX cut, after condition d)",
+      "scan": "Page 172 ends with « deux diagrammes suivants sont commutatifs : »; both diagrams are printed at the top of page 173.",
+      "tex": "Both xymatrix diagrams are included at the end of the page-172 cut.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The cut places both diagrams on the wrong page, without an allowance in its first comment line. Page 173 begins with these diagrams, before « Pour le prouver ». Diagram findings below are filed under the page-172 TeX cut so their source locations remain exact."
+    },
+    {
+      "page": 172,
+      "where": "9.21.19 d), second diagram, middle-right vertex; printed at the top of p. 173",
+      "scan": "$f^\\ast X(\\alpha)_{\\varphi(i)}$",
+      "tex": "f^{\\ast}X(\\alpha)_{\\varphi(i)}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f^{\\ast}X(\\beta)_{\\varphi(i)}",
+      "note": "The argument of f* must belong to Eβ. The print has α instead of β, and the TeX keeps it."
+    },
+    {
+      "page": 172,
+      "where": "9.21.19 d), second diagram, lower-left vertex; printed at the top of p. 173",
+      "scan": "$X(\\alpha)_i$",
+      "tex": "x(\\alpha)_i",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "x(\\alpha)_i",
+        "new": "X(\\alpha)_i"
+      },
+      "note": "The print has capital X. The edit is recorded under page 172 because that supplied TeX cut contains the diagram."
+    },
+    {
+      "page": 172,
+      "where": "9.21.19 d), second diagram, lower diagonal arrow; printed at the top of p. 173",
+      "scan": "$\\lambda(i,j)$",
+      "tex": "\\lambda(i,j)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\lambda(i,f)",
+      "note": "The arrow is the morphism indexed by the base arrow f, not by j. The TeX keeps the printed j."
+    },
+    {
+      "page": 173,
+      "where": "First sentence of the proof of Lemma 9.21.19",
+      "scan": "on procède comme dans 9.21.3",
+      "tex": "on procède comme dans 9.21.3",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "on procède comme dans 9.21.13",
+      "note": "The construction being supplemented is that of Lemma 9.21.13. The print drops the 1 in the reference, and the TeX keeps the misprint."
+    },
+    {
+      "page": 173,
+      "where": "9.21.20 d), opening words",
+      "scan": "Pour tout flèche",
+      "tex": "Pour tout flèche",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Pour toute flèche",
+      "note": "Agreement error in the print, kept by the TeX."
+    },
+    {
+      "page": 174,
+      "where": "Displayed morphism of ind-objects, target",
+      "scan": "$(f^\\ast)(X(\\beta)_i))_{i\\in J}$",
+      "tex": "(f^\\ast)(X(\\beta)_i)_{i\\in J}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(f^\\ast)(X(\\beta)_i)_{i\\in J}",
+      "note": "The print has an unmatched closing parenthesis after the indexed term. The TeX silently removes it."
+    },
+    {
+      "page": 174,
+      "where": "« Cela prouve notre assertion que (*) est un … »",
+      "scan": "un isomorphismes",
+      "tex": "un isomorphisme",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un isomorphisme",
+      "note": "The print has a superfluous final s. The TeX silently corrects it."
+    },
+    {
+      "page": 174,
+      "where": "Conclusion immediately before 9.21.21",
+      "scan": "$X\\in\\ob F'$",
+      "tex": "$X\\in \\ob F'$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "X_J\\in \\ob F'",
+      "note": "The assertion just proved concerns the section X_J. Its subscript is missing in the print, and the TeX keeps the omission."
+    },
+    {
+      "page": 175,
+      "where": "First line of the supplied TeX cut",
+      "scan": "Page 175 begins with « Théorème 9.22 »; « comme en 9.21.15. » ends page 174.",
+      "tex": "\\hyperref[I.sec9.21.15]{9.21.15}.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The initial reference belongs to the end of page 174, not page 175. This is not covered by the cut's comment, which only allows uncertainty at the bottom of page 175. No text should be moved as a content correction."
+    },
+    {
+      "page": 175,
+      "where": "Theorem 9.22, hypothesis introducing the fibre Eα",
+      "scan": "$\\alpha\\in\\ob E$",
+      "tex": "$\\alpha\\in \\ob E$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\alpha\\in \\ob B",
+      "note": "Fibres of p:E→B are indexed by objects of B. The print has E instead of B, and the TeX keeps it."
+    },
+    {
+      "page": 175,
+      "where": "Choice of a cardinal filtration, before (9.22.1)",
+      "scan": "$(\\mathrm{Filt}^{\\pi}(E))_{\\pi\\geq\\pi_{\\alpha}}$",
+      "tex": "$(\\Filt^{\\Pi}(E))_{\\Pi\\geq \\Pi_{\\alpha}}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\Filt^{\\pi}(E_{\\alpha}))_{\\pi\\geq \\pi_{\\alpha}}",
+      "note": "This is a filtration of the fibre Eα, as the following words state. The print omits α from its argument E, and the TeX keeps that omission."
+    }
+  ],
+  "coordinator": "171: 2/3; 172: 2/3; 173: 0/2; 174: 0/3; 175: 1/2 (normal/misprint; by supplied TeX cut).\nMarker: both diagrams at the end of the p.172 cut belong at the beginning of p.173, before « Pour le prouver »; their findings are filed under the p.172 cut.\nMarker: the initial \\hyperref[I.sec9.21.15]{9.21.15}. in the p.175 cut closes p.174; p.175 begins with Théorème 9.22.\nConvention: replace \\Pi by \\pi throughout these cuts; three examples are p.171 \\card J(S)\\leq\\pi, p.171 d\\geq\\pi'_{\\circ}, and p.175 \\Filt^{\\pi}(E). The finding supplies a representative exact edit."
+}

@@ -1,0 +1,189 @@
+{
+  "findings": [
+    {
+      "page": 446,
+      "where": "Fin de 9.1.11 g), compacité locale",
+      "scan": "$X$ est localement compact",
+      "tex": "\\sisi{$X$}{$X_{cons}$} est localement compact",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$X_{\\cons}$ est localement compact",
+      "note": "Il s'agit de l'espace muni de la topologie constructible. Le premier argument de \\sisi reproduit exactement la coquille; l'édition la corrige."
+    },
+    {
+      "page": 446,
+      "where": "Fin de 9.1.11 g), topos noethérien",
+      "scan": "le topos $\\Top(E)$ est noethérien",
+      "tex": "\\sisi{$\\Top(E)$}{$\\Top(X)$} est noethérien",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "le topos $\\Top(X)$ est noethérien",
+      "note": "Le topos considéré est celui de l'espace X. Le TeX reproduit la coquille dans le premier argument de \\sisi et la corrige dans le texte édité."
+    },
+    {
+      "page": 447,
+      "where": "9.1.12 c), première mention du foncteur entre catégories de préfaisceaux",
+      "scan": "$f:\\widehat{C}'\\rightarrow\\widehat{C}$",
+      "tex": "$f_{\\ast}:\\widehat{C}'\\rightarrow \\widehat{C}$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "$f_{\\ast}:\\widehat{C}'\\rightarrow \\widehat{C}$",
+      "note": "Le premier f est imprimé sans astérisque. Il s'agit du foncteur image directe, noté f_∗ dans la phrase suivante. Le TeX rétablit silencieusement l'indice omis."
+    },
+    {
+      "page": 447,
+      "where": "Coupure 447–448, fin de 9.1.12 e)",
+      "scan": "447 se termine par «(Utiliser c) et»; 448 commence par «9.1.2. c) ).»",
+      "tex": "sur la catégorie $C$. (Utiliser $c$) et \\hyperref[IV.rem9.1.2]{9.1.2}",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le renvoi 9.1.2 appartient au début de 448, mais se trouve dans la coupe TeX de 447, sans chevauchement annoncé. Placer la coupure avant ce renvoi; ne pas ajouter de texte."
+    },
+    {
+      "page": 448,
+      "where": "9.1.13 a), «sous-topos E''_1 de tels que»",
+      "scan": "sous-topos $E''_1$ de tels que",
+      "tex": "sous-topos $E''_1$ de tels que",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "sous-topos $E''_1$ de $E$ tels que",
+      "note": "Le nom du topos manque après «de». Le TeX conserve cette omission imprimée."
+    },
+    {
+      "page": 448,
+      "where": "9.1.13 b), conclusion de (i bis)",
+      "scan": "$E''$ est un complémentaire de $E$",
+      "tex": "$E''$ est un complémentaire de $E$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$E''$ est un complémentaire de $E'$",
+      "note": "Il manque la prime finale : la condition concerne un complémentaire de E', non de E. Le TeX conserve la coquille."
+    },
+    {
+      "page": 449,
+      "where": "9.1.13 c), effet de la complémentarité",
+      "scan": "transforme Inf et Sup, Sup en Inf",
+      "tex": "transforme Inf en $\\Sup$, $\\Sup$ en Inf",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "transforme Inf en $\\Sup$, $\\Sup$ en Inf",
+      "note": "Le premier «et» est une coquille pour «en». Le TeX la corrige silencieusement."
+    },
+    {
+      "page": 449,
+      "where": "9.1.13 d), début",
+      "scan": "Énoncer les duals des observations",
+      "tex": "Énoncer les duales des observations",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "les duales des observations",
+        "new": "les duals des observations"
+      },
+      "note": "Le scan porte «duals», non «duales»."
+    },
+    {
+      "page": 449,
+      "where": "9.1.14, paragraphe suivant b)",
+      "scan": "pour $E$ et tous ses sous-topos",
+      "tex": "pour $E$ et tout\nses sous-topos",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "et tout\nses sous-topos",
+        "new": "et tous\nses sous-topos"
+      },
+      "note": "Le scan porte bien le pluriel «tous»."
+    },
+    {
+      "page": 449,
+      "where": "9.1.14, cas où E est de la forme Top(X)",
+      "scan": "$X$ est espace localement noethérien",
+      "tex": "$X$ est un espace localement noethérien",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "$X$ est un espace",
+        "new": "$X$ est espace"
+      },
+      "note": "L'article «un» n'est pas imprimé."
+    },
+    {
+      "page": 449,
+      "where": "9.1.14 a'), après (9.1.14.1)",
+      "scan": "ce qui signifie aussi $E=E'\\vee E''$",
+      "tex": "ce qui signifie aussi $E=E'\\vee E''$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "ce qui signifie aussi $F=E'\\vee E''$",
+      "note": "Le topos cible du morphisme est F. Le E imprimé doit être F; le TeX conserve cette coquille."
+    },
+    {
+      "page": 449,
+      "where": "Coupure 449–450, dernière ligne",
+      "scan": "449 se termine par «déduit par 2-changement de base»; 450 commence par $F_1\\hookrightarrow F$.",
+      "tex": "déduit par 2-changement de base $F_1\\hookrightarrow",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "L'intégralité de la formule F_1 ↪ F est imprimée au début de 450. La coupe TeX place son début en 449, sans chevauchement annoncé. La coupure réelle est avant $F_1\\hookrightarrow."
+    },
+    {
+      "page": 450,
+      "where": "Paragraphe suivant 9.1.14 c), référence au résultat de Deligne",
+      "scan": "DELIGNE ( )",
+      "tex": "\\textsc{Deligne} (voir [16] proposition 4.47)",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "(voir [16] proposition 4.47)",
+        "new": "( )"
+      },
+      "note": "Les parenthèses imprimées sont vides; le renvoi bibliographique est un ajout du TeX."
+    },
+    {
+      "page": 450,
+      "where": "9.1.14 d), opérations distributives",
+      "scan": "le Sup de deux éléments est-il distributif par rapport aux Inf quelconques",
+      "tex": "$Inf$ de deux éléments est-il distributif par rapport aux $\\Sup$\n\\emph{quelconques}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$Inf$ de deux éléments est-il distributif par rapport aux $\\Sup$",
+        "new": "$\\Sup$ de deux éléments est-il distributif par rapport aux Inf"
+      },
+      "note": "Le TeX intervertit les deux opérations. Le scan demande la distributivité du Sup binaire par rapport aux Inf quelconques."
+    },
+    {
+      "page": 450,
+      "where": "Après 9.1.14 d), topologie canonique de l'ensemble ordonné opposé",
+      "scan": "l'ensemble ordonné opposé […] considéré comme une catégorie, est munie de sa topologie canonique",
+      "tex": "catégorie, est\nmunie de sa topologie canonique",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "est muni de sa topologie canonique",
+      "note": "Le sujet est «l'ensemble ordonné opposé», masculin. Le TeX conserve l'accord fautif «munie» du print."
+    },
+    {
+      "page": 450,
+      "where": "9.1.14 e), topos ambiant de la famille",
+      "scan": "Soient $F$ un topos noethérien, […] une famille de sous-topos de $E$",
+      "tex": "Soient $F$ un topos noethérien, $(E_i)_{i\\in I}$ une famille\nde sous-topos de $E$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "de sous-topos de $F$ dont l'intersection soit $\\Top(∅)$",
+      "note": "La famille doit être formée de sous-topos du topos noethérien F introduit dans l'énoncé. Le TeX conserve le E fautif du print."
+    }
+  ],
+  "coordinator": "446: 0/2; 447: 1/1; 448: 0/2; 449: 4/2; 450: 2/2 (normal/misprint; markers included in normal).\n447/448: place the cut before \\hyperref[IV.rem9.1.2]{9.1.2}; that reference opens printed page 448.\n449/450: place the cut before $F_1\\hookrightarrow F$; printed page 449 ends with «base»."
+}

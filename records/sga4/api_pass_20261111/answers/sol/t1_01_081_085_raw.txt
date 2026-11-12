@@ -1,0 +1,125 @@
+{
+  "findings": [
+    {
+      "page": 81,
+      "where": "Paragraph following Corollaire 8.5.2",
+      "scan": "Le détail de la vérification est laissée au lecteur.",
+      "tex": "Le\ndétail de la vérification est laissée au lecteur.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Le détail de la vérification est laissé au lecteur.",
+      "note": "The print incorrectly agrees « laissée » with « vérification » rather than the subject « détail ». The TeX retains the misprint."
+    },
+    {
+      "page": 82,
+      "where": "8.5.4, unnumbered display following (8.5.4.2), first mapping variable",
+      "scan": "j\\longmapsto (i\\longmapsto \\Phi(j,i))",
+      "tex": "J\\longmapsto (i\\longmapsto \\Phi (j,i))",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "J\\longmapsto (i\\longmapsto \\Phi (j,i))",
+        "new": "j\\longmapsto (i\\longmapsto \\Phi (j,i))"
+      },
+      "note": "The print has lowercase j, an object of J."
+    },
+    {
+      "page": 82,
+      "where": "8.5.4, same unnumbered display, arrow after the domain J",
+      "scan": ":J\\longrightarrow \\Hhom(I,C)",
+      "tex": ":J\\longmapsto\n\\Hhom(I,C)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": ":J\\longmapsto\n\\Hhom(I,C)",
+        "new": ":J\\longrightarrow\n\\Hhom(I,C)"
+      },
+      "note": "The print has an ordinary arrow between the categories, not a mapsto arrow."
+    },
+    {
+      "page": 82,
+      "where": "Sentence introducing the canonical arrow (8.2.6.1)",
+      "scan": "en composant avec la flèche canonique",
+      "tex": "en composant avec flèche canonique",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "en composant avec flèche canonique",
+        "new": "en composant avec la flèche canonique"
+      },
+      "note": "The article « la » is missing from the TeX."
+    },
+    {
+      "page": 82,
+      "where": "Formula (8.5.4.3), first mapping variable",
+      "scan": "j\\longmapsto (i\\longmapsto \\Phi(j,i))",
+      "tex": "J\\longmapsto (i\\longmapsto\n\\Phi(j,i))",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hfill J\\longmapsto",
+        "new": "\\hfill j\\longmapsto"
+      },
+      "note": "The print again has lowercase j."
+    },
+    {
+      "page": 82,
+      "where": "8.5.4, sentence beginning « Nous étudierons plus bas »",
+      "scan": "et nous bornerons ici à partir",
+      "tex": "et nous bornerons ici à\npartir",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "et nous nous bornerons ici à partir",
+      "note": "The reflexive pronoun is missing in the print. The TeX retains the omission."
+    },
+    {
+      "page": 82,
+      "where": "Sentence immediately preceding (8.5.4.4), verb",
+      "scan": "La formule (8.5.3.2), et la formule d'associativité des limites inductives (2.5.0) donne",
+      "tex": "donne alors immédiatement",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "donnent alors immédiatement",
+      "note": "The coordinated subject consists of two formulas and requires the plural verb. The TeX retains the printed singular."
+    },
+    {
+      "page": 82,
+      "where": "Sentence immediately preceding (8.5.4.4), article before « calcul tautologique »",
+      "scan": "donne alors immédiatement le",
+      "tex": "donne alors immédiatement la",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "donne alors immédiatement la",
+        "new": "donne alors immédiatement le"
+      },
+      "note": "The print reads « le », not « la »."
+    },
+    {
+      "page": 83,
+      "where": "Exercice 8.5.5 a), condition (i)",
+      "scan": "Dans C les petites limites inductives sont représentables",
+      "tex": "Dans $C$ les petites limites inductives sont représentables,",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Dans $C$ les petites limites inductives filtrantes sont représentables,",
+      "note": "The print omits « filtrantes », and the TeX retains the omission. This restriction is necessary for equivalence with (iii) and (iv): a discrete category with two objects satisfies (iii), but does not have all small colimits."
+    },
+    {
+      "page": 83,
+      "where": "Exercice 8.5.5 a), condition (ii)",
+      "scan": "Dans C les petites limites inductives sont représentables",
+      "tex": "Dans $C$ les petites limites inductives sont\nreprésentables,",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Dans $C$ les petites limites inductives filtrantes sont représentables,",
+      "note": "As in (i), the qualifier « filtrantes » is missing from the print. The TeX retains the omission; the stated equivalence requires filtered colimits."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 81: 0/1; 82: 5/2; 83: 0/2; 84: 0/0; 85: 0/0."
+}

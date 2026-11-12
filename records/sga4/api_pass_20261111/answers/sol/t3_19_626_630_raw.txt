@@ -1,0 +1,101 @@
+{
+  "findings": [
+    {
+      "page": 626,
+      "where": "Lemme 6.8, definition of the base ring",
+      "scan": "A_{0}=k[[x_{1},\\ldots,x_{d-1}]]\\{x_{d}\\}",
+      "tex": "A_{0}=k[[x_{1},\\ldots,x_{d-1}]]",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "A^{0}=k[[x_{1},\\ldots,x_{d-1}]]\\{x_{d}\\}",
+      "note": "The defined ring should be A^{0}, as in all its subsequent uses. The TeX keeps the printed subscript."
+    },
+    {
+      "page": 626,
+      "where": "Proof of Lemme 6.8, reference to Abhyankar's lemma",
+      "scan": "de Abyankhar",
+      "tex": "de Abhyankar",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "de Abhyankar",
+      "note": "The surname is misspelled in print; the TeX silently corrects it."
+    },
+    {
+      "page": 627,
+      "where": "“applicable au morphisme”, before the vanishing formula",
+      "scan": "au morphisme f^{0}",
+      "tex": "au morphisme $f^{0}$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "au morphisme $f^{0}_{\\alpha}$",
+      "note": "The induction here is applied to the finite-type approximant f^{0}_{\\alpha}, as in the adjoining formulas. The printed mention drops the subscript; the TeX keeps it."
+    },
+    {
+      "page": 627,
+      "where": "Implication following “Donc R^{q}…≠0 au point v”",
+      "scan": "\\dim\\bar{v}\\leq d-q",
+      "tex": "\\dim\\bar{v}\\geq d-q",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\bar{v}\\geq d-q",
+        "new": "\\bar{v}\\leq d-q"
+      },
+      "note": "The print gives an upper bound, not a lower bound."
+    },
+    {
+      "page": 628,
+      "where": "Displayed Leray spectral sequence",
+      "scan": "E^{pq}_{2}=H^{p}(V^{0},R^{q}f^{0}_{\\ast}(\\ZZ/\\ell))\\Longrightarrow H^{p+q}(U^{0},\\ZZ/\\ell)",
+      "tex": "E^{pq}_{2}=H^{p}(V^{0},R^{q}f^{0}_{\\ast}(\\ZZ/\\ell))\\Longrightarrow\nH^{p+q}(U^{0},\\ZZ/\\ell)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "E^{pq}_{2}=H^{p}(V^{0},R^{q}f^{0}_{\\alpha\\ast}(\\ZZ/\\ell))\\Longrightarrow H^{p+q}(U^{0}_{\\alpha},\\ZZ/\\ell)",
+      "note": "Both subscripts α are missing from the relevant Leray sequence: the preceding vanishing and the following conclusion concern f^{0}_{\\alpha} and U^{0}_{\\alpha}. The TeX keeps the printed formula."
+    },
+    {
+      "page": 629,
+      "where": "Cohomology formula immediately before (7.2)",
+      "scan": "\\pi_{\\ast}",
+      "tex": "pi_{\\ast}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "U,pi_{\\ast}",
+        "new": "U,\\pi_{\\ast}"
+      },
+      "note": "The print has Greek π, not the two Latin letters p and i."
+    },
+    {
+      "page": 629,
+      "where": "Relation sign in the cohomology formula immediately before (7.2)",
+      "scan": "H^{q}(U,\\pi_{\\ast}\\bigdot)=H^{q}(\\bar{U},\\bigdot)",
+      "tex": "H^{q}(U,pi_{\\ast}\\bigdot)\\simeq H^{q}(\\bar{U},\\bigdot)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\bigdot)\\simeq",
+        "new": "\\bigdot)="
+      },
+      "note": "The printed relation is equality, not an isomorphism sign."
+    },
+    {
+      "page": 630,
+      "where": "Paragraph after Lemme 7.3, replacement of (A,k)",
+      "scan": "(\\bar{A}',k')",
+      "tex": "(\\bar{A},k')",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "(\\bar{A},k')",
+        "new": "(\\bar{A}',k')"
+      },
+      "note": "The first occurrence of the normalized ring also has a prime in print. Separately, the middle stroke of the membership sign before rad A later in this paragraph is doubtful in this scan; no discrepancy is inferred from that stroke."
+    }
+  ],
+  "coordinator": "626: 0/2; 627: 1/1; 628: 0/1; 629: 2/0; 630: 1/0 (normal/misprint)."
+}

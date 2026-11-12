@@ -1,0 +1,413 @@
+[
+ {
+  "page": 365,
+  "where": "display at the end of page_365.tex, printed at the top of p. 366 (it stands under the folio-365 marker): D^-(C_A) x D^-(_AC) -> D^-(Ab)",
+  "scan": "p. 366: 'D^-(C_A) x D^-(_AC) ----> D^-(Ab)' with no punctuation; the same display goes on with '(X^.,Y^.) ~~> X^. (L-tensor)_A Y^. .'",
+  "tex": "D^-(\\cC_A)\\times D^-({}_A\\cC)\\longrightarrow D^-(\\Ab),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "D^-(\\Ab),\n\\]",
+   "new": "D^-(\\Ab)\n\\]"
+  },
+  "note": "Comma added at the end of the display. Printed on p. 366, filed under p. 365 because the text stands in page_365.tex until the folio-366 marker is moved (marker finding of p. 366): apply before moving the marker. The rest of that text ('teur exact' and this display) agrees with the print of p. 366."
+ },
+ {
+  "page": 366,
+  "where": "top of the page: 'teur exact' and the display D^-(C_A) x D^-(_AC) -> D^-(Ab)",
+  "scan": "p. 366 begins 'teur exact', then the two-line display 'D^-(C_A) x D^-(_AC) ----> D^-(Ab)' / '(X^.,Y^.) ~~> X^. (L-tensor)_A Y^. .'; p. 365 ends '... d'où un bifonc-'",
+  "tex": "'bifoncteur exact' ends the last text line of page_365.tex (s5.tex line 12483 in the diplomatic layer, 12479 in the corrected one), followed by the display D^-(\\cC_A)\\times D^-({}_A\\cC)\\longrightarrow D^-(\\Ab), ; the folio-366 marker stands after that display, and page_366.tex begins with (X^\\bullet,Y^\\bullet)\\longmapsto ...",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 366 really begins at 'teur' of 'bifoncteur exact' (the word is divided bifonc-/teur at the page break). Exact fix, two steps: python -I move_marker.py 5 366 \"bifoncteur exact\" --before, then python -I marker_split_word.py 5 366 split bifonc teur (simulated in memory on both layers: the lines then read \"... d'où un \" / \"bifonc%\" / marker / \"teur exact\" / \"\\[\" / \"D^-(\\cC_A)...\"). Text not moved. Apply the comma fix of that display (filed under p. 365) before the move."
+ },
+ {
+  "page": 366,
+  "where": "first display: (X^.,Y^.) ~~> X^. (L-tensor)_A Y^.",
+  "scan": "a wavy arrow (~~>), this exposé's maps-to sign",
+  "tex": "(X^\\bullet,Y^\\bullet)\\longmapsto",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(X^\\bullet,Y^\\bullet)\\longmapsto",
+   "new": "(X^\\bullet,Y^\\bullet)\\rightsquigarrow"
+  },
+  "note": "\\longmapsto for the print's wavy arrow (\\rightsquigarrow is amssymb, loaded by the file). All four \\longmapsto of Exposé VIII are wavy arrows in the print (pp. 365, 366, 369 twice)."
+ },
+ {
+  "page": 366,
+  "where": "first display: the letter over the tensor sign",
+  "scan": "a double-struck L above the tensor sign",
+  "tex": "\\overset{\\mathbf L}{\\otimes}_A",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\overset{\\mathbf L}",
+   "new": "\\overset{\\mathbb L}"
+  },
+  "note": "Derived tensor: the print's L is double-struck here, as both on p. 368."
+ },
+ {
+  "page": 366,
+  "where": "'(cf aussi [1], 6.3)'",
+  "scan": "(cf aussi - no full stop after cf (the footnote of the page has 'cf.')",
+  "tex": "(cf. aussi",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(cf. aussi",
+   "new": "(cf aussi"
+  },
+  "note": ""
+ },
+ {
+  "page": 366,
+  "where": "'Dans le cas particulier d'un anneau A commutatif on obtient'",
+  "scan": "no comma after 'commutatif'",
+  "tex": "$A$ commutatif, on obtient",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "commutatif, on obtient",
+   "new": "commutatif on obtient"
+  },
+  "note": ""
+ },
+ {
+  "page": 366,
+  "where": "'on obtient en fait un bi-foncteur exact'",
+  "scan": "bi-foncteur, with a hyphen inside the line (not a line-break hyphen)",
+  "tex": "un bifoncteur exact",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "un bifoncteur exact",
+   "new": "un bi-foncteur exact"
+  },
+  "note": "p. 368 prints 'bifoncteur' without hyphen, as the TeX has it there."
+ },
+ {
+  "page": 366,
+  "where": "Définition: 'est de tor-dimension finie s'il est dans D^-'",
+  "scan": "'de tor-' (end of the line) and 'dimension finie' underlined: the term being defined",
+  "tex": "est de tor-dimension finie s'il (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est de tor-dimension finie s'il",
+   "new": "est \\emph{de tor-dimension finie} s'il"
+  },
+  "note": "\\emph is this exposé's command for the print's underline (its underlined labels \\emph{Démonstration.}, \\emph{Remarques.}, \\emph{Exemples.}); the running text of Exposé VIII has no underline markup."
+ },
+ {
+  "page": 366,
+  "where": "Définition: 'Y ∈ Ob(_AC)'",
+  "scan": "Ob with a capital O (as 'Z^(Ob C)' on p. 354)",
+  "tex": "\\Ob({}_A\\cC); \\Ob prints 'ob': its first definition, \\providecommand{\\Ob}{\\operatorname{ob}} (s5.tex line 101), wins over the later \\providecommand{\\Ob}{\\operatorname{Ob}} (lines 226, 300)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ob({}_A\\cC)",
+   "new": "\\operatorname{Ob}({}_A\\cC)"
+  },
+  "note": "Or one change of the macro for Exposé VIII (see the message)."
+ },
+ {
+  "page": 366,
+  "where": "Définition: 'Tor_n^A(X,Y) = 0 quelque soit Y ∈ Ob(_AC)'",
+  "scan": "quelque soit (one word)",
+  "tex": "quel que soit (silent correction)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "quel que soit",
+   "new": "quelque soit"
+  },
+  "corrected": "quel que soit",
+  "note": "The TeX silently corrects the print's spelling; the fix restores the printed reading in the diplomatic layer."
+ },
+ {
+  "page": 366,
+  "where": "Proposition 8.1 a)",
+  "scan": "a) L^. est parfait.  (full stop)",
+  "tex": "\\text{a) } L^\\bullet\\text{ est parfait;}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "est parfait;}",
+   "new": "est parfait.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 366,
+  "where": "footnote (*) of Proposition 8.1 b)",
+  "scan": "(*) cf. (SGA 6 I 5.8.1) .",
+  "tex": "\\footnote{cf. SGA 6 I 5.8.1.}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\footnote{cf. SGA 6 I 5.8.1.}",
+   "new": "\\footnote{cf. (SGA 6 I 5.8.1).}"
+  },
+  "note": "The parentheses of the reference are left out (the footnote of p. 370, 'cf. (SGA 6 III, IV)', has them)."
+ },
+ {
+  "page": 366,
+  "where": "the categories C, C_A, _AC, D(C) of pp. 366-368 (convention, reported once)",
+  "scan": "a plain typed capital C (not script, not underlined), as throughout the exposé from p. 351 ('Soit C une catégorie abélienne et soit D une sous-catégorie pleine de C'); p. 364 introduces _AC, C_A and _AD the same way",
+  "tex": "\\cC (\\mathcal C), \\cD (\\mathcal D): e.g. p. 366 'D^-(\\cC)\\times D^-(\\cC)\\longrightarrow D^-(\\cC)' and '\\Ob({}_A\\cC)', p. 367 'dans $D(\\cC)$', p. 368 'dans $D(\\cC)$'",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription for Exposé VIII, not itemized: one decision for the exposé (plain C, D in the diplomatic layer). The print's abelian group C of p. 351 is the same typed C; the TeX writes it plain."
+ },
+ {
+  "page": 367,
+  "where": "proof label 'Démonstration du lemme.'",
+  "scan": "typed plain, not underlined (the label 'Lemme' above it is underlined)",
+  "tex": "\\emph{Démonstration du lemme.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Démonstration du lemme.}",
+   "new": "Démonstration du lemme."
+  },
+  "note": "\\emph is the file's command for the print's underline; this label has none. A proof label of another form than 'Preuve :'."
+ },
+ {
+  "page": 367,
+  "where": "'Il nous suffit de démontrer que pour tout groupe divisible G ,'",
+  "scan": "no comma after 'que'",
+  "tex": "démontrer que, pour",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "démontrer que, pour",
+   "new": "démontrer que pour"
+  },
+  "note": ""
+ },
+ {
+  "page": 367,
+  "where": "diagram of the lemma: left vertical, Hom_Z(Hom_A(E,F'),G) to Hom_Z(F',G) (x)_A E",
+  "scan": "a plain vertical line without arrowhead, with a vertical tilde (≀) at its left; the horizontal arrows have heads",
+  "tex": "\\arrow[d,\"\\sim\"'] (an arrow with a head, a horizontal tilde)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[d,\"\\sim\"']",
+   "new": "\\arrow[d,dash,\"\\wr\"']"
+  },
+  "note": "dash as in the logged fixes of pp. 68 and 93 (tikz-cd's line without heads); \\wr as the file's \\arrow[d,\"f'\"',\"\\wr\"] (s5.tex line 11828)."
+ },
+ {
+  "page": 367,
+  "where": "diagram of the lemma: right vertical, Hom_Z(Hom_A(E,F),G) to Hom_Z(F,G) (x)_A E",
+  "scan": "a plain vertical line without arrowhead, with ≀ at its right",
+  "tex": "\\arrow[d,\"\\sim\"]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[d,\"\\sim\"]",
+   "new": "\\arrow[d,dash,\"\\wr\"]"
+  },
+  "note": "As the left vertical."
+ },
+ {
+  "page": 367,
+  "where": "proof label 'Démonstration de la proposition 5.2.'",
+  "scan": "typed plain, not underlined",
+  "tex": "\\emph{Démonstration de la proposition 5.2.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Démonstration de la proposition 5.2.}",
+   "new": "Démonstration de la proposition 5.2."
+  },
+  "note": "The corrected layer reads 8.1 here (next finding): there the old is '\\emph{Démonstration de la proposition 8.1.}' and the new 'Démonstration de la proposition 8.1.'."
+ },
+ {
+  "page": 367,
+  "where": "'Démonstration de la proposition 5.2.'",
+  "scan": "5.2",
+  "tex": "5.2, the printed reading (the corrected layer already has 8.1)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "8.1",
+  "note": "Wrong reference number in the print: the proof (a) => b), b) => a) for 'pseudo-cohérent, à cohomologie bornée, et de tor-dimension finie') is that of Proposition 8.1, which p. 368 closes with 'ce qui prouve 8.1'; the exposé has no Proposition 5.2 (section 5 has only 5.1). The diplomatic layer keeps the printed reading."
+ },
+ {
+  "page": 368,
+  "where": "III): the complex 0 -> Ker d_{n_o+1} -> P_{n_o+1} -> ... -> P_i -> 0 ->",
+  "scan": "the display ends with an arrow after the last 0 and nothing after it (the complex of p. 367 ends '-> 0 -> ...')",
+  "tex": "P_i\\longrightarrow0\\longrightarrow\\cdots (silent correction)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "P_i\\longrightarrow0\\longrightarrow\\cdots",
+   "new": "P_i\\longrightarrow0\\longrightarrow"
+  },
+  "corrected": "P_i\\longrightarrow0\\longrightarrow\\cdots",
+  "note": "The print leaves the last arrow dangling; the TeX supplies the dots as on p. 367. The fix restores the printed reading in the diplomatic layer."
+ },
+ {
+  "page": 368,
+  "where": "'Si A est un anneau commutatif, et si X^. , Y^.'",
+  "scan": "'commutatif' underlined (not the comma)",
+  "tex": "anneau commutatif, et si (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "anneau commutatif, et si",
+   "new": "anneau \\emph{commutatif}, et si"
+  },
+  "note": ""
+ },
+ {
+  "page": 368,
+  "where": "'alors leur produit tensoriel X^. (L-tensor)_A Y^.'",
+  "scan": "a double-struck L above the tensor sign",
+  "tex": "\\overset{\\mathbf L}{\\otimes}_A",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "leur produit tensoriel\n\\[\nX^\\bullet\\overset{\\mathbf L}",
+   "new": "leur produit tensoriel\n\\[\nX^\\bullet\\overset{\\mathbb L}"
+  },
+  "note": "As p. 366."
+ },
+ {
+  "page": 368,
+  "where": "'(dans la catégorie dérivée) est encore un complexe parfait'",
+  "scan": "'(dans la catégorie dérivée)' in parentheses",
+  "tex": "dans la catégorie dérivée est encore (no parentheses)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "dans la catégorie dérivée est encore",
+   "new": "(dans la catégorie dérivée) est encore"
+  },
+  "note": ""
+ },
+ {
+  "page": 368,
+  "where": "footnote call (*) at 'faisant suite à celui-ci'",
+  "scan": "celui-ci(*)).  - the call stands inside the parenthesis, before ')' and the full stop",
+  "tex": "celui-ci).\\footnote{SGA 6 V 2.}",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "celui-ci).\\footnote{SGA 6 V 2.}",
+   "new": "celui-ci\\footnote{SGA 6 V 2.})."
+  },
+  "note": "Position of the footnote call."
+ },
+ {
+  "page": 368,
+  "where": "'Le produit tensoriel X^. (L-tensor)_A Y^. d'un complexe parfait'",
+  "scan": "a double-struck L above the tensor sign",
+  "tex": "\\overset{\\mathbf L}{\\otimes}_A",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "Le produit tensoriel\n\\[\nX^\\bullet\\overset{\\mathbf L}",
+   "new": "Le produit tensoriel\n\\[\nX^\\bullet\\overset{\\mathbb L}"
+  },
+  "note": "As p. 366."
+ },
+ {
+  "page": 369,
+  "where": "heading '9. Propriétés fonctorielles.'",
+  "scan": "underlined title followed by a full stop",
+  "tex": "\\subsection*{9. Propriétés fonctorielles}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{9. Propriétés fonctorielles}",
+   "new": "\\subsection*{9. Propriétés fonctorielles.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 369,
+  "where": "display 'E ~~> B_[u] (x)_A E'",
+  "scan": "a wavy arrow (~~>)",
+  "tex": "E\\longmapsto B_{[u]}\\otimes_A E",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "E\\longmapsto",
+   "new": "E\\rightsquigarrow"
+  },
+  "note": "As p. 366."
+ },
+ {
+  "page": 369,
+  "where": "display 'F ~~> F_[u]'",
+  "scan": "a wavy arrow (~~>)",
+  "tex": "F\\longmapsto F_{[u]}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "F\\longmapsto",
+   "new": "F\\rightsquigarrow"
+  },
+  "note": "As p. 366."
+ },
+ {
+  "page": 370,
+  "where": "'l'identité suivante (\"la formule de projection\") :'",
+  "scan": "straight typewriter quotes; 'formule de projection' underlined ('la' and the quotes are not)",
+  "tex": "(«la formule de projection»): guillemets, no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "«la formule de projection»",
+   "new": "``la \\emph{formule de projection}''"
+  },
+  "note": "Two differences in one edit (their olds would overlap): the missing underline, and the guillemets for the print's straight quotes (Exposé VIII writes guillemets throughout, see the message; the global rule allows ``...'' or \"...\"). To keep the guillemets, use the new '«la \\emph{formule de projection}»'."
+ },
+ {
+  "page": 370,
+  "where": "heading '10. Construction relative.(*)'",
+  "scan": "underlined title, a full stop, then the footnote call (*)",
+  "tex": "\\subsection*{10. Construction relative\\footnote{cf. (SGA 6 III, IV).}}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Construction relative\\footnote",
+   "new": "Construction relative.\\footnote"
+  },
+  "note": "The call (*) follows the full stop in the print."
+ },
+ {
+  "page": 370,
+  "where": "'(resp. pseudo-cohérents et bornés relativement à A .'",
+  "scan": "the parenthesis opened at '(resp.' is never closed: '... et bornés relativement à A . Ces deux'",
+  "tex": "(resp. pseudo-cohérents et bornés) relativement à $A$. (silent correction)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "et bornés) relativement",
+   "new": "et bornés relativement"
+  },
+  "corrected": "et bornés) relativement",
+  "note": "The TeX closes the parenthesis; the fix restores the printed reading in the diplomatic layer."
+ },
+ {
+  "page": 370,
+  "where": "first of the two displays K^.(B rel A) = K(D(B)_{A-parf})",
+  "scan": "no punctuation after the first line; a full stop after the second",
+  "tex": "K^{\\bullet}(B\\operatorname{\\,rel\\,}A)=K(D(B)_{A-\\parf}),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "_{A-\\parf}),\n\\]",
+   "new": "_{A-\\parf})\n\\]"
+  },
+  "note": "Comma added at the end of the display."
+ }
+]

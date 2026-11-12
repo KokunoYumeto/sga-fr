@@ -1,0 +1,121 @@
+[
+ {
+  "page": 426,
+  "where": "Début de la coupe, avant l'exercice 8.6",
+  "scan": "La page commence par « Exercice 8.6. Soit… ».",
+  "tex": "\\noindent (\\EGA IV 17.7.5, 17.7.7).",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Cette citation ne figure pas sur la page 426. La coupe inclut un fragment de la page précédente sans que son commentaire initial le signale. Corriger la coupe, non le texte source."
+ },
+ {
+  "page": 426,
+  "where": "Exercice 8.7 a), après (8.7.1)",
+  "scan": "défini par les foncteurs de localisation",
+  "tex": "défini par les foncteur de localisation",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "les foncteur de localisation",
+   "new": "les foncteurs de localisation"
+  },
+  "note": "Le s final de « foncteurs » manque dans le TeX."
+ },
+ {
+  "page": 427,
+  "where": "Exercice 8.7 d), morphismes induits",
+  "scan": "g_i:E_{/e_i}\\rightarrow F_{/f_i}",
+  "tex": "g_i:E_{/e_i}\\rightarrow F_{/f_i}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "g_i:F_{/f_i}\\rightarrow E_{/e_i}",
+  "note": "Le TeX conserve la direction erronée de l'imprimé. Le morphisme de topos induit par g:F→E va de F_{/f_i} vers E_{/e_i} ; son image inverse va dans l'autre sens."
+ },
+ {
+  "page": 427,
+  "where": "Exercice 8.7 d), « permettent de reconstituer »",
+  "scan": "récons- / tituer",
+  "tex": "reconstituer",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "reconstituer",
+  "note": "L'imprimé porte « réconstituer », avec un accent aigu. Le TeX corrige silencieusement cette coquille orthographique."
+ },
+ {
+  "page": 427,
+  "where": "Exercice 8.7 d), référence après « équivalences du type »",
+  "scan": "(8.7.1)",
+  "tex": "(\\hyperref[IV.exer8.7]{8.7}\n1)",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\hyperref[IV.exer8.7]{8.7}\n1)",
+   "new": "\\eqhyperref[IV.eq8.7.1]{8.7.1}"
+  },
+  "note": "Il s'agit de la formule (8.7.1), non d'une référence à l'exercice 8.7 suivie d'un 1 séparé."
+ },
+ {
+  "page": 427,
+  "where": "Exercice 8.7 e), but de la flèche (8.7.4)",
+  "scan": "Homtop(E)",
+  "tex": "\\Hhomtop(F,E)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hhomtop(F,E)",
+  "note": "L'imprimé omet le premier argument F dans le but. Le TeX corrige silencieusement cette omission."
+ },
+ {
+  "page": 429,
+  "where": "Exercice 8.7 j), référence avant « est bijectif »",
+  "scan": "(8.7.5)",
+  "tex": "\\eqhyperref[IV.eq8.7.6]{8.7.6}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\eqhyperref[IV.eq8.7.6]{8.7.6}",
+  "note": "Le TeX corrige silencieusement le numéro imprimé. La bijectivité concerne l'application (8.7.6), non le morphisme de pro-ensembles (8.7.5)."
+ },
+ {
+  "page": 429,
+  "where": "Exercice 8.7 l), référence finale",
+  "scan": "(comparer 2.7.5)",
+  "tex": "(comparer \\sisi{IV }{} \\hyperref[IV.exer2.7.5]{2.7.5})",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sisi{IV }{}",
+   "new": ""
+  },
+  "note": "La lecture A de \\sisi ajoute « IV », absent de l'imprimé. La correction B n'est pas en cause."
+ },
+ {
+  "page": 429,
+  "where": "Exercice 8.8 a) (i), énumération des objets initiaux",
+  "scan": "où les deux objets sont énumérés sans signe égal : ∅_E, ∅_{E'}",
+  "tex": "(où $\\phi_E$, $=\\phi_{E'}$",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "$=\\phi_{E'}$",
+   "new": "$\\phi_{E'}$"
+  },
+  "note": "Le signe égal devant le deuxième objet est ajouté par le TeX."
+ },
+ {
+  "page": 430,
+  "where": "Exercice 8.8 c), deuxième phrase",
+  "scan": "Montrer que la réciproque",
+  "tex": "Montrer que le\nréciproque",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "que le\nréciproque",
+   "new": "que la\nréciproque"
+  },
+  "note": "L'imprimé donne bien l'article féminin « la »."
+ }
+]

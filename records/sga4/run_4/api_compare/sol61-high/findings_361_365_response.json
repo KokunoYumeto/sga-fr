@@ -1,0 +1,129 @@
+{
+ "id": "resp_02fbdbaafa5fce12006af394e325e487d2b33680a8a2496cd4",
+ "object": "response",
+ "created_at": 1794348259,
+ "status": "completed",
+ "access_programs": {
+  "cyber": "standard"
+ },
+ "background": true,
+ "billing": {
+  "payer": "developer"
+ },
+ "completed_at": 1794348410,
+ "error": null,
+ "frequency_penalty": 0.0,
+ "image": {
+  "context_compression": "disabled"
+ },
+ "incomplete_details": null,
+ "max_output_tokens": 128000,
+ "max_tool_calls": null,
+ "model": "gpt-6.1-sol",
+ "moderation": null,
+ "output": [
+  {
+   "id": "rs_02fbdbaafa5fce12006af394e7879487d2869fc9a80fdbbc4c",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_02fbdbaafa5fce12006af394f45a3087d292e2243934fb4aa9",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_02fbdbaafa5fce12006af3950112c887d2b0a8aefc21f20e0b",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_02fbdbaafa5fce12006af39512603887d2bc357a2fba9b36f4",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_02fbdbaafa5fce12006af39528039487d2a56c0f074461f344",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "msg_02fbdbaafa5fce12006af3953a27a087d284a211e84dfde388",
+   "type": "message",
+   "status": "completed",
+   "content": [
+    {
+     "type": "output_text",
+     "annotations": [],
+     "logprobs": [],
+     "text": "{\n  \"findings\": [\n    {\n      \"page\": 362,\n      \"where\": \"5.3.1, phrase sur les faisceaux mous\",\n      \"scan\": \"en faisceau mous\",\n      \"tex\": \"en faisceau mous\",\n      \"kind\": \"misprint_in_print\",\n      \"confidence\": \"high\",\n      \"fix\": null,\n      \"corrected\": \"en faisceaux mous\",\n      \"note\": \"Faute d'accord de l'imprimé, conservée par le TeX.\"\n    },\n    {\n      \"page\": 362,\n      \"where\": \"5.3.1, phrase sur les faisceaux acycliques\",\n      \"scan\": \"en faisceaux sur X_{\\\\cl} acycliques\",\n      \"tex\": \"en faisceaux\\nsur $\\\\sisi{X}{\\\\bar{X}}_{\\\\cl}$ acycliques\",\n      \"kind\": \"misprint_in_print\",\n      \"confidence\": \"high\",\n      \"fix\": null,\n      \"corrected\": \"\\\\bar{X}_{\\\\cl}\",\n      \"note\": \"La barre sur X manque dans l'imprimé : les faisceaux obtenus par j_{\\\\cl !} sont sur la compactification. Le TeX corrige avec \\\\sisi.\"\n    },\n    {\n      \"page\": 362,\n      \"where\": \"5.3.1, formule précédant 5.3.2\",\n      \"scan\": \"Rf_{\\\\cl}=Rp_{\\\\cl\\\\ast}j_{\\\\cl !}\",\n      \"tex\": \"Rf_{\\\\cl}=Rp_{\\\\cl \\\\ast} j_{\\\\cl !}\",\n      \"kind\": \"misprint_in_print\",\n      \"confidence\": \"high\",\n      \"fix\": null,\n      \"corrected\": \"Rf_{\\\\cl !}=Rp_{\\\\cl \\\\ast} j_{\\\\cl !}\",\n      \"note\": \"Le signe ! manque au membre gauche dans l'imprimé. Le TeX conserve cette omission.\"\n    },\n    {\n      \"page\": 363,\n      \"where\": \"Variantes 5.3.4 (i), catégorie d'arrivée\",\n      \"scan\": \"D(S,\\\\epsilon^{\\\\ast}\\\\Aa)\",\n      \"tex\": \"D(S,\\\\epsilon^{\\\\ast}\\\\Aa)\",\n      \"kind\": \"misprint_in_print\",\n      \"confidence\": \"high\",\n      \"fix\": null,\n      \"corrected\": \"D(S_{\\\\cl},\\\\epsilon^{\\\\ast}\\\\Aa)\",\n      \"note\": \"L'indice cl manque dans l'imprimé : le faisceau d'anneaux \\\\epsilon^{\\\\ast}\\\\Aa est sur S_{\\\\cl}. Le TeX conserve l'omission.\"\n    },\n    {\n      \"page\": 364,\n      \"where\": \"Démonstration de 5.3.6, avant «étant way-out»\",\n      \"scan\": \"Le foncteur\",\n      \"tex\": \"La foncteur\",\n      \"kind\": \"word\",\n      \"confidence\": \"high\",\n      \"fix\": {\n        \"old\": \"La foncteur\",\n        \"new\": \"Le foncteur\"\n      },\n      \"note\": \"L'imprimé porte bien «Le».\"\n    },\n    {\n      \"page\": 364,\n      \"where\": \"5.3.7, «images directes à support propre»\",\n      \"scan\": \"images directes à support propre\",\n      \"tex\": \"images directes\\nsupport propre\",\n      \"kind\": \"missing\",\n      \"confidence\": \"high\",\n      \"fix\": {\n        \"old\": \"directes\\nsupport propre\",\n        \"new\": \"directes\\nà support propre\"\n      },\n      \"note\": \"La préposition «à» de l'imprimé manque dans le TeX.\"\n    },\n    {\n      \"page\": 365,\n      \"where\": \"5.4.1, définition du produit tensoriel externe\",\n      \"scan\": \"K\\\\mathop{\\\\boxtimes}_{\\\\Aa}L=p^{\\\\ast}\\\\underset{\\\\Aa}{\\\\otimes}q^{\\\\ast}L\",\n      \"tex\": \"L=p^{\\\\ast}\\\\sisi{}{K}\\\\underset{\\\\Aa}{\\\\otimes} q^{\\\\ast}L\",\n      \"kind\": \"misprint_in_print\",\n      \"confidence\": \"high\",\n      \"fix\": null,\n      \"corrected\": \"K\\\\mathop{\\\\boxtimes}_{\\\\Aa}L=p^{\\\\ast}K\\\\underset{\\\\Aa}{\\\\otimes}q^{\\\\ast}L\",\n      \"note\": \"Le facteur K après p^{\\\\ast} manque dans l'imprimé. Le TeX le rétablit avec \\\\sisi ; sa première branche reproduit correctement l'omission.\"\n    }\n  ],\n  \"coordinator\": \"Comptes (normal/misprint) : 361 : 0/0 ; 362 : 0/3 ; 363 : 0/1 ; 364 : 2/0 ; 365 : 0/1.\"\n}"
+    }
+   ],
+   "phase": "final_answer",
+   "role": "assistant"
+  }
+ ],
+ "parallel_tool_calls": true,
+ "presence_penalty": 0.0,
+ "previous_response_id": null,
+ "prompt_cache_key": null,
+ "prompt_cache_retention": "24h",
+ "reasoning": {
+  "context": "all_turns",
+  "effort": "high",
+  "mode": "standard",
+  "summary": null
+ },
+ "safety_identifier": null,
+ "service_tier": "flex",
+ "store": true,
+ "temperature": 1.0,
+ "text": {
+  "format": {
+   "type": "text"
+  },
+  "verbosity": "medium"
+ },
+ "tool_choice": "auto",
+ "tool_usage": {
+  "image_gen": {
+   "input_tokens": 0,
+   "input_tokens_details": {
+    "image_tokens": 0,
+    "text_tokens": 0
+   },
+   "output_tokens": 0,
+   "output_tokens_details": {
+    "image_tokens": 0,
+    "text_tokens": 0
+   },
+   "total_tokens": 0
+  },
+  "web_search": {
+   "num_requests": 0
+  }
+ },
+ "tools": [],
+ "top_logprobs": 0,
+ "top_p": 0.98,
+ "truncation": "disabled",
+ "usage": {
+  "input_tokens": 58746,
+  "input_tokens_details": {
+   "cache_write_tokens": 58743,
+   "cached_tokens": 0
+  },
+  "output_tokens": 3678,
+  "output_tokens_details": {
+   "reasoning_tokens": 2588
+  },
+  "total_tokens": 62424
+ },
+ "user": null,
+ "metadata": {}
+}

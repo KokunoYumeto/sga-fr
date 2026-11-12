@@ -1,0 +1,140 @@
+{
+  "findings": [
+    {
+      "page": 172,
+      "where": "Proposition 1.8 (ii), definition of the base-change morphism",
+      "scan": "$f' : X' = X\\times_Y Y' \\to$ has no target.",
+      "tex": "$f': X'= \\fprod{X}{Y'}{Y} \\to$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$f' : X' = \\fprod{X}{Y'}{Y} \\to Y'$",
+      "note": "The print omits the target Y'. The TeX keeps this misprint."
+    },
+    {
+      "page": 172,
+      "where": "Proposition 1.8 (iii), opening sentence",
+      "scan": "Soient $f : X \\to Y$ et $g : Y \\to Z$ des morphismes dans $E$.",
+      "tex": "Soient $f : X \\to Y$ et $g : Y \\to Z$ et $Y \\to Z$ des morphismes dans $E$.",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "et $g : Y \\to Z$ et $Y \\to Z$",
+        "new": "et $g : Y \\to Z$"
+      },
+      "note": "The additional « et Y → Z » is absent from the print."
+    },
+    {
+      "page": 173,
+      "where": "First paragraph, diagonal named after « et »",
+      "scan": "et $\\Delta_{X/Y}$ est quasi-compact",
+      "tex": "et $\\Delta_{Y/Z}$ est quasi-compact",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "base, et $\\Delta_{Y/Z}$",
+        "new": "base, et $\\Delta_{X/Y}$"
+      },
+      "note": "The second diagonal in this paragraph is X/Y, not Y/Z."
+    },
+    {
+      "page": 173,
+      "where": "Paragraph immediately below diagram (**)",
+      "scan": "donc $\\Gamma_F$ est quasi-compact",
+      "tex": "donc $\\Gamma_F$ est quasi-compact",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Gamma_f",
+      "note": "The print mistakenly uses capital F here; the graph is Γ_f, as in the diagram and the following equality. The TeX keeps the misprint."
+    },
+    {
+      "page": 173,
+      "where": "Last paragraph, explanation of the conclusion that f is quasi-separated",
+      "scan": "The clause « et que la conclusion f quasi-séparé signifie que Δ_{X/Y} est quasi-compact » occurs once.",
+      "tex": "The clause occurs twice consecutively.",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": ", et que la conclusion $f$ quasi-séparé signifie que\n$\\Delta_{X/Y}$ est quasi-compact",
+        "new": ""
+      },
+      "note": "Remove the second occurrence of the clause."
+    },
+    {
+      "page": 174,
+      "where": "Heading 1.9.1",
+      "scan": "Remarques 1.9.1.",
+      "tex": "Remarque 1.9.1",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "\\begin{enonce*}{Remarque 1.9.1}",
+        "new": "\\begin{enonce*}{Remarques 1.9.1}"
+      },
+      "note": "The printed heading is plural."
+    },
+    {
+      "page": 174,
+      "where": "Remarques 1.9.1, opening sentence",
+      "scan": "$Q$ une partie de ob stable par isomorphisme",
+      "tex": "$Q$ une partie de ob stable par isomorphisme",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$Q$ une partie de $\\operatorname{ob} E$ stable par isomorphisme",
+      "note": "The print omits E after « ob », leaving the notation for the objects of the category incomplete. The TeX keeps the omission."
+    },
+    {
+      "page": 174,
+      "where": "Remarques 1.9.1, description of Q",
+      "scan": "jouant le rôle d'objets",
+      "tex": "jouant les rôle d'objets",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "jouant les rôle",
+        "new": "jouant le rôle"
+      },
+      "note": "The print has singular « le »."
+    },
+    {
+      "page": 174,
+      "where": "Remarques 1.9.1, sentence asserting validity of 1.8 and 1.8.1",
+      "scan": "Alors 1.8 et 1.8.1 sont valables",
+      "tex": "Alors 1.8 et 1.8.1. sont valables",
+      "kind": "punctuation",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hyperref[VI.cor1.8.1]{1.8.1}. sont",
+        "new": "\\hyperref[VI.cor1.8.1]{1.8.1} sont"
+      },
+      "note": "The TeX inserts a full stop between the subject and « sont valables »; the print has no sentence break."
+    },
+    {
+      "page": 174,
+      "where": "1.9.2, parenthetical list of properties",
+      "scan": "quasi-séparé",
+      "tex": "quai-séparé",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "quai-séparé",
+        "new": "quasi-séparé"
+      },
+      "note": "The TeX omits the s in « quasi »."
+    },
+    {
+      "page": 175,
+      "where": "1.9.3, opening sentence",
+      "scan": "Un objet X d'un topos obE",
+      "tex": "Un objet $X$ d'un  topos ob $E$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Un objet $X$ d'un topos $E$",
+      "note": "The printed « ob » before E is extraneous: E is the topos, not its collection of objects. The TeX keeps this misprint."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 171: 0/0; 172: 1/1; 173: 2/1; 174: 4/1; 175: 0/1."
+}

@@ -1,0 +1,121 @@
+{
+  "findings": [
+    {
+      "page": 66,
+      "where": "Démonstration de (i), première phrase",
+      "scan": "où L est hyperplan",
+      "tex": "où $L$ est un hyperplan",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "où $L$ est un hyperplan.",
+        "new": "où $L$ est hyperplan."
+      },
+      "note": "L'article « un » n'est pas imprimé."
+    },
+    {
+      "page": 66,
+      "where": "Intersection des ouverts denses",
+      "scan": "de sous-ensemble ouverts denses",
+      "tex": "de sous-ensemble ouverts denses",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "de sous-ensembles ouverts denses",
+      "note": "Coquille de pluriel conservée par le TeX."
+    },
+    {
+      "page": 66,
+      "where": "Même phrase, accord avec « l'intersection »",
+      "scan": "est également ouvert et dense",
+      "tex": "est également ouvert et dense",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "est également ouverte et dense",
+      "note": "L'adjectif doit s'accorder avec « l'intersection ». Le TeX conserve la coquille."
+    },
+    {
+      "page": 67,
+      "where": "Première phrase, indices des variables",
+      "scan": "x_i, y_j, avec i=1,...,n-r et j=1,...,n",
+      "tex": "$x_i$, $y_j$\n$(i=1,\\ldots, n-r; j=1,\\ldots,n)$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "x_j, y_j\\quad(i=1,\\ldots,n-r;\\ j=1,\\ldots,n)",
+      "note": "Les coordonnées de l'espace ambiant sont x_1,...,x_n ; la plage de i concerne les fonctions c_i. Lire ici x_j, y_j. Le TeX conserve l'indice imprimé."
+    },
+    {
+      "page": 67,
+      "where": "Deuxième ligne, parenthèses des plages d'indices",
+      "scan": "(i=1,...,n-r) ; j=1,...,n)",
+      "tex": "$(i=1,\\ldots, n-r; j=1,\\ldots,n)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(i=1,\\ldots,n-r;\\ j=1,\\ldots,n)",
+      "note": "Une parenthèse fermante superflue suit n-r dans l'imprimé. Le TeX la supprime silencieusement."
+    },
+    {
+      "page": 68,
+      "where": "Définition de l'image de V''",
+      "scan": "\\bar{V}{}''=F(V'')",
+      "tex": "\\bar{V}{}''=\\sisi{f}{F}(V'')",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\bar{V}{}''=f(V'')",
+      "note": "L'application vient d'être notée f ; le F majuscule imprimé est une coquille. La lecture TeX à comparer, premier argument de \\sisi, donne déjà la correction f plutôt que le F imprimé."
+    },
+    {
+      "page": 68,
+      "where": "Diagramme de la définition 3.1, flèche i",
+      "scan": "\\bar{X}\\xrightarrow{i}Y",
+      "tex": "Y \\ar[l]_{i}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Y\\xrightarrow{i}\\bar{X}",
+      "note": "La flèche imprimée pointe vers Y, au lieu de représenter l'inclusion de Y dans \\bar{X}. Le TeX en corrige silencieusement le sens."
+    },
+    {
+      "page": 69,
+      "where": "Démonstration de 3.3, choix de U'",
+      "scan": "U'=U\\cap V'",
+      "tex": "U'=U\\cap \\sisi{f^{-1}(V')}{V'}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "U'=U\\cap f^{-1}(V')",
+      "note": "V' est un ouvert de la base V : il faut prendre son image inverse dans U. La lecture TeX à comparer, premier argument de \\sisi, corrige cette coquille au lieu de reproduire l'imprimé."
+    },
+    {
+      "page": 70,
+      "where": "Condition de transversalité imposée à H_0",
+      "scan": "H_0 coupe X\\cap L transversalement",
+      "tex": "$H_0$ coupe $\\sisi{\\bar{X}}{X}\\cap L$ transversalement",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\sisi{\\bar{X}}{X}",
+        "new": "\\sisi{X}{X}"
+      },
+      "note": "Le X imprimé est sans barre. Le premier argument de \\sisi ne reproduit donc pas le tirage."
+    },
+    {
+      "page": 70,
+      "where": "Formule définissant les coordonnées projectives y_i",
+      "scan": "y_i=\\sum^N_{\\nu=0}a_{i\\nu}x_\\nu",
+      "tex": "y_i=\\sum^N_{\\nu =0}a_{i_{\\nu}}x_{\\nu}",
+      "kind": "formula",
+      "confidence": "medium",
+      "fix": {
+        "old": "a_{i_{\\nu}}",
+        "new": "a_{i\\nu}"
+      },
+      "note": "Le coefficient porte les deux indices i et ν, comme dans l'équation de H_i. Le ν manuscrit est placé bas ; cette position ne doit pas être transcrite comme un sous-indice de i."
+    }
+  ],
+  "coordinator": "66 : 1/2 ; 67 : 0/2 ; 68 : 0/2 ; 69 : 0/1 ; 70 : 2/0 (normal/misprint).\nVérifier la convention de \\sisi avant d'appliquer l'édition de p. 70 : dans les trois occurrences, le second argument correspond au scan (p. 68 : F ; p. 69 : V' ; p. 70 : X), contrairement à l'ordre indiqué dans les consignes."
+}

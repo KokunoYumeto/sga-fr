@@ -1,0 +1,105 @@
+{
+  "findings": [
+    {
+      "page": 256,
+      "where": "5.5.0, présentation de l'élément e",
+      "scan": "e=(i': C' ...",
+      "tex": "e=i': C' ...",
+      "kind": "punctuation",
+      "confidence": "high",
+      "fix": {
+        "old": "e=i': C'",
+        "new": "e=(i': C'"
+      },
+      "note": "Il manque la parenthèse ouvrante avant i'. La parenthèse fermante figure bien après « adjoint à gauche de i' »."
+    },
+    {
+      "page": 257,
+      "where": "Définition 6.1, formule définissant le préfaisceau d'ensembles",
+      "scan": "\\Hom_D(S,F(X)),\\quad X\\in\\ob(C)",
+      "tex": "\\Hom_D(S,F(X))\\quav X\\in \\ob(C)",
+      "kind": "word",
+      "confidence": "medium",
+      "fix": {
+        "old": "\\quav X\\in \\ob(C)",
+        "new": ",\\quad X\\in \\ob(C)"
+      },
+      "note": "L'imprimé porte une simple virgule, sans le mot « avec » introduit par \\quav."
+    },
+    {
+      "page": 258,
+      "where": "Remarques 6.2 (1), isomorphisme affiché",
+      "scan": "\\Hom_D(S,F(X))\\xrightarrow{\\sim}\\varprojlim_{C/R}F(.)",
+      "tex": "\\Hom_D(S,F(X))\\xrightarrow{\\sim}\\varprojlim_{C/R}F(.)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hom_D(S,F(X))\\xrightarrow{\\sim}\\varprojlim_{C/R}\\Hom_D(S,F(.))",
+      "note": "Le TeX conserve la coquille imprimée. Le membre droit doit être la limite des ensembles Hom_D(S,F(.)), et non celle des objets F(.)."
+    },
+    {
+      "page": 258,
+      "where": "Remarques 6.2 (2), formulation récurrente « à valeur »",
+      "scan": "les faisceaux à valeur dans D en faisceaux à valeur dans D'",
+      "tex": "les faisceaux à valeurs dans D en faisceaux à valeurs dans D'",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "faisceaux à valeurs dans $D$ en\n  faisceaux à valeurs dans $D'$.",
+        "new": "faisceaux à valeur dans $D$ en\n  faisceaux à valeur dans $D'$."
+      },
+      "note": "Le singulier imprimé est systématiquement pluralisé dans le TeX. Cette normalisation est signalée une seule fois ; les trois passages concernés sont indiqués au coordinateur."
+    },
+    {
+      "page": 258,
+      "where": "Proposition 6.3.1, début de l'énumération des catégories",
+      "scan": "entre la catégorie",
+      "tex": "entre le catégorie",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "entre le catégorie",
+        "new": "entre la catégorie"
+      },
+      "note": "L'article imprimé est « la »."
+    },
+    {
+      "page": 259,
+      "where": "6.3.2, objet correspondant au faisceau",
+      "scan": "et le γ-objet correspondant",
+      "tex": "et la $\\gamma$-objet correspondant",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "et la $\\gamma$-objet correspondant",
+        "new": "et le $\\gamma$-objet correspondant"
+      },
+      "note": "L'imprimé porte « le γ-objet »."
+    },
+    {
+      "page": 260,
+      "where": "Proposition 6.5, source de esj et indice du second Hom",
+      "scan": "\\gamma-𝒰",
+      "tex": "\\gamma-𝒰",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "𝒰-\\gamma",
+      "note": "Le TeX conserve les deux occurrences imprimées de γ-𝒰. L'ordre est inversé par rapport à la notation 𝒰-γ définie en 6.3.0 pour cette catégorie."
+    },
+    {
+      "page": 260,
+      "where": "Preuve du corollaire 6.6, première phrase",
+      "scan": "La preuve est formelle",
+      "tex": "Le preuve est formelle",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Le preuve est formelle",
+        "new": "La preuve est formelle"
+      },
+      "note": "L'imprimé porte « La preuve »."
+    }
+  ],
+  "coordinator": "Normal/misprint : 256: 1/0 ; 257: 1/0 ; 258: 2/1 ; 259: 1/0 ; 260: 1/1.\nConvention récurrente « à valeur » → « à valeurs » : p. 258, 6.2(2), « faisceaux à valeur dans D » (deux emplois dans la phrase) ; p. 258, 6.3.1, « faisceaux sur C à valeur dans 𝒰-γ » ; p. 259, 6.3.2, « un faisceau à valeur dans 𝒰-γ ». Le correctif donné traite le premier passage ; les deux autres relèvent de la même restitution du singulier."
+}

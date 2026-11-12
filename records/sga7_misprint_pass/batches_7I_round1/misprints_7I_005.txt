@@ -1,0 +1,2355 @@
+# Misprint pass of the corrected French SGA 7 I, misprints_7I_005
+
+=================== PAGE 264 ===================
+----- corrected edition, expose_VIII_body.tex, page 264 -----
+%%%%%%%%%%  scan idx 275  |  folio 264  %%%%%%%%%%
+\underline{et les groupes des classes d'objets de ces catégories sont canoniquement} \underline{isomorphes à} $\mathrm{Hom}(M,A^*)$, \underline{où} $A^* = \underline{\mathrm{Ext}}^1(A,\underline{G}_m)$ \underline{est le schéma abélien dual de} $A$ (3.2). \underline{En particulier, on a un isomorphisme canonique}
+
+\begin{equation}\tag{3.7.1}
+\mathrm{Ext}^1(A,T) \stackrel{\sim}{\longrightarrow} \mathrm{Hom}(\underline{M},A^*) \qquad .
+\end{equation}
+C'est en effet le cas particulier de 1.6 obtenu en faisant $P = A$, $Q = M$ ; en vertu du théorème de bidualité (SGA 3 X 5.7), on a bien $T \simeq \underline{\mathrm{Hom}}(M,\underline{G}_m)$, et il suffit de vérifier les conditions (1.6.1), qui s'écrivent ici
+
+\begin{equation*}
+\underline{\mathrm{Hom}}(A,\underline{G}_m) = 0 \qquad , \qquad \mathrm{Hom}(A,\underline{\mathrm{Ext}}^1(\underline{M},\underline{G}_m)) = 0 \qquad .
+\end{equation*}
+La première relation a été déjà été rappelée dans (3.2.1), la deuxième peut se préciser en
+
+\begin{equation*}
+\underline{\mathrm{Ext}}^1(\underline{M},\underline{G}_m) = 0 \qquad .
+\end{equation*}
+Pour vérifier cette dernière, la question étant locale sur $S$, on peut supposer $\underline{M}$ constant $= M_S$, et en décomposant $M$ en somme de $\mathbb{Z}$-modules monogènes, on est ramené au cas où $M = \mathbb{Z}$, qui est trivial, et au cas $M = \mathbb{Z}/n\mathbb{Z}$ , qui provient du fait que $\underline{G}_m$ est $n$-divisible (ou, plus savamment, de 3.3.1).
+
+On notera que lorsque $T = \underline{G}_m$ donc $\underline{M} = \mathbb{Z}_S$ , (3.7.1) se réduit à l'isomorphisme identique (3.2.3). Bien entendu, la démonstration directe de (3.7.1) serait essentiellement triviale (sans faire intervenir le groupe $\mathrm{Ext}^1(A \stackrel{\mathbb{L}}{\otimes} \underline{M},\underline{G}_m) =\mathrm{Biext}^1(A,\underline{M},\underline{G}_m))$.
+----- misprints recorded on page 264 -----
+[id 7I:470]
+WHERE: after the first unnumbered display
+PRINT: La première relation a été déjà été rappelée dans (3.2.1)
+CORRECT: La première relation a déjà été rappelée
+TEX BEFORE: La première relation a été déjà été rappelée
+NOTE: The word 'été' is doubled. The TeX keeps the printed reading.
+
+[id 7I:471]
+WHERE: proof of Ext^1(M,G_m)=0, cyclic case
+PRINT: et au cas Z = Z/nZ , qui provient du fait que
+CORRECT: M = \mathbb{Z}/n\mathbb{Z}
+TEX BEFORE: au cas $\mathbb{Z} = \mathbb{Z}/n\mathbb{Z}$ ,
+NOTE: The case M = Z/nZ is meant (cf. 'au cas où M = Z' just before). The TeX keeps the printed 'Z ='.
+
+[id 7I:808]
+WHERE: sentence after the first unnumbered display
+PRINT: La première relation a été déjà été rappelée dans (3.2.1)
+CORRECT: La première relation a déjà été rappelée
+TEX BEFORE: La première relation a été déjà été rappelée
+NOTE: 'été' is typed twice. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring.
+
+[id 7I:809]
+WHERE: proof of Ext^1(M,G_m) = 0, cyclic case
+PRINT: et au cas Z = Z/nZ , qui provient du fait que G_m est n-divisible
+CORRECT: au cas $M = \mathbb{Z}/n\mathbb{Z}$
+TEX BEFORE: au cas $\mathbb{Z} = \mathbb{Z}/n\mathbb{Z}$
+NOTE: The case M = Z/nZ is meant, after 'au cas où M = Z' in the same sentence. The TeX keeps the printed Z. 'corrected' replaces the 'tex' substring.
+
+[id 7I:810]
+WHERE: last sentence, '=Biext^1(A,M,G_m))'
+PRINT: Ext^1(A ⊗^L M,G_m) =Biext^1(A,M,G_m)).
+CORRECT: \mathrm{Biext}^1(A,\underline{M};\underline{G}_m)
+TEX BEFORE: \mathrm{Biext}^1(A,\underline{M},\underline{G}_m)
+NOTE: Checked at 4x zoom: a comma, not a semicolon, before G_m. Everywhere else the coefficient group follows a semicolon (BIEXT(A,M; G_m) in 3.7, Biext^i(P,Q;G_m) in (3.5.2) and (3.6.2)). The TeX keeps the printed comma. 'corrected' replaces the 'tex' substring.
+
+=================== PAGE 265 ===================
+----- corrected edition, expose_VIII_body.tex, page 265 -----
+%%%%%%%%%%  scan idx 276  |  folio 265  %%%%%%%%%%
+
+
+4. \underline{Extensions et biextensions des schémas en groupes lisses et connexes sur un corps}
+
+Rappelons le lemme suivant dû à Rosenlicht [3 bis, Prop.3] :
+
+\underline{Lemme} 4.1. \underline{Soient} $k$ \underline{un corps}, $X$ \underline{et} $Y$ \underline{deux $k$-schémas de type fini, séparables et géométriquement connexes, munis de points} $e_X$ \underline{resp.} $e_Y$ \underline{rationnels sur} $k$. \underline{Alors tout morphisme} $X \times Y \longrightarrow \underline{G}_m$ \underline{qui est trivial sur les deux sous-schémas} $X \times e_Y$ \underline{et} $e_X \times Y$ \underline{est trivial}.
+
+Nous n'utiliserons ce résultat que lorsque $X$ et $Y$ sont des schémas en groupes sur $k$, auquel cas il résultera des hypothèses faites que $X$ et $Y$ sont même lisses sur $k$. Notons que par récurrence, le résultat 4.1 implique le résultat analogue pour un nombre quelconque de facteurs. Ceci nous permet donc d'appliquer les résultats de VII 1.3 et de VII 2.9. On obtient ainsi les deux propositions suivantes :
+
+\underline{Proposition} 4.2. \underline{Soient} $P$ \underline{un groupe lisse et connexe sur le corps} $k$. \underline{Alors le foncteur naturel de la catégorie des extensions de Groupes de} $P$ \underline{par} $\underline{G}_m$ \underline{dans la catégorie des Modules inversibles sur} $P$ \underline{rigidifiés en l'élément neutre} $e_P$ \underline{de} $P$ \underline{est pleinement fidèle}. \underline{Son image essentielle est formée des Modules inversibles rigidifiés} $\underline{L}$ \underline{sur} $P$ \underline{tels que l'on ait} $\pi^*(L) \simeq \mathrm{pr}_1^*(L)\otimes\mathrm{pr}_2^*(L)$, \underline{où} $\pi : P \times P \longrightarrow P$ \underline{est la loi de composition de} $P$, \underline{et} $\mathrm{pr}_1$ \underline{et} $\mathrm{pr}_2$ \underline{sont les deux projections du produit}.
+
+\underline{Proposition} 4.3. \underline{Soient} $P$ et $Q$ \underline{deux Groupes algébriques lisses et connexes sur le corps} $k$. \underline{Alors le foncteur naturel de la catégorie des biextensions de} $(P,Q)$ \underline{par} $\underline{G}_m$, \underline{dans la catégorie des Modules inversibles sur} $P \times Q$ \underline{birigidifiés par rapport aux sections unités} $e_P,e_Q$ \underline{de} $P$ \underline{resp.} $Q$,
+----- misprints recorded on page 265 -----
+[id 7I:472]
+WHERE: Proposition 4.2, condition on L
+PRINT: π*(P) ≃ pr_1*(P)pr_2*(P)
+CORRECT: \pi^*(L) \simeq \mathrm{pr}_1^*(L)\mathrm{pr}_2^*(L)
+TEX BEFORE: $\pi^*(P) \simeq \mathrm{pr}_1^*(P)\mathrm{pr}_2^*(P)$
+NOTE: The condition concerns the invertible Module L, not the group P. The TeX keeps the printed P (three times).
+
+[id 7I:473]
+WHERE: Proposition 4.2, first word after the label
+PRINT: Soient P un groupe lisse et connexe sur le corps k.
+CORRECT: \underline{Soit} $P$ \underline{un groupe lisse
+TEX BEFORE: \underline{Soient} $P$ \underline{un groupe lisse
+NOTE: Agreement error: only one object is introduced, so 'Soit' is correct. The TeX keeps the printed 'Soient'.
+
+[id 7I:811]
+WHERE: Proposition 4.2, condition on the Module L
+PRINT: π*(P) ≃ pr_1*(P)pr_2*(P)
+CORRECT: $\pi^*(\underline{L}) \simeq \mathrm{pr}_1^*(\underline{L})\mathrm{pr}_2^*(\underline{L})$
+TEX BEFORE: $\pi^*(P) \simeq \mathrm{pr}_1^*(P)\mathrm{pr}_2^*(P)$
+NOTE: The condition is on the rigidified invertible Module L named just before, not on the group P (P typed three times for L). The TeX keeps the printed P. 'corrected' replaces the 'tex' substring and writes L underlined, as the statement does.
+
+[id 7I:812]
+WHERE: Proposition 4.2, first word after the label
+PRINT: Soient P un groupe lisse et connexe sur le corps k.
+CORRECT: \underline{Soit} $P$ \underline{un groupe lisse
+TEX BEFORE: \underline{Soient} $P$ \underline{un groupe lisse
+NOTE: Agreement slip: only one object is introduced, so 'Soit' (4.3 has 'Soient P et Q'). The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring.
+
+=================== PAGE 267 ===================
+----- corrected edition, expose_VIII_body.tex, page 267 -----
+%%%%%%%%%%  scan idx 278  |  folio 267  %%%%%%%%%%
+
+\underline{Lemme} 4.5. \underline{Soient} $f : X \longrightarrow Y$ \underline{un morphisme lisse surjectif à fibres intègres}, \underline{avec} $Y$ \underline{normal intègre de point générique} $y$, $\mathbb{L}$ \underline{un Module inversible sur} $X$ \underline{dont la restriction à} $X_y$ \underline{soit trivial}. \underline{Alors il existe un Module inversible} $\underline{M}$ \underline{sur} $Y$ \underline{tel que} $\mathbb{L}$ \underline{soit isomorphe à} $f^*(\underline{M})$.
+
+\underline{Proposition} 4.6. \underline{Soient} $P,Q$ \underline{deux groupes algébriques lisses et connexes sur le corps} $k$, \underline{avec} $P$ affine. \underline{On suppose de plus que} $P$ \underline{admet une suite de composition dont chacun des facteurs est un tore}, \underline{ou est isomorphe au groupe additif} $\underline{G}_a$ (\underline{condition vérifiée en particulier si} $k$ \underline{est parfait} [SGA 3, XVII 7.2.1, 4.1.1 (i) $\Longleftrightarrow$ (ii) \underline{et} 4.1.5]), \underline{ou que} $Q$ \underline{soit extension d'une variété abélienne} $B$ \underline{par un groupe algébrique lisse, connexe et affine satisfaisant à la condition précédente}. \underline{Sous ces conditions}, \underline{tout Module inversible birigidifié} $\mathbb{L}$ \underline{sur} $P \times Q$ \underline{est trivial}, \underline{à fortiori} (4.3) \underline{toute biextension de} $(P,Q)$ \underline{par} $\underline{G}_m$ \underline{est triviale}.
+
+Signalons d'abord que comme tout automorphisme du Module birigidifié est l'identité (4.3), la théorie de la descente nous montre qu'il suffit de prouver que $\mathbb{L}$ devient trivial après extension séparable finie de $k$, ce qui nous ramène aussitôt, par passage à la limite, au cas où $k$ est séparablement clos. Comme dans ce cas tout tore sur $k$ est déployé, on voit que si $P$ admet une suite de composition comme indiquée dans 4.6, il admet aussi une suite de composition à quotients isomorphes à $\underline{G}_a$ ou $\underline{G}_m$, ce qui implique, par application répétée de 4.5, compte tenu de $\mathrm{Pic}\ (\underline{G}_{a_K}) = \mathrm{Pic}(\underline{G}_{m_K}) = 0$ pour tout corps $K$, que l'on a
+
+\begin{equation*}
+\mathrm{Pic}(P) \;=\; 0 \qquad .
+\end{equation*}
+----- misprints recorded on page 267 -----
+[id 7I:474]
+WHERE: Lemme 4.5, 'dont la restriction à X_y soit trivial'
+PRINT: soit trivial
+CORRECT: \underline{soit triviale}
+TEX BEFORE: \underline{soit trivial}
+NOTE: The adjective must agree with 'la restriction'. The TeX keeps the printed reading.
+
+[id 7I:813]
+WHERE: Lemme 4.5, 'dont la restriction à X_y soit trivial'
+PRINT: soit trivial
+CORRECT: \underline{soit triviale}
+TEX BEFORE: \underline{soit trivial}
+NOTE: The adjective should agree with 'la restriction'. The TeX keeps the printed reading.
+
+=================== PAGE 268 ===================
+----- corrected edition, expose_VIII_body.tex, page 268 -----
+%%%%%%%%%%  scan idx 279  |  folio 268  %%%%%%%%%%
+
+Comme cette relation restera encore vraie par tout changement du corps de base $k$, on voit, en appliquant 4.5 à $\mathrm{pr}_2 : P \times Q \longrightarrow Q$ et au Module $\mathbb{L}$ , que $\mathbb{L}$ est isomorphe à un Module de la forme $\mathrm{pr}_2^*(\underline{M})$, où $\underline{M}$ est un Module inversible sur $Q$. Comme la restriction de $\mathbb{L}$ à $e_P \times Q$ est triviale, on en conclut aussitôt que $\underline{M}$ est trivial, donc $\mathbb{L}$ est trivial, ce qui établit la conclusion dans le premier cas envisagé. Dans le deuxième, où $Q$ est une extension d'un schéma abélien $B$ par un groupe $M$ admettant une suite de composition à quotients isomorphes à $\underline{G}_m$ ou à $\underline{G}_a$ , on applique 4.5 au morphisme
+
+\begin{equation*}
+f : X = P \times Q \longrightarrow Y = P \times B \qquad ,
+\end{equation*}
+dont la fibre au point générique $y$ de $P \times B$ est un torseur sous $M_y$, nécessairement trivial en vertu de la structure particulière de $M$ et des relations classiques $H^1(K,\underline{G}_a) = 0$, $H^1(K,\underline{G}_m) = 0$, valables pour tout corps $K$ (qu'on prendra ici égal à $k(y)$). Comme on aura $\mathrm{Pic}(M) = 0$, donc $\mathrm{Pic}(X_y) = 0$, 4.5 est bien applicable et montre que $\mathbb{L}$ est isomorphe à l'image inverse d'un Module inversible $\underline{M}$ sur $Y = P \times B$. Quitte à remplacer $\underline{M}$ par $\underline{M}\,\mathrm{pr}_1^*(\underline{M}_1)^{-1}\mathrm{pr}_2^*(M_2)^{-1}$, où $\mathrm{pr}_1$ et $\mathrm{pr}_2$ sont les deux projections de $Y=P \times B$, et où $\underline{M}_1$ et $\underline{M}_2$ sont les deux restrictions de $\underline{M}$ à $P \times e_B$ et à $e_P \times B$ respectivement, on peut supposer $\underline{M}$ birigidifié, et que $\mathbb{L}$ est son image inverse birigidifiée. Cela nous ramène au cas où $Q$ est lui-même un schéma abélien. Mais alors $\mathbb{L}$ définit un morphisme canonique
+
+\begin{equation}\tag{*}
+P \longrightarrow \underline{\mathrm{Pic}}_{Q/k} \qquad ,
+\end{equation}
+transformant unité en unité, et comme $P$ est connexe, ce morphisme se
+----- misprints recorded on page 268 -----
+[id 7I:475]
+WHERE: 'Quitte à remplacer M par M pr_1^*(M_1)^{-1}pr_2^*(M_2)^{-1}'
+PRINT: pr_2^*(M_2)^{-1} with M_2 not underlined
+CORRECT: \mathrm{pr}_2^*(\underline{M}_2)^{-1}
+TEX BEFORE: \mathrm{pr}_2^*(M_2)^{-1}
+NOTE: The typist omitted the underline: it is the Module \underline{M}_2, as in the next line. The TeX keeps the printed reading.
+
+[id 7I:476]
+WHERE: 'les deux projections de Y=P×A'
+PRINT: Y=P×A
+CORRECT: Y=P \times B
+TEX BEFORE: $Y=P \times A$
+NOTE: Y = P×B was defined just above. The TeX keeps the printed reading.
+
+[id 7I:814]
+WHERE: 'Quitte à remplacer M par M pr_1^*(M_1)^{-1}pr_2^*(M_2)^{-1}'
+PRINT: pr_2^*(M_2)^{-1}, with M_2 not underlined (M_1 before it is underlined)
+CORRECT: \mathrm{pr}_2^*(\underline{M}_2)^{-1}
+TEX BEFORE: \mathrm{pr}_2^*(M_2)^{-1}
+NOTE: This is the Module \underline{M}_2, underlined in the next line; the typist left out the underline. The TeX keeps the printed reading.
+
+[id 7I:815]
+WHERE: 'où pr_1 et pr_2 sont les deux projections de Y=P×A'
+PRINT: Y=P×A
+CORRECT: Y=P \times B
+TEX BEFORE: $Y=P \times A$
+NOTE: Y = P×B is defined just above (f : X = P×Q → Y = P×B), and the restrictions that follow are to P×e_B and e_P×B. The TeX keeps the printed reading.
+
+=================== PAGE 269 ===================
+----- corrected edition, expose_VIII_body.tex, page 269 -----
+%%%%%%%%%%  scan idx 280  |  folio 269  %%%%%%%%%%
+factorise par le schéma abélien dual $Q' = \underline{\mathrm{Pic}}^{\mathrm{o}}_{Q/k}$ . Or il est bien connu qu'un morphisme de schémas d'un groupe algébrique affine lisse et connexe dans un schéma abélien est constant. (C'est une question ``géométrique'' i.e. on peut supposer $k$ algébriquement clos, et dans ce cas on est ramené aussitôt par dévissage au cas où $P$ est $\underline{G}_a$ ou $\underline{G}_m$ ; or il est bien connu que toute application rationnelle de $\underline{P}^1_k$ dans un schéma abélien sur $k$ est constante.) Le fait que (*) soit constant, donc nul, s'interprète par la condition que $\mathbb{L}$ soit isomorphe à l'image inverse d'un Module inversible $\underline{M}$ sur $P$, et comme $\mathbb{L}$ est trivial sur $P \times e_Q$ , $\underline{M}$ est trivial, donc $\mathbb{L}$ l'est également, cqfd.
+
+\underline{Proposition} 4.7. \underline{Soient} $P,Q$ \underline{deux groupes algébriques lisses et connexes} \underline{sur le corps} $k$. \underline{Supposons que} $P$ \underline{soit extension d'un schéma abélien} $A$ \underline{par un groupe algébrique lisse}, \underline{connexe et affine} $L$ \underline{admettant une suite} \underline{de composition dont chaque facteur soit isomorphe à un tore ou à} $\underline{G}_a$ (\underline{condition toujours remplie si} $k$ \underline{est parfait}). \underline{Alors le foncteur envisagé dans} 1.3 \underline{est une équivalence de catégories}, \underline{i.e.} \underline{tout Module inversible birigidifié} $\mathbb{L}$ \underline{sur} $P \times Q$ \underline{provient d'une biextension de} $(P,Q)$. \underline{De plus}, \underline{le foncteur de catégories rigides}
+
+\begin{equation*}
+\mathrm{BIEXT}(A,Q;\underline{G}_m) \longrightarrow \mathrm{BIEXT}(P,Q;\underline{G}_m)
+\end{equation*}
+\underline{est une équivalence de catégories}, \underline{en d'autres termes}, \underline{il donne naissance} \underline{à un isomorphisme de groupes} :
+
+\begin{equation}\tag{4.7.1}
+\mathrm{Biext}^1(A,Q;\underline{G}_m) \stackrel{\sim}{\longrightarrow} \mathrm{Biext}^1(P,Q;\underline{G}_m) \qquad .
+\end{equation}
+----- misprints recorded on page 269 -----
+[id 7I:477]
+WHERE: 'comme L est trivial sur P×e_A'
+PRINT: P×e_A
+CORRECT: P \times e_Q
+TEX BEFORE: $P \times e_A$
+NOTE: In the proof of 4.6, after the reduction Q itself is the abelian scheme and no A occurs, so the unit section is e_Q. This is the same slip as Y=P×A. The TeX keeps the printed reading.
+
+[id 7I:816]
+WHERE: end of the proof of 4.6, 'et comme L est trivial sur P×e_A'
+PRINT: P×e_A
+CORRECT: P \times e_Q
+TEX BEFORE: $P \times e_A$
+NOTE: Q has been reduced to an abelian scheme and no A occurs in this proof; the birigidified L is trivial on P×e_Q, which makes M trivial. Same slip as Y=P×A on p. 268. The TeX keeps the printed reading.
+
+[id 7I:817]
+WHERE: Prop. 4.7, 'Alors le foncteur envisagé dans 1.3 est une équivalence de catégories'
+PRINT: 1.3
+CORRECT: 4.3
+TEX BEFORE: \underline{Alors le foncteur envisagé dans} 1.3
+NOTE: The functor from biextensions of (P,Q) by G_m to birigidified invertible Modules on P×Q is the one of 4.3 (fully faithful there; 4.4 and the proof of 4.7 refer to 4.3). VIII 1.3 is the computation of Biext^1 through Ext and Tor. The TeX keeps the printed reading.
+
+=================== PAGE 270 ===================
+----- corrected edition, expose_VIII_body.tex, page 270 -----
+%%%%%%%%%%  scan idx 281  |  folio 270  %%%%%%%%%%
+
+Pour la première assertion, on se ramène encore, par descente et en utilisant 4.3, au cas où $k$ est séparablement clos. Procédant comme dans la démonstration de 4.6, on déduit de 4.5 et de l'hypothèses sur $L$ que $\mathbb{L}$ est isomorphe à l'image inverse d'un Module birigidifié $\underline{M}$ sur $A \times Q$, et pour la première assertion de 4.7, on est donc ramené au cas $A=P$. Or $\mathbb{L}$ définit un morphisme de schémas ponctués
+
+\begin{equation*}
+f:Q \longrightarrow \underline{\mathrm{Pic}}_{P/k} \quad ,
+\end{equation*}
+qui se factorise nécessairement par le schéma abélien dual $P'$ de $P$. Soit $\mathbb{L}'$ l'image inverse du faisceau de Weil sur $P \times P'$ par
+
+\begin{equation*}
+\mathrm{id}_P \times f \; : \; P \times Q \longrightarrow P \times P' \quad ,
+\end{equation*}
+c'est un Module birigidifié qui, par définition de $f$, ne diffère de $\mathbb{L}$ que modulo l'image inverse d'un Module inversible $\underline{M}$ sur $P$. Comme $\mathbb{L}'$ et $\mathbb{L}$ ont une restriction triviale à $P \times e_Q$, on en conclut que $\underline{M}$ est trivial, donc que $\mathbb{L}$ est isomorphe à $\mathbb{L}'$. Or nous avons signalé dans VII 2.9.4 que sur un produit de deux schémas abéliens, les correspondances divisorielles provenaient de biextensions. Il en résulte que $\mathbb{L}'$, ou ce qui revient au même, $\mathbb{L}$ , provient d'une biextension.
+
+Revenant au cas général ($P$ extension de $A$ par $L$), il reste à prouver que (4.7.1) est bien un isomorphisme. Mais cela résulte de la suite exacte des $\mathrm{Biext}^i$ ($i=0,1$) associée à la suite exacte
+
+\begin{equation*}
+0 \longrightarrow L \longrightarrow P \longrightarrow A \longrightarrow 0 \quad ,
+\end{equation*}
+et des relations
+
+\begin{equation*}
+\mathrm{Biext}^0(L,Q;\underline{G}_m) = 0 \quad , \quad \mathrm{Biext}^1(L,Q;\underline{G}_m) = 0 \quad , \quad 
+\end{equation*}
+----- misprints recorded on page 270 -----
+[id 7I:478]
+WHERE: 'on déduit de 4.5 et de l'hypothèses sur L'
+PRINT: l'hypothèses
+CORRECT: l'hypothèse
+TEX BEFORE: l'hypothèses
+NOTE: Typing error. The TeX keeps the printed reading.
+
+[id 7I:479]
+WHERE: 'Or nous avons eignalé dans VII 2.9.4'
+PRINT: eignalé
+CORRECT: signalé
+TEX BEFORE: eignalé
+NOTE: Typing error. The TeX keeps the printed reading.
+
+[id 7I:818]
+WHERE: 'on déduit de 4.5 et de l'hypothèses sur L'
+PRINT: l'hypothèses
+CORRECT: l'hypothèse
+TEX BEFORE: l'hypothèses
+NOTE: Typing error. The TeX keeps the printed reading.
+
+=================== PAGE 271 ===================
+----- corrected edition, expose_VIII_body.tex, page 271 -----
+%%%%%%%%%%  scan idx 282  |  folio 271  %%%%%%%%%%
+
+ dont la première est un cas particulier de l'assertion de rigidité faite dans 4.3, et la deuxième n'est autre que le premier cas de 4.6.
+
+\underline{Corollaire} 4.8. \underline{Sous les conditions de} 4.7, \underline{supposons que} $Q$ \underline{soit extension} \underline{d'un groupe algébrique} $B$ (\underline{nécessairement lisse et connexe}) \underline{par un groupe} \underline{algébrique} $M$ \underline{qui est lisse}, \underline{connexe et} affine. \underline{Alors le foncteur de} \underline{catégories rigides}
+
+\begin{equation*}
+\mathrm{BIEXT}(A,B,\underline{G}_m) \longrightarrow \mathrm{BIEXT}(P,Q;\underline{G}_m)
+\end{equation*}
+\underline{est une équivalence de catégories,} \underline{en d'autres termes,} \underline{elle donne naissanee} \underline{à un isomorphisme de groupes}
+
+\begin{equation}\tag{4.8.1}
+\mathrm{Biext}^1(A,B;\underline{G}_m) \stackrel{\sim}{\longrightarrow} \mathrm{Biext}^1(P,Q;\underline{G}_m) \quad .
+\end{equation}
+
+Compte tenu de (4.7.1), il reste à prouver que l'on a un isomorphisme
+
+\begin{equation*}
+\mathrm{Biext}^1(A,B;\underline{G}_m) \stackrel{\sim}{\longrightarrow} \mathrm{Biext}^1(A,Q;\underline{G}_m) \quad .
+\end{equation*}
+CeIa se déduit comme (4.7.1) de la suite exacte des $\mathrm{Biext}^i$ déduite de la suite exacte
+
+\begin{equation*}
+0 \longrightarrow M \longrightarrow Q \longrightarrow B \longrightarrow 0 \quad ,
+\end{equation*}
+et des relations
+
+\begin{equation*}
+\mathrm{Biext}^0(P,M;\underline{G}_m) = 0 \quad , \quad \mathrm{Biext}^1(P,M;\underline{G}_m) = 0 \quad ,
+\end{equation*}
+dont la deuxième est un cas particulier du deuxième cas envisagé dans 4.6 (où on aurait échangé le rôle des deux facteurs envisagés).
+----- misprints recorded on page 271 -----
+[id 7I:480]
+WHERE: display after 'Alors le foncteur de catégories rigides'
+PRINT: BIEXT(A,B,G_m) --> BIEXT(P,Q;G_m): comma before G_m in the source
+CORRECT: \mathrm{BIEXT}(A,B;\underline{G}_m)
+TEX BEFORE: \mathrm{BIEXT}(A,B,\underline{G}_m)
+NOTE: Typing slip: semicolon before the coefficient group everywhere else (target BIEXT(P,Q;G_m), (4.8.1) Biext^1(A,B;G_m)). The TeX keeps the printed comma.
+
+[id 7I:481]
+WHERE: statement of Corollaire 4.8, line before (4.8.1)
+PRINT: elle donne naissanee
+CORRECT: naissance
+TEX BEFORE: \underline{elle donne naissanee}
+NOTE: Typing error of the print (e for c); the TeX keeps the printed reading.
+
+[id 7I:482]
+WHERE: proof of 4.8, 'Cela se déduit comme (4.7.1)'
+PRINT: CeIa (capital I, serifs on both sides at cap height, for the l)
+CORRECT: Cela
+TEX BEFORE: CeIa se déduit
+NOTE: Typing error of the print (I for l); the TeX keeps the printed reading.
+
+=================== PAGE 274 ===================
+----- corrected edition, expose_VIII_body.tex, page 274 -----
+%%%%%%%%%%  scan idx 285  |  folio 274  %%%%%%%%%%
+
+Par suite, l'annulateur gauche de l'accouplement (4.11.2) (qui est déduit de l'annulateur gauche de (4.11.1) par changement de base) n'est autre que l'image inverse par le premier homomorphisme (4.11.4) de l'annulateur gauche de l'accouplement (4.11.3). Si $C'$ est le plus grand sous-schéma abélien de $A'$ tel que la restriction de $F'$ à $(C',B')$ soit la biextension triviale (donc $C'$ est aussi la composante neutre réduite de l'homomorphisme
+
+\begin{equation}\tag{4.11.5}
+A' \longrightarrow \text{schéma abélien dual de } B'
+\end{equation}
+défini par $F'$), l'annulateur à gauche de (4.11.3) s'identifie à $T_{\ell}(C')$ ; donc l'annulateur à gauche de l'accouplement (4.11.1) n'est autre que l'image inverse de $T_{\ell}(C') \hookrightarrow T_{\ell}(A')$ par le premier morphisme (4.11.4).
+
+En particulier, dire que l'annulateur à gauche de l'accouplement (4.11.1) est réduit à $T_{\ell}(T)$, i.e. que l'annulateur à gauche de (4.11.2) est réduit au noyau $T_{\ell}(T')$ du premier morphisme (4.11.4), revient à dire que l'accouplement (4.11.3) est séparant à gauche i.e. que $C' = 0$, ou encore que le morphisme (4.11.5) défini par $F'$ est à noyau fini. On notera sous cette dernière forme que cette condition ne dépend pas de $\ell$, et il est clair (sous n'importe quelle forme) qu'elle ne dépend pas du choix de l'extension $k'$. Lorsque cette condition est remplie, nous dirons simplement que la biextension donnée $E$ de $(P,Q)$ par $\underline{G}_m$ est \underline{séparante à gauche}. On notera par dualité que cela signifie aussi que le morphisme
+
+\begin{equation}\tag{4.11.6}
+B' \longrightarrow \text{schéma abélien dual de } A'
+\end{equation}
+défini par $F'$ est un épimorphisme (i.e. surjectif).
+----- misprints recorded on page 274 -----
+[id 7I:483]
+WHERE: end of the first paragraph, 'donc l'annulateur à gauche de l'accouplement (1.11.1)'
+PRINT: (1.11.1)
+CORRECT: (4.11.1)
+TEX BEFORE: l'accouplement (1.11.1)
+NOTE: Wrong reference number of the print: the pairing meant is (4.11.1) (cf. 'En particulier, ... l'accouplement (4.11.1)' just after). The TeX keeps the printed reading.
+
+[id 7I:484]
+WHERE: paragraph 'En particulier', 'séparant à gauche i.e, que C' = 0'
+PRINT: i.e, que (comma after the e: same size and descending tail as the comma after '0,' on the same line)
+CORRECT: i.e. que
+TEX BEFORE: gauche i.e. que $C' = 0$
+NOTE: The typescript types a comma for the abbreviation's final full stop; the TeX silently corrects it. Restore the printed comma in the diplomatic text.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: gauche i.e. que
+  NEW: gauche i.e, que
+
+=================== PAGE 276 ===================
+----- corrected edition, expose_VIII_body.tex, page 276 -----
+%%%%%%%%%%  scan idx 287  |  folio 276  %%%%%%%%%%
+
+ déduit de l'homomorphisme canonique $f : P \longrightarrow A$ est surjectif grâce à 4.5 (cf. début démonstration de 4.6), de sorte que l'on peut trouver un isomorphisme
+
+\begin{equation*}
+\mathbb{L} \simeq f^{*}(\underline{M}) \qquad ,
+\end{equation*}
+où $\underline{M}$ est un Module inversible sur $A$. Alors $\delta(\mathbb{L})$ ``est'' l'image inverse de la biextension $\delta(\underline{M})$ de $(A,A)$ par $\underline{G}_{mk}$ .
+
+\underline{Proposition} 4.13. \underline{Sous les conditions de} 4.12, \underline{supposons que} $\mathbb{L}$ \underline{soit un Module inversible} ample \underline{sur} $P$. \underline{Alors si la biextension} $\delta(\mathbb{L})$ \underline{de} $(P,P)$ \underline{par} $\underline{G}_{mk}$ \underline{est définie,} \underline{elle est} séparante (4.11) ; \underline{si} $P$ \underline{est extension d'un schéma abélien} $A$ \underline{par un groupe affine lisse connexe} $L$ \underline{satisfaisant la condition de} 4.7, \underline{alors la biextension de} $(A,A)$ \underline{dont} $\delta(\mathbb{L})$ \underline{provient} (\underline{en vertu de} 4.8) \underline{est de la forme} $\delta(\underline{M})$, \underline{où} $\underline{M}$ \underline{est un Module inversible} ample \underline{sur} $A$.
+
+On est ramené au cas où $k$ est algébriquement clos. Par définition, il suffit alors de prouver, avec les notations de 4.12, que la biextension $\delta(\underline{M})$ de $(A,A)$ est séparante. Or il est prouvé dans la thèse de M. RAYNAUD [2, XI 1.11] que si $\mathbb{L} = f^{*}(\underline{M})$ est ample, il en est de même de $\underline{M}$ . Or il est bien connu par la théorie de A. WEIL que cela implique que $\delta(\underline{M})$ est séparante [1] [2], i.e. que l'homomorphisme de $A$ dans son schéma abélien dual est une isogénie.
+
+\underline{Remarque} 4.14. Plaçons nous dans le cas favorable où $P$ est extension d'un schéma abélien $A$ par un groupe $L$ extension multiple de tores et de groupes $\underline{G}_{a}$, et considérons l'homomorphisme composé canonique 
+----- misprints recorded on page 276 -----
+[id 7I:485]
+WHERE: line after the display L* ≃ f*(M): 'où M est un Module inversible sur M.'
+PRINT: où M est un Module inversible sur M. Alors (second M underlined)
+CORRECT: sur $A$
+TEX BEFORE: où $\underline{M}$ est un Module inversible sur $\underline{M}$.
+NOTE: M is an invertible Module on A, since L* ≃ f*(M) pulls it back to P. The TeX keeps the printed 'sur M'.
+
+[id 7I:486]
+WHERE: first line: 'l'homomorphisme canonique f : A → P'
+PRINT: f : A ⟶ P
+CORRECT: $f : P \longrightarrow A$
+TEX BEFORE: $f : A \longrightarrow P$
+NOTE: f is the projection of the extension P onto A: L* ≃ f*(M) with M on A, and below 'si L = f*(M) est ample, il en est de même de M'. The TeX keeps the printed arrow direction.
+
+=================== PAGE 277 ===================
+----- corrected edition, expose_VIII_body.tex, page 277 -----
+%%%%%%%%%%  scan idx 288  |  folio 277  %%%%%%%%%%
+
+\begin{equation}\tag{4.14.1}
+ \mathrm{NS}(A) \xrightarrow{\ \delta\ } \mathrm{Biext}^{1}(A,A;\underline{G}_{m}) \xrightarrow{\ \sim\ } \mathrm{Biext}^{1}(P,P;\underline{G}_{m}) \qquad .
+\end{equation}
+On sait par 4.8 que la deuxième flèche est bijective, d'autre part il est bien connu en théorie des variétés abéliennes que la première flèche induit un isomorphisme du groupe de Néron-Séveri $\mathrm{NS}(A)$ de $A$ sur le sous-groupe de $\mathrm{Biext}^{1}(A,A,\underline{G}_{m}) = \mathrm{Corr}(A,A)$ formé des (classes de) biextensions ( $\simeq$ correspondances divisorielles) \underline{symétriques}. De ceci résulte que le composé (4.14.1) induit un isomorphisme de $\mathrm{NS}(A)$ avec le groupe des biextensions \underline{symétriques} de $(P,P)$ par $\underline{G}_{m}$ (qui, en vertu de 4.7, peut d'ailleurs se décrire également comme le groupe des (classes de) correspondances divisorielles sur $(P,P)$ qui sont symétriques. Il s'impose d'appeler une correspondance divisorielle sur $(P,P)$ \underline{correspondance divisorielle ample}, et d'appeler encore \underline{biextension ample} de $(P,P)$ par $\underline{G}_{m}$ la biextension correspondante, lorsqu'elle provient d'un élément \underline{ample} du groupe $\mathrm{NS}(A)$. Cette condition étant manifestement invariante par changement du corps de base, on voit que la notion précédente garde un sens sans la condition restrictive mise plus haut sur $P$, en supposant seulement $P$ lisse et connexe.
+
+Notons, lorsqu'on suppose même $L$ ``résoluble sur $k$'' i.e. qu'il se dévisse en groupes $\underline{G}_{a}$ et $\underline{G}_{m}$, qu'il résulte de l'observation précédente, et du fait que l'application (4.12.2) est surjective, que l'image de
+
+\begin{equation}\tag{4.14.2}
+\mathrm{Pic}(P) \xrightarrow{\ \delta\ } \mathrm{Biext}^{1}(P,P;\underline{G}_{m})
+\end{equation}
+est formée des biextensions symétriques, et que son noyau est le sous-groupe $\mathrm{Pic}^{o}(P)$ de $\mathrm{Pic}(P)$ image de $\mathrm{Pic}^{o}(A)$, de sorte que, posant
+
+\begin{equation*}
+\mathrm{NS}(P) = \mathrm{Pic}(P)/\mathrm{Pic}^{o}(P) \ ( \simeq \mathrm{NS}(A)) \qquad , 
+\end{equation*}
+----- misprints recorded on page 277 -----
+[id 7I:487]
+WHERE: '(qui, en vertu de 4.7, peut d'ailleurs se décrire ... qui sont symétriques. Il s'impose'
+PRINT: the parenthesis opened at '(qui,' is never closed
+CORRECT: qui sont symétriques). Il s'impose
+TEX BEFORE: qui sont symétriques. Il s'impose
+NOTE: The TeX keeps the unclosed parenthesis.
+
+=================== PAGE 278 ===================
+----- corrected edition, expose_VIII_body.tex, page 278 -----
+%%%%%%%%%%  scan idx 289  |  folio 278  %%%%%%%%%%
+
+ on peut interpréter également le composé (4.14.1) comme un isomorphisme canonique
+
+\begin{equation}\tag{4.14.3}
+\mathrm{NS}(P) \stackrel{\sim}{\longrightarrow} \mathrm{Biext}^1(P,P;\underline{G}_m)^{\mathrm{sym}}
+\end{equation}
+Notons enfin que le théorème de RAYNAUD cité pour 4.13 s'énonce en disant qu'un élément $\xi$ de $\mathrm{Pic}(P)$ est ample si et seulement si son image $\delta(\xi)$ par 4.14.2 est une classe de biextensions amples.
+
+
+5. \underline{Extensions et biextensions par des schémas en groupes constants tronqués} \underline{sans torsion}
+
+Nous donnons,dans ce numéro et le suivant, quelques résultats auxiliaires, qui seront utilisés au numéro 7 dans le cas $Z = \mathbb{Z}$ .
+
+\underline{Proposition} 5.1. \underline{Soient} $S$ \underline{un schéma géométriquement unibranche} \underline{et irréductible de point générique} $\eta$ , $Z$ \underline{un groupe sans torsion,} \underline{d'où un schéma en groupes constant} $Z_S$ \underline{sur} $S$. \underline{Alors tout torseur} $E$ \underline{sous le schéma en groupes} $Z_S$ \underline{est trivial,} \underline{et le foncteur} $E \longmapsto E(\eta)$ \underline{de la catégorie des torseurs sous} $Z_S$ \underline{dans la catégorie des torseurs sous} $Z = Z_S(\eta)$ \underline{est une équivalence de catégories.}
+
+Un lemme connu de théorie de la descente (SGA 3 X 5.4) nous montre que tout torseur $E$ sous $Z_S$ est représentable (ce résultat étant valable pour tout schéma en groupes sur $S$ qui est séparé, localement de présentation finie et localement quasi-fini sur $S$). Comme $Z_S$ est étale sur $S$, il en est de même par descente fpqc de tout torseur $E$ sous $Z_S$, qui est donc localement trivial pour la \underline{topologie étale} (et non seulement
+----- misprints recorded on page 278 -----
+[id 7I:488]
+WHERE: proof of 5.1: 'tout torseur E sous G_S est représentable'
+PRINT: sous G_S
+CORRECT: sous $Z_S$ est représentable
+TEX BEFORE: sous $G_S$ est représentable
+NOTE: No G is defined here. The statement concerns Z_S, and the parenthesis extends it to any separated, l.p.f., locally quasi-finite group scheme. The TeX keeps G_S.
+
+[id 7I:489]
+WHERE: heading of section 5
+PRINT: Extensions et biextensions par des schémas en groupes constants tronqués sans torsion
+CORRECT: \underline{Extensions et biextensions par des schémas en groupes constants tordus}
+TEX BEFORE: \underline{Extensions et biextensions par des schémas en groupes constants tronqués}
+NOTE: 'constants tronqués' gives no sense; 'constants tordus' (twisted constant) is the usual term. Verify against the volume's table of contents before correcting. The TeX keeps the printed word.
+
+=================== PAGE 279 ===================
+----- corrected edition, expose_VIII_body.tex, page 279 -----
+%%%%%%%%%%  scan idx 290  |  folio 279  %%%%%%%%%%
+la topologie fppf). Pour prouver que $E$ est trivial, il suffit donc de prouver qu'on a
+
+\begin{equation*}
+H^1(S_{\acute{e}t},Z_S) = e \quad ,
+\end{equation*}
+et de même l'assertion de pleine fidèlité de 5.1 se réduit à la relation
+
+\begin{equation*}
+H^o(S_{\acute{e}t},Z_S) \stackrel{\sim}{\longleftarrow} Z \quad .
+\end{equation*}
+Cette dernière étant triviale, prouvons la première. Pour ceci, considérons l'inclusion
+
+\begin{equation*}
+i : \eta \longrightarrow S \quad ,
+\end{equation*}
+on a alors, grâce au fait que $S$ est géométriquement unibranche
+
+\begin{equation*}
+i_*(Z_\eta) \stackrel{\sim}{\longleftarrow} Z_S
+\end{equation*}
+(SGA 4 IX 2.14.1), d'où par la suite exacte non commutative de bas degrés tenant lieu de suite spectrale de Leray pour $i : \eta \longrightarrow S$ (SGA 4 XII 3.2) :
+
+\begin{equation*}
+e \longrightarrow H^1(S,i_*(Z_\eta)) \longrightarrow H^1(\eta,Z_\eta) \quad .... \quad ,
+\end{equation*}
+le fait que $H^1(S,Z_S) \longrightarrow H^1(\eta,Z_\eta))$ est injectif. On est donc ramené au cas où $S$ est le spectre d'un corps $k$. Si $\pi$ est le groupe de Galois d'une clôture séparable de $k$, on aura donc
+
+\begin{equation*}
+H^1(k,Z) = \mathrm{Hom}\ \mathrm{cont}(\pi,Z)/Z = e \quad ,
+\end{equation*}
+puisque $Z$ est sans torsion. Cela achève la démonstration.
+
+\underline{Corollaire} 5.2. \underline{Avec les notations de} 5.1, \underline{soit} $P$ \underline{un schéma lisse sur} $S$. \underline{Alors tout torseur} $E$ \underline{sous} $Z_P$ \underline{est trivial,} \underline{et le foncteur} $E \longmapsto E_\eta$ \underline{de la} \underline{catégorie des torseurs sur} $P$ \underline{de groupe} $Z_P$ \underline{dans la catégorie des torseurs}
+----- misprints recorded on page 279 -----
+[id 7I:490]
+WHERE: 'l'assertion de pleine fidèlité de 5.1'
+PRINT: fidèlité
+CORRECT: pleine fidélité de 5.1
+TEX BEFORE: pleine fidèlité de 5.1
+NOTE: Accent error in the typescript; the TeX keeps it.
+
+[id 7I:491]
+WHERE: 'le fait que H¹(S,Z_S) → H¹(η,Z_η)) est injectif'
+PRINT: H¹(η,Z_η)) with an extra closing parenthesis
+CORRECT: H^1(\eta,Z_\eta)$ est injectif
+TEX BEFORE: H^1(\eta,Z_\eta))$ est injectif
+NOTE: Unbalanced parenthesis kept by the TeX.
+
+[id 7I:492]
+WHERE: end of proof of 5.1: 'puisque E est sans torsion'
+PRINT: puisque E est sans torsion
+CORRECT: puisque $Z$ est sans torsion
+TEX BEFORE: puisque $E$ est sans torsion
+NOTE: The torsion-free group is Z (Hom cont(π,Z) is trivial because π is profinite and Z torsion-free); E is the torsor. The TeX keeps E.
+
+[id 7I:493]
+WHERE: Corollaire 5.2: 'le foncteur E ↦ E_η de la catégorie des torseurs sur P_η de groupe Z_{P_η} dans la catégorie des torseurs'
+PRINT: catégorie des torseurs sur P_η de groupe Z_{P_η} dans la catégorie des torseurs (p. 280 continues 'sur P_η de groupe Z_{P_η}')
+CORRECT: \underline{catégorie des torseurs sur} $P$ \underline{de groupe} $Z_P$ \underline{dans la catégorie des torseurs}
+TEX BEFORE: \underline{catégorie des torseurs sur} $P_\eta$ \underline{de groupe} $Z_{P_\eta}$ \underline{dans la catégorie des torseurs}
+NOTE: The source category of E ↦ E_η must be the torsors on P under Z_P; the print gives the generic-fibre category twice. The TeX keeps the printed reading.
+
+=================== PAGE 280 ===================
+----- corrected edition, expose_VIII_body.tex, page 280 -----
+%%%%%%%%%%  scan idx 291  |  folio 280  %%%%%%%%%%
+\underline{sur} $P_\eta$ \underline{de groupe} $Z_{P_\eta}$ \underline{est une équivalence de catégories}.
+
+En effet, $P$ est géométriquement unibranche (EGA IV 17.5.7), et comme chaque composante irréductible de $P$ domine $S$, $P$ étant plat sur $S$, l'ensemble des composantes irréductibles de $P$ est localement fini. Donc $P$ est un préschéma somme de préschémas irréductibles géométriquement unibranches $P_i$ . Ceci dit, 5.2 résulte aussitôt de 5.1 appliqué aux divers $P_i$ et aux $P_{i\eta}$ , compte tenu que le point générique $p_i$ de $P_i$ est aussi point générique de $P_{i\eta}$ .
+
+5.2.1. Du corollaire précédent résulte aussitôt l'énoncé analogue pour les bitorseurs sur $P$ sous $(Z_P,Z_P)$ : le foncteur $E \longmapsto E_\eta$ de la catégorie de ceux-ci, dans la catégorie des bitorseurs sur $P_\eta$ sous $(Z_{P_\eta} ,Z_{P_\eta} )$ est une équivalence de catégories. En effet, il suffit d'expliciter la structure de bitorseur de $E$ en termes de celle de torseur à droite sous $Z_P$ , muni d'un isomorphisme de $Z_P$ dans le commutant de $Z_P$ pour son opération sur $E$, en utilisant le fait que $E$ est nécessairement trivial donc que le commutant en question est isomorphe à $Z_P$ lui-même. On est donc ramené à la remarque triviale suivante pour les composantes irréductibles $X$ de $P$ : si $X$ est un schéma connexe non vide, le foncteur $Z \longmapsto Z_X$ de la catégorie des ensembles dans celle des $X$-schémas est pleinement fidèle.
+
+\underline{Proposition} 5.3. \underline{Soient} $S$ \underline{et} $Z$ \underline{comme dans} 5.1, \underline{et} $P$ \underline{un schéma en groupes} \underline{lisse sur} $S$. \underline{Considérons les extensions} $E$ \underline{de schémas en groupes de} $P$ \underline{par} $Z_S$ . \underline{Alors le foncteur} $E \longmapsto E_\eta$ , \underline{allant de la catégorie de ces extensions} \underline{dans celle des extensions de schémas en groupes de} $P_\eta$ \underline{par} $Z_\eta$ , \underline{est une}
+----- misprints recorded on page 280 -----
+[id 7I:494]
+WHERE: end of proof of 5.2: 'le point générique p_i de P_i est aussi point générique de P_i .'
+PRINT: aussi point générique de P_i .
+CORRECT: est aussi point générique de $P_{i\eta}$ .
+TEX BEFORE: est aussi point générique de $P_i$ .
+NOTE: As printed the clause is tautological; 5.1 is applied to the P_i and to the P_{iη}, so the generic point of P_i must also be that of P_{iη}. The TeX keeps P_i.
+
+=================== PAGE 282 ===================
+----- corrected edition, expose_VIII_body.tex, page 282 -----
+%%%%%%%%%%  scan idx 293  |  folio 282  %%%%%%%%%%
+
+\underline{Proposition} 5.5. \underline{Soient} $k$ \underline{un corps}, $Z$ \underline{un groupe sans torsion}, $P$ \underline{un} $k$\underline{-schéma en groupes localement de type fini}, $P^{o}$ \underline{la composante neutre}, $\Phi = P/P^{o}$ \underline{le groupe des composantes connexes} (SGA 3 $\mathrm{VI}_{A}$ 4). \underline{Alors}
+
+(i) \underline{Le foncteur naturel allant de la catégorie des schémas en groupes, extensions (resp. extensions commutatives) de} $\Phi$ \underline{par} $Z_{k}$ , \underline{dans la catégorie des schémas en groupes extensions (resp. extensions commutatives) de} $P$ \underline{par} $Z_{k}$ , \underline{est une équivalence de catégories. En particulier, si} $P$ \underline{est connexe, toute extension de} $P$ \underline{par} $Z_{k}$ \underline{est triviale, et la catégorie de ces extensions est rigide.}
+
+(ii) \underline{Supposons que} $\Phi$ \underline{soit un groupe de torsion (p.ex.} $P$ \underline{de type fini), et} $P$ \underline{et} $Z$ \underline{commutatifs. Alors la catégorie des extensions de} $P$ \underline{par} $Z_{k}$ \underline{est rigide, i.e. tout automorphisme d'un objet de cette catégorie est trivial. Si de plus il existe} $n > 0$ \underline{tel que} $n.\mathrm{id}_{\Phi} = 0$, \underline{par exemple si} $\Phi$ \underline{est fini} p.ex. $P$ \underline{de type fini, alors le groupe des classes d'extensions commutatives de} $P$ \underline{par} $Z_{k}$ \underline{est donné par un isomorphisme canonique}
+
+\begin{equation}\tag{5.5.1}
+\mathrm{Ext}^{1}(P,Z_{k}) \quad \xleftarrow{\;\sim\;} \quad \mathrm{Hom}(\Phi\ ,\ (Z\otimes_{\mathbb{Z}}\mathbb{Q})/Z\ ) \qquad ,
+\end{equation}
+\underline{donné par l'opérateur cobord de la suite exacte des} $Ext$ \underline{déduite de la suite exacte}
+
+\begin{equation}\tag{5.5.2}
+0 \longrightarrow Z \longrightarrow Z\otimes_{\mathbb{Z}}\mathbb{Q} \longrightarrow (Z\otimes_{\mathbb{Z}}\mathbb{Q})/Z \longrightarrow 0 \qquad .
+\end{equation}
+Notons que le morphisme canonique
+
+\begin{equation*}
+P \longrightarrow \Phi
+\end{equation*}
+induit évidemment un isomorphisme sur les ensembles de composantes irréductibles, car c'est un morphisme plat à fibres irréductibles.
+----- misprints recorded on page 282 -----
+[id 7I:495]
+WHERE: Prop. 5.5 (ii), last line before (5.5.1)
+PRINT: d'extensions commutatives de P par G_k est donné par un isomorphisme canonique
+CORRECT: $Z_{k}$
+TEX BEFORE: \underline{par} $G_{k}$ \underline{est donné par un isomorphisme canonique}
+NOTE: Leftover G for the constant group Z (cf. Ext^1(P,Z_k) in (5.5.1)). The target is the unique "$G_{k}$" on this page. TeX keeps the printed reading.
+
+[id 7I:496]
+WHERE: Prop. 5.5 (ii), 'par exemple si Φ est fini p.ex. Z de type fini'
+PRINT: par exemple si Φ est fini p.ex. Z de type fini,
+CORRECT: p.ex. $P$
+TEX BEFORE: \underline{est fini} p.ex. $Z$ \underline{de type fini,
+NOTE: Φ = P/P^o is finite when P is of finite type (as in '(p.ex. P de type fini)' earlier in (ii)). Z of finite type is no instance of 'Φ fini' and is not used in the proof. Target "p.ex. $Z$". TeX keeps the printed reading. May be an authorial slip.
+
+=================== PAGE 283 ===================
+----- corrected edition, expose_VIII_body.tex, page 283 -----
+%%%%%%%%%%  scan idx 294  |  folio 283  %%%%%%%%%%
+
+Donc en vertu de 5.1, le foncteur induit de la catégorie des torseurs sous $Z_{\Phi}$ dans la catégorie des torseurs sous $Z_{P}$ est une équivalence de catégories. (On se rappelera qu'un schéma en groupes localement de type fini sur $k$ est géométriquement unibranche). La même conclusion s'applique aux catégories de bitorseurs, et aux morphismes
+
+\begin{equation*}
+P \times P \longrightarrow \Phi \times \Phi \quad , \qquad P \times P \times P \longrightarrow \Phi \times \Phi \times \Phi \qquad .
+\end{equation*}
+La description VII 1.1.6 des extensions de $P$ par $Z_{k}$ resp. de $\Phi$ par $Z_{k}$ (et VII 1.3 dans le cas d'extensions commutatives) implique alors les assertions de (i). Bornons nous maintenant au cas des extensions commutatives. Alors le groupe des automorphismes d'une extension de $P$ par $Z_{k}$ est le groupe
+
+\begin{equation*}
+\mathrm{Hom}(P,Z_{k}) \quad \simeq \quad \mathrm{Hom}(\Phi,Z_{k}) \qquad ,
+\end{equation*}
+qui est évidemment nul si $\Phi$ est un groupe de torsion. On a de même, si $V = Z\otimes_{\mathbb{Z}}\mathbb{Q}$ , et lorsque $\Phi$ est fini,
+
+\begin{equation*}
+\mathrm{Ext}^{i}(\Phi,V_{k}) = 0 \qquad \text{pour tout } i \in \mathbb{Z} \qquad ,
+\end{equation*}
+car les groupes envisagés sont des vectoriels sur $\mathbb{Q}$ annulés par l'entier $n > 0$. L'isomorphisme (5.5.1) en résulte aussitôt.
+
+On prouve de la même façon essentiellement :
+
+\underline{Corollaire} 5.6. \underline{Soient} $k$ \underline{un corps}, $Z$ \underline{un groupe commutatif sans torsion}, $P$ \underline{et} $Q$ \underline{deux schémas en groupes commutatifs localement de type fini sur} $k$ , $\Phi = P/P^{o}$ \underline{et} $\Psi = Q/Q^{o}$ \underline{les groupes des composantes connexes.} \underline{Alors} :
+
+(i) \underline{Le foncteur naturel, allant de la catégorie des biextensions}
+----- misprints recorded on page 283 -----
+[id 7I:497]
+WHERE: first paragraph, parenthesis
+PRINT: (On se rappelera qu'un schéma en groupes
+CORRECT: rappellera
+TEX BEFORE: (On se rappelera qu'un
+NOTE: Spelling error of the print. TeX keeps the printed reading.
+
+[id 7I:498]
+WHERE: second paragraph, 'd'une extension de P par G_k est le groupe'
+PRINT: d'une extension de P par G_k est le groupe
+CORRECT: par $Z_{k}$ est le groupe
+TEX BEFORE: d'une extension de $P$ par $G_{k}$ est le groupe
+NOTE: Leftover G for Z (extensions of P by Z_k). Target "par $G_{k}$ est le groupe". TeX keeps the printed reading.
+
+[id 7I:499]
+WHERE: display after 'est le groupe'
+PRINT: Hom(P,G_k) ≃ Hom(Φ,G_k) ,
+CORRECT: \mathrm{Hom}(P,Z_{k}) \quad \simeq \quad \mathrm{Hom}(\Phi,Z_{k})
+TEX BEFORE: \mathrm{Hom}(P,G_{k}) \quad \simeq \quad \mathrm{Hom}(\Phi,G_{k})
+NOTE: Both G_k should be Z_k: automorphisms of an extension by Z_k, which vanish for Φ torsion because Z is torsion-free. TeX keeps the printed reading.
+
+[id 7I:500]
+WHERE: 'On a de même, si V = G⊗_ℤ Q'
+PRINT: si V = G⊗_ℤ Q , et lorsque Φ est fini,
+CORRECT: $V = Z\otimes_{\mathbb{Z}}\mathbb{Q}$
+TEX BEFORE: $V = G\otimes_{\mathbb{Z}}\mathbb{Q}$
+NOTE: V is Z⊗Q as in (5.5.2). TeX keeps the printed reading.
+
+[id 7I:501]
+WHERE: Cor. 5.6, second line
+PRINT: deux schémasen groupes commutatifs
+CORRECT: schémas en
+TEX BEFORE: \underline{deux schémasen groupes commutatifs
+NOTE: Missing word space in the print. TeX keeps "schémasen".
+
+[id 7I:502]
+WHERE: Cor. 5.6, 'les groupes des composantes neutres'
+PRINT: Φ = P/P^o et Ψ = Q/Q^o les groupes des composantes neutres.
+CORRECT: composantes connexes
+TEX BEFORE: \underline{les groupes des composantes neutres.}
+NOTE: P/P^o is the group of connected components (5.5: 'le groupe des composantes connexes'); 'neutres' is a slip. Target "composantes neutres". TeX keeps the printed reading.
+
+=================== PAGE 284 ===================
+----- corrected edition, expose_VIII_body.tex, page 284 -----
+%%%%%%%%%%  scan idx 295  |  folio 284  %%%%%%%%%%
+\underline{de} $(\Phi,\Psi)$\underline{par} $Z_k$ \underline{dans celle des biextensions de} $(P,Q)$ \underline{par} $Z_k$ \underline{est une équivalence de catégories. Si en particulier} $P$ \underline{ou} $Q$ \underline{est connexe,} \underline{la catégorie des biextensions de} $(P,Q)$ \underline{par} $Z_k$ \underline{est équivalente à la catégorie ponctuelle.}
+
+(ii) \underline{Supposons que} $\Phi$ \underline{ou} $\Psi$ \underline{soit un groupe de torsion.} \underline{Alors la catégorie des biextensions de} $(P,Q)$ \underline{par} $Z_k$ \underline{est rigide.} \underline{Si de plus il existe un entier} $n > 0$ \underline{tel que} $n.\mathrm{id}_{\Phi} = 0$ \underline{ou} $n.\mathrm{id}_{\Psi} = 0$, \underline{alors le groupe des classes de biextensions de} $(P,Q)$ \underline{par} $Z_k$ \underline{est donné par un isomorphisme canonique}
+
+\begin{equation}\tag{5.6.1}
+\mathrm{Biext}^1(P,Q;\ Z_k) \xleftarrow{\ \sim\ } \mathrm{Hom}(\Phi \otimes \Psi\ ,\ (Z \otimes_{\mathbb{Z}} \mathbb{Q})/Z) \quad ,
+\end{equation}
+\underline{donné par l'opérateur cobord de la suite exacte des} $\mathrm{Biext}^i$ $(i=0,1)$ \underline{déduite de la suite exacte} (5.5.2).
+
+5.7. Soient $S$ un schéma, $T$ un sous-schéma fermé, $Z$ un ensemble. Appelons \underline{schéma constant sur} $S$ \underline{tronqué sur} $T$, \underline{de valeur} $Z$, et désignons par $Z_{S,T}$ , le schéma obtenu par recollement en prenant la somme de $Z$ copies $S_z$ ($z \in Z$) de $S$, qu'on recolle suivant l'ouvert $U = S-T$ complémentaire de $T$. Donc on a
+
+\begin{equation}\tag{5.7.1}
+Z_{S,T} \times_S U \simeq U \quad , \quad Z_{S,T} \times_S T \simeq Z_T \quad ,
+\end{equation}
+et $Z_{S,T}$ est un schéma \underline{étale sur} $S$. Pour un $S$-schéma variable $S'$, on a un isomorphisme fonctoriel en $S'$ :
+
+\begin{equation}\tag{5.7.2}
+\mathrm{Hom}_S(S',Z_{S,T}) \simeq \mathrm{Hom}_T(S'_T,Z_T) \quad ,
+\end{equation}
+la flèche étant définie par "restriction à $S'_T$ ",compte tenu du deuxième isomorphisme (5.7.1) ; nous laissons au lecteur le soin de vérifier que cette flèche est bijective. Désignant par 
+----- misprints recorded on page 284 -----
+[id 7I:503]
+WHERE: (5.6.1)
+PRINT: Biext^1(P,Q; G_k) ←~ Hom(Φ⊗Ψ , (Z⊗_ℤ Q)/Z ) ,
+CORRECT: \mathrm{Biext}^1(P,Q;\ Z_k)
+TEX BEFORE: \mathrm{Biext}^1(P,Q;\ G_k)
+NOTE: The statement concerns biextensions of (P,Q) by Z_k; G is leftover notation. TeX keeps the printed reading.
+
+=================== PAGE 285 ===================
+----- corrected edition, expose_VIII_body.tex, page 285 -----
+%%%%%%%%%%  scan idx 296  |  folio 285  %%%%%%%%%%
+
+\begin{equation*}
+ i : T \longrightarrow S
+\end{equation*}
+l'inclusion, l'isomorphisme fonctoriel (5.7.2) peut aussi s'écrire comme un isomorphisme de faisceaux
+
+\begin{equation}\tag{5.7.3}
+Z_{S,T} \simeq i_*(Z_T) \quad .
+\end{equation}
+On voit sur cette formule, ou directement sur la définition, que pour $Z$ variable, $Z_{S,T}$ dépend fonctoriellement de $Z$, ledit foncteur commutant aux limites projectives finies. Il transforme en particulier groupes en groupes, groupes commutatifs en groupes commutatifs, ce qui est également clair sur la forme (5.7.2) du foncteur représenté par $Z_{S,T}$ .
+
+Signalons aussi qu'il est trivial sur la définition, ou sur (5.7.3), que la formation de $Z_{S,T}$ commute à tout changement de base $f : S' \longrightarrow S$, qui donne naissance à un isomorphisme de foncteurs en $Z$
+
+\begin{equation}\tag{5.7.4}
+Z_{S,T} \times_S S' \simeq Z_{S',T'} \quad , \quad \text{où } T' = T \times_S S' = T_{S'} \quad .
+\end{equation}
+5.8. Nous nous proposons d'étudier les torseurs $E$ sous un groupe de la forme $Z_{S,T}$ , où $Z$ est un groupe, qu'on suppose ici commutatif pour simplifier. On a un foncteur naturel
+
+\begin{equation}\tag{5.8.0}
+E \longmapsto E_T
+\end{equation}
+de la catégorie des torseurs sous $Z_{S,T}$ dans la catégorie des torseurs sous $Z_T$ . Je dis que ce foncteur est une \underline{équivalence de catégories}. En effet, le fait qu'il est pleinement fidèle, i.e. que pour deux torseurs, $E,F$ sous $Z_{S,T}$ , l'application $\mathrm{Hom}(E,F) \longrightarrow \mathrm{Hom}(E_T,F_T)$ est bijective, se ramène immédiatement par descente fpqc au cas où $E$ et $F$
+----- misprints recorded on page 285 -----
+[id 7I:504]
+WHERE: end of the paragraph after (5.7.3)
+PRINT: clair sur la forme (2.7.2) du foncteur représenté par Z_{S,T} .
+CORRECT: (5.7.2)
+TEX BEFORE: sur la forme (2.7.2) du foncteur
+NOTE: Wrong reference number: the functor represented by Z_{S,T} is the one in (5.7.2) on p. 284. TeX keeps the printed reading.
+
+[id 7I:505]
+WHERE: 5.8, 'pour deux torseurs, E,F sous G_{S,T}'
+PRINT: pour deux torseurs, E,F sous G_{S,T} ,
+CORRECT: $Z_{S,T}$
+TEX BEFORE: $E,F$ sous $G_{S,T}$
+NOTE: These are torsors under Z_{S,T}; G is leftover notation. TeX keeps the printed reading.
+
+=================== PAGE 287 ===================
+----- corrected edition, expose_VIII_body.tex, page 287 -----
+%%%%%%%%%%  scan idx 298  |  folio 287  %%%%%%%%%%
+\underline{des faisceaux en groupes commutatifs extensions de} $P$ \underline{par} $Z_{S,T}$ , \underline{et la catégorie des faisceaux en groupes commutatifs extensions de} $P_T$ \underline{par} $Z_T$ .
+
+On trouve, par une démonstration essentiellement identique :
+
+\underline{Corollaire} 5.10. \underline{Avec les notations de} 5.9, \underline{soit de plus} $Q$ \underline{un schéma en groupes commutatifs sur} $S$. \underline{Alors le foncteur restriction à} $T$ \underline{induit une équivalence entre la catégorie des biextensions de} $(P,Q)$ \underline{par} $Z_{S,T}$ , \underline{et la catégorie des biextensions de} $(P_T,Q_T)$ \underline{par} $Z_T$ .
+
+6. \underline{Extensions et biextensions par le modèle de Néron de $G_m$} .
+
+6.1. Soient $S$ un schéma, $T$ un sous-schéma fermé, $Z$ un ensemble, d'où un schéma constant tronqué $Z_{S,T}$ sur $S$ (5.7). On a un homomorphisme canonique, fonctoriel en $Z$, de schémas étales sur $S$ :
+
+\begin{equation}\tag{6.1.1}
+Z_S \longrightarrow Z_{S,T} \quad ,
+\end{equation}
+qui est un morphisme \underline{surjectif}, comme il résulte aussitôt de (5.7.1). De sa fonctorialité en $Z$ résulte que lorsque $Z$ est un groupe, (6.1.1) est un homomorphisme de schémas en groupes étales sur $S$. Son noyau est donc un schéma en groupes étale sur $S$, noté $Z_{S,U}$ , et on a une suite exacte canonique, fonctorielle en $Z$ :
+
+\begin{equation}\tag{6.1.2}
+0 \longrightarrow Z_{S,U} \longrightarrow Z_S \longrightarrow Z_{S,T} \longrightarrow 0 \quad .
+\end{equation}
+On constate aussitôt, gra\^{c}e à (5.7.1), que $Z_{S,U}$ est la somme d'une famille de $S$-schémas $S_n$ , $n \in Z$, avec $S_n = S$ pour $n = 0$, et $S_n = U$ pour $n \neq 0$. De cette description de $Z_{S,U}$ résulte aisément que pour tout
+----- misprints recorded on page 287 -----
+[id 7I:506]
+WHERE: 6.1, after (6.1.2): 'On constate aussitôt, graĉe à (5.7.1)'
+PRINT: graĉe (typed circumflex sits on the c)
+CORRECT: grâce
+TEX BEFORE: gra\^{c}e
+NOTE: The typist put the circumflex on the c instead of the a. The TeX keeps the printed reading.
+
+=================== PAGE 288 ===================
+----- corrected edition, expose_VIII_body.tex, page 288 -----
+%%%%%%%%%%  scan idx 299  |  folio 288  %%%%%%%%%%
+Groupe $F$ sur $S$, l'application de restriction à $U$ induit une bijection :
+
+\begin{equation}\tag{6.1.3}
+\mathrm{Hom}_{gr}(Z_{S,U},F) \;\xrightarrow{\,\sim\,}\; \mathrm{Hom}_{gr}(Z_U,F|U) \qquad .
+\end{equation}
+6.1.4. Nous supposons par la suite $Z$ commutatif, et nous nous proposons d'examiner les extensions de Groupes commutatives de $Z_{S,T}$ par un Groupe commutatif donné $G$ sur $S$. Par la suite exacte (6.1.2), la catégorie de ces extensions est équivalente à la catégorie des extensions $F$ de $Z_S$ par $G$, munies d'une trivialisation de l'image inverse de cette extension par $Z_{S,U} \longrightarrow Z_S$ . En vertu de (6.1.3), une telle trivialisation revient à la donnée d'une trivialisation de l'extension $F|U$ de $Z_U$ par $G|U$ .
+
+Pour la suite, nous prendrons pour $Z$ le groupe $\mathbb{Z}$ des entiers, donc $\mathbb{Z}_S$ est le Groupe libre à un générateur, et VII 1.4 nous fournit une équivalence entre la catégorie des extensions de $\mathbb{Z}_S$ par $G$, et la catégorie des torseurs sous $G$. On trouve donc, en appliquant le même résultat à $Z_U$ et $G|U$ :
+
+\underline{Lemme} 6.2. \underline{Soient} $S$ \underline{un schéma}, $T$ \underline{un sous-schéma fermé}, $U = S-T$, $G$ \underline{un Groupe commutatif sur} $S$. \underline{La catégorie des Groupes commutatifs sur} $S$ \underline{extensions de} $\mathbb{Z}_{S,T}$ (\underline{défini dans} (5.7)) \underline{par} $G$ \underline{est équivalente à la catégorie des couples} $(F,s)$ \underline{formés d'un torseur} $F$ \underline{sous} $G$ \underline{et d'une section} $s$ \underline{de} $F|U$. \underline{Si} $\alpha : S \longrightarrow \mathbb{Z}_{S,T}$ \underline{est la section de} $\mathbb{Z}_{S,T}$ \underline{image de la section} $1$ \underline{de} $\mathbb{Z}_S$ \underline{sur} $S$, \underline{à l'extension} $\overline{G}$ \underline{de} $\mathbb{Z}_{S,T}$ \underline{par} $G$ \underline{correspond le torseur} $F = \alpha^*(\overline{G})$ \underline{sous} $G$, \underline{muni de la section de} $F|U$ \underline{donnée par la restriction à} $U$ \underline{de la section unité de} $\overline{G}$ .
+----- misprints recorded on page 288 -----
+[id 7I:507]
+WHERE: 6.1.4, second paragraph: 'la catégorie des extensions de ℤ_Z par G'
+PRINT: ℤ_Z
+CORRECT: $\mathbb{Z}_S$
+TEX BEFORE: $\mathbb{Z}_Z$
+NOTE: Wrong index. The free Groupe on one generator named just before is ℤ_S. The TeX keeps the printed reading.
+
+=================== PAGE 289 ===================
+----- corrected edition, expose_VIII_body.tex, page 289 -----
+%%%%%%%%%%  scan idx 300  |  folio 289  %%%%%%%%%%
+
+6.2.1. Si $\overline{G}$ correspond au couple $(F,s)$, l'image inverse $f^*_n(\overline{G})$ dans $\overline{G}$ de la section $f_n$ de $\mathbb{Z}_{S,T}$, définie par la section constante de valeur $n \in \mathbb{Z}$ de $\mathbb{Z}_S$ , s'identifie canoniquement, comme torseur sous $G$, à la puissance $n$.ième $F^{(n)}$ du $G$-torseur $F$ ; l'isomorphisme canonique de $G_U$-torseurs $f^*_n(\overline{G})|U \simeq G_U$ , définie par la première relation (5.7.1), est définie par la section $s^{(n)}$ de $F^{(n)}_U$ puissance $n$.ème de la section donnée $s$ de $F_U$ . De cette explicitation résulte la description suivante des sections de $\overline{G}$ sur $S$ : une section $\overline{g}$ de $\overline{G}$ sur $S$ est définie par
+
+a) une section $\underline{n}$ de $\mathbb{Z}_{S,T}$ sur $S$, qu'on peut interpréter comme une section de $\mathbb{Z}_T$ i.e. une fonction localement constante sur $T$ à valeurs dans $\mathbb{Z}$ , ou si on préfère, une partition $T = \coprod\limits_{i \in \mathbb{Z}} T_i$ de $T$ en somme disjointe de parties ouvertes indexées par les $i \in \mathbb{Z}$ ;
+
+b) une famille de sections
+
+\begin{multline*}
+\overline{g}_i \in \Gamma\,(F^{(i)}/S'_i) \;\;,\;\; i \in \mathbb{Z},\;\; \text{où } S'_i = S - T'_i \;\;,\;\; T'_i = \bigcup_{\substack{j \in \mathbb{Z} \\ j \neq i}} T_j \;\;,
+\end{multline*}
+les sections $\overline{g}_i$ pour $i \in \mathbb{Z}$ étant liées par la condition de compatibilité suivante : pour $i,j \in \mathbb{Z}$, $g_i$ et $g_j$ coïncident sur $S'_i \cap S'_j = U$, quand on identifie $F^{(i)}|U$ et $F^{(j)}|U$ à $G_U$ , grâce à la section $s^{(i)}$ resp. $s^{(j)}$ de ces torseurs. En d'autres termes, il doit exister une section $h_{ij} \in \Gamma(G/U)$, évidemment uniquement déterminée, telle qu'on ait
+
+\begin{equation*}
+\overline{g}_i = h_{ij}s^{(i)} \;\;,\;\; \overline{g}_j = h_{ij}s^{(j)} \qquad .
+\end{equation*}
+Comme la description 6.2 d'une extension $\overline{G}$ de $\mathbb{Z}_{S,T}$ par $G$ est évidemment compatible avec tout changement de base $S' \longrightarrow S$, ce qui précède donne une description complète du faisceau $\overline{G}$ comme foncteur
+----- misprints recorded on page 289 -----
+[id 7I:508]
+WHERE: 6.2.1 b), compatibility condition: 'pour i,j ∈ ℤ, g_i et g_j coïncident'
+PRINT: g_i et g_j (no bars)
+CORRECT: $\overline{g}_i$ et $\overline{g}_j$ coïncident
+TEX BEFORE: $g_i$ et $g_j$ coïncident
+NOTE: The sections are ḡ_i, as in the lines before and after and in 6.2.2; the bars are missing in the print. The TeX keeps the printed reading.
+
+[id 7I:509]
+WHERE: last paragraph: 'Comme la description 3.2 d'une extension Ḡ de ℤ_{S,T} par G'
+PRINT: 3.2
+CORRECT: la description 6.2
+TEX BEFORE: la description 3.2
+NOTE: Probably a wrong reference number. The description of extensions of ℤ_{S,T} by G is Lemme 6.2, and ℤ_{S,T} is only defined in 5.7. The TeX keeps the printed reading; verify before correcting.
+
+=================== PAGE 290 ===================
+----- corrected edition, expose_VIII_body.tex, page 290 -----
+%%%%%%%%%%  scan idx 301  |  folio 290  %%%%%%%%%%
+en l'argument $S' \in \mathrm{Ob}\ \mathrm{Sch}_{/S}$.
+
+6.2.2  Lorsque $T$ est un schéma somme de schémas connexes non vides $T_i$ , $i \in I$, alors la description 6.2.1 des sections de $\overline{G}$ sur $S$ peut se simplifier : une telle section est définie par une famille d'entiers $(n_i)_{i \in I}$ indexée par le même ensemble $I$, une famille des sections $\overline{g}_i \in \Gamma\,(F^{(n_i)}/S_i')$, pour $i \in I$, où $S_i' = S-T_i'$ , $T_i' = \coprod_{\substack{j \in I \\ j \neq i}} T_j$, les $\overline{g}_i$ satisfaisant à la condition de compatibilité suivante : pour tout couple d'léments $i,j \in I$, les restrictions de $\overline{g}_i$ et $\overline{g}_j$ à $S_i' \cap S_j' = U$ s'identifient, modulo l'identification de $F^{(n_i)}|U$ et de $F^{(n_j)}|U$, déduites des sections $s^{(n_i)}$ resp. $s^{(n_j)}$ de ces torseurs.
+
+6.2.3.  Lorsqu'on suppose enfin $T$ connexe non vide, la donnée d'une section $\overline{g}$ de $\overline{G}$ sur $S$ revient à la donnée d'un entier $n$, et d'une section $\overline{g}$ de $F^{(n)}$ sur $S$. Il n'y a plus de condition de compatibilité à imposer, de sorte que la section $s$ de $F|U$ est absente de la description du groupe des sections de $\overline{G}$ sur $S$. (Mais $s$ apparaît de nouveau, bien entendu, dès qu'on se propose de donner une description des points de $\overline{G}$ à valeurs dans un $S$-schéma général $S'$.)
+
+6.2.4.  Comme $\overline{G}$ est réunion des ``ouverts'' $f^*_n(\overline{G})$ ($n \in \mathbb{Z}$) décrits dans 6.2.1, on en conclut que $\overline{G}$ est représentable si et seulement si les torseurs $F^{(n)}$ le sont. Il suffit par exemple, pour ceci, que $G$ soit représentable et soit un schéma en groupes affine sur $S$, grâce à la théorie de la descente SGA 1 VIII 2.1.
+----- misprints recorded on page 290 -----
+[id 7I:510]
+WHERE: 6.2.2: 'pour tout couple d'léments i,j ∈ I'
+PRINT: d'léments
+CORRECT: d'éléments
+TEX BEFORE: d'léments
+NOTE: Typing error (letter dropped). The TeX keeps the printed reading.
+
+[id 7I:511]
+WHERE: number of paragraph 6.2.2
+PRINT: 6.2.2 Lorsque (no full stop after the number)
+CORRECT: 6.2.2.  Lorsque
+TEX BEFORE: 6.2.2  Lorsque
+NOTE: Every other paragraph number on these pages ends with a full stop (6.2.1., 6.2.3., 6.2.4.). The TeX keeps the printed reading.
+
+=================== PAGE 291 ===================
+----- corrected edition, expose_VIII_body.tex, page 291 -----
+%%%%%%%%%%  scan idx 302  |  folio 291  %%%%%%%%%%
+
+6.3.  Dans la suite, nous supposerons que $G = \underline{G}_{mS}$ , de sorte que toute extension $\overline{G}$ de $\mathbb{Z}_{S,T}$ par $G = \underline{G}_{mS}$ sera bien représentable (6.2.4), et bien entendu, sera lisse sur $S$ comme extension d'un schéma en groupes étale $\mathbb{Z}_{S,T}$ par un schéma en groupes lisse $\underline{G}_{mS}$ . De plus, la donnée d'un torseur $F$ sous $\underline{G}_m$ équivaut à la donnée d'un Module inversible $\mathbb{L}$ sur $S$ (en associant à ce dernier le torseur des sections inversibles de $\mathbb{L}$ ). Donc $\overline{G}$ est décrit par un couple $(\mathbb{L},s)$, où $\mathbb{L}$ est un Module inversible sur $S$, et $s$ une trivialisation de $\mathbb{L}$ sur $U=S-T$, i.e. une section inversible de $\mathbb{L}|U$. Lorsque $U$ est schématiquement dense dans $S$, et que $S$ est localement noethérien, ou réduit et l'ensemble de ses composantes irréductibles est localement fini, la donnée d'un tel couple équivaut à celle d'un \underline{diviseur} $D$ \underline{sur} $S$ \underline{tel que}
+
+\begin{equation}\tag{6.3.1}
+\mathrm{supp}\ D \subset T \quad ,
+\end{equation}
+en faisant correspondre à un tel diviseur le couple
+
+\begin{equation}\tag{6.3.2}
+(\underline{O}_S(-D),s_{-D}|U)
+\end{equation}
+du Module inversible $\underline{O}_S(-D)$ associé à $-D$ (EGA IV 21.2.8.1), et de la restriction à $U$ de la section rationnelle canonique $s_{-D}$ de celui-ci (EGA IV 21.2.11 et 20.2.11 (ii)). En tous cas, sans hypothèse sur $S$, la donnée d'un diviseur $D$ sur $S$ satisfaisant (6.3.1) définit un couple $(\mathbb{L},s)$ par (6.3.2), donc une extension $\overline{G}$ de $\mathbb{Z}_{S,T}$ par $\underline{G}_m$ , que nous appelerons le \underline{modèle de Néron-Raynaud de} $\underline{G}_m$ , associé au diviseur $D$ et au fermé $T$ de $S$ satisfaisant (6.3.1). Si $T = \mathrm{supp}\ D$, on omet $T$ dans la terminologie.
+----- misprints recorded on page 291 -----
+[id 7I:512]
+WHERE: display (6.3.2)
+PRINT: (O_S(-D),s_D|U)
+CORRECT: s_{-D}|U
+TEX BEFORE: (\underline{O}_S(-D),s_D|U)
+NOTE: The text that follows speaks of the restriction to U of the canonical rational section s_{-D} of O_S(-D). The display drops the minus sign. The TeX keeps the printed s_D.
+
+[id 7I:513]
+WHERE: 6.3, 'que nous appelerons le modèle de Néron-Raynaud'
+PRINT: appelerons
+CORRECT: appellerons
+TEX BEFORE: appelerons
+NOTE: Spelling error of the typescript. The TeX keeps the printed reading.
+
+[id 7I:514]
+WHERE: 6.3, line 2, 'toute extension G de Z_{S,T}'
+PRINT: extension G with a typed underline
+CORRECT: \overline{G}
+TEX BEFORE: toute extension $\underline{G}$ de
+NOTE: The extension of Z_{S,T} is \overline{G} (cf. 6.2.4 and 'Donc \overline{G} est décrit' a few lines below). The typescript underlines G instead of barring it. The TeX keeps the print.
+
+[id 7I:515]
+WHERE: 6.3, 'donc une extension G de Z_{S,T} par G_m'
+PRINT: extension G (no bar)
+CORRECT: \overline{G}
+TEX BEFORE: donc une extension $G$ de
+NOTE: Here G already denotes \underline{G}_{mS}. The extension is \overline{G} ('cette extension \overline{G}' on the next page). The bar is missing in the print, and the TeX keeps the print.
+
+=================== PAGE 292 ===================
+----- corrected edition, expose_VIII_body.tex, page 292 -----
+%%%%%%%%%%  scan idx 303  |  folio 292  %%%%%%%%%%
+
+Il est immédiat que la formation de cette extension $\overline{G}$ commute à tout changement de base $f : S' \longrightarrow S$ tel que le diviseur image inverse $f^*(D)$ soit défini (EGA IV 21.4.2), en particulier à tout changement de base \underline{plat}.
+
+6.3.3.  On voit aussitôt, grâce à la description générale 6.2.1 des sections de $\overline{G}$, que celles-ci peuvent s'identifier aux sections $f$ du faisceau $\mathcal{M}^*_S$ des sections méromorphes régulières sur $S$ (EGA IV 20.1.8) dont le diviseur $\mathrm{div}(f)$ est localement (au sens de la topologie de Zariski) un multiple entier de $D$ . Si $V$ est un ouvert de $S$ tel que la restriction de $\mathrm{div}\, f$ à $V$ est égal à celle de $nD$, où $n \in \mathbb{Z}$ , alors la section de $\mathbb{Z}_{S,T}$ définie par $f$ n'est autre que l'image de la section constante de valeur $n$ de $\mathbb{Z}_S$ dans (6.1.2). La description précédente du groupe des sections de $\overline{G}$ sur $S$ reste valable au-dessus de tout ouvert de $S$, plus généralement pour le groupe de points de $\overline{G}$ à valeurs dans n'importe quel $S$-schéma plat $S'$. Comme $\overline{G}$ lui-même est plat (et même lisse) sur $S$, cette description redonne donc une caractérisation complète du modèle de Néron-Raynaud de $\underline{G}_m$ défini par $D$ et $T \supset \mathrm{supp}\, D$.
+
+6.4.  Supposons maintenant que $S$ soit \underline{normal}, et l'ensemble de ses composantes irréductibles localement fini (donc $S$ est un schéma somme de schémas normaux intègres), et supposons que le diviseur $D$ soit positif, à multiplicités 1 (EGA IV 21.6), que $T=\mathrm{supp}\, D$, et que $T$ soit localement irréductible i.e. que ses composantes irréductibles soient disjointes. Alors pour toute fonction rationnelle $f$ sur $S$, régulière sur $U = S-T$, $\mathrm{div}\, f$ est localement un multiple de $D$, donc on a dans ce cas un isomor%
+----- misprints recorded on page 292 -----
+[id 7I:516]
+WHERE: 6.3.3, 'la restriction de div f à V est égal à celle de nD'
+PRINT: est égal
+CORRECT: égale
+TEX BEFORE: est égal à celle de
+NOTE: Agreement error with 'la restriction'. The TeX keeps the print.
+
+=================== PAGE 293 ===================
+----- corrected edition, expose_VIII_body.tex, page 293 -----
+%%%%%%%%%%  scan idx 304  |  folio 293  %%%%%%%%%%
+phisme de groupes canonique :
+
+\begin{equation}\tag{6.4.1}
+\Gamma(S,\overline{G}) \overset{\sim}{\longrightarrow} \Gamma(U,\underline{G}_{mU}) \quad .
+\end{equation}
+Supposons même $T$ géométriquement unibranche et localement intègre, hypothèse qui est stable par changement de base lisse (EGA IV 17.5.7). Alors, toutes les hypothèses étant stables par changement de base, on déduit de (6.4.1) que \underline{pour} $S'$ \underline{lisse sur} $S$, \underline{on a un isomorphisme de groupes canonique}, \underline{fonctoriel en} $S'$ :
+
+\begin{equation}\tag{6.4.2}
+\mathrm{Hom}_S(S', \overline{G}) \overset{\sim}{\longrightarrow} \mathrm{Hom}_U(S'_U, \underline{G}_{mU}) \simeq \Gamma(S'_U , \underline{O}^*_{S'_U}) \quad .
+\end{equation}
+Comme $\overline{G}$ est lui-même lisse sur $S$, cet isomorphisme caractérise le schéma en groupes $\overline{G}$ sur $S$ à isomorphisme unique près. D'autre part, il montre que $\overline{G}$ joue le rôle d'un ``modèle de Néron'' pour le schéma en groupes $\underline{G}_{mU}$ sur l'ouvert $U$ de $S$, ce qui (joint au fait qu'il a été introduit et utilisé pour la première fois par M. RAYNAUD) justifie la terminologie adoptée dans 6.3 pour désigner $\overline{G}$ .
+
+\underline{Théorème} 6.5. \underline{Soient} $S$ \underline{un schéma normal localement intègre}, $D$ \underline{un diviseur positif sur} $S$, \underline{sans composantes multiples}, \underline{tel que le support de} $D$ \underline{soit géométriquement unibranche et localement intègre}. \underline{Soit} $\overline{G}$ \underline{le modèle de Néron-Raynaud de} $\underline{G}_m$ \underline{sur} $S$ \underline{relatif à} $D$ (6.3), \underline{et considérons la catégorie des torseurs} $E$ \underline{sur} $S$ \underline{sous le schéma en groupes} $\overline{G}$ . \underline{Le foncteur restriction}
+
+\begin{equation*}
+E \longmapsto E_U = E|U \quad ,
+\end{equation*}
+\underline{qui va de cette catégorie dans la catégorie des torseurs sur} $U$ \underline{sous le schéma en groupes} $\underline{G}_{mU}$ , \underline{est pleinement fidèle}. \underline{Si} $S$ \underline{est un schéma régulier} (\underline{plus généralement}, \underline{si ces anneaux locaux sont factoriels}), \underline{alors ce foncteur est même une équivalence de catégories}.
+----- misprints recorded on page 293 -----
+[id 7I:517]
+WHERE: Théorème 6.5, last sentence
+PRINT: si ces anneaux locaux sont factoriels
+CORRECT: ses
+TEX BEFORE: \underline{si ces anneaux locaux sont factoriels}
+NOTE: 'ces' is written for the possessive 'ses'. The TeX keeps the print.
+
+=================== PAGE 294 ===================
+----- corrected edition, expose_VIII_body.tex, page 294 -----
+%%%%%%%%%%  scan idx 305  |  folio 294  %%%%%%%%%%
+
+Montrons que le foncteur envisagé est pleinement fidèle, i.e. que pour deux torseurs $E,F$ sous $\overline{G}$, l'application de restriction
+
+\begin{equation}\tag{*}
+\mathrm{Hom}(E,F) \longrightarrow \mathrm{Hom}(E_U,F_U)
+\end{equation}
+est bijective, où les Hom désignent les ensembles d'homomorphismes de \underline{torseurs}. Notons d'abord que cette question est manifestement \underline{locale} \underline{sur} $S$ \underline{pour la topologie de Zariski} : si $S$ est réunion d'ouverts $S_i$ tels que pour tout ouvert $S'$ de $S$ contenu dans un $S_i$ (donc en particulier pour $S'$ de la forme $S_i$ ou $S_i \cap S_j$), l'application
+
+\begin{equation*}
+\mathrm{Hom}(E_{S'},F_{S'}) \longrightarrow \mathrm{Hom}(E_{S' \cap U},F_{S' \cap U})
+\end{equation*}
+est bijective, alors l'application (*) est bijective. D'autre part, il résulte aussitôt de 5.8 appliqué à $S,T,\mathbb{Z}$ , et de 5.1 appliqué à $T,\mathbb{Z}$ , que tout torseur sous $\overline{G}$ est localement trivial pour la topologie de Zariski. Ces deux observations nous ramènent à prouver la bijectivité de l'application (*) dans le cas où $E=F=\overline{G}$ . Mais alors cette application n'est autre que (6.4.1), dont la bijectivité a déjà été établie.
+
+Montrons maintenant que le foncteur $E \longmapsto E_U$ envisagé est essentiellement surjectif lorsque les anneaux locaux de $S$ sont factoriels. Comme $\underline{G}_{m\,S}$ s'identifie à un sous-schéma en groupes ouvert de $\overline{G}$, il suffit de prouver que tout torseur sous $\underline{G}_{m\,U}$ est isomorphe à la restriction à $U$ d'un torseur sous $\underline{G}_{m\,S}$ . Il revient au même de dire que tout Module inversible sur $U$ est isomorphe à la restriction d'un Module inversible sur $S$, ce qui résulte en effet de l'hypothèse faite sur $S$ (EGA IV 21.6.11, où on se borne au cas localement noethérien, qui est le seul cas qui nous servira par la suite). Cela prouve 6.5.
+----- misprints recorded on page 294 -----
+[id 7I:518]
+WHERE: second paragraph, 'lorsque les anneaux locaux de X sont factoriels'
+PRINT: de X
+CORRECT: $S$
+TEX BEFORE: de $X$ sont factoriels
+NOTE: The scheme in question is S (Théorème 6.5). The TeX keeps the printed X.
+
+=================== PAGE 297 ===================
+----- corrected edition, expose_VIII_body.tex, page 297 -----
+%%%%%%%%%%  scan idx 308  |  folio 297  %%%%%%%%%%
+dans $T=S-U$, et (par abus de langage) par la même lettre l'extension canonique de $\underline{D}$ en un faisceau sur $(\mathrm{Sch})_{/S}$ (dont les sections sur le schéma relatif $f:S' \longrightarrow S$ sont les sections de $f^{*}_{\text{ét}}(\underline{D})$ sur $S'$), le modèle cherché est une extension de Groupes
+
+\begin{equation}\tag{6.8.1}
+0 \longrightarrow \underline{G}_{mS} \longrightarrow \overline{G} \longrightarrow \underline{D} \longrightarrow 0 \quad .
+\end{equation}
+La construction d'une extension canonique (6.8.1) (sans hypothèse de normalité sur $S$) ne présente pas de difficultés, en utilisant la description générale VII 1.1.6, et on obtient en même temps (6.4.2) pour $S'$ \underline{étale} sur $S$. Pour avoir la même relation pour tout $S'$ lisse sur $S$, il revient au même de vérifier que la formation du faisceau $\underline{D}$ commute à tout changement de base lisse $f: S' \longrightarrow S$, ce qui pour $S$ normal résulte de EGA $\mathrm{Err}_{\mathrm{IV}}$ 53, 21.4.9.
+
+
+6.9.\quad ``\underline{Autocritique}'' (observations de P. DELIGNE)(*).
+
+Les n\textsuperscript{o}s 5 et 6, sont vraiment peu inspirants. On a périodiquement l'impression qu'on refait ``à la main'' le formalisme $i_*,i^*$, sans voir ce qui est géométrique ou ``general non-sense''.
+
+Je propose de dégager les énoncés ``géométriques'' a)b)c) :
+
+a) (cf. 6.8 b)\quad Soit $j:U \hookrightarrow S$ un ouvert schématiquement dense d'un schéma normal noethérien $S$. Le faisceau étale $\underline{G}_{mS}$ s'identifie alors à un sous-faisceau du faisceau étale $j_{*}\underline{G}_{mU}$ . Soit $\underline{D}$ le faisceau étale quotient
+
+\begin{equation*}
+0 \longrightarrow \underline{G}_{mS} \longrightarrow j_{*} \, \underline{G}_{mU} \longrightarrow \underline{D} \longrightarrow 0 \quad .
+\end{equation*}
+(*)\quad Le rédacteur du présent exposé déclarant forfait, le lecteur est invité à récrire, en cas de besoin, les n\textsuperscript{o}s 5 et 6 suivant les directives jointes.
+----- misprints recorded on page 297 -----
+[id 7I:519]
+WHERE: 6.9 a), first sentence
+PRINT: Soit j:V ↪ S un ouvert schématiquement dense (the open is U everywhere else: j_*G_mU in the next sentence, U ↪ S in the Corollaire)
+CORRECT: $j:U \hookrightarrow S$
+TEX BEFORE: Soit $j:V \hookrightarrow S$
+NOTE: The print types V for the open U. The TeX keeps the printed V.
+
+[id 7I:520]
+WHERE: unnumbered display at the end of 6.9 a)
+PRINT: 0 → G_mS → j_* G_mS → D → 0 .
+CORRECT: j_{*} \, \underline{G}_{mU}
+TEX BEFORE: j_{*} \, \underline{G}_{mS}
+NOTE: The middle term must be j_*G_mU, as in the sentence just before. The TeX keeps the printed index mS.
+
+=================== PAGE 299 ===================
+----- corrected edition, expose_VIII_body.tex, page 299 -----
+%%%%%%%%%%  scan idx 310  |  folio 299  %%%%%%%%%%
+
+
+7. \underline{Prolongements canoniques d'extensions et de biextensions par $\underline{G}_m$}
+
+7.0. Nous récoltons maintenant le fruit de nos préparatifs des n°s 5 et 6. Plaçons nous d'abord dans le cas d'un schéma de base $S$ qui soit un \underline{trait}, i.e. le spectre d'un anneau de valuation discrète, et soit $\eta$ son point générique, $s$ sont point fermé, $k = k(s)$. Soit $P$ un schéma en groupes commutatifs lisse sur $S$, on posera $P_o = P_s$, fibre spéciale de $P$. Dans le présent numéro, nous ne considérons que des groupes commutatifs, et en particulier les extensions de groupes envisagées sont commutatives.
+
+\underline{Théorème} 7.1. \underline{Les notations sont celles rappelées dans} 7.0.
+
+a) \underline{Supposons que le groupe des composantes connexes de la fibre spéciale de} $P$,
+
+\begin{equation*}
+\Phi = P_o/P_o^{\,o}
+\end{equation*}
+\underline{soit un groupe de torsion}, - \underline{ce qui est le cas en particulier si} $P$ \underline{est de type fini sur} $S$ ; \underline{alors le foncteur} $E \longmapsto E_\eta$ \underline{de la catégorie des extensions de} $P$ \underline{par} $\underline{G}_{mS}$ \underline{dans la catégorie des extensions de} $P_\eta$ \underline{par} $\underline{G}_{m\eta}$ \underline{est pleinement fidèle}. \underline{Supposons qu'il existe un entier} $n > 0$ \underline{tel que} $n\Phi = 0$, \underline{alors si} $E_\eta$ \underline{est une extension de} $P_\eta$ \underline{par} $\underline{G}_{m\eta}$ , \underline{il lui est associé un homomorphisme canonique}
+
+\begin{equation}\tag{7.1.1}
+d(E_\eta) : \Phi \longrightarrow (\mathbb{Q}/\mathbb{Z})_k \qquad ,
+\end{equation}
+\underline{dont l'annulation est nécessaire et suffisante pour que l'extension} $E_\eta$ \underline{soit isomorphe à la fibre générique d'une extension de} $P$ \underline{par} $\underline{G}_{mS}$ . En \underline{particulier}, \underline{si} $P_o$ \underline{est connexe}, \underline{le foncteur précédent} $E \longmapsto E_\eta$ \underline{est une équivalence de catégories}.
+----- misprints recorded on page 299 -----
+[id 7I:521]
+WHERE: 7.0, second sentence
+PRINT: et soit η son point générique, s sont point fermé, k = k(s)
+CORRECT: son point fermé
+TEX BEFORE: $s$ sont point fermé
+NOTE: Typing error 'sont' for 'son'. The TeX keeps the printed reading.
+
+=================== PAGE 300 ===================
+----- corrected edition, expose_VIII_body.tex, page 300 -----
+%%%%%%%%%%  scan idx 311  |  folio 300  %%%%%%%%%%
+
+b)  \underline{Soient} $P$ \underline{et} $Q$ \underline{deux schémas en groupes lisses sur} $S$, \underline{posons}
+
+\begin{equation*}
+\Phi = P_o/P_o^{\,o} \qquad , \qquad \Psi = Q_o/Q_o^{\,o} \qquad ,
+\end{equation*}
+\underline{et supposons que} $\Phi$ \underline{ou} $\Psi$ \underline{soit un groupe de torsion (par exemple} $P$ \underline{ou} $Q$ \underline{de type fini sur} $S$) ; \underline{alors le foncteur} $E \longmapsto E_\eta$ \underline{dans la catégorie des biextensions de} $(P,Q)$ \underline{par} $\underline{G}_{mS}$ \underline{dans la catégorie des biextensions de} $(P_\eta,Q_\eta)$ \underline{par} $\underline{G}_{m\eta}$ \underline{est pleinement fidèle.} \underline{Supposons qu'il existe un entier} $n > 0$ \underline{tel que} $n\Phi=0$ \underline{ou} $n\Psi=0$, \underline{alors si} $E_\eta$ \underline{est une biextension de} $(P_\eta,Q_\eta)$ \underline{par} $\underline{G}_{m\eta}$ , \underline{il lui est associé un accouplement canonique}
+
+\begin{equation}\tag{7.1.2}
+d(E_\eta) : \Phi \otimes_{\mathbb{Z}} \Psi \longrightarrow (\mathbb{Q}/\mathbb{Z})_k \qquad ,
+\end{equation}
+\underline{dont l'annulation est nécessaire et suffisante pour que} $E_\eta$ \underline{soit isomorphe à la fibre générique d'une biextension} $E$ \underline{de} $(P,Q)$ \underline{par} $\underline{G}_{mS}$. \underline{En particulier, si} $P_o$ \underline{ou} $Q_o$ \underline{est connexe, le foncteur précédent} $E \longmapsto E_\eta$ \underline{est une équivalence de catégories.}
+
+\underline{Démonstration.}  a)  Soit $\overline{G}$ le modèle de Néron-Raynaud de $\underline{G}_m$ . Le foncteur envisagé est le composé du foncteur "extension du noyau $\underline{G}_{mS} \longrightarrow \overline{G}$ " avec le foncteur "restriction à $\eta$ " défini sur la catégorie des extensions par $\overline{G}$ . Ce dernier foncteur étant une équivalence de catégories en vertu de 6.6, on est ramené à étudier le premier foncteur. Pour ceci, on utilise la suite exacte de schémas en groupes
+
+\begin{equation}\tag{7.1.3}
+0 \longrightarrow \underline{G}_{mS} \longrightarrow \overline{G} \longrightarrow \mathbb{Z}_{S,s} \longrightarrow 0 \qquad ,
+\end{equation}
+la notation pour $\mathbb{Z}_{S,s}$ étant celle de 5.7. La suite exacte des $\mathrm{Ext}^i$ ($i=0,1$) associée à cette suite exacte nous montre que pour que le foncteur envisagé soit pleinement fidèle, il faut et il suffit que l'on ait 
+----- misprints recorded on page 300 -----
+[id 7I:522]
+WHERE: 7.1 b), sentence after the first display
+PRINT: alors le foncteur E ⟼ E_η dans la catégorie des biextensions de (P,Q) par G_mS dans la catégorie des biextensions de (P_η,Q_η)
+CORRECT: \underline{de la catégorie des biextensions de} $(P,Q)$
+TEX BEFORE: \underline{dans la catégorie des biextensions de} $(P,Q)$
+NOTE: The first 'dans' should be 'de' (cf. 7.1 a): 'de la catégorie des extensions de P ... dans la catégorie ...'). The TeX keeps 'dans'.
+
+[id 7I:523]
+WHERE: 7.1 b), sentence after (7.1.2)
+PRINT: pour que E soit isomorphe à la fibre générique d'une biextension E de (P,Q)
+CORRECT: $E_\eta$
+TEX BEFORE: \underline{pour que} $E$ \underline{soit isomorphe
+NOTE: The generic biextension must be E_η (cf. 7.1 a): 'pour que l'extension E_η soit isomorphe'). The TeX keeps the printed E.
+
+[id 7I:524]
+WHERE: Démonstration a), second sentence
+PRINT: le foncteur "restriction à η" défini sur la catégorie des biextensions par G̅
+CORRECT: défini sur la catégorie des extensions par $\overline{G}$
+TEX BEFORE: défini sur la catégorie des biextensions par $\overline{G}$
+NOTE: Part a) concerns extensions of P and invokes 6.6 (6.7 is the biextension case), so 'biextensions' looks like a slip. The TeX keeps the printed word.
+
+=================== PAGE 301 ===================
+----- corrected edition, expose_VIII_body.tex, page 301 -----
+%%%%%%%%%%  scan idx 312  |  folio 301  %%%%%%%%%%
+
+\begin{equation}\tag{7.1.4}
+ \mathrm{Hom}(P,\mathbb{Z}_{S,s}) = 0 \qquad ,
+\end{equation}
+et que l'obstruction, pour une extension $\overline{E}$ de $P$ par $\overline{G}$ , de provenir d'une extension $E$ de $P$ par $\underline{G}_{mS}$ se trouve dans
+
+\begin{equation}\tag{7.1.5}
+\mathrm{Ext}^1(P,\mathbb{Z}_{S,s}) \qquad .
+\end{equation}
+Or le premier groupe (7.1.4) est isomorphe à $\mathrm{Hom}(P_o,\mathbb{Z}_k)$ en vertu de (5.7.2), qui est isomorphe lui-même à $\mathrm{Hom}(\Phi,\ \mathbb{Z}_k)$, de sorte que (7.1.4) équivaut à la relation
+
+\begin{equation}\tag{7.1.4 bis}
+\mathrm{Hom}(\Phi,\mathbb{Z}_k) = 0 \qquad .
+\end{equation}
+Cette relation est certainement vérifiée si $\Phi$ est un groupe de torsion. D'autre part, si on a même $n\Phi = 0$, alors en vertu de 5.9 et 5.5 on a des isomorphismes canoniques
+
+\begin{equation}\tag{7.1.6}
+\mathrm{Ext}^1(P,\mathbb{Z}_{S,s}) \simeq \mathrm{Ext}^1(P_o,\mathbb{Z}_k) \simeq \mathrm{Hom}(\Phi,\ (\mathbb{Q}/\mathbb{Z})_k) \qquad ,
+\end{equation}
+ce qui achève de prouver 7.1 a).
+
+b)  La démonstration est essentiellement la même. On est ramené, grâce à 6.7, à étudier le foncteur "extension du noyau $\underline{G}_{mS} \longrightarrow \overline{G}$ " de la catégorie des biextensions de $(P,Q)$ par $\underline{G}_{mS}$ dans celle des biextensions de $(P,Q)$ par $\overline{G}$ . Cette étude se fait en utilisant la suite exacte (7.1.3), et la suite exacte des $\mathrm{Biext}^i$ ($i=0,1$) associée (VII 3.7.5). La pleine fidèlité du foncteur envisagé équivaut à la relation
+
+\begin{equation}\tag{7.1.7}
+\mathrm{Hom}(P \otimes Q,\ \mathbb{Z}_{S,s}) = 0 \qquad ,
+\end{equation}
+or le premier membre est isomorphe à $\mathrm{Hom}(P_o \otimes Q_o\ ,\ \mathbb{Z}_k)$ en vertu de (5.7.2),
+----- misprints recorded on page 301 -----
+[id 7I:525]
+WHERE: b), sentence before (7.1.7): 'La pleine fidèlité du foncteur envisagé'
+PRINT: fidèlité
+CORRECT: fidélité
+TEX BEFORE: fidèlité
+NOTE: The print types a grave accent for 'fidélité'. The TeX keeps the printed reading.
+
+=================== PAGE 302 ===================
+----- corrected edition, expose_VIII_body.tex, page 302 -----
+%%%%%%%%%%  scan idx 313  |  folio 302  %%%%%%%%%%
+donc à $\mathrm{Hom}(\Phi \otimes \Psi, \mathbb{Z}_k)$, groupe qui est bien nul si $\Phi$ ou $\Psi$ est un groupe de torsion. D'autre part, pour une biextension donnée $\overline{E}$ de $(P,Q)$ par $\overline{G}$, l'obstruction à ce qu'elle provienne d'une biextension $E$ de $(P,Q)$ par $\underline{G}_{mS}$ se trouve dans $\mathrm{Biext}^1(P,Q;\mathbb{Z}_{S,s})$, qui est isomorphe en vertu de 5.10 à $\mathrm{Biext}^1(P_o,Q_o, \mathbb{Z}_k)$, lui-même isomorphe (si $n\Phi = 0$ ou $n\Psi = 0$) à $\mathrm{Hom}(\Phi \otimes \Psi, (\mathbb{Q}/\mathbb{Z})_k)$ en vertu de 5.6. Cela achève la démonstration de 7.1.
+
+\underline{Remarque} 7.2. On peut se proposer, étant donné un schéma en groupes lisse $P$ sur un schéma localement noethérien régulier connexe $S$ de point générique $\eta$ , d'étudier le foncteur $E \longmapsto E_\eta$ de la catégorie des extensions de $P$ par $\underline{G}_{mS}$ dans celle des extensions de $P_\eta$ par $\underline{G}_{m\eta}$ . Ce problème se ramène en fait facilement à celui traité dans 7.1 a). Supposons pour simplifier $P$ de type fini sur $S$. Alors il résulte facilement de 7.1 que le foncteur envisagé est pleinement fidèle (*). On en déduit aisément que si $E_\eta$ est une extension de $P_\eta$ par $\underline{G}_{m\eta}$ , alors pour que celle-ci soit isomorphe à la fibre générique d'une extension $E$ de $P$ par $\underline{G}_{mS}$ , il faut et il suffit que pour tout $s \in S$ tel que $\dim \mathrm{Spec}(\underline{O}_{S,s}) = 1$, le problème de prolongement analogue obtenu par le changement de base $\mathrm{Spec}(\underline{O}_{S,s}) \to S$ ait une solution, - ce qui, en vertu de 7.1 a), s'exprime par la nullité d'un certain homomorphisme
+
+\begin{equation}\tag{7.2.1}
+d(E_\eta ,s) \; : \; P_s/P_s^{\,o} \longrightarrow (\mathbb{Q}/\mathbb{Z})_{k(s)} \qquad .
+\end{equation}
+L'assertion précédente se réduit de façon évidente à la suivante : soit $U$ un ouvert de $S$, de complémentaire $T$ tel que
+
+\begin{equation*}
+\mathrm{codim}(T,S) \geqslant 2 \qquad , \qquad 
+\end{equation*}
+(*) Il suffit pour ceci que $S$ soit normal (au lieu de régulier).
+----- misprints recorded on page 302 -----
+[id 7I:526]
+WHERE: end of first paragraph: 'à Hom(Φ⊗Ψ, Q/ℤ ) en vertu de 5.6'
+PRINT: Q/ℤ with an ordinary typewriter Q
+CORRECT: \mathbb{Q}/\mathbb{Z}
+TEX BEFORE: \mathrm{Hom}(\Phi \otimes \Psi, Q/\mathbb{Z})
+NOTE: The typist used a plain Q here; ℚ is used everywhere else, e.g. (7.1.6) and (7.2.1). The TeX keeps the printed reading. If the scan in fact shows ℚ, the TeX needs \mathbb{Q}.
+
+=================== PAGE 303 ===================
+----- corrected edition, expose_VIII_body.tex, page 303 -----
+%%%%%%%%%%  scan idx 314  |  folio 303  %%%%%%%%%%
+
+ alors le foncteur $E \longmapsto E|U$ de la catégorie des extensions de $P$ par $\underline{G}_{mS}$ dans celle des extensions de $P_U$ par $\underline{G}_{m\,U}$ est une équivalence de catégories. Or cette assertion est essentiellement triviale en termes de la description VII 1.1.6, en utilisant le fait que pourtout $S$-schéma lisse $X$ (tel $P, P\times P, P\times P\times P$ ...), $X$ est localement factoriel et $X_T = X - X_U$ est de codimension $\geqslant 2$ dans $X$, d'où résulte que le foncteur $F \longmapsto F|X_U$ de la catégorie des torseurs sous $\underline{G}_{mX}$ dans celle des torseurs sous $\underline{G}_{mX_U}$ est une équivalence de catégories.
+
+On a des résultats tout analogues pour la question des prolongements de biextensions, qu'on laisse au lecteur le soin de formuler.
+
+7.3. Nous allons expliciter quelques propriétés fonctorielles des obstructions définies dans (7.1.1) et (7.1.2) pour $P,Q,S$ variables, et de leurs relations entre elles. On supposera vérifiées par la suite les conditions qui permettent de définir ces obstructions. Comme les vérifications n'offrent pas de difficulté, nous les laissons aux soins du lecteur.
+
+7.3.1. Soit
+
+\begin{equation*}
+u \; : \; P' \longrightarrow P
+\end{equation*}
+un morphisme de schémas en groupes lisses sur $S$, $E_\eta$ une extension de $P_\eta$ par $\underline{G}_{m\eta}$ , d'où par image inverse par $u_\eta : P'_\eta \longrightarrow P_\eta$ une extension $E'_\eta$ de $P'_\eta$ par $\underline{G}_{m\eta}$ . Ceci posé, on a commutativité dans le diagramme 
+----- misprints recorded on page 303 -----
+[id 7I:527]
+WHERE: first paragraph: 'en utilisant le fait que pourtout S-schéma lisse X'
+PRINT: pourtout
+CORRECT: pour tout
+TEX BEFORE: pourtout
+NOTE: A space is missing in the print. The TeX keeps the printed reading.
+
+=================== PAGE 304 ===================
+----- corrected edition, expose_VIII_body.tex, page 304 -----
+%%%%%%%%%%  scan idx 315  |  folio 304  %%%%%%%%%%
+
+\begin{equation}\tag{7.3.1.1}
+\begin{tikzcd}[row sep=large, column sep=huge]
+{P'_o/{P'_o}^{o}} \arrow[dd, "u_o"'] \arrow[rd, "d(E'_\eta)"] & \\
+ & {(\mathbb{Q}/\mathbb{Z})_k} \\
+{P_o/{P_o}^{o}} \arrow[ru, "d(E_\eta)"'] &
+\end{tikzcd}\quad .
+\end{equation}
+% STRUCTURE: Triangle, 3 nodes. Node 1 (top left): P'_o/{P'_o}^o . Node 2 (right, vertically midway):
+%   (Q/Z)_k with blackboard-bold Q and Z, subscript k. Node 3 (bottom left): P_o/{P_o}^o . Arrows, 3
+%   total, all solid single-headed: (a) vertical arrow downward from Node 1 to Node 3, label u_o printed
+%   to the LEFT of the shaft; (b) diagonal arrow from Node 1 down-right to Node 2, label d(E'_eta)
+%   printed ABOVE the shaft; (c) diagonal arrow from Node 3 up-right to Node 2, label d(E_eta) printed
+%   BELOW the shaft. No hooks, no double heads, no dashes, no iso marks. The tag (7.3.1.1) is printed at
+%   the left margin at the vertical level of Node 2. A lone sentence-final period is printed at the far
+%   right margin at the level of Node 3; it is punctuation, not a node, and is given after the
+%   tikzcd. This diagram is the display closing the sentence 'Ceci pose, on a commutativite dans le
+%   diagramme' which ends the previous page (idx 314).
+De même, si on des morphismes de schémas en groupes lisses sur $S$
+
+\begin{equation*}
+u : P' \longrightarrow P \quad , \quad v : Q' \longrightarrow Q
+\end{equation*}
+et une biextension $E_\eta$ de $(P_\eta ,Q_\eta)$ par $\underline{G}_{m\eta}$ , d'où par image inverse par $(u_\eta ,v_\eta)$ une biextension $E'_\eta$ de $(P'_\eta ,Q'_\eta)$ par $\underline{G}_{m\eta}$ , on a commutativité dans le diagramme
+
+\begin{equation}\tag{7.3.1.2}
+\begin{tikzcd}[row sep=large, column sep=huge]
+{P'_o/{P'_o}^{o} \otimes Q'_o/{Q'_o}^{o}} \arrow[dd, "u_o \otimes v_o"'] \arrow[rd, "d(E'_\eta)"] & \\
+ & {(\mathbb{Q}/\mathbb{Z})_k} \\
+{P_o/{P_o}^{o} \otimes Q_o/{Q_o}^{o}} \arrow[ru, "d(E_\eta)"'] &
+\end{tikzcd}
+\end{equation}
+% STRUCTURE: Triangle, 3 nodes. Node 1 (top left): P'_o/{P'_o}^o (tensor sign) Q'_o/{Q'_o}^o . Node 2
+%   (right, vertically midway): (Q/Z)_k with blackboard-bold Q and Z, subscript k. Node 3 (bottom left):
+%   P_o/{P_o}^o (tensor sign) Q_o/{Q_o}^o . Arrows, 3 total, all solid single-headed: (a) vertical arrow
+%   downward from Node 1 to Node 3, its shaft starting immediately under the tensor sign of Node 1,
+%   label u_o (tensor sign) v_o printed to the LEFT of the shaft; (b) diagonal arrow from Node 1
+%   (starting under Q'_o/{Q'_o}^o) down-right to Node 2, label d(E'_eta) printed ABOVE the shaft; (c)
+%   diagonal arrow from Node 3 up-right to Node 2, label d(E_eta) printed BELOW the shaft. No hooks, no
+%   double heads, no dashes, no iso marks. The tag (7.3.1.2) is printed at the left margin at the
+%   vertical level of Node 2.
+La vérification, essentiellement mécanique, de ces compatibilités est laissée au lecteur.
+
+7.3.2. De la compatibilité (7.3.1.1) résulte que si $E_\eta$ est une extension de $P_\eta$ par $\underline{G}_m$ , il existe un plus grand sous-schéma en groupes $V$ de $P$ tel que la restriction de $E_\eta$ à $V_\eta$ s'étende en une extension de $V$ par
+----- misprints recorded on page 304 -----
+[id 7I:528]
+WHERE: line after (7.3.1.1): 'De même, si on des morphismes de schémas en groupes lisses sur S'
+PRINT: si on des morphismes
+CORRECT: si on a des morphismes
+TEX BEFORE: si on des morphismes
+NOTE: The print omits 'a'. The TeX keeps the printed reading.
+
+=================== PAGE 305 ===================
+----- corrected edition, expose_VIII_body.tex, page 305 -----
+%%%%%%%%%%  scan idx 316  |  folio 305  %%%%%%%%%%
+$\underline{G}_{mS}$ : c'est le sous-groupe ouvert $V$ de $P$ contenant $P_\eta$ défini par la condition
+
+\begin{equation}\tag{7.3.2.1}
+V_o/{V_o}^{o} = \mathrm{Ker}\ d(E_\eta) \quad .
+\end{equation}
+Si alors $u:P' \longrightarrow P$ est un morphisme de schémas en groupes lisses sur $S$, l'extension $E'_\eta$ , image inverse de $E_\eta$ par $u_\eta$ , se prolonge en une extension de $P'$ par $\underline{G}_{mS}$ si et seulement si on a
+
+\begin{equation}\tag{7.3.2.2}
+u(P') \subset V \quad .
+\end{equation}
+Dans le cas d'une biextension $E_\eta$ de $(P_\eta , Q_\eta)$ par $\underline{G}_{m\eta}$ , il existe de même un plus grand sous-schéma en groupes $V$ de $P$ tel que la restriction de $E_\eta$ à $(V_\eta , Q_\eta)$ se prolonge en une biextension de $(V,Q)$ par $\underline{G}_{mS}$ : c'est le sous-groupe ouvert de $P$, contenant la fibre générique $P_\eta$ , défini par la condition que $V_o/{V_o}^{o}$ soit le sous-groupe de $\Phi$ annulateur gauche de l'accouplement (7.1.2), i.e. noyau de l'homomorphisme correspondant de $\Phi$ dans $\underline{\mathrm{Hom}}(\Psi, (\mathbb{Q}/\mathbb{Z})_k)$ :
+
+\begin{equation}\tag{7.3.2.3}
+V_o/{V_o}^{o} = \mathrm{Ker}\ (\Phi \xrightarrow{\ d(E_\eta)\ } \underline{\mathrm{Hom}}(\Psi ,\mathbb{Q}/\mathbb{Z} )_k)) \quad .
+\end{equation}
+Si alors on se donne $u: P' \longrightarrow P$ de schémas en groupes lisses sur $S$, la biextension de $(P'_\eta , Q_\eta)$ par $\underline{G}_{m\eta}$ image inverse de $E_\eta$ par $u_\eta$ se prolonge en une biextension de $(P',Q)$ par $\underline{G}_{mS}$ si et seulement si on a la relation (7.3.2.2). On a des résultats symétriques en échangeant le rôle de $P$ et de $Q$. Mais bien entendu on ne pourra en général trouver un plus grand \underline{couple} de sous-groupes $P' \longrightarrow P$, $Q' \longrightarrow Q$ tels que la restriction $E'_\eta$ de $E_\eta$ en une biextension de $(P'_\eta , Q'_\eta)$ par $\underline{G}_{m\eta}$ se prolonge en une biextension de $(P',Q')$ par $\underline{G}_{mS}$ ; on peut seulement dire que pour un couple
+----- misprints recorded on page 305 -----
+[id 7I:529]
+WHERE: (7.3.2.3)
+PRINT: Ker (Φ --d(E_η)--> Hom(Ψ,ℚ/ℤ )_k)) — one more ')' than '('
+CORRECT: \underline{\mathrm{Hom}}(\Psi ,(\mathbb{Q}/\mathbb{Z} )_k))
+TEX BEFORE: \underline{\mathrm{Hom}}(\Psi ,\mathbb{Q}/\mathbb{Z} )_k))
+NOTE: The opening parenthesis before ℚ is missing in the print; compare 'Hom(Ψ, (ℚ/ℤ)_k)' two lines above. The TeX keeps the printed reading.
+
+=================== PAGE 307 ===================
+----- corrected edition, expose_VIII_body.tex, page 307 -----
+%%%%%%%%%%  scan idx 318  |  folio 307  %%%%%%%%%%
+
+
+7.3.4.  \underline{Réduction des obstructions du type} (7.1.2) \underline{à celles du type} (7.1.1).
+
+Supposons pour fixer les idées qu'il existe un entier $n > 0$ tel que $n \Phi = 0$, et soit
+
+\begin{equation*}
+q \in Q(S)
+\end{equation*}
+une section de $Q$. On désigne, par abus de notation, par
+
+\begin{equation*}
+q_o \in \Psi(k)
+\end{equation*}
+l'image dans $\Psi(k)$ de la valeur de $q$ en $s$. Considérant $E_\eta$ comme une extension de $P_\eta \times_\eta Q_\eta$ par $\underline{G}_{mQ_\eta}$ , on trouve une extension
+
+\begin{equation*}
+q^*_\eta(E_\eta) \ , \ \text{extension de } P_\eta \ \text{par} \ \underline{G}_{m\eta} \ ,
+\end{equation*}
+d'où une obstruction
+
+\begin{equation}\tag{7.3.4.1}
+d_q \ \overset{\mathrm{dfn}}{=} \ d(q^*_\eta(E_\eta)) : \Phi \longrightarrow (\mathbb{Q}/\mathbb{Z})_k \ .
+\end{equation}
+Ceci posé, on a la relation (où on a posé $d = d(E_\eta)$)
+
+\begin{equation}\tag{7.3.4.2}
+d_q(x) = d(x,q_o) \ ,
+\end{equation}
+valable pour tout point $x$ de $\Phi$ à valeurs dans un $k$-schéma $T$ .
+
+7.3.4.3.  Cette formule, qui pour tout $q \in Q(S)$ détermine $d_q$ en termes de l'accouplement $d$ , redonne évidemment ce dernier en termes des invariants $d_q$ , du moins lorsque tout point de $\Psi$ provient d'une section de $Q$. Cette condition est d'ailleurs vérifiée automatiquement lorsque $S$ est strictement\_local, en vertu du lemme de Hensel. Comme l'accouplement $d$ est connu quand on le connaît sur la clôture séparable de $k$, et que sa formation commute à la localisation étale sur $S$ en vertu de 7.3.5.3
+----- misprints recorded on page 307 -----
+[id 7I:530]
+WHERE: (7.3.4.1)
+PRINT: d(q^*_\eta(E_*))
+CORRECT: (E_\eta)) :
+TEX BEFORE: d(q^*_\eta(E_\eta))
+NOTE: The typescript gives E a lowered asterisk as index instead of \eta. The TeX silently corrects it.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: (E_\eta)) :
+  NEW: (E_*)) :
+
+=================== PAGE 308 ===================
+----- corrected edition, expose_VIII_body.tex, page 308 -----
+%%%%%%%%%%  scan idx 319  |  folio 308  %%%%%%%%%%
+ci-dessous, on voit que, quitte à passer au localisé strict de $S$, la détermination de l'accouplement $d$ se ramène à celle des invariants $d_q$ . En particulier, lorsque tout point de $\Psi$ provient d'une section $q$ de $Q$, on voit que $d$ est nul (i.e. $E_\eta$ se prolonge en une biextension $E$ de $(P,Q)$ par $\underline{G}_m$) si et seulement si pour tout section $q$ de $Q$, $d_q$ est nul i.e. $q^*_\eta(E_\eta)$ se prolonge en une extension de $P$ par $\underline{G}_m$ . Lorsqu'on ne fait pas d'hypothèse sur $\Psi$, le critère analogue est valable, à condition de prendre pour $q$ des points à valeurs dans des $S'$ locaux étales sur $S$.
+
+7.3.4.4. Inversement, partant de la situation de 7.1 a), l'obstruction (7.1.1) peut s'interpréter comme une obstruction du type (7.1.2), en prenant $Q = \mathbb{Z}_S$ et la biextension de $(P,\mathbb{Z}_S)$ déduite de $E$. Pour le voir, il suffit d'appliquer ce qui précède en prenant pour $q$ la section 1 de $\mathbb{Z}_S$ .
+
+7.3.5. \underline{Effet d'un changement de base} $S' \longrightarrow S$. On suppose donné un morphisme local dominant de traits
+
+\begin{equation*}
+f : S' \longrightarrow S \quad ,
+\end{equation*}
+et on désigne par $\eta'$ le point générique de $S'$, par $s'$ son point fermé, et on pose $k'=k(s')$. Si $S=\mathrm{Spec}(V)$, $S' = \mathrm{Spec}(V')$, $V'$ est donc un anneau de valuation discrète dominant l'anneau de valuation discrète $V$. Posons
+
+\begin{equation}\tag{7.3.5.1}
+e(S'/S) = e(V'/V) = \mathrm{long}(V'/\underline{m}\,V) \quad ,
+\end{equation}
+où $\underline{m}$ est l'idéal maximal de $V$. Soient maintenant $P$ dans 7.1 a), $E_\eta$ une extension de $P_\eta$ par $\underline{G}_{m\eta}$ , $P' = P\times_S S'$, $E'_{\eta'}$ l'extension de $P'_{\eta'}$ par $\underline{G}_{m\eta'}$ image inverse de $E_\eta$ . On a alors un isomorphisme canonique 
+----- misprints recorded on page 308 -----
+[id 7I:531]
+WHERE: 7.3.4.3 cont., 'si et seulement si pour tout section q de Q'
+PRINT: pour tout section
+CORRECT: pour toute section
+TEX BEFORE: pour tout section
+NOTE: Gender slip ('section' is feminine). The TeX keeps the printed reading.
+
+=================== PAGE 309 ===================
+----- corrected edition, expose_VIII_body.tex, page 309 -----
+%%%%%%%%%%  scan idx 320  |  folio 309  %%%%%%%%%%
+
+\begin{equation*}
+ \Phi' \overset{\mathrm{dfn}}{=} P'_o/{P'}^{o}_{o} \simeq \Phi \otimes_k k' \simeq \Phi_{k'} \quad ,
+\end{equation*}
+avec les notations de 4.1 a), et on peut par suite considérer
+
+\begin{equation*}
+d(E_\eta)_{k'} : \Phi' \longrightarrow (\mathbb{Q}/\mathbb{Z})_{k'} \quad .
+\end{equation*}
+Ceci posé, on a la relation
+
+\begin{equation}\tag{7.3.5.2}
+d(E'_{\eta'}) = e(S'/S)\, d(E_\eta)_{k'} \quad .
+\end{equation}
+De même, sous les conditions de 7.1 b), et avec les notations évidentes, on a la relation (7.3.5.2), où $d(E_\eta)$ désigne maintenant l'accouplement (7.1.2), $d(E_\eta)_{k'}$ l'accouplement
+
+\begin{equation*}
+\Phi' \otimes \Psi' \longrightarrow (\mathbb{Q}/\mathbb{Z})_{k'}
+\end{equation*}
+qui s'en déduit par le changement de base $k \longrightarrow k'$, et où $E'_{\eta'}$ est la biextension de $(P'_{\eta'}, Q'_{\eta'})$ par $\underline{G}_{m\eta'}$ déduite de la biextension $E_\eta$ de $(P_\eta,Q_\eta)$ par $\underline{G}_{m\eta}$ à l'aise du changement de base $\eta' \longrightarrow \eta$ .
+
+7.3.5.3. Un cas intéressant est celui où on a $e(S'/S) = 1$ ., i.e. où
+
+\begin{equation*}
+\underline{m}' = \underline{m}\, V' \quad ,
+\end{equation*}
+où $\underline{m}'$ désigne l'idéal maximal de $V'$. C'est le cas en particulier si $V'$ est étale sur $V$, ou si c'est le hensélisé, ou le hensélisé strict, ou le complété de $V$. Dans ce cas la relation (7.3.5.2) s'exprime simplement en disant que \underline{la formation de l'obstruction} (7.1.1) \underline{resp}. (7.1.2) \underline{commute au changement de base envisagé} $S' \longrightarrow S$.
+
+7.3.5.4. D'autre part, la relation (7.3.5.2) dans le cas général montre que pour toute extension $E_\eta$ comme dans 7.1 a) (resp. toute biextension $E_\eta$ comme dans 7.1 b)), il existe un morphisme de traits \underline{fini} $S' \longrightarrow S$,
+----- misprints recorded on page 309 -----
+[id 7I:532]
+WHERE: end of the paragraph after (7.3.5.2), 'à l'aise du changement de base'
+PRINT: à l'aise du changement de base
+CORRECT: à l'aide du changement de base
+TEX BEFORE: à l'aise du changement de base
+NOTE: Typing error 'aise' for 'aide'. The TeX keeps the printed reading.
+
+[id 7I:533]
+WHERE: 7.3.5.3, first line
+PRINT: e(S'/S) = 1 ., i.e. où
+CORRECT: $e(S'/S) = 1$, i.e. où
+TEX BEFORE: $e(S'/S) = 1$ ., i.e. où
+NOTE: Stray full stop before the comma. The TeX keeps it. The dot may only be a speck in the scan.
+
+=================== PAGE 312 ===================
+----- corrected edition, expose_VIII_body.tex, page 312 -----
+%%%%%%%%%%  scan idx 323  |  folio 312  %%%%%%%%%%
+extension de $P_U$ par $\underline{G}_{mU}$ . En d'autres termes, l'isomorphisme cherché
+
+\begin{equation*}
+\pi^*(E) \simeq \mathrm{pr}_1^*(E)\mathrm{pr}_2^*(E)
+\end{equation*}
+peut être construit au-dessus de $(P \times_S P)_U$ . Or c'est là un ouvert du schéma normal $P \times_S P$, dont le complémentaire est de codimension $\geq 2$. Donc l'isomorphisme en question sur $(P \times_S P)_U$ se prolonge à $P \times_S P$ tout entier, ce qui achève la démonstration.
+
+\underline{Corollaire} 7.5. \underline{Soient} $S$ \underline{un schéma normal}, $P$ \underline{et} $Q$ \underline{deux schémas en groupes lisses sur} $S$, \underline{à fibres maximales connexes}, $P$ \underline{ou} $Q$ \underline{étant à fibres connexes}. \underline{Supposons de plus que pour tout point maximal} $\eta$ \underline{de} $S$, $P_\eta$ \underline{ou} $Q_\eta$ \underline{soit une extension d'un schéma abélien par un tore} (\underline{plus généralement qu'il admette une suite de composition dont les facteurs soient des schémas abéliens}, \underline{des tores ou des groupes} $\underline{G}_a$). \underline{Alors le foncteur} (7.4.2) \underline{est une équivalence de catégories}.
+
+C'est en effet une conséquence immédiate de 7.4 b) et de 4.7.
+
+
+\underline{BIBLIOGRAPHIE}
+
+[1] \quad M. Demazure, J.Giraud, M.Raynaud, Schémas abéliens, Séminaire Orsay 1967/68, à paraître.
+
+[2] \quad M. Raynaud, Faisceaux amples sur les schémas en groupes et les espaces homogènes, thèse Paris 1968 (à paraître dans Lecture Notes, Springer).
+
+[3] \quad M. Rosenlicht, Some basic theorems on algebraic groups, Amer. Jour. Math. vol 78 n°2 (1956), p.401-443.
+
+[3bis] M. Rosenlicht, Some rationality questions on algebraic groups, Annali di Matematica, Série 4, n° 43 (1957), p.25-50.
+
+[4] \quad J.P. Serre, corps locaux, Act. Sci. Ind, 1296 (1962), Hermann Paris.
+----- misprints recorded on page 312 -----
+[id 7I:534]
+WHERE: BIBLIOGRAPHIE, entry [1]: 'Séminaire Orsay 1967/68, à paraître.'
+PRINT: parâitre (the circumflex is typed over the second a; the i keeps its dot)
+CORRECT: paraître
+TEX BEFORE: à paraître.
+NOTE: The typist put the circumflex on the a instead of the i; entry [2] on the same page prints 'paraître' correctly. The TeX silently corrects the misprint; the fix restores the printed reading.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: à paraître.
+  NEW: à parâitre.
+
+=================== PAGE 313 ===================
+----- corrected edition, expose_IX_body.tex, page 313 -----
+%%%%%%%%%%  scan idx 324  |  folio 313  %%%%%%%%%%
+
+
+S G A 7
+
+
+\underline{E X P O S E \ \ IX}
+
+
+\underline{\underline{MODELES DE NERON ET MONODROMIE}}
+
+
+\underline{par A. Grothendieck}
+
+(avec un appendice par M. Raynaud)
+
+
+\underline{S O M M A I R E}
+
+0. Introduction
+
+1. Modèle de Néron des schémas abéliens : notations ; l'accouplement canonique $\Phi_o \times \Phi'_o \longrightarrow (Q/\mathbb{Z})_k$ , et la biextension canonique $W^o$ de $(A^o,{A'}^o)$
+
+2. Partie fixe et partie torique de $T_\ell(A_K)$. Critères de bonne réduction. Théorème d'orthogonalité pour $\ell \neq p$
+
+3. Cas de la réduction semi-stable. Le théorème de réduction semi-stable
+
+4. Application à une conjecture de Serre-Tate et au conducteur
+
+5. Le théorème d'orthogonalité dans le cas $\ell = p$ (cas semi-stable) Dualité des schémas abéliens $B_o$ et $B'_o$ . Caractérisation de la partie fixe. Critères de bonne réduction, de bonne réduction essentielle et de réduction semi-stable
+
+6. Remarques sur la construction de la partie torique et la partie fixe de $T_p(A)$ dans le cas de réduction non semi-stable
+
+7. L'extension de Raynaud $G^\natural$ sur $S$ attachée au schéma abélien $A_K$ à réduction semi-stable. Dualité des schémas abéliens $B,B'$ sur $S$
+
+8. L'extension de Raynaud $A_K^{\natural\,o}$ dans le cas semi-stable, et le ind-groupe $A_K^{\natural}$
+
+9. Définition de l'accouplement de monodromie $\underline{M}_\ell \otimes \underline{M}'_\ell \longrightarrow \mathbb{Z}_{\ell S}$
+
+10. Propriétés de l'accouplement de monodromie. Théorème d'intégrité et de positivité
+
+11. Composantes connexes du modèle de Néron : relation de dualité, comportement assymptotique
+----- misprints recorded on page 313 -----
+[id 7I:535]
+WHERE: SOMMAIRE, item 1: 'l'accouplement canonique Φ_o × Φ'_o → (Q/ℤ)_k'
+PRINT: (Q/ℤ)_k with an ordinary typewriter Q beside the double-struck ℤ
+CORRECT: (\mathbb{Q}/\mathbb{Z})_k
+TEX BEFORE: (Q/\mathbb{Z})_k
+NOTE: The same pairing in the heading of §1 (p. 319) is printed with a double-struck ℚ. The TeX keeps the printed plain Q.
+
+[id 7I:536]
+WHERE: SOMMAIRE, item 11: 'relation de dualité, comportement assymptotique'
+PRINT: assymptotique
+CORRECT: asymptotique
+TEX BEFORE: assymptotique
+NOTE: Spelling error of the print (double s). The TeX keeps the printed reading.
+
+=================== PAGE 316 ===================
+----- corrected edition, expose_IX_body.tex, page 316 -----
+%%%%%%%%%%  scan idx 327  |  folio 316  %%%%%%%%%%
+
+a été trouvée par D. MUMFORD, en utilisant sa théorie des fonctions $\theta$ (non publié) ; malheureusement, il est obligé de se limiter au cas d'une caractéristique résiduelle $\neq 2$.
+
+0.3.  Le théorème de réduction semi-stable est l'outil principal utilisé dans les paragraphes ultérieurs pour l'étude des modèles de Néron, que nous entreprenons ici du \underline{point de vue} "\underline{algébrique}". Il semble indispensable également dans l'étude des variétés abéliennes sur $K$ du \underline{point de vue} "\underline{rigide-analytique}" ou des "fonctions $\theta$ " (ces termes étant synonymes, parait-il, lorsqu'il est question de variétés abéliennes sur des corps valués complets ...), telle qu'elle a été développée récemment par D. MUMFORD et M. RAYNAUD (à la suite de travaux de TATE et MORIKAWA). (Nous dirons quelques mots aux \S{} 13, 14 sur les liens entre les points de vue algébrique et transcendant.) Enfin, ce même théorème est un ingrédient-clef de la démonstration du "\underline{théorème de réduction semi-stable des courbes algébriques}" de ARTIN-DELIGNE-MUMFORD [3] (*), dont nous avons déjà eû à faire usage dans l'étude de l'action de monodromie sur le groupe fondamental ("théorème d'action essentiellement modérée" V \hspace{2em}), et qui est utilisé à nouveau dans la démonstration du théorème d'intégrité et de positivité 10.4 dans le présent exposé (**).
+
+0.4.  Le présent exposé se distingue des autres exposés du Séminaire par le fait que dans l'étude du module de TATE $T_\ell(A_K)$, nous avons systématiquement tenu compte aussi du cas où $\ell$ est égal à la caractéristique
+
+(*)  La démonstration de ce théorème avait été donnée par P. DELIGNE dans le Séminaire oral, mais il n'a pas été jugé utile de la reproduire dans les textes de Séminaire.
+
+(**) Il existe une autre démonstration de ce dernier théorème, via la théorie rigide-analytique, n'utilisant.pas le théorème de réduction semi-stable.
+----- misprints recorded on page 316 -----
+[id 7I:537]
+WHERE: 0.3, 'dont nous avons déjà eû à faire usage'
+PRINT: eû
+CORRECT: déjà eu à faire usage
+TEX BEFORE: eû
+NOTE: The print spells the past participle of avoir as 'eû'; the correct form is 'eu'. The TeX keeps the printed reading.
+
+[id 7I:538]
+WHERE: 0.3, 'ces termes étant synonymes, parait-il'
+PRINT: parait-il
+CORRECT: paraît-il
+TEX BEFORE: parait-il
+NOTE: The circumflex is missing in the print, although the same typescript types 'apparaît' on p. 317. The TeX keeps the printed reading.
+
+[id 7I:539]
+WHERE: footnote (**), 'n'utilisant.pas le théorème'
+PRINT: n'utilisant.pas (a dot sits in the space between the words)
+CORRECT: n'utilisant pas
+TEX BEFORE: n'utilisant.pas
+NOTE: Stray dot typed in place of the space; the TeX keeps it. If the coordinator judges the dot to be a speck rather than typed, delete it from the diplomatic TeX instead (old "n'utilisant.pas", new "n'utilisant pas").
+
+=================== PAGE 317 ===================
+----- corrected edition, expose_IX_body.tex, page 317 -----
+%%%%%%%%%%  scan idx 328  |  folio 317  %%%%%%%%%%
+
+résiduelle $p$. Il se trouve que le langage des \underline{groupes de Barsotti-Tate} [33] (*) permet d'étendre à ce cas tous les phénomènes les plus importants établis pour le cas $\ell \neq p$, sous la réserve toutesfois, parfois, de disposer du théorème fondamental de TATE [33 th. 4], établi pour l'instant seulement dans le cas où $K$ est de caractéristique nulle. Bien entendu, dans ce dernier cas le pro-$p$-groupe de Barsotti-Tate $T_p(A_K)$ s'interprète encore en termes de l'action du groupe de monodromie $I$ sur le module $p$-adique $T_p(A_K(\overline{K}))$, mais on fera attention que la plupart des énoncés que pourrait suggérer cette analogie superficielle avec le cas $\ell \neq p$ sont grossièrement faux. (Ainsi, il n'est plus vrai que l'action du groupe de monodromie soit essentiellement unipotente pour $\ell = p$.) Mais utilisant des traductions plus judicieuses (telle par exemple 5.13 plus bas), il est clair dès maintenant que l'étude des pro-$p$-groupes de Barsotti-Tate définis par voie géométrique sur le corps des fonctions d'un trait à caractéristique résiduelle $p > 0$, qu'il soit ou non d'inégales caractéristiques,doit être considéré comme faisant partie de la théorie de la "monodromie locale", où ces groupes jouent le rôle de "\underline{systèmes locaux} $p$-\underline{adiques}" sur $\mathrm{Spec}(K)$. En fait, ce sont essentiellement les "systèmes locaux" qui s'introduisent dans l'\underline{étude}, \underline{du point de vue} "$p$-\underline{adique }", \underline{du} $H^1$ \underline{des variétés projectives et lisses sur} $K$. Pour l'étude des $H^i$ supérieurs du point de vue $p$-adique, qui reste à faire, il apparaît qu'il faudra élargir convenablement la catégorie des pro-$p$-groupes de Barsotti-Tate sur $K$ resp. sur $S$, en s'inspirant des points de vue fournis par la "cohomologie cristalline".
+
+(*) ou "groupes $p$-divisibles" dans la terminologie de TATE.
+----- misprints recorded on page 317 -----
+[id 7I:540]
+WHERE: 'sous la réserve toutesfois, parfois'
+PRINT: toutesfois
+CORRECT: toutefois
+TEX BEFORE: toutesfois
+NOTE: Archaic or erroneous spelling in the print; the TeX keeps the printed reading.
+
+=================== PAGE 319 ===================
+----- corrected edition, expose_IX_body.tex, page 319 -----
+%%%%%%%%%%  scan idx 330  |  folio 319  %%%%%%%%%%
+
+
+1. \underline{Modèle de Néron des schémas abéliens} : \underline{notations} ; \underline{l'accouplement canonique} $\Phi_o \times \Phi'_o \longrightarrow (\mathbb{Q}/\mathbb{Z})_k$ , \underline{et la biextension cancnique} $W^o$ \underline{de} $(A^o,{A'}^{o})$.
+
+1.0.  Dans toute la suite du présent exposé, on suppose fixé un trait $S$, pour lequel nous utilisons nos notations habituelles $s$, $\eta$, $k$, $X$ etc. de I 1 . Nous supposons donné un schéma abélien $A_K$ sur $K$, dont le schéma abélien dual [5] sera noté $A'_K$ . La dualité entre $A_K$ et $A'_K$ est donnée par une correspondance divisorielle $W_K$ sur $(A_K,A'_K)$, i.e. un Module inversible sur $A_K \times A'_K$ , birigidifié relativement aux sections unité de $A_K,A'_K$ , lequel est déterminé à isomorphisme unique près par sa classe (cf. VIII 3.1)
+
+\begin{equation}\tag{1.0.1}
+w_K \in \mathrm{Biext}^1(A_K,A'_K;\ \mathbb{G}_{m\,K}) \qquad .
+\end{equation}
+Un rôle important sera joué par l'accouplement correspondant (VIII 2.2)
+
+\begin{equation}\tag{1.0.2}
+\varphi : T_\ell(A_K) \times T_\ell(A'_K) \longrightarrow \mathbb{Z}_\ell(1)_K \overset{\mathrm{dfn}}{=} T_\ell(\mathbb{G}_{mK}) \qquad ,
+\end{equation}
+où $\ell$ est un nombre premier quelconque. Lorsque $\ell \neq p = \mathrm{car}.k$, la donnée de $\varphi$ équivaut à celle d'un accouplement de $\mathbb{Z}_\ell$-modules libres de type fini
+
+\begin{equation}\tag{1.0.3}
+\varphi : T_\ell(A_K(\overline{K})) \times T_\ell(A'_K(\overline{K})) \longrightarrow T_\ell(\overline{K}*) \qquad ,
+\end{equation}
+compatible avec l'action de
+
+\begin{equation*}
+\pi = \mathrm{Gal}(\overline{K}/K)
+\end{equation*}
+sur les trois modules en jeu, $\overline{K}$ étant une clôture séparable de $K$. Il est connu (VIII 3.2) que l'accouplement en question est une dualité parfaite, i.e.  qu'il  identifie chacun des modules $T_\ell(A_K(\overline{K}))$, $T_\ell(A'_K(\overline{K}))$ au ``dual'' de l'autre à valeurs dans le module inversible $\mathbb{Z}_\ell(1) = T_\ell(\overline{K}*)$.
+----- misprints recorded on page 319 -----
+[id 7I:541]
+WHERE: title of §1, 'et la biextension cancnique'
+PRINT: cancnique
+CORRECT: canonique
+TEX BEFORE: \underline{et la biextension cancnique}
+NOTE: Typing error in the print (the same line has 'canonique' correctly a few words earlier). The TeX keeps the printed reading.
+
+=================== PAGE 321 ===================
+----- corrected edition, expose_IX_body.tex, page 321 -----
+%%%%%%%%%%  scan idx 332  |  folio 321  %%%%%%%%%%
+
+1.1. Rappelons qu'il existe sur $S$ un \underline{schéma lisse} $A$, appelé \underline{modèle de Néron de} $A_K$ , qui représente le foncteur
+
+\begin{equation}\tag{1.1.1}
+S' \longmapsto \mathrm{Hom}\ (S'_\eta,A_K)
+\end{equation}
+sur la catégorie des $S$-schémas lisses. On a donc par définition un isomorphisme de foncteurs en $S'$, schéma relatif lisse sur $S$ :
+
+\begin{equation}\tag{1.1.2}
+\mathrm{Hom}_S(S',A) \quad \simeq \quad \mathrm{Hom}_K(S'_\eta,A_K) \qquad .
+\end{equation}
+La construction de $A$ est donnée par NERON [19] lorsque le corps résiduel $k$ de $S$ est parfait, et a été étendue par RAYNAUD au cas général au cours d'un séminaire non rédigé qu'il a donné à l'IHES en 1966/67 (cf.[21] pour l'énoncé des résultats principaux obtenus par RAYNAUD, complétant les résultats de NERON de loc. cit.). Nous admettrons ici ce résultat d'existence, ainsi que le fait que $A$ est un \underline{schéma} quasi-projectif sur $S$. Appliquant (1.1.2) pour $S'$ lisse \underline{sur} $\eta$, on constate de plus que le morphisme canonique suivant est un isomorphisme
+
+\begin{equation}\tag{1.1.3}
+A \times_S \mathrm{Spec}(K) \xrightarrow{\ \sim\ } A_K \qquad ,
+\end{equation}
+ce qui justifie le couple de notations $A,A_K$ . On écrira aussi, le cas échéant, $A_\eta$ au lieu de $A_K$ . Utilisant (1.1.3) comme isomorphisme d'identification, la bijection canonique (1.1.2) n'est autre que l'application de \underline{restriction aux fibres génériques.}
+
+Comme le foncteur (1.1.1) a évidemment une structure de Groupe commutatif, il s'ensuit que le modèle de Néron $A$ qui le représente a lui-même une structure de \underline{schéma en groupes commutatif lisse sur} $S$. La suite de cet exposé est consacré à l'étude de ce schéma en groupes.
+----- misprints recorded on page 321 -----
+[id 7I:542]
+WHERE: last sentence of the page
+PRINT: La suite de cet exposé est consacré à l'étude de ce schéma en groupes.
+CORRECT: La suite de cet exposé est consacrée à
+TEX BEFORE: La suite de cet exposé est consacré à
+NOTE: Agreement error of the print: the subject is 'La suite', so the participle should be 'consacrée'. The TeX keeps the printed reading.
+
+=================== PAGE 322 ===================
+----- corrected edition, expose_IX_body.tex, page 322 -----
+%%%%%%%%%%  scan idx 333  |  folio 322  %%%%%%%%%%
+
+Un invariant important, déduit de la considération du modèle de Néron, est évidemment le schéma en groupes commutatifs, lisse et de type fini sur $k$:
+
+\begin{equation}\tag{1.1.4}
+A_o = A \times_S s = A_k \qquad .
+\end{equation}
+Suivant les notations générales, on désigne par $A_o^{\ o}$ sa composante neutre, et on considère également le schéma en groupes
+
+\begin{equation}\tag{1.1.5}
+\Phi_o = A_o/A_o^{\ o}
+\end{equation}
+des composantes connexes de $A_o$, qui est un schéma en groupes fini et étale sur $k$. En termes de la clôture séparable $\bar{k}$ de $k$, il est donc déterminé par le groupe fini ordinaire
+
+\begin{equation}\tag{1.1.6}
+\Phi_o(\bar{k}) \qquad ,
+\end{equation}
+avec les opérations naturelles de
+
+\begin{equation*}
+\pi_o = \mathrm{Gal}(\bar{k}/k)
+\end{equation*}
+sur ce groupe.
+
+En même temps que le modèle de Néron $A$ de $A_K$ , nous étudierons
+
+\begin{equation}\tag{1.1.7}
+A' = \text{modèle de Néron de } A'_K \qquad ,
+\end{equation}
+qui est également un schéma en groupes commutatifs, lisse et de type fini sur $S$. On désignera par
+
+\begin{equation}\tag{1.1.8}
+\Phi'_o = A'_o/{A'}_o^{\ o}
+\end{equation}
+le groupe des composantes connexes de sa fibre spéciale $A'_o$ .
+----- misprints recorded on page 322 -----
+[id 7I:543]
+WHERE: last line, after (1.1.8)
+PRINT: le groupe des composantes connexes de sa fibre spéciale A_o .
+CORRECT: de sa fibre spéciale $A'_o$ .
+TEX BEFORE: de sa fibre spéciale $A_o$ .
+NOTE: 'sa' refers to A'. Its special fibre is A'_o, as in (1.1.8). The print has no prime. The TeX keeps the printed reading.
+
+=================== PAGE 323 ===================
+----- corrected edition, expose_IX_body.tex, page 323 -----
+%%%%%%%%%%  scan idx 334  |  folio 323  %%%%%%%%%%
+
+1.2. Appliquons VIII 7.1 b) au couple $(A,A')$ et à la biextension $W_K$ de (1.0.1) $(A_K,A'_K)$ par $G_{mK}$ . On trouve donc un \underline{accouplement canonique}
+
+\begin{equation}\tag{1.2.1}
+\Phi_o \times \Phi'_o \longrightarrow (\mathbb{Q}/\mathbb{Z})_k \qquad ,
+\end{equation}
+i.e. un accouplement de $\pi_o$-modules
+
+\begin{equation}\tag{1.2.2}
+\Phi_o(\overline{k}) \times \Phi'_o(\overline{k}) \longrightarrow \mathbb{Q}/\mathbb{Z} \qquad .
+\end{equation}
+Cet accouplement apparaît ici comme obstruction au prolongement de $W_K$ en une biextension $W$ de $(A,A')$ par $\mathbb{G}_{mS}$ , et la signification de ce point de vue est explicitée dans VIII 7.3.2. Signalons tout de suite à propos de cet accouplement la
+
+\underline{Conjecture} 1.3. \underline{L'accouplement} (1.2.1) \underline{est une dualité parfaite, i.e.} \underline{identifie chacun des groupes de composantes connexes} $\Phi_o$ \underline{et} $\Phi'_o$ \underline{au dual} \underline{à valeurs dans} $(\mathbb{Q}/\mathbb{Z})_k$ \underline{de l'autre.}
+
+1.3.1. Signalons qu'il résulte de la commutation de la formation de (1.2.1) aux changements de base formellements nets (VIII 7.3.5.3), et de la propriété analogue pour la formation des modèles de Néron, qu'il suffirait de prouver 1.3 dans le cas où $S$ est complet à corps résiduel séparablement clos. La conjecture a été prouvée par ARTIN et MAZUR dans le cas où $A_K$ est la jacobienne d'une courbe propre et lisse sur $K$, en utilisant leur théorie générale (non publiée) de l'autodualité de la jacobienne relative (au sens des catégories dérivées) d'un schéma en courbes propre sur $S$ ; ils ont prouvé la même conjecture 1.3 dans le cas où le corps résiduel est \underline{fini}, en utilisant la théorie de dualité de TATE [32]. Nous verrons également dans 11.4 et 11.5(modulo des
+----- misprints recorded on page 323 -----
+[id 7I:544]
+WHERE: 1.3.1, second line
+PRINT: aux changements de base formellements nets (VIII 7.3.5.3)
+CORRECT: formellement nets
+TEX BEFORE: formellements nets
+NOTE: Typing error for the adverb 'formellement'. The TeX keeps the printed reading.
+
+=================== PAGE 324 ===================
+----- corrected edition, expose_IX_body.tex, page 324 -----
+%%%%%%%%%%  scan idx 335  |  folio 324  %%%%%%%%%%
+
+vérifications de compatibilité) que 1.3 est vrai pour les composantes $\ell$-primaires pour $\ell \neq p$, et que 1.3 est vrai dans le cas de la ``réduction semi-stable''. Ces résultats rendent 1.3 extrêmement plausible. D'ailleurs 1.3 peut également être considéré comme un sous-produit d'une théorie de dualité générale pour les schémas en groupes sur les corps de fractions d'anneaux de valuation discrète complets, formellement analogue à celle de SGA 5 I, qui reste heuristique à l'heure actuelle, et qui contiendrait également la théorie du corps de classe local sous la forme que lui a donné SERRE [27].
+
+1.3.2. La validité de 1.3 pour un schéma abélien donné $A_K$ revient à dire que l'accouplement (1.2.1) est \underline{séparant} à gauche et à droite. D'ailleurs le fait qu'il soit séparant à gauche signifie, en vertu de VIII 7.3.2, que le seul sous-schéma en groupes ouvert $V$ de $A$ tel que $W_K$ puisse se prolonger en une biextension de $(V,A')$ par $G_{mS}$ est la composante neutre $A^o$ de $A$. On a une interprétation symétrique pour la condition que (1.2.1) soit séparant à droite.
+
+1.4. De façon générale si
+
+\begin{equation}\tag{1.4.1}
+U \subset A \ \mbox{et} \ U' \subset A'
+\end{equation}
+sont des sous-schémas en groupes ouverts tels que $W_K$ se prolonge en une biextension de $(U,U')$ par $\mathbb{G}_{mS}$ (ce qui, en vertu de VIII 7.3.2, s'explicite par la condition que les sous-groupes
+
+\begin{equation}\tag{1.4.2}
+% SGA-SRC-001266
+F_o = U_o/U_o^{\,o} \subset \Phi_o \quad , \quad F'_o = {U'}_o/{U'}_o^{\,o} \subset \Phi'_o
+\end{equation}
+de $\Phi_o$ et de $\Phi'_o$ définis par $U$ et $U'$ sont orthogonaux l'un à l'autre pour
+----- misprints recorded on page 324 -----
+[id 7I:545]
+WHERE: end of the paragraph continuing 1.3.1
+PRINT: local sous la forme que lui a donné SERRE [27].
+CORRECT: que lui a donnée SERRE
+TEX BEFORE: que lui a donné SERRE
+NOTE: Agreement error of the print: the preceding direct object is 'la forme'. The TeX keeps the printed reading.
+
+=================== PAGE 325 ===================
+----- corrected edition, expose_IX_body.tex, page 325 -----
+%%%%%%%%%%  scan idx 336  |  folio 325  %%%%%%%%%%
+
+l'accouplement (1.2.1)), on désigne par $W$ ce prolongement (unique à isomorphe unique près) de $W_K$ . Il est déterminé à isomorphisme unique près par sa classe
+
+\begin{equation}\tag{1.4.3}
+w \in \mathrm{Biext}^1(U,U' \; ; \; \mathbb{G}_{mS}) \quad ,
+\end{equation}
+elle-même caractérisée par la condition que son image dans $\mathrm{Biext}^1(A_K,A'_K;\mathbb{G}_{m\,K})$ soit $\mathbf{w}_K$ de (1.0.1).
+
+On peut prendre par exemple pour $U$ et $U'$ les composantes neutres $A^o$ et $A'{}^o$ de $A$ et $A'$. On trouve ainsi une \underline{biextension canonique} $W^o$ \underline{ou} \textbf{W de} $(A^o,A'{}^o)$ \underline{par} $\mathbb{G}_{mS}$, donnant lieu à une classe
+
+\begin{equation}\tag{1.4.4}
+w = w^o \in \mathrm{Biext}^1(A^o,A'{}^o;\mathbb{G}_{mS}) \quad ,
+\end{equation}
+avec laquelle nous travaillerons principalement. Evidemment les classes $w$ (1.4.3) relatives à divers couples $(U,U')$ ont toutes $w^o$ (1.4.4) pour restriction à $(A^o,A'{}^o)$.
+
+\underline{Proposition} 1.5. \underline{Considérons la fibre spéciale} $W_s$ \underline{de la biextension canonique} (1.4.4) $W$ \underline{de} $(A^o,A'{}^o)$ \underline{par} $\mathbb{G}_{mS}$, \underline{de sorte que} $W_s$ \underline{est une biextension de} $(A^o_o,A'{}^o_o)$ \underline{par} $\mathbb{G}_{mk}$ . \underline{Cette dernière est séparante} (VIII 4.11).
+
+Choisissons en effet un Module inversible ample $\mathbb{L}$ sur $A^o$. Alors $\mathbb{L}_\eta$ définit un homomorphisme (cf. 1.0.5)
+
+\begin{equation*}
+A_K \longrightarrow A'_K \quad ,
+\end{equation*}
+qui se prolonge en un homomorphisme $A \longrightarrow A'$, d'où
+
+\begin{equation*}
+\psi : A^o \longrightarrow A'{}^o \quad ,
+\end{equation*}
+et on peut considérer la biextension $W_{\mathbb{L}}$ de $(A^o,A^o)$ par $\mathbb{G}_{mS}$, image inverse
+----- misprints recorded on page 325 -----
+[id 7I:546]
+WHERE: first sentence
+PRINT: ce prolongement (unique à isomorphe unique près) de W_K
+CORRECT: (unique à isomorphisme unique près)
+TEX BEFORE: (unique à isomorphe unique près)
+NOTE: Typing error for 'isomorphisme'; compare the next sentence, 'à isomorphisme unique près'. The TeX keeps the printed reading.
+
+=================== PAGE 328 ===================
+----- corrected edition, expose_IX_body.tex, page 328 -----
+%%%%%%%%%%  scan idx 339  |  folio 328  %%%%%%%%%%
+
+de sorte que la suite exacte (2.1.5) s'écrit alors
+
+\begin{equation}\tag{2.1.8}
+0 \longrightarrow T_\ell(T_o) \longrightarrow T_\ell(A_o^o) \longrightarrow T_\ell(B_o) \longrightarrow 0 \quad .
+\end{equation}
+Posons
+
+\begin{equation}\tag{2.1.9}
+n = \dim A_K = \dim A_o \ , \ \mu = \dim T_o \ , \ \lambda = \dim U_o \ , \ \alpha = \dim B_o \ ,
+\end{equation}
+de sorte qu'on a
+
+\begin{equation}\tag{2.1.10}
+n = \mu + \lambda + \alpha \quad ,
+\end{equation}
+\begin{equation}\tag{2.1.11}
+\left\{
+\begin{array}{l}
+\mathrm{rang}\ T_\ell(T_o) = \mu \ , \ \mathrm{rang}\ T_\ell(A_o^o/T_o) = \mathrm{rang}\ T_\ell(B_o) = 2\alpha \quad , \\[1ex]
+\qquad\qquad \mathrm{rang}\ T_\ell(A_o^o) = \mu + 2\alpha \quad ,
+\end{array}
+\right.
+\end{equation}
+La deuxième relation étant un théorème bien connu de Weil [5] [15].
+
+2.1.12. Les entiers $n$, $\mu$, $\lambda$, $\alpha$ sont définis manifestement sans même supposer qu'on dispose d'une suite exacte (2.1.2), en passant à une clôture algébrique de $k$ ; ils sont connus respectivement sous le nom de dimension de $A_o$, \underline{rang réductif de} $A_o$ $=$ dimension de $T_o$ , \underline{rang unipotent de} $A_o$, \underline{rang abélien de} $A_o$ . Il sont encore reliés par les relations (2.1.10) et (2.1.11) (en omettant dans ces dernières le terme rang $T_\ell(B_o)$...).
+
+2.1.13. Lorsque $k$ est de caractéristique $p > 0$, et que $A_o^o$ est $p$-divisible, ou ce qui revient au même, de rang unipotent nul (cf. 2.1.5), alors il y a lieu également de considérer le pro-groupe $T_p(A_o^o)$, qui sera un \underline{groupe de Barsotti-Tate} (ou \underline{groupe} $p$-\underline{divisible} dans la terminologie de [33]). Alors la suite exacte (2.1.8) reste valable pour $\ell = p$ et c'est une suite exacte de groupes de Barsotti-Tate. Ici on aura $\lambda = 0$, donc
+
+\begin{equation}\tag{2.1.13.1}
+n = \mu + \alpha \quad ,
+\end{equation}
+----- misprints recorded on page 328 -----
+[id 7I:547]
+WHERE: first line, before (2.1.8)
+PRINT: de sorte que la suite exacte (2.1.5) s'écrit alors
+CORRECT: (2.1.6)
+TEX BEFORE: de sorte que la suite exacte (2.1.5) s'écrit alors
+NOTE: Wrong reference in the print. 2.1.5 is a paragraph, not an exact sequence. The sequence that becomes (2.1.8) through (2.1.7) is (2.1.6); p. 329 also says 'correspondant à (2.1.6) ou (2.1.8)'. The TeX keeps the printed reading.
+
+[id 7I:548]
+WHERE: 2.1.12, after 'rang abélien de A_o .'
+PRINT: Il sont encore reliés par les relations (2.1.10)
+CORRECT: Ils sont
+TEX BEFORE: Il sont encore reliés par les relations (2.1.10)
+NOTE: Typing error in the print: the 's' is missing. The TeX keeps the printed reading.
+
+=================== PAGE 329 ===================
+----- corrected edition, expose_IX_body.tex, page 329 -----
+%%%%%%%%%%  scan idx 340  |  folio 329  %%%%%%%%%%
+
+et les formules (2.1.11) restent valables, en y interprétant le rang comme le rang (ou ``hauteur'') des groupes-de Barsotti-Tate envisagés.
+
+2.1.14.  On introduit également pour ${A'}^o_o$ des invariants
+
+\begin{equation*}
+{T'}_o \subset {A'}^o_o \qquad , \qquad {U'}_o \qquad , \qquad {B'}_o \qquad ,
+\end{equation*}
+où ${T'}_o$ est la partie torique de ${A'}^o_o$, ${B'}_o$ sa partie abélienne (définie notamment si $k$ est parfait ou si ${A'}^o_o$ est de rang unipotent nul), ${U'}_o$ sa partie unipotente (définie par exemple si $k$ est parfait, ou, trivialement si ${A'}^o_o$ est de rang unipotent nul). On trouve une suite exacte correspondant à (2.1.6) ou (2.1.8), que nous ne réécrirons pas. On pourrait introduire pour ${A'}^o_o$ des entiers $\mu'$, $\lambda'$, $\alpha'$ comme dans (2.1.9), mais on verra plus bas (2.2.7) que ce sont les mêmes que pour $A^o_o$, ce qui nous dispense d'introduire une nouvelle notation pour eux.
+
+2.2.  Nous nous proposons de préciser les relations entre $T_\ell(A_K)$ et $T_\ell(A_o) = T_\ell(A^o_o)$, en faisant intervenir $T_\ell(A^o)$. Rappelons d'abord :
+
+\underline{Lemme} 2.2.1. \underline{Soit} $m > 0$ \underline{un entier}. \underline{Alors les conditions suivantes sont équivalentes} :
+
+(i)   $m \,\mathrm{id}_{A^o}$ \underline{est plat}.
+
+(ii)  $m \,\mathrm{id}_{A^o}$ \underline{est surjectif}.
+
+(iii) $m \,\mathrm{id}_{A^o}$ \underline{est quasi-fini}.
+
+(iv)  $m$ \underline{est premier à la caractéristique de} $k$, ou $A^o_o$ \underline{est de rang unipotent nul} (cf. 2.1.5).
+
+\underline{De plus}, \underline{si les conditions envisagées sont vérifiées pour} $m$, \underline{elles le sont pour} $m^\nu$ \underline{pour tout} $\nu > 0$, \underline{les groupes}
+----- misprints recorded on page 329 -----
+[id 7I:549]
+WHERE: first paragraph, end
+PRINT: (ou "hauteur") des groupes-de Barsotti-Tate envisagés.
+CORRECT: groupes de
+TEX BEFORE: des groupes-de Barsotti-Tate envisagés.
+NOTE: Spurious hyphen between 'groupes' and 'de' in the print. The TeX keeps the printed reading.
+
+[id 7I:550]
+WHERE: Lemme 2.2.1 (iv)
+PRINT: rang unipotent nul (cf. 1.5.5).
+CORRECT: (cf. 2.1.5)
+TEX BEFORE: \underline{est de rang unipotent nul} (cf. 1.5.5).
+NOTE: Probably a wrong reference number. 'Rang unipotent nul' is explained in 2.1.5, and 2.1.13 cites the same notion as '(cf. 2.1.5)'. The TeX keeps the printed reading.
+
+=================== PAGE 331 ===================
+----- corrected edition, expose_IX_body.tex, page 331 -----
+%%%%%%%%%%  scan idx 342  |  folio 331  %%%%%%%%%%
+
+le système projectif décrit dans 2.2.1. On notera que par les deux changements de base $\eta \longrightarrow S$ et $s \longrightarrow S$, il redonne les systèmes projectifs $T_{\ell}(A_{K})$ et $T_{\ell}(A_{o}^{\,o}) = T_{\ell}(A_{o})$ envisagés dans 1.0 et 2.1 respectivement.
+
+2.2.3. Supposons maintenant $S$ hensélien. On sait alors que tout schéma quasi-fini et séparé $X$ sur $S$ se décompose canoniquement en une somme
+
+\begin{equation}\tag{2.2.3.1}
+X = X^{f} \coprod X' \qquad ,
+\end{equation}
+où $X^{f}$ est \underline{fini sur} $S$, et où $X'_{o} = \emptyset$ i.e. $X'$ est réduit à sa fibre générique $X'_{\eta}$ ; donc $X^{f}$ a même fibre spéciale que $X$. Cette décomposition est évidemment fonctorielle en $X$. On en conclut en particulier que si $X$ est un schéma en groupes sur $S$, alors $X^{f}$ en est un sous-schéma en groupes. Si $X$ est plat resp. étale sur $S$, il en est évidemment de même de $X^{f}$.
+
+Nous appliquerons ceci aux composants ${}_{\ell^{\nu}}A^{o}$ de $T_{\ell}(A^{o})$, d'où un sous-système projectif de groupes
+
+\begin{equation}\tag{2.2.3.2}
+(({}_{\ell^{\nu}}A^{o})^{f})_{\nu > 0} \quad \stackrel{\mathrm{dfn}}{=} \quad T_{\ell}(A^{o})^{f} \subset T_{\ell}(A^{o}) \qquad ,
+\end{equation}
+qu'on appelera la \underline{partie fixe} du module de Tate $T_{\ell}(A^{o})$. On a évidemment, par construction, des isomorphismes canoniques, fonctoriels en $A$ :
+
+\begin{equation}\tag{2.2.3.3}
+T_{\ell}(A^{o})^{f} \times_{S} s \quad \simeq \quad T_{\ell}(A^{o}) \times_{S} s \quad \simeq \quad T_{\ell}(A_{o}^{\,o}) \qquad .
+\end{equation}
+D'autre part, la fibre générique de $T_{\ell}(A^{o})^{f}$ définit un sous-pro-groupe canonique de $T_{\ell}(A_{K})$, appelée encore ``\underline{partie fixe}'' de ce module de Tate, soit
+
+\begin{equation}\tag{2.2.3.4}
+T_{\ell}(A_{K})^{f} \subset T_{\ell}(A_{K}) \qquad .
+\end{equation}
+----- misprints recorded on page 331 -----
+[id 7I:551]
+WHERE: line after (2.2.3.2)
+PRINT: qu'on appelera la partie fixe du module de Tate
+CORRECT: appellera
+TEX BEFORE: qu'on appelera la
+NOTE: Spelling error of the typescript: the future of appeler is appellera. The TeX keeps the printed reading.
+
+=================== PAGE 333 ===================
+----- corrected edition, expose_IX_body.tex, page 333 -----
+%%%%%%%%%%  scan idx 344  |  folio 333  %%%%%%%%%%
+
+
+Pour prouver cette relation, introduisons le localisé strict $\tilde{S}$ de $S$, de corps des fractions $\tilde{K}$ la sous-extension non ramifiée maximale de $\overline{K}$ sur $K$. Comme $({}_{m}A)^{f}$ est fini étale sur $S$, ses points à valeurs dans $\overline{K}$ sont déjà à valeurs dans $\tilde{K}$, donc le premier membre de (2.2.5.1) n'est autre que $\mathrm{Hom}_{S}(\tilde{S} , ({}_{m}A)^{f})$, tandis que le deuxième est, par définition de $\tilde{K}$,égal à ${}_{m}A(\tilde{K})$. Or le premier membre, par définition de $({}_{m}A)^{f}$, compte tenu que $\tilde{S}$ est une limite projective de schémas $S_{i}$ étales finis sur $S$, est aussi égal à $\mathrm{Hom}_{S}(\tilde{S} , {}_{m}A) = {}_{m}\mathrm{Hom}_{S}(\tilde{S},A)$, et par définition du modèle de Néron on a $\mathrm{Hom}_{S}(\tilde{S},A) = A(\tilde{K})$, ce qui donne bien l'égalité annoncée (2.2.5.1).
+
+Pour en déduire 2.2.5, on note qu'on déduit de (2.2.5.1) que
+
+\begin{equation}\tag{*}
+T_{\ell}(A(\overline{K}))^{I} \;=\; \varprojlim_{\nu} ({}_{\ell^{\nu}}A)^{f}(\overline{K}) \supset \lim\ ({}_{\ell^{\nu}}A^{o})^{f}(\overline{K}) \quad ;
+\end{equation}
+mais si $(x_{\nu})$ est un élément du deuxième membre, alors pour tout entier $\nu \geq 0$, $x_{\nu}$ est une section de $A$ qui est infiniment divisible par $\ell$, donc sa valeur en $s$ est un élément de $A_{o}(k)$ infiniment divisible par $\ell$, donc il est dans $A_{o}^{\,o}(k)$, ce qui prouve l'égalité des deux derniers membres de (*) et achève de prouver 2.2.5.
+
+\underline{Proposition} 2.2.6. \underline{Soient} $C_{K}$ \underline{un deuxième schéma abélien sur} $K$, \underline{de modèle de Néron} $C$, \underline{et considérons un homomorphisme} $u_{K}:C_{K} \longrightarrow A_{K}$, \underline{se prolongeant donc en un homomorphisme} $u: C \longrightarrow A$. \underline{Supposons que} $u_{K}$ \underline{soit une} isogénie. \underline{Alors pour tout nombre premier} $\ell,T_{\ell}(u_{K}):T_{\ell}(C_{K}) \longrightarrow T_{\ell}(A_{K})$ \underline{induit une isogénie des parties fixes}
+
+\begin{equation}\tag{2.2.6.1}
+T_{\ell}(C_{K})^{f} \longrightarrow T_{\ell}(A_{K})^{f} \quad ,
+\end{equation}
+----- misprints recorded on page 333 -----
+[id 7I:552]
+WHERE: end of the proof of (2.2.5.1)
+PRINT: ce qui donne bien l'égalité annoncée (6.2.5.1).
+CORRECT: (2.2.5.1)
+TEX BEFORE: l'égalité annoncée (6.2.5.1).
+NOTE: Wrong reference number in the print: the equality being proved is (2.2.5.1). The TeX keeps the printed reading.
+
+=================== PAGE 334 ===================
+----- corrected edition, expose_IX_body.tex, page 334 -----
+%%%%%%%%%%  scan idx 345  |  folio 334  %%%%%%%%%%
+
+
+\underline{et de même le morphisme induit par} $u_{o} : C_{o} \longrightarrow A_{o}$
+
+\begin{equation}\tag{2.2.6.2}
+T_{\ell}(u_{o}^{\,o}) : T_{\ell}(C_{o}^{\,o}) \longrightarrow T_{\ell}(A_{o}^{\,o})
+\end{equation}
+\underline{est une isogénie.} \underline{Enfin,} $u_{o} : C_{o} \longrightarrow A_{o}$ \underline{induit une isogénie du plus grand sous-tore de} $C_{o}$ \underline{dans le plus grand sous-tore} $T_{o}$ \underline{de} $A_{o}$, \underline{et au-dessus d'une extension} $k'$ \underline{de} $k$ \underline{sur laquelle les ``parties abéliennes'' de} $C_{o}$ \underline{et de} $A_{o}$ \underline{sont définies} (\underline{par exemple sur la clôture parfaite de} $k$), $u_{o}$ \underline{induit une isogénie entre les parties abéliennes de} $C_{ok'}$ \underline{et de} $A_{ok'}$ .
+
+Cet énoncé est conséquence formelle du fait que $T_{\ell}(A_{K})^{f}$ , $T_{\ell}(A_{o}^{\,o})$, le plus grand sous-tore de $A_{o}$, enfin la ``partie abélienne'' de $A_{ok'}$ , sont pour $A_{K}$ variable des \underline{foncteurs additifs} en $A_{K}$, et que le fait que $u_{K}$ soit une isogénie s'exprime par la condition qu'il existe un morphisme $v_{K}:A_{K} \longrightarrow C_{K}$ tel que l'on ait $u_{K}v_{K} = n.\mathrm{id}$, $v_{K}u_{K} = n.\mathrm{id}$, avec $n$ un entier $> 0$.
+
+Notons en particulier :
+
+\underline{Corollaire} 2.2.7. \underline{Si} $A_{K}$ \underline{et} $C_{K}$ \underline{sont des schémas abéliens isogénes sur} $K$, \underline{alors les invariants correspondants} $\mu$, $\lambda$, $\alpha$ (2.1.11) \underline{sont les mêmes pour} $A_{K}$ \underline{et pour} $C_{K}$ . \underline{En particulier, ils sont les mêmes pour} $A_{K}$ \underline{et son dual} $A'_{K}$ .
+
+\underline{Remarques} 2.2.8. Dans les deux énoncés précédents 2.2.6 et 2.2.7, on a supposé $S$ hensélien. Il est d'autre part immédiat que 2.2.7, ainsi que les assertions de 2.2.6 concernant les propriétés de l'homomorphisme induit $u_{o} : C_{o} \longrightarrow A_{o}$ , sont valables sans cette hypothèse. On se ramène en effet au cas traité par le changement de base $S^{h} \longrightarrow S$, où $S^{h}$ est le hensélisé de $S$, compte tenu du fait (immédiat en vertu des définitions) que la formation des modèles de Néron commute à ce changement de base.
+----- misprints recorded on page 334 -----
+[id 7I:553]
+WHERE: Corollaire 2.2.7, first line
+PRINT: sont des schémas abéliens isogénes sur K
+CORRECT: isogènes
+TEX BEFORE: isogénes
+NOTE: Wrong accent in the print. The TeX keeps the printed reading.
+
+=================== PAGE 335 ===================
+----- corrected edition, expose_IX_body.tex, page 335 -----
+%%%%%%%%%%  scan idx 346  |  folio 335  %%%%%%%%%%
+
+\underline{Corollaire} 2.2.9. (Cas de \underline{bonne réduction.}) \underline{Soient} $S$ \underline{un trait}, $A_K$ \underline{un schéma abélien sur le corps des fractions} $K$ \underline{de} $S$, $A$ \underline{le modèle de Néron de} $A_K$, $\ell$ \underline{un nombre premier} $\neq$ car.k . \underline{Les conditions suivantes sont équivalentes.}
+
+(i) \underline{Il existe un schéma abélien sur} $S$ \underline{dont la fibre générique est isomorphe à} $A_K$ .
+
+(ii) $A$ \underline{est un schéma abélien.}
+
+(ii$^o$) $A^o$ \underline{est un schéma abélien.}
+
+(iii) $A_o$ \underline{est un schéma abélien.}
+
+(iii$^o$) $A_o^{\,o}$ \underline{est un schéma abélien}, \underline{i.e.} \underline{(avec les notations de} (2.1.11) \underline{on a} $\lambda = \mu = 0$ .
+
+(iv) $A$ \underline{est propre sur} $S$.
+
+(iv$^o$) $A^o$ \underline{est propre sur} $S$.
+
+(v) $T_\ell(A_K)$ \underline{est} \underline{"non ramifié sur} $S$" \underline{i.e.} \underline{se prolonge en un faisceau} $\ell$\underline{-adique constant tordu sur} $S$, \underline{i.e.} \underline{le groupe d'inertie} $I$ \underline{opère trivialement sur} $T_\ell(A_K(\overline{K}))$.
+
+(v bis) \underline{Pour tout entier} $\nu \geq 0$, ${}_{\ell^\nu}A_K$ \underline{est} \underline{"non ramifié sur} $S$" \underline{i.e. se prolonge en un revêtement étale sur} $S$, \underline{i.e.} \underline{le groupe d'inertie} $I$ \underline{opère trivialement sur} ${}_{\ell^\nu}A_K(\overline{K})$.
+
+\underline{Enfin}, \underline{un schéma abélien sur} $S$ \underline{comme dans} (i) \underline{est un modèle de Néron de} $A_K$ , \underline{et en particulier est déterminé à isomorphisme unique près.}
+
+2.2.9.1. On dit que $A_K$ a \underline{bonne réduction} sur $S$ s'il satisfait la condition (i) ci-dessus. Le critère (v) ou (v bis) est connu sous le nom de \underline{critère de} NERON-OGG-CHAFAREVITCH de bonne réduction.
+----- misprints recorded on page 335 -----
+[id 7I:554]
+WHERE: Corollaire 2.2.9, item (iii^o)
+PRINT: i.e. (avec les notations de (2.1.11) on a λ = μ = 0 .
+CORRECT: \underline{(avec les notations de} (2.1.11)) \underline{on a}
+TEX BEFORE: \underline{(avec les notations de} (2.1.11) \underline{on a}
+NOTE: The parenthesis opened before 'avec' is never closed in the print. The TeX keeps the printed reading.
+
+=================== PAGE 337 ===================
+----- corrected edition, expose_IX_body.tex, page 337 -----
+%%%%%%%%%%  scan idx 348  |  folio 337  %%%%%%%%%%
+
+appelée la \underline{partie torique de} $T_\ell(A^o)$,
+
+\begin{equation}\tag{2.3.2}
+T_\ell(A^o)^t \hookrightarrow T_\ell(A^o)^f \hookrightarrow T_\ell(A^o) \quad ,
+\end{equation}
+caractérisé par la condition que sa fibre spéciale soit donnée par l'inclusion (2.3.1) :
+
+\begin{equation}\tag{2.3.3}
+T_\ell(A^o)^t \times_S s = T_\ell(T_o) \hookrightarrow T_\ell(A_o^{\,o}) \quad .
+\end{equation}
+Nous donnerons d'ailleurs plus loin une interprétation de la partie torique de $T_\ell(A^o)$ comme le module de Tate $T_\ell(T)$ d'un tore $T$ sur $S$ qui relève le tore $T_o$ sur $k$, interprétation qui permettra d'étendre la définition de la partie torique au cas $\ell = p$. Pour l'instant, et pour fixer les idées, nous nous bornons à examiner le cas $\ell \neq p$, auquel cas la partie torique de $T_\ell(A^o)$ peut donc se décrire par le sous-$\mathbb{Z}_\ell$-module correspondant de $T_\ell(A(\overline{K}))$ :
+
+\begin{equation}\tag{2.3.4}
+T_\ell(A(\overline{K}))^t \hookrightarrow T_\ell(A(\overline{K}))^f \hookrightarrow T_\ell(A(\overline{K})) \quad ,
+\end{equation}
+stable par l'action de $\pi$, où le premier terme est défini comme $T_\ell(A^o)^t(\overline{K})$, et est appelé encore comme de juste le \underline{sous-module torique} du module de Tate $T_\ell(A(\overline{K}))$. Ce dernier apparaît donc comme muni d'une filtration canonique à trois crans (2.3.4). Appliquant ces réflexions au schéma abélien dual $A'_K$ , on trouve de même une filtration à trois crans
+
+\begin{equation}\tag{2.3.5}
+T_\ell(A'(\overline{K}))^t \hookrightarrow T_\ell(A'(\overline{K}))^f \hookrightarrow T_\ell(A'(\overline{K})) \quad .
+\end{equation}
+Les termes médians dans (2.3.4) et (2.3.5) (``parties fixes'')étant décrits en termes des structures de $\pi$-modules des modules de Tate de $A(\overline{K})$ , $(A'(\overline{K})$ comme les modules d'invariants sous le groupe d'inertie $I$ (2.2.5), les parties toriques sont complètement décrites en termes des parties fixes
+----- misprints recorded on page 337 -----
+[id 7I:555]
+WHERE: first line: 'appelée la partie torique de'
+PRINT: appelée
+CORRECT: appelé
+TEX BEFORE: appelée
+NOTE: Agreement error: the word refers to 'un sous-faisceau' (cf. 'caractérisé' after (2.3.2)). The TeX keeps the printed reading.
+
+[id 7I:556]
+WHERE: last paragraph: 'des modules de Tate de A(K̄) , (A'(K̄) comme les modules'
+PRINT: (A'(K̄) — a parenthesis opened and never closed
+CORRECT: $A'(\overline{K})$
+TEX BEFORE: $(A'(\overline{K})$
+NOTE: Stray '('. The TeX keeps the printed reading.
+
+=================== PAGE 338 ===================
+----- corrected edition, expose_IX_body.tex, page 338 -----
+%%%%%%%%%%  scan idx 349  |  folio 338  %%%%%%%%%%
+
+et de l'accouplement $\varphi$ de (1.0.2), gra\^ce au théorème suivant (dont un cas particulier se trouve déjà dans [11]).
+
+\underline{Thoérème} 2.4. (\underline{Théorème d'orthogonalité}). \underline{Soient} $S$ \underline{un trait hensélien,} $A_K$ \underline{un schéma abélien sur son corps des fractions} $K$, $A'_K$ \underline{le schéma abélien dual,} $\ell$ \underline{un nombre premier distinct de la caractéristique résiduelle de} $S$, \underline{d'où sur les modules de Tate} $T_\ell(A\ (\overline{K}))$ \underline{et} $T_\ell(A'(\overline{K}))$ \underline{la filtration canonique} (2.3.4) \underline{resp.} (2.3.5) \underline{par la} ``\underline{partie fixe}'' \underline{et par la} ``\underline{partie torique}''. \underline{Alors la partie torique} $T_\ell(A(\overline{K}))^t$ \underline{est l'intersection de la partie fixe} $T_\ell(A(\overline{K}))^f$ \underline{avec l'orthogonal de la partie fixe} $T_\ell(A'(\overline{K}))^f = T_\ell(A'(\overline{K}))^I$ \underline{pour l'accouplement canonique} $\varphi$ (1.0.3), \underline{donc symétriquement}, \underline{la partie torique} $T_\ell(A'(\overline{K}))^t$ \underline{est l'intersection de} $T_\ell(A'(\overline{K}))^f$ \underline{avec l'orthogonal de la partie fixe} $T_\ell(A(\overline{K}))^f = T_\ell(A(\overline{K}))^I$. (NB \underline{l'exposant} $I$ \underline{dénote le sous-module des invariants sous l'action du groupe d'inertie} $I$.)
+
+\underline{Démonstration} \quad a) \quad Prouvons que $T_\ell(A(\overline{K}))^t$ est orthogonal à $T_\ell(A'(\overline{K}))^f$. Pour ceci, nous allons interpréter la restriction de la forme $\varphi$ aux parties fixes des modules de Tate, à l'aide de la biextension canonique $W^o = W$ de (1.4.4), prolongement canonique de la biextension $W_K$ de $(A_K , A'_K)$ par $\mathbb{G}_{mK}$ en une biextension de $(A^o , {A'}^o)$ par $\mathbb{G}_{mS}$ . En vertu de VIII 2.2, à $W$ est associé un accouplement
+
+\begin{equation}\tag{2.4.1}
+\varphi_W : T_\ell(A^o) \times T_\ell({A'}^o) \longrightarrow T_\ell(\mathbb{G}_{mS}) \quad ,
+\end{equation}
+dont l'accouplement $\varphi$ de (1.0.3) est déduit en passant aux points à valeurs dans $\overline{K}$ . Il en résulte que la restriction de $\varphi$ aux parties fixes envisagées dans 2.4 s'obtient à partir de l'accouplement
+
+\begin{equation}\tag{2.4.2}
+T_\ell(A^o)^f \times T_\ell({A'}^o)^f \longrightarrow T_\ell(\mathbb{G}_{mS})
+\end{equation}
+----- misprints recorded on page 338 -----
+[id 7I:557]
+WHERE: first line: 'graĉe au théorème suivant'
+PRINT: graĉe (circumflex typed over the c)
+CORRECT: grâce
+TEX BEFORE: gra\^ce
+NOTE: Accent on the wrong letter. The TeX keeps the printed reading.
+
+[id 7I:558]
+WHERE: heading of 2.4
+PRINT: Thoérème (underlined)
+CORRECT: \underline{Théorème}
+TEX BEFORE: \underline{Thoérème}
+NOTE: Typing error. The TeX keeps the printed reading.
+
+[id 7I:559]
+WHERE: Démonstration a): 'biextension W_K de (A_K;A'_K) par G_mK'
+PRINT: (A_K;A'_K), separator looks like a semicolon
+CORRECT: $(A_K , A'_K)$
+TEX BEFORE: $(A_K , A'_K)$
+NOTE: Same sentence has '(A°,A'°)' with a comma. The TeX silently normalises to a comma. Verify on the scan before applying.
+
+[id 7I:560]
+WHERE: (2.4.1)
+PRINT: φ_w (subscript looks like a lowercase w)
+CORRECT: \varphi_W
+TEX BEFORE: \varphi_W :
+NOTE: This is the pairing of the biextension W. The TeX silently writes a capital W. Verify on the scan before applying.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: $(A_K , A'_K)$
+  NEW: $(A_K ; A'_K)$
+  OLD: \varphi_W :
+  NEW: \varphi_w :
+
+=================== PAGE 339 ===================
+----- corrected edition, expose_IX_body.tex, page 339 -----
+%%%%%%%%%%  scan idx 350  |  folio 339  %%%%%%%%%%
+
+restriction de (2.4.1), en passant aux points à valeurs dans $\overline{K}$ . Comme les deux termes qui interviennent dans le premier membre de (2.4.2) sont maintenant des faisceaux $\ell$-adiques constants tordus, pour étudier ce dernier accouplement, on peut se borner à étudier l'accouplement induit sur les fibres spéciales. Or les fibres des deux termes envisagés ne sont autres que les modules de Tate $T_{\ell}(A_{o}^{\,o}),T_{\ell}({A'}^{o}_{o})$ (2.2.3.3), et l'accouplement déduit de (2.4.2) par passage aux fibres spéciales n'est autre que l'accouplement
+
+\begin{equation}\tag{2.4.3}
+T_{\ell}(A_{o}^{\,o}) \times T_{\ell}({A'}^{o}_{o}) \longrightarrow T_{\ell}(\mathbb{G}_{mk})
+\end{equation}
+déduit de la biextension $W_{o}$ de $(A_{o}^{\,o},{A'}^{o}_{o})$ par $\mathbb{G}_{mk}$ , restriction de $W$ aux fibres spéciales.
+
+Rappelons maintenant (2.3) que la partie torique de $T_{\ell}(A(\overline{K}))$ s'obtient en passant aux points à valeurs dans $\overline{K}$ dans le sous-faisceau $\ell$-adique constant tordu $T_{\ell}(A^{o})^{t}$ de $T_{\ell}(A^{o})^{f}$, donc la relation d'orthogonalité à prouver s'exprime en disant que l'accouplement induit par (2.4.2)
+
+\begin{equation}\tag{2.4.4}
+T_{\ell}(A^{o})^{t} \times T_{\ell}({A'}^{o})^{f} \longrightarrow T_{\ell}(\mathbb{G}_{mS})
+\end{equation}
+est identiquement nul. Or il suffit de le voir pour l'accouplement correspondant sur les fibres spéciales, qui par la définition de la partie torique n'est autre que l'accouplement
+
+\begin{equation}\tag{2.4.5}
+T_{\ell}(T_{o}) \times T_{\ell}(A_{o}^{\prime\,o}) \longrightarrow T_{\ell}(\mathbb{G}_{mk})
+\end{equation}
+induit par (2.4.3). Or en vertu de VIII 4.10 cet accouplement est nécessairement nul, ce qui prouve l'orthogonalité annoncée.
+----- misprints recorded on page 339 -----
+[id 7I:561]
+WHERE: (2.4.5)
+PRINT: T_ℓ(T_o) × T_ℓ(A_o°), no prime on the second factor
+CORRECT: \times T_{\ell}({A'}^{o}_{o})
+TEX BEFORE: T_{\ell}(T_{o}) \times T_{\ell}(A_{o}^{\,o})
+NOTE: (2.4.5) is the special fibre of (2.4.4), whose second factor T_ℓ(A'°)^f has fibre T_ℓ(A'_o°) (cf. (2.4.3), (2.4.7)). The TeX keeps the printed reading. For the corrected edition, replace '\times T_{\ell}(A_{o}^{\,o})', which is unique on the page.
+
+=================== PAGE 340 ===================
+----- corrected edition, expose_IX_body.tex, page 340 -----
+%%%%%%%%%%  scan idx 351  |  folio 340  %%%%%%%%%%
+
+b)  Prouvons que l'inclusion
+
+\begin{equation}\tag{2.4.6}
+T_{\ell}(A(\overline{K}))^{t} \subset T_{\ell}(A(\overline{K}))^{f} \cap (T_{\ell}(A'(\overline{K}))^{f})^{\perp}
+\end{equation}
+est une égalité, où le signe $\perp$ désigne l'orthogonal. Il revient au même de dire que dans l'accouplement (2.4.2), l'annulateur du deuxième facteur, qui contient la partie torique $T_{\ell}(A^{o})^{t}$ comme on vient de voir, est \underline{égale} à cette dernière. Comme il s'agit encore de relations antre faisceaux $\ell$-adiques constants tordus, il suffit de vérifier cette assertion sur les fibres spéciales, i.e. que l'inclusion déjà obtenue (2.4.7)
+
+\begin{equation}\tag{2.4.7}
+T_{\ell}(T_{o}) \subset T_{\ell}({A'}^{o}_{o})^{\perp}
+\end{equation}
+est une égalité ; en d'autres termes, il faut vérifier que la biextension $W_{o}$ de $(A_{o}^{\,o},{A'}^{o}_{o})$ est \underline{non dégénérée à gauche} (VIII 4.11). Or c'est ce que nous avons déjà noté dans 1.5, comme conséquence d'un résultat de la thèse de RAYNAUD.
+
+2.5.  On peut donner une forme équivalente au théorème d'orthogonalité, en utilisant une polarisation $\xi$ de $A_{K}$ , et la forme bilinéaire alternée (1.0.8), compatible aux opérations de $\pi$ ,
+
+\begin{equation}\tag{2.5.1}
+\varphi_{\xi} : T_{\ell}(A(\overline{K})) \times T_{\ell}(A(\overline{K})) \longrightarrow T_{\ell}(\overline{K}*) \quad ,
+\end{equation}
+déduite de la forme $\varphi$ (1.0.3) par transport de structure sur le deuxième argument à l'aide de l'isogénie de $\mathbb{Z}_{\ell}$-modules
+
+\begin{equation*}
+T_{\ell}(A(\overline{K})) \longrightarrow T_{\ell}(A'(\overline{K}))
+\end{equation*}
+induite par l'isogénie $\psi_{\xi} : A_{K} \longrightarrow A'_{K}$ définie par $\xi$ . L'égalité dans (2.4.6) prend alors la forme simple
+----- misprints recorded on page 340 -----
+[id 7I:562]
+WHERE: 'de relations antre faisceaux ℓ-adiques'
+PRINT: antre
+CORRECT: entre
+TEX BEFORE: antre
+NOTE: The TeX keeps the printed reading.
+
+[id 7I:563]
+WHERE: 'l'annulateur du deuxième facteur, ... est égale à cette dernière'
+PRINT: égale (underlined)
+CORRECT: \underline{égal}
+TEX BEFORE: \underline{égale}
+NOTE: Agreement with 'l'annulateur'. The TeX keeps the printed reading.
+
+=================== PAGE 341 ===================
+----- corrected edition, expose_IX_body.tex, page 341 -----
+%%%%%%%%%%  scan idx 352  |  folio 341  %%%%%%%%%%
+
+\begin{equation}\tag{2.5.2}
+W = V \cap V^{\perp} \quad ,
+\end{equation}
+où on a posé
+
+\begin{equation}\tag{2.5.3}
+\left\{
+\begin{array}{l}
+U = T_{\ell}(A(\overline{K})) \quad , \quad V = U^{I} = \text{"partie fixe" de } T_{\ell}(A(\overline{K})) \\[3mm]
+\hspace{4em} W = \text{partie torique de } T_{\ell}(A(\overline{K})) \quad ,
+\end{array}
+\right.
+\end{equation}
+et où $\perp$ désigne l'orthogonal par rapport à la forme de polarisation (2.5.1). Les modules précédents donnent alors lieu au diagramme d'inclusions
+
+\begin{equation}\tag{2.5.4}
+\begin{tikzcd}[column sep=large, row sep=large]
+& & V \arrow[dl, hook', "2\lambda"'] & & \\
+U & W^{\perp} = V + V^{\perp} \arrow[l, hook', "\mu"'] & & W = V \cap V^{\perp} \arrow[ul, hook', "2\alpha"'] \arrow[dl, hook, "2\lambda"] & 0 \arrow[l, hook', "\mu"'] \\
+& & V^{\perp} \arrow[ul, hook, "2\alpha"] & &
+\end{tikzcd} \quad ,
+\end{equation}
+% STRUCTURE: Tag (2.5.4) at left margin. One horizontal chain with a lozenge (diamond) inserted in the
+%   middle. EXACTLY 6 NODES: (1) U — middle row, far left; (2) W^{\perp} = V + V^{\perp} — middle row,
+%   second from left (left apex of the lozenge); (3) V — top row, centre (top apex of the lozenge); (4)
+%   V^{\perp} — bottom row, centre (bottom apex of the lozenge); (5) W = V \cap V^{\perp} — middle row,
+%   right of the lozenge (right apex); (6) 0 — middle row, far right. EXACTLY 6 ARROWS, all of them
+%   hooked inclusion arrows (the hook/curl is drawn at the TAIL end, arrowhead at the head end); every
+%   arrow points leftward or diagonally leftward, i.e. from the smaller module into the larger one: (a)
+%   from node (2) W^{\perp}=V+V^{\perp} to node (1) U, horizontal, pointing LEFT, hooked, label \mu
+%   placed ABOVE the arrow; (b) from node (3) V to node (2) W^{\perp}=V+V^{\perp}, diagonal DOWN-LEFT,
+%   hooked (hook at the V end), arrowhead at node (2), label 2\lambda placed ABOVE-LEFT of the arrow;
+%   (c) from node (4) V^{\perp} to node (2) W^{\perp}=V+V^{\perp}, diagonal UP-LEFT, hooked (hook at the
+%   V^{\perp} end), arrowhead at node (2), label 2\alpha placed BELOW-LEFT of the arrow; (d) from node
+%   (5) W=V\cap V^{\perp} to node (3) V, diagonal UP-LEFT, hooked (hook at the W end), arrowhead at V,
+%   label 2\alpha placed ABOVE-RIGHT of the arrow; (e) from node (5) W=V\cap V^{\perp} to node (4)
+%   V^{\perp}, diagonal DOWN-LEFT, hooked (hook at the W end), arrowhead at V^{\perp}, label 2\lambda
+%   placed BELOW-RIGHT of the arrow; (f) from node (6) 0 to node (5) W=V\cap V^{\perp}, horizontal,
+%   pointing LEFT, hooked, label \mu placed ABOVE the arrow. No dashed, no double-headed, no iso arrows
+%   anywhere. A comma is printed on the same line far to the right of node (6) 0, outside the diagram
+%   proper (punctuation, not a node).
+où les entiers $2\alpha$, $2\lambda$, $\mu$ désignent les rangs du quotients de deux modules consécutifs dans le diagramme, les notations étant celles de (2.1.9). (Le fait que $W$ soit de rang $\mu$ est la définition de $\mu$, que $V/W$ soit de rang $2\alpha$ est la deuxième relation (2.1.11) jointe à la suite exacte (2.1.6), d'où par orthogonalité rang $U/W^{\perp} = \mu$ et rang $W^{\perp}/V^{\perp} = 2\alpha$ ; enfin les formules
+
+\begin{equation}\tag{2.5.5}
+\mathrm{rang}\ V/V \cap V^{\perp} \;=\; \mathrm{rang}\ V/W = 2\alpha \quad ,
+\end{equation}
+et la formule duale, résultent des précédentes, compte tenu de (2.1.10) et de rang $U = n$.)
+
+\underline{Remarques} 2.6.  a) Nous avons obtenu ici le théorème d'orthogonalité 2.4 comme conséquence facile de la théorie des biextensions développée dans les numéros précédents. On peut démontrer l'\underline{inclusion} (2.4.6) sans utiliser la théorie des biextensions, par un argument arithmétique dans
+----- misprints recorded on page 341 -----
+[id 7I:564]
+WHERE: first line after (2.5.4)
+PRINT: désignent les rangs du quotients de deux modules
+CORRECT: les rangs des quotients
+TEX BEFORE: désignent les rangs du quotients de deux modules
+NOTE: Typing error 'du' for 'des'; the TeX keeps the printed reading.
+
+[id 7I:565]
+WHERE: (2.5.5)
+PRINT: rang V/V ∩ V^⊥ = rang V/W = 2λ ,
+CORRECT: \mathrm{rang}\ V^{\perp}/V \cap V^{\perp} \;=\; \mathrm{rang}\ V^{\perp}/W = 2\lambda
+TEX BEFORE: \mathrm{rang}\ V/V \cap V^{\perp} \;=\; \mathrm{rang}\ V/W = 2\lambda
+NOTE: As printed it contradicts the sentence just above ('V/W soit de rang 2α') and the diagram (W→V labelled 2α, W→V^⊥ labelled 2λ). The formula still to be derived is rang V^⊥/W = 2λ, whose dual is rang W^⊥/V = 2λ; the hand-added ⊥ is missing on the numerator V. The TeX keeps the printed reading.
+
+=================== PAGE 343 ===================
+----- corrected edition, expose_IX_body.tex, page 343 -----
+%%%%%%%%%%  scan idx 354  |  folio 343  %%%%%%%%%%
+
+
+3. \underline{Cas de la réduction semi-stable. Le théorème de réduction semi-stable.}
+
+Donnons d'abord un résultat auxiliaire dans le style de SGA 3 :
+
+\underline{Proposition} 3.1. \underline{Soient} $S$ \underline{un schéma}, $G$ \underline{un} $S$-\underline{schéma en groupes commutatifs}, \underline{plat}, \underline{séparé}, \underline{de présentation finie sur} $S$, $H$ \underline{un schéma en groupes quasi-séparé et localement de type fini sur} $S$, $u: G \longrightarrow H$ \underline{un homomorphisme de} $S$-\underline{schémas en groupes}, $K = \mathrm{Ker}\ u$ . \underline{Pour tout} $s \in S$, \underline{désignant par} $\bar{s}$ \underline{le spectre d'une clôture algébrique de} $k(s)$, \underline{on note} $\mu(s)$ (\underline{resp.} $\alpha(s)$) \underline{le rang réductif} (\underline{resp. le rang abélien}) \underline{de} $K_{s}$ , \underline{i.e.} \underline{la dimension du plus grand sous-tore} (\underline{resp. de la plus grande variété abélienne quotient}) \underline{de} $(K_{\bar{s}})^{o}_{\mathrm{red}}$. \underline{Soient} $s \in S$, $t \in S$ \underline{une générisation de} $S$, $p$ \underline{l'exposant caractéristique de} $k(s)$.
+
+a) \underline{Pour tout entier} $n > 0$ \underline{premier à} $p$, ${}_{n}K$ \underline{est étale de type fini et séparé sur} $S$ \underline{au voisinage de} $s$, \underline{et on a la divisibilité} :
+
+\begin{equation}\tag{3.1.1}
+\mathrm{rang}({}_{n}K_{s}) \mid \mathrm{rang}({}_{n}K_{t}) \quad .
+\end{equation}
+b) \underline{On a}
+
+\begin{equation}\tag{3.1.2}
+\mu(s) + 2\alpha(s) \leq \mu(t) + 2\alpha(t) \quad .
+\end{equation}
+c) \underline{Si} $(K_{\bar{t}})^{o}_{\mathrm{red}}$ \underline{est unipotent}, \underline{il en est de même de} $(K_{\bar{s}})^{o}_{\mathrm{red}}$ .
+
+d) \underline{Supposons} $G_{s}$ \underline{de rang unipotent nul}, $H$ \underline{lisse sur} $S$, \underline{et} $u_{t}$ \underline{une isogénie}. \underline{Alors} $u$ \underline{est plat et quasi-fini au-dessus d'un voisinage ouvert} $U$ \underline{de} $s$, \underline{a fortiori} $K|U$ \underline{est plat et quasi-fini.}
+
+e) \underline{Sous les conditions de} d), \underline{si} $u_{t}$ \underline{est de plus un monomorphisme} (\underline{donc un isomorphisme de} $G_{t}$ \underline{sur un sous-groupe ouvert de} $H_{t}$), \underline{alors} $u_{s}$ \underline{est un isomorphisme de} $G_{s}$ \underline{sur un sous-groupe ouvert de} $H_{s}$,
+----- misprints recorded on page 343 -----
+[id 7I:566]
+WHERE: Proposition 3.1, last sentence of the hypotheses
+PRINT: Soient s ∈ S, t ∈ S une générisation de S, p l'exposant
+CORRECT: \underline{une générisation de} $s$
+TEX BEFORE: \underline{une générisation de} $S$
+NOTE: t is a generization of the point s, not of S. The TeX keeps the printed capital S.
+
+=================== PAGE 344 ===================
+----- corrected edition, expose_IX_body.tex, page 344 -----
+%%%%%%%%%%  scan idx 355  |  folio 344  %%%%%%%%%%
+
+\underline{et si de plus} $S$ \underline{est irréductible de point générique} $t$, \underline{alors il existe un voisinage ouvert} $U$ \underline{de} $s$ \underline{tel que} $u$ \underline{induise un isomorphisme de} $G|U$ \underline{sur un sous-groupe ouvert de} $H|U$.
+
+\underline{Démonstration.}
+
+a) On peut supposer que $n$ est inversible sur $S$, et alors $n.\mathrm{id}_{G}$ est étale fibre par fibre (SGA 3 XV 1.3), donc, $G$ étant plat de présentation finie sur $S$, il résulte du critère d'étalité par fibres EGA IV 17.8.2 que $n.\mathrm{id}_{G}$ est étale, donc son noyau ${}_{n}G$ est étale ; il est clair d'ailleurs qu'il est séparé et de présentation finie sur $S$, puisque $G$ l'est. On voit de même que ${}_{n}H$ est localement de type fini, quasi-séparé et \underline{formellement net} sur $S$ (*) donc sa section unité est une immersion ouverte (EGA IV 17.4.2 b')), donc le noyau de ${}_{n}u: {}_{n}G \longrightarrow {}_{n}H$ est un sous-schéma ouvert de ${}_{n}G$, donc étale sur $S$, qui est retrocompact dans ${}_{n}G$ donc de présentation finie sur $S$, et séparé sur $S$ puisque $G$ l'est. Or ce noyau n'est évidemment autre que ${}_{n}K$ . La formule (3.1.1) résulte des propriétés précédentes de ${}_{n}K$, comme on voit en se ramenant par changement de base au cas où $S$ est local hensélien de point fermé $s$, et en utilisant alors la décomposition de ${}_{n}K$ en ${}_{n}K^{f}$ et un schéma à fibre spéciale vide (cf. 2.2.3). En fait, cet argument montre, plus précisément, qu'il existe un \underline{monomorphisme} pour les fibres géométriques
+
+\begin{equation*}
+{}_{n}K(\bar{s}) \lhook\joinrel\longrightarrow {}_{n}K(\bar{t}) \quad .
+\end{equation*}
+(*) Du moins si $H$ est commutatif ; dans le cas général, il restera vrai que ${}_{n}H$ est net sur $S$ le long de sa section unité, ce qui suffit pour notre propos.
+----- misprints recorded on page 344 -----
+[id 7I:567]
+WHERE: a), 'qui est retrocompact dans _nG'
+PRINT: est retrocompact dans _nG
+CORRECT: rétrocompact
+TEX BEFORE: qui est retrocompact dans
+NOTE: Accent missing (the EGA term is 'rétrocompact'); the TeX keeps the printed spelling.
+
+=================== PAGE 345 ===================
+----- corrected edition, expose_IX_body.tex, page 345 -----
+%%%%%%%%%%  scan idx 356  |  folio 345  %%%%%%%%%%
+
+b)   Soit $n > 0$ premier à l'exposant caractéristique de $k(s)$ et aux rangs des quotients des fibres géométriques de $K$ en $s$ et $t$ par leurs composantes neutres réduites, alors les deux membres de (3.1.1) s'obtiennent en élévant $n$ respectivement à la puissance d'exposant l'un et l'autre membre de (3.1.2), comme il résulte de la structure connue des groupes algébriques commutatifs. Donc b) résulte de a).
+
+c)   Comme l'hypothèse $(K_{\overline{t}})^{o}_{s}$ unipotent équivaut aux relations $\mu(t) = \alpha(t) = 0$, et de même pour $K_{s}$, l'assertion c) résulte formellement de b).
+
+d)   L'hypothèse que $u_{t}$ soit une isogénie implique que $K_{t}$ est fini, donc on est sous les conditions de c), et par suite $(K_{\overline{s}})^{o}_{\mathrm{red}}$ est unipotent. Comme $G_{s}$ est de rang unipotent nul, on en déduit que $K_{s}$ est fini. D'ailleurs le fait que $u_{t}$ est une isogénie implique $\dim G_{t} = \dim H_{t}$, et le fait que $G$ et $H$ sont plats localement de présentation finie implique $\dim G_{s} = \dim G_{t}$, $\dim H_{s} = \dim H_{t}$ (SGA 3 $VI_{B}$ 4.3), d'où $\dim G_{s} = \dim H_{s}$ . Comme $\dim \mathrm{Ker}\ u_{s} = 0$, on en conclut que $\dim H_{s} = \dim u_{s}(G_{s})$ (SGA 3 $VI_{B}$ 1.2.), ce qui équivaut à $u_{s}$ plat grâce à l'hypothèse $H_{s}$ lisse (SGA 3 $VI_{A}$ 5.6). On en conclut qu'il existe un voisinage ouvert $U$ de $s$ tel que $u$ soit plat et quasi-fini en les points de la section unité sur $U$ (SGA 3 $VI_{B}$ 2.2 (i) et 2.5 (ii)). Il en résulte, comme pour $u_{s}$, que $u_{s'}$ est plat pour tout $s' \in U$, donc $u|G_{U}$ est plat et quasi-fini, l'étant sur chaque fibre.
+
+e)   Pour la premier assertion, on se ramène aussitôt par changement de base au cas où $S$ est intègre de point générique $t$, donc à prouver la deuxième assertion de e). Celle-ci résulte aussitôt de d) et du
+----- misprints recorded on page 345 -----
+[id 7I:568]
+WHERE: b), line 4
+PRINT: s'obtiennent en élévant n respectivement
+CORRECT: élevant
+TEX BEFORE: s'obtiennent en élévant $n$ respectivement
+NOTE: Spelling error in the print (élever gives élevant); the TeX keeps it.
+
+[id 7I:569]
+WHERE: c), first line
+PRINT: l'hypothèse (K_t̄)^o_s unipotent
+CORRECT: $(K_{\overline{t}})^{o}_{\mathrm{red}}$
+TEX BEFORE: $(K_{\overline{t}})^{o}_{s}$
+NOTE: Subscript s typed for red (cf. 3.1 c) and part d) below). The TeX keeps the printed s.
+
+[id 7I:570]
+WHERE: e), first line
+PRINT: Pour la premier assertion
+CORRECT: Pour la première assertion
+TEX BEFORE: Pour la premier assertion
+NOTE: Agreement error in the print; the TeX keeps it.
+
+=================== PAGE 346 ===================
+----- corrected edition, expose_IX_body.tex, page 346 -----
+%%%%%%%%%%  scan idx 357  |  folio 346  %%%%%%%%%%
+
+\underline{Lemme} 3.1.3. \underline{Soient} $S$ \underline{un schéma}, $K$ \underline{un} \underline{S-schéma quasi-fini}, \underline{de présentation finie}, \underline{séparé et plat sur} $S$, $s \in S$, $t \in S$ \underline{une générisation de} $s$. \underline{Alors on a}
+
+\begin{equation*}
+\mathrm{rang}\ K_{s} \;\leq\; \mathrm{rang}\ K_{t} \quad .
+\end{equation*}
+\underline{Si rang} $K_{\eta} \leq 1$ \underline{pour tout point maximal de} $S$, \underline{alors} $K \longrightarrow S$ \underline{est une immersion ouverte} (\underline{donc un isomorphisme s'il admet une section}).
+
+Pour la première assertion, on se ramène par localisation stricte au cas où $S$ est strictement local. Décomposant alors $K$ en somme d'un schéma fini $K^{f}$ et d'un schéma à fibre spéciale vide, on aura
+
+\begin{equation*}
+\mathrm{rang}\ K_{s} = \mathrm{rang}\ K^{f}_{s} = \mathrm{rang}\ K^{f}_{t} \leq \mathrm{rang}\ K_{t} \quad ,
+\end{equation*}
+la deuxième égalité provenant du fait que $K^{f}$ est plat, fini et de présentation finie sur $S$, donc localement libre sur $S$.
+
+Pour la deuxième assertion, ce qui précède montre déjà que pour tout $s \in S$ on a rang $K_{s} \leq 1$, donc $K_{s}$ est vide ou isomorphe à $\mathrm{Spec}\ k(s)$. Par suite $K \longrightarrow S$ est un monomorphisme (SGA 3 VI$_{B}$ 2.11), et étant plat et de présentation finie c'est une immersion ouverte (EGA IV 17.9.1), ce qui achève la démonstration.
+
+\underline{Remarque} 3.1.4. Dans 3.1 a) et la suite de la proposition 3.1, on ne donne aucun renseignement sur ${}_{n}K_{s}$ lorsque $n$ est une puissance de $p$ (lorsque $p > 1$). Lorsque $G$ est lisse (et $S$ localement noethérien ou $H$ de présentation finie sur $S$) tout au moins, on peut donner un tel renseignement, par essentiellement la même méthode que dans la
+----- misprints recorded on page 346 -----
+[id 7I:571]
+WHERE: Lemme 3.1.3, hypotheses
+PRINT: s ∈ S, t ∈ T une générisation de s
+CORRECT: $t \in S$
+TEX BEFORE: $t \in S$
+NOTE: The print has t ∈ T, but no T is defined. The TeX silently corrects this to S; restore the printed T.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: $t \in S$
+  NEW: $t \in T$
+
+=================== PAGE 347 ===================
+----- corrected edition, expose_IX_body.tex, page 347 -----
+%%%%%%%%%%  scan idx 358  |  folio 347  %%%%%%%%%%
+
+démonstration de a) (en se ramenant au cas $S$ local noethérien complet, et utilisant SGA 3 XV 1.6 c), X 3.2, IX 3.6, IX 5.2), savoir :
+
+\begin{equation}\tag{3.1.4.1}
+\mathrm{rang\ mult}\ ({}_n K_s) \mid \mathrm{rang\ mult}({}_n K_t) \quad ,
+\end{equation}
+où rang mult désigne le rang du plus grand sous-groupe de type multiplicatif du groupe algébrique commutatif envisagé (SGA 3 XVII 7.2.1) ; on notera qu'un groupe algébrique de type multiplicatif de torsion est fini. La formule (3.1.4.1) est valable pour tout entier $n \geq 1$. On conclut, grâce à SGA XVII 4.6.1 (vi), que dans c), si $K_t$ est unipotent (SGA 3 VII 1.1, il en est de même de $K_s$.
+
+\underline{Proposition} 3.2. \underline{Soient} $S$ \underline{un schéma localement noethérien régulier intègre de dimension} 1, $K$ \underline{son corps des fonctions rationnelles,} $A_K$ \underline{un schéma abélien sur} $K$, $A$ \underline{son modèle de Néron sur} $S$, \underline{qui est un schéma en groupes lisse et séparé sur} $S$ (\underline{et quasi-projectif sur} $S$ \underline{si} $S$ \underline{est noethérien} [ 23 , VIII 2, 3°]). \underline{Les conditions suivantes sont équivalentes} :
+
+(i) \underline{Pour tout} $s \in S$, $A_s^o$ \underline{est de rang unipotent nul,} \underline{i.e.} (2.1.5) \underline{est une extension d'un schéma abélien par un tore.}
+
+(ii) \underline{Il existe un schéma en groupes} $G$ \underline{lisse,} \underline{séparé de type fini sur} $S$, \underline{prolongeant} $A_K$, \underline{et dont les fibres sont de rang unipotent nul.}
+
+\underline{De plus,} \underline{si} $G$ \underline{est comme dans} (ii), \underline{alors l'unique morphisme} $G \longrightarrow A$ \underline{induisant l'isomorphisme donné sur les fibres génériques est un isomorphisme de} $G$ \underline{sur un sous-groupe ouvert de} $A$, \underline{donc induit un isomorphisme des composantes neutres} $G^o \xrightarrow{\sim} A^o$ .
+----- misprints recorded on page 347 -----
+[id 7I:572]
+WHERE: end of Remarque 3.1.4
+PRINT: grâce à SGA XVII 4.6.1 (vi)
+CORRECT: grâce à SGA 3 XVII 4.6.1 (vi)
+TEX BEFORE: grâce à SGA XVII 4.6.1 (vi)
+NOTE: The '3' of SGA 3 is omitted; all other references here read SGA 3. The TeX keeps the printed reading.
+
+[id 7I:573]
+WHERE: end of Remarque 3.1.4
+PRINT: (SGA 3 VII 1.1, il en est de même de K_s.
+CORRECT: (SGA 3 VII 1.1), il en est
+TEX BEFORE: (SGA 3 VII 1.1, il en est
+NOTE: The closing parenthesis is missing in the print. The TeX keeps the printed reading.
+
+=================== PAGE 349 ===================
+----- corrected edition, expose_IX_body.tex, page 349 -----
+%%%%%%%%%%  scan idx 360  |  folio 349  %%%%%%%%%%
+
+3.3.2. On voit donc que les propriétés équivalentes de 3.2 impliquent une propriété de "stabilité" partielle pour les modèles de Néron ; on fera attention que lorsque $A_K$ n'a pas bonne réduction i.e. que $A$ n'est pas un schéma abélien, il n'est \underline{pas} vrai que pour tout $S'$ comme dans 3.3 (et même pour $S'$ fini sur $S$, et $K'/K$ séparable ...), le morphisme $A \times_S S' \longrightarrow A'$ lui-même soit un isomorphisme, i.e. induise des isomorphismes sur les groupes de composantes connexes des fibres (cf. 11.10 plus bas pour le comportement de ces groupes de composantes connexes par extension de la base). Ces observations, renforcées par 3.9 plus bas, justifient la terminologie suivante, introduite par MUMFORD (et qui s'harmonise aussi, paraît-il, avec les notions de même nom étudiées dans son livre [17]):
+
+\underline{Définition} 3.4. \underline{Les notations étant celles de} 3.2, \underline{on dit que le schéma abélien} $A_K$ \underline{sur} $K$ \underline{a} réduction semi-stable sur $S$ \underline{si les conditions équivalentes} (i) \underline{et} (ii) \underline{de} 3.2 \underline{sont vérifiées.}
+
+3.4.0. On notera que sous la forme (ii), cette condition ne fait pas appel à la notion de modèle de Néron. D'autre part, elle se ramène immédiatement par localisation au cas où $S$ est un trait, comme il résulte par exemple de 3.2.1. D'ailleurs, comme la formation du modèle de Néron commute au changement de base de $S$ vers son hensélisé, ou son hensélisé strict, la notion se ramène même au cas $S$ où $S$ est un trait strictement local.
+----- misprints recorded on page 349 -----
+[id 7I:574]
+WHERE: 3.4.0, last sentence
+PRINT: la notion se ramène même au cas S où S est un trait strictement local
+CORRECT: au cas où $S$ est
+TEX BEFORE: au cas $S$ où $S$ est
+NOTE: Duplicated S. The TeX keeps the printed reading.
+
+=================== PAGE 350 ===================
+----- corrected edition, expose_IX_body.tex, page 350 -----
+%%%%%%%%%%  scan idx 361  |  folio 350  %%%%%%%%%%
+
+\underline{Proposition} 3.5. (\underline{critère galoisien de réduction semi-stable}). \underline{On suppose} $S$ \underline{un trait.} \underline{Les conditions suivantes sur le schéma abélien} $A_K$ \underline{sont équivalentes} (\underline{les notations étant celles de} (2.5.3), \underline{appliquées à la situation déduite de} $(A_K,S)$ \underline{par passage au hensélisé de} $S$) :
+
+(i) $A_K$ \underline{a réduction semi-stable sur} $S$ (3.4).
+
+(ii) \underline{On a,} \underline{avec les notations} (2.5.3), (2.5.4) :
+
+\begin{equation*}
+V^{\perp} \subset V \qquad .
+\end{equation*}
+(iii) \underline{On a pour la partie torique} $W$ \underline{du module de Tate} :
+
+\begin{equation*}
+W = V^{\perp} \qquad .
+\end{equation*}
+(iv) \underline{L'action du groupe d'inertie} $I$ \underline{sur} $U = T_{\ell}(A(\overline{K}))$ \underline{est unipotente d'échelon} 2 (\underline{i.e.} \underline{il existe un sous-module} $U'$ \underline{de} $U$ \underline{stable par} $I$ \underline{tel que} $I$ \underline{opère trivialement sur} $U'$ \underline{et sur} $U/U'$).
+
+On peut supposer $S$ hensélien (3.4.0). Avec les notations de 2.1.9, (i) signifie que l'on a
+
+\begin{equation*}
+\lambda = 0 \qquad ,
+\end{equation*}
+ce qui en vertu de (2.5.5) équivaut à $V = V \cap V^{\perp}$ i.e. à (ii). Comme $W=V\cap V^{\perp}$ par le théorème d'orthogonalité 2.4, on a (ii) $\Longleftrightarrow$ (iii). D'ailleurs (iv) signifie aussi que $I$ opère trivialement sur $U/U^{I}=U/V$, ce qui par dualité signifie qu'il opère trivialement sur $V^{\perp}$ i.e. que $V^{\perp} \subset U^{I}=V$, ce qui est (ii). Cela achève la démonstration.
+
+\underline{Remarques} 3.5.1. Les conditions (ii) et (iv) ne dépendent visiblement que de l'action de $I$ sur le $\mathbb{Q}_{\ell}$-vectoriel $U \otimes_{\mathbb{Z}_{\ell}} \mathbb{Q}_{\ell}$ , et auraient pu être formulées en termes de cette action. Signalons aussi que ces conditions sont manifestement stables par tout changement de base par un morphisme
+----- misprints recorded on page 350 -----
+[id 7I:575]
+WHERE: Proposition 3.5 (ii), display
+PRINT: V ⊂ V^⊥ .
+CORRECT: V^{\perp} \subset V \qquad .
+TEX BEFORE: V \subset V^{\perp} \qquad .
+NOTE: The inclusion is reversed. The proof ends 'V^⊥ ⊂ U^I=V, ce qui est (ii)', and (ii)⟺(iii) via W=V∩V^⊥ only works with V^⊥ ⊂ V. With good reduction V=U and V^⊥=0, so the printed form fails. The TeX keeps the printed reading.
+
+[id 7I:576]
+WHERE: proof of 3.5
+PRINT: équivaut à V = V∩V^⊥ i.e. à (ii)
+CORRECT: $V^{\perp} = V \cap V^{\perp}$
+TEX BEFORE: $V = V \cap V^{\perp}$
+NOTE: Same reversal as in (ii): λ=0 ⟺ V^⊥ = W = V∩V^⊥. The TeX keeps the printed reading.
+
+[id 7I:577]
+WHERE: proof of 3.5, (iv)
+PRINT: (iv) signifie aussi que I opère trivialement sur U^I = V
+CORRECT: sur $U/U^{I} = U/V$
+TEX BEFORE: sur $U^{I} = V$
+NOTE: Triviality on U^I is tautological; (iv) means I acts trivially on U/U^I, whose dual is V^⊥, as the sentence continues. This looks like an author's slip. The TeX keeps the printed reading.
+

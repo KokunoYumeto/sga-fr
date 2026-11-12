@@ -1,0 +1,213 @@
+[
+ {
+  "page": 62,
+  "where": "paragraph after (7.4.0.2), 'Comme les catégories HR_p'",
+  "scan": "ne sont pas nécessairement des U-catégories",
+  "tex": "ne sont par nécessairement",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "ne sont par nécessairement",
+   "new": "ne sont pas nécessairement"
+  },
+  "note": "The print reads 'pas'; the TeX has 'par'."
+ },
+ {
+  "page": 62,
+  "where": "'Supposons maintenant que le préfaisceau F soit un faisceau'",
+  "scan": "soit un faisceau. Comme le faisceau",
+  "tex": "soit un faisceau, Comme",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "soit un faisceau, Comme",
+   "new": "soit un faisceau. Comme"
+  },
+  "note": "The print ends the sentence with a full stop; the TeX has a comma before the capitalised 'Comme'."
+ },
+ {
+  "page": 63,
+  "where": "Théorème 7.4.1 3), display after 'et un monomorphisme'",
+  "scan": "H^r(C,G) ⟶ H^r(C~,F), a plain arrow with no ~ above it",
+  "tex": "\\Hvr{r}(C, G) \\xrightarrow{\\sim} H^q(C^{\\sim}, F)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hvr{r}(C, G) \\xrightarrow{\\sim}\nH^q(C^{\\sim}, F)",
+   "new": "\\Hvr{r}(C, G) \\longrightarrow\nH^r(C^{\\sim}, F)"
+  },
+  "note": "The print has a plain monomorphism arrow, not ≅, and the exponent r on the target, not q."
+ },
+ {
+  "page": 63,
+  "where": "Théorème 7.4.1 4), display",
+  "scan": "Ȟ^q(G,G)",
+  "tex": "\\Hvv{q}(G, G)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hvv{q}(C, G)",
+  "note": "The print reads (G,G) where (C,G) is meant; the TeX keeps the printed reading."
+ },
+ {
+  "page": 63,
+  "where": "Remarque 7.4.2 1), 'les foncteurs ... ne sont autres que'",
+  "scan": "H with check and a small circle (0) above it",
+  "tex": "\\Hvi{q}",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\Hvi{q}$ ne sont",
+   "new": "$\\overset{0}{\\check{H}}{}^{q}$ ne sont"
+  },
+  "note": "The print puts a small 0 over the check, not ∞ (the ∞ elsewhere on the page is clearly printed). This fits the sense: hyper-coverings of type 0 give Čech cohomology."
+ },
+ {
+  "page": 63,
+  "where": "Remarque 7.4.2 2)",
+  "scan": "et toute famille couvrante",
+  "tex": "et tout famille couvrante",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "tout famille couvrante",
+   "new": "toute famille couvrante"
+  },
+  "note": "The print reads 'toute'; the TeX has 'tout'."
+ },
+ {
+  "page": 63,
+  "where": "Remarque 7.4.2 2), 'il existe un i_0 ∈ I'",
+  "scan": "i_o ∈ I",
+  "tex": "i_{0} \\in l",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "i_{0} \\in l$",
+   "new": "i_{0} \\in I$"
+  },
+  "note": "The index set is I in the print; the TeX has the letter l."
+ },
+ {
+  "page": 64,
+  "where": "introduction of the Appendice",
+  "scan": "une variante faisceautique du théorème de D. Lazard",
+  "tex": "de théorème de D. Lazard",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "de théorème de D. Lazard",
+   "new": "du théorème de D. Lazard"
+  },
+  "note": "The print reads 'du'; the TeX has 'de'."
+ },
+ {
+  "page": 64,
+  "where": "8.1.0, first item",
+  "scan": "Pour U ∈ Ob , A_U (blank after Ob)",
+  "tex": "$U \\in \\Ob$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$U \\in \\Ob \\Bb$",
+  "note": "The handwritten 𝔅 after Ob is missing in the print; the TeX keeps the printed reading."
+ },
+ {
+  "page": 64,
+  "where": "Définition 8.1.1 (L0)",
+  "scan": "il existe λ ∈ Ob L_V",
+  "tex": "\\lambda \\in \\Ob \\Ll_V",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\lambda \\in \\Ob \\Ll_U$",
+  "note": "λ should lie over U, since Hom_f(λ,μ) is taken with f : U → V. The TeX keeps the print's L_V."
+ },
+ {
+  "page": 64,
+  "where": "Définition 8.1.1 (L1)",
+  "scan": "la famille finie (𝒮_i) d'objets de L_U",
+  "tex": "$(\\Ss_i)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$(\\lambda_i)$",
+  "note": "The family should be (λ_i), as used later in Hom_{f_j}(μ_j,λ_i). The TeX keeps the print's script S."
+ },
+ {
+  "page": 65,
+  "where": "(L2)",
+  "scan": "il existe un recouvrement",
+  "tex": "il existes un recouvrement",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "il existes un",
+   "new": "il existe un"
+  },
+  "note": "The print reads 'existe'; the TeX has 'existes'."
+ },
+ {
+  "page": 65,
+  "where": "(L2), double arrow",
+  "scan": "(φ_o,φ_1): 𝒮 ⇉ μ",
+  "tex": "(\\phi_0, \\phi_1): \\Ss \\rightrightarrows \\mu",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(\\phi_0, \\phi_1): \\lambda \\rightrightarrows \\mu",
+  "note": "The source of the double arrow should be λ (compare (L'2)). The TeX keeps the print's script S."
+ },
+ {
+  "page": 65,
+  "where": "(L2), 'telles que p(ψ_j) ... f_j'",
+  "scan": "the sign between p(ψ_j) and f_j is blurred and looks like = (unlike the clear ≠ of (L0) and (L1))",
+  "tex": "\\neq f_j",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "\\neq f_j",
+   "new": "= f_j"
+  },
+  "note": "The stroke is unclear on the scan. The sense requires equality (the ψ_j lie over f_j)."
+ },
+ {
+  "page": 65,
+  "where": "8.1.1.1",
+  "scan": "et (L1), (L2) peuvent s'énoncer",
+  "tex": "$(\\Ll_1)$,\n  $(\\Ll_2)$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$(\\Ll_1)$,\n  $(\\Ll_2)$",
+   "new": "$(\\Ll1)$,\n  $(\\Ll2)$"
+  },
+  "note": "These are the axiom names (L1), (L2) on the line; the TeX writes subscripts."
+ },
+ {
+  "page": 65,
+  "where": "Définition 8.1.2.1",
+  "scan": "La catégorie des systèmes projectifs",
+  "tex": "La catégorie dans \\emph{systèmes",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "La catégorie dans",
+   "new": "La catégorie des"
+  },
+  "note": "The print reads 'des'; the TeX has 'dans'."
+ },
+ {
+  "page": 65,
+  "where": "8.1.2 and following (the champ)",
+  "scan": "handwritten script 𝒞 (champ 𝒞, Γ𝒞, 𝒞_S, Hom_𝒮(L,𝒞))",
+  "tex": "\\mathsf{e}",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\mathsf{e}$ un champ sur $\\Ss$",
+   "new": "$\\Cc$ un champ sur $\\Ss$"
+  },
+  "note": "The handwritten script capital C was read as the letter e. The edition presumably writes the script C as \\Cc (by analogy with \\Aa, \\Ff; not checked). Every \\mathsf{e} on the page should become \\Cc."
+ }
+]

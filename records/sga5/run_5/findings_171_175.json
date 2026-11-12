@@ -1,0 +1,687 @@
+[
+ {
+  "page": 171,
+  "where": "display of the two evaluation arrows after 'le produit tensoriel des flèches d'évaluation', before 'Il en résulte que'",
+  "scan": "'E ⊗^L_K RHom_A(E,P) ⟶ P) . Il en résulte que, pour': the parenthesis opened at '(le point est que' closes after P",
+  "tex": "E\\lten_K\\uRHom_A(E,P)\\longrightarrow P.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "E\\lten_K\\uRHom_A(E,P)\\longrightarrow P.",
+   "new": "E\\lten_K\\uRHom_A(E,P)\\longrightarrow P)."
+  },
+  "note": "The closing parenthesis of '(le point est que ...' is missing in the TeX."
+ },
+ {
+  "page": 171,
+  "where": "'Il en résulte que, pour u ∈ Hom_A(E,P ⊗^L_A F)'",
+  "scan": "Hom_A plain, not underlined (the RHom of the line above are underlined)",
+  "tex": "$u\\in\\uHom_A(E,P\\lten_AF)$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$u\\in\\uHom_A(",
+   "new": "$u\\in\\Hom_A("
+  },
+  "note": "Plain Hom in the print (global Hom)."
+ },
+ {
+  "page": 171,
+  "where": "same line, 'v ∈ Hom(F,Q ⊗^L_A E)'",
+  "scan": "Hom plain, not underlined",
+  "tex": "$v\\in\\uHom(F,Q\\lten_AE)$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$v\\in\\uHom(",
+   "new": "$v\\in\\Hom("
+  },
+  "note": ""
+ },
+ {
+  "page": 171,
+  "where": "heading 5.9",
+  "scan": "'5.9. Traces et extension des scalaires.' (underlined; full stop after the title)",
+  "tex": "\\subsubsection*{5.9. Traces et extension des scalaires}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{5.9. Traces et extension des scalaires}",
+   "new": "\\subsubsection*{5.9. Traces et extension des scalaires.}"
+  },
+  "note": "Underlined titles end with a full stop in the print."
+ },
+ {
+  "page": 172,
+  "where": "top of the page: 'a un carré commutatif de D(K)'",
+  "scan": "p. 172 begins with 'a un carré commutatif de D(K)'; p. 171 ends with '(F ⊗^L_{A^e} B^e) ⊗^L_A G ∈ ob D^+(B) , on'",
+  "tex": "'a un' ends the last line of page_171.tex ('..., on a un'); page_172.tex begins with 'carré commutatif'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 172 really begins at 'a un' at the end of the last line of folio 171 (s5.tex line ending '$(F\\lten_{A^e}B^e)\\lten_AG\\in\\ob D^+(B)$, on a un'). Exact fix: python -I move_marker.py 5 172 \"a un\" --before (simulated read-only on both layers: the marker line goes between 'on ' and 'a un', splitting that line). Text not moved; 'a un' agrees with the print."
+ },
+ {
+  "page": 172,
+  "where": "first line, 'a un carré commutatif de D(K)' before diagram (5.9.2)",
+  "scan": "'carré commutatif de D(K)'",
+  "tex": "'carré commutatif' (no 'de D(K)')",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "carré commutatif\n\\begin{equation}\\tag{5.9.2}",
+   "new": "carré commutatif de $D(K)$\n\\begin{equation}\\tag{5.9.2}"
+  },
+  "note": ""
+ },
+ {
+  "page": 172,
+  "where": "diagram (5.9.2), lower right corner",
+  "scan": "'RHom_B(B ⊗^L_A E,(F ⊗^L_{A^e} B^e) ⊗^L_B (B ⊗^L_A G))' with nothing after it (no comma)",
+  "tex": "\\uRHom_B(B\\lten_AE,(F\\lten_{A^e}B^e)\\lten_B(B\\lten_AG)),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(B\\lten_AG)),",
+   "new": "(B\\lten_AG))"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 172,
+  "where": "'où les flèches verticales sont définies par 5.6.1' before diagram (5.9.3)",
+  "scan": "'définies par' / '5.6.1' alone on the next line, no colon",
+  "tex": "définies par 5.6.1:",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "définies par 5.6.1:",
+   "new": "définies par 5.6.1"
+  },
+  "note": "Colon added by the TeX."
+ },
+ {
+  "page": 172,
+  "where": "last sentence, 'où la flèche verticale de gauche (resp. droite) est donnée'",
+  "scan": "'de gauche (resp. droite) est donnée par l'extension des'",
+  "tex": "de gauche, respectivement de droite, est donnée",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "de gauche, respectivement de droite, est donnée",
+   "new": "de gauche (resp. droite) est donnée"
+  },
+  "note": "The TeX writes out the abbreviation, adds 'de' and turns the parentheses into commas."
+ },
+ {
+  "page": 172,
+  "where": "same sentence, 'scalaires (resp. est la flèche canonique déduite de A ⟶ B ) .'",
+  "scan": "'des scalaires (resp. est la flèche canonique déduite de A ⟶ B ) .'",
+  "tex": "des scalaires, respectivement est la flèche canonique déduite de $A\\to B$.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "des scalaires, respectivement est la flèche canonique déduite de $A\\to B$.",
+   "new": "des scalaires (resp. est la flèche canonique déduite de $A\\to B$)."
+  },
+  "note": "Both parentheses in this edit."
+ },
+ {
+  "page": 173,
+  "where": "heading 5.10",
+  "scan": "'5.10. Traces et restriction des scalaires.' (underlined; full stop after the title)",
+  "tex": "\\subsubsection*{5.10. Traces et restriction des scalaires}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{5.10. Traces et restriction des scalaires}",
+   "new": "\\subsubsection*{5.10. Traces et restriction des scalaires.}"
+  },
+  "note": "Underlined titles end with a full stop in the print."
+ },
+ {
+  "page": 173,
+  "where": "first paragraph, 'de présentation finie (i.e. localement facteur direct d'un A-module libre de type fini).'",
+  "scan": "'(i.e. localement facteur direct d'un A-module libre de type fini). C'est le cas'",
+  "tex": "', c'est-à-dire localement facteur direct d'un $A$-module libre de type fini. C'est'",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "de présentation finie, c'est-à-dire localement facteur direct d'un $A$-module libre de type fini. C'est",
+   "new": "de présentation finie (i.e. localement facteur direct d'un $A$-module libre de type fini). C'est"
+  },
+  "note": "The TeX writes out 'i.e.' and drops the parentheses; both parentheses in this edit."
+ },
+ {
+  "page": 173,
+  "where": "'à une flèche (de B-bimodules)' before (5.10.1)",
+  "scan": "'à une flèche (de B-bimodules)'",
+  "tex": "à une flèche de $B$-bimodules",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "à une flèche de $B$-bimodules",
+   "new": "à une flèche (de $B$-bimodules)"
+  },
+  "note": "Parentheses dropped by the TeX."
+ },
+ {
+  "page": 173,
+  "where": "'est l'homomorphisme f ⟼ Tr_A(f) (=dfn Tr_A(d_f) ,'",
+  "scan": "'dfn' written over the equals sign: (=^{dfn} Tr_A(d_f)",
+  "tex": "($=\\Tr_A(d_f)$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "($=\\Tr_A(d_f)$",
+   "new": "($\\stackrel{\\mathrm{dfn}}{=}\\Tr_A(d_f)$"
+  },
+  "note": "The file writes this sign \\stackrel{\\mathrm{dfn}}{=} elsewhere in Exposé III B."
+ },
+ {
+  "page": 173,
+  "where": "'à droite par f) , donc par la formule Tr_A(f_g) = Tr_A(gf)'",
+  "scan": "'donc par la formule' (no comma after 'donc'; a short slanted stroke stands above the d of 'donc', not a comma)",
+  "tex": "donc, par la formule",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "donc, par la formule",
+   "new": "donc par la formule"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 173,
+  "where": "'par la formule Tr_A(f_g) = Tr_A(gf) (5.8.5)'",
+  "scan": "Tr_A(f_g): the g is typed half a line low, at the level of the subscript A",
+  "tex": "\\Tr_A(fg)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tr_A(fg)",
+   "new": "\\Tr_A(f_g)"
+  },
+  "corrected": "\\Tr_A(fg)",
+  "note": "Typing slip for Tr_A(fg) (the formula 5.8.5 Tr_A(vu) = Tr_A(uv) with f, g). The TeX silently corrects it; the edit restores the printed reading."
+ },
+ {
+  "page": 173,
+  "where": "'Tr_{B/A} : B_♮ ⟶ A_♮ : on a donc un carré commutatif'",
+  "scan": "a colon before 'on a donc'",
+  "tex": "A_\\natural$; on a donc",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "A_\\natural$; on a donc",
+   "new": "A_\\natural$ : on a donc"
+  },
+  "note": ""
+ },
+ {
+  "page": 173,
+  "where": "after (5.10.3), 'comme on le vérifie aussitôt (il suffit de voir ... de type fini). Cet isomorphisme'",
+  "scan": "'aussitôt (il suffit de voir que l'homomorphisme K-linéaire sous-jacent est un isomorphisme, et cela résulte de ce que B est localement facteur direct d'un A-module libre de type fini). Cet isomorphisme'",
+  "tex": "'aussitôt: il suffit ... de type fini. Cet isomorphisme'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "vérifie aussitôt: il suffit de voir que l'homomorphisme $K$-linéaire sous-jacent est un isomorphisme, et cela résulte de ce que $B$ est localement facteur direct d'un $A$-module libre de type fini. Cet",
+   "new": "vérifie aussitôt (il suffit de voir que l'homomorphisme $K$-linéaire sous-jacent est un isomorphisme, et cela résulte de ce que $B$ est localement facteur direct d'un $A$-module libre de type fini). Cet"
+  },
+  "note": "The TeX turns the parenthesis into a colon and drops the closing parenthesis; both in this edit."
+ },
+ {
+  "page": 173,
+  "where": "display (5.10.4)",
+  "scan": "RHom_B(E,P) ⊗_A B ⥲ RHom_B(E,P ⊗_A B) , with plain ⊗_A (no L above either sign; B is flat over A)",
+  "tex": "\\uRHom_B(E,P)\\lten_AB\\xrightarrow{\\sim}\\uRHom_B(E,P\\lten_AB)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom_B(E,P)\\lten_AB\\xrightarrow{\\sim}\\uRHom_B(E,P\\lten_AB)",
+   "new": "\\uRHom_B(E,P)\\otimes_AB\\xrightarrow{\\sim}\\uRHom_B(E,P\\otimes_AB)"
+  },
+  "note": ""
+ },
+ {
+  "page": 174,
+  "where": "first paragraph, 'P ∈ ob D^+(B ⊗_K A^o) (résoudre E par des modules'",
+  "scan": "an opening parenthesis before 'résoudre' (closed after 'à droite')",
+  "tex": "D^+(B\\otimes_KA^\\circ)$: résoudre",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "D^+(B\\otimes_KA^\\circ)$: résoudre",
+   "new": "D^+(B\\otimes_KA^\\circ)$ (résoudre"
+  },
+  "note": "Apply together with the fix 'de l'ôter à droite).' (the two parentheses of one clause)."
+ },
+ {
+  "page": 174,
+  "where": "first paragraph, 'A étant plat sur K : cela permet'",
+  "scan": "a colon before 'cela permet'",
+  "tex": "plat sur $K$; cela",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "plat sur $K$; cela",
+   "new": "plat sur $K$ : cela"
+  },
+  "note": ""
+ },
+ {
+  "page": 174,
+  "where": "first paragraph, 'cela permet \"d'ôter le R\" à gauche'",
+  "scan": "'\"d'ôter le R\"' in typewriter double quotes",
+  "tex": "permet d'ôter le $\\R$ à gauche",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "permet d'ôter le $\\R$ à gauche",
+   "new": "permet ``d'ôter le $\\R$'' à gauche"
+  },
+  "note": "Quotation marks missing in the TeX."
+ },
+ {
+  "page": 174,
+  "where": "first paragraph, 'et la résolution qu'on a prise pour E'",
+  "scan": "'la résolution qu'on a prise pour E'",
+  "tex": "la résolution prise pour",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "la résolution prise pour",
+   "new": "la résolution qu'on a prise pour"
+  },
+  "note": ""
+ },
+ {
+  "page": 174,
+  "where": "first paragraph, end: 'permet aussi de l'ôter à droite).'",
+  "scan": "'l'ôter à droite).'",
+  "tex": "de l'ôter à droite.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de l'ôter à droite.",
+   "new": "de l'ôter à droite)."
+  },
+  "note": "Closing parenthesis; apply together with the fix '$ (résoudre'."
+ },
+ {
+  "page": 174,
+  "where": "display (5.10.5), inner tensor products",
+  "scan": "RHom_B(E,B ⊗_K M) ⊗^L_B F ⟶ RHom_A(E,A ⊗_K M) ⊗^L_A F : no L above the ⊗_K inside RHom (L only above ⊗_B and ⊗_A)",
+  "tex": "\\uRHom_B(E,B\\lten_KM)\\lten_BF\\longrightarrow\\uRHom_A(E,A\\lten_KM)\\lten_AF",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "B\\lten_KM)\\lten_BF\\longrightarrow\\uRHom_A(E,A\\lten_KM)",
+   "new": "B\\otimes_KM)\\lten_BF\\longrightarrow\\uRHom_A(E,A\\otimes_KM)"
+  },
+  "note": ""
+ },
+ {
+  "page": 174,
+  "where": "display (5.10.5), end",
+  "scan": "a comma after the formula",
+  "tex": "\\lten_AF (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lten_AF\n\\end{equation}",
+   "new": "\\lten_AF,\n\\end{equation}"
+  },
+  "note": ""
+ },
+ {
+  "page": 174,
+  "where": "composite after 'comme composée des flèches', source of (1)",
+  "scan": "RHom_B(E,B ⊗_K M) ⊗^L_B F : plain ⊗_K",
+  "tex": "\\uRHom_B(E,B\\lten_KM)\\lten_BF \\arrow[r,\"(1)\"]",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom_B(E,B\\lten_KM)\\lten_BF \\arrow[r,\"(1)\"]",
+   "new": "\\uRHom_B(E,B\\otimes_KM)\\lten_BF \\arrow[r,\"(1)\"]"
+  },
+  "note": ""
+ },
+ {
+  "page": 174,
+  "where": "composite, target of (1)",
+  "scan": "RHom_B(E,Hom_A(B,A) ⊗_A B ⊗^L_K M) ⊗^L_B F : plain ⊗_A, no parentheses around B ⊗ M, L only above ⊗_K and ⊗_B",
+  "tex": "\\uRHom_B(E,\\uHom_A(B,A)\\lten_A(B\\lten_KM))\\lten_BF",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uHom_A(B,A)\\lten_A(B\\lten_KM))\\lten_BF",
+   "new": "\\uHom_A(B,A)\\otimes_AB\\lten_KM)\\lten_BF"
+  },
+  "note": "The TeX adds an L over ⊗_A and the parentheses (B ⊗ M)."
+ },
+ {
+  "page": 174,
+  "where": "composite, target of (2)",
+  "scan": "RHom_B(E,Hom_A(B,A) ⊗^L_K M) ⊗_A B ⊗^L_B F : plain ⊗_A",
+  "tex": "\\uRHom_B(E,\\uHom_A(B,A)\\lten_KM)\\lten_A B\\lten_BF",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lten_KM)\\lten_A B\\lten_BF",
+   "new": "\\lten_KM)\\otimes_A B\\lten_BF"
+  },
+  "note": ""
+ },
+ {
+  "page": 174,
+  "where": "composite, target of (3)",
+  "scan": "RHom_B(E,Hom_A(B,A ⊗_K M)) ⊗^L_A F : plain ⊗_K inside Hom_A",
+  "tex": "\\uRHom_B(E,\\uHom_A(B,A\\lten_KM))\\lten_AF",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom_B(E,\\uHom_A(B,A\\lten_KM))\\lten_AF",
+   "new": "\\uRHom_B(E,\\uHom_A(B,A\\otimes_KM))\\lten_AF"
+  },
+  "note": ""
+ },
+ {
+  "page": 174,
+  "where": "composite, target of (4)",
+  "scan": "RHom_A(E,A ⊗_K M) ⊗^L_A F , : plain ⊗_K",
+  "tex": "\\uRHom_A(E,A\\lten_KM)\\lten_AF,",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom_A(E,A\\lten_KM)\\lten_AF,",
+   "new": "\\uRHom_A(E,A\\otimes_KM)\\lten_AF,"
+  },
+  "note": ""
+ },
+ {
+  "page": 174,
+  "where": "isomorphism of (3), 'Hom_A(B,A) ⊗^L_K M ⥲ Hom_A(B,A ⊗_K M) (5.4.2)'",
+  "scan": "the target Hom_A(B,A ⊗_K M) has a plain ⊗_K (L only over the source's ⊗_K)",
+  "tex": "\\uHom_A(B,A)\\lten_KM\\xrightarrow{\\sim}\\uHom_A(B,A\\lten_KM)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim}\\uHom_A(B,A\\lten_KM)",
+   "new": "\\xrightarrow{\\sim}\\uHom_A(B,A\\otimes_KM)"
+  },
+  "note": ""
+ },
+ {
+  "page": 174,
+  "where": "label of Proposition 5.10.6",
+  "scan": "'Proposition 5.10.6 - Supposons que' (dash after the number)",
+  "tex": "\\begin{statement}{Proposition 5.10.6}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Proposition 5.10.6}",
+   "new": "\\begin{statement}{Proposition 5.10.6 -}"
+  },
+  "note": "As the earlier statements of Exposé III B (Théorème 1.2 -, Lemme 2.2 -, ...)."
+ },
+ {
+  "page": 174,
+  "where": "statement of Proposition 5.10.6, first sentence",
+  "scan": "'Supposons que' and 'On a alors un carré commu-tatif de' underlined; the formula M ⊗^L_K F ∈ ob D^+(B) and D(K) not underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Supposons que $M\\lten_KF\\in\\ob D^+(B)$. On a alors un carré commutatif de $D(K)$",
+   "new": "\\emph{Supposons que} $M\\lten_KF\\in\\ob D^+(B)$. \\emph{On a alors un carré commutatif de} $D(K)$"
+  },
+  "note": "Statement text underlined word group by word group, as written with \\emph earlier in Exposé III B."
+ },
+ {
+  "page": 174,
+  "where": "diagram (5.10.7), upper left corner",
+  "scan": "RHom_B(E,B ⊗_K M) ⊗^L_B F : plain ⊗_K",
+  "tex": "\\uRHom_B(E,B\\lten_KM)\\lten_BF \\arrow[r,\"5.4.2\"]",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom_B(E,B\\lten_KM)\\lten_BF \\arrow[r,\"5.4.2\"]",
+   "new": "\\uRHom_B(E,B\\otimes_KM)\\lten_BF \\arrow[r,\"5.4.2\"]"
+  },
+  "note": ""
+ },
+ {
+  "page": 174,
+  "where": "diagram (5.10.7), lower left corner, inner tensor product",
+  "scan": "RHom_A(E,A ⊗_K M) : plain ⊗_K",
+  "tex": "\\uRHom_A(E,A\\lten_KM)\\lten_AF \\arrow[r,\"5.4.2\"']",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[d]\\\\\n\\uRHom_A(E,A\\lten_KM)",
+   "new": "\\arrow[d]\\\\\n\\uRHom_A(E,A\\otimes_KM)"
+  },
+  "note": "Listed before the misprint of the same corner; the two edits are adjacent, not overlapping."
+ },
+ {
+  "page": 174,
+  "where": "diagram (5.10.7), lower left corner, outer tensor product",
+  "scan": "RHom_A(E,A ⊗_K M) ⊗_A F : no L above this ⊗_A (clean scan, nothing above the sign), while 5.10.5, the composite and the top row of the diagram have ⊗^L",
+  "tex": "\\lten_AF \\arrow[r,\"5.4.2\"']",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\lten_AF \\arrow[r,\"5.4.2\"']",
+   "new": "\\otimes_AF \\arrow[r,\"5.4.2\"']"
+  },
+  "corrected": "\\lten_AF \\arrow[r,\"5.4.2\"']",
+  "note": "The reading (no L) is certain; the TeX silently supplies the L. Classed as a typing omission because the same term is RHom_A(E,A ⊗_K M) ⊗^L_A F in 5.10.5 and in the composite."
+ },
+ {
+  "page": 174,
+  "where": "end of Proposition 5.10.6",
+  "scan": "'où la flèche verticale de droite est la restriction des scalaires.' underlined (the full stop not)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où la flèche verticale de droite est la restriction des scalaires.",
+   "new": "\\emph{où la flèche verticale de droite est la restriction des scalaires}."
+  },
+  "note": ""
+ },
+ {
+  "page": 175,
+  "where": "square after 'Il s'agit de vérifier', upper left corner",
+  "scan": "E ⊗^L_K RHom_B(E,B ⊗_K M) ⊗^L_B F : plain ⊗_K inside RHom",
+  "tex": "E\\lten_K\\uRHom_B(E,B\\lten_KM)\\lten_BF",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "E\\lten_K\\uRHom_B(E,B\\lten_KM)\\lten_BF",
+   "new": "E\\lten_K\\uRHom_B(E,B\\otimes_KM)\\lten_BF"
+  },
+  "note": ""
+ },
+ {
+  "page": 175,
+  "where": "same square, label of the left vertical arrow",
+  "scan": "'E ⊗^L 5.10.5' (L above the sign, no subscript K)",
+  "tex": "E\\lten_K5.10.5",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[d,\"E\\lten_K5.10.5\"']",
+   "new": "\\arrow[d,\"E\\lten 5.10.5\"']"
+  },
+  "note": "Subscript K added by the TeX."
+ },
+ {
+  "page": 175,
+  "where": "same square, lower left corner",
+  "scan": "E ⊗^L_K RHom_A(E,A ⊗_K M) ⊗^L_A F : plain ⊗_K inside RHom",
+  "tex": "E\\lten_K\\uRHom_A(E,A\\lten_KM)\\lten_AF",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "E\\lten_K\\uRHom_A(E,A\\lten_KM)\\lten_AF",
+   "new": "E\\lten_K\\uRHom_A(E,A\\otimes_KM)\\lten_AF"
+  },
+  "note": ""
+ },
+ {
+  "page": 175,
+  "where": "triangle (*), top vertex",
+  "scan": "RHom_B(E,B ⊗_K M) : plain ⊗_K",
+  "tex": "\\uRHom_B(E,B\\lten_KM) \\arrow[d,\"(1)\"']",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom_B(E,B\\lten_KM) \\arrow[d",
+   "new": "\\uRHom_B(E,B\\otimes_KM) \\arrow[d"
+  },
+  "note": ""
+ },
+ {
+  "page": 175,
+  "where": "triangle (*), lower left vertex",
+  "scan": "RHom_B(E,Hom_A(B,B ⊗_K M)) : plain ⊗_K",
+  "tex": "\\uRHom_B(E,\\uHom_A(B,B\\lten_KM))",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uHom_A(B,B\\lten_KM)) \\arrow",
+   "new": "\\uHom_A(B,B\\otimes_KM)) \\arrow"
+  },
+  "note": ""
+ },
+ {
+  "page": 175,
+  "where": "triangle (*), lower right vertex",
+  "scan": "RHom_A(E,B ⊗_K M) , : plain ⊗_K",
+  "tex": "\\uRHom_A(E,B\\lten_KM),",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom_A(E,B\\lten_KM),",
+   "new": "\\uRHom_A(E,B\\otimes_KM),"
+  },
+  "note": ""
+ },
+ {
+  "page": 175,
+  "where": "'Or la flèche B ⊗_K M ⟶ Hom_A(B,B ⊗_K M) donnée par 5.10.1'",
+  "scan": "both tensor products plain (no L)",
+  "tex": "$B\\lten_KM\\to\\uHom_A(B,B\\lten_KM)$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$B\\lten_KM\\to\\uHom_A(B,B\\lten_KM)$",
+   "new": "$B\\otimes_KM\\to\\uHom_A(B,B\\otimes_KM)$"
+  },
+  "note": ""
+ },
+ {
+  "page": 175,
+  "where": "paragraph 'Soient E ∈ ob D^-(B) , M ∈ ob D^b(K) tels que RHom_B(E,B ⊗_K M) ∈ ob D^b(B^o).'",
+  "scan": "RHom_B(E,B ⊗_K M) with a plain ⊗_K",
+  "tex": "\\uRHom_B(E,B\\lten_KM)\\in\\ob D^b(B^\\circ)$. On dispose",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "B\\lten_KM)\\in\\ob D^b(B^\\circ)$. On dispose",
+   "new": "B\\otimes_KM)\\in\\ob D^b(B^\\circ)$. On dispose"
+  },
+  "note": ""
+ },
+ {
+  "page": 175,
+  "where": "evaluation display after 'd'une flèche d'évaluation'",
+  "scan": "RHom_B(E,B ⊗_K M) ⊗^L_B E ⟶ M ⊗^L_K (B ⊗^L_{B^e} B) : plain ⊗_K inside RHom",
+  "tex": "\\uRHom_B(E,B\\lten_KM)\\lten_BE\\longrightarrow M\\lten_K(B\\lten_{B^e}B),",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom_B(E,B\\lten_KM)\\lten_BE\\longrightarrow M\\lten_K(B",
+   "new": "\\uRHom_B(E,B\\otimes_KM)\\lten_BE\\longrightarrow M\\lten_K(B"
+  },
+  "note": ""
+ },
+ {
+  "page": 175,
+  "where": "display (5.10.8)",
+  "scan": "RHom_B(E,B ⊗_K M) ⊗^L_B E ⟶ M ⊗^L_K B_♮ : plain ⊗_K inside RHom",
+  "tex": "\\uRHom_B(E,B\\lten_KM)\\lten_BE\\longrightarrow M\\lten_KB_\\natural.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom_B(E,B\\lten_KM)\\lten_BE\\longrightarrow M\\lten_KB_\\natural.",
+   "new": "\\uRHom_B(E,B\\otimes_KM)\\lten_BE\\longrightarrow M\\lten_KB_\\natural."
+  },
+  "note": ""
+ },
+ {
+  "page": 175,
+  "where": "label of Proposition 5.10.9",
+  "scan": "'Proposition 5.10.9 - Supposons' (dash after the number)",
+  "tex": "\\begin{statement}{Proposition 5.10.9}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Proposition 5.10.9}",
+   "new": "\\begin{statement}{Proposition 5.10.9 -}"
+  },
+  "note": ""
+ },
+ {
+  "page": 175,
+  "where": "statement of Proposition 5.10.9, 'Supposons A de présentation finie ... tels que'",
+  "scan": "underlined: 'Supposons', 'de présentation finie et plat en tant que', 'module' (not 'K-'), 'et', 'plats sur', 'Soient', 'tels que'; formulas, 'A', 'K' not underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Supposons $A$ de présentation finie et plat en tant que $K$-module, et $A_\\natural$, $B_\\natural$ plats sur $K$. Soient $E\\in\\ob D^-(B)$, $M\\in\\ob D^b(K)$ tels que",
+   "new": "\\emph{Supposons} $A$ \\emph{de présentation finie et plat en tant que} $K$-\\emph{module}, \\emph{et} $A_\\natural$, $B_\\natural$ \\emph{plats sur} $K$. \\emph{Soient} $E\\in\\ob D^-(B)$, $M\\in\\ob D^b(K)$ \\emph{tels que}"
+  },
+  "note": ""
+ },
+ {
+  "page": 175,
+  "where": "statement of Proposition 5.10.9, 'RHom_B(E,B ⊗_K M) ∈ ob D^b(B^o) . Alors RHom_A(E,A ⊗_K M)'",
+  "scan": "both tensor products plain ⊗_K; 'Alors' underlined",
+  "tex": "$\\uRHom_B(E,B\\lten_KM)\\in\\ob D^b(B^\\circ)$. Alors $\\uRHom_A(E,A\\lten_KM)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\uRHom_B(E,B\\lten_KM)\\in\\ob D^b(B^\\circ)$. Alors $\\uRHom_A(E,A\\lten_KM)",
+   "new": "$\\uRHom_B(E,B\\otimes_KM)\\in\\ob D^b(B^\\circ)$. \\emph{Alors} $\\uRHom_A(E,A\\otimes_KM)"
+  },
+  "note": "The same edit underlines 'Alors' (\\emph), as the print; it lies between the two formulas."
+ },
+ {
+  "page": 175,
+  "where": "statement of Proposition 5.10.9, end of the page: ', et l'on a un carré commutatif'",
+  "scan": "'et l'on a un carré commutatif' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et l'on a un carré commutatif",
+   "new": "\\emph{et l'on a un carré commutatif}"
+  },
+  "note": ""
+ },
+ {
+  "page": 175,
+  "where": "end of the page: diagram (5.10.10) of Proposition 5.10.9",
+  "scan": "p. 175 ends with 'et l'on a un carré commutatif' and blank space below; the diagram (5.10.10) is not on this page",
+  "tex": "page_175.tex continues with \\begin{equation}\\tag{5.10.10} and the two rows of the diagram; the folio-176 marker stands inside the tikzcd, before \\end{tikzcd}",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 176 really begins at '\\begin{equation}\\tag{5.10.10}'. Exact fix: python -I move_marker.py 5 176 \"\\begin{equation}\\tag{5.10.10}\" --before (simulated read-only on both layers: the marker goes on its own line just before that line). Text not moved. The diagram's content was not checked here (it is not on p. 175): after the move it must be checked against the scan of p. 176; on pp. 174-175 the print writes B ⊗_K M and A ⊗_K M without L, so check its \\uRHom_B(E,B\\lten_KM) and \\uRHom_A(E,A\\lten_KM) in particular."
+ }
+]

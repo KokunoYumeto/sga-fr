@@ -1,0 +1,184 @@
+[
+ {
+  "page": 271,
+  "where": "below formula (4.2.1), right half",
+  "scan": "under the arrow of Ker(f_*:H^•(X̃,Z_ℓ) → H^•(X,Z_ℓ)) the print has a hand-drawn vertical arrow pointing down (head partly broken) and, under it, very faint broken typed characters (perhaps H^•(X,Z_ℓ))",
+  "tex": "nothing after the display",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "\\end{equation*}",
+   "new": "\\end{equation*}\n% STRUCTURE: sous « \\longrightarrow H^{\\bullet}(X,\\mathbb{Z}_{\\ell})) » le tirage montre une flèche verticale\n%   descendante tracée à la main (pointe incomplète) et, au-dessous, des caractères dactylographiés très pâles\n%   et cassés, illisibles (peut-être « H^{\\bullet}(X,\\mathbb{Z}_{\\ell}) ») : vestige apparent d'une première\n%   disposition verticale effacée, remplacée par la flèche horizontale ; non reproduit."
+  },
+  "note": "The marks are printed in black (not show-through). They look like the remains of a deleted first layout (target typed under a vertical arrow) that the in-line → H^•(X,Z_ℓ)) replaced; the TeX gives the corrected wording, so only a comment is proposed."
+ },
+ {
+  "page": 271,
+  "where": "Remarque 3.2.12, second line",
+  "scan": "'(condition vérifiéeen tous cas': the é is blotted and an e is typed into the following space, so 'vérifiée' runs into 'en'",
+  "tex": "vérifiée en",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "vérifiée en",
+   "new": "vérifiéeen"
+  },
+  "corrected": "vérifiée en",
+  "note": "The typist's correction vérifié -> vérifiée took the space after the word (monospaced columns: 'tous cas' stays where 'vérifié en tous cas' put it), the same slip as 'totalede' on p. 273, which the TeX keeps. The TeX silently corrects; the fix restores the printed reading."
+ },
+ {
+  "page": 272,
+  "where": "(4.2.3), second line",
+  "scan": "par \"transport de structure\" par: 'par', 'transport de structure' and 'par' underlined separately, the quotation marks not underlined",
+  "tex": "\\underline{déduite par ``transport de structure'' par}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{déduite par ``transport de structure'' par}",
+   "new": "\\underline{déduite par} ``\\underline{transport de structure}'' \\underline{par}"
+  },
+  "note": "The underline stops before each quotation mark. Leave it out if the global underline rule (inner comma) is extended to quotation marks."
+ },
+ {
+  "page": 272,
+  "where": "(4.2.3), display of the elements",
+  "scan": "x,y ∈ H^{•-2}(Δ,Z_ℓ(-1)  ,",
+  "tex": "x,y \\in H^{\\bullet-2}(\\Delta,\\mathbb{Z}_{\\ell}(-1) \\quad ,",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "x,y \\in H^{\\bullet-2}(\\Delta,\\mathbb{Z}_{\\ell}(-1)) \\quad ,",
+  "note": "The closing parenthesis of H^{•-2}(...) is missing in the print. The TeX keeps the printed reading."
+ },
+ {
+  "page": 272,
+  "where": "(4.2.3.2)",
+  "scan": "(a ⊕ 0) ∧ (b ⊕ 0   =   ab ⊕ 0  ,",
+  "tex": "(a \\oplus 0) \\wedge (b \\oplus 0 \\;=\\;",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(a \\oplus 0) \\wedge (b \\oplus 0) \\;=\\;",
+  "note": "The closing parenthesis after b ⊕ 0 is missing in the print. The TeX keeps the printed reading."
+ },
+ {
+  "page": 272,
+  "where": "after 'En particulier, pour', first display",
+  "scan": "a ⊕ x ∈ H^•(X,Z_ℓ) ⊕ H^{•-2}(Δ,Z_ℓ(-1)",
+  "tex": "\\;\\; \\oplus H^{\\bullet-2}(\\Delta,\\mathbb{Z}_{\\ell}(-1)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\;\\; \\oplus H^{\\bullet-2}(\\Delta,\\mathbb{Z}_{\\ell}(-1))",
+  "note": "The closing parenthesis of H^{•-2}(...) is missing in the print. The TeX keeps the printed reading."
+ },
+ {
+  "page": 273,
+  "where": "Autrement dit, ...",
+  "scan": "la matrice d'intersection totalede H^•(X̃, Z_ℓ)",
+  "tex": "totalede",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "totale de",
+  "note": "Missing space in the print. The TeX keeps the printed reading."
+ },
+ {
+  "page": 273,
+  "where": "Démonstration, first sentence",
+  "scan": "On a déjà démontré (4.2.1) ;(cf. 2.2.22)).",
+  "tex": "(4.2.1) ;(cf. 2.2.22)).",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(4.2.1) ;(cf. (2.2.22)).",
+  "note": "Unbalanced parentheses: the opening parenthesis of the formula number (2.2.22) is missing (cf. 'est exacte (cf. (1.2.2))' on the same page). The semicolon before '(cf.' is odd too but is left as printed. The TeX keeps the printed reading."
+ },
+ {
+  "page": 273,
+  "where": "diagram (4.2.5), vertical arrow j^*",
+  "scan": "open head pointing down at the bottom and a heavy solid head pointing up at the top of the shaft",
+  "tex": "\\arrow[d, leftrightarrow, \"j^{*}\"]",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\arrow[d, \"j^{*}\"]",
+  "note": "j^*: H^•(X,Z_ℓ) → H^•(Δ,Z_ℓ) goes down only; the upper head is a slip of the drawing (perhaps a blotted correction). The TeX and its STRUCTURE comment reproduce both heads; the corrected edition needs the plain downward arrow."
+ },
+ {
+  "page": 274,
+  "where": "diagram (4.2.7), lower row, second node",
+  "scan": "H^{•-2}(Δ, Z_ℓ(-2))",
+  "tex": "0 & H^{\\cdot-2}(\\Delta,\\mathbb{Z}_\\ell(-2))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "0 & H^{\\cdot-4}(\\Delta,\\mathbb{Z}_\\ell(-2))",
+  "note": "The transpose of H^{2n-•}(Δ,Z_ℓ) (dim Δ = n-2) is H^{•-4}(Δ,Z_ℓ(-2)): this node is the target of g_*: H^{•-2}(Δ̃,Z_ℓ(-1)) → and the source of the codimension-2 Gysin map j_* into H^•(X,Z_ℓ), both of which need •-4; the twist (-2) agrees. The TeX keeps the printed exponent."
+ },
+ {
+  "page": 274,
+  "where": "diagram (4.2.7), lower row, arrow H^{•-2}(Δ,Z_ℓ(-1)) → H^{•-2}(Δ̃,Z_ℓ(-1))",
+  "scan": "label g_*",
+  "tex": "\\arrow[l, \"g_*\"'] \\arrow[u, equal]",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\arrow[l, \"g^*\"'] \\arrow[u, equal]",
+  "note": "A map from the cohomology of Δ to that of Δ̃ can only be g^* (g: Δ̃ → Δ); it is the transpose of g_* in (4.2.5), and commutativity with i_*g^* in the upper row and the equality column requires g^*. The TeX keeps g_*."
+ },
+ {
+  "page": 274,
+  "where": "(4.2.10)",
+  "scan": "g_*i*i_*g*(X) = X pour X ∈ H^•(Δ,Z_ℓ(-1))  (capital X three times)",
+  "tex": "g_*i^*i_*g^*(X) = X \\ \\text{pour} \\ X \\in",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "g_*i^*i_*g^*(x) = x \\ \\text{pour} \\ x \\in",
+  "note": "The element of H(Δ) is written with capital X, the letter of the variety; elsewhere in 4.2 such elements are x, y ((4.2.3), (4.2.11), (4.2.12)). Probably the typist's reading of a handwritten x. The TeX keeps the printed capitals."
+ },
+ {
+  "page": 274,
+  "where": "Exposé XVIII throughout: degree superscript of H",
+  "scan": "one printed symbol, a small raised dot (H^•), on all these pages",
+  "tex": "H^{\\bullet} on pp. 271-273 (e.g. (4.2.1), (4.2.2), (4.2.4)); H^{\\cdot} on p. 274 ((4.2.6)-(4.2.10)); expose_XVIII_body.tex has 21 lines with H^{\\bullet} and 23 with H^{\\cdot}",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention: the same printed dot has two TeX renderings within the exposé; one rule for the exposé is needed (cf. global issue 15 for SGA 7 I). Not changed page by page."
+ },
+ {
+  "page": 275,
+  "where": "En vertu de EGA II 8.1.7, ...",
+  "scan": "si J̃ est l'Idéal Δ̃ dans X̃",
+  "tex": "l'Idéal $\\widetilde{\\Delta}$ dans $\\widetilde{X}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "l'Idéal de $\\widetilde{\\Delta}$ dans $\\widetilde{X}$",
+  "note": "'de' is missing in the print (cf. 'l'Idéal de Δ dans X' a few lines below). The TeX keeps the printed reading."
+ },
+ {
+  "page": 275,
+  "where": "display after 'cet isomorphisme transforme', tensor product",
+  "scan": "⊗ with subscript O²_Δ (underlined O with exponent 2)",
+  "tex": "\\otimes_{\\underline{O}^2_\\Delta}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\otimes_{\\underline{O}_\\Delta}",
+  "note": "The tensor product is over O_Δ (EGA II 4.1.4: O_{P(E⊗L)}(1) corresponds to O_{P(E)}(1) ⊗_{O_Δ} L); the exponent 2 is carried over from P(O²_Δ). The TeX keeps it."
+ },
+ {
+  "page": 275,
+  "where": "same display, last term",
+  "scan": "O_{P1}(1) ⊗_K O_Δ(-1)  (capital K)",
+  "tex": "\\otimes_K",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\otimes_k",
+  "note": "The base field of the exposé is k (3.1: 'sur un corps k algébriquement clos'); no K is defined in §§ 3-4. The TeX keeps the printed capital."
+ }
+]

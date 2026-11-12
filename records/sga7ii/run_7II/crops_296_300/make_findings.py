@@ -1,0 +1,97 @@
+# -*- coding: utf-8 -*-
+import json, sys
+from collections import Counter
+sys.stdout.reconfigure(encoding='utf-8')
+BS = '\\'
+F = []
+F.append({
+ "page": 296, "where": "last line before d_2^{0,n}, 'Donc ilreste à prouver'",
+ "scan": "Donc ilreste à prouver que l'homomorphisme (no space cell between 'il' and 'reste')",
+ "tex": "ilreste",
+ "kind": "misprint_in_print", "confidence": "high", "fix": None,
+ "corrected": "il reste",
+ "note": "Missing word space in the print (checked at 1.2x). The TeX keeps the printed reading."})
+F.append({
+ "page": 297, "where": "(5.6.8.15), first term",
+ "scan": "dim E_2^{c,n-1}: the first index is a small c, open on the right",
+ "tex": r"\dim E_2^{c,n-1}",
+ "kind": "misprint_in_print", "confidence": "high", "fix": None,
+ "corrected": r"\dim E_2^{0,n-1}",
+ "note": "Checked at 2x: a c, not a broken o. The zero index is meant (b_{n-1} sums over p+q = n-1; cf. E_2^{0,n+1} in (5.6.8.16) and E_2^{0,n-1} in (5.6.8.19)). The TeX keeps the printed reading."})
+F.append({
+ "page": 297, "where": "(5.6.8.15), third term",
+ "scan": "+ dim_2^{2,n-3}: the letter E is missing, the sub- and superscript stand on 'dim'",
+ "tex": r"\dim_2^{2,n-3}",
+ "kind": "misprint_in_print", "confidence": "high", "fix": None,
+ "corrected": r"\dim E_2^{2,n-3}",
+ "note": "Omitted E; (5.6.8.18) has dim E_2^{2,n-3}. The TeX keeps the printed reading."})
+F.append({
+ "page": 298, "where": "Théorème 5.7, line after the display, '(partie \"évanescente\"'",
+ "scan": "(partie \"évanescente\" with one underline under 'partie' and one under 'évanescente'; the opening parenthesis, the space and both quotation marks are not underlined",
+ "tex": r"\underline{(partie ``évanescente''}",
+ "kind": "underline", "confidence": "high",
+ "fix": {"old": r"\underline{(partie ``évanescente''}",
+         "new": r"(\underline{partie} ``\underline{évanescente}''"},
+ "note": "Checked at 2x. The new form follows the file's own ``\\underline{fibration}'' in Corollaire 5.6.10 on the same page."})
+F.append({
+ "page": 299, "where": "line '(par 5.1.2) ≃ Ker: (...)', label over the arrow",
+ "scan": "m*+h_*: the star after m stands at the typewriter's normal raised height, the star after h about 7 px lower, centred on the letter body",
+ "tex": r"\xrightarrow{m^*+h^*}",
+ "kind": "formula", "confidence": "medium",
+ "fix": {"old": r"\xrightarrow{m^*+h^*}", "new": r"\xrightarrow{m^*+h_*}"},
+ "note": "Measured: the star after m has its top 8 px above the x-height, like the raised stars in (5.7.3) and (5.7.8); the star after h has its top level with the x-height and its bottom at the baseline. The same key at two heights on one typed line means the platen was turned down, i.e. a subscript (a shallower drop than the 20 px of h_* in (5.7.3)). The map is the Gysin map h_*, as in (5.7.3) m*+m*L+h_*. If the star is read as raised, treat this instead as a misprint kept by the TeX, corrected reading m^*+h_*."})
+F.append({
+ "page": 299, "where": "(5.7.6), label under the arrow",
+ "scan": "℘f_*⊕(-g_*2*): a typed digit 2 before the raised star",
+ "tex": r"-g_*2^*",
+ "kind": "misprint_in_print", "confidence": "high", "fix": None,
+ "corrected": r"-g_*i^*",
+ "note": "Checked at 4x: a typed 2. The restriction i^* to the exceptional divisor is meant: it inverts f^*+i_*g^* of (5.7.1), and the same arrow in diagram (5.7.9) on p. 300 is labelled ℘f_*⊕-g_*i^*. The TeX keeps the printed reading."})
+F.append({
+ "page": 300, "where": "first line, 'l'inclusion de F^2H^N(...)'",
+ "scan": "F^2H^N(X̃,ℚ_ℓ): capital N as exponent",
+ "tex": "F^2H^N",
+ "kind": "misprint_in_print", "confidence": "high", "fix": None,
+ "corrected": "F^2H^n",
+ "note": "Checked at 2x. The degree is n: (5.7.7) F^2 H^n(X̃,ℚ_ℓ), and 'dans H^n(X̃,ℚ_ℓ)' on the same line. The TeX keeps the printed reading."})
+F.append({
+ "page": 300, "where": "second line, '( En toute riqueur'",
+ "scan": "riqueur (a q with the straight descender of the q in 'que')",
+ "tex": "riqueur",
+ "kind": "misprint_in_print", "confidence": "high", "fix": None,
+ "corrected": "rigueur",
+ "note": "Checked at 4x. The TeX keeps the printed reading."})
+F.append({
+ "page": 300, "where": "first unnumbered display (the Gysin arrow), source",
+ "scan": "H^{i-2}(X_η̄,ℚ_ℓ)) ⟶ H^i(X×_k k(η̄),ℚ_ℓ): one closing parenthesis too many",
+ "tex": r"H^{i-2}(X_{\overline{\eta}},\mathbb{Q}_\ell))",
+ "kind": "misprint_in_print", "confidence": "medium", "fix": None,
+ "corrected": r"H^{i-2}(X_{\overline{\eta}},\mathbb{Q}_\ell(-1))",
+ "note": "Unbalanced parentheses in the print. The source of a Gysin map carries the twist (-1), as in H^{n-2}(X_η̄,ℚ_ℓ(-1)) on the first line of the page and in (5.7.8), so the lost text is most likely '(-1'; the minimal alternative is to drop one ')': " + r"H^{i-2}(X_{\overline{\eta}},\mathbb{Q}_\ell)" + ". The TeX keeps the printed reading."})
+
+out = 'findings_296_300_recheck.json'
+with open(out, 'w', encoding='utf-8', newline='\n') as fh:
+    json.dump(F, fh, ensure_ascii=False, indent=1)
+    fh.write('\n')
+
+# checks: every fix "old" and every kept-misprint "tex" occurs exactly once on its page
+ok = True
+d = json.load(open(out, encoding='utf-8'))
+for x in d:
+    src = open('b296_300/page_%03d.tex' % x['page'], encoding='utf-8', newline='').read()
+    assert '\r' not in src
+    if x['fix'] is not None:
+        n = src.count(x['fix']['old'])
+        print(x['page'], 'fix old count', n, x['fix']['old'])
+        ok &= (n == 1)
+        ok &= ('%%%%%%%%%%' not in x['fix']['old'])
+        ok &= ('corrected' not in x)
+    else:
+        ok &= (x['kind'] == 'misprint_in_print')
+        n = src.count(x['tex'])
+        print(x['page'], 'tex count', n, x['tex'])
+        ok &= (n == 1)
+print('ALL OK' if ok else 'PROBLEM')
+c = Counter((x['page'], x['kind'] == 'misprint_in_print') for x in d)
+for p in range(296, 301):
+    print(p, c[(p, False)], '/', c[(p, True)])

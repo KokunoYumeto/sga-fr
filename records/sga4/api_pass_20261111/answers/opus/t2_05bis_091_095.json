@@ -1,0 +1,207 @@
+[
+ {
+  "page": 91,
+  "where": "Lemme 1.2.10, display",
+  "scan": "\\underline{Hom}_B(J,A) ⟶ \\underline{Hom}_B(I,A) (underlined Hom: category of B-functors)",
+  "tex": "\\Hom_B (J, A) \\longrightarrow \\Hom_B (I, A)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "\\Hom_B (J, A) \\longrightarrow \\Hom_B (I, A)",
+   "new": "\\underline{\\Hom}_B (J, A) \\longrightarrow \\underline{\\Hom}_B (I, A)"
+  },
+  "note": "The print underlines Hom for the category of functors; the TeX uses the plain \\Hom. The same convention recurs on pp. 92 and 95. The print is not consistent: on p. 92, F ∈ Hom_B(I,A) is not underlined."
+ },
+ {
+  "page": 92,
+  "where": "definition of I/j",
+  "scan": "α : i ⟶ j une flèche dans I ⊔_f J , les morphismes",
+  "tex": "une flèche dans $I \\amalg_f J/j$, les",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "flèche dans $I \\amalg_f J/j$",
+   "new": "flèche dans $I \\amalg_f J$"
+  },
+  "note": "The print has no /j here. It has /j only in the next clause (ceux de I⊔_f J/j)."
+ },
+ {
+  "page": 92,
+  "where": "Hom(x,y) cases, first line",
+  "scan": "si x , y ∈ ob(I)",
+  "tex": "x, y, \\in \\ob (I)",
+  "kind": "punctuation",
+  "confidence": "low",
+  "fix": {
+   "old": "x, y, \\in \\ob (I)",
+   "new": "x, y \\in \\ob (I)"
+  },
+  "note": "The TeX has an extra comma after y."
+ },
+ {
+  "page": 92,
+  "where": "Hom(x,y) cases, second line",
+  "scan": "si x , y ∈ ob(J)",
+  "tex": "x, y, \\in \\ob (J)",
+  "kind": "punctuation",
+  "confidence": "low",
+  "fix": {
+   "old": "x, y, \\in \\ob (J)",
+   "new": "x, y \\in \\ob (J)"
+  },
+  "note": "The TeX has an extra comma after y."
+ },
+ {
+  "page": 92,
+  "where": "triples",
+  "scan": "d'une B-foncteur G",
+  "tex": "d'une\n$B$-foncteur",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "d'un $B$-foncteur",
+  "note": "Misprint of the print (une for un); the TeX keeps it."
+ },
+ {
+  "page": 92,
+  "where": "triples",
+  "scan": "G∘f = f(G)",
+  "tex": "G \\circ f = f(G)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "G \\circ f = f^{\\ast}(G)",
+  "note": "The print has f(G); f^*(G) is presumably meant. The TeX keeps the printed reading."
+ },
+ {
+  "page": 92,
+  "where": "definition of α_*",
+  "scan": "le foncteur P_J(α)_* (capital P)",
+  "tex": "p_{J}(\\alpha)_{\\ast}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "p_{J}(\\alpha)_{\\ast}",
+  "note": "The print appears to have a capital P against p_J just before. The TeX silently corrects it."
+ },
+ {
+  "page": 92,
+  "where": "display ψ_j",
+  "scan": "α_*(F(i) ⟶ G(j)",
+  "tex": "\\alpha_{\\ast}(F(i))",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\alpha_{\\ast}(F(i))",
+  "note": "The print lacks the closing parenthesis. The TeX silently corrects it."
+ },
+ {
+  "page": 93,
+  "where": "Corollaire 1.2.11",
+  "scan": "(resp. à droite défini par :",
+  "tex": "(\\resp à droite défini\npar) :",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "(\\resp à droite) défini par :",
+  "note": "The print leaves the parenthesis unclosed. The TeX adds a ')' after 'par'."
+ },
+ {
+  "page": 93,
+  "where": "1.2.13",
+  "scan": "1 ⟶ T∘S",
+  "tex": "1 \\to T^{\\circ}S",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "T^{\\circ}S",
+   "new": "T \\circ S"
+  },
+  "note": "This is composition, as in S∘T just after. The TeX sets the circle as an exponent."
+ },
+ {
+  "page": 94,
+  "where": "Lemme 1.2.16",
+  "scan": "d'une adjoint à gauche à Φ_i",
+  "tex": "à $\\phi_i$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\phi_i",
+   "new": "\\Phi_i"
+  },
+  "note": "The print has a capital Φ_i; the TeX has a lowercase φ."
+ },
+ {
+  "page": 94,
+  "where": "Lemme 1.2.16",
+  "scan": "ψ : E' ⟶ E (lowercase psi)",
+  "tex": "$\\Psi :\nE'\\to E$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\Psi",
+   "new": "\\psi"
+  },
+  "note": "The print appears to have a lowercase ψ, as in the Scholie that follows."
+ },
+ {
+  "page": 94,
+  "where": "Scholie 1.2.17",
+  "scan": "le couple (Φ,Ψ) : E ⟶ E'",
+  "tex": "(\\Phi, \\psi)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "(\\Phi, \\psi)",
+   "new": "(\\Phi, \\Psi)"
+  },
+  "note": "The print has a capital Ψ in the couple, although it writes ψ just before. The print is inconsistent; the TeX does not follow it."
+ },
+ {
+  "page": 94,
+  "where": "Lemme 1.2.16",
+  "scan": "d'une adjoint à gauche",
+  "tex": "d'une adjoint à\ngauche",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "d'un adjoint à gauche",
+  "note": "Misprint of the print; the TeX keeps it."
+ },
+ {
+  "page": 94,
+  "where": "last paragraph",
+  "scan": "deux D-objets de B",
+  "tex": "deux $D$-objet de $B$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "deux $D$-objet de",
+   "new": "deux $D$-objets de"
+  },
+  "note": "The print has the plural."
+ },
+ {
+  "page": 95,
+  "where": "Remarque 1.3.3",
+  "scan": "(Γ(E),A) ⟶ (Γ(E),A')",
+  "tex": "(\\Ysheaf{\\Gamma}(E), A')",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(\\Ysheaf{\\Gamma}(E'), A')",
+  "note": "The print has Γ(E) in the target; Γ(E') is meant. The TeX keeps the printed reading."
+ },
+ {
+  "page": 95,
+  "where": "1.3.5",
+  "scan": "bifibrée en catégorie abéliennes",
+  "tex": "catégorie abéliennes",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "catégories abéliennes",
+  "note": "Misprint of the print; the TeX keeps it."
+ }
+]

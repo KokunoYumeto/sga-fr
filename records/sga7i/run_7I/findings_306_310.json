@@ -1,0 +1,75 @@
+[
+ {
+  "page": 306,
+  "where": "display (7.3.3.1), closing comma",
+  "scan": "comma printed at the right margin on the \\Psi\\otimes\\Phi row, as part of the display",
+  "tex": "comma on its own line after \\end{equation} and the STRUCTURE comment",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzcd}\n\\end{equation}",
+   "new": "\\end{tikzcd}\\quad ,\n\\end{equation}"
+  },
+  "note": "Moves the comma into the display. Apply together with the next finding, which deletes the stray comma line. The STRUCTURE comment already describes the comma and needs no change."
+ },
+ {
+  "page": 306,
+  "where": "line after the STRUCTURE comment of (7.3.3.1)",
+  "scan": "(the comma belongs to the display)",
+  "tex": ",",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "diagram completes.\n,\n",
+   "new": "diagram completes.\n"
+  },
+  "note": "Companion of the previous edit. Without it the comma would appear twice."
+ },
+ {
+  "page": 307,
+  "where": "(7.3.4.1)",
+  "scan": "d(q^*_\\eta(E_*))",
+  "tex": "d(q^*_\\eta(E_\\eta))",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "(E_\\eta)) :",
+   "new": "(E_*)) :"
+  },
+  "corrected": "(E_\\eta)) :",
+  "note": "The typescript gives E a lowered asterisk as index instead of \\eta. The TeX silently corrects it."
+ },
+ {
+  "page": 308,
+  "where": "7.3.4.3 cont., 'si et seulement si pour tout section q de Q'",
+  "scan": "pour tout section",
+  "tex": "pour tout section",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "pour toute section",
+  "note": "Gender slip ('section' is feminine). The TeX keeps the printed reading."
+ },
+ {
+  "page": 309,
+  "where": "end of the paragraph after (7.3.5.2), 'à l'aise du changement de base'",
+  "scan": "à l'aise du changement de base",
+  "tex": "à l'aise du changement de base",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "à l'aide du changement de base",
+  "note": "Typing error 'aise' for 'aide'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 309,
+  "where": "7.3.5.3, first line",
+  "scan": "e(S'/S) = 1 ., i.e. où",
+  "tex": "$e(S'/S) = 1$ ., i.e. où",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "$e(S'/S) = 1$, i.e. où",
+  "note": "Stray full stop before the comma. The TeX keeps it. The dot may only be a speck in the scan."
+ }
+]

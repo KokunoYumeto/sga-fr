@@ -1,0 +1,84 @@
+{
+  "findings": [
+    {
+      "page": 211,
+      "where": "Corollaire 1.6, description du faisceau F",
+      "scan": "un faisceau d'ensemble",
+      "tex": "un faisceau d'\\sisi{ensemble}{ensembles}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un faisceau d'ensembles",
+      "note": "Coquille grammaticale de l'imprimé. Le TeX conserve le singulier dans la première branche de \\sisi et le corrige dans la seconde."
+    },
+    {
+      "page": 212,
+      "where": "Premier paragraphe, définition du morphisme g",
+      "scan": "$g = \\Spec(K)\\longrightarrow \\Spec(k)$",
+      "tex": "$g:\\Spec(K)\\rightarrow \\Spec(k)$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "g:\\Spec(K)",
+        "new": "g=\\Spec(K)"
+      },
+      "note": "L'imprimé emploie un signe égal après g, contrairement aux deux-points du TeX."
+    },
+    {
+      "page": 214,
+      "where": "Corollaire 2.2, hypothèse sur F",
+      "scan": "constructible sur X",
+      "tex": "constructible sur $X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "constructible et localement constant sur $X$",
+      "note": "L'imprimé omet l'hypothèse de constance locale de F, nécessaire pour appliquer 2.1 : sans elle, la conclusion est déjà fausse pour le morphisme identité. Le TeX conserve cette omission."
+    },
+    {
+      "page": 215,
+      "where": "Corollaire 2.3, troisième hypothèse d'acyclicité",
+      "scan": "$1$-acyclique pour $\\LL$",
+      "tex": "$1$-acyclique pour $\\LL$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$n$-acyclique pour $\\LL$",
+      "note": "Le TeX conserve le chiffre 1 imprimé. Il faut n, conformément au paramètre annoncé et aux conclusions pour q≤n et q=n+1."
+    },
+    {
+      "page": 215,
+      "where": "Corollaire 2.3, phrase « dans le cas n=0 »",
+      "scan": "i.e. g localement 0-acyclique",
+      "tex": "\\ie $g$ localement\n$0$-acyclique",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\ie $f$ localement $0$-acyclique",
+      "note": "Le morphisme du corollaire est f, non g. Le TeX conserve la lettre fautive de l'imprimé."
+    },
+    {
+      "page": 215,
+      "where": "Preuve de 2.3, image du point générique par g",
+      "scan": "le point générique en $y'_1$",
+      "tex": "générique en $y'_1$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "le point générique en $y_1$",
+      "note": "L'image par g doit être le point y₁ de Y ; y′₁ désigne le point générique de Y′. La prime fautive de l'imprimé est conservée par le TeX."
+    },
+    {
+      "page": 215,
+      "where": "Preuve de 2.3, après le passage au normalisé",
+      "scan": "on peut supposer Y normal",
+      "tex": "on peut supposer $Y$ normal",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "on peut supposer $Y'$ normal",
+      "note": "C'est Y′ qui vient d'être remplacé par son normalisé. La prime manque dans l'imprimé, et le TeX conserve cette omission."
+    }
+  ],
+  "coordinator": "Comptes (normal/misprint) : 211 : 0/1 ; 212 : 1/0 ; 213 : 0/0 ; 214 : 0/1 ; 215 : 0/4."
+}

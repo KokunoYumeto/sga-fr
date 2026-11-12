@@ -1,0 +1,460 @@
+[
+ {
+  "page": 56,
+  "where": "paragraph number '1.2.' at the top of the page",
+  "scan": "'1.2.  Soit E ∈ ob D(X).': the number in the ordinary type of the line, not underlined, not bold",
+  "tex": "\\textbf{1.2.}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{1.2.}",
+   "new": "1.2."
+  },
+  "note": "Not an underlined title, so not covered by the accepted \\textbf for underlined titles; same form as '\\textbf{1.1.}' on p. 55 (reported there)."
+ },
+ {
+  "page": 56,
+  "where": "1.2, 'que E est pseudo-cohérent si, pour tout i'",
+  "scan": "'pseudo-' (end of the line) and 'cohérent' (start of the next) underlined: the term being defined",
+  "tex": "que $E$ est pseudo-cohérent si (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est pseudo-cohérent si",
+   "new": "est \\emph{pseudo-cohérent} si"
+  },
+  "note": "\\emph is the file's command for the print's underline in the appendix (\\emph{Preuve}, \\emph{constructible}). The later 'des objets pseudo-cohérents' is not underlined in the print."
+ },
+ {
+  "page": 56,
+  "where": "Proposition 1.3, 'Si A_X est constant de valeur A un anneau noethérien à gauche'",
+  "scan": "'de valeur A  un anneau': no comma after A (clean paper; the comma after 'n > 0' on the next line is crisp)",
+  "tex": "de valeur $A$, un anneau",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de valeur $A$, un anneau",
+   "new": "de valeur $A$ un anneau"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 57,
+  "where": "top of the page: 'où l'on suppose en outre Y (resp. U) régulier.'",
+  "scan": "p. 57 begins 'où l'on suppose en outre Y (resp. U) régulier.'; p. 56 ends '... (resp. (iii)) équivaut à la condition analogue'",
+  "tex": "'où l'on' ends s5.tex line 1579 (as of 17:05), the last line of page_056.tex; the folio-57 marker (line 1580) follows it, so page_057.tex begins 'suppose en outre'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 57 really begins at 'où l'on' at the end of s5.tex line 1579. Exact fix: python -I move_marker.py 5 57 \"où l'on\" --before (simulated in memory on both layers: its last occurrence before the marker is this one; the marker then splits line 1579 after 'la condition analogue'). Text not moved; it agrees with the print."
+ },
+ {
+  "page": 57,
+  "where": "proof of 1.3, 'Soit E ∈ ob Cons(X), montrons que E ∈ ob C.'",
+  "scan": "a comma after Cons(X)",
+  "tex": "$E\\in\\ob\\Cons(X)$; montrons",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Cons(X)$; montrons",
+   "new": "\\Cons(X)$, montrons"
+  },
+  "note": "Semicolon of the TeX for the printed comma."
+ },
+ {
+  "page": 57,
+  "where": "display 'M = ⊕ M_ℓ ,'",
+  "scan": "⊕ with nothing under it: no summation index (the ℓ is only the subscript of M)",
+  "tex": "M=\\bigoplus_\\ell M_\\ell,",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigoplus_\\ell M_\\ell",
+   "new": "\\bigoplus M_\\ell"
+  },
+  "note": "Summation index added by the transcription (NOTE_5: report each); the next line gives the range ('où ℓ parcourt l'ensemble des diviseurs premiers de n')."
+ },
+ {
+  "page": 57,
+  "where": "after the display F → h_*h^*(F): 'est un isomorphisme sur un facteur direct, donc il suffit de prouver que'",
+  "scan": "'facteur direct, donc il suffit de prouver que': a comma, then 'donc' before 'il suffit'",
+  "tex": "facteur direct; il suffit donc de prouver que",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "direct; il suffit donc de prouver",
+   "new": "direct, donc il suffit de prouver"
+  },
+  "note": "Word order and punctuation in one edit."
+ },
+ {
+  "page": 57,
+  "where": "'En vertu du \"Main Theorem\" (EGA IV 8.12.6)'",
+  "scan": "\"Main Theorem\" with a capital T",
+  "tex": "``Main theorem''",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "``Main theorem''",
+   "new": "``Main Theorem''"
+  },
+  "note": "Capital against small letter. Not reported: in '(EGA IV 8.12.6)' the letters EGA are typed narrower than the pitch, with a small tick between E and G (a typed correction); the TeX's EGA gives the corrected wording."
+ },
+ {
+  "page": 57,
+  "where": "commutative square, label of the bottom arrow Z → X",
+  "scan": "j above the arrow (as i above the top arrow)",
+  "tex": "Z \\arrow[r,\"j\"'] & X, (the swap mark sets j below the arrow)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"j\"']",
+   "new": "\\arrow[r,\"j\"]"
+  },
+  "note": "tikz-cd sets a swapped label below a rightward arrow; the print has j above it. h (left of the left arrow) and f (right of the right arrow) are right."
+ },
+ {
+  "page": 57,
+  "where": "commutative square, after its bottom right vertex X",
+  "scan": "no punctuation after X (clean paper to the right of the diagram)",
+  "tex": "Z ... & X, (a comma after X)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "& X,\n\\end{tikzcd}",
+   "new": "& X\n\\end{tikzcd}"
+  },
+  "note": "The TeX adds a comma; the sentence goes on 'où i est une immersion ouverte' (p. 58)."
+ },
+ {
+  "page": 58,
+  "where": "top of the page: 'où i est une immersion ouverte, et f un morphisme fini.'",
+  "scan": "p. 58 begins 'où i est une immersion ouverte, et f un morphisme fini. On a'; p. 57 ends with the commutative square",
+  "tex": "'où $i$ est une' (s5.tex line 1600 as of 17:05) is the last line of page_057.tex; the folio-58 marker (line 1601) follows it, so page_058.tex begins 'immersion ouverte'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 58 really begins at s5.tex line 1600 'où $i$ est une'. Exact fix: python -I move_marker.py 5 58 'où $i$ est une' --before (single quotes: the anchor contains $; simulated in memory on both layers: the marker then stands between the \\] of the square and 'où $i$ est une'). Text not moved; it agrees with the print."
+ },
+ {
+  "page": 58,
+  "where": "'L'implication (iii) ⟹ (ii) résultera donc du lemme suivant :'",
+  "scan": "a colon after 'suivant' (space before it)",
+  "tex": "résultera donc du lemme suivant.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "du lemme suivant.",
+   "new": "du lemme suivant :"
+  },
+  "note": "Full stop of the TeX for the printed colon (as 'le lemme élémentaire suivant :' on p. 52)."
+ },
+ {
+  "page": 58,
+  "where": "Lemme 1.3.1, 'une filtration finie de M par des sous-H-A-modules tels que les quotients successifs soient'",
+  "scan": "tels (agreeing with the sous-H-A-modules)",
+  "tex": "sous-$H$-$A$-modules telle que les quotients successifs",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "sous-$H$-$A$-modules telle que les quotients",
+   "new": "sous-$H$-$A$-modules tels que les quotients"
+  },
+  "note": "The print has 'tels' here and in the proof ('par des sous-H-A-modules tels que H opère', next finding); 'une filtration finie telle que' (no sous-modules between) has 'telle' in the print and is right in the TeX."
+ },
+ {
+  "page": 58,
+  "where": "Lemme 1.3.1, 'annulés par ℓ et où H opère trivialement.'",
+  "scan": "no comma after ℓ",
+  "tex": "annulés par $\\ell$, et où $H$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "par $\\ell$, et où",
+   "new": "par $\\ell$ et où"
+  },
+  "note": "The TeX adds a comma; the same phrase in the proof ('annulés par ℓ et où H opère trivialement') has none in the print or the TeX."
+ },
+ {
+  "page": 58,
+  "where": "proof of 1.3.1, 'Montrons qu'alors M admet une filtration finie par des sous-H-A-modules tels que H opère'",
+  "scan": "tels",
+  "tex": "sous-$H$-$A$-modules telle que $H$ opère",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "sous-$H$-$A$-modules telle que $H$",
+   "new": "sous-$H$-$A$-modules tels que $H$"
+  },
+  "note": "As in the statement of the lemma."
+ },
+ {
+  "page": 58,
+  "where": "proof of 1.3.1, 'Montrons qu'alors'",
+  "scan": "a new line at the left margin after the short line '... au cas où M est annulé par ℓ .' (an unindented paragraph break, as before 'Supposons' on p. 57, which the TeX sets as a paragraph)",
+  "tex": "annulé par $\\ell$. Montrons qu'alors (run on)",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "annulé par $\\ell$. Montrons",
+   "new": "annulé par $\\ell$.\n\nMontrons"
+  },
+  "note": "Paragraph break without indentation or extra space in the print; drop it if paragraphing is left to a global pass."
+ },
+ {
+  "page": 58,
+  "where": "proof of 1.3.1, 'M admet donc une filtration finie'",
+  "scan": "a new line at the left margin after '... ce qui prouve notre assertion.' (unindented paragraph break)",
+  "tex": "notre assertion. $M$ admet donc (run on)",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "notre assertion. $M$ admet",
+   "new": "notre assertion.\n\n$M$ admet"
+  },
+  "note": "As the previous finding."
+ },
+ {
+  "page": 59,
+  "where": "heading of § 2",
+  "scan": "'2. Dimension quasi-injective.' (underlined; a full stop after 'quasi-injective')",
+  "tex": "\\subsection*{2. Dimension quasi-injective}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{2. Dimension quasi-injective}",
+   "new": "{2. Dimension quasi-injective.}"
+  },
+  "note": "As the logged heading fixes of p. 21 ('3. Existence de complexes dualisants.') and p. 50."
+ },
+ {
+  "page": 59,
+  "where": "first paragraph, 'les notions de A_X-Module quasi-injectif, et de dimension quasi-injective'",
+  "scan": "'quasi-injectif' underlined",
+  "tex": "$A_X$-Module quasi-injectif, (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "-Module quasi-injectif,",
+   "new": "-Module \\emph{quasi-injectif},"
+  },
+  "note": ""
+ },
+ {
+  "page": 59,
+  "where": "first paragraph, 'et de dimension quasi-injective d'un objet de D(X)'",
+  "scan": "'dimension' (end of the line) and 'quasi-injective' (start of the next) underlined",
+  "tex": "et de dimension quasi-injective d'un objet (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et de dimension quasi-injective d'un",
+   "new": "et de \\emph{dimension quasi-injective} d'un"
+  },
+  "note": ""
+ },
+ {
+  "page": 59,
+  "where": "second paragraph, 'une notion de dimension quasi-injective ponctuelle.'",
+  "scan": "'dimension quasi-' (end of the line) and 'injective ponctuelle' (start of the next) underlined",
+  "tex": "une notion de dimension quasi-injective ponctuelle. (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dimension quasi-injective ponctuelle.",
+   "new": "\\emph{dimension quasi-injective ponctuelle}."
+  },
+  "note": ""
+ },
+ {
+  "page": 59,
+  "where": "'et l'on note dim.q.inj_x̄(K) la borne inférieure des N'",
+  "scan": "no comma after dim.q.inj_x̄(K) (end of the line, then 'la borne')",
+  "tex": "$\\dim.\\mathrm{q.inj}_{\\bar{x}}(K)$, la borne",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathrm{q.inj}_{\\bar{x}}(K)$, la borne",
+   "new": "\\mathrm{q.inj}_{\\bar{x}}(K)$ la borne"
+  },
+  "note": "The TeX adds a comma; the comma after 'en x̄' before 'et l'on note' is printed and right."
+ },
+ {
+  "page": 59,
+  "where": "display 'dim.q.inj(K) = Sup dim.q.inj_x̄(K) ,'",
+  "scan": "'Sup' with a capital S and nothing under it (no index x̄)",
+  "tex": "\\sup_{\\bar{x}}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sup_{\\bar{x}}",
+   "new": "\\operatorname{Sup}"
+  },
+  "note": "Capital against small letter (\\sup prints 'sup') and an index the print does not have (NOTE_5: summation indices added), in one edit; \\operatorname{Sup} as the p. 34 fix. The next line gives the range ('où x̄ parcourt l'ensemble des points géométriques de X')."
+ },
+ {
+  "page": 59,
+  "where": "'avec la notion de dimension topologique stricte introduite par VERDIER'",
+  "scan": "'dimension topologique stricte' underlined",
+  "tex": "la notion de dimension topologique stricte introduite (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "notion de dimension topologique stricte introduite",
+   "new": "notion de \\emph{dimension topologique stricte} introduite"
+  },
+  "note": ""
+ },
+ {
+  "page": 59,
+  "where": "same sentence, 'introduite par VERDIER dans [1]'",
+  "scan": "VERDIER in capitals",
+  "tex": "par Verdier dans",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "par Verdier dans",
+   "new": "par VERDIER dans"
+  },
+  "note": "Capitals as printed (as 'A.~GROTHENDIECK' on p. 1)."
+ },
+ {
+  "page": 59,
+  "where": "'On dit que K ∈ ob D^+(x) est de dimension topologique stricte ⩽ N'",
+  "scan": "D^+(x) with a small x (compare the capital X of 'de X' on the next line and of 'K ∈ ob D^+(X)' in the paragraph above)",
+  "tex": "$K\\in\\ob \\D^+(X)$ est de dimension",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\D^+(X)$ est de",
+   "new": "\\D^+(x)$ est de"
+  },
+  "corrected": "\\D^+(X)",
+  "note": "K is a complex on the scheme X (as in the definition of the pointwise quasi-injective dimension above); the small x is a typing error. The TeX silently corrects it; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 59,
+  "where": "'en un point géométrique x̄ de X si pour tout sous-préschéma Y de X, on a'",
+  "scan": "no comma after 'si'",
+  "tex": "de $X$ si, pour tout sous-préschéma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$X$ si, pour tout sous-préschéma",
+   "new": "$X$ si pour tout sous-préschéma"
+  },
+  "note": "The TeX adds a comma (the earlier 'si, pour tout A_X-Module constructible F, on a' has it in the print)."
+ },
+ {
+  "page": 59,
+  "where": "'On appelle dimension topologique stricte de K en x̄ et l'on note dimstop_x̄(K)'",
+  "scan": "no comma after x̄",
+  "tex": "stricte de $K$ en $\\bar{x}$, et l'on note",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "stricte de $K$ en $\\bar{x}$, et",
+   "new": "stricte de $K$ en $\\bar{x}$ et"
+  },
+  "note": "The TeX adds a comma (the parallel sentence on dim.q.inj above has it in the print)."
+ },
+ {
+  "page": 59,
+  "where": "same sentence, 'dimstop_x̄(K) la borne inférieure des N'",
+  "scan": "no comma after dimstop_x̄(K) (end of the line, then 'la borne')",
+  "tex": "$\\operatorname{dimstop}_{\\bar{x}}(K)$, la borne",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\operatorname{dimstop}_{\\bar{x}}(K)$, la",
+   "new": "\\operatorname{dimstop}_{\\bar{x}}(K)$ la"
+  },
+  "note": "The TeX adds a comma. The current layer writes \\dim.\\mathrm{top} for the printed 'dimstop' here and on p. 60."
+ },
+ {
+  "page": 59,
+  "where": "'Tandis que la dimension quasi-injective dépend a priori de l'Anneau'",
+  "scan": "a new, indented paragraph after '... vérifiant la condition précédente.'",
+  "tex": "précédente. Tandis que (run on)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "précédente. Tandis",
+   "new": "précédente.\n\nTandis"
+  },
+  "note": "Paragraph break; drop it if paragraphing is left to a global pass."
+ },
+ {
+  "page": 60,
+  "where": "top of the page: 'de base, la dimension topologique stricte'",
+  "scan": "p. 60 begins 'de base, la dimension topologique stricte ne dépend que du complexe de faisceaux abéliens sous-jacent.'; p. 59 ends '... dépend a priori de l'Anneau'",
+  "tex": "'de base, la' ends s5.tex line 1637 (as of 17:05), the last line of page_059.tex; the folio-60 marker (line 1638) follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 60 really begins at 'de base, la' at the end of s5.tex line 1637. Exact fix: python -I move_marker.py 5 60 \"de base, la\" --before (simulated in memory on both layers: the marker then splits line 1637 after 'de l'Anneau'). Text not moved; it agrees with the print."
+ },
+ {
+  "page": 60,
+  "where": "'On a évidemment :' before the display",
+  "scan": "a colon after 'évidemment' (space before it)",
+  "tex": "On a évidemment (no punctuation)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "On a évidemment\n\\[",
+   "new": "On a évidemment :\n\\["
+  },
+  "note": ""
+ },
+ {
+  "page": 60,
+  "where": "heading of § 3",
+  "scan": "'3. Complexes dualisants : définition et propriétés formelles.' (underlined; a full stop at the end)",
+  "tex": "\\subsection*{3. Complexes dualisants: définition et propriétés formelles}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "propriétés formelles}",
+   "new": "propriétés formelles.}"
+  },
+  "note": "As the heading of § 2 (p. 59)."
+ },
+ {
+  "page": 60,
+  "where": "last line of the page: '(SGA 4^{1/2} Cycle 2.2).'",
+  "scan": "a full stop after the closing parenthesis (clear; 'SGA 4^{1/2}' and 'Cycle 2.2).' are in a different type, a later insertion); the sentence goes on after the display (4.1) at the top of p. 61: '... est un isomorphisme.'",
+  "tex": "(SGA $4^{1/2}$ Cycle 2.2) (no full stop)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Cycle 2.2)",
+   "new": "Cycle 2.2)."
+  },
+  "corrected": "Cycle 2.2)",
+  "note": "Stray full stop inside the sentence 'Dire que ... signifie ... que l'homomorphisme ... (4.1) est un isomorphisme.' The TeX silently drops it; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 60,
+  "where": "display (4.1), printed at the top of p. 61 (in page_060.tex as the files stand)",
+  "scan": "(4.1)  (μ_n)_Y^{⊗-d} [-2d] → ℝ i^!(Z/nZ)_X : the parenthesis closes after μ_n; Y is a subscript and ⊗-d a superscript after it",
+  "tex": "(\\mu_n^{\\otimes -d})_Y[-2d]",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\mu_n^{\\otimes -d})_Y[-2d]",
+   "new": "(\\mu_n)_Y^{\\otimes -d}[-2d]"
+  },
+  "note": "Checked on a render of p. 61 (scan idx 72). Filed under p. 60 because the display stands in page_060.tex: the old stays unique on p. 61 after the folio-61 marker move. The rest of the display and 'est un' agree with the print (double-struck R, no punctuation after the display)."
+ },
+ {
+  "page": 60,
+  "where": "end of the page: the display (4.1) and 'est un' (folio-61 marker)",
+  "scan": "p. 60 ends '... (SGA 4^{1/2} Cycle 2.2).' (blank below); p. 61 begins with the display (4.1), then 'est un isomorphisme.'",
+  "tex": "\\begin{equation}\\tag{4.1} ... \\end{equation} and 'est un' (s5.tex lines 1654-1657 as of 17:05) end page_060.tex; the folio-61 marker (line 1658) follows them",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 61 really begins at s5.tex line 1654 '\\begin{equation}\\tag{4.1}'. Exact fix: python -I move_marker.py 5 61 '\\begin{equation}\\tag{4.1}' --before (simulated in memory on both layers: the marker then stands between 'Cycle 2.2)' and \\begin{equation}; 'est un' and 'isomorphisme.' then follow each other on two lines of p. 61). Text not moved. Move it before the batch of pp. 61-65 is prepared."
+ }
+]

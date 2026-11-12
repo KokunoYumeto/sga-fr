@@ -1,0 +1,191 @@
+{
+  "findings": [
+    {
+      "page": 91,
+      "where": "Lemme 1.2.10, display defining f^{\\ast}",
+      "scan": "\\underline{\\Hom}_B(J,A) \\longrightarrow \\underline{\\Hom}_B(I,A)",
+      "tex": "\\Hom_B (J, A) \\longrightarrow \\Hom_B (I, A)",
+      "kind": "underline",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hom_B (J, A) \\longrightarrow \\Hom_B (I, A)",
+        "new": "\\underline{\\Hom}_B (J, A) \\longrightarrow \\underline{\\Hom}_B (I, A)"
+      },
+      "note": "Soulignement de notation : il désigne les catégories de foncteurs, contrairement aux ensembles Hom_u du lemme suivant. Cette convention récurrente est signalée une seule fois."
+    },
+    {
+      "page": 92,
+      "where": "Paragraph beginning « La catégorie », description of G",
+      "scan": "d'une B-foncteur G",
+      "tex": "d'une\n$B$-foncteur $G$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "d'un $B$-foncteur $G$",
+      "note": "Coquille d'accord dans l'imprimé, conservée par le TeX."
+    },
+    {
+      "page": 92,
+      "where": "Same paragraph, end of the description of the triple",
+      "scan": "G \\circ f = f(G)",
+      "tex": "G \\circ f = f(G)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "G \\circ f = f^{\\ast}(G)",
+      "note": "L'étoile du foncteur de précomposition manque dans l'imprimé. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 92,
+      "where": "Definition of I/j, category containing the arrow α",
+      "scan": "une flèche dans I \\amalg_f J",
+      "tex": "une flèche dans $I \\amalg_f J/j$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$I \\amalg_f J/j$",
+        "new": "$I \\amalg_f J$"
+      },
+      "note": "Le premier /j est ajouté par le TeX. L'imprimé ne le porte que dans la description suivante des morphismes."
+    },
+    {
+      "page": 92,
+      "where": "End of the definition of α_{\\ast}",
+      "scan": "P_J(\\alpha)_{\\ast}",
+      "tex": "$p_{J}(\\alpha)_{\\ast}$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "p_J(\\alpha)_{\\ast}",
+      "note": "L'imprimé porte ici un P majuscule, alors que la projection vient d'être notée p_J. Le TeX corrige silencieusement cette capitale."
+    },
+    {
+      "page": 92,
+      "where": "Display defining ψ_j",
+      "scan": "\\alpha_{\\ast}(F(i)",
+      "tex": "\\alpha_{\\ast}(F(i))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\alpha_{\\ast}(F(i))",
+      "note": "La parenthèse fermant l'application de α_{\\ast} manque dans l'imprimé. Le TeX la rétablit silencieusement."
+    },
+    {
+      "page": 93,
+      "where": "Corollaire 1.2.11, sentence preceding the display",
+      "scan": "un adjoint à gauche (resp. à droite défini par :",
+      "tex": "un adjoint à gauche (\\resp à droite défini\npar) :",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un adjoint à gauche (\\resp à droite) défini par :",
+      "note": "L'imprimé omet la fermeture après « droite ». Le TeX ajoute une parenthèse fermante, mais la place après « par »."
+    },
+    {
+      "page": 94,
+      "where": "Définition 1.2.14, right-hand side of the adjunction",
+      "scan": "(\\cdot,\\Phi_{\\ast}\\cdot)",
+      "tex": "(. , \\Phi_{\\ast}\n{}^{\\bigdot})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hom(\\cdot,\\Phi_{\\ast}\\cdot)",
+      "note": "Le Hom du second membre manque dans l'imprimé. Le TeX conserve cette omission."
+    },
+    {
+      "page": 94,
+      "where": "Lemme 1.2.16, choice of a left adjoint",
+      "scan": "d'une adjoint à gauche",
+      "tex": "d'une adjoint à\ngauche",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "d'un adjoint à gauche",
+      "note": "Coquille d'accord dans l'imprimé, conservée par le TeX."
+    },
+    {
+      "page": 94,
+      "where": "Lemme 1.2.16, after « adjoint à gauche à »",
+      "scan": "\\Phi_i",
+      "tex": "$\\phi_i$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$\\phi_i$",
+        "new": "$\\Phi_i$"
+      },
+      "note": "L'imprimé conserve le Φ majuscule du foncteur introduit dans la phrase précédente."
+    },
+    {
+      "page": 94,
+      "where": "Lemme 1.2.16, notation for the resulting D-functor",
+      "scan": "\\psi : E' \\to E",
+      "tex": "\\Psi :\nE'\\to E",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Psi :",
+        "new": "\\psi :"
+      },
+      "note": "Le symbole manuscrit est un ψ minuscule, également employé dans le scholie suivant."
+    },
+    {
+      "page": 94,
+      "where": "Final paragraph, description of X and X′",
+      "scan": "deux D-objets de B",
+      "tex": "deux $D$-objet de $B$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "deux $D$-objet de $B$",
+        "new": "deux $D$-objets de $B$"
+      },
+      "note": "Le s final d'« objets » est présent dans l'imprimé."
+    },
+    {
+      "page": 95,
+      "where": "End of the opening paragraph, parenthetical bibliographic direction",
+      "scan": "Ouverture « (Pour la vérification… », puis fin « ([4] - (1.17)). »",
+      "tex": "lecteur pourra se reporter à (\\cite{SGA4-05bis:4} - (1.17)).",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "lecteur pourra se reporter à (\\cite{SGA4-05bis:4} - (1.17))).",
+      "note": "La parenthèse ouverte avant « Pour » n'est pas fermée dans l'imprimé. Le TeX conserve cette omission."
+    },
+    {
+      "page": 95,
+      "where": "Remarque 1.3.3, target of the induced morphism",
+      "scan": "(\\underline{\\Gamma}(E), A')",
+      "tex": "(\\Ysheaf{\\Gamma}(E), A')",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\Ysheaf{\\Gamma}(E'), A')",
+      "note": "Le prime de E′ manque dans la cible imprimée. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 95,
+      "where": "1.3.4, formula specifying the ring on the D-topos",
+      "scan": "(\\mathcal{O}.X)^{\\circ}",
+      "tex": "$(\\mathcal{O}. X)^{\\circ} : D \\to\n\\mathcal{E}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\mathcal{O}. X^{\\circ})",
+      "note": "Le cercle porte à tort sur le composé plutôt que sur X. Le premier argument de \\sisi reproduit fidèlement cette coquille ; l'édition fournit une correction dans le second."
+    },
+    {
+      "page": 95,
+      "where": "1.3.5, description of the bifibration",
+      "scan": "bifibrée en catégorie abéliennes",
+      "tex": "bifibrée en catégorie abéliennes",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "bifibrée en catégories abéliennes",
+      "note": "Le s de « catégories » manque dans l'imprimé. Le TeX conserve cette coquille."
+    }
+  ],
+  "coordinator": "91 : 1/0 ; 92 : 1/4 ; 93 : 0/1 ; 94 : 3/2 ; 95 : 0/4 (normal/misprint).\nConvention : rétablir le soulignement du Hom catégoriel là où le scan le porte ; trois exemples : p. 91, Hom_B(J,A) ; p. 92, Hom_B(I\\amalg_f J,A) ; p. 95, Hom_{B^{\\circ}}(B^{\\circ},\\mathcal{E}^{\\circ})."
+}

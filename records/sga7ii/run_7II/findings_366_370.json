@@ -1,0 +1,141 @@
+[
+ {
+  "page": 366,
+  "where": "Théorème 1.1, heading",
+  "scan": "Théorème 1.1. (only the word 'Théorème' underlined)",
+  "tex": "\\underline{Théorème 1.1.}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\underline{Théorème 1.1.}",
+   "new": "\\underline{Théorème} 1.1."
+  },
+  "note": "The number is not underlined in the print. The TeX already does it this way for Proposition 1.2 and Théorème 1.3."
+ },
+ {
+  "page": 366,
+  "where": "Théorème 1.1, 'parmi toute les intersections complètes'",
+  "scan": "toute les",
+  "tex": "toute les",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "toutes les",
+  "note": "Agreement slip in the print; the TeX keeps the printed reading."
+ },
+ {
+  "page": 367,
+  "where": "Proposition 1.1.5, heading",
+  "scan": "Proposition 1.1.5. (only the word 'Proposition' underlined)",
+  "tex": "\\underline{Proposition 1.1.5.}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\underline{Proposition 1.1.5.}",
+   "new": "\\underline{Proposition} 1.1.5."
+  },
+  "note": "The number is not underlined in the print."
+ },
+ {
+  "page": 367,
+  "where": "'Cela donne le théroème si p = 1'",
+  "scan": "théroème",
+  "tex": "théroème",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "théorème",
+  "note": "Typing error; the TeX keeps the printed reading."
+ },
+ {
+  "page": 367,
+  "where": "'pour toute intersection complète vérifiante (1.1.0)'",
+  "scan": "vérifiante",
+  "tex": "vérifiante",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "vérifiant",
+  "note": "The present participle should be invariable; the TeX keeps the printed reading."
+ },
+ {
+  "page": 369,
+  "where": "(1.2.1)",
+  "scan": "H(X_1),...,X_{n+2}) ∈ F_q[X_1,...,X_{n+2}]",
+  "tex": " H(X_1),\\dots,X_{n+2}) \\in",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H(X_1,\\dots,X_{n+2})",
+  "note": "Stray closing parenthesis after X_1 in the print; the TeX keeps it."
+ },
+ {
+  "page": 369,
+  "where": "'des éléments de E qui sont linéairement indépendant sur F_q'",
+  "scan": "indépendant",
+  "tex": "indépendant",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "indépendants",
+  "note": "Agreement with 'éléments'; the TeX keeps the printed reading."
+ },
+ {
+  "page": 369,
+  "where": "(1.2.4)",
+  "scan": "Σ with i below and r above, d_i ≥ n+r+1 ,",
+  "tex": "\\sum_i^r d_i \\geq n+r+1",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\sum_1^r d_i",
+  "note": "The lower limit is i instead of 1 (cf. 1.1.0 and Prop. 1.2). The TeX keeps the printed reading."
+ },
+ {
+  "page": 369,
+  "where": "(1.2.6), first line",
+  "scan": "d_1 ≥ a_o",
+  "tex": "d_1 & \\geq & a_o",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "a_1",
+  "note": "Wrong index: H_1 is a form in a_1 variables, so the condition needed is d_1 ≥ a_1 (with a_0 = 0, d_1 ≥ a_1 - a_0). The TeX keeps the printed a_o, and the o for zero follows the global convention."
+ },
+ {
+  "page": 370,
+  "where": "'en a_i - a_{i-1} variable qui a la propriété (1.2.2)'",
+  "scan": "variable  qui (wide gap after 'variable')",
+  "tex": "variable  qui",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "variables",
+  "note": "Plural needed; the TeX keeps the printed reading. The gap may hide an untyped or lost s."
+ },
+ {
+  "page": 370,
+  "where": "display 'H_1(X_1,...,X_{a_1}), .... , H_r(...)'",
+  "scan": "H_r(X_{a_{r-1}},...,X_{a_r})",
+  "tex": "H_r(X_{a_{r-1}},\\dots,X_{a_r})",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "H_r(X_{a_{r-1}+1},\\dots,X_{a_r})",
+  "note": "By the definition of H_i just above, the first variable is X_{a_{r-1}+1}. The TeX keeps the printed reading."
+ },
+ {
+  "page": 370,
+  "where": "(1.3.1)",
+  "scan": "P(H^o(X,O_X(d)) = U (only two closing parentheses)",
+  "tex": "\\mathbb{P}(H^0(X,\\mathcal{O}_X(d))) = U",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal{O}_X(d))) = U",
+   "new": "\\mathcal{O}_X(d)) = U"
+  },
+  "corrected": "\\mathcal{O}_X(d))) = U",
+  "note": "The print drops one closing parenthesis; the TeX silently corrects it. The fix restores the printed reading."
+ }
+]

@@ -1,0 +1,132 @@
+{
+  "findings": [
+    {
+      "page": 61,
+      "where": "Définition 8.1.1, catégorie contenant les limites inductives",
+      "scan": "\\Hhom(G(𝒱\\text{-}\\Ens))^\\circ",
+      "tex": "\\Hhom(G(𝒱\\text{-}\\Ens))^\\circ",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\Hhom(C,(𝒱\\text{-}\\Ens))^\\circ",
+      "note": "Le TeX conserve la coquille imprimée « G(… » : il faut C suivi d'une virgule, les foncteurs considérés ayant pour source C."
+    },
+    {
+      "page": 61,
+      "where": "8.1.2, première phrase",
+      "scan": "$u$ donnés",
+      "tex": "$u$ données",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "$u$ données",
+        "new": "$u$ donnés"
+      },
+      "note": "Le tirage porte « donnés », sans e supplémentaire."
+    },
+    {
+      "page": 61,
+      "where": "8.1.2, phrase précédant le foncteur v",
+      "scan": "$𝒰$-petits",
+      "tex": "$𝒱$-petits",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$𝒱$-petits",
+      "note": "L'univers venant d'être fixé est 𝒱. Le tirage porte néanmoins U-petits ; le TeX corrige silencieusement cette coquille."
+    },
+    {
+      "page": 61,
+      "where": "8.1.2, justification de la nécessité",
+      "scan": "posant $u=v^\\circ$",
+      "tex": "posant $v=v^\\circ$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "posant $v=v^\\circ$",
+        "new": "posant $u=v^\\circ$"
+      },
+      "note": "La variable définie dans le tirage est u, non v."
+    },
+    {
+      "page": 62,
+      "where": "Proposition 8.1.3 a), condition F 1)",
+      "scan": "\\Hom(i',\\varphi(i))\\neq ∅",
+      "tex": "\\Hom(i',\\varphi(i))\\neq \\phi",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\neq \\phi",
+        "new": "\\neq ∅"
+      },
+      "note": "Le signe imprimé est celui de l'ensemble vide, non une lettre grecque."
+    },
+    {
+      "page": 63,
+      "where": "Démonstration de 8.1.3, après « Supposons maintenant I filtrante et φ cofinal »",
+      "scan": "Alors $I$ est filtrante",
+      "tex": "Alors $I$ est filtrante",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Alors $I'$ est filtrante",
+      "note": "Le TeX conserve l'absence de prime du tirage. C'est la filtrance de I' qui est démontrée ici."
+    },
+    {
+      "page": 63,
+      "where": "Démonstration de 8.1.3, application de F 1) à la double flèche",
+      "scan": "on peut supposer $k'$ de la forme $\\varphi(i)$",
+      "tex": "on peut supposer $k'$ de la\nforme $\\varphi(i)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "on peut supposer $j'$ de la forme $\\varphi(i)$",
+      "note": "Coquille conservée par le TeX : c'est j', le but de f' et g', qu'il faut supposer de cette forme pour pouvoir ensuite composer avec φ(h)."
+    },
+    {
+      "page": 64,
+      "where": "8.1.4, ensemble préordonné des objets de I'",
+      "scan": "OB I'",
+      "tex": "$OB$ $I'$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "$\\Ob I'$",
+      "note": "Le TeX conserve le B majuscule isolé du tirage ; l'opérateur est Ob, comme pour Ob I dans la même phrase."
+    },
+    {
+      "page": 65,
+      "where": "Début de la démonstration de 8.1.6",
+      "scan": "d'abrod",
+      "tex": "d'abord",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "d'abord",
+      "note": "Le TeX corrige silencieusement l'interversion de lettres du tirage."
+    },
+    {
+      "page": 65,
+      "where": "Définition d'un objet final du sous-diagramme D",
+      "scan": "$x\\in D'$",
+      "tex": "$x\\in D'$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$x\\in\\mathcal{O}$",
+      "note": "Coquille conservée par le TeX : x doit parcourir l'ensemble des objets du sous-diagramme, noté O ; D' n'est pas défini ici."
+    },
+    {
+      "page": 65,
+      "where": "Définition d'un objet final, description de Hom(x,e) ∩ F",
+      "scan": "et de but $y$",
+      "tex": "et de but $y$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "et de but $e$",
+      "note": "Le TeX conserve y du tirage. Les flèches de Hom(x,e) ont pour but e."
+    }
+  ],
+  "coordinator": "61 : 2/2 ; 62 : 1/0 ; 63 : 0/2 ; 64 : 0/1 ; 65 : 0/3 (normal/misprint)."
+}

@@ -1,0 +1,75 @@
+[
+ {
+  "page": "441",
+  "where": "9.1.9 a), end",
+  "scan": "les morphismes entre des tels ensembles ordonnés",
+  "tex": "les morphismes\nentre de tels ensembles ordonnés",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "entre de tels ensembles ordonnés",
+  "note": "The print has the incorrect 'des tels'; the TeX silently corrects it to 'de tels'."
+ },
+ {
+  "page": "441",
+  "where": "9.1.9 c), last line of the TeX",
+  "scan": "Page 441 ends with '... si et seulement si'; page 442 begins 'g est surjectif, et g est surjectif sur les graphes ...'",
+  "tex": "si et seulement si $g$ est surjectif, \\emph{et}",
+  "kind": "marker",
+  "confidence": "medium",
+  "fix": null,
+  "note": "'$g$ est surjectif, \\emph{et}' belongs to p. 442. Page 442 really begins at the first '$g$', and the \\pageoriginale on p. 442's first line belongs before 'g est surjectif, et'. The text itself is complete."
+ },
+ {
+  "page": "442",
+  "where": "9.1.9 d), final sentence",
+  "scan": "sous-topos E'_i de E (typewriter prime over the subscript i)",
+  "tex": "sous-topos $E^{!}_i$ de $E$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "sous-topos $E^{!}_i$ de $E$",
+   "new": "sous-topos $E'_i$ de $E$"
+  },
+  "note": "The '!' is the typewriter's prime struck over the dot of the subscript i. Elsewhere the TeX renders it as a prime, e.g. U'_i in Q0 2) and X'_i on p. 441."
+ },
+ {
+  "page": "442",
+  "where": "9.1.9 d), final sentence",
+  "scan": "engendré par les E'_i correspond",
+  "tex": "$E^{!}_i$ correspond",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "$E^{!}_i$ correspond",
+   "new": "$E'_i$ correspond"
+  },
+  "note": "Same case: the prime is misread as an exclamation mark. Apply together with the previous fix."
+ },
+ {
+  "page": "443",
+  "where": "9.1.10 d)",
+  "scan": "est le sous-topos vide Top(∅) ne contient un plus grand élément ... que si",
+  "tex": "$\\Top(∅)$\ncontient un plus grand élément",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\Top(∅)$\ncontient",
+   "new": "$\\Top(∅)$\nne contient"
+  },
+  "note": "The 'ne' of the 'ne ... que si' construction is missing in the TeX. This reverses the meaning: the print gives a necessary condition, the TeX does not."
+ },
+ {
+  "page": "444",
+  "where": "9.1.11 a), first line",
+  "scan": "sous-objets de X est stationnaire",
+  "tex": "sous-objets\\pageoriginale de $x$ est stationnaire",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "de $x$ est stationnaire",
+   "new": "de $X$ est stationnaire"
+  },
+  "note": "The print has capital X, the object itself; the TeX has small x."
+ }
+]

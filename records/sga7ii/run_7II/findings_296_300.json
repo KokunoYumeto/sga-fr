@@ -1,0 +1,95 @@
+[
+ {
+  "page": 296,
+  "where": "paragraph after the diagram: 'Donc il reste à prouver que l'homomorphisme'",
+  "scan": "Donc ilreste à prouver",
+  "tex": "Donc il reste à prouver",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "Donc il reste",
+   "new": "Donc ilreste"
+  },
+  "corrected": "Donc il reste",
+  "note": "The typescript runs the two words together. The TeX silently corrects this, while elsewhere it keeps such slips (e.g. 'Par(5.6.8.14)' on p.297). Correct reading: 'il reste'."
+ },
+ {
+  "page": 297,
+  "where": "(5.6.8.15), first term",
+  "scan": "dim E_2^{c,n-1}",
+  "tex": "\\dim E_2^{c,n-1}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\dim E_2^{0,n-1}",
+  "note": "The print has 'c' for the index 0 (cf. (5.6.8.19)). The TeX keeps the printed reading."
+ },
+ {
+  "page": 297,
+  "where": "(5.6.8.15), last term",
+  "scan": "dim_2^{2,n-3}",
+  "tex": "\\dim_2^{2,n-3}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\dim E_2^{2,n-3}",
+  "note": "The letter E is missing in the print (cf. (5.6.8.18)). The TeX keeps the printed reading."
+ },
+ {
+  "page": 299,
+  "where": "(5.7.6), label under the arrow",
+  "scan": "℘f_*⊕(-g_*2*)",
+  "tex": "\\wp f_*\\oplus(-g_*2^*)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\wp f_*\\oplus(-g_*i^*)",
+  "note": "'2*' is typed for 'i*'; the same map is labelled ℘f_*⊕-g_*i* in (5.7.9), cf. i_*g^* in (5.7.1). The TeX keeps the printed reading."
+ },
+ {
+  "page": 300,
+  "where": "first line, 'l'inclusion de F^2H^N(...)'",
+  "scan": "F^2H^N(X̃,Q_ℓ)",
+  "tex": "F^2H^N(\\widetilde{X},\\mathbb{Q}_\\ell)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "F^2H^n(\\widetilde{X},\\mathbb{Q}_\\ell)",
+  "note": "Capital N is typed for the degree n. The TeX keeps the printed reading."
+ },
+ {
+  "page": 300,
+  "where": "'( En toute riqueur, la flèche de Gysin'",
+  "scan": "riqueur",
+  "tex": "riqueur",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "rigueur",
+  "note": "Typing error. The TeX keeps the printed reading."
+ },
+ {
+  "page": 300,
+  "where": "first display (Gysin map), source term",
+  "scan": "H^{i-2}(X_η̄,Q_ℓ))",
+  "tex": "H^{i-2}(X_{\\overline{\\eta}},\\mathbb{Q}_\\ell))",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "H^{i-2}(X_{\\overline{\\eta}},\\mathbb{Q}_\\ell(-1))",
+  "note": "The parenthesis is unbalanced in the print; the twist (-1) of the Gysin source has apparently been dropped (cf. H^{n-2}(X_η̄,Q_ℓ(-1)) just before). The TeX keeps the printed reading. A minimal alternative correction is to drop the second ')'."
+ },
+ {
+  "page": 300,
+  "where": "(5.7.9), label of the right vertical arrow",
+  "scan": "hand-drawn script P (same glyph as the projection symbol in (5.7.5) and (5.7.6) on p.299) followed by f_*⊕-g_*i*",
+  "tex": "\"\\mathcal{P}f_*\\oplus -g_*i^*\"",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "\"\\mathcal{P}f_*",
+   "new": "\"\\wp f_*"
+  },
+  "note": "The same hand-drawn projection symbol is transcribed \\wp on p.299 but \\mathcal{P} here. The drawn glyph runs below the line like ℘. The renderings should be unified; this page's STRUCTURE comment also writes $\\mathcal{P}f_*...$."
+ }
+]

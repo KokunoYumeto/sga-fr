@@ -1,0 +1,214 @@
+import json
+OUT = r"C:\Users\user\Documents\sga_scan_check_20261105\run_5\findings_026_030.json"
+SIM_NOTE = (" Isomorphism signs of pp. 26-30: all 12 are printed this way and all are \\xrightarrow{\\sim} "
+            "in the TeX; each is listed.")
+F = []
+
+
+def add(page, where, scan, tex, kind, conf, fix, note, corrected=None):
+    d = {"page": page, "where": where, "scan": scan, "tex": tex, "kind": kind, "confidence": conf, "fix": fix}
+    if kind == "misprint_in_print":
+        d["corrected"] = corrected
+    d["note"] = note
+    F.append(d)
+
+
+SIMSCAN = "≃: a hand-drawn tilde over a straight bar, no arrowhead at either end"
+
+# ---------------- page 26 ----------------
+add(26, "second sentence, 'La formule de projection pour i (SGAA XVIII ) donne R Hom(i_!(G),A_X) ≃ R i_* R Hom(G, R^!iA_X)'",
+    SIMSCAN, r"\R\,\underline{\Hom}(i_{!}(G), A_X) \xrightarrow{\sim} \R i_{*}", "symbol", "high",
+    {"old": r"(i_{!}(G), A_X) \xrightarrow{\sim}", "new": r"(i_{!}(G), A_X) \simeq"},
+    "The TeX supplies an arrow the print does not draw (as on p. 10)." + SIM_NOTE +
+    " The same sentence prints '(SGAA XVIII          )' with a blank left for a reference number that was never "
+    "filled in (spacing only, not reported).")
+add(26, "same formula, last factor 'R Hom(G, R^!iA_X)'",
+    "R^!iA_X: no parentheses around A_X (the next line prints R^!i(A_X) with them)",
+    r"\R\,\underline{\Hom}(G, \R^{!}i(A_X))", "formula", "high",
+    {"old": r"\R^{!}i(A_X))", "new": r"\R^{!}iA_X)"}, "")
+add(26, "'Par le théorème de pureté, on a R^!i(A_X) ≃ (μ_n)_Y^{⊗-d}[-2d]'",
+    SIMSCAN, r"\R^{!}i(A_X) \xrightarrow{\sim} (\mu_n)^{\otimes -d}_Y[-2d]", "symbol", "high",
+    {"old": r"\R^{!}i(A_X) \xrightarrow{\sim}", "new": r"\R^{!}i(A_X) \simeq"}, "")
+add(26, "'on a Ext^p(G,T)_ȳ ≃ Ext^p(G_ȳ,T_ȳ) pour tout point géométrique'",
+    SIMSCAN, r"\underline{\Ext}^p(G,T)_{\ol{y}} \xrightarrow{\sim} \Ext^p(G_{\ol{y}}, T_{\ol{y}})", "symbol", "high",
+    {"old": r"_{\ol{y}} \xrightarrow{\sim}", "new": r"_{\ol{y}} \simeq"}, "")
+add(26, "'donc R Hom(G,T) ≃ Hom(G,T), d'où finalement'",
+    SIMSCAN, r"\R\,\underline{\Hom}(G,T) \xrightarrow{\sim} \underline{\Hom}(G,T)", "symbol", "high",
+    {"old": r"\R\,\underline{\Hom}(G,T) \xrightarrow{\sim}", "new": r"\R\,\underline{\Hom}(G,T) \simeq"}, "")
+add(26, "'R Hom(F,A_X) ≃ R i_*(H) [-2d] , avec H = Hom(G,T)' (run into the text in the print, a display in the TeX: "
+        "layout, not reported)",
+    SIMSCAN, r"\R\,\underline{\Hom}(F, A_X) \xrightarrow{\sim} \R i_{*}(\H)[-2d]", "symbol", "high",
+    {"old": r"\R\,\underline{\Hom}(F, A_X) \xrightarrow{\sim}", "new": r"\R\,\underline{\Hom}(F, A_X) \simeq"}, "")
+add(26, "'Z̄ = Spec(O_{Z,x̄}) le localisé strict de Z en x̄, f̄ l'image de f dans O_{Z,x̄}'",
+    "Z and f carry a straight overbar, the same mark as the geometric point x̄ beside them (no wave; the hand-drawn "
+    "tildes of the ≃ signs are clearly wavy)",
+    r"$\wt{Z} = \Spec(\cO_{Z,\ol{x}})$ ... $\wt{f}$ (\wt = \widetilde)", "symbol", "high",
+    {"old": r"$\wt{Z} = \Spec(\cO_{Z,\ol{x}})$ le localisé strict de $Z$ en $\ol{x}$, $\wt{f}$",
+     "new": r"$\ol{Z} = \Spec(\cO_{Z,\ol{x}})$ le localisé strict de $Z$ en $\ol{x}$, $\ol{f}$"},
+    "Apply together with the three other \\wt -> \\ol fixes of this page (one notation: Z̄, f̄, Ȳ, H̄). s5.tex uses \\wt "
+    "only here (line 809) and on pp. 22-23 (lines 737, 741, \\wt{Y}(\\ol{y})), where the print also has a bar.")
+add(26, "'Ȳ = Z̄ x_X Y = Z̄ - V(f̄), H̄ l'image inverse de H sur Ȳ.'",
+    "straight overbars over Y, Z (twice), f, H and Y",
+    r"$\wt{Y} = \wt{Z} \times_X Y = \wt{Z} - V(\wt{f})$, $\wt{\H}$ l'image inverse de $\H$ sur $\wt{Y}$", "symbol", "high",
+    {"old": r"$\wt{Y} = \wt{Z} \times_X Y = \wt{Z} - V(\wt{f})$, $\wt{\H}$ l'image inverse de $\H$ sur $\wt{Y}$",
+     "new": r"$\ol{Y} = \ol{Z} \times_X Y = \ol{Z} - V(\ol{f})$, $\ol{\H}$ l'image inverse de $\H$ sur $\ol{Y}$"},
+    "Apply together with the other \\wt -> \\ol fixes of this page.")
+add(26, "'D'après (SGAA VIII 5.2), on a R^q j_*(H)_x̄'",
+    "R^q with a plain typewriter R (one stem), unlike the double-struck R of 'R i_* = k_* R j_*' and 'R j_*(H)' in the "
+    "lines above",
+    r"\R^q j_{*}(\H)_{\ol{x}} (\R = \mathbb{R})", "font", "high",
+    {"old": r"\R^q j_{*}", "new": r"\mathrm{R}^q j_{*}"},
+    "The typescript keeps the plain R for the higher direct images R^q, R^p (here and pp. 28-29) and the double-struck "
+    "R for the derived functors; the TeX's \\R is double-struck everywhere.")
+add(26, "'R^q j_*(H)_x̄ ≃ H^q(Ȳ,H̄)'",
+    SIMSCAN, r"\R^q j_{*}(\H)_{\ol{x}} \xrightarrow{\sim} \H^q(\wt{Y}, \wt{\H})", "symbol", "high",
+    {"old": r"(\H)_{\ol{x}} \xrightarrow{\sim}", "new": r"(\H)_{\ol{x}} \simeq"}, "")
+add(26, "same line, 'H^q(Ȳ,H̄)'",
+    "straight overbars over Y and H", r"\H^q(\wt{Y}, \wt{\H})", "symbol", "high",
+    {"old": r"\H^q(\wt{Y}, \wt{\H})", "new": r"\H^q(\ol{Y}, \ol{\H})"},
+    "Apply together with the other \\wt -> \\ol fixes of this page.")
+add(26, "'d'où Ext^q(F,A_X)_x̄ ≃ H^{q-2d}(Ȳ,H̄)'",
+    SIMSCAN, r"\underline{\Ext}^q(F, A_X)_{\ol{x}} \xrightarrow{\sim} \H^{q-2d}(\wt{Y}, \wt{\H})", "symbol", "high",
+    {"old": r"(F, A_X)_{\ol{x}} \xrightarrow{\sim}", "new": r"(F, A_X)_{\ol{x}} \simeq"}, "")
+add(26, "same line, 'H^{q-2d}(Ȳ,H̄)'",
+    "straight overbars over Y and H", r"\H^{q-2d}(\wt{Y}, \wt{\H})", "symbol", "high",
+    {"old": r"\H^{q-2d}(\wt{Y}, \wt{\H})", "new": r"\H^{q-2d}(\ol{Y}, \ol{\H})"},
+    "Apply together with the other \\wt -> \\ol fixes of this page.")
+
+# ---------------- page 27 ----------------
+add(27, "top of the page: end of Remarque 3.2.2",
+    "p. 27 begins 'pureté, on a Ext^{2d}(A_U,A_X)|U = (μ_n)_U^{⊗d} , où d = dim O_{X,x} = codim(Y,X).'; p. 26 ends "
+    "'... il existe un ouvert régulier U de Y contenant x. Et par le théorème de'",
+    "page_027.tex begins 'contenant $x$. Et par le théorème de pureté, on a' (s5.tex line 814); the folio-27 marker "
+    "(line 813) stands before 'contenant'",
+    "marker", "high", None,
+    "Page 27 really begins at 'pureté, on a' in s5.tex line 814. Exact fix: python -I move_marker.py 5 27 \"pureté\" "
+    "(no --before: the first 'pureté' after the marker is this one; the marker then splits line 814 after 'théorème "
+    "de'; simulated in memory on both layers). Text not moved; the words agree with the print.")
+add(27, "Lemme 3.2.4, 'codim(Y,X) ≥ p implique cd_L(Y) ≤ N-2p'",
+    "subscript of cd is the double-struck L (doubled stem with a foot), as in cd_L on pp. 5-6",
+    r"$\cd_{\mathbf{n}}(Y) \leqslant N - 2p$", "symbol", "high",
+    {"old": r"\cd_{\mathbf{n}}(Y)", "new": r"\cd_{\mathbb{L}}(Y)"},
+    "Wrong letter (the set of primes L), not a font variant. s5.tex line 829.")
+add(27, "first line, end of Remarque 3.2.2: 'Ext^{2d}(A_U,A_X)|U = (μ_n)_U^{⊗d}'",
+    "exponent ⊗d with no minus sign (clear impression; p. 26 prints the minus in (μ_n)_Y^{⊗-d} twice)",
+    r"(\mu_n)^{\otimes d}_U", "misprint_in_print", "low", None,
+    "By p. 26 (R^!i(A_X) = (μ_n)_Y^{⊗-d}[-2d], T = (μ_n)_Y^{⊗-d}) the sheaf Ext^{2d}(A_U,A_X)|U is (μ_n)_U^{⊗-d}; "
+    "the remark only uses that it is non-zero, so the slip is harmless. The TeX keeps the printed ⊗d. p. 28 "
+    "'H^{2d}_x(A_X) ≃ μ_n^{⊗d}(k)' has the same twist, but there only abstract groups over a separably closed field "
+    "are compared, so it is not listed.",
+    corrected=r"(\mu_n)^{\otimes -d}_U")
+
+# ---------------- page 28 ----------------
+add(28, "proof of Corollaire 3.2.5, 'Ext^{2d}(X,A_x,A_X) = H^{2d}_x(A_X) ≃ μ_n^{⊗d}(k) ≠ 0'",
+    SIMSCAN, r"\H^{2d}_x(A_X) \xrightarrow{\sim} (\mu_n)^{\otimes d}(k)", "symbol", "high",
+    {"old": r"\H^{2d}_x(A_X) \xrightarrow{\sim}", "new": r"\H^{2d}_x(A_X) \simeq"}, "")
+add(28, "same formula, 'μ_n^{⊗d}(k)'",
+    "μ_n^{⊗d}(k): the handwritten μ with subscript n and ⊗d above, no parentheses around μ_n (pp. 26-27 print (μ_n) "
+    "with them)",
+    r"(\mu_n)^{\otimes d}(k)", "formula", "high",
+    {"old": r"(\mu_n)^{\otimes d}(k)", "new": r"\mu_n^{\otimes d}(k)"}, "")
+
+# ---------------- page 29 ----------------
+add(29, "top of the page: Proposition 3.3.1 a), items (ii) and (ii bis)",
+    "p. 29 begins '(ii bis) : pour toute immersion i : Y → X et tout A_Y-Module constructible'; item (ii) ('(ii) pour "
+    "toute immersion ouverte i : U → X ... pour tout p;') is the last item of p. 28",
+    "page_029.tex begins with '\\item[(ii)] pour' / 'toute immersion ouverte ...' (s5.tex lines 857-858); the folio-29 "
+    "marker (line 856) stands before them",
+    "marker", "high", None,
+    "Page 29 really begins at s5.tex line 859 '\\item[(ii~bis)]'. Exact fix: python -I move_marker.py 5 29 "
+    "\"\\item[(ii~bis)]\" (no --before; simulated in memory on both layers). Text not moved. The font fix of item (ii) "
+    "below is in page_029.tex as the files stand; its 'old' stays unique after the move.")
+add(29, "item (ii), printed as the last item of p. 28: 'tout A_U-Module constructible F, R^p i_*(F) est constructible'",
+    "R^p with a plain typewriter R (one stem); the R of R Hom in (i) and (i bis) is double-struck",
+    r"$\R^p i_{*}(F)$ (\R = \mathbb{R})", "font", "high",
+    {"old": r"$A_U$-Module constructible $F$, $\R^p", "new": r"$A_U$-Module constructible $F$, $\mathrm{R}^p"},
+    "As p. 26 R^q j_*: the print keeps the plain R for R^p.")
+add(29, "item (ii bis), its label",
+    "'(ii bis) : pour toute immersion': a colon after the label (none after (i), (i bis), (ii), (iii))",
+    r"\item[(ii~bis)] pour toute immersion", "punctuation", "high",
+    {"old": r"\item[(ii~bis)] pour", "new": r"\item[(ii~bis)] : pour"},
+    "Same form as '\\item[(ii~bis)] : analogue à (ii)' on p. 22.")
+add(29, "item (ii bis), 'tout A_Y-Module constructible F, R^p i_*(F) est constructible'",
+    "R^p with a plain typewriter R (one stem)", r"$\R^p i_{*}(F)$", "font", "high",
+    {"old": r"$A_Y$-Module constructible $F$, $\R^p", "new": r"$A_Y$-Module constructible $F$, $\mathrm{R}^p"}, "")
+add(29, "end of item (ii bis) and label of item (ii ter)",
+    "(ii bis) ends 'pour tout p.' with a full stop; (ii ter) begins '(ii ter) : pour toute immersion' with a colon "
+    "after the label",
+    "pour tout $p$; / \\item[(ii~ter)] pour toute immersion", "punctuation", "high",
+    {"old": "$p$;\n\\item[(ii~ter)] pour", "new": "$p$.\n\\item[(ii~ter)] : pour"},
+    "Two adjacent marks in one edit (the full stop of (ii bis), the colon of (ii ter)). Item (ii) on p. 28 does end "
+    "with ';' as in the TeX.")
+add(29, "item (ii ter), 'localement constant constructible F, R^p i_*(F) est constructible'",
+    "R^p with a plain typewriter R (one stem)", r"$\R^p i_{*}(F)$", "font", "high",
+    {"old": r"constant constructible $F$, $\R^p", "new": r"constant constructible $F$, $\mathrm{R}^p"}, "")
+add(29, "end of item (ii ter), 'est constructible pour tout p.'",
+    "full stop after p", "pour tout $p$; (before \\item[(iii)])", "punctuation", "high",
+    {"old": "$p$;\n\\item[(iii)]", "new": "$p$.\n\\item[(iii)]"}, "")
+add(29, "proof of (i bis) => (ii), display 'R i_*(F) = R i_* R Hom(A_U, i^!(F̄)) ≃ R Hom(i_!(A_U),F̄), et l'on gagne.'",
+    SIMSCAN, r"\R\,\underline{\Hom}(A_U, i^{!}(\ol{F})) \xrightarrow{\sim} \R\,\underline{\Hom}(i_{!}(A_U), \ol{F})",
+    "symbol", "high",
+    {"old": r"(\ol{F})) \xrightarrow{\sim}", "new": r"(\ol{F})) \simeq"}, "")
+add(29, "proof of (ii bis) => (i bis): 'on peut se borner à vérifier (ii) pour F = i_!(M)'",
+    "'(ii)', clearly typed", r"vérifier (ii) pour $F = i_{!}(M)$", "misprint_in_print", "medium", None,
+    "The step proves (i bis): after the dévissage it remains to show R Hom(F,G) ∈ D_c^+ for F = i_!(M), i.e. (i bis) "
+    "for that F, which the next sentences do ('on est ramené à prouver que R Hom(M, R i^!(G)) ∈ ob D_c^+(Y)'); (ii) "
+    "concerns R^p i_* of a module on an open U. The TeX keeps the printed '(ii)'.",
+    corrected=r"(i~bis)")
+
+# ---------------- page 30 ----------------
+add(30, "top of the page: 'de projection (SGAA XVIII )'",
+    "p. 30 begins 'de projection (SGAA XVIII              )'; p. 29 ends '... (constructible). Par la formule'",
+    "'de' is the last word of page_029.tex (end of s5.tex line 879, 'Par la formule de'); the folio-30 marker (line "
+    "880) follows it",
+    "marker", "high", None,
+    "Page 30 really begins at the final word 'de' of s5.tex line 879. Exact fix: python -I move_marker.py 5 30 \"de\" "
+    "--before (finds the 'de' that ends line 879; the marker then splits that line after 'formule'; simulated in "
+    "memory on both layers). Text not moved. The print leaves a blank in '(SGAA XVIII ... )' for a reference number "
+    "that was never filled in (spacing only, not reported).")
+add(30, "display 'R Hom(i_!(M),G) ≃ R i_* R Hom(M, R i^!(G))'",
+    SIMSCAN, r"\R\,\underline{\Hom}(i_{!}(M), G) \xrightarrow{\sim} \R i_{*}", "symbol", "high",
+    {"old": r"(i_{!}(M), G) \xrightarrow{\sim}", "new": r"(i_{!}(M), G) \simeq"},
+    "The R of 'R i_*' in this display has one heavy stem (about 4 px, against 2-3 px for a plain R and two separate "
+    "stems for the other R's of the line): possibly a double strike whose gap filled with ink; not reported.")
+add(30, "triangle, top vertex 'R Hom (A_{U;X},G)'",
+    "the subscript reads U;X with a clear semicolon (dot over comma); the exact sequence above and 'D'autre part, "
+    "R Hom(A_{U,X},G)' below print a comma",
+    r"\R\,\underline{\Hom}(A_{U,X}, G) \arrow[dl]", "misprint_in_print", "medium",
+    {"old": r"A_{U,X}, G) \arrow[dl]", "new": r"A_{U;X}, G) \arrow[dl]"},
+    "The TeX silently corrects; the fix restores the printed semicolon.", corrected=r"A_{U,X}")
+add(30, "after the triangle, bottom-right vertex 'R Hom (A_X,G) .'",
+    "a full stop after the bottom-right vertex", r"\R\,\underline{\Hom}(A_X, G) \arrow[ul] (no full stop)",
+    "punctuation", "high",
+    {"old": r"(A_X, G) \arrow[ul]", "new": r"(A_X, G). \arrow[ul]"}, "")
+add(30, "'D'autre part, R Hom(A_{U,X},G) ≃ R j_* j^!(G) appartient à D_c^+(X)'",
+    SIMSCAN, r"\R\,\underline{\Hom}(A_{U,X}, G) \xrightarrow{\sim} \R j_{*} j^{!}(G)", "symbol", "high",
+    {"old": r"(A_{U,X}, G) \xrightarrow{\sim}", "new": r"(A_{U,X}, G) \simeq"}, "")
+add(30, "'Donc R Hom(A_Y,G) ≃ i_* R i^!(G) appartient à D_c^+(X)'",
+    SIMSCAN, r"\R\,\underline{\Hom}(A_Y, G) \xrightarrow{\sim} i_{*} \R i^{!}(G)", "symbol", "high",
+    {"old": r"(A_Y, G) \xrightarrow{\sim}", "new": r"(A_Y, G) \simeq"}, "")
+add(30, "'que R Hom(M, R i^!(G) ∈ ob D_c^+(X), cqfd.'",
+    "one closing parenthesis after (G): the parenthesis opened after Hom is never closed",
+    r"\R\,\underline{\Hom}(M, \R i^{!}(G)) \in \ob \D_c^{+}(X)", "misprint_in_print", "high",
+    {"old": r"(G)) \in \ob \D_c^{+}(X)", "new": r"(G) \in \ob \D_c^{+}(X)"},
+    "The TeX silently balances the parentheses; the fix restores the printed reading. Same formula as the next "
+    "finding.",
+    corrected=r"\R\,\underline{\Hom}(M, \R i^{!}(G))")
+add(30, "same formula, '∈ ob D_c^+(X), cqfd.'",
+    "D_c^+(X)", r"\in \ob \D_c^{+}(X)$, cqfd.", "misprint_in_print", "low", None,
+    "R Hom(M, R i^!(G)) is a complex on Y, and the claim set up above reads '∈ ob D_c^+(Y)'. Y is closed at this "
+    "point, so the X-reading may mean i_* of it (the sentence before says i_* R i^!(G) belongs to D_c^+(X)): low "
+    "confidence. The TeX keeps the printed (X).",
+    corrected=r"\D_c^{+}(Y)")
+add(30, "end of the page: '... On peut supposer U ≠ ∅, donc il existe' (folio-31 marker)",
+    "p. 30 ends 'donc il existe'; p. 31 begins 'j : V → U un ouvert non vide de U tel que j*(F) soit localement "
+    "constant'",
+    "page_030.tex ends with '$j : V \\to U$ un' (end of s5.tex line 902); the folio-31 marker (line 903) follows it",
+    "marker", "high", None,
+    "Page 31 really begins at '$j : V \\to U$ un' at the end of s5.tex line 902. Exact fix: python -I move_marker.py 5 "
+    "31 '$j : V \\to U$' --before (single quotes keep the shell from expanding $; simulated in memory on both "
+    "layers). Text not moved.")
+
+with open(OUT, "w", encoding="utf-8", newline="\n") as f:
+    json.dump(F, f, ensure_ascii=False, indent=1)
+print(len(F), "findings written")

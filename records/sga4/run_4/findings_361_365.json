@@ -1,0 +1,77 @@
+[
+  {
+    "page": 362,
+    "where": "5.3.1, paragraph after diagram (5.3.1.1): 'le foncteur j_cl! transforme faisceaux mous sur X_cl en faisceau mous sur X̄_cl [TF II 3.5.5]'",
+    "scan": "en faisceau mous sur X̄_cℓ",
+    "tex": "en faisceau mous sur $\\bar{X}_{\\cl}$",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "en faisceaux mous sur $\\bar{X}_{\\cl}$",
+    "note": "Typing error of the print: singular 'faisceau' with the plural 'mous' (the same sentence has 'faisceaux mous sur X_cl'). The TeX keeps the printed reading."
+  },
+  {
+    "page": 362,
+    "where": "5.3.1, 'il transforme en tout cas faisceaux flasques sur X_cl en faisceaux sur ... acycliques pour le foncteur p_cl*'",
+    "scan": "en faisceaux sur X_cℓ acycliques (no bar over X)",
+    "tex": "en faisceaux sur $\\sisi{X}{\\bar{X}}_{\\cl}$ acycliques",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "en faisceaux sur $\\bar{X}_{\\cl}$ acycliques",
+    "note": "The print omits the bar: the sheaves j_cl!F live on X̄_cl, where p_cl* acts. The TeX corrects it with \\sisi{X}{\\bar{X}}; its print reading X agrees with the scan."
+  },
+  {
+    "page": 362,
+    "where": "end of 5.3.1, display after 'On a donc (cf. VERDIER [3])'",
+    "scan": "Rf_cℓ = Rp_cℓ* j_cℓ!  (no '!' on the left-hand side; the witness scan agrees)",
+    "tex": "Rf_{\\cl}=Rp_{\\cl \\ast} j_{\\cl !}",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "Rf_{\\cl !}=Rp_{\\cl \\ast} j_{\\cl !}",
+    "note": "The left-hand side is the derived functor of f_cl! = p_cl* j_cl! named a few lines above (and written Rf_cl! in (5.3.2.1) on the next page); the print drops the '!'. The TeX keeps the printed reading."
+  },
+  {
+    "page": 363,
+    "where": "Variantes 5.3.4 (i), end: 'entre foncteurs de D(X,f*A) dans D(S,ε*A)'",
+    "scan": "dans D(S,ε*𝒜).  (no index cl on S; the witness scan agrees)",
+    "tex": "dans $D(S,\\epsilon^{\\ast}\\Aa)$.",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "dans $D(S_{\\cl},\\epsilon^{\\ast}\\Aa)$",
+    "note": "Wrong index in the print: the isomorphism (5.3.2.1) takes values in the derived category of the transcendental site S_cl, where ε*𝒜 lives (as in D^+_tors(S_cl) above). The TeX keeps the printed reading."
+  },
+  {
+    "page": 364,
+    "where": "proof of Théorème 5.3.6, third sentence: 'Le foncteur Rf_! étant \"way-out\", on se ramène'",
+    "scan": "Le foncteur Rf_! étant \"way-out\"",
+    "tex": "La foncteur $Rf_{!}$ étant « way-out »",
+    "kind": "word",
+    "confidence": "high",
+    "fix": {"old": "La foncteur $Rf_{!}$", "new": "Le foncteur $Rf_{!}$"},
+    "note": "Wrong article in the TeX; the print reads 'Le foncteur'."
+  },
+  {
+    "page": 364,
+    "where": "5.3.7: 'pour les images directes à support propre d'un faisceau constructible'",
+    "scan": "pour les images directes à support propre d'un faisceau constructible d'ensembles ou de groupes Ind-finis",
+    "tex": "pour les images directes support propre d'un faisceau constructible",
+    "kind": "missing",
+    "confidence": "high",
+    "fix": {"old": "images directes\nsupport propre", "new": "images directes\nà support propre"},
+    "note": "The TeX drops the word 'à' of 'images directes à support propre'."
+  },
+  {
+    "page": 365,
+    "where": "5.4.1, definition of the external tensor product (display after 'on pose')",
+    "scan": "K ⊠_𝒜 L = p* ⊗_𝒜 q* L  (nothing after p*)",
+    "tex": "L=p^{\\ast}\\sisi{}{K}",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "K\\mathop{\\boxtimes}_{\\Aa} L=p^{\\ast}K\\otimes_{\\Aa} q^{\\ast}L",
+    "note": "The print omits K after p*. The TeX corrects it with \\sisi{}{K}; its print reading (empty) agrees with the scan."
+  }
+]

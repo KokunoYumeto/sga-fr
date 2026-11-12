@@ -1,0 +1,579 @@
+[
+ {
+  "page": 431,
+  "where": "first display, S_{x,l^n}(f,f',G,phi) : G -> Lambda_n",
+  "scan": "S_{x,ℓ^n}(f,f',G,φ) : G ⟶ Λ_n ,",
+  "tex": "S_{x,\\ell^n}(f,f',G,\\varphi):G\\longrightarrow\\La_n",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "G\\longrightarrow\\La_n",
+   "new": "G\\longrightarrow\\La_n,"
+  },
+  "note": "The print ends the display with a comma; the TeX has none."
+ },
+ {
+  "page": 431,
+  "where": "s'obtient à partir de la fonction i_l o S_x(f,F',G,phi)",
+  "scan": "i_ℓ o S_x(f,F',G,φ)  (capital F')",
+  "tex": "$i_\\ell\\circ S_x(f,F',G,\\varphi)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "i_\\ell\\circ S_x(f,f',G,\\varphi)",
+  "note": "Capital F' (the sheaf) for the lift f', which the next display and 6.2 have. The TeX keeps the printed reading (its source comment documents the erratum)."
+ },
+ {
+  "page": 431,
+  "where": "heading 6.3",
+  "scan": "6.3. Une formule de Lefschetz.  (title underlined, then a full stop)",
+  "tex": "\\subsection*{6.3. Une formule de Lefschetz}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.3. Une formule de Lefschetz}",
+   "new": "\\subsection*{6.3. Une formule de Lefschetz.}"
+  },
+  "note": "The underlined title ends with a full stop in the print; the TeX drops it."
+ },
+ {
+  "page": 431,
+  "where": "statement 6.3, first sentence",
+  "scan": "Sous les hypothèse et avec les notations de 5.1, 6.1, 6.2, on a la formule :  (underlined up to 'formule'; the colon is not)",
+  "tex": "Sous les hypothèses et avec les notations de 5.1, 6.1, 6.2, on a la formule :  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses et avec les notations de 5.1, 6.1, 6.2, on a la formule :",
+   "new": "\\emph{Sous les hypothèses et avec les notations de 5.1, 6.1, 6.2, on a la formule} :"
+  },
+  "note": "The statement of 6.3 is underlined in the print. Exposé XII writes underlined statements with \\emph (Conjecture 4.5, Proposition 4.6, Lemme 4.7). Apply before the misprint fix 'hypothèse' below: the two olds overlap."
+ },
+ {
+  "page": 431,
+  "where": "statement 6.3: 'Sous les hypothèse'",
+  "scan": "Sous les hypothèse",
+  "tex": "Sous les hypothèses",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "hypothèses",
+   "new": "hypothèse"
+  },
+  "corrected": "hypothèses",
+  "note": "The print has the singular 'hypothèse' after 'les'; the TeX silently corrects. The old is the same word in the original text and after the \\emph fix above."
+ },
+ {
+  "page": 431,
+  "where": "'où on a posé' before (6.3.2)",
+  "scan": "où on a posé.  (the words underlined, the full stop not)",
+  "tex": "où on a posé  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où on a posé",
+   "new": "\\emph{où on a posé}"
+  },
+  "note": "Part of the underlined statement 6.3."
+ },
+ {
+  "page": 431,
+  "where": "full stop after 'où on a posé', before (6.3.2)",
+  "scan": "où on a posé.",
+  "tex": "où on a posé  (no full stop)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\n\\begin{equation}\n\\tag{6.3.2}",
+   "new": ".\n\\begin{equation}\n\\tag{6.3.2}"
+  },
+  "corrected": "où on a posé",
+  "note": "The print puts a full stop mid-sentence, before the display that completes 'où on a posé'; the TeX silently drops it. The fix puts the stop at the end of that line (after the closing brace once the \\emph fix is applied: in the print the stop stands outside the underline)."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.4), middle term",
+  "scan": "Tr_A(ℝΓ_X((u,f)_{u,x}))  (lowercase u,x)",
+  "tex": "\\Tr_A(\\RG_X((u,f)_{U,X}))+",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "_{U,X}))+",
+   "new": "_{u,x}))+"
+  },
+  "corrected": "(u,f)_{U,X}",
+  "note": "Lowercase u,x in the subscript (capitals U,X elsewhere, e.g. (6.3.6), (6.3.10)); the TeX silently corrects."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.4), last term",
+  "scan": "Tr_A(ℝΓ_Y(u|_Y,f|_Y))  (Y after each bar at subscript level)",
+  "tex": "\\Tr_A(\\RG_Y(u|Y,f|Y)).",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "u|Y,f|Y",
+   "new": "u|_Y,f|_Y"
+  },
+  "note": "The Y after each bar is lowered in the print, as in (6.3.5) (where the TeX has u|_Y,f|_Y)."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.6), left side",
+  "scan": "ℝΓ_X(u,f)_{U,X})  (no second opening parenthesis)",
+  "tex": "\\RG_X((u,f)_{U,X})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tag{6.3.6}\n\\RG_X((u,f)_{U,X})",
+   "new": "\\tag{6.3.6}\n\\RG_X(u,f)_{U,X})"
+  },
+  "corrected": "\\RG_X((u,f)_{U,X})",
+  "note": "Unbalanced parentheses in the print; the TeX silently adds the opening one."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.6), right side",
+  "scan": "ℝΓ^G ℝΓ_{X'}(u',f')_{U',X'})  (no second opening parenthesis)",
+  "tex": "\\RG_{X'}((u',f')_{U',X'})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RG_{X'}((u',f')_{U',X'}),\\quad",
+   "new": "\\RG_{X'}(u',f')_{U',X'}),\\quad"
+  },
+  "corrected": "\\RG_{X'}((u',f')_{U',X'})",
+  "note": "Unbalanced parentheses in the print; the TeX silently adds the opening one."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.7), isomorphism sign (convention entry; also (6.3.6), (6.3.8), (6.3.9))",
+  "scan": "≈  (typed, two tildes)",
+  "tex": "\\simeq",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "F_{U',X'}\\simeq",
+   "new": "F_{U',X'}\\approx"
+  },
+  "note": "Convention: the print types the isomorphism sign as ≈ in (6.3.6)-(6.3.9); the TeX writes \\simeq (s5.tex has \\simeq 223 times, \\approx 4 times). Reported once, not itemized: decide globally (or rule ≈ a typewriter substitute for ≃) and change all four on this page or none."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.7), first tensor product",
+  "scan": "Λ_{n,U',X'} ⊗_{Λ_n} M,  (plain ⊗, no L)",
+  "tex": "\\La_{n,U',X'}\\otimes_{\\La_n}^{\\mathbf L}M,",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes_{\\La_n}^{\\mathbf L}M",
+   "new": "\\otimes_{\\La_n}M"
+  },
+  "note": "The print has a plain tensor product here; the TeX adds a derived L."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.8), left side",
+  "scan": "ℝΓ_{X'}(u',f')_{U'X'}  (no comma in the subscript)",
+  "tex": "\\RG_{X'}(u',f')_{U',X'}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tag{6.3.8}\n\\RG_{X'}(u',f')_{U',X'}",
+   "new": "\\tag{6.3.8}\n\\RG_{X'}(u',f')_{U'X'}"
+  },
+  "corrected": "_{U',X'}",
+  "note": "No comma between U' and X' in the print; the TeX silently adds it."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.8), tensor product",
+  "scan": "⊗_{Λ_n} with a hand-drawn double-struck 𝕃 above",
+  "tex": "\\otimes_{\\La_n}^{\\mathbf L}u_M.",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes_{\\La_n}^{\\mathbf L}u_M.",
+   "new": "\\otimes_{\\La_n}^{\\mathbb L}u_M."
+  },
+  "note": "Double-struck L in the print (the TeX of Exposé XII has \\mathbb{L} elsewhere, (2.1)-(2.6)); all five \\mathbf L of the exposé are on this page."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.9), right side: f'Λ",
+  "scan": "(ℝΓ_{X'}(f'Λ_{n,U',X'})^∨  (Λ on the line, not lowered after f')",
+  "tex": "(\\RG_{X'}(f'_{\\La_{n,U',X'}}))^\\vee",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "(\\RG_{X'}(f'_{\\La_{n,U',X'}}",
+   "new": "(\\RG_{X'}(f'\\La_{n,U',X'}"
+  },
+  "corrected": "f'_{\\La_{n,U',X'}}",
+  "note": "Here the print types Λ on the line after f' (in (6.3.7), (6.3.8), (6.3.10) it is lowered as the subscript of f'); the TeX silently sets the subscript. The old ends before the '))' that the parenthesis fix below changes."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.9), outer parenthesis (1 of 2): after the f' term",
+  "scan": "(ℝΓ_{X'}(f'Λ_{n,U',X'})^∨ ⊗^𝕃_{Λ_n} A)⊗^𝕃_A u^∨",
+  "tex": "(\\RG_{X'}(f'_{\\La_{n,U',X'}}))^\\vee\\otimes_{\\La_n}^{\\mathbf L}A\\otimes_A^{\\mathbf L}u_M^\\vee",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "))^\\vee",
+   "new": ")^\\vee"
+  },
+  "note": "The print closes the outer parenthesis after A, not after the f' term: remove one ')' here and add one after A (next finding). Apply both together."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.9), outer parenthesis (2 of 2): after A",
+  "scan": "... ⊗^𝕃_{Λ_n} A)⊗^𝕃_A u^∨",
+  "tex": "A\\otimes_A",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "A\\otimes_A",
+   "new": "A)\\otimes_A"
+  },
+  "note": "Second half of the parenthesis fix above; apply both together."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.9), first tensor product",
+  "scan": "⊗_{Λ_n} with a double-struck 𝕃 above",
+  "tex": "\\otimes_{\\La_n}^{\\mathbf L}A",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "^{\\mathbf L}A",
+   "new": "^{\\mathbb L}A"
+  },
+  "note": "Double-struck L in the print."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.9), second tensor product",
+  "scan": "⊗_A with a double-struck 𝕃 above",
+  "tex": "\\otimes_A^{\\mathbf L}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes_A^{\\mathbf L}",
+   "new": "\\otimes_A^{\\mathbb L}"
+  },
+  "note": "Double-struck L in the print."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.9), last factor",
+  "scan": "u^∨  (no index M)",
+  "tex": "u_M^\\vee",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "_M^\\vee.",
+   "new": "^\\vee."
+  },
+  "corrected": "u_M^\\vee",
+  "note": "The print drops the index M (u_M in (6.3.8), u_M^∨ in (6.3.10), (6.3.11)); the TeX silently adds it."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.10), tensor product",
+  "scan": "⊗_{A[G]} with a double-struck 𝕃 above",
+  "tex": "\\otimes_{A[G]}^{\\mathbf L}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes_{A[G]}^{\\mathbf L}",
+   "new": "\\otimes_{A[G]}^{\\mathbb L}"
+  },
+  "note": "Double-struck L in the print."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.11), summation index",
+  "scan": "g∈G♮φ  (no comma)",
+  "tex": "g\\in G_{\\natural,\\varphi}",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "G_{\\natural,\\varphi}",
+   "new": "G_{\\natural\\varphi}"
+  },
+  "note": "No comma between the hand-drawn ♮ and φ in the print (the TeX itself has G_{\\natural\\varphi} at source line 13903)."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.11), argument of the trace",
+  "scan": "(f'_{𝓗^∨_{n,U'X'}})  (∨ written after the hand-drawn H, at its level, below f')",
+  "tex": "(f'{}^\\vee_{H_{n,U',X'}})",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "}\\Tr_{\\La_n[G],\\varphi}(f'{}^\\vee_{H",
+   "new": "}\\Tr_{\\La_n[G],\\varphi}(f'_{H^\\vee"
+  },
+  "note": "In (6.3.11) the print attaches ∨ to the H (f' on H^∨), not to f'; in (6.3.12) the ∨ stands at the level of f', where the TeX's f'{}^\\vee fits. The hand-drawn script H is the convention entry on p. 433."
+ },
+ {
+  "page": 432,
+  "where": "(6.3.11), subscript of H",
+  "scan": "n,U'X'  (no comma between U' and X')",
+  "tex": "n,U',X'",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "U',X'}})(g)",
+   "new": "U'X'}})(g)"
+  },
+  "corrected": "U',X'",
+  "note": "No comma between U' and X' in the print; the TeX silently adds it. Independent of the ∨ fix above."
+ },
+ {
+  "page": 432,
+  "where": "'Mais la trace Tr(...) se calcule'",
+  "scan": "Tr_{Λ_n[G],φ}(f'_{𝓗_{n,U',X'}})  (no ∨)",
+  "tex": "$\\Tr_{\\La_n[G],\\varphi}(f'{}^\\vee_{H_{n,U',X'}})$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "(f'{}^\\vee_{H_{n,U',X'}})$",
+   "new": "(f'_{H_{n,U',X'}})$"
+  },
+  "corrected": "(f'{}^\\vee_{H_{n,U',X'}})",
+  "note": "The print omits the ∨ of the trace computed in (6.3.11)/(6.3.12); the TeX silently adds it."
+ },
+ {
+  "page": 432,
+  "where": "'(cf. Proposition 5.1 b))'",
+  "scan": "(cf, Proposition",
+  "tex": "(cf. Proposition",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "(cf. Proposition",
+   "new": "(cf, Proposition"
+  },
+  "corrected": "(cf. Proposition",
+  "note": "The mark after 'cf' has a comma's tail and sits lower than the round full stops of '5.1.b' and 'cf.Exp.XI' on this page; the TeX silently gives a full stop."
+ },
+ {
+  "page": 432,
+  "where": "'Proposition 5.1 b)'",
+  "scan": "5.1.b))",
+  "tex": "5.1 b))",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "5.1 b))",
+   "new": "5.1.b))"
+  },
+  "note": "The print has a full stop between 1 and b."
+ },
+ {
+  "page": 433,
+  "where": "(6.3.12), argument of the trace",
+  "scan": "Tr_{Λ_n[G],φ} f'^∨_{𝓗_{n,U',X'}})(g)  (no opening parenthesis)",
+  "tex": "\\Tr_{\\La_n[G],\\varphi}(f'{}^\\vee_{H_{n,U',X'}})(g)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\varphi}(f'",
+   "new": "\\varphi}f'"
+  },
+  "corrected": "\\varphi}(f'",
+  "note": "Unbalanced parentheses in the print; the TeX silently adds the opening one."
+ },
+ {
+  "page": 433,
+  "where": "(6.3.12), the hand-drawn H (convention entry; also p. 432 (6.3.11) and 'Mais la trace')",
+  "scan": "hand-drawn script H (curled left stem) in 𝓗_{n,U',X'}",
+  "tex": "H_{n,U',X'}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "{}^\\vee_{H_{n,U',X'}}",
+   "new": "{}^\\vee_{\\mathcal{H}_{n,U',X'}}"
+  },
+  "note": "Convention: the print hand-draws a script H here (a plain H would be typed); the TeX writes plain H here and throughout Exposé XII (from source line 13803). Reported once, not itemized: decide globally."
+ },
+ {
+  "page": 433,
+  "where": "'la formule de l'énoncé'",
+  "scan": "l'énnoncé",
+  "tex": "l'énoncé",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "l'énoncé",
+   "new": "l'énnoncé"
+  },
+  "corrected": "l'énoncé",
+  "note": "Double n in the print; the TeX silently corrects."
+ },
+ {
+  "page": 433,
+  "where": "heading 6.4",
+  "scan": "6.4. Remarques sur les termes locaux.  (title underlined, then a full stop)",
+  "tex": "\\subsection*{6.4. Remarques sur les termes locaux}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.4. Remarques sur les termes locaux}",
+   "new": "\\subsection*{6.4. Remarques sur les termes locaux.}"
+  },
+  "note": "The underlined title ends with a full stop in the print; the TeX drops it."
+ },
+ {
+  "page": 433,
+  "where": "'La relation 6.4.1 permet'",
+  "scan": "La relation 6.4.1. permet",
+  "tex": "La relation 6.4.1 permet",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "La relation 6.4.1 permet",
+   "new": "La relation 6.4.1. permet"
+  },
+  "note": "The print has a full stop after the number."
+ },
+ {
+  "page": 433,
+  "where": "'au cas où il existe'",
+  "scan": "au cas ou il existe  (no grave accent)",
+  "tex": "au cas où il existe",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "au cas où",
+   "new": "au cas ou"
+  },
+  "corrected": "au cas où",
+  "note": "No accent in the print (the typewriter has ù, used for 'où' elsewhere on these pages); the TeX silently corrects."
+ },
+ {
+  "page": 433,
+  "where": "a), last line: 'au moins un point x' ∈ X'^f_x'",
+  "scan": "x' ∈ X'^f_x",
+  "tex": "$x'\\in X_x^{\\prime f}$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "x'\\in X_x^{\\prime f'}",
+  "note": "The fixed points meant are those of f' on X'_x (the source writes {X'_x}^{g^{-1}f'} in section 4); the print has f, and the TeX keeps it. The source comment at b) says the TeX was normalized to f' and \\in; it was not."
+ },
+ {
+  "page": 433,
+  "where": "b): 'Soit x' = X'^f_x'",
+  "scan": "Soit x' = X'^f_x",
+  "tex": "Soit $x'=X_x^{\\prime f}$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "x'\\in X_x^{\\prime f'}",
+  "note": "'=' for '∈' (and f for f', as in a)); the TeX keeps the printed reading."
+ },
+ {
+  "page": 433,
+  "where": "b): 'G_{x'} la stabilisation du point x''",
+  "scan": "la stabilisation",
+  "tex": "la stabilisation",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "le stabilisateur",
+  "note": "Wrong word for the stabilizer (section 4: 'G_{x'} étant le stabilisateur du point x''); the TeX keeps the printed reading (its comment documents it)."
+ },
+ {
+  "page": 433,
+  "where": "display φ_{x'} = φ|G_{x'}",
+  "scan": "φ_{x'} = φ|G_{x'} : G_{x'} ⟶ G_{x'} .  (G_{x'} on the line after the bar)",
+  "tex": "\\varphi|_{G_{x'}}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\varphi|_{G_{x'}}",
+   "new": "\\varphi|G_{x'}"
+  },
+  "note": "The print sets G_{x'} on the line after the bar, not as a subscript."
+ },
+ {
+  "page": 433,
+  "where": "'par F'/G_{x'} l'endomorphisme de X'/G_{x'}'",
+  "scan": "F'/G_{x'}",
+  "tex": "$F'/G_{x'}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "f'/G_{x'}",
+  "note": "Capital F' for the endomorphism obtained from f' (p. 434 writes f'/G_{x'}); the TeX keeps the printed reading (its comment documents it)."
+ },
+ {
+  "page": 434,
+  "where": "display v = p_2(u)",
+  "scan": "v = p_2(u) : (f'/G_{x'})* (p_2^*(F)) ⟶ p_2^*(F) .",
+  "tex": "v = p_2(u)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "v = p_2^*(u)",
+  "note": "The text calls v the inverse image of u by p_2 and writes p_2^*(F) in the same display, so the star is probably missing; the TeX keeps the printed reading."
+ },
+ {
+  "page": 434,
+  "where": "(6.4.3), third argument of α_{x'}",
+  "scan": "α_{x'}(f'/G_{x'},U,f',G_{x'},φ_{x'})",
+  "tex": "\\alpha_{x'}(f'/G_{x'}, v, U, G_{x'}, \\varphi_{x'})",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "U, G_{x'}, \\varphi_{x'})",
+   "new": "f', G_{x'}, \\varphi_{x'})"
+  },
+  "note": "The print's third argument is f' (as in α_x(f,u,f',G,φ) on the right); the TeX has U there and loses f'."
+ },
+ {
+  "page": 434,
+  "where": "(6.4.3), second argument of α_{x'}",
+  "scan": "U  (capital, second argument)",
+  "tex": "v",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "/G_{x'}, v,",
+   "new": "/G_{x'}, U,"
+  },
+  "corrected": "v",
+  "note": "The print has U where the homomorphism v just defined is meant; the TeX silently corrects (and puts the U in the third place, previous finding). The two olds do not overlap."
+ },
+ {
+  "page": 434,
+  "where": "heading c): 'modérément ramifié'",
+  "scan": "modérement  (second e without accent)",
+  "tex": "modérément",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "modérément",
+   "new": "modérement"
+  },
+  "corrected": "modérément",
+  "note": "The print lacks the second acute accent; the TeX silently corrects."
+ },
+ {
+  "page": 434,
+  "where": "'l'ordre du groupe G_{x'} est premier'",
+  "scan": "groupe G_x , est premier  (no prime; stray comma)",
+  "tex": "groupe $G_{x'}$ est premier",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "groupe $G_{x'}$ est",
+   "new": "groupe $G_x$ , est"
+  },
+  "corrected": "groupe $G_{x'}$ est",
+  "note": "The print has G_x without the prime and a comma before 'est'; the TeX silently corrects both."
+ }
+]

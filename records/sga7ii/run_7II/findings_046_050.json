@@ -1,0 +1,144 @@
+[
+ {
+  "page": 46,
+  "where": "Théorème 1.5, after the diagram Y -> P(E) -> S",
+  "scan": "a full stop on the level of S, far to the right of the diagram",
+  "tex": "{} \\end{tikzcd}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{} \\end{tikzcd}",
+   "new": "{} \\end{tikzcd}\\quad ."
+  },
+  "note": "Known pattern: the full stop printed after the diagram is left out (the STRUCTURE comment records it, the TeX does not set it). Fix in the form used for pp. 6 and 40."
+ },
+ {
+  "page": 46,
+  "where": "paragraph 'En vertu de 1.1', 'une section de W dual définissant'",
+  "scan": "W underlined followed by a raised typed v, entirely to the right of the W (checked at 5x): W^v",
+  "tex": "$\\check{\\underline{W}}$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\check{\\underline{W}}$",
+   "new": "$\\underline{W}^{\\vee}$"
+  },
+  "note": "The dual is printed as a superscript v after W, not as an accent over it; it is the same printed form as 'une section de W v' in Proposition 1.3 (p. 44), which the TeX gives as $\\underline{W}^{\\vee}$."
+ },
+ {
+  "page": 46,
+  "where": "Théorème 1.5 (ii)",
+  "scan": "reliant les cohomologie de Hodge et de De Rham dégénère",
+  "tex": "reliant les cohomologie de Hodge",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "reliant les cohomologies de Hodge",
+  "note": "Agreement error: plural article with a singular noun. The TeX keeps the printed reading."
+ },
+ {
+  "page": 46,
+  "where": "Théorème 1.5 (iii)_a, displayed formula",
+  "scan": "R^i f_*Ω^j_{X/S} = 0 si i≠j et i+j ≠ n . (subscript X/S; checked at 2.5x)",
+  "tex": "R^i f_* \\Omega^j_{X/S} = 0",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R^i f_* \\Omega^j_{Y/S} = 0",
+  "note": "f : Y -> S (diagram above; (i) and (ii) have R^i f_* Ω^j_{Y/S}), while X = P(E) (1.4), on which f is not defined; the condition i+j ≠ n refers to the relative dimension n of Y. The TeX keeps the printed reading."
+ },
+ {
+  "page": 47,
+  "where": "displayed formula 's -> dim_{k(s)} (H^i(Y_s, Ω^j_{Ys})'",
+  "scan": "dim_{k(s)} (H^i(Y_s,Ω^j_{Ys}) (two parentheses opened, one closed; checked at 2.5x)",
+  "tex": "\\dim_{k(s)} \\; (H^i(Y_s,\\Omega^j_{Ys})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\dim_{k(s)} \\; (H^i(Y_s,\\Omega^j_{Ys}))",
+  "note": "The parenthesis opened before H^i is never closed. The TeX keeps the printed reading."
+ },
+ {
+  "page": 47,
+  "where": "sentence after the formula: 'sont constantes sur S, sauf peut-être pour i = j'",
+  "scan": "sauf peut-être pour i = j, donc sont toutes constantes",
+  "tex": "sauf peut-être pour $i = j$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "sauf peut-être pour $i + j = n$",
+  "note": "Wrong index. Over a field, (iii)_a gives dim H^i(Ω^j) = 0 for i ≠ j, i+j ≠ n, and (iii)_b, (iii)_c give dimension 1 for i = j with 2i ≠ n; the only dimensions (iii) leaves open are those with i + j = n (for fixed j the single index i = n - j), which the alternating-sum argument then settles. With 'i = j' the deduction 'd'après (iii)' does not hold, since i = n - j ≠ j is not covered. Possibly the author's slip rather than a typing error. The TeX keeps the printed reading."
+ },
+ {
+  "page": 47,
+  "where": "last line: 'dualité de Serre ([2] V 11.2 p.211) La classe de'",
+  "scan": "p.211) La classe de (no full stop after the parenthesis; next word capitalised; checked at 2.2x)",
+  "tex": "p.211) La classe de",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "p.211). La classe de",
+  "note": "Missing full stop between two sentences. The TeX keeps the printed reading."
+ },
+ {
+  "page": 48,
+  "where": "displayed formula at the foot of the page, target of the canonical arrow",
+  "scan": "H^q_Y (P(E), Z/ℓ^m) ---> H^q(Y, Z/ℓ^m)",
+  "tex": "\\longrightarrow H^q(Y, \\; \\mathbb{Z}/\\ell^m)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\longrightarrow H^q(\\mathbb{P}(\\underline{E}), \\; \\mathbb{Z}/\\ell^m)",
+  "note": "Iterating SGA 4 XIV 3.3 on the d affine pieces of P(E) - Y gives H^q(P(E) - Y) = 0 for q ≥ r+d, so by the local-cohomology sequence the canonical (forget-supports) map H^q_Y(P(E)) -> H^q(P(E)) is bijective for q > r+d and surjective for q = r+d, exactly as stated. With target H^q(Y) the statement fails (q = 2r: H^{2r}_Y(P(E)) ≅ H^{2n}(Y)(-d) ≠ 0, H^{2r}(Y) = 0). The next sentence (p. 49) passes by Poincaré duality to the restriction H^q(P(E)) -> H^q(Y). The TeX keeps the printed reading. (The mark after E on the left side is a ')' whose middle is lost to faint type; not a difference.)"
+ },
+ {
+  "page": 49,
+  "where": "Lemme 1.9 (i), 'Si ℓ est premier'",
+  "scan": "Si (underlined) ℓ (not underlined) est premier à la caractéristique de (underlined); checked at 2x",
+  "tex": "\\underline{Si $\\ell$ est premier",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Si $\\ell$ est premier",
+   "new": "\\underline{Si} $\\ell$ \\underline{est premier"
+  },
+  "note": "The typed underline stops before the handwritten ℓ and starts again after it; the TeX underlines ℓ. Compare '$\\ell$\\underline{-adique de}' on p. 48."
+ },
+ {
+  "page": 49,
+  "where": "Lemme 1.9 (i), 'alors la ℓ-torsion de'",
+  "scan": "alors la (underlined) ℓ- (not underlined) torsion de (underlined); checked at 2x",
+  "tex": "\\underline{alors la $\\ell$-torsion de}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{alors la $\\ell$-torsion de}",
+   "new": "\\underline{alors la} $\\ell$-\\underline{torsion de}"
+  },
+  "note": "As in the previous finding: ℓ and the hyphen are outside the underline."
+ },
+ {
+  "page": 49,
+  "where": "Lemme 1.9 (i), 's'identifie à la ℓ-torsion de'",
+  "scan": "s'identifie à la (underlined) ℓ- (not underlined) torsion de (underlined); checked at 2x",
+  "tex": "\\underline{s'identifie à la $\\ell$-torsion de}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{s'identifie à la $\\ell$-torsion de}",
+   "new": "\\underline{s'identifie à la} $\\ell$-\\underline{torsion de}"
+  },
+  "note": "As in the previous findings: ℓ and the hyphen are outside the underline."
+ },
+ {
+  "page": 50,
+  "where": "paragraph 'Ce raisonnement est dû à Cartier', end",
+  "scan": "les différentielles localement logarithmique forment le noyau de C-Id.",
+  "tex": "localement logarithmique forment",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "localement logarithmiques forment",
+  "note": "Agreement error; Lemme 1.9 (ii) on the same page prints 'différentielles localement logarithmiques'. The TeX keeps the printed reading."
+ }
+]

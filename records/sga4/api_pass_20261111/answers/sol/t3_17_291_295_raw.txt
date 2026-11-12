@@ -1,0 +1,185 @@
+{
+  "findings": [
+    {
+      "page": 291,
+      "where": "2.2.13.1, but du foncteur image réciproque",
+      "scan": "\\Aa_n",
+      "tex": "\\Aa\\sisi{_n}{_x}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Aa_x",
+      "note": "La flèche de base est f:x→y : l'indice n est une coquille imprimée, explicitement corrigée par le TeX."
+    },
+    {
+      "page": 291,
+      "where": "Phrase précédant (2.2.13.2)",
+      "scan": "dans le cas triangulée",
+      "tex": "dans le cas triangulé\\sisi{e}{}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "dans le cas triangulé",
+      "note": "Accord avec « cas ». Le TeX corrige explicitement le e superflu."
+    },
+    {
+      "page": 291,
+      "where": "Introduction du diagramme (2.2.13.2)",
+      "scan": "qui rend commutatif les diagrammes suivants",
+      "tex": "qui rend commutatif les diagrammes suivants",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "qui rend commutatifs les diagrammes suivants",
+      "note": "Il manque le s d'accord avec « les diagrammes ». Le TeX conserve la coquille."
+    },
+    {
+      "page": 292,
+      "where": "Cas abélien, conclusion",
+      "scan": "quel que soit X, donc f* est exact à gauche",
+      "tex": "soit $X$, dont $f^{\\ast}$ est exact à gauche.",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "dont $f^{\\ast}$",
+        "new": "donc $f^{\\ast}$"
+      },
+      "note": "L'imprimé porte bien « donc », et non « dont »."
+    },
+    {
+      "page": 292,
+      "where": "Cas triangulé, choix du second triangle",
+      "scan": "et soit $(f^{\\ast}Y',f^{\\ast}Y)$.",
+      "tex": "\\sisi{$(f^{\\ast}Y',f^{\\ast}Y)$}{$(f^{\\ast}Y',f^{\\ast}Y, X'')$ un triangle distingué dans $\\Aa_x$}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$(f^{\\ast}Y',f^{\\ast}Y,X'')$ un triangle distingué dans $\\Aa_x$",
+      "note": "L'imprimé omet la fin de l'introduction du triangle, notamment X'', utilisé dans la suite. Le TeX complète explicitement le passage."
+    },
+    {
+      "page": 292,
+      "where": "Diagramme des triangles, flèche supérieure de gauche",
+      "scan": "X''\\longrightarrow f^{\\ast}Y'' sans étiquette",
+      "tex": "\\ar[rrr]^{\\sisi{}{s}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "X''\\xrightarrow{s}f^{\\ast}Y''",
+      "note": "L'étiquette s manque dans l'imprimé, alors que la phrase suivante emploie s. Le TeX la rétablit explicitement."
+    },
+    {
+      "page": 292,
+      "where": "Diagramme des triangles, deux côtés du triangle central",
+      "scan": "Les flèches de f^{\\ast}Y' vers f^{\\ast}Y et de f^{\\ast}Y vers f^{\\ast}Y'' ne sont pas tracées.",
+      "tex": "\\sisi{}{\\ar[ul]} ; \\sisi{}{\\ar[rru]}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "f^{\\ast}Y'\\longrightarrow f^{\\ast}Y,\\qquad f^{\\ast}Y\\longrightarrow f^{\\ast}Y''",
+      "note": "Ces deux côtés manquent au triangle central imprimé. Le TeX les rétablit dans les secondes branches des deux \\sisi."
+    },
+    {
+      "page": 293,
+      "where": "Diagramme initial, première entrée de la dernière ligne",
+      "scan": "\\Hom_f(X,Y)",
+      "tex": "\\Hom_f(X,Y)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hom_f(X,Y')",
+      "note": "Il manque la prime de Y : les deux entrées situées au-dessus portent f*Y'. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 293,
+      "where": "Diagramme initial, dernière entrée de la dernière ligne",
+      "scan": "\\Hom_f(X,Y[1])",
+      "tex": "\\Hom_x(X,Y[1])",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hom_x(X,Y[1])",
+        "new": "\\Hom_f(X,Y[1])"
+      },
+      "note": "L'indice imprimé est f, confirmé par le second scan, et non x."
+    },
+    {
+      "page": 293,
+      "where": "2.3, fin du premier paragraphe",
+      "scan": "vue la propriété universelle",
+      "tex": "vue la propriété universelle",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "vu la propriété universelle",
+      "note": "Employé ici comme préposition devant le nom, « vu » est invariable. Le TeX conserve la faute imprimée."
+    },
+    {
+      "page": 293,
+      "where": "2.3, factorisation du foncteur composé",
+      "scan": "rend inversible les flèches de S'",
+      "tex": "rend inversible les flèches de $S'$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "rend inversibles les flèches de $S'$",
+      "note": "Il manque le s d'accord avec « les flèches ». Le TeX conserve la coquille."
+    },
+    {
+      "page": 293,
+      "where": "(2.3.1), membre de gauche",
+      "scan": "\\Aa'(S^{-1})",
+      "tex": "\\Aa'(S^{-1})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Aa'({S'}^{-1})",
+      "note": "Le système dans Aa' est S', défini et employé dans la phrase précédente. La prime manque à gauche dans l'imprimé et dans le TeX."
+    },
+    {
+      "page": 294,
+      "where": "Démonstration de 2.3.2, « on vérifie que… »",
+      "scan": "\\Aa'(S^{-1})",
+      "tex": "\\Aa'(S^{-1})",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\Aa'({S'}^{-1})",
+      "note": "Avec les notations définies avant (2.3.1), le système à inverser dans Aa' est sa restriction S'. Le TeX conserve l'omission de la prime."
+    },
+    {
+      "page": 295,
+      "where": "Paragraphe après (2.3.4), base de la catégorie fibrée ou cofibrée",
+      "scan": "sur $\\Aa$",
+      "tex": "sur $\\sisi{\\Aa}{I}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "sur $I$",
+      "note": "La catégorie de base est I, non Aa. Le TeX corrige explicitement cette coquille."
+    },
+    {
+      "page": 295,
+      "where": "Proposition 2.3.5, premier mot",
+      "scan": "Soit",
+      "tex": "Soi\\sisi{}{en}t",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Soient",
+      "note": "L'introduction porte sur Aa et S. Le TeX corrige explicitement l'accord au pluriel."
+    },
+    {
+      "page": 295,
+      "where": "Dernier paragraphe, seconde fibre de la catégorie à définir",
+      "scan": "\\Aa_1(S^{-1})",
+      "tex": "\\Aa_1(S^{-1})",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\Aa_1(S^{-1}_1)",
+      "note": "L'indice 1 de S manque dans cette seconde fibre, contrairement aux occurrences précédentes. Le TeX conserve cette omission imprimée."
+    }
+  ],
+  "coordinator": "291: 0/3 ; 292: 1/3 ; 293: 1/4 ; 294: 0/1 ; 295: 0/3 (normal/misprint)."
+}

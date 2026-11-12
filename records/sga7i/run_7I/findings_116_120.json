@@ -1,0 +1,147 @@
+[
+ {
+  "page": 116,
+  "where": "Proof of Theorem 5.3 (4), diagram after 'Assume the existence of a diagram'",
+  "scan": "The horizontal arrow labelled i runs from U' to U, head at U (checked in a crop); f : U -> Y and the unlabelled U' -> Y as in the TeX.",
+  "tex": "U \\arrow[d, \"f\"'] & U' \\arrow[l, \"i\"] \\arrow[dl] \\\\",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "U \\arrow[r, \"i\"] \\arrow[d, \"f\"'] & U' \\arrow[dl] \\\\",
+  "note": "Arrow-direction slip: i is the closed immersion of U into U' (statement (4): U 'admits a closed immersion into a Y-scheme U'', 'x' is the image of x under U -> U''; p. 117 'x' = i(x)'), and the same diagram on p. 118 is drawn U --i--> U'. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 116,
+  "where": "Proof of Theorem 5.3, '(2) also follows from 5.1(a) since ... is an isomorphism (5) follows from 5.1(d) and the isomorphism'",
+  "scan": "is an iso-/morphism (5) follows: no full stop after 'isomorphism' (checked in a crop)",
+  "tex": "is an isomorphism (5) follows",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "is an isomorphism. (5) follows",
+  "note": "Full stop omitted at the end of the sentence on (2); the sentence on (1) before it ends 'is the projection.' and the next sentence starts with the item number (5). The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 117,
+  "where": "Proof of Theorem 5.3 (4), 'there exists f_1,...,f_{n-p} in J such that [det(f_i/x_j)](x) != 0 for some choice of n-p variables'",
+  "scan": "[det( f_i over x_j )](x) != 0: a plain fraction f_i / x_j, no partial-derivative sign in numerator or denominator (checked in a crop)",
+  "tex": "\\dfrac{f_i}{x_j}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\dfrac{\\partial f_i}{\\partial x_j}",
+  "note": "The criterion is the non-vanishing at x of an (n-p)-minor of the Jacobian matrix (partial f_i / partial x_j), the matrix of d : J/J^2 -> B (x)_P Omega_{P|A} in the basis dx_j; the partial signs were never typed or written in. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 117,
+  "where": "Same sentence, '... for some choice of n-p variables among x_1, x_2,...,x_n [blank] there exists f_1, f_2,...,f_{n-p} in J such that Spec(P/(f_1,...,f_{n-p})) -> Spec(A) is smooth at x''",
+  "scan": "A blank of several characters after x_n; no equivalence sign typed or written in (checked in a crop)",
+  "tex": "$x_1, x_2,\\ldots,x_n$   there exists",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$x_1, x_2,\\ldots,x_n$ $\\Leftrightarrow$ there exists",
+  "note": "The space left for the second sign of the chain 'x notin J^p_X(X|Y) <=> there exists ... <=> there exists ...' was never filled; the first <=> is printed on the line before. The TeX keeps the printed blank (as spaces). 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 119,
+  "where": "'Then we can define the ideal sheaf I^P_X(E) by setting' (X the formal scheme)",
+  "scan": "I^P: capital P as superscript (flat top, short bowl, no descender; checked in a crop against the small p with descender of I^p in Definition 5.6 on the same page)",
+  "tex": "\\underline{I}^p_{\\mathfrak{X}}(\\underline{E})$ by setting",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{I}^p_{\\mathfrak{X}}(\\underline{E})$ by setting",
+   "new": "\\underline{I}^P_{\\mathfrak{X}}(\\underline{E})$ by setting"
+  },
+  "corrected": "\\underline{I}^p_{\\mathfrak{X}}(\\underline{E})$ by setting",
+  "note": "Capital/small slip of the typist, as in I^P_A(E) on p. 114 (where the TeX keeps the capital): the index is the integer p of the Fitting ideals, small in Definition 5.6 on this page. The TeX silently corrects to a small p; the fix restores the printed P, 'corrected' is the current TeX."
+ },
+ {
+  "page": 119,
+  "where": "Display 'I^P_X(E)(U) = I^P_{X(U)}(E(U))'",
+  "scan": "Both superscripts are capital P (checked in a crop)",
+  "tex": "\\underline{I}^p_{\\mathfrak{X}}(\\underline{E})(U) \\;=\\; I^p_{\\mathfrak{X}(U)}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{I}^p_{\\mathfrak{X}}(\\underline{E})(U) \\;=\\; I^p_{\\mathfrak{X}(U)}",
+   "new": "\\underline{I}^P_{\\mathfrak{X}}(\\underline{E})(U) \\;=\\; I^P_{\\mathfrak{X}(U)}"
+  },
+  "corrected": "\\underline{I}^p_{\\mathfrak{X}}(\\underline{E})(U) \\;=\\; I^p_{\\mathfrak{X}(U)}",
+  "note": "Capital/small slip of the typist, as in I^P_A(E) on p. 114 (where the TeX keeps the capital): the index is the integer p of the Fitting ideals, small in Definition 5.6 on this page. The TeX silently corrects to a small p; the fix restores the printed P, 'corrected' is the current TeX."
+ },
+ {
+  "page": 119,
+  "where": "Display 'I^P_X(E) = lim<- I^P_{X_v}(E_v)'",
+  "scan": "Both superscripts are capital P (checked in a crop)",
+  "tex": "\\underline{I}^p_{\\mathfrak{X}}(\\underline{E}) \\;=\\; \\varprojlim_{v} \\underline{I}^p_{X_v}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{I}^p_{\\mathfrak{X}}(\\underline{E}) \\;=\\; \\varprojlim_{v} \\underline{I}^p_{X_v}",
+   "new": "\\underline{I}^P_{\\mathfrak{X}}(\\underline{E}) \\;=\\; \\varprojlim_{v} \\underline{I}^P_{X_v}"
+  },
+  "corrected": "\\underline{I}^p_{\\mathfrak{X}}(\\underline{E}) \\;=\\; \\varprojlim_{v} \\underline{I}^p_{X_v}",
+  "note": "Capital/small slip of the typist, as in I^P_A(E) on p. 114 (where the TeX keeps the capital): the index is the integer p of the Fitting ideals, small in Definition 5.6 on this page. The TeX silently corrects to a small p; the fix restores the printed P, 'corrected' is the current TeX."
+ },
+ {
+  "page": 119,
+  "where": "'If X = lim-> X_v , then E = lim-> E_v where E_v = E (x) O_{X_v}'",
+  "scan": "E = lim E_v with a right-pointing arrow under lim, the same as in X = lim-> X_v (checked in a crop)",
+  "tex": "$\\underline{E} = \\varinjlim_{v} \\underline{E}_v$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\underline{E} = \\varprojlim_{v} \\underline{E}_v$",
+  "note": "Limit-direction slip: the E_v = E (x) O_{X_v} form an inverse system (surjections E_{v+1} -> E_v) and a coherent module on a noetherian formal scheme is their projective limit, as in the display that follows (I(E) = lim<- I_{X_v}(E_v)) and in Omega = lim<- Omega_{X_v|S_v} below; only X = lim-> X_v is an inductive limit. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 119,
+  "where": "Definition 5.6, 'and X an S-adic formal scheme of essentially finite type. We define the ideal sheaf'",
+  "scan": "'an' underlined; 'S-' not underlined; the underline resumes at 'adic formal' (checked in a crop)",
+  "tex": "\\underline{S-adic formal scheme of essentially finite type. We define the ideal sheaf}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{S-adic formal",
+   "new": "$S$-\\underline{adic formal"
+  },
+  "note": "The letter S and its hyphen stand outside the underline, as in 'a Y-scheme' on p. 116 (TeX $Y$-\\underline{scheme})."
+ },
+ {
+  "page": 120,
+  "where": "Corollary 5.7, 'and X an S-adic formal scheme of essentially finite type. We then have'",
+  "scan": "'an' underlined; 'S-' not underlined; the underline resumes at 'adic formal' (checked in a crop)",
+  "tex": "\\underline{S-adic formal scheme of essentially finite type. We then have}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{S-adic formal",
+   "new": "$S$-\\underline{adic formal"
+  },
+  "note": "Same as in Definition 5.6 on p. 119."
+ },
+ {
+  "page": 120,
+  "where": "Corollary 5.7 (1), 'J^p_{X'}(X'|S') = J^p_X(X|S) x_S S' where X = X x_S S''",
+  "scan": "where X = X x_S S' : no prime on the left-hand X (checked in a crop; the primes of X' and S' in the formula before are clear)",
+  "tex": "$\\mathfrak{X} = \\mathfrak{X} \\underset{S}{\\times} S'$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$\\mathfrak{X}' = \\mathfrak{X} \\underset{S}{\\times} S'$",
+  "note": "The clause defines the X' of the formula before it, as in Theorem 5.3 (1) ('where X' = X x_Y Y''). The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 120,
+  "where": "Corollary 5.7 (2), last display 'J^p_X(X|S) - coprod_{1<=i<=m} J^p_{X_(x_i)}(X_(x_i)|S)'",
+  "scan": "A single horizontal stroke at mid-height between the two sides, no second stroke (checked in a crop)",
+  "tex": "J^p_{\\mathfrak{X}}(\\mathfrak{X}|S) \\;-\\; \\coprod",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "J^p_{\\mathfrak{X}}(\\mathfrak{X}|S) \\;=\\; \\coprod",
+  "note": "Equality sign typed as a hyphen: the display is the decomposition '... is discrete, then J = coprod J_(x_i) (disjoint union)', parallel to 'X = coprod X_(x_i) (disjoint union)' earlier on the page. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ }
+]

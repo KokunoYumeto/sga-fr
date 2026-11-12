@@ -1,0 +1,166 @@
+import json
+import pathlib
+
+B = pathlib.Path(r"C:\Users\user\Documents\sga_scan_check_20261105\run_7II\b261_265")
+OUT = pathlib.Path(r"C:\Users\user\Documents\sga_scan_check_20261105\run_7II\findings_261_265.json")
+
+F = []
+
+F.append({
+    "page": 261,
+    "where": "(2.2.5), end of the display",
+    "scan": "a full stop far right, level with the bottom row X <- Delta",
+    "tex": 'X & \\Delta \\arrow[l, "j"\']\n\\end{tikzcd} (no full stop; the STRUCTURE comment says it cannot be carried inside the tikzcd)',
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+        "old": 'X & \\Delta \\arrow[l, "j"\']\n\\end{tikzcd}',
+        "new": 'X & \\Delta \\arrow[l, "j"\'] & .\n\\end{tikzcd}',
+    },
+    "note": "The sentence ends here ('Celui-ci induit ...' follows). Set in a third cell of the bottom row, as the TeX does for the full stop of (2.1.4) on p. 259. Apply together with the next finding (STRUCTURE comment).",
+})
+
+F.append({
+    "page": 261,
+    "where": "STRUCTURE comment under (2.2.5), last sentence",
+    "scan": "full stop printed after the display",
+    "tex": "it cannot be carried inside the tikzcd block and is recorded here.",
+    "kind": "other",
+    "confidence": "high",
+    "fix": {
+        "old": "; it cannot\n%   be carried inside the tikzcd block and is recorded here.",
+        "new": "; it is set\n%   in a third cell of the bottom row of the tikzcd block.",
+    },
+    "note": "Goes with the previous fix; without it the comment says the full stop is left out.",
+})
+
+F.append({
+    "page": 262,
+    "where": "(2.2.12), end of the display",
+    "scan": "a full stop far right, level with the bottom row E_2^{p+2,q-1}(f) -> E_2^{p+2,q-1}(g)",
+    "tex": "& E_2^{p+2,q-1}(g)\n\\end{tikzcd} (no full stop)",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+        "old": "& E_2^{p+2,q-1}(g)\n\\end{tikzcd}",
+        "new": "& E_2^{p+2,q-1}(g) & .\n\\end{tikzcd}",
+    },
+    "note": "'Pour q <= 0, ...' begins a new sentence. Set in a third cell of the bottom row (as p. 259). The STRUCTURE comment already records the printed period and does not say it is left out; it needs no change.",
+})
+
+F.append({
+    "page": 263,
+    "where": "(2.2.13), end of the display",
+    "scan": "a comma to the right of the bottom row, level with E_{r+1}^{p,q}(g)",
+    "tex": "& E_{r+1}^{p,q}(g)\n\\end{tikzcd} (no comma)",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+        "old": "& E_{r+1}^{p,q}(g)\n\\end{tikzcd}",
+        "new": "& E_{r+1}^{p,q}(g) & ,\n\\end{tikzcd}",
+    },
+    "note": "The sentence runs on ('ce qui donne (2.2.9) pour r+1'). Set in a third cell of the bottom row (as p. 259). The STRUCTURE comment records the comma without saying it is left out; no change needed there.",
+})
+
+F.append({
+    "page": 263,
+    "where": "(2.2.14), end of the display",
+    "scan": "a full stop far right, level with the bottom row",
+    "tex": "& E_{r+1}^{p+r+1,q-r}(g)\n\\end{tikzcd} (no full stop)",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+        "old": "& E_{r+1}^{p+r+1,q-r}(g)\n\\end{tikzcd}",
+        "new": "& E_{r+1}^{p+r+1,q-r}(g) & .\n\\end{tikzcd}",
+    },
+    "note": "'Pour q <= r-1, ...' begins a new sentence. Set in a third cell of the bottom row (as p. 259). The STRUCTURE comment records the period without saying it is left out; no change needed there.",
+})
+
+F.append({
+    "page": 263,
+    "where": "first paragraph, second line: 'et pat 1.2 on a'",
+    "scan": "pat (checked at 2x)",
+    "tex": "et pat 1.2 on a",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "et par 1.2 on a",
+    "note": "Typing slip for 'par'. The TeX keeps the printed reading. The corrected layer reads 'par', but its comment ('Réparation de transcription : l'imprimé porte « par », non « pat ».', current/expose_XVIII_body.tex) and corrections.md SGA7II-FR-XVIII-008 (classed transcription_repair) say the print has 'par'; the scan has 'pat', so the entry corrects a misprint of the print and its record should say so.",
+})
+
+F.append({
+    "page": 263,
+    "where": "(2.2.13), bottom-left node",
+    "scan": "R^{p,q}_{r+1}(f): a capital R (checked at 2x)",
+    "tex": "R_{r+1}^{p,q}(f) \\arrow[r, \"{(i^*,j^*)}\"]",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "E_{r+1}^{p,q}(f)",
+    "note": "The node is E_{r+1}^{p,q}(f), the target of the left vertical isomorphism E_r^{p,q}(f) ≃ E_{r+1}^{p,q}(f) stated just above. The TeX keeps the printed reading (its STRUCTURE comment records the R). The corrected layer reads E, but its comment ('Réparation de transcription : le scan porte E_{r+1}') and SGA7II-FR-XVIII-008 say the scan has E; it has R: same record correction as the previous finding.",
+})
+
+F.append({
+    "page": 263,
+    "where": "paragraph after (2.2.14), first line: 'donc d_r^{p,q}(f) = 0'",
+    "scan": "d^{p,q}_r with the subscript r alone (checked at 2.5x)",
+    "tex": "donc $d_r^{p,q}(f) = 0$ .",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "donc $d_{r+1}^{p,q}(f) = 0$ .",
+    "note": "The step proves (2.2.10) for r+1: d_{r+1}^{p,q}(f) has target E_{r+1}^{p+r+1,q-r}(f), which is zero for q <= r-1 (compare p. 262: 'E_2^{p+2,q-1}(f) = 0, donc d_2^{p,q}(f) = 0'). The TeX keeps the printed reading; the corrected layer already reads d_{r+1} (SGA7II-FR-XVIII-009).",
+})
+
+F.append({
+    "page": 265,
+    "where": "(2.2.21), right denominator",
+    "scan": "H^pF^p(Δ̃,ℤ_ℓ) (checked at 2.5x)",
+    "tex": "{H^{p}F^{p}(\\widetilde{\\Delta},\\mathbb{Z}_{\\ell})}",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "{F^{p}H^{p}(\\widetilde{\\Delta},\\mathbb{Z}_{\\ell})}",
+    "note": "Transposed: the left denominator is F^pH^p(X̃,ℤ_ℓ) and F^i is the Leray filtration just defined. The TeX keeps the printed reading; the corrected layer already has F^pH^p (SGA7II-FR-XVIII-010).",
+})
+
+F.append({
+    "page": 265,
+    "where": "line before (2.2.22): 'donne une décomposition en somme direct'",
+    "scan": "direct, no final e (checked at 1.6x)",
+    "tex": "(2.2.18) donne une décomposition en somme direct",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "décomposition en somme directe",
+    "note": "Agreement slip (somme is feminine; the line before (2.2.23) prints 'somme directe'). The TeX keeps the printed reading; the corrected layer already reads 'somme directe', without a comment or corrections.md entry.",
+})
+
+F.append({
+    "page": 265,
+    "where": "Remarque 2.2.24, last line: 'pour les couples (X̃,Δ) et (X,Δ)'",
+    "scan": "(X̃,Δ): tilde on the X only, none on the Δ (checked at 2.4x)",
+    "tex": "$(\\widetilde{X},\\Delta)$",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": None,
+    "corrected": "$(\\widetilde{X},\\widetilde{\\Delta})$",
+    "note": "Δ is not a subscheme of X̃; the sequence (2.2.25) on p. 266 is that of the couple (X̃,Δ̃) (H_c of X̃-Δ̃, X̃, Δ̃). The TeX keeps the printed reading. The corrected layer has (X̃,Δ̃), but its comment ('Réparations de transcription : espaces, accord et tilde sur le premier Delta') and corrections.md SGA7II-FR-XVIII-011 (classed transcription_repair) say the tilde is printed; the scan has none, so the entry corrects a misprint of the print. The same entry's 'accord' turns the printed 'notée' into 'notées'; the print's 'notée' agrees with 'cohomologie à supports propres', the thing denoted H_c^·, and is correct: review that change.",
+})
+
+# check every fix's old occurs exactly once in its page file and never touches a marker line
+ok = True
+for f in F:
+    t = (B / f"page_{f['page']}.tex").read_text(encoding="utf-8")
+    if f["fix"] is not None:
+        n = t.count(f["fix"]["old"])
+        if n != 1 or "%%%%%%%%%%" in f["fix"]["old"]:
+            ok = False
+        print(f["page"], "old count", n, repr(f["fix"]["old"][:50]))
+    # check the tex quote is present (for misprints)
+    if f["kind"] == "misprint_in_print":
+        q = f["tex"]
+        print(f["page"], "tex present", t.count(q), repr(q[:50]))
+
+OUT.write_text(json.dumps(F, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+print("written", OUT, len(F), "all unique" if ok else "PROBLEM")

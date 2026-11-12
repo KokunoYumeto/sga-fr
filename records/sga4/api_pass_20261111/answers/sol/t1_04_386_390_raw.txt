@@ -1,0 +1,29 @@
+{
+  "findings": [
+    {
+      "page": 389,
+      "where": "Définition 6.4.1, « si la famille des… »",
+      "scan": "la famille des foncteurs fibres associés",
+      "tex": "la famille des foncteur fibres associés",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "des foncteur fibres associés",
+        "new": "des foncteurs fibres associés"
+      },
+      "note": "Le scan porte bien le pluriel « foncteurs »."
+    },
+    {
+      "page": 389,
+      "where": "6.4.2, dernière phrase",
+      "scan": "Enfin, pour un intéressant théorème d'existence (dû à P. Deligne) de suffisamment de points, couvrant tous les cas rencontrés en géométrie algébrique.",
+      "tex": "géométrie algébrique\\sisi{.}{, voir \\hyperrefext[VI][VI.sec9]{9}.}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Enfin, pour un intéressant théorème d'existence (dû à P. Deligne) de suffisamment de points, couvrant tous les cas rencontrés en géométrie algébrique, voir \\hyperrefext[VI][VI.sec9]{9}.",
+      "note": "La phrase imprimée reste inachevée après « Enfin, pour… » : le renvoi final manque. La première branche de \\sisi reproduit fidèlement le scan ; la seconde corrige cette omission en ajoutant « voir VI 9 »."
+    }
+  ],
+  "coordinator": "386: 0/0; 387: 0/0; 388: 0/0; 389: 1/1; 390: 0/0 (normal/misprint)."
+}

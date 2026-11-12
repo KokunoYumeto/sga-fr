@@ -1,0 +1,293 @@
+[
+ {
+  "page": 111,
+  "where": "4.11, paragraph after the display: 'sa d-ième classe de Chern'",
+  "scan": "sa d-ième classe de Chern",
+  "tex": "sa $d$-<line break>ième classe de Chern",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "sa $d$-\nième",
+   "new": "sa $d$-ième"
+  },
+  "note": "The source line break after '$d$-' typesets as a space ('d- ième'); the print has the one word 'd-ième'."
+ },
+ {
+  "page": 111,
+  "where": "4.11, 'par la formule de Gauss-Bonnet (SGA 5 VII 4.9)'",
+  "scan": "Gauss-Bonnet",
+  "tex": "Gauss--Bonnet",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Gauss--Bonnet",
+   "new": "Gauss-Bonnet"
+  },
+  "note": "The print has a hyphen; the TeX adds an en dash."
+ },
+ {
+  "page": 111,
+  "where": "4.11, sentence after (4.11.3): 'caractéristique d'Euler-Poincaré'",
+  "scan": "d'Euler-Poincaré",
+  "tex": "d'Euler--Poincaré",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Euler--Poincaré",
+   "new": "Euler-Poincaré"
+  },
+  "note": "The print has a hyphen; the TeX adds an en dash."
+ },
+ {
+  "page": 111,
+  "where": "4.11, sentence after (4.11.3): '... de T^F_s pour s un point géométrique au-dessus de s'",
+  "scan": "de T^F_s pour s un point géométrique au-dessus de s (no bar on either s)",
+  "tex": "de $T_s^F$ pour $s$ un point géométrique au-dessus de $s$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "de $T_{\\bar s}^F$ pour $\\bar s$ un point géométrique au-dessus de $s$",
+  "note": "No bar is printed over the index s or the first s (the scan is clean there); a geometric point 's' above 's' must be s-bar. The TeX keeps the printed reading."
+ },
+ {
+  "page": 111,
+  "where": "4.11, end: '(loc.cit).'",
+  "scan": "au-dessus de s (loc.cit).",
+  "tex": "au-dessus de $s$ (loc. cit.).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(loc. cit.)",
+   "new": "(loc.cit)"
+  },
+  "note": "The print has no period after 'cit' (and no space after 'loc.'); the TeX adds them."
+ },
+ {
+  "page": 111,
+  "where": "4.12, 'Notons s_z ... (resp. t_Z ∈ Hom(L_{2z_2},L_{1z_1}))'",
+  "scan": "(resp. t_{\\bar Z} ∈ Hom(L_{2\\bar z_2},L_{1\\bar z_1})) — the index of t is a capital Z under the bar",
+  "tex": "(resp. $t_{\\bar z}\\in\\Hom(L_{2\\bar z_2},L_{1\\bar z_1})$)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "$t_{\\bar z}\\in",
+   "new": "$t_{\\bar Z}\\in"
+  },
+  "corrected": "$t_{\\bar z}\\in",
+  "note": "The index of t is typed at capital height (a capital Z), unlike the small z of s_{\\bar z} on the same line; the TeX silently corrects it."
+ },
+ {
+  "page": 111,
+  "where": "4.12, 'Notons encore ...': 'définie, au voisinage de a' (resp. a'') par c'_2'",
+  "scan": "au voisinage de a' (resp. a'') par c'_2 (resp. c''_1)",
+  "tex": "au voisinage de $a'$ (resp. $a''$), par $c_2'$ (resp. $c_1''$)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. $a''$), par",
+   "new": "(resp. $a''$) par"
+  },
+  "note": "No comma after '(resp. a'')' in the print; the TeX adds one."
+ },
+ {
+  "page": 111,
+  "where": "4.12, 'et (C'.C'')_z le terme local'",
+  "scan": "(C'.C'')_z — a typed baseline period between C' and C''",
+  "tex": "$(C'\\!\\cdot C'')_z$",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "$(C'\\!\\cdot C'')_z$",
+   "new": "$(C'.C'')_z$"
+  },
+  "note": "The print has a period, the TeX a centred dot (same on page 112, 4.12.1). Drop both if the typed period is treated as the typewriter's substitute for \\cdot."
+ },
+ {
+  "page": 112,
+  "where": "4.12, 'lisses). On a alors' before (4.12.1)",
+  "scan": "lisses). On a alors",
+  "tex": "lisses). On a alors:",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "On a alors:",
+   "new": "On a alors"
+  },
+  "note": "No colon in the print (only a faint speck at mid-height after 'alors'); the TeX adds one."
+ },
+ {
+  "page": 112,
+  "where": "(4.12.1)",
+  "scan": "< u,v >_z = (C'.C'')_z < s_z,t_z >  .",
+  "tex": "\\langle u,v\\rangle_z=(C'\\!\\cdot C'')_z\\langle s_{\\bar z},t_{\\bar z}\\rangle.",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "(C'\\!\\cdot C'')_z\\langle",
+   "new": "(C'.C'')_z\\langle"
+  },
+  "note": "Baseline period in the print, centred dot in the TeX (see page 111)."
+ },
+ {
+  "page": 112,
+  "where": "4.13, last paragraph: 'on obtient la formule de lefschetz requise dans ([13] 7.11)'",
+  "scan": "la formule de lefschetz requise",
+  "tex": "la formule de Lefschetz requise",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "formule de Lefschetz requise",
+   "new": "formule de lefschetz requise"
+  },
+  "corrected": "formule de Lefschetz requise",
+  "note": "The print types a small l; the TeX silently capitalizes it."
+ },
+ {
+  "page": 113,
+  "where": "top of page",
+  "scan": "Page 113 begins with the underlined heading '5. Compléments.'; page 112 ends with '... sera donnée dans III B .'",
+  "tex": "'\\section*{5. Compléments}' is the last line of page_112.tex, before the folio-113 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Move the folio-113 marker up so that it stands before '\\section*{5. Compléments}' (the blank lines after '\\end{statement}' stay on page 112)."
+ },
+ {
+  "page": 113,
+  "where": "5.1, first paragraph: 'dite duale de u'",
+  "scan": "dite duale de u — only 'duale' is underlined",
+  "tex": "dite \\emph{duale de $u$}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{duale de $u$}",
+   "new": "\\emph{duale} de $u$"
+  },
+  "note": "The underline covers 'duale' only."
+ },
+ {
+  "page": 113,
+  "where": "(5.1.2)",
+  "scan": "D : RHom(p^*_1L_1,p^!_2L_2) ⟶ RHom(p^*_2DL_2,p^!_1DL_1) — plain arrow, no tilde",
+  "tex": "D:\\uRHom(p_1^*L_1,p_2^!L_2)\\xrightarrow{\\sim}\\uRHom(p_2^*DL_2,p_1^!DL_1)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "p_2^!L_2)\\xrightarrow{\\sim}\\uRHom",
+   "new": "p_2^!L_2)\\longrightarrow\\uRHom"
+  },
+  "note": "No tilde over the arrow of 5.1.2 (clean scan); the TeX adds one. 5.1.5 does print a tilde."
+ },
+ {
+  "page": 113,
+  "where": "(5.1.3), bottom right vertex of the square",
+  "scan": "RHom(p^*_2DL_2,p^!_1DL_1   , — no closing parenthesis",
+  "tex": "& \\uRHom(p_2^*DL_2,p_1^!DL_1),",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "p_1^!DL_1),",
+   "new": "p_1^!DL_1,"
+  },
+  "corrected": "p_1^!DL_1),",
+  "note": "The print omits the closing parenthesis; the TeX silently supplies it."
+ },
+ {
+  "page": 113,
+  "where": "(5.1.5)",
+  "scan": "D : Hom(c^*_1L_1,c^!_2L_1) ⟶~ Hom(c^*_2DL_2,c^!_1DL_1) ,",
+  "tex": "D:\\Hom(c_1^*L_1,c_2^!L_1)\\xrightarrow{\\sim}\\Hom(c_2^*DL_2,c_1^!DL_1),",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "D:\\Hom(c_1^*L_1,c_2^!L_2)",
+  "note": "The print has c^!_2 L_1 where the correspondence from L_1 to L_2 needs c^!_2 L_2; the TeX keeps the printed reading."
+ },
+ {
+  "page": 114,
+  "where": "top of page",
+  "scan": "Page 114 begins 'les identifications de Dc^*_1 à c^!_1D ...'; page 113 ends '... application du foncteur D_X et'",
+  "tex": "'les' is the last word of page_113.tex ('du foncteur $D_X$ et les'); page_114.tex begins 'identifications de'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-114 marker belongs between 'et' and 'les' (end of page_113.tex)."
+ },
+ {
+  "page": 114,
+  "where": "heading 5.2",
+  "scan": "5.2 Composition de correspondances. — no period after the number",
+  "tex": "\\subsection*{5.2. Composition de correspondances}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "5.2. Composition",
+   "new": "5.2 Composition"
+  },
+  "note": "The print numbers this heading '5.2' without a period (unlike '5.1.')."
+ },
+ {
+  "page": 115,
+  "where": "top of page",
+  "scan": "Page 115 begins 'l'identification au second membre ...'; page 114 ends with the display (5.2.2)",
+  "tex": "the line \"l'%\" is the last line of page_114.tex; page_115.tex begins 'identification au second membre'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-115 marker belongs before the line \"l'%\" (end of page_114.tex)."
+ },
+ {
+  "page": 115,
+  "where": "first sentence: '(SGA 4 XVIII 3.1.12.2)), d'où un accouplement'",
+  "scan": "(SGA 4 XVIII 3.1.12.2)), d'où",
+  "tex": "(SGA~4~XVIII 3.1.12.2), d'où",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "3.1.12.2),",
+   "new": "3.1.12.2)),"
+  },
+  "corrected": "3.1.12.2),",
+  "note": "The print doubles the closing parenthesis; the TeX silently drops one."
+ },
+ {
+  "page": 115,
+  "where": "display after 'par composition de la flèche', second line",
+  "scan": "⊗ RHom(p^!_{23}p^*_{23,2}L_2,p^!_3L_3 — no closing parenthesis",
+  "tex": "\\uRHom(p_{23}^!p_{23,2}^*L_2,p_3^!L_3)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "p_3^!L_3)\n\\]",
+   "new": "p_3^!L_3\n\\]"
+  },
+  "corrected": "p_3^!L_3)",
+  "note": "The print omits the closing parenthesis at the end of the display; the TeX silently supplies it."
+ },
+ {
+  "page": 115,
+  "where": "'de la flèche définie par la flèche de changement de base ...'",
+  "scan": "p^*_{12}p^!_{12,2}L_2 ⟶ p^!_{23}p^*_{23,2}L_2",
+  "tex": "$p_{12}^!p_{12,2}^*L_2\\to p_{23}^!p_{23,2}^*L_2$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "base $p_{12}^!p_{12,2}^*L_2",
+   "new": "base $p_{12}^*p_{12,2}^!L_2"
+  },
+  "note": "The TeX swaps * and ! on the source of the base-change arrow; the print has p^*_{12}p^!_{12,2}L_2, as in the display above."
+ },
+ {
+  "page": 115,
+  "where": "before (5.2.5): 'd'où un accouplement \" composition\" (u,v) ⟶ vu :'",
+  "scan": "(u,v) ⟶ vu : — plain arrow",
+  "tex": "$(u,v)\\mapsto vu$:",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$(u,v)\\mapsto vu$:",
+   "new": "$(u,v)\\longrightarrow vu$:"
+  },
+  "note": "Plain arrow here, without the tail bar; the earlier 'que l'on notera (u,v) ⟼ vu' does print a maps-to arrow."
+ }
+]

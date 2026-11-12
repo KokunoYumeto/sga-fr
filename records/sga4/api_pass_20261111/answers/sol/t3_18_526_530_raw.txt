@@ -1,0 +1,99 @@
+{
+  "findings": [
+    {
+      "page": 526,
+      "where": "Lemme 1.4.13 (I), conclusion",
+      "scan": "\\Pp\\simeq\\ch(K)",
+      "tex": "\\Pp=\\ch(K)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Pp=\\ch(K)",
+        "new": "\\Pp\\simeq\\ch(K)"
+      },
+      "note": "The print asserts an equivalence, not equality."
+    },
+    {
+      "page": 527,
+      "where": "(d), coordinates of k^0",
+      "scan": "de coordonnées $K_i$",
+      "tex": "de coordonnées $K_{i}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "k_{i}",
+      "note": "The coordinates are the sections k_i chosen in (c). The printed capital K_i is a typo retained by TeX."
+    },
+    {
+      "page": 528,
+      "where": "Definition of {K'}^{-1}, after (f)",
+      "scan": "{K'}^{-1}={K'}^{-1}\\times_{K^{0}}{K'}^{0}",
+      "tex": "{K'}^{-1}=\\fprod{K^{-1}}{{K'}^{0}}{K^{0}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "{K'}^{-1}=\\fprod{K^{-1}}{{K'}^{0}}{K^{0}}",
+      "note": "The print mistakenly primes the first factor, making the definition circular. TeX silently corrects it to K^{-1}."
+    },
+    {
+      "page": 528,
+      "where": "(i), last summand",
+      "scan": "\\ell^{-1}(t_{1};x_{2},y_{2})",
+      "tex": "\\ell^{-1}(t_{2};x_{2},y_{2})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\ell^{-1}(t_{2};x_{2},y_{2})",
+      "note": "The print repeats t_1 in the second summand, where t_2 is required. TeX silently corrects the index."
+    },
+    {
+      "page": 528,
+      "where": "End of the proof of 1.4.13 (II)",
+      "scan": "F\\circ\\ch(k)\\simeq\\ch(\\ell)",
+      "tex": "F\\circ \\ch(k)=\\ch(\\ell)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "F\\circ \\ch(k)=\\ch(\\ell)",
+        "new": "F\\circ \\ch(k)\\simeq\\ch(\\ell)"
+      },
+      "note": "The print has an isomorphism sign, not an equality sign."
+    },
+    {
+      "page": 528,
+      "where": "1.4.14, first occurrence of the category name",
+      "scan": "\\ch^{\\flat}(\\Ss)",
+      "tex": "\\Ch^{\\flat}(\\Ss)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Ch^{\\flat}(\\Ss)",
+      "note": "The print has a lowercase c here, inconsistently with Ch in the following paragraph and proposition on p. 529. TeX silently corrects the initial letter."
+    },
+    {
+      "page": 530,
+      "where": "Construction 1.4.20 (b), source and target of k_i",
+      "scan": "k_i:\\ch(K'_i)\\longrightarrow\\ch(K_i)",
+      "tex": "k_{i}:\\ch(K'_{i})\\rightarrow \\ch(K_{i})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "k_{i}:K'_{i}\\rightarrow K_{i}",
+      "note": "TeX retains the printed error. The quasi-isomorphisms k_i must be maps of complexes; the subsequent expression ch(k_i) requires this."
+    },
+    {
+      "page": 530,
+      "where": "Construction 1.4.20 (b), before the final formula",
+      "scan": "tel que",
+      "tex": "tels que",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "tels que",
+        "new": "tel que"
+      },
+      "note": "The print has singular « tel que » after the morphism f; TeX pluralizes it."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 526: 1/0; 527: 0/1; 528: 1/3; 529: 0/0; 530: 1/1."
+}

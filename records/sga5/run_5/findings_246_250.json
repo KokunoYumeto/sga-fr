@@ -1,0 +1,726 @@
+[
+ {
+  "page": 246,
+  "where": "first paragraph, 'les limites des systèmes projectifs essentiellement constants'",
+  "scan": "projectifs essentiellement constants (underlined)",
+  "tex": "projectifs essentiellement constants",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "projectifs essentiellement constants",
+   "new": "projectifs \\emph{essentiellement constants}"
+  },
+  "note": "Exposé V: the TeX has no underline markup; \\emph as in the logged fixes of pp. 204-205 and 236-240."
+ },
+ {
+  "page": 246,
+  "where": "paragraph 'Supposant toujours que X vérifie (ML)'",
+  "scan": "new indented paragraph",
+  "tex": "runs on after the display",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nSupposant toujours",
+   "new": "\\]\n\nSupposant toujours"
+  },
+  "note": "Paragraph break of the print."
+ },
+ {
+  "page": 246,
+  "where": "'B_r^{pq}(X_α) = B_{r+1}^{pq}(X_α) dès que r > p (cf. b)), on a une suite'",
+  "scan": "B_r^pq(X_α) = B_r+1^pq(X_α)  dès que  r > p  (cf. b )) , on a une suite de monomorphismes",
+  "tex": "display B_r^{pq}(X_\\alpha)=B_{r+1}^{pq}(X_\\alpha)\\qquad(r>p),",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\[\nB_r^{pq}(X_\\alpha)=B_{r+1}^{pq}(X_\\alpha)\\qquad(r>p),\n\\]",
+   "new": "\\(B_r^{pq}(X_\\alpha)=B_{r+1}^{pq}(X_\\alpha)\\) dès que \\(r>p\\) (cf. b)),"
+  },
+  "note": "The TeX leaves out 'dès que' and '(cf. b))' and writes '(r>p)' instead; the print runs the formula into the text, as the fix does."
+ },
+ {
+  "page": 246,
+  "where": "display (S)",
+  "scan": "..⊂ ℰ_r^pq(X) ⊂ .......... ℰ_p+2^pq(X) ⊂ ℰ_p+1^pq(X) .",
+  "tex": "\\cdots\\subset\\mathcal E_r^{pq}(X)\\subset\\cdots\\subset\\mathcal E_{p+2}^{pq}(X)\\subset...",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subset\\cdots\\subset\\mathcal E_{p+2}",
+   "new": "\\subset\\cdots\\mathcal E_{p+2}"
+  },
+  "note": "The print has no inclusion sign between the row of dots and ℰ_{p+2} (crop p246_S.png)."
+ },
+ {
+  "page": 246,
+  "where": "paragraph 'Supposons désormais X strict.'",
+  "scan": "new indented paragraph",
+  "tex": "runs on after (S)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nSupposons désormais",
+   "new": "\\end{equation}\n\nSupposons désormais"
+  },
+  "note": "Paragraph break of the print."
+ },
+ {
+  "page": 246,
+  "where": "'Supposons désormais X strict.'",
+  "scan": "strict (underlined)",
+  "tex": "strict",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(X\\) strict.",
+   "new": "\\(X\\) \\emph{strict}."
+  },
+  "note": ""
+ },
+ {
+  "page": 246,
+  "where": "display Z_r^{pq}(X_n) = Im[...]",
+  "scan": "no punctuation after ']'",
+  "tex": "\\right],",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\right],\n\\]\n\\[",
+   "new": "\\right]\n\\]\n\\["
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 246,
+  "where": "display B_r^{pq}(X_n) = Im[...]",
+  "scan": "no punctuation after ']'",
+  "tex": "\\right],",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\right],\n\\]\nmontrent",
+   "new": "\\right]\n\\]\nmontrent"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 246,
+  "where": "display (d_1), the bracket",
+  "scan": "a square bracket [ before the two lines",
+  "tex": "\\left\\{",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\left\\{",
+   "new": "\\left["
+  },
+  "note": "As (d_2) on p. 247; the \\right. stays."
+ },
+ {
+  "page": 246,
+  "where": "display (d_1), end of the first line 'pour m ≥ n ≥ p'",
+  "scan": "no punctuation",
+  "tex": "p,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "m\\ge n\\ge p,\\\\",
+   "new": "m\\ge n\\ge p\\\\"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 246,
+  "where": "display (d_1), end of the second line 'pour m ≥ n ≥ p+r-1'",
+  "scan": "no punctuation",
+  "tex": "p+r-1,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "p+r-1,\n",
+   "new": "p+r-1\n"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 246,
+  "where": "'est un isomorphisme.' after the display ℰ_r^{pq}(X) -> E_r^{pq}(X_{p+r-1})",
+  "scan": "isomorphisme (underlined)",
+  "tex": "isomorphisme",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est un isomorphisme",
+   "new": "est un \\emph{isomorphisme}"
+  },
+  "note": ""
+ },
+ {
+  "page": 246,
+  "where": "paragraph 'Par ailleurs, il résulte de b) que'",
+  "scan": "new indented paragraph",
+  "tex": "runs on after 'est un isomorphisme.'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": ". Par ailleurs",
+   "new": ".\n\nPar ailleurs"
+  },
+  "note": "Paragraph break of the print."
+ },
+ {
+  "page": 247,
+  "where": "display (d_2), the bracket",
+  "scan": "a square bracket [ before the two lines",
+  "tex": "\\left\\{",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\left\\{",
+   "new": "\\left["
+  },
+  "note": "As (d_1) on p. 246; the \\right. stays."
+ },
+ {
+  "page": 247,
+  "where": "display (d_2), second line",
+  "scan": "et   B_∞^pq(X_p+r-1) = B_r^pq(X_p+r-1)   (r > p)",
+  "tex": "B_\\infty^{pq}(X_{p+r-1})=B_r^{pq}(X_{p+r-1})&(r>p).",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\\\[3pt]\nB_\\infty^{pq}",
+   "new": "\\\\[3pt]\n\\text{et}\\quad B_\\infty^{pq}"
+  },
+  "note": "The print has 'et' before the second line of (d_2)."
+ },
+ {
+  "page": 247,
+  "where": "display (d_2), end of the first line '(r ≥ 1)'",
+  "scan": "no punctuation",
+  "tex": "(r\\ge1),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(r\\ge1),",
+   "new": "(r\\ge1)"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 247,
+  "where": "display (d_2), end of the second line '(r > p)'",
+  "scan": "no punctuation",
+  "tex": "(r>p).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(r>p).\n\\end{array}",
+   "new": "(r>p)\n\\end{array}"
+  },
+  "note": "The TeX adds a full stop."
+ },
+ {
+  "page": 247,
+  "where": "'Ceci permet de définir, pour tout r, un épimorphisme canonique'",
+  "scan": "tout and épimorphisme underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "pour tout \\(r\\), un épimorphisme canonique",
+   "new": "pour \\emph{tout} \\(r\\), un \\emph{épimorphisme} canonique"
+  },
+  "note": ""
+ },
+ {
+  "page": 247,
+  "where": "'qui est un isomorphisme lorsque r > p'",
+  "scan": "isomorphisme lorsque (underlined)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "qui est un isomorphisme lorsque",
+   "new": "qui est un \\emph{isomorphisme lorsque}"
+  },
+  "note": ""
+ },
+ {
+  "page": 247,
+  "where": "'(par exemple a = p+1 convient) , de sorte que'",
+  "scan": "(par exemple a = p+1 convient) ,",
+  "tex": "par exemple \\(a=p+1\\) convient,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "par exemple \\(a=p+1\\) convient,",
+   "new": "(par exemple \\(a=p+1\\) convient),"
+  },
+  "note": "The print's parentheses."
+ },
+ {
+  "page": 247,
+  "where": "diagram (d_3), upper arrow",
+  "scan": "θ_s^pq above the arrow, nothing below it",
+  "tex": "\\xrightarrow[\\epi]{\\theta_s^{pq}}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow[\\epi]{\\theta_s^{pq}}",
+   "new": "\\xrightarrow{\\theta_s^{pq}}"
+  },
+  "note": "No 'épi' under the arrows of (d_3) on p. 247 (crop p247_d3a.png); the label belongs to the diagram of p. 249."
+ },
+ {
+  "page": 247,
+  "where": "diagram (d_3), lower arrow",
+  "scan": "θ_r^pq above the arrow, nothing below it",
+  "tex": "\\xrightarrow[\\epi]{\\theta_r^{pq}}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow[\\epi]{\\theta_r^{pq}}",
+   "new": "\\xrightarrow{\\theta_r^{pq}}"
+  },
+  "note": "As the upper arrow."
+ },
+ {
+  "page": 247,
+  "where": "diagram (d_3), left vertical arrow",
+  "scan": "hooked (inclusion) arrow pointing down",
+  "tex": "\\downarrow",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\downarrow&&\\downarrow\\can",
+   "new": "\\rotatebox[origin=c]{-90}{$\\hookrightarrow$}&&\\downarrow\\can"
+  },
+  "note": "The left arrow is drawn with a hook at the top (crop p247_d3a.png), the inclusion of (S bis); graphicx is loaded in s5.tex. The right arrow 'can' is plain, as in the TeX."
+ },
+ {
+  "page": 247,
+  "where": "heading A.3",
+  "scan": "A.3. Une variante du théorème de Shih. (title underlined)",
+  "tex": "\\subsubsection*{A.3. Une variante du théorème de Shih}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "théorème de Shih}",
+   "new": "théorème de Shih.}"
+  },
+  "note": "Underlined title: the print's full stop."
+ },
+ {
+  "page": 247,
+  "where": "A.3, 'par des idéaux F^i(S) (i ≥ 0) et opérant sur X'",
+  "scan": "(i ≥ 0)  et opérant",
+  "tex": "\\((i\\ge0)\\), et",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\((i\\ge0)\\), et",
+   "new": "\\((i\\ge0)\\) et"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 247,
+  "where": "'Des généralités de A 1 résulte que'",
+  "scan": "A 1 (no full stop)",
+  "tex": "A.1",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "A.1 résulte",
+   "new": "A 1 résulte"
+  },
+  "corrected": "A.1 résulte",
+  "note": "The typescript has 'A 1' without the full stop (crop p247_A1zoom.png; p. 250 has 'A.2. a)'). The TeX silently corrects; the edit restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 247,
+  "where": "'En particulier pour tout entier n :'",
+  "scan": "En particulier pour tout entier n :",
+  "tex": "En particulier, pour tout entier \\(n\\):",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "En particulier, pour tout entier",
+   "new": "En particulier pour tout entier"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 247,
+  "where": "'est canoniquement muni d'une structure de (gr (S),D)-module gradué' (last lines of the printed page)",
+  "scan": "(gr (S),𝒟) : a gap after gr, no raised dot",
+  "tex": "\\((\\gr^\\bullet(S),\\mathcal D)\\)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\gr^\\bullet(S)",
+   "new": "\\gr(S)"
+  },
+  "corrected": "\\gr^\\bullet(S)",
+  "note": "p. 247 prints 'gr (S)' with no raised dot (crop p247_grzoom.png, no trace of one); the repeat of the sentence typed at the top of p. 248 has gr•(S). Typing omission; the TeX silently corrects. The edit restores the printed reading (diplomatic layer only); it must be applied before the repeat insertion below, whose new text also contains \\gr^\\bullet(S) (list order)."
+ },
+ {
+  "page": 247,
+  "where": "'Il en est de même par passage à la limite pour :' (end of the printed page)",
+  "scan": "pour :",
+  "tex": "pour",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "limite pour\n",
+   "new": "limite pour:\n"
+  },
+  "note": "The print's colon."
+ },
+ {
+  "page": 247,
+  "where": "top of p. 248, printed repeat of the end of p. 247 (text now under the folio-247 marker)",
+  "scan": "p. 248 opens with E_r^(n)(X) = (E_r^p,q(X))_p+q=n / est canoniquement muni d'une structure de (gr•(S),𝒟) - module gradué. Il en est de même par passage à la limite pour : / ℰ_r^(n)(X) = ...",
+  "tex": "the passage once (p. 247), then the ℰ display",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\[\n\\mathcal E_r^{(n)}(X)=",
+   "new": "\\[\nE^{(n)}_r(X)=\\bigl(E_r^{p,q}(X)\\bigr)_{p+q=n}\n\\]\nest canoniquement muni d'une structure de \\((\\gr^\\bullet(S),\\mathcal D)\\)-module gradué. Il en est de même par passage à la limite pour:\n\\[\n\\mathcal E_r^{(n)}(X)="
+  },
+  "corrected": "\\[\n\\mathcal E_r^{(n)}(X)=",
+  "note": "The typescript repeats at the top of p. 248 the last display and sentence of p. 247 (this time with gr•(S)); the TeX gives them once. The edit inserts the printed repeat before the ℰ display (diplomatic layer only; the corrected layer keeps the passage once). The display is written E^{(n)}_r (same output) so that the folio-248 marker can be moved before it: see the marker finding of p. 248. Apply in list order, after the 'gr (S)' misprint fix above."
+ },
+ {
+  "page": 247,
+  "where": "'Par suite le gradué strict grs (X) est' (printed on p. 248, under the folio-247 marker in the TeX)",
+  "scan": "Par suite le gradué",
+  "tex": "Par suite, le gradué",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Par suite, le gradué",
+   "new": "Par suite le gradué"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 248,
+  "where": "top of the page",
+  "scan": "see note",
+  "tex": "see note",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 248 begins with a typed repeat of the end of p. 247: the display E_r^{(n)}(X) = (E_r^{p,q}(X))_{p+q=n} and 'est canoniquement muni d'une structure de (gr•(S),D)-module gradué. Il en est de même par passage à la limite pour :' (the TeX gives them once, on p. 247; the misprint record filed under p. 247 inserts the repeat in the diplomatic layer only). Then follow the display ℰ_r^{(n)}(X) = ... and 'L'anneau S, ... Par suite le gradué strict grs (X) est', which the TeX has under the folio-247 marker. Exact fix, after this batch has been processed (Git Bash quoting): (1) python -I move_marker.py 5 248 $'\\\\[\\nE^{(n)}_r(X)' --before: the anchor exists only in the inserted repeat (its display is written E^{(n)}_r for this purpose), so this puts the diplomatic marker on its own line just before the repeat and finds nothing in the corrected layer (nor anywhere before the batch is processed); (2) python -I move_marker.py 5 248 $'\\\\[\\n\\\\mathcal E_r^{(n)}(X)' --before: puts the corrected layer's marker just before the ℰ display and finds nothing before the moved diplomatic marker. Both orders of (1) and (2) give the same result (simulated in memory on both layers of the live s5.tex). Text not moved."
+ },
+ {
+  "page": 248,
+  "where": "'le gradué strict grs•T^n(X) est canoniquement muni'",
+  "scan": "grs•T^n(X) (raised dot)",
+  "tex": "\\(\\grs\\,T^n(X)\\)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "strict \\(\\grs\\,T^n(X)\\)",
+   "new": "strict \\(\\grs^\\bullet T^n(X)\\)"
+  },
+  "note": "The raised dot of the print, as in Théorème A.3 (ii) and on p. 250; \\grs^\\bullet as in the hypothesis of A.3. In 'grs (X)' two lines above, a faint speck stands where a raised dot would be, too faint to read as one (crop p248_grszoom.png): the TeX's \\grs(X) is left as it is."
+ },
+ {
+  "page": 248,
+  "where": "Théorème A.3, first sentence",
+  "scan": "Supposons que pour un entier (underlined)  n  les (underlined)  (gr•(S),𝒟) - modules gradués (underlined)",
+  "tex": "Supposons que, pour un entier \\(n\\), les ...-modules gradués",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Supposons que, pour un entier \\(n\\), les \\((\\gr^\\bullet(S),\\mathcal D)\\)-modules gradués",
+   "new": "\\emph{Supposons que pour un entier} \\(n\\) \\emph{les} \\((\\gr^\\bullet(S),\\mathcal D)\\)-\\emph{modules gradués}"
+  },
+  "note": "The statement's underline (Exposé V, \\emph); the same edit removes the two commas the TeX adds."
+ },
+ {
+  "page": 248,
+  "where": "Théorème A.3, display, first term",
+  "scan": "T^n(grs•(X))",
+  "tex": "T^n(\\grs^\\bullet X)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "T^n(\\grs^\\bullet X)",
+   "new": "T^n(\\grs^\\bullet(X))"
+  },
+  "note": "The print has parentheses around X."
+ },
+ {
+  "page": 248,
+  "where": "Théorème A.3, display, second term",
+  "scan": "T^n-1(grs•(X))",
+  "tex": "T^{n-1}(\\grs^\\bullet X)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "T^{n-1}(\\grs^\\bullet X)",
+   "new": "T^{n-1}(\\grs^\\bullet(X))"
+  },
+  "note": "The print has parentheses around X."
+ },
+ {
+  "page": 248,
+  "where": "Théorème A.3, 'soient noethériens. Alors :'",
+  "scan": "soient noethériens. Alors (underlined) :",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "soient noethériens. Alors:",
+   "new": "\\emph{soient noethériens. Alors}:"
+  },
+  "note": ""
+ },
+ {
+  "page": 248,
+  "where": "Théorème A.3 (i)",
+  "scan": "(i)  T^n(X)  vérifie (MLAR) ,  (vérifie (MLAR) underlined)",
+  "tex": "\\(T^n(X)\\) vérifie (MLAR);",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "vérifie (MLAR);",
+   "new": "\\emph{vérifie (MLAR)},"
+  },
+  "note": "Comma, not semicolon, in the print; the same edit sets the statement's underline."
+ },
+ {
+  "page": 248,
+  "where": "Théorème A.3 (ii), 'grs•T^n(X)'",
+  "scan": "grs•T^n(X) (raised dot)",
+  "tex": "\\(\\grs\\,T^n(X)\\)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item \\(\\grs\\,T^n(X)\\)",
+   "new": "\\item \\(\\grs^\\bullet T^n(X)\\)"
+  },
+  "note": "As in the paragraph before the theorem."
+ },
+ {
+  "page": 248,
+  "where": "Théorème A.3 (ii), 'est un (gr•(S),D)-module noethérien.'",
+  "scan": "est un (underlined) (gr•(S),𝒟) - module noethérien. (underlined)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est un \\((\\gr^\\bullet(S),\\mathcal D)\\)-module noethérien.",
+   "new": "\\emph{est un} \\((\\gr^\\bullet(S),\\mathcal D)\\)-\\emph{module noethérien}."
+  },
+  "note": ""
+ },
+ {
+  "page": 248,
+  "where": "proof of A.3, after the label",
+  "scan": "'Preuve :' on a line of its own, then 'i) Pour tout couple' as an indented paragraph",
+  "tex": "label run into 'i) Pour tout couple'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\begin{prooftext}\ni) Pour",
+   "new": "\\begin{prooftext}\n\ni) Pour"
+  },
+  "note": "Paragraph break of the print after the label (as 'Exemples :' p. 228); the environment prints 'Preuve :'."
+ },
+ {
+  "page": 248,
+  "where": "proof of A.3 i), 'de sous-(gr•(S),D- modules gradués'",
+  "scan": "sous-(gr•(S),𝒟- modules (no closing parenthesis)",
+  "tex": "sous-\\((\\gr^\\bullet(S),\\mathcal D)\\)-modules",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "de sous-\\((\\gr^\\bullet(S),\\mathcal D)\\)-modules",
+   "new": "de sous-\\((\\gr^\\bullet(S),\\mathcal D\\)-modules"
+  },
+  "corrected": "de sous-\\((\\gr^\\bullet(S),\\mathcal D)\\)-modules",
+  "note": "The typescript drops the parenthesis after D (crop p248_sous.png). The TeX silently corrects; the edit restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 248,
+  "where": "proof of A.3 i), 'Utilisant les fait que'",
+  "scan": "Utilisant les fait que",
+  "tex": "Utilisant le fait que",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Utilisant le fait",
+   "new": "Utilisant les fait"
+  },
+  "corrected": "Utilisant le fait",
+  "note": "Typing slip ('les' for 'le'; crop p248_sous.png). The TeX silently corrects; the edit restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 249,
+  "where": "top of the page",
+  "scan": "see note",
+  "tex": "see note",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 249 really begins at the display '\\[' / '\\bigl[\\mathcal B_r^{(n)}(X)\\bigr]_{r\\in\\mathbb N} et ...' after 'on en déduit que les suites' (end of page_248.tex); 'sont stationnaires.' and the 'Il' just above the marker are also printed on p. 249. Exact fix: python -I move_marker.py 5 249 '\\[' --before (the last '\\[' before the marker opens this display; run it once; simulated in memory on both layers of the live s5.tex after this batch). Text not moved."
+ },
+ {
+  "page": 249,
+  "where": "'sont nulles. Autrement dit les monomorphismes'",
+  "scan": "Autrement dit les monomorphismes",
+  "tex": "Autrement dit, les monomorphismes",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Autrement dit, les monomorphismes",
+   "new": "Autrement dit les monomorphismes"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 249,
+  "where": "'sont en fait des isomorphismes.'",
+  "scan": "isomorphismes (underlined)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "sont en fait des isomorphismes.",
+   "new": "sont en fait des \\emph{isomorphismes}."
+  },
+  "note": ""
+ },
+ {
+  "page": 249,
+  "where": "diagram, upper arrow, label below",
+  "scan": "épi",
+  "tex": "\\epi (\\operatorname{epi}: 'epi')",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow[\\epi]{\\theta_s^{pq}}",
+   "new": "\\xrightarrow[\\text{épi}]{\\theta_s^{pq}}"
+  },
+  "note": "The print writes 'épi' with the accent (crop p249_diag.png). Once the p. 247 labels are removed, \\epi is used only on this page, so redefining the macro would do the same."
+ },
+ {
+  "page": 249,
+  "where": "diagram, lower arrow, label below",
+  "scan": "épi",
+  "tex": "\\epi (\\operatorname{epi}: 'epi')",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow[\\epi]{\\theta_r^{pq}}",
+   "new": "\\xrightarrow[\\text{épi}]{\\theta_r^{pq}}"
+  },
+  "note": "As the upper arrow."
+ },
+ {
+  "page": 249,
+  "where": "diagram, left vertical arrow",
+  "scan": "≀↓ (vertical tilde beside the arrow)",
+  "tex": "\\downarrow\\sim",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\downarrow\\sim&&\\downarrow",
+   "new": "\\wr\\downarrow&&\\downarrow"
+  },
+  "note": "The isomorphism mark is a vertical tilde, set to the left of the arrow (crop p249_diag.png); s5.tex writes this sign \\wr elsewhere (\\uparrow\\wr)."
+ },
+ {
+  "page": 249,
+  "where": "display E_∞^{pq}(X_{p+s-1}) -> E_∞^{pq}(X_{p+r-1})",
+  "scan": "no punctuation",
+  "tex": "comma at the end",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "E_\\infty^{pq}(X_{p+r-1}),\n\\]",
+   "new": "E_\\infty^{pq}(X_{p+r-1})\n\\]"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 249,
+  "where": "'un monomorphisme (cf. a)) est un épimorphisme'",
+  "scan": "(cf. a))  est un",
+  "tex": "(cf. a)), est un",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(cf. a)),",
+   "new": "(cf. a))"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 249,
+  "where": "display r -> [⊕_p gr^p T^n(X_{p+r})]_{r≥1}",
+  "scan": "plain arrow ⟶",
+  "tex": "\\longmapsto",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "r\\longmapsto",
+   "new": "r\\longrightarrow"
+  },
+  "note": "The print draws a plain arrow."
+ },
+ {
+  "page": 249,
+  "where": "'donc T^n(X) vérifie (MLAR) d'après (4.1.3).'",
+  "scan": "(MLAR)  d'après",
+  "tex": "(MLAR), d'après",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(MLAR), d'après",
+   "new": "(MLAR) d'après"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 249,
+  "where": "ii), 'les \"limites\" des divers systèmes projectifs'",
+  "scan": "les\"limites\" (straight double quotes)",
+  "tex": "les «limites»",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "«limites»",
+   "new": "``limites''"
+  },
+  "note": "The print's straight quotes, written ``...'' in Exposé V (as the p. 240 fix); the guillemets are not the print's."
+ },
+ {
+  "page": 250,
+  "where": "display ℰ_∞^{(n)}(X) = grs• T^n(X) .",
+  "scan": "grs• T^n(X) (raised dot)",
+  "tex": "\\grs\\,T^n(X)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\grs\\,T^n(X).",
+   "new": "=\\grs^\\bullet T^n(X)."
+  },
+  "note": "The raised dot of the print."
+ },
+ {
+  "page": 250,
+  "where": "end of the page / start of Exposé VI",
+  "scan": "see note",
+  "tex": "see note",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 250 ends with the display ℰ_∞^{(n)}(X) = grs•T^n(X) . (the rest of the page is blank). In the page file '\\section*{Exposé VI}' and '\\begin{center}' (printed on p. 251) stood under the folio-250 marker; the live s5.tex already has the folio-251 marker on its own line before '\\section*{EXPOSÉ VI}' (batch 251-255): no action. Do not run a '--before' move for this marker now: with the anchor '\\section*{Expos' it would go back to Exposé III B."
+ }
+]

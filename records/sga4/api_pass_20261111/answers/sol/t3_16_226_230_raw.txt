@@ -1,0 +1,74 @@
+{
+  "findings": [
+    {
+      "page": 228,
+      "where": "Démonstration de 3.7, début du cas c=1",
+      "scan": "Traitons d'abord le cas",
+      "tex": "Traitions d'abord le cas",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Traitions",
+        "new": "Traitons"
+      },
+      "note": "Le TeX ajoute un i."
+    },
+    {
+      "page": 228,
+      "where": "Dernière égalité, après « enfin »",
+      "scan": "\\RR^{p}f_{\\ast}j_{\\ast}(F|U)=\\RR^{p}f_{\\ast}(F)",
+      "tex": "\\sisi{\\RR}{R}^{p}f_{\\ast}j_{\\ast}(F|U)=\\sisi{\\RR}{R}^{p}f_{\\ast}(F)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{p}f_{\\ast}j_{\\ast}(F|U)=R^{p}f_{\\ast}(F)",
+      "note": "L'imprimé emploie deux R doublement barrés au lieu du R des foncteurs dérivés. Les deux premiers arguments des \\sisi reproduisent bien l'imprimé; l'édition les corrige en R."
+    },
+    {
+      "page": 229,
+      "where": "Phrase suivant le diagramme triangulaire",
+      "scan": "où chaque couple est un S-couple lisse",
+      "tex": "où couple est un $S$-couple lisse",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "où couple est",
+        "new": "où chaque couple est"
+      },
+      "note": "Le mot « chaque » manque dans le TeX."
+    },
+    {
+      "page": 229,
+      "where": "Raccord des pages 229 et 230, dernière ligne du TeX fourni",
+      "scan": "La p. 229 finit par « est nul si »; la p. 230 commence par $(p,q)\\neq(2c-2,2)$.",
+      "tex": "La coupe de la p. 229 contient déjà $(p,q)\\neq; celle de la p. 230 commence à (2c-2,2)$.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le fragment $(p,q)\\neq de la ligne source 868 appartient à la p. 230, contrairement aux indications des commentaires de coupe. Corriger les coupes seulement, sans déplacer le texte du source."
+    },
+    {
+      "page": 230,
+      "where": "Fin de la démonstration de 3.7, première phrase",
+      "scan": "u^{\\ast}w^{\\ast}(F)",
+      "tex": "u^{\\ast}w^{\\ast}(F)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "u^{\\ast}v^{\\ast}(F)",
+      "note": "L'imprimé porte w, conservé par le TeX. Le morphisme Z vers X est nommé v dans le diagramme et dans le calcul précédent."
+    },
+    {
+      "page": 230,
+      "where": "Démonstration de 3.8, second argument du Hom dans le deuxième affichage",
+      "scan": "H^{2c}_Y(F), avec H non souligné",
+      "tex": "H^{2c}_Y(F)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\HH^{2c}_Y(F)",
+      "note": "L'imprimé omet ici le soulignement qui distingue le faisceau de cohomologie, alors qu'il le donne au premier argument du Hom. Le TeX conserve cette omission; il s'agit du faisceau figurant dans la cible de l'homomorphisme précédent."
+    }
+  ],
+  "coordinator": "226: 0/0; 227: 0/0; 228: 1/1; 229: 2/0; 230: 0/2 (normal/misprint, marker inclus dans normal).\nRaccord 229/230 : recouper après « est nul si »; $(p,q)\\neq$ appartient au début de la p. 230 (lignes source 868–869), sans modification du source."
+}

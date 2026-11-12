@@ -1,0 +1,138 @@
+[
+ {
+  "page": 406,
+  "where": "Premier paragraphe, propriété du préfaisceau",
+  "scan": "transformant somme en produits",
+  "tex": "transformant somme en produits",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "transformant sommes en produits",
+  "note": "Il manque le s de « sommes » dans l'imprimé. Le TeX conserve cette coquille."
+ },
+ {
+  "page": 406,
+  "where": "Fin du premier paragraphe",
+  "scan": "la forme annoncée pour le terme initial",
+  "tex": "la forme annoncés pour le terme initial",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "annoncés",
+   "new": "annoncée"
+  },
+  "note": "L'imprimé porte bien « annoncée »."
+ },
+ {
+  "page": 407,
+  "where": "Démonstration de 8.6, première mention de la clôture séparable",
+  "scan": "une clôture séparable $k(y)=k(\\bar{y})$ de $k(y)$",
+  "tex": "une clôture séparable $k(y)=k(\\bar{y})$ de $k(y)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "une clôture séparable $\\overline{k(y)}=k(\\bar{y})$ de $k(y)$",
+  "note": "La barre manque sur le premier k(y), qui désigne la clôture séparable. Le TeX conserve cette omission."
+ },
+ {
+  "page": 407,
+  "where": "Démonstration de 8.6, définition de X_0",
+  "scan": "$X_{0}=X\\times_{Y_{0}}Y$",
+  "tex": "$X_{0}=\\fprod{X}{Y}{Y_{0}}\\simeq \\Spec (k(\\bar{y}))$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$X_{0}=\\fprod{X}{Y_{0}}{Y}$",
+  "note": "L'imprimé intervertit la base Y et le facteur Y_0 du produit fibré. Le TeX conserve cette coquille."
+ },
+ {
+  "page": 408,
+  "where": "Après la proposition 9.1, introduction du diagramme (*)",
+  "scan": "pour deux faisceaux F, G sur Y",
+  "tex": "pour deux faisceaux $F$, $G$ sur $Y$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "pour deux faisceaux $F$, $G$ sur $X$",
+  "note": "Les faisceaux sont sur X, cible du morphisme de la proposition; Y est une coquille de l'imprimé conservée par le TeX."
+ },
+ {
+  "page": 409,
+  "where": "Premier mot de la page, suite du lemme 9.3",
+  "scan": "X, et définissons de façon analogue",
+  "tex": "\\sisi{$X$}{$F$},\\pageoriginale  et",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$F$",
+  "note": "Il s'agit des sous-faisceaux de F, non de X. Le premier argument de \\sisi reproduit correctement la coquille; l'édition la corrige dans le second."
+ },
+ {
+  "page": 409,
+  "where": "Démonstration de 9.3, choix de l'épimorphisme F_1 → F",
+  "scan": "dans X_ét, ou F_1 est représentable",
+  "tex": "dans $X_{\\text{\\rm ét}}$, ou\n$F_{1}$ est",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "dans $X_{\\text{\\rm ét}}$, où\n$F_{1}$ est",
+  "note": "L'accent grave manque au relatif « où ». Le TeX conserve « ou »."
+ },
+ {
+  "page": 409,
+  "where": "Grand diagramme, première ligne, entre les deuxième et troisième colonnes",
+  "scan": "$S(F')\\rightrightarrows S(F'')$",
+  "tex": "S(F') \\ar[r]\\ar[d]",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "S(F') \\ar[r]\\ar[d]",
+   "new": "S(F') \\ar@<3pt>[r] \\ar@<-3pt>[r]\\ar[d]"
+  },
+  "note": "L'imprimé donne deux flèches horizontales parallèles; le TeX n'en donne qu'une."
+ },
+ {
+  "page": 409,
+  "where": "Grand diagramme, deuxième ligne, troisième colonne",
+  "scan": "$S(F'')$",
+  "tex": "S(F''_{1})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$S(F''_{1})$",
+  "note": "L'indice 1 manque dans cette case de l'imprimé. Le TeX le rétablit silencieusement."
+ },
+ {
+  "page": 410,
+  "where": "Premier paragraphe, référence à SGA",
+  "scan": "SGA IX 2.3",
+  "tex": "\\SGA\\sisi{}{ 1} IX 2.3",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\SGA 1 IX 2.3",
+  "note": "L'imprimé omet le numéro du tome 1. Le premier argument vide de \\sisi correspond à l'imprimé; l'édition rétablit le numéro dans le second."
+ },
+ {
+  "page": 410,
+  "where": "Démonstration de 9.1, première phrase",
+  "scan": "tout morphisme u' … compatible avec les données de descente sur F', G', u' provient",
+  "tex": "$F'$, $G'$, $u'$ provient d'un morphisme $u:F\\rightarrow G$.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$F'$, $G'$, provient d'un morphisme $u:F\\rightarrow G$.",
+  "note": "Le second u' reprend accidentellement le sujet « tout morphisme u' ». Le TeX conserve cette répétition."
+ },
+ {
+  "page": 410,
+  "where": "Démonstration de 9.1, application du lemme 9.3",
+  "scan": "Donc en vertu de 9.3. Γ' provient",
+  "tex": "Donc en vertu de \\hyperref[VIII.lem9.3]{9.3}.\n$\\Gamma'$ provient",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Donc en vertu de \\hyperref[VIII.lem9.3]{9.3},\n$\\Gamma'$ provient",
+  "note": "Le point coupe fautivement la phrase après le complément « en vertu de 9.3 ». Le TeX conserve ce point."
+ }
+]

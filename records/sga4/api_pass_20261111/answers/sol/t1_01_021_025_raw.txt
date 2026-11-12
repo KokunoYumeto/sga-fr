@@ -1,0 +1,60 @@
+{
+  "findings": [
+    {
+      "page": 23,
+      "where": "Proof of Proposition 5.1, definition of the functor I^f_u",
+      "scan": "$I^f_u:I^Y_u\\longrightarrow I^{Y'}_u$",
+      "tex": "$I^f_u:I^Y_u\\rightarrow\nI^{Y'}_u$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$I^f_u:I^{Y'}_u\\rightarrow I^Y_u$",
+      "note": "The TeX keeps the printed reversal. Precomposition with f:Y→Y' sends (X,m') over Y' to (X,m'∘f) over Y, so the induced functor goes from I^{Y'}_u to I^Y_u."
+    },
+    {
+      "page": 23,
+      "where": "Diagram (*), horizontal arrows",
+      "scan": "$I^Y_u\\longrightarrow I^f_u\\longrightarrow I^{Y'}_u$",
+      "tex": "I^Y_u \\ar[r] \\ar[rd]_{\\pr_Y}& I^f_u\\ar[r] & I^{Y'}_u \\ar[ld]^{\\pr_{Y'}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$I^Y_u\\xleftarrow{I^f_u}I^{Y'}_u$",
+      "note": "The TeX keeps the printed rightward direction, repeating the reversal in the preceding sentence. The horizontal functor must point left; the projection arrows to C are unchanged."
+    },
+    {
+      "page": 24,
+      "where": "Display defining the component xi_X",
+      "scan": "$\\xi_X:u_{!}(u(X))\\longrightarrow G(u(X))$",
+      "tex": "\\xi_X:u_{!}(u(X))\\longrightarrow G(u(X)){\\quoi}.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\xi_X:u_{!}F(u(X))\\longrightarrow G(u(X)).",
+      "note": "The printed source omits F, and the TeX keeps the omission. This is a component of the morphism from u_!F to G."
+    },
+    {
+      "page": 24,
+      "where": "Sentence beginning “Mais”, immediately after the display defining xi_X",
+      "scan": "$(u(X),\\id_{u(X)})$",
+      "tex": "$(u(X),\\id_{u(X)})$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$(X,\\id_{u(X)})$",
+      "note": "The TeX keeps the printed u(X) as the first entry. By the definition of I^{u(X)}_u, the canonical object has first entry X, an object of C."
+    },
+    {
+      "page": 24,
+      "where": "Paragraph beginning “Réciproquement”, category containing Y",
+      "scan": "tout objet Y de C",
+      "tex": "tout objet $Y$ de $C$, un morphisme de foncteur:",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "tout objet $Y$ de $C'$, un morphisme de foncteur:",
+      "note": "The TeX keeps the printed C without a prime. Here Y must range over C', the category on which G and u_!F are defined."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 21: 0/0; 22: 0/0; 23: 0/2; 24: 0/3; 25: 0/0."
+}

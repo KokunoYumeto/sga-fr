@@ -1,0 +1,1041 @@
+[
+ {
+  "page": 231,
+  "where": "top of the page",
+  "scan": "p. 231 begins 'Il montre l'existence d'un isomorphisme canonique entre'; p. 230 ends with the diagram (last row 0  0)",
+  "tex": "'Il' (s5.tex line 7739 diplomatic, 7738 current) is the last line of page_230.tex, just above the folio-231 marker; page_231.tex begins 'montre l'existence'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 231 really begins with the word 'Il' on the line above the marker. Exact fix: python -I move_marker.py 5 231 'Il' --before (simulated in memory on both layers: the marker then stands between '\\]' and 'Il'). Text not moved."
+ },
+ {
+  "page": 231,
+  "where": "end of the proof of 4.2.5 (begun on p. 230), after 'l'assertion (ii) .'",
+  "scan": "no end mark; the next line is the label THEOREME 4.2.6.",
+  "tex": "\\end{prooftext}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "(ii).\n\\end{prooftext}",
+   "new": "(ii)."
+  },
+  "note": "Goes with the p. 230 fix of this proof's label: page_230.tex '\\begin{prooftext}' prints 'Proof.' where the print has 'Preuve :' ('Preuve' underlined), i.e. '\\emph{Preuve} : ' as on pp. 38-39. Apply both or neither (LaTeX fails otherwise)."
+ },
+ {
+  "page": 231,
+  "where": "Théorème 4.2.6, title",
+  "scan": "'(Lemme d'Artin-Rees) .': the title in parentheses, underlined together with them, then ' .'",
+  "tex": "Lemme d'Artin-Rees.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Lemme d'Artin-Rees.",
+   "new": "\\emph{(Lemme d'Artin-Rees)}."
+  },
+  "note": "The TeX drops the parentheses; one edit with the underline."
+ },
+ {
+  "page": 231,
+  "where": "Théorème 4.2.6, 'Soit X un système projectif indexé par'",
+  "scan": "underlined: 'Soit', 'un système projectif indexé' / 'par'; not X",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(X\\) un système projectif indexé par",
+   "new": "\\emph{Soit} \\(X\\) \\emph{un système projectif indexé par}"
+  },
+  "note": "Exposé V: the TeX has no underline markup; \\emph as on pp. 204-205 and in III B."
+ },
+ {
+  "page": 231,
+  "where": "Théorème 4.2.6, 'par N à valeurs dans C'",
+  "scan": "no comma after N",
+  "tex": "\\(\\mathbb N\\), à valeurs",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mathbb N\\),",
+   "new": "\\(\\mathbb N\\)"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 231,
+  "where": "Théorème 4.2.6, 'à valeurs dans C . On suppose que :'",
+  "scan": "underlined: 'à valeurs dans', 'On suppose que'; not C, the stop, the colon",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "à valeurs dans \\(\\mathcal C\\). On suppose que:",
+   "new": "\\emph{à valeurs dans} \\(\\mathcal C\\). \\emph{On suppose que}:"
+  },
+  "note": ""
+ },
+ {
+  "page": 231,
+  "where": "Théorème 4.2.6 (i)",
+  "scan": "'vérifie' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "vérifie",
+   "new": "\\emph{vérifie}"
+  },
+  "note": ""
+ },
+ {
+  "page": 231,
+  "where": "Théorème 4.2.6 (i), end",
+  "scan": "'(MLAR) ,': a comma",
+  "tex": "(MLAR);",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(MLAR);",
+   "new": "(MLAR),"
+  },
+  "note": ""
+ },
+ {
+  "page": 231,
+  "where": "Théorème 4.2.6 (ii)",
+  "scan": "'est adapté à' underlined; not X, J",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item \\(X\\) est adapté à",
+   "new": "\\item \\(X\\) \\emph{est adapté à}"
+  },
+  "note": ""
+ },
+ {
+  "page": 231,
+  "where": "Théorème 4.2.6 (ii), end",
+  "scan": "'J ,': a comma",
+  "tex": "\\(J\\);",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(J\\);",
+   "new": "\\(J\\),"
+  },
+  "note": ""
+ },
+ {
+  "page": 231,
+  "where": "Théorème 4.2.6 (iii), first line",
+  "scan": "underlined: 'est un', '-module gradué de type fini, i.e.' / 'pour toute suite croissante'; not grs(X), (gr_J(A),C)",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est un \\((\\gr_J(A),\\mathcal C)\\)-module gradué de type fini, i.e. pour toute suite croissante",
+   "new": "\\emph{est un} \\((\\gr_J(A),\\mathcal C)\\)-\\emph{module gradué de type fini, i.e. pour toute suite croissante}"
+  },
+  "note": ""
+ },
+ {
+  "page": 231,
+  "where": "Théorème 4.2.6 (iii), 'de sous-'",
+  "scan": "'de sous-' underlined; not (M_n)_{n∈N}",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\((M_n)_{n\\in\\mathbb N}\\) de sous-",
+   "new": "\\((M_n)_{n\\in\\mathbb N}\\) \\emph{de sous-}"
+  },
+  "note": ""
+ },
+ {
+  "page": 231,
+  "where": "Théorème 4.2.6 (iii), 'sous-(gr_J(A)-modules gradués'",
+  "scan": "'sous-(gr_J(A)-modules': a parenthesis opens before gr and only the one of (A) closes (clear at 2.5x)",
+  "tex": "sous-\\((\\gr_J(A))\\)-modules",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\gr_J(A))\\)",
+   "new": "(\\gr_J(A)\\)"
+  },
+  "corrected": "(\\gr_J(A))\\)",
+  "note": "Unbalanced parenthesis in the print; the TeX silently adds the closing one. The fix restores the printed reading (diplomatic layer only). Corrected as the TeX; the sense may be 'sous-(gr_J(A),C)-modules' as in the line above."
+ },
+ {
+  "page": 231,
+  "where": "Théorème 4.2.6 (iii), 'modules gradués de grs(X) dont grs(X) est réunion, il existe un entier p tel que'",
+  "scan": "underlined: '-modules gradués' / 'de', 'dont', 'est réunion, il existe un entier', 'tel que'; not grs(X), p",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "-modules gradués de \\(\\grs(X)\\) dont \\(\\grs(X)\\) est réunion, il existe un entier \\(p\\) tel que",
+   "new": "-\\emph{modules gradués de} \\(\\grs(X)\\) \\emph{dont} \\(\\grs(X)\\) \\emph{est réunion, il existe un entier} \\(p\\) \\emph{tel que}"
+  },
+  "note": ""
+ },
+ {
+  "page": 231,
+  "where": "Théorème 4.2.6, 'Alors X est AR-J-adique.'",
+  "scan": "underlined: 'Alors', 'est', 'adique.' (the line runs under the stop); not X, AR-J-",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors \\(X\\) est AR-\\(J\\)-adique.",
+   "new": "\\emph{Alors} \\(X\\) \\emph{est} AR-\\(J\\)-\\emph{adique.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 231,
+  "where": "proof of 4.2.6, label",
+  "scan": "'Preuve : Rappelons': 'Preuve' underlined, then ' :', run into the text",
+  "tex": "\\begin{prooftext} (the Exposé V environment, s5.tex line 6859, prints its default label: italic 'Proof.')",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}\nRappelons",
+   "new": "\\emph{Preuve} : Rappelons"
+  },
+  "note": "Same form as the global '\\emph{Preuve} :'. Apply together with the removal of its \\end{prooftext} (before Lemme 4.2.7, below)."
+ },
+ {
+  "page": 231,
+  "where": "proof of 4.2.6, 'on a posé :'",
+  "scan": "a colon before the display",
+  "tex": "on a posé",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "on a posé",
+   "new": "on a posé :"
+  },
+  "note": ""
+ },
+ {
+  "page": 231,
+  "where": "proof of 4.2.6, 'Supposons prouvé le lemme suivant'",
+  "scan": "'Supposons prouvé ...' begins a new, indented paragraph",
+  "tex": "run on after 'AR-\\(J\\)-adique.'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "AR-\\(J\\)-adique. Supposons",
+   "new": "AR-\\(J\\)-adique.\n\nSupposons"
+  },
+  "note": "Paragraph break."
+ },
+ {
+  "page": 231,
+  "where": "proof of 4.2.6, 'le lemme suivant :'",
+  "scan": "a colon",
+  "tex": "le lemme suivant.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "le lemme suivant.",
+   "new": "le lemme suivant :"
+  },
+  "note": ""
+ },
+ {
+  "page": 231,
+  "where": "end of the first part of the proof of 4.2.6",
+  "scan": "no end mark (LEMME 4.2.7. follows)",
+  "tex": "\\end{prooftext}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{prooftext}\n\n\\begin{statement}{Lemme 4.2.7}",
+   "new": "\n\\begin{statement}{Lemme 4.2.7}"
+  },
+  "note": "Apply together with the label fix '\\emph{Preuve} : Rappelons' above."
+ },
+ {
+  "page": 231,
+  "where": "Lemme 4.2.7, first sentence",
+  "scan": "underlined: 'Soit', 'un système projectif strict adapté à', 'Pour tout' / 'entier'; not X, J, s, the stop, the comma",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(X\\) un système projectif strict adapté à \\(J\\). Pour tout entier \\(s\\),",
+   "new": "\\emph{Soit} \\(X\\) \\emph{un système projectif strict adapté à} \\(J\\). \\emph{Pour tout entier} \\(s\\),"
+  },
+  "note": ""
+ },
+ {
+  "page": 231,
+  "where": "Lemme 4.2.7, 'le sous objet gradué'",
+  "scan": "'le sous objet gradué' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "le sous-objet gradué",
+   "new": "\\emph{le sous-objet gradué}"
+  },
+  "note": "Listed before the misprint fix of the same words."
+ },
+ {
+  "page": 231,
+  "where": "Lemme 4.2.7, 'sous objet'",
+  "scan": "'le sous objet gradué': no hyphen (clear at 3x)",
+  "tex": "sous-objet",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{le sous-objet",
+   "new": "\\emph{le sous objet"
+  },
+  "corrected": "\\emph{le sous-objet",
+  "note": "Missing hyphen; the TeX silently corrects. 'old' taken from the text after the underline fix above. The fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 231,
+  "where": "Lemme 4.2.7, '[(M_s)_n]_{n∈N}'",
+  "scan": "square brackets: '[(M_s)_n]_{n∈N}'",
+  "tex": "\\bigl((M_s)_n\\bigr)_{n\\in\\mathbb N}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigl((M_s)_n\\bigr)_{n\\in\\mathbb N}",
+   "new": "[(M_s)_n]_{n\\in\\mathbb N}"
+  },
+  "note": "The TeX writes parentheses for the brackets."
+ },
+ {
+  "page": 231,
+  "where": "Lemme 4.2.7, 'de grs(X) défini par les égalités ci-dessous :'",
+  "scan": "underlined: 'de', 'défini par les' / 'égalités ci-dessous'; not grs(X), the colon",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "de \\(\\grs(X)\\) défini par les égalités ci-dessous:",
+   "new": "\\emph{de} \\(\\grs(X)\\) \\emph{défini par les égalités ci-dessous}:"
+  },
+  "note": ""
+ },
+ {
+  "page": 232,
+  "where": "Lemme 4.2.7, 'est un sous'",
+  "scan": "'est un sous' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est un\nsous",
+   "new": "\\emph{est un\nsous}"
+  },
+  "note": "Exposé V: the TeX has no underline markup; \\emph as on pp. 204-205 and in III B."
+ },
+ {
+  "page": 232,
+  "where": "Lemme 4.2.7, 'sous gr_J(A)-module'",
+  "scan": "'est un sous  gr_J(A)-module': space, no hyphen (clear at 2x)",
+  "tex": "sous-\\(\\gr_J(A)\\)-module",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "-\\(\\gr_J(A)\\)",
+   "new": " \\(\\gr_J(A)\\)"
+  },
+  "corrected": "-\\(\\gr_J(A)\\)",
+  "note": "Missing hyphen; the TeX silently corrects. The fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 232,
+  "where": "Lemme 4.2.7, '-module gradué de grs(X) .'",
+  "scan": "'-module gradué de' underlined; not gr_J(A), grs(X), the stop",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "-module gradué de \\(\\grs(X)\\)",
+   "new": "-\\emph{module gradué de} \\(\\grs(X)\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 232,
+  "where": "proof label of Lemme 4.2.7",
+  "scan": "'Démonstration de 4.2.7. Reprenons': only 'Démonstration de' underlined, '4.2.7.' plain, run into the text",
+  "tex": "\\begin{prooftext}[Démonstration de 4.2.7] (prints the whole label in italics: '\\emph{Démonstration de 4.2.7.}')",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}[Démonstration de 4.2.7]\n",
+   "new": "\\emph{Démonstration de} 4.2.7. "
+  },
+  "note": "Proof label of another form than 'Preuve :'. Apply together with the removal of '\\end{prooftext}' after 'D'où le lemme.' (below)."
+ },
+ {
+  "page": 232,
+  "where": "proof of 4.2.7, the image displayed after 'est'",
+  "scan": "'J^p/J^{p+1}⊗_A[(J^{q-s}X_{p+q} ∩ F^q(X_{p+q})) + F^{q+1}(X_{p+q})]/F^{q+1}(X_{p+q}) .': square brackets and a slash on one line",
+  "tex": "\\frac{(J^{q-s}X_{p+q}\\cap F^q(X_{p+q}))+F^{q+1}(X_{p+q})}{F^{q+1}(X_{p+q})}.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\frac{(J^{q-s}X_{p+q}\\cap F^q(X_{p+q}))+F^{q+1}(X_{p+q})}\n     {F^{q+1}(X_{p+q})}.",
+   "new": "[(J^{q-s}X_{p+q}\\cap F^q(X_{p+q}))+F^{q+1}(X_{p+q})]/F^{q+1}(X_{p+q})."
+  },
+  "note": "The TeX builds a fraction and drops the brackets."
+ },
+ {
+  "page": 232,
+  "where": "proof of 4.2.7, 'On en déduit que l'image réciproque'",
+  "scan": "'On en déduit ...' begins a new, indented paragraph",
+  "tex": "run on after 'sur \\(J^{q-s}X_q\\).'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(J^{q-s}X_q\\). On en déduit",
+   "new": "\\(J^{q-s}X_q\\).\n\nOn en déduit"
+  },
+  "note": "Paragraph break."
+ },
+ {
+  "page": 232,
+  "where": "proof of 4.2.7, 'Il est maintenant clair'",
+  "scan": "'Il est maintenant clair ...' begins a new, indented paragraph",
+  "tex": "continues the paragraph after the display",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nIl est maintenant clair",
+   "new": "\\]\n\nIl est maintenant clair"
+  },
+  "note": "Paragraph break."
+ },
+ {
+  "page": 232,
+  "where": "end of the proof of 4.2.7",
+  "scan": "no end mark after 'D'où le lemme.'",
+  "tex": "\\end{prooftext}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "D'où le lemme.\n\\end{prooftext}",
+   "new": "D'où le lemme."
+  },
+  "note": "Apply together with the label fix '\\emph{Démonstration de} 4.2.7. ' above."
+ },
+ {
+  "page": 233,
+  "where": "heading 5",
+  "scan": "'5. Systèmes projectifs J-adiques et AR-J-adiques noethériens.' with a full stop (title underlined)",
+  "tex": "\\subsection*{5. Systèmes projectifs \\(J\\)-adiques et AR-\\(J\\)-adiques noethériens}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "AR-\\(J\\)-adiques noethériens}",
+   "new": "AR-\\(J\\)-adiques noethériens.}"
+  },
+  "note": "Underlined title: the print's full stop."
+ },
+ {
+  "page": 233,
+  "where": "§5, first sentence, 'un idéal J de A et une A-catégorie'",
+  "scan": "no comma after 'de A'",
+  "tex": "de \\(A\\), et une",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de \\(A\\), et une",
+   "new": "de \\(A\\) et une"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 233,
+  "where": "heading 5.1",
+  "scan": "'5.1. Généralités.' with a full stop (title underlined)",
+  "tex": "\\subsubsection*{5.1. Généralités}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{5.1. Généralités}",
+   "new": "\\subsubsection*{5.1. Généralités.}"
+  },
+  "note": "Underlined title: the print's full stop."
+ },
+ {
+  "page": 233,
+  "where": "Définition 5.1.1, first line and a half",
+  "scan": "underlined: 'Un objet', 'de la catégorie', 'Hom' (alone, not '(N°,C)'), 'est dit', 'adique' / 'noethérien (resp. artinien) s'il est'; not X, J-",
+  "tex": "no underline markup; \\Hom plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Un objet \\(X\\) de la catégorie \\(\\Hom(\\mathbb N^\\circ,\\mathcal C)\\) est dit \\(J\\)-adique noethérien (resp. artinien) s'il est",
+   "new": "\\emph{Un objet} \\(X\\) \\emph{de la catégorie} \\(\\uHom(\\mathbb N^\\circ,\\mathcal C)\\) \\emph{est dit} \\(J\\)-\\emph{adique noethérien (resp. artinien) s'il est}"
+  },
+  "note": "Exposé V: the TeX has no underline markup; \\emph as on pp. 204-205 and in III B. The underlined Hom is \\uHom (preamble)."
+ },
+ {
+  "page": 233,
+  "where": "Définition 5.1.1, rest",
+  "scan": "underlined: 'adique et si ses composantes sont des' / 'objets noethériens (resp. artiniens) de la catégorie'; not J-, C, the stop",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(J\\)-adique et si ses composantes sont des objets noethériens (resp. artiniens) de la catégorie \\(\\mathcal C\\).",
+   "new": "\\(J\\)-\\emph{adique et si ses composantes sont des objets noethériens (resp. artiniens) de la catégorie} \\(\\mathcal C\\)."
+  },
+  "note": ""
+ },
+ {
+  "page": 233,
+  "where": "'la sous-catégorie pleine de P = Hom(N°,C)'",
+  "scan": "'de' at the start of the line is underlined (clear at 2x)",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "pleine de\n",
+   "new": "pleine \\emph{de}\n"
+  },
+  "note": "A lone underline outside a statement; probably a slip of the typist, but printed."
+ },
+ {
+  "page": 233,
+  "where": "'P = Hom(N°,C)'",
+  "scan": "P is a typed plain capital P (as in Prop. 5.1.2)",
+  "tex": "\\(\\mathcal P=",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mathcal P=",
+   "new": "\\(P="
+  },
+  "note": "The TeX writes a script P; elsewhere in Exposé V it writes plain $P$ (s5.tex lines 7254, 7283)."
+ },
+ {
+  "page": 233,
+  "where": "'P = Hom(N°,C)', Hom",
+  "scan": "'Hom' underlined",
+  "tex": "\\Hom(\\mathbb N^\\circ,\\mathcal C)\\) dont",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(\\mathbb N^\\circ,\\mathcal C)\\) dont",
+   "new": "\\uHom(\\mathbb N^\\circ,\\mathcal C)\\) dont"
+  },
+  "note": "\\uHom as in the preamble."
+ },
+ {
+  "page": 233,
+  "where": "'noethériens (resp. artiniens) , est du même type'",
+  "scan": "a comma before 'est du même type'",
+  "tex": "(resp. artiniens) est du même type",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. artiniens) est du même type",
+   "new": "(resp. artiniens), est du même type"
+  },
+  "note": "The TeX drops the comma."
+ },
+ {
+  "page": 233,
+  "where": "Proposition 5.1.2, 'Soit X un objet J-adique de P'",
+  "scan": "underlined: 'Soit', 'un objet', 'adique de'; not X, J-, P",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(X\\) un objet \\(J\\)-adique de",
+   "new": "\\emph{Soit} \\(X\\) \\emph{un objet} \\(J\\)-\\emph{adique de}"
+  },
+  "note": "Exposé V: the TeX has no underline markup; \\emph as on pp. 204-205 and in III B."
+ },
+ {
+  "page": 233,
+  "where": "Proposition 5.1.2, 'de P .'",
+  "scan": "P is a typed plain capital P",
+  "tex": "\\(\\mathcal P\\).",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mathcal P\\).",
+   "new": "\\(P\\)."
+  },
+  "note": "As 'P = Hom(N°,C)' above."
+ },
+ {
+  "page": 233,
+  "where": "Proposition 5.1.2, from 'Pour que'",
+  "scan": "underlined: 'Pour que', 'soit', 'adique noethérien (resp. artinien)', 'il faut et il suffit qu'il soit', 'adique et que', 'soit noethérien (resp. artinien)'; not X, J-, X_o, the comma, the stop",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour que \\(X\\) soit \\(J\\)-adique noethérien (resp. artinien), il faut et il suffit qu'il soit \\(J\\)-adique et que \\(X_0\\) soit noethérien (resp. artinien).",
+   "new": "\\emph{Pour que} \\(X\\) \\emph{soit} \\(J\\)-\\emph{adique noethérien (resp. artinien)}, \\emph{il faut et il suffit qu'il soit} \\(J\\)-\\emph{adique et que} \\(X_0\\) \\emph{soit noethérien (resp. artinien)}."
+  },
+  "note": ""
+ },
+ {
+  "page": 233,
+  "where": "proof of Proposition 5.1.2, label",
+  "scan": "no label: the proof is an indented paragraph 'Soit en effet X un système projectif ...'",
+  "tex": "\\begin{prooftext} (prints the default label, italic 'Proof.')",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}\nSoit en effet",
+   "new": "Soit en effet"
+  },
+  "note": "Apply together with the removal of its \\end{prooftext} (next finding)."
+ },
+ {
+  "page": 233,
+  "where": "end of the proof of 5.1.2",
+  "scan": "no end mark",
+  "tex": "\\end{prooftext}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. artiniens).\n\\end{prooftext}",
+   "new": "(resp. artiniens)."
+  },
+  "note": "Apply together with the previous finding."
+ },
+ {
+  "page": 234,
+  "where": "Définition 5.1.3, the statement",
+  "scan": "underlined: 'Soit', 'un système projectif indexé par', 'à valeurs' / 'dans', 'On dit qu'il est', 'adique noethérien (resp. artinien) s'il est', 'adique,', 'et si ses composantes sont des objets noethériens (resp.' / 'artiniens' (not the closing parenthesis); not X, N, C, AR-J-, the stops",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit \\(X\\) un système projectif indexé par \\(\\mathbb N\\) à valeurs dans \\(\\mathcal C\\). On dit qu'il est AR-\\(J\\)-adique noethérien (resp. artinien) s'il est AR-\\(J\\)-adique, et si ses composantes sont des objets noethériens (resp. artiniens).",
+   "new": "\\emph{Soit} \\(X\\) \\emph{un système projectif indexé par} \\(\\mathbb N\\) \\emph{à valeurs dans} \\(\\mathcal C\\). \\emph{On dit qu'il est} AR-\\(J\\)-\\emph{adique noethérien (resp. artinien) s'il est} AR-\\(J\\)-\\emph{adique, et si ses composantes sont des objets noethériens (resp. artiniens})."
+  },
+  "note": "Exposé V: the TeX has no underline markup; \\emph as on pp. 204-205 and in III B."
+ },
+ {
+  "page": 234,
+  "where": "'de Hom_AR(N°,C) (2.4)'",
+  "scan": "'Hom' underlined (the subscript AR below the line)",
+  "tex": "\\(\\Hom_{\\mathrm{AR}}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\Hom_{\\mathrm{AR}}",
+   "new": "\\(\\uHom_{\\mathrm{AR}}"
+  },
+  "note": "\\uHom as in the preamble."
+ },
+ {
+  "page": 234,
+  "where": "first display, p^n_AR",
+  "scan": "small p (with its descender): 'p^n_AR'",
+  "tex": "P^n_{\\mathrm{AR}}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "P^n_{\\mathrm{AR}}",
+   "new": "p^n_{\\mathrm{AR}}"
+  },
+  "note": "Capital for small; the TeX writes $p_{AR}$ elsewhere in Exposé V (s5.tex line 7283)."
+ },
+ {
+  "page": 234,
+  "where": "first display, end",
+  "scan": "no punctuation after 'AR-J-adn(C)'",
+  "tex": "comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{-adn}(\\mathcal C),",
+   "new": "\\text{-adn}(\\mathcal C)"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 234,
+  "where": "second display, p^f_AR",
+  "scan": "small p: 'p^f_AR'",
+  "tex": "P^f_{\\mathrm{AR}}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "P^f_{\\mathrm{AR}}",
+   "new": "p^f_{\\mathrm{AR}}"
+  },
+  "note": ""
+ },
+ {
+  "page": 234,
+  "where": "second display, end",
+  "scan": "no punctuation after 'AR-J-adf(C)'",
+  "tex": "comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{-adf}(\\mathcal C),",
+   "new": "\\text{-adf}(\\mathcal C)"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 234,
+  "where": "'obtenus par restriction de p_AR(2.4)'",
+  "scan": "small p: 'p_AR'",
+  "tex": "\\(P_{\\mathrm{AR}}\\)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(P_{\\mathrm{AR}}\\)",
+   "new": "\\(p_{\\mathrm{AR}}\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 234,
+  "where": "'p_AR(2.4) sont des équivalences'",
+  "scan": "no comma after (2.4)",
+  "tex": "(2.4), sont",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(2.4), sont des",
+   "new": "(2.4) sont des"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 234,
+  "where": "'les fonctions canoniques ... obtenus par restriction'",
+  "scan": "'fonctions' (clear), with the masculine 'obtenus' and the equivalences of categories: the functors are meant",
+  "tex": "les fonctions canoniques",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "les foncteurs canoniques",
+  "note": "The TeX keeps the printed reading."
+ },
+ {
+  "page": 234,
+  "where": "'du théorème de Hilbert :'",
+  "scan": "a colon",
+  "tex": "de Hilbert.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "théorème de Hilbert.",
+   "new": "théorème de Hilbert :"
+  },
+  "note": ""
+ },
+ {
+  "page": 234,
+  "where": "Théorème 5.1.4, title and first line",
+  "scan": "'(Théorème de Hilbert) . Soient A un anneau commutatif,': title in parentheses; one continuous underline from '(Théorème' to 'commutatif,'",
+  "tex": "Théorème de Hilbert. Soient",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Théorème de Hilbert. Soient \\(A\\) un anneau commutatif,",
+   "new": "\\emph{(Théorème de Hilbert). Soient \\(A\\) un anneau commutatif,}"
+  },
+  "note": "The TeX drops the parentheses; one edit with the underline (the print underlines the whole line)."
+ },
+ {
+  "page": 234,
+  "where": "Théorème 5.1.4, 'C une A-catégorie abélienne, M un objet de type fini (resp. noethérien) de C'",
+  "scan": "underlined: 'une', 'catégorie abélienne,', 'un objet de type fini (resp. noethérien)' / 'de'; not C, A-, M",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mathcal C\\) une \\(A\\)-catégorie abélienne, \\(M\\) un objet de type fini (resp. noethérien) de",
+   "new": "\\(\\mathcal C\\) \\emph{une} \\(A\\)-\\emph{catégorie abélienne,} \\(M\\) \\emph{un objet de type fini (resp. noethérien) de}"
+  },
+  "note": ""
+ },
+ {
+  "page": 234,
+  "where": "Théorème 5.1.4, 'Pour toute A-algèbre de type fini'",
+  "scan": "'Pour toute ...' begins a new, indented paragraph; 'Pour toute A-algèbre de type fini' underlined in one line",
+  "tex": "run on after 'de \\(\\mathcal C\\).'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mathcal C\\). Pour toute \\(A\\)-algèbre de type fini",
+   "new": "\\(\\mathcal C\\).\n\n\\emph{Pour toute \\(A\\)-algèbre de type fini}"
+  },
+  "note": "Paragraph break; one edit with the underline."
+ },
+ {
+  "page": 234,
+  "where": "Théorème 5.1.4, 'de type fini B graduée par N'",
+  "scan": "no comma after B",
+  "tex": "\\(B\\), graduée",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(B\\),",
+   "new": "\\(B\\)"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 234,
+  "where": "Théorème 5.1.4, 'graduée par N , le (B,C)-module gradué'",
+  "scan": "underlined: 'graduée par', 'le', 'module gradué'; not N, (B,C)-",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "graduée par \\(\\mathbb N\\), le \\((B,\\mathcal C)\\)-module gradué",
+   "new": "\\emph{graduée par} \\(\\mathbb N\\), \\emph{le} \\((B,\\mathcal C)\\)-\\emph{module gradué}"
+  },
+  "note": ""
+ },
+ {
+  "page": 234,
+  "where": "Théorème 5.1.4, 'est de type fini (resp. noethérien) .'",
+  "scan": "underlined: 'est de type fini', '(resp. noethérien)'; not the stop",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nest de type fini (resp. noethérien).",
+   "new": "\\]\n\\emph{est de type fini} \\emph{(resp. noethérien)}."
+  },
+  "note": ""
+ },
+ {
+  "page": 234,
+  "where": "Théorème 5.1.4, N.B.",
+  "scan": "'(N.B. Si B = ...': a parenthesis opens before N.B. and is never closed (the line ends '(B_n⊗_A M)_{n∈N} .')",
+  "tex": "N.B. Si",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "N.B.",
+   "new": "(N.B."
+  },
+  "corrected": "N.B.",
+  "note": "Unbalanced parenthesis; the TeX silently drops it. The fix restores the printed reading (diplomatic layer only). Corrected as the TeX, or close it after the last formula."
+ },
+ {
+  "page": 234,
+  "where": "Théorème 5.1.4, N.B., 'Si', 'désigne l'objet gradué'",
+  "scan": "underlined: 'Si', 'désigne l'objet gradué'; not the formulas",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Si \\(B=\\bigoplus_{n\\ge0}B_n\\), \\(B\\otimes_A M\\) désigne l'objet gradué",
+   "new": "\\emph{Si} \\(B=\\bigoplus_{n\\ge0}B_n\\), \\(B\\otimes_A M\\) \\emph{désigne l'objet gradué}"
+  },
+  "note": "The sum sign is an overstrike (a circle with both + and x); the TeX's \\bigoplus is kept."
+ },
+ {
+  "page": 234,
+  "where": "proof of Théorème 5.1.4, label",
+  "scan": "'Preuve : On se ramène': 'Preuve' underlined, then ' :'",
+  "tex": "\\begin{prooftext} (prints the default label, italic 'Proof.')",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}\nOn se ramène immédiatement",
+   "new": "\\emph{Preuve} : On se ramène immédiatement"
+  },
+  "note": "Apply together with the removal of its \\end{prooftext} on p. 235 (after 'dans les deux cas.')."
+ },
+ {
+  "page": 234,
+  "where": "proof of 5.1.4, 'une suite croissante :'",
+  "scan": "a colon before the display",
+  "tex": "une suite croissante",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "une suite croissante\n\\[",
+   "new": "une suite croissante :\n\\["
+  },
+  "note": ""
+ },
+ {
+  "page": 235,
+  "where": "'Supposons maintenant que M soit noetherien'",
+  "scan": "'noetherien' without the accent (clear at 2.5x)",
+  "tex": "noethérien",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "soit noethérien",
+   "new": "soit noetherien"
+  },
+  "corrected": "soit noethérien",
+  "note": "The TeX silently corrects. The fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 235,
+  "where": "display 'N_1 ⊂ N^2 ⊂ ...'",
+  "scan": "the first term is N with a lowered 1 (N_1); the others carry upper indices",
+  "tex": "N_1\\subset N^2",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "N^1\\subset N^2",
+  "note": "The TeX keeps the printed reading."
+ },
+ {
+  "page": 235,
+  "where": "'qui dans la première hypothèse (lorsque M est de type fini) a pour réunion'",
+  "scan": "parentheses, no commas",
+  "tex": "hypothèse, lorsque \\(M\\) est de type fini, a pour",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "hypothèse, lorsque \\(M\\) est de type fini, a pour",
+   "new": "hypothèse (lorsque \\(M\\) est de type fini) a pour"
+  },
+  "note": "The TeX writes commas for the parentheses."
+ },
+ {
+  "page": 235,
+  "where": "the double-entry table, third row",
+  "scan": "only N^1_1 in the first column; the second and third columns have vertical dots from that row down",
+  "tex": "N_1^1&&N_1^2&&N_1^p\\\\",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "N_1^1&&N_1^2&&N_1^p\\\\",
+   "new": "N_1^1&&\\vdots&&\\vdots\\\\"
+  },
+  "note": "The TeX adds N_1^2 and N_1^p."
+ },
+ {
+  "page": 235,
+  "where": "the double-entry table, last rows",
+  "scan": "'N^1_n ⊂ N^2_n ⊂ ...... ⊂ N^p_n ..........': no ⊂ after N^p_n and no full stop; then a last row ∩ ∩ ∩ under the three columns",
+  "tex": "N_n^p&\\subset\\cdots . / no last row",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "N_n^p&\\subset\\cdots .\n\\end{array}",
+   "new": "N_n^p&\\cdots\\\\\n\\cap&&\\cap&&\\cap\n\\end{array}"
+  },
+  "note": "One edit: the TeX adds a ⊂ and a full stop and drops the last row of inclusion signs."
+ },
+ {
+  "page": 235,
+  "where": "'Si p_1 est un entier ≥ p_o'",
+  "scan": "'Si p_1 ...' begins a new, indented paragraph",
+  "tex": "run on after '(resp. égal à \\(M\\)).'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. égal à \\(M\\)). Si",
+   "new": "(resp. égal à \\(M\\)).\n\nSi"
+  },
+  "note": "Paragraph break."
+ },
+ {
+  "page": 235,
+  "where": "end of the proof of Théorème 5.1.4",
+  "scan": "no end mark",
+  "tex": "\\end{prooftext}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "deux cas.\n\\end{prooftext}",
+   "new": "deux cas."
+  },
+  "note": "Apply together with the p. 234 label fix '\\emph{Preuve} : On se ramène immédiatement'."
+ },
+ {
+  "page": 235,
+  "where": "Corollaire 5.1.5, up to 'de C'",
+  "scan": "underlined: 'Supposons de plus que la catégorie', 'possède des sommes' / 'directes dénombrables. Alors pour tout objet', 'de type fini (resp. noethé-' / 'rien) de'; not C, M",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Supposons de plus que la catégorie \\(\\mathcal C\\) possède des sommes directes dénombrables. Alors pour tout objet \\(M\\) de type fini (resp. noethérien) de",
+   "new": "\\emph{Supposons de plus que la catégorie} \\(\\mathcal C\\) \\emph{possède des sommes directes dénombrables. Alors pour tout objet} \\(M\\) \\emph{de type fini (resp. noethérien) de}"
+  },
+  "note": "Exposé V: the TeX has no underline markup; \\emph as on pp. 204-205 and in III B."
+ },
+ {
+  "page": 235,
+  "where": "Corollaire 5.1.5, 'de C et toute'",
+  "scan": "no comma after C",
+  "tex": "\\(\\mathcal C\\), et toute",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mathcal C\\),",
+   "new": "\\(\\mathcal C\\)"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 235,
+  "where": "Corollaire 5.1.5, from 'et toute'",
+  "scan": "underlined: 'et toute', 'algèbre de type fini', 'le', 'module', 'est de type fini (resp. noethérien)'; not A-, B, (B,C)-, B⊗_A M, the comma, the stop",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et toute \\(A\\)-algèbre de type fini \\(B\\), le \\((B,\\mathcal C)\\)-module \\(B\\otimes_A M\\) est de type fini (resp. noethérien).",
+   "new": "\\emph{et toute} \\(A\\)-\\emph{algèbre de type fini} \\(B\\), \\emph{le} \\((B,\\mathcal C)\\)-\\emph{module} \\(B\\otimes_A M\\) \\emph{est de type fini (resp. noethérien)}."
+  },
+  "note": ""
+ },
+ {
+  "page": 235,
+  "where": "proof of Corollaire 5.1.5, label",
+  "scan": "'Preuve : On se ramène au cas où': 'Preuve' underlined, then ' :'",
+  "tex": "\\begin{prooftext} (prints the default label, italic 'Proof.')",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}\nOn se ramène au cas où",
+   "new": "\\emph{Preuve} : On se ramène au cas où"
+  },
+  "note": "Its \\end{prooftext} is on p. 236 (page_236.tex: 'proposition suivante.\\n\\end{prooftext}' -> 'proposition suivante.'): apply both or neither (LaTeX fails otherwise)."
+ },
+ {
+  "page": 235,
+  "where": "proof of 5.1.5, '(considéré comme objet de C )'",
+  "scan": "in parentheses, no comma",
+  "tex": "\\(A[T]\\otimes_A M\\), considéré comme objet de \\(\\mathcal C\\).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "M\\), considéré comme objet de \\(\\mathcal C\\).",
+   "new": "M\\) (considéré comme objet de \\(\\mathcal C\\))."
+  },
+  "note": "The TeX writes a comma for the parentheses."
+ },
+ {
+  "page": 235,
+  "where": "proof of 5.1.5, 'gr(N) est un sous (A[T],C)-module gradué'",
+  "scan": "'sous (A[T],C)-module': space, no hyphen (clear at 2x)",
+  "tex": "est un sous-\\((A[T],\\mathcal C)\\)-module",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "est un sous-\\((",
+   "new": "est un sous \\(("
+  },
+  "corrected": "est un sous-\\((",
+  "note": "Missing hyphen; the TeX silently corrects. The fix restores the printed reading (diplomatic layer only)."
+ }
+]

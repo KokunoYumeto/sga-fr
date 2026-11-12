@@ -1,0 +1,253 @@
+{
+  "findings": [
+    {
+      "page": 26,
+      "where": "Proposition 3.1, opening sentence",
+      "scan": "V un univers contenant U",
+      "tex": "$𝒱$ univers contenant $𝒰$",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "$𝒱$ univers contenant",
+        "new": "$𝒱$ un univers contenant"
+      },
+      "note": "The article « un » before « univers » is missing."
+    },
+    {
+      "page": 26,
+      "where": "Proof of Proposition 3.1, functorial Hom isomorphism",
+      "scan": "\\Hom_{C^{\\wedge}_{A,V}}",
+      "tex": "\\Hom_{C^{}\\wedge_{A, 𝒱}}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hom_{C^{}\\wedge_{A, 𝒱}}",
+        "new": "\\Hom_{C^{\\wedge}_{A, 𝒱}}"
+      },
+      "note": "The printed wedge is a superscript on C. The TeX instead gives C an empty superscript and places the wedge at the subscript's baseline."
+    },
+    {
+      "page": 26,
+      "where": "Proof of Proposition 3.1, final Hom functor",
+      "scan": "N \\mapsto \\Hom_{C_{A,V}}(N,\\Hh^0(M))",
+      "tex": "N \\mapsto \\Hom_{C_{A, 𝒱}} (N, \\Hh^{0} (M))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "N \\mapsto \\Hom_{C^{\\wedge}_{A, 𝒱}} (N, \\Hh^{0} (M))",
+      "note": "The print omits the wedge on C in this second occurrence of the presheaf category. The TeX keeps the misprint."
+    },
+    {
+      "page": 26,
+      "where": "Theorem 3.2, parenthetical explanation after (3.2.1)",
+      "scan": "le terme H^p(R,\\Hh^q(M)) doit être interprété",
+      "tex": "le terme $H^p(R, \\Hh^q\n(M))$) doit être interprété",
+      "kind": "punctuation",
+      "confidence": "high",
+      "fix": {
+        "old": "(M))$) doit",
+        "new": "(M))$ doit"
+      },
+      "note": "The extra closing parenthesis prematurely closes the explanatory parenthesis; it is absent from the print."
+    },
+    {
+      "page": 26,
+      "where": "Theorem 3.2, universe in the parenthetical explanation",
+      "scan": "C^{\\wedge}_{\\underline{V}} où \\underline{V} est un univers",
+      "tex": "C^{\\wedge}_V où V est un univers",
+      "kind": "font",
+      "confidence": "high",
+      "fix": {
+        "old": "C^{\\wedge}_V$ où $V$",
+        "new": "C^{\\wedge}_{𝒱}$ où $𝒱$"
+      },
+      "note": "Both printed V's are underlined universe letters, represented elsewhere on this page by 𝒱, not ordinary V."
+    },
+    {
+      "page": 26,
+      "where": "Proof of Theorem 3.2, first sentence",
+      "scan": "faisceau associé",
+      "tex": "faisceau associe",
+      "kind": "accent",
+      "confidence": "high",
+      "fix": {
+        "old": "faisceau associe",
+        "new": "faisceau associé"
+      },
+      "note": "The print has the acute accent on the final é."
+    },
+    {
+      "page": 27,
+      "where": "Corollary 3.4, formula (3.4.3)",
+      "scan": "\\Phi^q(M) : \\Hh^q(M) \\to \\Hh^q(M)",
+      "tex": "\\Phi^q(M) &: \\Hh^q(M) \\to \\Hh^q(M)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Phi^q(M) : \\check{\\Hh}^q(M) \\to \\Hh^q(M)",
+      "note": "The source of this edge morphism should have the Čech check. Both print and TeX omit it; the TeX keeps the misprint."
+    },
+    {
+      "page": 27,
+      "where": "Corollary 3.4, formula (3.4.4)",
+      "scan": "\\Phi^q_X(M) : H^q(X,M) \\to H^q(X,M)",
+      "tex": "\\Phi^q_X(M) &: H^q (X, M) \\to H^q (X, M)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Phi^q_X(M) : \\check{H}^q(X,M) \\to H^q(X,M)",
+      "note": "The source should be Čech cohomology. The print omits its check, and the TeX keeps that omission."
+    },
+    {
+      "page": 27,
+      "where": "Corollary 3.4, degrees in which the edge morphisms are isomorphisms",
+      "scan": "q égale 0 ou 1",
+      "tex": "$q$ égale $0$ où $1$",
+      "kind": "accent",
+      "confidence": "high",
+      "fix": {
+        "old": "$0$ où $1$",
+        "new": "$0$ ou $1$"
+      },
+      "note": "The print has the conjunction « ou », not « où »."
+    },
+    {
+      "page": 27,
+      "where": "Proof of Corollary 3.4, equality preceding the reference II 3.4",
+      "scan": "\\check{\\Hh}^{0}\\check{\\Hh}^{0}\\Hh^{q}(M)=0",
+      "tex": "\\check{\\Hh}^{0}\\check{\\Hh}^{0}\\check{\\Hh}^{q}(M)=0",
+      "kind": "formula",
+      "confidence": "medium",
+      "fix": {
+        "old": "\\check{\\Hh}^{q} (M) = 0$ pour tout",
+        "new": "\\Hh^{q} (M) = 0$ pour tout"
+      },
+      "note": "The scan gives Čech checks to the two degree-zero functors, not to the final degree-q factor."
+    },
+    {
+      "page": 27,
+      "where": "Proof of Corollary 3.4, passage beginning « Par suite »",
+      "scan": "Par suite \\check{\\Hh}^{0}\\Hh^{q}(M) est un préfaisceau séparé dont le faisceau associé est nul. On a donc \\check{\\Hh}^{0}\\Hh^{q}(M)=0",
+      "tex": "Par suite $\\check{\\Hh}^{0} \\check{\\Hh}^{q} (M) = 0$",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "Par suite $\\check{\\Hh}^{0} \\check{\\Hh}^{q} (M) = 0$",
+        "new": "Par suite $\\check{\\Hh}^{0} \\Hh^{q} (M)$ est un préfaisceau séparé dont le faisceau\nassocié est nul. On a donc $\\check{\\Hh}^{0} \\Hh^{q} (M) = 0$"
+      },
+      "note": "The explanation about the separated presheaf and its zero associated sheaf has been dropped. The inner degree-q factor is also unchecked in the print."
+    },
+    {
+      "page": 27,
+      "where": "Corollary 3.5, opening sentence",
+      "scan": "un A-Module (à gauche pour fixer les idées)",
+      "tex": "un $A$-module (à gauche pour fixer les idées)",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "$A$-module (à gauche",
+        "new": "$A$-Module (à gauche"
+      },
+      "note": "The print uses the capitalized technical term « A-Module »."
+    },
+    {
+      "page": 27,
+      "where": "Corollary 3.5, notation for the underlying abelian Groupe; continuing on page 28",
+      "scan": "Notons \\underline{M}",
+      "tex": "Notons $ℳ$",
+      "kind": "underline",
+      "confidence": "high",
+      "fix": {
+        "old": "Notons $ℳ$",
+        "new": "Notons $\\underline{M}$"
+      },
+      "note": "The underline is mathematical notation distinguishing the underlying Groupe from M, not emphasis. The substitution of script ℳ recurs throughout the corollary and its proof; the coordinator entry gives the scope and three examples."
+    },
+    {
+      "page": 28,
+      "where": "Proof of Corollary 3.5, displayed direct-limit identities",
+      "scan": "H^p(Y,M)=\\varinjlim_{\\mathcal U}H^p(\\mathcal U,M), and the analogous identity for \\underline{M}",
+      "tex": "H^p(Y, M) = \\varinjlim_{\\mathcal{U}} H^p(\\mathcal{U}, M) \\quav\nH^p(Y, ℳ) = \\varinjlim_{\\mathcal{U}} H^p(\\mathcal{U},\nℳ)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\check{H}^p(Y,M)=\\varinjlim_{\\mathcal{U}}H^p(\\mathcal{U},M)\\qquad \\check{H}^p(Y,\\underline{M})=\\varinjlim_{\\mathcal{U}}H^p(\\mathcal{U},\\underline{M})",
+      "note": "Both left-hand groups should be Čech groups. The print omits both checks, and the TeX retains these omissions."
+    },
+    {
+      "page": 28,
+      "where": "Exercise 3.6, item 1, last line",
+      "scan": "est canoniquement équivalent au topos",
+      "tex": "est canoniquement équivalent su topos",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "équivalent su topos",
+        "new": "équivalent au topos"
+      },
+      "note": "The print reads « au », not « su »."
+    },
+    {
+      "page": 29,
+      "where": "Exercise 3.6, item 3, comparison with singular cohomology",
+      "scan": "correspondante des espaces classifiants utilisés en topologie lorsque pour les espaces topologiques du type",
+      "tex": "correspondante des type",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "correspondante des type",
+        "new": "correspondante des espaces classifiants utilisés en topologie lorsque pour les espaces topologiques du type"
+      },
+      "note": "A substantial passage identifying the classifying spaces and introducing the comparison hypothesis is missing."
+    },
+    {
+      "page": 30,
+      "where": "Corollary 4.5, condition ii",
+      "scan": "\\mathcal{X}=(X_i\\to X)_{i\\in I}",
+      "tex": "$𝒳 \\mathfrak{X} = (X_i \\to X)_{i\n\\in I}$",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "$𝒳 \\mathfrak{X} =",
+        "new": "$𝒳 ="
+      },
+      "note": "The print has one family symbol, not two successive X's."
+    },
+    {
+      "page": 30,
+      "where": "Proof of Corollary 4.5, final reference",
+      "scan": "l'équivalence i) ⇔ ii) de 4.2",
+      "tex": "\\hyperref[V.subsec4.2]{4.2}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperref[V.prop4.3]{4.3}",
+      "note": "The equivalence i) ⇔ ii) is in Proposition 4.3, whereas 4.2 is a definition. The TeX keeps the printed erroneous reference."
+    },
+    {
+      "page": 30,
+      "where": "Paragraph 4.6, second sentence",
+      "scan": "pour toute famille topologiquement génératrice",
+      "tex": "pour tout famille topologiquement génératrice",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "pour tout famille",
+        "new": "pour toute famille"
+      },
+      "note": "The final e of « toute » is present in the print."
+    },
+    {
+      "page": 30,
+      "where": "Paragraph 4.6, final parenthetical reference",
+      "scan": "exercice 4.1.3",
+      "tex": "exercice 4.1.3",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "exercice 4.13",
+      "note": "The reference has an extra point: the intended exercise number is 4.13, not a subdivision of Definition 4.1. The TeX keeps the printed reading."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): p.26 5/1; p.27 5/2; p.28 1/1; p.29 1/0; p.30 2/2.\nNotation convention, pp.27–28: replace ℳ by \\underline{M} throughout Corollary 3.5 and its proof; the listed fix anchors the first occurrence. Three printed examples: Notons \\underline{M}; M\\mapsto\\underline{M}; H^0(X,\\underline{M})."
+}

@@ -1,0 +1,127 @@
+[
+ {
+  "page": 316,
+  "where": "Première phrase, devant le point de départ du parcours",
+  "scan": "de ce cube $\\bar{Z}_1$ à $\\bar{Y}_2$",
+  "tex": "de ce cube\n$\\bar{Z}_1$ à $\\bar{Y}_2$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "de ce cube de $\\bar{Z}_1$ à $\\bar{Y}_2$",
+  "note": "Il manque la préposition « de » introduisant le point de départ. Le TeX conserve cette omission de l'imprimé."
+ },
+ {
+  "page": 316,
+  "where": "Hexagone, sommet intérieur gauche",
+  "scan": "i_2(g_2p)",
+  "tex": "i_2(g_2p)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "i_2(\\bar{g}_2p)",
+  "note": "La barre de g_2 manque dans l'imprimé : il s'agit du composé des morphismes du cube, noté ailleurs \\bar{g}_2p. Le TeX conserve la coquille."
+ },
+ {
+  "page": 316,
+  "where": "Hexagone, arête verticale extérieure droite",
+  "scan": "Trait vertical sans pointe entre $\\bar{\\bar{g}}_2pj'_1$ et $p\\bar{\\bar{g}}_1j'_1$",
+  "tex": "\\ar@{-}[ld]\\ar[dd]",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\ar@{-}[ld]\\ar[dd]",
+   "new": "\\ar@{-}[ld]\\ar@{-}[dd]"
+  },
+  "note": "Les deux scans montrent un trait non orienté ; le TeX lui ajoute une pointe descendante."
+ },
+ {
+  "page": 317,
+  "where": "3.3.2.4, référence au diagramme d'une compactification du triple",
+  "scan": "(3.2.4.3)",
+  "tex": "\\sisi{(3.2.4.3)}{\\eqhyperref[XVII.eq3.2.5.3]{3.2.5.3}}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\eqhyperref[XVII.eq3.2.5.3]{3.2.5.3}",
+  "note": "Le numéro imprimé est erroné. La première branche du \\sisi reproduit correctement l'imprimé ; la seconde corrige le renvoi."
+ },
+ {
+  "page": 317,
+  "where": "Diagramme de 3.3.2.4, sommet inférieur droit",
+  "scan": "\\bar{f}\\bar{\\bar{g}}\\bar{\\bar{h}}k''k'k",
+  "tex": "\\bar{f}\\bar{\\bar{g}}\\bar{\\bar{h}}k'' k' k.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\bar{f}\\bar{\\bar{g}}\\bar{\\bar{\\bar{h}}}k''k'k",
+  "note": "Le h devrait porter trois barres, non deux. La première branche du \\sisi conserve la coquille imprimée ; la seconde la corrige."
+ },
+ {
+  "page": 318,
+  "where": "À droite du diagramme de (iii bis), condition sur p et p'",
+  "scan": "p\\ p'\\in\\Fl(S,p)",
+  "tex": "p\\sisi{}{,} p' \\in \\Fl(S,p)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "p,p'\\in\\Fl(S,p)",
+  "note": "La virgule séparant les deux morphismes manque dans l'imprimé. Le TeX la rétablit au moyen du \\sisi."
+ },
+ {
+  "page": 318,
+  "where": "Proposition 3.3.4, nature de la catégorie F",
+  "scan": "une catégorie F cofibrée sur S",
+  "tex": "une catégorie $F$ cofibrée sur $S$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "une catégorie $F$ fibrée sur $S$",
+  "note": "Les catégories données en 3.3.3 sont fibrées et leurs foncteurs de transition sont contravariants ; la catégorie obtenue doit être fibrée. Le TeX conserve le « cofibrée » erroné de l'imprimé."
+ },
+ {
+  "page": 319,
+  "where": "Preuve de 4.1.1, référence concernant la conservation des Modules plats",
+  "scan": "(IV 15)",
+  "tex": "\\sisi{IV 15}{\\hyperrefext[V][V.sec1]{1}}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\hyperrefext[V][V.sec1]{1}",
+  "note": "Le renvoi imprimé est erroné. Le TeX le reproduit dans la première branche du \\sisi et le corrige en V 1 dans la seconde."
+ },
+ {
+  "page": 319,
+  "where": "Dernier paragraphe, après « avec P plat »",
+  "scan": "avec P plat (4.1.2).",
+  "tex": "avec $P$ plat\\sisi{ (\\hyperref[XVII.subsubsec4.1.2]{4.1.2})}{}.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "avec $P$ plat.",
+  "note": "Le TeX signale ce renvoi imprimé erroné et le corrige en le supprimant dans la seconde branche du \\sisi."
+ },
+ {
+  "page": 320,
+  "where": "Diagramme initial, troisième ligne, troisième terme tensoriel",
+  "scan": "K\\otimes N",
+  "tex": "K\\otimes M",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "P\\otimes N  \\ar[r]\\ar[d] & K\\otimes M",
+   "new": "P\\otimes N  \\ar[r]\\ar[d] & K\\otimes N"
+  },
+  "note": "Les deux scans portent nettement N au dernier terme de la ligne contenant les produits tensoriels avec N."
+ },
+ {
+  "page": 320,
+  "where": "Première phrase après le diagramme",
+  "scan": "au deux premières colonnes",
+  "tex": "au deux premières\ncolonnes",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "aux deux premières colonnes",
+  "note": "Coquille grammaticale de l'imprimé, conservée par le TeX : « au » doit être « aux »."
+ }
+]

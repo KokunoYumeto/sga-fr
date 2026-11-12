@@ -1,0 +1,2089 @@
+# Misprint pass of the corrected French SGA 7 II, misprints_7II_007
+
+=================== PAGE 413 ===================
+----- corrected edition, expose_XXII_body.tex, page 413 -----
+%%%%%%%%%%  scan idx 420  |  folio 413  %%%%%%%%%%
+
+\underline{Lemme 3.7 (Möbius).} \underline{Soit $B$ un ensemble fini,
+$\{A_i\}$ un recouvrement fini par des sous-ensembles. Alors}
+
+\begin{equation}\tag{3.7.1}
+\operatorname{card}(B)=
+\sum_{j\geq0}(-1)^j
+\sum_{i_0<\cdots<i_j}
+\operatorname{card}(A_{i_0}\cap\cdots\cap A_{i_j}).
+\end{equation}
+
+\underline{Démonstration.} On a la suite spectrale de Leray pour la
+cohomologie rationnelle de l'espace discret $B$ et le recouvrement ouvert
+$\{A_i\}$
+
+\[
+E_1^{p,q}=\bigoplus_{i_0<\cdots<i_q}
+H^p(A_{i_0}\cap\cdots\cap A_{i_q},\mathbb Q)
+\Longrightarrow H^{p+q}(B,\mathbb Q)
+\]
+
+et on calcule la caractéristique d'Euler--Poincaré de $B$.
+
+\underline{Lemme 3.8.} \underline{Si $\{U_i\}$ est un recouvrement fini de
+$X$ par des sous-schémas, alors}
+
+\begin{equation}\tag{3.8.1}
+Z(X)=
+\prod_{j\geq0}
+\prod_{i_0<\cdots<i_j}
+Z(U_{i_0}\cap\cdots\cap U_{i_j})^{(-1)^j}.
+\end{equation}
+
+\underline{Démonstration.} On a la formule
+
+\begin{equation}\tag{3.8.2}
+\operatorname{card}(X(\mathbb F_{q^n}))
+=\sum_{r\mid n}r.\operatorname{card}\{y\in X\mid\deg(y)=r\}
+\end{equation}
+
+qui entraîne
+
+\begin{equation}\tag{3.8.3}
+Z(X)=\exp\!\left(
+\sum_{n\geq1}\operatorname{card}(X(\mathbb F_{q^n}))\frac{t^n}{n}
+\right),
+\end{equation}
+
+et on conclut par 3.7.1.
+
+\underline{Lemme 3.9.} \underline{Supposons que la formule (3.4.1) (ou ce qui
+revient au même, (3.1.2), c'est-à-dire (3.1.1)) soit vraie pour $X$ une
+hypersurface projective. Alors elle est vraie pour tout $X$ séparé de type
+fini.}
+----- misprints recorded on page 413 -----
+[id 7II:710]
+WHERE: display in the proof of 3.7
+PRINT: E_1^{p,q} = ⊕_q H^p(A_{i_o}∩...∩A_{i_q},Q)
+CORRECT: \bigoplus_{i_0<\cdots<i_q}
+TEX BEFORE: \bigoplus_{i_0<\cdots<i_q}
+NOTE: The print has only q under ⊕. The TeX silently corrects it to the full index; the fix restores the printed reading.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: \bigoplus_{i_0<\cdots<i_q}
+  NEW: \bigoplus_q
+
+=================== PAGE 414 ===================
+----- corrected edition, expose_XXII_body.tex, page 414 -----
+%%%%%%%%%%  scan idx 421  |  folio 414  %%%%%%%%%%
+
+\underline{Démonstration.} Par 3.8 et 3.6, (3.4.1) est vraie pour le
+complémentaire d'une hypersurface, $\mathbb P^n-H$. Compte tenu de ce que $\bigcap(\mathbb P^n-H_i)=\mathbb P^n-\bigcup_iH_i$ est encore le complément d'une hypersurface, le recouvrement ouvert
+$\{\mathbb P^n-H_i\}$ de $\mathbb P^n-\bigcap H_i$ permet d'appliquer 3.8 et
+3.5 pour déduire (3.4.1) pour $\mathbb P^n-\bigcap H_i$. Par 3.8 et 3.6,
+(3.4.1) est vraie pour $\bigcap H_i$, c'est-à-dire pour tout $X$ projectif.
+Une nouvelle application de 3.8 et 3.5 donne (3.4.1) pour tout $X$
+quasi-projectif, en particulier pour tout $X$ affine. Finalement, pour $X$
+séparé de type fini, on prend un recouvrement fini par des ouverts affines,
+et on applique 3.8 et 3.5.
+
+4. \underline{Le calcul de la fonction zêta d'une hypersurface à la Dwork}
+
+4.0. Soit
+
+\begin{equation}\tag{4.0.1}
+f(X)=f(X_1,\ldots,X_{n+2})\in\mathbb F_q[X]
+\quad\text{homogène de degré }d,
+\end{equation}
+
+dont l'annulation définit l'hypersurface $V\subset\mathbb P^{n+1}$, et
+désignons par $V^*$ l'ouvert de $V$ où
+$\prod_{i=1}^{n+2}X_i$ est inversible, $V^*_{\mathrm{aff}}$ le cône affine
+de $V^*$.
+
+Choisissons un caractère additif non-trivial
+
+\begin{equation}\tag{4.0.2}
+\chi:\mathbb F_{q^\nu}\longrightarrow\mu_p(C),
+\end{equation}
+
+$C$ étant un corps alg. clos fixé de car. nulle
+(p.ex. $C=\mathbb C$), de sorte qu'on a
+
+\begin{equation}\tag{4.0.3}
+\text{pour }x\in\mathbb F_{q^\nu}\qquad
+\sum_{y\in\mathbb F_{q^\nu}}\chi(xy)=
+\begin{cases}
+q^\nu&\text{si }x=0\\
+0&\text{si }x\ne0.
+\end{cases}
+\end{equation}
+
+Pour $x=(x_1,\ldots,x_{n+2})\in(\mathbb F_{q^\nu}^*)^{n+2}$, on a donc
+----- misprints recorded on page 414 -----
+[id 7II:711]
+WHERE: (4.0.3), first case
+PRINT: q^ν si χ = 0
+CORRECT: x=0
+TEX BEFORE: \text{si }x=0
+NOTE: The print types χ for x here. The TeX silently corrects; the fix restores the printed reading.
+
+[id 7II:712]
+WHERE: (4.0.3), second case
+PRINT: 0 si χ ≠ 0
+CORRECT: x\ne0
+TEX BEFORE: \text{si }x\ne0
+NOTE: The print types χ for x here. The TeX silently corrects.
+
+[id 7II:713]
+WHERE: last line
+PRINT: Pour χ = (χ_1,...,χ_{n+2}) ∈ (IF*_{q^ν})^{n+2}
+CORRECT: x=(x_1,\ldots,x_{n+2})
+TEX BEFORE: Pour $x=(x_1,\ldots,x_{n+2})
+NOTE: The print types χ for x here. The TeX silently corrects.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: si }x=0
+  NEW: si }\chi=0
+  OLD: si }x\ne0
+  NEW: si }\chi\ne0
+  OLD: Pour $x=(x_1,\ldots,x_{n+2})
+  NEW: Pour $\chi=(\chi_1,\ldots,\chi_{n+2})
+
+=================== PAGE 415 ===================
+----- corrected edition, expose_XXII_body.tex, page 415 -----
+%%%%%%%%%%  scan idx 422  |  folio 415  %%%%%%%%%%
+
+\begin{equation}\tag{4.0.4}
+1+\sum_{x_0\in\mathbb F_{q^\nu}^*}\chi(x_0f(x))
+=\sum_{x_0\in\mathbb F_{q^\nu}}\chi(x_0f(x))
+=
+\begin{cases}
+q^\nu&\text{si }f(x)=0\\
+0&\text{sinon}.
+\end{cases}
+\end{equation}
+
+En sommant (4.0.4) sur $x\in(\mathbb F_{q^\nu}^*)^{n+2}$, on obtient
+
+\begin{equation}\tag{4.0.5}
+\operatorname{card}V^*_{\mathrm{aff}}(\mathbb F_{q^\nu})
+=\frac1{q^\nu}
+\sum_{x\in(\mathbb F_{q^\nu}^*)^{n+2}}
+\left\{1+\sum_{x_0\in\mathbb F_{q^\nu}^*}\chi(x_0f(x))\right\}
+\end{equation}
+
+et, compte tenu de ce que
+
+\begin{equation}\tag{4.0.6}
+\operatorname{card}V^*_{\mathrm{aff}}(\mathbb F_{q^\nu})
+=(q^\nu-1)\operatorname{card}V^*(\mathbb F_{q^\nu})
+\end{equation}
+
+(4.0.5) se récrit
+
+\begin{equation}\tag{4.0.7}
+(q^\nu-1)\operatorname{card}V^*(\mathbb F_{q^\nu})
+=\frac{(q^\nu-1)^{n+2}}{q^\nu}
++\frac1{q^\nu}
+\sum_{(x_0,x)\in(\mathbb F_{q^\nu}^*)^{n+3}}\chi(x_0f(x)).
+\end{equation}
+
+Écrivons explicitement la forme $f(X)$ comme somme de monômes
+
+\begin{equation}\tag{4.0.8}
+f(X)=\sum a_wX^w,
+\end{equation}
+
+où $w=(w_1,\ldots,w_{n+2})$ avec $\sum w_i=d$,
+$X^w\overset{\mathrm{dfn}}{=}X_1^{w_1}\cdots X_{n+2}^{w_{n+2}}$, de sorte
+que (4.0.7) se récrit
+
+\begin{equation}\tag{4.0.9}
+(q^\nu-1)\operatorname{card}V^*(\mathbb F_{q^\nu})
+=\frac{(q^\nu-1)^{n+2}}{q^\nu}
++\frac1{q^\nu}
+\sum_{(x_0,x)\in(\mathbb F_{q^\nu}^*)^{n+3}}
+\prod_w\chi(a_wx_0x^w).
+\end{equation}
+
+4.1. Il faut maintenant expliciter notre ``caractère additif à valeurs en
+caractéristique zéro''. On a envie de prendre simplement
+
+\begin{equation}\tag{4.1.0}
+\chi:x\longmapsto
+\exp\!\left(2\pi i\,\operatorname{tr}_{\mathbb F_{q^\nu}/\mathbb F_p}(x)\right)
+=\xi_p^{\operatorname{tr}_{\mathbb F_{q^\nu}/\mathbb F_p}(x)}.
+\end{equation}
+----- misprints recorded on page 415 -----
+[id 7II:714]
+WHERE: (4.0.4), first sum
+PRINT: Σ_{X_o ∈ IF*_{q^ν}}
+CORRECT: x_0
+TEX BEFORE: 1+\sum_{x_0
+NOTE: The summation index is printed as a capital X (the second sum has a small x). The TeX silently corrects.
+
+[id 7II:715]
+WHERE: (4.1.0)
+PRINT: exp(2π i tr_{IF_{q^ν}/IF_p}(x) = ξ_p^{...}
+CORRECT: (x)\right)
+TEX BEFORE: \exp\!\left(2\pi i\,...(x)\right)
+NOTE: The parenthesis after exp is never closed in the print. The TeX silently closes it; \right. restores the printed reading and still compiles.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: {4.0.4}\n1+\sum_{x_0
+  NEW: {4.0.4}\n1+\sum_{X_0
+  OLD: (x)\right)
+  NEW: (x)\right.
+
+=================== PAGE 416 ===================
+----- corrected edition, expose_XXII_body.tex, page 416 -----
+%%%%%%%%%%  scan idx 423  |  folio 416  %%%%%%%%%%
+
+Désignons par
+
+\begin{align}
+\tag{4.1.1}
+\Omega&\quad\text{la clôture algébrique de }\mathbb Q_p\\
+\tag{4.1.2}
+\operatorname{ord}:\Omega^*&\longrightarrow\mathbb Q
+\quad\text{l'ordinal, normalisé par }\operatorname{ord}(p)=1\\
+\tag{4.1.3}
+\xi_p&\in\Omega
+\quad\text{une racine $p$-ième primitive de l'unité.}
+\end{align}
+
+On constate (cf. [2]) qu'il existe
+
+\begin{equation}\tag{4.1.4}
+\pi\in\mathbb Q_p(\xi_p),\qquad
+\operatorname{ord}(\pi)=\frac1{p-1}
+\end{equation}
+
+tel que
+
+\begin{equation}\tag{4.1.5}
+\sum_{n\geq0}\frac{\pi^{p^n}}{p^n}=0,
+\end{equation}
+
+(NB. On constate aussitôt que le premier membre converge dans
+$\mathbb Q_p(\xi_p)$.)
+
+On définit \underline{l'exponentielle d'Artin-Hasse}
+
+\begin{equation}\tag{4.1.6}
+E(X)=\exp\!\left(\sum_{n\geq0}\frac{X^{p^n}}{p^n}\right)
+\in\mathbb Q_p[[X]]
+\end{equation}
+
+qui, ô miracle, se trouve dans $\mathbb Z_p[[X]]$. On définit
+
+\begin{equation}\tag{4.1.7}
+\Theta(X)=E(\pi X),
+\end{equation}
+
+dont les propriétés fondamentales sont résumées dans le lemme suivant :
+
+\underline{Lemme} 4.2.
+
+\begin{equation}\tag{4.2.1}
+\Theta(X)=\sum_nB_nX^n,\qquad B_0=1,\quad B_1=\pi,\quad
+\operatorname{ord}(B_n)\geq\frac n{p-1}.
+\end{equation}
+
+\begin{equation}\tag{4.2.2}
+\Theta(1)=\xi_p,\quad
+\text{\uline{une racine $p$-ième primitive de l'unité.}}
+\end{equation}
+
+(4.2.3) \underline{Soit $t\in\Omega$, et supposons que, pour un entier
+$a>0$ donné, $t=t^{p^a}$ (i.e. $t$ est un ``représentant de Teichmüller''
+dans $W(\mathbb F_{p^a})\subset\Omega$). Alors
+$\sum_{j=0}^{a-1}t^{p^j}\in\mathbb Z_p$, de sorte qu'on peut définir la
+série formelle}
+----- misprints recorded on page 416 -----
+[id 7II:716]
+WHERE: (4.2.1), A_1 = π
+PRINT: A_1 = π
+CORRECT: B_1
+TEX BEFORE: A_1=\pi
+NOTE: The coefficients are B_n (Θ(X)=ΣB_nX^n, B_0=1). The TeX keeps the printed A_1.
+
+[id 7II:717]
+WHERE: (4.2.3), dans W(F_{q^a})
+PRINT: W(F_{q^a}) ⊂ Ω
+CORRECT: W(\mathbb F_{p^a})
+TEX BEFORE: W(\mathbb F_{q^a})
+NOTE: t^{p^a}=t puts t in W(F_{p^a}) (cf. Cor. 4.3, F_{p^a}). The same slip occurs twice on p. 417. The TeX keeps q^a.
+
+=================== PAGE 417 ===================
+----- corrected edition, expose_XXII_body.tex, page 417 -----
+%%%%%%%%%%  scan idx 424  |  folio 417  %%%%%%%%%%
+
+\[
+(\Theta(X))^{\sum_{j=0}^{a-1}t^{p^j}},
+\]
+
+et on a une identité de séries formelles
+
+\begin{equation}\tag{4.2.3.1}
+\prod_{j=0}^{a-1}\Theta(t^{p^j}X)
+=(\Theta(X))^{\sum_{j=0}^{a-1}t^{p^j}}.
+\end{equation}
+
+\underline{Démonstration.} Compte tenu de ce que
+$E(X)\in\mathbb Z_p[[X]]$, (4.2.1) se déduit de la définition. Quant à
+(4.2.2), on a
+
+\begin{equation}\tag{4.2.4}
+\log(\Theta(1))=0
+\qquad\text{par le choix de $\pi$ (4.1.5)}
+\end{equation}
+
+et
+
+\begin{equation}\tag{4.2.5}
+\operatorname{ord}(\Theta(1)-1)=\frac1{p-1}
+\qquad\text{par (4.2.1).}
+\end{equation}
+
+Par (4.2.4), il existe un entier $n\geq0$ tel que
+$\Theta(1)^{p^n}=1$, (c'est la caractérisation du noyau du logarithme) et
+(4.2.5) entraîne que $n=1$.
+
+Quant à (4.2.3.1), en prenant les logarithmes, il résulte d'un calcul évident,
+une fois prouvé que l'on a bien
+$\sum_{j=0}^{a-1}t^{p^j}\in\mathbb Z_p$. Or on voit aussitôt que les
+$t^{p^j}$ ($0\leq j\leq a-1$) sont les conjugués de
+$t\in W(\mathbb F_{p^a})$ sur $\mathbb Z_p$, donc
+
+\[
+\sum_{j=0}^{a-1}t^{p^j}
+=\operatorname{Tr}_{W(\mathbb F_{p^a})/\mathbb Z_p}(t)\in\mathbb Z_p.
+\]
+
+En prenant la valeur en $X=1$ des deux membres de (4.2.3.1) nous trouvons le
+
+\underline{Corollaire} 4.3. \underline{Soit $t\in\Omega$ vérifiant $t^{p^a}=t$.
+Désignons par $\bar t\in\mathbb F_{p^a}$ sa classe résiduelle. Alors on a}
+
+\begin{equation}\tag{4.3.1}
+\prod_{j=0}^{a-1}\Theta(t^{p^j})
+=\xi_p^{\operatorname{tr}_{\mathbb F_{p^a}/\mathbb F_p}(\bar t)}.
+\end{equation}
+----- misprints recorded on page 417 -----
+[id 7II:718]
+WHERE: (4.2.3.1), exponent of the right-hand side
+PRINT: (Θ(X))^{Σ_{j=0}^{a-1} t^j}
+CORRECT: \sum_{j=0}^{a-1}t^{p^j}
+TEX BEFORE: (\Theta(X))^{\sum_{j=0}^{a-1}t^j}
+NOTE: Should match the exponent just above (Σ t^{p^j}). The TeX keeps t^j.
+
+[id 7II:719]
+WHERE: Démonstration, line 1
+PRINT: Compte tenu de ce qui E(X) ∈ ℤ_p[[X]]
+CORRECT: de ce que
+TEX BEFORE: Compte tenu de ce que
+NOTE: The TeX silently corrects the printed 'ce qui'.
+
+[id 7II:720]
+WHERE: 'sont les conjugués de t ∈ W(F_{q^a})'
+PRINT: t ∈ W(F_{q^a})
+CORRECT: W(\mathbb F_{p^a})
+TEX BEFORE: t\in W(\mathbb F_{q^a})
+NOTE: As on p. 416. The TeX keeps q^a.
+
+[id 7II:721]
+WHERE: display Σ t^{p^j} = Tr(...)(t)
+PRINT: Tr_{W(F_{q^a})/ℤ_p}(t)
+CORRECT: \operatorname{Tr}_{W(\mathbb F_{p^a})/\mathbb Z_p}
+TEX BEFORE: \operatorname{Tr}_{W(\mathbb F_{q^a})/\mathbb Z_p}(t)
+NOTE: The trace from W(F_{q^a}) would have more than a terms. The TeX keeps q^a.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: de ce que
+  NEW: de ce qui
+
+=================== PAGE 418 ===================
+----- corrected edition, expose_XXII_body.tex, page 418 -----
+%%%%%%%%%%  scan idx 425  |  folio 418  %%%%%%%%%%
+
+4.4. Rappelons que le corps résiduel de l'anneau des entiers de
+$\mathbb Q_p(\xi_p)$ est $\mathbb F_p$. Soient
+
+\begin{equation}\tag{4.4.0}
+K=\text{l'extension non-ramifiée de $\mathbb Q_p(\xi_p)$ à corps résiduel
+$\mathbb F_q$},
+\end{equation}
+
+\begin{equation}\tag{4.4.1}
+\tau\in\Gal(K/\mathbb Q_p(\xi_p))
+\end{equation}
+
+le "Frobenius", i.e. l'automorphisme se réduisant suivant l'automorphisme
+de Frobenius de $\mathbb F_q/\mathbb F_p$, $x\longmapsto x^p$,
+
+\begin{equation}\tag{4.4.2}
+\text{Soit }F(X)=\sum_wA_wX^w
+\text{ le relèvement en $K[X_1,\ldots,X_{n+2}]$ de $f(X)$}
+\end{equation}
+
+dont les coefficients vérifient $A_w^q=A_w$. Mettant ensemble (4.3.1) et
+(4.0.9), on trouve (compte tenu de la définition (4.1.0) de $\chi$) :
+
+\begin{equation}\tag{4.4.3}
+\left\{
+\begin{aligned}
+&(q^\nu-1)\operatorname{card}V^*(\mathbb F_{q^\nu})
+-\frac{(q^\nu-1)^{n+2}}{q^\nu}\\
+&\quad=\frac1{q^\nu}
+\sum_{(X_0,X)\in(\mu_{q^\nu-1}(\Omega))^{n+3}}
+\prod_w\prod_{j=0}^{\operatorname{ord}(q^\nu)-1}
+\Theta\!\left(A_w^{p^j}X_0^{p^j}X^{p^jw}\right).
+\end{aligned}
+\right.
+\end{equation}
+
+Définissons
+
+\[
+H(X)=H(X_0,\ldots,X_{n+2})\in K[[X_0,\ldots,X_{n+2}]]
+\]
+
+par
+
+\begin{equation}\tag{4.4.4}
+H(X)=\prod_w
+\Theta\!\left(A_wX_0X_1^{w_1}\cdots X_{n+2}^{w_{n+2}}\right).
+\end{equation}
+
+Nous faisons agir $\Gal(K/\mathbb Q_p(\xi_p))$ sur
+$K[[X_0,\ldots,X_{n+2}]]$ à travers son action sur les coefficients ;
+l'action composante de $\sigma\in\Gal(K/\mathbb Q_p(\xi_p))$ sera notée
+
+\begin{equation}\tag{4.4.5}
+G(X)\longmapsto G^\sigma(X).
+\end{equation}
+----- misprints recorded on page 418 -----
+[id 7II:722]
+WHERE: line before (4.4.3)
+PRINT: (compte tenu de la définition (4.1.0) de X) :
+CORRECT: de $\chi$)
+TEX BEFORE: de $\chi$) :
+NOTE: The print seems to type a Latin capital X where the character χ of (4.1.0) is meant. The TeX silently gives χ. Check how (4.1.0) on p. 415 is printed.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: de $\chi$)
+  NEW: de $X$)
+
+=================== PAGE 419 ===================
+----- corrected edition, expose_XXII_body.tex, page 419 -----
+%%%%%%%%%%  scan idx 426  |  folio 419  %%%%%%%%%%
+
+On a en particulier
+
+\[
+H^{\tau^j}(X)=\prod_w
+\Theta\!\left(A_w^{\tau^j}X_0X_1^{w_1}\cdots
+X_{n+2}^{w_{n+2}}\right).
+\]
+
+Compte tenu de ce que $A_w^{\tau^j}=A_w^{p^j}$, (4.4.3) se récrit alors
+
+\begin{equation}\tag{4.4.6}
+\begin{aligned}
+(q^\nu-1)\operatorname{Card}V^*(\mathbb F_{q^\nu})
+&=\frac{(q^\nu-1)^{n+2}}{q^\nu}\\
+&\quad+\frac1{q^\nu}
+\sum_{(X_0,X)\in(\mu_{q^\nu-1}(\Omega))^{n+3}}
+\prod_{j=0}^{\operatorname{ord}(q^\nu)-1}H^{\tau^j}(X^{p^j})
+\end{aligned}
+\end{equation}
+
+4.5. Nous allons maintenant exprimer la somme dans (4.4.6) comme une trace.
+
+Pour chaque $b\in\mathbb Q$, on définit une $K$-algèbre de Banach $p$-adique
+
+\begin{equation}\tag{4.5.1}
+L(b)=\text{le sous-anneau de $K[[X_0,\ldots,X_{n+2}]]$ formé des séries}
+\end{equation}
+
+qui s'écrivent
+
+\begin{equation}\tag{4.5.2}
+\sum_{dU_0=\sum_{i\geq1}U_i}
+B_UX_0^{U_0}X_1^{U_1}\cdots X_{n+2}^{U_{n+2}}
+\qquad (U=(U_0,\ldots,U_{n+2}))
+\end{equation}
+
+et qui vérifient
+
+\begin{equation}\tag{4.5.3}
+\inf_U\bigl(\operatorname{ord}(B_U)-bU_0\bigr)>-\infty.
+\end{equation}
+
+C'est une algèbre de Banach $p$-adique pour la fonction d'ordinal
+(l'opposé du logarithme de la norme)
+
+\begin{equation}\tag{4.5.4}
+\inf_U\bigl(\operatorname{ord}(B_U)-bU_0\bigr)
+=\operatorname{ord}\!\left(\sum_U B_UX^U\right).
+\end{equation}
+
+On vérifie sur 4.4.4 et (4.2.1) que l'on a
+
+\[
+H(X)\in L\!\left(\frac1{p-1}\right).
+\]
+----- misprints recorded on page 419 -----
+[id 7II:723]
+WHERE: first display, H^{τ^j}(X)
+PRINT: X_o X_1^W ... X_{n+2}^{W_{n+2}}
+CORRECT: X_0X_1^{w_1}
+TEX BEFORE: X_0X_1^{w_1}\cdots X_{n+2}^{w_{n+2}}
+NOTE: The print's exponent of X_1 lacks its index 1 (cf. (4.4.4) X_1^{W_1}). The TeX silently corrects. The fix keeps the TeX's lower-case w.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: X_0X_1^{w_1}
+  NEW: X_0X_1^{w}
+
+=================== PAGE 421 ===================
+----- corrected edition, expose_XXII_body.tex, page 421 -----
+%%%%%%%%%%  scan idx 428  |  folio 421  %%%%%%%%%%
+
+\underline{Lemme 4.5.8 (ou lemme de la trace (DWORK)).}
+\underline{Soient $b\in\mathbb Q$, $b>0$, $k\in\mathbb Z$, $k\geq2$, et
+$G\in L(b/k)$. Alors le composé}
+
+\[
+L(b)\xrightarrow{\ \text{"restriction"}\ }L(b/k)
+\xrightarrow{\ \times G\ }L(b/k)
+\xrightarrow{\ \psi_k\ }L(b),
+\]
+
+\underline{noté $\psi_k\circ G$, est complètement continu, et sa trace
+[cf. [4]] est donnée par la formule}
+
+\begin{equation}\tag{4.5.9}
+\operatorname{tr}(\psi_k\circ G)
+=\frac1{(k-1)^{n+2}}
+\sum_{X\in(\mu_{k-1}(\Omega))^{n+3}}G(X).
+\end{equation}
+
+Appliquant ce lemme au cas
+
+\[
+\left\{
+\begin{aligned}
+k&=q^\nu\\
+G(X)&=\prod_{j=0}^{\operatorname{ord}(q^\nu)-1}
+H^{\tau^j}(X^{p^j})
+\in L\!\left(\frac{p}{(p-1)q^\nu}\right)\\
+b&=\frac1{p-1}
+\end{aligned}
+\right.
+\]
+
+(4.4.6) se récrit
+
+\begin{equation}\tag{4.5.10}
+\begin{aligned}
+(q^\nu-1)\operatorname{card}V^*(\mathbb F_{q^\nu})
+&=\frac{(q^\nu-1)^{n+2}}{q^\nu}\\
+&\quad+\frac{(q^\nu-1)^{n+3}}{q^\nu}
+\operatorname{tr}\!\left(
+\left.\psi_{q^\nu}
+\prod_{j=0}^{\operatorname{ord}(q^\nu)-1}H^{\tau^j}(X^{p^j})
+\right|L\!\left(\frac1{p-1}\right)\right).
+\end{aligned}
+\end{equation}
+
+Soit $L^0(b)$ l'idéal des éléments de $L(b)$ qui "s'annulent en $0$",
+i.e. "sans terme constant". Il est stable sous $\psi_k\circ G$, et on a
+évidemment
+
+\begin{equation}\tag{4.5.11}
+\operatorname{tr}(\psi_k\circ G)
+=G(0)+\operatorname{tr}\!\left(
+\left.\psi_k\circ G\right|L^0\right).
+\end{equation}
+
+Compte tenu de ce que $H(0)=1$, (4.5.10) se récrit
+
+\begin{equation}\tag{4.5.12}
+\begin{aligned}
+\operatorname{card}V^*(\mathbb F_{q^\nu})
+&=(q^\nu-1)^{n+1}\\
+&\quad+\frac{(q^\nu-1)^{n+2}}{q^\nu}
+\operatorname{tr}\!\left(
+\left.\psi_{q^\nu}\circ
+\prod_{j=0}^{\operatorname{ord}(q^\nu)-1}H^{\tau^j}(X^{p^j})
+\right|L^0\!\left(\frac1{p-1}\right)\right).
+\end{aligned}
+\end{equation}
+----- misprints recorded on page 421 -----
+[id 7II:724]
+WHERE: (4.5.10), left-hand side
+PRINT: (q-1)card V*(F_{q^ν})
+CORRECT: (q^\nu-1)\operatorname{card}V^*(\mathbb F_{q^\nu})
+TEX BEFORE: (q-1)\operatorname{card}V^*(\mathbb F_{q^\nu})
+NOTE: The TeX keeps the printed reading. A handwritten ν is missing: (4.5.10) with (4.5.11) gives (4.5.12) only if this factor is (q^ν-1).
+
+[id 7II:725]
+WHERE: (4.5.10), operator inside tr(
+PRINT: Ψ_q ∏ (subscript q only)
+CORRECT: \psi_{q^\nu}
+TEX BEFORE: \psi_{q^\nu}
+NOTE: The TeX silently corrects. The lemma with k=q^ν gives ψ_{q^ν}; the handwritten ν was left out.
+
+[id 7II:726]
+WHERE: (4.5.12), denominator of second term
+PRINT: (q^ν-1)^{n+2}/q
+CORRECT: \frac{(q^\nu-1)^{n+2}}{q^\nu}
+TEX BEFORE: \frac{(q^\nu-1)^{n+2}}{q}
+NOTE: The TeX keeps the printed reading. (4.5.10)-(4.5.11) and (4.5.16) require q^ν (ν missing).
+
+[id 7II:727]
+WHERE: (4.5.12), operator inside tr(
+PRINT: Ψ_q ∘ ∏
+CORRECT: \psi_{q^\nu}
+TEX BEFORE: \psi_{q^\nu}\circ
+NOTE: The TeX silently corrects, as in (4.5.10).
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: {q^\nu}\n\operatorname{tr}\!\left(\n\left.\psi_{q^\nu}
+  NEW: {q^\nu}\n\operatorname{tr}\!\left(\n\left.\psi_q
+  OLD: {q}\n\operatorname{tr}\!\left(\n\left.\psi_{q^\nu}
+  NEW: {q}\n\operatorname{tr}\!\left(\n\left.\psi_q
+
+=================== PAGE 422 ===================
+----- corrected edition, expose_XXII_body.tex, page 422 -----
+%%%%%%%%%%  scan idx 429  |  folio 422  %%%%%%%%%%
+
+Considérons maintenant l'opérateur $\tau^{-1}$-linéaire
+
+\begin{equation}\tag{4.5.13}
+\tau^{-1}\circ\psi_p\circ H(X):L(b)\longrightarrow L(b).
+\end{equation}
+
+On constate que ses itérés sont donnés par
+
+\begin{equation}\tag{4.5.14}
+(\tau^{-1}\circ\psi_p\circ H(X))^a
+=\tau^{-a}\circ\psi_{p^a}\circ
+H(X)H^\tau(X^p)\cdots H^{\tau^{a-1}}(X^{p^{a-1}}),
+\end{equation}
+
+et on note que, si $\operatorname{ord}(q)\mid a$, on a
+$\tau^{-a}=\operatorname{id}$. Ceci posé, on définit une opération
+$\tau^{-1}$-linéaire
+
+\begin{equation}\tag{4.5.15}
+\left\{
+\begin{aligned}
+\alpha:L^0\!\left(\frac1{p-1}\right)
+&\longrightarrow L^0\!\left(\frac1{p-1}\right)\\
+\alpha&=\frac1p\,\tau^{-1}\circ\psi_p\circ H(X),
+\end{aligned}
+\right.
+\end{equation}
+
+de sorte que (4.5.12) se récrit
+
+\begin{equation}\tag{4.5.16}
+\operatorname{card}V^*(\mathbb F_{q^\nu})
+=(q^\nu-1)^{n+1}
++(q^\nu-1)^{n+2}
+\operatorname{tr}\!\left(
+\left.(\alpha)^{\operatorname{ord}(q^\nu)}
+\right|L^0\!\left(\frac1{p-1}\right)\right).
+\end{equation}
+
+Désignons par
+
+\begin{equation}\tag{4.5.17}
+S=\text{l'ensemble }\{1,\ldots,n+2\}.
+\end{equation}
+
+Pour tout sous-ensemble $A\subset S$, $A\ne\varnothing$, on définit un
+sous-espace de $L(b)$ :
+
+\begin{equation}\tag{4.5.18}
+\begin{aligned}
+L^A(b)={}&\text{ensemble des séries $\sum B_UX^U\in L(b)$ telles que, pour chaque
+monôme $X^U$ avec $B_U\ne0$,}\\
+&\text{les $U_i>0$ sont exactement $U_0$ et les $U_j$, $j\in A$}.
+\end{aligned}
+\end{equation}
+
+On a
+
+\begin{equation}\tag{4.5.19}
+L^0(b)=\bigoplus_{\substack{A\subset S\\A\ne\varnothing}}L^A(b)
+\end{equation}
+----- misprints recorded on page 422 -----
+[id 7II:728]
+WHERE: equation number of the iterates formula
+PRINT: (5.4.14)
+CORRECT: \tag{4.5.14}
+TEX BEFORE: \tag{5.4.14}
+NOTE: The TeX keeps the printed reading. The formula stands between (4.5.13) and (4.5.15).
+
+[id 7II:729]
+WHERE: (4.5.16), end
+PRINT: |L^o(1/(p-1)) .  (the parenthesis of tr( is never closed)
+CORRECT: \left(\frac1{p-1}\right)\right).
+TEX BEFORE: \right)\right).
+NOTE: The TeX silently supplies the closing parenthesis.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: \left(\frac1{p-1}\right)\right).
+  NEW: \left(\frac1{p-1}\right)\right..
+
+=================== PAGE 423 ===================
+----- corrected edition, expose_XXII_body.tex, page 423 -----
+%%%%%%%%%%  scan idx 430  |  folio 423  %%%%%%%%%%
+
+et, pour chaque sous-ensemble
+
+\[
+B\subset S,\qquad B\ne\varnothing,
+\]
+
+on a
+
+\begin{equation}\tag{4.5.20}
+\bigoplus_{A\supset B}L^A(b)
+=L(b)\cap\text{ l'idéal }
+\left(\prod_{i\in B}X_i\right)K[[X]].
+\end{equation}
+
+Évidemment chaque sous-espace $\bigoplus_{A\supset B}L^A(b)$ est stable
+par $\alpha$ ; il en résulte qu'il en est de même pour
+$\bigoplus_{A\supsetneq B}L^A(b)$, qui est somme de sous-espaces du type
+précédent.
+
+On définit
+
+\begin{equation}\tag{4.5.21}
+\alpha_B=\text{l'endomorphisme $\tau^{-1}$-linéaire induit par $\alpha$ sur}
+\quad
+\frac{\displaystyle\bigoplus_{A\supset B}
+L^A\!\left(\frac1{p-1}\right)}
+{\displaystyle\bigoplus_{A\supsetneq B}
+L^A\!\left(\frac1{p-1}\right)}
+\simeq L^B\!\left(\frac1{p-1}\right).
+\end{equation}
+
+Explicitement, on obtient $\alpha_B$ par la formule
+
+\begin{equation}\tag{4.5.22}
+\alpha_B=\frac{\tau^{-1}}p\,\psi_p\,H_B(X),
+\end{equation}
+
+opération sous laquelle $L^B$ est stable, où $H_B(X)$ se déduit de $H(X)$
+en y faisant la substitution $X_i=0$ pour $i\notin\{0\}\cup B$.
+
+Récrivons encore (4.5.16)
+
+\begin{equation}\tag{4.5.23}
+\operatorname{card}V^*(\mathbb F_{q^\nu})
+=(q^\nu-1)^{n+1}
++(q^\nu-1)^{n+2}
+\sum_{\substack{A\subset S\\A\ne\varnothing}}
+\operatorname{tr}\!\left((\alpha_A)^{\operatorname{ord}(q^\nu)}\right).
+\end{equation}
+
+Définissons, pour $A\subset S$, $A\ne\varnothing$, l'hypersurface
+
+\begin{equation}\tag{4.5.24}
+V_A\subset\mathbb P^{\operatorname{card}(A)-1}
+\simeq
+\mathbb P^{n+1}\cap
+\{X_i=0\ \forall i\notin A\}
+\end{equation}
+
+définie par $f_A(X)$, le polynôme déduit de $f(X)$ en y faisant la
+substitution $X_i=0$ pour $i\notin A$.
+----- misprints recorded on page 423 -----
+[id 7II:730]
+WHERE: equation number after 'Récrivons encore (4.5.16)'
+PRINT: (4.5.2.3)
+CORRECT: \tag{4.5.23}
+TEX BEFORE: \tag{4.5.2.3}
+NOTE: The TeX keeps the printed reading.
+
+[id 7II:731]
+WHERE: last sentence
+PRINT: déduit de f(X) y faisant la substitution en X_i = 0 pour i ∉ A.
+CORRECT: de $f(X)$ en y faisant la substitution $X_i=0$
+TEX BEFORE: déduit de $f(X)$ en y faisant la substitution $X_i=0$
+NOTE: The TeX silently corrects the misplaced 'en'.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: de $f(X)$ en y faisant la\nsubstitution $X_i=0$
+  NEW: de $f(X)$ y faisant la\nsubstitution en $X_i=0$
+
+=================== PAGE 424 ===================
+----- corrected edition, expose_XXII_body.tex, page 424 -----
+%%%%%%%%%%  scan idx 431  |  folio 424  %%%%%%%%%%
+
+Compte tenu de la compatibilité de la formation de la série $H$ à partir de
+$f(X)$ à l'opération de substitution de 0 pour certaines des variables
+(4.5.23) donne, pour chaque $A\subseteq S$, $A\ne\varnothing$
+
+\begin{equation}\tag{4.5.25}
+\operatorname{card}(V_A^*(\mathbb F_{q^\nu}))
+=(q^\nu-1)^{\operatorname{card}(A)-1}
++(q^\nu-1)^{\operatorname{card}(A)}
+\sum_{B\subset A}
+\operatorname{tr}\!\left((\alpha_B)^{\operatorname{ord}(q^\nu)}\right).
+\end{equation}
+
+D'autre part, on a
+
+\begin{equation}\tag{4.5.26}
+\operatorname{card}V(\mathbb F_{q^\nu})
+=\sum_{\substack{A\subset S\\A\ne\varnothing}}
+\operatorname{card}V_A^*(\mathbb F_{q^\nu}).
+\end{equation}
+
+Après une sommation facile, (4.5.25) donne alors
+
+\begin{equation}\tag{4.5.27}
+\begin{aligned}
+\operatorname{card}V(\mathbb F_{q^\nu})
+={}&1+q^\nu+q^{2\nu}+\cdots
++q^{\nu(\operatorname{card}(S)-1)}\\
+&+\sum_{\substack{B\subset S\\B\ne\varnothing}}
+(q^\nu-1)^{\operatorname{card}(B)}
+q^{\nu\operatorname{card}(S-B)}
+\operatorname{tr}\!\left((\alpha_B)^{\operatorname{ord}(q^\nu)}\right).
+\end{aligned}
+\end{equation}
+
+Notons que $\alpha$ donc les $\alpha_B$ étant $\tau^{-1}$-linéaire, les
+$\alpha_B^{\operatorname{ord}(q)}$ sont $K$-linéaires. Définissons alors les
+séries caractéristiques
+
+\[
+\Delta_B(t)\in1+tK[[t]]
+\]
+
+\begin{equation}\tag{4.5.28}
+\Delta_B(t)=\det\!\left(
+1-t\alpha_B^{\operatorname{ord}(q)}
+\mathrel{\Big|}L^B\!\left(\frac1{p-1}\right)\right).
+\end{equation}
+
+Introduisons des endomorphismes de $1+tK[[t]]$
+
+\begin{equation}\tag{4.5.29}
+\varphi:g(t)\longmapsto g^\varphi(t)=g(qt)
+\end{equation}
+
+et
+
+\begin{equation}\tag{4.5.30}
+\delta=1-\varphi:g(t)\longmapsto
+g^\delta(t)=g(t)/g(qt)
+\end{equation}
+----- misprints recorded on page 424 -----
+[id 7II:732]
+WHERE: (4.5.25), first exponent
+PRINT: (q^ν-1)^{car(A)-1}
+CORRECT: (q^\nu-1)^{\operatorname{card}(A)-1}
+TEX BEFORE: \operatorname{car}(A)-1
+NOTE: The TeX keeps the printed reading.
+
+[id 7II:733]
+WHERE: (4.5.25), trace term
+PRINT: tr((α_B))^{ord(q^ν)})
+CORRECT: \operatorname{tr}((\alpha_B)^{\operatorname{ord}(q^\nu)})
+TEX BEFORE: \operatorname{tr}\!\left((\alpha_B)^{\operatorname{ord}(q^\nu)}\right)
+NOTE: The TeX silently corrects the misplaced parenthesis.
+
+[id 7II:734]
+WHERE: same sentence, 'τ^{-1} linéaire'
+PRINT: τ^{-1} linéaire (no hyphen)
+CORRECT: $\tau^{-1}$-linéaire
+TEX BEFORE: $\tau^{-1}$-linéaire
+NOTE: The TeX silently corrects; the print elsewhere writes τ^{-1}-linéaire.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: (\alpha_B)^{\operatorname{ord}(q^\nu)}\right).\n\end{equation}
+  NEW: (\alpha_B))^{\operatorname{ord}(q^\nu)}\right).\n\end{equation}
+  OLD: $\tau^{-1}$-linéaire, les
+  NEW: $\tau^{-1}$ linéaire, les
+
+=================== PAGE 425 ===================
+----- corrected edition, expose_XXII_body.tex, page 425 -----
+%%%%%%%%%%  scan idx 432  |  folio 425  %%%%%%%%%%
+
+Compte tenu de ce que
+
+\begin{equation}\tag{4.5.31}
+Z(t,V/\mathbb F_q)
+=\exp\!\left(
+\sum_{\nu\geq1}\operatorname{card}(V(\mathbb F_{q^\nu}))
+\frac{t^\nu}{\nu}\right)
+\end{equation}
+
+et
+
+\begin{equation}\tag{4.5.32}
+\det\!\left(1-t\alpha_B^{\operatorname{ord}(q)}\right)
+=\exp\!\left(
+-\sum_{\nu\geq1}
+\operatorname{tr}\!\left((\alpha_B)^{\nu\operatorname{ord}q}\right)
+\frac{t^\nu}{\nu}\right)
+\end{equation}
+
+(4.5.27) se récrit
+
+\begin{equation}\tag{4.5.33}
+Z(t,V/\mathbb F_q)\prod_{i=0}^{n+1}(1-q^it)
+=\prod_{j=1}^{n+2}
+\left(
+\prod_{\substack{B\subset S\\\operatorname{card}(B)=j}}
+\Delta_B(t)
+\right)^{-(-\delta)^j\varphi^{n+2-j}}.
+\end{equation}
+
+4.6. Nous allons étudier maintenant l'intégralité des séries $\Delta_B$.
+Posons
+
+\begin{equation}\tag{4.6.1}
+\mathcal O=\text{l'anneau des entiers de $K$}
+\end{equation}
+
+et définissons une \underline{filtration} sur $1+t\mathcal O[[t]]$ par
+
+\begin{equation}\tag{4.6.2}
+F^i(1+t\mathcal O[[t]])
+=1+q^it\mathcal O[[q^it]]
+=\varphi^i(1+t\mathcal O[[t]]).
+\end{equation}
+
+On a
+
+\begin{align}
+\varphi(F^i)&\subset F^{i+1} \tag{4.6.3}\\
+\delta(F^i)&\subset F^i \tag{4.6.4}\\
+\delta&\text{ induit l'identité sur }F^i/F^{i+1}. \tag{4.6.5}
+\end{align}
+
+\underline{Lemme 4.6.6.}
+\underline{$\Delta_B(t)\in1+t\mathcal O[[t]]$, et si un entier $j$ vérifie}
+
+\begin{equation}\tag{4.6.7}
+jd<\operatorname{card}(B)
+\end{equation}
+
+\underline{alors on a}
+
+\begin{equation}\tag{4.6.8}
+\Delta_B(t)\in F^j(1+t\mathcal O[[t]]).
+\end{equation}
+----- misprints recorded on page 425 -----
+[id 7II:735]
+WHERE: equation number after '(4.5.27) se récrit'
+PRINT: (4.5.23)
+CORRECT: \tag{4.5.33}
+TEX BEFORE: \tag{4.5.23}
+NOTE: The TeX keeps the printed reading. The number repeats (4.5.23); it follows (4.5.32).
+
+=================== PAGE 426 ===================
+----- corrected edition, expose_XXII_body.tex, page 426 -----
+%%%%%%%%%%  scan idx 433  |  folio 426  %%%%%%%%%%
+
+\underline{Démonstration.}
+Les espaces de Banach
+$L^B\!\left(\frac1{p-1}\right)$ sont tous \og du type $B(I)$\fg{} au sens de
+Serre [7], i.e. ils admettent des \og bases orthonormales\fg{}, à savoir, les
+monômes
+
+\begin{equation}\tag{4.6.9}
+\pi^{U_0}X_0^{U_0}X_1^{U_1}\cdots X_{n+2}^{U_{n+2}}
+\end{equation}
+
+\noindent
+qui y appartiennent. Que c'est une base \og orthonormale\fg{} veut dire par
+définition qu'on a
+
+\begin{equation}\tag{4.6.10}
+\operatorname{ord}\!\left(
+\sum C_U\pi^{U_0}X_0^{U_0}\cdots X_{n+2}^{U_{n+2}}
+\right)
+=\min_U\operatorname{ord}(C_U).
+\end{equation}
+
+Soit
+
+\begin{equation}\tag{4.6.11}
+R_B=\text{le $\mathcal O$-sous-module de
+$L^B\!\left(\frac1{p-1}\right)$ formé des éléments d'ordre $\geq0$}.
+\end{equation}
+
+Pour démontrer le lemme, il suffit de démontrer
+
+\begin{equation}\tag{4.6.12}
+\text{si }jd<\operatorname{card}(B),\text{ alors }
+(\alpha_B)^{\operatorname{ord}(q)}R_B\subset q^jR_B
+\end{equation}
+
+ou, a fortiori, de démontrer
+
+\begin{equation}\tag{4.6.13}
+\text{si }jd<\operatorname{card}(B),\text{ alors }
+\alpha_B(R_B)\subset p^jR_B.
+\end{equation}
+
+Or, on a (4.5.22)
+
+\begin{equation}\tag{4.6.14}
+\alpha_B=\frac{\tau^{-1}}p\,\psi_p\circ H_B(X).
+\end{equation}
+
+Compte tenu de ce que
+
+\begin{equation}\tag{4.6.15}
+H(X)\in L\!\left(\frac1{p-1}\right),
+\qquad \operatorname{ord}(H(X))\geq0
+\end{equation}
+
+on a
+
+\begin{equation}\tag{4.6.16}
+H_B(X)\cdot R_B\subset R_B
+\end{equation}
+
+et évidemment
+
+\begin{equation}\tag{4.6.17}
+\tau^{-1}(R_B)=R_B,
+\end{equation}
+----- misprints recorded on page 426 -----
+[id 7II:736]
+WHERE: after (4.6.9)
+PRINT: Que c'    une base (blank where 'est' belongs)
+CORRECT: Que c'est une base
+TEX BEFORE: Que c' une base
+NOTE: The print omits 'est'. The TeX keeps the printed reading.
+
+[id 7II:737]
+WHERE: (4.6.11)
+PRINT: formé des éléments d'ordinal ≥ 0.
+CORRECT: d'ordre
+TEX BEFORE: formé des éléments d'ordre $\geq0$
+NOTE: The print reads 'd'ordinal', a slip for 'd'ordre'. The TeX silently corrects it.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: d'ordre
+  NEW: d'ordinal
+
+=================== PAGE 427 ===================
+----- corrected edition, expose_XXII_body.tex, page 427 -----
+%%%%%%%%%%  scan idx 434  |  folio 427  %%%%%%%%%%
+
+de sorte que (4.6.13) sera conséquence de
+
+\begin{equation}\tag{4.6.18}
+\text{si }jd<\operatorname{card}(B),\text{ alors }
+\psi_p(R_B)\subset p^{j+1}R_B.
+\end{equation}
+
+Vérifions (4.6.18) monôme par monôme. On a
+
+\begin{equation}\tag{4.6.19}
+\begin{cases}
+\psi_p\!\left(\pi^{U_0}X_0^{U_0}\cdots X_{n+2}^{U_{n+2}}\right)=0,
+&\text{sauf si }\forall i\quad p\mid U_i\\
+\text{et}\\[3pt]
+\psi_p\!\left(
+\pi^{pU_0}X_0^{pU_0}\cdots X_{n+2}^{pU_{n+2}}
+\right)
+=\pi^{(p-1)U_0}\cdot
+\underbrace{\pi^{U_0}X_0^{U_0}\cdots X_{n+2}^{U_{n+2}}}_{\in R_B}.
+\end{cases}
+\end{equation}
+
+Or, les conditions pour que l'on ait
+$X_0^{U_0}\cdots X_{n+2}^{U_{n+2}}
+\in L^B\!\left(\frac1{p-1}\right)$ sont
+
+\begin{equation}\tag{4.6.20}
+\begin{cases}
+dU_0=\displaystyle\sum_{i\geq1}U_i,\\
+\text{pour }i\geq1,\text{ on a }U_i>0\Longleftrightarrow i\in B
+\end{cases}
+\end{equation}
+
+d'où, en particulier,
+
+\begin{equation}\tag{4.6.21}
+dU_0\geq\operatorname{card}(B).
+\end{equation}
+
+On a donc
+
+\begin{equation}\tag{4.6.22}
+\operatorname{ord}\!\left(\pi^{(p-1)U_0}\right)
+=U_0\geq\frac{\operatorname{card}(B)}d>j
+\end{equation}
+
+et, comme $U_0\in\mathbb Z$,
+
+\begin{equation}\tag{4.6.23}
+\operatorname{ord}\!\left(\pi^{(p-1)U_0}\right)
+=U_0\geq j+1.
+\end{equation}
+
+Mettant ceci ensemble avec (4.6.19), on trouve (4.6.18).
+----- misprints recorded on page 427 -----
+[id 7II:738]
+WHERE: (4.6.19), first row
+PRINT: Ψ_p(π^{U_o}X^{U_o}... X_{n+2}^{U_{n+2}}): first X has no index o
+CORRECT: X_0^{U_0}
+TEX BEFORE: \psi_p\!\left(\pi^{U_0}X_0^{U_0}
+NOTE: The print drops the index 0 of X, which is present in the second row. The TeX silently corrects it.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: \psi_p\!\left(\pi^{U_0}X_0^{U_0}
+  NEW: \psi_p\!\left(\pi^{U_0}X^{U_0}
+
+=================== PAGE 428 ===================
+----- corrected edition, expose_XXII_body.tex, page 428 -----
+%%%%%%%%%%  scan idx 435  |  folio 428  %%%%%%%%%%
+
+\section*{5. Un théorème d'AX [1], (cf. aussi [4], section 7).}
+
+\underline{Théorème 5.0.}
+\underline{Soient} $V$ \underline{une hypersurface dans} $\mathbb P^{n+1}$ \underline{de degré} $d>0$, \underline{définie
+sur} $\mathbb F_q$, \underline{et} $j$ \underline{un entier} : \underline{si on a}
+
+\begin{equation}\tag{5.0.1}
+jd<n+2,
+\end{equation}
+
+\underline{alors}
+
+\begin{equation}\tag{5.0.2}
+Z(t,V/\mathbb F_q)\prod_{i=0}^{n+1}(1-q^it)
+\in1+q^jt\mathbb Z[[q^jt]].
+\end{equation}
+
+et l'inverse de tout zéro ou pôle de
+
+\begin{equation}\tag{5.0.3}
+Z(t,V/\mathbb F_q)\prod_{i=0}^{n+1}(1-q^it)
+\end{equation}
+
+\noindent
+\underline{est de la forme} $q^j\cdot(\text{\underline{un entier algébrique}})$.
+
+\underline{Théorème 5.0.bis.}
+\underline{Soit} $V_{\mathrm{aff}}$ \underline{une hypersurface dans} $\mathbb A^{n+2}$ \underline{définie
+par une forme homogène de degré} $d$, \underline{définie sur} $\mathbb F_q$. \underline{Si on a}
+
+\begin{equation}\tag{5.0.4}
+jd<n+2,
+\end{equation}
+
+\underline{alors}
+
+\begin{equation}\tag{5.0.5}
+Z(t,V_{\mathrm{aff}}/\mathbb F_q)
+\in1+q^jt\mathbb Z[[q^jt]].
+\end{equation}
+
+\underline{En particulier},
+
+\begin{equation}\tag{5.0.6}
+\operatorname{card}\bigl(V_{\mathrm{aff}}(\mathbb F_q)\bigr)
+\equiv0\mod{q^j},
+\end{equation}
+
+\underline{et par suite}
+
+\begin{equation}\tag{5.0.6 bis}
+\operatorname{card}\bigl(V(\mathbb F_q)\bigr)
+\geq\frac{q^j-1}{q-1}>0
+\end{equation}
+
+\noindent
+(\underline{ce qui améliore le th. de CHEVALLEY--WARNING} [8]).
+----- misprints recorded on page 428 -----
+[id 7II:739]
+WHERE: tag of 'jd<n+2' in Th. 5.0 bis
+PRINT: (5.0.7)
+CORRECT: \tag{5.0.4}
+TEX BEFORE: \tag{5.0.7}
+NOTE: The sequence runs 5.0.3, (5.0.7), 5.0.5, and 5.0.7 is used again on p. 429. The TeX keeps the printed number.
+
+=================== PAGE 429 ===================
+----- corrected edition, expose_XXII_body.tex, page 429 -----
+%%%%%%%%%%  scan idx 436  |  folio 429  %%%%%%%%%%
+
+\underline{Démonstration.}
+L'implication (5.0.5) $\Rightarrow$ (5.0.6) est claire, en prenant le
+coefficient de $t$ dans la fonction zêta. Les assertions (5.0.4) et (5.0.2)
+sont équivalentes, compte tenu de ce que
+
+\begin{equation}\tag{5.0.7}
+\operatorname{card}V_{\mathrm{aff}}(\mathbb F_{q^\nu})
+=1+(q^\nu-1)\operatorname{card}V(\mathbb F_{q^\nu}),
+\end{equation}
+
+d'où
+
+\begin{equation}\tag{5.0.8}
+Z(t,V_{\mathrm{aff}}/\mathbb F_q)
+=\frac{Z(t,V/\mathbb F_q)}
+{Z(qt,V/\mathbb F_q)(1-t)}
+\end{equation}
+
+et
+
+\begin{equation}\tag{5.0.9}
+Z(t,V/\mathbb F_q)
+=\prod_{i\geq0}\left[(1-q^it)
+Z(q^it,V_{\mathrm{aff}}/\mathbb F_q)\right].
+\end{equation}
+
+Les énoncés (5.0.2) et (5.0.3) sont équivalents encore, par le théorème de
+Fatou [3], grâce à la rationalité de la fonction zêta. Comme on a
+
+\begin{equation}\tag{5.0.10}
+Z(t,V/\mathbb F_q)\in\mathbb Z[[t]],
+\end{equation}
+
+il suffira de démontrer
+
+\begin{equation}\tag{5.0.11}
+Z(t,V/\mathbb F_q)\prod_{i=0}^{n+1}(1-q^it)
+\in F^j(1+t\mathcal O[[t]]).
+\end{equation}
+
+Compte tenu de (4.5.33) et (4.6.4)--(4.6.5), il suffit de démontrer, pour
+$B\subset\{1,\ldots,n+2\}$, $B\ne\varnothing$, qu'on a
+
+\begin{equation}\tag{5.0.12}
+\Delta_B(t)\in F^{j+\operatorname{card}(B)-(n+2)}.
+\end{equation}
+
+Nous pourrons terminer la démonstration en appliquant le lemme (4.6.6), une
+fois démontrée l'assertion :
+
+\begin{equation}\tag{5.0.13}
+\text{si }jd<n+2,\text{ alors }
+\bigl(j+\operatorname{card}(B)-(n+2)\bigr)d
+<\operatorname{card}(B),
+\end{equation}
+
+qui se récrit
+----- misprints recorded on page 429 -----
+[id 7II:740]
+WHERE: Démonstration, 2nd sentence
+PRINT: Les assertions (5.0.4) et (5.0.2) sont équivalentes
+CORRECT: (5.0.5)
+TEX BEFORE: Les assertions (5.0.4) et (5.0.2)
+NOTE: The equivalence via (5.0.7)-(5.0.9) is between the affine statement (5.0.5) and (5.0.2). The TeX keeps the printed reference.
+
+[id 7II:741]
+WHERE: (5.0.9)
+PRINT: ∏_{i≥0} [(1-q^i f) Z(q^i t, V_aff/𝔽_q)]
+CORRECT: (1-q^it)
+TEX BEFORE: (1-q^if)
+NOTE: 'f' is a slip for 't'. The TeX keeps the printed reading.
+
+=================== PAGE 430 ===================
+----- corrected edition, expose_XXII_body.tex, page 430 -----
+%%%%%%%%%%  scan idx 437  |  folio 430  %%%%%%%%%%
+
+\begin{equation}\tag{5.0.14}
+\text{si }jd<n+2,\text{ alors }
+(j-(n+2))d<\operatorname{card}(B)(1-d).
+\end{equation}
+
+Mais
+
+\[
+\inf_{\substack{B\subset\{1,\ldots,n+2\}\\B\ne\varnothing}}
+\operatorname{card}(B)(1-d)
+=(n+2)(1-d),
+\]
+
+de sorte qu'il suffit de démontrer
+
+\begin{equation}\tag{5.0.15}
+\text{si }jd<n+2,\text{ alors }
+(j-(n+2))d<(n+2)(1-d),
+\end{equation}
+
+ce qui est vrai.
+
+\underline{Remarque 5.1.}
+La condition
+
+\begin{equation}\tag{5.1.1}
+jd<n+2
+\end{equation}
+
+admet une interprétation cohomologique. Soit $V$ une hypersurface \underline{lisse} de
+degré $d$ et de dimension $n$. Posons, comme dans XI 2.1, pour $a+b=n$,
+
+\begin{equation}\tag{5.1.2}
+h_0^{a,b}
+=\dim H^b(V,\underline{\Omega}_V^a)-\delta_{a,b}
+=\dim E^{a,b}(V)
+\end{equation}
+
+où $E^{a,b}(V)$ est la composante de bidegré $(a,b)$ de la \og cohomologie
+évanescente de Hodge\fg{} (comparer XVII 5.4.4)
+
+\begin{equation}\tag{5.1.3}
+E^{a,b}(V)
+=\operatorname{Coker}\!\left(
+H^b(\mathbb P^{n+1},\underline{\Omega}_{\mathbb P^{n+1}}^a)
+\hookrightarrow H^b(V,\underline{\Omega}_V^a)\right).
+\end{equation}
+
+Alors, par XI, 2.8,
+
+\begin{equation}\tag{5.1.4}
+jd<n+2
+\Longleftrightarrow
+\left[h_0^{a,n-a}=0\text{ pour }a<j\text{ et }a>n-j\right],
+\end{equation}
+
+i.e. la condition signifie que le \og niveau de Hodge\fg{} (XI 2.7) de la
+\og cohomologie de Hodge évanescente\fg{} de $V$ :
+----- misprints recorded on page 430 -----
+[id 7II:742]
+WHERE: (5.1.3)
+PRINT: Coker (H^b(ℙ^{n+1}, Ω^a) ↪ H^b(V,Ω^a_V)  . (the parenthesis after Coker is never closed)
+CORRECT: \right).
+TEX BEFORE: \operatorname{Coker}\!\left(...\right).
+NOTE: The TeX silently closes the parenthesis. Apply after the Ω-underline fix on '(V,\Omega_V^a)\right)'.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: \right).
+  NEW: \right..
+
+=================== PAGE 431 ===================
+----- corrected edition, expose_XXII_body.tex, page 431 -----
+%%%%%%%%%%  scan idx 438  |  folio 431  %%%%%%%%%%
+\begin{equation*}
+E_{\mathrm{DR}}^n(V)
+=\operatorname{Coker}\!\left(
+H_{\mathrm{Hdg}}^n(\mathbb P^{n+1})
+\hookrightarrow H_{\mathrm{Hdg}}^n(V)\right),
+\end{equation*}
+
+
+est $\leq n-2j$, i.e. son co-niveau est $\geq j$. D'autre part, la
+conclusion signifie aussi que les valeurs propres du Frobenius
+$\mathfrak F_q$ opérant sur la cohomologie évanescente $\ell$-adique
+($\ell\ne p$) sont des entiers algébriques (XXI A.2) \underline{divisibles par} $q^j$.
+Le résultat de AX 5.0 vient donc à l'appui de la conjecture suivante,
+suggérée par le yoga du niveau des motifs, et qui met en relation les
+classiques conjectures de HODGE [5] et de TATE [5] :
+
+\underline{Conjecture} 5.2.
+\underline{Soient} $f:X\to S$ \underline{un morphisme propre et lisse}, \underline{avec} $S$ \underline{intègre}, \underline{de type
+fini sur} $\operatorname{Spec}(\mathbb Z)$ \underline{et dominant}
+$\operatorname{Spec}(\mathbb Z)$, $i,j$ \underline{des entiers}. \underline{Supposons que le
+co-niveau de Hodge du} $H^i$ \underline{de la fibre générique de} $f$ \underline{soit} $\geq j$.
+\underline{Alors pour tout point} $s\in S$, \underline{le coniveau} (XX 2.0.6) \underline{de}
+$H^i(X_s,\mathbb Q_\ell)$ \underline{est} $\geq j$, \underline{donc} (XX 2.2) \underline{si} $s$ \underline{est un point
+fermé de} $S$, \underline{les valeurs propres de Frobenius opérant sur}
+$H^i(X_s,\mathbb Q_\ell)$ \underline{sont des entiers algébriques divisibles par}
+$q^j$, \underline{où} $q=\operatorname{card}(k(s))$.
+
+\section*{6. Fin de la démonstration de la formule de congruence.}
+
+Compte tenu de (4.6.6) et (4.6.3)--(4.6.4), (4.5.33) donne une formule de
+congruence
+
+\begin{equation}\tag{6.0.1}
+Z(t,V/\mathbb F_q)(1-t)
+\equiv\Delta_S(t)^{(-1)^{n+1}}
+\mod{1+qt\mathcal O[[t]]}.
+\end{equation}
+
+Passons au calcul de $\Delta_S(t)$ modulo $\pi\mathcal O[[t]]$. Définissons
+(cf. (4.6.11)) :
+
+\begin{equation}\tag{6.0.2}
+W_S=R_S\otimes_{\mathcal O}\mathbb F_q,
+\end{equation}
+----- misprints recorded on page 431 -----
+[id 7II:743]
+WHERE: first paragraph
+PRINT: AX 5.0. vient (full stop after 5.0 in mid-sentence)
+CORRECT: 5.0 vient
+TEX BEFORE: 5.0 vient
+NOTE: Stray full stop after the reference number. The TeX silently drops it.
+
+[id 7II:744]
+WHERE: line before (6.0.2)
+PRINT: Définissons (cf. (4.6.11) :  (only one closing parenthesis)
+CORRECT: (4.6.11)) :
+TEX BEFORE: (cf. (4.6.11)) :
+NOTE: The print does not close the parenthesis opened by "(cf.". The TeX silently closes it.
+
+[id 7II:745]
+WHERE: (6.0.2)
+PRINT: W_S = R_B ⊗_𝒪 𝔽_q
+CORRECT: W_S=R_S\otimes_{\mathcal O}\mathbb F_q
+TEX BEFORE: W_S=R_B\otimes_{\mathcal O}\mathbb F_q
+NOTE: R_B for R_S: everything after it uses R_S (R_S(i) in (6.0.4)-(6.0.5), α_S(R_S) in 6.0.6), with B = S in the notation of (4.6.11). The TeX keeps the printed R_B.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: 5.0 vient
+  NEW: 5.0. vient
+  OLD: (4.6.11)) :
+  NEW: (4.6.11) :
+
+=================== PAGE 432 ===================
+----- corrected edition, expose_XXII_body.tex, page 432 -----
+%%%%%%%%%%  scan idx 439  |  folio 432  %%%%%%%%%%
+
+\begin{equation}\tag{6.0.3}
+\bar\alpha_S:W_S\longrightarrow W_S
+\end{equation}
+
+\noindent
+l'opération $\tau^{-1}$-linéaire induite par $\alpha_S$,
+
+\begin{equation}\tag{6.0.4}
+R_S(i)\text{ le sous-module de $R_S$ formé des éléments de degré $i$ en $X_0$},
+\end{equation}
+
+\begin{equation}\tag{6.0.5}
+W_S(i)=R_S(i)\otimes_{\mathcal O}\mathbb F_q.
+\end{equation}
+
+\underline{Proposition} 6.0.6.
+\underline{On a l'inclusion}
+
+\[
+\alpha_S(R_S)\subset R_S(1)+pR_S.
+\]
+
+\underline{Démonstration.}
+On a la factorisation (4.6.14)
+
+\begin{equation}\tag{6.0.7}
+\alpha_S=\tau^{-1}\circ\frac1p\,\psi_p\circ H(X).
+\end{equation}
+
+On sait (cf. (4.6.15))
+
+\begin{equation}\tag{6.0.8}
+H(X)\cdot R_S\subset R_S,
+\end{equation}
+
+et évidemment
+
+\begin{equation}\tag{6.0.9}
+\tau^{-1}\bigl(R_S(1)+pR_S\bigr)=R_S(1)+pR_S,
+\end{equation}
+
+de sorte qu'il suffit de vérifier
+
+\begin{equation}\tag{6.0.10}
+\frac1p\,\psi_pR_S\subset R_S(1)+pR_S,
+\end{equation}
+
+ce qui est clair par (4.6.19).
+
+\underline{Corollaire} 6.0.11.
+\underline{On a l'inclusion}
+
+\[
+\bar\alpha_S W_S\subset W_S(1).
+\]
+----- misprints recorded on page 432 -----
+[id 7II:746]
+WHERE: (6.0.4)
+PRINT: R_S(t)
+CORRECT: \tag{6.0.4}
+R_S(i)
+TEX BEFORE: R_S(i)
+NOTE: The argument is printed t; the definition is of R_S(i) (degree i, used in (6.0.5)). The TeX silently corrects.
+
+[id 7II:747]
+WHERE: (6.0.4)
+PRINT: forme des éléments (no accent on forme)
+CORRECT: formé des
+TEX BEFORE: formé des éléments
+NOTE: The other accents of the line are clear. The TeX silently corrects.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: \tag{6.0.4}\nR_S(i)
+  NEW: \tag{6.0.4}\nR_S(t)
+  OLD: formé des
+  NEW: forme des
+
+=================== PAGE 433 ===================
+----- corrected edition, expose_XXII_body.tex, page 433 -----
+%%%%%%%%%%  scan idx 440  |  folio 433  %%%%%%%%%%
+
+\underline{Corollaire} 6.0.12.
+\underline{On a la congruence}
+
+\[
+\Delta_S(t)\equiv
+\det\!\left(
+1-t(\bar\alpha_S)^{\operatorname{ord}(q)}
+\mathrel{\Big|}W_S(1)\right)
+\pmod{\pi\mathcal O[[t]]}.
+\]
+
+\underline{Proposition} 6.1.
+\underline{L'opération} $\tau^{-1}$-\underline{linéaire}
+$\bar\alpha_S:W_S(1)\to W_S(1)$ \underline{est égale à l'opération}
+
+\begin{equation}\tag{6.1.1}
+\tau^{-1}\psi_p\circ(X_0f(X))^{p-1}.
+\end{equation}
+
+\underline{Démonstration.}
+Écrivons
+
+\begin{equation}\tag{6.1.2}
+H(X)=1+\sum_{i\geq1}H_i(X)
+\end{equation}
+
+où
+
+\begin{equation}\tag{6.1.3}
+H_i(X)\text{ est de degré $i$ en $X_0$}.
+\end{equation}
+
+D'après (4.6.19) encore, on a
+
+\begin{equation}\tag{6.1.4}
+\frac1p\,\psi_pR_S(i)\subset pR_S
+\qquad\text{si }i\ne p.
+\end{equation}
+
+Compte tenu de ce que
+
+\begin{equation}\tag{6.1.5}
+H_i(X)\cdot R_S(j)\subset R_S(i+j),
+\end{equation}
+
+on a
+
+\begin{equation}\tag{6.1.6}
+\left(
+\alpha_S-\frac{\tau^{-1}}p\,\psi_pH_{p-1}(X)
+\right)(R_S(1))
+\subset pR_S.
+\end{equation}
+
+On a donc
+
+\begin{equation}\tag{6.1.7}
+\left[
+(\alpha_S)^{\operatorname{ord}(q)}
+-
+\left(
+\frac{\tau^{-1}}p\,\psi_p\cdot H_{p-1}(X)
+\right)^{\operatorname{ord}(q)}
+\right]R_S(1)
+\subset pR_S.
+\end{equation}
+
+Calculons maintenant $H_{p-1}(X)$. On a (cf. (4.4.4))
+----- misprints recorded on page 433 -----
+[id 7II:748]
+WHERE: Proposition 6.1
+PRINT: L'opération τ^1-linéaire (superscript 1 without minus)
+CORRECT: $\tau^{-1}$
+TEX BEFORE: $\tau^{-1}$-linéaire
+NOTE: The minus of the exponent is missing (clean scan there; p. 432 prints τ^{-1}-linéaire). The TeX silently corrects.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: $\tau^{-1}$
+  NEW: $\tau^{1}$
+
+=================== PAGE 434 ===================
+----- corrected edition, expose_XXII_body.tex, page 434 -----
+%%%%%%%%%%  scan idx 441  |  folio 434  %%%%%%%%%%
+
+\begin{equation}\tag{6.1.8}
+\begin{aligned}
+H(X)
+&=\prod_W\Theta(A_WX_0X^W)\\
+&=\prod_W\exp\!\left(
+\sum_{n\geq0}\frac{(\pi A_WX_0X^W)^{p^n}}{p^n}
+\right)\\
+&=\prod_W\prod_{n\geq0}
+\exp\!\left(\frac{(\pi A_WX_0X^W)^{p^n}}{p^n}\right)\\
+&\equiv\prod_W\exp(\pi A_WX_0X^W)
+\pmod{\text{degré }p}\\
+&\equiv\exp\!\left(\pi\sum A_WX_0X^W\right)
+\pmod{\text{degré }p}\\
+&\equiv\exp(\pi X_0F(X))
+\pmod{\text{degré }p},
+\end{aligned}
+\end{equation}
+
+d'où
+
+\begin{equation}\tag{6.1.9}
+H_{p-1}(X)
+\equiv\frac{\pi^{p-1}X_0^{p-1}}{(p-1)!}\,F(X)^{p-1}.
+\end{equation}
+
+On constate facilement que
+
+\begin{equation}\tag{6.1.10}
+\frac{\pi^{p-1}}p\equiv-1\pmod p
+\end{equation}
+
+donc
+
+\begin{equation}\tag{6.1.11}
+\frac1p\,H_{p-1}(X)
+\equiv(X_0f(X))^{p-1}\pmod p,
+\end{equation}
+
+ce qui achève la démonstration de 6.1.
+
+\underline{Corollaire} 6.1.12.
+\underline{L'opérateur linéaire}
+
+\[
+(\bar\alpha_S)^{\operatorname{ord}(q)}:W_S(1)\longrightarrow W_S(1)
+\]
+
+\noindent
+\underline{n'est autre que} $\psi_q\circ(X_0f(X))^{q-1}$.
+----- misprints recorded on page 434 -----
+[id 7II:749]
+WHERE: (6.1.8), second line
+PRINT: numerator πA_W X_o X^W)^{p^n}: no opening parenthesis before π
+CORRECT: \sum_{n\geq0}\frac{(\pi
+TEX BEFORE: \frac{(\pi A_WX_0X^W)^{p^r}}
+NOTE: The opening parenthesis is missing (present in the third line). The TeX silently supplies it. "old" is taken from the text after the previous fix (n for r).
+
+[id 7II:750]
+WHERE: (6.1.11)
+PRINT: (1/p) H_{p-1}(X) ≡ (X_o f(X)^{p-1} mod p ,  (one closing parenthesis)
+CORRECT: \equiv(X_0f(X))
+TEX BEFORE: \equiv(X_0f(X))^{p-1}
+NOTE: The parenthesis before X_o is never closed. The TeX silently closes it.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: \sum_{n\geq0}\frac{(\pi
+  NEW: \sum_{n\geq0}\frac{\pi
+  OLD: \equiv(X_0f(X))
+  NEW: \equiv(X_0f(X)
+
+=================== PAGE 435 ===================
+----- corrected edition, expose_XXII_body.tex, page 435 -----
+%%%%%%%%%%  scan idx 442  |  folio 435  %%%%%%%%%%
+
+\underline{Démonstration.}
+D'après (6.1.1)
+
+\begin{equation*}
+\begin{aligned}
+(\bar\alpha_S)^{\operatorname{ord}(q)}
+&=
+\left(
+\tau^{-1}\psi_p\circ(X_0f(X))^{p-1}
+\right)^{\operatorname{ord}(q)}\\
+&=
+\psi_q\circ
+\prod_{j=0}^{\operatorname{ord}(q)-1}
+\left(X_0^{p^j}f^{\tau^j}(X^{p^j})\right)^{p-1}\\
+&=
+\psi_q\circ
+\prod_{j=0}^{\operatorname{ord}(q)-1}
+(X_0f(X))^{p^j(p-1)}\\
+&=\psi_q\circ(X_0f(X))^{q-1}.
+\end{aligned}
+\end{equation*}
+
+Mettant ensemble (6.1.12), (6.0.12), et (6.0.1), on trouve
+
+\underline{Corollaire} 6.1.13.
+\underline{On a la congruence mod} $p$ :
+
+\begin{equation*}
+Z(t,V/\mathbb F_q)
+\equiv
+\frac{
+\det\!\left(
+1-t\,\psi_q(X_0f(X))^{q-1}
+\mathrel{\Big|}W_S(1)
+\right)^{(-1)^{n+1}}
+}{1-t}.
+\end{equation*}
+
+\subsection*{6.2.}
+Il reste à calculer les groupes de cohomologie de $\mathcal O_V$.
+
+Posons
+
+\begin{equation}\tag{6.2.1}
+\mathfrak F_q
+=\text{l'opération \og élévation à la puissance $q$'ième\fg{} dans $\mathcal O_V$}.
+\end{equation}
+
+Nous avons une suite exacte de faisceaux sur
+$\mathbb P^{n+1}=\mathbb P$ :
+
+\begin{equation}\tag{6.2.2}
+0\longrightarrow\mathcal O_{\mathbb P}(-d)
+\xrightarrow{\,f\,}\mathcal O_{\mathbb P}
+\longrightarrow\mathcal O_V\longrightarrow0,
+\end{equation}
+
+et le diagramme suivant est commutatif
+
+\begin{equation}\tag{6.2.3}
+\begin{tikzcd}[column sep=large,row sep=large]
+0 \arrow[r] &
+\mathcal O_{\mathbb P}(-d) \arrow[r,"f"] \arrow[d,"f^{q-1}\mathfrak F_q"'] &
+\mathcal O_{\mathbb P} \arrow[r] \arrow[d,"\mathfrak F_q"'] &
+\mathcal O_V \arrow[r] \arrow[d,"\mathfrak F_q"'] &
+0\\
+0 \arrow[r] &
+\mathcal O_{\mathbb P}(-d) \arrow[r,"f"] &
+\mathcal O_{\mathbb P} \arrow[r] &
+\mathcal O_V \arrow[r] &
+0 .
+\end{tikzcd}
+\end{equation}
+----- misprints recorded on page 435 -----
+[id 7II:751]
+WHERE: display, second line
+PRINT: upper limit ord(a)-1
+CORRECT: \prod_{j=0}^{\operatorname{ord}(q)-1}
+TEX BEFORE: \prod_{j=0}^{\operatorname{ord}(a)-1}
+NOTE: ord(a) for ord(q) (the next line has ord(q)-1). The TeX keeps the printed reading.
+
+[id 7II:752]
+WHERE: (6.2.2), last term
+PRINT: ... ⟶ 𝒪_V ⟶ 𝒪  ,  (script O, the same handwritten letter as in 𝒪_V, for 0)
+CORRECT: O_V\longrightarrow0,
+TEX BEFORE: \longrightarrow\mathcal O_V\longrightarrow0,
+NOTE: The final 0 of the exact sequence is printed as the script 𝒪 (the first 0 is typed). The TeX silently corrects. Same in both rows of (6.2.3).
+
+[id 7II:753]
+WHERE: (6.2.3), top row, last node
+PRINT: 𝒪_V ⟶ 𝒪 (script O for 0)
+CORRECT: "\mathfrak F_q"'] &
+0\\
+TEX BEFORE: 0\\
+NOTE: As in (6.2.2). The TeX silently corrects.
+
+[id 7II:754]
+WHERE: (6.2.3), bottom row, last node
+PRINT: 𝒪_V ⟶ 𝒪  . (script O for 0)
+CORRECT: \arrow[r] &
+0 .
+TEX BEFORE: 0 .
+NOTE: As in (6.2.2). The TeX silently corrects.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: O_V\longrightarrow0,
+  NEW: O_V\longrightarrow\mathcal O,
+  OLD: "\mathfrak F_q"'] &\n0\\
+  NEW: "\mathfrak F_q"'] &\n\mathcal O\\
+  OLD: \arrow[r] &\n0 .
+  NEW: \arrow[r] &\n\mathcal O .
+
+=================== PAGE 436 ===================
+----- corrected edition, expose_XXII_body.tex, page 436 -----
+%%%%%%%%%%  scan idx 443  |  folio 436  %%%%%%%%%%
+
+Compte tenu de ce que
+
+\begin{equation}\tag{6.2.4}
+\begin{cases}
+H^0(\mathbb P^{n+1},\mathcal O_{\mathbb P})\simeq\mathbb F_q\\
+H^i(\mathbb P^{n+1},\mathcal O_{\mathbb P})=0&i\ne0\\
+H^i(\mathbb P^{n+1},\mathcal O_{\mathbb P}(-d))=0&i\ne0,n+1,
+\end{cases}
+\end{equation}
+
+la suite exacte longue de cohomologie associée à (6.2.2), donne
+
+\begin{equation}\tag{6.2.5}
+\begin{cases}
+H^0(V,\mathcal O_V)\simeq\mathbb F_q\\
+H^i(V,\mathcal O_V)=0&\text{si }i\ne0,n\\
+H^n(V,\mathcal O_V)
+\simeq H^{n+1}(\mathbb P^{n+1},\mathcal O_{\mathbb P}(-d)).
+\end{cases}
+\end{equation}
+
+Le diagramme commutatif (6.2.3) donne alors
+
+\begin{equation}\tag{6.2.6}
+\det\!\left(1-t\mathfrak F_q
+\mathrel{\Big|}H^0(V,\mathcal O_V)\right)=1-t
+\end{equation}
+
+et
+
+\begin{equation}\tag{6.2.7}
+\det\!\left(1-t\mathfrak F_q
+\mathrel{\Big|}H^n(V,\mathcal O_V)\right)
+=
+\det\!\left(
+1-t(f^{q-1}\mathfrak F_q)
+\mathrel{\Big|}
+H^{n+1}(\mathbb P^{n+1},\mathcal O_{\mathbb P}(-d))
+\right).
+\end{equation}
+
+Il ne reste qu'à établir
+
+\begin{equation}\tag{6.2.8}
+\begin{aligned}
+&\det\!\left(
+1-t(f^{q-1}\mathfrak F_q)
+\mathrel{\Big|}
+H^{n+1}(\mathbb P^{n+1},\mathcal O_{\mathbb P}(-d))
+\right)\\
+&\qquad=
+\det\!\left(
+1-t\,\psi_q\cdot(X_0f(X))^{q-1}
+\mathrel{\Big|}W_S(1)
+\right)
+\end{aligned}
+\end{equation}
+
+ce qui est une conséquence de la
+
+\underline{Proposition} 6.3.
+\underline{Il y a un isomorphisme}
+
+\begin{equation}\tag{6.3.1}
+W_S(1)\simeq
+\operatorname{Hom}_{\mathbb F_q}\!\left(
+H^{n+1}(\mathbb P^{n+1},\mathcal O_{\mathbb P}(-d)),
+\mathbb F_q\right)
+\end{equation}
+
+\underline{par rapport auquel l'opérateur}
+
+\begin{equation}\tag{6.3.2}
+\psi_q\circ(X_0f(X))^{q-1}:W_S(1)\longrightarrow W_S(1)
+\end{equation}
+----- misprints recorded on page 436 -----
+[id 7II:755]
+WHERE: sentence before (6.2.5)
+PRINT: la suite exacte longue de cohomologie associé à (6.2.2), donne
+CORRECT: associée à
+TEX BEFORE: associée à (6.2.2) donne
+NOTE: Agreement error of the print (la suite ... associée). The TeX silently corrects.
+
+[id 7II:756]
+WHERE: (6.2.7), right-hand side, end
+PRINT: det (1-t(f^{q-1}𝔉_q)| H^{n+1}(ℙ^{n+1}, 𝒪_ℙ(-d))  .  (four opening, three closing parentheses)
+CORRECT: \right).
+TEX BEFORE: \right).
+NOTE: The parenthesis after det is never closed in the print. The TeX silently closes it; the fix keeps \left( and drops the closing parenthesis.
+
+[id 7II:757]
+WHERE: (6.2.8), left-hand side, end
+PRINT: det(1-t(f^{q-1}𝔉_q)|H^{n+1}(ℙ^{n+1},𝒪_ℙ(-d))  =  (four opening, three closing parentheses)
+CORRECT: \right)\\
+TEX BEFORE: \right)\\
+NOTE: As in (6.2.7): the parenthesis after det is never closed. The TeX silently closes it.
+
+[id 7II:758]
+WHERE: (6.2.8), right-hand side
+PRINT: det(1-t(Ψ_q·(X_o f(X))^{q-1}|W_S(1))  (the parenthesis before Ψ_q is never closed)
+CORRECT: 1-t\,
+TEX BEFORE: \det\!\left(
+1-t\,\psi_q
+NOTE: The print opens a parenthesis before Ψ_q and closes none for it (five opening, four closing). The TeX silently drops it; its reading without the parenthesis is the corrected one.
+
+[id 7II:759]
+WHERE: (6.3.1)
+PRINT: Hom_{𝔽_q}(H^{n+1}( ℙ^{n+1}. 𝒪_ℙ(-d), 𝔽_q)  (full stop after ℙ^{n+1})
+CORRECT: \left(
+H^{n+1}(\mathbb P^{n+1},
+TEX BEFORE: H^{n+1}(\mathbb P^{n+1},\mathcal O_{\mathbb P}(-d)),
+NOTE: A round full stop on the baseline (7 px high), without the tail of the comma before 𝔽_q in the same line (12 px). The TeX silently corrects.
+
+[id 7II:760]
+WHERE: (6.3.1)
+PRINT: 𝒪_ℙ(-d), 𝔽_q)  (H^{n+1}( is never closed)
+CORRECT: (-d)),
+TEX BEFORE: (-d)),
+NOTE: The print has one closing parenthesis after -d. The TeX silently supplies the second.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: associée à
+  NEW: associé à
+  OLD: \right).
+  NEW: \right..
+  OLD: \right)\\
+  NEW: \right.\\
+  OLD: 1-t\,
+  NEW: 1-t\,(
+  OLD: \left(\nH^{n+1}(\mathbb P^{n+1},
+  NEW: \left(\nH^{n+1}(\mathbb P^{n+1}.
+  OLD: (-d)),
+  NEW: (-d),
+
+=================== PAGE 437 ===================
+----- corrected edition, expose_XXII_body.tex, page 437 -----
+%%%%%%%%%%  scan idx 444  |  folio 437  %%%%%%%%%%
+
+\underline{est le transposé de}
+
+\begin{equation}\tag{6.3.3}
+f(X)^{q-1}\mathfrak F_q:
+H^{n+1}(\mathbb P^{n+1},\mathcal O_{\mathbb P}(-d))
+\longrightarrow
+H^{n+1}(\mathbb P^{n+1},\mathcal O_{\mathbb P}(-d)).
+\end{equation}
+
+\underline{Démonstration.}
+En calculant le groupe
+$H^{n+1}(\mathbb P^{n+1},\mathcal O_{\mathbb P}(-d))$ à l'aide du
+recouvrement standard de $\mathbb P^{n+1}$, on trouve
+
+\begin{equation}\tag{6.3.4}
+\begin{aligned}
+H^{n+1}(\mathbb P^{n+1},\mathcal O_{\mathbb P}(-d))
+&=\text{le $\mathbb F_q$-vectoriel de base des monômes}\\
+&\quad X_1^{W_1}\cdots X_{n+2}^{W_{n+2}}
+\qquad\text{les }W_i\in\mathbb Z\text{ vérifiant }\sum W_i=-d\\
+&\mathrel{\big/}\text{le $\mathbb F_q$-sous-vectoriel de base des monômes}\\
+&\quad X_1^{W_1}\cdots X_{n+2}^{W_{n+2}}
+\text{ qui vérifient en plus : }\exists i\text{ tel que }W_i\geq0.
+\end{aligned}
+\end{equation}
+
+D'autre part, $W_S(1)=R_S(1)\otimes_{\mathcal O}\mathbb F_q$, et on a
+
+\begin{equation}\tag{6.3.5}
+\begin{aligned}
+R_S(1)
+&=\text{le $\mathcal O$-module libre de base les monômes}\\
+&\quad
+(\pi X_0)X_1^{U_1}\cdots X_{n+2}^{U_{n+2}}
+\text{ vérifiant }
+\sum U_i=d,\quad U_i>0\ \forall_i.
+\end{aligned}
+\end{equation}
+
+L'accouplement
+
+\begin{equation}\tag{6.3.6}
+(\ ,\ ):
+W_S(1)\times
+H^{n+1}(\mathbb P^{n+1},\mathcal O_{\mathbb P}(-d))
+\longrightarrow\mathbb F_q
+\end{equation}
+
+défini par
+
+\begin{equation}\tag{6.3.7}
+\left(
+\text{classe de }\pi X_0X_1^{U_1}\cdots X_{n+2}^{U_{n+2}},
+X_1^{W_1}\cdots X_{n+2}^{W_{n+2}}
+\right)
+=
+\begin{cases}
+1&\text{si }U_i=-W_i\text{ pour tout }i\\
+0&\text{sinon}
+\end{cases}
+\end{equation}
+
+est évidemment une dualité parfaite de $\mathbb F_q$-vectoriels, et on
+constate facilement que $\psi_q\cdot(X_0f(X))^{q-1}$ est la transposée de
+$f(X)^{q-1}\cdot \mathfrak F_q$, ce qui prouve 6.3.
+----- misprints recorded on page 437 -----
+[id 7II:761]
+WHERE: (6.3.4), left-hand side
+PRINT: H^{i+1}(ℙ^{n+1}, 𝒪_ℙ(-d))
+CORRECT: H^{n+1}(\mathbb P^{n+1},\mathcal O_{\mathbb P}(-d))
+TEX BEFORE: H^{i+1}(\mathbb P^{n+1},\mathcal O_{\mathbb P}(-d))
+NOTE: The group computed is H^{n+1} (named in the sentence before). The TeX keeps the printed i+1.
+
+[id 7II:762]
+WHERE: (6.3.7), first case
+PRINT: 1 si U_1 = -W_i pour tout i  (subscript 1, the digit of the value 1)
+CORRECT: U_i=-W_i
+TEX BEFORE: U_i=-W_i
+NOTE: U_1 for U_i (against W_i and 'pour tout i'). The TeX silently corrects.
+
+[id 7II:763]
+WHERE: last paragraph
+PRINT: f(X)^{q-1}•f_q, ce qui  (small typed f)
+CORRECT: \mathfrak F_q$, ce
+TEX BEFORE: \mathfrak F_q$, ce qui
+NOTE: The print types the letter f of f(X) for the Fraktur 𝔉_q of (6.3.3). The TeX silently corrects.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: U_i=-W_i
+  NEW: U_1=-W_i
+  OLD: \mathfrak F_q$, ce
+  NEW: f_q$, ce
+
+=================== PAGE 438 ===================
+----- corrected edition, expose_XXII_body.tex, page 438 -----
+%%%%%%%%%%  scan idx 445  |  folio 438  %%%%%%%%%%
+
+\section*{Bibliographie}
+
+\begin{enumerate}[label={[\arabic*]},leftmargin=2.4em]
+\item AX, J. Zeroes of Polynomials Over Finite Fields,
+  Amer. J. Math. 86, 1964, 255--261.
+\item DWORK, B. On the Rationality of the Zeta Function of an
+  Algebraic Variety, Amer. J. Math. 82, 1960, 631--648.
+\item DWORK, B. An Algebraic Variety, in Proc. of the Woods-Hole
+  Summer Institute 1964 (miméo).
+\item DWORK, B. On the Zeta Function of Hypersurface II,
+  Ann. Math. (2), 80, 1964, 227--299.
+\item GROTHENDIECK, A., Le Groupe de Brauer III, dans
+  Dix Exposés sur la Cohomologie des Schémas,
+  North Holland Pub. Co, 1968.
+\item SERRE, J.P. Groupes Algébriques et Corps de Classes,
+  Hermann, Paris, 1959.
+\item SERRE, J.P. Endomorphismes Complètement Continus des Espaces
+  de Banach $p$-Adiques, Pub. Math. I.H.E.S. n\textsuperscript{o} 12, 1962.
+\item CHEVALLEY, C. Démonstration d'une hypothèse de M. Artin,
+  Abhandlungen Math. Sem. Hamburg, 11, 1936, 73--75.
+\end{enumerate}
+----- misprints recorded on page 438 -----
+[id 7II:764]
+WHERE: Bibliographie [2], title
+PRINT: On the Rationality of the Zéta Function  (é)
+CORRECT: Zeta Function of an
+TEX BEFORE: Zeta Function of an
+NOTE: Typed é (the accent of 'Algébriques' on this page) in the English title; [4] prints Zeta. The TeX silently corrects. Apply after the \emph fix of this title (overlapping strings).
+
+[id 7II:765]
+WHERE: Bibliographie [7], title
+PRINT: Endomorphismes Complétement, Continus  (acute accent)
+CORRECT: Complètement
+TEX BEFORE: Complètement
+NOTE: Acute accent (the grave of 'hypothèse' in [8] slopes the other way); Serre's title has 'complètement'. The TeX silently corrects. Apply after the \emph fix of this title.
+
+[id 7II:766]
+WHERE: Bibliographie [7], title
+PRINT: Complétement, Continus  (comma inside the title)
+CORRECT:  Continus
+TEX BEFORE: Complètement Continus
+NOTE: Stray comma inside the title. The TeX silently drops it. Apply after the \emph fix of this title.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: Zeta Function of an
+  NEW: Zéta Function of an
+  OLD: Complètement
+  NEW: Complétement
+  OLD:  Continus
+  NEW: , Continus
+

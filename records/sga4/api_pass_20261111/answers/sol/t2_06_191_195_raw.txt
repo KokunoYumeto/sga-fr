@@ -1,0 +1,170 @@
+{
+  "findings": [
+    {
+      "page": 192,
+      "where": "Remarque 1.27, description of C",
+      "scan": "des objets cohérents",
+      "tex": "des objet cohérents",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "des objet cohérents",
+        "new": "des objets cohérents"
+      },
+      "note": "The transcription omits the plural s."
+    },
+    {
+      "page": 192,
+      "where": "Remarque 1.27, assertion about C being perfect",
+      "scan": "il n'est pas toujours vrai",
+      "tex": "il n'est par toujours vrai",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "il n'est par toujours vrai",
+        "new": "il n'est pas toujours vrai"
+      },
+      "note": "The print reads « pas », not « par »."
+    },
+    {
+      "page": 192,
+      "where": "Exercice 1.28, definition of R_0",
+      "scan": "R_0 = Sup(Im(p_1,p_2), Im(p_2,p_1))",
+      "tex": "R_0 = \\Sup(\\text{Im}(p_1,\np_2), \\text{Im}(p_2, p_1))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R_0 = \\Sup(\\text{Im}(p_1,p_2), \\text{Im}(p_2,p_1), \\Delta_{X_0})",
+      "note": "The TeX keeps the printed omission of the diagonal. For an arbitrary parallel pair, the printed construction need not give an increasing sequence or an equivalence relation; the diagonal must be included."
+    },
+    {
+      "page": 192,
+      "where": "Exercice 1.28, recursive definition of R_n",
+      "scan": "R_n = pr_{13}(pr_{12}^{-1}(R_{n-1}), pr_{23}^{-1}(R_{n-1}))",
+      "tex": "R_n = \\pr_{13} (\\pr_{12}^{-1} (R_{n-1}),\n\\pr_{23}^{-1}(R_{n-1}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R_n = \\pr_{13}(\\pr_{12}^{-1}(R_{n-1}) \\cap \\pr_{23}^{-1}(R_{n-1}))",
+      "note": "The TeX keeps the printed comma. The inverse-image subobjects of the triple product must be intersected before projection."
+    },
+    {
+      "page": 193,
+      "where": "Exercice 1.28 b), parenthetical hint",
+      "scan": "R_n ≃ (R_{n-1},pr_2) ×_{X_0} (R_{n-1},pr_1)",
+      "tex": "R_n \\simeq \\fprod{(R_{n-1}, \\pr_2)}{(R_{n-1},\n  \\pr_1)}{X_0}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R_n = \\text{Im}\\left(\\fprod{(R_{n-1},\\pr_2)}{(R_{n-1},\\pr_1)}{X_0} \\xrightarrow{\\pr_{13}} X_0\\times X_0\\right)",
+      "note": "The TeX keeps the printed isomorphism. In general R_n is only the image of this fibre product under the outer-coordinate projection, not the fibre product itself."
+    },
+    {
+      "page": 193,
+      "where": "Exercice 1.28 f), existence of an automorphism",
+      "scan": "qui admet un automorphisme",
+      "tex": "qui admit un automorphisme",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "qui admit un automorphisme",
+        "new": "qui admet un automorphisme"
+      },
+      "note": "The print reads « admet »."
+    },
+    {
+      "page": 194,
+      "where": "Opening line, automorphism example continued from Exercice 1.28 f)",
+      "scan": "f(x)=x, f(y)=x+y",
+      "tex": "$f(x) = x$, $f(y) = x + y$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f(x) = y,\\qquad f(y) = x + y^2",
+      "note": "The TeX keeps the erroneous printed example: in characteristic p>0 the displayed automorphism has order p. The corrected field gives an infinite-order automorphism valid over every field."
+    },
+    {
+      "page": 194,
+      "where": "Exercice 1.28 f), corresponding parallel pair in sets",
+      "scan": "double flèche correspondante dans",
+      "tex": "double flèche correspondant dans",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "double flèche correspondant dans",
+        "new": "double flèche correspondante dans"
+      },
+      "note": "The transcription omits the final e."
+    },
+    {
+      "page": 194,
+      "where": "Exercice 1.28 f), notation for the two maps on geometric points",
+      "scan": "p_1(\\bar{k}):p_2(\\bar{k}): X_1(\\bar{k}) ⇉ X_0(\\bar{k})",
+      "tex": "p_1\n  (\\bar{k}):p_2(\\bar{k}): X_1(\\bar{k}) \\rightrightarrows X_0\n  (\\bar{k})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "p_1(\\bar{k}),p_2(\\bar{k}): X_1(\\bar{k}) \\rightrightarrows X_0(\\bar{k})",
+      "note": "The TeX keeps the printed colon between the two arrow names; that separator should be a comma."
+    },
+    {
+      "page": 194,
+      "where": "Exercice 1.28 f), conclusion about the topos",
+      "scan": "ne satisfait pas aux",
+      "tex": "ne satisfait par aux",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "ne satisfait par aux",
+        "new": "ne satisfait pas aux"
+      },
+      "note": "The print reads « pas », not « par »."
+    },
+    {
+      "page": 194,
+      "where": "End of Exercice 1.28 f), parenthetical warning",
+      "scan": "et de 2.14.",
+      "tex": "et de \\hyperref[VI.subsec2.14]{2.14}.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "et de \\hyperref[VI.subsec2.14]{2.14}.)",
+      "note": "The parenthesis opened at « (On fera attention que » is not closed before Définition 1.30. The TeX keeps this printed omission."
+    },
+    {
+      "page": 194,
+      "where": "Footnote to Définition 1.30",
+      "scan": "Par la notion plus forte d'objet",
+      "tex": "Par la notion plus forte d'objet",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Pour la notion plus forte d'objet \\emph{noethérien}, \\cf \\hyperref[VI.def2.11]{2.11} ci-dessous.",
+      "note": "The print has « Par » for « Pour »; the TeX keeps the typo."
+    },
+    {
+      "page": 194,
+      "where": "End-of-page cut, heading 1.31",
+      "scan": "The main text ends with « passage à un sous-objet de X. »; heading 1.31 opens p. 195.",
+      "tex": "\\subsection{}\\etiquette[1.31]{VI.subsec1.31}",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Source line 1096, the heading 1.31, already belongs to p. 195. The cut comment only declares the following line 1097 as shared with p. 195; its boundary exception must also include line 1096. No text should be moved."
+    },
+    {
+      "page": 195,
+      "where": "1.31, opening sentence",
+      "scan": "les faits suivants",
+      "tex": "les faits suivantes",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "les faits suivantes",
+        "new": "les faits suivants"
+      },
+      "note": "The print reads « suivants », without e."
+    }
+  ],
+  "coordinator": "191: 0/0; 192: 2/2; 193: 1/1; 194: 3/4; 195: 1/0 (normal/misprint; marker counted as normal).\nMarker p. 194: extend the stated end-of-page exception to source line 1096; heading 1.31 belongs to p. 195."
+}

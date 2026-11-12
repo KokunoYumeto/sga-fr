@@ -1,0 +1,50 @@
+[
+ {
+  "page": "412",
+  "where": "7.4, first paragraph, reference in parentheses",
+  "scan": "cf. 7.2.6 d).)",
+  "tex": "\\hyperref[IV.exer7.2.6]{7.2.6} e).)",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "\\hyperref[IV.exer7.2.6]{7.2.6} e).)",
+   "new": "\\hyperref[IV.exer7.2.6]{7.2.6} d).)"
+  },
+  "note": "The print refers to part d) of 7.2.6, the TeX to part e). If the edition changed this on purpose it should use \\sisi."
+ },
+ {
+  "page": "413",
+  "where": "Exercice 7.5 a), « On dira alors que ... projecteur p admet une image »",
+  "scan": "On dira alors que le projecteur p",
+  "tex": "On dira alors que la\nprojecteur $p$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "que la\nprojecteur",
+   "new": "que le\nprojecteur"
+  },
+  "note": "The print has the article « le »; the TeX has « la »."
+ },
+ {
+  "page": "413",
+  "where": "Exercice 7.5 a), « on l'identifie suivant le contexte à un sous-objet ou à un objet quotient de C »",
+  "scan": "à un objet quotient de C",
+  "tex": "quotient de $C$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "à un sous-objet ou à un objet quotient de $X$",
+  "note": "The image of a projector p of X is a subobject or quotient of the object X, not of the category C. The TeX keeps the printed reading."
+ },
+ {
+  "page": "414",
+  "where": "Exercice 7.6 a), « morphisme essentiel du topos E dans le topos E' »",
+  "scan": "du topos E dans le topos E'.",
+  "tex": "dans le topos $E'$.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "dans le topos $F$",
+  "note": "The morphism is f:E→F, so the target topos should be F. The TeX keeps the printed E'."
+ }
+]

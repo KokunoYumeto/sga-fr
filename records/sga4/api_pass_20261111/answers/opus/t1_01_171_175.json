@@ -1,0 +1,147 @@
+[
+ {
+  "page": "171",
+  "where": "end of the paragraph before « Cela démontre 9.21.16 »",
+  "scan": "(en utilisant le fait que A est grand devant π'_o).",
+  "tex": "$A$ est grand devant $\\Pi'_{\\circ}$,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$A$ est grand devant $\\Pi'_{\\circ}$,",
+   "new": "$A$ est grand devant $\\Pi'_{\\circ}$)."
+  },
+  "note": "The TeX has a comma where the print closes the parenthesis and ends the sentence."
+ },
+ {
+  "page": "171",
+  "where": "heading of the lemma (variant of 9.21.9)",
+  "scan": "Lemme 9.21.16.",
+  "tex": "Lemme 9.21.17",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Lemme 9.21.17",
+  "note": "The print repeats the number 9.21.16. The lemma is cited as 9.21.17 on pp. 172 and 174. The TeX silently corrects it."
+ },
+ {
+  "page": "171",
+  "where": "Lemme 9.21.17, first sentence",
+  "scan": "formée des sections cartésiennes de E sur F",
+  "tex": "des sections cartésiennes de $E$ sur $F$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "des sections cartésiennes de $E$ sur $B$",
+  "note": "The sections are sections over B (compare 9.21.19: « section cartésienne de E sur B »). The TeX keeps the printed F."
+ },
+ {
+  "page": "172",
+  "where": "right-hand diagram of 9.21.19 d) (printed on p. 173), bottom vertex",
+  "scan": "X(α)_i",
+  "tex": "x(\\alpha)_i",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "x(\\alpha)_i \\ar[uu]",
+   "new": "X(\\alpha)_i \\ar[uu]"
+  },
+  "note": "Capital X in the print; the TeX has a lowercase x."
+ },
+ {
+  "page": "172",
+  "where": "right-hand diagram of 9.21.19 d), middle vertex",
+  "scan": "f*X(α)_{φ(i)}",
+  "tex": "f^{\\ast}X(\\alpha)_{\\varphi(i)}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "f^{\\ast}X(\\beta)_{\\varphi(i)}",
+  "note": "μ(φ(i),f) has source f*X(β)_{φ(i)}, so α should read β. The TeX keeps the print's α."
+ },
+ {
+  "page": "172",
+  "where": "right-hand diagram of 9.21.19 d), lower arrow label",
+  "scan": "λ(i,j)",
+  "tex": "\\lambda(i,j)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\lambda(i,f)",
+  "note": "The arrow is λ(i,f): X(α)_i → f*X(β)_{φ(i)}, as on p. 174. The TeX keeps the print's j."
+ },
+ {
+  "page": "172",
+  "where": "end of page: the displaymath with the two diagrams",
+  "scan": "p. 172 ends with « deux diagrammes suivants sont commutatifs : »; the two diagrams open p. 173",
+  "tex": "\\begin{displaymath}\n\\xymatrix@L=5pt@R=1.25cm@C=2.2cm{",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The diagram block (the displaymath) belongs to printed p. 173, which begins with the diagrams. The first line of the page's TeX does not flag it."
+ },
+ {
+  "page": "173",
+  "where": "9.21.20 d)",
+  "scan": "Pour tout flèche f: α → β dans B",
+  "tex": "Pour tout flèche $f:\\alpha\\rightarrow \\beta$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Pour toute flèche",
+  "note": "Gender misprint in the print; the TeX keeps it."
+ },
+ {
+  "page": "174",
+  "where": "display of the morphism of ind-objects",
+  "scan": "(f*)(X(β)_i))_{i∈J}",
+  "tex": "(f^\\ast)(X(\\beta)_i)_{i\\in\nJ}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(f^\\ast(X(\\beta)_i))_{i\\in J}",
+  "note": "The print has unbalanced parentheses. The TeX silently drops one closing parenthesis but leaves (f^\\ast) instead of the intended (f*(X(β)_i))."
+ },
+ {
+  "page": "174",
+  "where": "last sentence of 9.21.20",
+  "scan": "(*) est un isomorphismes",
+  "tex": "$(\\ast)$ est un %%\nisomorphisme",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "isomorphisme",
+  "note": "Plural misprint in the print; the TeX silently corrects it."
+ },
+ {
+  "page": "175",
+  "where": "first line of the page's TeX",
+  "scan": "« comme en 9.21.15. » is printed at the foot of p. 174",
+  "tex": "\\hyperref[I.sec9.21.15]{9.21.15}.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "This line belongs to p. 174, whose TeX ends at « comme en ». Printed p. 175 begins with Théorème 9.22."
+ },
+ {
+  "page": "175",
+  "where": "Théorème 9.22",
+  "scan": "pour tout α ∈ ob E",
+  "tex": "$\\alpha\\in \\ob E$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\alpha\\in \\ob B$",
+  "note": "α is an object of B. The TeX keeps the print's E."
+ },
+ {
+  "page": "175",
+  "where": "paragraph after the theorem: filtration cardinale",
+  "scan": "(Filt^π(E))_{π≥π_α}",
+  "tex": "(\\Filt^{\\Pi}(E))_{\\Pi\\geq\n\\Pi_{\\alpha}}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "(\\Filt^{\\Pi}(E_{\\alpha}))_{\\Pi\\geq\\Pi_{\\alpha}}",
+  "note": "It should be the filtration of the fibre E_α. The TeX keeps the print's E."
+ }
+]

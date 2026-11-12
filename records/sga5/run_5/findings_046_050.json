@@ -1,0 +1,376 @@
+[
+ {
+  "page": 45,
+  "where": "display (4.7.8), printed at the top of p. 46 (it stands under the folio-45 marker)",
+  "scan": "(4.7.8)  R Hom(A_{V,X} , K_X) -> R Hom(A_x,K_X) ≃ A .  The last sign is a hand-drawn ≃ (tilde over a bar) without arrowhead; the arrowed sign of the last display of p. 46 (R Hom(A_{V,X}, F'_{U,X})[1] ≃> ...) has one.",
+  "tex": "\\R\\Hom(A_x,K_X)\\xrightarrow{\\sim}A.",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(A_x,K_X)\\xrightarrow{\\sim}A.",
+   "new": "(A_x,K_X)\\simeq A."
+  },
+  "note": "Printed on p. 46, filed under p. 45 because the text stands in page_045.tex until the folio-46 marker is moved (marker finding of p. 46): apply before moving the marker. The rest of that block ((4.7.7), 'donne un homomorphisme de degré +1 :', 'En composant (4.7.5), (4.7.6) et (4.7.8), on obtient la flèche annoncée (4.7.1)' .') agrees with the print of p. 46."
+ },
+ {
+  "page": 46,
+  "where": "top of the page: display (4.7.7) to '(4.7.1)'.', and the footnote (*) under the marker",
+  "scan": "p. 46 begins with '(4.7.7)  0 -> A_{V,X} -> A_X -> A_x -> 0', then 'donne un homomorphisme de degré +1 :', (4.7.8) and 'En composant (4.7.5), (4.7.6) et (4.7.8), on obtient la flèche annoncée (4.7.1)' .'. p. 45 ends with 'Enfin, la suite exacte' and, at its foot under a short rule, the footnote '(*) (ajouté en 77) Inexact : ...'. p. 46 has no footnote.",
+  "tex": "The display (4.7.7) through '(4.7.1)'.' ends page_045.tex; the folio-46 marker follows it, and page_046.tex opens with the footnote paragraph '\\emph{(*) (ajouté en 77) Inexact: ...}' of p. 45.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 46 really begins at the '\\[' of the display (4.7.7), the line after 'Enfin, la suite exacte' (s5.tex line 1287 at 16:52; the marker is at line 1296). Exact fix (bash): python -I move_marker.py 5 46 $'\\\\[\\n(4.7.7)' --before (the anchor is '\\[', a line break, '(4.7.7)'; '\\[' alone would land on the (4.7.8) display and '(4.7.7)' alone would split the display; simulated in memory on both layers, identical here: the marker lands between 'Enfin, la suite exacte' and '\\['). Text not moved. After the move the footnote paragraph (line 1297 and the blank line after it) still stands under p. 46, after '(4.7.1)'.': it is the foot of p. 45 (its call '(*)' is in the display ending '\\D(A)\\quad(*).', line 1262). Move it before the marker, just after 'Enfin, la suite exacte', or set it as \\footnote like the '(ajouté en 1977)' notes (lines 762, 779, whose calls stand in running text). The fix of (4.7.8) is filed under p. 45: apply it before moving the marker."
+ },
+ {
+  "page": 46,
+  "where": "the footnote (*) of p. 45 at the head of page_046.tex: opening of the \\emph",
+  "scan": "foot of p. 45: '(*) (ajouté en 77) Inexact : il est facile, en fait, de prolonger ...' in the plain upright type of the 1977 typewriter; nothing in the note is underlined",
+  "tex": "\\emph{(*) (ajouté en 77) Inexact: il est facile, ... \\D(A)$.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{(*) (ajouté en 77)",
+   "new": "(*) (ajouté en 77)"
+  },
+  "note": "\\emph is this file's command for the print's underline; the note is not underlined. Apply together with the next finding (the closing brace): either alone breaks the LaTeX."
+ },
+ {
+  "page": 46,
+  "where": "the footnote (*) of p. 45: closing brace of the \\emph",
+  "scan": "the note ends '... D^-(A) x D(A) -> D(A) .', not underlined",
+  "tex": "...\\D^-(A)\\times\\D(A)\\to\\D(A)$.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\to\\D(A)$.}",
+   "new": "\\to\\D(A)$."
+  },
+  "note": "Apply together with the previous finding."
+ },
+ {
+  "page": 46,
+  "where": "the footnote (*) of p. 45: the two L over the tensor sign",
+  "scan": "both L over ⊗ are ordinary upright typed capitals of the note's typewriter, not bold",
+  "tex": "$\\overset{\\mathbf L}{\\otimes}:...$ en $\\overset{\\mathbf L}{\\otimes}:...$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathbf L}{\\otimes}:\\D^-(A)\\times\\D^-(A)\\to\\D^-(A)$ en $\\overset{\\mathbf L}",
+   "new": "\\mathrm L}{\\otimes}:\\D^-(A)\\times\\D^-(A)\\to\\D^-(A)$ en $\\overset{\\mathrm L}"
+  },
+  "note": "Independent of the two \\emph edits. \\mathrm L is the file's form at s5.tex lines 99-303 (\\overset{\\mathrm L}) and in Exposé I pp. 9-11 (\\limits^{\\mathrm{L}}). The bold form also stands for the print's plain typed L on p. 45 ((4.7.1)', (4.7.5)): see the message."
+ },
+ {
+  "page": 46,
+  "where": "end of the triangle (b), after R Gamma_x(F')",
+  "scan": "a full stop after the triangle (b), level with its bottom row",
+  "tex": "... \\R\\Gamma_x(F') \\arrow[ll] \\end{tikzcd} \\] with no punctuation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzcd}",
+   "new": "\\end{tikzcd}\\quad ."
+  },
+  "note": "Same form as the logged fixes of punctuation after a diagram."
+ },
+ {
+  "page": 46,
+  "where": "first display of p. 47 (it stands under the folio-46 marker): its second line",
+  "scan": "'≃ R Hom(A_V , i_!G')   par dualité (SGAA 3.1.10)': a plain hand-drawn ≃ (tilde over a bar), no arrowhead",
+  "tex": "&\\xrightarrow{\\sim}\\R\\Hom(A_V,i_!G')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "&\\xrightarrow{\\sim}\\R\\Hom(A_V,i_!G')",
+   "new": "&\\simeq\\R\\Hom(A_V,i_!G')"
+  },
+  "note": "Printed on p. 47, filed under p. 46 because the text stands in page_046.tex until the folio-47 marker is moved: apply before moving the marker."
+ },
+ {
+  "page": 46,
+  "where": "first display of p. 47 (under the folio-46 marker): end of its second line",
+  "scan": "'par dualité (SGAA 3.1.10)' with no punctuation; the next line is 'd'où finalement un isomorphisme canonique'",
+  "tex": "\\text{par dualité (SGAA~3.1.10)},",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(SGAA~3.1.10)},",
+   "new": "(SGAA~3.1.10)}"
+  },
+  "note": "Comma added at the end of the display. Printed on p. 47: apply before moving the folio-47 marker. Independent of the previous fix."
+ },
+ {
+  "page": 47,
+  "where": "top of the page: 'Mais on a' and its display",
+  "scan": "p. 47 begins with 'Mais on a', then the two-line display R Hom(A_{V,X} , F'_{U,X}) = R Hom(j_!A_V , j_!i_!G') / ≃ R Hom(A_V , i_!G') par dualité (SGAA 3.1.10), then 'd'où finalement un isomorphisme canonique'; p. 46 ends with the display R Hom(A_{V,X} , F'_{U,X})[1] ≃> R Gamma_x(F'_{U,X}) .",
+  "tex": "'Mais on a' through 'd'où finalement un' end page_046.tex; the folio-47 marker stands between 'un' and 'isomorphisme canonique'.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 47 really begins at 'Mais on a' (s5.tex line 1323 at 16:52; the marker is at line 1331). Exact fix: python -I move_marker.py 5 47 \"Mais on a\" --before (simulated in memory on both layers: the marker lands between the '\\]' of the display above and 'Mais on a'). Text not moved. The two fixes of that display (the iso sign, the added comma) are filed under p. 46: apply them before moving the marker."
+ },
+ {
+  "page": 47,
+  "where": "(4.7.10), left-hand side",
+  "scan": "R Gamma_V(i_!G') [-1]: Gamma with the subscript V, the parenthesis holding only i_!G'",
+  "tex": "(4.7.10)\\qquad \\R\\Gamma(V,i_!G')",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(4.7.10)\\qquad \\R\\Gamma(V,i_!G')",
+   "new": "(4.7.10)\\qquad \\R\\Gamma_V(i_!G')"
+  },
+  "note": "The print's own notation here ((4.7.1)', p. 46 and (**) of 4.7.16 write R Gamma(V,i_!G')); not wrong, since i_!G' lives on V, so not classed as a misprint."
+ },
+ {
+  "page": 47,
+  "where": "(4.7.10), the isomorphism sign",
+  "scan": "[-1] ≃ R Gamma_x(F'_{U,X}) . : a plain hand-drawn ≃ (tilde over a bar), no arrowhead",
+  "tex": "[-1]\\xrightarrow{\\sim}\\R\\Gamma_x(F'_{U,X}).",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "[-1]\\xrightarrow{\\sim}\\R\\Gamma_x(F'_{U,X}).",
+   "new": "[-1]\\simeq\\R\\Gamma_x(F'_{U,X})."
+  },
+  "note": "Independent of the previous fix."
+ },
+ {
+  "page": 47,
+  "where": "(4.7.11), end of the display",
+  "scan": "'... -> A_Y -> 0 .' with a full stop (a round dot without tail; the comma after (4.7.9) on p. 46 has a clear tail), then 'qui donne naissance ...' in lower case",
+  "tex": "A_Y\\longrightarrow0,",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "A_Y\\longrightarrow0,",
+   "new": "A_Y\\longrightarrow0."
+  },
+  "corrected": "A_Y\\longrightarrow0,",
+  "note": "Full stop for a comma (the sentence runs on with 'qui'); the TeX silently corrects it: changed back to the printed reading."
+ },
+ {
+  "page": 47,
+  "where": "'qui donne naissance à un triangle distingué.' before the triangle (a)",
+  "scan": "a full stop after 'distingué'",
+  "tex": "qui donne naissance à un triangle distingué (no punctuation)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "un triangle distingué",
+   "new": "un triangle distingué."
+  },
+  "note": "The parallel sentence before the triangle (b) on p. 46 has none, as the TeX there."
+ },
+ {
+  "page": 47,
+  "where": "end of the triangle (a), after R Gamma_X(F)",
+  "scan": "a full stop after the triangle (a), level with its bottom row",
+  "tex": "... \\R\\Gamma_X(F) \\arrow[ul] \\end{tikzcd} \\] with no punctuation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzcd}",
+   "new": "\\end{tikzcd}\\quad ."
+  },
+  "note": "Same form as the logged fixes of punctuation after a diagram."
+ },
+ {
+  "page": 47,
+  "where": "last paragraph: 'les accouplements (4.7.12), (4.7.13), et (4.7.14)'",
+  "scan": "(4.7.12), (4.7.13), et (4.7.14): a comma after (4.7.13)",
+  "tex": "(4.7.12), (4.7.13) et (4.7.14)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(4.7.13) et (4.7.14) sont",
+   "new": "(4.7.13), et (4.7.14) sont"
+  },
+  "note": "Comma left out."
+ },
+ {
+  "page": 48,
+  "where": "first word of the page, 'L'accouplement'",
+  "scan": "L'accouplement, one word",
+  "tex": "'L'' and 'accouplement' on two lines: the line end prints a space (L' accouplement)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "L'\naccouplement",
+   "new": "L'accouplement"
+  },
+  "note": "A line break after an elided article, right after the marker; the same break stands elsewhere in the file (see the message)."
+ },
+ {
+  "page": 48,
+  "where": "'En résumé, nous pouvons énoncer :' after (4.7.15)",
+  "scan": "a new paragraph (indented) after the display",
+  "tex": "runs on from the display (no blank line after \\])",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nEn résumé",
+   "new": "\\]\n\nEn résumé"
+  },
+  "note": "Paragraph break; drop it if paragraphing is left to a global pass."
+ },
+ {
+  "page": 48,
+  "where": "Proposition 4.7.16: 'Pour G ∈ ob D_c^b(U), on a un accouplement parfait :'",
+  "scan": "a new paragraph (indented) after '(d'où des complexes dualisants associés sur V, U, Y).'",
+  "tex": "run into the preceding sentence",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "sur $V,U,Y$). Pour",
+   "new": "sur $V,U,Y$).\n\nPour"
+  },
+  "note": "Paragraph break; drop it if paragraphing is left to a global pass."
+ },
+ {
+  "page": 48,
+  "where": "Proposition 4.7.16: 'Si G = F|U , où F ∈ ob D_c^b(X), on a un isomorphisme canonique'",
+  "scan": "a new paragraph (indented) after '(où G' = D_U(G)) .'",
+  "tex": "run on after '(où $G'=\\underline{D}_U(G)$).'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "(où $G'=\\underline{D}_U(G)$). Si",
+   "new": "(où $G'=\\underline{D}_U(G)$).\n\nSi"
+  },
+  "note": "Paragraph break; drop it if paragraphing is left to a global pass."
+ },
+ {
+  "page": 48,
+  "where": "end of the two triangles of Proposition 4.7.16, after R Gamma_x(F')",
+  "scan": "a comma after the right-hand triangle, level with its bottom row",
+  "tex": "\\end{tikzpicture} with no punctuation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzpicture}",
+   "new": "\\end{tikzpicture}\\quad ,"
+  },
+  "note": "The sentence goes on at the top of p. 49 ('compatible avec l'accouplement (*) ...')."
+ },
+ {
+  "page": 49,
+  "where": "Remarque 4.7.17: 'on voit donc que la dualité locale sur X'",
+  "scan": "'la dualité locale sur X' underlined",
+  "tex": "que la dualité locale sur $X$ (sous la forme (4.2.2)')",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "que la dualité locale sur $X$ (sous",
+   "new": "que \\underline{la dualité locale sur $X$} (sous"
+  },
+  "note": "Underline left out."
+ },
+ {
+  "page": 49,
+  "where": "Remarque 4.7.17: 'équivaut à la dualité \"globale\" sur U = X - x,'",
+  "scan": "'équivaut à la dualité \"globale\" sur U = X - x,' underlined, the rule running under the final comma",
+  "tex": "équivaut à la dualité ``globale'' sur $U=X-x$,",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "équivaut à la dualité ``globale'' sur $U=X-x$,",
+   "new": "\\underline{équivaut à la dualité ``globale'' sur $U=X-x$,}"
+  },
+  "note": "Underline left out; the comma is kept inside because the rule reaches it."
+ },
+ {
+  "page": 50,
+  "where": "section heading",
+  "scan": "'5. Dualité locale sur les courbes.' (underlined, with a full stop)",
+  "tex": "\\section*{5. Dualité locale sur les courbes}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{5. Dualité locale sur les courbes}",
+   "new": "\\section*{5. Dualité locale sur les courbes.}"
+  },
+  "note": "As the logged fix of the heading of section 3 (p. 21)."
+ },
+ {
+  "page": 50,
+  "where": "proof of Théorème 5.1, its label",
+  "scan": "'Démonstration : Supposons prouvée la pureté.': 'Démonstration' underlined, then ' :', run into the text",
+  "tex": "\\begin{prooftext}[Démonstration] (prints '\\emph{Démonstration.}')",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}[Démonstration]\n",
+   "new": "\\emph{Démonstration} : "
+  },
+  "note": "Apply together with the removal of the matching '\\end{prooftext}' and its line break on p. 52, after '... Nous utiliserons le lemme élémentaire suivant.' (s5.tex line 1498 at 16:52), outside this batch: LaTeX fails otherwise. Same form as the global '\\emph{Preuve} :' and the p. 32 fix."
+ },
+ {
+  "page": 50,
+  "where": "proof of 5.1, first paragraph: 'que dim.q.inj(A_X) = 2'",
+  "scan": "dim.q.inj typed upright throughout",
+  "tex": "$\\dim.q.inj(A_X)=2$ (q.inj in math italic)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\dim.q.inj(A_X)",
+   "new": "\\dim.\\mathrm{q.inj}(A_X)"
+  },
+  "note": "The file's form elsewhere: \\dim.\\mathrm{q.inj} at s5.tex lines 379-428, 971 and in the Appendice."
+ },
+ {
+  "page": 50,
+  "where": "'Soient x son point fermé, (π = car(k(x)), η son point générique'",
+  "scan": "( π = car(k(x)), : only two closing parentheses after x (crisp type), so the parenthesis opened before π is never closed",
+  "tex": "$(\\pi=\\car(k(x)))$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$(\\pi=\\car(k(x)))$",
+   "new": "$(\\pi=\\car(k(x))$"
+  },
+  "corrected": "$(\\pi=\\car(k(x)))$",
+  "note": "A closing parenthesis missing in the print; the TeX silently balances it: changed back to the printed reading."
+ },
+ {
+  "page": 50,
+  "where": "reference before (5.1.1): '[CL Chap. IV § 2 Exer 2]'",
+  "scan": "[CL  Chap. IV § 2 Exer 2]: no comma after CL, no full stop after Exer",
+  "tex": "[CL, Chap.~IV \\S~2 Exer.~2]",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "[CL, Chap.~IV \\S~2 Exer.~2]",
+   "new": "[CL Chap.~IV \\S~2 Exer~2]"
+  },
+  "note": "Comma and abbreviation point added by the TeX."
+ },
+ {
+  "page": 50,
+  "where": "after (5.1.1): 'Z_l(1) = lim mu_{l^nu}'",
+  "scan": "lim with the arrow under it and the index ν written below the arrow",
+  "tex": "\\Z_\\ell(1)=\\varprojlim \\mu_{\\ell^\\nu}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\varprojlim \\mu_{\\ell^\\nu}",
+   "new": "\\varprojlim_{\\nu} \\mu_{\\ell^\\nu}"
+  },
+  "note": "Index of the limit left out."
+ },
+ {
+  "page": 50,
+  "where": "end of '(Bien entendu, H est isomorphe, mais non canoniquement, à prod Z_l .).'",
+  "scan": "prod_{l≠π} Z_l .). : a full stop before and another after the closing parenthesis",
+  "tex": "à $\\prod_{\\ell\\ne\\pi}\\Z_\\ell$.)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\Z_\\ell$.)",
+   "new": "\\Z_\\ell$.)."
+  },
+  "corrected": "\\Z_\\ell$.)",
+  "note": "Doubled full stop; the TeX silently drops the second: changed back to the printed reading."
+ }
+]

@@ -1,0 +1,89 @@
+[
+ {
+  "page": "181",
+  "where": "diagram of implications, arrow from 'épimorphique universelle'",
+  "scan": "the arrow from 'épimorphique universelle' points to 'épimorphique'",
+  "tex": "\\txt{épimorphique \\\\universelle} \\ar@{=>}[llld]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\ar@{=>}[llld]",
+   "new": "\\ar@{=>}[lllld]"
+  },
+  "note": "'épimorphique universelle' sits in column 5 and 'épimorphique' in column 1 of the last row. [llld] ends in the empty column 2, so the arrow misses its target node."
+ },
+ {
+  "page": "183",
+  "where": "10.9, after the display",
+  "scan": "induit une bijection de F(A) sur le graphe d'une relation",
+  "tex": "sur e graphe",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "sur e graphe",
+   "new": "sur le graphe"
+  },
+  "note": "The TeX has lost the letter 'l' of 'le'."
+ },
+ {
+  "page": "184",
+  "where": "first line",
+  "scan": "Soit π : C → D (small pi, as everywhere on the page)",
+  "tex": "Soit\\pageoriginale $\\Pi:C\\rightarrow D$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\Pi:C\\rightarrow D$",
+   "new": "$\\pi:C\\rightarrow D$"
+  },
+  "note": "The print has a small π. The TeX itself uses \\pi for the same morphism further down."
+ },
+ {
+  "page": "184",
+  "where": "10.10, 'il existe un morphisme π : A → B'",
+  "scan": "π : A → B",
+  "tex": "$\\Pi:A\\rightarrow B$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\Pi:A\\rightarrow B$",
+   "new": "$\\pi:A\\rightarrow B$"
+  },
+  "note": "The print has a small π, the same morphism as the π in the square and in the text that follows."
+ },
+ {
+  "page": "184",
+  "where": "bibliography",
+  "scan": "B. Mitchell, Theory of categories, Academie Press (1965).",
+  "tex": "Academie Press (1965).",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Academic Press (1965)",
+  "note": "The print reads 'Academie' for 'Academic'. The TeX keeps it in both readings of \\sisi."
+ },
+ {
+  "page": "185",
+  "where": "Definition 1, (U.?)",
+  "scan": "alors le couple (x,y) ∈ U",
+  "tex": "alors le coupe $(x,y)\\in U$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "le coupe $(x,y)",
+   "new": "le couple $(x,y)"
+  },
+  "note": "The TeX has lost the letter 'l' of 'couple'."
+ },
+ {
+  "page": "185",
+  "where": "N.B., name Kuratowski",
+  "scan": "Kuratow?ki, overtyped and blurred; the print's letters cannot be read with certainty",
+  "tex": "\\sisi{Kuratowaki}{Kuratowski}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "Kuratowski",
+  "note": "The print shows a typist's overstrike at this place, so its reading 'Kuratowaki' cannot be confirmed. The TeX corrects it with \\sisi."
+ }
+]

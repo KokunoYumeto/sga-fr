@@ -1,0 +1,1 @@
+471: 0/1; 472: 0/0; 473: 0/1; 474: 4/1; 475: 1/0. Convention: the TeX writes the print's ∅ as \phi both for the map φ (473 9.5.12 b), 474 9.6.5) and for the empty set (474 9.7.1 ×3, 475 9.7.2.2). The empty-set uses should be \emptyset, unless macros.tex defines \phi as ∅. Check this convention for the rest of the exposé.

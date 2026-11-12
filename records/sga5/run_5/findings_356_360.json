@@ -1,0 +1,402 @@
+[
+ {
+  "page": 355,
+  "where": "display of Proposition 3.1 (printed at the top of p. 356)",
+  "scan": "'K(B) --K(i)--> K(A) --K(Q)--> K(A/B) --> 0' with nothing after the 0",
+  "tex": "K(\\cB)\\xrightarrow{K(i)}K(\\cA)\\xrightarrow{K(Q)}K(\\cA/\\cB)\\longrightarrow 0.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow 0.\n\\]",
+   "new": "\\longrightarrow 0\n\\]"
+  },
+  "note": "The TeX adds a full stop at the end of the display. Printed on p. 356; filed under p. 355, where the display stands until the folio-356 marker is moved (see the marker item of p. 356); the edit does not touch the move's anchor '\\['. Batch 351-355 may report the same display: apply once."
+ },
+ {
+  "page": 356,
+  "where": "top of the page: the display of Proposition 3.1",
+  "scan": "p. 356 begins with the display 'K(B) --K(i)--> K(A) --K(Q)--> K(A/B) --> 0', then 'Démonstration. Il est clair ...'; p. 355 ends with 'Alors la suite suivante est exacte :' and blank space",
+  "tex": "the display '\\[ K(\\cB)\\xrightarrow{K(i)}K(\\cA)\\xrightarrow{K(Q)}K(\\cA/\\cB)\\longrightarrow 0. \\]' and '\\end{statement}' end page_355.tex; the folio-356 marker follows them, before '\\emph{Démonstration.}'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 356 really begins at the '\\[' that opens that display (inside the statement of Proposition 3.1, the line after '... Alors la suite suivante est exacte:'; diplomatic s5.tex line 12198, current 12194; the marker stands at 12203 and 12199). Exact fix: python -I move_marker.py 5 356 '\\[' --before (simulated in memory on both layers: the marker then stands on its own line between '... est exacte:' and '\\[', and '\\end{statement}', the blank line and '\\emph{Démonstration.}' follow the display). The anchor is the last '\\[' above the marker, so run the command once only (also if batch 351-355 reports the same move). Text not moved. The display's added full stop is filed under p. 355."
+ },
+ {
+  "page": 356,
+  "where": "'Démonstration.' (proof label)",
+  "scan": "'Démonstration' underlined, the full stop after the underline",
+  "tex": "\\emph{Démonstration.} (the full stop inside the emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Démonstration.}",
+   "new": "\\emph{Démonstration}."
+  },
+  "note": "As the file's own '\\emph{Démonstration}.' at s5.tex lines 1714 and 1888."
+ },
+ {
+  "page": 356,
+  "where": "'D'autre part il existe une application évidente'",
+  "scan": "'D'autre part il existe' (no comma)",
+  "tex": "D'autre part, il existe",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "D'autre part, il existe",
+   "new": "D'autre part il existe"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 356,
+  "where": "'Soient X,Y ∈ Ob(A/B) et supposons qu'ils sont isomorphes'",
+  "scan": "no comma after 'Ob(A/B)' (only a faint speck below the line)",
+  "tex": "Soient $X,Y\\in\\Ob(\\cA/\\cB)$, et supposons",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$, et supposons",
+   "new": "$ et supposons"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 356,
+  "where": "'(S est un système multiplicatif saturé).'",
+  "scan": "'saturé).' (the full stop after the parenthesis)",
+  "tex": "($S$ est un système multiplicatif saturé.)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "saturé.)",
+   "new": "saturé)."
+  },
+  "note": ""
+ },
+ {
+  "page": 356,
+  "where": "'X_1 --s--> X , X_1 --t--> Y tel que s,t ∈ S'",
+  "scan": "nothing after Y (the sentence goes on with 'tel que')",
+  "tex": "X_1\\xrightarrow{s}X,\\qquad X_1\\xrightarrow{t}Y,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{t}Y,",
+   "new": "\\xrightarrow{t}Y"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 356,
+  "where": "'de la forme (X_1,X,Z,s,...) avec Z ∈ Ob B'",
+  "scan": "'(X_1,X,Z,s,...) avec' (no comma)",
+  "tex": "(X_1,X,Z,s,\\ldots), (display), then 'avec'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "s,\\ldots),",
+   "new": "s,\\ldots)"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 356,
+  "where": "'ce qui résulte de fait qu'il existe un triangle distingué'",
+  "scan": "'résulte de fait' (for 'résulte du fait')",
+  "tex": "ce qui résulte de fait qu'il existe",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "ce qui résulte du fait qu'il existe",
+  "note": "The TeX keeps the printed reading."
+ },
+ {
+  "page": 356,
+  "where": "heading of section 4",
+  "scan": "'4. Comparaison avec le cas des catégories abéliennes.' (the title underlined, then a full stop)",
+  "tex": "\\subsection*{4. Comparaison avec le cas des catégories abéliennes} (no full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{4. Comparaison avec le cas des catégories abéliennes}",
+   "new": "\\subsection*{4. Comparaison avec le cas des catégories abéliennes.}"
+  },
+  "note": "The TeX drops the full stop that ends the underlined title."
+ },
+ {
+  "page": 356,
+  "where": "every \\Ob of pp. 356-359 (convention, reported once)",
+  "scan": "'Ob' with a capital O: 'Ob(A/B) = Ob(A)', 'Z ∈ Ob B' (p. 356), 'Ob(K^{b,b}(C))' (p. 357), 'X,Y ∈ Ob C_o', 'Ker u ∈ Ob C_o', 'L ∈ Ob C_o' (p. 358), 'L_1 ∈ Ob C_o' (p. 359)",
+  "tex": "\\Ob, which prints 'ob': the first definition in s5.tex, line 101 '\\providecommand{\\Ob}{\\operatorname{ob}}' (again lines 163, 269), wins; the later '\\providecommand{\\Ob}{\\operatorname{Ob}}' (lines 226, 300) does nothing",
+  "kind": "word",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention, not itemized (the macro, not the page text, differs from the print). Examples: p. 356 '$\\Ob(\\cA/\\cB)=\\Ob(\\cA)$', p. 357 '\\Ob(K^{b,b}(\\cC))', p. 358 'X,Y\\in\\Ob\\cC_o'. Exposé VIII has \\Ob on 17 lines (s5.tex 12038-12503); Exposé III B (lines 4594-6711) and Exposé X onwards (12702, 12810, 13345-13702, 15195-15838) also use it, and line 12960 writes \\operatorname{Ob} by hand: decide per exposé against the print (e.g. \\operatorname{Ob} for the 17 lines of Exposé VIII)."
+ },
+ {
+  "page": 356,
+  "where": "category letters of pp. 356-360 (convention, reported once)",
+  "scan": "plain typed capitals A, B, C, C_o (no underline, not script): 'Ob(A/B) = Ob(A)' (p. 356), 'K(C) --μ--> K(D^b(C))' (p. 357), 'C_o une sous-catégorie pleine de C' (p. 360)",
+  "tex": "\\cA, \\cB, \\cC (\\mathcal)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of Exposé VIII, not itemized: 94 lines with \\cC and 8 each with \\cA, \\cB (s5.tex 11996-12683). Examples: p. 356 '$\\Ob(\\cA/\\cB)=\\Ob(\\cA)$', p. 357 '$K(\\cC)$', p. 360 '$\\cC_o$ une sous-catégorie pleine de $\\cC$'. One decision for the exposé (compare SGA 6 global item 81)."
+ },
+ {
+  "page": 357,
+  "where": "top of the page (and foot of p. 356): 'en-gendrée par les complexes bornés'",
+  "scan": "p. 356 ends 'la sous-catégorie pleine de D(C) en-'; p. 357 begins 'gendrée par les complexes bornés.'",
+  "tex": "page_356.tex ends '... pleine de $D(\\cC)$ engendrée par les'; the folio-357 marker stands before 'complexes bornés.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 357 really begins with 'gendrée', the second half of 'engendrée' divided at the page break ('par les' is also on p. 357). Two commands, in this order, each once: python -I move_marker.py 5 357 'engendrée' --before, then python -I marker_split_word.py 5 357 split en gendrée (simulated in memory on both layers: '... pleine de $D(\\cC)$ ' / 'en%' / marker / 'gendrée par les' / 'complexes bornés. ...'; diplomatic s5.tex line 12234, current 12230). A second run of the move would go back to an earlier 'engendrée' 142,000 characters up. Text not moved."
+ },
+ {
+  "page": 357,
+  "where": "'D^b(C) ≅ K^{b,b}(C)/K^{b,∅}(C) , K^{b,∅}(C) étant la sous-catégorie épaisse'",
+  "scan": "the second index is a slashed circle, the stroke slanted and running through it (∅, the empty set: complexes with no cohomology)",
+  "tex": "K^{b,\\phi} twice (Greek phi)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "/K^{b,\\phi}(\\cC),\n\\]\n$K^{b,\\phi}(\\cC)$",
+   "new": "/K^{b,\\emptyset}(\\cC),\n\\]\n$K^{b,\\emptyset}(\\cC)$"
+  },
+  "note": "\\emptyset as elsewhere in the file (lines 907, 1894). The only two \\phi of Exposé VIII."
+ },
+ {
+  "page": 357,
+  "where": "the isomorphism sign in 'D^b(C) ≅ K^{b,b}(C)/K^{b,∅}(C)'",
+  "scan": "a hand-drawn sign of three strokes: two wavy lines over a straight one (≊)",
+  "tex": "\\simeq (one wavy line over a straight one)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "D^b(\\cC)\\simeq K^{b,b}",
+   "new": "D^b(\\cC)\\approxeq K^{b,b}"
+  },
+  "note": "Unlike the two-stroke ≃ of p. 359 (four times), which \\simeq renders. \\approxeq is amssymb (loaded). If the volume treats hand-drawn isomorphism signs as one glyph, drop this item."
+ },
+ {
+  "page": 357,
+  "where": "'Soit X^•=(X_i) ∈ Ob(K^{b,b}(C)) Si l'on pose'",
+  "scan": "no full stop after 'Ob(K^{b,b}(C))' at the end of the line; the next line begins 'Si l'on pose'",
+  "tex": "\\Ob(K^{b,b}(\\cC))$. Si l'on pose",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "(\\cC))$. Si l'on pose",
+   "new": "(\\cC))$ Si l'on pose"
+  },
+  "corrected": "(\\cC))$. Si l'on pose",
+  "note": "The print omits the full stop that ends the sentence; the TeX silently corrects. The space after the line's last parenthesis is clean."
+ },
+ {
+  "page": 357,
+  "where": "'K(D^b(C)) --ν--> K(C) et il est immédiat de vérifier'",
+  "scan": "'K(C) et il est' (no comma)",
+  "tex": "K(D^b(\\cC))\\xrightarrow{\\nu}K(\\cC), (display), then 'et il est immédiat'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\nu}K(\\cC),",
+   "new": "\\xrightarrow{\\nu}K(\\cC)"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 357,
+  "where": "'lorsque C est \"trop grosse\", il y a'",
+  "scan": "straight typewriter double quotes",
+  "tex": "«trop grosse»",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "«trop grosse»",
+   "new": "``trop grosse''"
+  },
+  "note": "Guillemets for the print's straight quotes (the accepted forms are ``...'' and plain double quotes). Exposé VIII has guillemets on 6 lines (s5.tex 12161, 12167, 12254, 12364, 12422, 12621)."
+ },
+ {
+  "page": 358,
+  "where": "'alors Ker u ∈ Ob C_o .' / 'En raisonnant comme plus haut'",
+  "scan": "'En raisonnant comme plus haut, ...' opens a new, indented paragraph after condition (B)",
+  "tex": "runs on: 'alors $\\operatorname{Ker}u\\in\\Ob\\cC_o$. En raisonnant'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "$. En raisonnant",
+   "new": "$.\n\nEn raisonnant"
+  },
+  "note": "Paragraph break of the print."
+ },
+ {
+  "page": 358,
+  "where": "Proposition 4.1 (C): the diagram A --u--> B <--v-- L",
+  "scan": "a comma after the diagram (to the right of L)",
+  "tex": "no punctuation after \\end{tikzcd}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzcd}\n\\]\noù $u$",
+   "new": "\\end{tikzcd},\n\\]\noù $u$"
+  },
+  "note": "The TeX drops the comma printed after the diagram."
+ },
+ {
+  "page": 358,
+  "where": "'peut être complété en un diagramme commutatif :'",
+  "scan": "'commutatif :' (with a colon)",
+  "tex": "un diagramme commutatif (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "un diagramme commutatif\n\\[",
+   "new": "un diagramme commutatif:\n\\["
+  },
+  "note": "Written 'commutatif:' like the file's 'suivante:'."
+ },
+ {
+  "page": 359,
+  "where": "top of the page: 'tel que L_1 ∈ Ob C_o et que w est un épimorphisme.'",
+  "scan": "p. 359 begins 'tel que L_1 ∈ Ob C_o et que w est un épimorphisme.'; p. 358 ends with the square diagram (A, B, L_1, L) and blank space",
+  "tex": "'tel que $L_1\\in\\Ob\\cC_o$ et que $w$ est un' is the last line of page_358.tex; page_359.tex begins 'épimorphisme.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 359 really begins at 'tel que $L_1' (the line after the '\\]' of the square diagram; diplomatic s5.tex line 12299, current 12295). Exact fix: python -I move_marker.py 5 359 'tel que $L_1' --before (single quotes keep the $ literal; simulated in memory on both layers: the marker then stands on its own line between '\\]' and 'tel que'; a second run finds no anchor and changes nothing). Text not moved."
+ },
+ {
+  "page": 359,
+  "where": "'... est un épimorphisme.' / 'Dans ces conditions, les foncteurs canoniques'",
+  "scan": "'Dans ces conditions, ...' opens a new, indented paragraph",
+  "tex": "runs on: 'épimorphisme. Dans ces conditions'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "épimorphisme. Dans ces conditions",
+   "new": "épimorphisme.\n\nDans ces conditions"
+  },
+  "note": "Paragraph break of the print (inside the statement of Proposition 4.1). Independent of the marker move."
+ },
+ {
+  "page": 359,
+  "where": "display 'D^b_o(C) --> D^b(C)' / 'D^-_o(C) --> D^-(C)'",
+  "scan": "two lines, no punctuation",
+  "tex": "D_o^b(\\cC)\\longrightarrow D^b(\\cC),\\qquad D_o^-(\\cC)\\longrightarrow D^-(\\cC)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "D^b(\\cC),\\qquad",
+   "new": "D^b(\\cC)\\qquad"
+  },
+  "note": "The TeX adds a comma between the two arrows (one line or two is layout)."
+ },
+ {
+  "page": 359,
+  "where": "'un critère de Verdier ([2], 4-2 Théorème)'",
+  "scan": "'4-2' with a hyphen",
+  "tex": "4--2 (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "4--2 Théorème",
+   "new": "4-2 Théorème"
+  },
+  "note": ""
+ },
+ {
+  "page": 359,
+  "where": "Corollaire, display 'K(C_o) ≃ K_o(C) ≃ K(D^b(C_o)) ≃ K(D^b(C)_o) .(*)'",
+  "scan": "the (*) after the full stop is a raised footnote call; the footnote '(*) cf. (SGA 6 IV 1.6) .' stands at the foot of p. 359",
+  "tex": "\\tag{*} (an equation number) on this display; the \\footnote is attached to the Observation's display 'K_{\\cC_o}(\\cC)\\simeq K(\\cC).'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "K(D^b(\\cC)_o).\n\\tag{*}",
+   "new": "K(D^b(\\cC)_o).\\footnote{cf. (SGA 6 IV 1.6).}"
+  },
+  "note": "Apply together with the next item (which removes the misplaced \\footnote): one alone gives the footnote twice. \\footnote in a display as the file's line 12514; the file numbers its footnotes, so the (*) mark is not kept."
+ },
+ {
+  "page": 359,
+  "where": "Observation, display 'K_{C_o}(C) ≃ K(C) .'",
+  "scan": "no footnote call at this display",
+  "tex": "\\footnote{cf. (SGA 6 IV 1.6).} on the line after the display's '\\]'",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\n\\footnote{cf. (SGA 6 IV 1.6).}",
+   "new": "\\]"
+  },
+  "note": "Apply together with the previous item, which puts the footnote at its printed place."
+ },
+ {
+  "page": 359,
+  "where": "'Observation. Supposons que la sous-catégorie C_o'",
+  "scan": "'Observation.' not underlined",
+  "tex": "\\emph{Observation.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Observation.} Supposons",
+   "new": "Observation. Supposons"
+  },
+  "note": "In Exposé VIII \\emph stands for the print's underline ('Démonstration', 'Exemples', 'Remarques' are underlined); this label is not."
+ },
+ {
+  "page": 360,
+  "where": "heading of section 5",
+  "scan": "'5. Complexes pseudo-cohérents.' (the title underlined, then a full stop)",
+  "tex": "\\subsection*{5. Complexes pseudo-cohérents} (no full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{5. Complexes pseudo-cohérents}",
+   "new": "\\subsection*{5. Complexes pseudo-cohérents.}"
+  },
+  "note": "The TeX drops the full stop that ends the underlined title."
+ },
+ {
+  "page": 360,
+  "where": "'seront appelés des complexes C_o-pseudo-cohérents.'",
+  "scan": "'pseudo-cohérents' underlined (the defined term; 'C_o-' and the full stop not)",
+  "tex": "$\\cC_o$-pseudo-cohérents. (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\cC_o$-pseudo-cohérents. Donc",
+   "new": "$\\cC_o$-\\emph{pseudo-cohérents}. Donc"
+  },
+  "note": "\\emph, the file's command for the print's underline in Exposé VIII."
+ },
+ {
+  "page": 360,
+  "where": "'des objets de la sous-catégorie D^-_o(C)_coh , est isomorphe à un triangle'",
+  "scan": "a comma after 'D^-_o(C)_coh'",
+  "tex": "$D_o^-(\\cC)_{\\coh}$ est isomorphe (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$D_o^-(\\cC)_{\\coh}$ est isomorphe",
+   "new": "$D_o^-(\\cC)_{\\coh}$, est isomorphe"
+  },
+  "note": "The TeX drops the printed comma."
+ },
+ {
+  "page": 360,
+  "where": "'et si le triangle :'",
+  "scan": "'le triangle :' (with a colon)",
+  "tex": "et si le triangle (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "et si le triangle\n\\[",
+   "new": "et si le triangle:\n\\["
+  },
+  "note": "Written 'triangle:' like the file's 'suivante:'."
+ }
+]

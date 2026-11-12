@@ -1,0 +1,62 @@
+{
+  "findings": [
+    {
+      "page": 246,
+      "where": "Démonstration de 5.2, sentence beginning « D'après XI 3.3 »",
+      "scan": "D'après XI 3.3 et il existe un",
+      "tex": "D'après \\hyperrefext[XI][XI.prop3.3]{3.3} et il existe un",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "D'après \\hyperrefext[XI][XI.prop3.3]{3.3} il existe un",
+      "note": "The printed « et » is superfluous. The TeX keeps this misprint."
+    },
+    {
+      "page": 247,
+      "where": "Continuation of the proof of 5.2, vanishing assertion",
+      "scan": "$(R^{q}j_{\\ast})F=0$ si $q>0$",
+      "tex": "$(R^{q}j_{\\ast})F=0$ si $q>0$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$(R^{q}j_{\\ast})F=0$ si $q>1$",
+      "note": "The vanishing bound should be q>1; R¹j_*F need not vanish. The TeX keeps the printed bound."
+    },
+    {
+      "page": 247,
+      "where": "Proof of 5.1, reference after « Ensuite on applique »",
+      "scan": "IX 2.15",
+      "tex": "\\sisi{IX 2.15}{\\hyperrefext[IX][IX.prop2.14]{2.14}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperrefext[IX][IX.prop2.14]{2.14}",
+      "note": "The printed reference is erroneous. The TeX records IX 2.15 in the first argument of \\sisi and already corrects it to IX 2.14."
+    },
+    {
+      "page": 247,
+      "where": "Proof of 5.1, paired references to VIII 5.5 and 5.8",
+      "scan": "(VIII 5.5 et 5.8)",
+      "tex": "(VIII 5.5 et VIII 5.8)",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hyperrefext[VIII][VIII.rem5.8]{5.8}",
+        "new": "\\hyperref[VIII.rem5.8]{5.8}"
+      },
+      "note": "The second external-reference macro repeats « VIII », which is not repeated in the print."
+    },
+    {
+      "page": 249,
+      "where": "Bibliography [2], Godement's initial",
+      "scan": "Godement, P.",
+      "tex": "Godement,\\pageoriginale P.",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "Godement, R.",
+      "note": "The scan and TeX give P.; the author's correct initial is R. (Roger Godement). The TeX keeps the erroneous initial."
+    }
+  ],
+  "coordinator": "246: 0/1; 247: 1/2; 248: 0/0; 249: 0/1 (normal/misprint)."
+}

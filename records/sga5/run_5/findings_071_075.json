@@ -1,0 +1,513 @@
+[
+ {
+  "page": 71,
+  "where": "'D'après ce qu'on a vu au N° 6, la condition (ii) de loc.cit.'",
+  "scan": "N° with a capital N (p. 72 prints 'du n° 6' with a small n)",
+  "tex": "au n\\textsuperscript{o}~6",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "au n\\textsuperscript{o}~6",
+   "new": "au N\\textsuperscript{o}~6"
+  },
+  "note": "Capital against small letter."
+ },
+ {
+  "page": 71,
+  "where": "'i : U → Y un ouvert régulier ≠ ∅, et E_U un A_U-Module constant'",
+  "scan": "régulier ≠ ∅ : the symbols ≠ and ∅ (a slashed zero), no words",
+  "tex": "un ouvert régulier non vide, et",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "régulier non vide",
+   "new": "régulier $\\neq\\emptyset$"
+  },
+  "note": "The TeX writes the printed symbols out as words."
+ },
+ {
+  "page": 71,
+  "where": "commutative diagram, label of the bottom arrow U → Y",
+  "scan": "i above the arrow (as f above the next arrow)",
+  "tex": "\\arrow[r,\"i\"'] (the swap mark sets i below the arrow)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"i\"']",
+   "new": "\\arrow[r,\"i\"]"
+  },
+  "note": "tikz-cd sets a swapped label below a rightward arrow. i' (upper left of the rising arrow), h (right of the vertical arrow), g (upper right of the falling arrow) and the full stop after X are right."
+ },
+ {
+  "page": 71,
+  "where": "commutative diagram, label of the bottom arrow Y → X",
+  "scan": "f above the arrow",
+  "tex": "\\arrow[r,\"f\"'] (below the arrow)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"f\"']",
+   "new": "\\arrow[r,\"f\"]"
+  },
+  "note": "As the label i."
+ },
+ {
+  "page": 71,
+  "where": "'pour le couple (i'_!i'^*(E_{Y'}), ℝ^!g(K))' (printed at the top of p. 72; in page_071.tex as the files stand)",
+  "scan": "ℝ^!g(K): the shriek raised right after the double-struck R, before g",
+  "tex": "\\R g^!(K)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R g^!(K))$",
+   "new": "\\R^!g(K))$"
+  },
+  "note": "Apply together with the other three \\R g^! -> \\R^!g fixes (p. 71 one, p. 72 three): one notation, the print raises the shriek right after the double-struck R, before g, every time. Filed under p. 71; its old stays unique on p. 72 after the folio-72 marker move."
+ },
+ {
+  "page": 72,
+  "where": "top of the page",
+  "scan": "p. 72 begins '(i'_!i'^*(E_{Y'}), ℝ^!g(K)). Mais, plongeant localement Y' dans un préschéma X''; p. 71 ends 'il suffit de prouver la bidualité pour le couple' (blank below)",
+  "tex": "'$(i'_!i'^*(E_{Y'}),\\R g^!(K))$. Mais, plongeant localement $Y'$ dans un préschéma $X'$' ends s5.tex line 1904 (as of 17:29), the last line of page_071.tex; the folio-72 marker (line 1905) follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 72 really begins at '$(i' in s5.tex line 1904. Exact fix: python -I move_marker.py 5 72 '$(i' --before (single quotes: the anchor contains $; simulated in memory on both layers: the marker then splits line 1904 after 'pour le couple'). Text not moved."
+ },
+ {
+  "page": 72,
+  "where": "'on trouve que ℝ^!g(K) est localement isomorphe'",
+  "scan": "ℝ^!g(K): shriek raised after R, before g",
+  "tex": "$\\R g^!(K)$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "que $\\R g^!(K)$ est",
+   "new": "que $\\R^!g(K)$ est"
+  },
+  "note": "Apply together with the other three \\R g^! -> \\R^!g fixes (p. 71 one, p. 72 three): one notation, the print raises the shriek right after the double-struck R, before g, every time."
+ },
+ {
+  "page": 72,
+  "where": "'donc que ℝ^!g(K) ∈ ob D^+_coh(Y')'",
+  "scan": "ℝ^!g(K)",
+  "tex": "$\\R g^!(K)\\in",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\R g^!(K)\\in",
+   "new": "$\\R^!g(K)\\in"
+  },
+  "note": "Apply together with the other three \\R g^! -> \\R^!g fixes (p. 71 one, p. 72 three): one notation, the print raises the shriek right after the double-struck R, before g, every time."
+ },
+ {
+  "page": 72,
+  "where": "'et que ℝ^!g(K)_x̄ est dualisant'",
+  "scan": "ℝ^!g(K)_x̄",
+  "tex": "$\\R g^!(K)_{\\bar{x}}$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\R g^!(K)_{\\bar{x}}",
+   "new": "$\\R^!g(K)_{\\bar{x}}"
+  },
+  "note": "Apply together with the other three \\R g^! -> \\R^!g fixes (p. 71 one, p. 72 three): one notation, the print raises the shriek right after the double-struck R, before g, every time."
+ },
+ {
+  "page": 72,
+  "where": "'(moyennant le théorème de finitude pour un morphisme propre (SGAA XIV), ce qui soulagera'",
+  "scan": "(SGAA XIV), : one closing parenthesis; the parenthesis opened before 'moyennant' is never closed (clear at 3x)",
+  "tex": "(SGAA XIV)),",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(SGAA XIV)),",
+   "new": "(SGAA XIV),"
+  },
+  "corrected": "(SGAA XIV)),",
+  "note": "The TeX silently supplies the missing parenthesis; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 72,
+  "where": "ornament after 'Cela achève la démonstration.'",
+  "scan": "-:-:-:- (four dashes, three colons)",
+  "tex": "$-:\\!-:\\!-$ (three dashes, two colons)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "démonstration.\n\n\\begin{center}\n$-:\\!-:\\!-$",
+   "new": "démonstration.\n\n\\begin{center}\n$-:\\!-:\\!-:\\!-$"
+  },
+  "note": "The only two ornaments in s5.tex are on this page (see the second); apply both or neither."
+ },
+ {
+  "page": 72,
+  "where": "heading of the bibliography",
+  "scan": "BIBLIOGRAPHIE: capitals (underlined)",
+  "tex": "\\section*{Bibliographie}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{Bibliographie}",
+   "new": "\\section*{BIBLIOGRAPHIE}"
+  },
+  "note": "Capitals as printed, as the logged fix of the bibliography of Exposé I (p. 53/54); the underline is the accepted \\section* setting."
+ },
+ {
+  "page": 72,
+  "where": "[1], first author: 'VERDIER, J-L.  Dimension des espaces'",
+  "scan": "VERDIER in capitals; J-L. with no full stop after J; no comma after J-L.",
+  "tex": "\\item Verdier, J.-L., \\emph{...",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Verdier, J.-L.,",
+   "new": "\\item VERDIER, J-L."
+  },
+  "note": "Capitals, the initial's full stop and the comma in one edit (adjacent). As 'Serre, J-P.' on p. 54."
+ },
+ {
+  "page": 72,
+  "where": "[1], title 'Dimension des espaces localement compacts'",
+  "scan": "typed plain, not underlined",
+  "tex": "\\emph{Dimension des espaces localement compacts}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Dimension des espaces localement compacts}",
+   "new": "Dimension des espaces localement compacts"
+  },
+  "note": "\\emph is the file's command for the print's underline; as the titles of the bibliography of Exposé I (p. 54)."
+ },
+ {
+  "page": 72,
+  "where": "[1], 'p. 5293-5296 (1965)'",
+  "scan": "typewriter hyphen",
+  "tex": "p.~5293--5296 (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "5293--5296",
+   "new": "5293-5296"
+  },
+  "note": "En dash added by the transcription (NOTE_5: report each)."
+ },
+ {
+  "page": 72,
+  "where": "[1], '(1965). (Voir aussi : VERDIER, J-L., ...'",
+  "scan": "an opening parenthesis before 'Voir'; it closes at the end of the item ('1965-66).')",
+  "tex": "(1965). Voir aussi: (no parenthesis)",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "(1965). Voir",
+   "new": "(1965). (Voir"
+  },
+  "note": "Apply together with the closing parenthesis at the end of the item."
+ },
+ {
+  "page": 72,
+  "where": "[1], second author: 'VERDIER, J-L., Dualité'",
+  "scan": "VERDIER in capitals; J-L. with no full stop after J",
+  "tex": "Verdier, J.-L.,",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "aussi: Verdier, J.-L.,",
+   "new": "aussi: VERDIER, J-L.,"
+  },
+  "note": "Capitals and the initial's full stop in one edit; the comma after J-L. is printed here."
+ },
+ {
+  "page": 72,
+  "where": "[1], title 'Dualité dans la cohomologie des espaces localement compacts'",
+  "scan": "typed plain, not underlined",
+  "tex": "\\emph{Dualité dans la cohomologie des espaces localement compacts}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Dualité dans la cohomologie des espaces localement compacts}",
+   "new": "Dualité dans la cohomologie des espaces localement compacts"
+  },
+  "note": "As the first title."
+ },
+ {
+  "page": 72,
+  "where": "[1], 'n° 300, 1965-66).'",
+  "scan": "typewriter hyphen",
+  "tex": "1965--66 (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "1965--66",
+   "new": "1965-66"
+  },
+  "note": "En dash added by the transcription."
+ },
+ {
+  "page": 72,
+  "where": "[1], end of the item: '1965-66).'",
+  "scan": "a closing parenthesis before the final full stop",
+  "tex": "1965--66. (no parenthesis)",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": ".\n\\end{enumerate}",
+   "new": ").\n\\end{enumerate}"
+  },
+  "note": "Apply together with the opening parenthesis before 'Voir'. Does not overlap the en-dash fix."
+ },
+ {
+  "page": 72,
+  "where": "'SGA A = SGA 4' after the bibliography",
+  "scan": "no full stop after 4 (clean paper to the right)",
+  "tex": "SGA A = SGA 4.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "SGA A = SGA 4.",
+   "new": "SGA A = SGA 4"
+  },
+  "note": "The TeX adds a full stop."
+ },
+ {
+  "page": 72,
+  "where": "ornament after 'SGA A = SGA 4', closing the exposé",
+  "scan": "-:-:-:- (four dashes, three colons)",
+  "tex": "$-:\\!-:\\!-$",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "$-:\\!-:\\!-$\n\\end{center}\n\n\\clearpage",
+   "new": "$-:\\!-:\\!-:\\!-$\n\\end{center}\n\n\\clearpage"
+  },
+  "note": "As the first ornament; apply both or neither."
+ },
+ {
+  "page": 73,
+  "where": "top of the page: the exposé heading 'Exposé III'",
+  "scan": "p. 73 begins with 'Exposé III', then 'FORMULE DE LEFSCHETZ' and 'par A. Grothendieck, rédigé par L. Illusie'; p. 72 ends with 'SGA A = SGA 4' and the ornament",
+  "tex": "'\\begin{center}' and '{\\Large \\textbf{Exposé III}}\\\\[0.4em]' (s5.tex lines 1929-1930 as of 17:29) end page_072.tex; the folio-73 marker (line 1931) stands inside the center environment",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 73 really begins at s5.tex line 1929 '\\begin{center}'. Exact fix: python -I move_marker.py 5 73 '\\begin{center}' --before (simulated in memory on both layers: the marker then stands between '\\clearpage' and '\\begin{center}', and the title block is whole on p. 73). Text not moved; the heading's words agree with the print."
+ },
+ {
+  "page": 73,
+  "where": "'mais les compatibilités réquises n'étaient pas démontrées'",
+  "scan": "réquises, with an acute accent on the first e (as crisp as the accents around it)",
+  "tex": "requises",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "requises",
+   "new": "réquises"
+  },
+  "corrected": "requises",
+  "note": "The TeX silently corrects; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 73,
+  "where": "'distribuée par l'IHES il y a dix ans environs, la formule'",
+  "scan": "environs, with a final s",
+  "tex": "environs (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "environ",
+  "note": "The adverb is invariable ('il y a dix ans environ'). The TeX keeps the printed reading."
+ },
+ {
+  "page": 73,
+  "where": "'elle dit que, sous certaines conditions la trace d'un endomorphisme'",
+  "scan": "no comma after 'conditions' (clean paper); the comma after 'que' that opens the insertion is printed",
+  "tex": "sous certaines conditions, la trace",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "conditions, la trace",
+   "new": "conditions la trace"
+  },
+  "corrected": "conditions, la trace",
+  "note": "The print does not close the insertion 'sous certaines conditions'; the TeX silently supplies the comma. The fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 73,
+  "where": "'d'un complexe d'hypercohomologie RΓ(X,L), où L est'",
+  "scan": "a plain typed R (single stem, the typeface of the text), not double-struck",
+  "tex": "$\\R\\Gamma(X,L)$ (\\R is \\mathbb{R})",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R\\Gamma(X,L)",
+   "new": "R\\Gamma(X,L)"
+  },
+  "note": "Exposé III is typed in another typeface than Exposé II and types the derived-functor R plain (also in RHom, pp. 74-75); Exposé II on pp. 71-72 has a hand-drawn double-struck R."
+ },
+ {
+  "page": 74,
+  "where": "top of the page: '(la thèse de Jouanolou n'ayant malheureusement pas été publiée)'",
+  "scan": "p. 74 begins '(la thèse de Jouanolou n'ayant malheureusement pas été publiée), nous travaillons'; p. 73 ends 'Faute de disposer d'une bonne catégorie dérivée de faisceaux ℓ-adiques'",
+  "tex": "'(la thèse de' ends s5.tex line 1940 (as of 17:29), the last line of page_073.tex; the folio-74 marker (line 1941) follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 74 really begins at '(la thèse de' at the end of s5.tex line 1940. Exact fix: python -I move_marker.py 5 74 '(la th' --before (simulated in memory on both layers: the marker then splits line 1940 after '$\\ell$-adiques'). Text not moved; it agrees with the print."
+ },
+ {
+  "page": 74,
+  "where": "'formules de Künneth de (SGA 4^{1/2} Finitude), qui fouent un rôle essentiel'",
+  "scan": "fouent: an f (tall stem with a crossbar), not a j",
+  "tex": "jouent",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "jouent",
+   "new": "fouent"
+  },
+  "corrected": "jouent",
+  "note": "The TeX silently corrects; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 74,
+  "where": "'exprime une compatibilité entre produit tensoriel externe de RHom'",
+  "scan": "RHom: a plain typed R; the underline runs under Hom only",
+  "tex": "$\\uRHom$ (\\underline{\\mathbb{R}\\mathrm{Hom}}: double-struck R, R underlined too)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "externe de $\\uRHom",
+   "new": "externe de $R\\underline{\\Hom}"
+  },
+  "note": "Listed before the adjacent misprint fix (missing comma), whose old starts at the closing $. Same form in the Sommaire on p. 75."
+ },
+ {
+  "page": 74,
+  "where": "same sentence, 'de RHom   image directe et changement de base'",
+  "scan": "no comma after RHom (a blank of about three characters, clean paper)",
+  "tex": "$\\uRHom$, image directe",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$, image directe",
+   "new": "$ image directe"
+  },
+  "corrected": "$, image directe",
+  "note": "The enumeration 'produit tensoriel externe de RHom, image directe et changement de base' needs the comma; the TeX silently supplies it. The fix restores the printed reading (diplomatic layer only); its old does not overlap the RHom fix."
+ },
+ {
+  "page": 74,
+  "where": "heading of the summary (printed at the top of p. 75; in page_074.tex as the files stand)",
+  "scan": "SOMMAIRE. : capitals, underlined, then a full stop",
+  "tex": "\\subsection*{Sommaire}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{Sommaire}",
+   "new": "\\subsection*{SOMMAIRE.}"
+  },
+  "note": "Capitals and full stop as printed (as BIBLIOGRAPHIE, and the heading full stops of pp. 59-60); the underline is the accepted \\subsection* setting. Filed under p. 74: the anchor of the folio-75 marker move ('\\subsection*{S') matches either spelling."
+ },
+ {
+  "page": 75,
+  "where": "top of the page: the heading 'SOMMAIRE.'",
+  "scan": "p. 75 begins with 'SOMMAIRE.' and the six entries; p. 74 ends '... et signalons quelques applications.' (blank below)",
+  "tex": "'\\subsection*{Sommaire}', '\\begin{enumerate}[label=\\arabic*.]' and '\\item' (s5.tex lines 1946-1948 as of 17:29) end page_074.tex; the folio-75 marker (line 1949) stands between '\\item' and the text of entry 1",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 75 really begins at s5.tex line 1946 '\\subsection*{Sommaire}'. Exact fix: python -I move_marker.py 5 75 '\\subsection*{S' --before (also matches after the SOMMAIRE fix; simulated in memory on both layers: the marker then stands after 'applications.' and its blank line; '\\item' and 'Notations et rappels' then follow each other on two lines of one item). Text not moved."
+ },
+ {
+  "page": 75,
+  "where": "Sommaire, entry 2 'Fonctorialité de RHom et produits tensoriels externes'",
+  "scan": "RHom: a plain typed R; the underline runs under Hom only",
+  "tex": "$\\uRHom$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\uRHom$",
+   "new": "$R\\underline{\\Hom}$"
+  },
+  "note": "As on p. 74."
+ },
+ {
+  "page": 75,
+  "where": "Sommaire, entry 1",
+  "scan": "'Notations et rappels de formules de Künneth......  4'",
+  "tex": "Notations et rappels de formules de Künneth.",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "formules de Künneth.",
+   "new": "formules de Künneth\\dotfill 4"
+  },
+  "note": "The Sommaire prints leader dots and the exposé's own page numbers (4, 9, 17, 27, 41, 48); the TeX has neither and ends each entry with a full stop. \\dotfill is standard LaTeX. (The Sommaire of Exposé IV, s5.tex 'I. Correspondances en position générale', uses a tabular with the page numbers instead.)"
+ },
+ {
+  "page": 75,
+  "where": "Sommaire, entry 2",
+  "scan": "'Fonctorialité de RHom et produits tensoriels externes......  9'",
+  "tex": "... produits tensoriels externes.",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "tensoriels externes.",
+   "new": "tensoriels externes\\dotfill 9"
+  },
+  "note": "As entry 1."
+ },
+ {
+  "page": 75,
+  "where": "Sommaire, entry 3",
+  "scan": "'Correspondances cohomologiques......  17'",
+  "tex": "Correspondances cohomologiques.",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "Correspondances cohomologiques.",
+   "new": "Correspondances cohomologiques\\dotfill 17"
+  },
+  "note": "As entry 1."
+ },
+ {
+  "page": 75,
+  "where": "Sommaire, entry 4",
+  "scan": "'Accouplements de correspondances. Formule de Lefschetz......  27'",
+  "tex": "Accouplements de correspondances. Formule de Lefschetz.",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "correspondances. Formule de Lefschetz.",
+   "new": "correspondances. Formule de Lefschetz\\dotfill 27"
+  },
+  "note": "As entry 1."
+ },
+ {
+  "page": 75,
+  "where": "Sommaire, entry 5",
+  "scan": "'Compléments......  41'",
+  "tex": "Compléments.",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Compléments.",
+   "new": "\\item Compléments\\dotfill 41"
+  },
+  "note": "As entry 1."
+ },
+ {
+  "page": 75,
+  "where": "Sommaire, entry 6",
+  "scan": "'Appendice. Formule de Lefschetz pour les faisceaux cohérents....  48'",
+  "tex": "Appendice. Formule de Lefschetz pour les faisceaux cohérents.",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "faisceaux cohérents.",
+   "new": "faisceaux cohérents\\dotfill 48"
+  },
+  "note": "As entry 1."
+ }
+]

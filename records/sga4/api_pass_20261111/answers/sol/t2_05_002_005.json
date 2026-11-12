@@ -1,0 +1,38 @@
+[
+ {
+  "page": 2,
+  "where": "Opening block before \\section*{Introduction}",
+  "scan": "The page begins with « Introduction », followed by « On présente… ».",
+  "tex": "\\chapter{Cohomologie dans les topos}\\etiquette[V]{V} … J.-L. Verdier",
+  "kind": "marker",
+  "confidence": "medium",
+  "fix": null,
+  "note": "The initial chapter-title and author block is not printed on this page, and the extraction comment does not allow preceding-page material here. Page 2 begins at \\section*{Introduction}. Check the extraction boundary rather than deleting this text."
+ },
+ {
+  "page": 4,
+  "where": "Remarque 0.2.1, first reference to 0.2",
+  "scan": "Appliquant le lemme 0.2",
+  "tex": "Appliquant la proposition \\hyperref[V.prop0.2]{0.2}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Appliquant la proposition",
+   "new": "Appliquant le lemme"
+  },
+  "note": "Although 0.2 is headed « Proposition », this sentence prints « le lemme ». The reference number is unchanged."
+ },
+ {
+  "page": 5,
+  "where": "Proposition 0.5, hypothesis concerning AB 5)",
+  "scan": "abélienne vérifiant l'axiome AB 5)",
+  "tex": "abélienne vérifient l'axiome $AB$ 5)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "abélienne vérifient",
+   "new": "abélienne vérifiant"
+  },
+  "note": "The print has the participle « vérifiant », not « vérifient »."
+ }
+]

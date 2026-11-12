@@ -1,0 +1,370 @@
+[
+ {
+  "page": 501,
+  "where": "Exercice 11.3.5, renvoi à 6.1",
+  "scan": "un point de E (IV 6.1)",
+  "tex": "point de $E$ (\\hyperref[IV.def6.1]{6.1})",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "point de $E$ (\\hyperref[IV.def6.1]{6.1})",
+   "new": "point de $E$ (IV \\hyperref[IV.def6.1]{6.1})"
+  },
+  "note": "Le préfixe IV est imprimé. Cette omission récurrente est signalée une seule fois comme convention, avec trois exemples dans le coordinator."
+ },
+ {
+  "page": 501,
+  "where": "Exercice 11.3.5, fin de la parenthèse sur la fibre",
+  "scan": "avec la fibre X_x IV 6.7.2).",
+  "tex": "avec la fibre $X_x$ (\\hyperref[IV.eq6.7.2]{6.7.2}).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "avec la fibre $X_x$ (\\hyperref[IV.eq6.7.2]{6.7.2}).",
+   "new": "avec la fibre $X_x$ IV \\hyperref[IV.eq6.7.2]{6.7.2})."
+  },
+  "note": "Le print n'ouvre pas une seconde parenthèse avant le renvoi : la parenthèse ouverte devant « en correspondance » se ferme après 6.7.2. Le fix rétablit aussi le préfixe IV imprimé."
+ },
+ {
+  "page": 501,
+  "where": "Proposition 12.1, « qui a tout objet »",
+  "scan": "qui a tout objet X de E",
+  "tex": "qui a tout objet $X$ de $E$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "qui à tout objet $X$ de $E$",
+  "note": "Il manque l'accent grave sur à dans le print. Le TeX conserve la coquille."
+ },
+ {
+  "page": 501,
+  "where": "Démonstration de 12.1, limites de A-Modules",
+  "scan": "en limites projec- / de A-Modules",
+  "tex": "en limites\nprojectives de $A$-Modules",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "en limites projectives de $A$-Modules",
+  "note": "Le mot imprimé reste tronqué après « projec- » : la ligne suivante commence directement par « de A-Modules », sans « tives ». Le TeX restitue silencieusement le mot complet."
+ },
+ {
+  "page": 501,
+  "where": "Dernière formule de la page",
+  "scan": "X\\longrightarrow \\Hom_A(M,\\scrHom_E(X,N))",
+  "tex": "X\\longrightarrow \\Hom_Z(M,\\scrHom_E(X,N))",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "X\\longrightarrow \\Hom_Z(M,\\scrHom_E(X,N))",
+   "new": "X\\longrightarrow \\Hom_A(M,\\scrHom_E(X,N))"
+  },
+  "note": "L'indice imprimé du groupe Hom est A, non Z."
+ },
+ {
+  "page": 502,
+  "where": "Début de 12.2",
+  "scan": "Le faisceau abélien",
+  "tex": "Le faisceau abélienne",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Le faisceau abélienne",
+   "new": "Le faisceau abélien"
+  },
+  "note": "Le print porte bien le masculin « abélien »."
+ },
+ {
+  "page": 502,
+  "where": "Proposition 12.3 a), dernier terme",
+  "scan": "\\Hom_A(j_{X!}j^{\\ast}_XM,n)",
+  "tex": "\\Hom_A(j_{X!}j^{\\ast}_XM, N)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom_A(j_{X!}j^{\\ast}_XM,N)",
+  "note": "Le print emploie un n minuscule au lieu du Module N. Le TeX corrige silencieusement."
+ },
+ {
+  "page": 502,
+  "where": "Première démonstration après la proposition 12.3",
+  "scan": "Démontrons d).",
+  "tex": "\\item[Démontrons d).]",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\item[Démontrons b).]",
+  "note": "La chaîne qui suit démontre b), non d). Le TeX conserve l'indication fautive du print."
+ },
+ {
+  "page": 502,
+  "where": "Coupure entre les pages 502 et 503",
+  "scan": "La page finit après « faisceaux d'ensembles) ».",
+  "tex": "Le fragment continue par \\begin{alignat*}{2} et quatre lignes d'isomorphismes.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Ces quatre lignes alignées sont toutes imprimées en tête de la p. 503. Le fragment fourni pour la p. 503 ne contient que leur \\end{alignat*} avant \\pageoriginale. Il faut rectifier la coupure des fragments, sans traiter ce bloc comme du texte supplémentaire de la p. 502."
+ },
+ {
+  "page": 503,
+  "where": "Première chaîne, preuve de b), première ligne, renvoi à droite",
+  "scan": "(12.2.1)",
+  "tex": "(12.2.1), dans le bloc fourni avec la p. 502",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\eqhyperref[IV.eq12.1.2]{12.1.2}",
+  "note": "Le renvoi vise la formule de définition (12.1.2). Le TeX conserve le numéro fautif du print."
+ },
+ {
+  "page": 503,
+  "where": "Première chaîne, preuve de b), deuxième ligne, membre gauche",
+  "scan": "\\Hom(M,\\scrHom_E(j_{X!}Y,N))",
+  "tex": "\\Hom(M, \\scrHom_E(j_{X!}Y,N))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom_A(M,\\scrHom_E(j_{X!}Y,N))",
+  "note": "L'indice A manque : ce terme doit répéter le groupe des morphismes A-linéaires obtenu à la ligne précédente. Le TeX, dans le bloc fourni p. 502, conserve l'omission."
+ },
+ {
+  "page": 503,
+  "where": "Première chaîne, preuve de b), troisième ligne, indice du Hom de gauche",
+  "scan": "\\Hom_{\\Lambda}(M,j_{X\\ast}\\scrHom_{E_{/X}}(Y,j^{\\ast}_XN))",
+  "tex": "\\Hom_{\\Lambda}(M, j_{X\\ast}\\scrHom_{E_{/X}}(Y, j^{\\ast}_XN))",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\Hom_A(M,j_{X\\ast}\\scrHom_{E_{/X}}(Y,j^{\\ast}_XN))",
+  "note": "Le sous-indice manuscrit a la forme de Λ, conservée par le TeX dans le bloc fourni p. 502. Dans cette chaîne de morphismes A-linéaires, l'indice correct est A."
+ },
+ {
+  "page": 503,
+  "where": "Première chaîne, preuve de b), troisième ligne, membre droit",
+  "scan": "\\Hom_{A/X}(j^{\\ast}_XM,\\scrHom_E(j^{\\ast}_XN))",
+  "tex": "\\Hom_{A/X}(j^{\\ast}_XM, \\scrHom_E (Y,j^{\\ast}_XN))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom_{A/X}(j^{\\ast}_XM,\\scrHom_{E_{/X}}(Y,j^{\\ast}_XN))",
+  "note": "Le print omet le premier argument Y du Hom interne et porte E au lieu de E_{/X}. Le TeX, dans le bloc fourni p. 502, restitue silencieusement Y mais conserve le sous-indice E fautif."
+ },
+ {
+  "page": 503,
+  "where": "Première chaîne, preuve de b), quatrième ligne, Hom interne du membre gauche",
+  "scan": "\\scrHom_E(Y,j^{\\ast}_XN)",
+  "tex": "\\scrHom_E (Y, j^{\\ast}_XN)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\scrHom_{E_{/X}}(Y,j^{\\ast}_XN)",
+  "note": "Le Hom interne est calculé sur le topos localisé E_{/X}, non sur E. Le TeX, dans le bloc fourni p. 502, conserve le sous-indice fautif."
+ },
+ {
+  "page": 503,
+  "where": "Première chaîne, preuve de b), quatrième ligne, dernier argument",
+  "scan": "\\Hom(Y,\\scrHom_{A|X}(j^{\\ast}_XM,j^{\\ast}_XM))",
+  "tex": "\\Hom(Y,\\scrHom_{A| X}(j^{\\ast}_X M, j^{\\ast}_XM))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom(Y,\\scrHom_{A| X}(j^{\\ast}_XM,j^{\\ast}_XN))",
+  "note": "Le second M doit être N. Le TeX, dans le bloc fourni p. 502, conserve la coquille."
+ },
+ {
+  "page": 503,
+  "where": "Première chaîne, preuve de b), quatrième ligne, renvoi à droite",
+  "scan": "(12.2.1)",
+  "tex": "(12.2.1), dans le bloc fourni avec la p. 502",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\eqhyperref[IV.eq12.1.2]{12.1.2}",
+  "note": "Il faut renvoyer à (12.1.2). Le TeX conserve le numéro fautif du print."
+ },
+ {
+  "page": 503,
+  "where": "Démonstration de c), première ligne, premier j du membre droit",
+  "scan": "j_X^{X}Y",
+  "tex": "j^{\\ast}_XY",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "j^{\\ast}_XY",
+  "note": "L'exposant imprimé se lit X, au lieu de l'astérisque de l'image inverse. Le TeX corrige silencieusement en \\ast."
+ },
+ {
+  "page": 503,
+  "where": "Démonstration de c), deuxième ligne, renvoi à droite",
+  "scan": "(12.2.1)",
+  "tex": "(12.2.1)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\eqhyperref[IV.eq12.1.2]{12.1.2}",
+  "note": "Il faut renvoyer à (12.1.2). Le TeX conserve le numéro fautif du print."
+ },
+ {
+  "page": 503,
+  "where": "Démonstration de c), cinquième ligne, renvoi à droite",
+  "scan": "(12.2.1)",
+  "tex": "(12.2.1)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\eqhyperref[IV.eq12.1.2]{12.1.2}",
+  "note": "Il faut renvoyer à (12.1.2). Le TeX conserve le numéro fautif du print."
+ },
+ {
+  "page": 503,
+  "where": "Introduction de la démonstration de d)",
+  "scan": "on à la suite d'isomorphismes",
+  "tex": "on à la suite\nd'isomorphismes",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "on a la suite d'isomorphismes",
+  "note": "Le print accentue fautivement le verbe a. Le TeX conserve cette coquille."
+ },
+ {
+  "page": 503,
+  "where": "Démonstration de d), première ligne, renvoi à droite",
+  "scan": "(12.2.1)",
+  "tex": "(12.2.1)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\eqhyperref[IV.eq12.1.2]{12.1.2}",
+  "note": "Il faut renvoyer à (12.1.2). Le TeX conserve le numéro fautif du print."
+ },
+ {
+  "page": 503,
+  "where": "Démonstration de d), quatrième ligne, Hom interne du membre droit",
+  "scan": "\\scrHom_{A|X}(P,j^{\\ast}_XN)",
+  "tex": "\\scrHom_{A/X}(P,j^{\\ast}_XN)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\scrHom_{A/X}(P,j^{\\ast}_XN)",
+   "new": "\\scrHom_{A| X}(P,j^{\\ast}_XN)"
+  },
+  "note": "Le print porte une barre verticale dans cet indice, non une barre oblique."
+ },
+ {
+  "page": 503,
+  "where": "Démonstration de d), quatrième ligne, renvoi à droite",
+  "scan": "(12.2.1)",
+  "tex": "(12.2.1)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\eqhyperref[IV.eq12.1.2]{12.1.2}",
+  "note": "Il faut renvoyer à (12.1.2). Le TeX conserve le numéro fautif du print."
+ },
+ {
+  "page": 503,
+  "where": "Démonstration de d), dernière ligne, membre droit",
+  "scan": "\\Hom(Y,j_{X\\ast}\\scrHom_{A|X}(P,j^{\\ast}_XN))",
+  "tex": "(Y,\nj_{X\\ast}\\scrHom_{A| X}(P, j^{\\ast}_XN))",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\simeq (Y,\nj_{X\\ast}",
+   "new": "\\simeq \\Hom(Y,\nj_{X\\ast}"
+  },
+  "note": "Le Hom imprimé devant la parenthèse manque dans le TeX."
+ },
+ {
+  "page": 503,
+  "where": "Coupure entre les pages 503 et 504",
+  "scan": "La chaîne d'isomorphismes de la preuve de 12.4 est imprimée au bas de la p. 503.",
+  "tex": "Le fragment de la p. 503 finit au deux-points ; la chaîne est fournie dans le \\begin{align*} initial du fragment de la p. 504.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "La p. 503 se termine après cette chaîne, dont le dernier terme est \\scrHom_A(\\underline{a}M,N)(X). La p. 504 commence au Corollaire 12.5. Il faut rectifier la coupure des fragments, sans déplacer le texte dans la source."
+ },
+ {
+  "page": 504,
+  "where": "Corollaire 12.6, hypothèse sur X",
+  "scan": "X un objet de A",
+  "tex": "$X$ un objet de $A$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$X$ un objet de $E$",
+  "note": "X doit être un objet du topos E, non du faisceau d'anneaux A. Le TeX conserve la coquille du print."
+ },
+ {
+  "page": 504,
+  "where": "Preuve de 12.7, première occurrence après l'énoncé",
+  "scan": "\\Hom_A(M,\\scrHom_Z(N,P))",
+  "tex": "\\Hom_A(M,\\scrHom_{\\sisi{\\underline{\\underline{\\ZZ}}}{\\underline{\\ZZ}}}(N,P))",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "injection canonique de $\\Hom_A(M,\\scrHom_{\\sisi{\\underline{\\underline{\\ZZ}}}{\\underline{\\ZZ}}}(N,P))$",
+   "new": "injection canonique de $\\Hom_A(M,\\scrHom_{\\sisi{Z}{\\underline{\\ZZ}}}(N,P))$"
+  },
+  "note": "L'indice mathématique imprimé est ici Z sans soulignement. La branche A de \\sisi lui attribue deux soulignements absents du print ; B n'est pas contrôlé et reste inchangé. Même convention répétée en 12.8 : trois exemples sont donnés dans le coordinator. En revanche, les deux soulignements sont effectivement imprimés dans l'énoncé de 12.7."
+ },
+ {
+  "page": 504,
+  "where": "Preuve de 12.7, « provient d'une élément »",
+  "scan": "provient d'une élément de",
+  "tex": "provient d'une\nélément de",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "provient d'un élément de",
+  "note": "L'article est fautivement féminin dans le print. Le TeX conserve la coquille."
+ },
+ {
+  "page": 505,
+  "where": "Premier paragraphe, après « cette propriété »",
+  "scan": "Il s'agit",
+  "tex": "II s'agit",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "propriété. II s'agit",
+   "new": "propriété. Il s'agit"
+  },
+  "note": "Le second caractère imprimé est un l minuscule, non un I majuscule."
+ },
+ {
+  "page": 505,
+  "where": "Construction du quotient de L(M×N)",
+  "scan": "quotient (au sens des faisceaux abéliens de L(M×N)",
+  "tex": "quotient (au sens\ndes faisceaux abéliens) de $L(M\\times N)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "quotient (au sens des faisceaux abéliens) de $L(M\\times N)$",
+  "note": "La parenthèse fermante après « abéliens » manque dans le print. Le TeX la restitue silencieusement."
+ },
+ {
+  "page": 505,
+  "where": "12.8, introduction des formules (12.8.1) et (12.8.2)",
+  "scan": "des isomorphismes, fonctoriel",
+  "tex": "des isomorphismes, fonctoriel",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "des isomorphismes, fonctoriels",
+  "note": "L'adjectif doit s'accorder au pluriel avec « isomorphismes ». Le TeX conserve le singulier fautif du print."
+ },
+ {
+  "page": 505,
+  "where": "12.8, ligne précédant les deux formules",
+  "scan": "en tous les arguments",
+  "tex": "en tout les arguments",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "en tout les arguments:",
+   "new": "en tous les arguments:"
+  },
+  "note": "Le print porte « tous », avec un s."
+ }
+]

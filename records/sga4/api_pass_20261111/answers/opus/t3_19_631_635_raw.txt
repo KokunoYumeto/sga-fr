@@ -1,0 +1,8 @@
+```json
+{"findings":[
+{"page":631,"where":"parenthèse après « k-algèbre formellement séparable »","scan":"séparable, ce qui équivaut d'ailleurs","tex":"séparable,\n$\\infty$ qui équivaut","kind":"word","confidence":"high","fix":{"old":"$\\infty$ qui équivaut","new":"ce qui équivaut"},"note":"The print has the word « ce », typed as a ligature-like glyph. The TeX turns it into the symbol ∞."},
+{"page":633,"where":"suite spectrale avant « donne donc des isomorphismes »","scan":"H^{p+q}(Spec B[y/x] , Z / ℓ)","tex":"H^{p+q}(\\Spec B[y/x],\\ZZ\\ell)","kind":"formula","confidence":"high","fix":{"old":"H^{p+q}(\\Spec B[y/x],\\ZZ\\ell)","new":"H^{p+q}(\\Spec B[y/x],\\ZZ/\\ell)"},"note":"The slash of Z/ℓ is missing in the TeX."},
+{"page":633,"where":"fin de la suite spectrale de Leray","scan":"⟹ H^{p+q}(U,Z / ℓ) ,  on se ramène","tex":"H^{p+q}(U,\\ZZ / \\ell){\\quoi}.","kind":"punctuation","confidence":"medium","fix":{"old":"H^{p+q}(U,\\ZZ / \\ell){\\quoi}.","new":"H^{p+q}(U,\\ZZ / \\ell){\\quoi},"},"note":"The print has a comma here: the sentence continues with « on se ramène ». The TeX puts a full stop."}
+],
+"coordinator":"631: 1/0; 632: 0/0; 633: 2/0; 634: 0/0; 635: 0/0. No marker problems. On p. 635 the scan renders almost every 'c' as 'o' (Speo, oomplet, dono). This is a typewriter or JBIG2 glyph substitution, not text: the TeX correctly reads c."}
+```

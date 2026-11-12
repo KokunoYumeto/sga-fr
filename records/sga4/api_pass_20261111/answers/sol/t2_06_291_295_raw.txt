@@ -1,0 +1,358 @@
+{
+  "findings": [
+    {
+      "page": 291,
+      "where": "7.4.6, displayed family of morphisms",
+      "scan": "f\\in Fl(I)",
+      "tex": "f\\in F1(I)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "f\\in F1(I)",
+        "new": "f\\in Fl(I)"
+      },
+      "note": "The second character of Fl is a lower-case l, not the numeral 1."
+    },
+    {
+      "page": 291,
+      "where": "Proof of Proposition 7.4.7, definition of σ",
+      "scan": "\\sigma \\in \\Hom_{I^{\\circ}}(I^{\\circ},(C^{\\sim/I})')",
+      "tex": "\\sigma \\in \\Hom_{I^{\\circ}}(I^{\\circ},(C^{\\sim})')",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "(C^{\\sim})')",
+        "new": "(C^{\\sim/I})')"
+      },
+      "note": "The printed exponent includes /I."
+    },
+    {
+      "page": 291,
+      "where": "Proof of Proposition 7.4.7, canonical cartesian morphism",
+      "scan": "f(Y) \\to Y",
+      "tex": "f(Y) \\to Y",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "f^{\\ast}(Y) \\to Y",
+      "note": "The source of this canonical cartesian morphism is f*Y, as in the immediately preceding factorization. The print omits the star, and the TeX keeps that omission."
+    },
+    {
+      "page": 291,
+      "where": "Last sentence",
+      "scan": "On a donc une application",
+      "tex": "On a donc application",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "On a donc application",
+        "new": "On a donc une application"
+      },
+      "note": "The article « une » is printed."
+    },
+    {
+      "page": 292,
+      "where": "Opening display, middle term",
+      "scan": "f_{\\ast}(p(X))(Y)",
+      "tex": "f_{\\ast} (p(X))(Y)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f_{\\ast}\\sigma(p(X))(Y)",
+      "note": "The print omits σ after f*. The direct image must be applied to the sheaf σ(p(X)). The TeX keeps the printed omission."
+    },
+    {
+      "page": 292,
+      "where": "First paragraph, application associated to m",
+      "scan": "\\sigma(p(Y))(Y) \\to \\sigma(p(X))(X)",
+      "tex": "\\sigma(p(X))(Y) \\to \\sigma(p(X))(X)",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\sigma(p(X))(Y) \\to \\sigma(p(X))(X)",
+        "new": "\\sigma(p(Y))(Y) \\to \\sigma(p(X))(X)"
+      },
+      "note": "The source of the printed application contains p(Y), not p(X)."
+    },
+    {
+      "page": 292,
+      "where": "End of the proof of Proposition 7.4.7",
+      "scan": "que le foncteur",
+      "tex": "qui le foncteur",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "qui le foncteur",
+        "new": "que le foncteur"
+      },
+      "note": "The print reads « que »."
+    },
+    {
+      "page": 292,
+      "where": "7.4.9, paragraph beginning « Par ailleurs »",
+      "scan": "m_{\\ast} : \\Top(C) \\to \\Top(D)",
+      "tex": "m_{\\ast} : \\Top(C) \\to \\Top(F)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Top(F)",
+        "new": "\\Top(D)"
+      },
+      "note": "The printed codomain is Top(D)."
+    },
+    {
+      "page": 292,
+      "where": "End of the supplied page cut",
+      "scan": "Page 292 ends after « En résumé, on a un diagramme de foncteurs : ». Page 293 opens with diagram (7.4.9.2), followed by Proposition 7.4.10.",
+      "tex": "Diagram (7.4.9.2) and \\begin{enonce*}{Proposition 7.4.10} are included in the page 292 cut.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "This exceeds the overlap announced in the initial comment, which covers only the following « Le diagramme… » line. The four diagram corrections below are keyed to the supplied page 292 TeX, but were compared with the opening strip of page 293."
+    },
+    {
+      "page": 292,
+      "where": "(7.4.9.2), upper horizontal arrow; printed on page 293",
+      "scan": "\\Theta_C",
+      "tex": "\\theta_C",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\theta_C",
+        "new": "\\Theta_C"
+      },
+      "note": "The printed arrow label uses capital theta."
+    },
+    {
+      "page": 292,
+      "where": "(7.4.9.2), upper-right category; printed on page 293",
+      "scan": "\\Hhom_{I^{\\circ}}(I^{\\circ},(C^{\\sim/I})')",
+      "tex": "\\Hhom_I^{\\circ}(I^{\\circ},(C^{\\sim/I})')",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hhom_I^{\\circ}(I^{\\circ},(C^{\\sim/I})')",
+        "new": "\\Hhom_{I^{\\circ}}(I^{\\circ},(C^{\\sim/I})')"
+      },
+      "note": "The circle belongs to the subscript I, not to Hom."
+    },
+    {
+      "page": 292,
+      "where": "(7.4.9.2), lower horizontal arrow; printed on page 293",
+      "scan": "\\Theta_D",
+      "tex": "\\theta_D",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\theta_D",
+        "new": "\\Theta_D"
+      },
+      "note": "The printed arrow label uses capital theta."
+    },
+    {
+      "page": 292,
+      "where": "(7.4.9.2), lower-right category; printed on page 293",
+      "scan": "\\Hhom_{I^{\\circ}}(I^{\\circ},(D^{\\sim/I})')",
+      "tex": "\\Hhom_I^{\\circ}(I^{\\circ},(D^{\\sim/I})')",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hhom_I^{\\circ}(I^{\\circ},(D^{\\sim/I})')",
+        "new": "\\Hhom_{I^{\\circ}}(I^{\\circ},(D^{\\sim/I})')"
+      },
+      "note": "The circle belongs to the subscript I, not to Hom."
+    },
+    {
+      "page": 293,
+      "where": "Proof of Proposition 7.4.10, after « exact à gauche »",
+      "scan": "Nous allons tout d'abord décrire le foncteur adjoint à gauche à \\Hom_{I^{\\circ}}(I^{\\circ},m^{\\sim/I}_{\\ast}). Notons (m^{\\sim/I})^{\\ast} : D^{\\sim/I} \\to C^{\\sim/I} le foncteur image inverse",
+      "tex": "Nous allons tout d'abord décrire le foncteur image inverse",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "décrire le foncteur image\ninverse",
+        "new": "décrire le foncteur adjoint à gauche à\n$\\Hom_{I^{\\circ}}(I^{\\circ}, m^{\\sim/I}_{\\ast})$. Notons\n$(m^{\\sim/I})^{\\ast} : D^{\\sim/I} \\to C^{\\sim/I}$ le foncteur image\ninverse"
+      },
+      "note": "The TeX drops the statement of which left adjoint will be described and the definition, with domain and codomain, of the inverse-image functor."
+    },
+    {
+      "page": 293,
+      "where": "Same paragraph, functor induced on the fibres",
+      "scan": "(m^{\\sim/I})^{\\ast}",
+      "tex": "(m^{\\sim/i})^{\\ast}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "(m^{\\sim/i})^{\\ast}",
+        "new": "(m^{\\sim/I})^{\\ast}"
+      },
+      "note": "The denominator in the printed exponent is capital I."
+    },
+    {
+      "page": 293,
+      "where": "Sentence immediately before (7.4.10.1)",
+      "scan": "I^{\\circ}-foncteur cartésien",
+      "tex": "$I^{\\circ}$-foncteur cartésien",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "$I$-foncteur cartésien",
+      "note": "The inverse-image functor between D^{\\sim/I} and C^{\\sim/I} is cartesian over I; (7.4.10.1) expresses compatibility with their inverse-image transition functors. The printed I° is erroneous, and the TeX keeps it."
+    },
+    {
+      "page": 293,
+      "where": "(7.4.10.1), left-hand side",
+      "scan": "m^{\\ast}_i f^{\\ast} \\to f^{\\ast}m^{\\ast}_j",
+      "tex": "m^{\\ast}_i f_{\\ast} \\to f^{\\ast}m^{\\ast}_j",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "m^{\\ast}_i f_{\\ast} \\to f^{\\ast} m^{\\ast}_j",
+        "new": "m^{\\ast}_i f^{\\ast} \\to f^{\\ast} m^{\\ast}_j"
+      },
+      "note": "The first f has an upper star in the print."
+    },
+    {
+      "page": 293,
+      "where": "(7.4.10.3), initial term",
+      "scan": "m^{\\ast}_j f^{\\ast}",
+      "tex": "m^{\\ast}_j f^{\\ast}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "m^{\\ast}_j f_{\\ast}",
+      "note": "The initial f has an upper star in the print, but the chain obtained from the adjunction unit must start with m_j* f_*. The TeX keeps this printed error."
+    },
+    {
+      "page": 293,
+      "where": "Explanation following (7.4.10.3)",
+      "scan": "(7.4.10.1) et le morphisme (3)",
+      "tex": "(7.4.10.1)) et le morphisme (3",
+      "kind": "punctuation",
+      "confidence": "high",
+      "fix": {
+        "old": "\\eqhyperref[VI.eq7.4.10.1]{7.4.10.1}) et le morphisme (3",
+        "new": "\\eqhyperref[VI.eq7.4.10.1]{7.4.10.1} et le morphisme (3)"
+      },
+      "note": "The reference macro already supplies its closing parenthesis; the printed label (3) also has its closing parenthesis."
+    },
+    {
+      "page": 294,
+      "where": "After (7.4.10.4), category containing τ",
+      "scan": "\\Hhom_{I^{\\circ}}(I^{\\circ},(D^{\\sim/I})')",
+      "tex": "\\Hhom_{I^{\\circ}}(I^{\\circ}(D^{\\sim/I})')",
+      "kind": "punctuation",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hhom_{I^{\\circ}} (I^{\\circ}\n(D^{\\sim/I})')",
+        "new": "\\Hhom_{I^{\\circ}} (I^{\\circ},\n(D^{\\sim/I})')"
+      },
+      "note": "The comma separating the two arguments of Hom is missing."
+    },
+    {
+      "page": 294,
+      "where": "Between (7.4.10.5) and (7.4.10.6)",
+      "scan": "analogue à (7.4.5.8). Posons alors σ(i) =",
+      "tex": "analogue à (7.4.5.8)). Posons alors σ(i =",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\eqhyperref[VI.eq7.4.5.8]{7.4.5.8}). Posons alors $\\sigma(i =",
+        "new": "\\eqhyperref[VI.eq7.4.5.8]{7.4.5.8}. Posons alors $\\sigma(i) ="
+      },
+      "note": "There is an extra closing parenthesis after the reference and a missing closing parenthesis in σ(i)."
+    },
+    {
+      "page": 294,
+      "where": "Corollary 7.4.11, description of ε_I",
+      "scan": "le morphisme canonique du U-site fibré",
+      "tex": "le morphisme canonique de $𝒰$-site fibré",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "canonique de $𝒰$-site",
+        "new": "canonique du $𝒰$-site"
+      },
+      "note": "The print reads « du », not « de »."
+    },
+    {
+      "page": 295,
+      "where": "Proof of Lemma 7.4.12, image of X",
+      "scan": "\\alpha_{i!}(X)",
+      "tex": "\\alpha_{i! (X)}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\alpha_{i! (X)}",
+        "new": "\\alpha_{i!}(X)"
+      },
+      "note": "The printed (X) is the argument of α_{i!}, not part of its subscript."
+    },
+    {
+      "page": 295,
+      "where": "Same sentence",
+      "scan": "est la section",
+      "tex": "est le section",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "est le section",
+        "new": "est la section"
+      },
+      "note": "The printed article is « la »."
+    },
+    {
+      "page": 295,
+      "where": "Same sentence, section corresponding to α_{i!}(X)",
+      "scan": "j \\mapsto f^{\\ast}_j(X)",
+      "tex": "j \\to f^{\\ast}_i(X)",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$j \\to f^{\\ast}_i(X)$",
+        "new": "$j \\mapsto f^{\\ast}_j(X)$"
+      },
+      "note": "The print has a mapsto arrow and subscript j on f."
+    },
+    {
+      "page": 295,
+      "where": "Following clause about an arbitrary section",
+      "scan": "pour toute section",
+      "tex": "pour tout section",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "pour tout section",
+        "new": "pour toute section"
+      },
+      "note": "The print reads « toute »."
+    },
+    {
+      "page": 295,
+      "where": "Last sentence of the proof of Lemma 7.4.12",
+      "scan": "isomorphe au morphisme identique",
+      "tex": "isomorphie au morphisme identique",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "isomorphie",
+        "new": "isomorphe"
+      },
+      "note": "The print reads « isomorphe »."
+    },
+    {
+      "page": 295,
+      "where": "Theorem 7.4.13.1, first occurrence of « site fibré C »",
+      "scan": "du site fibré C",
+      "tex": "du site fibre $C$",
+      "kind": "accent",
+      "confidence": "high",
+      "fix": {
+        "old": "du site fibre $C$",
+        "new": "du site fibré $C$"
+      },
+      "note": "The printed word has an acute accent."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint, marker included as normal): 291: 3/1; 292: 8/1; 293: 4/2; 294: 3/0; 295: 6/0.\nMarker: page 292 ends after « En résumé, on a un diagramme de foncteurs : »; diagram (7.4.9.2) and the Proposition 7.4.10 heading open page 293. The four diagram fixes are keyed to the supplied page 292 TeX block."
+}

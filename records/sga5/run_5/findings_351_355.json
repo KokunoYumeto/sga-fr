@@ -1,0 +1,510 @@
+[
+ {
+  "page": 351,
+  "where": "start of the page (heading of the exposé)",
+  "scan": "The page opens with the underlined heading 'E X P O S E  VIII', then the title, the author line and the text.",
+  "tex": "'\\section*{Exposé VIII}', a blank line and '\\begin{center}' stand above the folio-351 marker, at the end of folio 350's text after '\\newpage' (s5.tex lines 11995-11998); page_351.tex starts with the title.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 351 really begins at '\\section*{Exposé VIII}': the 351 marker belongs between '\\newpage' and '\\section*{Exposé VIII}' (the \\begin{center} of the title block then falls on p. 351 with its \\end{center}). Not moved here."
+ },
+ {
+  "page": 351,
+  "where": "heading of §1",
+  "scan": "1. Cas des catégories abéliennes.  (underlined title ending with a full stop, run into the text)",
+  "tex": "\\subsection*{1. Cas des catégories abéliennes}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{1. Cas des catégories abéliennes}",
+   "new": "\\subsection*{1. Cas des catégories abéliennes.}"
+  },
+  "note": "Underlined title with its full stop in the print; the TeX drops it."
+ },
+ {
+  "page": 351,
+  "where": "§1, definition of an additive function",
+  "scan": "est additive si  ('additive' underlined)",
+  "tex": "est additive si",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est additive si",
+   "new": "est \\emph{additive} si"
+  },
+  "note": "Exposé VIII has no underline markup; \\emph is the file's command for the print's underline."
+ },
+ {
+  "page": 351,
+  "where": "§1, definition of an additive function",
+  "scan": "une fonction f de D dans un groupe abélien C est additive",
+  "tex": "une fonction $f$ de $\\cD$ dans un groupe abélien $C$ est additive",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "groupe abélien $G$",
+  "note": "The print clearly has C (no bar of a G) for the abelian group, which the next sentence ('Soit f une fonction additive de D dans un groupe abélien G') and the parallel definition of §2 (p. 353) call G; C is also the name of the category. The TeX keeps the printed reading."
+ },
+ {
+  "page": 351,
+  "where": "property alpha)",
+  "scan": "α)  f(0) = 0 .",
+  "tex": "\\alpha)\\quad f(0)=0,\\qquad",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "f(0)=0,\\qquad",
+   "new": "f(0)=0.\\qquad"
+  },
+  "note": "Full stop in the print, comma in the TeX (alpha) and beta) stand on separate lines in the print; display layout not reported)."
+ },
+ {
+  "page": 351,
+  "where": "property beta)",
+  "scan": "β)  f(X) = f(Y)  si  X  et  Y  sont isomorphes.",
+  "tex": "\\text{ sont isomorphes,}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "sont isomorphes,}",
+   "new": "sont isomorphes.}"
+  },
+  "note": "Full stop in the print, comma in the TeX."
+ },
+ {
+  "page": 351,
+  "where": "Exposé VIII throughout (all five pages): the category letters",
+  "scan": "Plain typewriter capitals: 'Soit C une catégorie abélienne et soit D une sous-catégorie pleine de C' (p. 351), K_D(C) (p. 353), 'Soit A une catégorie triangulée, B une sous-catégorie' (p. 355); these pages have no script letters.",
+  "tex": "\\cC, \\cD, \\cA, \\cB (\\mathcal C, D, A, B)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, reported once and not itemized (Exposé VIII, s5.tex lines 11996-12683: \\cC 217, \\cD 25, \\cA 18, \\cB 16). Examples: p. 351 'Soit $\\cC$ une catégorie abélienne', p. 353 'K_{\\cD}(\\cC)=L/R', p. 355 'Soit $\\cA$ une catégorie triangulée, $\\cB$ une sous-catégorie'. Volume decision: keep \\mathcal (the author's script letters, typed plain; cf. global issue 78 on typist glyph variants) or write plain C, D, A, B."
+ },
+ {
+  "page": 352,
+  "where": "epsilon)",
+  "scan": "ε)  Si  F^i ∈ Ob D  a une filtration finie,",
+  "tex": "\\text{Si }F\\in\\Ob \\cD",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{Si }F\\in",
+   "new": "\\text{Si }F^i\\in"
+  },
+  "corrected": "\\text{Si }F\\in",
+  "note": "The print types a raised i on F (like the superscript i of E^i above); the filtered object is F (0 = F_o ⊂ ... ⊂ F_n = F). The TeX silently corrects; the fix restores the printed reading."
+ },
+ {
+  "page": 352,
+  "where": "epsilon)",
+  "scan": "a une filtration finie,",
+  "tex": "\\text{ a une filtration finie}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "a une filtration finie}",
+   "new": "a une filtration finie,}"
+  },
+  "note": "The TeX drops the comma."
+ },
+ {
+  "page": 352,
+  "where": "proof of delta), first exact sequence",
+  "scan": "0 --> Z^i --> E^i --> B^{i+1} --> 0   (no punctuation)",
+  "tex": "0\\longrightarrow Z^i\\longrightarrow E^i\\longrightarrow B^{i+1}\\longrightarrow 0,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "B^{i+1}\\longrightarrow 0,",
+   "new": "B^{i+1}\\longrightarrow 0"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 352,
+  "where": "proof of phi)",
+  "scan": "Pour démontrer  φ)  soient  E ∈ Ob D",
+  "tex": "Pour démontrer $\\varphi)$, soient",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\varphi)$, soient",
+   "new": "$\\varphi)$ soient"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 352,
+  "where": "proof of phi)",
+  "scan": "E ⊕ F ≅ F  (hand-drawn tilde over two bars)",
+  "tex": "E\\oplus F\\simeq F",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "F\\simeq F",
+   "new": "F\\cong F"
+  },
+  "note": "The print's sign has two bars under the tilde."
+ },
+ {
+  "page": 352,
+  "where": "proof of phi)",
+  "scan": "et en appliquant  γ)  on a",
+  "tex": "et, en appliquant $\\gamma)$, on a",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "et, en appliquant $\\gamma)$, on a",
+   "new": "et en appliquant $\\gamma)$ on a"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 352,
+  "where": "proof of phi)",
+  "scan": "f(F) = f(F) + f(E)  donc  f(E) = 0 .",
+  "tex": "f(F)=f(F)+f(E),  (display), then 'donc $f(E)=0$.'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "f(F)=f(F)+f(E),",
+   "new": "f(F)=f(F)+f(E)"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 352,
+  "where": "last line",
+  "scan": "peut être obtenu de la manière suivante :",
+  "tex": "peut être obtenu de la manière suivante.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "manière suivante.",
+   "new": "manière suivante:"
+  },
+  "note": "Colon in the print, full stop in the TeX."
+ },
+ {
+  "page": 352,
+  "where": "Exposé VIII throughout: 'Ob D', 'Ob C'",
+  "scan": "Ob with a capital O: p. 352 'F^i ∈ Ob D', 'E ∈ Ob D'; p. 353 'Ob D --> L --> L/R'; p. 354 Z^(Ob C) three times and 'Ob C'; p. 355 'Ob C --T--> Ob C'' (p. 356 too).",
+  "tex": "\\Ob, which prints 'ob': the first definition, \\providecommand{\\Ob}{\\operatorname{ob}} (s5.tex line 101), wins over the later \\providecommand{\\Ob}{\\operatorname{Ob}} (lines 226 and 300).",
+  "kind": "word",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, reported once and not itemized (9 places on pp. 352-355; 20 \\Ob in Exposé VIII, s5.tex lines 11996-12683). Examples: p. 352 'E\\in\\Ob\\cD', p. 353 '\\Ob\\cD\\longrightarrow L', p. 355 '\\Ob\\cC \\arrow[r,\"T\"]'. One fix: \\renewcommand{\\Ob}{\\operatorname{Ob}} at the start of Exposé VIII (restored after it), or \\operatorname{Ob} for \\Ob in the exposé."
+ },
+ {
+  "page": 353,
+  "where": "first line",
+  "scan": "'Désignant par L ...' begins a new, indented paragraph at the top of the page (p. 352 ends with 'de la manière suivante :').",
+  "tex": "No blank line before or after the marker: 'Désignant ...' runs on in the paragraph 'Le foncteur $A_{\\cD}$ est représentable. ...' of p. 352.",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "Désignant par $L$",
+   "new": "\nDésignant par $L$"
+  },
+  "note": "Paragraph break of the print missing in the TeX. The fix adds a blank line after the marker line (the marker line itself is unchanged)."
+ },
+ {
+  "page": 353,
+  "where": "heading of §2",
+  "scan": "2. Cas des catégories triangulées.  (underlined title ending with a full stop)",
+  "tex": "\\subsection*{2. Cas des catégories triangulées}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{2. Cas des catégories triangulées}",
+   "new": "\\subsection*{2. Cas des catégories triangulées.}"
+  },
+  "note": "Underlined title with its full stop in the print; the TeX drops it."
+ },
+ {
+  "page": 353,
+  "where": "relation a)",
+  "scan": "a)  f(0) = 0   (no punctuation)",
+  "tex": "\\text{a) } f(0)=0,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{a) } f(0)=0,",
+   "new": "\\text{a) } f(0)=0"
+  },
+  "note": "The TeX adds a comma (a) to d) stand on separate lines in the print; layout not reported)."
+ },
+ {
+  "page": 353,
+  "where": "relation b)",
+  "scan": "b)  f(X[n]) = (-1)^n f(X)   (no punctuation)",
+  "tex": "(-1)^n f(X),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(-1)^n f(X),",
+   "new": "(-1)^n f(X)"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 353,
+  "where": "relation c)",
+  "scan": "c)  f(X) = f(Y)  si  X  et  Y  sont isomorphes.",
+  "tex": "\\text{ sont isomorphes,}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "sont isomorphes,}",
+   "new": "sont isomorphes.}"
+  },
+  "note": "Full stop in the print, comma in the TeX."
+ },
+ {
+  "page": 353,
+  "where": "relation d)",
+  "scan": "d)  f(X ⊕ Y) = f(X) + f(Y)   (no punctuation)",
+  "tex": "f(X\\oplus Y)=f(X)+f(Y).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "f(X\\oplus Y)=f(X)+f(Y).",
+   "new": "f(X\\oplus Y)=f(X)+f(Y)"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 354,
+  "where": "first line",
+  "scan": "'En effet les triangles suivants sont distingués' begins a new, indented paragraph at the top of the page.",
+  "tex": "No blank line after the display that ends p. 353 nor after the marker: 'En effet' runs on in the paragraph of that display.",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "En\neffet",
+   "new": "\nEn\neffet"
+  },
+  "note": "Paragraph break of the print missing in the TeX. The fix adds a blank line after the marker line; its old ends before the comma of the next fix."
+ },
+ {
+  "page": 354,
+  "where": "first line",
+  "scan": "En effet les triangles",
+  "tex": "En effet, les triangles",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": ", les triangles suivants",
+   "new": " les triangles suivants"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 354,
+  "where": "first line",
+  "scan": "sont distingués   (no colon; the triangles follow)",
+  "tex": "sont distingués:",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "sont distingués:",
+   "new": "sont distingués"
+  },
+  "note": "The TeX adds a colon."
+ },
+ {
+  "page": 354,
+  "where": "the four triangles: after the first (X --1_X--> X)",
+  "scan": "X --1_X--> X ,   (comma after the first triangle)",
+  "tex": "\\end{tikzcd} then \\qquad, no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\"1_X\"']&&X\\arrow[ul]\n\\end{tikzcd}",
+   "new": "\"1_X\"']&&X\\arrow[ul]\n\\end{tikzcd},"
+  },
+  "note": "The print separates the four triangles by commas; the TeX has none."
+ },
+ {
+  "page": 354,
+  "where": "the four triangles: after the second (X --> 0)",
+  "scan": "X ----> 0 ,",
+  "tex": "\\end{tikzcd} at the end of the first display row, no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "&&0\\arrow[ul]\n\\end{tikzcd}",
+   "new": "&&0\\arrow[ul]\n\\end{tikzcd},"
+  },
+  "note": "As the preceding finding."
+ },
+ {
+  "page": 354,
+  "where": "the four triangles: after the third (X --u--> Y)",
+  "scan": "X --u--> Y ,",
+  "tex": "\\end{tikzcd} then \\qquad, no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "&&Y\\arrow[ul]\n\\end{tikzcd}",
+   "new": "&&Y\\arrow[ul]\n\\end{tikzcd},"
+  },
+  "note": "As the preceding finding (no punctuation after the fourth triangle in the print)."
+ },
+ {
+  "page": 354,
+  "where": "after the triangles",
+  "scan": "... deux triangles distingués est distinguée. Comme dans le cas des catégories abéliennes, ...  (same paragraph, same line)",
+  "tex": "blank line before 'Comme dans le cas' (new paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "est distinguée.\n\nComme dans",
+   "new": "est distinguée. Comme dans"
+  },
+  "note": "The print runs on; the TeX starts a new paragraph."
+ },
+ {
+  "page": 354,
+  "where": "'Comme dans le cas des catégories abéliennes ...'",
+  "scan": "on obtient de la manière évidente un foncteur",
+  "tex": "on obtient de manière évidente un foncteur",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "obtient de manière évidente",
+   "new": "obtient de la manière évidente"
+  },
+  "note": "'la' missing in the TeX (the print has 'de la' at the end of the line; p. 352 has 'de manière évidente' without it, as the TeX there)."
+ },
+ {
+  "page": 354,
+  "where": "construction of K(C)",
+  "scan": "engendré par les objets de  C  et puis le sous-groupe  R",
+  "tex": "engendré par les objets de $\\cC$, et puis",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "les objets de $\\cC$, et puis",
+   "new": "les objets de $\\cC$ et puis"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 354,
+  "where": "construction of K(C)",
+  "scan": "sera  K(C)  et  cl_C  s'obtient",
+  "tex": "sera $K(\\cC)$, et $\\operatorname{cl}_{\\cC}$ s'obtient",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "sera $K(\\cC)$, et",
+   "new": "sera $K(\\cC)$ et"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 354,
+  "where": "heading of §3",
+  "scan": "3. Caractère fonctoriel.  (underlined title ending with a full stop)",
+  "tex": "\\subsection*{3. Caractère fonctoriel}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{3. Caractère fonctoriel}",
+   "new": "\\subsection*{3. Caractère fonctoriel.}"
+  },
+  "note": "Underlined title with its full stop in the print; the TeX drops it."
+ },
+ {
+  "page": 354,
+  "where": "last line",
+  "scan": "un foncteur additif, \"gradué\" et transformant  (straight typewriter quotes)",
+  "tex": "«gradué»",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "«gradué»",
+   "new": "``gradué''"
+  },
+  "note": "The TeX writes guillemets for the print's straight quotes (the accepted forms are ``...'' or \"...\"); Exposé VIII has 6 guillemet pairs (s5.tex lines 11996-12683), two of them on pp. 354-355."
+ },
+ {
+  "page": 355,
+  "where": "lines 3-4",
+  "scan": "de \"composition avec T\" donc  (straight typewriter quotes)",
+  "tex": "de «composition avec $T$», donc",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "«composition avec $T$»",
+   "new": "``composition avec $T$''"
+  },
+  "note": "Guillemets for the print's straight quotes, as on p. 354."
+ },
+ {
+  "page": 355,
+  "where": "lines 3-4",
+  "scan": "avec T\" donc un homomorphisme",
+  "tex": "$T$», donc un homomorphisme",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": ", donc un homomorphisme",
+   "new": " donc un homomorphisme"
+  },
+  "note": "The TeX adds a comma (independent of the quote fix before it)."
+ },
+ {
+  "page": 355,
+  "where": "after the diagram",
+  "scan": "En particulier si le foncteur  T",
+  "tex": "En particulier, si le foncteur $T$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "En particulier, si",
+   "new": "En particulier si"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 355,
+  "where": "relation for K(F), right-hand side",
+  "scan": "K(F)(cl_C(X) , cl_C'(X')) = cl_C(F(X,X')) .  (the last cl has the subscript C, no primes)",
+  "tex": "=\\operatorname{cl}_{\\cC''}(F(X,X')).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\operatorname{cl}_{\\cC''}",
+   "new": "\\operatorname{cl}_{\\cC}"
+  },
+  "corrected": "\\operatorname{cl}_{\\cC''}",
+  "note": "F(X,X') is an object of C'', so its class is cl_{C''}; the print types cl_C (the primes of cl_C' just before are clearly printed). The TeX silently corrects; the fix restores the printed reading."
+ },
+ {
+  "page": 355,
+  "where": "end of the page (Proposition 3.1)",
+  "scan": "p. 355 ends with 'Alors la suite suivante est exacte :'; the sequence K(B) --K(i)--> K(A) --K(Q)--> K(A/B) --> 0 is the first line of p. 356.",
+  "tex": "The display '\\[ K(\\cB)\\xrightarrow{K(i)}K(\\cA)\\xrightarrow{K(Q)}K(\\cA/\\cB)\\longrightarrow 0. \\]' and '\\end{statement}' stand under the folio-355 marker.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 356 really begins at that display: the 356 marker belongs between 'est exacte:' and the '\\[' that opens it (the statement environment then spans the marker). Not moved here."
+ },
+ {
+  "page": 355,
+  "where": "display of Proposition 3.1 (printed at the top of p. 356)",
+  "scan": "K(B) --K(i)--> K(A) --K(Q)--> K(A/B) --> 0   (no full stop)",
+  "tex": "K(\\cB)\\xrightarrow{K(i)}K(\\cA)\\xrightarrow{K(Q)}K(\\cA/\\cB)\\longrightarrow 0.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "K(\\cA/\\cB)\\longrightarrow 0.",
+   "new": "K(\\cA/\\cB)\\longrightarrow 0"
+  },
+  "note": "The TeX adds a full stop. The display sits in page_355.tex (see the marker finding): apply this fix before the 356 marker is moved."
+ }
+]

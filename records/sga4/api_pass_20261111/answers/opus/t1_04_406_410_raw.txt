@@ -1,0 +1,10 @@
+```json
+{"findings": [
+{"page": "409", "where": "7.2.5, line 3", "scan": "tout point du topos classifiant E_G est induit", "tex": "tout point du topos classifiant $E_G$", "kind": "misprint_in_print", "confidence": "medium", "fix": null, "corrected": "tout point du topos classifiant $B_G$", "note": "The print has E_G where the classifying topos B_G is meant. The TeX keeps the printed reading."},
+{"page": "409", "where": "Exercice 7.2.6 a), line 2", "scan": "Le foncteur (Γ,P) ↦ Γ", "tex": "La\nfoncteur $(\\Gamma,P)\\mapsto \\Gamma$", "kind": "word", "confidence": "high", "fix": {"old": "La\nfoncteur", "new": "Le\nfoncteur"}, "note": "The print reads 'Le foncteur'."},
+{"page": "409", "where": "Exercice 7.2.6 a), after the display Ĝ", "scan": "D la catégorie fibrée correspondante sur C", "tex": "catégorie fibrés\ncorrespondants sur $C$", "kind": "word", "confidence": "high", "fix": {"old": "catégorie fibrés\ncorrespondants sur", "new": "catégorie fibrée\ncorrespondante sur"}, "note": "The print reads 'fibrée correspondante' (singular, feminine)."},
+{"page": "410", "where": "Exercice 7.2.6 b), line 3", "scan": "d'où un topos classifiant B_G (G underlined)", "tex": "classifiant $B_{𝒰}$", "kind": "symbol", "confidence": "high", "fix": {"old": "classifiant $B_{𝒰}$", "new": "classifiant $B_{𝒢}$"}, "note": "The index is the underlined G, the pro-system 𝒢, not the universe 𝒰."},
+{"page": "410", "where": "Exercice 7.2.6 e), line 2", "scan": "de lien G [3]", "tex": "[\\hyperref[IV.sec3]{3}]", "kind": "other", "confidence": "low", "fix": {"old": "[\\hyperref[IV.sec3]{3}]", "new": "[3]"}, "note": "The print's '[3]' in square brackets looks like a bibliography reference (presumably Giraud on gerbes), not section 3 of the exposé. The TeX links it to IV.sec3. If so, it should be \\cite with the key of bibliography item [3]; that key cannot be checked here."}
+],
+"coordinator": "406: 0/0; 407: 0/0; 408: 0/0; 409: 2/1; 410: 2/0. Check the target of the reference '[3]' on p. 410 (bibliography item [3] or section 3) against the exposé's \\bibitem list."}
+```

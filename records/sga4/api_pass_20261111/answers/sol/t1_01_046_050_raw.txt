@@ -1,0 +1,148 @@
+{
+  "findings": [
+    {
+      "page": 46,
+      "where": "7.1.2, fin du paragraphe",
+      "scan": "« la plus forte de toute »",
+      "tex": "la plus forte de toute",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "la plus forte de toutes",
+      "note": "Coquille d'accord de l'imprimé, conservée par le TeX : « toutes » reprend les propriétés envisagées."
+    },
+    {
+      "page": 46,
+      "where": "Formule (7.1.3.1)",
+      "scan": "\\widehat{C}=\\underline{\\mathrm{Hom}}(C,\\underline{U}\\text{-}\\mathrm{Ens})",
+      "tex": "\\widehat{C}=\\Hhom(C, 𝒰\\text{-}\\Ens)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\widehat{C}=\\Hhom(C^\\circ, 𝒰\\text{-}\\Ens)",
+      "note": "L'imprimé omet l'exposant de catégorie opposée ; le TeX conserve cette omission. Les préfaisceaux considérés sont contravariants en X', comme le confirme la formule Hom(X',X) qui suit."
+    },
+    {
+      "page": 46,
+      "where": "7.1.3, renvoi après « c'est-à-dire aussi »",
+      "scan": "« c'est-à-dire aussi (7.1.2) »",
+      "tex": "aussi (\\hyperref[I.sec7.1.2]{7.1.2})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "aussi (\\hyperref[I.sec7.1.1]{7.1.1})",
+      "note": "Le TeX conserve le mauvais renvoi de l'imprimé. La caractérisation par la famille des h_{X'} appartient à 7.1.1 ; 7.1.2 est la discussion générale sur la coïncidence des notions."
+    },
+    {
+      "page": 47,
+      "where": "Première ligne, suite de 7.1.3",
+      "scan": "« est conservative pour les monomorphismes »",
+      "tex": "est\\pageoriginale conservative pour\nles monomorphismes",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "est conservatif pour les monomorphismes",
+      "note": "Coquille d'accord de l'imprimé, conservée par le TeX : il s'agit du foncteur φ, appelé « conservatif » dans la phrase précédente."
+    },
+    {
+      "page": 47,
+      "where": "Premier paragraphe, après « monomorphismes stricts »",
+      "scan": "« si et seulement la famille »",
+      "tex": "si et\nseulement la famille",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "si et seulement si la famille",
+      "note": "Le second « si » manque dans l'imprimé ; le TeX conserve cette omission."
+    },
+    {
+      "page": 47,
+      "where": "7.2 (ii), diagramme d'implications, branche vers 2)",
+      "scan": "Le terme 2) est isolé : aucune flèche ne relie 1) à 2).",
+      "tex": "pleinement fidèle)}} \\ar@{=>}[rd]&\\\\",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "pleinement fidèle)}} \\ar@{=>}[ld] \\ar@{=>}[rd]&\\\\",
+      "note": "Omission dans le diagramme imprimé, reproduite par le TeX. La branche 1) ⇒ 2) est explicitement établie dans la démonstration de (ii), page 50."
+    },
+    {
+      "page": 47,
+      "where": "7.2 (ii), intitulé du terme 5) du diagramme",
+      "scan": "« 5) C génératrice pour mon. stricts) »",
+      "tex": "génératrice pour mon.}\\\\ stricts\\\\",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "5) $C$ génératrice pour mon. stricts",
+      "note": "L'imprimé porte une parenthèse fermante sans ouverture après « stricts ». Le TeX la supprime silencieusement."
+    },
+    {
+      "page": 48,
+      "where": "7.2 (iii) c), les deux occurrences de « d'une monomorphisme »",
+      "scan": "« suivie d'une monomorphisme (resp. d'une monomorphisme strict) »",
+      "tex": "suivie d'une monomorphisme\n  (\\resp  d'une monomorphisme strict)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "suivie d'un monomorphisme\n  (\\resp  d'un monomorphisme strict)",
+      "note": "Les deux articles féminins sont des coquilles de l'imprimé, conservées par le TeX ; « monomorphisme » est masculin."
+    },
+    {
+      "page": 48,
+      "where": "Corollaire 7.3, première phrase",
+      "scan": "« Toutes les notions envisagées dans 6.1 »",
+      "tex": "Toutes les notions envisagées dans $6.1$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Toutes les notions envisagées dans \\hyperref[I.def7.1]{7.1}",
+      "note": "Mauvais numéro dans l'imprimé, conservé par le TeX. Les notions reprises dans le diagramme 7.2 (ii) sont celles de 7.1."
+    },
+    {
+      "page": 49,
+      "where": "Démonstration du corollaire 7.3, dernier renvoi",
+      "scan": "« au diagramme d'implications 6.2 (ii) »",
+      "tex": "diagramme d'implications \\hyperref[I.prop6.2]{6.2} (ii)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "diagramme d'implications \\hyperref[I.prop7.2]{7.2} (ii)",
+      "note": "Le diagramme visé est celui de 7.2 (ii), page 47. Le TeX conserve le mauvais numéro de l'imprimé."
+    },
+    {
+      "page": 49,
+      "where": "Démonstration de 7.2 (i), après la définition du système u_{X'}",
+      "scan": "« indexé par les X' ∈ ob C_{/X}, telle que l'on ait »",
+      "tex": "indexé par les $X'\\in \\ob C_{/X}$, telle que l'on ait",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "indexé par les $X'\\in \\ob C_{/X}$, tel que l'on ait",
+      "note": "Coquille d'accord de l'imprimé, conservée par le TeX : « tel » se rapporte à « tout système de flèches »."
+    },
+    {
+      "page": 49,
+      "where": "Dernier paragraphe, les deux catégories d'indices précédant la formule finale",
+      "scan": "\\widehat{C}_{/\\varphi(X)}, aux deux occurrences",
+      "tex": "\\widehat{C}_{/\\varphi(X)}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "C_{/\\varphi(X)}",
+      "note": "Les deux chapeaux sont erronés dans l'imprimé et conservés par le TeX. Il faut la catégorie des objets de C au-dessus de φ(X), qui est canoniquement isomorphe à C_{/X}, et non toute la catégorie tranche de Ĉ. Les chapeaux du Ĉ ambiant restent corrects."
+    },
+    {
+      "page": 50,
+      "where": "Formule (*), dernière limite projective",
+      "scan": "\\varprojlim_{C_{/C}}\\mathrm{Hom}(X',Y)",
+      "tex": "\\varprojlim_{C_{/C}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\varprojlim_{C_{/X}} \\Hom(X',Y)",
+      "note": "Mauvais indice dans l'imprimé, conservé par le TeX : la catégorie d'indices est C_{/X}, comme dans les deux limites précédentes et dans la formule suivante."
+    }
+  ],
+  "coordinator": "46: 0/3; 47: 0/4; 48: 0/2; 49: 0/3; 50: 0/1 (normal/misprint)."
+}

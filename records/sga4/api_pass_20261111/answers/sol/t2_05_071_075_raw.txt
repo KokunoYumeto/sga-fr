@@ -1,0 +1,340 @@
+{
+  "findings": [
+    {
+      "page": 71,
+      "where": "8.1.9.0, parenthetical definition of a left-filtering category",
+      "scan": "\\Ss^{0} soit filtrante",
+      "tex": "$\\Ss^{0}$ soit filtrante",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\Ll^{0} \\text{ soit filtrante}",
+      "note": "The opposite must be that of the cofiltering category, not of the one-point base site. The TeX keeps the printed S."
+    },
+    {
+      "page": 71,
+      "where": "Beginning of 8.1.10",
+      "scan": "Soient q : \\Tt \\to \\Ss un morphisme de sites",
+      "tex": "Soient $\\Tt \\to \\Ss$ un morphisme de sites",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "Soient $\\Tt \\to \\Ss$",
+        "new": "Soient $q : \\Tt \\to \\Ss$"
+      },
+      "note": "The name q and its colon are missing."
+    },
+    {
+      "page": 71,
+      "where": "8.1.10 (i), definition of an object",
+      "scan": "tel que V",
+      "tex": "tel qu $V",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "tel qu $V",
+        "new": "tel que $V"
+      },
+      "note": "The print has the complete word « que »."
+    },
+    {
+      "page": 71,
+      "where": "8.1.10 (ii), source and target of f",
+      "scan": "f : V,U,\\phi,\\lambda) \\longrightarrow (V',\\phi',U',\\lambda')",
+      "tex": "f: (V, U, \\phi, \\lambda) \\to (V',\\phi', U',\n  \\lambda')",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f:(V,U,\\phi,\\lambda)\\to(V',U',\\phi',\\lambda')",
+      "note": "The print omits the source's opening parenthesis and interchanges U' and φ' in the target. The TeX silently supplies the parenthesis but keeps the wrong target order."
+    },
+    {
+      "page": 71,
+      "where": "8.1.10 (ii), the triple defining f",
+      "scan": "(f_1,f_2,F_3)",
+      "tex": "(f_1, f_2, f_3)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(f_1,f_2,f_3)",
+      "note": "The third component is printed with capital F, although it is f₃ in the following conditions. The TeX silently corrects it."
+    },
+    {
+      "page": 72,
+      "where": "Verification of (L2), decomposition of the two arrows",
+      "scan": "f_i=(f,g_i,h_i)",
+      "tex": "$f = (f, g_i,\nh_i)$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$f = (f, g_i,",
+        "new": "$f_i = (f, g_i,"
+      },
+      "note": "The subscript i on the arrow being decomposed is missing."
+    },
+    {
+      "page": 72,
+      "where": "Equalizer formula before the diagram",
+      "scan": "a\\Ker(q^{\\ast}U^1\\rightrightarrows q^{\\ast}U_2)",
+      "tex": "a \\Ker(q^{\\ast} U1 \\rightrightarrows\nq^{\\ast} U_2)",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "q^{\\ast} U1",
+        "new": "q^{\\ast} U^1"
+      },
+      "note": "The first 1 is a superscript in the print."
+    },
+    {
+      "page": 72,
+      "where": "Equalizer formula, final object",
+      "scan": "q^{\\ast}U_2",
+      "tex": "q^{\\ast} U_2",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "q^{\\ast}U^2",
+      "note": "The print incorrectly makes 2 a subscript here; the objects were defined as U¹ and U². The TeX keeps this misprint."
+    },
+    {
+      "page": 72,
+      "where": "Diagram for (L2), lower-right object",
+      "scan": "U^2",
+      "tex": "U^{2}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "q^{\\ast}U^{2}",
+      "note": "The pullback q* is missing from the printed diagram. The TeX keeps the omission."
+    },
+    {
+      "page": 72,
+      "where": "Sentence applying (L2) after the diagram",
+      "scan": "D'après (L2) appliqué aux",
+      "tex": "D'après $(\\Ll2)$ appliquée aux",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "$(\\Ll2)$ appliquée aux",
+        "new": "$(\\Ll2)$ appliqué aux"
+      },
+      "note": "The print has « appliqué », without the final e."
+    },
+    {
+      "page": 72,
+      "where": "Pair of arrows to which (L2) is applied",
+      "scan": "(\\lambda_1\\chi_j,h_2\\chi_j)",
+      "tex": "$(\\lambda_1 \\chi_j, h_2 \\chi_j)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(h_1\\chi_j,h_2\\chi_j)",
+      "note": "The first component must involve h₁, not λ₁. The TeX keeps the printed wrong letter."
+    },
+    {
+      "page": 72,
+      "where": "Equality obtained after refining U_j and V_j",
+      "scan": "h, \\chi_j = h_2\\chi_j",
+      "tex": "$h$, $\\chi_j = h_2 \\chi_j$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "h_1\\chi_j=h_2\\chi_j",
+      "note": "The print has a comma after h in place of the first index. The TeX preserves it as punctuation rather than supplying h₁."
+    },
+    {
+      "page": 72,
+      "where": "Proof of Proposition 8.1.12, construction of the direct-image functor",
+      "scan": "t_x : \\Ff \\mapsto \\Ff\\circ t^{\\ast}",
+      "tex": "t_x : \\Ff \\to \\Ff \\circ t^{\\ast}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Ff \\to \\Ff \\circ t^{\\ast}",
+        "new": "\\Ff \\mapsto \\Ff \\circ t^{\\ast}"
+      },
+      "note": "The printed arrow is a mapping arrow, with a bar at its source."
+    },
+    {
+      "page": 72,
+      "where": "Proposition 8.1.12, proof (i), object names; recurring on p. 73",
+      "scan": "\\lambda^1 et \\lambda^2",
+      "tex": "$\\Ss^1$ et\n  $\\Ss^2$",
+      "kind": "symbol",
+      "confidence": "medium",
+      "fix": {
+        "old": "$\\Ss^1$ et\n  $\\Ss^2$",
+        "new": "$\\lambda^1$ et\n  $\\lambda^2$"
+      },
+      "note": "The long handwritten object symbols are lambdas, not the script S naming the site. This recurring substitution is reported once; the coordinator gives the scope for the remaining occurrences."
+    },
+    {
+      "page": 73,
+      "where": "First commutative square, lower-right vertex",
+      "scan": "Only a raised 2 is printed at this vertex.",
+      "tex": "\\mu_k \\ar[r]& 2",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\lambda^2",
+      "note": "The object symbol λ is omitted in the print. The TeX likewise gives only 2."
+    },
+    {
+      "page": 73,
+      "where": "Proof (ii), site containing f:U→V",
+      "scan": "f:U\\to V dans \\Ss^{\\ast}",
+      "tex": "$f:U\\to V$ dans $\\Ss^{\\ast}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f:U\\to V\\text{ dans }\\Ss",
+      "note": "U and V are objects of the base site; λ and μ lie in the fibres above them. The printed star is erroneous, and the TeX keeps it."
+    },
+    {
+      "page": 73,
+      "where": "Proof (ii), membership condition for μ′",
+      "scan": "\\mu'\\in\\Ob{}^{\\ast}_U",
+      "tex": "\\Ob {\\ }^{\\ast}_U",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\mu'\\in\\Ob\\Ss^{\\ast}_U",
+      "note": "The category symbol before the star is absent from the print. The TeX explicitly preserves the blank."
+    },
+    {
+      "page": 73,
+      "where": "Object diagram in (ii), intermediate object on the lower branch",
+      "scan": "\\lambda_j\\xrightarrow{\\psi_j}\\mu\\xrightarrow{\\psi}\\mu",
+      "tex": "& \\mu \\ar[ru]_{\\psi}&",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\lambda_j\\xrightarrow{\\psi_j}\\mu'\\xrightarrow{\\psi}\\mu",
+      "note": "The intermediate object is μ′, as introduced in the sentence and used in the following square. The print omits its prime, and the TeX keeps the omission."
+    },
+    {
+      "page": 73,
+      "where": "Sentence following the square of sheaf values",
+      "scan": "La flèche",
+      "tex": "Le flèche",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Le flèche",
+        "new": "La flèche"
+      },
+      "note": "The print reads « La »."
+    },
+    {
+      "page": 74,
+      "where": "Page boundary with p. 73",
+      "scan": "Page 73 ends with « muni de »; page 74 begins with \\phi_k\\in\\Hom_{f_k}(\\lambda_k,\\lambda_{j(k)}).",
+      "tex": "(\\lambda_k, \\lambda_{j(k)})$,\\pageoriginale",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The beginning of the printed page is already in source line 3947, included only in the p.73 cut: $\\phi_k \\in \\Hom_{f_k}. The overlap descriptions allow only line 3948. Adjust the cuts/descriptions together; no source text needs to be moved or supplied."
+    },
+    {
+      "page": 74,
+      "where": "Paragraph before (iii)",
+      "scan": "On laisse au lecteur",
+      "tex": "On laisse qu lecteur",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "On laisse qu lecteur",
+        "new": "On laisse au lecteur"
+      },
+      "note": "The print has « au »."
+    },
+    {
+      "page": 74,
+      "where": "Proof (iii), fibres containing λ⁰, μ⁰ and ν⁰",
+      "scan": "\\Ob\\Ss_U,\\quad\\Ob\\Ss_V,\\quad\\Ob\\Ss_W",
+      "tex": "dans $\\Ob\n\\Ss_U$, $\\Ob \\Ss_{V}$ et $\\Ob \\Ss_W$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\lambda^{0}\\in\\Ob\\Ss^{\\ast}_U,\\quad\\mu^{0}\\in\\Ob\\Ss^{\\ast}_V,\\quad\\nu^{0}\\in\\Ob\\Ss^{\\ast}_W",
+      "note": "All three fibre-category symbols in the print omit the star of the total category. The TeX keeps these omissions."
+    },
+    {
+      "page": 74,
+      "where": "Final diagram, vertical arrow below F(μ⁰)",
+      "scan": "\\Ff(\\mu^0)\\longrightarrow\\prod\\Ff(\\mu_j), directed downwards",
+      "tex": "\\Ff(\\mu^0) \\ar[rd]\\ar[rr]^{\\bar{h}}",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Ff(\\mu^0) \\ar[rd]\\ar[rr]^{\\bar{h}}",
+        "new": "\\Ff(\\mu^0) \\ar[dd]\\ar[rd]\\ar[rr]^{\\bar{h}}"
+      },
+      "note": "The printed downward arrow to the product of F(μ_j) is missing."
+    },
+    {
+      "page": 75,
+      "where": "8.1.13.0, letter naming the champ; recurring throughout the page",
+      "scan": "\\mathcal{C}",
+      "tex": "\\mathsf{e}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "et $\\mathsf{e}$ un champ",
+        "new": "et $\\mathcal{C}$ un champ"
+      },
+      "note": "The printed letter is script capital C, not sans-serif e. This repeated substitution is reported once; apply the coordinator's convention to the remaining occurrences."
+    },
+    {
+      "page": 75,
+      "where": "8.1.13.0, definition of the fibres of q_*C",
+      "scan": "(q_{\\ast}\\mathcal{C})_U=\\mathcal{C}_{q^{\\ast}U}",
+      "tex": "$(q_{\\ast} \\mathsf{e})_U = \\mathsf{e}_q x_{U}$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$(q_{\\ast} \\mathsf{e})_U = \\mathsf{e}_q x_{U}$",
+        "new": "$(q_{\\ast} \\mathcal{C})_U = \\mathcal{C}_{q^{\\ast} U}$"
+      },
+      "note": "The entire q*U is the subscript of C. The TeX instead has a subscript q followed by a separate x_U."
+    },
+    {
+      "page": 75,
+      "where": "8.1.13.0, construction of the projective system indexed by L*",
+      "scan": "à valeur dans q_*C, on définit un système projectif local indexé par L* et à valeur dans C : (X_L)_{L∈L*}",
+      "tex": "$\\mathsf{e} : (X_L)_{L\n\\in \\mathsf{L^{x}}}$",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "$\\mathsf{e} : (X_L)_{L\n\\in \\mathsf{L^{x}}}$",
+        "new": "$q_{\\ast}\\mathcal{C}$, on définit un système projectif local indexé par\n$\\Ll^{\\ast}$ et à valeur dans $\\mathcal{C} : (X_L)_{L\n\\in \\Ll^{\\ast}}$"
+      },
+      "note": "The initial system takes values in q_*C. The clause defining the new local projective system is omitted. The printed indexing category is the same script L* defined earlier, not sans-serif L^x."
+    },
+    {
+      "page": 75,
+      "where": "Proposition 8.1.13.1, displayed formula",
+      "scan": "\\varprojlim_{\\lambda\\in\\Ll}X_\\lambda\\xrightarrow{\\sim}\\varprojlim_{L\\in\\Ll^{\\ast}}X_L",
+      "tex": "\\varprojlim_{\\lambda \\in \\Ll} X_{\\lambda}\n\\varprojlim_{L \\in \\Ll^{\\ast}} X_L",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\varprojlim_{\\lambda \\in \\Ll} X_{\\lambda}\n\\varprojlim_{L \\in \\Ll^{\\ast}} X_L",
+        "new": "\\varprojlim_{\\lambda \\in \\Ll} X_{\\lambda}\n\\xrightarrow{\\sim}\n\\varprojlim_{L \\in \\Ll^{\\ast}} X_L"
+      },
+      "note": "The rightward isomorphism arrow, including its tilde, is missing."
+    },
+    {
+      "page": 75,
+      "where": "Last paragraph, indexing category of the local inductive system",
+      "scan": "indexé par \\lambda^{\\ast}",
+      "tex": "indexé par $\\lambda^{\\ast}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\text{indexé par }\\Ss^{\\ast}",
+      "note": "The indexing category is S*, introduced immediately above, not λ*. The TeX keeps the printed wrong letter."
+    }
+  ],
+  "coordinator": "71: 2/3; 72: 5/4; 73: 1/4; 74: 3/1; 75: 4/1 (normal/misprint).\nMarker: p.73 ends after « muni de »; p.74 begins with \\phi_k\\in\\Hom_{f_k} on source line 3947, not 3948. Adjust both cuts and overlap descriptions.\nApply exact-substring patches before the bulk symbol replacements below, which otherwise change their anchors.\nConvention: handwritten object \\lambda is transcribed as \\Ss in the proof of 8.1.12; normalize all such object occurrences, not the base-site symbol (three examples: p.72 \\Ss^1, p.73 diagram-top \\Ss, p.73 \\Ss_k).\nConvention: throughout p.75 the champ's script C is transcribed as \\mathsf{e}; replace every remaining \\mathsf{e} by \\mathcal{C} (three examples: « et e un champ », q_*e, p_*e)."
+}

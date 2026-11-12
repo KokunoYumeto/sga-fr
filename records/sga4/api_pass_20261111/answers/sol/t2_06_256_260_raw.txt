@@ -1,0 +1,190 @@
+{
+  "findings": [
+    {
+      "page": 256,
+      "where": "Diagramme (4.13.1), sommet supérieur droit",
+      "scan": "\\Pro(E')^{\\circ}",
+      "tex": "\\Pro(E')^{\\circ}_{\\beta}",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Pro(E')^{\\circ}_{\\beta}",
+        "new": "\\Pro(E')^{\\circ}"
+      },
+      "note": "Le β imprimé étiquette seulement la flèche verticale ; l'objet n'a pas d'indice β."
+    },
+    {
+      "page": 256,
+      "where": "Après « limites projectives »",
+      "scan": "mêmes finies",
+      "tex": "mêmes finies",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "même finies",
+      "note": "Même est ici adverbial et invariable. Le TeX conserve la coquille imprimée."
+    },
+    {
+      "page": 256,
+      "where": "Catégorie des valeurs du préfaisceau α ∘ F",
+      "scan": "\\Pro(E'')^{0}",
+      "tex": "\\Pro(E'')^{0}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Pro(E')^{0}",
+      "note": "D'après (4.13.1), le but de α est Pro(E') opposée, non Pro(E'') opposée. Le TeX conserve le double prime fautif."
+    },
+    {
+      "page": 257,
+      "where": "Début de page, définition du foncteur de composition",
+      "scan": "g \\mapsto \\alpha \\circ g'",
+      "tex": "$g \\mapsto \\alpha\n\\circ g'$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$g \\mapsto \\alpha \\circ g$",
+      "note": "Le prime de g' est superflu : on compose le foncteur g avec α. Le TeX conserve la coquille."
+    },
+    {
+      "page": 257,
+      "where": "« nous savons que dans … et dans E' »",
+      "scan": "dans E'_{\\coh} et dans E'",
+      "tex": "dans $\\Hom E'_{\\coh}$ et dans $E'$",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hom E'_{\\coh}",
+        "new": "E'_{\\coh}"
+      },
+      "note": "Aucun Hom ne précède E' cohérent dans cette phrase imprimée."
+    },
+    {
+      "page": 257,
+      "where": "Formule (4.13.2), source de φ",
+      "scan": "\\varphi : {E'}^0_{\\coh} \\to \\Pro(E'_{\\coh})^0",
+      "tex": "\\varphi : {E'}^0_{\\coh} \\to \\Pro (E'_{\\coh})^0",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\varphi : {E''}^0_{\\coh} \\to \\Pro (E'_{\\coh})^0",
+      "note": "φ est un faisceau sur E'' cohérent, comme l'indique la phrase suivante. Le TeX conserve le prime manquant de la source imprimée."
+    },
+    {
+      "page": 257,
+      "where": "Phrase suivant (4.13.2)",
+      "scan": "à valeurs dans",
+      "tex": "à valseurs dans",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "valseurs",
+        "new": "valeurs"
+      },
+      "note": "Le s supplémentaire n'est pas imprimé."
+    },
+    {
+      "page": 258,
+      "where": "Premier alinéa, identification de la catégorie de foncteurs",
+      "scan": "E'_{\\coh} = \\Hom(E'_{\\coh}, (\\Ens))",
+      "tex": "$E'_{\\coh} = \\Hom(E'_{\\coh}, (\\Ens))$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\overset{\\vee}{E'}_{\\coh} = \\Hom(E'_{\\coh}, (\\Ens))$",
+      "note": "Le signe ∨ manque au-dessus du premier E' cohérent : il s'agit de la catégorie de foncteurs figurant dans (4.13.1). Le TeX conserve cette omission imprimée."
+    },
+    {
+      "page": 258,
+      "where": "Corollaire 4.14, définition de f₀",
+      "scan": "f_0 = f\\vert E'_{\\coh}",
+      "tex": "f_0 = f / E'_{\\coh}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "f / E'_{\\coh}",
+        "new": "f \\vert E'_{\\coh}"
+      },
+      "note": "Le signe imprimé de restriction est une barre verticale, non une barre oblique."
+    },
+    {
+      "page": 259,
+      "where": "« la première assertion résulte également 4.10 »",
+      "scan": "résulte également 4.10",
+      "tex": "résulte également\n\\hyperref[VI.prop4.10]{4.10}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "résulte également de \\hyperref[VI.prop4.10]{4.10}",
+      "note": "La préposition de manque dans l'imprimé ; le TeX conserve cette omission."
+    },
+    {
+      "page": 259,
+      "where": "Catégorie des foncteurs de E' cohérent dans P",
+      "scan": "foncteurs quelconque",
+      "tex": "foncteurs quelconque $f : E'_{\\coh} \\to P$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "foncteurs quelconques $f : E'_{\\coh} \\to P$",
+      "note": "L'adjectif doit être au pluriel. Le TeX conserve la coquille imprimée."
+    },
+    {
+      "page": 259,
+      "where": "Condition de représentabilité des limites finies dans P",
+      "scan": "\\varinjlim finies",
+      "tex": "$\\varinjlim$\nfinies",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\varprojlim$ finies",
+      "note": "La flèche imprimée pointe à droite, comme dans le TeX. La condition concernant l'exactitude à gauche appelle ici des limites projectives finies ; le TeX conserve le sens fautif."
+    },
+    {
+      "page": 259,
+      "where": "Même phrase, après « sont représentables »",
+      "scan": "sont représentables, que f est exact à gauche",
+      "tex": "finies sont représentables, que $f$ est exact à gauche",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "finies sont représentables, $f$ est exact à gauche",
+      "note": "Ce second que redouble celui de « il est immédiat que ». Le TeX conserve le mot superflu imprimé."
+    },
+    {
+      "page": 260,
+      "where": "Preuve de 5.1, notation de la sous-catégorie génératrice",
+      "scan": "Soit E_{cohalg} … ; puis (X ∈ ob C) et « tout objet X de C »",
+      "tex": "Soit $E_{\\text{cohalg}}$ la sous-catégorie pleine de $E$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "Soit $C = E_{\\text{cohalg}}$ la sous-catégorie pleine de $E$",
+      "note": "La sous-catégorie vient d'être nommée E_cohalg, mais les deux phrases suivantes la désignent par C sans introduire cet autre nom. Le TeX conserve ce lapsus de notation."
+    },
+    {
+      "page": 260,
+      "where": "Dernière ligne imprimée, avant les deux-points",
+      "scan": "C = E'_{\\coh} :",
+      "tex": "$C = E'_{\\coh}$':",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "$C = E'_{\\coh}$':",
+        "new": "$C = E'_{\\coh}$:"
+      },
+      "note": "L'apostrophe extérieure à la formule n'est pas imprimée."
+    },
+    {
+      "page": 260,
+      "where": "Fin de la coupe, titre du lemme 5.4",
+      "scan": "La page finit après « appliqué au cas où C = E'_{\\coh} : ».",
+      "tex": "\\begin{enonce*}{Lemme 5.4}\\etiquette[5.4]{VI.lem5.4}",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le titre du lemme, à la ligne source 3289, appartient lui aussi à la page 261. Le commentaire de coupe ne réserve à cette page voisine que la ligne 3290. Rectifier les bornes de la coupe, sans déplacer le texte du source."
+    }
+  ],
+  "coordinator": "256 : 1/2 ; 257 : 2/2 ; 258 : 1/1 ; 259 : 0/4 ; 260 : 1/1 (normal/misprint, hors marker).\nMarker p. 260 : la page imprimée s'arrête à la ligne source 3287 ; le titre « Lemme 5.4 », ligne 3289, doit être rattaché à la coupe de p. 261."
+}

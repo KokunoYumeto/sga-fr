@@ -1,0 +1,88 @@
+{
+  "findings": [
+    {
+      "page": 451,
+      "where": "9.2.1, formule (9.2.2)",
+      "scan": "j:E_{/U}\\longrightarrow U",
+      "tex": "j:E_{/U}\\longrightarrow E",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "j:E_{/U}\\longrightarrow E",
+      "note": "Le but imprimé U est une coquille pour E. Le TeX la corrige silencieusement."
+    },
+    {
+      "page": 451,
+      "where": "9.2.1, renvoi après « l'est également »",
+      "scan": "(1.5.7 a))",
+      "tex": "\\sisi{1.5.7  a)}{\\hyperrefext[I][I.rem5.7]{5.7}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperrefext[I][I.rem5.7]{5.7}",
+      "note": "Le renvoi imprimé est corrigé en I 5.7 par le TeX au moyen de \\sisi ; sa première branche reproduit bien l'imprimé."
+    },
+    {
+      "page": 452,
+      "where": "Proposition 9.2.4 b), ensembles d'indices",
+      "scan": "I\\neq\\emptyset",
+      "tex": "I\\neq \\phi",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "I\\neq \\phi",
+        "new": "I\\neq \\emptyset"
+      },
+      "note": "L'imprimé porte le symbole de l'ensemble vide, non la lettre grecque phi."
+    },
+    {
+      "page": 452,
+      "where": "Titre de 9.2.4.1",
+      "scan": "Remarques 9.2.4.1",
+      "tex": "Remarque 9.2.4.1",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Remarque 9.2.4.1",
+        "new": "Remarques 9.2.4.1"
+      },
+      "note": "Le titre imprimé est au pluriel."
+    },
+    {
+      "page": 454,
+      "where": "9.3.1, description des objets de Top(Y)",
+      "scan": "dont la restriction à U est le topos final de U",
+      "tex": "\\sisi{le topos final de $U$}{l'objet final de $U$}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "l'objet final de $U$",
+      "note": "« Le topos final » est une coquille pour « l'objet final ». Le TeX la corrige explicitement par \\sisi, dont la première branche correspond à l'imprimé."
+    },
+    {
+      "page": 455,
+      "where": "Proposition 9.3.3 b), morphisme introduit avant les conditions",
+      "scan": "m:E\\longrightarrow X'",
+      "tex": "m:E\\longrightarrow X'",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "m:X\\longrightarrow X'",
+      "note": "Le domaine doit être X, comme dans le diagramme qui suit, et non le topos E. Le TeX conserve la coquille imprimée."
+    },
+    {
+      "page": 455,
+      "where": "Proposition 9.3.3 c), premiers mots",
+      "scan": "Le foncteur",
+      "tex": "\\item le foncteur",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "\\item le foncteur",
+        "new": "\\item Le foncteur"
+      },
+      "note": "L'imprimé commence le texte du c) par une capitale."
+    }
+  ],
+  "coordinator": "451: 0/2 ; 452: 2/0 ; 453: 0/0 ; 454: 0/1 ; 455: 1/1 (normal/misprint)."
+}

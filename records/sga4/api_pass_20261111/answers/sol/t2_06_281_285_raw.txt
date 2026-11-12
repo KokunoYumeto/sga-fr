@@ -1,0 +1,147 @@
+{
+  "findings": [
+    {
+      "page": 281,
+      "where": "(7.2.6.5), argument of Top(f)*",
+      "scan": "\\Top(f)^{\\ast}(bg)",
+      "tex": "\\Top(f)^{\\ast}(bg)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Top(f)^{\\ast}(b_g)",
+      "note": "The print leaves g on the baseline instead of making it the index of b. The TeX keeps this misprint."
+    },
+    {
+      "page": 281,
+      "where": "Sentence following (7.2.6.5)",
+      "scan": "condition de cocycles de 6.2.2.2",
+      "tex": "condition de cocycles de 6.2.2.2",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "condition de cocycles de 6.1.2.2",
+      "note": "The cocycle condition is 6.1.2.2, also cited on p. 283. The TeX keeps the printed wrong reference."
+    },
+    {
+      "page": 281,
+      "where": "(7.2.6.7), index of epsilon",
+      "scan": "\\epsilon_{c/I}",
+      "tex": "\\epsilon_{c/I}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\epsilon_{C/I}",
+      "note": "The printed index has lowercase c although the site is C; the later occurrence in the paragraph uses capital C. The TeX keeps the lowercase index."
+    },
+    {
+      "page": 281,
+      "where": "Paragraph following (7.2.6.7), « que epsilon … est un morphisme »",
+      "scan": "que \\epsilon_{c/I} est",
+      "tex": "que $\\epsilon_{c/I}$\nest",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\epsilon_{C/I}",
+      "note": "The lowercase c repeats the printed index error in (7.2.6.7). The TeX keeps it."
+    },
+    {
+      "page": 281,
+      "where": "Paragraph following (7.2.6.7), « à isomorphisme canonique près »",
+      "scan": "près",
+      "tex": "prés",
+      "kind": "accent",
+      "confidence": "high",
+      "fix": {
+        "old": "prés,",
+        "new": "près,"
+      },
+      "note": "The print has a grave accent."
+    },
+    {
+      "page": 283,
+      "where": "(7.3.1.4), source and target",
+      "scan": "\\loc(m) : \\text{Fl}(E)_1 \\to \\text{Fl}(E)_2",
+      "tex": "\\loc(m) : F1(E)_1 \\to F1 (E)_2",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "F1(E)_1 \\to F1 (E)_2",
+        "new": "\\text{Fl}(E)_1 \\to \\text{Fl}(E)_2"
+      },
+      "note": "Both category names contain lowercase l in the print, not the digit 1."
+    },
+    {
+      "page": 283,
+      "where": "Sentence immediately following (7.3.1.4)",
+      "scan": "qui induise sur les topos fibrés les morphismes",
+      "tex": "qui induise sur les topos fibrés les morphismes",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "qui induise sur les topos fibres les morphismes",
+      "note": "These are the fibre topoi on which the morphisms loc(m(i)) are induced. The TeX keeps the printed erroneous acute accent."
+    },
+    {
+      "page": 283,
+      "where": "Sentence following (7.3.1.5)",
+      "scan": "et les isomorphismes c(m,n) possèdent",
+      "tex": "et les morphismes $c(m, n)$ possèdent",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "et les morphismes $c(m, n)$",
+        "new": "et les isomorphismes $c(m, n)$"
+      },
+      "note": "The transcription drops the prefix « iso »."
+    },
+    {
+      "page": 283,
+      "where": "Example 7.3.2, introduction of the canonical functor",
+      "scan": "Soient \\epsilon_C : C \\to C^{\\sim} le foncteur canonique",
+      "tex": "Soient $\\epsilon_C  : C \\to C^{\\sim}$ le foncteur canonique",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Soit $\\epsilon_C : C \\to C^{\\sim}$ le foncteur canonique",
+      "note": "Only one functor is introduced here. The TeX keeps the printed plural « Soient »."
+    },
+    {
+      "page": 284,
+      "where": "Opening sentence",
+      "scan": "entre catégories fibrées sur C",
+      "tex": "entre catégories\nfibrée sur\n$C$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "fibrée sur\n$C$:",
+        "new": "fibrées sur\n$C$:"
+      },
+      "note": "The print has the plural « fibrées »."
+    },
+    {
+      "page": 284,
+      "where": "Sentence following (7.3.2.5), change-of-base functor",
+      "scan": "\\epsilon_C \\circ \\phi : I \\to C^{\\sim}",
+      "tex": "\\epsilon_C \\circ \\phi : \\to C^{\\sim}",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\epsilon_C \\circ \\phi : \\to",
+        "new": "\\epsilon_C \\circ \\phi : I \\to"
+      },
+      "note": "The transcription omits the source I."
+    },
+    {
+      "page": 285,
+      "where": "Definition 7.4.1, continuity condition",
+      "scan": "qui rende continu les foncteurs",
+      "tex": "qui rende continu les foncteurs",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "qui rende continus les foncteurs",
+      "note": "The adjective must agree with the plural « foncteurs ». The TeX keeps the printed singular."
+    }
+  ],
+  "coordinator": "281: 1/4; 282: 0/0; 283: 2/2; 284: 2/0; 285: 0/1 (normal/misprint)."
+}

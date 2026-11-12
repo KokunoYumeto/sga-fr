@@ -1,0 +1,84 @@
+{
+  "findings": [
+    {
+      "page": 216,
+      "where": "Lemme 2.4, dernière phrase",
+      "scan": "$n=0$ i.e. $g$ localement acyclique",
+      "tex": "$n=0$ \\ie $g$ localement acyclique",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$n=0$ \\ie $f$ localement acyclique",
+      "note": "L'hypothèse de locale acyclicité porte sur f:X\\rightarrow Y, non sur l'inclusion générique g:y_1\\rightarrow Y. Le TeX conserve la coquille."
+    },
+    {
+      "page": 217,
+      "where": "Premier paragraphe, hypothèse de normalité",
+      "scan": "l'hypothèse que $X$ est normal",
+      "tex": "l'hypothèse que \\sisi{$X$}{$Y$} est normal",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "l'hypothèse que $Y$ est normal",
+      "note": "La normalité requise est celle de Y, conformément au lemme 2.4. La première branche de \\sisi restitue l'imprimé ; la seconde corrige la coquille."
+    },
+    {
+      "page": 217,
+      "where": "Premier paragraphe, « D'autre part, l'hypothèse… »",
+      "scan": "l'hypothèse que $g$ est localement $0$-acyclique",
+      "tex": "l'hypothèse que $g$ est localement $0$-acyclique",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "l'hypothèse que $f$ est localement $0$-acyclique",
+      "note": "C'est l'acyclicité locale de f qui permet le changement de base des images directes par g. Le TeX conserve le g erroné de l'imprimé."
+    },
+    {
+      "page": 217,
+      "where": "Même phrase, images directes dont la formation commute au changement de base",
+      "scan": "R^{q}g_{\\ast}(G_y)",
+      "tex": "R^{q}g_{\\ast}(G_y)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{q}g_{\\ast}(G_{y_1})",
+      "note": "Le domaine de g est y_1 : l'indice 1 manque au point supportant le faisceau constant. Le TeX conserve cette omission de l'imprimé."
+    },
+    {
+      "page": 219,
+      "where": "Paragraphe introduisant les faisceaux de cohomologie locale",
+      "scan": "V 4",
+      "tex": "\\sisi{\\hyperrefext[V][V.sec4]{4}}{\\hyperrefext[V][V.sec6]{6}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperrefext[V][V.sec6]{6}",
+      "note": "La référence imprimée V 4 est erronée ; il faut V 6. Le TeX restitue V 4 dans la première branche de \\sisi et le corrige dans la seconde."
+    },
+    {
+      "page": 220,
+      "where": "Démonstration, choix des points géométriques",
+      "scan": "$\\bar{x}$ un point géométrique de $X$ au-dessus de $S$",
+      "tex": "$\\bar{x}$ un point géométrique de $X$ au-dessus de $S$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "$\\bar{x}$ un point géométrique de $X$ au-dessus de $\\bar{s}$",
+      "note": "L'imprimé porte bien S, conservé par le TeX. Le point géométrique correspondant à \\bar{x} doit être le point \\bar{s} choisi juste avant, afin de définir le morphisme des localisés stricts."
+    },
+    {
+      "page": 220,
+      "where": "Démonstration, définition de l'ouvert localisé strict",
+      "scan": "\\widetilde{U}=U\\times_X\\widetilde{X}",
+      "tex": "\\widetilde{U}=\\fprod{U}{\\widetilde{U}}{X}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\fprod{U}{\\widetilde{U}}{X}",
+        "new": "\\fprod{U}{\\widetilde{X}}{X}"
+      },
+      "note": "Le second facteur imprimé est \\widetilde{X}, non \\widetilde{U}."
+    }
+  ],
+  "coordinator": "216 : 0/1 ; 217 : 0/3 ; 218 : 0/0 ; 219 : 0/1 ; 220 : 1/1 (normal/misprint)."
+}

@@ -1,0 +1,73 @@
+{
+  "findings": [
+    {
+      "page": 256,
+      "where": "0.10, final parenthesis",
+      "scan": "l'univers fini",
+      "tex": "l'univers \\sisi{fini}{fixé}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "l'univers fixé",
+      "note": "The print has « fini » for « fixé ». The TeX records and explicitly corrects this misprint."
+    },
+    {
+      "page": 258,
+      "where": "1.1.1, upper row of the commutative diagram, between the second 0 and the first X",
+      "scan": "0=X",
+      "tex": "\\sisi{\\ar@{=}[r]}{\\ar[r]}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "0\\longrightarrow X",
+      "note": "The printed equality should be an arrow. The TeX records the equality and explicitly corrects it."
+    },
+    {
+      "page": 260,
+      "where": "Sentence introducing (1.1.4.2)",
+      "scan": "deux ordres totals",
+      "tex": "deux ordres \\sisi{totals}{totaux}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "deux ordres totaux",
+      "note": "The French plural is « totaux ». The TeX explicitly corrects the printed « totals »."
+    },
+    {
+      "page": 260,
+      "where": "(1.1.4.2), second condition beneath the summation sign, recorded reading in \\sisi",
+      "scan": "i<_2 i",
+      "tex": "\\sisi{i<_2 j}{j<_2 i}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\sisi{i<_2 j}{j<_2 i}",
+        "new": "\\sisi{i<_2 i}{j<_2 i}"
+      },
+      "note": "Both scans show i on both sides of the lower inequality. The first argument misrecords the print; the printed mathematical error is reported separately."
+    },
+    {
+      "page": 260,
+      "where": "(1.1.4.2), second condition beneath the summation sign",
+      "scan": "i<_2 i",
+      "tex": "\\sisi{i<_2 j}{j<_2 i}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "j<_2 i",
+      "note": "The printed condition is impossible; the inversion condition should be j<_2 i. The TeX explicitly corrects it in the second argument, but misrecords the printed reading in the first argument, as reported separately."
+    },
+    {
+      "page": 260,
+      "where": "1.1.4.2.1, name of the associated complex",
+      "scan": "associé ou complexe naïf",
+      "tex": "associé ou complexe naïf",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "associé au complexe naïf",
+      "note": "The complex is associated to the naive complex K: « ou » is a misprint for « au ». The TeX keeps it."
+    }
+  ],
+  "coordinator": "256: 0/1; 257: 0/0; 258: 0/1; 259: 0/0; 260: 1/3 (normal/misprint)."
+}

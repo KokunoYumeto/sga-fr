@@ -1,0 +1,1 @@
+Counts (normal/misprint): p.371 1/1; p.372 0/0; p.373 5/2; p.374 1/0; p.375 2/0. Convention: the subscript x̄ (geometric point) is transcribed as \bar{X}, a capital X, in some places, e.g. p.373 'par $F_{\bar{X}}$' and p.374 '$F_{\bar{X}}$ forment', while elsewhere it is \bar{x}; check the rest of the file for the same slip.

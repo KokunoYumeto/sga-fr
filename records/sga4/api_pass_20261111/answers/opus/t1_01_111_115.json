@@ -1,0 +1,61 @@
+[
+ {
+  "page": "111",
+  "where": "(8.9.2.2), the inner limit",
+  "scan": "lim→ φ ≃ \"lim→\"_i lim←_j Φ(j,i) )",
+  "tex": "\\varprojlim_j\\Phi(j,i)){\\quoi}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\varinjlim_j\\Phi(j,i)",
+  "note": "The print has lim with a left arrow over j in the inductive formula. It should be lim→_j, as the next line says (resp. lim→_j est calculé dans C). The TeX keeps the printed reading."
+ },
+ {
+  "page": "111",
+  "where": "proof of 8.9.2, first line",
+  "scan": "commutent à lim←_J",
+  "tex": "commutent à $\\varprojlim_j$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "commutent à $\\varprojlim_j$",
+   "new": "commutent à $\\varprojlim_J$"
+  },
+  "note": "The print has a capital J under this lim, as in the following 'c commute à lim←_J'."
+ },
+ {
+  "page": "111",
+  "where": "(8.9.3.1), right-hand side",
+  "scan": "(∏_{α∈A} A(α)_{i_α})",
+  "tex": "A(\\alpha)_{i_\\alpha}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "X(\\alpha)_{i_\\alpha}",
+  "note": "The print has A(α) for X(α). The TeX keeps the printed reading."
+ },
+ {
+  "page": "112",
+  "where": "proof of 8.9.3, first line",
+  "scan": "il est bien connu",
+  "tex": "il et bien connu",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "il et bien connu",
+   "new": "il est bien connu"
+  },
+  "note": "The print has 'est'; the TeX drops the s."
+ },
+ {
+  "page": "113",
+  "where": "proof of 8.9.5 a), first line of the display",
+  "scan": "lim→_i Hom←_j Hom(X_j,Y_i)",
+  "tex": "\\varinjlim_i\n\\varprojlim_j \\Hom(X_j,Y_i)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\varinjlim_i \\varprojlim_j \\Hom(X_j,Y_i)",
+  "note": "The print has 'Hom' over the left arrow instead of 'lim'. The TeX silently corrects it to \\varprojlim_j."
+ }
+]

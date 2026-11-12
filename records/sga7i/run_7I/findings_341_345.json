@@ -1,0 +1,118 @@
+[
+ {
+  "page": 341,
+  "where": "(2.5.4), end of the diagram line",
+  "scan": "… W=V∩V^⊥ ←μ⊃ 0      ,",
+  "tex": "\\end{tikzcd} (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzcd}",
+   "new": "\\end{tikzcd} \\quad ,"
+  },
+  "note": "The comma printed far right of the diagram is left out. The STRUCTURE comment already records the comma and does not say it is omitted, so the comment needs no change."
+ },
+ {
+  "page": 341,
+  "where": "(2.5.4), side of the arrow labels",
+  "scan": "μ above both horizontal arrows; 2λ above-left and 2α above-right of the upper arrows; 2α below-left and 2λ below-right of the lower arrows (all outside the lozenge)",
+  "tex": "\\arrow[l, hook', \"\\mu\"] …; \\arrow[dl, hook', \"2\\lambda\"]; \\arrow[ul, hook', \"2\\alpha\"]; \\arrow[dl, hook, \"2\\lambda\"']; \\arrow[ul, hook, \"2\\alpha\"']",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "& & V \\arrow[dl, hook', \"2\\lambda\"] & & \\\\\nU & W^{\\perp} = V + V^{\\perp} \\arrow[l, hook', \"\\mu\"] & & W = V \\cap V^{\\perp} \\arrow[ul, hook', \"2\\alpha\"] \\arrow[dl, hook, \"2\\lambda\"'] & 0 \\arrow[l, hook', \"\\mu\"] \\\\\n& & V^{\\perp} \\arrow[ul, hook, \"2\\alpha\"'] & &",
+   "new": "& & V \\arrow[dl, hook', \"2\\lambda\"'] & & \\\\\nU & W^{\\perp} = V + V^{\\perp} \\arrow[l, hook', \"\\mu\"'] & & W = V \\cap V^{\\perp} \\arrow[ul, hook', \"2\\alpha\"'] \\arrow[dl, hook, \"2\\lambda\"] & 0 \\arrow[l, hook', \"\\mu\"'] \\\\\n& & V^{\\perp} \\arrow[ul, hook, \"2\\alpha\"] & &"
+  },
+  "note": "tikz-cd sets an unswapped label to the left of the direction of travel. As coded, μ falls below the leftward arrows and all four diagonal labels fall inside the lozenge. That is the opposite of the print and of the file's own STRUCTURE comment. The fix toggles the swap mark on all six labels."
+ },
+ {
+  "page": 341,
+  "where": "first line after (2.5.4)",
+  "scan": "désignent les rangs du quotients de deux modules",
+  "tex": "désignent les rangs du quotients de deux modules",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "les rangs des quotients",
+  "note": "Typing error 'du' for 'des'; the TeX keeps the printed reading."
+ },
+ {
+  "page": 341,
+  "where": "(2.5.5)",
+  "scan": "rang V/V ∩ V^⊥ = rang V/W = 2λ ,",
+  "tex": "\\mathrm{rang}\\ V/V \\cap V^{\\perp} \\;=\\; \\mathrm{rang}\\ V/W = 2\\lambda",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\mathrm{rang}\\ V^{\\perp}/V \\cap V^{\\perp} \\;=\\; \\mathrm{rang}\\ V^{\\perp}/W = 2\\lambda",
+  "note": "As printed it contradicts the sentence just above ('V/W soit de rang 2α') and the diagram (W→V labelled 2α, W→V^⊥ labelled 2λ). The formula still to be derived is rang V^⊥/W = 2λ, whose dual is rang W^⊥/V = 2λ; the hand-added ⊥ is missing on the numerator V. The TeX keeps the printed reading."
+ },
+ {
+  "page": 343,
+  "where": "Proposition 3.1, last sentence of the hypotheses",
+  "scan": "Soient s ∈ S, t ∈ S une générisation de S, p l'exposant",
+  "tex": "\\underline{une générisation de} $S$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\underline{une générisation de} $s$",
+  "note": "t is a generization of the point s, not of S. The TeX keeps the printed capital S."
+ },
+ {
+  "page": 344,
+  "where": "a), 'qui est retrocompact dans _nG'",
+  "scan": "est retrocompact dans _nG",
+  "tex": "qui est retrocompact dans",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "rétrocompact",
+  "note": "Accent missing (the EGA term is 'rétrocompact'); the TeX keeps the printed spelling."
+ },
+ {
+  "page": 345,
+  "where": "b), line 4",
+  "scan": "s'obtiennent en élévant n respectivement",
+  "tex": "s'obtiennent en élévant $n$ respectivement",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "élevant",
+  "note": "Spelling error in the print (élever gives élevant); the TeX keeps it."
+ },
+ {
+  "page": 345,
+  "where": "c), first line",
+  "scan": "l'hypothèse (K_t̄)^o_s unipotent",
+  "tex": "$(K_{\\overline{t}})^{o}_{s}$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$(K_{\\overline{t}})^{o}_{\\mathrm{red}}$",
+  "note": "Subscript s typed for red (cf. 3.1 c) and part d) below). The TeX keeps the printed s."
+ },
+ {
+  "page": 345,
+  "where": "d), 'et par suite (K_s̄)^o_red est unipotent'",
+  "scan": "(K_s̄)^o_red with upright 'red'",
+  "tex": "(K_{\\overline{s}})^{o}_{red}",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "(K_{\\overline{s}})^{o}_{red}",
+   "new": "(K_{\\overline{s}})^{o}_{\\mathrm{red}}"
+  },
+  "note": "'red' is set in math italic here, while the file writes \\mathrm{red} on p. 343. Drop this if the global italic-operator-name rule is meant to cover it."
+ },
+ {
+  "page": 345,
+  "where": "e), first line",
+  "scan": "Pour la premier assertion",
+  "tex": "Pour la premier assertion",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Pour la première assertion",
+  "note": "Agreement error in the print; the TeX keeps it."
+ }
+]

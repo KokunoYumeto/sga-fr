@@ -1,0 +1,1 @@
+p126: 0/0; p127: 4/1; p128: 6/3; p129: 1/1; p130: 1/0 plus 1 note without fix (editorial arrow labels in 3.2.2.2). On p127 the derived L^+ (before ū'* and ū*) is dropped in all four places; the fixes use \LL^+, so check that macros.tex defines \LL.

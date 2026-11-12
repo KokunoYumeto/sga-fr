@@ -1,0 +1,59 @@
+{
+  "findings": [
+    {
+      "page": 6,
+      "where": "After Definition 1.2, sentence beginning «Lorsque C est U-petite»",
+      "scan": "La catégorie C_{\\underline{U}}, without a hat on C.",
+      "tex": "Lorsque $C$ est $𝒰$-petite, la catégorie\n$\\widehat{C}_{𝒰}$ est une\n$𝒰$-catégorie.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\widehat{C}_{𝒰}",
+      "note": "The print omits the hat on the category of presheaves. The TeX silently corrects this misprint."
+    },
+    {
+      "page": 7,
+      "where": "Construction-definition 1.3, display defining h_U(x)(u), Hom factor",
+      "scan": "\\Hom_C(x,u)",
+      "tex": "\\Hom_C(x,u)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hom_C(u,x)",
+      "note": "The TeX keeps the printed reversal of the arguments. This must be the precomposition map Hom_C(u,x) defined immediately above."
+    },
+    {
+      "page": 7,
+      "where": "Construction-definition 1.3, display defining h_U(x)(u), final inverse factor",
+      "scan": "\\varphi(y,x)^{-1}",
+      "tex": "\\varphi(y,x)^{{}-1}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\varphi(y',x)^{{}-1}",
+      "note": "The TeX keeps the missing prime in the print. The inverse factor must start from h_U(x)(y'), so its first argument must be y'."
+    },
+    {
+      "page": 8,
+      "where": "Opening standalone inclusion display, source lines 352–355",
+      "scan": "Page 8 begins «et le diagramme :». The standalone inclusion of the two presheaf categories is printed at the foot of page 7.",
+      "tex": "$$\n\\widehat{C}_{𝒰}\\hookrightarrow\n\\widehat{C}_{𝒱}\n$$\net\\pageoriginale le diagramme:",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The cut assigns source lines 352–355 to page 8 without a neighbouring-page allowance. They belong to page 7; page 8 begins at source line 356. Recut only; no source text needs changing."
+    },
+    {
+      "page": 10,
+      "where": "Paragraph following Definition 2.2, opening words",
+      "scan": "Il résulte au n° 1",
+      "tex": "Il résulte au ${\\rm n^\\circ}$ 1",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Il résulte du ${\\rm n^\\circ}$ 1",
+      "note": "The printed «au» is a misprint for «du». The TeX keeps it."
+    }
+  ],
+  "coordinator": "6: 0/1; 7: 0/2; 8: 1/0; 9: 0/0; 10: 0/1 (normal/misprint).\nMarker pp. 7–8: recut after source line 355; the inclusion display (352–355) ends p. 7, and p. 8 begins «et le diagramme:»."
+}

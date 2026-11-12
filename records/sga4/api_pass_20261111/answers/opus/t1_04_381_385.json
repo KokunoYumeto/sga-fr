@@ -1,0 +1,122 @@
+[
+ {
+  "page": "381",
+  "where": "first paragraph, parenthesis on δ",
+  "scan": "le morphisme diagonal dans la limite projective du foncteur constant",
+  "tex": "la limites projective du foncteur constant",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "la limites projective",
+   "new": "la limite projective"
+  },
+  "note": "The TeX adds an s to 'limite'."
+ },
+ {
+  "page": "381",
+  "where": "second paragraph, opening",
+  "scan": "On réconstitue à isomorphisme près",
+  "tex": "On reconstitue à isomorphisme près",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "reconstitue",
+  "note": "The typescript has 'réconstitue'; the TeX corrects it silently."
+ },
+ {
+  "page": "381",
+  "where": "Lemme 5.11.2, first line",
+  "scan": "où les limmites projectives",
+  "tex": "où les limites projectives",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "limites",
+  "note": "Typing error 'limmites' in the print; the TeX corrects it silently."
+ },
+ {
+  "page": "382",
+  "where": "paragraph after Lemme 5.11.2, 'interpréter u dans le couple'",
+  "scan": "le couple (ψ,u), with the same functor letter as everywhere else (rendered \\Psi)",
+  "tex": "$u$ dans le couple $(\\psi,u)$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "$u$ dans le couple $(\\psi,u)$",
+   "new": "$u$ dans le couple $(\\Psi,u)$"
+  },
+  "note": "The functor is \\Psi everywhere else in the TeX; here the small \\psi gives another letter."
+ },
+ {
+  "page": "382",
+  "where": "same paragraph, 'pour φ resp. (ψ,u) variable'",
+  "scan": "resp. (ψ,u) variable, with the same functor letter",
+  "tex": "$(\\psi,u)$ variable",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "$(\\psi,u)$ variable",
+   "new": "$(\\Psi,u)$ variable"
+  },
+  "note": "Same capital/small inconsistency as above."
+ },
+ {
+  "page": "384",
+  "where": "Exercice 5.14 a)",
+  "scan": "α : p → q∘f est un isomorphisme de morphismes de topos de E dans G",
+  "tex": "de morphismes de topos de $E$ dans $G$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "de morphismes de topos de $F$ dans $E$",
+  "note": "p and q∘f are morphisms F→E, so 'de E dans G' is an error of the print; the TeX keeps it."
+ },
+ {
+  "page": "384",
+  "where": "Exercice 5.14 c)",
+  "scan": "se réconstitue à isomorphisme unique près",
+  "tex": "se\nreconstitue à isomorphisme unique près",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "reconstitue",
+  "note": "The print has 'réconstitue'; the TeX corrects it silently."
+ },
+ {
+  "page": "385",
+  "where": "Définition 6.1, last sentence",
+  "scan": "l'ensemble p*(F) est appelé fibre de E en p",
+  "tex": "est appelé fibre de $E$ en\n$p$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "fibre de $F$ en $p$",
+  "note": "It is the fibre of F (F_p) that is meant; the print's 'E' is kept by the TeX."
+ },
+ {
+  "page": "385",
+  "where": "6.1.1",
+  "scan": "lorsque F est un objet groupe (resp. anneau,",
+  "tex": "lorsque $F$ est un objet en groupe (\\resp anneau,",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "objet en groupe",
+   "new": "objet groupe"
+  },
+  "note": "The TeX adds the word 'en'."
+ },
+ {
+  "page": "385",
+  "where": "Définition 6.1, notation of the category of points",
+  "scan": "on note Point(E) ou Pt(E)",
+  "tex": "on note $\\Ppoints(E)$ ou $\\sheaf{\\Pt}(E)$",
+  "kind": "word",
+  "confidence": "low",
+  "fix": {
+   "old": "$\\Ppoints(E)$",
+   "new": "$\\underline{\\mathrm{Point}}(E)$"
+  },
+  "note": "The print reads 'Point' (singular). The macro name suggests 'Points'; check what \\Ppoints prints (macros.tex not attached)."
+ }
+]

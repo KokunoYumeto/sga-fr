@@ -1,0 +1,73 @@
+{
+  "findings": [
+    {
+      "page": 252,
+      "where": "Ligne d’auteur sous le titre",
+      "scan": "par P. Deligne (*)",
+      "tex": "P. Deligne",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "\\begin{center}\nP. Deligne",
+        "new": "\\begin{center}\npar P. Deligne\\footnotemark[1]"
+      },
+      "note": "Il manque « par » et l’appel de la note, dont le texte est déjà présent."
+    },
+    {
+      "page": 252,
+      "where": "Introduction, premier paragraphe, présentation du § 6",
+      "scan": "théorie du morphisme tracé",
+      "tex": "\\sisi{tracé}{trace}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "trace",
+      "note": "L’accent de « tracé » est une coquille. Le TeX la corrige avec \\sisi."
+    },
+    {
+      "page": 252,
+      "where": "Note de bas de page, date des exposés oraux",
+      "scan": "(de printemps 1964)",
+      "tex": "(de printemps 1964)",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "(du printemps 1964)",
+      "note": "Coquille grammaticale « de » pour « du », conservée dans le TeX."
+    },
+    {
+      "page": 254,
+      "where": "0.2.1, paragraphe commençant par « On voit »",
+      "scan": "les faisceaux d'ensemble",
+      "tex": "les faisceaux d'ensemble",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "les faisceaux d'ensembles",
+      "note": "Il manque le s d’« ensembles », présent dans les occurrences suivantes. Le TeX conserve la coquille."
+    },
+    {
+      "page": 254,
+      "where": "0.3, référence après les foncteurs de translation",
+      "scan": "(CD I 1.10)",
+      "tex": "\\cite{SGA4-17:CD} I \\sisi{1.10}{1.1.0}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\cite{SGA4-17:CD} I 1.1.0",
+      "note": "La référence imprimée est erronée. Le TeX la corrige avec \\sisi."
+    },
+    {
+      "page": 255,
+      "where": "Première ligne, référence après « complétant »",
+      "scan": "([CD] I 1.1)",
+      "tex": "\\cite{SGA4-17:CD} \\sisi{I 1.1}{II 2.1.1}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\cite{SGA4-17:CD} II 2.1.1",
+      "note": "La référence imprimée est erronée. Le TeX la corrige avec \\sisi."
+    }
+  ],
+  "coordinator": "252: 1/2; 253: 0/0; 254: 0/2; 255: 0/1 (normal/misprint)."
+}

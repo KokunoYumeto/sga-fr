@@ -1,0 +1,25 @@
+M248 = (r"Page 248 begins with a typed repeat of the end of p. 247: the display E_r^{(n)}(X) = (E_r^{p,q}(X))_{p+q=n} "
+        r"and 'est canoniquement muni d'une structure de (gr•(S),D)-module gradué. Il en est de même par passage à la "
+        r"limite pour :' (the TeX gives them once, on p. 247; the misprint record filed under p. 247 inserts the repeat "
+        r"in the diplomatic layer only). Then follow the display ℰ_r^{(n)}(X) = ... and 'L'anneau S, ... Par suite le "
+        r"gradué strict grs (X) est', which the TeX has under the folio-247 marker. Exact fix, after this batch has "
+        r"been processed (Git Bash quoting): (1) python -I move_marker.py 5 248 $'\\[\nE^{(n)}_r(X)' --before: the "
+        r"anchor exists only in the inserted repeat (its display is written E^{(n)}_r for this purpose), so this puts "
+        r"the diplomatic marker on its own line just before the repeat and finds nothing in the corrected layer (nor "
+        r"anywhere before the batch is processed); (2) python -I move_marker.py 5 248 $'\\[\n\\mathcal E_r^{(n)}(X)' "
+        r"--before: puts the corrected layer's marker just before the ℰ display and finds nothing before the moved "
+        r"diplomatic marker. Both orders of (1) and (2) give the same result (simulated in memory on both layers of "
+        r"the live s5.tex). Text not moved.")
+
+M249 = (r"Page 249 really begins at the display '\[' / '\bigl[\mathcal B_r^{(n)}(X)\bigr]_{r\in\mathbb N} et ...' "
+        r"after 'on en déduit que les suites' (end of page_248.tex); 'sont stationnaires.' and the 'Il' just above the "
+        r"marker are also printed on p. 249. Exact fix: python -I move_marker.py 5 249 '\[' --before (the last '\[' "
+        r"before the marker opens this display; run it once; simulated in memory on both layers of the live s5.tex "
+        r"after this batch). Text not moved.")
+
+M251 = (r"Page 250 ends with the display ℰ_∞^{(n)}(X) = grs•T^n(X) . (the rest of the page is blank). In the page "
+        r"file '\section*{Exposé VI}' and '\begin{center}' (printed on p. 251) stood under the folio-250 marker; the "
+        r"live s5.tex already has the folio-251 marker on its own line before '\section*{EXPOSÉ VI}' (batch 251-255): "
+        r"no action. Do not run a '--before' move for this marker now: with the anchor '\section*{Expos' it would go "
+        r"back to Exposé III B.")
+

@@ -1,0 +1,220 @@
+{
+  "findings": [
+    {
+      "page": 446,
+      "where": "Diagramme (6.3.15.2), les trois étiquettes de trace",
+      "scan": "\\Tr_g(u)_n ; \\Tr_f\\Tr_g(u) ; \\Tr_{fg}(u)",
+      "tex": "\\Tr_{\\sisi{g}{h}}(u)_n ; \\Tr_{\\sisi{f}{g}}\\Tr_{\\sisi{g}{h}}(u) ; \\Tr_{\\sisi{fg}{gh}}(u)",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\Tr_h(u)_n ; \\Tr_g\\Tr_h(u) ; \\Tr_{gh}(u)",
+      "note": "Les indices des traces sont décalés dans l'imprimé. Le TeX les corrige avec les \\sisi."
+    },
+    {
+      "page": 446,
+      "where": "Première phrase après le diagramme",
+      "scan": "car S' est plat sur S",
+      "tex": "car $S\\sisi{'}{''}$ est\nplat sur $S$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "car $S''$ est plat sur $S$",
+      "note": "La justification de la flèche verticale doit invoquer la platitude de S''. Le TeX corrige la prime avec \\sisi."
+    },
+    {
+      "page": 446,
+      "where": "Paragraphe « Traduisant »",
+      "scan": "Traduisant en terme d'anneaux",
+      "tex": "Traduisant en terme d'anneaux",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Traduisant en termes d'anneaux",
+      "note": "Il manque le s de « termes ». Le TeX conserve la coquille."
+    },
+    {
+      "page": 446,
+      "where": "6.3.16, première phrase",
+      "scan": "un morphisme quasi-fini plat de présentation finie",
+      "tex": "un morphisme \\sisi{séparé }{}quasi-fini plat de présentation finie",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\sisi{séparé }{}",
+        "new": ""
+      },
+      "note": "Le mot « séparé » ne figure pas dans l'imprimé ; le premier argument de \\sisi lui attribue une lecture inexistante."
+    },
+    {
+      "page": 446,
+      "where": "6.3.16, définition de l'image directe à support propre",
+      "scan": "f_{!}T",
+      "tex": "f_{!}\\sisi{T}{ℱ}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f_{!}ℱ",
+      "note": "T désigne le schéma, non le faisceau dont on prend l'image directe. Le TeX corrige cette coquille avec \\sisi."
+    },
+    {
+      "page": 446,
+      "where": "6.3.16, référence après « limite inductive locale »",
+      "scan": "(IV 14.    )",
+      "tex": "\\sisi{IV 14.\\quad}{\\hyperrefext[V][V.subsec8.2]{8.2}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperrefext[V][V.subsec8.2]{8.2}",
+      "note": "La référence imprimée est erronée et incomplète. Le TeX la corrige avec \\sisi."
+    },
+    {
+      "page": 447,
+      "where": "Première phrase",
+      "scan": "les propriétés de f_{!} se ramène",
+      "tex": "les\npropriétés de $f_{!}$ se ramène",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "les propriétés de $f_{!}$ se ramènent",
+      "note": "Le verbe doit être au pluriel. Le TeX conserve la coquille."
+    },
+    {
+      "page": 447,
+      "where": "Proposition 6.3.17 (ii), fin",
+      "scan": "mutadis mutandis",
+      "tex": "mutadis mutandis",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "mutatis mutandis",
+      "note": "Le premier mot de la locution latine est mal orthographié. Le TeX conserve la coquille."
+    },
+    {
+      "page": 448,
+      "where": "Phrase précédant le diagramme (6.3.17.1)",
+      "scan": "entre les morphisme traces",
+      "tex": "entre les morphisme traces",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "entre les morphismes traces",
+      "note": "Il manque le s de « morphismes ». Le TeX conserve la coquille."
+    },
+    {
+      "page": 448,
+      "where": "Diagramme (6.3.17.1), première flèche horizontale",
+      "scan": "f_{!}ch",
+      "tex": "f_{!}c",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "^{f_{!}c}",
+        "new": "^{f_{!}\\mathrm{ch}}"
+      },
+      "note": "Les deux scans portent les deux lettres « ch » dans cette étiquette, bien que le morphisme soit nommé c dans le texte précédent."
+    },
+    {
+      "page": 448,
+      "where": "Fin du paragraphe « En termes plus concrets »",
+      "scan": "\\Tr_f(u_1) (au sens 6.2.17)",
+      "tex": "$\\Tr_{f}(u_{1})$ (au sens 6.2.17)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Tr_f(u_1)\\text{ (au sens }6.3.17\\text{)}",
+      "note": "Il s'agit de la trace de 6.3.17, comme l'indique aussi le diagramme. Le TeX conserve le mauvais numéro imprimé."
+    },
+    {
+      "page": 448,
+      "where": "Exemple 6.3.18, fin du display définissant Sym(u)",
+      "scan": "\\Spec(S[\\sigma_1\\ldots\\sigma_n]",
+      "tex": "\\sigma_{n}]\\sisi{)}{\\quoi}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Spec(S[\\sigma_{1}\\ldots\\sigma_{n}])",
+      "note": "La parenthèse fermante de Spec( manque dans l'imprimé. Le premier argument de \\sisi la fournit, mais le second la supprime : le rendu du TeX conserve donc l'omission imprimée."
+    },
+    {
+      "page": 449,
+      "where": "Après « l'élément canonique »",
+      "scan": "(6.3.4.3)",
+      "tex": "\\sisi{(6.3.4.3)}{\\eqhyperref[XVII.eq6.3.4.2]{6.3.4.2}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\eqhyperref[XVII.eq6.3.4.2]{6.3.4.2}",
+      "note": "Le numéro de la formule définissant l'élément canonique est erroné dans l'imprimé. Le TeX le corrige avec \\sisi."
+    },
+    {
+      "page": 449,
+      "where": "Après les deux applications trace",
+      "scan": "la trace et la norme usuels",
+      "tex": "la \\emph{trace} et la \\emph{norme} usuel\\sisi{}{le}s",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "la \\emph{trace} et la \\emph{norme} usuelles",
+      "note": "L'adjectif doit être au féminin pluriel. Le TeX corrige l'accord avec \\sisi."
+    },
+    {
+      "page": 450,
+      "where": "Proposition 6.3.19 (ii), second membre de la formule",
+      "scan": "\\Tr_{(u_{\\ast}E)/S}(G)",
+      "tex": "\\Tr_{(u\\sisi{_{\\ast}}{^\\ast}E)/S}(\\sisi{G}{g})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Tr_{(u^{\\ast}E)/S}(g)",
+      "note": "E doit être tiré en arrière par u, et l'argument est la section g, non le faisceau G. Le TeX corrige les deux coquilles avec \\sisi."
+    },
+    {
+      "page": 450,
+      "where": "Preuve (i), terme σ(D)* (u* g_n)",
+      "scan": "\\sigma(D)^{\\ast}(u^{\\ast}g_n)",
+      "tex": "\\sigma(D)^{\\ast}(\\sisi{u}{\\Sym^n_S(u)}^{\\ast}g_{n})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\sigma(D)^{\\ast}(\\Sym^{n}_{S}(u)^{\\ast}g_{n})",
+      "note": "Comme g_n est défini sur Sym^n_S(Y), son pullback utilise Sym^n_S(u), non u. Le TeX corrige avec \\sisi."
+    },
+    {
+      "page": 450,
+      "where": "Preuve (i), terme suivant dans la chaîne d'égalités",
+      "scan": "u\\circ\\sigma(D)^{\\ast}(g_n)",
+      "tex": "\\sisi{u}{(\\Sym^n_S(u)}\\circ\n\\sigma(D))^\\ast\n(g_{n})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\Sym^{n}_{S}(u)\\circ\\sigma(D))^{\\ast}(g_{n})",
+      "note": "L'imprimé écrit u devant le pullback par σ(D), au lieu du pullback par le composé. Le TeX corrige ce terme avec \\sisi ; la parenthèse superflue dans A est signalée séparément."
+    },
+    {
+      "page": 450,
+      "where": "Preuve (i), parenthèse après σ(D) dans le même terme",
+      "scan": "\\sigma(D)^{\\ast}",
+      "tex": "\\sigma(D))^\\ast",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\sigma(D))^\\ast",
+        "new": "\\sigma(D)\\sisi{}{)}^\\ast"
+      },
+      "note": "La seconde parenthèse fermante n'est pas imprimée. Elle appartient à la correction B et doit être conditionnelle pour ne pas apparaître dans la lecture A."
+    },
+    {
+      "page": 450,
+      "where": "Preuve (i), dernier terme de la chaîne d'égalités",
+      "scan": "\\Tr_{u_{\\ast}D}(g_n)",
+      "tex": "\\Tr_{u_{\\ast}D}(g_{n})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Tr_{u_{\\ast}D}(g)",
+      "note": "La trace du diviseur s'applique à la section g sur Y, non à g_n sur la puissance symétrique. Le TeX conserve l'indice n imprimé."
+    }
+  ],
+  "coordinator": "446 : 1/5 ; 447 : 0/2 ; 448 : 1/3 ; 449 : 0/2 ; 450 : 1/4 (normal/misprint)."
+}

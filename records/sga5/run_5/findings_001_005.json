@@ -1,0 +1,164 @@
+[
+ {
+  "page": 1,
+  "where": "top of the page: the exposé heading above the title",
+  "scan": "The page begins with 'Exposé I' (letter-spaced, dashed underline), then the title COMPLEXES DUALISANTS.",
+  "tex": "'\\begin{center}' and '{\\Large \\textbf{SGA 5 --- Exposé I}}\\\\[0.4em]' (s5.tex lines 307-308) stand above the folio-1 marker (line 309), so they are not in page_001.tex.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 1 really begins at s5.tex line 307 '\\begin{center}'. Exact fix: move the folio-1 marker line from line 309 to just before line 307 (python -I move_marker.py 5 1 \"\\begin{center}\" --before). Text not moved. As the file stands, the heading lies before the first marker and belongs to no checked page. Once it is under the marker it still differs from the print: the print has only 'Exposé I', no 'SGA 5 --- ' (edit then '{\\Large \\textbf{SGA 5 --- Exposé I}}' -> '{\\Large \\textbf{Exposé I}}')."
+ },
+ {
+  "page": 1,
+  "where": "author line under the title",
+  "scan": "par A. GROTHENDIECK (surname in capitals)",
+  "tex": "par A.~Grothendieck",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "A.~Grothendieck",
+   "new": "A.~GROTHENDIECK"
+  },
+  "note": "Capital against small letters; the next line has the same (see next finding)."
+ },
+ {
+  "page": 1,
+  "where": "line under the author line",
+  "scan": "(rédaction de L. ILLUSIE) (surname in capitals)",
+  "tex": "(rédaction de L.~Illusie)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "L.~Illusie",
+   "new": "L.~ILLUSIE"
+  },
+  "note": ""
+ },
+ {
+  "page": 3,
+  "where": "Définition 1.1, 'On dit qu'un A_X-Module I est quasi-injectif si l'on a'",
+  "scan": "quasi-injectif is not underlined (only 'Définition 1.1' and, two lines below, 'constructible' are)",
+  "tex": "est \\emph{quasi-injectif} si l'on a",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{quasi-injectif}",
+   "new": "quasi-injectif"
+  },
+  "note": "No trace of an underline under the word, while the underlines of the heading and of 'constructible' are crisp."
+ },
+ {
+  "page": 4,
+  "where": "top of the page: display (*) and 'définie par la'",
+  "scan": "p. 4 begins with the display '(*)  0 -> A_X --ε--> f_*f^*A_X -> F -> 0', then 'définie par la flèche d'adjonction ε.'; p. 3 ends with 'Considérons la suite exacte'.",
+  "tex": "The display (*) and 'définie par la' (s5.tex lines 347-350) stand at the end of page_003.tex; the folio-4 marker (line 351) sits between 'définie par la' and 'flèche d'adjonction'.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 4 really begins at s5.tex line 347 '\\[' (the display (*)). Exact fix: move the folio-4 marker line from line 351 to just before line 347 (python -I move_marker.py 5 4 \"\\[\" --before). Text not moved; the display and 'définie par la' agree with the print of p. 4."
+ },
+ {
+  "page": 4,
+  "where": "heading of Proposition 1.3, reference in parentheses",
+  "scan": "(Cf. [H] 1.7.6) with a capital C",
+  "tex": "(cf.~[H]~1.7.6)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "(cf.~[H]~1.7.6)",
+   "new": "(Cf.~[H]~1.7.6)"
+  },
+  "note": "Capital against small letter."
+ },
+ {
+  "page": 4,
+  "where": "heading of Proposition 1.3, '(Cf. [H] 1.7.6)'",
+  "scan": "1.7.6 with the digit 1 (the same digit as in '1.3'); p. 3 writes '[H] II.7.17' with letters",
+  "tex": "[H]~1.7.6",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "[H]~I.7.6",
+  "note": "Hartshorne's Residues and Duality numbers its chapters in roman numerals; the equivalent conditions for injective dimension are I.7.6. The TeX keeps the printed '1.7.6'. p. 6 prints the same '[H] 1.7.6' (s5.tex line 406): correct both or neither in the corrected edition. Only a digit for a roman numeral, so optional."
+ },
+ {
+  "page": 4,
+  "where": "start of the proof of 1.3, 'Preuve : (i) => (ii) Soient F ...'",
+  "scan": "(i) => (ii)  Soient : no full stop after (ii)",
+  "tex": "$(i) \\Rightarrow (ii)$. Soient",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$(i) \\Rightarrow (ii)$. Soient",
+   "new": "$(i) \\Rightarrow (ii)$ Soient"
+  },
+  "note": "The two later steps, '(ii) => (iii) est trivial' and '(iii) => (i) On peut', are likewise printed without a stop. The print's 'Preuve :' written \\emph{Preuve.} is a convention of the whole transcription and is left to the global pass."
+ },
+ {
+  "page": 4,
+  "where": "display of the spectral sequence in the proof of (i) => (ii)",
+  "scan": "E_2^{pq} = Ext^p(H^{-q}(F),I)  =  Ext^*(F,I) . : the second sign is a plain typed '=' with no arrowhead and no trace of one",
+  "tex": "\\E_2^{pq} = \\underline{\\Ext}^p(\\H^{-q}(F),I) \\Rightarrow \\underline{\\Ext}^{*}(F,I).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Rightarrow \\underline{\\Ext}^{*}(F,I)",
+   "new": "= \\underline{\\Ext}^{*}(F,I)"
+  },
+  "corrected": "\\Rightarrow \\underline{\\Ext}^{*}(F,I)",
+  "note": "The spectral sequence abuts to Ext^*(F,I); the typed double arrow of '(i) => (ii)' on the same page has its head, this sign has none. The TeX silently corrects it; the fix restores the printed '='."
+ },
+ {
+  "page": 5,
+  "where": "Définition 1.4, 'On appellera dimension quasi-injective de K'",
+  "scan": "the underline runs under 'dimension quasi-injective de', 'de' included",
+  "tex": "\\emph{dimension quasi-injective} de $K$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{dimension quasi-injective} de",
+   "new": "\\emph{dimension quasi-injective de}"
+  },
+  "note": ""
+ },
+ {
+  "page": 5,
+  "where": "after Définition 1.4, 'le foncteur R Hom( ,K) : D(X) -> D(X)'",
+  "scan": "double-struck R (doubled stem, typed like the R of '(dans R-bar)' two lines above)",
+  "tex": "$\\R\\,\\underline{\\Hom}(\\quad,K)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R\\,\\underline{\\Hom}(\\quad,K)",
+   "new": "\\mathbb{R}\\,\\underline{\\Hom}(\\quad,K)"
+  },
+  "note": "The TeX writes the derived-functor R as roman \\R everywhere; the print has a plain R on p. 2 (F' = R Hom(F,K_X)) but a double-struck R here."
+ },
+ {
+  "page": 5,
+  "where": "Proposition 1.5, 'tel que cd_L(X) <= N'",
+  "scan": "subscript of cd is a double-struck L (doubled stem with a foot), the set named in the next line",
+  "tex": "$\\cd_{\\mathbf{n}}(X) \\leqslant N$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cd_{\\mathbf{n}}(X)",
+   "new": "\\cd_{\\mathbb{L}}(X)"
+  },
+  "note": "Apply together with the next finding (same set of primes). The TeX's bold n misreads the double-struck L."
+ },
+ {
+  "page": 5,
+  "where": "Proposition 1.5, 'où L est l'ensemble des diviseurs premiers de n'",
+  "scan": "où [double-struck L] est l'ensemble des diviseurs premiers de n",
+  "tex": "où $\\mathbf{n}$ est l'ensemble",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "où $\\mathbf{n}$ est",
+   "new": "où $\\mathbb{L}$ est"
+  },
+  "note": "Apply together with the previous finding. The n after 'premiers de' is an ordinary (overtyped) n and stays $n$. The TeX writes \\mathbf{n} for this set also at s5.tex lines 412, 757, 759 and 849 (later pages)."
+ }
+]

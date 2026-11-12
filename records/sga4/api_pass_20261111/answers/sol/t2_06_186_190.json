@@ -1,0 +1,141 @@
+[
+ {
+  "page": 186,
+  "where": "Opening of the page, before « Supposons »",
+  "scan": "(i) Nécessité. Supposons",
+  "tex": "Supposons\\pageoriginale",
+  "kind": "marker",
+  "confidence": "medium",
+  "fix": null,
+  "note": "The printed page begins with the item label and « Nécessité. », absent from the supplied cut. Check the source lines immediately before line 777 and include this opening in the p. 186 slice; do not insert a duplicate heading."
+ },
+ {
+  "page": 186,
+  "where": "First displayed formula, lower bound of the limit",
+  "scan": "\\mathop{\\lim}_{j\\geq i}",
+  "tex": "\\mathop{\\lim}_{j\\geq l}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathop{\\lim}_{j\\geq l}",
+   "new": "\\mathop{\\lim}_{j\\geq i}"
+  },
+  "note": "The printed index is i, not l."
+ },
+ {
+  "page": 187,
+  "where": "Last sentence of the proof of (ii)",
+  "scan": "après composition avec les $Y_j \\to X$",
+  "tex": "après composition avec les $Y_j \\to X$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "après composition avec les $X_{\\alpha} \\to X$",
+  "note": "The covering maps used to test equality are X_alpha → X, not Y_j → X. The TeX keeps the printed misprint."
+ },
+ {
+  "page": 188,
+  "where": "Opening of Corollaire 1.24",
+  "scan": "Soient $E$ un topos, et soit $C$",
+  "tex": "Soient\\pageoriginale $E$ un topos, et soit $C$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Soit $E$ un topos, et soit $C$",
+  "note": "The singular subject E requires « Soit »; the following clause already has its own « et soit C ». The TeX keeps the printed plural."
+ },
+ {
+  "page": 188,
+  "where": "Corollaire 1.24, sentence introducing (1.24.1)",
+  "scan": "$𝒰$-limites inductives filtrantes sont représentables",
+  "tex": "$𝒰$-limites inductives sont représentables",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "$𝒰$-limites inductives sont représentables",
+   "new": "$𝒰$-limites inductives filtrantes sont représentables"
+  },
+  "note": "The word « filtrantes » is missing."
+ },
+ {
+  "page": 188,
+  "where": "Proof of Corollaire 1.24, last sentence on the page",
+  "scan": "l'inclusion composée $C \\supset E_{PF}$",
+  "tex": "l'inclusion composée $C \\supset E_{PF}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "l'inclusion composée $C \\subset E_{PF}$",
+  "note": "The composite of the two displayed inclusions is C ⊂ E_PF, not the reverse inclusion. The TeX keeps the printed sign."
+ },
+ {
+  "page": 190,
+  "where": "Proof of Corollaire 1.24.2 b), after R = lim R_i",
+  "scan": "limite inductive filtrante avec les $R_i$ dans $E_{PF}$, donc $X_0$ est limite inductive filtrante des $\\Coker(R_i \\rightrightarrows X_0) = X_i$",
+  "tex": "limite inductive filtrante des coker\n$(R_i \\rightrightarrows X_0) = X_i$",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "des coker\n$(R_i \\rightrightarrows X_0) = X_i$",
+   "new": "avec les $R_i$\ndans $E_{PF}$, donc $X_0$ est limite inductive filtrante des\n$\\Coker (R_i \\rightrightarrows X_0) = X_i$"
+  },
+  "note": "A whole clause is omitted, making the TeX describe R itself as the limit of the cokernels. The insertion reproduces the printed X_0; that printed misprint is reported separately."
+ },
+ {
+  "page": 190,
+  "where": "Omitted clause beginning « donc X_0 est limite »",
+  "scan": "donc $X_0$ est limite inductive filtrante",
+  "tex": "limite inductive filtrante des coker",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "donc $X$ est limite inductive filtrante",
+  "note": "It is X, the cokernel of R ⇉ X_0, that is the filtered colimit of these cokernels, not X_0. The TeX neither keeps nor corrects this particular misprint: it omits the entire clause."
+ },
+ {
+  "page": 190,
+  "where": "Definition of the quotients Coker(R_i ⇉ X_0)",
+  "scan": "$\\Coker(R_i \\rightrightarrows X_0) = X_i$",
+  "tex": "coker\n$(R_i \\rightrightarrows X_0) = X_i$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\Coker (R_i \\rightrightarrows X_0) = X'_i$",
+  "note": "The print inconsistently uses X_i here but X'_i throughout the ensuing construction of u_i, v and w. The TeX preserves this inconsistency. The correction follows the primed notation used in that construction."
+ },
+ {
+  "page": 190,
+  "where": "Choice of a coherent covering object for R_i",
+  "scan": "on le couvre par $X_1 \\to R_i$ avec $X_i$ cohérent",
+  "tex": "on le couvre par $X_{1} \\to R_i$ avec $X_i$\ncohérent",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "on le couvre par $X_1 \\to R_i$ avec $X_1$ cohérent",
+  "note": "The coherent covering object just introduced is X_1; the following index i is a printed misprint kept by the TeX."
+ },
+ {
+  "page": 190,
+  "where": "Conclusion of the proof of b), beginning « d'où X_i »",
+  "scan": "$X_i \\simeq \\Coker(X_1 \\rightrightarrows X_0)$",
+  "tex": "$X_i \\simeq \\Coker (X_1 \\rightrightarrows X_0)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$X'_i \\simeq \\Coker (X_1 \\rightrightarrows X_0)$",
+  "note": "As at the definition of the quotients, the print returns to unprimed X_i after using X'_i throughout the retraction argument. The TeX keeps this inconsistent notation; the correction follows the intervening primed notation."
+ },
+ {
+  "page": 190,
+  "where": "Corollaire 1.25, final displayed formula",
+  "scan": "\\varphi : \\Ind(C) \\to E",
+  "tex": "\\varphi : \\Ind(c) \\to E",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ind(c)",
+   "new": "\\Ind(C)"
+  },
+  "note": "The print has capital C, the subcategory introduced in the statement."
+ }
+]

@@ -1,0 +1,130 @@
+{
+  "findings": [
+    {
+      "page": 441,
+      "where": "Premier paragraphe, « où … est une telle indéterminée »",
+      "scan": "$j$",
+      "tex": "$\\sisi{j}{T}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$T$",
+      "note": "L'indéterminée est T, non j. Le TeX corrige cette coquille de l'imprimé avec \\sisi."
+    },
+    {
+      "page": 442,
+      "where": "Formule après « On sait qu'on a », première norme",
+      "scan": "\\det u'=N_{X'/X}\\det u",
+      "tex": "\\det u'=N_{\\sisi{X'/X}{X/X'}}\\det u",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\det u'=N_{X/X'}\\det u",
+      "note": "L'indice de la norme est inversé dans l'imprimé : p va de X vers X'. Le TeX le corrige avec \\sisi."
+    },
+    {
+      "page": 442,
+      "where": "Même formule, norme dans l'expression de Q'",
+      "scan": "Q'=\\Coker N_{X'/X}(\\det u)",
+      "tex": "Q'=\\Coker\nN_{\\sisi{X'/X}{X/X'}}(\\det u)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Q'=\\Coker N_{X/X'}(\\det u)",
+      "note": "Seconde occurrence de l'indice de norme inversé. Le TeX la corrige avec \\sisi."
+    },
+    {
+      "page": 442,
+      "where": "Égalité après « On a trivialement », second membre",
+      "scan": "{\\det}_{S}(\\varphi',P)",
+      "tex": "{\\det}_{S}(\\varphi',P\\sisi{}{'})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "{\\det}_{S}(\\varphi',P')",
+      "note": "La prime de P' manque dans l'imprimé. Le TeX l'ajoute avec \\sisi."
+    },
+    {
+      "page": 442,
+      "where": "Dernier paragraphe, « la validité de celle-ci… »",
+      "scan": "celle-ci ne dépend que",
+      "tex": "celle-ci dépend que",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "celle-ci dépend que",
+        "new": "celle-ci ne dépend que"
+      },
+      "note": "Le mot « ne » a été omis dans la transcription."
+    },
+    {
+      "page": 442,
+      "where": "Dernier paragraphe, réduction au cas M = O_X",
+      "scan": "et $\\varphi$ par $\\det u$",
+      "tex": "et $\\varphi$ par $\\det u$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "et $u$ par $\\det u$",
+      "note": "C'est l'endomorphisme u qui doit être remplacé par det u, non la fonction φ. Le TeX conserve cette coquille de l'imprimé."
+    },
+    {
+      "page": 444,
+      "where": "Définition de t, renvoi après « la section »",
+      "scan": "(6.3.4.3)",
+      "tex": "\\sisi{(6.3.4.3)}{\\eqhyperref[XVII.eq6.3.4.2]{6.3.4.2}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(6.3.4.2)",
+      "note": "Le renvoi imprimé est erroné. Le TeX le corrige avec \\sisi."
+    },
+    {
+      "page": 444,
+      "where": "Après « est un élément symétrique de »",
+      "scan": "G(T/S)^{n})",
+      "tex": "$G\\sisi{}{(}(T/S)^{n}$)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "G((T/S)^{n})",
+      "note": "Une parenthèse ouvrante manque après G dans l'imprimé. Le TeX l'ajoute avec \\sisi."
+    },
+    {
+      "page": 444,
+      "where": "Formule définissant u_n",
+      "scan": "u_{n}\\in \\Sym^{n}_{S}(T)",
+      "tex": "u_{n}\\in \\sisi{}{G(}\\Sym^{n}_{S}(T)\\sisi{}{)}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "u_{n}\\in G(\\Sym^{n}_{S}(T))",
+      "note": "G et ses parenthèses manquent dans l'imprimé : u_n est une section de G sur la puissance symétrique. Le TeX corrige avec \\sisi."
+    },
+    {
+      "page": 445,
+      "where": "Première phrase de la démonstration",
+      "scan": "(iii) est conséquence",
+      "tex": "(iii) et conséquence",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "(iii) et conséquence",
+        "new": "(iii) est conséquence"
+      },
+      "note": "L'imprimé porte le verbe « est », non « et »."
+    },
+    {
+      "page": 445,
+      "where": "Après f = gh, noms des morphismes de rangs constants",
+      "scan": "avec $f$ et $g$ finis localement libres de rangs constants $n$ et $m$",
+      "tex": "avec $\\sisi{f}{g}$ et $\\sisi{g}{h}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "avec $g$ et $h$ finis localement libres de rangs constants $n$ et $m$",
+      "note": "Les deux morphismes composés sont g et h. L'imprimé porte f et g ; le TeX corrige leurs noms avec \\sisi."
+    }
+  ],
+  "coordinator": "Comptes (normal/misprint) : 441 : 0/1 ; 442 : 1/4 ; 443 : 0/0 ; 444 : 0/3 ; 445 : 1/1."
+}

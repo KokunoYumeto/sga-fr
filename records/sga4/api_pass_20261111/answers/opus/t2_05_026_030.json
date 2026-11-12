@@ -1,0 +1,180 @@
+[
+ {
+  "page": 26,
+  "where": "Proposition 3.1, first line",
+  "scan": "V un univers contenant U",
+  "tex": "$𝒱$ univers contenant",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "$𝒱$ univers contenant",
+   "new": "$𝒱$ un univers contenant"
+  },
+  "note": "The article 'un' is missing."
+ },
+ {
+  "page": 26,
+  "where": "proof of 3.1, isomorphism Hom",
+  "scan": "Hom_{C^_{A,V}}(N, ℋ°(M))",
+  "tex": "\\Hom_{C^{}\\wedge_{A, 𝒱}}",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\Hom_{C^{}\\wedge_{A, 𝒱}}",
+   "new": "\\Hom_{C^{\\wedge}_{A, 𝒱}}"
+  },
+  "note": "In the TeX the hat is not an exponent of C: it prints C∧ on the line instead of Ĉ."
+ },
+ {
+  "page": 26,
+  "where": "Theorem 3.2, parenthetical remark",
+  "scan": "le terme H^p(R,ℋ^q(M)) doit être",
+  "tex": "(M))$) doit",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(M))$) doit",
+   "new": "(M))$ doit"
+  },
+  "note": "The TeX has an extra closing parenthesis after the formula."
+ },
+ {
+  "page": 26,
+  "where": "Theorem 3.2, parenthetical remark",
+  "scan": "dans le topos C^_V où V est un univers (V underlined)",
+  "tex": "$C^{\\wedge}_V$ où $V$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "$C^{\\wedge}_V$ où $V$",
+   "new": "$C^{\\wedge}_{𝒱}$ où $𝒱$"
+  },
+  "note": "The universe is the underlined V, which the TeX writes 𝒱 everywhere else (it is also 𝒱 in the same sentence)."
+ },
+ {
+  "page": 26,
+  "where": "proof of 3.2",
+  "scan": "« faisceau associé »",
+  "tex": "« faisceau associe »",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "faisceau associe »",
+   "new": "faisceau associé »"
+  },
+  "note": "The accent is missing."
+ },
+ {
+  "page": 27,
+  "where": "(3.4.3), (3.4.4)",
+  "scan": "Φ^q(M) : ℋ^q(M) → ℋ^q(M) ; Φ^q_X(M) : H^q(X,M) → H^q(X,M)",
+  "tex": "\\Hh^q(M) \\to \\Hh^q(M) ; H^q (X, M) \\to H^q (X, M)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\check{\\Hh}^q(M) \\to \\Hh^q(M)\\ ;\\ \\check{H}^q(X, M) \\to H^q(X, M)",
+  "note": "The print has no check accent on the source of the edge morphisms, which should be Čech cohomology. The TeX keeps the printed reading."
+ },
+ {
+  "page": 27,
+  "where": "Corollary 3.4, end",
+  "scan": "lorsque q égale 0 ou 1",
+  "tex": "$q$ égale $0$ où $1$",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "égale $0$ où $1$",
+   "new": "égale $0$ ou $1$"
+  },
+  "note": "'où' should be 'ou'."
+ },
+ {
+  "page": 27,
+  "where": "proof of 3.4, last lines",
+  "scan": "Par suite Ȟ°ℋ^q(M) est un préfaisceau séparé dont le faisceau associé est nul. On a donc Ȟ°ℋ^q(M) = 0 pour q > 0 (II 3.2).",
+  "tex": "Par suite $\\check{\\Hh}^{0} \\check{\\Hh}^{q} (M) = 0$",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "Par suite $\\check{\\Hh}^{0} \\check{\\Hh}^{q} (M) = 0$",
+   "new": "Par suite $\\check{\\Hh}^{0} \\Hh^{q} (M)$ est un préfaisceau séparé dont le faisceau associé est nul. On a donc $\\check{\\Hh}^{0} \\Hh^{q} (M) = 0$"
+  },
+  "note": "A sentence is dropped. In the print the second factor is ℋ^q, without a check."
+ },
+ {
+  "page": 27,
+  "where": "Corollary 3.5, first line",
+  "scan": "M un A-Module",
+  "tex": "un $A$-module (à gauche",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "un $A$-module (à gauche",
+   "new": "un $A$-Module (à gauche"
+  },
+  "note": "The print has 'Module' with a capital M."
+ },
+ {
+  "page": 28,
+  "where": "Exercise 3.6, 1)",
+  "scan": "est canoniquement équivalent au topos (IV 2.5)",
+  "tex": "équivalent su topos",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "su topos",
+   "new": "au topos"
+  },
+  "note": "'su' should be 'au'."
+ },
+ {
+  "page": 29,
+  "where": "Exercise 3.6, 3)",
+  "scan": "correspondante des espaces classifiants utilisés en topologie lorsque pour les espaces topologiques du type G×G× ... ×G",
+  "tex": "correspondante des type",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "correspondante des type",
+   "new": "correspondante des espaces classifiants utilisés en topologie lorsque pour les espaces topologiques du type"
+  },
+  "note": "A whole printed line is lost."
+ },
+ {
+  "page": 30,
+  "where": "Corollary 4.5 ii)",
+  "scan": "𝔛 = (X_i → X)_{i∈I}",
+  "tex": "$𝒳 \\mathfrak{X} =",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "$𝒳 \\mathfrak{X} =",
+   "new": "$𝒳 ="
+  },
+  "note": "The TeX prints the letter twice. The print has a single letter, written 𝒳 in the next formula."
+ },
+ {
+  "page": 30,
+  "where": "proof of 4.5",
+  "scan": "l'équivalence i) ⟺ ii) de 4.2",
+  "tex": "\\hyperref[V.subsec4.2]{4.2}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "4.3",
+  "note": "The equivalence i) ⟺ ii) is that of Proposition 4.3. The TeX keeps the printed 4.2."
+ },
+ {
+  "page": 30,
+  "where": "4.6",
+  "scan": "pour toute famille topologiquement génératrice S",
+  "tex": "pour tout famille",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "pour tout famille",
+   "new": "pour toute famille"
+  },
+  "note": "'tout' should be 'toute'."
+ }
+]

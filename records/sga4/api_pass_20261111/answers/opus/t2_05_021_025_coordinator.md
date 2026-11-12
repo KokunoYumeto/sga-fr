@@ -1,0 +1,1 @@
+p21: 3/3, p22: 2/4, p23: 3/1, p24: 2/1, p25: 1/1. Convention: the print underlines ES in the presheaf ES(C) and in Z_{ES(C)} (e.g. c) 'préfaisceau semi-simplicial ES(C)', 'Z_{ES(C)} le préfaisceau', d) 'Hom(Z_{ES(C)},M)'), telling it from the simplicial set ES(C) of a); the TeX sets it plain throughout. Only one occurrence is reported.

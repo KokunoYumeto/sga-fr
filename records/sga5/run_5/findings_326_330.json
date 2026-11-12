@@ -1,0 +1,707 @@
+[
+ {
+  "page": 326,
+  "where": "top of the page: the diagram",
+  "scan": "p. 326 begins with the whole diagram (first row H^p(Y,(L|Y)(-1)) --Gysin--> H^{p+2}(X,L)); p. 325 ends with '... diagramme suivant, avec p <= n-1 .'",
+  "tex": "'\\[', '\\begin{array}{ccc}' and 'H^p(Y,(L|Y)(-1))&' end page_325.tex; the folio-326 marker stands inside the array, before '\\xrightarrow{\\mathrm{Gysin}}&H^{p+2}(X,L)\\\\'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 326 really begins at the '\\[' that opens the diagram (the line after '... avec $p\\le n-1$:'; diplomatic s5.tex line 11006, current 11002, at the time of the check; the marker stands at 11009 and 11005). Exact fix: python -I move_marker.py 5 326 '\\[' --before (simulated in memory on both layers: the marker then stands on its own line between '... avec $p\\le n-1$:' and '\\[', and the array is whole on p. 326). The anchor is the last '\\[' above the marker, so run the command once only (not again if batch 321-325 reports the same move). Text not moved."
+ },
+ {
+  "page": 326,
+  "where": "diagram, end of the bottom row",
+  "scan": "H^{2n-p}(X,L(n-1-p)) with no stop",
+  "tex": "H^{2n-p}(X,L(n-1-p)).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "H^{2n-p}(X,L(n-1-p)).",
+   "new": "H^{2n-p}(X,L(n-1-p))"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 326,
+  "where": "last paragraph, the reference to Kleiman",
+  "scan": "'... l'exposé de Kleiman (Algebraic cycles and the Weil conjectures, in \"Dix exposés ...' (title not underlined, opening straight quote)",
+  "tex": "'Kleiman, \\emph{Algebraic cycles and the Weil conjectures}, dans «Dix'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "Kleiman, \\emph{Algebraic cycles and the Weil conjectures}, dans «Dix",
+   "new": "Kleiman (Algebraic cycles and the Weil conjectures, in ``Dix"
+  },
+  "note": "One edit for four differences: the print's parenthesis for the TeX's comma (punctuation), no underline on the English title (the TeX adds \\emph), 'in' for 'dans' (word), and the straight quote, written ``, for the guillemet (as the applied fixes of pp. 110, 183, 249). The parenthesis closes after the title: next items but one."
+ },
+ {
+  "page": 326,
+  "where": "last paragraph, 'cohomologie de schémas'",
+  "scan": "'\"Dix exposés sur la cohomologie de schémas .).'",
+  "tex": "'cohomologie des schémas'",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "cohomologie des",
+   "new": "cohomologie de"
+  },
+  "corrected": "cohomologie des",
+  "note": "The book is 'Dix exposés sur la cohomologie des schémas'; the TeX silently corrects the typist's 'de'."
+ },
+ {
+  "page": 326,
+  "where": "last paragraph, end of the reference",
+  "scan": "'... de schémas .).' (closing parenthesis, then the final stop; no closing quote: next item)",
+  "tex": "'schémas».' (guillemet, no parenthesis)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "schémas».",
+   "new": "schémas'')."
+  },
+  "note": "The TeX drops the print's closing parenthesis (it turns the parenthesis into commas, previous items but one); the edit also writes the closing quote in the file's form ''. This is the correct reading; the print's own reading of the quote is the next item. Apply this item before the next one."
+ },
+ {
+  "page": 326,
+  "where": "last paragraph, end of the reference",
+  "scan": "'schémas .).': the closing quote is missing; a full stop stands in its place",
+  "tex": "'schémas»' (the TeX supplies a closing quote and has no stray stop)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "schémas'')",
+   "new": "schémas .)"
+  },
+  "corrected": "schémas'')",
+  "note": "Typing error: a full stop for the closing quote; the TeX silently corrects it. 'old' is taken from the text after the previous item (as instructed for overlapping fixes): apply that item first; this 'old' then occurs exactly once."
+ },
+ {
+  "page": 327,
+  "where": "section title 8",
+  "scan": "'8. VARIETES ECLATEES' (capitals, underlined, no stop)",
+  "tex": "\\section*{8. Variétés éclatées}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{8. Variétés éclatées}",
+   "new": "\\section*{8. VARIÉTÉS ÉCLATÉES}"
+  },
+  "note": "Capitals as printed, as the logged '3. CLASSES DE CHERN' (p. 290) and '1. FIBRES VECTORIELS' (p. 282); accented capitals as the volume's rule. The print has no stop after the title."
+ },
+ {
+  "page": 327,
+  "where": "first paragraph, 'le \"groupe des classes de cycles\"'",
+  "scan": "straight typewriter quotes",
+  "tex": "«groupe des classes de cycles»",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "«groupe des classes de cycles»",
+   "new": "``groupe des classes de cycles''"
+  },
+  "note": "Guillemets for the print's straight quotes; the accepted forms are ``...'' and \"...\" (as the applied fixes of pp. 110, 183, 249)."
+ },
+ {
+  "page": 327,
+  "where": "first paragraph, 'le morphisme \"classe fondamentale\"'",
+  "scan": "straight typewriter quotes",
+  "tex": "«classe fondamentale»",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "«classe fondamentale»",
+   "new": "``classe fondamentale''"
+  },
+  "note": "Guillemets for the print's straight quotes."
+ },
+ {
+  "page": 327,
+  "where": "Théorème 8.1, 'Le morphisme de D+(X,A)'",
+  "scan": "'Le morphisme de' underlined",
+  "tex": "Le morphisme de $D^+(X,A)$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Le morphisme de $D^+(X,A)$",
+   "new": "\\emph{Le morphisme de} $D^+(X,A)$"
+  },
+  "note": "Exposé VII: the TeX has no underline markup for statements; \\emph is the file's command here (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 327,
+  "where": "Théorème 8.1, 'défini par la matrice'",
+  "scan": "underlined",
+  "tex": "défini par la matrice",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "défini par la matrice",
+   "new": "\\emph{défini par la matrice}"
+  },
+  "note": ""
+ },
+ {
+  "page": 327,
+  "where": "Théorème 8.1, 'est un isomorphisme.'",
+  "scan": "underlined (the stop not)",
+  "tex": "est un isomorphisme.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est un isomorphisme.\n\\end{statement}",
+   "new": "\\emph{est un isomorphisme}.\n\\end{statement}"
+  },
+  "note": ""
+ },
+ {
+  "page": 327,
+  "where": "proof of 8.1, 'au-dessus de U = X ∸ Y'",
+  "scan": "a minus with a dot above it (∸), dot crisp and centred",
+  "tex": "$U=X-Y$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$U=X-Y$",
+   "new": "$U=X\\mathbin{\\dot{-}}Y$"
+  },
+  "note": "As the applied fix of p. 285 (C^r ∸ 0, now \\mathbb C^r\\mathbin{\\dot{-}}0 in both layers); the same sign on p. 330."
+ },
+ {
+  "page": 327,
+  "where": "Lemme 8.2, statement",
+  "scan": "underlined: 'Soient', 'un corps séparablement clos' (the comma not), 'un entier, et', 'Alors'",
+  "tex": "Soient $k$ un corps séparablement clos, $r\\ge1$ un entier, et $P=\\mathbb P_k^r$. Alors:",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $k$ un corps séparablement clos, $r\\ge1$ un entier, et $P=\\mathbb P_k^r$. Alors:",
+   "new": "\\emph{Soient} $k$ \\emph{un corps séparablement clos}, $r\\ge1$ \\emph{un entier, et} $P=\\mathbb P_k^r$. \\emph{Alors} :"
+  },
+  "note": "The P of P^r_k is a plain typed P (see the message)."
+ },
+ {
+  "page": 327,
+  "where": "Lemme 8.2 a)",
+  "scan": "'a) L'application canonique A → H°(P,A) est une bijection.' (underlined word groups)",
+  "tex": "\\item l'application canonique $A\\to H^0(P,A)$ est une bijection;",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item l'application canonique $A\\to H^0(P,A)$ est une bijection;",
+   "new": "\\item \\emph{L'application canonique} $A\\to H^0(P,A)$ \\emph{est une bijection}."
+  },
+  "note": "One edit: it also gives the print's capital L (word) and its full stop for the TeX's semicolon (punctuation)."
+ },
+ {
+  "page": 327,
+  "where": "Lemme 8.2 b)",
+  "scan": "'b) H^1(P,A) = H^{2r-1}(P,A) = 0 .'",
+  "tex": "... =0$;",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=H^{2r-1}(P,A)=0$;",
+   "new": "=H^{2r-1}(P,A)=0$."
+  },
+  "note": "The TeX has a semicolon for the print's full stop."
+ },
+ {
+  "page": 328,
+  "where": "top of the page: item c) of Lemme 8.2",
+  "scan": "p. 328 begins with 'c) Pour 0 ≤ p ≤ 2r-2 , ...'; p. 327 ends with 'b) H^1(P,A) = H^{2r-1}(P,A) = 0 .'",
+  "tex": "the '\\item' that prints 'c)' is the last line of page_327.tex; the folio-328 marker follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 328 really begins at the '\\item' of c) (diplomatic s5.tex line 11056, current 11052, at the time of the check). Exact fix: python -I move_marker.py 5 328 '\\item' --before (simulated in memory on both layers: the marker then stands on its own line between '\\item $H^1(P,A)=H^{2r-1}(P,A)=0$;' and '\\item'). The anchor is the last '\\item' above the marker, so run the command once only. Text not moved; independent of the p. 327 edits."
+ },
+ {
+  "page": 328,
+  "where": "Lemme 8.2 c), 'Pour 0 ≤ p ≤ 2r-2 , la multiplication par'",
+  "scan": "'Pour' (capital P) and 'la multiplication par' underlined",
+  "tex": "pour $0\\le p\\le2r-2$, la multiplication par",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "pour $0\\le p\\le2r-2$, la multiplication par $",
+   "new": "\\emph{Pour} $0\\le p\\le2r-2$, \\emph{la multiplication par} $"
+  },
+  "note": "One edit: it also gives the print's capital P (word)."
+ },
+ {
+  "page": 328,
+  "where": "Lemme 8.2 c), 'ξ = cℓ(O_P(1)) ∈ H^2(P,μ) .' before the display",
+  "scan": "a full stop after H^2(P,μ), then the display and 'est un isomorphisme.'",
+  "tex": "no punctuation after $\\xi=c\\ell(\\mathcal O_P(1))\\in H^2(P,\\mu)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\in H^2(P,\\mu)$\n",
+   "new": "\\in H^2(P,\\mu)$.\n"
+  },
+  "corrected": "\\in H^2(P,\\mu)$\n",
+  "note": "A stray full stop in mid-sentence (the sentence goes on with the display and 'est un isomorphisme'); the TeX silently drops it. Drop this item if the stop is taken as the print's punctuation."
+ },
+ {
+  "page": 328,
+  "where": "Lemme 8.2 c), 'est un isomorphisme.'",
+  "scan": "underlined, full stop",
+  "tex": "est un isomorphisme;",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est un isomorphisme;",
+   "new": "\\emph{est un isomorphisme}."
+  },
+  "note": "One edit: it also gives the print's full stop for the TeX's semicolon (punctuation)."
+ },
+ {
+  "page": 328,
+  "where": "Lemme 8.2 d), 'Le morphisme trace'",
+  "scan": "'Le morphisme trace' underlined, capital L",
+  "tex": "\\item le morphisme trace",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item le morphisme trace",
+   "new": "\\item \\emph{Le morphisme trace}"
+  },
+  "note": "One edit: it also gives the print's capital L (word)."
+ },
+ {
+  "page": 328,
+  "where": "Lemme 8.2 d), 'est une bijection.'",
+  "scan": "underlined",
+  "tex": "est une bijection.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est une bijection.\n\\end{enumerate}",
+   "new": "\\emph{est une bijection}.\n\\end{enumerate}"
+  },
+  "note": ""
+ },
+ {
+  "page": 328,
+  "where": "'tout complexe M de A_X-Modules' before the displays H*(T,M)",
+  "scan": "capital M",
+  "tex": "$A_X$-modules",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$A_X$-modules\n",
+   "new": "$A_X$-Modules\n"
+  },
+  "note": "The typescript's capital M (sheaf of modules), as the applied 'Module' of pp. 282-295."
+ },
+ {
+  "page": 328,
+  "where": "displays H*(T,M) = H*(T,h*(M)) and H*_Z(T,M) = H*_Z(T,h*(M)).",
+  "scan": "two lines, the second preceded by 'et'; no comma after the first",
+  "tex": "H^*(T,M)=H^*(T,h^*(M)),\\qquad",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "H^*(T,M)=H^*(T,h^*(M)),\\qquad\n",
+   "new": "H^*(T,M)=H^*(T,h^*(M))\n\\quad\\text{et}\\quad\n"
+  },
+  "note": "The TeX drops the printed 'et' and adds a comma (written as the applied fix of p. 283)."
+ },
+ {
+  "page": 328,
+  "where": "Corollaire 8.3, first sentence",
+  "scan": "underlined: 'Pour tout complexe', 'de', '-Modules et tout', 'les applications'",
+  "tex": "Pour tout complexe $M$ de $A_X$-modules et tout $p\\in\\mathbb Z$, les applications",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour tout complexe $M$ de $A_X$-modules et tout $p\\in\\mathbb Z$, les applications",
+   "new": "\\emph{Pour tout complexe} $M$ \\emph{de} $A_X$-\\emph{Modules et tout} $p\\in\\mathbb Z$, \\emph{les applications}"
+  },
+  "note": "One edit: it also gives the print's capital M (word)."
+ },
+ {
+  "page": 328,
+  "where": "number of the display (8.3.1)",
+  "scan": "'(8.3.1.)' with a stop; '(8.3.2)' has none",
+  "tex": "\\tag{8.3.1}",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tag{8.3.1}",
+   "new": "\\tag{8.3.1.}"
+  },
+  "note": "As printed, as the logged '(3.5.1.)' of p. 293."
+ },
+ {
+  "page": 328,
+  "where": "Corollaire 8.3, 'et' between (8.3.1) and (8.3.2)",
+  "scan": "underlined",
+  "tex": "et",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\net\n\\[",
+   "new": "\\]\n\\emph{et}\n\\["
+  },
+  "note": ""
+ },
+ {
+  "page": 328,
+  "where": "Corollaire 8.3, 'définies par la matrice'",
+  "scan": "underlined",
+  "tex": "définies par la matrice",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "définies par la matrice",
+   "new": "\\emph{définies par la matrice}"
+  },
+  "note": ""
+ },
+ {
+  "page": 328,
+  "where": "Corollaire 8.3, 'sont des bijections.'",
+  "scan": "underlined (the stop not)",
+  "tex": "sont des bijections.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "sont des bijections.",
+   "new": "\\emph{sont des bijections}."
+  },
+  "note": ""
+ },
+ {
+  "page": 328,
+  "where": "proof of 8.3, 'sur les p^èmes objets de cohomologie'",
+  "scan": "p with a raised 'èmes'",
+  "tex": "$p$-ièmes",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$p$-ièmes",
+   "new": "$p^{\\text{èmes}}$"
+  },
+  "note": "As the applied ν^{èmes} of p. 282."
+ },
+ {
+  "page": 328,
+  "where": "proof of 8.3, first morphism 'IRΓ(X, μ ⊗ id_M)'",
+  "scan": "μ (Greek mu, with its descender) where u is meant",
+  "tex": "$\\R\\Gamma(X,u\\otimes\\operatorname{id}_M)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "morphismes $\\R\\Gamma(X,u",
+   "new": "morphismes $\\R\\Gamma(X,\\mu"
+  },
+  "corrected": "morphismes $\\R\\Gamma(X,u",
+  "note": "The morphism is u, 'le morphisme (8.1.1)' of the line above; the TeX silently corrects. Independent of the tensor-sign item that follows (the two olds do not overlap)."
+ },
+ {
+  "page": 328,
+  "where": "proof of 8.3, first morphism, the tensor sign",
+  "scan": "⊗ with two bars under it",
+  "tex": "\\otimes",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\otimes\\operatorname{id}_M)$ et",
+   "new": "\\mathbin{\\underline{\\underline{\\otimes}}}\\operatorname{id}_M)$ et"
+  },
+  "note": "Written as the applied fixes of pp. 285 and 289 (\\mathbin{\\underline{\\underline{\\otimes}}}); one decision with the other occurrences of the exposé."
+ },
+ {
+  "page": 328,
+  "where": "proof of 8.3, second morphism 'IRΓ(X, u ⊗ id_M)'",
+  "scan": "IRΓ(X, ...) without the subscript Y (no trace of it)",
+  "tex": "$\\R\\Gamma_Y(X,u\\otimes\\operatorname{id}_M)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R\\Gamma_Y(X",
+   "new": "\\R\\Gamma(X"
+  },
+  "corrected": "\\R\\Gamma_Y(X",
+  "note": "The arrows (8.3.2) are maps of cohomology with supports in Y and Y', so RΓ_Y is meant ('respectivement'); the TeX silently corrects. Independent of the tensor-sign item that follows."
+ },
+ {
+  "page": 328,
+  "where": "proof of 8.3, second morphism, the tensor sign",
+  "scan": "⊗ with two bars under it",
+  "tex": "\\otimes",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\otimes\\operatorname{id}_M)$ respectivement",
+   "new": "\\mathbin{\\underline{\\underline{\\otimes}}}\\operatorname{id}_M)$ respectivement"
+  },
+  "note": "As the previous tensor-sign item."
+ },
+ {
+  "page": 328,
+  "where": "numbered paragraph 8.4",
+  "scan": "'8.4.' with a stop",
+  "tex": "\\subsection*{8.4}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{8.4}",
+   "new": "\\subsection*{8.4.}"
+  },
+  "note": "As the applied '2.1.', '2.2.5.' (pp. 285, 289)."
+ },
+ {
+  "page": 329,
+  "where": "Lemme 8.4.1, statement up to 'le O_p-Module'",
+  "scan": "underlined: 'Soient', 'un schéma,' (with the comma), 'un', '-Module localement libre de rang constant', 'et', 'le fibré projectif associé. Désignant par' (one stretch), 'le'",
+  "tex": "Soient $S$ un schéma, $E$ un $\\mathcal O_S$-module localement libre ... Désignant par $F$ le",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $S$ un schéma, $E$ un $\\mathcal O_S$-module localement libre de rang constant $d$, et $p:P=\\mathbb P_S(E)\\to S$ le fibré projectif associé. Désignant par $F$ le $",
+   "new": "\\emph{Soient} $S$ \\emph{un schéma,} $E$ \\emph{un} $\\mathcal O_S$-\\emph{Module localement libre de rang constant} $d$, \\emph{et} $p:P=\\mathbb P_S(E)\\to S$ \\emph{le fibré projectif associé. Désignant par} $F$ \\emph{le} $"
+  },
+  "note": "One edit: it also gives the print's capital M (word). The P of P_S(E) is a plain typed P (see the message). Ends before the O_p of the next item (the olds do not overlap)."
+ },
+ {
+  "page": 329,
+  "where": "Lemme 8.4.1, 'le O_p-Module'",
+  "scan": "the subscript is a small p: bowl 15 rows, stem 6 rows below it at 300 dpi (the capital P of 'P = P_S(E)' on the line: bowl 12, stem 9-10; the small p of 'p : P': bowl 14, stem 7)",
+  "tex": "$\\mathcal O_P$-module",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\mathcal O_P$-",
+   "new": "$\\mathcal O_p$-"
+  },
+  "corrected": "$\\mathcal O_P$-",
+  "note": "As the logged O_p items of pp. 286-295: the sheaf is O_P of P = P_S(E); the TeX silently corrects. On p. 328 the subscripts of O_P(1) and μ_P are capitals (bowl 11-12, stem 9-10)."
+ },
+ {
+  "page": 329,
+  "where": "Lemme 8.4.1, 'défini par la suite exacte canonique' (after O_p-Module)",
+  "scan": "'-Module' and 'défini par la suite exacte canonique' underlined",
+  "tex": "module défini par la suite exacte canonique",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "module défini par la suite exacte canonique",
+   "new": "\\emph{Module défini par la suite exacte canonique}"
+  },
+  "note": "One edit: it also gives the print's capital M (word)."
+ },
+ {
+  "page": 329,
+  "where": "Lemme 8.4.1, display 0 → F → p*(E) → O_p(1) → 0 ,",
+  "scan": "small p subscript: bowl 14 rows, stem 7 (as the small p of p*(E) in the same display: bowl 15, stem 6)",
+  "tex": "\\mathcal O_P(1)\\to0,",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\mathcal O_P(1)\\to0,",
+   "new": "\\mathcal O_p(1)\\to0,"
+  },
+  "corrected": "\\mathcal O_P(1)\\to0,",
+  "note": "As the previous O_p item; the TeX silently corrects."
+ },
+ {
+  "page": 329,
+  "where": "Lemme 8.4.1, 'on a la relation'",
+  "scan": "underlined",
+  "tex": "on a la relation",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "on a la relation\n\\[\np_*",
+   "new": "\\emph{on a la relation}\n\\[\np_*"
+  },
+  "note": ""
+ },
+ {
+  "page": 329,
+  "where": "proof of 8.4.1, 'posons ξ = c_1(O_p(1))'",
+  "scan": "small p subscript: bowl 15 rows, stem 5-6",
+  "tex": "c_1(\\mathcal O_P(1))",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "c_1(\\mathcal O_P(1))",
+   "new": "c_1(\\mathcal O_p(1))"
+  },
+  "corrected": "c_1(\\mathcal O_P(1))",
+  "note": "As the previous O_p items; the TeX silently corrects."
+ },
+ {
+  "page": 329,
+  "where": "proof of 8.4.1, display 'c(F) = p*(c(E))(1+ξ)^{-1}   d'où'",
+  "scan": "no comma after (1+ξ)^{-1}",
+  "tex": "(1+\\xi)^{-1},",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(1+\\xi)^{-1},",
+   "new": "(1+\\xi)^{-1}"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 329,
+  "where": "Lemme 8.4.3, first sentence",
+  "scan": "underlined: 'On note', 'le', '-Module localement libre défini par la suite exacte canonique'",
+  "tex": "On note $F$ le $\\mathcal O_{Y'}$-module localement libre défini par la suite exacte canonique",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "On note $F$ le $\\mathcal O_{Y'}$-module localement libre défini par la suite exacte canonique",
+   "new": "\\emph{On note} $F$ \\emph{le} $\\mathcal O_{Y'}$-\\emph{Module localement libre défini par la suite exacte canonique}"
+  },
+  "note": "One edit: it also gives the print's capital M (word)."
+ },
+ {
+  "page": 329,
+  "where": "Lemme 8.4.3, second sentence",
+  "scan": "underlined: 'Soient', 'un', '-Module localement constant constructible au voisinage de', 'et', 'un entier', 'Pour tout', 'on a la relation'",
+  "tex": "Soient $M$ un $A_X$-module localement constant constructible ... on a la relation",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $M$ un $A_X$-module localement constant constructible au voisinage de $Y$, et $p$ un entier $\\ge0$. Pour tout $y\\in H^p(Y,M)$, on a la relation",
+   "new": "\\emph{Soient} $M$ \\emph{un} $A_X$-\\emph{Module localement constant constructible au voisinage de} $Y$, \\emph{et} $p$ \\emph{un entier} $\\ge0$. \\emph{Pour tout} $y\\in H^p(Y,M)$, \\emph{on a la relation}"
+  },
+  "note": "One edit: it also gives the print's capital M (word)."
+ },
+ {
+  "page": 329,
+  "where": "Lemme 8.4.3, 'dans H^{p+2d}_{Y'}(X',M ⊗ μ^{⊗d}) .'",
+  "scan": "'dans' underlined",
+  "tex": "dans",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $H_{Y'}^{p+2d}",
+   "new": "\\emph{dans} $H_{Y'}^{p+2d}"
+  },
+  "note": ""
+ },
+ {
+  "page": 330,
+  "where": "display (8.4.4)",
+  "scan": "j*(z) = g*(y)[c_d(g*Ň) - c_{d-1}(F̌)c_1(O_{Y'}(-1))] = 0 .  (square brackets)",
+  "tex": "\\bigl( ... \\bigr)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigl(c_d(g^*\\check N)-c_{d-1}(\\check F)c_1(\\mathcal O_{Y'}(-1))\\bigr)",
+   "new": "\\bigl[c_d(g^*\\check N)-c_{d-1}(\\check F)c_1(\\mathcal O_{Y'}(-1))\\bigr]"
+  },
+  "note": "The TeX has parentheses for the print's square brackets."
+ },
+ {
+  "page": 330,
+  "where": "'Posant U = X ∸ Y et U' = X' ∸ Y''",
+  "scan": "two minus signs with a dot above (∸)",
+  "tex": "$U=X-Y$ et $U'=X'-Y'$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$U=X-Y$ et $U'=X'-Y'$",
+   "new": "$U=X\\mathbin{\\dot{-}}Y$ et $U'=X'\\mathbin{\\dot{-}}Y'$"
+  },
+  "note": "As p. 327 and the applied fix of p. 285."
+ },
+ {
+  "page": 330,
+  "where": "diagram (8.4.5), top right",
+  "scan": "H^{p+2d}(Y) (no prime; checked at 4x)",
+  "tex": "H^{p+2d}(Y')",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{j^*}&H^{p+2d}(Y')",
+   "new": "\\xrightarrow{j^*}&H^{p+2d}(Y)"
+  },
+  "corrected": "\\xrightarrow{j^*}&H^{p+2d}(Y')",
+  "note": "j : Y' → X', so j* lands in H^{p+2d}(Y'); the TeX silently corrects."
+ },
+ {
+  "page": 330,
+  "where": "display f_*(z) = f_*f*(i_*(y)) - ...",
+  "scan": "parentheses around i_*(y)",
+  "tex": "f_*f^*i_*(y)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "f_*f^*i_*(y)",
+   "new": "f_*f^*(i_*(y))"
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 330,
+  "where": "'d'où en utilisant (4.2),'",
+  "scan": "no comma after d'où",
+  "tex": "d'où, en utilisant",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d'où, en utilisant",
+   "new": "d'où en utilisant"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 330,
+  "where": "Proposition 8.5, first sentence",
+  "scan": "underlined: 'Soit', 'un', '-Module localement constant constructible au voisinage', 'de'",
+  "tex": "Soit $M$ un $A_X$-module localement constant constructible au voisinage de $Y$.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $M$ un $A_X$-module localement constant constructible au voisinage de $Y$.",
+   "new": "\\emph{Soit} $M$ \\emph{un} $A_X$-\\emph{Module localement constant constructible au voisinage de} $Y$."
+  },
+  "note": "One edit: it also gives the print's capital M (word)."
+ },
+ {
+  "page": 330,
+  "where": "Proposition 8.5 a), 'Notant'",
+  "scan": "underlined",
+  "tex": "\\item Notant",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Notant",
+   "new": "\\item \\emph{Notant}"
+  },
+  "note": ""
+ },
+ {
+  "page": 330,
+  "where": "Proposition 8.5 a), 'l'unique application définie par la relation'",
+  "scan": "underlined",
+  "tex": "l'unique application définie par la relation",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "l'unique application définie par la relation",
+   "new": "\\emph{l'unique application définie par la relation}"
+  },
+  "note": ""
+ },
+ {
+  "page": 330,
+  "where": "Proposition 8.5 a), 'on a' before (8.5.2)",
+  "scan": "underlined",
+  "tex": "on a",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "on a\n\\[\ng_*",
+   "new": "\\emph{on a}\n\\[\ng_*"
+  },
+  "note": ""
+ }
+]

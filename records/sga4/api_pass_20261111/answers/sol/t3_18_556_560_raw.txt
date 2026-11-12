@@ -1,0 +1,62 @@
+{
+  "findings": [
+    {
+      "page": 557,
+      "where": "Paragraph immediately after the definition of the trace",
+      "scan": "Il est immédiatement, grâce à",
+      "tex": "Il est immédiatement, grâce à",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Il est immédiat, grâce à",
+      "note": "The adjective « immédiat » is required, not the adverb « immédiatement ». TeX keeps the printed error."
+    },
+    {
+      "page": 558,
+      "where": "First paragraph, list of morphisms composing the traces of f and g",
+      "scan": "$a$, $u$, $e$ et $v$",
+      "tex": "$a$, $u$, $c$ et\n$v$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$a$, $u$, $c$ et $v$",
+      "note": "The printed e, confirmed by the witness, should be c, the projection labelled c in the preceding diagram. TeX silently corrects it."
+    },
+    {
+      "page": 559,
+      "where": "Proposition 2.10, reference to 1.1.6",
+      "scan": "XVII 6.2.3, 1.1.6 et (2.8.1)",
+      "tex": "XVIII~\\hyperref[XVIII.prop1.1.6]{1.1.6}",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "XVIII~\\hyperref[XVIII.prop1.1.6]{1.1.6}",
+        "new": "\\hyperref[XVIII.prop1.1.6]{1.1.6}"
+      },
+      "note": "TeX adds the exposé numeral XVIII before 1.1.6; the print has no numeral there."
+    },
+    {
+      "page": 559,
+      "where": "Introduction to the Künneth isomorphism",
+      "scan": "L'isomorphisme de Kunneth",
+      "tex": "L'isomorphisme de Künneth",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Künneth",
+      "note": "The printed name lacks its umlaut. TeX silently supplies the correct spelling."
+    },
+    {
+      "page": 560,
+      "where": "Proof of Proposition 2.12, mention of the Künneth arrow",
+      "scan": "la flèche de Kunneth",
+      "tex": "la flèche de Künneth",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Künneth",
+      "note": "The printed name lacks its umlaut. TeX silently supplies the correct spelling."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 556: 0/0; 557: 0/1; 558: 0/1; 559: 1/1; 560: 0/1."
+}

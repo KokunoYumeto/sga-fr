@@ -1,0 +1,158 @@
+{
+  "findings": [
+    {
+      "page": 622,
+      "where": "Premier paragraphe, condition sur le point z",
+      "scan": "$\\delta(z)>d-q$",
+      "tex": "$\\delta(z)\\geq d-q$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\delta(z)\\geq d-q",
+        "new": "\\delta(z)>d-q"
+      },
+      "note": "L'inégalité imprimée est stricte."
+    },
+    {
+      "page": 623,
+      "where": "Suite spectrale en tête de page, terme d'aboutissement",
+      "scan": "$P^{p+q}(\\EE^{1},F)$",
+      "tex": "$H^{p+q}(\\EE^{1},F)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{p+q}(\\EE^{1},F)",
+      "note": "Le P imprimé est une coquille pour H. Le TeX corrige silencieusement."
+    },
+    {
+      "page": 623,
+      "where": "Définition du faisceau induit sur le localisé strict",
+      "scan": "et $F$ le faisceau induit de $F$ sur $\\widetilde{U}$",
+      "tex": "et $F$ le faisceau induit de $F$ sur $\\widetilde{U}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "et $\\widetilde{F}$ le faisceau induit de $F$ sur $\\widetilde{U}$",
+      "note": "Le tilde manque au nom du faisceau induit, noté ensuite \\widetilde{F}. Le TeX conserve l'omission."
+    },
+    {
+      "page": 623,
+      "where": "Début de la phrase « Notons que U est déduit… »",
+      "scan": "Notons que $U$ est déduit de $\\widetilde{X}$",
+      "tex": "Notons que $U$ est déduit de $\\widetilde{X}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Notons que $\\widetilde{U}$ est déduit de $\\widetilde{X}$",
+      "note": "Il s'agit de l'ouvert \\widetilde{U} défini juste avant. Le TeX conserve U sans tilde."
+    },
+    {
+      "page": 623,
+      "where": "Même phrase, symbole du faisceau structural dans Γ",
+      "scan": "$\\Gamma(X,O_{X})$",
+      "tex": "$\\Gamma(X,0_{X})$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Gamma(X,0_{X})",
+        "new": "\\Gamma(X,O_{X})"
+      },
+      "note": "Le symbole imprimé est le O du faisceau structural, non le chiffre 0."
+    },
+    {
+      "page": 623,
+      "where": "Même phrase, schéma sur lequel la section x est prise",
+      "scan": "$x\\in\\Gamma(X,O_{X})$",
+      "tex": "$x\\in \\Gamma(X,0_{X})$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "x\\in\\Gamma(\\widetilde{X},O_{\\widetilde{X}})",
+      "note": "La section qui définit cet ouvert principal est prise sur le localisé strict \\widetilde{X}. Les tildes des deux X sont omis dans l'imprimé et restent omis dans le TeX. L'écart 0/O est relevé séparément."
+    },
+    {
+      "page": 623,
+      "where": "Phrase suivant l'isomorphisme de la fibre avec la cohomologie de l'ouvert",
+      "scan": "$H^{q}(\\widetilde{U},F)=0$",
+      "tex": "$H^{q}(\\widetilde{U},F)=0$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{q}(\\widetilde{U},\\widetilde{F})=0",
+      "note": "Le faisceau quantifié dans la même phrase est \\widetilde{F}. Le tilde manque dans le groupe de cohomologie; le TeX conserve cette omission."
+    },
+    {
+      "page": 624,
+      "where": "Premier paragraphe, nom du morphisme de normalisation",
+      "scan": "$\\pi:\\bar{V}\\rightarrow V$",
+      "tex": "$x:\\bar{V}\\rightarrow V$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "x:\\bar{V}",
+        "new": "\\pi:\\bar{V}"
+      },
+      "note": "Le morphisme est nommé π dans l'imprimé, et non x."
+    },
+    {
+      "page": 624,
+      "where": "Suite exacte du premier paragraphe, image directe",
+      "scan": "$\\pi_{\\ast}(\\ZZ/\\ell)_{\\bar{V}}$",
+      "tex": "$x_{\\ast}(\\ZZ/\\ell)_{\\bar{V}}$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "x_{\\ast}",
+        "new": "\\pi_{\\ast}"
+      },
+      "note": "L'imprimé emploie le même morphisme π que dans la phrase précédente."
+    },
+    {
+      "page": 624,
+      "where": "6.7.0, description de l'anneau A",
+      "scan": "équidimensionel",
+      "tex": "équidimensionnel",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "équidimensionnel",
+      "note": "Un n manque dans l'imprimé. Le TeX corrige silencieusement."
+    },
+    {
+      "page": 625,
+      "where": "Définition de « formellement séparable »",
+      "scan": "tel que le morphisme",
+      "tex": "tel que le morphisme",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "telle que le morphisme",
+      "note": "L'accord est avec « une sous-k-algèbre ». Le TeX conserve « tel »."
+    },
+    {
+      "page": 625,
+      "where": "Démonstration de 6.7, définition de l'algèbre de base de B̄",
+      "scan": "$k[[x_{2},\\ldots,x_{d}]]=\\bar{A}$",
+      "tex": "$[[x_{2},\\ldots, x_{d}]]=\\bar{A}$",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "$[[x_{2},\\ldots, x_{d}]]=\\bar{A}$",
+        "new": "$k[[x_{2},\\ldots, x_{d}]]=\\bar{A}$"
+      },
+      "note": "Le k initial de l'anneau de séries formelles est omis dans le TeX."
+    },
+    {
+      "page": 625,
+      "where": "Dernier paragraphe, extension de corps engendrée par b",
+      "scan": "$R(A)$ sur $k((x))$",
+      "tex": "$R(A)$ sur $k((x))$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R(B)",
+      "note": "Il faut R(B), puisque R(A)=k((x)) et que b appartient à B. Le TeX conserve le R(A) erroné de l'imprimé."
+    }
+  ],
+  "coordinator": "621: 0/0; 622: 1/0; 623: 1/5; 624: 2/1; 625: 1/2 (normal/misprint).\n624: appliquer ensemble les deux remplacements de x par \\pi pour le morphisme de normalisation et son image directe."
+}

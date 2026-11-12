@@ -1,0 +1,111 @@
+{
+  "findings": [
+    {
+      "page": 196,
+      "where": "Opening paragraph, after the reference to 1.14 (ii)",
+      "scan": "tout objet X de E au-dessus d'un objet quasi-séparé X de E",
+      "tex": "tout objet $X$ de $E$\n  au-dessus d'un objet quasi-séparé $X$ de $E$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "tout objet $X$ de $E$ au-dessus d'un objet quasi-séparé $Y$ de $E$",
+      "note": "The print calls both objects X; the TeX keeps this notational misprint. The base should have a distinct name, for example Y."
+    },
+    {
+      "page": 196,
+      "where": "Example 1.33, definition of the classifying topos",
+      "scan": "des ensembles",
+      "tex": "des ensemble",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "des ensemble",
+        "new": "des ensembles"
+      },
+      "note": "The plural ending is present in the print."
+    },
+    {
+      "page": 196,
+      "where": "Example 1.33, sentence ending with « avec H fini.) »",
+      "scan": "avec H fini.)",
+      "tex": "avec $H$ \\emph{fini}.)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "avec $H$ \\emph{fini}.",
+      "note": "The closing parenthesis has no matching opening parenthesis. The TeX retains this printed misprint."
+    },
+    {
+      "page": 197,
+      "where": "First paragraph, stability under fibre products",
+      "scan": "comme il résulte du fait",
+      "tex": "comme il résulte de fait",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "résulte de fait",
+        "new": "résulte du fait"
+      },
+      "note": "The print reads « du fait »."
+    },
+    {
+      "page": 197,
+      "where": "Second paragraph, the induced map on orbit sets",
+      "scan": "l'application induite",
+      "tex": "l'application induit",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "l'application induit",
+        "new": "l'application induite"
+      },
+      "note": "The final e is printed."
+    },
+    {
+      "page": 199,
+      "where": "Corollary 2.1.1, definition of E",
+      "scan": "$E : C^{\\sim}$",
+      "tex": "$E : C^{\\sim}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$E = C^{\\sim}$",
+      "note": "The print has a colon instead of the equals sign defining E. The TeX keeps the printed reading."
+    },
+    {
+      "page": 199,
+      "where": "Proof of Corollary 2.1.1, morphisms inducing the two composites",
+      "scan": "$Y_i \\to X$ resp. $Z_j \\to Y$",
+      "tex": "$Y_i \\to\nX$ \\resp $Z_j \\to Y$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$Z_j \\to X$",
+      "note": "The second target must also be X, since the composite under discussion ends in epsilon(X). The print has Y, and the TeX retains it."
+    },
+    {
+      "page": 199,
+      "where": "Last line, boundary between pages 199 and 200",
+      "scan": "que le produit fibré",
+      "tex": "que le produit",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The word « fibré » belongs to the end of printed p. 199 but appears only at the beginning of the p. 200 TeX cut, on source line 1259. Printed p. 200 begins « est quasi-compact. ». This overlap is not declared in the cut comments; no source text is missing."
+    },
+    {
+      "page": 200,
+      "where": "Proof of Corollary 2.1.2, immediately after « changement de base »",
+      "scan": "que $G\\times_{\\epsilon(X)}H \\to H$ est quasi-séparé",
+      "tex": "que $\\fprod{G}{H}{\\epsilon(X)}$ est quasi-séparé",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "changement de base que $\\fprod{G}{H}{\\epsilon(X)}$",
+        "new": "changement de base que $\\fprod{G}{H}{\\epsilon(X)} \\to H$"
+      },
+      "note": "The printed projection arrow and its target H are missing from the TeX."
+    }
+  ],
+  "coordinator": "196: 1/2; 197: 2/0; 198: 0/0; 199: 1/2; 200: 1/0 (normal/misprint; marker included in normal).\nMarker 199–200: « fibré » ends p. 199; p. 200 begins « est quasi-compact. ». Amend the cut/overlap metadata for source line 1259, without moving source text."
+}

@@ -1,0 +1,119 @@
+{
+  "findings": [
+    {
+      "page": 386,
+      "where": "5.5.11, unnumbered stalkwise morphism, second tensor product",
+      "scan": "\\Gamma^{n_i-i_\\alpha}(F''_{y_\\alpha})",
+      "tex": "\\Gamma^{n_{i}-i_{\\alpha}}(F''_{y_{\\alpha}})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Gamma^{n_{\\alpha}-i_{\\alpha}}(F''_{y_{\\alpha}})",
+      "note": "The multiplicity should be indexed by α, like the point y_α, not by the filtration index i. The TeX keeps the printed wrong index."
+    },
+    {
+      "page": 386,
+      "where": "5.5.11, reference immediately before (5.5.11.2)",
+      "scan": "5.5.2.6.2",
+      "tex": "\\sisi{\\hyperref[XVII.eq5.5.2.6.2]{5.5.2.6.2}}{\\eqhyperref[XVII.eq5.5.2.6.1]{5.5.2.6.1}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\eqhyperref[XVII.eq5.5.2.6.1]{5.5.2.6.1}",
+      "note": "The reference should be to (5.5.2.6.1). The TeX records the printed wrong reference and corrects it through \\sisi."
+    },
+    {
+      "page": 386,
+      "where": "(5.5.11.2), exponent of the final divided power",
+      "scan": "\\Gamma^{k}_{\\ext}(F'')",
+      "tex": "\\Gamma^{k}_{\\ext}(F'')",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Gamma^{k_{2}}_{\\ext}(F'')",
+      "note": "The second exponent should be k₂, since k₁+k₂=k. The TeX keeps the printed exponent k."
+    },
+    {
+      "page": 386,
+      "where": "5.5.12, adjunction isomorphism between the Hom groups",
+      "scan": "\\underset{n}{\\simeq}",
+      "tex": "\\underset{\\sisi{n}{}}{\\simeq}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hom(u^{\\ast}G,F)\\simeq\\Hom(G,u_{\\ast}F)",
+      "note": "The print has a stray n beneath the isomorphism sign. The TeX removes it through \\sisi."
+    },
+    {
+      "page": 387,
+      "where": "Commutative diagram, label of the lower horizontal arrow",
+      "scan": "TS^{n}_{\\ext}(v)",
+      "tex": "TS^{n}_{\\ext(v)}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "TS^{n}_{\\ext(v)}",
+        "new": "TS^{n}_{\\ext}(v)"
+      },
+      "note": "The print places (v) on the main line as the argument, not inside the subscript."
+    },
+    {
+      "page": 387,
+      "where": "Sentence immediately before (5.5.12.1)",
+      "scan": "un homomorphismes de Modules",
+      "tex": "homomorphisme\\sisi{s}{}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un homomorphisme de Modules",
+      "note": "The printed plural ending after « un » is a typo. The TeX corrects it through \\sisi."
+    },
+    {
+      "page": 388,
+      "where": "Lemme 5.5.13.2, after « Tor-dimension ≤ 0 »",
+      "scan": "Tor-dimension $\\leq 0$ est équivalente",
+      "tex": "$\\leq 0$ \\emph{\\hyperref[XVII.def4.1.9]{4.1.9}}",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": " \\emph{\\hyperref[XVII.def4.1.9]{4.1.9}}",
+        "new": ""
+      },
+      "note": "The reference 4.1.9 is not printed; the sentence proceeds directly from the inequality to « est équivalente »."
+    },
+    {
+      "page": 390,
+      "where": "First paragraph beginning « Passant à la catégorie dérivée », formula for the successive quotients",
+      "scan": "L\\Gamma^{i}_{\\ext}(K'\\overset{\\LL}{\\vee}L\\Gamma^{k-i}_{\\ext}(K'')",
+      "tex": "L\\Gamma^{i}_{\\ext}(K'\\sisi{}{)}\\overset{\\LL}{\\vee}L\\Gamma^{k-i}_{\\ext}\n(K'')",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "L\\Gamma^{i}_{\\ext}(K')\\overset{\\LL}{\\vee}L\\Gamma^{k-i}_{\\ext}(K'')",
+      "note": "The print omits the closing parenthesis after K′. The TeX supplies it through \\sisi."
+    },
+    {
+      "page": 390,
+      "where": "Displayed associated-graded isomorphism, final factor",
+      "scan": "L\\Gamma^{k-i}_{\\ext}(\\Gr^{0}(\\Delta)",
+      "tex": "(\\Gr^{0}(\\Delta)\\sisi{}{)}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "L\\Gamma^{k-i}_{\\ext}(\\Gr^{0}(\\Delta))",
+      "note": "The print lacks the final parenthesis closing the divided-power argument. The TeX supplies it through \\sisi."
+    },
+    {
+      "page": 390,
+      "where": "Final displayed isomorphism before Lemme 5.5.16, left-hand side",
+      "scan": "\\lvert L\\Gamma^{k}_{\\ext}(\\Delta))\\rvert",
+      "tex": "\\lvert L\\Gamma^{k}_{\\ext}(\\Delta))\\rvert",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\lvert L\\Gamma^{k}_{\\ext}(\\Delta)\\rvert",
+      "note": "The print has an extra closing parenthesis after Δ. The TeX keeps it."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 386 0/4; 387 1/1; 388 1/0; 389 0/0; 390 0/3."
+}

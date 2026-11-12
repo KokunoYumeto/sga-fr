@@ -1,0 +1,1 @@
+p421: 2/1; p422: 1/1; p423: 2/0; p424: 0/2; p425: 2/2. The TeX writes the initial object ∅ as \phi (p422 \phi_E, p423 \phi_{B_G}) while it writes ∅ elsewhere (p421); check whether this is a global convention.

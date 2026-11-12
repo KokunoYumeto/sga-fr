@@ -1,0 +1,2645 @@
+# Misprint pass of the corrected French SGA 7 II, misprints_7II_001
+
+=================== PAGE 2 ===================
+----- corrected edition, expose_X_body.tex, page 2 -----
+%%%%%%%%%%  scan idx 9  |  folio 2  %%%%%%%%%%
+
+\underline{Exemple} 1.2. Soient $X_o$ le spectre d'un anneau local normal de dimension 2, $s$ le point fermé de $X_o$ et $f : X \longrightarrow X_o$ un $X_o$-schéma régulier et connexe, propre sur $X_o$, distinct de $X_o$ mais coïncidant avec $X_o$ au-dessus de $X_o \setminus \{s\}$. On prend $Y = (f^{-1}(s))_{red}$ et $k = k(s)$.
+
+\underline{Exemple} 1.3. On prend pour $X$ une surface régulière complète sur un corps $k$ et pour $Y$ une courbe réduite tracée sur $X$.
+
+Rappelons le lemme suivant (SGA 6 IV ex. 1.9).
+
+\underline{Lemme} 1.4. \underline{Soit} $Z_o$ \underline{un sous-schéma fermé d'un schéma noethérien} $Z$. \underline{Alors, l'inclusion de} $Z_o$ \underline{dans} $Z$ \underline{induit un isomorphisme du groupe de Grothendieck de la catégorie des faisceaux cohérents de} $\underline{O}_{Z_o}$ \underline{-modules dans le groupe de Grothendieck de la catégorie des faisceaux cohérents sur} $Z$ \underline{à support dans} $Z_o$ .
+
+Ce lemme permet de définir la caractéristique d'Euler-Poincaré $\chi(\mathcal{F})$ d'un faisceau cohérent $\mathcal{F}$ sur $X$ à support dans $Y$, de façon à ce que,
+
+(i) Si $\mathcal{F}$ est un faisceau cohérent de $\underline{O}_Y$-modules, alors
+
+\begin{equation}\tag{1.4.1}
+\chi(\mathcal{F}) \;=\; \dim_k H^0(\mathcal{F}) - \dim_k H^1(\mathcal{F})
+\end{equation}
+(ii) $\chi$ est additif relativement aux suites exactes courtes.
+
+Si les faisceaux de cohomologie d'un complexe $K$ de $\underline{O}_X$-modules sont des faisceaux cohérents à support dans $Y$, on pose
+
+\begin{equation}\tag{1.4.2}
+\chi(K) \;=\; \Sigma \, (-1)^i \, \chi(\underline{H}^i(K)) \qquad .
+\end{equation}
+Si $\mathcal{F}$ est localisé en un point $y$ de $Y$, on a
+
+\begin{equation}\tag{1.4.3}
+\chi(\mathcal{F}) \;=\; \mathrm{lg}_{\underline{O}_y}(\mathcal{F}_y) \, . \, [k(y) : k] \qquad .
+\end{equation}
+----- misprints recorded on page 2 -----
+[id 7II:0]
+WHERE: Exemple 1.2, third line
+PRINT: coîncidant (circumflex over the i)
+CORRECT: coïncidant
+TEX BEFORE: coïncidant
+NOTE: The accent over the i is a peaked circumflex, not two dots. The TeX silently corrects the misprint.
+
+[id 7II:1]
+WHERE: Lemme 1.4, third line
+PRINT: faisceauxcchérents
+CORRECT: faisceaux cohérents
+TEX BEFORE: faisceauxcchérents
+NOTE: Typing error in the print (no space; c where o is meant). The TeX keeps the printed reading. The second c has a gap on its right side like the other c's of the page; an o with a lost stroke is less likely.
+
+[id 7II:2]
+WHERE: Lemme 1.4, third line, before '-modules'
+PRINT: O_{ℤ_o}: the O is not underlined and the subscript is the typewriter's double-struck ℤ (two parallel diagonals)
+CORRECT: $\underline{O}_{Z_o}$
+TEX BEFORE: $\underline{O}_{Z_o}$
+NOTE: Elsewhere in the lemma Z_o is an ordinary Z and the structure sheaf is an underlined O. The TeX silently corrects both.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: coïncidant
+  NEW: coîncidant
+  OLD: $\underline{O}_{Z_o}$
+  NEW: $O_{\mathbb{Z}_o}$
+
+=================== PAGE 5 ===================
+----- corrected edition, expose_X_body.tex, page 5 -----
+%%%%%%%%%%  scan idx 12  |  folio 5  %%%%%%%%%%
+
+\underline{Proposition} 1.7. \underline{Soient} $(Y_i)_{1 \leq i \leq k}$ \underline{les composantes irréductibles de} $Y$, $f$ \underline{une fonction méromorphe sur} $X$, \underline{et}
+
+\begin{equation*}
+\mathrm{div}(f) \;=\; \sum n_i\, Y_i \;+\; Z
+\end{equation*}
+\underline{son diviseur}, \underline{avec} $|Z| \cap Y$ \underline{fini}. \underline{Alors}, \underline{posant} $D_i = n_i\, Y_i$, \underline{on a}, \underline{pour} $(a_i) \in \mathbb{Q}^k$ :
+
+\begin{equation*}
+(\sum a_i\, D_i)^2 \;=\; -\sum_{i<j} (a_i - a_j)^2\, (D_i, D_j) \;-\; \sum a_i^2\, (D_i, Z) \qquad .
+\end{equation*}
+\underline{Preuve} (d'après [7]). En vertu de 1.6 (v) (vi), on a
+
+\begin{equation*}
+\begin{aligned}
+(\sum_i a_i\, D_i)^2 \;&=\; \sum_i a_i\, (D_i,\; \sum_j a_j\, D_j) \;=\; \sum_i a_i\, (D_i,\; \sum_j a_j\, D_j - a_i\ \mathrm{div}\ f) \\[2pt]
+&=\; \sum a_i\, (D_i,\; \sum_{j \neq i} (a_j - a_i) D_j \;-\; a_i Z) \\[2pt]
+&=\; \sum_{i \neq j} a_i\, (a_j - a_i)(D_i, D_j) \;-\; \sum_i a_i^2\, (D_i, Z) \\[2pt]
+&=\; -\sum_{i<j} (a_i - a_j)^2\, (D_i, D_j) \;-\; \sum_i a_i^2\, (D_i, Z)
+\end{aligned}
+\end{equation*}
+\underline{Corollaire} 1.8. \underline{Sous les hypothèses de l'exemple} 1.1, \underline{prenons pour} $f$ \underline{une uniformisante} $\pi$ \underline{de} $S$. \underline{Ici}, $Z = 0$ \underline{et}
+
+\begin{equation*}
+(\sum k_i\, Y_i)^2 \;=\; -\sum_{i<j} \frac{1}{n_i n_j}\; (k_i\, n_j - k_j\, n_i)^2\, (Y_i,\, Y_j) \qquad ;
+\end{equation*}
+\underline{donc la forme d'intersection est négative}, \underline{et si} $Y$ \underline{est connexe}, \underline{son noyau est réduit aux multiples de} $\mathrm{div}(\pi)$.
+
+\underline{Corollaire} 1.9 (Mumford [7]). \underline{Sous les hypothèses de l'exemple} 1.2, \underline{prenons pour} $f$ \underline{un élément non nul de l'idéal maximal de l'anneau local} $\underline{O}_s$ . \underline{Ici}, $Z > 0$, \underline{de sorte que la forme d'intersection est définie négative}.
+----- misprints recorded on page 5 -----
+[id 7II:3]
+WHERE: Preuve of 1.7, last line of the displayed computation
+PRINT: (D_i D_j) with no comma
+CORRECT: (D_i, D_j)
+TEX BEFORE: (D_i, D_j)
+NOTE: The comma is printed in every other (D_i,D_j) on the page; here the space between D_i and D_j is blank. The TeX silently adds it.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: a_j)^2\, (D_i, D_j) \;-\; \sum_i
+  NEW: a_j)^2\, (D_i\ D_j) \;-\; \sum_i
+
+=================== PAGE 6 ===================
+----- corrected edition, expose_X_body.tex, page 6 -----
+%%%%%%%%%%  scan idx 13  |  folio 6  %%%%%%%%%%
+
+1.10. \underline{On se restreint}, \underline{pour la suite}, \underline{au cas considéré dans l'exemple} (1.1).
+
+Lichtenbaum [5] a prouvé que, dans ce cas, $X$ est automatiquement projectif sur $S$, de sorte qu'il n'est pas fatiguant de définir le complexe $Rf^{!}\underline{O}_S$ ([4] III 8.7 p. 190). Puisque $f$ est de dimension relative 1 et que $X$ et $S$ sont réguliers (Gorenstein suffirait) il existe ([4] V 8.3 et V 9.1) un faisceau inversible $\omega_{X/S}$ sur $X$, unique à isomorphisme unique près, tel que
+
+\begin{equation}\tag{1.10.1}
+Rf^{!}\underline{O}_S \;\simeq\; \omega_{X/S}[1] \quad .
+\end{equation}
+On désigne par $K$ un quelconque diviseur (effectif ou non) tel que $\omega \simeq \underline{O}(K)$.
+
+Soient $D$ un diviseur $\geq 0$ concentré sur $Y$ et $N$ son faisceau conormal :
+
+\begin{center}
+\begin{tikzcd}[column sep=large, row sep=large]
+D \arrow[rr, "i"] \arrow[dr, swap, "g"] & {} & X \arrow[dl, "f"] \\
+ {} & S &
+{} \end{tikzcd}\quad .
+\end{center}
+% STRUCTURE: Hand-drawn triangle, exactly 3 nodes and 3 arrows. NODES: (1) D, upper left; (2) X, upper
+%   right; (3) S, bottom centre (apex pointing down). ARROWS: (a) D --> X, horizontal, pointing RIGHT,
+%   single plain arrowhead at X, label "i" set ABOVE the shaft; (b) D --> S, diagonal descending to the
+%   RIGHT, single plain arrowhead at S, label "g" set to the LEFT of the shaft (outside the triangle);
+%   (c) X --> S, diagonal descending to the LEFT, single plain arrowhead at S, label "f" set to the
+%   RIGHT of the shaft (outside the triangle). No arrow is hooked/mono, epi/twoheaded, dashed, or marked
+%   iso; none carries a tilde. The thickened ink at the D-end of arrow (b) is the start-blob of the
+%   hand-drawn stroke, verified at high zoom to be NOT a second arrowhead. A lone full stop is typed on
+%   the baseline of S, well to the RIGHT of the diagram (sentence punctuation); it is not a node and is
+%   omitted from the tikzcd.
+On a
+
+\begin{equation}\tag{1.10.2}
+Rg^{!}\underline{O}_S = Ri^{!}Rf^{!}\underline{O}_S = Ri^{!}\omega_{X/S}[1] = \omega_{X/S}\big|\ D \otimes N^{\vee}[0]
+\end{equation}
+En vertu du théorème de dualité ([4] V 11.1 p.210),
+
+\begin{equation}\tag{1.10.3}
+Rg_{*}\, Rg^{!}\underline{O}_S \;\simeq\; \mathrm{RHom}(Rg_{*}\, \underline{O}_D,\underline{O}_S) \quad .
+\end{equation}
+De plus, pour tout $\underline{O}_S$-module $M$ concentré au point fermé, on a
+
+\begin{equation}\tag{1.10.4}
+\chi(\mathrm{RHom}(M,\underline{O}_S)) \;=\; -\,\chi(M)
+\end{equation}
+de sorte qu'ici, utilisant (1.4.4) et (1.10.3), on obtient
+
+\begin{equation*}
+\chi(Rg^{!}\underline{O}_S) \;=\; -\,\chi(\underline{O}_D) \quad .
+\end{equation*}
+Puisque (1.4.6)
+
+\begin{equation*}
+\chi(Rg^{!}\underline{O}_S) = \chi(\underline{O}_D) + \deg_D(Rg^{!}\underline{O}_S) \qquad , 
+\end{equation*}
+----- misprints recorded on page 6 -----
+[id 7II:4]
+WHERE: 1.10, second paragraph, last line before (1.10.1)
+PRINT: un faisceau inversible ω_{X/S} sur S, unique à isomorphisme unique près
+CORRECT: un faisceau inversible $\omega_{X/S}$ sur $X$
+TEX BEFORE: un faisceau inversible $\omega_{X/S}$ sur $S$, unique
+NOTE: omega_{X/S} is an invertible sheaf on X: (1.10.1) identifies it with Rf^! O_S[-1], a complex on X, and omega = O(K) with K a divisor on X. The TeX keeps the printed reading.
+
+[id 7II:5]
+WHERE: 1.10, second paragraph, second line
+PRINT: il n'est pas fatiguant de définir
+CORRECT: fatigant
+TEX BEFORE: il n'est pas fatiguant de définir
+NOTE: Spelling slip of the typescript: the adjective is 'fatigant' ('fatiguant' is the participle). The TeX keeps the printed reading.
+
+=================== PAGE 7 ===================
+----- corrected edition, expose_X_body.tex, page 7 -----
+%%%%%%%%%%  scan idx 14  |  folio 7  %%%%%%%%%%
+
+ on en conclut par $(1.10.2)$ que
+
+\begin{equation*}
+- 2\,\chi(\underline{O}_D) \;=\; \deg_D\,(Rg^{!}\underline{O}_S) \;=\; \deg_D\,(\omega|D \otimes N^{\vee}) \;=\; \deg_D\,(\omega) - \deg_D(N) \qquad ,
+\end{equation*}
+ce qui, par 1.6 (ii) et (v) se réécrit
+
+\underline{Proposition} 1.11. \underline{Sous les hypothèses} (1.1), \underline{quel que soit le diviseur} $D \geq 0$ \underline{concentré sur} $Y$, \underline{on a}
+
+\begin{equation*}
+\chi(\underline{O}_D) \;=\; - \frac{1}{2}\,(D,D+K) \qquad .
+\end{equation*}
+1.12. On désignera par $d$ le pgcd des multiplicités géométriques des composantes irréductibles de $X_s = f^{-1}(s)$, i.e. le pgcd des longueurs des anneaux locaux des points maximaux de la fibre spéciale géométrique de $f$. Si $X_{\eta}$ a un point rationnel, i.e. si $f : X \longrightarrow S$ a une section $x$, alors $d = 1$ ; plus précisément $f$ est lisse en $x(s)$. En effet, $x$ est une immersion fermée de schémas réguliers, donc est une immersion régulière et on applique EGA IV 17.12.1.
+
+Voici la démonstration, d'après M. Artin, d'un cas particulier d'un théorème de M. Raynaud [9], qui suppose seulement $d$ premier à la caractéristique $p$ de $k$.
+
+\underline{Théorème} 1.13. \underline{Avec les notations précédentes}, \underline{si} $Y$ \underline{est géométriquement connexe et si} $d = 1$, \underline{alors} $X$ \underline{est cohomologiquement plat sur} $S$ \underline{en dimension} 0 (EGA III 7.8.1), \underline{plus précisément} (EGA III 7.6.9 (ii)) \underline{on a}
+
+\begin{equation*}
+k \xrightarrow{\;\sim\;} H^0(X_s,\, \underline{O}_{X_s}).
+\end{equation*}
+On se ramène aisément au cas où $S$ est strictement local. Comme $Y$ est géométriquement connexe, $H^0(Y,\underline{O}_Y)$ est une extension radicielle de $k$, et puisque $(d,p)=1$, une au moins des composantes irréductibles de $Y$ est
+----- misprints recorded on page 7 -----
+[id 7II:6]
+WHERE: first display, second member
+PRINT: deg_D (Rg^! O_D) (subscript D, clearly printed)
+CORRECT: \deg_D\,(Rg^{!}\underline{O}_S)
+TEX BEFORE: \deg_D\,(Rg^{!}\underline{O}_D)
+NOTE: g : D -> S, so g^! applies to O_S; page 6 computes chi(Rg^! O_S) and (1.10.2) gives Rg^! O_S = omega|D (x) N^v, which the next member uses. The TeX keeps the printed reading.
+
+[id 7II:7]
+WHERE: Proposition 1.11, first line
+PRINT: quelque soit le diviseur (underlined)
+CORRECT: \underline{quel que soit le diviseur}
+TEX BEFORE: \underline{quelque soit le diviseur}
+NOTE: Spelling slip of the typescript ('quel que soit'). The TeX keeps the printed reading.
+
+=================== PAGE 8 ===================
+----- corrected edition, expose_X_body.tex, page 8 -----
+%%%%%%%%%%  scan idx 15  |  folio 8  %%%%%%%%%%
+géométriquement réduite, et on en déduit facilement que $H^0(Y,\underline{O}_Y) = k$.
+
+Soit $D$ un diviseur sur $X$ tel que
+
+\begin{equation*}
+Y \leq D < X_s \qquad .
+\end{equation*}
+Puisque $d = 1$, $D$ n'est pas multiple rationnel de $X_s$, donc par 1.8
+
+\begin{equation*}
+(D,X_s-D) \;=\; - \,(D,D) \;>\; 0 \qquad .
+\end{equation*}
+Le diviseur $Y$ a donc une composante irréductible $E$ telle que
+
+\begin{equation*}
+0 < E \leq X_s-D \quad \text{et} \quad (D,E) > 0 \qquad .
+\end{equation*}
+Considérons le diagramme
+
+\begin{center}
+\begin{tikzcd}[column sep=large, row sep=large]
+0 \arrow[r] & \underline{O}(-D-E) \arrow[r] \arrow[d, "\varphi"] & \underline{O} \arrow[r] \arrow[d, equal] & \underline{O}_{D+E} \arrow[r] \arrow[d, "\psi"] & 0 \\
+0 \arrow[r] & \underline{O}(-D) \arrow[r] & \underline{O} \arrow[r] & \underline{O}_D \arrow[r] & 0
+\end{tikzcd}\qquad ,
+\end{center}
+% STRUCTURE: Two rows of five nodes each, 10 nodes total, arranged in a 2x5 grid. TOP ROW (left to
+%   right): node T1 = 0 ; node T2 = \underline{O}(-D-E) ; node T3 = \underline{O} ; node T4 =
+%   \underline{O}_{D+E} ; node T5 = 0. BOTTOM ROW (left to right): node B1 = 0 ; node B2 =
+%   \underline{O}(-D) ; node B3 = \underline{O} ; node B4 = \underline{O}_D ; node B5 = 0. HORIZONTAL
+%   ARROWS, top row (4, all plain single-headed \longrightarrow pointing right, all unlabelled): T1 ->
+%   T2 ; T2 -> T3 ; T3 -> T4 ; T4 -> T5. HORIZONTAL ARROWS, bottom row (4, all plain single-headed
+%   \longrightarrow pointing right, all unlabelled): B1 -> B2 ; B2 -> B3 ; B3 -> B4 ; B4 -> B5. VERTICAL
+%   ARROWS (3, all pointing downward from the top row to the bottom row): (i) T2 -> B2, plain
+%   single-headed arrow pointing down, labelled \varphi, the label printed to the RIGHT of the arrow
+%   shaft; (ii) T3 -> B3, NOT an arrow: two parallel vertical strokes with no arrowhead at either end,
+%   i.e. an equality/identity bar between \underline{O} and \underline{O}; unlabelled; (iii) T4 -> B4,
+%   plain single-headed arrow pointing down, labelled \psi, the label printed to the RIGHT of the arrow
+%   shaft. No arrows are hooked, doubled-headed, dashed or marked iso. Columns 1 and 5 (the zeros) carry
+%   no vertical arrows. OUTSIDE THE DIAGRAM: a comma is printed at the far right of the page, on the
+%   baseline of the bottom row, after node B5; it is the terminal punctuation of the displayed diagram
+%   and cannot be placed inside the tikzcd body.
+le diagramme du serpent fournit un isomorphisme entre $\mathrm{Ker}(\psi)$ et $\mathrm{Coker}(\varphi)$. Ce conoyau n'est autre que la restriction de $\underline{O}(-D)$ à $E$, d'où une suite exacte
+
+\begin{equation*}
+0 \longrightarrow \underline{O}(-D)|E \longrightarrow \underline{O}_{D+E} \longrightarrow \underline{O}_D \longrightarrow 0 \qquad .
+\end{equation*}
+Par construction $\deg_E(\underline{O}(-D)|E) = - (D,E) < 0$, donc $H^0(\underline{O}(-D)|E) = 0$, et la flèche de restriction
+
+\begin{equation*}
+0 \longrightarrow H^0(\underline{O}_{D+E}) \longrightarrow H^0(\underline{O}_D)
+\end{equation*}
+est injective. Ceci permet de construire par récurrence une suite de diviseurs
+
+\begin{equation*}
+Y = D_0 \leq D_1 \leq \ldots \leq D_n = X_s
+\end{equation*}
+telle que $H^0(\underline{O}_{D_i})$ s'injecte dans $H^0(\underline{O}_{D_{i-1}})$, donc $H^0(\underline{O}_{X_s}) = H^0(\underline{O}_Y) = k$, ce qui achève la démonstration de 1.13.
+----- misprints recorded on page 8 -----
+[id 7II:8]
+WHERE: line 'Par construction ...' after the exact sequence
+PRINT: deg_E(O(-D) = - (D,E) < 0 (only one closing parenthesis)
+CORRECT: $\deg_E(\underline{O}(-D)) = - (D,E) < 0$
+TEX BEFORE: $\deg_E(\underline{O}(-D) = - (D,E) < 0$
+NOTE: The parenthesis opened after deg_E is never closed in the print. The TeX keeps the printed reading.
+
+=================== PAGE 9 ===================
+----- corrected edition, expose_X_body.tex, page 9 -----
+%%%%%%%%%%  scan idx 16  |  folio 9  %%%%%%%%%%
+
+Le fait suivant est prouvé dans [5] ou [10].
+
+\underline{Théorème} 1.14. (Castelnuovo, Enriques,...). \underline{Sous les hypothèses} (1.1), \underline{soit} $D$ \underline{un diviseur réduit irréductible contenu dans} $Y$. \underline{Supposons que} $H^1(D,\underline{O}_D) = 0$ \underline{et que,} \underline{posant} $k' = H^0(D,\underline{O}_D)$, \underline{on ait}
+
+\begin{equation*}
+(D,D) \; = \; - [k' : k] \qquad .
+\end{equation*}
+\underline{Alors,} $D$ \underline{est une droite projective sur} $k'$ \underline{et il existe un} $S$-\underline{schéma régulier} $X_1$ , \underline{un point fermé} $x_1$ \underline{de} $X_1$ \underline{de corps résiduel} $k'$ \underline{et un isomorphisme entre} $X$ \underline{et le} $S$-\underline{schéma déduit de} $X_1$ \underline{par éclatement de} $x_1$, \underline{cet isomorphisme identifiant} $D$ \underline{à la fibre au-dessus de} $x_1$ \underline{dans} $X$.
+
+On appelle un diviseur $D$ possédant ces propriétés une \underline{courbe exceptionnelle de première espèce}.
+
+Je ne résiste pas au plaisir de démontrer la proposition suivante de Néron [8] prop 1' p. 90 :
+
+\underline{Proposition} 1.15. \underline{Supposons que} $X_\eta$ \underline{soit une courbe elliptique} \underline{(en particulier ait une section)} \underline{et que} $X$ \underline{ne contienne aucune courbe exceptionnelle de première espèce.} \underline{Alors,} \underline{avec la notation} (1.10.1), \underline{on a}
+
+\begin{equation*}
+f^*f_* \; \omega_{X/S} \qquad \stackrel{\sim}{\longrightarrow} \qquad \omega_{X/S}
+\end{equation*}
+\underline{universellement}.
+
+Comme $d = 1$ (1.12), il suffit, d'après (1.13), de prouver que $\omega_{X/S}$ est isomorphe à $\underline{O}_X$ ; puisque $\omega_{X/S}$ est trivial sur la courbe elliptique $X_\eta$ , on sait a priori que
+
+\begin{equation*}
+\omega_{X/S} \qquad \simeq \qquad \underline{O}(\Sigma \, n_i \, Y_i) \qquad , 
+\end{equation*}
+----- misprints recorded on page 9 -----
+[id 7II:9]
+WHERE: paragraph after Théorème 1.14 ('On appelle un diviseur D ...')
+PRINT: possèdant (grave accent)
+CORRECT: possédant
+TEX BEFORE: possédant
+NOTE: The accent falls to the right, unlike the acute accents of 'propriétés' on the same line. The TeX silently corrects the misprint.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: possédant
+  NEW: possèdant
+
+=================== PAGE 11 ===================
+----- corrected edition, expose_X_body.tex, page 11 -----
+%%%%%%%%%%  scan idx 18  |  folio 11  %%%%%%%%%%
+
+(b) Supposons en outre le corps résiduel $k(s)$ algébriquement clos. Montrer que le diagramme des composantes irréductibles de $X_s$ est multiple de l'un des diagrammes considérés par Néron [8] p. 124-125, 4è colonne (cas a à c 8). Ce diagramme détermine les genres des composantes irréductibles réduites, leur multiplicité dans $X_s$, la nature et la disposition des singularités de $(X_s)_{\mathrm{red}}$ .
+
+On traitera d'abord le cas où $X_s$ est irréductible ; ce cas exclu, on prouvera que toute composante irréductible réduite est une droite projective de self-intersection $-$ 2. Si $X_s = \Sigma\ n_i\ D_i$ est la décomposition de $X_s$ en diviseurs irréductibles réduits, on réécrira cette condition
+
+\begin{equation}\tag{*}
+n_i \;=\; \frac{1}{2} \sum_{j \neq i} n_j \ (D_i\ D_j) \qquad\qquad .
+\end{equation}
+D'autre part, $X_s$ est connexe, de sorte que :
+
+(**) Quels que soient $i$ et $j$, il existe une chaîne $i = i_1, i_2 \ldots i_n = j$ avec $(D_{i_k}\ D_{i_{k+1}}) \neq 0$ .
+
+On cherchera alors toutes les solutions en nombres entiers de $(*) + (**)$. On montrera d'abord que, sauf dans les cas b2 et c2 de Néron, les nombres d'intersection $(D_i D_j)$ sont égaux à zéro ou un.
+
+
+2. \underline{Intersections italiennes}
+
+Soient $S'$ et $S$ deux surfaces projectives lisses sur un corps $k$ et $f : S' \longrightarrow S$ un morphisme birationnel. Si $D$ et $E$ sont deux diviseurs sur $S$, on a
+
+\begin{equation*}
+(D,E) = (f^* \, D, \ f^* \, E) \qquad\qquad , \qquad 
+\end{equation*}
+----- misprints recorded on page 11 -----
+[id 7II:10]
+WHERE: formula (*), coefficient inside the sum
+PRINT: \sum_{j \neq i} n_i (D_i D_j): subscript i on the coefficient
+CORRECT: \sum_{j \neq i} n_j
+TEX BEFORE: \sum_{j \neq i} n_i
+NOTE: Wrong index in the print. From (X_s . D_i) = 0 and (D_i . D_i) = -2 one gets 2 n_i = sum over j != i of n_j (D_i . D_j), so the coefficient inside the sum is n_j. The TeX keeps the printed reading.
+
+[id 7II:11]
+WHERE: paragraph 'On cherchera alors ...', first line
+PRINT: toutes les solutions en nombre entiers
+CORRECT: en nombres entiers
+TEX BEFORE: en nombre entiers
+NOTE: Agreement slip in the typescript. The TeX keeps the printed reading.
+
+=================== PAGE 14 ===================
+----- corrected edition, expose_X_body.tex, page 14 -----
+%%%%%%%%%%  scan idx 21  |  folio 14  %%%%%%%%%%
+
+\underline{Proposition} 2.3. \underline{Quel que soit} $t \in S^*$, \underline{il existe une et une seule suite de transformés birationnels de} $S$ $(S_i)_{0 \leqslant i \leqslant n+1}$ \underline{et de points fermés} $t_i \in S_i$ $(0 \leqslant i \leqslant n)$ \underline{telle que}
+
+(i)\quad $S_o = S$, \underline{et} $S_{i+1}$ \underline{est l'éclaté de} $S_i$ \underline{le long de} $\{t_i\}$
+
+(ii)\quad $t_{i+1} \in t_i^*$\quad $(0 \leqslant i < n)$ \underline{et} $t = t_n^*$ .
+
+\underline{De plus}, \underline{quel que soit le transformé birationnel} $(S',p')$ \underline{de} $S$, \underline{pour que} $t$ \underline{appartienne à l'image de} $\mathrm{Irr}({p'}^{-1}(s))$ \underline{dans} $S^*$, \underline{il faut et il suffit que} $S'$ \underline{domine} $S_{n+1}$.
+
+On appelle $n$ l'ordre de $t$. On désignera ici par $S(t)$ (resp. par $S_+(t)$) le transformé birationnel $S_n$ (resp. $S_{n+1}$) de $S$. Par abus de notation, on désignera encore par $t$ le point fermé $t_n$ de $S_n$ et par $t^*$ son image réciproque $t_n^*$ dans $S_{n+1}$.
+
+On munit $S^*$ de l'ordre suivant :
+
+\begin{equation*}
+t_1 \prec t_2 \quad \Longleftrightarrow \quad S_+(t_2) \ \mbox{domine} \ S_+(t_1) \qquad .
+\end{equation*}
+Si $t_1 \prec t_2$, alors $k(t_2)$ est une extension de $k(t_1)$. L'ensemble ordonné $S^*$ a pour plus petit élément $s^*$, et toute partie majorée de $S^*$ est finie et totalement ordonnée ($S^*$ est un ``arbre de souche $s^*$''). De plus, l'ordre $n$ de $t \in S^*$ est la distance, dans l'arbre $S^*$, de $s^*$ à $t$ ($n = \#[s^*,t]$).
+
+La proposition suivante explicite la description 2.1 des transformés birationnels de $S$.
+
+\underline{Proposition} 2.4. \underline{La fonction qui à un transformé birationnel} $p : S' \to S$ \underline{de} $S$ \underline{associe la partie} $\mathrm{Irr}(p^{-1}(s))$ \underline{de} $S^*$ \underline{induit une bijection entre l'ensemble} $I$ (2.1) \underline{et l'ensemble des parties finies de} $S^*$ \underline{qui}, \underline{avec tout élément},
+----- misprints recorded on page 14 -----
+[id 7II:12]
+WHERE: paragraph after the order on S*, end ('(n = #[s*,t])')
+PRINT: (n = #[s*,t]) with closed brackets on both sides
+CORRECT: ($n = \#\,]s^*,t]$)
+TEX BEFORE: ($n = \#[s^*,t]$)
+NOTE: Off by one as printed. s* has order 0 (Proposition 2.3 with n = 0, t_0 = s), and the closed interval [s*,t] has n+1 elements, while the distance from s* to t is n. The suggested reading is the half-open interval ]s*,t]; n+1 = #[s*,t] is the other possibility. This may be the author's slip rather than a typing error. The TeX keeps the printed reading.
+
+=================== PAGE 15 ===================
+----- corrected edition, expose_X_body.tex, page 15 -----
+%%%%%%%%%%  scan idx 22  |  folio 15  %%%%%%%%%%
+\underline{contiennent ses prédécesseurs}.
+
+Soit $D$ un diviseur $\geq 0$ sur $S$ et $t \in S^*$. On dit que $t$ \underline{appartient} à $D$ si le point fermé $t$ de $S(t)$ (2.3) appartient au transformé pur (= adhérence schématique de $D - \{s\}$) de $D$ sur $S(t)$.
+
+\underline{Définition} 2.5. \underline{Soient} $t$, $t' \in S^*$. \underline{On dit que} $t'$ \underline{est} proche \underline{de} $t$ \underline{si} $t' \in S_+(t)^*$ (2.2) \underline{et appartient à la curvetta} $t^*$ \underline{de} $t$ (2.3).
+
+Si $t'$ est un successeur immédiat de $t$, alors $t'$ est proche de $t$ ; si dans une suite $(t_i)_{0 \leq i \leq n}$ chaque $t_{i+1}$ est successeur immédiat de $t_i$, et si $t_n$ est proche de $t_0$, alors $t_i$ est proche de $t_0$ pour $0 < i \leq n$ et $t_n$ n'est pas proche de $t_i$ pour $0 < i \leq n-1$.
+
+(2.6)  Soient $A$ un anneau local noethérien de dimension $n$, $T$ son spectre, $m$ son idéal maximal, $k = A/m$ son corps résiduel et $P = \sum_{0 \leq i < n} a_i X^i$ son polynôme de Hilbert-Samuel :
+
+\begin{equation*}
+P(r) \;=\; \dim_k(m^r/m^{r+1}) \qquad \text{pour } r \text{ grand.}
+\end{equation*}
+Rappelons que la multiplicité $\mu_s$ dans $T$ du point fermé $s$ vérifie par définition
+
+\begin{equation*}
+a_{n-1} \;=\; \mu_s/(n-1)\, ! \qquad .
+\end{equation*}
+Lorsque $n = 1$, on a donc simplement
+
+\begin{equation*}
+\mu_s \;=\; \dim_k m^r/m^{r+1} \qquad \text{pour } r \text{ grand.}
+\end{equation*}
+En termes géométriques, $\mu_s$ peut se définir comme le degré, dans l'espace projectif sur $k$ $P_k(m/m^2)$, de la fibre spéciale de l'éclaté de $T$ le long du sous-schéma $\{s\}$.
+----- misprints recorded on page 15 -----
+[id 7II:13]
+WHERE: paragraph after Proposition 2.4, first line
+PRINT: Soient D est un diviseur ≥ O sur S
+CORRECT: Soient $D$ un diviseur
+TEX BEFORE: Soient $D$ est un diviseur
+NOTE: Superfluous 'est': the sentence mixes 'Soient D un diviseur' and 'Si D est un diviseur'. The TeX keeps the printed reading.
+
+[id 7II:14]
+WHERE: paragraph after Définition 2.5, last line
+PRINT: t_n n'est pas proche de t_i pour 0<i≤n-1
+CORRECT: pour $0 < i < n-1$
+TEX BEFORE: pour $0 < i \leq n-1$
+NOTE: As printed the claim fails for i = n-1 when n >= 2. t_n is an immediate successor of t_{n-1}, so by the first sentence of the same paragraph it is proche de t_{n-1}. The bound must exclude n-1. The TeX keeps the printed reading.
+
+=================== PAGE 17 ===================
+----- corrected edition, expose_X_body.tex, page 17 -----
+%%%%%%%%%%  scan idx 24  |  folio 17  %%%%%%%%%%
+
+\underline{Proposition} 2.7. \underline{Soient} $T$ \underline{un diviseur} $\geq 0$ \underline{dans un schéma régulier} $U$, $s$ \underline{un point fermé de} $U$, $U_1$ \underline{l'éclaté de} $U$ \underline{le long de} $\{s\}$, $s^*$ \underline{l'image réciproque de} $s$ \underline{dans} $U_1$, $T'$ \underline{le transformé pur de} $T$ \underline{sur} $U_1$ \underline{et} $T^*$ \underline{son transformé total}.
+
+\underline{Il y a identité entre}
+
+(i) \underline{La multiplicité}, \underline{au sens de Samuel}, \underline{du point} $s$ \underline{de} $T$.
+
+(ii) \underline{Le degré}, \underline{dans l'espace projectif} $s^*$, \underline{de} $s^* \cap T'$.
+
+(iii) \underline{La multiplicité de} $s^*$ \underline{dans le diviseur} $T^*$.
+
+2.8. Reprenons les hypothèses de 2.0. Soit $D$ un diviseur $\geq 0$ sur $S$ et $t \in S^*$. La \underline{multiplicité} $\mu_t(D)$ \underline{de} $D$ \underline{en} $t$ est, par définition, la multiplicité en $t$ du transformé pur de $D$ sur $S(t)$ (2.3). La fonction de $t$ $\mu_t(D)$ a pour support l'ensemble des points infiniment voisins de $s$ qui appartiennent à $D$ (2.4). Lorsque $D$ est régulier, les nombres $\mu_t(D).[k(t) : k(s)]$ sont égaux à zéro ou un : en effet, les transformés purs $D'$ de $D$ sont isomorphes à $D$, et on applique la définition (2.6) des multiplicités.
+
+Les nombres d'intersections se calculent en termes de multiplicités :
+
+\underline{Théorème} 2.9. \underline{Si les diviseurs} $D$ \underline{et} $E$ \underline{ne se coupent qu'en} $s$, \underline{on a}
+
+\begin{equation*}
+(D,E) \;=\; \sum_{t \in S^*} \mu_t(D)\mu_t(E)[k(t):k]
+\end{equation*}
+\underline{la somme étant étendue aux points infiniment voisins de} $s$ \underline{communs à} $D$ \underline{et} $E$.
+
+\underline{Preuve}. Soit $p : S' \longrightarrow S$ un transformé birationnel de $S$. On désigne par $D^*$ et $E^*$ (resp. par $D'$ et $E'$) les transformés totaux (resp. purs) de $D$ et $E$.
+----- misprints recorded on page 17 -----
+[id 7II:15]
+WHERE: 2.8, last sentence ('en effet, les transformés ... de D sont isomorphes à D')
+PRINT: les transformés pur D' de D ('pur' without s)
+CORRECT: transformés purs $D'$
+TEX BEFORE: les transformés purs $D'$ de $D$
+NOTE: Agreement slip of the typescript. At the typewriter pitch (about 19.5 px per character) exactly one space slot separates 'pur' from D', so no s was typed or lost to the scan. The TeX silently corrects the misprint.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: transformés purs $D'$
+  NEW: transformés pur $D'$
+
+=================== PAGE 18 ===================
+----- corrected edition, expose_X_body.tex, page 18 -----
+%%%%%%%%%%  scan idx 25  |  folio 18  %%%%%%%%%%
+
+\underline{Lemme} 2.9.1. (i) \underline{Le transformé total} $D^*$ \underline{est caractérisé par} :
+
+(a) $D^* - D'$ \underline{est concentré sur} $p^{-1}(s)$
+
+(b) \underline{si} $X$ \underline{est concentré sur} $p^{-1}(s)$, \underline{alors} $(D^*,X) = 0$
+
+(ii) $(D,E) = (D^*,E^*) = (D^*,E') = (D',E^*)$.
+
+L'assertion (i)(a) est triviale, et (i)(b) résulte de 1.6 (vi). Que (a) et (b) déterminent $D^*$ résulte de 1.9. Par construction, le conoyau de la flèche de $\underline{O}_E$ dans $p_* \underline{O}_{E'}$ est fini, d'où
+
+\begin{equation*}
+(D^*,E') = \chi(p^*\underline{O}_D \otimes \underline{O}_{E'}) = \chi(\underline{O}_D \otimes p_* \underline{O}_{E'}) = \chi(\underline{O}_D \otimes \underline{O}_E) = (D,E)
+\end{equation*}
+ce qui, par (i), entraîne (ii).
+
+Prenons pour $S'$ l'éclaté de $S$ en $s$. D'après (2.9.1), (2.6.3) et 2.7, on a
+
+\begin{equation}\tag{2.9.2}
+\begin{aligned} (D,E) &= (D^*,E') = (D' + \mu_s(D)\, s^*,E')\\ &= (D',E') + \mu_s(D)(s^*,E') = (D',E') + \mu_s(D)\mu_s(E)[k(s):k] \;. \end{aligned}
+\end{equation}
+Le théorème 2.9. se prouve maintenant par récurrence sur $(D,E)$, par une application itérée de (2.9.2).
+
+(2.10) Soient $A$ un anneau local noethérien réduit de dimension un, $s$ le point fermé de $\mathrm{Spec}(A)$, $\tilde{A}$ le normalisé de $A$ et $k$ un corps dont $k(s)$ soit extension finie. Supposons que $\tilde{A}$ soit fini sur $A$ (i.e. que le complété $A^{\wedge}$ soit réduit). On appellera \underline{invariant} $\delta$ \underline{de la singularité de} $\mathrm{Spec}(A)$ \underline{en} $s$ la longueur, calculée sur $k$, du $A$-module $\tilde{A}/A$.
+----- misprints recorded on page 18 -----
+[id 7II:16]
+WHERE: proof of Lemme 2.9.1, sentence 'Par construction, le conoyau de la flèche de O_E dans f_* O_E est fini'
+PRINT: f_* O_E: the second subscript is a plain E with no prime (same width as the first O_E; nothing between it and 'est')
+CORRECT: dans $f_* \underline{O}_{E'}$ est fini
+TEX BEFORE: dans $f_* \underline{O}_E$ est fini
+NOTE: f_* applies to a sheaf on S', and the arrow meant is O_E -> f_* O_{E'}: its finite cokernel gives chi(O_D (x) f_* O_{E'}) = chi(O_D (x) O_E) in the next display, which prints O_{E'} with a visible prime. The TeX keeps the printed reading.
+
+[id 7II:17]
+WHERE: (2.9.2), first line, coefficient of s*
+PRINT: (D' + μ(S) s*,E') with the subscript s typed on the line below μ, i.e. μ_s(S)
+CORRECT: \mu_s(D)\, s^*
+TEX BEFORE: \mu_s(S)\, s^*
+NOTE: By (2.6.3) and 2.7 the total transform is D* = D' + μ_s(D) s* (as in (2.11.1)), and the second line of (2.9.2) continues with μ_s(D)(s*,E'). The TeX keeps the printed reading.
+
+=================== PAGE 19 ===================
+----- corrected edition, expose_X_body.tex, page 19 -----
+%%%%%%%%%%  scan idx 26  |  folio 19  %%%%%%%%%%
+
+\underline{Théorème} 2.11. \underline{Soit} $D$ \underline{une courbe réduite tracée sur} $S$. \underline{Alors} :
+
+(i) \underline{Quel que soit} $t \in S^*$, \underline{on a}, \underline{avec les notations} 2.8
+
+\begin{equation*}
+\mu_t(D) \;=\; \sum_{t' \text{ proche de } t} \mu_{t'}(D)[k(t'):k(t)] \qquad .
+\end{equation*}
+(ii) \underline{Supposons le normalisé} $\widetilde{D}$ \underline{de} $D$ \underline{fini sur} $D$, \underline{et soit} $\delta = \chi(\underline{O}_{\widetilde{D}}/\underline{O}_D)$ \underline{l'invariant de la singularité de} $D$ \underline{en} $s$. \underline{Pour tous les} $t \in S^*$, \underline{à l'exception d'un nombre fini}, $\mu_t(D)$ \underline{est égal à zéro ou un}, \underline{et on a}
+
+\begin{equation*}
+\delta \;=\; \sum_{t \in S^*} \frac{1}{2}\,\mu_t(D)\,(\mu_t(D)-1)\,[k(t):k] \qquad .
+\end{equation*}
+Soient $p : S_1 \longrightarrow S$ l'éclaté de $S$ le long de $\{s\}$, $D^*$ le transformé total de $D$ et $D'$ son transformé pur. En vertu de (2.7), on a
+
+\begin{equation}\tag{2.11.1}
+D^* = D' + \mu_s(D)\, s^* \qquad \text{et}
+\end{equation}
+\begin{equation}\tag{2.11.2}
+\mu_s(D) = (s^*,D')\ .\ [k(s):k]^{-1} \qquad .
+\end{equation}
+La curvetta $s^*$ est non singulière, de sorte que, par 2.8 et la définition 2.5, la formule 2.9, appliquée aux diviseurs $s^*$ et $D'$ de $S_1$, s'écrit
+
+\begin{equation}\tag{2.11.3}
+(s^*,D') \;=\; \sum_{t' \text{ proche de } s} \mu_{t'}(D)\ [k(t'):k] \qquad .
+\end{equation}
+L'assertion (i) pour $s = t$ résulte de (2.11.2) et (2.11.3), et le cas général s'obtient en appliquant ce résultat au localisé en $t$ de $S(t)$ (2.3).
+
+Désignons par $m$ l'idéal maximal qui définit $\{s\}$, et soit $n \geq 0$. On sait (SGA VII 3.5) que
+
+\begin{equation}\tag{2.11.4}
+p_*\ \underline{O}_{S_1}(-n\ s^*) = m^n \quad \text{et} \quad R^i p_*\ \underline{O}_{S_1}(-n\ s^*) = 0 \quad (i > 0) \qquad .
+\end{equation}
+----- misprints recorded on page 19 -----
+[id 7II:18]
+WHERE: (2.11.3), left-hand side
+PRINT: (s*,D) with no prime on D
+CORRECT: (s^*,D') \;=\;
+TEX BEFORE: (s^*,D) \;=\;
+NOTE: The sentence before applies formula 2.9 to the divisors s* and D' of S_1, and assertion (i) for t = s is deduced by combining (2.11.3) with (2.11.2), which reads μ_s(D) = (s*,D').[k(s):k]^{-1}. D is a divisor on S, so (s*,D) is not defined. The TeX keeps the printed reading.
+
+=================== PAGE 20 ===================
+----- corrected edition, expose_X_body.tex, page 20 -----
+%%%%%%%%%%  scan idx 27  |  folio 20  %%%%%%%%%%
+
+On déduit de là, et de la suite exacte
+
+\begin{equation*}
+0 \longrightarrow \underline{O}_{S_1}(-n\ s^*) \longrightarrow \underline{O}_{S_1} \longrightarrow \underline{O}_{n\,s^*} \longrightarrow 0
+\end{equation*}
+que
+
+\begin{equation}\tag{2.11.5}
+p_*\ \underline{O}_{n\,s^*} \;=\; O_S/m^n \quad \text{et} \quad R^i p_*\ \underline{O}_{n\,s^*} \;=\; 0 \quad (i > 0)
+\end{equation}
+et que
+
+\begin{equation}\tag{2.11.6}
+\chi(\underline{O}_{n\,s^*}) \;=\; \chi(\underline{O}_S/m^n) \;=\; \frac{n(n+1)}{2} \ [k(s):k] \ .
+\end{equation}
+Faisons $n = 0$ dans (2.11.4). Quel que soit le complexe $K$ de faisceaux cohérents sur $S$, on a par la ``formule de projection''
+
+\begin{equation*}
+K \xrightarrow{\ \sim\ } Rp_*\ Lp^*K \qquad (\simeq K \overset{\mathbb{L}}{\otimes} Rp_*\ \underline{O}_{S_1}) \qquad .
+\end{equation*}
+En particulier, puisque $Lp^*\underline{O}_D = p^*\ \underline{O}_D = \underline{O}_{D^*}$, on a
+
+\begin{equation}\tag{2.11.7}
+p_*\ \underline{O}_{D^*} = \underline{O}_D \quad \text{et} \quad R^i p_*\underline{O}_{D^*} = 0 \quad (i>0) \qquad .
+\end{equation}
+Posons $E = \mu_s(D)\ s^*$ . D'après (2.11.1), (2.9.1) (i) b et (2.6.1) on a
+
+\begin{equation}\tag{2.11.8}
+\chi(\underline{O}_{D'\cap E}) = (D',E) = (D^* - E,E) = -(E,E) = -\mu_s(D)^2(s^*,s^*) = \mu_s(D)^2\ [k(s) : k] \qquad .
+\end{equation}
+La suite exacte
+
+\begin{equation*}
+0 \longrightarrow O_{D^*} \longrightarrow O_{D'} \oplus \underline{O}_E \longrightarrow \underline{O}_{D'\cap E} \longrightarrow 0
+\end{equation*}
+fournit par image directe, grâce à (2.11.7) des suites exactes
+
+\begin{equation*}
+0 \longrightarrow O_D \longrightarrow p_*\underline{O}_{D'} \oplus p_*\underline{O}_E \longrightarrow p_*\underline{O}_{D'\cap E} \longrightarrow 0
+\end{equation*}
+et
+
+\begin{equation*}
+0 \longrightarrow p_*\underline{O}_E \longrightarrow p_*\ \underline{O}_{D'\cap E} \longrightarrow p_*\underline{O}_{D'}/\underline{O}_D \longrightarrow 0 \qquad .
+\end{equation*}
+----- misprints recorded on page 20 -----
+[id 7II:19]
+WHERE: last display, the exact sequence after 'et'
+PRINT: 0 → f_*O_{D'}/O_D → f_*O_E → f_* O_{D'∩E} → 0 .
+CORRECT: 0 \longrightarrow f_*\underline{O}_E \longrightarrow f_*\ \underline{O}_{D'\cap E} \longrightarrow f_*\underline{O}_{D'}/\underline{O}_D \longrightarrow 0
+TEX BEFORE: 0 \longrightarrow f_*\underline{O}_{D'}/\underline{O}_D \longrightarrow f_*\underline{O}_E \longrightarrow f_*\ \underline{O}_{D'\cap E} \longrightarrow 0
+NOTE: The author's slip in the mathematics: the three terms are in the wrong order. The sequence before it, 0 -> O_D -> f_*O_{D'} (+) f_*O_E -> f_*O_{D'∩E} -> 0, makes O_D the fibre product. So f_*O_E -> f_*O_{D'∩E} is injective with cokernel f_*O_{D'}/O_D. Check on a node (μ_s(D) = 2, k(s) = k): the lengths are 3 for f_*O_E by (2.11.6), 4 for f_*O_{D'∩E} by (2.11.8) and δ = 1 for f_*O_{D'}/O_D. The printed order has alternating sum 1 - 3 + 4 = 2, so it cannot be exact; the corrected order gives 3 - 4 + 1 = 0. (2.11.9) on page 21 follows the printed order, writing χ(f_*O_{D'}/O_D) = ½μ_s(D)(μ_s(D)+1)[k(s):k] - μ_s(D)²[k(s):k]. It reaches the right value ½μ_s(D)(μ_s(D)-1)[k(s):k] only through a sign slip, since ½μ(μ+1) - μ² = -½μ(μ-1). A corrected edition must change both: the first line of (2.11.9) becomes μ_s(D)²[k(s):k] - ½μ_s(D)(μ_s(D)+1)[k(s):k]. The TeX keeps the printed reading.
+
+=================== PAGE 21 ===================
+----- corrected edition, expose_X_body.tex, page 21 -----
+%%%%%%%%%%  scan idx 28  |  folio 21  %%%%%%%%%%
+
+D'après (2.11.6) et (2.11.8), on a donc
+
+\begin{equation}\tag{2.11.9}
+\begin{aligned}
+\chi(p_*\underline{O}_{D'}/\underline{O}_D) &= \mu_s(D)^2\,[k(s) : k] - \frac{1}{2}\,\mu_s(D)(\mu_s(D)+1)[k(s): k] \\
+&= \frac{1}{2}\,\mu_s(D)(\mu_s(D)-1)[k(s) : k] \quad .
+\end{aligned}
+\end{equation}
+Les schémas $D$ et $D'$ sont réduits, ne diffèrent qu'en $s$, et $D'$ est fini sur $D$. Ces schémas ont donc même normalisé, et l'invariant $\delta$ de la singularité de $D$ en $s$ est somme de $\chi(p_*\underline{O}_{D'}/\underline{O}_D)$ et de la somme des invariants $\delta$ des singularités de $D'$ en les points de $D' \cap s^*$. Prouvons 2.11 (ii) par récurrence sur $\delta$. Si $\mu_s(D) > 1$, l'hypothèse de récurrence s'applique à $D'$, et 2.11 (ii) résulte de (2.11.9). Si $\mu_s(D) = 1$, alors $(D',s^*) = 1$ et $D' \cap s^*$ est un diviseur régulier de $D'$ ; par (EGA IV 19.1.1), $D'$ est régulier ; par (2.11.9), $D = D'$ est lui-même régulier et 2.11 (ii) résulte de 2.8.
+
+2.12. Soit $t \in S^*$ et $S'$ un transformé birationnel de $S$ qui domine $S_+(t)$ (2.3). On appellera \underline{transformé total} de $t$ sur $S'$, et on désignera encore par $t^*$, le transformé total sur $S'$ du diviseur $t^*$ de $S_+(t)$.
+
+Soit $\nu$ une fonction à support fini de $S^*$ dans $\mathbf{N}$ et supposons que $\nu$ vérifie, quel que soit $t \in S^*$
+
+\begin{equation}\tag{2.12.1}
+\nu(t) \;\geq\; \sum_{t' \ \mathrm{proche\ de}\ t} \nu(t')\,[k(t') : k(t)]
+\end{equation}
+(inégalité des points proches). Soient $f : S' \longrightarrow S$ un transformé birationnel de $S$ qui domine les $S_+(t)$ pour $t$ dans le support de $\nu$, et $\nu^*$ le diviseur $\sum_{t \in S^*} \nu(t)\ t^*$ sur $S'$.
+----- misprints recorded on page 21 -----
+[id 7II:20]
+WHERE: paragraph after (2.11.9), 'et de la somme des invariants ... des singularités de D' en les points de D'∩s*'
+PRINT: des invariants S des singularités: a typed capital S (same glyph as the S of 'Si', not the handwritten δ of 'l'invariant δ' two lines above)
+CORRECT: des invariants $\delta$ des singularités
+TEX BEFORE: des invariants $S$ des singularités
+NOTE: The sentence splits the invariant δ of D at s into χ(f_*O_{D'}/O_D) plus the sum of the δ-invariants of the singularities of D' on s*; the induction 'par récurrence sur δ' that follows rests on this. The typist struck S where δ was meant. The TeX keeps the printed reading.
+
+[id 7II:21]
+WHERE: (2.11.9), first line, right-hand side
+PRINT: = ½ μ_s(D)(μ_s(D)+1)[k(s): k] - μ_s(D)² [k(s) : k]
+CORRECT: &= \mu_s(D)^2\,[k(s) : k] - \frac{1}{2}\,\mu_s(D)(\mu_s(D)+1)[k(s): k] \\
+TEX BEFORE: &= \frac{1}{2}\,\mu_s(D)(\mu_s(D)+1)[k(s): k] - \mu_s(D)^2\,[k(s) : k] \\
+NOTE: Author's slip carried over from the last exact sequence of page 20, whose terms are in the wrong order (findings_016_020, page 20). By (2.11.6) χ(f_*O_E) = ½μ_s(D)(μ_s(D)+1)[k(s):k], by (2.11.8) χ(f_*O_{D'∩E}) = μ_s(D)²[k(s):k], and the correct sequence 0 → f_*O_E → f_*O_{D'∩E} → f_*O_{D'}/O_D → 0 gives μ_s(D)² - ½μ_s(D)(μ_s(D)+1) = ½μ_s(D)(μ_s(D)-1), the printed second line. As printed the first line equals -½μ_s(D)(μ_s(D)-1), so the printed equality is false (node, μ_s(D) = 2: 3 - 4 = -1, not 1). The second line is right. The TeX keeps the printed reading; a corrected edition applies this together with the page-20 correction.
+
+=================== PAGE 24 ===================
+----- corrected edition, expose_X_body.tex, page 24 -----
+%%%%%%%%%%  scan idx 31  |  folio 24  %%%%%%%%%%
+
+ et 2.14 (i) résulte de (2.11.4) et (2.11.6).
+
+Soit $I_{D'\cap T}$ l'idéal (monogène) de $\underline{O}_{D'}$ qui définit $D'\cap T$. Sous les hypothèses (ii), la suite exacte
+
+\begin{equation*}
+0 \longrightarrow I_{D'\cap T} \longrightarrow \underline{O}_{D'\cup T} \longrightarrow O_T \longrightarrow 0
+\end{equation*}
+montre que $D'\cup T$ vérifie l'hypothèse (i).
+
+La projection $p$ établit un isomorphisme entre $D$ et $D'$ ; par cet isomorphisme, à l'idéal de $\underline{O}_D$ qui définit le sous-schéma $D \cap \mathrm{Spec}(O_S/p_*(q\,J^n))$ de $D$ correspond l'idéal de $D'$ engendré par les sections globales de $q\,J^n$ sur $S_1$. Cet idéal est contenu dans l'idéal de $D'$ qui définit $D'\cap Y$. Il lui est en fait égal, car toute section de $\underline{O}_{D'\cup Y}$ se prolonge en une section de $\underline{O}_{S_1}$ : si $I_{D'\cup Y}$ est l'idéal qui définit $D'\cup Y$, l'obstruction au prolongement se trouve dans $R^1p_*(I_{D'\cup Y})$. On a
+
+\begin{equation*}
+\begin{array}{rl} I_{D'\cup Y} & = \underline{O}(-D')\cap q\,J^n = (\underline{O}(-D')\cap J^n) \cap q\,J^n = \underline{O}(-D')J^n \cap q\,J^n \\[2mm] & = (\underline{O}(-D')\cap q). J^n \end{array}
+\end{equation*}
+et, d'après (i) appliqué à $D'\cup T$, il n'y a pas d'obstruction.
+
+On a donc
+
+\begin{equation}\tag{2.14.2}
+\mathrm{lg}_{k(s)} (D\cap \mathrm{Spec}(\underline{O}_S/p_*(q\,J^n))) = \mathrm{lg}_{k(s)} (D'\cap Y) \quad .
+\end{equation}
+De l'isomorphie
+
+\begin{equation*}
+J^n \otimes \underline{O}_{D'}/q.\underline{O}_{D'} \stackrel{\sim}{\longrightarrow} \underline{O}_{D'}.J^n/\underline{O}_{D'}.q.J^n
+\end{equation*}
+on déduit que la suite suivante est exacte
+
+\begin{equation*}
+0 \longrightarrow J^n \otimes \underline{O}_{D'\cap T} \longrightarrow \underline{O}_{D'\cap Y} \longrightarrow \underline{O}_{D'\cap\ n\ s^*} \longrightarrow 0 \quad ,
+\end{equation*}
+de sorte que 
+----- misprints recorded on page 24 -----
+[id 7II:22]
+WHERE: second paragraph, first line, 'Soit I_{D'∩T} l'idéal (monogène de O_{D'} qui définit D'∩T'
+PRINT: l'idéal (monogène de O_{D'} qui définit D'∩T. The parenthesis is never closed (the mark after the subscript D is the prime)
+CORRECT: l'idéal (monogène) de $\underline{O}_{D'}$ qui définit
+TEX BEFORE: l'idéal (monogène de $\underline{O}_{D'}$ qui définit
+NOTE: Unclosed parenthesis in the print. The parenthesis encloses the remark 'monogène': the ideal of O_{D'} defining D'∩T is monogenic, which is what bounds the length of I_{D'∩T} ⊗ O_{s*} by (D',s*) = 1 in the next step. The TeX keeps the printed reading.
+
+[id 7II:23]
+WHERE: exact sequence after 'Sous les hypothèses (ii), la suite exacte', middle term
+PRINT: 0 → I_{D'∩T} → O_{D'∩T} → O_T → 0, with ∩ (open at the bottom) in both subscripts; ∪ on this page is open at the top (D'∪Y)
+CORRECT: \underline{O}_{D'\cup T}
+TEX BEFORE: \underline{O}_{D'\cap T}
+NOTE: The sequence must be 0 → I_{D'∩T} → O_{D'∪T} → O_T → 0: the kernel of O_{D'∪T} → O_T is the ideal of D'∩T in O_{D'}. With ∩ the first map is zero and O_{D'∩T} is a quotient of O_T, not the reverse. Tensoring the corrected sequence with O_{s*} gives lg((D'∪T)∩s*) ≤ 1 + lg(T∩s*) ≤ n+1, i.e. hypothesis (i) for D'∪T, which is used below ('d'après (i) appliqué à D'∪T', with I_{D'∪Y} = (O(-D')∩q).J^n). The ∩ of I_{D'∩T} is right. The TeX keeps the printed reading.
+
+[id 7II:24]
+WHERE: line after that exact sequence, 'montre que D'∩T vérifie l'hypothèse (i)'
+PRINT: montre que D'∩T vérifie l'hypothèse (i).
+CORRECT: montre que $D'\cup T$ vérifie
+TEX BEFORE: montre que $D'\cap T$ vérifie
+NOTE: Same slip as the middle term of the sequence: the subscheme that must satisfy hypothesis (i) is D'∪T, to which (i) is applied seven lines below ('d'après (i) appliqué à D'∪T'). For D'∩T ⊂ D' the hypothesis would hold trivially, since lg(D'∩s*) = 1. The TeX keeps the printed reading.
+
+[id 7II:25]
+WHERE: paragraph 'La projection p établit ...', 'l'obstruction ou prolongement se trouve dans R^1p_*(I_{D'∪Y})'
+PRINT: l'obstruction ou prolongement
+CORRECT: l'obstruction au prolongement
+TEX BEFORE: l'obstruction ou prolongement
+NOTE: Typing slip: the obstruction to extending sections of O_{D'∪Y} to S_1 is meant ('l'obstruction au prolongement'). The TeX keeps the printed reading.
+
+[id 7II:26]
+WHERE: last display, '0 → J^n ⊗ ... → O_{D'∩Y} → O_{D'∩ n s*} → 0 ,', first non-zero term
+PRINT: J^n ⊗_{D'∩T}: the subscript D'∩T follows ⊗ directly; no O was typed
+CORRECT: J^n \otimes \underline{O}_{D'\cap T}
+TEX BEFORE: J^n \otimes_{D'\cap T}
+NOTE: The kernel of O_{D'∩Y} → O_{D'∩ns*} is O_{D'}.J^n/O_{D'}.q.J^n ≅ J^n ⊗ O_{D'}/q.O_{D'} = J^n ⊗ O_{D'∩T} by the isomorphism displayed just before, and (2.14.3) uses its length lg(D'∩T). The typist omitted the O. The TeX keeps the printed reading.
+
+=================== PAGE 25 ===================
+----- corrected edition, expose_X_body.tex, page 25 -----
+%%%%%%%%%%  scan idx 32  |  folio 25  %%%%%%%%%%
+
+\begin{equation}\tag{2.14.3}
+\mathrm{lg}_{k(s)}\ (D' \cap Y) = n\ (D',s^*) + \mathrm{lg}_{k(s)}(D' \cap T) \quad .
+\end{equation}
+Puisque $(D',s^*) = 1$, 2.14 (ii) résulte de (2.14.2) et (2.14.3).
+
+Prouvons maintenant, par récurrence sur le nombre d'éléments dans le support de $\nu$, les assertions de 2.13 et l'assertion suivante :
+
+Si $D$ est un diviseur régulier sur $S$, alors,
+
+\begin{equation}\tag{2.14.4}
+\chi(D \cap \mathrm{Spec}(\underline{O}_S/I(\nu))) = \sum_{t\ \mathrm{sur}\ D} \nu(t)\ [k(t) : k] \quad .
+\end{equation}
+Si $\nu = 0$, alors $\nu^* = 0$, $I(\nu) = \underline{O}_S$ et 2.13 et (2.14.4) sont triviaux (la seconde assertion de (2.13) résulte d'une application itérée de (2.11.4) pour $n = 0$). Sinon, on a $\nu(s) > 0$, et il existe un $S$-morphisme $g : S' \longrightarrow S_1$. Pour chaque point fermé $a$ de $S_1$, soient $S_{1a}$ le localisé de $S_1$ en $a$, $\nu_a$ la restriction de $\nu$ à $S_{1a}^*$ , $S'_a$ le localisé $S'_a = S' \times_{S_1} S_{1a}$, $I(\nu_a) = g_* \underline{O}_{S'}(-\nu_a^*)$, $T_a = \mathrm{Spec}(\underline{O}_{S_1}/I(\nu_a))$, $T = \cup\ T_a$ (réunion finie disjointe) et $q$ l'idéal de $T$. On a, avec les notations de 2.14
+
+\begin{equation}\tag{2.14.5}
+g_* \underline{O}(-\nu^*) = q.J^{\nu(s)} \quad .
+\end{equation}
+L'hypothèse de récurrence s'applique aux $(S_{1a}, S'_a, \nu_a)$. On a donc
+
+\begin{equation}\tag{2.14.6}
+R^i g_* \underline{O}_{S'}(-\nu^*) = 0 \ \mathrm{pour}\ i > 0
+\end{equation}
+\begin{equation}\tag{2.14.7}
+\chi(T) = \sum_{t \in S^* \setminus \{s\}} \frac{\nu(t)\ (\nu(t)+1)}{2} [k(t) : k]
+\end{equation}
+et, d'après (2.14.4) appliqué au diviseur $s^*$ de $S_1$ et l'hypothèse (2.12.1)
+
+\begin{equation*}
+\mathrm{lg}_{k(s)}\ (T \cap s^*) = \sum_{t\ \mathrm{proche\ de}\ s} \nu(t)\ [k(t) : k(s)] \leq \nu(s) \quad .
+\end{equation*}
+----- misprints recorded on page 25 -----
+[id 7II:27]
+WHERE: (2.14.4), left-hand side
+PRINT: χ(D∩ Spec(O_S/I(ν)) = : three parentheses opened, two closed
+CORRECT: \chi(D \cap \mathrm{Spec}(\underline{O}_S/I(\nu))) =
+TEX BEFORE: \chi(D \cap \mathrm{Spec}(\underline{O}_S/I(\nu)) =
+NOTE: The parenthesis opened after χ is never closed in the print. The TeX keeps the printed reading.
+
+=================== PAGE 26 ===================
+----- corrected edition, expose_X_body.tex, page 26 -----
+%%%%%%%%%%  scan idx 33  |  folio 26  %%%%%%%%%%
+
+Cette inégalité nous permet d'appliquer 2.14 ; de (2.14.5), on tire
+
+\begin{equation*}
+R^i p_* \ g_* \ \underline{O}(-\nu^*) = 0 \ \mathrm{pour}\ i > 0
+\end{equation*}
+\begin{equation*}
+\mathrm{lg}_{k(s)}(\underline{O}_S/p_* \ g_* \ \underline{O}(-\nu^*)) = \frac{\nu(s)(\nu(s)+1)}{2} + \mathrm{lg}_{k(s)}\ (T)
+\end{equation*}
+de sorte que les assertions (2.13) résultent de (2.14.6) et (2.14.7). Enfin, 2.14 (ii) fournit
+
+\begin{equation*}
+\mathrm{lg}_{k(s)}\ (D \cap \mathrm{Spec}\ (\underline{O}_S/I(\nu))) = \nu(s) + \mathrm{lg}_{k(s)}\ (D' \cap T) \ ,
+\end{equation*}
+soit par (2.14.4) appliqué à $D'$,
+
+\begin{equation*}
+\begin{aligned}
+\chi(D \cap \mathrm{Spec}(\underline{O}_S/I(\nu))) &= \nu(s)\ [k(s) : k] + \sum_{\substack{t\ \mathrm{sur}\ D\\ t\ne s}} \nu(t)\ [k(t) : k] \\
+&= \sum_{t\ \mathrm{sur}\ D} \nu(t)\ [k(t) : k] \quad .
+\end{aligned}
+\end{equation*}
+Ceci achève la démonstration de 2.13.
+
+(2.15) Des bribes de ce qui précède se généralisent en dimension supérieure. Soit $S$ le spectre d'un anneau local régulier de dimension $n$ de point fermé $s$, $k(s)$ étant une extension finie de $k$. On peut encore considérer l'ensemble $I$ des schémas $f : S' \longrightarrow S$ déduit de $S$ par éclatements successifs de points fermés et poser comme en 2.1
+
+\begin{equation*}
+S^* = \varinjlim_{S' \in I} \ \mathrm{Irr}(f^{-1}(s))
+\end{equation*}
+$S^*$ s'appellera encore l'ensemble des \underline{points de} $S$ \underline{infiniment voisins de} $s$.
+
+Si $X$ est un sous-schéma fermé de $S$, et si $t \in S^*$, on définit comme en 2.8 la multiplicité de $X$ en $t$.
+
+Soient $f : S' \longrightarrow S$ un composé de morphismes d'éclatement de points fermés, $D$ un diviseur sur $S$, $D^* = f^* D$ son transformé total sur $S'$,
+----- misprints recorded on page 26 -----
+[id 7II:28]
+WHERE: display after 'Enfin, 2.14 (ii) fournit', left-hand side
+PRINT: lg_{k(s)} (D∩ Spec (O_S/I(ν)) = ν(s) + ...: three parentheses opened, two closed
+CORRECT: (D \cap \mathrm{Spec}\ (\underline{O}_S/I(\nu))) =
+TEX BEFORE: (D \cap \mathrm{Spec}\ (\underline{O}_S/I(\nu)) =
+NOTE: The parenthesis opened after lg_{k(s)} is never closed in the print. The TeX keeps the printed reading.
+
+[id 7II:29]
+WHERE: display after 'soit par (2.14.4) appliqué à D'', left-hand side
+PRINT: χ(D∩ Spec(O_S/I(ν)) = : three parentheses opened, two closed
+CORRECT: \chi(D \cap \mathrm{Spec}(\underline{O}_S/I(\nu))) &=
+TEX BEFORE: \chi(D \cap \mathrm{Spec}(\underline{O}_S/I(\nu)) &=
+NOTE: Same unclosed parenthesis as in (2.14.4) on page 25. The TeX keeps the printed reading.
+
+[id 7II:30]
+WHERE: same display, first line, the sum after ν(s) [k(s) : k]
+PRINT: + Σ_{t sur D} ν(t) [k(t) : k]: no prime on D (the second line also reads 't sur D')
+CORRECT: [k(s) : k] + \sum_{t\ \mathrm{sur}\ D'}
+TEX BEFORE: [k(s) : k] + \sum_{t\ \mathrm{sur}\ D}
+NOTE: The first line applies (2.14.4) to D' ('soit par (2.14.4) appliqué à D''): lg_{k(s)}(D∩Spec(O_S/I(ν))) = ν(s) + lg_{k(s)}(D'∩T) and χ(D'∩T) = Σ_{t sur D'} ν(t)[k(t):k]. The points of S* other than s that lie on D are those lying on D', so adding the term of s gives the second line, the sum over t sur D. As printed, the same sum stands on both sides and the equality would force ν(s) = 0, whereas ν(s) > 0 in this step of the induction. The TeX keeps the printed reading.
+
+[id 7II:31]
+WHERE: first sentence of 2.15
+PRINT: Des bribes de ce qui précèdent se généralisent
+CORRECT: ce qui précède se généralisent
+TEX BEFORE: ce qui précèdent se généralisent
+NOTE: Agreement slip: the subject of the verb is 'ce' ('ce qui précède'). The TeX keeps the printed reading.
+
+[id 7II:32]
+WHERE: display S* = lim Irr(f^{-1}(s), index under lim
+PRINT: s'∈ I: a small s (x-height, lower than the capital I beside it and than the S of S*)
+CORRECT: \varinjlim_{S' \in I}
+TEX BEFORE: \varinjlim_{S' \in I}
+NOTE: The limit runs over the schemes S' of the set I just defined ('l'ensemble I des schémas f : S' → S'); the typist struck a small s. The TeX silently corrects the misprint.
+
+[id 7II:33]
+WHERE: same display, Irr(f^{-1}(s)
+PRINT: Irr(f^{-1}(s): two parentheses opened, one closed
+CORRECT: \mathrm{Irr}(f^{-1}(s))
+TEX BEFORE: \mathrm{Irr}(f^{-1}(s)
+NOTE: Unclosed parenthesis in the print. The TeX keeps the printed reading.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: \varinjlim_{S' \in I}
+  NEW: \varinjlim_{s' \in I}
+
+=================== PAGE 27 ===================
+----- corrected edition, expose_X_body.tex, page 27 -----
+%%%%%%%%%%  scan idx 34  |  folio 27  %%%%%%%%%%
+$E$ une courbe sur $S$, $E'$ son transformé pur sur $S'$ et supposons que $D \cap E$ soit réduit à $s$. La formule de projection donne encore
+
+\begin{equation}\tag{2.16}
+(D,E) \;=\; (D^*,E')
+\end{equation}
+Procédant comme en 2.9, on prouve à l'aide de (2.16) que
+
+\begin{equation}\tag{2.17}
+(D,E) \;=\; \sum_{t \in S^*} \mu_t(D) \, \mu_t(E) \, [k(t) : k] \qquad .
+\end{equation}
+Définissons les points proches comme en 2.5. Procédant comme en 2.11, on vérifie que
+
+\begin{equation}\tag{2.18}
+\mu_t(E) \;=\; \sum_{t' \text{ proche de } t} \mu_{t'}(E) \, [k(t') : k(t)] \qquad .
+\end{equation}
+Par contre, la formule 2.11 (ii) devient fausse en général (voir les exemples 2.25).
+
+2.19. Soit $S$ une surface projective et régulière sur un corps $k$. On désigne par $S^*$ la somme disjointe, étendue aux points fermés de $S$
+
+\begin{equation*}
+S^* \;=\; \coprod_{s \in S} \operatorname{Spec} \, (\underline{O}_{s,S})^* \qquad ,
+\end{equation*}
+et on appelle $S^*$ l'ensemble des \underline{points infiniment voisins des} points de $S$.
+
+Soit $I$ l'ensemble des surfaces déduites de $S$ par éclatements successifs de points fermés. L'ensemble $I$ est cofinal dans l'ensemble des modèles réguliers du corps des fonctions de $S$, ordonné par domination. Pour $i \in I$, on désigne par $S_i$ la surface correspondante, munie de $p_i : S_i \to S$. On désignera par $\mathrm{Div}^{\pm}(S_i)$ le groupe des diviseurs, positifs ou non, sur $S_i$.
+
+\underline{Définition} 2.20. (i) \underline{Le groupe des} ``courbes'' \underline{sur} $S$ \underline{est l'ensemble limite inductive}
+
+\begin{equation*}
+\varinjlim_{i \in I} \mathrm{Div}^{\pm}(S_i)
+\end{equation*}
+(ii) \underline{La catégorie des} ``faisceaux inversibles'' \underline{sur} $S$ \underline{est la limite inductive}
+----- misprints recorded on page 27 -----
+[id 7II:34]
+WHERE: (2.18), degree in the sum
+PRINT: μ_t(E) = Σ_{t' proche de t} μ_{t'}(E) [k(t') : k]   .
+CORRECT: \mu_{t'}(E) \, [k(t') : k(t)]
+TEX BEFORE: \mu_{t'}(E) \, [k(t') : k]
+NOTE: (2.18) is obtained 'comme en 2.11', whose part (i) reads μ_t(D) = Σ_{t' proche de t} μ_{t'}(D)[k(t'):k(t)] (page 19); μ_t is the Samuel multiplicity (2.7, 2.8) and does not involve k. With [k(t'):k] the formula fails as soon as k(t) ≠ k: for E regular at s with [k(s):k] = 2, μ_s(E) = 1, while the only point proche de s on E is the point t' of E'∩s*, rational over k(s), giving 1·[k(t'):k] = 2. The TeX keeps the printed reading.
+
+[id 7II:35]
+WHERE: 2.19, second paragraph, 'on désigne par S_i la surface correspondantes'
+PRINT: la surface correspondantes
+CORRECT: la surface correspondante
+TEX BEFORE: la surface correspondantes
+NOTE: Agreement slip (singular noun). The TeX keeps the printed reading.
+
+=================== PAGE 29 ===================
+----- corrected edition, expose_X_body.tex, page 29 -----
+%%%%%%%%%%  scan idx 36  |  folio 29  %%%%%%%%%%
+
+\underline{Exemple} 2.23. Supposons $k$ parfait. Alors, le faisceau inversible $\Omega^2_{S/k}$ , affecté d'une multiplicité virtuelle $-1$ en chaque point $t \in S^*$, est un invariant birationnel de $S$, soit $\Omega^2_{S/k}{}^*$ .
+
+\underline{Exemple} 2.24.  Soit $f : S_1 \longrightarrow S_2$ un morphisme dominant de surfaces projectives régulières sur $k$. On définit sans difficulté l'image inverse d'une "courbe" ou d'un "faisceau inversible" sur $S_2$, en passant à un modèle de $S_2$ où cette "courbe" ou "faisceau inversible" est diviseur ou faisceau inversible usuel. Par passage à la limite (je n'ai pas vérifié si ce passage à la limite était possible), on définit de même l'image réciproque d'une "courbe généralisée", ou d'un "faisceau inversible généralisé" . Supposons $k$ parfait et $f$ génériquement étale. La \underline{différente} $\mathfrak{d}(f)$ de $f$ est alors le diviseur positif sur $S_1$ qui vérifie
+
+\begin{equation*}
+f^* \Omega^2_{S_2/k} (\mathfrak{d}(f)) \overset{\sim}{\longrightarrow} \Omega^2_{S_1/k} \qquad .
+\end{equation*}
+Cette différente n'est pas un invariant birationnel de $f$ ; pour obtenir un invariant birationnel, il faut considérer la "courbe généralisée" de coïncidences
+
+\begin{equation*}
+\mathfrak{d}^*(f) = \mathfrak{d}(f) + \sum_{t \in S_1^*} t^* - f^* ( \sum_{t \in S_2^*} t^*)
+\end{equation*}
+soit, brièvement
+
+\begin{equation*}
+\mathfrak{d}^*(f) = \Omega^2_{S_1/k}{}^* - f^* \Omega^2_{S_2/k}{}^* \qquad .
+\end{equation*}
+Cette "courbe généralisée" a un support contenu dans le fermé de $S_1$ où $f$ n'est pas étale.
+----- misprints recorded on page 29 -----
+[id 7II:36]
+WHERE: Exemple 2.23, '... en chaque point t ∈ S*, et un invariant birationnel de S'
+PRINT: et un invariant (no s; one space between 'et' and 'un')
+CORRECT: est un invariant birationnel de $S$
+TEX BEFORE: et un invariant birationnel de $S$
+NOTE: Typing slip for 'est': the sheaf affected with these multiplicities is a birational invariant. The TeX keeps the printed reading.
+
+[id 7II:37]
+WHERE: Exemple 2.24, 'la "courbe généralisée" de coïncidences'
+PRINT: coîncidences: the mark over the i is a single peak (circumflex), not the two dots of a diaeresis
+CORRECT: coïncidences
+TEX BEFORE: coïncidences
+NOTE: Accent slip of the typescript (î for ï). The TeX silently corrects it.
+
+[id 7II:38]
+WHERE: last sentence, 'Cette "courbe généralisée" à un support'
+PRINT: à un support (grave accent)
+CORRECT: a un support
+TEX BEFORE: à un support
+NOTE: The verb avoir is meant. The TeX keeps the printed reading.
+
+[id 7II:39]
+WHERE: last sentence, '... contenu dans le fermé de S_2 où f n'est pas étale'
+PRINT: le fermé de S_2
+CORRECT: dans le fermé de $S_1$
+TEX BEFORE: dans le fermé de $S_2$
+NOTE: 𝔡*(f) = Ω²_{S_1/k}* - f*Ω²_{S_2/k}* is a generalized curve on S_1 (𝔡(f) is a divisor on S_1), so its support is a subset of S_1: the closed set of S_1 where f is not étale (at a point t where f is étale the terms t* and f*(f(t)*) cancel, since blowing up commutes with étale maps). A closed set of S_2 cannot contain it. The TeX keeps the printed reading.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: coïncidences
+  NEW: coîncidences
+
+=================== PAGE 30 ===================
+----- corrected edition, expose_X_body.tex, page 30 -----
+%%%%%%%%%%  scan idx 37  |  folio 30  %%%%%%%%%%
+
+(2.25) \underline{Exemple}.
+
+Soient $k$ un corps algébriquement clos et $E_n$ l'espace affine à $n$ dimensions sur $k$. Soit $C$ une courbe réduite dans $E_n$, présentant une singularité à l'origine. À cette singularité on associe son "\underline{diagramme d'Enriques}" (cf. [3]), qui est le graphe de sommets les points infiniment voisins de $O$ \underline{sur} $C$ (2.4 et 2.15), chaque sommet étant joint par un trait à ceux qui lui sont proches (2.5 et 2.15). Ce diagramme détermine les multiplicités de ces points sur $C$ (2.11 et 2.18) et, pour $n = 2$, l'invariant $\delta$ (2.10 et 2.11) de la singularité de $C$ à l'origine.
+
+Pour les singularités planes les plus simples, on trouve :
+
+\begin{center}
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{c c c c}
+Dessin & équation & $\delta$ & diagramme (avec multiplicités) \\
+
+\begin{tikzpicture}[baseline=-.5ex,x=.55cm,y=.55cm]
+  \draw[line width=.45pt] (-.8,0)--(.8,0);
+\end{tikzpicture}
+& $y=0$ & $0$ &
+\begin{tikzpicture}[baseline=-.5ex,x=.56cm,y=.56cm]
+  \foreach \x in {0,...,6}{
+    \fill (\x,0) circle (1.05pt);
+    \node[above=1pt,scale=.72] at (\x,0) {$1$};
+  }
+  \draw (0,0)--(6,0);
+  \node[right=2pt,scale=.85] at (6,0) {$\cdots$};
+\end{tikzpicture}
+\\
+% STRUCTURE: TABLEAU, LIGNE 1 (équation $y = 0$, $\delta = 0$). Colonne « Dessin » : un unique trait
+%   horizontal droit tracé à main levée (aucun texte). Colonne « diagramme (avec multiplicités) » :
+%   chaîne horizontale de 7 sommets marqués par un point sur un trait continu. NŒUDS (7) : N1, N2, N3,
+%   N4, N5, N6, N7, alignés horizontalement, chacun surmonté du chiffre 1 dactylographié (label
+%   AU-DESSUS du nœud). ARÊTES (6), toutes non orientées, trait simple sans pointe, horizontales, sans
+%   label : N1—N2, N2—N3, N3—N4, N4—N5, N5—N6, N6—N7. À droite de N7, cinq points dactylographiés sur la
+%   ligne de base (marque de continuation « ..... ») : ce n'est PAS un sommet ; rendu par la cellule
+%   finale \dots. Aucune flèche, aucun label d'arête, aucun trait pointillé, aucune double flèche.
+\begin{tikzpicture}[baseline=-.5ex,x=.55cm,y=.55cm]
+  \draw[line width=.45pt] (-.75,-.42)--(.75,.42);
+  \draw[line width=.45pt] (-.75,.42)--(.75,-.42);
+\end{tikzpicture}
+& $xy=0$ & $1$ &
+\begin{tikzpicture}[baseline=-.5ex,x=.72cm,y=.62cm]
+  \fill (0,0) circle (1.05pt);
+  \node[left=1pt,scale=.72] at (0,0) {$2$};
+  \foreach \x in {1,...,5}{
+    \fill (\x,.48) circle (1.05pt);
+    \fill (\x,-.48) circle (1.05pt);
+    \node[above=1pt,scale=.72] at (\x,.48) {$1$};
+    \node[above=1pt,scale=.72] at (\x,-.48) {$1$};
+  }
+  \draw (0,0)--(1,.48)--(5,.48);
+  \draw (0,0)--(1,-.48)--(5,-.48);
+  \node[right=2pt,scale=.85] at (5,.48) {$\cdots$};
+  \node[right=2pt,scale=.85] at (5,-.48) {$\cdots$};
+\end{tikzpicture}
+\\
+% STRUCTURE: TABLEAU, LIGNE 2 (équation $xy = 0$, $\delta = 1$). Colonne « Dessin » : deux traits droits
+%   sécants formant une croix (un X), tracés à main levée (aucun texte). Colonne « diagramme » : NŒUDS
+%   (11) — R (racine, à gauche, à mi-hauteur), surmonté du chiffre 2 ; branche SUPÉRIEURE H1, H2, H3,
+%   H4, H5 alignés horizontalement, chacun surmonté du chiffre 1 (labels AU-DESSUS de la ligne) ;
+%   branche INFÉRIEURE B1, B2, B3, B4, B5 alignés horizontalement, chacun surmonté du chiffre 1 (labels
+%   également AU-DESSUS de la ligne inférieure). ARÊTES (10), toutes non orientées, trait simple sans
+%   pointe, sans label : R—H1 (oblique montante vers la droite), R—B1 (oblique descendante vers la
+%   droite), H1—H2, H2—H3, H3—H4, H4—H5 (horizontales), B1—B2, B2—B3, B3—B4, B4—B5 (horizontales). Après
+%   H5 : cinq points dactylographiés (continuation) ; après B5 : cinq points dactylographiés
+%   (continuation). Ces points ne sont pas des sommets. Aucune flèche orientée, aucun trait pointillé,
+%   aucun label d'arête.
+\begin{tikzpicture}[baseline=-.5ex,x=.55cm,y=.55cm]
+  \draw[line width=.45pt] (-.85,0)--(.85,0);
+  \draw[line width=.45pt,domain=-.72:.72,samples=40]
+    plot (\x,{.72*\x*\x});
+\end{tikzpicture}
+& $y(y-x^2)=0$ & $2$ &
+\begin{tikzpicture}[baseline=-.5ex,x=.68cm,y=.62cm]
+  \fill (0,0) circle (1.05pt);
+  \fill (.9,0) circle (1.05pt);
+  \node[above=1pt,scale=.72] at (0,0) {$2$};
+  \node[above=1pt,scale=.72] at (.9,0) {$2$};
+  \foreach \x/\lab in {1.8/1,2.7/1,3.6/1,4.5/0}{
+    \fill (\x,.48) circle (1.05pt);
+    \fill (\x,-.48) circle (1.05pt);
+    \ifnum\lab=1
+      \node[above=1pt,scale=.72] at (\x,.48) {$1$};
+      \node[below=1pt,scale=.72] at (\x,-.48) {$1$};
+    \fi
+  }
+  \draw (0,0)--(.9,0)--(1.8,.48)--(4.5,.48);
+  \draw (.9,0)--(1.8,-.48)--(4.5,-.48);
+  \node[right=2pt,scale=.72] at (4.5,-.48) {$\cdot\ \cdot$};
+\end{tikzpicture}
+\\
+% STRUCTURE: TABLEAU, LIGNE 3 (équation $y(y - x^2) = 0$, $\delta = 2$). Colonne « Dessin » : un trait
+%   horizontal droit et une parabole (ouverte vers le haut) tangente à ce trait en un point, tracés à
+%   main levée (aucun texte). Colonne « diagramme » : NŒUDS (10) — A (extrême gauche) surmonté du
+%   chiffre 2 ; B (à sa droite, même hauteur) surmonté du chiffre 2, c'est le point de branchement ;
+%   branche SUPÉRIEURE H1, H2, H3, H4 alignés horizontalement, H1, H2, H3 surmontés chacun du chiffre 1
+%   (labels AU-DESSUS), H4 (extrémité droite du trait, marquée par un point plus épais) SANS label ;
+%   branche INFÉRIEURE B1, B2, B3, B4 alignés horizontalement, B1, B2, B3 portant chacun le chiffre 1 EN
+%   DESSOUS de la ligne, B4 (extrémité droite, point plus épais) SANS label. ARÊTES (9), toutes non
+%   orientées, trait simple sans pointe, sans label : A—B (horizontale), B—H1 (oblique montante), B—B1
+%   (oblique descendante), H1—H2, H2—H3, H3—H4, B1—B2, B2—B3, B3—B4. Après H4 : AUCUN point de
+%   continuation. Après B4 : DEUX points dactylographiés seulement (« .. »), rendus par la cellule
+%   finale \dots. Aucune flèche orientée, aucun trait pointillé.
+\begin{tikzpicture}[baseline=-.5ex,x=.55cm,y=.55cm]
+  \draw[line width=.45pt]
+    (0,0) .. controls (.28,.05) and (.55,.35) .. (.72,.78);
+  \draw[line width=.45pt]
+    (0,0) .. controls (.28,-.05) and (.55,-.35) .. (.72,-.78);
+\end{tikzpicture}
+& $y^2=x^3$ & $1$ &
+\begin{tikzpicture}[baseline=-.5ex,x=.72cm,y=.65cm]
+  \coordinate (A) at (0,.42);
+  \coordinate (B) at (.9,.42);
+  \coordinate (C) at (1.7,-.25);
+  \coordinate (D) at (2.6,-.25);
+  \coordinate (E) at (3.5,-.25);
+  \foreach \p in {A,B,C,D,E}{\fill (\p) circle (1.05pt);}
+  \node[above=1pt,scale=.72] at (A) {$2$};
+  \foreach \p in {B,C,D,E}{\node[above=1pt,scale=.72] at (\p) {$1$};}
+  \draw (A)--(B)--(C)--(D)--(E);
+  \draw (A)--(C);
+  \node[right=2pt,scale=.85] at (E) {$\cdots$};
+\end{tikzpicture}
+\end{tabular}
+\end{center}
+% STRUCTURE: TABLEAU, LIGNE 4 (équation $y^2 = x^3$, $\delta = 1$). Colonne « Dessin » : une courbe
+%   présentant un point de rebroussement (cusp), la pointe tournée vers la gauche, les deux branches
+%   s'ouvrant vers la droite, tracée à main levée (aucun texte). Colonne « diagramme » : NŒUDS (5) — A
+%   (extrême gauche, niveau supérieur) surmonté du chiffre 2 ; B (à droite de A, même niveau supérieur)
+%   surmonté du chiffre 1 ; C (niveau inférieur, sous et à droite de B) surmonté du chiffre 1 ; D
+%   (niveau inférieur, à droite de C) surmonté du chiffre 1 ; E (niveau inférieur, à droite de D)
+%   surmonté du chiffre 1. ARÊTES (5), toutes non orientées, trait simple sans pointe, sans label : A—B
+%   (horizontale courte), A—C (longue oblique descendante, du niveau supérieur au niveau inférieur), B—C
+%   (oblique descendante plus courte) — ces trois arêtes forment un TRIANGLE A, B, C ; puis C—D et D—E
+%   (horizontales, niveau inférieur). Après E : cinq points dactylographiés (continuation), rendus par
+%   la cellule finale \dots ; ce n'est pas un sommet. Aucune flèche orientée, aucun trait pointillé.
+Si $n > 2$, l'invariant $\delta$ n'est plus déterminé par ce diagramme. Ainsi, la réunion de 3 droites concourantes coplanaires (resp. non coplanaires) a un invariant $\delta = 3$ (resp. $\delta = 2$), alors que le diagramme d'Enriques est le même. J'ignore si ce phénomène se présente aussi pour des courbes unibranches.
+
+Voici deux exemples de diagrammes, relatifs au cas $n = 3$, qui ne peuvent se présenter pour des courbes planes (cf. 2.5).
+
+On donne successivement les équations de la courbe, les équations
+----- misprints recorded on page 30 -----
+[id 7II:40]
+WHERE: 2.25, first sentence, 'l'espace affine à n dimension sur k'
+PRINT: à n dimension sur k (one space between 'dimension' and 'sur')
+CORRECT: à $n$ dimensions sur
+TEX BEFORE: à $n$ dimension sur
+NOTE: Missing plural s. The TeX keeps the printed reading.
+
+=================== PAGE 31 ===================
+----- corrected edition, expose_X_body.tex, page 31 -----
+%%%%%%%%%%  scan idx 38  |  folio 31  %%%%%%%%%%
+de la transformée pure après éclatement de l'origine, des équations paramétriques de la courbe, l'invariant $\delta$ et le diagramme d'Enriques.
+
+\begin{equation}\tag{2.25.1}
+\left\{
+\begin{array}{l}
+\left\{\begin{array}{l} y^{2} = xz^{4} \\ z^{3} = x^{2} \end{array}\right. \;\;,\;\;
+\left\{\begin{array}{l} (y/z)^{2} = (x/z)^{3} \\ z \;\;\;\;\;\; = (x/z)^{2} \end{array}\right. \;\;,\;\;
+\left\{\begin{array}{l} x = u^{6} \\ y = u^{7} \\ z = u^{4} \end{array}\right. \;\;,\;\; \delta = 5 \;\;,
+\end{array}
+\right.
+\end{equation}
+\begin{center}
+\begin{tikzcd}[column sep=small, row sep=small]
+4 \arrow[r, dash] \arrow[rrd, dash] \arrow[rrdd, dash] & 2 \arrow[rd, dash] \arrow[rdd, dash] & {} & {} & {} & {} \\
+{} & {} & 1 \arrow[d, dash] & {} & {} & {} \\
+{} & {} & 1 \arrow[rd, dash] & {} & {} & {} \\
+{} & {} & {} & 1 \arrow[rd, dash] & {} & {} \\
+{} & {} & {} & {} & 1 & {} \\
+{} & {} & {} & {} & {} & \cdots
+\end{tikzcd}
+\end{center}
+% STRUCTURE: Enriques diagram printed to the right of the tag (2.25.1), inside the same large outer
+%   brace as the equations. 6 dot-vertices, each carrying a printed multiplicity label, plus a trailing
+%   ellipsis of three dots that is NOT joined by any line. All edges are plain undirected line segments
+%   (no arrowheads, no labels, no hooks, no dashes). Vertices: v1 label 4 (top left, label printed
+%   above-left of the dot); v2 label 2 (top, to the right of v1, label above); v3 label 1 (below and to
+%   the right of v2, label to the right of the dot); v4 label 1 (almost directly below v3, label to the
+%   right); v5 label 1 (below and right of v4, label above-right); v6 label 1 (below and right of v5,
+%   label above-right). Edges, 8 in total, all dash/undirected: v1--v2 (horizontal, rightwards); v1--v3
+%   (down-right, shallow); v1--v4 (down-right, steep); v2--v3 (down-right); v2--v4 (down-right, steeper
+%   than v2--v3); v3--v4 (vertical, downwards); v4--v5 (down-right, drawn slightly curved); v5--v6
+%   (down-right, drawn slightly curved). The segments v1--v3 and v2--v4 cross each other (verified by
+%   pixel scan: the two lines merge into a single dark run at the crossing column). After v6 the drawing
+%   stops; three separate dots trail off down-right.
+\begin{equation}\tag{2.25.2}
+\left\{
+\begin{array}{l}
+\left\{\begin{array}{l} y^{2}z = x^{3} \\ z^{3} \;\; = y^{2} \end{array}\right. \;\;,\;\;
+\left\{\begin{array}{l} (y/z)^{2} = (x/z)^{3} \\ z \;\;\;\;\;\; = (y/z)^{2} \end{array}\right. \;\;,\;\;
+\left\{\begin{array}{l} x = u^{8} \\ y = u^{9} \\ z = u^{6} \end{array}\right. \;\;,\;\; \delta = 10 \;\;,
+\end{array}
+\right.
+\end{equation}
+\begin{center}
+\begin{tikzcd}[column sep=small, row sep=small]
+6 \arrow[r, dash] \arrow[rrd, dash] \arrow[rrdd, dash] \arrow[rrddd, dash] \arrow[rrdddd, dash] & 2 \arrow[rd, dash] \arrow[rdd, dash] & {} & {} & {} & {} \\
+{} & {} & 1 \arrow[d, dash] & {} & {} & {} \\
+{} & {} & 1 \arrow[d, dash] & {} & {} & {} \\
+{} & {} & 1 \arrow[d, dash] & {} & {} & {} \\
+{} & {} & 1 \arrow[rd, dash] & {} & {} & {} \\
+{} & {} & {} & 1 \arrow[rd, dash] & {} & {} \\
+{} & {} & {} & {} & 1 & {} \\
+{} & {} & {} & {} & {} & \cdots
+\end{tikzcd}
+\end{center}
+% STRUCTURE: Enriques diagram printed to the right of the tag (2.25.2), inside the same large outer
+%   brace as the equations. 8 dot-vertices, each carrying a printed multiplicity label, plus a trailing
+%   ellipsis of three dots that is NOT joined by any line. All edges are plain undirected line segments
+%   (no arrowheads, no labels, no hooks, no dashes). Vertices: w1 label 6 (top left, label above); w2
+%   label 2 (top, to the right of w1, label above); w3 label 1 (lower right of w2, label to its right);
+%   w4 label 1 (directly below w3, label to its right); w5 label 1 (directly below w4, label to its
+%   right); w6 label 1 (directly below w5, label to its right); w7 label 1 (below and right of w6, label
+%   above-right); w8 label 1 (below and right of w7, label above-right). Edges, 12 in total, all
+%   dash/undirected: w1--w2 (horizontal, rightwards); w1--w3, w1--w4, w1--w5, w1--w6 (a fan of four
+%   segments going down-right from w1 with increasing slope — verified by pixel scan: 5 distinct dark
+%   runs in the columns between w1 and w2, and 6 runs in the columns between w2 and the vertical chain);
+%   w2--w3 (down-right); w2--w4 (down-right, steeper); w3--w4, w4--w5, w5--w6 (the single near-vertical
+%   line running downwards through w3, w4, w5, w6); w6--w7 (down-right); w7--w8 (down-right). After w8
+%   the drawing stops; three separate dots trail off down-right.
+2.26. Le théorème 2.27 ci-dessous était énoncé sous la forme d'une conjecture fausse dans la première version (diffusée par l'IHES) de cet exposé. Il doit beaucoup à des conversations avec D.S. Rim, dont il englobe certains résultats (D.S. Rim, torsion differentials and deformations, theorem 2.7 (i)).
+----- misprints recorded on page 31 -----
+[id 7II:41]
+WHERE: (2.25.1), first system (the equations of the curve), first line
+PRINT: y^2 = xz^4
+CORRECT: y^{2} = xz^{2}
+TEX BEFORE: y^{2} = xz^{4}
+NOTE: The printed parametrization x = u^6, y = u^7, z = u^4 gives y^2 = u^14 = xz^2, whereas xz^4 = u^22. Blowing up y^2 = xz^2, z^3 = x^2 (x = (x/z)z, y = (y/z)z) gives exactly the printed transform (y/z)^2 = (x/z)z = (x/z)^3, z = (x/z)^2; with xz^4 it would give (y/z)^2 = (x/z)^7. The semigroup <4,6,7> has the printed δ = 5. The TeX keeps the printed reading.
+
+=================== PAGE 32 ===================
+----- corrected edition, expose_X_body.tex, page 32 -----
+%%%%%%%%%%  scan idx 39  |  folio 32  %%%%%%%%%%
+
+Soit  $C$  une courbe projective réduite sur un corps algébriquement clos  $k$ , et  $s \in C(k)$. On désignera par
+
+$A_{s}$ : l'anneau local de  $C$  en  $s$  (ou son complété, cela reviendrait au même pour ce qui suit) ;
+
+$\widetilde{A}_{s}$ : le normalisé de  $A_{s}$ ;
+
+$\delta(s):\dim_{k}(\widetilde{A}_{s}/A_{s})$  ;
+
+$m_{o}(s)$ : la dimension du schéma versel formel  $T$  des déformations de $\mathrm{Spec}(A_{s})$.
+
+Pour  $E$  une composante irréductible de  $T$ , on posera encore $m_{o}^{E}(s) = \dim(E)$.
+
+Les modules  $\widetilde{\tau}$  des dérivations de  $\widetilde{A}_{s}$  et  $\tau$  des dérivations de  $A_{s}$  sont sans torsion ; ils s'injectent dans le module des dérivations du corps des fractions de  $A_{s}$ , pour  $A_s$  intègre, et dans le module des dérivations de l'anneau total des fractions de  $A_{s}$  (un produit de corps) dans le cas général. De plus, via ces inclusions,  $\tau$  et  $\widetilde{\tau}$  sont commensurables : $\tau/\tau\cap\widetilde{\tau}$  et  $\widetilde{\tau}/\tau\cap\widetilde{\tau}$  sont de dimension finie sur  $k$ .
+
+On pose
+
+\begin{equation*}
+m_{1}(s) = [\widetilde{\tau} : \tau] \mathop{=}\limits_{\mathrm{dfn}} \dim_{k}(\widetilde{\tau}/\tau \cap \widetilde{\tau}) - \dim_{k}(\tau/\tau\cap\widetilde{\tau}) \quad .
+\end{equation*}
+\underline{Théorème} 2.27.  \underline{Soit}  $E$  \underline{une composante irréductible du schéma formel versel}  $T$  \underline{des déformations de}  $A_{s}$ . \underline{Si}  "\underline{la déformation de}  $A_{s}$  \underline{au-dessus du point générique}  $e$  \underline{de}  $E$  \underline{est lisse}", \underline{i.e.} \underline{si l'image du sous-schéma formel de non lissité} (\underline{défini par un idéal jacobien} : VI 5), \underline{fini sur}  $T$ , \underline{ne contient pas}  $e$ , \underline{alors}
+
+\begin{equation*}
+3\ \delta(s) = m_{o}^{E}(s) + m_{1}(s) \quad .
+\end{equation*}
+----- misprints recorded on page 32 -----
+[id 7II:42]
+WHERE: paragraph 'Les modules τ~ ...', 'du corps des fractions de A_s , pour A intègre'
+PRINT: pour A intègre (capital A, no subscript s)
+CORRECT: pour  $A_{s}$  intègre
+TEX BEFORE: pour  $A$  intègre
+NOTE: Only A_s is defined in this section, and the same sentence speaks of the field of fractions and the total ring of fractions of A_s. The subscript s is missing. The TeX keeps the printed reading.
+
+=================== PAGE 33 ===================
+----- corrected edition, expose_X_body.tex, page 33 -----
+%%%%%%%%%%  scan idx 40  |  folio 33  %%%%%%%%%%
+
+La validité de 2.27 ne dépend que du complété de $A_s$ . Remplaçant $(C,s)$ par $(C',s)$ formellement isomorphe à $(C,s)$ en $s$ , on peut supposer que les conditions suivantes sont vérifiées
+
+(a)\quad $s$ est le seul point singulier de $C$ ;
+
+(b)\quad $C$ n'a pas d'automorphismes infinitésimaux.
+
+La condition (b) nous garantit que le foncteur des déformations de $C$ est proreprésentable. Il est même effectivement pro-représentable, car il n'y a pas d'obstruction à relever un faisceau inversible (ample) donné sur $C$ . Soit $f : X_o \longrightarrow T_o$ la déformation universelle de $C$ et $t_o$ le point fermé de $T_o$ : $C \stackrel{\sim}{\relbar\joinrel\relbar} X_{ot_o}$.
+
+\underline{Lemme} 2.28. \quad \underline{Il existe un schéma} $T_1$ \underline{de type fini sur} $k$, \underline{un point} $t_1 \in T_1(k)$ \underline{et un morphisme} $f : X_1 \longrightarrow T_1$, \underline{propre et plat,} \underline{de fibre} $C$ \underline{en} $t_1$ \underline{et tel que pour tout} $u \in T_1(k)$, \underline{le complété de} $T_1$ \underline{en} $u$ \underline{soit un schéma formel de modules pour la fibre} $X_{1u}$ .
+
+Voici une démonstration directe de ce corollaire de résultats généraux d'Artin. Soit $\mathcal{L}$ un faisceau inversible très ample sur $C$ , tel que $H^1(C,\mathcal{L}) = 0$, et $\mathbb{P} = \mathbb{P}(H^0(C,\mathcal{L}))$. On a $v : C \hookrightarrow \mathbb{P}$ . Soit $T_2$ le schéma de Hilbert, classifiant les sous-variétés de $\mathbb{P}$ de même polynôme de Hilbert que $v(C) \subset \mathbb{P}$ . Soit $t_2 \in T_2$ correspondant à $v(C)$. Le complété $\hat{T}_2$ de $T_2$ en $t_2$ est lisse sur $T_o$ , le fibré tangent vertical de $\hat{T}_2/T_o$ se déduisant du sous-fibré $L$ du fibré tangent de $T_2$ image de $\mathrm{Lie}(\underline{\mathrm{Aut}}(\mathbb{P}))$ pour l'action de $\underline{\mathrm{Aut}}(\mathbb{P})$ sur $T_2$. Au voisinage de $t_2$, soient $f_1, \ldots, f_n$ des équations, avec $n = \dim \underline{\mathrm{Aut}}(\mathbb{P})$, définissant un sous-schéma $T'_1$ de $T_2$ passant par $t_2$ et de complété en $t_2$ étale sur $T_o$ . On prend pour $T_1$ un voisinage de $t_2$ dans $T'_1$ où le fibré tangent soit transverse à $L$ .
+----- misprints recorded on page 33 -----
+[id 7II:43]
+WHERE: 'La condition (b) nous garantit que la foncteur des déformations de C'
+PRINT: la foncteur
+CORRECT: que le foncteur des déformations
+TEX BEFORE: que la foncteur des déformations
+NOTE: 'foncteur' is masculine: the next sentence continues 'Il est même effectivement pro-représentable', and page 35 has 'Le foncteur des déformations de (C,X)'. The TeX keeps the printed reading.
+
+[id 7II:44]
+WHERE: proof of 2.28, 'Le complété T^_2 de T_2 en t_2 est lisse sur S_o'
+PRINT: est lisse sur S_o
+CORRECT: est lisse sur $T_o$
+TEX BEFORE: est lisse sur $S_o$
+NOTE: No S_o occurs in this argument. The base is the universal deformation space T_o of C, and the same sentence continues 'le fibré tangent vertical de T^_2/T_o'. The TeX keeps the printed reading.
+
+[id 7II:45]
+WHERE: last sentence, 'On prend pour T_1 un voisinage de t dans T'_1'
+PRINT: un voisinage de t dans T'_1 (t with no subscript)
+CORRECT: un voisinage de $t_2$ dans $T'_1$
+TEX BEFORE: un voisinage de $t$ dans $T'_1$
+NOTE: No point t has been defined at this stage; t is introduced only on page 34, as the closed point of T. T'_1 is the subscheme of T_2 'passant par t_2', and the neighbourhood must contain the point with fibre C, which becomes the t_1 of 2.28. The TeX keeps the printed reading.
+
+=================== PAGE 34 ===================
+----- corrected edition, expose_X_body.tex, page 34 -----
+%%%%%%%%%%  scan idx 41  |  folio 34  %%%%%%%%%%
+
+2.29. Au morphisme de foncteurs
+
+\begin{equation*}
+(\text{déformations de } C) \longrightarrow (\text{déformations de } A_s)
+\end{equation*}
+correspond un morphisme $p : T_o \longrightarrow T$ . D'après VI 2.10 \qquad , $p$ est lisse. Soit $t$ le point fermé de $T$ . L'espace tangent de Zariski de $p^{-1}(t)$ en $t_o$ classifie les déformations localement triviales de $C$ sur $k[\varepsilon]$ ($\varepsilon^2 = 0$). Posant $E_o = p^{-1}(E)$, on a donc
+
+\begin{equation}\tag{2.29.1}
+\dim(E_o) = \dim(E) + \dim H^1(C, T^1_{C/k}) \qquad .
+\end{equation}
+Puisque $X_o/T_o$ est plat, les fibres de $X_o/T_o$ ont toutes le même genre arithmétique $p$ ($1-p = \chi(\mathcal{O})$). Par hypothèse, la fibre au point générique de $E_o$ est lisse ; le schéma formel des modules d'une courbe propre et lisse étant lisse de dimension $3p-3$, on déduit de 2.28 que
+
+\begin{equation}\tag{2.29.2}
+\dim(E_o) \;=\; 3p-3 \qquad .
+\end{equation}
+Soit $\widetilde{C}$ la normalisée de $C$, de genre arithmétique $\widetilde{p} = p - \delta(s)$. On a
+
+\begin{equation}\tag{2.29.3}
+\begin{aligned}\dim\, H^1(C,T^1_{C/k}) \;&=\; -\,\chi(C,T^1_{C/k}) \;=\; \\ &=\; -\,\chi(\widetilde{C},T^1_{\widetilde{C}/k}) + m_1(s) \;=\; [3(p-\delta(s))-3] + m_1(s) \qquad .\end{aligned}
+\end{equation}
+Les formules (2.29.1) (2.29.2) (2.29.3) prouvent 2.27.
+
+\underline{Conjecture} 2.30. \quad \underline{Toute courbe propre réduite a une déformation lisse.}
+
+Cette conjecture implique, par 2.27 et 2.28, que le schéma formel versel des déformations de $A_s$ est toujours équidimensionnel, de dimension $3\delta(s) - m_1(s)$.
+----- misprints recorded on page 34 -----
+[id 7II:46]
+WHERE: 2.29, first line, 'Au morphisme de foncteur'
+PRINT: Au morphisme de foncteur
+CORRECT: Au morphisme de foncteurs
+TEX BEFORE: Au morphisme de foncteur
+NOTE: A morphism between two functors: the usual form is 'morphisme de foncteurs'. The singular may be the author's usage, since he also writes 'champ de vecteur' in the singular (pages 35, 36, 41). That form is not reported. The TeX keeps the printed reading.
+
+[id 7II:47]
+WHERE: (2.29.2)
+PRINT: dim(E) = 3p-3 (no subscript o on E)
+CORRECT: \dim(E_o) \;=\; 3p-3
+TEX BEFORE: \dim(E) \;=\; 3p-3
+NOTE: The preceding sentence derives this formula from the smoothness of the fibre at the generic point of E_o and from 2.28 (moduli of smooth proper curves of genus p: dimension 3p-3). So the formula concerns E_o = p^{-1}(E) in T_o. dim(E) = m_o^E(s) is a local invariant and does not depend on p. Only dim(E_o) = 3p-3 lets (2.29.1)-(2.29.3) prove 2.27: dim E = 3p-3 - [3(p-δ(s))-3 + m_1(s)] = 3δ(s) - m_1(s). The TeX keeps the printed reading.
+
+[id 7II:48]
+WHERE: (2.29.3), second line, last member
+PRINT: = -[3(p-δ(s))-3] + m_1(s)
+CORRECT: [3(p-\delta(s))-3] + m_1(s)
+TEX BEFORE: -[3(p-\delta(s))-3] + m_1(s)
+NOTE: C~ is smooth of arithmetic genus p~ = p - δ(s). Hence χ(C~, T_{C~/k}) = (2-2p~) + 1 - p~ = 3 - 3p~, and -χ(C~, T_{C~/k}) = 3(p-δ(s)) - 3, not its negative. The equivalent form -[3-3(p-δ(s))] would also be correct. With the printed sign, dim H^1(C, T^1_{C/k}) would be negative for large p, and (2.29.1)-(2.29.2) would not give 2.27. With the corrected sign they give dim E = 3δ(s) - m_1(s). The TeX keeps the printed reading.
+
+=================== PAGE 35 ===================
+----- corrected edition, expose_X_body.tex, page 35 -----
+%%%%%%%%%%  scan idx 42  |  folio 35  %%%%%%%%%%
+
+2.31. Soit $C$ une courbe propre réduite sur $k$, de genre arithmétique $p$ . On désignera par
+
+$M_o$ : la dimension du schéma formel versel $T$ des déformations de $C$ ;
+
+$M_1$ : la dimension de l'algèbre de Lie de $\underline{\mathrm{Aut}}(C)$.
+
+Pour $E$ une composante irréductible de $T$, on notera $M_o^E$ la dimension de $E$ .
+
+L'analogue global de 2.27 est le suivant.
+
+\underline{Proposition} 2.32. \underline{Si la déformation de} $C$ \underline{au-dessus du point générique de} $E$ \underline{est lisse, on a}
+
+\begin{equation*}
+3p-3 = M_o^E - M_1 \quad .
+\end{equation*}
+Soit $X \subset C(k)$ un ensemble fini de points lisses de $C$ , tel que tout champ de vecteur sur $C$, s'annulant en tout point $x \in X$, soit nul. Le foncteur des déformations de $(C,X)$ est proreprésentable, et vérifie une variante de 2.28 . Le schéma formel des modules de $(C,X)$ est lisse sur $T$ , de dimension relative $\# X - M_1$ , et de l'analogue de 2.28 on déduit que
+
+\begin{equation*}
+M_o^E + ( \# X - M_1) \;=\; 3p - 3 + \# X \; ,
+\end{equation*}
+d'où 2.32.
+
+Supposons $k$ de \underline{caractéristique} $0$ . On a alors $M_1 = \dim \underline{\mathrm{Aut}}(C)$. Voici une interprétation analogue de $m_1(s)$.
+----- misprints recorded on page 35 -----
+[id 7II:49]
+WHERE: display before 'd'où 2.32', first term
+PRINT: M_o + ( #X - M_1) = 3p - 3 + #X , (M_o with no superscript E)
+CORRECT: M_o^E + ( \# X - M_1)
+TEX BEFORE: M_o + ( \# X - M_1)
+NOTE: 2.32 concerns the component E, of dimension M_o^E, over whose generic point the deformation is smooth. Over E the formal moduli of (C,X) have dimension M_o^E + #X - M_1, and the analogue of 2.28 equates this with 3p-3+#X, the dimension for smooth curves of genus p with #X marked points. M_o is the dimension of the whole of T, and only M_o^E gives 2.32 (3p-3 = M_o^E - M_1). The TeX keeps the printed reading.
+
+=================== PAGE 36 ===================
+----- corrected edition, expose_X_body.tex, page 36 -----
+%%%%%%%%%%  scan idx 43  |  folio 36  %%%%%%%%%%
+
+\underline{Lemme} 2.33. \underline{Si} $k$ \underline{est de caractéristique} $0$, \underline{toute dérivation de} $A_s$ \underline{se prolonge en une dérivation de} $A_s^{\sim}$ .
+
+Si $D$ est une dérivation de $A_s$ , $\exp(Dt) = \sum_{n\geq0} D^n t^n/n!$ est un automorphisme du complété en $(s,0)$ de $A_s \otimes_k k[t]$. Par transport de structure, cet automorphisme agit sur le normalisé $(A_s^{\sim} \otimes k[t])^{\wedge}$ de cet anneau. Réduisant mod $t^2$ , on trouve un automorphisme $1 + Dt$ de $A_s^{\sim\wedge} \otimes_k k[t]/(t^2)$, et $D$ se trouve ainsi prolongé en une dérivation de $A_s^{\sim\wedge}$ . Puisqu'il se prolonge aussi au corps des fractions de $A_s$ (anneau total des fractions si $A_s$ n'est pas intègre), il se prolonge à $A_s^{\sim}$ .
+
+Supposons $s$ singulier. Un argument analogue montre alors que le champ de vecteur sur $\mathrm{Spec}(A_s^{\sim})$ défini par $D$ s'annule en tout point au-dessus de $s$ .
+
+Soit $c$ un idéal de $A_s^{\sim}$ contenu dans le conducteur de $A_s^{\sim}/A_s$ . Soit $G_c^{\sim} = \underline{\mathrm{Aut}}(A_s^{\sim}/c)$ et soit $G_c$ le sous-groupe de $G_c^{\sim}$ qui stabilise la sous-algèbre $A_s/c$ . Pour $d \subset c$ , $G_d^{\sim}$ stabilise $c/d$ et s'envoie sur $G_c^{\sim}$ (remarquer que $g \in G_c^{\sim}$ est déterminé par $g(t)$, pour $t$ une uniformisante, et que $g(t)$ est n'importe quelle uniformisante). L'espace homogène pointé $G_c^{\sim}/G_c$ est donc indépendant de $c$ . On note $G^{\sim}/G$.
+
+Soit $\tau_o^{\sim}$ le $A_s^{\sim}$-module des champs de vecteurs sur $\mathrm{Spec}(A_s^{\sim})$ qui s'annulent en les points au-dessus de $s$ . Pour $s$ singulier, on a
+
+\begin{equation*}
+\dim_k(\tau^{\sim}/\tau_o^{\sim}) \;=\; \mbox{nombre de branches} \;;
+\end{equation*}
+\begin{equation*}
+\tau_o^{\sim}/\tau \;\simeq\; \mbox{espace tangent à l'origine de } G^{\sim}/G \;.
+\end{equation*}
+----- misprints recorded on page 36 -----
+[id 7II:50]
+WHERE: paragraph 'Supposons s singulier', last line
+PRINT: D s'annulle en tout point (double l; the final e is typed slightly raised)
+CORRECT: s'annule en tout
+TEX BEFORE: s'annule en tout point
+NOTE: Spelling error of the print (annuler has one l). The TeX silently corrects it. The next paragraph has the same slip (s'annullent); p. 35 prints s'annulant correctly, so this is not a spelling convention of the volume.
+
+[id 7II:51]
+WHERE: paragraph 'Soit τ~_o le A~_s-module', second line
+PRINT: qui s'annullent en les points au-dessus de s
+CORRECT: s'annulent
+TEX BEFORE: qui s'annulent en les points
+NOTE: Spelling error of the print (double l), as in 's'annulle' in the previous paragraph. The TeX silently corrects it.
+
+[id 7II:52]
+WHERE: paragraph 'Soit τ~_o ...', last words before the two displays
+PRINT: Pour s singulier, on (no 'a'; the displays follow)
+CORRECT: Pour $s$ singulier, on a
+TEX BEFORE: Pour $s$ singulier, on
+NOTE: The verb is missing before the two displayed formulas. The TeX keeps the printed reading; the corrected layer already reads 'on a'.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: s'annule en tout
+  NEW: s'annulle en tout
+  OLD: s'annulent
+  NEW: s'annullent
+
+=================== PAGE 37 ===================
+----- corrected edition, expose_X_body.tex, page 37 -----
+%%%%%%%%%%  scan idx 44  |  folio 37  %%%%%%%%%%
+
+\underline{Proposition} 2.34. \underline{En caractéristique} $0$ \underline{et pour} $s$ \underline{singulier}, \underline{l'entier} $m_1(s)$ \underline{est somme du nombre de branches et de la dimension de} $\widetilde{G}/G$ .
+
+
+\underline{BIBLIOGRAPHIE}
+
+[1] \quad P. Defrise. Etude locale des correspondances rationnelles entre surfaces algébriques - Thèse d'agrégation - Bruxelles 1949.
+
+[2] \quad P. Deligne et D. Mumford. The irreducibility of the space of curves of a given genus - Publ. Math. IHES \underline{36} (1969) p. 75-110.
+
+[3] \quad Enriques - Chisini. Lezioni sulla teoria geometrica delle equazioni e delle funzioni algebriche - ed Zanichelli - Bologne 1924.
+
+[4] \quad R. Hartshorne. Residues and duality - Lecture Notes in Math. \underline{20} - Springer 1966.
+
+[5] \quad S. Lichtenbaum. Curves over discrete valuation rings - Am. J. of Math. 90 n° 2 April 1968. p. 380-405.
+
+[6] \quad I. Manin. Rational surfaces over perfect fields - Publ. Math. IHES n° 30. p. 55-114.
+
+[7] \quad D. Mumford. The topology of normal singularities of an algebraic surface and a criterion for simplicity - Publ. Math. IHES n° 9 p. 5-22.
+
+[8] \quad A. Néron. Modèles minimaux des variétés abéliennes sur les corps locaux et globaux - Publ. Math. n° 21.
+----- misprints recorded on page 37 -----
+[id 7II:53]
+WHERE: Bibliographie [4] (Hartshorne)
+PRINT: Lectures Notes in Math. 20
+CORRECT: Lecture Notes in Math.
+TEX BEFORE: Lectures Notes in Math.
+NOTE: Typing error of the print: the series is Lecture Notes in Mathematics. The TeX keeps the printed reading; the corrected layer already reads 'Lecture Notes'.
+
+[id 7II:54]
+WHERE: Bibliographie [5] (Lichtenbaum), second line
+PRINT: Am. J. of Math. 15 n° 2 April 1968. p. 380-405.
+CORRECT: Am. J. of Math. 90 n° 2
+TEX BEFORE: Am. J. of Math. 15 n° 2
+NOTE: Wrong volume number: Lichtenbaum, Curves over discrete valuation rings, is Amer. J. Math. 90, no. 2 (April 1968), 380-405; volume 15 is from 1893. The TeX keeps the printed reading; the corrected layer already reads 90.
+
+[id 7II:55]
+WHERE: Bibliographie [7] (Mumford), first line
+PRINT: The topology of normal singularities of an algebraic surfaces
+CORRECT: an algebraic surface
+TEX BEFORE: an algebraic surfaces
+NOTE: Typing error of the print (the title is '... of an algebraic surface and a criterion for simplicity'). The TeX keeps the printed reading; the corrected layer already reads 'surface'.
+
+[id 7II:56]
+WHERE: Bibliographie [3] (Enriques - Chisini), title
+PRINT: Lezioni sulla teoria geometrica delle equazioni et delle funzioni algebriche
+CORRECT: delle equazioni e delle funzioni
+TEX BEFORE: delle equazioni et delle funzioni
+NOTE: French 'et' in the Italian title; the title reads 'delle equazioni e delle funzioni algebriche'. The TeX keeps the printed reading; the corrected layer already reads 'e'.
+
+=================== PAGE 41 ===================
+----- corrected edition, expose_XI_body.tex, page 41 -----
+%%%%%%%%%%  scan idx 48  |  folio 41  %%%%%%%%%%
+
+\begin{equation}\tag{1.1.1}
+q_* \, q^* \, \underline{F} \;\simeq\; \sum_{n \in \mathbb{Z}} \underline{F}(n) \;\; .
+\end{equation}
+Cette graduation de $q_* \, q^* \, \underline{F}$ peut se déduire de l'action, sur ce faisceau, du groupe $\mathbb{G}_m$ des homothéties de $\mathbb{V}(\underline{E})$.
+
+Les champs de vecteurs relatifs sur $\mathbb{V}(\underline{E})$ s'identifient aux $S$-morphismes de $\mathbb{V}(\underline{E})$ dans $\mathbb{V}(\underline{E})$ (identifié à l'espace tangent à l'origine). Le champ de vecteur $X$ défini par l'application identique de $\mathbb{V}(\underline{E})$ est invariant par homothéties, Ce champ de vecteur est tangent aux fibres de $q$ et définit une trivialisation
+
+\begin{equation}\tag{1.1.2}
+X \;:\; \Omega_{\mathbb{V}(\underline{E})^*/\,\mathbb{P}(\underline{E})} \longrightarrow \underline{O}_{\mathbb{V}(\underline{E})^*} \;\; .
+\end{equation}
+Si les $x_i$ forment une base de $\underline{E}$, on a
+
+\begin{equation*}
+X \;=\; \sum x_i \, dx^i \;\; .
+\end{equation*}
+Puisque $\Omega^1_{\mathbb{V}(\underline{E})^*/\mathbb{P}(\underline{E})}$ est de rang un, la suite exacte
+
+\begin{equation*}
+0 \longrightarrow q^*\Omega^1_{\mathbb{P}(\underline{E})/S} \longrightarrow \Omega^1_{\mathbb{V}(\underline{E})^*/S} \longrightarrow \Omega^1_{\mathbb{V}(\underline{E})^*/\mathbb{P}(\underline{E})} \longrightarrow 0
+\end{equation*}
+induit des suites exactes
+
+\begin{equation*}
+0 \longrightarrow q^*\Omega^i_{\mathbb{P}(\underline{E})/S} \longrightarrow \Omega^i_{\mathbb{V}(\underline{E})/S} \longrightarrow \Omega^1_{\mathbb{V}(\underline{E})^*/\mathbb{P}(\underline{E})} \otimes q^*\Omega^{i-1}_{\mathbb{P}(\underline{E})/S} \longrightarrow 0 \;\; .
+\end{equation*}
+Celles-ci se réécrivent (1.1.2)
+
+\begin{equation}\tag{1.1.3}
+0 \longrightarrow q^*\Omega^i_{\mathbb{P}(\underline{E})/S} \longrightarrow \Omega^i_{\mathbb{V}(\underline{E})^*/S} \xrightarrow{\;X\lfloor\;} q^*\Omega^{i-1}_{\mathbb{P}(\underline{E})/S} \longrightarrow 0 \;\; .
+\end{equation}
+On a canoniquement
+
+\begin{equation}\tag{1.1.4}
+\Omega^i_{\mathbb{V}(\underline{E})/S} \;=\; a^* \overset{i}{\wedge} \underline{E} \;\; .
+\end{equation}
+Les suites exactes courtes (1.1.3) s'obtiennent donc en fractionnant une suite exacte longue sur $\mathbb{V}(\underline{E})^*$
+
+\begin{equation}\tag{1.1.5}
+\ldots \longrightarrow {a'}^{*} \overset{i}{\wedge} \underline{E} \xrightarrow{\;X\lfloor\;} {a'}^{*} \overset{i-1}{\wedge} \underline{E} \xrightarrow{\;X\lfloor\;} {a'}^{*} \overset{i-2}{\wedge} \underline{E} \longrightarrow \ldots \;\; .
+\end{equation}
+----- misprints recorded on page 41 -----
+[id 7II:57]
+WHERE: paragraph 'Le champ de vecteur X défini ...', end of its first sentence
+PRINT: est invariant par homothéties, Ce champ de vecteur (a comma, then a capital C)
+CORRECT: est invariant par homothéties. Ce champ
+TEX BEFORE: est invariant par homothéties, Ce champ
+NOTE: Typing error: a comma ends the sentence and the next one starts with a capital. The TeX keeps the printed reading; the corrected layer also keeps the comma.
+
+[id 7II:58]
+WHERE: the exact sequences after 'induit des suites exactes', middle term
+PRINT: Ω^i_{V(E)/S} (no star on V(E); checked at 1.3x)
+CORRECT: \Omega^i_{\mathbb{V}(\underline{E})^*/S} \longrightarrow \Omega^1
+TEX BEFORE: \Omega^i_{\mathbb{V}(\underline{E})/S} \longrightarrow \Omega^1
+NOTE: The sequences live on V(E)*: they are induced by the preceding sequence, whose middle term is Ω^1_{V(E)*/S}, their outer terms are sheaves on V(E)*, and their rewritten form (1.1.3) has Ω^i_{V(E)*/S}. The TeX keeps the printed reading; the corrected layer too.
+
+=================== PAGE 42 ===================
+----- corrected edition, expose_XI_body.tex, page 42 -----
+%%%%%%%%%%  scan idx 49  |  folio 42  %%%%%%%%%%
+
+Cette suite exacte longue n'est autre que la restriction à $\mathbb{V}(\underline{E})^*$ de la résolution de Kozul de $\underline{O}_{e(S)}$ sur $\mathbb{V}(\underline{E})$.
+
+Projetons la suite exacte longue (1.1.5) sur $\mathbb{P}(\underline{E})$ par le morphisme affine $q$. En vertu de (1.1.1) et de la formule $q_*{a'}^{*} = q_*q^*p^*$, on obtient une suite exacte longue
+
+\begin{equation}\tag{1.1.6}
+\ldots \longrightarrow \sum_{n \in \mathbb{Z}} p^* \overset{i}{\wedge} \underline{E}(n) \xrightarrow{\;X\lfloor\;} \sum_{n \in \mathbb{Z}} p^* \overset{i-1}{\wedge} \underline{E}(n) \longrightarrow \ldots \;\; .
+\end{equation}
+Celle-ci se fractionne en suite exactes courtes, images de (1.1.3),
+
+\begin{equation}\tag{1.1.7}
+0 \longrightarrow \sum_{n \in \mathbb{Z}} \Omega^i_{\mathbb{P}(\underline{E})/S}(n) \longrightarrow \sum_{n \in \mathbb{Z}} p^* \overset{i}{\wedge} \underline{E}(n) \xrightarrow{\;X\lfloor\;} \sum_{n \in \mathbb{Z}} \Omega^{i-1}_{\mathbb{P}(\underline{E})/S}(n) \to 0 \;\; .
+\end{equation}
+Les suites exactes (1.1.7) sont sommes de suites exactes
+
+\begin{equation}\tag{1.1.8}
+0 \longrightarrow \Omega^i_{\mathbb{P}(\underline{E})/S}(n) \longrightarrow p^* \overset{i}{\wedge} \underline{E}(n-i) \xrightarrow{\;X\lfloor\;} \Omega^{i-1}_{\mathbb{P}(\underline{E})/S}(n) \longrightarrow 0 \;\; .
+\end{equation}
+Rappelons (EGA III 2.1.15 ou FAC) que les $R^i p_* \underline{O}(k)$ sont localement libres de formation compatible à tout changement de base, et que
+
+\begin{equation}\tag{1.1.9}
+R^i p_* \, \underline{O}(k) = 0 \ \text{si } i \neq 0,\ r, \ \text{ou si } i = 0,\ k < 0, \ \text{ou si } i = r,\ k > -r-1,
+\end{equation}
+et que $R^i p_* p^* \overset{j}{\wedge} \underline{E}(k)$ est donc nul sous ces mêmes conditions.
+
+Les suites exactes (1.1.8) fournissent une résolution
+
+\begin{equation}\tag{1.1.10}
+0 \longrightarrow \Omega^i_{\mathbb{P}(\underline{E})/S}(n) \xrightarrow{\;E\;} p^* \overset{i}{\wedge} \underline{E}(n-i) \xrightarrow{\;X\lfloor\;} \ldots \longrightarrow p^* \overset{0}{\wedge} \underline{E}(n-0) \longrightarrow 0
+\end{equation}
+de $\Omega^i_{\mathbb{P}(\underline{E})/S}(n)$. La suite spectrale définie par cette résolution dégénère $(E_1 = E_\infty)$ pour des raisons de degré (1.1.9) ; pour $0 < j < r$, elle fournit
+
+\begin{equation}\tag{1.1.11}
+R^j p_* \Omega^i_{\mathbb{P}(\underline{E})/S}(n) = \mathcal{H} \, ( \ldots \xrightarrow{\;X\lfloor\;} p_* \overset{i-j}{\wedge} \underline{E}(n-i+j) \xrightarrow{\;X\lfloor\;} \ldots ) \;\; .
+\end{equation}
+Puisque $r \geq 1$, un argument de profondeur montre que
+
+\begin{equation}\tag{1.1.12}
+\sum_{n \in \mathbb{Z}} p_*p^* \overset{i}{\wedge} \underline{E}(n) = p_*q_*q^*p^* \overset{i}{\wedge} \underline{E} = {a'}_{*}{a'}^{*} \overset{i}{\wedge} \underline{E} = a_*a^* \overset{i}{\wedge} \underline{E} \;\; .
+\end{equation}
+----- misprints recorded on page 42 -----
+[id 7II:59]
+WHERE: first paragraph, 'la résolution de Kozul'
+PRINT: Kozul
+CORRECT: résolution de Koszul de
+TEX BEFORE: résolution de Kozul de
+NOTE: Misspelt name; pp. 43 and 45 print 'Koszul' (typed over a correction). The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:60]
+WHERE: sentence before (1.1.7)
+PRINT: Celle-ci se fractionne en suite exactes courtes
+CORRECT: en suites exactes courtes
+TEX BEFORE: en suite exactes courtes
+NOTE: Agreement error: singular 'suite' with plural adjectives; p. 41 has 'Les suites exactes courtes (1.1.3)'. The TeX keeps the printed reading; the corrected layer too.
+
+=================== PAGE 43 ===================
+----- corrected edition, expose_XI_body.tex, page 43 -----
+%%%%%%%%%%  scan idx 50  |  folio 43  %%%%%%%%%%
+
+ de sorte que $p_*p^* \wedge^i \underline{E}(n)$ est la partie homogène de poids $n + i$ de $a_*a^* \wedge^i \underline{E}$, soit $\mathrm{Sym}^n(\underline{E}) \otimes \wedge^i \underline{E}$ . Si on se rappelle que (1.1.5) provient de la résolution de Koszul, on trouve par (1.1.11) que, pour $0 < j < r$, $R^j p_* \Omega^i_{\mathbb{P}(\underline{E})/S}(n)$ n'est non nul que si $i-j = 0$ et $n-i+j = 0$, i.e. si $n = 0$ et $i = j$. Dans ce cas, de plus, $R^i p_* \Omega^i_{\mathbb{P}(\underline{E})/S}$ est isomorphe à $\underline{O}_S$ .
+
+Pour $j = 0$, on déduit encore de (1.1.10) que
+
+\begin{equation}\tag{1.1.13}
+p_*\Omega^i_{\mathbb{P}(\underline{E})/S}(n) \;=\; \mathrm{Ker}(X \llcorner \;:\; p_* \wedge^i \underline{E}(n-i) \longrightarrow p_* \wedge^{i-1} \underline{E}(n-i+1)) \qquad ,
+\end{equation}
+et le même argument montre que $X \llcorner$ est injectif lorsque $n-i \leq 0$.
+
+En vertu de(1.1.8) pour $n = 0$, $i = r+1$, on a $\Omega^r_{\mathbb{P}(\underline{E})/S} \simeq p^* \wedge^{r+1} \underline{E}(-r-1)$. Lorsque $S$ est le spectre d'un corps, les assertions de nullité de groupes de cohomologie de 1.1 (ii) et (iii) résultent de ce qui précède pour $j \neq r$, et s'en déduisent par dualité ([2] V 11.2 p. 211) pour $j = r$. En particulier, quels que soient $j$ et $n$, il existe au plus un $i$ tel que $R^i p_* \Omega^j_{\mathbb{P}(\underline{E})/S}(n) \neq 0$, ce qui implique (i) puisque $\Omega^j_{\mathbb{P}(\underline{E})/S}$ est plat sur $S$ (le plus dur est de trouver la référence dans EGA III ; je suggère : 6.10.5 + 7.4.1 + 7.5.5 + un passage à la limite).
+
+Sachant que les $R^i p_* \Omega^j_{\mathbb{P}(\underline{E})/S}$ sont des faisceaux inversibles pour $0 \leq i \leq r$, il reste seulement à prouver que, pour $S$ le spectre d'un corps, on a $\eta^i \neq 0$. En effet $\eta^r$ est la classe de cohomologie d'un point rationnel (intersection de $r$ hyperplans), donc une base de $H^r(\mathbb{P}^r,\Omega^r)$ (FGA exp. 149 n$^{\circ}$4).
+
+1.2. Il est possible de calculer, directement à partir de (1.1.10) ou (1.1.13), les caractéristiques d'Euler-Poincaré des $\Omega^i(n)$. Le résultat, peu appétissant, est
+
+\begin{equation*}
+\chi(\mathbb{P}^r_k,\Omega^j_{\mathbb{P}^r_k}(n)) \;=\; \sum_{a \leq i \leq j} \; (-1)^{i-j} \binom{r+1}{i}\binom{r+n-i}{r} \; .
+\end{equation*}
+----- misprints recorded on page 43 -----
+[id 7II:61]
+WHERE: (1.1.13), end of Ker( ... )
+PRINT: Ker(X⌞ : p_* ∧^i E(n-i) → p_* ∧^{i-1} E(n-i+1)   , (only the parenthesis of E(n-i+1) is closed; the one opened after Ker stays open; checked at 3x)
+CORRECT: (n-i+1))
+TEX BEFORE: \underline{E}(n-i+1)) \qquad ,
+NOTE: The TeX silently adds the closing parenthesis of Ker(...); the fix restores the printed reading. The corrected layer has both parentheses.
+
+[id 7II:62]
+WHERE: paragraph 'Sachant que les R^i p_* Ω^j ... sont des faisceaux inversibles pour 0 ≤ i ≤ r'
+PRINT: R^i p_*Ω^j_{P(E)/S} (exponent j on Ω)
+CORRECT: Sachant que les $R^i p_* \Omega^i_{\mathbb{P}(\underline{E})/S}$
+TEX BEFORE: Sachant que les $R^i p_* \Omega^j_{\mathbb{P}(\underline{E})/S}$
+NOTE: Theorem 1.1 (ii) (p. 40) concerns the section η^i of R^i p_*(Ω^i), and R^i p_* Ω^j = 0 for i ≠ j; this page has just shown R^i p_* Ω^i ≅ O_S. Only Ω^i makes 'inversibles pour 0 ≤ i ≤ r' and the next clause 'on a η^i ≠ 0' consistent. The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:63]
+WHERE: 1.2, formula for χ(P^r_k, Ω^j(n)), range of the sum
+PRINT: a≤i≤j (letter a; checked at 6x)
+CORRECT: \sum_{0 \leq i \leq j}
+TEX BEFORE: \sum_{a \leq i \leq j}
+NOTE: No a is defined here. The resolution (1.1.10) of Ω^j(n) has the terms p^*∧^i E(n-i) for i = j, ..., 0, which gives χ = Σ_{0≤i≤j} (-1)^{i-j} C(r+1,i) C(r+n-i,r) (check r = j = 1: -(n+1) + 2n = n-1 = χ(O(n-2))). Probably the author's index zero (typed o elsewhere) read as a. The TeX keeps the printed reading; the corrected layer too.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: (n-i+1))
+  NEW: (n-i+1)
+
+=================== PAGE 44 ===================
+----- corrected edition, expose_XI_body.tex, page 44 -----
+%%%%%%%%%%  scan idx 51  |  folio 44  %%%%%%%%%%
+
+\underline{Proposition} 1.3. \underline{Soient} $f : X \longrightarrow S$ \underline{un morphisme propre et lisse,} $\underline{W}$ \underline{un faisceau localement libre de rang} $c$ \underline{sur} $X$, $\underline{F}$ \underline{un faisceau cohérent sur} $X$, $d$ \underline{un entier} $> 0$ \underline{et} $s : \underline{W} \longrightarrow \underline{O}_X$ \underline{une section de} $\underline{W}^{\vee}$. \underline{On suppose que} $S$ \underline{est noethérien et que}
+
+(a) \underline{Le sous-schéma} $H$ \underline{de} $X$ \underline{défini par l'annulation de} $s$ \underline{est lisse sur} $S$.
+
+(b) \underline{Localement sur} $X$, \underline{si les} $s_i$ \underline{sont les coordonnées de} $S$ \underline{dans une base de} $\underline{W}^{\vee}$ \underline{les} $s_i$ \underline{forment une suite} $\underline{O}_X$\underline{-régulier et} $\underline{F}$\underline{-régulière.}
+
+(c) \underline{Quelle que soit la suite d'entiers} $k_i$, \underline{non tous nuls, on a}
+
+\begin{equation*}
+R^i f_* \; (\underset{i}{\otimes} \; \wedge^{k_i} \; \underline{W} \otimes \Omega^j_{X/S} \otimes \underline{F}) \;=\; 0 \;\; \underline{\text{pour}} \;\; i+j < d \qquad .
+\end{equation*}
+\underline{Alors, on a} :
+
+\begin{equation*}\tag{i}
+R^i f_* \; (\Omega^j_{X/S} \otimes \underline{F}) \; \overset{\sim}{\longrightarrow} \; R^i f_*(\Omega^j_{H/S} \otimes \underline{F}) \;\; \underline{\text{pour}} \;\; i+j < d-c,
+\end{equation*}
+\begin{equation}\tag{ii}
+R^i f_* \; (\Omega^j_{X/S} \otimes \underline{F}) \; \hookrightarrow \; R^i f_*(\Omega^j_{H/S} \otimes \underline{F}) \;\; \underline{\text{pour}} \;\; i+j = d-c \qquad .
+\end{equation}
+Le faisceau conormal $N_{H/X}$ de $H$ dans $X$ est isomorphe à la restriction de $\underline{W}$ à $H$, de sorte que la suite exacte
+
+\begin{equation}\tag{1.3.1}
+0 \longrightarrow N_{H/X} \longrightarrow \Omega^1_{X/S} \otimes \underline{O}_Y \longrightarrow \Omega^1_{H/S} \longrightarrow 0
+\end{equation}
+définit une filtration décroissante de $\Omega^j_{X/S} \otimes \underline{O}_Y$ dont les quotients successifs sont donnés par
+
+\begin{equation}\tag{1.3.2}
+\mathrm{Gr}^k(\Omega^j_{X/S} \otimes \underline{O}_Y) \qquad \simeq \qquad \wedge^k \; \underline{W} \otimes \Omega^{j-k}_{H/S} \qquad .
+\end{equation}
+Il résulte de (b) que l'on a encore
+
+\begin{equation}\tag{1.3.3}
+\mathrm{Gr}^k(\Omega^j_{X/S} \otimes \underline{O}_Y \otimes \underline{F}) \;=\; \wedge^k \; \underline{W} \otimes \Omega^{j-k}_{H/S} \otimes \underline{F} \qquad .
+\end{equation}
+On prouvera (i) et (ii) par récurrence sur $j$, simultanément pour tous les $\underline{F}$ vérifiant (b) et (c). Ces assertions sont vides pour $j < 0$ ;
+----- misprints recorded on page 44 -----
+[id 7II:64]
+WHERE: Proposition 1.3 (b), 'sont les coordonnées de S'
+PRINT: les coordonnées de S (capital S)
+CORRECT: \underline{sont les coordonnées de} $s$
+TEX BEFORE: \underline{sont les coordonnées de} $S$
+NOTE: The s_i are the coordinates of the section s : W → O_X of W^∨ in a basis of W^∨; S is the base scheme. The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:65]
+WHERE: Proposition 1.3 (b), last line
+PRINT: forment une suite O_X-régulier et F-régulière
+CORRECT: $\underline{O}_X$\underline{-régulière et}
+TEX BEFORE: $\underline{O}_X$\underline{-régulier et}
+NOTE: Agreement with 'suite', as in 'F-régulière' right after. The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:66]
+WHERE: Proposition 1.3 (i)
+PRINT: R^i f_* (Ω^j_{H/S} ⊗ F) ⥲ R^i f_*(Ω^j_{X/S} ⊗ F)
+CORRECT: R^i f_* \; (\Omega^j_{X/S} \otimes \underline{F}) \; \overset{\sim}{\longrightarrow} \; R^i f_*(\Omega^j_{H/S} \otimes \underline{F})
+TEX BEFORE: R^i f_* \; (\Omega^j_{H/S} \otimes \underline{F}) \; \overset{\sim}{\longrightarrow} \; R^i f_*(\Omega^j_{X/S} \otimes \underline{F})
+NOTE: Source and target interchanged: the map is the restriction from X to H, as in (1.3.5) and (1.3.7) on p. 45, from which the proof deduces (i). The TeX keeps the printed reading; the corrected layer already swaps H and X (SGA7II-FR-XI-002). Goes with (ii).
+
+[id 7II:67]
+WHERE: Proposition 1.3 (ii)
+PRINT: R^i f_* (Ω^j_{H/S} ⊗ F) ↪ R^i f_*(Ω^j_{X/S} ⊗ F)
+CORRECT: R^i f_* \; (\Omega^j_{X/S} \otimes \underline{F}) \; \hookrightarrow \; R^i f_*(\Omega^j_{H/S} \otimes \underline{F})
+TEX BEFORE: R^i f_* \; (\Omega^j_{H/S} \otimes \underline{F}) \; \hookrightarrow \; R^i f_*(\Omega^j_{X/S} \otimes \underline{F})
+NOTE: No map runs from the cohomology of H to that of X here; the proof ((1.3.5), (1.3.7)) gives the injective restriction from X to H for i+j = d-c (weak Lefschetz). The TeX keeps the printed reading; the corrected layer already swaps (SGA7II-FR-XI-002). Goes with (i).
+
+[id 7II:68]
+WHERE: (1.3.1), the sentence after it, (1.3.2) and (1.3.3)
+PRINT: O_Y (four times)
+CORRECT: \underline{O}_H
+TEX BEFORE: \underline{O}_Y
+NOTE: No Y is defined in 1.3: the zero scheme of s is H (N_{H/X} and Ω^1_{H/S} in the same sequence (1.3.1)). 1.4 (p. 46) calls the complete intersection Y, which may explain the slip. Applies to all four \underline{O}_Y on this page; p. 45 has six more. The TeX keeps the printed reading; the corrected layer too.
+
+=================== PAGE 45 ===================
+----- corrected edition, expose_XI_body.tex, page 45 -----
+%%%%%%%%%%  scan idx 52  |  folio 45  %%%%%%%%%%
+supposons donc (i) et (ii) prouvés pour $j' < j$. L'hypothèse de récurrence s'applique aux faisceaux $\stackrel{k}{\wedge} \underline{W} \otimes \underline{F}$ ; elle fournit, par (c) :
+
+\begin{equation}\tag{1.3.4}
+R^i f_* ( \stackrel{k}{\wedge}\underline{W} \otimes \Omega^{j-k}_{H/S} \otimes \underline{F}) = 0 \quad \mbox{pour } k > 0 \mbox{ et } i+j < d-c+k \quad .
+\end{equation}
+La filtration considérée plus haut du $\Omega^j_{X/S} \otimes \underline{O}_Y \otimes \underline{F}$ définit une suite spectrale
+
+\begin{equation*}
+E_1^{p,i-p} \; = \; R^i f_*( \stackrel{p}{\wedge} \underline{W} \otimes \Omega^{j-p}_{H/S} \otimes \underline{F}) \Longrightarrow R^i f_*(\Omega^j_{X/S} \otimes \underline{O}_Y \otimes \underline{F}) \quad .
+\end{equation*}
+Par (1.3.4), on a $E_1^{p,i-p} = 0$ si $p > 0$ et $i+j \leq d-c$ d'où l'on tire que
+
+\begin{equation}\tag{1.3.5}
+\left\{ \begin{array}{l} R^i f_*(\Omega^j_{X/S} \otimes \underline{O}_Y \otimes \underline{F}) \; \stackrel{\sim}{\longrightarrow} \; R^i f_*(\Omega^j_{H/S} \otimes \underline{F}) \mbox{ pour } i+j < d-c \\[4ex] R^i f_*(\Omega^j_{X/S} \otimes \underline{O}_Y \otimes \underline{F}) \; \lhook\joinrel\longrightarrow \; R^i f_*(\Omega^j_{H/S} \otimes \underline{F}) \mbox{ pour } i+j = d-c \quad . \end{array} \right.
+\end{equation}
+D'après l'hypothèse (b), pour une différentielle convenable, les $\stackrel{k}{\wedge} \underline{W} \otimes \Omega^j_{X/S} \otimes \underline{F}$ forment une résolution à gauche (de Koszul) de $\Omega^j_{X/S} \otimes \underline{O}_Y \otimes \underline{F}$. Cette filtration définit une suite spectrale
+
+\begin{equation}\tag{1.3.6}
+E_1^{-p,q} \; = \; R^q f_*( \stackrel{p}{\wedge}\underline{W} \otimes \Omega^j_{X/S} \otimes \underline{F}) \Longrightarrow R^{q-p} f_*(\Omega^j_{X/S} \otimes \underline{O}_Y \otimes \underline{F}) \quad .
+\end{equation}
+D'après l'hypothèse (c), on a $E_1^{-p,q} = 0$ pour $p > 0$ et $q+j < d$, ou, trivialement, pour $p \notin [0,c]$. Dès lors,
+
+\begin{equation}\tag{1.3.7}
+\left\{ \begin{array}{l} R^i f_*(\Omega^j_{X/S} \otimes \underline{F}) \; \stackrel{\sim}{\longrightarrow} \; R^i f_*(\Omega^j_{H/S} \otimes \underline{F}) \mbox{ pour } i+j < d-c \\[4ex] R^i f_*(\Omega^j_{X/S} \otimes \underline{F}) \; \lhook\joinrel\longrightarrow \; R^i f_*(\Omega^j_{H/S} \otimes \underline{F}) \mbox{ pour } i+j = d-c \quad . \end{array} \right.
+\end{equation}
+Les assertions (i) et (ii) résultent maintenant de (1.3.5) et (1.3.7).
+----- misprints recorded on page 45 -----
+[id 7II:69]
+WHERE: proof of 1.3: 'La filtration ... du Ω^j_{X/S} ⊗ O_Y ⊗ F', the E_1 display, both lines of (1.3.5), the Koszul-resolution sentence and (1.3.6)
+PRINT: O_Y (six times)
+CORRECT: \underline{O}_H
+TEX BEFORE: \underline{O}_Y
+NOTE: Same slip as on p. 44: H is the zero scheme of s and no Y occurs in 1.3. Applies to all six \underline{O}_Y on this page. The TeX keeps the printed reading; the corrected layer too.
+
+=================== PAGE 46 ===================
+----- corrected edition, expose_XI_body.tex, page 46 -----
+%%%%%%%%%%  scan idx 53  |  folio 46  %%%%%%%%%%
+
+1.4. Soient $\underline{E}$ un faisceau de modules localement libres de rang $r+1$ sur un schéma $S$, $\mathbb{P}(\underline{E})$ le fibré projectif correspondant, $d$ un entier $\leq r$ et $\underline{a} = (a_1 \ldots a_d)$ une suite d'entiers. Une \underline{intersection complète} relative dans $\mathbb{P}(\underline{E})$, de multidegré $\underline{a}$, est un sous-schéma de $\mathbb{P}(\underline{E})$, fibre par fibre de codimension $d$, qui, localement sur $S$ pour la topologie étale, est intersection de $d$ hypersurfaces de degrés respectifs $a_1 \ldots a_d$.
+
+En vertu de 1.1, les hypothèses (b) et (c) de 1.3 sont vérifiées pour $X/S = \mathbb{P}(\underline{E})/S$, $\underline{F} = \underline{O}_X$ , $\underline{W} = \sum\limits_i \underline{O}(-a_i)$ et pour $s$ une section de $\underline{W}^{\vee}$ définissant une intersection complète relative $Y \subset \mathbb{P}(\underline{E})$ de multidegré $\underline{a}$.
+
+\underline{Théorème} 1.5. \underline{Sous les hypothèses} 1.4, \underline{soit} $n = r-d$ \underline{la dimension relative de} $Y$ \underline{et} $\eta \in H^o(S,R^1f_*\Omega^1_{Y/S})$ \underline{la première classe de Chern de} $\underline{O}(1)$
+
+\begin{center}
+\begin{tikzcd}[column sep=large, row sep=large]
+Y \arrow[rr, hook] \arrow[dr, dash, "f"'] & {} & \mathbb{P}(\underline{E}) \arrow[dl, "g"] \\
+ {} & S &
+{} \end{tikzcd}\quad .
+\end{center}
+% STRUCTURE: 3 nodes, exactly as on the page. Node 1 (top left): Y. Node 2 (top right):
+%   \mathbb{P}(\underline{E}) (double-struck P, E underlined). Node 3 (bottom centre, below and between
+%   the other two): S. 3 edges. Edge A: Y --> \mathbb{P}(\underline{E}), horizontal, pointing right,
+%   hooked/mono arrow (open hook at the Y end, arrowhead at the \mathbb{P}(\underline{E}) end),
+%   unlabelled. Edge B: Y --- S, diagonal running down and to the right, labelled f placed to the LEFT
+%   of the line at mid-height; the scan shows NO arrowhead at either end, so it is a plain undirected
+%   line (dash). Edge C: \mathbb{P}(\underline{E}) --> S, diagonal running down and to the left,
+%   arrowhead at the S end (lower-left), labelled g placed to the RIGHT of the line at mid-height. A
+%   free-standing period (sentence full stop) sits on the baseline of S, far to the right of the figure.
+\underline{Si} $Y$ \underline{est lisse sur} $S$, \underline{alors} :
+
+(i) \underline{Les} $R^i f_* \Omega^j_{Y/S}$ \underline{sont localement libres}, \underline{et leur formation est compatible à tout changement de base}.
+
+(ii) \underline{La suite spectrale} $E_1^{pq} = R^q f_* \Omega^p_{Y/S} \Longrightarrow R^{p+q} f_*(\Omega^*_{Y/S})$ \underline{reliant les cohomologie de Hodge et de De Rham dégénère} $(E_1 = E_\infty)$, \underline{son aboutissement est localement libre et sa formation est compatible à tout changement de base}.
+
+(iii)$_a$ \underline{On a}
+
+\begin{equation*}
+R^i f_* \Omega^j_{X/S} = 0 \quad \underline{\mbox{si}} \; i \neq j \; \underline{\mbox{et}} \; i+j \neq n \; .
+\end{equation*}
+----- misprints recorded on page 46 -----
+[id 7II:70]
+WHERE: Théorème 1.5 (ii)
+PRINT: reliant les cohomologie de Hodge et de De Rham dégénère
+CORRECT: reliant les cohomologies de Hodge
+TEX BEFORE: reliant les cohomologie de Hodge
+NOTE: Agreement error: plural article with a singular noun. The TeX keeps the printed reading.
+
+[id 7II:71]
+WHERE: Théorème 1.5 (iii)_a, displayed formula
+PRINT: R^i f_*Ω^j_{X/S} = 0 si i≠j et i+j ≠ n . (subscript X/S; checked at 2.5x)
+CORRECT: R^i f_* \Omega^j_{Y/S} = 0
+TEX BEFORE: R^i f_* \Omega^j_{X/S} = 0
+NOTE: f : Y -> S (diagram above; (i) and (ii) have R^i f_* Ω^j_{Y/S}), while X = P(E) (1.4), on which f is not defined; the condition i+j ≠ n refers to the relative dimension n of Y. The TeX keeps the printed reading.
+
+=================== PAGE 47 ===================
+----- corrected edition, expose_XI_body.tex, page 47 -----
+%%%%%%%%%%  scan idx 54  |  folio 47  %%%%%%%%%%
+
+(iii)$_b$ $\eta^i$ \underline{est une base de} $R^i f_* \Omega^i_{Y/S}$ \underline{si} $2i < n$
+
+(iii)$_c$ \underline{si} $n<2i\leq 2n$ \underline{et si} $\alpha_i$ \underline{est la base de} $R^i f_* \Omega^i_{Y/S}$ \underline{duale de la base} $\eta^{n-i}$ de $R^{n-i} f_* \Omega^{n-i}_{Y/S}$, \underline{alors}
+
+\begin{equation*}
+\eta^i \;=\; \left( \prod_1^d \; a_i \right) \alpha_i \qquad .
+\end{equation*}
+(iii)$_d$ \underline{Si} $n = 2m$, \underline{alors} $\eta^m \neq 0$ (\underline{si} $S \neq \emptyset$) \underline{et le quotient} $R^m f_* \Omega^m_{Y/S}/\underline{O}_S . \eta^m$ \underline{est localement libre}.
+
+Il suffit de prouver 1.5 dans un cas ``universel'', ce qui permet de supposer $S$ lisse sur $\mathrm{Spec}(\mathbb{Z})$. Dans ce cas, l'assertion (ii) résulte de (i), car elle est vraie sur $\mathbb{C}$, donc sur tout corps de caractéristique $0$, d'après la théorie de Hodge. De plus, $S$ étant réduit, (i) résulte de (iii), supposé démontré pour $S$ le spectre d'un corps : en effet, d'après (iii), pour chaque $j$ les fonctions
+
+\begin{equation*}
+s \longrightarrow \dim_{k(s)} \; (H^i(Y_s,\Omega^j_{Ys})
+\end{equation*}
+sont constantes sur $S$, sauf peut-être pour $i = j$, donc sont toutes constantes puisque leur somme alternée l'est (EGA III 7.9.2) et on conclut par EGA III 6.10.5 + 7.6.9 + 7.7.5.
+
+En vertu de (1.4) et (1.3), on a
+
+\begin{equation}\tag{1.5.1}
+\left\{
+\begin{array}{ccl}
+R^i f_* \Omega^j_{Y/S} & \stackrel{\sim}{\longrightarrow} & R^i g_* \Omega^j_{\mathbb{P}(\underline{E})/S} \qquad \mbox{pour } i+j < n \\[3ex]
+R^i f_* \Omega^j_{Y/S} & \lhook\joinrel\longrightarrow & R^i g_* \Omega^j_{\mathbb{P}(\underline{E})/S} \qquad \mbox{pour } i+j = n \qquad .
+\end{array}
+\right.
+\end{equation}
+Si $S$ est le spectre d'un corps, les assertions (iii)$_a$ (iii)$_b$ (iii)$_d$ résultent de (1.5.1) et de la dualité de Serre ([2] V 11.2 p.211) La classe de
+----- misprints recorded on page 47 -----
+[id 7II:72]
+WHERE: displayed formula 's -> dim_{k(s)} (H^i(Y_s, Ω^j_{Ys})'
+PRINT: dim_{k(s)} (H^i(Y_s,Ω^j_{Ys}) (two parentheses opened, one closed; checked at 2.5x)
+CORRECT: \dim_{k(s)} \; (H^i(Y_s,\Omega^j_{Ys}))
+TEX BEFORE: \dim_{k(s)} \; (H^i(Y_s,\Omega^j_{Ys})
+NOTE: The parenthesis opened before H^i is never closed. The TeX keeps the printed reading.
+
+[id 7II:73]
+WHERE: sentence after the formula: 'sont constantes sur S, sauf peut-être pour i = j'
+PRINT: sauf peut-être pour i = j, donc sont toutes constantes
+CORRECT: sauf peut-être pour $i + j = n$
+TEX BEFORE: sauf peut-être pour $i = j$
+NOTE: Wrong index. Over a field, (iii)_a gives dim H^i(Ω^j) = 0 for i ≠ j, i+j ≠ n, and (iii)_b, (iii)_c give dimension 1 for i = j with 2i ≠ n; the only dimensions (iii) leaves open are those with i + j = n (for fixed j the single index i = n - j), which the alternating-sum argument then settles. With 'i = j' the deduction 'd'après (iii)' does not hold, since i = n - j ≠ j is not covered. Possibly the author's slip rather than a typing error. The TeX keeps the printed reading.
+
+[id 7II:74]
+WHERE: last line: 'dualité de Serre ([2] V 11.2 p.211) La classe de'
+PRINT: p.211) La classe de (no full stop after the parenthesis; next word capitalised; checked at 2.2x)
+CORRECT: p.211). La classe de
+TEX BEFORE: p.211) La classe de
+NOTE: Missing full stop between two sentences. The TeX keeps the printed reading.
+
+=================== PAGE 48 ===================
+----- corrected edition, expose_XI_body.tex, page 48 -----
+%%%%%%%%%%  scan idx 55  |  folio 48  %%%%%%%%%%
+cohomologie $\eta^n$ est la classe de cohomologie d'un $0$-cycle de degré $\prod_1^d a_i$ (le degré de l'intersection complète), de sorte que
+
+\begin{equation*}
+\eta^n \;=\; \left( \prod_1^d \; a_i \right) \alpha_n \qquad .
+\end{equation*}
+Par définition, on a $\eta^{n-i} \alpha_i = \alpha_n$, et(iii)$_c$ en résulte.
+
+Les assertions (i) et (ii) sont donc vraies, et les assertions (iii), dans le cas universel, résultent de (i) et de (iii) supposé prouvé pour $S$ le spectre d'un corps.
+
+\underline{Théorème} 1.6. \underline{Gardons les hypothèses et notations de} 1.4, 1.5, \underline{supposons} $Y$ \underline{lisse,} \underline{soit} $\ell$ \underline{un nombre premier premier aux caractéristiques résiduelles de} $S$, \underline{et désignons par} $\eta_\ell \in H^0(S,R^2 f_*( \mathbb{Z}_\ell(1)))$ \underline{la première classe de Chern} $\ell$\underline{-adique de} $\underline{O}(1)$ (SGA 5 VII). \underline{Alors}
+
+(i) $R^i f_* \mathbb{Z}_\ell = 0$ \underline{si} $i$ \underline{est impair et distinct de} $n$
+
+(ii) \underline{Si} $2i < n$, \underline{alors} $R^{2i} f_* \mathbb{Z}_\ell(i)$ \underline{est isomorphe à} $\mathbb{Z}_\ell$, \underline{et admet} $\eta_\ell^i$ \underline{pour base}
+
+(iii) \underline{Si} $n < 2i \leq 2n$, \underline{alors} $R^{2i} f_* \mathbb{Z}_\ell(i)$ \underline{est isomorphe à} $\mathbb{Z}_\ell$, \underline{et admet} $\eta_\ell^i / \prod_1^d a_i$ \underline{pour base.}
+
+(iv) \underline{Le} $\mathbb{Z}_\ell$\underline{-faisceau} $R^n f_* \mathbb{Z}_\ell$ \underline{est constant tordu constructible sans torsion et,} \underline{si} $n$ \underline{est pair,} \underline{alors} $\eta_\ell^{n/2} \neq 0$ (\underline{si} $S \neq \emptyset$) \underline{et} $R^n f_* \mathbb{Z}_\ell(n/2)/ \mathbb{Z}_\ell . \eta_\ell^{n/2}$ \underline{est sans torsion.}
+
+Les $\mathbb{Z}_\ell$-faisceaux $R^i f_* \mathbb{Z}_\ell$ sont constants tordus constructibles, et leur formation est compatible à tout changement de base, d'après SGA 4 XVI 2.2. Il suffit donc de prouver 1.6 pour $S$ le spectre d'un corps algébriquement clos. Une application itérée de SGA 4 XIV 3.3 montre alors, pour tout $m$, que la flèche canonique
+
+\begin{equation*}
+H^q_Y \; (\mathbb{P}(\underline{E}), \; \mathbb{Z}/\ell^m) \longrightarrow H^q(Y, \; \mathbb{Z}/\ell^m)
+\end{equation*}
+----- misprints recorded on page 48 -----
+[id 7II:75]
+WHERE: displayed formula at the foot of the page, target of the canonical arrow
+PRINT: H^q_Y (P(E), Z/ℓ^m) ---> H^q(Y, Z/ℓ^m)
+CORRECT: \longrightarrow H^q(\mathbb{P}(\underline{E}), \; \mathbb{Z}/\ell^m)
+TEX BEFORE: \longrightarrow H^q(Y, \; \mathbb{Z}/\ell^m)
+NOTE: Iterating SGA 4 XIV 3.3 on the d affine pieces of P(E) - Y gives H^q(P(E) - Y) = 0 for q ≥ r+d, so by the local-cohomology sequence the canonical (forget-supports) map H^q_Y(P(E)) -> H^q(P(E)) is bijective for q > r+d and surjective for q = r+d, exactly as stated. With target H^q(Y) the statement fails (q = 2r: H^{2r}_Y(P(E)) ≅ H^{2n}(Y)(-d) ≠ 0, H^{2r}(Y) = 0). The next sentence (p. 49) passes by Poincaré duality to the restriction H^q(P(E)) -> H^q(Y). The TeX keeps the printed reading. (The mark after E on the left side is a ')' whose middle is lost to faint type; not a difference.)
+
+=================== PAGE 50 ===================
+----- corrected edition, expose_XI_body.tex, page 50 -----
+%%%%%%%%%%  scan idx 57  |  folio 50  %%%%%%%%%%
+(ii) \underline{Si} $k$ \underline{est de caractéristique non nulle} $p$ \underline{et si} $Y$ \underline{est lisse, alors le noyau de la multiplication par} $p$ \underline{dans} $\mathrm{Pic}(Y)$ \underline{s'identifie au sous-groupe de} $H^0(Y,\Omega^1_Y)$ \underline{formé des différentielles localement logarithmiques.}
+
+Les suites exactes de Kummer
+
+\begin{equation*}
+0 \longrightarrow \mu_{\ell^n} \longrightarrow G_m \xrightarrow{\ x \mapsto x^{\ell^n}\ } G_m \longrightarrow 0
+\end{equation*}
+définissent des suites exactes
+
+\begin{equation*}
+0 \longrightarrow \mathrm{Pic}(Y)/\ell^n\ \mathrm{Pic}(Y) \longrightarrow H^2(Y,\mu_{\ell^n}) \longrightarrow (H^2(G_m))_{\ell^n} \longrightarrow 0 \quad ,
+\end{equation*}
+où $\mathrm{Pic}(Y)/\ell^n\ \mathrm{Pic}(Y) = \mathrm{NS}(Y) \otimes \mathbb{Z}/\ell^n$. Par passage à la limite projective, on trouve
+
+\begin{equation*}
+0 \longrightarrow \mathrm{NS}(Y) \otimes \mathbb{Z}_\ell \longrightarrow H^2(Y, \mathbb{Z}_\ell(1)) \longrightarrow \mathrm{Hom}(\mathbb{Q}_\ell / \mathbb{Z}_\ell,\ H^2(G_m)) \longrightarrow 0 \quad ,
+\end{equation*}
+et le conoyau est sans torsion puisque $\mathbb{Q}_\ell / \mathbb{Z}_\ell$ est divisible. L'assertion (i) en résulte.
+
+Pour prouver (ii), il suffit de noter que la suite exacte
+
+\begin{equation*}
+0 \longrightarrow \underline{O}^*_Y \xrightarrow{\ x \longmapsto x^p\ } \underline{O}^*_Y \xrightarrow{\ df/f\ } \Omega^1_Y
+\end{equation*}
+définit une suite exacte courte
+
+\begin{equation*}
+0 \longrightarrow \underline{O}^*_Y \longrightarrow \underline{O}^*_Y \longrightarrow \Omega^1_{Y\,\mathrm{loc}\,\mathrm{log}} \longrightarrow 0
+\end{equation*}
+et de prendre la suite exacte longue de cohomologie correspondante. Ce raisonnement est dû à Cartier, qui prouve de plus que, si l'on désigne par $C$ l'opération de Cartier sur $H^0(Y,\Omega^1_Y)$, alors les différentielles localement logarithmiques forment le noyau de $C - \mathrm{Id}$.
+
+Supposons par l'absurde que la classe de $\underline{O}(1)$ dans $\mathrm{NS}(Y)$ soit de la forme $nu$, avec $n > 1$. Si $\ell$ divise $n$ et est premier à la caractéristique,
+----- misprints recorded on page 50 -----
+[id 7II:76]
+WHERE: paragraph 'Ce raisonnement est dû à Cartier', end
+PRINT: les différentielles localement logarithmique forment le noyau de C-Id.
+CORRECT: localement logarithmiques forment
+TEX BEFORE: localement logarithmique forment
+NOTE: Agreement error; Lemme 1.9 (ii) on the same page prints 'différentielles localement logarithmiques'. The TeX keeps the printed reading.
+
+=================== PAGE 52 ===================
+----- corrected edition, expose_XI_body.tex, page 52 -----
+%%%%%%%%%%  scan idx 59  |  folio 52  %%%%%%%%%%
+
+\begin{equation}\tag{2.2}
+\sum_{n=0}^{\infty}\ \sum\ \chi(V_n(\underline{a}),\ \Omega^p)\ y^p\ z^{n+d}\ =\ \frac{1}{(1+yz)(1-z)}\ \prod_{1}^{d}\ \frac{(1+yz)^{a_i}-(1-z)^{a_i}}{(i+yz)^{a_i}+y(1-z)^{a_i}}
+\end{equation}
+Nous allons transformer cette formule en la suivante :
+
+\underline{Théorème} 2.3. (Hirzebruch). \underline{Avec les notations} 2.1, \underline{on a}
+
+\begin{equation*}
+H(\underline{a}) = \frac{1}{(1+y)(1+z)}\left[\ \prod_{1\leq i\leq d}\ \frac{(1+y)^{a_i}\ -\ (1+z)^{a_i}}{-(1+y)^{a_i}z\ +\ (1+z)^{a_i}y}\ \ -1\ \right] \qquad .
+\end{equation*}
+En vertu de 1.5, on a
+
+\begin{equation*}
+\chi(V_n(\underline{a}),\Omega^p) = (-1)^p + (-1)^{n-p}\ h_o^{p,n-p}(\underline{a})
+\end{equation*}
+de sorte que le premier membre $I$ de (2.2) se réécrit
+
+\begin{equation*}
+\begin{aligned}
+I &= \sum_{n=0}^{\infty}\ \sum_{p+q=n} ((-1)^p+(-1)^q\ h_o^{p,q}(\underline{a}))\ y^p z^{p+q+d}\\
+&= \sum_{p,q\geq 0} (-1)^p(yz)^p z^q z^d\ +\ \sum_{p,q\geq 0} (-1)^q\ h_o^{p,q}(a)\ (yz)^p z^q\ z^d\\
+&= z^d\left[\frac{1}{(1+yz)(1-z)}\ +\ H(\underline{a})(yz,-z)\right] \qquad .
+\end{aligned}
+\end{equation*}
+Le deuxième membre $II$ de (2.2) se réécrit
+
+\begin{equation*}
+II = \frac{z^d}{(1+yz)(1-z)}\ \prod_{1}^{d}\ \frac{(1+yz)^{a_i}\ -\ (1-z)^{a_i}}{(1+yz)^{a_i}z+\ yz(1-z)^{a_i}}
+\end{equation*}
+de sorte que, simplifiant par $z^d$ dans $I = II$, on trouve que
+
+\begin{equation*}
+H(\underline{a})(yz,-z) = \frac{1}{(1+yz)(1-z)}\left[\ \prod_{1}^{d}\ \frac{(1+yz)^{a_i}\ -\ (1-z)^{a_i}}{(1+yz)^{a_i}z\ +\ (1-z)^{a_i}yz}\ \ -1\right]
+\end{equation*}
+et 2.3 se déduit de cette formule par changement de variable.
+----- misprints recorded on page 52 -----
+[id 7II:77]
+WHERE: (2.2), denominator of the product
+PRINT: (i+yz)^{a_i}+y(1-z)^{a_i} (a dotted i, not the digit 1; checked at 3x)
+CORRECT: (1+yz)^{a_i}+y(1-z)^{a_i}
+TEX BEFORE: {(i+yz)^{a_i}+y(1-z)^{a_i}}
+NOTE: Hirzebruch's generating function has (1+yz)^{a_i} in the denominator, as the numerator of the same factor, the rewritten II and the formula after 'on trouve que' on this page show. The TeX keeps the printed reading.
+
+[id 7II:78]
+WHERE: rewriting of I, second line, second sum
+PRINT: (-1)^q h_o^{p,q}(a) (yz)^p z^q z^d: the a is not underlined (checked at 5x); the first line has h_o^{p,q}(a) with a underlined
+CORRECT: h_o^{p,q}(\underline{a})
+TEX BEFORE: (-1)^q\ h_o^{p,q}(a)\ (yz)^p
+NOTE: The multidegree a of 2.1 is underlined everywhere else in this computation. The TeX keeps the printed reading.
+
+[id 7II:79]
+WHERE: rewriting of I, second line, first sum: (-1)^p(yz)^p z^q z^d
+PRINT: a typed full stop on the baseline right after z, under the exponent q: z.^q z^d (checked at 5x)
+CORRECT: (yz)^p z^q z^d
+TEX BEFORE: (yz)^p z^q z^d
+NOTE: A round typed dot of the size of a full stop, not a speck: the second sum has the same dot in the same place. It has no mathematical meaning (probably the typist's mark for the position of the exponent). The TeX silently drops it; the fix restores the printed reading. Coordinator's call whether the diplomatic layer keeps such marks.
+
+[id 7II:80]
+WHERE: rewriting of I, second line, second sum: (yz)^p z^q z^d
+PRINT: the same typed full stop after z, under the exponent q: z.^q  z^d (checked at 5x)
+CORRECT: (yz)^p z^q\ z^d
+TEX BEFORE: (yz)^p z^q\ z^d
+NOTE: As in the first sum of the same line. The TeX silently drops the dot; the fix restores the printed reading.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: (yz)^p z^q z^d
+  NEW: (yz)^p z.^q z^d
+  OLD: (yz)^p z^q\ z^d
+  NEW: (yz)^p z.^q\ z^d
+
+=================== PAGE 53 ===================
+----- corrected edition, expose_XI_body.tex, page 53 -----
+%%%%%%%%%%  scan idx 60  |  folio 53  %%%%%%%%%%
+
+\underline{Corollaire} 2.4. \underline{Avec les notations} 2.1,
+
+(i) \quad \underline{pour} $d = 1$, \underline{on a}
+
+\begin{equation*}
+\begin{aligned}
+H(a) \;&=\; -\ \frac{(1+y)^{a-1} - (1+z)^{a-1}}{(1+y)^{a}z \,-\, (1+z)^{a}y}\\[2ex]
+&=\; \frac{\displaystyle\sum_{i,j\geq 0}\binom{a-1}{i+j+1}\ y^{i}z^{j}}{1 \,-\, \displaystyle\sum_{i,j\geq 1}\binom{a}{i+j}y^{i}\ z^{j}}\ .
+\end{aligned}
+\end{equation*}
+(ii) \quad \underline{on a}, $|P|$ \underline{désignent le nombre d'élément d'une partie} $P$ \underline{de} $[1,d]$,
+
+\begin{multline*}
+H(\underline{a}) \;=\; \sum_{\substack{P \subset [1,d] \\ P \neq \emptyset}} (1+y)^{|P|-1}\ (1+z)^{|P|-1}\ \prod_{i \in P} H(a_{i})\ .
+\end{multline*}
+D'après (2.3), on a
+
+\begin{equation*}
+\begin{aligned}
+H(a) \;&=\; \frac{-1}{(1+y)(1+z)}\left[\ \frac{(1+y)^{a} \,-\, (1+z)^{a}}{(1+z)^{a}\cdot z \,-\, (1+z)^{a}y} \;+\; 1\ \right]\\[2ex]
+&=\; \frac{-1}{(1+y)(1+z)}\left[\ \frac{(1+y)^{a}(1+z)-(1+z)^{a}(1+y)}{(1+y)^{a}z \,-\, (1+z)^{a}y}\ \right]\\[2ex]
+&=\; -\ \frac{(1+y)^{a-1} \,-\, (1+z)^{a-1}}{(1+y)^{a}z \,-\, (1+z)^{a}y}\ .
+\end{aligned}
+\end{equation*}
+Soient $N$ et $D$ les numérateurs et dénominateurs de cette formule.
+
+On a
+
+\begin{equation*}
+H(a) \;=\; -\,\frac{N}{D}\ , 
+\end{equation*}
+----- misprints recorded on page 53 -----
+[id 7II:81]
+WHERE: Corollaire 2.4 (ii), 'on a, |P| désignent le nombre'
+PRINT: |P| désignent le nombre d'élément d'une partie P de [1,d] (checked at 1.3x)
+CORRECT: \underline{désignant le nombre d'élément d'une partie}
+TEX BEFORE: \underline{désignent le nombre d'élément d'une partie}
+NOTE: Absolute participle clause ('|P| désignant ...'); 'désignent' is a typing error. The TeX keeps the printed reading.
+
+[id 7II:82]
+WHERE: Corollaire 2.4 (ii), 'le nombre d'élément d'une partie'
+PRINT: le nombre d'élément d'une partie P
+CORRECT: \underline{désignent le nombre d'éléments d'une partie}
+TEX BEFORE: \underline{désignent le nombre d'élément d'une partie}
+NOTE: Agreement error: 'le nombre d'éléments'. The TeX keeps the printed reading.
+
+[id 7II:83]
+WHERE: display after 'D'après (2.3), on a', first line, denominator of the inner fraction
+PRINT: (1+z)^a·z - (1+z)^a y (checked at 3x)
+CORRECT: (1+y)^{a}\cdot z \,-\, (1+z)^{a}y
+TEX BEFORE: {(1+z)^{a}\cdot z \,-\, (1+z)^{a}y}
+NOTE: Théorème 2.3 for d = 1 has the denominator -(1+y)^a z + (1+z)^a y, and the next two lines of this display have (1+y)^a z - (1+z)^a y; only with (1+y)^a does the numerator of the second line follow. The TeX keeps the printed reading.
+
+=================== PAGE 54 ===================
+----- corrected edition, expose_XI_body.tex, page 54 -----
+%%%%%%%%%%  scan idx 61  |  folio 54  %%%%%%%%%%
+
+\begin{equation*}
+ N \;=\; \sum \binom{a-1}{k}\ (y^{k} \,-\, z^{k}) \;=\; (y-z) \sum_{i,j\geq 0}\binom{a-1}{i+j+1}\ y^{i}\ z^{j}
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+D \;&=\; \sum \binom{a}{k}\ (y^{k}z \,-\, yz^{k}) \;=\; (z-y) \;+\; yz \sum_{k\geq 1}\binom{a}{k}\!\left(y^{k-1} \,-\, z^{k-1}\right)\\[2ex]
+&=\; (y-z)\ (-1 \;+\; yz \sum_{i,j\geq 0}\binom{a}{i+j+2}\ y^{i}z^{j}\\[2ex]
+&=\; (y-z)\ (-1 \;+\; \sum_{i,j\geq 1}\binom{a}{i+j}y^{i}\ z^{j})
+\end{aligned}
+\end{equation*}
+et l'assertion (i) en résulte.
+
+Inversons la formule de 2.3, pour $d = 1$. On trouve
+
+\begin{equation*}
+-\ \frac{(1+y)^{a} \,-\, (1+z)^{a}}{(1+y)^{a}z \,-\, (1+z)^{a}y} \;=\; 1 \;+\; (1+x)(1+y)\ H(a)\ .
+\end{equation*}
+Si l'on substitue cette formule dans 2.3, on obtient
+
+\begin{equation*}
+\begin{aligned}
+H(\underline{a}) \;&=\; \frac{1}{(1+y)(1+z)}\left[\ \prod_{1}^{d}\ (1+(1+x)(1+y)\ H(a_{i}))\qquad -\ 1\ \right]\\[2ex]
+&=\;\frac{1}{(1+y)(1+z)}\left[\ \sum_{\substack{P \subset [i,d] \\ P \neq \emptyset}}\ (1+x)^{|P|}(1+y)^{|P|}\ \prod_{i \in P} H(a_{i})\ \right]
+\end{aligned}
+\end{equation*}
+d'où résulte (ii).
+
+\underline{Théorème} 2.5. \underline{Avec les notations} 2.1
+
+(i) \quad \underline{Si} $p+q = p'+q'$ \underline{et si} $p \leq p' \leq q' \leq q$, \underline{alors}
+
+\begin{equation*}
+h_{o}^{pq}\ (\underline{a}) \;\leq\; h_{o}^{p'q'}(\underline{a})
+\end{equation*}
+(ii) \quad \underline{Si} $p \leq q$, \underline{pour que} $h_{o}^{pq}\ (\underline{a}) \neq 0$, \underline{il faut et il suffit que} 
+----- misprints recorded on page 54 -----
+[id 7II:84]
+WHERE: computation of D, second line
+PRINT: = (y-z) (-1 + yz Σ_{i,j≥0} (a over i+j+2) y^i z^j  (no closing parenthesis; checked at 1.8x)
+CORRECT: \binom{a}{i+j+2}\ y^{i}z^{j})
+TEX BEFORE: \binom{a}{i+j+2}\ y^{i}z^{j}\\[2ex]
+NOTE: The parenthesis opened before -1 is not closed (the next line closes its own). The TeX keeps the printed reading.
+
+[id 7II:85]
+WHERE: display after 'Inversons la formule de 2.3, pour d = 1. On trouve', right-hand side
+PRINT: = 1 + (1+x)(1+y) H(a)  .
+CORRECT: 1 \;+\; (1+y)(1+z)\ H(a)
+TEX BEFORE: 1 \;+\; (1+x)(1+y)\ H(a)
+NOTE: The variables are y and z; there is no x. Théorème 2.3 for d = 1 gives exactly 1 + (1+y)(1+z)H(a), and Corollaire 2.4 (ii) has (1+y)^{|P|-1}(1+z)^{|P|-1}. The TeX keeps the printed reading.
+
+[id 7II:86]
+WHERE: display after 'Si l'on substitue cette formule dans 2.3', first line, factor of the product
+PRINT: (1+(1+x)(1+y) H(a_i))
+CORRECT: (1+(1+y)(1+z)\ H(a_{i}))
+TEX BEFORE: (1+(1+x)(1+y)\ H(a_{i}))
+NOTE: Same x, y for y, z slip as in the preceding display. The TeX keeps the printed reading.
+
+[id 7II:87]
+WHERE: same display, second line, summand
+PRINT: (1+x)^{|P|} (1+y)^{|P|}
+CORRECT: (1+y)^{|P|}(1+z)^{|P|}
+TEX BEFORE: (1+x)^{|P|}(1+y)^{|P|}
+NOTE: Same slip; after division by (1+y)(1+z) it gives the (1+y)^{|P|-1}(1+z)^{|P|-1} of Corollaire 2.4 (ii). The TeX keeps the printed reading.
+
+[id 7II:88]
+WHERE: same display, second line, range of the sum
+PRINT: P⊂[i,d] (dotted i; checked at 1.3x)
+CORRECT: P \subset [1,d]
+TEX BEFORE: P \subset [i,d]
+NOTE: P runs over the non-empty subsets of [1,d], as in Corollaire 2.4 (ii); i is the bound index of the product. The TeX keeps the printed reading.
+
+=================== PAGE 56 ===================
+----- corrected edition, expose_XI_body.tex, page 56 -----
+%%%%%%%%%%  scan idx 63  |  folio 56  %%%%%%%%%%
+
+Pour $p+q$ donné, le plus petit $p$ possible s'obtient pour $e = 0$ et $c_i = 1$, et est le nombre d'indices $i$. Ce $p$ est donc la borne inférieure des $p$ pour lesquels on a
+
+\begin{equation*}
+p \;\geqslant\; \frac{(p+q)-(a-2)}{a} \qquad , \; \mbox{i.e.} \quad (p+1)a \geqslant p+q+2 \qquad .
+\end{equation*}
+Passons au cas général. Si $\underline{a}'$ se déduit de $\underline{a}$ en supprimant les $a_i$ égaux à 1, alors $H(\underline{a}) = H(\underline{a}')$. Vu la forme de la formule 2.5 (ii), on peut supposer que pour tout $i$, $a_i > 1$. Si $d = 0$, alors $h_o^{pq} = 0$ et l'assertion est correcte; on ne restreint pas la généralité en supposant que $d > 0$ et que $a_d = \sup(a_i)$.
+
+En vertu de 2.4 (ii), et (2.5.2), pour que $h_o^{pq}(\underline{a}) \neq 0$, il faut et il suffit qu'il existe une partie non vide $P$ de $[1,d]$, un couple $(e,f)$ et des couples $(c_i,d_i)_{i\in P}$ tels que
+
+\begin{equation}\tag{2.5.4}
+\left\{
+\begin{array}{l}
+(|P|-1, \; |P|-1) \geqslant (e,f) \geqslant (0,0) \; , \\[3mm]
+c_i,d_i \geqslant \left[{\displaystyle \frac{c_i+d_i+1}{a_i}}\right] \quad ; \quad (c_i,d_i) \geqslant (0,0) \quad , \\[3mm]
+(p,q) = (e,f) + \sum_{i\in P} (c_i,d_i) \qquad .
+\end{array}
+\right.
+\end{equation}
+Pour $n = p+q$ fixé, cherchons la plus petite valeur de $p$ possible. Si $n_i = c_i + d_i$, pour un tel $p$, les conditions (2.5.4) se réécrivent, en termes des $c_i$, $n_i$, $e$ et $f$ 
+----- misprints recorded on page 56 -----
+[id 7II:89]
+WHERE: paragraph 'En vertu de 2.4 (ii), et (2.5.2)', index range of the couples (c_i,d_i) before (2.5.4)
+PRINT: (c_i,d_i) with the subscript range i≤i≤d: both letters before d are dotted i's, not the digit 1 (checked at 4x)
+CORRECT: (c_i,d_i)_{1 \leqslant i \leqslant d}
+TEX BEFORE: (c_i,d_i)_{i \leqslant i \leqslant d}
+NOTE: The lower bound is the digit 1 (the same i-for-1 slip as P⊂[i,d] on p. 54). The TeX keeps the printed reading. The corrected layer reads (c_i,d_i)_{i\in P}, the exact range: by 2.4 (ii) the couples and the sum in (2.5.4) run over i in P.
+
+[id 7II:90]
+WHERE: last sentence: 'les conditions (2.5.4) se réécrivent, en terme des c_i, n_i, e et f'
+PRINT: en terme des c_i, n_i, e et f
+CORRECT: en termes des $c_i$, $n_i$, $e$ et $f$
+TEX BEFORE: en terme des $c_i$, $n_i$, $e$ et $f$
+NOTE: The locution is 'en termes de'. The TeX keeps the printed reading; the corrected layer already reads 'en termes des'.
+
+=================== PAGE 57 ===================
+----- corrected edition, expose_XI_body.tex, page 57 -----
+%%%%%%%%%%  scan idx 64  |  folio 57  %%%%%%%%%%
+
+\begin{equation}\tag{2.5.5}
+\left\{
+\begin{array}{l}
+a_i = 2 \Longrightarrow n_i \mbox{ pair} \qquad \mbox{(sinon (2.5.4) est impossible)} \\[3mm]
+c_i \geq \left[ \displaystyle\frac{n_i+1}{a_i} \right] \quad ; \quad c_i \leq n_i \quad , \\[3mm]
+(|P|-1, \; |P|-1) \geq (e,f) \geq (0,0) \quad , \\[3mm]
+n = e+f+ \sum_{i\in P} n_i \quad , \\[3mm]
+p = e + \sum_{i\in P} c_i \quad .
+\end{array}
+\right.
+\end{equation}
+Cette description montre tout d'abord que le plus petit $p$ est obtenu pour $P = [1,d]$, cas auquel on se limitera. Si on a
+
+\begin{equation}\tag{2.5.6}
+\sum (a_i-2) + (d-1) \geq n,
+\end{equation}
+alors il existe une solution avec $p = c_i = e = 0$. Sinon, si $a_d \neq 2$, le mieux qu'on puisse faire est de prendre $n_i = a_i - 2$ pour $i \neq d$, de sorte que $c_i = 0$ pour $i \neq d$, $e = 0$, $f = d-1$ et $n_d = n - (d-1) - \sum\limits_{i \neq d} (a_i-2)$. On a alors
+
+\begin{equation}\tag{2.5.7}
+p = \left[ \displaystyle\frac{n-(d-1) - \sum\limits_{i \neq d} (a_i-2) + 1}{a_d} \right] \qquad ,
+\end{equation}
+et donc, pour $p \leq q$, on a $h^{pq}_{o}(\underline{a}) \neq 0$ si et seulement si
+
+\begin{equation}\tag{2.5.8}
+p \geq \left[ \displaystyle\frac{n- \sum\limits_{i \neq d} (a_i-1) + 1}{a_d} \right] \qquad .
+\end{equation}
+La formule (2.5.8) se réduit à (2.5.2) si $d = 1$ et est trivialement vraie si (2.5.6) est vérifié. Si $d \geq 2$, si (2.5.6) n'est pas vérifié, et si tous les $a_i$ sont égaux à $2$, le mieux qu'on puisse faire est encore de
+----- misprints recorded on page 57 -----
+[id 7II:91]
+WHERE: paragraph after (2.5.6): 'Sinon, si a_d ≠ 2, le mieuxqu'on puisse faire'
+PRINT: mieuxqu'on: no space between mieux and qu'on, the x overtyped (checked at 3x)
+CORRECT: le mieux qu'on puisse faire
+TEX BEFORE: le mieuxqu'on puisse faire
+NOTE: Missing word space. The TeX keeps the printed reading; the corrected layer already reads 'mieux qu'on'.
+
+=================== PAGE 58 ===================
+----- corrected edition, expose_XI_body.tex, page 58 -----
+%%%%%%%%%%  scan idx 65  |  folio 58  %%%%%%%%%%
+prendre $n_i = 0$ $(i \neq d)$, $e = 0$, $f = d-1$ ou $d-2$, congru à $n$ modulo $2$, et $n_d = n-f$. Si $n \equiv d-1$ $(2)$, on prouve (2.5.7) comme plus haut. Sinon, on note que
+
+\begin{equation*}
+\left[ \displaystyle\frac{n - (d-2) + 1}{2} \right] = \left[ \displaystyle\frac{n - (d-1) + 1}{2} \right]
+\end{equation*}
+de sorte que (2.5.7), et par là (2.5.8), est valable même si $a_d = 2$.
+
+Reste à vérifier que (2.5.8) équivaut à la formule 2.5 (ii). En effet, on a
+
+\begin{equation*}
+\left[ \displaystyle\frac{n - \sum\limits_{i \neq d} (a_i-1) + 1}{a_d} \right] = \left[ \displaystyle\frac{n + d - \sum\limits_{i \neq d} a_i}{a_d} \right] = \left[ \displaystyle\frac{p + q + d - \sum a_i}{a_d} \right] + 1 \quad .
+\end{equation*}
+2.6. \quad Si $X$ est une intersection complète de dimension $n$ dans $\mathbb{P}^r$, il résulte aussitôt de (2.5.8) que la partie primitive de $H^n(X)$ n'est nulle que si $X$ est une quadrique de dimension impaire.
+
+\underline{Définition} 2.7. \underline{Si} $X$ \underline{est une variété algébrique propre et lisse sur} $\mathbb{C}$, \underline{le niveau de Hodge de} $H^n(X)$ \underline{est la borne supérieure des nombres} $q-p$ \underline{pour} $p+q = n$ \underline{et} $h^{pq}(X) \neq 0$.
+
+Le niveau de Hodge $\ell$ est donc congru à $n$ modulo $2$, et est au plus égal à $\inf(n,2\dim(X) - n)$. Il est $\geq 0$, sauf si $H^n(X) = 0$, auquel cas il est égal à $- \infty$.
+
+\underline{Corollaire} 2.8. \underline{Reprenons les notations} 2.1, \underline{en faisant} $k = \mathbb{C}$, \underline{et en supposant que} $a_d = \sup (a_i)$. \underline{Soit} $\ell$ \underline{un entier} $0 \leq \ell < n$, \underline{congru à} $n$ \underline{modulo} $2$. \underline{Pour que le niveau de Hodge de} $H^n(V_n(\underline{a}))$ \underline{soit} $\leq \ell$ , \underline{il faut et il suffit que} 
+----- misprints recorded on page 58 -----
+[id 7II:92]
+WHERE: paragraph after Définition 2.7: 'est au plus égal à inf(n,dim(X) - n)'
+PRINT: inf(n,dim(X) - n) (no 2 before dim; checked at 2.5x)
+CORRECT: \inf(n,2\dim(X) - n)
+TEX BEFORE: \inf(n,\dim(X) - n)
+NOTE: h^{pq}(X) ≠ 0 forces p, q ≤ dim X, so q - p = 2q - n ≤ 2 dim X - n (and q - p ≤ p + q = n). With dim(X) - n the Hodge level of the middle cohomology (n = dim X) would be ≤ 0, which fails for a curve of genus ≥ 1 and for V_3(3) (level 1 in the table on p. 60). The TeX keeps the printed reading; the corrected layer already reads 2\dim(X).
+
+=================== PAGE 63 ===================
+----- corrected edition, expose_XII_body.tex, page 63 -----
+%%%%%%%%%%  scan idx 70  |  folio 63  %%%%%%%%%%
+
+Les formes quadratiques sur $V$ forment un $A$-module projectif ; une forme quadratique $Q$ est ``partout non nulle'' sur $S$ (0.1) si et seulement si les $Q(v)$ engendrent l'idéal $A$ de $A$.
+
+La notation $\mathbb{P}(V)$ sera prise au sens des EGA ; rappelons que si $A$ est un corps, alors $\mathbb{P}(V)$ est l'espace projectif dont l'ensemble des points rationnels est le quotient $(V^* - \{0\})/A^*$ .
+
+La forme quadratique $Q$ s'identifie à une section du faisceau inversible $\mathcal{O}(2)$ sur l'espace projectif $\mathbb{P}(V^*)$ sur $S$. Pour $Q$ partout non nulle, l'équation (``homogène'') $Q = 0$ définit un sous-schéma de $\mathbb{P}(V^*)$, plat et purement de dimension relative $n-2$ sur $S$. Ce schéma s'appelle la \underline{quadrique définie par} $Q$. La forme $Q$ est dite \underline{ordinaire} si elle n'est nulle en aucun point de $S$ et que la quadrique qu'elle définit est lisse sur $S$.
+
+Pour que $Q$ soit ordinaire, il faut et il suffit que les formes qui s'en déduisent après extension des scalaires de $A$ à un corps le soient. Si $A$ est un corps, alors :
+
+a) pour $n$ pair ou $\mathrm{car}(A) \neq 2$ : $Q$ ordinaire $\Longleftrightarrow$ $Q$ non dégénéré ;
+
+b) pour $n$ impair et $\mathrm{card}(A) = 2$ : $Q$ est ordinaire si et seulement si le noyau $N$ de la forme bilinéaire (alternée) associée $\Phi$ est de dimension un, et que $Q$ n'est pas nul sur $N$.
+
+\underline{Proposition} 1.2. \underline{Si} $Q$ \underline{est ordinaire et si} $n = 2m$ (resp. $n = 2m +1$), \underline{alors}, \underline{localement pour la topologie étale sur} $S$, $V$ \underline{admet une base} \underline{$e$} \underline{telle que} 
+----- misprints recorded on page 63 -----
+[id 7II:93]
+WHERE: 1.1, case b) after 'Si A est un corps, alors :'
+PRINT: b) pour n impair et card(A) = 2 : (card; checked at 2x)
+CORRECT: $\mathrm{car}(A) = 2$
+TEX BEFORE: $\mathrm{card}(A) = 2$
+NOTE: Case b) is the complement of case a) ('n pair ou car(A) ≠ 2'), and the bilinear form is called alternée, which needs characteristic 2; card(A) = 2 would cover only the field with two elements. The TeX keeps the printed reading; the corrected layer still reads card(A).
+
+=================== PAGE 64 ===================
+----- corrected edition, expose_XII_body.tex, page 64 -----
+%%%%%%%%%%  scan idx 71  |  folio 64  %%%%%%%%%%
+
+\begin{equation*}
+ Q\Bigl( \sum_{1}^{n} x_i e_i \Bigr) \;=\; \sum_{1}^{m} x_i x_{i+m}
+\end{equation*}
+\begin{equation*}
+\text{(resp.} \qquad Q\Bigl( \sum_{1}^{n} x_i e_i \Bigr) \;=\; \sum_{1}^{m} x_i x_{i+m} + \lambda x_{2m+1}^{2} \qquad (\lambda \text{ inversible}) \;.
+\end{equation*}
+Prouvons 1.2 par récurrence sur $m$ . Si $m = 0$, l'assertion est évidente. Si $m > 0$, la quadrique d'équation $Q = 0$ est lisse sur $S$ et à fibres géométriques non vides ; elle admet donc des sections localement pour la topologie étale. Localement, une telle section est définie par un élément $e \in V$, nul en aucun point de $\mathrm{Spec}(A)$, et tel que $Q(e) = 0$. En aucun point de $S$, $e$ n'est dans le noyau de $\Phi$ ; localement, on peut donc trouver $f'$ tel que $\Phi(e,f') = 1$. Si $f = -Q(f').e+f'$, on a
+
+\begin{equation*}
+Q(e) = Q(f) = 0 \;,\; \Phi(e,f) = 1 \quad .
+\end{equation*}
+Si $V_2$ est l'orthogonal du sous-module $V_1$ de $V$ engendré par $e$ et $f$, on a $V = V_1 \oplus V_2$, et on conclut en appliquant l'hypothèse de récurrence à $V_2$ .
+
+1.3. Pour la définition et les principales propriétés de l'algèbre de Clifford de $Q$, on renvoie à (Bourb. Alg 9 \S{} 9). On désigne par $\rho$ l'application canonique de $V$ dans $C(Q)$.
+
+\underline{Lemme} 1.3.1. \underline{Sous les hypothèses de} 1.1, \underline{il existe pour} $\lambda \in A$ \underline{un et un seul homomorphisme}
+
+\begin{equation*}
+[\lambda] \;:\; C^{+}(\lambda\, Q) \longrightarrow C^{+}(Q)
+\end{equation*}
+\underline{tel que}, \underline{pour} $x, y \in V$, \underline{on ait}
+
+\begin{equation*}
+[\lambda]\,(\rho(x).\rho(y)) \;=\; \lambda.\rho(x).\rho(y) \quad .
+\end{equation*}
+----- misprints recorded on page 64 -----
+[id 7II:94]
+WHERE: Proposition 1.2, both displayed normal forms (n = 2m, and resp. n = 2m+1), upper bound of the second sum
+PRINT: Σ with limits 1 and m-1 before x_i x_{i+m}, in both displays (checked at 2x)
+CORRECT: \sum_{1}^{m} x_i x_{i+m}
+TEX BEFORE: \sum_{1}^{m-1} x_i x_{i+m}
+NOTE: With the bound m-1 the coordinates x_m and x_{2m} do not occur, so Q would be degenerate, against 'Q ordinaire'; the proof splits off one hyperbolic plane per induction step, m in all (empty sum for m = 0). Applies to both displays. The TeX keeps the printed reading; the corrected layer already reads m in both.
+
+[id 7II:95]
+WHERE: Proposition 1.2, second display '(resp. Q(...) = ... (λ inversible) .'
+PRINT: (resp.  Q(Σ x_i e_i) = Σ x_i x_{i+m} + λx^2_{2m+1}  (λ inversible) .  (the parenthesis opened by '(resp.' is never closed)
+CORRECT: (\lambda \text{ inversible})) \;.
+TEX BEFORE: (\lambda \text{ inversible}) \;.
+NOTE: Unclosed parenthesis. The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:96]
+WHERE: proof of 1.2, 'Si f = -Q(f').e+f, on a'
+PRINT: f = -Q(f').e+f,  (no prime on the last f; checked at 4x)
+CORRECT: $f = -Q(f').e+f'$
+TEX BEFORE: $f = -Q(f').e+f$
+NOTE: f is built from the f' just chosen: f = f' - Q(f')e gives Q(f) = Q(f') - Q(f')Φ(e,f') = 0 and Φ(e,f) = 1, as stated next. The TeX keeps the printed reading; the corrected layer already reads f'.
+
+=================== PAGE 65 ===================
+----- corrected edition, expose_XII_body.tex, page 65 -----
+%%%%%%%%%%  scan idx 72  |  folio 65  %%%%%%%%%%
+
+Cet homomorphisme se déduit par passage au quotient de l'endomorphisme $[\lambda]$ de la partie $T^{+}(E)$ de l'algèbre tensorielle de $E$, qui vaut $\lambda^{n}$ sur $T^{2n}(E)$. En effet,
+
+\begin{equation*}
+[\lambda]\,(x \otimes x - \lambda\, Q(x)) \;=\; \lambda(x \otimes x - Q(x)) \quad .
+\end{equation*}
+Supposons $Q$ partout non nulle sur $S$. Alors, le lemme 1.2.1 définit un système transitif d'isomorphismes entre les algèbres $C^{+}(\lambda\, Q)$ pour $\lambda \in A^{*}$.
+
+Dès lors, l'algèbre $C^{+}(Q)$ ne dépend (à isomorphisme unique près) que de $V$ et de la donnée de $Q$ à un facteur près ; en d'autres termes, $C^{+}(Q)$ ne dépend que de $V$ et du sous-schéma d'équation $Q = 0$ de $\mathbb{P}(V^{*})$. Chaque homothétie de rapport inversible est un automorphisme du couple $(V, X \subset \mathbb{P}(V^{*}))$ ; on vérifie que ces automorphismes agissent trivialement sur $C^{+}(V, X)$, et il en résulte que l'algèbre $C^{+}(V, X)$ ne dépend que du couple de schémas $X \subset \mathbb{P}(V^{*})$ sur $A$. On la notera $C^{+}(X, \mathbb{P}(V^{*}))$.
+
+1.4. Soit $V$ un $A$-module localement libre de rang $2m > 0$ et $Q$ une forme quadratique non dégénérée sur $V$ . Soit donné une décomposition $V = W_1 \oplus W_2$ de $V$ en deux sous-espaces totalement singuliers. La forme $Q(w_1 + w_2)$ met alors $W_1$ et $W_2$ en dualité parfaite. Rappelons que pour $f \in W_2$ (identifié à $W_1^{*}$), le produit contracté par $f$ est l'endomorphisme de degré $-1$ de $\wedge W_1$ défini par
+
+\begin{equation*}
+f \llcorner (e_1 \wedge \ldots \wedge e_p) \;=\; \sum (-1)^{i-1} < e_i , f > e_1 \wedge \ldots \; \hat{e}_i \ldots \wedge e_p \quad .
+\end{equation*}
+Munissons le $A$-module $\wedge W_1$ de la $\mathbb{Z}/2$-graduation pour laquelle
+----- misprints recorded on page 65 -----
+[id 7II:97]
+WHERE: paragraph 'Supposons Q partout non nulle sur S. Alors, le lemme 1.2.1 ...'
+PRINT: le lemme 1.2.1 (checked at 1.3x)
+CORRECT: le lemme 1.3.1
+TEX BEFORE: le lemme 1.2.1
+NOTE: The homomorphisms [λ] : C^+(λQ) → C^+(Q) are those of Lemme 1.3.1 (p. 64); 1.2 is a proposition and there is no 1.2.1. The TeX keeps the printed reading; the corrected layer still reads 1.2.1.
+
+[id 7II:98]
+WHERE: 1.4, displayed definition of the contraction f⌞(e_1∧...∧e_p)
+PRINT: Σ (-1)^i < e_i,f > e_o∧... ê_i...∧e_p : first factor e with index o (zero) and sign (-1)^i, while the left side is e_1∧...∧e_p (checked at 1.6x)
+CORRECT: \sum (-1)^{i-1} < e_i , f > e_1 \wedge
+TEX BEFORE: \sum (-1)^{i} < e_i , f > e_o \wedge
+NOTE: The left side starts at e_1, so the first factor on the right is e_1, and with indices from 1 the sign is (-1)^{i-1}: then f⌞e = <e,f>, which the isomorphism s of the next page (s(ρ(e,0)) = e∧, s(ρ(0,f)) = f⌞) needs for (e∧ + f⌞)^2 = Q(e+f) = <e,f>; with (-1)^i it gives -<e,f>. The print's e_0 and (-1)^i are the 0-based form of the formula. The TeX keeps the printed reading; the corrected layer already reads (-1)^{i-1} and e_1.
+
+[id 7II:99]
+WHERE: first paragraph: 'la partie T^+(E) de l'algèbre tensorielle de E, qui vaut λ^n sur T^{2n}(E)'
+PRINT: T^+(E), de E, T^{2n}(E) (letter E, three times)
+CORRECT: $T^{+}(V)$ de l'algèbre tensorielle de $V$, qui vaut $\lambda^{n}$ sur $T^{2n}(V)$
+TEX BEFORE: $T^{+}(E)$ de l'algèbre tensorielle de $E$, qui vaut $\lambda^{n}$ sur $T^{2n}(E)$
+NOTE: No E is defined in the exposé: the module is V (Lemme 1.3.1 takes x, y ∈ V; the next display has x ⊗ x - λQ(x)). E is the letter of Bourbaki, Alg. IX § 9, cited in 1.3, so this is probably the author's slip of notation rather than a typing error. The TeX keeps the printed reading; the corrected layer still reads E.
+
+=================== PAGE 66 ===================
+----- corrected edition, expose_XII_body.tex, page 66 -----
+%%%%%%%%%%  scan idx 73  |  folio 66  %%%%%%%%%%
+$(\wedge W_1)^+ = \underset{i}{\oplus} \overset{2i}{\wedge} W_1$ et $(\wedge W_1)^- = \underset{i}{\oplus} \overset{2i+1}{\wedge} W_1$ . L'algèbre $\mathrm{End}(\wedge W_1)$ est alors $\mathbb{Z}/2$-gradué : les endomorphismes pairs (resp. impairs) sont ceux qui respectent la graduation (resp. sont de degré 1 (mod 2)).
+
+On renvoie à (Bourb Alg 9 § 9 n°4) pour la démonstration de l'existence d'un unique isomorphisme d'algèbre $\mathbb{Z}/2$-graduées $s$ entre $C(Q)$ et $\mathrm{End}(\wedge W_1)$, tel que
+
+\begin{equation*}
+s(\rho((e,0))) = e \wedge \qquad \mbox{et} \qquad s(\rho((0,f))) = f \llcorner \quad .
+\end{equation*}
+Désignons provisoirement par $e(W_1,W_2)$ l'élément de $C^+(Q)$ tel que $s(e(W_1,W_2))$ soit l'identité sur $(\wedge W_1)^+$ et $0$ sur $(\wedge W_1)^-$ . Le centre $Z(Q)$ de $C^+(Q)$ est isomorphe à $A \oplus A$, cette décomposition étant définie par les idempotents $e(W_1,W_2)$ et $1 - e(W_2,W_1)$. De plus $C^+(Q)$ est une algèbre de matrice sur $Z(Q)$.
+
+De ceci et de 1.2, on déduit comme en loc.cit.
+
+\underline{Proposition} 1.5. \underline{Sous les hypothèses de} 1.1, \underline{si} $n = 2m > 0$ \underline{et que} $Q$ \underline{est non dégénérée, alors le centre} $Z(Q)$ \underline{de} $C^+(Q)$ \underline{est une algèbre étale localement libre de rang} 2 \underline{sur} $A$ \underline{et} $C^+(Q)$ \underline{est une algèbre d'Azumaya sur} $Z(Q)$.
+
+1.6. Soient $V$ et $Q$ comme en 1.4, et $W$ un facteur direct totalement singulier localement libre de rang $m$ de $V$. Soit $W'_1$ un supplémentaire de $W : V = W \oplus W'_1$ . Tout supplémentaire $W'_2$ de $W$ s'identifie au graphe d'une application $u$ de $W'_1$ dans $W$. La forme $\Phi$ met en dualité $W$ et $W'_1$ ; l'application $u$ est donc uniquement déterminée par la forme bilinéaire sur $W'_1$ 
+----- misprints recorded on page 66 -----
+[id 7II:100]
+WHERE: first paragraph, 'L'algèbre End(∧ W_1) est alors Z/2-gradué'
+PRINT: L'algèbre End(∧ W_1) est alors Z/2-gradué : (checked at 2x)
+CORRECT: est alors $\mathbb{Z}/2$-graduée :
+TEX BEFORE: est alors $\mathbb{Z}/2$-gradué :
+NOTE: Agreement error: the subject is 'L'algèbre'. The same slip recurs twice on p. 68. The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:101]
+WHERE: second paragraph, 'l'existence d'un unique isomorphisme d'algèbre Z/2-graduées s'
+PRINT: isomorphisme d'algèbre Z/2-graduées s entre
+CORRECT: isomorphisme d'algèbres $\mathbb{Z}/2$-graduées $s$
+TEX BEFORE: isomorphisme d'algèbre $\mathbb{Z}/2$-graduées $s$
+NOTE: Agreement error: singular noun with a feminine plural adjective (an isomorphism of Z/2-graded algebras). The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:102]
+WHERE: display after 'tel que', left formula
+PRINT: s(ρ((e,0)) = e ∧ : three parentheses opened, two closed (checked at 3x)
+CORRECT: s(\rho((e,0)))
+TEX BEFORE: s(\rho((e,0))) = e \wedge
+NOTE: The parenthesis opened after s is never closed. The TeX silently adds it; the fix restores the printed reading. The corrected layer has the closing parenthesis.
+
+[id 7II:103]
+WHERE: display after 'tel que', right formula
+PRINT: s(ρ((0,f)) = f⌞ : three parentheses opened, two closed (checked at 3x)
+CORRECT: s(\rho((0,f)))
+TEX BEFORE: s(\rho((0,f))) = f \llcorner
+NOTE: As in the left formula. The TeX silently adds the parenthesis; the fix restores the printed reading. The corrected layer has it.
+
+[id 7II:104]
+WHERE: paragraph 'Désignons provisoirement ...', the idempotents defining Z(Q) = A ⊕ A
+PRINT: par les idempotents e(W_1,W_2) et 1 - e (W_2,W_1). (checked at 1x)
+CORRECT: et $1 - e(W_1,W_2)$
+TEX BEFORE: et $1 - e(W_2,W_1)$
+NOTE: The decomposition A ⊕ A is given by an idempotent and its complement, e(W_1,W_2) and 1 - e(W_1,W_2). Exchanging W_1 and W_2 changes the idempotent when m is odd (Proposition 1.12 with W_1 ∩ W_2 = 0). Check m = 1 with the formulas of p. 70: e(W_1,W_2) = fe and e(W_2,W_1) = ef = 1 - fe, so the printed pair is fe, fe. The printed reading holds only for m even. Possibly the author's slip rather than a typing error. The TeX keeps the printed reading; the corrected layer too.
+
+(diplomatic edits made on this page for misprints, OLD -> NEW = the TeX before -> the printed reading:)
+  OLD: s(\rho((e,0)))
+  NEW: s(\rho((e,0))
+  OLD: s(\rho((0,f)))
+  NEW: s(\rho((0,f))
+
+=================== PAGE 67 ===================
+----- corrected edition, expose_XII_body.tex, page 67 -----
+%%%%%%%%%%  scan idx 74  |  folio 67  %%%%%%%%%%
+
+\begin{equation*}
+ B(x,y) = \Phi(x,u(y)) \quad ,
+\end{equation*}
+et $W'_2$ est totalement singulier si et seulement si, sur $W'_1$, on a
+
+\begin{equation*}
+B(x,x) = - Q(x) \quad .
+\end{equation*}
+Puisqu'il existe toujours de telles formes $B$, $W$ admet des supplémentaires totalement singulier. L'un d'eux, soit $W'$, étant choisi, l'ensemble des supplémentaire totalement singulier $W'_o$ de $W$ s'identifie à l'ensemble des formes alternées sur $W'$, soit encore à l'ensemble des sections de l'espace affine $\mathbb{E}(\overset{2}{\wedge} W')$ sur $S$. Pour chaque section $x$ de $\mathbb{E}(\overset{2}{\wedge} W')$, soit $W'_o(x)$ le supplémentaire correspondant de $W$ et $e(x)$ l'idempotent $e(W, W'_o(x))$. La fonction $x \longmapsto e(x)$ est compatible à toute extension des scalaires, dont définit un morphisme de $S$-schémas $e$ de $\mathbb{E}(\overset{2}{\wedge} W')$ dans $\mathrm{Spec}(Z(Q))$. Le $S$-schéma $\mathbb{E}(\overset{2}{\wedge} W')$ est plat à fibres géométriques connexes, alors que $\mathrm{Spec}(Z(Q))$ est étale sur $S$. Le morphisme $e$ se factorise donc par $S$, et par suite par une section de $\mathrm{Spec}(Z(Q))$ sur $S$, i.e. $e(x)$ est indépendant de $x$. Ceci justifie la
+
+\underline{Notation} 1.7. \underline{Pour} $W$ \underline{comme plus haut et} $W'$ \underline{un quelconque supplémentaire totalement isotrope de} $W$, \underline{on désigne par} $e(W)$ \underline{l'idempotent} $e(W,W') \in Z(Q)$.
+
+1.8. On a vu en 1.3 que, pour $\lambda$ inversible, $C^+(Q)$ s'identifie à $C^+(\lambda Q)$. Un argument de continuité analogue au précédent montre que cette identification transforme
+
+\begin{equation*}
+e(W) \in Z(Q) \quad \mbox{en} \quad e(W) \in Z(\lambda Q) \quad .
+\end{equation*}
+----- misprints recorded on page 67 -----
+[id 7II:105]
+WHERE: 'Puisqu'il existe toujours de telles formes B, W admet des supplémentaires totalement singulier.'
+PRINT: W admet des supplémentaires / totalement singulier. L'un d'eux (checked at 1x)
+CORRECT: des supplémentaires totalement singuliers. L'un
+TEX BEFORE: des supplémentaires totalement singulier. L'un
+NOTE: Agreement error. The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:106]
+WHERE: 'l'ensemble des supplémentaire totalement singulier W'_o de W'
+PRINT: l'ensemble des / supplémentaire totalement singulier W'_o de W (checked at 1x)
+CORRECT: l'ensemble des supplémentaires totalement singuliers $W'_o$
+TEX BEFORE: l'ensemble des supplémentaire totalement singulier $W'_o$
+NOTE: Agreement error with the plural article 'des'. The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:107]
+WHERE: 'est compatible à toute extension des scalaires, dont définit un morphisme'
+PRINT: dont définit un morphisme de S-schémas (checked at 2x)
+CORRECT: donc définit un morphisme
+TEX BEFORE: dont définit un morphisme
+NOTE: Typing error for 'donc': being compatible with every extension of scalars, the function defines a morphism of S-schemes. The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:108]
+WHERE: 'Le morphisme e se factorise donc par une section de E(∧^2 W') sur S'
+PRINT: se factorise donc par une / section de E ( ∧^2 W') sur S, i.e. e(x) est indépendant de x
+CORRECT: se factorise donc par une section de $\mathrm{Spec}(Z(Q))$ sur $S$
+TEX BEFORE: se factorise donc par une section de $\mathbb{E}(\overset{2}{\wedge} W')$ sur $S$
+NOTE: e goes from E(∧^2 W') to the étale S-scheme Spec(Z(Q)); since E(∧^2 W') is flat with geometrically connected fibres, e factors through S, that is, through a section of Spec(Z(Q)) over S. A section of E(∧^2 W') over S has the wrong target. The author's slip. The TeX keeps the printed reading; the corrected layer already rewrites the clause ('se factorise donc par S, et par suite par une section de Spec(Z(Q)) sur S').
+
+[id 7II:109]
+WHERE: 1.8, 'On a vu en 1.6 que, pour λ inversible, C^+(Q) s'identifie à C^+(λ Q)'
+PRINT: On a vu en 1.6 que (checked at 2.5x)
+CORRECT: On a vu en 1.3 que
+TEX BEFORE: On a vu en 1.6 que
+NOTE: Wrong reference number. The identification of C^+(Q) with C^+(λQ) is made in 1.3 (Lemme 1.3.1 and the paragraph after it, pp. 64-65); 1.6 treats the supplements of W and supplies only the continuity argument recalled next. The TeX keeps the printed reading; the corrected layer already reads 1.3.
+
+=================== PAGE 68 ===================
+----- corrected edition, expose_XII_body.tex, page 68 -----
+%%%%%%%%%%  scan idx 75  |  folio 68  %%%%%%%%%%
+
+1.9. Rappelons que si $B$ et $C$ sont deux algèbres $\mathbb{Z}/2$-gradués, alors, dans le produit tensoriel gradué $B \otimes' C$ de $B$ et $C$, la multiplication est définie par la règle de Koszul
+
+\begin{equation*}
+(b_1 \otimes c_1)\ (b_2 \otimes c_2) = (-1)^{\deg(c_1)\deg(b_2)}\ b_1 b_2 \otimes c_1 c_2 \quad ,
+\end{equation*}
+lorsque les $b_i$ et $c_i$ sont homogènes.
+
+Si $(V_1, Q_1)$ et $(V_2, Q_2)$ sont deux modules quadratiques, alors $C(Q_1 \oplus Q_2) = C(Q_1) \otimes' C(Q_2)$ (Bourb. loc. cit.).
+
+Si $P$ et $Q$ sont deux $A$-modules localement libres $\mathbb{Z}/2$-gradués de type fini sur $A$, on identifie les algèbres $\mathbb{Z}/2$-gradués $\mathrm{End}(P) \otimes' \mathrm{End}(Q)$ et $\mathrm{End}(P \otimes Q)$, en posant, pour $u$, $v$, $p$ et $q$ homogènes
+
+\begin{equation*}
+u \otimes v\ (p \otimes q) = (-1)^{\deg(v)\deg(p)} u(p) \otimes v(q) \quad .
+\end{equation*}
+\underline{Lemme} 1.10. \underline{Soit} $(V,Q)$ \underline{un module quadratique somme de deux modules quadratiques} $(V_1, Q_1)$ \underline{et} $(V_2, Q_2)$, \underline{avec} $V_i$ \underline{localement libre de rang} $2\ m_i$ \underline{et} $Q_i$ \underline{non dégénérée.} \underline{Soit} $V_i = W_i \oplus W'_i$ \underline{une décomposition de} $V_i$ \underline{en deux sous-espaces totalement singuliers} $(i = 1, 2)$. \underline{Alors le diagramme}
+
+\begin{center}
+\begin{tikzcd}[column sep=huge, row sep=large]
+C(Q) \arrow[rr, dash, "\sim"] \arrow[d, dash, "\wr"] & {} & C(Q_1) \otimes' C(Q_2) \arrow[d, equal] \\
+\mathrm{End}(\wedge(W_1 \oplus W_2)) \arrow[r, phantom, "\simeq"] & \mathrm{End}(\wedge W_1 \otimes \wedge W_2) \arrow[r, phantom, "\simeq"] & \mathrm{End}(\wedge W_1) \otimes' \mathrm{End}(\wedge W_2)
+\end{tikzcd}
+\end{center}
+% STRUCTURE: Two-row diagram, 5 nodes total (2 in the top row, 3 in the bottom row), 5 connectors.
+%   NODES: (N1) top-left = C(Q); (N2) top-right = C(Q_1) \otimes' C(Q_2), sitting above the bottom-right
+%   node; (N3) bottom-left = End(\wedge(W_1 \oplus W_2)); (N4) bottom-middle = End(\wedge W_1 \otimes
+%   \wedge W_2); (N5) bottom-right = End(\wedge W_1) \otimes' End(\wedge W_2). CONNECTORS: (A1) N1 ->
+%   N2, horizontal, spans the whole width of the diagram (crosses over the empty top-middle cell), drawn
+%   as one long plain straight rule with NO arrowhead at either end, carrying a tilde "~" centred ABOVE
+%   the rule (unnamed isomorphism). (A2) N1 -> N3, vertical downward, drawn as a single plain vertical
+%   stroke with NO arrowhead, carrying a wreath/squiggle symbol "\wr" placed to the RIGHT of the stroke
+%   (unnamed isomorphism). (A3) N2 -> N5, vertical downward, drawn as a DOUBLE vertical bar "||"
+%   (equality / identification), NO arrowhead, no label. (A4) N3 -- N4, horizontal: no line is drawn;
+%   the relation symbol "\simeq" (typed as a straight bar with a tilde beneath it) stands alone between
+%   the two nodes. (A5) N4 -- N5, horizontal: no line is drawn; the same "\simeq" symbol stands alone
+%   between the two nodes.
+\underline{est commutatif.}
+----- misprints recorded on page 68 -----
+[id 7II:110]
+WHERE: 1.9, 'si B et C sont deux algèbres Z/2-gradués'
+PRINT: deux algèbres Z/2-gradués, alors, (checked at 2x)
+CORRECT: deux algèbres $\mathbb{Z}/2$-graduées, alors
+TEX BEFORE: deux algèbres $\mathbb{Z}/2$-gradués, alors
+NOTE: Agreement error. The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:111]
+WHERE: 'on identifie les algèbres Z/2-gradués End(P) ⊗' End(Q) et End(P ⊗ Q)'
+PRINT: les algèbres Z/2-gradués End(P) ⊗' End(Q) (checked at 1x)
+CORRECT: les algèbres $\mathbb{Z}/2$-graduées $\mathrm{End}(P)
+TEX BEFORE: les algèbres $\mathbb{Z}/2$-gradués $\mathrm{End}(P)
+NOTE: Agreement error (the 'A-modules ... Z/2-gradués' of the line before are right). The TeX keeps the printed reading; the corrected layer too.
+
+=================== PAGE 69 ===================
+----- corrected edition, expose_XII_body.tex, page 69 -----
+%%%%%%%%%%  scan idx 76  |  folio 69  %%%%%%%%%%
+
+La vérification est laissée au lecteur. On déduit aussitôt de ce lemme que
+
+\begin{equation}\tag{1.10.1}
+e(W_1 \oplus W_2) = e(W_1)e(W_2) + (1 - e(W_1))\ (1 - e(W_2))
+\end{equation}
+1.11. La construction suivante est empruntée à Micali et Villamayor. Si $p : Z \longrightarrow S$ est un revêtement étale double de $S$, on peut ragarder $Z$ comme un $\mathbb{Z}/2$-torseurs sur $S$. Désignons par $*$ l'addition des torseurs, et pour $s$ une section de $Z$, soit $e(s)$ l'idempotent de $\rho_* \mathcal{O}_Z$ qui vaut $1$ sur $s$, et $0$ ailleurs. Avec les notations de 1.10, il existe un unique isomorphisme
+
+\begin{equation}\tag{1.11.1}
+\mathrm{Spec}(Z(Q_1)) * \mathrm{Spec}(Z(Q_2)) \longrightarrow \mathrm{Spec}(Z(Q))
+\end{equation}
+\begin{equation*}
++ : \mathrm{Spec}(Z(Q_1))\ \mathbf{x}_S\ \mathrm{Spec}(Z(Q_2)) \longrightarrow \mathrm{Spec}(Z(Q))
+\end{equation*}
+pour lequel, après tout changement de base, on ait
+
+\begin{equation*}
+e(s + t) = e(s)\ e(t) + (1 - e(s))\ (1 - e(t)) \quad .
+\end{equation*}
+Si $s(W)$ est la section de $\mathrm{Spec}(Z(Q))$ telle que $e(s(W)) = e(W)$, la formule 1.10.1 se récrit
+
+\begin{equation*}
+s(W_1 \oplus W_2)\ =\ s(W_1) + s(W_2) \quad .
+\end{equation*}
+\underline{Proposition} 1.12. \underline{Soient} $A$ \underline{un corps,} $V$ \underline{un vectoriel de dimension} $2m > 0$ \underline{sur} $A$, $Q$ \underline{une forme quadratique non dégénérée sur} $V$ \underline{et} $W_1$, $W_2$ \underline{deux sous-espaces totalement isotropes de dimension} $m$ \underline{de} $V$. \underline{Alors}, $e(W_1) = e(W_2)$ \underline{si et seulement si} $\dim(W_1/W_1 \cap W_2)$ \underline{est pair.}
+----- misprints recorded on page 69 -----
+[id 7II:112]
+WHERE: 1.11, 'on peut ragarder Z'
+PRINT: on peut ragarder Z (checked at 2x)
+CORRECT: on peut regarder $Z$
+TEX BEFORE: on peut ragarder $Z$
+NOTE: Typing error. The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:113]
+WHERE: 1.11, 'comme un Z/2-torseurs sur S'
+PRINT: comme un Z/2-torseurs sur S. (checked at 2x)
+CORRECT: comme un $\mathbb{Z}/2$-torseur sur $S$
+TEX BEFORE: comme un $\mathbb{Z}/2$-torseurs sur $S$
+NOTE: Agreement error with the singular article. The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:114]
+WHERE: 1.11, 'soit e(s) l'idempotent de ρ_*O_Z'
+PRINT: ρ_*O_Z with the Greek ρ, the same glyph as in s(ρ((e,0)) on p. 66; the p of 'p : Z → S' two lines above is a typed Latin p (checked at 2.5x)
+CORRECT: l'idempotent de $p_* \mathcal{O}_Z$
+TEX BEFORE: l'idempotent de $\rho_* \mathcal{O}_Z$
+NOTE: The direct image is along p : Z → S, introduced in the same paragraph; ρ is the canonical map V → C(Q) of 1.3. The TeX keeps the printed reading; the corrected layer too.
+
+[id 7II:115]
+WHERE: Proposition 1.12, 'V un vectoriel de dimension 2m > 0 sur V'
+PRINT: un vectoriel de dimension 2m > 0 / sur V, Q une forme quadratique (checked at 2.5x)
+CORRECT: \underline{sur} $A$, $Q$
+TEX BEFORE: \underline{sur} $V$, $Q$
+NOTE: V is the vector space; the field is A ('Soient A un corps'). The TeX keeps the printed reading; the corrected layer already reads A.
+
+=================== PAGE 70 ===================
+----- corrected edition, expose_XII_body.tex, page 70 -----
+%%%%%%%%%%  scan idx 77  |  folio 70  %%%%%%%%%%
+
+(Cf. Bourbaki Alg 9 \S 6 ex. 28). Soit $e_1 \dots e_m\ f_1 \dots f_m$ une base de $V$ telle que
+
+a) \qquad $Q( \Sigma x_i e_i + \Sigma y_i f_i) = \Sigma x_i y_i$ ;
+
+b) \qquad $W_1$ est engendré par les $e_i$ ;
+
+c) \qquad et $W_2$ est engendré par les $(e_i)_{1 \leqslant i \leqslant s}$ et les $(f_i)_{s < i \leqslant m}$ .
+
+Alors $V$ est somme des $V_i = A e_i + A f_i$, et
+
+\begin{equation*}
+W_\alpha \;=\; \oplus \; W_\alpha \cap V_i \qquad (\alpha = 1,2) \quad .
+\end{equation*}
+La formule d'addition 1.11 permet dès lors de se limiter au cas où $\dim V = 2$. Si $W_1 = W_2$, l'assertion est évidente. Si au contraire $W_1 = Ae$, et $W_2 = Af$ avec $\Phi(e,f) = 1$, on a $e(W_1) = fe$ et $e(W_2) = ef = 1 - fe$.
+
+
+2. \underline{Quadriques}'
+
+2.1. Soient $k$ un corps algébriquement clos et $V$ un vectoriel de dimension $n+2$ sur $k$. Une quadrique lisse de dimension $n$ sur $k$ est un schéma $X$ sur $k$ isomorphe au sous-schéma de $\mathbb{P}(V^*)$ défini par l'équation $Q=0$, pour $Q$ une forme quadratique ordinaire sur $k$.
+
+\underline{Remarque} 2.2. Pour $n = 0,1,2$ $X$ est une quadrique lisse de dimension $n$ sur $k$ si et seulement si :
+
+$n = 0$ \qquad : \qquad $X \approx \mathrm{Spec}(k) \amalg \mathrm{Spec}(k)$
+
+$n = 1$ \qquad : \qquad $X \approx \mathbb{P}^1_k$
+
+$n = 2$ \qquad : \qquad $X \approx \mathbb{P}^1_k \times \mathbb{P}^1_k$ .
+----- misprints recorded on page 70 -----
+[id 7II:116]
+WHERE: section title '2. Quadriques'
+PRINT: a small typed comma-shaped mark at mid-letter height right after the underlined 'Quadriques' (checked at 6x)
+CORRECT: 2. \underline{Quadriques}
+TEX BEFORE: 2. \underline{Quadriques}'
+NOTE: A stray keystroke with no meaning in the title. The TeX keeps it as an apostrophe; the corrected layer too.
+
+=================== PAGE 71 ===================
+----- corrected edition, expose_XII_body.tex, page 71 -----
+%%%%%%%%%%  scan idx 78  |  folio 71  %%%%%%%%%%
+
+\underline{Lemme} 2.3. \underline{Avec les notations de} 2.1, \underline{soit} $X$ \underline{défini par} $Q = 0$ .
+
+(i) \qquad $\Omega^n_X \approx \mathcal{O}_X(-n)$
+
+(ii) \quad $\mathrm{Pic}(X) \approx \left\{ \begin{array}{l} \mbox{$0$ \qquad \underline{pour} $n = 0$ .} \\ \mbox{$\mathbb{Z}$ \qquad \underline{pour} $n = 1$ ; $\mathcal{O}_X(1)$ \underline{est le carré d'un générateur.}} \\ \mbox{$\mathbb{Z} \oplus \mathbb{Z}$ \underline{pour} $n =2$.} \\ \mbox{$\mathbb{Z}$ \qquad \underline{pour} $n \geqslant 3$ ; $\mathcal{O}_X(1)$ \underline{est un générateur.}} \end{array} \right.$
+
+(iii) \quad $H^i(X,\mathcal{O}_X) = 0$ \underline{pour} $i > 0$, \qquad $H^1(X,\mathcal{O}_X(1)) = 0$
+
+(iv) \quad $H^0(X,\mathcal{O}_X(1)) \stackrel{\sim}{\longleftarrow} H^0( \mathbb{P}(V^*),\mathcal{O}_X(1)) = V^*$, \underline{et pour} $n > 0$, $H^0(X,\mathcal{O}_X) = k$ .
+
+L'assertion (i) résulte de ce que le faisceau conormal de $X$ dans $\mathbb{P}(V^*)$ est $\mathcal{O}_X(-2)$ et que le faisceau canonique de $\mathbb{P}^r$ est $\mathcal{O}(-r-1)$. L'assertion (ii) résulte de 2.2 pour $n \leqslant 2$, de SGA 2 XII 3.7 pour $n \geqslant 3$. Enfin (iii) et (iv) résultent de FAC n$^\circ$ 78.
+
+\underline{Définition} 2.4. \underline{Une quadrique lisse de dimension} $n$ \underline{sur un schéma} $S$ \underline{est un} $S$-\underline{schéma} $f : X \longrightarrow S$, \underline{propre et lisse sur} $S$, \underline{dont les fibres géométriques sont des quadriques lisses.}
+
+Pour $n = 0$, une quadrique lisse de dimension $0$ sur $S$ n'est autre qu'un revêtement étale double de $S$. Pour $n = 1$, ce n'est autre qu'une variété de Severi-Brauer de dimension $1$ sur $S$.
+
+2.5. Si $\rho : X \longrightarrow S$ est une quadrique lisse de dimension $n$ sur $S$, alors, d'après 2.3 (i), l'inverse du faisceau inversible $\Omega^n_{X/S}$ est ample.
+----- misprints recorded on page 71 -----
+[id 7II:117]
+WHERE: Lemme 2.3 (iv), source of the restriction map, 'H^o( IP(V*),O_X(1)) = V*'
+PRINT: H^o(X,O_X(1)) <~ H^o( IP(V*),O_X(1)) = V*, (checked at 2x)
+CORRECT: H^0( \mathbb{P}(V^*),\mathcal{O}(1)) = V^*
+TEX BEFORE: H^0( \mathbb{P}(V^*),\mathcal{O}_X(1)) = V^*
+NOTE: Wrong index: the isomorphism is the restriction from the twisting sheaf O(1) of the ambient P(V*), whose sections are V*; with O_X(1) on both sides the map would be an identity. Compare O(-r-1) for the sheaf on P^r in the next paragraph. The TeX keeps the printed reading.
+
+[id 7II:118]
+WHERE: 2.5, 'Si ρ : X → S est une quadrique lisse'
+PRINT: Si ρ : X → S (Greek rho, without the serifs of the typed p, e.g. 'Soit p : X → S' on p. 75; checked at 5x)
+CORRECT: Si $p : X \longrightarrow S$
+TEX BEFORE: Si $\rho : X \longrightarrow S$
+NOTE: The structure map is called p in the continuation of 2.5 on p. 72 (p_*L, p^*p_*L) and in 2.6, 2.8 and 3.1; ρ is the canonical map of the Clifford algebra (1.3). Same slip as ρ_*O_Z on p. 69. The TeX keeps the printed reading.
+

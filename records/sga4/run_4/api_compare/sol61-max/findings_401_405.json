@@ -1,0 +1,109 @@
+[
+ {
+  "page": 401,
+  "where": "c), début de la première phrase",
+  "scan": "pour toute partie I' de I de foncteur",
+  "tex": "pour toute partie $I'$ de $I$\nle foncteur",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "le foncteur",
+  "note": "The print has « de foncteur » for « le foncteur ». The TeX silently corrects this typing error."
+ },
+ {
+  "page": 401,
+  "where": "c), indice du pro-objet définissant le foncteur fibre",
+  "scan": "(X_i)_{i\\in I'}",
+  "tex": "$(X_i)_{i\\in I'}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(X_i)_{i\\in P(I')}",
+  "note": "The index must be P(I'), the filtering subset constructed in a), rather than the arbitrary subset I'. In particular, I' subsequently ranges over finite subsets. The TeX keeps the printed index."
+ },
+ {
+  "page": 401,
+  "where": "Exercice 6.10, qualification de D",
+  "scan": "D une U-catégorie (univers U souligné, sans tilde)",
+  "tex": "$\\sheaf{\\mathcal{U}}$-catégorie",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sheaf{\\mathcal{U}}",
+   "new": "\\mathcal{U}"
+  },
+  "note": "The print gives the universe U without a tilde; the sheaf accent introduced by the TeX is absent."
+ },
+ {
+  "page": 401,
+  "where": "Exercice 6.10, définition de Fais(C,D)",
+  "scan": "faisceaux sur C à valeurs dans F",
+  "tex": "faisceaux sur $C$ à valeurs dans $F$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "faisceaux sur $C$ à valeurs dans $D$",
+  "note": "The value category is D, as specified immediately before and in Fais(C,D). The print erroneously says F, and the TeX keeps it."
+ },
+ {
+  "page": 402,
+  "where": "Formule (7.1.4), condition sous la limite",
+  "scan": "U\\cap Z\\neq\\varnothing",
+  "tex": "U\\cap Z\\neq \\phi",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "U\\cap Z\\neq \\phi",
+   "new": "U\\cap Z\\neq \\varnothing"
+  },
+  "note": "The handwritten sign is the empty-set sign, not the Greek letter phi."
+ },
+ {
+  "page": 403,
+  "where": "7.1.5, dernière phrase",
+  "scan": "l'ensemble d'indices ... est X, donc est U-petite",
+  "tex": "est $X$, donc est $𝒰$-petite.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "est $X$, donc est $𝒰$-petit.",
+  "note": "With « l'ensemble d'indices » as the grammatical subject, the adjective should be masculine. The TeX keeps the printed « petite »."
+ },
+ {
+  "page": 404,
+  "where": "Premier paragraphe, parenthèse sur les corps",
+  "scan": "algébriquements clos",
+  "tex": "algébriquement clos",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "algébriquement clos",
+  "note": "The printed adverb has an erroneous final s. The TeX silently corrects it."
+ },
+ {
+  "page": 404,
+  "where": "7.1.7, définition de Pt(U)",
+  "scan": "U_x\\neq\\varnothing",
+  "tex": "U_x\\neq\\phi",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "U_x\\neq\\phi",
+   "new": "U_x\\neq\\varnothing"
+  },
+  "note": "The print has the empty-set sign, not Greek phi."
+ },
+ {
+  "page": 405,
+  "where": "Exercice 7.1.10 b), référence à Bourbaki",
+  "scan": "Top. Gen. Chap. III § 4",
+  "tex": "Top. Gen. Chap. \\hyperrefext[III][III.sec4]{4}",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\hyperrefext[III][III.sec4]{4}",
+   "new": "III \\S~4"
+  },
+  "note": "The print refers to Bourbaki, Chapter III, §4. The external SGA reference produces « III 4 », omitting the section sign and linking to the wrong work."
+ }
+]

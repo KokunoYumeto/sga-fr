@@ -1,0 +1,71 @@
+```json
+{
+ "findings": [
+  {
+   "page": 331,
+   "where": "line after (2.2.3.2)",
+   "scan": "qu'on appelera la partie fixe du module de Tate",
+   "tex": "qu'on appelera la",
+   "kind": "misprint_in_print",
+   "confidence": "medium",
+   "fix": null,
+   "corrected": "appellera",
+   "note": "Spelling error of the typescript: the future of appeler is appellera. The TeX keeps the printed reading."
+  },
+  {
+   "page": 333,
+   "where": "top of page, before 'Pour prouver cette relation'",
+   "scan": "body text begins 'Pour prouver cette relation' (IX is only the running head)",
+   "tex": "IX\n\nPour prouver",
+   "kind": "extra",
+   "confidence": "medium",
+   "fix": {"old": "IX\n\nPour prouver", "new": "Pour prouver"},
+   "note": "The running head is copied into the body as a paragraph of its own. Pages 331, 332 and 335 do not have it."
+  },
+  {
+   "page": 333,
+   "where": "end of the proof of (2.2.5.1)",
+   "scan": "ce qui donne bien l'égalité annoncée (6.2.5.1).",
+   "tex": "l'égalité annoncée (6.2.5.1).",
+   "kind": "misprint_in_print",
+   "confidence": "high",
+   "fix": null,
+   "corrected": "(2.2.5.1)",
+   "note": "Wrong reference number in the print: the equality being proved is (2.2.5.1). The TeX keeps the printed reading."
+  },
+  {
+   "page": 334,
+   "where": "top of page, before the continuation of Proposition 2.2.6",
+   "scan": "page begins 'et de même le morphisme induit par u_o : C_o → A_o' (IX is only the running head)",
+   "tex": "IX\n\n<<CONT",
+   "kind": "extra",
+   "confidence": "medium",
+   "fix": {"old": "IX\n\n<<CONT", "new": "<<CONT"},
+   "note": "The running head is copied into the body. It would stand as a stray paragraph inside the statement of Proposition 2.2.6, between (2.2.6.1) and its continuation."
+  },
+  {
+   "page": 334,
+   "where": "Corollaire 2.2.7, first line",
+   "scan": "sont des schémas abéliens isogénes sur K",
+   "tex": "isogénes",
+   "kind": "misprint_in_print",
+   "confidence": "medium",
+   "fix": null,
+   "corrected": "isogènes",
+   "note": "Wrong accent in the print. The TeX keeps the printed reading."
+  },
+  {
+   "page": 335,
+   "where": "Corollaire 2.2.9, item (iii^o)",
+   "scan": "i.e. (avec les notations de (2.1.11) on a λ = μ = 0 .",
+   "tex": "\\underline{(avec les notations de} (2.1.11) \\underline{on a}",
+   "kind": "misprint_in_print",
+   "confidence": "low",
+   "fix": null,
+   "corrected": "\\underline{(avec les notations de} (2.1.11)) \\underline{on a}",
+   "note": "The parenthesis opened before 'avec' is never closed in the print. The TeX keeps the printed reading."
+  }
+ ],
+ "coordinator": "331: 0/1; 332: 0/0; 333: 1/1; 334: 1/1; 335: 0/1 (normal/misprint).\nThe running head 'IX' is typed as a body line at the top of 333 and 334 (not on 331, 332, 335); check the rest of expose_IX_body.tex for the same artifact."
+}
+```

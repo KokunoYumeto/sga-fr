@@ -1,0 +1,362 @@
+[
+ {
+  "page": 135,
+  "where": "heading of the bibliography of Exposé III (printed at the top of p. 136; in page_135.tex as the files stand)",
+  "scan": "BIBLIOGRAPHIE. : capitals, underlined, then a full stop",
+  "tex": "\\section*{Bibliographie}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{Bibliographie}",
+   "new": "\\section*{BIBLIOGRAPHIE.}"
+  },
+  "note": "Capitals and full stop as printed (as the logged BIBLIOGRAPHIE fixes of pp. 54 and 72 and SOMMAIRE. of p. 75); the underline is the accepted \\section* setting. Filed under p. 135 because its TeX stands there until the folio-136 marker move, whose anchor '\\section*{B' matches either spelling."
+ },
+ {
+  "page": 136,
+  "where": "top of the page: the heading BIBLIOGRAPHIE. and entry [1]",
+  "scan": "p. 136 begins with the heading 'BIBLIOGRAPHIE.' and '[1] Atiyah, M. et Bott, R. On the Woods Hole'; p. 135 ends '... analogues à celles de Bott [6], [3].'",
+  "tex": "'\\section*{Bibliographie}', '\\begin{enumerate}[label={[\\arabic*]},leftmargin=3.5em]' and '\\item' (s5.tex lines 4319-4321 in both layers, as of 20:01) end page_135.tex; the folio-136 marker (line 4322) follows them, so page_136.tex begins 'Atiyah, M.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 136 really begins at the heading (s5.tex line 4319). Exact fix: python -I move_marker.py 5 136 '\\section*{B' --before (simulated in memory on both layers: the marker then stands after 'Bott [6], [3].' and its blank lines, just before the heading; the anchor matches either spelling of the heading). Run it once only: '\\section*{B' occurs 4 times in s5.tex and a second run would carry the marker back to an earlier heading. The p. 131-135 check may report the same move. Text not moved."
+ },
+ {
+  "page": 136,
+  "where": "[1], 'Atiyah, M. et Bott, R. On the Woods Hole Fixed point theorem'",
+  "scan": "'Bott, R. On': no comma after 'R.' (clear at 3x); the seventeen other entries put a comma after the author's initials",
+  "tex": "Bott, R. On the Woods Hole (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Bott, R., On the Woods Hole",
+  "note": "The TeX keeps the printed reading."
+ },
+ {
+  "page": 136,
+  "where": "[6] Bott, 'p. 311-330'",
+  "scan": "p. 311-330 (typewriter hyphen)",
+  "tex": "p. 311--330 (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "311--330",
+   "new": "311-330"
+  },
+  "note": ""
+ },
+ {
+  "page": 136,
+  "where": "[7] Donovan, 'p.257-273'",
+  "scan": "'p.257-' at the end of the line, '273, 1969.' on the next: the range hyphen",
+  "tex": "p. 257--273 (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "257--273",
+   "new": "257-273"
+  },
+  "note": ""
+ },
+ {
+  "page": 136,
+  "where": "[10] Iversen, 'p. 229-236'",
+  "scan": "p. 229-236 (typewriter hyphen)",
+  "tex": "p. 229--236 (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "229--236",
+   "new": "229-236"
+  },
+  "note": ""
+ },
+ {
+  "page": 137,
+  "where": "top of the page: label [12]",
+  "scan": "p. 137 begins with '[12] Kleiman, S., Algebraic cycles ...'; p. 136 ends with '[11] Katz, N., Lettre à B. Mazur, 1971.'",
+  "tex": "the bare '\\item' that makes the label [12] (s5.tex line 4334 in both layers) ends page_136.tex; the folio-137 marker (line 4335) stands between it and 'Kleiman, S.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 137 really begins at that '\\item' (s5.tex line 4334). Exact fix: python -I move_marker.py 5 137 '\\item' --before (simulated in memory on both layers: the marker then stands after '\\item Katz, N., Lettre à B. Mazur, 1971.', and '\\item' and 'Kleiman, S.' follow it on two lines of one item). Run it once only: '\\item' occurs 286 times in s5.tex and a second run would move the marker before [11]. Text not moved."
+ },
+ {
+  "page": 137,
+  "where": "[14] Mazur, 'p. 58-95'",
+  "scan": "p. 58-95 (typewriter hyphen)",
+  "tex": "p. 58--95 (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "58--95",
+   "new": "58-95"
+  },
+  "note": ""
+ },
+ {
+  "page": 137,
+  "where": "[15] Nielsen, 'p. 85-97'",
+  "scan": "p. 85-97 (typewriter hyphen)",
+  "tex": "p. 85--97 (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "85--97",
+   "new": "85-97"
+  },
+  "note": ""
+ },
+ {
+  "page": 137,
+  "where": "[16] Serre, 'p. 197-278'",
+  "scan": "'p. 197-' at the end of the line, '278, 1955.' on the next: the range hyphen",
+  "tex": "p. 197--278 (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "197--278",
+   "new": "197-278"
+  },
+  "note": ""
+ },
+ {
+  "page": 138,
+  "where": "title of Exposé III B, under 'Exposé III B'",
+  "scan": "CALCULS DE TERMES LOCAUX (capitals, centred, not underlined)",
+  "tex": "\\section*{Exposé III B\\\\Calculs de termes locaux}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Calculs de termes locaux",
+   "new": "CALCULS DE TERMES LOCAUX"
+  },
+  "note": "Capitals as printed, as the titles of Exposés I and III in s5.tex ('COMPLEXES DUALISANTS', 'FORMULE DE LEFSCHETZ'). 'Exposé III B' and 'par Luc Illusie' are printed in small letters, as in the TeX."
+ },
+ {
+  "page": 138,
+  "where": "between 'par Luc Illusie' and 'Cet exposé, rédigé en janvier 1977'",
+  "scan": "no heading: the indented paragraph 'Cet exposé, rédigé en janvier 1977, ...' follows the byline directly",
+  "tex": "\\section*{Introduction}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{Introduction}\n\n",
+   "new": ""
+  },
+  "note": "The heading is not printed."
+ },
+ {
+  "page": 138,
+  "where": "'nous calculons les termes locaux de Lefschetz-Verdier pour des correspondances cohomologiques entre courbes'",
+  "scan": "Lefschetz-Verdier (typewriter hyphen, within the line)",
+  "tex": "Lefschetz--Verdier (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "les termes locaux de Lefschetz--Verdier",
+   "new": "les termes locaux de Lefschetz-Verdier"
+  },
+  "note": ""
+ },
+ {
+  "page": 138,
+  "where": "'La méthode de démonstration est parallèle à celle suivie par Artin-Verdier dans [6].'",
+  "scan": "Artin-Verdier (typewriter hyphen)",
+  "tex": "Artin--Verdier (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Artin--Verdier",
+   "new": "Artin-Verdier"
+  },
+  "note": ""
+ },
+ {
+  "page": 138,
+  "where": "last line, 'au n° 6, des termes locaux de Lefschetz-Verdier pour des correspondances cohomologiques entre complexes'",
+  "scan": "'Lefschetz-' at the end of the line, 'Verdier' on the next: the hyphen of the compound",
+  "tex": "Lefschetz--Verdier (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "des termes locaux de Lefschetz--Verdier",
+   "new": "des termes locaux de Lefschetz-Verdier"
+  },
+  "note": "The same compound is typed with a hyphen within the line above and on p. 139."
+ },
+ {
+  "page": 139,
+  "where": "'sont bien les termes locaux de Lefschetz-Verdier, et nous généralisons'",
+  "scan": "Lefschetz-Verdier (typewriter hyphen)",
+  "tex": "Lefschetz--Verdier (en dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Lefschetz--Verdier",
+   "new": "Lefschetz-Verdier"
+  },
+  "note": ""
+ },
+ {
+  "page": 139,
+  "where": "heading 'Sommaire.'",
+  "scan": "'Sommaire' underlined, then a full stop",
+  "tex": "\\section*{Sommaire}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{Sommaire}",
+   "new": "\\section*{Sommaire.}"
+  },
+  "note": "Small letters as printed (only the S is a capital); the underline is the accepted \\section* setting."
+ },
+ {
+  "page": 139,
+  "where": "Sommaire, first line 'I  Correspondances en position générale entre courbes ..... 3'",
+  "scan": "'I' with no full stop after it (clear at 2x)",
+  "tex": "I. Correspondances en position générale entre courbes & 3",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "I. Correspondances en position",
+   "new": "I Correspondances en position"
+  },
+  "note": "The numbered entries 1. to 6. have their full stops; the two roman numerals have none. The print's leader dots are layout, not listed."
+ },
+ {
+  "page": 139,
+  "where": "Sommaire, line 'II Correspondances équivariantes ..... 25'",
+  "scan": "'II' with no full stop after it (clear at 2x)",
+  "tex": "II. Correspondances équivariantes & 25",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "II. Correspondances",
+   "new": "II Correspondances"
+  },
+  "note": ""
+ },
+ {
+  "page": 140,
+  "where": "heading 'I. - Correspondances en position générale entre courbes.'",
+  "scan": "'I. - Correspondances': a spaced hyphen after 'I.' (under the same underline as the title)",
+  "tex": "\\section*{I. Correspondances en position générale entre courbes}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{I. Correspondances",
+   "new": "\\section*{I. - Correspondances"
+  },
+  "note": "The next heading '1. - Enoncé ...' has the same hyphen."
+ },
+ {
+  "page": 140,
+  "where": "same heading, end",
+  "scan": "'... entre courbes.': a full stop after the underline",
+  "tex": "entre courbes}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "entre courbes}",
+   "new": "entre courbes.}"
+  },
+  "note": "Underlined titles end with a full stop in the print."
+ },
+ {
+  "page": 140,
+  "where": "heading '1. - Enoncé du théorème et corollaires.'",
+  "scan": "'1. - Enoncé': a spaced hyphen after '1.'",
+  "tex": "\\subsection*{1. Énoncé du théorème et corollaires}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{1. Énoncé",
+   "new": "\\subsection*{1. - Énoncé"
+  },
+  "note": "The print's unaccented capital E is handled globally."
+ },
+ {
+  "page": 140,
+  "where": "same heading, end",
+  "scan": "'... et corollaires.': a full stop after the underline",
+  "tex": "et corollaires}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "et corollaires}",
+   "new": "et corollaires.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 140,
+  "where": "number of no. 1.1",
+  "scan": "'1.1.' with a full stop",
+  "tex": "\\subsubsection*{1.1}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{1.1}",
+   "new": "\\subsubsection*{1.1.}"
+  },
+  "note": "As the logged '3.6.5.' of p. 97."
+ },
+ {
+  "page": 140,
+  "where": "1.1, 'a : A → X ×_S Y , b : B → X ×_S Y des S-morphismes'",
+  "scan": "both maps run in the text line, between 'strictement local,' and 'des S-morphismes. On note'; not displayed",
+  "tex": "a display \\[ a:A\\longrightarrow X\\times_S Y, \\qquad b:B\\longrightarrow X\\times_S Y \\]",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "local,\n\\[\na:A\\longrightarrow X\\times_S Y,\n\\qquad\nb:B\\longrightarrow X\\times_S Y\n\\]\ndes",
+   "new": "local, $a:A\\longrightarrow X\\times_S Y$, $b:B\\longrightarrow X\\times_S Y$ des"
+  },
+  "note": "Display against inline formula, as the logged layout fix of p. 44; one self-contained edit."
+ },
+ {
+  "page": 140,
+  "where": "1.1, end of the display 'L_x = RΓ(X,L) → RΓ(A,a_1^*L) → RΓ(A,a_2^!M) → RΓ(Y,M) = M_y'",
+  "scan": "no punctuation after M_y (clean paper); the sentence goes on 'où a_{2*} est défini ...'",
+  "tex": "\\R\\Gamma(Y,M)=M_y,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=M_y,",
+   "new": "=M_y"
+  },
+  "note": "The old avoids \\R, so it survives either decision on the R convention below."
+ },
+ {
+  "page": 140,
+  "where": "every derived-functor R of p. 140: the five RΓ of the display of 1.1; examples RΓ(X,L), RΓ(A,u) over the second arrow, RΓ(Y,M)",
+  "scan": "a plain typed R (single stem with serifs, the typeface of the text), as in Exposé III; no double-struck R",
+  "tex": "\\R\\Gamma(...), with \\R re-set to \\mathbb{R} at the head of Exposé III B (page_138.tex: '\\renewcommand{\\R}{\\mathbb{R}}', comment 'back to the volume's labels and R')",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription for Exposé III B, not listed per occurrence. III B is typed in the typeface of Exposé III and keeps its plain R (also in RHom, next finding, and on p. 141). One decision for III B: drop the line '\\renewcommand{\\R}{\\mathbb{R}}' in page_138.tex (Exposé III's \\renewcommand{\\R}{\\mathrm{R}} then stays in force), or write each R plain."
+ },
+ {
+  "page": 140,
+  "where": "'le foncteur D_X = RHom(-,K_X) (resp. D_Y = RHom(-,K_Y))'",
+  "scan": "RHom: a plain typed R and the underline under Hom only, as in Exposé III; the two RHom at the top of p. 141 are the same",
+  "tex": "\\uRHom(-,K_X), \\uRHom(-,K_Y), with \\uRHom re-set at the head of Exposé III B (page_138.tex: '\\renewcommand{\\uRHom}{\\underline{\\RHom}}', a double-struck R under the same underline as Hom)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription for Exposé III B, not listed per occurrence. One decision for III B: drop the line '\\renewcommand{\\uRHom}{\\underline{\\RHom}}' in page_138.tex (Exposé III's \\mathrm{R}\\underline{\\mathrm{Hom}} then stays in force)."
+ },
+ {
+  "page": 140,
+  "where": "end of the page: '... (resp. D_Y = RHom(-,K_Y)) sur' / 'D_ctf(X) (resp. D_ctf(Y)) est dualisant, ...'",
+  "scan": "p. 140 ends '... le foncteur D_X = RHom(-,K_X) (resp. D_Y = RHom(-,K_Y)) sur'; p. 141 begins 'D_ctf(X) (resp. D_ctf(Y)) est dualisant, i.e. pour tout E ∈ ob D_ctf(X) (resp. D_ctf(Y)) , on a ... On écrira parfois D au lieu de D_X , D_Y .'",
+  "tex": "page_140.tex runs on to '$D_{\\ctf}(X)$ (resp. $D_{\\ctf}(Y)$) est dualisant, i.e. ... On écrira parfois $D$ au' (rest of s5.tex line 4418, current layer 4417); the folio-141 marker follows that line, so page_141.tex begins 'lieu de $D_X$, $D_Y$.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 141 really begins at '$D_{\\ctf}(X)$ (resp. $D_{\\ctf}(Y)$) est dualisant', in the middle of s5.tex line 4418 (current 4417). Exact fix: python -I move_marker.py 5 141 '$D_{\\ctf}(X)$ (resp. $D_{\\ctf}(Y)$) est' --before (the anchor occurs once in each layer; simulated in memory on both: the marker then stands on its own line between 'sur' and '$D_{\\ctf}(X)$', inside the paragraph; a second run finds no anchor and changes nothing). The p. 141-145 check may report the same move. Text not moved."
+ }
+]

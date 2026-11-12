@@ -1,0 +1,77 @@
+{
+  "findings": [
+    {
+      "page": 223,
+      "where": "Preuve de 1.4, condition locale sur le crible de Y",
+      "scan": "le crible $R'\\times_X Y$ de $Y$ appartienne à $J'(X)$",
+      "tex": "$R'\\times_X Y$ de $Y$ appartienne à\n$J'(X)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$J'(Y)$",
+      "note": "Coquille du tirage conservée par le TeX : ce crible de Y doit appartenir à J'(Y), non à J'(X)."
+    },
+    {
+      "page": 223,
+      "where": "Définition 2.1, dernière phrase de la page",
+      "scan": "La sous-catégorie pleine",
+      "tex": "Le sous-catégorie pleine",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Le sous-catégorie pleine",
+        "new": "La sous-catégorie pleine"
+      },
+      "note": "Le tirage porte l'article féminin « La »."
+    },
+    {
+      "page": 224,
+      "where": "Suite de la définition 2.1, première ligne",
+      "scan": "la catégories des faisceaux",
+      "tex": "la catégories des faisceaux",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "la catégorie des faisceaux",
+      "note": "Le s fautif de « catégories » est imprimé et conservé par le TeX."
+    },
+    {
+      "page": 224,
+      "where": "Définition 2.1, notation précédant l'appel de note (1)",
+      "scan": "$\\widetilde{C}$",
+      "tex": "$\\widehat{C}$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$\\widehat{C}$",
+        "new": "$\\widetilde{C}$"
+      },
+      "note": "Le tirage donne un tilde pour la catégorie des faisceaux, non un chapeau."
+    },
+    {
+      "page": 224,
+      "where": "Définition 2.1, dernière phrase",
+      "scan": "faisceaux à valeur dans U-Ens",
+      "tex": "faisceaux à\nvaleurs dans $𝒰-\\Ens$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "faisceaux à valeurs dans $𝒰-\\Ens$",
+      "note": "Le tirage omet le s de « valeurs » ; le TeX corrige silencieusement cette coquille."
+    },
+    {
+      "page": 225,
+      "where": "Preuve de 2.2, affichage des deux applications de source Hom(X,F_i)",
+      "scan": "et",
+      "tex": "\\quav",
+      "kind": "missing",
+      "confidence": "medium",
+      "fix": {
+        "old": "\\quav",
+        "new": "\\quad\\text{et}\\quad"
+      },
+      "note": "Le tirage relie explicitement les deux applications par « et », que le séparateur employé dans le TeX ne restitue pas."
+    }
+  ],
+  "coordinator": "221: 0/0 ; 222: 0/0 ; 223: 1/1 ; 224: 1/2 ; 225: 1/0 (normal/misprint)."
+}

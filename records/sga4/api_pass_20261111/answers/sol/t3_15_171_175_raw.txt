@@ -1,0 +1,92 @@
+{
+  "findings": [
+    {
+      "page": 171,
+      "where": "Proof of 1.1, sentence beginning « D'après (i) »",
+      "scan": "on a $f_{\\ast}(F)\\rightarrow g_{\\ast}g^{\\ast}f^{\\ast}F$).",
+      "tex": "le morphisme d'adjonction $f_{\\ast}F\\rightarrow g_{\\ast}g^{\\ast}f_{\\ast}F$ est injectif (resp.~bijectif)",
+      "kind": "other",
+      "confidence": "high",
+      "fix": {
+        "old": "le morphisme d'adjonction $f_{\\ast}F\\rightarrow g_{\\ast}g^{\\ast}f_{\\ast}F$\nest injectif (resp.~bijectif)",
+        "new": "on a $f_{\\ast}(F)\\rightarrow g_{\\ast}g^{\\ast}f_{\\ast}F$"
+      },
+      "note": "The first argument of \\sisi rewrites the printed clause and adds an explicit injectivity/bijectivity assertion. This edit restores the printed wording while retaining the corrections to the print's typographical errors recorded separately below."
+    },
+    {
+      "page": 171,
+      "where": "Adjunction map immediately after « D'après (i), on a »",
+      "scan": "$f_{\\ast}(F)\\rightarrow g_{\\ast}g^{\\ast}f^{\\ast}F$).",
+      "tex": "$f_{\\ast}F\\rightarrow g_{\\ast}g^{\\ast}f_{\\ast}F$ in the first argument of \\sisi",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "on a $f_{\\ast}(F)\\rightarrow g_{\\ast}g^{\\ast}f_{\\ast}F$.",
+      "note": "The final f has a superscript star instead of a subscript star, and the closing parenthesis after the formula is unmatched. The TeX's first argument corrects both errors."
+    },
+    {
+      "page": 172,
+      "where": "Corollaire 1.5, final sentence",
+      "scan": "La réciproque est vraie",
+      "tex": "Le réciproque est vraie",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Le réciproque",
+        "new": "La réciproque"
+      },
+      "note": "The printed article is « La »."
+    },
+    {
+      "page": 173,
+      "where": "Proposition 1.6 (iv), first cohomology map, left-hand coefficient",
+      "scan": "$H^{q}(Y',\\ZZ/\\ell^{\\nu})$",
+      "tex": "$H^{q}(Y',Z/\\ell^{\\nu})$",
+      "kind": "font",
+      "confidence": "high",
+      "fix": {
+        "old": "H^{q}(Y',Z/\\ell^{\\nu})",
+        "new": "H^{q}(Y',\\ZZ/\\ell^{\\nu})"
+      },
+      "note": "The print has the double-struck integer-ring symbol on both sides of the arrow; the source's left-hand occurrence is an ordinary Z."
+    },
+    {
+      "page": 174,
+      "where": "Proof of 1.6, implication (ii) ⇒ (i), after « le faisceau associé est nul »",
+      "scan": "donc le faisceau associé est nul, i.e. (ii) ⇒ (i)",
+      "tex": "donc le faisceau associé est nul\\sisi{\nsi $1 \\leq q \\leq n$}{}, \\ie (ii) $\\Rightarrow$ (i)",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\sisi{\nsi $1 \\leq q \\leq n$}{}",
+        "new": ""
+      },
+      "note": "The printed text passes directly from « nul » to the comma and « i.e. »; the restriction in the first argument of \\sisi is not printed."
+    },
+    {
+      "page": 174,
+      "where": "Nonabelian cohomology exact sequence, final term",
+      "scan": "$H^{0}(Y',(R^{1}{g'}_{\\ast})g^{\\ast}F)$",
+      "tex": "$H^{0}(Y',(R^{1}{g'}_{\\ast}){g'}^{\\ast}F)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$H^{0}(Y',(R^{1}{g'}_{\\ast}){g'}^{\\ast}F)$",
+      "note": "The final pullback is printed without the prime on g. It must be {g'}^{\\ast}; the TeX silently supplies the missing prime."
+    },
+    {
+      "page": 174,
+      "where": "Proof of (i) ⇒ (iii), sentence introducing f′",
+      "scan": "Soit $f':X'\\rightarrow X$ le morphisme.",
+      "tex": "Soit $f':X'\\rightarrow X$ le morphisme \\sisi{déduit de~$f$ par le changement de base~$g$}{}.",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "le morphisme\n\\sisi{déduit de~$f$ par le changement de base~$g$}{}.",
+        "new": "le morphisme."
+      },
+      "note": "The printed sentence ends after « le morphisme »; the descriptive clause in the first argument of \\sisi is absent."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 171: 1/1; 172: 1/0; 173: 1/0; 174: 2/1; 175: 0/0."
+}

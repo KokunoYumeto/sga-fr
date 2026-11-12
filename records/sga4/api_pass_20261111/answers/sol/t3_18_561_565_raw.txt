@@ -1,0 +1,218 @@
+{
+  "findings": [
+    {
+      "page": 561,
+      "where": "Opening reference, before the first displayed morphism",
+      "scan": "(XVII 6.2.7.2)",
+      "tex": "\\sisi{\\emph{(XVII 6.2.7.2)}}{\\eqhyperrefext[XVII][XVII.eq6.2.7.4]{6.2.7.4}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\eqhyperrefext[XVII][XVII.eq6.2.7.4]{6.2.7.4}",
+      "note": "The first argument of \\sisi matches the print. The erroneous printed reference is already corrected by the edition to XVII 6.2.7.4."
+    },
+    {
+      "page": 561,
+      "where": "Target of the first displayed morphism",
+      "scan": "R^i f_V\\ZZ/n",
+      "tex": "R^{i}f_{V!}\\ZZ/n",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{i}f_{V!}\\ZZ/n",
+      "note": "The print omits the ! on the direct image with proper support. The TeX silently restores it."
+    },
+    {
+      "page": 561,
+      "where": "Lemma 2.14.2, definition of the morphisms f_i",
+      "scan": "f_i:K_i\\longrightarrow K_{i+i}",
+      "tex": "f_{i}:K_{i}\\rightarrow\nK_{i+i}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f_{i}:K_{i}\\rightarrow K_{i+1}",
+      "note": "The target index is printed i+i, also in the witness. It must be i+1 for the stated sequence and composite. The TeX keeps the printed typo."
+    },
+    {
+      "page": 561,
+      "where": "Distinguished triangle at the bottom of the page",
+      "scan": "The arrow from \\sigma_{\\geq 1}(L) to \\sigma_{\\leq 0}(L) has no label.",
+      "tex": "\\ar[ld]_{+1}",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\ar[ld]_{+1}",
+        "new": "\\ar[ld]"
+      },
+      "note": "The +1 label is added in the TeX and is absent from both scans."
+    },
+    {
+      "page": 562,
+      "where": "Proof of Lemma 2.14.2, reference to the diagram relative to K_{2k}",
+      "scan": "(2.12.3)",
+      "tex": "le diagramme 2.12.3 relatif à $K_{2k}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\eqhyperref[XVIII.eq2.14.3]{2.14.3}",
+      "note": "The intended diagram is (2.14.3), displayed above. The TeX keeps the wrong printed reference 2.12.3."
+    },
+    {
+      "page": 562,
+      "where": "Definition of t, term immediately after the first arrow",
+      "scan": "\\sigma_{\\geq 2d}Rf'_V\\ZZ/n(d)",
+      "tex": "\\sigma_{\\geq\n2d}Rf'_{V}\\ZZ/n(d)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\sigma_{\\geq 2d}Rf'_{V!}\\ZZ/n(d)",
+      "note": "The ! is missing from the printed functor. The TeX retains this omission."
+    },
+    {
+      "page": 562,
+      "where": "Definition of t, argument of H^{2d}",
+      "scan": "H^{2d}(Rf'_V\\ZZ/n(d))[-2d]",
+      "tex": "H^{2d}(Rf'_{V}\\ZZ/n(d))[-2d]",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{2d}(Rf'_{V!}\\ZZ/n(d))[-2d]",
+      "note": "The same missing ! recurs inside H^{2d}. The TeX keeps the printed omission."
+    },
+    {
+      "page": 563,
+      "where": "Sentence following the displayed morphisms R^i f_{k+1!} → R^i f_{k!}",
+      "scan": "soient nulles et que la flèche",
+      "tex": "soient nulles (pour $i<2d$) et que la flèche",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "soient nulles (pour $i<2d$)",
+        "new": "soient nulles"
+      },
+      "note": "The parenthetical restriction is added by the TeX; neither scan prints it."
+    },
+    {
+      "page": 563,
+      "where": "Beginning of the induction proof of 2.14",
+      "scan": "Nous sommes prêt",
+      "tex": "Nous sommes \\sisi{prêt}{prêts}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Nous sommes prêts",
+      "note": "The print has the singular adjective after Nous sommes. The first argument of \\sisi records it correctly, and the edition supplies the plural."
+    },
+    {
+      "page": 563,
+      "where": "Reference for the case d=1",
+      "scan": "1.4.7",
+      "tex": "\\hyperref[XVIII.lemfond1.6.9]{1.6.9}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperref[XVIII.lemfond1.6.9]{1.6.9}",
+      "note": "The printed reference is wrong. The TeX silently corrects it to the fundamental lemma 1.6.9."
+    },
+    {
+      "page": 564,
+      "where": "Sentence immediately below the two factorisations, first trace",
+      "scan": "\\Tr_{h'}",
+      "tex": "\\Tr_{h'_0}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Tr_{h'_0}",
+      "note": "The print drops the index 0 of the morphism h'_0 introduced in the diagram. The TeX silently restores it."
+    },
+    {
+      "page": 564,
+      "where": "Sentence immediately below the two factorisations, second trace",
+      "scan": "\\Tr_{g'}",
+      "tex": "\\Tr_{g'_0}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Tr_{g'_0}",
+      "note": "The print likewise drops the index 0 of g'_0. The TeX silently restores it."
+    },
+    {
+      "page": 564,
+      "where": "Sentence defining h_1 and h'_1 by base change",
+      "scan": "déduits de h_0 et h'",
+      "tex": "déduits de $h_{0}$ et $h'_0$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "h'_0",
+      "note": "The print again omits the index 0 on h'. The base-changed morphism is h'_0, as the TeX silently corrects."
+    },
+    {
+      "page": 564,
+      "where": "Definition of f_W at the end of the base-change sentence",
+      "scan": "f_w=g_0h_0",
+      "tex": "f_{W}=g_{0}h_{0}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "f_{W}=g_{0}h_{0}",
+      "note": "The printed subscript is a lower-case w, whereas the base is W. The TeX silently corrects the case."
+    },
+    {
+      "page": 564,
+      "where": "First commutative diagram, upper-left object",
+      "scan": "Rf'\\ZZ/n(d)",
+      "tex": "Rf'\\ZZ/n(d)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Rf'_{!}\\ZZ/n(d)",
+      "note": "The direct image must be with proper support, as elsewhere in these diagrams. The TeX keeps the printed omission of !."
+    },
+    {
+      "page": 564,
+      "where": "First commutative diagram, lower-left object",
+      "scan": "Rg'_{0!}Rh'_1\\ZZ/n(d)",
+      "tex": "Rg'_{0!} Rh'_1\\ZZ/n(d)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Rg'_{0!} Rh'_{1!}\\ZZ/n(d)",
+      "note": "The ! after h'_1 is omitted in the print and retained as such by the TeX. The corresponding object in the next diagram has it."
+    },
+    {
+      "page": 565,
+      "where": "First sentence after the diagram, target of the canonical morphism",
+      "scan": "Rf_W\\ZZ/n(d)",
+      "tex": "Rf_{W}\\ZZ/n(d)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Rf_{W!}\\ZZ/n(d)",
+      "note": "The target is the direct image with proper support from the preceding diagrams. Both print and TeX omit its !."
+    },
+    {
+      "page": 565,
+      "where": "Vanishing assertion, target of the morphisms on cohomology",
+      "scan": "R^i f_W\\ZZ/n(d)",
+      "tex": "R^{i}f_{W}\\ZZ/n(d)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{i}f_{W!}\\ZZ/n(d)",
+      "note": "The missing ! recurs in the cohomological target. The TeX keeps the printed omission."
+    },
+    {
+      "page": 565,
+      "where": "Last trace-composition formula",
+      "scan": "Rg'_0\\Tr_{h'_1}",
+      "tex": "R^{2d'}g'_{0!}\\Tr_{h'_{1}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{2d'}g'_{0!}\\Tr_{h'_{1}}",
+      "note": "The printed expression omits both the cohomological degree 2d' and the proper-support sign !. The TeX silently supplies both for the composition of the top-degree trace maps."
+    }
+  ],
+  "coordinator": "561: 1/3; 562: 0/3; 563: 1/2; 564: 0/6; 565: 0/3 (normal/misprint)."
+}

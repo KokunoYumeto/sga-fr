@@ -1,0 +1,97 @@
+{
+  "findings": [
+    {
+      "page": 36,
+      "where": "Preuve 1), lower vertex of the first triangular diagram",
+      "scan": "u^{\\bigdot}f",
+      "tex": "u^{\\bigdot}f",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "u_{!}f",
+      "note": "The TeX keeps the printed raised dot. The vertex should be u_{!}f, the stated target of both canonical morphisms."
+    },
+    {
+      "page": 36,
+      "where": "Preuve 1), item b), initial morphism",
+      "scan": "m_0=\\mathrm{id}_X",
+      "tex": "m_\\circ=\\id_{X}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "m_\\circ=\\id_{uX}",
+      "note": "The TeX keeps the printed subscript X. Since m_0 has source and target uX, the identity must be indexed by uX."
+    },
+    {
+      "page": 37,
+      "where": "Preuve 2), reference to 5.6",
+      "scan": "en vertu de 5.6",
+      "tex": "en vertu du \\hyperref[I.prop5.6]{5.6}",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "en vertu du",
+        "new": "en vertu de"
+      },
+      "note": "The print has « de », not « du »."
+    },
+    {
+      "page": 39,
+      "where": "Proposition 6.2, introductory reference",
+      "scan": "Les notations sont celles de 5.1.",
+      "tex": "Les notations sont celles de \\hyperref[I.prop5.1]{5.1}.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Les notations sont celles de \\hyperref[I.def6.1]{6.1}.",
+      "note": "The TeX keeps the wrong printed reference. The notation for E, F_i and the family of functors was introduced in Definition 6.1."
+    },
+    {
+      "page": 40,
+      "where": "Proposition 6.2(v), final clause, diagram whose limit is taken",
+      "scan": "\\varphi_i(D)",
+      "tex": "\\varphi_i(D)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\varphi_i(F)",
+      "note": "The TeX keeps D. Here F is the diagram, whereas D is its indexing type."
+    },
+    {
+      "page": 40,
+      "where": "Proposition 6.2(v), final category",
+      "scan": "dans E_i",
+      "tex": "dans $E_i$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "dans $F_i$",
+      "note": "The TeX keeps E_i. The target categories of the functors are F_i in Definition 6.1."
+    },
+    {
+      "page": 40,
+      "where": "Démonstration (iv), notation for the arrows of E",
+      "scan": "u\\in f\\ell\\,E",
+      "tex": "u\\in F\\ell\\,E",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "F\\ell\\,E",
+        "new": "f\\ell\\,E"
+      },
+      "note": "The printed abbreviation begins with a lowercase f, not a capital F."
+    },
+    {
+      "page": 40,
+      "where": "Démonstration (iv), conclusion of the argument",
+      "scan": "ce sont des monomorphismes d'après ce qui précède, donc des isomorphismes",
+      "tex": "ce sont des monomorphismes\n  d'après ce qui précède, donc des isomorphismes",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "$u$ est un monomorphisme d'après ce qui précède, donc un isomorphisme",
+      "note": "The TeX keeps the printed plural. The conclusion concerns the single arrow u: the preceding argument makes u a monomorphism, and the hypothesis then makes it an isomorphism."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 36: 0/2; 37: 1/0; 38: 0/0; 39: 0/1; 40: 1/3."
+}

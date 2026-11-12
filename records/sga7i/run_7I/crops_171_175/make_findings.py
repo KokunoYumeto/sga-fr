@@ -1,0 +1,209 @@
+"""Write findings_171_175.json and check that every fix's "old" occurs exactly once in its page file."""
+import json
+import pathlib
+
+B = pathlib.Path(r"C:\Users\user\Documents\sga_scan_check_20261105\run_7I\b171_175")
+OUT = pathlib.Path(r"C:\Users\user\Documents\sga_scan_check_20261105\run_7I\findings_171_175.json")
+
+KEEP = "The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+
+F = [
+    # ---------------- p. 171 ----------------
+    dict(page=171,
+         where="top of the page, before 'Nous utiliserons par la suite'",
+         scan="the page's text begins with 'Nous utiliserons par la suite sans autre mention'; 'VII' is only the "
+              "running head at the top right, beside '- 39 -'",
+         tex="VII (a line of its own after the marker line)",
+         kind="extra", confidence="high",
+         fix={"old": "\nVII\n", "new": "\n"},
+         note="Running head typed into the body text (as on pp. 153-154): it would print 'VII' as a paragraph "
+              "between the closing display of 2.8 and 'Nous utiliserons ...'. This and p. 172 are the last two "
+              "such lines in expose_VII_body.tex."),
+    dict(page=171,
+         where="second paragraph: 'On pourra prendre en particulier pour T' un topos induit T_{/S'} ,'",
+         scan="the T of T_{/S'} is not underlined: the underline stops after 'induit'; the T' before it and the "
+              "T_{/S'} of the display on the next line are underlined",
+         tex="$T_{/S'}$ ,",
+         kind="misprint_in_print", confidence="low",
+         fix=None,
+         corrected=r"$\underline{T}_{/S'}$ ,",
+         note="The topos is an underlined T everywhere else on the page, including the same T_{/S'} in the display "
+              "f = i_{S'} : T_{/S'} -> T. " + KEEP),
+    dict(page=171,
+         where="after the display f = i_{S'}: 'On appelle alors f*(E) la biextension induite par E sur S''",
+         scan="f followed by the typewriter asterisk at superscript height, the same glyph as the f* of 2.8 on "
+              "p. 170, which the TeX writes f^{*}",
+         tex="$f*(E)$",
+         kind="symbol", confidence="medium",
+         fix={"old": "$f*(E)$", "new": "$f^{*}(E)$"},
+         note="$f*$ sets a centred binary asterisk on the line. This is the remaining f*(E) of GLOBAL_ISSUES item 29 "
+              "(expose_VII_body.tex line 896); p. 170 already has f^{*}."),
+    dict(page=171,
+         where="'On appelera champ des biextensions sur T le champ qu'on vient de définir'",
+         scan="appelera (one l)",
+         tex="On appelera",
+         kind="misprint_in_print", confidence="medium",
+         fix=None,
+         corrected="On appellera",
+         note="Spelling error of the typescript (appeler doubles the l before a mute e), as on p. 161. " + KEEP),
+    # ---------------- p. 172 ----------------
+    dict(page=172,
+         where="top of the page, before the heading '2.9. Relations avec les torseurs birigidifiés'",
+         scan="the page's text begins with the heading 2.9; 'VII' is only the running head at the top right, "
+              "beside '- 40 -'",
+         tex="VII (a line of its own after the marker line)",
+         kind="extra", confidence="high",
+         fix={"old": "\nVII\n", "new": "\n"},
+         note="Running head typed into the body text, as on p. 171; it would print 'VII' as a paragraph before the "
+              "heading 2.9."),
+    dict(page=172,
+         where="Proposition 2.9.3: '(plongés dans ledit grâce aux sections unité comme on vient de l'expliquer) "
+               "soit trivial'",
+         scan="the underline stops under the r of 'l'expliquer'; the closing parenthesis is not underlined (nor is "
+              "the opening one)",
+         tex="l'expliquer)}",
+         kind="underline", confidence="low",
+         fix={"old": "l'expliquer)}", "new": "l'expliquer})"},
+         note="The opening parenthesis is already outside the \\underline in the TeX. Not covered by the global "
+              "pass for , . ; : (GLOBAL_ISSUES item 12)."),
+    dict(page=172,
+         where="2.9.3 a), last sentence: 'si E est un torseur sous G_{P×Q} birigidifié pour (e_P,e_Q)'",
+         scan="(e_P,e_Q): the subscript of the first e is a capital P (cap height, no descender, as tall as the Q "
+              "beside it), the same glyph as in (e_P,e_Q) of 2.9.4 on p. 174",
+         tex="$(e_p,e_Q)$",
+         kind="symbol", confidence="high",
+         fix={"old": "$(e_p,e_Q)$", "new": "$(e_P,e_Q)$"},
+         note="The unit section of P; the TeX has e_P in the same formula on p. 174 and in P×e_Q, e_P×Q on p. 173. "
+              "Same class as the G_p/G_P item of the note."),
+    # ---------------- p. 173 ----------------
+    dict(page=173,
+         where="Démonstration a): 'donc d'après l'hypothèse appliqué au produit P×Q, c'est l'automorphisme "
+               "identique'",
+         scan="appliqué",
+         tex="l'hypothèse appliqué au",
+         kind="misprint_in_print", confidence="medium",
+         fix=None,
+         corrected="l'hypothèse appliquée au",
+         note="Agreement slip (l'hypothèse is feminine); p. 174 prints 'par l'hypothèse appliquée au produit "
+              "P×P×Q×Q'. " + KEEP),
+    dict(page=173,
+         where="Démonstration b): 'structures d'extensions uniques de Q_P par G_P et de P_Q par G_P , compatibles "
+               "avec la structure de torseur'",
+         scan="de P_Q par G_P: the subscript of G is a P (checked at 3x zoom; the P_Q just before has a clear Q)",
+         tex="de $P_Q$ par $G_P$ ,",
+         kind="misprint_in_print", confidence="high",
+         fix=None,
+         corrected="de $P_Q$ par $G_Q$ ,",
+         note="The extension of P_Q is by G_Q, as in 2.9.3 b) at the top of the page ('une structure d'extension de "
+              "P_Q par G_Q') and on p. 175. " + KEEP),
+    # ---------------- p. 174 ----------------
+    dict(page=174,
+         where="Corollaire 2.9.4: 'Alors les conditions préliminaires de 2.9.2 sont satisfaites, donc les "
+               "conclusions a) et b) de cette proposition sont valables'",
+         scan="2.9.2",
+         tex="préliminaires de} 2.9.2",
+         kind="misprint_in_print", confidence="medium",
+         fix=None,
+         corrected="préliminaires de} 2.9.3",
+         note="The preliminary conditions and the conclusions a), b) are those of Proposition 2.9.3 ('cette "
+              "proposition'); (2.9.2) is the display of products. The same wrong number occurs twice on p. 175 "
+              "('2.9.2 b)'): correct all three or none. " + KEEP),
+    dict(page=174,
+         where="Corollaire 2.9.4: 'de cette proposition sont valables, De plus, si E est un torseur'",
+         scan="a comma after 'valables' (dot with a tail, the same shape as the comma after 'De plus'; the full "
+              "stops of '(cf. 1.3.7).' are round dots), followed by a capital 'De'",
+         tex="valables}. \\underline{De plus",
+         kind="misprint_in_print", confidence="high",
+         fix={"old": "valables}.", "new": "valables},"},
+         corrected="valables}.",
+         note="Typing error: a new sentence begins with 'De plus'. The TeX silently corrects the comma to a full "
+              "stop; the fix restores the print. 'corrected' is the current TeX."),
+    # ---------------- p. 175 ----------------
+    dict(page=175,
+         where="first line: 'la suffisance, en appliquant 2.9.2 b) et 1.3.5 b)'",
+         scan="2.9.2 b)",
+         tex="en appliquant 2.9.2 b)",
+         kind="misprint_in_print", confidence="medium",
+         fix=None,
+         corrected="en appliquant 2.9.3 b)",
+         note="Part b) of Proposition 2.9.3; (2.9.2) is the display of products and has no b). Same slip as "
+              "p. 174 ('conditions préliminaires de 2.9.2') and 'résulte donc de 2.9.2 b)' below: correct all three "
+              "or none. " + KEEP),
+    dict(page=175,
+         where="end of the proof of 2.9.4: 'La conclusion résulte donc de 2.9.2 b).'",
+         scan="2.9.2 b)",
+         tex="résulte donc de 2.9.2 b)",
+         kind="misprint_in_print", confidence="medium",
+         fix=None,
+         corrected="résulte donc de 2.9.3 b)",
+         note="As the previous entry (Proposition 2.9.3 b)). " + KEEP),
+    dict(page=175,
+         where="Exemple 2.9.5: 'la donnée d'un torseur birigidifié E sur P×Q revient alors'",
+         scan="P×Q with the typed product sign, the same glyph as in P×P×Q×Q on p. 174, which the TeX writes with "
+              "\\times",
+         tex="$PxQ$",
+         kind="symbol", confidence="high",
+         fix={"old": "$E$ sur $PxQ$", "new": "$E$ sur $P\\times Q$"},
+         note="The TeX writes the letter x (set as a math-italic x) for the product sign; elsewhere in the exposé it "
+              "writes \\times (GLOBAL_ISSUES item 30; PxP and GxP on pp. 135, 153-154 were fixed the same way). "
+              "The only three $PxQ$ left in expose_VII_body.tex are on this page."),
+    dict(page=175,
+         where="Exemple 2.9.5: 'la donnée d'un Module inversible birigidifié sur P×Q. Rappelons'",
+         scan="P×Q with the typed product sign",
+         tex="$PxQ$",
+         kind="symbol", confidence="high",
+         fix={"old": "$PxQ$. Rappelons", "new": "$P\\times Q$. Rappelons"},
+         note="As the previous entry."),
+    dict(page=175,
+         where="last paragraph: 'la catégorie des biextensions de (P,Q) par G=G_{m S} est équivalente'",
+         scan="G=G followed by m and S, both set as subscripts at the same lowered level with a space between them",
+         tex="$G=G_m\\ S$",
+         kind="formula", confidence="high",
+         fix={"old": "$G=G_m\\ S$", "new": "$G=G_{m\\ S}$"},
+         note="The TeX sets the S on the base line; the print lowers it with the m (cf. G=G_{mS} in the first "
+              "sentence of 2.9.5). Apply before the next entry."),
+    dict(page=175,
+         where="last paragraph: 'par G=G_{m S} est équivalente à la catégorie'",
+         scan="the second G of G=G_{m S} is not underlined, whereas G=G_{mS} in the first sentence of 2.9.5 "
+              "underlines it",
+         tex="$G=G_{m\\ S}$",
+         kind="misprint_in_print", confidence="low",
+         fix=None,
+         corrected="$G=\\underline{G}_{m\\ S}$",
+         note="The multiplicative group scheme is an underlined G ('G=G_{mS} le schéma en groupes multiplicatif "
+              "sur S'). The TeX keeps the printed reading. 'tex' is the text after the preceding formula fix; "
+              "'corrected' replaces it."),
+    dict(page=175,
+         where="last paragraph: 'la catégorie des Modules inversibles birigidifiés sur P×Q, et que c'est donc'",
+         scan="P×Q with the typed product sign",
+         tex="$PxQ$",
+         kind="symbol", confidence="high",
+         fix={"old": "sur} $PxQ$", "new": "sur} $P\\times Q$"},
+         note="As the two entries above."),
+]
+
+ok = True
+for f in F:
+    text = (B / f"page_{f['page']}.tex").read_text(encoding="utf-8")
+    if f["fix"]:
+        n = text.count(f["fix"]["old"])
+        if n != 1:
+            ok = False
+            print("NOT UNIQUE", f["page"], repr(f["fix"]["old"]), n)
+        if "%%%%%%%%%%" in f["fix"]["old"]:
+            ok = False
+            print("TOUCHES MARKER", f["page"])
+    if f["kind"] == "misprint_in_print":
+        assert "corrected" in f
+    else:
+        assert "corrected" not in f
+    # the 'tex' of a null-fix misprint must be in the page (or in the page after an earlier fix)
+    if f["fix"] is None and f["tex"] not in text:
+        print("tex not literally in page (expected only after an earlier fix):", f["page"], repr(f["tex"]))
+
+OUT.write_text(json.dumps(F, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+print("written", OUT, len(F), "findings; unique-old check", "OK" if ok else "FAILED")
+for p in range(171, 176):
+    ps = [f for f in F if f["page"] == p]
+    print(p, "normal", sum(f["kind"] != "misprint_in_print" for f in ps),
+          "misprint", sum(f["kind"] == "misprint_in_print" for f in ps))

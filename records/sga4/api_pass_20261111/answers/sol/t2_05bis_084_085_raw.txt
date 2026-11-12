@@ -1,0 +1,76 @@
+{
+  "findings": [
+    {
+      "page": 84,
+      "where": "TeX prefix before Introduction",
+      "scan": "The page begins with INTRODUCTION; the chapter title and author are not printed here.",
+      "tex": "\\chapter{Techniques de descente cohomologique} and the centered B. Saint-Donat precede \\section*{Introduction}.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The cut includes material from the preceding title page without declaring an overlap. Page 84 begins at \\section*{Introduction}. No textual edit is needed."
+    },
+    {
+      "page": 84,
+      "where": "Paragraph 1, description of the Čech resolution",
+      "scan": "« Cěchiste », with the caron over e",
+      "tex": "« C\\v{e}chiste »",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\v{C}echiste",
+      "note": "The caron in Čech belongs on C, not e. The TeX keeps the printed misspelling."
+    },
+    {
+      "page": 84,
+      "where": "Formula (2.1), both indexed disjoint unions",
+      "scan": "\\coprod_{i_0\\ldots i_n\\in I} and \\coprod_{\\sigma\\in\\Hom([n],I)}",
+      "tex": "\\mathop{\\prod} at both positions",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\mathop{\\prod}_{i_0 \\ldots i_n \\in I} U_{i_{0}} \\cap \\ldots\n  \\cap U_{i_n} = \\mathop{\\prod}_{\\sigma \\in \\Hom ([n], I)}",
+        "new": "\\mathop{\\coprod}_{i_0 \\ldots i_n \\in I} U_{i_{0}} \\cap \\ldots\n  \\cap U_{i_n} = \\mathop{\\coprod}_{\\sigma \\in \\Hom ([n], I)}"
+      },
+      "note": "The handwritten operators are coproduct signs, not product signs."
+    },
+    {
+      "page": 85,
+      "where": "Formula (2.3), first occurrence of the canonical resolution",
+      "scan": "\\mathcal{C}^q(\\Uu, C^n(\\mathfrak{F}))",
+      "tex": "\\mathcal{C}^q(\\Uu, C^n(\\mathfrak{F}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\mathcal{C}^q(\\Uu, C^p(\\mathfrak{F}))",
+      "note": "The printed exponent n should be p, as in the remaining terms of the equality. The TeX keeps the misprint."
+    },
+    {
+      "page": 85,
+      "where": "Formula (3.1), superscript on Delta",
+      "scan": "\\Delta^{o}",
+      "tex": "\\Delta^{0}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Delta^{0}",
+        "new": "\\Delta^{o}"
+      },
+      "note": "The print has the superscript o denoting the opposite category, not the numeral zero."
+    },
+    {
+      "page": 85,
+      "where": "Formula (3.3), convergence arrow",
+      "scan": "\\Rightarrow",
+      "tex": "\\to",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\to H^{p + q}",
+        "new": "\\Rightarrow H^{p + q}"
+      },
+      "note": "The print uses the double convergence arrow, as in (1.1), rather than a single arrow."
+    }
+  ],
+  "coordinator": "84: 2 normal/1 misprint; 85: 2 normal/1 misprint.\nMarker (84): begin the page cut at \\section*{Introduction}; attribute the preceding chapter title and author to the preceding title page."
+}

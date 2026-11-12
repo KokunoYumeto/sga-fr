@@ -1,0 +1,482 @@
+[
+ {
+  "page": 36,
+  "where": "4.2, reference after 'formule d'induction complémentaire'",
+  "scan": "(1.12. b) (ii))",
+  "tex": "(1.12 b) (ii))",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(1.12 b)",
+   "new": "(1.12. b)"
+  },
+  "note": "The print has a full stop after 1.12."
+ },
+ {
+  "page": 36,
+  "where": "(4.2.1)",
+  "scan": "i^* D_X(F) ≃ D_Y ℝ^!i(F) : tilde over a bar, no arrowhead",
+  "tex": "\\xrightarrow{\\sim}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "i^*\\underline{D}_X(F)\\xrightarrow{\\sim}",
+   "new": "i^*\\underline{D}_X(F)\\simeq"
+  },
+  "note": "Headless isomorphism sign, as listed on pp. 16-35. The signs with a drawn head (p. 37 (*), p. 40 the last three of the calculation and (4.5.3)) are right as \\xrightarrow{\\sim}."
+ },
+ {
+  "page": 36,
+  "where": "(4.2.2), sign",
+  "scan": "D_X(F)_x ≃ Hom˙(...) : tilde over a bar, no arrowhead",
+  "tex": "\\xrightarrow{\\sim}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{D}_X(F)_x\\xrightarrow{\\sim}",
+   "new": "\\underline{D}_X(F)_x\\simeq"
+  },
+  "note": "As (4.2.1)."
+ },
+ {
+  "page": 36,
+  "where": "(4.2.2), right-hand side",
+  "scan": "Hom˙(ℝ^!i(F),A) with Hom underlined and a raised typed dot",
+  "tex": "\\Hom^*(\\R^{!}i(F),A)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom^*(\\R^{!}i(F),A)",
+   "new": "\\underline{\\Hom}^{\\bullet}(\\R^{!}i(F),A)"
+  },
+  "note": "Two differences in one edit: the print underlines Hom, and its superscript is the typed raised dot of the Hom complex, not a star (written \\bullet; the volume's \\bullet / ^\\circ decision for this dot applies)."
+ },
+ {
+  "page": 36,
+  "where": "line after (4.2.2): 'un accouplement parfait dans (D(A) :'",
+  "scan": "dans (D(A) :",
+  "tex": "dans $\\D(A)$:",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $\\D(A)$:",
+   "new": "dans $(\\D(A)$:"
+  },
+  "corrected": "dans $\\D(A)$:",
+  "note": "The print types an unmatched opening parenthesis before D(A) (a full-height typed parenthesis, like the one of '(A)'); the TeX silently drops it. The fix restores the printed reading."
+ },
+ {
+  "page": 36,
+  "where": "(4.2.2)'''",
+  "scan": "Ext underlined (sheaf Ext), as the H of the same display",
+  "tex": "\\Ext^{2d-i}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ext^{2d-i}",
+   "new": "\\underline{\\Ext}^{2d-i}"
+  },
+  "note": "\\Ext is \\DeclareMathOperator{\\Ext}{Ext}, not underlined."
+ },
+ {
+  "page": 36,
+  "where": "(4.2.2)'''",
+  "scan": "(F,μ_n)^{⊗d}_X)_x : no opening parenthesis before the hand-drawn μ",
+  "tex": "(F,(\\mu_n)_X^{\\otimes d})_x",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "(F,(\\mu_n)",
+   "new": "(F,\\mu_n)"
+  },
+  "corrected": "(F,(\\mu_n)",
+  "note": "Two closing parentheses follow one opening one in the print; the TeX silently supplies the missing '('. Nothing curved is visible after the comma (compare the typed '(' before the μ on the first line of the page), but the μ's doubled descender stands where a typed '(' would be, so a parenthesis under it cannot be fully excluded."
+ },
+ {
+  "page": 36,
+  "where": "first paragraph, 'en vertu du théorème de pureté (SGA XVI 3, ...)'",
+  "scan": "SGA XVI 3",
+  "tex": "SGA~XVI~3",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "SGAA~XVI~3",
+  "note": "The TeX keeps the printed reading. The purity theorem is SGA 4 XVI 3; the volume writes SGA 4 as 'SGAA' (59 times in s5.tex, e.g. pp. 37-40) or 'SGA 4'; 'SGA XVI' occurs only here."
+ },
+ {
+  "page": 37,
+  "where": "Exercice 4.2.3, second sentence",
+  "scan": "Soit K un complexe dualisant sur X , normalisé en x. Notons",
+  "tex": "the sentence stands after an inline comment ('% SGA→SGAA restauré ... FIX #57, 2026-07-03)') on the same line, so LaTeX drops it",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "2026-07-03) Soit $K$",
+   "new": "2026-07-03)\nSoit $K$"
+  },
+  "note": "A line break after the comment restores the sentence in the output. The same defect stands at s5.tex line 1235 (p. 44: '...de point fermé $x$.% SGA→SGAA restauré ... FIX #57, 2026-07-03) Soit $Y$ un fermé non vide ...')."
+ },
+ {
+  "page": 37,
+  "where": "first display",
+  "scan": "L̿ i_? : D^b(A) ⟶ D^-(X) : typed L with a double underline",
+  "tex": "\\mathbf L\\, i_?",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathbf L\\, i_? :",
+   "new": "\\underline{\\underline{L}}\\, i_? :"
+  },
+  "note": "The print's derived-functor L is a typed L doubly underlined, here and in the four places below; the TeX writes bold \\mathbf L (270 in s5.tex; this is its first occurrence in the volume). The fix gives the printed form, as the double-underlined 0 of p. 18; the volume decision on bold L (GLOBAL_ISSUES item 77 (c)) may replace it."
+ },
+ {
+  "page": 37,
+  "where": "second display, left side",
+  "scan": "L̿i_?(M) (double underline)",
+  "tex": "\\mathbf L\\, i_?(M)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathbf L\\, i_?(M)=M",
+   "new": "\\underline{\\underline{L}}\\, i_?(M)=M"
+  },
+  "note": "As the first display."
+ },
+ {
+  "page": 37,
+  "where": "second display, tensor sign",
+  "scan": "M ⊗^L_A K : the L above the tensor sign is a plain typed L",
+  "tex": "\\overset{\\mathbf L}{\\otimes}",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "\\overset{\\mathbf L}{\\otimes}",
+   "new": "\\overset{\\mathrm{L}}{\\otimes}"
+  },
+  "note": "No double underline is visible under this L, but its foot touches the top of the hand-drawn ⊗, so an underline hidden by the ⊗ cannot be excluded. \\mathrm L as in the preamble's \\lten."
+ },
+ {
+  "page": 37,
+  "where": "parenthesis after the second display",
+  "scan": "(Si K ... L̿ i_? s'étend ...",
+  "tex": "$\\mathbf L\\, i_?$ s'étend",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathbf L\\, i_?$ s'étend",
+   "new": "$\\underline{\\underline{L}}\\, i_?$ s'étend"
+  },
+  "note": "As the first display."
+ },
+ {
+  "page": 37,
+  "where": "end of the same parenthesis",
+  "scan": "D^+(A) dans D(X)).",
+  "tex": "dans $\\D(X)$.)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $\\D(X)$.)",
+   "new": "dans $\\D(X)$)."
+  },
+  "note": "The print closes the parenthesis before the full stop."
+ },
+ {
+  "page": 37,
+  "where": "(*)",
+  "scan": "ℝ Hom(L, L̿ i_?(M)) (double underline)",
+  "tex": "(L,\\mathbf L\\, i_?(M))",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "(L,\\mathbf L\\, i_?(M))",
+   "new": "(L,\\underline{\\underline{L}}\\, i_?(M))"
+  },
+  "note": "As the first display."
+ },
+ {
+  "page": 37,
+  "where": "Hint, label",
+  "scan": "Hint : with only 'Hint' underlined",
+  "tex": "\\emph{Hint:}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\emph{Hint:}",
+   "new": "\\emph{Hint} :"
+  },
+  "note": "The colon is outside the underline, as in 'Preuve :' (the global \\emph{Preuve} : form)."
+ },
+ {
+  "page": 37,
+  "where": "Hint, first sentence",
+  "scan": "un morphisme \"trace\" : ℝ^!i L̿i_?(M) ⟶ M",
+  "tex": "``trace'' $\\R^{!}i...",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "``trace'' $\\R",
+   "new": "``trace'': $\\R"
+  },
+  "note": "The print has a colon after \"trace\"."
+ },
+ {
+  "page": 37,
+  "where": "Hint, first sentence",
+  "scan": "ℝ^!i L̿i_?(M) (double underline)",
+  "tex": "\\R^{!}i\\,\\mathbf L\\, i_?(M)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "i\\,\\mathbf L\\, i_?(M)",
+   "new": "i\\,\\underline{\\underline{L}}\\, i_?(M)"
+  },
+  "note": "As the first display."
+ },
+ {
+  "page": 37,
+  "where": "Hint, last sentence",
+  "scan": "(\"dualité locale\" cf.[H] V 6.2) : with 'dualité locale' underlined",
+  "tex": "(``dualité locale'' cf.~[H]~V~6.2)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(``dualité locale'' cf.",
+   "new": "(``\\emph{dualité locale}'' cf."
+  },
+  "note": "Underlined in the print; this page writes the underline as \\emph."
+ },
+ {
+  "page": 37,
+  "where": "Hint, last sentence",
+  "scan": "... V 6.2) : (colon before the display)",
+  "tex": "V~6.2) (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "V~6.2)\n\\[",
+   "new": "V~6.2):\n\\["
+  },
+  "note": "The print ends the sentence with a colon."
+ },
+ {
+  "page": 38,
+  "where": "proof of Lemme 4.3, label",
+  "scan": "Preuve : (Preuve underlined)",
+  "tex": "\\begin{prooftext}[Preuve] (the environment prints 'Preuve.')",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}[Preuve]\n",
+   "new": "\\emph{Preuve} : "
+  },
+  "note": "Apply together with the removal of the first \\end{prooftext} on p. 39 (LaTeX fails otherwise). Same form as the global '\\emph{Preuve} :' and the \\begin{proof}[Preuve] fixes of pp. 10-15; the global pass did not reach the 44 \\begin{prooftext} of s5.tex."
+ },
+ {
+  "page": 38,
+  "where": "cartesian square, bottom arrow",
+  "scan": "X ←f— X' with f above the arrow (as g above the top arrow)",
+  "tex": "X' \\arrow[l,\"f\"] (label below a leftward arrow)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[l,\"f\"]",
+   "new": "\\arrow[l,\"f\"']"
+  },
+  "note": "tikz-cd sets an unswapped label below a leftward arrow; the print has f above it."
+ },
+ {
+  "page": 38,
+  "where": "cartesian square",
+  "scan": "full stop to the right of the diagram's bottom row",
+  "tex": "no punctuation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzcd}",
+   "new": "\\end{tikzcd}\\quad ."
+  },
+  "note": "Form as the p. 31 fix for punctuation after diagrams."
+ },
+ {
+  "page": 38,
+  "where": "first of the two isomorphisms (SGAA XVIII 3.1.10)",
+  "scan": "ℝ Hom(F,G) ⟵~ ℝ i_* i^*G (no punctuation)",
+  "tex": "\\R i_* i^*G,",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R i_* i^*G,",
+   "new": "\\R i_* i^*G"
+  },
+  "note": "The TeX adds a comma; the second line ends with the full stop, as in the TeX."
+ },
+ {
+  "page": 38,
+  "where": "second of the two isomorphisms",
+  "scan": "R i'_* g^*i^*G : plain R (one stem)",
+  "tex": "\\R i'_* g^*i^*G",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R i'_* g^*",
+   "new": "\\mathrm{R} i'_* g^*"
+  },
+  "corrected": "\\R i'_* g^*",
+  "note": "The R's of the line above and of the last display have two stems; this one has one. The TeX silently gives the double-struck R; treated as the plain R of p. 16."
+ },
+ {
+  "page": 38,
+  "where": "line before the last display",
+  "scan": "(SGAA XVII  (the line ends; no closing parenthesis, no number)",
+  "tex": "(SGAA~XVII)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(SGAA~XVII)",
+   "new": "(SGAA~XVII"
+  },
+  "corrected": "(SGAA~XVII)",
+  "note": "The TeX silently closes the parenthesis; the fix restores the printed reading."
+ },
+ {
+  "page": 39,
+  "where": "end of the proof of Lemme 4.3",
+  "scan": "(no label end; the text runs on to Lemme 4.4)",
+  "tex": "\\end{prooftext}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "5.11).\n\\end{prooftext}\n",
+   "new": "5.11).\n"
+  },
+  "note": "Apply together with the p. 38 label fix (\\begin{prooftext}[Preuve] -> \\emph{Preuve} : )."
+ },
+ {
+  "page": 39,
+  "where": "Lemme 4.4",
+  "scan": "f : X̄(x̄) ⟶ X̄,  f^*K : the target X carries a bar",
+  "tex": "\\to X$, $f^*K",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\to X$, $f^*K",
+   "new": "\\to \\ol{X}$, $f^*K"
+  },
+  "corrected": "\\to X$, $f^*K",
+  "note": "The strict localization maps to X; the print's bar over the target is a typing error. The TeX silently drops it; the fix restores the printed reading."
+ },
+ {
+  "page": 39,
+  "where": "proof of Lemme 4.4, label",
+  "scan": "Preuve : (Preuve underlined)",
+  "tex": "\\begin{prooftext}[Preuve] (prints 'Preuve.')",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}[Preuve]\n",
+   "new": "\\emph{Preuve} : "
+  },
+  "note": "Apply together with the next finding (its \\end{prooftext})."
+ },
+ {
+  "page": 39,
+  "where": "end of the proof of Lemme 4.4",
+  "scan": "(no label end)",
+  "tex": "\\end{prooftext}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "(4.3).\n\\end{prooftext}\n",
+   "new": "(4.3).\n"
+  },
+  "note": "Apply together with the previous finding."
+ },
+ {
+  "page": 39,
+  "where": "cartesian square of 4.5, bottom arrow",
+  "scan": "x̄ —i'→ X' with i' above the arrow (as i above the top one)",
+  "tex": "\\arrow[r,\"i'\"'] (label below)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"i'\"']",
+   "new": "\\arrow[r,\"i'\"]"
+  },
+  "note": "The swap mark puts the label below; the print has it above."
+ },
+ {
+  "page": 39,
+  "where": "cartesian square of 4.5",
+  "scan": "comma to the right of the diagram's bottom row",
+  "tex": "no punctuation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzcd}",
+   "new": "\\end{tikzcd}\\quad ,"
+  },
+  "note": "As the full stop after the diagram of p. 38."
+ },
+ {
+  "page": 40,
+  "where": "(4.5.2)",
+  "scan": "ℝΓ_x̄ ≃ ℝ^!i' f^* : tilde over a bar, no arrowhead",
+  "tex": "\\xrightarrow{\\sim}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim}\\R^{!}i' f^*",
+   "new": "\\simeq\\R^{!}i' f^*"
+  },
+  "note": "As (4.2.1) on p. 36."
+ },
+ {
+  "page": 40,
+  "where": "'Soit K_X ∈ ob D^+(X), et posons K_Y = ...'",
+  "scan": "K_Y = ℝ^! j(K_X)",
+  "tex": "K_Y=\\R^{!}j(K_X)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "K_Y=\\R^{!}i(K_X)",
+  "note": "The TeX keeps the printed j. Y is the closed subscheme with i : Y → X; j : U → X is its open complement (first line of the page), and 4.2 has K_Y = R^!i(K_X)."
+ },
+ {
+  "page": 40,
+  "where": "same sentence",
+  "scan": "K_x̄ = ℝΓ_x̄(K_X) attention, K_x̄ n'est pas la fibre de K_X en x̄ !).",
+  "tex": "$ (attention,",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$ (attention,",
+   "new": "$ attention,"
+  },
+  "corrected": "$ (attention,",
+  "note": "The print has no opening parenthesis before 'attention' (the closing one after '!' stands). The curved stroke before ℝ in '= ℝΓ' is the second stem of the double-struck R (cap height only, unlike the typed parentheses). The TeX silently supplies the parenthesis; the fix restores the printed reading."
+ },
+ {
+  "page": 40,
+  "where": "calculation of (D_XF)_x̄, first line",
+  "scan": "(D_XF)_x̄ ≃ g^* i^* D_XF : tilde over a bar, no arrowhead",
+  "tex": "&\\xrightarrow{\\sim}g^*i^*",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "&\\xrightarrow{\\sim}g^*i^*",
+   "new": "&\\simeq g^*i^*"
+  },
+  "note": "Only this first sign of the calculation is headless; the next two and (4.5.3) have drawn heads."
+ },
+ {
+  "page": 40,
+  "where": "last line / marker of folio 41",
+  "scan": "p. 40 ends '... un calcul analogue en passant par'; p. 41 begins 'X' au lieu de Y , on aurait alors ...'",
+  "tex": "'$X'$ au' stands above the folio 41 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 41 really begins at '$X'$ au' (s5.tex line 1135). Exact fix: python -I move_marker.py 5 41 \"\\$X'\\$ au\" --before (bash quoting; simulated in memory on both layers: the marker then splits line 1135 after 'en passant par'). No fix of this report touches the anchor."
+ }
+]

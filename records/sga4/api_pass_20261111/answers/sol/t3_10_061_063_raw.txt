@@ -1,0 +1,62 @@
+{
+  "findings": [
+    {
+      "page": 61,
+      "where": "Dernier paragraphe, réduction aux cas X = X₀ et X = X₁",
+      "scan": "au cas X = X₀ où X = X₁",
+      "tex": "au cas $X=X_{0}$ \\sisi{où}{ou}\n$X=X_1$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "au cas $X=X_{0}$ ou $X=X_1$",
+      "note": "« où » est une coquille pour la conjonction « ou ». Le TeX enregistre la lecture imprimée et la corrige avec \\sisi."
+    },
+    {
+      "page": 63,
+      "where": "Après les deux inégalités, définition de Xℓ",
+      "scan": "est le fibré de X",
+      "tex": "est \\sisi{le fibré}{la fibre} de $X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "est la fibre de $X$",
+      "note": "Le terme voulu est « la fibre », non « le fibré ». Le TeX enregistre la coquille et la corrige avec \\sisi."
+    },
+    {
+      "page": 63,
+      "where": "Même phrase, « au-dessus du point »",
+      "scan": "au-dessus du point",
+      "tex": "au-dessus \\sisi{de}{du} point",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "\\sisi{de}{du}",
+        "new": "du"
+      },
+      "note": "Le premier argument de \\sisi attribue à tort « de » à l'imprimé : la page porte déjà « du »."
+    },
+    {
+      "page": 63,
+      "where": "Bibliographie [3], nom de l'auteur",
+      "scan": "Hironaha, H.",
+      "tex": "Hironaka, H.",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "Hironaka, H.",
+      "note": "Le nom paraît imprimé « Hironaha » ; le TeX donne silencieusement le nom correct « Hironaka ». Réserve sur le glyphe h/k : le scan JBIG2 est l'unique témoin disponible."
+    },
+    {
+      "page": 63,
+      "where": "Bibliographie [7], titre allemand",
+      "scan": "der reel abgeschlossenen Körper",
+      "tex": "der \\sisi{reel}{reell}\nabgeschlossenen Körper",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "der reell abgeschlossenen Körper",
+      "note": "Il manque un l à « reell ». Le TeX enregistre la coquille et la corrige avec \\sisi."
+    }
+  ],
+  "coordinator": "61 : 0/1 ; 62 : 0/0 ; 63 : 1/3 (normal/misprint)."
+}

@@ -1,0 +1,138 @@
+[
+ {
+  "page": "506",
+  "where": "12.9, first line",
+  "scan": "Il résulte de (12.8.1), ou bien de (12.8.2) et de (12.2)",
+  "tex": "Il résulte de (12.8), ou bien de (12.8.1) et de (12.2)",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "Il\\pageoriginale résulte de (12.8), ou bien de\n(12.8.1) et de",
+   "new": "Il\\pageoriginale résulte de (12.8.1), ou bien de\n(12.8.2) et de"
+  },
+  "note": "Both formula numbers are shifted: the print cites (12.8.1), then (12.8.2)."
+ },
+ {
+  "page": "506",
+  "where": "proof of a), last line of the sequence of isomorphisms",
+  "scan": "Hom_{A/X}(j^*_XM, ℋom_Z(j^*_XN,R)) ≃ Hom_Z(...)",
+  "tex": "\\Hom_{A/X}(j^{\\ast}_XM, \\scrHom_{...} (j^{\\ast}_XN,R)\\simeq",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(j^{\\ast}_XN,R)\\simeq",
+   "new": "(j^{\\ast}_XN,R))\\simeq"
+  },
+  "note": "The closing parenthesis of Hom_{A/X}( is missing in the TeX."
+ },
+ {
+  "page": "508",
+  "where": "Corollaire 12.13, display",
+  "scan": "A_X ⊗_A M ≃ j_{X!} j^*_X M",
+  "tex": "A_X\\otimes_AM\\simeq J_{X!} j^{\\ast}_XM",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "J_{X!}",
+   "new": "j_{X!}"
+  },
+  "note": "The print has a small j; the TeX has a capital J."
+ },
+ {
+  "page": "508",
+  "where": "proof of 12.14, A-bilinear morphism",
+  "scan": "ℋom_B(N,p)xN → P",
+  "tex": "\\scrHom_B(N,P)\\times N\\rightarrow P",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\scrHom_B(N,P)\\times N\\rightarrow P",
+  "note": "The print has a lowercase p; the TeX silently corrects it to P."
+ },
+ {
+  "page": "508",
+  "where": "13.1.1, last line",
+  "scan": "θ : A' → m_*A (same typewriter theta as in (m,θ))",
+  "tex": "\\Theta:A'\\rightarrow m_{\\ast}A",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "\\Theta:A'",
+   "new": "\\theta:A'"
+  },
+  "note": "The print uses the same glyph throughout; the TeX switches to a capital Theta here only."
+ },
+ {
+  "page": "509",
+  "where": "13.2, first line",
+  "scan": "(E',A\") , apparently A with a double mark",
+  "tex": "(E',A^{\\ast})",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(E',A')",
+  "note": "The print's exponent is a misprint for A'. The TeX keeps it, rendered as A^*."
+ },
+ {
+  "page": "509",
+  "where": "13.2.1",
+  "scan": "θ' : A' → m_*A",
+  "tex": "\\Theta':A'\\rightarrow m_{\\ast}A",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "\\Theta':A'",
+   "new": "\\theta':A'"
+  },
+  "note": "The print uses the same theta glyph as in (m,θ); the TeX has a capital Theta."
+ },
+ {
+  "page": "509",
+  "where": "13.2.2, left module",
+  "scan": "A⊗_{m^*A'} m^*N",
+  "tex": "A\\otimes_m\\ast_{A'}m^{\\ast}N",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "A\\otimes_m\\ast_{A'}m^{\\ast}N",
+   "new": "A\\otimes_{m^{\\ast}A'}m^{\\ast}N"
+  },
+  "note": "The subscript is garbled in the TeX: it prints ⊗_m ∗_{A'} instead of ⊗_{m^*A'}."
+ },
+ {
+  "page": "509",
+  "where": "13.2.2, right module",
+  "scan": "m^*N⊗_{m^*A'} A",
+  "tex": "m^{\\ast}N\\otimes_m\\ast_{A'}A",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "N\\otimes_m\\ast_{A'}A",
+   "new": "N\\otimes_{m^{\\ast}A'}A"
+  },
+  "note": "The same garbled subscript as in the left module."
+ },
+ {
+  "page": "510",
+  "where": "proof of 13.4.2, second line of the sequence",
+  "scan": "Hom_A(u^*N, ℋom_E(u^{-1}X,M))   \"  \"  \"  \"   (12.1),",
+  "tex": "\\Hom_A(u^{\\ast}N,\\scrHom_E (u^{-1}X, M)) \\simeq &&",
+  "kind": "extra",
+  "confidence": "low",
+  "fix": {
+   "old": "(u^{-1}X, M)) \\simeq &&",
+   "new": "(u^{-1}X, M)) &&"
+  },
+  "note": "The print has only ditto marks after the left-hand side; the TeX adds an explicit ≃."
+ },
+ {
+  "page": "510",
+  "where": "end of page",
+  "scan": "the page ends with the line Hom_A(u^*N,ℋom_E(u^{-1}X,M)) \" \" \" \" (12.1) ,",
+  "tex": "three further alignat lines: (13.4.1), (10.3.1), (12.1)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The last three lines of the alignat are not on page 510; they belong to page 511 (IV-212). Page 510 ends after the line ending in (12.1)."
+ }
+]

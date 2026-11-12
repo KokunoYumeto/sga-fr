@@ -1,0 +1,590 @@
+[
+ {
+  "page": 346,
+  "where": "Lemme 9.8.7, the statement",
+  "scan": "underlined: 'L'application' | 'est injective' (v_* and the full stop not underlined)",
+  "tex": "L'application $v_*$ est injective. (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "L'application $v_*$ est injective.",
+   "new": "\\emph{L'application} $v_*$ \\emph{est injective}."
+  },
+  "note": "Exposé VII statements are underlined word group by word group; \\emph is the file's command for the underline, as the statements itemized on pp. 283-295 and 343."
+ },
+ {
+  "page": 346,
+  "where": "statement labels of pp. 346-347 (convention, reported once)",
+  "scan": "'LEMME 9.8.7.' (p. 346: capitals, full stop, no dash); 'THEOREME 9.9.-' (p. 347: capitals, '.-'); neither underlined",
+  "tex": "\\begin{statement}{Lemme 9.8.7}, \\begin{statement}{Théorème 9.9}: bold mixed case, the environment adds a full stop, no dash",
+  "kind": "word",
+  "confidence": "high",
+  "fix": null,
+  "note": "The label convention of Exposé VII (global issue 89 (a); reported once on p. 337), not itemized. For the closing pass: 'LEMME 9.8.7.' is printed without the dash that the other labels of the exposé carry."
+ },
+ {
+  "page": 346,
+  "where": "first diagram, bottom row X' -> Z'",
+  "scan": "X' --v--> Z' with no full stop after Z'",
+  "tex": "&Z'.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "&Z'.",
+   "new": "&Z'"
+  },
+  "note": "The TeX adds a full stop at the end of the diagram. Independent of the next item."
+ },
+ {
+  "page": 346,
+  "where": "first diagram, label of the bottom arrow X' -> Z'",
+  "scan": "v above the arrow (as v'' above the top arrow)",
+  "tex": "\\arrow[r,\"v\"'] (label below)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "X'\\arrow[r,\"v\"']",
+   "new": "X'\\arrow[r,\"v\"]"
+  },
+  "note": "Label position as in the print (as the label fixes of pp. 277-278, 296, 300, 310, 314-315, 343)."
+ },
+ {
+  "page": 346,
+  "where": "(9.8.8)",
+  "scan": "(f'_1)* o v_* = v''_* o (f')* with no comma at the end",
+  "tex": "(f')^*,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(f')^*,",
+   "new": "(f')^*"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 346,
+  "where": "cartesian diagram, label of the middle vertical arrow H x P^1 -> Y x P^1",
+  "scan": "g x id at the right of the arrow (g at the left of the first arrow, f x id at the right of the third)",
+  "tex": "\\arrow[d,\"{g\\times\\operatorname{id}}\"'] (label at the left)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\"{g\\times\\operatorname{id}}\"'",
+   "new": "\"{g\\times\\operatorname{id}}\""
+  },
+  "note": "Label position as in the print; g (left) and f x id (right) are already on the printed sides in the TeX."
+ },
+ {
+  "page": 347,
+  "where": "first paragraph, 'il revient au même de montrer que v_* est injective'",
+  "scan": "est injective lorsque de plus Y est de codimension 1",
+  "tex": "est injectif lorsque",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "est injectif lorsque",
+   "new": "est injective lorsque"
+  },
+  "note": "The TeX changes the ending of the adjective."
+ },
+ {
+  "page": 347,
+  "where": "end of the first paragraph",
+  "scan": "u_* un monomorphisme direct (u admet une rétraction).",
+  "tex": "un monomorphisme direct, $u$ admettant une rétraction.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "direct, $u$ admettant une rétraction.",
+   "new": "direct ($u$ admet une rétraction)."
+  },
+  "note": "The TeX rewrites the printed parenthesis as a participle clause."
+ },
+ {
+  "page": 347,
+  "where": "'Énonçons maintenant le théorème correspondant à (8.5) b).'",
+  "scan": "(8.5) b)",
+  "tex": "(8.5 b)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(8.5 b)",
+   "new": "(8.5) b)"
+  },
+  "note": "The print closes the parenthesis after 8.5 and writes b) after it."
+ },
+ {
+  "page": 347,
+  "where": "Théorème 9.9, first line",
+  "scan": "underlined: 'Pour tout entier' | 'la suite'",
+  "tex": "Pour tout entier $p\\ge0$, la suite (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour tout entier $p\\ge0$, la suite",
+   "new": "\\emph{Pour tout entier} $p\\ge0$, \\emph{la suite}"
+  },
+  "note": "As the underlined statements of the exposé ('dans laquelle λ et μ désignent les flèches' is not underlined in the print)."
+ },
+ {
+  "page": 347,
+  "where": "Théorème 9.9, the arrow λ",
+  "scan": "λ : x ↦ [g*(x)c_{d-1}(F̌), -i_*(x)]: square brackets",
+  "tex": "\\bigl(g^*(x)c_{d-1}(\\check F),-i_*(x)\\bigr)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigl(g^*(x)c_{d-1}(\\check F),-i_*(x)\\bigr)",
+   "new": "[g^*(x)c_{d-1}(\\check F),-i_*(x)]"
+  },
+  "note": "The TeX has parentheses for the print's brackets. Independent of the next item."
+ },
+ {
+  "page": 347,
+  "where": "Théorème 9.9, end of the λ line",
+  "scan": "no comma after the bracket (the print sets λ and μ on two lines, neither with punctuation)",
+  "tex": "\\bigr),\\n\\qquad",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": ",\n\\qquad\n\\mu:",
+   "new": "\n\\qquad\n\\mu:"
+  },
+  "note": "The TeX adds a comma inside the display."
+ },
+ {
+  "page": 347,
+  "where": "Théorème 9.9, after the display of λ and μ",
+  "scan": "underlined: 'est exacte. De plus, l'application' | 'a pour inverse à gauche'",
+  "tex": "est exacte. De plus, l'application $\\lambda$ a pour inverse à gauche (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est exacte. De plus, l'application $\\lambda$ a pour inverse à gauche",
+   "new": "\\emph{est exacte. De plus, l'application} $\\lambda$ \\emph{a pour inverse à gauche}"
+  },
+  "note": "Independent of the next item (the colon goes after the end of this line)."
+ },
+ {
+  "page": 347,
+  "where": "Théorème 9.9, before the display of λ'",
+  "scan": "'a pour inverse à gauche :' (colon, not underlined)",
+  "tex": "à gauche (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\\[\n\\lambda':",
+   "new": " :\n\\[\n\\lambda':"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 347,
+  "where": "(9.9.1)",
+  "scan": "(z ∈ C•(X)): C with a raised dot",
+  "tex": "(z\\in C^*(X))",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(z\\in C^*(X))",
+   "new": "(z\\in C^{\\bullet}(X))"
+  },
+  "note": "A round raised dot (the typewriter's full stop raised), not the six-pointed asterisk of f* on the same line; as C• on pp. 341-343."
+ },
+ {
+  "page": 347,
+  "where": "after (9.9.1), 'et du fait, évident, que f_*(1) = 1'",
+  "scan": "du fait, évident, que (two commas)",
+  "tex": "du fait évident que",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "du fait évident que",
+   "new": "du fait, évident, que"
+  },
+  "note": "The TeX drops the two commas."
+ },
+ {
+  "page": 347,
+  "where": "after (9.9.1), 'Soit donc t ∈ C•(X')'",
+  "scan": "C with a raised dot, as in (9.9.1) two lines above; no p",
+  "tex": "t\\in C^p(X')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "t\\in C^p(X')",
+   "new": "t\\in C^{\\bullet}(X')"
+  },
+  "note": "The TeX has the degree p for the print's raised dot."
+ },
+ {
+  "page": 347,
+  "where": "last line, 'U' = X' ∸ Y' sur U = X ∸ Y'",
+  "scan": "two minus signs with a crisp dot centred above (∸)",
+  "tex": "$U'=X'-Y'$ sur $U=X-Y$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$U'=X'-Y'$ sur $U=X-Y$",
+   "new": "$U'=X'\\mathbin{\\dot{-}}Y'$ sur $U=X\\mathbin{\\dot{-}}Y$"
+  },
+  "note": "The typescript's set-difference sign of Exposé VII, as the fixes of pp. 285, 301, 318, 327, 330, 342."
+ },
+ {
+  "page": 348,
+  "where": "first display, 'avec a ∈ C•(Y')'",
+  "scan": "C with a raised dot",
+  "tex": "a\\in C^*(Y')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "a\\in C^*(Y')",
+   "new": "a\\in C^{\\bullet}(Y')"
+  },
+  "note": "As (9.9.1) on p. 347 and pp. 341-343."
+ },
+ {
+  "page": 348,
+  "where": "before (9.9.3), 'd'où compte tenu de (9.9.1),'",
+  "scan": "no comma after d'où",
+  "tex": "d'où, compte tenu de (9.9.1),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d'où, compte tenu",
+   "new": "d'où compte tenu"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 349,
+  "where": "top of the page / folio-349 marker",
+  "scan": "p. 349 begins 'de z résulte des deux relations j_*(z) = 0 et g_*(z) = 0 .'; p. 348 ends '... Montrons maintenant comment la nullité'",
+  "tex": "'de $z$' ends the last line of page_348.tex ('... comment la nullité de $z$', s5.tex diplomatic line 11925, current 11921); page_349.tex begins at 'résulte des deux relations'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 349 really begins at 'de $z$'. Exact fix: python -I move_marker.py 5 349 'de $z$' --before (simulated in memory on both layers: '... comment la nullité ' / marker / 'de $z$' / 'résulte des deux relations ...'; the marker is a comment line, so the sentence stays whole). Not marker_split_word.py pull: it would join 'de $z$résulte' without a space. Text not moved; no other finding touches these lines."
+ },
+ {
+  "page": 349,
+  "where": "'d'où g*(a_o)ξ+...+g*(a_{d-1})ξ^{d-1} = 0 ; donc tous les a_i sont nuls'",
+  "scan": "last term g*(a_{d-1})ξ^{d-1}",
+  "tex": "g^*(a_{d-1})\\xi^{d-1}=0;",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "g^*(a_{d-2})\\xi^{d-1}",
+  "note": "zξ = Σ g*(a_i)ξ^{i+1} and a_{d-1} = 0 has just been shown, so the sum ends with g*(a_{d-2})ξ^{d-1} (all powers below d, whence a_i = 0 by the uniqueness of the representation); the printed index d-1 does not fit the exponent d-1 (the first term g*(a_o)ξ has index 0 and exponent 1). The TeX keeps the printed reading."
+ },
+ {
+  "page": 349,
+  "where": "heading 9.10",
+  "scan": "9.10. (with a full stop), run into 'Avec les notations de (9.9)'",
+  "tex": "\\subsection*{9.10}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{9.10}",
+   "new": "\\subsection*{9.10.}"
+  },
+  "note": "As the heading '9.5.' of p. 342."
+ },
+ {
+  "page": 349,
+  "where": "'Par suite μ enduit un isomorphisme'",
+  "scan": "enduit",
+  "tex": "$\\mu$ induit",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mu$ induit",
+   "new": "$\\mu$ enduit"
+  },
+  "corrected": "induit",
+  "note": "Typing error of the print (e for i); the TeX silently corrects it."
+ },
+ {
+  "page": 349,
+  "where": "relations before 'montrent que'",
+  "scan": "g_*(ξ^i) = 0 pour i < d-1 ; g_*(ξ^{d-1}) = 1: a semicolon between the two relations",
+  "tex": "i<d-1,\\qquad",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "i<d-1,\\qquad",
+   "new": "i<d-1;\\qquad"
+  },
+  "note": "The TeX has a comma for the print's semicolon. Independent of the next item."
+ },
+ {
+  "page": 349,
+  "where": "same display, end",
+  "scan": "no punctuation after '= 1'",
+  "tex": "g_*(\\xi^{d-1})=1,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\xi^{d-1})=1,",
+   "new": "(\\xi^{d-1})=1"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 350,
+  "where": "'Ainsi que me l'a signalé MURRE'",
+  "scan": "MURRE in capitals",
+  "tex": "signalé Murre",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "signalé Murre",
+   "new": "signalé MURRE"
+  },
+  "note": "Capitals as printed (as MUMFORD, p. 303)."
+ },
+ {
+  "page": 350,
+  "where": "same sentence, the reference to Samuel",
+  "scan": "par SAMUEL (Relations d'équivalence, Proceedings of the International Congress, Edinburgh 1958 ) . : capitals; the reference in parentheses; no 'dans'; the title not underlined",
+  "tex": "par Samuel, dans \\emph{Relations d'équivalence}, Proceedings of the International Congress, Edinburgh 1958.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "par Samuel, dans \\emph{Relations d'équivalence}, Proceedings of the International Congress, Edinburgh 1958.",
+   "new": "par SAMUEL (Relations d'équivalence, Proceedings of the International Congress, Edinburgh 1958)."
+  },
+  "note": "One edit: the capitals, the word 'dans' that the print does not have, the print's parentheses for the TeX's commas, and the title typed plain (\\emph is the file's underline)."
+ },
+ {
+  "page": 350,
+  "where": "heading of the bibliography",
+  "scan": "BIBLIOGRAPHIE: capitals (centred, underlined, no full stop)",
+  "tex": "\\subsection*{Bibliographie}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{Bibliographie}",
+   "new": "\\subsection*{BIBLIOGRAPHIE}"
+  },
+  "note": "Capitals as printed, as the BIBLIOGRAPHIE fixes of pp. 54, 72 and 136; the underline is the accepted \\subsection* setting."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [1], author",
+  "scan": "GROTHENDIECK, then the title in the right-hand column",
+  "tex": "\\item Grothendieck, \\emph{",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Grothendieck, \\emph{",
+   "new": "\\item GROTHENDIECK \\emph{"
+  },
+  "note": "Capitals as printed; the print sets the author and the title in two columns, with no comma between them (as 'VERDIER, J-L.' on p. 72). One edit."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [1], end of the title",
+  "scan": "La théorie des classes de Chern. (full stop)",
+  "tex": "Chern}, Bull.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Chern}, Bull.",
+   "new": "Chern}. Bull."
+  },
+  "note": "The print ends the title with a full stop (outside the underline); the TeX has a comma."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [1], volume number",
+  "scan": "86 underlined",
+  "tex": "\\textbf{86}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textbf{86}",
+   "new": "\\emph{86}"
+  },
+  "note": "The print underlines the volume number (\\emph is the file's command for the underline); the TeX sets it bold."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [1], pages",
+  "scan": "pp. 137-154 (typewriter hyphen)",
+  "tex": "137--154",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "137--154",
+   "new": "137-154"
+  },
+  "note": "En dash added by the transcription (as p. 137)."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [2], author",
+  "scan": "HODGE, then the title in the right-hand column",
+  "tex": "\\item Hodge, \\emph{",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Hodge, \\emph{",
+   "new": "\\item HODGE \\emph{"
+  },
+  "note": "Capitals as printed; the print sets the author and the title in two columns, with no comma between them (as 'VERDIER, J-L.' on p. 72). One edit."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [2], end of the title",
+  "scan": "The theory and applications of harmonic integrals. (full stop)",
+  "tex": "integrals}, Cambridge",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "integrals}, Cambridge",
+   "new": "integrals}. Cambridge"
+  },
+  "note": "The print ends the title with a full stop (outside the underline); the TeX has a comma."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [3], author",
+  "scan": "HIRZEBRUCH, then the title in the right-hand column",
+  "tex": "\\item Hirzebruch, \\emph{",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Hirzebruch, \\emph{",
+   "new": "\\item HIRZEBRUCH \\emph{"
+  },
+  "note": "Capitals as printed; the print sets the author and the title in two columns, with no comma between them (as 'VERDIER, J-L.' on p. 72). One edit."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [3], end of the title",
+  "scan": "Topological Methods in Algebraic Geometry. (full stop)",
+  "tex": "Geometry}, Springer",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Geometry}, Springer",
+   "new": "Geometry}. Springer"
+  },
+  "note": "The print ends the title with a full stop (outside the underline); the TeX has a comma."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [4], author",
+  "scan": "LEFSCHETZ, then the title in the right-hand column",
+  "tex": "\\item Lefschetz, \\emph{",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Lefschetz, \\emph{",
+   "new": "\\item LEFSCHETZ \\emph{"
+  },
+  "note": "Capitals as printed; the print sets the author and the title in two columns, with no comma between them (as 'VERDIER, J-L.' on p. 72). One edit."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [4], end of the title",
+  "scan": "Algebraic Geometry. (full stop)",
+  "tex": "Geometry}, Princeton",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Geometry}, Princeton",
+   "new": "Geometry}. Princeton"
+  },
+  "note": "The print ends the title with a full stop (outside the underline); the TeX has a comma."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [4], publisher and year",
+  "scan": "Princeton University Press 1953. (no comma before the year)",
+  "tex": "Princeton University Press, 1953.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Press, 1953.",
+   "new": "Press 1953."
+  },
+  "note": "The TeX adds a comma ([2] prints 'Cambridge University Press, 1952.' with one)."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [5], author",
+  "scan": "Mme RAYNAUD ('Mme' in small letters), then the title in the right-hand column",
+  "tex": "\\item Mme Raynaud, \\emph{",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item Mme Raynaud, \\emph{",
+   "new": "\\item Mme RAYNAUD \\emph{"
+  },
+  "note": "Capitals as printed; the print sets the author and the title in two columns, with no comma between them (as 'VERDIER, J-L.' on p. 72). One edit."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [5], end of the title",
+  "scan": "Modules projectifs universels. (full stop)",
+  "tex": "universels}, Inventiones",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "universels}, Inventiones",
+   "new": "universels}. Inventiones"
+  },
+  "note": "The print ends the title with a full stop (outside the underline); the TeX has a comma."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [TF], author",
+  "scan": "GODEMENT, then the title in the right-hand column",
+  "tex": "Godement, \\emph{",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Godement, \\emph{",
+   "new": "GODEMENT \\emph{"
+  },
+  "note": "Capitals as printed; the print sets the author and the title in two columns, with no comma between them (as 'VERDIER, J-L.' on p. 72). One edit."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [CH], end of the title",
+  "scan": "Anneaux de Chow et applications. Séminaire (full stop)",
+  "tex": "applications}, Séminaire",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "applications}, Séminaire",
+   "new": "applications}. Séminaire"
+  },
+  "note": "The print ends the title with a full stop (outside the underline); the TeX has a comma."
+ },
+ {
+  "page": 350,
+  "where": "bibliography [6], end of the title",
+  "scan": "Théorème de Lefschetz et critères de dégénérescence. (full stop)",
+  "tex": "dégénérescence}, Pub.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "dégénérescence}, Pub.",
+   "new": "dégénérescence}. Pub."
+  },
+  "note": "The print ends the title with a full stop (outside the underline); the TeX has a comma."
+ },
+ {
+  "page": 350,
+  "where": "end of the page / folio-351 marker",
+  "scan": "p. 350 ends with the bibliography ('[6] ... Pub. I.H.E.S. n° 35.'); p. 351 begins with the heading 'EXPOSE VIII' (b351_355/page_351_s1.png)",
+  "tex": "'\\newpage', '\\section*{Exposé VIII}' and '\\begin{center}' stand before the folio-351 marker (s5.tex diplomatic lines 11995-11998, current 11991-11994); the marker sits inside the center block of the title",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 351 really begins at '\\section*{Exposé VIII}' (diplomatic line 11996, current 11992). Exact fix: python -I move_marker.py 5 351 '\\section*{Exposé VIII}' --before (simulated in memory on both layers: the marker then stands between '\\newpage' and '\\section*{Exposé VIII}', and the heading and the whole center block are on p. 351). Text not moved. Batch 351-355 may report the same move: run it once."
+ }
+]

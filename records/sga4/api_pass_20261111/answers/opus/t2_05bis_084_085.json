@@ -1,0 +1,88 @@
+[
+ {
+  "page": 84,
+  "where": "before 'Introduction' (chapter title and author)",
+  "scan": "page 84 begins with the heading INTRODUCTION; no title or author is printed on it",
+  "tex": "\\chapter{Techniques de descente cohomologique} ... B. Saint-Donat",
+  "kind": "marker",
+  "confidence": "low",
+  "fix": null,
+  "note": "The exposé title and the author's name are not printed on page 84; they presumably belong to the preceding title page (83). Page 84 really begins at 'INTRODUCTION'."
+ },
+ {
+  "page": 84,
+  "where": "formula (2.1), first coproduct",
+  "scan": "∐ (coproduct, disjoint sum) under which i_o...i_n ∈ I",
+  "tex": "\\mathop{\\prod}_{i_0 \\ldots i_n \\in I}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathop{\\prod}_{i_0 \\ldots i_n \\in I}",
+   "new": "\\mathop{\\coprod}_{i_0 \\ldots i_n \\in I}"
+  },
+  "note": "X_0 is the disjoint sum: the print has the coproduct sign, not the product."
+ },
+ {
+  "page": 84,
+  "where": "formula (2.1), second coproduct",
+  "scan": "∐_{σ∈Hom([n],I)}",
+  "tex": "\\mathop{\\prod}_{\\sigma \\in \\Hom ([n], I)}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathop{\\prod}_{\\sigma \\in \\Hom ([n], I)}",
+   "new": "\\mathop{\\coprod}_{\\sigma \\in \\Hom ([n], I)}"
+  },
+  "note": "Same sign: the print has the coproduct, not the product."
+ },
+ {
+  "page": 84,
+  "where": "'(ibid (5.2.1))'",
+  "scan": "ibid (5.2.1), meaning [5] (5.2.1)",
+  "tex": "\\hyperref[Vbis.subsubsec5.2.1]{5.2.1}",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "\\hyperref[Vbis.subsubsec5.2.1]{5.2.1}",
+   "new": "5.2.1"
+  },
+  "note": "The reference is to the cited work [5] ('ibid'), but the link points to this exposé's own 5.2.1. The printed number is right; only the link target is wrong."
+ },
+ {
+  "page": 84,
+  "where": "'(ibid (4.3))'",
+  "scan": "ibid (4.3), meaning [5] (4.3)",
+  "tex": "\\hyperref[Vbis.subsec4.3]{4.3}",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "\\hyperref[Vbis.subsec4.3]{4.3}",
+   "new": "4.3"
+  },
+  "note": "Same problem: the reference is to [5], but the link points to Vbis 4.3."
+ },
+ {
+  "page": 85,
+  "where": "formula (2.3), left side",
+  "scan": "C^q(U, C^n(F)) = j_{q*} j_q^* C^p(F) = ...",
+  "tex": "\\mathcal{C}^q(\\Uu, C^n(\\mathfrak{F}))",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\mathcal{C}^q(\\Uu, C^p(\\mathfrak{F}))",
+  "note": "The print has C^n where the rest of the formula has C^p. The TeX keeps the printed reading."
+ },
+ {
+  "page": 85,
+  "where": "formula (3.3), arrow",
+  "scan": "thick double arrow ⟹ (the same sign as in (1.1))",
+  "tex": "\\to H^{p + q}",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\to H^{p + q}",
+   "new": "\\Rightarrow H^{p + q}"
+  },
+  "note": "The spectral sequence arrow is the same double arrow as in (1.1), which the TeX sets as \\Rightarrow; here the TeX has a plain \\to."
+ }
+]

@@ -1,0 +1,1561 @@
+\ifx\danslelivre\undefined
+\RequirePackage{luatex85}
+\documentclass[10pt]{../fichiers-configuration-latex/smfart}
+\input{../fichiers-configuration-latex/paquets}
+\input{../fichiers-configuration-latex/numerotation}
+\input{../fichiers-configuration-latex/macros}
+
+
+\externaldocument{../01/01.tex}
+\externaldocument{../02/02.tex}
+\externaldocument{../03/03.tex}
+\externaldocument{../04/04.tex}
+\externaldocument{../05/05.tex}
+\externaldocument{../05bis/05bis.tex}
+\externaldocument{../06/06.tex}
+\externaldocument{../07/07.tex}
+\externaldocument{../08/08.tex}
+\externaldocument{../09/09.tex}
+\externaldocument{../10/10.tex}
+\externaldocument{../11/11.tex}
+\externaldocument{../12/12.tex}
+\externaldocument{../13/13.tex}
+\externaldocument{../14/14.tex}
+\externaldocument{../15/15.tex}
+%\externaldocument{../16/16.tex}
+\externaldocument{../17/17.tex}
+\externaldocument{../18/18.tex}
+\externaldocument{../19/19.tex}
+
+\setboolean{original}{false}
+
+\begin{document}
+
+\begin{center}
+XVI. Théorème de changement de base par un morphisme lisse, et applications\\
+M. Artin 
+\end{center}
+
+\selectlanguage{english}version : \showgitstatus\selectlanguage{french}
+\tableofcontents
+
+\else
+\chapter{Théorème de changement de base par un morphisme lisse, et applications}
+%\addtocontents{toc}{M. Artin}
+\begin{center}
+M. Artin 
+\end{center}
+\fi
+
+\setcounter{pageoriginal}{206}
+
+\section{Le théorème de changement de base par un morphisme
+  lisse}\etiquette[1]{XVI.sec1}\pageoriginale
+
+\begin{enonce*}{Théorème 1.1}\etiquette[1.1]{XVI.thm1.1}
+Soient $\LL\subset \PP$, $n\in \NN$, et
+$$\vcenter{
+\xymatrix@C=1.5cm@R=1cm{
+X   \ar[d]^{f}& X' \ar[l]_{g'} \ar[d]^{f'}\\
+Y     & \ar[l]_{g} Y'
+}}\leqno{(*)}
+$$
+un diagramme cartésien, avec $f$ quasi-compact et quasi-séparé\nde{=cohérent XXX}, et $g$
+universellement localement $0$-acyclique (\resp
+\sisi{univ. loc.}{universellement localement} $1$-asphérique pour $\LL$, \resp
+\sisi{univ. loc.}{universellement localement} $n$-acyclique pour $\LL$) \emph{(\hyperrefext[XV][XV.def1.11]{1.11}).} Alors
+pour chaque faisceau $F$ d'ensembles (\resp de
+\emph{ind}-$\LL$-groupes, \resp abélien de
+$\LL$-torsion) sur $X$, le morphisme de changement de base
+\emph{(XII 4.1.2)}
+$$
+\varphi^{q}:g^{\ast}(R^{q}f_{\ast})F\longrightarrow
+(R^{q}f'_{\ast}){g'}^{\ast}F
+$$
+est bijectif pour $q=0$ (\resp $q\leq 1$, \resp $q\leq n$).
+\end{enonce*}
+
+En particulier, en appliquant \hyperrefext[XV][XV.thm2.1]{2.1}, on trouve le
+
+\begin{enonce*}{Corollaire 1.2}\etiquette[1.2]{XVI.cor1.2}
+(Théorème de changement de base par un morphisme lisse). Supposons que
+  le morphisme $g$ de $(\ast)$ soit lisse, que $f$ soit quasi-compact
+  et quasi-séparé, et que $\LL\subset \PP$ soit
+  l'ensemble complémentaire à l'ensemble des caractéristiques
+  résiduelles de $Y$. Alors pour chaque faisceau $F$ d'ensembles
+  (\resp de \emph{ind}-$\LL$-groupes, \resp abélien de
+  $\LL$-torsion) sur $X$, le morphisme de
+  changement\pageoriginale de base $\varphi^{q}$ ci-dessus est
+  bijectif pour $q=0$ (\resp pour $q=0$, $1$, \resp pour chaque $q$).
+\end{enonce*}
+
+\noindent
+\emph{Démonstration de} \hyperref[XVI.thm1.1]{1.1}. Traitons d'abord le cas où
+$f:X\rightarrow Y$ est quasi-projectif: ce n'est qu'une conjonction du
+théorème de changement de base pour un morphisme propre \hyperrefext[XII][XII.thm5.1]{5.1} et de
+la définition \hyperrefext[XV][XV.prop1.9]{1.9}. En effet, on a un diagramme commutatif
+$$
+\xymatrix@=1.25cm{
+ X \ar[rr]^{i} \ar[rd]_{f}&        & \bar{X}\ar[ld]^{\bar{f}}\\
+                         &   Y    &
+}
+$$
+où $\bar{f}$ est projectif, donc propre, et où $i$ est une immersion
+ouverte. Or on sait \hyperrefext[XII][XII.thm5.1]{5.1} que le théorème de changement de base est
+vrai pour $\bar{f}$ quel que soit $g:Y'\rightarrow Y$. Puisque
+$\fprod{g}{\bar{X}}{Y}:\fprod{Y'}{\bar{X}}{Y}\rightarrow \bar{X}$ est
+encore universellement $0$-acyclique (\resp\ldots), on se ramène
+immédiatement par (\hyperrefext[XII][XII.prop4.4]{4.4} (ii)) à démontrer le théorème pour le
+morphisme $i$, c'est-à-dire, on est ramené au cas où $f$ est une
+immersion ouverte. Alors le théorème est conséquence de la définition
+\hyperrefext[XV][XV.prop1.10]{1.10} (ii).
+
+Traitons maintenant le cas général. L'assertion est locale sur $Y$, et
+on peut donc supposer $Y$ affine.
+
+\begin{enonce*}{Lemme 1.3}\etiquette[1.3]{XVI.lem1.3}
+On peut de plus supposer $X$ affine.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. Procédant comme dans \hyperrefext[XII][XII.lem6.1]{6.1}, on est réduit,
+pour prouver \hyperref[XVI.thm1.1]{1.1} pour un $f$ donné, à le prouver dans la situation
+déduite\pageoriginale de la situation donnée par des changements de
+base $\widetilde{Y}\rightarrow Y$, $\widetilde{Y}'\rightarrow Y'$,
+pour un morphisme local $\widetilde{g}:\widetilde{Y}'\rightarrow
+\widetilde{Y}$ de localisés stricts de $Y'$, $Y$ induit par $g$, et à
+prouver que les homomorphismes
+\begin{equation*}
+H^{q}(\widetilde{X},F)\longrightarrow H^{q}(\widetilde{X}',F')\quad
+(\mbox{\rm où } F'={g'}^{\ast}(F))\tag{$\ast$}
+\end{equation*}
+sont bijectifs pour $q\leq n$, où $\widetilde{X}=\fprod{X}{\widetilde{Y}}{Y}$,
+$\widetilde{X}'=\fprod{X'}{\widetilde{Y}'}{Y'}$. Cela nous ramène donc au cas où
+$Y$, $Y'$, $g$ sont strictement locaux, et à prouver dans ce cas la
+bijectivité des applications précédentes, admettant que
+\hyperref[XVI.thm1.1]{1.1} est prouvé 
+pour $f$ affine. Or soit $(X_i)$ un recouvrement fini de $X$ par des
+ouverts affines $X_i$, et soit $Z$ le schéma somme des $X_i$, qui est
+donc affine et muni d'un morphisme surjectif $h:Z\rightarrow X$, d'où
+un morphisme $h':Z'\rightarrow X'$. Notons que $h$ est séparé, et
+qu'il est affine lorsque $f$ est séparé. Ceci dit, appliquant le lemme
+de descente \hyperrefext[XII][XII.prop6.8]{6.8}, on voit que pour prouver la bijectivité des
+applications $(\ast)$ pour $q\leq n$ et pour tout $F$, il suffit de
+prouver la bijectivité des applications correspondantes
+$H^{q}(Z,h^{\ast}(F))\rightarrow H^{q}(Z',{h'}^{\ast}(F'))$, à
+condition que les homomorphismes de changement de base, pour
+$Z\rightarrow X$ et le changement de base $X'\rightarrow X$, soient
+des isomorphismes en dimension $\leq n$. Or si $f$ est séparé, donc
+$h$ est affine, il en est ainsi par hypothèse, ce qui prouve \hyperref[XVI.thm1.1]{1.1}
+lorsque $f$ est supposé séparé. Dans le cas général, on peut alors
+appliquer le résultat précédent à $h$ qui est toujours séparé, et on
+conclut encore que \hyperref[XVI.thm1.1]{1.1} est vrai pour $f$, ce qui prouve \hyperref[XVI.lem1.3]{1.3}.
+
+\begin{enonce*}[remark]{Remarque}
+On pourrait aussi invoquer la suite spectrale de Leray pour le
+recouvrement ouvert $(X_i)$ de $X$, et ses variantes non
+commutatives,\pageoriginale mais cette méthode, qui n'est pas
+essentiellement différente du recours à \hyperrefext[XII][XII.prop6.8]{6.8}, a le désavantage de
+nous obliger à distinguer à nouveau les trois cas habituels, travail
+qui a déjà été fait dans \loccit
+\end{enonce*}
+
+Pour achever la démonstration du théorème dans le cas général, il
+suffit de ramener la démonstration au cas où $f:X\rightarrow Y$ est
+affine et de type fini, donc quasi-projectif. D'après \hyperref[XVI.lem1.3]{1.3}, on peut
+supposer $X$ affine. Soit alors $X=\varprojlim X_{\alpha}$, où
+$f_{\alpha}:X_{\alpha}\rightarrow Y$ sont des schémas affines et de
+type fini sur $Y$. On termine avec la technique de passage à la limite
+habituelle (\hyperrefext[VII][VII.sec5]{5}).
+
+\begin{enonce*}[remark]{Compléments 1.4}\etiquette[1.4]{XVI.compl1.4}
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\item Nous laissons au lecteur le soin de constater que la même
+  démonstration donne encore une conclusion lorsqu'on suppose que $g$
+  est universellement localement $(-1)$-acyclique (\hyperrefext[XV][XV.rems1.14]{1.14}): dans ce
+  cas, l'homomorphisme de changement de base
+$$
+\phi^{0}:g^{\ast}(f_{\ast}(F))\longrightarrow f'_{\ast}({g'}^{\ast}(F))
+$$
+est \emph{injectif} pour tout faisceau d'ensembles $F$ sur
+$X$. D'autre part, supposons à nouveau $n\geq 0$, on peut compléter
+\hyperref[XVI.thm1.1]{1.1} par l'énoncé d'injectivité suivant, contenu également dans la
+démonstration qui précède: si $g$ est universellement localement
+$0$-acyclique, alors pour tout faisceau en groupes $F$ sur $X$,
+l'homomorphisme de changement de base $\phi^{1}$ de \hyperref[XVI.thm1.1]{1.1} est un
+monomorphisme; si $g$ est universellement localement $n$-acyclique
+pour $\LL$, alors l'homomorphisme $\phi^{n+1}$ de \hyperref[XVI.thm1.1]{1.1} est un
+monomorphisme pour tout faisceau abélien de $\LL$-torsion $F$
+sur $X$.
+
+\item Il\pageoriginale est sans doute possible de donner également une
+  conclusion d'injectivité analogue à partir de l'hypothèse de
+  $1$-asphéricité locale pour $\LL$ de $g$, en introduisant les
+  invariants de $2$-cohomologie non commutative de la thèse de \textsc{Giraud},
+  comparer \hyperrefext[XII][XII.subsec5.11]{5.11} \footnote[1]{C'est ce qui est effectivement
+  établi dans le livre de J. Giraud.}; la même question se pose
+  également pour (\hyperref[XVI.cor1.6]{1.6}) et (\hyperref[XVI.cor2.3]{2.3}) ci-dessous.
+\end{enumerate}
+\end{enonce*}
+
+%raghu
+\begin{enonce*}{Corollaire 1.5}\etiquette[1.5]{XVI.cor1.5}
+Soit $K/k$ une extension de corps, et soit
+$\LL=\PP-\{p\}$, où $p= \car k$. Alors $\Spec
+(K)\rightarrow \Spec (k)$ est universellement localement acyclique
+pour $\LL$ et universellement localement $1$-asphérique pour
+$\LL$; si $k$ et $K$ sont séparablement clos, alors le
+morphisme précédent est également universellement acyclique pour
+$\LL$ et universellement $1$-asphérique pour $\LL$.
+\end{enonce*}
+
+Notons tout de suite la conséquence suivante de (\hyperref[XVI.cor1.5]{1.5}):
+
+\begin{enonce*}{Corollaire 1.6}\etiquette[1.6]{XVI.cor1.6}
+Soient $K/k$ une extension de corps séparablement clos, $X$ un schéma,
+$F$ un faisceau d'\sisi{ensemble}{ensembles} (\resp de ind-$\LL$-groupes, \resp
+de groupes abéliens de $\LL$-torsion) sur $X$, où
+$\LL=\PP-\{p\}$, $p=\car k$. Alors l'application
+$$
+H^{q}(X,F)\longrightarrow H^{q}(X_{K},F_{K})
+$$
+est bijective pour $q=0$ (\resp pour $q\leq 1$, \resp pour tout $q$).
+\end{enonce*}
+
+Cela résulte en effet aussitôt du fait que $\Spec(K)\rightarrow
+\Spec(k)$ est universellement acyclique pour $\LL$ et
+universellement $1$-asphérique pour $\LL$, et des
+définitions.\sisi{---~}{~}Notons qu'on peut interpréter aussi l'homomorphisme
+précédent sur les $H^{q}$ comme s'identifiant, par \hyperrefext[VIII][VIII.cor2.4]{2.4}\sisi{}{,}
+à l'homomorphisme de changement de base
+$$
+g^{\ast}(R^{q}f_{\ast}(F))\longrightarrow
+R^{q}{f'}_{\ast}({g'}^{\ast}(F)){\quoi},
+$$
+où\pageoriginale $f:X\rightarrow \Spec(k)$, $f':X_K\rightarrow
+\Spec(K)$, $g:\Spec(K)\rightarrow \Spec(k)$ et $g':X_K\rightarrow X$
+sont les morphismes évidents. Donc lorsque $X$ est quasi-compact et
+quasi-séparé, la bijectivité de ces homomorphismes peut aussi être
+considérée, grâce à \hyperref[XVI.thm1.1]{1.1}, comme conséquence du fait que
+$\Spec(K)\rightarrow \Spec(k)$ est universellement \emph{localement}
+acyclique pour $\LL$ et universellement localement
+$1$-asphérique pour $\LL$. Ce dernier fait implique donc déjà
+\hyperref[XVI.cor1.6]{1.6} pour $X$ quasi-compact et quasi-séparé, ce qui suffit
+manifestement à entraîner que $\Spec (K)\rightarrow \Spec(k)$ est
+universellement acyclique pour $\LL$ et universellement
+$1$-asphérique pour $\LL$ (\hyperrefext[XV][XV.def1.7]{1.7}, \hyperrefext[XV][XV.prop1.6]{1.6} (i)).
+
+Ceci montre donc que pour prouver \hyperref[XVI.cor1.5]{1.5}, il suffit de prouver la
+première assertion de \hyperref[XVI.cor1.5]{1.5}. Quitte à passer à la clôture parfaite de
+$k$, ce qui est licite par \hyperrefext[VIII][VIII.thm1.1]{1.1},
+on peut alors supposer $k$ \emph{parfait}. Toute extension $K$ de $k$ est limite inductive de ses
+sous-algèbres $A$ de type fini sur $k$, et $k$ étant parfait, quitte à
+localiser un tel $A$, on peut le supposer lisse, de sorte que $K$
+apparaît comme limite inductive filtrante de sous-algèbres lisses. Ces
+dernières étant universellement localement acycliques pour
+$\LL$ et universellement localement $1$-asphériques pour
+$\LL$ en vertu de \hyperrefext[XV][XV.thm2.1]{2.1}, on conclut grâce à \hyperrefext[XV][XV.prop1.13]{1.13} (ii),
+\cqfd
+
+\begin{enonce*}[remark]{Remarque 1.7}\etiquette[1.7]{XVI.rem1.7}
+On comparera le théorème d'invariance \hyperref[XVI.cor1.5]{1.5} à
+\hyperrefext[XII][XII.cor5.4]{5.4}, où on n'a pas eu à supposer le faisceau de torsion
+envisagé premier aux caractéristiques résiduelles, mais où en revanche
+on doit supposer $X$ \emph{propre} sur $k$. Déjà dans le cas de
+$H^{1}$ $(X,\ZZ/p\ZZ)$, où $X$\pageoriginale est une courbe algébrique
+affine (par exemple la droite affine) sur un corps algébriquement clos
+$k$ de car. $p>0$, l'analogue des énoncés précédents devient faux, à
+cause des phénomènes de « ramification immodérée\nde{=sauvage XXX} » à l'infini,
+impliquant que dans un tel cas la classification des revêtements
+étales principaux de groupe $\ZZ/p\ZZ$ est essentiellement « continue ».
+\end{enonce*}
+
+\section{Théorème de spécialisation des groupes de cohomologie}\etiquette[2]{XVI.sec2}
+
+\begin{enonce*}{Théorème 2.1}\etiquette[2.1]{XVI.thm2.1}
+Soient $\LL\subset \PP$, $n\in \NN$, et soit
+$f:X\rightarrow Y$ un morphisme de présentation finie propre
+\footnote[1]{Pour une hypothèse moins restrictive que celle de
+  propreté permettant d'obtenir les mêmes conclusions, \cf \SGA 5 II 3
+et \SGA 1 XIII.} et localement $0$-acyclique (\resp
+\sisi{loc.}{localement} $1$-asphérique pour $\LL$, \resp \sisi{loc.}{localement} $n$-acyclique pour
+$\LL$). Soit $F$ un faisceau d'ensembles (\resp de
+\emph{ind}-$\LL$-groupes, \resp abélien de
+$\LL$-torsion) constructible et localement constant sur
+$X$. Alors les $R^{q}f_{\ast}F$ sont constructibles et \emph{localement
+constants} pour $q=0$ (\resp pour $q=0$, $1$, \resp pour $q\leq n$) et
+pour tout point géométrique $\bar{y}$ de $Y$, on a
+$$
+(R^{q}f_{\ast}F)_{\bar{y}}\simeq
+H^{q}(X_{\bar{y}},F_{\bar{y}}){\quoi},
+$$
+pour ces mêmes valeurs de $q$. 
+\end{enonce*}
+
+\begin{enonce*}[remark]{Remarque}
+Notons que la dernière assertion n'est que le théorème de changement
+de base pour un morphisme propre \hyperrefext[XII][XII.cor5.2]{5.2}.
+\end{enonce*}
+
+Compte tenu de \hyperrefext[XV][XV.thm2.1]{2.1}, on a immédiatement le corollaire suivant:\pageoriginale
+
+\begin{enonce*}{Corollaire 2.2}\etiquette[2.2]{XVI.cor2.2}
+(Théorème de spécialisation pour les groupes de cohomologie). Soit
+  $f:X\rightarrow Y$ un morphisme propre et lisse, et
+  $\LL\subset \PP$ l'ensemble complémentaire à
+  l'ensemble des caractéristiques résiduelles de $Y$. Soit $F$ un
+  faisceau d'ensembles (\resp de ind-$\LL$-groupes, \resp
+  abélien de $\LL$-torsion) constructible sur $X$. Alors les
+  $R^{q}f_{\ast}(F)$ sont constructibles et \emph{localement
+  constants} pour $q=0$ (\resp pour $q=0$, $1$, \resp pour tout $q$),
+  et pour tout point géométrique $\bar{y}$ de $Y$, on a
+$$
+R^{q}f_{\ast}(F)_{\bar{y}}\simeq H^{q}(X_{\bar{y}},F_{\bar{y}})
+$$
+pour ces mêmes valeurs de $q$.
+\end{enonce*}
+
+\begin{enonce*}[remark]{Remarque}
+Prenant $n=1$, et traduisant en termes de groupes fondamentaux, on
+retrouve (\SGA 1 X 3.8) comparant les groupes fondamentaux des fibres
+d'un morphisme propre et lisse.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration de} \hyperref[XVI.thm2.1]{2.1}. Puisqu'on sait déjà que les
+$R^{q}f_{\ast}(F)$ sont constructibles \hyperrefext[XIV][XIV.thm1.1]{1.1}, il suffit grâce à 
+\hyperrefext[IX][IX.prop2.11]{2.11} de prouver que pour tout morphisme de spécialisation
+$\bar{y}_1\rightarrow \bar{y}_{0}$ de points géométriques de $Y$,
+le morphisme de spécialisation correspondant (\hyperrefext[VIII][VIII.subsec7.7]{7.7})
+\begin{equation*}
+R^{q}f_{\ast}(F)_{\bar{y}_{0}}\longrightarrow
+R^{q}f_{\ast}(F)_{\bar{y}_1}\tag{$\ast$}
+\end{equation*}
+est bijectif pour les valeurs de $q$ envisagées. Or on a à ce sujet le
+résultat un peu plus général suivant (où il est inutile de
+supposer\pageoriginale $f$ de présentation finie et $F$ constructible):
+
+\begin{enonce*}{Corollaire 2.3}\etiquette[2.3]{XVI.cor2.3}
+Soient $\LL\subset \PP$, $n\in \NN$,
+$f:X\rightarrow Y$ un morphisme propre et localement $0$-acyclique
+(\resp localement $1$-asphérique pour $\LL$, \resp localement
+$n$-acyclique pour $\LL$), $F$ un faisceau d'ensembles (\resp
+de ind-$\LL$-groupes, \resp abélien de $\LL$-torsion)
+sur $X$, qui est localement constant. Alors pour tout morphisme de
+spécialisation $\bar{y}_1\rightarrow \bar{y}_0$ de points géométriques
+de $Y$, l'homomorphisme de spécialisation correspondant $(\ast)$
+ci-dessus est bijectif pour $q=0$ (\resp pour $q=0$, $1$, \resp pour
+$q\leq n$). De plus, dans le cas $n=0$ \ie $f$ localement
+$0$-acyclique, pour tout faisceau de groupes localement constant $F$
+sur $X$, l'homomorphisme $R^{1}f_{\ast}(F)_{\bar{y}_0}\rightarrow
+R^{1}f_{\ast}(F)_{\bar{y}_1}$ est injectif; si $n$ est quelconque,
+pour tout faisceau abélien de $\LL$-torsion $F$ localement
+constant sur $X$, l'homomorphisme de spécialisation $(\ast)$ est
+injectif pour $q=n+1$.
+\end{enonce*}
+
+Il existe un schéma strictement local intègre $Y'$, et un morphisme
+$g:Y'\rightarrow Y$ appliquant le point fermé $y'_0$ en $y_{0}$, le point
+générique en $y'_1$: il suffit par exemple de prendre d'abord le
+localisé strict de $Y$ relativement à $\bar{y}_0$, puis son
+sous-schéma fermé intègre défini par un point au-dessus de $y_1$. De
+plus, quitte à remplacer $Y'$ par son normalisé dans une clôture
+algébrique de son corps des fonctions, on peut supposer $Y'$ normal et
+$k(y'_1)$ algébriquement clos, de sorte que $y'_0$ et $y'_1$ sont des
+points géométriques de $Y'$. Utilisant le théorème de changement de
+base (\hyperrefext[XII][XII.thm5.1]{5.1}) pour $(f,F,g)$, on est ramené, pour prouver \hyperref[XVI.cor2.3]{2.3}, à le
+faire en remplaçant\pageoriginale $Y$, $\bar{y}_0$, $\bar{y}_1$ par
+$Y'$, $y'_0$, $y'_1$, ce qui nous ramène à prouver 2.3 dans le cas où
+$Y$ est normal et strictement local, et où $\bar{y}_0$ et $\bar{y}_1$
+sont respectivement son point fermé $y_0$ et son point générique
+$y_1$. D'ailleurs, utilisant \hyperrefext[XII][XII.sec4]{4}, on voit que l'homomorphisme de
+spécialisation $(\ast)$ s'identifie alors à l'homomorphisme
+$$
+H^{q}(X,F)\longrightarrow H^{q}(X_1,g^{\ast}_1(F)){\quoi},
+$$
+où $X_1=X_{y_1}$ et où $g:y_1\rightarrow Y$ et $g_1:X_1\rightarrow X$
+sont les morphismes canoniques. Notre assertion provient alors du
+lemme suivant (où on ne suppose plus $f$ propre):
+
+\begin{enonce*}{Lemme 2.4}\etiquette[2.4]{XVI.lem2.4}
+Avec les notations préliminaires de $2.3$, abandonnons l'hypothèse de
+propreté sur $f$, supposons en revanche $Y$ normal intègre, de point
+générique $y_1$ tel que $k(y_1)$ soit séparablement clos, et soient
+$X_1=X_{y_1}$, $g_1:X_1\rightarrow X$ le morphisme canonique. Alors
+l'homomorphisme
+\begin{equation*}
+H^{q}(X,F)\longrightarrow H^{q}(X_1,g^{\ast}_1(F))\tag{${\ast}{\ast}$}
+\end{equation*}
+est bijectif pour $q=0$ (\resp bijectif pour $q=0$, $1$, \resp
+bijectif pour $q\leq n$, injectif pour $q=n+1$). De plus, dans le cas
+$n=0$ \ie $f$ localement $0$-acyclique, pour tout faisceau en groupes $F$
+sur $X$, l'homomorphisme $({\ast}{\ast})$ est injectif pour $q=1$.
+\end{enonce*}
+
+Un argument immédiat (\hyperrefext[XV][XV.prop1.6]{1.6} (i) $\Rightarrow$ (ii)) montre qu'il
+suffit de prouver la relation
+$$
+% correction SGA4-CORR-0140 / SGA-SRC-000815: SGA4-T3-XVI-G1STAR-A29ED233.
+F\xrightarrow{\sim} \sisi{g_{1_{\ast}}}{g_{1\ast}}g_1{}^{\ast}(F){\quoi},
+$$
+et\pageoriginale pour $n\geq 1$, les relations supplémentaires
+$$
+R^{q}\sisi{g_{1_{\ast}}}{g_{1\ast}}g_1{}^{\ast}(F)=0\quad\mbox{\rm pour}\quad 1\leq
+q\leq n{\quoi}.
+$$
+Ces relations étant locales sur $X$ pour la topologie étale, et $F$
+étant localement constant pour la topologie étale, on peut supposer
+$F$ constant, donc de la forme $G_X$, où $G$ est un ensemble (\resp un
+ind-$\LL$-groupe, \resp un groupe abélien de
+$\LL$-torsion). Notons d'autre part que l'hypothèse que \sisi{$X$}{$Y$} est
+normal implique $g_{\ast}(G_{y_1})\xleftarrow{\sim}G_Y$ (\hyperrefext[IX][IX.lem2.14.1]{2.14.1}),
+et l'hypothèse que $k(y_1)$ est séparablement clos implique que les
+$R^{q}g_{\ast}(G_{y_1})$ sont nuls pour $q\geq 1$. D'autre part,
+l'hypothèse que $g$ est localement $0$-acyclique (\resp\ldots)
+implique que la formation des $R^{q}g_{\ast}(G_y)$ commute au
+changement de base $f:X\rightarrow Y$ pour $q\leq n$, compte tenu du
+fait que l'on peut supposer $Y$ affine, et qu'alors $y_1$ apparaît
+comme limite projective de ses voisinages ouverts affines, qui sont
+quasi-compacts dans $Y$, de sorte qu'on peut appliquer la définition
+\hyperrefext[XV][XV.def1.11]{1.11} et la théorie du passage à la limite \hyperrefext[VII][VII.sec5]{5}.
+On en conclut qu'on a bien
+$$
+G_X\xrightarrow{\sim} \sisi{g_{1_{\ast}}}{g_{1\ast}}(G_{X_1})\quav
+R^{q}\sisi{g_{1_{\ast}}}{g_{1\ast}}(G_{X_{1}})=0\quad\mbox{\rm pour}\quad 1\leq q\leq
+n{\quoi},
+$$
+ce qui achève la démonstration de \hyperref[XVI.lem2.4]{2.4} et par suite de \hyperref[XVI.thm2.1]{2.1}.
+
+\begin{enonce*}[remark]{Remarque}
+La démonstration qui précède, via \hyperref[XVI.lem2.4]{2.4}, plus simple que notre
+démonstration initiale, est due à M. Lubkin.
+\end{enonce*}
+
+\begin{enonce*}{Corollaire 2.5}\etiquette[2.5]{XVI.cor2.5}
+Sous les conditions de $2.1$, supposons $Y$ connexe, et soit $q\leq
+n$. Alors les $H^{q}(X_{\bar{y}},F)$, pour les points
+géométriques\pageoriginale $y$ de $Y$, sont tous isomorphes entre eux.
+\end{enonce*}
+
+\section{Le théorème de pureté cohomologique relatif}\etiquette[3]{XVI.sec3}
+
+\begin{enonce*}{Définition 3.1}\etiquette[3.1]{XVI.def3.1}
+Soit $S$ un schéma. On appelle \emph{$S$-couple lisse} $(Y,X)$ une
+$S$-immersion fermée $i:Y\rightarrow X$ de $S$-préschémas lisses,
+c'est-à-dire, un diagramme commutatif de préschémas
+$$
+\xymatrix@=1.25cm{
+Y \ar[rr]^{i} \ar[rd]_{h}&     &X\ar[ld]^{f}\\
+  & S   &
+}
+$$
+tel que $f$ et $h$ soient lisses et que $i$ soit une immersion
+fermée. On notera $U=X-Y$, $j:U\rightarrow X$ l'immersion ouverte, et
+$g:U\rightarrow S$ le morphisme structural. On appelle
+\emph{codimension} de $(Y,X)$ en un point $y\in Y$ la codimension en
+$y$ de la fibre $Y_s$ dans $X_s$, où $s=h(y)$.
+\end{enonce*}
+
+La codimension est donc une fonction localement constante sur
+$Y$. Nous indiquerons par la phrase « $(Y,X)$ est de
+codimension~$c$ » que cette fonction est même constante, \sisi{à}{de} valeur~$c$. % ?
+
+Soient $(Y,X)$ un $S$-couple lisse et $y\in Y$. Rappelons (\SGA II
+4.10) qu'il existe des entiers $m$ et $n$, un voisinage $X'$ de $y$
+dans $X$, et un morphisme étale
+$$
+\phi:X'\longrightarrow \EE^n_S=\Spec \Oo_S[t_1,\ldots,t_n]
+$$
+tels\pageoriginale que $Y'=Y\cap X'$ soit l'image inverse du
+sous-schéma fermé $\EE^m_S$ défini par les équations
+$$
+t_{m+1}=\ldots=t_n=0{\quoi}.
+$$
+On peut exprimer ce résultat en disant que \emph{localement pour la
+  topologie étale, chaque $S$-couple lisse $(Y,X)$ est isomorphe au
+  couple standard $(\EE^m_S, \EE^n_S)$ pour $m$ et $n$
+  convenables,} où
+$$
+\EE^r_S=\Spec \Oo_S[t_1,\ldots,t_r]{\quoi}.
+$$
+
+Dans le présent numéro, on se propose de calculer les faisceaux de
+cohomologie locale $\HH^q_Y(X,F)=(R^{q}i^{!})F$ (\sisi{\hyperrefext[V][V.sec4]{4}}{\hyperrefext[V][V.sec6]{6}} et \hyperrefext[VIII][VIII.subsec6.6]{6.6})
+pour un $S$-couple lisse $(Y,X)$, à valeurs dans un faisceau abélien de
+torsion localement constant $F$ premier aux caractéristiques
+résiduelles. Nous commençons par des considérations préliminaires:
+
+\begin{enonce*}{Proposition 3.2}\etiquette[3.2]{XVI.prop3.2}
+Soit
+$$
+\xymatrix@=1.25cm{
+U \ar[rr]^{j} \ar[rd]_{g}&     &X\ar[ld]^{f}\\
+  & S   &
+}
+$$
+un diagramme commutatif, où $f$ est lisse, et $j$ est une immersion
+ouverte telle que la fibre $U_s$ soit dense dans $X_s$ pour chaque
+$s\in S$. Soit $F$ un faisceau d'ensembles sur $S$. Alors le morphisme
+canonique
+$$
+f^{\ast}F\longrightarrow j_{\ast}g^{\ast}F=j_{\ast}j^{\ast}f^{\ast}F
+$$
+est bijectif.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}.\pageoriginale On se réduit facilement au cas où $U$ est
+rétrocompact dans $X$. Soit $\bar{s}$ un point géométrique de $S$,
+$\bar{x}$ un point géométrique de $X$ au-dessus de $\bar{s}$,
+$\widetilde{f}:\widetilde{X}\rightarrow \widetilde{S}$ le morphisme
+des localisés stricts de $S$, $X$ en des points géométriques
+correspondants, et $\widetilde{U}=\fprod{U}{\widetilde{X}}{X}$. On a,
+avec les notations évidentes,
+$$
+(f^{\ast}F)_{\bar{x}}=H^{0}(\widetilde{X},\widetilde{f}^{\ast}\widetilde{F})\simeq
+H^{0}(\widetilde{S},\widetilde{F}){\quoi}.
+$$
+Par suite il suffit de démontrer que
+$\widetilde{g}:\widetilde{U}\rightarrow \widetilde{S}$ est
+$0$-acyclique, ce qui impliquera
+$$
+(j_{\ast}g^{\ast}F)_{\bar{x}}\simeq
+H^{0}(\widetilde{U},\widetilde{g}^{\ast}\widetilde{F})\simeq
+H^{0}(\widetilde{S},\widetilde{F}){\quoi}.
+$$
+Puisque $\widetilde{g}$ est limite de morphismes lisses, il est
+localement $0$-acyclique (\hyperrefext[XV][XV.thm2.1]{2.1}, \hyperrefext[XV][XV.def1.11]{1.11}), 
+et par \hyperrefext[XV][XV.cor1.12]{1.12} il suffit de
+démontrer que les fibres géométriques de $\widetilde{U}/\widetilde{S}$
+sont $0$-acycliques, c'est-à-dire connexes et non-vides. Soit
+$\bar{s}'$ un point géométrique de $\widetilde{S}$. Alors la fibre
+$\widetilde{X}_{\bar{s}'}$ est régulière, connexe et non vide, et il
+résulte de l'hypothèse que $\widetilde{U}_{\bar{s}'}$ est un ouvert
+dense de $\widetilde{X}_{\bar{s}'}$, donc connexe et non-vide, d'où le
+résultat.
+
+\begin{enonce*}{Corollaire 3.2.1}\etiquette[3.2.1]{XVI.cor3.2.1}
+Sous les conditions de \hyperref[XVI.prop3.2]{3.2}, le foncteur $X'\mapsto X'|U$ de la
+catégorie des revêtements étales de $X$ dans la catégorie des
+revêtements étales de $U$ est pleinement fidèle. En particulier, pour
+tout groupe fini $G$, l'application de restriction
+$$
+H^{1}(X,G)\longrightarrow H^{1}(U,G)
+$$
+est injective. 
+\end{enonce*}
+  
+Cela\pageoriginale résulte de \hyperref[XVI.prop3.2]{3.2}, via un argument standard que nous
+allons, pour la commodité des références, expliciter en un 
+
+\begin{enonce*}{Lemme 3.2.2}\etiquette[3.2.2]{XVI.lem3.2.2}
+Soit $f:X\rightarrow Y$ un morphisme de schémas, et soit
+$f^{\ast}:\Et(Y)\rightarrow \Et(X)$ le foncteur image inverse
+$Y'\mapsto \fprod{Y'}{X}{Y}$ de la catégorie $\Et(Y)$ des revêtements
+étales de $Y$ dans $\Et(X)$. Conditions équivalentes:
+\begin{itemize}
+\item[(i)] $f^{\ast}$ est fidèle (\resp pleinement fidèle).
+
+\item[(ii)] Pour tout revêtement étale $Y'$ de $Y$, désignant par
+  $f':X'\rightarrow Y'$ le morphisme déduit de $f$ par changement de
+  base $Y'\rightarrow Y$, l'application $U\mapsto {f'}^{-1}(U)$ de
+  l'ensemble des parties à la fois ouvertes et fermées des $Y'$ dans
+  l'ensemble des parties à la fois ouvertes et fermées de $X'$ est
+  injective (\resp bijective).
+
+\item[(ii bis)] Avec les notations de {\rm(ii)}, pour tout faisceau
+  d'ensembles constant $C$ sur $Y'$, l'application canonique
+$$
+H^{0}(Y',C)\longrightarrow H^{0}(X',{f'}^{\ast}C)
+$$
+est injective (\resp bijective).
+
+\item[(iii)] Avec les notations de {\rm(ii)}, l'application canonique
+$$
+\Gamma(Y'/Y)\longrightarrow \Gamma(X'/X)
+$$
+est injective (\resp bijective).
+\end{itemize}
+\end{enonce*}
+
+La démonstration est laissée au lecteur (\cf \SGA 2, IX 3.1 et 3.2).
+
+\begin{enonce*}[remark]{Remarques 3.2.3}\etiquette[3.2.3]{XVI.rems3.2.3}
+On\pageoriginale peut considérablement généraliser \hyperref[XVI.prop3.2]{3.2}, tant en termes
+de faisceaux d'ensembles, en affaiblissant les hypothèses sur $f$,
+qu'en termes de faisceaux de groupes avec des conclusions sur les
+$R^{q}g_{\ast}(f^{\ast}F)$ (\cf \SGA 2 XIV 1 et \SGA 1 XIII). Remarque
+analogue pour \hyperref[XVI.cor3.4]{3.4} à \hyperref[XVI.cor3.6]{3.6}.
+\end{enonce*}
+
+« Rappelons »  aussi le théorème de pureté de Zariski-Nagata
+sous sa forme relative:
+
+\begin{enonce*}{Théorème 3.3}\etiquette[3.3]{XVI.thm3.3}
+(Théorème de pureté relatif). Soit
+$$
+\xymatrix@=1.25cm{
+U \ar[rr]^{j} \ar[rd]_{g}&     &X\ar[ld]^{f}\\
+  & S   &
+}
+$$
+un diagramme commutatif où $f$ est lisse, et où $j$ est une immersion
+ouverte telle que pour tout $s\in S$, $X_s-U_s$ soit partout de
+codimension $\geq 2$ dans $X_s$. Alors le foncteur $X'\mapsto X'|U$ de
+la catégorie des revêtements étales de $X$ dans la catégorie des
+revêtements étales de $U$ est une \emph{équivalence de catégories.}
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. Que le foncteur soit pleinement fidèle a été vu
+(\hyperref[XVI.cor3.2.1]{3.2.1}). Le fait qu'il soit \sisi{ess.}{essentiellement} surjectif va se déduire du théorème
+classique. On se donne un revêtement étale $U'$ de $U$, il faut
+montrer qu'il se prolonge en un revêtement étale $X'$ de
+$X$. Réduction immédiate facile au cas où $U$ est rétrocompact dans
+$X$, puis au cas où $S$ est affine et de type fini sur $\Spec
+\ZZ$, $X$ un schéma connexe, et $f$ de type fini.
+
+On\pageoriginale procède par récurrence sur $n=\dim S$, l'assertion
+étant conséquence du théorème classique (\SGA 2 X 3.4) dans le cas
+$n=0$. Ayant l'unicité, on peut appliquer la technique de descente de
+\sisi{\SGA IX 4.7}{\SGA 1 IX 4.7} au normalisé $S\leftarrow \bar{S}$ pour se réduire au cas
+$S$ (et donc $X$) normal ($\bar{S}\rightarrow S$ étant fini (\EGA IV
+7.8.3 (iii) (vi)). De plus, quitte à agrandir $U$, on peut supposer
+$U$ maximal parmi les ouverts au-dessus desquels $U'$ peut se
+prolonger, et il faut prouver alors $U=X$. Sinon, soient $x$ un point
+maximal de $X-U$, et $s=f(x)$. Tout revient à prouver qu'on peut
+prolonger $U'$ au-dessus d'un voisinage de $x$. Nous pouvons supposer
+que $\dim \Oo_{S,s}=n\geq 1$ et que le théorème est déjà démontré pour
+la dimension $<n$. Posons $B=\Oo_{X,x}$ et soit $B'$ le normalisé de $B$
+dans l'anneau des fonctions rationnelles sur le revêtement $U'$ de
+$U$; donc $B'$ est une $B$-algèbre finie (\loccit). Il suffit
+évidemment de démontrer que $B'$ est une $B$-algèbre étale.
+
+Soient $A=\Oo_{S,s}$, $0\neq t\in \max A$, $A_{0}=A/tA$,
+$B_{0}=B/tB$. Par hypothèse de récurrence, la restriction du
+revêtement à $U_{0}=U\otimes_A A_{0}$ s'étend à un revêtement
+étale de $\Spec B_{0}$, appelons-le $\Spec
+B^{\ast}_{0}$. Quitte à remplacer $X$ par un revêtement étale
+convenable d'un voisinage de $x$ (ce qui est loisible) on peut
+supposer $\Spec B^{\ast}_{0}$ complètement décomposé sur $\Spec
+B_{0}$. On est ainsi ramené au cas où la $B_{0}$-algèbre
+$B'_{0}$ est complètement décomposée en dehors du point fermé de
+$\Spec B_{0}$. Alors les hypothèses de \hyperrefext[XV][XV.lem3.3]{3.3} sont satisfaites,
+d'où le résultat.
+
+\begin{enonce*}{Corollaire 3.4}\etiquette[3.4]{XVI.cor3.4}
+Mêmes hypothèses que dans \hyperref[XVI.thm3.3]{3.3}. Alors on a
+$(R^{1}j_{\ast})g^{\ast}F=0$ pour chaque faisceau $F$ de groupes
+ind-finis sur $S$.
+\end{enonce*}
+
+Réduction\pageoriginale comme d'habitude au cas $S$ noethérien, $f$ de
+type fini, et $F$ constructible. Soit $0\rightarrow F\rightarrow G$
+une injection de faisceaux de groupes ind-finis sur $S$, et $C=G/F$. Il
+résulte de \hyperref[XVI.prop3.2]{3.2} que le foncteur $j_{\ast}g^{\ast}$ est
+exact, donc que 
+$j_{\ast}g^{\ast}G\rightarrow j_{\ast}g^{\ast}C$ est surjectif, donc
+(\hyperrefext[XII][XII.prop3.1]{3.1}) que $(R^{1}j_{\ast})g^{\ast}F\rightarrow
+(R^{1}j_{\ast})g^{\ast}G$ est injectif. On peut donc remplacer $F$ par
+$G$, et on se ramène ainsi par \hyperrefext[IX][IX.prop2.14]{2.14} et \hyperrefext[VIII][VIII.prop5.5]{5.5}
+au cas où $F=G$ est constant, à valeur un groupe fini ordinaire $G$.
+%% Cette réduction n'est pas parfaitement claire dans le cas non abélien :
+%% donner référence pour R^1 j_* p_*G = p_* R^1 j_*G
+Soit $\bar{x}$ un
+point géométrique de $X$, $\widetilde{X}$ le localisé strict de $X$ en
+$\bar{x}$, et $\widetilde{U}=\fprod{\widetilde{X}}{U}{X}$. Alors il
+résulte de \hyperref[XVI.thm3.3]{3.3} que l'on a
+$$
+(R^{q}j_{\ast}g^{\ast}F)_{\bar{x}}=H^{q}(\widetilde{U},G_{\widetilde{U}})\simeq
+H^{q}(\widetilde{X},G_{\widetilde{X}}){\quoi},
+$$
+et ce dernier est nul, d'où le résultat.
+
+\begin{enonce*}{Lemme 3.5}\etiquette[3.5]{XVI.lem3.5}
+(Lemme d'Abhyankar relatif). Soit $(Y,X)$ un $S$-couple lisse de
+  codimension $1$, tel que $Y$ soit défini par une équation $t=0$ dans
+  $X$. Soient $U=X-Y$ et $V/U$ un revêtement principal galoisien
+  d'ordre $n$ premier aux caractéristiques résiduelles de $Y$. Posons
+  $X'=\Spec \Oo_X[z]/(z^n-t)$, $U'=\fprod{U}{X'}{X}$,
+  $V'=\fprod{V}{X'}{X}$. Alors le revêtement $V'$ s'étend uniquement à
+  un revêtement étale de $X'$.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. Réduction immédiate au cas $S$, $X$, $Y$ affines
+et de type fini sur $\Spec \ZZ$. L'unicité est un cas
+particulier de \hyperref[XVI.cor3.2.1]{3.2.1}. Nous allons déduire l'existence de \hyperrefext[XV][XV.cor1.12]{1.12}:
+soient $\bar{s}$ un point géométrique de $S$ et $\bar{x}$ un point
+géométrique de $Y$ au-dessus de $\bar{s}$. Soient
+$\widetilde{f}:\widetilde{X}\rightarrow \widetilde{S}$ le morphisme
+des localisés stricts correspondants\pageoriginale induit par $f$,
+$\widetilde{U}=\fprod{U}{\widetilde{X}}{X}$, etc\ldots Par descente,
+compte tenu de l'unicité, il suffit évidemment de démontrer que
+$\widetilde{V}'$ s'étend en un revêtement étale de $\widetilde{X}'$,
+c'est-à-dire (puisque $\widetilde{X}'$ n'admet pas de revêtement
+non-trivial) que $\widetilde{V}'$ est un revêtement trivial de
+$\widetilde{U}'$.
+
+Soit
+$\bar{U}=\varprojlim_m\widetilde{U}_{m}=\Spec \Oo_{\widetilde{U}}[t^{1/m}]$,
+où $m$ parcourt l'ensemble des entiers $m$ premiers à la
+caractéristique résiduelle de $\widetilde{X}$. Alors
+$\bar{U}/\widetilde{U}$ est un « revêtement galoisien infini »  de
+groupe abélien $G=\varprojlim_m \ZZ/m\ZZ$, et on voit
+immédiatement qu'il suffit de démontrer que $\bar{U}$ est
+$1$-asphérique pour l'ensemble $\LL\subset \PP$
+complémentaire à la caractéristique résiduelle de $\widetilde{X}$.
+
+Considérons le morphisme $\bar{f}:\bar{U}\rightarrow
+\widetilde{S}$. Il est limite de morphismes lisses, donc localement
+$1$-asphérique pour $\LL$ (\hyperrefext[XV][XV.thm2.1]{2.1}, \hyperrefext[XV][XV.def1.11]{1.11}
+(ii)). D'après \hyperrefext[XV][XV.cor1.12]{1.12}, il suffit de démontrer que les fibres
+géométriques de $\bar{U}/\widetilde{S}$ sont $1$-asphérique pour
+$\LL$. Soit $\bar{s}$ un point géométrique de $\widetilde{S}$. La
+fibre géométrique $\bar{U}_{\bar{s}}$ est limite des fibres
+$(\widetilde{U}_m)_{\bar{s}}$. Par suite il suffit de démontrer que
+chaque revêtement principal galoisien d'un
+$(\widetilde{U}_m)_{\bar{s}}$, d'ordre premier aux \sisi{car. rés.}{caractéristiques résiduelles},
+induit un revêtement trivial de $\bar{U}_{\bar{s}}$. En remplaçant
+$\widetilde{X}$ par
+$\widetilde{X}_m=\Spec \Oo_{\widetilde{X}}[t^{1/m}]$ (qui est
+encore lisse au-dessus de $\widetilde{S}$), on se réduit au cas $m=1$,
+c'est-à-dire, $\widetilde{U}_m=\widetilde{U}$. Soit $V$ un tel revêtement de
+$\widetilde{U}_{\bar{s}}$. Or $\widetilde{X}_{\bar{s}}=Z$ est un
+schéma strictement local régulier, et $W=\widetilde{U}_{\bar{s}}$ est
+l'ouvert complémentaire à un sous-ensemble régulier de codimension
+$1$. On peut donc appliquer le lemme d'Abhyankar sous sa forme usuelle
+(\SGA 1 X 3.6) pour conclure que $V$ induit un
+revêtement\pageoriginale $V_m$ sur $W_m$ qui s'étend en un revêtement
+étale de $Z_m$, pour $m$ convenable. Mais $Z$ donc $Z_m$ étant
+strictement local, il s'ensuit que ce revêtement est trivial, donc
+$V_m$ est un revêtement trivial de $W_m$, \cqfd
+
+\begin{enonce*}[remark]{Remarque 3.5.1}\etiquette[3.5.1]{XVI.rem3.5.1}
+Lorsqu'on ne suppose pas l'ordre $n$ de $G$ premier aux
+caractéristiques résiduelles de $X$, on peut encore prouver ceci: soit
+$m$ le plus grand entier premier aux caractéristiques résiduelles de
+$Y$ qui divise l'ordre de $G$, et supposons que pour chaque point
+$s\in S$, le revêtement $V_s$ de $U_s=X_s-Y_s$ ait, en les points
+maximaux de $Y_s$, des groupes d'inertie d'ordres premiers aux
+caractéristiques résiduelles de $Y$. Alors la conclusion de \hyperref[XVI.lem3.5]{3.5} reste
+valable en prenant $X'=\Spec \Oo_X[z]/(z^m-t)$. On peut aussi
+prendre pour $m$, plus généralement, un multiple commun quelconque des
+ordres des groupes d'inertie qu'on vient d'envisager, supposés
+premiers aux caractéristiques résiduelles correspondantes.
+\end{enonce*}
+
+\begin{enonce*}{Corollaire 3.6}\etiquette[3.6]{XVI.cor3.6}
+(Pureté cohomologique en dimension $1$). Soit $(Y,X)$ un $S$-couple
+  lisse de codimension $1$, et soit $F$ un faisceau de groupes
+  constructible et localement constant sur $X$, d'ordres premiers aux
+  caractéristiques résiduelles de $X$. Alors avec les notations de
+  $3.1$, $(R^{1}j_{\ast})j^{\ast}F$ est localement isomorphe comme
+  faisceau d'ensembles pointés à $i_{\ast}(F_Y/\cint(F_Y))$, où
+  $F_Y=F|Y$ et où $F_Y/\cint(F_Y)$ désigne le quotient de $F_Y$ par
+  les opérations de $F_Y$ sur lui-même par automorphismes intérieurs.
+\end{enonce*}
+
+\begin{enonce*}[remark]{Remarque}
+L'isomorphisme du corollaire \hyperref[XVI.cor3.6]{3.6} n'est pas canonique.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}.\pageoriginale On se ramène immédiatement au cas
+$X$ noethérien et connexe. Puisque l'assertion est locale sur $X$ pour
+la topologie étale, nous pouvons supposer que $F$ est un faisceau
+constant, à valeur un groupe fini ordinaire $G$ d'ordre $m$ premier
+aux caractéristiques résiduelles de $X$, et de plus que
+$𝛍_{mX}\simeq (\ZZ/m\ZZ)_X$. Soit
+$U=X-Y$ et $U'=\Spec \Oo_U[t^{1/m}]$, qui est un revêtement principal
+galoisien « essentiel »  de $U$ de groupe $\ZZ/m\ZZ$
+puisque $𝛍_{mX}\simeq (\ZZ/m\ZZ)_X$. Les revêtements principaux de groupe $G$
+de $U$ qui sont trivialisés sur $U'$ sont classifiés localement sur
+$Y$ par $H=\Hom(\ZZ/m \ZZ,G)$ mod $\cint(G)$, qui est
+un ensemble pointé isomorphe à l'ensemble sous-jacent de
+$G/\cint(G)$. On obtient ainsi un morphisme du faisceau constant $H_Y$
+sur $Y$ dans $(R^{1}j_{\ast})G_{U}$, et il suffit de démontrer qu'il
+est bijectif, ce qui résulte immédiatement de \hyperref[XVI.lem3.5]{3.5}.
+
+\begin{enonce*}{Théorème 3.7}\etiquette[3.7]{XVI.thm3.7}
+\emph{(Pureté cohomologique)}. Soit $(Y,X)$ un $S$-couple lisse de
+codimension $c>0$. Soit $F$ un faisceau abélien sur $X$ localement
+isomorphe (pour la topologie étale) à un faisceau de la forme
+$f^{\ast}(G)$, où $G$ est un faisceau de torsion sur $S$, premier aux
+caractéristiques résiduelles (par exemple $F$ un faisceau localement
+constant de groupes finis d'ordres premiers aux caractéristiques
+résiduelles de $X$). Alors, avec les notations de $3.1$, on a
+\begin{align*}
+&\HH^{q}_Y(X,F)=(R^{q}i^{!})F=0\qquad\mbox{si}\quad q\neq 2c,\\
+&\begin{cases}
+ F\xrightarrow{\sim} j_{\ast}j^{\ast}F\quad\et &\tag{\ie}\\
+(R^{q}j_{\ast})j^{\ast}F=0 &\hspace{1.3cm} \mbox{si}\quad q\neq 0,\quad 2c-1,
+\end{cases}
+\end{align*}
+et\pageoriginale
+$$
+\HH^{2c}_Y(X,F)=i^{\ast}[(R^{2c-1}j_{\ast})j^{\ast}F]
+$$
+est un faisceau localement isomorphe à $i^{\ast}(F)$.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. L'assertion est locale sur $X$ pour la topologie
+étale; on peut donc \footnote[1]{Du moins si $F$ était supposé
+  localement constant. Le lecteur se convaincra que la démonstration
+  qui suit s'applique aussi, essentiellement au cas général.} % syntaxe étrange
+supposer $F$ constant, donc si on veut $F\simeq f^{\ast}(\ZZ/n\ZZ)_S$
+pour le faisceau constant $(\ZZ/n\ZZ)_S$ sur $S$.
+
+Traitons d'abord le cas $c=1$. (L'assertion pour
+$(R^{1}j_{\ast})j^{\ast}F$, dans le cas $F$ localement constant tout
+au moins, résulterait immédiatement de \hyperref[XVI.cor3.6]{3.6}, mais nous allons le
+déduire de nouveau.) Rappelons que $(Y,X)$ est localement isomorphe au
+couple $(\EE^{n-1}_S, \EE^n_S)$, et si l'on remplace $S$
+par $\EE^{n-1}_S$, on se ramène au cas où
+$X=\EE^{1}_S=\Spec \Oo_S[t]$ et où $Y$ est la section $t=0$ de
+$X/S$. La situation est localement isomorphe à l'inclusion de la
+section à l'infini dans l'espace projectif $\PP^{1}_S$. On peut
+donc prendre $X=\PP^{1}_S$, $Y$ la section à l'infini, et
+$U=\EE^{1}_S=X-Y$.
+
+Examinons la suite spectrale de Leray
+$$
+(R^{p}f_{\ast})(R^{q}j_{\ast})(\ZZ/n)\Longrightarrow
+(R^{p+q}g_{\ast})(\ZZ/n){\quoi}.
+$$
+Or l'aboutissement est nul pour $p+q>0$, d'après \hyperrefext[XV][XV.cor2.2]{2.2}. De plus, les
+$R^{q}j_{\ast}$ sont concentrés sur $Y$ si $q>0$, qui s'envoie
+isomorphiquement sur $S$ par $f$, et d'autre part
+$j_{\ast}(F|U)\xleftarrow{\sim}F$ en vertu de \hyperref[XVI.prop3.2]{3.2}. Il s'ensuit que
+$(R^{p}f_{\ast})(R^{q}j_{\ast})=0$ si $p$ et $q>0$, et que
+$f_{\ast}(R^{q}j_{\ast})$ détermine le faisceau $(R^{q}j_{\ast})$ si
+$q>0$, enfin $\sisi{\RR}{R}^{p}f_{\ast}j_{\ast}(F|U)=\sisi{\RR}{R}^{p}f_{\ast}(F)$.
+La suite spectrale se réduit donc à des isomorphismes\pageoriginale
+$$
+f_{\ast}(R^{q}j_{\ast})(F|U)\xrightarrow{\sim}
+(R^{q+1}f_{\ast})(F)\quad\mbox{\rm si}\quad q>0{\quoi}.
+$$
+Mais $(R^{q}f_{\ast})(F)$ se calcule fibre par fibre (\hyperrefext[XII][XII.cor5.2]{5.2}), donc
+est nul si $q\neq 0$, $2$, et est un faisceau localement isomorphe à
+$G$ si $q=2$, comme il résulte aisément de \hyperrefext[XII][XII.cor5.2]{5.2} et \hyperrefext[IX][IX.cor4.7]{4.7}. Donc
+$(R^{q}j_{\ast})(F|U)=0$ si $q\neq 1$, et est un faisceau localement
+isomorphe à $i^{\ast}(F)$ si $q=1$.
+
+Le cas $c>1$ se traite maintenant facilement par récurrence: soit
+$(Y,X)$ un $S$-couple lisse de codimension $c>1$. Il est clair que,
+localement sur $X$, on peut trouver un sous-schéma $Z$ de $X$ de
+codimension 1 qui contient $Y$ et qui est lisse au-dessus de $S$, de
+sorte qu'on ait un diagramme commutatif
+$$
+\xymatrix@=1.25cm{
+Y       \ar[rr]^{u} \ar[rd]_{i}&    & Z\ar[ld]^v            \\
+                  & X &,
+}
+$$
+où chaque couple est un $S$-couple lisse (on devrait appeler $(Y,Z,X)$ un
+$S$-triple lisse), où la codimension de $(Z,X)$ est $1$, et celle de
+$(Y,Z)$ est $c-1$.
+
+Or on a la suite spectrale de foncteurs composés
+$$
+(R^{p}u^{!})(R^{q}v^{!})F\Longrightarrow (R^{p+q}i^{!})F{\quoi}.
+$$
+Par hypothèse de récurrence, $(R^{q}v^{!})F=0$ si $q\neq 2$ et est
+localement isomorphe à $v^{\ast}(F)$ si $q=2$, d'où encore par
+hypothèse de récurrence, appliquée à $(R^{q}v^{!})F$, que
+$(R^{p}u^{!})(R^{q}v^{!})F$ est nul si $(p,q)\neq
+(2c-2,2)$\pageoriginale et est localement isomorphe à
+$u^{\ast}v^{\ast}(F)$ si $(p,q)=(2c-2,2)$, d'où immédiatement le
+résultat pour $(R^{p+q}i^{!})F$, \cqfd
+
+\begin{enonce*}{Corollaire 3.8}\etiquette[3.8]{XVI.cor3.8}
+Soient $(Y,X)$ un $S$-couple lisse de codimension $c$, $n$ un entier
+naturel premier aux caractéristiques résiduelles de $X$, et posons
+$$
+T_{Y/X}=\HH^{2c}_Y(\ZZ/n\ZZ){\quoi},
+$$
+qui est un faisceau sur $Y$ localement isomorphe (pour la topologie
+étale) au faisceau $(\ZZ/n\ZZ)_Y$ en vertu de
+$(3.7)$. Soit $F$ un faisceau abélien sur $X$, annulé par $n$,
+satisfaisant à la condition énoncée dans $3.7$. Alors on a (pour
+mémoire) $\HH^{i}_Y(F)=0$ pour $i\neq 2c$, et de plus on a un
+isomorphisme canonique:
+$$
+\HH^{2c}_Y(F)\simeq i^{\ast}(F)\otimes T_{Y/X}{\quoi}.
+$$
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. On définit aisément un homomorphisme canonique
+$$
+\varphi:i^{\ast}(F)\otimes T_{Y/X}\longrightarrow \HH^{2c}_Y(F)
+$$
+\ie un homomorphisme
+$$
+i^{\ast}(F)\longrightarrow
+\sheaf{\Hom}(\HH^{2c}_Y(\ZZ/n\ZZ),\HH^{2c}_Y(F)){\quoi},
+$$
+en utilisant l'homomorphisme canonique $F\rightarrow
+\sheaf{\Hom}(\ZZ/n\ZZ,F)$. Il reste à prouver que $\varphi$ est
+un isomorphisme, ce qu'on vérifie aisément en suivant la démonstration
+donnée de \hyperref[XVI.thm3.7]{3.7}.
+
+\begin{enonce*}{Corollaire 3.8.1}\etiquette[3.8.1]{XVI.cor3.8.1}
+Sous les conditions de \hyperref[XVI.cor3.8]{3.8}, la formation des
+$\HH^{i}_Y(F)$\pageoriginale commute à tout changement de base
+$S'\rightarrow S$.
+\end{enonce*}
+
+C'est clair.
+
+\begin{enonce*}{Corollaire 3.9}\etiquette[3.9]{XVI.cor3.9}
+(Théorème de pureté cohomologique absolue). Soient $X$ un schéma
+régulier, $Y$ un sous-préschéma fermé régulier de codimension $c$ en
+chaque point. Supposons de plus que $X$ soit localement de type fini
+sur un corps parfait $k$. Alors, si $n$ est premier aux
+caractéristiques résiduelles de $X$, on a
+$$
+\HH^{i}_Y(\ZZ/n\ZZ)=0\mbox{ si } i\neq 2c{\quoi},
+$$
+et $\HH^{2c}_Y(\ZZ/n\ZZ)$ est un faisceau sur $Y$
+localement isomorphe (pour la topologie étale) au faisceau constant
+$\ZZ/n\ZZ$. 
+\end{enonce*}
+
+C'est un cas particulier de \hyperref[XVI.thm3.7]{3.7}, compte tenu que l'hypothèse implique
+que $X$ et $Y$ sont lisses sur $k$.
+
+\begin{enonce*}[remark]{Remarques 3.10}\etiquette[3.10]{XVI.rems3.10}
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\item On peut dans \hyperref[XVI.cor3.8]{3.8} expliciter la structure du faisceau $T_{Y/X}$,
+on trouve qu'il est canoniquement isomorphe au faisceau
+$(𝛍_n)_Y^{\otimes -c}$, où $𝛍_n$
+désigne le faisceau des racines $n$.èmes de l'unité (localement
+isomorphe au faisceau constant
+$\ZZ/n\ZZ$). L'isomorphisme en question est étudié sous
+le nom de \emph{classe fondamentale} locale de $Y$ dans $X$, dans la
+situation un peu plus générale des intersections complètes relatives,
+dans Exp. XVIII consacré à la dualité.
+
+\item Il\pageoriginale est très plausible que les conclusions de
+\hyperref[XVI.cor3.9]{3.9} et de \hyperref[XVI.rems3.10]{3.10} a) restent valables sans
+postuler l'existence d'un corps de base $k$, tout au moins lorsque $X$
+est un préschéma « excellent »\nde{Travaux de Gabber XXX}. C'est ce qui sera établi en tous
+cas dans Exp. XIX lorsque $X$ est de caractéristique nulle, en
+utilisant la résolution des singularités de Hironaka. Comme nous
+verrons dans \SGA 5 on a besoin du « théorème de pureté absolu »
+(ainsi que de la résolution des singularités) notamment pour pouvoir
+établir la « formule de dualité locale », (qui elle-même est un
+des ingrédients majeurs de la formule de \textsc{Lefschetz-Verdier}).
+\end{enumerate}
+\end{enonce*}
+
+\section{Théorème de comparaison de la cohomologie pour les préschémas
+algébriques sur $\CC$.}\etiquette[4]{XVI.sec4}
+
+Soit $X$ un schéma algébrique sur $\Spec \CC$. Nous allons
+comparer les sites étale et classique sur $X$, et nous reprenons les
+notations de \hyperrefext[XI][XI.sec4]{4}. Le théorème de comparaison, qui est la forme
+générale de \hyperrefext[XI][XI.thm4.4]{4.4}, est le suivant:
+
+\begin{enonce*}{Théorème 4.1}\etiquette[4.1]{XVI.thm4.1}
+Soit $f:X\rightarrow S$ un morphisme de type fini de schémas
+localement de type fini sur $\Spec \CC$, de sorte qu'on a un
+diagramme commutatif de morphismes de sites
+$$
+\xymatrix@C=2cm@R=1.5cm{
+X_{\et}  \ar[d]_{f_{\et}}                   &   X_{\cl}
+\ar[l]_{\varepsilon} \ar[d]^{f_{\cl}} \\
+S_{\et}                    &   S_{\cl}\ar[l]_{\varepsilon} 
+}
+$$
+Soit\pageoriginale $F$ un faisceau d'ensembles (\resp de groupes
+ind-finis, \resp abélien de torsion) et supposons qu'on soit dans l'un
+des cas suivants:
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item $f$ propre,
+
+\item $F$ constructible.
+\end{enumerate}
+Alors les morphismes de changement de base \sisi{\emph{XII 4.1.2}}{\hyperrefext[XII][XII.eq4.2]{4.2}}
+\footnote[1]{En fait, nous utilisons l'homomorphisme de changement de
+base sous des conditions plus générales que celles envisagées dans
+Exp. XII, où nous nous étions limités à un carré \emph{cartésien} de
+morphismes de \emph{préschémas}. Le lecteur se convaincra aisément que
+la définition s'étend verbatim à un carré \emph{essentiellement
+commutatif} de morphismes de \emph{sites}. Pour plus de développements
+à ce sujet, voir exposé suivant.}
+$$
+\varphi:\epsilon^{\ast}(R^{q}f_{\et\ast})F\longrightarrow
+(R^{q}f_{\cl\ast})\epsilon {}^{\ast}F
+$$
+sont bijectifs pour $q=0$ (\resp pour $q=0$, $1$, \resp pour $q\geq
+0$).
+\end{enonce*}
+
+Remarquons que le théorème de Grauert-Remmert (\hyperrefext[XI][XI.thm4.3]{4.3} (iii)) que nous
+avions utilisé dans la démonstration de \hyperrefext[XI][XI.thm4.4]{4.4}, est un cas particulier
+de \hyperref[XVI.thm4.1]{4.1}.
+
+Pour\pageoriginale la démonstration, nous traitons d'abord le cas $f$
+propre. Dans ce cas, le résultat sera conséquence de GAGA et du
+théorème de changement de base pour un morphisme propre, par un
+raisonnement élémentaire qui aurait pu figurer dans Exp. XIV. Pour
+traiter le cas général, nous utiliserons de plus la résolution des
+singularités [1] et \hyperref[XVI.thm3.7]{3.7}.
+
+On peut évidemment supposer $S$, donc aussi $X$, de type fini sur
+$\CC$.
+
+\emph{Cas $f$ propre.} Nous rappelons les faits élémentaires suivants:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item L'espace topologique $X_{\cl}$ est localement compact.
+
+\item Si $f:X\rightarrow S$ est propre, alors
+$f_{\cl}:X_{\cl}\rightarrow S_{\cl}$ est une application \emph{propre}
+d'espaces topologiques.
+\end{enumerate}
+
+En effet, (a) est trivial puisque localement $X_{\cl}$ est un fermé
+dans un $\CC^n$. Pour (b) on se ramène par le lemme de Chow au
+cas où $f$ est projectif, ce cas étant trivial.
+
+Soit $F$ un faisceau d'ensembles (\resp\ldots) sur $X_{\et}$. 
+Pour les deux morphismes $f_{\et}$ et $f_{\cl}$, la
+formation des $R^{q}$ commute à la formation des fibres (\hyperrefext[XII][XII.cor5.2]{5.2} et
+\cite{SGA4-16:2} 4.11.1). Il suffit donc de vérifier le théorème fibre par fibre,
+en les points fermés de $S_{\et}$.
+
+Dans le lemme suivant, nous ne supposons pas que $g$ soit propre:
+
+\begin{enonce*}{Lemme 4.2}\etiquette[4.2]{XVI.lem4.2}
+Soit\pageoriginale
+$$
+\xymatrix@=1.5cm{
+X  \ar[rd]_{g}& &\bar{X} \ar[ll]_{h}\ar[ld]^{\bar{g}}\\
+& S &
+}
+$$
+un diagramme commutatif avec $h$ propre, et soit $U$ un ouvert de $X$
+tel que $h$ induise un isomorphisme de l'ouvert
+$\bar{U}=\fprod{U}{\bar{X}}{X}$ de $\bar{X}$ sur $U$. Soient
+$j:U\rightarrow X$ et $\bar{j}:\bar{U}\rightarrow \bar{X}$ les
+inclusions, $F$ un faisceau d'ensembles (\resp\ldots) sur $U$, et
+$\bar{F}$ le faisceau induit sur $\bar{U}$. Si le théorème $4.1$ est
+vrai pour $(\bar{g},\bar{j}_{!}\bar{F})$ il l'est également pour $(g,j_{!}F)$.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. Le théorème est vrai pour
+$(h,\bar{j}_{!}\bar{F})$ parce qu'on est ramené à le vérifier
+fibre par fibre, et on a alors les deux cas suivants: ou bien la
+restriction du faisceau à la fibre est nulle, ou bien le morphisme $h$
+est un isomorphisme. Dans ces deux cas, le résultat est trivial. On
+trouve que
+$$
+\epsilon^{\ast}j_{!}F\simeq \epsilon {}^{\ast}h_{\text{\rm
+et\,}\ast}(\bar{j}_{!}\bar{F})\simeq
+h_{\cl\ast}\epsilon^{\ast}(\bar{j}_{!}\bar{F})
+$$
+et
+$$
+(R^{q}h_{\text{\rm
+et\,}\ast})\bar{j}_{!}\bar{F}=(R^{q}h_{\cl\ast})\varepsilon^{\ast}(\bar{j}_{!}\bar{F})=0\text{ si } q>0
+$$
+pour les valeurs de $q$ envisagées, donc que
+$$
+(R^{q}g_{\text{\rm et\,}\ast})j_{!}F\simeq (R^{q}\bar{g}_{\text{\rm
+et\,}\ast})\bar{j}_{!}\bar{F}
+$$
+et 
+$$
+(R^{q}g_{\cl \ast})j_{!}F\simeq (R^{q}\bar{g}_{\cl
+\ast})\bar{j}_{!}\bar{F}{\quoi},
+$$
+d'où 4.2.\pageoriginale
+
+\begin{enonce*}{Lemme 4.3}\etiquette[4.3]{XVI.lem4.3}
+Pour vérifier \hyperref[XVI.thm4.1]{4.1} pour toutes les données $(f,F)$ avec $f$ propre,
+il suffit de le faire dans le cas où on suppose que de plus $f$ est de
+dimension relative $\leq 1$ et $S=\Spec \CC$ est un point.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. Récurrence sur la dimension relative. Supposons
+le résultat connu en dimension relative $<n$, et que $n>1$. Comme nous
+l'avons remarqué, nous pouvons faire la vérification fibre par fibre,
+c'est-à-dire, nous pouvons supposer que $S=\Spec \CC$ est un
+point, et donc $X$ de dimension $\leq n$. De plus, nous pouvons
+supposer $X$ réduit. Soient $\varphi$ une fonction rationnelle sur $X$
+qui n'est constante sur \sisi{aucun composant}{aucune composante} irréductible de $X$, $U$ un
+ouvert dense de $X$ sur lequel $\varphi$ est défini, et
+$\bar{X}\subset X\times \PP^{1}$ l'adhérence du graphe du
+morphisme $\varphi:U\rightarrow \EE^{1}$. On a un diagramme
+commutatif
+$$
+\xymatrix@R=1.5cm@C=1.5cm{
+&\bar{X}\ar[ld]_{h} \ar[rd]^{a} \ar[dd]^{\bar{g}}   &\\
+X  \ar[rd]_{g}  &                                  &\PP^1 \ar[ld]_{b}\\
+            & **[r]Y              =\Spec \CC&
+}
+$$
+où les dimensions relatives de $a$ et $b$ sont $<n$. Par l'hypothèse
+de récurrence, le théorème est vrai pour $(a,.)$ et $(b,.)$, d'où on
+conclut qu'il l'est également pour $(\bar{g},.)$. En effet, c'est
+trivial pour $q=0$; si $F$ est abélien de torsion sur
+$\bar{X}$, cela résulte\pageoriginale du morphisme de suites
+spectrales de Leray
+$$
+\xymatrix{
+\varepsilon^{\ast}(R^{p}b_{\text{et}\ast})(R^{q}a_{\text{et}\ast})F \ar@{=>}[r] \ar[d]&
+\varepsilon^{\ast}(R^{p+q}\bar{g}_{\text{et}\ast})F  \ar[d]\\
+(R^{p}b_{\text{cl}\ast}(R^{q}{a_{\text{cl}\ast}}))
+\varepsilon^{\ast}F  \ar@{=>}[r] & (R^{p+q}\bar{g}_{\text{cl}\ast})\varepsilon^{\ast}F;
+}
+$$
+si enfin $F$ est un faisceau de groupes ind-finis sur $\bar{X}$,
+notons que puisque $\epsilon^{\ast}(R^{1}\bar{g}_{\text{\rm
+et\,}\ast})$ est un foncteur effaçable, il suffit de démontrer
+(compte tenu du résultat pour $q=0$), que
+$(R^{1}\bar{g}_{\cl\ast})\epsilon^{\ast}$ est également effaçable
+(\cf \hyperrefext[XII][XII.cor8.2]{8.2}), ce qui résulte de la suite exacte
+$$
+0\longrightarrow (R^{1}b_{\cl\ast})a_{\cl
+\ast}\epsilon^{\ast}F\longrightarrow (R^{1}\bar{g}_{\cl
+\ast})\epsilon^{\ast}F\longrightarrow b_{\cl \ast}(R^{1}a_{\cl
+\ast})\epsilon^{\ast}F{\quoi},
+$$
+et du fait que $(R^{1}b_{\cl\ast})\epsilon^{\ast}$ et
+$(R^{1}a_{\cl\ast})\epsilon^{\ast}$ sont effaçables grâce à
+l'hypothèse de récurrence.
+
+Soit maintenant $F$ un faisceau d'ensembles sur $X$. On a
+$F\hookrightarrow h_{\text{\rm et\,}\ast}h_{\et}{}^{\ast}F=G$. Par la suite exacte
+\begin{equation*}
+F\rightarrow G\rightrightarrows G\amalg_F G{\quoi},\tag{4.3.1}
+\end{equation*}\etiquette[4.3.1]{XVI.eq4.3.1}
+on se ramène (pour $q=0$) à démontrer \hyperref[XVI.thm4.1]{4.1} pour $G$, donc pour un
+faisceau de la forme $h_{\text{\rm et\,}\ast}\bar{F}$. Mais pour un
+tel faisceau, le résultat sera conséquence du théorème pour
+$(\bar{g},.)$ et pour $(h,.)$, et $h$ est de dimension relative $<n$,
+comme on voit immédiatement.
+
+Soit $F$ un faisceau abélien de torsion sur $X$. On a la suite exacte
+\begin{equation*}
+0\longrightarrow j_{!}j^{\ast}F\longrightarrow F\longrightarrow
+i_{\ast}i^{\ast}F\longrightarrow 0{\quoi}.\tag{$\ast$}
+\end{equation*}
+Puisque $U$ est dense dans $X$, on a $\dim Y<n$, donc \hyperref[XVI.thm4.1]{4.1} est 
+vrai\pageoriginale pour $(g|Y, i^{\ast}F)$, donc pour
+$(g,i_{\ast}i^{\ast}F)$. Il suffit donc, grâce au lemme des cinq, de
+vérifier \hyperref[XVI.thm4.1]{4.1} pour $(f,j_{!}j^{\ast}F)$, ce qui résulte du théorème
+pour $\bar{g}$ (\hyperref[XVI.lem4.2]{4.2}).
+
+Soit $F$ un faisceau de groupes ind-finis sur $X$. Il suffit de
+démontrer que le foncteur $(R^{1}g_{\cl\ast})\epsilon^{\ast}$ est
+effaçable pour le faisceau $F$, ce qui résulte de ($\ast$) et de
+l'effaçabilité pour $j_{!}j^{\ast}F$ et pour $i_{\ast}i^{\ast}F$,
+\ie du théorème pour $(g,j_{!}j^{\ast}F)$ (\hyperref[XVI.lem4.2]{4.2}) et pour
+$(g,i_{\ast}i^{\ast}F)$ (hypothèse de récurrence), \cqfd
+
+\begin{enonce*}{Lemme 4.4}\etiquette[4.4]{XVI.lem4.4}
+Pour démontrer $(4.1)$ dans le cas où $f$ est propre, il suffit de
+démontrer ceci: soit $X$ une courbe complète régulière sur $\Spec
+\CC$, et $F$ un faisceau constant et constructible d'ensembles
+(\resp\ldots) sur $X$. Alors les morphismes
+$$
+H^{q}(X_{\et},F)\longrightarrow H^{q}(X_{\cl},F)
+$$
+sont bijectifs pour les valeurs de $q$ envisagées.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. Puisqu'il suffit de vérifier le théorème fibre
+par fibre, on est ramené par \hyperref[XVI.lem4.3]{4.3} au cas $X$ propre et de dimension
+$\leq 1$. Le cas de dimension $0$ est d'ailleurs trivial, et il
+résulte de cela que le théorème est vrai pour un morphisme
+fini. Puisque $f$ est propre, la cohomologie de $X_{\et}$ et
+de $X_{\cl}$ commute aux limites inductives (\hyperrefext[VII][VII.prop3.3]{3.3}
+et [2], 4.12.1) et on est donc ramené au cas $F$ constructible (\hyperrefext[IX][IX.prop2.9]{2.9} (iii)).
+
+On applique \hyperrefext[IX][IX.prop2.14]{2.14}. Pour un faisceau d'ensembles, la suite exacte
+\eqhyperref[XVI.eq4.3.1]{4.3.1} et \hyperrefext[IX][IX.prop2.14]{2.14} montrent qu'on peut prendre $F=\pi{}_{\ast}C$,
+où\pageoriginale $\pi:X'\rightarrow X$ est fini, $X'$ est normal, donc
+régulier, et $C$ est un faisceau constant sur $X'$. Pour un faisceau
+abélien de torsion, on prend une résolution de $F$ par des produits
+finis de faisceaux de la forme $\pi_{\ast}C$ et on applique la suite
+spectrale d'une résolution, et on se réduit encore au cas
+$F=\pi_{\ast}C$. Pour un faisceau de groupes ind-finis, on rappelle
+qu'il suffit de démontrer l'effaçabilité de
+$(R^{1}g_{\cl\ast})\epsilon^{\ast}$ pour le faisceau $F$, donc pour un
+faisceau $G$ dans lequel on peut plonger $F$, donc on est encore
+réduit au cas $F=\pi_{\ast}C$. Or il est évident par (\hyperrefext[VIII][VIII.prop5.5]{5.5} et \hyperrefext[VIII][VIII.rem5.8]{5.8})
+qu'on peut maintenant remplacer $X$ par $X'$, d'où le lemme.
+
+Pour traiter ce dernier cas, il suffit évidemment (tenant compte de la
+dimension cohomologique (\sisi{IX 7.7}{\hyperrefext[IX][IX.cor5.7]{5.7}}
+et \cite{SGA4-16:2} 4.14.1)) de démontrer que pour
+une courbe complète et régulière on a
+\begin{itemize}
+\item[$(q=0)$:] $X$ connexe et non-vide $\Leftrightarrow X_{\cl}$
+connexe et non-vide.
+
+\item[$(q=1)$:] Le morphisme de changement de base induit une
+équivalence de la catégorie des revêtements étales de $X$ et de la
+catégorie des revêtements étales analytiques finis de $X_{\cl}$.
+
+\item[$(q=2)$:] On a un isomorphisme
+$\epsilon:H^{2}(X_{\et},𝛍_n)\xrightarrow{\sim}
+H^{2}(X_{\cl},𝛍_n)$.
+\end{itemize}
+
+Or les deux premières assertions résultent immédiatement de GAGA. Pour
+la dernière, notons qu'on a $H^{2}(X_{\et},\GG_m)=0$ (\hyperrefext[IX][IX.eq4.5]{4.5})
+et de même, notant $\Oo^{\ast}$ le faisceau des fonctions
+holomorphes inversibles de $X_{\cl}$, $H^{2}(X_{\cl},\Oo^{\ast})=0$
+(cela résulte de la suite exacte
+$$
+0\longrightarrow \ZZ\longrightarrow \Oo\xrightarrow{\exp}
+\Oo^{\ast}\longrightarrow 0
+$$
+et\pageoriginale du fait que $H^{2}(X_{\cl},\Oo)=H^{2}(X_{\et},\Oo_X)=0$ par GAGA). Par suite la suite exacte de Kummer \hyperrefext[IX][IX.Thr3.2]{3.2}
+(\resp la suite exacte sur $X_{\cl}$
+$$
+0\rightarrow 𝛍_n\rightarrow
+\Oo^{\ast}\xrightarrow{n}\Oo^{\ast}\rightarrow 0)
+$$
+donne 
+\begin{align*}
+& H^{1}(X_{\et}, \GG_m)/n\xrightarrow{\sim}
+H^{2}(X_{\et},𝛍_n)\\
+(\resp & H^{1}(X_{\cl},\Oo^{\ast})/n\xrightarrow{\sim}
+H^{2}(X_{\cl},𝛍_n)){\quoi}.
+\end{align*}
+D'après GAGA, le morphisme canonique
+$$
+H^{1}(X_{\et},\GG_m)=\Pic X\longrightarrow \Pic
+X_{\cl}=H^{1}(X_{\cl},\Oo^{\ast})
+$$
+est bijectif, d'où le résultat, ce qui prouve \hyperref[XVI.thm4.1]{4.1} dans le cas où $f$
+est propre.
+
+\medskip
+\noindent
+\emph{Cas $F$ constructible}. La démonstration se fait par récurrence
+sur $\dim X$. Supposons le résultat connu si la dimension est $<n$, et
+prouvons-le quand la dimension de $X$ est $\leq n$.
+
+\begin{enonce*}{Lemme 4.5}\etiquette[4.5]{XVI.lem4.5}
+On peut supposer $f:X\rightarrow S$ une immersion ouverte dense et $F$
+constant.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. Comme dans la démonstration de \hyperref[XVI.lem1.3]{1.3}, on peut en
+effet supposer $X$ et $S$ affines, donc $f$ quasi-projectif. Alors on
+applique le raisonnement de \hyperref[XVI.lem4.4]{4.4} pour se ramener au cas
+$F=\pi_{\ast}C$, $\pi:X'\rightarrow X$ fini, et $C$ constant, d'où en
+remplaçant $X$ par $X'$, au\pageoriginale cas $F$ constant. 
+On peut remplacer $X$ par $X_{\red}$. Soit
+$$
+\xymatrix@=1.25cm{
+  X  \ar[rr]^{h}\ar[rd]_{f} &      &\bar{X} \ar[ld]^{\bar{f}}\\
+             &     S  &   
+}
+$$
+un diagramme commutatif tel que $\bar{X}$ soit réduit, que $\bar{f}$
+soit projectif, et que $h$ soit  une immersion ouverte dense. Il
+suffit de vérifier le théorème pour les deux morphismes $h$, $\bar{f}$
+(\cf dém. de \hyperref[XVI.lem4.3]{4.3}), donc pour $h$ puisque $\bar{f}$ est propre, donc
+pour une immersion ouverte dense.
+
+\begin{enonce*}{Lemme 4.6}\etiquette[4.6]{XVI.lem4.6}
+On peut de plus supposer $S$ régulier.
+\end{enonce*}
+
+\noindent
+\emph{Démonstration}. Soit $S'\xrightarrow{h}S$ une « résolution
+des singularités de $S$ », \ie, un morphisme surjectif, propre et
+birationnel, tel que $S'$ soit régulier, et soit
+$$
+\xymatrix@C=2cm@R=1.25cm{
+X'     \ar[r]^{f'} \ar[d]^{h'}&     S'\ar[d]^{h}\\
+X   \ar[r]^{f}  & S
+}
+$$
+le diagramme cartésien déduit de $h$.
+
+Soit $F$ un faisceau d'ensembles constant sur $X$. On a
+$F\hookrightarrow G=h'_{\ast}{h'}^{\ast}F$ et on en déduit qu'il
+suffit (pour $q=0$) de vérifier \hyperref[XVI.thm4.1]{4.1} pour $G$ (\cf \eqhyperref[XVI.eq4.3.1]{4.3.1}),
+c'est-à-dire, pour un faisceau de la forme ${h'}_{\ast}F'$, où $F'$
+est constant sur $X'$. Or on a un diagramme\pageoriginale commutatif
+(où on supprime le symbole « et »)
+$$
+\xymatrix@C=2cm@R=1.5cm{
+\varepsilon^{\ast}f_{\ast} (h'_{\ast}F') = \varepsilon^{\ast}h_{\ast}f'_{\ast}F'  \ar[d]^{d}\ar[r]^(.6){a} & h_{\text{cl}\ast}
+	    \varepsilon^{\ast}f'_{\ast}F' \ar[d]^{b}\\
+	    f_{\text{cl}\ast}\varepsilon^{\ast}(h'_{\ast}F')  \ar[r]^(.4){c} &
+	    f_{\text{cl}\ast} h'_{\text{cl}\ast}\varepsilon^{\ast}F' = h_{\text{cl}\ast}f'_{\text{cl}\ast}
+	    \varepsilon^{\ast}F',
+}
+$$
+et $a$, $c$ sont bijectifs d'après le résultat pour un morphisme
+propre. Pour démontrer que $d$ est bijectif, il suffit de démontrer
+que $b$ l'est, donc que
+$$
+\epsilon^{\ast}f'_{\ast}F'\xrightarrow{\sim}
+f'_{\cl\ast}\epsilon^{\ast}F'
+$$
+donc on est ramené au cas $S=S'$, donc $S$ régulier.
+
+\noindent
+(Remarque: \sisi{Nous}{nous} avons utilisé sans le mentionner explicitement le
+théorème de finitude pour un morphisme propre \hyperrefext[XIV][XIV.thm1.1]{1.1}).
+
+Soit $F$ un faisceau abélien constant de torsion sur $X$. Il suffit de
+traiter le cas $F=(\ZZ/n)_X$. Or le morphisme $h'$ induit un
+isomorphisme au-dessus d'un ouvert dense $j:U\rightarrow X$ de $X$;
+soient $j':U'\rightarrow X'$ l'ouvert
+${h'}^{-1}(U)\xrightarrow{\sim}U$, et $Y=X-U$. On a $\dim Y<n$ parce
+que $U$ est dense, donc le théorème est vrai pour
+$(f,(\ZZ/n)_Y)$. Par la suite exacte
+$$
+0\longrightarrow j_{!}(\ZZ/n)_U\longrightarrow
+(\ZZ/n)_X\longrightarrow (\ZZ/n)_Y\longrightarrow 0
+$$
+et le lemme des cinq, on se ramène à démontrer le théorème pour le
+faisceau $j_{!}(\ZZ/n)_U$ et le morphisme $f$, donc par \hyperref[XVI.lem4.2]{4.2} à
+démontrer le théorème pour $(hf', {j'_!}(\ZZ/n)_{U'})$. Or on
+a une suite exacte
+$$
+0\longrightarrow {j'_!}(\ZZ/n)_{U'}\longrightarrow
+(\ZZ/n)_{X'}\longrightarrow (\ZZ/n)_{Y'}\longrightarrow
+0{\quoi},
+$$
+et\pageoriginale le théorème est vrai pour $(hf',(\ZZ/n)_{Y'})$
+par l'hypothèse de récurrence. Il suffit donc de démontrer le théorème
+pour $(hf',(\ZZ/n)_{X'})$). Mais par le cas propre, le théorème
+est vrai pour $(h,.)$, et il s'ensuit, par la suite spectrale de Leray
+pour le couple de morphismes $h$, $f'$, qu'il suffit de le démontrer
+pour $(f',\ZZ/n)$, d'où le lemme dans ce cas.
+
+Supposons enfin que $F$ soit un faisceau de groupes finis
+constant. Rappelons qu'il suffit de démontrer que le foncteur
+$(R^{1}f_{\cl \ast})\epsilon^{\ast}(\cdot)$ est effaçable pour $F$,
+donc pour un $G$ dans lequel on peut plonger $F$, donc pour
+$G={h'_\ast}{h'}^{\ast}F$, c'est-à-dire pour un faisceau de la forme
+${h'_\ast}F'$ où $F'$ est constant sur $X'$. On a
+$$
+\epsilon^{\ast}({h'_\ast}F')\xrightarrow{\sim}h'_{\cl \ast}(\epsilon^{\ast}F')
+$$
+et
+$$
+0\longrightarrow
+(R^{1}f_{\cl\ast})h'_{\cl\ast}\epsilon^{\ast}(\cdot)\longrightarrow
+(R^{1}f_{\cl}h'_{\cl\ast})\epsilon^{\ast}(\cdot)=(R^{1}h_{\cl}f'_{\cl\ast})\epsilon^{\ast}(\cdot){\quoi},
+$$
+donc il suffit de démontrer l'effaçabilité de ce dernier foncteur
+pour un faisceau constant. Mais on a la suite exacte
+$$
+0\longrightarrow (R^{1}h_{\cl \ast})f'_{\cl
+\ast}\epsilon^{\ast}(\cdot)\longrightarrow (R^{1}h_{\cl}f'_{\cl
+\ast})\epsilon^{\ast}(\cdot)\longrightarrow
+h_{\cl\ast}(R^{1}f'_{\cl\ast})\epsilon^{\ast}(\cdot){\quoi},
+$$
+et le premier membre est effaçable, disons effacé par la résolution
+de Godement (\hyperrefext[XII][XII.prop3.3]{3.3}), parce que $h$ est propre. Il suffit donc de
+démontrer que le membre de droite est effacé par la résolution de
+Godement, donc que $(R^{1}f'_{\cl\ast})\epsilon^{\ast}(\cdot)$ l'est,
+donc que le théorème est vrai pour $(f',F')$ où $F'$ est constant,
+d'où le lemme.
+
+\noindent
+\emph{Fin de la démonstration}.\pageoriginale Nous supposons 
+maintenant que $F$ est
+un faisceau constant et que $f:X\rightarrow S$ est une immersion
+ouverte dense, avec $S$ régulier. Le cas ensembliste résulte
+maintenant immédiatement de \hyperref[XVI.prop3.2]{3.2} et du lemme trivial analogue pour la
+topologie classique\sisi{ ---~en effet}{. En effet}, on en déduit que
+$\epsilon^{\ast}f_{\ast}F$ et $f_{\cl\ast}\epsilon^{\ast}F$ sont
+constants de même valeur, donc isomorphes par $\varphi$.
+
+Pour $q>0$, on va d'abord se réduire au cas où de plus $X=S-Y$ avec
+$Y$ régulier, \ie au cas où $(Y,S)$ est un $\Spec \CC$-couple lisse.
+En effet, écrivons $X=S-C_1$, où $C_1$ est muni de la
+structure induite réduite, et définissons récursivement
+
+$Y_{\nu}=$ l'ouvert dense des points réguliers de $C_{\nu}$,
+
+$C_{\nu +1}=C_{\nu}-Y_{\nu}$, avec structure induite réduite.
+
+\noindent
+On a $\dim C_{\nu+1}<\dim C_{\nu}$ parce que $Y_{\nu}$ est dense dans
+$C_{\nu}$, d'où une suite
+$$
+X=X_1\subset X_2=S-C_2\subset X_3=S-C_3\subset\ldots \subset
+X_r=S{\quoi},
+$$
+où les inclusions $i_{\nu}:X_{\nu}\rightarrow X_{\nu +1}$ sont des
+immersions ouvertes et où l'on a
+$$
+X_{\nu}=X_{\nu+1}-Y_{\nu}, Y_{\nu}\;\mbox{\rm fermé dans
+$X_{\nu+1}$, et régulier}{\quoi}.
+$$ Or l'image directe $i_{\nu\ast}F$ d'un faisceau constant sur $X$
+est constante (\hyperref[XVI.prop3.2]{3.2}), et les $R^{q}i_{\nu\ast}F$ sont
+constructibles et concentrés sur les variétés de $Y$ de dimension
+$\leq n-1$ (\hyperref[XVI.cor3.4]{3.4}, \hyperref[XVI.cor3.6]{3.6}, \hyperref[XVI.thm3.7]{3.7}) pour
+les valeurs de $q$ envisagées. Donc par l'hypothèse de récurrence et
+la suite spectrale de Leray (\resp la suite exacte \hyperrefext[XII][XII.prop3.2]{3.2}), on se
+réduit\pageoriginale au cas de $i_{\nu}$, d'où la réduction annoncée.
+
+Mais pour un couple lisse $(Y,S)$ on a calculé explicitement la valeur
+des $(R^{q}f_{\ast})F$ pour la topologie étale (\hyperref[XVI.cor3.4]{3.4}, \hyperref[XVI.cor3.6]{3.6}, 
+\hyperref[XVI.thm3.7]{3.7}), et un
+calcul analogue et facile, que nous laissons au lecteur, donne les
+résultats analogues pour la topologie classique. On en déduit le
+théorème pour $f$ par une comparaison directe.
+
+\section{Le théorème de finitude pour les préschémas algébriques en
+caractéristique zéro}\etiquette[5]{XVI.sec5}
+
+\begin{enonce*}{Théorème 5.1}\etiquette[5.1]{XVI.thm5.1}
+Soient $k$ un corps de caractéristique zéro, et $f:X\rightarrow S$ un
+morphisme de type fini de schémas localement de type fini sur
+$k$. Soit $F$ un faisceau constructible d'ensembles (\resp de groupes
+finis, \resp abélien de torsion) sur $X$. Alors les $R^{q}f_{\ast}F$
+sont également constructibles pour $q=0$ (\resp pour $q=0$, $1$, \resp
+pour tout $q$).
+\end{enonce*}
+
+On met l'hypothèse que $k$ soit de caractéristique $0$ parce qu'on va
+se servir du théorème de résolution des singularités [1]. La
+démonstration vaut également pour la caractéristique $p>0$ si l'on
+admet la résolution des singularités, \emph{pourvu que $F$ soit
+d'ordres premiers à $p$}. On peut donc déduire un résultat en
+caractéristique $\neq 0$ pour $\dim X\leq 2$, en appliquant les
+résultats d'Abhyankar \cite{SGA4-16:3}. Un autre ingrédient de la démonstration, en
+plus du sempiternel th.\pageoriginale de changement de base pour un
+morphisme propre, est le « théorème de pureté cohomologique
+absolu » \hyperref[XVI.cor3.9]{3.9}\nde{Travaux de Deligne et Gabber XXX}.
+
+Rappelons que le théorème est déjà démontré pour un morphisme propre
+et pour $S$ arbitraire (\hyperrefext[XIV][XIV.thm1.1]{1.1}). D'ailleurs on
+obtiendra dans Exposé XIX % syntaxe, étiquette
+(encore en car. $0$) le théorème de finitude sous les hypothèses
+beaucoup plus faibles que $S$ soit un schéma \emph{excellent} et que
+$f$ soit de type fini, en prouvant pour de tels schémas le théorème de
+pureté absolu sous la forme signalée dans \hyperref[XVI.rems3.10]{3.10}.
+
+Dans le cas de caractéristique $\neq 0$ et d'un schéma de dimension
+$\geq 3$, on n'a pour l'instant que la conséquence facile suivante de
+\hyperrefext[XI][XI.prop3.3]{3.3}:
+
+\begin{enonce*}{Théorème 5.2}\etiquette[5.2]{XVI.thm5.2}
+Soit $X$ un schéma algébrique lisse sur $\Spec k$, $k$ un corps
+séparablement clos, et soit $F$ un faisceau de groupes abéliens finis
+(\resp de groupes finis) qui est \emph{localement constant,} et
+d'ordres premiers à la caractéristique de $k$. Alors $H^{q}(X,F)$ est
+un groupe fini (\resp un ensemble pointé fini) pour tout $q$ (\resp
+pour $q=0,1$).
+\end{enonce*}
+
+\noindent
+\emph{Démonstration de} \hyperref[XVI.thm5.2]{5.2}. On peut supposer $k$
+algébriquement clos (\hyperrefext[VIII][VIII.thm1.1]{1.1}).
+Récurrence sur $n=\dim X$: D'après \hyperrefext[XI][XI.prop3.3]{3.3} et il existe un
+hyper-recouvrement de $X$ par des ouverts qui sont des « bons
+voisinages ». On se réduit immédiatement, par la suite spectrale
+d'un hyper-recouvrement, au cas où $X$ est un bon voisinage, donc
+admet une fibration élémentaire (\hyperrefext[XI][XI.def3.1]{3.1})
+$$
+\xymatrix@=1.5cm{
+X \ar[rr]^{j} \ar[rd]_{f}&         &
+\bar{X}\ar[ld]^{\bar{f}} \\
+             &      S  & .
+}
+$$
+D'après\pageoriginale (\hyperref[XVI.prop3.2]{3.2}, \hyperref[XVI.cor3.6]{3.6}, \hyperref[XVI.thm3.7]{3.7}),
+le faisceau $j_{\ast}F$ est
+localement constant sur $\bar{X}$, $(R^{1}j_{\ast})F$ est localement
+constant sur $Y=\bar{X}-X$, et $(R^{q}j_{\ast})F=0$ si $q>1$. Par
+suite il résulte de \hyperref[XVI.thm2.1]{2.1} que $(R^{p}\bar{f}_{\ast})(R^{q}j_{\ast})F$
+est un faisceau localement constant sur $S$ pour les valeurs de $q$
+envisagées, et le résultat résulte de l'hypothèse de récurrence et de
+la suite spectrale de Leray (\resp de la suite exacte \hyperrefext[XII][XII.prop3.2]{3.2}).
+
+La démonstration de \hyperref[XVI.thm5.1]{5.1} est très voisine 
+de celle de \hyperref[XVI.thm4.1]{4.1} pour le cas
+$F$ constructible. Nous nous bornerons à indiquer les grandes lignes:
+\sisi{Récurrence}{récurrence} sur $\dim X=n$. On se réduit d'abord au cas $X$ et $S$
+affines, donc $f$ quasi-projectif, en appliquant la méthode de la
+démonstration de 1.3. Ensuite on applique \sisi{IX 2.15}{\hyperrefext[IX][IX.prop2.14]{2.14}} et (\hyperrefext[VIII][VIII.prop5.5]{5.5} et \hyperrefext[VIII][VIII.rem5.8]{5.8})
+pour se ramener au cas $F$ constant. On a un diagramme commutatif
+$$
+\xymatrix@=1.5cm{
+X \ar[rr]^{h} \ar[rd]_{f}&         &                  \bar{X}\ar[ld]^{\bar{f}}\\
+             &      S  & ,                  
+}
+$$
+où $h$ est une immersion ouverte dense et où $\bar{f}$ est propre,
+donc le théorème est vrai pour $\bar{f}$ (\hyperrefext[XIV][XIV.thm1.1]{1.1}). Il suffit ainsi de
+démontrer le théorème pour $(h,F)$, c'est-à-dire pour une immersion
+ouverte dense\pageoriginale et un faisceau constant. Soit
+$h:S'\rightarrow S$ une résolution des singularités de $S$ et
+$$
+\xymatrix@C=1.75cm@R=1cm{
+X  \ar[d]^{f} & X' \ar[l]_{h'} \ar[d]^{f'}\\
+S          & S' \ar[l]_{h} 
+}
+$$
+le diagramme cartésien déduit de $h$. On se ramène à démontrer le
+théorème pour $f'$, donc au cas où de plus $S=S'$ est régulier. Par la
+méthode de récurrence employée dans la fin de la démonstration de \hyperref[XVI.thm4.1]{4.1},
+on se réduit au cas où $Y=S-X$ est non-singulier, \ie où $(Y,S)$ est
+un couple lisse, et on termine en appliquant (\hyperref[XVI.prop3.2]{3.2}, \hyperref[XVI.cor3.4]{3.4},
+\hyperref[XVI.cor3.6]{3.6}, \hyperref[XVI.thm3.7]{3.7}).
+
+\begin{enonce*}[remark]{Remarque 5.3}\etiquette[5.3]{XVI.rem5.3}
+La démonstration de \hyperref[XVI.thm5.1]{5.1} qu'on vient d'esquisser est également valable
+lorsqu'on se donne un anneau noethérien $A$ à gauche, annulé par un
+entier $n>0$ (qu'il faut supposer premier à la caractéristique si
+celle-ci n'est pas supposée nulle, \cf remarques suivant \hyperref[XVI.thm5.1]{5.1}), et
+qu'on considère des faisceaux de $A$-modules à gauche constructibles.
+\end{enonce*}
+
+\begin{thebibliography}{99}
+\bibitem{SGA4-16:1} Hironaka, H. Resolution of singularities of an
+algebraic variety over a field of characteristic zero, Annals of
+Math., vol. 79 (1964), p. 109.
+
+\bibitem{SGA4-16:2} Godement,\pageoriginale P. Théorie des
+\sisi{Faisceaux}{faisceaux}, Paris, 1958\sisi{}{.}
+
+\bibitem{SGA4-16:3} Abhyankar, S. Local uniformization on algebraic
+surfaces over ground fields of characteristic $p\neq 0$, Ann. of
+Math., vol. 63 (1956), p. 491.
+
+\bibitem{SGA4-16:4} J.P. Serre, \sisi{Géométrie Algébrique et Géométrie
+Analytique}{Géométrie algébrique et géométrie analytique},
+Annales Inst. Fourier 1956, p. 1-42 (\sisi{Cité}{cité} GAGA).
+\end{thebibliography}
+
+%XII 4.1 no ref. 78 
+%XII 4.1.2 no ref. 992
+%4.11.1 no ref. 1040
+%XI 7.7 no ref. 1210
+%IX 4.5 is a equation ref.
+%IX 2.15 no ref. 1504
+
+\ifx\danslelivre\undefined
+\end{document}
+\fi

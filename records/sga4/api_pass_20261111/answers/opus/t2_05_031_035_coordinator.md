@@ -1,0 +1,1 @@
+p31: 2/2; p32: 4/1; p33: 1/1; p34: 1/0; p35: 1/0. Convention: \eqhyperref adds parentheses where the print has none (p32 'avant 5.3.2', p33 'de 4.11.1 est un épimorphisme', p33 'déduite de 4.11.1'); not reported.

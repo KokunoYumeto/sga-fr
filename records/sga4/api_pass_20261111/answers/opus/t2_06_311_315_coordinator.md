@@ -1,0 +1,1 @@
+p311 1/0; p312 0/0; p313 3/3; p314 1/2; p315 3/2. Apply the two \Hhom→\Hom fixes on p313 together. The display at the top of p313 is also included in the p312 cut (lines 42-49 of p312); the findings are filed on p313 only.

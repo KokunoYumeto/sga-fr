@@ -1,0 +1,61 @@
+[
+ {
+  "page": 243,
+  "where": "diagram (2.3.10), to the right of the bottom-right node Hom(_nP,_nExt^1(nQnG))",
+  "scan": "a comma printed on the bottom row of the diagram, well to the right of the node; the sentence continues 'où la flèche horizontale (2.3.9) est un isomorphisme ...' (crop crops_241_245/c243_nQnG.png)",
+  "tex": "no comma: the tikzcd ends with the node; the STRUCTURE comment describes the comma ('Une virgule isolée est frappée à droite du nœud N3') but the display does not set it",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzcd}",
+   "new": "\\end{tikzcd}\\quad ,"
+  },
+  "note": "Same form as the earlier batches' fixes (\\end{tikzcd}\\quad , on pp. 144, 184, 199, 212)."
+ },
+ {
+  "page": 243,
+  "where": "diagram (2.3.10), bottom-right node",
+  "scan": "Hom(_nP,_nExt^1(nQnG)): an 'n' typed where the comma between nQ and G belongs (crop crops_241_245/c243_nQnG.png)",
+  "tex": "\\underline{\\mathrm{Ext}}^1(nQnG)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\underline{\\mathrm{Ext}}^1(nQ,G)",
+  "note": "The TeX keeps the printed reading. The same group is _nExt^1(nQ,G) in (2.3.4), (2.3.5), (2.3.7), (2.3.8), (2.3.9) on p. 242 and in (*) on this page. 'corrected' replaces the 'tex' substring (line 8 of page_243.tex; the STRUCTURE comment's copy 'ₙ\\underline{Ext}^1(nQnG)' does not match it)."
+ },
+ {
+  "page": 243,
+  "where": "'Démonstration de 2.5.11 (*).'",
+  "scan": "2.5.11 (crop crops_241_245/c243_2511.png)",
+  "tex": "2.5.11",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "2.3.11",
+  "note": "Wrong reference number: this is the proof of Proposition 2.3.11, stated just above; p. 245 refers to it as 'l'assertion (2.3.11)'. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 245,
+  "where": "diagram (2.3.12), to the right of the bottom-right node C^1",
+  "scan": "a full stop printed on the bottom row, well to the right of C^1, closing the sentence (crop crops_241_245/c245_stop.png)",
+  "tex": "no full stop: the tikzcd ends with C^1, and the STRUCTURE comment says the period 'is therefore not included in the tikzcd'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzcd}",
+   "new": "\\end{tikzcd}\\quad ."
+  },
+  "note": "Same form as the earlier batches' fixes (\\end{tikzcd}\\quad . on pp. 21, 99, 100, 139, 183, 200). After the fix the last sentence of the STRUCTURE comment no longer describes the TeX; it is not edited here."
+ },
+ {
+  "page": 245,
+  "where": "(2.3.14) φ' : M'_o ⟶ G , y_o ⟼ f_1([nx_o]⊗y_o → x_o⊗[ny_o]) ,",
+  "scan": "a typed arrow '→' between [nx_o]⊗y_o and x_o⊗[ny_o] (crop crops_241_245/c245_2314.png)",
+  "tex": "y_o \\to x_o",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "y_o - x_o",
+  "note": "The 1-cycle is [nx_o]⊗y_o - x_o⊗[ny_o], with a minus, in (2.3.13) just above and on p. 244. The TeX keeps the printed arrow. 'corrected' replaces the 'tex' substring."
+ }
+]

@@ -1,0 +1,160 @@
+[
+ {
+  "page": 346,
+  "where": "Lemme 3.1.3, hypotheses",
+  "scan": "s ∈ S, t ∈ T une générisation de s",
+  "tex": "$t \\in S$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$t \\in S$",
+   "new": "$t \\in T$"
+  },
+  "corrected": "$t \\in S$",
+  "note": "The print has t ∈ T, but no T is defined. The TeX silently corrects this to S; restore the printed T."
+ },
+ {
+  "page": 346,
+  "where": "Lemme 3.1.3, second assertion",
+  "scan": "Si rang K_η ≤ 1 (the underline covers only 'Si rang')",
+  "tex": "\\underline{Si rang $K_{\\eta}$} $\\leq 1$",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\underline{Si rang $K_{\\eta}$} $\\leq 1$",
+   "new": "\\underline{Si rang} $K_{\\eta} \\leq 1$"
+  },
+  "note": "K_η is not underlined in the print."
+ },
+ {
+  "page": 346,
+  "where": "Lemme 3.1.3, second assertion",
+  "scan": "pour tout point maximal de S, (S not underlined)",
+  "tex": "\\underline{pour tout point maximal de $S$}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\underline{pour tout point maximal de $S$}",
+   "new": "\\underline{pour tout point maximal de} $S$"
+  },
+  "note": "The underline ends before S."
+ },
+ {
+  "page": 346,
+  "where": "proof, second assertion",
+  "scan": "(SGA 3 VI_B 2.11), upright Roman numeral",
+  "tex": "$VI_{B}$",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "$VI_{B}$",
+   "new": "VI$_{B}$"
+  },
+  "note": "The exposé number is upright in the print; the TeX sets it in math italic."
+ },
+ {
+  "page": 347,
+  "where": "Proposition 3.2, first line",
+  "scan": "intègre de dimension 1, (underline ends at 'dimension')",
+  "tex": "\\underline{un schéma localement noethérien régulier intègre de dimension 1,}",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "intègre de dimension 1,}",
+   "new": "intègre de dimension} 1,"
+  },
+  "note": "The figure 1 is not underlined in the print."
+ },
+ {
+  "page": 347,
+  "where": "Proposition 3.2",
+  "scan": "S (et quasi-projectif sur S, underline starts at 'et'",
+  "tex": "\\underline{(et quasi-projectif sur}",
+  "kind": "underline",
+  "confidence": "low",
+  "fix": {
+   "old": "\\underline{(et quasi-projectif sur}",
+   "new": "(\\underline{et quasi-projectif sur}"
+  },
+  "note": "The opening parenthesis is not underlined; elsewhere the file keeps parentheses outside \\underline."
+ },
+ {
+  "page": 347,
+  "where": "end of Remarque 3.1.4",
+  "scan": "grâce à SGA XVII 4.6.1 (vi)",
+  "tex": "grâce à SGA XVII 4.6.1 (vi)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "grâce à SGA 3 XVII 4.6.1 (vi)",
+  "note": "The '3' of SGA 3 is omitted; all other references here read SGA 3. The TeX keeps the printed reading."
+ },
+ {
+  "page": 347,
+  "where": "end of Remarque 3.1.4",
+  "scan": "(SGA 3 VII 1.1, il en est de même de K_s.",
+  "tex": "(SGA 3 VII 1.1, il en est",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(SGA 3 VII 1.1), il en est",
+  "note": "The closing parenthesis is missing in the print. The TeX keeps the printed reading."
+ },
+ {
+  "page": 349,
+  "where": "3.4.0, last sentence",
+  "scan": "la notion se ramène même au cas S où S est un trait strictement local",
+  "tex": "au cas $S$ où $S$ est",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "au cas où $S$ est",
+  "note": "Duplicated S. The TeX keeps the printed reading."
+ },
+ {
+  "page": 350,
+  "where": "Proposition 3.5, title",
+  "scan": "(critère galoisien de réduction semi-stable). (parentheses not underlined)",
+  "tex": "\\underline{(critère galoisien de réduction semi-stable)}",
+  "kind": "underline",
+  "confidence": "low",
+  "fix": {
+   "old": "\\underline{(critère galoisien de réduction semi-stable)}",
+   "new": "(\\underline{critère galoisien de réduction semi-stable})"
+  },
+  "note": "The underline runs only under the words."
+ },
+ {
+  "page": 350,
+  "where": "Proposition 3.5 (ii), display",
+  "scan": "V ⊂ V^⊥ .",
+  "tex": "V \\subset V^{\\perp} \\qquad .",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "V^{\\perp} \\subset V \\qquad .",
+  "note": "The inclusion is reversed. The proof ends 'V^⊥ ⊂ U^I=V, ce qui est (ii)', and (ii)⟺(iii) via W=V∩V^⊥ only works with V^⊥ ⊂ V. With good reduction V=U and V^⊥=0, so the printed form fails. The TeX keeps the printed reading."
+ },
+ {
+  "page": 350,
+  "where": "proof of 3.5",
+  "scan": "équivaut à V = V∩V^⊥ i.e. à (ii)",
+  "tex": "$V = V \\cap V^{\\perp}$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$V^{\\perp} = V \\cap V^{\\perp}$",
+  "note": "Same reversal as in (ii): λ=0 ⟺ V^⊥ = W = V∩V^⊥. The TeX keeps the printed reading."
+ },
+ {
+  "page": 350,
+  "where": "proof of 3.5, (iv)",
+  "scan": "(iv) signifie aussi que I opère trivialement sur U^I = V",
+  "tex": "sur $U^{I} = V$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "sur $U/U^{I} = U/V$",
+  "note": "Triviality on U^I is tautological; (iv) means I acts trivially on U/U^I, whose dual is V^⊥, as the sentence continues. This looks like an author's slip. The TeX keeps the printed reading."
+ }
+]

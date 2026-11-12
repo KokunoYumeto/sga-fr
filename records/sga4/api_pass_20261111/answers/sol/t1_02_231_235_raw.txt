@@ -1,0 +1,91 @@
+{
+  "findings": [
+    {
+      "page": 232,
+      "where": "End of the page, proof of Proposition 3.2, 1)",
+      "scan": "Page 232 ends with « Or par définition de »; page 233 begins with « la limite projective, le foncteur ».",
+      "tex": "par définition de la limite projective, le foncteur",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The cut includes opening text of page 233 beyond the overlap allowed by its comment. Conversely, that text is missing from the page 233 cut. Reported once here; no source-text change is needed."
+    },
+    {
+      "page": 233,
+      "where": "Proof of Proposition 3.2, 1), sentence following the opening display",
+      "scan": "est un ensemble cofiltrant",
+      "tex": "est une ensemble cofiltrant",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "est une ensemble",
+        "new": "est un ensemble"
+      },
+      "note": "The printed article is « un »."
+    },
+    {
+      "page": 233,
+      "where": "Proof of Proposition 3.2, 2), definition of w",
+      "scan": "Soit w la restriction",
+      "tex": "Soit $w$ le\n  restriction",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Soit $w$ le\n  restriction",
+        "new": "Soit $w$ la\n  restriction"
+      },
+      "note": "The print reads « la restriction »."
+    },
+    {
+      "page": 234,
+      "where": "Proof of Proposition 3.2, 3), equality after « et par suite »",
+      "scan": "v\\circ i\\circ\\pr_2=u\\circ\\pr_2",
+      "tex": "v\\circ i\\circ \\pr_2=u\\circ m\\circ p_2",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "i\\circ \\pr_2=u\\circ m\\circ p_2",
+        "new": "i\\circ \\pr_2=u\\circ \\pr_2"
+      },
+      "note": "The printed right-hand side is u composed with pr₂, not u composed with m and p₂."
+    },
+    {
+      "page": 234,
+      "where": "Remarque 3.3, final sentence",
+      "scan": "les formules on retrouve la construction de [",
+      "tex": "formules on retrouve la construction de [",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "[\\text{référence à compléter}]",
+      "note": "The printed bibliographic reference stops at the opening bracket; the TeX keeps this unfinished reference. The intended label cannot be recovered from the supplied pages, so the corrected field indicates the missing reference without conjecturing its number."
+    },
+    {
+      "page": 234,
+      "where": "Théorème 3.4, final morphism",
+      "scan": "\\ell(LF)\\circ\\ell(F)",
+      "tex": "\\ell(LF)\\ell(F)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\ell(LF)\\ell(F)",
+        "new": "\\ell(LF)\\circ\\ell(F)"
+      },
+      "note": "The print explicitly includes the composition circle."
+    },
+    {
+      "page": 235,
+      "where": "Introductory paragraph of section 4",
+      "scan": "Le présent numéro",
+      "tex": "La présent\nnuméro",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "La présent",
+        "new": "Le présent"
+      },
+      "note": "The print reads « Le présent numéro »."
+    }
+  ],
+  "coordinator": "231: 0/0; 232: 1/0; 233: 2/0; 234: 2/1; 235: 1/0 (normal/misprint).\nMarker 232–233: split source line 642 after « par définition de »; « la limite projective, le foncteur » belongs at the start of the page 233 cut, before the display."
+}

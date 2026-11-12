@@ -1,0 +1,112 @@
+{
+  "findings": [
+    {
+      "page": 386,
+      "where": "Paragraphe « Supposons maintenant », morphisme obtenu par changement de base",
+      "scan": "X' \\times_Y Y' \\to Y'",
+      "tex": "\\fprod{X'}{Y'}{Y} \\to Y'",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\fprod{X}{Y'}{Y} \\to Y'",
+      "note": "Le changement de base de f : X → Y doit avoir X, sans prime, comme premier facteur. Le TeX conserve la coquille de l'imprimé."
+    },
+    {
+      "page": 386,
+      "where": "Théorème 5.2, phrase précédant l'isomorphisme",
+      "scan": "Alors homomorphisme canonique",
+      "tex": "Alors \\sisi{}{l'}homomorphisme canonique",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Alors l'homomorphisme canonique",
+      "note": "L'article l' manque dans l'imprimé. Le TeX consigne cette omission dans le premier argument de \\sisi et la corrige dans le second."
+    },
+    {
+      "page": 387,
+      "where": "5.4, identification de la fibre géométrique",
+      "scan": "\\bar{X}_{\\bar{y}} = X_y \\otimes_{k(y),} k(\\bar{y})",
+      "tex": "X_{y} \\otimes_{k(y),} k(\\bar{y})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\bar{X}_{\\bar{y}} = X_y \\otimes_{k(y)} k(\\bar{y})",
+      "note": "Une virgule parasite suit k(y) dans l'indice du produit tensoriel. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 388,
+      "where": "Proposition 5.5, indice du produit",
+      "scan": "\\prod_{\\bar{x} \\in X_y\\otimes_{k(y)} k(\\bar{y})} F_{\\bar{x}}",
+      "tex": "X_{y}\\otimes_{k(y)}\n(\\bar{y})",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "X_{y}\\otimes_{k(y)}\n(\\bar{y})",
+        "new": "X_{y}\\otimes_{k(y)}\nk(\\bar{y})"
+      },
+      "note": "Le k de l'extension de corps k(\\bar{y}) manque dans le TeX."
+    },
+    {
+      "page": 388,
+      "where": "Proposition 5.5, changement de base dans la parenthèse",
+      "scan": "Y' \\to Y",
+      "tex": "$y'\\to Y$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$y'\\to Y$",
+        "new": "$Y'\\to Y$"
+      },
+      "note": "L'imprimé porte un Y majuscule."
+    },
+    {
+      "page": 389,
+      "where": "Démonstration de 5.6, après le renvoi à VII 5.13",
+      "scan": "R^q f_{\\ast}(F_i) = 0",
+      "tex": "R^{q} f_{\\ast} (F_i) = 0",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "R^{q} (f_i)_{\\ast} (F_i) = 0",
+      "note": "F_i est défini sur X_i : le morphisme d'image directe est donc f_i : X_i → Y. L'indice i du morphisme manque dans l'imprimé, et le TeX conserve cette omission."
+    },
+    {
+      "page": 390,
+      "where": "Premier paragraphe, « Alors … appartient à Ob X ét »",
+      "scan": "Alors U \\in \\Ob X_{\\text{\\rm ét}}",
+      "tex": "Alors $I \\in \\Ob",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "Alors $I \\in \\Ob",
+        "new": "Alors $U \\in \\Ob"
+      },
+      "note": "L'imprimé porte U, l'ouvert qui vient d'être introduit, et non I."
+    },
+    {
+      "page": 390,
+      "where": "Fin du premier paragraphe, désignation du topos étale",
+      "scan": "étale X_{\\text{\\rm ét}} de X",
+      "tex": "étale $X_{\\text{\\rm ét}}$\nde $X$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "étale $\\widetilde{X_{\\text{\\rm ét}}}$ de $X$",
+      "note": "Le topos est noté avec un tilde dans ce même paragraphe et dans 6.1 ; sans tilde, le symbole désigne le site. Le TeX conserve l'omission du tilde dans l'imprimé."
+    },
+    {
+      "page": 390,
+      "where": "Démonstration de 6.1, égalité des catégories localisées",
+      "scan": "X_{\\text{ét}/F} = X_{\\text{ét}/U}",
+      "tex": "X_{\\text{ét}/F'}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "X_{\\text{ét}/F'}",
+        "new": "X_{\\text{ét}/F}"
+      },
+      "note": "Le F ne porte pas de prime dans l'imprimé."
+    }
+  ],
+  "coordinator": "Normal/misprint : 386 0/2 ; 387 0/1 ; 388 2/0 ; 389 0/1 ; 390 2/1."
+}

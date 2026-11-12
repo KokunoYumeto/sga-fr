@@ -1,0 +1,46 @@
+\RequirePackage{luatex85}
+\documentclass[12pt]{../fichiers-configuration-latex/amsbook}
+\usepackage[a4paper,left=3cm,right=3cm,marginpar=0.5cm,marginparsep=0.8cm,vmargin=2.8cm]{geometry}
+\input{../fichiers-configuration-latex/paquets}
+\input{../fichiers-configuration-latex/numerotation}
+\input{../fichiers-configuration-latex/macros}
+
+
+\begin{document}
+\begin{center}
+{\Large Théorie des topos et cohomologie étale des schémas.\\
+Tome 2}
+\end{center}
+
+\vskip1cm
+\begin{center}
+M. Artin, A. Grothendieck, J.-L. Verdier
+\end{center}
+
+\vskip1cm
+\begin{center}
+Avec la participation de N. Bourbaki, P. Deligne, B. Saint-Donat
+\end{center}
+
+\selectlanguage{english}version : \showgitstatus\selectlanguage{french}
+\tableofcontents
+
+\mainmatter
+
+\def\danslelivre{1}
+
+\setcounter{chapter}{4}
+\def\thechapter{\Roman{chapter}}
+\def\chaptername{Exposé}
+
+\input{../05/05.tex}
+\renewcommand*{\thechapter}{Vbis}
+\input{../05bis/05bis.tex}
+\setcounter{chapter}{5}
+\def\thechapter{\Roman{chapter}}
+\input{../06/06.tex}
+\input{../07/07.tex}
+\input{../08/08.tex}
+
+\backmatter
+\end{document}

@@ -1,0 +1,384 @@
+[
+ {
+  "page": 411,
+  "where": "Théorème 3.3, label",
+  "scan": "Théorème 3.3. with only the word 'Théorème' underlined",
+  "tex": "\\underline{Théorème 3.3.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Théorème 3.3.}",
+   "new": "\\underline{Théorème} 3.3."
+  },
+  "note": "The number and its full stop are not underlined in the print."
+ },
+ {
+  "page": 411,
+  "where": "Théorème 3.3, statement",
+  "scan": "underlined: Soit / un schéma propre sur / on désigne par / les / vectoriels / sur lesquels / agit / On a; not underlined: X, F_q, H^i_DR(X/F_q), F_q-, ℍ^i(X,Ω^•_{X/F_q}) and the comma after it, 𝔉_q, the full stop after agit",
+  "tex": "one \\underline over the whole statement, including all the formulas",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Soit $X$ un schéma propre sur\n$\\mathbb F_q$ on désigne par $H^i_{\\mathrm{DR}}(X/\\mathbb F_q)$ les\n$\\mathbb F_q$-vectoriels $\\mathbb H^i(X,\\Omega^\\bullet_{X/\\mathbb F_q})$, sur lesquels\n$\\mathfrak F_q$ agit. On a}",
+   "new": "\\underline{Soit} $X$ \\underline{un schéma propre sur}\n$\\mathbb F_q$ \\underline{on désigne par} $H^i_{\\mathrm{DR}}(X/\\mathbb F_q)$ \\underline{les}\n$\\mathbb F_q$-\\underline{vectoriels} $\\mathbb H^i(X,\\Omega^\\bullet_{X/\\mathbb F_q})$, \\underline{sur lesquels}\n$\\mathfrak F_q$ \\underline{agit}. \\underline{On a}"
+  },
+  "note": "The underline breaks at each math symbol, as in the statements of pp. 406-410."
+ },
+ {
+  "page": 411,
+  "where": "line after (3.3.2): 'via l'endomorphisme 𝔉_q = fr_p^{X*}'",
+  "scan": "𝔉_q = fr_p^{X*} déduit de fr_q^X : X → X",
+  "tex": "$\\mathfrak F_q=\\mathrm{fr}_p^{X*}$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\mathfrak F_q=\\mathrm{fr}_q^{X*}",
+  "note": "The TeX keeps the printed index p. The endomorphism deduced from fr_q^X is fr_q^{X*} (cf. 2.2.5 on p. 408: 'l'endomorphisme fr_q^{X*}⊗k, où fr_q^X ... est le k-endomorphisme de Frobenius')."
+ },
+ {
+  "page": 411,
+  "where": "Théorème 3.3, first line: 'sur F_q on désigne par'",
+  "scan": "un schéma propre sur F_q on désigne par (no punctuation between F_q and on; checked at 5x)",
+  "tex": "$\\mathbb F_q$ on désigne par",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\mathbb F_q$ ; \\underline{on désigne par}",
+  "note": "Two main clauses run together without punctuation. The TeX keeps the printed reading. The corrected reading is written for the text after the statement-underline fix above."
+ },
+ {
+  "page": 411,
+  "where": "(3.2.2)",
+  "scan": "≡ # X(F_q) mod p . (no parentheses around mod p)",
+  "tex": "\\#X(\\mathbb F_q)\\pmod p.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\#X(\\mathbb F_q)\\pmod p.",
+   "new": "\\#X(\\mathbb F_q)\\mod p."
+  },
+  "note": "\\pmod adds parentheses the print does not have (convention of Exposé XXII; global issue 66)."
+ },
+ {
+  "page": 411,
+  "where": "(3.3.1)",
+  "scan": "... )^{(-1)^{i+1}}   mod p. (no parentheses)",
+  "tex": "\\pmod p.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\right)^{(-1)^{i+1}}\n\\pmod p.",
+   "new": "\\right)^{(-1)^{i+1}}\n\\mod p."
+  },
+  "note": "Same \\pmod convention as (3.2.2)."
+ },
+ {
+  "page": 412,
+  "where": "Théorème 3.4, label",
+  "scan": "Théorème 3.4. with only the word 'Théorème' underlined",
+  "tex": "\\underline{Théorème 3.4.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Théorème 3.4.}",
+   "new": "\\underline{Théorème} 3.4."
+  },
+  "note": "The number is not underlined."
+ },
+ {
+  "page": 412,
+  "where": "Théorème 3.4, statement",
+  "scan": "underlined: Soit / un schéma séparé de type fini sur / Alors désignant par / la cohomologie étale à supports propres; not underlined: X, F_q., H^i_c",
+  "tex": "one \\underline from 'Soit' to 'propres', including X, F_q. and H_c^i",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Soit $X$ un schéma séparé de\ntype fini sur $\\mathbb F_q$. Alors désignant par $H_c^i$ la cohomologie\nétale à supports propres}",
+   "new": "\\underline{Soit} $X$ \\underline{un schéma séparé de\ntype fini sur} $\\mathbb F_q$. \\underline{Alors désignant par} $H_c^i$ \\underline{la cohomologie\nétale à supports propres}"
+  },
+  "note": "The underline breaks at each math symbol; the full stop after F_q is not underlined."
+ },
+ {
+  "page": 412,
+  "where": "(3.4.1)",
+  "scan": "... )^{(-1)^{i+1}} mod p. (no parentheses)",
+  "tex": "\\pmod p.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\pmod p.",
+   "new": "\\mod p."
+  },
+  "note": "Same \\pmod convention as p. 411 (3.2.2)."
+ },
+ {
+  "page": 412,
+  "where": "Lemme 3.5, label",
+  "scan": "Lemme 3.5. with only the word 'Lemme' underlined",
+  "tex": "\\underline{Lemme 3.5.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Lemme 3.5.}",
+   "new": "\\underline{Lemme} 3.5."
+  },
+  "note": ""
+ },
+ {
+  "page": 412,
+  "where": "Lemme 3.5, statement",
+  "scan": "underlined: Si / est un recouvrement fini de / par des sous-schémas ouverts / on a; not underlined: {U_i}, X",
+  "tex": "one \\underline over the statement, including {U_i} and X",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Si $\\{U_i\\}$ est un recouvrement fini de\n$X$ par des sous-schémas ouverts on a}",
+   "new": "\\underline{Si} $\\{U_i\\}$ \\underline{est un recouvrement fini de}\n$X$ \\underline{par des sous-schémas ouverts on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 412,
+  "where": "proof of 3.5, display of the localisation spectral sequence",
+  "scan": "E_1^{-a,b} = ⊕_{i_o<...<i_b} H^a_c(Ū_{i_o}∩...∩Ū_{i_b}, Z/pZ) ⟹ H_c^{-a+b}(X̄, Z/pZ).",
+  "tex": "E_1^{-a,b}=\\bigoplus_{i_0<\\cdots<i_b}\nH_c^a(\\bar U_{i_0}\\cap\\cdots\\cap\\bar U_{i_b},\\mathbb Z/p\\mathbb Z)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "E_1^{-a,b}=\\bigoplus_{i_0<\\cdots<i_a}\nH_c^b(\\bar U_{i_0}\\cap\\cdots\\cap\\bar U_{i_a},\\mathbb Z/p\\mathbb Z)",
+  "note": "The TeX keeps the printed reading. As printed, the E_1 term has Čech degree b and cohomological degree a, so its total degree is a-b, not the -a+b of E_1^{-a,b} and of the abutment: a and b are interchanged in the term (sum over the (a+1)-fold intersections, H_c^b)."
+ },
+ {
+  "page": 412,
+  "where": "Lemme 3.6, label",
+  "scan": "Lemme 3.6. with only the word 'Lemme' underlined",
+  "tex": "\\underline{Lemme 3.6.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Lemme 3.6.}",
+   "new": "\\underline{Lemme} 3.6."
+  },
+  "note": ""
+ },
+ {
+  "page": 412,
+  "where": "Lemme 3.6, statement",
+  "scan": "underlined: Si / est un ouvert de / le fermé; not underlined: U, X, Y, X-U and the commas",
+  "tex": "one \\underline over the statement, including U, X, Y and X-U,",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Si $U$ est un ouvert de $X$, $Y$ le fermé\n$X-U$,}",
+   "new": "\\underline{Si} $U$ \\underline{est un ouvert de} $X$, $Y$ \\underline{le fermé}\n$X-U$,"
+  },
+  "note": ""
+ },
+ {
+  "page": 412,
+  "where": "(3.6.1)",
+  "scan": "Z'(X) = Z'(U) Z'(Y) with no full stop (checked at 4x)",
+  "tex": "Z'(X)=Z'(U)Z'(Y).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Z'(X)=Z'(U)Z'(Y).",
+   "new": "Z'(X)=Z'(U)Z'(Y)"
+  },
+  "note": "The TeX adds a full stop after the display."
+ },
+ {
+  "page": 413,
+  "where": "Lemme 3.7, label",
+  "scan": "Lemme 3.7 (Moebius). with only the word 'Lemme' underlined",
+  "tex": "\\underline{Lemme 3.7 (Moebius).}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Lemme 3.7 (Moebius).}",
+   "new": "\\underline{Lemme} 3.7 (Moebius)."
+  },
+  "note": "Neither the number nor '(Moebius).' is underlined."
+ },
+ {
+  "page": 413,
+  "where": "Lemme 3.7, statement",
+  "scan": "underlined: Soit / un ensemble fini / un recouvrement fini par des sous-ensembles / Alors; not underlined: B, the comma, {A_i}, the full stop before Alors",
+  "tex": "one \\underline over the statement, including B and {A_i}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Soit $B$ un ensemble fini,\n$\\{A_i\\}$ un recouvrement fini par des sous-ensembles. Alors}",
+   "new": "\\underline{Soit} $B$ \\underline{un ensemble fini},\n$\\{A_i\\}$ \\underline{un recouvrement fini par des sous-ensembles}. \\underline{Alors}"
+  },
+  "note": ""
+ },
+ {
+  "page": 413,
+  "where": "proof of 3.7, display of the Leray spectral sequence",
+  "scan": "E_1^{p,q} = ⊕_q H^p(A_{i_o}∩...∩A_{i_q}, Q) ⟹ H^{p+q}(B, Q) (only q under ⊕)",
+  "tex": "E_1^{p,q}=\\bigoplus_q",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "E_1^{p,q}=\\bigoplus_{i_0<\\cdots<i_q}",
+  "note": "The TeX keeps the printed reading. The sum runs over the indices i_0<...<i_q."
+ },
+ {
+  "page": 413,
+  "where": "line after the Leray display: 'Euler-Poincaré'",
+  "scan": "Euler-Poincaré with the typed hyphen (as in sous-schémas)",
+  "tex": "Euler--Poincaré",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Euler--Poincaré",
+   "new": "Euler-Poincaré"
+  },
+  "note": "The TeX's -- gives an en dash (global issue 74)."
+ },
+ {
+  "page": 413,
+  "where": "Lemme 3.8, label",
+  "scan": "Lemme 3.8. with only the word 'Lemme' underlined",
+  "tex": "\\underline{Lemme 3.8.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Lemme 3.8.}",
+   "new": "\\underline{Lemme} 3.8."
+  },
+  "note": ""
+ },
+ {
+  "page": 413,
+  "where": "Lemme 3.8, statement",
+  "scan": "underlined: Si / est un recouvrement fini de / par des sous-schémas, / alors; not underlined: {U_i}, X",
+  "tex": "one \\underline over the statement, including {U_i} and X",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Si $\\{U_i\\}$ est un recouvrement fini de\n$X$ par des sous-schémas, alors}",
+   "new": "\\underline{Si} $\\{U_i\\}$ \\underline{est un recouvrement fini de}\n$X$ \\underline{par des sous-schémas, alors}"
+  },
+  "note": "The inner comma is left inside the underline (global rule)."
+ },
+ {
+  "page": 413,
+  "where": "Lemme 3.9, label",
+  "scan": "Lemme 3.9. with only the word 'Lemme' underlined",
+  "tex": "\\underline{Lemme 3.9.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Lemme 3.9.}",
+   "new": "\\underline{Lemme} 3.9."
+  },
+  "note": ""
+ },
+ {
+  "page": 413,
+  "where": "Lemme 3.9, statement",
+  "scan": "underlined: Supposons que la formule / ou ce qui revient au même / i / e / soit vraie pour / une hypersurface projective / Alors elle est vraie pour tout / séparé de type fini; not underlined: (3.4.1), the parentheses, (3.1.2), (3.1.1), the dots of i.e., X twice, the full stops",
+  "tex": "one \\underline over the whole statement, including the references and X",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Supposons que la formule (3.4.1) (ou ce qui\nrevient au même, (3.1.2) i.e. (3.1.1)) soit vraie pour $X$ une hypersurface\nprojective. Alors elle est vraie pour tout $X$ séparé de type fini.}",
+   "new": "\\underline{Supposons que la formule} (3.4.1) (\\underline{ou ce qui\nrevient au même}, (3.1.2) \\underline{i}.\\underline{e}. (3.1.1)) \\underline{soit vraie pour} $X$ \\underline{une hypersurface\nprojective}. \\underline{Alors elle est vraie pour tout} $X$ \\underline{séparé de type fini}."
+  },
+  "note": "In i.e. only the two letters are underlined (checked at 6x)."
+ },
+ {
+  "page": 414,
+  "where": "proof of 3.9, line 4: 'pour déduire (3.1.3)'",
+  "scan": "pour déduire (3.1.3) pour P^n - ∩ H_i",
+  "tex": "pour déduire (3.1.3) pour",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "pour déduire (3.4.1) pour",
+  "note": "The TeX keeps the printed reading. Exposé XXII has no formula (3.1.3); what 3.8 and 3.5 give for the open cover is the congruence (3.4.1) for P^n - ∩H_i (the proof says (3.4.1) on either side of this sentence). Correct together with the next finding; the acknowledgement on p. 410 cites the same nonexistent (3.1.3)."
+ },
+ {
+  "page": 414,
+  "where": "proof of 3.9, line 6: 'donne 3.1.3 pour tout X quasi-projectif'",
+  "scan": "donne 3.1.3 pour tout X quasi-projectif",
+  "tex": "donne 3.1.3 pour tout",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "donne 3.4.1 pour tout",
+  "note": "The TeX keeps the printed reading. Same stale reference as (3.1.3) two lines above; correct both or neither."
+ },
+ {
+  "page": 414,
+  "where": "(4.0.3), first case",
+  "scan": "q^ν si χ = 0",
+  "tex": "\\text{si }\\chi=0",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\text{si }x=0",
+  "note": "The TeX keeps the printed χ. The sum Σ_y χ(xy) is q^ν exactly when x = 0."
+ },
+ {
+  "page": 414,
+  "where": "(4.0.3), second case",
+  "scan": "0 si χ ≠ 0",
+  "tex": "\\text{si }\\chi\\ne0",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\text{si }x\\ne0",
+  "note": "The TeX keeps the printed χ."
+ },
+ {
+  "page": 414,
+  "where": "last line: 'Pour χ = (χ_1,...,χ_{n+2})'",
+  "scan": "Pour χ = (χ_1,...,χ_{n+2}) ∈ (F*_{q^ν})^{n+2}, on a donc",
+  "tex": "Pour $\\chi=(\\chi_1,\\ldots,\\chi_{n+2})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Pour $x=(x_1,\\ldots,x_{n+2})",
+  "note": "The TeX keeps the printed χ. (4.0.4) and 'En sommant (4.0.4) sur x ∈ ...' use the point x."
+ },
+ {
+  "page": 415,
+  "where": "(4.0.4), index of the first sum",
+  "scan": "Σ_{X_o ∈ F*_{q^ν}} with a capital X (cap height, as the digits; the second sum has a small x_o)",
+  "tex": "\\sum_{X_0\\in\\mathbb F_{q^\\nu}^*}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\sum_{x_0\\in\\mathbb F_{q^\\nu}^*}",
+  "note": "The TeX keeps the printed capital X."
+ },
+ {
+  "page": 415,
+  "where": "(4.1.0), the exponential",
+  "scan": "exp(2π i tr_{F_{q^ν}/F_p}(x) = ξ_p^{...}: the parenthesis opened after exp is never closed, and there is no /p",
+  "tex": "\\exp\\!\\left(2\\pi i\\,\\operatorname{tr}_{\\mathbb F_{q^\\nu}/\\mathbb F_p}(x)\\right.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\exp\\!\\left(2\\pi i\\,\\operatorname{tr}_{\\mathbb F_{q^\\nu}/\\mathbb F_p}(x)/p\\right)",
+  "note": "The TeX keeps the printed reading (\\right.). Besides the missing closing parenthesis, the division by p is missing: exp(2πi·n) = 1 for an integer n, and the right-hand side ξ_p^{tr(x)} needs the exponent 2πi tr(x)/p. If the corrected layer should only close the parenthesis, use (x)\\right)."
+ },
+ {
+  "page": 415,
+  "where": "(4.1.0), exponent of ξ_p",
+  "scan": "ξ_p^{tr_{F_{q^ν}/ℍ_p}(x)}: the second field is a typed double-struck H (right stem and crossbar; the first trace and the F just before it are double-struck F; checked at 6x)",
+  "tex": "=\\xi_p^{\\operatorname{tr}_{\\mathbb F_{q^\\nu}/\\mathbb F_p}(x)}.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "/\\mathbb F_p}(x)}.",
+   "new": "/\\mathbb H_p}(x)}."
+  },
+  "corrected": "/\\mathbb F_p}(x)}.",
+  "note": "The TeX silently corrects ℍ_p to 𝔽_p; the fix restores the printed reading. The trace goes to F_p, as in the first trace of the line."
+ }
+]

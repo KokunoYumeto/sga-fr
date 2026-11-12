@@ -1,0 +1,778 @@
+[
+ {
+  "page": 166,
+  "where": "first sentence, 'se factorise (de manière unique) à travers 5.3.3'",
+  "scan": "'(de manière unique)' between parentheses",
+  "tex": "se factorise de manière unique (no parentheses)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "se factorise de manière unique",
+   "new": "se factorise (de manière unique)"
+  },
+  "note": ""
+ },
+ {
+  "page": 166,
+  "where": "(5.3.4), end of the display",
+  "scan": "a comma after the display: '(E ⊗_K F) ⊗_{A^e} A   ,'",
+  "tex": "no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(E\\lten_KF)\\lten_{A^e}A",
+   "new": "(E\\lten_KF)\\lten_{A^e}A,"
+  },
+  "note": ""
+ },
+ {
+  "page": 166,
+  "where": "'D'autre part, 5.3.3 se dérive en une flèche de D(K), dite flèche d'évaluation,'",
+  "scan": "'flèche d'évaluation' underlined ('dite' not)",
+  "tex": "not underlined",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dite flèche d'évaluation,",
+   "new": "dite \\emph{flèche d'évaluation},"
+  },
+  "note": "\\emph is the file's command for the print's underline in Exposé III, whose typescript III B continues (as in the findings of pp. 141-150); Exposé III B has no underline markup of its own."
+ },
+ {
+  "page": 166,
+  "where": "'tel que RHom_A(E,F) ∈ ob D^b(A°) : on dérive d'abord 5.3.2'",
+  "scan": "' : on dérive' (colon, small o)",
+  "tex": "'. On dérive' (full stop, capital O)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(A^\\circ)$. On dérive",
+   "new": "(A^\\circ)$ : on dérive"
+  },
+  "note": ""
+ },
+ {
+  "page": 166,
+  "where": "'d'abord 5.3.2 en une flèche de D^-((A^e)°)', before (5.3.6)",
+  "scan": "no comma after D^-((A^e)°) (clear at 2x)",
+  "tex": "$D^-((A^e)^\\circ)$, (comma added)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$D^-((A^e)^\\circ)$,",
+   "new": "$D^-((A^e)^\\circ)$"
+  },
+  "note": ""
+ },
+ {
+  "page": 166,
+  "where": "number of no. 5.4",
+  "scan": "'5.4.' with a full stop",
+  "tex": "\\subsubsection*{5.4}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{5.4}",
+   "new": "\\subsubsection*{5.4.}"
+  },
+  "note": "As '1.1.' on p. 140."
+ },
+ {
+  "page": 166,
+  "where": "'La flèche 5.4.1 se dérive en une flèche de D(K)'",
+  "scan": "begins a new, indented paragraph",
+  "tex": "runs on after '... E ⊗_K Hom_A(E,F) → F.' in the same paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\to F$. La flèche 5.4.1",
+   "new": "\\to F$.\n\nLa flèche 5.4.1"
+  },
+  "note": ""
+ },
+ {
+  "page": 166,
+  "where": "'dite flèche de produit tensoriel,'",
+  "scan": "'flèche de produit tensoriel' underlined (across the break 'pro-/duit')",
+  "tex": "not underlined",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dite flèche de produit tensoriel,",
+   "new": "dite \\emph{flèche de produit tensoriel},"
+  },
+  "note": ""
+ },
+ {
+  "page": 167,
+  "where": "'le premier membre de 5.4.2 s'identifie en effet à Hom^•_A(E,F) ⊗_A G'",
+  "scan": "Hom underlined (as in 5.4.1)",
+  "tex": "\\Hom_A^\\bullet (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\Hom_A^\\bullet(E,F)\\otimes_AG$",
+   "new": "$\\uHom_A^\\bullet(E,F)\\otimes_AG$"
+  },
+  "note": ""
+ },
+ {
+  "page": 167,
+  "where": "'la flèche naturelle Hom^•_A(E,F ⊗_A G) ⟶ RHom_A(E,F ⊗_A G) = ...'",
+  "scan": "Hom underlined",
+  "tex": "\\Hom_A^\\bullet (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom_A^\\bullet(E,F\\otimes_AG)\\longrightarrow",
+   "new": "\\uHom_A^\\bullet(E,F\\otimes_AG)\\longrightarrow"
+  },
+  "note": ""
+ },
+ {
+  "page": 167,
+  "where": "'La flèche 5.4.2 n'est pas en général un isomorphisme.'",
+  "scan": "begins a new, indented paragraph after the formula",
+  "tex": "no blank line after \\]: runs on",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nLa flèche 5.4.2",
+   "new": "\\]\n\nLa flèche 5.4.2"
+  },
+  "note": ""
+ },
+ {
+  "page": 167,
+  "where": "'Elle l'est cependant certains cas importants'",
+  "scan": "'cepen-/dant certains cas importants': no 'dans' (clear at 1.2x)",
+  "tex": "cependant dans certains (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "cependant dans certains",
+   "new": "cependant certains"
+  },
+  "corrected": "cependant dans certains",
+  "note": "Missing word. The TeX silently supplies it; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 167,
+  "where": "'par exemple si E est parfait (comme on le vérifie'",
+  "scan": "'parfait' underlined",
+  "tex": "not underlined",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est parfait (comme",
+   "new": "est \\emph{parfait} (comme"
+  },
+  "note": ""
+ },
+ {
+  "page": 167,
+  "where": "'b) F = M ⊗_K A , avec M ∈ ob D^+(K) (au n° 6, M sera un complexe dualisant, ...'",
+  "scan": "an opening parenthesis before 'au n° 6'",
+  "tex": "'$; au numéro 6,' (semicolon, no parenthesis)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "D^+(K)$; au",
+   "new": "D^+(K)$ (au"
+  },
+  "note": "Apply together with the closing parenthesis after '6.5.6' (two findings below)."
+ },
+ {
+  "page": 167,
+  "where": "same place, 'au n° 6'",
+  "scan": "'n°' (abbreviation)",
+  "tex": "numéro (written out)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "numéro 6",
+   "new": "n\\textsuperscript{o}~6"
+  },
+  "note": "The file writes n\\textsuperscript{o}~5 in the introduction of Exposé III B."
+ },
+ {
+  "page": 167,
+  "where": "'voir notamment 6.3.2 , 6.4.1, 6.5.6).'",
+  "scan": "a closing parenthesis before the full stop",
+  "tex": "6.5.6. (no parenthesis)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "6.5.6.",
+   "new": "6.5.6)."
+  },
+  "note": "Pairs with the opening parenthesis before 'au n° 6'."
+ },
+ {
+  "page": 167,
+  "where": "number of no. 5.5",
+  "scan": "'5.5.' with a full stop",
+  "tex": "\\subsubsection*{5.5}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{5.5}",
+   "new": "\\subsubsection*{5.5.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 167,
+  "where": "5.5, 'Notons DF(A) la cétégorie dérivée des complexes'",
+  "scan": "'cétégorie' (é for a), clear at 2x",
+  "tex": "catégorie (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "la catégorie dérivée",
+   "new": "la cétégorie dérivée"
+  },
+  "corrected": "la catégorie dérivée",
+  "note": "Typing error. The TeX silently corrects; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 167,
+  "where": "5.5, 'on a des flèches \"dérivées filtrées\" analogues à 5.3.4'",
+  "scan": "'dérivées filtrées' between typewriter double quotes",
+  "tex": "no quotes",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "flèches dérivées filtrées analogues",
+   "new": "flèches ``dérivées filtrées'' analogues"
+  },
+  "note": ""
+ },
+ {
+  "page": 167,
+  "where": "number of no. 5.6",
+  "scan": "'5.6.' with a full stop",
+  "tex": "\\subsubsection*{5.6}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{5.6}",
+   "new": "\\subsubsection*{5.6.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 167,
+  "where": "5.6, 'complexes d'amplitude parfaite finie, i.e. parfaits et de tor-dimension finie'",
+  "scan": "'i.e.'",
+  "tex": "c'est-à-dire (abbreviation written out)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "finie, c'est-à-dire parfaits",
+   "new": "finie, i.e. parfaits"
+  },
+  "note": ""
+ },
+ {
+  "page": 167,
+  "where": "'On définit une flèche canonique, dite trace,'",
+  "scan": "'trace' underlined",
+  "tex": "not underlined",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dite trace,",
+   "new": "dite \\emph{trace},"
+  },
+  "note": ""
+ },
+ {
+  "page": 167,
+  "where": "(5.6.1), end of the display",
+  "scan": "a comma after '⊗_{A^e} A'",
+  "tex": "no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow F\\lten_{A^e}A",
+   "new": "\\longrightarrow F\\lten_{A^e}A,"
+  },
+  "note": ""
+ },
+ {
+  "page": 167,
+  "where": "(5.6.1), 'Tr_A = RHom_A(E,F ⊗_A E) ⟶ F ⊗_{A^e} A'",
+  "scan": "'Tr_A =' with an equals sign (clear at 2x)",
+  "tex": "\\Tr_A=\\uRHom_A (keeps the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\Tr_A:\\uRHom_A(E,F\\lten_AE)",
+  "note": "Tr_A is the map RHom_A(E,F⊗E) → F⊗_{A^e}A; the traces 5.6.2-5.6.4 (p. 168) and Tr_K (pp. 168-169) are written 'Tr :'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 168,
+  "where": "(5.6.2) 'Tr_A : Hom_A(E,F ⊗_A E) ⟶ H^0(T,F ⊗_{A^e} A)'",
+  "scan": "plain Hom, not underlined (clear at 2x)",
+  "tex": "\\uHom_A (underlined)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uHom_A(E,F\\lten_AE)\\longrightarrow H^0",
+   "new": "\\Hom_A(E,F\\lten_AE)\\longrightarrow H^0"
+  },
+  "note": "The global Hom (H^0 of the target), as Hom_{DF(A)} below; the print underlines only RHom in 5.6.3."
+ },
+ {
+  "page": 168,
+  "where": "(5.6.4) 'Tr_A : Hom_A(E,E) ⟶ H^0(T,A_♮)'",
+  "scan": "plain Hom, not underlined (clear at 2x)",
+  "tex": "\\uHom_A (underlined)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uHom_A(E,E)",
+   "new": "\\Hom_A(E,E)"
+  },
+  "note": ""
+ },
+ {
+  "page": 168,
+  "where": "'Cette formule entraîne notamment que, pour E ∈ ..., u ∈ Hom_A(E,F ⊗_A E) , on a'",
+  "scan": "plain Hom, not underlined (clear at 2x)",
+  "tex": "\\uHom_A (underlined)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "u\\in\\uHom_A(E,F\\lten_AE)",
+   "new": "u\\in\\Hom_A(E,F\\lten_AE)"
+  },
+  "note": ""
+ },
+ {
+  "page": 168,
+  "where": "'tandis que 5.6.3 est une flèche \"sérieuse\", de nature globale'",
+  "scan": "'sérieuse' between typewriter double quotes",
+  "tex": "no quotes",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "flèche sérieuse,",
+   "new": "flèche ``sérieuse'',"
+  },
+  "note": ""
+ },
+ {
+  "page": 168,
+  "where": "'d'où des flèches analogue à 5.6.2, 5.6.3, 5.6.4'",
+  "scan": "'analogue' without s (clear at 2x)",
+  "tex": "analogues (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "des flèches analogues à 5.6.2",
+   "new": "des flèches analogue à 5.6.2"
+  },
+  "corrected": "des flèches analogues à 5.6.2",
+  "note": "Agreement error. The TeX silently corrects; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 168,
+  "where": "'compatible avec le passage au gradué associé (cf. ([3] V 3.7.2))'",
+  "scan": "'(cf.' at the end of the line, '([3] V 3.7.2)),' on the next: the reference has its own parentheses",
+  "tex": "(cf. [3] V 3.7.2)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(cf. [3] V 3.7.2)",
+   "new": "(cf. ([3] V 3.7.2))"
+  },
+  "note": ""
+ },
+ {
+  "page": 168,
+  "where": "'et on en déduit, comme en (loc. cit.), que'",
+  "scan": "'(loc. cit.)' between parentheses",
+  "tex": "comme en loc. cit., que",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "comme en loc. cit., que",
+   "new": "comme en (loc. cit.), que"
+  },
+  "note": ""
+ },
+ {
+  "page": 168,
+  "where": "(5.6.5) 'Tr_A(u) = Σ_i Tr_A gr^i u'",
+  "scan": "'Tr_A gr^i u' without parentheses",
+  "tex": "\\Tr_A(\\operatorname{gr}^i u) (parentheses added)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tr_A(\\operatorname{gr}^i u)",
+   "new": "\\Tr_A\\operatorname{gr}^i u"
+  },
+  "note": ""
+ },
+ {
+  "page": 168,
+  "where": "number of no. 5.7",
+  "scan": "'5.7.' with a full stop",
+  "tex": "\\subsubsection*{5.7}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{5.7}",
+   "new": "\\subsubsection*{5.7.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 168,
+  "where": "5.7, 'les traces commutatives \"usuelles\" ((SGA 6 I), ([3] V 3))'",
+  "scan": "'usuelles' between typewriter double quotes",
+  "tex": "no quotes",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "commutatives usuelles",
+   "new": "commutatives ``usuelles''"
+  },
+  "note": ""
+ },
+ {
+  "page": 168,
+  "where": "5.7, '([3] V 3)), et les traces'",
+  "scan": "a comma after '([3] V 3))'",
+  "tex": "no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "([3] V 3)) et les",
+   "new": "([3] V 3)), et les"
+  },
+  "note": ""
+ },
+ {
+  "page": 168,
+  "where": "5.7, 'les traces \"non commutatives\" de Stallings [5]'",
+  "scan": "'non commutatives' between typewriter double quotes (the a of 'commutatives' overtyped)",
+  "tex": "no quotes",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "traces non commutatives",
+   "new": "traces ``non commutatives''"
+  },
+  "note": ""
+ },
+ {
+  "page": 168,
+  "where": "'a) Supposons A = K .'",
+  "scan": "'a)' with a closing parenthesis only",
+  "tex": "(a)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(a) Supposons",
+   "new": "a) Supposons"
+  },
+  "note": ""
+ },
+ {
+  "page": 169,
+  "where": "first sentence, 'définie en ([3] V 3.7.1) (dans le cas particulier où ...'",
+  "scan": "a parenthesis opens before 'dans le cas particulier'",
+  "tex": "'([3] V 3.7.1), dans le cas' (comma, no parenthesis)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "([3] V 3.7.1), dans le cas",
+   "new": "([3] V 3.7.1) (dans le cas"
+  },
+  "note": "Apply together with the closing parenthesis after 'réduit à A' (two findings below)."
+ },
+ {
+  "page": 169,
+  "where": "'où le complexe K de (loc. cit.) est réduit à A'",
+  "scan": "'(loc. cit.)' between parentheses",
+  "tex": "de loc. cit. est",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de loc. cit. est",
+   "new": "de (loc. cit.) est"
+  },
+  "note": ""
+ },
+ {
+  "page": 169,
+  "where": "'est réduit à A ). En particulier,'",
+  "scan": "a closing parenthesis after A",
+  "tex": "réduit à $A$. (no parenthesis)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "réduit à $A$. En",
+   "new": "réduit à $A$). En"
+  },
+  "note": "Pairs with the opening parenthesis before 'dans le cas particulier'."
+ },
+ {
+  "page": 169,
+  "where": "'b) On suppose à nouveau'",
+  "scan": "'b)' with a closing parenthesis only",
+  "tex": "(b)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(b) On suppose",
+   "new": "b) On suppose"
+  },
+  "note": ""
+ },
+ {
+  "page": 169,
+  "where": "'une K-algèbre plate (non nécessairement commutative).'",
+  "scan": "'(non nécessairement commutative)' between parentheses",
+  "tex": "'plate, non nécessairement commutative.'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "plate, non nécessairement commutative.",
+   "new": "plate (non nécessairement commutative)."
+  },
+  "note": ""
+ },
+ {
+  "page": 169,
+  "where": "'pour E strictement parfait (i.e. borné, ...'",
+  "scan": "a parenthesis opens before 'i.e.'",
+  "tex": "'parfait, c'est-à-dire' (comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$E$ strictement parfait, ",
+   "new": "$E$ strictement parfait ("
+  },
+  "note": "Apply together with the closing parenthesis after 'de type fini' (three findings below)."
+ },
+ {
+  "page": 169,
+  "where": "same place, '(i.e. borné,'",
+  "scan": "'i.e.'",
+  "tex": "c'est-à-dire (abbreviation written out)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "c'est-à-dire borné",
+   "new": "i.e. borné"
+  },
+  "note": ""
+ },
+ {
+  "page": 169,
+  "where": "'à composantes localement facteurs directs de modules libre de type fini'",
+  "scan": "'libre' without s (clear at 1x)",
+  "tex": "libres (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "modules libres",
+   "new": "modules libre"
+  },
+  "corrected": "modules libres",
+  "note": "Agreement error. The TeX silently corrects; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 169,
+  "where": "'de modules libre de type fini). Tout d'abord'",
+  "scan": "a closing parenthesis after 'fini'",
+  "tex": "type fini. (no parenthesis)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "type fini. Tout",
+   "new": "type fini). Tout"
+  },
+  "note": "Pairs with the opening parenthesis before 'i.e.'."
+ },
+ {
+  "page": 169,
+  "where": "'que nous noterons a ⟼ a_♮ , donc si d_a désigne'",
+  "scan": "a comma after a_♮",
+  "tex": "a semicolon",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "a_\\natural$; donc si",
+   "new": "a_\\natural$, donc si"
+  },
+  "note": ""
+ },
+ {
+  "page": 169,
+  "where": "'L'isomorphisme 5.4.2 pour F = A , G = E s'écrit'",
+  "scan": "no comma after '5.4.2' and none after 'G = E'",
+  "tex": "'5.4.2, pour $F=A$, $G=E$, s'écrit' (two commas added)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "5.4.2, pour $F=A$, $G=E$, s'écrit",
+   "new": "5.4.2 pour $F=A$, $G=E$ s'écrit"
+  },
+  "note": ""
+ },
+ {
+  "page": 169,
+  "where": "(5.7.2) 'Tr_A(u) = Σ_i u_{ii♮}'",
+  "scan": "no parentheses: the hand-drawn ♮ stands lower right of the index ii",
+  "tex": "(u_{ii})_\\natural (parentheses added)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sum_i (u_{ii})_\\natural",
+   "new": "\\sum_i u_{ii_\\natural}"
+  },
+  "note": "The ♮ sits below the level of ii, as a subscript of the subscript."
+ },
+ {
+  "page": 169,
+  "where": "'est un homomorphisme de complexes, on a, par 5.6.5, 5.6.6,'",
+  "scan": "'par 5.6.5, 5.6.6,' (comma, no 'et')",
+  "tex": "par 5.6.5 et 5.6.6, ('et' added)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "par 5.6.5 et 5.6.6,",
+   "new": "par 5.6.5, 5.6.6,"
+  },
+  "note": ""
+ },
+ {
+  "page": 169,
+  "where": "(5.7.4) 'Tr_A(u) = Σ(-1)^i Tr_A(u^i)'",
+  "scan": "Σ without an index (clear at 3x)",
+  "tex": "\\sum_i (index added)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sum_i(-1)^i",
+   "new": "\\sum(-1)^i"
+  },
+  "note": ""
+ },
+ {
+  "page": 170,
+  "where": "'d'un homomorphisme de complexes Hom^•_A(E,E) ⟶ A (5.6.3)'",
+  "scan": "target 'A' with no ♮ (clear at 2.5x)",
+  "tex": "\\uHom_A^\\bullet(E,E)\\to A (keeps the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\uHom_A^\\bullet(E,E)\\to A_\\natural",
+  "note": "5.6.3 is Tr_A : RHom_A(E,E) → A_♮, and a trace is defined only modulo commutators (5.7.1: Tr_A(d_a) = a_♮); the hand-drawn ♮ seems left out here. The TeX keeps the printed reading."
+ },
+ {
+  "page": 170,
+  "where": "'pour tout endomorphisme u de E dans D(A) , et, combinées à 5.7.5,'",
+  "scan": "a comma after D(A)",
+  "tex": "no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $D(A)$ et, combinées",
+   "new": "dans $D(A)$, et, combinées"
+  },
+  "note": ""
+ },
+ {
+  "page": 170,
+  "where": "'on retrouve la définition de (SGA 4^{1/2} Rapport 4.3).'",
+  "scan": "no comma after 4^{1/2}",
+  "tex": "(SGA $4^{1/2}$, Rapport 4.3) (comma added)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$4^{1/2}$, Rapport",
+   "new": "$4^{1/2}$ Rapport"
+  },
+  "note": ""
+ },
+ {
+  "page": 170,
+  "where": "number of no. 5.8",
+  "scan": "'5.8.' with a full stop",
+  "tex": "\\subsubsection*{5.8}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsubsection*{5.8}",
+   "new": "\\subsubsection*{5.8.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 170,
+  "where": "(5.8.1), the three isomorphism signs",
+  "scan": "each sign is a long horizontal line with a tilde above it and no arrowhead (a stretched ≃; clear at 4x)",
+  "tex": "\\xrightarrow{\\sim} (arrows)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "A\\xrightarrow{\\sim}P\\otimes_{A^e}Q\\xrightarrow{\\sim}(Q\\otimes_AP)\\otimes_{A^e}A\\xrightarrow{\\sim}A",
+   "new": "A\\simeq P\\otimes_{A^e}Q\\simeq(Q\\otimes_AP)\\otimes_{A^e}A\\simeq A"
+  },
+  "note": "The other arrows of the page have their heads; 5.8.2 has the short ≃ (\\simeq in the TeX)."
+ },
+ {
+  "page": 170,
+  "where": "'pour y ∈ P , y ∈ Q , a, b ∈ K'",
+  "scan": "'y ∈ P' (clear at 1.2x)",
+  "tex": "$y\\in P$ (keeps the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$x\\in P$",
+  "note": "The generators are axb ⊗ y - x ⊗ bya with x in P and y in Q. The TeX keeps the printed reading."
+ },
+ {
+  "page": 170,
+  "where": "same line, 'a, b ∈ K'",
+  "scan": "'a, b ∈ K' (clear at 1.2x)",
+  "tex": "$a,b\\in K$ (keeps the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$a,b\\in A$",
+  "note": "For a, b in K (central) axb ⊗ y - x ⊗ bya is 0, so the quotient would be P ⊗_K Q, not P ⊗_{A^e} Q: a, b run through A. The TeX keeps the printed reading."
+ },
+ {
+  "page": 170,
+  "where": "'D'autre part, la flèche de composition au niveau des modules,'",
+  "scan": "a comma after 'modules' ('mo-/dules,')",
+  "tex": "no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "au niveau des modules\n\\[",
+   "new": "au niveau des modules,\n\\["
+  },
+  "note": ""
+ },
+ {
+  "page": 170,
+  "where": "first line of the composition display, '... ⟶ Hom_A(E,P ⊗_A Q ⊗_A E)'",
+  "scan": "no comma at the end of the line (the comma follows 'f ⊗ g ⟼ (P ⊗_A g)f' on the next line)",
+  "tex": "comma after the first line",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "P\\otimes_AQ\\otimes_AE),",
+   "new": "P\\otimes_AQ\\otimes_AE)"
+  },
+  "note": ""
+ }
+]

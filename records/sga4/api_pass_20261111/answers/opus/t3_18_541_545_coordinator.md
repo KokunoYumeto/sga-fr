@@ -1,0 +1,2 @@
+Counts: p541 1/1, p542 2/1, p543 0/0, p544 0/4, p545 1/0 (normal/misprint).
+Convention: where the print writes f_*, u^*, N_{X_1/X_2} and m without bars or indices, the TeX writes \bar f_*, \bar u^*, N_{\bar X_1/\bar X_2}, \mathfrak{m}_1 and \mathfrak{m}_2. Examples: p541 \bar{f}_{\ast}\GG_{m}(\mathfrak{m}); p542 R^1\bar{f}_{1\ast}\GG_m(\mathfrak{m}_1); p542 \Ext^{1}(\bar{u}^{\ast},\Id). Reported as silently corrected misprints.

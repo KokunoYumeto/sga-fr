@@ -1,0 +1,1 @@
+p66 1/0; p67 0/1; p68 1/1; p69 1/0; p70 1/1. Convention: on these pages \sisi{A}{B} consistently holds the correction in A and the print's reading in B (p68 F(V''), p69 U∩V', p70 X∩L); check whether this reversal is systematic in the file before applying the swaps.

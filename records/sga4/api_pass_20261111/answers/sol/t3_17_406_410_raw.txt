@@ -1,0 +1,152 @@
+{
+  "findings": [
+    {
+      "page": 406,
+      "where": "First paragraph, geometric generic fibre",
+      "scan": "$X_{\\bar{\\eta}}$ de $X$ sur $S$",
+      "tex": "$X_{\\bar{\\eta}}$ de $X$ sur\n$S$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$X'_{\\bar{\\eta}}$ de $X'$ sur $S$",
+      "note": "Both primes are omitted in print: the family over S is X', whereas X is over k. The TeX keeps the printed reading."
+    },
+    {
+      "page": 407,
+      "where": "Diagram (5.5.27.1), upper horizontal arrow",
+      "scan": "k^{k}",
+      "tex": "k^{\\sisi{k}{n}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "k^{n}",
+      "note": "The printed exponent is k instead of n. The TeX records and corrects it with \\sisi."
+    },
+    {
+      "page": 408,
+      "where": "Formula (5.5.28.1), target",
+      "scan": "R\\Gamma(\\Sym^{n}(D,\\ZZ/\\ell)",
+      "tex": "R\\Gamma(\\Sym^{n}(D\\sisi{}{)},\\ZZ/\\ell)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R\\Gamma(\\Sym^{n}(D),\\ZZ/\\ell)",
+      "note": "The closing parenthesis after D is missing in print. The TeX supplies it with \\sisi."
+    },
+    {
+      "page": 408,
+      "where": "Conclusion of 5.5.28, vanishing of cohomology",
+      "scan": "Les $H^{i}$ des deux membres de 5.5.28.1 sont donc nuls",
+      "tex": "Les $H^{i}$ des deux membres de \\eqhyperref[XVII.eq5.5.28.1]{5.5.28.1} sont donc nuls",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Les $H^{i}$ ($i\\ne 0$) des deux membres de \\eqhyperref[XVII.eq5.5.28.1]{5.5.28.1} sont donc nuls",
+      "note": "The restriction i≠0 is missing: both H^0 are identified with Z/ℓ immediately above. The TeX keeps the omission."
+    },
+    {
+      "page": 408,
+      "where": "5.5.29, definition of p",
+      "scan": "p:X\\longrightarrow X",
+      "tex": "p:X\\rightarrow \\sisi{X}{S}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "p:X\\rightarrow S",
+      "note": "The printed target X should be S. The TeX records and corrects this with \\sisi."
+    },
+    {
+      "page": 408,
+      "where": "5.5.29(b), equivariance of the tensor product",
+      "scan": "\\Sf_{n}-équivariant",
+      "tex": "\\mathcal{G}_n-équivariant",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\mathcal{G}_n",
+        "new": "\\Sf_{n}"
+      },
+      "note": "The handwritten sign is the symmetric-group sign, as in the quotient on page 406, not a calligraphic G."
+    },
+    {
+      "page": 409,
+      "where": "Formula (5.5.29.1), index on the symmetric-group sign",
+      "scan": "(\\sigma_{\\ast}\\bigotimes^{n}\\underline{F})^{\\Sf^{n}}",
+      "tex": "(\\sigma_{\\ast}\\bigotimes^{n}ℱ)^{\\Sf^{n}}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "(\\sigma_{\\ast}\\bigotimes^{n}ℱ)^{\\Sf_{n}}",
+      "note": "The n on the symmetric-group sign is printed as a superscript rather than the subscript used in the preceding definition. The TeX keeps it."
+    },
+    {
+      "page": 409,
+      "where": "First paragraph, definition of the derived functor",
+      "scan": "\\Gamma^{n}_{\\ext}",
+      "tex": "\\Gamma^{m}_{\\text{\\rm ext}}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Gamma^{m}_{\\text{\\rm ext}}",
+        "new": "\\Gamma^{n}_{\\text{\\rm ext}}"
+      },
+      "note": "Both scans show exponent n, not m."
+    },
+    {
+      "page": 409,
+      "where": "Exact sequence following the flat presentation, last term",
+      "scan": "\\Gamma^{n}_{\\ext}(F)",
+      "tex": "\\Gamma^{n}_{\\ext}(\\sisi{F}{ℱ})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Gamma^{n}_{\\ext}(ℱ)",
+      "note": "The print omits the underline distinguishing the sheaf F. The TeX records the ordinary F and corrects it to ℱ with \\sisi."
+    },
+    {
+      "page": 409,
+      "where": "Formula (5.5.29.2), argument of the divided power on the right",
+      "scan": "\\Gamma_{\\Oo_{S}}^{n_{i}}(F_{y_{i}})",
+      "tex": "\\Gamma_{\\Oo_{S}}^{n_{i}}(\\sisi{F}{ℱ}_{y_{i}})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Gamma_{\\Oo_{S}}^{n_{i}}(ℱ_{y_{i}})",
+      "note": "The underline on the sheaf F is missing in print. The TeX records and corrects this with \\sisi."
+    },
+    {
+      "page": 409,
+      "where": "Sentence following (5.5.29.2), free stalks",
+      "scan": "les fibres de $F$ sont libres",
+      "tex": "les fibres de $\\sisi{F}{ℱ}$ sont libres",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "les fibres de $ℱ$ sont libres",
+      "note": "The print again omits the underline distinguishing the sheaf. The TeX corrects it with \\sisi."
+    },
+    {
+      "page": 410,
+      "where": "5.5.31, first sentence",
+      "scan": "formé des complexes",
+      "tex": "formé des complexes",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "formée des complexes",
+      "note": "The adjective agrees with « la sous-catégorie ». The TeX keeps the printed formé."
+    },
+    {
+      "page": 410,
+      "where": "Condition (5.5.31.1), coefficient sheaf",
+      "scan": "C^{b,\\geq 0}(X,O_{X})",
+      "tex": "C^{b,\\geq 0}(X,\\sisi{O}{\\Oo}_{X})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "C^{b,\\geq 0}(X,\\Oo_{X})",
+      "note": "The print has an ordinary O instead of the structure-sheaf letter used elsewhere. The TeX records and corrects it with \\sisi."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 406: 0/1; 407: 0/1; 408: 1/3; 409: 1/4; 410: 0/2."
+}

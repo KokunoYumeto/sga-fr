@@ -1,0 +1,1 @@
+516: 0/2; 517: 3/1; 518: 6/3; 519: 0/2; 520: 0/1. The ⟨f,g⟩ display at the end of p. 517 is duplicated as lines 1-4 of p. 518's TeX; it is reported on p. 517 only. Pp. 517-518 hold several sign and argument rewrites made by the edition (signalled only by a N.D.E., not by \sisi); they are reported as content differences.

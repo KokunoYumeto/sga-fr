@@ -1,0 +1,270 @@
+[
+ {
+  "page": 261,
+  "where": "Début de la page, titre du lemme 5.4",
+  "scan": "Lemme 5.4 : Soient E un topos localement cohérent...",
+  "tex": "Soient $E$\\pageoriginale un topos localement cohérent",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "La page commence au titre « Lemme 5.4 ». L'ouverture de cet énoncé précède le début du fragment fourni et doit être récupérée dans la découpe voisine, sans ajouter un second titre au fichier source."
+ },
+ {
+  "page": 261,
+  "where": "Lemme 5.4, première phrase de la preuve",
+  "scan": "un système inductif filtrant",
+  "tex": "un système inductif filtrante",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "un système inductif filtrante",
+   "new": "un système inductif filtrant"
+  },
+  "note": "Le scan ne porte pas de e final à « filtrant »."
+ },
+ {
+  "page": 261,
+  "where": "Lemme 5.4, indice de la famille couvrante",
+  "scan": "(X_\\alpha \\to X)_{\\alpha\\in\\Lambda}",
+  "tex": "(X_{\\alpha} \\to X)_{\\alpha \\in A}",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "X)_{\\alpha \\in A}",
+   "new": "X)_{\\alpha \\in \\Lambda}"
+  },
+  "note": "L'ensemble d'indices est désigné par un lambda majuscule dans le scan."
+ },
+ {
+  "page": 261,
+  "where": "Lemme 5.4, « par des objets de C »",
+  "scan": "par des objets de $C^{\\bullet}$",
+  "tex": "$C^{\\bigdot}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$C$",
+  "note": "Le point en exposant est déjà dans l'imprimé et le TeX le conserve. Les objets de la famille couvrante sont des objets de la catégorie C, non du complexe C à point."
+ },
+ {
+  "page": 261,
+  "where": "Lemme 5.4, dernier terme de la chaîne d'égalités après « Donc »",
+  "scan": "\\varinjlim_i C^{\\bullet}(\\mathfrak{X},F_i))=0",
+  "tex": "\\varinjlim_i C^{\\bigdot}(\\mathfrak{X}, F_i)) = 0",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\varinjlim_i H^q(C^{\\bigdot}(\\mathfrak{X}, F_i)) = 0",
+  "note": "L'imprimé omet H^q devant le complexe dans le dernier terme, laissant aussi une parenthèse fermante sans ouverture correspondante. Le TeX conserve cette omission."
+ },
+ {
+  "page": 261,
+  "where": "Corollaire 5.5, définition de la famille de fermés",
+  "scan": "la famille des fermés de E (IV 9) contenue dans le fermé complémentaire de l'un des X_i",
+  "tex": "contenue dans le fermé complémentaire de l'un des $X_i$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "contenus dans le fermé complémentaire de l'un des $X_i$",
+  "note": "Le qualificatif doit porter sur les fermés : chaque fermé est contenu dans le complémentaire d'un des X_i. Le TeX conserve « contenue », qui rattache fautivement ce qualificatif à la famille entière."
+ },
+ {
+  "page": 261,
+  "where": "Corollaire 5.5, second foncteur de l'énoncé",
+  "scan": "H^q_\\Phi(E,-) et \\underline{H}^q_\\Phi",
+  "tex": "$H^q_{\\Phi} (E, -)$ et $H^q_{\\Phi}$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "et $H^q_{\\Phi}$",
+   "new": "et $\\Hh^q_{\\Phi}$"
+  },
+  "note": "Le second H est souligné pour désigner le faisceau de cohomologie, distinct du groupe désigné par le premier H."
+ },
+ {
+  "page": 261,
+  "where": "Corollaire 5.5, introduction de la suite exacte",
+  "scan": "on a une suite exacte",
+  "tex": "on a une suite exact",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "une suite exact",
+   "new": "une suite exacte"
+  },
+  "note": "Le e final d'« exacte » est présent dans le scan."
+ },
+ {
+  "page": 262,
+  "where": "Définition 5.6, numéro de la suite exacte et renvoi dans la preuve de 5.7",
+  "scan": "(5.5.1)",
+  "tex": "\\tag{5.5.1} ; \\eqhyperref[VI.eq5.5.1]{5.5.1}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "5.6.1",
+  "note": "La formule appartient à la définition 5.6 et devrait être numérotée 5.6.1. Le TeX conserve le numéro imprimé 5.5.1, ainsi que son renvoi dans la preuve de 5.7."
+ },
+ {
+  "page": 262,
+  "where": "Définition 5.6, suite exacte (5.5.1)",
+  "scan": "L_{q-1}\\to\\cdots\\to L_1",
+  "tex": "L_{q-1} \\to \\cdots L_1",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "L_{q-1} \\to \\cdots L_1",
+   "new": "L_{q-1} \\to \\cdots \\to L_1"
+  },
+  "note": "La flèche entre les points de suspension et L_1 est présente dans le scan."
+ },
+ {
+  "page": 262,
+  "where": "Définition 5.6, phrase suivant la suite exacte",
+  "scan": "L_p \\simeq A^{n_p}_{/X_i}",
+  "tex": "L_p = A^{n_p}_{/X_i}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "L_p = A^{n_p}_{/X_i}",
+   "new": "L_p \\simeq A^{n_p}_{/X_i}"
+  },
+  "note": "Le scan porte un signe d'isomorphisme, non un signe d'égalité."
+ },
+ {
+  "page": 262,
+  "where": "Proposition 5.7, preuve, formule après « On a »",
+  "scan": "\\Eext^i_A(G,F) : \\Hh^i(\\Hhom_A(L.,F))",
+  "tex": "\\Eext^{i}_A(G, F)\n: \\Hh^{i} (\\Hhom_A(L., F))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Eext^{i}_A(G, F) = \\Hh^{i} (\\Hhom_A(L., F))",
+  "note": "Le deux-points à la place de la relation d'égalité est déjà dans l'imprimé. Le TeX le conserve."
+ },
+ {
+  "page": 262,
+  "where": "5.9, les deux lignes de (5.9.1)",
+  "scan": "\\underline{H}^q_Z F dans les deux termes E_2",
+  "tex": "H^q_Z F dans les deux termes E_2",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "H^q_Z F)\n\\Rightarrow \\Ext^{p+q}_{A, \\Phi} (X; G, F){\\quoi},\\\\\n''E^{pq}_2 = \\varinjlim_{Z \\in \\Phi} \\Eext^p_A (G, H^q_Z F)",
+   "new": "\\Hh^q_Z F)\n\\Rightarrow \\Ext^{p+q}_{A, \\Phi} (X; G, F){\\quoi},\\\\\n''E^{pq}_2 = \\varinjlim_{Z \\in \\Phi} \\Eext^p_A (G, \\Hh^q_Z F)"
+  },
+  "note": "Dans les deux lignes, le H souligné désigne le faisceau de cohomologie à support, non un groupe de cohomologie."
+ },
+ {
+  "page": 262,
+  "where": "Fin de la page et display (5.9.2) inclus dans le fragment",
+  "scan": "La page 262 se termine par « isomorphismes canoniques » ; (5.9.2) ouvre la page 263.",
+  "tex": "\\tag{5.9.2}",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Les lignes source 3395–3400 du display (5.9.2) appartiennent à la page 263, au-delà des seuls éléments de débordement annoncés pour ce fragment. Le display est vérifié sur 263 ; ne pas déplacer ni éditer deux fois ces lignes."
+ },
+ {
+  "page": 263,
+  "where": "Début de page, les deux lignes de (5.9.2)",
+  "scan": "\\underline{H}^q_\\Phi F dans les deux isomorphismes",
+  "tex": "H^q_\\Phi F dans les deux isomorphismes",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "H^q_\\Phi F)&\\quav \\frac{p(p-1)}{2} \\leq r - 1{\\quoi},\\\\\n''E^{pq}_2 \\simeq \\Eext^p_A (G, H^q_\\Phi F)",
+   "new": "\\Hh^q_\\Phi F)&\\quav \\frac{p(p-1)}{2} \\leq r - 1{\\quoi},\\\\\n''E^{pq}_2 \\simeq \\Eext^p_A (G, \\Hh^q_\\Phi F)"
+  },
+  "note": "Les deux H sont soulignés dans le scan : il s'agit des faisceaux de cohomologie à support."
+ },
+ {
+  "page": 263,
+  "where": "Corollaire 5.10, borne sur i",
+  "scan": "G de q-présentation finie ; i(i-1)/2 \\leq r-1",
+  "tex": "\\dfrac{i(i - 1)}{2} \\leq r - 1",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\dfrac{i(i - 1)}{2} \\leq q - 1",
+  "note": "Le paramètre introduit dans cet énoncé est q, non r. Le TeX conserve le r non défini de l'imprimé."
+ },
+ {
+  "page": 263,
+  "where": "6.0, dernier paragraphe, morphisme f",
+  "scan": "f : \\xi \\to \\eta",
+  "tex": "f : \\xi \\to n",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "f : \\xi \\to n",
+   "new": "f : \\xi \\to \\eta"
+  },
+  "note": "Le but est la lettre grecque eta, non le n latin."
+ },
+ {
+  "page": 264,
+  "where": "6.1.1, « Soient deux objets X et Y de... »",
+  "scan": "F_\\xi avec un F ordinaire",
+  "tex": "$F_{\\xi}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$\\Ff_{\\xi}$",
+  "note": "L'imprimé emploie ici un F ordinaire au lieu du F script de la catégorie fibre définie dans la même phrase. Le TeX conserve cette faute d'alphabet."
+ },
+ {
+  "page": 264,
+  "where": "6.1.2, première phrase après la définition de f",
+  "scan": "Un objet de Y au-dessus de eta",
+  "tex": "Un objet de $Y$\nau-dessus de $\\eta$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Un objet $Y$ au-dessus de $\\eta$",
+  "note": "Le « de » superflu est déjà dans l'imprimé : Y est l'objet, non une catégorie dont on prendrait un objet. Le TeX conserve ce mot."
+ },
+ {
+  "page": 265,
+  "where": "Formule (6.1.2.2), premier facteur du membre de droite",
+  "scan": "C_{gh,f}",
+  "tex": "C_{gh, f}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "C_{gf, h}",
+  "note": "Avec C_{f,g}: f^*g^* vers (gf)^*, le membre de droite doit passer par (gf)^*h^*, donc utiliser C_{gf,h}. Le TeX conserve l'indice erroné de l'imprimé."
+ },
+ {
+  "page": 265,
+  "where": "6.1.3, isomorphisme de foncteurs C_{f,g}",
+  "scan": "C_{f,g}: f^*g^* \\to (fg)^*",
+  "tex": "g^{\\ast} \\to (fg)^{\\ast}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "C_{f, g} : f^{\\ast} g^{\\ast} \\to (gf)^{\\ast}",
+  "note": "L'ordre fg est inversé par rapport à la définition (6.1.2.1). Le TeX conserve cette coquille de l'imprimé."
+ },
+ {
+  "page": 265,
+  "where": "6.1.3, renvoi après « vérifient la condition »",
+  "scan": "(6.1.2.1)",
+  "tex": "\\eqhyperref[VI.eq6.1.2.2]{6.1.2.2}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\eqhyperref[VI.eq6.1.2.2]{6.1.2.2}",
+  "note": "La condition de cocycle est (6.1.2.2), non (6.1.2.1). Le TeX corrige silencieusement le mauvais renvoi imprimé."
+ },
+ {
+  "page": 265,
+  "where": "Dernière ligne de la page",
+  "scan": "à valeur dans",
+  "tex": "à valeur dans la",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "La page 265 se termine après « dans ». L'article « la », inclus dans le fragment sans débordement final annoncé, appartient à la page 266. Ne pas le supprimer du fichier source."
+ }
+]

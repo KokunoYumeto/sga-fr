@@ -1,0 +1,129 @@
+[
+ {
+  "page": 376,
+  "where": "5.10, definition of X'",
+  "scan": "son image inverse dans E",
+  "tex": "son image inverse dans $E$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "son image inverse dans $E'$",
+  "note": "The inverse image belongs to E', not E. The TeX keeps the printed misprint."
+ },
+ {
+  "page": 377,
+  "where": "Opening sentence, reference after « morphismes de localisation »",
+  "scan": "(5.1)",
+  "tex": "\\hyperref[IV.subsec5.2]{5.2}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\hyperref[IV.subsec5.2]{5.2}",
+  "note": "The print gives 5.1; the TeX apparently silently corrects the reference to 5.2, concerning localization morphisms."
+ },
+ {
+  "page": 377,
+  "where": "Paragraph after (5.10.2), second inclusion functor",
+  "scan": "j_{X'!}:E_{/X}\\rightarrow E",
+  "tex": "j_{X'!}:E_{/X}\\rightarrow E",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "j_{X'!}:E'_{/X'}\\rightarrow E'",
+  "note": "The domain and codomain of the second inclusion functor require the primes. The TeX keeps the printed misprint."
+ },
+ {
+  "page": 377,
+  "where": "Sentence immediately before (5.10.3)",
+  "scan": "transforme évidemment objet final X en l'objet final X'",
+  "tex": "transforme évidemment objet final $X$ en l'objet final $X'$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "transforme évidemment l'objet final $X$ en l'objet final $X'$",
+  "note": "The article l' is missing before the first « objet final ». The TeX keeps the omission."
+ },
+ {
+  "page": 378,
+  "where": "Continuation of 5.10.4, opening sentence",
+  "scan": "le morphisme Top(X') → Top(Y') déduit de l'application continue canonique X' → Y'",
+  "tex": "le morphisme $\\Top(X')\\rightarrow\n\\Top(Y')$ déduit de l'application continue canonique\n$X'\\rightarrow Y'$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "le morphisme $\\Top(X')\\rightarrow\\Top(X)$ déduit de l'application continue canonique $X'\\rightarrow X$",
+  "note": "Both occurrences of the target Y' are erroneous: f_{/X} corresponds to the projection X' → X, not X' → Y'. The TeX keeps both printed misprints."
+ },
+ {
+  "page": 378,
+  "where": "Proposition 5.11, direction of β",
+  "scan": "\\beta:j_X\\circ g_1\\rightarrow f\\circ g_2",
+  "tex": "\\beta:j_X\\circ g_1\\rightarrow f\\circ g_2",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\beta:f\\circ g_2\\rightarrow j_X\\circ g_1",
+  "note": "With the stated direction α:f∘j_{X'}→j_X∘f_{/X} and β=α∗g, β runs from f∘g_2 to j_X∘g_1. The print reverses that direction, and the TeX keeps the inconsistency."
+ },
+ {
+  "page": 378,
+  "where": "Proposition 5.11, Homtop category whose objects are g",
+  "scan": "\\Hhomtop(F,E'_{/X'})",
+  "tex": "\\Hhomtop(F,E'_{/X})",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hhomtop(F,E'_{/X})",
+   "new": "\\Hhomtop(F,E'_{/X'})"
+  },
+  "note": "The print has a prime on X in the slice subscript."
+ },
+ {
+  "page": 378,
+  "where": "Proposition 5.11, product of Homtop categories, first argument of \\sisi",
+  "scan": "\\Hhomtop(F,E_{/X})\\times^{2}_{\\Hhomtop(F,E)}\\Hhomtop(F,E')",
+  "tex": "\\fprod{\\Hhomtop(F,E_{/X})^2}{\\Hhomtop(F,E')}{\\Hhomtop(F,E)}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\fprod{\\Hhomtop(F,E_{/X})^2}{\\Hhomtop(F,E')}{\\Hhomtop(F,E)}",
+   "new": "\\Hhomtop(F,E_{/X})\\times^{2}_{\\Hhomtop(F,E)}\\Hhomtop(F,E')"
+  },
+  "note": "The printed 2 belongs to the product sign, as the following NB explicitly confirms; it is not an exponent of the first Homtop category. This finding concerns only the original-reading argument A of \\sisi."
+ },
+ {
+  "page": 379,
+  "where": "(**) and recurring functor notation on pp. 379–380",
+  "scan": "\\psi",
+  "tex": "\\Psi",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Psi=\\varphi\\circ j",
+   "new": "\\psi=\\varphi\\circ j"
+  },
+  "note": "The print uses lowercase psi, whereas the transcription consistently uses capital Psi. This is a representative edit for the recurring convention; see the three examples and global action in coordinator."
+ },
+ {
+  "page": 379,
+  "where": "Display after « Pour définir u, on note que »",
+  "scan": "\\psi(X)=X\\times X",
+  "tex": "\\Psi(X)=X\\times X",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "j(X)=X\\times X",
+  "note": "The object of E_{/X} carrying the diagonal section is j(X), not ψ(X). Apart from the capitalization convention reported separately, the TeX keeps the printed error in the functor's name."
+ },
+ {
+  "page": 379,
+  "where": "Definition of the graph morphism after the cartesian diagram",
+  "scan": "\\Gamma_p=(\\id_X,p)",
+  "tex": "\\Gamma_p=(\\id_X,p)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Gamma_p=(\\id_{X'},p)",
+  "note": "Since p:X'→X, its graph uses the identity of X'. The TeX keeps the printed wrong subscript."
+ }
+]

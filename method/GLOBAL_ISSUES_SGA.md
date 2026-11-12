@@ -1,0 +1,240 @@
+# SGA 5, 6, 7 I, 7 II scan check: questions for the whole edition
+
+1. SGA 7 I, Exposé I (expose_I_body.tex): the print writes Z, Q, F (Z_l, Q_l, F_p, hat Z(1)) in double-struck letters
+   throughout, but the TeX has \mathbf on pp. 4-12 and 21-22 and \mathbb on pp. 2-3 and 13 (checker of pp. 1-5).
+   To do: check the other exposés, then set the print's double-struck letters as \mathbb in one pass.
+2. SGA 7 II (and SGA 7 I, e.g. p. 21 after (6.2.1); expose_VIII_body.tex STRUCTURE comments say the full stop "is therefore not included in the tikzcd"): the TeX leaves out the punctuation printed after a diagram (p. 6 full stop, p. 8 comma; checker of
+   pp. 6-10). Each checker reports the ones on its pages; no global pass needed unless the count grows.
+3. SGA 7 II, Exposé X: the print writes intersection numbers (D_i D_j) without a comma; the TeX had added commas.
+   p. 5 was recorded as a misprint (diplomatic restored, corrected edition kept the comma), p. 11 as punctuation (both
+   editions follow the print). Decide one rule for the corrected edition (follow the print's notation).
+4. SGA 7 II p. 14: "(n = #[s*,t])" is off by one ([s*,t] has n+1 elements); low-confidence author slip, suggested
+   ]s*,t]: review before using in the corrected edition.
+5. SGA 7 I: the typescript types an index zero as a small letter o. The TeX writes 0 in cohomological degrees
+   (H^{0}, psi_t^0) but keeps o in names (C_o, S_o, V_o). Proposal: 0 everywhere (as EGA, where the print's o for 0
+   is ignored); the checkers ignore o/0 meanwhile. Also add \mathbf{C} to the double-struck pass (issue 1).
+6. SGA 7 II pp. 20-21: the misprinted last exact sequence of p. 20 and (2.11.9) on p. 21 go together in the corrected
+   edition (the printed first line of (2.11.9) reaches the right value through a compensating sign slip); correct
+   both or neither: mu_s(D)^2[k(s):k] - 1/2 mu_s(D)(mu_s(D)+1)[k(s):k].
+7. SGA 7 II p. 24: the two misprinted intersections (cap for cup: the middle term O_{D' cup T} of the exact sequence
+   and "montre que D' cup T vérifie") go together in the corrected edition.
+8. SGA 7 I, Exposé VI: the base ring Lambda is written \Lambda on pp. 33-34 but \wedge from p. 35 on (p. 36
+   \underline{C}_{\wedge}, p. 41 \mathrm{Hom}_{\wedge\text{-alg}}, p. 49 \Omega_{R_o/\wedge}); global pass case by case
+   against the scan (the exterior powers \overset{2}{\wedge} on pp. 90, 114, 117 are real wedges; p. 67
+   \underline{C}^{\wedge} needs a look).
+9. SGA 7 I, Exposé VI: the print has one lunate epsilon; the TeX writes \varepsilon on pp. 34, 45, 46, 99, 100, 125,
+   129 (53 times) and \epsilon elsewhere (129 times). Proposal: \epsilon throughout Exposé VI.
+10. SGA 7 I p. 37: in the corrected edition the diamond's right node a', the statement's "gamma: a' -> a" and the
+    proof's "Define gamma: a' -> a" all become a'_1 (together); the diplomatic keeps the printed a'.
+11. SGA 7 II pp. 44-45: the ten printed O_Y (four on p. 44, six on p. 45) all stand for O_H (no Y is defined in 1.3);
+    correct all of them or none in the corrected edition. The H/X swap of p. 44 (i), (ii) is already corrected there
+    (SGA7II-FR-XI-002).
+12. SGA 7 II (and probably the others): the TeX often puts the comma, colon or full stop after an underlined phrase inside
+    \underline{...}, where the typescript's underline stops before it (p. 48 \underline{lisse,}, p. 50, p. 55; about
+    27 cases in pp. 1-55). Global pass: move a final , . ; : out of \underline{} where the scan shows the underline
+    ending before it (typographic; checkers ignore it from now on).
+13. SGA 7 I p. 67: the caret stands over the ⊗ (\hat{\otimes}) in all three places (answers the p. 67 question of item 8).
+    Underlined words divided at a line end keep their hyphen mid-line in the TeX (p. 66 "prorepresenta-tion",
+    "mini-mally", p. 67 "prorepresen-table": fixed; folio 48 expose_VI_body.tex line 705 "\underline{is iso-}
+    \underline{morphic to}": still to fix). Global search for "-} \underline{" and similar.
+14. SGA 7 II p. 72: references 2.3 (ii) and (iii) swapped in the first paragraph (correct both or neither); p. 74 proof of
+    2.8: W*_2 -> W_2, e(W)=e(W') -> e(W_1)=e(W_2), W/W∩W' -> W_1/W_1∩W_2 (all three or none). Corrected edition only.
+15. SGA 7 I, Exposé VI: the total-degree superscript (printed as a small ring ° or an inked dot •) is written \circ (p. 72),
+    \bullet (pp. 73-75) or \cdot (pp. 77-79): one rule for the exposé (proposal: \bullet, the modern reading of the
+    total degree; diplomatic: the print's ring as \circ). The degree-0 rings on p. 72 (misprints, corrected H^0) depend
+    on it. Also p. 73: "(*)/(**) in 2.1(a)" -> 3.1(a) together (corrected edition); C~ as \widetilde{\underline{C}}
+    (p. 88 has two more \underline{C}^{\sim}).
+16. SGA 7 II p. 81: the print has "envoyè", the old TeX "envoyé" (neither print nor correct); diplomatic now "envoyè";
+    the corrected layer needs "envoie" (misprint pass of the corrected layers, as for EGA).
+17. SGA 7 I: after a math letter the TeX starts the underline with the hyphen ($R$\underline{-algebras ...}); the print
+    starts it after the hyphen. pp. 81, 83 fixed; pp. 4, 21, 34, 57, 65 to check: global pass (typographic). Corrected
+    edition: Lemma 3.11 (p. 84) H_1(K^I) and p. 85 Hom_A(H^1(K_I), M) both -> Hom_A(H_1(K_I), M).
+18. SGA 7 II pp. 97-98: the print writes X for Y three times (1.4.2 first line; top of p. 98 in D(X ×_s S, Λ) and
+    D(X ×_s η, Λ)); the corrected layer fixed only the first (SGA7II-FR-XIII-002): correct all three there.
+    p. 100 (2.1.2.4): print RΨ_η(K_s), correct RΨ_η(K_η); the corrected layer's "K_η" alone (SGA7II-FR-XIII-003) is
+    wrong (K_η lives on X_η): review and fix in the corrected layer.
+19. SGA 7 I pp. 92-93 (corrected edition, together): Theorem 3.12 prints items (1)-(8); references follow an earlier
+    numbering: 3.13(a) -> 3.13(c), 3.12(10) -> 3.13(b), 3.12(7) -> 3.12(8), 3.12(6) and (8) -> 3.12(6) and (7) (low).
+    Exposé VI: operator names in math italic where the print has them upright: ob( 11 more times (p. 36 Def. 1.4,
+    p. 72, pp. 74-75), Ker( p. 72, \underline{Hom} p. 112 -> \mathrm{ob}, \mathrm{Ker}, \underline{\mathrm{Hom}} (global).
+20. SGA 7 II pp. 114-115 (corrected edition, together): repeated number 2.4.6. on p. 114 -> 2.4.7., diagram tag (2.4.6.1) on p. 115 -> (2.4.7.1).
+21. SGA 7 I: the typescript types a Latin v where the index nu is meant (p. 105: \varinjlim_nu, X_nu, m^{nu+1}); treated like o for 0 (typewriter substitute): the TeX's \nu stands (4 edits of p. 105 dropped; kept in findings_101_105.json.orig).
+22. SGA 7 I p. 114 (corrected edition, together): the three capital P -> p (display I^P_A(E), 'The ideals I^P_A(E)', 'for all P').
+23. SGA 7 II Exposé XIII 1.4 (pp. 128-130 and probably later): the print's Fraktur X and D typed as \mathcal{X}/\mathcal{D} (pp. 128-129) or \mathbb{X}/\mathbb{D} (p. 130); fixed page by page; check the later pages of 1.4.
+    (item 22 continued) p. 119: the print also has capital P in I^P(E) (running text and two displays); the diplomatic now has P there too; corrected edition: p throughout pp. 114-119.
+24. SGA 7 II Exposé XIV: the print's epsilon is lunate; the TeX writes \varepsilon (23x pp. 132-134, 6x p. 149) and \epsilon (pp. 150-151): proposal \epsilon throughout (as SGA 7 I Exposé VI, item 9).
+25. SGA 7 II pp. 136-137 (corrected edition, together, low confidence): 'choix de t et s' -> d and B_{s,t} -> B_{t,d} (s written for d).
+26. SGA 7 I Exposé VII: G_p (small p) where the print has G_P (capital), from p. 135 (fixed) through expose_VII_body.tex
+    lines 56-60 / p. 136 on (check); "k-scheme": the print leaves "k-" without underline (pp. 131-132, Theorem 6.4 line
+    3475); underlined operator names in math italic where the print is upright: \underline{RHom} p. 133 (the print
+    underlines only "Hom"), \underline{Ext}^1 in 2.9.4 (lines 969, 974) (counterpart of item 19).
+27. SGA 7 I pp. 126-129: the print's subscript is a typed z with a caret (ẑ_i, like x̂ on pp. 126-127); the TeX had \mathfrak{z}_i / \mathcal{Z}_i (fixed, 8 edits); the STRUCTURE comment under the p. 128 diagram still says 'hand-drawn script z'. p. 123 \mathcal{X}_{(\mathfrak{x})}: probably an overstruck x̂ read as Fraktur x: recheck. p. 128 'is smooth by and therefore': no reference number in print (suggested 4.13(a), low).
+28. SGA 7 II p. 157 (corrected edition, together, low confidence): the four K^{muq}/Psi^{muq} -> mqu (table row, Psi^{muq}_eta(F) paragraph, both terms of 4.12 (iii)).
+29. SGA 7 I Exposé VII (corrected edition, together): the typescript writes P_p where the fibre E_p is meant (pp. 136-138, e.g. phi: P_p x P_{p'} -> P_{pp'}; p. 142 (1.1.5.10); p. 144 'de G sur P_p coincident'). f* with the asterisk on the line: p. 143 fixed; expose_VII_body.tex lines 880, 898 (f*(E), f*(P), f*(Q)) to check.
+30. SGA 7 I Exposé VII (pp. 137-140 and on): the typescript types a serifed letter x for the product sign (1.1.3.1, contracted products ×^{G_S}, (1.1.5.3)); treated like o for 0 (typewriter substitute): the TeX's \times stands. P×P on pp. 138-140 is a printed cross. Item 29: the checker of pp. 136-140 lists seven P_p (for E_p) on pp. 136-138, covering every formula of 1.1.2.1-1.1.3: correct all or none.
+31. SGA 7 II p. 175 and Définition 1.2.1 (corrected edition, together, low confidence): the equation tags \tag{4.14.2} (p. 175; suggested 1.3.2.1) and \tag{4.2.1} (Déf. 1.2.1) are left over from an older numbering of the exposé: renumber both or neither.
+32. SGA 7 I Exposé VII (and probably the others): the print runs some numbered headings into the following text ('2.4. ... variables. Je dis que', p. 163; 2.5, p. 165), the TeX sets the text after them as a new paragraph; the same in 1.3, 1.4, 2.8, 2.9 and the 3.x headings (not checked against their pages). Layout question for one global decision; the two low-confidence fixes of pp. 163 and 165 are held (findings_161_165.json.orig).
+33. SGA 7 I (pp. 145, 155, 160): the typescript types 'coîncident' (circumflex) for 'coïncident'; treated as a typewriter substitute like o for 0: the TeX's ï stands (the p. 160 fix that restored the print is held, findings_156_160.json.orig). p. 159 Définition 2.1 (corrected edition, together, low): 'défini' -> 'définie' twice.
+34. SGA 7 II Exposé XV: the print's small psi is written \Psi in the TeX on pp. 186 (fixed), 191, 192, 193 (\psi 61 times elsewhere): the checkers of pp. 191-195 should report each. p. 186 (corrected edition, with item 20): '(cf. XIII, 2.4.6.1)' -> 2.4.7.1. pp. 186/187: 'est' printed twice across the page break (listed on p. 187).
+35. SGA 7 I pp. 174-175 (corrected edition, together): three misprints print 2.9.2 where Proposition 2.9.3 is meant ('conditions préliminaires de 2.9.2', 'en appliquant 2.9.2 b)', 'résulte donc de 2.9.2 b)'): all three or none.
+36. SGA 7 I p. 178: two more P_p for E_p (item 29). Low-confidence misprints to review before the corrected edition: p. 177 'le groupe multiplicatif sur G_m' (stray 'sur'?), p. 180 E for X in the transitivity display, p. 180 footnote psi_{L.}(A) where the text has underlined capital Psi.
+37. SGA 7 I p. 183 (corrected edition): the print numbers both the diagram and the c(X,alpha) display (3.2.3); the right number for the second is unclear: decide. Corrected-layer misprints still open on pp. 181-185: Psi_L(A) in (3.1.6), 'munie', 'peut-être', 'nous bornerons' (the corrected layer already has (3.1.8) and s on p. 185).
+38. SGA 7 II pp. 201-202 (corrected edition, together): the misprints a_I and Sw_I (both I') in one sentence; p. 202 low: a dot under the parenthesis of (Sw_{I'}, s_{I/H}) is probably a speck; 'supposer que X_s est le sous-schéma' (Cas 1) probably X. p. 204: Proposition 2.1 and its display were transcribed differently from the rest of the file (one underline over the whole statement, \int_X for the bare integral, an added full stop): fixed there; watch the pages of the same transcription.
+39. SGA 7 I pp. 187-188 (corrected edition, together): p. 187 'comme dans 3.2.3' and 'explicitée dans (3.2.3)' are the same transposition of 3.3.2 (both or neither); p. 188 'd'_1 : L_1 -> L_o étant déduit de d_1 : L_1 -> L_o': d_1 should be d_o and the source L'_1 (decide together).
+40. SGA 7 II p. 208 (corrected edition, together): the two X \times_s S' become \times_S.
+41. SGA 7 I pp. 191-195: the print's straight typewriter quotes are written ``...'' on pp. 193, 195 but "..." on p. 191: one rule for the edition. p. 195 'exton-sion' (print?) held at low confidence (findings_191_195.json.orig); p. 193 (3.4.5) no arrow in print and p. 195 two-headed j' arrow: diplomatic follows the print.
+42. SGA 7 II pp. 213-215 (corrected edition, together): 1.1 'purement de dimension n' (p. 213) and 1.2 'en dimension n' (p. 214) both n-1 (the corrected layer changed only 1.1); p. 215 the plain P^r of 2.1 and the bold P^r of 2.2 both \mathbb{P}^r (low).
+43. SGA 7 II p. 223, (3.3.6): the corrected layer (expose_XVII_body.tex of current) leaves out the printed middle member '= \varphi (x_1,...,x_n,\lambda_1,...,\lambda_{r-n-1})' that the print and the diplomatic TeX have: restore it in the corrected layer.
+44. SGA 7 I (and probably all volumes): page markers often have a blank line on both sides, so LaTeX starts a new paragraph at page breaks where the print continues (mid-sentence p. 223; unindented continuation p. 225; pp. 181, 186, 195, 226). Global pass needed: join the paragraph where the print continues (a lower-case start is not enough to detect it; check the scans or the previous line's punctuation). Same issue as the English EGA (fixed there by en_final_fixes.py).
+45. SGA 7 II p. 237, formula (4.2.3): an error of the print not in the corrected register: for n = 2k+1 >= 7 the printed pencil gives a singular plane, not a single ordinary double point. The JSON (findings_236_240.json) proposes one checked repair: a decision for the corrected edition (it is a repair of the mathematics, not a recovered reading; consider a note instead). The three formula-number insertions of pp. 236-237 need nothing on the corrected layer (it has the \tag already).
+46. SGA 7 I: operator names in italic also include Tor (p. 230: \underline{Tor} six times; pp. 227-229 \underline{\mathrm{Tor}}): add Tor to the global upright-operator pass (item 26 / the NOTE list).
+47. SGA 7 II p. 244: two formulas both numbered (5.2.6); (5.2.7) and (5.2.8) follow and 5.2.8 is cited, so no number is free: the checker suggests (5.2.6') for the second (decide).
+48. SGA 7 II: underlines that run through an inner comma where the print stops and restarts the underline (p. 248: 'D'autre part, pour tout entier', 'en écrivant, par', 'Ceci posé, on a pour tout'); 135 underlines with an inner comma in the 7 II diplomatic files, each needs a look at the scan (the typist sometimes underlined through). Not covered by item 12. p. 246: \tag*{5.3.7.} as printed (no parentheses): decide whether the corrected edition reads (5.3.7).
+49. SGA 7 I: the comma or full stop that ends a page-final display sits on its own line after \end{equation} and its STRUCTURE comment, so it prints at the start of the next page's text (fixed on pp. 236-237; also expose_VIII_body.tex l. 2353 (p. 306) and expose_IX_body.tex l. 3742 (p. 478)): tell those checkers, or fix globally.
+50. SGA 7 II p. 254, corrections record SGA7II-FR-XVIII-001: corrections.md and the comment in current/expose_XVIII_body.tex say the print reads « succinctes », but the scan reads « succintes »: the entry corrects a misprint of the print (not a transcription repair); fix the record's wording.
+51. SGA 7 II also has item 17 (underline starting with the hyphen after a math letter, sometimes taking a closing parenthesis): '$\underline{-' 16 times in the 7 II diplomatic files (XI 3, XIII 2, XVI 1, XVIII 4, XIX 1, XX 1, XXI 4); p. 256 fixed; include 7 II in the global pass.
+52. SGA 7 II corrections records (corrected layer): SGA7II-FR-XVIII-008 ('pat 1.2', the R in R_{r+1}, p. 263) and -011 ((X~, Delta) without tilde on Delta, p. 265) are classed as transcription repairs but the scan shows misprints of the print: fix the record wording and the comments in current/expose_XVIII_body.tex. Entry -011 also changes the printed 'notée' to 'notées', but 'notée' agrees with 'cohomologie à supports propres' and is correct: review (revert that part).
+53. SGA 7 I pp. 262-264 (the converse of item 44): where the print starts a new paragraph after a display, the TeX has no blank line after \end{equation}, so the paragraph runs on (p. 262 'En effet', p. 263 'Proposition 3.7', p. 264 'C'est en effet'). Part of the global paragraph pass (split where the print starts a paragraph); from the next batches on: handled globally, do not report.
+54. API batch msgbatch_01JEX1HtrWtrsLbDZ4w1DhgJ (7 I pp. 251-270, 7 II pp. 266-285, 8 Nov 2026): four transcription fixes of 7 II were already right in the corrected layer (p. 271 label j, p. 274 H^{\cdot-2}, p. 275 (\rho i), p. 278 label j; REPLAY_MANUAL_7II.json entries 5-8): nothing to do. p. 271: the STRUCTURE comment item (g) also changed to label j (both layers). Misprints of the print to decide together for the corrected edition: 7 I p. 268 Y=PxA for PxB with the e_p -> e_P fixes; 7 II pp. 276-277 the unbalanced parentheses of the (4.3.x) computation (the corrected layer should close them all or none); 7 II p. 280 the image of h* that should be k* (with the h_* label on the same arrow).
+55. SGA 7 II pp. 288-289 (as item 52): corrections records SGA7II-FR-XVIII-046 (p. 288, the parenthesis opened by c_1( never closed in f^*c_1(O_X(1)) and -047 (p. 289, rho^* for rho_* in the source of (5.4.3)) are classed as transcription repairs, but the scan shows misprints of the print: fix the record wording (and the comments in current/expose_XVIII_body.tex).
+56. API batch msgbatch_01NFSP2BhMtmwkPcKi2VcjFf (7 I pp. 276-310, 7 II pp. 291-320, 8 Nov 2026, about $6.00): by-hand replays on the corrected layer: 7 I p. 300 G_{mS} and 7 II p. 300 \wp f_* were already right there; 7 II p. 307 the full stop and comma after the two diagrams added by hand (the corrected layer sets the labels below). 7 I p. 292/293: 'isomor|phisme' is split at the page marker: a % after 'isomor' was added; the blank line between it and the marker goes with the global pass of item 44. 7 II p. 299/300: the hand-drawn projection symbol is \wp in both layers' formulas (p. 300 changed from \mathcal{P}); the STRUCTURE comment of p. 300 in the corrected layer still says \mathcal{P}.
+57. SGA 7 I Exposé IX (both layers): the transcriber's continuation tags CONT>> (126) and <<CONT (124) print as text (e.g. pp. 315/316 'singula CONT>>' / '<<CONT rités'). Removed in one pass on 8 Nov 2026 (subagent, rules: remove the tags; a word split by the page break is joined with % across the marker when only blank lines separate the fragments, and completed on the first page when footnotes stand between; splits between words: tags removed only, paragraph breaks left to the pass of item 44). The p. 315 fix of findings_311_315.json was held for this pass (.orig kept). Findings of the API batch on 7 I pp. 316-350 are applied only after the pass (fixes quoting the tags need rewriting).
+58. API batch 3 (7 I pp. 316-350, 7 II pp. 326-355, 8 Nov 2026, about $6.17): 7 II applied; held: p. 332 H_s, -> H_{s,} (low; a typewriter comma position that the corrected layer should not take; findings_331_335.json.orig); checked on the scan: p. 350 (2.0.8) the print has g-j for q-j (misprint, diplomatic layer reproduces it); p. 336 full stop after the figure added by hand to the corrected layer (tikzpicture). p. 345: the restored full stop after (1.2.11) sits after the STRUCTURE comment followed by a blank line; the paragraph pass of item 44 must not add a second break before it. 7 I findings of this batch wait for the CONT pass (item 57).
+59. SGA 7 I Exposé IX (from API batch 3): exposé numerals set in math italic where the print is upright (p. 345 '(SGA 3 $VI_{B}$ 4.3)', '$VI_{B}$ 1.2.', '$VI_{A}$ 5.6'): include in the global upright pass of items 26/46 (write VI$_{B}$ or \mathrm{VI}_{B}); handled globally from the next batches. The running head 'IX' is typed as a body paragraph at the top of pp. 333 and 334: removed there; check the whole file for more (after the CONT pass). p. 350 (corrected edition, together): display (ii) V^perp in V and the proof's V^perp = V cap V^perp are the same inverted inclusion. p. 338: the low-confidence readings (A_K ; A'_K) and varphi_w checked on the scan (both as printed).
+60. CONT pass done (8 Nov 2026, subagent; run_7I/cont_pass: script, checks, backups, compile): 251 tags removed per layer (126 CONT>>, 124 <<CONT, one \mathrm{CONT{>}{>}} in (12.1.5) p. 466), identical edits in both layers, logged (FIXLOG_7I lines 305-555, FIXLOG_7I_CURRENT 231-481); words joined across the page break: isomorphisme (pp. 406/407), l'extension (460/461), épimorphisme (502/503) with %, and singularités, (315/316) completed on p. 315; nine unpaired tags were splits between words (pp. 339, 345, 376, 450, 462, 473, 492, 510, 518); 216 marker lines unchanged; the diplomatic master compiles (270 pages, no 'CONT' in the text). Then API batch 3's 7 I findings applied (pp. 316-350); the p. 334 running-head fix rewritten after the pass and applied by hand in both layers; no other stray 'IX' line in the file.
+61. API batch 4 (msgbatch_01WZSiup2LWR3t7zriQKGvqA: 7 II pp. 356-395, about $3.94): applied. p. 356: the diplomatic layer read 'car $k \neq 0$' where the print (and the sense: Hodge theory) has 'car $k = 0$', a transcription error that changed the statement; the corrected layer was already right. Checked on the scan: p. 373 'copstructions' (misprint, kept in the diplomatic layer); p. 375 (1.4.6): the print opens a parenthesis after 'sur' before the fraction, drops the minus of (-1)^{n-1} and ends the first line with a full stop. Held for one decision for the volume (findings .orig kept): glyphs of the typist that the corrected layer normalizes: plain Q for the double-struck Q in Q_ell (p. 362, low), and the Fraktur G of 'Gal' written like the group symbol (pp. 384, 389): does the diplomatic layer reproduce them? Also: Gal(/F_q) printed without the numerator (pp. 377-378, misprints; check the rest of Exposé XXI); 'est $T$-entier' underlined with the math letter where the print underlines only the words (p. 388; check other pages).
+62. SGA 7 I Exposé IX from p. 355 (also 356-358): the superscripts ef/et are set in math italic ($U^{ef}$, $U/U^{ef}$, $({U'}^{et})^{\vee}$) where the print types them upright and p. 354 writes \mathrm{ef}, \mathrm{et}: include in the global upright pass (items 26/46/59).
+63. API batch 5 (7 II pp. 396-420, about $4.00): applied; pp. 401-420 differ from the print far more than earlier pages (18-36 fixes per batch: commas, summation indices and accents the TeX adds, underlines over label numbers and math letters, the print's abbreviations written out). Reverted in both layers: four fixes that removed the accent of a capital (pp. 403 Évidemment, 409 Écrivant, 412 and 415 Écrivons): the typescript has no accented capitals, a typewriter substitute like i-circumflex for i-diaeresis, so the TeX's accented capital stands (rule added to both volumes' notes). Held (findings_416_420.json.orig): the plain Q of pp. 416 (twice) and 418 (same decision as item 61), and p. 416 'ô miracle' read as 'oh miracle' (low; check the scan). To decide for the volume: a bare sum sign of the print gets a summation index in the TeX (416 (4.2.1), 419 (4.5.4), 420 (4.5.5), also 418 (4.4.2)); labels underlined together with their numbers where the print underlines only the word (fixed page by page).
+64. API batch 6 (msgbatch_01L1UWuU8z8tjPZtYs7rv1Yf: 7 II pp. 421-430, about $2.17; the API credit of account F is now used, about $1.30 left): pp. 421-430 again differ much from the print (44 and 46 findings: commas, braces and parentheses the TeX adds or drops, words left out ('à savoir', 'et', 'on a', 'ensemble des'), the print's underlines over statements missing, the multiplication dots); applied. Held (findings .orig kept): p. 421 psi_k o G against psi o G (low: the k may only be lost in the scan), p. 423 the reversed inclusion A subset B (low), the quotient as slash (low), p. 424 subseteq read from a possible overstrike (low); p. 429 Delta_B read as Lambda_B: Delta_B occurs 7 times in Exposé XXII in both layers, so check all 7 on the scans and change all or none. To do by hand: p. 428 (5.0.7) the comma after jd<n+2 on the corrected layer (old text differs there); marker 430/431: the unnumbered display E_DR^n(V) = Coker(...) at the end of folio 430's TeX belongs to p. 431 (move_marker.py). SGA 7 II now done to p. 430 (86 of 88 batches; pp. 431-438 left).
+65. SGA 7 I pp. 396-400 (subagent): p. 397 (6.3.2): the print types A'_k (residue field) for A'_K, kept in the diplomatic layer; the corrected layer had A'_{K'}, neither the print nor the correct reading: set to A'_K in both members (by hand, FIXLOG_7I_CURRENT). For the corrected edition, together and low confidence: the two references '5.12 a)' on p. 397 (before Proposition 6.3.3 and in it) are probably 5.13 b) (alternative 5.14 a)): both or neither. Convention: A^{ab} in math italic where the print types 'ab' upright (p. 400; expose_IX_body.tex lines 1417, 1448, 1979): add to the upright pass (items 59/62); handled globally from the next batches.
+66. SGA 7 II pp. 431-435 (subagent): applied (52 fixes). Marker of p. 431 moved before the display E_DR^n(V) = Coker(...) (move_marker.py, both layers), then that display given the printed hooked arrow and comma (both layers). Corrected layer, p. 435: the two products keep the corrected layer's \circ after \psi_q (an editorial clarification of the composition; the diplomatic layer follows the print without it). Convention for a global pass: the TeX writes every printed 'mod x' as \pmod{x}, which adds parentheses the print never has (p. 431 (6.0.1) fixed; p. 433 Cor. 6.0.12, p. 434 (6.1.10) and others): replace \pmod by \mod in the diplomatic layer throughout Exposé XXII.
+67. SGA 7 II pp. 436-438 (subagent): applied; SGA 7 II is checked to its last page (438). Convention: in Exposé XXII the typescript types Dwork's psi as a capital-form Psi (cap height, a short descender; e.g. p. 436 (6.2.8) and (6.3.2) psi_q, p. 437 last paragraph) while the TeX writes \psi throughout: decide for the volume whether the diplomatic layer writes \Psi there.
+68. SGA 7 I (re-check of pp. 471-475, 9 Nov 2026): the transcription puts quotation marks inside \underline{...} where the print underlines only the words (p. 475 \underline{"Formule de PICARD-LEFSCHETZ"}; p. 497 \underline{"de Hodge"}, \underline{"par le poids"}; the same form on pp. 191, 335 and 381-384, not yet checked against the print). Checkers from p. 496 report each case with a fix; the pages before 471 need one pass (check each on the scan, then move the marks outside the underline in both layers).
+69. SGA 7 I Exposé IX (re-check of pp. 496-500, 9 Nov 2026): the superscript "an" is in math italic where the typescript has it upright, as with ef/et (item 62): p. 500 $G \longmapsto G^{an}$, also $\underline{M}_K^{an}$ and $i^{an}$ (expose_IX_body.tex, about lines 4461 and 4463). Include "an" in the upright pass of items 26, 46, 59 and 62.
+70. SGA 7 II Exposé XVIII (re-checks of pp. 271-280, 9 Nov 2026): the print's small raised degree dot (H with a dot) is written \bullet on pp. 271-273, 276 and 280 and \cdot on pp. 274 and 279. One rule for the exposé, as global issue 15 for SGA 7 I.
+71. SGA 7 II Exposé XVIII §4: the typescript types the cup product as a capital Lambda. On pp. 276-277 the three cases became misprint records (the diplomatic layer reproduces \Lambda, the corrected layer keeps \wedge); p. 272 (4.2.3.2)-(4.2.3.4) has the same capital Lambda and was not changed. The one real small wedge, i_*g^*(x) \wedge i_*g^*(y) on p. 277, is right in both layers.
+72. SGA 7 II Exposé XXII (re-check of pp. 401-405, 9 Nov 2026): theorem labels are underlined together with their number where the print underlines only the word (404 \underline{Corollaire 1.1.2.}, 406 \underline{Proposition 2.0.}, 413 \underline{Lemme 3.8.}; prints checked). Reported as findings on pp. 404-405; the same TeX form recurs through pp. 406-436: one pass (word underlined, number and full stop not), both layers.
+73. SGA 7 II Exposé XXII: statements are underlined as one block that also covers symbols (phi, q-, V, k) and the final full stop, which the print leaves out of the underline (403 Prop. 1.1, 405 Cor. 1.1.10 and Prop. 1.2). Not reported as findings; decide with item 48 (underlines through inner commas).
+74. SGA 7 II Exposé XXII: joint names are typed with -- (en dash) where the typescript has a hyphen (402 WARNING--CHEVALLEY, reported; 413 Euler--Poincaré, 428 Chevalley--Warning; prints checked): one pass in the diplomatic layer; the corrected layer may keep the en dash of modern usage.
+75. SGA 5 (pilot pp. 1-5, 10 Nov 2026): the exposé headings carried 'SGA 5 --- ' that the print does not have (removed in both layers, 2 headings); '\emph{Preuve.}' -> '\emph{Preuve} :' as the print (50 in each layer; other proof labels such as 'Preuve de (1.5).' left to the checkers); run-in labels ('Définition 1.1. :', underlined in the print) are set as \subsection* without underline and '. :', and underlined titles as \section/\textbf: accepted as typesetting, not reported; the set of primes is \mathbb{L} in the print where the TeX writes \mathbf{n} (fixed on p. 5; s5.tex lines 412, 757, 759, 849 to be checked page by page).
+76. SGA 6 (pilot pp. 1-5, 10 Nov 2026): the OCR-aligned page markers often stood one TeX line too late, the page's first words (or a heading) left above the marker; fix_markers_ocr.py moved 146 of them in both layers where the OCR confirms it, and the pilot's p. 3, 4 and 6 by hand; checkers report the rest. Conventions to decide for the volume, not reported page by page: guillemets «~...~» for the print's straight quotes (192 in main.tex; SGA 7 has ``...'' for the same); -- in joint names (as item 74); \bullet for the print's raised typed dot in Gr; \epsilon (68) and \varepsilon (26) mixed for the print's one epsilon (unify after a sample check); the typist's plain Q (as item 61).
+77. Cross-volume review (Fable 5.2 pilot, 10 Nov 2026; FABLE_PILOT_PATTERNS_20261110.md): (a) 170 SGA 7 pages were checked only over the API and had no re-check (7 I pp. 276-310, 316-350; 7 II pp. 291-320, 326-395): confirmed against api_batches.jsonl, 34 re-check batches prepared; (b) SGA 5 and 6 are transcriptions of the Exposé XXII kind (adds punctuation at display ends, indices, \pmod, \longmapsto, en dashes, guillemets): NOTE_5 and NOTE_6 extended; (c) checkers do not see the macro definitions (\R = \mathbb{R}; bold L, R, P, f, n in SGA 5/6 need one decision per volume); (d) SGA 5/6 conventions vary by exposé (the 'Preuve :' pass is supported by the OCR in Exposés I and VII: 39 'Preuve :' and no 'Preuve.' on those pages); (e) safe scripted passes: move a final , . ; : out of \underline{} (217 + 233 left in 7 I + 7 II, item 12); \mathbf{Z|Q|F} -> \mathbb only in 7 I Exposé I (39) and not where a checker wrote bold at the scan; not blind: the hyphen-start underline pass (items 17/51); (f) eight inconsistencies listed in the file (five 'coîncident' against the 'ï stands' rule; plain-for-double-struck letters treated three ways; Λ for ∧ classed as symbol or misprint; orphan punctuation lines; nine \pmod left after item 66) to settle in one pass; (g) an OCR-against-TeX word diff finds silent corrections in the diplomatic layer ('plus baut' -> 'haut' on SGA 6 p. 1-5).
+78. Decision on item 61's held glyph question (10 Nov 2026): typist glyph variants that do not change the reading are not reproduced in the diplomatic layer, as with the ï rule (the diplomatic layer reproduces the printed text, its misprints included, not the typewriter's letter shapes). So the Fraktur-like G of 'Gal' (7 II pp. 384, 389) stays \operatorname{Gal}, and the plain Q of Q_ell (p. 362) stays \mathbb{Q}. The p. 389 fix was held out of findings_386_390_recheck.json (original kept as .orig); drop p. 384's the same way.
+79. SGA 7 II re-checks complete (10 Nov 2026): all 34 API-only batches of the Fable pilot (7 I pp. 276-350, 7 II pp. 291-395) re-checked in-app and applied. Under issue 78 also held: the double-struck Z the typist used for the zeta function on p. 392 (diplomatic keeps plain Z; findings_391_395_recheck.json.orig). Underlined H of H^i_c: the print omits it in Thm 5.2.2 (p. 386), 5.4 (p. 391), 5.5.2 (p. 393): misprints; the corrected layer has the underline in all three.
+80. Reconciliation with Codex corrections (10-11 Nov, RECONCILE_CODEX_5/6.json): SGA 5 49 changes (21 from the error queue, 28 from c4), SGA 6 246 (203 queue records incl. 28 of the 72 SGA-SRC; 234 corrected layer, 12 diplomatic; five transcription errors found on the scan). Not taken: c4 replacement proof of SGA 5 XII Lemma 4.7 and the added hypotheses of V 4.2.2 (repairs of the mathematics, as item 45); 100 SGA 6 records rejected (inference reconstructions, editorial changes, wrong claims). The hold on SGA 5/6 batches is lifted: the base is reconciled.
+81. SGA 6, Exposé I (batch 96-100, 10 Nov 2026): the TeX sets item letters in bold (\textbf{a)}, \textbf{b)}) where the typescript has plain a), b) (pp. 96, 98, 100 fixed singly; main.tex lines 2299, 2334, 2482, ... remain); the category letter is printed as an underlined typed C on pp. 96-100 (TeX \mathcal C), not the double-struck C of the pending decision in NOTE_6. Both are volume decisions, made in one pass after the last batch; checkers do not itemize them (NOTE_6, 10 Nov). Same for the paragraph numbers set in bold (	extbf{3.0.1.}, 193 in main.tex) where the typescript types them plain (batch 206-210).
+82. SGA 6, Exposé II (main.tex lines 3743-4777; batches 161-165 and 171-175, 10 Nov 2026): the print underlines each statement word group by word group; the TeX sets these statements without underline and puts \emph on defined terms the print leaves plain (Déf. 2.2.4, 2.2.5, Lemme 2.2.8). The category L(S), L(U) is underlined in the print, plain in the TeX (22 places on pp. 173-175). Both are pending volume decisions, to be applied by script per exposé after the last batch.
+83. SGA 5, Exposé III B (s5.tex about lines 4355-6909; batches 136-150, 10 Nov 2026): the print underlines the statements (Lemme 2.2, 2.4, Proposition 2.5, ...), the TeX has no underline markup in III B; itemized from p. 146 on, pp. 138-145 to be checked for the same in the closing pass. III B keeps Exposé III's labels (' -' without an added stop), plain R and RHom with only Hom underlined: the scoped definitions now end at Exposé V.
+84. SGA 6, Exposé III (batch 226-230, 10 Nov 2026): \Ob is redefined as \operatorname{Ob} for Exposé III (main.tex line 5340), but the print types 'ob' except on p. 222 ((i) and its display, 'Ob'). To do once batch 221-225 is applied: change that definition to \operatorname{ob} in both layers and write the two p. 222 cases as \operatorname{Ob}. Small triangles printed with the third vertex above are set on one line with an added [1] (fixed on pp. 223, 230; lines 5676 and 5755 to check).
+85. SGA 5, Exposé V (batches 196-205, 10 Nov 2026): the TeX has no underline markup, the print underlines statements and defined terms (itemized with \emph, as for III B); the print's labels read 'DEFINITION 1.1. -' (capitals, not underlined, '. -'), the environment sets a bold label: one decision for Exposé V. Diagrams: the TeX sets the labels of lower horizontal arrows below the arrow, the print above (pp. 197-199): one decision for the volume, not itemized.
+86. SGA 6, Exposé IV (main.tex lines 6567-7196; batch 276-280, 10 Nov 2026): the print's K with a raised dot (K^•) is written K' (about 151 places, folios 278-296; the exposé has no K^ullet and no K''). To do by script once batches 281-300 confirm it on their pages: K' -> K^{ullet}, K_{\loc}' -> K^{ullet}_{\loc}, both layers, and normalize findings of folios 274-300 the same way.
+87. SGA 6, Exposé V (batch 296-300, 10 Nov 2026): the typed baseline '...' in series is written \cdots (122 in the exposé; itemized on pp. 298-299); \Abfil (15 uses) prints 'Ab fil' where the print has the underlined 'Ab.fil.' (fixed singly on p. 299); the category letter is a hand-drawn script C (TeX \mathcal C). Volume decisions for the closing pass. Exposé IV's K-dot, parf and plain L were done by script on 10 Nov (sga6_expose4_pass.py).
+88. SGA 6, Exposé V (batches 306-315, 10 Nov 2026): the exterior power is printed with a small wedge, the TeX writes \Lambda (folios 315-316, 22 places; check 356-360); the print writes Gr. with a dot under the hat, the TeX has two other forms (\widehat{\operatorname{Gr}}^{+} on pp. 312-313, 344, 346; \widehat{\operatorname{Gr}(\,\cdot\,)}^{+} on pp. 309-310); letters the print underlines (A, E, E', E'') are plain in the TeX on pp. 315-316, but not all of them: no blind script. Script G of graded K-algebras was \mathcal C_g: fixed on 306-313 (folios 345, 347 to check). Resolved 10 Nov (batch 356-360): pp. 356-360 print the lambda-algebra with the same serifless typed wedge as pp. 315-316; it names a lambda-algebra there, so the glyph is the typist capital Lambda: keep \Lambda on 315-316.
+
+89. SGA 5, Exposé VII (batches 281-295, 10 Nov 2026): decisions for the closing pass. (a) Statement labels: the print
+    has capitals and ".-" (PROPOSITION 1.1.-, COROLLAIRE 1.5. (Suite exacte de GYSIN)-, THEOREME 2.2.1.-; COROLLAIRE 3.7
+    without stop or dash); the environment prints bold mixed case without the dash. (b) \R is \mathbb{R}, but the
+    print mostly has a plain typed R; double-struck only in Rp_*, R_!p, Rf_* (proof of 1.2): itemized so far. (c) The
+    print types plain P and E (P^r, E^r) where the TeX writes \mathbb P, \mathbb E (21 places on pp. 288-289, not
+    itemized). (d) A^* for the print's A with a raised dot (about 60 from p. 290; pp. 290-295 itemized). (e) -module for
+    the print's Module (69 in the exposé; itemized on checked pages; not by blind script). (f) The structure sheaf is a
+    plain typed O (no underline), a hand-drawn script O in O_C (p. 295); the TeX writes \mathcal O for both. (g) The
+    derived tensor printed as the tensor sign with two bars under it (2.1.1 on p. 285, p. 289): decide once. (h) The
+    print's small p in subscripts for the bundle P (A_p, mu_p, O_p(1), pp. 286-288, 13 misprint items): all or none.
+
+90. SGA 4 (API pass of 11 Nov 2026, `sga4_api_pass_20261111`; working copy `sga4/diplomatic` and `sga4/current`): the
+    edition's `\pageoriginale` counter runs one page behind Springer's page numbers in Exposé II and two in Exposé III
+    (II opens on Springer p. 219 with counter 218, III on p. 265 with counter 263): Springer counts the blank versos
+    pp. 218 and 264, and 01.tex, 02.tex and 03.tex set no counter, so II and III continue from I. The margin numbers
+    the edition prints in II and III are therefore off. Fix (both layers): `\setcounter{pageoriginal}{218}` at the
+    head of 02.tex and `\setcounter{pageoriginal}{264}` at the head of 03.tex, as 04.tex does (`{298}`). The pass
+    placed the pages by the scans (`PAGES.json`), so its page numbers are Springer's.
+
+91. SGA 4, printed text commented out in the edition: Exposé V bis, 05bis.tex lines 2657-2686 (headed « Changement
+    Yves »: the editors replaced the printed argument of p. 138 and left the print commented out: a diagram and the
+    paragraph « dont le carré de gauche est cartésien … canonique », with the page marker of p. 138 inside the
+    comment); Exposé I p. 34, 01.tex lines 1606-1612 (1612-1618 in `sga4/current`; diagram (5.13.2)). Fixes that
+    uncomment or retype such lines are held for the in-app check. Decide once whether the diplomatic layer restores
+    commented-out printed text.
+
+92. SGA 4, `\phi` (φ) where the print has ∅ (the empty set, the initial object ∅_E): the edition's todo.txt has it
+    (« remplacer \phi [φ] en ∅ aux endroits appropriés »), and elsewhere the edition writes ∅ as the character ∅.
+    Both models gave ∅ and it is applied at I p. 62, IV p. 452, VI p. 224, XII p. 120, XIII pp. 132 and 142 (seven
+    places, `FIXLOG_4.jsonl`); one model only or the two in conflict, in the in-app check: II p. 243, IV pp. 313, 314,
+    402, 404, 418, 422, 423, 456, 461, 474-476, XII p. 112. In IV 9.6.5 \phi is both the map φ and the empty set, so
+    the replacement is case by case, against the scans: one pass over the volume rather than page by page. The
+    edition's build leaves `\emptyset` undefined (agreed fixes that wrote it stopped the compile of IV, XII and XIII
+    with « Undefined control sequence »): write the character ∅, as `apply_pass.py` does.
+
+93. SGA 4, conventions the models reported once per batch (`sga4_api_pass_20261111/COORDINATOR_NOTES.md`): the
+    typewriter's one π set as \Pi or \pi in Exposé I §§ 8-9 (pp. 136-145); the champ's script C set as \mathsf{e} in
+    Exposé V pp. 65-80 (22 places in 05.tex); Exposé IV's references to its own numbers drop the printed « IV »
+    (pp. 491-510); \eqhyperref adds parentheses the print does not have (V pp. 32-33); underlined letters set as
+    script letters (𝒳, 𝒴, 𝒰, 𝒢, ℋ: the edition's convention, keep). Decide each for the volume; the page-by-page items
+    stay with the in-app check.
+
+94. SGA 4: the exposés' summary pages (V p. 1, V bis p. 83, VI pp. 163-164, VII p. 341, VIII p. 366, XVI p. 206,
+    XVII pp. 250-251) and each tome's front matter and indexes are not in the edition; the pass did not check them.
+
+95. SGA 4, the editors' apparatus: 18 places where both models give the same fix but it would remove an editors'
+    `\sisi{print}{correction}` because the scans already read the correction (IV p. 429, X p. 63, XV p. 194 twice,
+    XVII p. 446), change a `\sisi`'s record of the print together with its link (IV p. 302: the scan reads « I 10.6 »,
+    the edition records 10.9 and corrects it to 10.10), or remove or retarget a cross-reference or a citation (II
+    pp. 238 and 247, where the print reads « 4.1 1) » and « 4.6 2) » and the edition links 4.1.1 and 4.6.2; IV
+    pp. 327, 405, 427; V p. 34; XII p. 89; XVII p. 388; XVIII pp. 498, 501, 518, 537). They are held for the in-app
+    check (`merge_pass.py`). Six agreed fixes that correct only the print argument of a `\sisi` were applied as fixes
+    of the diplomatic text (IV p. 351; V bis p. 102 and p. 111 three times; XVII p. 260). The \sisi cases say that the
+    editors' record of the print does not match these scans at those places: check whether the editors read another
+    printing.
+
+- (12 Nov 2026, SGA 5 Exposé VIII, from the checker of pp. 351-355) `\Ob` prints "ob" because the first
+  `\providecommand{\Ob}{\operatorname{ob}}` (s5.tex line 101) wins over later definitions; Exposé VIII prints "Ob"
+  (20 places): redefine `\Ob` as `\operatorname{Ob}` for Exposé VIII once. Exposé VIII also types plain capitals C, D,
+  A, B where the TeX has `\cC`, `\cD`, `\cA`, `\cB` (volume decision, cf. item 78), and the print's straight quotes are
+  written as guillemets (6 pairs; the two on pp. 354-355 itemized). Exposé VII: the print's dotted minus (set
+  difference) is ∸, written `\mathbin{\dot{-}}` where itemized (p. 301); other set differences there need checking.
+
+96. SGA 5, conventions pass of 12 Nov 2026 (`run_5/conventions_work/apply_conventions.py`, `CONVENTIONS_5_REPORT.md`):
+    decisions taken earlier, now applied. (a) `\Ob`: the 12 Nov decision for Exposé VIII (last bullet above) is
+    applied as a local `\renewcommand{\Ob}{\operatorname{Ob}}` at the head of VIII, ended at its end, and the same
+    for Exposé X, whose print also types « Ob » (pp. 372-405); both layers. (b) EP in Exposé X: the print's
+    double-struck EP falls under the rule for the print's double-struck letters (item 1; NOTE_5): `\EP` is
+    redefined as `\operatorname{\mathbb{EP}}` for Exposé X only, both layers (26 uses; p. 111 of Exposé III keeps
+    the volume's `\EP`). (c) The isomorphism sign: the typescript types the isomorphism sign as ≈ (two tildes) on
+    many pages and as ≃ on others (pp. 448-450); the reading is the same, so item 78 applies and `\simeq` stands in
+    both layers (216 places in the text). The three `\approx` that checkers had itemized as « symbol » (p. 429 twice, p. 432)
+    are set back to `\simeq`; `\xrightarrow{\approx}` (p. 9, three arrows) and `\approxeq` (p. 357) were left.
+    (d) Exposé XII § 4 « Card »: all ten places were itemized and applied before this pass (`\operatorname{Card}`);
+    no `\card` macro use is left in the volume, and the lower-case « card » of pp. 69, 393 (three) and 401 is
+    lower-case in the print. (e) The R of RΓ, R Hom and Rp in Exposé X (pp. 374-405) was itemized by the batches;
+    the two `\RG` left (pp. 391, 392) are the print's double-struck R.
+
+97. SGA 5, Exposé XII (pp. 408-432): the print's hand-drawn script ℋ of H_{n,U',X'}, H_{m,U',X'}, H_{U',X'}(ℓ)
+    and their duals is `\mathcal{H}` in both layers (the volume writes hand-drawn script letters as `\mathcal`;
+    pp. 425 and 433 already had `\mathcal{H}`): 45 places per layer, by script over the exposé (scans checked on
+    pp. 410, 426, 432). The H of the Galois group H = Gal(k(η)_s/k(η)) on p. 440 and the H of cohomology H^i stay.
+
+98. SGA 5, the Frobenius symbols fr and Fr: the print underlines them twice throughout Exposés XIV-XV (pp. 442-471)
+    and once in Exposé XII, Exemple 7.3 (p. 441). Double-underlined typescript letters are written
+    `\underline{\underline{…}}`, as the volume already writes the double-underlined L of pp. 37 and 365 and the
+    tensor sign of Exposé VII. Both layers reproduce it (the corrected layer keeps the print's notation) by local
+    definitions: `\fr`, `\Fr` as `\underline{\operatorname{fr}}` etc. from the folio-441 marker,
+    `\underline{\underline{\operatorname{fr}}}` etc. from the head of Exposé XV, and plain `\operatorname` again
+    after p. 480. Three places are printed without the underline and are written `\operatorname{fr}`,
+    `\operatorname{Fr}`: p. 443 « L'endomorphisme de Frobenius fr_X dépend », p. 456 « alors Fr*_{F/X} est »,
+    p. 460 the first fr_X of « fr_{X×X'} = (fr_X × id_{X'}) ∘ (…) ». Also p. 447: the six Ω^1 of the differentials
+    are underlined in the print (`\underline{\Omega}^1`, both layers). Open: (a) the R of RΓ in Exposé XV is
+    double-underlined in the print on most pages (pp. 457, 458, 460, 461), plain in some places (p. 461 « RΓ_X̄(F̄)
+    défini », already `\mathrm{R}`; p. 460 the lower node RΓ(Fr*_{F⊗F'/X×X'}); p. 470 fr_{RΓ…} unclear on the
+    crop); the TeX's `\RGamma`/`\R\Gamma` print ℝ in the diplomatic layer and a plain R in the corrected layer
+    (32 places, pp. 457-474): decide with a page-by-page look. (b) p. 441: the diplomatic layer writes the
+    typist's 𝔽 in Fr_{Y/S} (`\operatorname{\mathbb{F}r}`, a misprint record), which item 78 would not reproduce.
+
+99. SGA 5, Exposé XII, Lemme 4.7 (pp. 417, 420), corrected layer: the proof calls the ring A in five places
+    (a), b) four times; « le corps K des fractions de A »), where Proposition 4.6 and the rest of the proof have R and
+    A is defined nowhere in § 4. The misprint records give R; all five are corrected to R in the corrected layer;
+    the diplomatic layer keeps A.
+
+100. SGA 5, printed p. 435 (scan idx 446) is a second printing of p. 434 (« La projection canonique … du lemme
+    suivant : »): a defect of the print. s5.tex has no folio-435 marker (434 is followed by 436) and nothing is added
+    to the text; in both layers the folio markers go from 434 to 436.

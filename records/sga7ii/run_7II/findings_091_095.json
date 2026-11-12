@@ -1,0 +1,55 @@
+[
+ {
+  "page": 91,
+  "where": "heading of Construction 1.2.4",
+  "scan": "only 'Construction' is underlined; the rule stops before '1.2.4.' (checked at 2x; the DjVu witness, page 101, agrees)",
+  "tex": "\\underline{Construction 1.2.4.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Construction 1.2.4.}",
+   "new": "\\underline{Construction} 1.2.4."
+  },
+  "note": "Same pattern as Définition 1.1.2 on p. 87; the TeX already writes \\underline{Remarque} 1.2.6. on p. 92."
+ },
+ {
+  "page": 94,
+  "where": "1.3.2, unnumbered diagram s̄ ↪ S̄ ↩ η̄ over s ↪ S ↩ η after 'cartésien au dessus du diagramme'",
+  "scan": "s ↪ S ↩ η  .  (a typed full stop follows the diagram on the bottom row; also in the DjVu witness, page 104)",
+  "tex": "diagram without the full stop (the STRUCTURE comment records the period)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "& S & \\eta \\arrow[l, hook']\n\\end{tikzcd}",
+   "new": "& S & \\eta \\arrow[l, hook']\n\\end{tikzcd}\\quad ."
+  },
+  "note": "Known case of punctuation after a diagram; written as in the earlier fixes (\\end{tikzcd}\\quad .)."
+ },
+ {
+  "page": 95,
+  "where": "diagram (1.3.5.1), top row, middle node (target of ī and j̄, source of the middle f)",
+  "scan": "a bare X without a bar (checked at 8x; the independent DjVu witness, page 105, also shows a bare X), while the node below it is printed X̄' with its bar and 1.3.2 defines X̄ = X ×_s S̄ as the middle node of the same diagram (1.3.2.1)",
+  "tex": "\\bar X \\arrow[d, \"f\"]",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "& \\bar X \\arrow[d, \"f\"]",
+   "new": "& X \\arrow[d, \"f\"]"
+  },
+  "corrected": "\\bar X",
+  "note": "The TeX silently corrects the print; the fix restores the printed X in the diplomatic layer. The file's own STRUCTURE comment already says this node is printed without a macron, but sga7ii/corrections.md SGA7II-FR-XIII-001 calls the bar 'source-visible' and restored it in both French layers; neither scan shows any trace of it. The bar belongs only in the corrected layer."
+ },
+ {
+  "page": 95,
+  "where": "end of diagram (1.3.5.1)",
+  "scan": "X'_η̄  .  (a typed full stop follows the diagram on the bottom row; also in the DjVu witness, page 105)",
+  "tex": "diagram without the full stop (the STRUCTURE comment records the period)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "X'_{\\bar \\eta} \\arrow[l, hook', \"\\bar j\"']\n\\end{tikzcd}",
+   "new": "X'_{\\bar \\eta} \\arrow[l, hook', \"\\bar j\"']\n\\end{tikzcd}\\quad ."
+  },
+  "note": "Known case of punctuation after a diagram; written as in the earlier fixes (\\end{tikzcd}\\quad .)."
+ }
+]

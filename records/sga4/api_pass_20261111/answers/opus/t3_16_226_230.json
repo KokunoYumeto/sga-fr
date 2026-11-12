@@ -1,0 +1,60 @@
+[
+ {
+  "page": "228",
+  "where": "start of the second paragraph of the proof of 3.7",
+  "scan": "Traitons d'abord le cas c = 1",
+  "tex": "Traitions d'abord le cas $c=1$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Traitions d'abord",
+   "new": "Traitons d'abord"
+  },
+  "note": "The TeX has a typo (Traitions) that the print does not have."
+ },
+ {
+  "page": "229",
+  "where": "after the diagram Y→Z→X",
+  "scan": "où chaque couple est un S-couple lisse",
+  "tex": "où couple est un $S$-couple lisse",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "où couple est",
+   "new": "où chaque couple est"
+  },
+  "note": "The word « chaque » is missing in the TeX."
+ },
+ {
+  "page": "229",
+  "where": "last line of the page's TeX",
+  "scan": "page 229 ends with « ... (R^pu^!)(R^qv^!)F est nul si »; « (p,q) ≠ » opens p. 230",
+  "tex": "$(R^{p}u^{!})(R^{q}v^{!})F$ est nul si $(p,q)\\neq",
+  "kind": "marker",
+  "confidence": "medium",
+  "fix": null,
+  "note": "The final « $(p,q)\\neq » of this page's TeX (source line 868) is printed on p. 230. Page 230 begins with « (p,q) ≠ (2c-2,2) ». The first comment line does not flag this."
+ },
+ {
+  "page": "230",
+  "where": "first line, end of the proof of 3.7",
+  "scan": "localement isomorphe à u^*w^*(F)",
+  "tex": "$u^{\\ast}w^{\\ast}(F)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$u^{\\ast}v^{\\ast}(F)$",
+  "note": "No morphism w is defined; the inclusion Z→X is v. The TeX keeps the printed reading."
+ },
+ {
+  "page": "230",
+  "where": "proof of 3.8, display with Hom",
+  "scan": "Hom(H̲^{2c}_Y(Z/nZ),H^{2c}_Y(F)): the second H seems to have no underline",
+  "tex": "\\sheaf{\\Hom}(\\HH^{2c}_Y(\\ZZ/n\\ZZ),H^{2c}_Y(F))",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\sheaf{\\Hom}(\\HH^{2c}_Y(\\ZZ/n\\ZZ),\\HH^{2c}_Y(F))",
+  "note": "This should be the sheaf H^{2c}_Y(F), as on both sides of φ. The print seems to lack the underline here, and the TeX keeps the plain H. The underline is not certain in the scan."
+ }
+]

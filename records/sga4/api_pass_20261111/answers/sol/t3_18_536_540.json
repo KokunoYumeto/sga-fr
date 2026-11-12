@@ -1,0 +1,176 @@
+[
+ {
+  "page": 536,
+  "where": "Formule (1.5.4.3), après le zéro initial",
+  "scan": "0 suivi directement de \\Eext^{1}(\\sheafPic^{0}_{X/S},G), sans flèche",
+  "tex": "0 \\longrightarrow \\Eext^{1}(\\sheafPic^{0}_{X/S},G)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "0 \\longrightarrow \\Eext^{1}(\\sheafPic^{0}_{X/S},G)",
+  "note": "La flèche initiale manque dans les deux scans. Le TeX corrige silencieusement cette omission."
+ },
+ {
+  "page": 537,
+  "where": "Lemme 1.5.7, référence à Grothendieck",
+  "scan": "Grothendieck suivi de la seule référence bibliographique, sans indication de corollaire",
+  "tex": "\\cite[Corollaire~11.9]{SGA4-18:2}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cite[Corollaire~11.9]{SGA4-18:2}",
+   "new": "\\cite{SGA4-18:2}"
+  },
+  "note": "L'indication « Corollaire 11.9 » est ajoutée au texte imprimé."
+ },
+ {
+  "page": 537,
+  "where": "Lemme 1.5.7, parenthèse commençant par « ou sur »",
+  "scan": "La parenthèse « (ou sur … » reste ouverte avant « et la catégorie des torseurs ».",
+  "tex": "ce qui revient au même\n{(\\textsc{Grothendieck} \\cite[Corollaire~11.9]{SGA4-18:2})}, et la catégorie",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(\\textsc{Grothendieck} \\cite{SGA4-18:2})), et la catégorie",
+  "note": "La seule parenthèse fermante imprimée ferme la référence à Grothendieck, mais non la parenthèse « ou sur ». Le TeX conserve cette coquille."
+ },
+ {
+  "page": 537,
+  "where": "1.5.8, définition de \\GG_m(\\mathfrak m)",
+  "scan": "\\GG_{mX}",
+  "tex": "\\GG_{m\\bar{X}}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\GG_{m\\bar{X}}",
+  "note": "L'indice X est imprimé sans barre, également dans le témoin. Le faisceau considéré est sur la compactification \\bar X ; le TeX rétablit la barre."
+ },
+ {
+  "page": 537,
+  "where": "Preuve du lemme 1.5.9, réduction au cas noethérien",
+  "scan": "par changements de base",
+  "tex": "par changement de base",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "par changement de",
+   "new": "par changements de"
+  },
+  "note": "L'imprimé porte le pluriel « changements »."
+ },
+ {
+  "page": 538,
+  "where": "Fin de la preuve du lemme 1.5.9, groupe d'obstruction",
+  "scan": "H^{1}(X,\\Nn(n))",
+  "tex": "H^{1}(X,\\Nn(n))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^{1}(\\bar{X},\\Nn(n))",
+  "note": "L'obstruction au relèvement sur la compactification appartient à H^1 de \\bar X, non de l'ouvert X. La barre manque dans l'imprimé et le TeX conserve cette coquille."
+ },
+ {
+  "page": 538,
+  "where": "Notation du morphisme de la compactification, récurrente aux pp. 538–540",
+  "scan": "R^{1}f_{\\ast}\\Nn(n), puis \\Ll|f^{-1}(U)",
+  "tex": "R^{1}\\bar{f}_{\\ast}\\Nn(n), puis \\Ll|\\bar{f}^{-1}(U)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\bar{f}:\\bar{X}\\rightarrow S",
+  "note": "Après la définition de \\bar f en 1.5.8, l'imprimé omet régulièrement sa barre : les deux images directes de cette preuve, les restrictions du lemme 1.5.11 et les deux images directes de 1.5.13. Le TeX corrige systématiquement cette notation. Cette régularisation est signalée une seule fois."
+ },
+ {
+  "page": 538,
+  "where": "Conditions (1.5.10.1) et (1.5.10.2), domaine des sections",
+  "scan": "\\Ll\\otimes k(s) sur X_s, dans les deux conditions",
+  "tex": "\\Ll\\otimes k(s) sur X_s, dans les deux conditions",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Ll\\otimes k(s)\\text{ sur }\\bar{X}_{s}",
+  "note": "Les sections devant valoir 1 sur Y_s sont des sections sur la fibre de la compactification \\bar X, puisque Y est disjoint de X. Le TeX conserve les deux omissions de barre dans les domaines indiqués."
+ },
+ {
+  "page": 538,
+  "where": "Fin de la condition (1.5.10.1)",
+  "scan": "Y\\cap U",
+  "tex": "\\fprod{Y}{U}{S}",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\fprod{Y}{U}{S}",
+   "new": "Y\\cap U"
+  },
+  "note": "L'imprimé donne l'intersection avec U, lequel vient d'être défini comme l'image réciproque d'un voisinage de s, et non un produit fibré sur S."
+ },
+ {
+  "page": 538,
+  "where": "Condition (1.5.10.4), droite affine",
+  "scan": "g:\\EE^{1}_{S}\\rightarrow S",
+  "tex": "g:\\EE^{1}_{s}\\rightarrow S",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "g:\\EE^{1}_{s}\\rightarrow S",
+   "new": "g:\\EE^{1}_{S}\\rightarrow S"
+  },
+  "note": "L'indice imprimé est un S majuscule, confirmé par le témoin."
+ },
+ {
+  "page": 538,
+  "where": "Début du lemme 1.5.11",
+  "scan": "un faisceau inversible sur X, trivialisé le long de Y",
+  "tex": "un faisceau inversible sur $X$, trivialisé le long\nde $Y$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "un faisceau inversible sur $\\bar{X}$, trivialisé le long de $Y$",
+  "note": "La barre de X manque : Y est un sous-schéma de \\bar X, disjoint de X. Le TeX conserve la coquille imprimée."
+ },
+ {
+  "page": 538,
+  "where": "Dernière ligne du lemme 1.5.11 (I), frontière avec la p. 539",
+  "scan": "vérifient (1.5.10.4).",
+  "tex": "L'extrait de la p. 538 s'arrête à « vérifient » ; la référence complète est la première ligne de l'extrait de la p. 539.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "La ligne source 3363 appartient encore à la p. 538. La p. 539 commence par « (II) Soient … ». Ce débordement initial n'est pas annoncé par le commentaire de la p. 539."
+ },
+ {
+  "page": 539,
+  "where": "Avant la formule (1.5.12.2), plage des indices",
+  "scan": "pour i=0,1",
+  "tex": "pour $i=0,1$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "i=1,2",
+  "note": "Les sections et torseurs concernés sont indexés par 1 et 2, comme le confirme l'isomorphisme K'_1 vers K'_2 immédiatement après. Le TeX conserve la plage erronée de l'imprimé."
+ },
+ {
+  "page": 539,
+  "where": "Numéro de la dernière formule affichée",
+  "scan": "(1.3.12.3)",
+  "tex": "\\tag{1.5.12.3}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\tag{1.5.12.3}",
+  "note": "Les deux scans portent 1.3.12.3. Le TeX corrige silencieusement ce numéro ; le renvoi du paragraphe suivant donne bien 1.5.12.3."
+ },
+ {
+  "page": 539,
+  "where": "Formule (1.5.12.3), indice de l'identité",
+  "scan": "\\id_{\\Tr_{E/S}(K)}",
+  "tex": "\\id_{\\Tr_{E/S}}(K)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\id_{\\Tr_{E/S}}(K)",
+   "new": "\\id_{\\Tr_{E/S}(K)}"
+  },
+  "note": "Dans l'imprimé, (K) appartient à l'indice de l'identité, avec tout le torseur \\Tr_{E/S}(K)."
+ }
+]

@@ -1,0 +1,94 @@
+{
+  "findings": [
+    {
+      "page": 511,
+      "where": "Premier paragraphe, « un isomorphisme de foncteur »",
+      "scan": "de foncteur entre les restrictions",
+      "tex": "de foncteurs entre les restrictions",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "de foncteurs entre",
+        "new": "de foncteur entre"
+      },
+      "note": "Le tirage emploie le singulier « foncteur », confirmé par le scan témoin."
+    },
+    {
+      "page": 511,
+      "where": "Proposition 1.3.12, phrase précédant les diagrammes",
+      "scan": "Les diagramme d'isomorphismes suivants sont commutatifs",
+      "tex": "Les diagramme\nd'isomorphismes suivants sont commutatifs",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Les diagrammes d'isomorphismes suivants sont commutatifs",
+      "note": "Il manque le s de « diagrammes » dans le tirage. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 512,
+      "where": "Dernier paragraphe, première référence",
+      "scan": "L'isomorphisme (1.3.12.3) est compatible à la biadditivité",
+      "tex": "L'isomorphisme \\eqhyperref[XVIII.eq1.3.12.3]{1.3.12.3} est compatible à la biadditivité",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(1.3.12.4)",
+      "note": "La phrase caractérise l'isomorphisme biadditif (1.3.12.4). L'identification universelle (1.3.12.3) est celle dont on prend ensuite l'image réciproque, au début de p. 513. Le TeX conserve la mauvaise référence."
+    },
+    {
+      "page": 513,
+      "where": "Après le diagramme (1.3.12.5), « La flèche … »",
+      "scan": "\\sigma_{E,D_{1}}",
+      "tex": "\\sigma_{E,D}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\sigma_{D,E}",
+      "note": "La flèche affichée part de \\langle\\Oo(D),\\Oo(E)\\rangle : il s'agit donc de \\sigma_{D,E}. Le tirage inverse les indices et ajoute un indice 1 à D. Le TeX supprime ce 1, mais conserve l'ordre inversé."
+    },
+    {
+      "page": 513,
+      "where": "Après la formule de la « flèche évidente »",
+      "scan": "et 1.3.12.2 en résulte aussitôt",
+      "tex": "et \\eqhyperref[XVIII.eq1.3.12.1]{1.3.12.1} en résulte aussitôt",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "1.3.12.1",
+      "note": "La commutativité que cet argument établit est celle de (1.3.12.1) ; (1.3.12.2) a déjà été traitée au début de p. 512. Le TeX corrige silencieusement la référence imprimée."
+    },
+    {
+      "page": 513,
+      "where": "Fin de la coupe, bloc des lignes source 1841–1847",
+      "scan": "La page finit par « la commutativité du diagramme ».",
+      "tex": "\\xymatrix@C=2.25cm@R=1.5cm{",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le carré qui suit est imprimé en tête de p. 514, où il est également fourni. La coupe de p. 513 le contient alors que son commentaire n'autorise sur la page suivante que la ligne 1849. La page 513 finit après « diagramme », avant le bloc des lignes 1841–1847 ; rectifier la coupe sans modifier le texte source."
+    },
+    {
+      "page": 514,
+      "where": "Corollaire 1.3.14, référence après « le degré »",
+      "scan": "(1.3.2.7)",
+      "tex": "(\\hyperref[XVIII.subsubsec1.3.7]{1.3.7})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(1.3.7)",
+      "note": "Le tirage porte bien 1.3.2.7 dans les deux scans. Le renvoi au degré est 1.3.7, comme le confirme la référence à (1.3.7.3) dans la preuve. Le TeX corrige silencieusement cette coquille."
+    },
+    {
+      "page": 514,
+      "where": "Formule (1.3.15.1), but de l'isomorphisme",
+      "scan": "\\tau:\\langle\\Ll,\\Mm\\rangle\\xrightarrow{\\sim}\\langle\\Ll,\\Mm\\rangle",
+      "tex": "\\tau:\\langle \\Ll,\\Mm\\rangle \\xrightarrow{\\sim}\n\\langle \\Mm,\\Ll\\rangle",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\tau:\\langle\\Ll,\\Mm\\rangle\\xrightarrow{\\sim}\\langle\\Mm,\\Ll\\rangle",
+      "note": "Le tirage répète les arguments dans le même ordre au but. Ils doivent être échangés, conformément au diagramme précédent et à 1.3.16.2. Le TeX corrige silencieusement cette coquille."
+    }
+  ],
+  "coordinator": "511 : 1/1 ; 512 : 0/1 ; 513 : 1/2 ; 514 : 0/2 ; 515 : 0/0 (normal/misprint, marqueur inclus).\nCoupe p. 513 : arrêter après « diagramme » ; le carré des lignes source 1841–1847 ouvre p. 514."
+}

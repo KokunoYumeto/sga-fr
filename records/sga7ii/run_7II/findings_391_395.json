@@ -1,0 +1,61 @@
+[
+ {
+  "page": 392,
+  "where": "Lemme 5.5.1, « Soit G un E-faisceau constructible sur X »",
+  "scan": "« un » and « faisceau constructible sur » are underlined; the letter E- is left outside the underline, as in Théorème 5.4 on p. 391",
+  "tex": "\\underline{un E-faisceau constructible sur}",
+  "kind": "underline",
+  "confidence": "low",
+  "fix": {
+   "old": "\\underline{un E-faisceau constructible sur}",
+   "new": "\\underline{un} $E$-\\underline{faisceau constructible sur}"
+  },
+  "note": "The TeX runs the underline over the math letter E. The new form matches the TeX of p. 391 (Théorème 5.4)."
+ },
+ {
+  "page": 393,
+  "where": "Théorème 5.5.2, « et G un E-faisceau constructible sur X »",
+  "scan": "« un » and « faisceau constructible sur » underlined; E- apparently not underlined",
+  "tex": "\\underline{un E-faisceau constructible sur}",
+  "kind": "underline",
+  "confidence": "low",
+  "fix": {
+   "old": "\\underline{un E-faisceau constructible sur}",
+   "new": "\\underline{un} $E$-\\underline{faisceau constructible sur}"
+  },
+  "note": "Same point as p. 392; the extent of the underline here is hard to read, so please verify."
+ },
+ {
+  "page": 394,
+  "where": "proof of 5.5.2, first paragraph: « comme dans la démonstration de 5.5.2 »",
+  "scan": "comme dans la démonstration de 5.5.2.",
+  "tex": "comme dans la démonstration de 5.5.2.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "comme dans la démonstration de 5.2",
+  "note": "This is a self-reference inside the proof of 5.5.2 itself. The récurrence by fibration en courbes is that of the proof of 5.2 (cf. p. 391: « On procède comme dans le théorème 5.2 »). The TeX keeps the printed reading."
+ },
+ {
+  "page": 394,
+  "where": "proof of 5.5.3 (iv), last sentence: « il suffit de prouver 5.2.2 pour U »",
+  "scan": "montre qu'il suffit de prouver 5.2.2 pour U.",
+  "tex": "montre qu'il suffit de prouver 5.2.2 pour $U$.",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "il suffit de prouver 5.5.3 pour $U$",
+  "note": "The statement being proved is 5.5.3 (iv). 5.2.2 is the integrality result already used (« D'après 5.2.2 »). The TeX keeps the printed reading."
+ },
+ {
+  "page": 395,
+  "where": "last display, « (resp. |α| ≤ q^{i-2+1} = q^{i-1} ≤ q^{i-1/2} . »",
+  "scan": "(resp. |α| ≤ q^{i-2+1} = q^{i-1} ≤ q^{i-1/2} . — no closing parenthesis",
+  "tex": "(\\mathrm{resp.} \\; |\\alpha| \\leq q^{i-2+1} \\quad = q^{i-1} \\leq q^{i-\\frac{1}{2}} \\qquad .",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(\\mathrm{resp.} \\; |\\alpha| \\leq q^{i-2+1} \\quad = q^{i-1} \\leq q^{i-\\frac{1}{2}}) \\qquad .",
+  "note": "The « (resp. » is never closed in the print. The TeX keeps the printed reading."
+ }
+]

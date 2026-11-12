@@ -1,0 +1,63 @@
+[
+ {
+  "page": 351,
+  "where": "Diagramme (4.7.2), flèche verticale de droite",
+  "scan": "$i'$",
+  "tex": "\\sisi{i_{\\ast}}{i_{\\ast}'}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sisi{i_{\\ast}}{i_{\\ast}'}",
+   "new": "\\sisi{i'}{i_{\\ast}'}"
+  },
+  "note": "Le premier argument de \\sisi ne reproduit pas l'imprimé : celui-ci porte i', sans astérisque."
+ },
+ {
+  "page": 353,
+  "where": "Numéro du paragraphe précédant 4.8",
+  "scan": "4.5.5.",
+  "tex": "\\etiquette[4.7.5]{IV.subsubsec4.7.5}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "4.7.5",
+  "note": "Le numéro imprimé est fautif : ce paragraphe suit 4.7.4. Le TeX corrige silencieusement en 4.7.5."
+ },
+ {
+  "page": 353,
+  "where": "4.8, parenthèse sur les foncteurs dérivés de l'inclusion",
+  "scan": "ses foncteurs dérivés",
+  "tex": "ces foncteur dérivés",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "ces foncteur dérivés",
+   "new": "ses foncteurs dérivés"
+  },
+  "note": "L'imprimé porte le possessif « ses » et le pluriel « foncteurs »."
+ },
+ {
+  "page": 353,
+  "where": "4.8, notation des préfaisceaux de cohomologie",
+  "scan": "$\\mathcal{H}^n(F)$",
+  "tex": "$\\Xx^n(F)$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\Xx^n(F)",
+   "new": "\\mathcal{H}^n(F)"
+  },
+  "note": "La lettre manuscrite est un H calligraphique, non un X."
+ },
+ {
+  "page": 354,
+  "where": "4.9.1, phrase « On fera attention qu'en général… »",
+  "scan": "$f^s$ n'est pas exact à droite",
+  "tex": "$f^s$ n'est pas exact à \\sisi{droite}{gauche}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$f^s$ n'est pas exact à gauche",
+  "note": "« Droite » est une coquille : f^s, adjoint à gauche, est exact à droite. Le TeX corrige explicitement en « gauche » au second argument de \\sisi."
+ }
+]

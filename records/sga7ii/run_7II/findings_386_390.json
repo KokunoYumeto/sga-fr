@@ -1,0 +1,115 @@
+[
+ {
+  "page": 387,
+  "where": "diagram U ↪ X ↩ Z, f : U → Y at the top of the page",
+  "scan": "a full stop '.' printed on the Y row, to the right, closing the diagram",
+  "tex": "Y\n\\end{tikzcd} (no full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Y\n\\end{tikzcd}",
+   "new": "Y & .\n\\end{tikzcd}"
+  },
+  "note": "Full stop after the diagram is left out. The STRUCTURE comment only describes it as punctuation and does not say it is omitted, so no comment edit is needed."
+ },
+ {
+  "page": 388,
+  "where": "Corollaire 5.3 (a)",
+  "scan": "Si G est T-entier, alors j_*G est T-entier. — 'est' and 'entier' underlined, the letter T not",
+  "tex": "\\underline{est $T$-entier}, \\underline{alors} $j_*\\underline{G}$ \\underline{est $T$-entier}.",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\underline{est $T$-entier}, \\underline{alors} $j_*\\underline{G}$ \\underline{est $T$-entier}.",
+   "new": "\\underline{est} $T$-\\underline{entier}, \\underline{alors} $j_*\\underline{G}$ \\underline{est} $T$-\\underline{entier}."
+  },
+  "note": "The TeX underlines the math letter T, which the print leaves out of the underline. The file does this correctly elsewhere: E-\\underline{faisceau}, $G/I$-\\underline{modules}."
+ },
+ {
+  "page": 388,
+  "where": "Corollaire 5.3 (b)",
+  "scan": "G^∨_x est T-entier, alors, pour tout x ∈ X, (j_*G)_x^∨ est T-entier. — T not underlined",
+  "tex": "\\underline{est $T$-entier} (twice)",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "$\\underline{G}^\\vee_x$ \\underline{est $T$-entier}, \\underline{alors}, \\underline{pour tout} $x \\in X$, $(j_*\\underline{G})_x^\\vee$ \\underline{est $T$-entier}.",
+   "new": "$\\underline{G}^\\vee_x$ \\underline{est} $T$-\\underline{entier}, \\underline{alors}, \\underline{pour tout} $x \\in X$, $(j_*\\underline{G})_x^\\vee$ \\underline{est} $T$-\\underline{entier}."
+  },
+  "note": "Same underline extent problem as in (a)."
+ },
+ {
+  "page": 388,
+  "where": "diagram U' ↪ X', U ↪ X ↩ Y, before 'alors p_*j'_*'",
+  "scan": "a comma ',' printed on the bottom row, to the right of Y",
+  "tex": "Y \\arrow[l, hook']\n\\end{tikzcd} (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Y \\arrow[l, hook']",
+   "new": "Y \\arrow[l, hook'] & ,"
+  },
+  "note": "The comma closing the diagram is left out. The STRUCTURE comment describes it and does not say it is omitted, so no comment edit is needed."
+ },
+ {
+  "page": 388,
+  "where": "paragraph 'Si X' est le normalisé…', just before the diagram",
+  "scan": "et tel que G restreint à U soit constant tordu :",
+  "tex": "tel que $\\underline{G}$ restreint à $U$ soit constant tordu :",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "tel que $\\underline{G}$ restreint à $U'$ soit constant tordu :",
+  "note": "The 'tel que' clause qualifies U' (the open set chosen on which G is locally constant), so the print's U should be U'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 389,
+  "where": "first line",
+  "scan": "est T-entier. Désignnons par 𝔊_x",
+  "tex": "Désignons",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Désignons",
+   "new": "Désignnons"
+  },
+  "corrected": "Désignons",
+  "note": "The print has the typing error 'Désignnons'. The TeX silently corrects it; the fix restores the printed reading."
+ },
+ {
+  "page": 389,
+  "where": "paragraph after Lemme 5.3.1, 'On a … ≃ ℤ_ℓ(1)'",
+  "scan": "sur V. On a I'/I' ≃ ℤ_ℓ(1) (en tant que G/I-modules)",
+  "tex": "On a $I/I' \\simeq \\mathbb{Z}_\\ell(1)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "$I/I' \\simeq",
+   "new": "$I'/I' \\simeq"
+  },
+  "corrected": "I/I'",
+  "note": "The print types a stray prime on the first I; the next line correctly has I/I'. The TeX silently corrects it."
+ },
+ {
+  "page": 390,
+  "where": "Lemme 5.3.2, 'ρ I → Gl(V)'",
+  "scan": "ρ  I ⟶ Gl(V) (no colon)",
+  "tex": "$\\rho$ $I \\longrightarrow \\mathrm{Gl}(V)$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "$\\rho : I \\longrightarrow \\mathrm{Gl}(V)$",
+  "note": "The colon of the map notation is missing in the print. The TeX keeps the printed reading."
+ },
+ {
+  "page": 390,
+  "where": "proof of Lemme 5.3.2, 'Il suffit de vérifier 3.2'",
+  "scan": "Il suffit de vérifier 3.2 lorsque V correspond",
+  "tex": "vérifier 3.2",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "vérifier 5.3.2",
+  "note": "The statement being proved is 5.3.2, and the next paragraph cites it in full. '3.2' looks like a truncated reference. The TeX keeps the printed reading."
+ }
+]

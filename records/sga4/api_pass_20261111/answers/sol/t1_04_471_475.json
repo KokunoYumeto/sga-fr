@@ -1,0 +1,138 @@
+[
+ {
+  "page": 471,
+  "where": "b), références à III 1.2 et 1.7",
+  "scan": "(III 1.2 et 1.7)",
+  "tex": "(\\hyperrefext[III][III.prop1.2]{1.2} et\n\\hyperrefext[III][III.prop1.7]{1.7})",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\hyperrefext[III][III.prop1.7]{1.7}",
+   "new": "\\hyperref[III.prop1.7]{1.7}"
+  },
+  "note": "Le second renvoi ne répète pas « III » dans l'imprimé ; le second \\hyperrefext l'ajoute."
+ },
+ {
+  "page": 471,
+  "where": "c), condition (ii), fin",
+  "scan": "produits (ou encore, il admet un adjoint à gauche (9.5.10.2).",
+  "tex": "admet un adjoint à gauche \\eqhyperref[IV.eq9.5.10.2]{9.5.10.2}.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "admet un adjoint à gauche \\eqhyperref[IV.eq9.5.10.2]{9.5.10.2}).",
+  "note": "La parenthèse ouverte avant « ou encore » n'est pas refermée. Le TeX conserve cette omission."
+ },
+ {
+  "page": 471,
+  "where": "Exercice 9.5.11 a), signature du foncteur",
+  "scan": "\\rho\\longrightarrow\\mathcal{F}",
+  "tex": "\\rho \\sisi{}{: \\mathcal{U}} \\rightarrow \\mathcal{F}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\rho:\\mathcal{U}\\rightarrow\\mathcal{F}",
+  "note": "Le domaine du foncteur est omis dans l'imprimé. L'édition le rétablit explicitement avec \\sisi."
+ },
+ {
+  "page": 472,
+  "where": "Exercice 9.5.11 a), équivalence de catégories",
+  "scan": "(\\bar{\\mathcal{U}},\\bar{\\mathcal{F}},\\bar{\\rho})",
+  "tex": "(\\bar{\\mathcal{U}},\\bar{\\mathcal{F}},\\bar{\\rho})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(\\bar{\\mathcal{F}},\\bar{\\mathcal{U}},\\bar{\\rho})",
+  "note": "Les deux catégories sont interverties : la notation du recollement, rappelée en tête de page, est E=(\\mathcal{F},\\mathcal{U},\\rho), avec \\rho:\\mathcal{U}\\to\\mathcal{F}. Le TeX conserve l'ordre fautif de l'imprimé."
+ },
+ {
+  "page": 473,
+  "where": "Exercice 9.5.12 b), première phrase",
+  "scan": "considérons un foncteur recollement",
+  "tex": "considérons un foncteur recollement",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "considérons un foncteur de recollement",
+  "note": "Omission de « de » dans l'imprimé, conservée par le TeX."
+ },
+ {
+  "page": 473,
+  "where": "Exercice 9.5.12 b), signature de \\rho",
+  "scan": "\\rho:\\Top(X)\\longrightarrow\\Top(Y)",
+  "tex": "\\rho:\\Top(X)\\rightarrow \\Top(Y)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\rho:\\Top(Y)\\rightarrow\\Top(X)",
+  "note": "Pour composer le pro-adjoint avec les points de X et obtenir des pro-objets de \\Top(Y), comme l'indique la suite, son domaine doit être \\Pro(\\Top(X)). Les X et Y de la signature de \\rho sont donc intervertis. Le TeX conserve cette erreur."
+ },
+ {
+  "page": 473,
+  "where": "Exercice 9.5.12 b), parenthèse décrivant la composée",
+  "scan": "et du pro-adjoint \\sigma de \\rho. (N. B.",
+  "tex": "$\\sigma$ de $\\rho$. (N.B.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "et du pro-adjoint $\\sigma$ de $\\rho$).",
+  "note": "La parenthèse ouverte par « (composée de » n'est pas refermée avant la remarque N.B. Le TeX conserve cette omission."
+ },
+ {
+  "page": 474,
+  "where": "Premier paragraphe, référence après « topologie canonique »",
+  "scan": "(1.1.2 (iii))",
+  "tex": "\\sisi{\\hyperref[IV.subsubsec1.1.2]{1.1.2} (iii)}{\\hyperref[IV.theo1.2]{1.2} iii)}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\hyperref[IV.theo1.2]{1.2} (iii)",
+  "note": "Le renvoi imprimé à 1.1.2 (iii) est erroné. L'édition le corrige explicitement en 1.2 iii) avec \\sisi."
+ },
+ {
+  "page": 474,
+  "where": "Définition du faisceau de recollement, avant « s'appelle »",
+  "scan": "(ou à une situation (E,U,\\mathcal{F}) comme dans (9.3) s'appelle",
+  "tex": "(ou à une\nsituation $(E,U,\\mathcal{F})$ comme dans (\\hyperref[IV.subsec9.3]{9.3})\ns'appelle",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(ou à une situation $(E,U,\\mathcal{F})$ comme dans (\\hyperref[IV.subsec9.3]{9.3}))",
+  "note": "Il manque la fermeture de la parenthèse ouverte avant « ou à une situation ». Le TeX conserve cette omission."
+ },
+ {
+  "page": 474,
+  "where": "9.7.1, dernière phrase de la page",
+  "scan": "Il est alors immédiat",
+  "tex": "ll est alors immédiat",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "ll est alors immédiat",
+   "new": "Il est alors immédiat"
+  },
+  "note": "L'imprimé porte une initiale I capitale, non deux l minuscules."
+ },
+ {
+  "page": 475,
+  "where": "Proposition 9.7.2, foncteurs induits par les inclusions",
+  "scan": "$p\\mapsto p\\circ j$ et $q\\mapsto q\\circ i$",
+  "tex": "$p\\mapsto p\\circ j$ et $q\\mapsto q\\circ i$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$p\\mapsto j\\circ p$ et $q\\mapsto i\\circ q$",
+  "note": "Pour les points considérés comme morphismes de topos, les inclusions se composent après les points : j∘p et i∘q. Pour les foncteurs fibres, on écrirait p^{\\ast}∘j^{\\ast} et q^{\\ast}∘i^{\\ast}. Le TeX conserve l'ordre imprimé."
+ },
+ {
+  "page": 475,
+  "where": "Formule (9.7.2.3), terme intermédiaire",
+  "scan": "\\Hom(\\Pro(\\rho)(p),q)",
+  "tex": "\\Hom(\\Pro(\\rho)(p),q)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom(u(p),v(q))\\simeq \\operatorname{Nat}(q^{\\ast}\\circ\\rho,p^{\\ast})\\simeq \\Hom(p,\\sigma(q))",
+  "note": "Le terme intermédiaire imprimé est faux, et le TeX le conserve. Par exemple, pour \\mathcal{U}=\\mathcal{F}=(\\Ens), \\rho(T)=T^S avec S à deux éléments, et les points uniques p,q, ce terme est un singleton tandis que \\Hom(p,\\sigma(q)) est S. Le terme intermédiaire correct peut s'écrire comme l'ensemble des transformations q^{\\ast}∘\\rho→p^{\\ast}."
+ }
+]

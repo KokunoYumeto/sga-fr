@@ -1,0 +1,87 @@
+import json, pathlib
+
+run = pathlib.Path(r"C:\Users\user\Documents\sga_scan_check_20261105\run_7I")
+pages = run / "b436_440"
+out = run / "findings_436_440_recheck.json"
+
+findings = [
+    {
+        "page": 436,
+        "where": "after (9.6.1): 'au sens des pro-ℓ-groupes de Barsotti-Tate, i.e D(Y) est le système projectif'",
+        "scan": "i.e D(Y)  (no point after the e)",
+        "tex": "i.e $D(Y)$",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "i.e. $D(Y)$",
+        "note": "Typing error: the second point of 'i.e.' is missing (the print writes 'i.e.' on pp. 439 and 440). The TeX keeps the printed reading.",
+    },
+    {
+        "page": 437,
+        "where": "second unnumbered display, after 'L'isomorphisme d'extensions de Q par R :'",
+        "scan": "X_η/X^2_η ≃ F_η = D(F'_η)",
+        "tex": "X_\\eta/X^2_\\eta \\simeq F_\\eta = D(F'_\\eta)",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "X_\\eta/X^2_\\eta \\simeq E_\\eta = D(F'_\\eta)",
+        "note": "E = D(F') is the extension of Q by R (9.6.1 and p. 436) that prolongs X_η/X^2_η; F is the extension of R by P. F_η is a misprint for E_η. The TeX keeps the printed reading.",
+    },
+    {
+        "page": 437,
+        "where": "end of 9.6: '(puisque sa filtration en trois crans, ... en termes du seul pro-ℓ-groupe X = T_ℓ(A_K).'",
+        "scan": "pro-ℓ-groupe X = T_ℓ(A_K).  (the parenthesis opened at '(puisque' is never closed)",
+        "tex": "pro-$\\ell$-groupe $X = T_\\ell(A_K)$.",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "pro-$\\ell$-groupe $X = T_\\ell(A_K)$).",
+        "note": "Unbalanced parenthesis in the print; the TeX keeps the printed reading.",
+    },
+    {
+        "page": 437,
+        "where": "Remarque 9.7, last line: 'à partir de l'accouplement de monodromie pour A_{K'} ,'",
+        "scan": "monodromie  (faintly struck final e: its bar and the right side of its upper bowl did not print; a trace remains at mid-height on the right, where the bar meets the bowl)",
+        "tex": "monodromic",
+        "kind": "word",
+        "confidence": "medium",
+        "fix": {"old": "monodromic pour", "new": "monodromie pour"},
+        "note": "Faint type, not a typed c: every c on the same line (accouplement) has a heavy terminal at the upper right, which this glyph lacks, and it keeps the trace of the e's bar junction. If the letter is read as a typed c instead, treat it as a misprint kept by the TeX (fix null, corrected 'monodromie').",
+    },
+    {
+        "page": 438,
+        "where": "second paragraph: 'l'accouplement de monodromie (9.7.1) peut s'interprèter simplement'",
+        "scan": "s'interprèter  (grave accent)",
+        "tex": "s'interprèter",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "s'interpréter",
+        "note": "Spelling error of the print: the infinitive takes an acute accent (the print has 'd'interpréter' on p. 440). The TeX keeps the printed reading.",
+    },
+    {
+        "page": 439,
+        "where": "10.2: 'nous devons introduire le schéma dual (A'_K)' de A_K , qui est canoniquement isomorphe à A_K'",
+        "scan": "(A'_K)' de A_K ,",
+        "tex": "$(A_K')'$ de $A_K$ ,",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "$(A_K')'$ de $A_K'$ ,",
+        "note": "The construction of par. 9 is applied to A'_K, so (A'_K)' is the dual of A'_K, isomorphic to A_K by biduality; the print drops the prime. The TeX keeps the printed reading.",
+    },
+]
+
+ok = True
+for f in findings:
+    text = (pages / f"page_{f['page']}.tex").read_text(encoding="utf-8")
+    if f["fix"] is not None:
+        n = text.count(f["fix"]["old"])
+        print(f["page"], "fix old count:", n, repr(f["fix"]["old"]))
+        ok &= n == 1
+    n_tex = text.count(f["tex"])
+    print(f["page"], "tex count:", n_tex, repr(f["tex"]))
+
+out.write_text(json.dumps(findings, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+json.loads(out.read_text(encoding="utf-8"))
+print("all fix olds unique:", ok)

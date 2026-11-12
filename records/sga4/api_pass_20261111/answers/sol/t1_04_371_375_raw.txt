@@ -1,0 +1,97 @@
+{
+  "findings": [
+    {
+      "page": 371,
+      "where": "Définition de c^{\\ast}, « au-dessus de G »",
+      "scan": "Si $X'$ est un objet de $B_G$ au-dessus de $G$",
+      "tex": "au-dessus de \\sisi{$G$}{$X$}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "au-dessus de $X$",
+      "note": "L'objet considéré appartient à la tranche au-dessus de X. Le TeX conserve le G imprimé dans le premier argument de \\sisi et le corrige en X dans le second."
+    },
+    {
+      "page": 372,
+      "where": "Formule définissant c_{\\ast}, catégorie d'arrivée",
+      "scan": "c_{\\ast}:X'\\longmapsto(i_{!}(X')\\longrightarrow X):B_H\\longrightarrow B_G",
+      "tex": "c_{\\ast}:X'\\longmapsto (i_{!}(X')\\longrightarrow\nX):B_H\\longrightarrow B_G",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "c_{\\ast}:X'\\longmapsto(i_{!}(X')\\longrightarrow X):B_H\\longrightarrow(B_G)_{/X}",
+      "note": "La cible du foncteur cherché est la tranche (B_G)_{/X}, comme l'indique la phrase précédente. Le TeX garde la cible fautive B_G de l'imprimé."
+    },
+    {
+      "page": 372,
+      "where": "Dernière parenthèse, définition de E_G",
+      "scan": "$E_G=G_s=G$",
+      "tex": "$E_G=G_S=G$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "G_S=G",
+        "new": "G_s=G"
+      },
+      "note": "Le sous-indice imprimé est un s minuscule, comme dans l'exercice 5.9 a), non un S majuscule."
+    },
+    {
+      "page": 373,
+      "where": "Première phrase après le diagramme (5.8.3.1)",
+      "scan": "E'=((B_G)_{X/G)/Z}",
+      "tex": "$E'=((B_G)_{X/G)/Z}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "E'_{/Z}=((B_G)_{/(X,G)})_{/Z}",
+      "note": "La formule imprimée est fautive : il s'agit du topos E'_{/Z}, et la tranche intérieure est au-dessus de (X,G). Le TeX conserve la formule fautive, notamment E'= et l'indice X/G."
+    },
+    {
+      "page": 374,
+      "where": "5.8.4, les deux occurrences du symbole du pro-groupe",
+      "scan": "Le pro-groupe est noté $\\underline{G}$ aux deux occurrences.",
+      "tex": "$𝒢=(G_i)$ ; $𝒢\\rightarrow G_{i_{\\circ}}$",
+      "kind": "underline",
+      "confidence": "high",
+      "fix": {
+        "old": "$𝒢=(G_i)$, dans le cas\nparticulier où $H$ est défini comme « noyau »  de\n$𝒢\\rightarrow G_{i_{\\circ}}$",
+        "new": "$\\underline{G}=(G_i)$, dans le cas\nparticulier où $H$ est défini comme « noyau »  de\n$\\underline{G}\\rightarrow G_{i_{\\circ}}$"
+      },
+      "note": "Le soulignement appartient ici au symbole mathématique du pro-groupe, distinct du groupe G ; ce n'est pas un soulignement d'emphase. Le TeX lui substitue une capitale calligraphique."
+    },
+    {
+      "page": 375,
+      "where": "Exercice 5.9 b), cible de l'équivalence",
+      "scan": "\\Ttors(E,q^{\\ast}(G))",
+      "tex": "\\Ttors(E,q^{\\ast}(G))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Ttors(E',q^{\\ast}(G))",
+      "note": "Le groupe q^{\\ast}(G) et les torseurs f^{\\ast}(E_G) sont dans E', non dans E. Le TeX garde le E fautif de l'imprimé."
+    },
+    {
+      "page": 375,
+      "where": "Exercice 5.9 b), dernière phrase",
+      "scan": "des $q^{\\ast}(G)$-torseurs (à droite) sur $E$",
+      "tex": "$q^{\\ast}(G)$-torseurs (à droite) sur $E$.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$q^{\\ast}(G)$-torseurs (à droite) sur $E'$.",
+      "note": "Même erreur de base que dans la cible de l'équivalence : les torseurs sont sur E'. Le TeX conserve le E imprimé."
+    },
+    {
+      "page": 375,
+      "where": "Exercice 5.9 c), première phrase",
+      "scan": "un sous-Groupe de $p^{\\ast}(G)$",
+      "tex": "un sous-Groupe de $p^{\\ast}(G)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un sous-Groupe de $\\pi^{\\ast}(G)$",
+      "note": "Le morphisme structural est π ; aucun p n'est défini ici. Le TeX garde le p fautif de l'imprimé."
+    }
+  ],
+  "coordinator": "371 : 0/1 ; 372 : 1/1 ; 373 : 0/1 ; 374 : 1/0 ; 375 : 0/3 (normal/misprint)."
+}

@@ -1,0 +1,132 @@
+{
+  "findings": [
+    {
+      "page": 76,
+      "where": "Première phrase, annulation des images directes supérieures",
+      "scan": "R^qj_{\\cl\\!\\ast}F=0",
+      "tex": "R^q{j}_{\\ast}F=0",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "R^q{j}_{\\ast}F=0",
+        "new": "R^q{j}_{\\cl\\!\\ast}F=0"
+      },
+      "note": "L'indice cl de j manque dans le TeX."
+    },
+    {
+      "page": 76,
+      "where": "Quotients d'entiers : même différence répétée cinq fois",
+      "scan": "\\ZZ/n",
+      "tex": "\\ZZ/\\sisi{n\\ZZ}{n}, dont la lecture A est \\ZZ/n\\ZZ",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "le faisceau constant $\\ZZ/\\sisi{n\\ZZ}{n}$",
+        "new": "le faisceau constant $\\ZZ/\\sisi{n}{n}$"
+      },
+      "note": "Le scan donne toujours n seul au dénominateur. Cette notation abrégée n'est pas une coquille. Le fix est représentatif de la correction à appliquer aux cinq lectures A ; B n'est pas contrôlé."
+    },
+    {
+      "page": 76,
+      "where": "Voisinage étale annulant l'image de η",
+      "scan": "l'image de η […] soit nul",
+      "tex": "$H^q(S'_{\\cl},G)$ soit nul.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "soit nulle.",
+      "note": "Accord avec « l'image ». Le TeX conserve la coquille imprimée."
+    },
+    {
+      "page": 76,
+      "where": "Dernière phrase, domaine d'application de la suite exacte (*)",
+      "scan": "Lorsque q ≥ 1",
+      "tex": "Lorsque $q\\geq 1$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Lorsque $q>1$",
+      "note": "L'effacement sur S doit s'appliquer au degré q−1, qui doit être positif. Le cas q=1 est traité séparément page 77. Le TeX conserve l'inégalité erronée."
+    },
+    {
+      "page": 77,
+      "where": "Début de la justification des conditions (i) et (ii)",
+      "scan": "on peut supposer (i) et (ii) vrai pour S",
+      "tex": "on peut supposer (i) et (ii) vrai{s} pour $S$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "on peut supposer (i) et (ii) vrais pour $S$",
+      "note": "Le s du pluriel manque dans le print ; le TeX le rétablit silencieusement."
+    },
+    {
+      "page": 77,
+      "where": "Suite exacte d'homotopie, premier terme",
+      "scan": "\\pi_0(X_0(\\CC))",
+      "tex": "\\pi_0(X_0(\\CC))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\pi_n(X_0(\\CC))",
+      "note": "Le premier groupe doit porter l'indice n, comme les deux groupes suivants. Le TeX conserve le 0 imprimé."
+    },
+    {
+      "page": 78,
+      "where": "Première référence à CG",
+      "scan": "CG I 16",
+      "tex": "CG 1 16",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "(\\cf CG 1 16)",
+        "new": "(\\cf CG I 16)"
+      },
+      "note": "Le print porte le chiffre romain I, non le chiffre arabe 1."
+    },
+    {
+      "page": 78,
+      "where": "Définition du complété de π₁",
+      "scan": "son complété \\pi_1=\\varprojlim_N\\pi_1/N",
+      "tex": "\\sisi{\\widehat}{}{\\pi}_1=\\varprojlim_N \\pi_1/N",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\widehat{\\pi}_1=\\varprojlim_N \\pi_1/N",
+      "note": "Le chapeau manque sur le symbole du complété, alors qu'il figure dans la formule et la parenthèse suivantes. La lecture A du TeX le rétablit et corrige donc cette coquille ; B n'est pas contrôlé."
+    },
+    {
+      "page": 78,
+      "where": "Bibliographie [2], page de l'article de Grauert et Remmert",
+      "scan": "p. 345 (1958)",
+      "tex": "p. 245 (1958)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "p. 245 (1958)",
+      "note": "« Komplexe Räume », Math. Ann. 136, commence page 245. Le TeX corrige silencieusement le 345 imprimé."
+    },
+    {
+      "page": 78,
+      "where": "Bibliographie [3], volume des Annals of Mathematics",
+      "scan": "Vol. 39",
+      "tex": "Vol. 39",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Vol. 79",
+      "note": "L'article de Hironaka de 1964 appartient au volume 79, non 39. Le TeX conserve la coquille imprimée."
+    },
+    {
+      "page": 78,
+      "where": "Bibliographie [4], pagination de l'article de Serre",
+      "scan": "p. 1-12 (1956)",
+      "tex": "p. 1-12 (1956)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "p. 1-42 (1956)",
+      "note": "« Géométrie Algébrique et Géométrie Analytique » occupe les pages 1–42 du tome VI. Le TeX conserve la pagination erronée du print."
+    }
+  ],
+  "coordinator": "76 : 2/2 ; 77 : 0/2 ; 78 : 1/4 (normal/misprint).\nConvention p. 76 : étendre le fix représentatif aux cinq lectures A des \\sisi{n\\ZZ}{n}, en remplaçant n\\ZZ par n ; trois exemples : faisceau constant, égalité pour R^0f_{\\cl\\!\\ast}, expression pour R^1f_{\\cl\\!\\ast}."
+}

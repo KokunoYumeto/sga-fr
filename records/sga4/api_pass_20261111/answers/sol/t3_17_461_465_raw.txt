@@ -1,0 +1,178 @@
+{
+  "findings": [
+    {
+      "page": 461,
+      "where": "Fin de la preuve de 6.3.31",
+      "scan": "\\Sym^{n}(X)",
+      "tex": "\\Sym^{n}\\sisi{}{_T}(X)",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\Sym^{n}_{T}(X)",
+      "note": "L'imprimé omet la base T du produit symétrique défini juste avant. Le TeX la rétablit avec \\sisi."
+    },
+    {
+      "page": 462,
+      "where": "7.0.1, définition de la catégorie bifibrée relative à R",
+      "scan": "déduite de",
+      "tex": "déduit de",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "déduit de",
+        "new": "déduite de"
+      },
+      "note": "L'imprimé porte le féminin « déduite »."
+    },
+    {
+      "page": 462,
+      "where": "7.0.1, phrase « Ceci posé »",
+      "scan": "\\sheaf{\\Mod}(\\Ee^{\\circ}_{R},\\mathcal{A})",
+      "tex": "\\sheaf{\\Mod}(\\sisi{}{\\sheafGamma(}\\Ee^{\\circ}_{R}\\sisi{}{)},\\mathcal{A})",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\sheaf{\\Mod}(\\sheafGamma(\\Ee^{\\circ}_{R}),\\mathcal{A})",
+      "note": "L'imprimé omet le passage au topos de sections dans l'argument de Mod. Le TeX ajoute les deux éléments manquants avec \\sisi."
+    },
+    {
+      "page": 462,
+      "where": "Début de 7.0.2",
+      "scan": "Bien que tous les résultats",
+      "tex": "Bien que tout les résultats",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Bien que tout les",
+        "new": "Bien que tous les"
+      },
+      "note": "L'imprimé porte « tous », non « tout »."
+    },
+    {
+      "page": 463,
+      "where": "Lemme 7.0.3, flèche canonique sur les complexes",
+      "scan": "j_{!}\\circ R^{+}f'(K^{\\bigdot})\\longrightarrow R^{+}f\\circ j_{!}(K^{\\bigdot})",
+      "tex": "j_{!}\\circ R^{+}f'\\sisi{}{_*}(K^{\\bigdot})\\longrightarrow R^{+}f\\sisi{}{_*}\\circ\nj_{!}(K^{\\bigdot})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "j_{!}\\circ R^{+}f'_{*}(K^{\\bigdot})\\longrightarrow R^{+}f_{*}\\circ j'_{!}(K^{\\bigdot})",
+      "note": "L'imprimé omet les indices d'image directe et la prime du j de droite. Le TeX rétablit les indices avec \\sisi, mais conserve j_! au lieu de j'_! à droite."
+    },
+    {
+      "page": 463,
+      "where": "Formule (7.0.3.2)",
+      "scan": "j_{!}\\circ R^{i}f'(F)\\longrightarrow R^{i}f\\circ j_{!}(F)",
+      "tex": "j_{!}\\circ R^{i}f'\\sisi{}{_*}(F)\\longrightarrow R^{i}f\\sisi{}{_*}\\circ j_{!}(F)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "j_{!}\\circ R^{i}f'_{*}(F)\\longrightarrow R^{i}f_{*}\\circ j'_{!}(F)",
+      "note": "Même défaut que dans la flèche précédente : les deux indices_* sont rétablis par le TeX, mais la prime nécessaire sur le j de droite reste omise."
+    },
+    {
+      "page": 463,
+      "where": "Fin de la preuve du lemme 7.0.3, flèche sur les fibres géométriques",
+      "scan": "(j_{!}\\circ R^{i}f'(F))_{\\xi}\\rightarrow (R^{i}f\\circ j_{!}(F))_{\\xi}",
+      "tex": "(j_{!}\\circ R^{i}f'\\sisi{}{_*}(F))_{\\xi}\\rightarrow (R^{i}f\\sisi{}{_*}\\circ\nj_{!}(F))_{\\xi}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(j_{!}\\circ R^{i}f'_{*}(F))_{\\xi}\\rightarrow (R^{i}f_{*}\\circ j'_{!}(F))_{\\xi}",
+      "note": "L'imprimé répète les omissions des deux formules précédentes. Le TeX corrige les indices d'image directe, mais conserve l'absence de prime sur le second j."
+    },
+    {
+      "page": 464,
+      "where": "Construction 7.0.4, première formule, catégorie d'arrivée",
+      "scan": "D(\\sheafGamma(\\bar{Y},\\mathcal{A}))",
+      "tex": "D(\\sheafGamma(\\bar{Y},\\mathcal{A}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "D(\\sheafGamma(\\bar{Y}),\\mathcal{A})",
+      "note": "La parenthèse fermant l'argument de Gamma est déplacée après l'anneau. Le TeX conserve cette coquille de l'imprimé."
+    },
+    {
+      "page": 464,
+      "where": "Construction 7.0.4, sommet supérieur gauche du diagramme",
+      "scan": "D(\\sheafGamma(\\bar{X}),\\,)",
+      "tex": "D(\\sheafGamma(\\bar{X}), \\sisi{}{\\Aa})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "D(\\sheafGamma(\\bar{X}),\\Aa)",
+      "note": "L'argument désignant l'anneau manque dans l'imprimé. Le TeX le rétablit avec \\sisi."
+    },
+    {
+      "page": 464,
+      "where": "Construction 7.0.4, les deux flèches verticales du diagramme",
+      "scan": "R e^{+}_{\\alpha}",
+      "tex": "R e^{\\sisi{+}{*}}_{\\alpha}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "R e^{*}_{\\alpha}",
+      "note": "Les deux étiquettes portent un + au lieu du symbole d'image inverse *. Le TeX corrige les deux occurrences avec \\sisi."
+    },
+    {
+      "page": 464,
+      "where": "Construction 7.0.5, après le diagramme (7.0.5.1)",
+      "scan": "sont des immersions,",
+      "tex": "sont des immersion,",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "sont des immersion,",
+        "new": "sont des immersions,"
+      },
+      "note": "Le pluriel est bien imprimé."
+    },
+    {
+      "page": 464,
+      "where": "Construction 7.0.5, isomorphisme canonique",
+      "scan": "i_{!}\\isomto R^{+}\\bar{u}_{f+}\\circ j_{!}\\circ L^{+}\\bar{u}_{f'}",
+      "tex": "i_{!}\\isomto  R^{+}\\bar{u}_{f\\sisi{+}{*}}\\circ j_{!}\\circ\nL^{+}\\bar{u}_{f'}\\sisi{}{^*}{\\quoi}.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "i_{!}\\isomto R^{+}\\bar{u}_{f*}\\circ j_{!}\\circ L^{+}\\bar{u}_{f'}^{*}",
+      "note": "L'imprimé met + à l'indice d'image directe et omet le symbole d'image inverse du dernier facteur. Le TeX corrige les deux défauts avec \\sisi."
+    },
+    {
+      "page": 465,
+      "where": "Phrase « Dès lors », premier facteur",
+      "scan": "L^{+}\\bar{u}_{f}^{+}\\circ i_{!}",
+      "tex": "L^{+}\\bar{u}_{f}^{\\sisi{+}{*}}\\circ i_{!}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "L^{+}\\bar{u}_{f}^{*}\\circ i_{!}",
+      "note": "L'exposant d'image inverse est imprimé + au lieu de *. Le TeX le corrige avec \\sisi."
+    },
+    {
+      "page": 465,
+      "where": "Suite d'isomorphismes précédant « d'où l'isomorphisme voulu »",
+      "scan": "i_{!}\\isomto R^{+}\\bar{u}_{f+}\\circ L^{+}(\\bar{u}^{+}_{f})\\circ i_{!}\\isomto R^{+}\\bar{u}_{f\\ast}\\circ j_{!}\\circ L^{+}\\bar{u}_{f'}^{\\ast}",
+      "tex": "i_{!}\\isomto R^{+}\\bar{u}_{f\\sisi{+}{*}}\\circ\nL^{+}(\\bar{u}^{\\sisi{+}{*}}_{f})\\circ i_{!}\\isomto\nR^{+}\\bar{u}_{f\\ast}\\circ j_{!}\\circ L^{+}\\bar{u}_{f'}^{\\ast}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "i_{!}\\isomto R^{+}\\bar{u}_{f*}\\circ L^{+}(\\bar{u}^{*}_{f})\\circ i_{!}\\isomto R^{+}\\bar{u}_{f\\ast}\\circ j_{!}\\circ L^{+}\\bar{u}_{f'}^{\\ast}",
+      "note": "Dans le terme intermédiaire, l'imprimé emploie + pour les symboles d'image directe et d'image inverse. Le TeX rétablit les deux astérisques avec \\sisi."
+    },
+    {
+      "page": 465,
+      "where": "Renvoi précédant le lemme 7.0.6",
+      "scan": "XII 7.1",
+      "tex": "\\hyperref[XVII.subsec7.1]{7.1}",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hyperref[XVII.subsec7.1]{7.1}",
+        "new": "\\hyperrefext[XII][XII.lem7.1]{7.1}"
+      },
+      "note": "Le premier argument de \\sisi omet XII et renvoie à XVII 7.1. L'imprimé porte bien XII 7.1 ; seul ce premier argument est à modifier."
+    }
+  ],
+  "coordinator": "Comptes normal/misprint : 461 0/1 ; 462 2/1 ; 463 0/3 ; 464 1/4 ; 465 1/2."
+}

@@ -1,0 +1,79 @@
+{
+  "findings": [
+    {
+      "page": 191,
+      "where": "Première formule, seconde relation",
+      "scan": "R^{i}f'_{\\ast}(M_{X'})=0",
+      "tex": "R^{i}f'_{\\ast}(M_{x'})=0",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "M_{x'}",
+        "new": "M_{X'}"
+      },
+      "note": "L'indice imprimé est un X majuscule."
+    },
+    {
+      "page": 191,
+      "where": "Phrase suivant la première formule",
+      "scan": "du fait que le premier membre",
+      "tex": "du fait que la premier membre",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "que la premier membre",
+        "new": "que le premier membre"
+      },
+      "note": "L'imprimé porte « le », non « la »."
+    },
+    {
+      "page": 192,
+      "where": "Théorème 2.1, début",
+      "scan": "Soient $g:X\\rightarrow Y$ un morphisme lisse et soit",
+      "tex": "Soient $g:X\\rightarrow Y$ un morphisme lisse et soit",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Soit $g:X\\rightarrow Y$ un morphisme lisse et soit",
+      "note": "Coquille d'accord de l'imprimé, conservée par le TeX : le premier verbe doit être au singulier. Le signe entre les lettres LL et PP est indistinct sur ce scan ; aucune différence n'est affirmée sur ce point."
+    },
+    {
+      "page": 194,
+      "where": "Paragraphe initial, « En relevant a^0 en une section a de… »",
+      "scan": "\\mathcal{O}_{\\widetilde{Y}}",
+      "tex": "\\mathcal{O}_{\\sisi{Y}{\\widetilde{Y}}}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\mathcal{O}_{\\sisi{Y}{\\widetilde{Y}}}$",
+        "new": "\\mathcal{O}_{\\widetilde{Y}}$"
+      },
+      "note": "Le Y en indice porte déjà un tilde manuscrit dans l'imprimé ; le premier argument de \\sisi ne reproduit donc pas la lecture imprimée."
+    },
+    {
+      "page": 194,
+      "where": "Paragraphe initial, formule après « Posons »",
+      "scan": "A=\\Gamma(\\widetilde{Y},\\mathcal{O}_{\\widetilde{Y}})",
+      "tex": "A=\\Gamma\n(\\sisi{Y}{\\widetilde{Y}},\\mathcal{O}_{\\sisi{Y}{\\widetilde{Y}}})",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "(\\sisi{Y}{\\widetilde{Y}},\\mathcal{O}_{\\sisi{Y}{\\widetilde{Y}}})",
+        "new": "(\\widetilde{Y},\\mathcal{O}_{\\widetilde{Y}})"
+      },
+      "note": "Les deux Y portent des tildes dans l'imprimé, absents des premières lectures données par les \\sisi."
+    },
+    {
+      "page": 195,
+      "where": "Définition de la fibre géométrique X_alpha en y_alpha",
+      "scan": "la fibre géométrique de $\\Spec A_{\\alpha}\\{t\\}$ sur $\\Spec A$ en $\\bar{y}_{\\alpha}$",
+      "tex": "la fibre géométrique de $\\Spec A_{\\alpha}\\{t\\}$ sur $\\Spec A$ en~$\\bar{y}_{\\alpha}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "la fibre géométrique de $\\Spec A_{\\alpha}\\{t\\}$ sur $\\Spec A_{\\alpha}$ en~$\\bar{y}_{\\alpha}$",
+      "note": "L'imprimé omet l'indice alpha au schéma de base, et le TeX conserve cette coquille. Le point géométrique y_alpha appartient à Spec A_alpha."
+    }
+  ],
+  "coordinator": "191 : 2/0 ; 192 : 0/1 ; 193 : 0/0 ; 194 : 2/0 ; 195 : 0/1 (normal/misprint)."
+}

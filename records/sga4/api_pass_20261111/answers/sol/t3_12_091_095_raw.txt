@@ -1,0 +1,161 @@
+{
+  "findings": [
+    {
+      "page": 91,
+      "where": "(5.5.1), lower right term",
+      "scan": "H^{1}(\\bar{X}_0,\\bar{F}_0), without a superscript G",
+      "tex": "H^{1}(\\bar{X}_0,\\bar{F}_0)^G",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{1}(\\bar{X}_0,\\bar{F}_0)^G",
+      "note": "The print omits G. The TeX silently corrects this omission, as required by the assertion that the right vertical map is an isomorphism."
+    },
+    {
+      "page": 91,
+      "where": "“Soient α, β…”, their common image",
+      "scan": "H^{0}(X_0,F_0)",
+      "tex": "H^{\\circ}(X_{\\circ},F_{\\circ})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^1(X_{\\circ},F_{\\circ})",
+      "note": "The print has degree zero instead of degree one. The TeX keeps this misprint."
+    },
+    {
+      "page": 91,
+      "where": "“Soit β′ la classe…”",
+      "scan": "la classe H^1(X,F^{\\alpha}) correspondant à β",
+      "tex": "la classe $H^1(X,F^{\\alpha})$ correspondant à $\\beta$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "la classe de $H^1(X,F^{\\alpha})$ correspondant à $\\beta$",
+      "note": "The preposition de is missing before the cohomology set. The TeX preserves the omission."
+    },
+    {
+      "page": 91,
+      "where": "“Examinons le diagramme…”, image of β′",
+      "scan": "H^{0}(\\bar{X},\\bar{F}^{\\alpha})^G",
+      "tex": "H^{\\circ}(\\bar{X},\\bar{F}^{\\alpha})^G",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^1(\\bar{X},\\bar{F}^{\\alpha})^G",
+      "note": "The restriction of β′ belongs to H^1, not H^0. The TeX retains the printed wrong degree."
+    },
+    {
+      "page": 91,
+      "where": "Same paragraph, “d'un élément de…”",
+      "scan": "H^1(G,H^0(\\bar{X},\\bar{F}))",
+      "tex": "H^1(G,H^{\\circ}(\\bar{X},\\bar{F}))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^1(G,H^{\\circ}(\\bar{X},\\bar{F}^{\\alpha}))",
+      "note": "The coefficient sheaf must still be the twisted sheaf F^α. The print drops α here, and the TeX keeps the omission."
+    },
+    {
+      "page": 92,
+      "where": "Godement argument: parenthesis below the square and lower row of the following diagram",
+      "scan": "H^1(\\bar{X},\\bar{G}); H^1(X_0,G_0); H^1(\\bar{X}_0,\\bar{G}_0)^G",
+      "tex": "H^1(\\bar{X},\\bar{G}); H^{1}(X_0,G_0); H^{1}(\\bar{X}_0,\\bar{G}_0)^G",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "H^1(\\bar{X},\\bar{C})=\\varinjlim H^1(X',C)=0;\\qquad H^{1}(X_0,C_0)\\longrightarrow H^{1}(\\bar{X}_0,\\bar{C}_0)^G",
+      "note": "The Godement target is named C at the start of this argument and in the square. These three sheaf positions switch unannounced to G; in uniform notation they should read C. The TeX preserves the printed switch. The G denoting the Galois group is unaffected."
+    },
+    {
+      "page": 92,
+      "where": "Immediately after the commutative square",
+      "scan": "donc est nul.",
+      "tex": "donc est nul.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "donc $\\alpha$ est nul.",
+      "note": "The subject α is missing. It denotes the right vertical map, whose induced map α^G appears in the next diagram. The TeX preserves the omission."
+    },
+    {
+      "page": 92,
+      "where": "Spectral-sequence diagram, upper left term",
+      "scan": "H^p(G,H^q(\\bar{X},\\bar{F})",
+      "tex": "H^{p}(G,H^{q} (\\bar{X},\\bar{F})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{p}(G,H^{q}(\\bar{X},\\bar{F}))",
+      "note": "The outer closing parenthesis is missing in the print. The TeX keeps the unbalanced formula."
+    },
+    {
+      "page": 92,
+      "where": "Spectral-sequence diagram, lower left term",
+      "scan": "H^p(G,H^q,\\bar{X}_0,\\bar{F}_0))",
+      "tex": "H^{p}(G,H^q,\\bar{X}_0,\\bar{F}_0 ))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{p}(G,H^q(\\bar{X}_0,\\bar{F}_0))",
+      "note": "The comma immediately after H^q should be an opening parenthesis. The TeX retains the printed misprint."
+    },
+    {
+      "page": 92,
+      "where": "Spectral-sequence diagram, lower abutment",
+      "scan": "H^n(\\bar{X}_0,\\bar{F}_0)",
+      "tex": "H^{n}(\\bar{X}_0,\\bar{F}_0)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{n}(X_0,F_0)",
+      "note": "The lower spectral sequence abuts to the cohomology of X_0 with coefficients F_0, without bars. The TeX keeps the printed erroneous bars."
+    },
+    {
+      "page": 93,
+      "where": "5.6, definition of the constant sheaf",
+      "scan": "F=S_X, followed by “de valeur T”",
+      "tex": "$F=S_X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "F=T_X",
+      "note": "The value is consistently called T in the following text, so S_X should be T_X. The TeX keeps the printed S."
+    },
+    {
+      "page": 93,
+      "where": "5.6–5.9, notation for components and fundamental groups",
+      "scan": "\\pi_0(X_0), \\pi_0(X), \\pi_1(X_0,\\bar{x}_0)",
+      "tex": "\\Pi_{\\circ}(X_{\\circ}), \\Pi_{\\circ}(X), \\Pi_1(X_{\\circ},\\bar{x}_{\\circ})",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Pi_{\\circ}(X_{\\circ})$ des composantes connexes",
+        "new": "\\pi_{\\circ}(X_{\\circ})$ des composantes connexes"
+      },
+      "note": "Systematic case difference: the print uses lowercase π, whereas the TeX uses uppercase Π. Reported once with a representative edit; it continues on p. 94. The handwritten theta ovals do not establish a Θ/θ distinction safely, so no change to \\Theta is proposed."
+    },
+    {
+      "page": 93,
+      "where": "Corollary 5.7, map on connected components",
+      "scan": "\\pi_0(X)\\longrightarrow\\pi_0(X_0), induced by X_0\\longrightarrow X",
+      "tex": "\\Pi_{\\circ}(X)\\rightarrow\n\\Pi_{\\circ}(X_{\\circ})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\pi_{\\circ}(X_{\\circ})\\longrightarrow\\pi_{\\circ}(X)",
+      "note": "The natural map on connected components goes from the closed fibre to X. The print reverses its direction, and the TeX keeps that reversal."
+    },
+    {
+      "page": 95,
+      "where": "Footnote to Remark 5.10",
+      "scan": "depuis ces lignes ont été écrites",
+      "tex": "depuis ces\n  lignes ont été écrites",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "depuis que ces lignes ont été écrites",
+      "note": "The conjunction que is missing after depuis. The TeX preserves the printed omission."
+    }
+  ],
+  "coordinator": "91: 0/5; 92: 0/5; 93: 1/2; 94: 0/0; 95: 0/1 (normal/misprint).\nConvention pp. 93–94: apply \\Pi → \\pi throughout the component/fundamental-group notation; three examples are \\Pi_{\\circ}(X_{\\circ}) in 5.6, \\Pi_{\\circ}(X) in 5.7, and \\Pi_1(X_{\\circ},\\bar{x}_{\\circ}) in 5.9. The finding supplies a representative edit."
+}

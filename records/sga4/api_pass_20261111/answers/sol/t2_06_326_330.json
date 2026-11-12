@@ -1,0 +1,136 @@
+[
+ {
+  "page": 326,
+  "where": "Premier paragraphe, première mention des morphismes de transition de la section",
+  "scan": "i \\mapsto \\varinjlim_{f:j\\to i} f_{\\ast} M_i",
+  "tex": "i \\mapsto \\varinjlim_{f : j\n\\to i} f_{\\ast} M_{j}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "i \\mapsto \\varinjlim_{f:j\\to i} f_{\\ast} M_j",
+  "note": "L'indice i imprimé sous M est erroné : f_* s'applique à M_j. Le TeX corrige silencieusement cette coquille."
+ },
+ {
+  "page": 326,
+  "where": "Démonstration du corollaire 8.5.4, « On a donc »",
+  "scan": "\\varinjlim_{\\alpha} M",
+  "tex": "\\varinjlim_{\\alpha} {M^{\\alpha}}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\varinjlim_{\\alpha} M^{\\alpha}",
+  "note": "L'exposant alpha manque sur M dans le print. Le TeX le rétablit silencieusement."
+ },
+ {
+  "page": 327,
+  "where": "Début de page, continuation de la démonstration du corollaire 8.5.5",
+  "scan": "composé des morphismes (8.2.9) et (7.4.12)",
+  "tex": "des\\pageoriginale morphismes",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Problème de découpage des extraits : le mot « composé », placé dans l'extrait de 326 sans réserve correspondante, ouvre en réalité 327. La page 326 finit par « est alors le morphisme ». Ne pas déplacer le texte dans la source."
+ },
+ {
+  "page": 327,
+  "where": "Premier paragraphe, description de la section beta_i^*(M_i)",
+  "scan": "(f : i \\to j) \\mapsto f^{\\ast}(M_i)",
+  "tex": "(f : i \\to j) \\mapsto\nf^{\\ast}(M_i)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(f : j \\to i) \\mapsto f^{\\ast}(M_i)",
+  "note": "La flèche est imprimée dans le mauvais sens : pour appliquer f^* à M_i et obtenir l'objet de la fibre j, il faut f : j vers i. Le TeX conserve la coquille."
+ },
+ {
+  "page": 327,
+  "where": "Démonstration du corollaire 8.5.7, premier calcul affiché, terme médian",
+  "scan": "\\Hom(X,\\mu_{i\\ast},\\mu_i^{\\ast}(M_i))",
+  "tex": "\\Hom (X, \\mu_{i\\ast}\n  \\mu^{\\ast}_i (M_i))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom(X,\\mu_{i\\ast}\\mu_i^{\\ast}(M_i))",
+  "note": "Une virgule parasite sépare les deux foncteurs composés dans le print. Le TeX la supprime silencieusement."
+ },
+ {
+  "page": 328,
+  "where": "Démonstration de 8.5.8, isomorphisme obtenu par commutativité du diagramme",
+  "scan": "Q^{\\ast}u^{\\sim}_{\\ast} Q_{\\ast}(N)",
+  "tex": "Q^{\\ast}m^{\\sim}_{\\ast} Q_{\\ast} (N)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Q^{\\ast}m^{\\sim}_{\\ast} Q_{\\ast}(N)",
+  "note": "Le print porte u au lieu de m sous le tilde. Il s'agit du morphisme m de la proposition ; le TeX corrige silencieusement."
+ },
+ {
+  "page": 329,
+  "where": "Démonstration de 8.5.9, définition du foncteur phi",
+  "scan": "le morphisme identique de I",
+  "tex": "le morphisme identique de $I$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "le morphisme identique de $i$",
+  "note": "Il faut l'identité de l'objet i, non celle de la catégorie I. Le TeX conserve la capitale erronée du print."
+ },
+ {
+  "page": 329,
+  "where": "Démonstration de 8.5.9, but du foncteur phi opposé",
+  "scan": "\\phi^{\\circ}:I^{\\circ}\\to\\text{Fl}(I)^{\\circ}",
+  "tex": "\\phi^{\\circ}:I^{\\circ}\\to\\text{Fl}(I^{\\circ})",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{Fl}(I^{\\circ})",
+   "new": "\\text{Fl}(I)^{\\circ}"
+  },
+  "note": "Dans le print, le signe d'opposition est extérieur à la parenthèse : il porte sur Fl(I)."
+ },
+ {
+  "page": 330,
+  "where": "8.6.1, premier paragraphe, « la structure annelée sur F »",
+  "scan": "annelée sur F",
+  "tex": "annelé sur $F$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "annelé sur $F$",
+   "new": "annelée sur $F$"
+  },
+  "note": "Le e final de « annelée », présent dans le print, manque dans le TeX."
+ },
+ {
+  "page": 330,
+  "where": "8.6.1, « la structure ... et le choix ... fournit »",
+  "scan": "la structure annelée sur F et le choix des morphismes f. fournit un pseudo-foncteur",
+  "tex": "fournit un\npseudo-foncteur",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "fournissent un pseudo-foncteur",
+  "note": "Le verbe devrait s'accorder au pluriel avec les deux sujets coordonnés. Le TeX conserve le singulier imprimé."
+ },
+ {
+  "page": 330,
+  "where": "8.6.3, renvoi concernant les images inverses de faisceaux de modules",
+  "scan": "(IV 1.1)",
+  "tex": "(IV 1.1)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(IV 11.1)",
+  "note": "Il manque un 1 dans le renvoi aux topos annelés et à l'image inverse de modules. Le TeX conserve le renvoi erroné."
+ },
+ {
+  "page": 330,
+  "where": "Fin de page, après « Alors le morphisme de topos annelé »",
+  "scan": "La page finit par « Alors le morphisme de topos annelé », sans la formule définissant Q.",
+  "tex": "$Q : (\\limtop{I} F_i,\n\\varinjlim_{I^{\\circ}} \\mu^{\\ast}_i (A_i)) \\to (\\Hom_{I^{\\circ}}\n(I^{\\circ}, F'), A)$\\pageoriginale",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "La formule commençant par Q appartient entièrement à 331. La réserve du commentaire ne vise que la dernière ligne, alors que les deux lignes précédentes sont également hors de 330. Corriger le découpage des extraits, sans déplacer le texte dans la source."
+ }
+]

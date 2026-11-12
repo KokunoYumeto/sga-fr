@@ -1,0 +1,655 @@
+[
+ {
+  "page": 471,
+  "where": "top of the page: the display f^{-n}_{F_x̄} = fr^n_{F_x̄} = (Fr^*_{F_x̄/x̄})^n",
+  "scan": "p. 471 begins with the display 'f^{-n}_{F_x̄} = fr^n_{F_x̄} = (Fr^*_{F_x̄/x̄})^n', then '(x̄ = point géométrique défini par un plongement de F_q dans F̄_p) .'; p. 470 ends with '... Nous obtenons :' and the footnote (*) (b466_470/page_470_s4.png)",
+  "tex": "the display '\\[', 'f^{-n}_{F_{\\bar x}}=\\fr^n_{F_{\\bar x}}=(\\Fr^*_{F_{\\bar x}/\\bar x})^n', '\\]' is the last three lines of page_470.tex; the folio-471 marker follows it, and page_471.tex begins '($\\bar x=$ point'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 471 really begins at the '\\[' of that display (the line after 'Nous obtenons:'). Exact fix: python -I move_marker.py 5 471 '\\[' --before (simulated in memory on both live layers at 17:08: the marker moves back 75 characters to its own line between 'Nous obtenons:' and '\\['). Run it once only: a second run would move the marker 245 characters further back, to the display f^{-n}_{H^i(\\bar X,\\bar F)}=\\fr^n_{H^i(\\bar X,\\bar F)} of p. 470. Batch 466-470 may report the same move: apply once. Text not moved; the display agrees with the print of p. 471 (no bars over fr and Fr, no final punctuation)."
+ },
+ {
+  "page": 471,
+  "where": "'au lieu de X̄ , F̄ , fr^n_X et (Fr̄^*_{F/X})^n'",
+  "scan": "fr^n_X without a bar: the double-underlined fr has clean paper above it, while X̄, F̄ and the following F̄r̄^*_{F/X} carry their bars, as do the other fr̄_X of the page (crop c471_frn.png)",
+  "tex": "$\\bar{\\fr}_X^n$ et",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\bar{\\fr}_X^n$ et",
+   "new": "$\\fr_X^n$ et"
+  },
+  "corrected": "$\\bar{\\fr}_X^n$",
+  "note": "h is the n-th power of the geometric Frobenius \\bar{fr}_X of X̄ (the correspondence (\\bar{fr}_X, \\overline{Fr}^*_{F/X}) just above); fr_X^n acts on X, not on X̄. The TeX silently corrects; the fix restores the printed reading."
+ },
+ {
+  "page": 471,
+  "where": "'en effet h opère par : T ⇝ T^{p^n}'",
+  "scan": "opère par : T ⇝ T^{p^n} (colon after 'par')",
+  "tex": "opère par $T\\mapsto T^{p^n}$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "opère par $T",
+   "new": "opère par: $T"
+  },
+  "note": "The file writes the colon without a space before it (babel adds it), as in 'résultat suivant:'."
+ },
+ {
+  "page": 471,
+  "where": "'T ⇝ T^{p^n}'",
+  "scan": "a hand-drawn squiggly arrow (⇝) between T and T^{p^n}, not a maps-to arrow (crop c471_T.png)",
+  "tex": "T\\mapsto T^{p^n}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mapsto T^{p^n}",
+   "new": "\\rightsquigarrow T^{p^n}"
+  },
+  "note": "The file sets this typescript arrow as \\rightsquigarrow in Exposé X (E\\rightsquigarrow B_{[u]}\\otimes_A E); the same arrow on p. 474 (T : L ⇝ L ⊗_A A_0) is \\longmapsto there."
+ },
+ {
+  "page": 471,
+  "where": "Proposition 2, first two lines",
+  "scan": "Soient | une courbe projective et lisse sur un corps algébriquement clos | de caractéristique | un faisceau : underlined (not X, k, p, F or the comma); the label 'Proposition 2.' is underlined too (accepted setting)",
+  "tex": "Soient $X$ une courbe projective et lisse sur un corps algébriquement clos $k$ de caractéristique $p$, $F$ un faisceau (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $X$ une courbe projective et lisse sur un corps algébriquement clos $k$ de caractéristique $p$, $F$ un faisceau",
+   "new": "\\emph{Soient} $X$ \\emph{une courbe projective et lisse sur un corps algébriquement clos} $k$ \\emph{de caractéristique} $p$, $F$ \\emph{un faisceau}"
+  },
+  "note": "Exposé XV has no underline markup at all; \\emph is the file's command for the print's underline (as itemized in Exposés III B and V). The old stops before '$\\ell$-', which goes to p. 472 with the folio-472 marker fix. The statement continues on p. 472 (filed there)."
+ },
+ {
+  "page": 472,
+  "where": "top of the page: '$\\ell$-' of 'ℓ-adique'",
+  "scan": "p. 472 begins with 'ℓ -adique constructible sur X_ét (avec ℓ = nombre premier ≠ p),'; p. 471 ends with '... de caractéristique p , F un faisceau'",
+  "tex": "'$\\ell$-' ends the last line of page_471.tex; the folio-472 marker follows it and page_472.tex begins 'adique constructible'. The line end before the marker line also prints a space inside 'ℓ- adique'.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 472 really begins at '$\\ell$-'. Exact fix: python -I marker_split_word.py 5 472 pull '$\\ell$-' (simulated in memory on both live layers at 17:08: p. 471 then ends '... $F$ un faisceau' and p. 472 begins '$\\ell$-adique constructible sur $X_{\\et}$', which also removes the space). Text not moved."
+ },
+ {
+  "page": 472,
+  "where": "Proposition 2 (cont.), lines 1-3: '-adique constructible sur ... et'",
+  "scan": "-adique constructible sur | avec | nombre premier | un endomorphisme de | dont tous les points fixes sont de mul-tiplicité | et : underlined (not X_ét, ℓ, h, X, 1 or the punctuation)",
+  "tex": "adique constructible sur $X_{\\et}$ (avec $\\ell=$ nombre premier $\\ne p$), $h$ un endomorphisme de $X$ dont tous les points fixes sont de multiplicité $1$, et (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "adique constructible sur $X_{\\et}$ (avec $\\ell=$ nombre premier $\\ne p$), $h$ un endomorphisme de $X$ dont tous les points fixes sont de multiplicité $1$, et",
+   "new": "\\emph{adique constructible sur} $X_{\\et}$ (\\emph{avec} $\\ell=$ \\emph{nombre premier} $\\ne p$), $h$ \\emph{un endomorphisme de} $X$ \\emph{dont tous les points fixes sont de multiplicité} $1$, \\emph{et}"
+  },
+  "note": "The print's underline starts under the hyphen of '-adique'; the hyphen is left outside \\emph (after the folio-472 marker fix the text reads '$\\ell$-\\emph{adique ...}')."
+ },
+ {
+  "page": 472,
+  "where": "Proposition 2 (cont.), lines 3-5",
+  "scan": "un morphisme de faisceaux | La formule suivante | où | désigne l'endomorphisme de | défini par | est vraie : underlined (not the formulas, the commas or the colon)",
+  "tex": "un morphisme de faisceaux. La formule suivante, où $h_{H^i(X,F)}$ désigne l'endomorphisme de $H^i(X,F)$ défini par $(h,h_F)$, est vraie: (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "F$ un morphisme de faisceaux. La formule suivante, où $h_{H^i(X,F)}$ désigne l'endomorphisme de $H^i(X,F)$ défini par $(h,h_F)$, est vraie:",
+   "new": "F$ \\emph{un morphisme de faisceaux}. \\emph{La formule suivante}, \\emph{où} $h_{H^i(X,F)}$ \\emph{désigne l'endomorphisme de} $H^i(X,F)$ \\emph{défini par} $(h,h_F)$, \\emph{est vraie}:"
+  },
+  "note": ""
+ },
+ {
+  "page": 472,
+  "where": "display (2''), left member",
+  "scan": "Σ_{x∈X^h} Tr(h_{F_x}) : h with the subscript F_x (x a subscript of F), no parentheses (crop c472_2pp.png)",
+  "tex": "\\Tr((h_F)_x)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tr((h_F)_x)",
+   "new": "\\Tr(h_{F_x})"
+  },
+  "note": "Same notation as h_{(F_\\nu)_x} in (3), which the diplomatic layer keeps as printed (the current layer has (h_{F_\\nu})_x there and (h_F)_x here)."
+ },
+ {
+  "page": 472,
+  "where": "'un faisceau de torsion constructible'",
+  "scan": "'torsion' underlined (crop c472_tors.png)",
+  "tex": "de torsion constructible (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "de torsion constructible",
+   "new": "de \\emph{torsion} constructible"
+  },
+  "note": ""
+ },
+ {
+  "page": 472,
+  "where": "display (3), end",
+  "scan": "Σ_{x∈X^h} Tr(h_{(F_ν)_x}) = Tr^*h_{RΓ_X(F_ν)} with no punctuation after it; the next line begins 'où les deux membres' (crop c472_3.png)",
+  "tex": "\\Tr^*h_{\\R\\Gamma_X(F_\\nu)}, (comma before \\tag{3})",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R\\Gamma_X(F_\\nu)},\n\\tag{3}",
+   "new": "\\R\\Gamma_X(F_\\nu)}\n\\tag{3}"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 472,
+  "where": "'s'écrive F = (F_ν)_{ν∈N} , avec F annulé par ℓ^{ν+1}'",
+  "scan": "avec F annulé par ℓ^{ν+1} (F without the index ν; crop c472_avecF.png)",
+  "tex": "avec $F$ annulé par $\\ell^{\\nu+1}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "avec $F_\\nu$ annulé par $\\ell^{\\nu+1}$",
+  "note": "The ℓ-adic sheaf F is not killed by ℓ^{ν+1}; its components F_ν are. The TeX keeps the printed reading."
+ },
+ {
+  "page": 472,
+  "where": "'un entier ℓ-adique égal à Σ(-1)^i Tr(h_{H^i(X,F)}) , avec'",
+  "scan": "Σ(-1)^i Tr(h_{H^i(X,F)}) with no index under the Σ (run into the text; crop c472_sum.png)",
+  "tex": "\\sum_i(-1)^i\\Tr(h_{H^i(X,F)}),",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sum_i(-1)^i\\Tr(h_{H^i(X,F)}),",
+   "new": "\\sum(-1)^i\\Tr(h_{H^i(X,F)}),"
+  },
+  "note": "Summation index added by the TeX."
+ },
+ {
+  "page": 473,
+  "where": "line 1: 'morphisme de transition : K_{ν+1} → K_ν'",
+  "scan": "morphisme de transition : K_{ν+1} → K_ν (colon after 'transition'; crop c473_l1.png)",
+  "tex": "morphisme de transition $K_{\\nu+1}\\to K_\\nu$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "transition $K_{\\nu+1}\\to K_\\nu$",
+   "new": "transition: $K_{\\nu+1}\\to K_\\nu$"
+  },
+  "note": ""
+ },
+ {
+  "page": 473,
+  "where": "lines 1-2: 'au sens des catégories dérivées'",
+  "scan": "'au sens des catégories dérivées' underlined",
+  "tex": "au sens des catégories dérivées (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "au sens des catégories dérivées",
+   "new": "\\emph{au sens des catégories dérivées}"
+  },
+  "note": ""
+ },
+ {
+  "page": 473,
+  "where": "line 2: 'au morphisme canonique : K_{ν+1} → ...'",
+  "scan": "au morphisme canonique : K_{ν+1} → K_{ν+1}/ℓ^{ν+1}K_{ν+1} . (colon after 'canonique')",
+  "tex": "au morphisme canonique (then the display, no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "morphisme canonique\n\\[",
+   "new": "morphisme canonique:\n\\["
+  },
+  "note": ""
+ },
+ {
+  "page": 473,
+  "where": "'on prendra K_ν = RΓ_X(F_ν) et h_ν = h_{RΓ_X(F_ν)} ;'",
+  "scan": "the two formulas are joined by the word 'et' (run into the text), no comma",
+  "tex": "K_\\nu=\\R\\Gamma_X(F_\\nu),\\qquad h_\\nu=h_{\\R\\Gamma_X(F_\\nu)};",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "(F_\\nu),\\qquad h_\\nu=",
+   "new": "(F_\\nu)\\quad\\text{et}\\quad h_\\nu="
+  },
+  "note": "'et' missing and a comma added; \\quad\\text{...}\\quad as the file writes '\\quad\\text{avec}\\quad' on p. 472."
+ },
+ {
+  "page": 473,
+  "where": "condition 1), line 1: 'le morphisme de transition : K'_{ν+1} → K'_ν'",
+  "scan": "1) le morphisme de transition : K'_{ν+1} → K'_ν (colon after 'transition'; crop c473_items.png)",
+  "tex": "le morphisme de transition $K'_{\\nu+1}\\to K'_\\nu$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "transition $K'_{\\nu+1}",
+   "new": "transition: $K'_{\\nu+1}"
+  },
+  "note": ""
+ },
+ {
+  "page": 473,
+  "where": "condition 1): '(comme morphisme de complexes)'",
+  "scan": "est isomorphe (comme morphisme de complexes) à (parentheses)",
+  "tex": "est isomorphe, comme morphisme de complexes, à",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "est isomorphe, comme morphisme de complexes, à",
+   "new": "est isomorphe (comme morphisme de complexes) à"
+  },
+  "note": ""
+ },
+ {
+  "page": 473,
+  "where": "condition 1): after K'_{ν+1} → K'_{ν+1}/ℓ^{ν+1}K'_{ν+1}",
+  "scan": "... /ℓ^{ν+1}K'_{ν+1} , pour (comma after the formula)",
+  "tex": "K'_{\\nu+1}\\to K'_{\\nu+1}/\\ell^{\\nu+1}K'_{\\nu+1} (display without the comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "/\\ell^{\\nu+1}K'_{\\nu+1}\n\\]",
+   "new": "/\\ell^{\\nu+1}K'_{\\nu+1},\n\\]"
+  },
+  "note": ""
+ },
+ {
+  "page": 473,
+  "where": "condition 1), end: 'pour tout ν ∈ N .'",
+  "scan": "pour tout ν ∈ N . (full stop)",
+  "tex": "pour tout $\\nu\\in\\mathbb N$;",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "pour tout $\\nu\\in\\mathbb N$;",
+   "new": "pour tout $\\nu\\in\\mathbb N$."
+  },
+  "note": ""
+ },
+ {
+  "page": 473,
+  "where": "condition 2), end",
+  "scan": "est compatible avec les morphismes de transition. (full stop)",
+  "tex": "est compatible avec les morphismes de transition;",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "avec les morphismes de transition;",
+   "new": "avec les morphismes de transition."
+  },
+  "note": ""
+ },
+ {
+  "page": 473,
+  "where": "'on peut alors écrire : Tr^*h_ν = ...'",
+  "scan": "on peut alors écrire : Tr^*h_ν = Tr^*h'_ν = Σ(-1)^i Tr h'^i_ν (colon after 'écrire'; crop c473_sum.png)",
+  "tex": "on peut alors écrire (then the display, no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "on peut alors écrire\n\\[",
+   "new": "on peut alors écrire:\n\\["
+  },
+  "note": ""
+ },
+ {
+  "page": 473,
+  "where": "'Tr^*h_ν = Tr^*h'_ν = Σ(-1)^i Tr h'^i_ν'",
+  "scan": "Σ(-1)^i Tr h'^i_ν with no index under the Σ (crop c473_sum.png)",
+  "tex": "\\sum_i(-1)^i\\Tr h_\\nu'^i",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "=\\sum_i(-1)^i\\Tr h_\\nu'^i",
+   "new": "=\\sum(-1)^i\\Tr h_\\nu'^i"
+  },
+  "note": "Summation index added by the TeX."
+ },
+ {
+  "page": 473,
+  "where": "'Soient K' = lim K'_ν , et h' = lim h'_ν (endo-'",
+  "scan": "K' = lim_{←ν} K'_ν , et h' = lim_{←ν} h'_ν (the word 'et' between the formulas)",
+  "tex": "K'=\\varprojlim_\\nu K'_\\nu, / \\qquad h'=\\varprojlim_\\nu h'_\\nu",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "K'_\\nu,\n\\qquad h'=",
+   "new": "K'_\\nu,\n\\quad\\text{et}\\quad h'="
+  },
+  "note": "'et' missing."
+ },
+ {
+  "page": 474,
+  "where": "top of the page: 'endo-' / 'morphisme de K')'",
+  "scan": "p. 473 ends with '... h' = lim h'_ν (endo-'; p. 474 begins with 'morphisme de K') . On voit que'",
+  "tex": "page_473.tex ends with '(' on its own line; the folio-474 marker follows it and page_474.tex begins 'endomorphisme de $K'$).'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 474 really begins at 'morphisme', the second half of 'endo-morphisme'. Exact fix: python -I marker_split_word.py 5 474 split 'endo' 'morphisme' (simulated in memory on both live layers at 17:08: p. 473 then ends with the line '(' and the line 'endo%', and p. 474 begins 'morphisme de $K'$)'). Text not moved. Optional: the line end after '(' prints a space after the parenthesis, now and after the fix ('( endomorphisme'); writing '(endo%' on one line removes it."
+ },
+ {
+  "page": 474,
+  "where": "display 'H^i(K') ⥲ lim H^i(K'_ν)'",
+  "scan": "an arrow with a tilde over it (hand-drawn ⥲), the same sign as in u : T(L) ⥲ M of Lemme 1 below (crop c474_iso.png)",
+  "tex": "H^i(K')\\simeq\\varprojlim_\\nu H^i(K'_\\nu)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "H^i(K')\\simeq",
+   "new": "H^i(K')\\xrightarrow{\\sim}"
+  },
+  "note": "Lemme 1 on this page writes the same printed sign as \\xrightarrow{\\sim}."
+ },
+ {
+  "page": 474,
+  "where": "'le foncteur T : L ⇝ L ⊗_A A_0'",
+  "scan": "a hand-drawn squiggly arrow (⇝) between L and L ⊗_A A_0 (crop c474_T.png)",
+  "tex": "T:L\\longmapsto L\\otimes_A A_0",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "T:L\\longmapsto L",
+   "new": "T:L\\rightsquigarrow L"
+  },
+  "note": "As on p. 471 (T ⇝ T^{p^n}, there \\mapsto); the file writes \\rightsquigarrow for this arrow in Exposé X."
+ },
+ {
+  "page": 474,
+  "where": "Lemme 1, lines 1-3",
+  "scan": "Supposons l'idéal | nilpotent | Considérons un complexe | plat en chaque degré | un complexe | projectif en chaque degré et un isomorphisme : underlined (not I, L ∈ D^-(A), M ∈ D^-(A_0) or the punctuation; crop c474_lem1a.png)",
+  "tex": "Supposons l'idéal $I$ nilpotent. Considérons un complexe ... et un isomorphisme (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Supposons l'idéal $I$ nilpotent. Considérons un complexe $L\\in D^-(A)$ plat en chaque degré, un complexe $M\\in D^-(A_0)$ projectif en chaque degré et un isomorphisme",
+   "new": "\\emph{Supposons l'idéal} $I$ \\emph{nilpotent}. \\emph{Considérons un complexe} $L\\in D^-(A)$ \\emph{plat en chaque degré}, \\emph{un complexe} $M\\in D^-(A_0)$ \\emph{projectif en chaque degré et un isomorphisme}"
+  },
+  "note": ""
+ },
+ {
+  "page": 474,
+  "where": "Lemme 1, lines 3-5",
+  "scan": "dans | Il existe un complexe de | modules (of A-modules) | borné à droite et projec-tif en chaque degré | un isomorphisme : underlined (crop c474_lem1b.png)",
+  "tex": "dans $D^-(A_0)$. Il existe un complexe de $A$-modules $L'$, borné à droite et projectif en chaque degré, un isomorphisme (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $D^-(A_0)$. Il existe un complexe de $A$-modules $L'$, borné à droite et projectif en chaque degré, un isomorphisme",
+   "new": "\\emph{dans} $D^-(A_0)$. \\emph{Il existe un complexe de} $A$-\\emph{modules} $L'$, \\emph{borné à droite et projectif en chaque degré}, \\emph{un isomorphisme}"
+  },
+  "note": ""
+ },
+ {
+  "page": 474,
+  "where": "Lemme 1, lines 5-6",
+  "scan": "dans | et un isomorphisme de complexes : underlined ('et' at the line end, 'un isomorphisme de complexes' on the next line)",
+  "tex": "dans $D^-(A)$, et un isomorphisme de complexes (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $D^-(A)$, et un isomorphisme de complexes",
+   "new": "\\emph{dans} $D^-(A)$, \\emph{et un isomorphisme de complexes}"
+  },
+  "note": ""
+ },
+ {
+  "page": 474,
+  "where": "Lemme 1, last line",
+  "scan": "tels que | dans : underlined",
+  "tex": "tels que $u=w\\circ T(v)$ dans $D^-(A_0)$. (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "tels que $u=w\\circ T(v)$ dans $D^-(A_0)$.",
+   "new": "\\emph{tels que} $u=w\\circ T(v)$ \\emph{dans} $D^-(A_0)$."
+  },
+  "note": ""
+ },
+ {
+  "page": 474,
+  "where": "Remarque, line 1: 'supposé libre (resp. de type fini) en chaque degré'",
+  "scan": "libre (resp. de type fini) en chaque degré",
+  "tex": "libre, respectivement de type fini, en chaque degré",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "supposé libre, respectivement de type fini, en",
+   "new": "supposé libre (resp. de type fini) en"
+  },
+  "note": "Abbreviation written out and the parentheses replaced by commas."
+ },
+ {
+  "page": 474,
+  "where": "Remarque, line 2: 'aussi libre (resp. de type fini) en cha-'",
+  "scan": "aussi libre (resp. de type fini) en cha-",
+  "tex": "aussi libre, respectivement de type fini, en chaque",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "aussi libre, respectivement de type fini, en",
+   "new": "aussi libre (resp. de type fini) en"
+  },
+  "note": "As above. The old stops before 'chaque', whose 'que' goes to p. 475 with the folio-475 marker fix."
+ },
+ {
+  "page": 474,
+  "where": "'h_ν = h_{RΓ_X(F_ν)} , on': below the X",
+  "scan": "a stray typed 'i' under the X of h_{RΓ_X(F_ν)}, between the lines, just above the 'm' of 'endomorphisme' on the next line (crop c474_stray.png); it belongs to no formula",
+  "tex": "$h_\\nu=h_{\\R\\Gamma_X(F_\\nu)}$ (nothing there)",
+  "kind": "other",
+  "confidence": "low",
+  "fix": null,
+  "note": "A typing slip of the typescript, not a subscript; no edit proposed (the TeX's omission is the sensible reading). Listed only for completeness."
+ },
+ {
+  "page": 475,
+  "where": "top of the page: 'cha-' / 'que degré.'",
+  "scan": "p. 474 ends with '... (resp. de type fini) en cha-'; p. 475 begins with 'que degré. En effet si un A-module plat N'",
+  "tex": "'chaque' ends the last line of page_474.tex; the folio-475 marker follows it and page_475.tex begins 'degré. En effet'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 475 really begins at 'que', the second half of 'cha-que'. Exact fix, two steps to apply together: python -I move_marker.py 5 475 'que' --before (its last occurrence before the marker is the end of 'chaque'), then add '%' after the 'cha' that now ends the line before the marker ('... en cha' -> '... en cha%'), so that the halves join without a space. Simulated in memory on both live layers at 17:08: p. 474 then ends 'en cha%', and p. 475 begins 'que' + line end + 'degré. En effet' (printed 'chaque degré'). marker_split_word.py has no mode for a word that lies wholly before the marker. Text not moved."
+ },
+ {
+  "page": 475,
+  "where": "lines 1-2: 'soit libre (resp. de type fini), on montre'",
+  "scan": "soit libre (resp. de type fini), on montre",
+  "tex": "soit libre, respectivement de type fini, on montre",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "soit libre, respectivement de type fini, on montre",
+   "new": "soit libre (resp. de type fini), on montre"
+  },
+  "note": "Abbreviation written out and the parentheses replaced by commas."
+ },
+ {
+  "page": 475,
+  "where": "lines 2-3: 'N est libre (resp. de type fini) (Bourbaki,'",
+  "scan": "N est libre (resp. de type fini) (Bourbaki,",
+  "tex": "$N$ est libre, respectivement de type fini (Bourbaki,",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "est libre, respectivement de type fini (Bourbaki",
+   "new": "est libre (resp. de type fini) (Bourbaki"
+  },
+  "note": "As above."
+ },
+ {
+  "page": 475,
+  "where": "the Bourbaki reference",
+  "scan": "(Bourbaki, Alg. Comm., Chap.II, §3, prop. 5): capital C in 'Comm.' and 'Chap.' (crop c475_bourb.png)",
+  "tex": "(Bourbaki, Alg. comm., chap.~II, §3, prop.~5)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Alg. comm., chap.~II",
+   "new": "Alg. Comm., Chap.~II"
+  },
+  "note": "The print has no space in 'Chap.II' (spacing, not reported)."
+ },
+ {
+  "page": 475,
+  "where": "'soit L ∈ Ob D^-(A)'",
+  "scan": "L ∈ Ob D^-(A) with a capital O (crop c475_ob.png)",
+  "tex": "$L\\in\\Ob D^-(A)$, and \\Ob prints 'ob' in this file",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$L\\in\\Ob D^-(A)$",
+   "new": "$L\\in\\operatorname{Ob} D^-(A)$"
+  },
+  "note": "\\Ob is \\operatorname{ob}: the first \\providecommand{\\Ob}{\\operatorname{ob}} (s5.tex line 101) wins over the later \\operatorname{Ob} definitions (as reported for Exposé VIII). If \\Ob is redefined for Exposé XV instead, this edit is not needed."
+ },
+ {
+  "page": 475,
+  "where": "'tel que L ⊗^L_A A_0 soit un'",
+  "scan": "the L above the tensor sign is a double-struck L (typed I struck over L; crop c475_L.png)",
+  "tex": "$L\\lten_A A_0$ (\\lten is \\overset{\\mathrm L}{\\otimes}: a plain L)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$L\\lten_A A_0$",
+   "new": "$L\\overset{\\mathbb L}{\\otimes}_A A_0$"
+  },
+  "note": "The file writes \\overset{\\mathbb L}{\\otimes} for this typescript sign in Exposé X ((X^\\bullet,Y^\\bullet)\\rightsquigarrow X^\\bullet\\overset{\\mathbb L}{\\otimes}_A Y^\\bullet)."
+ },
+ {
+  "page": 475,
+  "where": "'pseudo-cohérent resp. parfait (i.e. isomor-phe'",
+  "scan": "pseudo-cohérent resp. parfait (i.e. isomorphe (no comma before 'resp.', 'i.e.' abbreviated, parenthesis opened before 'i.e.'; crop c475_cor.png)",
+  "tex": "pseudo-cohérent, respectivement parfait, c'est-à-dire isomorphe",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "pseudo-cohérent, respectivement parfait, c'est-à-dire isomorphe",
+   "new": "pseudo-cohérent resp. parfait (i.e. isomorphe"
+  },
+  "note": "Abbreviations written out, commas added, the parenthesis dropped (it closes after 'en chaque degré', two findings below)."
+ },
+ {
+  "page": 475,
+  "where": "'borné supérieurement, resp. borné, et'",
+  "scan": "borné supérieurement, resp. borné, et",
+  "tex": "borné supérieurement, respectivement borné, et",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "supérieurement, respectivement borné,",
+   "new": "supérieurement, resp. borné,"
+  },
+  "note": "Abbreviation written out."
+ },
+ {
+  "page": 475,
+  "where": "'projectif de type fini en chaque degré). Alors'",
+  "scan": "en chaque degré). Alors (the parenthesis opened before 'i.e.' closes here)",
+  "tex": "en chaque degré. Alors",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "en chaque degré. Alors",
+   "new": "en chaque degré). Alors"
+  },
+  "note": ""
+ },
+ {
+  "page": 475,
+  "where": "end of the Remarque: 'pseudo-cohérent (resp. parfait).'",
+  "scan": "de A-modules pseudo-cohérent (resp. parfait).",
+  "tex": "pseudo-cohérent, respectivement parfait.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "pseudo-cohérent, respectivement parfait.",
+   "new": "pseudo-cohérent (resp. parfait)."
+  },
+  "note": "Abbreviation written out and the parentheses replaced by a comma."
+ },
+ {
+  "page": 475,
+  "where": "Lemme 2, lines 1-4",
+  "scan": "Considérons un complexe de | modules borné à droite (of A-modules) | projectif en chaque degré | muni d'un endomorphisme | et un en-domorphisme | de | coïncidant avec | au sens de la catégorie dérivée : underlined (not the formulas or the punctuation; crop c475_lem2.png)",
+  "tex": "Considérons un complexe de $A$-modules borné à droite $L$, ... au sens de la catégorie dérivée $D^-(A_0)$. (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Considérons un complexe de $A$-modules borné à droite $L$, projectif en chaque degré, muni d'un endomorphisme $\\varphi$, et un endomorphisme $\\varphi_0$ de $M=T(L)$ coïncidant avec $T(\\varphi)$ au sens de la catégorie dérivée $D^-(A_0)$.",
+   "new": "\\emph{Considérons un complexe de} $A$-\\emph{modules borné à droite} $L$, \\emph{projectif en chaque degré}, \\emph{muni d'un endomorphisme} $\\varphi$, \\emph{et un endomorphisme} $\\varphi_0$ \\emph{de} $M=T(L)$ \\emph{coïncidant avec} $T(\\varphi)$ \\emph{au sens de la catégorie dérivée} $D^-(A_0)$."
+  },
+  "note": ""
+ },
+ {
+  "page": 475,
+  "where": "Lemme 2, lines 4-5",
+  "scan": "Il existe un endomorphisme | de | qui coïncide avec | au sens de | et vérifie : underlined",
+  "tex": "Il existe un endomorphisme $\\varphi'$ de $L$ qui coïncide avec $\\varphi$ au sens de $D^-(A)$ et vérifie (no underline markup)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Il existe un endomorphisme $\\varphi'$ de $L$ qui coïncide avec $\\varphi$ au sens de $D^-(A)$ et vérifie",
+   "new": "\\emph{Il existe un endomorphisme} $\\varphi'$ \\emph{de} $L$ \\emph{qui coïncide avec} $\\varphi$ \\emph{au sens de} $D^-(A)$ \\emph{et vérifie}"
+  },
+  "note": "The colon after 'vérifie' is the next finding (its old begins where this one's ends)."
+ },
+ {
+  "page": 475,
+  "where": "Lemme 2, last line: 'et vérifie : T(φ') = φ_0 .'",
+  "scan": "et vérifie : T(φ') = φ_0 . (colon after 'vérifie')",
+  "tex": "et vérifie $T(\\varphi')=\\varphi_0$.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": " $T(\\varphi')=\\varphi_0$",
+   "new": ": $T(\\varphi')=\\varphi_0$"
+  },
+  "note": "The old begins with the space after 'vérifie'."
+ },
+ {
+  "page": 475,
+  "where": "'avec A = Z/ℓ^{ν+1}Z et I = ℓ^νZ/ℓ^{ν+1}Z'",
+  "scan": "the two formulas are joined by the word 'et' (run into the text), no comma (crop c475_AI.png)",
+  "tex": "A=\\mathbb Z/\\ell^{\\nu+1}\\mathbb Z, / \\qquad / I=\\ell^\\nu\\mathbb Z/\\ell^{\\nu+1}\\mathbb Z",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "A=\\mathbb Z/\\ell^{\\nu+1}\\mathbb Z,\n\\qquad\nI=",
+   "new": "A=\\mathbb Z/\\ell^{\\nu+1}\\mathbb Z\n\\quad\\text{et}\\quad\nI="
+  },
+  "note": "'et' missing and a comma added."
+ },
+ {
+  "page": 475,
+  "where": "'compte tenu de la remarque 2,'",
+  "scan": "compte tenu de la remarque 2, l'existence (crop c475_rem2.png)",
+  "tex": "compte tenu de la remarque 2,",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "compte tenu de la remarque,",
+  "note": "No 'remarque 2' exists: the remark used here (L' free of finite type when M is) is the unnumbered 'Remarque' after Lemme 1 (p. 474), the only remark of the exposé besides 'la remarque précédente' of § 1. The TeX keeps the printed reading. Low confidence: the intended reference is uncertain."
+ },
+ {
+  "page": 475,
+  "where": "'en un endomorphisme de K' au sens de D^-(A)'",
+  "scan": "en un endomorphisme de K' au sens de D^-(A) (K' without the index ν; crop c475_Kp.png)",
+  "tex": "en un endomorphisme de $K'$ au sens de $D^-(A)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "en un endomorphisme de $K'_\\nu$ au sens de $D^-(A)$",
+  "note": "v : K_ν = L ⥲ L' = K'_ν, so h_ν is transported to K'_ν (K' = lim K'_ν of p. 473 is another object); h''_ν : K'_ν → K'_ν follows. The TeX keeps the printed reading."
+ },
+ {
+  "page": 475,
+  "where": "end of the page (folio-476 marker)",
+  "scan": "p. 475 ends with 'Appliquons alors le deuxième lemme avec L = K'_ν ,'; p. 476 begins with 'φ = h'' et φ_0 = h'_{ν-1} ; nous obtenons' (b476_480/page_476_s1.png)",
+  "tex": "page_475.tex ends with '... avec $L=K'_\\nu$, $\\varphi=h''_\\nu$ et $\\varphi_0=h'_{\\nu-1}$;' before the folio-476 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 476 really begins at '$\\varphi=h'''. ALREADY DONE in both live layers (s5.tex as modified 12 Nov 17:07: the folio-476 marker stands directly before '$\\varphi=h''$ et', and the diplomatic layer there reads h'' without the index ν, as printed; this batch's page file still had '$\\varphi=h''_\\nu$'); nothing to do. A rerun of python -I move_marker.py 5 476 '$\\varphi=h' --before prints 'anchor not found' and changes nothing (the anchor occurs once in each layer, after the marker)."
+ }
+]

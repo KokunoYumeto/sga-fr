@@ -1,0 +1,230 @@
+{
+  "findings": [
+    {
+      "page": 11,
+      "where": "Première phrase, deuxième argument de Hom",
+      "scan": "\\Hom(x_V^*(m), N)",
+      "tex": "\\Hom(x^{\\ast}_V (m), (N))",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hom(x^{\\ast}_V (m), (N))",
+        "new": "\\Hom(x^{\\ast}_V (m), N)"
+      },
+      "note": "Les parenthèses supplémentaires autour du deuxième argument N ne figurent pas dans l'imprimé."
+    },
+    {
+      "page": 11,
+      "where": "Description des applications définissant Λ(N)",
+      "scan": "qui a une application",
+      "tex": "qui a\nune application",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "qui à une application",
+      "note": "Il faut la préposition « à », non le verbe « a ». Le TeX conserve la coquille."
+    },
+    {
+      "page": 11,
+      "where": "Fin de la preuve précédant la proposition 1.6",
+      "scan": "le morphisme canonique du pro-objet constant",
+      "tex": "le morphisme canonique de pro-objet constant",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "morphisme canonique de pro-objet",
+        "new": "morphisme canonique du pro-objet"
+      },
+      "note": "L'imprimé porte « du », non « de »."
+    },
+    {
+      "page": 11,
+      "where": "Proposition 1.6, point 2",
+      "scan": "une famille conservatrice de point de E",
+      "tex": "une famille conservatrice de \\sisi{point}{points} de $E$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "une famille conservatrice de points de $E$",
+      "note": "Le pluriel manque dans l'imprimé. L'édition le corrige avec \\sisi."
+    },
+    {
+      "page": 11,
+      "where": "Preuve du lemme 1.6.1, dernier foncteur de la page",
+      "scan": "j_{V!}(P \\otimes_{A/V} j_V^*M est exact",
+      "tex": "j_{V!} (P \\otimes_{A/V} j^{\\ast}_V M)$ est",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "j_{V!}(P \\otimes_{A/V} j_V^*M)",
+      "note": "L'imprimé omet la parenthèse fermante de j_{V!}. Le TeX la rétablit silencieusement."
+    },
+    {
+      "page": 12,
+      "where": "1.6.2, chaîne d'isomorphismes après « pour tout A_x-module N »",
+      "scan": "\\otimes_{A_x}",
+      "tex": "\\otimes _{A_\\ast}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\otimes _{A_\\ast}",
+        "new": "\\otimes _{A_x}"
+      },
+      "note": "Au deuxième produit tensoriel, l'indice imprimé est x, non une étoile."
+    },
+    {
+      "page": 12,
+      "where": "1.6.2, même chaîne, facteur image inverse de j_V^*M",
+      "scan": "x_V^*(j_V^*M \\simeq",
+      "tex": "x^\\ast_{V}j^{\\ast}_V M \\simeq",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "x_V^*(j_V^*M) \\simeq",
+      "note": "La parenthèse ouverte devant j_V^*M n'est pas fermée avant l'isomorphisme suivant. Le TeX corrige silencieusement en supprimant la parenthèse ouvrante."
+    },
+    {
+      "page": 12,
+      "where": "1.6.2, produit tensoriel à l'intérieur de x_V^*",
+      "scan": "x_V^*(x_{V*}N \\otimes_{A_x} j_V^*M)",
+      "tex": "x^\\ast_V (x_{V_\\ast} N \\otimes_{A_x}\n  j^\\ast_V M)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "x^\\ast_V (x_{V\\ast} N \\otimes_{A/V} j^\\ast_V M)",
+      "note": "Ce produit tensoriel est formé dans E/V : son anneau de base doit être A/V, non A_x. Le TeX conserve l'indice erroné de l'imprimé."
+    },
+    {
+      "page": 12,
+      "where": "Preuve de 1.6, point 2, premier terme de la suite des fibres",
+      "scan": "P'_{x_i} \\otimes_{A_x} M_x",
+      "tex": "P'_{x_i} \\otimes_{A_x} M_x",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "P'_{x_i} \\otimes_{A_{x_i}} M_{x_i}",
+      "note": "Les deux indices i manquent dans le premier produit tensoriel, contrairement aux termes suivants de cette suite de fibres en x_i. Le TeX conserve la coquille."
+    },
+    {
+      "page": 13,
+      "where": "Preuve de 1.7, identité suivant « On a »",
+      "scan": "x_V^* = j^*(x/V)^*",
+      "tex": "x^\\ast_V - j^\\ast(x / V)^{\\ast}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "x^\\ast_V - j^\\ast(x / V)^{\\ast}",
+        "new": "x^\\ast_V = j^\\ast(x / V)^{\\ast}"
+      },
+      "note": "Le signe imprimé est une égalité, non un signe moins."
+    },
+    {
+      "page": 13,
+      "where": "Foncteur suivant « et par suite (IV 12.11) »",
+      "scan": "N' \\mapsto M \\otimes_{A'} j_{V_x!}(x/V)^*N'",
+      "tex": "N' \\mapsto M \\otimes_{A'} x^* j_{V!}N'",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "N' \\mapsto M \\otimes_{A'} x^* j_{V!}N'",
+        "new": "N' \\mapsto M \\otimes_{A'} j_{V_{x}!}(x/V)^{\\ast}N'"
+      },
+      "note": "L'imprimé conserve ici l'expression avec j_{V_x!}(x/V)^*. L'expression avec x^*j_{V!} apparaît seulement après l'identité expliquée dans la phrase suivante."
+    },
+    {
+      "page": 13,
+      "where": "Foncteur déclaré « exact par hypothèse »",
+      "scan": "N' \\mapsto M \\otimes_{A'} x^*j_{V!}N'",
+      "tex": "N' \\mapsto M \\otimes\nj_{V_{x}!}(x/V)^{\\ast}N'",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "N' \\mapsto M \\otimes\nj_{V_{x}!}(x/V)^{\\ast}N'",
+        "new": "N' \\mapsto M \\otimes_{A'} x^*j_{V!}N'"
+      },
+      "note": "Les deux expressions successives ont été interverties dans le TeX ; ce second emplacement a aussi perdu l'indice A' du produit tensoriel."
+    },
+    {
+      "page": 14,
+      "where": "Corollaire 1.7.2, condition ii",
+      "scan": "la catégorie des A'-Module à gauche",
+      "tex": "la catégorie des $A'$-Modules à gauche",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "la catégorie des $A'$-Modules à gauche",
+      "note": "L'imprimé omet le s du pluriel après « des ». Le TeX le rétablit silencieusement."
+    },
+    {
+      "page": 14,
+      "where": "Définition 1.8",
+      "scan": "Un morphisme de topos annelé",
+      "tex": "Un morphisme de topos \\sisi{annelé}{annelés}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Un morphisme de topos annelés",
+      "note": "L'adjectif qualifiant les topos doit être au pluriel. L'édition corrige la coquille avec \\sisi."
+    },
+    {
+      "page": 15,
+      "where": "Preuve de 1.9, premier isomorphisme après « on a donc »",
+      "scan": "\\Hom_{C^{\\sim}_{\\sheaf V}}(\\epsilon X, \\Hhom_A(M,N))",
+      "tex": "\\sisi{}{\\epsilon}\\sisi{}{(}\\Hhom_A (M, N)\\sisi{}{)}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hom_{C^{\\sim}_{\\sheaf V}}(\\epsilon(X), \\epsilon(\\Hhom_A(M,N)))",
+      "note": "Le deuxième argument du premier Hom doit être l'image par l'inclusion ε du faisceau Hom. Ce ε manque dans l'imprimé ; l'édition le fournit avec \\sisi."
+    },
+    {
+      "page": 15,
+      "where": "Deuxième chaîne d'isomorphismes, argument de ε dans le terme médian",
+      "scan": "\\epsilon(\\ZZ_X \\otimes_{\\ZZ} M)",
+      "tex": "\\epsilon(\\ZZ_A \\otimes_{\\ZZ} M)",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "(\\ZZ_A \\otimes_{\\ZZ} M)",
+        "new": "(\\ZZ_X \\otimes_{\\ZZ} M)"
+      },
+      "note": "L'indice imprimé est X, comme dans le premier membre, non A."
+    },
+    {
+      "page": 15,
+      "where": "Deuxième chaîne d'isomorphismes, dernier terme",
+      "scan": "\\epsilon\\ZZ_X \\otimes_{\\ZZ} \\epsilon M",
+      "tex": "\\epsilon\\ZZ_A \\otimes_{\\ZZ} \\epsilon M",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\ZZ_A \\otimes_{\\ZZ} \\epsilon",
+        "new": "\\ZZ_X \\otimes_{\\ZZ} \\epsilon"
+      },
+      "note": "Cette seconde occurrence porte également l'indice X dans l'imprimé."
+    },
+    {
+      "page": 15,
+      "where": "1.10, indice de la somme définissant S_n",
+      "scan": "f : \\Delta \\to I",
+      "tex": "f : \\sisi{\\Delta}{\\Delta_n} \\to I",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f : \\Delta_n \\to I",
+      "note": "L'indice n de Δ manque dans l'imprimé ; le domaine est Δ_n, défini juste avant et rappelé juste après. L'édition corrige avec \\sisi."
+    },
+    {
+      "page": 15,
+      "where": "1.10, premier facteur du produit définissant S_n",
+      "scan": "U_{f(1)} \\times_X \\ldots \\times_X U_{f(n)}",
+      "tex": "U_{f(1)} \\times_{X} \\ldots\n\\times_{X} U_{f(n)}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "U_{f(0)} \\times_X \\ldots \\times_X U_{f(n)}",
+      "note": "Puisque Δ_n contient les indices 0 à n, le produit doit commencer par le facteur U_{f(0)}. Le TeX conserve le départ erroné à f(1)."
+    }
+  ],
+  "coordinator": "11: 2/3; 12: 1/3; 13: 3/0; 14: 0/2; 15: 2/3 (normal/misprint).\nPage 13 : appliquer ensemble les deux rétablissements des foncteurs, après « par suite (IV 12.11) » et avant « est exact par hypothèse »."
+}

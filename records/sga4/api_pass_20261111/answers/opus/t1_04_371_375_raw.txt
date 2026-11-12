@@ -1,0 +1,10 @@
+```json
+{"findings":[
+{"page":371,"where":"définition de c^*, « au-dessus de G »","scan":"Si X' est un objet de B_G au-dessus de G","tex":"au-dessus de \\sisi{$G$}{$X$}","kind":"misprint_in_print","confidence":"high","fix":null,"corrected":"$X$","note":"The print reads G where X is meant. The TeX keeps the printed reading G as the first argument of \\sisi and corrects it to X."},
+{"page":372,"where":"définition de c_*","scan":"c_* : X' ↦ (i_!(X') → X) : B_H → B_G","tex":"X):B_H\\longrightarrow B_G{\\quoi}.","kind":"misprint_in_print","confidence":"low","fix":null,"corrected":"B_H\\longrightarrow (B_G)_{/X}","note":"c_* goes from B_H to (B_G)_{/X}, but the print writes B_G as the target. The TeX keeps the printed reading."},
+{"page":372,"where":"fin de 5.8.3, « où E_G = G_s = G »","scan":"E_G = G_s = G (s minuscule)","tex":"E_G=G_S=G","kind":"symbol","confidence":"high","fix":{"old":"E_G=G_S=G","new":"E_G=G_s=G"},"note":"The print has a small s, as in the G_s of exercise 5.9."},
+{"page":373,"where":"« le topos induit E' = ((B_G)_{X/G)/Z} »","scan":"E' =((B_G X/G)/Z","tex":"$E'=((B_G)_{X/G)/Z}$","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"$E'_{/Z}=((B_G)_{/(X,G)})_{/Z}$","note":"The print garbles (B_G)_{/(X,G)} into X/G) with unbalanced parentheses. The TeX keeps the printed reading. The induced topos meant here is E'_{/Z}."},
+{"page":375,"where":"exercice 5.9 c), « un sous-Groupe de p^*(G) »","scan":"Groupe de p*(G)","tex":"un sous-Groupe de $p^{\\ast}(G)$","kind":"misprint_in_print","confidence":"high","fix":null,"corrected":"$\\pi^{\\ast}(G)$","note":"The print has p where π is meant. The TeX keeps the printed reading."}
+],
+"coordinator":"371: 0/1; 372: 1/1; 373: 0/1; 374: 0/0; 375: 0/1. Convention: the print's underlined G for the pro-group in 5.8.4 is set as script 𝒢 (𝒢=(G_i), 𝒢\\rightarrow G_{i_\\circ}); it occurs only on p. 374, so there are no three examples. It is noted only, not reported as an error."}
+```

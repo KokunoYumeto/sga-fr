@@ -1,0 +1,199 @@
+{
+  "findings": [
+    {
+      "page": 606,
+      "where": "Premier paragraphe, définition de B complété",
+      "scan": "où $\\hat{B}=B\\otimes_{A}\\hat{A}$",
+      "tex": "ou $\\hat{B}=B\\otimes_{A}\\hat{A}$",
+      "kind": "accent",
+      "confidence": "medium",
+      "fix": {
+        "old": ", ou $\\hat{B}=",
+        "new": ", où $\\hat{B}="
+      },
+      "note": "L'accent grave du relatif « où » est léger mais visible dans le scan."
+    },
+    {
+      "page": 608,
+      "where": "Premier paragraphe du cas c = 1",
+      "scan": "situation envisagée",
+      "tex": "situation envisagés",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "situation envisagés",
+        "new": "situation envisagée"
+      },
+      "note": "Le tirage donne bien le féminin singulier."
+    },
+    {
+      "page": 608,
+      "where": "Début du paragraphe de récurrence",
+      "scan": "Le cas $c>1$",
+      "tex": "Le cas $c>i$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "Le cas $c>i$",
+        "new": "Le cas $c>1$"
+      },
+      "note": "Le caractère imprimé est le chiffre 1, non la lettre i."
+    },
+    {
+      "page": 608,
+      "where": "Même paragraphe, codimension du couple (Y,X)",
+      "scan": "codimension $c>1$",
+      "tex": "codimension $c>i$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "codimension $c>i$.",
+        "new": "codimension $c>1$."
+      },
+      "note": "Deuxième substitution du chiffre 1 par la lettre i."
+    },
+    {
+      "page": 608,
+      "where": "Dernière phrase, application de l'hypothèse de récurrence",
+      "scan": "récurrence, appliqué au morphisme u",
+      "tex": "récurrence, appliqué au morphisme $u$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "récurrence, appliquée au morphisme $u$",
+      "note": "Le tirage omet l'accord avec « hypothèse » ; le TeX conserve cette coquille."
+    },
+    {
+      "page": 608,
+      "where": "Dernière ligne, second foncteur dérivé",
+      "scan": "$(R^{p}u^{!})(R^{q}v^{!})F=0$",
+      "tex": "$(R^{p}u^{!})(R^{1}v^{!})F=0$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "(R^{1}v^{!})F=0",
+        "new": "(R^{q}v^{!})F=0"
+      },
+      "note": "L'exposant imprimé de R dans le second facteur est q."
+    },
+    {
+      "page": 608,
+      "where": "Coupure 608/609, dernier mot",
+      "scan": "La dernière ligne finit par « F = 0 si ».",
+      "tex": "La coupe finit par « F=0$ » ; « si » se trouve au début de la coupe de p. 609.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le premier mot de la ligne source 806, « si », appartient encore à la p. 608. La p. 609 commence par $(p,q)\\neq(2c-2,2)$. Repartager les coupes sans modifier le texte."
+    },
+    {
+      "page": 609,
+      "where": "3.3, ordre des groupes cycliques",
+      "scan": "groupes cycliques d'ordres n",
+      "tex": "groupes cycliques d'ordres $n$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "groupes cycliques d'ordre $n$",
+      "note": "Pour l'ordre fixé n, lire « d'ordre ». Le TeX conserve le pluriel imprimé."
+    },
+    {
+      "page": 609,
+      "where": "Formule (3.3.1), premier terme",
+      "scan": "(R^{1}j_{\\ast})𝛍_{n})",
+      "tex": "(R^{1}j_{\\ast})𝛍_{n})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(R^{1}j_{\\ast})𝛍_{n}",
+      "note": "La parenthèse fermante après μ_n est sans ouvrante correspondante dans le tirage ; le TeX la conserve."
+    },
+    {
+      "page": 609,
+      "where": "Formule (3.3.1), numérateur du quotient",
+      "scan": "j_{\\ast}(\\GG_{m})_{U}",
+      "tex": "j_{\\ast}(𝛍\\GG_{m})_{U}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "j_{\\ast}(𝛍\\GG_{m})_{U}",
+        "new": "j_{\\ast}(\\GG_{m})_{U}"
+      },
+      "note": "Le μ ajouté devant le groupe multiplicatif ne figure pas dans le tirage."
+    },
+    {
+      "page": 609,
+      "where": "Formule (3.3.2), terme central",
+      "scan": "(R^{\\ast}i^{!})𝛍_{n}",
+      "tex": "(R^{\\ast}_{i}{}^{!})𝛍_{n}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "(R^{\\ast}_{i}{}^{!})",
+        "new": "(R^{\\ast}i^{!})"
+      },
+      "note": "Le i imprimé suit R sur la ligne de base ; il n'est pas un indice inférieur de R. L'exposant étoilé est conservé."
+    },
+    {
+      "page": 609,
+      "where": "Coupure 609/610, après (3.3.2)",
+      "scan": "La p. 609 se termine après (3.3.2). Le titre « Théorème 3.4 » et toute sa note sont imprimés p. 610.",
+      "tex": "\\begin{enonce*}{Théorème 3.4}\\etiquette[3.4]{XIX.thm3.4}",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "La coupe doit précéder le début du théorème 3.4, ligne source 850. Les lignes 850–856, titre et note compris, appartiennent à la p. 610, et pas seulement les derniers mots de la ligne 856."
+    },
+    {
+      "page": 610,
+      "where": "Théorème 3.4, condition (i), référence finale",
+      "scan": "(3.3')",
+      "tex": "$(3.3')$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$(3.3.2)$",
+      "note": "Le TeX conserve la référence fautive du tirage. Le morphisme visé est celui de (3.3.2)."
+    },
+    {
+      "page": 610,
+      "where": "Condition (ii), sommet supérieur droit du carré",
+      "scan": "(R^{2c}i'{}^{!})",
+      "tex": "(R^{2c}i^{!})",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "& &\n(R^{2c}i^{!})",
+        "new": "& &\n(R^{2c}i'{}^{!})"
+      },
+      "note": "Le tirage porte i prime pour l'immersion du couple (Y',X')."
+    },
+    {
+      "page": 610,
+      "where": "Condition (ii), sommet supérieur droit du carré, puissance tensorielle",
+      "scan": "𝛍_n^{\\otimes c}",
+      "tex": "𝛍_n^{{\\boxtimes}c}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "𝛍_n^{{\\boxtimes}c}\\\\",
+        "new": "𝛍_n^{\\otimes c}\\\\"
+      },
+      "note": "Le signe imprimé est le produit tensoriel, comme dans la formule qui ouvre le théorème, non le produit extérieur."
+    },
+    {
+      "page": 610,
+      "where": "Condition (ii), sommet inférieur droit du carré, puissance tensorielle",
+      "scan": "𝛍_n^{\\otimes c}",
+      "tex": "𝛍_n^{{\\boxtimes}c}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "𝛍_n^{{\\boxtimes}c} \\ar[u]",
+        "new": "𝛍_n^{\\otimes c} \\ar[u]"
+      },
+      "note": "Même substitution erronée de boxtimes à otimes dans le second sommet droit."
+    }
+  ],
+  "coordinator": "606: 1/0; 607: 0/0; 608: 5/1; 609: 3/2; 610: 3/1 (normal/misprint ; marqueurs comptés dans normal).\nCoupure 608/609 : rattacher à la p. 608 le mot « si » qui ouvre la ligne source 806 ; la p. 609 commence par $(p,q)\\neq(2c-2,2)$.\nCoupure 609/610 : faire commencer la coupe de p. 610 avant le théorème 3.4, ligne source 850, avec son titre et toute sa note."
+}

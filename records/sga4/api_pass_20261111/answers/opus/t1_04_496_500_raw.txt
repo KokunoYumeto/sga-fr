@@ -1,0 +1,12 @@
+```json
+{"findings":[
+{"page":496,"where":"11.1.1","scan":"A un U-faisceaux d'anneaux sur C","tex":"un\n$𝒰$-faisceaux d'anneaux","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"un $𝒰$-faisceau d'anneaux","note":"Wrong number in the print ('un ... faisceaux'). The TeX keeps the printed reading."},
+{"page":496,"where":"11.1.3","scan":"fournit un homorphisme d'anneaux de Γ(B)°","tex":"un homomorphisme d'anneaux de $\\Gamma(B)^{\\circ}$","kind":"misprint_in_print","confidence":"high","fix":null,"corrected":"homomorphisme","note":"Typing error 'homorphisme' in the print. The TeX silently corrects it."},
+{"page":497,"where":"11.1.5","scan":"on obtient un foncteur de _B E dans la catégorie","tex":"on obtient un foncteur de ${}_BF$","kind":"symbol","confidence":"high","fix":{"old":"${}_BF$","new":"${}_BE$"},"note":"The print has the category _B E; the TeX has F."},
+{"page":499,"where":"proof of 11.3.1, cas général","scan":"provient d'un objet de C ((IV 1). Le topos","tex":"$C$ (\\hyperref[IV.cor1.2.1]{1.2.1})","kind":"number","confidence":"medium","fix":{"old":"$C$ (\\hyperref[IV.cor1.2.1]{1.2.1})","new":"$C$ (1)"},"note":"The print refers to IV 1, not to 1.2.1. The print also has a doubled opening parenthesis '((', which is a misprint and is not kept in the fix."},
+{"page":499,"where":"proof of 11.3.1","scan":"Il résulte alors de III 1.7 ii) que le prolongement","tex":"\\hyperrefext[III][III.prop1.7]{1.7}) que","kind":"missing","confidence":"medium","fix":{"old":"{1.7}) que le prolongement","new":"{1.7}~ii) que le prolongement"},"note":"The print reads 'III 1.7ii)' (shown as '1.711)' in typewriter type). The TeX drops the 'ii' and keeps only the closing parenthesis."},
+{"page":500,"where":"Remarque 11.3.2","scan":"l'abus de notation signalé ci-dessus","tex":"l'abus de notations signalé","kind":"word","confidence":"high","fix":{"old":"l'abus de notations signalé","new":"l'abus de notation signalé"},"note":"The print has the singular 'notation'."},
+{"page":500,"where":"proof of 11.3.3","scan":"Soit e_X l'objet final du topos E_{/X}","tex":"Soit $e_x$ l'objet final","kind":"symbol","confidence":"high","fix":{"old":"Soit $e_x$","new":"Soit $e_X$"},"note":"The print has a capital X in the subscript; the TeX has a small x."}
+],
+"coordinator":"p496: 0/2; p497: 1/0; p498: 0/0; p499: 2/0; p500: 2/0. No marker problems, no edits that must be applied together, no transcription-wide conventions."}
+```

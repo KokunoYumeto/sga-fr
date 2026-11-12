@@ -1,0 +1,130 @@
+{
+  "findings": [
+    {
+      "page": 326,
+      "where": "4.2.1, « une famille de point »",
+      "scan": "une famille de point de $S$",
+      "tex": "une famille de point\\sisi{}{s} de $S$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "une famille de points de $S$",
+      "note": "Le pluriel manque dans l'imprimé. Le TeX le corrige avec \\sisi."
+    },
+    {
+      "page": 326,
+      "where": "Proposition 4.2.3 (i), renvoi après « flasque »",
+      "scan": "(V 3.7)",
+      "tex": "\\sisi{(V 3.7)}{\\hyperrefext[V][V.def4.1]{4.1}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(V 4.1)",
+      "note": "Le renvoi imprimé est erroné. Le TeX le corrige vers la définition V 4.1."
+    },
+    {
+      "page": 327,
+      "where": "Diagramme, première ligne non nulle, entrée de gauche",
+      "scan": "\\mathcal{Z}^{n-1}(F^1)",
+      "tex": "\\Zz^{n-1}(F\\sisi{^1}{'})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Zz^{n-1}(F')",
+      "note": "Les deux scans donnent un exposant 1 au lieu d'une prime. Le TeX corrige cette coquille avec \\sisi."
+    },
+    {
+      "page": 327,
+      "where": "Suite exacte courte précédant (4.2.3.1), premier terme non nul",
+      "scan": "\\mathcal{Z}^{n+1}(F)",
+      "tex": "\\mathcal{Z}^{n+1}(F)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\mathcal{Z}^{n-1}(F)",
+      "note": "L'exposant doit être n-1, comme dans le diagramme précédent et dans la substitution indiquée page 328. Le TeX conserve le n+1 imprimé."
+    },
+    {
+      "page": 329,
+      "where": "4.2.7, deuxième phrase",
+      "scan": "Il permettent par là",
+      "tex": "\\sisi{Il}{Elles} permettent par là",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Elles permettent par là",
+      "note": "Le pronom renvoie aux résolutions. Le TeX corrige « Il » en « Elles » avec \\sisi."
+    },
+    {
+      "page": 329,
+      "where": "Lemme 4.2.8 (a)",
+      "scan": "Les cohomologies de $K$ et $L$ sont bornés supérieurement",
+      "tex": "Les cohomologies de $K$ et $L$ sont bornés supérieurement;",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Les cohomologies de $K$ et $L$ sont bornées supérieurement;",
+      "note": "L'accord avec « cohomologies » exige « bornées ». Le TeX conserve la coquille imprimée."
+    },
+    {
+      "page": 329,
+      "where": "Lemme 4.2.8 (b), anneau sur lequel porte la Tor-dimension",
+      "scan": "f^{\\ast}\\Bb",
+      "tex": "f^{\\sisi{\\ast}{-1}}\\Bb",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f^{-1}\\Bb",
+      "note": "Il s'agit de l'anneau image inverse f^{-1}\\Bb, non du tiré en arrière de modules f^{\\ast}\\Bb. Le TeX corrige le symbole avec \\sisi."
+    },
+    {
+      "page": 330,
+      "where": "Lemme 4.2.8 (ii), foncteur après « pour »",
+      "scan": "${}\\overset{\\LL}{\\otimes}\\LL f^{\\ast}$",
+      "tex": "${}\\overset{\\LL}{\\otimes} f^{\\ast}$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "${}\\overset{\\LL}{\\otimes} f^{\\ast}$",
+        "new": "${}\\overset{\\LL}{\\otimes}\\LL f^{\\ast}$"
+      },
+      "note": "L'imprimé porte un second \\LL devant f^{\\ast}, distinct de celui placé au-dessus du produit tensoriel."
+    },
+    {
+      "page": 330,
+      "where": "Lemme 4.2.8 (iii), expression du foncteur en L",
+      "scan": "$K\\overset{\\LL}{\\otimes}\\LL f^{\\ast}L$",
+      "tex": "$K\\overset{\\LL}{\\otimes} f^{\\ast}L$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$K\\overset{\\LL}{\\otimes} f^{\\ast}L$",
+        "new": "$K\\overset{\\LL}{\\otimes}\\LL f^{\\ast}L$"
+      },
+      "note": "Le \\LL imprimé devant f^{\\ast} manque dans le TeX."
+    },
+    {
+      "page": 330,
+      "where": "Lemme 4.2.8 (iii), quantificateur sur les points",
+      "scan": "\\forall x \\in V",
+      "tex": "\\forall x \\in V",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\forall x \\in X",
+      "note": "La famille conservative est indexée par X ; aucun V n'est défini dans le lemme. Les deux scans portent V, que le TeX conserve."
+    },
+    {
+      "page": 330,
+      "where": "4.2.9, parenthèse définissant le complexe simple",
+      "scan": "défini en terme de sommes",
+      "tex": "défini en terme de\nsommes",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "défini en termes de sommes",
+      "note": "Il manque le s de la locution « en termes de ». Le TeX conserve le singulier imprimé."
+    }
+  ],
+  "coordinator": "Comptes (normal/misprint) : 326 : 0/2 ; 327 : 0/2 ; 328 : 0/0 ; 329 : 0/3 ; 330 : 2/2."
+}

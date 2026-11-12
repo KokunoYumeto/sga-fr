@@ -1,0 +1,163 @@
+[
+ {
+  "page": 36,
+  "where": "Lemme 2.33, first line",
+  "scan": "Si k est de caractéristique 0, toute dérivation de: 'est de caractéristique' and 'toute dérivation de' are underlined separately; '0,' is not underlined",
+  "tex": "\\underline{est de caractéristique $0$, toute dérivation de}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{est de caractéristique $0$, toute dérivation de}",
+   "new": "\\underline{est de caractéristique} $0$, \\underline{toute dérivation de}"
+  },
+  "note": "The underline stops after 'caractéristique' and starts again at 'toute'; the TeX underlines the 0 and the comma too. Same pattern as Proposition 2.34 on p. 37, where the TeX already leaves the 0 outside the underline."
+ },
+ {
+  "page": 36,
+  "where": "paragraph 'Supposons s singulier', last line",
+  "scan": "D s'annulle en tout point (double l; the final e is typed slightly raised)",
+  "tex": "s'annule en tout point",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "s'annule en tout",
+   "new": "s'annulle en tout"
+  },
+  "corrected": "s'annule en tout",
+  "note": "Spelling error of the print (annuler has one l). The TeX silently corrects it. The next paragraph has the same slip (s'annullent); p. 35 prints s'annulant correctly, so this is not a spelling convention of the volume."
+ },
+ {
+  "page": 36,
+  "where": "paragraph 'Soit τ~_o le A~_s-module', second line",
+  "scan": "qui s'annullent en les points au-dessus de s",
+  "tex": "qui s'annulent en les points",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "s'annulent",
+   "new": "s'annullent"
+  },
+  "corrected": "s'annulent",
+  "note": "Spelling error of the print (double l), as in 's'annulle' in the previous paragraph. The TeX silently corrects it."
+ },
+ {
+  "page": 36,
+  "where": "paragraph 'Soit τ~_o ...', last words before the two displays",
+  "scan": "Pour s singulier, on (no 'a'; the displays follow)",
+  "tex": "Pour $s$ singulier, on",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Pour $s$ singulier, on a",
+  "note": "The verb is missing before the two displayed formulas. The TeX keeps the printed reading; the corrected layer already reads 'on a'."
+ },
+ {
+  "page": 36,
+  "where": "second display at the foot of the page, τ~_o/τ ... espace tangent à l'origine de G~/G",
+  "scan": "a tilde over a plain bar (two typed hyphens), no arrowhead: the typed ≃",
+  "tex": "\\stackrel{\\sim}{\\longrightarrow}",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\stackrel{\\sim}{\\longrightarrow}",
+   "new": "\\simeq"
+  },
+  "note": "At full zoom the bar ends flat on the right; arrowheads elsewhere in this typescript are clear (p. 40 df/f : O* ⟶ Ω). The sign has the same shape as the ≃ of (1.10.1) and 'ω ≃ O(K)' on p. 6, which the TeX writes \\simeq."
+ },
+ {
+  "page": 37,
+  "where": "Bibliographie [4] (Hartshorne)",
+  "scan": "Lectures Notes in Math. 20",
+  "tex": "Lectures Notes in Math.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Lecture Notes in Math.",
+  "note": "Typing error of the print: the series is Lecture Notes in Mathematics. The TeX keeps the printed reading; the corrected layer already reads 'Lecture Notes'."
+ },
+ {
+  "page": 37,
+  "where": "Bibliographie [5] (Lichtenbaum), second line",
+  "scan": "Am. J. of Math. 15 n° 2 April 1968. p. 380-405.",
+  "tex": "Am. J. of Math. 15 n° 2",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Am. J. of Math. 90 n° 2",
+  "note": "Wrong volume number: Lichtenbaum, Curves over discrete valuation rings, is Amer. J. Math. 90, no. 2 (April 1968), 380-405; volume 15 is from 1893. The TeX keeps the printed reading; the corrected layer already reads 90."
+ },
+ {
+  "page": 37,
+  "where": "Bibliographie [7] (Mumford), first line",
+  "scan": "The topology of normal singularities of an algebraic surfaces",
+  "tex": "an algebraic surfaces",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "an algebraic surface",
+  "note": "Typing error of the print (the title is '... of an algebraic surface and a criterion for simplicity'). The TeX keeps the printed reading; the corrected layer already reads 'surface'."
+ },
+ {
+  "page": 37,
+  "where": "Bibliographie [3] (Enriques - Chisini), title",
+  "scan": "Lezioni sulla teoria geometrica delle equazioni et delle funzioni algebriche",
+  "tex": "delle equazioni et delle funzioni",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "delle equazioni e delle funzioni",
+  "note": "French 'et' in the Italian title; the title reads 'delle equazioni e delle funzioni algebriche'. The TeX keeps the printed reading; the corrected layer already reads 'e'."
+ },
+ {
+  "page": 39,
+  "where": "title of Exposé XI",
+  "scan": "COHOMOLOGIE DES INTERSECTIONS COMPLETES, double underline",
+  "tex": "\\underline{COHOMOLOGIE DES INTERSECTIONS COMPLETES}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{COHOMOLOGIE DES INTERSECTIONS COMPLETES}",
+   "new": "\\underline{\\underline{COHOMOLOGIE DES INTERSECTIONS COMPLETES}}"
+  },
+  "note": "The print underlines the title twice ('par P. DELIGNE' and 'E X P O S E XI' once). The other exposé titles of the volume are transcribed with \\underline{\\underline{...}} (e.g. X, XV, XVIII)."
+ },
+ {
+  "page": 39,
+  "where": "heading of section 1",
+  "scan": "1. Cohomologie de l'espace projectif et des intersections complètes (the number '1.' is not underlined)",
+  "tex": "\\underline{1. Cohomologie de l'espace projectif",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{1. Cohomologie de l'espace projectif",
+   "new": "1. \\underline{Cohomologie de l'espace projectif"
+  },
+  "note": "The underline starts at 'Cohomologie'. The TeX already writes the other section headings this way ('2. \\underline{Résultats numériques}' in this exposé, '1. \\underline{Nombres d'intersection ...}' in Exposé X)."
+ },
+ {
+  "page": 40,
+  "where": "diagram V(E) <- V(E)* -> P(E) over S, after the bottom row",
+  "scan": "a full stop at the right of the S row, after the diagram",
+  "tex": "{} \\end{tikzcd}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{} \\end{tikzcd}",
+   "new": "{} \\end{tikzcd}\\quad ."
+  },
+  "note": "Known pattern: the punctuation printed after a diagram is left out (the STRUCTURE comment records the full stop but does not set it). Fix in the form used for p. 6."
+ },
+ {
+  "page": 40,
+  "where": "same diagram, curved arrow e from S to V(E)",
+  "scan": "the curve e bows out to the lower left, outside the straight arrow a; label e on the left of the curve",
+  "tex": "S \\arrow[ul, bend right, \"e\"']",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "S \\arrow[ul, bend right, \"e\"']",
+   "new": "S \\arrow[ul, bend left, \"e\"]"
+  },
+  "note": "Compiled: with bend right (going up-left from S) the curve bulges to the upper right, between the arrows a and a', and its label e sits under the hook arrow. bend left with the label on the left side reproduces the print and the file's own STRUCTURE comment ('bowing out to the left and downward ... label e set to the LEFT of the curve')."
+ }
+]

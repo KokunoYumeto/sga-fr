@@ -1,0 +1,107 @@
+[
+ {
+  "page": 1,
+  "where": "Ligne des auteurs",
+  "scan": "par A. Grothendieck et J.L. Verdier",
+  "tex": "A. Grothendieck et J.-L. Verdier",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{center}\nA. Grothendieck",
+   "new": "\\begin{center}\npar A. Grothendieck"
+  },
+  "note": "Le mot « par » manque devant les noms des auteurs."
+ },
+ {
+  "page": 1,
+  "where": "Sous la ligne des auteurs",
+  "scan": "(avec un appendice de N. Bourbaki)",
+  "tex": "J.-L. Verdier\n\\end{center}",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "J.-L. Verdier\n\\end{center}",
+   "new": "J.-L. Verdier\n\n(avec un appendice de N. Bourbaki)\n\\end{center}"
+  },
+  "note": "La mention de l'appendice manque dans le bloc de titre."
+ },
+ {
+  "page": 2,
+  "where": "Troisième propriété, définition du couple de Kuratowski",
+  "scan": "$(x,y)=\\{\\{x,y\\},x\\}$",
+  "tex": "$(x,y)=\\{\\{x,y\\},x\\}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$(x,y)=\\{\\{x,y\\},\\{x\\}\\}$",
+  "note": "Il manque les accolades du singleton {x} dans la définition de Kuratowski. Le TeX conserve la coquille."
+ },
+ {
+  "page": 3,
+  "where": "Phrase suivant la définition des cardinaux fortement inaccessibles",
+  "scan": "Le cardinal 0 et le cardinal infini démontrable",
+  "tex": "Le cardinal 0 et le cardinal infini dénombrable",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Le cardinal 0 et le cardinal infini dénombrable",
+  "note": "« démontrable » est une coquille pour « dénombrable ». Le TeX la corrige silencieusement."
+ },
+ {
+  "page": 3,
+  "where": "Dernière phrase",
+  "scan": "entraîne celle de l'axiome",
+  "tex": "entraîne celle dans l'axiome",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "celle dans l'axiome",
+   "new": "celle de l'axiome"
+  },
+  "note": "La préposition imprimée est « de », non « dans »."
+ },
+ {
+  "page": 4,
+  "where": "Définition d'un ensemble artinien",
+  "scan": "familles infinies $(x_n, n\\in N)$ telle que",
+  "tex": "familles infinies $(x_n, n\\in N)$ telle\nque",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "familles infinies $(x_n, n\\in N)$ telles que",
+  "note": "L'accord avec « familles infinies » exige « telles ». Le TeX conserve la coquille."
+ },
+ {
+  "page": 4,
+  "where": "Phrase introduisant deux cardinaux fortement inaccessibles",
+  "scan": "Soient. $c<c'$ deux cardinaux fortement inaccessibles.",
+  "tex": "Soient $c<c'$ deux cardinaux fortement inaccessibles.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Soient $c<c'$ deux cardinaux fortement inaccessibles.",
+  "note": "Le point après « Soient » est superflu. Le TeX le supprime silencieusement."
+ },
+ {
+  "page": 4,
+  "where": "Deuxième formule isolée",
+  "scan": "$U_c\\in U'_{c'}$",
+  "tex": "𝒰_c\\in 𝒰'_{c'}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$𝒰_c\\in 𝒰_{c'}$",
+  "note": "La prime sur le U de droite est superflue : la correspondance précédente définit l'univers 𝒰_{c'}. Le TeX conserve la coquille."
+ },
+ {
+  "page": 5,
+  "where": "Premier mot, suite du paragraphe 1.0",
+  "scan": "où tout au moins ont un cardinal",
+  "tex": "où\\pageoriginale tout au moins ont un cardinal",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "ou tout au moins ont un cardinal",
+  "note": "Il faut la conjonction « ou », qui introduit l'alternative à l'appartenance à l'univers. Le TeX conserve l'accent fautif du tirage."
+ }
+]

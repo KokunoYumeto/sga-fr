@@ -1,0 +1,160 @@
+{
+  "findings": [
+    {
+      "page": 106,
+      "where": "Démonstration de 6.5 et 6.6, définition de T'^i",
+      "scan": "T'^{i}(F)=H^{i}(Y,g^{\\ast}(F))",
+      "tex": "${T'}^{i}=H^{i}(Y,g^{\\ast}(F))$",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "${T'}^{i}=",
+        "new": "${T'}^{i}(F)="
+      },
+      "note": "The argument (F) on the left is printed but omitted in the TeX."
+    },
+    {
+      "page": 106,
+      "where": "Même définition de T'^i, membre de droite",
+      "scan": "H^{i}(Y,g^{\\ast}(F))",
+      "tex": "H^{i}(Y,g^{\\ast}(F))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{i}(Y,h^{\\ast}(F))",
+      "note": "The morphism is h, not g. The TeX keeps the printed g."
+    },
+    {
+      "page": 106,
+      "where": "« grâce au fait que le foncteur … est exact »",
+      "scan": "h^{\\bigdot}",
+      "tex": "$h^{\\bigdot}$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "h^{\\ast}",
+      "note": "The small printed superscript is dot-like, and the TeX retains it as \\bigdot. The exact functor invoked here is the inverse-image functor h^{\\ast}."
+    },
+    {
+      "page": 108,
+      "where": "Description d'un F-torseur par réduction du groupe structural",
+      "scan": "d'un torseur sous G … muni d'une section de Q/F",
+      "tex": "d'un torseur sous $G$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "d'un torseur $Q$ sous $G$",
+      "note": "The name Q of the G-torsor is omitted before its quotient Q/F is used. The TeX keeps this printed omission."
+    },
+    {
+      "page": 108,
+      "where": "« Ceci posé, avec les notations de 6.6 (ii) »",
+      "scan": "comme l'image de \\eta de \\xi dans H^1(Y,h^{\\ast}(G))",
+      "tex": "comme l'image de $\\eta$ dans $H^1(Y,h^{\\ast}(G))$",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "comme l'image de $\\eta$ dans",
+        "new": "comme l'image de $\\eta$ de $\\xi$ dans"
+      },
+      "note": "The printed words and symbol « de ξ » are missing. This edit preserves the earlier printed « de », whose error is recorded separately."
+    },
+    {
+      "page": 108,
+      "where": "Même phrase, « l'image de η de ξ »",
+      "scan": "l'image de \\eta de \\xi",
+      "tex": "l'image de $\\eta$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "l'image $\\eta$ de $\\xi$",
+      "note": "The first « de » is superfluous: η names the image of ξ. The TeX keeps this printed « de », while separately omitting « de ξ »."
+    },
+    {
+      "page": 108,
+      "where": "Fin de la démonstration de 6.6 (ii), groupe contenant l'image de ξ",
+      "scan": "H^1(Y,h\\xi(F))",
+      "tex": "$H^1(Y,h\\xi (F))$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^1(Y,h^{\\ast}(F))",
+      "note": "The scan has ξ after h instead of the inverse-image star. The TeX keeps this printed reading."
+    },
+    {
+      "page": 108,
+      "where": "Application de 6.2 dans la démonstration de 6.5 (iii), catégorie C'",
+      "scan": "C' la catégorie des faisceaux de groupes abéliens",
+      "tex": "$C'$ la catégorie des faisceaux de\ngroupes abéliens",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$C'$ la catégorie des groupes abéliens",
+      "note": "The cohomology functors here take values in abelian groups, as in the application on p. 106. The extra words « faisceaux de » are a printed slip retained by the TeX."
+    },
+    {
+      "page": 109,
+      "where": "Choix des diviseurs premiers de m",
+      "scan": "de m sont ∈ L",
+      "tex": "de $m$ soit $\\in \\LL$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "de $m$ soit $\\in \\LL$",
+        "new": "de $m$ sont $\\in \\LL$"
+      },
+      "note": "The print reads « sont », not « soit »."
+    },
+    {
+      "page": 109,
+      "where": "Références après « grâce à IX 1.2 (v) »",
+      "scan": "IX 1.2 (v), 1.6 (iii)",
+      "tex": "\\hyperrefext[IX][IX.prop1.2]{1.2} (v), \\hyperrefext[IX][IX.prop1.6]{1.6} (iii)",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hyperrefext[IX][IX.prop1.6]{1.6}",
+        "new": "1.6"
+      },
+      "note": "The second macro adds another exposé numeral IX; the print supplies IX only before 1.2."
+    },
+    {
+      "page": 109,
+      "where": "Dernier paragraphe, notation des faisceaux constants",
+      "scan": "G_{X'_i}",
+      "tex": "$G_{X'_i}$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "G_{i X'_i}",
+      "note": "The group index i used in the product at the top of p. 110 is missing here. The TeX keeps the printed omission."
+    },
+    {
+      "page": 110,
+      "where": "« remplacer F par le produit des … »",
+      "scan": "p_{i_{\\ast}}(G_{i X'_i})",
+      "tex": "$p_{i^{\\ast}}(G_{i X'_i})$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "p_{i^{\\ast}}",
+        "new": "p_{i_{\\ast}}"
+      },
+      "note": "The printed star denotes direct image and is a subscript, not a superscript."
+    },
+    {
+      "page": 110,
+      "where": "« de la nullité des … (i ≥ 1) pour un morphisme fini »",
+      "scan": "R^{i}p_{\\ast}",
+      "tex": "$R^{i}_{p_{\\ast}}$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "R^{i}_{p_{\\ast}}",
+        "new": "R^{i}p_{\\ast}"
+      },
+      "note": "In the print, p_{\\ast} follows R^{i} on the baseline; it is not a subscript of R."
+    }
+  ],
+  "coordinator": "106: 1/2; 107: 0/0; 108: 1/4; 109: 2/1; 110: 2/0 (normal/misprint)."
+}

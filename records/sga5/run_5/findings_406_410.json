@@ -1,0 +1,289 @@
+[
+ {
+  "page": 406,
+  "where": "top of the page: heading 'Références' and the start of [1]",
+  "scan": "p. 406 begins (under the folio) with the underlined heading 'Références', then '[1] M. Raynaud   Caractéristique d'Euler-Poincaré ...'; p. 405 ends with 'd'où la formule (7.13).' and blank paper (b401_405/page_405_s3.png, s4.png)",
+  "tex": "'\\section*{Références}', a blank line, '\\begin{enumerate}' and '\\item[{[1]}] M.' are the last lines of page_405.tex (s5.tex diplomatic lines 13765-13768, current 13761-13764); the folio-406 marker (diplomatic 13769, current 13765) stands between 'M.' and 'Raynaud'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 406 really begins at '\\section*{Références}'. Exact fix: python -I move_marker.py 5 406 '\\section*{Références}' --before (simulated in memory on both layers: the marker moves back 57 characters to its own line between the blank line after 'd'où la formule (7.13).' and '\\section*{Références}'; the anchor occurs once in s5.tex, so a second run prints 'anchor not found' and changes nothing). Text not moved; the heading, '\\begin{enumerate}' and '[1] M.' agree with the print (the underlined title as \\section* is the accepted setting; the print has no full stop after it)."
+ },
+ {
+  "page": 406,
+  "where": "[1], between the author and the title",
+  "scan": "M. Raynaud in the left column, the title 'Caractéristique d'Euler-Poincaré ...' in the right column; no comma between them",
+  "tex": "Raynaud, Caractéristique",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Raynaud, Caractéristique",
+   "new": "Raynaud Caractéristique"
+  },
+  "note": "The print sets author and title in two columns with no comma (as the bibliography of p. 350 and 'VERDIER, J-L.' on p. 72); the TeX adds one."
+ },
+ {
+  "page": 406,
+  "where": "[2], between the author and the title",
+  "scan": "A. Grothendieck in the left column, 'Sur quelques points ...' in the right column; no comma",
+  "tex": "Grothendieck, Sur",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Grothendieck, Sur",
+   "new": "Grothendieck Sur"
+  },
+  "note": "As [1]."
+ },
+ {
+  "page": 406,
+  "where": "[2], the journal: 'Toh. Math. Journal'",
+  "scan": "'... homologique, Toh.' at the end of the line, 'Math. Journal, vol. 9(1957)' on the next (checked at 1.2x)",
+  "tex": "Tohoku Math. Journal",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Tohoku Math.",
+   "new": "Toh. Math."
+  },
+  "note": "Abbreviation written out by the transcription."
+ },
+ {
+  "page": 406,
+  "where": "[2], pages 'p.119 - 221'",
+  "scan": "a typewriter hyphen between spaces: 'p.119 - 221,'",
+  "tex": "p. 119--221",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "119--221",
+   "new": "119 - 221"
+  },
+  "note": "En dash for the print's hyphen (as 137-154 on p. 350 and 491-526 on p. 54)."
+ },
+ {
+  "page": 406,
+  "where": "[3], author 'Serre,J-P.'",
+  "scan": "'Serre,J-P.' (no full stop after J), then the title in the right column with no comma (checked at 1.6x)",
+  "tex": "Serre, J.-P., Corps",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Serre, J.-P., Corps",
+   "new": "Serre, J-P. Corps"
+  },
+  "note": "The initial's full stop and the column comma in one edit (adjacent); as 'Serre, J-P.' on p. 54. The comma after Serre is printed (no space after it: spacing, not changed)."
+ },
+ {
+  "page": 406,
+  "where": "[3], 'Act. Sci. Ind, 1296(1962)'",
+  "scan": "'Ind,' with no full stop after Ind (clear at 1.6x; 'Act.' and 'Sci.' have theirs)",
+  "tex": "Act. Sci. Ind., 1296",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Ind., 1296",
+   "new": "Ind, 1296"
+  },
+  "corrected": "Ind., 1296",
+  "note": "The TeX silently supplies the abbreviation's full stop; the fix restores the printed reading (diplomatic layer only), as 'Math,' and 'vol 63' on p. 54."
+ },
+ {
+  "page": 406,
+  "where": "[3], 'Hermann Paris.'",
+  "scan": "'Hermann' ends the line, 'Paris.' begins the next; no comma",
+  "tex": "Hermann, Paris.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Hermann, Paris.",
+   "new": "Hermann Paris."
+  },
+  "note": "The TeX adds a comma (as 'n° 20 / Springer' on p. 54)."
+ },
+ {
+  "page": 406,
+  "where": "[4], author 'Serre,J-P.'",
+  "scan": "'Serre,J-P.' (no full stop after J), then the title in the right column with no comma",
+  "tex": "Serre, J.-P., Cohomologie",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Serre, J.-P., Cohomologie",
+   "new": "Serre, J-P. Cohomologie"
+  },
+  "note": "As [3]."
+ },
+ {
+  "page": 406,
+  "where": "[5], author 'Verdier, J-L.'",
+  "scan": "'Verdier, J-L.' (no full stop after J), then the title in the right column with no comma",
+  "tex": "Verdier, J.-L., Catégories",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Verdier, J.-L., Catégories",
+   "new": "Verdier, J-L. Catégories"
+  },
+  "note": "As [3] (and 'VERDIER, J-L.' on p. 72)."
+ },
+ {
+  "page": 407,
+  "where": "top of the page: the heading 'Exposé XII'",
+  "scan": "p. 407 (title page, no folio printed) begins with 'Exposé XII' at the left, then the title FORMULES DE NIELSEN-WECKEN ET DE LEFSCHETZ EN GEOMETRIE ALGEBRIQUE, 'par A. Grothendieck', 'rédigé par I. BUCUR'; p. 406 ends with '[5] ... dans SGA 4^{1/2}).'",
+  "tex": "'\\section*{Exposé XII}', a blank line, '\\begin{center}' and '\\Large\\bf' are the last lines of page_406.tex (s5.tex diplomatic lines 13777-13780, current 13773-13776); the folio-407 marker stands inside the center block of the title",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 407 really begins at '\\section*{Exposé XII}'. Exact fix: python -I move_marker.py 5 407 '\\section*{Exposé XII}' --before (simulated in memory on both layers: the marker moves back 48 characters to its own line between the blank line after '\\end{enumerate}' and '\\section*{Exposé XII}', and the whole title block is on p. 407; the anchor occurs once in s5.tex, a second run prints 'anchor not found'). Text not moved; the heading and the title block agree with the print (the bold title is the accepted setting)."
+ },
+ {
+  "page": 408,
+  "where": "top of the page: paragraph number '1.'",
+  "scan": "p. 408 begins with '1. Soient X' un schéma propre ...'; p. 407 (title page) ends with 'rédigé par I. BUCUR'",
+  "tex": "'\\section*{1.}' is the last line of page_407.tex (s5.tex diplomatic line 13793, current 13789); the folio-408 marker follows it, before 'Soient'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 408 really begins at '\\section*{1.}'. Exact fix: python -I move_marker.py 5 408 '\\section*{1.}' --before (simulated in memory on both layers: the marker moves back 14 characters to its own line between '\\bigskip' plus the blank line and '\\section*{1.}'; the anchor occurs once in s5.tex, a second run prints 'anchor not found'). Text not moved. The number run into the text is not reported (rule)."
+ },
+ {
+  "page": 408,
+  "where": "end of the paragraph 'Désignons par ...': 'et plus précisément un complexe parfait (VIII,7) de Λ_n[G] - modules (IX,2).'",
+  "scan": "'... est un complexe de Λ_n[G] - modules et plus précisément un complexe parfait (VIII,7) de Λ_n[G] - modules (IX,2).' (the second accent of 'précisément' is a hand-written correction)",
+  "tex": "the editorial comment '% [faithful] le livre imprime « Par conséquence » ... brûlé)' stands right after '$\\La_n[G]$-modules' on the same line, so the printed words after it ('et plus précisément ... (IX, 2).') are inside the comment and are lost in the output, which reads '... complexe de Λ_n[G]-modules' and ends the paragraph without its full stop",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "-modules% [faithful] le livre imprime « Par conséquence » (archaïsme), restauré depuis « conséquent » (600dpi p408, FIX #56, 2026-07-03 ; #55 = batch underline reverté, brûlé) et plus",
+   "new": "-modules\n% [faithful] le livre imprime « Par conséquence » (archaïsme), restauré depuis « conséquent » (600dpi p408, FIX #56, 2026-07-03 ; #55 = batch underline reverté, brûlé)\net plus"
+  },
+  "note": "The edit keeps the comment but puts it on a line of its own, so that '-modules', the comment line and 'et plus précisément ...' join with one space in the output; one edit (two separate edits would print 'moduleset' if only the second were applied). Both layers have the comment (current line 13797). 'Par conséquence' is the printed wording, as the comment says."
+ },
+ {
+  "page": 408,
+  "where": "Exposé XII: the complex H_{n,U',X'} and its dual (pp. 408 and 410, every occurrence)",
+  "scan": "a script capital H (curved strokes, a loop at the foot of the left stem; not the plain typed H of 'Hom' in the display of p. 408): ℋ_{n,U',X'}, ℋ^∨_{n,U',X'}, and in the subscripts f'_{ℋ_{n,U',X'}}, g_{ℋ_{n,U',X'}}, f'_{ℋ_{n,U'}} of p. 410",
+  "tex": "plain H: '$H_{n,U',X'} = \\R\\Gamma_{X'}(\\La_{n,U',X'})$' and 'son dual $H_{n,U',X'}^\\vee$' (p. 408), the display 'H_{n,U',X'}^\\vee = \\R\\Gamma_{X'}(...)^\\vee' (p. 408), '(1.4) g_{H_{n,U',X'}} \\circ f'_{H_{n,U',X'}}' (p. 410)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the TeX in Exposé XII, not itemized: one decision for the exposé (for example \\mathcal{H}, as the file writes the print's script F of ℱ_! on p. 410 as \\mathcal{F}). The diplomatic s5.tex has 37 such H_{n,U'...}/H_{m,U'...} in Exposé XII (lines 13777-14826); pages after 410 not checked here."
+ },
+ {
+  "page": 408,
+  "where": "'... un endomorphisme φ : G → G du groupe G tel que les deux conditions suivantes soient remplies :'",
+  "scan": "tel que (singular)",
+  "tex": "du groupe $G$ tel que les deux conditions",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "tels que",
+  "note": "Agreement slip of the redaction: 'tel' refers to the two endomorphisms f' and φ. The TeX keeps the printed reading (both layers). The same 'tel que' for 'tels que' on pp. 409 and 410 (three times); list only if the corrected edition fixes grammar slips (as 'troisième terme', p. 381)."
+ },
+ {
+  "page": 409,
+  "where": "diagram (1.3), label of the left vertical arrow",
+  "scan": "f'_{Λ_{n,U',X'}} stands to the right of the arrow, as the labels f'_{Λ_{n,X'}} and f'_{Λ_{n,Y'}} of the other two vertical arrows",
+  "tex": "\\arrow[d, \"f'_{\\La_{n,U',X'}}\"'] (the swap mark sets the label to the left)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[d, \"f'_{\\La_{n,U',X'}}\"']",
+   "new": "\\arrow[d, \"f'_{\\La_{n,U',X'}}\"]"
+  },
+  "note": "tikz-cd sets an unswapped label to the right of a downward arrow (as on p. 86). The other two labels and the full stop after the lower row are right."
+ },
+ {
+  "page": 409,
+  "where": "'On obtient donc les homomorphismes de faisceaux : ... tel que le diagramme suivant ... soit commutatif :'",
+  "scan": "tel que (singular)",
+  "tex": "tel que le diagramme suivant",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "tels que",
+  "note": "Agreement slip ('les homomorphismes ... tels que'); the TeX keeps the printed reading (both layers). See p. 408."
+ },
+ {
+  "page": 410,
+  "where": "first display, second line: (f'_{H_{n,U'}})^∨",
+  "scan": "the inner subscript is 'n,U'' only (no X'; clear at 2x), while the left side and both ends of the arrow have n,U',X'",
+  "tex": "(f'_{H_{n,U'}})^\\vee",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(f'_{H_{n,U',X'}})^\\vee",
+  "note": "The definition is f'^\\vee_{H_{n,U',X'}} = (f'_{H_{n,U',X'}})^\\vee (line 1 defines f'_{H_{n,U',X'}}; line 4 has (g_{H_{n,U',X'}})^\\vee). The diplomatic TeX keeps the printed reading; the current layer already reads (f'_{H_{n,U',X'}})^\\vee."
+ },
+ {
+  "page": 410,
+  "where": "first display, third line (g_{H} = RΓ_{X'}(g_{Λ_{n,U',X'}}) : H -> H)",
+  "scan": "no comma at the end of the line (clean paper; lines 1, 2 and 4 end with a comma; checked at 1.5x)",
+  "tex": "H_{n,U',X'} \\longrightarrow H_{n,U',X'} \\quad , \\\\ (line 3)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(g_{\\La_{n,U',X'}}) : H_{n,U',X'} \\longrightarrow H_{n,U',X'} \\quad , \\\\",
+   "new": "(g_{\\La_{n,U',X'}}) : H_{n,U',X'} \\longrightarrow H_{n,U',X'} \\\\"
+  },
+  "note": "The TeX adds punctuation at the end of a display line."
+ },
+ {
+  "page": 410,
+  "where": "relation (1.5), last term",
+  "scan": "'∘ f'_{ℋ_{n,U',X'}} .': no ∨ on the last f' (clean paper where the ∨ stands on the other three terms; checked at 4x)",
+  "tex": "\\circ f'^\\vee_{H_{n,U',X'}} \\quad .",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\circ f'^\\vee",
+   "new": "\\circ f'"
+  },
+  "corrected": "\\circ f'^\\vee",
+  "note": "(1.5) is the dual of (1.4), so the last term is f'^\\vee_{H_{n,U',X'}} (the text below takes the trace of f'^\\vee). The TeX silently corrects (both layers); the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 410,
+  "where": "'en térmes d'invariants locaux'",
+  "scan": "térmes, with an acute accent on the first e (clear at 4x); 'termes que nous allons définir' in the same sentence has none",
+  "tex": "en térmes d'invariants",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "termes",
+  "note": "Typing error. The diplomatic TeX keeps the printed reading; the current layer already reads 'termes'."
+ },
+ {
+  "page": 410,
+  "where": "'... des homomorphismes de complexes de Λ_n-modules : [display] tel que les relations suivantes soient vraies :'",
+  "scan": "tel que (singular)",
+  "tex": "tel que les\nrelations suivantes",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "tels que",
+  "note": "Agreement slip ('des homomorphismes ... tels que'); the TeX keeps the printed reading (both layers). See p. 408."
+ },
+ {
+  "page": 410,
+  "where": "§2, 'Soient pour cela n,m deux entiers positifs tel que m ≥ n'",
+  "scan": "tel que (singular)",
+  "tex": "deux entiers positifs tel que $m \\geq n$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "tels que",
+  "note": "Agreement slip ('deux entiers positifs tels que'); the TeX keeps the printed reading (both layers). See p. 408."
+ },
+ {
+  "page": 410,
+  "where": "end of the page / folio-411 marker: the display α_{m,n} : Λ_m ⟶ Λ_n",
+  "scan": "p. 410 ends with 'tel que m ≥ n . Les homomorphismes d'anneaux :' and the footnote '(*) cf. III B 5.12 .'; p. 411 begins with the display 'α_{m,n} : Λ_m ⟶ Λ_n', then 'engendrent les homomorphismes ...' (b411_415/page_411_s1.png)",
+  "tex": "the display '\\[ \\alpha_{m,n} : \\La_m \\longrightarrow \\La_n \\]' ends page_410.tex (s5.tex diplomatic lines 13867-13869, current 13863-13865); the folio-411 marker follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 411 really begins at the '\\[' of that display. Exact fix: python -I move_marker.py 5 411 '\\[' --before (simulated in memory on both layers: the marker moves back 49 characters to its own line between '... Les homomorphismes d'anneaux :' and '\\['). Run it once only: the anchor is the last '\\[' above the marker, and a second run would move the marker 555 characters further back, to the trace display of p. 410. Batch 411-415 may report the same move. Text not moved; the display agrees with the print of p. 411."
+ }
+]

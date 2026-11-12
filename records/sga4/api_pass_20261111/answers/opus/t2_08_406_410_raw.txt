@@ -1,0 +1,10 @@
+```json
+{"findings": [
+{"page": "406", "where": "fin du premier paragraphe, « d'où la forme ... pour le terme initial »", "scan": "d'où la forme annoncée pour le terme initial.", "tex": "d'où la forme\nannoncés pour le terme initial.", "kind": "word", "confidence": "high", "fix": {"old": "annoncés pour le terme initial", "new": "annoncée pour le terme initial"}, "note": "The print has « annoncée » (agreeing with « la forme »); the TeX has « annoncés »."},
+{"page": "407", "where": "« une clôture séparable k(y)=k(ȳ) de k(y) »", "scan": "k(y) = k(ȳ)", "tex": "$k(y)=k(\\bar{y})$", "kind": "misprint_in_print", "confidence": "medium", "fix": null, "corrected": "$\\overline{k(y)}=k(\\bar{y})$", "note": "The print shows no bar on the first k(y), though the separable closure is meant. The TeX keeps the printed reading."},
+{"page": "407", "where": "« où X_0 = ... ≃ Spec(k(ȳ)) »", "scan": "X_o = X ×_{Y_o} Y", "tex": "$X_{0}=\\fprod{X}{Y}{Y_{0}}$", "kind": "misprint_in_print", "confidence": "medium", "fix": null, "corrected": "$X_{0}=\\fprod{X}{Y_{0}}{Y}$", "note": "The print has X ×_{Y_0} Y; the correct fibre product is X ×_Y Y_0. By the \\fprod convention used on these pages (\\fprod{X}{E}{\\pi} = X ×_π E), the TeX keeps the printed reading."},
+{"page": "408", "where": "« pour deux faisceaux F, G sur Y »", "scan": "que pour deux faisceaux F , G sur Y", "tex": "deux faisceaux $F$, $G$ sur $Y$", "kind": "misprint_in_print", "confidence": "medium", "fix": null, "corrected": "deux faisceaux $F$, $G$ sur $X$", "note": "The base here is X, so « sur Y » is a misprint. The TeX keeps it."},
+{"page": "409", "where": "diagramme, ligne 2, colonne 3", "scan": "S(F_1) → S(F'_1) ⇉ S(F\")", "tex": "S(F''_{1})", "kind": "misprint_in_print", "confidence": "high", "fix": null, "corrected": "S(F''_{1})", "note": "The print has S(F'') in the middle row, right column, without the index 1. The TeX silently corrects it to S(F''_1)."}
+],
+"coordinator": "406: 1/0; 407: 0/2; 408: 0/1; 409: 0/1; 410: 0/0"}
+```

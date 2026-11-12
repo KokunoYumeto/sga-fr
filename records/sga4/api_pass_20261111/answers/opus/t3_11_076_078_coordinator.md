@@ -1,0 +1,1 @@
+p76: 2/0; p77: 0/2 (+1 low); p78: 3/3. Convention: in this file the \sisi arguments appear swapped (the first argument holds the correction, the second the print's reading): \sisi{n\ZZ}{n} (p76, print Z/n), \sisi{\widehat}{}{\pi}_1 (p78, print without hat), GRAUERT H\sisi{.}{} (p78, print 'H'). Check the remaining \sisi of Exposé XI.

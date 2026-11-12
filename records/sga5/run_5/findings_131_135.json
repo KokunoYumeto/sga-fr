@@ -1,0 +1,452 @@
+[
+ {
+  "page": 131,
+  "where": "Théorème 6.10, end of the statement (first line of the page): 'désignant les projections). Alors, avec les notations de 6.8, 6.9.3, on a'",
+  "scan": "underlined: 'désignant les projections' (the underline stops before the parenthesis), 'Alors', 'avec les notations de', 'on a'; '6.8, 6.9.3,' not underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "désignant les projections). Alors, avec les notations de 6.8, 6.9.3, on a",
+   "new": "\\emph{désignant les projections}). \\emph{Alors}, \\emph{avec les notations de} 6.8, 6.9.3, \\emph{on a}"
+  },
+  "note": "Statement text, underlined in the print; the Exposé III statement environment sets it upright, so the underline is written \\emph (the file's command for the print's underline), as in the statement fixes of pp. 79-110. The statement begins on p. 130."
+ },
+ {
+  "page": 131,
+  "where": "label of Remarques 6.11",
+  "scan": "'Remarques 6.11. - a) On vérifie': a full stop after 6.11, then the dash",
+  "tex": "\\begin{statement}{Remarques 6.11}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{Remarques 6.11}",
+   "new": "{Remarques 6.11. -}"
+  },
+  "note": "Exposé III label form (the statement environment no longer adds a full stop). This label prints both the full stop and the dash."
+ },
+ {
+  "page": 131,
+  "where": "6.11 a), end of the first formula 'f_*L -(1)-> (ha)_*a_1^*L -> ... -(2)-> g_*M'",
+  "scan": "nothing after g_*M (clean paper to the right)",
+  "tex": "\\xrightarrow{(2)}g_*M,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{(2)}g_*M,",
+   "new": "\\xrightarrow{(2)}g_*M"
+  },
+  "note": "The TeX adds the comma."
+ },
+ {
+  "page": 131,
+  "where": "6.11 a), the second formula '(resp. g_*M -(1)-> ... -(2)-> f_*L) , où (1) est la flèche ...'",
+  "scan": "typed from the left margin, and the sentence runs on in the same line: 'f_*L)    , où (1) est' (next line 'la flèche de fonctorialité usuelle ...'); the first formula of a) is indented alone on its line",
+  "tex": "a display \\[\\text{(resp. }g_*M ... f_*L\\text{)},\\] followed by 'où (1) est' on a new line",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\[\n\\text{(resp. }g_*M\\xrightarrow{(1)}(hb)_*b_2^*M\\xrightarrow{(hb)_*v}(hb)_*b_1^*L=f_*b_{1*}b_1^*L\\xrightarrow{(2)}f_*L\\text{)},\n\\]\n",
+   "new": "(resp. $g_*M\\xrightarrow{(1)}(hb)_*b_2^*M\\xrightarrow{(hb)_*v}(hb)_*b_1^*L=f_*b_{1*}b_1^*L\\xrightarrow{(2)}f_*L$),\n"
+  },
+  "note": "Display against inline formula, as the logged fixes of pp. 44 and 122-124: the print runs the text on after the formula. Medium only because the formula fills its line; the first formula stays a display. One edit; no overlap with the comma edit above."
+ },
+ {
+  "page": 131,
+  "where": "(6.11.1), the first product",
+  "scan": "'(d_{Z/Y}s_i/s_i)': in parentheses, with a slash",
+  "tex": "\\frac{d_{Z/Y}s_i}{s_i}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\frac{d_{Z/Y}s_i}{s_i}",
+   "new": "(d_{Z/Y}s_i/s_i)"
+  },
+  "note": ""
+ },
+ {
+  "page": 131,
+  "where": "(6.11.1), the second product",
+  "scan": "'(d_{Z/X}t_j/t_j)': in parentheses, with a slash",
+  "tex": "\\frac{d_{Z/X}t_j}{t_j}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\frac{d_{Z/X}t_j}{t_j}",
+   "new": "(d_{Z/X}t_j/t_j)"
+  },
+  "note": "The print's second closing parenthesis after t_j closes Res_z( (the TeX's \\right))."
+ },
+ {
+  "page": 131,
+  "where": "end of display (6.11.1)",
+  "scan": "nothing after '(d_{Z/X}t_j/t_j))'",
+  "tex": "\\right),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\right),",
+   "new": "\\right)"
+  },
+  "note": "The TeX adds the comma."
+ },
+ {
+  "page": 131,
+  "where": "label of Corollaire 6.12",
+  "scan": "'Corollaire 6.12 - (formule de Woods-Hole [1]).'",
+  "tex": "\\begin{statement}{Corollaire 6.12}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{Corollaire 6.12}",
+   "new": "{Corollaire 6.12 -}"
+  },
+  "note": "Exposé III label form (the statement environment no longer adds a full stop)."
+ },
+ {
+  "page": 131,
+  "where": "Corollaire 6.12, from '(formule de Woods-Hole [1])' to '(i.e. un complexe parfait sur X'",
+  "scan": "underlined: '(formule de Woods-Hole' (from the opening parenthesis), 'On suppose que', 'est le spectre d'un corps' (over the line end), 'Soient', 'un', 'schéma propre et lisse' (not 'S-'), 'un', 'endomorphisme de' (not 'S-'), 'un objet de', 'i.e. un complexe parfait sur' (the parenthesis before it not underlined); '[1]).', S, X, F, L, D(X)_parf not underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(formule de Woods-Hole [1]). On suppose que $S$ est le spectre d'un corps. Soient $X$ un $S$-schéma propre et lisse, $F$ un $S$-endomorphisme de $X$, $L$ un objet de $D(X)_{\\parf}$ (i.e. un complexe parfait sur $X$",
+   "new": "\\emph{(formule de Woods-Hole} [1]). \\emph{On suppose que} $S$ \\emph{est le spectre d'un corps}. \\emph{Soient} $X$ \\emph{un} $S$-\\emph{schéma propre et lisse}, $F$ \\emph{un} $S$-\\emph{endomorphisme de} $X$, $L$ \\emph{un objet de} $D(X)_{\\parf}$ (\\emph{i.e. un complexe parfait sur} $X$"
+  },
+  "note": "Statement text, underlined in the print; the Exposé III statement environment sets it upright, so the underline is written \\emph (the file's command for the print's underline), as in the statement fixes of pp. 79-110. Ends before the ')' after X, where the comma edit below begins (no overlap)."
+ },
+ {
+  "page": 131,
+  "where": "Corollaire 6.12, '(i.e. un complexe parfait sur X ) u ∈ Hom(F*L,L) . On suppose'",
+  "scan": "no comma between the closing parenthesis and u: 'X )  u ∈ Hom(F^*L,L)  .'",
+  "tex": "$X$), $u\\in\\Hom(F^*L,L)$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "), $u\\in\\Hom(F^*L,L)$",
+   "new": ") $u\\in\\Hom(F^*L,L)$"
+  },
+  "note": "The TeX adds the comma."
+ },
+ {
+  "page": 131,
+  "where": "Corollaire 6.12, from 'On suppose que le schéma des points fixes' to 'Alors on a'",
+  "scan": "underlined: 'On suppose que le schéma des points fixes', 'est fini et formé de points transversaux (i.e. où le graphe de' (over the line end, from the parenthesis), 'coupe transversalement la diagonale', 'Alors on a'; X^F, F and ').' not underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "On suppose que le schéma des points fixes $X^F$ est fini et formé de points transversaux (i.e. où le graphe de $F$ coupe transversalement la diagonale). Alors on a",
+   "new": "\\emph{On suppose que le schéma des points fixes} $X^F$ \\emph{est fini et formé de points transversaux (i.e. où le graphe de} $F$ \\emph{coupe transversalement la diagonale}). \\emph{Alors on a}"
+  },
+  "note": "Statement text, underlined in the print; the Exposé III statement environment sets it upright, so the underline is written \\emph (the file's command for the print's underline), as in the statement fixes of pp. 79-110."
+ },
+ {
+  "page": 131,
+  "where": "Woods-Hole formula (Corollaire 6.12), left-hand side",
+  "scan": "a bare typed Σ: 'Σ(-1)^i Tr((F,u),H^i(X,L))'",
+  "tex": "\\sum_i(-1)^i",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sum_i(-1)^i",
+   "new": "\\sum(-1)^i"
+  },
+  "note": "The TeX adds the summation index."
+ },
+ {
+  "page": 131,
+  "where": "Woods-Hole formula, right-hand side",
+  "scan": "'Tr(u_x)/det(1-dF_x)': one line, with a slash",
+  "tex": "\\frac{\\operatorname{Tr}(u_x)}{\\det(1-dF_x)}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\frac{\\operatorname{Tr}(u_x)}{\\det(1-dF_x)}",
+   "new": "\\operatorname{Tr}(u_x)/\\det(1-dF_x)"
+  },
+  "note": ""
+ },
+ {
+  "page": 131,
+  "where": "Corollaire 6.12 after the formula: 'où (F,u) est l'endomorphisme de H^i(X,L) composé de H^i(X,L) -> ...' (last line of p. 131)",
+  "scan": "underlined: 'où', 'est l'endomorphisme de', 'composé de'; the formulas not underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où $(F,u)$ est l'endomorphisme de $H^i(X,L)$ composé de $H^i(X,L)",
+   "new": "\\emph{où} $(F,u)$ \\emph{est l'endomorphisme de} $H^i(X,L)$ \\emph{composé de} $H^i(X,L)"
+  },
+  "note": "Statement text, underlined in the print; the Exposé III statement environment sets it upright, so the underline is written \\emph (the file's command for the print's underline), as in the statement fixes of pp. 79-110."
+ },
+ {
+  "page": 131,
+  "where": "Corollaire 6.12: '(image inverse) et de H^i(X,u) , Tr(u_x) désigne la' (printed at the top of p. 132; in page_131.tex as the files stand)",
+  "scan": "underlined: '(image inverse) et de' (from the opening parenthesis), 'désigne la valeur en' (continued in page_132.tex); H^i(X,u) and Tr(u_x) not underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(image inverse) et de $H^i(X,u)$, $\\operatorname{Tr}(u_x)$ désigne la",
+   "new": "\\emph{(image inverse) et de} $H^i(X,u)$, $\\operatorname{Tr}(u_x)$ \\emph{désigne la}"
+  },
+  "note": "Statement text, underlined in the print; the Exposé III statement environment sets it upright, so the underline is written \\emph (the file's command for the print's underline), as in the statement fixes of pp. 79-110. Filed under p. 131 (where the TeX stands): apply before the folio-132 marker move, then use the anchor given in the p. 132 marker finding."
+ },
+ {
+  "page": 131,
+  "where": "(6.10.1), cℓ_{Z/Y}(A) cℓ_{Z/X}(B)",
+  "scan": "cℓ: c and a script ℓ",
+  "tex": "\\cl_{Z/Y}(A)\\cl_{Z/X}(B) (\\cl = \\operatorname{cl})",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription already reported on pp. 96 and 110 (\\cl throughout Exposé III); no edit here, one decision for the volume."
+ },
+ {
+  "page": 132,
+  "where": "top of the page",
+  "scan": "p. 132 begins '(image inverse) et de H^i(X,u) , Tr(u_x) désigne la valeur en x de l'endomorphisme'; p. 131 ends 'composé de H^i(X,L) -> H^i(X,F*L)'",
+  "tex": "'(image inverse) et de $H^i(X,u)$, $\\operatorname{Tr}(u_x)$ désigne la' ends s5.tex line 4233, the last line of page_131.tex; the folio-132 marker (line 4234) follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 132 really begins at '(image inverse)' in s5.tex line 4233 at 20:13 (after '$H^i(X,L)\\to H^i(X,F^*L)$ '). Exact fix, after this file's fixes are applied (the p. 131 underline fix puts \\emph{ before the parenthesis): python -I move_marker.py 5 132 '\\emph{(image inverse)' --before; on the files as they stand: python -I move_marker.py 5 132 '(image inverse)' --before (single quotes; simulated in memory on both layers: the marker then splits line 4233 after '$H^i(X,L)\\to H^i(X,F^*L)$ '). The moved words agree with the print apart from the underline fix filed under p. 131."
+ },
+ {
+  "page": 132,
+  "where": "Corollaire 6.12, 'valeur en x de l'endomorphisme induit par u sur la fibre de L en x , et det(1-dF_x) la valeur en x du déterminant de l'application'",
+  "scan": "underlined: 'valeur en' (continuing 'désigne la'), 'de l'endomorphisme induit par' (over the line end), 'sur la fibre de', 'en', 'et', 'la valeur en', 'du dé-terminant de l'application'; x, u, L, det(1-dF_x) and the commas not underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "valeur en $x$ de l'endomorphisme induit par $u$ sur la fibre de $L$ en $x$, et $\\det(1-dF_x)$ la valeur en $x$ du déterminant de l'application",
+   "new": "\\emph{valeur en} $x$ \\emph{de l'endomorphisme induit par} $u$ \\emph{sur la fibre de} $L$ \\emph{en} $x$, \\emph{et} $\\det(1-dF_x)$ \\emph{la valeur en} $x$ \\emph{du déterminant de l'application}"
+  },
+  "note": "Statement text, underlined in the print; the Exposé III statement environment sets it upright, so the underline is written \\emph (the file's command for the print's underline), as in the statement fixes of pp. 79-110."
+ },
+ {
+  "page": 132,
+  "where": "Corollaire 6.12, '(1 - application induite par F sur Ω^1_{X,x})'",
+  "scan": "underlined: 'application induite par' and 'sur'",
+  "tex": "\\text{application induite par }F\\text{ sur }",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{application induite par }F\\text{ sur }",
+   "new": "\\text{\\emph{application induite par} }F\\text{ \\emph{sur} }"
+  },
+  "note": "Statement text, underlined in the print; the Exposé III statement environment sets it upright, so the underline is written \\emph (the file's command for the print's underline), as in the statement fixes of pp. 79-110. Kept inside the TeX's \\text{}."
+ },
+ {
+  "page": 132,
+  "where": "proof label 'Démonstration.'",
+  "scan": "the underline covers 'Démonstration' only; the full stop after it is not underlined",
+  "tex": "\\emph{Démonstration.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Démonstration.}",
+   "new": "\\emph{Démonstration}."
+  },
+  "note": "As the global '\\emph{Preuve} :' form (punctuation outside the underline)."
+ },
+ {
+  "page": 132,
+  "where": "'(définissant un morphisme étale dans A^n_s )'",
+  "scan": "the subscript of the double-struck A^n is a small s (compare the capital S of 'X x_S X' two lines above)",
+  "tex": "\\mathbb A_S^n (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathbb A_S^n",
+   "new": "\\mathbb A_s^n"
+  },
+  "corrected": "\\mathbb A_S^n",
+  "note": "The base is S (X is an S-scheme; no s is defined). The TeX silently corrects; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 132,
+  "where": "'Notons qu'au numérateur on peut remplacer dy_i par dy_i - dF_i = dy_i - Σ (dF_i/dx_j)dx_j . Appliquant alors la formule ([8] III 9 R3)'",
+  "scan": "the formula is typed from the left margin, not indented, and the sentence runs on in its line: '... (dF_i/dx_j)dx_j   . Appliquant alors la formule ([8] III 9'",
+  "tex": "a display \\[dy_i-dF_i=dy_i-\\sum_{1\\le j\\le n}(dF_i/dx_j)dx_j.\\] before 'Appliquant'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "par\n\\[\ndy_i-dF_i=dy_i-\\sum_{1\\le j\\le n}(dF_i/dx_j)dx_j.\n\\]\nAppliquant",
+   "new": "par $dy_i-dF_i=dy_i-\\sum_{1\\le j\\le n}(dF_i/dx_j)dx_j$. Appliquant"
+  },
+  "note": "Display against inline formula, as the logged fixes of pp. 44 and 122-124 (the full stop printed after the formula is kept, outside it). No overlap with the misprint edit of the same sentence."
+ },
+ {
+  "page": 132,
+  "where": "'à la situation (B ↪ Z -> S , (s_1,...,s_p) = (y_1 - F_1,...,y_n - F_n) ,'",
+  "scan": "no closing parenthesis after S: 'S   , (s_1'; the parenthesis opened before B is never closed",
+  "tex": "$(B\\hookrightarrow Z\\to S)$ (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$(B\\hookrightarrow Z\\to S)$",
+   "new": "$(B\\hookrightarrow Z\\to S$"
+  },
+  "corrected": "$(B\\hookrightarrow Z\\to S)$",
+  "note": "The TeX silently closes the parenthesis after S; the fix restores the printed reading (diplomatic layer only). The corrected reading is the TeX's."
+ },
+ {
+  "page": 133,
+  "where": "label of Remarque 6.12.1",
+  "scan": "'Remarque 6.12.1 - Si X^F est supposé seulement fini'",
+  "tex": "\\begin{statement}{Remarque 6.12.1}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{Remarque 6.12.1}",
+   "new": "{Remarque 6.12.1 -}"
+  },
+  "note": "Exposé III label form (the statement environment no longer adds a full stop)."
+ },
+ {
+  "page": 133,
+  "where": "Remarque 6.12.1, display, left-hand side",
+  "scan": "a bare typed Σ: 'Σ(-1)^i Tr((F,u),H^i(X,L))'",
+  "tex": "\\sum_i(-1)^i",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "l'on a\n\\[\n\\sum_i",
+   "new": "l'on a\n\\[\n\\sum"
+  },
+  "note": "The TeX adds the summation index (the same left-hand side recurs in 6.13.1, hence the longer old)."
+ },
+ {
+  "page": 133,
+  "where": "(6.13.1), left-hand side",
+  "scan": "a bare typed Σ",
+  "tex": "\\sum_i(-1)^i",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tag{6.13.1}\n\\sum_i",
+   "new": "\\tag{6.13.1}\n\\sum"
+  },
+  "note": "The TeX adds the summation index."
+ },
+ {
+  "page": 133,
+  "where": "(6.13.2), left-hand side",
+  "scan": "a bare typed Σ: 'Σ(-1)^i Tr(F,H^i(X,O_X))'",
+  "tex": "\\sum_i(-1)^i",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tag{6.13.2}\n\\sum_i",
+   "new": "\\tag{6.13.2}\n\\sum"
+  },
+  "note": "The TeX adds the summation index."
+ },
+ {
+  "page": 133,
+  "where": "'sous la forme Σ(-1)^i Tr(F,H^i(X,F_p))'",
+  "scan": "a bare typed Σ",
+  "tex": "$\\sum_i(-1)^i\\operatorname{Tr}(F,H^i(X,\\mathbb F_p))$",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "forme $\\sum_i",
+   "new": "forme $\\sum"
+  },
+  "note": "The TeX adds the summation index."
+ },
+ {
+  "page": 134,
+  "where": "label of Théorème 6.13.3",
+  "scan": "'Théorème 6.13. 3 (Deligne) - Soient' (a stray space after the second dot)",
+  "tex": "\\begin{statement}{Théorème 6.13.3 (Deligne)}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{Théorème 6.13.3 (Deligne)}",
+   "new": "{Théorème 6.13.3 (Deligne) -}"
+  },
+  "note": "Exposé III label form (the statement environment no longer adds a full stop). 'Deligne' is underlined with the label word (the accepted label setting); the stray space is spacing."
+ },
+ {
+  "page": 134,
+  "where": "Théorème 6.13.3, first sentence 'Soient X_o un schéma ... l'endomorphisme de Frobenius de X/k .'",
+  "scan": "underlined: 'Soient', 'un schéma séparé et de type fini sur', 'le schéma déduit de', 'par extension des scalaires à une clôture algébrique', 'de', 'l'endomorphisme de Frobenius de'; X_o, F_q, X, k, F, X/k and the punctuation not underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $X_0$ un schéma séparé et de type fini sur $\\mathbb F_q$, $X$ le schéma déduit de $X_0$ par extension des scalaires à une clôture algébrique $k$ de $\\mathbb F_q$, $F$ l'endomorphisme de Frobenius de $X/k$.",
+   "new": "\\emph{Soient} $X_0$ \\emph{un schéma séparé et de type fini sur} $\\mathbb F_q$, $X$ \\emph{le schéma déduit de} $X_0$ \\emph{par extension des scalaires à une clôture algébrique} $k$ \\emph{de} $\\mathbb F_q$, $F$ \\emph{l'endomorphisme de Frobenius de} $X/k$."
+  },
+  "note": "Statement text, underlined in the print; the Exposé III statement environment sets it upright, so the underline is written \\emph (the file's command for the print's underline), as in the statement fixes of pp. 79-110."
+ },
+ {
+  "page": 134,
+  "where": "Théorème 6.13.3, 'Alors, pour tout L_o ∈ ob D_ctf(X_o,F_p) , on a, notant L l'image inverse de L_o sur X ,'",
+  "scan": "underlined: 'Alors, pour tout' and 'on a, notant' (each one line through the comma), 'l'image inverse de', 'sur'; the formulas not underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors, pour tout $L_0\\in\\ob D_{\\ctf}(X_0,\\mathbb F_p)$, on a, notant $L$ l'image inverse de $L_0$ sur $X$,",
+   "new": "\\emph{Alors, pour tout} $L_0\\in\\ob D_{\\ctf}(X_0,\\mathbb F_p)$, \\emph{on a, notant} $L$ \\emph{l'image inverse de} $L_0$ \\emph{sur} $X$,"
+  },
+  "note": "Statement text, underlined in the print; the Exposé III statement environment sets it upright, so the underline is written \\emph (the file's command for the print's underline), as in the statement fixes of pp. 79-110."
+ },
+ {
+  "page": 134,
+  "where": "Théorème 6.13.3, display, left-hand side",
+  "scan": "a bare typed Σ: 'Σ(-1)^i Tr(F,H^i_c(X,L))'",
+  "tex": "\\sum_i(-1)^i",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sum_i(-1)^i",
+   "new": "\\sum(-1)^i"
+  },
+  "note": "The TeX adds the summation index."
+ },
+ {
+  "page": 134,
+  "where": "'par un corps vérifiant (C_1) ([17] II 3), parexemple C(t) (Tsen)'",
+  "scan": "'parexemple' typed as one word (no space)",
+  "tex": "par exemple (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "par exemple $\\mathbb C(t)$",
+   "new": "parexemple $\\mathbb C(t)$"
+  },
+  "corrected": "par exemple",
+  "note": "Typing error. The TeX silently corrects; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 134,
+  "where": "'(voir loc. cit. pour d'autre exemples)'",
+  "scan": "'d'autre exemples' (no s on autre)",
+  "tex": "d'autres exemples (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "d'autres exemples",
+   "new": "d'autre exemples"
+  },
+  "corrected": "d'autres exemples",
+  "note": "Agreement error. The TeX silently corrects; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 135,
+  "where": "top of the page",
+  "scan": "p. 135 begins with the paragraph number: '6.14   La formule de Woods Hole a de nombreuses autres applications'; p. 134 ends '... quand on écrit la condition (C_1) .'",
+  "tex": "'\\subsection*{6.14}' and 'La' (s5.tex lines 4308-4309 at 20:13) end page_134.tex; the folio-135 marker (line 4310) follows them, so page_135.tex begins 'formule de Woods Hole'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 135 really begins at '\\subsection*{6.14}', s5.tex line 4308 at 20:13. Exact fix: python -I move_marker.py 5 135 '\\subsection*{6.14}' --before (single quotes; simulated in memory on both layers: the marker then stands on its own line between '... la condition $(C_1)$.' and '\\subsection*{6.14}', and 'La' joins 'formule de Woods Hole'). The moved words agree with the print."
+ }
+]

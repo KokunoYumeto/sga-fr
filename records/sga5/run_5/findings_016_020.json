@@ -1,0 +1,752 @@
+[
+ {
+  "page": 16,
+  "where": "proof of Corollaire 1.15, 'f se factorise en f'i, où i est une immersion ouverte'",
+  "scan": "f  se factorise en  f'i, où  i  est une: only f'i, no 'f =' before it",
+  "tex": "$f$ se factorise en $f = f'i$, où",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "$f = f'i$",
+   "new": "$f'i$"
+  },
+  "note": ""
+ },
+ {
+  "page": 16,
+  "where": "proof of Corollaire 1.15, 'Comme R^!f ≃ R^!i R^!f''",
+  "scan": "the middle R (of R^!i) is a plain typewriter R with a single stem; the R of R^!f before it and of R^!f' after it are double-struck (doubled stem)",
+  "tex": "\\R^{!}f \\simeq \\R^{!}i \\, \\R^{!}f' (\\R = \\mathbb{R}: three double-struck R)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\R^{!}i",
+   "new": "\\mathrm{R}^{!}i"
+  },
+  "corrected": "\\R^{!}i",
+  "note": "The typist's plain R between two double-struck ones; the TeX silently gives the double-struck R, the fix restores the printed letter (diplomatic layer only). Reading certain; 'misprint' rather than 'font' as with the plain Z of pp. 7-8."
+ },
+ {
+  "page": 16,
+  "where": "proof of Corollaire 1.15, 'Mais D_Y f_*(F) ≃ f_*D_X(F) (1.12 a)(i))'",
+  "scan": "D_Y f_*(F) ≃ f_*D_X(F): the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'\\xrightarrow{\\sim} f_{*}\\underline{D}_X(F)'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim} f_{*}\\underline{D}_X(F)",
+   "new": "\\simeq f_{*}\\underline{D}_X(F)"
+  },
+  "note": "The same sign as in 'R^!f ≃ R^!i R^!f'' three lines above, where the TeX has \\simeq. Every isomorphism sign in the running text of pp. 16-20 is drawn this way; the 34 that the TeX writes \\xrightarrow{\\sim} are each listed. The arrows of p. 14 and the two horizontal arrows of the diagram on p. 19 have drawn heads, so this is not a volume-wide convention."
+ },
+ {
+  "page": 17,
+  "where": "top of the page: 'alors déterminés à isomorphisme unique près) tels que :'",
+  "scan": "p. 17 begins with 'alors déterminés à isomorphisme unique près) tels que :'; p. 16 ends with '... un entier  r  (qui sont'",
+  "tex": "'alors' is the last word of s5.tex line 602 ('... un entier $r$ (qui sont alors'), the last line of page_016.tex; the folio-17 marker (line 603) follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 17 really begins with 'alors' at the end of s5.tex line 602. Exact fix: python -I move_marker.py 5 17 \"alors\" --before (the marker then splits line 602 after 'sont'; simulated in memory on both layers against the s5.tex of 16:13 today). Text not moved; it agrees with the print."
+ },
+ {
+  "page": 17,
+  "where": "Théorème 2.1, the display 'K' ≃ K ⊗^L L[r] .'",
+  "scan": "K' ≃ K ⊗^L L[r]: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'K' \\xrightarrow{\\sim} K'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\nK' \\xrightarrow{\\sim} K",
+   "new": "\nK' \\simeq K"
+  },
+  "note": ""
+ },
+ {
+  "page": 17,
+  "where": "proof of 2.1, display (*), first sign",
+  "scan": "R Hom(F ⊗^L L^∨[-r] , G) ≃ R Hom(F , G ⊗^L L[r]): the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'G) \\xrightarrow{\\sim}'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "G) \\xrightarrow{\\sim}",
+   "new": "G) \\simeq"
+  },
+  "note": ""
+ },
+ {
+  "page": 17,
+  "where": "proof of 2.1, display (*), second sign",
+  "scan": "R Hom(F , G ⊗^L L[r]) ≃ R Hom(F,G) ⊗^L L[r]: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'L[r]) \\xrightarrow{\\sim}'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "L[r]) \\xrightarrow{\\sim}",
+   "new": "L[r]) \\simeq"
+  },
+  "note": ""
+ },
+ {
+  "page": 17,
+  "where": "'On en déduit aisément que, si K' ≃ K ⊗^L L[r], K' est dualisant'",
+  "scan": "K' ≃ K ⊗^L L[r]: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'si $K' \\xrightarrow{\\sim}'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "si $K' \\xrightarrow{\\sim}",
+   "new": "si $K' \\simeq"
+  },
+  "note": ""
+ },
+ {
+  "page": 17,
+  "where": "'D'F ≃ DF ⊗^L L[r] d'après (*)'",
+  "scan": "D'F ≃ DF ⊗^L L[r]: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'\\underline{D}'F \\xrightarrow{\\sim}'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{D}'F \\xrightarrow{\\sim}",
+   "new": "\\underline{D}'F \\simeq"
+  },
+  "note": ""
+ },
+ {
+  "page": 17,
+  "where": "'donc, comme DK ≃ A_X , on a'",
+  "scan": "DK ≃ A_X: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'K \\xrightarrow{\\sim} A_X'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "K \\xrightarrow{\\sim} A_X",
+   "new": "K \\simeq A_X"
+  },
+  "note": ""
+ },
+ {
+  "page": 17,
+  "where": "the display 'D'K ≃ L[r] ,'",
+  "scan": "D'K ≃ L[r]: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'K \\xrightarrow{\\sim} L[r],'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "K \\xrightarrow{\\sim} L[r],",
+   "new": "K \\simeq L[r],"
+  },
+  "note": ""
+ },
+ {
+  "page": 17,
+  "where": "'Nous allons montrer que l'on a', line a)",
+  "scan": "a)  K' ≃ K ⊗^L P ,: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'K' &\\xrightarrow{\\sim}'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "K' &\\xrightarrow{\\sim}",
+   "new": "K' &\\simeq"
+  },
+  "note": ""
+ },
+ {
+  "page": 17,
+  "where": "'Nous allons montrer que l'on a', line b)",
+  "scan": "b)  P ≃ L[r] , pour un A_X-Module inversible L: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'P &\\xrightarrow{\\sim}'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "P &\\xrightarrow{\\sim}",
+   "new": "P &\\simeq"
+  },
+  "note": ""
+ },
+ {
+  "page": 17,
+  "where": "display (**), 'F ⊗^L P ≃ D'DF .'",
+  "scan": "F ⊗^L P ≃ D'DF: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'P \\xrightarrow{\\sim} \\underline{D}'\\underline{D} F'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "P \\xrightarrow{\\sim} \\underline{D}'\\underline{D} F",
+   "new": "P \\simeq \\underline{D}'\\underline{D} F"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "first display, 'K ⊗^L P ≃ D'DK ≃ D'A_X = K'', first sign",
+  "scan": "K ⊗^L P ≃ D'DK: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'P \\xrightarrow{\\sim} \\underline{D}'\\underline{D} K'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "P \\xrightarrow{\\sim} \\underline{D}'\\underline{D} K",
+   "new": "P \\simeq \\underline{D}'\\underline{D} K"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "first display, second sign",
+  "scan": "D'DK ≃ D'A_X = K': the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'\\xrightarrow{\\sim} \\underline{D}' A_X'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim} \\underline{D}' A_X",
+   "new": "\\simeq \\underline{D}' A_X"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "second display, 'P' ⊗^L P = D'DDD'A_X ≃ D'D'A_X ≃ A_X .', first sign",
+  "scan": "D'DDD'A_X ≃ D'D'A_X: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'\\xrightarrow{\\sim} \\underline{D}'\\underline{D}'A_X'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim} \\underline{D}'\\underline{D}'A_X",
+   "new": "\\simeq \\underline{D}'\\underline{D}'A_X"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "second display, second sign",
+  "scan": "D'D'A_X ≃ A_X: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'\\xrightarrow{\\sim} A_X.'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim} A_X.",
+   "new": "\\simeq A_X."
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "Lemme 2.2, 'tels que P ⊗^L P' ≃ A_X'",
+  "scan": "P ⊗^L P' ≃ A_X: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'P' \\xrightarrow{\\sim} A_X$'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "P' \\xrightarrow{\\sim} A_X$",
+   "new": "P' \\simeq A_X$"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "Lemme 2.2, display, first sign",
+  "scan": "P ≃ L[r]: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'P \\xrightarrow{\\sim} L[r], \\quad'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "P \\xrightarrow{\\sim} L[r], \\quad",
+   "new": "P \\simeq L[r], \\quad"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "Lemme 2.2, display, second sign",
+  "scan": "P' ≃ L^∨[-r]: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'P' \\xrightarrow{\\sim} L^{\\vee}[-r]'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "P' \\xrightarrow{\\sim} L^{\\vee}[-r]",
+   "new": "P' \\simeq L^{\\vee}[-r]"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "label of the first step of the proof, '1) Cas particulier : X = Spec(k)'",
+  "scan": "'1) Cas particulier :' in the ordinary type of the line, not underlined, not bold (run into the text)",
+  "tex": "\\textbf{1) Cas particulier :} $X = \\Spec(k)$",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{1) Cas particulier :}",
+   "new": "1) Cas particulier :"
+  },
+  "note": "Not an underlined title, so not covered by the accepted \\textbf for underlined titles; drop with the next finding if the coordinator counts the step labels as headings."
+ },
+ {
+  "page": 18,
+  "where": "1) Cas particulier, '(EGA 0_I 5.4.3)'",
+  "scan": "the 0 has a typed double underline under it (=); the I is a subscript. p. 8 prints 'EGA 0_III 12.3.3' without it",
+  "tex": "(EGA~$0_{\\mathrm{I}}$~5.4.3)",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "$0_{\\mathrm{I}}$",
+   "new": "$\\underline{\\underline{0}}_{\\mathrm{I}}$"
+  },
+  "note": "Local to this reference (not the typist's habit for EGA 0: p. 8 has none)."
+ },
+ {
+  "page": 18,
+  "where": "1) Cas particulier, 'tels que M ⊗ M' ≃ A'",
+  "scan": "M ⊗ M' ≃ A: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'M' \\xrightarrow{\\sim} A'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "M' \\xrightarrow{\\sim} A",
+   "new": "M' \\simeq A"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "1) Cas particulier, 'M' ≃ M^∨ ; c'est ici qu'intervient'",
+  "scan": "M' ≃ M^∨: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'M' \\xrightarrow{\\sim} M^{\\vee}'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "M' \\xrightarrow{\\sim} M^{\\vee}",
+   "new": "M' \\simeq M^{\\vee}"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "label of the second step, '2) Cas général.'",
+  "scan": "'2) Cas général.' in the ordinary type, not underlined, not bold",
+  "tex": "\\textbf{2) Cas général.}",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\textbf{2) Cas général.}",
+   "new": "2) Cas général."
+  },
+  "note": "As '1) Cas particulier :' above."
+ },
+ {
+  "page": 18,
+  "where": "2) Cas général, 'P_x̄ ≃ A_x̄[r(x)]'",
+  "scan": "P_x̄ ≃ A_x̄[r(x)]: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'\\xrightarrow{\\sim} A_{\\ol{x}}[r(x)]'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim} A_{\\ol{x}}[r(x)]",
+   "new": "\\simeq A_{\\ol{x}}[r(x)]"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "2) Cas général, 'P'_x̄ ≃ A_x̄[-r(x)]'",
+  "scan": "P'_x̄ ≃ A_x̄[-r(x)]: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'\\xrightarrow{\\sim} A_{\\ol{x}}[-r(x)]'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim} A_{\\ol{x}}[-r(x)]",
+   "new": "\\simeq A_{\\ol{x}}[-r(x)]"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "2) Cas général, 'i.e. H^i(P_x̄) = 0'",
+  "scan": "H^i(P_x̄) = 0: the H is not underlined (clean baseline under it)",
+  "tex": "'\\uH^i(P_{' (\\uH = \\underline{\\mathrm H})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uH^i(P_{",
+   "new": "\\H^i(P_{"
+  },
+  "note": "On pp. 18-19 the print never underlines this H; it does in the dévissage of p. 20 (H^0(P), H^{-a}(P)), where \\uH is right."
+ },
+ {
+  "page": 18,
+  "where": "2) Cas général, '(resp. H^i(P'_x̄) = 0)'",
+  "scan": "H^i(P'_x̄) = 0: the H is not underlined (clean baseline under it)",
+  "tex": "'\\uH^i(P'_{' (\\uH = \\underline{\\mathrm H})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uH^i(P'_{",
+   "new": "\\H^i(P'_{"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "2) Cas général, 'et H^{-i(x)}(P_x̄) ≃ A_x̄'",
+  "scan": "H^{-i(x)}(P_x̄): the H is not underlined (clean baseline under it)",
+  "tex": "'\\uH^{-' (\\uH = \\underline{\\mathrm H})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uH^{-",
+   "new": "\\H^{-"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "2) Cas général, 'et H^{-i(x)}(P_x̄) ≃ A_x̄'",
+  "scan": "H^{-i(x)}: the superscript letter is a typed i with its dot, against the r of 'H^{+r(x)}' later in the line and of 'i ≠ -r(x)' just above",
+  "tex": "\\uH^{-r(x)}(P_{\\ol{x}})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "r(x)}(P_{",
+   "new": "i(x)}(P_{"
+  },
+  "corrected": "\\H^{-r(x)}(P_{\\ol{x}})",
+  "note": "Wrong index of the print (H^{-r(x)} is meant: P_x̄ ≃ A_x̄[r(x)]). The TeX silently corrects; the fix restores the printed i. Its old does not overlap the underline fix before it."
+ },
+ {
+  "page": 18,
+  "where": "2) Cas général, 'H^{-i(x)}(P_x̄) ≃ A_x̄'",
+  "scan": "H^{-i(x)}(P_x̄) ≃ A_x̄: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'\\xrightarrow{\\sim} A_{\\ol{x}}$, $'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim} A_{\\ol{x}}$, $",
+   "new": "\\simeq A_{\\ol{x}}$, $"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "2) Cas général, 'H^{+r(x)}(P'_x) ≃ A_x̄'",
+  "scan": "H^{+r(x)}(P'_x): the H is not underlined (clean baseline under it)",
+  "tex": "'\\uH^{+' (\\uH = \\underline{\\mathrm H})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uH^{+",
+   "new": "\\H^{+"
+  },
+  "note": ""
+ },
+ {
+  "page": 18,
+  "where": "2) Cas général, 'H^{+r(x)}(P'_x) ≃ A_x̄'",
+  "scan": "(P'_x): no bar over the subscript x (nothing above its top serifs but a 2-pixel speck), while the bars over the x of P_x̄ and A_x̄ in the same line are full-strength typed strokes",
+  "tex": "\\uH^{+r(x)}(P'_{\\ol{x}})",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "}(P'_{\\ol{x}})",
+   "new": "}(P'_{x})"
+  },
+  "corrected": "\\H^{+r(x)}(P'_{\\ol{x}})",
+  "note": "The typist left out the bar of the geometric point x̄. The TeX silently supplies it; the fix restores the printed x. Its old does not overlap the underline fix before it or the arrow fix after it."
+ },
+ {
+  "page": 18,
+  "where": "2) Cas général, end of the same formula",
+  "scan": "H^{+r(x)}(P'_x) ≃ A_x̄: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'\\xrightarrow{\\sim} A_{\\ol{x}}$. Il'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim} A_{\\ol{x}}$. Il",
+   "new": "\\simeq A_{\\ol{x}}$. Il"
+  },
+  "note": ""
+ },
+ {
+  "page": 19,
+  "where": "'On a donc H^i(P) = 0 pour i ≠ -r_0'",
+  "scan": "H^i(P) = 0: the H is not underlined (clean baseline under it)",
+  "tex": "'\\uH^i(P) = 0' (\\uH = \\underline{\\mathrm H})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uH^i(P) = 0",
+   "new": "\\H^i(P) = 0"
+  },
+  "note": ""
+ },
+ {
+  "page": 19,
+  "where": "'H^i(P') = 0 pour i ≠ r_0'",
+  "scan": "H^i(P') = 0: the H is not underlined (clean baseline under it)",
+  "tex": "'\\uH^i(P') = 0' (\\uH = \\underline{\\mathrm H})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uH^i(P') = 0",
+   "new": "\\H^i(P') = 0"
+  },
+  "note": ""
+ },
+ {
+  "page": 19,
+  "where": "'et H^{-r_0}(P) ⊗ H^{r_0}(P') ≃ A', first H",
+  "scan": "H^{-r_0}(P) ⊗: the H is not underlined (clean baseline under it)",
+  "tex": "'et $\\uH^{-r_0}(P)' (\\uH = \\underline{\\mathrm H})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et $\\uH^{-r_0}(P)",
+   "new": "et $\\H^{-r_0}(P)"
+  },
+  "note": ""
+ },
+ {
+  "page": 19,
+  "where": "'et H^{-r_0}(P) ⊗ H^{r_0}(P') ≃ A', second H",
+  "scan": "⊗ H^{r_0}(P'): the H is not underlined (clean baseline under it)",
+  "tex": "'\\otimes \\uH^{r_0}' (\\uH = \\underline{\\mathrm H})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes \\uH^{r_0}",
+   "new": "\\otimes \\H^{r_0}"
+  },
+  "note": ""
+ },
+ {
+  "page": 19,
+  "where": "'H^{-r_0}(P) ⊗ H^{r_0}(P') ≃ A.'",
+  "scan": "H^{r_0}(P') ≃ A: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'(P') \\xrightarrow{\\sim} A'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(P') \\xrightarrow{\\sim} A",
+   "new": "(P') \\simeq A"
+  },
+  "note": ""
+ },
+ {
+  "page": 19,
+  "where": "'Posons H^{-r_0}(P) = L'",
+  "scan": "H^{-r_0}(P) = L: the H is not underlined (clean baseline under it)",
+  "tex": "'Posons $\\uH^{-r_0}(P)' (\\uH = \\underline{\\mathrm H})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Posons $\\uH^{-r_0}(P)",
+   "new": "Posons $\\H^{-r_0}(P)"
+  },
+  "note": ""
+ },
+ {
+  "page": 19,
+  "where": "'H^{r_0}(P') = L''",
+  "scan": "H^{r_0}(P') = L': the H is not underlined (clean baseline under it)",
+  "tex": "'$\\uH^{r_0}(P') = L'$' (\\uH = \\underline{\\mathrm H})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\uH^{r_0}(P') = L'$",
+   "new": "$\\H^{r_0}(P') = L'$"
+  },
+  "note": ""
+ },
+ {
+  "page": 19,
+  "where": "'De même L' est inversible, et L' ≃ L^∨'",
+  "scan": "L' ≃ L^∨: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'L' \\xrightarrow{\\sim} L^{\\vee}'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "L' \\xrightarrow{\\sim} L^{\\vee}",
+   "new": "L' \\simeq L^{\\vee}"
+  },
+  "note": ""
+ },
+ {
+  "page": 19,
+  "where": "'Donc on a P ≃ L[-r_0]'",
+  "scan": "P ≃ L[-r_0]: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'on a $P \\xrightarrow{\\sim}'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "on a $P \\xrightarrow{\\sim}",
+   "new": "on a $P \\simeq"
+  },
+  "note": "The old avoids the misprinted '-r_0' (next finding), so it also applies to the corrected edition."
+ },
+ {
+  "page": 19,
+  "where": "'Donc on a P ≃ L[-r_0] , P' ≃ L^∨[+r_0]', first shift",
+  "scan": "L[-r_o] (minus sign clearly typed)",
+  "tex": "L[-r_0] (the printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "L[r_0]",
+  "note": "Sign misprint: H^{-r_0}(P) = L is the only cohomology of P, so P ≃ L[r_0] (as in Lemme 2.2: P ≃ L[r]). The corrected edition (sga5/current) already reads L[r_0]; not yet in MISPRINTS_5.json."
+ },
+ {
+  "page": 19,
+  "where": "'P' ≃ L^∨[+r_0]'",
+  "scan": "P' ≃ L^∨[+r_0]: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'$P' \\xrightarrow{\\sim}'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$P' \\xrightarrow{\\sim}",
+   "new": "$P' \\simeq"
+  },
+  "note": "The old avoids the misprinted '+r_0' (next finding)."
+ },
+ {
+  "page": 19,
+  "where": "'Donc on a P ≃ L[-r_0] , P' ≃ L^∨[+r_0]', second shift",
+  "scan": "L^∨[+r_o] (plus sign clearly typed)",
+  "tex": "L^{\\vee}[+r_0] (the printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "L^{\\vee}[-r_0]",
+  "note": "Sign misprint: H^{r_0}(P') = L' ≃ L^∨ is the only cohomology of P', so P' ≃ L^∨[-r_0] (Lemme 2.2: P' ≃ L^∨[-r]). The corrected edition already reads L^{\\vee}[-r_0]; not yet in MISPRINTS_5.json."
+ },
+ {
+  "page": 19,
+  "where": "'si et seulement si H^m(P')_x̄ ≠ 0'",
+  "scan": "H^m(P')_x̄ ≠ 0: the H is not underlined (clean baseline under it)",
+  "tex": "'\\uH^{m}(P')' (\\uH = \\underline{\\mathrm H})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uH^{m}(P')",
+   "new": "\\H^{m}(P')"
+  },
+  "note": ""
+ },
+ {
+  "page": 20,
+  "where": "'Par hypothèse, on a P|U ≃ L[r_0]'",
+  "scan": "P|U ≃ L[r_0]: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'P|U \\xrightarrow{\\sim}'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "P|U \\xrightarrow{\\sim}",
+   "new": "P|U \\simeq"
+  },
+  "note": ""
+ },
+ {
+  "page": 20,
+  "where": "'et l'on a H^0(P) ≃ i_!(L)'",
+  "scan": "H^0(P) ≃ i_!(L): the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'(P) \\xrightarrow{\\sim} i_{!}(L)'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(P) \\xrightarrow{\\sim} i_{!}(L)",
+   "new": "(P) \\simeq i_{!}(L)"
+  },
+  "note": ""
+ },
+ {
+  "page": 20,
+  "where": "'splitte naturellement (grâce à la flèche P → H^0(P)), donc que l'on a'",
+  "scan": "', donc que l'on a' is printed after the closing parenthesis",
+  "tex": "the words stand in the TeX, but after the inline comment '% FIX #54 (p20, ...) ... passage.' on the same line, so they are commented out and do not appear",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "passage., donc que l'on a",
+   "new": "passage.\n, donc que l'on a"
+  },
+  "note": "The fix ends the comment with a line break; the comment's % still swallows the line end, so the output is '(P)), donc que l'on a' as printed. The comment itself is left as it is."
+ },
+ {
+  "page": 20,
+  "where": "display 'P ≃ i_!(P|U) + j_*j^*P . On en déduit'",
+  "scan": "P ≃ i_!(P|U) + j_*j^*P: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'\\xrightarrow{\\sim} i_{!}(P|U) + j'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim} i_{!}(P|U) + j",
+   "new": "\\simeq i_{!}(P|U) + j"
+  },
+  "note": ""
+ },
+ {
+  "page": 20,
+  "where": "the aligned display, first line",
+  "scan": "P ⊗^L P' ≃ i_!(P|U) ⊗^L P': the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'&\\xrightarrow{\\sim} i_{!}(P|U) \\mathop'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "&\\xrightarrow{\\sim} i_{!}(P|U) \\mathop",
+   "new": "&\\simeq i_{!}(P|U) \\mathop"
+  },
+  "note": ""
+ },
+ {
+  "page": 20,
+  "where": "the aligned display, first line, second term",
+  "scan": "+ j_*j^*(P) ⊗^L P' : the P in parentheses",
+  "tex": "+ j_{*}j^{*}P \\mathop{\\otimes}\\limits^{\\mathrm{L}} P'",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "+ j_{*}j^{*}P \\mathop",
+   "new": "+ j_{*}j^{*}(P) \\mathop"
+  },
+  "note": ""
+ },
+ {
+  "page": 20,
+  "where": "the aligned display, second line",
+  "scan": "≃ i_!(P|U ⊗^L P'|U) + j_*(j^*P ⊗^L j^*P'): the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'&\\xrightarrow{\\sim} i_{!}(P|U \\mathop'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "&\\xrightarrow{\\sim} i_{!}(P|U \\mathop",
+   "new": "&\\simeq i_{!}(P|U \\mathop"
+  },
+  "note": ""
+ },
+ {
+  "page": 20,
+  "where": "the aligned display, third line",
+  "scan": "≃ i_!(A_U) + j_*(A_x) ,: the isomorphism sign is a hand-drawn tilde over a plain typed bar, no arrowhead",
+  "tex": "'&\\xrightarrow{\\sim} i_{!}(A_U)'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "&\\xrightarrow{\\sim} i_{!}(A_U)",
+   "new": "&\\simeq i_{!}(A_U)"
+  },
+  "note": ""
+ },
+ {
+  "page": 20,
+  "where": "'(déjà les H^0 ne sont pas isomorphes !)'",
+  "scan": "déjà les H^0: the H is not underlined (clean baseline under it)",
+  "tex": "'(déjà les $\\uH^{0}$' (\\uH = \\underline{\\mathrm H})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(déjà les $\\uH^{0}$",
+   "new": "(déjà les $\\H^{0}$"
+  },
+  "note": "The H^0(P), H^{-a}(P) earlier on the page are underlined in the print and stay \\uH."
+ }
+]

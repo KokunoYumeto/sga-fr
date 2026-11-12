@@ -1,0 +1,235 @@
+[
+ {
+  "page": 411,
+  "where": "top of the page: the display alpha_{m,n} (folio-411 marker)",
+  "scan": "p. 411 begins with the display 'α_{m,n} : Λ_m ⟶ Λ_n', then 'engendrent les homomorphismes de faisceaux d'anneaux sur X' :'; p. 410 ends '... Les homomorphismes d'anneaux :'.",
+  "tex": "page_411.tex begins 'engendrent les homomorphismes'; the display '\\[ \\alpha_{m,n} : \\La_m \\longrightarrow \\La_n \\]' (s5.tex lines 13867-13869) ends page_410.tex, above the folio-411 marker (line 13870).",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 411 really begins at s5.tex line 13867 '\\['. Exact fix: python -I move_marker.py 5 411 \"\\[\" --before (the nearest '\\[' above the marker; simulated in memory on both layers: the marker then stands between 'Les homomorphismes d'anneaux :' and '\\['). Text not moved."
+ },
+ {
+  "page": 411,
+  "where": "formula (2.5), the tensor sign",
+  "scan": "...,Λ_m) ⊗_{Λ_m} Λ_n ≃ R Hom_{Λ_n}(...): a plain ⊗ with nothing above it (the space above is clean), while (2.1)-(2.4) and (2.6) carry the hand-drawn double-struck L over ⊗.",
+  "tex": "\\La_m) \\otimes_{\\La_m}^{\\mathbb{L}} \\La_n",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\La_m) \\otimes_{\\La_m}^{\\mathbb{L}} \\La_n",
+   "new": "\\La_m) \\otimes_{\\La_m} \\La_n"
+  },
+  "corrected": "\\La_m) \\otimes_{\\La_m}^{\\mathbb{L}} \\La_n",
+  "note": "The L was left out by hand in (2.5) only; the TeX silently supplies it. The derived tensor product is meant ((2.5) is the dual of (2.2)), so the corrected reading keeps the L."
+ },
+ {
+  "page": 411,
+  "where": "(2.6) and the paragraph below it; throughout Exposé XII",
+  "scan": "The hand-drawn script ℋ: f'^∨_{ℋ_{m,U',X'}}, f'^∨_{ℋ_{n,U',X'}} (the same letter as at its definition on p. 408, 'son dual ℋ^∨_{n,U',X'} = RΓ_{X'}(Λ_{n,U',X'})^∨'), distinct from the typed H of 'Hom' in (2.5).",
+  "tex": "plain H: f'^\\vee_{H_{m,U',X'}}, f'^\\vee_{H_{n,U',X'}}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of Exposé XII, reported once: s5.tex writes the print's script ℋ as plain H in all 45 'H_{' of lines 13801-14567 (H_{n,U',X'}, H_{m,U',X'}, H_{n,U'}, H_{U',X'}(\\ell)); 9 on these pages (p. 411: 4, p. 412: 5). Examples: p. 411 (2.6) 'f'^\\vee_{H_{m,U',X'}}', p. 412 (2.8) 'f'^\\vee_{H_{n,U',X'}}', p. 412 'f'^\\vee_{H_{U',X'}(\\ell)}'. One pass over those lines: 'H_{' -> '\\mathcal{H}_{' (the file writes \\mathcal{F} for the print's script F, p. 412)."
+ },
+ {
+  "page": 412,
+  "where": "top of the page: 'à l'' (folio-412 marker)",
+  "scan": "p. 412 begins 'à l'aide des morphismes α_{m,n} (resp. ...'; p. 411 ends '... ,f'^∨_{ℋ_{m,U',X'}})'.",
+  "tex": "page_411.tex ends with 'à l'%' (end of s5.tex line 13891); the folio-412 marker (line 13892) splits 'à l'aide', and page_412.tex begins 'aide des morphismes'.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 412 really begins at 'à l'' at the end of s5.tex line 13891. Exact fix: python -I move_marker.py 5 412 \"à l'\" --before (simulated in memory on both layers: the marker then stands between '$f'^\\vee_{H_{m,U',X'}}$) ' and 'à l'%'; 'à l'%' and 'aide' can then be rejoined as 'à l'aide'). Text not moved."
+ },
+ {
+  "page": 412,
+  "where": "heading of no. 3",
+  "scan": "3. L'invariant local de Nielsen-Wecken (cf. [1] ). Supposons ... (title underlined; a full stop after the parenthesis).",
+  "tex": "\\section*{3. L'invariant local de Nielsen-Wecken (cf. [1])}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Nielsen-Wecken (cf. [1])}",
+   "new": "Nielsen-Wecken (cf. [1]).}"
+  },
+  "note": "The TeX drops the full stop that ends the run-in title."
+ },
+ {
+  "page": 412,
+  "where": "'De même les éléments ...'",
+  "scan": "Tr^*_{Λ_n}( RΓ_{X'}(f'_{n,X'})) , n ≥ 1: the subscript of f' is 'n,X'' without Λ.",
+  "tex": "\\Tr^*_{\\La_n}(\\R\\Gamma_{X'}(f'_{\\La_{n,X'}}))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(f'_{\\La_{n,X'}}))$ , $n",
+   "new": "(f'_{n,X'}))$ , $n"
+  },
+  "corrected": "(f'_{\\La_{n,X'}}))$ , $n",
+  "note": "The print drops the Λ (as written in (2.7): f'_{Λ_{n,X'}}); the TeX silently corrects it."
+ },
+ {
+  "page": 413,
+  "where": "top of the page: '\\begin{align*}' (folio-413 marker)",
+  "scan": "p. 413 begins with the display 'p : X' ⟶ X = X'/G pour la projection canonique, ...'; p. 412 ends 'On va utiliser dans la suite les notations suivantes :'.",
+  "tex": "page_412.tex ends with '\\begin{align*}' (s5.tex line 13919); the folio-413 marker (line 13920) stands inside the align* environment, so page_413.tex begins 'p &: X' ...'.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Only the environment opener lies on the wrong side; no printed text is misplaced. Page 413 really begins at s5.tex line 13919. Exact fix: python -I move_marker.py 5 413 \"\\begin{align*}\" --before (simulated in memory on both layers: the marker then stands between 'notations suivantes :' and '\\begin{align*}')."
+ },
+ {
+  "page": 413,
+  "where": "first display, third line",
+  "scan": "U = X - Y (nothing after it; the line above ends with ' ,').",
+  "tex": "U &= X - Y \\quad .",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "U &= X - Y \\quad .",
+   "new": "U &= X - Y"
+  },
+  "note": "Full stop added by the TeX at the end of the display."
+ },
+ {
+  "page": 414,
+  "where": "top of the page: formula (3.1) (folio-414 marker)",
+  "scan": "p. 414 begins with formula (3.1) 'NW^{G,φ}_f(x)(g) = { 1 s'il existe ...'; p. 413 ends 'à valeurs entières,caractérisée par les relations suivantes :'.",
+  "tex": "'\\begin{equation}\\tag{3.1}' and '\\mathrm{NW}_{f}^{G,\\varphi}(x)(g) = \\begin{cases} 1 &' (s5.tex lines 13942-13943) end page_413.tex; the folio-414 marker (line 13944) splits the cases environment.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 414 really begins at s5.tex line 13942 '\\begin{equation}\\tag{3.1}'. Exact fix: python -I move_marker.py 5 414 \"\\begin{equation}\\tag{3.1}\" --before (simulated in memory on both layers: the marker then stands between 'les relations suivantes :' and '\\begin{equation}'). Text not moved."
+ },
+ {
+  "page": 414,
+  "where": "(3.1), second line of the cases",
+  "scan": "et p(x') = x (nothing after it).",
+  "tex": "\\text{et } p(x') = x \\quad ;",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "p(x') = x \\quad ; \\\\",
+   "new": "p(x') = x \\\\"
+  },
+  "note": "Semicolon added by the TeX."
+ },
+ {
+  "page": 414,
+  "where": "heading of no. 4",
+  "scan": "4. Supposons X' lisse sur k ...: the number '4.' alone, no title.",
+  "tex": "\\section*{4. Généralités sur les termes locaux}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{4. Généralités sur les termes locaux}",
+   "new": "\\section*{4.}"
+  },
+  "note": "The title 'Généralités sur les termes locaux' is not in the print. '\\section*{4.}' as the file's '\\section*{2.}' (p. 410)."
+ },
+ {
+  "page": 414,
+  "where": "(4.1), summation index",
+  "scan": "Σ_{x'∈X'^{g^{-1}f}_x}: no prime on the f of the index (the space after it is clean); (4.3) defines X'^{g^{-1}f'}_x.",
+  "tex": "\\sum_{x' \\in {X'_x}^{g^{-1}f'}}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\in {X'_x}^{g^{-1}f'}}",
+   "new": "\\in {X'_x}^{g^{-1}f}}"
+  },
+  "corrected": "\\in {X'_x}^{g^{-1}f'}}",
+  "note": "The TeX silently corrects the print's missing prime."
+ },
+ {
+  "page": 414,
+  "where": "(4.2)",
+  "scan": "c^φ(g) = Card G^φ_g (capital C).",
+  "tex": "\\card G_g^\\varphi (\\card is \\operatorname{card})",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\card G_g^\\varphi",
+   "new": "\\operatorname{Card} G_g^\\varphi"
+  },
+  "note": "The file writes \\operatorname{Card} elsewhere."
+ },
+ {
+  "page": 414,
+  "where": "(4.2), set-builder separator",
+  "scan": "{x ∈ G / φ(x)gx^{-1} = g}",
+  "tex": "\\{ x \\in G \\mid \\varphi(x)gx^{-1} = g \\}",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "x \\in G \\mid \\varphi(x)",
+   "new": "x \\in G / \\varphi(x)"
+  },
+  "note": "The print separates with a slash, here and in (4.3); the TeX writes \\mid. Medium: the slash may be a typewriter stand-in for a bar, though it is not among the listed substitutes."
+ },
+ {
+  "page": 414,
+  "where": "(4.3), set-builder separator",
+  "scan": "{x'∈ X' / p(x') = x , (g^{-1}f')(x') = x'}",
+  "tex": "\\{ x' \\in X' \\mid p(x') = x",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "x' \\in X' \\mid p(x')",
+   "new": "x' \\in X' / p(x')"
+  },
+  "note": "As (4.2)."
+ },
+ {
+  "page": 414,
+  "where": "last line",
+  "scan": "Par composition, avec les inclusions canoniques",
+  "tex": "Par composition avec les inclusions canoniques",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Par composition avec",
+   "new": "Par composition, avec"
+  },
+  "note": "Comma after 'composition' (typed without a space before 'avec')."
+ },
+ {
+  "page": 415,
+  "where": "top of the page: the display Q ↪ Q_ℓ (folio-415 marker)",
+  "scan": "p. 415 begins with the display 'Q ↪ Q_ℓ', then 'la fonction S_x(f',f,G,φ) engendre ...'; p. 414 ends 'Par composition, avec les inclusions canoniques'.",
+  "tex": "the display '\\[ \\bQ \\hookrightarrow \\bQ_\\ell \\]' (s5.tex lines 13977-13979) ends page_414.tex, above the folio-415 marker (line 13980); page_415.tex begins 'la'.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 415 really begins at s5.tex line 13977 '\\['. Exact fix: python -I move_marker.py 5 415 \"\\[\" --before (the nearest '\\[' above the marker; simulated in memory on both layers: the marker then stands between 'inclusions canoniques' and '\\['). Text not moved."
+ },
+ {
+  "page": 415,
+  "where": "label of Proposition 4.6",
+  "scan": "Proposition 4.6  Soient R ... (no full stop after 4.6; 'Conjecture 4.5.' above has one).",
+  "tex": "\\textbf{Proposition 4.6.}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\textbf{Proposition 4.6.}",
+   "new": "\\textbf{Proposition 4.6}"
+  },
+  "note": "Full stop added by the TeX."
+ },
+ {
+  "page": 415,
+  "where": "Proposition 4.6, 'induisent l'... sur k'",
+  "scan": "induisent l'indentité sur k",
+  "tex": "induisent l'identité sur $k$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "l'identité",
+   "new": "l'indentité"
+  },
+  "corrected": "l'identité",
+  "note": "Typing error of the print ('indentité'); the TeX silently corrects it."
+ }
+]

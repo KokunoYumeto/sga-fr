@@ -1,0 +1,290 @@
+{
+  "findings": [
+    {
+      "page": 471,
+      "where": "Chaîne d'isomorphismes, membre initial",
+      "scan": "R^{+(3)}fg_{!}",
+      "tex": "R^{+(\\sisi{3}{12})} \\sisi{fg}{(fg)}_{!}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{+(12)}(fg)_{!}",
+      "note": "La pseudo-compactification composée est celle d'indice (12), non celle d'indice 3 introduite ensuite. Le TeX corrige le nombre dans le second argument de \\sisi."
+    },
+    {
+      "page": 471,
+      "where": "Chaîne d'isomorphismes, première ligne, après j'_{1!}",
+      "scan": "j'_{1!}\\circ j'_{2!}",
+      "tex": "j'_{1!}\\circ j\\sisi{'}{''}_{2!}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "j'_{1!}\\circ j''_{2!}",
+      "note": "Il manque une prime au deuxième j dans l'imprimé, confirmé par le témoin. Le TeX la rétablit avec \\sisi."
+    },
+    {
+      "page": 471,
+      "where": "Chaîne d'isomorphismes, deuxième et troisième lignes, termes en g'_2",
+      "scan": "R^{+}g'_{2} ; R^{+}g'_{2+}",
+      "tex": "\\sisi{g'_{2}}{(g'_2p)_*} ; \\sisi{g'_{2+}}{(g'_2p)_*}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{+}(g'_2p)_*",
+      "note": "Le facteur p manque dans ces deux occurrences de l'image directe composée. Le TeX corrige les deux expressions dans les seconds arguments de \\sisi."
+    },
+    {
+      "page": 471,
+      "where": "Chaîne d'isomorphismes : première ligne pour u_{f_1}, troisième et quatrième lignes pour r",
+      "scan": "R^{+}\\bar{u}_{f_1} ; L^{+}\\bar{r} ; R^{+}\\bar{r}",
+      "tex": "R^{+}\\bar{u}_{f_{1}\\sisi{}{*}} ; L^{+}\\bar{r}\\sisi{}{^*} ; R^{+}\\bar{r}\\sisi{}{_*}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{+}\\bar{u}_{f_{1}*},\\qquad L^{+}\\bar{r}^{*},\\qquad R^{+}\\bar{r}_*",
+      "note": "Les marques d'image directe ou inverse sont omises à ces trois endroits dans l'imprimé. Le TeX les rétablit avec \\sisi."
+    },
+    {
+      "page": 471,
+      "where": "Notation récurrente des images directes et inverses, également p. 474",
+      "scan": "R^{+}\\bar{u}_{f_{1}+} ; L^{+}\\bar{r}^{+} ; \\pi_{1}^{p+} (p. 474)",
+      "tex": "R^{+}\\bar{u}_{f_{1}\\sisi{+}{*}} ; L^{+}\\bar{r}^{\\sisi{+}{*}} ; \\pi^{p\\sisi{+}{*}}_{1}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{+}\\bar{u}_{f_{1}*},\\qquad L^{+}\\bar{r}^{*},\\qquad \\pi_{1}^{p*}",
+      "note": "Signalement groupé : l'imprimé emploie régulièrement + à la place de l'étoile des images directes ou inverses. Les premiers arguments des \\sisi reproduisent ces signes et les seconds les normalisent en *. Les + propres aux symboles R^{+} et L^{+} ne sont pas concernés."
+    },
+    {
+      "page": 472,
+      "where": "7.1.4.4, référence après «et un diagramme»",
+      "scan": "(7.1.4.3)",
+      "tex": "\\sisi{(\\hyperref[XVII.par7.1.4.3]{7.1.4.3})}{\\eqhyperref[XVII.eq7.1.4.1.3]{7.1.4.1.3}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\eqhyperref[XVII.eq7.1.4.1.3]{7.1.4.1.3}",
+      "note": "La référence imprimée est erronée : il s'agit du diagramme (7.1.4.1.3). Le TeX la corrige dans le second argument de \\sisi."
+    },
+    {
+      "page": 472,
+      "where": "7.1.4.4, premier carré, sommet supérieur gauche",
+      "scan": "R^{+(12)}fg_{!}",
+      "tex": "R^{+(12)}\\sisi{fg}{(fg)}_1",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "R^{+(12)}\\sisi{fg}{(fg)}_1",
+        "new": "R^{+(12)}\\sisi{fg}{(fg)}_!"
+      },
+      "note": "L'indice imprimé est un point d'exclamation, non le chiffre 1 ; le témoin le confirme."
+    },
+    {
+      "page": 472,
+      "where": "7.1.4.4, premier carré, sommet supérieur droit",
+      "scan": "R^{+(1)}f_{!}\\circ R^{+(2)}g_{!}",
+      "tex": "R^{+(1)}f_1 \\circ R^{+(2)}g_!",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "R^{+(1)}f_1 \\circ",
+        "new": "R^{+(1)}f_! \\circ"
+      },
+      "note": "Le signe sous f est ! dans les deux scans, et non 1."
+    },
+    {
+      "page": 472,
+      "where": "Après le premier carré, référence après «du type»",
+      "scan": "(7.1.4.4)",
+      "tex": "\\sisi{(\\hyperref[XVII.par7.1.4.4]{7.1.4.4})}{\\eqhyperref[XVII.eq7.1.4.2.1]{7.1.4.2.1}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\eqhyperref[XVII.eq7.1.4.2.1]{7.1.4.2.1}",
+      "note": "Le numéro du diagramme est fautif dans l'imprimé. Le TeX corrige la référence avec \\sisi."
+    },
+    {
+      "page": 473,
+      "where": "Première phrase, après «tout couple (f,g)»",
+      "scan": "de morphisme",
+      "tex": "de morphisme",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "de morphismes",
+      "note": "Le pluriel manque dans l'imprimé ; le TeX conserve cette coquille."
+    },
+    {
+      "page": 473,
+      "where": "Démonstration de 7.1.6, identification dans la première phrase",
+      "scan": "R^{+}fg_{!}\\longrightarrow Rf_{!}\\circ Rg_{!}",
+      "tex": "R^{+}fg_{!}\\longrightarrow R^{+}f_{!}\\circ R^{+}g_{!}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{+}fg_{!}\\xrightarrow{c_{fg}}R^{+}f_{!}\\circ R^{+}g_{!}",
+      "note": "Les deux exposants + du membre de droite sont absents de l'imprimé, également dans le témoin. Le TeX les rétablit silencieusement."
+    },
+    {
+      "page": 473,
+      "where": "Diagramme (7.1.6.1), sommet gauche de la deuxième ligne",
+      "scan": "T_3, alors qu'un autre sommet T_3 figure déjà sur la première ligne",
+      "tex": "T_3",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "T_6",
+      "note": "L'imprimé réutilise T_3 pour deux schémas auxiliaires distincts ; le TeX conserve cette collision de noms. On peut la lever en nommant T_6 le sommet gauche de la deuxième ligne ; ce choix de nouveau nom est conventionnel."
+    },
+    {
+      "page": 473,
+      "where": "Dernière phrase, référence après «du type»",
+      "scan": "(7.1.4.4)",
+      "tex": "(\\hyperref[XVII.par7.1.4.4]{7.1.4.4})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\eqhyperref[XVII.eq7.1.4.2.1]{7.1.4.2.1}",
+      "note": "Même référence fautive qu'à la page précédente : le diagramme d'objets simpliciaux visé est (7.1.4.2.1). Ici le TeX conserve le mauvais numéro."
+    },
+    {
+      "page": 474,
+      "where": "Parenthèse après (7.1.9.2), indice de bar u",
+      "scan": "L^{+}\\bar{u}_{p_1}^{+}(K^{\\bigdot})",
+      "tex": "L^{+}\\bar{u}_{p_{1}}^{\\sisi{+}{*}}(K^{\\bigdot})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "L^{+}\\bar{u}_{\\pi_{1}}^{*}(K^{\\bigdot})",
+      "note": "La pseudo-compactification de cette construction est notée (\\pi_1,j_1,f_1), non (p_1,j_1,f_1). Le TeX conserve le p imprimé ; il normalise seulement le signe + en étoile."
+    },
+    {
+      "page": 474,
+      "where": "Fin de la coupe TeX, rubrique 7.2",
+      "scan": "La page finit après «image directe par u_{f_1}).» ; la rubrique 7.2 ouvre la page 475.",
+      "tex": "\\subsection[Quelques propriétés de $R^{+}f_{!}$]{Quelques propriétés de\n  \\mathversion{bold}$R^{+}f_{!}$}\\etiquette[7.2]{XVII.subsec7.2}",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "La rubrique 7.2 appartient à la page 475, et non à la page 474. Cette possibilité n'est pas annoncée par le commentaire de coupe. Recaler la frontière sans modifier le texte."
+    },
+    {
+      "page": 475,
+      "where": "Démonstration de 7.2.1, référence après «On définit»",
+      "scan": "(XVII 6.2.9)",
+      "tex": "(\\hyperref[XVII.prop6.2.9]{6.2.9})",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "(\\hyperref[XVII.prop6.2.9]{6.2.9})",
+        "new": "(XVII \\hyperref[XVII.prop6.2.9]{6.2.9})"
+      },
+      "note": "Le numéro d'exposé XVII, expressément imprimé, manque dans le texte du renvoi."
+    },
+    {
+      "page": 475,
+      "where": "Définition de K^n_{\\mathcal U}, indice de la somme",
+      "scan": "|P|=n+1",
+      "tex": "|P|=\\sisi{}{-}n+1",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "|P|=-n+1",
+      "note": "Il manque le signe moins pour cette résolution gauche en degrés cohomologiques. Le TeX le rétablit avec \\sisi."
+    },
+    {
+      "page": 475,
+      "where": "Définition de j_P, ouvert dont il est l'inclusion",
+      "scan": "\\cap_{i\\in P}U_i",
+      "tex": "\\cup_{i\\in P} U_i",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$\\cup_{i\\in P} U_{i}$",
+        "new": "$\\cap_{i\\in P} U_{i}$"
+      },
+      "note": "L'imprimé donne une intersection, très nette aussi dans le témoin, et non une réunion."
+    },
+    {
+      "page": 475,
+      "where": "Suite spectrale de la démonstration de 7.2.1, cardinalité de P",
+      "scan": "|P|=p+1",
+      "tex": "|P|=\\sisi{}{-}p+1",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "|P|=-p+1",
+      "note": "Même signe moins omis que dans la définition de la résolution gauche. Le TeX corrige cette seconde occurrence avec \\sisi."
+    },
+    {
+      "page": 475,
+      "where": "Suite spectrale, seconde condition sous la somme",
+      "scan": "P\\in I",
+      "tex": "P\\sisi{\\in}{\\subset} I\\sisi{}{\\text{ non vide}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\varnothing\\ne P\\subset I",
+      "note": "P est une partie non vide de l'ensemble d'indices I, non un élément de I. Le TeX corrige la relation et précise la non-vacuité dans les seconds arguments de \\sisi."
+    },
+    {
+      "page": 475,
+      "where": "Suite spectrale, exposant du foncteur appliqué à j_P^*(F)",
+      "scan": "R^{p}(fj_P)_{!}j_P^{*}(F)",
+      "tex": "R^{p}(fj_{P})_{!}j^{\\ast}_{P}(F)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{q}(fj_{P})_{!}j^{\\ast}_{P}(F)",
+      "note": "L'exposant doit être q, conformément à (7.1.9.1) et à l'indice E_1^{pq}. L'imprimé porte p ; le TeX conserve cette coquille."
+    },
+    {
+      "page": 475,
+      "where": "Démonstration de 7.2.2, référence après «point par point»",
+      "scan": "(XVII (4.1.9))",
+      "tex": "(\\hyperref[XVII.def4.1.9]{4.1.9})",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "(\\hyperref[XVII.def4.1.9]{4.1.9})",
+        "new": "(XVII (\\hyperref[XVII.def4.1.9]{4.1.9}))"
+      },
+      "note": "Le numéro d'exposé XVII manque dans le renvoi transcrit."
+    },
+    {
+      "page": 475,
+      "where": "Référence aux conventions de complexes doubles",
+      "scan": "VI b.(2.3.2)",
+      "tex": "\\sisi{VI b.(\\refnoexpose{Vbis.subsubsec2.3.2})}{\\hyperrefext[Vbis][Vbis.subsubsec2.3.2]{2.3.2}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperrefext[Vbis][Vbis.subsubsec2.3.2]{2.3.2}",
+      "note": "L'exposé visé est V bis, non VI b. Le premier argument reproduit l'erreur imprimée et le second la corrige."
+    },
+    {
+      "page": 475,
+      "where": "Dernière ligne imprimée, catégorie où est prise l'opération sigma",
+      "scan": "C^{+}(C^{+}(\\Mod(X,\\mathcal{A}_{X})))",
+      "tex": "C^{+}(C^{+}(\\Mod(X,\\mathcal{A}_{X}))",
+      "kind": "punctuation",
+      "confidence": "high",
+      "fix": {
+        "old": "C^{+}(C^{+}(\\Mod(X,\\mathcal{A}_{X}))",
+        "new": "C^{+}(C^{+}(\\Mod(X,\\mathcal{A}_{X})))"
+      },
+      "note": "Une parenthèse fermante manque dans le TeX. Les parenthèses ajoutées à la main dans l'imprimé ferment bien les deux catégories de complexes."
+    },
+    {
+      "page": 475,
+      "where": "Après le deux-points final",
+      "scan": "La page finit au deux-points après C^{+}(C^{+}(\\Mod(X,\\mathcal{A}_{X}))).",
+      "tex": "Le display contenant la suite exacte 0\\longrightarrow\\cdots\\longrightarrow0 figure encore dans cette coupe.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "La suite exacte n'est pas imprimée sur la page 475 : elle appartient à la page suivante. Le commentaire de coupe n'annonce pas ce débordement. Ne pas contrôler ici les deux arguments de ce \\sisi ; recaler la fin de la coupe au deux-points."
+    }
+  ],
+  "coordinator": "471: 0/5; 472: 2/2; 473: 0/4; 474: 1/1; 475: 5/5 (normal/misprint).\nMarqueur 474/475 : la rubrique 7.2 ouvre p. 475 ; p. 474 finit après la parenthèse sur l'image directe par u_{f_1}.\nMarqueur 475/476 : p. 475 finit au deux-points ; le display de la suite exacte appartient à la page suivante.\nConvention +/* signalée une seule fois p. 471 : exemples u_{f_1+}, r^{+}, pi_1^{p+} (ce dernier p. 474), normalisés en étoiles dans les seconds arguments des sisi."
+}

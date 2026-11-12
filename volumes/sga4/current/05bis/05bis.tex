@@ -1,0 +1,3755 @@
+\ifx\danslelivre\undefined
+\RequirePackage{luatex85}
+\documentclass[10pt]{../fichiers-configuration-latex/smfart}
+\input{../fichiers-configuration-latex/paquets}
+\input{../fichiers-configuration-latex/numerotation}
+\input{../fichiers-configuration-latex/macros}
+
+
+\externaldocument{../01/I.tex}
+\externaldocument{../02/II.tex}
+\externaldocument{../03/III.tex}
+\externaldocument{../04/IV.tex}
+\externaldocument{../05/V.tex}
+%\externaldocument{../05bis/Vbis.tex}
+\externaldocument{../06/VI.tex}
+\externaldocument{../07/VII.tex}
+\externaldocument{../08/VIII.tex}
+\externaldocument{../09/IX.tex}
+\externaldocument{../10/X.tex}
+\externaldocument{../11/XI.tex}
+\externaldocument{../12/XII.tex}
+\externaldocument{../13/XIII.tex}
+\externaldocument{../14/XIV.tex}
+\externaldocument{../15/XV.tex}
+\externaldocument{../16/XVI.tex}
+\externaldocument{../17/XVII.tex}
+\externaldocument{../18/XVIII.tex}
+\externaldocument{../19/XIX.tex}
+
+\setboolean{original}{false}
+
+% problèmes : \circ=° ↔ ₀⁰ [faire changement systématique ?]
+
+\begin{document}
+
+\begin{center}
+Vbis. Techniques de descente cohomologique\\
+B. Saint-Donat
+\end{center}
+
+\selectlanguage{english}version : \showgitstatus\selectlanguage{french}
+\tableofcontents
+
+\else
+\chapter{Techniques de descente cohomologique}
+%\addtocontents{toc}{B. Saint-Donat}
+\begin{center}
+B. Saint-Donat
+\end{center}
+\fi
+
+\setcounter{pageoriginal}{83}
+
+%\footnotetext[1]{D'après des notes succinctes de P. Deligne}
+
+\let\cosk=\cosq
+\let\Ysheaf=\sheaf
+
+\section*{Introduction}
+
+\begin{enumerate}
+\renewcommand{\labelenumi}{\theenumi.}
+\item Soit\pageoriginale $X$ un espace topologique et $\Uu = (U_i)_{i
+  \in I}$ un recouvrement de $X$, que l'on suppose soit ouvert, soit
+  fermé et localement fini. Si $\mathfrak{F}$ est un faisceau abélien
+  sur $X$, la suite spectrale de Leray:
+\begin{equation*}
+\Hv{p} (\Uu, \mathcal{H}^q (\mathfrak{F})) \Rightarrow H^{\ast}
+(X, \mathfrak{F})\tag{1.1}
+\end{equation*}\etiquette[1.1]{Vbis.eq1.1}
+définie par $\Uu$ [\cite{SGA4-05bis:5} II (5.2.4) et (5.4.1)] peut se décrire
+de la façon suivante:
+
+Le recouvrement $\Uu$ définit une résolution « C\v{e}chiste »
+$\mathcal{C}^{\ast} (\Uu, \mathfrak{F})$, fonctorielle en $\mathfrak{F}$
+(ibid (\hyperref[Vbis.subsubsec5.2.1]{5.2.1})). D'autre part, on dispose, pour tout
+$\mathfrak{F}$ d'une résolution « flasque canonique »,
+$C^{\ast}(\mathfrak{F})$, fonctorielle en $\mathfrak{F}$ (ibid
+(\hyperref[Vbis.subsec4.3]{4.3})). Avec ces notations, la suite spectrale
+(\hyperref[Vbis.subsec1.1]{1.1}) s'obtient, dans le cas où $\Uu$ est ouvert, à
+partir du complexe double
+\begin{equation*}
+\Gamma(X, \mathcal{C}^{\ast} (\Uu, C^{\ast}(\mathfrak{F}))){\quoi}.\tag{1.2}
+\end{equation*}\etiquette[1.2]{Vbis.eq1.2}
+Dans le cas où $\Uu$ est fermé et localement fini, on considère
+le complexe double
+\begin{equation*}
+\Gamma(X, C^{\ast} (\mathcal{C}^{\ast}(\Uu, \mathfrak{F}))){\quoi}.\tag{1.3}
+\end{equation*}\etiquette[1.3]{Vbis.eq1.3}
+
+\item Cherchons une description unifiée de ces doubles complexes. Désignons
+par $X_{0}$ l' espace topologique somme disjointe des $U_i$ et par
+$X_n$ $(n \geq 0)$ le produit fibré itéré $(n + 1)$\textsuperscript{ième} de
+$X_{0}$ avec lui-même au-dessus de $X$
+\begin{equation*}
+X_n = \mathop{\coprod}_{i_0 \ldots i_n \in I} U_{i_{0}} \cap \ldots
+  \cap U_{i_n} = \mathop{\coprod}_{\sigma \in \Hom ([n], I)}
+  \mathop{\bigcap}^{n}_{0} U_{\sigma(i)}{\quoi}.\tag{2.1}
+\end{equation*}\etiquette[2.1]{Vbis.eq2.1}
+Les $X_n$ forment un système simplicial d'espaces topologiques, et si
+$j_n$ désigne la projection de $X_n$ sur $X$, on a
+\begin{equation*}
+\mathcal{C}^n(\Uu, \mathfrak{F}) = j_{n\ast}
+j^{\ast}_n(\mathfrak{F}){\quoi}.\tag{2.2}
+\end{equation*}\etiquette[2.2]{Vbis.eq2.2}
+
+Notons que la formation des résolutions flasques canoniques commute à
+la\pageoriginale restriction à un ouvert et à l'image directe par une immersion
+fermée. Dès lors:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\item si $\Uu$ est ouvert
+\begin{equation*}
+\mathcal{C}^q(\Uu, C^n(\mathfrak{F})) = j_{q\ast} j_{q}^{\ast}
+C^p(\mathfrak{F}) = j_{q\ast} C^p(j^{\ast}_q \mathfrak{F})\tag{2.3}
+\end{equation*}\etiquette[2.3]{Vbis.eq2.3}
+\item si $\Uu$ est fermé et localement fini
+\begin{equation*}
+C^p(\mathcal{C}^q(\Uu, \mathfrak{F})) = C^p(j_{q\ast} j^{\ast}_q
+\mathfrak{F}) = j_{q\ast} C^p(j^{\ast}_q \mathfrak{F}){\quoi}.\tag{2.4}
+\end{equation*}\etiquette[2.4]{Vbis.eq2.4}
+\end{enumerate}
+Ainsi, pour obtenir une description unifiée de (\hyperref[Vbis.subsec1.2]{1.2}) et (\hyperref[Vbis.subsec1.3]{1.3}), on voit
+qu'il suffit de prendre la résolution « flasque canonique » de
+$j^{\ast}_q(\mathfrak{F})$ sur $X_q$ pour tout $q$, puis d'appliquer le
+foncteur $j_{q\ast}$ à cette résolution.
+
+\item La description précédente garde un sens pour tout système simplicial
+d'espaces topologiques au-dessus de $X$:
+\begin{gather*}
+\Delta^{0} \longrightarrow \Top/X\tag{3.1}\\
+[n] \longrightarrow X_n\notag
+\end{gather*}
+non nécessairement de la forme (\hyperref[Vbis.subsec2.1]{2.1}). Toutefois le double complexe,
+coaugmenté par~$\mathfrak{F}$
+\begin{equation*}
+\mathfrak{F} \longrightarrow (j_{q\ast} C^p
+(j^{\ast}_q(\mathfrak{F})))_{p, q}\tag{3.2}
+\end{equation*}\etiquette[3.2]{Vbis.eq3.2}
+ne définira pas en général une résolution de $\mathfrak{F}$.
+
+Ce travail est consacré à la recherche de conditions suffisantes pour
+que (\hyperref[Vbis.subsec3.2]{3.2}) définisse une résolution de $\mathfrak{F}$. Dans ce cas, la
+suite spectrale (\hyperref[Vbis.subsec1.1]{1.1}) se généralise en une suite spectrale
+\begin{equation*}
+\Hv{p} (H^q (X_p, j^{\ast}_p (\mathfrak{F}))) \Rightarrow H^{p + q} (X,
+\mathfrak{F}) \tag{3.3}
+\end{equation*}\etiquette[3.3]{Vbis.eq3.3}
+dite « suite spectrale de descente ».
+
+Dans\pageoriginale le cas de « coefficients constant », des suites
+spectrales analogues ont été obtenues par Segal (\cf \cite{SGA4-05bis:8}), par
+d'autres méthodes et pour d'autres « théories cohomologiques »,
+telles que la $K$-théorie. Segal se place dans la catégorie des
+CW-complexes : il utilise un foncteur « réalisation géométrique »
+qui, à un complexe semi-simplicial d'espaces topologiques, associe un
+nouvel espace topologique; ce nouvel espace doit se comparer au topos
+associé à un topos simplicial [\cf (1.2.12)].
+
+\item Au paragraphe 5, nous illustrons les critères obtenus en construisant
+pour tout espace analytique $X$ sur $\CC$, via la résolution des
+singularités, un système simplicial d'espaces analytiques non
+singuliers au-dessus de $X$,
+$$
+[n] \longrightarrow X_n
+$$
+tel que (\hyperref[Vbis.subsec3.2]{3.2}) définisse une résolution de
+$\mathfrak{F}$. Si l'on prend pour $\mathfrak{F}$ le faisceau constant
+$\CC$, on obtient en particulier une suite spectrale
+\begin{equation*}
+H^q(X_p, \CC) \Longrightarrow H^{p+q}(X, \CC)\tag{4.1}
+\end{equation*}\etiquette[4.1]{Vbis.eq4.1}
+qui exprime la cohomologie complexe de $X$ en terme de la
+cohomologie complexe d'espaces analytiques non singuliers. De plus,
+si $X$ est projectif, on peut supposer que tous les $X_p$ sont
+projectifs: c'est là l'ingrédient essentiel qui permet d'obtenir une
+espèce de « théorie de Hodge » pour $X$ (\cf \cite{SGA4-05bis:2}).
+
+\item Les constructions qui précédent s'étendent telles quelles lorsqu'on
+remplace le faisceau $\mathfrak{F}$ par un complexe borné
+inférieurement de faisceaux. Elles conduisent à des techniques de « localisation » dans les catégories dérivées:
+
+On sait que pour $X_{0}$ donné par (\hyperref[Vbis.subsec2.1]{2.1}), la flèche
+$$
+j^{\ast}_{0} : D^b(X) \longrightarrow D^b(X_{0})
+$$
+n'est pas fidèle en général ; on montrera qu'une donnée plus précise
+que celle de $j^{\ast}_{0}(K^{\bigdot})$\pageoriginale (pour
+$K^{\bigdot} \in D^{+}(X)$), faisant intervenir les $X_n$, permet
+parfois de reconstituer le complexe $K^{\bigdot}$.
+
+Les énoncés obtenus seront utilisés dans l'appendice de l'exposé
+XVII pour étendre la définition du foncteur $R f_{!}$ ($f$
+morphisme séparé de type fini entre schémas) au cas où $f$ n'est
+pas supposé compactifiable.
+
+Dans cette application, il n'est pas possible de ne considérer que
+des espaces topologiques remplacés ici par des sites étales de
+schémas. D'autre part, pour mener à bien les démonstrations, il sera
+nécessaire de considérer aussi bien des systèmes simpliciaux d'espaces
+que des systèmes multi-simpliciaux. Ceci explique, justifie ou excuse
+le degré d'hypergénéralité dont on partira.
+\end{enumerate}
+
+\section{Préliminaires}\etiquette[1]{Vbis.sec1}
+
+\subsection{Notations}\etiquette[1.1]{Vbis.subsec1.1}
+
+\subsubsection{}\etiquette[1.1.1]{Vbis.subsubsec1.1.1}
+Dans tout ce qui suit, $\Uu$ est univers tel que $\ZZ \in
+\Uu$: \emph{tous les topos considérés seront des
+$\Uu\text{-}topos$.}
+
+Soient $T$ et $T'$ deux topos : un morphisme $\varphi : T \to T'$
+consiste en la donnée d'un couple de foncteurs $\varphi_{\ast} : T \to
+T'$ et $\varphi^{\ast} : T'\to T$, muni d'une adjonction
+$$\Hom_{T'}(.,\varphi_{\ast}.) \isomto{\Hom}_{T}(\varphi^{\ast} . ,
+.),$$ tel que $\varphi^{\ast}$ soit exact à gauche (\ie préserve les
+limites projectives finies).
+
+Soient $(T, \mathcal{O}_{T})$ et $(T', \mathcal{O}_{T'})$ deux topos annelés:
+un morphisme de $(T, \mathcal{O}_{T})$ dans $(T', \mathcal{O}_{T'})$ est un
+couple $(\varphi, \theta)$ où $\varphi : T \to T'$ est un morphisme de
+topos et $\theta : \mathcal{O}_{T'} \to \varphi_{\ast}
+(\mathcal{O}_T)$ est un morphisme d'anneaux.
+
+\subsubsection{}\etiquette[1.1.2]{Vbis.subsubsec1.1.2}
+Nous ferons un usage constant du langage des catégories fibrées tel qu'il est
+exposé dans [\SGA 1 VI]; le lecteur pourra aussi se reporter à \cite{SGA4-05bis:4}.
+Fixons simplement quelques notations : si $E \to B$ est un foncteur fibrant
+(\resp cofibrant), pour un morphisme $m : i \to j$ dans $B$, nous noterons
+$m^{\ast} : E_{j} \to E_i$ (\resp $m_{\ast} : E_i \to E_j$) le foncteur « image réciproque  » (\resp \pageoriginale « image directe ») qui lui
+est associé; chacun de ces foncteurs est défini à un unique isomorphisme
+fonctoriel près. Si $\varphi : E \to E'$ est un $B$-foncteur, pour tout
+objet $i$ de $B$, nous noterons $\varphi_i : E_i \to E'_i$ le foncteur
+restriction de $\varphi$ à $E_i$.
+
+\subsubsection{}\etiquette[1.1.3]{Vbis.subsubsec1.1.3}
+
+Enfin, nous désignerons par $\Delta$ la catégorie suivante : les
+objets de $\Delta$ sont les ensembles ordonnés $[n] = \{ 0, 1,
+\ldots, n \}$ et les morphismes de $\Delta$ sont toutes les
+applications croissantes (au sens large). $\Delta^{+}$ (\resp
+$\Delta^{-}$) désignera la catégorie dont les objets sont ceux de
+$\Delta$ et dont les flèches sont les monomorphismes (\resp les
+épimorphismes) de $\Delta$. Nous utiliserons librement et au fur et
+à mesure des besoins les notations classiques introduites à propos de
+$\Delta$ [\cf \cite{SGA4-05bis:3} II 2].
+
+\subsection{D-topos}\etiquette[1.2]{Vbis.subsec1.2}
+
+\begin{enonce*}{Définition 1.2.1}\etiquette[1.2.1]{Vbis.def1.2.1}
+Soient $D$ une catégorie et $E \to D$ un foncteur fibrant et cofibrant. Nous
+dirons que $E$ est bifibrée en topos au-dessus de $D$ ou que $E$ est un
+$D$-topos si les conditions suivantes sont réalisées:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Pour tout objet $i$ de $D$ la catégorie fibre $E_i$ est un
+  topos.
+
+\item Pour tout morphisme $m : i \to j$ dans $D$, il existe un morphisme
+    de topos $f : E_j \to E_i$ tel que $f_{\ast} = m^{\ast}$ et $f^{\ast}
+    = m_{\ast}$.
+\end{enumerate}
+\end{enonce*}
+
+\begin{enonce*}[remark]{Remarque}
+La condition (b) peut encore s'exprimer, compte tenu de (a), en disant
+que le foncteur $m_{\ast}$ est exact à gauche\nde{Il faut prendre garde que dans une catégorie fibrée, $m_\star$ est adjoint à gauche de $m^\star$ et donc est exact à droite tautologiquement, cf. [\SGA 1 VI.10], ce qui explique les formules $f_{\ast} = m^{\ast}$ et $f^{\ast}=m_{\ast}$.}.
+\end{enonce*}
+
+Lorsque $D = \Delta$ (\resp $\Delta \times \Delta$) on parlera
+de \emph{topos simplicial} (\resp \emph{simplicial double}) pour désigner un
+$\Delta$-topos (\resp un $\Delta \times \Delta$-topos).
+
+Dans la pratique, nous rencontrerons des $D$-topos grâce aux
+considérations suivantes:
+
+\begin{enonce*}{Définition 1.2.2}\etiquette[1.2.2]{Vbis.def1.2.2}
+Soit\pageoriginale $\mathcal{E}$ une catégorie fibrée et cofibrée
+au-dessus de $D$. Nous dirons que $\mathcal{E}$ est \emph{bifibrée en duaux
+de topos au-dessus de $D$} si $\mathcal{E}^{\circ}$ est un
+$D^{\circ}$-topos.
+\end{enonce*}
+
+\begin{enonce*}[remark]{Remarque 1.2.3}
+Explicitement, $\mathcal{E}$ est bifibrée en duaux de topos au-dessus
+de $D$ si et seulement si les conditions suivantes sont réalisées:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Pour tout objet $i$ de $D$, la catégorie duale
+    \sisi{}{${\mathcal{E}_i}^\circ$} de la catégorie fibre
+    $\mathcal{E}_i$ est un topos.
+
+\item Pour tout morphisme $m : i \to j$ de $D$, le foncteur $m^{\ast}$ est exact à
+    droite\nde{Cf. note précédente. Autrement dit,  la famille de foncteurs $((m_{\ast})^\circ,(m^{\ast})^\circ)$ définit un système compatible de morphismes de topos $\mathcal{E}_i^\circ\rightarrow
+    \mathcal{E}_j^\circ$.}
+\end{enumerate}
+\end{enonce*}
+
+\setcounter{subsection}{2}
+\setcounter{subsubsection}{3}
+\subsubsection{}\etiquette[1.2.4]{Vbis.subsubsec1.2.4}
+Le lecteur trouvera au paragraphe 4 des exemples de catégories
+bifibrées en duaux de topos.
+
+\subsubsection{}\etiquette[1.2.5]{Vbis.subsubsec1.2.5}
+Soient $\mathcal{E} \to B$ une catégorie bifibrée en duaux de topos
+au-dessus de $B$ et $X : D^{\circ} \to B$ un foncteur. Alors on laisse
+au lecteur le soin de vérifier que
+$(\fprod{D^{\circ}}{\mathcal{E}}{B})^{\circ}$ est un $D$-topos que
+nous noterons $\bar{X}$.
+
+\subsubsection{}\etiquette[1.2.6]{Vbis.subsubsec1.2.6}
+Nous dirons souvent qu'un foncteur $X : D^{\circ} \to B$ est un
+$D$-\emph{objet de} $B$ et nous désignerons par $X_i$ l'image par ce
+foncteur d'un objet $i$ de $D$; les $D$-objets de $B$ forment une
+catégorie notée $D^{\circ}B$. Si $S$ est un objet de $B$, un
+$D$-objet de $B/S$ s'appellera un \emph{$D$-objet de $B$ augmenté
+  vers} $S$. La donnée d'un $D$-objet de $B$ augmenté vers $S$ est
+trivialement équivalente à la donnée d'un morphisme
+fonctoriel $X \to C^{D}_S$ où $X$ est un $D$-objet de $B$ et $C^D_S$
+le $D$-objet de $B$ constant de valeur $S$.
+
+Lorsque $D = \Delta$, on parlera d'\emph{objet simplicial} (\resp \emph{objet
+simplicial augmenté}).
+
+Nous utiliserons aussi des \emph{objets simpliciaux doubles} (en
+faisant $D = \Delta \times \Delta$).
+
+\subsubsection{}\etiquette[1.2.7]{Vbis.subsubsec1.2.7}
+Supposons\pageoriginale maintenant que la catégorie $B$ possède des
+produits fibrés finis.
+
+Soit $f : R \to S$ une flèche dans $B$ : le bifoncteur
+$$
+([n], X) \rightsquigarrow \Hom_{\Ens} ([n], \Hom_S (X, R))
+$$
+de $\Delta^{\circ} \times (B / S)^{\circ}$ dans $\Ens$ définit un
+foncteur:
+$$
+[n] \rightsquigarrow X_{[n]} = X_n
+$$
+en prenant pour $X_n$ un représentant du foncteur
+$$
+Z \rightsquigarrow \Hom_{\Ens} ([n], \Hom_S (Z, R))
+$$
+$(X_n \simeq \displaystyle\mathop{\overbrace{R \times_S \times R
+    \times \ldots \times_S R}}^{n+1 \text{ fois }})$
+
+Nous désignerons par $[R |_{f} S]$ ou $[R | S]$ l'objet semi-simplicial
+augmenté vers $S$ ainsi construit.
+
+Enfin, si $X$ et $X'$ sont deux objets semi-simpliciaux de $B$ (ou de $B/S$)
+et $$u : X \to X'$$ un morphisme fonctoriel. Nous introduirons pour des
+raisons techniques l'objet $$[X |_{u} X']$$ calculé dans la catégorie
+$\Delta^{\circ}B$. Celui-là s'interprète comme un objet simplicial
+double\nde{En clair, avec l'ordre habituel sur les indices, on a
+$$[[X |_u X']]_{(n,m)}=\displaystyle\mathop{\overbrace{X_m \times_{X'_m} X_m
+    \times \ldots \times_{X'_m} X_m}}^{n+1 \text{ fois }}$$ avec les
+    fonctorialités déduites de celles sur les facteurs.}
+ de $B$ que nous noterons alors $[[X |_u X']]$:
+On dispose en effet d'un isomorphisme canonique de catégories:
+$$
+\Delta^{\circ} (\Delta^{\circ} B) \xrightarrow{\sim} (\Delta
+\times \Delta)^{\circ} B{\quoi}.
+$$
+
+Nous allons revenir maintenant à la notion générale de $D$-topos.
+
+\subsubsection{}\etiquette[1.2.8]{Vbis.subsubsec1.2.8}
+Soient $E$ un $D$-topos: nous désignerons par $\Ysheaf{\Gamma}(E)$ la
+catégorie $\Hom_D (D, E)$. Soit $f : D'\to D$ un foncteur : la catégorie
+$\fprod{D'}{E}{D}$ est un $D'$-topos et, par composition avec $f$, on obtient
+un foncteur
+$$
+f^{\ast} : \Ysheaf{\Gamma} (E) \longrightarrow \Ysheaf{\Gamma} (\fprod{D'}{E}{D}){\quoi}.
+$$
+
+Dans\pageoriginale le cas où $D'$ est réduite à un objet $i$ de $D$ (avec
+pour seul morphisme l'identité de $i$) et pour $f$ l'inclusion canonique
+notée $e_i$, on peut prendre pour $\fprod{D'}{E}{D}$ la catégorie fibre $E_i$
+et $e^{\ast}_i$ s'identifie alors au foncteur
+« \emph{évaluation en $i$} ».
+
+\begin{enonce*}{Proposition 1.2.9}\etiquette[1.2.9]{Vbis.prop1.2.9}
+Si $D'$ est une $\Uu$-petite catégorie, le foncteur $f^{\ast}$
+possède un adjoint à droite et à gauche (notés respectivement
+$f_{\ast}$ et $f_{!}$).
+\end{enonce*}
+
+Cela résulte d'une légère généralisation du lemme de Kan [III 1.1],
+dont nous ferons un usage constant.
+
+\begin{enonce*}{Lemme 1.2.10}\etiquette[1.2.10]{Vbis.lem1.2.10}
+Soient $I$, $J$ et $A$ trois catégories au-dessus d'une même catégorie $B$:
+on suppose que $I$ est $\Uu$-petite et que $A$ est fibrée et cofibrée
+au-dessus de $B$. On se donne un $B$-foncteur $f : I \to J$ et l'on désigne
+par $f^{\ast}$ le foncteur
+$$
+\Hom_B (J, A) \longrightarrow \Hom_B (I, A)
+$$
+défini par composition avec $f$. Alors si dans chaque fibre de $A$
+au-dessus de $B$, les $\Uu$-limites inductives (\resp
+projectives) existent, $f^{\ast}$ possède un adjoint à gauche (\resp à
+droite).
+\end{enonce*}
+
+\begin{enonce*}[remark]{Preuve}
+Nous n'indiquerons que la démonstration de l'existence du foncteur
+adjoint à gauche, la partie \resp du lemme s'en déduisant par
+dualité. Nous utiliserons le fait suivant, dont la vérification est
+laissée au lecteur:
+\end{enonce*}
+
+\begin{enonce*}{Lemme 1.2.10.1}\etiquette[1.2.10.1]{Vbis.lem1.2.10.1}
+Soient $A$ une catégorie bifibrée au-dessus d'une catégorie $B$, $b$
+un objet de $B$ et $(F_{\lambda})_{\lambda \in \Lambda}$ un foncteur d'une
+catégorie $\Lambda$ dans la fibre $A_b$; quels que soient $G$ dans $A_{b'}$,
+et $u : b'\to b$ (\resp $u : b \to b'$) dans $B$, on a une bijection:
+$$
+\Hom_u(G, \varprojlim F_{\lambda}) \xrightarrow{\sim}
+\varprojlim \Hom_u (G, F_{\lambda})
+$$
+(\resp $\Hom_u (\varinjlim F_{\lambda}, G)
+\xrightarrow{\sim}\varprojlim \Hom_u (F_{\lambda}, G)$)
+
+chaque fois que le premier membre est défini.
+\end{enonce*}
+
+\sisi{$+$}{} Ceci\pageoriginale étant, soit $I \amalg_f J$ la catégorie sur
+$B$ définie par:
+$$
+\ob (I \textstyle{\amalg}_f J) = \ob (I) \amalg \ob (J)
+$$
+\begin{equation*}
+\Hom(x, y)=
+\begin{cases}
+\Hom_I(x, y) & \text{ si } x, y, \in \ob (I)\\
+\Hom_J(x, y) & \text{ si } x, y, \in \ob (J)\\
+\Hom_J(f(x), y) & \text{ si } x \in \ob(I) \text{ et } y \in \ob(J)\\
+∅ & \text{ si } x \in \ob(J) \text{ et } y \in
+\ob(I){\quoi}.\\
+\end{cases}
+\end{equation*}
+
+\sisi{$+$}{} La catégorie $\Hom_B(I \amalg_f J, A)$ est équivalente à la
+catégorie des triples formés d'un B-foncteur $F$ de $I$ dans $A$, d'une
+$B$-foncteur $G$ de $J$ dans $A$ et d'un morphisme $\varphi$ de $B$-foncteur
+de $F$ dans $G \circ f = f(G)$.
+
+\sisi{$+$}{} Pour tout objet $j$ de $J$, on désigne par $I /j$ la catégorie
+des objets de $I$ « placés par $f$ au-dessus de $j$  »: les objets de $I
+/j$ sont les couples $(i, \alpha)$ où $i$ est un objet de $I$ et $\alpha : i
+\to j$ une flèche dans $I \amalg_f J$, les morphismes de $I/j$ étant ceux
+de $I\amalg_{f}J/j$. Si $p_I$ et $p_J$ sont les projections de $I$ et $J$ sur
+$B$, et si $(i, \alpha)$ est un objet de $I/j$, on désignera par
+$\alpha_{\ast} : A_{p_{I}(i)} \to A_{p_{J}(j)}$ le foncteur
+$p_{J}(\alpha)_{\ast}$.
+
+\sisi{$+$}{} Se donner un $B$-foncteur de $I \amalg_f J$ dans $A$ revient
+  encore à se donner $F \in \Hom_B (I, A)$, $G \in \Hom_B (J, A)$ et
+  un morphisme fonctoriel en $j$
+$$
+\psi_j : \varinjlim_{(i, \alpha)\in I/j} \alpha_{\ast}(F(i))
+\longrightarrow G(j){\quoi}.
+$$
+(La fonctorialité en $j$ du membre de gauche résulte de
+(\hyperref[Vbis.lem1.2.10.1]{1.2.10.1})). L'adjoint à gauche de $f^{\ast}$ est donc donné par la
+formule:
+$$
+f_{!}(F) (j) = \varinjlim_{(i, \alpha)\in I/j}
+\alpha_{\ast}(F(i)){\quoi}.
+$$
+
+\begin{enonce*}{Corollaire 1.2.11}\etiquette[1.2.11]{Vbis.cor1.2.11}
+Soient\pageoriginale $E$ un $D$-topos et $i$ un objet de $D$; le
+foncteur $e^{\ast}_i$ admet un adjoint à gauche (\resp à droite défini
+par) :
+$$
+e_{i!}(a)(j) = \coprod_{\alpha \in \Hom(i, j)} \alpha_{\ast}(a)
+\left( \emph{\resp} e_{i\ast} (a) (j) = \prod_{\alpha \in \Hom(j,
+  i)} \alpha^{\ast}(a)\right)
+$$
+où a est un objet de $E$ au-dessus de $i$.
+\end{enonce*}
+
+\begin{enonce*}{Proposition 1.2.12}\etiquette[1.2.12]{Vbis.prop1.2.12}
+Soient $D$ une $\Uu$-petite catégorie et $E$ un $D$-topos : alors la
+catégorie $\Ysheaf{\Gamma}(E)$ est un $\Uu$-topos.
+\end{enonce*}
+
+\sisi{$+$}{} On vérifie « fibre par fibre », à l'aide de
+(\hyperref[Vbis.lem1.2.10.1]{1.2.10.1}), que la catégorie $\Ysheaf{\Gamma}(E)$ possède les
+propriétés suivantes:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\item Les limites projectives finies sont représentables.
+\item Les sommes directes indexées par un élément de $\Uu$ sont
+  représentables. Elles sont disjointes et universelles.
+\item Les relations d'équivalence sont effectives universelles.
+\end{enumerate}
+
+\sisi{$+$}{} Il reste à montrer que $\Ysheaf{\Gamma}(E)$ possède un
+système de générateurs indexé par un élément de $\Uu$: or, si pour tout
+objet $i$ de $D$, $(G_{i\lambda})_{\lambda \in \wedge_{i}}$ est un système
+de générateurs de $E_i$ (où $\wedge_i$ est un ensemble $\Uu$-petit), la
+famille $(e_{i!}(G_{i\lambda}))_{i, \lambda}$ est un système de générateurs
+de $\Ysheaf{\Gamma}(E)$.
+
+\setcounter{subsection}{2}
+\setcounter{subsubsection}{12}
+\subsubsection{}\etiquette[1.2.13]{Vbis.subsubsec1.2.13}
+Nous allons introduire maintenant la notion de morphisme entre
+$D$-topos. Précisons tout d'abord que si $F$ et $F'$ sont deux
+catégories au-dessus d'une même catégorie $B$ et si $T : F \to F'$ est
+un $B$-foncteur, un \emph{$B$-adjoint à gauche} à $T$ sera un
+foncteur $S : F'\to F$ adjoint à gauche à $T$ tel que les morphismes
+canoniques $1 \to T^{\circ}S$ et $S \circ T \to 1$ soient des
+$B$-morphismes de foncteurs. Sous ces conditions, on vérifie
+trivialement que $T$ est cartésien et que $S$ est cocartésien.
+
+\begin{enonce*}{Définition 1.2.14}\etiquette[1.2.14]{Vbis.def1.2.14}
+Soient\pageoriginale $E$ et $E'$ deux $D$-topos: un morphisme de $E$
+dans $E'$ est
+un couple de $D$-foncteurs $\Phi_{\ast} : E \to E'$ et $\Phi^{\ast} :
+E'\to E$, muni d'une $D$-adjonction $\Hom(\Phi^{\ast}. , .)
+\xrightarrow{\displaystyle\mathop{\sim}^{\xi}} (. , \Phi_{\ast}
+{}^{\bigdot})$, tel que pour tout objet $i$ de $D$, le couple
+$(\Phi_{\ast_{i}}, \Phi^\ast_{i})$, muni de l'adjonction induite par
+$\xi$, soit un morphisme de topos de $E_i$ dans $E'_i$.
+\end{enonce*}
+
+\begin{enonce*}{Proposition 1.2.15}\etiquette[1.2.15]{Vbis.prop1.2.15}
+Soient $E$ et $E'$ deux $D$-topos et $(\Phi_{\ast}, \Phi^{\ast}) : E \to E'$
+un morphisme. On suppose que $D$ est une $\Uu$-petite catégorie, alors le
+couple $(\Gamma(\Phi_{\ast}), \Gamma(\Phi^{\ast})): \Ysheaf{\Gamma}(E) \to
+\Ysheaf{\Gamma}(E')$ est un morphisme de topos.
+\end{enonce*}
+
+Découle trivialement de la définition précédente.
+
+Le lemme suivant, dont la démonstration est laissée au lecteur, permet
+de construire des morphismes de $D$-topos.
+
+\begin{enonce*}{Lemme 1.2.16}\etiquette[1.2.16]{Vbis.lem1.2.16}
+Soient $E$ et $E'$ deux catégories bifibrées au-dessus d'une même
+catégorie $D$, et $\Phi$ un $D$-foncteur \emph{cartésien} de $E$ dans $E'$
+tel que, pour tout objet $i$ de $D$, $\Phi_i : E_i \to E'_{i}$ possède
+un adjoint à gauche. Alors, le choix pour tout $i$, d'une adjoint à
+gauche à $\Phi_i$ détermine canoniquement un $D$-foncteur $\psi :
+E'\to E$, $D$-adjoint à gauche à $\Phi$.
+\end{enonce*}
+
+\begin{enonce*}[remark]{Scholie 1.2.17}\etiquette[1.2.17]{Vbis.sch1.2.17}
+Sous les conditions de (\hyperref[Vbis.lem1.2.16]{1.2.16}), supposons que $E$ et $E'$ soient deux
+$D$-topos et que pour tout $i$ objet de $D$, tout adjoint à gauche du
+foncteur $\Phi_i$ soit exact à gauche: alors, si $\psi : E'\to E$ est
+un $D$-adjoint à gauche à $\Phi$, le couple $(\Phi, \psi) : E \to E'$
+est un morphisme de $D$-topos.
+\end{enonce*}
+
+Soient maintenant $\mathcal{E} \to B$ une catégorie bifibrée en duaux
+de topos au-dessus de $B$, $X$ et $X'$ deux $D$-objets de $B$ et
+$\alpha : X \to X'$ un morphisme fonctoriel. Alors le choix de
+clivages normalisés pour $\mathcal{E}$ et $\mathcal{E}^{\circ}$
+détermine canoniquement un morphisme $(\alpha_{\ast}, \alpha^{\ast}) :
+\bar{X} \to \bar{X}'$ de $D$-topos tel que, pour tout
+objet\pageoriginale $i$ de $D
+(\alpha_{\ast_{i}}, \alpha^{\ast}_i) : \bar{X}_i \to \bar{X}'_i$ soit
+égal à $(\alpha_{i\ast}^{\circ}, \alpha_i^{\ast^{\circ}})$, où
+$\alpha_i : X_i \to X'_i$ est la flèche de $B$ donnée par
+$\alpha$. Pour deux choix différents de clivages pour $\mathcal{E}$ et
+$\mathcal{E}^{\circ}$, il existe un unique $D$-isomorphisme entre les
+morphismes ainsi obtenus. (Pour la vérification de ces faits, le
+lecteur pourra se reporter à (\cite{SGA4-05bis:4} - (1.17)).
+
+\subsection{D-topos annelé}\etiquette[1.3]{Vbis.subsec1.3}
+
+\begin{enonce*}{Définition 1.3.1}\etiquette[1.3.1]{Vbis.def1.3.1}
+Un $D$-topos annelé est un couple $(E, A)$ où $E$ est un $D$-topos et $A$ un
+anneau de $\Ysheaf{\Gamma}(E)$.
+\end{enonce*}
+
+On vérifie alors que pour tout objet $i$ de $D$, $A_i$ est un anneau du topos
+$E_i$ et que pour tout morphisme $m : i \to j$ la flèche canonique $A_i \to
+m^{\ast} (A_j)$ est un homomorphisme d'anneaux.
+
+\begin{enonce*}{Définition 1.3.2}\etiquette[1.3.2]{Vbis.def1.3.2}
+Soient $(E, A)$ et $(E', A')$ deux $D$-topos annelés : un morphisme de $(E,
+A)$ dans $(E', A')$ est un couple $(\Phi, \theta)$ où $\Phi : E \to E'$ est
+un morphisme de $D$-topos et $\theta:A' \to \Gamma (\Phi_{\ast})(A)$ est un
+homomorphisme d'anneaux.
+\end{enonce*}
+
+\begin{enonce*}[remark]{Remarque 1.3.3}\etiquette[1.3.3]{Vbis.rem1.3.3}
+Un morphisme $\Phi : (E, A) \to (E', A')$ de $D$-topos annelés induit un
+morphisme $(\Gamma(\Phi), \theta) : (\Ysheaf{\Gamma}(E), A) \to
+(\Ysheaf{\Gamma}(E), A')$ de $\Uu$-topos annelés lorsque $D$ est une
+$\Uu$-petite catégorie (\cf 1.2.15).
+\end{enonce*}
+
+\setcounter{subsubsection}{3}
+\subsubsection{}\etiquette[1.3.4]{Vbis.subsubsec1.3.4}
+Soit $\mathcal{E} \to B$ une catégorie bifibrée en duaux de topos au-dessus
+de $B$ et $\mathcal{O}$ un anneau de $\Ysheaf{\Gamma}(\mathcal{E}^{\circ}) =
+\Hom_{B^{\circ}}(B^{\circ}, \mathcal{E}^{\circ})$. Si $X : D^{\circ} \to B$
+est un $D$-objet de $B$, le $D$-topos $\bar{X}$ (\cf (1.2.5)) est
+naturellement annelé par \sisi{$(\mathcal{O}. X)^{\circ} : D \to
+\mathcal{E}$}{$(\mathcal{O}. X^{\circ}) : D \to \mathcal{E}$} et l'on
+désignera par $(\bar{X}, \mathcal{O})$ le $D$-topos annelé ainsi construit.
+Si $\alpha : X \to X'$ est un morphisme fonctoriel, le morphisme
+$(\alpha_{\ast}, \alpha^{\ast}) : \bar{X} \to \bar{X}'$ (\cf
+\hyperref[Vbis.sch1.2.17]{1.2.17}) induit canoniquement un morphisme $(\bar{X},
+\mathcal{O}) \to (\bar{X}', \mathcal{O})$ de $D$-topos annelés encore noté
+$\alpha$.
+
+\subsubsection{}\etiquette[1.3.5]{Vbis.subsubsec1.3.5}
+Un $D$-topos annelé $(E, A)$ définit canoniquement une catégorie
+$\Ysheaf{\Mod}(E, A)$ bifibrée en catégorie abéliennes au-dessus de $D$ dont
+la fibre en un objet $i$ de \pageoriginale $D$ est la catégorie $\Mod(E_i,
+A_i)$ des modules sur le topos annelé $(E_i, A_i)$. Avec ces notations, la
+catégorie des modules de $\Ysheaf{\Gamma}(E)$ sur $A$, notée
+$\Mod(\Ysheaf{\Gamma}(E), A)$ s'identifie à la catégorie $\Hom_D
+(D,\Ysheaf{\Mod}(E,A))$.
+
+\subsubsection{}\etiquette[1.3.6]{Vbis.subsubsec1.3.6}
+Soit $\varphi = (\Phi, \theta) : (E, A) \to (E', A')$ un morphisme de
+$D$-topos annelés. Il définit deux foncteurs $\varphi_{\ast} :
+\underline{\Mod}(E, A) \to \underline{\Mod}(E', A')$ et
+$\varphi^{\ast} : \underline{\Mod}(E', A') \to \Mod(E, A)$ entre les
+catégories de modules correspondantes:
+
+\begin{itemize}
+\item Soit $M$ un objet de $\Ysheaf{\Mod}(E,A)$ au-dessus d'un objet $i$
+    de $D$: $\Phi_{\ast}(M)$ est un module sur $\Phi_{\ast}(A_{i})$ et,
+    grâce au morphisme $\theta_{i}:A'_{i}\to \Phi_{\ast}(A_{i})$, on en
+    déduit un module sur $A'_{i}$ noté $\varphi_{\ast}(M)$. Ce foncteur
+    $\varphi_{\ast}$ sera appelé le \emph{foncteur image directe par le
+    morphisme} $\varphi$.
+
+\item  Soit $M'$ un objet de $\Ysheaf{\Mod}(E', A')$ au-dessus d'un objet
+    $i$ de $D : \Phi^{\ast}(M')$ est un module sur $\Phi^{\ast}(A'_{i})$
+    et $\varphi^{\ast}(M') = \Phi^{\ast}(M') \otimes_{\Phi^{\ast}(A'_i)}
+    A_i$ est canoniquement muni d'une structure de module sur $A_i$. Au
+    moyen de (\hyperref[Vbis.lem1.2.16]{1.2.16}), on définit ainsi un foncteur
+    $\varphi^{\ast}$, adjoint à gauche à $\varphi_{\ast}$, et appelé
+    \emph{foncteur image réciproque par le morphisme} $\varphi$.
+\end{itemize}
+
+\paragraph{}\etiquette[1.3.6.1]{Vbis.par1.3.6.1}
+Nous dirons que $\varphi$ est \emph{plat} si le foncteur
+$\Gamma(\varphi^{\ast})$ est exact.
+
+\begin{enonce*}{Proposition 1.3.7}\etiquette[1.3.7]{Vbis.prop1.3.7}
+Soient $f : D'\to D$ un foncteur et $(E, A)$ un $D$-topos
+annelé. Alors le foncteur canonique
+$$
+f^{\ast} : \Mod(\Ysheaf{\Gamma}(E), A) \longrightarrow
+\Mod(\Ysheaf{\Gamma}(\fprod{E}{D'}{D}), A \circ f)
+$$
+possède un adjoint à droite et à gauche si $D'$ est une
+$\Uu$-petite catégorie. En particulier, il est exact.
+\end{enonce*}
+
+Cela résulte immédiatement de (\hyperref[Vbis.lem1.2.10]{1.2.10}) et de l'identification
+$\Hom_D(D, \Ysheaf{\Mod}(E, A)) \simeq \Mod(\Ysheaf{\Gamma}(E), A)$.
+
+Conformément \pageoriginale aux notations générales, nous noterons
+$f_!$ (\resp $f_{\ast}$) l'adjoint à gauche (\resp à droite) de
+$f^{\ast}$.
+
+\setcounter{subsubsection}{7}
+\subsubsection{}\etiquette[1.3.8]{Vbis.subsubsec1.3.8}
+Les considérations qui suivent nous fournissent un procédé de calcul commode
+pour les foncteurs dérivés du type $$\sisi{\RR^{+}}{R} \Gamma(\varphi_{\ast})
+: D^{+} (\Ysheaf{\Gamma}(E), A) \to D^{+}(\Ysheaf{\Gamma}(E'), A'),$$ où
+$\varphi:(E,A)\to (E',A')$ est un morphisme de $D$-topos annelé (\cf
+(\hyperref[Vbis.subsubsec1.3.6]{1.3.6})). [Si $(S,
+  \mathcal{O}_S)$ est un topos annelé, nous notons $D^{+}(S,
+  \mathcal{O}_S)$ la catégorie dérivée \sisi{}{bornée inférieurement}\nde{
+  Si $f: (S,\mathcal{O}_S)\rightarrow (T,\mathcal{O}_T)$ est un morphisme plat de topos annelés,
+  on note simplement $f^*$ (et non $L^+(f^*)$) le foncteur dérivé $$f^*:\ D^+(S,\mathcal{O}_S)
+  \rightarrow D^+(T,\mathcal{O}_T)$$ comme dans la version initiale.}
+  de la catégorie des $\mathcal{O}_S$-modules de $S$].
+
+\subsubsection{}\etiquette[1.3.9]{Vbis.subsubsec1.3.9}
+Ce calcul formel pourra d'ailleurs s'appliquer à d'autres contextes
+tels que la « descente en cohomologie $\ell$-adique » (\cf \SGA
+5).
+
+\begin{enonce*}{Proposition 1.3.10}\etiquette[1.3.10]{Vbis.prop1.3.10}
+Soit $D$ une $\Uu$-petite catégorie. Si $(E, A)$ est un $D$-topos annelé, on
+désigne par $I_{(E, A)}$ l'ensemble des objets de $\Mod(\Ysheaf{\Gamma}(E),
+A)$ isomorphe à un objet de la forme $\prod_{i \in \ob (D)} e_{i\ast}
+(Q_i)$, où, pour tout objet $i$ de $D$, $Q_i$ est totalement acyclique
+\emph{(\cf V 4.1)}\footnote{« Flasque  » dans la terminologie de $V$.};
+$I_{(E, A)}$ vérifie les propriétés suivantes:
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman {enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Pour tout objet $F$ de $\Mod(\Ysheaf{\Gamma}(E), A)$ et tout objet
+    $i$ de $D$, $e^{\ast}_i(F)$ est totalement acyclique.
+
+\item Tout objet de $\Mod(\Ysheaf{\Gamma}(E), A)$ s'injecte dans un objet
+    de $I_{(E, A)}$.
+
+\item $I_{(E, A)}$ est stable par sommes directes finies.
+
+\item Pour tout morphisme $\varphi : (E, A) \to (E', A')$ de $D$-topos
+    annelés, le foncteur $\Gamma(\varphi_{\ast})$ transforme tout
+    complexe acyclique de $C^{+}(\Ysheaf{\Gamma}(E), A)$, formé d'objets
+    de $I_{(E, A)}$, en un complexe acyclique formé d'objets de $I_{(E',
+    A')}$.
+\end{enumerate}
+\end{enonce*}
+
+\noindent{\underline{\emph{Démonstration}}}
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Compte tenu de l'expression explicite de $e_{i^{\ast}}$ (\cf
+  (1.2.1.1)), il suffit de montrer le lemme suivant:
+
+\begin{enonce*}{Lemme 1.3.10.1}\etiquette[1.3.10.1]{Vbis.lem1.3.10.1}
+Soient\pageoriginale $(S, \mathcal{O}_S)$ un topos annelé et $(F_t)_{t
+  \in T}$ une
+famille de $\mathcal{O}_S$-modules totalement acycliques indexée par
+un ensemble $T$ $\Uu$-petit. Alors
+$\prod_{t\in T} F_t$ est totalement acyclique.
+\end{enonce*}
+
+Soit $X$ un objet de $S$: il existe une suite spectrale
+\begin{equation*}
+H^{p} (X, {\mathop{\prod}_{t\in T}}^{(q)} F_t) \longrightarrow
+\mathop{\prod}_{t\in T} H^{p+q} (X, F_t)\tag{1.3.10.2}
+\end{equation*}\etiquette[1.3.10.2]{Vbis.eq1.3.10.2}
+où $\prod_{t\in T}^{(q)}$ désigne le $q$-ième dérivé du foncteur « produit indexé par $T$  ». Comme $\prod_{t\in T}^{(q)} F_t$ est le
+faisceau associé au préfaisceau $U \rightarrow \prod_{t\in T} H^q (U,
+F_t)$, \eqhyperref[Vbis.eq1.3.10.2]{1.3.10.2}
+  dégénère et on obtient des isomorphismes
+\begin{equation*}
+H^n(X, \prod_{t\in T} F_t) \xrightarrow{\sim}
+\prod_{t\in T} H^n(X, F_t)\tag{1.3.10.3}
+\end{equation*}\etiquette[1.3.10.3]{Vbis.eq1.3.10.3}
+d'où finalement $H^n(X, \prod_{t\in T}F_t) = 0$ pour tout $n>0$.
+
+\item Soit $F$ un objet de $\Mod(\Ysheaf{\Gamma}(E), A)$; on choisit pour
+    tout $i$ un monomorphisme $F_i \to Q_i$, où $Q_i$ est totalement
+    acyclique dans $\Mod(E_i, A_i) : e_{i\ast}(F_{i})\to e_{i\ast}(Q_i)$
+est alors un
+  monomorphisme (puisque $e_{i\ast}$ possède un adjoint à gauche), et
+  la flèche canonique:
+\begin{equation*}
+F \to \prod_{i \in \Ob (D)} e_{i\ast}(F_i) \to \prod_{i \in \Ob (D)}e_{i\ast}(Q_i)\tag{1.3.10.4}
+\end{equation*}\etiquette[1.3.10.4]{Vbis.eq1.3.10.4}
+est encore un monomorphisme, comme on le vérifie trivialement.
+
+\item Démonstration laissée au lecteur.
+
+\item On laisse aussi au lecteur le soin de vérifier que
+  $\Gamma(\varphi_{\ast})$ transforme un objet de $I_{(E, A)}$ en un
+  objet de $I_{(E', A')}$. Ce point établi, il suffit, compte tenu de
+  (i), de vérifier le lemme suivant:
+\end{enumerate}
+
+\begin{enonce*}{Lemme 1.3.10.5}\etiquette[1.3.10.5]{Vbis.lem1.3.10.5}
+Si\pageoriginale $0 \to F \to G \to H \to 0$ est une suite exacte courte dans
+$\Mod(\Ysheaf{\Gamma}(E), A)$, avec $F \in I_{(E, A)}$ et $G \in I_{(E, A)}$,
+la suite $$0 \to \Gamma(\varphi_{\ast})(F)) \to \Gamma((\varphi_{\ast})(G))
+\to \Gamma(\varphi_{\ast}(H)) \to 0$$ est exacte dans
+$\Mod(\Ysheaf{\Gamma}(E'), A')$.
+\end{enonce*}
+
+Il suffit de remarquer que $e^{\ast}_i(H)$ est acyclique pour tout
+objet $i$ de $D$ et que le calcul de $\Gamma(\varphi_{\ast})$ se fait
+fibre par fibre, ce qui achève la démonstration de (\hyperref[Vbis.prop1.3.10]{1.3.10}).
+
+\begin{enonce*}{Corollaire 1.3.11}\etiquette[1.3.11]{Vbis.cor1.3.11}
+Soit $\varphi : (E, A) \to (E', A')$ un morphisme de $D$-topos annelés. On
+peut calculer le foncteur $\sisi{\RR^+}{R}\Gamma(\varphi_{\ast})$ au moyen de
+résolutions formées d'objets de $I_{(E, A)}$.
+\end{enonce*}
+
+Soit $L \subset K^{+} (\Ysheaf{\Gamma}(E), A)$ la sous-catégorie pleine des
+complexes fermés d'objets de $I_{(E, A)}$: $L$ est une sous-catégorie
+triangulée en vertu de ((\hyperref[Vbis.prop1.3.10]{1.3.10}), (ii)) et on peut lui
+appliquer le théorème (\hyperref[Vbis.subsec5.1]{5.1}) de [\cite{SGA4-05bis:7} - Chap.1].
+
+\begin{enonce*}{Corollaire 1.3.12}\etiquette[1.3.12]{Vbis.cor1.3.12}
+Soit $\varphi : (E, A) \to (E', A')$ un morphisme de $D$-topos
+annelés; pour tout objet $i$ de $D$ on désigne par $\varphi_i :
+(E_i, A_i) \to (E'_i, A'_i)$ le morphisme de $D$-topos annelé induit
+par $\varphi$ au-dessus de $i$. Alors le diagramme
+\[
+\xymatrix@C=2.75cm@R=1.75cm{
+D^{+}(\Ysheaf{\Gamma}(E),A) \ar[r]^{\sisi{\RR^{+}(e_i^{\ast})}{e_i^{\ast}}} \ar[d]_{\sisi{\RR^{+}}{R}\Gamma(\varphi_{\ast})} & D^{+}(E_i,A_i) \ar[d]^{\sisi{\RR^{+}}{R}\varphi_{i\ast}}\\
+D^{+}(\Ysheaf{\Gamma}(E'),A')  \ar[r]_{\sisi{\RR^{+}(e_i^{\ast})}{e_i^{\ast}}} &  D^{+}(E'_i,A'_i)\\
+}
+\]
+est essentiellement commutatif.
+\end{enonce*}
+
+On dispose d'un morphisme
+$$
+\sisi{\RR^{+}(e^{\ast}_i)}{e^{\ast}_i}  \circ \sisi{\RR^{+}}{R} \Gamma(\varphi_{\ast}) \to
+\sisi{\RR^{+}}{R}\varphi_{i\ast} \circ \sisi{\RR^{+}(e^{\ast}_i)}{e^{\ast}_i}
+$$
+dont on vérifie que $i$ est un isomorphisme, grâce à (\hyperref[Vbis.prop1.3.10]{1.3.10}).
+
+\begin{enonce*}[remark]{Remarque 1.3.13}\etiquette[1.3.13]{Vbis.rem1.3.13}
+Désignons\pageoriginale par $\mathcal{A}_{(E, A)}$ l'ensemble des objets $F$
+de $\Mod(\Ysheaf{\Gamma}(E), A)$ tels que $e^{\ast}_i(F)$ soit totalement
+acyclique pour tout objet $i$ de $D$. Il résulte de la démonstration de
+(\hyperref[Vbis.prop1.3.10]{1.3.10}) que l'on peut calculer
+$\sisi{\RR^{+}}{R}\Gamma(\varphi_{\ast})$ au moyen de résolutions formés
+d'objets de $\mathcal{A}_{(E, A)}$; $i$ est ce que l'on fait en particulier
+dans l'introduction en utilisant la « résolution flasque
+canonique »\footnote{\cf exposé XVII pour la généralisation de cette
+  notion.}. D'après [(\hyperref[Vbis.prop1.3.10]{1.3.10})(i)], on a $I_{(E, A)} \subset
+  \mathcal{A}_{(E, A)}$, mais nous utiliserons explicitement $I_{(E,
+    A)}$ dans le paragraphe 2.
+\end{enonce*}
+
+\section{La méthode de la descente cohomologique}\etiquette[2]{Vbis.sec2}
+
+Dans ce numéro, $D$ est une catégorie $\Uu$-petite.
+
+\subsection{Généralités. Notations}\etiquette[2.1]{Vbis.subsec2.1}
+
+\subsubsection{}\etiquette[2.1.1]{Vbis.subsubsec2.1.1}
+Soit $(S, \mathcal{O}_S)$ un topos annelé. La catégorie $S \times D$, muni de
+la projection canonique $S \times D \to D$, est un $D$-topos; de plus la
+section de valeur constante $\mathcal{O}_S$ définit un $D$-topos annelé $(S
+\times D, \mathcal{O}_S)$ appelé $D$-topos \emph{annelé constant de valeur}
+$(S, \mathcal{O}_S)$. Avec ces notations, la catégorie
+$\Mod(\Ysheaf{\Gamma}(S \times D), \mathcal{O}_S)$ s'identifie à la
+catégorie des foncteurs covariants de $D$ dans $\Mod(S, \mathcal{O}_S)$.
+
+On définit un foncteur exact:
+$$
+\epsilon^{\ast} : \Mod(S, \mathcal{O}_S) \to \Mod(\Ysheaf{\Gamma}(S \times
+D), \mathcal{O}_{S})
+$$
+en associant à tout module $F$ sur $S$ le foncteur constant de valeur $F$.
+Le foncteur $\epsilon^{\ast}$ possède un adjoint à droite
+$\epsilon_{\ast}$ qui associe à tout foncteur $H : D \to
+\Mod(\mathcal{O}_S)$ sa limite projective, le morphisme d'adjonction $F \to
+\epsilon_{\ast} \epsilon^{\ast}(F)$ étant celui qui envoie $F$ dans la limite
+projective du foncteur constant de valeur $F$; ainsi $\epsilon^{\ast}$ est
+pleinement fidèle si et seulement si $D$ est connexe.
+
+\begin{enonce*}{Définition 2.1.2}\etiquette[2.1.2]{Vbis.def2.1.2}
+Soit\pageoriginale $(E, A)$ un $D$-topos annelé; une augmentation de
+$(E, A)$ est un
+morphisme (de $D$-topos annelés) de $(E, A)$ dans un $D$-topos annelé
+constant. Un $D$-topos annelé muni d'une augmentation sera appelé un
+$D$-topos annelé augmenté.
+\end{enonce*}
+
+\setcounter{subsubsection}{2}
+\subsubsection{}\etiquette[2.1.3]{Vbis.subsubsec2.1.3}
+Soit $\mathcal{E} \to B$ une catégorie bifibrée en duaux de topos et
+$\mathcal{O}$ un anneau de $\Ysheaf{\Gamma}(\mathcal{E}^{\circ}) =
+\Hom_{B^{\circ}}(B^{\circ}, \mathcal{E}^{\circ})$. Soit $S$ un objet de $B$;
+un foncteur $D^{\circ} \to B/S$, c'est-à-dire un morphisme fonctoriel $X
+\xrightarrow{\theta} C^D_S$, où $X$ est un foncteur $D^{\circ} \to B$ (\cf
+(\hyperref[Vbis.subsubsec1.2.6]{1.2.6})), induit une augmentation:
+$$
+\displaylines{\hfill\theta : (\bar{X}, \mathcal{O}) \longrightarrow (\mathcal{E}^{\circ}_S
+\times D, \mathcal{O}_S)\hfill\llap{(\cf (1.3.4)){\quoi}.}}
+$$
+désignerons par la même lettre que le morphisme fonctoriel qui lui
+donne naissance.
+
+
+\subsection{La descente cohomologique}\etiquette[2.2]{Vbis.subsec2.2}
+
+\subsubsection{}\etiquette[2.2.1]{Vbis.subsubsec2.2.1}
+Soit $\theta : (E, A) \to (S \times D, \mathcal{O}_S)$ un $D$-topos
+annelé augmenté, on pose, avec les notations de (\hyperref[Vbis.subsubsec1.3.6]{1.3.6}) et (\hyperref[Vbis.subsubsec2.1.1]{2.1.1}),
+$$
+\bar{\theta}^{\ast} = \Gamma(\theta^{\ast}) \circ \epsilon^{\ast} :
+\Mod(S, \mathcal{O}_S) \to \Mod(\Ysheaf{\Gamma}(E), A)
+$$
+et $\bar{\theta}_{\ast} = \epsilon_\ast \circ \Gamma(\theta_{\ast}) :
+\Mod(\Ysheaf{\Gamma}(E), A) \to \Mod(S, \mathcal{O}_S)$.
+
+L'image de $\bar{\theta}^{\ast}$ se trouve dans la sous-catégorie pleine de
+$\Mod(\Ysheaf{\Gamma}(E), A)$ formée des sections cocartésiennes de
+$\Ysheaf{\Gamma}(D, \Ysheaf{\Mod}(E, A))$: nous noterons
+$\Ysheaf{\Gamma}^{\text{cocart}}(D, \Ysheaf{\Mod}(E, A))$ cette dernière
+catégorie\nde{Traduisons : un $D$-topos annelé augmenté est la donnée d'un
+système compatible de morphismes de $S$-topos
+$$(m^*,m_*):E_j\rightarrow E_i$$ où $m\in\Hom_D(i,j)$. La catégorie des
+sections cocartésiennes est la catégorie des données de descente dont les
+objets sont les familles $F_i\in\text{Ob}(E_i)$ munis de cocycles
+d'isomorphismes $$F_j \isomto m^*F_i.$$ Le foncteur qui à tout objet $F$ sur
+$S$ associe le foncteur constant de valeur $F$ est l'image inverse d'un
+morphisme de topos $$\epsilon:\ \Gamma(S\times D)\rightarrow S$$ induisant le
+morphisme de topos annelé de \hyperref[Vbis.subsubsec2.1.3]{2.1.3}. Le couple
+$(\bar\theta_*,\bar\theta^*)$ est alors simplement induit par la composition
+de morphismes  de topos $\bar\theta=\epsilon\circ\Gamma(\theta):\
+\Gamma(E)\rightarrow S$ (cf. \hyperref[Vbis.prop1.2.15]{1.2.15}).}
+
+\begin{enonce*}{Définition 2.2.2}\etiquette[2.2.2]{Vbis.def2.2.2}
+On dit que $\theta$ est une \emph{augmentation} de descente effective si
+$$\sisi{}{\bar\theta^{\ast}=}\Gamma(\theta^{\ast}) \circ \epsilon^{\ast} : \Mod(S, \mathcal{O}_S) \to
+\Ysheaf{\Gamma}^{\text{\rm cocart}} (D, \Ysheaf{\Mod}(E, A))$$ est une
+équivalence de catégories.
+\end{enonce*}
+
+\setcounter{subsubsection}{2}
+\subsubsection{}\etiquette[2.2.3]{Vbis.subsubsec2.2.3}
+Avec\pageoriginale les notations de (\hyperref[Vbis.subsubsec2.2.1]{2.2.1}), supposons
+que $\theta$ soit plat, de sorte que $\bar{\theta}^{\ast}$ est exact et passe
+trivialement aux catégories dérivées: \sisi{soit
+$\LL^{+}(\bar{\theta}^{\ast})$}{on note encore $\bar{\theta}^{\ast}$} le
+foncteur ainsi obtenu. Avec ces notations:
+
+\begin{enonce*}{Lemme 2.2.3.1}\etiquette[2.2.3.1]{Vbis.lem2.2.3.1}
+Il existe deux morphismes fonctoriels
+$$
+\alpha :\id_{D^{+}(S,
+\mathcal{O}_S)} \to \sisi{\RR^{+}}{R}\bar{\theta}_{\ast} \circ
+\sisi{\LL^{+}(\bar{\theta}^{\ast})}{\bar{\theta}^{\ast}} \mbox{ et } \beta :
+\sisi{\LL^{+}(\bar{\theta}^{\ast})}{\bar{\theta}^{\ast}} \circ
+\sisi{\RR^{+}}{R}\bar{\theta}_{\ast} \to \id_{D^{+}(\Ysheaf{\Gamma} (E), A)}
+$$
+mettant ces deux foncteurs en adjonction.
+\end{enonce*}
+
+(\cf \cite{SGA4-05bis:9} (3.3)).
+
+\begin{enonce*}{Définition 2.2.4}\etiquette[2.2.4]{Vbis.def2.2.4}
+On dit que $\theta$ est une \emph{augmentation de 1-descente cohomologique}
+si
+\begin{enumerate}
+\renewcommand{\theenumi}{\arabic {enumi}}
+\renewcommand{\labelenumi}{\theenumi$^{\circ}$)}
+\item $\theta$ est plat \item
+    Le foncteur \sisi{$\LL^{+}(\bar{\theta}^{\ast})$}{$\bar{\theta}^{\ast}:\
+    D^{+}(S,\mathcal{O}_S)\rightarrow D^{+}(\Ysheaf{\Gamma} (E), A)$} est
+    pleinement fidèle.
+\end{enumerate}
+\end{enonce*}
+
+\begin{enonce*}[remark]{Remarque 2.2.5}\etiquette[2.2.5]{Vbis.rem2.2.5}
+La condition $2^{\circ}$) la définition précédente peut aussi s'exprimer en
+disant que le morphisme $\alpha\sisi{}{:\ \id_{D^{+}(S, \mathcal{O}_S)} \to
+{R}\bar{\theta}_{\ast} \circ \bar{\theta}^{\ast}}$ dans
+(\hyperref[Vbis.lem2.2.3.1]{2.2.3.1}) est un isomorphisme.\sisi{}{ C'est en pratique ce que
+l'on démontre et ce qui est utile.}
+\end{enonce*}
+
+\begin{enonce*}{Définition 2.2.6}\etiquette[2.2.6]{Vbis.def2.2.6}
+On dit que $\theta$ est une \emph{augmentation de 2-descente cohomologique}
+(ou de \emph{descente cohomologique effective}) si $\theta$ est à la
+fois une augmentation de descente effective et une augmentation de
+$1$-descente cohomologique.
+\end{enonce*}
+
+La terminologie précédente est justifiée par le résultat suivant:
+
+\begin{enonce*}{Proposition 2.2.7}\etiquette[2.2.7]{Vbis.prop2.2.7}
+Soit $\theta$ une augmentation de descente cohomologique effective. Alors,
+l'image essentielle de
+$\sisi{\LL^{+}(\bar{\theta}^{\ast})}{\bar{\theta}^{\ast}}$ est la
+sous-catégorie pleine de $D^{+}(\Ysheaf{\Gamma}(E), A)$ formée des complexes
+$F^{\bigdot}$ tels que pour tout $i$, $H^{i}(F^{\bigdot})$ soit une section
+cocartésienne de $\Ysheaf{\Mod}(E, A)$.
+\end{enonce*}
+
+Nous dirons, pour abréger, qu'un complexe $F^{\bigdot}$ vérifiant les
+conditions précédentes est une \emph{donnée de descente
+  cohomologique}.
+
+\sisi{}{\begin{proof}}Il est clair que si $K^{\bigdot} \in D^{+}(S,\mathcal{O}_S)$\sisi{}{, alors}
+\sisi{$\LL^+ (\bar{\theta}^{\ast})(K^{\bigdot})$}{$\bar{\theta}^{\ast}(K^{\bigdot})$} est une donnée de descente cohomologique:
+il suffit donc de montrer que pour toute donnée de descente cohomologique
+$F^{\bigdot}$, le morphisme canonique
+$$
+\beta(F^{\bigdot}) : \sisi{\LL^{+}(\bar{\theta}^{\ast})}{\bar{\theta}^{\ast}} \circ
+\sisi{\RR^{+}(\bar{\theta}_{\ast})}{R\bar{\theta}_{\ast}}(F^{\bigdot}) \to F^{\bigdot}
+$$
+est\pageoriginale un isomorphisme dans $D^{+} (\Ysheaf{\Gamma}(E), A)$.
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\item \emph{Cas où $F^{\bigdot}$ est borné}: on raisonne par récurrence
+  sur la longueur $\ell$ de l'intervalle des entiers $i$ où
+  $H^{i} (F^{\bigdot}) \neq 0$:
+\begin{itemize}
+\item pour $\ell \leq 1$ l'assertion est vraie parce que $\theta$
+ est de descente effective.
+
+\item supposons $\ell > 1$ et soit $n$ le plus grand entier tel que
+ $H^n (F^{\bigdot}) \neq 0$: on dispose d'un triangle
+ distingué\footnote{pour tout complexe $K^{\bigdot}$, $K^{\bigdot}[-n]$
+ désigne le complexe $T^{-n}(K^{\bigdot})$, où $T$ est le foncteur
+ translation.}
+\[
+\xymatrix@R=1.5cm{
+          &  H^{n}(F^{\bigdot})[-n]         \ar[ld]&\\
+F'^{\bigdot} \ar[rr] &                    &  F^{\bigdot} \ar[lu]
+}
+\]
+tel que l'hypothèse de récurrence s'applique à $F'^{\bigdot}$;
+$\beta(H^{n}(F^{\bigdot})[-n])$ et $\beta(F'^{\bigdot})$ étant des
+isomorphismes, il en est de même de $\beta(F^{\bigdot})$.
+\end{itemize}
+
+\item \emph{Cas général} : désignons par
+    $\sisi{\sigma}{\tau}_{\leq}(F^{\bigdot})$ le complexe
+$$
+\ldots F^{n-1} \to F^{n-1} \to \Ker d^n \to 0 \to 0 \ldots{\quoi},
+$$
+(\cf \cite{SGA4-05bis:7} (7.1)), de sorte que l'on dispose pour tout $n$ d'un
+diagramme commutatif:
+\[
+\xymatrix@R=1.5cm@C=2cm{
+\sisi{\LL^{+}(\bar{\theta}^{\ast})}{\bar{\theta}^{\ast}} \circ \sisi{\RR^{+}(\bar{\theta}_{\ast})}{R\bar{\theta}_{\ast}}
+       (\sisi{\sigma}{\tau}_{\leq n} (F^{\bigdot})) \ar[r]^{\sim}\ar[d]& \sisi{\sigma}{\tau}_{\leq
+       n}(F^{\bigdot}) \ar[d]\\
+\sisi{\LL^{+}(\bar{\theta}^{\ast})}{\bar{\theta}^{\ast}} \circ
+\sisi{\RR^{+}(\bar{\theta}_{\ast})}{R\bar{\theta}_{\ast}}
+(F^{\bigdot})\ar[r] & F^{\bigdot}
+}
+\]
+et il suffit de voir que le morphisme
+$$
+\sisi{\RR^{+}(\bar{\theta}_{\ast})}{R\bar{\theta}_{\ast}} (\sisi{\sigma}{\tau}_{\leq n} (F^{\bigdot})) \to
+\sisi{\RR^{+}(\bar{\theta}_{\ast})}{R\bar{\theta}_{\ast}} (F^{\bigdot})
+$$
+induit\pageoriginale un isomorphisme sur les $H^{i}$ pour $i \leq
+n$. Or, on dispose
+d'un triangle:
+\[
+\xymatrix{
+& F''^{\bigdot} \ar[ld]&\\
+\sisi{\sigma}{\tau}_{\leq n}(F^{\bigdot})  \ar[rr]&&   F^{\bigdot}\ar[lu]
+}
+\]
+avec $H^i({F''}^{\bigdot}) = 0$ pour $i \leq n$. On en déduit alors que
+$H^{i} (\sisi{\RR^{+}(\bar{\theta}_{\ast})}{R\bar{\theta}_{\ast}}
+(F''^{\bigdot})) = 0$ pour $i \leq n$, puis que $H^{i}
+(\sisi{\RR^{+}(\bar{\theta}_{\ast})}{R\bar{\theta}_{\ast}}
+(\sisi{\sigma}{\tau}_{\leq n}(F^{\bigdot}))) \to H^{i}
+(\sisi{\RR^{+}(\bar{\theta}_{\ast})}{R\bar{\theta}_{\ast}}
+(F^{\bigdot}))$ est un isomorphisme pour $i \leq n$, ce qui achève la
+démonstration.
+\end{enumerate}
+
+\sisi{}{\end{proof}}
+
+ Nous allons maintenant exposer une méthode de calcul
+explicite de
+$$\sisi{\RR^{+}}{R}\bar{\theta}_{\ast}\sisi{}{=R\epsilon_*\circ
+R\Gamma(\theta)_*}$$ fort utile dans la démonstration de certains critères de
+descente cohomologique, ainsi que dans l'exploitation de la dite notion.
+
+\sisi{\subsection{Un procédé de calcul pour
+$R^+\epsilon_{\ast}$}\etiquette[2.3]{Vbis.subsec2.3}}{\subsection{Un procédé de
+calcul pour $R\epsilon_{\ast}$}\etiquette[2.3]{Vbis.subsec2.3}}
+
+Nous commencerons par deux sorites.
+
+\subsubsection{}\etiquette[2.3.1]{Vbis.subsubsec2.3.1}
+Soient $D$ une $\Uu$-petite catégorie et $\Ab$ la catégorie des groupes
+abéliens appartenant à $\Uu$. On désigne par $r_D$ le foncteur $D \to (\Hom
+(D, \Ab))^{\circ}$ défini par la relation
+$$
+r_D (i)(j) = \ZZ^{\Hom(i, j)}
+$$
+pour tout couple $(i, j)$ d'objets de $D$. On construit alors, pour tout
+couple $(i, X)$ formé d'un objet de $D$ et d'un objet de $\Hom(D, \Ab)$ un
+isomorphisme canonique et fonctoriel:
+$$
+\Hom(r_D(i), X) \xrightarrow{\sim} X(i)
+$$
+
+\paragraph{}\etiquette[2.3.1.1]{Vbis.par2.3.1.1}
+Soient $A$ une catégorie additive (\cf \sisi{Tohokû}{Tôhoku}) et $F$ un foncteur $D \to A$;
+on définit un foncteur $\bar{F} : (\Hom (D, \Ab))^{\circ} \to \Hom(A^{\circ},
+\Ens)$ par la relation
+$$
+\bar{F}(X)(a) = \Hom_{\Hom (D, \Ab)} (X, \Hom_A (a, F(.)))
+$$
+de\pageoriginale sorte que le diagramme suivant, où $h_A$ désigne le foncteur
+canonique:
+\[
+\xymatrix@C=3cm@R=1.5cm{
+D  \ar[r]^{r_D} \ar[d]_{F}& (\Hom(D,\Ab))^{\circ} \ar[d]^{\bar{F}}\\
+A  \ar[r]_{h_A}       & \Hom(A^{\circ},\Ens)
+}
+\]
+soit essentiellement commutatif.
+
+On laisse au lecteur le soin de vérifier que $\bar{F}$ transforme les sommes
+directes finies de $\Hom(D, \Ab)$ en produits et que, si l'on désigne par
+$\ZZ$ le foncteur constant $D \to \Ab$ de valeur $\ZZ$, on a $\bar{F}(\ZZ) =
+\varprojlim F$.
+
+Enfin la correspondance $F\rightsquigarrow  \bar{F}$ définit un
+foncteur covariant
+$$
+\Hom(D, A) \to \Hom((\Hom(D, \Ab))^{\circ},
+\Hom(A^{\circ}, \Ens)){\quoi}.
+$$
+
+\paragraph{}\etiquette[2.3.1.2]{Vbis.par2.3.1.2}
+On désigne par $\Add(D)$ la sous-catégorie pleine de
+$(\Hom(D, \Ab))^{\circ}$ définie par les objets de la forme $r_D(i)$, où
+$i$ est un objet de $D$, et leurs sommes directes finies. La catégorie
+$\Add(D)$ est additive et le foncteur $r_D : D \to \Add(D)$ vérifie la
+propriété universelle suivante:
+
+\paragraph{}\etiquette[2.3.1.3]{Vbis.par2.3.1.3}
+\emph{Pour toute catégorie additive $A$, le foncteur $G \to G \circ r_D$
+induit une équivalence de la sous-catégorie pleine de $\Hom(\Add(D),
+A)$ formée par les foncteurs additifs} sur \emph{la catégorie $\Hom(D, A)$.}
+
+La catégorie $\Add(D)$, définie à équivalence près par
+(\hyperref[Vbis.par2.3.1.3]{2.3.1.3}) s'appellera la \emph{catégorie additive
+engendrée par $D$}.
+
+%% problème de compilation !
+
+%\nde{En termes plus concrets, implicitement utilisés plus bas, les
+%objets de $\Add(D)$ sont les suites finies
+%$$[i_1]\oplus\cdots\oplus[i_n]:=(i_1,\cdots,i_n)$$ d'objets de $D$ avec des morphismes dans
+%$\Add(D)$ définis par les règles
+%\begin{itemize}
+%  \item  la suite vide est l'objet nul ;
+%  \item pour tout $i,j\in\text{ob}(D),\ \Hom([i],[j])=\ZZ^{\Hom_D(i,j)}$
+%      ;
+%  \item pour toute famille finie $(i),(j)$ d'objets de $D$, $\Hom(\oplus
+%      [i],\oplus[j])=\prod\Hom([i],[j])$,
+%\end{itemize}  tandis que les règles de composition se déduisent de celles de $D$ par bilinéarité. Avec cette présentation, $r_D$ est le foncteur tautologique
+%$i\rightsquigarrow [i]$ et si $F$ est un foncteur de $D$ dans une catégorie
+%additive $D$, il se prolonge de manière unique en un foncteur additif
+%$$\tilde F:\ \Add(D)\rightarrow A$$ défini par $\tilde F(\oplus [i])=\oplus F_i$ avec les règles évidentes de
+%fonctorialité.}.
+
+\subsubsection{}\etiquette[2.3.2]{Vbis.subsubsec2.3.2}
+Soient $A$ une catégorie abélienne et $K^{\bigdot\bigdot}$ un complexe
+double que nous considérons comme un objet de $C^{+}(C^+(A))$, le
+premier indice correspondant au premier\pageoriginale signe $C^+$: on
+désigne par $(K^{\bigdot \bigdot})_s$ le \emph{complexe simple associé} (\cf \sisi{Tohokû}{Tôhoku} (\hyperref[Vbis.subsec2.4]{2.4}),
+dont nous conserverons les notations). On définit ainsi un foncteur
+\begin{equation*}
+(\quad)_s : C^+ (C^+(A))\to C^+(A)\tag{2.3.2.1}
+\end{equation*}\etiquette[2.3.2.1]{Vbis.eq2.3.2.1}
+et on laisse au lecteur le soin de vérifier le lemme suivant:
+
+\begin{enonce*}{Lemme 2.3.2.2}\etiquette[2.3.2.2]{Vbis.lem2.3.2.2}
+Le foncteur $(\quad)_s$ définit un foncteur triangulé:
+$$
+K^+ (C^+(A)) \to K^+ (A)
+$$
+qui préserve les quasi-isomorphismes; il définit donc un foncteur
+triangulé:
+$$
+D^+ (C^+(A)) \to D^+(A){\quoi},
+$$
+encore noté $(\quad)_s$.
+\end{enonce*}
+
+\begin{enonce*}[remark]{Remarque}
+On a le même résultat pour le foncteur $(\quad)_s : C(C^b(A)) \to
+C(A)$ car la suite spectrale que l'on envisage est birégulière par
+(\EGA III (11.3.3)).
+\end{enonce*}
+
+\subsubsection{}\etiquette[2.3.3]{Vbis.subsubsec2.3.3}
+Ceci étant, soient $(S, \mathcal{O}_S)$ un topos annelé et $D$ une
+$\Uu$-petite catégorie. Soit $Z^{\bigdot} \in C^{+}(\Add(D))$ un
+complexe de cochaînes tel que $Z^n = 0$ pour $n < 0$.
+
+ \sisi{Tout objet $F$ de $\Mod(\Ysheaf{\Gamma}(S \times D),
+\mathcal{O}_S)$ (qui s'identifie à un foncteur $D \to \Mod(S, \mathcal{O}_S)$
+d'après (\hyperref[Vbis.subsubsec2.1.1]{2.1.1})) définit, par la propriété universelle de
+$\Add(D)$  un objet $\varepsilon_{Z^{\bigdot} \ast}(F)^{\bigdot}$ de
+$C^{+}(S, \mathcal{O}_S)$ qui varie fonctoriellement avec $F$ d'après
+(\hyperref[Vbis.par2.3.1.3]{2.3.1.3})}{Tout objet $F$ de $\Mod(\Ysheaf{\Gamma}(S \times D),
+\mathcal{O}_S)$ (qui s'identifie à un foncteur $D \to \Mod(S, \mathcal{O}_S)$
+d'après (\hyperref[Vbis.subsubsec2.1.1]{2.1.1})) définit, par la propriété universelle de
+$\Add(D)$  (\hyperref[Vbis.par2.3.1.3]{2.3.1.3}) un foncteur additif $$\tilde F:\
+\Add(D)\rightarrow \Mod(S, \mathcal{O}_S).$$ Le complexe image
+$$\varepsilon_{Z^{\bigdot} \ast}(F):=\tilde F(Z^{\bigdot})$$ est un objet de $C^{+}(S,
+\mathcal{O}_S)$ qui varie fonctoriellement avec $F$. On a ainsi défini un
+foncteur additif $$\varepsilon_{Z^{\bigdot} \ast}:\ \Mod(\Ysheaf{\Gamma}(S
+\times D), \mathcal{O}_S)\rightarrow C^{+}(S, \mathcal{O}_S),$$ qui est
+visiblement exact}.
+
+On définit ainsi un foncteur triangulé\nde{$K^+$ désigne la catégorie des
+complexes bornés inférieurement à homotopie près.}:
+\begin{equation*}
+K^{+}(\varepsilon_{Z^{\bigdot}\ast}) : K^+(\Ysheaf{\Gamma}(S \times D),
+\mathcal{O}_S) \to K^+ (C^+(S, \mathcal{O}_S)){\quoi}.\tag{2.3.3.1}
+\end{equation*}\etiquette[2.3.3.1]{Vbis.eq2.3.3.1}
+De plus, il résulte de
+(\hyperref[Vbis.lem2.3.2.2]{2.3.2.2}) que le foncteur composé:
+$$
+(\quad)_s \circ K^{+}(\varepsilon_{Z^{\bigdot} \ast}) : K^+(\Ysheaf{\Gamma}(S
+\times D), \mathcal{O}_S) \to K^{+}(S, \mathcal{O}_S)
+$$
+transforme les objets acycliques en objets acycliques. Il définit
+donc un foncteur\pageoriginale triangulé :
+\begin{equation*}
+\sisi{\RR^+}{R} \varepsilon_{Z^{\bigdot} \ast} : D^+(\Ysheaf{\Gamma}(S \times D),
+\mathcal{O}_S) \to D^{+}(S, \mathcal{O}_S)\tag{2.3.3.2}
+\end{equation*}\etiquette[2.3.3.2]{Vbis.eq2.3.3.2}
+vérifiant la relation\nde{Autrement dit, $\varepsilon_{Z^{\bigdot} \ast}$ se
+dérive trivialement en $F^\bigdot\rightsquigarrow \varepsilon_{Z^{\bigdot}
+\ast}(F^\bigdot)$.} $Q\circ (\quad)_s \circ K^+ (\varepsilon_{Z^{\bigdot}
+\ast}) = \sisi{\RR^{+}}{R} \varepsilon_{Z^{\bigdot}\ast} \circ Q$
+\footnote{Pour toute catégorie
+  abélienne $A$, la lettre $Q$ désigne le foncteur canonique $K^{+}(A)
+  \to D^{+} (A)$.}
+
+\subsubsection{}\etiquette[2.3.4]{Vbis.subsubsec2.3.4}
+Les données précédentes sont conservées\sisi{.}{ et posons
+$A=C^+(S,\mathcal{O}_S)$.
+%%%%%%%
+%%%%%%
+Tout d'abord, $\tilde F$ et $\bar F$ sont compatibles au sens de la
+commutativité du diagramme
+de type Yoneda : $$\xymatrix{&A\ar[r]^h&\Hom(A^\circ,\Ens)\\
+D\ar[rd]_{{r_D}}\ar[r]\ar[ru]^{F}&\Add(D)\ar[d]_{\tilde{r_D}}\ar[u]_{\tilde F}\\
+&\Hom(D,\Ab)\ar[ruu]_{\bar F}} $$ où $h,\ {r_D}$ sont respectivement les
+flèche type Yoneda définies par $$h(a)=(\alpha\mapsto\Hom_A(\alpha,a)\text{
+et
+}{r_D}(d)\stackrel{\hyperref[Vbis.subsubsec2.3.1]{2.3.1}}{=}(\delta\mapsto\Hom_D(d,\delta)),$$
+c'est-à-dire $h\circ\tilde F=\bar F\circ\tilde{r_D}$. On en déduit la formule
+$$h(\varepsilon_{Z^{\bigdot} \ast}(F)=\bar F(\tilde{r_D}(Z)).$$
+
+Par définition d'une limite projective, on a $h(\epsilon_*F)=\varprojlim F$
+et, comme on l'a déjà remarqué, on a tautologiquement $\bar
+F(\ZZ)=\varprojlim F$ de sorte qu'on a
+$$\bar F(\ZZ)=h(\epsilon_*(F)).$$
+%%%%%%
+%%%%%%%
+}
+
+
+On considère $Z^{\bigdot}$ comme un complexe de chaînes dans $\Hom(D,
+\Ab)$\sisi{.}{, c'est-à-dire un complexe de la catégorie abélienne $\Hom(D,
+\Ab)^{\circ}$ grâce au foncteur $\tilde r_D$. On peut donc parler de notion
+de suite exacte, de résolution. Explicitement, une suite de $\Add(D)$
+$$Z\rightarrow Z'\rightarrow Z"$$ est exacte si pour tout objet $j$ de $D$, la suite
+$$\Hom_{\Add(D)}(Z",[j])\rightarrow \Hom_{\Add(D)}(Z',[j])\rightarrow
+\Hom_{\Add(D)}(Z,[j])$$ est exacte dans $\Ab$. } Soit $t : Z^{\circ} \to \ZZ$ un
+morphisme de $Z^{\circ}$ dans le foncteur constant de valeur $\ZZ$ tel que le
+morphisme composé
+\begin{equation*}
+Z^{1} \to Z^{0} \xrightarrow{t} \ZZ\tag{2.3.4.1}
+\end{equation*}\etiquette[2.3.4.1]{Vbis.eq2.3.4.1}
+soit nul.
+
+Par fonctorialité (\cf (\hyperref[Vbis.par2.3.1.1]{2.3.1.1})), on en déduit un morphisme
+$\varepsilon_{\ast} (F) \to \varepsilon_{Z^{\bigdot}\ast} (F)^{\circ}$
+tel que le morphisme composé
+\begin{equation*}
+\varepsilon_{\ast}(F) \to \varepsilon_{Z^{\bigdot}\ast}(F)^{\circ} \to
+\varepsilon_{Z^{\bigdot}\ast}(F)^1\tag{2.3.4.2}
+\end{equation*}\etiquette[2.3.4.2]{Vbis.eq2.3.4.2}
+soit nul.
+
+Il existe alors un morphisme canonique de foncteurs triangulés:
+\begin{equation*}
+Q\circ K^+(\varepsilon_{\ast}) \xrightarrow{j} Q \circ (\quad)_s \circ
+K^+(\varepsilon_{Z^{\bigdot}\ast}) =
+\sisi{\RR^{+}}{R}\varepsilon_{Z^{\bigdot}\ast} \circ Q\tag{2.3.4.3}
+\end{equation*}\etiquette[2.3.4.3]{Vbis.eq2.3.4.3}
+
+\begin{enonce*}{Proposition 2.3.5}\etiquette[2.3.5]{Vbis.prop2.3.5}
+Les conditions et notations de (\hyperref[Vbis.subsubsec2.3.3]{2.3.3}) et {(\hyperref[Vbis.subsubsec2.3.4]{2.3.4})} sont
+conservées; on suppose en outre que le complexe augmenté
+$$
+\ldots Z^n \to Z^{n - 1}\to \ldots Z^{1} \to Z^0 \xrightarrow{t} \ZZ
+$$
+définisse une résolution de $\ZZ$.
+
+Alors, pour tout complexe $F^{\bigdot}$ formé d'objets de
+$I_{(S \times D, \mathcal{O}_{S})}$ (\cf \hyperref[Vbis.prop1.3.10]{1.3.10}),
+$$
+j(F^{\bigdot}) : G \circ K^+(\varepsilon_\ast)(F^{\bigdot}) \to (\sisi{\RR^+}{R}
+\varepsilon_{Z^{\bigdot}\ast} \circ Q)(F^{\bigdot})
+$$
+est\pageoriginale un isomorphisme.
+\end{enonce*}
+
+\sisi{$+$}{} Soit $i$ un objet de $D$ et $Q_i$ un module sur $(S,
+\mathcal{O}_S)$: montrons que $j (e_{i\ast} (Q_i))$ est un isomorphisme. Il
+s'agit de voir que la suite:
+\begin{equation*}
+0 \to Q_i \to \varepsilon_{Z^{\bigdot}\ast}(e_{i\ast}(Q_i))^{\circ} \to
+\varepsilon_{Z^{\bigdot}\ast}(e_{i\ast}(Q_i))^1 \to \ldots\tag{2.3.5.1}
+\end{equation*}\etiquette[2.3.5.1]{Vbis.eq2.3.5.1}
+est exacte.
+
+Pour cela il suffit de montrer que, pour tout objet $X$ de $\Mod(S,
+\mathcal{O}_S)$, la suite:
+\begin{equation*}
+0 \to \Hom(X, Q_i) \to \Hom(X,
+\varepsilon_{Z^{\bigdot}\ast}(e_{i\ast}(Q_i))^{\circ}) \to \Hom(X,
+\varepsilon_{Z^{\bigdot}\ast}(e_{i\ast}(Q_i))^1)\to \ldots\tag{2.3.5.2}
+\end{equation*}\etiquette[2.3.5.2]{Vbis.eq2.3.5.2}
+est exacte. Or un calcul immédiat montre que \eqhyperref[Vbis.eq2.3.5.2]{2.3.5.2} se réduit à :
+\begin{gather*}
+0 \to \Hom(\ZZ, \Hom(X,Q_i)) \to \Hom(\Hom_{\Add(D)}(Z^{\circ}, i),
+\Hom(X, Q_i)) \to \tag{2.3.5.3}\\
+\Hom(\Hom_{\Add(D)}(Z^1, i), \Hom(X, Q_{i})) \to \ldots{\quoi}.
+\end{gather*}
+\sisi{}{Par hypothèse, la suite $$0
+\leftarrow\ZZ\leftarrow\Hom_{\Add(D)}(Z^{\circ},
+[i])\leftarrow\Hom_{\Add(D)}(Z^1, [i])\leftarrow\ldots$$ est une suite exacte
+de modules libres, donc est homotope à zéro. On déduit que (2.3.5.3) est
+exacte.}
+
+\sisi{$+$}{} Si pour tout objet $i$ de $D$, $Q_i$ est un module totalement
+acyclique, on voit, en appliquant le foncteur $\prod_{i \in \Ob (D)}$ aux
+complexes \eqhyperref[Vbis.eq2.3.5.1]{2.3.5.1}, que l'on obtient encore un complexe
+acyclique d'après (\hyperref[Vbis.lem1.3.10.1]{1.3.10.1}). Ainsi $j (\prod_{i \in \Ob (D)}
+(e_{i\ast}(Q_i)))$ est un isomorphisme.
+
+\sisi{$+$}{} On laisse au lecteur le soin de déduire de ceci que
+$j(F^{\bigdot})$ est un isomorphisme lorsque $F^{n} \in I_{(S \times D,
+\mathcal{O}_S)}$ pour tout $n$ (par suites spectrales, par exemple).
+
+\begin{enonce*}{Corollaire 2.3.6}\etiquette[2.3.6]{Vbis.cor2.3.6}
+Sous\pageoriginale les conditions de (\hyperref[Vbis.prop2.3.5]{2.3.5}), le morphisme $j$
+définit $\sisi{\RR^+}{R} \varepsilon_{Z^{\bigdot}\ast}$ comme le foncteur
+dérivé de $\varepsilon_{\ast}$.
+\end{enonce*}
+
+La sous-catégorie de $K^{+} (\Ysheaf{\Gamma}(S \times D), \mathcal{O}_S)$
+définie par les complexes formés d'objets de $I_{(S \times D,
+  \mathcal{O}_S)}$ vérifie les conditions du théorème (\hyperref[Vbis.subsec5.1]{5.1}) de [\cite{SGA4-05bis:7},
+  I], pour le foncteur $K^{+}(\varepsilon_{\ast})$, en vertu de
+(\hyperref[Vbis.prop1.3.10]{1.3.10}) et (\hyperref[Vbis.prop2.3.5]{2.3.5}): le corollaire résulte immédiatement de cette
+remarque.
+
+\begin{enonce*}{Corollaire 2.3.7}\etiquette[2.3.7]{Vbis.cor2.3.7}
+Sous les conditions de (\hyperref[Vbis.prop2.3.5]{2.3.5}), soient $(E, A)$ un $D$-topos annelé et
+$\theta : (E, A) \to (S \times D, \mathcal{O}_S)$ une augmentation ;
+il existe un isomorphisme canonique
+$$
+\sisi{\RR^+}{R} \bar{\theta}_{\ast} \xrightarrow{\sim} \sisi{\RR^+}{R}
+\Gamma(\theta_{\ast}){\circ} \sisi{\RR^+}{R} \varepsilon_{Z^{\bigdot}\ast}{\quoi}.
+$$
+\end{enonce*}
+
+Cela résulte de [\cite{SGA4-05bis:7} - I - 5.4].
+
+\begin{enonce*}[remark]{Remarque 2.3.8}\etiquette[2.3.8]{Vbis.rem2.3.8}
+On savait a priori que $\sisi{\RR^+}{R} \varepsilon_{\ast}$ existe et que
+l'on a un isomorphisme $\sisi{\RR^+}{R} \bar{\theta}_{\ast}
+\xrightarrow{\sim} \sisi{\RR^+}{R} \Gamma(\theta_{\ast}) \circ
+\sisi{\RR^+}{R} \varepsilon_{\ast}$, vu que $\Gamma(\theta_{\ast})$ et
+$\varepsilon_{\ast}$ sont induits par des morphismes de topos annelés (\cf
+(\hyperref[Vbis.subsubsec1.3.6]{1.3.6}) et (\hyperref[Vbis.subsubsec2.1.1]{2.1.1})). Cependant le
+calcul précédent s'avérera fort utile et applicable à d'autres contextes,
+car, dans la pratique, les conditions de (\hyperref[Vbis.prop2.3.5]{2.3.5}) seront
+toujours vérifiées.
+\end{enonce*}
+
+Nous allons maintenant donner les exemples fondamentaux où l'on pourra
+appliquer (\hyperref[Vbis.prop2.3.5]{2.3.5}).
+
+\setcounter{subsubsection}{8}
+\subsubsection{}\etiquette[2.3.9]{Vbis.subsubsec2.3.9}
+Dans $\Add(\Delta)$, on pose $Z^n = [n]$ et on définit $d^n : Z^n
+\to Z^{n + 1}$ par la formule
+\begin{equation*}
+d^n = \sum_{i = 0}^{n + 1} (-1)^i \partial^i \tag{2.3.9.1}
+\end{equation*}\etiquette[2.3.9.1]{Vbis.eq2.3.9.1}
+où $\partial^i :[n] \to [n + 1]$ est la $i$-ème face [\cf \cite{SGA4-05bis:3} II 2]. On
+prend pour $t : Z^{\circ} \to \ZZ$ l'augmentation naturelle évidente\nde{De
+façon explicite, si $F$ est un complexe simplicial de différentielle
+$\text{d}_F$, $\varepsilon_{Z^{\bigdot}*}(F)$ est le complexe simple associé
+au complexe double $F^j(i)$ de différentielle horizontale simpliciale
+$\text{d}^i$ et verticale $\text{d}^j_F$.}.
+
+La condition de (\hyperref[Vbis.subsubsec2.3.4]{2.3.4}) est trivialement vérifiée. La condition de
+(\hyperref[Vbis.prop2.3.5]{2.3.5}) résulte de (\cite{SGA4-05bis:5} I (3.7.4)).
+
+\subsubsection{}\etiquette[2.3.10]{Vbis.subsubsec2.3.10}
+Dans\pageoriginale $\Add(\Delta \times \Delta)$, on considère le complexe
+simple associé au complexe double:
+\[\vcenter{
+\xymatrix@C=2cm@R=1.75cm{
+\big([n],[m+1]\big)  \ar[r]^{s_1^{n,m+1}} & \big([n+1],[m+1]\big)\\
+\big([n],[m]\big)   \ar[r]^{s_1^{n,m}}  \ar[u]^{s_2^{n,m}}  & \big([n+1],[m]\big)\ar[u]_{s_2^{n+1,m}}
+}}\leqno{(2.3.10.1)}
+\]
+avec
+\begin{equation*}
+\tag{2.3.10.2}
+\begin{cases}
+S^{n, m}_1 = \displaystyle\mathop{\sum}^{n+1}_{i=0} (-1)^i
+(\partial^i, \id_{[m]})\\[15pt]
+S^{n, m}_2 = \displaystyle\mathop{\sum}^{m+1}_{i=0} (-1)^j (\id_{[n]}, \partial^j){\quoi}.
+\end{cases}
+\end{equation*}\etiquette[2.3.10.2]{Vbis.eq2.3.10.2}
+
+On laisse au lecteur le soin de vérifier (en utilisant (2.3.9)) que
+le complexe ainsi défini, muni de l'augmentation naturelle évidente,
+vérifie les conditions de (\hyperref[Vbis.prop2.3.5]{2.3.5}).
+
+\subsubsection{}\etiquette[2.3.11]{Vbis.subsubsec2.3.11}
+On traite de manière analogue le cas multi-simplicial (avec
+$\underbrace{\Delta \times \Delta \times \ldots \times \Delta}_{p\text{-fois}}$).
+
+\subsection{La descente cohomologique
+  relative}\etiquette[2.4]{Vbis.subsec2.4}\pageoriginale
+
+\setcounter{subsubsection}{-1}
+\subsubsection{}\etiquette[2.4.0]{Vbis.subsubsec2.4.0}
+Soient $\Ee \to B$ une catégorie bifibrée en duaux de topos et $\mathcal{O}$
+un anneau de $\Ysheaf{\Gamma}(\Ee^{\circ})$.
+
+Ces données définissent canoniquement une catégorie fibrée et cofibrée en
+catégories abéliennes, notée $\Ysheaf{\Mod}(\Ee^{\circ}, \mathcal{O})$,
+au-dessus de $B^{\circ}$ (\cf (\hyperref[Vbis.rem1.3.3]{1.3.3}) et
+(\hyperref[Vbis.subsubsec1.3.4]{1.3.4})): dans tout ce qui suit, les foncteurs « images
+directes » et « images réciproques » seront toujours pris par rapport au
+foncteur fibrant et cofibrant: $\Ysheaf{\Mod}(\mathcal{E}^{\circ},
+\mathcal{O}) \to B^{\circ}$.
+
+\begin{enonce*}{Définition 2.4.0.1}\etiquette[2.4.0.1]{Vbis.def2.4.0.1}
+Nous dirons qu'un morphisme $f : T \to S$ dans $B$ est \emph{plat}
+(relativement à $(\mathcal{E}, \mathcal{O})$) si $f_{\ast} :
+\Mod(\mathcal{E}^{\circ}_S, \mathcal{O}_S) \to
+\Mod(\mathcal{E}^{\circ}_T, \mathcal{O}_T)$ est un foncteur exact\nde{
+Cette notation peut prêter à confusion : on devrait sans doute écrire $(f^\circ)_\star$ qui coïncide formellement avec $(f^\star)^\circ$ où $f^\star$ est le foncteur fibrant associé à $\Ee\rightarrow B$. Par exemple, dans le cas de la catégorie des faisceaux sur les espaces topologiques fibrée sur la catégorie des espaces topologiques (cf. \hyperref[Vbis.subsec4.1]{4.1}), on a $(f^\circ)_\star(S,F)=(T,f^{-1}F)=(f^\star)^\circ(S,F)$ où $f:\ T\rightarrow S$ est une application continue d'espaces topologiques, $F$ un faisceau sur $S$ et $f^{-1}$ est l'image inverse usuelle. On reconnaît alors les conditions usuelles de platitude.
+}.
+\end{enonce*}
+
+\subsubsection{}\etiquette[2.4.1]{Vbis.subsubsec2.4.1}
+Soit $G$ une sous-catégorie fibrée et cofibrée de
+$\Ysheaf{\Mod}(\mathcal{E}^{\circ}, \mathcal{O})$ telle que, pour tout objet
+$S$ de $B$, $G_S$ soit une sous-catégorie \emph{épaisse} (\cf \sisi{Tohokû}{Tôhoku} (1.11))
+de $(\Ysheaf{\Mod}(\mathcal{E}^{\circ}, \mathcal{O}))_S$ - Le lecteur
+trouvera au paragraphe 4 des exemples de telles situations.
+
+Si $S$ est un objet de $B$, nous désignerons par $D^+(S)$, la
+catégorie dérivée de $\Mod(\mathcal{E}^{\circ}_S, \mathcal{O}_S)$: on
+introduit, suivant [\cite{SGA4-05bis:7} (I \S\ 4)], la catégorie $D^+_{G_S}(S)$, qui
+s'identifie à la sous-catégorie pleine de $D^+ (S)$ formée par les
+objets $X^{\bigdot}$ tels que $H^n(X^{\bigdot}) \in G_S$ pour tout $n$.
+
+\emph{Nous supposerons que la condition suivante est toujours vérifiée.}
+
+\paragraph{}\etiquette[2.4.1.1]{Vbis.par2.4.1.1}
+\emph{Pour tout morphisme $h : T \to S$ dans $B$, le foncteur
+$\sisi{\RR^+(h^{\ast})}{Rh^{\ast}} : D^+ (T) \to D^+(S)$ est tel que
+$\sisi{\RR^+(h^{\ast})}{Rh^{\ast}}(F) \in D^{+}_{G_S}(S)$ si $F \in G_T$}\nde{Comme précédemment, il serait plus correct de noter $R(h^\circ)^{\ast}=R(h_\ast)^\circ$ plutÃ´t que $Rh^\ast$, ce qui rendrait les notations plus conformes à l'intuition géométrique usuelle. On aurait aussi pu bien prendre les foncteurs fibrants et cofibrants par rapport à $\Mod(\mathcal{E},\mathcal{O})\rightarrow B$ et non aux catégories opposées. Mais les fibres auraient été seulement des duaux de topos.}.
+
+D'après [\cite{SGA4-05bis:7} (I. (7.3). (ii))], cette condition entraîne que
+$\sisi{\RR^+(h^{\ast})}{Rh^{\ast}} (D^{+}_{G_T} (T)) \subset D^+_{G_S}(S)$.
+
+\subsubsection{}\etiquette[2.4.2]{Vbis.susubsec2.4.2}
+Soit\pageoriginale $D$ une $\Uu$-petite catégorie : \emph{nous
+  supposerons
+  dans tout ce  qui suit que l'on s'est donné un complexe $Z^{\bigdot}$
+  de $\Add(D)$ vérifiant les conditions de} (\hyperref[Vbis.prop2.3.5]{2.3.5}) (dans les
+  applications, on aura en fait $D = \Delta$ ou $D = \Delta
+  \times \Delta$).
+
+Si $X : D^{\circ} \to B$ est un $D$-objet de $B$, on désigne par
+$\Mod_G(\Ysheaf{\Gamma}(\bar{X}), \mathcal{O})$ la sous-catégorie pleine de
+$\Mod(\Ysheaf{\Gamma}(\bar{X}), \mathcal{O})$ formée par les objets $F$ tels
+que $e^{\ast}_i (F) \in G_i$ $( = G_{X_i})$ pour tout objet $i$ de $D:
+\Mod_G(\Ysheaf{\Gamma}(\bar{X}), \mathcal{O})$ est une sous-catégorie épaisse
+de $\Mod(\Ysheaf{\Gamma}(\bar{X}), \mathcal{O})$. Nous désignerons par
+$K_G^+(\Ysheaf{\Gamma}(\bar{X}), \Oo)$ (\resp
+$D^+_G(\Ysheaf{\Gamma}(\bar{X}), \Oo)$) la sous-catégorie pleine de $K^+
+(\Ysheaf{\Gamma}(\bar{X}), \Oo)$ (\resp $D^+ (\Ysheaf{\Gamma}(\bar{X}),
+\Oo)$) formée des objets $X^{\bigdot}$ tels que $H^n(X^{\bigdot}) \in
+\Mod_G(\Ysheaf{\Gamma}(\bar{X}), \Oo)$ pour tout $n$.
+
+\subsubsection{}\etiquette[2.4.3]{Vbis.subsubsec2.4.3}
+Soient $X$ et $X'$ deux $D$-objets de $B$ et $\alpha : X \to X'$ un
+morphisme fonctoriel. Rappelons (\cf (\hyperref[Vbis.subsubsec1.3.4]{1.3.4})) que nous notons encore
+$\alpha : (\bar{X}, \mathcal{O}) \to (\bar{X}', \mathcal{O})$ le
+morphisme de $D$-topos annelés correspondant.
+
+\begin{enonce*}{Définition 2.4.3.1}\etiquette[2.4.3.1]{Vbis.def2.4.3.1}
+Nous dirons que $\alpha : X \to X'$ est \emph{plat} si le morphisme de
+$D$-topos annelés correspondant est plat au sens de (\hyperref[Vbis.par1.3.6.1]{1.3.6.1}).
+\end{enonce*}
+
+On a alors le lemme évident:
+
+\begin{enonce*}{Lemme 2.4.3.2}\etiquette[2.4.3.2]{Vbis.lem2.4.3.2}
+Pour que $\alpha : X \to X'$ soit plat, il faut et il suffit que, pour
+tout objet $i$ de $D$, $\alpha_i : X_i \to X'_i$ soit un morphisme
+plat \emph{(\cf (\hyperref[Vbis.def2.4.0.1]{2.4.0.1}))}.
+\end{enonce*}
+
+\subsubsection{}\etiquette[2.4.4]{Vbis.subsubsec2.4.4}
+Soit $\alpha : X \to X'$ un morphisme, il définit un foncteur
+\begin{equation*}
+K^+(\Gamma(\alpha_*)) : K^+ (\Ysheaf{\Gamma}(\bar{X}), \Oo)
+\longrightarrow K^+ (\Ysheaf{\Gamma}(\bar{X}'), \Oo){\quoi}.\tag{2.4.4.1}
+\end{equation*}\etiquette[2.4.4.1]{Vbis.eq2.4.4.1}
+
+\begin{enonce*}{Lemme 2.4.4.2}\etiquette[2.4.4.2]{Vbis.lem2.4.4.2}
+Le foncteur
+$$
+K^+(\Gamma(\alpha_*))|_{K^+_G(\Ysheaf{\Gamma}(\bar{X}), \Oo)} :
+K^+_G(\Ysheaf{\Gamma}(\bar{X}), \Oo) \longrightarrow
+K^+(\Ysheaf{\Gamma}(\bar{X}'), \Oo)
+$$
+possède un foncteur dérivé à droite, noté $\sisi{\RR^+}{R}_G
+\Gamma(\alpha_{\ast})$, et le morphisme canonique
+$$
+\sisi{\RR^+}{R}_G \Gamma(\alpha_{\ast}) \longrightarrow \sisi{\RR^+}{R}
+\Gamma(\alpha_{\ast})|_{D^+_G (\Ysheaf{\Gamma}(\bar{X}), \Oo)}
+$$
+est\pageoriginale un morphisme.
+
+De plus $\sisi{\RR^+}{R}_G (D^+_G(\Ysheaf{\Gamma}(\bar{X}), \Oo)) \subset
+(D^+_G(\Ysheaf{\Gamma}(\bar{X}'), \Oo))$.
+\end{enonce*}
+
+La première partie résulte de (\hyperref[Vbis.prop1.3.10]{1.3.10}) et de [\cite{SGA4-05bis:7} -
+(I.(5.2))]. Pour vérifier la dernière assertion, il suffit de montrer, en
+vertu de [\cite{SGA4-05bis:7} -(I. (7.3). (ii))], que $\sisi{\RR^+}{R}
+\Gamma(\alpha_{\ast})(F) \in D_G^+(\Ysheaf{\Gamma}(\bar{X}'), \Oo)$, lorsque
+$F\in \Mod_{G}(\Ysheaf{\Gamma}(\bar{X}),\Oo)$ ce qui résulte du calcul
+explicite de $\sisi{\RR^+}{R} \Gamma(\alpha_\ast)$ donné par (1.3.1.1) et de
+l'hypothèse (\hyperref[Vbis.par2.4.1.1]{2.4.1.1}).
+
+\subsubsection{}\etiquette[2.4.5]{Vbis.subsubsec2.4.5}
+Soit $S$ un objet de $B$: le $D$-topos annelé $(\bar{C^D_S}, \mathcal{O})$
+(\cf (\hyperref[Vbis.subsubsec1.2.6]{1.2.6})) s'identifie au $D$-topos annelé constant
+$(\mathcal{E}^{\circ}_S\times D, \mathcal{O}_{S})$ et on a le lemme suivant qui
+résulte de [\cite{SGA4-05bis:7} (I. (7.3). (ii))]:
+
+\begin{enonce*}{Lemme 2.4.5.1}\etiquette[2.4.5.1]{Vbis.lem2.4.5.1}
+Le foncteur $\sisi{\RR^+}{R} \varepsilon_{Z^{\bigdot} \ast} |_{
+D^+_G(\Ysheaf{\Gamma}(\bar{C^D_S}), \mathcal{O})}$, noté $\sisi{\RR^+}{R}_G
+\varepsilon_{Z^{\bigdot} \ast}$, est à valeurs dans $D^+_{G_S}(S)$ et
+s'identifie un foncteur dérivé à droite du foncteur
+$$
+K^+(\varepsilon_{\ast}) |_{K^+_G(\Ysheaf{\Gamma}(\bar{C^D_S}), \mathcal{O})} :
+K^+_G(\Ysheaf{\Gamma}(\bar{C^D_S}), \mathcal{O}) \longrightarrow K^+ (S){\quoi}.
+$$
+\end{enonce*}
+
+\begin{enonce*}{Proposition 2.4.6}\etiquette[2.4.6]{Vbis.prop2.4.6}
+Soit $\theta : X \to C^D_S$ un $D$-objet de $B$ augmenté: le foncteur $K^+
+(\bar{\theta}_{\ast}) |_{K^+_G(\Ysheaf{\Gamma}(\bar{X}), \mathcal{O})}$,
+possède un foncteur dérivé à droite, noté $\sisi{\RR^+}{R}_G\bar\theta_{\ast}$, qui prend ses valeurs dans $D^+_{G_S}(S)$. De plus, il
+existe un isomorphisme canonique
+$$
+\sisi{\RR^+}{R}_G \bar{\theta}_{\ast} \xrightarrow{\sim} \sisi{\RR^+}{R}_G
+\varepsilon_{Z^{\bigdot}\ast} \circ \sisi{\RR^+}{R}_G \Gamma(\theta_{\ast}){\quoi}.
+$$
+\end{enonce*}
+
+Démonstration laissée au lecteur à partir de ce qui précède.
+
+Nous sommes maintenant en mesure de donner les définitions relatives à
+la descente cohomologique.
+
+\setcounter{subsubsection}{6}
+\subsubsection{}\etiquette[2.4.7]{Vbis.subsubsec2.4.7}
+Soit\pageoriginale $\theta : X \to C^D_S$ un $D$-objet de $B$ augmenté.
+Supposons que $\theta$ soit plat, de sorte que la restriction à $D^+_{G_S}
+(S)$ du foncteur $\bar{\theta}^{\ast}$ prend ses valeurs dans
+$D^+_G(\Ysheaf{\Gamma}(\bar{X}), \mathcal{O})$: nous noterons $\bar\theta_{G}^{\ast}$
+cette restriction. Avec ces notations:
+
+\begin{enonce*}{Lemme 2.4.7.1}\etiquette[2.4.7.1]{Vbis.lem2.4.7.1}
+Il existe deux morphismes fonctoriels $\alpha : \id_{D^{+}_{G_S}(S)} \to
+\sisi{\RR^+}{R}_G \bar{\theta}_{\ast} \circ \bar\theta_{G}^{\ast}$ et
+$\beta : \bar\theta_{G}^{\ast} \circ \sisi{\RR^+}{R}_G
+\bar{\theta}_{\ast} \to \id_{D^{+}_G (\Ysheaf{\Gamma}(\bar{X}),
+  \mathcal{O})}$ mettant ces deux foncteurs en adjonction.
+\end{enonce*}
+
+Cela résulte immédiatement de (\hyperref[Vbis.lem2.2.3.1]{2.2.3.1}) et (\hyperref[Vbis.prop2.4.6]{2.4.6}).
+
+\begin{enonce*}{Définition 2.4.8}\etiquette[2.4.8]{Vbis.def2.4.8}
+On dit que $\theta$ est une augmentation de $1$-descente
+cohomologique relativement à $G$ si
+\begin{enumerate}
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\labelenumi}{\theenumi$^{\circ}$)}
+\item $\theta$ est plat.
+
+\item Le foncteur $\bar\theta_G^{\star}$ pleinement fidèle.
+\end{enumerate}
+\end{enonce*}
+
+\begin{enonce*}{Remarque 2.4.9}\etiquette[2.4.9]{Vbis.rem2.4.9}
+La condition $2^{\circ})$ de la définition précédente peut encore
+s'exprimer en disant que le morphisme $\alpha$ dans (\hyperref[Vbis.lem2.4.7.1]{2.4.7.1}) est un
+isomorphisme.
+\end{enonce*}
+
+\begin{enonce*}{Définition 2.4.10}\etiquette[2.4.10]{Vbis.def2.4.10}
+Soit $\theta : X \to C^D_S$ un $D$-objet de $B$ augmenté. On dit que
+$\theta$ est une \emph{augmentation de descente effective relativement à} $G$
+si le foncteur
+$$
+\Gamma(\theta^{\ast}) \circ \varepsilon^{\ast} : G_S \longrightarrow
+\Ysheaf{\Gamma}^{\Cocart} (D, G)
+$$
+est une équivalence de catégories.
+\end{enonce*}
+
+\begin{enonce*}{Définition 2.4.11}\etiquette[2.4.11]{Vbis.def2.4.11}
+On dit que $\theta$ est une \emph{augmentation de 2-descente cohomologique}
+(ou de \emph{descente cohomologique effective}) \emph{relativement à} $G$ si
+$\theta$ est à la fois une augmentation de $1$-descente cohomologique et
+de descente effective relativement à $G$.
+\end{enonce*}
+
+On déduit alors de la démonstration de (\hyperref[Vbis.prop2.2.7]{2.2.7}) le résultat suivant:
+
+\begin{enonce*}{Théorème 2.4.12}\etiquette[2.4.12]{Vbis.thm2.4.12}
+Soit \pageoriginale $\theta : X \to C^D_S$ une augmentation de $2$-descente
+cohomologique relativement à $G$. Alors l'image essentielle de $\bar{\theta}_G^{\ast}$ est la sous-catégorie pleine de
+$D^+_G(\Ysheaf{\Gamma}(\bar{X}), \mathcal{O})$ formée des complexes
+$F^{\bigdot}$ tels que pour tout $n$, $H^n(F^{\bigdot})$ soit une section
+cocartésienne de $G$.
+\end{enonce*}
+
+La proposition suivante, dont la vérification est laissée au lecteur,
+permet de transcrire la définition (\hyperref[Vbis.def2.4.10]{2.4.10}) dans le langage de
+(\cite{SGA4-05bis:4}. 6):
+
+\begin{enonce*}{Proposition 2.4.13}\etiquette[2.4.13]{Vbis.prop2.4.13}
+Pour que $\theta : X \to C^D_S$ soit une augmentation de descente
+effective relativement à $G$, il faut et il suffit que le foncteur
+$D^{\circ} \to B/S$ au-dessus de $B$, défini par $\theta$, induise une
+équivalence entre la catégorie des sections cartésiennes de
+$G^{\circ}$ au-dessus de $B/S$ et la catégorie des sections
+cartésiennes de $G^{\circ}$ au-dessus de $D^{\circ}$.
+\end{enonce*}
+
+\begin{enonce*}{Corollaire 2.4.14}\etiquette[2.4.14]{Vbis.cor2.4.14}
+Supposons que les produits fibrés finis soient représentables dans $B$
+et soit $f : R \to S$ un morphisme : pour que l'objet semi-simplicial
+augmenté $[R |_f S]$ \emph{(\cf (\hyperref[Vbis.subsubsec1.2.7]{1.2.7}))} soit de descente effective
+relativement à $G$, il faut et il suffit que $f$ soit un morphisme de
+descente effective pour la catégorie fibrée $G^{\circ}$ au-dessus de
+$B$.
+\end{enonce*}
+
+Cela résulte de (2.4.13) et de (\cite{SGA4-05bis:4}-9).
+
+\begin{enonce*}{Définition 2.4.15}\etiquette[2.4.15]{Vbis.def2.4.15}
+Supposons que les produits fibrés finis soient représentables dans
+$B$ et soit $f : R \to S$ un morphisme. Nous dirons que $f$ est un
+morphisme de $i$-descente cohomologique relativement à $G$ $(i = 1,
+2)$ si l'objet semi-simplicial augmenté $[R |_f S]$ est de
+$i$-descente cohomologique relativement à $G$.
+\end{enonce*}
+
+\begin{enonce*}{Définition 2.4.16}\etiquette[2.4.16]{Vbis.def2.4.16}
+Supposons que les produits fibrés finis soient représentables dans $B$
+et soit $\theta : X \to C^D_S$ une augmentation : nous dirons que
+$\theta$ est une \emph{augmentation de $i$-descente cohomologique
+universelle $(i = 1, 2)$ relativement à $G$} si, pour tout morphisme $T
+\to S$, l'augmentation $X_T \xrightarrow{\theta_T} C^D_T$ obtenue par
+changement\pageoriginale de base est une augmentation de $i$-descente
+cohomologique relativement à $G$.
+\end{enonce*}
+
+La notion de \emph{morphisme de $i$-descente cohomologique universelle
+relativement à} $G$ se déduit immédiatement des deux définitions
+précédentes.
+
+Nous emploierons souvent la terminologie « augmentation de
+$G$-$i$-descente cohomologique  » à la place de « augmentation de
+$i$-descente cohomologique relativement à $G$  ».
+
+\subsection{La suite spectrale de descente}\etiquette[2.5]{Vbis.subsec2.5}
+
+\subsubsection{}\etiquette[2.5.1]{Vbis.subsubsec2.5.1}
+Soit $A$ une catégorie abélienne. On désigne par $F(A)$ la catégorie
+dont les objets sont les objets de $A$, munis d'une filtration discrète
+et codiscrète, et dont les morphismes sont les morphismes filtrés de
+$A$: la catégorie $F(A)$ est une catégorie additive (mais non
+abélienne).
+
+La catégorie $K(F(A))$ des complexes filtrés de $A$, de filtration
+discrète et codiscrète degré par degré, est une catégorie triangulée
+et les foncteurs canoniques
+\begin{equation*}
+\Gr_n : K(F(A)) \longrightarrow K(A)\tag{2.5.1.1}
+\end{equation*}\etiquette[2.5.1.1]{Vbis.eq2.5.1.1}
+sont triangulés. L'ensemble $\Sigma$ des morphismes $f$ de $K(F(A))$
+tels que $\Gr_n(f)$ soit un quasi-isomorphisme pour tout $n$ est donc
+un système multiplicatif saturé [\cf \cite{SGA4-05bis:9}. \S~2. ${\rm n^\circ}$ 1].
+
+En inversant les flèches de ce système, on obtient une nouvelle
+catégorie triangulée notée $D F(A)$ et les foncteur $\Gr_n$ se
+prolongent en des foncteurs
+\begin{equation*}
+\Gr_n : D F(A) \longrightarrow D(A){\quoi}.\tag{2.5.1.2}
+\end{equation*}\etiquette[2.5.1.2]{Vbis.eq2.5.1.2}
+
+Nous ne considérerons, par la suite, que des complexes bornés
+inférieurement: on introduit naturellement les notations $K^+(F(A))$ et
+$D^+ F(A)$.
+
+\subsubsection{}\etiquette[2.5.2]{Vbis.subsubsec2.5.2}
+Soit\pageoriginale $B$ une sous-catégorie épaisse de $A$ et désignons par
+$K^+_B(F(A))$ la sous-catégorie pleine de $K^+(F(A))$ dont les objets
+sont les complexes $X^{\bigdot}$ tels que $H^{i}(\Gr_j(X^{\bigdot})) \in B$
+pour tout couple d'entiers $(i, j) : K_B^+(F(A))$ est une
+\emph{sous-catégorie triangulée localisante} de $K(F(A))$ [\cf
+  \cite{SGA4-05bis:7}. (I. \S\ 5)]. Nous désignerons par $D_B^+ F(A)$ la sous-catégorie
+pleine de $D F(A)$ dont les objets sont les complexes bornés
+inférieurement $X^{\bigdot}$ tels que $H^i(
+\Gr_j(X^{\bigdot})) \in B$ pour tout couple $(i, j)$: d'après (\loccit),
+$D^+_B F(A)$ s'identifie à la catégorie de fractions
+$K^+_B(F(A))_{\Sigma \cap K^{+}_{B} (F(A))}$.
+
+Le foncteur « oubli des filtrations  »:
+$$
+\iota : K^+(F(A)) \longrightarrow K^+(A)
+$$
+est triangulé. De plus, il résulte de [\cite{SGA4-05bis:5}. I. (4.7)] que $\iota(f)$
+est un quasi-isomorphisme si $f \in \Sigma$ et que $\iota(K^+_B (F(A))
+\subset K^+_B (A)$. Le foncteur $\iota$ s'étend ainsi en un foncteur
+triangulé
+\begin{equation*}
+\iota : D^+ F(A) \longrightarrow D^+ (A) \tag{2.5.2.1}
+\end{equation*}\etiquette[2.5.2.1]{Vbis.eq2.5.2.1}
+tel que $\iota (D^+_B F(A)) \subset D^+_B (A)$.
+
+Notons enfin qu'il existe un \emph{foncteur spectral} canonique $D^+_B
+F(A) \to B$, aboutissant à $H^n \circ \iota$, et dont le terme $E_1$
+est donné par $H^{p+q} \circ \Gr_{p}$  [\cf \cite{SGA4-05bis:5} I. (4.2)].
+
+\emph{Nous revenons maintenant aux notations de} (2.3) \emph{en supposant} $D
+= \Delta$: $Z^{\bigdot}$ désignera le complexe de $\Add(\Delta)$
+défini par \eqhyperref[Vbis.eq2.3.9.1]{2.3.9.1}.
+
+\begin{enonce*}{Proposition 2.5.3}\etiquette[2.5.3]{Ii.prop2.5.3}
+Soit $(S, \mathcal{O}_S)$ un topos annelé. Le foncteur $$\sisi{\RR^+}{R}
+\varepsilon_{Z^{\bigdot} \ast} : D^{+} (\Ysheaf{\Gamma} (S \times D),
+\mathcal{O}_S) \to D^{+} (S, \mathcal{O}_S)$$ possède une factorisation
+canonique
+$$
+D^{+} (\Gamma (S \times D), \mathcal{O}_S) \xrightarrow{F^{\sisi{\RR^+}{R}
+\varepsilon} Z^{\bigdot}\ast} D^{+} F(S, \mathcal{O}_S)
+\xrightarrow{\iota} D^{+} (S, \mathcal{O}_S){\quoi}.
+$$
+De plus, pour tout entier $i$, le diagramme suivant est commutatif:
+\[
+\xymatrix@=2.5cm{
+D^{+}(\Ysheaf{\Gamma}(S\times D),\Oo_S)
+\ar[r]^(.55){\sisi{\RR^{+}}{R}e^{\ast}_i} \ar[d]_{F^{\sisi{\RR^{+}}{R}\epsilon_{Z^{\bigdot}\ast}}}& D^{+}(S,\Oo_S)\\
+D^{+}F(S,\Oo_S) \ar[ru]_{\Gr_i}& .
+}
+\]
+\end{enonce*}
+
+Considérons\pageoriginale le foncteur $C^+ (C^+(S, \mathcal{O}_S))
+\xrightarrow{(\quad)_s} C^+(S, \mathcal{O}_S)$: si $X^{\cdot\cdot}$ est
+un objet de $C^+ (C^+(S, \mathcal{O}_S))$, on muni
+$(X^{\cdot\cdot})_s$ de sa deuxième filtration canonique [\cf
+  \cite{SGA4-05bis:5}. I.4.8]; on obtient ainsi une factorisation:
+\begin{equation*}
+(\quad)_s : C^+ (C^+(S, \mathcal{O}_S)) \longrightarrow C^+ (F(S,
+  \mathcal{O}_S)) \xrightarrow{\iota} C^+(S, \mathcal{O}_S)\tag{2.5.3.1}
+\end{equation*}\etiquette[2.5.3.1]{Vbis.eq2.5.3.1}
+qui passe aux catégories $K^+$:
+\begin{equation*}
+(\quad)_s : K^+ (C^+(S, \mathcal{O}_S)) \longrightarrow K^+ (F(S,
+  \mathcal{O}_S)) \xrightarrow{\iota} K^+(S, \mathcal{O}_S)\tag{2.5.3.2}
+\end{equation*}\etiquette[2.5.3.2]{Vbis.eq2.5.3.2}
+car une homotopie de $C^+ (C^+(S, \mathcal{O}_S))$ induit une
+homotopie filtrée.
+
+On a alors un diagramme:
+\[\vcenter{
+\xymatrix{
+D^{+}(\Ysheaf{\Gamma}(S\times\Delta),\Oo_S) \ar[rr]^{\RR^{+}\epsilon_{Z^{\bigdot}\ast}} \ar@{-->}[rd]&                   &D^{+}(S,\Oo_S)\\
+                                              & D^{+}F(S,\Oo_S)
+\ar[ru]_{\imath}&\\
+                                  & K^{+}(F(S,\Oo_S))
+\ar[u] \ar[rd]^{\imath}&\\
+K^{+}(\Ysheaf{\Gamma}(S\times \Delta),\Oo_S) \ar[uuu]
+\ar[rr]_{(\;)_s\circ K^{+}(\epsilon_{Z^{\bigdot}}\ast)} \ar[ru]& & K^{+}(S,\Oo_S)\ar[uuu]
+}}\leqno{(2.5.3.3)}
+\]\etiquette[2.5.3.3]{Vbis.eq2.5.3.3}
+et on vérifie qu'il existe un foncteur
+$$
+{}_F \sisi{\RR^{+}}{R} \epsilon_{Z^{\bigdot} \ast} : D^{+}(\Ysheaf{\Gamma}(S \times
+\Delta), \mathcal{O}_S) \longrightarrow D^{+}F(S, \mathcal{O}_S)
+$$
+et\pageoriginale un seul rendant commutatif \eqhyperref[Vbis.eq2.5.3.3]{2.5.3.3}.
+
+Le reste de la proposition est évident.
+
+\begin{enonce*}{Proposition 2.5.4}\etiquette[2.5.4]{Vbis.prop2.5.4}
+Soient $(E, A)$ un topos semi-simplicial annelé et
+$$\theta : (E, A) \to (S \times \Delta,
+\mathcal{O}_S)$$ une augmentation : pour tout entier $i$, on désigne
+par $$\theta_i : (E_i, A_i) \to (S, \mathcal{O}_S)$$ le morphisme de
+topos annelé induit par $\theta$ au-dessus de $i$.
+
+Le foncteur $\sisi{\RR^+}{R} \bar{\theta}_\ast : D^+ (\Ysheaf{\Gamma}(E), A)
+\to D^+ (S, \mathcal{O}_S)$ possède une factorisation canonique
+$$
+D^+ (\Ysheaf{\Gamma}(E), A) \xrightarrow{{}_F\sisi{\RR^{+}}{R} \bar{\theta}_{\ast}}
+D^{+} F(S, \mathcal{O}_S) \xrightarrow{\iota} D^+ (S, \mathcal{O}_S)
+$$
+telle que pour tout entier $i$, le diagramme canonique
+\[
+\xymatrix@C=2.5cm@R=1.75cm{
+D^{+}(\Ysheaf{\Gamma}(E),A)  \ar[r]^{\sisi{\RR^{+}}{R}e_i^{\ast}}
+\ar[d]_{{}_F \sisi{\RR^{+}}{R}
+\bar{\theta}_\ast}&
+D^{+}(E_i,A_i) \ar[d]^{\sisi{\RR^{+}}{R}\theta_{i\ast}}\\
+D^{+}F(S,\Oo_S)  \ar[r]_{\Gr_i} & D^{+}(S,\Oo_S)\\
+}
+\]
+soit essentiellement commutatif.
+\end{enonce*}
+
+Résulte de ce qui précède et de (1.3.1.2).
+
+\begin{enonce*}{Proposition 2.5.5}\etiquette[2.5.5]{Vbis.prop2.5.5}
+Soient $(E, A)$ un topos semi-simplicial annelé et $$\theta : (E, A)
+\to (S \times \Delta, \mathcal{O}_S)$$ une augmentation de
+$1$-descente cohomologique. Soit $$H : (S, \mathcal{O}_S) \to (R,
+\mathcal{O}_R)$$ un morphisme de topos annelés. Alors il existe un
+foncteur spectral de $D^+(S, \mathcal{O}_S)$ dans $\Mod(R,
+\mathcal{O}_R)$:
+$$
+E^{pq}_1 = R^q(H \circ \theta_p)_{\ast} \circ
+\LL^{+}\theta^{\ast}_p \longrightarrow R^{p+q}H_{\ast}
+$$
+appelé\pageoriginale \emph{foncteur spectral de descente}.
+\end{enonce*}
+
+Soit $H \circ \theta : (E, A) \to (R \times \Delta, \mathcal{O}_R)$
+l'augmentation déduite canoniquement de $\theta$ par composition avec
+$H$; on a
+\begin{equation*}
+\bar{(H \circ \theta)}_{\ast} = H_{\ast} \circ \bar{\theta}_{\ast}\tag{2.5.5.1}
+\end{equation*}\etiquette[2.5.5.1]{Vbis.eq2.5.5.1}
+de sorte que le diagramme
+\[\vcenter{
+\xymatrix@C=2.25cm@R=2.2cm{
+D^{+}(S,\Oo_S) \ar[r]^{\sisi{\LL^{+}(\bar{\theta}^{\ast})}{\bar{\theta}^{\ast}}} \ar[rd]_{\sisi{\RR^+}{R}H_{\ast}} &
+D^{+}(\Ysheaf{\Gamma}(E),A)
+\ar[d]^{\sisi{\RR^{+}}{R}(\overline{H\circ
+\theta})_\ast}\\
+                  & D^{+}(R,\Oo_R)
+}}\leqno{(2.5.5.2)}
+\]\etiquette[2.5.5.2]{Vbis.eq2.5.5.2}
+est essentiellement commutatif car
+$$
+\sisi{\RR^+}{R} \bar{(H \circ \theta)}_{\ast} \xrightarrow{\sim} \sisi{\RR^+}{R}
+H_\ast \circ \sisi{\RR^+}{R} \bar{\theta}_{\ast} \mbox{ et } \id_{D^{+}(S,
+  \mathcal{O}_S)} \xrightarrow{\sim} \sisi{\RR^+}{R} \bar{\theta}_\ast \circ
+\bar{\theta}_\ast{\quoi}.
+$$
+Grâce à (\hyperref[Vbis.prop2.5.4]{2.5.4}), on dispose pour tout $i$, d'un diagramme
+essentiellement commutatif:
+\[\vcenter{
+\xymatrix@C=2.25cm@R=1.75cm{
+D^{+}(S,\Oo_S) \ar[r]^{\bar{\theta}^{\ast}} \ar[rdd]_{\sisi{\RR^{+}}{R}H_{\ast}}&
+D^{+}(\Ysheaf{\Gamma}(E),A)
+\ar[r]^{\sisi{\RR^{+}}{R}e^{\ast}_i} \ar[d]_{{}_F\sisi{\RR^{+}}{R}(\bar{H\circ\theta})_\ast}&
+D^{+}(E_i,A_i) \ar[d]^{\sisi{\RR^{+}}{R}(H\circ\theta_{i})_{\ast}}\\
+                  & D^{+}F(R,\Oo_R)   \ar[d]_{\imath}\ar[r]_{\Gr_i}      & D^{+}(R,\Oo_R)\\
+                  & D^{+}(R,\Oo_R)          &   .
+}}\leqno{(2.5.5.3)}
+\]\etiquette[2.5.5.3]{Vbis.eq2.5.5.3}
+Le\pageoriginale foncteur spectral annoncé, s'obtient en considérant
+le foncteur
+spectral canonique sur $D^+ F(R, \mathcal{O}_R)$ que l'on compose avec
+${}_F R(\bar{H \circ \theta})_{\ast} \circ\bar{\theta}^{\ast}$.
+
+On laisse au lecteur le soin de vérifier la proposition suivante:
+
+\begin{enonce*}{Proposition 2.5.6}\etiquette[2.5.6]{Vbis.prop2.5.6}
+Avec les notations précédentes, le terme $E^{pq}_2$ du foncteur
+spectral précédant s'écrit:
+$$
+\check{H}^p \circ R^q \Gamma ((H \circ \theta)_{\ast}) \circ
+\bar{\theta}^\ast
+$$
+où $\check{H}^p : \Mod(\Ysheaf{\Gamma}(R \times \Delta), \mathcal{O}_R) \to
+\Mod(R, \mathcal{O}_R)$ est le foncteur qui associe à tout foncteur $\Delta
+\xrightarrow{F} \Mod(R, \mathcal{O}_R)$ l'objet d'homologie en degré $p$ du
+complexe associé (noté $\varepsilon_{Z^{\bigdot}\ast} (F)^{\bigdot}$ dans
+(\hyperref[Vbis.subsubsec2.3.3]{2.3.3})).
+\end{enonce*}
+
+Nous revenons maintenant à la terminologie introduite dans
+(\hyperref[Vbis.subsec2.4]{2.4}): grâce au sorite (\hyperref[Vbis.subsubsec2.5.2]{2.5.2}),
+toutes les considérations précédentes vont se transcrire mot pour
+mot en plaçant la lettre $G$ en indice partant ou cela a un sens.
+Les détails sont laissés aux soins du lecteur; on obtient en
+particulier :
+
+\begin{enonce*}{Proposition 2.5.7}\etiquette[2.5.7]{Vbis.prop2.5.7}
+Soient \pageoriginale $\theta : X \to C^D_S$ une augmentation de
+$1$-descente cohomologique relativement à $G$ et soit $h : S \to R$ un
+morphisme de $B$; il existe un foncteur spectral de $D^+_{G_S}(S)$
+dans $G_R$:
+$$
+E^{pq}_1 = R^q_G(h \circ \theta)_\ast \circ \theta_{p,G}^\ast
+\to R^{p + q}_G h_{\ast}
+$$
+avec $E^{pq}_2 = \check{H}^p \circ R^q_G \Gamma((h \circ \theta)_\ast)
+\circ \bar\theta_G^{\star}$.
+\end{enonce*}
+
+\section{Critères de descente}\etiquette[3]{Vbis.sec3}
+
+\setcounter{subsection}{-1}
+\subsection{Notations}\etiquette[3.0]{Vbis.subsec3.0}
+
+Dans tout ce qui suit, nous conserverons les notations de (\hyperref[Vbis.subsec2.4]{2.4}). Nous
+supposerons toujours \emph{que les produits fibrés finis sont
+  représentables dans} $B$.
+
+Nous supposerons de plus que $B$ vérifie la condition suivante
+
+\setcounter{subsubsection}{-1}
+\subsubsection{}\etiquette[3.0.0]{Vbis.subsubsec3.0.0}
+\emph{Les sommes directes existent dans $B$, sont disjointes, universelles
+et des familles de $\mathcal{E}$-descente effective et
+$G^{\circ}$-descente effective} [\cf \cite{SGA4-05bis:4} (9.23) (9.25) et (9.27)].
+
+\subsubsection{}\etiquette[3.0.1]{Vbis.subsubsec3.0.1}
+Rappelons maintenant quelques notations classiques sur les objets
+semi-simpliciaux d'une catégorie [\cf (\cite{SGA4-05bis:3} Chap II) et
+  (V. appendice)].
+
+Soit $E$ une catégorie \emph{possédant des limites projectives finies}
+$\Delta^{\circ} E$ désigne la catégorie des objets semi-simpliciaux
+de $E$ (\cf (\hyperref[Vbis.subsubsec1.2.6]{1.2.6})).
+
+Soit $n$ un entier : on désigne par $\displaystyle\mathop{\Delta}_n$
+(\resp $\displaystyle{\mathop{\Delta}_n}^+$,
+$\displaystyle{\mathop{\Delta}_n}^-$) la
+sous-catégorie pleine de $\Delta$ (\resp $\Delta^+$, $\Delta^-$)
+formés par les objets $[p]$ tels que $p \leq n$.
+
+Le foncteur restriction
+\begin{equation*}
+i_n^{\ast} : \Delta^{\circ} E \longrightarrow
+{\mathop{\Delta}_n}^{\circ} E\tag{3.0.1.1}
+\end{equation*}\etiquette[3.0.1.1]{Vbis.eq3.0.1.1}
+possède un adjoint à droite $i_{n\ast}$, puisque les limites
+projectives finies existent dans \pageoriginale $E$ (\cf (\hyperref[Vbis.lem1.2.10]{1.2.10})). On
+note $\cosk_n$ et on appelle \emph{foncteur cosquelette d'ordre} $n$
+le foncteur $i_{n\ast} \circ i^\ast_n$; par abus de notations, nous
+utiliserons aussi la notation $\cosk_n$ pour le foncteur
+$i_{n_\ast}$.
+
+Pour tout entier $p$, désignons par
+$\displaystyle\mathop{\Delta}_{n[p]}$ (\resp
+$\displaystyle{\mathop{\Delta}_{n[p]}}^+$) la sous-catégorie pleine
+$\Delta_{[p]}$ (\resp $\Delta_{[p]}^+$) des objets de $\Delta$
+(\resp $\Delta^{+}$) au-dessus de $[p]$, définie par les objets
+$[q]$ au-dessus de $[p]$ tels que $q \leq n$; on laisse au lecteur le
+soin de vérifier que l'on a:
+\begin{equation*}
+(\cosk_n(X))_p = \varprojlim_{\mathop{\Delta}_{n[p]}} X_q
+  \xrightarrow{\sim} \varprojlim_{\mathop{\Delta}_{n[p]}^{+}} X_q{\quoi}.\tag{3.0.1.2}
+\end{equation*}\etiquette[3.0.1.2]{Vbis.eq3.0.1.2}
+
+\subsubsection{}\etiquette[3.0.2]{Vbis.subsubsec3.0.2}
+Soient $X$ et $X'$ deux objets de $\Delta^{\circ} E$ et $f$, $g : X
+\rightrightarrows X'$ deux morphismes. Une \emph{homotopie de $f$ vers}
+$g$ consiste en la donnée pour tout $n$ d'une application $h_n :
+\Hom_{\Delta}([n], [1]) \to \Hom_E(X_n, X'_n)$ vérifiant les deux
+conditions suivantes:
+\begin{equation*}
+h_n(\partial^1) = f_n \mbox{ et } h_n(\partial^\circ) = g_n \mbox{
+  pour tout } n{\quoi}.\tag{3.0.2.1}
+\end{equation*}\etiquette[3.0.2.1]{Vbis.eq3.0.2.1}
+
+\setcounter{paragraph}{1}
+\paragraph{}\etiquette[3.0.2.2]{Vbis.par3.0.2.2}
+pour toute flèche $[n] \to [p]$ dans $\Delta$, on a un diagramme
+commutatif:
+\[
+\xymatrix@C=2.25cm{
+\Hom_{\Delta}\big([p],[1]\big) \ar[r] \ar[dd]      &
+\Hom_E(X_p,X'_p) \ar[rd]&\\
+                                                  &     & \Hom_E(X_p,X'_p)\\
+\Hom_{\Delta}\big([n],[1]\big)    \ar[r]           &  \Hom_E(X_n,X'_n)
+\ar[ru]&.
+}
+\]
+N.B.: La relation ainsi introduite sur l'ensemble des morphismes de
+$X$ dans $X'$ n'est pas une relation d'équivalence; on peut palier à
+cet inconvénient en introduisant la notion \emph{d'homotopie composée}
+[\cf \cite{SGA4-05bis:3} chap III]: nous n'utiliserons pas cette dernière notion.
+
+\begin{enonce*}{Lemme 3.0.2.3}\etiquette[3.0.2.3]{Vbis.lem3.0.2.3}
+Soient\pageoriginale $X$ et $X'$ deux objets de $\Delta^{\circ} E$,
+$f$, $g : X \rightrightarrows X'$ deux morphismes et $F : E \to C$
+un foncteur où $C$ est une catégorie abélienne. Une homotopie
+simpliciale de $f$ vers $g$ induit une homotopie sur les morphismes
+de complexes de cochaînes canoniquement associés à $F(f)$ et $F(g)$.
+\end{enonce*}
+
+On est ramené au cas où $C$ est la catégorie des modules sur un anneau
+et on applique [\cite{SGA4-05bis:5} I. (3.7.1)].
+
+\begin{enonce*}{Lemme 3.0.2.4}\etiquette[3.0.2.4]{Vbis.lem3.0.2.4}
+Soient $n$ un entier, $X$ et $X'$ deux objets de
+$\Delta^{\circ}E$. Soient $f$ et $g$ deux morphismes de $X$ dans
+$X'$ tels que $f_p = g_p$ pour $p < n$: alors il existe une homotopie
+simpliciale de $\cosk_n(f)$ vers $\cosk_n(g)$.
+\end{enonce*}
+
+On définit $$h_p : \Hom_{\Delta} ([p], [1]) \to \Hom(X_p, {X'}_p)$$
+par l'application constante de valeur $f_p = g_p$ pour $p < n$, puis
+$h_n : \Hom_{\Delta}([n], [1]) \to \Hom(X_n, X'_n)$ en envoyant
+tous les éléments de $\Hom_{\Delta}([n], [1])$, sauf
+$\partial^{\circ}$, sur $f_n$, et $\partial^{\circ}$ sur $g_n$. On
+remarque ensuite que $$\Hom_{\Delta}([k], [1]) =
+\varprojlim_{\substack{[q] \to [k]\\ q \geq n}}
+\Hom([q], [1])$$ pour $k > n$, ce qui permet de définir canoniquement
+$h_k$.
+
+\subsection{Comparaison de deux augmentations du point de vue de la
+  1-descente cohomologique}\etiquette[3.1]{Vbis.subsec3.1}
+
+Soit $S$ un objet de $B$: on désigne par $\Hom_{\plat} (D^{\circ},
+B/S)$ la sous-catégorie pleine de $\Hom(D^{\circ}, B/S)$ dont les
+objets sont les augmentations plates [\cf (\hyperref[Vbis.subsubsec1.2.6]{1.2.6}) et
+(\hyperref[Vbis.def2.4.3.1]{2.4.3.1})].
+
+\begin{enonce*}{Proposition 3.1.1}\etiquette[3.1.1]{Vbis.prop3.1.1}
+Soient $X \xrightarrow{u} C^D_S$ et $X'\xrightarrow{u'} C^D_S$ deux
+objets de $\Hom_{\plat} (D^{\circ}, B/S)$. Soit $f : X \to X'$ un
+morphisme au-dessus de $S$ (\ie un morphisme de $\Hom(D^{\circ},
+B/S)$); il lui correspond de façon naturelle un morphisme
+fonctoriel
+$$
+\eta^f_G : \sisi{\RR^+}{R}_G \bar{u}'_\ast \circ
+    {\bar{u}'}_G^\ast \longrightarrow \sisi{\RR^+}{R}_G \bar{u}_\ast \circ
+ \bar{u}_G^\ast
+$$
+tel que le diagramme suivant soit commutatif:
+\[
+\xymatrix@=1.5cm{
+& \sisi{\RR^{+}}{R}_G \overline{u}'_{\ast}\circ
+  {\overline{u}'}_G^{\ast} \ar[dd]^{\eta^{f}_G}\\
+\id
+*_{D_{G_S}^{+} (S)} \ar[ru] \ar[rd]& \\
+&\sisi{\RR^{+}}{R}_G \overline{u}_{\ast}\circ
+\overline{u}_G^{\ast}.
+}
+\]
+
+De\pageoriginale plus, si $D = \Delta$, $\eta^f_G$ ne dépend que de
+la classe
+d'homotopie \emph{(\cf (\hyperref[Vbis.subsubsec3.0.2]{3.0.2}))} de $f$ dans $\Hom(\Delta^{\circ}, B/S)$.
+\end{enonce*}
+
+Il est clair que nous pouvons supposer que $G =
+\Ysheaf{\Mod}(\mathcal{E}^{\circ}, \mathcal{O})$ pour la construction de
+$\eta_G^f$.
+
+Soit $I$ la catégorie définie par le type de diagramme
+\begin{equation*}
+{0} \longrightarrow {1}{\quoi}.\tag{3.1.1.1}
+\end{equation*}\etiquette[3.1.1.1]{Vbis.eq3.1.1.1}
+On désigne par $r_{0} : D \to I \times D$ (\resp $r_1$) le foncteur
+pleinement fidèle défini par $r_0(i) = (0, i)$ (\resp $r_1 (i) = (1,
+i)$).
+
+En vertu de l'isomorphisme canonique
+\begin{equation*}
+\Hom((I \times D)^{\circ}, B/S) \xrightarrow{\sim} \Hom(I^{0},
+\Hom (D^0, B/S))\tag{3.1.1.2}
+\end{equation*}\etiquette[3.1.1.2]{Vbis.eq3.1.1.2}
+les données de (\hyperref[Vbis.prop3.1.1]{3.1.1}) définissent une augmentation plate\nde{Explicitement, on a $(XfX')_{(0,i)}=X_0,\ (XfX')_{(1,j)}=X'_j$ et à $\alpha\in\Hom_D(i,j)=\Hom((0,i),(0,j))$ est associée $\alpha\circ f_i:(XfX')_{(0,i)}\rightarrow (XfX')_{(1,j)}$, les endomorphismes de $(\varepsilon,i),\ \varepsilon=0,1$ agissant de façon évidente.}
+\begin{equation*}
+X f X'\xrightarrow{ufu'} C^{I \times D}_S{\quoi}.\tag{3.1.1.3}
+\end{equation*}\etiquette[3.1.1.3]{Vbis.eq3.1.1.3}
+
+Soit $F$ un objet de $\Mod(\Ee^\circ_S, \Oo_S)$, le
+morphisme canonique
+\begin{equation*}
+\Ee_{I \times D}^{\ast} (F) \longrightarrow
+\Gamma((ufu')_{\ast}) \circ \Gamma ((ufu')^{\ast})
+(\Ee_{I\times D}^{\ast}(F)){\quoi}.\tag{3.1.1.4}
+\end{equation*}\etiquette[3.1.1.4]{Vbis.eq3.1.1.4}
+peut s'interpréter comme un triangle commutatif dans
+$\Mod(\Ysheaf{\Gamma}(\bar{C^D_S}), \Oo)$:
+\[\vcenter{
+\xymatrix@=1.5cm{
+ &\Gamma(u'_{\ast}) \circ \Gamma({u'}^{\ast})(\Ee_D^{\ast}(F))\ar[dd]\\
+\Ee_D^{\ast}(F) \ar[ru] \ar[rd]& \\
+                        & \Gamma(u_{\ast})\circ \Gamma(u^{\ast})(\Ee^{\ast}_D(F))
+}}\leqno{(3.1.1.5)}
+\]\etiquette[3.1.1.5]{Vbis.eq3.1.1.5}
+d'où\pageoriginale un morphisme fonctoriel $\bar{u}'_{\ast} \circ {\bar{u}'}^{\ast}
+\xrightarrow{\alpha_f} \bar{u}_{\ast} \circ \bar{u}^\ast$ tel que le
+diagramme
+\[\vcenter{
+\xymatrix@=1.5cm{
+ &       \bar{u}'_{\ast} \circ \bar{u}'^{\ast} \ar[dd]^{\alpha_f}\\
+\id_{\Mod(\Ee^{\circ}_S,\Oo_S)} \ar[ru] \ar[rd]&\\
+& \overline{u}_{\ast} \circ \overline{u}^{\ast}\\
+}}\leqno{(3.1.1.6)}
+\]\etiquette[3.1.1.6]{Vbis.eq3.1.1.6}
+soit commutatif.
+
+On obtient par suite un morphisme fonctoriel tel que le diagramme
+\[\vcenter{
+\xymatrix@=1.5cm{
+     &        K^{+}(\overline{u}'_{\ast}) \circ
+     K^{+}({\overline{u}'}^{\ast}) \ar[dd]^{K^{+}(\alpha_f)}\\
+\id_{K^{+}(\Ee^{\circ}_S,\Oo_S)}\ar[rd] \ar[ru]  &\\
+& K^{+}(\overline{u}_{\ast}) \circ K^{+}(\overline{u}^{\ast})
+}}\leqno{(3.1.1.7)}
+\]\etiquette[3.1.1.7]{Vbis.eq3.1.1.7}
+soit commutatif.
+
+\noindent
+(Remarquons que $K^+(\alpha_f)$ peut aussi s'obtenir formellement par
+adjonction en utilisant l'isomorphisme $K^+ (\Gamma(f^{\ast})) \circ
+K^+ ({\bar{u}'}^{\ast}) \xrightarrow{\sim} K^+(\bar{u}^{\ast})$).
+
+Soient $F^{\bigdot}$ un complexe de $K^+(S)$ et $\xi : K^+ (\bar{u f
+  {u'}^{\ast}})(F^{\bigdot}) \to J^{\bigdot}$ un quasi-isomorphisme tel que,
+  pour tout entier $n$, $J^n$ soit totalement acyclique objet par
+  objet (\cf (\hyperref[Vbis.rem1.3.13]{1.3.13})). D'après (\loccit) les flèches canoniques
+$$
+K^+ (\bar{u}^\ast)(F^{\bigdot}) \to r^{\ast}_1(J^{\bigdot}) \mbox{ et }
+K^+ (\bar{u}^\ast)(F^{\bigdot}) \to r^{\ast}_0(J^{\bigdot})
+$$
+sont\pageoriginale des quasi-isomorphismes (\cf
+(\hyperref[Vbis.subsubsec1.2.8]{1.2.8}) pour les notations). On
+obtient par suite un morphisme
+$$
+\sisi{\RR^+}{R} \bar{u}'_\ast \circ {\bar{u}'}^\ast(F^{\bigdot})
+\xrightarrow{\eta^f(F^{\bigdot})} \sisi{\RR^+}{R} \bar{u}_\ast \circ \bar{u}^\ast(F^{\bigdot})
+$$
+tel que le diagramme suivant soit commutatif dans $D^+(S)$:
+{\def\objectstyle{\scriptstyle}
+\def\labelstyle{\scriptstyle}
+
+\[\vcenter{
+\xymatrix@C=0cm@R=1cm{
+                & Q \circ
+                K^{+}(\bar{u}'_{\ast})(r^{\ast}_{0}(J^{\bigdot}))
+                \ar[rr]^{\sim}
+                \ar@{->}'[d][ddd]&           &
+                \sisi{\RR^{+}}{R}\bar{u}'_{\ast}\circ
+                Q(r^{\ast}_0(J^{\bigdot})) \ar[ddd]\\
+Q{\circ}K^{+}(\bar{u}'_{\ast}){\circ}K^{+}({\bar{u}'}^{\ast})(F^{\bigdot})\ar[rr]
+\ar[ru]\ar[ddd]_{Q(K^{+}(\alpha_f)(F^{\bigdot}))} &         &
+\sisi{\RR^{+}}{R}\bar{u'}_{\ast}\circ
+     \bar{u'}^{\ast}(F^{\bigdot}) \ar[ru]^{\sim}
+     \ar@{-->}[ddd]^(.35){\eta^{f}(F^{\bigdot})}&\\
+                &          &           &\\
+                & Q\circ
+                K^{+}(\bar{u}_{\ast})(r^{\ast}_1(J^{\bigdot}))
+                \ar@{->}'[r][rr]^(.25){\sim} &           &
+                \RR\bar{u}_{\ast}\circ Q(r_1^{\ast}(J^{\bigdot}))\\
+Q\circ K^{+}(\bar{u}_{\ast}){\circ}
+K^{+}(\bar{u}^{\ast})(F^{\bigdot}) \ar[ru]\ar[rr] &          &
+\sisi{\RR^{+}}{R}\bar{u}_{\ast}\circ\bar{u} {}^{\ast}(F^{\bigdot})
+\ar[ru]&
+}}\leqno{(3.1.1.8)}
+\]\etiquette[3.1.1.8]{Vbis.eq3.1.1.8}
+}
+\noindent
+Il est clair que $\eta^f(F^{\bigdot})$ ne dépend pas de la résolution
+choisie et on vérifie qu'il est fonctoriel en $F^{\bigdot}$ variant dans
+$D^{+}(S)$.
+
+Pour achever la démonstration de (3.11), il suffit de montrer le lemme
+suivant:
+
+\begin{enonce*}{Lemme 3.1.1.9}\etiquette[3.1.1.9]{Vbis.lem3.1.1.9}
+Soient\pageoriginale $X \xrightarrow{u} C^{\Delta}_S$ et $X'
+\xrightarrow{u'} C^{\Delta}_S$ deux objets de
+$\Hom_{\plat}(\Delta^{\circ}, B/S)$. Soient $f$, $g : X \to X'$ deux
+morphismes dans $\Hom(\Delta^{\circ}, B/S)$: s'il existe une
+homotopie simpliciale de $f$ vers $g$, on a $\eta^f = \eta^g$.
+\end{enonce*}
+
+Soit $h_n : \Hom_{\Delta}([n], [1]) \to \Hom_{B/S}(X_n, {X'}_n)$ une
+homotopie simpliciale de $f$ vers $g$. Soit $\bar{I \times D}$ la
+catégorie obtenue à partir de $I \times D$ en ajoutant les flèches
+$(1, n) \to (0, n)$ correspondant bijectivement à $h_n (\Hom([n],
+[1]))$ et les relations imposées par la compatibilité des $h_n$ pour
+$n$ variable. Les données du lemme définissent une augmentation plate
+$\bar{X f X'} \xrightarrow{t} C^{\bar{\Gamma \times D}}_S$. Soit
+$F^{\bigdot}$ un complexe de $C^+(S)$ et $J^{\bigdot}$ une résolution de
+$C^+(\bar{t}^{\ast})(F^{\bigdot})$ telle que pour tout entier $n$, $J^n$ soit
+totalement acyclique objet par objet: il existe une
+homotopie simpliciale entre
+$$
+C^{+} (\Gamma(u'_{\ast})) (r^{\ast}_0(J^{\bigdot})) \rightrightarrows
+C^{+} (\Gamma(u_{\ast})) (r^+_1(J^{\bigdot}))
+$$
+d'où une homotopie lorsqu'on passe aux complexes « condensés  ». (\cf (\hyperref[Vbis.lem3.0.2.3]{3.0.2.3})).
+
+\begin{enonce*}{Définition 3.1.2}\etiquette[3.1.2]{Vbis.def3.1.2}
+Avec les notations de \emph{(3.1.1)}, nous dirons que $f$ est une
+\emph{équivalence pour la $G$-$1$-descente cohomologique} si
+$\eta^f_G$ est un isomorphisme.
+\end{enonce*}
+
+\setcounter{subsubsection}{2}
+\subsubsection{}\etiquette[3.1.3]{Vbis.subsubsec3.1.3}
+Nous noterons dans ce qui suit par $L_i : \Delta \to \Delta
+\times \Delta$ (\resp $c_i : \Delta \to \Delta \times
+\Delta$) le foncteur canonique défini par $[n] \to [n] \times [i]$
+(\resp $[n] \to [i] \times [n]$).
+
+\begin{enonce*}{Proposition 3.1.4}\etiquette[3.1.4]{Vbis.prop3.1.4}
+Soient $X \xrightarrow{u} C^{\Delta \times \Delta}_S$ et $X'
+\xrightarrow{u'} C^{\Delta \times \Delta}_S$ deux objets de
+$\Hom_{\plat} ((\Delta \times \Delta)^{\circ}, B/S)$. Soit $f : X
+\to X'$ un morphisme au-dessus de $S$: on suppose que $f_{\ast}
+\id_{L_{i}} : X \circ L_i \to X'\circ L_i$ (\resp $f_{\ast} \id_{c_i} :
+X \circ c_i \to X'\circ c_i$) est une équivalence pour de la
+$G$-$1$-descente cohomologique pour tout entier $i$. Alors $f$ est une
+équivalence pour la $G$-$1$-descente cohomologique.
+\end{enonce*}
+
+D'après la description de $\eta^f$ (\cf démonstration de (\hyperref[Vbis.prop3.1.1]{3.1.1})) il
+s'agit de montrer qu'un certain morphisme de complexes triples induit
+un isomorphisme sur la cohomologie des complexes condensés: un
+raisonnement standard par suite spectrales permet alors de conclure.
+
+\begin{enonce*}{Proposition 3.1.5}\etiquette[3.1.5]{Vbis.prop3.1.5}
+Soient\pageoriginale $X$ et $X'$ deux objets de
+$\Hom_{\plat}(\Delta^{\circ},
+B/S)$. Soit $$f : X \to X'$$ un morphisme fonctoriel tel que $f_n : X_n
+\to X'_n$ soit un morphisme de $G$-$1$-descente cohomologique. Alors
+le morphisme canonique $$[[X |_f X']] \to [[X'|_{\id} X']]$$ \emph{(\cf
+(\hyperref[Vbis.subsubsec1.2.7]{1.2.7})} est une équivalence pour la $G$-$1$-descente cohomologique.
+\end{enonce*}
+
+Résulte de (\hyperref[Vbis.prop3.1.4]{3.1.4}) et du lemme suivant, dont la démonstration est
+laissée au lecteur:
+
+\begin{enonce*}{Lemme 3.1.5.1}\etiquette[3.1.5.1]{Vbis.lem3.1.5.1}
+Soient $f : R \to S$ un morphisme plat $Y \xrightarrow{u}
+C^{\Delta}_S$ et $Y \xrightarrow{v} C^{\Delta}_R$ deux
+augmentations \emph{plates} telles que le diagramme suivant soit commutatif
+dans $\Hom(\Delta^{\circ}, B)$:
+\[
+\xymatrix@=1.5cm{
+Y \ar[rr]^{v} \ar[rd]_{u}&        &  C^{\Delta}_R \ar[ld]^f\\
+  &  C^{\Delta}_S      &
+}
+\]
+Si $v$ est une augmentation de $G$-$1$-descente cohomologique, c'est une
+équivalence pour la $G$-$1$-descente cohomologique.
+\end{enonce*}
+
+Dans les applications, nous combinerons (\hyperref[Vbis.prop3.1.4]{3.1.4}) et (\hyperref[Vbis.prop3.1.5]{3.1.5}) avec le
+résultat suivant:
+
+\begin{enonce*}{Proposition 3.1.6}\etiquette[3.1.6]{Vbis.prop3.1.6}
+Soit $X \xrightarrow{u} C^{\Delta \times \Delta}_S$ une
+augmentation plate. Pour que $u$ soit une augmentation de
+$G$-$1$-descente cohomologique, il suffit que $$X \circ L_i
+\xrightarrow{u \ast \id_{L_i}} C^{\Delta}_S\ (\resp\ X \circ C_i
+\xrightarrow{u \ast \id_{C_i}} C^{\Delta}_S)$$ le soit pour tout
+entier $i$.
+\end{enonce*}
+
+Cela résulte de la construction explicite de $\sisi{\RR^+}{R}_G
+\bar{u}_{\ast}$ (\cf (\hyperref[Vbis.subsubsec2.3.10]{2.3.10})).
+
+\begin{enonce*}{Corollaire 3.1.7}\etiquette[3.1.7]{Vbis.cor3.1.7}
+Soit $X \xrightarrow{u} C^{\Delta}_S$ une augmentation pour que $u$
+soit de $G$-$1$-descente cohomologique, il faut et il suffit que $[[X
+    |_{\id} X]] \to C^{\Delta \times \Delta}_S$ le soit.
+\end{enonce*}
+
+\subsection{Critères de localisation}\etiquette[3.2]{Vbis.subsec3.2}\pageoriginale
+
+\begin{enonce*}{Proposition 3.2.1}\etiquette[3.2.1]{Vbis.prop3.2.1}
+Soit $Y \xrightarrow{v} C^{\Delta}_S$ une
+augmentation de $G$-$1$-descente cohomologique. Pour qu'une augmentation
+plate $X \xrightarrow{u} C^{\Delta}_S$ soit de $G$-$1$-descente
+cohomologique, il suffit qu'elle le devienne après tous les
+changements de base $Y_n \to S$.
+\end{enonce*}
+
+Au moyen des changements de base $Y_n \to S$, on construit un objet
+semi-simplicial double $\fprod{X}{Y}{S}$ augmenté
+vers $S$. D'après (\hyperref[Vbis.prop3.1.4]{3.1.4}) et (\hyperref[Vbis.lem3.1.5.1]{3.1.5.1}) le morphisme canonique
+$$\fprod{X}{Y}{S}\to[[X|_{\id}X]]$$ est une
+équivalence pour la $G$-$1$-descente cohomologique: en vertu de (\hyperref[Vbis.cor3.1.7]{3.1.7}),
+il suffit de montrer que l'augmentation de $\fprod{X}{Y}{S}$ vers $S$
+est de $G$-$1$-descente cohomologique. Or ceci résulte du fait que le
+morphisme canonique $$\fprod{X}{Y}{S} \to [[Y|_{\id} Y]]$$ est une
+équivalence pour la $G$-$1$-descente cohomologique: on utilise encore
+(\hyperref[Vbis.prop3.1.4]{3.1.4}), (\hyperref[Vbis.lem3.1.5.1]{3.1.5.1}) et (\hyperref[Vbis.cor3.1.7]{3.1.7}).
+
+\setcounter{subsubsection}{1}
+\subsubsection{}\etiquette[3.2.2]{Vbis.subsubsec3.2.2}
+Soit
+\[\vcenter{
+\xymatrix@C=3cm@R=1.5cm{
+Y'          \ar[r]^{\mathsf{g}'} \ar[d]_{f'} & Y \ar[d]^{f}\\
+X'           \ar[r]_{\mathsf{g}} & X
+}}\leqno{(3.2.2.1)}
+\]\etiquette[3.2.2.1]{Vbis.eq3.2.2.1}
+un diagramme commutatif dans $B$ et soit $F$ un objet de
+$\Mod(\mathcal{E}^0_Y, \mathcal{O}_{Y})$: il existe un morphisme et un seul
+$$\varphi(F) : g_{\ast}(f^{\ast}(F)) \to f'^\ast(g'_{\ast}(F))$$ tel que le
+diagramme suivant (dans $\Ysheaf{\Mod}(\mathcal{E}^0, \mathcal{O})$), soit
+commutatif\nde{Comme plus haut, il faut regarder le diagramme commutatif dans $B^\circ$ et utiliser la structure fibrée et cofibrée de $\Mod(\mathcal{E}^\circ,\mathcal{O})\rightarrow B^\circ$ ce qui explique l'allure inhabituelle du morphisme de changement de base. On a écrit sous les flèches (d'adjonction) du diagramme suivant leurs images dans $B^\circ$} :
+\[\vcenter{
+\xymatrix@R=1.85cm@C=1.75cm{
+                      & f^{\ast}(F) \ar[r]^{f^\circ} \ar[ld]_{g^\circ}& F\ar[d]^{g'^\circ} \\
+g_{\ast}(f^{\ast}(F))  \ar[rd]_{\Id}&             & g'_{\ast}(F)\\
+                      &f'{\ast}(g'_{\ast}(F)). \ar[ru]_{f'^\circ} &
+}}\leqno{(3.2.2.2)}
+\]\etiquette[3.2.2.2]{Vbis.eq3.2.2.2}
+
+Si\pageoriginale l'on suppose maintenant que toutes les flèches de
+\eqhyperref[Vbis.eq3.2.2.1]{3.2.2.1} sont plates, on définit de la même manière un
+morphisme, dit de \emph{changement de base}\nde{Là encore, il serait plus correct de noter $f^\circ$, $g^\circ$, $f'^\circ$, $g'\circ$ au lieu de $f$, $g$, $f'$, $g'$. En regardant la structure fibrante de cofibrante non opposée, $\xi_G$  devient $$g_{G}^\ast \circ  {R}_G f_{\ast}
+\longrightarrow  {R}_G {f'}_{\ast} \circ {g'}_G^{\ast}.$$}
+\begin{equation*}
+\xi_G : g_{G\ast} \circ  \sisi{\RR^+}{R}_G f^{\ast}
+\longrightarrow  \sisi{\RR^+}{R}_G {f'}^{\ast} \circ
+         {g'}_{G\ast}{\quoi}.\tag{3.2.2.3}
+\end{equation*}\etiquette[3.2.2.3]{Vbis.eq3.2.2.3}
+
+\begin{enonce*}{Définition 3.2.2.4}\etiquette[3.2.2.4]{Vbis.def3.2.2.4}
+On dit que le diagramme \emph{(3.2.2.1) vérifie le théorème du changement de
+base relativement à $G$ si $f$, $g$, $f'$, $g'$} sont des morphismes
+plats et si $\xi_G$ est un isomorphisme.
+\end{enonce*}
+
+\setcounter{subsubsection}{2}
+\subsubsection{}\etiquette[3.2.3]{Vbis.subsubsec3.2.3}
+Soient $h : S \to S'$ un morphisme \emph{plat} dans $B$, $X \xrightarrow{u}
+C^{\Delta}_S$ et $X' \xrightarrow{u'} C^{\Delta}_{S'}$ deux
+augmentations \emph{plates}. Soit $f : X \to X'$ un morphisme fonctoriel
+tel que le diagramme (dans $\Hom(\Delta^0, B)$)
+\[\vcenter{
+\xymatrix@C=3cm@R=1.5cm{
+X  \ar[r]^{f} \ar[d]_{u}& X'\ar[d]^{u'}\\
+C^{\Delta}_S   \ar[r]^{h_c} & C^{\Delta}_{S'}\\
+}}\leqno{(3.2.3.1)}
+\]\etiquette[3.2.3.1]{Vbis.eq3.2.3.1}
+soit commutatif. ($h_c$ désigne le morphisme fonctoriel constant
+défini par $h$).
+
+Soit $K^{\bigdot}$ un complexe de $D^{+}(S')$ : le morphisme
+$$
+\eta^f_G(K^{\bigdot}) : \sisi{\RR^+}{R} \bar{u}'_{\ast} \circ
+    {\bar{u}'}^{\ast} (K^{\bigdot}) \longrightarrow \sisi{\RR^+}{R} (\bar{h_c
+      \circ u})_{\ast} \circ (\bar{h_c \circ u})^\ast (K^{\bigdot})
+$$
+induit, compte tenu des identités:
+$$
+\sisi{\RR^+}{R} (\bar{h_c \circ u})_{\ast} \simeq \sisi{\RR^+}{R}
+h^{\ast} \circ \sisi{\RR^+}{R} \bar{u}_{\ast} \mbox{ et }
+(\bar{h_c \circ u})^{\ast} \simeq
+(\bar{u}^{\ast}) \circ  h_{c\ast}
+$$
+un morphisme $\ch^{f, h}_G(K^{\bigdot})$, fonctoriel en $K^{\bigdot}$, tel
+que le diagramme suivant soit commutatif\nde{On a supprimé dans les foncteurs dérivés la mention à la catégorie épaisse $G$ pour des raisons de lisibilité. On retrouve les mêmes dérivations inhabituelles $h_{c\ast}$ dues au choix de la structure cofibrée.}:
+\[\vcenter{
+\xymatrix@C=1cm@R=2.25cm{
+{}_{}h_{c\ast} \circ
+\sisi{\RR^{+}}{R}_{}\bar{u}'_{\ast}{}_{}\circ{\bar{u}'}^{\ast}(K^{\bigdot})
+ \ar[rr]^{\ch_{G}^{f,h}{(K^{\bigdot})}}& &\sisi{\RR^{+}}{R}_{}\bar{u}_{\ast}\circ
+{}_{} \bar{u}^{\ast} \circ {}_{}h_{c\ast}(K^{\bigdot}) \\
+& h_{c\ast}(K^{\bigdot}) \ar[lu]^{{}_{}h_{c\ast}(\alpha(K^{\bigdot}))}\ar[ru]&.
+}}\leqno{(3.2.3.2)}
+\]\etiquette[3.2.3.2]{Vbis.eq3.2.3.2}
+
+\begin{enonce*}{Lemme 3.2.3.3}\etiquette[3.2.3.3]{Vbis.lem3.2.3.3}
+Supposons\pageoriginale que, pour tout entier $i$, le diagramme
+\[
+\xymatrix@C=3cm@R=1.5cm{
+X_i \ar[d]_{u_i} \ar[r]^{f_i}& X'_i \ar[d]^{u'_i}\\
+S \ar[r]^{h}& S'
+}
+\]
+vérifie le théorème du changement de base relativement à $G$. Alors
+$\ch^{f, h}_G$ est un isomorphisme.
+\end{enonce*}
+
+On peut calculer $\ch^{f, h}_G (K^{\bigdot})$ de la manière suivante : on
+considère l'augmentation $X f X'
+\xrightarrow{(h_{c} \circ u) f u'}
+C^{\Delta'}_S$ (\cf \eqhyperref[Vbis.eq3.1.1.2]{3.1.1.2}) et l'on choisit une résolution
+$J^{\bigdot}$ de $K^+ (\bar{(h_c \circ u) f u'}^{\ast}) (K^{\bigdot})$
+telle que, pour tout entier $n$, $J^n$ soit totalement acyclique objet
+par objet.
+
+On obtient un quasi-isomorphisme
+$$
+\theta : K^+ (\Gamma(f^{\ast})) (r_0^{\ast} J^{\bigdot})
+\longrightarrow r^{\ast}_1(J^{\bigdot})
+$$
+et un morphisme
+$$
+t : K^+ (\Gamma (h^{\ast}_c)) \circ K^+(\Gamma(u'_{\alpha}))
+(r^{\ast}_0(J^{\bigdot})) \longrightarrow K^+(\Gamma(u_{\ast})) (r^{\ast}_1(J^{\bigdot}))
+$$
+qui admet la factorisation:
+\begin{align*}
+& K^+ (\Gamma (h^{\ast}_c)) \circ
+K^+(\Gamma(u'_{\ast}))(r^{\ast}_0(J^{\bigdot})) \xrightarrow{\varphi}
+K^+ (\Gamma (u_{\ast})) \circ
+K^+(\Gamma(f^{\ast}))(r^{\ast}_0(J^{\bigdot}))
+\xrightarrow{K^+(\Gamma(u_{\ast}))(\theta)}\\
+ &\longrightarrow
+K^+(\Gamma(u_{\ast})) (r^{\ast}_1(J^{\bigdot}))
+\end{align*}
+et\pageoriginale  $\ch^{f, h}(K^{\bigdot})$ s'obtient en prenant l'image de
+$t$ par le foncteur $\sisi{\RR^+}{R} \epsilon_{Z^{\bigdot\ast}}$.
+
+Or, la factorisation précédente montre que, $t$ s'identifie « objet par objet » aux morphismes de changement de base relatifs
+aux diagrammes:
+\[
+\xymatrix@C=3cm@R=1.5cm{
+X_i \ar[d]_{u_i} \ar[r]^{f_i}& X'_i \ar[d]^{u'_i}\\
+S \ar[r]^{h}& S'
+}
+\]
+on en déduit, par suites spectrales, que $\ch^{f, h}_G(K^{\bigdot})$ est
+un isomorphisme, ce qui achève la démonstration.
+
+Ceci nous conduit à un \emph{second critère de localisation}:
+
+\begin{enonce*}{Proposition 3.2.4}\etiquette[3.2.4]{Vbis.prop3.2.4}
+Soit $X \xrightarrow{u} C^{\Delta}_S$ un objet de
+$\Hom_{\plat}(\Delta^{\circ}, B/S)$. Pour que $u$ soit une
+augmentation de $G$-$1$-descente cohomologique, il suffit qu'elle le
+devienne après « suffisamment pour $G$  » \footnote{L'expression «   suffisamment pour $G$  » signifie qu'il existe une
+famille $(S_{\alpha} \xrightarrow{h_{\alpha}}S)_{\alpha \in A}$ de
+morphismes plats vérifiant les conditions précédentes et telle que la
+famille de foncteurs $(h_{\alpha \ast} : G_S \to
+G_{S_\alpha})_{\alpha \in A}$ soit \emph{conservative}.} de
+changements de base plats $h : S'\to S$ tels que les diagrammes
+cartésiens
+\[
+\xymatrix@C=3cm@R=1.5cm{
+X'_i \ar[d] \ar[r]& X_i \ar[d]\\
+S' \ar[r]^{h}& S
+}
+\]
+vérifient le théorème du changement de base relativement à $G$.
+\end{enonce*}
+
+La\pageoriginale proposition (\hyperref[Vbis.prop3.2.4]{3.2.4}) est évidente à
+partir de (\hyperref[Vbis.lem3.2.3.3]{3.2.3.3}), compte tenu
+du diagramme \eqhyperref[Vbis.eq3.2.3.2]{3.2.3.2}.
+
+\subsection{Propriétés des morphismes de descente
+  cohomologique}
+\etiquette[3.3]{Vbis.subsec3.3}
+
+Dans ce numéro, nous supposons que l'\emph{ensemble des morphismes
+  plats dans $B$ est stable par changement de base}.
+
+\begin{enonce*}{Proposition 3.3.1}\etiquette[3.3.1]{Vbis.prop3.3.1}
+$i = 1, 2$.
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\item Tout morphisme plat qui possède une section est un morphisme de
+  $G$-$2$-descente cohomologique universelle.
+
+\item Soient $f : X \to S$ un morphisme plat, $g : S'\to S$ un
+  morphisme de $G$-$i$-descente cohomologique, $X'= \fprod{X}{S'}{S}$,
+  $f' = f_{(S')} : X'\to S'$. Pour que $f$ soit de $G$-$i$-descente
+  cohomologique universelle, il faut et il suffit que $f'$ le soit.
+
+\item Si le composé de deux morphismes $f : X \to Y$, $g : Y \to Z$
+  est de $G$-$i$-descente cohomologique universelle, $g$ est de
+  $G$-$i$-descente cohomologique universelle.
+
+\item Le composé de deux morphismes de $G$-$i$-descente cohomologique
+  universelle est un morphisme de $G$-$i$-descente cohomologique
+  universelle.
+
+\item Si $f : X \to X'$ et $g : Y \to Y'$ sont deux $S$-morphismes de
+  $G$-$i$-descente cohomologique universelle, $\fprod{f}{g}{S}$ est de
+  $G$-$i$-descente cohomologique universelle.
+
+\item Soit $(u_{\alpha} : X_{\alpha} \to Y_{\alpha})_{\alpha \in A}$
+  une famille de morphismes de $G$-$i$-descente cohomologique. Alors
+  $\amalg u_{\alpha} : \amalg_{\alpha \in A}
+  X_{\alpha} \to \amalg_{\alpha \in A}
+  Y_{\alpha}$ est un morphisme de $G$-$i$-descente cohomologique.
+\end{enumerate}
+\end{enonce*}
+
+\noindent\emph{Démonstration.}
+En\pageoriginale ce qui concerne la descente effective relativement à
+$G$ nous renvoyons à \cite{SGA4-05bis:4}.
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph {enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\item Au moyen d'une section $s$ de $f$ on compare les objets
+  semi-simpliciaux augmentés vers $S : [X |_f S]$ et $[S|_{\id} S]$;
+  grâce à (\hyperref[Vbis.lem3.0.2.4]{3.0.2.4}) on obtient une équivalence pour la $G$-$1$-descente
+  cohomologique\nde{On remarque pour cela que $[X |_f S]$ et $[S|_{\id} S]$ sont simplement les cosquelettes d'ordre $0$ de $f$ et $\id$ respectivement de sorte que $s$ et $f$ induisent des isomorphismes inverses en cohomologie grâce à~\hyperref[Vbis.prop3.1.1]{3.1.1}.}
+
+\item Résulte de (\hyperref[Vbis.prop3.2.1]{3.2.1}).
+
+\item Résulte de a) et b).
+
+\item Soient $f : X \to Y$ et $g : Y \to S$ deux morphismes de
+  $G$-$1$-descente cohomologique universelle. Posons $h = g \circ f$ et
+  considérons le produit fibré:
+\[
+\xymatrix@C=3cm@R=1.5cm{
+Y  \ar[d]_{g}& R\ar[d]^{g'} \ar[l]_{h'}\\
+S & X \ar[l]^{h}
+}
+\]
+$g'$ possède une section $s : X \to R$ tel que $h' \circ s =
+f$. D'après c) $h'$ est de $G$-$1$-descente universelle et il en est de
+même de $h$ d'après b).
+
+\item Résulte formellement de b) et d).
+
+\item Soit $(Z_{\lambda})_{\lambda \in \Lambda}$ une famille d'objets
+  de $B$. Il résulte des hypothèses (\hyperref[Vbis.subsubsec3.0.0]{3.0.0}) que l'on dispose d'une
+  équivalence canonique
+$$
+\Mod \left(\mathcal{E}^0_{\coprod_{\lambda} Z_{\lambda}},
+\mathcal{O}_{\coprod_{\lambda} Z_{\lambda}}
+\right) \xrightarrow{\sim} \displaystyle\mathop{\prod}_{\lambda}
+\Mod(\mathcal{E}^{\circ}_{Z_\lambda}, \mathcal{O}_{Z_\lambda})
+$$
+\end{enumerate}
+induisant une équivalence
+$$
+G_{\coprod_{\lambda} Z_{\lambda}}
+\xrightarrow{\sim} \prod_{\lambda} G_{Z_{\lambda}}{\quoi}.
+$$
+De plus, si $(Q_{\lambda})_{\lambda} \in
+\prod_{\lambda} \Mod(\mathcal{E}^0_{Z_\lambda},
+\mathcal{O}_{Z_\lambda})$ est totalement acyclique, $Q_{\lambda}$ est
+totalement acyclique pour tout $\lambda$.
+
+Soit maintenant $(u_{\lambda} : X_{\lambda} \to Y_{\lambda})_{\lambda
+  \in \Lambda}$ une famille de morphismes de $G$-$1$-descente
+  cohomologique : puisque les sommes directes dans $B$ sont disjointes
+  et\pageoriginale universelles, on a pour tout $n$, une identification
+$$
+\left[\displaystyle\mathop{\coprod}_{\lambda} X_{\lambda} |_{\coprod
+    u_{\lambda}} \coprod Y_{\lambda} \right]_n \simeq
+\displaystyle\mathop{\coprod}_{\lambda} [X_{\lambda} |_{u_{\lambda}} Y_{\lambda}]_n
+$$
+qui est fonctorielle en $n$. On déduit alors des remarques précédentes et du
+calcul explicite de $\sisi{\RR^+}{R}_G \theta_{\ast}$ (\cf (2.3)) que
+$\coprod_{\lambda} u_{\lambda}$ est un morphisme de $G$-$1$-descente
+cohomologique : les détails sont laissés au lecteur. On laisse aussi à ce
+dernier le soin de vérifier que $\coprod_{\lambda} u_{\lambda}$ \emph{reste
+de $G$-$1$-descente cohomologique après tout changement de base s'il en est
+de même de $u_{\lambda}$ pour tout $\lambda$}.
+
+\setcounter{subsubsection}{1}
+\subsubsection{}\etiquette[3.3.2]{Vbis.subsubsec3.3.2}
+Si l'on associe à chaque objet $X$ de $B$ l'ensemble des familles de
+morphismes $(X_{\alpha} \to X)_{\alpha \in A}$ telles que
+$\coprod_{\alpha} X_{\alpha} \to X$ soit un
+morphisme de $G$-$i$-descente cohomologique universelle on définit, en
+vertu de (\hyperref[Vbis.prop3.3.1]{3.3.1}), une prétopologie sur $B$.
+
+La topologie engendrée par cette prétopologie s'appelle la
+\emph{topologie de la $G$-$i$-descente cohomologique}. Il résulte de
+     [(\hyperref[Vbis.prop3.3.1]{3.3.1})-c)] que les morphismes couvrants pour cette topologie
+     sont exactement les morphismes de $G$-$i$-descente cohomologique
+     universelle. Notons enfin que la topologie de la $G$-$2$-descente
+     cohomologique est moins fine que la topologie de la
+     $G^{\circ}$-descente [\cf \cite{SGA4-05bis:4} (6.23)].
+
+\begin{enonce*}{Théorème 3.3.3}\etiquette[3.3.3]{Vbis.thm3.3.3}
+On suppose que \emph{toutes les flèches de $B$ sont plates}. Soit $S$ un
+objet de $B$; tout hyperrecouvrement de $S$, pour la topologie de la
+$G$-$1$-descente cohomologique, dont tous les objets sont représentables
+\emph{(\cf V appendice)} définit une augmentation de $G$-$1$-descente
+cohomologique universelle.
+\end{enonce*}
+
+La démonstration se fait en deux étapes: précisons que tous les
+cosquelettes seront calculés dans la catégorie $B/S$.
+
+\begin{enonce*}{Lemme 3.3.3.1}\etiquette[3.3.3.1]{Vbis.lem3.3.3.1}
+Soit\pageoriginale $X$ un objet de $\Hom(\Delta^{\circ}, B/S)$ pour
+que $X$ soit de $1$-descente cohomologique (\resp universelle), il suffit que
+$\cosk_n (X)$ le soit pour tout $n$ assez grand.
+\end{enonce*}
+
+Soit en effet $\alpha_n : X \to \cosk_n(X)$ le morphisme canonique :
+on vérifie alors que si $K^{\bigdot}$ est un complexe de $D^+_{G_S}(S)$
+tel que $H^j (K^{\bigdot}) = 0$ pour $j < N$, $H^i(\eta_G^{\alpha_n})$
+est un isomorphisme pour $i < N + n$, d'où l'assertion.
+
+\begin{enonce*}{Lemme 3.3.3.2}\etiquette[3.3.3.2]{Vbis.lem3.3.3.2}
+Soient $n$ un entier $ \geq 0$, $X$ et $X'$ deux objets simpliciaux de
+$B/S$. Soit $f : X \to X'$ un morphisme. On suppose que:
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman {enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item $X \to \cosk_{n+1} (X)$ est un isomorphisme.
+
+\item $X' \to \cosk_{n+1} (X')$ est un isomorphisme.
+
+\item $f_i : X'_i \to X_i$ est un isomorphisme pour $i \leq n$.
+
+\item $f_{n+1}$ est un morphisme de $G$-$1$-descente cohomologique
+  universelle.
+\end{enumerate}
+Alors si $X$ est de $G$-$1$-descente cohomologique universelle, il en
+est de même de $X'$.
+\end{enonce*}
+
+Il est clair que (\hyperref[Vbis.lem3.3.3.1]{3.3.3.1}) et (\hyperref[Vbis.lem3.3.3.2]{3.3.3.2})
+démontrent le théorème (\hyperref[Vbis.thm3.3.3]{3.3.3}) par récurrence.
+
+\begin{enonce*}{Lemme 3.3.3.3}\etiquette[3.3.3.3]{Vbis.lem3.3.3.3}
+Sous les hypothèses de (\hyperref[Vbis.lem3.3.3.2]{3.3.3.2}), les morphismes $f_p$
+sont tous de $G$-$1$-descente cohomologique universelle.
+\end{enonce*}
+
+C'est trivial pour $p \leq n+1$. Pour $p > n+1$, $X_p$ (\resp $X'_p$)
+peut s'écrire comme
+$\varprojlim_{\substack{\Delta^+\\ n+1[p]}} X_q$
+(\resp $\varprojlim_{\substack{\Delta^+\\ n+1[p]}}
+{X'}_q$).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%Changement Yves
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Or pour toute flèche $\iota : i \to j$ de
+%$\Delta^+_{n+1[p]}$ on a un diagramme
+%commutatif à lignes exactes:
+%\[
+%\xymatrix@R=.1cm@C=2cm@M=.15cm{
+%  K'_{\iota} \ar[r]\ar[ddddddd]_{a_{\iota}} & \prod\qquad X'_2 \ar[rr] &  &X'_i \ar[ddddddd]^{f_i}\\
+%                  & r\in
+%\ob(\displaystyle{\mathop{\Delta^{+}}_{{n+1}[p]}}) \ar[dddddd]\ar[r]&X'_j
+%\ar[r]&\\
+% & & &\\
+% & & &\\
+% & & &\\
+% & & &\\
+% & & &\\
+%K_{\iota} \ar[r] & \prod\qquad X_2 \ar[rr]& &X_i\\
+%           & \ob(\displaystyle{\mathop{\Delta^{+}}_{{n+1}[p]}})
+%\ar[r]&X_j\ar[r]&
+%}
+%\]
+%dont\pageoriginale le carré de gauche est cartésien (ou bien $i = n + 1 =j$ et
+%$\iota = \id$, ou bien $i < n+1$ et $f_i$ est un
+%isomorphisme). Utilisant alors (\hyperref[Vbis.prop3.3.1]{3.3.1}) on voit que $\alpha_\iota$ est
+%un morphisme de $G$-$1$-descente cohomologique universelle. On achève la
+%démonstration en remarquant que $f_p$ s'identifie au morphisme
+%canonique $\displaystyle\mathop{\cap}_{\iota} K'_\iota
+%\xrightarrow{X \alpha_\iota} \displaystyle\mathop{\cap}_{\iota} {K}_\iota$.
+
+
+On peut supposer $p>n+1$. On écrit alors
+$$\cosq_{n+1}(X)_p=\varprojlim_{\substack{[q]\rightarrow[p]\\ q\leq n+1}}X_q$$
+comme le noyau de la double flèche
+
+$$\Pi X=\prod_{\substack{[q]\rightarrow[p]\\ q\leq n+1}}X_q\rightrightarrows
+\prod_{\substack{[i]\stackrel{\alpha}{\hookrightarrow}[j]\\
+\searrow\swarrow\\
+[p]
+\\j\leq n+1}}X_i$$ où la
+composante $\alpha_X$ d'indice $\alpha\in\Hom_{[p]}([i],[j])$ de la
+double flèche est la double flèche formée d'une part du
+morphisme $$\Pi X\rightarrow X_i$$ de projection d'indice $[i]\rightarrow[p]$ et,
+d'autre part, du morphisme
+$$\Pi X\rightarrow X_j\rightarrow X_i,$$ composé de la
+projection d'indice $[j]\rightarrow[p]$ et de $\alpha\in\Hom(X_j,X_i)$.
+
+On observe alors que le diagramme
+$$\xymatrix{\cosq_{n+1}(X)_p\ar[r]\ar[d]&\Pi X\ar[d]\\
+\cosq_{n+1}({\tilde X})_p\ar[r]&\Pi {\tilde X}}$$ est cartésien.
+
+En effet, d'après la description précédente, on doit
+prouver que pour toute \textit{injection croissante}
+$\alpha\in\Hom_{[p]}([i],[j])$, le diagramme
+$$\xymatrix{\Ker(\alpha_X:\ \Pi X\rightrightarrows X_i)\ar[r]\ar[d]&\Pi X\ar[d]\\
+\Ker(\alpha_{{\tilde X}}:\ \Pi {\tilde X}\rightrightarrows {\tilde
+X}_i)\ar[r]&\Pi {\tilde X}}$$ est cartésien. Mais si $i=n+1$,
+alors $\alpha: [i]\hookrightarrow [j] $ est l'identité de
+$[n+1]$ : les doubles flèches n'imposent alors pas de condition.
+% de sorte que les doubles flèches $\alpha_{X}$ et
+%$\alpha_{{\tilde X}}$ sont les couples formés des projections sur $X_i$ et
+%${\tilde X}_i$ prouvant que
+Les noyaux respectifs sont $\Pi X$ et $\Pi {\tilde X}$, ce qui
+traite ce cas. Sinon, on a $i<n+1$ et $X_i\rightarrow {\tilde X}_i$ est un
+isomorphisme, de sorte que le diagramme est cartésien aussi dans
+ce cas (tester une égalité dans $X_i$ ou ${\tilde X}_i$
+revient au même)\nde{La preuve du lemme~\hyperref[Vbis.lem3.3.3.3]{3.3.3.3} a été légèrement réécrite} .
+
+
+Utilisant alors (\hyperref[Vbis.prop3.3.1]{3.3.1}) on voit que $\alpha_\iota$ est
+un morphisme de $G$-$1$-descente cohomologique universelle.Soit $[X'/X]^p$ le produit fibré itéré $(p+1)$-uple de $X'$
+au-dessus de $X$. Grâce à (\hyperref[Vbis.lem3.3.3.3]{3.3.3.3}), il suffit de
+vérifier (\hyperref[Vbis.lem3.3.3.2]{3.3.3.2}) après un changement de base
+$[X'/X]^p \to X$. Après un tel changement de base, les hypothèses de
+(\hyperref[Vbis.lem3.3.3.2]{3.3.3.2}) sont encore vérifiées, et de plus $f_{n+1}$
+admet une section. On peut alors appliquer (\hyperref[Vbis.lem3.0.2.4]{3.0.2.4})
+pour achever la démonstration.
+
+En ce qui concerne la descente effective, on a :
+
+\begin{enonce*}{Proposition 3.3.4}\etiquette[3.3.4]{Vbis.prop3.3.4}
+Soit $X : \Delta^0 \to B/S$ un foncteur. On suppose que $X_0 \to S$
+est un morphisme de $G^0$-$2$-descente universelle ainsi que les
+morphismes $X_{n+1} \to (\cosk_n (X))_{n+1}$ pour $n = 0, 1$. Alors
+le foncteur $X$ est $G^0$-$2$-fidèle et le reste après tout changement
+de base (autrement dit $X$ définit une augmentation de descente
+effective universelle au sens de (\hyperref[Vbis.def2.4.11]{2.4.11})).
+\end{enonce*}
+
+D'après \cite{SGA4-05bis:4} (7.12), il suffit de voir que $i^{\ast}_2(X)$ est
+$G^0$-$2$-fidèle et on utilise pour ce faire les lemmes suivants:
+
+\begin{enonce*}{Lemme 3.3.4.1}\etiquette[3.3.4.1]{Vbis.lem3.3.4.1}
+Soient\pageoriginale $X$ et $X'$ deux foncteurs
+$\displaystyle{\mathop{\Delta}_2}^0 \to B/S$ et un diagramme
+commutatif:
+\[
+\xymatrix@R=1.5cm@C=2cm{
+X'_2  \ar[r] \ar@<8pt>[r] \ar@<-8pt>[r] \ar[d]_{k}& X'_1 \ar@<4pt>[l]
+\ar@<-4pt>[l] \ar@<4pt>[r] \ar@<-4pt>[r] \ar@{=}[d]& X'_0 \ar[l]
+\ar[r] \ar@{=}[d]& S \ar@{=}[d]\\
+X_2  \ar[r] \ar@<8pt>[r] \ar@<-8pt>[r]  &  X_1 \ar@<4pt>[l]
+\ar@<-4pt>[l] \ar@<4pt>[r] \ar@<-4pt>[r] & X_0 \ar[l]\ar[r] & S
+}
+\]
+tel que $k$ soit un morphisme de $G^{\circ}$-$0$-descente. Alors si $X$
+est $G^{\circ}$-$2$-fidèle, il en est de même de $X'$.
+\end{enonce*}
+
+Évident.
+
+\begin{enonce*}{Lemme 3.3.4.2}\etiquette[3.3.4.2]{Vbis.lem3.3.4.2}
+Soient $X$ et $X'$ deux foncteurs $\displaystyle{\mathop{\Delta}_2}^0 \to B/S$ et un
+diagramme commutatif
+\def\labelstyle{\scriptstyle}
+\[
+\xymatrix@R=2cm@C=2cm{
+X'_2  \ar[r]^{\partial^{1}} \ar@<17pt>[r]^{\partial^{0}} \ar@<-14pt>[r]_{\partial^{2}} \ar[d]_{f_2}& X'_1 \ar@<8pt>[l]
+\ar@<-11pt>[l] \ar@<11pt>[r]^{\partial^{0}} \ar@<-8pt>[r]_{\partial^{1}} \ar[d]^{f_1}& X'_0 \ar[l]_{\sigma^{0}}
+\ar[r] \ar@{=}[d]& S \ar@{=}[d]\\
+X_2  \ar[r] \ar@<12pt>[r] \ar@<-12pt>[r]  &  X_1 \ar@<6pt>[l]
+\ar@<-6pt>[l] \ar@<6pt>[r] \ar@<-6pt>[r] & X_0 \ar[l]\ar[r] & S
+}
+\]
+tel que $f_1$ soit de $G^0$-$1$-descente et $f_2$ de
+$G^\circ$-$0$-descente. On suppose de plus que $X'_2
+\xrightarrow{\sim} (\cosk)_1(X'))_2$. Alors si $X$ est
+$G^\circ$-$2$-fidèle, il en est de même de $X'$.
+\end{enonce*}
+
+Soient $X''_1 = \fprod{X'_1}{X'_1}{X_1}$, $\Ysheaf{\partial}_0 : X''_1 \to
+X'_1$ et $\Ysheaf{\partial}_1 : X''_1 \to X'_1$ les deux projections.
+
+Grâce à la définition d'un cosquelette, on définit une flèche $\varphi
+: X''_1 \to X'_2$ telle que:
+\begin{equation*}
+\begin{cases}
+\partial_0 \circ \varphi = \Ysheaf{\partial}_0\\
+\partial_1 \circ \varphi = \Ysheaf{\partial}_1\\
+\partial_2 \circ \varphi = \sigma_0 \partial_1 \Ysheaf{\partial}_0 =
+\sigma_0 \partial_1 \Ysheaf{\partial}_1{\quoi}.
+\end{cases}
+\end{equation*}
+
+Soit maintenant une donnée de descente sur $X'$; d'où un objet sur
+$X_0$, deux\pageoriginale objets sur $X_1$, un isomorphisme entre eux sur
+$X'_1$. Grâce à $\varphi$, on voit que les deux images réciproques
+de ces isomorphismes sur $X''_1$ sont égales. Puisque $f$ est de
+$1$-descente, on attrape un isomorphisme entre les deux objets sur
+$X_1$; cet isomorphisme est une donnée de descente (grâce au fait que
+$X'_2 \to X_2$ est de 0-descente), et on a gagné.
+
+\begin{enonce*}{Corollaire 3.3.5}\etiquette[3.3.5]{Vbis.cor3.3.5}
+On suppose que \emph{toutes les flèches de $B$ sont plates:} tout
+hyperrecouvrement de $S$, pour la topologie de la $G$-$2$-descente
+cohomologique, dont les objets sont représentables, définit une
+augmentation de $G$-$2$-descente cohomologique universelle.
+\end{enonce*}
+
+\section{Exemples}\etiquette[4]{Vbis.sec4}
+
+\subsection{Faisceaux de groupes abéliens sur les espaces
+  topologiques}\etiquette[4.1]{Vbis.subsec4.1}
+
+\setcounter{subsubsection}{-1}
+\subsubsection{}\etiquette[4.1.0]{Vbis.subsubsec4.1.0}
+Dans ce numéro Top désigne la catégorie des espaces topologiques [éléments de
+l'univers fixé $\Uu$]: on définit une catégorie $\mathcal{E}$ bifibrée en
+duaux de topos au-dessus de Top en prenant pour objets les couples $(X, F)$,
+où $X$ est un espace topologique et $F$ un faisceau d'ensembles sur $X$, et
+pour morphismes les couples $(f, \varphi) : (X, F) \to (Y, H)$ où $f : X \to
+Y$ est une application continue et $\varphi : H \to f_{\ast} (F)$ un
+morphisme de faisceaux. On prend pour $\mathcal{O}$ la section de
+$\mathcal{E}^0$ au-dessus de $\Top^0$ qui associe à chaque espace
+topologique le faisceau constant $\ZZ_X$: on posera $G =
+\Ysheaf{\Mod}(\mathcal{E}^0, \mathcal{O})$ de sorte que, pour tout espace
+topologique $X$, $G_X$ s'identifie à la catégorie des faisceaux de groupes
+abéliens sur $X$.
+
+Rappelons qu'un morphisme $f : X \to Y$ est \emph{séparé} si la
+diagonale de $\fprod{X}{X}{Y}$ est fermée. Un morphisme \emph{propre}
+est un morphisme séparé et universellement fermé (prendre garde que
+cette définition est plus restrictive que celle de Bourbaki).
+
+La\pageoriginale démonstration du « théorème de changement de base »
+ci-dessous
+est inspirée de (\cite{SGA4-05bis:5} II(4.11.1)).
+
+\begin{enonce*}{Théorème 4.1.1}\etiquette[4.1.1]{Vbis.thm4.1.1}
+Soient $f : X \to Y$ un morphisme propre, $F$ un faisceau abélien sur
+$X$ et un diagramme cartésien
+\[
+\xymatrix@C=2.5cm@R=1.5cm{
+X' \ar[r]^{g'} \ar[d]^{f'}& X\ar[d]^{f}\\
+Y' \ar[r]^{g}& Y.
+}
+\]
+Alors, l'application canonique \emph{(XII 4.2)} ou \emph{\eqhyperref[Vbis.eq3.2.2.3]{3.2.2.3}}
+$$
+g^{\ast} R^i f_{\ast} F \xrightarrow{\sim} R^i f'_{\ast} {g'}^{\ast}F
+$$
+est un isomorphisme\nde{Contrairement à ce qui précède, il s'agit ici des dérivés des foncteurs usuels et non pas ceux de la structure de catégorie fibrée $G^\circ\rightarrow\Top^\circ$.}.
+\end{enonce*}
+
+Ce théorème équivaut au corollaire suivant (le corollaire s'obtient en
+faisant $Y'= (\Point)$; le théorème s'obtient en appliquant le
+corollaire à $f$ et $f'$).
+
+\begin{enonce*}{Corollaire 4.1.2}\etiquette[4.1.2]{Vbis.cor4.1.2}
+Soient $f : X \to Y$ un morphisme propre, $F$ un faisceau abélien sur
+$X$ et $y \in Y$. L'application canonique
+$$
+(R^i f_{\ast} F)_y \longrightarrow H^i(f^{-1} (y), F)
+$$
+est bijective.
+\end{enonce*}
+
+Par définition, pour $U$ parcourant les voisinages de $Y$, on a
+$$
+(R^if_{\ast} F)_y = \varinjlim H^i(f^{-1} (U), F){\quoi}.
+$$
+Puisque $f$ est fermé, les $f^{-1}(U)$ forment un système fondamental
+de voisinages de $f^{-1}(y)$ et (\hyperref[Vbis.lem4.1.3]{4.1.3}) résulte du lemme suivant.
+
+\begin{enonce*}{Lemme 4.1.3}\etiquette[4.1.3]{Vbis.lem4.1.3}
+Soient\pageoriginale $X$ un espace topologique, $K \subset X$ et $F$
+un faisceau
+abélien sur $X$. On suppose que $K$ est compact et que deux points
+distincts quelconques de $K$ ont, dans $X$, des voisinages
+disjoints. Alors, pour $U$ parcourant les voisinages de $K$, on a
+\begin{equation*}
+\varinjlim H^i(U, F) \xrightarrow{\sim} H^i(K, F){\quoi}.\tag{4.1.3.1}
+\end{equation*}\etiquette[4.1.3.1]{Vbis.eq4.1.3.1}
+\end{enonce*}
+
+Nous traiterons d'abord le cas $i = 0$. Dans ce cas, il est clair que
+\eqhyperref[Vbis.eq4.1.3.1]{4.1.3.1} est injectif. Pour la surjectivité, nous utiliserons
+
+\begin{enonce*}{Lemme 4.1.4}\etiquette[4.1.4]{Vbis.lem4.1.4}
+Sous les hypothèses de \emph{(\hyperref[Vbis.lem4.1.3]{4.1.3})}, si $A$ et $B$ sont deux fermés de $K$
+et $W$ un voisinage de $A \cap B$ dans $X$, il existe des voisinages
+$U$ et $V$ de $A$ et $B$ dans $X$ tels que $U \cap V \subset W$.
+\end{enonce*}
+
+Nous traiterons d'abord le cas où $A$ est réduit à un point
+$a$. L'assertion est triviale si $a \in B$ (prendre $U = W$). Si $a
+\not \in B$ il existe pour chaque $b \in B$ des voisinages ouverts
+disjoints $U_b$ et $V_b$ de $a$ et $b$ dans $X$. On prend pour $V$ une
+réunion finie de $V_b$ qui comme $B$, et pour $U$ l'intersection des
+$U_b$ correspondants.
+
+Dans le cas général, pour chaque $a \in A$, il existe des voisinages
+ouverts $U_a$ et $V_a$ de $a$ et $B$ dans $X$ avec $U_a \cap V_a
+\subset W$. On prend pour $U$ une réunion finie des $U_a$, qui couvre
+$A$, et pour $V$ l'intersection correspondante des $V_a$.
+
+Revenons à (\hyperref[Vbis.lem4.1.3]{4.1.3}). Si $s \in H^{\circ}(K, F)$, il existe un
+recouvrement ouvert $U_i$ de $K$ dans $X$ et des $s_i \in H^{\circ}
+(U_i, F)$ tels que $s_i = s$  sur $U_i \cap K$. On peut supposer les
+$U_i$ en nombre fini. Soit $(K_i)$ un recouvrement fermé de $K$, avec
+$K_i \subset K \cap U_i$. Soit $W_y$ l'ouvert de $U_i \cap U_j$ où
+$s_i = s_j$; on a $K_i \cap K_j \subset W_{ij}$. Appliquons (\hyperref[Vbis.lem4.1.4]{4.1.4}) à
+tous les couples $(K_i, K_j)$ et aux $W_{ij}$: on trouve des ouverts
+$V_{ij}$ avec $K_i \subset V_{ij} \subset U_i$ et $V_{ij} \cap V_{ji}
+\subset W_{ij}$. Soit $U'_i = \displaystyle\mathop{\cap}_j
+  V_{ij}$: on a $K_i \subset U'_i \subset U_i$, et $s_i = s_j$ sur
+  $U'_i \cap U'_j$. Les $s_i$ se recollent\pageoriginale donc sur
+  le voisinage
+  de $K$ réunion des $U'_i$, et \eqhyperref[Vbis.eq4.1.3.1]{4.1.3.1} est surjectif (donc
+  bijectif) pour $i = 0$\nde{On ne confondra pas les deux sens du symbole $i$.}.
+
+\begin{enonce*}{Lemme 4.1.5}\etiquette[4.1.5]{Vbis.lem4.1.5}
+Si $F$ est flasque, le faisceau $F | K$ sur $K$ est mou.
+\end{enonce*}
+
+Soit $A \subset K$ un fermé dans $K$. Toute section de $F$ sur $A$ se
+prolonge à un voisinage, d'après ce qui précède. Puisque $F$ est
+flasque, elle se prolonge à $X$, et a fortiori à $K$.
+
+Prouvons (\hyperref[Vbis.lem4.1.3]{4.1.3}). Soit $F^{\ast}$ une résolution
+flasque de $F$. On a
+\begin{eqnarray*}
+\varinjlim H^i (U, F) &\stackrel{\ndemark}{=}& \varinjlim H^i (\Gamma(U, F^{\ast})) = H^i\varinjlim \Gamma(U,F^{\ast})
+\stackrel{\ndemark}{=} H^i \Gamma (K, F^{\ast})\\
+& \stackrel{\text{(4.1.5)}}{=} & H^i (K, F){\quoi}.
+\end{eqnarray*}
+\addtocounter{cnote}{-1}\ndetext{$H^i (\Gamma(U, F^{\ast}))$ désigne ici le $i$-ième groupe de cohomologie du complexe $\Gamma(U,F^\ast)$.}\addtocounter{cnote}{1}
+\ndetext{D'après (4.1.3) appliqué à $\Gamma=H^0$}
+\begin{enonce*}{Corollaire 4.1.6}\etiquette[4.1.6]{Vbis.cor4.1.6}
+Soit $f : X \to Y$ un morphisme propre et surjectif d'espaces
+topologiques. Alors, $f$ est de $G$-$1$-descente cohomologique.
+\end{enonce*}
+
+Résulte de (\hyperref[Vbis.cor4.1.2]{4.1.2}) et (\hyperref[Vbis.prop3.2.4]{3.2.4}).
+
+\begin{enonce*}{Corollaire 4.1.7}\etiquette[4.1.7]{Vbis.cor4.1.7}
+Soit $\Uu = (U_i)_{i \in I}$ un recouvrement fermé localement
+fini d'un espace topologique $X$. Alors le morphisme canonique $f :
+\coprod_{i\in I} U_i \to X$ est un morphisme de
+$G$-$1$-descente cohomologique.
+\end{enonce*}
+
+En effet $f$ est propre et surjectif. En appliquant (\hyperref[Vbis.prop2.5.6]{2.5.6}), on
+retrouve la suite spectrale de [\cite{SGA4-05bis:5}. II (5.2.4)] (\cf l'introduction).
+
+\begin{enonce*}{Proposition 4.1.8}\etiquette[4.1.8]{Vbis.prop4.1.8}
+Soit $f : X \to Y$ un homéomorphisme local surjectif d'espace
+topologique. Alors $f$ est un morphisme de $G$-$1$-descente
+cohomologique universelle.
+\end{enonce*}
+
+Par localisation sur $Y$ (\cf (\hyperref[Vbis.prop3.2.4]{3.2.4})), on est ramené au cas où $f$
+possède une section.
+
+\begin{enonce*}{Corollaire 4.1.9}\etiquette[4.1.9]{Vbis.cor4.1.9}
+Soit\pageoriginale $\Uu = (U_i)_{i \in I}$ un recouvrement ouvert d'un
+espace topologique $X$. Alors le morphisme canonique $f :
+\coprod_{i \in I} U_i \to X$ est un morphisme de
+$G$-$1$-descente cohomologique universelle.
+\end{enonce*}
+
+La suite spectrale de descente donne alors [\cite{SGA4-05bis:5} II (5.4.1)] (\cf
+l'Introduction).
+
+\begin{enonce*}[remark]{Remarque 4.1.10}\etiquette[4.1.10]{Vbis.rem4.1.10}
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%Vérifier que ça passe à la compilation
+%%%%%%%%%%%%%%%%%%%%
+Les démonstrations de (\hyperrefext[VIII][VIII.sec9]{9}) montrent que l'on peut remplacer « 1-descente cohomologique  » par « 2-descente cohomologique  » dans
+tous les énoncés qui précèdent.
+\end{enonce*}
+
+\subsection{Modules quasi-cohérents sur les schémas}\etiquette[4.2]{Vbis.subsec4.2}
+
+\setcounter{subsubsection}{-1}
+\subsubsection{}\etiquette[4.2.0]{Vbis.subsubsec4.2.0}
+Soit $(\Sch)_s$ la catégorie dont les objets sont les schémas éléments de
+$\Uu$ et les flèches les morphismes quasi-compacts et quasi-séparés: on
+définit une catégorie $\mathcal{E}$ bifibrée en duaux de topos au-dessus de
+$(\Sch)_s$ en prenant pour objets les couples $(X, F)$ où $X$ est un schéma
+et $F$ un faisceau sur $X$ (pour la topologie de Zariski), et pour morphismes
+les couples $(f, \varphi) : (X, F) \to (Y,G)$, où $f : X \to Y$ est une
+application continue et $\varphi : G \to f_{\ast} (F)$ un morphisme de
+faisceaux. On prend pour $\mathcal{O}$ la section de $\mathcal{E}^0$
+au-dessus de $(\Sch)^0_s$ qui associe à tout schéma son faisceau
+structural ; on prend pour $G$ la sous-catégorie de
+$\Ysheaf{\Mod}(\mathcal{E}^0, \mathcal{O})$ telle que pour tout schéma $X$,
+$G_X$ soit la catégorie des modules quasi-cohérents sur $X$.
+
+\begin{enonce*}{Proposition 4.2.1}\etiquette[4.2.1]{Vbis.prop4.2.1}
+Tout morphisme $f : X \to Y$ fidèlement plat quasi-compact et
+quasi-séparé est un morphisme de $G$-$2$-descente cohomologique universelle.
+\end{enonce*}
+
+D'après [\SGA I (VIII.5.2)], $f$ est un morphisme de $G^0$-descente
+effective. En vertu de [\EGA IV (1.7.21)], on peut appliquer (\hyperref[Vbis.prop3.2.4]{3.2.4})
+au carré cartésien:
+\[
+\xymatrix@C=3cm@R=1.5cm{
+  \fprod{X}{X}{Y} \ar[r] \ar[d]& X \ar[d]^{f}\\
+X   \ar[r]_{f}            & Y
+}
+\]
+
+\subsection{Faisceaux étales sur les schémas}\etiquette[4.3]{Vbis.subsec4.3}
+\pageoriginale
+
+\setcounter{subsubsection}{-1}
+\subsubsection{}\etiquette[4.3.0]{Vbis.subsubsec4.3.0}
+Soit $(\Sch)$ la catégorie de tous les schémas
+appartenant à $\Uu$: on définit donc une catégorie
+$\mathcal{E}$ bifibrée en duaux de topos au-dessus de $(\Sch)$ en
+prenant pour objets les couples $(X, \mathcal{F})$, où $X$ est un
+schéma et $\mathcal{F}$ un faisceau étale sur $X$, et pour morphismes les couples
+$(f, \varphi) : (X, \mathcal{F}) \to (Y, \mathcal{G})$, où $f : X \to
+Y$ est un morphisme de schémas et $\varphi : \mathcal{G} \to f_{\ast}
+(\mathcal{F})$ est un morphisme de faisceaux.
+
+Soit $n$ un entier $\geq 0$: on désigne par $\mathcal{O}_n$ la section de
+$\mathcal{E}^0$ au-dessus de $(\Sch)^0$ qui associe à tout schéma $X$ le
+faisceau constant $(\ZZ /n\ZZ)_{X}$. On posera $F_n =
+\Ysheaf{\Mod}(\mathcal{E}^0, \mathcal{O}_n)$ de sorte que, pour tout schéma
+$X$, $F_{n_X}$ s'identifie à la catégorie des faisceaux de $\ZZ
+/n\ZZ$-modules sur $X$.
+
+\subsubsection{}\etiquette[4.3.1]{Vbis.subsubsec4.3.1}
+Soit maintenant $(\Sch)_s$ la sous-catégorie de $(\Sch)$ dont les objets sont
+les schémas éléments de $\Uu$ et dont les flèches sont les morphismes
+quasi-compacts et quasi-séparés. On désigne par $\mathcal{E}_s$ la catégorie
+bifibrée en duaux de topos au-dessus de $(\Sch)_s$ déduite de $\mathcal{E}$
+par le changement de base $(\Sch)_s \to (\Sch)$; on désigne encore par
+$\mathcal{O}_0$ la restriction  de $\mathcal{O}_0$ à $(\Sch)_s$. Soit $G
+\subset \Ysheaf{\Mod}(\mathcal{E}^0_s, \mathcal{O}_0)$ la sous-catégorie
+fibrée et cofibrée de $\Ysheaf{\Mod}(\mathcal{E}^0_s, \mathcal{O}_0)$ telle
+que pour tout schéma $X$, $G_X$ soit la catégorie des faisceaux abéliens de
+torsion sur $X$: le lecteur notera que la condition (\hyperref[Vbis.par2.4.1.1]{2.4.1.1})
+est vérifiée.
+
+\begin{enonce*}{Proposition 4.3.2}\etiquette[4.3.2]{Vbis.prop4.3.2}
+Soit $f : X \to Y$ un morphisme \emph{propre surjectif}. Alors $f$ est un
+morphisme de $F_n$-$2$-descente cohomologique universelle pour $n \geq
+1$. Considéré comme morphisme de $(\Sch)_s$, $f$ est un morphisme de
+$G$-$2$-descente cohomologique universelle.
+\end{enonce*}
+
+D'après\pageoriginale (\hyperrefext[VIII][VIII.thm9.4]{9.4}) $f$ est un morphisme de
+$F^{0}$-descente
+effective et d'après (XII.(5.1)), on peut appliquer (\hyperref[Vbis.prop3.2.4]{3.2.4}) au
+diagramme cartésien:
+\[
+\xymatrix@C=3cm@R=1.5cm{
+  \fprod{X}{X}{Y} \ar[r] \ar[d]& X \ar[d]^{f}\\
+X   \ar[r]_{f}            & Y.
+}
+\]
+
+\begin{enonce*}{Proposition 4.3.3}\etiquette[4.3.3]{Vbis.prop4.3.3}
+Soit $f : X \to Y$ un morphisme \emph{surjectif} de schémas. On suppose que
+l'une des hypothèses suivantes est vérifiée:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph {enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\item $f$ est entier.
+
+\item $Y$ est localement noethérien, $f$ est universellement ouvert et
+  localement de présentation finie.
+
+\item $f$ est plat et localement de présentation finie.
+\end{enumerate}
+Alors $f$ est un morphisme de $F_n$-$2$-descente cohomologique, pour
+tout $n \geq 0$.
+\end{enonce*}
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph {enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\item On recopie la démonstration de (\hyperref[Vbis.prop4.3.2]{4.3.2}) en remplaçant
+  (XII. (5.1)) par ((\hyperrefext[VIII][VIII.cor5.6]{5.6})).
+
+\item La question étant locale sur $Y$, on peut supposer que $Y$ est
+  noethérien. On applique (\EGA IV (14.5.10)). Par (\hyperref[Vbis.prop3.3.1]{3.3.1}) et a) on
+  se ramène au cas où tout point $y$ de $Y$ possède un voisinage $U$
+  tel que $f^{-1} (U) \to U$ possède une section et on gagne par
+  (\hyperref[Vbis.prop3.2.4]{3.2.4}).
+
+\item Il s'agit de montrer que $f$ est un morphisme de
+  \emph{$F$-$1$-descente cohomologique} (on sait par ((\hyperrefext[VIII][VIII.thm9.4]{9.4})) que
+  $f$ est un morphisme de $F^0$-descente effective).
+\end{enumerate}
+
+Par localisation sur $Y$ (\cf (\hyperref[Vbis.prop3.2.4]{3.2.4})), on peut supposer que $Y$ est
+affine d'anneau $A$. On peut alors écrire $\Spec A =
+\varprojlim_{i \in I} \Spec A_i$, où $I$ est un ensemble ordonné
+filtrant et $A_{i}$ un anneau noethérien pour tout $i$, avec $X =
+\varprojlim X_i$, où, pour tout $i$, $X_i$ est un schéma \emph{plat} et
+\emph{localement de présentation finie} sur $\Spec A_i$ tel que $f_i : X_i
+\to \Spec A_i$ soit \emph{surjectif}; de plus, les diagrammes:
+\[
+\xymatrix@C=3cm@R=1.5cm{
+X \ar[r]\ar[d]_{f}& X_i \ar[d]^{f_i}\\
+Y \ar[r]^{u_i}& \Spec A_i
+}
+\]
+sont\pageoriginale cartésiens.
+
+Soit $\mathfrak{F}$ un faisceau abélien sur $Y$: on a $\mathfrak{F} =
+{\varinjlim}_i u^{\ast}_i u_{i\ast} (\mathfrak{F})$
+de sorte que, par un passage à la limite standard, on est ramené au
+cas où $\mathfrak{F}$ provient d'un faisceau sur $\Spec A_i$ pour un
+certain $i$, et $b$) permet de conclure.
+
+\begin{enonce*}[remark]{Remarque 4.3.4}\etiquette[4.3.4]{Vbis.rem4.3.4}
+Si $f : X \to Y$ est entier, on a $R^q f_{\ast} = 0$ pour $q > 0$. On
+en conclut facilement qu'il n'est pas nécessaire de se limiter aux
+complexes bornés inférieurement pour faire de la descente au moyen de $f$.
+\end{enonce*}
+
+\begin{enonce*}{Corollaire 4.3.5}\etiquette[4.3.5]{Vbis.cor4.3.5}
+Soit $(X_{\alpha} \xrightarrow{u_\alpha} X)_{\alpha \in A}$ une
+famille couvrante pour la topologie étale. Alors $\coprod_{\alpha
+\in A} X_{\alpha} \to X$ est un morphisme de $F_n$-$2$-descente
+cohomologique universelle pour tout $n \geq 0$.
+\end{enonce*}
+
+En effet, il existe une factorisation
+\[
+\xymatrix@=1.5cm{
+  &\displaystyle{\mathop{\coprod}_{\alpha\in A} X_{\alpha}} \ar[rd]&\\
+X \ar[ru]         \ar[rr]^{h} &                              & X
+}
+\]
+où $h$ est un morphisme étale surjectif.
+
+\section{Applications}\etiquette[5]{Vbis.sec5}\pageoriginale
+
+\subsection{Construction d'objets simpliciaux}\etiquette[5.1]{Vbis.subsec5.1}
+
+\setcounter{subsubsection}{-1}
+\subsubsection{}\etiquette[5.1.0]{Vbis.subsubsec5.1.0}
+
+Jusqu'au numéro (\hyperref[Vbis.prop5.1.3]{5.1.3}) compris, $H$ est une catégorie où les limites
+projectives finies non vides existent et où les sommes finies existent,
+sont disjointes et universelles. Si $X : \Delta^0 \to H$ est un
+objet simplicial de $H$, nous noterons $d^k_i : X_k \to X_{k-1}$ (\resp
+$s^k_i : X_k \to X_{k+1}$) pour $i \in [k]$ et $0 \leq k$ les flèches
+correspondantes aux opérateurs « faces  » $\partial^i_k : [k-1] \to
+[k]$ (\resp aux opérateurs de dégénérescence $\sigma^i_k : [k] \to
+[k+1]$) (\cf \cite{SGA4-05bis:3} II 2).
+
+\begin{enonce*}{Définition 5.1.1}\etiquette[5.1.1]{Vbis.def5.1.1}
+Un objet simplicial $X : \Delta^0 \to H$ de $H$ est $\sigma$-scindé
+s'il existe une famille de sous-objets $NX_j$ des $X_j$ $(j \geq 0)$
+telle que les morphismes
+$$
+h_i:\coprod_{\substack{\Hom_{\Delta^{-}}([i], [j])\\
+j\leq i}} NX_j \longrightarrow X_i
+$$
+soient des isomorphismes.
+\end{enonce*}
+
+De même, un objet simplicial $k$-tronqué $X : \Delta^0_k \to H$ est
+$\sigma$-scindé s'il existe des $NX_j$ $(0 \leq j \leq k)$ vérifiant la
+condition précédente pour $i \leq k$.
+
+Les $NX_j$ sont uniquement déterminés par $X$. En effet, si $X$ est
+$\sigma$-scindé, les opérateurs de dégénérescence $s^{k-1}_\ell :
+X_{k-1} \to X_k$ sont des isomorphismes de $X_{k-1}$ avec des facteurs
+directs de $X_k$, et
+$$
+NX_k = \mathop{\cap}_\ell\quad (\text{complément de } s^k_\ell(X_{k-1})){\quoi}.
+$$
+Pour $k = 0$, $NX_0 = X_0$.
+
+\setcounter{subsubsection}{1}
+\subsubsection{}\etiquette[5.1.2]{Vbis.subsubsec5.1.2}
+Pour $X$ un objet simplicial $(n+1)$-tronqué $\sigma$-scindé de $H$,
+nous désignerons par $\alpha_n(X)$ le triple consistant en
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph {enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\item la restriction $i^{\ast}_n(X)$ de $X$ à $\Delta^0_n$.
+
+\item $NX_{n+1}$,\pageoriginale
+
+\item l'application évidente de $NX_{n+1}$ dans $(\cosq_n (X))_{n + 1}$
+\end{enumerate}
+
+Ce triple $(Y, N, \beta)$ vérifie la condition suivante
+
+\noindent
+$(\ast)$ $Y$ est un objet simplicial $n$-tronqué $\sigma$-scindé de $H$, et $\beta$ est
+une application de $N$ dans $(\cosq Y)_{n+1}$.
+
+\begin{enonce*}{Proposition 5.1.3}\etiquette[5.1.3]{Vbis.prop5.1.3}
+Soit $(Y, N, \beta)$ un triple vérifiant $(\ast)$ ci-dessus.
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman {enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item A isomorphisme unique près, il existe un et un seul $X :
+  \Delta^{0}_{n+1} \to H$ $\sigma$-scindé, avec $\alpha_n (X) \simeq
+  (Y, N, \beta)$,
+
+\item Il revient au même de se donner un morphisme $f$ de $X$ dans un
+  objet simplicial tronqué $Z : \Delta^0_{n+1} \to H$, ou de se
+  donner
+\begin{enumerate}
+\renewcommand{\labelenumii}{\theenumii)}
+\item un morphisme $f': Y \to i^{\ast}_n (Z)$;
+
+\item un morphisme $f'': N \to Z_{n+1}$ tel que le diagramme
+\[
+\xymatrix@C=4cm@R=2cm{
+N  \ar[r] \ar[d]^{f''}& (\cosq_n Y)_{n+1} \ar[d]^{f'}\\
+Z_{n+1} \ar[r]& (\cosq_n Z)_{n+1}
+}
+\]
+\end{enumerate}
+soit commutatif.
+\end{enumerate}
+\end{enonce*}
+
+Construisons $X$.
+
+On pose : $Y'_n = (\cosk_n Y)_{n+1}$ et on note $${d'}^{n+1}_i : %%% probablement Y'_{n+1} \XXX
+Y'_{n+1} \to Y_n\ (\textup{resp.\ }{s'}^n_i : Y_n \to Y'_{n+1})$$ les
+opérateurs de face (\resp de dégénérescence) obtenu par
+fonctorialité.
+
+\noindent \sisi{$+$}{} On pose $Y_{n+1} = N \coprod (
+\coprod_{\Hom_{\Delta^{-}_{\ell \leq n}}([n+1],
+  [\ell])} N Y_{\ell} )$ et soit $\alpha : Y_{n+1} \to
+Y'_{n+1}$ la flèche dont les composantes sont $\beta$ et les flèches
+$N Y_{\ell} \to Y_{\ell} \to Y'_{n+1}$ pour tout épimorphisme $[n+1]
+\to [\ell]$ avec $\ell \leq n$.
+
+\noindent \sisi{$+$}{} Soit\pageoriginale $s^n_i : Y_n \simeq
+\coprod_{\Hom_{\Delta^{-}_{\ell' \leq n}}([n], [{\ell}'])} N Y_{{\ell}'} \to
+X_{n+1}$ la flèche induite par $\sigma^i_n$, de sorte que
+\begin{enumerate}
+\renewcommand{\theenumi}{\Roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item $\alpha \circ s^n_i =  {{s}'}^n_i$.
+
+On pose
+
+\item $d^{n+1}_i = {d'}^{n+1}_i \circ \alpha$.
+\end{enumerate}
+
+\noindent \sisi{$+$}{} Pour montrer que l'on définit ainsi un objet de
+$\underline{\Hom}(\Delta^0_{n+1}, H)$, il suffit, d'après [\cite{SGA4-05bis:3}. II (2.4)] de
+vérifier les formules.
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\item $d^n_i \cdot d^{n+1}_j = d^n_{j-1} \cdot d^{n+1}_i$ \qquad $i <
+  j$
+
+\item $s^n_i \cdot s^{n-1}_j = s^n_{j+1} \cdot s^{n-1}_i$ \qquad $i
+  \leq j$
+
+\item $d^{n+1}_i \cdot s^n_j =
+\begin{cases}
+s^{n-1}_{j-1}\cdot d^n_i & i < j\\
+\id & i = j \mbox{ ou } i = j+1\\
+s^{n-1}_{j}\cdot d^n_{i-1} & i > j+1.
+\end{cases}$
+\end{enumerate}
+
+Les formules a) et c) sont évidentes en vertu de (I) et (II), car on
+sait que a) et c) sont vérifiées si l'on remplace $d^{n+1}_i$ par
+${d'}^{n+1}_i$ et $s^n_i$ par ${s'}^n_i$.
+
+La formule b) est vérifiée par construction.
+
+On laisse au lecteur le soin de vérifier que l'objet $X$ obtenu
+vérifie \hyperref[Vbis.prop5.1.3]{5.1.3}.
+
+\noindent \sisi{$+$}{} On prendra garde que le foncteur construit dans la
+démonstration de \hyperref[Vbis.prop5.1.3]{5.1.3}, de la catégorie des triples vérifiant
+(\hyperref[Vbis.subsubsec5.1.2]{5.1.2}) $(\ast)$ dans les objets simpliciaux
+$n+1$-tronqués, est fidèle mais non pleinement fidèle.
+
+La proposition \hyperref[Vbis.prop5.1.3]{5.1.3} fournit un procédé très commode pour construire
+par induction des objets simpliciaux de $H$. Dans la fin de ce numéro,
+nous formalisons cette remarque sous la forme qui sera utilisée en \hyperref[Vbis.subsec5.2]{5.2}
+et \hyperref[Vbis.subsec5.3]{5.3}.
+
+\setcounter{subsubsection}{3}
+\subsubsection{}\etiquette[5.1.4]{Vbis.subsubsec5.1.4}
+
+Soient\pageoriginale $E \xrightarrow{\pi} B$ un foncteur tel que
+pour tout objet $b$ de $B$, la catégorie fibre $E_b$ soit non vide et
+vérifie les conditions de (\hyperref[Vbis.subsubsec5.1.0]{5.1.0}).
+
+Soit $Q$ une propriété d'un objet de $E$, stable par isomorphisme: on
+suppose que les conditions suivantes sont réalisées:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\item \emph{Pour tout objet $b$ de $B$ il existe un objet $x$ de $E_b$
+  vérifiant $Q$.}
+
+\item \emph{Pour tout objet $b$ de $B$ et tout couple $(x, y)$ d'objets de
+  $E_b$ vérifiant $Q$, il existe un objet $z$ de $E_b$ vérifiant $Q$
+  et des morphismes $z \to x$, $z \to y$ dans $E_b$.}
+
+\item \emph{Pour tout morphisme $b'\xrightarrow{t} b$ de $B$ et tout objet
+  $x$ de $E_b$ vérifiant $Q$, il existe un objet $x'$ de $E_{b'}$,
+  vérifiant $Q$ et un morphisme $x'\to x$ au-dessus de $t$.}
+
+Soit d'autre part $P$ une propriété d'une flèche de $E$ au-dessus
+d'une identité stable par isomorphisme : on suppose que les conditions
+suivantes sont réalisées:
+
+\item \emph{Pour tout objet $b$ de $B$ et tout objet $x$ de $E_b$ il existe
+  une flèche $y \to x$ dans $E_b$ vérifiant $P$.}
+
+\item \emph{Pour tout objet $b$ de $B$, tout diagramme dans $E_b$ de la
+  forme}
+\[
+\xymatrix{
+u \ar[rrrr]^{f} & & &                 &x\\
+                & & &z\ar[ru]\ar[rd] &\\
+v \ar[rrrr]_{g} & & &               & y
+}
+\]
+\emph{où $f$ et $g$ vérifient $P$, peut se compléter en un diagramme
+commutatif dans $E_b$}
+\[
+\xymatrix@R=1.25cm{
+  & u\ar[rrrr]^{f} & & &  & x\\
+w\ar[rrrr]^{h}\ar[ru]\ar[rd] &   & & &z\ar[ru]\ar[rd] & \\
+  & v\ar[rrrr]_{g} & & &  & y
+}
+\]
+\emph{où}\pageoriginale $h$ \emph{vérifie $P$.}
+
+\item \emph{Pour tout morphisme $b' \xrightarrow{t} b$ de $B$ et tout
+  morphisme $x \xrightarrow{f} y$ de $E_b$ vérifiant $P$, il existe un
+  morphisme $x' \xrightarrow{f'} y'$ de $E_{b'}$ vérifiant $P$ et un
+  diagramme commutatif}
+\[
+\xymatrix@C=3cm@R=1.5cm{
+x' \ar[r]^{\alpha} \ar[d]_{f'}& x\ar[d]^{f}\\
+y' \ar[r]_{\beta}& y
+}
+\]
+\emph{où $\alpha$ et $\beta$ sont des morphismes au-dessus de $t$.}
+\end{enumerate}
+
+\begin{enonce*}{Définition 5.1.5}\etiquette[5.1.5]{Vbis.def5.1.5}
+Avec les notations de (\hyperref[Vbis.subsubsec5.1.4]{5.1.4}), nous dirons qu'un
+objet $X$ de
+$\Hom(\Delta^{0}, E)$ vérifie la condition \emph{(APQ)} si les
+conditions suivantes sont remplies:
+\begin{enumerate}
+\item[(i)] L'image de $\pi \circ X$ est l'objet simplicial constant défini
+  par un objet $b$ de $B$.
+
+\item[(ii)] En tant qu'objet de $\Hom(\Delta^0, E_b)$, $X$ est
+  $\sigma$-scindé.
+
+\item[(iii)] $X_0$ vérifie la condition $Q$.
+
+\item[(iv)] Pour tout entier $n$, la flèche $N X_{n+1} \to (\cosq_n
+  X)_{n+1}$ vérifie la condition $P$.
+\end{enumerate}
+\end{enonce*}
+
+\setcounter{subsubsection}{5}
+\subsubsection{}\etiquette[5.1.6]{Vbis.subsubsec5.1.6}
+On désigne par $E_{(APQ)}$ la sous-catégorie de $\Hom(\Delta^0, E)$
+dont les objets sont les objets simpliciaux vérifiant $(APQ)$ et dont
+les morphismes sont les morphismes $X \xrightarrow{\alpha} Y$ de
+$\Hom(\Delta^{0}, E)$ tels que $\pi(\alpha_n) : \pi(X_n) \to
+\pi(Y_n)$ soit le même morphisme de $B$ pour tout $n$. Il existe alors
+un foncteur canonique $\bar{\pi} : E_{(APQ)} \to B$.
+
+\begin{enonce*}{Proposition 5.1.7}\etiquette[5.1.7]{Vbis.prop5.1.7}
+Le\pageoriginale foncteur $\bar{\pi}$ est surjectif. De plus, pour
+tout objet $b$ de
+$B$ et tout couple $(X, Y)$ d'objets de $E_{(APQ), b}$, il existe un
+diagramme
+\[
+\xymatrix@=1.5cm{
+  & Z \ar[ld]\ar[rd]&\\
+X &   & Y
+}
+\]
+dans $E_{(APQ), b}$.
+\end{enonce*}
+
+La démonstration est triviale à partir de (\hyperref[Vbis.prop5.1.3]{5.1.3}), en vertu des
+hypothèses faites en (\hyperref[Vbis.subsubsec5.1.4]{5.1.4}).
+
+\begin{enonce*}{Proposition 5.1.8}\etiquette[5.1.8]{Vbis.prop5.1.8}
+Soient $C$ une catégorie et $F$ un foncteur $E_{(APQ)} \to C$; on
+introduit les conditions suivantes pour $F$:
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item Pour tout objet $b$ de $B$, la restriction de $F$ à $E_{(APQ), b}$ se
+  factorise à travers la catégorie \emph{grossière} \footnote{Une catégorie
+  est dite \emph{grossière} si pour tout couple $(x, y)$ d'objets,
+  $\Hom(x, y)$ est réduit à un élément et un seul.} définie par les
+  objets de $E_{(APQ), b}$.
+
+\item Pour tout morphisme $t : b'\to b$ de $B$ et tout couple $(X'\to
+  X, Y'\to Y)$ de morphismes au-dessus de $t$, le diagramme suivant
+  est commutatif:
+\[
+\xymatrix@C=3cm@R=2cm{
+F(X')         \ar[r]  \ar[d]_{\alpha'}& F(X)\ar[d]^{\alpha}\\
+F(Y')          \ar[r] & F(Y)
+}
+\]
+où $\alpha$ et ${\alpha}'$ sont les flèches déterminées par la
+condition \emph{(i)}.
+\end{enumerate}
+
+Alors, le foncteur $G \to G \circ \bar{\pi}$ induit une équivalence
+entre la catégorie $\Hom(B, C)$ et la sous-catégorie pleine de
+$\Hom(E_{(APQ)}, C)$ définie par les foncteurs vérifiant les
+conditions \emph{(i) et (ii)}.
+\end{enonce*}
+
+Les\pageoriginale détails de la démonstration sont laissés au
+lecteur. Indiquons simplement la manière dont on procède pour montrer que le foncteur
+précédent est essentiellement surjectif.
+
+Soit $F : E_{(APQ)} \to C$ un foncteur vérifiant les conditions (i) et
+(ii): pour tout objet $b$ de $B$, on choisit un objet $X$ de
+$E_{(APQ), b}$ et on pose $\bar{F}(b) = F(X)$; on vérifie alors que
+$\bar{F}(b)$ varie fonctoriellement avec $b$.
+
+\subsection{Cohomologie singulière d'un schéma de type fini sur un
+  corps de caractéristique nulle}\etiquette[5.2]{Vbis.subsec5.2}
+
+Dans ce numéro, $k$ désignera un corps de caractéristique nulle.
+
+\setcounter{subsubsection}{-1}
+\subsubsection{}\etiquette[5.2.0]{Vbis.subsubsec5.2.0}
+Nous désignerons par $\Sch_f /k$ (\resp Ann) la catégorie des schémas
+\emph{localement de type fini} sur $k$ (\resp des espaces analytiques
+complexes). Tous les objets simpliciaux de $\Sch_f /k$ (\resp Ann)
+seront considérés comme objets simpliciaux de Top grâce au foncteur
+canonique $\Sch_f /k \to  \Top$ (\resp $\Ann \to \Top$). Nous conservons
+les données de (\hyperref[Vbis.subsubsec4.1.0]{4.1.0}) relatives à la descente cohomologique.
+
+Suivant les notations usuelles, nous noterons $S \to S^{\an}$ le
+foncteur canonique $\Sch_f / \CC \to$ Ann défini dans G.A.G.A.
+
+\subsubsection{}\etiquette[5.2.1]{Vbis.subsubsec5.2.1}
+Soit $X$ un objet simplicial de $\Sch / k$ (\resp $\Ann$): les
+compatibilités usuelles pour la construction du complexe de De Rham
+d'un morphisme de schéma (\resp d'espaces analytiques) permettent de
+construire un complexe $\Omega_{X/k}^{\Zar.}$ (\resp $\Omega_{X /
+  \CC}^{\bigdot}$) de $D^+(\Ysheaf{\Gamma} (\bar{X}),
+\ZZ)$ tel que pour tout entier $i$, $\sisi{\RR^+}{R} e^{\ast}_i
+(\Omega_{X/k}^{\Zar.})$ (\resp $\sisi{\RR^+}{R} e^{\ast}_i$
+$(\Omega^{\bigdot}_{X /\CC})$) soit le complexe De Rham
+$\Omega_{X_i/k}^{\Zar.}$ (\resp $\Omega^{\bigdot}_{X_i/ \CC}$).
+
+Soit $X \xrightarrow{u} C^{\Delta}_S$ un objet simplicial de $\Sch_f / k$
+(\resp Ann) muni d'une augmentation. On définit $H^{\Zar.}_{DR}(u)$ (\resp
+$H^{\bigdot}_{DR}(u)$ et $H^{\bigdot}(u, \CC)$) comme étant les groupes
+d'hypercohomologie du complexe $\sisi{\RR^+}{R} \bar{u}_{\ast}
+(\Omega_{X/k}^{\Zar.})$ (\resp $\sisi{\RR^+}{R} \bar{u}_{\ast}
+(\Omega_{X/\CC}^{\bigdot})$ et $\sisi{\RR^+}{R} \bar{u}_{\ast} (\CC)$).
+
+\subsubsection{}\etiquette[5.2.2]{Vbis.subsubsec5.2.2}
+Si\pageoriginale $X \xrightarrow{u} C^{\Delta}_S$ est un objet semi
+simplicial de
+$\Sch_f / \CC$, on dispose de trois morphismes canoniques:
+\begin{align*}
+H^{\Zar.}_{DR} (u) &\xrightarrow{\alpha} H^{\bigdot}_{DR}(u^{\an})\\
+H^{\bigdot} (u^{\an}, \CC) &\xrightarrow{\beta}
+H^{\bigdot}_{DR}(u^{\an})\\
+H^{\bigdot} (S^{\an}, \CC) &\xrightarrow{\gamma}
+H^{\bigdot}(u^{\an}, \CC){\quoi}.
+\end{align*}
+
+\begin{enonce*}{Proposition 5.2.3}\etiquette[5.2.3]{Vbis.prop5.2.3}
+Supposons, avec les notations de (\hyperref[Vbis.subsubsec5.2.2]{5.2.2}) que
+$X_n$ soit lisse pour tout $n$ : alors $\alpha$ et $\beta$ sont des
+isomorphismes. Si de plus $X^{\an} \xrightarrow{u^{\an}}
+C^{\Delta}_{S^{\an}}$ est un hyperrecouvrement de $S^{\an}$ pour la
+topologie de la $1$-descente cohomologique universelle, $\gamma$ est
+un isomorphisme.
+\end{enonce*}
+
+Le fait que $\alpha$ soit un isomorphisme résulte de [\cite{SGA4-05bis:6}, Th, $1'$]. Il
+résulte du lemme de Poincaré que $\beta$ est un isomorphisme. La
+dernière partie de la proposition résulte de (\hyperref[Vbis.thm3.3.3]{3.3.3}).
+
+\setcounter{subsubsection}{3}
+\subsubsection{}\etiquette[5.2.4]{Vbis.subsubsec5.2.4}
+Nous allons maintenant appliquer (\hyperref[Vbis.subsubsec5.1.4]{5.1.4}) au cas où $B = \Sch_f /k$ et
+où $E$ est la catégorie au-dessus de $B$ telle que pour tout schéma
+$S$, la catégorie fibre $E_S$ soit la catégorie des
+schémas de $\Sch_f
+/k$ au-dessus de $S$, les flèches au-dessus d'une flèche de $B$ étant
+évidentes. Nous dirons qu'un morphisme $h : X \to Y$ au-dessus de $S$
+vérifie la propriété $P$ si $X$ est lisse sur $k$ et si $h$ est
+composé d'un nombre fini de morphismes vérifiant l'une des conditions
+suivantes:
+\begin{enumerate}
+\renewcommand{\theenumi}{\roman{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\item être somme d'une famille de morphismes étales et surjectifs
+\item être somme d'une famille de morphismes propres et surjectifs.
+\end{enumerate}
+Nous dirons qu'un schéma $X$ de $E_S$ vérifie la propriété $Q$ si le
+morphisme structural $X \to S$ vérifie la propriété $P$.
+
+On laisse au lecteur le soin de vérifier, via la résolution des
+singularités, que toutes les conditions de (\hyperref[Vbis.subsubsec5.1.4]{5.1.4}) sont vérifiées.
+
+La\pageoriginale donnée des groupes $H^{\Zar.}_{DR}(u)$ définit un foncteur
+contravariant de la catégorie $E_{(APQ)}$ dans la catégorie des
+groupes abéliens gradués, noté $H^{\Zar.}_{DR}$.
+
+\begin{enonce*}{Proposition 5.2.5}\etiquette[5.2.5]{Vbis.prop5.2.5}
+Le foncteur $H^{\Zar.}_{DR}$ vérifie les conditions de (\hyperref[Vbis.prop5.1.8]{5.1.8}).
+\end{enonce*}
+
+Par le principe de Lefschetz, on est ramené au cas ou $k =
+\CC$. Dans ce cas, pour tout morphisme $S'\xrightarrow{t} S$ et
+tout couple ($u'\to u$, $v'\to v$) de morphismes au-dessus de $t$, on
+dispose d'un diagramme commutatif:
+\[
+\xymatrix@C=3.5cm@R=2cm{
+H^{\Zar.}_{DR}(u') \ar[r] \ar[d]_{\gamma^{-1}.\beta^{-1}.\alpha}&  H_{DR}^{\Zar.}(u)\ar[d]^{\gamma^{-1}.\beta^{-1}.\alpha}\\
+H^{\bigdot}(S'^{\an},\CC)
+\ar[r]^{H^{\bigdot}(t^{\an},\CC)}
+& H^{\bigdot}(S^{\an},
+\CC) \\
+H^{\Zar.}_{DR}(v') \ar[r] \ar[u]^{\gamma^{-1}.\beta^{-1}.\alpha}& H_{DR}^{\Zar.}(v) \ar[u]_{\gamma^{-1}.\beta^{-1}.\alpha}
+}
+\]
+ce qui achève la démonstration.
+
+\begin{enonce*}{Définition 5.2.6}\etiquette[5.2.6]{Vbis.def5.2.6}
+Le foncteur contravariant défini par (\hyperref[Vbis.prop5.1.8]{5.1.8}) à partir de
+$H^{\Zar.}_{DR}$ sera noté $H^{\bigdot} (\ast, k)$. Pour tout schéma $S$
+localement de type fini sur $k$, le groupe abélien gradué
+$H^{\bigdot}(S, k)$ s'appellera la \emph{cohomologie singulière de} $S$.
+\end{enonce*}
+
+\setcounter{subsubsection}{6}
+\subsubsection{}\etiquette[5.2.7]{Vbis.subsubsec5.2.7}
+Nous allons terminer ce numéro par une illustration des principes
+généraux qui y ont été introduits. Rappelons tout d'abord que si $S$
+est un espace analytique complexe, la \emph{cohomologie de De Rham} de
+$S$, notée $\HH^{\bigdot}_{DR}(S)$ est par définition
+l'hypercohomologie du complexe de De Rham $\Omega^{\bigdot}_{S /
+  \CC}$.
+
+\begin{enonce*}{Proposition 5.2.8}\etiquette[5.2.8]{Vbis.prop5.2.8}
+\emph{(Blum-Herrera)}.\pageoriginale Soit $S$ un schéma localement de type fini sur
+  $\CC$, la flèche canonique
+$$
+H^{\bigdot} (S^{\an}, \CC) \longrightarrow
+\HH^{\bigdot}_{DR}(S^{\an})
+$$
+possède une rétraction (dans la catégorie des groupes abéliens
+gradués) fonctorielle en $S$.
+\end{enonce*}
+
+En vertu de (\hyperref[Vbis.prop5.1.8]{5.1.8}) il suffit de considérer le morphisme $H^{\bigdot}(+,
+\CC) \circ \bar{\pi} \to \HH^{\bigdot}_{DR} \circ
+\bar{\pi}$ obtenu à partir du précédent par composition avec
+$\bar{\pi}$.
+
+En utilisant, pour toute augmentation $X \xrightarrow{u}
+C^{\Delta}_S$, le morphisme canonique
+$\LL \bar{u}^{+}(\Omega^{\bigdot}_{S/\CC}) \to \Omega^{\bigdot}_{X/\CC}$, on
+définit un morphisme fonctoriel $\HH^{\bigdot}_{DR} \circ \bar{\pi}
+\to \HH^{\bigdot}_{DR}$, de sorte que le diagramme suivant soit
+commutatif:
+\[
+\xymatrix@=2cm{
+\HH^{\bigdot}_{DR}  & \HH^{\bigdot}_{DR} \circ \bar{\pi} \ar[l]\\
+H^{\bigdot}(\ast,\CC)\circ\bar{\pi}
+\ar[u]_{\text{\rotatebox{90}{$\backsim$}}}^{\beta \circ \gamma}
+\ar[ru]&
+}
+\]
+ce qui fournit la rétraction cherchée.
+
+\begin{enonce*}[remark]{Remarque 5.2.9}\etiquette[5.2.9]{Vbis.rem5.2.9}
+L'énoncé (\hyperref[Vbis.prop5.2.8]{5.2.8}) reste valable pour tout espace analytique, dès que
+l'on dispose de la résolution des singularités dans le cadre analytique.
+\end{enonce*}
+
+\subsection{Théories de Hodge mixtes}\etiquette[5.3]{Vbis.subsec5.3}
+
+Nous donnons ici un résultat de nature technique qui joue un rôle clef
+dans \cite{SGA4-05bis:2}.
+
+$k$ est un corps de caractéristique nulle.
+
+\subsubsection{}\etiquette[5.3.1]{Vbis.subsubsec5.3.1}
+Soit $\Sch_{\fs} /k$ la catégorie des schémas séparés et de type fini
+sur $k$; on désigne par $E \xrightarrow{\pi} \Sch_{\fs}/k$ la catégorie
+au-dessus de $\Sch_{\fs}/k$ définie de la façon suivante:
+
+\noindent \sisi{$+$}{} Si\pageoriginale $S$ est un objet de $\Sch_{\fs} /k$,
+un objet de $E_S$ est un triple $(\bar{X}, X, i)$ où $\bar{X}$ est un schéma
+réduit projectif au-dessus de $k$, $X$ un schéma propre au-dessus de $S$ et
+$i : X \to \bar{X}$ une immersion ouverte au-dessus de $k$ telle que $i(X)$
+soit dense dans $\bar{X}$.
+
+\noindent \sisi{$+$}{} Si $t : S' \to S$ est un morphisme de schémas,
+$(\bar{X}, X, i)$ un objet au-dessus de $S$ et $(\bar{X}', X', i')$ un objet
+au-dessus de $S'$, un morphisme de $(\bar{X}, X, i)$ dans $(\bar{X}', X',
+i')$ au-dessus de $t$ est un couple $(\bar{h}, h)$ où $h : \bar{X}'\to
+\bar{X}$ est un morphisme au-dessus de $k$, et $h : X'\to X$ un morphisme
+au-dessus de $S$, tel que le diagramme suivant soit commutatif.
+\[
+\xymatrix@C=3.5cm@R=2cm{
+X' \ar[r]^{i'} \ar[d]_{h}& \bar{X}'\ar[d]^{\bar{h}}\\
+X  \ar[r]^{i}& \bar{X}.
+}
+\]
+N.B. : on remarque qu'il résulte des hypothèses de propreté que
+$\bar{h}^{-1}(i(X)) = i(X')$.
+
+\begin{enonce*}{Lemme 5.3.2}\etiquette[5.3.2]{Vbis.lem5.3.2}
+Pour tout objet $S$ de $\Sch_{\fs} / k$, la catégorie $E_S$ est non
+vide, possède des limites projectives non vides et des sommes directes
+finies qui sont disjointes et universelles.
+\end{enonce*}
+
+Le fait que la catégorie $E_S$ soit non vide résulte du lemme de Chow.
+
+Nous n'indiquerons que la construction du produit direct de deux
+objets $(\bar{X}, X, i)$ et $(\bar{X}', X', i')$ de $E_S$.
+
+La flèche canonique $j : \fprod{X}{X'}{S} \to
+\fprod{\bar{X}}{\bar{X}'}{k}$ est une immersion et on désigne par $T$
+le sous-schéma réduit de $\fprod{\bar{X}}{\bar{X}'}{k}$ ayant pour
+espace sous-jacent l'adhérence de l'image de $j : (T,
+{\fprod{X}{X'_{\red}}{S}}, j_{\red})$ vérifie la propriété universelle voulue.
+
+\setcounter{subsubsection}{2}
+\subsubsection{}\etiquette[5.3.3]{Vbis.subsubsec5.3.3}
+Soit\pageoriginale $S$ un objet de $\Sch_{\fs} /k$ : nous dirons qu'un objet
+$(\bar{X}, X, i)$ de $E_S$ vérifie la propriété $Q$ si $\bar{X}$ est
+lisse sur $k$ et si $i(X)$ est le complémentaire d'un diviseur à
+croisements normaux. Nous dirons qu'un morphisme
+$(\bar{h}, h) : (\bar{X}', X', i') \to (\bar{X}, X, i)$ vérifie la
+propriété $P$ si $\bar{h}$ est surjectif et si $(\bar{X}', X', i')$
+vérifie la propriété $Q$.
+
+\begin{enonce*}{Proposition 5.3.4}\etiquette[5.3.4]{Vbis.prop5.3.4}
+Avec les notations de (\hyperref[Vbis.subsubsec5.3.3]{5.3.3}), toutes les conditions de
+(\hyperref[Vbis.subsubsec5.1.4]{5.1.4}) sont vérifiées.
+\end{enonce*}
+
+Les conditions a) b) d) et c) se vérifient facilement en utilisant la
+résolution des singularités. De plus c) est conséquence de f) : il
+reste donc à vérifier f).
+
+Il s'agit de voir que tout diagramme commutatif:
+\[
+\xymatrix@C=3cm@R=1cm{
+              &Z         \ar[r]^{i_Z} \ar[d]_{h}& \bar{Z}\ar[d]^{\bar{h}}\\
+              &X \ar[r]^{i_X} \ar[d]& \bar{X}\ar[d]\\
+ S'\ar[r]^{t} &S  \ar[r]            & k
+}
+\]
+où $(\bar{X}, X, i_X)$ et $(\bar{Z}, Z, i_Z)$ sont des objets de $E_S$
+avec $\bar{h}$ surjectif, peut se compléter en un diagramme
+commutatif:
+\[
+\xymatrix@C=1.7cm@R=.45cm{
+Z' \ar[rr] \ar[rd]_{i_{Z'}} \ar[dd]_{h'}&    & Z \ar[rd]^{i_Z} \ar@{->} '[d][dd]_{h} &\\
+         & \bar{Z}' \ar[rr] \ar@{->} '[d][dd]^{h'}&    & \bar{Z}\ar[dd]^{\bar{h}}\\
+X'  \ar[rr] \ar[dd]\ar[rd]_{i_{X'}}   &    & X \ar[rd]_{i_X} \ar@{->} '[d][dd]&\\
+         & \bar{X}'  \ar@{->} '[d][dd] \ar[rr]&    & \bar{X} \ar[dd]\\
+S'\ar[rr]^(.65){t}\ar[rd]        &    & S \ar[rd] &\\
+         & k  \ar@{=}[rr]&    & k
+}
+\]
+où\pageoriginale $(\bar{X}', X', i_{X'})$ et $(\bar{Z}', Z', i_{Z'})$ sont des objets de $E_{S'}$
+avec $\bar{h'}$ surjectif.
+
+On considère un diagramme
+\[
+\xymatrix@C=2cm@R=1.5cm@M=.2cm{
+T \ar[r]^{\varphi} \ar@{_{(}->}[d]_{i_T}& S'\ar[r]^{t} & S\ar[d]\\
+\bar{T} \ar[rr]_{\psi}&  & k\\
+}
+\]
+où $\varphi$ est propre et $\psi$ projectif : par changements de base
+on en déduit un diagramme:
+\[
+\xymatrix@C=1cm@R=.6cm{
+\fprod{Z}{T_{\red}}{S} \ar[rrr] \ar[rd]_{p} \ar[dd]&&    & Z \ar[rd] \ar@{->} '[d][dd] &\\
+         & \fprod{\bar{Z}}{\bar{T}_{\red}}{k} \ar[rrr] \ar@{->} '[d][dd]& &   & \bar{Z}\ar[dd]\\
+\fprod{X}{T_{\red}}{S}  \ar[rrr] \ar[dd]\ar[rd]_{q} &  &    & X \ar[rd] \ar@{->} '[d][dd]&\\
+         &\fprod{\bar{X}}{\bar{T}_{\red}}{k}  \ar@{->} '[d][dd] \ar[rrr]& &   & \bar{X} \ar[dd]\\
+T \ar[rd]\ar[r]& S'\ar[rr]        &    & S \ar[rd] &\\
+         & \bar{T}  \ar[rrr]&  &  & k
+}
+\]
+où\pageoriginale $p$ et $q$ sont des immersions; il suffit alors
+de remplacer $\fprod{\bar{Z}}{\bar{T}_{\red}}{k}$ et
+$\fprod{\bar{X}}{\bar{T}_{\red}}{k}$ pour les images fermées de $p$
+et $q$ pour avoir le diagramme voulu, ce qui achève la démonstration
+de (\hyperref[Vbis.prop5.3.4]{5.3.4}).
+
+\begin{thebibliography}{99}\pageoriginale
+\bibitem{SGA4-05bis:1} T. Blum -- M. Herrera : De Rham Cohomology of an
+  analytic Space. Inv. Math. vol 7. Fas 4-1969. p.275-296.
+\bibitem{SGA4-05bis:2} P. Deligne : Théorie de Hodge III (I.H.E.S).
+\bibitem{SGA4-05bis:3} P. Gabriel -- M. Zisman : Homotopy theory and calculus of
+  fractions Ergebnisse der Mathematik -- Band 35 -- Springer 1967.
+\bibitem{SGA4-05bis:4} J. Giraud : Méthode de la descente : Mémoires de la
+  S.M.F. 2. 1964.
+\bibitem{SGA4-05bis:5} R. Godement : Théorie des faisceaux.
+                                Publications de l'Institut de
+                                Mathématique de l'Université de
+                                Strasbourg. Hermann 1964.
+\bibitem{SGA4-05bis:6} A. Grothendieck : On the De Rham Cohomology of Algebraic
+  Varieties, Publications de 1' I.H.E.S ${\rm n^{\circ}}$ 29.
+\bibitem{SGA4-05bis:7} R. Hartshorne : Residues and Duality. Springer
+  Lecture Notes ${\rm n^{\circ}}$ 20.
+\bibitem{SGA4-05bis:8} G. Segal : Classifying spaces and Spectral sequences
+  Publications de l'I.H.E.S. ${\rm n^{\circ}}$ 34.
+\bibitem{SGA4-05bis:9} J.L.Verdier : Catégories dérivées - Etat 0 -
+  (I.H.E.S)
+\end{thebibliography}
+
+\ifx\danslelivre\undefined
+\end{document}
+\fi

@@ -1,0 +1,680 @@
+[
+ {
+  "page": 156,
+  "where": "first word of the page",
+  "scan": "soient i' ∈ [1,m'] , ... (small s)",
+  "tex": "Soient $i'\\in[1,m']$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $i'",
+   "new": "soient $i'"
+  },
+  "note": "Capital against small letter."
+ },
+ {
+  "page": 156,
+  "where": "first line, 'l'image de x_{i'} (resp. y'_{j'})'",
+  "scan": "x_{i'}: no prime on x (nothing above the subscript i'; the prime of y'_{j'} in the same line is typed)",
+  "tex": "$x'_{i'}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$x'_{i'}$",
+   "new": "$x_{i'}$"
+  },
+  "corrected": "x'_{i'}",
+  "note": "The points of X' are the x'_{i'} (as the y'_{j'} of Y'); the print drops the prime on x. The TeX silently corrects it."
+ },
+ {
+  "page": 156,
+  "where": "after the first diagram (squares with A'_{i'}, A_i)",
+  "scan": "a comma to the right of the first diagram's bottom row (Y ,), a full stop after the second (Y .)",
+  "tex": "first tikzcd ends '& Y', then \\qquad (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "A_i \\arrow[l] \\arrow[r] & Y",
+   "new": "A_i \\arrow[l] \\arrow[r] & Y ,"
+  },
+  "note": "The TeX has only the full stop after the second diagram."
+ },
+ {
+  "page": 156,
+  "where": "'λ_i = Cλ'^d_{i'} , μ_j = Cμ'^d_{j'} , donc (1) entraîne (2)'",
+  "scan": "μ_j = Cμ'^d_{j'} , donc (1) entraîne (2) , ce qui achève ... (comma, then small 'donc'; formulas run in the line)",
+  "tex": "\\mu_j=C{\\mu'_{j'}}^d. \\] Donc (1) entraîne (2)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "^d.\n\\]\nDonc",
+   "new": "^d,\n\\]\ndonc"
+  },
+  "note": "Full stop and capital D added by the TeX (the display against the run-in formula is not reported)."
+ },
+ {
+  "page": 157,
+  "where": "heading '4. - Fin de la démonstration de 1.2.'",
+  "scan": "4. - Fin de la démonstration de 1.2. (underlined; ' - ' after '4.', full stop after the underline)",
+  "tex": "\\subsection*{4. Fin de la démonstration de 1.2}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{4. Fin de la démonstration de 1.2}",
+   "new": "\\subsection*{4. - Fin de la démonstration de 1.2.}"
+  },
+  "note": "As the headings of nos. 1 and 2 (pp. 140, 146)."
+ },
+ {
+  "page": 157,
+  "where": "Proposition 4.2, label",
+  "scan": "Proposition 4.2 - Soient T le localisé strict ...",
+  "tex": "\\begin{statement}{Proposition 4.2}  (renders 'Proposition 4.2')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Proposition 4.2}",
+   "new": "\\begin{statement}{Proposition 4.2 -}"
+  },
+  "note": "Exposé III B keeps Exposé III's labels (' -', no added full stop; Exposé III's statement environment is in force through III B in s5.tex at 20:22)."
+ },
+ {
+  "page": 157,
+  "where": "statement of Proposition 4.2, from 'Soient' to 'l'inclusion.'",
+  "scan": "underlined: 'Soient' | 'le localisé strict en un point fermé d'un' | 'schéma' + 'lisse de dimension' | 'le point fermé de' | 'des sous-schémas fermés' + 'de dimension' | 'de' | 'l'inclusion'; not underlined: T, 'S-', 2 , t, T , A , B, X, 1, the map i and the punctuation",
+  "tex": "Soient $T$ le localisé strict ... l'inclusion.  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $T$ le localisé strict en un point fermé d'un $S$-schéma lisse de dimension $2$, $t$ le point fermé de $T$, $A$, $B$, $X$ des sous-schémas fermés de dimension $1$ de $T$, $i:T-(A\\cup X)\\hookrightarrow T-A$ l'inclusion.",
+   "new": "\\emph{Soient} $T$ \\emph{le localisé strict en un point fermé d'un} $S$-\\emph{schéma lisse de dimension} $2$, $t$ \\emph{le point fermé de} $T$, $A$, $B$, $X$ \\emph{des sous-schémas fermés de dimension} $1$ \\emph{de} $T$, $i:T-(A\\cup X)\\hookrightarrow T-A$ \\emph{l'inclusion}."
+  },
+  "note": "Underlined statement, as Lemme 2.2 to Proposition 2.5 (pp. 146-150); \\emph is this file's command for the print's underline. Numbers, formulas and the punctuation between the underlined groups are not underlined. Three edits for this statement, and one for 'est nulle'."
+ },
+ {
+  "page": 157,
+  "where": "statement of Proposition 4.2, from 'On suppose que' to 'Soit d'autre part'",
+  "scan": "underlined: 'On suppose que' | 'est' + 'régulier' | 'et que' | 'est en position générale par rapport à' | 'et' | 'i.e. que' + 'l'intersection des cônes tangents en' | 'à' | 'et' | 'est réduite à' | 'Soit' + 'd'autre part'; not underlined: X, A, B, t, B ∪ X, the parentheses and the punctuation",
+  "tex": "On suppose que $X$ est régulier, ... Soit d'autre part  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "On suppose que $X$ est régulier, et que $A$ est en position générale par rapport à $B$ et $X$ (i.e. que l'intersection des cônes tangents en $t$ à $A$ et $B\\cup X$ est réduite à $t$). Soit d'autre part",
+   "new": "\\emph{On suppose que} $X$ \\emph{est régulier}, \\emph{et que} $A$ \\emph{est en position générale par rapport à} $B$ \\emph{et} $X$ (\\emph{i.e. que l'intersection des cônes tangents en} $t$ \\emph{à} $A$ \\emph{et} $B\\cup X$ \\emph{est réduite à} $t$). \\emph{Soit d'autre part}"
+  },
+  "note": "As the previous edit."
+ },
+ {
+  "page": 157,
+  "where": "statement of Proposition 4.2, from 'tel que' to 'Alors la flèche de restriction'",
+  "scan": "underlined: 'tel que' | 'soit constructible' | 'localement' + 'constant' | 'et que la représentation correspondante de' | 'se factorise' + 'à travers un' | 'groupe' (not 'ℓ-') | 'Alors la flèche de restriction'; not underlined: H*(E), π_1(T-(A ∪ X)), 'ℓ-' and the punctuation",
+  "tex": "tel que $H^*(E)$ soit constructible, ... Alors la flèche de restriction  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "tel que $H^*(E)$ soit constructible, localement constant, et que la représentation correspondante de $\\pi_1(T-(A\\cup X))$ se factorise à travers un $\\ell$-groupe. Alors la flèche de restriction",
+   "new": "\\emph{tel que} $H^*(E)$ \\emph{soit constructible}, \\emph{localement constant}, \\emph{et que la représentation correspondante de} $\\pi_1(T-(A\\cup X))$ \\emph{se factorise à travers un} $\\ell$-\\emph{groupe}. \\emph{Alors la flèche de restriction}"
+  },
+  "note": "As the previous edits."
+ },
+ {
+  "page": 157,
+  "where": "end of the display of Proposition 4.2, after RΓ(B-t,i_!(E)|B-t)",
+  "scan": "RΓ(T-A,i_!(E)) ⟶ RΓ(B-t,i_!(E)|B-t)   ,  (comma at the end of the display line), then 'est nulle.'",
+  "tex": "\\R\\Gamma(B-t,i_!(E)|B-t) \\]  (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "i_!(E)|B-t)\n\\]",
+   "new": "i_!(E)|B-t),\n\\]"
+  },
+  "note": "Comma left out at the end of the display."
+ },
+ {
+  "page": 157,
+  "where": "end of the statement of Proposition 4.2",
+  "scan": "'est nulle' underlined, the full stop not",
+  "tex": "est nulle.  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est nulle.",
+   "new": "\\emph{est nulle}."
+  },
+  "note": "As the rest of the statement."
+ },
+ {
+  "page": 157,
+  "where": "Lemme 4.3, label",
+  "scan": "Lemme 4.3 - Soient Z un schéma noethérien ...",
+  "tex": "\\begin{statement}{Lemme 4.3}  (renders 'Lemme 4.3')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Lemme 4.3}",
+   "new": "\\begin{statement}{Lemme 4.3 -}"
+  },
+  "note": "As Proposition 4.2."
+ },
+ {
+  "page": 157,
+  "where": "statement of Lemme 4.3 on p. 157",
+  "scan": "underlined: 'Soient' | 'un schéma noethérien régulier connexe de dimension' | 'de' + 'caractéristiques résiduelles premières à' | 'des diviseurs réguliers se cou-' + 'pant transversalement en un point' | 'd'où un diagramme d'inclusions'; not underlined: Z, 2, ℓ , X, Y, z and the commas",
+  "tex": "Soient $Z$ un schéma noethérien ... d'où un diagramme d'inclusions  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $Z$ un schéma noethérien régulier connexe de dimension $2$, de caractéristiques résiduelles premières à $\\ell$, $X$, $Y$ des diviseurs réguliers se coupant transversalement en un point $z$, d'où un diagramme d'inclusions",
+   "new": "\\emph{Soient} $Z$ \\emph{un schéma noethérien régulier connexe de dimension} $2$, \\emph{de caractéristiques résiduelles premières à} $\\ell$, $X$, $Y$ \\emph{des diviseurs réguliers se coupant transversalement en un point} $z$, \\emph{d'où un diagramme d'inclusions}"
+  },
+  "note": "Underlined statement, as Lemme 2.2 to Proposition 2.5 (pp. 146-150); \\emph is this file's command for the print's underline. Numbers, formulas and the punctuation between the underlined groups are not underlined. The last underline starts one character late (under the apostrophe of d'où). 'résiduellespremières': the typist's added s stands where the space was; the TeX's 'résiduelles premières' is the corrected wording. The statement continues on p. 158."
+ },
+ {
+  "page": 158,
+  "where": "diagram of Lemme 4.3, top row: Z-(X ∪ Y) → Z-Y, label i'",
+  "scan": "hooked arrow (hook at the source), like the vertical arrows j', j, m', m",
+  "tex": "\\arrow[r,\"i'\"]  (plain arrow)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"i'\"]",
+   "new": "\\arrow[r,hook,\"i'\"]"
+  },
+  "note": "The three horizontal arrows of this diagram are inclusions with a hook in the print (this and the next two findings)."
+ },
+ {
+  "page": 158,
+  "where": "same diagram, middle row: Z-X → Z, label i",
+  "scan": "hooked arrow (hook at the source)",
+  "tex": "\\arrow[r,\"i\"']  (plain arrow)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"i\"']",
+   "new": "\\arrow[r,hook,\"i\"']"
+  },
+  "note": ""
+ },
+ {
+  "page": 158,
+  "where": "same diagram, bottom row: Y-z → Y, label i_1",
+  "scan": "hooked arrow (hook at the source)",
+  "tex": "\\arrow[r,\"i_1\"']  (plain arrow)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"i_1\"']",
+   "new": "\\arrow[r,hook,\"i_1\"']"
+  },
+  "note": ""
+ },
+ {
+  "page": 158,
+  "where": "statement of Lemme 4.3, 'On fait l'hypothèse de pureté :'",
+  "scan": "'On fait l'hypothèse de pureté' underlined, the colon not",
+  "tex": "On fait l'hypothèse de pureté:  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "On\nfait l'hypothèse de pureté:",
+   "new": "\\emph{On fait l'hypothèse de pureté}:"
+  },
+  "note": "Part of the underlined statement of Lemme 4.3 (p. 157)."
+ },
+ {
+  "page": 158,
+  "where": "condition (P), the range of q",
+  "scan": "(P)   R^qj_*(ℤ/ℓ) = 0      pour  q > 1   .",
+  "tex": "\\text{pour }p>2.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "p>2",
+   "new": "q>1"
+  },
+  "note": "Wrong letter and number in the TeX; the print's q > 1 is the purity used on p. 159 ('pour n > 1 les deux membres sont nuls ... pour q ≤ 1')."
+ },
+ {
+  "page": 158,
+  "where": "statement of Lemme 4.3, from 'Soit d'autre part' to 'Alors :'",
+  "scan": "underlined: 'Soit d'autre part' | 'à cohomologie constructible localement' + 'constante' | 'telle que la représentation correspondante de' | 'se facto-' + 'rise à travers un' | 'groupe' (not 'ℓ-') | 'Alors'; not underlined: L ∈ ob D^b(Z-(X ∪ Y),Λ), π_1(Z-(X ∪ Y)), 'ℓ-', the commas and the colon",
+  "tex": "Soit d'autre part $L\\in\\Ob D^b(...)$, ... Alors:  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit d'autre part $L\\in\\Ob D^b(Z-(X\\cup Y),\\Lambda)$, à cohomologie constructible localement constante, telle que la représentation correspondante de $\\pi_1(Z-(X\\cup Y))$ se factorise à travers un $\\ell$-groupe. Alors:",
+   "new": "\\emph{Soit d'autre part} $L\\in\\Ob D^b(Z-(X\\cup Y),\\Lambda)$, \\emph{à cohomologie constructible localement constante}, \\emph{telle que la représentation correspondante de} $\\pi_1(Z-(X\\cup Y))$ \\emph{se factorise à travers un} $\\ell$-\\emph{groupe}. \\emph{Alors}:"
+  },
+  "note": "Underlined statement, as Lemme 2.2 to Proposition 2.5 (pp. 146-150); \\emph is this file's command for the print's underline. Numbers, formulas and the punctuation between the underlined groups are not underlined."
+ },
+ {
+  "page": 158,
+  "where": "Lemme 4.3 a), first line",
+  "scan": "a) On a un isomorphisme canonique  (underlined after 'a)')",
+  "tex": "\\item On a un isomorphisme canonique  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item On a un isomorphisme canonique",
+   "new": "\\item \\emph{On a un isomorphisme canonique}"
+  },
+  "note": ""
+ },
+ {
+  "page": 158,
+  "where": "Lemme 4.3 a), display, left side",
+  "scan": "i_{1!}m'*Rj'_*L ⟶~ m*Rj_*(i'_!L) : on the left R j'_* L (the prime typed over the subscript star), no i'_!",
+  "tex": "i_{1!}m'^*\\R j_*i'_!L",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "i_{1!}m'^*\\R j_*i'_!L",
+   "new": "i_{1!}m'^*\\R j'_*L"
+  },
+  "note": "The print's j'_* is the prime over the subscript star (as Rj'_*(i'^*i'_!L) = Rj'_*L at the foot of the page); the TeX reads it as j_*i'_!, which does not compose with m' (m': Y-z → Z-X, j': Z-(X ∪ Y) → Z-X). The same misreading: end of a) below and four times on p. 159."
+ },
+ {
+  "page": 158,
+  "where": "end of a), 'et le complexe m'*Rj'_*L est à cohomologie ...'",
+  "scan": "'et le complexe' underlined",
+  "tex": "et le complexe  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et le complexe",
+   "new": "\\emph{et le complexe}"
+  },
+  "note": "Separate from the formula edit that follows."
+ },
+ {
+  "page": 158,
+  "where": "end of a), the complex",
+  "scan": "m'*Rj'_*L  (R j'_* L, no i'_!)",
+  "tex": "$m'^*\\R j_*i'_!L$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$m'^*\\R j_*i'_!L$",
+   "new": "$m'^*\\R j'_*L$"
+  },
+  "note": "As the display of a)."
+ },
+ {
+  "page": 158,
+  "where": "end of a), 'est à cohomologie constructible, localement constante.'",
+  "scan": "underlined: 'est à cohomologie constructible' | 'localement constante'; the comma and the full stop not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est à cohomologie constructible, localement constante.",
+   "new": "\\emph{est à cohomologie constructible}, \\emph{localement constante}."
+  },
+  "note": ""
+ },
+ {
+  "page": 158,
+  "where": "Lemme 4.3 b)",
+  "scan": "underlined: 'Supposons' | 'connexe' | 'et soit' | 'un point géométrique de' | 'loca-' + 'lisé en un point fermé' | 'Alors la flèche de restriction'; not underlined: Y, s̄, Y, s ≠ z and the punctuation",
+  "tex": "Supposons $Y$ connexe, ... Alors la flèche de restriction  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Supposons $Y$ connexe, et soit $\\bar s$ un point géométrique de $Y$ localisé en un point fermé $s\\ne z$. Alors la flèche de restriction",
+   "new": "\\emph{Supposons} $Y$ \\emph{connexe}, \\emph{et soit} $\\bar s$ \\emph{un point géométrique de} $Y$ \\emph{localisé en un point fermé} $s\\ne z$. \\emph{Alors la flèche de restriction}"
+  },
+  "note": ""
+ },
+ {
+  "page": 158,
+  "where": "b), after (4.3.1)",
+  "scan": "'est nulle' underlined, the full stop not",
+  "tex": "est nulle.  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est nulle.\n\\item",
+   "new": "\\emph{est nulle}.\n\\item"
+  },
+  "note": ""
+ },
+ {
+  "page": 158,
+  "where": "Lemme 4.3 c)",
+  "scan": "underlined: 'Sous les hypothèses de' | 'soit' | 'un sous-schéma fermé de dimension' | 'de' | 'tel que' | 'notons' | 'le localisé strict de' | 'en' | 'Alors' + 'la flèche de restriction'; not underlined: b), C, 1, Z, Y ∩ C = s, C̃, s̄ and the punctuation",
+  "tex": "Sous les hypothèses de b), ... Alors la flèche de restriction  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de b), soit $C$ un sous-schéma fermé de dimension $1$ de $Z$ tel que $Y\\cap C=s$, notons $\\widetilde C$ le localisé strict de $C$ en $\\bar s$. Alors la flèche de restriction",
+   "new": "\\emph{Sous les hypothèses de} b), \\emph{soit} $C$ \\emph{un sous-schéma fermé de dimension} $1$ \\emph{de} $Z$ \\emph{tel que} $Y\\cap C=s$, \\emph{notons} $\\widetilde C$ \\emph{le localisé strict de} $C$ \\emph{en} $\\bar s$. \\emph{Alors la flèche de restriction}"
+  },
+  "note": ""
+ },
+ {
+  "page": 158,
+  "where": "c), after (4.3.2)",
+  "scan": "'est nulle' underlined, the full stop not",
+  "tex": "est nulle.  (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est nulle.\n\\end{enumerate}",
+   "new": "\\emph{est nulle}.\n\\end{enumerate}"
+  },
+  "note": ""
+ },
+ {
+  "page": 158,
+  "where": "last line, 'L'isomorphisme (trivial)'",
+  "scan": "L'isomorphisme (trivial)  i*Rj_*i'_!L ⟶~ ...",
+  "tex": "L'isomorphisme trivial",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "L'isomorphisme trivial",
+   "new": "L'isomorphisme (trivial)"
+  },
+  "note": "Parentheses left out."
+ },
+ {
+  "page": 159,
+  "where": "first line, left side of the isomorphism",
+  "scan": "isomorphisme  m'*Rj'_*L ⟶~ i_1^*m*Rj_*i'_!L : on the left R j'_* L (prime over the subscript star), no i'_!",
+  "tex": "m'^*\\R j_*i'_!L\\xrightarrow{\\sim}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "m'^*\\R j_*i'_!L\\xrightarrow{\\sim}",
+   "new": "m'^*\\R j'_*L\\xrightarrow{\\sim}"
+  },
+  "note": "As Lemme 4.3 a) on p. 158; the right side i_1^*m^*Rj_*i'_!L is right."
+ },
+ {
+  "page": 159,
+  "where": "second display, left side",
+  "scan": "i_{1!}m'*Rj'_*L ⟶ m*Rj_*(i'_!L)   ,",
+  "tex": "i_{1!}m'^*\\R j_*i'_!L",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "i_{1!}m'^*\\R j_*i'_!L",
+   "new": "i_{1!}m'^*\\R j'_*L"
+  },
+  "note": "As the first line."
+ },
+ {
+  "page": 159,
+  "where": "display after 'au-dessus de z ,'",
+  "scan": "Rj_*(i'_!L)_z̄ = 0   .  (no outer parentheses)",
+  "tex": "(\\R j_*(i'_!L))_{\\bar z}=0.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\R j_*(i'_!L))_{\\bar z}=0.",
+   "new": "\\R j_*(i'_!L)_{\\bar z}=0."
+  },
+  "note": "Outer parentheses added by the TeX (the print has them in (4.3.1) and on p. 160, not here)."
+ },
+ {
+  "page": 159,
+  "where": "'au cas où L est un ℤ/ℓ^ν Module localement constant'",
+  "scan": "ℤ/ℓ^ν  Module  (capital M, no hyphen)",
+  "tex": "$\\mathbb Z/\\ell^\\nu$-module",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathbb Z/\\ell^\\nu$-module",
+   "new": "$\\mathbb Z/\\ell^\\nu$ Module"
+  },
+  "note": ""
+ },
+ {
+  "page": 159,
+  "where": "'qui est simple sous-l'action d'un ℓ-groupe'",
+  "scan": "sous-l'action  (a hyphen typed for the space)",
+  "tex": "sous l'action",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "sous l'action",
+   "new": "sous-l'action"
+  },
+  "corrected": "sous l'action",
+  "note": "Typing slip of the print; the TeX silently corrects it."
+ },
+ {
+  "page": 159,
+  "where": "'... le faisceau constant ℤ/ℓ . Soient Z̃ le localisé strict'",
+  "scan": "one paragraph: 'Soient' follows in the same line",
+  "tex": "$\\mathbb Z/\\ell$.  (blank line)  Soient",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathbb Z/\\ell$.\n\nSoient",
+   "new": "$\\mathbb Z/\\ell$. Soient"
+  },
+  "note": "Paragraph break added by the TeX."
+ },
+ {
+  "page": 159,
+  "where": "display after 'l'inclusion. On a', left side",
+  "scan": "Rj_*(i'_!(ℤ/ℓ))_z̄  (no outer parentheses)",
+  "tex": "(\\R j_*(i'_!(\\mathbb Z/\\ell)))_{\\bar z}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\R j_*(i'_!(\\mathbb Z/\\ell)))_{\\bar z}",
+   "new": "\\R j_*(i'_!(\\mathbb Z/\\ell))_{\\bar z}"
+  },
+  "note": "Outer parentheses added by the TeX, as in the display above."
+ },
+ {
+  "page": 159,
+  "where": "same display, right side",
+  "scan": "= RΓ(Z̃-Ỹ,i'_!(ℤ/ℓ)   ,  (one closing parenthesis after ℓ: RΓ( is not closed)",
+  "tex": "\\R\\Gamma(\\widetilde Z-\\widetilde Y,i'_!(\\mathbb Z/\\ell)),",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "i'_!(\\mathbb Z/\\ell)),",
+   "new": "i'_!(\\mathbb Z/\\ell),"
+  },
+  "corrected": "i'_!(\\mathbb Z/\\ell)),",
+  "note": "The TeX silently adds the closing parenthesis."
+ },
+ {
+  "page": 159,
+  "where": "'L'hypothèse (P) entraîne, par dévissage, R^qj'_*L = 0'",
+  "scan": "R^qj'_*L = 0  (prime over the subscript star, no i'_!)",
+  "tex": "$\\R^qj_*i'_!L=0$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^qj_*i'_!L=0",
+   "new": "\\R^qj'_*L=0"
+  },
+  "note": "As the first line."
+ },
+ {
+  "page": 159,
+  "where": "same sentence, 'pour p > 2' (edit 1 of 2)",
+  "scan": "pour  p > 2",
+  "tex": "$q>2$: neither the print (p > 2) nor the correct reading (q > 1)",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "$q>2$",
+   "new": "$q>1$"
+  },
+  "note": "Edit 1 of 2, apply before the misprint edit that follows: it gives the corrected edition the correct q > 1 (condition (P) on p. 158, and 'pour q ≤ 1' in the next sentence); the misprint edit then restores the print's p > 2 in the diplomatic edition."
+ },
+ {
+  "page": 159,
+  "where": "same sentence, 'pour p > 2' (edit 2 of 2)",
+  "scan": "pour  p > 2",
+  "tex": "$q>2$ (after edit 1: $q>1$)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$q>1$",
+   "new": "$p>2$"
+  },
+  "corrected": "$q>1$",
+  "note": "Wrong letter and number in the print: the vanishing needed is for q > 1 (the next sentence treats q ≤ 1). The TeX corrected the letter only. The 'old' is the text after edit 1: apply the two in order."
+ },
+ {
+  "page": 159,
+  "where": "'la locale constance de m'*R^qj'_*L pour q ≤ 1'",
+  "scan": "m'*R^qj'_*L",
+  "tex": "$m'^*\\R^qj_*i'_!L$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$m'^*\\R^qj_*i'_!L$",
+   "new": "$m'^*\\R^qj'_*L$"
+  },
+  "note": "As the first line."
+ },
+ {
+  "page": 159,
+  "where": "'on a alors m'*j'_*L = (L_o)_{Y-z}'",
+  "scan": "m'*j'_*L = (L_o)_{Y-z}",
+  "tex": "m'^*j_*i'_!L=(L_0)_{Y-z}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "m'^*j_*i'_!L=(L_0)",
+   "new": "m'^*j'_*L=(L_0)"
+  },
+  "note": "As the first line."
+ },
+ {
+  "page": 159,
+  "where": "between the two formulas of 'on a alors'",
+  "scan": "(L_o)_{Y-z} , et m'*R^1j'_*L = ...",
+  "tex": "(L_0)_{Y-z}, \\qquad m'^*\\R^1j_*i'_!L  (no 'et')",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "_{Y-z},\n\\qquad",
+   "new": "_{Y-z},\n\\quad\\text{et}\\quad"
+  },
+  "note": "The word 'et' is left out."
+ },
+ {
+  "page": 159,
+  "where": "'m'*R^1j'_*L = (L_o)_{Y-z}(-1) par Abhyankar'",
+  "scan": "m'*R^1j'_*L",
+  "tex": "m'^*\\R^1j_*i'_!L",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "m'^*\\R^1j_*i'_!L",
+   "new": "m'^*\\R^1j'_*L"
+  },
+  "note": "As the first line."
+ },
+ {
+  "page": 160,
+  "where": "'... lemme d'Abhyankar. On a donc démontré a).'",
+  "scan": "one paragraph: the line before is full and 'On a donc' starts at the margin, not indented like the paragraphs of the page ('Prouvons 4.2')",
+  "tex": "d'Abhyankar.  (blank line)  On a donc",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "d'Abhyankar.\n\nOn a donc",
+   "new": "d'Abhyankar. On a donc"
+  },
+  "note": "Paragraph break added by the TeX."
+ },
+ {
+  "page": 160,
+  "where": "end of 'a : η̄ ⟶ Y(z̄) , b : η̄ ⟶ Y(s̄)'",
+  "scan": "no punctuation after Y(s̄); the next line begins '(où'",
+  "tex": "b:\\bar\\eta\\to Y(\\bar s),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Y(\\bar s),\n\\]",
+   "new": "Y(\\bar s)\n\\]"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 160,
+  "where": "'(où Y(z̄) (resp. Y(s̄) est le localisé strict ...'",
+  "scan": "(où  Y(z̄)  ...: the clause opens with a parenthesis",
+  "tex": "où $Y(\\bar z)$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "où $Y(\\bar z)$",
+   "new": "(où $Y(\\bar z)$"
+  },
+  "note": "Apply with the two edits on the same clause below (a misprint and the closing parenthesis)."
+ },
+ {
+  "page": 160,
+  "where": "same clause, '(resp. Y(s̄) est'",
+  "scan": "(resp. Y(s̄)  est: the parenthesis of 'resp.' is not closed",
+  "tex": "(resp. $Y(\\bar s)$) est",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$Y(\\bar s)$) est",
+   "new": "$Y(\\bar s)$ est"
+  },
+  "corrected": "$Y(\\bar s)$) est",
+  "note": "The TeX silently closes it."
+ },
+ {
+  "page": 160,
+  "where": "same clause, end '(resp. s̄)). Posons'",
+  "scan": "(resp. s̄)). Posons  (two closing parentheses)",
+  "tex": "(resp. $\\bar s$). Posons",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. $\\bar s$). Posons",
+   "new": "(resp. $\\bar s$)). Posons"
+  },
+  "note": "Closes the parenthesis that opens at '(où' (edit above)."
+ },
+ {
+  "page": 160,
+  "where": "end of the last diagram, after RΓ(Z̃-Ỹ,(i'_!L)|Z̃-Ỹ)",
+  "scan": "a comma to the right of the bottom row",
+  "tex": "... |\\widetilde Z-\\widetilde Y) \\arrow[u]  (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "|\\widetilde Z-\\widetilde Y) \\arrow[u]",
+   "new": "|\\widetilde Z-\\widetilde Y) , \\arrow[u]"
+  },
+  "note": "Comma after the diagram left out."
+ },
+ {
+  "page": 160,
+  "where": "after the last diagram, 'la nullité de 4.3.2 découle donc de b)'",
+  "scan": "la nullité  (small l; the sentence runs on after the diagram's comma)",
+  "tex": "La nullité",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "La nullité de 4.3.2",
+   "new": "la nullité de 4.3.2"
+  },
+  "note": "Capital against small letter."
+ },
+ {
+  "page": 160,
+  "where": "end of the page: the last four printed lines, 'maximal de T , D = f^{-1}(z) (≃ P^1_s) ...' to '... signifient que A' est disjoint de'",
+  "scan": "p. 160 ends '... les hypothèses de position générale sur A, B , X signifient que A' est disjoint de'",
+  "tex": "page_160.tex ends at 'Prouvons 4.2. Soient $f:T'\\to T$ l'éclatement de l'idéal'; the rest of p. 160 stands after the folio 161 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 161 really begins at '$B'\\cup X'$. Notons $E'$ l'image inverse' (s5.tex line 5075 at 20:22, mid-line, in both layers). Exact fix: python -I move_marker.py 5 161 \"\\$B'\\\\cup X'\\$. Notons\" (bash double quotes; the anchor is $B'\\cup X'$. Notons; simulated in memory on both layers: the marker then stands on its own line after 'signifient que $A'$ est disjoint de' and before '$B'\\cup X'$. Notons'). The moved text was compared with the scan of p. 160: no difference."
+ }
+]

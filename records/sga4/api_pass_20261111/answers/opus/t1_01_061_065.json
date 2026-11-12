@@ -1,0 +1,107 @@
+[
+ {
+  "page": 61,
+  "where": "8.1.2, last sentence",
+  "scan": "on observera, posant u=v°, qu'elle signifie aussi",
+  "tex": "posant $v=v^\\circ$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "posant $v=v^\\circ$",
+   "new": "posant $u=v^\\circ$"
+  },
+  "note": "The print sets u = v°; the TeX has v = v°."
+ },
+ {
+  "page": 61,
+  "where": "8.1.2, second paragraph",
+  "scan": "tel que I et I' soient U-petits",
+  "tex": "$I$ et $I'$ soient\n$𝒱$-petits",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$𝒱$-petits",
+  "note": "The print has U-petits where the universe is V. The TeX silently corrects it to 𝒱."
+ },
+ {
+  "page": 62,
+  "where": "Prop. 8.1.3 a), F 1)",
+  "scan": "Hom(i',φ(i)) ≠ ∅",
+  "tex": "$\\Hom(i',\\varphi(i))\\neq \\phi$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\neq \\phi$",
+   "new": "\\neq ∅$"
+  },
+  "note": "The print has the empty set; \\phi prints the letter φ."
+ },
+ {
+  "page": 63,
+  "where": "first line",
+  "scan": "foncteur final sur I' (3.4).",
+  "tex": "sur $I'$ \\hyperref[I.prop3.4]{3.4}).",
+  "kind": "punctuation",
+  "confidence": "low",
+  "fix": {
+   "old": "sur $I'$ \\hyperref[I.prop3.4]{3.4})",
+   "new": "sur $I'$ (\\hyperref[I.prop3.4]{3.4})"
+  },
+  "note": "The opening parenthesis is missing, so the closing one is unmatched."
+ },
+ {
+  "page": 63,
+  "where": "proof of b)",
+  "scan": "Supposons maintenant I filtrante et φ cofinal. Alors I est filtrante",
+  "tex": "filtrante et $\\varphi$ cofinal. Alors $I$ est filtrante",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Alors $I'$ est filtrante",
+  "note": "The claim being proved is that I' is filtrante (the conclusion reads 'prouver que I' est filtrant'). The TeX keeps the printed 'I'."
+ },
+ {
+  "page": 64,
+  "where": "8.1.4",
+  "scan": "l'ensemble préordonné OB I'",
+  "tex": "l'ensemble préordonné $OB$ $I'$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\Ob$ $I'$",
+  "note": "The print has 'OB' for 'Ob'. The TeX keeps it."
+ },
+ {
+  "page": 65,
+  "where": "proof of 8.1.6, first line",
+  "scan": "Supposons d'abrod",
+  "tex": "Supposons d'abord",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "d'abord",
+  "note": "Typing error in the print. The TeX silently corrects it."
+ },
+ {
+  "page": 65,
+  "where": "definition of objet final",
+  "scan": "des flèches de D de source x et de but y",
+  "tex": "de $D$ de source $x$ et de but $y$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "de but $e$",
+  "note": "The set is Hom(x,e)∩F, so the target should be e. The TeX keeps the printed 'y'."
+ },
+ {
+  "page": 65,
+  "where": "definition of objet final",
+  "scan": "si pour tout x ∈ D'",
+  "tex": "si pour tout $x\\in D'$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "$x\\in \\mathcal{O}$",
+  "note": "D' is not yet defined here; presumably x ∈ O (the objects of D) is meant. The TeX keeps the printed D'."
+ }
+]

@@ -1,0 +1,192 @@
+[
+ {
+  "page": "166",
+  "where": "localisation paragraph, line 'nissant comme la limite projective des \"voisinages\"'",
+  "scan": "la limite projective des \"voisinages\" de ce point",
+  "tex": "la limite\nprojectives des « voisinages »",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "projectives des « voisinages »",
+   "new": "projective des « voisinages »"
+  },
+  "note": "The print has the singular 'projective'."
+ },
+ {
+  "page": "166",
+  "where": "last paragraph, 'elle présente d'ailleurs dans ce cas des phénomènes spéciaux'",
+  "scan": "dans ce cas des phénomènes spéciaux",
+  "tex": "dans ce des phénomènes",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "dans ce des phénomènes",
+   "new": "dans ce cas des phénomènes"
+  },
+  "note": "The word 'cas' is missing."
+ },
+ {
+  "page": "166",
+  "where": "'(VII 3.3 et 5.7)'",
+  "scan": "(VII 3.3 et 5.7)",
+  "tex": "\\hyperref[VI.prop5.7]{5.7}",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "\\hyperref[VI.prop5.7]{5.7}",
+   "new": "5.7"
+  },
+  "note": "The print means VII 5.7, but the label points to VI 5.7, a wrong link target. The printed text is the same. Replace with plain text, or with the correct VII label if it exists."
+ },
+ {
+  "page": "168",
+  "where": "'donc (II 4.4) la famille des X_ij → X est couvrante'",
+  "scan": "(II 4.4)",
+  "tex": "(II \\hyperref[VI.cor4.4]{4.4})",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "(II \\hyperref[VI.cor4.4]{4.4})",
+   "new": "(II 4.4)"
+  },
+  "note": "The print cites II 4.4; the label VI.cor4.4 links into Exposé VI. Wrong link target, same printed text."
+ },
+ {
+  "page": "168",
+  "where": "'il résulte de nouveau de loc. cit. que les morphismes correspondants'",
+  "scan": "il résulte de nouveau de loc. cit. que les morphismes correspondants ε(X_ij) → ε(X) forment",
+  "tex": "il résulte de\nnouveau une famille épimorphismes correspondants",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "nouveau une famille épimorphismes correspondants",
+   "new": "nouveau de \\loccit{} que les morphismes correspondants"
+  },
+  "note": "The TeX garbles the clause: 'de loc. cit. que les morphismes' is replaced by 'une famille épimorphismes'."
+ },
+ {
+  "page": "168",
+  "where": "'dans les sites se ramène à la notion'",
+  "scan": "dans les sites se ramène",
+  "tex": "dans les sites de ramène",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "dans les sites de ramène",
+   "new": "dans les sites se ramène"
+  },
+  "note": "The print reads 'se', the TeX 'de'."
+ },
+ {
+  "page": "168",
+  "where": "end of proof of 1.3",
+  "scan": "l'est localement, cqfd.",
+  "tex": "(\\cqfd at source line 209, in page 169's TeX)",
+  "kind": "marker",
+  "confidence": "medium",
+  "fix": null,
+  "note": "The 'cqfd' closing the proof of 1.3 is printed on p. 168. Source line 209 (\\cqfd) belongs to p. 168, and p. 169 begins with Corollaire 1.4."
+ },
+ {
+  "page": "169",
+  "where": "proof of 1.4, 'les sommandes vides'",
+  "scan": "quand on laisse tomber les sommandes vides",
+  "tex": "les commandes vides",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "commandes vides",
+   "new": "sommandes vides"
+  },
+  "note": "The print reads 'sommandes', the TeX 'commandes'."
+ },
+ {
+  "page": "169",
+  "where": "proof of 1.4, formula X_i = X_i ×_X ∐_{j=J} X_j = ...",
+  "scan": "∐ with index j=J",
+  "tex": "\\amalg_{j=J}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\amalg_{j\\in J}",
+  "note": "The print has 'j=J' under both ∐ signs, for j∈J. The TeX keeps the printed reading."
+ },
+ {
+  "page": "169",
+  "where": "proof of 1.4, 'Y_j ∐ X'_i → X_i ∐ X'_i = X'",
+  "scan": "Y_j ∐ X'_i → X_i ∐ X'_i = X",
+  "tex": "\\to X_j \\amalg {X'}_i = X",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\to X_j \\amalg {X'}_i = X",
+   "new": "\\to X_i \\amalg {X'}_i = X"
+  },
+  "note": "The print has X_i on the right of the arrow, the TeX X_j."
+ },
+ {
+  "page": "169",
+  "where": "Remarque 1.5.1, 'topos induit E_{/X},'",
+  "scan": "E_{/X} followed by a mark at subscript level (apparently a comma), then 'et signifie'",
+  "tex": "$E_{/X'}$",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "$E_{/X'}$",
+   "new": "$E_{/X}$,"
+  },
+  "note": "The mark after X at subscript level looks like a lowered comma rather than a prime; the sense requires E_{/X}. Check the scan."
+ },
+ {
+  "page": "169",
+  "where": "1.5.2, 'de sous-objets de X'",
+  "scan": "de sous-objets de X",
+  "tex": "de sous-objet de",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "de sous-objet de",
+   "new": "de sous-objets de"
+  },
+  "note": "The print has the plural 'sous-objets'."
+ },
+ {
+  "page": "169",
+  "where": "proof of 1.4, '(II 4.5.1)'",
+  "scan": "(II 4.5.1)",
+  "tex": "\\hyperref[VI.lem4.5.1]{4.5.1}",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "\\hyperref[VI.lem4.5.1]{4.5.1}",
+   "new": "4.5.1"
+  },
+  "note": "The print cites II 4.5.1; the label VI.lem4.5.1 links into Exposé VI. Wrong link target, same printed text."
+ },
+ {
+  "page": "170",
+  "where": "1.5.3, 'le cardinal de l'ensemble'",
+  "scan": "le cardinal de l'ensemble",
+  "tex": "le cardinale de l'ensemble",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "le cardinale",
+   "new": "le cardinal"
+  },
+  "note": "The print reads 'cardinal', the TeX 'cardinale'."
+ },
+ {
+  "page": "170",
+  "where": "heading 1.6.1",
+  "scan": "Exemples 1.6.1.",
+  "tex": "{Exemple 1.6.1}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "{Exemple 1.6.1}",
+   "new": "{Exemples 1.6.1}"
+  },
+  "note": "The print has the plural 'Exemples'."
+ }
+]

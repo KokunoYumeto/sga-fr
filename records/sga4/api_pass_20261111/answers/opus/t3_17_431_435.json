@@ -1,0 +1,61 @@
+[
+ {
+  "page": "431",
+  "where": "6.2.11.1, first line",
+  "scan": "est specifique",
+  "tex": "est\nspécifique",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "spécifique",
+  "note": "The typescript drops the accent on 'specifique'. The TeX silently corrects it."
+ },
+ {
+  "page": "433",
+  "where": "proof of Lemme 6.3.2",
+  "scan": "Si α(u) =(u',u'')",
+  "tex": "Si $\\alpha{u}=(u',u'')$",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "Si $\\alpha{u}=(u',u'')$",
+   "new": "Si $\\alpha(u)=(u',u'')$"
+  },
+  "note": "The print has α(u) with parentheses; the TeX prints αu."
+ },
+ {
+  "page": "433",
+  "where": "diagram of Lemme 6.3.2, top right",
+  "scan": "TS^{n_2}(End(L'')",
+  "tex": "TS^{n_2}\n(\\End(L''))",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "TS^{n_2}(\\End(L''))",
+  "note": "The print lacks the closing parenthesis. The TeX silently supplies it."
+ },
+ {
+  "page": "434",
+  "where": "diagram (6.3.3.1), top right",
+  "scan": "Γ^n_A Γ^n_B(C)",
+  "tex": "\\Gamma^n_{B}(C)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\Gamma^{n}_A\\Gamma^{m}_{B}(C)",
+  "note": "The exponent should be m, as in the TS diagram of Lemme 6.3.3 (where the edition corrects the same slip with \\sisi). The TeX keeps the printed n here."
+ },
+ {
+  "page": "434",
+  "where": "6.3.4, last line",
+  "scan": "par le groupe symétrique",
+  "tex": "par la groupe\nsymétrique",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "par la groupe",
+   "new": "par le groupe"
+  },
+  "note": "The print reads 'le groupe'."
+ }
+]

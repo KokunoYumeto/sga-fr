@@ -1,0 +1,121 @@
+[
+ {
+  "page": 301,
+  "where": "Paragraphe commençant « D'autre topos »",
+  "scan": "D'autre topos, tel le topos étale",
+  "tex": "D'autres topos, tel le \\emph{topos étale}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "D'autres topos",
+  "note": "L'imprimé omet le s de « autres » ; le TeX corrige silencieusement cette coquille."
+ },
+ {
+  "page": 301,
+  "where": "0.4, première phrase",
+  "scan": "constitue à son tour un élargissement",
+  "tex": "constitue à son\ntout un élargissement",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "tout un élargissement",
+   "new": "tour un élargissement"
+  },
+  "note": "L'imprimé porte « tour », non « tout »."
+ },
+ {
+  "page": 302,
+  "where": "1.1.2, références introductives",
+  "scan": "II 4.8, 4.11",
+  "tex": "\\hyperrefext[II][II.prop4.8]{4.8}, \\hyperrefext[II][II.cor4.11]{4.11}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\hyperrefext[II][II.cor4.11]{4.11}",
+   "new": "\\hyperref[II.cor4.11]{4.11}"
+  },
+  "note": "L'imprimé ne répète pas le numéro d'exposé II devant 4.11."
+ },
+ {
+  "page": 302,
+  "where": "1.1.2 c), référence finale",
+  "scan": "(I 10.6).",
+  "tex": "\\hyperrefext[I][I.sec10.9]{10.9}",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "\\hyperrefext[I][I.sec10.9]{10.9}",
+   "new": "\\hyperrefext[I][I.sec10.6]{10.6}"
+  },
+  "note": "Le premier argument de \\sisi ne reproduit pas l'imprimé : celui-ci porte 10.6, non 10.9. Le second argument reste inchangé."
+ },
+ {
+  "page": 303,
+  "where": "Théorème 1.2, condition i′)",
+  "scan": "les limites projectives soient représentables dans C",
+  "tex": "limites projectives soient représentables dans $C$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "limites projectives finies soient représentables dans $C$",
+  "note": "Le mot « finies » manque dans l'imprimé ; le TeX conserve cette omission. La construction de 1.2.3 fournit une catégorie stable par limites projectives finies, non par toutes les limites projectives."
+ },
+ {
+  "page": 305,
+  "where": "Fin de 1.2.3, première désignation de la topologie induite",
+  "scan": "La topologie $\\mathcal{T}$ induite sur $C$",
+  "tex": "La topologie $\\Cc$ induite sur $C$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "La topologie $\\Cc$ induite",
+   "new": "La topologie $\\mathcal{T}$ induite"
+  },
+  "note": "La lettre manuscrite est un T calligraphique, non un C."
+ },
+ {
+  "page": 305,
+  "where": "Fin de 1.2.3, dernière phrase",
+  "scan": "pour la topologie $\\mathcal{T}$",
+  "tex": "pour la topologie $\\Cc$",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "pour la topologie $\\Cc$",
+   "new": "pour la topologie $\\mathcal{T}$"
+  },
+  "note": "Seconde occurrence du même T calligraphique manuscrit."
+ },
+ {
+  "page": 305,
+  "where": "1.2.4.1, phrase commençant « (Cette dernière propriété »",
+  "scan": "(Cette dernière propriété … faisceaux (II 4.1.) On en déduit",
+  "tex": "faisceaux (\\hyperrefext[II][II.theo4.1]{4.1}.) On en déduit",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "faisceaux (\\hyperrefext[II][II.theo4.1]{4.1}).)",
+  "note": "Il manque une parenthèse fermante : l'imprimé ouvre une parenthèse avant « Cette », puis une autre pour la référence, mais n'en ferme qu'une. Le TeX conserve cette coquille."
+ },
+ {
+  "page": 305,
+  "where": "1.2.4.1, dernière phrase",
+  "scan": "que la faisceau H est représentable",
+  "tex": "que la faisceau $H$ est représentable",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "que le faisceau $H$ est représentable",
+  "note": "L'imprimé porte « la faisceau » ; le TeX conserve cette coquille."
+ },
+ {
+  "page": 305,
+  "where": "1.2.4.2, fin de la page",
+  "scan": "La famille",
+  "tex": "famille $(u:X_{\\alpha}\\rightarrow H, (u,\\alpha)\\in",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "La page imprimée s'arrête après « La famille ». La formule commençant par $(u:X_{\\alpha}\\rightarrow H$ appartient à la page 306, alors que le commentaire de coupe ne signale aucun débordement final."
+ }
+]

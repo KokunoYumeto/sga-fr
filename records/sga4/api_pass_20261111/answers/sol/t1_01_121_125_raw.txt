@@ -1,0 +1,130 @@
+{
+  "findings": [
+    {
+      "page": 121,
+      "where": "Paragraph after (8.10.9), « au fur et mesure »",
+      "scan": "au fur et mesure",
+      "tex": "au fur et mesure",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "au fur et à mesure",
+      "note": "The print omits « à » from the expression « au fur et à mesure ». The TeX keeps the omission."
+    },
+    {
+      "page": 122,
+      "where": "8.10.15, « quand on ... considère »",
+      "scan": "le considère",
+      "tex": "la considère",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "la considère",
+        "new": "le considère"
+      },
+      "note": "The printed pronoun is « le », referring to the functor."
+    },
+    {
+      "page": 123,
+      "where": "8.11.1, object assignment before (8.11.1.2)",
+      "scan": "F\\longrightarrow F\\circ f",
+      "tex": "$F \\sisi{→}{↦} F\\circ f$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "F\\longmapsto F\\circ f",
+      "note": "The object-assignment arrow is printed as an ordinary arrow. The first argument of \\sisi faithfully records it; the edition explicitly corrects it to a mapping arrow."
+    },
+    {
+      "page": 123,
+      "where": "8.11.1, « la sous-catégorie pleine de C′ formée des foncteurs ind-représentables »",
+      "scan": "sous-catégorie pleine de C′",
+      "tex": "sous-catégorie pleine de $C'$ formée des foncteurs",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "sous-catégorie pleine de $\\widehat{C}$ formée des foncteurs",
+      "note": "The closure under filtered inductive limits needed here is that of the ind-representable presheaves in the target category \\widehat{C} of f^*. The print has C′; the TeX keeps it."
+    },
+    {
+      "page": 123,
+      "where": "8.11.1, « f* applique objets de C »",
+      "scan": "applique objets de C",
+      "tex": "applique objets de $C$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "applique objets de $C'$",
+      "note": "These are the representable objects in the source of f^*, hence objects of C′. The print omits the prime, and the TeX keeps that reading."
+    },
+    {
+      "page": 123,
+      "where": "8.11.1, parenthesis following « applique objets de C »",
+      "scan": "identifié à une sous-catégorie pleine de $\\widehat{C}$",
+      "tex": "sous-catégorie pleine de $\\widehat{C}$)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "sous-catégorie pleine de $\\widehat{C}'$)",
+      "note": "The representable objects C′ are embedded in \\widehat{C}', not \\widehat{C}. The print omits the prime, and the TeX keeps the omission."
+    },
+    {
+      "page": 124,
+      "where": "Immediately after (8.11.1.5), quantification of Y′",
+      "scan": "Ordinary, non-underlined Y′ in « Y′ ∈ Ob Ind(C′) »",
+      "tex": "$Y'\\in \\Ob \\Ind(C')$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "$𝒴'\\in \\Ob \\Ind(C')$",
+      "note": "This should quantify the same underlined ind-object that occurs in (8.11.1.5). The print drops its distinguishing underline; the TeX likewise keeps an ordinary Y′ rather than 𝒴′."
+    },
+    {
+      "page": 124,
+      "where": "Paragraph before (8.11.1.8), « prolongement canonique de f »",
+      "scan": "prolongement canonique de f aux ind-objets",
+      "tex": "prolongement canonique de $f$ aux ind-objets",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "prolongement canonique de $f^{\\ad}$ aux ind-objets",
+      "note": "The functor being extended is the right adjoint f^{ad}, as the following formula states. The print omits the exponent, and the TeX keeps the printed f."
+    },
+    {
+      "page": 125,
+      "where": "Proof of Proposition 8.11.2, opening words",
+      "scan": "La suffisance",
+      "tex": "Le suffisance",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Le suffisance",
+        "new": "La suffisance"
+      },
+      "note": "The print reads « La suffisance »."
+    },
+    {
+      "page": 125,
+      "where": "Proof of Proposition 8.11.2, immediately before (8.11.2.1)",
+      "scan": "en les pro-objets",
+      "tex": "en les pro-objets",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "en les ind-objets",
+      "note": "The variables belong to Ind(C) and Ind(C′), as the displayed adjunction shows. The print mistakenly calls them pro-objects; the TeX keeps that word."
+    },
+    {
+      "page": 125,
+      "where": "Proposition 8.11.4, necessary exactness condition",
+      "scan": "exact à gauche",
+      "tex": "exact à \\sisi{gauche}{droite}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "exact à droite",
+      "note": "The necessary condition is right exactness. The first argument of \\sisi matches the erroneous printed « gauche »; the edition explicitly corrects it to « droite »."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 121: 0/1; 122: 1/0; 123: 0/4; 124: 0/2; 125: 1/2."
+}

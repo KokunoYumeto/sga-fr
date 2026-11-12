@@ -1,0 +1,100 @@
+[
+ {
+  "page": "246",
+  "where": "formula (4.9.4), target of G",
+  "scan": "G: E''^o ⟶ Pro(E')^o",
+  "tex": "G : {E''}^{0} \\to \\Pro({E'}^{0})",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Pro({E'}^{0})",
+   "new": "\\Pro(E')^{0}"
+  },
+  "note": "The print has Pro(E')^o, with the exponent outside the parenthesis, not Pro(E'^o)."
+ },
+ {
+  "page": "246",
+  "where": "\"on sait (II 6.10)\"",
+  "scan": "(II 6.10)",
+  "tex": "(II \\hyperref[VI.subsec6.10]{6.10})",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "(II \\hyperref[VI.subsec6.10]{6.10})",
+   "new": "(II 6.10)"
+  },
+  "note": "The print refers to II 6.10, but the TeX links to label VI.subsec6.10, a paragraph of exposé VI. The printed number is the same; the link target is wrong."
+ },
+ {
+  "page": "247",
+  "where": "first line, \"(II 6.2 1))\"",
+  "scan": "(II 6.2 1)),",
+  "tex": "(II\n6.2.1))",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "6.2.1",
+  "note": "The typescript has '6.2 1' with a missing dot. The TeX silently corrects it to 6.2.1."
+ },
+ {
+  "page": "247",
+  "where": "\"celui où on prend C = E'_coh\"",
+  "scan": "C = E'_{coh}",
+  "tex": "$C = E'_{\\coh}$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "C = E''_{\\coh}",
+  "note": "C is a subcategory of E'', as (4.9.8) and (4.9.9) show, so E''_coh is meant. The TeX keeps the printed E'_coh."
+ },
+ {
+  "page": "247",
+  "where": "4.9.10, \"un foncteur G_C : G^o → P\"",
+  "scan": "G_C : G^o ⟶ P",
+  "tex": "$G_C : G^{0} \\to P$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "G_C : C^{0} \\to P",
+  "note": "The source should be C^o. The TeX keeps the printed G^o."
+ },
+ {
+  "page": "248",
+  "where": "(ii bis)",
+  "scan": "f commute aux (petites) limites inductives filtrantes",
+  "tex": "limites inductive inductives\n  filtrantes",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "limites inductive inductives",
+   "new": "limites inductives"
+  },
+  "note": "The TeX has an extra word 'inductive' that the print does not have."
+ },
+ {
+  "page": "250",
+  "where": "4.12 a), displayed morphism",
+  "scan": "v:Y'' ⟶ f(Y')",
+  "tex": "v : Y''\\to f(y')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "f(y')",
+   "new": "f(Y')"
+  },
+  "note": "The print has a capital Y'."
+ },
+ {
+  "page": "250",
+  "where": "4.12 a), \"donc la sous-catégorie E'_coh\"",
+  "scan": "donc la sous-catégorie",
+  "tex": "donc la cous-catégorie",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "cous-catégorie",
+   "new": "sous-catégorie"
+  },
+  "note": "Typing error in the TeX: 'cous' for 'sous'."
+ }
+]

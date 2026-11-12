@@ -1,0 +1,409 @@
+[
+ {
+  "page": 41,
+  "where": "top of the page: \"X' au lieu de Y, on aurait alors obtenu un isomorphisme canonique\"",
+  "scan": "p. 41 begins with \"X' au lieu de Y , on aurait alors obtenu\"; p. 40 ends with 'en passant par'.",
+  "tex": "page_041.tex begins with 'lieu de $Y$'; '$X'$ au' ends the last line of page_040.tex.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Already reported on p. 40 (findings_036_040.json) and applied: in the live s5.tex (both layers, 16:51) the folio-41 marker stands before '$X'$ au'. Nothing to do; listed only because page_041.tex predates the move."
+ },
+ {
+  "page": 41,
+  "where": "display (4.5.3) after 'on peut définir (cf. 1.12 b) (ii)) une flèche canonique', right-hand part",
+  "scan": "'pour F ∈ ob D^b_c(X) .': the word 'pour', no parentheses",
+  "tex": "\\qquad (F\\in\\ob\\D_c^b(X)).",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\qquad (F\\in\\ob\\D_c^b(X)).",
+   "new": "\\qquad \\text{pour } F\\in\\ob\\D_c^b(X)."
+  },
+  "note": "The corrected layer has the same display (labelled (4.5.3)^{\\mathrm{bis}} there) with the same parenthesis; the fix applies to both layers."
+ },
+ {
+  "page": 41,
+  "where": "label of the same display",
+  "scan": "(4.5.3), the number of the isomorphism (D_XF)_x̄ ≃ D_x̄ RΓ_x̄(F) of p. 40; no 'bis'",
+  "tex": "(4.5.3)\\qquad \\underline{D}_X(F)_{\\ol{x}}\\longrightarrow",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(4.5.3)^{\\mathrm{bis}}\\qquad \\underline{D}_X(F)_{\\ol{x}}\\longrightarrow",
+  "note": "The print numbers the canonical arrow like the isomorphism of p. 40 and cites it as (4.5.3) in Proposition 4.5.4 (p. 42). The diplomatic TeX keeps the printed number here; the corrected layer already writes (4.5.3)^{\\mathrm{bis}} here and in 4.5.4. Possibly deliberate (the same arrow, now defined without assuming K_X dualisant). Goes with the p. 42 entry."
+ },
+ {
+  "page": 42,
+  "where": "Proposition 4.5.4, 'et que la flèche canonique (4.5.3) soit un isomorphisme'",
+  "scan": "(4.5.3), no 'bis'",
+  "tex": "la flèche canonique (4.5.3)$^{\\mathrm{bis}}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "canonique (4.5.3)$^{\\mathrm{bis}}$",
+   "new": "canonique (4.5.3)"
+  },
+  "corrected": "canonique (4.5.3)$^{\\mathrm{bis}}$",
+  "note": "The diplomatic TeX gives the label of p. 41 as printed, (4.5.3), but this reference carries the corrected layer's 'bis'. The fix restores the printed reading (diplomatic layer only); the corrected layer keeps (4.5.3)^bis, matching its p. 41 label. Goes with the p. 41 entry."
+ },
+ {
+  "page": 42,
+  "where": "Remarque 4.5.5, after '(avec les notations de 1.12).'",
+  "scan": "'Son exploitation pour le calcul de R_!f(F) ...' begins a new, indented paragraph",
+  "tex": "(avec les notations de 1.12). Son exploitation (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "(avec les notations de 1.12). Son exploitation",
+   "new": "(avec les notations de 1.12).\n\nSon exploitation"
+  },
+  "note": ""
+ },
+ {
+  "page": 43,
+  "where": "top of the page: the opening quotation mark of '\"conservative\"'",
+  "scan": "p. 43 begins with '\"conservative\", i.e. un morphisme'; p. 42 ends with '... des points géométriques de X) est'.",
+  "tex": "page_042.tex ends with 'est ``'; page_043.tex begins with 'conservative'''.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 43 really begins at the '``' that ends the last line of page_042.tex ('($i$ parcourant ... de $X$) est ``'). Exact fix: python -I move_marker.py 5 43 '``' --before (simulated in memory on both layers: the marker then splits that line after 'est '). Text not moved. The '``' then ends its own line before 'conservative''': that line end prints a space inside the quotes (as it does now through the marker line); write '``%' to join them."
+ },
+ {
+  "page": 43,
+  "where": "first line, 'tel que les H^i_x̄(F) ⟶ H^i_x̄(G) soient des isomorphismes', first H",
+  "scan": "H̲^i_x̄(F): the H underlined",
+  "tex": "les $\\H_{\\ol{x}}^i(F)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "les $\\H_{\\ol{x}}^i(F)",
+   "new": "les $\\uH_{\\ol{x}}^i(F)"
+  },
+  "note": "\\H is the plain upright H of the preamble, \\uH the underlined one, as in (4.5.3)'' (p. 41) and Exercice 4.5.6 (p. 42)."
+ },
+ {
+  "page": 43,
+  "where": "same line, second H: 'H^i_x̄(G)'",
+  "scan": "H^i_x̄(G) without underline (no trace of a rule; the bar over the x is clear)",
+  "tex": "\\H_{\\ol{x}}^i(G)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\uH_{\\ol{x}}^i(G)",
+  "note": "The same functor as the first H (underlined in (4.5.3)'' and 4.5.6); the typist left the underline out. The TeX keeps the printed plain H."
+ },
+ {
+  "page": 43,
+  "where": "the isomorphisms of 4.6, third line: '(induction ordinaire (1.12. b) (i)) )'",
+  "scan": "(induction ordinaire (1.12. b) (i)) ): a full stop after 1.12, and a further ')' that closes '(induction'",
+  "tex": "\\text{(induction ordinaire (1.12 b) (i))}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(1.12 b) (i))}",
+   "new": "(1.12. b) (i)) )}"
+  },
+  "note": "The reference stands in its own parentheses, as (4.2.1) and (4.5.1) in the lines above; the TeX drops the outer closing one. '1.12.' is the typist's form (p. 36 '(1.12. b)', fixed there the same way)."
+ },
+ {
+  "page": 43,
+  "where": "same line, the first factor i'^*",
+  "scan": "the prime after the first i has two strokes (a typed tick and a thinner, slanted second stroke), unlike the single tick of i'^* in the line above; it reads i''^*",
+  "tex": "&\\xrightarrow{\\sim}i'^*\\underline{D}_{\\ol{x}}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": {
+   "old": "\\xrightarrow{\\sim}i'^*\\underline",
+   "new": "\\xrightarrow{\\sim}i''^*\\underline"
+  },
+  "corrected": "\\xrightarrow{\\sim}i'^*\\underline",
+  "note": "The pull-back along i' : x̄ → {x}‾ belongs here (line 2 i'^* R^!i'', line 4 i^* = i'^* i''^*); the TeX silently has the correct i'^*. The thin second stroke may also be a stray mark: hold if read so."
+ },
+ {
+  "page": 43,
+  "where": "same line, 'D_x' between i'^* and i''^*",
+  "scan": "D̲_x: no bar over the subscript x (the underline of D ends at the x; in the next line D̲_x̄ has its own bar above the x)",
+  "tex": "\\underline{D}_{\\ol{x}}i''^*",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "_{\\ol{x}}i''^*",
+   "new": "_{x}i''^*"
+  },
+  "corrected": "_{\\ol{\\{x\\}}}i''^*",
+  "note": "By the induction formula for i'' : {x}‾ → Y, R^!i'' D_Y ≃ D_{{x}‾} i''^*: the duality functor of the closure {x}‾ of the factorization above, not of x̄ (that one comes in the next line, by (4.3)). The TeX's \\ol{x} is neither the printed nor the correct reading. Independent of the previous entry (different characters)."
+ },
+ {
+  "page": 43,
+  "where": "same calculation, last line: '(par 4.3)), i.e. finalement un'",
+  "scan": "(par 4.3)), two closing parentheses, one opening",
+  "tex": "\\text{(par 4.3)), i.e. finalement un}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(par (4.3)), i.e. finalement un",
+  "note": "The TeX keeps the printed reading. Nothing is open before '(par'; the other references of the calculation stand in their own parentheses, and p. 41 has '(par (4.3) et la formule ...)', so the missing sign is probably the '(' before 4.3."
+ },
+ {
+  "page": 43,
+  "where": "numbered headings of §4 (here 4.6)",
+  "scan": "'4.6.' with a full stop, run into 'Soient X un préschéma'; also '4.7.' (p. 44) and '4.2.' (p. 36)",
+  "tex": "\\subsection*{4.6}, \\subsection*{4.7}, \\subsection*{4.2}: no full stop",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the transcription in §4, not reported on the earlier pages: one pass '\\subsection*{4.x}' -> '\\subsection*{4.x.}' over the \\subsection*{4.1}-{4.7} of Exposé I (check 4.1, 4.3, 4.5 on their pages), unless the full stop of a heading number counts as accepted label typesetting (as the '. :' of the run-in labels)."
+ },
+ {
+  "page": 44,
+  "where": "top of the page: display (4.6.1)'",
+  "scan": "p. 44 begins with \"(4.6.1)'  ℝ^!j(F)_x̄ x ℝΓ_x̄ j^*D_X(F) ⟶ A ,\"; p. 43 ends with \"d'où des accouplements parfaits\".",
+  "tex": "the (4.6.1)' display ends page_043.tex; page_044.tex begins with (4.6.1)''.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 44 really begins at the '\\[' that opens (4.6.1)' (the line after 'd'où des accouplements parfaits'). Exact fix: python -I move_marker.py 5 44 '\\[' --before (simulated in memory on both layers: the marker then stands between 'd'où des accouplements parfaits' and that '\\['). Text not moved; it agrees with the print."
+ },
+ {
+  "page": 44,
+  "where": "4.7, after 'de point fermé x.': 'Soit Y un fermé non vide de X, et considérons les immersions canoniques'",
+  "scan": "the sentence is printed: 'Soit Y un fermé non vide de X , et considérons les immersions canoniques'",
+  "tex": "page_044.tex: the sentence follows the note '% SGA→SGAA restauré (... FIX #57, 2026-07-03)' on the same line and is not printed. The live s5.tex (16:51) already has a line break after the note (fix log, from findings_036_040.json), but with no space before the '%' the output reads 'de point fermé x.Soit Y un fermé' (checked with pdflatex).",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "$x$.%",
+   "new": "$x$. %"
+  },
+  "note": "Needed in the live file as it stands. Had the line break not been made, '2026-07-03) Soit' -> '2026-07-03)\\nSoit' would be needed as well. The same defect at the other FIX #57 note, p. 37 ('le morphisme canonique.% SGA→SGAA ...', then 'Soit $K$ ...' on the next line): output 'canonique.Soit K'; fix 'canonique.%' -> 'canonique. %' (unique in s5.tex). Both layers."
+ },
+ {
+  "page": 44,
+  "where": "Exemple 4.6.2, 'd = dim(O_{X,x})'",
+  "scan": "O̲_{X,x}: no bar over the x",
+  "tex": "\\dim(\\cO_{X,\\ol{x}})",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cO_{X,\\ol{x}}",
+   "new": "\\cO_{X,x}"
+  },
+  "note": "The x̄ of the same sentence ('x̄ un point géométrique de X') has its bar."
+ },
+ {
+  "page": 44,
+  "where": "Exemple 4.6.2, 'pour tout fermé Y contenant x'",
+  "scan": "'contenant X': a capital X (cap height, as the Y and F of the line)",
+  "tex": "contenant $x$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "contenant $x$",
+   "new": "contenant $X$"
+  },
+  "corrected": "contenant $x$",
+  "note": "Y is a closed subset containing the point x (4.6: 'si Y est l'adhérence de x'); a closed Y containing X is X itself. The TeX silently corrects; the fix restores the printed reading."
+ },
+ {
+  "page": 44,
+  "where": "Exemple 4.6.2, \"avec F' = R Hom(F,(μ_n)_X^{⊗d})\"",
+  "scan": "Hom underlined (H̲o̲m̲)",
+  "tex": "$F'=\\R\\Hom(F,(\\mu_n)_X^{\\otimes d})$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "F'=\\R\\Hom(F,",
+   "new": "F'=\\R\\underline{\\Hom}(F,"
+  },
+  "note": "\\Hom is the plain operator (\\DeclareMathOperator); p. 40 writes the sheaf Hom \\R\\underline{\\Hom}. The Hom of 'D_x = R Hom( ,A)' (this page) and of (4.7.3)-(4.7.6) (p. 45) is plain in the print, as in the TeX."
+ },
+ {
+  "page": 44,
+  "where": "4.7, '(et par hypothèse D_x = R Hom( ,A)): K_V = j^*K_X, K_U = i^*K_V, K_Y = RΓ_Y(K_X).' and the next paragraph",
+  "scan": "the three formulas run on in the line after '):', not displayed; 'Soit G ∈ ob D^b_c(U), et posons' then begins a new, indented paragraph",
+  "tex": "a display \\[K_V=j^*K_X, \\qquad K_U=i^*K_V, \\qquad K_Y=\\R\\Gamma_Y(K_X).\\] followed by 'Soit $G$' in the same paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "$):\n\\[\nK_V=j^*K_X,\n\\qquad K_U=i^*K_V,\n\\qquad K_Y=\\R\\Gamma_Y(K_X).\n\\]\nSoit $G",
+   "new": "$): $K_V=j^*K_X$, $K_U=i^*K_V$, $K_Y=\\R\\Gamma_Y(K_X)$.\n\nSoit $G"
+  },
+  "note": "Two layout differences in one edit: the formulas inline as printed, and the paragraph break before 'Soit G'."
+ },
+ {
+  "page": 45,
+  "where": "end of the page: the displays (4.7.7), (4.7.8) and 'En composant ... (4.7.1)'.'",
+  "scan": "p. 45 ends with 'Enfin, la suite exacte' and the footnote (*); p. 46 begins with '(4.7.7)  0 ⟶ A_{V,X} ⟶ A_X ⟶ A_x ⟶ 0'.",
+  "tex": "page_045.tex goes on to the end of 'En composant (4.7.5), (4.7.6) et (4.7.8), on obtient la flèche annoncée (4.7.1)'.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 46 really begins at the '\\[' that opens (4.7.7) (the line after 'Enfin, la suite exacte'). Already reported in findings_046_050.json and applied: the live s5.tex (both layers, 16:59) has the folio-46 marker there. Nothing to do for the marker. The text that moved agrees with the p. 46 scan except the (4.7.8) sign, already fixed from findings_046_050.json. The footnote of p. 45 still stands under p. 46: see the 'missing' entry."
+ },
+ {
+  "page": 45,
+  "where": "foot of the page: the footnote of the '(*)' in the second ⊗^L display",
+  "scan": "(*) (ajouté en 77) Inexact : il est facile, en fait, de prolonger ⊗^L : D^-(A) x D^-(A) ⟶ D^-(A) en ⊗^L : D^-(A) x D(A) ⟶ D(A) .  (a later addition in another typeface; upright, not underlined; plain L)",
+  "tex": "not in page_045.tex; the TeX has it as a paragraph under the folio-46 marker (in page_046.tex as '\\emph{(*) (ajouté en 77) Inexact: ...}' with bold L; in the live s5.tex, after the p. 46 fixes, as the plain paragraph '(*) (ajouté en 77) Inexact: ...' with \\mathrm L, between '(4.7.1)'.' and 'Nous allons voir')",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\D(A)\\quad(*).",
+   "new": "\\D(A)\\quad(*)\\footnote{(*) (ajouté en 77) Inexact: il est facile, en fait, de prolonger $\\overset{\\mathrm L}{\\otimes}:\\D^-(A)\\times\\D^-(A)\\to\\D^-(A)$ en $\\overset{\\mathrm L}{\\otimes}:\\D^-(A)\\times\\D(A)\\to\\D(A)$.}."
+  },
+  "note": "The note's text as it now stands in the live file, moved to its call in the file's form for the (*) notes of the 1977 additions ('(*)\\footnote{(*) (ajouté en 1977) ...}', Exposé I §3); s5.tex has a \\footnote inside \\[...\\] elsewhere too, and this one compiles (checked). Apply together with the removal of the paragraph from p. 46: in the live s5.tex old '(*) (ajouté en 77) Inexact: il est facile, en fait, de prolonger $\\overset{\\mathrm L}{\\otimes}:\\D^-(A)\\times\\D^-(A)\\to\\D^-(A)$ en $\\overset{\\mathrm L}{\\otimes}:\\D^-(A)\\times\\D(A)\\to\\D(A)$.\\n\\n' (after '(4.7.1)'.\\n\\n'), new '' (else the note prints twice). As the p. 46 checker proposed."
+ },
+ {
+  "page": 45,
+  "where": "same sentence, 'A = ℤ/ℓℤ'",
+  "scan": "ℤ/ ℓ  ℤ: hand-written ℓ with a wide blank before ℤ, no trace of an exponent",
+  "tex": "$A=\\Z/\\ell\\Z$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$A=\\Z/\\ell^{\\nu}\\Z$",
+  "note": "ℤ/ℓℤ is a field; 'de dimension cohomologique infinie pour ν ⩾ 2' is said of ℤ/ℓ^νℤ (the blank may have been left for the exponent). The TeX keeps the printed reading."
+ },
+ {
+  "page": 45,
+  "where": "same sentence, 'pour ν ⩾ 2'",
+  "scan": "a hand-written ν (v-shape with a hooked right arm), unlike the looped ℓ earlier in the line",
+  "tex": "$\\ell\\geqslant2$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\ell\\geqslant2$",
+   "new": "$\\nu\\geqslant2$"
+  },
+  "note": "Wrong letter in the TeX, not a misprint of the print; both layers."
+ },
+ {
+  "page": 45,
+  "where": "(4.7.1)' (a pasted-in line in another typeface)",
+  "scan": "plain L over ⊗",
+  "tex": "\\overset{\\mathbf L}{\\otimes}_A",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\overset{\\mathbf L}{\\otimes}_A\\R\\Gamma(V,i_!G')[-1]",
+   "new": "\\overset{\\mathrm{L}}{\\otimes}_A\\R\\Gamma(V,i_!G')[-1]"
+  },
+  "note": "The print's L over ⊗ is a plain typed capital L on this page (no underline; the doubly underlined L of p. 37 is the functor L i_?); the TeX's \\mathbf L is bold. \\mathrm{L} as in the preamble's \\lten and the p. 37 fix."
+ },
+ {
+  "page": 45,
+  "where": "first display of the parenthesis, '⊗^L : D^-(A) x D^-(A) ⟶ D^-(A)'",
+  "scan": "plain L over ⊗ (a blank between its foot and the ⊗)",
+  "tex": "\\overset{\\mathbf L}{\\otimes}:\\D^-(A)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\overset{\\mathbf L}{\\otimes}:\\D^-(A)",
+   "new": "\\overset{\\mathrm{L}}{\\otimes}:\\D^-(A)"
+  },
+  "note": "As (4.7.1)'."
+ },
+ {
+  "page": 45,
+  "where": "second display, '⊗^L : D(A) x D^b(A)_torf ⟶ D(A) (*)'",
+  "scan": "plain L over ⊗ (a blank between its foot and the ⊗)",
+  "tex": "\\overset{\\mathbf L}{\\otimes}:\\D(A)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\overset{\\mathbf L}{\\otimes}:\\D(A)",
+   "new": "\\overset{\\mathrm{L}}{\\otimes}:\\D(A)"
+  },
+  "note": "As (4.7.1)'."
+ },
+ {
+  "page": 45,
+  "where": "'assurant que les deux facteurs de ⊗^L figurant dans (4.7.1)''",
+  "scan": "plain L over ⊗ (its foot touches the ⊗; no underline visible)",
+  "tex": "facteurs de $\\overset{\\mathbf L}{\\otimes}$",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "facteurs de $\\overset{\\mathbf L}{\\otimes}$",
+   "new": "facteurs de $\\overset{\\mathrm{L}}{\\otimes}$"
+  },
+  "note": "As (4.7.1)'."
+ },
+ {
+  "page": 45,
+  "where": "(4.7.4)",
+  "scan": "plain L over ⊗ (a blank between its foot and the ⊗)",
+  "tex": "\\R i_*G\\overset{\\mathbf L}{\\otimes}\\underline{D}_V",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "G\\overset{\\mathbf L}{\\otimes}\\underline{D}_V",
+   "new": "G\\overset{\\mathrm{L}}{\\otimes}\\underline{D}_V"
+  },
+  "note": "As (4.7.1)'."
+ },
+ {
+  "page": 45,
+  "where": "(4.7.5) (in the typeface of (4.7.1)')",
+  "scan": "plain L over ⊗",
+  "tex": "\\overset{\\mathbf L}{\\otimes}_A",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\overset{\\mathbf L}{\\otimes}_A\\R\\Gamma(V,i_!G')\\longrightarrow",
+   "new": "\\overset{\\mathrm{L}}{\\otimes}_A\\R\\Gamma(V,i_!G')\\longrightarrow"
+  },
+  "note": "As (4.7.1)'."
+ },
+ {
+  "page": 45,
+  "where": "'Notons d'abord que, par la formule de dualité complémentaire (1.12 a) (ii) on a un isomorphisme canonique'",
+  "scan": "no comma after (ii)",
+  "tex": "(1.12 a) (ii), on a",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(1.12 a) (ii), on a",
+   "new": "(1.12 a) (ii) on a"
+  },
+  "note": ""
+ },
+ {
+  "page": 45,
+  "where": "same sentence, '(1.12 a) (ii)'",
+  "scan": "(1.12 a) (ii): the parenthesis opened before 1.12 is not closed",
+  "tex": "(1.12 a) (ii)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(1.12 a) (ii))",
+  "note": "As '(cf. 1.12 b) (ii))' on p. 41. The TeX keeps the printed reading. Independent of the comma fix."
+ },
+ {
+  "page": 45,
+  "where": "(4.7.4), the argument of D_V: 'D_V(R i_*G)'",
+  "scan": "a plain R (one stem), while the R of R i_*G before ⊗ and those of (4.7.2)-(4.7.3) are double-struck",
+  "tex": "\\underline{D}_V(\\R i_*G)\\longrightarrow K_V",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\R i_*G)\\longrightarrow",
+   "new": "(\\mathrm{R} i_*G)\\longrightarrow"
+  },
+  "corrected": "(\\R i_*G)\\longrightarrow",
+  "note": "Treated as the plain R of pp. 16 and 38 (diplomatic layer only); the TeX silently has the double-struck R. Does not overlap the L fix of (4.7.4)."
+ },
+ {
+  "page": 45,
+  "where": "'Mais K_V = j^!K_X, et l'on a l'isomorphisme de dualité (SGAA 3.1.10) :'",
+  "scan": "(SGAA 3.1.10), no exposé number",
+  "tex": "(SGAA~3.1.10)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(SGAA~XVIII~3.1.10)",
+  "note": "The same duality is cited '(SGAA~XVIII~3.1.10)' in Exposé I §3 ('Par dualité') and §4.4 ('cas particuliers triviaux de la dualité', p. 38); the TeX keeps the printed reading. p. 46 has the same '(SGAA~3.1.10)' ('par dualité'): both or neither."
+ }
+]

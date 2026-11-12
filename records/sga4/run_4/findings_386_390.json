@@ -1,0 +1,109 @@
+[
+  {
+    "page": 386,
+    "where": "5.1, paragraph 'Supposons maintenant f : X -> Y quasi-compact et quasi-séparé', line 2: 'il en est de même de ...'",
+    "scan": "alors il en est de même de X'x_Y Y' → Y' , et comme Y' est affine",
+    "tex": "alors il en est de même de $\\fprod{X'}{Y'}{Y} \\to Y'$",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "$\\fprod{X}{Y'}{Y} \\to Y'$",
+    "note": "The print has X' (prime on X), but the morphism is f : X -> Y and its base change is X x_Y Y' -> Y' (the same sentence goes on with 'les X x_Y Y''). The TeX keeps the printed X'."
+  },
+  {
+    "page": 386,
+    "where": "Théorème 5.2, last sentence",
+    "scan": "Alors homomorphisme canonique (5.1.2 ) est un isomorphisme :",
+    "tex": "Alors \\sisi{}{l'}homomorphisme canonique \\eqhyperref[VIII.eq5.1.2]{5.1.2} est un",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "Alors l'homomorphisme canonique",
+    "note": "The print omits the article l'. The TeX corrects it with \\sisi{}{l'}, whose first argument (empty) matches the print."
+  },
+  {
+    "page": 387,
+    "where": "5.4, sentence after (5.4.1): 'aux points de X̄_ȳ = ...'",
+    "scan": "X̄_ȳ = X_y ⊗_{k(y),} k(ȳ), . D'ailleurs",
+    "tex": "$\\bar{X}_{\\bar{y}} =\nX_{y} \\otimes_{k(y),} k(\\bar{y}),$. D'ailleurs",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "$\\bar{X}_{\\bar{y}} = X_{y} \\otimes_{k(y)} k(\\bar{y})$. D'ailleurs",
+    "note": "Two stray commas typed in the print: one after the subscript k(y) of the tensor sign, one between k(ȳ) and the final period. The TeX keeps both."
+  },
+  {
+    "page": 388,
+    "where": "Proposition 5.5, first display, index of the product",
+    "scan": "f_*(F)_ȳ ≃ ∏_{x̄ ∈ X_y ⊗_{k(y)} k(ȳ)} F_x̄ ,",
+    "tex": "\\prod_{\\bar{x} \\in X_{y}\\otimes_{k(y)}\n(\\bar{y})} F_{\\bar{x}}{\\quoi},",
+    "kind": "formula",
+    "confidence": "high",
+    "fix": {
+      "old": "(\\bar{y})} F_{\\bar{x}}",
+      "new": "k(\\bar{y})} F_{\\bar{x}}"
+    },
+    "note": "The print has k(ȳ) under the product (x̄ runs over X_y ⊗_{k(y)} k(ȳ), as on p. 387); the TeX drops the k."
+  },
+  {
+    "page": 388,
+    "where": "Proposition 5.5, parenthesis after the first display",
+    "scan": "commute à tout changement de base Y' → Y), et si F est un faisceau abélien",
+    "tex": "commute à tout changement de\nbase $y'\\to Y$), et si",
+    "kind": "symbol",
+    "confidence": "high",
+    "fix": {
+      "old": "$y'\\to Y$",
+      "new": "$Y'\\to Y$"
+    },
+    "note": "Capital Y' in the print (a base change Y' -> Y, as in Corollaire 5.6); the TeX has small y'."
+  },
+  {
+    "page": 388,
+    "where": "paragraph after Proposition 5.5: 'est en fait indépendante de 5.2. et du théorème de passage à la limite'",
+    "scan": "est en fait indépendante de 5.2. et du théorème de passage à la limite général VII 5.7",
+    "tex": "indépendante de \\hyperref[VIII.thm5.2]{5.2}. et du théorème de passage à la",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "indépendante de \\hyperref[VIII.thm5.2]{5.2} et du théorème",
+    "note": "Stray period after 5.2 in the middle of the sentence in the print; the TeX keeps it."
+  },
+  {
+    "page": 390,
+    "where": "§6 Supports, first paragraph, sentence 2",
+    "scan": "Soit U un ouvert de Zariski du schéma X . Alors U ∈ ObX_ét, et en fait U est un sous-objet",
+    "tex": "Alors $I \\in \\Ob\nX_{\\text{\\rm ét}}$,",
+    "kind": "symbol",
+    "confidence": "high",
+    "fix": {
+      "old": "Alors $I \\in \\Ob",
+      "new": "Alors $U \\in \\Ob"
+    },
+    "note": "The print has U (the Zariski open just introduced); the TeX has I."
+  },
+  {
+    "page": 390,
+    "where": "proof of Proposition 6.1, last sentence",
+    "scan": "on conclut que U ∈ Ob X_{ét/F}, donc X_{ét/F} = X_{ét/U}, donc F = U , cqfd.",
+    "tex": "donc\n$ X_{\\text{ét}/F'} =  X_{\\text{ét}/U}$, donc $F = U$, \\cqfd.",
+    "kind": "symbol",
+    "confidence": "high",
+    "fix": {
+      "old": "X_{\\text{ét}/F'}",
+      "new": "X_{\\text{ét}/F}"
+    },
+    "note": "No prime on this F in the print. The marks after the subscripts F (of 'U ∈ Ob X_{ét/F}') and U on this line are the typed commas that follow them; the second X_{ét/F} has none. The TeX adds a prime to the second F."
+  },
+  {
+    "page": 390,
+    "where": "paragraph after the proof of 6.1: 'nous pouvons donc parler sans ambiguité'",
+    "scan": "nous pouvons donc parler sans ambiguité d'un \"ouvert\" de X",
+    "tex": "sans\nambiguïté d'un",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "ambiguïté",
+    "note": "The print spells 'ambiguité' without the diaeresis; the TeX silently corrects it to 'ambiguïté'."
+  }
+]

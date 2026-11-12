@@ -1,0 +1,56 @@
+[
+ {
+  "page": 207,
+  "where": "Start of the supplied TeX cut, before §1",
+  "scan": "1. Le théorème de changement de base par un morphisme lisse.",
+  "tex": "\\chapter{Théorème de changement de base par un morphisme lisse, et applications}",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The printed page begins with §1. The leading exposé title and author block belong before this page, but the cut's comment does not identify them as neighbouring-page material. Recut at the section heading; do not delete this material from the edition."
+ },
+ {
+  "page": 208,
+  "where": "Proof of 1.1, base-change formula after the compactification diagram",
+  "scan": "g\\times_Y\\bar{Y}:Y'\\times_Y\\bar{Y}\\longrightarrow\\bar{Y}",
+  "tex": "\\fprod{g}{\\bar{Y}}{Y}:\\fprod{Y'}{\\bar{Y}}{Y}\\rightarrow \\bar{Y}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\fprod{g}{\\bar{X}}{Y}:\\fprod{Y'}{\\bar{X}}{Y}\\rightarrow \\bar{X}",
+  "note": "All three printed barred Y's should be barred X's: the compactification introduced in the diagram is \\bar{X}. The TeX keeps the printed misprint."
+ },
+ {
+  "page": 208,
+  "where": "Same proof, immediately after the base-change formula",
+  "scan": "est encore universellement 0-acyclique",
+  "tex": "encore universellement $0$-acyclique",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "encore universellement localement $0$-acyclique",
+  "note": "The inherited hypothesis is universal local 0-acyclicity, not universal 0-acyclicity. The print omits « localement », and the TeX keeps this omission."
+ },
+ {
+  "page": 209,
+  "where": "Definitions of the two base-changed schemes after (*)",
+  "scan": "\\widetilde{X}=X\\times_Y Y,\\quad \\widetilde{X}'=X'\\times_{Y'}Y'",
+  "tex": "\\widetilde{X}=\\fprod{X}{Y}{Y}$,\n$\\widetilde{X}'=\\fprod{X'}{Y'}{Y'}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\widetilde{X}=\\fprod{X}{\\widetilde{Y}}{Y},\\quad \\widetilde{X}'=\\fprod{X'}{\\widetilde{Y}'}{Y'}",
+  "note": "The second factors must be the strict localizations \\widetilde{Y} and \\widetilde{Y}', respectively. Both tildes are missing in the print, and the TeX keeps both omissions."
+ },
+ {
+  "page": 210,
+  "where": "End of the paragraph completing the proof of 1.1",
+  "scan": "(VI 5)",
+  "tex": "\\hyperrefext[VII][VII.sec5]{5}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\hyperrefext[VII][VII.sec5]{5}",
+  "note": "The printed reference is VI 5; the relevant section on passage to inverse limits of schemes is VII 5. The TeX silently corrects the printed reference."
+ }
+]

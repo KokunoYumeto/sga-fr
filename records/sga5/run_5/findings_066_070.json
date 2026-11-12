@@ -1,0 +1,183 @@
+[
+ {
+  "page": 66,
+  "where": "heading of no. 6",
+  "scan": "'6. Constructibilité de ℝ Hom.' (underlined; a full stop after Hom)",
+  "tex": "\\subsection*{6. Constructibilité de $\\R\\underline{\\Hom}$} (no full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\R\\underline{\\Hom}$}",
+   "new": "$\\R\\underline{\\Hom}$.}"
+  },
+  "note": "As the headings of nos. 2, 3 and 5 (pp. 59, 60, 50)."
+ },
+ {
+  "page": 67,
+  "where": "heading of no. 7 (top of the page)",
+  "scan": "'7. Existence de complexes dualisants.' (underlined; a full stop at the end)",
+  "tex": "\\subsection*{7. Existence de complexes dualisants} (no full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{7. Existence de complexes dualisants}",
+   "new": "{7. Existence de complexes dualisants.}"
+  },
+  "note": "As the heading of no. 6 on p. 66."
+ },
+ {
+  "page": 67,
+  "where": "Lemme 7.1, first line",
+  "scan": "'G ∈ ob D^+_coh(X), alors': a comma (with its tail) before 'alors'",
+  "tex": "$G\\in\\ob\\D^{+}_{\\mathrm{coh}}(X)$; alors",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(X)$; alors",
+   "new": "(X)$, alors"
+  },
+  "note": ""
+ },
+ {
+  "page": 67,
+  "where": "Lemme 7.1, second line",
+  "scan": "'ℝ Hom(F,G) ∈ D^+_coh(X) (notations de (1.2)).': no 'ob' after ∈ (the first line has '∈ ob' twice)",
+  "tex": "\\R\\underline{\\Hom}(F,G)\\in\\ob\\D^{+}_{\\mathrm{coh}}(X)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "(F,G)\\in\\ob\\D^{+}",
+   "new": "(F,G)\\in\\D^{+}"
+  },
+  "note": "The TeX adds \\ob where the print has none; the same on p. 68."
+ },
+ {
+  "page": 68,
+  "where": "Preuve of 7.3, line 3 ('Prouvons que l'on a ...')",
+  "scan": "'ℝ Hom(F,K) ∈ D^b_coh(X). Soit x̄ ...': no 'ob' after ∈ (the line before has '∈ ob D^+_coh(X)')",
+  "tex": "\\R\\underline{\\Hom}(F,K)\\in\\ob\\D^{b}_{\\mathrm{coh}}(X)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "(F,K)\\in\\ob\\D^{b}",
+   "new": "(F,K)\\in\\D^{b}"
+  },
+  "note": "As in Lemme 7.1 (p. 67)."
+ },
+ {
+  "page": 68,
+  "where": "display after 'D'après (7.2), on a'",
+  "scan": "ℝ Hom(F,K)_x̄ ⥲ ℝ Hom(F_x̄ , K_x̄ ). : a hand-drawn arrow with an arrowhead and a tilde above it (checked at 2.5x), unlike the plain ≃ (tilde over a bar) of p. 70",
+  "tex": "\\simeq (no arrow)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(F,K)_{\\bar{x}}\\simeq",
+   "new": "(F,K)_{\\bar{x}}\\xrightarrow{\\sim}"
+  },
+  "note": "The reverse of the ≃-for-arrow cases of pp. 36-53: here the print has the arrowhead."
+ },
+ {
+  "page": 68,
+  "where": "commutative square, left vertical (labelled Id)",
+  "scan": "Id | : a plain vertical line without arrowhead (the right vertical has its arrowhead)",
+  "tex": "\\arrow[d,\"\\mathrm{Id}\"'] (an arrow)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[d,\"\\mathrm{Id}\"']",
+   "new": "\\arrow[d,dash,\"\\mathrm{Id}\"']"
+  },
+  "note": "tikz-cd's dash key draws the line without heads; a single line, not the double line of equal."
+ },
+ {
+  "page": 69,
+  "where": "top of the page",
+  "scan": "p. 69 begins 'de X, et que le théorème de pureté au sens fort (4.4) est vrai sur X.'; p. 68 ends with Lemme 7.4's '... premier aux caractéristiques résiduelles'",
+  "tex": "'de $X$, et que le théorème de' ends s5.tex line 1849 (as of 17:29), the last line of page_068.tex; the folio-69 marker (line 1850) follows it, so page_069.tex begins 'pureté au sens fort'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 69 really begins at 'de $X$, et que le théorème de' at the end of s5.tex line 1849 (as of 17:29). Exact fix: python -I move_marker.py 5 69 'de $X$, et que le théorème de' --before (single quotes keep the $ literal; simulated in memory on both layers at 17:29: the anchor occurs once before the marker, which then splits line 1849 after 'caractéristiques résiduelles'). Text not moved; it agrees with the print."
+ },
+ {
+  "page": 69,
+  "where": "cartesian square of immersions, bottom row",
+  "scan": "U' —i'→ X: the label i' stands above the arrow (as i'_p above the top arrow)",
+  "tex": "U' \\arrow[r,\"i'\"'] & X. (the swap mark sets i' below the arrow)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"i'\"']",
+   "new": "\\arrow[r,\"i'\"]"
+  },
+  "note": ""
+ },
+ {
+  "page": 69,
+  "where": "'posons ... Y' = V(Σ div(s_i))': index under the Σ",
+  "scan": "'l≤ i ≤ p-1': the first character is the typewriter's small letter l (foot serif on both sides, small top tick, as the l of 'la', 'langage'), not the digit 1 (flag, no foot: the 1 of 'p-1' in the same index and of 'I = {1,...,p}' just above); checked at 7x",
+  "tex": "\\sum_{1\\leq i\\leq p-1}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\sum_{1\\leq",
+   "new": "\\sum_{l\\leq"
+  },
+  "corrected": "\\sum_{1\\leq i\\leq p-1}",
+  "note": "Typing error, letter l for the digit 1 (the typewriter has the digit: same index, same line); the TeX silently corrects. Medium only because l-for-1 may be wanted under the same rule as the typescript's o for an index zero."
+ },
+ {
+  "page": 70,
+  "where": "'Donc ... pour tout point géométrique ȳ de Y,'",
+  "scan": "'de Y,': no index p (crisp; clean paper under the Y, the comma right after it; the Y_p of D^+_coh(Y_p) earlier in the line has its p)",
+  "tex": "de $Y_p$,",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "de $Y_p$, $(",
+   "new": "de $Y$, $("
+  },
+  "corrected": "de $Y_p$",
+  "note": "ℝ j_p^!(K) lives on Y_p, so ȳ must be a point of Y_p. The TeX silently corrects."
+ },
+ {
+  "page": 70,
+  "where": "display 'par le théorème de pureté, on a (4.3)'",
+  "scan": "j_p^*(K) ⊗ with a plain upright typed capital L standing above the ⊗ (no underline), Z/nZ at its lower right",
+  "tex": "\\otimes^L_{\\Z/n\\Z} (a math-italic L set as a superscript)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\otimes^L_{\\Z/n\\Z}",
+   "new": "\\overset{\\mathrm{L}}{\\otimes}_{\\Z/n\\Z}"
+  },
+  "note": "The form the fixes of pp. 37, 45 and 46 gave the plain typed L over ⊗. s5.tex writes \\otimes^L 137 times and \\otimes^{L} 48 times: see the message."
+ },
+ {
+  "page": 70,
+  "where": "Théorème 7.5, end of the hypotheses",
+  "scan": "'(Conditions satisfaites si X est excellent ...': capital C",
+  "tex": "(conditions satisfaites",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "(conditions satisfaites",
+   "new": "(Conditions satisfaites"
+  },
+  "note": "Capital against small letter."
+ },
+ {
+  "page": 70,
+  "where": "proof label of Théorème 7.5",
+  "scan": "'Démonstration.': the rule ends under the n; the full stop is not underlined",
+  "tex": "\\emph{Démonstration.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Démonstration.}",
+   "new": "\\emph{Démonstration}."
+  },
+  "note": "A proof label of another form than 'Preuve :': the print has 'Démonstration.' with a full stop, no colon."
+ }
+]

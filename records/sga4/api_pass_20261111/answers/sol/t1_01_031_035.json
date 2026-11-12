@@ -1,0 +1,96 @@
+[
+ {
+  "page": 31,
+  "where": "Hypothèse précédant le diagramme (****), renvoi à 5.4",
+  "scan": "« limites projectives finies (5.4 4) et 5.6) »",
+  "tex": "« limites projectives finies (5.4) et (5.6) »",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\hyperref[I.prop5.4]{5.4}) et (\\hyperref[I.prop5.6]{5.6})",
+   "new": "(\\hyperref[I.prop5.4]{5.4} 4) et \\hyperref[I.prop5.6]{5.6})"
+  },
+  "note": "Le renvoi imprimé précise le point 4) de 5.4 ; cette précision manque dans le TeX."
+ },
+ {
+  "page": 32,
+  "where": "5.10, dernière phrase de la page",
+  "scan": "« est toujours adjoint à droite »",
+  "tex": "« est toujours adjoint à droite »",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "adjoint à gauche",
+  "note": "Le TeX conserve le lapsus du tirage. Le foncteur j_{X!}, défini par la somme de (5.10.1), est adjoint à gauche au foncteur de restriction j_X^\\ast."
+ },
+ {
+  "page": 33,
+  "where": "Preuve de 5.11, 1), premier isomorphisme canonique",
+  "scan": "$f\\simeq\\varinjlim_{Y\\in\\ob C/X}Y$",
+  "tex": "$f\\xrightarrow{\\sim}\\varinjlim_{Y\\in\\ob C/X}Y$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "f\\xrightarrow{\\sim}",
+   "new": "f\\simeq"
+  },
+  "note": "Le tirage porte une relation d'isomorphisme, sans flèche, comme dans « Or j_{X!}(f)\\simeq X » plus loin."
+ },
+ {
+  "page": 33,
+  "where": "Preuve de 5.11, 2), seconde occurrence du composé",
+  "scan": "$e_X\\circ j^\\ast$",
+  "tex": "$e_X\\circ j^\\ast$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "e_X\\circ j_X^\\ast",
+  "note": "Le tirage omet l'indice X au second j^\\ast ; le TeX conserve cette omission. Il s'agit du même foncteur j_X^\\ast que dans la première occurrence et dans l'énoncé."
+ },
+ {
+  "page": 34,
+  "where": "Diagramme (5.13.1), flèche verticale gauche",
+  "scan": "$J_H$",
+  "tex": "$J_H$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "j_H",
+  "note": "La majuscule J du tirage est conservée dans le TeX. Le foncteur source défini en 5.10 et repris dans (5.13.2) se note j_H."
+ },
+ {
+  "page": 34,
+  "where": "Après « On a donc un diagramme commutatif à isomorphisme près »",
+  "scan": "Le carré (5.13.2), avec ses quatre objets, ses quatre flèches et leurs étiquettes, est imprimé avant « et comme ».",
+  "tex": "Le diagramme (5.13.2) est entièrement commenté et ne s'imprime pas.",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "On a donc un diagramme commutatif à isomorphisme près:",
+   "new": "On a donc un diagramme commutatif à isomorphisme près:\n\\[\\vcenter{\n\\xymatrix@C=2.5cm@R=1.5cm{\n(C/H)^{\\widehat{\\phantom{,}}} \\ar[r]^{(u/H)_{!}} \\ar[d]_{(j_H)_{!}} &\n(C'/u^{\\cdot}H)^{\\widehat{\\phantom{,}}} \\ar[d]_{(j_{u_{!}H})_{!}}\\\\\n\\widehat{C} \\ar[r]^{u_{!}} & \\widehat{C'}\\quad,\n}}\\leqno{(5.13.2)}\n\\]"
+  },
+  "note": "Rétablir le diagramme et son numéro. La restitution conserve le point exposant imprimé au sommet supérieur droit, signalé séparément comme lapsus du tirage."
+ },
+ {
+  "page": 34,
+  "where": "Diagramme (5.13.2), sommet supérieur droit",
+  "scan": "$(C'/u^{\\cdot}H)^{\\widehat{\\phantom{,}}}$",
+  "tex": "Le diagramme entier est absent du TeX composé.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(C'/u_{!}H)^{\\widehat{\\phantom{,}}}",
+  "note": "Le point exposant est un lapsus pour le ! en indice : le texte et l'étiquette verticale emploient u_{!}H. Le TeX actuel omet le diagramme plutôt que de conserver ou corriger ce lapsus ; la restitution proposée conserve la lecture imprimée."
+ },
+ {
+  "page": 35,
+  "where": "5.14, 3), étiquette de la flèche verticale droite",
+  "scan": "$u.u^{\\cdot}(\\alpha)$",
+  "tex": "$u.u^{\\bigdot}(\\alpha)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "u^\\ast u_{!}(\\alpha)",
+  "note": "Le TeX conserve l'étiquette à points du tirage. Entre les sommets u^\\ast u_{!}H et u^\\ast u_{!}K, la flèche doit être u^\\ast u_{!}(\\alpha)."
+ }
+]

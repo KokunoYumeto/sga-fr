@@ -1,0 +1,162 @@
+{
+  "findings": [
+    {
+      "page": 216,
+      "where": "Exemple 2.15, condition (i)",
+      "scan": "noethérien (i.e. tout ouvert de X est quasi-compact), i.e. toute suite croissante d'ouverts de X est stationnaire)",
+      "tex": "noethérien (\\ie tout ouvert de $X$ est\nquasi-compact), \\ie toute suite croissante d'ouverts de $X$ est\nstationnaire);",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "noethérien (\\ie tout ouvert de $X$ est quasi-compact, \\ie toute suite croissante d'ouverts de $X$ est stationnaire);",
+      "note": "The explanation has two closing parentheses for one opening parenthesis. TeX retains the printed misprint."
+    },
+    {
+      "page": 216,
+      "where": "Exemple 2.15, proof, name of the generating subcategory",
+      "scan": "Ouv(X)",
+      "tex": "ouv(X)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "ouv(X)",
+        "new": "Ouv(X)"
+      },
+      "note": "The printed category name begins with a capital O."
+    },
+    {
+      "page": 216,
+      "where": "2.15.1, first sentence",
+      "scan": "les espaces topologiques",
+      "tex": "les espaces topologique",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "espaces topologique.",
+        "new": "espaces topologiques."
+      },
+      "note": "The printed adjective is plural."
+    },
+    {
+      "page": 217,
+      "where": "Exercice 2.16, introductory paragraph, induced topos",
+      "scan": "E_{/X'}",
+      "tex": "E_{/X}",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "E_{/X}",
+        "new": "E_{/X'}"
+      },
+      "note": "The print has a prime: the slice is over X', not X."
+    },
+    {
+      "page": 217,
+      "where": "Exercice 2.16 b), first sentence",
+      "scan": "l'objet de E définit par",
+      "tex": "l'objet de $E$ définit par",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "l'objet de $E$ défini par",
+      "note": "The participle should be « défini ». TeX retains the printed « définit »."
+    },
+    {
+      "page": 218,
+      "where": "Exercice 2.16 b), continuation, definition of T_U",
+      "scan": "$T_U = G \\times U$",
+      "tex": "$T_U = G \\times U$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$T_U = U \\times G$",
+      "note": "The following action and structural-map formulas use coordinates (u,g), with the U-coordinate first. The printed product has its factors reversed; TeX retains it."
+    },
+    {
+      "page": 218,
+      "where": "Exercice 2.16 b), continuation, introduction of the structural map",
+      "scan": "et le morphisme structural",
+      "tex": "et la morphisme structural",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "la morphisme",
+        "new": "le morphisme"
+      },
+      "note": "The print reads « le », not « la »."
+    },
+    {
+      "page": 218,
+      "where": "Exercice 2.16 b), continuation, formula for the structural map",
+      "scan": "$P_U(u,g)=g\\cdot u$",
+      "tex": "$P_U(u, g) = g\\cdot u$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$p_U(u, g) = g\\cdot u$",
+      "note": "The map is introduced immediately before this as lowercase p_U, but the print uses uppercase P_U in its defining formula. TeX retains this inconsistency."
+    },
+    {
+      "page": 218,
+      "where": "Exercice 2.16 c), parenthetical description of quasi-separated X",
+      "scan": "un ouvert quasi-compact",
+      "tex": "un ouverts quasi-compact",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "un ouverts quasi-compact",
+        "new": "un ouvert quasi-compact"
+      },
+      "note": "The print has singular « ouvert »."
+    },
+    {
+      "page": 218,
+      "where": "Exercice 2.16 d), first assertion",
+      "scan": "P → e est quasi-compact si et seulement si G est fini.",
+      "tex": "$P \\to e$ est quasi-compact\n  si et seulement si $G$ est fini.",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "Le morphisme structural $P \\to e$ est quasi-compact si et seulement si $G$ est fini ou $X$ vide.",
+      "note": "The printed assertion omits the empty-space exception: when X is empty, the map is quasi-compact for every G. The next assertion explicitly accounts for this exception. TeX retains the omission."
+    },
+    {
+      "page": 220,
+      "where": "Exercice 2.17 c), introduction of the finite family of diagrams",
+      "scan": "une famille finie de diagramme commutatifs",
+      "tex": "une famille finie de diagramme commutatifs",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "une famille finie de diagrammes commutatifs",
+      "note": "The noun should be plural. TeX retains the printed « diagramme »."
+    },
+    {
+      "page": 220,
+      "where": "Exercice 2.17 c), criterion for E to be algebraic",
+      "scan": "à la condition de b)",
+      "tex": "à la conditions de b)",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "la conditions de b)",
+        "new": "la condition de b)"
+      },
+      "note": "The print has singular « condition » here."
+    },
+    {
+      "page": 220,
+      "where": "Exercice 2.17 c), final sentence",
+      "scan": "qu'il existe une sous-catégorie finale",
+      "tex": "qu'il existe un\nsous-catégorie finale",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "existe un\nsous-catégorie",
+        "new": "existe une\nsous-catégorie"
+      },
+      "note": "The printed article is « une »."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 216: 2/1; 217: 1/1; 218: 2/3; 219: 0/0; 220: 2/1."
+}

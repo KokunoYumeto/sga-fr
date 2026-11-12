@@ -1,0 +1,1 @@
+566: 0/0; 567: 0/0; 568: 1/3; 570: 0/1; 569: 0/0. Convention throughout: the print's underlined F (the sheaf representing the functor F) is set as the script ℱ in the TeX (p. 567: ℱ, ℱ(U), description de ℱ); this is acceptable, as the letters stay distinguished.

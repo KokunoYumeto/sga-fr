@@ -1,0 +1,107 @@
+{
+  "findings": [
+    {
+      "page": 231,
+      "where": "Corollaire 3.9, cohomology symbol after « et »",
+      "scan": "$H^{2c}_Y(\\ZZ/n\\ZZ)$, with plain H",
+      "tex": "$H^{2c}_Y(\\ZZ/n\\ZZ)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\HH^{2c}_Y(\\ZZ/n\\ZZ)$",
+      "note": "The object described as a sheaf should have the sheaf-denoting underline, as in the preceding display. The TeX keeps the printed plain H."
+    },
+    {
+      "page": 231,
+      "where": "Corollaire 3.9, end of statement",
+      "scan": "au faisceau constant $\\ZZ/n\\ZZ$).",
+      "tex": "$\\ZZ/n\\ZZ$).",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\ZZ/n\\ZZ$.",
+      "note": "The final closing parenthesis is unmatched: the parenthesis before « pour la topologie étale » has already closed. The TeX keeps it."
+    },
+    {
+      "page": 233,
+      "where": "Théorème 4.1, reference for the base-change morphisms",
+      "scan": "XII 4.1.2",
+      "tex": "\\sisi{\\emph{XII 4.1.2}}{\\hyperrefext[XII][XII.eq4.2]{4.2}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperrefext[XII][XII.eq4.2]{4.2}",
+      "note": "The printed reference is erroneous. The TeX faithfully records it in the first argument of \\sisi and explicitly corrects it to XII 4.2."
+    },
+    {
+      "page": 233,
+      "where": "Paragraph beginning « Remarquons »",
+      "scan": "Remarquons que le théorème de Grauert-Remmert",
+      "tex": "Remarquons que la théorème de Grauert-Remmert",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "que la théorème",
+        "new": "que le théorème"
+      },
+      "note": "The print reads « le », not « la »."
+    },
+    {
+      "page": 234,
+      "where": "Paragraph beginning « On peut évidemment supposer »",
+      "scan": "supposer $Y$, donc aussi $X$, de type fini",
+      "tex": "supposer $Y$, donc aussi $X$, de type fini",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "supposer $S$, donc aussi $X$, de type fini",
+      "note": "The base of the morphism is S, not Y. The TeX keeps the printed Y."
+    },
+    {
+      "page": 235,
+      "where": "Lemme 4.2, first sentence of the proof",
+      "scan": "$(\\bar{h},\\bar{j}_{!}\\bar{F})$",
+      "tex": "$(\\bar{h},\\bar{j}_{!}\\bar{F})$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$(h,\\bar{j}_{!}\\bar{F})$",
+      "note": "The proper morphism in the diagram is h; no morphism bar h is defined. The TeX keeps the printed bar."
+    },
+    {
+      "page": 235,
+      "where": "Second displayed formula in the proof, classical direct image",
+      "scan": "(R^{q}f_{\\cl\\ast})",
+      "tex": "(R^{q}f_{\\cl\\ast})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(R^{q}h_{\\cl\\ast})",
+      "note": "These vanishings concern h, not f. The TeX keeps the printed f."
+    },
+    {
+      "page": 235,
+      "where": "Second displayed formula in the proof, epsilon after the classical direct image",
+      "scan": "(R^{q}f_{\\cl\\ast})\\epsilon^{\\ast}(\\bar{j}_{!}\\bar{F})",
+      "tex": "(R^{q}f_{\\cl\\ast})_{\\epsilon}{}^{\\ast}(\\bar{j}_{!}\\bar{F})",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "(R^{q}f_{\\cl\\ast})_{\\epsilon}{}^{\\ast}",
+        "new": "(R^{q}f_{\\cl\\ast})\\epsilon^{\\ast}"
+      },
+      "note": "The scan has a separate pullback factor epsilon-star, not epsilon as a subscript on the preceding parenthesis. This edit retains the printed f."
+    },
+    {
+      "page": 235,
+      "where": "Bottom of page, after the final « et » in the supplied TeX",
+      "scan": "(R^{q}g_{\\cl\\ast})j_{!}F\\simeq(R^{q}\\bar{g}_{\\cl\\ast})\\bar{j}_{!}\\bar{F},",
+      "tex": "The supplied cut ends at « et » after the étale comparison.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The page also prints the classical comparison displayed here. The cut ends too early: p. 235 ends after this display and its comma. Include the following source lines in this page's cut rather than inserting duplicate text."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 231: 0/2; 232: 0/0; 233: 1/1; 234: 0/1; 235: 2/2 (marker counted as normal).\nMarker p. 235: extend the source cut beyond « et » through the final classical direct-image comparison and its trailing comma."
+}

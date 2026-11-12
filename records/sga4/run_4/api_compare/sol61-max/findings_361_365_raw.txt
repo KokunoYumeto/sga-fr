@@ -1,0 +1,86 @@
+{
+  "findings": [
+    {
+      "page": 362,
+      "where": "5.3.1, paragraphe après le diagramme (5.3.1.1)",
+      "scan": "en faisceau mous",
+      "tex": "en faisceau mous",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "en faisceaux mous",
+      "note": "Coquille d'accord du print, conservée par le TeX : « faisceaux » doit être au pluriel."
+    },
+    {
+      "page": 362,
+      "where": "5.3.1, faisceaux acycliques pour le foncteur p_*",
+      "scan": "en faisceaux sur $X_{\\cl}$ acycliques",
+      "tex": "en faisceaux\nsur $\\sisi{X}{\\bar{X}}_{\\cl}$ acycliques",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "en faisceaux sur $\\bar{X}_{\\cl}$ acycliques",
+      "note": "Le print omet la barre sur X : les faisceaux prolongés par j_{\\cl !} sont sur \\bar{X}_{\\cl}. Le TeX conserve cette lecture dans le premier argument de \\sisi et la corrige dans le second."
+    },
+    {
+      "page": 362,
+      "where": "5.3.1, égalité précédant 5.3.2",
+      "scan": "Rf_{\\cl}=Rp_{\\cl\\ast}j_{\\cl !}",
+      "tex": "Rf_{\\cl}=Rp_{\\cl \\ast} j_{\\cl !}{\\quoi}.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Rf_{\\cl !}=Rp_{\\cl \\ast}j_{\\cl !}",
+      "note": "L'indice ! manque au membre de gauche dans le print. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 363,
+      "where": "Variantes 5.3.4 (i), catégorie d'arrivée",
+      "scan": "D(S,\\epsilon^{\\ast}\\Aa)",
+      "tex": "D(S,\\epsilon^{\\ast}\\Aa)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "D(S_{\\cl},\\epsilon^{\\ast}\\Aa)",
+      "note": "Le print omet l'indice \\cl sur S : \\epsilon^{\\ast}\\Aa est sur le site transcendant. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 364,
+      "where": "Démonstration du théorème 5.3.6",
+      "scan": "Le foncteur",
+      "tex": "La foncteur",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "La foncteur",
+        "new": "Le foncteur"
+      },
+      "note": "Le print porte bien « Le », et non « La »."
+    },
+    {
+      "page": 364,
+      "where": "5.3.7, images directes à support propre",
+      "scan": "images directes à support propre",
+      "tex": "images directes\nsupport propre",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "images directes\nsupport propre",
+        "new": "images directes à\nsupport propre"
+      },
+      "note": "La préposition « à », présente dans le print après « directes », manque dans le TeX."
+    },
+    {
+      "page": 365,
+      "where": "5.4.1, définition du produit tensoriel externe",
+      "scan": "K\\mathop{\\boxtimes}_{\\Aa}L=p^{\\ast}\\underset{\\Aa}{\\otimes}q^{\\ast}L",
+      "tex": "L=p^{\\ast}\\sisi{}{K}\\underset{\\Aa}{\\otimes} q^{\\ast}L",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "K\\mathop{\\boxtimes}_{\\Aa}L=p^{\\ast}K\\underset{\\Aa}{\\otimes}q^{\\ast}L",
+      "note": "Le print omet K après p^{\\ast}. Le TeX enregistre cette omission dans le premier argument vide de \\sisi et la corrige dans le second."
+    }
+  ],
+  "coordinator": "361: 0/0; 362: 0/3; 363: 0/1; 364: 2/0; 365: 0/1 (normal/misprint)."
+}

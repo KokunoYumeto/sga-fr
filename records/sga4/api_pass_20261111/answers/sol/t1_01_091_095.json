@@ -1,0 +1,81 @@
+[
+ {
+  "page": 92,
+  "where": "Première phrase après (8.7.3.2)",
+  "scan": "ausi-inverse",
+  "tex": "aussi-inverse",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "quasi-inverse",
+  "note": "Le mot imprimé est fautif pour « quasi-inverse ». Le TeX le retouche en « aussi-inverse », sans rétablir le terme correct."
+ },
+ {
+  "page": 92,
+  "where": "Formule (8.7.4.2), après la flèche d'application",
+  "scan": "\\lim_i f(X_i), sans flèche de limite inductive",
+  "tex": "\\mathop{\\lim}_i f(X_i)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\varinjlim_i f(X_i)",
+  "note": "Il s'agit de la limite inductive du système f(X_i). La flèche manque dans l'imprimé; le TeX conserve cette omission."
+ },
+ {
+  "page": 93,
+  "where": "Proposition 8.7.5 b), première phrase",
+  "scan": "une équivalente de catégories",
+  "tex": "une équivalente de\ncatégories",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "une équivalence de catégories",
+  "note": "Coquille « équivalente » pour « équivalence », conservée par le TeX."
+ },
+ {
+  "page": 93,
+  "where": "Fin de la proposition 8.7.5, parenthèse explicitant la commutation aux limites inductives finies",
+  "scan": "à un objet de C",
+  "tex": "à une objet\nde $C$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "une objet",
+   "new": "un objet"
+  },
+  "note": "L'imprimé porte bien « un objet », sans e."
+ },
+ {
+  "page": 93,
+  "where": "Démonstration de 8.7.5 a), dernière phrase",
+  "scan": "deux ind-objets quelconques de E",
+  "tex": "deux ind-objets quelconques de $E$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "deux ind-objets quelconques de $C$",
+  "note": "Ces ind-objets sont les arguments de \\bar{f}:\\Ind(C)\\longrightarrow E. Il faut donc C, et non E. Le TeX conserve la lettre fautive de l'imprimé."
+ },
+ {
+  "page": 94,
+  "where": "Première formule, cible de u_j",
+  "scan": "\\Hom(\\bar{f}(\\underline{X}_j),\\underline{Y})",
+  "tex": "\\Hom(\\bar{f}(𝒳_j),𝒴)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Hom(\\bar{f}(𝒳_j),\\bar{f}(𝒴))",
+  "note": "Le second argument à l'arrivée doit être l'image de l'ind-objet par \\bar{f}, comme dans la définition de u à la page précédente. Le TeX conserve l'omission de \\bar{f} dans l'imprimé."
+ },
+ {
+  "page": 95,
+  "where": "Corollaire 8.7.6, phrase décrivant l'image essentielle",
+  "scan": "l'image essentielle du foncteur \\bar{f}",
+  "tex": "l'image essentielle du foncteur $\\bar{f}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "l'image essentielle du foncteur $\\bar{g}$",
+  "note": "Le foncteur défini en (8.7.6.1) est \\bar{g}. L'imprimé porte ici f pour g; le TeX conserve cette coquille."
+ }
+]

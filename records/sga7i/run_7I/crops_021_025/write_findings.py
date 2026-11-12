@@ -1,0 +1,104 @@
+import json
+import pathlib
+
+RUN = pathlib.Path(r"C:\Users\user\Documents\sga_scan_check_20261105\run_7I")
+B = RUN / "b021_025"
+OUT = RUN / "findings_021_025.json"
+
+F = [
+    {
+        "page": 21,
+        "where": "Théorème 6.1, 'Pour S' convenable, A_η' a réduction stable'",
+        "scan": "A_{η'} a réduction stable (a prime typed after the subscript η; no comma before 'a')",
+        "tex": "$A_{\\eta}$ , \\underline{a réduction stable,}",
+        "kind": "symbol",
+        "confidence": "high",
+        "fix": {"old": "$A_{\\eta}$ , \\underline{a réduction", "new": "$A_{\\eta'}$ \\underline{a réduction"},
+        "note": "The mark after the subscript η is a prime, not a comma: in the PDF scan and in the DjVu witness its "
+                "bitmap is the straight wedge of the two primes of 𝒜°_{S's'} on the same line, while the comma after "
+                "'convenable' has the hooked tail; it stands at comma height only because a prime typed at subscript "
+                "level does. p. 20 introduces A_{η'} for the abelian variety deduced over η', and the verb 'a' follows "
+                "its subject without a comma. One edit: adds the prime and removes the comma that was read into it.",
+    },
+    {
+        "page": 21,
+        "where": "diagram (6.2.1), end of the bottom row",
+        "scan": "a full stop typed far to the right of Im(T-1)^r, on the baseline of the bottom row",
+        "tex": "no full stop (the STRUCTURE comment records it; the tikzcd omits it)",
+        "kind": "punctuation",
+        "confidence": "high",
+        "fix": {"old": "\\end{tikzcd}", "new": "\\end{tikzcd}\\quad ."},
+        "note": "Sentence-final full stop of the display, also in the DjVu witness. Placed after the tikzcd as in the "
+                "SGA 7 II diagram fixes.",
+    },
+    {
+        "page": 22,
+        "where": "6.5, 'Rappelons que V_ℓ(A*) et V_ℓ(A) (donc V_ℓ(A*)^I et V_ℓ(A)_I sont en dualité ...'",
+        "scan": "(donc V_ℓ(A*)^I et V_ℓ(A)_I sont en dualité à valeurs dans Q_ℓ(1).",
+        "tex": "$V_{\\ell}(A)_{I}$ sont en dualité",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "$V_{\\ell}(A)_{I}$) sont en dualité",
+        "note": "Unbalanced parenthesis in the print: '(donc ...' is never closed; it closes after V_ℓ(A)_I, before the "
+                "verb. Same in the DjVu witness. The TeX keeps the printed reading. 'corrected' replaces the 'tex' "
+                "substring.",
+    },
+    {
+        "page": 23,
+        "where": "6.7, 'et (𝒜_i)_ℓ est constant sur S_i - D'",
+        "scan": "constant sur S_i - D . (no index on D)",
+        "tex": "$S_i - D$",
+        "kind": "misprint_in_print",
+        "confidence": "medium",
+        "fix": None,
+        "corrected": "$S_i - D_i$",
+        "note": "Missing index: in 1.3, whose notation is taken up here, D_i ⊂ S_i is the divisor π = 0 and the "
+                "sheaves live on S_i - D_i; the next sentence has π_1(S_i - D_i , η̄). The spot is clean in the PDF "
+                "scan and the DjVu witness has no index either. The TeX keeps the printed reading. 'corrected' "
+                "replaces the 'tex' substring.",
+    },
+    {
+        "page": 23,
+        "where": "6.7, display after 'On a alors par (1.3.1) :', last term",
+        "scan": "T_ℓ(A)^I = T_ℓ(A^{I_i}) (the exponent I_i typed inside the parenthesis)",
+        "tex": "T_\\ell(A^{I_i})",
+        "kind": "misprint_in_print",
+        "confidence": "low",
+        "fix": None,
+        "corrected": "T_\\ell(A)^{I_i}",
+        "note": "The display pairs T_ℓ(A)_I = T_ℓ(A)_{I_i} with T_ℓ(A)^I = T_ℓ(A)^{I_i} (invariants of the Tate module "
+                "under I_i); the closing parenthesis is typed after the exponent. Low because T_ℓ(A^{I_i}) can be "
+                "read as the Tate module of the I_i-invariant points, which is the same group. Same in the DjVu "
+                "witness. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring.",
+    },
+    {
+        "page": 24,
+        "where": "Bibliographie [3], title of the Deligne-Mumford paper",
+        "scan": "The irreductibility of the space of curves of a given genus.",
+        "tex": "irreductibility",
+        "kind": "misprint_in_print",
+        "confidence": "high",
+        "fix": None,
+        "corrected": "irreducibility",
+        "note": "Spelling slip of the typescript (French 'irréductibilité' carried into the English title). The TeX "
+                "keeps the printed reading.",
+    },
+]
+
+ok = True
+for f in F:
+    t = (B / ("page_%03d.tex" % f["page"])).read_text(encoding="utf-8")
+    if f["fix"]:
+        n = t.count(f["fix"]["old"])
+        if n != 1:
+            ok = False
+        print(f["page"], "fix old count", n, repr(f["fix"]["old"]))
+    if f["kind"] == "misprint_in_print":
+        n = t.count(f["tex"])
+        if n != 1:
+            ok = False
+        print(f["page"], "tex count", n, repr(f["tex"]))
+print("ALL OK" if ok else "PROBLEM")
+OUT.write_text(json.dumps(F, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+print("wrote", OUT, len(F))

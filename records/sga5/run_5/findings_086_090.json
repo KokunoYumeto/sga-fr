@@ -1,0 +1,541 @@
+[
+ {
+  "page": 86,
+  "where": "top of the page",
+  "scan": "p. 86 begins with the commutative square f_*RHom(E,f^!Q) ⊗^L_S RHom(P',Q') --b--> f'_*RHom(E ⊗^L_S P',f^!Q ⊗^L_S Q'); p. 85 ends 'On doit prouver la commutativité du carré' (blank below)",
+  "tex": "the folio-86 marker (diplomatic s5.tex line 2321) splits the opening of the square's display: '\\[' and '\\begin{tikzcd}[' end page_085.tex, 'column sep=large,row sep=large]' opens page_086.tex",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 86 really begins at the '\\[' of s5.tex line 2319 that opens the square. Exact fix: python -I move_marker.py 5 86 '\\[' --before (the nearest '\\[' before the marker; simulated in memory on both layers: the marker then stands between 'On doit prouver la commutativité du carré' and '\\[', the option list '\\begin{tikzcd}[' / 'column sep=large,row sep=large]' stays on two lines as now). Text not moved. Batch 081_085 may report the same move from the foot of p. 85: apply once."
+ },
+ {
+  "page": 86,
+  "where": "first square, label of the left vertical arrow 'a ⊗^L_S RHom(P',Q')'",
+  "scan": "the label stands to the right of the arrow (the a against the shaft)",
+  "tex": "\\arrow[d,\"{a\\overset{\\mathrm{L}}{\\otimes}_S\\uRHom(P',Q')}\"'] (the swap mark sets it to the left)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uRHom(P',Q')}\"']",
+   "new": "\\uRHom(P',Q')}\"]"
+  },
+  "note": "tikz-cd sets an unswapped label to the right of a downward arrow. b (above) and a' (right) are right."
+ },
+ {
+  "page": 86,
+  "where": "first square, label of the bottom arrow RHom(f_!E,Q) ⊗ RHom(P',Q') -> RHom(f_!E ⊗ P',Q ⊗ Q')",
+  "scan": "2.2.4 above the arrow",
+  "tex": "\\arrow[r,\"2.2.4\"'] (below the arrow)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"2.2.4\"']",
+   "new": "\\arrow[r,\"2.2.4\"]"
+  },
+  "note": "tikz-cd sets a swapped label below a rightward arrow."
+ },
+ {
+  "page": 86,
+  "where": "'de base f_!E ⊗^L_S P' --c--> f'_!(E ⊗^L_S P')'",
+  "scan": "c above the arrow, ≃ below it: a typed tilde over a separate typed bar",
+  "tex": "\\xrightarrow[\\sim]{c} (a bare tilde below the arrow)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow[\\sim]{c}",
+   "new": "\\xrightarrow[\\simeq]{c}"
+  },
+  "note": "The sign under the arrow is the print's ≃ (tilde over a bar), as in 'f'_!(f^!Q ⊗ Q') ≃ f_!f^!Q ⊗ Q'' lower on the page, which the TeX gives as \\simeq. The arrow with a bare tilde above it at the foot of the page (\\xrightarrow{\\sim}) is right."
+ },
+ {
+  "page": 86,
+  "where": "'f^!Q ⊗^L_S Q' --d--> f'^!(Q ⊗^L_S Q')'",
+  "scan": "d above the arrow, ≃ (tilde over a bar) below it",
+  "tex": "\\xrightarrow[\\sim]{d}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow[\\sim]{d}",
+   "new": "\\xrightarrow[\\simeq]{d}"
+  },
+  "note": "As the arrow c."
+ },
+ {
+  "page": 86,
+  "where": "(*), last derived tensor of the target, 'f'_!(f^!Q ⊗_S Q'))'",
+  "scan": "a typed digit 1 above the ⊗ instead of L (sloping flag, as the 1 of 3.1.9.6; the l of 'la' has a flat serif); the three other tensors of (*) carry the L",
+  "tex": "f^!Q\\overset{\\mathrm{L}}{\\otimes}_SQ')),",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "f^!Q\\overset{\\mathrm{L}}{\\otimes}_SQ')),",
+   "new": "f^!Q\\overset{1}{\\otimes}_SQ')),"
+  },
+  "corrected": "f^!Q\\overset{\\mathrm{L}}{\\otimes}_SQ')),",
+  "note": "A typing slip for the derived-tensor L; the TeX silently corrects. The fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 86,
+  "where": "second square, label of the left vertical arrow 'ch. base ≃'",
+  "scan": "ch. base ≃ (a typed tilde over a typed bar)",
+  "tex": "\\text{ch. base}\\ \\sim",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{ch. base}\\ \\sim",
+   "new": "\\text{ch. base}\\ \\simeq"
+  },
+  "note": "As the arrows c and d. The label's place (left of the arrow) is right."
+ },
+ {
+  "page": 86,
+  "where": "second square, label of the bottom arrow f_!f^!Q ⊗ Q' -> Q ⊗ Q'",
+  "scan": "adj ⊗ 1 above the arrow",
+  "tex": "\\arrow[r,\"{\\mathrm{adj}\\otimes 1}\"'] (below the arrow)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"{\\mathrm{adj}\\otimes 1}\"']",
+   "new": "\\arrow[r,\"{\\mathrm{adj}\\otimes 1}\"]"
+  },
+  "note": "tikz-cd sets a swapped label below a rightward arrow. f'_!d (above) and adj (right) are right."
+ },
+ {
+  "page": 87,
+  "where": "top of the page",
+  "scan": "p. 87 begins with the square RHom(f_!E,f_!f^!Q) ⊗^L_S RHom(P',Q') -> RHom(f_!E ⊗^L_S P',f_!f^!Q ⊗^L_S Q'); p. 86 ends 'jointes à la commutativité du carré' (blank below)",
+  "tex": "the folio-87 marker (diplomatic s5.tex line 2364) splits the square's option list: '\\[' and '\\begin{tikzcd}[column sep=' end page_086.tex, 'large,row sep=large]' opens page_087.tex",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 87 really begins at the '\\[' of s5.tex line 2362 that opens the square. Exact fix: python -I move_marker.py 5 87 '\\[' --before (the nearest '\\[' before the marker; simulated in memory on both layers: the marker then stands between 'jointes à la commutativité du carré' and '\\[', the option list stays split after 'column sep=' as now). Text not moved."
+ },
+ {
+  "page": 87,
+  "where": "first square, end of the bottom row 'RHom(f_!E ⊗^L_S P',Q ⊗^L_S Q')'",
+  "scan": "no punctuation after the square (clean paper to the margin)",
+  "tex": "Q\\overset{\\mathrm{L}}{\\otimes}_SQ'), (a comma added)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "_SQ'),\n\\end{tikzcd}\n\\]\ndéfini",
+   "new": "_SQ')\n\\end{tikzcd}\n\\]\ndéfini"
+  },
+  "note": "Punctuation added at the end of a display (the square on p. 86 does print its comma)."
+ },
+ {
+  "page": 87,
+  "where": "'il suffit de prouver la compatibilité suivante :'",
+  "scan": "a colon after 'suivante'",
+  "tex": "la compatibilité suivante. (a full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "la compatibilité suivante.",
+   "new": "la compatibilité suivante :"
+  },
+  "note": ""
+ },
+ {
+  "page": 87,
+  "where": "label of Lemme 2.6.3",
+  "scan": "'Lemme 2.6.3 - Soient ...': 'Lemme' underlined, then the number and a typewriter dash, the statement run in",
+  "tex": "\\subsection*{Lemme 2.6.3} (no dash)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{Lemme 2.6.3}",
+   "new": "\\subsection*{Lemme 2.6.3 -}"
+  },
+  "note": "Run-in label of Exposé III with a dash, as the applied '\\subsection*{Proposition 1.7.4 -}'. The run-in and the label's underline are the accepted \\subsection* setting."
+ },
+ {
+  "page": 87,
+  "where": "statement of 2.6.3, 'Soient f, f', E, F, P', Q' comme en 2.6.1 . On a alors un carré commutatif'",
+  "scan": "underlined: 'Soient', 'comme en 2.6.1', 'On a alors un carré' and 'commutatif'; the letters f, f', E, F, P', Q' and the full stop are not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $f$, $f'$, $E$, $F$, $P'$, $Q'$ comme en 2.6.1. On a alors un carré commutatif",
+   "new": "\\emph{Soient} $f$, $f'$, $E$, $F$, $P'$, $Q'$ \\emph{comme en 2.6.1}. \\emph{On a alors un carré commutatif}"
+  },
+  "note": "The whole statement of the lemma (down to 'changement de base' before its last display) is underlined word by word, the formulas left plain, as the statement of 1.7.4 (p. 79); \\emph is this file's command for the print's underline in Exposé III. Five more edits below."
+ },
+ {
+  "page": 87,
+  "where": "square of 2.6.3, label of the bottom arrow (3)",
+  "scan": "(3) above the arrow",
+  "tex": "\\arrow[r,\"(3)\"'] (below the arrow)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"(3)\"']",
+   "new": "\\arrow[r,\"(3)\"]"
+  },
+  "note": "tikz-cd sets a swapped label below a rightward arrow. (1) above, (2) left and (4) right are right."
+ },
+ {
+  "page": 87,
+  "where": "statement of 2.6.3, 'où (1) est composé de l'isomorphisme de changement de base'",
+  "scan": "'où' and 'est composé de l'isomorphisme de changement de base' underlined; '(1)' not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où (1) est composé de l'isomorphisme de changement de base",
+   "new": "\\emph{où} (1) \\emph{est composé de l'isomorphisme de changement de base}"
+  },
+  "note": "As the opening of the statement."
+ },
+ {
+  "page": 87,
+  "where": "statement of 2.6.3, 'et f'_*(2.2.4), (2) est déduit de la flèche canonique'",
+  "scan": "'et' and 'est déduit de la / flèche canonique' (across the line break) underlined; 'f'_*(2.2.4), (2)' not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et $f'_*(2.2.4)$, (2) est déduit de la flèche canonique",
+   "new": "\\emph{et} $f'_*(2.2.4)$, (2) \\emph{est déduit de la flèche canonique}"
+  },
+  "note": ""
+ },
+ {
+  "page": 87,
+  "where": "statement of 2.6.3, 'SGA 4 XVIII 3.1.9.5) par application de'",
+  "scan": "'SGA 4 XVIII 3.1.9.5)' and 'par applica-/tion de' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "SGA~4~XVIII~3.1.9.5) par application de",
+   "new": "\\emph{SGA~4~XVIII~3.1.9.5) par application de}"
+  },
+  "note": "Apply before the misprint fix that follows (missing opening parenthesis): its old is taken from the text after this edit."
+ },
+ {
+  "page": 87,
+  "where": "statement of 2.6.3, 'RHom(f_!E,f_!F)   SGA 4 XVIII 3.1.9.5) par application'",
+  "scan": "no opening parenthesis before SGA (clean paper between the ) of RHom(f_!E,f_!F) and the S); the closing one is printed",
+  "tex": "(SGA~4~XVIII~3.1.9.5) (the parenthesis supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\emph{SGA",
+   "new": "\\emph{SGA"
+  },
+  "corrected": "(\\emph{SGA",
+  "note": "The TeX silently corrects; the fix restores the printed reading (diplomatic layer only). Its old is the text after the underline edit just above (apply that one first)."
+ },
+ {
+  "page": 87,
+  "where": "statement of 2.6.3, ', (3) est donné par 2.2.4 , enfin (4) est composé de la flèche canonique'",
+  "scan": "'est donné par', 'enfin' and 'est composé de la / flèche canonique' (across the line break) underlined; '(3)', '2.2.4 ,' and '(4)' not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": ", (3) est donné par 2.2.4, enfin (4) est composé de la flèche canonique",
+   "new": ", (3) \\emph{est donné par} 2.2.4, \\emph{enfin} (4) \\emph{est composé de la flèche canonique}"
+  },
+  "note": ""
+ },
+ {
+  "page": 87,
+  "where": "statement of 2.6.3, '(loc. cit.) et des flèches définies par les isomorphismes de changement de base'",
+  "scan": "the whole line underlined, '(loc. cit.)' included",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(loc. cit.) et des flèches définies par les isomorphismes de changement de base",
+   "new": "\\emph{(loc. cit.) et des flèches définies par les isomorphismes de changement de base}"
+  },
+  "note": "The last underlined words of the statement; the proof ('Revenant à la définition ...') is plain."
+ },
+ {
+  "page": 87,
+  "where": "'a) Cas où f est une immersion ouverte.'",
+  "scan": "typed plain, not underlined (clean baseline under the whole line)",
+  "tex": "\\emph{a) Cas où $f$ est une immersion ouverte.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{a) Cas où $f$ est une immersion ouverte.}",
+   "new": "a) Cas où $f$ est une immersion ouverte."
+  },
+  "note": "\\emph is this file's command for the print's underline; as 'b) Cas où f est un morphisme propre.' (p. 88)."
+ },
+ {
+  "page": 88,
+  "where": "top of the page",
+  "scan": "p. 88 begins 'le carré que l'on obtient est commutatif. Or les sommets de ce carré sont nuls en dehors de X''; p. 87 ends with the display (f_!E ⊗ P') ⊗ RHom(f_!E ⊗ P' , f_!F ⊗ Q') -> f_!F ⊗ Q' , and the footnote",
+  "tex": "'le carré que l'on obtient est commutatif. Or les sommets de ce carré sont nuls en' is s5.tex line 2406, the last line of page_087.tex; the folio-88 marker (line 2407) follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 88 really begins at 'le carré que' (s5.tex line 2406). Exact fix: python -I move_marker.py 5 88 'le carré que' --before (single quotes; the anchor occurs once in s5.tex; simulated in memory on both layers: the marker then stands between the '\\]' of the evaluation display and 'le carré que'). Text not moved."
+ },
+ {
+  "page": 88,
+  "where": "'b) Cas où f est un morphisme propre.'",
+  "scan": "typed plain, not underlined",
+  "tex": "\\emph{b) Cas où $f$ est un morphisme propre.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{b) Cas où $f$ est un morphisme propre.}",
+   "new": "b) Cas où $f$ est un morphisme propre."
+  },
+  "note": "As a) on p. 87."
+ },
+ {
+  "page": 88,
+  "where": "last square, label of the bottom arrow (1')",
+  "scan": "(1') above the arrow",
+  "tex": "\\arrow[r,\"(1')\"'] (below the arrow)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"(1')\"']",
+   "new": "\\arrow[r,\"(1')\"]"
+  },
+  "note": "tikz-cd sets a swapped label below a rightward arrow. (3) above the top arrow is right."
+ },
+ {
+  "page": 88,
+  "where": "'(prendre u : f*f_*E -> f_*E donné par l'identité de f*f_*E , et v : f -> f_*F donné par l'identité de f_*F )'",
+  "scan": "v : f ----> f_*F, a small typed f (as the f of f_*F), not F",
+  "tex": "$v:f\\to f_*F$ (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$v:F\\to f_*F$",
+  "note": "v is the f-arrow of type 1 from F to f_*F given by the identity of f_*F (as u goes from f^*f_*E to f_*E). The TeX keeps the printed reading; the corrected layer already has v:F -> f_*F."
+ },
+ {
+  "page": 89,
+  "where": "heading of § 3, top of the page",
+  "scan": "'3. Correspondances cohomologiques.': the number 3. and a full stop (the rule runs from 3. to cohomologiques)",
+  "tex": "\\section*{Correspondances cohomologiques} (no number, no full stop)",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{Correspondances cohomologiques}",
+   "new": "\\section*{3. Correspondances cohomologiques.}"
+  },
+  "note": "As the applied heading of § 1, '\\section*{1. Notations et rappels de formules de Künneth.}' (p. 76). The underline is the accepted \\section* setting."
+ },
+ {
+  "page": 89,
+  "where": "number of 3.1, '3.L   Soient, pour i : 1,2, ...'",
+  "scan": "'3.L': a capital L (stem with a right foot and upturned serif, as the L of L_1, L_2), not the digit 1 of '1,2' in the same line",
+  "tex": "\\subsection*{3.1}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{3.1}",
+   "new": "\\subsection*{3.L}"
+  },
+  "corrected": "\\subsection*{3.1}",
+  "note": "A typing slip for 3.1; the TeX silently corrects. The fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 89,
+  "where": "3.1, 'Soient, pour i : 1,2, X_i un S-schéma'",
+  "scan": "'i : 1,2': a typed colon (two round dots), not the equals sign of 'X = X_1 x_S X_2' in the next line",
+  "tex": "pour $i=1,2$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "pour $i=1,2$",
+   "new": "pour $i:1,2$"
+  },
+  "corrected": "pour $i=1,2$",
+  "note": "The TeX silently corrects; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 89,
+  "where": "3.1, 'p_i : X -> X_i et q_i : X_i -> S les projections canoniques :'",
+  "scan": "the word 'et' between the two maps, no comma",
+  "tex": "p_i:X\\longrightarrow X_i, \\qquad q_i:X_i\\longrightarrow S (a comma for 'et')",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "X_i,\n\\qquad\nq_i",
+   "new": "X_i\n\\qquad\\text{et}\\qquad\nq_i"
+  },
+  "note": "The print runs the three formulas into the text (the TeX's display is layout, not reported); the comma after X = X_1 x_S X_2 is printed."
+ },
+ {
+  "page": 89,
+  "where": "3.1, diagram, labels of the arrows X -> X_1 and X -> X_2",
+  "scan": "P_1, P_2: capital P (bowl at cap height, stem ending on the baseline), against the small p_i (with descender) of the line above",
+  "tex": "\\arrow[dl,\"P_1\"'] \\arrow[dr,\"P_2\"] (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\arrow[dl,\"p_1\"'] \\arrow[dr,\"p_2\"]",
+  "note": "The projections are p_1, p_2. The TeX keeps the printed reading; the corrected layer already has p_1, p_2 (Codex SGA-SRC-001849, FIXLOG_5_CURRENT). The bottom vertex is a typed X overwritten by a hand-drawn S, the typist's correction: the TeX's S is right."
+ },
+ {
+  "page": 89,
+  "where": "3.1, end of the diagram of the projections",
+  "scan": "a typed full stop to the right of the diagram, on the line of its bottom vertex S (the size and shape of the full stops after the displays of the page)",
+  "tex": "no punctuation after the diagram",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "& S &\n\\end{tikzcd}",
+   "new": "& S & .\n\\end{tikzcd}"
+  },
+  "note": "Set in the empty cell right of S: the file appends the end punctuation of its diagrams to their last cell (the comma of the first square of p. 86)."
+ },
+ {
+  "page": 89,
+  "where": "every derived tensor product of p. 89 (6 signs), first the (2.2.4) display 'DL_1 ⊗^L_S L_2'",
+  "scan": "a plain upright typed capital L standing above the hand-drawn ⊗ (as on pp. 86-88)",
+  "tex": "\\overset{\\mathbf L}{\\otimes} (a bold L): s5.tex line 2454 'DL_1\\overset{\\mathbf L}{\\otimes}_S L_2', line 2461 'q_1^!A_S\\overset{\\mathbf L}{\\otimes}_S L_2', line 2473 'L_1^\\vee\\overset{\\mathbf L}{\\otimes}L_2'",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription from § 3 on, not listed per occurrence: s5.tex writes \\overset{\\mathbf L}{\\otimes} 66 times inside Exposé III (lines 2454-2964, pp. 89-100; the six of p. 89 at lines 2454, 2456, 2457, 2461, 2466, 2473, all printed with the plain L). The Exposé III form is \\overset{\\mathrm{L}}{\\otimes} (pp. 86-88): one scoped pass '\\overset{\\mathbf L}{\\otimes}' -> '\\overset{\\mathrm{L}}{\\otimes}' over lines 1929-4369 (subscripts stay). See the message."
+ },
+ {
+  "page": 89,
+  "where": "'Les éléments de Hom_S(L_1,L_2) s'appelleront correspondances cohomologiques de L_1 à L_2 .'",
+  "scan": "'correspondances cohomologiques de' and 'à' underlined; L_1 and L_2 not",
+  "tex": "\\emph{correspondances cohomologiques de $L_1$ à $L_2$}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{correspondances cohomologiques de $L_1$ à $L_2$}",
+   "new": "\\emph{correspondances cohomologiques de} $L_1$ \\emph{à} $L_2$"
+  },
+  "note": "The rule breaks at each formula, as in the statement of 2.6.3 (p. 87)."
+ },
+ {
+  "page": 89,
+  "where": "'Au lieu de \"correspondance cohomologique de A_{X_1} à A_{X_2}\" nous dirons simplement'",
+  "scan": "no comma after the closing quotes (clean paper before 'nous')",
+  "tex": "$A_{X_2}$'', nous dirons",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$A_{X_2}$'', nous dirons",
+   "new": "$A_{X_2}$'' nous dirons"
+  },
+  "note": ""
+ },
+ {
+  "page": 89,
+  "where": "'nous dirons simplement \"correspondance cohomologique de X_1 à X_2\" (sous-entendu : à coefficients dans A)'",
+  "scan": "the phrase in typewriter double quotes; inside, 'correspondance cohomologique de' and 'à' underlined, X_1 and X_2 not",
+  "tex": "simplement \\emph{correspondance cohomologique de $X_1$ à $X_2$} (no quotes; X_1, X_2 inside the emphasis)",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "simplement \\emph{correspondance cohomologique de $X_1$ à $X_2$} (sous",
+   "new": "simplement ``\\emph{correspondance cohomologique de} $X_1$ \\emph{à} $X_2$'' (sous"
+  },
+  "note": "The quotes in the file's ``...'' form (as the first phrase of the sentence); the underline extent in the same edit (adjacent)."
+ },
+ {
+  "page": 89,
+  "where": "'p_2^!L_2 ≃ p_2^*L_2(r_1)[2r_1] , donc' (printed at the top of p. 90; in page_089.tex as the files stand)",
+  "scan": "a long straight bar with a typed tilde above it, no arrowhead at either end (clean paper at both ends)",
+  "tex": "p_2^!L_2\\xrightarrow{\\sim}p_2^*L_2(r_1)[2r_1]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "p_2^!L_2\\xrightarrow{\\sim}p_2^*L_2(r_1)[2r_1]",
+   "new": "p_2^!L_2\\simeq p_2^*L_2(r_1)[2r_1]"
+  },
+  "note": "The print's ≃ (tilde over a bar, no head) drawn long, as the logged \\simeq fixes of pp. 10 and 16-20; the isomorphisms of 3.1 with a head are \\xrightarrow{\\sim} and right. Filed under p. 89; its old stays unique on p. 90 after the folio-90 marker move."
+ },
+ {
+  "page": 90,
+  "where": "top of the page",
+  "scan": "p. 90 begins with the display 'p_2^!L_2 ≃ p_2^*L_2(r_1)[2r_1] , donc'; p. 89 ends 'et par le théorème de dualité (SGA 4 XVIII 3.2.5) , on a' (blank below)",
+  "tex": "the display '\\[ p_2^!L_2\\xrightarrow{\\sim}p_2^*L_2(r_1)[2r_1], \\]' ends page_089.tex (s5.tex lines 2485-2487); the folio-90 marker (line 2488) follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 90 really begins at the '\\[' of s5.tex line 2485. Exact fix: python -I move_marker.py 5 90 '\\[' --before (the nearest '\\[' before the marker; simulated in memory on both layers: the marker then stands between '..., on a' and '\\['). Text not moved."
+ },
+ {
+  "page": 90,
+  "where": "3.2, '(on dit parfois que c est une correspondance entre X_1 et X_2 )'",
+  "scan": "'correspondance' underlined",
+  "tex": "une correspondance entre (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "une correspondance entre",
+   "new": "une \\emph{correspondance} entre"
+  },
+  "note": ""
+ },
+ {
+  "page": 90,
+  "where": "3.2, 'Nous appellerons correspondances cohomologiques de L_1 à L_2 à support dans c'",
+  "scan": "only 'correspondances cohomolo-/giques' (across the line break) and 'support dans' underlined; 'de', both 'à', L_1, L_2 and c not",
+  "tex": "\\emph{correspondances cohomologiques de $L_1$ à $L_2$ à support dans $c$}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{correspondances cohomologiques de $L_1$ à $L_2$ à support dans $c$}",
+   "new": "\\emph{correspondances cohomologiques} de $L_1$ à $L_2$ à \\emph{support dans} $c$"
+  },
+  "note": ""
+ },
+ {
+  "page": 90,
+  "where": "3.2, '(= Hom(c_1^*L_1,c_2^!L_2) si c est propre)'",
+  "scan": "'propre' underlined",
+  "tex": "\\text{ est propre} (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{ est propre}",
+   "new": "\\text{ est \\emph{propre}}"
+  },
+  "note": "The print runs the group and this parenthesis into the text (the TeX's display is layout, not reported)."
+ },
+ {
+  "page": 90,
+  "where": "'Exemples : a) Supposons c propre'",
+  "scan": "'Exemples' underlined, then a colon (not underlined)",
+  "tex": "\\emph{Exemples.} (a full stop inside the emphasis)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Exemples.}",
+   "new": "\\emph{Exemples} :"
+  },
+  "note": "Label in the print's form, as the global '\\emph{Preuve} :'."
+ },
+ {
+  "page": 90,
+  "where": "3.2 a), 'une correspondance cohomologique de A_{X_1} à A_{X_2}(-N)[2N]'",
+  "scan": "[2N] with no minus sign (clean paper inside the bracket; the display above prints [-2N])",
+  "tex": "$A_{X_2}(-N)[2N]$ (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$A_{X_2}(-N)[-2N]$",
+  "note": "By adjunction the trace Tr_{c_2} : c_{2!}A_C -> A_{X_2}(-N)[-2N] gives A_C -> c_2^!A_{X_2}(-N)[-2N]: a correspondence to A_{X_2}(-N)[-2N] (its class lies in H^{-2N}, 3.2.4). The TeX keeps the printed reading; the corrected layer already has [-2N] (Codex SGA-SRC-001850, FIXLOG_5_CURRENT)."
+ },
+ {
+  "page": 90,
+  "where": "foot of the page",
+  "scan": "p. 90 ends '... de A_{X_1} à A_{X_2}(-N)[2N]'; p. 91 begins 'à support dans C , qu'on appellera classe de (c,N)'",
+  "tex": "the 'à' at the end of s5.tex line 2534, the last line of page_090.tex, before the folio-91 marker (line 2535)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 91 really begins at that 'à'. Exact fix: python -I move_marker.py 5 91 'à' --before (the nearest 'à' before the marker; simulated in memory on both layers: the marker then splits line 2534 after '[2N]$ ', and 'à' opens p. 91 on its own line before 'support dans $C$'). Text not moved. Batch 091_095 may report the same move from the top of p. 91: apply once."
+ }
+]

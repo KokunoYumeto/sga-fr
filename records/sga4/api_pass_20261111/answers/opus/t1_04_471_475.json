@@ -1,0 +1,100 @@
+[
+ {
+  "page": "474",
+  "where": "9.7.1, last line of the page",
+  "scan": "Il est alors immédiat que la catégorie C se reconstitue",
+  "tex": "ll est alors immédiat",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "ll est alors immédiat",
+   "new": "Il est alors immédiat"
+  },
+  "note": "The TeX begins the word with two small l's instead of capital I + l (\"Il\")."
+ },
+ {
+  "page": "474",
+  "where": "9.7.1, first display",
+  "scan": "Ob C'∩Ob C\" = ∅",
+  "tex": "\\Ob C'\\cap \\Ob C''=\\phi",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\Ob C'\\cap \\Ob C''=\\phi",
+   "new": "\\Ob C'\\cap \\Ob C''=\\emptyset"
+  },
+  "note": "This is the empty set. The TeX's \\phi (the Greek letter, also used for the map φ of 9.5.12 b) and 9.6.5) is not right here, unless macros.tex redefines \\phi."
+ },
+ {
+  "page": "474",
+  "where": "9.7.1, second display",
+  "scan": "Hom(X\",X') = ∅",
+  "tex": "\\Hom(X'',X')=\\phi",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\Hom(X'',X')=\\phi",
+   "new": "\\Hom(X'',X')=\\emptyset"
+  },
+  "note": "The empty set is set as \\phi; see the previous finding."
+ },
+ {
+  "page": "474",
+  "where": "9.7.1, third display",
+  "scan": "Hom(v(A\"),u(A')) = ∅",
+  "tex": "u(A'))=\\phi",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "u(A'))=\\phi",
+   "new": "u(A'))=\\emptyset"
+  },
+  "note": "The empty set is set as \\phi."
+ },
+ {
+  "page": "475",
+  "where": "(9.7.2.2)",
+  "scan": "Hom(q,p) = ∅",
+  "tex": "\\Hom(q,p)=\\phi",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\Hom(q,p)=\\phi",
+   "new": "\\Hom(q,p)=\\emptyset"
+  },
+  "note": "The empty set is set as \\phi."
+ },
+ {
+  "page": "471",
+  "where": "9.5.10 c) (ii)",
+  "scan": "(ou encore, il admet un adjoint à gauche (9.5.10.2).",
+  "tex": "(ou encore, il\nadmet un adjoint à gauche \\eqhyperref[IV.eq9.5.10.2]{9.5.10.2}.",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "(ou encore, il admet un adjoint à gauche \\eqhyperref[IV.eq9.5.10.2]{9.5.10.2}).",
+  "note": "The parenthesis opened at \"(ou encore\" is never closed in the print. The TeX keeps this."
+ },
+ {
+  "page": "473",
+  "where": "9.5.12 b)",
+  "scan": "(composée de X → ... et du pro-adjoint σ de ρ. (N. B.",
+  "tex": "$\\sigma$ de $\\rho$. (N.B.",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "$\\sigma$ de $\\rho$). (N.B.",
+  "note": "The parenthesis opened at \"(composée\" is never closed in the print. The TeX keeps this."
+ },
+ {
+  "page": "474",
+  "where": "after (9.6.4)",
+  "scan": "(ou à une situation (E,U,𝔉) comme dans (9.3) s'appelle",
+  "tex": "comme dans (\\hyperref[IV.subsec9.3]{9.3})\ns'appelle",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "comme dans \\hyperref[IV.subsec9.3]{9.3})",
+  "note": "The parenthesis opened at \"(ou à une situation\" is never closed in the print. The TeX keeps this."
+ }
+]

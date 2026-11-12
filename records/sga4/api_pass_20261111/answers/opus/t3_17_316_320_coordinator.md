@@ -1,0 +1,1 @@
+316: 0/0; 317: 0/0; 318: 0/0; 319: 0/0; 320: 1/0. The 3x3 diagram is printed on p. 320, not p. 319; the cube diagram at the head of p. 316's cut belongs to p. 315; the hexagon diagram is printed on p. 316.

@@ -1,0 +1,106 @@
+{
+  "findings": [
+    {
+      "page": 156,
+      "where": "Démonstration de 5.2.5, première phrase",
+      "scan": "au cas ou k = ℂ",
+      "tex": "au cas ou $k =\n\\CC$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "au cas où $k = \\CC$",
+      "note": "L'imprimé omet l'accent grave de « où »; le TeX conserve cette coquille."
+    },
+    {
+      "page": 156,
+      "where": "Démonstration de 5.2.5, trois flèches horizontales du diagramme",
+      "scan": "Les trois flèches vont des termes primés, à gauche, vers les termes non primés, à droite.",
+      "tex": "Les trois flèches horizontales sont données par \\ar[r].",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$H^{\\Zar.}_{DR}(u')\\longleftarrow H_{DR}^{\\Zar.}(u)$, $H^{\\bigdot}(S'^{\\an},\\CC)\\xleftarrow{H^{\\bigdot}(t^{\\an},\\CC)}H^{\\bigdot}(S^{\\an},\\CC)$, $H^{\\Zar.}_{DR}(v')\\longleftarrow H_{DR}^{\\Zar.}(v)$",
+      "note": "Les flèches imprimées sont inversées : avec t : S' → S et les morphismes u' → u, v' → v indiqués dans le texte, la contravariance impose des flèches vers la gauche. Le TeX conserve les directions imprimées."
+    },
+    {
+      "page": 158,
+      "where": "Deuxième alinéa marqué +, définition des morphismes",
+      "scan": "un morphisme de (X̄, X, i) dans (X̄', X', i') au-dessus de t",
+      "tex": "un morphisme de $(\\bar{X}, X, i)$ dans $(\\bar{X}', X',\ni')$ au-dessus de $t$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un morphisme de $(\\bar{X}', X', i')$ dans $(\\bar{X}, X, i)$ au-dessus de $t$",
+      "note": "L'imprimé intervertit la source et le but; le TeX conserve cette inversion. Le morphisme est au-dessus de t : S' → S, ses composantes vont des objets primés aux objets non primés, et 5.3.3 donne bien ce sens."
+    },
+    {
+      "page": 158,
+      "where": "Deuxième alinéa marqué +, première composante du couple",
+      "scan": "où h : X̄' → X̄",
+      "tex": "où $h : \\bar{X}'\\to\n\\bar{X}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\bar{h} : \\bar{X}'\\to\\bar{X}$",
+      "note": "La barre manque sur le premier h dans l'imprimé. Il s'agit de la composante notée h̄ dans le couple et dans le diagramme. Le TeX conserve la coquille."
+    },
+    {
+      "page": 158,
+      "where": "N.B., membre droit de l'égalité",
+      "scan": "h̄⁻¹(i(X)) = i(X')",
+      "tex": "$\\bar{h}^{-1}(i(X)) = i(X')$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\bar{h}^{-1}(i(X)) = i'(X')$",
+      "note": "L'immersion de X' dans X̄' est i', non i. Le TeX conserve le prime manquant de l'imprimé."
+    },
+    {
+      "page": 159,
+      "where": "5.3.3, définition de la propriété Q",
+      "scan": "un diviseur à croisement normaux",
+      "tex": "un diviseur à\ncroisements normaux",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un diviseur à croisements normaux",
+      "note": "L'imprimé porte « croisement » au singulier; le TeX corrige silencieusement l'accord."
+    },
+    {
+      "page": 159,
+      "where": "Démonstration de 5.3.4, première énumération",
+      "scan": "Les conditions a) b) d) et c) se vérifient facilement",
+      "tex": "Les conditions a) b) d) et c) se vérifient facilement",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Les conditions a) b) d) et e) se vérifient facilement",
+      "note": "Le premier c) est une coquille pour e) : c) est traité immédiatement après comme conséquence de f). Le TeX conserve la lecture imprimée."
+    },
+    {
+      "page": 160,
+      "where": "Premier grand diagramme, libellé h' près du croisement central",
+      "scan": "h' est le libellé de la verticale X̄Z' → X̄X', c'est-à-dire de Z̄' → X̄'; la flèche X' → X n'est pas libellée.",
+      "tex": "La verticale $\\bar{Z}'\\to\\bar{X}'$ n'a pas de libellé; $h'$ est placé sur l'horizontale $X'\\to X$.",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\bar{Z}' \\ar[rr] \\ar@{->} '[d][dd]&    & \\bar{Z}\\ar[dd]^{\\bar{h}}\\\\\nX'  \\ar[rr]^(.65){h'}",
+        "new": "\\bar{Z}' \\ar[rr] \\ar@{->} '[d][dd]^{h'}&    & \\bar{Z}\\ar[dd]^{\\bar{h}}\\\\\nX'  \\ar[rr]"
+      },
+      "note": "Le libellé a été affecté à la mauvaise flèche. Ce remplacement déplace ensemble le libellé et supprime son occurrence sur l'horizontale. La barre manquante dans le libellé imprimé est signalée séparément."
+    },
+    {
+      "page": 160,
+      "where": "Premier grand diagramme, libellé de Z̄' → X̄'",
+      "scan": "h', sans barre",
+      "tex": "X'  \\ar[rr]^(.65){h'}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\bar{h}'$",
+      "note": "La flèche entre les compactifications doit être notée h̄', comme dans la phrase qui suit le diagramme. L'imprimé omet la barre. Le TeX conserve h' sans barre, tout en déplaçant ce libellé sur une autre flèche, différence signalée séparément."
+    }
+  ],
+  "coordinator": "156: 0/2; 157: 0/0; 158: 0/3; 159: 0/2; 160: 1/1 (normal/misprint)."
+}

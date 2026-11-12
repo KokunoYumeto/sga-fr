@@ -1,0 +1,217 @@
+{
+  "findings": [
+    {
+      "page": 466,
+      "where": "9.5.7, reference in the proof heading",
+      "scan": "Démonstration de 9.5.4.1)",
+      "tex": "\\sisi{1)}{b)}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "9.5.4 b)",
+      "note": "The printed reference has 1) instead of b). The TeX corrects it through \\sisi."
+    },
+    {
+      "page": 467,
+      "where": "First displayed formula, index of the coproduct of the Y_i",
+      "scan": "\\coprod_{i\\in I}Y_i",
+      "tex": "\\coprod_{i\\in 1} Y_i",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\coprod_{i\\in 1} Y_i",
+        "new": "\\coprod_{i\\in I} Y_i"
+      },
+      "note": "The scan has the letter I, not the numeral 1."
+    },
+    {
+      "page": 467,
+      "where": "First displayed formula, target of n",
+      "scan": "n:\\coprod_{i\\in I}Y_i\\longrightarrow(\\coprod_{i\\in I}X_i)",
+      "tex": "n:\\coprod_{i\\in 1} Y_i\\longrightarrow (\\coprod_{i\\in I}X_i){\\quoi}.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "n:\\coprod_{i\\in I}Y_i\\longrightarrow\\rho(\\coprod_{i\\in I}X_i)",
+      "note": "The print omits ρ before the target coproduct. The TeX keeps this omission. The separate I/1 transcription error is reported above."
+    },
+    {
+      "page": 467,
+      "where": "c), lower pair of arrows in the displayed diagram",
+      "scan": "f(u), f(v)",
+      "tex": "\\rho(R_2) \\ar@<3pt>[r]^{f(u)} \\ar@<-3pt>[r]_{f(v)} & \\rho(X)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\rho(u),\\quad\\rho(v)",
+      "note": "The functor in this diagram is ρ, not f. The TeX keeps the printed labels."
+    },
+    {
+      "page": 467,
+      "where": "c), description of the relation on X",
+      "scan": "est un relation d'équivalence",
+      "tex": "est un relation d'équivalence",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "est une relation d'équivalence",
+      "note": "The print has the grammatical typo « un relation ». The TeX keeps it."
+    },
+    {
+      "page": 467,
+      "where": "d), the two references to I 9.25",
+      "scan": "« (1.9.2 5) » and « 1.9.25 »",
+      "tex": "\\sisi{(1.9.2 5)}{\\hyperrefext[I][I.cor9.25]{9.25}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "I~9.25",
+      "note": "Both printed references use 1 in place of the exposé numeral I. Both occurrences are corrected through \\sisi; the spacing between 2 and 5 is not a separate finding."
+    },
+    {
+      "page": 468,
+      "where": "Opening paragraph, indexing set of the projective system",
+      "scan": "(\\sigma(X'')_i)_{i\\in I(X')}, où I(X') est un petit ensemble",
+      "tex": "$(\\sigma(X'')_i)_{i\\in I(X')}$, où $I(X')$ est un petit ensemble",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$(\\sigma(X'')_i)_{i\\in I(X'')}$, où $I(X'')$ est un petit ensemble",
+      "note": "Both occurrences of I(X') should depend on X'', the object whose pro-image is being represented. The TeX keeps both printed single primes."
+    },
+    {
+      "page": 468,
+      "where": "Opening paragraph, first family of generating objects",
+      "scan": "\\phi_{\\mathcal{F}}\\longrightarrow\\phi(X')",
+      "tex": "\\phi(X'))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\phi_{\\mathcal{F}},X',\\phi_{\\mathcal{F}}\\rightarrow\\rho(X'))",
+      "note": "The target is printed with φ instead of the gluing functor ρ. The TeX keeps this printed symbol."
+    },
+    {
+      "page": 468,
+      "where": "Opening paragraph, second family of generating objects",
+      "scan": "(X'',\\sigma(X'')_i,u_{X''}:X''\\rightarrow\\rho(\\sigma(X'')_i)",
+      "tex": "\\rho(\\sigma (X'')_i)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(X'',\\sigma(X'')_i,u_{X''}:X''\\rightarrow\\rho(\\sigma(X'')_i))",
+      "note": "The closing parenthesis of the triple is missing in the print. The TeX keeps the unclosed triple."
+    },
+    {
+      "page": 468,
+      "where": "Opening paragraph, immediately after Ob C''",
+      "scan": "A small raised x follows C'', before i∈I(X'').",
+      "tex": "{C''}$, $i\\in I (X'')$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "X''\\in\\Ob C'',\\quad i\\in I(X'')",
+      "note": "The raised x is extraneous. The TeX silently replaces it with the comma separating the two conditions."
+    },
+    {
+      "page": 468,
+      "where": "Number of the paragraph introducing the explicit gluing functors",
+      "scan": "9.5.4.8.",
+      "tex": "\\etiquette[9.5.4.8]{IV.par9.5.4.8}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "9.5.8",
+      "note": "The printed paragraph number contains an extra .4; its subdivisions are 9.5.8.1 and following. The TeX keeps the printed number."
+    },
+    {
+      "page": 468,
+      "where": "End of 9.5.8.3, bottom of the page",
+      "scan": "After « est isomorphe au morphisme fonctoriel », the page prints the square X→ρ(Y), X→ρ(e), with id on the left vertical arrow.",
+      "tex": "est isomorphe au morphisme fonctoriel",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The diagram is present in the first five lines of the supplied p. 469 TeX, but belongs to p. 468. This overlap is not declared by the p. 469 comment. Page 469 actually begins with 9.5.8.4; no source text should be moved."
+    },
+    {
+      "page": 469,
+      "where": "9.5.8.5, parenthetical explanation of the initial object",
+      "scan": "(φ objet initial de   )",
+      "tex": "\\noindent ($\\phi$ objet initial de)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "($\\phi$ objet initial de $\\mathcal{F}$)",
+      "note": "The category after « de » is missing in the print. The TeX keeps the incomplete parenthesis."
+    },
+    {
+      "page": 469,
+      "where": "9.5.8.8, sentence preceding the diagram",
+      "scan": "est isomorphe aux morphisme fonctoriel",
+      "tex": "est isomorphe aux morphisme fonctoriel",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "est isomorphe au morphisme fonctoriel",
+      "note": "The print has « aux » before the singular « morphisme ». The TeX keeps it."
+    },
+    {
+      "page": 469,
+      "where": "9.5.8.8, lower-left object of the diagram",
+      "scan": "\\rho(y)",
+      "tex": "\\rho(Y) \\ar[r]^{\\id}& \\rho(Y)",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\rho(Y)",
+      "note": "The lower-left argument is printed as lowercase y, whereas the object throughout the diagram is Y. The TeX silently corrects it."
+    },
+    {
+      "page": 469,
+      "where": "Exercise 9.5.9 a), second reference in « 1.8 ou 1.8 »",
+      "scan": "1.8 ou 1.8",
+      "tex": "\\sisi{\\hyperref[IV.rem1.8]{1.8}}{\\hyperrefext[I][I.sec8]{8}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "I~8",
+      "note": "The second reference should be to exposé I, section 8, not another local 1.8. The TeX corrects it through \\sisi."
+    },
+    {
+      "page": 470,
+      "where": "End of the first paragraph, references to exposé III",
+      "scan": "(III 1.2 et 1.7)",
+      "tex": "(\\hyperrefext[III][III.prop1.2]{1.2} et \\hyperrefext[III][III.prop1.7]{1.7})",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hyperrefext[III][III.prop1.7]{1.7}",
+        "new": "\\hyperref[III.prop1.7]{1.7}"
+      },
+      "note": "The second external-reference command repeats III, which the print gives only before 1.2."
+    },
+    {
+      "page": 470,
+      "where": "Exercise 9.5.10 a), references following « cribles C' de C »",
+      "scan": "(1.4.1, 4.2)",
+      "tex": "(1.4.1, \\hyperref[IV.subsec4.2]{4.2})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(I~4.1, 8.4.4)",
+      "note": "The printed reference 4.2 is erroneous; the relevant reference is 8.4.4. The TeX corrects the pair through \\sisi, also rendering the exposé-I reference as I 4.1."
+    },
+    {
+      "page": 470,
+      "where": "Exercise 9.5.10 a), reference after « foncteur restriction »",
+      "scan": "(…5.11); the first numeral has a faint or broken stroke.",
+      "tex": "\\sisi{(4.5.11)}{\\ref{VI.lem5.4}}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "VI~5.4",
+      "note": "The printed restriction-functor reference ending in 5.11 is corrected by the TeX to VI 5.4 through \\sisi. The damaged first numeral does not support a separate asserted 1/4 transcription difference."
+    }
+  ],
+  "coordinator": "466: 0/1; 467: 1/4; 468: 1/5; 469: 0/4; 470: 1/2 (normal, including marker / misprint).\nMarker 468/469: the first five TeX lines supplied for 469, containing the diagram of 9.5.8.3, belong to 468; 469 begins at 9.5.8.4."
+}

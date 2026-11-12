@@ -1,0 +1,73 @@
+{
+  "findings": [
+    {
+      "page": 508,
+      "where": "1.3.8.6, deuxième tiret",
+      "scan": "Pour $\\Ll$ faisceau inversible sur $X$ et $K$ un $G_X$-torseur sur $X$",
+      "tex": "\\item[--] Pour $\\Ll$ faisceau inversible sur $X$ et $K$ un\n$G_{X}$-torseur sur $X$, on a",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Pour $\\Ll$ faisceau inversible sur $Y$ et $K$ un $G_{X}$-torseur sur $X$, on a",
+      "note": "Le faisceau auquel on applique $u^{\\ast}$ doit être sur $Y$. Le TeX conserve la coquille « sur $X$ »."
+    },
+    {
+      "page": 508,
+      "where": "1.3.8.6, premier isomorphisme après la référence XVII 6.3.27.2",
+      "scan": "\\Tr_{p_{\\ast}E/S}(K)",
+      "tex": "\\Tr_{u_{\\ast}E/S}(K)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Tr_{u_{\\ast}E/S}(K)",
+      "note": "Les deux scans donnent $p_{\\ast}E$, mais le morphisme considéré est $u:X\\rightarrow Y$. Le TeX corrige silencieusement $p$ en $u$."
+    },
+    {
+      "page": 508,
+      "where": "1.3.8.6, second isomorphisme après la référence XVII 6.3.27.2",
+      "scan": "\\Tr_{p^{\\ast}E/S}(K)",
+      "tex": "\\Tr_{u^{\\ast}E/S}(K)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Tr_{u^{\\ast}E/S}(K)",
+      "note": "Les deux scans donnent $p^{\\ast}E$ au lieu de $u^{\\ast}E$. Le TeX corrige silencieusement cette coquille."
+    },
+    {
+      "page": 509,
+      "where": "Théorème 1.3.10, référence à la fin de l'énoncé",
+      "scan": "(1.2.9)",
+      "tex": "(\\hyperref[XVIII.subsubsec1.3.9]{1.3.9})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(\\hyperref[XVIII.subsubsec1.3.9]{1.3.9})",
+      "note": "La référence imprimée est 1.2.9 dans les deux scans ; les morphismes de champs viennent d'être définis en 1.3.9. Le TeX corrige silencieusement la référence."
+    },
+    {
+      "page": 509,
+      "where": "Preuve de 1.3.10, définition du diviseur associé à une section",
+      "scan": "le diviseur relatif $t(S)$",
+      "tex": "le diviseur\nrelatif $t(T)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "le diviseur relatif $t(T)$",
+      "note": "La section est définie sur $T$ : son image est $t(T)$, non $t(S)$. Le TeX corrige silencieusement le $S$ imprimé en $T$."
+    },
+    {
+      "page": 510,
+      "where": "Référence précédant la formule (1.3.10.2)",
+      "scan": "D'après XVII 6.3.",
+      "tex": "D'après \\hyperrefext[XVII][XVII.prop6.3.9]{6.3.9}",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hyperrefext[XVII][XVII.prop6.3.9]{6.3.9}",
+        "new": "XVII 6.3"
+      },
+      "note": "L'imprimé renvoie à la section XVII 6.3, sans numéro de proposition ; le TeX ajoute « .9 »."
+    }
+  ],
+  "coordinator": "506: 0/0; 507: 0/0; 508: 0/3; 509: 0/2; 510: 1/0 (normal/misprint)."
+}

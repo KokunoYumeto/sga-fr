@@ -1,0 +1,76 @@
+[
+ {
+  "page": 383,
+  "where": "first line, before Théorème 4.2",
+  "scan": "on trouve de meme .",
+  "tex": "on trouve de meme .",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "de même",
+  "note": "The typescript omits the circumflex (p. 385 prints 'De même' with it). The TeX keeps the printed reading."
+ },
+ {
+  "page": 384,
+  "where": "5.0, second line",
+  "scan": "d'un corps de nombresen une place",
+  "tex": "d'un corps de nombresen une place",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "nombres en",
+  "note": "Missing word space: measured on the scan, the e of 'en' follows the s at the typewriter's normal letter pitch (about 20 px), with no space cell. The TeX keeps the printed reading."
+ },
+ {
+  "page": 384,
+  "where": "Définition 5.1, first line",
+  "scan": "Un E-faisceau constructible: 'Un' and 'faisceau constructible' underlined, 'E-' not",
+  "tex": "\\underline{Un E-faisceau constructible}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Un E-faisceau",
+   "new": "\\underline{Un} E-\\underline{faisceau"
+  },
+  "note": "The TeX takes the letter E into the underline; the print underlines only the words (the same form was fixed on p. 388)."
+ },
+ {
+  "page": 384,
+  "where": "Définition 5.1, second line",
+  "scan": "est dit T-entier si, pour tout point géométrique: 'est dit' and 'entier si' underlined, 'T-' not",
+  "tex": "\\underline{est dit T-entier si, pour tout point géométrique}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{est dit T-entier",
+   "new": "\\underline{est dit} T-\\underline{entier"
+  },
+  "note": "Only the letter T is taken out of the underline; the restart of the underline after the comma is left to the global pass."
+ },
+ {
+  "page": 384,
+  "where": "Définition 5.1, last line",
+  "scan": "est un automorphisme T-entier de G̲_x̄ . : 'est un automorphisme' and 'entier de' underlined, 'T-' not; the G of G_x̄ has its own short underline",
+  "tex": "\\underline{est un automorphisme T-entier de} $G_{\\bar{x}}$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{est un automorphisme T-entier de} $G_{\\bar{x}}$",
+   "new": "\\underline{est un automorphisme} T-\\underline{entier de} $\\underline{G}_{\\bar{x}}$"
+  },
+  "note": "Two underline differences in one edit: the T stands outside the print's underline, and the sheaf letter of the fibre is underlined (checked at 6x: a separate underline under the G, after the underline of 'entier de' stops). The G of 'la fibre G_x̄' at the end of 5.0 is not underlined in the print and stays as it is."
+ },
+ {
+  "page": 385,
+  "where": "Lemme 5.2.1, first line",
+  "scan": "Soit G̲ un E-faisceau constructible sur un schéma: 'un' and 'faisceau constructible sur un schéma' underlined, 'E-' not",
+  "tex": "\\underline{un E-faisceau constructible sur un schéma}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{un E-faisceau",
+   "new": "\\underline{un} E-\\underline{faisceau"
+  },
+  "note": "Same form as Définition 5.1 on p. 384: the print leaves E- out of the underline."
+ }
+]

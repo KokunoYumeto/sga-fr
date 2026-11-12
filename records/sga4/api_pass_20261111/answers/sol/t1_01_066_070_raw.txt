@@ -1,0 +1,119 @@
+{
+  "findings": [
+    {
+      "page": 66,
+      "where": "3°, opening sentence",
+      "scan": "$D,D'\\subset E$",
+      "tex": "$D$, $D'\\subset E$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$D,D'\\in E$",
+      "note": "The diagrams are elements of E, not subdiagrams of E. The TeX keeps the printed subset sign."
+    },
+    {
+      "page": 66,
+      "where": "3°, sentence beginning « On obtient bien ainsi »",
+      "scan": "un sous-diagramme fini de $E$",
+      "tex": "un sous-diagramme fini de $E$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "un sous-diagramme fini de $I$",
+      "note": "The ambient category is I; E indexes the subdiagrams. The TeX keeps the printed E."
+    },
+    {
+      "page": 66,
+      "where": "3°, sentence about making j a final object",
+      "scan": "soit un objet final de $D'$",
+      "tex": "soit un objet final de $D'$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "soit un objet final de $D''$",
+      "note": "The diagram being constructed is D'', not D'. The TeX keeps the single prime printed here."
+    },
+    {
+      "page": 66,
+      "where": "3°, final equation",
+      "scan": "$ff_x=f'f'_{x'}$",
+      "tex": "$ff_x=f'f'_{x'}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$ff_x=f'f'_x$",
+      "note": "Both composites must have the common object x as source. The TeX retains the printed subscript x'."
+    },
+    {
+      "page": 68,
+      "where": "8.2.1, parenthesis introducing the abbreviated indexing notation",
+      "scan": "(par nouveau abus de notation)",
+      "tex": "(par nouveau abus de notation)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(par nouvel abus de notation)",
+      "note": "The adjective before « abus » should be « nouvel ». The TeX keeps the printed grammatical slip."
+    },
+    {
+      "page": 69,
+      "where": "8.2.3, sentence immediately after the display u:I'→I",
+      "scan": "où $I'$ est une deuxième catégorie filtrante",
+      "tex": "où $I$ est une deuxième catégorie filtrante",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "où $I$ est une deuxième catégorie filtrante",
+        "new": "où $I'$ est une deuxième catégorie filtrante"
+      },
+      "note": "The scan has a prime after I; the TeX omits it."
+    },
+    {
+      "page": 70,
+      "where": "(8.2.4.1), indexing of the second ind-object",
+      "scan": "$\\underline{Y}=(Y_j)_{j\\in I}$",
+      "tex": "𝒴=(Y_j)_{j\\in I}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$𝒴=(Y_j)_{j\\in J}$",
+      "note": "The following sentence specifies the two indexing categories I and J. The TeX keeps the printed I in the second index."
+    },
+    {
+      "page": 70,
+      "where": "After (8.2.4.3), definition of composition",
+      "scan": "On définit la composition des ind-objets de $\\underline{C}$",
+      "tex": "On définit la composition des ind-objets de $𝒞$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "On définit la composition des morphismes des ind-objets de $𝒞$",
+      "note": "The operation being defined is composition of morphisms, not of ind-objects themselves. The TeX retains the printed omission."
+    },
+    {
+      "page": 70,
+      "where": "After (8.2.4.3), same sentence defining composition",
+      "scan": "comme la composition",
+      "tex": "comme le composition",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "comme le composition",
+        "new": "comme la composition"
+      },
+      "note": "The printed article is « la », not « le »."
+    },
+    {
+      "page": 70,
+      "where": "Sentence immediately before (8.2.4.4)",
+      "scan": "La catégorie ainsi obtenu est notée",
+      "tex": "La catégorie ainsi obtenu\nest notée",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "La catégorie ainsi obtenue est notée",
+      "note": "Agreement with « catégorie » requires « obtenue ». The TeX keeps the printed form."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 66: 0/4; 67: 0/0; 68: 0/1; 69: 1/0; 70: 1/3."
+}

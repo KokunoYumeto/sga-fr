@@ -1,0 +1,60 @@
+{
+  "findings": [
+    {
+      "page": 186,
+      "where": "Suite exacte après XII 3.2, dernier terme",
+      "scan": "H^{0}(Y,R^{1}g_{\\ast}(g^{\\ast}(F))",
+      "tex": "H^{0}(Y,R^{1}g_{\\ast}(g^{\\ast}(F)){\\quoi},",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{0}(Y,R^{1}g_{\\ast}(g^{\\ast}(F)))",
+      "note": "Il manque la parenthèse fermant l'argument de H^0. Le TeX conserve cette omission de l'imprimé."
+    },
+    {
+      "page": 187,
+      "where": "Premier paragraphe, définition de Z dans la parenthèse",
+      "scan": "Z=X-U",
+      "tex": "Z=X-U",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Z=Y-U",
+      "note": "U est un ouvert de Y : l'imprimé porte X au lieu de Y. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 187,
+      "where": "Diagramme des inclusions, flèches j' et j",
+      "scan": "Y'=X\\xrightarrow{j'}Z',\\qquad Y\\xrightarrow{j}Z",
+      "tex": "U'  \\ar[r]^{i'} \\ar[d]^{g_U}& Y' = X  \\ar[r]^{j'} \\ar[d]^{g} & Z'  \\ar[d]^{g_Z}\\\\\nU   \\ar[r]^{i} & Y  \\ar[r]^{j} & Z,",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Y'=X\\xleftarrow{j'}Z',\\qquad Y\\xleftarrow{j}Z",
+      "note": "Les deux flèches sont inversées dans l'imprimé : j' et j sont les inclusions Z' vers Y' et Z vers Y, comme le texte le précise immédiatement avant. Le TeX conserve les directions imprimées."
+    },
+    {
+      "page": 189,
+      "where": "Dernier paragraphe, après « en vertu de »",
+      "scan": "« en vertu de » suivi d'un blanc avant la virgule",
+      "tex": "en vertu de \\sisi{\\qquad}{\\qquad},",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "en vertu de \\text{IV }9.5.4,",
+      "note": "La référence est laissée en blanc dans l'imprimé; le TeX conserve ce blanc. IV 9.5.4 fournit la description par recollement utilisée ici : c'est une référence corrective proposée, non un numéro lisible dans le blanc."
+    },
+    {
+      "page": 190,
+      "where": "Égalité des faisceaux après « sections correspondantes de »",
+      "scan": "g_Z^{\\ast}(j^{\\ast}(i_{\\ast}(F_U))=j'^{\\ast}(g^{\\ast}(i_{\\ast}(F_U))",
+      "tex": "g_Z{}^{\\ast}(j^{\\ast}(i_{\\ast}(F_U))=j'{}^{\\ast}(g^{\\ast}(i_{\\ast}(F_U))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "g_Z{}^{\\ast}(j^{\\ast}(i_{\\ast}(F_U)))=j'{}^{\\ast}(g^{\\ast}(i_{\\ast}(F_U)))",
+      "note": "Une parenthèse fermante manque dans chacun des deux membres de l'égalité imprimée. Le TeX conserve les deux omissions."
+    }
+  ],
+  "coordinator": "186: 0/1; 187: 0/2; 188: 0/0; 189: 0/1; 190: 0/1 (normal/misprint)."
+}

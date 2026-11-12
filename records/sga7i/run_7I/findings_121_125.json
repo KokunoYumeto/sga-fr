@@ -1,0 +1,506 @@
+[
+ {
+  "page": 121,
+  "where": "Corollary 5.7 (3), first line: 'and X an S-scheme of essentially finite type'",
+  "scan": "'an' underlined; 'S-' not underlined; the underline resumes at 'scheme of' (checked in a crop)",
+  "tex": "\\underline{S-scheme of essentially finite type. Given a closed subscheme}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{S-scheme of essentially",
+   "new": "$S$-\\underline{scheme of essentially"
+  },
+  "note": "The letter S and its hyphen stand outside the underline, as in 'S-adic' on pp. 119-120 and in the parallel statement 5.10 (4) on p. 123 (TeX $S$-\\underline{scheme of essentially ...}). The TeX also sets this S as text inside the underline."
+ },
+ {
+  "page": 121,
+  "where": "Proof of 5.7, (1): 'Omega_{X'|S'} ~= O_{S'} (x)^_{O_S} Omega_{X|S}'",
+  "scan": "isomorphism sign: a tilde over a single bar (checked in a crop)",
+  "tex": "\\underline{\\Omega}_{\\mathfrak{X}'|S'} \\cong \\underline{O}_{S'}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathfrak{X}'|S'} \\cong",
+   "new": "\\mathfrak{X}'|S'} \\simeq"
+  },
+  "note": "The TeX writes \\cong (two bars); the print has the one-bar sign, which the TeX gives as \\simeq on p. 122 and elsewhere in this exposé."
+ },
+ {
+  "page": 121,
+  "where": "Proof of 5.7, (2): 'O_{X_(x)} (x)^_{O_X} Omega_{X|S} ~= Omega_{X_(x)|S} .'",
+  "scan": "isomorphism sign: a tilde over a single bar (checked in a crop)",
+  "tex": "\\;\\cong\\; \\underline{\\Omega}_{\\mathfrak{X}_{(x)}|S}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\;\\cong\\; \\underline{\\Omega}",
+   "new": "\\;\\simeq\\; \\underline{\\Omega}"
+  },
+  "note": "As in (1) just above."
+ },
+ {
+  "page": 121,
+  "where": "Proof of 5.7, (4), first equivalence: 'is formally smooth at x <=> X_nu -> S_nu is formally smooth'",
+  "scan": "a double-line equivalence arrow (hollow, two strokes; checked in a crop)",
+  "tex": "x \\leftrightarrow X_\\nu \\to S_\\nu",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "x \\leftrightarrow X_\\nu",
+   "new": "x \\Leftrightarrow X_\\nu"
+  },
+  "note": "The TeX has the single-line \\leftrightarrow; the print's sign is the double arrow, which the TeX writes \\Leftrightarrow elsewhere (e.g. pp. 52, 63, 117). Three occurrences in this display; the other two follow."
+ },
+ {
+  "page": 121,
+  "where": "Same display, second equivalence: 'for all nu <=> x notin J^n_{X_nu}(X_nu|S_nu)'",
+  "scan": "double-line equivalence arrow (checked in a crop)",
+  "tex": "\\nu \\;\\leftrightarrow\\; x \\notin J^{n}_{X_\\nu}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\nu \\;\\leftrightarrow\\; x",
+   "new": "\\nu \\;\\Leftrightarrow\\; x"
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 121,
+  "where": "Same display, third line: '<=> x notin lim-> J^n_{X_nu}(X_nu|S_nu) = J^n_X(X|S)'",
+  "scan": "double-line equivalence arrow (checked in a crop)",
+  "tex": "\\\\ \\leftrightarrow\\; x \\notin \\varinjlim_{\\nu}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\\\ \\leftrightarrow\\; x",
+   "new": "\\\\ \\Leftrightarrow\\; x"
+  },
+  "note": "As the previous entries."
+ },
+ {
+  "page": 121,
+  "where": "Remark 5.8: 'we also consider the S-adic formal scheme X_(x^) = lim-> Spec(O^_{X_v,x})'",
+  "scan": "subscript (X^) with a CAPITAL X under the hat: 28 px high against 20 px for the small x of X_(x) on the next line and of the (x^) subscripts at the foot of the page (measured in crops)",
+  "tex": "\\mathfrak{X}_{(\\hat{x})} = \\varinjlim",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathfrak{X}_{(\\hat{x})} = \\varinjlim",
+   "new": "\\mathfrak{X}_{(\\hat{X})} = \\varinjlim"
+  },
+  "corrected": "\\mathfrak{X}_{(\\hat{x})} = \\varinjlim",
+  "note": "Capital/small slip, as in X_(X^_0) on p. 105: the formal scheme is the completion at the point x (Spec of O^_{X_v,x} on the same line), and the foot of this page and pp. 122-123 print the small x^. The TeX silently writes the small x; the fix restores the printed capital, 'corrected' is the current TeX."
+ },
+ {
+  "page": 121,
+  "where": "Remark 5.8: 'We thus have the natural morphisms X_(x^) -> X_(x) -> X'",
+  "scan": "first subscript (X^) with a CAPITAL X (28 px against 19-20 px for the x of the following X_(x); measured in a crop)",
+  "tex": "morphisms $\\mathfrak{X}_{(\\hat{x})} \\to",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "morphisms $\\mathfrak{X}_{(\\hat{x})}",
+   "new": "morphisms $\\mathfrak{X}_{(\\hat{X})}"
+  },
+  "corrected": "morphisms $\\mathfrak{X}_{(\\hat{x})}",
+  "note": "As the previous entry. The TeX silently writes the small x; the fix restores the printed capital, 'corrected' is the current TeX."
+ },
+ {
+  "page": 121,
+  "where": "Remark 5.8: 'Now the natural map Omega_{A_v|R_v} -> Omega_{A^_v|R_v} induces an isomorphism'",
+  "scan": "the small typed hat stands over the subscript A, right of the Omega (hat columns 272-294, A 274-296, Omega 251-271; measured in a crop)",
+  "tex": "\\Omega_{A_\\nu|R_\\nu} \\to \\widehat{\\Omega}_{A_\\nu|R_\\nu}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\to \\widehat{\\Omega}_{A_\\nu|R_\\nu}$ induces",
+   "new": "\\to \\Omega_{\\widehat{A}_\\nu|R_\\nu}$ induces"
+  },
+  "note": "The hat belongs to A (A^_v is the completion O^_{X_v,x}, as in the definition below, where the hat stands over the O). Contrast p. 125, where Omega^_{A^|R} carries one hat over the Omega and a second over the A."
+ },
+ {
+  "page": 121,
+  "where": "Remark 5.8: 'induces an isomorphism (Omega_{A_v|R_v})^ -> (Omega_{A_v|R_v})^'",
+  "scan": "both sides printed identically: wide hat over Omega_{A_v|R_v}, no small hat over the second A (checked in a crop)",
+  "tex": "\\widehat{\\Omega_{A_\\nu|R_\\nu}} \\to \\widehat{\\Omega_{A_\\nu|R_\\nu}}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\widehat{\\Omega_{A_\\nu|R_\\nu}} \\to \\widehat{\\Omega_{\\widehat{A}_\\nu|R_\\nu}}",
+  "note": "The isomorphism induced by Omega_{A_v|R_v} -> Omega_{A^_v|R_v} goes to the completion of Omega_{A^_v|R_v}, as the next formula (lim (Omega_{A^_v|R_v})^ ) shows; the printed map is from a module to itself. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 121,
+  "where": "Remark 5.8: 'lim<-_v (Omega_{A_v|R_v})^ ~-> lim_v (Omega_{A^_v|R_v})^'",
+  "scan": "inside the wide hat of the right-hand side the small hat stands over the subscript A, not over the Omega (hat columns 462-481, A 462-483, Omega 439-461; measured in a crop)",
+  "tex": "\\lim_{\\nu} \\widehat{\\widehat{\\Omega}_{A_\\nu|R_\\nu}}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lim_{\\nu} \\widehat{\\widehat{\\Omega}_{A_\\nu|R_\\nu}}",
+   "new": "\\lim_{\\nu} \\widehat{\\Omega_{\\widehat{A}_\\nu|R_\\nu}}"
+  },
+  "note": "As in the natural map above. Does not overlap the misprint entry on this lim (which has no edit)."
+ },
+ {
+  "page": 121,
+  "where": "Same formula, right-hand lim",
+  "scan": "lim with the index v below and no arrow; the left-hand lim has the arrow <- (checked in a crop)",
+  "tex": "\\lim_{\\nu}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\varprojlim_{\\nu}",
+  "note": "Both sides are projective limits over v; the arrow of the second lim was not typed or written in. Low: possibly the typist's shorthand. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 121,
+  "where": "Remark 5.8, definition: '(Omega_{X_(x^)|S})^ = lim<-_v (Omega_{O^_{X_v,x}|O_{S_v}})^'",
+  "scan": "inside the wide hat the small hat stands over the underlined O, not over the Omega (hat columns 392-410, O 392-412, Omega 367-390; measured in a crop)",
+  "tex": "\\widehat{\\widehat{\\Omega}_{\\underline{O}_{X_\\nu,x}|\\underline{O}_{S_\\nu}}}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\widehat{\\widehat{\\Omega}_{\\underline{O}_{X_\\nu,x}|\\underline{O}_{S_\\nu}}}",
+   "new": "\\widehat{\\Omega_{\\widehat{\\underline{O}}_{X_\\nu,x}|\\underline{O}_{S_\\nu}}}"
+  },
+  "note": "The ring is O^_{X_v,x} = A^_v; the file's form for a hatted underlined O is \\widehat{\\underline{O}} (p. 105)."
+ },
+ {
+  "page": 121,
+  "where": "Remark 5.8: 'Now O^_{X_0,x} is in general not essentially finite type over S_(y)'",
+  "scan": "not essentially finite type (no 'of')",
+  "tex": "is in general not essentially finite type",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "is in general not of essentially finite type",
+  "note": "Word left out; the exposé writes 'of essentially finite type' or 'essentially of finite type' throughout (e.g. the first sentence of this remark). Low: possibly the author's own wording. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 122,
+  "where": "End of Remark 5.8: 'defined by the ideal sheaf I^p_{X_(x^)}(X_(x^)|S) = I^p_{X_(x^)}(Omega_{X_(x^)|S})'",
+  "scan": "Omega_{X_(x^)|S} printed without a hat (checked in a crop)",
+  "tex": "I^{p}_{\\mathfrak{X}_{(\\hat{x})}}(\\Omega_{\\mathfrak{X}_{(\\hat{x})}|S})",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "I^{p}_{\\mathfrak{X}_{(\\hat{x})}}(\\widehat{\\Omega_{\\mathfrak{X}_{(\\hat{x})}|S}})",
+  "note": "The coherent module whose Fitting ideal is meant is the completed (Omega_{X_(x^)|S})^ defined at the foot of p. 121 ('then (Omega_{X_(x^)|S})^ is a coherent X_(x^)-module. Thus if we set ...'); the plain Omega_{X_(x^)|S} is not defined. Low: the hat may have been left out deliberately as notation. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 123,
+  "where": "Corollary 5.10 (2): 'J^p_S(X|S) commute with base change'",
+  "scan": "J^p_S(X|S) with the typewriter Fraktur X",
+  "tex": "$J^p_S(\\mathcal{X}|S)$  \\underline{commute",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$J^p_S(\\mathcal{X}|S)$  \\underline{commute",
+   "new": "$J^p_S(\\mathfrak{X}|S)$  \\underline{commute"
+  },
+  "note": "Fraktur typed as \\mathcal. The same Fraktur X is \\mathfrak{X} on pp. 121-122 and 125. Page 123 writes \\mathcal{X}, \\mathcal{Y} throughout (20 places, all covered by the font entries below)."
+ },
+ {
+  "page": 123,
+  "where": "Same item: 'i.e., J^p_{S'}(X'|S') = J^p_S(X|S) x_S S''",
+  "scan": "typewriter Fraktur X twice",
+  "tex": "$J^p_{S'}(\\mathcal{X}'|S') = J^p_S(\\mathcal{X}|S) \\times_S S'$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$J^p_{S'}(\\mathcal{X}'|S') = J^p_S(\\mathcal{X}|S) \\times_S S'$",
+   "new": "$J^p_{S'}(\\mathfrak{X}'|S') = J^p_S(\\mathfrak{X}|S) \\times_S S'$"
+  },
+  "note": "Fraktur typed as \\mathcal, as above."
+ },
+ {
+  "page": 123,
+  "where": "Corollary 5.10 (3): 'If J^p_X(X|S) = coprod_{1<=i<=m} Y^(i)'",
+  "scan": "typewriter Fraktur X twice",
+  "tex": "$J^p_{\\mathcal{X}}(\\mathcal{X}|S) =",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$J^p_{\\mathcal{X}}(\\mathcal{X}|S) =",
+   "new": "$J^p_{\\mathfrak{X}}(\\mathfrak{X}|S) ="
+  },
+  "note": "Fraktur typed as \\mathcal, as above."
+ },
+ {
+  "page": 123,
+  "where": "Same formula: the disjoint-union sign",
+  "scan": "an inverted Pi: two vertical strokes standing on a base bar that projects beyond both of them, the product sign of the next line turned upside down (checked in a crop)",
+  "tex": "\\bigsqcup_{1\\leq i\\leq m}",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\bigsqcup",
+   "new": "\\coprod"
+  },
+  "note": "The printed sign is the coproduct sign; \\bigsqcup is a square cup without the projecting bar. The TeX writes the same printed sign \\coprod on p. 120 ('J^p_X(X|S) - coprod ...')."
+ },
+ {
+  "page": 123,
+  "where": "Same formula: 'Y^(i)'",
+  "scan": "typewriter Fraktur Y",
+  "tex": "m} \\mathcal{Y}^{(i)}$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "m} \\mathcal{Y}^{(i)}$",
+   "new": "m} \\mathfrak{Y}^{(i)}$"
+  },
+  "note": "Fraktur typed as \\mathcal; the TeX writes the same Fraktur Y \\mathfrak{Y} on pp. 126 and 128."
+ },
+ {
+  "page": 123,
+  "where": "Corollary 5.10 (3), next line: 'I^p_S(X|S) = prod_{1<=i<=m} I^0_S(f_*O_{Y(i)})'",
+  "scan": "typewriter Fraktur X",
+  "tex": "$\\underline{I}^p_S(\\mathcal{X}|S) = \\prod_{1\\leq i\\leq m} \\underline{I}^0_S",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\underline{I}^p_S(\\mathcal{X}|S) = \\prod_{1\\leq i\\leq m} \\underline{I}^0_S",
+   "new": "$\\underline{I}^p_S(\\mathfrak{X}|S) = \\prod_{1\\leq i\\leq m} \\underline{I}^0_S"
+  },
+  "note": "Fraktur typed as \\mathcal, as above."
+ },
+ {
+  "page": 123,
+  "where": "Same formula: 'f_*O_{Y(i)}'",
+  "scan": "typewriter Fraktur Y",
+  "tex": "f_*\\underline{O}_{\\mathcal{Y}^{(i)}}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "f_*\\underline{O}_{\\mathcal{Y}",
+   "new": "f_*\\underline{O}_{\\mathfrak{Y}"
+  },
+  "note": "Fraktur typed as \\mathcal, as above. Does not overlap the next entry."
+ },
+ {
+  "page": 123,
+  "where": "Same formula: index of O_{Y(i)}",
+  "scan": "the (i) stands on the same line as the subscript Y, not raised (in the line above, Y^(i) has a raised (i); checked in a crop)",
+  "tex": "\\mathcal{Y}^{(i)}})$",
+  "kind": "formula",
+  "confidence": "low",
+  "fix": {
+   "old": "^{(i)}})$",
+   "new": "(i)})$"
+  },
+  "note": "Typewriter placement inside a subscript; the TeX raises (i) to a superscript. Low: the coordinator may prefer to keep the superscript as the evident intent."
+ },
+ {
+  "page": 123,
+  "where": "Display after 'is discrete, then': 'I^p_S(X|S) = prod I^p_S(X_(x_i)|S) = prod I^p_S(X_(x^_i)|S)'",
+  "scan": "typewriter Fraktur X three times",
+  "tex": "\\underline{I}^p_S(\\mathcal{X}|S) = \\prod_{1\\leq i\\leq m} \\underline{I}^p_S(\\mathcal{X}_{(x_i)}|S) = \\prod_{1\\leq i\\leq m} \\underline{I}^p_S(\\mathcal{X}_{(\\mathfrak{x}_i)}|S)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{I}^p_S(\\mathcal{X}|S) = \\prod_{1\\leq i\\leq m} \\underline{I}^p_S(\\mathcal{X}_{(x_i)}|S) = \\prod_{1\\leq i\\leq m} \\underline{I}^p_S(\\mathcal{X}_{(",
+   "new": "\\underline{I}^p_S(\\mathfrak{X}|S) = \\prod_{1\\leq i\\leq m} \\underline{I}^p_S(\\mathfrak{X}_{(x_i)}|S) = \\prod_{1\\leq i\\leq m} \\underline{I}^p_S(\\mathfrak{X}_{("
+  },
+  "note": "Fraktur typed as \\mathcal, as above. Does not overlap the next entry (the subscript x^_i)."
+ },
+ {
+  "page": 123,
+  "where": "Same display, last subscript: 'X_(x^_i)'",
+  "scan": "a small x with a typed hat (the same x^ as on pp. 121-122, written \\hat{x} there; checked in a crop)",
+  "tex": "\\mathcal{X}_{(\\mathfrak{x}_i)}",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathfrak{x}_i)}|S)",
+   "new": "\\hat{x}_i)}|S)"
+  },
+  "note": "The TeX reads the hatted x as a Fraktur x. It is the completion at x_i, X_(x^_i) (Remark 5.8: X_(x^) = lim Spec(O^_{X_v,x})); a typed circumflex sits on the small x."
+ },
+ {
+  "page": 123,
+  "where": "Proof of 5.10: 'Supp f_*O_{J^p_X(X|S)} = |J^p_S(X|S)|'",
+  "scan": "typewriter Fraktur X three times",
+  "tex": "$f_*\\underline{O}_{J^p_{\\mathcal{X}}(\\mathcal{X}|S)}$ $=$ $|J^p_S(\\mathcal{X}|S)|$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$f_*\\underline{O}_{J^p_{\\mathcal{X}}(\\mathcal{X}|S)}$ $=$ $|J^p_S(\\mathcal{X}|S)|$",
+   "new": "$f_*\\underline{O}_{J^p_{\\mathfrak{X}}(\\mathfrak{X}|S)}$ $=$ $|J^p_S(\\mathfrak{X}|S)|$"
+  },
+  "note": "Fraktur typed as \\mathcal, as above."
+ },
+ {
+  "page": 123,
+  "where": "Proof of 5.10: 'the isomorphism J^p_{X_(x^)}(X_(x^)|S) ~-> J^p_{X_(x)}(X_(x)|S)'",
+  "scan": "typewriter Fraktur X four times; the first two subscripts are the small x with a typed hat (checked in a crop)",
+  "tex": "$J^p_{\\mathcal{X}_{(\\mathfrak{x})}}(\\mathcal{X}_{(\\mathfrak{x})}|S) \\xrightarrow{\\sim} J^p_{\\mathcal{X}_{(x)}}(\\mathcal{X}_{(x)}|S)$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$J^p_{\\mathcal{X}_{(\\mathfrak{x})}}(\\mathcal{X}_{(\\mathfrak{x})}|S) \\xrightarrow{\\sim} J^p_{\\mathcal{X}_{(x)}}(\\mathcal{X}_{(x)}|S)$",
+   "new": "$J^p_{\\mathfrak{X}_{(\\hat{x})}}(\\mathfrak{X}_{(\\hat{x})}|S) \\xrightarrow{\\sim} J^p_{\\mathfrak{X}_{(x)}}(\\mathfrak{X}_{(x)}|S)$"
+  },
+  "note": "One edit for two differences that interleave: Fraktur typed as \\mathcal (4x) and the hatted x read as \\mathfrak{x} (2x), as in the display above. The same isomorphism is written J^p_{\\mathfrak{X}_{(\\hat{x})}}(\\mathfrak{X}_{(\\hat{x})}|S) -> J^p_{\\mathfrak{X}_{(x)}}(...) on p. 122."
+ },
+ {
+  "page": 123,
+  "where": "Same sentence: 'for an isolated point x in J^p_X(X|S) .'",
+  "scan": "typewriter Fraktur X twice",
+  "tex": "in  $J^p_{\\mathcal{X}}(\\mathcal{X}|S)$  .",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "in  $J^p_{\\mathcal{X}}(\\mathcal{X}|S)$  .",
+   "new": "in  $J^p_{\\mathfrak{X}}(\\mathfrak{X}|S)$  ."
+  },
+  "note": "Fraktur typed as \\mathcal, as above."
+ },
+ {
+  "page": 123,
+  "where": "Corollary 5.10 (2): 'J^p_S(X|S) commute with base change'",
+  "scan": "commute (no s)",
+  "tex": "\\underline{commute with base change}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\underline{commutes with base change}",
+  "note": "Verb agreement slip (singular subject J^p_S(X|S)); Remark 5.11 says the Jacobian ideal 'commutes with base change'. Low: possibly the author's own wording. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 123,
+  "where": "Remark 5.11: 'f is smooth at x if and only if x notin Supp O_X/O_{X|Y} by 3.13(a)'",
+  "scan": "O_X/O_{X|Y}: both letters are underlined O's (checked in a crop)",
+  "tex": "\\mathrm{Supp}\\ \\underline{O}_X/\\underline{O}_{X|Y}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\mathrm{Supp}\\ \\underline{O}_X/\\underline{I}_{X|Y}",
+  "note": "The quotient is by the ideal sheaf I_{X|Y} obtained in the preceding sentence ('we obtain the ideal sheaf I_{X|Y}'); O_{X|Y} is not defined. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 124,
+  "where": "Section 6, second paragraph: 'is said to be a non-degenerate quadratic singu- / larity rational over k'",
+  "scan": "singu- / larity: the word is divided at the line end",
+  "tex": "singu-larity",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "singu-larity",
+   "new": "singularity"
+  },
+  "note": "The TeX keeps the print's line-end hyphen inside the word."
+ },
+ {
+  "page": 124,
+  "where": "Same sentence: 'if O^_{X,x} - k[[x_1,...,x_n]]/(f)'",
+  "scan": "a single dash at mid-height between O^_{X,x} and k; no tilde above it (checked in a crop)",
+  "tex": "$\\hat{O}_{X,x}$ $-$ $k$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\hat{O}_{X,x}$ $\\simeq$ $k$",
+  "note": "The definition requires an isomorphism O^_{X,x} ~= k[[x_1,...,x_n]]/(f), as in Lemma 6.2 on p. 125 ('A^_0 ~= k[[x_1,...,x_n]]/(f)'); only the bar of the sign was typed. Same kind of slip as the hyphen for '=' on p. 120. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 124,
+  "where": "Proof of Lemma 6.1: 'If we set X_i^(1) = X_i - e_i^(1) , then f(x_1^(1),...,x_n^(1)) ='",
+  "scan": "X_i^(1) and X_i: CAPITAL X, 27-28 px high against 20-21 px for the small x of f(x_1^(1),... on the same line (measured in a crop)",
+  "tex": "$X_i^{(1)} = X_i - \\epsilon_i^{(1)}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$x_i^{(1)} = x_i - \\epsilon_i^{(1)}$",
+  "note": "Capital/small slip: the variables are x_1,...,x_n, and the next formula is f(x_1^(1),...,x_n^(1)); p. 125 has x_i^(v) = x_i - (...). The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 125,
+  "where": "Proof of Lemma 6.1, first line: 'such that Sum e_i^(2) df/dx_u^(1) == h_4 (mod M^5)'",
+  "scan": "df/dx_u^(1): the subscript is a clear u (checked in a crop)",
+  "tex": "\\partial f/\\partial x_u^{(1)}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\partial f/\\partial x_i^{(1)}",
+  "note": "Index slip: the sum runs over i (e_i^(2)), and the next line has Sum e_i^(2) df/dx_i^(1); p. 124 has Sum e_i^(1) df/dx_i. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 125,
+  "where": "Lemma 6.2, first line: 'Let A_0 be a local k-algebra, essentially of finite type such that'",
+  "scan": "'be a local' underlined; 'k-' not underlined; 'algebra, essentially of finite type such that' underlined (checked in a crop)",
+  "tex": "\\underline{be a local k-algebra, essentially of finite type such that}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{be a local k-algebra, essentially of finite type such that}",
+   "new": "\\underline{be a local} $k$-\\underline{algebra, essentially of finite type such that}"
+  },
+  "note": "The letter k and its hyphen stand outside the underline, as in 'S-adic' and 'S-scheme' on pp. 119-123; the TeX also sets this k as text inside the underline."
+ },
+ {
+  "page": 125,
+  "where": "Lemma 6.2 (2): 'J_R(X|R) is a principal ideal in R generated by a free formal generator of R over Lambda i.e. I_R(X|R) = (t)'",
+  "scan": "J_R(X|R) is a principal ideal",
+  "tex": "(2)  $J_R(\\mathfrak{X}|R)$  \\underline{is a principal ideal in}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "(2)  $I_R(\\mathfrak{X}|R)$  \\underline{is a principal ideal in}",
+  "note": "J_R(X|R) is the closed formal subscheme of Spec(R); the principal ideal is its ideal I_R(X|R) = (t), as the same item says after 'i.e.'. Low: possibly the author's loose wording. The TeX keeps the printed reading. 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 125,
+  "where": "Proof of Lemma 6.2, heading 'Proof:'",
+  "scan": "the underline ends under the f; the colon is not underlined (checked in a crop)",
+  "tex": "\\underline{Proof:}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Proof:}",
+   "new": "\\underline{Proof}:"
+  },
+  "note": "As written for the other proofs of these pages (\\underline{Proof}: on pp. 121, 123, 124)."
+ },
+ {
+  "page": 125,
+  "where": "Last display: '0 -> A^ --df-- A^dx_1 (+) ... (+) A^dx_n ------ Omega^_{A^|R} -> 0', first map",
+  "scan": "df over a plain ruled line with no arrowhead; the line ends cleanly at both sides (checked in a crop); the outer maps 0 -> A^ and -> 0 are typed arrows",
+  "tex": "\\overset{df}{\\longrightarrow}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\overset{df}{\\longrightarrow}",
+   "new": "\\overset{df}{\\relbar\\joinrel\\relbar\\joinrel\\relbar}"
+  },
+  "corrected": "\\overset{df}{\\longrightarrow}",
+  "note": "The heads of the two long maps of the exact sequence were never drawn. The TeX silently supplies them; the fix restores the printed headless rule in the form proposed for p. 85 (\\overset{...}{\\relbar\\joinrel\\relbar\\joinrel\\relbar}). 'corrected' is the current TeX."
+ },
+ {
+  "page": 125,
+  "where": "Same display, second map (A^dx_1 (+) ... (+) A^dx_n to Omega^_{A^|R})",
+  "scan": "a long plain ruled line with no arrowhead, no label (checked in a crop)",
+  "tex": "\\xrightarrow{\\hspace{3em}}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\xrightarrow{\\hspace{3em}}",
+   "new": "\\relbar\\joinrel\\relbar\\joinrel\\relbar\\joinrel\\relbar\\joinrel\\relbar"
+  },
+  "corrected": "\\xrightarrow{\\hspace{3em}}",
+  "note": "As the previous entry. 'corrected' is the current TeX."
+ },
+ {
+  "page": 125,
+  "where": "Same display, last term: 'Omega^_{A^|R}'",
+  "scan": "two typed hats: one above the Omega and one above the subscript A (checked in a crop)",
+  "tex": "\\Omega_{\\hat{A}|R}",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Omega_{\\hat{A}|R}",
+   "new": "\\hat{\\Omega}_{\\hat{A}|R}"
+  },
+  "note": "The TeX has only the hat on A; the print also hats the Omega (the completed module of differentials, cf. Remark 5.8)."
+ }
+]

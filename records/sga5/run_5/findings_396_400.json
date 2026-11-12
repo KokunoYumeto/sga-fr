@@ -1,0 +1,1061 @@
+[
+ {
+  "page": 396,
+  "where": "heading of section 7",
+  "scan": "7.   Formule d'Euler-Poincaré.  (underlined title ending with a full stop)",
+  "tex": "\\subsection*{7. Formule d'Euler-Poincaré}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{7. Formule d'Euler-Poincaré}",
+   "new": "\\subsection*{7. Formule d'Euler-Poincaré.}"
+  },
+  "note": "The TeX drops the full stop that ends the underlined title."
+ },
+ {
+  "page": 396,
+  "where": "Théorème 7.1, statement lines 1-3, up to 'η le point générique de C,'",
+  "scan": "underlined: 'Soient' | 'une courbe algébrique connexe' | 'lisse et propre sur le corps' | 'algébriquement clos' | 'le point générique de'; C, k, η and the commas not",
+  "tex": "Soient $C$ une courbe algébrique connexe, ... le point générique de $C$, (statement environment, no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $C$ une courbe algébrique connexe, lisse et propre sur le corps $k$ algébriquement clos, $\\eta$ le point générique de $C$,",
+   "new": "\\emph{Soient} $C$ \\emph{une courbe algébrique connexe}, \\emph{lisse et propre sur le corps} $k$ \\emph{algébriquement clos}, $\\eta$ \\emph{le point générique de} $C$,"
+  },
+  "note": "Exposé X's statement environment sets the text upright with no underline markup; the print underlines the statement word group by word group (\\emph, as Propositions 3.8, 4.4 and 5.1 on pp. 381-390). Formulas, numbers and the punctuation between the groups are not underlined."
+ },
+ {
+  "page": 396,
+  "where": "Théorème 7.1, statement lines 3-6, from 'une sous-catégorie' to 'Sous ces conditions on a'",
+  "scan": "underlined: 'une sous-catégorie triangulée de' | 'stable par facteurs directs' | 'un complexe de faisceaux de' | '-modules tel que les conditions' | 'de' (a short stroke under its d only) | 'soient remplies' | 'Sous ces conditions on a'; Δ ⊂ D+(A), D+(A), F, A, 'i), ii)', 7.1 and the punctuation not",
+  "tex": "une sous-catégorie triangulée de $D^+(A)$ ... Sous ces conditions on a (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "une sous-catégorie triangulée de $D^+(A)$ stable par facteurs directs, $F$ un complexe de faisceaux de $A$-modules tel que les conditions i), ii) de 7.1 soient remplies. Sous ces conditions on a",
+   "new": "\\emph{une sous-catégorie triangulée de} $D^+(A)$ \\emph{stable par facteurs directs}, $F$ \\emph{un complexe de faisceaux de} $A$-\\emph{modules tel que les conditions} i), ii) \\emph{de} 7.1 \\emph{soient remplies}. \\emph{Sous ces conditions on a}"
+  },
+  "note": "Statement underline, continued. The 'de' before 7.1 has only a short underline stroke under its d; read as underlined. The misprint 7.1 (next item) stays as printed in this edit."
+ },
+ {
+  "page": 396,
+  "where": "Théorème 7.1, 'tel que les conditions i), ii) de 7.1 soient remplies'",
+  "scan": "de 7.1 (the 7 is clear)",
+  "tex": "les conditions i), ii) de 7.1 soient remplies (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "les conditions i), ii) de 6.1",
+  "note": "Wrong reference: conditions i) and ii) are those of 6.1 (pp. 393-394); 7.1 is this theorem. The TeX keeps the printed reading; the current layer already reads 6.1. After the underline edit above the diplomatic text reads 'i), ii) \\emph{de} 7.1'."
+ },
+ {
+  "page": 396,
+  "where": "Théorème 7.1, 'Sous ces conditions on a RΓ_C(F) ∈ Ob(Δ)'",
+  "scan": "R Γ_C(F): plain typewriter R",
+  "tex": "\\RG_C(F)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RG_C(F)",
+   "new": "\\mathrm{R}\\Gamma_C(F)"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 396,
+  "where": "same line, 'Ob(Δ)'",
+  "scan": "Ob(Δ) with a capital O",
+  "tex": "\\Ob(\\Delta)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ob(\\Delta)",
+   "new": "\\operatorname{Ob}(\\Delta)"
+  },
+  "note": "\\Ob prints 'ob' in s5.tex (the first \\providecommand, preamble line 101, \\operatorname{ob}, wins); the print has 'Ob'. As the applied fixes of pp. 372 and 376."
+ },
+ {
+  "page": 396,
+  "where": "Théorème 7.1, 'et la formule suivante (formule d'Euler-Poincaré) est vraie :'",
+  "scan": "underlined: 'et la formule suivante' | 'formule d'Euler-Poincaré' | 'est' | 'vraie'; parentheses and colon not",
+  "tex": "et la formule suivante (formule d'Euler-Poincaré) est vraie: (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et la formule suivante (formule d'Euler-Poincaré) est vraie:",
+   "new": "\\emph{et la formule suivante} (\\emph{formule d'Euler-Poincaré}) \\emph{est vraie}:"
+  },
+  "note": "Statement underline, continued (the statement ends on p. 397)."
+ },
+ {
+  "page": 397,
+  "where": "(7.2), left-hand side",
+  "scan": "cℓ_{K(Δ)}(R Γ_C(F)): plain typewriter R",
+  "tex": "\\clK{\\Delta}(\\RG_C(F))",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RG_C(F)",
+   "new": "\\mathrm{R}\\Gamma_C(F)"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 397,
+  "where": "EP on pp. 397 and 400 (convention, reported once): (7.2); three times in the big display of p. 400; EP_Δ(C,F) at the foot of p. 400",
+  "scan": "EP double-struck every time (both letters with doubled stems)",
+  "tex": "\\EP = \\operatorname{EP} (roman): '\\EP(C)\\clK{\\Delta}(F_{\\bar\\eta})' (p. 397), '\\EP(C)\\clKstar{\\Lambda[G]}(\\Lambda[G])', '+\\EP(C)\\clK{\\Delta}F_{\\bar\\eta}', '\\EP_\\Delta(C,F)' (p. 400)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of Exposé X, not itemized, as filed for pp. 390-393 (findings_391_395): one decision for the exposé (for example \\EP as \\mathbb{E}\\mathbb{P} inside Exposé X)."
+ },
+ {
+  "page": 397,
+  "where": "end of Théorème 7.1, 'où les ε^Δ_x(F) sont définis dans 6.2 (formule 6.2.2).'",
+  "scan": "underlined: 'où les' | 'sont définis dans' | 'formule'; ε^Δ_x(F), 6.2, 6.2.2 and the parentheses not",
+  "tex": "où les $\\varepsilon_x^\\Delta(F)$ sont définis dans 6.2 (formule 6.2.2). (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où les $\\varepsilon_x^\\Delta(F)$ sont définis dans 6.2 (formule 6.2.2).",
+   "new": "\\emph{où les} $\\varepsilon_x^\\Delta(F)$ \\emph{sont définis dans} 6.2 (\\emph{formule} 6.2.2)."
+  },
+  "note": "Last line of the underlined statement of Théorème 7.1 (Exposé X's statement environment sets the text upright with ...)."
+ },
+ {
+  "page": 397,
+  "where": "a), 'un complexe borné à gauche de faisceaux de Λ[G]-modûles'",
+  "scan": "modûles: a clear circumflex over the u",
+  "tex": "faisceaux de $\\Lambda[G]$-modules",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "faisceaux de $\\Lambda[G]$-modules",
+   "new": "faisceaux de $\\Lambda[G]$-modûles"
+  },
+  "corrected": "faisceaux de $\\Lambda[G]$-modules",
+  "note": "Typing error; the TeX silently corrects. The fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 397,
+  "where": "a), 'sur C . On a un isomorphisme :'",
+  "scan": "On a un isomorphisme : (colon before (7.3))",
+  "tex": "On a un isomorphisme, then the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$C$. On a un isomorphisme",
+   "new": "$C$. On a un isomorphisme:"
+  },
+  "note": "The TeX drops the colon (the file writes the print's ' :' as ':')."
+ },
+ {
+  "page": 397,
+  "where": "(7.3)",
+  "scan": "RΓ^G(RΓ_C (Ψ)) ≃ RΓ_C(R Γ̲^G (Ψ)) : all four R plain typewriter R",
+  "tex": "\\R\\Gamma^G(\\RG_C(\\Psi))\\simeq\\RG_C(\\R\\underline{\\Gamma}^G(\\Psi))",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R\\Gamma^G(\\RG_C(\\Psi))\\simeq\\RG_C(\\R\\underline{\\Gamma}^G(\\Psi))",
+   "new": "\\mathrm{R}\\Gamma^G(\\mathrm{R}\\Gamma_C(\\Psi))\\simeq\\mathrm{R}\\Gamma_C(\\mathrm{R}\\underline{\\Gamma}^G(\\Psi))"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 397,
+  "where": "'où Γ̲^G est le foncteur : \"sous faisceau des sections G-invariantes\" .'",
+  "scan": "straight typewriter double quotes",
+  "tex": "«sous-faisceau des sections $G$-invariantes»",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "«sous-faisceau des sections $G$-invariantes»",
+   "new": "``sous-faisceau des sections $G$-invariantes''"
+  },
+  "note": "Guillemets are not the print's form (the only guillemets of Exposé X); the file writes the print's quotes ``...'' (p. 394 ``localement constant''). Apply before the next item."
+ },
+ {
+  "page": 397,
+  "where": "same phrase, 'sous faisceau'",
+  "scan": "sous faisceau: a space, no hyphen (p. 396 prints sous-catégorie)",
+  "tex": "sous-faisceau",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "sous-faisceau des sections",
+   "new": "sous faisceau des sections"
+  },
+  "corrected": "sous-faisceau des sections",
+  "note": "Missing hyphen; the TeX silently corrects. Its old occurs once both before and after the quote fix above (apply after it)."
+ },
+ {
+  "page": 397,
+  "where": "'et Γ^G transforme un faisceau injectif de Λ[G]-modules dans un faisceau injectif de Λ-modules'",
+  "scan": "Γ^G without the hand-drawn underline (blank paper under the Γ)",
+  "tex": "et $\\underline{\\Gamma}^G$ transforme",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "injectif et $\\underline{\\Gamma}^G$ transforme",
+   "new": "injectif et $\\Gamma^G$ transforme"
+  },
+  "corrected": "injectif et $\\underline{\\Gamma}^G$ transforme",
+  "note": "The functor meant is the sheaf of invariants Γ̲^G (sheaves to sheaves), underlined in its definition just above, in (7.3) and in the display below; the underline was not drawn here. The TeX silently corrects."
+ },
+ {
+  "page": 397,
+  "where": "'(utiliser pour cela par exemple des adj nts évidents de Γ_C et Γ^G )'",
+  "scan": "Γ^G without underline",
+  "tex": "de $\\Gamma_C$ et $\\underline{\\Gamma}^G$)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\Gamma_C$ et $\\underline{\\Gamma}^G$)",
+   "new": "$\\Gamma_C$ et $\\Gamma^G$)"
+  },
+  "corrected": "$\\Gamma_C$ et $\\underline{\\Gamma}^G$)",
+  "note": "As the previous item (the adjoints of Γ_C and Γ̲^G); the TeX silently corrects. In 'adj  nts' the oi did not print (gap of two letters, physical): the TeX's 'adjoints' stands, not reported."
+ },
+ {
+  "page": 397,
+  "where": "b), 'nul en dehors de U . On a un isomorphisme :'",
+  "scan": "colon before (7.4)",
+  "tex": "On a un isomorphisme, then the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$U$. On a un isomorphisme",
+   "new": "$U$. On a un isomorphisme:"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 397,
+  "where": "(7.4), first member",
+  "scan": "Φ ≃ R Γ̲^G(p_*(Φ')): plain typewriter R",
+  "tex": "\\Phi\\simeq \\R\\underline{\\Gamma}^G(p_*(\\Phi')),",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Phi\\simeq \\R\\underline{\\Gamma}^G(p_*(\\Phi'))",
+   "new": "\\Phi\\simeq \\mathrm{R}\\underline{\\Gamma}^G(p_*(\\Phi'))"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 397,
+  "where": "(7.4), second part",
+  "scan": ", où  Φ' = p*(Φ)  (no full stop)",
+  "tex": "\\qquad \\Phi'=p^*(\\Phi).",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\qquad \\Phi'=p^*(\\Phi).",
+   "new": "\\qquad\\text{où } \\Phi'=p^*(\\Phi)"
+  },
+  "note": "The TeX drops 'où' and adds a full stop at the end of the display (one edit)."
+ },
+ {
+  "page": 397,
+  "where": "last line of the printed page, 'On aura donc l'isomorphisme :'",
+  "scan": "l'isomorphisme : (then blank paper)",
+  "tex": "On aura donc l'isomorphisme",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "On aura donc l'isomorphisme",
+   "new": "On aura donc l'isomorphisme:"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 397,
+  "where": "display Φ ⥲ R((Γ̲^G ∘ p_*) ∘ p^*)(Φ) (printed at the top of p. 398; in page_397.tex as the files stand)",
+  "scan": "an arrow with a tilde above it (not ≃); plain typewriter R",
+  "tex": "\\Phi\\simeq \\R\\bigl((",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Phi\\simeq \\R\\bigl((",
+   "new": "\\Phi\\xrightarrow{\\sim} \\mathrm{R}\\bigl(("
+  },
+  "note": "One edit: the arrow (\\xrightarrow{\\sim}, as the file's \\xleftarrow{\\sim} in (7.6)) and the plain R. Old stays unique on p. 398 after the folio-398 marker move."
+ },
+ {
+  "page": 397,
+  "where": "end of the same display (printed at the top of p. 398)",
+  "scan": "... ∘ p^*)(Φ) with no full stop",
+  "tex": "p^*\\bigr)(\\Phi).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "p^*\\bigr)(\\Phi).",
+   "new": "p^*\\bigr)(\\Phi)"
+  },
+  "note": "The TeX adds a full stop at the end of the display. Old stays unique on p. 398 after the marker move."
+ },
+ {
+  "page": 398,
+  "where": "top of the page: the display Φ ⥲ R((Γ̲^G ∘ p_*) ∘ p^*)(Φ)",
+  "scan": "p. 398 begins with this display, then 'D'autre part on peut appliquer de nouveau'; p. 397 ends with 'On aura donc l'isomorphisme :' and blank paper",
+  "tex": "the display ('\\[', '\\Phi\\simeq \\R\\bigl((...)(\\Phi).', '\\]') is the last three lines of page_397.tex; the folio-398 marker follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 398 really begins at that display's '\\[' (diplomatic s5.tex line 13482, current 13478; the marker stands at 13485 / 13481). Exact fix: python -I move_marker.py 5 398 \"$(printf '%s\\n%s' '\\[' '\\Phi')\" --before (simulated in memory on both layers: the marker lands on its own line between 'On aura donc l'isomorphisme' and '\\['; the anchor still matches after the p. 397 edits of that display). Text not moved; its differences are filed under p. 397."
+ },
+ {
+  "page": 398,
+  "where": "first line, 'D'autre part on peut appliquer'",
+  "scan": "D'autre part on peut (no comma)",
+  "tex": "D'%\\nautre part, on peut",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "autre part, on peut",
+   "new": "autre part on peut"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 398,
+  "where": "'([5] Prop 3.1)'",
+  "scan": "Prop 3.1 (no full stop after Prop)",
+  "tex": "([5] Prop. 3.1)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "([5] Prop. 3.1)",
+   "new": "([5] Prop 3.1)"
+  },
+  "note": "The TeX adds the abbreviation's full stop (p. 397 prints 'prop. 3.1' with it)."
+ },
+ {
+  "page": 398,
+  "where": "'compte tenu que Rp* = p* , Rp_* = p_* :'",
+  "scan": "both R plain typewriter R (foot serifs)",
+  "tex": "$\\R p^*=p^*$, $\\R p_*=p_*$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\R p^*=p^*$, $\\R p_*=p_*$",
+   "new": "$\\mathrm{R} p^*=p^*$, $\\mathrm{R} p_*=p_*$"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 398,
+  "where": "display Φ ⥲ R(Γ̲^G ∘ p_*)(p*(Φ)) ≃ (RΓ̲^G)(p_* p*(Φ)) ,",
+  "scan": "the first relation is an arrow with a tilde above it (as at the top of the page), the second ≃; both R plain",
+  "tex": "\\Phi\\simeq \\R(\\underline{\\Gamma}^G\\circ p_*)(p^*(\\Phi))\n\\simeq (\\R\\underline{\\Gamma}^G)(p_*p^*(\\Phi)),",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Phi\\simeq \\R(\\underline{\\Gamma}^G\\circ p_*)(p^*(\\Phi))\n\\simeq (\\R\\underline{\\Gamma}^G)",
+   "new": "\\Phi\\xrightarrow{\\sim} \\mathrm{R}(\\underline{\\Gamma}^G\\circ p_*)(p^*(\\Phi))\n\\simeq (\\mathrm{R}\\underline{\\Gamma}^G)"
+  },
+  "note": "One edit: the arrow and the two plain R."
+ },
+ {
+  "page": 398,
+  "where": "(7.5), the members",
+  "scan": "R Γ_C(Φ) = (RΓ^G)(R Γ_{C'}(Φ')) : three plain R (the blotted subscripts read as C, C', as the TeX)",
+  "tex": "\\RG_C(\\Phi)=(\\R\\Gamma^G)(\\RG_{C'}(\\Phi')),",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RG_C(\\Phi)=(\\R\\Gamma^G)(\\RG_{C'}(\\Phi'))",
+   "new": "\\mathrm{R}\\Gamma_C(\\Phi)=(\\mathrm{R}\\Gamma^G)(\\mathrm{R}\\Gamma_{C'}(\\Phi'))"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 398,
+  "where": "(7.5), second part",
+  "scan": ",   où   Φ' = p*(Φ)   .",
+  "tex": "\\qquad \\Phi'=p^*(\\Phi).",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\qquad \\Phi'=p^*(\\Phi)",
+   "new": "\\qquad\\text{où } \\Phi'=p^*(\\Phi)"
+  },
+  "note": "The TeX drops 'où' (as in (7.4))."
+ },
+ {
+  "page": 398,
+  "where": "display after 'En effet on a :'",
+  "scan": "(RΓ^G)(RΓ_{C'}(Φ')) ≃ (RΓ^G)(RΓ_C(p_*(Φ'))) ≃ RΓ_C(RΓ̲^G(p_*(Φ'))) : all six R plain",
+  "tex": "(\\R\\Gamma^G)(\\RG_{C'}(\\Phi')) ... \\RG_C(\\R\\underline{\\Gamma}^G(p_*(\\Phi')))",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\R\\Gamma^G)(\\RG_{C'}(\\Phi'))\n\\simeq\n(\\R\\Gamma^G)(\\RG_C(p_*(\\Phi')))\n\\simeq\n\\RG_C(\\R\\underline{\\Gamma}^G(p_*(\\Phi')))",
+   "new": "(\\mathrm{R}\\Gamma^G)(\\mathrm{R}\\Gamma_{C'}(\\Phi'))\n\\simeq\n(\\mathrm{R}\\Gamma^G)(\\mathrm{R}\\Gamma_C(p_*(\\Phi')))\n\\simeq\n\\mathrm{R}\\Gamma_C(\\mathrm{R}\\underline{\\Gamma}^G(p_*(\\Phi')))"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 398,
+  "where": "d), 'les inclusions canoniques et posons :'",
+  "scan": "posons : (colon before the display)",
+  "tex": "et posons",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "canoniques et posons",
+   "new": "canoniques et posons:"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 398,
+  "where": "'Pour calculèr RΓ_C(Φ)'",
+  "scan": "calculèr: a grave accent on the e",
+  "tex": "Pour calculer",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour calculer",
+   "new": "Pour calculèr"
+  },
+  "corrected": "Pour calculer",
+  "note": "Typing error; the TeX silently corrects."
+ },
+ {
+  "page": 398,
+  "where": "same line, RΓ_C(Φ)",
+  "scan": "plain R",
+  "tex": "$\\RG_C(\\Phi)$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\RG_C(\\Phi)$",
+   "new": "$\\mathrm{R}\\Gamma_C(\\Phi)$"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 398,
+  "where": "'avec les notations de 7.1 , Φ ≃ Λ_{U',C'} ⊗_Λ M'",
+  "scan": "Φ without a prime (the primes of Φ' elsewhere on the page are clear ticks)",
+  "tex": "\\Phi'\\simeq \\Lambda_{U',C'}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Phi'\\simeq \\Lambda_{U',C'}",
+   "new": "\\Phi\\simeq \\Lambda_{U',C'}"
+  },
+  "corrected": "\\Phi'\\simeq \\Lambda_{U',C'}",
+  "note": "The sheaf on C' is Φ' = p*(Φ) (Φ = i_!(F|U) lives on C); the TeX silently corrects. Adjacent to, not overlapping, the next item."
+ },
+ {
+  "page": 398,
+  "where": "same formula, the tensor product and what follows",
+  "scan": "⊗_Λ M   et la formule : a plain ⊗ (no L above it) and no comma",
+  "tex": "\\otimes_\\Lambda^L M, (then \\] and 'et la formule')",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes_\\Lambda^L M,\n\\]",
+   "new": "\\otimes_\\Lambda M\n\\]"
+  },
+  "note": "The TeX adds the derived-tensor L (the print has the ordinary tensor product here; Λ_{U',C'} is flat over Λ) and a comma (one edit). The display for the print's run-in formula is layout, not reported."
+ },
+ {
+  "page": 398,
+  "where": "'la formule de Kunneth (SGA 4 XVII)'",
+  "scan": "Kunneth: no diaeresis on the u (clean paper above it; p. 393 prints Künneth with it)",
+  "tex": "Künneth",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "Künneth",
+   "new": "Kunneth"
+  },
+  "corrected": "Künneth",
+  "note": "Typing slip (the typewriter has the diaeresis, p. 393); the TeX silently corrects."
+ },
+ {
+  "page": 398,
+  "where": "'nous donnent' (the verb)",
+  "scan": "nous donnent (plural: the subject is 'Φ ≃ Λ_{U',C'} ⊗_Λ M et la formule de Kunneth')",
+  "tex": "nous donne",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "XVII) nous donne",
+   "new": "XVII) nous donnent"
+  },
+  "note": "The TeX's singular follows its display of the first subject; the print's plural is grammatical."
+ },
+ {
+  "page": 398,
+  "where": "(7.6), first two RΓ",
+  "scan": "RΓ_{C'}(Φ') ≃ RΓ_{C'}(Λ_{U',C'} ... : plain R",
+  "tex": "\\RG_{C'}(\\Phi')\n\\simeq\n\\RG_{C'}(\\Lambda",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RG_{C'}(\\Phi')\n\\simeq\n\\RG_{C'}(\\Lambda",
+   "new": "\\mathrm{R}\\Gamma_{C'}(\\Phi')\n\\simeq\n\\mathrm{R}\\Gamma_{C'}(\\Lambda"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 398,
+  "where": "(7.6), first derived tensor",
+  "scan": "a double-struck L (doubled stem) above ⊗, Λ below",
+  "tex": "\\otimes_\\Lambda^L M)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes_\\Lambda^L M)",
+   "new": "\\otimes_\\Lambda^{\\mathbb{L}} M)"
+  },
+  "note": "As p. 391 (findings_391_395): outside Exposé III the print's double-struck L is \\mathbb{L}."
+ },
+ {
+  "page": 398,
+  "where": "(7.6), third RΓ",
+  "scan": "plain R (the prime of C' blotted)",
+  "tex": "\\xleftarrow{\\sim}\n\\RG_{C'}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xleftarrow{\\sim}\n\\RG_{C'}",
+   "new": "\\xleftarrow{\\sim}\n\\mathrm{R}\\Gamma_{C'}"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 398,
+  "where": "(7.6), second derived tensor",
+  "scan": "double-struck L above ⊗",
+  "tex": "\\otimes_\\Lambda^L M.",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes_\\Lambda^L M.",
+   "new": "\\otimes_\\Lambda^{\\mathbb{L}} M."
+  },
+  "note": "As the first derived tensor of (7.6)."
+ },
+ {
+  "page": 399,
+  "where": "line 1, 'entre les objets de D(A[G])'",
+  "scan": "'objets de' underlined (a ragged line under both words)",
+  "tex": "les objets de $D(A[G])$ (no underline)",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "les objets de $D(A[G])$",
+   "new": "les \\emph{objets de} $D(A[G])$"
+  },
+  "note": "Emphasis in the running text (the isomorphism holds between objects of D(A[G])). The line is rougher than the typed underlines of p. 396 but stands in the print."
+ },
+ {
+  "page": 399,
+  "where": "'qui est appliquable grâce à 2.1'",
+  "scan": "appliquable",
+  "tex": "applicable",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "qui est applicable",
+   "new": "qui est appliquable"
+  },
+  "corrected": "qui est applicable",
+  "note": "Non-standard spelling of the print; the TeX silently corrects."
+ },
+ {
+  "page": 399,
+  "where": "'on obtient :'",
+  "scan": "colon before (7.7)",
+  "tex": "2.1, on obtient",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "2.1, on obtient",
+   "new": "2.1, on obtient:"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 399,
+  "where": "(7.7), first and second members",
+  "scan": "RΓ_C(F_{U,C}) ≃ RΓ^G(RΓ_{C'}(... : three plain R",
+  "tex": "\\RG_C(F_{U,C})\n\\simeq\n\\R\\Gamma^G\\bigl(\\RG_{C'}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RG_C(F_{U,C})\n\\simeq\n\\R\\Gamma^G\\bigl(\\RG_{C'}",
+   "new": "\\mathrm{R}\\Gamma_C(F_{U,C})\n\\simeq\n\\mathrm{R}\\Gamma^G\\bigl(\\mathrm{R}\\Gamma_{C'}"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 399,
+  "where": "(7.7), the derived tensor",
+  "scan": "double-struck L above ⊗",
+  "tex": "\\otimes_\\Lambda^L M\\bigr)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes_\\Lambda^L M\\bigr)",
+   "new": "\\otimes_\\Lambda^{\\mathbb{L}} M\\bigr)"
+  },
+  "note": "As (7.6) on p. 398."
+ },
+ {
+  "page": 399,
+  "where": "(7.7), third member",
+  "scan": "R Hom_{Λ[G]}(RΓ_{C'}(Λ_{U',C'})^∨, M) : both R plain",
+  "tex": "\\RHom_{\\Lambda[G]}\\bigl(\\RG_{C'}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RHom_{\\Lambda[G]}\\bigl(\\RG_{C'}",
+   "new": "\\mathrm{R}\\Hom_{\\Lambda[G]}\\bigl(\\mathrm{R}\\Gamma_{C'}"
+  },
+  "note": "\\RHom is \\RHomCore = \\mathbb{R}\\mathrm{Hom} (preamble line 64). Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 399,
+  "where": "'Donc compte tenu de M ≃ F_η̄ ∈ Ob(Δ)'",
+  "scan": "Ob(Δ) with a capital O",
+  "tex": "F_{\\bar\\eta}\\in\\Ob(\\Delta)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "F_{\\bar\\eta}\\in\\Ob(\\Delta)",
+   "new": "F_{\\bar\\eta}\\in\\operatorname{Ob}(\\Delta)"
+  },
+  "note": "\\Ob prints 'ob' in s5.tex (the first \\providecommand, preamble line 101, \\operatorname{ob}, wins); the print has 'Ob'. As the applied fixes of pp. 372 and 376."
+ },
+ {
+  "page": 399,
+  "where": "'et de (3.6), on trouve :'",
+  "scan": "colon before the display",
+  "tex": "on trouve",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "et de (3.6), on trouve",
+   "new": "et de (3.6), on trouve:"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 399,
+  "where": "display RΓ_C(F_{U,C}) ∈ Ob(Δ) .",
+  "scan": "plain R",
+  "tex": "\\RG_C(F_{U,C})\\in",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RG_C(F_{U,C})\\in",
+   "new": "\\mathrm{R}\\Gamma_C(F_{U,C})\\in"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 399,
+  "where": "same display, Ob(Δ)",
+  "scan": "capital O",
+  "tex": "\\Ob(\\Delta).",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ob(\\Delta).",
+   "new": "\\operatorname{Ob}(\\Delta)."
+  },
+  "note": "\\Ob prints 'ob' in s5.tex (the first \\providecommand, preamble line 101, \\operatorname{ob}, wins); the print has 'Ob'. As the applied fixes of pp. 372 and 376."
+ },
+ {
+  "page": 399,
+  "where": "'D'autre part on a le triangle distingué'",
+  "scan": "an indented new paragraph (the line starts about 115 px right of the margin of 'trouve :' and 'où évidement')",
+  "tex": "runs on after the display (\\] then 'D'autre part' with no blank line)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\]\nD'autre part on a le triangle",
+   "new": "\\]\n\nD'autre part on a le triangle"
+  },
+  "note": "Paragraph break."
+ },
+ {
+  "page": 399,
+  "where": "'(où Y = C - U) :'",
+  "scan": "colon before the diagram",
+  "tex": "(où $Y=C-U$)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(où $Y=C-U$)",
+   "new": "(où $Y=C-U$):"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 399,
+  "where": "triangle (7.8), the three vertices",
+  "scan": "RΓ_Y(F|Y), RΓ_C(F_{U,C}), RΓ_C(F): plain R",
+  "tex": "& \\RG_Y(F|Y) ... \\RG_C(F_{U,C}) ... \\RG_C(F)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "& \\RG_Y(F|Y) \\arrow[dl] & \\\\\n\\RG_C(F_{U,C}) \\arrow[rr] && \\RG_C(F)",
+   "new": "& \\mathrm{R}\\Gamma_Y(F|Y) \\arrow[dl] & \\\\\n\\mathrm{R}\\Gamma_C(F_{U,C}) \\arrow[rr] && \\mathrm{R}\\Gamma_C(F)"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392). The arrows agree with the print."
+ },
+ {
+  "page": 399,
+  "where": "end of the triangle (7.8)",
+  "scan": "RΓ_C(F)    , : a comma after the bottom right vertex",
+  "tex": "no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": " \\arrow[ul]",
+   "new": ", \\arrow[ul]"
+  },
+  "note": "The TeX drops the comma (set in the node, as the full stop of the triangle on p. 392). Adjacent to, not overlapping, the R edit."
+ },
+ {
+  "page": 399,
+  "where": "'où évidement RΓ_Y(F) = ...'",
+  "scan": "évidement (one m)",
+  "tex": "où évidemment",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "où évidemment",
+   "new": "où évidement"
+  },
+  "corrected": "où évidemment",
+  "note": "Typing error; the TeX silently corrects."
+ },
+ {
+  "page": 399,
+  "where": "'RΓ_Y(F) = ∐_{y∈Y} F_y'",
+  "scan": "plain R",
+  "tex": "\\RG_Y(F)=",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RG_Y(F)=",
+   "new": "\\mathrm{R}\\Gamma_Y(F)="
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 399,
+  "where": "same, '∈ Ob(Δ),'",
+  "scan": "capital O",
+  "tex": "\\Ob(\\Delta),",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ob(\\Delta),",
+   "new": "\\operatorname{Ob}(\\Delta),"
+  },
+  "note": "\\Ob prints 'ob' in s5.tex (the first \\providecommand, preamble line 101, \\operatorname{ob}, wins); the print has 'Ob'. As the applied fixes of pp. 372 and 376."
+ },
+ {
+  "page": 399,
+  "where": "'car F_y ∈ Ob(Δ) (condition (i))'",
+  "scan": "capital O",
+  "tex": "car $F_y\\in\\Ob(\\Delta)$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "car $F_y\\in\\Ob(\\Delta)$",
+   "new": "car $F_y\\in\\operatorname{Ob}(\\Delta)$"
+  },
+  "note": "\\Ob prints 'ob' in s5.tex (the first \\providecommand, preamble line 101, \\operatorname{ob}, wins); the print has 'Ob'. As the applied fixes of pp. 372 and 376."
+ },
+ {
+  "page": 399,
+  "where": "'Il en résulte donc que RΓ_C(F) ∈ Ob(Δ)'",
+  "scan": "plain R",
+  "tex": "que $\\RG_C(F)\\in",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "que $\\RG_C(F)\\in",
+   "new": "que $\\mathrm{R}\\Gamma_C(F)\\in"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 399,
+  "where": "same, 'Ob(Δ) ,'",
+  "scan": "capital O",
+  "tex": "\\Ob(\\Delta)$, c'est",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ob(\\Delta)$, c'est",
+   "new": "\\operatorname{Ob}(\\Delta)$, c'est"
+  },
+  "note": "\\Ob prints 'ob' in s5.tex (the first \\providecommand, preamble line 101, \\operatorname{ob}, wins); the print has 'Ob'. As the applied fixes of pp. 372 and 376."
+ },
+ {
+  "page": 399,
+  "where": "'nous donne de plus la relation :'",
+  "scan": "colon before the display",
+  "tex": "de plus la relation",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de plus la relation",
+   "new": "de plus la relation:"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 399,
+  "where": "first relation, the two RΓ",
+  "scan": "cℓ(RΓ_C(F)) = cℓ(R Γ_C(F_{U,C})) : plain R",
+  "tex": "\\clK{\\Delta}(\\RG_C(F))\n=\n\\clK{\\Delta}(\\RG_C(F_{U,C}))",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\clK{\\Delta}(\\RG_C(F))\n=\n\\clK{\\Delta}(\\RG_C(F_{U,C}))",
+   "new": "\\clK{\\Delta}(\\mathrm{R}\\Gamma_C(F))\n=\n\\clK{\\Delta}(\\mathrm{R}\\Gamma_C(F_{U,C}))"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 399,
+  "where": "first relation, the summand",
+  "scan": "cℓ_{K(Δ)}(F_ȳ): a bar over the y (as over η in F_η̄)",
+  "tex": "\\clK{\\Delta}(F_y),",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\clK{\\Delta}(F_y),",
+   "new": "\\clK{\\Delta}(F_{\\bar y}),"
+  },
+  "note": "The stalk at the geometric point ȳ; the TeX drops the bar (also in the second relation and three times on p. 400). The F_y of '∐ F_y ∈ Ob(Δ), car F_y ∈ Ob(Δ)' have no bar in the print, as in the TeX."
+ },
+ {
+  "page": 399,
+  "where": "second relation, RΓ and R Hom",
+  "scan": "cℓ(RΓ_C(F)) = cℓ(R Hom_{Λ[G]}(RΓ_{C'}(... : plain R",
+  "tex": "\\clK{\\Delta}(\\RG_C(F))\n=\n\\clK{\\Delta}\\bigl(\\RHom_{\\Lambda[G]}(\\RG_{C'}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\clK{\\Delta}(\\RG_C(F))\n=\n\\clK{\\Delta}\\bigl(\\RHom_{\\Lambda[G]}(\\RG_{C'}",
+   "new": "\\clK{\\Delta}(\\mathrm{R}\\Gamma_C(F))\n=\n\\clK{\\Delta}\\bigl(\\mathrm{R}\\Hom_{\\Lambda[G]}(\\mathrm{R}\\Gamma_{C'}"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 399,
+  "where": "second relation, the summand",
+  "scan": "cℓ_{K(Δ)}(F_ȳ) .",
+  "tex": "\\clK{\\Delta}(F_y).",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\clK{\\Delta}(F_y).",
+   "new": "\\clK{\\Delta}(F_{\\bar y})."
+  },
+  "note": "As the first relation."
+ },
+ {
+  "page": 400,
+  "where": "first line, 'Pour obtenir la formule d'Euler-Poincaré'",
+  "scan": "an indented new paragraph (p. 399 ends with a display)",
+  "tex": "follows the marker after the closing \\] of p. 399 with no blank line",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "Pour obtenir la formule d'Euler-Poincaré",
+   "new": "\nPour obtenir la formule d'Euler-Poincaré"
+  },
+  "note": "Paragraph break; the edit puts a blank line after the marker line (the marker itself unchanged)."
+ },
+ {
+  "page": 400,
+  "where": "first display, both RΓ",
+  "scan": "cℓ(RΓ_{C'}(Λ_{U',C'})) = cℓ(RΓ_{C'}(... : plain R",
+  "tex": "\\clKstar{\\Lambda[G]}\\bigl(\\RG_{C'}(\\Lambda_{U',C'})\\bigr)\n=\n\\clKstar{\\Lambda[G]}\\bigl(\\RG_{C'}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\clKstar{\\Lambda[G]}\\bigl(\\RG_{C'}(\\Lambda_{U',C'})\\bigr)\n=\n\\clKstar{\\Lambda[G]}\\bigl(\\RG_{C'}",
+   "new": "\\clKstar{\\Lambda[G]}\\bigl(\\mathrm{R}\\Gamma_{C'}(\\Lambda_{U',C'})\\bigr)\n=\n\\clKstar{\\Lambda[G]}\\bigl(\\mathrm{R}\\Gamma_{C'}"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 400,
+  "where": "first display, right-hand side",
+  "scan": "cℓ_{K•(Λ[G])}(RΓ_{C'}(Λ_{U',C'})^∨   . : the parenthesis opened after cℓ is not closed",
+  "tex": "(\\Lambda_{U',C'})^\\vee\\bigr).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "^\\vee\\bigr).",
+   "new": "^\\vee."
+  },
+  "corrected": "^\\vee\\bigr).",
+  "note": "The TeX silently closes it (\\bigl( needs no partner). The Λ of this Λ_{U',C'} is broken in the scan (physical)."
+ },
+ {
+  "page": 400,
+  "where": "big display, first line, RΓ_C(F) and RΓ_{C'}",
+  "scan": "plain R",
+  "tex": "\\clK{\\Delta}(\\RG_C(F))\n&=\\operatorname{hom}\\Bigl(\n\\clKstar{\\Lambda[G]}\\bigl(\\RG_{C'}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\clK{\\Delta}(\\RG_C(F))\n&=\\operatorname{hom}\\Bigl(\n\\clKstar{\\Lambda[G]}\\bigl(\\RG_{C'}",
+   "new": "\\clK{\\Delta}(\\mathrm{R}\\Gamma_C(F))\n&=\\operatorname{hom}\\Bigl(\n\\clKstar{\\Lambda[G]}\\bigl(\\mathrm{R}\\Gamma_{C'}"
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ },
+ {
+  "page": 400,
+  "where": "big display, first line, index of the second class map",
+  "scan": "cℓ_{K(D(A[G]_Δ)}(F_η̄)) : no parenthesis after ] (the same index on the third line reads K(D(A[G])_Δ))",
+  "tex": "\\cl_{K(D(A[G])_\\Delta)}(F_{\\bar\\eta})\\Bigr)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "A[G])_\\Delta)}(F_{\\bar\\eta})\\Bigr)\n",
+   "new": "A[G]_\\Delta)}(F_{\\bar\\eta})\\Bigr)\n"
+  },
+  "corrected": "A[G])_\\Delta)}(F_{\\bar\\eta})\\Bigr)\n",
+  "note": "The TeX silently corrects."
+ },
+ {
+  "page": 400,
+  "where": "big display, first line, last summand",
+  "scan": "cℓ_{K(Δ)}(F_ȳ) (bar over y)",
+  "tex": " +\\sum_{y\\in Y}\\clK{\\Delta}(F_y)\\\\",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": " +\\sum_{y\\in Y}\\clK{\\Delta}(F_y)",
+   "new": " +\\sum_{y\\in Y}\\clK{\\Delta}(F_{\\bar y})"
+  },
+  "note": "As on p. 399."
+ },
+ {
+  "page": 400,
+  "where": "big display, second line, first summand",
+  "scan": "cℓ_{K(Δ)}(F_ȳ)",
+  "tex": "&=\\sum_{y\\in Y}\\clK{\\Delta}(F_y)\\\\",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "&=\\sum_{y\\in Y}\\clK{\\Delta}(F_y)\\\\\n&\\quad",
+   "new": "&=\\sum_{y\\in Y}\\clK{\\Delta}(F_{\\bar y})\\\\\n&\\quad"
+  },
+  "note": "As on p. 399."
+ },
+ {
+  "page": 400,
+  "where": "big display, second line, 'hom(EP(C) cℓ_{K•(Λ[G]}(Λ[G] - Σ'",
+  "scan": "K•(Λ[G] : the parenthesis of the index is not closed",
+  "tex": "\\EP(C)\\clKstar{\\Lambda[G]}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\EP(C)\\clKstar{\\Lambda[G]}",
+   "new": "\\EP(C)\\operatorname{cl}_{K^{\\bullet}(\\Lambda[G]}"
+  },
+  "corrected": "\\EP(C)\\clKstar{\\Lambda[G]}",
+  "note": "\\clKstar{#1} is \\operatorname{cl}_{K^{\\bullet}(#1)}; the TeX silently closes the parenthesis. Adjacent to, not overlapping, the next item."
+ },
+ {
+  "page": 400,
+  "where": "same, the argument '(Λ[G] - Σ'",
+  "scan": "(Λ[G] - Σ_{y∈Y}(Sw^Λ_y + ... : the argument's parenthesis is not closed before the minus sign",
+  "tex": "(\\Lambda[G])\\n -\\sum",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\Lambda[G])\n -\\sum",
+   "new": "(\\Lambda[G]\n -\\sum"
+  },
+  "corrected": "(\\Lambda[G])\n -\\sum",
+  "note": "The TeX silently closes it."
+ },
+ {
+  "page": 400,
+  "where": "big display, fourth line, first summand",
+  "scan": "cℓ_{K(Δ)}(F_ȳ)",
+  "tex": "&=\\sum_{y\\in Y}\\clK{\\Delta}(F_y)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "&=\\sum_{y\\in Y}\\clK{\\Delta}(F_y)\n +\\EP(C)",
+   "new": "&=\\sum_{y\\in Y}\\clK{\\Delta}(F_{\\bar y})\n +\\EP(C)"
+  },
+  "note": "As on p. 399."
+ },
+ {
+  "page": 400,
+  "where": "big display, last line",
+  "scan": "Σ_{y∈Y} ε^Δ_x(F) : index x under a sum over y",
+  "tex": "\\varepsilon_y^\\Delta(F).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\varepsilon_y^\\Delta(F).",
+   "new": "\\varepsilon_x^\\Delta(F)."
+  },
+  "corrected": "\\varepsilon_y^\\Delta(F).",
+  "note": "The TeX silently corrects."
+ },
+ {
+  "page": 400,
+  "where": "'Compte tenu que ε^Δ_x(F) = 0 pour x ∈ 𝒰'",
+  "scan": "an indented new paragraph after the display",
+  "tex": "\\] then 'Compte tenu que' with no blank line",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\]\nCompte tenu que",
+   "new": "\\]\n\nCompte tenu que"
+  },
+  "note": "Paragraph break."
+ },
+ {
+  "page": 400,
+  "where": "'Pour un complexe de faisceaux F , satisfaisant'",
+  "scan": "an indented new paragraph after the short line 'formule (7.2) .'",
+  "tex": "runs on: '(7.2). Pour un complexe'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "(7.2). Pour un complexe",
+   "new": "(7.2).\n\nPour un complexe"
+  },
+  "note": "Paragraph break."
+ },
+ {
+  "page": 400,
+  "where": "last display, EP_Δ(C,F) = cℓ_{K(Δ)}(RΓ_C(F))",
+  "scan": "plain R",
+  "tex": "\\clK{\\Delta}(\\RG_C(F)).",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\clK{\\Delta}(\\RG_C(F)).",
+   "new": "\\clK{\\Delta}(\\mathrm{R}\\Gamma_C(F))."
+  },
+  "note": "Every R of RΓ, RHom and Rp on pp. 396-400 is the plain typewriter R (foot serifs), not the sans-serif double-struck R of p. 391; \\RG = \\R\\Gamma, \\R and \\RHom give ℝ in s5.tex. Itemized (no blanket rule: the print has ℝ twice on pp. 391-392)."
+ }
+]

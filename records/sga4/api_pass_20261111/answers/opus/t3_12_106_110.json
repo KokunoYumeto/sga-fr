@@ -1,0 +1,87 @@
+[
+ {
+  "page": 106,
+  "where": "Démonstration de 6.5 et 6.6, definition of T'^i",
+  "scan": "T'^i(F) = H^i(Y,g*(F))",
+  "tex": "{T'}^{i}=H^{i}(Y,g^{\\ast}(F))",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "${T'}^{i}=H^{i}(Y,g^{\\ast}(F))$",
+   "new": "${T'}^{i}(F)=H^{i}(Y,g^{\\ast}(F))$"
+  },
+  "note": "The argument (F) after T'^i is dropped in the TeX."
+ },
+ {
+  "page": 106,
+  "where": "same formula",
+  "scan": "H^i(Y,g*(F))",
+  "tex": "H^{i}(Y,g^{\\ast}(F))",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "H^{i}(Y,h^{\\ast}(F))",
+  "note": "The morphism is h throughout; the print's g* is a slip. The TeX keeps it."
+ },
+ {
+  "page": 106,
+  "where": "grâce au fait que le foncteur h· est exact",
+  "scan": "h˙ (raised dot)",
+  "tex": "h^{\\bigdot}",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "h^{\\ast}",
+  "note": "The exact functor meant is h*; the print shows a dot, possibly a faint asterisk. The TeX keeps the dot."
+ },
+ {
+  "page": 108,
+  "where": "Ceci posé, avec les notations de 6.6 (ii), comme l'image ...",
+  "scan": "comme l'image de η de ξ dans H^1(Y,h*(G))",
+  "tex": "comme l'image de $\\eta$ dans",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "comme l'image de $\\eta$ dans",
+   "new": "comme l'image de $\\eta$ de $\\xi$ dans"
+  },
+  "note": "The TeX drops 'de ξ'. The printed 'de η de ξ' is itself presumably a slip for 'l'image η de ξ'."
+ },
+ {
+  "page": 108,
+  "where": "a évidemment ξ comme image dans H^1(Y,hξ(F))",
+  "scan": "H^1(Y,hξ(F))",
+  "tex": "H^1(Y,h\\xi (F))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^1(Y,h^{\\ast}(F))",
+  "note": "The print has ξ for *; the TeX keeps the misprint."
+ },
+ {
+  "page": 109,
+  "where": "les diviseurs premiers de m ...",
+  "scan": "sont ∈ L",
+  "tex": "soit $\\in \\LL$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "de $m$ soit $\\in \\LL$",
+   "new": "de $m$ sont $\\in \\LL$"
+  },
+  "note": "The print reads 'sont'."
+ },
+ {
+  "page": 110,
+  "where": "nullité des R^i p_* (i ≥ 1)",
+  "scan": "R^i p_*",
+  "tex": "R^{i}_{p_{\\ast}}",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "$R^{i}_{p_{\\ast}}$",
+   "new": "$R^{i}p_{\\ast}$"
+  },
+  "note": "The TeX sets p_* as a subscript of R; the print has R^i followed by p_*."
+ }
+]

@@ -1,0 +1,1101 @@
+[
+ {
+  "page": 456,
+  "where": "top of the page / folio-456 marker",
+  "scan": "p. 456 begins 'et φ_F(U) : F(U) --> F(U) à l'application : s ~~> φ_{F|U} o s = s o φ_U (s ∈ Hom_U(U,F|U)) ; comme le faisceau final U de Ũ_ét ...'; p. 455 ends '... on sait que F(U) s'identifie à Hom_U(U,F|U)' (b451_455/page_455_s4.png)",
+  "tex": "batch files: 'et $\\varphi_F(U):F(U)\\to F(U)$ à l'application', the display s\\longmapsto ..., 'où $s\\in\\Hom_U(U,F|U)$; comme le' end page_455.tex; page_456.tex begins 'faisceau final $U$'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 456 really begins at 'et $\\varphi_F(U)'. Already done in both live layers (reported by batch 451-455; the marker now stands on its own line before 'et $\\varphi_F(U)', diplomatic line 15294, current 15290): nothing to run. Batch 451-455 left the moved lines unchecked; their four differences follow, filed under p. 456 where the live file has them."
+ },
+ {
+  "page": 456,
+  "where": "first line: 'à l'application :'",
+  "scan": "et φ_F(U) : F(U) --> F(U) à l'application : s ~~> φ_{F|U} o s = s o φ_U",
+  "tex": "'à l'application' with no colon before the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "F(U)$ à l'application",
+   "new": "F(U)$ à l'application :"
+  },
+  "note": "The TeX drops the colon. Printed at the top of p. 456. In this batch's page files the line is still the end of page_455.tex; in the live s5.tex (folio-456 marker moved by batch 451-455) it stands under the folio-456 marker, where the old occurs once (both layers)."
+ },
+ {
+  "page": 456,
+  "where": "first line: the arrow of s ~~> φ_{F|U} o s",
+  "scan": "a wavy arrow (~~>) after s",
+  "tex": "s\\longmapsto \\varphi_{F|U}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "s\\longmapsto \\varphi_{F|U}",
+   "new": "s\\rightsquigarrow \\varphi_{F|U}"
+  },
+  "note": "The print's maps-to sign is the wavy arrow, as on pp. 365-369, 444 and 462 (\\rightsquigarrow, amssymb). Printed at the top of p. 456. In this batch's page files the line is still the end of page_455.tex; in the live s5.tex (folio-456 marker moved by batch 451-455) it stands under the folio-456 marker, where the old occurs once (both layers)."
+ },
+ {
+  "page": 456,
+  "where": "first line: end of the formula s ~~> φ_{F|U} o s = s o φ_U",
+  "scan": "no punctuation after s o φ_U; the parenthesis (s ∈ Hom_U(U,F|U)) follows",
+  "tex": "s\\circ\\varphi_U, at the end of the display",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "=s\\circ\\varphi_U,",
+   "new": "=s\\circ\\varphi_U"
+  },
+  "note": "Comma added at the end of the display. Printed at the top of p. 456. In this batch's page files the line is still the end of page_455.tex; in the live s5.tex (folio-456 marker moved by batch 451-455) it stands under the folio-456 marker, where the old occurs once (both layers)."
+ },
+ {
+  "page": 456,
+  "where": "second line: '(s ∈ Hom_U(U,F|U)) ; comme le faisceau final'",
+  "scan": "(s ∈ Hom_U(U,F|U)) ; comme ...: the condition in parentheses, no 'où'",
+  "tex": "où $s\\in\\Hom_U(U,F|U)$; comme le",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "où $s\\in\\Hom_U(U,F|U)$;",
+   "new": "($s\\in\\Hom_U(U,F|U)$);"
+  },
+  "note": "The TeX adds 'où' and drops the parentheses. Printed at the top of p. 456. In this batch's page files the line is still the end of page_455.tex; in the live s5.tex (folio-456 marker moved by batch 451-455) it stands under the folio-456 marker, where the old occurs once (both layers)."
+ },
+ {
+  "page": 456,
+  "where": "'sur le préschéma X (de caractéristique p),'",
+  "scan": "X (de caractéristique p), Fr*_{F/X} est un isomorphisme de faisceaux de groupes",
+  "tex": "préschéma $X$ de caractéristique $p$, $\\Fr^*_{F/X}$ (no parentheses)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "préschéma $X$ de caractéristique $p$, $\\Fr",
+   "new": "préschéma $X$ (de caractéristique $p$), $\\Fr"
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 456,
+  "where": "'... de faisceaux de Λ-modules ; plus généralement, si F˙ est un complexe'",
+  "scan": "Λ-modu-/les ; plus généralement (semicolon, small p)",
+  "tex": "$\\Lambda$-modules. Plus généralement",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\Lambda$-modules. Plus généralement",
+   "new": "$\\Lambda$-modules; plus généralement"
+  },
+  "note": "Full stop and capital for the print's semicolon and small letter."
+ },
+ {
+  "page": 456,
+  "where": "Fr*_{F˙/X} : fr*_X(F˙) --- F˙ égal à ...: the arrow",
+  "scan": "three typed dashes and no arrowhead (pixel check, strip 2: dashes at x = 1289-1345, clean paper at 1346-1367, then the F; the other arrows of the page, H^0(X,F) --> ..., have their head)",
+  "tex": "\\longrightarrow F^\\bullet",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\longrightarrow F^\\bullet",
+   "new": "\\relbar\\joinrel\\relbar F^\\bullet"
+  },
+  "corrected": "\\longrightarrow F^\\bullet",
+  "note": "The typist left out the head of the isomorphism arrow. The TeX silently supplies it; the fix restores the printed headless line (diplomatic layer only)."
+ },
+ {
+  "page": 456,
+  "where": "heading n°2",
+  "scan": "n°2. Effet sur la cohomologie. (underlined, full stop)",
+  "tex": "\\subsubsection*{n\\textsuperscript{o} 2. Effet sur la cohomologie}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Effet sur la cohomologie}",
+   "new": "Effet sur la cohomologie.}"
+  },
+  "note": "The underlined title ends with a full stop in the print; the TeX drops it."
+ },
+ {
+  "page": 456,
+  "where": "Proposition 2, 'Soit X un préschéma de caractéristique p .'",
+  "scan": "underlined: 'Soit', 'un préschéma de caractéristique'; X, p and the full stop not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soit $X$ un préschéma de caractéristique $p$.",
+   "new": "\\emph{Soit} $X$ \\emph{un préschéma de caractéristique} $p$."
+  },
+  "note": "The print underlines the statement word group by word group; Exposé XV of the TeX has no underline markup. \\emph as for the underlined statements of Exposés III B, V and XII and on pp. 442-445 and 461-465."
+ },
+ {
+  "page": 456,
+  "where": "Proposition 2 a), up to 'c'est-à-dire le composé'",
+  "scan": "underlined: 'Pour tout faisceau d'ensembles', 'sur', 'l'endomorphisme / de', 'défini par', 'c'est-à-dire le composé'; F, X_ét, H^0(X,F), (fr_X,Fr*_{F/X}) and the commas not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour tout faisceau d'ensembles $F$ sur $X_{\\et}$, l'endomorphisme de $H^0(X,F)$ défini par $(\\fr_X,\\Fr^*_{F/X})$, c'est-à-dire le composé",
+   "new": "\\emph{Pour tout faisceau d'ensembles} $F$ \\emph{sur} $X_{\\et}$, \\emph{l'endomorphisme de} $H^0(X,F)$ \\emph{défini par} $(\\fr_X,\\Fr^*_{F/X})$, \\emph{c'est-à-dire le composé}"
+  },
+  "note": "Underlined statement. The old ends before the display (comma edit below): no overlap."
+ },
+ {
+  "page": 456,
+  "where": "Proposition 2 a), the composite H^0(X,F) --> H^0(X,fr*_X(F)) --> H^0(X,F)",
+  "scan": "no punctuation after the last H^0(X,F); 'où la première flèche' follows",
+  "tex": "H^0(X,F)\\longrightarrow H^0(X,\\fr_X^*(F))\\longrightarrow H^0(X,F),",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow H^0(X,F),",
+   "new": "\\longrightarrow H^0(X,F)"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 456,
+  "where": "Proposition 2 a), 'où la première flèche ... est l'identité de H^0(X,F) .'",
+  "scan": "underlined: 'où la première flèche est l'ap-/plication canonique', 'caractère contravariant de' (not the parenthesis), 'par rapport / à', 'et la seconde', 'est l'identité de'; the formulas, X), the comma and the full stop not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où la première flèche est l'application canonique (caractère contravariant de $H^0(X,F)$ par rapport à $X$) et la seconde $H^0(X,\\Fr^*_{F/X})$, est l'identité de $H^0(X,F)$.",
+   "new": "\\emph{où la première flèche est l'application canonique} (\\emph{caractère contravariant de} $H^0(X,F)$ \\emph{par rapport à} $X$) \\emph{et la seconde} $H^0(X,\\Fr^*_{F/X})$, \\emph{est l'identité de} $H^0(X,F)$."
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 457,
+  "where": "top of the page / folio-457 marker: the item label b)",
+  "scan": "p. 457 begins with 'b) Pour tout faisceau de groupes F ...'; p. 456 ends with '... est l'identité de H^0(X,F) .'",
+  "tex": "the '\\item' that prints 'b)' is the last line of page_456.tex; the folio-457 marker follows it",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 457 really begins at that '\\item' (live s5.tex at the check: diplomatic line 15318, marker at 15319; current 15314/15315). Exact fix: python -I move_marker.py 5 457 '\\item' --before (simulated in memory on both layers: the marker then stands on its own line between '... est l'identité de $H^0(X,F)$.' and '\\item'; the anchor matches before and after the edits of pp. 456-457). Run it once only: a second run would move the marker back to the '\\item' of a). Text not moved."
+ },
+ {
+  "page": 457,
+  "where": "Proposition 2 b), 'Pour tout faisceau de groupes F sur'",
+  "scan": "underlined: 'Pour tout faisceau de groupes', 'sur'; F not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour tout faisceau de groupes $F$ sur $",
+   "new": "\\emph{Pour tout faisceau de groupes} $F$ \\emph{sur} $"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 457,
+  "where": "Proposition 2 b), 'sur X_ét l'endomorphisme / de H^1(X,F)'",
+  "scan": "no comma after X_ét (clean paper); 'l'endomorphisme / de' underlined",
+  "tex": "$X_{\\et}$, l'endomorphisme de $H^1(X,F)$",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "{\\et}$, l'endomorphisme de $H^1(X,F)$",
+   "new": "{\\et}$ \\emph{l'endomorphisme de} $H^1(X,F)$"
+  },
+  "note": "The TeX adds the comma (a) on p. 456 has one, b) has none). The new text also carries the underline of the statement (adjacent); no shared characters with the edits before and after it."
+ },
+ {
+  "page": 457,
+  "where": "Proposition 2 b), 'défini par (fr_X,Fr*_{F/X}) , c'est-à-dire'",
+  "scan": "underlined: 'défini par', 'c'est-à-dire'; the formula and the comma not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "défini par $(\\fr_X,\\Fr^*_{F/X})$, c'est-à-dire\n\\[",
+   "new": "\\emph{défini par} $(\\fr_X,\\Fr^*_{F/X})$, \\emph{c'est-à-dire}\n\\["
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 457,
+  "where": "Proposition 2 b), display: H^1(X,fr*_X(F))",
+  "scan": "H^1(X,F) --> H^1(X,fr*_X(F)) --> H^1(X,F): parentheses around F",
+  "tex": "H^1(X,\\fr_X^*F)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "H^1(X,\\fr_X^*F)",
+   "new": "H^1(X,\\fr_X^*(F))"
+  },
+  "note": "The TeX drops the parentheses around F."
+ },
+ {
+  "page": 457,
+  "where": "Proposition 2 b), ', est l'identité.'",
+  "scan": "'est l'identité' underlined; comma and full stop not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nest l'identité.\n\\item",
+   "new": "\\]\n\\emph{est l'identité}.\n\\item"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 457,
+  "where": "Proposition 2 c), 'Pour tout complexe limité à gauche F de'",
+  "scan": "underlined: 'Pour tout complexe limité à gauche', 'de'; F and Λ not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour tout complexe limité à gauche $F$ de $",
+   "new": "\\emph{Pour tout complexe limité à gauche} $F$ \\emph{de} $"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 457,
+  "where": "Proposition 2 c), 'Λ-Modules sur'",
+  "scan": "Λ-Modules with a capital M; 'Modules sur' underlined",
+  "tex": "$\\Lambda$-modules sur",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "-modules sur $X",
+   "new": "-\\emph{Modules sur} $X"
+  },
+  "note": "Small m for the print's capital (as 'complexe de Λ-Modules' on p. 456, which the TeX has right). The new text also carries the underline of the statement (same words)."
+ },
+ {
+  "page": 457,
+  "where": "Proposition 2 c), 'l'endomorphisme de RΓ_X(F) défini par'",
+  "scan": "underlined: 'l'endomorphisme de', 'défini par'; the formulas and the comma not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "{\\et}$, l'endomorphisme de $\\RGamma_X(F)$ défini par $(",
+   "new": "{\\et}$, \\emph{l'endomorphisme de} $\\RGamma_X(F)$ \\emph{défini par} $("
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 457,
+  "where": "Proposition 2 c), 'c'est-/à-dire le composé :'",
+  "scan": "'c'est-à-dire le composé' underlined, then a colon (not underlined) before RΓ_X(F) --> ...",
+  "tex": "'c'est-à-dire le composé' and the display, no colon",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "c'est-à-dire le composé\n\\[\n\\RGamma",
+   "new": "\\emph{c'est-à-dire le composé} :\n\\[\n\\RGamma"
+  },
+  "note": "The TeX drops the colon. The new text also carries the underline of the statement (adjacent)."
+ },
+ {
+  "page": 457,
+  "where": "Proposition 2 c), display: RΓ_X(fr*_X(F))",
+  "scan": "RΓ_X(F) --> RΓ_X(fr*_X(F)) --> RΓ_X(F): parentheses around F",
+  "tex": "\\RGamma_X(\\fr_X^*F)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RGamma_X(\\fr_X^*F)",
+   "new": "\\RGamma_X(\\fr_X^*(F))"
+  },
+  "note": "The TeX drops the parentheses around F."
+ },
+ {
+  "page": 457,
+  "where": "Proposition 2 c), ', est / l'identité.'",
+  "scan": "'est' and 'l'identité' underlined; comma and full stop not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est l'identité.\n\\end{enumerate}",
+   "new": "\\emph{est l'identité}.\n\\end{enumerate}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 457,
+  "where": "'Etablissons d'abord a) : nous en déduirons b) et c).'",
+  "scan": "a colon after a)",
+  "tex": "a); nous",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d'abord a); nous",
+   "new": "d'abord a) : nous"
+  },
+  "note": "Semicolon for the print's colon."
+ },
+ {
+  "page": 457,
+  "where": "'s'identifie à un morphisme de faisceaux : s : X --> F'",
+  "scan": "a colon after 'faisceaux'",
+  "tex": "de faisceaux $s:X\\to F$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de faisceaux $s:X\\to F$",
+   "new": "de faisceaux : $s:X\\to F$"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 457,
+  "where": "φ_F o H^0(X,s) = H^0(X,s) o φ_X = H^0(X,s) d'après ...",
+  "scan": "no punctuation after the last H^0(X,s)",
+  "tex": "=H^0(X,s), at the end of the display",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "=H^0(X,s),\n\\]",
+   "new": "=H^0(X,s)\n\\]"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 457,
+  "where": "'Notons que φ_F est encore le composé :'",
+  "scan": "a colon after 'le composé'",
+  "tex": "'le composé' and the display, no colon",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "encore le composé\n\\[",
+   "new": "encore le composé :\n\\["
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 457,
+  "where": "H^0(X,F) --> H^0(X,fr_{X*}(F)) --> H^0(X,F)",
+  "scan": "parentheses around F in fr_{X*}(F)",
+  "tex": "H^0(X,\\fr_{X*}F)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "H^0(X,\\fr_{X*}F)",
+   "new": "H^0(X,\\fr_{X*}(F))"
+  },
+  "note": "The TeX drops the parentheses (also in the next displays)."
+ },
+ {
+  "page": 457,
+  "where": "end of that display, before 'où la première flèche est'",
+  "scan": "no punctuation after H^0(X,F)",
+  "tex": "H^0(X,F), at the end of the display",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "H^0(X,F),\n\\]\noù",
+   "new": "H^0(X,F)\n\\]\noù"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 457,
+  "where": "'l'application canonique (qui n'est autre que l'identité) ; de même les endomorphismes'",
+  "scan": "the clause in parentheses, then a semicolon and a small d",
+  "tex": "canonique, qui n'est autre que l'identité. De même",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "l'application canonique, qui n'est autre que l'identité. De même",
+   "new": "l'application canonique (qui n'est autre que l'identité); de même"
+  },
+  "note": "Comma, full stop and capital for the print's parentheses, semicolon and small letter."
+ },
+ {
+  "page": 457,
+  "where": "H^1(X,F) --> H^1(X,fr_{X*}(F)) --> H^1(X,F)",
+  "scan": "parentheses around F",
+  "tex": "H^1(X,\\fr_{X*}F)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "H^1(X,\\fr_{X*}F)",
+   "new": "H^1(X,\\fr_{X*}(F))"
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 457,
+  "where": "end of that display, before 'et'",
+  "scan": "no punctuation after H^1(X,F)",
+  "tex": "H^1(X,F), at the end of the display",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "H^1(X,F),\n\\]\net",
+   "new": "H^1(X,F)\n\\]\net"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 457,
+  "where": "RΓ_X(F) --> RΓ_X(fr_{X*}(F)) --> RΓ_X(F) .",
+  "scan": "parentheses around F",
+  "tex": "\\RGamma_X(\\fr_{X*}F)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\RGamma_X(\\fr_{X*}F)",
+   "new": "\\RGamma_X(\\fr_{X*}(F))"
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 457,
+  "where": "'Pour établir b) nous utiliserons'",
+  "scan": "no comma after b)",
+  "tex": "Pour établir b), nous",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour établir b), nous",
+   "new": "Pour établir b) nous"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 457,
+  "where": "fr_{X*}(F) --> fr_{X*}(G) est un monomorphisme",
+  "scan": "parentheses around F and G",
+  "tex": "$\\fr_{X*}F\\to\\fr_{X*}G$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\fr_{X*}F\\to\\fr_{X*}G$",
+   "new": "$\\fr_{X*}(F)\\to\\fr_{X*}(G)$"
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 457,
+  "where": "H^1(X,fr_{X*}(G)) = 0",
+  "scan": "parentheses around G",
+  "tex": "$H^1(X,\\fr_{X*}G)=0$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$H^1(X,\\fr_{X*}G)=0$",
+   "new": "$H^1(X,\\fr_{X*}(G))=0$"
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 457,
+  "where": "last line: 'quotient C = G/F ;'",
+  "scan": "a semicolon after C = G/F; the sentence runs on at the top of p. 458 with a small 'comme'",
+  "tex": "$C=G/F$. (full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "quotient $C=G/F$.",
+   "new": "quotient $C=G/F$;"
+  },
+  "note": "Apply together with the p. 458 edit 'Comme' -> 'comme' (one sentence across the page break)."
+ },
+ {
+  "page": 458,
+  "where": "first word of the page: 'comme fr_X est entier'",
+  "scan": "small c: the sentence continues from p. 457 ('C = G/F ; comme ...')",
+  "tex": "Comme $\\fr_X$ est",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Comme $\\fr_X$ est",
+   "new": "comme $\\fr_X$ est"
+  },
+  "note": "Apply together with the p. 457 edit '$C=G/F$.' -> '$C=G/F$;'."
+ },
+ {
+  "page": 458,
+  "where": "'entier surjectif et radiciel les foncteurs'",
+  "scan": "no commas",
+  "tex": "entier, surjectif et radiciel, les",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "entier, surjectif et radiciel, les",
+   "new": "entier surjectif et radiciel les"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 458,
+  "where": "φ_C : H^0(X,C) --> H^0(X,C) qui est l'identité",
+  "scan": "no punctuation after the formula",
+  "tex": "H^0(X,C), at the end of the display",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "H^0(X,C)\\longrightarrow H^0(X,C),\n\\]",
+   "new": "H^0(X,C)\\longrightarrow H^0(X,C)\n\\]"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 458,
+  "where": "'construite sur les Λ-Modules ;'",
+  "scan": "Λ-Modules with a capital M",
+  "tex": "$\\Lambda$-modules;",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\Lambda$-modules; le complexe",
+   "new": "$\\Lambda$-Modules; le complexe"
+  },
+  "note": "Small m for the print's capital."
+ },
+ {
+  "page": 458,
+  "where": "'RΓ_X(fr_{X*}(F)) à H^0(X,fr_{X*}(I))'",
+  "scan": "parentheses around F",
+  "tex": "$\\RGamma_X(\\fr_{X*}F)$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\RGamma_X(\\fr_{X*}F)$",
+   "new": "$\\RGamma_X(\\fr_{X*}(F))$"
+  },
+  "note": "The TeX drops the parentheses (the comment FIX #52 under this paragraph is not printed text)."
+ },
+ {
+  "page": 458,
+  "where": "'à H^0(X,fr_{X*}(I))'",
+  "scan": "parentheses around I",
+  "tex": "$H^0(X,\\fr_{X*}I)$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$H^0(X,\\fr_{X*}I)$",
+   "new": "$H^0(X,\\fr_{X*}(I))$"
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 458,
+  "where": "'s'identifie à φ_I qui est l'identité'",
+  "scan": "no comma after φ_I (end of the line, clean paper)",
+  "tex": "$\\varphi_I$, qui",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\varphi_I$, qui",
+   "new": "$\\varphi_I$ qui"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 458,
+  "where": "heading n°3",
+  "scan": "n°3. Comportement des produits. (underlined, full stop)",
+  "tex": "\\subsubsection*{n\\textsuperscript{o} 3. Comportement des produits}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Comportement des produits}",
+   "new": "Comportement des produits.}"
+  },
+  "note": "The underlined title ends with a full stop in the print; the TeX drops it."
+ },
+ {
+  "page": 458,
+  "where": "'au produit fibré X x_e X' où e = Spec(F_p)'",
+  "scan": "no comma before 'où'",
+  "tex": "$X\\times_eX'$, où",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "$X\\times_eX'$, où",
+   "new": "$X\\times_eX'$ où"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 458,
+  "where": "'On en déduit immédiatement que pour tout X-préschéma Y'",
+  "scan": "no comma after 'que'",
+  "tex": "que, pour tout",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "immédiatement que, pour tout",
+   "new": "immédiatement que pour tout"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 458,
+  "where": "(Y x Y')^{(p/XxX')} ≃ Y^{(p/X)} x Y'^{(p/X')} ; modulo cet isomorphisme",
+  "scan": "a semicolon after the formula",
+  "tex": "Y'{}^{(p/X')}, (comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Y'{}^{(p/X')},\n\\]",
+   "new": "Y'{}^{(p/X')};\n\\]"
+  },
+  "note": "Comma for the print's semicolon."
+ },
+ {
+  "page": 459,
+  "where": "first line: 'peut écrire Fr_{YxY'/XxX'} = Fr_{Y/X} x Fr_{Y'/X'} .'",
+  "scan": "no colon after 'écrire'",
+  "tex": "peut écrire:",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "peut écrire:",
+   "new": "peut écrire"
+  },
+  "note": "The TeX adds a colon."
+ },
+ {
+  "page": 459,
+  "where": "Proposition 3, statement up to the second 'Λ-modules sur'",
+  "scan": "underlined: 'Soient', 'et', 'des préschémas de caractéristique', 'un anneau commutatif', 'un faisceau de', '-modules sur', 'et', 'un faisceau de', '-modules sur'; the letters, Λ, the commas not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $X$ et $X'$ des préschémas de caractéristique $p$, $\\Lambda$ un anneau commutatif, $F$ un faisceau de $\\Lambda$-modules sur $X_{\\et}$ et $F'$ un faisceau de $\\Lambda$-modules sur $",
+   "new": "\\emph{Soient} $X$ \\emph{et} $X'$ \\emph{des préschémas de caractéristique} $p$, $\\Lambda$ \\emph{un anneau commutatif}, $F$ \\emph{un faisceau de} $\\Lambda$-\\emph{modules sur} $X_{\\et}$ \\emph{et} $F'$ \\emph{un faisceau de} $\\Lambda$-\\emph{modules sur} $"
+  },
+  "note": "Underlined statement. The old stops at the $ before X'_{\\et} (misprint item below): the same edit fits the corrected layer."
+ },
+ {
+  "page": 459,
+  "where": "Proposition 3, '. On a'",
+  "scan": "'On a' underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "{\\et}$. On a",
+   "new": "{\\et}$. \\emph{On a}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 459,
+  "where": "Proposition 3: 'F' un faisceau de Λ-modules sur X_ét'",
+  "scan": "X_ét without a prime (clean paper at the top right of the X; the prime of F' in the same line is plain)",
+  "tex": "$X'_{\\et}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$X'_{\\et}$",
+   "new": "$X_{\\et}$"
+  },
+  "corrected": "$X'_{\\et}$",
+  "note": "F' is a sheaf on X'_ét (the X' of the statement). The TeX silently corrects; the fix restores the printed X (diplomatic layer only). Listed after the two underline edits of Proposition 3; its old is unique before and after them."
+ },
+ {
+  "page": 459,
+  "where": "Proposition 3, first line of the formula: Fr*_{F ⊗_Λ F'/XxX'}",
+  "scan": "the typed tensor sign (an O overstruck with x), the same sign as in Fr*_{F/X} ⊗ Fr*_{F'/X'}",
+  "tex": "F\\boxt_\\Lambda F' (box-times)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "F\\boxt_\\Lambda F'/X",
+   "new": "F\\otimes_\\Lambda F'/X"
+  },
+  "note": "\\boxt is \\boxtimes; the print has the same ⊗ for every tensor product on pp. 459-460. All 11 uses of \\boxt in s5.tex are on these two pages (itemized here)."
+ },
+ {
+  "page": 459,
+  "where": "Proposition 3: id_{fr*_{X'}(F')}",
+  "scan": "parentheses around F'",
+  "tex": "\\id_{\\fr_{X'}^*F'}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\id_{\\fr_{X'}^*F'}",
+   "new": "\\id_{\\fr_{X'}^*(F')}"
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 459,
+  "where": "Proposition 3, second line: id_{fr*_X(F)}",
+  "scan": "parentheses around F",
+  "tex": "\\id_{\\fr_X^*F}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\id_{\\fr_X^*F}",
+   "new": "\\id_{\\fr_X^*(F)}"
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 459,
+  "where": "Proposition 3, end of the second line of the formula",
+  "scan": "no full stop after (Fr*_{F/X} ⊗ id_{F'})",
+  "tex": "\\id_{F'}). at the end of the display",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes\\id_{F'}).\n\\]",
+   "new": "\\otimes\\id_{F'})\n\\]"
+  },
+  "note": "Full stop added at the end of the display."
+ },
+ {
+  "page": 459,
+  "where": "'on a identifié fr*_{XxX'}(F ⊗_Λ F')'",
+  "scan": "the typed tensor sign ⊗",
+  "tex": "(F\\boxt_\\Lambda F')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(F\\boxt_\\Lambda F')",
+   "new": "(F\\otimes_\\Lambda F')"
+  },
+  "note": "As in Proposition 3."
+ },
+ {
+  "page": 459,
+  "where": "'au cas où F = Λ_X et F' = Λ_{X'} ; alors'",
+  "scan": "a semicolon before 'alors'",
+  "tex": "$F'=\\Lambda_{X'}$, alors",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$F'=\\Lambda_{X'}$, alors",
+   "new": "$F'=\\Lambda_{X'}$; alors"
+  },
+  "note": "Comma for the print's semicolon."
+ },
+ {
+  "page": 459,
+  "where": "'au cas où F = _X' (end of the line)",
+  "scan": "F = , then blank paper where the hand-drawn Λ belongs, then the lowered X (pixel check: pure white between '=' and 'X', x = 1446-1498 of strip 3); the Λ of 'F' = Λ_{X'}' just below is drawn",
+  "tex": "$F=\\Lambda_X$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$F=\\Lambda_X$",
+   "new": "$F={}_X$"
+  },
+  "corrected": "$F=\\Lambda_X$",
+  "note": "The space left for the hand-drawn Λ was never filled (not a faint stroke). The TeX silently supplies \\Lambda; the fix restores the printed reading (diplomatic layer only)."
+ },
+ {
+  "page": 459,
+  "where": "Corollaire, 'Avec les données de la proposition 3, les endomorphismes / de'",
+  "scan": "underlined: 'Avec les données de la proposition 3' (the 3 included), 'les endomorphismes', 'de'; the comma not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Avec les données de la proposition 3, les endomorphismes de $",
+   "new": "\\emph{Avec les données de la proposition 3}, \\emph{les endomorphismes de} $"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 459,
+  "where": "Corollaire: RΓ_{XxX'}(F ⊗ F')",
+  "scan": "the typed tensor sign ⊗",
+  "tex": "(F\\boxt F')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(F\\boxt F')$ ",
+   "new": "(F\\otimes F')$ "
+  },
+  "note": "As in Proposition 3. The old ends with the space before 'définis' (unique; it does not touch the underline edits around it)."
+ },
+ {
+  "page": 459,
+  "where": "Corollaire, 'définis respectivement par'",
+  "scan": "underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "définis respectivement par",
+   "new": "\\emph{définis respectivement par}"
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 459,
+  "where": "Corollaire, 'et par'",
+  "scan": "underlined",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\net par\n\\[",
+   "new": "\\]\n\\emph{et par}\n\\["
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 459,
+  "where": "Corollaire, 'sont des isomorphismes réciproques / l'un de l'autre.'",
+  "scan": "underlined; the full stop not",
+  "tex": "no underline markup",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "sont des isomorphismes réciproques l'un de l'autre.",
+   "new": "\\emph{sont des isomorphismes réciproques l'un de l'autre}."
+  },
+  "note": "Underlined statement."
+ },
+ {
+  "page": 459,
+  "where": "last line of the page: 'cela résulte du diagramme'",
+  "scan": "p. 459 ends '... ; cela résulte du diagramme' and blank paper; p. 460 begins with the diagram, followed by ', qui est commutatif à cause de ...': no 'commutatif suivant :' anywhere",
+  "tex": "cela résulte du diagramme commutatif suivant:",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "du diagramme commutatif suivant:",
+   "new": "du diagramme"
+  },
+  "note": "Words added by the TeX (the print says 'commutatif' only after the diagram). The folio-460 move (anchor '\\[' + '\\resizebox') is not affected."
+ },
+ {
+  "page": 459,
+  "where": "the diagram (printed on p. 460): the tensor signs of the nodes",
+  "scan": "every node has the typed ⊗: RΓ_{XxX'}(F⊗F'), RΓ_{XxX'}(F⊗fr*_{X'}(F')), RΓ_{XxX'}(fr*_{XxX'}(F⊗F')), RΓ_{XxX'}(fr*_X(F)⊗F'), RΓ(Fr*_{F⊗F'/XxX'})",
+  "tex": "\\boxt in the seven nodes A-G",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\node (A) at (0,3.6) {$\\RGamma_{X\\times X'}(F\\boxt F')$};\n\\node (B) at (4.7,3.6) {$\\RGamma_{X\\times X'}(F\\boxt\\fr_{X'}^*(F'))$};\n\\node (C) at (9.4,3.6) {$\\RGamma_{X\\times X'}(F\\boxt F')$};\n\\node (D) at (3.3,1.9) {$\\RGamma_{X\\times X'}(\\fr^*_{X\\times X'}(F\\boxt F'))$};\n\\node (E) at (9.4,1.9) {$\\RGamma_{X\\times X'}(\\fr_X^*(F)\\boxt F')$};\n\\node (F) at (4.4,0.25) {$\\RGamma(\\Fr^*_{F\\boxt F'/X\\times X'})$};\n\\node (G) at (9.4,0.25) {$\\RGamma_{X\\times X'}(F\\boxt",
+   "new": "\\node (A) at (0,3.6) {$\\RGamma_{X\\times X'}(F\\otimes F')$};\n\\node (B) at (4.7,3.6) {$\\RGamma_{X\\times X'}(F\\otimes\\fr_{X'}^*(F'))$};\n\\node (C) at (9.4,3.6) {$\\RGamma_{X\\times X'}(F\\otimes F')$};\n\\node (D) at (3.3,1.9) {$\\RGamma_{X\\times X'}(\\fr^*_{X\\times X'}(F\\otimes F'))$};\n\\node (E) at (9.4,1.9) {$\\RGamma_{X\\times X'}(\\fr_X^*(F)\\otimes F')$};\n\\node (F) at (4.4,0.25) {$\\RGamma(\\Fr^*_{F\\otimes F'/X\\times X'})$};\n\\node (G) at (9.4,0.25) {$\\RGamma_{X\\times X'}(F\\otimes"
+  },
+  "note": "One edit for the seven nodes (\\boxt -> \\otimes only). Its old ends inside node G, before the comma edit below (no overlap). Nodes, arrows and labels otherwise agree with the print (label sides are layout). Printed on p. 460; filed under p. 459 because the diagram stands in page_459.tex until the folio-460 marker is moved (marker finding of p. 460): apply before the move. The old is also once on p. 460 after the move."
+ },
+ {
+  "page": 459,
+  "where": "the diagram (printed on p. 460): after the bottom right node",
+  "scan": "a comma after RΓ_{XxX'}(F⊗F') (bottom right), then 'qui est commutatif à cause de'",
+  "tex": "node G ends ...(F\\boxt F')$}; no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": " F')$};\n\\draw[->] (A)",
+   "new": " F')$\\ ,};\n\\draw[->] (A)"
+  },
+  "note": "The TeX drops the comma that ends the diagram. Independent of the node edit above. Printed on p. 460; filed under p. 459 because the diagram stands in page_459.tex until the folio-460 marker is moved (marker finding of p. 460): apply before the move. The old is also once on p. 460 after the move."
+ },
+ {
+  "page": 460,
+  "where": "top of the page / folio-460 marker: the diagram",
+  "scan": "p. 460 begins with the diagram RΓ_{XxX'}(F⊗F') --> ... (no text above it); p. 459 ends with '... ; cela résulte du diagramme' and blank paper",
+  "tex": "the display '\\[', '\\resizebox{\\textwidth}{!}{%', the tikzpicture with all its nodes and arrows stand in page_459.tex; the folio-460 marker splits the display before '\\end{tikzpicture}%'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 460 really begins at the '\\[' that opens the diagram (live s5.tex at the check: diplomatic line 15427, marker at 15445; current 15423/15441). Exact fix (bash): python -I move_marker.py 5 460 \"$(printf '%s\\n%s' '\\[' '\\resizebox')\" --before (simulated in memory on both layers: the marker then stands on its own line between '... cela résulte du diagramme commutatif suivant:' (or '... du diagramme' after the p. 459 edit) and '\\['; the anchor occurs once in s5.tex, so a second run prints 'anchor not found'). Text not moved; the two diagram edits filed under p. 459 go first."
+ },
+ {
+  "page": 460,
+  "where": "'(pour le triangle du haut) et de'",
+  "scan": "the words in parentheses",
+  "tex": "'pour le triangle du haut' without parentheses",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\npour le triangle du haut et de",
+   "new": "\\]\n(pour le triangle du haut) et de"
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 460,
+  "where": "Fr*_{F⊗F'/XxX'} = (...) o (id_{fr*_X(F)} ⊗ Fr*_{F'/X'})",
+  "scan": "parentheses around F in id_{fr*_X(F)}",
+  "tex": "\\id_{\\fr_X^*F}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\id_{\\fr_X^*F}",
+   "new": "\\id_{\\fr_X^*(F)}"
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 460,
+  "where": "Fr*_{F⊗F'/XxX'}: the tensor sign",
+  "scan": "the typed tensor sign ⊗",
+  "tex": "\\Fr^*_{F\\boxt F'/X\\times X'}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Fr^*_{F\\boxt F'/X\\times X'}=",
+   "new": "\\Fr^*_{F\\otimes F'/X\\times X'}="
+  },
+  "note": "As on p. 459."
+ },
+ {
+  "page": 460,
+  "where": "'(pour le triangle du bas), et dans lequel'",
+  "scan": "the words in parentheses, then the comma",
+  "tex": "'pour le triangle du bas,' without parentheses",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\npour le triangle du bas,",
+   "new": "\\]\n(pour le triangle du bas),"
+  },
+  "note": "The TeX drops the parentheses."
+ },
+ {
+  "page": 460,
+  "where": "'les rôles de (X,F) et (X',F') on obtient : φ' o φ = id .'",
+  "scan": "no comma after (X',F'); a colon after 'obtient'",
+  "tex": "$(X',F')$, on obtient $\\varphi'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$(X',F')$, on obtient $\\varphi'",
+   "new": "$(X',F')$ on obtient : $\\varphi'"
+  },
+  "note": "The TeX adds the comma and drops the colon."
+ },
+ {
+  "page": 460,
+  "where": "'Dans ce cas nous poserons : X̄ = ...'",
+  "scan": "a colon after 'poserons'",
+  "tex": "'nous poserons' and the display, no colon",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "nous poserons\n\\[",
+   "new": "nous poserons :\n\\["
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 460,
+  "where": "X̄ = X x ē = X ⊗_{F_p} F̄_p",
+  "scan": "a plain x between X and ē, no subscript e under it",
+  "tex": "X\\times_e\\bar e",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "X\\times_e\\bar e",
+   "new": "X\\times\\bar e"
+  },
+  "note": "The TeX adds the subscript e."
+ },
+ {
+  "page": 460,
+  "where": "'X̄ = ... = X ⊗_{F_p} F̄_p et F̄ = F ⊗_Λ Λ_ē'",
+  "scan": "'et' between the two formulas, no comma",
+  "tex": "\\overline{\\mathbb F}_p, \\qquad \\overline F",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\overline{\\mathbb F}_p,\n\\qquad\n\\overline F",
+   "new": "\\overline{\\mathbb F}_p\\quad\\text{et}\\quad\n\\overline F"
+  },
+  "note": "The TeX drops 'et' and adds a comma (written as the p. 461 fix '\\quad\\text{et}\\quad')."
+ },
+ {
+  "page": 460,
+  "where": "'F̄ = F ⊗_Λ Λ_ē = image réciproque de F par la projection'",
+  "scan": "'=' before 'image réciproque'",
+  "tex": "\\Lambda_{\\bar e}, at the end of the display",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Lambda_{\\bar e},\n\\]\nimage",
+   "new": "\\Lambda_{\\bar e}=\n\\]\nimage"
+  },
+  "note": "Comma for the print's '=' (as the p. 461 lines, fixed there the same way)."
+ },
+ {
+  "page": 460,
+  "where": "'f : λ ~~> λ^p'",
+  "scan": "a wavy arrow (~~>)",
+  "tex": "f:\\lambda\\longmapsto\\lambda^p",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "f:\\lambda\\longmapsto\\lambda^p",
+   "new": "f:\\lambda\\rightsquigarrow\\lambda^p"
+  },
+  "note": "As the wavy arrow at the top of p. 456 (and p. 462)."
+ },
+ {
+  "page": 460,
+  "where": "π_e = Gal(F̄_p/F_p) (f détermine ...",
+  "scan": "no comma after Gal(F̄_p/F_p); a parenthesis opens",
+  "tex": "\\Gal(\\overline{\\mathbb F}_p/\\mathbb F_p), at the end of the display",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "/\\mathbb F_p),\n\\]",
+   "new": "/\\mathbb F_p)\n\\]"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 460,
+  "where": "'(f détermine un iso-/morphisme: Ẑ ⥲ π_e), et'",
+  "scan": "an opening parenthesis, the verb 'détermine', a colon after 'isomorphisme'",
+  "tex": "$f$ déterminant un isomorphisme $\\widehat{\\mathbb Z}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$f$ déterminant un isomorphisme $",
+   "new": "($f$ détermine un isomorphisme: $"
+  },
+  "note": "The TeX writes the participle and drops the parenthesis and the colon (closing parenthesis: edit after next)."
+ },
+ {
+  "page": 460,
+  "where": "Ẑ ⥲ π_e: the sign",
+  "scan": "a hand-drawn tilde over a typed arrow with its head (-->)",
+  "tex": "\\simeq",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\simeq\\pi_e$",
+   "new": "\\xrightarrow{\\sim}\\pi_e$"
+  },
+  "note": "An isomorphism arrow, not the headless ≃ (the two ≃ of p. 458 have no head)."
+ },
+ {
+  "page": 460,
+  "where": "'π_e), et Fr*...'",
+  "scan": "the closing parenthesis before ', et'",
+  "tex": "\\pi_e$, et",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\pi_e$, et",
+   "new": "\\pi_e$), et"
+  },
+  "note": "Closes the parenthesis opened before 'f' (two edits above)."
+ },
+ {
+  "page": 460,
+  "where": "'car Λ_ē est un faisceau constant. Posons :'",
+  "scan": "a colon after 'Posons' (the last word of the page)",
+  "tex": "Posons (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "faisceau constant. Posons",
+   "new": "faisceau constant. Posons :"
+  },
+  "note": "The TeX drops the colon."
+ }
+]

@@ -1,0 +1,86 @@
+{
+  "findings": [
+    {
+      "page": 346,
+      "where": "1.6, description of the restriction functor",
+      "scan": "« restriction à Y »",
+      "tex": "\\emph{restriction} à $Y$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\emph{restriction} à $X$",
+      "note": "The print has Y, which the TeX retains. The functor described is restriction to X, not Y."
+    },
+    {
+      "page": 347,
+      "where": "a), description of the canonical functor, after « associant à tout »",
+      "scan": "$X' \\in \\Ob \\widetilde{X_{\\text{ét}}}$",
+      "tex": "tout $X'\\in \\Ob \\widetilde{X_{\\text{ét}}}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "tout $X'\\in \\Ob X_{\\text{ét}}$",
+      "note": "The print includes the tilde, and the TeX keeps it. The source of the canonical functor is the étale site: X' should be an object of that site, not of its sheaf topos."
+    },
+    {
+      "page": 347,
+      "where": "Footnote (*), « le foncteur φ qui a F ... associe »",
+      "scan": "qui a F ... associe",
+      "tex": "qui a $F \\in \\Ob (\\Sch)_{/X}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "qui à $F \\in \\Ob (\\Sch)_{/X}$ associe",
+      "note": "The preposition is printed without its grave accent. The TeX retains this misprint."
+    },
+    {
+      "page": 347,
+      "where": "Footnote (*), example over an algebraically closed field",
+      "scan": "si $S = \\Spec k$",
+      "tex": "si $S = \\Spec k$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "si $X = \\Spec k$",
+      "note": "The TeX keeps the printed S. The base scheme fixed in a) and in this footnote is X."
+    },
+    {
+      "page": 348,
+      "where": "Remarques 2.1, formula (*), definition of the base change",
+      "scan": "$Z_Y = Z \\times_X Y$",
+      "tex": "Z_y =\n\\fprod{Z}{Y}{X}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "Z_y =",
+        "new": "Z_Y ="
+      },
+      "note": "The defining subscript is a capital Y in the print, not a lowercase y."
+    },
+    {
+      "page": 349,
+      "where": "b), phrase preceding formula (**)",
+      "scan": "« groupe fondamental »",
+      "tex": "groupes fondamental",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "groupes fondamental",
+        "new": "groupe fondamental"
+      },
+      "note": "The print has the singular « groupe »; the TeX adds an s."
+    },
+    {
+      "page": 350,
+      "where": "Opening line, reference after « au 2ème membre de »",
+      "scan": "membre de (*)",
+      "tex": "membre de $(\\ast)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "membre de $({\\ast}{\\ast})$",
+      "note": "The TeX retains the printed reference (*). The referenced isomorphism involving H^1 and Hom on page 349 is labelled (**)."
+    }
+  ],
+  "coordinator": "346: 0/1; 347: 0/3; 348: 1/0; 349: 1/0; 350: 0/1 (normal/misprint)."
+}

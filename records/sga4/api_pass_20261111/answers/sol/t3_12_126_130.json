@@ -1,0 +1,142 @@
+[
+ {
+  "page": 126,
+  "where": "Début de page, égalité définissant \\bar{U}",
+  "scan": "\\bar{U}=\\fprod{U}{\\bar{X}}{X}=\\pi^{-1}(U)",
+  "tex": "\\bar{U}=\\fprod{U}{\\bar{X}}{X}=\\Pi^{-1}(U)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Pi^{-1}(U)",
+   "new": "\\pi^{-1}(U)"
+  },
+  "note": "L'imprimé porte un pi minuscule, comme dans les autres occurrences du morphisme."
+ },
+ {
+  "page": 126,
+  "where": "Démonstration, flèche horizontale du diagramme entre \\bar{X}' et X'",
+  "scan": "\\pi",
+  "tex": "\\bar{X}'\\ar[ll]_{\\pi'}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\pi'",
+  "note": "La prime manque au label imprimé, alors que le texte appelle ce morphisme \\pi'. Le TeX corrige silencieusement cette omission."
+ },
+ {
+  "page": 126,
+  "where": "Démonstration, isomorphisme définissant \\bar{U}'",
+  "scan": "\\bar{U}'={\\pi'}^{-1}(U')\\rightarrow U'",
+  "tex": "\\bar{U}'={\\pi'}^{-1}(U)'\\rightarrow U'",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "{\\pi'}^{-1}(U)'",
+   "new": "{\\pi'}^{-1}(U')"
+  },
+  "note": "Dans l'imprimé, la prime appartient à U et précède la parenthèse fermante."
+ },
+ {
+  "page": 126,
+  "where": "Dernier paragraphe, définition de V",
+  "scan": "V=\\cap^n_{k=1}U_k\\neq\\phi",
+  "tex": "V=\\cap^n_{k=1}U_k\\neq \\phi",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "V=\\cap^r_{k=1}U_k\\neq\\phi",
+  "note": "Le TeX conserve l'exposant n imprimé. Il faut r : l'intersection des n ouverts vient d'être supposée vide."
+ },
+ {
+  "page": 126,
+  "where": "Dernier paragraphe, restriction du recouvrement après remplacement de X par X'",
+  "scan": "les U par les U_k\\cap V non-vides",
+  "tex": "les $U$ par les $U_k\\cap\nV$ non-vides",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "U_k\\cap X'",
+  "note": "Le TeX conserve V. Les ouverts doivent être restreints à X'=\\overline{V} : les U_k\\cap V ne couvrent que V, et non nécessairement X'."
+ },
+ {
+  "page": 127,
+  "where": "Premier paragraphe de preuve, « Enfin, comme X est projectif »",
+  "scan": "Enfin, comme X est projectif sur S",
+  "tex": "Enfin, comme $X$\nest projectif sur $S$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Enfin, comme $\\bar{X}$ est projectif sur $S$",
+  "note": "Le TeX conserve X. Il s'agit de \\bar{X}, construit projectif par le lemme de Chow ; X n'est pas supposé projectif à ce stade."
+ },
+ {
+  "page": 128,
+  "where": "Premier paragraphe, corps résiduels des A_i",
+  "scan": "la limite inductive des corps k des A_i",
+  "tex": "la limite inductive des corps $k$ des $A_i$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "des corps $k_i$ des $A_i$",
+  "note": "L'indice i manque dans l'imprimé et dans le TeX. Les corps résiduels des A_i sont les k_i, dont la limite inductive est k."
+ },
+ {
+  "page": 128,
+  "where": "Premier paragraphe, définition des schémas de base",
+  "scan": "S=\\Spec(A_i)",
+  "tex": "$S=\\Spec (A_i)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "S_i=\\Spec(A_i)",
+  "note": "Le TeX conserve S sans indice. Il faut S_i, comme dans X_i=\\PP^r_{S_i} immédiatement après."
+ },
+ {
+  "page": 128,
+  "where": "Après le diagramme, phrase sur la deuxième flèche verticale",
+  "scan": "est un isomorphe",
+  "tex": "un isomorphe, il suffit",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "un isomorphisme",
+  "note": "Le TeX conserve « un isomorphe », coquille pour « un isomorphisme »."
+ },
+ {
+  "page": 129,
+  "where": "Milieu de la preuve, morphisme f_1 dont les fibres sont de dimension au plus 1",
+  "scan": "f_1:X_1\\rightarrow X",
+  "tex": "$f_1:X_1\\rightarrow X$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "f_1:X_1\\rightarrow S",
+  "note": "Le TeX conserve le but X imprimé. Le but est S : f_1 est la projection de \\PP^1_S, conformément au diagramme qui suit."
+ },
+ {
+  "page": 130,
+  "where": "Lemme 8.4, référence au théorème de spécialisation",
+  "scan": "5.9 bis",
+  "tex": "\\hyperref[XII.thmbis5.9]{5.9 bis} bis",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\hyperref[XII.thmbis5.9]{5.9 bis} bis",
+   "new": "\\hyperref[XII.thmbis5.9]{5.9 bis}"
+  },
+  "note": "L'imprimé ne porte qu'un seul « bis »."
+ },
+ {
+  "page": 130,
+  "where": "Démonstration de 8.5, phrase suivant la définition de \\varphi^q",
+  "scan": "tout nombre premier l",
+  "tex": "tout nombre premier 1",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "tout nombre premier 1",
+   "new": "tout nombre premier $\\ell$"
+  },
+  "note": "Le l droit de machine désigne le nombre premier \\ell des formules. Son glyphe est très proche du chiffre 1 dans cette frappe ; le TeX donne le chiffre 1."
+ }
+]

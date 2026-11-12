@@ -1,0 +1,66 @@
+{
+  "findings": [
+    {
+      "page": 186,
+      "where": "Après « Théorie des Ensembles »",
+      "scan": "par exemple, si",
+      "tex": "par exemples, si",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "par exemples, si",
+        "new": "par exemple, si"
+      },
+      "note": "L'imprimé porte « exemple » au singulier."
+    },
+    {
+      "page": 186,
+      "where": "Proposition 1, première hypothèse",
+      "scan": "Si $X\\in U$ et si $y\\subset x$, alors $y\\in U$.",
+      "tex": "Si $X\\in U$ et si $y\\subset x$, alors $y\\in U$.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Si $x\\in U$ et si $y\\subset x$, alors $y\\in U$.",
+      "note": "Le TeX conserve la coquille imprimée : le premier X doit être un x minuscule, comme dans la seconde hypothèse et la démonstration."
+    },
+    {
+      "page": 188,
+      "where": "Proposition 5, fin de l'énoncé",
+      "scan": "est un éléments de $U$.",
+      "tex": "est un éléments de $U$.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "est un élément de $U$.",
+      "note": "Le TeX conserve le pluriel fautif de l'imprimé après « un »."
+    },
+    {
+      "page": 189,
+      "where": "Remarque, phrase sur l'intersection des univers non vides",
+      "scan": "de tous les univers non vides.",
+      "tex": "de tout les univers non vides.",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "de tout les univers non vides.",
+        "new": "de tous les univers non vides."
+      },
+      "note": "L'imprimé porte « tous », non « tout »."
+    },
+    {
+      "page": 190,
+      "where": "Premier paragraphe, ensemble des morphismes",
+      "scan": "un élément de $U$",
+      "tex": "un élément du $U$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "un élément du $U$",
+        "new": "un élément de $U$"
+      },
+      "note": "L'imprimé porte « de U », non « du U »."
+    }
+  ],
+  "coordinator": "Comptes (normal/misprint) : 186 : 1/1 ; 187 : 0/0 ; 188 : 0/1 ; 189 : 1/0 ; 190 : 1/0."
+}

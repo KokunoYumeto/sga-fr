@@ -1,0 +1,159 @@
+import json, os
+
+RUN = r"C:\Users\user\Documents\sga_scan_check_20261105\run_7II"
+FOLDER = os.path.join(RUN, "b071_075")
+OUT = os.path.join(RUN, "findings_071_075.json")
+
+F = []
+
+
+def add(**kw):
+    F.append(kw)
+
+
+# ---------------- page 71 ----------------
+add(page=71,
+    where="Lemme 2.3, label of the first assertion, '(i) Ω^n_X ≈ O_X(-n)'",
+    scan="(i)  Ω^n_X ≈ O_X(-n) (checked at 6x)",
+    tex=r"(1) \qquad $\Omega^n_X \approx \mathcal{O}_X(-n)$",
+    kind="number", confidence="high",
+    fix={"old": r"(1) \qquad", "new": r"(i) \qquad"},
+    note="The label is the letter i (dot merged with the stem, short serif at x-height; the digit 1 of 'n = 1' has a flag at the top). Same glyph as the (i) of Théorème 3.3 on p. 75, which the TeX writes (i); the text refers to 'L'assertion (i)' and '2.3 (i)'.")
+
+add(page=71,
+    where="Lemme 2.3 (iv), source of the restriction map, 'H^o( IP(V*),O_X(1)) = V*'",
+    scan="H^o(X,O_X(1)) <~ H^o( IP(V*),O_X(1)) = V*, (checked at 2x)",
+    tex=r"H^0( \mathbb{P}(V^*),\mathcal{O}_X(1)) = V^*",
+    kind="misprint_in_print", confidence="medium",
+    fix=None,
+    corrected=r"H^0( \mathbb{P}(V^*),\mathcal{O}(1)) = V^*",
+    note="Wrong index: the isomorphism is the restriction from the twisting sheaf O(1) of the ambient P(V*), whose sections are V*; with O_X(1) on both sides the map would be an identity. Compare O(-r-1) for the sheaf on P^r in the next paragraph. The TeX keeps the printed reading.")
+
+add(page=71,
+    where="Définition 2.4, second line, 'un S-schéma'",
+    scan="un S-schéma: 'un' and 'schéma' underlined, 'S-' not (checked at 3.5x)",
+    tex=r"\underline{est un S-schéma}",
+    kind="underline", confidence="high",
+    fix={"old": r"\underline{est un S-schéma}", "new": r"\underline{est un} $S$-\underline{schéma}"},
+    note="The typed underline breaks at the S and the hyphen, as at the other symbols of this definition (n, S). The fix also sets S in math, as the TeX writes '$S$-schémas' on p. 73.")
+
+add(page=71,
+    where="2.5, 'Si ρ : X → S est une quadrique lisse'",
+    scan="Si ρ : X → S (Greek rho, without the serifs of the typed p, e.g. 'Soit p : X → S' on p. 75; checked at 5x)",
+    tex=r"Si $\rho : X \longrightarrow S$",
+    kind="misprint_in_print", confidence="high",
+    fix=None,
+    corrected=r"Si $p : X \longrightarrow S$",
+    note="The structure map is called p in the continuation of 2.5 on p. 72 (p_*L, p^*p_*L) and in 2.6, 2.8 and 3.1; ρ is the canonical map of the Clifford algebra (1.3). Same slip as ρ_*O_Z on p. 69. The TeX keeps the printed reading.")
+
+# ---------------- page 72 ----------------
+add(page=72,
+    where="first paragraph, 'D'après 2.3 (ii), le schéma de Picard Pic_{X/S} est lisse sur S (car H^2(X,O_X) = 0)'",
+    scan="D'après 2.3 (ii), le schéma de Picard (checked at 3x)",
+    tex=r"D'après 2.3 (ii), le schéma de Picard",
+    kind="misprint_in_print", confidence="high",
+    fix=None,
+    corrected=r"D'après 2.3 (iii), le schéma de Picard",
+    note="Smoothness and unramifiedness of Pic_{X/S} rest on H^2(X,O_X) = 0 and H^1(X,O_X) = 0, which are 2.3 (iii). The two references of this paragraph are interchanged; correct both together (see the next finding). The TeX keeps the printed reading.")
+
+add(page=72,
+    where="first paragraph, end, 'un groupe discret constant ayant la structure indiquée en 2.3 (iii)'",
+    scan="ayant la structure indiquée / en 2.3 (iii). (checked at 3x)",
+    tex=r"la structure indiquée en 2.3 (iii).",
+    kind="misprint_in_print", confidence="high",
+    fix=None,
+    corrected=r"la structure indiquée en 2.3 (ii).",
+    note="The structure of Pic (0, Z, Z ⊕ Z, Z) is given in 2.3 (ii); 2.3 (iii) is a vanishing statement. Goes together with the previous finding. The TeX keeps the printed reading.")
+
+add(page=72,
+    where="2.6, 'Dès lors, les divers isomorphismes u : L_1 ⥲ L_2 induisant le même isomorphisme P(u)'",
+    scan="les divers isomorphismes / u : L_1 ⥲ L_2 induisant le même isomorphisme",
+    tex=r"induisant le \underline{même} isomorphisme",
+    kind="misprint_in_print", confidence="high",
+    fix=None,
+    corrected=r"induisent le \underline{même} isomorphisme",
+    note="Typing error: with the participle the main clause 'les divers isomorphismes ... , de sorte que ...' has no finite verb. The TeX keeps the printed reading.")
+
+# ---------------- page 73 ----------------
+add(page=73,
+    where="first paragraph, 'encore notée P(X), donc X est un diviseur relatif de degré 2'",
+    scan="sur S, encore notée P(X), donc X est un diviseur relatif de degré 2. (checked at 1.3x)",
+    tex=r"encore notée $P(X)$, donc $X$ est un diviseur relatif de degré 2.",
+    kind="misprint_in_print", confidence="low",
+    fix=None,
+    corrected=r"encore notée $P(X)$, dont $X$ est un diviseur relatif de degré 2.",
+    note="Probably 'dont' (the Severi-Brauer variety P(X) of which X is a relative divisor of degree 2, as locally in P(p_*L) on p. 72); the typescript confuses the two words the other way on p. 67 ('dont définit'). 'donc' is grammatical, so this is a suggestion only. The TeX keeps the printed reading.")
+
+add(page=73,
+    where="'On désigne par e(D) la section correspondante de Z(X) (celle sur lequelle e(W(D)) vaut 1)'",
+    scan="de Z(X) (celle sur lequelle e(W(D)) vaut 1). (checked at 2.5x)",
+    tex=r"(celle sur laquelle $e(W(D))$ vaut 1)",
+    kind="misprint_in_print", confidence="high",
+    fix={"old": "sur laquelle", "new": "sur lequelle"},
+    corrected="sur laquelle",
+    note="Typing error in the print. The TeX silently corrects it; the fix restores the printed reading.")
+
+# ---------------- page 74 ----------------
+add(page=74,
+    where="proof of 2.8, 'Soient donc W_1 et W*_2 deux sous-espaces totalement isotropes'",
+    scan="Soient donc W_1 et W*_2 (asterisk above the index 2; checked at 4x)",
+    tex=r"$W_1$ et $W^*_2$ deux sous-espaces",
+    kind="misprint_in_print", confidence="high",
+    fix=None,
+    corrected=r"$W_1$ et $W_2$ deux sous-espaces",
+    note="The asterisk is spurious: the two subspaces are W_1 and W_2 in a), b), c) and in the rest of the proof (W*_2 would be a dual). The TeX keeps the printed reading.")
+
+add(page=74,
+    where="proof of 2.8, same sentence, 'tels que e(W) = e(W'), i.e. tels que W/W ∩ W' soit de dimension paire (1.12)'",
+    scan="tels que e(W) = e(W'), i.e. tels que W/W ∩ W' soit (checked at 1.3x)",
+    tex=r"tels que $e(W) = e(W')$, i.e. tels que $W/W \cap W'$ soit",
+    kind="misprint_in_print", confidence="medium",
+    fix=None,
+    corrected=r"tels que $e(W_1) = e(W_2)$, i.e. tels que $W_1/W_1 \cap W_2$ soit",
+    note="Author's notation slip: the subspaces were just named W_1, W_2 (as in Proposition 1.12, cited here); no W, W' are defined. Correct both formulas together, and with the previous finding. The TeX keeps the printed reading.")
+
+# ---------------- page 75 ----------------
+add(page=75,
+    where="3.1, display defining η",
+    scan="η ∈ H^o(S, R^1 p_* ZZ_ℓ(1)) (checked at 3x); the text below has R^2",
+    tex=r"\eta \in H^0(S, R^1 p_* \mathbb{Z}_\ell(1))",
+    kind="misprint_in_print", confidence="high",
+    fix=None,
+    corrected=r"\eta \in H^0(S, R^2 p_* \mathbb{Z}_\ell(1))",
+    note="Wrong degree: η is defined three lines below as the image in H^0(S, R^2 p_* Z_ℓ(1)) of c_1(O(1)) ∈ H^2(X, Z_ℓ(1)). The TeX keeps the printed reading.")
+
+# ---------------- checks ----------------
+ok = True
+for x in F:
+    path = os.path.join(FOLDER, "page_%03d.tex" % x["page"])
+    with open(path, encoding="utf-8", newline="") as fh:
+        text = fh.read()
+    if x.get("fix"):
+        n = text.count(x["fix"]["old"])
+        if n != 1:
+            ok = False
+            print("FIX OLD NOT UNIQUE", x["page"], n, repr(x["fix"]["old"]))
+        marker_lines = [l for l in text.split("\n") if l.startswith("%%%%%%%%%%")]
+        for ml in marker_lines:
+            if x["fix"]["old"] in ml or ml in x["fix"]["old"]:
+                ok = False
+                print("FIX TOUCHES MARKER", x["page"])
+    if x["tex"] not in text:
+        ok = False
+        print("TEX FIELD NOT FOUND", x["page"], repr(x["tex"]))
+    if x["kind"] == "misprint_in_print":
+        assert "corrected" in x
+    else:
+        assert "corrected" not in x
+
+order = ["page", "where", "scan", "tex", "kind", "confidence", "fix", "corrected", "note"]
+out = [{k: x[k] for k in order if k in x} for x in F]
+with open(OUT, "w", encoding="utf-8", newline="\n") as fh:
+    json.dump(out, fh, ensure_ascii=False, indent=1)
+    fh.write("\n")
+
+from collections import Counter
+c = Counter((x["page"], x["kind"] == "misprint_in_print") for x in F)
+for p in range(71, 76):
+    print(p, "normal", c[(p, False)], "misprint", c[(p, True)])
+print("all checks ok" if ok else "CHECK FAILURES")

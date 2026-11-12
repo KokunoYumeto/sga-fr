@@ -1,0 +1,146 @@
+{
+  "findings": [
+    {
+      "page": 136,
+      "where": "Fin de la démonstration de 1.4, condition d'étalité",
+      "scan": "La condition d'être étale",
+      "tex": "La condition d'être êtale",
+      "kind": "accent",
+      "confidence": "high",
+      "fix": {
+        "old": "d'être êtale",
+        "new": "d'être étale"
+      },
+      "note": "Le tirage porte un accent aigu."
+    },
+    {
+      "page": 138,
+      "where": "Début de la conclusion de la démonstration de 1.1",
+      "scan": "achever la démonstration du théorème 1.1",
+      "tex": "achever la démonstration de théorème",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "de théorème",
+        "new": "du théorème"
+      },
+      "note": "Le tirage porte « du », non « de »."
+    },
+    {
+      "page": 138,
+      "where": "Dernier paragraphe, après « hensélien »",
+      "scan": "et Z/S est lisse au point z₀ de la fibre fermée, on peut trouver une section de Z/S passant par z₀",
+      "tex": "et $Z/S$ passant par $z_{\\circ}$",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "$Z/S$ passant par",
+        "new": "$Z/S$ est lisse au point $z_{\\circ}$ de la fibre fermée, on peut trouver une section de $Z/S$ passant par"
+      },
+      "note": "Une proposition entière a été omise."
+    },
+    {
+      "page": 138,
+      "where": "Fin de page et début du fragment attribué à la p. 139",
+      "scan": "La page 138 se termine par « ce qui achève la démonstration de 1.1. » ; la page 139 commence par le titre de la section 2.",
+      "tex": "Le fragment de la p. 138 finit par « démonstration de » ; le renvoi \\hyperref[XIII.prop1.1]{1.1}. ouvre celui de la p. 139.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "La ligne source 315 appartient encore à la p. 138. Ce débordement n'est pas annoncé dans les commentaires des fragments ; aucune modification du texte n'est nécessaire."
+    },
+    {
+      "page": 139,
+      "where": "Démonstration du lemme 2.2, définition de J₀, première variable",
+      "scan": "k[X_{\\circ},\\ldots,x_N]",
+      "tex": "k[X_{\\circ},\\ldots,X_N]",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "k[x_{\\circ},\\ldots,x_N]",
+      "note": "Le premier X est majuscule dans le tirage ; le TeX conserve cette coquille. Il s'agit de la variable x₀ introduite dans A[x₀,…,x_N]. La dernière variable fait l'objet d'une différence distincte."
+    },
+    {
+      "page": 139,
+      "where": "Démonstration du lemme 2.2, définition de J₀, dernière variable",
+      "scan": "k[X_{\\circ},\\ldots,x_N]",
+      "tex": "k[X_{\\circ},\\ldots,X_N]",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "k[X_{\\circ},\\ldots,X_N]",
+        "new": "k[X_{\\circ},\\ldots,x_N]"
+      },
+      "note": "La dernière variable est imprimée avec un x minuscule."
+    },
+    {
+      "page": 139,
+      "where": "Démonstration du lemme 2.2, choix des relèvements f_i",
+      "scan": "f_i\\ (0\\leq i\\leq N-n)",
+      "tex": "$f_i$ $(0 \\leq i\\leq N-n)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f_i\\quad(1\\leq i\\leq N-n)",
+      "note": "Le TeX conserve la borne inférieure 0 du tirage. Les éléments à relever sont indexés de 1 à N−n."
+    },
+    {
+      "page": 139,
+      "where": "Démonstration du lemme 2.2, espace projectif contenant Z",
+      "scan": "\\PP^N_{\\bar{S}}",
+      "tex": "\\PP^N_{\\bar{S}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\PP^N_S",
+      "note": "Le TeX conserve la barre imprimée au-dessus de S. La construction est sur S ; aucun autre schéma de base \\bar{S} n'est introduit."
+    },
+    {
+      "page": 139,
+      "where": "Démonstration du lemme 2.2, équations définissant Z",
+      "scan": "f_1,\\ldots,f_{\\nu}",
+      "tex": "f_1,\\ldots,f_{\\nu}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f_1,\\ldots,f_{N-n}",
+      "note": "Le TeX conserve l'indice ν du tirage. Les équations choisies juste avant sont au nombre de N−n ; ν n'est pas défini."
+    },
+    {
+      "page": 140,
+      "where": "Phrase précédant le diagramme",
+      "scan": "correspondant de schémas",
+      "tex": "correspondant\\pageoriginale de schémas",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "correspondant de catégories",
+      "note": "Le TeX conserve « schémas ». Le diagramme imprimé a pour objets les catégories Et(Z), Et(X), Et(Z₀) et Et(X₀), non les schémas eux-mêmes."
+    },
+    {
+      "page": 140,
+      "where": "Après le diagramme, réduction à la surjectivité essentielle de c",
+      "scan": "Or a est essentiellement surjectif d'après 1.1",
+      "tex": "Or il est essentiellement surjectif d'après",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "Or il est essentiellement surjectif d'après",
+        "new": "Or $a$ est essentiellement surjectif d'après"
+      },
+      "note": "Le tirage désigne explicitement le foncteur a, et non le foncteur b auquel renverrait « il »."
+    },
+    {
+      "page": 140,
+      "where": "Démonstration de 2.3, cas de dimension nulle",
+      "scan": "le cas où X est de dimension nulle étant triviale",
+      "tex": "cas où $X$ est de dimension nulle étant triviale",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "le cas où $X$ est de dimension nulle étant trivial",
+      "note": "Le TeX conserve « triviale » du tirage ; l'adjectif doit s'accorder avec « cas »."
+    }
+  ],
+  "coordinator": "136 : 1/0 ; 137 : 0/0 ; 138 : 3/0 ; 139 : 1/4 ; 140 : 1/2 (normal/misprint, marqueur inclus).\nCoupe 138–139 : inclure la ligne source 315, \\hyperref[XIII.prop1.1]{1.1}., dans la p. 138 ; la p. 139 commence au titre de la section 2."
+}

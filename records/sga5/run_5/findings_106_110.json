@@ -1,0 +1,788 @@
+[
+ {
+  "page": 106,
+  "where": "top of the page, between the two triangles of type-3 arrows (c'^!P, P, d'^!P and c''^!Q, Q, d''^!Q)",
+  "scan": "a comma between the two triangles, at the height of their bottom rows",
+  "tex": "\\end{tikzcd} \\qquad \\begin{tikzcd} (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d'{}^!P\\arrow[l]\n\\end{tikzcd}\n\\qquad",
+   "new": "d'{}^!P\\arrow[l]\n\\end{tikzcd}\n,\\qquad"
+  },
+  "note": "Comma left out between the two diagrams."
+ },
+ {
+  "page": 106,
+  "where": "triangle after 'Par produit tensoriel externe, on en déduit un triangle commutatif'",
+  "scan": "a comma after the triangle, at the right of its bottom row",
+  "tex": "d'{}^!P\\otimes_X^{\\mathbf L}d''{}^!Q\\arrow[l] (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\overset{\\mathrm{L}}{\\otimes}_Xd''{}^!Q\\arrow[l]",
+   "new": "\\overset{\\mathrm{L}}{\\otimes}_Xd''{}^!Q,\\arrow[l]"
+  },
+  "note": "Put in the last node, as the file does with the commas of its other diagrams."
+ },
+ {
+  "page": 106,
+  "where": "square after 'un morphisme de flèches de type 3 au-dessus de g : C → D :', upper right corner",
+  "scan": "c^!(P ⊗^L Q): c with the hand-drawn ! only, no prime (c'^!P at the left has a typed prime before its !)",
+  "tex": "c'{}^!(P\\otimes^{\\mathbf L}Q)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "&\nc'{}^!(P",
+   "new": "&\nc^!(P"
+  },
+  "note": "c : C → X, as c_*c^!(P ⊗^L Q) in the square (A) of 4.4.2 (and the p. 105 fix)."
+ },
+ {
+  "page": 106,
+  "where": "same square, lower right corner",
+  "scan": "d^!(P ⊗^L Q): no prime on d",
+  "tex": "d'{}^!(P\\otimes Q),",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "d'{}^!(P",
+   "new": "d^!(P"
+  },
+  "note": "Independent of the next fix (the olds do not overlap)."
+ },
+ {
+  "page": 106,
+  "where": "same corner, the tensor sign of d^!(P ⊗^L Q)",
+  "scan": "an L above the ⊗",
+  "tex": "P\\otimes Q (no L)",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "P\\otimes Q),",
+   "new": "P\\overset{\\mathrm{L}}{\\otimes}Q),"
+  },
+  "note": "Written in the form the page uses for its other derived tensors, for the global Exposé III pass (\\overset{\\mathrm{L}}{\\otimes})."
+ },
+ {
+  "page": 106,
+  "where": "square 'au-dessus de D', upper right corner",
+  "scan": "g_*c^!(P ⊗^L Q): no prime on c",
+  "tex": "g_*c'{}^!(P\\otimes^{\\mathbf L}Q)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "g_*c'{}^!(P",
+   "new": "g_*c^!(P"
+  },
+  "note": "As the first square."
+ },
+ {
+  "page": 106,
+  "where": "same square, lower right corner",
+  "scan": "'d (P ⊗^L Q)': no ! after d; clean paper in the gap (no typed placeholder either)",
+  "tex": "d(P\\otimes^{\\mathbf L}Q). (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "d^!(P\\otimes^{\\mathbf L}Q)",
+  "note": "The hand-drawn ! was never put in: the square lies over D and its lower right corner is d^!(P ⊗^L Q), as in the first square and in A_2 (d_*d^!(P ⊗^L Q)). The TeX keeps the printed reading."
+ },
+ {
+  "page": 106,
+  "where": "'d'où la commutativité de (A) dans le cas (i). Il reste à traiter le cas (ii).'",
+  "scan": "one paragraph: 'Il reste à traiter le cas (ii).' runs on in the same line",
+  "tex": "a blank line (new paragraph) before 'Il reste'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "dans le cas (i).\n\nIl reste",
+   "new": "dans le cas (i). Il reste"
+  },
+  "note": "Paragraph break; drop it if paragraphing is left to a global pass."
+ },
+ {
+  "page": 106,
+  "where": "top of printed p. 107: the two squares of type-1 arrows (c'_*c'^!P ... and c''_*c''^!Q ...), which still stand at the end of page_106.tex, under the folio-106 marker",
+  "scan": "a comma between the two squares, at mid-height",
+  "tex": "\\end{tikzcd} \\qquad \\begin{tikzcd} (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d'{}^!f_*P\\arrow[l]\n\\end{tikzcd}\n\\qquad",
+   "new": "d'{}^!f_*P\\arrow[l]\n\\end{tikzcd}\n,\\qquad"
+  },
+  "note": "Keyed to page_106.tex, where the squares stand until the folio-107 marker is moved (see the p. 107 marker finding)."
+ },
+ {
+  "page": 107,
+  "where": "top of the page",
+  "scan": "p. 107 begins with the two squares of type-1 arrows (c'_*c'^!P ← c'^!P ..., c''_*c''^!Q ← c''^!Q ...), then 'au-dessus des faces de 4.4.0 contenant f'; p. 106 ends '... des carrés commutatifs de flèches de type 1'",
+  "tex": "the squares are the last display of page_106.tex; the folio-107 marker follows them",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 107 really begins at the '\\[' that opens the two squares (diplomatic s5.tex line 3331). Exact fix: python -I move_marker.py 5 107 '\\[' --before (single quotes; rfind takes the last '\\[' before the marker, the opening of this display; simulated in memory on both layers: the marker then stands between '... de flèches de type $1$' and '\\[', and page 107 begins with the squares, then 'au-'). Text not moved."
+ },
+ {
+  "page": 107,
+  "where": "'au-dessus des faces de 4.4.0 contenant f'",
+  "scan": "au-dessus, one word",
+  "tex": "'au-' and 'dessus' on two source lines, which typesets 'au- dessus'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "au-\ndessus",
+   "new": "au-dessus"
+  },
+  "note": "The line break after the hyphen typesets as a space."
+ },
+ {
+  "page": 107,
+  "where": "(4.4.7), lower right corner",
+  "scan": "g_*c^!(P ⊗^L Q): no prime on c",
+  "tex": "g_*c'{}^!(P\\otimes^{\\mathbf L}Q),",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "g_*c'{}^!(P",
+   "new": "g_*c^!(P"
+  },
+  "note": "As on p. 106."
+ },
+ {
+  "page": 107,
+  "where": "'les flèches 4.2.1 c'^!P ⊗^L_X c''^!Q → c^!(P ⊗^L Q) , d'^!f_*P ⊗^L_Y d''^!f_*Q → d^!f_*(P ⊗^L Q)'",
+  "scan": "c^!(P ⊗^L Q): no prime on c",
+  "tex": "\\longrightarrow c'{}^!(P\\otimes^{\\mathbf L}Q),",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow c'{}^!(",
+   "new": "\\longrightarrow c^!("
+  },
+  "note": ""
+ },
+ {
+  "page": 107,
+  "where": "'dans c^!(P ⊗^L Q) → d^!f_*(P ⊗^L Q) , considérées comme flèches de type 1'",
+  "scan": "c^!(P ⊗^L Q): no prime on c",
+  "tex": "c'{}^!(P\\otimes^{\\mathbf L}Q)\\longrightarrow d^!f_*(P\\otimes^{\\mathbf L}Q),",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "c'{}^!(P\\overset{\\mathrm{L}}{\\otimes}Q)\\longrightarrow",
+   "new": "c^!(P\\overset{\\mathrm{L}}{\\otimes}Q)\\longrightarrow"
+  },
+  "note": ""
+ },
+ {
+  "page": 107,
+  "where": "'les produits tensoriels de flèches d'adjonction c'_*c'^!P ⊗^L c''_*c''^!Q → P ⊗^L Q'",
+  "scan": "⊗ with the L above and no index (clean paper below the sign)",
+  "tex": "c'_*c'{}^!P\\otimes_X^{\\mathbf L}c''_*c''{}^!Q",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "c'{}^!P\\overset{\\mathrm{L}}{\\otimes}_Xc''_*",
+   "new": "c'{}^!P\\overset{\\mathrm{L}}{\\otimes}c''_*"
+  },
+  "note": "Both factors live on X; the print has the plain derived tensor, as in P ⊗^L Q."
+ },
+ {
+  "page": 107,
+  "where": "same line, 'd'_*d'^!f_*P ⊗^L d''_*d''^!f_*Q → f_*P ⊗^L f_*Q'",
+  "scan": "⊗ with the L above and no index",
+  "tex": "d'_*d'{}^!f_*P\\otimes_Y^{\\mathbf L}d''_*d''{}^!f_*Q",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "f_*P\\overset{\\mathrm{L}}{\\otimes}_Yd''_*",
+   "new": "f_*P\\overset{\\mathrm{L}}{\\otimes}d''_*"
+  },
+  "note": ""
+ },
+ {
+  "page": 107,
+  "where": "'du produit tensoriel des flèches c'_*c'^!P → d'_*d'^!f_*P et c''_*c''^!Q → d''_*d''^!f_*Q'",
+  "scan": "the two arrows joined by 'et', no comma",
+  "tex": "d'_*d'{}^!f_*P,\\qquad c''_*c''{}^!Q... (a comma, no 'et')",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "d'_*d'{}^!f_*P,\\qquad\nc''",
+   "new": "d'_*d'{}^!f_*P\\quad\\text{et}\\quad\nc''"
+  },
+  "note": "The print runs both formulas in the text (the display is layout)."
+ },
+ {
+  "page": 107,
+  "where": "'dans le produit tensoriel des flèches P → f_*P et Q → f_*Q .'",
+  "scan": "'et' between the two arrows, no comma",
+  "tex": "P\\longrightarrow f_*P,\\qquad Q\\longrightarrow f_*Q.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "f_*P,\\qquad Q",
+   "new": "f_*P\\quad\\text{et}\\quad Q"
+  },
+  "note": ""
+ },
+ {
+  "page": 108,
+  "where": "triangle after 'Il s'agit de voir que le triangle', label of the vertical arrow",
+  "scan": "≃ (a tilde over a bar)",
+  "tex": "\\arrow[d,\"\\sim\"]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\"\\sim\"]\\arrow[dl]",
+   "new": "\"\\simeq\"]\\arrow[dl]"
+  },
+  "note": ""
+ },
+ {
+  "page": 108,
+  "where": "same triangle, end",
+  "scan": "a comma at the right of the bottom row",
+  "tex": "d'_*d'{}^!f_*P\\arrow[l] (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d'_*d'{}^!f_*P\\arrow[l]",
+   "new": "d'_*d'{}^!f_*P,\\arrow[l]"
+  },
+  "note": ""
+ },
+ {
+  "page": 108,
+  "where": "square after 'à vérifier la commutativité du carré', label of the right vertical arrow",
+  "scan": "≃ (a tilde over a bar)",
+  "tex": "\\arrow[u,\"\\sim\"']",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[u,\"\\sim\"']",
+   "new": "\\arrow[u,\"\\simeq\"']"
+  },
+  "note": ""
+ },
+ {
+  "page": 108,
+  "where": "same square, end",
+  "scan": "a comma at the right of the bottom row",
+  "tex": "f^*d'_*d'{}^*R\\arrow[u,...] (no comma)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "f^*d'_*d'{}^*R",
+   "new": "f^*d'_*d'{}^*R,"
+  },
+  "note": "Independent of the label fix (the olds do not overlap)."
+ },
+ {
+  "page": 108,
+  "where": "label of Corollaire 4.5",
+  "scan": "'Corollaire 4.5 - Sous les hypothèses ...': the number, then a typewriter dash",
+  "tex": "\\begin{statement}{Corollaire 4.5} (renders 'Corollaire 4.5.')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Corollaire 4.5}",
+   "new": "\\begin{statement}{Corollaire 4.5 -}"
+  },
+  "note": "Exposé III label form. The statement environment appends a full stop (\\textbf{#1.}), so the label then renders 'Corollaire 4.5 -.' until the environment's full stop is settled (see message)."
+ },
+ {
+  "page": 108,
+  "where": "statement of Corollaire 4.5, 'Sous les hypothèses de 4.4, on a un carré commutatif'",
+  "scan": "'Sous les hypothèses de' and 'on a un carré commutatif' underlined (not 4.4)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 4.4, on a un carré commutatif",
+   "new": "\\emph{Sous les hypothèses de} 4.4, \\emph{on a un carré commutatif}"
+  },
+  "note": "\\emph is this file's command for the underline in Exposé III (statements of 1.7.4 and 4.4)."
+ },
+ {
+  "page": 108,
+  "where": "Corollaire 4.5, 'où g_* est défini par la flèche d'adjonction g_*K_C = g_*g^!K_D → K_D .'",
+  "scan": "'où' and 'est défini par la flèche d'adjonction' underlined (not g_*, not the formula)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où $g_*$ est défini par la flèche d'adjonction",
+   "new": "\\emph{où} $g_*$ \\emph{est défini par la flèche d'adjonction}"
+  },
+  "note": ""
+ },
+ {
+  "page": 108,
+  "where": "'En d'autres termes, pour u ∈ Hom(...) , v ∈ Hom(...) , on a'",
+  "scan": "a new paragraph: the line is indented",
+  "tex": "runs on after the display (no blank line)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nEn d'autres termes",
+   "new": "\\]\n\nEn d'autres termes"
+  },
+  "note": "Paragraph break; drop it if paragraphing is left to a global pass."
+ },
+ {
+  "page": 109,
+  "where": "every pairing < , > of pp. 109-110; examples: (4.5.1) and (4.7.1) on p. 109, the display of Corollaire 4.10 on p. 110",
+  "scan": "typed less-than and greater-than signs: '< f_*u,f_*v > = g_* < u,v >', '< u_*,v_* > = ∫_C < u,v >', '< cℓ(C')_*,cℓ(C'')_* > = Σ (C'.C'')_z'",
+  "tex": "\\langle ... \\rangle",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the transcription (66 \\langle in s5.tex), not listed per occurrence: the typewriter has no angle brackets, as it has no product sign. One decision for the volume."
+ },
+ {
+  "page": 109,
+  "where": "label of Corollaire 4.7",
+  "scan": "'Corollaire 4.7 - (Formule de Lefschetz-Verdier).': a typewriter dash, the title in parentheses, a hyphen in Lefschetz-Verdier, a full stop after the parenthesis",
+  "tex": "\\begin{statement}{Corollaire 4.7 -- Formule de Lefschetz--Verdier} (renders 'Corollaire 4.7 – Formule de Lefschetz–Verdier.')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{Corollaire 4.7 -- Formule de Lefschetz--Verdier}",
+   "new": "{Corollaire 4.7 - (Formule de Lefschetz-Verdier)}"
+  },
+  "note": "Two en dashes added, the parentheses left out. With the environment's appended full stop this renders the print exactly; if that full stop is dropped for the dash labels, write '...Verdier).}' instead. The title's underline is the accepted \\textbf setting."
+ },
+ {
+  "page": 109,
+  "where": "statement of Corollaire 4.7, 'Sous les hypothèses de 4.4, supposons que Y_1 = Y_2 = S = D' = D'' . Pour'",
+  "scan": "'Sous les hypothèses de', 'sup-posons que' and 'Pour' underlined (not 4.4, not the formula)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 4.4, supposons que $Y_1=Y_2=S=D'=D''$. Pour",
+   "new": "\\emph{Sous les hypothèses de} 4.4, \\emph{supposons que} $Y_1=Y_2=S=D'=D''$. \\emph{Pour}"
+  },
+  "note": ""
+ },
+ {
+  "page": 109,
+  "where": "Corollaire 4.7, ', on a' before (4.7.1)",
+  "scan": "'on a' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "on a\n\\begin{equation}",
+   "new": "\\emph{on a}\n\\begin{equation}"
+  },
+  "note": ""
+ },
+ {
+  "page": 109,
+  "where": "Corollaire 4.7, 'où u_* ∈ Hom(f_{1*}L_1,f_{2*}L_2)' after (4.7.1)",
+  "scan": "'où' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où\n\\[\nu_*",
+   "new": "\\emph{où}\n\\[\nu_*"
+  },
+  "note": ""
+ },
+ {
+  "page": 109,
+  "where": "Corollaire 4.7, 'sont les homomorphismes déduits de u, v par image directe sur S (3.7.6) , et'",
+  "scan": "'sont les homomorphismes dé-duits de', 'par image directe sur' and 'et' underlined (not u, v, not S (3.7.6))",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "sont les homomorphismes déduits de $u$, $v$ par image directe sur $S$ (3.7.6), et",
+   "new": "\\emph{sont les homomorphismes déduits de} $u$, $v$ \\emph{par image directe sur} $S$ (3.7.6), \\emph{et}"
+  },
+  "note": ""
+ },
+ {
+  "page": 109,
+  "where": "Corollaire 4.7, 'est le cup-produit, au sens de (SGA 6 I 8.3), des homomorphismes de complexes parfaits u_* , v_* (4.1.5) .'",
+  "scan": "'est le cup-produit', 'au sens de' and 'des homomorphismes de complexes par-faits' underlined (not the commas, the reference, u_*, v_*)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est le cup-produit, au sens de (SGA 6 I 8.3), des homomorphismes de complexes parfaits",
+   "new": "\\emph{est le cup-produit}, \\emph{au sens de} (SGA 6 I 8.3), \\emph{des homomorphismes de complexes parfaits}"
+  },
+  "note": ""
+ },
+ {
+  "page": 109,
+  "where": "label of Corollaire 4.8",
+  "scan": "'Corollaire 4.8 - Soient ...'",
+  "tex": "\\begin{statement}{Corollaire 4.8} (renders 'Corollaire 4.8.')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Corollaire 4.8}",
+   "new": "\\begin{statement}{Corollaire 4.8 -}"
+  },
+  "note": "As Corollaire 4.5 (p. 108)."
+ },
+ {
+  "page": 109,
+  "where": "statement of Corollaire 4.8, 'Soient t : T → S un S-schéma propre, Δ ⊂ T x_S T la diagonale,'",
+  "scan": "'Soient', 'un', 'schéma propre' and 'la diagonale' underlined (not the formulas, not the 'S-' of S-schéma)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $t:T\\longrightarrow S$ un $S$-schéma propre, $\\Delta\\subset T\\times_S T$ la diagonale,",
+   "new": "\\emph{Soient} $t:T\\longrightarrow S$ \\emph{un} $S$-\\emph{schéma propre}, $\\Delta\\subset T\\times_S T$ \\emph{la diagonale},"
+  },
+  "note": ""
+ },
+ {
+  "page": 109,
+  "where": "Corollaire 4.8, 'F : T → T un S-endomorphisme de T,'",
+  "scan": "'un' and 'endomorphisme de' underlined (not 'S-', not T)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "un $S$-endomorphisme de $T$",
+   "new": "\\emph{un} $S$-\\emph{endomorphisme de} $T$"
+  },
+  "note": ""
+ },
+ {
+  "page": 109,
+  "where": "Corollaire 4.8, '... Δ le schéma des points fixes de F ,'",
+  "scan": "'le schéma des points fixes de' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "le schéma des points fixes de $F$",
+   "new": "\\emph{le schéma des points fixes de} $F$"
+  },
+  "note": ""
+ },
+ {
+  "page": 109,
+  "where": "Corollaire 4.8, 'u ∈ Hom(F*L,L) une correspondance de L à L à support dans le graphe de F ,'",
+  "scan": "'une correspondance de', 'à' and 'à support dans le graphe de' underlined (not L, not F)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "une correspondance de $L$ à $L$ à support dans le graphe de $F$",
+   "new": "\\emph{une correspondance de} $L$ \\emph{à} $L$ \\emph{à support dans le graphe de} $F$"
+  },
+  "note": ""
+ },
+ {
+  "page": 109,
+  "where": "Corollaire 4.8, '1 ∈ Hom(L,L) la correspondance identique, à support dans Δ (3.2 b)). Alors on a'",
+  "scan": "'la correspondance identique', 'à support dans' and 'Alors on a' underlined (not the comma, Δ, the reference)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "la correspondance identique, à support dans $\\Delta$ (3.2 b)). Alors on a",
+   "new": "\\emph{la correspondance identique}, \\emph{à support dans} $\\Delta$ (3.2 b)). \\emph{Alors on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 109,
+  "where": "Corollaire 4.8, 'où u_* est l'endomorphisme de t_*L composé de t_*L → t_*F^*L (image inverse) et de t_*u : ...'",
+  "scan": "'où', 'est l'endomorphisme de', 'composé de', 'image inverse' (inside the parentheses), 'et' and 'de' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où $u_*$ est l'endomorphisme de $t_*L$ composé de $t_*L\\longrightarrow t_*F^*L$ (image inverse) et de $t_*u",
+   "new": "\\emph{où} $u_*$ \\emph{est l'endomorphisme de} $t_*L$ \\emph{composé de} $t_*L\\longrightarrow t_*F^*L$ (\\emph{image inverse}) \\emph{et de} $t_*u"
+  },
+  "note": ""
+ },
+ {
+  "page": 109,
+  "where": "label of Corollaire 4.9",
+  "scan": "'Corollaire 4.9 - Sous les hypothèses ...'",
+  "tex": "\\begin{statement}{Corollaire 4.9} (renders 'Corollaire 4.9.')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Corollaire 4.9}",
+   "new": "\\begin{statement}{Corollaire 4.9 -}"
+  },
+  "note": "As Corollaire 4.5 (p. 108)."
+ },
+ {
+  "page": 109,
+  "where": "statement of Corollaire 4.9, 'Sous les hypothèses de 4.7, on suppose que X_i est lisse sur S ,'",
+  "scan": "'Sous les hypothèses de', 'on suppose que' and 'est lisse sur' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 4.7, on suppose que $X_i$ est lisse sur $S$,",
+   "new": "\\emph{Sous les hypothèses de} 4.7, \\emph{on suppose que} $X_i$ \\emph{est lisse sur} $S$,"
+  },
+  "note": ""
+ },
+ {
+  "page": 109,
+  "where": "Corollaire 4.9, 'purement de dimension relative r_i , et que C' (resp. C'') est un sous-schéma'",
+  "scan": "'purement de dimension relative', 'et que' and 'est un sous-schéma' underlined (not r_i, C', (resp. C''))",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "purement de dimension relative $r_i$, et que $C'$ (resp. $C''$) est un sous-schéma",
+   "new": "\\emph{purement de dimension relative} $r_i$, \\emph{et que} $C'$ (resp. $C''$) \\emph{est un sous-schéma}"
+  },
+  "note": "The underline runs on into 'fermé de' at the top of p. 110."
+ },
+ {
+  "page": 110,
+  "where": "Corollaire 4.9 continued, 'fermé de X fini et de tor-dimension finie sur X_2 (resp. X_1) . Soient'",
+  "scan": "'fermé de', 'fini et de tor-dimension finie sur', 'resp.' and 'Soient' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "fermé de $X$ fini et de tor-dimension finie sur $X_2$ (resp. $X_1$). Soient",
+   "new": "\\emph{fermé de} $X$ \\emph{fini et de tor-dimension finie sur} $X_2$ (\\emph{resp.} $X_1$). \\emph{Soient}"
+  },
+  "note": "Here 'resp.' is underlined (on p. 109 '(resp. C'')' is not)."
+ },
+ {
+  "page": 110,
+  "where": "Corollaire 4.9, 'les classes de cohomologie de C' et C'' ,'",
+  "scan": "'les classes de cohomologie de' and 'et' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "les classes de cohomologie de $C'$ et $C''$,",
+   "new": "\\emph{les classes de cohomologie de} $C'$ \\emph{et} $C''$,"
+  },
+  "note": ""
+ },
+ {
+  "page": 110,
+  "where": "Corollaire 4.9, 'cℓ(C')_* ∈ Hom(Rf_{1*}A,Rf_{2*}A)'",
+  "scan": "two plain typed R",
+  "tex": "\\Hom(\\R f_{1*}A,\\R f_{2*}A), with \\R = \\mathbb{R} in the diplomatic s5.tex",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(\\R f_{1*}A,\\R f_{2*}A)",
+   "new": "\\Hom(Rf_{1*}A,Rf_{2*}A)"
+  },
+  "note": "Exposé III types the derived-functor R plain (as the applied fixes Rf_{!}, Rf_{*}, Ri_{1*} of pp. 76-79). In the diplomatic preamble \\newcommand{\\R}{\\mathbb{R}} (line 47) wins over \\providecommand{\\R}{\\mathrm R} (line 185); only the current layer has \\mathrm{R}. Drop both \\R fixes if the diplomatic \\R becomes \\mathrm{R}."
+ },
+ {
+  "page": 110,
+  "where": "Corollaire 4.9, 'cℓ(C'')_* ∈ Hom(Rf_*A,Rf_{1*}A)'",
+  "scan": "two plain typed R",
+  "tex": "\\Hom(\\R f_*A,\\R f_{1*}A)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom(\\R f_*A,\\R f_{1*}A)",
+   "new": "\\Hom(Rf_*A,Rf_{1*}A)"
+  },
+  "note": "As the previous finding; it keeps the misprint Rf_*A (next finding)."
+ },
+ {
+  "page": 110,
+  "where": "same Hom, first argument 'Rf_*A'",
+  "scan": "Rf_*A: no index 2 with the * (clean paper)",
+  "tex": "\\R f_*A (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Rf_{2*}A",
+  "note": "cℓ(C'')_* goes from Rf_{2*}A to Rf_{1*}A (C'' is the correspondence from X_2 to X_1; v_* ∈ Hom(f_{2*}L_2,f_{1*}L_1) in 4.7). The TeX keeps the printed reading. Corrected reading given after the font fix (\\R f_{2*}A if that fix is dropped)."
+ },
+ {
+  "page": 110,
+  "where": "Corollaire 4.9, 'les homomorphismes correspondants (3.2 a) , 3.7.6). On a alors :'",
+  "scan": "'les homo-morphismes correspondants' and 'On a alors' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "les homomorphismes correspondants (3.2 a), 3.7.6). On a alors",
+   "new": "\\emph{les homomorphismes correspondants} (3.2 a), 3.7.6). \\emph{On a alors}"
+  },
+  "note": "Independent of the colon fix (next finding): the olds do not overlap."
+ },
+ {
+  "page": 110,
+  "where": "'On a alors :' before the display",
+  "scan": "a colon after 'alors'",
+  "tex": "On a alors (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\\[\n\\langle \\cl(C')_*,\\cl(C'')_*\\rangle\n=\n\\int",
+   "new": ":\n\\[\n\\langle \\cl(C')_*,\\cl(C'')_*\\rangle\n=\n\\int"
+  },
+  "note": "The colon goes right after 'alors': the old starts at the line break after it."
+ },
+ {
+  "page": 110,
+  "where": "Corollaire 4.9, display '< cℓ(C')_* , cℓ(C'')_* > = ∫_{C'∩C''} cℓ(C)cℓ(D) ,'",
+  "scan": "cℓ(C)cℓ(D)",
+  "tex": "\\int_{C'\\cap C''}\\cl(C)\\cl(D), (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\int_{C'\\cap C''}\\cl(C')\\cl(C'')",
+  "note": "Only cℓ(C') and cℓ(C'') are defined in 4.9, and it is their cup-product that is integrated over C'∩C'' (written cℓ(C')cℓ(C'') in 4.11.1-4.11.2); C, D are the letters of 4.3 (classes of c, d). The TeX keeps the printed reading."
+ },
+ {
+  "page": 110,
+  "where": "Corollaire 4.9, 'où cℓ(C) cℓ(D) ∈ H^{2(r_1+r_2)}_{C'∩C''}(X,A(r_1+r_2))'",
+  "scan": "cℓ(C) cℓ(D)",
+  "tex": "\\cl(C)\\cl(D)\\in (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\cl(C')\\cl(C'')\\in",
+  "note": "As the previous finding. The TeX keeps the printed reading."
+ },
+ {
+  "page": 110,
+  "where": "same display, '= H^0(C'∩C'', K_{(C'∩C'')})'",
+  "scan": "the index of K in parentheses: K_{(C' ∩ C'')}",
+  "tex": "K_{C'\\cap C''}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "K_{C'\\cap C''})",
+   "new": "K_{(C'\\cap C'')})"
+  },
+  "note": ""
+ },
+ {
+  "page": 110,
+  "where": "Corollaire 4.9, 'est le cup-produit habituel.'",
+  "scan": "'est le cup-produit habituel' underlined (not the full stop)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est le cup-produit habituel",
+   "new": "\\emph{est le cup-produit habituel}"
+  },
+  "note": ""
+ },
+ {
+  "page": 110,
+  "where": "label of Corollaire 4.10",
+  "scan": "'Corollaire 4.10 - Sous les hypothèses ...'",
+  "tex": "\\begin{statement}{Corollaire 4.10} (renders 'Corollaire 4.10.')",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Corollaire 4.10}",
+   "new": "\\begin{statement}{Corollaire 4.10 -}"
+  },
+  "note": "As Corollaire 4.5 (p. 108)."
+ },
+ {
+  "page": 110,
+  "where": "statement of Corollaire 4.10, 'Sous les hypothèses de 4.9, supposons que C'∩C'' soit fini. Pour z ∈ C'∩C'' , notons'",
+  "scan": "'Sous les hypothèses de', 'supposons que', 'soit fini', 'Pour' and 'notons' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 4.9, supposons que $C'\\cap C''$ soit fini. Pour $z\\in C'\\cap C''$, notons",
+   "new": "\\emph{Sous les hypothèses de} 4.9, \\emph{supposons que} $C'\\cap C''$ \\emph{soit fini}. \\emph{Pour} $z\\in C'\\cap C''$, \\emph{notons}"
+  },
+  "note": ""
+ },
+ {
+  "page": 110,
+  "where": "Corollaire 4.10, 'notons (C'.C'')_z l'image dans A'",
+  "scan": "(C'.C'')_z: a typed full stop on the baseline",
+  "tex": "$(C'\\!\\cdot C'')_z$ (a centred dot)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "$(C'\\!\\cdot C'')_z$",
+   "new": "$(C'.C'')_z$"
+  },
+  "note": "As the applied fixes of 4.12 and (4.12.1), pp. 111-112."
+ },
+ {
+  "page": 110,
+  "where": "Corollaire 4.10, 'l'image dans A de la multiplicité d'intersection de C' et C'' en z . Alors on a'",
+  "scan": "'l'image dans', 'de la multiplicité d'in-tersection de', 'et', 'en' and 'Alors on a' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "l'image dans $A$ de la multiplicité d'intersection de $C'$ et $C''$ en $z$. Alors on a",
+   "new": "\\emph{l'image dans} $A$ \\emph{de la multiplicité d'intersection de} $C'$ \\emph{et} $C''$ \\emph{en} $z$. \\emph{Alors on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 110,
+  "where": "display of Corollaire 4.10, 'Σ_{z ∈ C'∩C''} (C'.C'')_z .'",
+  "scan": "(C'.C'')_z: a baseline full stop",
+  "tex": "(C'\\!\\cdot C'')_z",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "}(C'\\!\\cdot C'')_z.",
+   "new": "}(C'.C'')_z."
+  },
+  "note": "As the previous one."
+ },
+ {
+  "page": 110,
+  "where": "label of 4.11",
+  "scan": "'4.11', then the text; no punctuation after the number",
+  "tex": "\\begin{statement}{4.11} (renders '4.11.')",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": null,
+  "note": "The full stop comes from the statement environment (\\textbf{#1.}); it goes with the decision on the environment's full stop for the dash labels (see message)."
+ },
+ {
+  "page": 110,
+  "where": "4.11, 'du fait qu'on est dans une situation \"excédentaire\".'",
+  "scan": "straight typewriter double quotes",
+  "tex": "«excédentaire»",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "«excédentaire»",
+   "new": "``excédentaire''"
+  },
+  "note": "The accepted forms for the print's straight quotes are ``...'' and \"...\"; guillemets are another sign."
+ },
+ {
+  "page": 110,
+  "where": "every cℓ of p. 110; examples: cℓ(C') ∈ H^{2r_1}_{C'}(X,A(r_1)) (4.9), the display of 4.10, (4.11.1)",
+  "scan": "cℓ: a typed c followed by a hand-drawn script ℓ",
+  "tex": "\\cl = \\operatorname{cl} (a roman l)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the transcription (macro \\cl, s5.tex line 81), not listed per occurrence. One decision for the volume (e.g. \\operatorname{c\\ell} for the diplomatic layer where the print writes cℓ)."
+ }
+]

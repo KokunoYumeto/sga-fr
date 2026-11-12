@@ -1,0 +1,201 @@
+{
+ "id": "resp_015f73eb0edafc8e006af456cb4da887d2bbb47952f5dbd28a",
+ "object": "response",
+ "created_at": 1794397899,
+ "status": "completed",
+ "access_programs": {
+  "cyber": "standard"
+ },
+ "background": true,
+ "billing": {
+  "payer": "developer"
+ },
+ "completed_at": 1794398053,
+ "error": null,
+ "frequency_penalty": 0.0,
+ "image": {
+  "context_compression": "disabled"
+ },
+ "incomplete_details": null,
+ "max_output_tokens": 128000,
+ "max_tool_calls": null,
+ "model": "gpt-6.1-sol",
+ "moderation": null,
+ "output": [
+  {
+   "id": "rs_015f73eb0edafc8e006af456d8135c87d28e1b0020282a1862",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af456e1ca9087d2b77d8cc5d893d3b7",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af456e88ab087d2a802f1f50a419f48",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af456f1bd6087d2895bc341074f2cc7",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af456f9da8887d2ac40c406652ab1d2",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af45700cf0487d2b7de2f9a7f0116e5",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af457058e4087d2bfd7eb8f8262674d",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af4570d8b3087d2962b439deed8555b",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af45716f9bc87d280c88893b660fe73",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af4571eed5887d2a4000501ee783b4e",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af45728901887d2a178fcce1175b737",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af4572ffd2c87d28a959b1491965c05",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af457391c5887d2a720158e1c663c02",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af457405aa887d2b31af1e85e4a7dd4",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af45748efb487d282db58a4583f67ca",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af45752d52887d290081773e1165c5b",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "rs_015f73eb0edafc8e006af4575d072c87d2af564aa2e469240c",
+   "type": "reasoning",
+   "content": [],
+   "summary": []
+  },
+  {
+   "id": "msg_015f73eb0edafc8e006af4575fe69887d2bb85f381679b65c4",
+   "type": "message",
+   "status": "completed",
+   "content": [
+    {
+     "type": "output_text",
+     "annotations": [],
+     "logprobs": [],
+     "text": "{\n  \"findings\": [\n    {\n      \"page\": 168,\n      \"where\": \"Ligne d’auteur, sous le titre\",\n      \"scan\": \"par M. ARTIN\",\n      \"tex\": \"M. Artin\",\n      \"kind\": \"missing\",\n      \"confidence\": \"high\",\n      \"fix\": {\n        \"old\": \"\\\\begin{center}\\nM. Artin\",\n        \"new\": \"\\\\begin{center}\\npar M. Artin\"\n      },\n      \"note\": \"Le mot « par » manque devant le nom de l’auteur.\"\n    },\n    {\n      \"page\": 168,\n      \"where\": \"Introduction, fin du premier paragraphe : « acyclicité locale de f »\",\n      \"scan\": \"acyclicité locale de f\",\n      \"tex\": \"acyclicité locale de $f$\",\n      \"kind\": \"misprint_in_print\",\n      \"confidence\": \"high\",\n      \"fix\": null,\n      \"corrected\": \"acyclicité locale de $g$\",\n      \"note\": \"Coquille de l’imprimé conservée par le TeX : le morphisme a été nommé g au début du paragraphe.\"\n    },\n    {\n      \"page\": 168,\n      \"where\": \"Introduction, dernière proposition du premier paragraphe\",\n      \"scan\": \"implique que f est acyclique.\",\n      \"tex\": \"implique\\nque $f$ est acyclique.\",\n      \"kind\": \"misprint_in_print\",\n      \"confidence\": \"high\",\n      \"fix\": null,\n      \"corrected\": \"implique que $g$ est acyclique.\",\n      \"note\": \"Seconde occurrence de la même coquille de notation dans l’imprimé, conservée par le TeX : il s’agit du morphisme g.\"\n    },\n    {\n      \"page\": 169,\n      \"where\": \"Proposition 1.1, condition (ii bis), hypothèse entre parenthèses\",\n      \"scan\": \"Si f est quasi-compact et quasi-séparé\",\n      \"tex\": \"Si $f$ est quasi-compact et quasi-séparé.\",\n      \"kind\": \"misprint_in_print\",\n      \"confidence\": \"high\",\n      \"fix\": null,\n      \"corrected\": \"Si $g$ est quasi-compact et quasi-séparé.\",\n      \"note\": \"Coquille de l’imprimé conservée par le TeX : l’hypothèse porte sur le morphisme g de la proposition.\"\n    }\n  ],\n  \"coordinator\": \"168 : 1/2 ; 169 : 0/1 ; 170 : 0/0 (normal/misprint).\"\n}"
+    }
+   ],
+   "phase": "final_answer",
+   "role": "assistant"
+  }
+ ],
+ "parallel_tool_calls": true,
+ "presence_penalty": 0.0,
+ "previous_response_id": null,
+ "prompt_cache_key": null,
+ "prompt_cache_retention": "24h",
+ "reasoning": {
+  "context": "all_turns",
+  "effort": "max",
+  "mode": "standard",
+  "summary": null
+ },
+ "safety_identifier": null,
+ "service_tier": "flex",
+ "store": true,
+ "temperature": 1.0,
+ "text": {
+  "format": {
+   "type": "text"
+  },
+  "verbosity": "medium"
+ },
+ "tool_choice": "auto",
+ "tool_usage": {
+  "image_gen": {
+   "input_tokens": 0,
+   "input_tokens_details": {
+    "image_tokens": 0,
+    "text_tokens": 0
+   },
+   "output_tokens": 0,
+   "output_tokens_details": {
+    "image_tokens": 0,
+    "text_tokens": 0
+   },
+   "total_tokens": 0
+  },
+  "web_search": {
+   "num_requests": 0
+  }
+ },
+ "tools": [],
+ "top_logprobs": 0,
+ "top_p": 0.98,
+ "truncation": "disabled",
+ "usage": {
+  "input_tokens": 19896,
+  "input_tokens_details": {
+   "cache_write_tokens": 0,
+   "cached_tokens": 19893
+  },
+  "output_tokens": 8998,
+  "output_tokens_details": {
+   "reasoning_tokens": 8414
+  },
+  "total_tokens": 28894
+ },
+ "user": null,
+ "metadata": {}
+}

@@ -1,0 +1,105 @@
+{
+  "findings": [
+    {
+      "page": 341,
+      "where": "Opening paragraph, reference after the restriction functor",
+      "scan": "(IV followed by an unfilled blank)",
+      "tex": "\\sisi{IV\\quad}{\\hyperrefext[IV][IV.prop11.3.1]{11.3.1}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\hyperrefext[IV][IV.prop11.3.1]{11.3.1}",
+      "note": "The printed reference lacks its number. The TeX records the incomplete reading in the first argument and supplies the reference through the editorial correction."
+    },
+    {
+      "page": 341,
+      "where": "Sentence immediately before Lemma 5.1.2",
+      "scan": "Les foncteur",
+      "tex": "Les foncteurs",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Les foncteurs",
+      "note": "The print omits the plural s; the TeX silently corrects it."
+    },
+    {
+      "page": 342,
+      "where": "Formula (5.1.3.1), left-hand side",
+      "scan": "(j_1 j_2)=j_{1!}j_{2!}",
+      "tex": "(j_1 j_2)\\sisi{}{!}=j_{1!}j_{2!}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(j_1 j_2)_{!}=j_{1!}j_{2!}",
+      "note": "The print omits the lower-shriek on the composite. The TeX records the omission and supplies an editorial correction."
+    },
+    {
+      "page": 343,
+      "where": "Opening paragraph, citation of a scholie",
+      "scan": "Scholie 5.1.3",
+      "tex": "Scholie \\sisi{\\hyperref[XVII.subsubsec5.1.3]{5.1.3}}{\\hyperref[XVII.sch4.1.3]{4.1.3}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Scholie \\hyperref[XVII.sch4.1.3]{4.1.3}",
+      "note": "The printed scholie reference is erroneous. The TeX records 5.1.3 and editorially corrects it to 4.1.3."
+    },
+    {
+      "page": 344,
+      "where": "Cartesian square in the proof of Lemma 5.1.6, right vertical arrow",
+      "scan": "f'",
+      "tex": "f\\sisi{'}{}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "f",
+      "note": "This arrow is the original morphism f:X\\rightarrow Y, not f'. The TeX records the printed prime and removes it editorially."
+    },
+    {
+      "page": 344,
+      "where": "Conclusion of the proof of Lemma 5.1.6",
+      "scan": "nuls en dehors de U",
+      "tex": "nuls en dehors de $U$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "nuls en dehors de $V$",
+      "note": "Both members are objects on Y and vanish outside V; U is the open subscheme of X. The TeX keeps the printed error."
+    },
+    {
+      "page": 344,
+      "where": "Section 5.1.7, sentence beginning “Plaçons-nous”",
+      "scan": "dans la catégorie",
+      "tex": "dans le catégorie",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "dans le catégorie",
+        "new": "dans la catégorie"
+      },
+      "note": "The print has the feminine article la, not le."
+    },
+    {
+      "page": 345,
+      "where": "Theorem 5.1.8(a), first transitivity isomorphism after f=gh",
+      "scan": "c_{f,g}",
+      "tex": "c_{\\sisi{f,g}{g,h}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "c_{g,h}",
+      "note": "For the factorization f=gh, the indices must be g,h. The TeX records the printed f,g and corrects them editorially; the subsequent general cocycle formula is unaffected."
+    },
+    {
+      "page": 345,
+      "where": "End of Theorem 5.1.8(a)(ii), page cut",
+      "scan": "on retrouve la théorie de variance 5.1.4 (resp. 5.1.3).",
+      "tex": "immersions ouvertes) on retrouve la théorie de variance",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The supplied cut stops before the final references, although they finish this printed page. Extend the extraction through “5.1.4 (resp. 5.1.3).”; do not insert duplicate text into the source."
+    }
+  ],
+  "coordinator": "341: 0/2; 342: 0/1; 343: 0/1; 344: 1/2; 345: 1/1 (normal/misprint).\nMarker p. 345: extend the page cut beyond “théorie de variance” through “5.1.4 (resp. 5.1.3).”"
+}

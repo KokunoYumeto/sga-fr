@@ -1,0 +1,1 @@
+446: 1/0; 447: 0/1; 448: 1/2; 449: 0/0; 450: 0/0. The \sisi on p.446 (séparé) and p.448 (Spec closing parenthesis) record a print reading A that the print does not have; the editors should recheck them.

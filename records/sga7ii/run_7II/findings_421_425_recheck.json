@@ -1,0 +1,240 @@
+[
+ {
+  "page": 421,
+  "where": "Lemme 4.5.8, heading",
+  "scan": "Lemme 4.5.8 (ou lemme de la trace (DWORK)). -- underlined: 'Lemme' and 'ou lemme de la trace' only",
+  "tex": "\\underline{Lemme 4.5.8 (ou lemme de la trace (DWORK)).}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Lemme 4.5.8 (ou lemme de la trace (DWORK)).}",
+   "new": "\\underline{Lemme} 4.5.8 (\\underline{ou lemme de la trace} (DWORK))."
+  },
+  "note": "The number, the opening parenthesis and '(DWORK)).' are not underlined."
+ },
+ {
+  "page": 421,
+  "where": "Lemme 4.5.8, statement before the display",
+  "scan": "Soient [ul] b ∈ ℚ, b > 0, k ∈ ℤ, k ≥ 2, et [ul] G ∈ L(b/k). Alors le composé [ul]",
+  "tex": "\\underline{Soient $b\\in\\mathbb Q$, $b>0$, $k\\in\\mathbb Z$, $k\\geq2$, et\n$G\\in L(b/k)$. Alors le composé}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Soient $b\\in\\mathbb Q$, $b>0$, $k\\in\\mathbb Z$, $k\\geq2$, et\n$G\\in L(b/k)$. Alors le composé}",
+   "new": "\\underline{Soient} $b\\in\\mathbb Q$, $b>0$, $k\\in\\mathbb Z$, $k\\geq2$, \\underline{et}\n$G\\in L(b/k)$. \\underline{Alors le composé}"
+  },
+  "note": "The print underlines the words only; the formulas are not underlined."
+ },
+ {
+  "page": 421,
+  "where": "Lemme 4.5.8, statement after the display",
+  "scan": "noté [ul] ψ_k ∘ G, est complètement continu, et sa trace [ul] [cf. [4]] est donnée par la formule [ul]",
+  "tex": "\\underline{noté $\\psi_k\\circ G$, est complètement continu, et sa trace\n[cf. [4]] est donnée par la formule}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{noté $\\psi_k\\circ G$, est complètement continu, et sa trace\n[cf. [4]] est donnée par la formule}",
+   "new": "\\underline{noté} $\\psi_k\\circ G$, \\underline{est complètement continu, et sa trace}\n[cf. [4]] \\underline{est donnée par la formule}"
+  },
+  "note": "ψ_k∘G and the reference [cf. [4]] are not underlined. The print restarts the underline after 'continu,'; kept as one underline (global rule)."
+ },
+ {
+  "page": 421,
+  "where": "(4.5.9), exponent of the denominator",
+  "scan": "tr(ψ_k∘G) = 1/(k-1)^{n+2} Σ_{X∈(μ_{k-1}(Ω))^{n+3}} G(X)",
+  "tex": "\\frac1{(k-1)^{n+2}}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\frac1{(k-1)^{n+3}}",
+  "note": "The TeX keeps the printed n+2. L(b) consists of series in the n+3 variables X_0,...,X_{n+2} (4.5.1-4.5.2) and the sum runs over (μ_{k-1})^{n+3}; Σ_X X^U is (k-1)^{n+3} when k-1 divides every U_i and 0 otherwise, and tr(ψ_k∘G) = Σ_W B_{(k-1)W}, so tr(ψ_k∘G) = (k-1)^{-(n+3)} Σ G(X). Only this exponent turns (4.4.6) (p. 419) into the printed (4.5.10), whose (q^ν-1)^{n+3}/q^ν is needed again for (4.5.12). Author's slip rather than a typing error."
+ },
+ {
+  "page": 421,
+  "where": "(4.5.10), left-hand side",
+  "scan": "(q-1)card V*(𝔽_{q^ν}) -- no handwritten ν in this factor",
+  "tex": "(q-1)\\operatorname{card}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(q^\\nu-1)\\operatorname{card}",
+  "note": "The TeX keeps the printed (q-1). (4.4.6), which (4.5.10) rewrites, has (q^ν-1)Card V*(𝔽_{q^ν}) on the left, and dividing (4.5.10) by q^ν-1 is what gives (4.5.12). The ν added by hand in the other factors q^ν-1 is missing here."
+ },
+ {
+  "page": 421,
+  "where": "(4.5.10), operator inside tr",
+  "scan": "tr(ψ_q ∏_{j=0}^{ord(q^ν)-1} H^{τ^j}(X^{p^j}) | L(1/(p-1)))",
+  "tex": "\\left.\\psi_q\n\\prod",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\left.\\psi_{q^\\nu}\n\\prod",
+  "note": "The TeX keeps the printed ψ_q. The lemma is applied with k = q^ν (display above), so the operator is ψ_{q^ν}; (4.5.16) also needs ψ_{q^ν}, since α^{ord(q^ν)} = q^{-ν}ψ_{q^ν}∘∏H^{τ^j}(X^{p^j}) by (4.5.14). Same in (4.5.12)."
+ },
+ {
+  "page": 421,
+  "where": "line before (4.5.11), 'Il est stable sous ψ∘G'",
+  "scan": "Il est stable sous ψ ∘G -- no index k after ψ",
+  "tex": "sous $\\psi_k\\circ G$, et",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "sous $\\psi_k\\circ G$, et",
+   "new": "sous $\\psi\\circ G$, et"
+  },
+  "corrected": "sous $\\psi_k\\circ G$, et",
+  "note": "The print has no k after ψ here: blank paper where the subscript would stand, while the k of ψ_k elsewhere on the page is a dark typed letter. The TeX silently supplies it."
+ },
+ {
+  "page": 421,
+  "where": "(4.5.12), denominator of the second term",
+  "scan": "(q^ν-1)^{n+2} over q -- no ν",
+  "tex": "\\frac{(q^\\nu-1)^{n+2}}{q}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\frac{(q^\\nu-1)^{n+2}}{q^\\nu}",
+  "note": "The TeX keeps the printed q. From (4.5.10) (left side (q^ν-1)card V*) and (4.5.11) with G(0)=1: (q^ν-1)card V* = (q^ν-1)^{n+2} + (q^ν-1)^{n+3}q^{-ν}tr(…|L^0), so the denominator is q^ν, as in (4.5.10); (4.5.16) agrees."
+ },
+ {
+  "page": 421,
+  "where": "(4.5.12), operator inside tr",
+  "scan": "tr(ψ_q ∘ ∏_{j=0}^{ord(q^ν)-1} H^{τ^j}(X^{p^j}) | L^0(1/(p-1)))",
+  "tex": "\\left.\\psi_q\\circ",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\left.\\psi_{q^\\nu}\\circ",
+  "note": "The TeX keeps the printed ψ_q; ψ_{q^ν} is meant, as in (4.5.10) (k = q^ν)."
+ },
+ {
+  "page": 422,
+  "where": "formula number between (4.5.13) and (4.5.15)",
+  "scan": "(5.4.14)",
+  "tex": "\\tag{5.4.14}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\tag{4.5.14}",
+  "note": "The TeX keeps the printed number; the formula is (4.5.14)."
+ },
+ {
+  "page": 422,
+  "where": "(4.5.16), end",
+  "scan": "tr((α)^{ord(q^ν)} | L^0(1/(p-1)) .  -- the parenthesis opened at tr( is not closed",
+  "tex": "L^0\\!\\left(\\frac1{p-1}\\right)\\right..",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "L^0\\!\\left(\\frac1{p-1}\\right)\\right).",
+  "note": "One closing parenthesis is missing in the print. The TeX keeps the printed reading (\\right.)."
+ },
+ {
+  "page": 423,
+  "where": "'Evidemment chaque sous-espace ⊕ L^A(b)', index of the sum",
+  "scan": "⊕_{A⊆B} L^A(b) -- ⊂ opening towards B, with a bar under it (compare A⊃B in (4.5.20) and A⊋B in the next line)",
+  "tex": "\\bigoplus_{A\\supset B}L^A(b)$ est stable",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\bigoplus_{A\\supset B}L^A(b)$ est stable",
+   "new": "\\bigoplus_{A\\subseteq B}L^A(b)$ est stable"
+  },
+  "corrected": "\\bigoplus_{A\\supseteq B}L^A(b)$ est stable",
+  "note": "The subspace meant is the one of (4.5.20), the sum over A ⊇ B. The print reverses the inclusion; the TeX silently corrects it."
+ },
+ {
+  "page": 423,
+  "where": "formula number of 'Récrivons encore (4.5.16)'",
+  "scan": "(4.5.2.3)",
+  "tex": "\\tag{4.5.2.3}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\tag{4.5.23}",
+  "note": "The TeX keeps the printed number; the formula is (4.5.23), cited so on p. 424."
+ },
+ {
+  "page": 423,
+  "where": "last sentence, 'y faisant la substitution en X_i = 0'",
+  "scan": "le polynôme déduit de f(X) y faisant la substitution en X_i = 0 pour i ∉ A.",
+  "tex": "de $f(X)$ y faisant la\nsubstitution en $X_i=0$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "de $f(X)$ en y faisant la\nsubstitution $X_i=0$",
+  "note": "The 'en' is displaced: 'déduit de f(X) en y faisant la substitution X_i = 0', as after (4.5.22) ('se déduit de H(X) en y faisant la substitution X_i = 0'). The TeX keeps the printed order."
+ },
+ {
+  "page": 424,
+  "where": "(4.5.25), exponent of the first term",
+  "scan": "(q^ν-1)^{car(A)-1}",
+  "tex": "\\operatorname{car}(A)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\operatorname{card}(A)",
+  "note": "The TeX keeps the printed 'car'; card(A) is meant (next term: card(A))."
+ },
+ {
+  "page": 424,
+  "where": "(4.5.25), trace term",
+  "scan": "tr((α_B))^{ord(q^ν)})",
+  "tex": "\\left((\\alpha_B))^{\\operatorname{ord}(q^\\nu)}\\right)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\left((\\alpha_B)^{\\operatorname{ord}(q^\\nu)}\\right)",
+  "note": "One closing parenthesis too many after α_B (cf. tr((α_A)^{ord(q^ν)}) in (4.5.23) and (4.5.27)). The TeX keeps the printed reading."
+ },
+ {
+  "page": 424,
+  "where": "(4.5.27), index set of the second sum",
+  "scan": "B⊆S / B≠∅ -- the ⊂ has a bar under it",
+  "tex": "B\\subset S\\\\B\\ne\\varnothing",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "B\\subset S\\\\B\\ne\\varnothing",
+   "new": "B\\subseteq S\\\\B\\ne\\varnothing"
+  },
+  "note": "Same barred ⊂ as 'A ⊆ S' in the third line of the page (TeX \\subseteq); the index sets of (4.5.25) and (4.5.26) have a plain ⊂."
+ },
+ {
+  "page": 425,
+  "where": "formula number after '(4.5.27) se récrit'",
+  "scan": "(4.5.23)",
+  "tex": "\\tag{4.5.23}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\tag{4.5.33}",
+  "note": "The TeX keeps the printed number. (4.5.23) is the formula of p. 423 (cited so on p. 424); this one follows (4.5.32)."
+ },
+ {
+  "page": 425,
+  "where": "Lemme 4.6.6, heading",
+  "scan": "Lemme [ul] 4.6.6.",
+  "tex": "\\underline{Lemme 4.6.6.}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{Lemme 4.6.6.}",
+   "new": "\\underline{Lemme} 4.6.6."
+  },
+  "note": "The number is not underlined."
+ },
+ {
+  "page": 425,
+  "where": "Lemme 4.6.6, statement",
+  "scan": "Δ_B(t) ∈ 1 + t𝒪[[t]], et si un entier [ul] j vérifie [ul]",
+  "tex": "\\underline{$\\Delta_B(t)\\in1+t\\mathcal O[[t]]$, et si un entier $j$ vérifie}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{$\\Delta_B(t)\\in1+t\\mathcal O[[t]]$, et si un entier $j$ vérifie}",
+   "new": "$\\Delta_B(t)\\in1+t\\mathcal O[[t]]$, \\underline{et si un entier} $j$ \\underline{vérifie}"
+  },
+  "note": "The formula and j are not underlined."
+ }
+]

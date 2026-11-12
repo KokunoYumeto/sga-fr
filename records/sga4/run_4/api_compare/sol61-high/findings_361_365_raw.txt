@@ -1,0 +1,86 @@
+{
+  "findings": [
+    {
+      "page": 362,
+      "where": "5.3.1, phrase sur les faisceaux mous",
+      "scan": "en faisceau mous",
+      "tex": "en faisceau mous",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "en faisceaux mous",
+      "note": "Faute d'accord de l'imprimé, conservée par le TeX."
+    },
+    {
+      "page": 362,
+      "where": "5.3.1, phrase sur les faisceaux acycliques",
+      "scan": "en faisceaux sur X_{\\cl} acycliques",
+      "tex": "en faisceaux\nsur $\\sisi{X}{\\bar{X}}_{\\cl}$ acycliques",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\bar{X}_{\\cl}",
+      "note": "La barre sur X manque dans l'imprimé : les faisceaux obtenus par j_{\\cl !} sont sur la compactification. Le TeX corrige avec \\sisi."
+    },
+    {
+      "page": 362,
+      "where": "5.3.1, formule précédant 5.3.2",
+      "scan": "Rf_{\\cl}=Rp_{\\cl\\ast}j_{\\cl !}",
+      "tex": "Rf_{\\cl}=Rp_{\\cl \\ast} j_{\\cl !}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Rf_{\\cl !}=Rp_{\\cl \\ast} j_{\\cl !}",
+      "note": "Le signe ! manque au membre gauche dans l'imprimé. Le TeX conserve cette omission."
+    },
+    {
+      "page": 363,
+      "where": "Variantes 5.3.4 (i), catégorie d'arrivée",
+      "scan": "D(S,\\epsilon^{\\ast}\\Aa)",
+      "tex": "D(S,\\epsilon^{\\ast}\\Aa)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "D(S_{\\cl},\\epsilon^{\\ast}\\Aa)",
+      "note": "L'indice cl manque dans l'imprimé : le faisceau d'anneaux \\epsilon^{\\ast}\\Aa est sur S_{\\cl}. Le TeX conserve l'omission."
+    },
+    {
+      "page": 364,
+      "where": "Démonstration de 5.3.6, avant «étant way-out»",
+      "scan": "Le foncteur",
+      "tex": "La foncteur",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "La foncteur",
+        "new": "Le foncteur"
+      },
+      "note": "L'imprimé porte bien «Le»."
+    },
+    {
+      "page": 364,
+      "where": "5.3.7, «images directes à support propre»",
+      "scan": "images directes à support propre",
+      "tex": "images directes\nsupport propre",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "directes\nsupport propre",
+        "new": "directes\nà support propre"
+      },
+      "note": "La préposition «à» de l'imprimé manque dans le TeX."
+    },
+    {
+      "page": 365,
+      "where": "5.4.1, définition du produit tensoriel externe",
+      "scan": "K\\mathop{\\boxtimes}_{\\Aa}L=p^{\\ast}\\underset{\\Aa}{\\otimes}q^{\\ast}L",
+      "tex": "L=p^{\\ast}\\sisi{}{K}\\underset{\\Aa}{\\otimes} q^{\\ast}L",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "K\\mathop{\\boxtimes}_{\\Aa}L=p^{\\ast}K\\underset{\\Aa}{\\otimes}q^{\\ast}L",
+      "note": "Le facteur K après p^{\\ast} manque dans l'imprimé. Le TeX le rétablit avec \\sisi ; sa première branche reproduit correctement l'omission."
+    }
+  ],
+  "coordinator": "Comptes (normal/misprint) : 361 : 0/0 ; 362 : 0/3 ; 363 : 0/1 ; 364 : 2/0 ; 365 : 0/1."
+}

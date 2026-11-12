@@ -1,0 +1,613 @@
+[
+ {
+  "page": 206,
+  "where": "top of the page: 'suivante:' before the first display",
+  "scan": "p. 206 begins with the display Hom_Ĉ(M ⊗_A X, Y) = Hom_A(M,Hom_C(X,Y) .; p. 205 ends with 'l'égalité précédente prend l'allure plus familière / suivante :'",
+  "tex": "'suivante:' is the first line under the folio-206 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 206 really begins at the '\\[' of the display, after 'suivante:'. Exact fix: python -I move_marker.py 5 206 '\\[' . Text not moved. Already done in both live layers of s5.tex (state of 20:52): the marker stands after 'suivante:' there, and the command, simulated in memory, moves it by 0 characters; nothing left to do."
+ },
+ {
+  "page": 206,
+  "where": "after the first display: 'Si le foncteur M ⊗_A X est représentable'",
+  "scan": "a new, indented paragraph",
+  "tex": "runs on from the display (no blank line after \\])",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nSi le foncteur",
+   "new": "\\]\n\nSi le foncteur"
+  },
+  "note": "Paragraph break of the print left out."
+ },
+ {
+  "page": 206,
+  "where": "first display, right-hand side 'Hom_A(M, ...'",
+  "scan": "Hom_A is not underlined (as in the display of p. 205)",
+  "tex": "\\uHom_A(M,",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\uHom_A(M,",
+   "new": "\\Hom_A(M,"
+  },
+  "note": "\\uHom is \\underline{\\Hom}; the print has a plain Hom here."
+ },
+ {
+  "page": 206,
+  "where": "first display, end: 'Hom_A(M,Hom_C(X,Y) .'",
+  "scan": "one closing parenthesis only: the parenthesis opened after Hom_A is never closed",
+  "tex": "\\Hom_{\\cC}(X,Y)).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(X,Y)).",
+   "new": "(X,Y)."
+  },
+  "corrected": "(X,Y)).",
+  "note": "The TeX silently adds the missing parenthesis; the fix restores the print. Independent of the \\uHom_A fix (no overlap)."
+ },
+ {
+  "page": 206,
+  "where": "'ce qui nous permettra de parler du bifoncteur (deux fois covariant) produit tensoriel externe'",
+  "scan": "'(deux fois covariant)' in parentheses",
+  "tex": "'bifoncteur, deux fois covariant, produit'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "bifoncteur, deux fois covariant, produit",
+   "new": "bifoncteur (deux fois covariant) produit"
+  },
+  "note": ""
+ },
+ {
+  "page": 206,
+  "where": "label of Proposition 1.2.2",
+  "scan": "'PROPOSITION 1.2.2. (Critères de représentabilité).': a full stop after the number",
+  "tex": "\\begin{statement}{Proposition 1.2.2 (Critères de représentabilité)}, which prints 'Proposition 1.2.2 (Critères de représentabilité).'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{Proposition 1.2.2 (Critères",
+   "new": "{Proposition 1.2.2. (Critères"
+  },
+  "note": "The environment adds the final full stop after the parenthesis, as in the print."
+ },
+ {
+  "page": 206,
+  "where": "Proposition 1.2.2 (c): 'possède des sommes directes \"quelconques\"'",
+  "scan": "\"quelconques\" in typewriter double quotes",
+  "tex": "sommes directes quelconques",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "sommes directes quelconques",
+   "new": "sommes directes ``quelconques''"
+  },
+  "note": "Quotation marks missing in the TeX (the file writes ``...'' for them in this exposé, p. 208)."
+ },
+ {
+  "page": 206,
+  "where": "Proposition 1.2.2 (c): 'représentable pour \"tout\" couple (M,X)'",
+  "scan": "\"tout\" in typewriter double quotes",
+  "tex": "pour tout couple",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "pour tout couple",
+   "new": "pour ``tout'' couple"
+  },
+  "note": "Quotation marks missing in the TeX."
+ },
+ {
+  "page": 206,
+  "where": "proof of Proposition 1.2.2",
+  "scan": "'Démonstration : L'assertion (a) est claire.' (Démonstration underlined, then a colon)",
+  "tex": "\\begin{prooftext}[Démonstration] ... \\end{prooftext}; Exposé V's prooftext prints 'Démonstration.'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{prooftext}[Démonstration]\nL'assertion (a) est claire. Les deux autres assertions résultent alors du lemme ci-dessous, dont la démonstration est immédiate.\n\\end{prooftext}",
+   "new": "\\emph{Démonstration} : L'assertion (a) est claire. Les deux autres assertions résultent alors du lemme ci-dessous, dont la démonstration est immédiate."
+  },
+  "note": "Proof label of the print, set like the '\\emph{Preuve} :' paragraphs of this exposé; one edit for the whole environment, so that \\begin and \\end go together."
+ },
+ {
+  "page": 207,
+  "where": "Remarque 1.2.4: 'mais C possède des sommes directes'",
+  "scan": "'mais C possède' (no 'que')",
+  "tex": "mais que $\\cC$ possède",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "mais que $\\cC$ possède",
+   "new": "mais $\\cC$ possède"
+  },
+  "note": ""
+ },
+ {
+  "page": 207,
+  "where": "Remarque 1.2.4: 'des sommes directes \"quelconques\" . On pose'",
+  "scan": "\"quelconques\" in typewriter double quotes",
+  "tex": "directes quelconques.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "directes quelconques.",
+   "new": "directes ``quelconques''."
+  },
+  "note": "Quotation marks missing in the TeX."
+ },
+ {
+  "page": 207,
+  "where": "heading '2. Condition de Mittag-Leffler-Artin-Rees.'",
+  "scan": "the underlined title ends with a full stop",
+  "tex": "\\subsection*{2. Condition de Mittag-Leffler-Artin-Rees}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{2. Condition de Mittag-Leffler-Artin-Rees}",
+   "new": "{2. Condition de Mittag-Leffler-Artin-Rees.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 207,
+  "where": "'on pose P = Hom(ℕ°, C) , catégorie des systèmes projectifs'",
+  "scan": "Hom underlined",
+  "tex": "P=\\Hom(\\NN^\\circ,\\cC)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "P=\\Hom(\\NN^\\circ,\\cC)",
+   "new": "P=\\uHom(\\NN^\\circ,\\cC)"
+  },
+  "note": "The functor category Hom(ℕ°,C) has its Hom underlined in the print, as Ĉ = Hom(C,Ens)° on p. 205."
+ },
+ {
+  "page": 207,
+  "where": "heading '2.1. Condition de Mittag-Leffler-Artin-Rees.' (run into the text)",
+  "scan": "the underlined title ends with a full stop",
+  "tex": "\\subsubsection*{2.1. Condition de Mittag-Leffler-Artin-Rees}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{2.1. Condition de Mittag-Leffler-Artin-Rees}",
+   "new": "{2.1. Condition de Mittag-Leffler-Artin-Rees.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 207,
+  "where": "'un morphisme noté h[r] de X[r] dans Y[r] et cela de façon fonctorielle'",
+  "scan": "no comma after Y[r]",
+  "tex": "dans $Y[r]$, et cela",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $Y[r]$, et cela",
+   "new": "dans $Y[r]$ et cela"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 207,
+  "where": "'les \"morphismes de transition\" X_{n+s} ⟶ X_{n+r} (n ≥ 0)'",
+  "scan": "\"morphismes de transition\" in typewriter double quotes",
+  "tex": "les morphismes de transition",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "les morphismes de transition",
+   "new": "les ``morphismes de transition''"
+  },
+  "note": "Quotation marks missing (the TeX has them for the same words on p. 208)."
+ },
+ {
+  "page": 207,
+  "where": "'définissent un morphisme w_sr de X[s] dans X[r] ,'",
+  "scan": "in the line and in words: 'un morphisme w_sr de X[s] dans X[r] ,'",
+  "tex": "a display 'w_{sr}:X[s]\\longrightarrow X[r],'",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "un morphisme\n\\[\nw_{sr}:X[s]\\longrightarrow X[r],\n\\]",
+   "new": "un morphisme $w_{sr}$ de $X[s]$ dans $X[r]$,"
+  },
+  "note": "The print has no colon and no arrow here; 'de ... dans' are its words."
+ },
+ {
+  "page": 207,
+  "where": "'et il est clair que si t est un troisième entier avec t ≥ s ≥ r'",
+  "scan": "no comma after 'que'",
+  "tex": "clair que, si $t$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "clair que, si $t$",
+   "new": "clair que si $t$"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 208,
+  "where": "top of the page: 'vérifiée:' before the display w_ts ∘ w_sr = w_tr",
+  "scan": "p. 208 begins with the display 'w_ts ∘ w_sr = w_tr .'; p. 207 ends with 'l'égalité ci-dessous est vérifiée :'",
+  "tex": "'vérifiée:' is the first line under the folio-208 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 208 really begins at the '\\[' of that display. Exact fix: python -I move_marker.py 5 208 '\\[' (simulated in memory on both live layers: the marker moves 10 characters, to just after 'vérifiée:'). Text not moved."
+ },
+ {
+  "page": 208,
+  "where": "first display",
+  "scan": "'w_ts ∘ w_sr = w_tr .'",
+  "tex": "w_{ts}\\circ w_{sr}=w_{tr}.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "w_{sr}\\circ w_{ts}=w_{tr}.",
+  "note": "The TeX keeps the printed reading. w_ts : X[t] → X[s] and w_sr : X[s] → X[r] compose to w_sr ∘ w_ts; the exposé writes composites in the usual order ('le composé v∘u' for u : X → Y, v : Y → Z, p. 210). The current layer of s5.tex already reads w_{sr}\\circ w_{ts}."
+ },
+ {
+  "page": 208,
+  "where": "'Enfin, si 0 ⟶ X ⟶ Y ⟶ Z ⟶ 0 est une suite exacte de P'",
+  "scan": "a new, indented paragraph",
+  "tex": "runs on after 'et cela de façon fonctorielle.'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "fonctorielle. Enfin, si",
+   "new": "fonctorielle.\n\nEnfin, si"
+  },
+  "note": "Paragraph break of the print left out."
+ },
+ {
+  "page": 208,
+  "where": "'la suite correspondante ci-dessous dans P̄ = Hom(ℕ°, P) est exacte :'",
+  "scan": "Hom underlined",
+  "tex": "\\overline P=\\Hom(\\NN^\\circ,P)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\overline P=\\Hom(\\NN^\\circ,P)",
+   "new": "\\overline P=\\uHom(\\NN^\\circ,P)"
+  },
+  "note": "In 'de la catégorie Hom(ℕ°,P).' higher on the page the print does not underline Hom; the TeX's \\Hom there is right."
+ },
+ {
+  "page": 208,
+  "where": "Définition 2.1.1, first sentence",
+  "scan": "'Soit un objet de la catégorie P .' (no letter X)",
+  "tex": "Soit un objet de la catégorie $P$.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Soit $X$ un objet de la catégorie $P$.",
+  "note": "The TeX keeps the printed reading. The display of the definition uses X, which the print never introduces: the letter has dropped out."
+ },
+ {
+  "page": 208,
+  "where": "Définition 2.1.1: 'tel que pour tout entier s ≥ r l'égalité ci-dessous soit vérifiée'",
+  "scan": "no commas around 'pour tout entier s ≥ r'",
+  "tex": "tel que, pour tout entier $s\\ge r$, l'égalité",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "tel que, pour tout entier $s\\ge r$, l'égalité",
+   "new": "tel que pour tout entier $s\\ge r$ l'égalité"
+  },
+  "note": "Two commas added by the TeX."
+ },
+ {
+  "page": 208,
+  "where": "'Il revient au même de dire que pour tout entier n ≥ 0 les images'",
+  "scan": "no commas around 'pour tout entier n ≥ 0'",
+  "tex": "dire que, pour tout entier $n\\ge0$, les images",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "dire que, pour tout entier $n\\ge0$, les images",
+   "new": "dire que pour tout entier $n\\ge0$ les images"
+  },
+  "note": "Two commas added by the TeX."
+ },
+ {
+  "page": 208,
+  "where": "heading '2.2. Systèmes projectifs AR-nuls.'",
+  "scan": "the underlined title ends with a full stop",
+  "tex": "\\subsubsection*{2.2. Systèmes projectifs AR-nuls}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{2.2. Systèmes projectifs AR-nuls}",
+   "new": "{2.2. Systèmes projectifs AR-nuls.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 209,
+  "where": "Proposition 2.2.2 (i)",
+  "scan": "'(i) Y est AR-nul,' (comma)",
+  "tex": "\\item $Y$ est AR-nul;",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item $Y$ est AR-nul;",
+   "new": "\\item $Y$ est AR-nul,"
+  },
+  "note": ""
+ },
+ {
+  "page": 209,
+  "where": "proof of 2.2.2: 'à la condition de la définition (2.2.1) pour X et Z'",
+  "scan": "'(2.2.1)' in parentheses",
+  "tex": "la définition 2.2.1 pour $X$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "condition de la définition 2.2.1 pour $X$",
+   "new": "condition de la définition (2.2.1) pour $X$"
+  },
+  "note": ""
+ },
+ {
+  "page": 209,
+  "where": "proof of 2.2.2: 'aux conditions de la définition (2.2.1) pour Y'",
+  "scan": "'(2.2.1)' in parentheses",
+  "tex": "la définition 2.2.1 pour $Y$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "conditions de la définition 2.2.1 pour $Y$",
+   "new": "conditions de la définition (2.2.1) pour $Y$"
+  },
+  "note": ""
+ },
+ {
+  "page": 209,
+  "where": "proof of 2.2.2: 'l'entier s + t répond aux conditions'",
+  "scan": "'s + t'",
+  "tex": "$s+t$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$r+t$",
+  "note": "The TeX keeps the printed reading. The integers chosen are r (for X) and t (for Z); s does not occur in the proof."
+ },
+ {
+  "page": 209,
+  "where": "heading '2.3. Rappels sur le calcul de fractions et applications.'",
+  "scan": "the underlined title ends with a full stop",
+  "tex": "\\subsubsection*{2.3. Rappels sur le calcul de fractions et applications}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "{2.3. Rappels sur le calcul de fractions et applications}",
+   "new": "{2.3. Rappels sur le calcul de fractions et applications.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 209,
+  "where": "'S une partie de FL(E)'",
+  "scan": "'FL(E)' with a capital L (p. 210 types 'Fl(E)' twice)",
+  "tex": "$\\Fl(\\cE)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\Fl(\\cE)$",
+   "new": "$\\operatorname{FL}(\\cE)$"
+  },
+  "corrected": "$\\Fl(\\cE)$",
+  "note": "The TeX silently normalizes to \\Fl (\\operatorname{Fl}); the fix restores the print."
+ },
+ {
+  "page": 209,
+  "where": "'vérifiant la propriété universelle suivante : / Pour qu'un foncteur u de E'",
+  "scan": "'suivante :' ends the paragraph; 'Pour qu'un foncteur' begins a new, indented paragraph with a capital P",
+  "tex": "suivante: pour qu'un foncteur (same paragraph, small p)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "suivante: pour qu'un foncteur",
+   "new": "suivante:\n\nPour qu'un foncteur"
+  },
+  "note": "Paragraph break and capital P of the print."
+ },
+ {
+  "page": 209,
+  "where": "'L'unicité d'un tel couple modulo isomorphisme est claire.'",
+  "scan": "a new, indented paragraph",
+  "tex": "runs on after 'et alors la factorisation est unique.'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "est unique. L'unicité",
+   "new": "est unique.\n\nL'unicité"
+  },
+  "note": "Paragraph break of the print left out."
+ },
+ {
+  "page": 209,
+  "where": "end of the page: '(Voir aussi : P. Gabriel et M. Zisman, ... 1967.)'",
+  "scan": "'(Voir aussi : P. Gabriel et M. Zisman, Calculus of fractions and homotopy theory, Erg. der Math., 35, Springer-Verlag, 1967.)': in parentheses, a colon after 'aussi', the title neither underlined nor in another style; p. 210 goes on unindented ('Certaines propriétés ...'), so the paragraph continues",
+  "tex": "'Voir aussi P. Gabriel et M. Zisman, \\emph{Calculus of fractions and homotopy theory}, Erg. der Math., 35, Springer-Verlag, 1967.' and a blank line before the folio-210 marker",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Voir aussi P. Gabriel et M. Zisman, \\emph{Calculus of fractions and homotopy theory}, Erg. der Math., 35, Springer-Verlag, 1967.\n\n",
+   "new": "(Voir aussi : P. Gabriel et M. Zisman, Calculus of fractions and homotopy theory, Erg. der Math., 35, Springer-Verlag, 1967.)\n"
+  },
+  "note": "One edit: the parentheses and colon of the print; no \\emph; and the blank line before the folio-210 marker goes, since 'Certaines propriétés' at the top of p. 210 starts at the left margin (x 181 px, as the other lines of p. 210; the paragraph indent there is x 365) while this typist indents a new paragraph at the top of a page ('Il est clair', p. 209). 'Voir aussi :' is typed in a heavier (bold) face and the reference in another typeface (a typed insertion): not marked."
+ },
+ {
+  "page": 210,
+  "where": "first sentence: 'une description simple de la catégorie E(S^{-1}) :'",
+  "scan": "ends with a colon",
+  "tex": "catégorie $\\cE(S^{-1})$.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "catégorie $\\cE(S^{-1})$.",
+   "new": "catégorie $\\cE(S^{-1})$:"
+  },
+  "note": ""
+ },
+ {
+  "page": 210,
+  "where": "Définition 2.3.1 (c), end: 'dans lequel s appartient à S .'",
+  "scan": "a full stop before the diagrams (D_1), (D_2)",
+  "tex": "dans lequel $s$ appartient à $S$:",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "appartient à $S$:\n\\[",
+   "new": "appartient à $S$.\n\\["
+  },
+  "note": ""
+ },
+ {
+  "page": 210,
+  "where": "diagram (D_1): the arrow X —u→ Y",
+  "scan": "u above the arrow",
+  "tex": "\\arrow[r,\"u\"'] (label below the arrow)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "& X \\arrow[r,\"u\"'] & Y\n\\end{tikzcd}\n\\qquad",
+   "new": "& X \\arrow[r,\"u\"] & Y\n\\end{tikzcd}\n\\qquad"
+  },
+  "note": "Label position in the diagram."
+ },
+ {
+  "page": 210,
+  "where": "diagram (D_2): the bottom arrow X —u→ Y",
+  "scan": "u above the arrow",
+  "tex": "\\arrow[r,\"u\"'] (label below the arrow)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[d,\"s\"'] & Y' \\arrow[d,\"t\"]\\\\\n& X \\arrow[r,\"u\"']",
+   "new": "\\arrow[d,\"s\"'] & Y' \\arrow[d,\"t\"]\\\\\n& X \\arrow[r,\"u\"]"
+  },
+  "note": "Label position in the diagram (u' on the top arrow stands above, as in the print)."
+ },
+ {
+  "page": 210,
+  "where": "diagram (D_2), after Y",
+  "scan": "no full stop after the diagram",
+  "tex": "& Y .",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "& Y .",
+   "new": "& Y"
+  },
+  "note": "Full stop added by the TeX at the end of the display."
+ },
+ {
+  "page": 210,
+  "where": "Définition 2.3.1 (d): 'Pour tout diagramme commutatif :'",
+  "scan": "a colon after 'commutatif'",
+  "tex": "Pour tout diagramme commutatif (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour tout diagramme commutatif\n",
+   "new": "Pour tout diagramme commutatif:\n"
+  },
+  "note": ""
+ },
+ {
+  "page": 210,
+  "where": "(d), second diagram: the arrow T —t→ X",
+  "scan": "the hand-written t stands above the arrow",
+  "tex": "T \\arrow[r,\"t\"'] (label below the arrow)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "T \\arrow[r,\"t\"']",
+   "new": "T \\arrow[r,\"t\"]"
+  },
+  "note": "Label position in the diagram."
+ },
+ {
+  "page": 210,
+  "where": "(d), second diagram, after Y",
+  "scan": "no punctuation after the diagram",
+  "tex": "& Y,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "& Y,",
+   "new": "& Y"
+  },
+  "note": "Comma added by the TeX at the end of the display (the first diagram's 'Z ,' is in the print)."
+ },
+ {
+  "page": 210,
+  "where": "'Dualement on définit la notion suivante :'",
+  "scan": "ends with a colon",
+  "tex": "la notion suivante.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "la notion suivante.",
+   "new": "la notion suivante:"
+  },
+  "note": ""
+ },
+ {
+  "page": 210,
+  "where": "Définition 2.3.2, item (a)'",
+  "scan": "'(a)'': the prime after the closing parenthesis",
+  "tex": "\\item[(a')]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item[(a')]",
+   "new": "\\item[(a)']"
+  },
+  "note": ""
+ },
+ {
+  "page": 210,
+  "where": "Définition 2.3.2, item (b)'",
+  "scan": "'(b)'': the prime after the closing parenthesis",
+  "tex": "\\item[(b')]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item[(b')]",
+   "new": "\\item[(b)']"
+  },
+  "note": ""
+ },
+ {
+  "page": 210,
+  "where": "Définition 2.3.2, item (c)'",
+  "scan": "'(c)'': the prime after the closing parenthesis",
+  "tex": "\\item[(c')]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item[(c')]",
+   "new": "\\item[(c)']"
+  },
+  "note": ""
+ },
+ {
+  "page": 210,
+  "where": "end of the page: 'à $S$,' at the end of the (c') line",
+  "scan": "p. 210 ends with '(c)' Tout diagramme du type (D_1)' ci-dessous, dans lequel s appartient'; p. 211 begins 'à S , peut se compléter en un diagramme du type (D_2)' ...'",
+  "tex": "'à $S$,' ends the last line of page_210.tex; the folio-211 marker follows",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 211 really begins at 'à $S$,'. Exact fix: python -I move_marker.py 5 211 'à $S$,' --before (simulated in memory on both live layers: the marker goes on its own line between 'dans lequel $s$ appartient ' and 'à $S$,'). Text not moved."
+ }
+]

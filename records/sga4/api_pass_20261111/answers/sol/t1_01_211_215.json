@@ -1,0 +1,132 @@
+[
+ {
+  "page": 211,
+  "where": "Deuxième paragraphe, parenthèse après « de type fini »",
+  "scan": "finis ainsi que tous leurs composants",
+  "tex": "finis ainsi que tout leurs composants",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "tout leurs composants",
+   "new": "tous leurs composants"
+  },
+  "note": "Le dernier mot du quantificateur est « tous », non « tout »."
+ },
+ {
+  "page": 211,
+  "where": "Lemme 3, notation de la seconde suite",
+  "scan": "La seconde suite porte un glyphe grec arrondi, différent du f employé ensuite pour les applications.",
+  "tex": "$(f_n)_{n \\geq 1}$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$(f_n)_{n\\geq 1}$",
+  "note": "Discordance de notation dans l'imprimé : les applications sont ensuite toutes notées f_n. Le TeX uniformise silencieusement en f_n. La petite haste du glyphe initial est peu nette sur ce scan ; sa forme grecque précise n'est pas déterminée ici."
+ },
+ {
+  "page": 212,
+  "where": "Premier paragraphe, après « Passons de n à n+1 »",
+  "scan": "toutes des suites cohérentes prolongeant",
+  "tex": "toutes des suites cohérentes prolongeant",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "toutes les suites cohérentes prolongeant",
+  "note": "Coquille « des » pour « les », conservée par le TeX."
+ },
+ {
+  "page": 212,
+  "where": "Dernier paragraphe, fin de la parenthèse justifiant la finitude",
+  "scan": "sont en nombre fini et sont tous finis",
+  "tex": "sont en nombre fini et sont tout finis",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "sont tout finis",
+   "new": "sont tous finis"
+  },
+  "note": "L'imprimé porte « tous »."
+ },
+ {
+  "page": 212,
+  "where": "Dernière ligne, chaîne source de l'application f_n",
+  "scan": "x_{n+1}\\in x_n\\in x_{n+1}\\ldots",
+  "tex": "x_{n+1}\\in\nx_n\\in x_{n+1}\\ldots",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "x_{n+1}\\in x_n\\in x_{n-1}\\ldots",
+  "note": "Le troisième terme porte fautivement l'indice n+1 au lieu de n−1. Le TeX conserve cette coquille."
+ },
+ {
+  "page": 213,
+  "where": "Premier paragraphe, initialisation de la suite z_n",
+  "scan": "z_0=∅",
+  "tex": "$z_=∅$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$z_=∅$",
+   "new": "$z_0=∅$"
+  },
+  "note": "Le zéro en indice est présent dans l'imprimé."
+ },
+ {
+  "page": 213,
+  "where": "Dernier paragraphe, après « Autrement dit »",
+  "scan": "tous les composants de A",
+  "tex": "tout les composants de $A$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "tout les composants",
+   "new": "tous les composants"
+  },
+  "note": "L'imprimé porte « tous »."
+ },
+ {
+  "page": 214,
+  "where": "Début de la coupe TeX, avant le titre de la section 7",
+  "scan": "La page 214 commence par « 7. Remarques métamathématiques vaseuses » ; « C.Q.F.D. » termine la page 213.",
+  "tex": "\\cqfd",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "La commande initiale \\cqfd appartient à la page 213, sans que le commentaire de coupe de la page 214 le signale. Rectifier l'attribution de cette ligne, sans ajouter ni déplacer de texte dans la transcription."
+ },
+ {
+  "page": 215,
+  "where": "Deuxième formule affichée, entre les deux quantificateurs",
+  "scan": "(\\forall x\\in M)\\quad\\mbox{et}\\quad(\\exists x\\in M)",
+  "tex": "(\\forall x \\in M)\\quav (\\exists x \\in M)",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\quav",
+   "new": "\\quad\\mbox{et}\\quad"
+  },
+  "note": "Le connecteur imprimé entre les deux expressions est « et »."
+ },
+ {
+  "page": 215,
+  "where": "Exercice 2, fin de la définition de la hauteur",
+  "scan": "x_n\\in x_{n-1}\\in\\ldots\\in x_0=, sans second membre",
+  "tex": "$x_n\\in x_{n-1}\\in \\ldots \\in x_0=$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$x_n\\in x_{n-1}\\in \\ldots \\in x_0=A$",
+  "note": "L'imprimé omet A après le signe égal. Le TeX conserve cette omission."
+ },
+ {
+  "page": 215,
+  "where": "Exercice 3, dernière condition imposée à G",
+  "scan": "l'ensemble de g≤h sont fini et totalement ordonné",
+  "tex": "l'ensemble de\n$g\\leq h$ sont fini et totalement ordonné.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "l'ensemble des $g\\leq h$ soit fini et totalement ordonné.",
+  "note": "Le TeX conserve les coquilles grammaticales de l'imprimé : « de » pour « des » et « sont » pour « soit »."
+ }
+]

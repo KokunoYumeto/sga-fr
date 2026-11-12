@@ -1,0 +1,167 @@
+{
+  "findings": [
+    {
+      "page": 132,
+      "where": "Signature sous le titre",
+      "scan": "par M. ARTIN",
+      "tex": "M. Artin",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "M. Artin",
+        "new": "par M. Artin"
+      },
+      "note": "Le mot « par » manque."
+    },
+    {
+      "page": 132,
+      "where": "Lemme 1.2, définition du foncteur epsilon",
+      "scan": "$(\\Sch)/S\\longrightarrow (\\Ens)$",
+      "tex": "$(\\Sch)/S(\\Ens)$",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "$(\\Sch)/S(\\Ens)$",
+        "new": "$(\\Sch)/S\\longrightarrow (\\Ens)$"
+      },
+      "note": "La flèche entre la catégorie source et la catégorie des ensembles manque."
+    },
+    {
+      "page": 132,
+      "where": "Lemme 1.2, les deux valeurs de epsilon(S')",
+      "scan": "$\\emptyset$ et $\\{\\emptyset\\}$",
+      "tex": "$\\phi$ et $\\{\\phi\\}$",
+      "kind": "symbol",
+      "confidence": "medium",
+      "fix": {
+        "old": "\\phi & \\mbox{si }\\quad Y'\\neq X'\\\\\n\\{\\phi\\} &\\mbox{si }\\quad Y'=X'",
+        "new": "\\emptyset & \\mbox{si }\\quad Y'\\neq X'\\\\\n\\{\\emptyset\\} &\\mbox{si }\\quad Y'=X'"
+      },
+      "note": "Le signe manuscrit de l'ensemble vide apparaît seul, puis entre accolades ; le TeX emploie la lettre grecque phi."
+    },
+    {
+      "page": 133,
+      "where": "Démonstration du lemme 1.2, deuxième phrase",
+      "scan": "Puisque F est propre",
+      "tex": "Puisque $F$ est propre",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Puisque $f$ est propre",
+      "note": "Le TeX conserve la capitale imprimée. Il s'agit du morphisme f introduit dans le lemme."
+    },
+    {
+      "page": 133,
+      "where": "Lemme 1.3, formule définissant E'",
+      "scan": "$E'=E\\otimes_{\\Oo_S}\\Oo_{S'}$",
+      "tex": "$E'=E\\otimes_{O_S}\\Oo_{S'}$",
+      "kind": "font",
+      "confidence": "high",
+      "fix": {
+        "old": "E\\otimes_{O_S}\\Oo_{S'}",
+        "new": "E\\otimes_{\\Oo_S}\\Oo_{S'}"
+      },
+      "note": "Le O sous le produit tensoriel est souligné dans le print, comme les autres faisceaux structuraux ; le TeX donne ici un O ordinaire."
+    },
+    {
+      "page": 134,
+      "where": "Démonstration du lemme 1.3, définition de Quot(E)(S')",
+      "scan": "ensemble des quotients de E' plat au-dessus de S'",
+      "tex": "ensemble des quotients de $E'$ plat au-dessus de\n$S'$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "ensemble des quotients de $E'$ plats au-dessus de $S'$",
+      "note": "Le TeX conserve le singulier imprimé. L'adjectif qualifie les quotients paramétrés par le foncteur Quot."
+    },
+    {
+      "page": 134,
+      "where": "Démonstration du lemme 1.3, sous-foncteur des quotients plats sur X'",
+      "scan": "des quotients que sont plats",
+      "tex": "des quotients que sont plats",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "des quotients qui sont plats",
+      "note": "Coquille « que » pour « qui », conservée par le TeX."
+    },
+    {
+      "page": 134,
+      "where": "Démonstration du lemme 1.3, première mention de la fibre Z_z",
+      "scan": "la fibre $Z_z$ au point $z$ image de $s'$",
+      "tex": "la fibre $Z_z$ au point $z$ image de $s'$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "la fibre $(X_Z)_z$ au point $z$ image de $s'$",
+      "note": "Le TeX conserve Z_z. Le module universel est sur X_Z ; la fibre considérée est celle de X_Z au-dessus de z."
+    },
+    {
+      "page": 134,
+      "where": "Démonstration du lemme 1.3, définition de l'ouvert U",
+      "scan": "$(M_u)_z$ soit plat sur $Z_z$",
+      "tex": "$(M_u)_z$ soit plat sur $Z_z$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$(M_u)_z$ soit plat sur $(X_Z)_z$",
+      "note": "Deuxième occurrence de la même confusion de fibre, conservée par le TeX."
+    },
+    {
+      "page": 134,
+      "where": "Démonstration du lemme 1.3, reformulation après « i.e. »",
+      "scan": "$M_u$ soit plat sur $Z$ en les points de $Z_s$",
+      "tex": "$M_u$ soit plat sur\n$Z$ en les points de $Z_s$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$M_u$ soit plat sur $X_Z$ en les points de $(X_Z)_z$",
+      "note": "Le TeX conserve les deux notations fautives. La platitude recherchée est sur X_Z, aux points de sa fibre au-dessus de z, et non la platitude sur l'espace de paramètres Z."
+    },
+    {
+      "page": 134,
+      "where": "Dernière ligne, hypothèse de platitude avant l'application d'EGA III 7.7.6",
+      "scan": "$\\Hhom(M'\\otimes M',M')$ est $S$-plat",
+      "tex": "$\\Hhom$ $(M'\\otimes M', M')$ est $S$-plat",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "$\\Hhom(M\\otimes M,M)$ est $S$-plat",
+      "note": "Le TeX conserve les primes imprimés. Le faisceau non primé sur X est S-plat, ce qui permet l'application du résultat de représentabilité sur S ; le faisceau primé n'est en général que S'-plat."
+    },
+    {
+      "page": 135,
+      "where": "Première phrase",
+      "scan": "le foncteur « loi de composition bilinéaire » est représentée",
+      "tex": "est représentée par un fibré vectoriel $Z$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "est représenté par un fibré vectoriel $Z$",
+      "note": "Accord avec « le foncteur » : le e final est fautif. Le TeX le conserve."
+    },
+    {
+      "page": 135,
+      "where": "Associativité, deuxième faisceau Hom",
+      "scan": "$\\Hhom(M\\times M\\otimes M,M)$",
+      "tex": "$\\Hhom$ $(M\\times\nM\\otimes M, M)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\Hhom(M\\otimes M\\otimes M,M)$",
+      "note": "Le TeX conserve le premier signe × imprimé. Les deux compositions dont on vérifie l'égalité ont pour source le triple produit tensoriel, comme dans la première mention du faisceau Hom."
+    },
+    {
+      "page": 135,
+      "where": "Associativité, condition Y'=X'",
+      "scan": "l'associativité après S' → S est exprimé",
+      "tex": "l'associativité après $S'\\rightarrow S$ est exprimé",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "l'associativité après $S'\\rightarrow S$ est exprimée",
+      "note": "Le féminin « exprimée » est requis. Le TeX conserve l'accord fautif du print."
+    }
+  ],
+  "coordinator": "132 : 3/0 ; 133 : 1/1 ; 134 : 0/6 ; 135 : 0/3 (normal/misprint)."
+}

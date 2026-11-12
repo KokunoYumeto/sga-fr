@@ -1,0 +1,1 @@
+231: 0/2; 232: 0/0; 233: 1/0; 234: 0/1; 235: 2/2. Marker: p. 235 ends with the display (R^q g_cl*) j_!F ≃ (R^q ḡ_cl*) j̄_!F̄ , printed on p. 235 but cut into the next page's TeX (source line 1079 or later); move the page boundary after that display.

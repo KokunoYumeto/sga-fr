@@ -1,0 +1,126 @@
+[
+ {
+  "page": "106",
+  "where": "2.3.2, first lines",
+  "scan": "le complexe simple associé",
+  "tex": "\\emph{complexe simples associé}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{complexe simples associé}",
+   "new": "\\emph{complexe simple associé}"
+  },
+  "note": "The TeX has the plural 'simples'; the print has the singular 'simple'."
+ },
+ {
+  "page": "106",
+  "where": "2.3.3, after (2.3.3.1)",
+  "scan": "(2.3.3.1) ... K^+(C^+(S,O_S)) .  De plus, il résulte de (2.3.2.2)",
+  "tex": "qui préserve les quasi-isomorphismes. De plus,",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "qui préserve les quasi-isomorphismes. De plus,",
+   "new": "De plus,"
+  },
+  "note": "The print has no clause 'qui préserve les quasi-isomorphismes' after display (2.3.3.1). The TeX adds it without \\sisi."
+ },
+ {
+  "page": "106",
+  "where": "2.3.3, 'Tout objet F de Mod(...)'",
+  "scan": "Mod(Γ̲(S x D, O_S), O_S)",
+  "tex": "\\Mod(\\Ysheaf{\\Gamma}(S \\times D),\n\\mathcal{O}_S)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\Mod(\\Ysheaf{\\Gamma}(S \\times D), \\mathcal{O}_S)",
+  "note": "The print has a stray ', O_S' inside the parentheses of Γ(S×D). The notation elsewhere is Γ(S×D), O_S. The TeX silently corrects it, in the first argument of \\sisi."
+ },
+ {
+  "page": "107",
+  "where": "2.3.4, 'complexe de chaînes dans Hom(D,Ab)'",
+  "scan": "Hom̲(D,Ab) (Hom underlined)",
+  "tex": "$\\Hom(D,\n\\Ab)$",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "complexe de chaînes dans $\\Hom(D,",
+   "new": "complexe de chaînes dans $\\Hhom(D,"
+  },
+  "note": "The print underlines this Hom (the functor category), which may be meant to distinguish it from the plain Hom groups used below."
+ },
+ {
+  "page": "107",
+  "where": "Proposition 2.3.5, augmented complex",
+  "scan": "Z^n → Z^{n-1} ..... Z^1 → Z^o →t Z",
+  "tex": "\\ldots Z^n \\to Z^{n - 1}\\to \\ldots Z^{1}",
+  "kind": "formula",
+  "confidence": "low",
+  "fix": {
+   "old": "\\ldots Z^n \\to Z^{n - 1}\\to \\ldots Z^{1}",
+   "new": "Z^n \\to Z^{n - 1} \\ldots Z^{1}"
+  },
+  "note": "The print has no leading dots and no arrow after Z^{n-1}."
+ },
+ {
+  "page": "107",
+  "where": "Proposition 2.3.5, end of hypothesis",
+  "scan": "définisse une résolution de Z",
+  "tex": "définit une résolution de $\\ZZ$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "définit une résolution de $\\ZZ$",
+   "new": "définisse une résolution de $\\ZZ$"
+  },
+  "note": "The print has the subjunctive 'définisse'."
+ },
+ {
+  "page": "108",
+  "where": "Proposition 2.3.5, display j(F·)",
+  "scan": "j(F·) : G∘K^+(ε_*)(F·) → (R^+ ε_{Z·*}∘Q)(F·)",
+  "tex": "G \\circ K^+(\\varepsilon_\\ast)(F^{\\bigdot})",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Q \\circ K^+(\\varepsilon_\\ast)(F^{\\bigdot})",
+  "note": "'G' should be Q, as in (2.3.4.3). The TeX keeps the print's G."
+ },
+ {
+  "page": "108",
+  "where": "(2.3.5.3), first line",
+  "scan": "Hom(Hom_{Add(D)}(Z^o, i), Hom(X,Q_i))",
+  "tex": "Z^{\\circ}, [i]",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "Z^{\\circ}, [i]",
+   "new": "Z^{\\circ}, i"
+  },
+  "note": "The print has i, not [i]."
+ },
+ {
+  "page": "108",
+  "where": "(2.3.5.3), second line",
+  "scan": "Hom(Hom_{Add(D)}(Z^1, i), Hom(X,Q_i))",
+  "tex": "Z^1, [i]), \\Hom",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "Z^1, [i]), \\Hom",
+   "new": "Z^1, i), \\Hom"
+  },
+  "note": "The print has i, not [i]."
+ },
+ {
+  "page": "110",
+  "where": "(2.3.10.2), second line",
+  "scan": "Σ_{i=0}^{m+1} (-1)^j (id_[n], ∂^j)",
+  "tex": "\\mathop{\\sum}^{m+1}_{i=0} (-1)^j",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\mathop{\\sum}^{m+1}_{j=0} (-1)^j",
+  "note": "The summation index should be j. The TeX keeps the print's i=0."
+ }
+]

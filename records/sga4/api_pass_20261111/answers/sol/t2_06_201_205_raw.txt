@@ -1,0 +1,140 @@
+{
+  "findings": [
+    {
+      "page": 201,
+      "where": "Conclusion de la preuve de 2.1.2, phrase « tout morphisme »",
+      "scan": "avec $G$ quasi-séparé",
+      "tex": "avec $G$ avec\n$G$ quasi-séparé",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "avec $G$ avec\n$G$",
+        "new": "avec $G$"
+      },
+      "note": "The TeX repeats « avec G »; the print has it only once."
+    },
+    {
+      "page": 201,
+      "where": "Proposition 2.2, condition (i bis)",
+      "scan": "$f$ quasi-séparé.",
+      "tex": "$f$ quasi-sépare.",
+      "kind": "accent",
+      "confidence": "high",
+      "fix": {
+        "old": "quasi-sépare.",
+        "new": "quasi-séparé."
+      },
+      "note": "The final é has an acute accent in the print."
+    },
+    {
+      "page": 202,
+      "where": "Preuve de 2.2, implication (i) ⇒ (ii)",
+      "scan": "donc $X$ est quasi-séparé",
+      "tex": "donc $X$ est\nquasi-séparé",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "donc $X \\times Y$ est quasi-séparé",
+      "note": "The conclusion should concern X × Y, not X, which was already assumed quasi-separated. The TeX keeps the printed misprint."
+    },
+    {
+      "page": 202,
+      "where": "Preuve de 2.2, implication (ii bis) ⇒ (i)",
+      "scan": "des objets $X_i$",
+      "tex": "des objet\n$X_i$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "des objet\n$X_i$",
+        "new": "des objets\n$X_i$"
+      },
+      "note": "The print has the plural « objets »."
+    },
+    {
+      "page": 203,
+      "where": "Définition 2.3, définition d'un objet algébrique",
+      "scan": "le topos induit $E_{/X}$",
+      "tex": "le topos induite $E_{/X}$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "topos induite",
+        "new": "topos induit"
+      },
+      "note": "The print reads « induit », without a final e."
+    },
+    {
+      "page": 204,
+      "where": "Suite de 2.4.1, formule initiale",
+      "scan": "$E_{/\\epsilon(X)}$",
+      "tex": "E_{\\epsilon(X)}",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "E_{\\epsilon(X)}",
+        "new": "E_{/\\epsilon(X)}"
+      },
+      "note": "The slash denoting the induced topos is printed before ε(X) but omitted in the TeX."
+    },
+    {
+      "page": 204,
+      "where": "2.4.2, famille couvrante",
+      "scan": "d'objets de $X$",
+      "tex": "d'objets de $X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "d'objets de $E$",
+      "note": "The family consists of objects of the topos E. The TeX keeps the printed X."
+    },
+    {
+      "page": 204,
+      "where": "2.4.4, première phrase",
+      "scan": "quasi-séparés qui qui sont algébriques",
+      "tex": "\\emph{quasi-séparés} qui sont \\emph{algébriques}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "quasi-séparés qui sont algébriques",
+      "note": "The print duplicates « qui » across two consecutive lines. The TeX silently corrects this misprint."
+    },
+    {
+      "page": 205,
+      "where": "Suite de 2.4.4, premier paragraphe",
+      "scan": "limites projectives finies quelconques",
+      "tex": "limites projectives finis quelconques",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "projectives finis",
+        "new": "projectives finies"
+      },
+      "note": "The print reads « finies », agreeing with « limites »."
+    },
+    {
+      "page": 205,
+      "where": "2.4.4, second paragraphe, caractérisation de la cohérence",
+      "scan": "stable par limites projectives finies",
+      "tex": "stables par limites projectives finies",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "stables par",
+        "new": "stable par"
+      },
+      "note": "The print has the singular « stable »."
+    },
+    {
+      "page": 205,
+      "where": "2.4.4, fin du second paragraphe",
+      "scan": "ou encore qu'il contient l'objet final de $E$",
+      "tex": "ou encore qu'il\ncontient l'objet final de $E$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "ou encore qu'elle contient l'objet final de $E$",
+      "note": "The pronoun refers to the subcategory C and should be feminine. The TeX keeps the printed « qu'il »."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 201: 2/0; 202: 1/1; 203: 1/0; 204: 1/2; 205: 2/1."
+}

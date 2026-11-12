@@ -1,0 +1,1 @@
+p141 0/0; p142 0/0; p143 0/1; p144 2/1; p145 1/2. Convention: the print uses one typewriter π throughout, while the TeX sets it sometimes as \Pi and sometimes as \pi (e.g. $\Pi$-préaccessible in 9.3, $\pi$-préaccessible in 9.4, $\Hhom(E,F)_{\Pi}$ next to $\pi\in 𝒰$ in 9.6). This is a choice of the edition, not reported per occurrence.

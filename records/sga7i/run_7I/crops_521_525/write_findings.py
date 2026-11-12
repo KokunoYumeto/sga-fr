@@ -1,0 +1,109 @@
+import json, sys, io
+out = r'C:/Users/user/Documents/sga_scan_check_20261105/run_7I/findings_521_525_recheck.json'
+F = []
+def add(**k):
+    F.append(k)
+
+# ---- page 521
+add(page=521, where="[7] A. Grothendieck, Crystals ..., title",
+    scan="Crystals and the De Rham cohomology of schémes,",
+    tex="Crystals and the De Rham cohomology of schémes,",
+    kind="misprint_in_print", confidence="high", fix=None, corrected="schemes",
+    note="English title; the typescript puts a French acute accent on schemes. The TeX keeps the printed reading.")
+add(page=521, where="[7], parenthesis after the title",
+    scan="(notesby I. Coates and O. Jussila)",
+    tex="(notes by I. Coates and O. Jussila)",
+    kind="misprint_in_print", confidence="medium",
+    fix={"old": "(notes by I. Coates", "new": "(notesby I. Coates"}, corrected="notes by",
+    note="The typescript has no word space here: on the fixed-pitch line the b stands in the cell directly after the s (an 8 px gap, as between letters), while every word space on the line is a whole empty cell of about 23 px. The TeX silently restores the space.")
+add(page=521, where="[7], publisher at end of entry",
+    scan="Noth Holland Pub. Cie.",
+    tex="Noth Holland Pub. Cie.",
+    kind="misprint_in_print", confidence="high", fix=None, corrected="North Holland",
+    note="The r of North is dropped. The TeX keeps the printed reading.")
+add(page=521, where="[12] R. Kiehl, title",
+    scan="Der Endlichkeitssatzfür eigentliche",
+    tex="Der Endlichkeitssatz für eigentliche",
+    kind="misprint_in_print", confidence="medium",
+    fix={"old": "Endlichkeitssatz für", "new": "Endlichkeitssatzfür"}, corrected="Endlichkeitssatz für",
+    note="The typist corrected the word by overtyping satz one cell to the right: s, a and t are struck over other letters, the z stands clean in the cell that held the word space, and für follows in the next cell with no space. The TeX gives the corrected word and silently keeps the space.")
+add(page=521, where="[12] R. Kiehl, title",
+    scan="eigentliche Abbildnngen ...",
+    tex="eigentliche Abbildnngen ...",
+    kind="misprint_in_print", confidence="high", fix=None, corrected="Abbildungen",
+    note="n is typed for u. The TeX keeps the printed reading.")
+
+# ---- page 522
+add(page=522, where="[20] M. Raynaud, title",
+    scan="d'un faisceau et / et cohomologie des variétés abéliennes",
+    tex="d'un faisceau et et cohomologie",
+    kind="misprint_in_print", confidence="high", fix=None, corrected="d'un faisceau et cohomologie",
+    note="et is doubled across the line break. The TeX keeps the printed reading.")
+
+# ---- page 523
+add(page=523, where="[26] J.P. Serre, Corps locaux, publisher",
+    scan="Act. Sci. Ind. 1296 (1962) Herman Paris.",
+    tex="(1962) Herman Paris.",
+    kind="misprint_in_print", confidence="high", fix=None, corrected="Hermann",
+    note="The publisher is Hermann. The TeX keeps the printed reading.")
+add(page=523, where="[34] J. Tate, Rigid analytic spaces",
+    scan="(míméographíé par l'IHES).",
+    tex="(miméographié par l'IHES).",
+    kind="misprint_in_print", confidence="medium",
+    fix={"old": "miméographié", "new": "míméographíé"}, corrected="miméographié",
+    note="Both i's of the word carry a typed acute accent: a slanting stroke joined to the stem, shaped like the accents on the word's two é's, unlike the round dots of the i's in Rigid on the same line. The TeX silently drops the two accents.")
+
+# ---- page 525
+add(page=525, where="left column, Vol. 116",
+    scan="Sèminaire Pierre Lelong (Analyse)",
+    tex="Sèminaire Pierre Lelong (Analyse)",
+    kind="misprint_in_print", confidence="high", fix=None, corrected="Séminaire",
+    note="A grave accent is printed for the acute. The TeX keeps the printed reading.")
+add(page=525, where="left column, Vol. 124",
+    scan="Séminare de Probabilités IV",
+    tex="Séminare de Probabilités IV",
+    kind="misprint_in_print", confidence="high", fix=None, corrected="Séminaire",
+    note="The i of Séminaire is dropped. The TeX keeps the printed reading.")
+add(page=525, where="left column, Vol. 131",
+    scan="Vol. 131: A Borel et al.,",
+    tex="Vol. 131: A Borel et al.,",
+    kind="misprint_in_print", confidence="medium", fix=None, corrected="A. Borel",
+    note="The full stop after the initial is missing; every other initial in the list has one. The TeX keeps the printed reading.")
+add(page=525, where="left column, Vol. 136",
+    scan="Séminaire Heidelberg-Saarbrücken-Stras- / buorg sur la K-Théorie",
+    tex="Heidelberg-Saarbrücken-Strasbuorg",
+    kind="misprint_in_print", confidence="high", fix=None, corrected="Strasbourg",
+    note="o and u are transposed. The TeX keeps the printed reading.")
+add(page=525, where="right column, Vol. 158",
+    scan="Finite Translation Planes. IV. 112 pages.",
+    tex="Finite Translation Planes. IV. 112 pages.",
+    kind="misprint_in_print", confidence="medium", fix=None, corrected="IV, 112 pages",
+    note="A full stop is printed after IV where every other entry has a comma before the page count. The TeX keeps the printed reading.")
+add(page=525, where="right column, Vol. 159",
+    scan="R. Ansorge und R. Hass. Konvergenz von Differenzenverfahren",
+    tex="R. Ansorge und R. Hass. Konvergenz",
+    kind="misprint_in_print", confidence="medium", fix=None, corrected="R. Hass, Konvergenz",
+    note="A full stop is printed after the authors where every other entry has a comma. The TeX keeps the printed reading.")
+add(page=525, where="right column, Vol. 160",
+    scan="L. Sucheston, Constributions to Ergodic Theory",
+    tex="L. Sucheston, Constributions to Ergodic Theory",
+    kind="misprint_in_print", confidence="high", fix=None, corrected="Contributions",
+    note="An s is inserted. The TeX keeps the printed reading.")
+add(page=525, where="right column, Vol. 163",
+    scan="Equations Différentielles à Points Singuliers Reguliers",
+    tex="Points Singuliers Reguliers",
+    kind="misprint_in_print", confidence="medium", fix=None, corrected="Réguliers",
+    note="The acute accent on the small e is missing. The TeX keeps the printed reading.")
+add(page=525, where="right column, Vol. 164",
+    scan="J. P. Ferrier, Seminaire sur les Algebres Complètes",
+    tex="Seminaire sur les Algebres Complètes",
+    kind="misprint_in_print", confidence="medium", fix=None, corrected="Séminaire sur les Algèbres",
+    note="The accents on the small e's of Séminaire and Algèbres are missing (Complètes has its accent). The TeX keeps the printed reading.")
+
+# order keys as specified
+order = ["page", "where", "scan", "tex", "kind", "confidence", "fix", "corrected", "note"]
+F2 = [{k: f[k] for k in order if k in f} for f in F]
+with io.open(out, 'w', encoding='utf-8', newline='\n') as fh:
+    json.dump(F2, fh, ensure_ascii=False, indent=1)
+    fh.write('\n')
+print(len(F2), 'findings written')

@@ -1,0 +1,197 @@
+[
+ {
+  "page": 281,
+  "where": "5.2.2, '(muni de u)'",
+  "scan": "(muni de u): only 'muni de' is underlined; the u (heavier type) stands outside the underline",
+  "tex": "(\\underline{muni de u})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(\\underline{muni de u})",
+   "new": "(\\underline{muni de} $u$)"
+  },
+  "note": "The underline stops after 'de'. The fix also sets u in math, like the neighbouring $S$; '(\\underline{muni de} u)' would match the print equally."
+ },
+ {
+  "page": 281,
+  "where": "first display (projection formula)",
+  "scan": "h_*(h*(m*(x)) = m*(x)h_*(1)",
+  "tex": "h_*(h^*(m^*(x)) =",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "h_*(h^*(m^*(x))) =",
+  "note": "The print opens three parentheses after h_* and closes two. The TeX keeps the printed reading."
+ },
+ {
+  "page": 281,
+  "where": "5.2.1, parenthesis opened at '(de sorte que u s'obtient'",
+  "scan": "... classe qui se trouve dans H²(IP , ℤ_ℓ(1)), et désignons par",
+  "tex": "\\mathbb{Z}_{\\ell}(1))$, et désignons par",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\mathbb{Z}_{\\ell}(1))$), et désignons par",
+  "note": "The prose parenthesis '(de sorte que' is never closed: the two parentheses after (1) close ℤ_ℓ( and H²(. The TeX keeps the printed reading."
+ },
+ {
+  "page": 281,
+  "where": "5.2.1, display defining L_S",
+  "scan": "L_S : H^•(S,ℚ_ℓ(j) ⟶ H^{•+2}(S,ℚ_ℓ(j+1))",
+  "tex": "H^{\\bullet}(S,\\mathbb{Q}_{\\ell}(j) \\longrightarrow",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^{\\bullet}(S,\\mathbb{Q}_{\\ell}(j)) \\longrightarrow",
+  "note": "The source group lacks its closing parenthesis. The TeX keeps the printed reading."
+ },
+ {
+  "page": 282,
+  "where": "(5.2.2.2), Tate twist of the target",
+  "scan": "H^{2n-i+2}(S,ℚ_ℓ(j+2n-2i+2)).  (twist handwritten)",
+  "tex": "j+2n-2i+2",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "j+n-i+1",
+  "note": "L raises the twist by 1 (5.2.1: H^•(S,ℚ_ℓ(j)) → H^{•+2}(S,ℚ_ℓ(j+1)); 5.2.2: L^i lands in ℚ_ℓ(i+j)), so L^{n-i+1} lands in ℚ_ℓ(j+n-i+1); the print doubles the shift. The TeX keeps the printed reading. Span does not overlap the parenthesis finding below."
+ },
+ {
+  "page": 282,
+  "where": "(5.2.2.2), end of the formula",
+  "scan": "Ker (L^{n-i+1} : ... ⟶ H^{2n-i+2}(S,ℚ_ℓ(j+2n-2i+2)).",
+  "tex": ")).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "))).",
+  "note": "The parenthesis opened at 'Ker (' is never closed (two closing parentheses at the end). The TeX keeps the printed reading."
+ },
+ {
+  "page": 282,
+  "where": "proof of Proposition 5.2.3, first line",
+  "scan": "la formule de projection pour m : Y ⟶ X",
+  "tex": "$m : Y \\longrightarrow X$",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "$\\tau : Y \\longrightarrow X$",
+  "note": "The proposition names the inclusion τ : Y ↪ X and diagram (5.2.3.2) uses τ^*, τ_*; m is the name of the inclusion in 5.1. The TeX keeps the printed m."
+ },
+ {
+  "page": 283,
+  "where": "diagram (5.2.3.2), right-hand diagonal arrow τ_*",
+  "scan": "arrow labelled τ_* drawn from H^{n+2}(X,ℚ_ℓ(j+1)) down-left, arrowhead at H^n(Y,ℚ_ℓ(j))",
+  "tex": "H^{n+2}(X,\\mathbb{Q}_\\ell(j+1)) \\arrow[dl, \"\\tau_*\"] \\\\\n{} & H^n(Y,\\mathbb{Q}_\\ell(j))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^{n+2}(X,\\mathbb{Q}_\\ell(j+1)) \\\\\n{} & H^n(Y,\\mathbb{Q}_\\ell(j)) \\arrow[ur, \"\\tau_*\"']",
+  "note": "τ_* is the Gysin map H^n(Y,ℚ_ℓ(j)) → H^{n+2}(X,ℚ_ℓ(j+1)), as the display just below states, and the commutativity is L = τ_*τ^* (5.2.4.3). The print draws the head at H^n(Y). The TeX and its STRUCTURE comment keep the printed direction."
+ },
+ {
+  "page": 283,
+  "where": "sentence after the display τ_* : H^n(Y,...) ⟶ H^{n+2}(X,...)",
+  "scan": "est la transposée d'une isomorphisme",
+  "tex": "d'une isomorphisme",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "d'un isomorphisme",
+  "note": "'isomorphisme' is masculine (same sentence: 'donc un isomorphisme'). The TeX keeps the printed reading."
+ },
+ {
+  "page": 284,
+  "where": "(5.2.4.7), Tate twist of the target of the bilinear form",
+  "scan": "H^{2n}(X,ℚ_ℓ(2j+2)",
+  "tex": "(2j+2",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(2j+1",
+  "note": "a ∈ H^{n-1}(X,ℚ_ℓ(j)) and L_X(b) ∈ H^{n+1}(X,ℚ_ℓ(j+1)) by (5.2.4.6), so a.L_X(b) lies in H^{2n}(X,ℚ_ℓ(2j+1)). The TeX keeps the printed 2j+2. Span does not overlap the parenthesis finding below."
+ },
+ {
+  "page": 284,
+  "where": "(5.2.4.7), end of the first line",
+  "scan": "H^{2n}(X,ℚ_ℓ(2j+2)  (one closing parenthesis)",
+  "tex": ")\n\\end{equation*}\n\\begin{equation*}\n(a,b)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "))\n\\end{equation*}\n\\begin{equation*}\n(a,b)",
+  "note": "The parenthesis opened at H^{2n}( is never closed. The TeX keeps the printed reading."
+ },
+ {
+  "page": 285,
+  "where": "first line",
+  "scan": "Mais par (5.2.5) et la formule de projection",
+  "tex": "Mais par (5.2.5)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Mais par (5.2.4.3)",
+  "note": "The step a.L_X(b) = a.τ_*(τ^*(b)) uses L_X = τ_*τ^*, which is (5.2.4.3); 5.2.5 is the corollary stated below. The TeX keeps the printed reading."
+ },
+ {
+  "page": 285,
+  "where": "Corollaire 5.2.5",
+  "scan": "l'inclusion d'une section hyperplan lisse",
+  "tex": "section hyperplan lisse",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "section hyperplane lisse",
+  "note": "Elsewhere 'section hyperplane' (5.2.3, 5.2.4). The TeX keeps the printed reading."
+ },
+ {
+  "page": 285,
+  "where": "diagram of the proof of 5.2.5, top-right node",
+  "scan": "H^{n-i}(X,ℚ_ℓ(j+i+1))",
+  "tex": "H^{n-i}(X,\\mathbb{Q}_\\ell(j+i+1)) \\arrow[d",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "H^{n+i}(X,\\mathbb{Q}_\\ell(j+i+1)) \\arrow[d",
+  "note": "L_X^i maps H^{n-i}(X) to H^{n+i}(X), and τ^* lands in H^{n+i}(Y). The print has a minus; the TeX and its STRUCTURE comment keep it."
+ },
+ {
+  "page": 285,
+  "where": "diagram of the proof of 5.2.5, bottom arrow L_Y^{i+1}",
+  "scan": "hand-drawn wave ∼ under the label L_Y^{i+1}, above the arrow shaft (isomorphism mark)",
+  "tex": "\\arrow[r, \"L_Y^{i+1}\"]",
+  "kind": "missing",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r, \"L_Y^{i+1}\"]",
+   "new": "\\arrow[r, \"L_Y^{i+1}\"{yshift=7pt}, \"\\sim\"]"
+  },
+  "note": "Folio 276 has the same hand-drawn wave between label and shaft (under g × ρ_i), and its TeX writes it '\\sim' with the label raised by {yshift=7pt}; the fix follows that. The proof rests on L_Y^{i+1} being an isomorphism (Y satisfies (LV) by 5.2.4). The STRUCTURE comment calls the stroke an ink artifact: apply together with the two comment edits below."
+ },
+ {
+  "page": 285,
+  "where": "STRUCTURE comment of the same diagram, list of absent features",
+  "scan": "see the ∼ finding above",
+  "tex": "no iso\n%   labels,",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "no iso\n%   labels,",
+   "new": "no iso\n%   labels other than the $\\sim$ on arrow (4),"
+  },
+  "note": "Keeps the comment consistent with the \\sim fix; apply together with it."
+ },
+ {
+  "page": 285,
+  "where": "STRUCTURE comment of the same diagram, last sentence",
+  "scan": "see the ∼ finding above",
+  "tex": "it is an ink artifact of the typescript, carries no label, and is not reproduced.",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "it is an ink artifact of the typescript, carries no label, and is not reproduced.",
+   "new": "it is the isomorphism mark of arrow (4), read as $\\sim$ as on folio 276, and is set directly above the shaft, below the raised label."
+  },
+  "note": "Keeps the comment consistent with the \\sim fix; apply together with it."
+ }
+]

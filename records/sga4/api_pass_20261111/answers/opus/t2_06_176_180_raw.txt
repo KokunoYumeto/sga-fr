@@ -1,0 +1,10 @@
+```json
+{"findings":[
+{"page":177,"where":"proof of 1.10 (ii), last sentence","scan":"isomorphe à X_i ×_{Y_i} S","tex":"$\\fprod{X_i}{S}{Y_i}$","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"$\\fprod{X_i}{S_{\\alpha}}{Y_i}$","note":"The print has S without the index α; the object meant is X_i ×_{Y_i} S_α. The TeX keeps the printed reading."},
+{"page":178,"where":"Corollaire 1.12, last line","scan":"peut-être omise","tex":"peut-être omise","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"peut être omise","note":"The verb is meant (peut être), not the adverb. The TeX keeps the printed reading."},
+{"page":179,"where":"proof of 1.14, cas quasi-séparé","scan":"g:S → X un morphisme, prouvons que f est quasi-compact","tex":"prouvons que $f$ est quasi-compact","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"prouvons que $g$ est quasi-compact","note":"The proof shows that g is quasi-compact (cf. its conclusion « que g est quasi-compact »). The TeX keeps the printed f."},
+{"page":179,"where":"Corollaire 1.15","scan":"avec I ∈ U (U underlined)","tex":"avec $I \\in U$","kind":"font","confidence":"low","fix":{"old":"$I \\in U$","new":"$I \\in \\Uu$"},"note":"The underlined U is the universe, which the edition elsewhere writes in script. Check that \\Uu exists in macros.tex; if not, use \\mathcal{U}."},
+{"page":180,"where":"Corollaire 1.17, first line","scan":"une famille génétrice","tex":"une famille génératrice","kind":"misprint_in_print","confidence":"high","fix":null,"corrected":"génératrice","note":"The typescript has 'génétrice'. The TeX silently corrects it."}
+],
+"coordinator":"p176 0/0; p177 0/1; p178 0/1; p179 1/1; p180 0/1. Nothing else to act on: the cuts are correct, and the p179 \\Uu fix needs the macro checked in macros.tex (or \\mathcal{U} used instead)."}
+```

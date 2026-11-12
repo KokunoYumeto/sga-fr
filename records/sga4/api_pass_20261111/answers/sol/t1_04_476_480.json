@@ -1,0 +1,212 @@
+[
+ {
+  "page": 476,
+  "where": "Démonstration, b), condition sur Hom(p',p)",
+  "scan": "\\Hom(p',p)\\neq\\varnothing",
+  "tex": "\\Hom(p',p)\\neq \\phi",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\Hom(p',p)\\neq \\phi",
+   "new": "\\Hom(p',p)\\neq \\varnothing"
+  },
+  "note": "The handwritten sign is a slashed circle denoting the empty set, rather than the letter phi."
+ },
+ {
+  "page": 476,
+  "where": "Démonstration, b), les quatre arguments des foncteurs image inverse",
+  "scan": "\\mathcal{U} dans les quatre expressions p^{\\ast}(\\mathcal{U}) ou {p'}^{\\ast}(\\mathcal{U})",
+  "tex": "\\sisi{\\mathcal{U}}{e_{\\mathcal{U}}} (quatre occurrences)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "e_{\\mathcal{U}}",
+  "note": "The print uses the open subtopos where its associated subterminal object is meant. The TeX corrects this notational slip through four \\sisi substitutions; their first arguments match the print."
+ },
+ {
+  "page": 476,
+  "where": "Démonstration, c), premier diagramme",
+  "scan": "\\Ppoint(\\mathcal{U})\\to\\Ppoint(E)\\leftarrow\\Ppoint(\\mathcal{F}), avec \\Pro(\\mathcal{F}) en bas à droite",
+  "tex": "\\Point(\\Uu), \\Point(E), \\Point(\\Gg), \\Pro(\\Gg)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Point(\\Uu) \\ar@{^{(}->}[d]\n\\ar[r]^{u}& \\Point(E) \\ar@{^{(}->}[d]&\n\\Point(\\Gg) \\ar@{^{(}->}[d] \\ar[l]_{v}\\\\\n\\Pro(\\Uu) \\ar[r]^{\\Pro(j_{\\ast})}  & \\Pro(E)   & \\Pro(\\Gg)",
+   "new": "\\Ppoint(\\Uu) \\ar@{^{(}->}[d]\n\\ar[r]^{u}& \\Ppoint(E) \\ar@{^{(}->}[d]&\n\\Ppoint(\\mathcal{F}) \\ar@{^{(}->}[d] \\ar[l]_{v}\\\\\n\\Pro(\\Uu) \\ar[r]^{\\Pro(j_{\\ast})}  & \\Pro(E)   & \\Pro(\\mathcal{F})"
+  },
+  "note": "Both right-hand objects contain script F, not G. The three underlined Point symbols denote categories, distinguished from the un-underlined sets of isomorphism classes used in 9.7.5; this is mathematical notation, not emphasis."
+ },
+ {
+  "page": 476,
+  "where": "Démonstration, c), référence après Pro(i^{\\ast})",
+  "scan": "(I 8)",
+  "tex": "\\sisi{\\hyperref[IV.rem1.8]{1.8}}{\\ref{I.sec8.11.5}}",
+  "kind": "number",
+  "confidence": "high",
+  "fix": {
+   "old": "\\hyperref[IV.rem1.8]{1.8}",
+   "new": "I 8"
+  },
+  "note": "The print cites Exposé I, section 8, not paragraph 1.8 of Exposé IV. Only the first argument of \\sisi is changed."
+ },
+ {
+  "page": 476,
+  "where": "Lemme 9.7.2.4, ligne supérieure du diagramme (9.7.2.4.1)",
+  "scan": "\\Ppoint(F)\\longrightarrow\\Ppoint(E)",
+  "tex": "\\Point(F)\\longrightarrow\\Point(E)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Point(F)\\ar[r]^{p \\mapsto f \\circ p} \\ar[d] & \\Point(E)\\ar[d]",
+   "new": "\\Ppoint(F)\\ar[r]^{p \\mapsto f \\circ p} \\ar[d] & \\Ppoint(E)\\ar[d]"
+  },
+  "note": "The printed symbols are the underlined categories of points, not the sets denoted by \\Point."
+ },
+ {
+  "page": 477,
+  "where": "Exercice 9.7.5, définition de P(F)",
+  "scan": "points de E qui se factorisent par E",
+  "tex": "points de $E$ qui se factorisent par \\sisi{$E$}{$F$}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "points de $E$ qui se factorisent par $F$",
+  "note": "The second E is a print misprint for F. The TeX corrects it with \\sisi, whose first argument matches the scan."
+ },
+ {
+  "page": 478,
+  "where": "Exercice 9.7.5, première phrase",
+  "scan": "ouverte (resp. fermée, resp. localement fermée) de E",
+  "tex": "\\sisi{$E$}{$\\Point(E)$}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Point(E)",
+  "note": "P(F) is a subset of the space of points, not of the topos E. The TeX corrects the printed E with \\sisi."
+ },
+ {
+  "page": 478,
+  "where": "Exercice 9.7.5, deuxième phrase",
+  "scan": "il en est de même de tous sous-topos localement fermé",
+  "tex": "il en est de même de tout sous-topos localement fermé",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "tout sous-topos localement fermé",
+  "note": "The print has tous before the singular phrase. The TeX silently corrects it to tout."
+ },
+ {
+  "page": 478,
+  "where": "Exercice 9.8.1 a), dernier exemple demandé",
+  "scan": "Donner un exemple ou f_{sob} est surjectif",
+  "tex": "Donner un exemple où $f_{\\sob}$ est surjectif",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Donner un exemple où $f_{\\sob}$ est surjectif",
+  "note": "The printed ou lacks the grave accent required here. The TeX silently corrects it."
+ },
+ {
+  "page": 478,
+  "where": "Exercice 9.8.1 b), flèche de (Esp)",
+  "scan": "Prouver que la flèche f^{\\ast} de (Esp)",
+  "tex": "Prouver que la flèche $f$ de $(\\Esp)$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Prouver que la flèche $f$ de $(\\Esp)$",
+  "note": "The print incorrectly gives a star to the continuous map f. The TeX silently removes it; f^{\\ast} is the associated functor, not a morphism of spaces."
+ },
+ {
+  "page": 479,
+  "where": "Exercice 9.8.1 b), indication commençant par « Se ramener »",
+  "scan": "Se ramener un cas f surjectif, et calquer ... schémas.)",
+  "tex": "Se\nramener un cas $f$ surjectif, et calquer le raisonnement de VIII 9.1\ndonné dans le contexte des topologies étales de schémas.)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(Se ramener au cas $f$ surjectif, et calquer le raisonnement de VIII 9.1 donné dans le contexte des topologies étales de schémas.)",
+  "note": "The print has un for au and omits the opening parenthesis corresponding to the closing parenthesis after schémas. The TeX keeps both slips."
+ },
+ {
+  "page": 479,
+  "where": "Exercice 9.8.1 d), référence au foncteur de descente",
+  "scan": "le foncteur envisagé dans c)",
+  "tex": "le foncteur envisagé dans $c$)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "le foncteur envisagé dans $b$)",
+  "note": "The descent functor with descent data is defined in b), whereas c) concerns the inverse-image functor without descent data. The TeX keeps the printed wrong reference."
+ },
+ {
+  "page": 479,
+  "where": "Exercice 9.8.2 a), numéro du premier diagramme",
+  "scan": "(9.8.5.1)",
+  "tex": "\\leqno{(9.8.5.1)}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(9.8.2.1)",
+  "note": "The displayed number is a print misprint. The TeX keeps that displayed reading, although its \\etiquette uses 9.8.2.1."
+ },
+ {
+  "page": 479,
+  "where": "Exercice 9.8.2 a), définition de la donnée de descente",
+  "scan": "relativement au diagramme (9.8.6.1)",
+  "tex": "\\sisi{(9.8.6.1)}{\\hyperref[IV.eq9.8.2.1]{9.8.2.1}}",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(9.8.2.1)",
+  "note": "The print gives another erroneous number for the diagram just introduced. The TeX corrects it with \\sisi; its first argument matches the print."
+ },
+ {
+  "page": 480,
+  "where": "Exercice 9.8.2 a), premier terme du diagramme de catégories Homtop",
+  "scan": "\\Hhomtop(\\Top(X_0),E)",
+  "tex": "\\Hhomtop(\\Top(X_o),E)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Top(X_o)",
+   "new": "\\Top(X_0)"
+  },
+  "note": "The subscript is the index zero of the semi-simplicial diagram, not the letter o."
+ },
+ {
+  "page": 480,
+  "where": "Exercice 9.8.2 b), formule définissant X_2",
+  "scan": "X_2=(R,p_2)\\times_X(R,p_1)",
+  "tex": "X_2=\\fprod{(R,p_2)}{R,p_1}{X}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\fprod{(R,p_2)}{R,p_1}{X}",
+   "new": "\\fprod{(R,p_2)}{(R,p_1)}{X}"
+  },
+  "note": "The print parenthesizes the second factor (R,p_1), as well as the first."
+ },
+ {
+  "page": 480,
+  "where": "Exercice 9.8.2 c), description de R et de sa première projection",
+  "scan": "R=H\\times H, avec p_1=\\pr_1",
+  "tex": "$R=H\\times X$, avec $p_1=\\pr_1$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$R=H\\times X$, avec $p_1=\\pr_2$",
+  "note": "The printed product H×H is erroneous. The TeX silently changes it to H×X but retains pr_1; for that factor order the projection to X is pr_2. Equivalently, one can retain the printed pr_1 by taking R=X×H."
+ },
+ {
+  "page": 480,
+  "where": "Exercice 9.8.2 c), dernière phrase",
+  "scan": "pas équivalents à Top(X/H) (qui est un topos final (2.2), ni à aucun topos de la forme Top(Y).",
+  "tex": "pas équivalents à $\\Top(X/H)$ (qui est un topos final\n(\\hyperref[IV.subsec2.2]{2.2}), ni à aucun topos de la forme $\\Top(Y)$).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "pas équivalents à $\\Top(X/H)$ (qui est un topos final (2.2)), ni à aucun topos de la forme $\\Top(Y)$.",
+  "note": "The print leaves the parenthesis beginning « qui est » unclosed. The TeX supplies a closing parenthesis at the sentence end; it belongs before « ni », so that the final non-equivalence remains part of the main assertion."
+ }
+]

@@ -1,0 +1,125 @@
+{
+  "findings": [
+    {
+      "page": 401,
+      "where": "Première phrase, catégorie à laquelle on restreint φ",
+      "scan": "$X_{\\text{ét}}$",
+      "tex": "$\\widetilde{X_{\\text{ét}}}$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$\\widetilde{X_{\\text{ét}}}$ formée des",
+        "new": "$X_{\\text{ét}}$ formée des"
+      },
+      "note": "L'imprimé ne porte pas de tilde ici, contrairement à l'occurrence après « Soit F » plus bas."
+    },
+    {
+      "page": 401,
+      "where": "Parenthèse après la définition de φ₀",
+      "scan": "$U\\in\\Uu(X)$",
+      "tex": "$u\\in\\Uu(X)$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$u\n\\in \\Uu (X)$",
+        "new": "$U\n\\in \\Uu (X)$"
+      },
+      "note": "Le U imprimé est une majuscule."
+    },
+    {
+      "page": 401,
+      "where": "Équivalence affichée après « i.e. »",
+      "scan": "$\\varphi(U)\\neq ∅\\Leftrightarrow x\\in U$",
+      "tex": "$\\varphi(U)=∅\\Leftrightarrow x\\in U$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\varphi (U) = ∅",
+        "new": "\\varphi (U) \\neq ∅"
+      },
+      "note": "La négation du signe d'égalité est nettement imprimée."
+    },
+    {
+      "page": 401,
+      "where": "Phrase commençant par « De plus », appartenance du couple (X′, ξ)",
+      "scan": "$(X',\\xi)\\in\\Ob X_{\\text{ét}}$",
+      "tex": "$(X',\\xi)\\in\\Ob X_{\\text{ét}}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(X', \\xi) \\in \\Ob C_{/\\varphi}",
+      "note": "Le couple est un objet de la catégorie C_{/φ} définie juste avant, non du site X_ét. Le TeX conserve la coquille imprimée."
+    },
+    {
+      "page": 401,
+      "where": "Dernière phrase, après « localisé strict Z de X »",
+      "scan": "correspondant donc à un point géométrique",
+      "tex": "correspondant donc à point géométrique",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "correspondant donc à point géométrique",
+        "new": "correspondant donc à un point géométrique"
+      },
+      "note": "L'article « un » manque dans le TeX."
+    },
+    {
+      "page": 401,
+      "where": "Coupure entre les pages 401 et 402",
+      "scan": "La page 401 se termine par « et un foncteur fibre $\\mathcal{E}_{\\xi}$. » ; la page 402 commence par « Pour tout faisceau F ».",
+      "tex": "L'extrait 401 s'arrête à « et un foncteur fibre » ; l'extrait 402 commence par « $\\mathcal{E}_{\\xi}$. Pour\\pageoriginale ».",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le nom du foncteur et le point appartiennent à la page 401. Ajuster la coupure des extraits, sans ajouter de texte au source."
+    },
+    {
+      "page": 402,
+      "where": "Première formule, expression de la fibre",
+      "scan": "$\\varinjlim_{C_{\\varphi}} F(X')$",
+      "tex": "$\\varinjlim_{C_{\\varphi}} (F)(X')$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\varinjlim_{C_{\\varphi}} (F) (X')",
+        "new": "\\varinjlim_{C_{\\varphi}} F(X')"
+      },
+      "note": "L'imprimé n'a pas de parenthèses autour du seul F."
+    },
+    {
+      "page": 402,
+      "where": "Proposition 8.1, aboutissement de la suite spectrale",
+      "scan": "$H^{\\ast}(X,F)$",
+      "tex": "$H^{\\ast}(X,F)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{\\ast}(Y,F)",
+      "note": "La suite spectrale de descente aboutit à la cohomologie de Y, comme l'indique aussi sa construction page 403. Le TeX conserve le X erroné de l'imprimé."
+    },
+    {
+      "page": 403,
+      "where": "Démonstration du lemme 8.2, première fibre du complexe A*",
+      "scan": "$A^{\\ast}_{\\bar{y}}$",
+      "tex": "$A^{\\ast}_{y}$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "$A^{\\ast}_{y}$",
+        "new": "$A^{\\ast}_{\\bar{y}}$"
+      },
+      "note": "La barre sur le y de cet indice est visible dans l'imprimé."
+    },
+    {
+      "page": 404,
+      "where": "Coupure entre les pages 404 et 405, remarque 8.3 b)",
+      "scan": "Fin de 404 : « des faisceaux étales sur un » ; début de 405 : « schéma de base variable ».",
+      "tex": "Fin de l'extrait 404 : « des faisceaux étales sur » ; début de l'extrait 405 : « un schéma\\pageoriginale de base variable ».",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le mot « un » appartient à la page 404. Ajuster seulement la coupure des extraits."
+    }
+  ],
+  "coordinator": "401: 5/1; 402: 1/1; 403: 1/0; 404: 1/0; 405: 0/0 (normal/misprint).\nCoupure 401/402 : rattacher « $\\mathcal{E}_{\\xi}$. » à 401 ; 402 commence par « Pour tout faisceau F ».\nCoupure 404/405 : rattacher « un » à 404 ; 405 commence par « schéma de base variable »."
+}

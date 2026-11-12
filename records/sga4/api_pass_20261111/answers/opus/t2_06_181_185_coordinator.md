@@ -1,0 +1,1 @@
+p181: 0/1; p182: 1/0; p183: 2/0; p184: 2/0; p185: 1/0 (+1 marker). Marker: p185's TeX ends with the opening of the proof of 1.23 ('(i) Nécessité.'), which is printed on p186; that page really ends at '...soit bijective.'

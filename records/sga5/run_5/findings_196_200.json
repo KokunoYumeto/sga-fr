@@ -1,0 +1,991 @@
+[
+ {
+  "page": 196,
+  "where": "top of the page",
+  "scan": "p. 196 begins '(III 4.7) entraîne que ∫_{X-U} Tr(c_{X-U}) ∈ Λ est la caractéristique ...'",
+  "tex": "page_196.tex opens with 'Lefschetz (III 4.7) entraîne que'; the line before the folio-196 marker ends '... alors la formule de'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 196 really begins at '(III 4.7) entraîne que'; 'Lefschetz' is the last word of p. 195. Exact fix: python -I move_marker.py 5 196 '(III 4.7) entraîne que' (simulated in memory on both editions: '... alors la formule de' / 'Lefschetz ' / marker / '(III 4.7) entraîne que')."
+ },
+ {
+  "page": 196,
+  "where": "end of 6.14, 'de X-U (à valeurs dans Λ)'",
+  "scan": "de X-U (à valeurs dans Λ) .",
+  "tex": "de $X-U$ à valeurs dans $\\Lambda$.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de $X-U$ à valeurs dans $\\Lambda$.",
+   "new": "de $X-U$ (à valeurs dans $\\Lambda$)."
+  },
+  "note": "The print's parentheses are dropped."
+ },
+ {
+  "page": 196,
+  "where": "end of 6.14, 'caractéristique d'Euler-Poincaré'",
+  "scan": "Euler-Poincaré (typed hyphen)",
+  "tex": "Euler--Poincaré",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d'Euler--Poincaré",
+   "new": "d'Euler-Poincaré"
+  },
+  "note": "En dash the print does not have."
+ },
+ {
+  "page": 196,
+  "where": "6.15, number",
+  "scan": "6.15.",
+  "tex": "\\subsection*{6.15}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.15}",
+   "new": "\\subsection*{6.15.}"
+  },
+  "note": "Full stop after the paragraph number, as 6.2.-6.4. of this section."
+ },
+ {
+  "page": 196,
+  "where": "6.15, first sentence",
+  "scan": "6.11.1 (avec f , c , d propres) , et U ⟶ X",
+  "tex": "6.11.1, avec $f$, $c$, $d$ propres, et",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "6.11.1, avec $f$, $c$, $d$ propres, et",
+   "new": "6.11.1 (avec $f$, $c$, $d$ propres), et"
+  },
+  "note": "Parentheses of the print turned into commas."
+ },
+ {
+  "page": 196,
+  "where": "6.15, 'de tor-dimension finie, c_1^{-1}(U) ⊂ c_2^{-1}(U)'",
+  "scan": "quasi-fini et de tor-dimension finie,  c_1^{-1}(U) ⊂ c_2^{-1}(U) , que G agit ...",
+  "tex": "de tor-dimension finie, que [display c_1^{-1}(U)\\subset c_2^{-1}(U),] que $G$ agit",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "de tor-dimension finie, que",
+   "new": "de tor-dimension finie,"
+  },
+  "note": "The print has no 'que' before the inclusion (only before 'G agit')."
+ },
+ {
+  "page": 196,
+  "where": "6.15, 'u = c_{U,X} , et, compte tenu'",
+  "scan": "u = c_{U,X} , et, compte tenu de 6.14.6, 6.14.7",
+  "tex": "$u=\\underline c_{U,X}$ et, compte tenu",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$u=\\underline c_{U,X}$ et,",
+   "new": "$u=\\underline c_{U,X}$, et,"
+  },
+  "note": "Comma before 'et' left out."
+ },
+ {
+  "page": 196,
+  "where": "6.15, last words",
+  "scan": "on obtient la [blank line] Proposition 6.16 - ...",
+  "tex": "on obtient:",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "on obtient:",
+   "new": "on obtient la"
+  },
+  "note": "The print runs on into the statement ('on obtient la Proposition 6.16'); the TeX drops 'la' and adds a colon."
+ },
+ {
+  "page": 196,
+  "where": "Proposition 6.16, label",
+  "scan": "Proposition 6.16 -",
+  "tex": "\\begin{statement}{Proposition 6.16}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Proposition 6.16}",
+   "new": "\\begin{statement}{Proposition 6.16 -}"
+  },
+  "note": "As the earlier labels of Exposé III B (Théorème 1.2 -, Proposition 5.10.6 -)."
+ },
+ {
+  "page": 196,
+  "where": "Proposition 6.16, first line",
+  "scan": "Sous les hypothèses de | on a | pour tout : underlined",
+  "tex": "Sous les hypothèses de 6.15, on a, pour tout $g\\in G$, (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 6.15, on a, pour tout $g\\in G$,\n\\begin{equation}\nf_*^{gc}\\Tr_{\\Lambda}(",
+   "new": "\\emph{Sous les hypothèses de} 6.15, \\emph{on a}, \\emph{pour tout} $g\\in G$,\n\\begin{equation}\nf_*^{gc}\\Tr_{\\Lambda}("
+  },
+  "note": "Statement underlined word group by word group; \\emph as on the earlier pages of Exposé III B. The old runs into the formula only to be unique (Corollaire 6.17 opens with the same words)."
+ },
+ {
+  "page": 196,
+  "where": "Proposition 6.16, after (6.16.1)",
+  "scan": "où | est l'inclusion | et | désigne le centralisateur de : underlined",
+  "tex": "où $j:X-U\\to X$ est l'inclusion, et $Z_g$ désigne le centralisateur de $g$.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où $j:X-U\\to X$ est l'inclusion, et $Z_g$ désigne le centralisateur de $g$.",
+   "new": "\\emph{où} $j:X-U\\to X$ \\emph{est l'inclusion}, \\emph{et} $Z_g$ \\emph{désigne le centralisateur de} $g$."
+  },
+  "note": ""
+ },
+ {
+  "page": 196,
+  "where": "before Corollaire 6.17",
+  "scan": "on en déduit, d'après 6.13,",
+  "tex": "on en déduit, d'après 6.13:",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "d'après 6.13:",
+   "new": "d'après 6.13,"
+  },
+  "note": "Comma in the print, not a colon."
+ },
+ {
+  "page": 196,
+  "where": "Corollaire 6.17, label",
+  "scan": "Corollaire 6.17 -",
+  "tex": "\\begin{statement}{Corollaire 6.17}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Corollaire 6.17}",
+   "new": "\\begin{statement}{Corollaire 6.17 -}"
+  },
+  "note": ""
+ },
+ {
+  "page": 196,
+  "where": "Corollaire 6.17, first line",
+  "scan": "Sous les hypothèses de | on a | pour tout : underlined",
+  "tex": "Sous les hypothèses de 6.15, on a, pour tout $g\\in G$, (no underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 6.15, on a, pour tout $g\\in G$,\n\\begin{equation}\nf_*^{gc}\\Tr_{\\mathbb Z",
+   "new": "\\emph{Sous les hypothèses de} 6.15, \\emph{on a}, \\emph{pour tout} $g\\in G$,\n\\begin{equation}\nf_*^{gc}\\Tr_{\\mathbb Z"
+  },
+  "note": ""
+ },
+ {
+  "page": 196,
+  "where": "Corollaire 6.17, last line",
+  "scan": "avec les notations de : underlined",
+  "tex": "avec les notations de 6.16.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "avec les notations de 6.16.",
+   "new": "\\emph{avec les notations de} 6.16."
+  },
+  "note": ""
+ },
+ {
+  "page": 196,
+  "where": "end of the page / top of p. 197",
+  "scan": "p. 197 opens 'En fait, il n'est pas difficile' flush left: the typescript indents every new paragraph ('Compte tenu', 'Appliquant', 'Par dévissage'), so the paragraph of p. 196 continues",
+  "tex": "page_196.tex ends 'est l'identité.' followed by a blank line before the folio-197 marker",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "est l'identité.\n\n",
+   "new": "est l'identité.\n"
+  },
+  "note": "Paragraph break the print does not have (global issue 44); the edit removes the blank line before the marker (the marker line stays)."
+ },
+ {
+  "page": 197,
+  "where": "first paragraph, 'c_1(xg) = c_1(x)φ(g),'",
+  "scan": "c_1 vérifie c_1(xg) = c_1(x)φ(g), pour tout point x ...",
+  "tex": "\\[ c_1(xg)=c_1(x)\\varphi(g) \\] pour tout point",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "c_1(xg)=c_1(x)\\varphi(g)\n\\]",
+   "new": "c_1(xg)=c_1(x)\\varphi(g),\n\\]"
+  },
+  "note": "The comma after the formula is left out (display a layout variant)."
+ },
+ {
+  "page": 197,
+  "where": "first paragraph, 'pour tout point x de G'",
+  "scan": "pour tout point x de G , φ étant ... (G clearly typed)",
+  "tex": "pour tout point $x$ de $G$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "pour tout point $x$ de $C$",
+  "note": "c_1 is defined on C (diagram 6.11.1), so x is a point of C (and g runs through G). The TeX keeps the printed reading."
+ },
+ {
+  "page": 197,
+  "where": "6.18, number",
+  "scan": "6.18.",
+  "tex": "\\subsection*{6.18}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.18}",
+   "new": "\\subsection*{6.18.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 197,
+  "where": "after (6.18.2)",
+  "scan": "par l'augmentation naturelle (envoyant tout g ∈ G sur 1).",
+  "tex": "par l'augmentation naturelle, envoyant tout $g\\in G$ sur $1$.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "l'augmentation naturelle, envoyant tout $g\\in G$ sur $1$.",
+   "new": "l'augmentation naturelle (envoyant tout $g\\in G$ sur $1$)."
+  },
+  "note": "Parentheses of the print turned into a comma."
+ },
+ {
+  "page": 197,
+  "where": "Lemme 6.18.3, label",
+  "scan": "Lemme 6.18.3 -",
+  "tex": "\\begin{statement}{Lemme 6.18.3}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Lemme 6.18.3}",
+   "new": "\\begin{statement}{Lemme 6.18.3 -}"
+  },
+  "note": ""
+ },
+ {
+  "page": 197,
+  "where": "Lemme 6.18.3, statement",
+  "scan": "Si | la flèche | est un isomorphisme : underlined",
+  "tex": "Si $L\\in\\Ob D_{\\mathrm{ctf}}({}_{\\Lambda[G]}X)$, la flèche 6.18.2 est un isomorphisme.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Si $L\\in\\Ob D_{\\mathrm{ctf}}({}_{\\Lambda[G]}X)$, la flèche 6.18.2 est un isomorphisme.",
+   "new": "\\emph{Si} $L\\in\\Ob D_{\\mathrm{ctf}}({}_{\\Lambda[G]}X)$, \\emph{la flèche} 6.18.2 \\emph{est un isomorphisme}."
+  },
+  "note": ""
+ },
+ {
+  "page": 197,
+  "where": "Proposition 6.19, label",
+  "scan": "Proposition 6.19 -",
+  "tex": "\\begin{statement}{Proposition 6.19}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Proposition 6.19}",
+   "new": "\\begin{statement}{Proposition 6.19 -}"
+  },
+  "note": ""
+ },
+ {
+  "page": 197,
+  "where": "Proposition 6.19, first line",
+  "scan": "Dans la situation de | soient : underlined",
+  "tex": "Dans la situation de 6.11, soient",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Dans la situation de 6.11, soient",
+   "new": "\\emph{Dans la situation de} 6.11, \\emph{soient}"
+  },
+  "note": ""
+ },
+ {
+  "page": 197,
+  "where": "Proposition 6.19, 'a : M ⟶ f_*L'",
+  "scan": "v ∈ Hom(d_1^*M,d_2^!M) , a : M ⟶ f_*L une flèche de ...",
+  "tex": "\\] et $a:M\\to f_*L$",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\net $a:M",
+   "new": "\\]\n$a:M"
+  },
+  "note": "The print has no 'et' before a."
+ },
+ {
+  "page": 197,
+  "where": "Proposition 6.19, 'une flèche de'",
+  "scan": "une flèche de : underlined",
+  "tex": "f_*L$ une flèche de",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "f_*L$ une flèche de",
+   "new": "f_*L$ \\emph{une flèche de}"
+  },
+  "note": ""
+ },
+ {
+  "page": 197,
+  "where": "Proposition 6.19, '(M étant regardé ... Λ[G] ⟶ Λ ) tels que le carré'",
+  "scan": "D(_{Λ[G]}Y) (M étant regardé comme objet de D(_{Λ[G]}Y) par l'augmentation Λ[G] ⟶ Λ ) tels que le carré",
+  "tex": "$D({}_{\\Lambda[G]}Y)$, $M$ étant regardé comme objet de $D({}_{\\Lambda[G]}Y)$ par l'augmentation $\\Lambda[G]\\to\\Lambda$, tels que le carré",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Y)$, $M$ étant regardé comme objet de $D({}_{\\Lambda[G]}Y)$ par l'augmentation $\\Lambda[G]\\to\\Lambda$, tels que le carré",
+   "new": "Y)$ ($M$ \\emph{étant regardé comme objet de} $D({}_{\\Lambda[G]}Y)$ \\emph{par l'augmentation} $\\Lambda[G]\\to\\Lambda$) \\emph{tels que le carré}"
+  },
+  "note": "Parentheses of the print turned into commas; the same edit sets the underlines of the three word groups (étant regardé comme objet de, par l'augmentation, tels que le carré), which interleave with the parentheses."
+ },
+ {
+  "page": 197,
+  "where": "Proposition 6.19, after the square",
+  "scan": "soit commutatif | On suppose que : underlined",
+  "tex": "soit commutatif. On suppose que",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "soit commutatif. On suppose que",
+   "new": "\\emph{soit commutatif}. \\emph{On suppose que}"
+  },
+  "note": ""
+ },
+ {
+  "page": 197,
+  "where": "Proposition 6.19, 'On suppose que f_*M ∈ ob D_ctf(_{Λ[G]}Y)'",
+  "scan": "f_*M ∈ ob D_ctf(_{Λ[G]}Y) (M clearly typed)",
+  "tex": "$f_*M\\in\\Ob D_{\\mathrm{ctf}}({}_{\\Lambda[G]}Y)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$f_*L\\in\\Ob D_{\\mathrm{ctf}}({}_{\\Lambda[G]}Y)$",
+  "note": "M lives on Y; the object of D(_{Λ[G]}Y) meant is f_*L (L on X, as in a : M ⟶ f_*L and RHom_{Λ[G]}(Λ,f_*L) on the next line; 6.22 states the same hypothesis as f_*f^*M ∈ ob D_ctf(_{Λ[G]}Y) with L = f^*M). The TeX keeps the printed reading."
+ },
+ {
+  "page": 197,
+  "where": "Proposition 6.19, 'et que a induit un isomorphisme'",
+  "scan": "et que | induit un isomor-phisme : underlined",
+  "tex": "et que $a$ induit un isomorphisme",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et que $a$ induit un isomorphisme",
+   "new": "\\emph{et que} $a$ \\emph{induit un isomorphisme}"
+  },
+  "note": ""
+ },
+ {
+  "page": 197,
+  "where": "Proposition 6.19, last line",
+  "scan": "Alors on a : underlined",
+  "tex": "Alors on a",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors on a",
+   "new": "\\emph{Alors on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 198,
+  "where": "6.20, number",
+  "scan": "6.20.",
+  "tex": "\\subsection*{6.20}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{6.20}",
+   "new": "\\subsection*{6.20.}"
+  },
+  "note": ""
+ },
+ {
+  "page": 198,
+  "where": "6.20, 'Soient L_i ∈ ob D^+(G,X_i)'",
+  "scan": "L_i ∈ ob D^+(G,X_i) (no left index)",
+  "tex": "$L_i\\in\\Ob D^+(G,{}_AX_i)$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "D^+(G,{}_AX_i)",
+   "new": "D^+(G,X_i)"
+  },
+  "note": "The left index A is not printed (compare 'de D(G,X)' two lines below)."
+ },
+ {
+  "page": 198,
+  "where": "6.20, 'une flèche (de D(G,X)) notée encore'",
+  "scan": "définit par adjonction une flèche (de D(G,X)) notée encore",
+  "tex": "une flèche de $D(G,X)$ notée encore",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "une flèche de $D(G,X)$ notée",
+   "new": "une flèche (de $D(G,X)$) notée"
+  },
+  "note": "The print's parentheses are dropped."
+ },
+ {
+  "page": 198,
+  "where": "6.20, 'à tout morphisme (G-equivariant)'",
+  "scan": "à tout morphisme (G-equivariant) u ∈ Hom(...)",
+  "tex": "à tout morphisme $G$-équivariant",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "tout morphisme $G$-équivariant\n",
+   "new": "tout morphisme ($G$-équivariant)\n"
+  },
+  "note": "The print's parentheses are dropped. Apply before the next (misprint) edit, whose old is taken from this edit's result."
+ },
+ {
+  "page": 198,
+  "where": "6.20, '(G-equivariant)'",
+  "scan": "G-equivariant without the acute accent (the accents of the line are sharp; 'G-équivariante' on the next line has it)",
+  "tex": "$G$-équivariant",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "($G$-équivariant)",
+   "new": "($G$-equivariant)"
+  },
+  "corrected": "($G$-équivariant)",
+  "note": "Typing slip (accent left out); the TeX silently corrects it, the edit restores the printed reading (diplomatic layer only). Its old is the text after the preceding punctuation edit: apply the two together, in this order."
+ },
+ {
+  "page": 198,
+  "where": "6.20, 'une correspondance (G-équivariante)'",
+  "scan": "une correspondance (G-équivariante)",
+  "tex": "une correspondance $G$-équivariante",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "une correspondance $G$-équivariante",
+   "new": "une correspondance ($G$-équivariante)"
+  },
+  "note": "The print's parentheses are dropped."
+ },
+ {
+  "page": 198,
+  "where": "Proposition 6.21, label",
+  "scan": "Proposition 6.21 -",
+  "tex": "\\begin{statement}{Proposition 6.21}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Proposition 6.21}",
+   "new": "\\begin{statement}{Proposition 6.21 -}"
+  },
+  "note": ""
+ },
+ {
+  "page": 198,
+  "where": "Proposition 6.21, first sentence",
+  "scan": "Soient | un | morphisme propre | et un carré com-mutatif équivariant | avec action triviale de | sur | et : underlined (not G-S-, not the letters)",
+  "tex": "Soient $f:X\\to Y$ un $G$-$S$-morphisme propre, ... et $D$.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Soient $f:X\\to Y$ un $G$-$S$-morphisme propre, et un carré commutatif équivariant 6.11.1, avec action triviale de $G$ sur $Y$ et $D$.",
+   "new": "\\emph{Soient} $f:X\\to Y$ \\emph{un} $G$-$S$-\\emph{morphisme propre}, \\emph{et un carré commutatif équivariant} 6.11.1, \\emph{avec action triviale de} $G$ \\emph{sur} $Y$ \\emph{et} $D$."
+  },
+  "note": ""
+ },
+ {
+  "page": 198,
+  "where": "Proposition 6.21, 'On suppose ... et le carré'",
+  "scan": "On suppose | propres | quasi-finis et de tor-dimension finie | et le carré : underlined",
+  "tex": "On suppose $c$, $d$ propres, $c_2$, $d_2$ quasi-finis et de tor-dimension finie, et le carré",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "On suppose $c$, $d$ propres, $c_2$, $d_2$ quasi-finis et de tor-dimension finie, et le carré",
+   "new": "\\emph{On suppose} $c$, $d$ \\emph{propres}, $c_2$, $d_2$ \\emph{quasi-finis et de tor-dimension finie}, \\emph{et le carré}"
+  },
+  "note": ""
+ },
+ {
+  "page": 198,
+  "where": "Proposition 6.21, after the square",
+  "scan": "cartésien et tor-indépendant | Soient : underlined",
+  "tex": "cartésien et tor-indépendant (SGA 6 III 1.5). Soient $M",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "cartésien et tor-indépendant (SGA 6 III 1.5). Soient $M",
+   "new": "\\emph{cartésien et tor-indépendant} (SGA 6 III 1.5). \\emph{Soient} $M"
+  },
+  "note": ""
+ },
+ {
+  "page": 198,
+  "where": "Proposition 6.21, 'd'où un homomorphisme G-équivariant'",
+  "scan": "d'où un homomorphisme | équivariant : underlined (not G-)",
+  "tex": "d'où un homomorphisme $G$-équivariant",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "d'où un homomorphisme $G$-équivariant",
+   "new": "\\emph{d'où un homomorphisme} $G$-\\emph{équivariant}"
+  },
+  "note": ""
+ },
+ {
+  "page": 198,
+  "where": "Proposition 6.21, 'et des correspondances G-équivariantes'",
+  "scan": "et des correspondances | équivariantes : underlined (not G-)",
+  "tex": "et des correspondances $G$-équivariantes",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et des correspondances $G$-équivariantes",
+   "new": "\\emph{et des correspondances} $G$-\\emph{équivariantes}"
+  },
+  "note": ""
+ },
+ {
+  "page": 198,
+  "where": "Proposition 6.21, last sentence of the page",
+  "scan": "On a alors un carré commutatif de flèches de D(_{Λ[G]}Y) (M étant considéré comme objet de D(_{Λ[G]}Y) par l'action triviale) [diagram on p. 199]",
+  "tex": "... de flèches de $D({}_{\\Lambda[G]}Y)$, $M$ étant considéré comme objet de $D({}_{\\Lambda[G]}Y)$ par l'action triviale,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "On a alors un carré commutatif de flèches de $D({}_{\\Lambda[G]}Y)$, $M$ étant considéré comme objet de $D({}_{\\Lambda[G]}Y)$ par l'action triviale,",
+   "new": "\\emph{On a alors un carré commutatif de flèches de} $D({}_{\\Lambda[G]}Y)$ ($M$ \\emph{étant considéré comme objet de} $D({}_{\\Lambda[G]}Y)$ \\emph{par l'action triviale})"
+  },
+  "note": "Parentheses of the print turned into commas (no comma after the closing parenthesis); the same edit sets the underlines of the three word groups, which interleave with the parentheses. The print's underline also runs under the closing parenthesis; left outside the \\emph."
+ },
+ {
+  "page": 198,
+  "where": "diagram of Proposition 6.21 (printed at the top of p. 199), lower row",
+  "scan": "d_1^*(f_*f^*M) ⟶ d_2^!(f_*f^*M) ,",
+  "tex": "d_1^*f_*f^*M ... & d_2^!f_*f^*M,",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "d_1^*f_*f^*M \\arrow[r,\"f_*((h^*v)^!)\"'] & d_2^!f_*f^*M,",
+   "new": "d_1^*(f_*f^*M) \\arrow[r,\"f_*((h^*v)^!)\"'] & d_2^!(f_*f^*M),"
+  },
+  "note": "The print has the parentheses, as in Hom(d_1^*(f_*f^*M),d_2^!(f_*f^*M)) of the statement. This diagram is printed on p. 199 (see the p. 199 marker finding); the edit does not cross a marker."
+ },
+ {
+  "page": 199,
+  "where": "top of the page",
+  "scan": "p. 199 begins with the square d_1^*M --v^!--> d_2^!M / d_1^*(f_*f^*M) --f_*((h^*v)^!)--> d_2^!(f_*f^*M) , then 'où les flèches verticales ...'",
+  "tex": "the square is the last display of page_198.tex; page_199.tex opens with 'où les flèches verticales'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 199 really begins with the display '\\[ \\begin{tikzcd}[column sep=huge,row sep=large] d_1^*M \\arrow[r,\"v^!\"] ...'. Exact fix: python -I move_marker.py 5 199 '\\[' --before (the last '\\[' before the marker is the one opening this square; simulated in memory on both editions: '... par l'action triviale,' / marker / '\\[' / '\\begin{tikzcd}[column sep=huge,row sep=large]')."
+ },
+ {
+  "page": 199,
+  "where": "end of Proposition 6.21",
+  "scan": "où les flèches verticales sont données par la flèche d'adjonction : one underline",
+  "tex": "où les flèches verticales sont données par la flèche d'adjonction $M\\to f_*f^*M$.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où les\nflèches verticales sont données par la flèche d'adjonction",
+   "new": "\\emph{où les\nflèches verticales sont données par la flèche d'adjonction}"
+  },
+  "note": ""
+ },
+ {
+  "page": 199,
+  "where": "proof of 6.21, diagram with (1)-(5), (A), (B)",
+  "scan": "upper row d_1^*M --v--> d_2^*M --Tr_{d_2}--> d_2^!M; (2) goes down from d_2^*M to h_*c_2^*L and (3) from d_2^!M to d_2^!f_*L; (A) between (1) and (2), (B) between (2) and (3)",
+  "tex": "upper row in columns 1, 2, 4: (2) points to h_*c_1^*L and (3) to h_*c_2^!L; (A) and (B) placed accordingly",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "d_1^*M \\arrow[r,\"v\"] \\arrow[d,\"{(1)}\"'] &\nd_2^*M \\arrow[rr,\"\\Tr_{d_2}\"] \\arrow[d,\"{(2)}\"'] &&\nd_2^!M \\arrow[d,\"{(3)}\"] & {}\\\\\nd_1^*f_*L \\arrow[r,\"{(4)}\"'] &\nh_*c_1^*L \\arrow[r,\"h_*u\"'] &\nh_*c_2^*L \\arrow[r,\"h_*\\Tr_{c_2}\"'] &\nh_*c_2^!L \\arrow[r,\"{(5)}\"'] &\nd_2^!f_*L,\n\\arrow[from=1-1,to=2-2, phantom, \"\\scriptstyle (A)\"]\n\\arrow[from=1-2,to=2-4, phantom, \"\\scriptstyle (B)\"]",
+   "new": "d_1^*M \\arrow[rr,\"v\"] \\arrow[d,\"{(1)}\"'] &&\nd_2^*M \\arrow[rr,\"\\Tr_{d_2}\"] \\arrow[d,\"{(2)}\"'] &&\nd_2^!M \\arrow[d,\"{(3)}\"]\\\\\nd_1^*f_*L \\arrow[r,\"{(4)}\"'] &\nh_*c_1^*L \\arrow[r,\"h_*u\"'] &\nh_*c_2^*L \\arrow[r,\"h_*\\Tr_{c_2}\"'] &\nh_*c_2^!L \\arrow[r,\"{(5)}\"'] &\nd_2^!f_*L,\n\\arrow[from=1-1,to=2-3, phantom, \"\\scriptstyle (A)\"]\n\\arrow[from=1-3,to=2-5, phantom, \"\\scriptstyle (B)\"]"
+  },
+  "note": "Wrong targets of two vertical arrows: as printed (and as the text says: (2) is d_2^*M ⟶ h_*h^*(d_2^*M) = h_*c_2^*L, (3) comes from M ⟶ f_*L), d_2^*M stands above h_*c_2^*L and d_2^!M above d_2^!f_*L. The edit puts the upper row in columns 1, 3, 5 and re-anchors the phantom labels (A), (B); the lower row is unchanged (its labels below the arrows are the convention reported in the message)."
+ },
+ {
+  "page": 199,
+  "where": "Corollaire 6.22, label",
+  "scan": "Corollaire 6.22 -",
+  "tex": "\\begin{statement}{Corollaire 6.22}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Corollaire 6.22}",
+   "new": "\\begin{statement}{Corollaire 6.22 -}"
+  },
+  "note": ""
+ },
+ {
+  "page": 199,
+  "where": "Corollaire 6.22, first line",
+  "scan": "Sous les hypothèses de | on suppose que : underlined",
+  "tex": "Sous les hypothèses de 6.21, on suppose que",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 6.21, on suppose que",
+   "new": "\\emph{Sous les hypothèses de} 6.21, \\emph{on suppose que}"
+  },
+  "note": ""
+ },
+ {
+  "page": 199,
+  "where": "Corollaire 6.22, 'et que la flèche d'adjonction'",
+  "scan": "et que la flèche d'adjonction : underlined",
+  "tex": "et que la flèche d'adjonction",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et que la flèche d'adjonction",
+   "new": "\\emph{et que la flèche d'adjonction}"
+  },
+  "note": ""
+ },
+ {
+  "page": 199,
+  "where": "Corollaire 6.22, 'induit un isomorphisme'",
+  "scan": "induit un isomorphisme : underlined",
+  "tex": "induit un isomorphisme",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "induit un isomorphisme",
+   "new": "\\emph{induit un isomorphisme}"
+  },
+  "note": ""
+ },
+ {
+  "page": 199,
+  "where": "Corollaire 6.22, 'Alors on a'",
+  "scan": "Alors on a : underlined",
+  "tex": "Alors on a",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors on a",
+   "new": "\\emph{Alors on a}"
+  },
+  "note": ""
+ },
+ {
+  "page": 199,
+  "where": "(6.22.1)",
+  "scan": "Tr_{Λ[G]}(f_*(f^*v)^!)(g^{-1})",
+  "tex": "\\Tr_{\\Lambda[G]}(f_*((f^*v)^!))(g^{-1})",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(f_*((f^*v)^!))(g^{-1})",
+   "new": "(f_*(f^*v)^!)(g^{-1})"
+  },
+  "note": "One pair of parentheses fewer in the print (also four times on p. 200). f^*v as printed (h^*v in 6.21), kept."
+ },
+ {
+  "page": 199,
+  "where": "Proposition 6.23, label",
+  "scan": "Proposition 6.23 -",
+  "tex": "\\begin{statement}{Proposition 6.23}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{statement}{Proposition 6.23}",
+   "new": "\\begin{statement}{Proposition 6.23 -}"
+  },
+  "note": ""
+ },
+ {
+  "page": 199,
+  "where": "Proposition 6.23, first line",
+  "scan": "Sous les hypothèses de | on suppose donné de plus une immer-sion ouverte : underlined",
+  "tex": "Sous les hypothèses de 6.21, on suppose donné de plus une immersion ouverte",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Sous les hypothèses de 6.21, on suppose donné de plus une immersion ouverte",
+   "new": "\\emph{Sous les hypothèses de} 6.21, \\emph{on suppose donné de plus une immersion ouverte}"
+  },
+  "note": ""
+ },
+ {
+  "page": 199,
+  "where": "Proposition 6.23, 'telle que (fc_1)^{-1}(V) soit connexe, que'",
+  "scan": "telle que | soit connexe, que : underlined (the second through the comma)",
+  "tex": "telle que $(fc_1)^{-1}(V)$ soit connexe, que",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "telle que $(fc_1)^{-1}(V)$ soit connexe, que",
+   "new": "\\emph{telle que} $(fc_1)^{-1}(V)$ \\emph{soit connexe, que}"
+  },
+  "note": ""
+ },
+ {
+  "page": 199,
+  "where": "Proposition 6.23, 'et que f' (printed on p. 200)",
+  "scan": "et que : underlined",
+  "tex": "et que $f$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "et que $f$",
+   "new": "\\emph{et que} $f$"
+  },
+  "note": "Printed on p. 200, line 1 (see the p. 200 marker finding)."
+ },
+ {
+  "page": 200,
+  "where": "top of the page",
+  "scan": "p. 200 begins 'd_1^{-1}(V) ⊂ d_2^{-1}(V) ., et que f induise un revêtement'; p. 199 ends 'soit connexe, que'",
+  "tex": "'$d_1^{-1}(V)\\subset d_2^{-1}(V)$, et que $f$' ends page_199.tex; page_200.tex opens with 'induise un revêtement'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 200 really begins at '$d_1^{-1}(V)\\subset d_2^{-1}(V)$'. Exact fix: python -I move_marker.py 5 200 '$d_1^{-1}(V)\\subset d_2^{-1}(V)$' --before (simulated in memory on both editions: '... soit connexe, que ' / marker / '$d_1^{-1}(V)\\subset d_2^{-1}(V)$, et que $f$' / 'induise un revêtement ...'). The faint dot before the comma after d_2^{-1}(V) is much smaller than a typed full stop: taken as a speck, not reported."
+ },
+ {
+  "page": 200,
+  "where": "Proposition 6.23, 'induise un revêtement principal galoisien de groupe'",
+  "scan": "induise un revêtement principal galoisien de groupe : underlined",
+  "tex": "induise un revêtement principal galoisien de groupe $G$,",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "induise un revêtement principal galoisien de groupe $G$,",
+   "new": "\\emph{induise un revêtement principal galoisien de groupe} $G$,"
+  },
+  "note": ""
+ },
+ {
+  "page": 200,
+  "where": "Proposition 6.23, the map f_V",
+  "scan": "G , U = f^{-1}(V) --f_V--> V . (f_V written over the arrow)",
+  "tex": "f_V:U=f^{-1}(V)\\to V.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "f_V:U=f^{-1}(V)\\to V.",
+   "new": "U=f^{-1}(V)\\xrightarrow{f_V}V."
+  },
+  "note": "The print has no 'f_V :' before U; f_V labels the arrow."
+ },
+ {
+  "page": 200,
+  "where": "Proposition 6.23, 'On suppose en outre que ... et qu'on a un isomorphisme'",
+  "scan": "On suppose en outre que | est de la forme | où | et qu'on a un isomorphisme : underlined",
+  "tex": "On suppose en outre que $M$ est de la forme $M=i_!E$, où $E\\in\\Ob D(V)$, et qu'on a un isomorphisme",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "On suppose en outre que $M$ est de la forme $M=i_!E$, où $E\\in\\Ob D(V)$, et qu'on a un isomorphisme",
+   "new": "\\emph{On suppose en outre que} $M$ \\emph{est de la forme} $M=i_!E$, \\emph{où} $E\\in\\Ob D(V)$, \\emph{et qu'on a un isomorphisme}"
+  },
+  "note": ""
+ },
+ {
+  "page": 200,
+  "where": "Proposition 6.23, α : f_V^*E ⟶ Λ_X ⊗_Λ E_o",
+  "scan": "Λ_X ⊗_Λ E_o: plain tensor sign, no L above it",
+  "tex": "\\Lambda_X\\lten_{\\Lambda}E_0",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Lambda_X\\lten_{\\Lambda}E_0",
+   "new": "\\Lambda_X\\otimes_{\\Lambda}E_0"
+  },
+  "note": "\\lten sets the stacked L, which the print does not have here (as Λ_{U,X} ⊗ E_o below)."
+ },
+ {
+  "page": 200,
+  "where": "Proposition 6.23, 'avec E_o ∈ ob D(Λ[G]) , parfait sur Λ . On se donne'",
+  "scan": "avec | parfait sur | On se donne : underlined",
+  "tex": "avec $E_0\\in\\Ob D(\\Lambda[G])$, parfait sur $\\Lambda$. On se donne",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "avec $E_0\\in\\Ob D(\\Lambda[G])$, parfait sur $\\Lambda$. On se donne",
+   "new": "\\emph{avec} $E_0\\in\\Ob D(\\Lambda[G])$, \\emph{parfait sur} $\\Lambda$. \\emph{On se donne}"
+  },
+  "note": ""
+ },
+ {
+  "page": 200,
+  "where": "Proposition 6.23, 'comme en 6.21, et l'on note'",
+  "scan": "comme / en | et l'on note : underlined",
+  "tex": "comme en 6.21, et l'on note",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "comme en 6.21, et l'on note",
+   "new": "\\emph{comme en} 6.21, \\emph{et l'on note}"
+  },
+  "note": ""
+ },
+ {
+  "page": 200,
+  "where": "Proposition 6.23, 'l'homomorphisme défini, grâce à α , par'",
+  "scan": "l'homomorphisme défini | grâce à | par : underlined",
+  "tex": "l'homomorphisme défini, grâce à $\\alpha$, par $f^*v",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "l'homomorphisme défini, grâce à $\\alpha$, par $f^*v",
+   "new": "\\emph{l'homomorphisme défini}, \\emph{grâce à} $\\alpha$, \\emph{par} $f^*v"
+  },
+  "note": ""
+ },
+ {
+  "page": 200,
+  "where": "Proposition 6.23, 'Alors, si c_{U,X} désigne la correspondance définie en 6.14.3'",
+  "scan": "Alors, si | désigne la correspondance définie en : underlined",
+  "tex": "Alors, si $\\underline c_{U,X}$ désigne la correspondance définie en 6.14.3,",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors, si $\\underline c_{U,X}$ désigne la correspondance définie en 6.14.3,",
+   "new": "\\emph{Alors, si} $\\underline c_{U,X}$ \\emph{désigne la correspondance définie en} 6.14.3,"
+  },
+  "note": "The print underlines 'Alors, si' through the comma."
+ },
+ {
+  "page": 200,
+  "where": "Proposition 6.23, 'on a (avec la notation 6.20.2)'",
+  "scan": "on / a (avec la notation 6.20.2)  — 'on a' and 'avec la notation' underlined, no comma",
+  "tex": "on a, avec la notation 6.20.2,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "on a, avec la notation 6.20.2,",
+   "new": "\\emph{on a} (\\emph{avec la notation} 6.20.2)"
+  },
+  "note": "Parentheses of the print turned into commas; the same edit sets the underlines ('on a', 'avec la notation'). The underline runs on under the opening parenthesis; left outside the \\emph."
+ },
+ {
+  "page": 200,
+  "where": "after (6.23.1), '(Noter que ... α ).'",
+  "scan": "(Noter que, grâce au caractère central de Tr_Λ , le second membre ne dépend pas du choix de α ).",
+  "tex": "Noter que, grâce au caractère central de $\\Tr_{\\Lambda}$, le second membre ne dépend pas du choix de $\\alpha$.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Noter que, grâce au caractère central de $\\Tr_{\\Lambda}$, le second membre ne dépend pas du choix de $\\alpha$.",
+   "new": "(Noter que, grâce au caractère central de $\\Tr_{\\Lambda}$, le second membre ne dépend pas du choix de $\\alpha$)."
+  },
+  "note": "The print's parentheses around the remark are dropped."
+ },
+ {
+  "page": 200,
+  "where": "proof, 'Par la formule de projection f_*f^*Λ_Y ⊗ M ⟶ f_*f^*M'",
+  "scan": "f_*f^*Λ_Y ⊗ M: plain tensor sign, no L above it",
+  "tex": "f_*f^*\\Lambda_Y\\lten M",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "f_*f^*\\Lambda_Y\\lten M",
+   "new": "f_*f^*\\Lambda_Y\\otimes M"
+  },
+  "note": ""
+ },
+ {
+  "page": 200,
+  "where": "proof, 'et f_*(f^*v)^! au produit tensoriel externe'",
+  "scan": "f_*(f^*v)^!",
+  "tex": "$f_*((f^*v)^!)$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "et $f_*((f^*v)^!)$ au produit",
+   "new": "et $f_*(f^*v)^!$ au produit"
+  },
+  "note": "One pair of parentheses fewer in the print."
+ },
+ {
+  "page": 200,
+  "where": "proof, 'la correspondance (Z_g-équivariante)'",
+  "scan": "la correspondance (Z_g-équivariante) gf_*(f^*v)^!",
+  "tex": "la correspondance $Z_g$-équivariante",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "la correspondance $Z_g$-équivariante",
+   "new": "la correspondance ($Z_g$-équivariante)"
+  },
+  "note": "The print's parentheses are dropped."
+ },
+ {
+  "page": 200,
+  "where": "proof, 'gf_*(f^*v)^! s'identifie donc à'",
+  "scan": "gf_*(f^*v)^!",
+  "tex": "$gf_*((f^*v)^!)$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "$gf_*((f^*v)^!)$ s'identifie",
+   "new": "$gf_*(f^*v)^!$ s'identifie"
+  },
+  "note": ""
+ },
+ {
+  "page": 200,
+  "where": "proof, display after 'Comme, d'après 6.10.4, on a' (left side)",
+  "scan": "Tr_{Λ[G]}(f_*(f^*v)^!)(g^{-1})",
+  "tex": "\\Tr_{\\Lambda[G]}(f_*((f^*v)^!))(g^{-1})",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tr_{\\Lambda[G]}(f_*((f^*v)^!))(g^{-1})",
+   "new": "\\Tr_{\\Lambda[G]}(f_*(f^*v)^!)(g^{-1})"
+  },
+  "note": ""
+ },
+ {
+  "page": 200,
+  "where": "proof, display after 'Comme, d'après 6.10.4, on a' (right side)",
+  "scan": "Tr_{Λ[Z_g]}(gf_*(f^*v)^!)(e)",
+  "tex": "\\Tr_{\\Lambda[Z_g]}(gf_*((f^*v)^!))(e)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tr_{\\Lambda[Z_g]}(gf_*((f^*v)^!))(e)",
+   "new": "\\Tr_{\\Lambda[Z_g]}(gf_*(f^*v)^!)(e)"
+  },
+  "note": ""
+ },
+ {
+  "page": 200,
+  "where": "proof, 'ou, ce qui revient au même, d'après 6.10.4,'",
+  "scan": "ou, ce qui revient au même, d'après 6.10.4,",
+  "tex": "ou, ce qui revient au même d'après 6.10.4,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "revient au même d'après",
+   "new": "revient au même, d'après"
+  },
+  "note": "Comma left out."
+ },
+ {
+  "page": 200,
+  "where": "last line, 'le lemme suivant :'",
+  "scan": "on voit qu'il suffit d'établir le lemme suivant :",
+  "tex": "le lemme suivant.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "le lemme suivant.",
+   "new": "le lemme suivant:"
+  },
+  "note": "Colon in the print, not a full stop."
+ }
+]

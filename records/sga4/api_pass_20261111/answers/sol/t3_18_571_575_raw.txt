@@ -1,0 +1,196 @@
+{
+  "findings": [
+    {
+      "page": 572,
+      "where": "Proof of Proposition 3.1.8, reference for assertion (iii)",
+      "scan": "XVII 6.2",
+      "tex": "\\hyperrefext[XVII][XVII.prop6.2.11]{6.2.11}",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hyperrefext[XVII][XVII.prop6.2.11]{6.2.11}",
+        "new": "XVII~6.2"
+      },
+      "note": "The print refers to subsection 6.2, not specifically to Proposition 6.2.11. The broader printed reference is not a misprint."
+    },
+    {
+      "page": 572,
+      "where": "3.1.9, sentence immediately before (3.1.9.1)",
+      "scan": "Le complexe $\\Hom(K,L)$ est à composantes flasques",
+      "tex": "Le complexe $\\Hhom(K,L)$ est à composantes flasques",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hhom(K,L)",
+      "note": "The print omits the mathematical underline on the sheaf Hom. The complex whose components are flasque sheaves is the internal Hom complex. TeX silently corrects the omission."
+    },
+    {
+      "page": 572,
+      "where": "3.1.9, display following « de sorte que », right-hand side",
+      "scan": "\\Hhom^{\\bigdot}(f^{\\bigdot}_{V!}(k^{\\ast}_{X}K),f^{\\bigdot}_{V!}(k^{\\ast}_{X}L))",
+      "tex": "\\Hhom^{\\bigdot}(f^{\\bigdot}_{V!}(k^{\\ast}_{X}K),f^{\\bigdot}_{V!}(k^{\\ast}_{X}L))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hom^{\\bigdot}(f^{\\bigdot}_{V!}(k^{\\ast}_{X}K),f^{\\bigdot}_{V!}(k^{\\ast}_{X}L))",
+      "note": "The print incorrectly underlines the Hom on the right. The left side has been evaluated at V and is a complex of groups, so the right side must be ordinary Hom. TeX keeps the printed misprint."
+    },
+    {
+      "page": 573,
+      "where": "(3.1.10.2), second line, inside H^0",
+      "scan": "H^{0}(V,R\\Hom(Rf_{!}K,L))",
+      "tex": "H^{0}(V,R\\Hom(Rf_{!}K,L))",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "H^{0}(V,R\\Hhom(Rf_{!}K,L))",
+      "note": "The argument of H^0(V,-) must be the derived sheaf Hom. The print omits its underline, and TeX keeps that omission."
+    },
+    {
+      "page": 573,
+      "where": "(3.1.10.2), final term",
+      "scan": "\\Hhom(k^{\\ast}Rf_{!}K,k^{\\ast}L)",
+      "tex": "\\Hhom(k^{\\ast}Rf_{!}K,k^{\\ast}L)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hom(k^{\\ast}Rf_{!}K,k^{\\ast}L)",
+      "note": "This is a Hom group in the derived category over V, not a sheaf Hom. The print incorrectly underlines it; TeX keeps the misprint."
+    },
+    {
+      "page": 573,
+      "where": "Last paragraph, « Pour V=X »",
+      "scan": "Pour $V=X$",
+      "tex": "Pour $V=X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "V=S",
+      "note": "The unrestricted adjunction is recovered by taking V=S, so that the localization maps are identities. The printed X is a misprint retained by TeX."
+    },
+    {
+      "page": 574,
+      "where": "Lemma 3.1.10.3, lower-left node",
+      "scan": "\\Hom(k^{\\ast}_XK, Rf^{!}_Vk^{\\ast}_XL)",
+      "tex": "\\Hom(k^{\\ast}_X,K, Rf^{!}_Vk^{\\ast}_XL)",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Hom(k^{\\ast}_X,K,",
+        "new": "\\Hom(k^{\\ast}_XK,"
+      },
+      "note": "TeX inserts an extra comma between the pullback functor and K. The final subscript X in this node is a separate misprint of the print."
+    },
+    {
+      "page": 574,
+      "where": "Lemma 3.1.10.3, lower-left node, pullback of L",
+      "scan": "Rf^{!}_Vk^{\\ast}_XL",
+      "tex": "Rf^{!}_Vk^{\\ast}_XL",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Rf^{!}_Vk^{\\ast}L",
+      "note": "L is on S, so its restriction is k^*L, not k_X^*L. The print has the erroneous subscript X, and TeX keeps it."
+    },
+    {
+      "page": 574,
+      "where": "Lemma 3.1.10.3, lower-right node",
+      "scan": "\\Hom(Rf_!k^{\\ast}K,k^{\\ast}L)",
+      "tex": "\\Hom(Rf_!k^{\\ast}K,k^{\\ast}L)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hom(Rf_{V!}k^{\\ast}_XK,k^{\\ast}L)",
+      "note": "The adjunction on V requires f_V and the restriction k_X^*K. The print omits both subscripts, and TeX retains these omissions."
+    },
+    {
+      "page": 574,
+      "where": "3.1.11, definition of the bimodule complex M",
+      "scan": "$(f^{\\ast}\\mathcal{A},\\mathcal{B})$-bimodules",
+      "tex": "$(f^{\\ast}\\mathcal{A},\\mathcal{B})$-bimodules",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(g^{\\ast}\\mathcal{A},\\mathcal{B})",
+      "note": "M is a complex on S', so the coefficient ring pulled back from S is g^*A, not f^*A. TeX keeps the printed wrong letter."
+    },
+    {
+      "page": 574,
+      "where": "(3.1.11.4), right-hand side",
+      "scan": "Rf^{!}Rg_{\\ast}R\\Hom_{\\mathcal{B}}(M,L)",
+      "tex": "Rf^{!}Rg_{\\ast}R\\Hom_{\\mathcal{B}}(M,L)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Rf^{!}Rg_{\\ast}R\\Hhom_{\\mathcal{B}}(M,L)",
+      "note": "The Hom must be the sheaf Hom, as in (3.1.11.3) and the following diagram. The print omits the underline; TeX keeps the omission."
+    },
+    {
+      "page": 574,
+      "where": "Large final diagram, upper-left node",
+      "scan": "\\Hom(K,Rg'_{\\ast}R\\Hhom_{\\Bb}(f'^{\\ast}M,Rf'^{!}L)",
+      "tex": "\\Hom(K,Rg'_{\\ast} R\\Hhom_{\\Bb}(f'^{\\ast}M,Rf'^{!}L))",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\Hom(K,Rg'_{\\ast} R\\Hhom_{\\Bb}(f'^{\\ast}M,Rf'^{!}L))",
+      "note": "The print lacks the outer closing parenthesis of Hom. TeX silently supplies it."
+    },
+    {
+      "page": 574,
+      "where": "Large final diagram, middle-left node",
+      "scan": "\\Hom(g'^{\\ast}K,R\\Hhom_{\\Bb}(f'^{\\ast}M,Rf'^{!}L)",
+      "tex": "\\Hom(g'^{\\ast}K,R\\Hhom_{\\Bb}(f'^{\\ast} M, Rf'^{!}L)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hom(g'^{\\ast}K,R\\Hhom_{\\Bb}(f'^{\\ast} M, Rf'^{!}L))",
+      "note": "The outer closing parenthesis of Hom is missing in the print. TeX retains the omission."
+    },
+    {
+      "page": 574,
+      "where": "Large final diagram, lower-left node, tensor product",
+      "scan": "\\Hom(f'^{\\ast}M\\otimes_{\\Aa}g'^{\\ast}K,Rf'^{!}L)",
+      "tex": "\\Hom(f'^{\\ast}M\\otimes_{\\Aa}g'^{\\ast}K,\nRf'^{!}L)",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\Hom(f'^{\\ast}M\\otimes^{L}_{\\Aa}g'^{\\ast}K,Rf'^{!}L)",
+      "note": "The tensor–Hom adjunction is in derived categories. The superscript L is omitted in this node, although it is present on the tensor products in the other two bottom nodes. TeX keeps the omission."
+    },
+    {
+      "page": 575,
+      "where": "Corollary 3.1.12.1, direction of the ring homomorphism",
+      "scan": "\\varphi:\\mathcal{B}\\rightarrow\\mathcal{A}",
+      "tex": "\\varphi:\\mathcal{A}\\rightarrow \\mathcal{B}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\varphi:\\mathcal{A}\\rightarrow \\mathcal{B}",
+      "note": "Restriction of scalars from B to A requires a homomorphism A→B. The print reverses its direction; TeX silently corrects it."
+    },
+    {
+      "page": 575,
+      "where": "Proof of Corollary 3.1.12.1, final choice of M",
+      "scan": "M=\\mathcal{A}",
+      "tex": "M=\\mathcal{B}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "M=\\mathcal{B}",
+      "note": "To obtain restriction of scalars, M must be the regular B-module. The printed A is a misprint silently corrected by TeX."
+    },
+    {
+      "page": 575,
+      "where": "Corollary 3.1.12.3, parenthetical specialization",
+      "scan": "\\mathcal{B}=f^{\\ast}\\mathcal{A}=M",
+      "tex": "\\mathcal{B}=f^{\\ast}\\mathcal{A}=M",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\mathcal{B}=g^{\\ast}\\mathcal{A}=M",
+      "note": "B and M are on S', so the pullback from S is along g, not f. TeX keeps the printed wrong letter."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 571 0/0; 572 1/2; 573 0/3; 574 1/7; 575 0/3."
+}

@@ -1,0 +1,13 @@
+```json
+{"findings":[
+{"page":266,"where":"Preuve de 6.2, avant-dernière phrase","scan":"La catégorie ainsi obtenue est notée 𝔉(S⁻¹). La catégorie 𝔉(S⁻¹) munie du foncteur canonique","tex":"est notée $\\Ff(S^{-1})$ munie du foncteur","kind":"missing","confidence":"high","fix":{"old":"notée $\\Ff(S^{-1})$ munie","new":"notée $\\Ff(S^{-1})$. La catégorie $\\Ff(S^{-1})$ munie"},"note":"The sentence end and the words 'La catégorie F(S^{-1})' were dropped, so two sentences are merged into one."},
+{"page":266,"where":"Preuve de 6.2, foncteur canonique","scan":"Q : 𝔉 ⟶ 𝔉(S⁻¹)","tex":"$Q = \\Ff \\to \\Ff(S^{-1})$","kind":"symbol","confidence":"high","fix":{"old":"$Q = \\Ff","new":"$Q : \\Ff"},"note":"The print has a colon, not an equals sign."},
+{"page":267,"where":"display u_ξ","scan":"Lim with arrow, index ℰ (no °)","tex":"\\varinjlim_{\\mathcal{E}} \\Ff","kind":"misprint_in_print","confidence":"low","fix":null,"corrected":"\\varinjlim_{\\mathcal{E}^{\\circ}} \\Ff","note":"The print omits the ° on the index here (elsewhere it is ℰ°); the TeX keeps the printed reading."},
+{"page":267,"where":"On notera toute-fois","scan":"toute-/fois (hyphenation at a line break)","tex":"toute-fois","kind":"word","confidence":"low","fix":{"old":"toute-fois","new":"toutefois"},"note":"The line-break hyphen has been kept as part of the word."},
+{"page":269,"where":"c), second diagram (resp.)","scan":"t' ∈ S )","tex":"t\\in S)","kind":"symbol","confidence":"high","fix":{"old":"t\\in S)","new":"t'\\in S)"},"note":"The prime is missing on t."},
+{"page":270,"where":"Exercice 6.6 d)","scan":"La catégorie S(X) est cofinale","tex":"Le catégorie $S(X)$","kind":"word","confidence":"high","fix":{"old":"Le catégorie","new":"La catégorie"},"note":"The print reads 'La', not 'Le'."},
+{"page":270,"where":"6.5 e)","scan":"(adjoint à gauche au foncteur Q* (I 5.1) est exact à gauche","tex":"(adjoint à gauche au foncteur $Q^{\\ast}$ \\emph{(I 5.1)} est exact","kind":"misprint_in_print","confidence":"low","fix":null,"corrected":"(adjoint à gauche au foncteur $Q^{\\ast}$ (I 5.1)) est exact à gauche","note":"The parenthesis opened before 'adjoint' is never closed in the print; the TeX keeps this."},
+{"page":270,"where":"Exercice 6.6 c)","scan":"(II 5.2)","tex":"(II \\hyperref[VI.cor5.2]{5.2})","kind":"other","confidence":"low","fix":{"old":"(II \\hyperref[VI.cor5.2]{5.2})","new":"(II 5.2)"},"note":"The reference is to Exposé II 5.2, but the link points to label VI.cor5.2, which is in this exposé. The printed text is the same."}
+],
+"coordinator":"p266: 2/0; p267: 1/1; p268: 0/0; p269: 1/0; p270: 2/1. No marker problems. The p266 edits (missing sentence; Q = → Q :) are independent but sit in the same TeX line."}
+```

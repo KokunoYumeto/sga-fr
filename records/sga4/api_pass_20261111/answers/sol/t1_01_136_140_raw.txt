@@ -1,0 +1,110 @@
+{
+  "findings": [
+    {
+      "page": 136,
+      "where": "8.13.2, démonstration b), « un cardinal ... »",
+      "scan": "un cardinal $\\pi$",
+      "tex": "un cardinal $\\Pi$",
+      "kind": "symbol",
+      "confidence": "medium",
+      "fix": {
+        "old": "un cardinal $\\Pi$",
+        "new": "un cardinal $\\pi$"
+      },
+      "note": "Différence récurrente de casse du pi manuscrit. Ce correctif donne un cas représentatif; les autres occurrences et trois exemples sont signalés au coordinateur."
+    },
+    {
+      "page": 136,
+      "where": "8.13.2, démonstration b), catégorie où chercher une sous-catégorie cofinale",
+      "scan": "\\operatorname{Ob}({}_F\\backslash C)^\\circ",
+      "tex": "\\Ob({}_F\\backslash C)^\\circ",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "({}_F\\backslash C)^\\circ",
+      "note": "Ob est superflu : il s'agit de la catégorie opposée, non de sa classe d'objets. Le TeX conserve cette coquille. La lettre F est traitée séparément."
+    },
+    {
+      "page": 136,
+      "where": "8.13.2, démonstration b), indice de la catégorie comma",
+      "scan": "{}_F\\backslash C",
+      "tex": "{}_F\\backslash C",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "{}_f\\backslash C",
+      "note": "Le foncteur de l'énoncé est nommé f; aucun F distinct n'est introduit. Le TeX conserve cette incohérence de lettre, qui se poursuit p. 137."
+    },
+    {
+      "page": 137,
+      "where": "Premier paragraphe, fin de la démonstration de 8.13.2 b)",
+      "scan": "F(X), F(X_i), {}_F\\backslash C, {}_F\\backslash C'",
+      "tex": "F(X), F(X_i), {}_F\\backslash C, {}_F\\backslash C'",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "f(X),\\quad f(X_i),\\quad {}_f\\backslash C,\\quad {}_f\\backslash C'",
+      "note": "Suite de l'incohérence f/F de la page précédente : les six occurrences de F dans ce paragraphe désignent le foncteur f de l'énoncé. Le TeX les conserve."
+    },
+    {
+      "page": 137,
+      "where": "8.13.3, conclusion après les conditions a) à e)",
+      "scan": "proreprésentable si",
+      "tex": "proreprésentables si",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "proreprésentables si",
+        "new": "proreprésentable si"
+      },
+      "note": "Le s final n'est pas imprimé."
+    },
+    {
+      "page": 138,
+      "where": "Preuve de 8.13.4, choix de la petite sous-catégorie génératrice",
+      "scan": "génératrice de $C$",
+      "tex": "génératrice\nde $C$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "génératrice de $C'$",
+      "note": "La sous-catégorie C'_1 doit être génératrice de la catégorie d'arrivée C'. Le prime manque dans l'imprimé; le TeX conserve cette coquille."
+    },
+    {
+      "page": 138,
+      "where": "Preuve de 8.13.4, les deux occurrences de « Y' ∈ Ob C' »",
+      "scan": "Y'\\in \\operatorname{Ob} C'",
+      "tex": "Y'\\in \\Ob C'",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "Y'\\in \\Ob C'_1",
+      "note": "L'indice 1 manque aux deux occurrences : le cardinal commun et la famille de foncteurs tests portent sur la petite sous-catégorie C'_1 choisie juste avant. Le TeX conserve les deux omissions."
+    },
+    {
+      "page": 138,
+      "where": "9.0, petites catégories I, J",
+      "scan": "catégories d'indices",
+      "tex": "catégories d'indice",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "catégories d'indice",
+        "new": "catégories d'indices"
+      },
+      "note": "L'imprimé porte le pluriel « indices »."
+    },
+    {
+      "page": 140,
+      "where": "Après la définition 9.2, notation de la catégorie des foncteurs accessibles",
+      "scan": "sera noté",
+      "tex": "sera noté",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "sera notée",
+      "note": "Accord avec « La catégorie ». Le TeX conserve la coquille de l'imprimé."
+    }
+  ],
+  "coordinator": "136: 1/2; 137: 1/1; 138: 1/2; 139: 0/0; 140: 0/1 (normal/misprint).\nConvention récurrente : remplacer les \\Pi par \\pi dans les p. 136–138 et 140; exemples : p. 136 « un cardinal $\\Pi$ », p. 137 « \\Filt^{\\Pi}(C) », p. 140 « $\\Pi$-préaccessible » en 9.2."
+}

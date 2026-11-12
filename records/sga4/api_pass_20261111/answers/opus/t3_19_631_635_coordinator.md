@@ -1,0 +1,1 @@
+631: 1/0; 632: 0/0; 633: 2/0; 634: 0/0; 635: 0/0. No marker problems. On p. 635 the scan renders almost every 'c' as 'o' (Speo, oomplet, dono). This is a typewriter or JBIG2 glyph substitution, not text: the TeX correctly reads c.

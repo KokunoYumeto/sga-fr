@@ -1,0 +1,117 @@
+[
+ {
+  "page": 526,
+  "where": "throughout: the price closing each of the 68 entries, e.g. Vol. 178 (left column), Vol. 181 (left column), Vol. 245 (right column)",
+  "scan": "DM 18,– / DM 16.– / DM 16,– (en dash)",
+  "tex": "DM 18,- / DM 16.- / DM 16,- (hyphen)",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Page-wide convention, reported once; no single edit can carry it. At full resolution the price dash is about 16 px long, like the spaced dash in 'Bourbaki – vol.' (TeX --) and the en dash of 382–399 (TeX --), and like the price dash on page 527, which that page's TeX writes DM 40,--; a hyphen (347-363, 17-23, '(Suisse)-') is about 7 px. Replace the final '-' of every 'DM <n>,-' and 'DM <n>.-' on this page by '--' (68 entries; Vols. 181, 186 and 198 keep their full stop: 'DM 16.--'). Page 525's TeX uses the same hyphen form (seen in its TeX, not checked against its scan)."
+ },
+ {
+  "page": 526,
+  "where": "top of the page, above both columns",
+  "scan": "a horizontal rule across the page above Vols. 178 and 212",
+  "tex": "no rule; the page begins with 'Vol. 178:'",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "Vol. 178: Th.",
+   "new": "\\noindent\\rule{\\linewidth}{0.4pt}\n\nVol. 178: Th."
+  },
+  "note": "Page 527 prints the same pair of rules and its TeX gives them as \\noindent\\rule{\\linewidth}{0.4pt}; page 526 omits both (bottom rule: next finding). Drop both findings if rules count as layout."
+ },
+ {
+  "page": 526,
+  "where": "bottom of the page, below both columns",
+  "scan": "a horizontal rule across the page below Vols. 211 and 245",
+  "tex": "no rule; the page ends with Vol. 245",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "Dimension One. V, 99 pages. 1972. DM 16,-\n",
+   "new": "Dimension One. V, 99 pages. 1972. DM 16,-\n\n\\noindent\\rule{\\linewidth}{0.4pt}\n"
+  },
+  "note": "Companion of the top-rule finding. Its old ends in 'DM 16,-' plus a line break, so apply it before the page-wide price-dash replacement (afterwards it no longer matches and must be re-anchored on 'DM 16,--')."
+ },
+ {
+  "page": 526,
+  "where": "left column, Vol. 179",
+  "scan": "Seminaire Bourbaki – vol. 1968/69",
+  "tex": "Seminaire Bourbaki",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Séminaire Bourbaki",
+  "note": "The acute accent is missing (Vols. 180 and 244 print Séminaire). The TeX keeps the printed reading. The separator slips of the publisher's list (here 'IV.' for 'IV,'; 'DM 16.–' in Vols. 181, 186, 198; 'Sigrist, V,'; 'Grothendieck XXII,'; '1971, DM 20'; on page 527 'Goldsmith VI,' and 'Törnig, VI,') are likewise kept by the TeX and are not itemized."
+ },
+ {
+  "page": 526,
+  "where": "left column, Vol. 200",
+  "scan": "Vol. 2 00: U. Neri",
+  "tex": "Vol. 2 00:",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Vol. 200:",
+  "note": "The print sets a space inside the volume number. The TeX keeps it."
+ },
+ {
+  "page": 526,
+  "where": "left column, Vol. 209",
+  "scan": "Proceedings of Liverpool Singularities [wide gap, no dash] Symposium II.",
+  "tex": "Singularities \\quad Symposium II.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Singularities -- Symposium II.",
+  "note": "The dash is missing: the print leaves only a gap, with no trace of a dash at full resolution (cf. Vol. 192 'Singularities – Symposium I.'). The TeX keeps the gap as \\quad."
+ },
+ {
+  "page": 526,
+  "where": "right column, Vol. 218",
+  "scan": "IV, 212.Seiten 1971. DM 20,–",
+  "tex": "212.Seiten 1971.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "212 Seiten. 1971.",
+  "note": "The full stop is set after 212 instead of after Seiten. The TeX keeps the printed reading."
+ },
+ {
+  "page": 526,
+  "where": "right column, Vol. 224",
+  "scan": "Revètements Etales et Groupe Fondamental",
+  "tex": "Revètements",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Revêtements",
+  "note": "A grave accent is printed for the circumflex (SGA 1: Revêtements étales et groupe fondamental). The TeX keeps the printed reading. The unaccented capital of 'Etales' is the list's normal practice (also 'Etale' in Vols. 269, 270) and is not reported."
+ },
+ {
+  "page": 527,
+  "where": "right column, Vol. 283",
+  "scan": "L. Illusie (the full stop is kerned into the foot of the L)",
+  "tex": "L Illusie",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "L Illusie",
+   "new": "L. Illusie"
+  },
+  "note": "At full resolution the foot of this L runs on to about 22 px and ends in a raised dot-sized bump, exactly like the kerned 'L.' of 'R. L. Lipsman' (Vol. 266), which the TeX gives with its full stop; a bare L (Lipsman, Lectures, Lie) is about 16 px wide. The print reads 'L. Illusie', as in Vol. 239 on page 526."
+ },
+ {
+  "page": 527,
+  "where": "left column, Vol. 274",
+  "scan": "Edited by. F. W. Lawvere",
+  "tex": "Edited by. F. W.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Edited by F. W.",
+  "note": "Stray full stop after 'by'. The TeX keeps the printed reading."
+ }
+]

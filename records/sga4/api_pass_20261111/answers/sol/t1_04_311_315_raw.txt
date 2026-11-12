@@ -1,0 +1,63 @@
+{
+  "findings": [
+    {
+      "page": 311,
+      "where": "2.1, reference after “topologie canonique”",
+      "scan": "(III 2.9.1).",
+      "tex": "\\sisi{(III 2.9.1).}{(III 1.9.1).}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "(III 1.9.1).",
+      "note": "The printed reference is erroneous. The TeX records it in the first argument of \\sisi and corrects it in the second."
+    },
+    {
+      "page": 313,
+      "where": "2.2, the unique object of Ouv(X) when X is empty",
+      "scan": "l'unique objet ∅ de Ouv(X)",
+      "tex": "l'unique objet $\\phi$ de $\\Ouv(X)$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "l'unique objet $\\phi$",
+        "new": "l'unique objet $∅$"
+      },
+      "note": "The print has the empty-set sign, as in Top(∅) immediately below, not Greek phi."
+    },
+    {
+      "page": 314,
+      "where": "2.3, assertion about subobjects of the final object of B_G",
+      "scan": "le seul sous-objet de l'objet final e du topos B_G est e ou le faisceau vide ∅",
+      "tex": "le\nseul sous-objet de l'objet final $e$ du topos $B_G$ est $e$ ou le",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "les seuls sous-objets de l'objet final $e$ du topos $B_G$ sont $e$ et le faisceau vide $∅$",
+      "note": "The singular uniqueness claim is faulty: there are two subobjects, e and the empty object. The TeX retains the printed singular wording."
+    },
+    {
+      "page": 314,
+      "where": "2.3, empty subobject of the final object of B_G",
+      "scan": "faisceau vide ∅",
+      "tex": "faisceau vide $\\phi$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "faisceau vide $\\phi$",
+        "new": "faisceau vide $∅$"
+      },
+      "note": "The printed symbol is the empty-set sign, not Greek phi."
+    },
+    {
+      "page": 315,
+      "where": "End of the supplied TeX, after the final sentence of 2.4",
+      "scan": "The page ends with “en un sens convenable qu'il n'y a pas lieu de préciser ici.”",
+      "tex": "\\subsection{« Gros site »  et « gros topos »  d'un espace\ntopologique. Topos classifiant d'un groupe\ntopologique}\\footnote[1]{L'introduction de ces sites et topos est",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The entire heading 2.5 and its footnote belong to p. 316, not merely the last source line allowed by the opening comment. Correct the extraction boundary; no TeX content should be moved or deleted."
+    }
+  ],
+  "coordinator": "311: 0/1; 312: 0/0; 313: 1/0; 314: 1/1; 315: 1/0 (normal/misprint).\nMarker p. 315: end the page after “préciser ici.”; assign the entire heading 2.5 and its footnote to p. 316."
+}

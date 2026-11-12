@@ -1,0 +1,220 @@
+{
+  "findings": [
+    {
+      "page": 286,
+      "where": "7.4.2.1, enumeration of the topology axioms",
+      "scan": "$T$ 1), $T$ 2) et $T$ 3)",
+      "tex": "$T$ 1), $T$ 2), $T$ 3",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "$T$ 2), $T$ 3 de",
+        "new": "$T$ 2) et $T$ 3) de"
+      },
+      "note": "The conjunction « et » is missing before the last axiom."
+    },
+    {
+      "page": 287,
+      "where": "Proof of 7.4.2.2, beginning of i) ⇒ ii)",
+      "scan": "$R \\xrightarrow{u} X$",
+      "tex": "$R \\xrightarrow{} X$",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "R \\xrightarrow{} X",
+        "new": "R \\xrightarrow{u} X"
+      },
+      "note": "The printed arrow bears the label u."
+    },
+    {
+      "page": 287,
+      "where": "Proof of 7.4.2.2, introduction of m and n",
+      "scan": "$m$ et $n$ $n : Y \\rightrightarrows \\alpha_{i!}(R)$",
+      "tex": "$m$ et $n$ $n : Y\n\\rightrightarrows \\alpha_{i!} (R)$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$m$ et $n : Y \\rightrightarrows \\alpha_{i!}(R)$",
+      "note": "The print repeats n across the line break. The TeX keeps this repetition."
+    },
+    {
+      "page": 287,
+      "where": "Proof of 7.4.2.2, last paragraph",
+      "scan": "$f^{\\ast}(u)$ est bicouvrant",
+      "tex": "$f^{\\ast}(u)$ es bicouvrant",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "es bicouvrant",
+        "new": "est bicouvrant"
+      },
+      "note": "The print has « est »."
+    },
+    {
+      "page": 287,
+      "where": "Last paragraph, label of the covering-family arrows",
+      "scan": "$(Y_{\\delta} \\xrightarrow{V_{\\delta}} Y)_{\\delta}$, followed by composites using $v_{\\delta}$",
+      "tex": "\\xrightarrow{V_{\\delta}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\xrightarrow{v_{\\delta}}",
+      "note": "The printed label has capital V, whereas the following equalities use lowercase v for these arrows. The TeX keeps the printed inconsistency."
+    },
+    {
+      "page": 288,
+      "where": "Proof of ii) ⇒ i), introduction of the cartesian square",
+      "scan": "Par suite on a un diagramme cartésien",
+      "tex": "Par suite on a diagramme cartésien",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "on a diagramme cartésien",
+        "new": "on a un diagramme cartésien"
+      },
+      "note": "The article « un » is missing."
+    },
+    {
+      "page": 288,
+      "where": "Same sentence, category containing the cartesian square",
+      "scan": "diagramme cartésien des $C^{\\widehat{\\phantom{,}}}_i$",
+      "tex": "diagramme cartésien des\n$C^{\\widehat{\\phantom{,}}}_i$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "diagramme cartésien de $C^{\\widehat{\\phantom{,}}}_i$",
+      "note": "The printed « des » has an extraneous s: the square belongs to the single category indicated. The TeX keeps « des »."
+    },
+    {
+      "page": 288,
+      "where": "Remarque 7.4.3, item 3",
+      "scan": "une catégorie équivalent à une catégorie",
+      "tex": "une catégorie\n  équivalent à une catégorie",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "une catégorie équivalente à une catégorie",
+      "note": "The adjective must agree with « catégorie ». The TeX keeps the printed « équivalent »."
+    },
+    {
+      "page": 288,
+      "where": "Remarque 7.4.3, item 4, pair defining α_i",
+      "scan": "$(\\alpha_i^{\\ast}, \\alpha_{i\\ast})$",
+      "tex": "$(\\alpha^{\\ast}_i, \\alpha^{i\\ast})$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\alpha^{i\\ast}",
+        "new": "\\alpha_{i\\ast}"
+      },
+      "note": "In the second component, i and the star are printed as subscripts, not superscripts."
+    },
+    {
+      "page": 289,
+      "where": "Proposition 7.4.4, introductory sentence",
+      "scan": "un $𝒰$-site fibré",
+      "tex": "un $𝒰$-site fibre",
+      "kind": "accent",
+      "confidence": "high",
+      "fix": {
+        "old": "$𝒰$-site fibre",
+        "new": "$𝒰$-site fibré"
+      },
+      "note": "The print has the acute accent in « fibré »."
+    },
+    {
+      "page": 289,
+      "where": "Proof of 7.4.4, sentence beginning « Comme les cribles couvrants »",
+      "scan": "Comme les cribles couvrants $R' \\hookrightarrow X$ qu'on obtient ainsi sont cofinaux dans l'ensemble des cribles couvrants $X$",
+      "tex": "Comme les cribles couvrants $X$",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "Comme les cribles couvrants $X$",
+        "new": "Comme les cribles couvrants $R' \\hookrightarrow X$ qu'on obtient ainsi sont cofinaux dans l'ensemble des cribles couvrants $X$"
+      },
+      "note": "The description of the sieves R′ and the entire cofinality clause have been dropped."
+    },
+    {
+      "page": 289,
+      "where": "Same sentence, final phrase before the reference (7.4.2.1)",
+      "scan": "cribles couvrants $X$",
+      "tex": "cribles couvrants $X$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "cribles couvrants de $X$",
+      "note": "The print lacks « de » before X. The TeX retains this malformed ending, independently of the preceding omitted clause."
+    },
+    {
+      "page": 289,
+      "where": "Boundary between pages 289 and 290, display (7.4.5.1)",
+      "scan": "Page 289 ends with « un diagramme de morphismes de 𝒰-topos »; page 290 opens with diagram (7.4.5.1).",
+      "tex": "The p. 289 cut also includes display (7.4.5.1), source lines 4804–4809.",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The allowance in the p. 289 comment mentions only line 4810, but the preceding display belongs wholly to p. 290 as well. Page 289 ends at source line 4803; page 290 begins at line 4804. Do not move source text."
+    },
+    {
+      "page": 290,
+      "where": "Diagram (7.4.5.1), lower-left vertex",
+      "scan": "$C_j$",
+      "tex": "C_j  \\ar[ru]_{\\alpha_j}&",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$C^{\\sim}_j$",
+      "note": "The print omits the tilde, and the TeX keeps that omission. The context and the morphism f require the associated sheaf topos."
+    },
+    {
+      "page": 290,
+      "where": "After (7.4.5.3), introduction of the adjoint description",
+      "scan": "où encore, en utilisant l'adjonction",
+      "tex": "où encore, en utilisant l'adjonction",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "ou encore, en utilisant l'adjonction",
+      "note": "This introduces an alternative construction, so « ou » must be unaccented. The TeX keeps the printed grave accent."
+    },
+    {
+      "page": 290,
+      "where": "Paragraph after (7.4.5.4), second defining equality",
+      "scan": "$f_{\\ast} \\alpha^{\\ast}_i F(Y) =$",
+      "tex": "$f_{\\ast} \\alpha^{\\ast}_i F(Y) -$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "f_{\\ast} \\alpha^{\\ast}_i F(Y) -",
+        "new": "f_{\\ast} \\alpha^{\\ast}_i F(Y) ="
+      },
+      "note": "The printed equality sign has been transcribed as a minus sign."
+    },
+    {
+      "page": 290,
+      "where": "Same equality, right-hand side",
+      "scan": "$F(\\alpha_{i!} (f^{\\ast}(Y)))$",
+      "tex": "$F(\\alpha_{i!} f^{\\ast} (Y)))$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "F(\\alpha_{i!} f^{\\ast} (Y)))",
+        "new": "F(\\alpha_{i!} (f^{\\ast} (Y)))"
+      },
+      "note": "An opening parenthesis after α_i! is missing, leaving the TeX parentheses unbalanced."
+    },
+    {
+      "page": 290,
+      "where": "Formula (7.4.5.5)",
+      "scan": "$m_Y : \\alpha_{i!} f^{\\ast} \\to \\alpha_{j!}$",
+      "tex": "m_Y : \\alpha_{i!} f^{\\ast} \\to \\alpha_{j!}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$m_Y : \\alpha_{i!} f^{\\ast}(Y) \\to \\alpha_{j!}(Y)$",
+      "note": "The print omits evaluation at Y at both ends of this cartesian morphism. The TeX keeps the omission."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint; marker included in normal): 286 1/0; 287 2/2; 288 2/2; 289 3/1; 290 2/3.\nMarker: p. 289 ends at source line 4803; p. 290 begins at line 4804 with (7.4.5.1). Adjust the cuts and their annotations, not the source text."
+}

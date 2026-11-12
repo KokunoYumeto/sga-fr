@@ -1,0 +1,129 @@
+{
+  "findings": [
+    {
+      "page": 456,
+      "where": "Proposition 9.3.4, définition de la sous-catégorie",
+      "scan": "définie par les sous-objets $X$ de $E$",
+      "tex": "définie par les sous-objets\n$X$ de $E$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "définie par les objets $X$ de $E$",
+      "note": "Coquille conservée par le TeX : il s'agit des objets de la catégorie E, non de sous-objets de E."
+    },
+    {
+      "page": 456,
+      "where": "Proposition 9.3.4, morphisme d'adjonction",
+      "scan": "$X\\rightarrow i^{\\ast}i_{\\ast}X$",
+      "tex": "$X\\rightarrow i^{\\ast}i_{\\ast}X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$X\\rightarrow i_{\\ast}i^{\\ast}X$",
+      "note": "Les deux adjoints sont intervertis dans l'unité d'adjonction. Le TeX conserve la coquille imprimée."
+    },
+    {
+      "page": 456,
+      "where": "9.3.5, définition d'un sous-topos fermé",
+      "scan": "Une sous-catégorie pleine $\\mathcal{F}$ de $E$ est appelé un sous-topos fermé",
+      "tex": "sous-catégorie pleine $\\mathcal{F}$ de $E$ est appelé un",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "est appelée un sous-topos fermé",
+      "note": "Coquille d'accord avec « Une sous-catégorie », conservée par le TeX."
+    },
+    {
+      "page": 456,
+      "where": "9.3.5, notation de l'objet initial",
+      "scan": "$i_{\\ast}(\\varnothing_{\\mathcal{F}})$",
+      "tex": "$i_{\\ast}(\\phi_{\\mathcal{F}})$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "$i_{\\ast}(\\phi_{\\mathcal{F}})$",
+        "new": "$i_{\\ast}(\\varnothing_{\\mathcal{F}})$"
+      },
+      "note": "Convention récurrente : le rond barré imprimé pour l'objet initial est transcrit par \\phi. Trois exemples : ici, dans la proposition 9.4.2 p.458 et à la fin de sa démonstration p.459. La même substitution concerne les deux autres occurrences de \\phi dans ce paragraphe de p.456."
+    },
+    {
+      "page": 457,
+      "where": "Définition du support, première parenthèse « resp. »",
+      "scan": "(resp. de $S$)",
+      "tex": "(\\resp de $s$)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$s$",
+      "note": "La majuscule S est une coquille : l'élément vient d'être noté s, également repris en minuscule dans la parenthèse suivante. Le TeX corrige silencieusement."
+    },
+    {
+      "page": 457,
+      "where": "Formule (9.3.6.3)",
+      "scan": "$\\rho=i_{\\ast}j^{\\ast}:\\mathcal{U}\\longrightarrow\\mathcal{F}$",
+      "tex": "\\rho=i_{\\ast}j^{\\ast}:\\mathcal{U}\\longrightarrow\n\\mathcal{F}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\rho=i^{\\ast}j_{\\ast}:\\mathcal{U}\\longrightarrow\\mathcal{F}",
+      "note": "Les positions des étoiles sont interverties. La formule correcte figure dans 9.4.1 d), p.458. Le TeX conserve ici la coquille imprimée."
+    },
+    {
+      "page": 457,
+      "where": "9.3.6, référence après « ou ce qui revient au même »",
+      "scan": "(I.8)",
+      "tex": "\\sisi{\\hyperref[IV.rem1.8]{1.8}\\quad}{\\hyperrefext[I][I.sec8]{8}}",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hyperref[IV.rem1.8]{1.8}\\quad",
+        "new": "\\hyperrefext[I][I.sec8]{8}\\quad"
+      },
+      "note": "Le premier argument de \\sisi donne 1.8, tandis que le print porte I.8. Seul ce premier argument est à rectifier."
+    },
+    {
+      "page": 458,
+      "where": "Démonstration de 9.4.1, première phrase",
+      "scan": "a) résulte le 9.3.3 c).",
+      "tex": "a) résulte le 9.3.3 c).",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "a) résulte de 9.3.3 c).",
+      "note": "Coquille « le » pour « de », conservée par le TeX."
+    },
+    {
+      "page": 458,
+      "where": "Démonstration de 9.4.1, exactitude du foncteur de recollement",
+      "scan": "Les foncteurs $i_{\\ast}$ et $j_{\\ast}$ sont exacts à gauche",
+      "tex": "$i_{\\ast}$ et $j_{\\ast}$ sont exacts à gauche",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$i^{\\ast}$ et $j_{\\ast}$ sont exacts à gauche",
+      "note": "Pour justifier l'exactitude de la composée \\rho=i^{\\ast}j_{\\ast}, le premier foncteur doit être i^{\\ast}. Le TeX conserve l'étoile en indice du print."
+    },
+    {
+      "page": 458,
+      "where": "Fin de page, diagramme après « considérons le diagramme de topos »",
+      "scan": "Carré $E'_{/U'}\\xrightarrow{j'}E'$, $E_{/U}\\xrightarrow{j}E$, avec flèches verticales $g_U$ et $g$.",
+      "tex": "Or, posons $U'=g^{\\ast}(U)$, et considérons le diagramme de topos",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le diagramme imprimé au bas de p.458 se trouve dans les lignes 6665–6669 placées au début du TeX de p.459, sans que son commentaire initial autorise ce débordement. La p.458 se termine après ce diagramme ; la p.459 commence par « il est clair » à la ligne 6670. Réattribuer ces lignes sans modifier le texte."
+    },
+    {
+      "page": 459,
+      "where": "Corollaire 9.4.3, domaine de la composée $g\\circ i'$",
+      "scan": "$g\\circ i':\\mathcal{F}\\longrightarrow E$",
+      "tex": "$g\\circ i':\\mathcal{F}'\\rightarrow E$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$g\\circ i':\\mathcal{F}'\\rightarrow E$",
+      "note": "Le prime manque au domaine imprimé : i' a pour domaine \\mathcal{F}'. Le TeX le rétablit silencieusement."
+    }
+  ],
+  "coordinator": "456: 1/3; 457: 1/2; 458: 1/2; 459: 0/1; 460: 0/0 (normal/misprint, marker compté normal).\nMarqueur : les lignes 6665–6669 appartiennent à p.458 ; p.459 commence ligne 6670, « il est clair ».\nConvention : pour l'objet initial, remplacer \\phi par \\varnothing ; exemples p.456 $i_{\\ast}(\\phi_{\\mathcal{F}})$, p.458 $\\phi_{E'}$, p.459 $\\phi_{E'}$."
+}

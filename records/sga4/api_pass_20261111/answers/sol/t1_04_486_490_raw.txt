@@ -1,0 +1,121 @@
+{
+  "findings": [
+    {
+      "page": 486,
+      "where": "c), phrase finale sur la correspondance biunivoque",
+      "scan": "relations d'équivalence globalement cohérentes $R$ sur $X$",
+      "tex": "cohérentes \\sisi{$R$}{$r$} sur $X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "cohérentes $r$ sur $X$",
+      "note": "Coquille de variable : la cohérence globale vient d'être définie pour la relation locale r. Le TeX enregistre le R imprimé et corrige la lettre en r avec \\sisi."
+    },
+    {
+      "page": 486,
+      "where": "d), condition sur les fibres connexes",
+      "scan": "les fibres de la relations d'équivalence",
+      "tex": "les fibres de la relations d'équivalence",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "les fibres de la relation d'équivalence",
+      "note": "Le s superflu de « relations » est une coquille de l'imprimé conservée par le TeX."
+    },
+    {
+      "page": 487,
+      "where": "e), homomorphisme de préfaisceaux",
+      "scan": "$f_{\\ast}(\\Quot_{X'})\\longrightarrow \\Quot_X$",
+      "tex": "$f_{\\ast}(\\Quot_{X'})\\leftarrow \\Quot_{X}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$f_{\\ast}(\\Quot_{X'})\\leftarrow \\Quot_X$",
+      "note": "La flèche imprimée est inversée : l'image inverse des relations fournit la flèche depuis Quot_X. Le TeX corrige silencieusement cette coquille."
+    },
+    {
+      "page": 487,
+      "where": "e), homomorphisme de faisceaux",
+      "scan": "$f_{\\ast}(Q_{X'})\\longrightarrow Q_X$",
+      "tex": "$f_{\\ast}(Q_{X'})\\leftarrow Q_X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$f_{\\ast}(Q_{X'})\\leftarrow Q_X$",
+      "note": "La seconde flèche est également inversée dans l'imprimé. Le sens corrigé par le TeX est celui qui donne, par adjonction, le morphisme suivant."
+    },
+    {
+      "page": 487,
+      "where": "f), phrase sur les composantes connexes",
+      "scan": "les composantes connexes $X^r$ sont ouvertes",
+      "tex": "connexes $X^r$ sont ouvertes",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "les composantes connexes de $X^r$ sont ouvertes",
+      "note": "L'imprimé omet « de » devant X^r ; le TeX conserve cette omission."
+    },
+    {
+      "page": 488,
+      "where": "h), propriétés du foncteur d'oubli",
+      "scan": "un foncteur conservatif et fidèle",
+      "tex": "un foncteur conservatif en fidèle",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "conservatif en fidèle",
+        "new": "conservatif et fidèle"
+      },
+      "note": "L'imprimé porte « et », non « en »."
+    },
+    {
+      "page": 489,
+      "where": "l), renvoi après « étendue rigide »",
+      "scan": "(9.8.2 b))",
+      "tex": "(\\hyperref[IV.exer9.8.2]{9.8.2} h))",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hyperref[IV.exer9.8.2]{9.8.2} h)",
+        "new": "\\hyperref[IV.exer9.8.2]{9.8.2} b)"
+      },
+      "note": "Le sous-paragraphe imprimé est b), non h). La cible du renvoi n'est pas fournie pour vérifier son bien-fondé."
+    },
+    {
+      "page": 489,
+      "where": "l), renvoi après « topologie canonique »",
+      "scan": "topologie canonique (    )",
+      "tex": "topologie canonique (\\hyperref[IV.exer7.8]{7.8})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "topologie canonique (\\hyperref[IV.exer7.8]{7.8})",
+      "note": "Le renvoi est laissé en blanc dans l'imprimé. Le TeX complète cette omission par 7.8."
+    },
+    {
+      "page": 490,
+      "where": "m), source du morphisme induit",
+      "scan": "$\\Top(X)_{/p^{\\ast}(U)}$",
+      "tex": "$\\Top(X)_{/p}\\ast_{(U)}$",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Top(X)_{/p}\\ast_{(U)}",
+        "new": "\\Top(X)_{/p^{\\ast}(U)}"
+      },
+      "note": "Dans l'imprimé, l'étoile est l'exposant de p et l'argument (U) appartient au même indice de localisation."
+    },
+    {
+      "page": 490,
+      "where": "m), cible du morphisme induit",
+      "scan": "$\\Top(X/r)$",
+      "tex": "$\\Top(X/r)/U$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$\\Top(X/r)_{/U}$",
+      "note": "L'imprimé omet la localisation sur U à l'arrivée du morphisme induit. Le TeX rétablit silencieusement /U, nécessaire pour le morphisme d'espaces X_U vers U décrit ensuite."
+    }
+  ],
+  "coordinator": "486: 0/2; 487: 0/3; 488: 1/0; 489: 1/1; 490: 1/1 (normal/misprint)."
+}

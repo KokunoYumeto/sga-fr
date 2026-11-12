@@ -1,0 +1,51 @@
+{
+  "findings": [
+    {
+      "page": 337,
+      "where": "4.2.1, construction explicite des ouverts de l'espace sobre associé",
+      "scan": "où $U$ est un ouvert de $X$",
+      "tex": "où $U$ est en ouvert de $X$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "$U$ est en ouvert",
+        "new": "$U$ est un ouvert"
+      },
+      "note": "L'imprimé porte bien « un ouvert », et non « en ouvert »."
+    },
+    {
+      "page": 339,
+      "where": "Première phrase, définition de la catégorie associée à un ensemble ordonné",
+      "scan": "la catégorie cat(I) associé à",
+      "tex": "la catégorie $\\cat(I)$ associé à",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "la catégorie $\\cat(I)$ associée à",
+      "note": "Coquille d'accord de l'imprimé, conservée par le TeX : « associée » doit s'accorder avec « catégorie »."
+    },
+    {
+      "page": 339,
+      "where": "4.3, formule donnant l'unique morphisme vers le topos final",
+      "scan": "$f:E\\longrightarrow P$, sans numéro",
+      "tex": "$$\nf:E\\rightarrow P\n$$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\begin{equation*}\nf:E\\rightarrow P\\tag{4.3.1}\n\\end{equation*}",
+      "note": "Le numéro (4.3.1) manque dans l'imprimé ; le TeX conserve cette omission. Le renvoi explicite de la p. 340 à un « morphisme (4.3.1) » permet d'identifier le numéro omis."
+    },
+    {
+      "page": 340,
+      "where": "Justification de la commutation du foncteur $I\\mapsto T\\times I$ aux limites inductives",
+      "scan": "adjoint à droite",
+      "tex": "adjoint à\n\\sisi{droite}{gauche}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "adjoint à gauche",
+      "note": "L'imprimé porte « droite », mais ce foncteur est adjoint à gauche de $X\\mapsto\\Hom(T,X)$. Le TeX conserve la lecture imprimée dans le premier argument de \\sisi et la corrige dans le second."
+    }
+  ],
+  "coordinator": "336: 0/0 ; 337: 1/0 ; 338: 0/0 ; 339: 0/2 ; 340: 0/1 (normal/misprint)."
+}

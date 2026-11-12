@@ -1,0 +1,102 @@
+[
+ {
+  "page": 321,
+  "where": "Opening paragraph, description of G",
+  "scan": "G son groupe fondamentale en x",
+  "tex": "$G$ son groupe fondamentale en $x$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$G$ son groupe fondamental en $x$",
+  "note": "The adjective should agree with masculine « groupe ». The TeX keeps the printed misprint."
+ },
+ {
+  "page": 321,
+  "where": "Second paragraph, sentence beginning « Enfin »",
+  "scan": "Enfin, on rencontre",
+  "tex": "Enfin, ou\nrencontre",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Enfin, ou",
+   "new": "Enfin, on"
+  },
+  "note": "The print reads « on », not « ou »."
+ },
+ {
+  "page": 321,
+  "where": "Exercise 2.7.5, footnote",
+  "scan": "cf. 8.7 1).",
+  "tex": "\\sisi{\\hyperref[IV.exer8.7]{8.7} 1).}{\\hyperref[IV.exer8.7]{8.7} l).}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\cf \\hyperref[IV.exer8.7]{8.7} l).",
+  "note": "The reference uses 1) for the intended lettered subdivision l). The TeX records the printed reading in the first argument of \\sisi and corrects it in the second."
+ },
+ {
+  "page": 323,
+  "where": "Footnote to 3.1.1, after « cf. »",
+  "scan": "au lieu de u*, cf. [blank].",
+  "tex": "$u^{-1}$ au lieu de $u^{\\ast}$, \\cf \\hyperref[IV.subsubsec13.2.3]{13.2.3}.",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\cf \\hyperref[IV.subsubsec13.2.3]{13.2.3}.",
+  "note": "The print leaves the reference unfilled between « cf. » and the final full stop. The TeX silently supplies 13.2.3."
+ },
+ {
+  "page": 324,
+  "where": "Continuation of 3.1.1, second case",
+  "scan": "le foncteur donné u_* admet un adjoint à droite qui est exact à gauche",
+  "tex": "le foncteur donné $u_{\\ast}$ admet un adjoint à\ngauche qui est exact à gauche",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "le foncteur donné $u_{\\ast}$ admet un adjoint à gauche qui est exact à gauche",
+  "note": "The direct-image functor must admit a left adjoint here. The TeX silently corrects the printed « à droite » to « à gauche »."
+ },
+ {
+  "page": 324,
+  "where": "3.1.2, sentence about the image of a structured object",
+  "scan": "son image par u* est muni des mêmes structures",
+  "tex": "$u^{\\ast}$ est muni des mêmes structures",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "son image par $u^{\\ast}$ est munie des mêmes structures",
+  "note": "« Muni » should agree with feminine « image ». The TeX keeps the printed misprint."
+ },
+ {
+  "page": 324,
+  "where": "Footnote to 3.1.2, after « à droite »",
+  "scan": "à gauche (resp. à droite si et seulement si",
+  "tex": "à gauche (\\resp à droite), si et\nseulement si",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "à gauche (\\resp à droite), si et seulement si",
+  "note": "The print omits the closing parenthesis after « à droite ». The TeX silently restores it."
+ },
+ {
+  "page": 324,
+  "where": "End of body text, boundary with p. 325",
+  "scan": "à cet énoncé et de le",
+  "tex": "à cet énoncé et de",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Printed p. 324 ends with « le »; p. 325 begins with « justifier ». The missing « le » is the first word of the supplied p. 325 TeX, source line 1027. This leading overlap is not declared in that fragment's comment; no text should be rewritten."
+ },
+ {
+  "page": 325,
+  "where": "Opening paragraph, list of algebraic structures",
+  "scan": "de comodule sur un anneau",
+  "tex": "de comodule sur un coanneau",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "de comodule sur un coanneau",
+  "note": "The print says « anneau » where « coanneau » is intended. The TeX silently corrects it."
+ }
+]

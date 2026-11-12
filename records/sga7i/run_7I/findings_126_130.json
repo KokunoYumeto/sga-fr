@@ -1,0 +1,374 @@
+[
+ {
+  "page": 126,
+  "where": "proof of 6.2, 'It follows that ... -> A/I_A(A|R) is an isomorphism'",
+  "scan": "Â → A/I_A(A|R) (caret over the first A, checked in a crop)",
+  "tex": "$\\hat{A} \\rightarrow A/I_A(A|R)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$\\Lambda \\rightarrow A/I_A(A|R)$",
+  "note": "The TeX keeps the printed reading. The argument runs Λ → Â/I_Â(Â|R) iso (previous line), hence Λ → A/I_A(A|R) iso, hence Λ → R/I_R(A|R) iso, which is 6.2(1) (J_X(X|R) → J_R(X|R) → Spec(Λ) isomorphisms); Â does not map to A/I_A(A|R)."
+ },
+ {
+  "page": 126,
+  "where": "Corollary 6.3 (1), 'as R-adic formal schemes if and only if'",
+  "scan": "'as' underlined, then ' R-' not underlined, then 'adic formal schemes if / and only if' underlined",
+  "tex": "\\underline{as R-adic formal schemes if and only if}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{as R-adic formal schemes if and only if}",
+   "new": "\\underline{as} $R$-\\underline{adic formal schemes if and only if}"
+  },
+  "note": "The TeX underlines the R and the hyphen with the words; the print breaks the underline there (the file writes $R$-adic in the proof below)."
+ },
+ {
+  "page": 126,
+  "where": "proof of 6.3 (1), first display 'X_(x^) ≃ Spf(R[[X_1,...,X_n]]/(R - a))'",
+  "scan": "(R - a)",
+  "tex": "/(R - a))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "/(F - a))",
+  "note": "The TeX keeps the printed R. The second display has (F - b), and p. 127 uses R[[X_1,...,X_n]]/(F - a)."
+ },
+ {
+  "page": 127,
+  "where": "first line, 'Then a = ab for some unit u in R'",
+  "scan": "a = ab",
+  "tex": "$a = ab$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$a = ub$",
+  "note": "The TeX keeps the printed b. u is the unit being introduced; the next line writes u = v^2 and a = v^2 b."
+ },
+ {
+  "page": 127,
+  "where": "proof of 6.3 (1), 'R[[X_1,...,X_n]]/(F - a) --~-- R[[X_1,...,X_n]]/(F - b)'",
+  "scan": "a plain rule with ~ above it and no arrowhead; the rule ends cleanly (checked in a crop)",
+  "tex": "(F - a) \\;\\overset{\\sim}{\\relbar\\relbar\\relbar}\\; R[[",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(F - a) \\;\\xrightarrow{\\ \\sim\\ }\\; R[[",
+  "note": "The TeX keeps the printed headless rule (handled as on p. 41). 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 127,
+  "where": "Theorem 6.4, first line, 'be a k-scheme of finite type with isolated non-smooth'",
+  "scan": "'be a' underlined, then ' k-' not underlined, then 'scheme of finite type with isolated non-smooth / points only, and let' underlined",
+  "tex": "\\underline{be a k-scheme of finite type with isolated non-smooth points only, and let}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{be a k-scheme of finite type with isolated non-smooth points only, and let}",
+   "new": "\\underline{be a} $k$-\\underline{scheme of finite type with isolated non-smooth points only, and let}"
+  },
+  "note": "The print breaks the underline at 'k-' (form as in Theorem 4.11, p. 107: \\underline{be a} ... $k$-\\underline{scheme ...}). In Corollary 6.3 (p. 126) the underline runs through 'k-scheme' and the TeX is right there."
+ },
+ {
+  "page": 127,
+  "where": "Theorem 6.4 (2), 'J_X(z_i)(X(z_i)|R) --~-- J_R(X(z_i)|R) is an isomorphism'",
+  "scan": "a plain rule with ~ above it and no arrowhead; the rule ends cleanly (checked in a crop)",
+  "tex": "|R) \\;\\overset{\\sim}{\\relbar\\relbar\\relbar}\\; J_R(",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "|R) \\;\\xrightarrow{\\ \\sim\\ }\\; J_R(",
+  "note": "The TeX keeps the printed headless rule (handled as on p. 41). 'corrected' replaces the 'tex' substring."
+ },
+ {
+  "page": 127,
+  "where": "Theorem 6.4 (3), '(as formal power-series ring over Λ ).'",
+  "scan": "the underline starts under 'as'; the opening parenthesis is not underlined",
+  "tex": "\\underline{(as formal power-series ring over}",
+  "kind": "underline",
+  "confidence": "low",
+  "fix": {
+   "old": "\\underline{(as formal power-series ring over}",
+   "new": "(\\underline{as formal power-series ring over}"
+  },
+  "note": "Typographic only (one character). In '(disjoint union), and' of (2) the underline does start under the parenthesis, so that one is right."
+ },
+ {
+  "page": 127,
+  "where": "Theorem 6.4 (4), 'is smooth, i.e. J_X(X|Λ) = φ .'",
+  "scan": "= φ (the Greek phi of φ(t), not the slashed-zero empty set)",
+  "tex": "J_{\\mathfrak{X}}(\\mathfrak{X}|\\Lambda) = \\varphi",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "J_{\\mathfrak{X}}(\\mathfrak{X}|\\Lambda) = \\emptyset",
+  "note": "The TeX keeps the printed φ. J_X(X|Λ) is the non-smooth locus, so the empty set is meant; the typewriter has a slashed-zero empty set, used on p. 107 (U_0^j ∩ X_0^Sing = ∅, TeX \\emptyset)."
+ },
+ {
+  "page": 128,
+  "where": "proof of 6.4 (1)-(3), 'Since (R, X_(z^_i)) is a deformation of Spec(Ô_{X_0,z_i})'",
+  "scan": "X_(ẑ_i): typed z with an overstruck caret",
+  "tex": "(R, \\mathfrak{X}_{(\\mathfrak{z}_i)})",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "(R, \\mathfrak{X}_{(\\mathfrak{z}_i)})",
+   "new": "(R, \\mathfrak{X}_{(\\widehat{z}_i)})"
+  },
+  "note": "The subscript is a typed z with a caret struck over it, built like the x^ of 6.3 on pp. 126-127 (TeX \\widehat{x} there), not a Fraktur z: X_(z^_i) is the completion at z_i, compared with the localisation X_(z_i) in the displays. Same in all six places on this page and in two on p. 129 (TeX \\mathcal{Z}_i there)."
+ },
+ {
+  "page": 128,
+  "where": "cartesian diagram, top-left node",
+  "scan": "X_(ẑ_i): typed z with an overstruck caret",
+  "tex": "\\mathfrak{X}_{(\\mathfrak{z}_i)} \\arrow[r] \\arrow[d]",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathfrak{X}_{(\\mathfrak{z}_i)} \\arrow[r]",
+   "new": "\\mathfrak{X}_{(\\widehat{z}_i)} \\arrow[r]"
+  },
+  "note": "The subscript is a typed z with a caret struck over it, built like the x^ of 6.3 on pp. 126-127 (TeX \\widehat{x} there), not a Fraktur z: X_(z^_i) is the completion at z_i, compared with the localisation X_(z_i) in the displays. Same in all six places on this page and in two on p. 129 (TeX \\mathcal{Z}_i there). The STRUCTURE comment under the diagram (three lines) still calls it a 'hand-drawn script z' ($\\mathfrak{X}_{(\\mathfrak{z}_i)}$); update it with the node if wanted."
+ },
+ {
+  "page": 128,
+  "where": "first display after the diagram, 'J_X(z_i)(X(z_i)|R) = J_X(z^_i)(X(z^_i)|R) ≃ ...'",
+  "scan": "J_{X_(ẑ_i)}(X_(ẑ_i)|R): typed z with an overstruck caret, twice",
+  "tex": "J_{\\mathfrak{X}_{(\\mathfrak{z}_i)}}(\\mathfrak{X}_{(\\mathfrak{z}_i)}|R)",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "J_{\\mathfrak{X}_{(\\mathfrak{z}_i)}}(\\mathfrak{X}_{(\\mathfrak{z}_i)}|R)",
+   "new": "J_{\\mathfrak{X}_{(\\widehat{z}_i)}}(\\mathfrak{X}_{(\\widehat{z}_i)}|R)"
+  },
+  "note": "The subscript is a typed z with a caret struck over it, built like the x^ of 6.3 on pp. 126-127 (TeX \\widehat{x} there), not a Fraktur z: X_(z^_i) is the completion at z_i, compared with the localisation X_(z_i) in the displays. Same in all six places on this page and in two on p. 129 (TeX \\mathcal{Z}_i there)."
+ },
+ {
+  "page": 128,
+  "where": "second display, 'J_R(X(z_i)|R) = J_R(X(z^_i)|R) ≃ ...'",
+  "scan": "J_R(X_(ẑ_i)|R): typed z with an overstruck caret",
+  "tex": "J_R(\\mathfrak{X}_{(\\mathfrak{z}_i)}|R)",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "J_R(\\mathfrak{X}_{(\\mathfrak{z}_i)}|R)",
+   "new": "J_R(\\mathfrak{X}_{(\\widehat{z}_i)}|R)"
+  },
+  "note": "The subscript is a typed z with a caret struck over it, built like the x^ of 6.3 on pp. 126-127 (TeX \\widehat{x} there), not a Fraktur z: X_(z^_i) is the completion at z_i, compared with the localisation X_(z_i) in the displays. Same in all six places on this page and in two on p. 129 (TeX \\mathcal{Z}_i there)."
+ },
+ {
+  "page": 128,
+  "where": "second display, lower subscript of the fibre product",
+  "scan": "Spf(R_i) under the ×: the letter is an f whose hook did not print: its stem rises above the cross-bar and the ball terminal stands detached at the upper right (contrast-enhanced crop); a typed r has neither",
+  "tex": "\\underset{\\mathrm{Spr}(R_i)}{\\times}",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\underset{\\mathrm{Spr}(R_i)}{\\times}",
+   "new": "\\underset{\\mathrm{Spf}(R_i)}{\\times}"
+  },
+  "note": "Broken type, not a typed r. If the coordinator reads a typed r instead, this becomes a misprint the TeX keeps (fix null, corrected \\mathrm{Spf}(R_i))."
+ },
+ {
+  "page": 128,
+  "where": "proof of 6.4, 'local Λ-algebra maps φ_i = R_i → R with a cartesian diagram'",
+  "scan": "φ_i = R_i → R (an equals sign, checked in a crop)",
+  "tex": "$\\varphi_i = R_i \\to R$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$\\varphi_i : R_i \\to R$",
+  "note": "The TeX keeps the printed '='; a map φ_i : R_i → R is meant (cf. φ : R_0 = Λ[[t]] → R on p. 127)."
+ },
+ {
+  "page": 128,
+  "where": "third display, 'I_R(X(z_i)|R) = I_R(X(z^_i)|R) = (t_i)'",
+  "scan": "I_R(X_(ẑ_i)|R): typed z with an overstruck caret",
+  "tex": "I_R(\\mathfrak{X}_{(\\mathfrak{z}_i)}|R)",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "I_R(\\mathfrak{X}_{(\\mathfrak{z}_i)}|R)",
+   "new": "I_R(\\mathfrak{X}_{(\\widehat{z}_i)}|R)"
+  },
+  "note": "The subscript is a typed z with a caret struck over it, built like the x^ of 6.3 on pp. 126-127 (TeX \\widehat{x} there), not a Fraktur z: X_(z^_i) is the completion at z_i, compared with the localisation X_(z_i) in the displays. Same in all six places on this page and in two on p. 129 (TeX \\mathcal{Z}_i there)."
+ },
+ {
+  "page": 128,
+  "where": "'and therefore I_R(X|R) = ∏_{1≤i≤m} I_R(X(z_i)|R) = (∏_{i=1}^n t_i)'",
+  "scan": "upper limit n on the second product",
+  "tex": "\\prod_{i=1}^{n} t_i",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\prod_{i=1}^{m} t_i",
+  "note": "The TeX keeps the printed n; i runs over the m non-smooth points (the first product has 1 ≤ i ≤ m)."
+ },
+ {
+  "page": 128,
+  "where": "last paragraph, 'M_X0 → M_X0,(z^_1) × ... × M_X0,(z^_m)'",
+  "scan": "(ẑ_1), (ẑ_m): typed z with an overstruck caret",
+  "tex": "\\underline{M}_{X_0,(\\mathfrak{z}_1)} \\times \\ldots \\times \\underline{M}_{X_0,(\\mathfrak{z}_m)}",
+  "kind": "accent",
+  "confidence": "high",
+  "fix": {
+   "old": "\\underline{M}_{X_0,(\\mathfrak{z}_1)} \\times \\ldots \\times \\underline{M}_{X_0,(\\mathfrak{z}_m)}",
+   "new": "\\underline{M}_{X_0,(\\widehat{z}_1)} \\times \\ldots \\times \\underline{M}_{X_0,(\\widehat{z}_m)}"
+  },
+  "note": "The subscript is a typed z with a caret struck over it, built like the x^ of 6.3 on pp. 126-127 (TeX \\widehat{x} there), not a Fraktur z: X_(z^_i) is the completion at z_i, compared with the localisation X_(z_i) in the displays. Same in all six places on this page and in two on p. 129 (TeX \\mathcal{Z}_i there)."
+ },
+ {
+  "page": 128,
+  "where": "last paragraph, '... is smooth by and therefore R_1 ⊗^ ... → R is formally smooth by 4.13'",
+  "scan": "'is smooth by  and therefore': no reference after 'by' (ordinary word space, no gap for a number)",
+  "tex": "is smooth by and therefore",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "is smooth by 4.13(a) and therefore",
+  "note": "The TeX keeps the printed gap. The smoothness of M_X0 → Π M_Spec(Ô_X0,z_i) under H^2(X_0, D^0) = 0 is Corollary 4.13(a) (p. 108); the reference is a suggestion only, review before using it in the corrected edition."
+ },
+ {
+  "page": 129,
+  "where": "proof of 6.4 (4), 'The projection morphism X_(z^_i) ≃> Y_i ×_Spf(R_i) Spf(R) → Y_i'",
+  "scan": "Fraktur X (as on pp. 126-128) with subscript (ẑ_i): typed z with an overstruck caret",
+  "tex": "\\mathcal{X}_{(\\mathcal{Z}_i)} \\overset{\\sim}{\\rightarrow}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal{X}_{(\\mathcal{Z}_i)} \\overset{\\sim}{\\rightarrow}",
+   "new": "\\mathfrak{X}_{(\\widehat{z}_i)} \\overset{\\sim}{\\rightarrow}"
+  },
+  "note": "Fraktur X typed as \\mathcal; the subscript is the ẑ_i of p. 128 (small z with caret), not a script capital Z."
+ },
+ {
+  "page": 129,
+  "where": "proof of 6.4 (4), same formula, 'Y_i ×_Spf(R_i)'",
+  "scan": "Fraktur Y with subscript i, and Spf(R_i) with subscript i: both subscripts have the dot fused to the stem and the left serif below the top (the i of Spf(R_i) and Spf(φ_i) on the next line); the digit 1 (z_1 three lines below) has its flag at the very top",
+  "tex": "\\mathcal{Y}_1 \\times_{\\mathrm{Spf}(R_1)}",
+  "kind": "number",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\mathcal{Y}_1 \\times_{\\mathrm{Spf}(R_1)}",
+   "new": "\\mathfrak{Y}_i \\times_{\\mathrm{Spf}(R_i)}"
+  },
+  "note": "Two changes in one edit: 1 -> i (twice) and the Fraktur Y typed as \\mathcal. Mathematically i is meant (fibre product with Y_i over Spf(R_i) via Spf(φ_i)); if the coordinator reads the digit 1, the 1 -> i part becomes a misprint the TeX keeps."
+ },
+ {
+  "page": 129,
+  "where": "proof of 6.4 (4), same formula, '... Spf(R) → Y_i'",
+  "scan": "Fraktur Y",
+  "tex": "\\mathrm{Spf}(R) \\rightarrow \\mathcal{Y}_i",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathrm{Spf}(R) \\rightarrow \\mathcal{Y}_i",
+   "new": "\\mathrm{Spf}(R) \\rightarrow \\mathfrak{Y}_i"
+  },
+  "note": "Fraktur Y typed as \\mathcal (\\mathfrak{Y}_i on p. 128)."
+ },
+ {
+  "page": 129,
+  "where": "proof of 6.4 (4), 'since Spf(R) --Spf(φ_i)-- Spf(R_i) is formally smooth'",
+  "scan": "a plain rule with Spf(φ_i) above it and no arrowhead; the rule ends cleanly before Spf(R_i) (checked in a crop)",
+  "tex": "\\xrightarrow{\\ \\mathrm{Spf}(\\varphi_i)\\ }",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\xrightarrow{\\ \\mathrm{Spf}(\\varphi_i)\\ }",
+   "new": "\\overset{\\ \\mathrm{Spf}(\\varphi_i)\\ }{\\relbar\\joinrel\\relbar\\joinrel\\relbar\\joinrel\\relbar}"
+  },
+  "corrected": "\\xrightarrow{\\ \\mathrm{Spf}(\\varphi_i)\\ }",
+  "note": "The head was never typed (the other arrows of the paragraph have theirs). The TeX silently supplies it; the fix restores the printed headless rule in the form of the earlier headless rules of this exposé (pp. 38, 85, 99). 'corrected' is the current TeX."
+ },
+ {
+  "page": 129,
+  "where": "proof of 6.4 (4), 'On the other hand, Y_i → Spec(Λ) is formally smooth by 6.2(3)'",
+  "scan": "Fraktur Y",
+  "tex": "$\\mathcal{Y}_i \\rightarrow \\mathrm{Spec}(\\Lambda)$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathcal{Y}_i \\rightarrow \\mathrm{Spec}(\\Lambda)$",
+   "new": "$\\mathfrak{Y}_i \\rightarrow \\mathrm{Spec}(\\Lambda)$"
+  },
+  "note": "Fraktur Y typed as \\mathcal."
+ },
+ {
+  "page": 129,
+  "where": "proof of 6.4 (4), 'and therefore X_(z^_i) → Spec(Λ) is formally smooth'",
+  "scan": "Fraktur X with subscript (ẑ_i): typed z with an overstruck caret",
+  "tex": "\\mathcal{X}_{(\\mathcal{Z}_i)} \\rightarrow \\mathrm{Spec}(\\Lambda)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal{X}_{(\\mathcal{Z}_i)} \\rightarrow \\mathrm{Spec}(\\Lambda)",
+   "new": "\\mathfrak{X}_{(\\widehat{z}_i)} \\rightarrow \\mathrm{Spec}(\\Lambda)"
+  },
+  "note": "Fraktur X typed as \\mathcal; ẑ_i as on p. 128, not a script capital Z."
+ },
+ {
+  "page": 129,
+  "where": "proof of 6.4 (4), 'Consequently X → Spec(Λ) is formally smooth'",
+  "scan": "Fraktur X",
+  "tex": "$\\mathcal{X} \\rightarrow \\mathrm{Spec}(\\Lambda)$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathcal{X} \\rightarrow \\mathrm{Spec}(\\Lambda)$",
+   "new": "$\\mathfrak{X} \\rightarrow \\mathrm{Spec}(\\Lambda)$"
+  },
+  "note": "Fraktur X typed as \\mathcal."
+ },
+ {
+  "page": 129,
+  "where": "proof of 6.4 (5), first line, 'Since R is formally smooth over Λ'",
+  "scan": "a plain R, overtyped (heavy) with a small stray spike at its upper right; no bar over it (contrast-enhanced crop)",
+  "tex": "$\\overline{R}$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\overline{R}$",
+   "new": "$R$"
+  },
+  "note": "The R of 6.4(1) (formally smooth over Λ) is meant; the spike is a typing trace, not an overline."
+ },
+ {
+  "page": 129,
+  "where": "proof of 6.4 (5), 'Since λ(D^0_X0) does not change when one replaces the base field k'",
+  "scan": "λ(D^0_{X_0}) (lambda, checked in a crop; the χ of the lines above is a different glyph)",
+  "tex": "\\lambda(\\underline{D}^0_{X_0})",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\chi(\\underline{D}^0_{X_0})",
+  "note": "The TeX keeps the printed λ; the Euler characteristic χ just defined is meant."
+ },
+ {
+  "page": 130,
+  "where": "display 'χ(D^0_X0) = χ(D^0_X'0) - ℓ(O_X'0/C) = 3 - 3(g-m) - 2m = 3 - 3g + m'",
+  "scan": "the first D^0 has its subscript X_0 set half a line low with an extra 0 at the upper right of the X (where the prime stands in the next term D^0_{X'_0}): D^0_{X^0_0}",
+  "tex": "\\chi(\\underline{D}^0_{X_0})",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\chi(\\underline{D}^0_{X_0})",
+   "new": "\\chi(\\underline{D}^0_{X^0_0})"
+  },
+  "corrected": "\\chi(\\underline{D}^0_{X_0})",
+  "note": "Stray typed 0 (not a prime: the left side is χ(D^0_{X_0}) of p. 129). The TeX silently drops it; the fix gives the printed reading; 'corrected' is the current TeX."
+ },
+ {
+  "page": 130,
+  "where": "last paragraph, 'if char k = 2'",
+  "scan": "'char k' typed upright like the text",
+  "tex": "$char k = 2$",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "$char k = 2$",
+   "new": "$\\mathrm{char}\\, k = 2$"
+  },
+  "note": "Operator name in math italic (c·h·a·r as a product of variables); same family as the known italic ob/Ker/Hom of Exposé VI; listed because the global item names only those three."
+ }
+]

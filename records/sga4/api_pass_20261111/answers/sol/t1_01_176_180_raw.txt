@@ -1,0 +1,124 @@
+{
+  "findings": [
+    {
+      "page": 176,
+      "where": "Premier paragraphe, égalité pour C_alpha",
+      "scan": "\\Filt^C(E_{\\alpha})",
+      "tex": "\\Filt^C(E_{\\alpha})",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Filt^c(E_{\\alpha})",
+      "note": "L'exposant imprimé est un C majuscule, coquille pour le cardinal c. Le TeX conserve cette coquille."
+    },
+    {
+      "page": 176,
+      "where": "Corollaire 9.23, condition sur X(alpha)",
+      "scan": "\\ob \\Filt^c(E)",
+      "tex": "\\ob \\Filt^c(E)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\ob \\Filt^c(E_{\\alpha})",
+      "note": "L'indice alpha manque dans le print comme dans le TeX : il s'agit de la filtration de la fibre E_alpha."
+    },
+    {
+      "page": 176,
+      "where": "Corollaire 9.24, parenthèse après E_alpha",
+      "scan": "\\alpha\\in\\ob E",
+      "tex": "\\alpha\\in \\ob E",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\alpha\\in \\ob B",
+      "note": "Le print porte E, repris par le TeX, mais les fibres sont indexées par les objets de B."
+    },
+    {
+      "page": 178,
+      "where": "Fin du corollaire 9.25, frontière 178/179",
+      "scan": "et tous ses objets sont accessibles (9.3).",
+      "tex": "par épimorphismes stricts, et tous ses objets sont accessibles",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le renvoi (9.3). termine encore la page 178, mais se trouve à la première ligne du fragment TeX attribué à la page 179. La page 179 commence à « De plus ». C'est un problème de coupe, non une omission du source."
+    },
+    {
+      "page": 179,
+      "where": "10.1, dernière phrase",
+      "scan": "catégorie opposée à \\underline{A}",
+      "tex": "\\sisi{$𝒜$}{$C$}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$C$",
+      "note": "Le A imprimé est une coquille pour C, la catégorie du diagramme. La première branche de \\sisi reprend le print ; la seconde le corrige."
+    },
+    {
+      "page": 179,
+      "where": "Dernier titre du fragment TeX, frontière 179/180",
+      "scan": "La page 179 s'achève à « cartésien. » ; le titre 10.2 ouvre la page 180.",
+      "tex": "\\subsection{Épimorphisme, épimorphisme\n  strict}\\etiquette[10.2]{I.sec10.2}",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "Le titre 10.2 appartient au début de la page 180, avant « etc. Cf. 10.3. », et non à la page 179. La réserve nécessaire n'est pas indiquée dans le commentaire de coupe."
+    },
+    {
+      "page": 180,
+      "where": "Formule (10.3.1), les deux indices de Hom",
+      "scan": "\\Hom_{\\underline{A}}(B,C)\\longrightarrow\\prod_i\\Hom_{\\underline{A}}(A_i,C)",
+      "tex": "\\Hom_{𝒜}(B,C)\\longrightarrow \\prod_i\n\\Hom_{𝒜}(A_i,C)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Hom_C(B,C)\\longrightarrow \\prod_i \\Hom_C(A_i,C)",
+      "note": "Le print emploie A aux deux indices, alors que la catégorie est C. Le TeX conserve ces deux occurrences de la coquille."
+    },
+    {
+      "page": 180,
+      "where": "Définition d'une famille épimorphique stricte, égalité après f_i u=f_j v",
+      "scan": "g_i u=g_i v",
+      "tex": "$g_i u=g_iv$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$g_i u=g_j v$",
+      "note": "Le second indice est i dans le print comme dans le TeX. Il faut j, puisque v a pour but A_j."
+    },
+    {
+      "page": 180,
+      "where": "Condition exprimée au moyen des deux projections du produit fibré",
+      "scan": "g_i\\pr_1=g_i\\pr_2",
+      "tex": "$g_i \\pr_1=g_i \\pr_2$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$g_i \\pr_1=g_j \\pr_2$",
+      "note": "Le print et le TeX donnent i aux deux g. La seconde projection a pour but A_j : son composé doit être pris avec g_j."
+    },
+    {
+      "page": 180,
+      "where": "Définition d'une famille épimorphique effective",
+      "scan": "A_i\\times_A A_j",
+      "tex": "$A_i\\times_A A_j$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$A_i\\times_B A_j$",
+      "note": "Le but commun de la famille est B. L'indice A est une coquille du print, conservée par le TeX."
+    },
+    {
+      "page": 180,
+      "where": "Dernier paragraphe, famille obtenue par changement de base",
+      "scan": "f'_i:A'_i\\rightarrow A_i\\times_B B'",
+      "tex": "$f'_i:A'_i\\rightarrow A_i\\times_B B'$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "$f'_i:A'_i=A_i\\times_B B'\\longrightarrow B'$",
+      "note": "Le TeX conserve la formule imprimée. Le changement de base de f_i est la projection du produit fibré A_i×_B B' sur B', non une flèche vers ce produit fibré."
+    }
+  ],
+  "coordinator": "176 : 0/3 ; 177 : 0/0 ; 178 : 1/0 ; 179 : 1/1 ; 180 : 0/5 (normal/misprint).\nCoupe 178/179 : rattacher le renvoi « (9.3). » à la fin de p. 178 ; p. 179 commence à « De plus ».\nCoupe 179/180 : le titre 10.2 ouvre p. 180 ; p. 179 s'arrête après « cartésien. »."
+}

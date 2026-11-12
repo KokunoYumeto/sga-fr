@@ -1,0 +1,178 @@
+{
+  "findings": [
+    {
+      "page": 486,
+      "where": "Diagram (1.1.3.5), second row, kernel",
+      "scan": "\\mu_{n'}",
+      "tex": "𝛍_n",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "0  \\ar[r] & 𝛍_n  \\ar[r] & \\GG_m",
+        "new": "0  \\ar[r] & 𝛍_{n'}  \\ar[r] & \\GG_m"
+      },
+      "note": "The prime on the lower kernel's index is missing from the TeX."
+    },
+    {
+      "page": 488,
+      "where": "Paragraph beginning « Soient les courbes complètes »",
+      "scan": "courbes complètes non lisses",
+      "tex": "\\sisi{non\nlisses}{lisses}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "lisses",
+      "note": "The completions intended here are smooth. The TeX records the printed error in the first argument of \\sisi and corrects it in the second."
+    },
+    {
+      "page": 488,
+      "where": "Paragraph beginning « D'après (XVII 6.3.18.2) »",
+      "scan": "le diagramme de faisceaux sur Y",
+      "tex": "le diagramme de faisceaux sur $\\bar{Y}$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "le diagramme de faisceaux sur $\\bar{Y}$",
+      "note": "The sheaves in the ensuing diagram are on the completed curve. The print omits the bar; the TeX silently restores it."
+    },
+    {
+      "page": 488,
+      "where": "Last diagram, vertical arrow on the roots of unity",
+      "scan": "\\Tr_u",
+      "tex": "\\Tr_{\\bar{u}}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\Tr_{\\bar{u}}",
+      "note": "The trace is that of the completed morphism, whose pushforward occurs in the upper row. The print omits the bar on u; the TeX silently restores it."
+    },
+    {
+      "page": 489,
+      "where": "Opening Picard/cohomology diagram",
+      "scan": "\\Pic(X)/n, H^2_c(X,\\ZZ/n(1)); \\Pic(Y)/n, H^2_c(Y,\\ZZ/n(1)); \\Tr_u",
+      "tex": "\\Pic(\\bar{X})/n, H^2_c(\\bar{X},\\ZZ/n(1)); \\Pic(\\bar{Y})/n, H^2_c(\\bar{Y},\\ZZ/n(1)); \\Tr_{\\bar{u}}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\Pic(\\bar{X})/n, H^2_c(\\bar{X},\\ZZ/n(1)); \\Pic(\\bar{Y})/n, H^2_c(\\bar{Y},\\ZZ/n(1)); \\Tr_{\\bar{u}}",
+      "note": "The diagram follows the passage to the completed curves and morphism. The print drops all five bars; the TeX silently restores them."
+    },
+    {
+      "page": 489,
+      "where": "Sentence following the opening diagram, degree of the invertible sheaf",
+      "scan": "de degré 1 sur X",
+      "tex": "de degré 1 sur $\\bar{X}$",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "de degré 1 sur $\\bar{X}$",
+      "note": "The degree is being taken on the completed curve. The print again drops the bar, which the TeX silently restores."
+    },
+    {
+      "page": 489,
+      "where": "Reference concerning compatibility of the norm",
+      "scan": "EGA IV 21.10.7",
+      "tex": "\\sisi{\\EGA IV 21.10.7}{\\EGA IV 21.10.17}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\EGA IV 21.10.17",
+      "note": "The printed reference omits the 1 in 17. The TeX preserves the printed reading in the first argument of \\sisi and supplies the correction in the second."
+    },
+    {
+      "page": 489,
+      "where": "Proposition 1.1.6, condition on the torsion sheaf",
+      "scan": "premier au caractéristiques résiduelles",
+      "tex": "premier aux caractéristiques résiduelles",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "premier aux caractéristiques résiduelles",
+      "note": "The print has « au » instead of « aux ». The TeX silently corrects this grammatical misprint."
+    },
+    {
+      "page": 489,
+      "where": "Paragraph beginning « Soit p », morphism obtained from Kummer theory",
+      "scan": "\\ZZ/n\\longrightarrow R^{1}p_{\\ast}\\ZZ/n(1)",
+      "tex": "\\ZZ/n\\rightarrow R^{1}p_{\\ast}\\ZZ/n(1)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\ZZ/n\\longrightarrow R^{2}p_{\\ast}\\ZZ/n(1)",
+      "note": "Both print and TeX have exponent 1. The Kummer isomorphism and the ensuing trace require R², not R¹."
+    },
+    {
+      "page": 489,
+      "where": "Last paragraph, target of the quasi-finite flat morphism u",
+      "scan": "\\PP'_S",
+      "tex": "\\PP^1_S",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\PP^1_S",
+      "note": "The printed superscript is a prime in both scans. The intended target is the projective line; the TeX silently gives the exponent 1."
+    },
+    {
+      "page": 490,
+      "where": "Reference immediately after the opening exact sequence",
+      "scan": "XVII 6.2.8",
+      "tex": "\\hyperrefext[XVII][XVII.prop6.2.9]{6.2.9}",
+      "kind": "number",
+      "confidence": "high",
+      "fix": {
+        "old": "\\hyperrefext[XVII][XVII.prop6.2.9]{6.2.9}",
+        "new": "XVII 6.2.8"
+      },
+      "note": "The printed reference is 6.2.8, also clearly so in the witness. The replacement avoids inventing an unavailable target label."
+    },
+    {
+      "page": 490,
+      "where": "First paragraph, factorization through the trace morphism",
+      "scan": "de R^{2}f_{!}\\ZZ/n(1) dans \\ZZ/n qui, fibre par fibre, induit",
+      "tex": "de $R^{2}f_{!}\\ZZ/n(1)$ qui, fibre par fibre, induit",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "$R^{2}f_{!}\\ZZ/n(1)$ qui",
+        "new": "$R^{2}f_{!}\\ZZ/n(1)$ dans $\\ZZ/n$ qui"
+      },
+      "note": "The TeX omits the stated target of the trace morphism."
+    },
+    {
+      "page": 490,
+      "where": "Paragraph beginning « Pour un X général », morphism induced by the dense open immersion",
+      "scan": "R^{2}(fj_{!})\\ZZ/n(1)",
+      "tex": "R^{2}(fj_{!})\\ZZ/n(1)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{2}(fj)_{!}\\ZZ/n(1)",
+      "note": "The shriek belongs to the composite fj, as in the following display, not to j inside the parentheses. The TeX retains the printed misplacement."
+    },
+    {
+      "page": 490,
+      "where": "Displayed definition of Tr_f using the dense open immersion, left-hand cohomology term",
+      "scan": "R^{2}F_{!}\\ZZ/n(1)",
+      "tex": "R^{2}f_{!}\\ZZ/n(1)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "R^{2}f_{!}\\ZZ/n(1)",
+      "note": "The print has a capital F in place of the morphism f; the witness confirms the capital. The TeX silently corrects it."
+    },
+    {
+      "page": 490,
+      "where": "Final paragraph, sheaves used in the inductive limit",
+      "scan": "F_n",
+      "tex": "${}_nF$",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "${}_nF$",
+        "new": "$F_n$"
+      },
+      "note": "The print places the subscript n to the right of F, not to its left."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 486: 1/0; 487: 0/0; 488: 0/3; 489: 0/6; 490: 3/2."
+}

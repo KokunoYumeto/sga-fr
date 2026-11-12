@@ -1,0 +1,86 @@
+{
+  "findings": [
+    {
+      "page": 428,
+      "where": "6.2.8, application de (6.2.7.2)",
+      "scan": "en vertu (6.2.7.2)",
+      "tex": "en vertu \\eqhyperref[XVII.eq6.2.7.2]{6.2.7.2}",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "en vertu de \\eqhyperref[XVII.eq6.2.7.2]{6.2.7.2}",
+      "note": "L'imprimé omet « de » après « en vertu ». Le TeX conserve cette omission."
+    },
+    {
+      "page": 429,
+      "where": "Premier paragraphe, référence après « auquel cas »",
+      "scan": "6.2.8",
+      "tex": "\\hyperref[XVII.subsubsec6.2.8]{6.2.8}",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "\\hyperref[XVII.prop6.2.9]{6.2.9}",
+      "note": "La preuve porte sur la proposition 6.2.9 immédiatement précédente, et non sur la construction 6.2.8. Le TeX conserve la référence imprimée."
+    },
+    {
+      "page": 429,
+      "where": "Premier paragraphe, « calcul de l'homologie »",
+      "scan": "l'hmologie",
+      "tex": "l'homologie",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "l'homologie",
+      "note": "Le premier « o » de « homologie » manque dans l'imprimé, comme le confirme le second scan. Le TeX le rétablit silencieusement."
+    },
+    {
+      "page": 429,
+      "where": "Premier paragraphe, adjectif après « homologie »",
+      "scan": "simplicial d'un simplexe",
+      "tex": "simplicial d'un simplexe",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "simpliciale d'un simplexe",
+      "note": "Erreur d'accord avec « homologie », féminin. Le TeX conserve « simplicial »."
+    },
+    {
+      "page": 429,
+      "where": "6.2.10, fonctorialité de la résolution",
+      "scan": "étant fonctorielles",
+      "tex": "étant fonctorielles",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "étant fonctorielle",
+      "note": "Le sujet « La résolution » et le verbe « définit » sont au singulier. Le TeX conserve le pluriel fautif de l'imprimé."
+    },
+    {
+      "page": 430,
+      "where": "(6.2.10.3), indice de j",
+      "scan": "j^{\\ast}_{P}K",
+      "tex": "j^{\\ast}_{p}K",
+      "kind": "formula",
+      "confidence": "high",
+      "fix": {
+        "old": "j^{\\ast}_{p}K",
+        "new": "j^{\\ast}_{P}K"
+      },
+      "note": "L'indice imprimé est la partie P, en capitale, comme dans l'indice de la somme. Le second scan confirme cette lecture."
+    },
+    {
+      "page": 430,
+      "where": "Preuve de 6.2.11, avant la formule du préfaisceau",
+      "scan": "par le préfaisceau",
+      "tex": "par la préfaisceau",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "par la préfaisceau",
+        "new": "par le préfaisceau"
+      },
+      "note": "L'imprimé porte bien l'article masculin « le »."
+    }
+  ],
+  "coordinator": "426 : 0/0 ; 427 : 0/0 ; 428 : 0/1 ; 429 : 0/4 ; 430 : 2/0 (normal/misprint)."
+}

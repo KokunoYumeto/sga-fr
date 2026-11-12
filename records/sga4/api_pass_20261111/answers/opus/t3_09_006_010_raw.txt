@@ -1,0 +1,10 @@
+```json
+{"findings":[
+{"page":6,"where":"2.0, «de valeur S (IV)»","scan":"de valeur  S  (IV","tex":"de valeur $S$ (IV).","kind":"misprint_in_print","confidence":"low","fix":null,"corrected":"(IV).","note":"The print omits the closing parenthesis and the full stop after «IV». The TeX corrects this silently."},
+{"page":7,"where":"proof of (i), components of f","scan":"f_s: e —— S'×e  (s'∈S)","tex":"$f_s:e\\rightarrow S'\\times e$ $(s'\\in S)$","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"$(s\\in S)$","note":"The index of the components f_s runs over s ∈ S, but the print has s' ∈ S. The TeX keeps the printed reading."},
+{"page":8,"where":"top paragraph, «f devient constant»","scan":"que f deviant constant sur X_{s'}","tex":"que $f$ devient constant sur $X_{s'}$","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"devient","note":"The print has the typing error «deviant». The TeX corrects it silently. The printed parenthesis after «disjointes» is also left unclosed, before a blank left for a reference; the TeX closes it."},
+{"page":8,"where":"proof of (iii), «extension de L''_T par G»","scan":"L est une extension de L''_T par G","tex":"extension de $L''_T$ par $G$","kind":"misprint_in_print","confidence":"medium","fix":null,"corrected":"par $F'$","note":"L = L''_T ×_{F''} F is an extension of L''_T by F', not by G. The TeX keeps the printed G."},
+{"page":10,"where":"proof of 2.4, «d'après la définition de constructibilité»","scan":"d'après la définition de constructibilité","tex":"d'après la définition de la constructibilité","kind":"extra","confidence":"high","fix":{"old":"la définition de la constructibilité","new":"la définition de constructibilité"},"note":"The TeX adds an article «la» that the print does not have."}
+],
+"coordinator":"p6 0/1, p7 0/1, p8 0/2, p9 0/0, p10 1/0"}
+```

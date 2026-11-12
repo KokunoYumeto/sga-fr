@@ -1,0 +1,1135 @@
+[
+ {
+  "page": 306,
+  "where": "section title 5",
+  "scan": "5. SCHEMAS DE DRAPEAUX (capitals, underlined)",
+  "tex": "\\section*{5. Schémas de drapeaux}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{5. Schémas de drapeaux}",
+   "new": "\\section*{5. SCHÉMAS DE DRAPEAUX}"
+  },
+  "note": "Capitals as printed, as the applied titles 1-3 of Exposé VII (FIBRES VECTORIELS, SCHÉMAS PROJECTIFS, CLASSES DE CHERN); accented É by the volume's rule."
+ },
+ {
+  "page": 306,
+  "where": "first sentence, 'E un O_S-Module localement libre de rang r'",
+  "scan": "O_S-Module (script O)",
+  "tex": "$\\mathcal O_S$-module",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathcal O_S$-module",
+   "new": "$\\mathcal O_S$-Module"
+  },
+  "note": "Capital M (sheaf of modules), as the logged 'Module' fixes of pp. 286-295."
+ },
+ {
+  "page": 306,
+  "where": "'On rappelle qu'on appelle drapeau de type (p_1,...,p_m) de E'",
+  "scan": "'drapeau de type' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "appelle drapeau de type",
+   "new": "appelle \\emph{drapeau de type}"
+  },
+  "note": "Defined term. Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 306,
+  "where": "'de E telle que pour tout entier i ∈ [1,m] le quotient'",
+  "scan": "no commas",
+  "tex": "telle que, pour tout entier $i\\in[1,m]$, le quotient",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "telle que, pour tout entier $i\\in[1,m]$, le quotient",
+   "new": "telle que pour tout entier $i\\in[1,m]$ le quotient"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 306,
+  "where": "'(EGA I 2ème édition)'",
+  "scan": "2 with a raised 'ème'",
+  "tex": "2ème on the line",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "2ème édition",
+   "new": "2\\textsuperscript{ème} édition"
+  },
+  "note": "\\textsuperscript{ème} as the file's '2\\textsuperscript{ème} Réduction'."
+ },
+ {
+  "page": 306,
+  "where": "'et on appelle S-schéma des drapeaux de type (p_1,...,p_m) de E tout représentant'",
+  "scan": "'schéma des drapeaux de type' underlined (not the S-)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "appelle $S$-schéma des drapeaux de type",
+   "new": "appelle $S$-\\emph{schéma des drapeaux de type}"
+  },
+  "note": "Defined term. Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 306,
+  "where": "'le O_X-Module f*(E) admet une filtration finie canonique'",
+  "scan": "O_X- Module (script O)",
+  "tex": "$\\mathcal O_X$-module",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathcal O_X$-module",
+   "new": "$\\mathcal O_X$-Module"
+  },
+  "note": "Capital M (sheaf of modules), as the logged 'Module' fixes of pp. 286-295."
+ },
+ {
+  "page": 306,
+  "where": "'Notant pour tout entier i ∈ [1,m]' before g_i : D_i → X",
+  "scan": "no commas",
+  "tex": "Notant, pour tout entier $i\\in[1,m]$,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "Notant, pour tout entier $i\\in[1,m]$,",
+   "new": "Notant pour tout entier $i\\in[1,m]$"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 306,
+  "where": "display (5.1) (printed at the top of p. 307; in page_306.tex as the files stand)",
+  "scan": "h = f o g : Π_X D_i → S, with i under the product sign and X as its subscript (fibre product over X)",
+  "tex": "h=f\\circ g:\\prod_iD_i\\to S",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\prod_iD_i\\to S",
+   "new": "\\prod_i{}_XD_i\\to S"
+  },
+  "note": "Printed on p. 307; filed under p. 306, where the display stands until the marker move of p. 307 (the edit does not touch the move's anchor '\\['). Same form as D = Π_X(D_i) on p. 307."
+ },
+ {
+  "page": 307,
+  "where": "top of the page: display (5.1)",
+  "scan": "p. 307 begins with '(5.1) h = f o g : Π_X D_i → S'; p. 306 ends '... X-schémas D_i , il est clair que le composé' and blank space",
+  "tex": "'\\[', 'h=f\\circ g:\\prod_iD_i\\to S', '\\tag{5.1}', '\\]' end page_306.tex (diplomatic s5.tex lines 10372-10375); the folio-307 marker (line 10376) stands after them, before 'est $S$-'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 307 really begins at the '\\[' that opens display (5.1) (diplomatic s5.tex line 10372, current 10367, at the time of the check). Exact fix: python -I move_marker.py 5 307 '\\[' --before (simulated in memory on both layers: the nearest '\\[' before the marker is that of (5.1); the marker then stands on its own line between '... il est clair que le composé' and '\\['). Text not moved."
+ },
+ {
+  "page": 307,
+  "where": "'donc écrire D = Π_X(D_i) .'",
+  "scan": "D = Π_X(D_i) . with i under the product sign, X as its subscript, parentheses around D_i",
+  "tex": "D=\\prod_iD_i.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "D=\\prod_iD_i.",
+   "new": "D=\\prod_i{}_X(D_i)."
+  },
+  "note": "The TeX drops the subscript X and the parentheses (as display (5.1))."
+ },
+ {
+  "page": 307,
+  "where": "Proposition 5.2, statement",
+  "scan": "'On a, dans' and 'un isomorphisme' underlined; D^b(S,A), not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "On a, dans $D^b(S,A)$, un isomorphisme",
+   "new": "\\emph{On a, dans} $D^b(S,A)$, \\emph{un isomorphisme}"
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 307,
+  "where": "Proposition 5.2, display, R^{2i}",
+  "scan": "IR f_*(A) ≃ ⊕_i R^{2i} f_*(A)[-2i]: double-struck first R, plain R in R^{2i}",
+  "tex": "\\R^{2i}f_*(A)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^{2i}f_*",
+   "new": "\\mathrm{R}^{2i}f_*"
+  },
+  "note": "The first R of the display is the hand-drawn double-struck R (\\R stands). The typewriter's plain R; \\R is \\mathbb{R} in this file (\\mathrm{R} as the logged fixes of pp. 274-285)."
+ },
+ {
+  "page": 307,
+  "where": "Proposition 5.2, end of the display",
+  "scan": "no full stop after [-2i]",
+  "tex": "[-2i].",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "[-2i].",
+   "new": "[-2i]"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 307,
+  "where": "proof of 5.2, 'Le morphisme k étant composé d'un nombre fini de morphismes du type'",
+  "scan": "k (clearly typed)",
+  "tex": "Le morphisme $h$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Le morphisme $h$",
+   "new": "Le morphisme $k$"
+  },
+  "corrected": "Le morphisme $h$",
+  "note": "The morphism is h = f o g of (5.1), a composite of projective bundles; the TeX silently corrects the printed k."
+ },
+ {
+  "page": 307,
+  "where": "display (Q), '(F O_T-Module localement libre)'",
+  "scan": "O_T-Module (plain typed O)",
+  "tex": "\\text{-module localement libre}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{-module localement libre}",
+   "new": "\\text{-Module localement libre}"
+  },
+  "note": "Capital M (sheaf of modules), as the logged 'Module' fixes of pp. 286-295."
+ },
+ {
+  "page": 307,
+  "where": "display (Q), after the parenthesis",
+  "scan": "no comma",
+  "tex": "localement libre}),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "),\n\\tag{Q}",
+   "new": ")\n\\tag{Q}"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 307,
+  "where": "display IR h_*(A) ≃ ⊕_j R^j h_*(A)[-j] .",
+  "scan": "plain R in R^j",
+  "tex": "\\R^jh_*(A)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^jh_*",
+   "new": "\\mathrm{R}^jh_*"
+  },
+  "note": "The first R (double-struck) stands. The typewriter's plain R; \\R is \\mathbb{R} in this file (\\mathrm{R} as the logged fixes of pp. 274-285)."
+ },
+ {
+  "page": 307,
+  "where": "display IR g_*(A) ≃ ⊕_j R^j g_*(A)[-j] .",
+  "scan": "plain R in R^j",
+  "tex": "\\R^jg_*(A)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^jg_*",
+   "new": "\\mathrm{R}^jg_*"
+  },
+  "note": "The first R (double-struck) stands. The typewriter's plain R; \\R is \\mathbb{R} in this file (\\mathrm{R} as the logged fixes of pp. 274-285)."
+ },
+ {
+  "page": 307,
+  "where": "display IR f_*(g_*A) ≃ ⊕_j R^j f_*(g_*A)[-j] .",
+  "scan": "plain R in R^j",
+  "tex": "\\R^j f_*(g_*A)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^j f_*",
+   "new": "\\mathrm{R}^j f_*"
+  },
+  "note": "The first R (double-struck) stands. The typewriter's plain R; \\R is \\mathbb{R} in this file (\\mathrm{R} as the logged fixes of pp. 274-285)."
+ },
+ {
+  "page": 307,
+  "where": "display (5.2.1), R^{2i+1} f_*(A) = 0 (i ∈ IN) .",
+  "scan": "plain R",
+  "tex": "\\R^{2i+1}f_*(A)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^{2i+1}f_*",
+   "new": "\\mathrm{R}^{2i+1}f_*"
+  },
+  "note": "The typewriter's plain R; \\R is \\mathbb{R} in this file (\\mathrm{R} as the logged fixes of pp. 274-285)."
+ },
+ {
+  "page": 308,
+  "where": "Corollaire 5.3, statement before the display",
+  "scan": "'Pour tout morphisme de schémas' and 'la suite spectrale de Leray' underlined; u : S → T , not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Pour tout morphisme de schémas $u:S\\to T$, la suite spectrale de Leray",
+   "new": "\\emph{Pour tout morphisme de schémas} $u:S\\to T$, \\emph{la suite spectrale de Leray}"
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 308,
+  "where": "Corollaire 5.3, display E_2^{pq} = R^p u_* R^q f_*(A) ⇒ R^{p+q}(u o f)_*(A)",
+  "scan": "three plain typed R",
+  "tex": "\\R^p u_*\\,\\R^q f_*(A)\\Rightarrow \\R^{p+q}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\R^p u_*\\,\\R^q f_*(A)\\Rightarrow \\R^{p+q}",
+   "new": "\\mathrm{R}^p u_*\\,\\mathrm{R}^q f_*(A)\\Rightarrow \\mathrm{R}^{p+q}"
+  },
+  "note": "The typewriter's plain R; \\R is \\mathbb{R} in this file (\\mathrm{R} as the logged fixes of pp. 274-285)."
+ },
+ {
+  "page": 308,
+  "where": "Corollaire 5.3, 'est dégénérée.'",
+  "scan": "'est dégénérée' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est dégénérée.",
+   "new": "\\emph{est dégénérée}."
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 308,
+  "where": "proof of 5.3, 'Preuve : cf. [6] 1.2.'",
+  "scan": "cf.",
+  "tex": "Cf.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "Cf. [6]",
+   "new": "cf. [6]"
+  },
+  "note": "Capital against small letter."
+ },
+ {
+  "page": 308,
+  "where": "display α : A•(S)[T_{ij_i}] → A•(X)",
+  "scan": "A with a raised dot (twice)",
+  "tex": "A^*(S) ... A^*(X)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\alpha:A^*(S)[T_{ij_i}]_{1\\le i\\le m,\\,1\\le j_i\\le p_m}\\to A^*(X)",
+   "new": "\\alpha:A^{\\bullet}(S)[T_{ij_i}]_{1\\le i\\le m,\\,1\\le j_i\\le p_m}\\to A^{\\bullet}(X)"
+  },
+  "note": "The print's raised dot, not a star (A^{\\bullet} as the logged fixes of pp. 290-295)."
+ },
+ {
+  "page": 308,
+  "where": "display α, index range '1 ≤ j_i ≤ p_m'",
+  "scan": "p_m",
+  "tex": "1\\le j_i\\le p_m",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "1\\le j_i\\le p_i",
+  "note": "Wrong index: E_i has rank p_i, so T_{ij_i} (sent to c_{j_i}(E_i)) runs over 1 ≤ j_i ≤ p_i, as the p_i elements (U_{p_1+...+p_{i-1}+s})_{1≤s≤p_i} of Lemme 5.4.1 b), whose V = R[T_{ij_i}] has the same printed p_m (p. 309). The TeX keeps the printed reading."
+ },
+ {
+  "page": 308,
+  "where": "'en envoyant A•(S) dans A•(X) par l'image réciproque f*'",
+  "scan": "A with a raised dot (twice)",
+  "tex": "$A^*(S)$ dans $A^*(X)$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "en envoyant $A^*(S)$ dans $A^*(X)$",
+   "new": "en envoyant $A^{\\bullet}(S)$ dans $A^{\\bullet}(X)$"
+  },
+  "note": "The print's raised dot, not a star (A^{\\bullet} as the logged fixes of pp. 290-295)."
+ },
+ {
+  "page": 308,
+  "where": "'f* et pour tout couple (i,j) comme ci-dessus l'élément T_{ij_i}'",
+  "scan": "no commas",
+  "tex": "et, pour tout couple $(i,j)$, comme ci-dessus, l'élément",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "et, pour tout couple $(i,j)$, comme ci-dessus, l'élément",
+   "new": "et pour tout couple $(i,j)$ comme ci-dessus l'élément"
+  },
+  "note": "The TeX adds three commas."
+ },
+ {
+  "page": 308,
+  "where": "'sur la j_i^{ème} classe de Chern'",
+  "scan": "j_i with a raised 'ème'",
+  "tex": "$j_i$-ème",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$j_i$-ème classe",
+   "new": "$j_i^{\\text{ème}}$ classe"
+  },
+  "note": "As the logged i^{ème} of p. 290."
+ },
+ {
+  "page": 308,
+  "where": "'Pour tout entier p , on a d'après (3.4 (iii))'",
+  "scan": "no commas",
+  "tex": "on a, d'après (3.4 (iii)),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "on a, d'après (3.4 (iii)),",
+   "new": "on a d'après (3.4 (iii))"
+  },
+  "note": "The TeX adds two commas."
+ },
+ {
+  "page": 308,
+  "where": "display c_p(E) - Σ T_{1,i_1}...T_{m,i_m}, summation index",
+  "scan": "i_1+...i_m=p (no + before i_m; the display above has i_1+i_2+...+i_m=p)",
+  "tex": "\\sum_{i_1+\\cdots+i_m=p}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\sum_{i_1+\\cdots+i_m=p}",
+   "new": "\\sum_{i_1+\\cdots i_m=p}"
+  },
+  "note": "The TeX adds a +, as the logged omitted \\subset after the dots on pp. 292-293."
+ },
+ {
+  "page": 308,
+  "where": "display φ_X : (A•(S)[T_{ij_i}]_{(i,j_i)})/J_X → A•(X).",
+  "scan": "A with a raised dot (twice)",
+  "tex": "A^*(S) ... A^*(X)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigl(A^*(S)[T_{ij_i}]_{(i,j_i)}\\bigr)/J_X\\to A^*(X).",
+   "new": "\\bigl(A^{\\bullet}(S)[T_{ij_i}]_{(i,j_i)}\\bigr)/J_X\\to A^{\\bullet}(X)."
+  },
+  "note": "The print's raised dot, not a star (A^{\\bullet} as the logged fixes of pp. 290-295)."
+ },
+ {
+  "page": 308,
+  "where": "Proposition 5.4, first sentence",
+  "scan": "'Le morphisme d'anneaux' and 'ci-dessus est un isomorphisme' underlined; φ_X and the full stop, not",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Le morphisme d'anneaux $\\varphi_X$ ci-dessus est un isomorphisme.",
+   "new": "\\emph{Le morphisme d'anneaux} $\\varphi_X$ \\emph{ci-dessus est un isomorphisme}."
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 308,
+  "where": "Proposition 5.4, 'Le A•(S)-module A•(X) est libre de rang'",
+  "scan": "'module' and 'est libre de rang' underlined, 'Le' not; A with raised dots",
+  "tex": "Le $A^*(S)$-module $A^*(X)$ est libre de rang",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Le $A^*(S)$-module $A^*(X)$ est libre de rang",
+   "new": "Le $A^{\\bullet}(S)$-\\emph{module} $A^{\\bullet}(X)$ \\emph{est libre de rang}"
+  },
+  "note": "One edit: it also gives the two raised dots (symbol). The print's raised dot, not a star (A^{\\bullet} as the logged fixes of pp. 290-295)."
+ },
+ {
+  "page": 308,
+  "where": "Proposition 5.4, display of the rank",
+  "scan": "(r!)/(p_1!p_2!...p_m!). on one line",
+  "tex": "\\frac{r!}{p_1!p_2!\\cdots p_m!}.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\frac{r!}{p_1!p_2!\\cdots p_m!}.",
+   "new": "(r!)/(p_1!p_2!\\cdots p_m!)."
+  },
+  "note": "The print writes the quotient with a slash and parentheses."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 a), 'Soit R'",
+  "scan": "'Soit' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "a) Soit $R$",
+   "new": "a) \\emph{Soit} $R$"
+  },
+  "note": "The TeX has no underline markup in this lemma. Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 a), 'un anneau commutatif'",
+  "scan": "underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "un anneau commutatif",
+   "new": "\\emph{un anneau commutatif}"
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 a), 'Soit R un anneau commutatif (a_i)_{1≤i≤r} r éléments de R .'",
+  "scan": "no words between 'commutatif' and (a_i)",
+  "tex": "un anneau commutatif, et soient $(a_i)_{1\\le i\\le r}$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": ", et soient",
+   "new": ""
+  },
+  "corrected": "\\emph{un anneau commutatif}, et soient $(a_i)_{1\\le i\\le r}$",
+  "note": "Words left out by the typist (the sentence lacks its second verb); the TeX silently supplies ', et soient'."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 a), 'éléments de R'",
+  "scan": "'éléments de' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$r$ éléments de $R$.",
+   "new": "$r$ \\emph{éléments de} $R$."
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 a), 'Désignant par σ_i la'",
+  "scan": "'Désignant par' and 'la' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Désignant par $\\sigma_i$ la",
+   "new": "\\emph{Désignant par} $\\sigma_i$ \\emph{la}"
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 a), 'i^{ème} fonction symétrique élémentaire des éléments'",
+  "scan": "i with a raised 'ème'; 'fonction symétrique élémentaire des éléments' underlined",
+  "tex": "$i$-ème fonction symétrique élémentaire des éléments",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$i$-ème fonction symétrique élémentaire des éléments",
+   "new": "$i^{\\text{ème}}$ \\emph{fonction symétrique élémentaire des éléments}"
+  },
+  "note": "As the logged i^{ème} of p. 290. One edit: it also gives the underline."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 a), '(U_i)_{1≤i≤r} et par I'",
+  "scan": "no comma; 'et par' underlined",
+  "tex": "$(U_i)_{1\\le i\\le r}$, et par",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$(U_i)_{1\\le i\\le r}$, et par",
+   "new": "$(U_i)_{1\\le i\\le r}$ \\emph{et par}"
+  },
+  "note": "The TeX adds a comma. One edit: it also gives the underline."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 a), 'l'idéal de l anneau de polynômes'",
+  "scan": "the letter l (as the l of l'idéal), not the digit 1; the phrase underlined",
+  "tex": "l'idéal de 1 anneau de polynômes",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "l'idéal de 1 anneau de polynômes",
+   "new": "\\emph{l'idéal de l anneau de polynômes}"
+  },
+  "note": "The TeX has the digit 1 for the letter l. One edit: it also gives the underline."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 a), 'de l anneau'",
+  "scan": "de l anneau (no apostrophe)",
+  "tex": "de 1 anneau (de l anneau after the previous item)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\emph{l'idéal de l'anneau de polynômes}",
+  "note": "Apostrophe left out by the typist. After the previous item (1 -> l) the TeX keeps the printed reading."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 a), 'engendré par les éléments σ_i - a_i , la R-algèbre'",
+  "scan": "'engendré par les éléments', 'la' and 'algèbre' underlined (not R-)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "engendré par les éléments $\\sigma_i-a_i$, la $R$-algèbre",
+   "new": "\\emph{engendré par les éléments} $\\sigma_i-a_i$, \\emph{la} $R$-\\emph{algèbre}"
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 a), 'est un R-module libre de rang r !'",
+  "scan": "'est un' and 'module libre de rang' underlined (not R-)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est un $R$-module libre de rang",
+   "new": "\\emph{est un} $R$-\\emph{module libre de rang}"
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 a), end: 'r !'",
+  "scan": "no full stop after r !",
+  "tex": "$r!$.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$r!$.",
+   "new": "$r!$"
+  },
+  "note": "The TeX adds a full stop."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 b), 'Soient'",
+  "scan": "underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "b) Soient $r",
+   "new": "b) \\emph{Soient} $r"
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 b), 'des entiers >0 vérifiant l'égalité'",
+  "scan": "'des entiers' and 'vérifiant l'égalité' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "des entiers $>0$ vérifiant l'égalité",
+   "new": "\\emph{des entiers} $>0$ \\emph{vérifiant l'égalité}"
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 b), 'Alors le morphisme d'anneaux de polynômes'",
+  "scan": "underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors le morphisme d'anneaux de polynômes",
+   "new": "\\emph{Alors le morphisme d'anneaux de polynômes}"
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 b), display V = R[T_{ij_i}] ...",
+  "scan": "T_{ij_i} (no comma in the index)",
+  "tex": "T_{i,j_i}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "V=R[T_{i,j_i}]",
+   "new": "V=R[T_{ij_i}]"
+  },
+  "note": "The TeX adds a comma between the indices."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 b), display V, index range '1 ≤ j_i ≤ p_m'",
+  "scan": "p_m",
+  "tex": "1\\le j_i\\le p_m",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "1\\le j_i\\le p_i",
+  "note": "As on p. 308: T_{i,j_i} goes to the j_i-th elementary symmetric function of p_i elements, so j_i ≤ p_i. The TeX keeps the printed reading."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 b), end of display V → W",
+  "scan": "comma after W",
+  "tex": "=W",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "=W\n",
+   "new": "=W,\n"
+  },
+  "note": "The TeX drops the comma at the end of the display."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 b), 'obtenu en envoyant T_{i,j_i} sur la'",
+  "scan": "'obtenu en envoyant' and 'sur la' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "obtenu en envoyant $T_{i,j_i}$ sur la",
+   "new": "\\emph{obtenu en envoyant} $T_{i,j_i}$ \\emph{sur la}"
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 b), 'sur la j^{ème} fonctions'",
+  "scan": "j with a raised 'ème', no index i",
+  "tex": "$j_i$-ème",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "$j_i",
+   "new": "$j"
+  },
+  "corrected": "$j_i^{\\text{ème}}$",
+  "note": "The index i is left out (p. 308 and p. 310 print j_i^{ème} in the same phrase); the TeX silently supplies it. Disjoint from the next item, which gives the superscript form."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 b), 'ème fonctions symétrique élémentaire des éléments'",
+  "scan": "raised 'ème'; 'fonctions symétrique élémentaire des éléments' underlined",
+  "tex": "$j_i$-ème fonctions symétrique élémentaire des éléments",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$-ème fonctions symétrique élémentaire des éléments",
+   "new": "^{\\text{ème}}$ \\emph{fonctions symétrique élémentaire des éléments}"
+  },
+  "note": "The old starts at the $ that closes $j_i$ (disjoint from the previous item). As the logged i^{ème} of p. 290. One edit: it also gives the underline."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 b), 'fonctions symétrique'",
+  "scan": "fonctions",
+  "tex": "fonctions",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\emph{fonction symétrique élémentaire des éléments}",
+  "note": "Typing error; the TeX keeps the printed reading."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 b), after (U_{p_1+...+p_{i-1}+s})_{1≤s≤p_i}",
+  "scan": "comma after the formula",
+  "tex": "no comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "s\\le p_i}\n\\]",
+   "new": "s\\le p_i},\n\\]"
+  },
+  "note": "The TeX drops the comma (the print runs the formula into the text)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 b), 'est injectif et fait de W un V-module libre de rang'",
+  "scan": "'est injectif et fait de', 'un', 'module libre de rang' underlined (not W, V-)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est injectif et fait de $W$ un $V$-module libre de rang",
+   "new": "\\emph{est injectif et fait de} $W$ \\emph{un} $V$-\\emph{module libre de rang}"
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1 b), end: 'p_1!... p_m !'",
+  "scan": "no full stop",
+  "tex": "$p_1!\\cdots p_m!$.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$p_1!\\cdots p_m!$.",
+   "new": "$p_1!\\cdots p_m!$"
+  },
+  "note": "The TeX adds a full stop."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1, 'En particulier, le morphisme de R-algèbres'",
+  "scan": "the whole line underlined, R- included",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "En particulier, le morphisme de $R$-algèbres",
+   "new": "\\emph{En particulier, le morphisme de $R$-algèbres}"
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1, last sentence, 'obtenu en envoyant T_i sur la'",
+  "scan": "'obtenu en envoyant' and 'sur la' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "obtenu en envoyant $T_i$ sur la",
+   "new": "\\emph{obtenu en envoyant} $T_i$ \\emph{sur la}"
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1, last sentence, 'i^{ème} fonction symétrique élémentaire des'",
+  "scan": "raised 'ème'; 'fonction symétrique élémentaire des' underlined",
+  "tex": "$i$-ème fonction symétrique élémentaire des $U_j$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$i$-ème fonction symétrique élémentaire des $",
+   "new": "$i^{\\text{ème}}$ \\emph{fonction symétrique élémentaire des} $"
+  },
+  "note": "As the logged i^{ème} of p. 290. One edit: it also gives the underline. The old ends at the $ that opens $U_j$ (disjoint from the next two items)."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1, last sentence, 'des U_i,'",
+  "scan": "U_i",
+  "tex": "U_j",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "U_j",
+   "new": "U_i"
+  },
+  "corrected": "U_j",
+  "note": "The print reuses the index i of T_i (the i-th elementary symmetric function of all the U's); the TeX silently writes U_j."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1, last sentence, 'U_i, est injec-tif et fait du deuxième membre un module libre de rang r !'",
+  "scan": "comma after U_i; 'est injectif ... de rang' underlined",
+  "tex": "$U_j$ est injectif et fait du deuxième membre un module libre de rang",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$ est injectif et fait du deuxième membre un module libre de rang",
+   "new": "$, \\emph{est injectif et fait du deuxième membre un module libre de rang}"
+  },
+  "note": "The TeX drops the comma. One edit: it also gives the underline. The old starts at the $ that closes $U_j$."
+ },
+ {
+  "page": 309,
+  "where": "Lemme 5.4.1, 'sur le premier.'",
+  "scan": "'sur le premier' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "sur le premier.",
+   "new": "\\emph{sur le premier}."
+  },
+  "note": "Exposé VII: \\emph is the file's underline (as the applied statements of pp. 283-295)."
+ },
+ {
+  "page": 310,
+  "where": "top of the page: 'où X est le schéma D des drapeaux de E'",
+  "scan": "p. 310 begins 'où X est le schéma D des drapeaux de E et posons'; p. 309 ends '... Plaçons-nous d'abord dans le cas'",
+  "tex": "page_309.tex ends '... Plaçons-nous d'abord dans le cas où $X$ est le' (diplomatic s5.tex line 10483); the folio-310 marker (line 10484) stands before 'schéma $D$'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 310 really begins at 'où $X$ est le' (end of diplomatic s5.tex line 10483, current 10478, at the time of the check). Exact fix: python -I move_marker.py 5 310 'où $X$ est le' --before (single quotes keep the $ literal; simulated in memory on both layers: the nearest occurrence is 14 characters before the marker, which then splits the line after 'dans le cas'). Text not moved."
+ },
+ {
+  "page": 310,
+  "where": "'avec M_i un O_{Y_i}-Module localement libre de rang r-i+1'",
+  "scan": "O_{Y_i}-Module (plain typed O)",
+  "tex": "$\\mathcal O_{Y_i}$-module",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathcal O_{Y_i}$-module",
+   "new": "$\\mathcal O_{Y_i}$-Module"
+  },
+  "note": "Capital M (sheaf of modules), as the logged 'Module' fixes of pp. 286-295."
+ },
+ {
+  "page": 310,
+  "where": "'on déduit de (2.2.6) que A•(D) est un A•(S)-module'",
+  "scan": "A with a raised dot (twice)",
+  "tex": "$A^*(D)$ ... $A^*(S)$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(2.2.6) que $A^*(D)$ est un $A^*(S)$-module",
+   "new": "(2.2.6) que $A^{\\bullet}(D)$ est un $A^{\\bullet}(S)$-module"
+  },
+  "note": "The print's raised dot, not a star (A^{\\bullet} as the logged fixes of pp. 290-295)."
+ },
+ {
+  "page": 310,
+  "where": "'libre de rang r ! et que le morphisme φ_D'",
+  "scan": "no comma",
+  "tex": "$r!$, et que",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$r!$, et que",
+   "new": "$r!$ et que"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 310,
+  "where": "'est également un A•(S)-Module libre de rang r!'",
+  "scan": "A with a raised dot; capital M",
+  "tex": "$A^*(S)$-module",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "également un $A^*(S)$-module",
+   "new": "également un $A^{\\bullet}(S)$-Module"
+  },
+  "note": "Capital M (sheaf of modules), as the logged 'Module' fixes of pp. 286-295. One edit: it also gives the raised dot (symbol). The print's raised dot, not a star (A^{\\bullet} as the logged fixes of pp. 290-295)."
+ },
+ {
+  "page": 310,
+  "where": "'libre de rang r! d'où l'assertion dans le cas X = D.'",
+  "scan": "no semicolon",
+  "tex": "$r!$; d'où",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$r!$; d'où",
+   "new": "$r!$ d'où"
+  },
+  "note": "The TeX adds a semicolon."
+ },
+ {
+  "page": 310,
+  "where": "'d'où l'assertion dans le cas X = D. Dans le cas général'",
+  "scan": "one paragraph: 'Dans le cas général' starts a line at the margin, without the paragraph indent of the typescript",
+  "tex": "blank line (new paragraph)",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "$X=D$.\n\nDans le cas général",
+   "new": "$X=D$. Dans le cas général"
+  },
+  "note": "Layout only; drop if paragraph breaks are not checked."
+ },
+ {
+  "page": 310,
+  "where": "diagram, top row A•(X) → A•(D)",
+  "scan": "A with a raised dot (twice)",
+  "tex": "A^*(X) ... A^*(D)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "A^*(X) \\arrow[r,\"g^*\"] & A^*(D)",
+   "new": "A^{\\bullet}(X) \\arrow[r,\"g^*\"] & A^{\\bullet}(D)"
+  },
+  "note": "The print's raised dot, not a star (A^{\\bullet} as the logged fixes of pp. 290-295)."
+ },
+ {
+  "page": 310,
+  "where": "diagram, bottom left C = A•(S)[T_{i,j_i}]/J_X",
+  "scan": "A with a raised dot",
+  "tex": "C=A^*(S)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "C=A^*(S)",
+   "new": "C=A^{\\bullet}(S)"
+  },
+  "note": "The print's raised dot, not a star (A^{\\bullet} as the logged fixes of pp. 290-295)."
+ },
+ {
+  "page": 310,
+  "where": "diagram, bottom right A•(S)[U_k]/J_D",
+  "scan": "A with a raised dot",
+  "tex": "A^*(S)[U_k]/J_D",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "A^*(S)[U_k]/J_D",
+   "new": "A^{\\bullet}(S)[U_k]/J_D"
+  },
+  "note": "The print's raised dot, not a star (A^{\\bullet} as the logged fixes of pp. 290-295)."
+ },
+ {
+  "page": 310,
+  "where": "diagram, bottom arrow γ",
+  "scan": "γ above the arrow",
+  "tex": "\\arrow[r,\"\\gamma\"'] (label below the arrow)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r,\"\\gamma\"']",
+   "new": "\\arrow[r,\"\\gamma\"]"
+  },
+  "note": "Label position as in the print (as the logged label fixes of pp. 39, 57, 71, 265, 277-278); drop if label placement is left as layout."
+ },
+ {
+  "page": 310,
+  "where": "'à partir du morphisme de A•(S)-algèbres'",
+  "scan": "A with a raised dot",
+  "tex": "$A^*(S)$-algèbres",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "morphisme de $A^*(S)$-algèbres",
+   "new": "morphisme de $A^{\\bullet}(S)$-algèbres"
+  },
+  "note": "The print's raised dot, not a star (A^{\\bullet} as the logged fixes of pp. 290-295)."
+ },
+ {
+  "page": 310,
+  "where": "display A•(S)[T_{i,j_i}] → A•[U_k]",
+  "scan": "A•[U_k] (no (S))",
+  "tex": "A^\\bullet[U_k]",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "A^\\bullet(S)[U_k]",
+  "note": "The target is the A•(S)-algebra A•(S)[U_k] of the diagram; the (S) is left out. The TeX keeps the printed reading."
+ },
+ {
+  "page": 310,
+  "where": "'défini en envoyant T_{i,j_i} sur la j_i^{ème} fonction'",
+  "scan": "j_i with a raised 'ème'",
+  "tex": "$j_i$-ème",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$j_i$-ème",
+   "new": "$j_i^{\\text{ème}}$"
+  },
+  "note": "As the logged i^{ème} of p. 290."
+ },
+ {
+  "page": 310,
+  "where": "'il résulte de 5.4.1. b)'",
+  "scan": "5.4.1. with a full stop",
+  "tex": "5.4.1 b)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "résulte de 5.4.1",
+   "new": "résulte de 5.4.1."
+  },
+  "note": "The TeX drops the full stop after the number."
+ },
+ {
+  "page": 310,
+  "where": "'b) que A•(D)'",
+  "scan": "A with a raised dot",
+  "tex": "$A^*(D)$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "b) que $A^*(D)$",
+   "new": "b) que $A^{\\bullet}(D)$"
+  },
+  "note": "The print's raised dot, not a star (A^{\\bullet} as the logged fixes of pp. 290-295)."
+ },
+ {
+  "page": 310,
+  "where": "'que A•(D) un C-module libre de rang'",
+  "scan": "no 'est' (the line ends with A•(D), the next begins 'un C-module')",
+  "tex": "$A^*(D)$ est un $C$-module",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": " est un $C$",
+   "new": " un $C$"
+  },
+  "corrected": "que $A^{\\bullet}(D)$ est un $C$-module",
+  "note": "Word left out by the typist; the TeX silently supplies 'est'. Disjoint from the previous item."
+ },
+ {
+  "page": 310,
+  "where": "'montre que A•(D) est aussi un A•(X)-module'",
+  "scan": "A with a raised dot (twice)",
+  "tex": "$A^*(D)$ ... $A^*(X)$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "montre que $A^*(D)$ est aussi un $A^*(X)$-module",
+   "new": "montre que $A^{\\bullet}(D)$ est aussi un $A^{\\bullet}(X)$-module"
+  },
+  "note": "The print's raised dot, not a star (A^{\\bullet} as the logged fixes of pp. 290-295)."
+ },
+ {
+  "page": 310,
+  "where": "'on convient de poser pour tout schéma Y'",
+  "scan": "no comma",
+  "tex": "de poser, pour",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "de poser, pour",
+   "new": "de poser pour"
+  },
+  "note": "The TeX adds a comma."
+ },
+ {
+  "page": 310,
+  "where": "'et tout A_Y-Module M'",
+  "scan": "A_Y-Module",
+  "tex": "$A_Y$-module",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$A_Y$-module",
+   "new": "$A_Y$-Module"
+  },
+  "note": "Capital M (sheaf of modules), as the logged 'Module' fixes of pp. 286-295."
+ },
+ {
+  "page": 310,
+  "where": "'et tout A_Y-Module M' before the display Q(Y,M)",
+  "scan": "no comma",
+  "tex": "$M$,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$M$,\n\\[",
+   "new": "$M$\n\\["
+  },
+  "note": "The TeX adds a comma."
+ }
+]

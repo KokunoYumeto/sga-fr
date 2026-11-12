@@ -1,0 +1,165 @@
+{
+  "findings": [
+    {
+      "page": 51,
+      "where": "Opening paragraph, proof of c)",
+      "scan": "la famille de tous les morphismes",
+      "tex": "la famille de tout\n  les morphismes",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "la famille de tout",
+        "new": "la famille de tous"
+      },
+      "note": "The print has « tous », not « tout »."
+    },
+    {
+      "page": 51,
+      "where": "Proof of Proposition 7.4, definition of X'''",
+      "scan": "le produit fibré fibré de X' et X'' sur X",
+      "tex": "produit fibré de $X'$ et $X''$ sur $X$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "produit fibré de $X'$ et $X''$ sur $X$",
+      "note": "The print accidentally repeats « fibré ». The TeX silently removes the repetition."
+    },
+    {
+      "page": 52,
+      "where": "Proof of Corollary 7.5, opening sentence",
+      "scan": "En effet, par définitions,",
+      "tex": "En effet, par %%\ndéfinition,",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "par définition",
+      "note": "The printed plural « définitions » is a typo. The TeX silently corrects it to the singular."
+    },
+    {
+      "page": 53,
+      "where": "7.5.1, isomorphism identifying two quotient families",
+      "scan": "v : X' → X'' … fp_i = q_i",
+      "tex": "$fp_i=q_i$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "vp_i=q_i",
+      "note": "The isomorphism has just been named v, so f in the equation should be v. The TeX retains the printed inconsistency."
+    },
+    {
+      "page": 54,
+      "where": "First cardinality chain after (7.6.1)",
+      "scan": "\\card\\ob C_{/X}\\leq(\\Pi^{\\Pi_\\circ})\\times\\card\\ob C_{/X}",
+      "tex": "\\card\\ob C_{/X}\\leq(\\Pi^{\\Pi_\\circ})\\times\\card \\ob C_{/X}\\leq",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\card\\ob C_{/X}\\leq(\\Pi^{\\Pi_\\circ})\\times\\card\\ob C\\leq(\\Pi^{\\Pi_\\circ})\\times\\Pi_\\circ=\\Pi^{\\Pi_\\circ}",
+      "note": "The second occurrence of C_{/X} should be C: one counts the possible source objects in C. The TeX retains the erroneous subscript."
+    },
+    {
+      "page": 54,
+      "where": "Comparison of Hom cardinalities before Lemma 7.6.2",
+      "scan": "car Hom_C(S,T)",
+      "tex": "\\car\\Hom_C(S,T)",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\card\\Hom_C(S,T)",
+      "note": "The print omits the d of « card ». The source retains this as \\car rather than its usual \\card."
+    },
+    {
+      "page": 54,
+      "where": "Proof of Lemma 7.6.2, opening sentence",
+      "scan": "la famille des X_i ×_X T → est épimorphique",
+      "tex": "$\\fprod{X_i}{T}{X}\\rightarrow$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\fprod{X_i}{T}{X}\\rightarrow T",
+      "note": "The target T of the pullback projections is missing in the print. The TeX retains the omission."
+    },
+    {
+      "page": 54,
+      "where": "Proof of Lemma 7.6.2, generating assumption",
+      "scan": "comme C est génératrice par épimorphismes stricts",
+      "tex": "génératrice\npar épimorphismes stricts",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "génératrice par épimorphismes",
+      "note": "« stricts » erroneously strengthens the hypothesis of Proposition 7.6; generation by epimorphisms is all that is assumed and needed here. The TeX retains the printed word."
+    },
+    {
+      "page": 55,
+      "where": "Proof of Proposition 7.6, sentence following « les g_j »",
+      "scan": "Donc card Hom(T,X)",
+      "tex": "donc $\\card\\Hom(T,X)$",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "donc $\\card\\Hom(T,X)$",
+        "new": "Donc $\\card\\Hom(T,X)$"
+      },
+      "note": "The print begins the sentence with capital D."
+    },
+    {
+      "page": 55,
+      "where": "Proof of Proposition 7.6, set of indexing maps",
+      "scan": "l'ensemble des applications j → I",
+      "tex": "$j\\rightarrow I$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "J\\rightarrow I",
+      "note": "The domain is the indexing set J, not an element j. The TeX retains the printed lower-case j."
+    },
+    {
+      "page": 55,
+      "where": "Proof of Proposition 7.6, corresponding families for a fixed indexing map",
+      "scan": "S_j, f_j, v_j",
+      "tex": "$S_j$, $f_j$, $v_j$",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "S_j,g_j,v_j",
+      "note": "The morphisms supplied by Lemma 7.6.2 are g_j; no f_j has been defined. The TeX retains the printed f_j."
+    },
+    {
+      "page": 55,
+      "where": "Proof of Proposition 7.6, cardinality of Fl C × Fl C",
+      "scan": "\\card(F\\ell C\\times F\\ell C)=\\Pi_\\circ^2=\\Pi_\\circ",
+      "tex": "\\card(F\\ell C\\times F\\ell\nC)=\\Pi_\\circ^2=\\Pi_\\circ",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "\\card(F\\ell C\\times F\\ell C)\\leq\\Pi_\\circ^2=\\Pi_\\circ",
+      "note": "The first equality should be an inequality: the hypothesis only bounds card Fl C by Pi_circ. The TeX retains the printed equality."
+    },
+    {
+      "page": 55,
+      "where": "Proposition 7.7, condition on subobjects of X_alpha",
+      "scan": "et pour tout sous-objet",
+      "tex": "et pouf tout sous-objet",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "et pouf tout",
+        "new": "et pour tout"
+      },
+      "note": "The print reads « pour », not « pouf »."
+    },
+    {
+      "page": 55,
+      "where": "Proposition 7.7, existence of a detecting functor",
+      "scan": "un i ∈ J tel que",
+      "tex": "il existe un $i\\in I$ tel que",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "i\\in I",
+      "note": "The printed J should be I, the index set of the functors; J is introduced only afterwards. The TeX silently corrects it."
+    }
+  ],
+  "coordinator": "Counts (normal/misprint): 51: 1/1; 52: 0/1; 53: 0/1; 54: 0/4; 55: 2/4."
+}

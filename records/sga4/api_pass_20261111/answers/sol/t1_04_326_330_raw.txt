@@ -1,0 +1,100 @@
+{
+  "findings": [
+    {
+      "page": 326,
+      "where": "Last line; boundary with p. 327",
+      "scan": "Dans certains cas, il peut arriver que $f$",
+      "tex": "Dans certains cas, il peut arriver que",
+      "kind": "marker",
+      "confidence": "high",
+      "fix": null,
+      "note": "The final $f$ is printed on p. 326 but occurs at the start of the p. 327 TeX cut. P. 327 begins with « satisfasse ». Recut only; do not insert another $f$ into the source."
+    },
+    {
+      "page": 327,
+      "where": "First display, giving the two morphisms of toposes",
+      "scan": "u:F\\longrightarrow E\\quad\\text{et}\\quad v:E\\longrightarrow F",
+      "tex": "u:F\\longrightarrow E \\quav v:E\\longrightarrow F",
+      "kind": "word",
+      "confidence": "high",
+      "fix": {
+        "old": "E \\quav v:E",
+        "new": "E \\quad\\text{et}\\quad v:E"
+      },
+      "note": "The print has the conjunction « et », not a comma, between the two morphisms."
+    },
+    {
+      "page": 327,
+      "where": "Footnote",
+      "scan": "Cf. plus bas, dans le cas de faisceaux abéliens.",
+      "tex": "\\Cf plus bas \\hyperref[IV.subsec14.4]{14.4},\ndans le cas de faisceaux abéliens.",
+      "kind": "extra",
+      "confidence": "high",
+      "fix": {
+        "old": "plus bas \\hyperref[IV.subsec14.4]{14.4},",
+        "new": "plus bas,"
+      },
+      "note": "The explicit reference 14.4 is absent from the printed footnote."
+    },
+    {
+      "page": 328,
+      "where": "3.2, opening display, third component of v",
+      "scan": "v=(v_{\\ast},v^{\\ast},\\psi)",
+      "tex": "v=(v_{\\ast},v^{\\ast},\\Psi)",
+      "kind": "symbol",
+      "confidence": "high",
+      "fix": {
+        "old": "\\Psi",
+        "new": "\\psi"
+      },
+      "note": "The handwritten letter is lowercase psi, not capital Psi."
+    },
+    {
+      "page": 328,
+      "where": "3.2.1, display defining the contrafunctor",
+      "scan": "u\\longmapsto u^{\\ast}:\\Hhomtop(E,E')^{\\circ}\\longrightarrow\\Hhom(E,E')",
+      "tex": "u\\longmapsto u^{\\ast}:\\Hhomtop(E,E')^{\\circ}\\longrightarrow\n\\Hhom(E,E'){\\quoi}.",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "u\\longmapsto u^{\\ast}:\\Hhomtop(E,E')^{\\circ}\\longrightarrow\\Hhom(E',E)",
+      "note": "The target must be the category of functors from E' to E, since u^{\\ast}:E'\\to E. The TeX keeps the printed error."
+    },
+    {
+      "page": 329,
+      "where": "Last paragraph, « un tel point de vue est … »",
+      "scan": "impratiquable",
+      "tex": "impraticable",
+      "kind": "misprint_in_print",
+      "confidence": "high",
+      "fix": null,
+      "corrected": "impraticable",
+      "note": "The printed spelling is erroneous; the TeX silently corrects it."
+    },
+    {
+      "page": 329,
+      "where": "Last paragraph, immediately after the reference 3.1",
+      "scan": "garder la notion \"fine\" 3.1 de la notion de morphisme entre morphismes de topos",
+      "tex": "garder la notion « fine » \\hyperref[IV.def3.1]{3.1} de la\nnotion de morphisme entre morphismes de topos",
+      "kind": "misprint_in_print",
+      "confidence": "medium",
+      "fix": null,
+      "corrected": "garder la notion « fine » \\hyperref[IV.def3.1]{3.1} et la notion de morphisme entre morphismes de topos",
+      "note": "The connective « de la notion » is a printed slip for « et la notion »: both the fine notion of a topos morphism and morphisms between such morphisms must be retained. The TeX keeps the slip."
+    },
+    {
+      "page": 330,
+      "where": "3.3.1, sentence beginning « D'autre part »",
+      "scan": "le foncteur $u^{\\ast}v^{\\ast}$ est exact à gauche",
+      "tex": "le foncteur $u^{\\ast}v^{\\ast}$ exact à gauche",
+      "kind": "missing",
+      "confidence": "high",
+      "fix": {
+        "old": "$u^{\\ast}v^{\\ast}$ exact à gauche",
+        "new": "$u^{\\ast}v^{\\ast}$ est exact à gauche"
+      },
+      "note": "The printed verb « est » is missing from the TeX."
+    }
+  ],
+  "coordinator": "326: 1/0; 327: 2/0; 328: 1/1; 329: 0/2; 330: 1/0 (normal/misprint; marker counted as normal).\nMarker 326–327: assign the final $f$ to the p. 326 cut; p. 327 begins with « satisfasse ». No source-text edit."
+}

@@ -1,0 +1,10 @@
+```json
+{"findings": [
+{"page": 386, "where": "(5.5.11.2), last factor", "scan": "Γ^{k}_{ext}(F'')", "tex": "\\Gamma^{k}_{\\ext}(F'')", "kind": "misprint_in_print", "confidence": "medium", "fix": null, "corrected": "\\Gamma^{k_{2}}_{\\ext}(F'')", "note": "The sum runs over k_1+k_2=k, so the exponent of the second factor should be k_2. The print has k and the TeX keeps it."},
+{"page": 387, "where": "diagram of 5.5.12, label of the bottom arrow", "scan": "TS^n_ext(v)", "tex": "TS^{n}_{\\ext(v)}", "kind": "formula", "confidence": "high", "fix": {"old": "TS^{n}_{\\ext(v)}", "new": "TS^{n}_{\\ext}(v)"}, "note": "In the TeX the argument (v) has slipped into the subscript."},
+{"page": 388, "where": "Lemme 5.5.13.2, after 'Tor-dimension ≤ 0'", "scan": "des complexes de Tor-dimension ≤ 0 est équivalente", "tex": "de \\tTor-dimension $\\leq 0$ \\emph{\\hyperref[XVII.def4.1.9]{4.1.9}}", "kind": "extra", "confidence": "high", "fix": {"old": " $\\leq 0$ \\emph{\\hyperref[XVII.def4.1.9]{4.1.9}}", "new": " $\\leq 0$"}, "note": "The print has no reference 4.1.9 here. It was added to the TeX without an editor's note."},
+{"page": 390, "where": "reference to Dold-Puppe", "scan": "DOLD PUPPE[1.2.9 pg.213]", "tex": "\\cite[2.9 \\sisi{pg.213}{p.~213}]{SGA4-17:DP}", "kind": "number", "confidence": "high", "fix": {"old": "[2.9 \\sisi{pg.213}", "new": "[1.2.9 \\sisi{pg.213}"}, "note": "The print cites 1.2.9; the TeX has 2.9."},
+{"page": 390, "where": "last display before Lemme 5.5.16", "scan": "| LΓ^k_ext(Δ)) | ≃ LΓ^k_ext(|Δ|)", "tex": "\\lvert L\\Gamma^{k}_{\\ext}(\\Delta))\\rvert", "kind": "misprint_in_print", "confidence": "low", "fix": null, "corrected": "\\lvert L\\Gamma^{k}_{\\ext}(\\Delta)\\rvert", "note": "The print has a superfluous closing parenthesis; the TeX keeps it."}
+],
+"coordinator": "p386: 0/1; p387: 1/0; p388: 1/0; p389: 0/0; p390: 1/1."}
+```
