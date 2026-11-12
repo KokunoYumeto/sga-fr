@@ -1,7 +1,9 @@
-# SGA 4½ : le texte français est la composition LaTeX de Daniel Miller
+# SGA 4½ : la composition LaTeX de Daniel Miller
 
 P. Deligne, avec la collaboration de J.-F. Boutot, A. Grothendieck, L. Illusie et J.-L. Verdier, *Cohomologie étale* (SGA 4½), Lecture Notes in Mathematics 569, Springer, 1977.
 
-Le texte français de référence est la composition LaTeX de Daniel Miller, publiée à l’origine sur https://github.com/dkmiller/sga4.5 (cette adresse ne répond plus) ; une copie se trouve sur https://github.com/NomiL/sga4.5.
+`src/` contient la composition LaTeX de ce livre faite par Daniel Miller, telle que nous la conservons (fichiers inchangés ; compilation : `pdflatex sga4.5.tex`, puis `bibtex`, puis deux fois `pdflatex`). Dans sa note de composition (`src/sga4.5-note.tex`), Daniel Miller la décrit comme une version essentiellement non modifiée de l’original (« an essentially unmodified version of the original ») : les changements sont légers, par exemple des lettres de ronde pour les faisceaux, et des notations pour les Hom de faisceaux et leurs foncteurs dérivés.
 
-Pourquoi le texte n’est pas ici : aucune licence de réutilisation n’est indiquée ; nous renvoyons donc à la composition de Daniel Miller. Les enregistrements d’une vérification par sondage de ce texte sur les scans sont dans `records/sga4_5/`.
+Son dépôt d’origine, https://github.com/dkmiller/sga4.5, n’existe plus ; une copie subsiste sur https://github.com/NomiL/sga4.5.
+
+Notre vérification de chaque page sur l’imprimé de 1977 (LNM 569), par deux modèles, est en cours. Le texte corrigé remplacera celui-ci, chaque changement étant enregistré. Les enregistrements d’une première vérification par sondage sont dans `records/sga4_5/`.
