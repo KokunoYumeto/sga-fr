@@ -5,7 +5,7 @@ Ce dépôt contient les textes français du Séminaire de géométrie algébriqu
 ## Contenu
 
 - [`raw/pro_returns/SGA7_READERS_20261112/`](raw/pro_returns/SGA7_READERS_20261112/) : les livres de lecture de SGA 7 I et II, construction du 12 novembre 2026, telle qu’elle a été livrée, avec ses enregistrements. Pas encore relue.
-- [`volumes/`](volumes/) : les textes de référence de SGA 4, SGA 5, SGA 6, SGA 7 I et SGA 7 II, chacun en deux couches (voir ci-dessous).
+- [`volumes/`](volumes/) : les textes de référence de SGA 4, SGA 5, SGA 6, SGA 7 I et SGA 7 II, chacun en deux couches (voir ci-dessous). Pour SGA 1, SGA 2, SGA 3 et SGA 4½, dont le texte français est publié ailleurs sans licence de réutilisation, `volumes/sga1/`, `volumes/sga2/`, `volumes/sga3/` et `volumes/sga4_5/` renvoient à ces éditions.
 - [`records/`](records/) : par volume, les journaux de corrections, les registres des coquilles de l’imprimé, les rejeux, les rapports des vérificateurs et leurs consignes.
 - [`method/`](method/) : la méthode de la vérification (`METHODOLOGY.md`, en anglais), la consigne des vérificateurs, les questions réglées pour tout un volume (`GLOBAL_ISSUES_SGA.md`) et les scripts.
 
@@ -22,7 +22,7 @@ Les coquilles de l’imprimé sont relevées dans `records/<volume>/MISPRINTS_<v
 
 **SGA 4.** Le texte est l’édition LaTeX française de SGA 4, tomes 1–3 (Lecture Notes in Mathematics 269, 270, 305), diffusée par Fabrice Orgogozo (https://www.normalesup.org/~forgogozo/SGA4/ ; instantané au commit git `71766d9`), avec ses fichiers de configuration TeX et ses notes éditoriales « N.D.E. », plus les retouches de conservation de la source faites par OpenAI Codex en août–septembre 2026. Première vérification (11 novembre 2026) : chaque page imprimée qui a du TeX (1 557 pages) a été vérifiée sur les scans par deux modèles, Claude Opus 5.5 et GPT-6.1 Sol ; les 898 corrections données à l’identique par les deux sont appliquées à la couche diplomatique, dont 774 rejouées dans la couche corrigée ; 930 coquilles de l’imprimé sont relevées et non appliquées ; les 443 pages où les deux modèles divergent ou signalent un doute attendent une seconde vérification (`records/sga4/api_pass_20261111/PAGES_FOR_APP_CHECK.json`). Les corrections sont produites par IA.
 
-**SGA 4½.** Seuls les enregistrements d’une vérification par sondage (`records/sga4_5/`) sont ici ; le texte est la composition LaTeX de Daniel Miller (https://github.com/dkmiller/sga4.5).
+**SGA 4½.** Seuls les enregistrements d’une vérification par sondage (`records/sga4_5/`) sont ici ; le texte est la composition LaTeX de Daniel Miller (voir `volumes/sga4_5/README.md`).
 
 **SGA 6.** Transcription par IA (OpenAI Codex, juin–août 2026 ; base : la division du 5 août), en deux couches, avec repères de pages ajoutés. Vérification en cours, de la même manière que SGA 5 et SGA 7, sur l’exemplaire de l’Internet Archive (environ 360 ppi) de SGA 6 (Lecture Notes in Mathematics 225, 1971) : 78 lots de cinq pages sur 140 faits au 12 novembre 2026. Les corrections de Codex du 23 août sont dans `records/sga6/ref_hold/` et ne sont pas encore dans les couches vérifiées : chacune est vérifiée sur le scan avant d’y entrer (`records/sga6/HOLD_VS_CORR.md`, 119 différences).
 
