@@ -1,0 +1,32 @@
+% from main.tex
+%%%%%%%%%%  scan idx 694  |  folio 681  %%%%%%%%%%
+\section*{5. Relations entre \(\operatorname{Gr}^\bullet(X)\) et \(H^{2\bullet}(X,\Zell(\bullet))\)}
+
+\textbf{5.1.} L'exemple donné dans 4.8 n'exclut pas qu'on puisse peut-être trouver, pour un schéma $X$ quelconque, un homomorphisme d'anneaux
+\[
+ g':\operatorname{Gr}^\bullet(X)\longrightarrow H^{2\bullet}(X,\Zell(\bullet)),
+\]
+tels que pour tout Module localement libre $E$ sur $X$, $g^i$ transforme la classe de Chern $c_i(E)$ de Exp. V en la classe de Chern cohomologique de SGA 5 VII. Bien entendu, ici $\ell$ désigne un nombre premier distinct des caractéristiques résiduelles de $X$. Comme l'anneau $\operatorname{Gr}^\bullet(X)$ est engendré par les $c^i(E)$, on voit en tous cas que $g'$ est uniquement déterminé par la condition d'être compatible avec les classes de Chern.
+
+\textbf{5.2.} Utilisant l'homomorphisme de Chern
+\[
+ K^\bullet(X)\longrightarrow\Ch\bigl(H^{2\bullet}(X,\Zell(\bullet))\bigr),
+\]
+on en conclut, par passage aux gradués associés respectivement à la filtration du premier membre et la filtration par le degré du second, un homomorphisme de groupes gradués (mais pas d'anneaux !)
+\[
+ \psi:\operatorname{Gr}^\bullet(X)\longrightarrow H^{2\bullet}(X,\Zell(\bullet)),
+\]
+qui satisfait à la relation
+\[
+ \psi(c_i(E))=(-1)^{i-1}(i-1)!\,c_i^\ell(E),
+\]
+où $c_i^\ell(E)$ désigne la classe de Chern $\ell$-adique. On en conclut, par division à partir des $\psi^i$, un homomorphisme d'anneaux
+\[
+ g_\Q:\operatorname{Gr}^\bullet(X)\longrightarrow
+ H^{2\bullet}(X,\Qell(\bullet))=
+ H^{2\bullet}(X,\Zell(\bullet))\otimes_{\Zell}\Qell,
+\]
+transformant classe de Chern en classes de Chern; et tel que l'image du premier membre soit contenue dans celle de $H^2(X,\Zell(\bullet))$; par suite, la question de l'existence de $g'$ se résoud affirmativement pourvu qu'on remplace $H^{2\bullet}(X,\Zell(\bullet))$ par son quotient par son sous-groupe de torsion. Le premier cas douteux pour définir les composantes $g^i$ de l'hypothètique homomorphisme $g$ est celui de $g^3$, on n'arrive à priori qu'à définir $2g^3=\psi^3$. La réponse à la question d'existence de $g^3$ serait négative si par exemple on pouvait trouver trois faisceaux inversibles $L_1,L_2,L_3$ sur $X$ satisfaisant la relation
+\[
+ (L_1-1)(L_2-1)(L_3-1)=0\quad\text{dans }K^\bullet(X),
+\]

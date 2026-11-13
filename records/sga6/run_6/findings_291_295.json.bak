@@ -1,0 +1,368 @@
+[
+ {
+  "page": 291,
+  "where": "first line of the page / folio-291 marker",
+  "scan": "est donc définie, reste à montrer que c'est un isomorphisme.",
+  "tex": "the marker follows '... La flèche de changement de base est'; the page's TeX starts 'donc définie'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 291 really begins with 'est' (both scans). In both layers of main.tex replace 'La flèche de changement de base est\\n%%%%%%%%%%  scan idx 304  |  folio 291  %%%%%%%%%%\\ndonc définie' by 'La flèche de changement de base\\n%%%%%%%%%%  scan idx 304  |  folio 291  %%%%%%%%%%\\nest donc définie' (once in each layer). Equivalent: python -I move_marker.py 6 291 \"est\" --before (simulated on both layers: '... de changement de base ' / marker / 'est' / 'donc définie, ...')."
+ },
+ {
+  "page": 291,
+  "where": "display after 'qui s'écrit'",
+  "scan": "B ⊗^L_A A' ~⟶ B' , (typed L over the tensor sign)",
+  "tex": "B\\otimes_A^{\\mathbf L}A'",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "B\\otimes_A^{\\mathbf L}A'",
+   "new": "B\\otimes_A^{\\mathrm L}A'"
+  },
+  "note": "The typescript types the L over the tensor sign with the ordinary typewriter L (both scans); the TeX writes \\mathbf L. Exposé III's derived-tensor L was set to \\mathrm L globally; Exposé IV still has \\mathbf L."
+ },
+ {
+  "page": 291,
+  "where": "display after 'dans D(A')'",
+  "scan": "E ⊗^L_A A' ~⟶ E ⊗^L_B B' , (two typed L)",
+  "tex": "E\\otimes_A^{\\mathbf L}A'\\xrightarrow{\\sim}E\\otimes_B^{\\mathbf L}B'",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "E\\otimes_A^{\\mathbf L}A'\\xrightarrow{\\sim}E\\otimes_B^{\\mathbf L}B'",
+   "new": "E\\otimes_A^{\\mathrm L}A'\\xrightarrow{\\sim}E\\otimes_B^{\\mathrm L}B'"
+  },
+  "note": "Two \\mathbf L in one display. The typescript types the L over the tensor sign with the ordinary typewriter L (both scans); the TeX writes \\mathbf L. Exposé III's derived-tensor L was set to \\mathrm L globally; Exposé IV still has \\mathbf L."
+ },
+ {
+  "page": 292,
+  "where": "heading 3.2",
+  "scan": "3.2. Passage à la limite sur K˙_naïf et K (no full stop after the title)",
+  "tex": "\\textbf{3.2. Passage à la limite sur \\(K'_{\\naif}\\) et \\(K_{\\bullet}\\).}",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\).} Soit",
+   "new": "\\)} Soit"
+  },
+  "note": "The TeX adds a full stop after the title (both scans end the heading with 'K'). Independent of the misprint entry for the same K below (disjoint edits)."
+ },
+ {
+  "page": 292,
+  "where": "heading 3.2, last symbol",
+  "scan": "et K (the K of K. without its dot, both scans)",
+  "tex": "et \\(K_{\\bullet}\\)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "et \\(K_{\\bullet}",
+   "new": "et \\(K"
+  },
+  "corrected": "et \\(K_{\\bullet}",
+  "note": "The heading names the two groups K˙_naïf and K.; the typist left out the dot of K. (no trace in either scan; the K. of the statement on the same page has it). The TeX silently corrects to K_{\\bullet}; the diplomatic reading is a plain K."
+ },
+ {
+  "page": 292,
+  "where": "3.2, 'Posons X = lim X_i'",
+  "scan": "X = lim← X_i (no index under lim)",
+  "tex": "X=\\varprojlim_i X_i",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "X=\\varprojlim_i X_i",
+   "new": "X=\\varprojlim X_i"
+  },
+  "note": "No index under 'lim' in either scan (the i is X_i's); the TeX adds the summation index _i."
+ },
+ {
+  "page": 292,
+  "where": "display (3.2.1.1)",
+  "scan": "lim→ K˙(X_i)_naïf ⟶ K˙(X)_naïf . (no index under lim)",
+  "tex": "\\varinjlim_i K'(X_i)_{\\naif}\\longrightarrow K'(X)_{\\naif}.",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\varinjlim_i K'(X_i)_{\\naif}\\longrightarrow K'(X)_{\\naif}.",
+   "new": "\\varinjlim K'(X_i)_{\\naif}\\longrightarrow K'(X)_{\\naif}."
+  },
+  "note": "No index under 'lim' in either scan (the i is X_i's); the TeX adds the summation index _i."
+ },
+ {
+  "page": 292,
+  "where": "3.2.1, after the display",
+  "scan": "Je dis que l'homomorphisme (3.2.1.1) est un isomorphisme. ('l'homomorphisme' and 'est un isomorphisme' underlined)",
+  "tex": "Je dis que l'homomorphisme (3.2.1.1) est un isomorphisme.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Je dis que l'homomorphisme (3.2.1.1) est un isomorphisme.",
+   "new": "Je dis que \\emph{l'homomorphisme} (3.2.1.1) \\emph{est un isomorphisme}."
+  },
+  "note": "Emphasis in running text, not a statement; Exposé IV writes the underline with \\emph (both scans)."
+ },
+ {
+  "page": 292,
+  "where": "3.2.1, 'tel que l'on ait E ≃ f_i*(E_i)'",
+  "scan": "fini E_i tel que l'on ait E ≃ f_i*(E_i). En vertu de ... (inline, in the running text)",
+  "tex": "displayed: \\[ E\\simeq f_i^*(E_i). \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "tel que l'on ait\n\\[\n E\\simeq f_i^*(E_i).\n\\]\nEn vertu de",
+   "new": "tel que l'on ait \\(E\\simeq f_i^*(E_i)\\). En vertu de"
+  },
+  "note": "The print sets the formula inline; the TeX makes it a display (same kind of fix as SGA 6 pp. 21, 34, 42)."
+ },
+ {
+  "page": 292,
+  "where": "3.2.1, 'l'image de cl(E_i) dans lim ...'",
+  "scan": "dans lim→ K˙(X_i)_naïf ne dépend (no index under lim)",
+  "tex": "dans \\(\\varinjlim_i K'(X_i)_{\\naif}\\) ne dépend",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "dans \\(\\varinjlim_i K'(X_i)_{\\naif}\\) ne dépend",
+   "new": "dans \\(\\varinjlim K'(X_i)_{\\naif}\\) ne dépend"
+  },
+  "note": "No index under 'lim' in either scan (the i is X_i's); the TeX adds the summation index _i."
+ },
+ {
+  "page": 292,
+  "where": "3.2.1, last line 'u : ob Loclib(X) ⟶ lim ...'",
+  "scan": "lim K˙(X_i)_naïf (no index)",
+  "tex": "\\varinjlim_i K'(X_i)_{\\naif}\\) ainsi",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "_i K'(X_i)_{\\naif}\\) ainsi",
+   "new": " K'(X_i)_{\\naif}\\) ainsi"
+  },
+  "note": "No index under 'lim' in either scan (the i is X_i's); the TeX adds the summation index _i. Disjoint from the misprint entry that follows (the missing arrow under the same lim)."
+ },
+ {
+  "page": 292,
+  "where": "3.2.1, last line 'u : ob Loclib(X) ⟶ lim ...'",
+  "scan": "u : ob Loclib(X) ⟶ lim K˙(X_i)_naïf : plain 'lim', no arrow under it (both scans)",
+  "tex": "\\(u:\\Ob\\Loclib(X)\\longrightarrow \\varinjlim_i K'(X_i)_{\\naif}\\)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\longrightarrow \\varinjlim",
+   "new": "\\longrightarrow \\lim"
+  },
+  "corrected": "\\longrightarrow \\varinjlim",
+  "note": "Every other lim of 3.2 has its hand-drawn arrow; this one was left without it (the same inductive limit as in (3.2.1.1)). The TeX silently corrects to \\varinjlim. Apply after or before the index entry above: the two old strings do not overlap."
+ },
+ {
+  "page": 293,
+  "where": "first line",
+  "scan": "K˙(X)_naïf ⟶ lim→ K˙(X_i)_naïf , dont on (no index under lim)",
+  "tex": "\\longrightarrow \\varinjlim_i K'(X_i)_{\\naif}\\), dont",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow \\varinjlim_i K'(X_i)_{\\naif}\\), dont",
+   "new": "\\longrightarrow \\varinjlim K'(X_i)_{\\naif}\\), dont"
+  },
+  "note": "No index under 'lim' in either scan (the i is X_i's); the TeX adds the summation index _i."
+ },
+ {
+  "page": 293,
+  "where": "display (3.2.2.1) in 3.2.2",
+  "scan": "lim→ K˙(X_i) ⟶ K˙(X) . (no index under lim)",
+  "tex": "\\varinjlim_i K'(X_i)\\longrightarrow K'(X).",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\varinjlim_i K'(X_i)\\longrightarrow K'(X).",
+   "new": "\\varinjlim K'(X_i)\\longrightarrow K'(X)."
+  },
+  "note": "No index under 'lim' in either scan (the i is X_i's); the TeX adds the summation index _i."
+ },
+ {
+  "page": 293,
+  "where": "3.2.2, 'la catégorie Lim des catégories analogues'",
+  "scan": "Lim with a capital L, arrow → under it (both scans)",
+  "tex": "\\(\\varinjlim\\)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "catégorie \\(\\varinjlim\\) des",
+   "new": "catégorie \\(\\mathop{\\underrightarrow{\\mathrm{Lim}}}\\) des"
+  },
+  "note": "The 2-limit of categories is typed 'Lim' (capital), unlike the group limits 'lim'. The form \\mathop{\\underrightarrow{\\mathrm{Lim}}} is the one main.tex already uses (Exposé II)."
+ },
+ {
+  "page": 293,
+  "where": "3.2.3, first line",
+  "scan": "X_i et X noethériens,et les morphismes f_ij plats ('noethériens' and 'plats' underlined)",
+  "tex": "\\(X\\) noethériens, et les morphismes \\(f_{ij}\\) plats",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(X\\) noethériens, et les morphismes \\(f_{ij}\\) plats",
+   "new": "\\(X\\) \\emph{noethériens}, et les morphismes \\(f_{ij}\\) \\emph{plats}"
+  },
+  "note": "Underlined hypotheses in a numbered paragraph (both scans); \\emph is the file's command in Exposé IV."
+ },
+ {
+  "page": 293,
+  "where": "display in 3.2.3",
+  "scan": "lim→ K.(X_i) ~⟶ K.(X) . (no index under lim)",
+  "tex": "\\varinjlim_i K_{\\bullet}(X_i)\\xrightarrow{\\sim}K_{\\bullet}(X).",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\varinjlim_i K_{\\bullet}(X_i)\\xrightarrow",
+   "new": "\\varinjlim K_{\\bullet}(X_i)\\xrightarrow"
+  },
+  "note": "No index under 'lim' in either scan (the i is X_i's); the TeX adds the summation index _i."
+ },
+ {
+  "page": 293,
+  "where": "display in 3.2.3, equation number",
+  "scan": "(3.2.2.1) — the same number as the display of 3.2.2",
+  "tex": "\\tag{3.2.2.1} (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\tag{3.2.3.1}",
+  "note": "Two displays carry (3.2.2.1) (both scans); the one in 3.2.3 should be (3.2.3.1). The two later references '(3.2.1.1) et (3.2.2.1)' in the next paragraph mean this display and follow the printed number. The TeX keeps the printed reading; the corrected layer already reads \\tag{3.2.3.1} and (3.2.3.1) in both references."
+ },
+ {
+  "page": 293,
+  "where": "paragraph 'Comme les structures ...'",
+  "scan": "que lim→ K.(X_i) est muni (no index under lim)",
+  "tex": "que \\(\\varinjlim_i K_{\\bullet}(X_i)\\) est muni",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "que \\(\\varinjlim_i K_{\\bullet}(X_i)\\) est muni",
+   "new": "que \\(\\varinjlim K_{\\bullet}(X_i)\\) est muni"
+  },
+  "note": "No index under 'lim' in either scan (the i is X_i's); the TeX adds the summation index _i."
+ },
+ {
+  "page": 293,
+  "where": "paragraph 'Comme les structures ...'",
+  "scan": "sur lim→ K˙(X_i)_naïf ; celle-ci (no index under lim)",
+  "tex": "sur \\(\\varinjlim_i K'(X_i)_{\\naif}\\);",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "sur \\(\\varinjlim_i K'(X_i)_{\\naif}\\);",
+   "new": "sur \\(\\varinjlim K'(X_i)_{\\naif}\\);"
+  },
+  "note": "No index under 'lim' in either scan (the i is X_i's); the TeX adds the summation index _i."
+ },
+ {
+  "page": 293,
+  "where": "diagram, left vertical arrow",
+  "scan": "label ≃ (tilde over a bar), to the right of the arrow",
+  "tex": "\\arrow[d,\"\\sim\"']",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[d,\"\\sim\"']",
+   "new": "\\arrow[d,\"\\simeq\"]"
+  },
+  "note": "Both vertical labels are the typed ≃ (as in 'K.(X) ≃ K.(X)_naïf' on this page, which the TeX writes \\simeq), not the bare tilde set over the arrow of the display above; the print puts this label on the right."
+ },
+ {
+  "page": 293,
+  "where": "diagram, right vertical arrow",
+  "scan": "label ≃ (tilde over a bar)",
+  "tex": "\\arrow[d,\"\\sim\"]",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[d,\"\\sim\"]",
+   "new": "\\arrow[d,\"\\simeq\"]"
+  },
+  "note": "As the left vertical arrow."
+ },
+ {
+  "page": 294,
+  "where": "heading 3.3",
+  "scan": "3.3. Groupes de Grothendieck relatifs (no full stop)",
+  "tex": "\\textbf{3.3. Groupes de Grothendieck relatifs.}",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "relatifs.}",
+   "new": "relatifs}"
+  },
+  "note": "The TeX adds a full stop after the title (both scans)."
+ },
+ {
+  "page": 294,
+  "where": "3.3.1 and 3.3.2.2 (and p. 295)",
+  "scan": "the subscript parf is underlined: D(f)_parf (6 places on p. 294, 8 on p. 295; coh is not underlined)",
+  "tex": "D(f)_{\\parf} with \\parf = \\operatorname{parf} (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention, not itemized (see the coordinator message): \\parf (first defined in Exposé I's macros; the later \\providecommand are no-ops) prints a plain 'parf'. Examples: p. 294 K'(f)=k(D(f)_{\\parf}); p. 294 D(f)_{\\parf}\\times D(g)_{\\parf}\\longrightarrow D(h)_{\\parf}; p. 295 D(h)_{\\parf} dans D(g)_{\\parf}."
+ },
+ {
+  "page": 294,
+  "where": "3.3.2, after the triangle",
+  "scan": "un triangle commutatif de morphisme localement de type fini de schémas.",
+  "tex": "de morphisme localement (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "morphismes",
+  "note": "Singular 'morphisme' (both scans); the triangle has three morphisms, as 'un triangle commutatif de morphismes' elsewhere in the volume. The TeX keeps the printed reading; the corrected layer already reads 'morphismes'."
+ },
+ {
+  "page": 294,
+  "where": "3.3.2.2",
+  "scan": "le foncteur ⊗^L_Y (typed L)",
+  "tex": "\\(\\otimes_Y^{\\mathbf L}\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes_Y^{\\mathbf L}",
+   "new": "\\otimes_Y^{\\mathrm L}"
+  },
+  "note": "The typescript types the L over the tensor sign with the ordinary typewriter L (both scans); the TeX writes \\mathbf L. Exposé III's derived-tensor L was set to \\mathrm L globally; Exposé IV still has \\mathbf L."
+ },
+ {
+  "page": 295,
+  "where": "3.3.2.3, display after 'on déduit la formule'",
+  "scan": "f_*(ax) = af_*(x) (no comma; 'pour f propre' follows)",
+  "tex": "f_*(a x)=a f_*(x),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "f_*(a x)=a f_*(x),",
+   "new": "f_*(a x)=a f_*(x)"
+  },
+  "note": "The TeX adds a comma at the end of the display (both scans)."
+ },
+ {
+  "page": 295,
+  "where": "3.3.3",
+  "scan": "le foncteur ⊗^L_S (typed L)",
+  "tex": "\\(\\otimes_S^{\\mathbf L}\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes_S^{\\mathbf L}",
+   "new": "\\otimes_S^{\\mathrm L}"
+  },
+  "note": "The typescript types the L over the tensor sign with the ordinary typewriter L (both scans); the TeX writes \\mathbf L. Exposé III's derived-tensor L was set to \\mathrm L globally; Exposé IV still has \\mathbf L."
+ },
+ {
+  "page": 295,
+  "where": "end of the page / folio-296 marker",
+  "scan": "p. 295 ends with the display K˙(f_1) ⊗ K˙(f_2) ⟶ K˙(f) . ; p. 296 begins '(Bien entendu, pour ...'",
+  "tex": "a lone '(' line stands at the end of page_295.tex, above the folio-296 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The '(' is the first character of p. 296 (witness p. 296). In both layers of main.tex replace '(\\n%%%%%%%%%%  scan idx 309  |  folio 296  %%%%%%%%%%\\nBien entendu' by '%%%%%%%%%%  scan idx 309  |  folio 296  %%%%%%%%%%\\n(Bien entendu' (once in each layer). This moves the marker and joins the '(' to its word in one step; python -I move_marker.py 6 296 \"(\" --before alone would leave '(' on its own line, printing '( Bien entendu'."
+ }
+]

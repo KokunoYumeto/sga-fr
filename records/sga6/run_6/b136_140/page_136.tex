@@ -1,0 +1,25 @@
+% from main.tex
+%%%%%%%%%%  scan idx 149  |  folio 136  %%%%%%%%%%
+Voici maintenant un cas particulier de (5.8).
+
+\textbf{Lemme 5.8.3.} Soit \(E\) un \(A\)-Module à gauche. Conditions équivalentes :
+\begin{enumerate}[label=(\roman*)]
+\item \(E\) est localement facteur direct d'un Module libre de type fini;
+\item \(E\) est plat et de présentation finie.
+\end{enumerate}
+
+\emph{Preuve} (d'après BOURBAKI Alg. Comm. chap. I, § 2 Exer 15). Il est clair que (i) implique (ii). Prouvons (ii) \(\Rightarrow\) (i). En vertu de (1.3.1), il s'agit de montrer que le foncteur \(\Hom_A(E,\cdot)\) est exact. Soit \(F\longrightarrow F''\longrightarrow 0\) une suite exacte de \(A\)-Modules (à gauche). On doit montrer que la suite
+\[
+  \Hom_A(E,F)\longrightarrow \Hom_A(E,F'')\longrightarrow 0
+\]
+est exacte. Il suffit pour cela de prouver que, pour tout \(\mathbb Z_S\)-Module injectif \(I\), la suite déduite par application du foncteur \(\Hom_{\mathbb Z_S}(\cdot,I)\) est exacte. Or on a un diagramme commutatif, où les flèches verticales sont les flèches canoniques de (3.17.1) :
+\[
+\begin{array}{ccccccccc}
+0&\to&\Hom_{\mathbb Z_S}(F'',I)\otimes_A E&\to&\Hom_{\mathbb Z_S}(F,I)\otimes_A E\\
+&&\downarrow&&\downarrow\\
+0&\to&\Hom_{\mathbb Z_S}(\Hom_A(E,F''),I)&\to&\Hom_{\mathbb Z_S}(\Hom_A(E,F),I).
+\end{array}
+\]
+Les flèches verticales sont des isomorphismes en vertu de (5.8.2). La ligne du haut est exacte parce que \(E\) est plat. Donc la ligne du bas est exacte, cqfd.
+
+\emph{Preuve de (5.8).} L'implication (i) \(\Rightarrow\) (ii) résulte trivialement des définitions. Prouvons (ii) \(\Rightarrow\) (i). La question étant locale, on peut supposer \(E\) strictement \((m-1)\)-pseudo-cohérent. Comme d'autre part \(E\) est acyclique en degré \(<m\), la flèche de

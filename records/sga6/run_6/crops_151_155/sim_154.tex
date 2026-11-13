@@ -1,0 +1,26 @@
+% from main.tex
+%%%%%%%%%%  scan idx 167  |  folio 154  %%%%%%%%%%
+\textbf{Exercice 7.9.} Soient \(E,F\in\Ob\Dpx(S)_{\underline{\mathrm{parf}}}\). Montrer qu'il existe un isomorphisme canonique
+\[
+  E^\vee\otL F^\vee \xrightarrow{\sim} (E\otL F)^\vee .
+\]
+
+\section*{8. Traces et cup-produits}
+
+\textbf{8.0.} Dans ce numéro, on généralise aux complexes parfaits la notion de trace d'un endomorphisme d'un module projectif de type fini (voir SGA 5 III pour des applications). Les hypothèses et notations sont celles de (7.0).
+
+\textbf{8.1.} Soit \(E\in\Ob\Dpx(S)_{\underline{\mathrm{parf}}}\) (5.8.4.b)). Il existe une flèche naturelle
+\[
+  \tau:\mathbb{R}\underline{\Hom}(E,E)\longrightarrow A,
+\]
+composée de l'isomorphisme inverse de (7.7) \(\mathbb{R}\underline{\Hom}(E,E)\xrightarrow{\sim}E^\vee\otL E\) et de la flèche canonique (7.5) \(E^\vee\otL E\to A\).
+
+Soit \(U\in\Ob S\). Appliquant à \(\tau\) le foncteur \(H^0(U,.)\), et tenant compte du fait que \(H^0(U,\mathbb{R}\underline{\Hom}(E,E))\) s'identifie à \(\Hom_{\Dpx(U)}(E|U,E|U)\), on en déduit un homomorphisme de \(H^0(U,A)\)-modules,
+\[
+  \Tr_{E|U}:\Hom_{\Dpx(U)}(E|U,E|U)\longrightarrow H^0(U,A),
+\]
+que l'on appelle \emph{homomorphisme trace}\footnote{L'hypothèse de tor-dimension finie sur \(E\) est en fait superflue pour la définition de \(\Tr_{E|U}\), voir (8.5).}.
+
+Avant d'aller plus loin, donnons quelques propriétés de la trace qui découlent immédiatement de la définition.
+
+\textbf{8.1.1.} Si \(E=A\), \(\Tr_{A|U}:\Hom(A|U,A|U)\longrightarrow H^0(U,A)\) n'est

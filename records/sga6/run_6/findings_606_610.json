@@ -1,0 +1,340 @@
+[
+ {
+  "page": 606,
+  "where": "start of page: 'En effet on peut évidemment supposer S et T affines.'",
+  "scan": "'En effet' is indented as a new paragraph at the top of p. 606, after the display '3.2. Im δ*_T = Im δ_T' that ends p. 605 (both scans; the typescript's continuation lines after displays start flush left, e.g. 'en tenant compte' on this page)",
+  "tex": "'\\]' of the 3.2 display, then the marker line, then 'En' with no blank line: the paragraph runs on after the display",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "En\neffet on peut",
+   "new": "\nEn\neffet on peut"
+  },
+  "note": "Missing paragraph break. The edit adds the blank line after the folio-606 marker line (the marker line itself is unchanged)."
+ },
+ {
+  "page": 606,
+  "where": "after 'et n_β ∈ nilrad(Γ(X,O_X')).': 'D'après i), (n_β⊗t_β) I_T = 0.'",
+  "scan": "'D'après i)' begins a new, indented paragraph (both scans; crops_606_610/wit_606_half.png)",
+  "tex": "'...\\operatorname{nilrad}(\\Gamma(X,\\mathcal O_{X'}))\\). D'après i),' in one paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\). D'après i),",
+   "new": "\\).\n\nD'après i),"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 606,
+  "where": "'Finalement soit g = Σ g_β⊗t_α ∈ Γ(X_T,O_X'_T)'",
+  "scan": "'g = Σ g_β⊗t_α' with index alpha on t (both scans: page_606_s2.png; crops_606_610/wit_606_half.png)",
+  "tex": "'\\(g=\\sum g_\\beta\\otimes t_\\alpha\\in': the TeX keeps the printed reading",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "g=\\sum g_\\beta\\otimes t_\\beta",
+  "note": "Wrong index: the sum is the decomposition g = Σ g_β⊗t_β of the preceding paragraph. The current layer already reads t_\\beta."
+ },
+ {
+  "page": 606,
+  "where": "'Soit g_β = v(h) + n_β où'",
+  "scan": "'g_β = v(h) + n_β' (both scans)",
+  "tex": "'\\(g_\\beta=v(h)+n_\\beta\\)': the TeX keeps the printed reading",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "v(h_\\beta)",
+  "note": "Omitted index: as in 'g_β = v(h_β) + n_β' of the preceding paragraph (h is not defined here; the h of the paragraph before is Σ v(h_β)⊗t_β). The current layer already reads v(h_\\beta)."
+ },
+ {
+  "page": 606,
+  "where": "'n_β ∈ nilrad(Γ(X,O_X));on a alors'",
+  "scan": "'nilrad(Γ(X,O_X))' with subscript X, no prime (both scans; crops_606_610/w606_finalement.png)",
+  "tex": "'\\operatorname{nilrad}(\\Gamma(X,\\mathcal O_X))': the TeX keeps the printed reading",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\operatorname{nilrad}(\\Gamma(X,\\mathcal O_{X'}))",
+  "note": "n_β = g_β - v(h_β) lies in Γ(X,O_X'), as in 'n_β ∈ nilrad(Γ(X,O_X'))' of the preceding paragraph. The current layer already reads \\mathcal O_{X'}."
+ },
+ {
+  "page": 606,
+  "where": "display after 'fonctorielle en T :', second term 'R^1(f_t)_*(O*_X_T)'",
+  "scan": "'R^1(f_t)_*(O*_{X_T} )' with a small t (both scans; crops_606_610/w606_display1.png)",
+  "tex": "'R^1(f_t)_*(\\mathcal O_{X_T}^{*})': the TeX keeps the printed reading",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R^1(f_T)_*",
+  "note": "The next term of the same display and the diagram of p. 605 have f_T. The current layer already reads f_T."
+ },
+ {
+  "page": 606,
+  "where": "same display, third term 'R^1(f_T)_*(O_X'_T)'",
+  "scan": "'R^1(f_T)_*(O_{X'_T} )' without the star (both scans; crops_606_610/w606_display1.png: a gap where the first term has its star)",
+  "tex": "'R^1(f_T)_*(\\mathcal O_{X'_T})': the TeX keeps the printed reading",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R^1(f_T)_*(\\mathcal O_{X'_T}^{*})",
+  "note": "The sequence is that of the units (the bottom row of the diagram of p. 605 has R^1(f_T)_*(O*_{X'_T})). The current layer already reads \\mathcal O_{X'_T}^{*}."
+ },
+ {
+  "page": 606,
+  "where": "'qui par passage aux faisceaux f.p.p.f. associés donne une suite exacte'",
+  "scan": "no commas: 'qui par passage aux faisceaux f.p.p.f. associés donne' (both scans)",
+  "tex": "'qui, par passage aux faisceaux f.p.p.f. associés, donne'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "qui, par passage aux faisceaux f.p.p.f. associés, donne",
+   "new": "qui par passage aux faisceaux f.p.p.f. associés donne"
+  },
+  "note": "Two commas added by the TeX."
+ },
+ {
+  "page": 606,
+  "where": "display '0 ⟶ V(E^v) ⟶ Pic_X/S ⟶ Pic_X'/S ⟶(u) V(Q) .'",
+  "scan": "both Pic underlined (both scans; wit_606_half.png)",
+  "tex": "'\\Pic_{X/S}' and '\\Pic_{X'/S}' plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Pic_{X/S}\n  \\longrightarrow\\Pic_{X'/S}\\xrightarrow{u}",
+   "new": "\\underline{\\Pic}_{X/S}\n  \\longrightarrow\\underline{\\Pic}_{X'/S}\\xrightarrow{u}"
+  },
+  "note": "Exposé XII writes \\Pic plain everywhere (no \\underline{\\Pic} in folios 595-630); the file's own form for the underlined Pic is \\underline{\\Pic} (Exposé XIII, 66 places). The print underlines only 'Pic', not its indices."
+ },
+ {
+  "page": 606,
+  "where": "'Si P = Ker(u), le monomorphisme P ↪ Pic_X'/S s'obtient'",
+  "scan": "Pic underlined (both scans; crops_606_610/w606_pic.png)",
+  "tex": "'\\(P\\hookrightarrow\\Pic_{X'/S}\\)' plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "monomorphisme \\(P\\hookrightarrow\\Pic_{X'/S}\\)",
+   "new": "monomorphisme \\(P\\hookrightarrow\\underline{\\Pic}_{X'/S}\\)"
+  },
+  "note": "The second 'P ↪ Pic_X'/S' of the paragraph ('il résulte que P ↪ Pic_X'/S est représentable', last line) is plain in both scans and stays plain."
+ },
+ {
+  "page": 606,
+  "where": "after the display ending 'V(Q) .': 'Si P = Ker(u), le monomorphisme'",
+  "scan": "'Si P = Ker(u)' begins a new, indented paragraph (both scans; crops_606_610/w606_pic.png), unlike 'qui par passage' after the display before",
+  "tex": "'\\]' followed directly by 'Si \\(P=\\Ker(u)\\)' (the paragraph runs on)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nSi \\(P=\\Ker(u)\\)",
+   "new": "\\]\n\nSi \\(P=\\Ker(u)\\)"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 607,
+  "where": "'Enfin 0 → V(E^v) ⟶ Pic_X/S ⟶(w) P ⟶ 0 est un torseur'",
+  "scan": "Pic underlined (both scans)",
+  "tex": "'\\Pic_{X/S}\\xrightarrow{w}P' plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Pic_{X/S}\\xrightarrow{w}P",
+   "new": "\\underline{\\Pic}_{X/S}\\xrightarrow{w}P"
+  },
+  "note": "Exposé XII writes \\Pic plain everywhere (no \\underline{\\Pic} in folios 595-630); the file's own form for the underlined Pic is \\underline{\\Pic} (Exposé XIII, 66 places). The print underlines only 'Pic', not its indices."
+ },
+ {
+  "page": 607,
+  "where": "'(voir : Oort, \"Commutative group schemes\", Proposition (17.4))'",
+  "scan": "the title in straight double quotes, not underlined (both scans)",
+  "tex": "'\\emph{Commutative group schemes}' without quotes",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Commutative group schemes}",
+   "new": "«~Commutative group schemes~»"
+  },
+  "note": "Emphasis the print does not have, quotes the TeX drops; written with the volume's guillemets, as «~splittage~» in the same sentence."
+ },
+ {
+  "page": 607,
+  "where": "Corollaire 3.3 i), first line: 'Si Pic_(zar)(X'/S) ⟶ Pic_(fppf)(X'/S) est un isomorphisme'",
+  "scan": "both Pic underlined (both scans; wit_607_half.png)",
+  "tex": "'\\Pic_{(\\zar)(X'/S)}\\to\\Pic_{(\\fppf)(X'/S)}' plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Si \\(\\Pic_{(\\zar)(X'/S)}\\to\\Pic_{(\\fppf)(X'/S)}\\)",
+   "new": "Si \\(\\underline{\\Pic}_{(\\zar)(X'/S)}\\to\\underline{\\Pic}_{(\\fppf)(X'/S)}\\)"
+  },
+  "note": "The second line of i), 'Pic_(zar)(X/S) ⟶ Pic_(fppf)(X/S) est un isomorphisme', is plain in both scans and stays plain. Exposé XII writes \\Pic plain everywhere (no \\underline{\\Pic} in folios 595-630); the file's own form for the underlined Pic is \\underline{\\Pic} (Exposé XIII, 66 places). The print underlines only 'Pic', not its indices."
+ },
+ {
+  "page": 607,
+  "where": "Corollaire 3.3 ii): 'si Pic(X'_T) ⟶ Pic_(zar)(X'/S)^(T) est surjectif'",
+  "scan": "Pic_(zar)(X'/S)^(T) underlined, Pic(X'_T) plain (both scans)",
+  "tex": "'\\to\\Pic_{(\\zar)(X'/S)}^{(T)}' plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\to\\Pic_{(\\zar)(X'/S)}^{(T)}",
+   "new": "\\to\\underline{\\Pic}_{(\\zar)(X'/S)}^{(T)}"
+  },
+  "note": "Exposé XII writes \\Pic plain everywhere (no \\underline{\\Pic} in folios 595-630); the file's own form for the underlined Pic is \\underline{\\Pic} (Exposé XIII, 66 places). The print underlines only 'Pic', not its indices."
+ },
+ {
+  "page": 607,
+  "where": "Corollaire 3.3 ii): 'alors Pic(X_T) ⟶ Pic_(zar)(X/S)^(T) est surjectif'",
+  "scan": "Pic_(zar)(X/S)^(T) underlined, Pic(X_T) plain (both scans)",
+  "tex": "'\\to\\Pic_{(\\zar)(X/S)}^{(T)}' plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\to\\Pic_{(\\zar)(X/S)}^{(T)}",
+   "new": "\\to\\underline{\\Pic}_{(\\zar)(X/S)}^{(T)}"
+  },
+  "note": "Exposé XII writes \\Pic plain everywhere (no \\underline{\\Pic} in folios 595-630); the file's own form for the underlined Pic is \\underline{\\Pic} (Exposé XIII, 66 places). The print underlines only 'Pic', not its indices."
+ },
+ {
+  "page": 607,
+  "where": "after Corollaire 3.3: 'En effet (i) résulte du diagramme suivant'",
+  "scan": "'En effet (i)' begins a new, indented paragraph after item ii) (both scans)",
+  "tex": "'\\end{enumerate}' followed directly by 'En effet (i)' (the paragraph runs on)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{enumerate}\nEn effet (i)",
+   "new": "\\end{enumerate}\n\nEn effet (i)"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 607,
+  "where": "diagram of (i), top row: 'Pic_(zar)(X/S) ⟶ Pic_(zar)(X'/S)'",
+  "scan": "both Pic underlined (both scans)",
+  "tex": "'\\Pic_{(\\zar)(X/S)}', '\\Pic_{(\\zar)(X'/S)}' plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Pic_{(\\zar)(X/S)} \\arrow[r] \\arrow[d] &\n  \\Pic_{(\\zar)(X'/S)}",
+   "new": "\\underline{\\Pic}_{(\\zar)(X/S)} \\arrow[r] \\arrow[d] &\n  \\underline{\\Pic}_{(\\zar)(X'/S)}"
+  },
+  "note": "Exposé XII writes \\Pic plain everywhere (no \\underline{\\Pic} in folios 595-630); the file's own form for the underlined Pic is \\underline{\\Pic} (Exposé XIII, 66 places). The print underlines only 'Pic', not its indices."
+ },
+ {
+  "page": 607,
+  "where": "diagram of (i), bottom row: 'Pic_(fppf)(X/S) → Pic_(fppf)(X'/S)'",
+  "scan": "both Pic underlined (both scans; crops_606_610/w607_diag2.png)",
+  "tex": "'\\Pic_{(\\fppf)(X/S)}', '\\Pic_{(\\fppf)(X'/S)}' plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Pic_{(\\fppf)(X/S)} \\arrow[r] &\n\\Pic_{(\\fppf)(X'/S)}",
+   "new": "\\underline{\\Pic}_{(\\fppf)(X/S)} \\arrow[r] &\n\\underline{\\Pic}_{(\\fppf)(X'/S)}"
+  },
+  "note": "Exposé XII writes \\Pic plain everywhere (no \\underline{\\Pic} in folios 595-630); the file's own form for the underlined Pic is \\underline{\\Pic} (Exposé XIII, 66 places). The print underlines only 'Pic', not its indices."
+ },
+ {
+  "page": 607,
+  "where": "diagram of (ii), last entry 'H°(T,R^2f_*I_T)'",
+  "scan": "no punctuation after 'H°(T,R^2f_*I_T)' (both scans; crops_606_610/w607_diag2b.png, m607_diag2_end.png)",
+  "tex": "'H^0(T,R^2f_*I_T),' with a comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "H^0(T,R^2f_*I_T),",
+   "new": "H^0(T,R^2f_*I_T)"
+  },
+  "note": "Comma added at the end of the diagram (the diagram of (i) does end with a printed comma)."
+ },
+ {
+  "page": 608,
+  "where": "Corollaire 3.4: 'On suppose que Pic_X_réd/k possède un faisceau inversible universel'",
+  "scan": "Pic underlined (both scans; wit_608_half.png)",
+  "tex": "'\\(\\Pic_{X_{\\red}/k}\\)' plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\Pic_{X_{\\red}/k}\\)",
+   "new": "\\(\\underline{\\Pic}_{X_{\\red}/k}\\)"
+  },
+  "note": "The other Pic of this page ('ouvert affine V de Pic_X/k' and the display f*: Pic_Y/S|V ⟶ Pic_X/S|V of Prop. 3.5) are plain in both scans and stay plain. Exposé XII writes \\Pic plain everywhere (no \\underline{\\Pic} in folios 595-630); the file's own form for the underlined Pic is \\underline{\\Pic} (Exposé XIII, 66 places). The print underlines only 'Pic', not its indices."
+ },
+ {
+  "page": 608,
+  "where": "'I_o= I ⊃ I_1 ⊃ ... ⊃ I_n=0'",
+  "scan": "typed baseline dots '...' (both scans; crops_606_610/w608_dots.png)",
+  "tex": "'\\supset\\cdots\\supset' (centred dots)",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "\\supset\\cdots\\supset",
+   "new": "\\supset\\ldots\\supset"
+  },
+  "note": "As GLOBAL_ISSUES 87 (Exposé V: typed baseline '...' written \\cdots, a volume decision); the only case on pp. 606-610."
+ },
+ {
+  "page": 609,
+  "where": "3.6 Remarque: 'Pic_X_i-1/S ⟶ Pic_X_i/S ⟶ V(Q_i)'",
+  "scan": "both Pic underlined (both scans; wit_609_half.png)",
+  "tex": "'\\Pic_{X_{i-1}/S}', '\\Pic_{X_i/S}' plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\Pic_{X_{i-1}/S}\\longrightarrow\\Pic_{X_i/S}",
+   "new": "\\(\\underline{\\Pic}_{X_{i-1}/S}\\longrightarrow\\underline{\\Pic}_{X_i/S}"
+  },
+  "note": "Exposé XII writes \\Pic plain everywhere (no \\underline{\\Pic} in folios 595-630); the file's own form for the underlined Pic is \\underline{\\Pic} (Exposé XIII, 66 places). The print underlines only 'Pic', not its indices."
+ },
+ {
+  "page": 609,
+  "where": "3.6 display: 'coker(Pic^0_X_s/s ⟶ Pic^0_Y_s/s)'",
+  "scan": "both Pic underlined (both scans)",
+  "tex": "'\\Pic^0_{X_s/s}', '\\Pic^0_{Y_s/s}' plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Pic^0_{X_s/s}\\longrightarrow\\Pic^0_{Y_s/s}",
+   "new": "\\underline{\\Pic}^0_{X_s/s}\\longrightarrow\\underline{\\Pic}^0_{Y_s/s}"
+  },
+  "note": "Exposé XII writes \\Pic plain everywhere (no \\underline{\\Pic} in folios 595-630); the file's own form for the underlined Pic is \\underline{\\Pic} (Exposé XIII, 66 places). The print underlines only 'Pic', not its indices."
+ },
+ {
+  "page": 609,
+  "where": "3.6 display: 'coker(...)'",
+  "scan": "'coker' with a small c (both scans)",
+  "tex": "'\\coker', which prints 'Coker': the first definition, \\providecommand{\\coker}{\\operatorname{Coker}} (main.tex about line 3735, folio 159), wins; the later \\providecommand{\\coker}{\\operatorname{coker}} (folios 221, 561, 594) do nothing",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\coker\\bigl(",
+   "new": "\\operatorname{coker}\\bigl("
+  },
+  "note": "The volume's only two \\coker are here and on p. 610 (both print 'coker'); the file already writes \\operatorname{coker}(\\pi_1-\\pi_2) on a later page."
+ },
+ {
+  "page": 610,
+  "where": "start of page: '3) Pour i,j≥0, R^if_* O_X et R^jg_* O_XxYX sont plats sur S.'",
+  "scan": "p. 609 ends with item '2) λ_* O_X = O_S, μ_*O_Y = O_S universellement.'; p. 610 begins with the item label '3)' (both scans: page_609_s4.png, page_610_s1.png; crops_606_610/wit_609_half.png, wit_610_half.png)",
+  "tex": "the '\\item' of item 3) stands above the folio-610 marker (end of page_609.tex); page_610.tex begins 'Pour \\(i,j\\ge0\\)'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 610 really begins at the '\\item' of item 3). Exact edit in main.tex, both layers (diplomatic and current about line 15591 at 16:44 on 13 Nov; the file is being edited, use the string; it occurs once per layer): replace \"\\\\item\\n%%%%%%%%%%  scan idx 623  |  folio 610  %%%%%%%%%%\\nPour \\\\(i,j\\\\ge0\\\\)\" by \"%%%%%%%%%%  scan idx 623  |  folio 610  %%%%%%%%%%\\n\\\\item\\nPour \\\\(i,j\\\\ge0\\\\)\" (simulated in memory: crops_606_610/build_findings.py)."
+ },
+ {
+  "page": 610,
+  "where": "item 4): 'est exacte et coker(π_1-π_2) est un O_Y-module plat sur S'",
+  "scan": "'coker' with a small c (both scans; wit_610_half.png)",
+  "tex": "'\\coker(\\pi_1-\\pi_2)', which prints 'Coker' (see p. 609: \\coker is \\operatorname{Coker} by its first \\providecommand)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\coker(\\pi_1-\\pi_2)",
+   "new": "\\operatorname{coker}(\\pi_1-\\pi_2)"
+  },
+  "note": "The other \\coker of the volume is on p. 609."
+ }
+]

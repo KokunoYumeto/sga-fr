@@ -1,0 +1,537 @@
+[
+ {
+  "page": 556,
+  "where": "heading 6.4, 'Démonstration de 6.2.2.'",
+  "scan": "'6.4. Démonstration de 6.2.2. Il suffit de montrer ...': the run-in heading ends with a full stop after 6.2.2 (both scans; b556_560/page_556_s1.png)",
+  "tex": "\\subsection*{6.4. Démonstration de 6.2.2}",
+  "kind": "punctuation",
+  "confidence": "low",
+  "fix": {
+   "old": "\\subsection*{6.4. Démonstration de 6.2.2}",
+   "new": "\\subsection*{6.4. Démonstration de 6.2.2.}"
+  },
+  "note": "As the p. 529 entry for \\subsection*{1.6} (findings_526_530), which notes that Exposé X writes its headings without the print's final full stop: one decision for the exposé. The run-in text and the plain title are accepted typesetting."
+ },
+ {
+  "page": 556,
+  "where": "'Soient p l'idéal premier de y'",
+  "scan": "p̲: a typed p, underlined (both scans; crops_556_560/c556_p.png)",
+  "tex": "Soient \\(\\mathfrak p\\) l'idéal",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "Soient \\(\\mathfrak p\\) l'idéal",
+   "new": "Soient \\(\\underline{p}\\) l'idéal"
+  },
+  "note": "The print's underlined letter, not Fraktur, as the applied edits of p. 530 (\\underline{m}, findings_526_530) and pp. 185-186 (\\underline{p}). The same p̲ eight more times on p. 557 (seven entries); \\mathfrak p occurs only on pp. 556-557 in main.tex: apply all eight edits or none."
+ },
+ {
+  "page": 556,
+  "where": "display 'c_{h,k} : G_a → Sℓ(n)  (h,k = 1,...,n ; h ≠ k).'",
+  "scan": "G_a with a plain typed G (not underlined, not double-struck; both scans; crops_556_560/c556_Ga.png)",
+  "tex": "c_{h,k}:\\mathbb G_a",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "c_{h,k}:\\mathbb G_a",
+   "new": "c_{h,k}:G_a"
+  },
+  "note": "The typist's plain G for the group scheme, as G_m on pp. 558-559 (\\Gm, \\mathbb G_{m,S}) and the plain G of p. 508 (findings_506_510). Same class as the typist's plain Q (volume decision with SGA 7 II issue 61): low. Apply with the five G_m edits of pp. 558-559 or none."
+ },
+ {
+  "page": 556,
+  "where": "'La démonstration se fait alors en deux pas.'",
+  "scan": "runs on at the left margin after '... h ≠ k) inversible.' (both scans; crops_556_560/wit_556_small.png); the paragraphs of these pages are indented ('Pour le premier', 'Supposant', 'On suppose donc' on p. 557)",
+  "tex": "a blank line before 'La démonstration' (new paragraph)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "inversible.\n\nLa démonstration se fait",
+   "new": "inversible.\nLa démonstration se fait"
+  },
+  "note": "Spurious paragraph break."
+ },
+ {
+  "page": 556,
+  "where": "equation number of 'c_{h,k,λ} c_{h,k,μ} = c_{h,k,λ+μ}' in 6.4",
+  "scan": "(6.3.1) (both scans)",
+  "tex": "\\tag{6.3.1} (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\tag{6.4.1}",
+  "note": "The formula stands in 6.4 (Démonstration de 6.2.2); §6.3 (p. 555) has no numbered formula, and the numbers run by section elsewhere ((6.1.x), (6.2.x), then (6.5.4), (6.5.5) after the remarks 6.5.1-6.5.3): a number left over from an older numbering (cf. GLOBAL_ISSUES 31). Corrected edition only, together with the reference 'de (6.3.1)' on p. 558: both or neither."
+ },
+ {
+  "page": 556,
+  "where": "letters the print underlines on pp. 556-559 (convention of the Exposé X transcription, reported once)",
+  "scan": "underlined in the print (both scans): p. 556 the n of Sℓ(n)(Y) and of Gℓ(n)(Y') and the first n of 'et n constant égal à n'; the matrix a in all five places ('Pour toute matrice a = (a_ij)', 'c_{h,k,λ} a en ajoutant', 'colonne de a', 'la matrice ac_{h,k,λ}', 'ligne de a'); p. 559 both e ('Soient e l'objet final', Spec(O(e))). Plain in the print: the n of the display Sℓ(n), of Gℓ(n) at the foot of p. 556, of (i,j=1,...,n) and of p. 559 ('entier positif n', Gℓ(n)_X, (6.5.4), (6.5.5)); the a of p. 558 ('une matrice inversible a = (a_ij)', the display a c = c a); s, y, Y, A, k, u (crops_556_560/c556_Sln.png, c556_GlnY.png, c556_ncst.png, c556_a1.png, c556_a23.png, c556_a4.png, c556_a5.png, c556_Gln.png, c558_amat.png)",
+  "tex": "all plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé X transcription (findings_521_525, findings_526_530): not itemized. The TeX of p. 555 already writes this rank as \\underline n ('on peut supposer que \\(\\underline n\\) est constant sur \\(X\\), soit \\(\\underline n=n\\in\\mathbb Z\\)'), so on p. 556 the print's distinction between n̲ and the integer n ('et n̲ constant égal à n') is lost. The ten edits, if the diplomatic layer reproduces the underline: p. 556 '\\(s\\in\\operatorname{S\\ell}(n)(Y)\\)' -> '\\(s\\in\\operatorname{S\\ell}(\\underline n)(Y)\\)'; '\\(\\operatorname{G\\ell}(n)(Y')\\)' -> '\\(\\operatorname{G\\ell}(\\underline n)(Y')\\)'; 'et \\(n\\) constant' -> 'et \\(\\underline n\\) constant'; 'matrice \\(a=(a_{ij})' -> 'matrice \\(\\underline a=(a_{ij})'; '\\(c_{h,k,\\lambda}a\\) en ajoutant' -> '\\(c_{h,k,\\lambda}\\underline a\\) en ajoutant'; 'colonne de \\(a\\)' -> 'colonne de \\(\\underline a\\)'; 'la matrice \\(ac_{h,k,\\lambda}\\)' -> 'la matrice \\(\\underline ac_{h,k,\\lambda}\\)'; 'ligne de \\(a\\)' -> 'ligne de \\(\\underline a\\)'; p. 559 'Soient \\(e\\) l'objet' -> 'Soient \\(\\underline e\\) l'objet'; '\\Spec(\\mathcal O(e))' -> '\\Spec(\\mathcal O(\\underline e))' (each once in its page file). The underlined O written \\mathcal O falls under the pending volume decision."
+ },
+ {
+  "page": 557,
+  "where": "'la matrice unité 1 = (δ_ij)'",
+  "scan": "1 doubly underlined (both scans; crops_556_560/c557_unite.png)",
+  "tex": "unité \\(1=(\\delta_{ij})\\)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "unité \\(1=(\\delta_{ij})\\)",
+   "new": "unité \\(\\mathbf{1}=(\\delta_{ij})\\)"
+  },
+  "note": "The unit matrix carries the typescript's double underline, which the volume writes bold (the doubly underlined D and Gl of Exposé VI as \\mathbf, findings_386_390 and findings_391_395; \\Sym prints a bold S); the scalar 1 of 's_11 = 1', 's'_nn = 1' is plain. If the volume prefers the underline form: \\underline{\\underline{1}}. Apply with the next entry."
+ },
+ {
+  "page": 557,
+  "where": "'de sorte que s'_nn = 1 , s' = 1 , et on a gagné.'",
+  "scan": "the second 1 doubly underlined, the first plain (both scans; crops_556_560/c557_gagne.png)",
+  "tex": "\\(s'=1\\), et on a gagné",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\(s'=1\\), et on a gagné",
+   "new": "\\(s'=\\mathbf{1}\\), et on a gagné"
+  },
+  "note": "As the unit matrix of the first line."
+ },
+ {
+  "page": 557,
+  "where": "'Si s_11 ≠ 1 et s_21 ∈ p'",
+  "scan": "p̲: a typed p, underlined (both scans; crops_556_560/c557_si1.png, w557_si1.png)",
+  "tex": "et \\(s_{21}\\in\\mathfrak p\\)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "et \\(s_{21}\\in\\mathfrak p\\)",
+   "new": "et \\(s_{21}\\in\\underline{p}\\)"
+  },
+  "note": "As 'Soient p l'idéal premier' on p. 556 (\\underline{p} for the print's underlined p): apply the eight p edits of pp. 556-557 together."
+ },
+ {
+  "page": 557,
+  "where": "'ait s'_21 ∉ p. Puisque det(s) = 1 ∉ p'",
+  "scan": "p̲: a typed p, underlined (both scans; crops_556_560/c557_si1.png, w557_si1.png); two places",
+  "tex": "ait \\(s'_{21}\\notin\\mathfrak p\\). Puisque \\(\\det(s)=1\\notin\\mathfrak p\\)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "ait \\(s'_{21}\\notin\\mathfrak p\\). Puisque \\(\\det(s)=1\\notin\\mathfrak p\\)",
+   "new": "ait \\(s'_{21}\\notin\\underline{p}\\). Puisque \\(\\det(s)=1\\notin\\underline{p}\\)"
+  },
+  "note": "As 'Soient p l'idéal premier' on p. 556 (\\underline{p} for the print's underlined p): apply the eight p edits of pp. 556-557 together."
+ },
+ {
+  "page": 557,
+  "where": "'il existe au moins un indice i tel que s_i1 ∉ p'",
+  "scan": "p̲: a typed p, underlined (both scans; crops_556_560/c557_si1.png, w557_si1.png)",
+  "tex": "tel que \\(s_{i1}\\notin\\mathfrak p\\)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "tel que \\(s_{i1}\\notin\\mathfrak p",
+   "new": "tel que \\(s_{i1}\\notin\\underline{p}"
+  },
+  "note": "As 'Soient p l'idéal premier' on p. 556 (\\underline{p} for the print's underlined p): apply the eight p edits of pp. 556-557 together. The old stops before '\\)' so that it does not overlap the misprint entry of the same formula."
+ },
+ {
+  "page": 557,
+  "where": "'Alors on a s_21 + s_i1 ∉ p'",
+  "scan": "p̲: a typed p, underlined (both scans; crops_556_560/c557_si1.png, w557_si1.png)",
+  "tex": "\\(s_{21}+s_{i1}\\notin\\mathfrak p\\)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\(s_{21}+s_{i1}\\notin\\mathfrak p\\)",
+   "new": "\\(s_{21}+s_{i1}\\notin\\underline{p}\\)"
+  },
+  "note": "As 'Soient p l'idéal premier' on p. 556 (\\underline{p} for the print's underlined p): apply the eight p edits of pp. 556-557 together."
+ },
+ {
+  "page": 557,
+  "where": "'On peut donc supposer s_21 ∉ p'",
+  "scan": "p̲: a typed p, underlined (both scans; crops_556_560/c557_si1.png, w557_si1.png)",
+  "tex": "supposer \\(s_{21}\\notin\\mathfrak p\\)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "supposer \\(s_{21}\\notin\\mathfrak p\\)",
+   "new": "supposer \\(s_{21}\\notin\\underline{p}\\)"
+  },
+  "note": "As 'Soient p l'idéal premier' on p. 556 (\\underline{p} for the print's underlined p): apply the eight p edits of pp. 556-557 together."
+ },
+ {
+  "page": 557,
+  "where": "'Si s_11 - 1 ∈ p, alors dans s' = (s'_ij) = sc_{1,2,1}'",
+  "scan": "p̲: a typed p, underlined (both scans; crops_556_560/c557_si1.png, w557_si1.png)",
+  "tex": "\\(s_{11}-1\\in\\mathfrak p\\)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\(s_{11}-1\\in\\mathfrak p\\)",
+   "new": "\\(s_{11}-1\\in\\underline{p}\\)"
+  },
+  "note": "As 'Soient p l'idéal premier' on p. 556 (\\underline{p} for the print's underlined p): apply the eight p edits of pp. 556-557 together."
+ },
+ {
+  "page": 557,
+  "where": "'s'_11 - 1 = (s_11 + s_21)-1 ∉ p'",
+  "scan": "p̲: a typed p, underlined (both scans; crops_556_560/c557_si1.png, w557_si1.png)",
+  "tex": "(s_{11}+s_{21})-1\\notin\\mathfrak p\\)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "-1\\notin\\mathfrak p\\)",
+   "new": "-1\\notin\\underline{p}\\)"
+  },
+  "note": "As 'Soient p l'idéal premier' on p. 556 (\\underline{p} for the print's underlined p): apply the eight p edits of pp. 556-557 together."
+ },
+ {
+  "page": 557,
+  "where": "'il existe au moins un indice i tel que s_i1 ∉ p' / 'Alors on a'",
+  "scan": "no full stop after p̲ at the end of the line; 'Alors' (capital) begins the next line (both scans; crops_556_560/c557_si1.png, w557_si1.png)",
+  "tex": "\\(s_{i1}\\notin\\mathfrak p\\). Alors on a (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\). Alors on a",
+   "new": "\\) Alors on a"
+  },
+  "corrected": "\\). Alors on a",
+  "note": "The typist left out the full stop (the stops of this page are heavy dots, e.g. 's'_21 ∉ p.' on the line above). The TeX supplies it silently; the fix restores the print. The old does not overlap the \\underline{p} entry of the same formula (that old ends before '\\)')."
+ },
+ {
+  "page": 557,
+  "where": "'en multipliant s à gauche (resp. à droite) par des matrices c_{i,1,λ} (resp. c_{i,1,λ})'",
+  "scan": "c_{i,1,λ} twice (both scans; crops_556_560/c557_resp.png, w557_resp.png)",
+  "tex": "\\(c_{i,1,\\lambda}\\) (resp. \\(c_{i,1,\\lambda}\\)) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\(c_{i,1,\\lambda}\\) (resp. \\(c_{1,i,\\lambda}\\))",
+  "note": "'resp.' joins two different operations: clearing the first column (s_i1) and the first row (s_1i) needs c_{i,1,λ} on one side and c_{1,i,λ} on the other. With the usual matrix product the second is the wrong one (as given in 'corrected'); with the column/row rule stated on p. 556 it would be the first. The indices of this proof are loose elsewhere too (c = c_{h,1,λ} and c_{i,1,1} for adding row i to row 2), so the corrected edition may leave it: low."
+ },
+ {
+  "page": 557,
+  "where": "'Reste à voir que celles-ci sont des produits de commutateurs'",
+  "scan": "runs on at the left margin after the indented paragraph 'On suppose donc que s soit déjà sur Y un produit de matrices c_{h,k,λ}.' (both scans; b556_560/page_557_s4.png, crops_556_560/wit_557_small.png)",
+  "tex": "a blank line before 'Reste à voir' (new paragraph)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\(c_{h,k,\\lambda}\\).\n\nReste à voir",
+   "new": "\\(c_{h,k,\\lambda}\\).\nReste à voir"
+  },
+  "note": "Spurious paragraph break."
+ },
+ {
+  "page": 558,
+  "where": "first line, 'c_{h,k,λ} et c_{h,k,μ} sont conjugées'",
+  "scan": "'conjugées': no u after the g, whose lower part is faint in both scans (crops_556_560/c558_conj.png, w558_conj.png)",
+  "tex": "sont conjugées (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "conjuguées",
+  "note": "Spelling slip of the print; the TeX keeps it."
+ },
+ {
+  "page": 558,
+  "where": "'on tire de ceci et de (6.3.1) que β(c_{h,k,λ})=0'",
+  "scan": "(6.3.1) (both scans; the 6 faint; crops_556_560/c558_631.png, w558_631.png)",
+  "tex": "de (6.3.1) que (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "de (6.4.1) que",
+  "note": "Goes with the tag (6.3.1) of p. 556 (see there): both or neither, corrected edition only."
+ },
+ {
+  "page": 558,
+  "where": "'dans un faisceau de groupes abéliens B, on a'",
+  "scan": "the letter is an overstrike of B and H (the two stems and serifs of H with the bowls of B; both scans; crops_556_560/c558_B_zoom.png, w558_B.png)",
+  "tex": "abéliens \\(B\\), on a",
+  "kind": "other",
+  "confidence": "low",
+  "fix": null,
+  "note": "A typist's correction whose last letter the scans do not show; the TeX reads B. Four lines below B is the ring of U = Spec(B), which may favour H for the sheaf of groups. No edit proposed; for the corrected edition's notes."
+ },
+ {
+  "page": 558,
+  "where": "'n'est pas le corps premier F_2 = {0,1}'",
+  "scan": "F̲_2: a typed F, underlined, with the subscript 2 (both scans; crops_556_560/c558_F2.png, wit_558_small.png)",
+  "tex": "premier \\(\\mathbb F_2=\\{0,1\\}\\)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "premier \\(\\mathbb F_2=\\{0,1\\}\\)",
+   "new": "premier \\(\\underline{F}_2=\\{0,1\\}\\)"
+  },
+  "note": "The print writes the prime field as an underlined typed F in all nine places of this page (the typist's form for the double-struck F); the TeX has \\mathbb F_2. Same class as the typist's plain Q (volume decision with SGA 7 II issue 61; GLOBAL_ISSUES 78 kept \\mathbb in SGA 7 II): low. The form of the underlined G of p. 507 (findings_506_510, \\underline{G}). Apply all seven F edits of this page or none."
+ },
+ {
+  "page": 558,
+  "where": "'Si k = F_2, alors V = Spec(A[T]/(T^2+T+1))'",
+  "scan": "F̲_2: a typed F, underlined, with the subscript 2 (both scans; crops_556_560/c558_F2.png, wit_558_small.png)",
+  "tex": "Si \\(k=\\mathbb F_2\\)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "Si \\(k=\\mathbb F_2\\)",
+   "new": "Si \\(k=\\underline{F}_2\\)"
+  },
+  "note": "As the first F_2 entry of this page (low; apply the seven F edits together)."
+ },
+ {
+  "page": 558,
+  "where": "'dont le corps résiduel est différent de F_2. On a gagné.'",
+  "scan": "F̲_2: a typed F, underlined, with the subscript 2 (both scans; crops_556_560/c558_F2.png, wit_558_small.png)",
+  "tex": "différent de \\(\\mathbb F_2\\)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "différent de \\(\\mathbb F_2\\)",
+   "new": "différent de \\(\\underline{F}_2\\)"
+  },
+  "note": "As the first F_2 entry of this page (low; apply the seven F edits together)."
+ },
+ {
+  "page": 558,
+  "where": "6.5.1, 'sont tous non isomorphes à F_2'",
+  "scan": "F̲_2: a typed F, underlined, with the subscript 2 (both scans; crops_556_560/c558_F2.png, wit_558_small.png)",
+  "tex": "isomorphes à \\(\\mathbb F_2\\)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "isomorphes à \\(\\mathbb F_2\\)",
+   "new": "isomorphes à \\(\\underline{F}_2\\)"
+  },
+  "note": "As the first F_2 entry of this page (low; apply the seven F edits together)."
+ },
+ {
+  "page": 558,
+  "where": "6.5.1, 'S = Spec(F_2), Sℓ(2,F_2) = Gℓ(2,F_2)'",
+  "scan": "F̲_2: a typed F, underlined, with the subscript 2 (both scans; crops_556_560/c558_F2.png, wit_558_small.png); three places",
+  "tex": "\\(S=\\Spec(\\mathbb F_2)\\), \\(\\operatorname{S\\ell}(2,\\mathbb F_2)=\\operatorname{G\\ell}(2,\\mathbb F_2)\\)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "\\(S=\\Spec(\\mathbb F_2)\\), \\(\\operatorname{S\\ell}(2,\\mathbb F_2)=\\operatorname{G\\ell}(2,\\mathbb F_2)\\)",
+   "new": "\\(S=\\Spec(\\underline{F}_2)\\), \\(\\operatorname{S\\ell}(2,\\underline{F}_2)=\\operatorname{G\\ell}(2,\\underline{F}_2)\\)"
+  },
+  "note": "As the first F_2 entry of this page (low; apply the seven F edits together)."
+ },
+ {
+  "page": 558,
+  "where": "6.5.1, 'du groupe des commutateurs de Gℓ(2,F_2)'",
+  "scan": "F̲_2: a typed F, underlined, with the subscript 2 (both scans; crops_556_560/c558_F2.png, wit_558_small.png)",
+  "tex": "commutateurs de \\(\\operatorname{G\\ell}(2,\\mathbb F_2)\\)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "commutateurs de \\(\\operatorname{G\\ell}(2,\\mathbb F_2)\\)",
+   "new": "commutateurs de \\(\\operatorname{G\\ell}(2,\\underline{F}_2)\\)"
+  },
+  "note": "As the first F_2 entry of this page (low; apply the seven F edits together)."
+ },
+ {
+  "page": 558,
+  "where": "6.5.1, 'tandis que l'ordre de Sℓ(2,F_2) est 6'",
+  "scan": "F̲_2: a typed F, underlined, with the subscript 2 (both scans; crops_556_560/c558_F2.png, wit_558_small.png)",
+  "tex": "l'ordre de \\(\\operatorname{S\\ell}(2,\\mathbb F_2)\\)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "l'ordre de \\(\\operatorname{S\\ell}(2,\\mathbb F_2)\\)",
+   "new": "l'ordre de \\(\\operatorname{S\\ell}(2,\\underline{F}_2)\\)"
+  },
+  "note": "As the first F_2 entry of this page (low; apply the seven F edits together)."
+ },
+ {
+  "page": 558,
+  "where": "6.5.1, 'pour le topos annelé des faisceaux zariskiens sur S'",
+  "scan": "'zariskiens' underlined (both scans; b556_560/page_558_s3.png, crops_556_560/wit_558_small.png)",
+  "tex": "faisceaux zariskiens sur (no emphasis)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "faisceaux zariskiens sur",
+   "new": "faisceaux \\emph{zariskiens} sur"
+  },
+  "note": "\\emph is the Exposé X command for underlined words (\\emph{algébrique} on p. 559)."
+ },
+ {
+  "page": 558,
+  "where": "6.5.2, 'que toute représentation G_m → G_m soit définie par une'",
+  "scan": "G_m twice with a plain typed G (both scans; crops_556_560/c558_Gm.png)",
+  "tex": "\\(\\Gm\\to\\Gm\\) (\\Gm = \\mathbb G_m, main.tex line 13838)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "représentation \\(\\Gm\\to\\Gm\\) soit",
+   "new": "représentation \\(G_m\\to G_m\\) soit"
+  },
+  "note": "As G_a on p. 556 (same class as the typist's plain Q: low). If the print's G_m is plain throughout Exposé X, a redefinition of \\Gm for the exposé would replace the \\Gm edits."
+ },
+ {
+  "page": 559,
+  "where": "'la représentation G_m → G_m définie par'",
+  "scan": "a plain typed G (not underlined, not double-struck; both scans; b556_560/page_559_s1.png, page_559_s3.png); two places",
+  "tex": "\\(\\Gm\\to\\Gm\\)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "la représentation \\(\\Gm\\to\\Gm\\) définie",
+   "new": "la représentation \\(G_m\\to G_m\\) définie"
+  },
+  "note": "As p. 558 (low; apply with the other G edits of pp. 556-559)."
+ },
+ {
+  "page": 559,
+  "where": "'pour n'importe quelle représentation α : G → G_m.'",
+  "scan": "a plain typed G (not underlined, not double-struck; both scans; b556_560/page_559_s1.png, page_559_s3.png)",
+  "tex": "\\(\\alpha:G\\to\\Gm\\)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "\\(\\alpha:G\\to\\Gm\\)",
+   "new": "\\(\\alpha:G\\to G_m\\)"
+  },
+  "note": "As p. 558 (low; apply with the other G edits of pp. 556-559)."
+ },
+ {
+  "page": 559,
+  "where": "(6.5.4) 'α : Gℓ(n) → G_m'",
+  "scan": "a plain typed G (not underlined, not double-struck; both scans; b556_560/page_559_s1.png, page_559_s3.png)",
+  "tex": "\\alpha:\\operatorname{G\\ell}(n)\\longrightarrow\\Gm",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "\\alpha:\\operatorname{G\\ell}(n)\\longrightarrow\\Gm",
+   "new": "\\alpha:\\operatorname{G\\ell}(n)\\longrightarrow G_m"
+  },
+  "note": "As p. 558 (low; apply with the other G edits of pp. 556-559)."
+ },
+ {
+  "page": 559,
+  "where": "(6.5.5) 'α_S : Gℓ(n)_S → G_{m,S}'",
+  "scan": "a plain typed G (not underlined, not double-struck; both scans; b556_560/page_559_s1.png, page_559_s3.png)",
+  "tex": "\\longrightarrow\\mathbb G_{m,S}",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "\\longrightarrow\\mathbb G_{m,S}",
+   "new": "\\longrightarrow G_{m,S}"
+  },
+  "note": "As p. 558 (low; apply with the other G edits of pp. 556-559)."
+ },
+ {
+  "page": 559,
+  "where": "'La représentation α dans (6.5.4) est bien entendu complètement déterminée par α_S.'",
+  "scan": "begins a new, indented paragraph after 'pour tout Y ∈ Ob(C), s ∈ Gℓ(n)(Y) = Gℓ(n)_S(u(Y)).' (both scans; b556_560/page_559_s3.png, crops_556_560/wit_559_small.png)",
+  "tex": "runs on in the same paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "(u(Y))\\). La représentation",
+   "new": "(u(Y))\\).\n\nLa représentation"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 559,
+  "where": "the category of the ringed topos: 'X = (C,O)', 'u : C → (Sch/S)', 'Y ∈ Ob(C)' twice, 'sur C est composé'",
+  "scan": "a plain typed C (no underline, not double-struck) in all five places (both scans; crops_556_560/c559_XCO.png, c559_uC.png, c559_ObC.png)",
+  "tex": "\\mathcal C (5 places)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Category letter, pending volume decision: not itemized; named in the message. The underlined O of (C,O), Spec(O(e)), Spec(O(Y)) is written \\mathcal O, as the pending \\cO decision."
+ },
+ {
+  "page": 560,
+  "where": "author line of the Appendice",
+  "scan": "'par A. Grothendieck', the whole line underlined (both scans; b556_560/page_560_s1.png)",
+  "tex": "par A. Grothendieck (no underline)",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "par A. Grothendieck",
+   "new": "\\underline{par A. Grothendieck}"
+  },
+  "note": "As the author line of Exposé X (p. 519, findings_516_520: \\underline{par O. Jussila}) and the applied \\underline{par P. BERTHELOT}. The title above (underlined 'Appendice' and 'Spécialisation en théorie des intersections') is accepted typesetting."
+ },
+ {
+  "page": 560,
+  "where": "'Soit d'autre part N le faisceau conormal pour i'",
+  "scan": "N struck twice, the typist's double-struck N (both scans; crops_556_560/c560_N.png, w560_N.png); the same N with a clear second stem in the two displays",
+  "tex": "\\(N\\)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "Soit d'autre part \\(N\\)",
+   "new": "Soit d'autre part \\(\\mathbb N\\)"
+  },
+  "note": "The conormal sheaf is a double-struck N in all three places of this page (next two entries); the TeX has a plain N. The volume writes the print's double-struck letters as \\mathbb. p. 561 has the same N ('dont le faisceau conormal N est libre', 'λ_{-1}(N) = 0') for its checker. Apply the three N edits together."
+ },
+ {
+  "page": 560,
+  "where": "display 'λ_{-1}(N) ∈ K˙(Y) .'",
+  "scan": "double-struck N, an N with a second left stem (both scans; crops_556_560/c560_lamN.png, w560_lamN.png)",
+  "tex": "\\lambda_{-1}(N)\\in K^\\circ(Y).",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\lambda_{-1}(N)\\in",
+   "new": "\\lambda_{-1}(\\mathbb N)\\in"
+  },
+  "note": "As the first N entry. The old does not contain K^\\circ (convention entry below)."
+ },
+ {
+  "page": 560,
+  "where": "display 'i*i_*(x) = x λ_{-1}(N)  pour x ∈ K.(Y) ,'",
+  "scan": "double-struck N (both scans; crops_556_560/c560_formula.png)",
+  "tex": "x\\lambda_{-1}(N)\\qquad",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": {
+   "old": "x\\lambda_{-1}(N)\\qquad",
+   "new": "x\\lambda_{-1}(\\mathbb N)\\qquad"
+  },
+  "note": "As the first N entry."
+ },
+ {
+  "page": 560,
+  "where": "'Considérons aussi l'nomomorphisme image directe (IV 2.11)'",
+  "scan": "'l'nomomorphisme': n for h (no ascender, against the h of 'morphisme' in the same word; both scans; crops_556_560/c560_nomo.png, w560_nomo.png)",
+  "tex": "l'nomomorphisme (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "l'homomorphisme",
+  "note": "Typing error of the print; the TeX keeps it."
+ },
+ {
+  "page": 560,
+  "where": "K˙ on p. 560 (4 places: the display 'λ_{-1}(N) ∈ K˙(Y)', 'structure de K˙(Y)-module', 'avec K˙(X), K˙(Y)')",
+  "scan": "K with a raised dot in every place (both scans; crops_556_560/c560_lamN.png, c560_Kdot.png)",
+  "tex": "K^\\circ (4 places)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "The Exposé X convention reported in findings_521_525 (one script K^\\circ -> K^{\\bullet} for Exposé X, both layers); the Appendice follows it: not itemized. Three examples: '\\in K^\\circ(Y).' -> '\\in K^{\\bullet}(Y).'; 'structure de \\(K^\\circ(Y)\\)-module' -> 'structure de \\(K^{\\bullet}(Y)\\)-module'; 'avec \\(K^\\circ(X)\\), \\(K^\\circ(Y)\\)' -> 'avec \\(K^{\\bullet}(X)\\), \\(K^{\\bullet}(Y)\\)'. No old string of this file contains K^\\circ."
+ },
+ {
+  "page": 560,
+  "where": "statements of p. 560: Lemme 7.1 (to '... définie dans (IV 2.10).') and Corollaire 7.2",
+  "scan": "underlined word group by word group (both scans): Lemme 7.1 'Soit', 'une immersion fermée régulière', 'de codimension bornée', 'de sorte que', 'est un morphisme parfait', 'et qu'on peut donc définir le morphisme', 'Soit d'autre part', 'le faisceau conormal pour', 'qui est un faisceau localement libre de type fini sur', 'de sorte qu'on peut former', 'Considérons aussi l'nomomorphisme image directe', 'Ceci posé', 'on a la formule', 'où le produit du deuxième membre est relatif à la structure de', 'module', 'de', 'définie dans'; Corollaire 7.2 'Soient', 'un morphisme plat', 'avec', 'un trait', 'i.e.', 'le spectre d'un anneau de valuation discrète', 'le point fermé de', 'son point générique', 'l'inclusion canonique', 'Alors', 'est de tor-dimension finie donc', 'on peut définir'; letters, formulas, references and punctuation plain; the labels underline only the word",
+  "tex": "the statements in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé X follows the Exposé II pattern of GLOBAL_ISSUES 82 (pending volume decision; findings_521_525, findings_526_530): not itemized. 'La démonstration est, essentiellement sans changement, ...' is plain in the print."
+ }
+]

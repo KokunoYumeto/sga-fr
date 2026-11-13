@@ -1,0 +1,33 @@
+% from main.tex
+%%%%%%%%%%  scan idx 107  |  folio 94  %%%%%%%%%%
+où \(u'\) est un
+quasi-isomorphisme et \(v\) un monomorphisme induisant l'identité en degré \(\geq n\) (i.e. tel que \(E'^i=E^i\) et \(v^i=\id(E^i)\) pour \(i\geq n\)).
+
+\emph{Preuve.} Appliquant (1.4.4) dans le cas où \(S\) est le site ponctuel et \(\mathcal C_0=\mathcal C\), on obtient un triangle commutatif de \(\Cpx(\mathcal C)\)
+\[
+\begin{tikzcd}
+E \arrow[r,"v_{n-1}"] \arrow[d,"u"'] & E'_{\,n-1} \arrow[dl,"u'_{n-1}"]\\
+F &
+\end{tikzcd}
+\]
+où \(u'_{n-1}\) est un \((n-1)\)-quasi-isomorphisme et \(v_{n-1}\) un monomorphisme induisant l'identité en degré \(\geq n\). Itérant le procédé, on trouve, pour \(i\leq n-1\), une suite de triangles commutatifs de \(\Cpx(\mathcal C)\)
+\[
+\begin{tikzcd}
+E'_i \arrow[r,"v_{i-1}"] \arrow[d,"u'_i"'] & E'_{\,i-1} \arrow[dl,"u'_{i-1}"]\\
+F &
+\end{tikzcd}
+\]
+où \(u'_i\) est un \(i\)-quasi-isomorphisme et \(v_{i-1}\) un monomorphisme induisant l'identité en degré \(\geq i\). Le corollaire s'en déduit par passage à la limite. De manière précise, notant \(d'_i\) la différentielle de \(E'_i\), on définit \(E'\) par
+\[
+  E'^i=E^i,\quad d'^i=d^i\quad\text{pour }i\geq n,
+\]
+et
+\[
+  E'^i=(E'_i)^i,\quad d'^i=(d'_i)^i\quad\text{pour }i<n,
+\]
+puis \(v\) et \(u'\) par
+\[
+  v^j=(v_i)^j,\qquad u'^j=(u'_i)^j\qquad\text{pour }i\leq j,
+\]
+et l'on vérifie aussitôt que \(E'\), \(v\), \(u'\) ainsi définis répondent à la question.
+

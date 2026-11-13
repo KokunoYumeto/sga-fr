@@ -1,0 +1,140 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz-cd}
+\DeclareMathOperator{\Spec}{Spec}
+\begin{document}
+% from main.tex
+%%%%%%%%%%  scan idx 489  |  folio 476  %%%%%%%%%%
+\textbf{Proposition 2.2.} Le complexe $L^{X/Y}_\bullet$ ne dépend pas, à un isomorphisme canonique près dans la catégorie dérivée $D(X)$, de la factorisation choisie par un $Y$-schéma lisse.
+
+Soient $V,V'$ deux $Y$-schémas lisses par lesquels se factorise $f$. Posons : $V''=V\times_Y V'$; alors $V''$ est lisse sur $Y$, et aussi sur $V$ et $V'$. De plus, les immersions $X\to V$ et $X\to V'$ définissent une immersion $X\to V''$ qui factorise $f$. On peut donc se ramener à comparer les complexes $L^{X/Y}_\bullet$ relatifs à deux factorisations par des $Y$-schémas lisses $V$ et $V'$, tels qu'il existe un diagramme commutatif au-dessus de $Y$ :
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+& V' \arrow[d,"p"]\\
+X \arrow[ur,"j"] \arrow[r,"i"] & V,
+\end{tikzcd}
+\]
+où $i$ et $j$ sont des immersions fermées, et $p$ un morphisme lisse.
+
+Par fonctorialité, on obtient alors des homomorphismes :
+\[
+I/I^2\longrightarrow J/J^2;
+\qquad
+p^*(\Omega^1_{V/Y})\longrightarrow\Omega^1_{V'/Y},
+\]
+d'où un diagramme :
+\begin{equation}\tag{2.2.1}
+\begin{tikzcd}[column sep=large,row sep=large]
+I/I^2 \arrow[r] \arrow[d,"d"'] & J/J^2 \arrow[d,"d"]\\
+i^*(\Omega^1_{V/Y}) \arrow[r] & j^*(\Omega^1_{V'/Y}).
+\end{tikzcd}
+\end{equation}
+
+Comme $V$ et $V'$ sont lisses sur $Y$, on obtient la suite exacte :
+\[
+0\longrightarrow p^*(\Omega^1_{V/Y})\longrightarrow\Omega^1_{V'/Y}
+\longrightarrow\Omega^1_{V'/V}\longrightarrow0.
+\]
+Comme les Modules de différentielles considérés sont localement libres sur $\mathcal O_V$, on trouve en appliquant le foncteur $j^*$ la suite exacte :
+\begin{equation}\tag{2.2.2}
+0\longrightarrow i^*(\Omega^1_{V/Y})\longrightarrow j^*(\Omega^1_{V'/Y})
+\longrightarrow j^*(\Omega^1_{V'/V})\longrightarrow0.
+\end{equation}
+% from main.tex
+%%%%%%%%%%  scan idx 490  |  folio 477  %%%%%%%%%%
+
+Par
+ailleurs, $j$ définit une section $j'$ de $X'=V'\times_V X$:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X' \arrow[r,"i'"] \arrow[d,"p'"'] & V' \arrow[d,"p"]\\
+X \arrow[r,"i"] \arrow[ur,"j"] \arrow[u,"j'"',bend right] & V .
+\end{tikzcd}
+\]
+Soient $I,J,K$ les idéaux définissant $i,j,j'$ ; on a : $j=i'\circ j'$, et les immersions $i',j,j'$ sont régulières; de plus, $i'$ est définie par l'idéal $p^*(I)$ (car $p$ est plat), et son faisceau conormal est donc $i'^*(p^*(I))=p'^*(I/I^2)$. On obtient alors la suite exacte :
+\begin{equation}\tag{2.2.3}
+0\longrightarrow I/I^2\longrightarrow J/J^2\longrightarrow K/K^2\longrightarrow0.
+\end{equation}
+Nous allons montrer :
+
+a) que le diagramme (2.2.1) est commutatif ; on obtiendra donc ainsi un morphisme de complexes $\theta$ du complexe $L^{X/Y}_\bullet$ défini par $V$ dans le complexe $L^{X/Y}_\bullet$ défini par $V'$ ;
+
+b) que l'homomorphisme : $K/K^2\longrightarrow j^*(\Omega^1_{V'/V})$ défini par (2.2.2), (2.2.3) et (2.2.1) est un isomorphisme ; cela entrainera que le mapping cylinder de $\theta$ est acyclique, donc que $\theta$ est un quasi-isomorphisme, donc définit un isomorphisme dans la catégorie dérivée.
+
+Les propriétés a) et b) sont de nature locale sur $X$. On peut donc supposer $X,Y,V$ et $V'$ affines. Posons : $Y=\Spec(A)$, $V=\Spec(B)$, $V'=\Spec(B')$, $X=\Spec(C)$, et gardons les mêmes lettres pour noter les homomorphismes et les idéaux correspondants. On a le diagramme :
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+B\otimes_A B \arrow[r,"p\otimes p"] \arrow[d,"\Delta"'] \arrow[dr,phantom,"(1)"] & B'\otimes_A B' \arrow[d,"\Delta"]\\
+B \arrow[r,"p"] \arrow[dr,"i"'] & B' \arrow[d,"j"'] \arrow[dr,"i'","(2)"' near start] & B'\otimes_B B' \arrow[l,"\Delta"'] \arrow[d]\\
+{} & C \arrow[r,shift right=.7ex,"p'"'] & B'\otimes_B C = B'/IB'. \arrow[l,shift right=.7ex,"j'"']
+% from main.tex
+%%%%%%%%%%  scan idx 491  |  folio 478  %%%%%%%%%%
+\end{tikzcd}
+\]
+
+L'homomorphisme $I/I^2\to J/J^2$ se déduit de l'homomorphisme : $IB'\to J$ et coïncide avec celui qui se déduit de $p:I\to J$; l'homomorphisme : $i^*(\Omega^1_{V/Y})\longrightarrow j^*(\Omega^1_{V'/Y})$ se déduit du carré commutatif (1). La propriété a) est donc évidente.
+
+L'homomorphisme : $K/K^2\to j^*(\Omega^1_{V'/V})$ considéré dans b) peut-être défini comme suit: soit $\overline x\in K/K^2$, soit $x$ un élément de $J$ remontant $\overline x$ (il en existe car $K=J/IB'$). On associe à $\overline x$ l'image de $x$ par l'homomorphisme composé : $J\xrightarrow{d}\Omega_{B'/A}\otimes_{B'}C\longrightarrow\Omega^1_{B'/B}\otimes_{B'}C$. Par ailleurs, soit $H$ l'idéal d'augmentation de : $B'\otimes_B B'\longrightarrow B'$ ; le carré commutatif (2) donne un homomorphisme : $H\to K$, d'où un homomorphisme : $H/H^2\otimes_{B'}C\longrightarrow K/K^2$. Or $H/H^2=\Omega^1_{B'/B}$ ; par suite, il suffit de vérifier que les homomorphismes construits sont inverses l'un de l'autre, ce qui se fait sans difficulté.
+
+\textbf{Définition 2.3.} Soit $f:X\to Y$ un morphisme lissifiable. Le complexe $L^{X/Y}_\bullet$, défini à isomorphisme canonique près dans la catégorie dérivée $D(X)$, est appelé complexe cotangent relatif de $X$ sur $Y$ (ou de $f$).
+
+\textbf{Proposition 2.4.} Soit $f:X\to Y$ un morphisme d'intersection complète (1.1) lissifiable. Alors $L^{X/Y}_\bullet$ est parfait. Plus précisément, pour toute
+% from main.tex
+%%%%%%%%%%  scan idx 492  |  folio 479  %%%%%%%%%%
+factorisation de $f$ comme composé d'une immersion et d'un morphisme lisse, le complexe $L^{X/Y}_\bullet$ défini en 2.1 est strictement parfait.
+
+Soit $f=g\circ i$, où $g$ est un morphisme lisse, et $i$ une immersion. D'après 1.2, $i$ est une immersion régulière. Si $J$ est l'Idéal définissant $i$, $J/J^2$ est donc un $\mathcal O_X$-Module localement libre de type fini. De même, comme $g:V\to Y$ est lisse, $i^*(\Omega^1_{V/Y})$ est localement libre de type fini, d'où 2.4.
+
+\textbf{Corollaire 2.5.} Soit $f:X\to Y$ un morphisme d'intersection complète lissifiable, et $f=g\circ i$ une factorisation de $f$ par un $Y$-schéma lisse $V$. Soit $J$ l'idéal de $\mathcal O_V$ définissant $i$. Alors, si $K^{\bullet}(X)$ désigne le groupe de Grothendieck des $\mathcal O_X$-Modules localement libres de type fini (resp. des complexes parfaits sur $X$), l'élément $T_f\in K^{\bullet}(X)$ défini par :
+\[
+T_f=\operatorname{cl}(i^*(\Omega^1_{V/Y}))-\operatorname{cl}(J/J^2)
+\]
+\[
+(\text{resp. }T_f=\operatorname{cl}(L^{X/Y}_\bullet))
+\]
+ne dépend pas de la factorisation de $f$ choisie. La valeur en un point $x$ de $X$ de l'augmentation de $T_f$ n'est autre que la dimension relative virtuelle de $X$ sur $Y$ au point $x$ (1.9).
+
+L'élément $T_f$ est bien défini dans les deux cas envisagés d'après 2.4, et sa classe dans $K^{\bullet}(X)$ ne dépend pas de la factorisation, d'après 2.2, dans le cas respé, et d'après la démonstration de 2.2 dans le cas non respé. La dernière assertion de 2.5 est triviale.
+
+\textbf{Proposition 2.6.} Soient $f:X\to Y$, et $g:Y\to Z$ deux morphismes d'intersection complète lissifiables, et supposons de plus la condition suivante remplie:
+
+% from main.tex
+%%%%%%%%%%  scan idx 493  |  folio 480  %%%%%%%%%%
+(G) Il
+existe un $Y$-schéma lisse $V$, factorisant $f$, tel que pour toute immersion fermée : $Y\to V'$ on puisse trouver un $V'$-schéma lisse $V''$, avec $V\simeq V''\times_{V'}Y$ (cette condition est en particulier remplie si $f$ est quasi-projectif et si $Y$ a un faisceau ample, en prenant pour $V$ un $\mathbb P^r_Y$).
+
+Alors $g\circ f$ est d'intersection complète, lissifiable, et on a un triangle distingué :
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+& L^{X/Y}_\bullet \arrow[dl] \\
+\mathbb Lf^*(L^{Y/Z}_\bullet) \arrow[rr] && L^{X/Z}_\bullet . \arrow[ul]
+\end{tikzcd}
+\]
+
+Soit $V'$ un $Z$-schéma lisse factorisant $g$. On considère le diagramme commutatif :
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X \arrow[r,"i"] \arrow[dr,"f"'] & V \arrow[r,"j'"] \arrow[d,"p"] & V'' \arrow[d,"p''"]\\
+& Y \arrow[r,"j"] \arrow[dr,"g"'] & V' \arrow[d,"p'"]\\
+& & Z .
+\end{tikzcd}
+\]
+
+Alors l'immersion $j'$ est régulière, car déduite de $j$ par un changement de base plat. Par suite $j'\circ i$ est une immersion régulière factorisant $g\circ f$, qui est donc lissifiable et d'intersection complète. De plus, on a la suite exacte des faisceaux conormaux :
+\[
+0\longrightarrow i^*(J'/J'^2)\longrightarrow K/K^2\longrightarrow I/I^2\longrightarrow0,
+\]
+en notant $I,J,J',K$ les faisceaux définissant respectivement les immersions $i,j,j',j'\circ i$. Or, $p''$ étant plat, $J'=p''^*(J)$. La suite peut donc s'écrire :
+\begin{equation}\tag{2.6.1}
+0\longrightarrow f^*(J/J^2)\longrightarrow K/K^2\longrightarrow I/I^2\longrightarrow0.
+\end{equation}
+
+Par ailleurs, $V'$ et $V''$ étant lisses sur $Z$, on a la suite exacte :
+\[
+0\longrightarrow p''^*(\Omega^1_{V'/Z})\longrightarrow\Omega^1_{V''/Z}\longrightarrow\Omega^1_{V''/V'}\longrightarrow0.
+\]
+
+\end{document}

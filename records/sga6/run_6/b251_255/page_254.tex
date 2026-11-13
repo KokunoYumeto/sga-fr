@@ -1,0 +1,26 @@
+% from main.tex
+%%%%%%%%%%  scan idx 267  |  folio 254  %%%%%%%%%%
+par
+suite, si \(f\) est parfait, \(F\) parfait rel. à \(g\) implique \(\mathbf Lf^*(F)\) parfait rel. à \(h\).
+\end{enumerate}
+
+\textbf{Remarque 4.5.2.} Avec les notations précédentes, si \(g\) est parfait, \(E\) parfait rel. à \(h\) n'implique pas nécessairement \(E\) parfait rel. à \(f\), comme le montre le sempiternel exemple d'un point singulier d'un schéma sur un corps. On a le critère suivant :
+
+\textbf{Proposition 4.6} (critère de perfection par fibres)\footnote{Analogue du «~critère de platitude par fibres~» (EGA IV 11.3.10).}. Soit
+\[
+\begin{tikzcd}
+X \arrow[rr,"f"] \arrow[dr,"h"'] && Y \arrow[dl,"g"]\\
+& S &
+\end{tikzcd}
+\]
+un triangle commutatif de morphismes de schémas. On suppose \(f\), \(h\) localement de type fini, et \(g\) localement de présentation finie et plat. Soient \(x\in X\), \(y=f(x)\), \(s=h(x)=g(y)\). Enfin, soit \(E\in\Ob D^-(X)\), et soit \([a,b]\) un intervalle de \(\mathbb Z\). On note \(f_s:X_s\to Y_s\) la fibre de \(f\) en \(s\), i.e. le morphisme déduit de \(f\) par le changement de base \(\Spec(k(s))\to S\). Alors les conditions suivantes sont équivalentes :
+\begin{enumerate}[label=(\roman*)]
+\item \(\parfamp_h(E)\subset[a,b]\) au voisinage de \(x\), et
+\[
+ \tamp_{\mathcal O_{Y_s,y}}(E_x\otimes_{\mathcal O_{Y,y}}^{\mathbf L}\mathcal O_{Y_s,y})
+ \subset[a,b];
+\]
+\item \(\parfamp_f(E)\subset[a,b]\) au voisinage de \(x\).
+\end{enumerate}
+
+\emph{Preuve.} (ii) \(\Longrightarrow\) (i). On sait déjà (4.3.1) que \(g\) est de dimension parfaite nulle. Donc (4.5.1 a)), la condition (ii) implique \(\parfamp_h(E)\subset[a,b]\) au voisinage de \(x\). Elle entraîne aussi. d'après 4.3), \(\tamp_{\mathcal O_{Y,y}}(E_x)\subset[a,b]\), donc (I 5.1 (i)), \(\tamp_{\mathcal O_{Y_s,y}}(E_x\otimes_{\mathcal O_{Y,y}}^{\mathbf L}\mathcal O_{Y_s,y})\subset[a,b]\), ce qui achève la

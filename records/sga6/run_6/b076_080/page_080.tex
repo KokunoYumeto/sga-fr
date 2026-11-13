@@ -1,0 +1,19 @@
+% from main.tex
+%%%%%%%%%%  scan idx 93  |  folio 80  %%%%%%%%%%
+cohérent \(F\) admet localement une résolution \emph{finie} gauche par des Modules libres de type fini, i.e.\ il existe localement une suite exacte
+\[
+  0\longrightarrow L_n\longrightarrow \cdots \longrightarrow L_0\longrightarrow F\longrightarrow 0,
+\]
+où les \(L_i\) sont libres de type fini. Il est donc naturel, quand \(\mathcal O_X\) est un faisceau d'anneaux locaux quelconque, de s'intéresser aux Modules qui jouissent de la propriété précédente. De tels Modules sont appelés \emph{parfaits}. Plus généralement, on dit qu'un \emph{complexe} \(F\) de \(\mathcal O_X\)-Modules est \emph{parfait} s'il existe localement un quasi-isomorphisme \(L\to F\), où \(L\) est un complexe à degrés bornés et à composantes libres de type fini. On montre dans Exp.\ I \S~3 que la sous-catégorie pleine \(\Db(X)_{\mathrm{parf}}\) de \(\Db(X)\) formée des complexes parfaits, est, de même que \(\Db(X)_{\mathrm{coh}}\), une sous-catégorie triangulée, « stable » par image inverse et produit tensoriel dérivés. On a évidemment
+\[
+  \Db(X)_{\mathrm{parf}}\subset\Db(X)_{\mathrm{coh}},
+\]
+mais l'inclusion est stricte en général. La pseudo-cohérence peut se redéfinir « par passage à la limite » à partir de la perfection : un complexe \(F\) est pseudo-cohérent si et seulement si, pour tout \(n\in\mathbb Z\), \(F\) peut être « localement approché à l'ordre \(n\) par un complexe parfait », par quoi l'on entend qu'il existe localement un triangle distingué
+\[
+\begin{tikzcd}
+& R \arrow[dl] &\\
+L \arrow[rr] && F \arrow[ul]
+\end{tikzcd}
+\]
+où \(L\) est parfait et \(R\) acyclique en degré \(\geq n\). Inversement, la perfection se récupère à partir de la pseudo-cohérence grâce à une condition de régularité supplémentaire : un complexe est parfait si et seulement s'il est pseudo-cohérent et localement de tor-dimension finie (Exp.\ I \S~5). On retrouve ainsi le fait que, si les anneaux locaux sont réguliers, tout faisceau cohérent est parfait, plus généralement tout complexe pseudo-cohérent à cohomologie localement bornée est parfait.
+

@@ -1,0 +1,37 @@
+% from main.tex
+%%%%%%%%%%  scan idx 163  |  folio 150  %%%%%%%%%%
+isomorphismes
+\[
+  E_2^{p0}=\Ho^p(\Hom^\bullet(E,F))
+  \xrightarrow{\sim}\Ext^p(E,F)=\Ho^p(\RHom(E,F)),
+\]
+ce qui démontre l'assertion.
+
+\textbf{Proposition 7.1.2.} Soit \(f:(S',A')\longrightarrow(S,A)\) un morphisme de topos annelés. Soient \(E\in\Ob\Dpx^-(S)\) et \(F\in\Ob\Dpx^b(S)\) tels que l'on ait \(\RHom(E,F)\in\Ob\Dpx^b(S)\) et \(\mathrm Lf^*(F)\in\Ob\Dpx^b(S')\). Il existe une flèche canonique fonctorielle
+\[
+  \mathrm Lf^*\RHom(E,F)
+  \longrightarrow
+  \RHom(\mathrm Lf^*E,\mathrm Lf^*F).
+\]
+Celle-ci est un isomorphisme si \(E\) est parfait.
+
+\emph{Preuve.} En vertu de l'adjonction des foncteurs \(\mathrm Lf^*\) et \(\mathrm Rf_*\), il suffit de définir une flèche
+\[
+  \RHom(E,F)
+  \longrightarrow
+  \mathrm Rf_*\RHom(\mathrm Lf^*E,\mathrm Lf^*F).
+\]
+On utilise pour cela la flèche d'adjonction \(F\to\mathrm Rf_*\mathrm Lf^*F\) et l'isomorphisme de dualité
+\[
+  \mathrm Rf_*\RHom(\mathrm Lf^*E,\mathrm Lf^*F)
+  \xrightarrow{\sim}
+  \RHom(E,\mathrm Rf_*\mathrm Lf^*F).
+\]
+Pour voir que la flèche de (7.1.2) est un isomorphisme pour \(E\) parfait, on se ramène trivialement, par localisation et dévissage, au cas où \(E=A\), auquel cas c'est une tautologie.
+
+\textbf{Proposition 7.2.} Il existe (cf. SGA 5 I 1.6), pour \(E\in\Ob\Dpx(S)\) et \(F\in\Ob\Dpx^+(S)\), une flèche canonique fonctorielle
+\[
+  E\longrightarrow\RHom(\RHom(E,F),F).
+\]
+Celle-ci est un isomorphisme si \(E\in\Ob\Dpx(S)_{\mathrm{parf}}\) et \(F=A\).
+

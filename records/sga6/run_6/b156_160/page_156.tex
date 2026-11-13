@@ -1,0 +1,43 @@
+% from main.tex
+%%%%%%%%%%  scan idx 169  |  folio 156  %%%%%%%%%%
+On
+peut interpréter \(u\) (resp. \(v\)) comme un homomorphisme, dans \(\Dpx(U)\), de \(A|U\) dans \(\RHom(E,F)|U\) (resp. \(\RHom(F,E)|U\)), et former
+\[
+  u\otL v:A|U\longrightarrow(\RHom(E,F)\otL\RHom(F,E))|U.
+\]
+L'application \((u,v)\mapsto\langle u,v\rangle=\gamma\circ(u\otL v)\) définit une application \(H^0(U,A)\)-linéaire,
+\[
+  \Hom_{\Dpx(U)}(E|U,F|U)\otimes_{H^0(U,A)}\Hom_{\Dpx(U)}(F|U,E|U)
+  \longrightarrow H^0(U,A),
+\]
+que nous appellerons \emph{cup-produit}\footnote{même remarque que pour la définition de \(\Tr_{E|U}\)}.
+
+Le lien entre trace et cup-produit s'exprime dans la proposition suivante.
+
+\textbf{Proposition 8.3.} Dans la situation de (8.2), pour \(u\in\Hom(E|U,F|U)\) et \(v\in\Hom(F|U,E|U)\), on a
+\[
+  \Tr_{E|U}(vu)=\Tr_{F|U}(uv)=\langle u,v\rangle.
+\]
+En particulier, si \(E=F\), on a
+\[
+  \Tr_{E|U}(u)=\langle u,\Id\rangle=\langle\Id,u\rangle.
+\]
+
+\emph{Preuve.} Pour simplifier, nous supposerons \(U=S\). On a donc deux flèches \(u:A\longrightarrow E^\vee\otL F\) et \(v:A\longrightarrow F^\vee\otL E\), d'où
+\[
+  u\otL v:A\longrightarrow E^\vee\otL F\otL F^\vee\otL E.
+\]
+D'autre part, on a \(vu:A\to E^\vee\otL E\) et \(uv:A\to F^\vee\otL F\). La proposition résulte de la commutativité des diagrammes suivants (laquelle est de vérification «~purement mécanique~») :
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ A \arrow[r,"u\otL v"] \arrow[dr,"vu"'] & E^\vee\otL F\otL F^\vee\otL E \arrow[d,"\Id\otimes\tau_F"] \\
+ & E^\vee\otL E
+\end{tikzcd}
+\qquad
+\begin{tikzcd}[column sep=large,row sep=large]
+ A \arrow[r,"u\otL v"] \arrow[dr,"uv"'] & E^\vee\otL F\otL F^\vee\otL E \arrow[d,"\tau_E\otimes\Id"] \\
+ & F^\vee\otL F
+\end{tikzcd}
+\]
+\[
+\begin{tikzcd}[column sep=

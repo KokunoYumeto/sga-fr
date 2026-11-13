@@ -1,0 +1,28 @@
+% from main.tex
+%%%%%%%%%%  scan idx 397  |  folio 384  %%%%%%%%%%
+foncteur \(\Proj_0\) sur la catégorie des \(B\)-Modules gradués est compatible au produit tensoriel; il en est encore de même du foncteur obtenu sur les catégories dérivées.
+
+
+\textbf{2.4.} Pour tout entier $k$, et tout $\mathcal O_X$-Module $L$, posons :
+\begin{equation}\tag{2.4.1}
+  F_k(L)=\bigoplus_{n\geq k} f_*\bigl(L(n)\bigr).
+\end{equation}
+Le foncteur $F_k:\mathcal A\to\mathcal C$ ainsi défini est exact à gauche. Comme la catégorie des $\mathcal O_X$-Modules a assez d'injectifs, on peut définir un foncteur dérivé :
+\begin{equation}\tag{2.4.2}
+  \mathbf R F_k:D^+(\mathcal A)\longrightarrow D^+(\mathcal C).
+\end{equation}
+Si $L$ est un $\mathcal O_X$-Module localement libre de type fini, il existe un entier $k_0$ tel que pour $k\geq k_0$, $L$ soit $F_k$-acyclique. Il suffit pour le voir de montrer que, pour $n$ assez grand, $L$ est acyclique pour les foncteurs $L\leadsto f_*\bigl(L(n)\bigr)$. Comme la tensorisation par $\mathcal O_X(n)$ est un foncteur exact, cela résulte immédiatement de la suite spectrale des foncteurs composés et de 1.3.
+
+\textbf{2.5.} On se propose de construire pour tout $\mathcal O_X$-Module $F$ un homomorphisme fonctoriel en $F$ :
+\begin{equation}\tag{2.5.1}
+  \beta:\operatorname{Proj}_0\bigl(F_k(F)\bigr)\longrightarrow F.
+\end{equation}
+Pour cela on définit la restriction de $\beta$ aux $D_+(U,s)$ (2.3.2). Or par construction on a, en posant $M=F_k(F)$ :
+\[
+  \operatorname{Proj}_0(M)|_{D_+(U,s)}
+  =\bar f^{*}_{U,s}\bigl(M_{(s),U}\bigr).
+\]
+Pour définir un homomorphisme~:
+\[
+  \bar f^{*}_{U,s}\bigl(M_{(s),U}\bigr)\longrightarrow F|_{D_+(U,s)},
+\]

@@ -1,0 +1,35 @@
+% from main.tex
+%%%%%%%%%%  scan idx 244  |  folio 231  %%%%%%%%%%
+condition de nature locale ; si \(X,Y,S\) sont affines d'anneaux respectifs \(B,C,A\), elle signifie que la flèche canonique
+\[
+  B\otimes_A^{\mathbf L}C\longrightarrow B\otimes_A C
+\]
+est un isomorphisme. Elle est donc réalisée en particulier si \(X\) ou \(Y\) est plat sur \(S\).
+
+\textbf{Lemme 1.5.1.} Soient des carrés cartésiens de schémas
+\[
+\begin{tikzcd}
+X \arrow[d] & X' \arrow[l] \arrow[d] & X'' \arrow[l] \arrow[d]\\
+Y & Y' \arrow[l] & Y'' \arrow[l].
+\end{tikzcd}
+\]
+Si \(X\) et \(Y'\) sont tor-indépendants sur \(Y\), et si \(X'\) et \(Y''\) sont tor-indépendants sur \(Y'\), alors \(X\) et \(Y''\) sont tor-indépendants sur \(Y\).
+
+\emph{Preuve.} Exercice facile sur l'associativité du produit tensoriel.
+
+\textbf{Notation 1.6.} Soient \(X\) et \(Y\) deux \(S\)-schémas, \(E\in\Ob D^{-}(X)\), \(F\in\Ob D^{-}(Y)\). Nous poserons
+\[
+  E\otimes_S^{\mathbf L}F
+  =
+  L\pr_1^*(E)\otimes^{\mathbf L}L\pr_2^*(F),
+\]
+où \(\pr_1,\pr_2\) sont les deux projections de \(X\times_SY\).
+
+\textbf{Lemme 1.7.} Soient \(S\) un schéma, et pour \(i=1,2\), \(f_i:X_i\longrightarrow Y_i\) une \(S\)-immersion fermée. On suppose que \(X_1\) et \(X_2\), ainsi que \(Y_1\) et \(Y_2\) sont tor-indépendants sur \(S\). Alors, pour \(E_i\in\Ob D^{-}(X_i)_{\mathrm{qcoh}}\)\footnote{\(D(X_i)_{\mathrm{qcoh}}\) désigne la sous-catégorie pleine de \(D(X_i)\) formée des complexes à cohomologie quasi-cohérente.}, il existe un isomorphisme canonique
+\[
+  f_{1*}(E_1)\otimes_S^{\mathbf L}f_{2*}(E_2)
+  \xrightarrow{\sim}
+  (f_1\times_Sf_2)_*(E_1\otimes_S^{\mathbf L}E_2).
+\]
+
+\emph{Preuve.} Posons \(f_1\times_Sf_2=f\). On définit facilement, par adjonction, une flèche

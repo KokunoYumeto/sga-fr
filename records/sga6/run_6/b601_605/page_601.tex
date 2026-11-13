@@ -1,0 +1,25 @@
+% from main.tex
+%%%%%%%%%%  scan idx 614  |  folio 601  %%%%%%%%%%
+Soient \(Y_k=\bigcup_{i\in I(k)}X_i\) les composantes connexes de \(X\)~; alors \(f\) se décompose, \(f=\coprod_k f_k:\coprod_k(\coprod_{i\in I(k)}X_i)\longrightarrow Y_k\), et l'assertion en résulte. Enfin, une récurrence immédiate nous ramène au cas d'un morphisme \(X_1\amalg X_2\to X\). \(\sgacircled{1}\) et \(\sgacircled{3}\) résultent alors, quitte à restreindre \(S\) d'après (EGA III 7.8.6), de la proposition suivante.
+
+\textbf{Proposition 2.3.} Soient \(S\) un schéma, \(g:Y\to S\) un morphisme propre et \(Y_1,Y_2\) deux sous-schémas fermés définis par les idéaux \(I_1,I_2\). On suppose que
+\begin{enumerate}[label=\alph*)]
+\item \(Y,Y_1,Y_2,Y_1\cap Y_2\) sont fidèlement plats et de présentation finie sur \(S\).
+\item \(g_*\mathcal O_Y=\mathcal O_S\) et \((g_i)_*\mathcal O_{Y_i}=\mathcal O_S\) universellement (où \(g_i=g|_{Y_i}\), \(i=1,2\)).
+\item \(I_1\cap I_2=0\).
+\end{enumerate}
+Alors \(\Pic_{Y/S}\longrightarrow \Pic_{(Y_1\amalg Y_2)/S}\) est représentable par un morphisme affine de présentation finie.
+
+En effet notons d'abord que les hypothèses sont stables pour tout changement de base. Pour (c), celà résulte des deux suites exactes~:
+\[
+  0\longrightarrow I_1+I_2\longrightarrow\mathcal O_Y
+  \longrightarrow\mathcal O_{Y_1\cap Y_2}\longrightarrow0
+\]
+et
+\[
+  0\longrightarrow I_1\cap I_2\longrightarrow I_1\oplus I_2
+  \longrightarrow I_1+I_2\longrightarrow0~;
+\]
+la première montre que \(I_1+I_2\) est plat sur \(S\)~; ensuite la seconde que \(I_1\cap I_2\) est stable par changement de base.
+
+L'assertion est locale pour la topologie f.p.p.f. En faisant le changement de base \(Y_1\cap Y_2\to S\), on peut donc supposer que \(Y_1\cap Y_2/S\) possède une section \(\alpha\), qui définit des sections \(\alpha_i\) de \(Y_i\) et \(\beta\) de \(Y\). Après un changement de base convenable, on est ramené à voir que tout point \(\mu:S\to\Pic_{(Y_1\amalg Y_2)/S}\) a comme image réciproque un sous-foncteur de \(\Pic_{Y/S}\) qui est

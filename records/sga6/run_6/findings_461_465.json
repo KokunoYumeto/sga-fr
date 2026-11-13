@@ -1,0 +1,376 @@
+[
+ {
+  "page": 461,
+  "where": "start of page (folio-461 marker)",
+  "scan": "p. 460 ends '... j_* passent aux gradués associés, et définissent donc : i_gr : Gr^{k-d}K˙(Y)_Q → Gr^kK˙(X)_Q ; j_gr : Gr^{k-1}K˙(Y')_Q → Gr^kK˙(X')_Q .'; p. 461 begins 'Enfin, on remarque que λ_{-1}(F) = (-1)^{d-1}γ^{d-1}(F)' (both scans; crops_461_465/wit_460_half.png, wit_461_half.png)",
+  "tex": "page_461.tex begins with 'donc :' and the display of i_gr and j_gr (8 lines that p. 460 prints), then 'Enfin, on remarque'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 461 really begins at 'Enfin, on remarque que'. Exact edit in main.tex, both layers (diplomatic lines 11766-11776, current 11772-11782): replace 'et définissent\\n%%%%%%%%%%  scan idx 474  |  folio 461  %%%%%%%%%%\\ndonc :\\n\\[\\n  i_{\\gr}:\\operatorname{Gr}^{k-d}K^\\circ(Y)_{\\mathbb Q}\\n  \\to \\operatorname{Gr}^{k}K^\\circ(X)_{\\mathbb Q};\\n  \\qquad\\n  j_{\\gr}:\\operatorname{Gr}^{k-1}K^\\circ(Y')_{\\mathbb Q}\\n  \\to \\operatorname{Gr}^{k}K^\\circ(X')_{\\mathbb Q}.\\n\\]\\nEnfin, on remarque' by 'et définissent\\ndonc :\\n\\[\\n  i_{\\gr}:\\operatorname{Gr}^{k-d}K^\\circ(Y)_{\\mathbb Q}\\n  \\to \\operatorname{Gr}^{k}K^\\circ(X)_{\\mathbb Q};\\n  \\qquad\\n  j_{\\gr}:\\operatorname{Gr}^{k-1}K^\\circ(Y')_{\\mathbb Q}\\n  \\to \\operatorname{Gr}^{k}K^\\circ(X')_{\\mathbb Q}.\\n\\]\\n%%%%%%%%%%  scan idx 474  |  folio 461  %%%%%%%%%%\\nEnfin, on remarque' (the display itself unchanged; old string once per layer; simulated in memory: crops_461_465/sim_markers.py). Same result: python -I move_marker.py 6 461 \"Enfin, on remarque\" (anchor after the marker; it starts its line)."
+ },
+ {
+  "page": 461,
+  "where": "'D'après VI 5.8, g_*(Fil^{k-1}K˙(Y')) ⊂ Fil^{k-d}K˙(Y) pour tout k, puisque'",
+  "scan": "the inclusion stands in the running text, on one line with 'D'après VI 5.8,' and 'pour tout k, puisque' (both scans)",
+  "tex": "a display between 'D'après VI 5.8,' and 'pour tout \\(k\\)'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "D'après VI 5.8,\n\\[\n  g_*(\\Fil^{k-1}K^\\circ(Y'))\\subset \\Fil^{k-d}K^\\circ(Y)\n\\]\npour tout",
+   "new": "D'après VI 5.8, \\(g_*(\\Fil^{k-1}K^\\circ(Y'))\\subset \\Fil^{k-d}K^\\circ(Y)\\) pour tout"
+  },
+  "note": "The TeX makes an inline formula a display (same kind of fix as pp. 21, 34, 42, 80, 105)."
+ },
+ {
+  "page": 461,
+  "where": "'Posons :' after ii)",
+  "scan": "'Posons :' begins a new, indented paragraph (left edge at the paragraph indent of 'D'après VI 5.8' and 'Pour montrer', both scans; crops_461_465/line_starts.py on the witness: 336 px against the margin's 214)",
+  "tex": "'\\]' followed directly by 'Posons :' (the paragraph runs on)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nPosons :",
+   "new": "\\]\n\nPosons :"
+  },
+  "note": "Missing paragraph break. 'Alors d'après VI 5.8' below continues at the left margin, as in the TeX."
+ },
+ {
+  "page": 461,
+  "where": "label of the display 'j_*(y') + f^*(x) ∈ Fil^{k+1}K˙(X')_Q ,'",
+  "scan": "(4.6.1) (both scans)",
+  "tex": "\\tag{4.6.1} (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\tag{4.8.1}",
+  "note": "The display belongs to the proof of Théorème 4.8 and is cited as '(4.8.1)' on the first line of p. 462 ('En appliquand f_* à la relation (4.8.1), on obtient'); 4.6.1 is Remarque 4.6.1 (main.tex line 11609). The 'Compte tenu de (4.6.1)' of p. 462 repeats the wrong number (entry there). The current layer also has \\tag{4.6.1}."
+ },
+ {
+  "page": 461,
+  "where": "'Alors d'après VI 5.8, y ∈ Fil^kK˙(Y).'",
+  "scan": "exponent k alone (both scans; crops_461_465/w461_Filk.png)",
+  "tex": "\\(y\\in\\Fil^{k}K^\\circ(Y)\\) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\(y\\in\\Fil^{k-d}K^\\circ(Y)\\)",
+  "note": "y = g_*(y') with y' ∈ Fil^{k-1}K˙(Y')_Q, and VI 5.8 as quoted on this page gives g_*(Fil^{k-1}K˙(Y')) ⊂ Fil^{k-d}K˙(Y): the claim proved and needed is the 'il existe y ∈ Fil^{k-d}K˙(Y)_Q' above. The current layer also reads Fil^{k}."
+ },
+ {
+  "page": 461,
+  "where": "'En appliquand f_* à la relation'",
+  "scan": "'appliquand' (both scans; crops_461_465/w461_appliquand.png)",
+  "tex": "appliquand (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "appliquant",
+  "note": "The current layer also reads 'appliquand'."
+ },
+ {
+  "page": 461,
+  "where": "letters of sheaves on pp. 461-465",
+  "scan": "underlined in the print (both scans): the N of P(N) and of 'N étant de rang d' (p. 461; the P doubly underlined, \\mathbf P as in the TeX); the J of 'Soir J l'Idéal de O_X' (p. 464); both J_z, the J of 'une suite de sections de J' and of J|U (p. 465). Plain in the print: X, Y, Z, U, F, L, x, y, z and the N of c˙(N) (p. 464)",
+  "tex": "all plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé VII transcription (findings_416_420, findings_431_435): not itemized. The underlined O of O_X, O_Z, O_U, O_{X,z}, O_{Z∩U}, O_{Z''_α}, written \\mathcal O, falls under the pending structure-sheaf decision."
+ },
+ {
+  "page": 461,
+  "where": "K˙ on pp. 461-465",
+  "scan": "K with a raised dot in every place (both scans), e.g. 'y' ∈ Fil^{k-1}K˙(Y')_Q' (p. 461), 'la structure de K˙(Y') comme K˙(Y)-algèbre libre' (p. 462), 'K˙(Z') → K˙(X) → K˙(U) → 0' (p. 465)",
+  "tex": "K^\\circ (68 on pp. 461-465, and 4 more in the p.-460 display that stands under the folio-461 marker)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "The Exposé VII convention reported in findings_416_420 (one script K^\\circ -> K^{\\bullet} for VII, both layers): not itemized. Three examples: 'y'\\in\\Fil^{k-1}K^\\circ(Y')_{\\mathbb Q}' -> 'y'\\in\\Fil^{k-1}K^{\\bullet}(Y')_{\\mathbb Q}' (p. 461); 'structure de \\(K^\\circ(Y')\\) comme \\(K^\\circ(Y)\\)-algèbre' -> 'structure de \\(K^{\\bullet}(Y')\\) comme \\(K^{\\bullet}(Y)\\)-algèbre' (p. 462); 'K^\\circ(Z')\\xrightarrow{j_*}K^\\circ(X)' -> 'K^{\\bullet}(Z')\\xrightarrow{j_*}K^{\\bullet}(X)' (p. 465). The c˙(N) of p. 464 is its own entry (the K script does not reach it)."
+ },
+ {
+  "page": 462,
+  "where": "start of page (folio-462 marker)",
+  "scan": "p. 461 ends '... En appliquand f_* à la relation'; p. 462 begins '(4.8.1), on obtient :' (both scans; crops_461_465/wit_461_half.png, wit_462_half.png)",
+  "tex": "page_461.tex ends 'à la relation (4.8.1), on' above the folio-462 marker; page_462.tex begins 'obtient :'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 462 really begins at '(4.8.1), on'. Exact edit in main.tex, both layers (diplomatic lines 11804-11806, current 11810-11812): replace 'à la relation (4.8.1), on\\n%%%%%%%%%%  scan idx 475  |  folio 462  %%%%%%%%%%\\nobtient :' by 'à la relation\\n%%%%%%%%%%  scan idx 475  |  folio 462  %%%%%%%%%%\\n(4.8.1), on obtient :' (old string once per layer; simulated in memory: crops_461_465/sim_markers.py). The sentence runs on, so no blank line."
+ },
+ {
+  "page": 462,
+  "where": "'Compte tenu de (4.6.1), on obtient donc :'",
+  "scan": "(4.6.1) (both scans)",
+  "tex": "(4.6.1) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "(4.8.1)",
+  "note": "The relation j_*(y') + f^*(x) ∈ Fil^{k+1}K˙(X')_Q of p. 461, numbered (4.6.1) there by mistake (entry on p. 461) and cited as (4.8.1) on the first line of this page; it is used here a second time. The current layer also reads (4.6.1)."
+ },
+ {
+  "page": 462,
+  "where": "display 'j_*(z) ∈ Fil^{k+1}K˙(X')_Q ,'",
+  "scan": "a comma after the display (both scans; crops_461_465/w462_jz_comma.png)",
+  "tex": "a full stop",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "j_*(z)\\in\\Fil^{k+1}K^\\circ(X')_{\\mathbb Q}.",
+   "new": "j_*(z)\\in\\Fil^{k+1}K^\\circ(X')_{\\mathbb Q},"
+  },
+  "note": "Goes with the next entry: the sentence runs on into 'd'où :'."
+ },
+ {
+  "page": 462,
+  "where": "'d'où :' after that display",
+  "scan": "'d'où :' with a small d, at the left margin, continuing the sentence (both scans)",
+  "tex": "D'où :",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "D'où :",
+   "new": "d'où :"
+  },
+  "note": "Apply with the comma entry above (the two edits do not overlap)."
+ },
+ {
+  "page": 462,
+  "where": "'Soit z̄ l'image de z dans Gr^{k-1}K˙(Y')_Q'",
+  "scan": "begins a new, indented paragraph after the display j^*(j_*(z)) = z(1-L) ∈ ... (both scans; witness indent 350 px against the margin's 228)",
+  "tex": "'\\]' followed directly by 'Soit \\(\\bar z\\)' (the paragraph runs on)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nSoit \\(\\bar z\\)",
+   "new": "\\]\n\nSoit \\(\\bar z\\)"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 462,
+  "where": "'On a donc : z(1-L) = 0.'",
+  "scan": "one bar over the whole product z(1-L) (both scans; crops_461_465/w462_zbar.png, c462_zbar.png)",
+  "tex": "\\bar z\\,\\overline{(1-L)}=0 (two bars)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\bar z\\,\\overline{(1-L)}=0\\)",
+   "new": "\\(\\overline{z(1-L)}=0\\)"
+  },
+  "note": "The class of the product in Gr^kK˙(Y')_Q; the z̄ and the bar of (1-L) of the sentence before are separate, as in the TeX."
+ },
+ {
+  "page": 463,
+  "where": "display 'Fil^k(K˙(Y')_Q x K˙(X)_Q) → Fil^kK˙(X')_Q'",
+  "scan": "the arrow carries the label v (both scans)",
+  "tex": "\\longrightarrow without label",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow",
+   "new": "\\xrightarrow{v}"
+  },
+  "note": "The only \\longrightarrow of page_463.tex."
+ },
+ {
+  "page": 463,
+  "where": "display 'γ^k_*(y'_1,x_1) = (Σ_{p=1}^k γ^{k-p}(x_1)γ^p(L,y'_1), γ^k(x_1))'",
+  "scan": "no punctuation after the display; the next line opens '(conséquence immédiate de (4.7.2)).' (both scans; crops_461_465/w463_gamma.png, c463_gamma.png)",
+  "tex": "'\\right),' (comma added)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\gamma^k(x_1)\\right),\n\\]",
+   "new": "\\gamma^k(x_1)\\right)\n\\]"
+  },
+  "note": "The TeX adds punctuation at the end of the display."
+ },
+ {
+  "page": 464,
+  "where": "Remarque 4.9: 'et de l'élément c˙(N) de Gr^*K˙(Y)'",
+  "scan": "c with a raised dot, the mark of the K˙ (both scans; crops_461_465/w464_cN.png, c464_cN.png)",
+  "tex": "\\(c^\\circ(N)\\)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(c^\\circ(N)\\)",
+   "new": "\\(c^{\\bullet}(N)\\)"
+  },
+  "note": "The only c^\\circ of main.tex; the K^\\circ -> K^{\\bullet} script for Exposé VII does not reach it. If the K˙ decision for VII ends in another form, take the same form here."
+ },
+ {
+  "page": 464,
+  "where": "heading '4.10.'",
+  "scan": "'4.10.' with a full stop, run into 'Soit X un schéma' (both scans)",
+  "tex": "\\subsection*{4.10}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{4.10}",
+   "new": "\\subsection*{4.10.}"
+  },
+  "note": "The printed paragraph number ends with a full stop (as the fixes of pp. 394, 396, 399, 401, 429-430); the run-in heading set as its own paragraph is accepted."
+ },
+ {
+  "page": 464,
+  "where": "4.10: 'Soit X un schéma régulier ayant un faisceau ample.'",
+  "scan": "'régulier' underlined, the rest of the sentence plain (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "un schéma régulier ayant un faisceau ample. On sait",
+   "new": "un schéma \\emph{régulier} ayant un faisceau ample. On sait"
+  },
+  "note": "\\emph is the file's command for underlined words in running text (as the p. 419 entry of findings_416_420). The same words in Proposition 4.11 belong to its underlined statement (pending pattern, not itemized)."
+ },
+ {
+  "page": 464,
+  "where": "Proposition 4.11",
+  "scan": "the statement underlined word group by word group: 'Soit', 'un schéma régulier ayant un faisceau ample', 'Alors', 'pour tout'; X, k ≥ 0, the display and the punctuation plain; the label underlines only the word (both scans)",
+  "tex": "the statement in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé VII follows the Exposé II pattern of GLOBAL_ISSUES 82 (pending volume decision; findings_416_420): not itemized. The TeX adds no emphasis on defined terms on pp. 461-465."
+ },
+ {
+  "page": 464,
+  "where": "'Pour cela, on procède par récurrence noethérienne'",
+  "scan": "begins a new, indented paragraph after the display cl(O_Z) ∈ Fil^kK˙(X)_Q (both scans; witness indent 346 px against the margin's 226)",
+  "tex": "'\\]' followed directly by 'Pour cela' (the paragraph runs on)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nPour cela, on procède",
+   "new": "\\]\n\nPour cela, on procède"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 464,
+  "where": "'sur les sous-schémas fermés intégres de X. Supposons'",
+  "scan": "'intégres' with an acute accent; the other four 'intègre(s)' of the page and those of p. 465 have the grave (both scans; crops_461_465/w464_integres.png, c464_integres.png, w464_integresZ.png)",
+  "tex": "intègres (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "fermés intègres de \\(X\\). Supposons",
+   "new": "fermés intégres de \\(X\\). Supposons"
+  },
+  "corrected": "fermés intègres de \\(X\\). Supposons",
+  "note": "The current layer also reads 'intègres' (the corrected edition keeps it)."
+ },
+ {
+  "page": 464,
+  "where": "'et montrons la pour Z.'",
+  "scan": "'montrons la' without a hyphen (both scans; crops_461_465/w464_soir.png)",
+  "tex": "montrons la (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "montrons-la",
+  "note": "The imperative takes the hyphen (as 'plaçons nous', findings_426_430). The current layer also reads 'montrons la'."
+ },
+ {
+  "page": 464,
+  "where": "'Soir J l'Idéal de O_X'",
+  "scan": "'Soir' (both scans; crops_461_465/w464_soir.png)",
+  "tex": "Soir (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Soit",
+  "note": "The current layer also reads 'Soir'."
+ },
+ {
+  "page": 465,
+  "where": "'Par ailleurs, on a la suite exacte (IV      :'",
+  "scan": "'(IV', the blank left for the reference, then ':' with no closing parenthesis (both scans; crops_461_465/w465_IV.png, c465_IV.png); the blanks of p. 464 ('(IV      )', 'i(X      )', 'dans X      )') close theirs",
+  "tex": "(IV\\qquad) : (closing parenthesis added, silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(IV\\qquad) :",
+   "new": "(IV\\qquad :"
+  },
+  "corrected": "(IV\\qquad) :",
+  "note": "The current layer also has the parenthesis (the corrected edition keeps it)."
+ },
+ {
+  "page": 465,
+  "where": "'il induit une surjection'",
+  "scan": "'surjection' underlined (both scans)",
+  "tex": "no emphasis",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "induit une surjection",
+   "new": "induit une \\emph{surjection}"
+  },
+  "note": "Independent of the next entry (the two edits do not overlap)."
+ },
+ {
+  "page": 465,
+  "where": "'Fil^kK˙(X) → Fil^kK˙(U), donc u^*(1_Z) = u^*(x) avec x ∈ Fil^kK˙(X) ; il'",
+  "scan": "the map stands in the running text, at the start of the line that goes on ', donc u^*(1_Z) = u^*(x) ...' (both scans)",
+  "tex": "a display between 'surjection' and 'donc'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\n\\[\n  \\Fil^kK^\\circ(X)\\longrightarrow \\Fil^kK^\\circ(U),\n\\]\ndonc",
+   "new": " \\(\\Fil^kK^\\circ(X)\\longrightarrow \\Fil^kK^\\circ(U)\\), donc"
+  },
+  "note": "The TeX makes an inline formula a display (as on p. 461)."
+ },
+ {
+  "page": 465,
+  "where": "'Par suite, x peut s'exprimer comme combinaison de classes de faisceaux O_{Z''_α}'",
+  "scan": "x (both scans)",
+  "tex": "\\(x\\) peut s'exprimer (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\(y\\) peut s'exprimer",
+  "note": "The element of j_*(K˙(Z')), hence a combination of classes O_{Z''_α} with Z''_α ⊂ Z' ≠ Z, is y; x is the lift of u^*(1_Z) in Fil^kK˙(X). With y ∈ Fil^{k+1}K˙(X)_Q one gets cl(O_Z) = (cl(O_Z) - y) + y ∈ Fil^kK˙(X)_Q. The current layer also reads x."
+ },
+ {
+  "page": 465,
+  "where": "'D'après l'hypothèse de récurrence, x ∈ Fil^{k+1}K˙(X)_Q'",
+  "scan": "x (both scans)",
+  "tex": "\\(x\\in\\Fil^{k+1}K^\\circ(X)_{\\mathbb Q}\\) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\(y\\in\\Fil^{k+1}K^\\circ(X)_{\\mathbb Q}\\)",
+  "note": "As the entry before: the induction hypothesis applies to the classes O_{Z''_α} that make up y."
+ },
+ {
+  "page": 465,
+  "where": "heading BIBLIOGRAPHIE",
+  "scan": "'BIBLIOGRAPHIE': typed capitals, underlined (both scans)",
+  "tex": "\\subsection*{Bibliographie}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{Bibliographie}",
+   "new": "\\subsection*{BIBLIOGRAPHIE}"
+  },
+  "note": "As the headings fixed on pp. 19, 158, 219, 273, 364 and 415; the missing underline of a section title is accepted."
+ },
+ {
+  "page": 465,
+  "where": "[1] Cartan-Eilenberg, Homological Algebra.",
+  "scan": "the title in plain type, not underlined (both scans; crops_461_465/w465_biblio.png)",
+  "tex": "\\emph{Homological Algebra}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Homological Algebra}",
+   "new": "Homological Algebra"
+  },
+  "note": "As the p. 159 entry for the same book (findings_156_160). Cartan--Eilenberg: joint-name dash, handled globally."
+ }
+]

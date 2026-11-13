@@ -1,0 +1,40 @@
+% from main.tex
+%%%%%%%%%%  scan idx 499  |  folio 486  %%%%%%%%%%
+La démonstration du
+théorème 3.6 occupera la fin de cet exposé. Donnons quelques préliminaires.
+
+\textbf{Proposition 3.7.} Quels que soient $x\in \Gr K^{\bullet}(X)_{\mathbb Q}$, $y\in \Gr K^{\bullet}(Y)_{\mathbb Q}$, on a :
+\[
+ f_{\mathrm{gr}}\bigl(x\cdot f^{\mathrm{gr}}(y)\bigr)
+ =
+ f_{\mathrm{gr}}(x)\,y .
+\]
+
+Par additivité, on peut supposer \(x\) et \(y\) homogènes; soit $x\in \Gr^iK^{\bullet}(X)_{\mathbb Q}$, $y\in \Gr^jK^{\bullet}(Y)_{\mathbb Q}$.
+Soient $x'\in \Fil^iK^{\bullet}(X)_{\mathbb Q}$, $y'\in \Fil^jK^{\bullet}(Y)_{\mathbb Q}$ des éléments relevant \(x\) et \(y\). Alors la formule de projection donne :
+\[
+ f_*\bigl(x'\cdot f^*(y')\bigr)=f_*(x')\,y'.
+\]
+D'après 3.2, cette égalité s'écrit dans
+\(\Fil^{i+j-d}K^{\bullet}(Y)_{\mathbb Q}\). On en déduit une égalité dans
+\(\Gr^{i+j-d}K^{\bullet}(Y)_{\mathbb Q}\), et on vérifie immédiatement que c'est bien l'égalité cherchée.
+
+\textbf{Lemme 3.8.} Soient \(f:X\to Y\), et \(g:Y\to Z\) deux morphismes vérifiant les hypothèses de 3.6. Alors \(g\circ f\) les vérifie également. Si \(x\) est un élément de \(K^{\bullet}(X)\), et si 3.6 est vérifié par \(f\) pour l'élément \(x\), et par \(g\) pour l'élément \(f_*(x)\), alors il est vérifié par \(g\circ f\) pour l'élément \(x\).
+
+Par hypothèse, on a :
+\begin{equation}\tag{3.8.1}
+ \ch(f_*(x))=
+ f_{\mathrm{gr}}\bigl(\ch(x)\cdot\Todd(\check T_f)\bigr),
+\end{equation}
+et :
+\begin{equation}\tag{3.8.2}
+ \ch(g_*(f_*(x)))=
+ g_{\mathrm{gr}}\bigl(\ch(f_*(x))\cdot\Todd(\check T_g)\bigr).
+\end{equation}
+En combinant (3.8.1) et (3.8.2), on obtient :
+\[
+\ch(g_*(f_*(x)))=
+g_{\mathrm{gr}}\!\left(
+ f_{\mathrm{gr}}\bigl(\ch(x)\Todd(\check T_f)\bigr)\cdot \Todd(\check T_g)
+\right).
+\]

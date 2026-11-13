@@ -1,0 +1,180 @@
+[
+ {
+  "page": 645,
+  "where": "printed on p. 646 (above the folio-646 marker): the display of Théorème 4.6 (ii), 'χ(F ⊗ L) = χ(F)', the first line of p. 646",
+  "scan": "χ(F ⊗ L) = χ(F) with no punctuation after it (both scans; crops_646_650/wit_646_half.png)",
+  "tex": "\\chi(F\\otimes L)=\\chi(F);",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\chi(F\\otimes L)=\\chi(F);",
+   "new": "\\chi(F\\otimes L)=\\chi(F)"
+  },
+  "note": "The TeX adds a semicolon at the end of the display. Filed under page 645 because the display stands under the folio-645 marker until the folio-646 marker is moved (marker entry of p. 646); the old string is unique in page_645.tex and in main.tex (both layers), so it applies before or after the move."
+ },
+ {
+  "page": 646,
+  "where": "start of page",
+  "scan": "p. 646 begins with the display 'χ(F ⊗ L) = χ(F)' of Théorème 4.6 (ii), then '(iii) L est numériquement équivalent à 0.'; p. 645 ends '(ii) Pour tout faisceau cohérent F sur X, on a' (both scans)",
+  "tex": "the display \\[ \\chi(F\\otimes L)=\\chi(F); \\] and the \\item of (iii) are the last lines of page_645.tex (under the folio-645 marker); page_646.tex begins with the text of (iii)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 646 really begins with the display. Move the folio-646 marker above its opening \\[: python -I move_marker.py 6 646 \"\\[\" --before (simulated in memory on both layers, crops_646_650/sim_move_marker.py: the marker then stands on its own line between '\\item \\emph{Pour tout faisceau coh\\'erent \\(F\\) sur \\(X\\), on a}' and '\\['). The display's added semicolon is the page-645 entry."
+ },
+ {
+  "page": 646,
+  "where": "Théorème 4.6 (v), display 'χ(L^{⊗m}(n)) = χ(O_X(n))'",
+  "scan": "no punctuation after the display (both scans; crops_646_650/w646_chiO.png)",
+  "tex": "\\chi(L^{\\otimes m}(n))=\\chi(\\mathcal O_X(n));",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\chi(\\mathcal O_X(n));",
+   "new": "\\chi(\\mathcal O_X(n))"
+  },
+  "note": "The TeX adds a semicolon at the end of the display."
+ },
+ {
+  "page": 646,
+  "where": "proof of (i) ⇒ (ii), 'un faisceau inversible M sur un X×_kT où T est connexe'",
+  "scan": "'sur un XX_kT où T est connexe': no comma after T (both scans; crops_646_650/w646_XkT.png)",
+  "tex": "\\(X\\times_kT\\), o\\`u",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(X\\times_kT\\), o\\`u",
+   "new": "\\(X\\times_kT\\) o\\`u"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 646,
+  "where": "the structure sheaf O on pp. 646-650 (convention, reported once)",
+  "scan": "a plain typed capital O with no underline in every place (both scans): p. 646 'H = O_X(1)', 'χ(O_X(n))', 'F = O_X', 'F = O_Y', χ(O_Y) twice; p. 649 'Soit O_X(1)', 'χ(O_{X_t}(n))'",
+  "tex": "\\mathcal O in all places",
+  "kind": "font",
+  "confidence": "low",
+  "fix": null,
+  "note": "Convention of the transcription, not itemized. The pending volume decision covers the underlined O (\\cO or \\underline O); on these pages the typescript does not underline the O at all, so the printed form is a plain O. Three examples, in the form to use if the diplomatic layer reproduces it: p. 646 '\\(H=\\mathcal O_X(1)\\)' -> '\\(H=O_X(1)\\)'; p. 646 '\\(F=\\mathcal O_Y\\)' -> '\\(F=O_Y\\)'; p. 649 '\\chi(\\mathcal O_{X_t}(n))' -> '\\chi(O_{X_t}(n))'."
+ },
+ {
+  "page": 646,
+  "where": "intersection numbers on p. 646: display of (vi) '<c_1(L). c_1(H)^{r-1}> = 0 , <c_1(L)^2. c_1(H)^{r-2}> = 0 .' and '<c_1(L).Y>' twice in the proof of (ii) ⇒ (iii) (convention, reported once)",
+  "scan": "the product inside < > is a typed full stop on the baseline in all four places (both scans; crops_646_650/w646_c1disp.png, w646_Ydot.png)",
+  "tex": "\\cdot in all four places",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": null,
+  "note": "Convention of the transcription for the intersection product (\\langle c_1(f^*L)\\cdot Y'\\rangle also on p. 645), not itemized, as the product dot of findings_496_500. Form to use if the diplomatic layer reproduces it: 'c_1(L)\\cdot c_1(H)^{r-1}' -> 'c_1(L).c_1(H)^{r-1}', 'c_1(L)^2\\cdot c_1(H)^{r-2}' -> 'c_1(L)^2.c_1(H)^{r-2}', 'c_1(L)\\cdot Y' -> 'c_1(L).Y' (twice). The exposé's TeX is mixed: p. 651 already writes \\langle b.a_1\\rangle."
+ },
+ {
+  "page": 647,
+  "where": "start of page",
+  "scan": "p. 647 begins 'en vertu de 4.5, l'implication pour X en résulte.'; p. 646 ends '... (iii) implique (i) pour X', alors' (both scans)",
+  "tex": "'en' is the last word of the last line of page_646.tex (under the folio-646 marker); page_647.tex begins 'vertu de 4.5'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 647 really begins with 'en'. Move the folio-647 marker before it: python -I move_marker.py 6 647 \"en\" --before (simulated in memory on both layers: '... pour \\(X'\\), alors', the marker, then 'en', then 'vertu de 4.5')."
+ },
+ {
+  "page": 647,
+  "where": "'... pour X_réd (X 4.4.1). Il reste donc à voir que (vi) implique (i) et (iv)'",
+  "scan": "'Il reste donc à voir ...' opens a new indented paragraph after the short line ending '(X 4.4.1).' (both scans)",
+  "tex": "one paragraph: '(X 4.4.1). Il reste donc'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "(X 4.4.1). Il reste donc",
+   "new": "(X 4.4.1).\n\nIl reste donc"
+  },
+  "note": "Paragraph break of the print missing in the TeX."
+ },
+ {
+  "page": 647,
+  "where": "'Soient p, q deux entiers différents tels que L^{⊗r} et L^{⊗q} correspondent à la même composante connexe de T'",
+  "scan": "L^{⊗r} (both scans; crops_646_650/m647_Lr.png, w647_Lr.png)",
+  "tex": "\\(L^{\\otimes r}\\) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\(L^{\\otimes p}\\)",
+  "note": "The two integers are p and q and the conclusion is about L^{⊗(p-q)}: the exponent r is a slip for p (r is the dimension of (vi)). The TeX keeps the printed reading."
+ },
+ {
+  "page": 648,
+  "where": "start of page",
+  "scan": "p. 648 begins 'est aussi représentable par une immersion fermée.'; p. 647 ends with '(ii) Si X est projectif et intègre sur S, alors Pic^τ_{X/S} → Pic_{X/S}' (both scans)",
+  "tex": "page_648.tex begins '\\emph{Si \\(X\\) est projectif et int\\`egre sur \\(S\\), alors \\(\\underline{\\Pic}^\\tau_{X/S}\\to\\underline{\\Pic}_{X/S}\\) est aussi ...': the last line of p. 647 stands under the folio-648 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-648 marker stands too early. Page 648 really begins with 'est aussi repr\\'esentable'. Move the marker down: python -I move_marker.py 6 648 \"est aussi repr\" (simulated in memory on both layers: '... alors \\(\\underline{\\Pic}^\\tau_{X/S}\\to\\underline{\\Pic}_{X/S}\\)', the marker on its own line, then 'est aussi repr\\'esentable par une immersion ferm\\'ee.}'; the marker then stands inside the \\emph group, as a comment line)."
+ },
+ {
+  "page": 649,
+  "where": "'Grâce à l'équivalence de 4.6 (i) et (iv), on a donc établit (a).'",
+  "scan": "'établit' (both scans)",
+  "tex": "on a donc \\'etablit (a) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "on a donc \\'etabli (a)",
+  "note": "Past participle after 'on a': établi. The TeX keeps the printed reading."
+ },
+ {
+  "page": 649,
+  "where": "'Enfin, considérons le morphisme surjectif canonique ∐X'_i → X_S.'",
+  "scan": "X_S followed by a round full stop; no prime on the S (both scans; crops_646_650/m649_XS.png, w649_XS.png). The primes of 'X_{S'}/S'' on the next line are clear tick marks",
+  "tex": "\\(\\coprod X'_i\\to X_{S'}\\) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "X'_i\\to X_{S'}\\)",
+   "new": "X'_i\\to X_S\\)"
+  },
+  "corrected": "X'_i\\to X_{S'}\\)",
+  "note": "The X'_i are the irreducible components of X_{S'} (previous paragraph), so the target is X_{S'}. The fix restores the printed reading."
+ },
+ {
+  "page": 649,
+  "where": "'... et X projectif et intègre sur S. Soit O_X(1) un faisceau très ample pour X/S.'",
+  "scan": "'Soit O_X(1)' continues the same line and paragraph (both scans)",
+  "tex": "blank line (new paragraph) before 'Soit \\(\\mathcal O_X(1)\\)'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "sur \\(S\\).\n\nSoit \\(\\mathcal O_X(1)\\)",
+   "new": "sur \\(S\\). Soit \\(\\mathcal O_X(1)\\)"
+  },
+  "note": "Paragraph break added by the TeX."
+ },
+ {
+  "page": 650,
+  "where": "proof of 5.1, 'au nombre de composantes connexes de (Pic^τ_{X/S})_K'",
+  "scan": "Pic without underline here (both scans; crops_646_650/m650_PicK.png, w650_PicK.png); every other Pic of pp. 647-650 is underlined",
+  "tex": "\\((\\underline{\\Pic}^\\tau_{X/S})_K\\) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\((\\underline{\\Pic}^\\tau_{X/S})_K\\)",
+   "new": "\\((\\Pic^\\tau_{X/S})_K\\)"
+  },
+  "corrected": "\\((\\underline{\\Pic}^\\tau_{X/S})_K\\)",
+  "note": "The fibre of the Picard scheme Pic^τ_{X/S}, underlined two lines above ('on peut supposer Pic^τ_{X/S} représentable'): the typist left out the underline, the TeX supplies it (as O_Y on p. 230, findings_226_230). The fix restores the printed reading."
+ },
+ {
+  "page": 650,
+  "where": "'... alors ce rang est évidemment 0 (resp. 1). Si r est ≥ 2, on va se ramener au cas r = 2'",
+  "scan": "'Si r est ≥ 2, ...' opens a new indented paragraph (both scans)",
+  "tex": "one paragraph: '(resp. \\(1\\)). Si \\(r\\) est'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "(resp. \\(1\\)). Si \\(r\\) est",
+   "new": "(resp. \\(1\\)).\n\nSi \\(r\\) est"
+  },
+  "note": "Paragraph break of the print missing in the TeX."
+ }
+]

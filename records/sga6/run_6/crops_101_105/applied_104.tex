@@ -1,0 +1,31 @@
+% from main.tex
+%%%%%%%%%%  scan idx 117  |  folio 104  %%%%%%%%%%
+\textbf{Proposition 2.11.} \emph{Soit \(n\in\mathbb Z\).}
+
+\textbf{a)} \emph{Soit \(F\in\Ob\Cpx^-(\mathcal C_S)\). Si, pour tout \(i\geq n\) (resp. pour tout \(i\)), \(F^i\) est de \((i-n)\)-présentation finie (resp. d'\(\infty\)-présentation finie), alors \(F\) est \(n\)-pseudo-cohérent (resp. pseudo-cohérent).}
+
+\textbf{b)} \emph{Soit \(F\in\Ob\Dpx^-(\mathcal C_S)\). Si, pour tout \(i\geq n\) (resp. pour tout \(i\)), \(\Ho^i(F)\) est de \((i-n)\)-présentation finie (resp. d'\(\infty\)-présentation finie), alors \(F\) est pseudo-cohérent.}
+
+\emph{Preuve.} Il suffit de traiter les assertions non respées.
+
+\textbf{a)} On raisonne par récurrence sur \(N\) tel que \(F^i\neq0\) pour \(i>n+N\). Si \(N=0\), l'assertion résulte aussitôt de (2.10 b)). Supposons \(N\geq1\). On a une suite exacte
+\[
+  0\longrightarrow F^{n+N}[-n-N]\longrightarrow F\longrightarrow F'\longrightarrow 0,
+\]
+Par hypothèse de récurrence, \(F'\) est \(n\)-pseudo-cohérent; d'autre part, \(F^{n+N}[-n-N]\) est \(n\)-pseudo-cohérent par hypothèse (2.9 et 2.5.a)); donc, en vertu de (2.5.b)), \(F\) est \(n\)-pseudo-cohérent.
+
+\textbf{b)} On raisonne par récurrence sur \(N\) tel que \(\Ho^i(F)=0\) pour \(i>n+N\). Si \(N=0\), l'assertion résulte de (2.10 b)). Supposons \(N\geq1\). On a un triangle distingué de \(\Dpx^-(\mathcal C_S)\) (cf. preuve de (2.10.b))) :
+\[
+\begin{tikzcd}
+& F' \arrow[dl,"+1"'] & \\
+F \arrow[rr] && \Ho^{n+N}(F)[-n-N] \arrow[ul] & .
+\end{tikzcd}
+\]
+La suite exacte de cohomologie implique
+\[
+  \Ho^i(F')=0\quad\text{pour }i\geq n+N-1,\quad\text{i.e. }i>(n-1)+(N-1),
+\]
+et
+\[
+  \Ho^i(F')\qis\Ho^{i+1}(F)\quad\text{pour }i<n+N-1 .
+\]

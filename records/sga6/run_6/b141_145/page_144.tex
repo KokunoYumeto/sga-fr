@@ -1,0 +1,39 @@
+% from main.tex
+%%%%%%%%%%  scan idx 157  |  folio 144  %%%%%%%%%%
+homomorphisme de restriction
+\[
+  \Add_S(\Parf(\mathcal C,\mathcal C_0),F)
+  \longrightarrow
+  \Add_S(\mathcal C_0,F)
+\]
+est un isomorphisme.
+
+\emph{Preuve.} Soit \(F\) un faisceau abélien sur \(S\), montrons que la flèche
+\[
+  \Add_S(\Parf(\mathcal C,\mathcal C_0),F)
+  \longrightarrow
+  \Add_S(\mathcal C_0,F)
+\]
+est un isomorphisme. Celle-ci se factorise en
+\[
+\Add_S(\Parf(\mathcal C,\mathcal C_0),F)
+ \xrightarrow{a}
+\Add_S(\Kpx^b(\mathcal C_0),F)
+ \xrightarrow{b}
+\Add_S(\mathcal C_0,F).
+\]
+Or, d'après (6.4), la flèche \(b\) est un isomorphisme. On est donc ramené à prouver que \(a\) est un isomorphisme.
+
+Considérons le diagramme commutatif suivant, où les lignes sont exactes (6.6.1), et les flèches verticales sont les flèches de «~restriction~» :
+\[
+\begin{array}{ccccccccc}
+0&\to&\Add_S(\Parf(\mathcal C),F)&\to&\Cart_S(\Parf(\mathcal C)^{\is},\underline F)&\to&\Cart_S(\Tr(\Parf(\mathcal C))^{\is},\underline F)\\
+&&\downarrow a&&\downarrow&&\downarrow\\
+0&\to&\Add_S(\Kpx^b(\mathcal C_0),F)&\to&\Cart_S(\Kpx^b(\mathcal C_0)^{\is},\underline F)&\to&\Cart_S(\Tr(\Kpx^b(\mathcal C_0))^{\is},\underline F).
+\end{array}
+\]
+Comme \(F\) est un faisceau, \(\underline F\) est un champ (G II 2.2.4), donc, d'après (4.10), les deux flèches verticales de droite sont des isomorphismes. Il en est donc de même de \(a\), cqfd.
+
+\textbf{Remarque 6.7.1} (cf. 4.10.1). On peut, dans (6.7), remplacer \(\Parf(\mathcal C,\mathcal C_0)\) par \(\Dpx^*(\mathcal C)_{\mathcal C_0\text{-}\mathrm{parf}}\) (\(*=-\) ou \(b\)).
+
+\textbf{6.8.}

@@ -1,0 +1,16 @@
+% from main.tex
+%%%%%%%%%%  scan idx 154  |  folio 141  %%%%%%%%%%
+Soient \(\mathcal C\) une catégorie triangulée, \(f\) une fonction additive de \(\mathcal C\) dans un groupe abélien \(F\). Alors \(f\) induit une fonction additive sur la catégorie additive \(\mathcal C^{\mathrm{ad}}\) sous-jacente à \(\mathcal C\), d'où une inclusion \(\Add(\mathcal C,F)\subset\Add(\mathcal C^{\mathrm{ad}},F)\). En particulier, on a \(f(0)=0\) et \(f(L)=f(M)\) si \(L\simeq M\). On a d'autre part \(f(L[n])=(-1)^n f(L)\) pour tout \(L\in\Ob(\mathcal C)\) et \(n\in\mathbb Z\).
+
+\textbf{6.3.} Soit \(\mathcal C\) une catégorie additive (resp. triangulée). Le groupe \(\Add(\mathcal C,F)\) dépend fonctoriellement de \(F\). Le foncteur \(\Add(\mathcal C,\cdot)\) est représentable (cf. SGA 5 VIII 2) par un groupe abélien noté \(k(\mathcal C)\)\footnote{nous n'utiliserons pas ici la notation usuelle \(\Kpx(\mathcal C)\), vu que \(\Kpx(\mathcal C)\) désigne déjà, lorsque \(\mathcal C\) est additive, la catégorie des complexes de \(\mathcal C\) «~à homotopie près~».} muni d'une application additive \(\cl_{\mathcal C}:\Ob(\mathcal C)\longrightarrow k(\mathcal C)\) (si \(\mathcal C\) est additive, on prend pour \(k(\mathcal C)\) le symétrisé du monoïde des classes d'isomorphie d'objets de \(\mathcal C\); si \(\mathcal C\) est triangulée, on prend pour \(k(\mathcal C)\) le quotient du groupe abélien libre engendré par \(\Ob(\mathcal C)\) par les relations identifiant \(L\) à \(L'+L''\) chaque fois qu'on a un triangle distingué \(L'\longrightarrow L\longrightarrow L''\longrightarrow L'[1]\)).
+
+Le groupe \(k(\mathcal C)\) dépend fonctoriellement de \(\mathcal C\) (par rapport aux foncteurs additifs (resp. exacts)). Si \(u,u':\mathcal C\to\mathcal D\) sont des foncteurs additifs (resp. exacts) isomorphes, alors on a \(k(u)=k(u')\).
+
+Si \(\mathcal C\) est une catégorie triangulée, on a un épimorphisme canonique \(k(\mathcal C^{\mathrm{ad}})\longrightarrow k(\mathcal C)\) (cf. (6.2)).
+
+\textbf{Lemme 6.4.} \emph{Soit \(\mathcal C\) une catégorie additive. Le foncteur canonique \(\mathcal C\longrightarrow\Kpx^b(\mathcal C)\) induit un isomorphisme (fonctoriel en \(\mathcal C\)) \(k(\mathcal C)\longrightarrow k(\Kpx^b(\mathcal C))\).}
+
+\emph{Preuve.} C'est une conséquence immédiate de la formule suivante (qui résulte trivialement de (6.2)) :
+\begin{equation}\tag{6.4.1}
+  f(L)=\sum_i (-1)^i f(L^i)
+\end{equation}

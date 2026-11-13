@@ -1,0 +1,20 @@
+% from main.tex
+%%%%%%%%%%  scan idx 261  |  folio 248  %%%%%%%%%%
+existe un isomorphisme fonctoriel canonique de \(D(Y)_{\qcoh}\)
+\[
+ Rf_*(E)\otimes_S^{\mathbf L}M
+ \xrightarrow{\sim}
+ Rf_*(E\otimes_S^{\mathbf L}M)\qquad(\text{cf. }(1.6)).
+\]
+
+\emph{Preuve.} Notons d'abord qu'il existe (EGA III 1.4.12 et IV 1.7.21) un entier \(N\) tel que l'on ait \(R^if_*(F)=0\) pour tout \(i>N\) et tout \(\mathcal O_X\)-Module quasi-cohérent \(F\). Par suite le foncteur \(Rf_*\) envoie \(D^b(X)_{\qcoh}\) dans \(D^b(Y)\) (et même \(D^b(Y)_{\qcoh}\) (EGA III 1.4.10 et IV 1.7.21)). Supposons \(E\) (resp. \(M\)) d'amplitude plate finie rel. à \(f\) (resp. finie). La flèche d'adjonction \(Lf^*Rf_*(E)\longrightarrow E\) définit par tensorisation par \(M\) une flèche canonique de \(D^-(X)\)
+\[
+ Lf^*(Rf_*(E)\otimes_S^{\mathbf L}M)
+ \longrightarrow E\otimes_S^{\mathbf L}M,
+\]
+où \(E\otimes_S^{\mathbf L}M\in\Ob D^b(X)\). Par adjonction, on en déduit une flèche canonique de \(D^-(Y)\)
+\[
+ Rf_*(E)\otimes_S^{\mathbf L}M
+ \longrightarrow Rf_*(E\otimes_S^{\mathbf L}M).\tag{*}
+\]
+Le but et la source sont d'ailleurs à cohomologie quasi-cohérente, puisque \(Rf_*\) envoie \(D^b(X)_{\qcoh}\) dans \(D^b(Y)_{\qcoh}\) (EGA III 1.4.10 et IV 1.7.21) et que \(\otimes_S^{\mathbf L}\) envoie \(D^-(X)_{\qcoh}\times D^-(S)_{\qcoh}\) dans \(D^-(X)_{\qcoh}\) (idem avec \(Y\) au lieu de \(X\)). Prouvons que \((*)\) est un isomorphisme. La question étant locale sur \(Y\), on peut supposer \(S\) et \(Y\) affines. Par dévissage, on se ramène aussitôt, dans le cas non respé, au cas où \(M\) est un \(\mathcal O_S\)-Module quasi-cohérent ordinaire. Notant que les foncteurs \(Rf_*(E)\otimes_S^{\mathbf L}\cdot\) et \(Rf_*(E\otimes_S^{\mathbf L}\cdot)\) sont «~way-out à gauche~» sur la catégorie \(D^b(S)_{\qcoh}\) ([H] I 7), on se ramène alors, en prenant une résolution gauche de \(M\) par des Modules libres, puis en tronquant, au cas où \(M\) est libre. Comme les \(R^if_*\) commutent aux limites inductives (\(f\) étant quasi-compact et quasi-séparé), on peut même supposer \(M\) libre de type fini, puis \(M=\mathcal O_S\). La flèche \((*)\) est alors tautologiquement un isomorphisme. Dans le cas respé, on se ramène, par dévissage, à \(M=P\), où \(P\) est un \(A\)-module

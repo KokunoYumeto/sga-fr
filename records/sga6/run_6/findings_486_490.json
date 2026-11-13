@@ -1,0 +1,170 @@
+[
+ {
+  "page": 486,
+  "where": "statements of pp. 486-490: Proposition 3.7 and Lemme 3.8 (p. 486), Propositions 4.2, 4.3 and 4.4 (p. 489)",
+  "scan": "underlined word group by word group (both scans): Prop. 3.7 'Quels que soient', 'on a'; Lemme 3.8 'Soient', 'et', 'deux morphismes vérifiant les', 'hypothèses de', 'Alors', 'les vérifie également', 'Si', 'est un élément de', 'et si', 'est vérifié par', 'pour l'élément', 'et par', 'pour l'élément', 'alors il est vérifié par', 'pour l'élément'; Prop. 4.2 'Le morphisme', 'est projectif', 'd'intersection complète', 'et de dimension relative virtuelle nulle', 'On a de plus la relation'; Prop. 4.3 'Pour tout', 'on a la relation', 'où', 'désigne la', '-ième classe de Chern'; Prop. 4.4 'Soit', 'un schéma quasi-compact', 'Si', 'est un faisceau localement libre de type fini sur', 'de classe', 'dans', 'et de rang', 'on a'; formulas, letters (except the sheaf E of Prop. 4.4, entry of p. 489) and punctuation plain; the labels underline only the word",
+  "tex": "the statements in roman (no \\underline, no \\emph); the Exposé VIII TeX has no \\underline at all",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé VIII follows the Exposé II pattern of GLOBAL_ISSUES 82 (pending volume decision): not itemized. No emphasized defined terms and no category letter on pp. 486-490."
+ },
+ {
+  "page": 486,
+  "where": "above the folio-486 marker (end of page_485.tex): '\\subsection*{Suite de la démonstration du théorème 3.6}'",
+  "scan": "no heading: p. 485 ends with 'est commutatif.' and the rest of the page is blank; p. 486 begins under the running head directly with the indented 'La démonstration du théorème 3.6 occupera la fin de cet exposé.' (both scans; b481_485/page_485_s4.png, crops_486_490/wit_485_half.png, wit_486_half.png)",
+  "tex": "\\subsection*{Suite de la démonstration du théorème 3.6} between 'est commutatif.' and the folio-486 marker",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": null,
+  "note": "A heading the print does not have. It stands above the marker, so there is no fix in page_486.tex. Exact edit in main.tex, both layers (diplomatic about line 12444, current about line 12450 on 13 Nov; main.tex is being edited, so use the string): replace 'est commutatif.\\n\\n\\n\\n\\subsection*{Suite de la démonstration du théorème 3.6}\\n\\n%%%%%%%%%%  scan idx 499  |  folio 486  %%%%%%%%%%\\n' by 'est commutatif.\\n\\n%%%%%%%%%%  scan idx 499  |  folio 486  %%%%%%%%%%\\n' (old string once per layer; simulated in memory: crops_486_490/sim_markers.py). The checker of p. 485 may report the same."
+ },
+ {
+  "page": 486,
+  "where": "after the display of Proposition 3.7, 'Par additivité, on peut supposer x et y homogènes'",
+  "scan": "'Par additivité' starts at the left margin right after the display, as 'D'après 3.2' and 'et :' on this page (the print runs on); the typescript indents its new paragraphs, also after displays ('La démonstration', 'Par hypothèse', 'En combinant') (both scans)",
+  "tex": "blank line (new paragraph) before 'Par additivité'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\]\n\nPar additivité",
+   "new": "\\]\nPar additivité"
+  },
+  "note": "Paragraph break the print does not have (as findings_281_285, p. 281). It is the start of the proof of 3.7; the other proofs on pp. 486-490 begin with an indented paragraph."
+ },
+ {
+  "page": 486,
+  "where": "after (3.8.2), 'En combinant (3.8.1) et (3.8.2), on obtient :'",
+  "scan": "indented: a new paragraph after the display (3.8.2) (both scans)",
+  "tex": "runs on after \\end{equation} (no blank line)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nEn combinant",
+   "new": "\\end{equation}\n\nEn combinant"
+  },
+  "note": "Paragraph break missing in the TeX."
+ },
+ {
+  "page": 487,
+  "where": "3.9, second paragraph 'En outre, on peut supposer que l'immersion i satisfait la condition de VII 4.1.'",
+  "scan": "after '... et dans le cas du morphisme structural : P^r_Y → Y.' a new line, indented: 'En outre' begins a new paragraph (both scans)",
+  "tex": "'En outre, ...' in the same paragraph as 3.9 (no blank line)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "Y$.\nEn outre",
+   "new": "Y$.\n\nEn outre"
+  },
+  "note": "Paragraph break missing in the TeX."
+ },
+ {
+  "page": 487,
+  "where": "P of the projective spaces: p. 487 3.9 'P^r_Y → Y', 'la section de P^2_{P^r_Y}', 'P^2_{P^r_Y} → P^r_Y et P^r_Y → Y' (7 P); p. 488 ii) 'P^r_Y → Y' (1 P)",
+  "scan": "a typed P doubly underlined in all 8 places (both scans), the same mark as the doubly underlined S, D, G of Exposé VI",
+  "tex": "\\mathbb P (double-struck) in all 8 places",
+  "kind": "font",
+  "confidence": "low",
+  "fix": null,
+  "note": "Convention of the Exposé VIII transcription, reported once: the exposé writes this P as \\mathbb P (13 in main.tex), while Exposé VI §§1-2 and Exposé VII write the doubly underlined P as \\mathbf P (\\bfP) and VI §§3-4 as \\mathbb P (findings_396_400 p. 397, findings_426_430). One decision for the volume; if bold: '\\mathbb P' -> '\\mathbf P' (7 places on p. 487, 1 on p. 488). Three examples: '$\\mathbb P^r_Y\\longrightarrow Y$' -> '$\\mathbf P^r_Y\\longrightarrow Y$' (p. 487); '\\(\\mathbb P^2_{\\mathbb P^r_Y}\\) introduite' -> '\\(\\mathbf P^2_{\\mathbf P^r_Y}\\) introduite' (p. 487); '\\(\\mathbb P^r_Y\\to Y\\)' -> '\\(\\mathbf P^r_Y\\to Y\\)' (p. 488). Low: a double-struck P may be kept for the doubly underlined P."
+ },
+ {
+  "page": 489,
+  "where": "after the display of Proposition 4.2, 'La première assertion découle immédiatement de (VII 1.8).'",
+  "scan": "indented: a new paragraph after the display (both scans)",
+  "tex": "runs on after \\] (no blank line)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nLa première assertion",
+   "new": "\\]\n\nLa première assertion"
+  },
+  "note": "Paragraph break missing in the TeX. Independent of the next entry."
+ },
+ {
+  "page": 489,
+  "where": "'(VII 1.8). La deuxième relation est conséquence de la relation :'",
+  "scan": "'La première assertion ... (VII 1.8).' fills one line alone; 'La deuxième relation ...' begins the next line, indented like it: two paragraphs (both scans)",
+  "tex": "both sentences in one paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "(VII 1.8). La deuxième",
+   "new": "(VII 1.8).\n\nLa deuxième"
+  },
+  "note": "Paragraph break missing in the TeX."
+ },
+ {
+  "page": 489,
+  "where": "'Cette relation est contenue dans VII 4.8, car elle n'est autre que v^gr∘u^gr = 0.'",
+  "scan": "the formula is part of the text line: it stands on the next line at the left margin, at the normal line spacing, with its full stop right after the 0 ('v^gr∘u^gr  =  0.'); the displays of the page are centred (both scans)",
+  "tex": "a display \\[ v^{\\mathrm{gr}}\\circ u^{\\mathrm{gr}}=0 . \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "autre que\n\\[\n v^{\\mathrm{gr}}\\circ u^{\\mathrm{gr}}=0 .\n\\]",
+   "new": "autre que \\(v^{\\mathrm{gr}}\\circ u^{\\mathrm{gr}}=0\\)."
+  },
+  "note": "In-text formula set as a display."
+ },
+ {
+  "page": 489,
+  "where": "Proposition 4.4, 'Si E est un faisceau localement libre de type fini sur X, de classe E dans K˙(X)'",
+  "scan": "the first E (the sheaf) has its own short underline, separate from those of 'Si' and 'est un faisceau lo-'; the second E (its class, 'de classe E dans') is plain (both scans; crops_486_490/w489_E.png)",
+  "tex": "\\(E\\) plain in both places",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Si \\(E\\) est un faisceau",
+   "new": "Si \\(\\underline{E}\\) est un faisceau"
+  },
+  "note": "The print distinguishes the sheaf E (underlined) from its class E; the TeX merges them. The Exposé VIII TeX has no \\underline at all, so this is the convention reported for the sheaf letters of Exposé VII (findings_431_435); itemized here because pp. 486-490 have only these two places (p. 485 has the same underlined E, p. 491 J, F, N, O: for those batches)."
+ },
+ {
+  "page": 489,
+  "where": "proof of 4.4, 'en passant au fibré en drapeaux de E, supposer que E est somme de classes'",
+  "scan": "the E of 'drapeaux de E' (the sheaf) underlined; the E of 'supposer que E est somme' (the class) plain (both scans)",
+  "tex": "\\(E\\) plain in both places",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "drapeaux de \\(E\\),",
+   "new": "drapeaux de \\(\\underline{E}\\),"
+  },
+  "note": "As the entry before (the flag bundle of the sheaf)."
+ },
+ {
+  "page": 490,
+  "where": "start of page (folio-490 marker)",
+  "scan": "p. 489 ends '... et se ramener à montrer la formule pour un faisceau inversible. Soit'; p. 490 begins 'ξ la classe d'un tel faisceau. On a alors :' (both scans; crops_486_490/wit_489_half.png, wit_490_half.png)",
+  "tex": "page_489.tex ends 'Soit \\(\\xi\\) la' above the folio-490 marker; page_490.tex begins 'classe d'un tel faisceau.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 490 really begins at '\\(\\xi\\) la'. Exact edit in main.tex, both layers (diplomatic about lines 12574-12576, current about 12580-12582 on 13 Nov; use the string): replace 'faisceau inversible. Soit \\(\\xi\\) la\\n%%%%%%%%%%  scan idx 503  |  folio 490  %%%%%%%%%%\\nclasse d'un tel faisceau.' by 'faisceau inversible. Soit\\n%%%%%%%%%%  scan idx 503  |  folio 490  %%%%%%%%%%\\n\\(\\xi\\) la classe d'un tel faisceau.' (old string once per layer; simulated in memory: crops_486_490/sim_markers.py). The sentence runs on, so no blank line."
+ },
+ {
+  "page": 490,
+  "where": "after the display ch(λ_{-1}(ξ)) = 1 - exp(c^1(ξ)), 'Par ailleurs, ξ est d'augmentation 1 ;'",
+  "scan": "indented: a new paragraph after the display (both scans)",
+  "tex": "runs on after \\] (no blank line)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nPar ailleurs",
+   "new": "\\]\n\nPar ailleurs"
+  },
+  "note": "Paragraph break missing in the TeX."
+ },
+ {
+  "page": 490,
+  "where": "last display, after 'soit, d'après VII 3.4 :', right member 'j_gr(ch(g^*(y)). Todd(g^*(Ť_i)).c^{d-1}(F̌))'",
+  "scan": "ch(g^*(y)) (both scans; crops_486_490/w490_lastdisp.png); the left member has g^*(x)",
+  "tex": "\\ch(g^*(y))",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\ch(g^*(x))",
+  "note": "The right member comes from g^gr(ch(x).Todd(Ť_i)) of the display before (g^gr(ch(x)) = ch(g^*(x))), and the left member is ch(j_*(g^*(x).λ_{-1}(F))); p. 491 goes on with ch(g^*(x).λ_{-1}(F)). The TeX keeps the printed reading; the current layer also still reads \\ch(g^*(y))."
+ }
+]

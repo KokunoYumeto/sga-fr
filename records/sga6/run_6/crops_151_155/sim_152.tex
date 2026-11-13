@@ -1,0 +1,30 @@
+% from main.tex
+%%%%%%%%%%  scan idx 165  |  folio 152  %%%%%%%%%%
+\emph{Preuve} : C'est standard : résoudre \(G\) injectivement et \(F\) platement.
+
+\textbf{Lemme 7.5.} \emph{Pour \(E\in\Ob\Dpx^-(S)\), \(F\in\Ob\Dpx^+(S)\), il existe un homomorphisme fonctoriel canonique}
+\[
+  E\otL\mathrm R\underline{\Hom}(E,F)\longrightarrow F
+\]
+
+\textbf{Proposition 7.6} (cf. ([H] II 5.13)). \emph{Soient} \(E\in\Ob\Dpx(S)\), \(F\in\Ob\Dpx^+(S)\), \(G\in\Ob\Dpx^+(S)\). \emph{Sous l'une des hypothèses suivantes}
+\begin{enumerate}[label=\roman*)]
+\item \(G\) \emph{de tor-dimension finie},
+\item \(E\in\Ob\Dpx^-(S)\), \(F\) \emph{de tor-dimension finie et} \(G\in\Ob\Dpx^b(S)\),
+\end{enumerate}
+\emph{il existe un homomorphisme fonctoriel canonique}
+\[
+  \mathrm R\underline{\Hom}(E,F)\otL G
+  \longrightarrow
+  \mathrm R\underline{\Hom}(E,F\otL G).
+\]
+\emph{Celui-ci est un isomorphisme quand \(E\) est parfait}.
+
+\emph{Preuve.} Définissons la flèche. Sous l'hypothèse (i), il suffit de résoudre \(F\) injectivement et \(G\) platement. Sous l'hypothèse (ii), il est équivalent, d'après (7.4), de définir une flèche
+\[
+  E\otL\mathbb{R}\underline{\Hom}(E,F)\otL G\longrightarrow F\otL G.
+\]
+On applique le foncteur \(\otL G\) à la flèche de (7.5).
+
+Pour voir que la flèche est un isomorphisme quand \(E\) est parfait, on utilise la méthode standard (cf. preuve de (7.2)) : on se ramène, par localisation et dévissage, au cas où \(E=A\).
+

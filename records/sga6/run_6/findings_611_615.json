@@ -1,0 +1,204 @@
+[
+ {
+  "page": 611,
+  "where": "statements of Lemme 4.2 (p. 611), Lemme 4.3 with its items 1)-5) (p. 612), Lemme 4.4 with 'pour' in its display (p. 613), Lemmes 4.5 and 4.6 (p. 614)",
+  "scan": "underlined word group by word group (both scans), e.g. Lemme 4.2: 'Sous les conditions de', 'est un morphisme de descente pour', 'la catégorie des faisceaux localement libres', 'c'est-à-dire pour tout couple', 'de faisceaux localement libres sur', 'le diagramme', 'est exact'; the letters, formulas and most punctuation not underlined",
+  "tex": "all five statements in roman (only the bold labels, accepted as typesetting)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé XII TeX, the same pattern as Exposé II (GLOBAL_ISSUES 82): pending volume decision, not itemized."
+ },
+ {
+  "page": 611,
+  "where": "'En effet, si N = Hom_{O_Y}(L,M), on doit montrer que la suite'",
+  "scan": "Hom underlined (both scans): the sheaf Hom; the three Hom of the display in Lemme 4.2 (global Hom) are plain, as in the TeX",
+  "tex": "N=\\Hom_{\\mathcal O_Y}(L,M) with plain Hom (\\Hom is \\operatorname{Hom})",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "N=\\Hom_{\\mathcal O_Y}",
+   "new": "N=\\underline{\\Hom}_{\\mathcal O_Y}"
+  },
+  "note": "The file writes the underlined Hom as \\underline{\\Hom} elsewhere."
+ },
+ {
+  "page": 611,
+  "where": "display after 'on doit montrer que la suite'",
+  "scan": "'Γ Y,N) → Γ(X,f^*N) ⇉ Γ(X×_Y X,g^*N)': no opening parenthesis after the first Γ (both scans; crops_611_615/c611_gamma.png)",
+  "tex": "\\Gamma\\ Y,N)\\longrightarrow\\Gamma(X,f^*N)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\Gamma(Y,N)",
+  "note": "The TeX keeps the printed reading; the current layer has \\Gamma(Y,N)."
+ },
+ {
+  "page": 611,
+  "where": "'et la catégoire Deff(S) des données de descente effectives'",
+  "scan": "catégoire (both scans; crops_611_615/b611_3.png)",
+  "tex": "la catégoire \\(\\mathrm{Deff}(S)\\)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "catégorie",
+  "note": "The TeX keeps the printed reading; the current layer has 'catégorie'."
+ },
+ {
+  "page": 611,
+  "where": "'Mais c'est précisément l'ensemble Z(S) de S-points de l'image réciproque'",
+  "scan": "'l'ensemble Z(S) de S-points' (both scans; crops_611_615/c611_des.png)",
+  "tex": "l'ensemble \\(Z(S)\\) des \\(S\\)-points",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "des \\(S\\)-points",
+   "new": "de \\(S\\)-points"
+  },
+  "corrected": "des \\(S\\)-points",
+  "note": "The print drops the s of 'des'; the TeX silently corrects it, the fix restores the printed reading."
+ },
+ {
+  "page": 612,
+  "where": "'Par définition Rec est égal au foncteur Isom(p_1*L, p_2*L) où les p_i'",
+  "scan": "Isom underlined (both scans; crops_611_615/b612_1.png)",
+  "tex": "\\(\\Isom(p_1^*L,p_2^*L)\\), plain Isom",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "foncteur \\(\\Isom(",
+   "new": "foncteur \\(\\underline{\\Isom}("
+  },
+  "note": "\\Isom is \\operatorname{Isom} (defined before Exposé XII; also used on pp. 602-603). The print underlines Isom in all three places of p. 612; if pp. 602-603 underline it too, one redefinition (\\underline{\\operatorname{Isom}}) replaces the three edits."
+ },
+ {
+  "page": 612,
+  "where": "display 'i : Deff ↪ Isom(p_1*L, p_2*L)'",
+  "scan": "Isom underlined (both scans)",
+  "tex": "i:\\mathrm{Deff}\\hookrightarrow \\Isom(p_1^*L,p_2^*L), plain Isom",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\hookrightarrow \\Isom(",
+   "new": "\\hookrightarrow \\underline{\\Isom}("
+  },
+  "note": "See the first Isom entry of this page."
+ },
+ {
+  "page": 612,
+  "where": "'Remarquons en passant que si l'on y tient on peut restreindre Isom(p_1*L, p_2*L)'",
+  "scan": "Isom underlined (both scans)",
+  "tex": "restreindre \\(\\Isom(p_1^*L,p_2^*L)\\), plain Isom",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "restreindre \\(\\Isom(",
+   "new": "restreindre \\(\\underline{\\Isom}("
+  },
+  "note": "See the first Isom entry of this page."
+ },
+ {
+  "page": 612,
+  "where": "Lemme 4.3, item 3): '(ou le dernier isomorphisme est g_*(φ))'",
+  "scan": "'ou' without the grave accent (both scans; crops_611_615/c612_ou2.png); the typist types 'où' elsewhere on the page ('où les p_i')",
+  "tex": "(ou le dernier isomorphisme est",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(où le dernier",
+  "note": "The TeX keeps the printed reading (the current layer also has 'ou')."
+ },
+ {
+  "page": 613,
+  "where": "'donc la donnée de descente sur L restreindre au-dessus de V=f^{-1}(V)'",
+  "scan": "restreindre (both scans; crops_611_615/b613_1.png)",
+  "tex": "sur \\(L\\) restreindre au-dessus",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "restreinte",
+  "note": "The TeX keeps the printed reading; the current layer has 'restreinte'."
+ },
+ {
+  "page": 613,
+  "where": "Lemme 4.4, '(précisément, S_n(T) = {∅} si R^i(f_T)_*(F_T) est plat pour tout i≥n'",
+  "scan": "R^i: the superscript is a dotted i, like the i of the underlined 'si' just before it and unlike the 1 of f^{-1}(V) on the same page (witness clear: crops_611_615/c613_R1c.png, c613_fm1.png; the main scan blurs the dot, crops_611_615/m613_R.png)",
+  "tex": "R^1(f_T)_*(F_T)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "R^1(f_T)_*(F_T)",
+   "new": "R^i(f_T)_*(F_T)"
+  },
+  "note": "Transcription error, not a misprint; the current layer already has R^i."
+ },
+ {
+  "page": 614,
+  "where": "start of the page (folio-614 marker)",
+  "scan": "p. 613 ends '... L'assertion est donc vraie pour n > r ;' (both scans); p. 614 begins 'en procédant par récurrence décroissante, supposons qu'elle est connue pour n+1.'",
+  "tex": "page_613.tex ends 'L'assertion est donc vraie' above the folio-614 marker; page_614.tex begins 'pour \\(n>r\\)~; en procédant'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The marker stands too early: page 614 really begins at 'en procédant'. Edit in main.tex, both layers: the line above the marker should end '... L'assertion est donc vraie pour \\(n>r\\)~;' and the line below it begin 'en procédant par récurrence décroissante, ...'."
+ },
+ {
+  "page": 614,
+  "where": "'on peut supposer que R^n f_*(F) est S-plat pour i ≥ n+1'",
+  "scan": "R^n (both scans; crops_611_615/c614_Rn.png)",
+  "tex": "\\(R^nf_*(F)\\) est \\(S\\)-plat pour \\(i\\ge n+1\\)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R^if_*(F)",
+  "note": "The quantifier 'pour i ≥ n+1' requires R^i; the TeX keeps the printed R^n (the current layer has R^i). The next sentence's R^n f_*(F) ('commute à tout changement de base') is right."
+ },
+ {
+  "page": 614,
+  "where": "'(voir : J.P. Murre, Representation of unramified functors, Séminaire Bourbaki ; Mai 1965, p.294-11, th.2)'",
+  "scan": "the title is typed plain, not underlined (both scans; crops_611_615/c614_murre.png)",
+  "tex": "\\emph{Representation of unramified functors}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Representation of unramified functors}",
+   "new": "Representation of unramified functors"
+  },
+  "note": "Emphasis added by the transcription."
+ },
+ {
+  "page": 614,
+  "where": "Lemme 4.6, 'u : F → G un homomorphisme de O_Y-Modules de présentation finie'",
+  "scan": "O_Y (both scans; crops_611_615/c614_OY.png)",
+  "tex": "\\(\\mathcal O_Y\\)-Modules",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\(\\mathcal O_X\\)-Modules",
+  "note": "F and G live on X (λ : X → S; the lemma has no Y), so O_X is meant; the TeX keeps the printed O_Y (the current layer has O_X)."
+ },
+ {
+  "page": 615,
+  "where": "start of the page (folio-615 marker)",
+  "scan": "p. 614 ends '... Représentons d'abord le foncteur qui rend u un épimorphisme,'; p. 615 begins 'i.e. qui rend Coker u nul.' (both scans)",
+  "tex": "page_614.tex ends '... un épimorphisme, i.e. qui' above the folio-615 marker; page_615.tex begins 'rend \\(\\operatorname{Coker}u\\) nul.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 615 really begins at 'i.e. qui'. Edit in main.tex, both layers: the line above the marker should end '... qui rend \\(u\\) un épimorphisme,' and the line below it begin 'i.e. qui rend \\(\\operatorname{Coker}u\\) nul. ...'."
+ },
+ {
+  "page": 615,
+  "where": "'Comme la formation de Coker u commute au diagramme de base, on voit qu'il est représenté'",
+  "scan": "'commute au diagram-me de base' (hyphenated across the line end; both scans; crops_611_615/c615_top.png)",
+  "tex": "commute au changement de base, on voit",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "au changement de base, on voit",
+   "new": "au diagramme de base, on voit"
+  },
+  "corrected": "au changement de base, on voit",
+  "note": "The TeX silently corrects the print; the fix restores the printed 'diagramme'. The second 'commute au changement de base' of the page is printed so."
+ }
+]

@@ -1,0 +1,705 @@
+[
+ {
+  "page": 671,
+  "where": "3.1, last line: 'la question soulevée au n° 1.'",
+  "scan": "au n° 1 (n with the raised degree-like o, both scans)",
+  "tex": "au no. 1",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "au no. 1",
+   "new": "au n\\textsuperscript{o} 1"
+  },
+  "note": "The file writes the numéro sign n\\textsuperscript{o} (22 times in the volume); 'no.' adds a full stop the print does not have. Same on pp. 671-675: (cf. n° 6) p. 671, (n° 6) and (cf n° 8) p. 672, (Cf.. n° 5) p. 674, au n° 3 p. 675 (each listed)."
+ },
+ {
+  "page": 671,
+  "where": "3.2: 'qu'on vient d'introduire, -ces dernières classes de Chern'",
+  "scan": "', -ces dernières': a typed hyphen directly before 'ces' (both scans; crops_671_675/c671_dash.png)",
+  "tex": "introduire, ces dernières (no dash)",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "introduire, ces dernières",
+   "new": "introduire, -ces dernières"
+  },
+  "note": "The typescript's dash (a hyphen) is dropped. Written as the plain hyphen the typist typed, not as an en dash."
+ },
+ {
+  "page": 671,
+  "where": "3.2: 'l'équivalence rationelle des cycles algébriques'",
+  "scan": "rationelle (one n, both scans)",
+  "tex": "rationelle (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "rationnelle",
+  "note": "Kept by the TeX, correctly for the diplomatic layer."
+ },
+ {
+  "page": 671,
+  "where": "3.2: 'il ne semble pas y avoir de raison bien convainquante'",
+  "scan": "convainquante (both scans)",
+  "tex": "convainquante (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "convaincante",
+  "note": "The adjective is spelled convaincante (convainquant is the participle). Kept by the TeX."
+ },
+ {
+  "page": 671,
+  "where": "3.2: 'Une bonne façon de la tester, vue notre ignorance quasi totale'",
+  "scan": "vue notre ignorance (both scans)",
+  "tex": "vue notre ignorance (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "vu notre ignorance",
+  "note": "The preposition vu is invariable (vu notre ignorance). Author's slip rather than a typing error; kept by the TeX."
+ },
+ {
+  "page": 671,
+  "where": "3.2, end: 'en transformant les deux membres de (3.1) par g_* : A(X) ⟶ A(Z) , où g:X⟶Z est un morphisme propre'",
+  "scan": "the formula g_* : A(X)⟶A(Z) stands in the running text at the start of a line, followed on the same line by ', où g:X⟶Z est ...' (both scans)",
+  "tex": "set as a display \\[ g_*:A(X)\\longrightarrow A(Z), \\] with 'où' on a new line",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "(3.1) par\n\\[\n g_*:A(X)\\longrightarrow A(Z),\n\\]\noù",
+   "new": "(3.1) par $g_*:A(X)\\longrightarrow A(Z)$, où"
+  },
+  "note": "In-line in the print, not displayed (compare f_*: A(Y)⟶A(X), which the print does display)."
+ },
+ {
+  "page": 671,
+  "where": "3.3: display of the Gysin homomorphism f_*: H^p(Y,μ_n^{⊗i}) ⟶ H^{p+2d}(X,μ_n^{⊗(i+d)})",
+  "scan": "no punctuation after the display; the sentence goes on with '(cf. n° 6), ce qui est le cas ...' (both scans)",
+  "tex": "H^{p+2d}(X,\\mu_n^{\\otimes(i+d)}). (full stop added)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "H^{p+2d}(X,\\mu_n^{\\otimes(i+d)}).",
+   "new": "H^{p+2d}(X,\\mu_n^{\\otimes(i+d)})"
+  },
+  "note": "The added stop also breaks the sentence, which continues after the display."
+ },
+ {
+  "page": 671,
+  "where": "3.3, after the display: '(cf. n° 6), ce qui est le cas'",
+  "scan": "(cf. n° 6) (both scans)",
+  "tex": "(cf. no.~6)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(cf. no.~6)",
+   "new": "(cf. n\\textsuperscript{o}~6)"
+  },
+  "note": "As the n° entry above."
+ },
+ {
+  "page": 671,
+  "where": "3.3, top of p. 672 in the print: '(grâce au théorème de pureté cohomologique relatif SGA 4 XVI 3.7), et, conjecturalement'",
+  "scan": "p. 672 begins 'SGA 4 XVI 3.7), et, conjecturalement' with no parenthesis before SGA: the line starts at the left margin with S, like the '(d'après' line below starts with its parenthesis (both scans; crops_671_675/c672_first.png, w672_top.png)",
+  "tex": "relatif (SGA 4 XVI 3.7), et, (an opening parenthesis added; it leaves '(grâce' unclosed)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "relatif (SGA 4 XVI 3.7)",
+   "new": "relatif SGA 4 XVI 3.7)"
+  },
+  "note": "In the print the ')' after 3.7 closes '(grâce'. This text is printed on p. 672 but sits in page_671.tex (see the p. 672 marker entry); apply this fix before moving that marker. Second reading (Codex fr_r1, 5 Aug): ', grâce au théorème ... relatif (SGA 4 XVI 3.7), et,' (it drops the other parenthesis); the print agrees with neither."
+ },
+ {
+  "page": 671,
+  "where": "footnote (*): 'a été prouvée depu par P. JOUANOLOU'",
+  "scan": "'prouvée depu' at the end of the line, then 'par P. JOUANOLOU' (both scans; crops_671_675/c671_fn.png, w671_bot.png)",
+  "tex": "prouvée depuis par (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "depuis par",
+   "new": "depu par"
+  },
+  "corrected": "depuis par",
+  "note": "Typing error: the end of 'depuis' is missing; the line is full length, nothing is lost at the margin."
+ },
+ {
+  "page": 671,
+  "where": "footnote (*): 'par P. JOUANOLOU (nov. 1969)'",
+  "scan": "JOUANOLOU in capitals (both scans)",
+  "tex": "P. Jouanolou",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "P. Jouanolou (nov.",
+   "new": "P. JOUANOLOU (nov."
+  },
+  "note": "The TeX keeps typed capitals of names elsewhere ('J. P. JOUANOLOU', main.tex line 17142; 'par A. GROTHENDIECK', p. 20). Same on p. 675."
+ },
+ {
+  "page": 671,
+  "where": "throughout Exposé XIV: the typewriter phi (ø) of φ: A(X) ⟶ Gr_top(X), of the diagram (4.1) and of (4.4)",
+  "scan": "the typed slashed o ø, i.e. the straight phi ϕ, at all 9 places of pp. 671-675 (p. 671 display; p. 673 diagram (4.1) and 'L'homomorphisme ø'; p. 674 4.2 and (4.4) five times; p. 675 'le fait que ø soit')",
+  "tex": "\\varphi (19 times in Exposé XIV, no \\phi)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the transcription, reported once: three examples p. 671 '\\varphi:A(X)\\longrightarrow \\Gtop^\\bullet(X).', p. 673 '\\arrow[r,\"\\varphi\"]', p. 674 '\\psi\\varphi(x)&='. One replacement \\varphi -> \\phi over Exposé XIV, as was applied on pp. 3 and 12 (FIXLOG_6: '\\varphi:A(X)' -> '\\phi:A(X)'). Second reading (Codex fr_r1, 5 Aug): also \\varphi."
+ },
+ {
+  "page": 672,
+  "where": "start of page",
+  "scan": "p. 671 ends '... pureté cohomologique relatif'; p. 672 begins 'SGA 4 XVI 3.7), et, conjecturalement, si Y et X sont tous deux réguliers' (both scans)",
+  "tex": "'(SGA 4 XVI 3.7), et,' ends the last line of page_671.tex (under the folio-671 marker); page_672.tex begins 'conjecturalement,'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 672 really begins with 'SGA 4 XVI 3.7), et,'. First apply the p. 671 fix 'relatif (SGA 4 XVI 3.7)' -> 'relatif SGA 4 XVI 3.7)', then move the folio-672 marker before it: python -I move_marker.py 6 672 \"SGA 4 XVI 3.7), et,\" --before (gives '... cohomologique relatif', the marker, 'SGA 4 XVI 3.7), et,', 'conjecturalement, ...' in both layers). If the parenthesis fix is not taken, use the anchor \"(SGA 4 XVI 3.7), et,\"."
+ },
+ {
+  "page": 672,
+  "where": "3.3: 'est établie dans ce cas par Atiyah et Hirzebruch [1]'",
+  "scan": "Atiyah and Hirzebruch each underlined, 'et' not (both scans)",
+  "tex": "plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "par Atiyah et Hirzebruch [1]",
+   "new": "par \\emph{Atiyah} et \\emph{Hirzebruch} [1]"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): \\uline{Atiyah} et \\uline{Hirzebruch}: the print agrees with it."
+ },
+ {
+  "page": 672,
+  "where": "3.3: '(en travaillant avec le K˙ \"naif\")'",
+  "scan": "K with the raised typed dot, as in 'groupes K˙' (3.5) and the heading of §4 (both scans; crops_671_675/c672_naif.png)",
+  "tex": "$K^\\circ$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$K^\\circ$",
+   "new": "$K^\\bullet$"
+  },
+  "note": "The rest of the exposé writes this K^\\bullet (40 times; this and one other place have K^\\circ). Second reading (Codex fr_r1, 5 Aug): K' (the print agrees with neither); 'naif' without diaeresis is the print's reading and the TeX's."
+ },
+ {
+  "page": 672,
+  "where": "3.3, end: 'sur un corps k de caractéristique nulle k, lorsque k n'est pas algébriquement clos'",
+  "scan": "'nulle k,' (both scans)",
+  "tex": "nulle $k$, (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "sur un corps $k$ de caractéristique nulle, lorsque",
+  "note": "The second k repeats the first. Kept by the TeX. Second reading (Codex fr_r1, 5 Aug): drops it (silent correction); the print agrees with our TeX."
+ },
+ {
+  "page": 672,
+  "where": "3.4: 'puisque l'on sait de toutes façons (n° 6) que'",
+  "scan": "(n° 6) (both scans)",
+  "tex": "(no.~6)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "(no.~6)",
+   "new": "(n\\textsuperscript{o}~6)"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): n\\textsuperscript{o}~6: the print agrees with it."
+ },
+ {
+  "page": 672,
+  "where": "4.1: 'sur un corps k (cf n° 8 pour un cas plus général)'",
+  "scan": "'(cf n° 8': no full stop after cf (both scans; crops_671_675/c672_cf8.png, w672_bot.png)",
+  "tex": "(cf. no.~8 (stop supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "corps $k$ (cf.",
+   "new": "corps $k$ (cf"
+  },
+  "corrected": "corps $k$ (cf.",
+  "note": "Typing slip; the TeX silently supplies the stop. Independent of the n° entry below (no common text)."
+ },
+ {
+  "page": 672,
+  "where": "4.1: '(cf n° 8 pour un cas plus général)'",
+  "scan": "n° 8 (both scans)",
+  "tex": "no.~8",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "no.~8",
+   "new": "n\\textsuperscript{o}~8"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): n\\textsuperscript{o}~8: the print agrees with it."
+ },
+ {
+  "page": 673,
+  "where": "4.1: 'des classes de cycles à équivalence rationelle près [4]'",
+  "scan": "rationelle (both scans)",
+  "tex": "rationelle (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "rationnelle",
+  "note": "As p. 671. Second reading (Codex fr_r1, 5 Aug): rationnelle (silent correction); the print agrees with our TeX."
+ },
+ {
+  "page": 673,
+  "where": "4.1, display: 'c_i(E̲) ∈ H^{2i}(X,Z̲_ℓ(i)) ,'",
+  "scan": "E underlined (both scans; crops_671_675/c673_ciE_zoom.png)",
+  "tex": "c_i(E)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "c_i(E)\\in",
+   "new": "c_i(\\underline{E})\\in"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): c_i(\\underline E): the print agrees with it. For Z̲_ℓ see the \\Zell entry."
+ },
+ {
+  "page": 673,
+  "where": "4.1: '(où E̲ est un fibré vectoriel sur X'",
+  "scan": "E underlined (both scans)",
+  "tex": "$E$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "(où $E$ est",
+   "new": "(où $\\underline{E}$ est"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): \\underline E: the print agrees with it."
+ },
+ {
+  "page": 673,
+  "where": "throughout Exposé XIV: H^{2*}(X, Z̲_ℓ(*)) of the diagram (4.1), its definition and pp. 674 (twice in the text, (4.2))",
+  "scan": "the typewriter asterisk (the same glyph as in f_*, g_*), in the exponent 2* and in the twist (*), at all 6 places of pp. 673-674 (crops_671_675/c673_Zl_zoom.png, c674_42.png)",
+  "tex": "H^{2\\bullet}(X,\\Zell(\\bullet)) (21 H^{2\\bullet} in Exposé XIV, no H^{2*})",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, reported once: three examples p. 673 diagram 'H^{2\\bullet}(X,\\Zell(\\bullet)) & {}', p. 673 'H^{2\\bullet}(X,\\Zell(\\bullet))=\\bigoplus_i', p. 674 (4.2) 'H^{2\\bullet}(X,\\Qell(\\bullet))='. One replacement over Exposé XIV: H^{2\\bullet} -> H^{2*} and the twist (\\bullet) -> (*) in these groups. Second reading (Codex fr_r1, 5 Aug): H^{2*}(X,\\underline{\\Z}_\\ell(*)): the print agrees with it."
+ },
+ {
+  "page": 673,
+  "where": "throughout Exposé XIV: the coefficient rings Z̲_ℓ, Q̲_ℓ (4.1, (4.1), (4.2), p. 674 text)",
+  "scan": "a typed Z (and Q) underlined, with a hand-written ℓ: Z̲_ℓ, Q̲_ℓ, not double-struck (both scans; crops_671_675/c673_Zl_zoom.png, c673_ciE_zoom.png, c674_42.png)",
+  "tex": "\\Zell = \\mathbb Z_\\ell and \\Qell = \\mathbb Q_\\ell (main.tex lines 76-77): double-struck, no underline (26 \\Zell and 10 \\Qell in Exposé XIV)",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the transcription, reported once: three examples p. 673 'c_i(E)\\in H^{2i}(X,\\Zell(i))', p. 674 'H^{2\\bullet}(X,\\Zell(\\bullet))\\otimes_{\\Zell}\\Qell' ((4.2), print H^{2*}(X,Z̲_ℓ(*)) ⊗_{Z̲_ℓ} Q̲_ℓ), p. 674 'dans $H^{2\\bullet}(X,\\Zell(\\bullet))$'. Fix in Exposé XIV by local macros, e.g. \\underline{Z}_\\ell and \\underline{Q}_\\ell (the typed letter, as for the typist's plain Q), or \\underline{\\mathbb Z}_\\ell as done for the underlined double-struck Z of pp. 323, 330, 408. Second reading (Codex fr_r1, 5 Aug): \\underline{\\Z}_\\ell, \\underline{\\Q}_\\ell: the print agrees with it on the underline."
+ },
+ {
+  "page": 673,
+  "where": "diagram (4.1): label j of the vertical arrow Gr˙(X) ⟶ Gr˙_top(X)",
+  "scan": "j stands to the left of the arrow, like γ on the left arrow (both scans)",
+  "tex": "\\arrow[u,\"j\"'] (the prime puts j on the right)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[u,\"j\"']",
+   "new": "\\arrow[u,\"j\"]"
+  },
+  "note": "Label side, as the FIXLOG_6 correction of p. 59. Second reading (Codex fr_r1, 5 Aug): \\arrow[u,\"j\"]: the print agrees with it."
+ },
+ {
+  "page": 673,
+  "where": "diagram (4.1): after Gr˙(X), bottom right",
+  "scan": "'Gr˙(X)   ,' : a comma after the diagram (both scans)",
+  "tex": "no comma",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "{} & \\operatorname{Gr}^\\bullet(X)",
+   "new": "{} & \\operatorname{Gr}^\\bullet(X),"
+  },
+  "note": "Independent of the label fix of the same cell (no common text). Second reading (Codex fr_r1, 5 Aug): no comma either."
+ },
+ {
+  "page": 673,
+  "where": "definition of H^{2*}: '= ∐_i H^{2i}(X,Z̲_ℓ(i))'",
+  "scan": "the coproduct sign ∐ (an inverted Π) with i below (both scans; crops_671_675/c673_coprod.png)",
+  "tex": "\\bigoplus_i",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigoplus_i H^{2i}",
+   "new": "\\coprod_i H^{2i}"
+  },
+  "note": "The file uses \\coprod elsewhere. Second reading (Codex fr_r1, 5 Aug): \\bigoplus_i as well; the print agrees with neither."
+ },
+ {
+  "page": 673,
+  "where": "4.1: 'L'homomorphisme ø est defini par exemple dans [RRR]'",
+  "scan": "defini without accent (both scans; crops_671_675/c673_defini.png, w673_bot.png)",
+  "tex": "est défini par exemple (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "est défini par exemple",
+   "new": "est defini par exemple"
+  },
+  "corrected": "est défini par exemple",
+  "note": "Typing error (accent left out; the lower-case e is not covered by the rule for unaccented capitals)."
+ },
+ {
+  "page": 673,
+  "where": "4.1: 'associé à un sous-schéma fermé Y de X codimension i'",
+  "scan": "'de X codimension i' (both scans)",
+  "tex": "de $X$ codimension $i$ (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "de $X$ de codimension $i$",
+  "note": "A 'de' is missing. Kept by the TeX. Second reading (Codex fr_r1, 5 Aug): 'de $X$ de codimension $i$' (silent correction); the print agrees with our TeX."
+ },
+ {
+  "page": 673,
+  "where": "4.1: 'l'élément cℓ˙(O̲_Y) de Filt...'",
+  "scan": "after the script ℓ a raised typed dot, the dot of K˙ and Gr˙, not an i (both scans; crops_671_675/c673_cl_zoom.png, w673_bot.png)",
+  "tex": "$\\cl^i(\\mathcal O_Y)$",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\cl^i(\\mathcal O_Y)$",
+   "new": "$\\cl^\\bullet(\\mathcal O_Y)$"
+  },
+  "note": "Written \\bullet like the raised dot of Gr. (O̲_Y written \\mathcal O_Y: pending decision, not itemized.) Second reading (Codex fr_r1, 5 Aug): \\cl_X^i(\\underline O_Y); the print agrees with neither."
+ },
+ {
+  "page": 673,
+  "where": "4.1: '... de Filt^i_top(K˙(X)) mod Filt^{i+1}_top(K˙(X)). C'est un homomorphisme surjectif'",
+  "scan": "in the running text, on the same line as cℓ˙(O̲_Y) and 'C'est un homomorphisme sur-': Filt (four letters) with i above and top below, (K˙(X)) in parentheses, and the word 'mod' between (both scans; crops_671_675/c673_cl.png)",
+  "tex": "a display \\[ \\Fil^i_{\\mathrm{top}}K^\\bullet(X)/\\Fil^{i+1}_{\\mathrm{top}}K^\\bullet(X). \\]: \\Fil prints Fil, a slash for 'mod', no parentheses",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "de\n\\[\n \\Fil^i_{\\mathrm{top}}K^\\bullet(X)/\\Fil^{i+1}_{\\mathrm{top}}K^\\bullet(X).\n\\]\nC'est",
+   "new": "de $\\operatorname{Filt}^i_{\\mathrm{top}}(K^\\bullet(X))$ mod $\\operatorname{Filt}^{i+1}_{\\mathrm{top}}(K^\\bullet(X))$. C'est"
+  },
+  "note": "\\Filt is not usable: main.tex line 13829 defines it as \\operatorname{Fil}. Independent of the cℓ˙ entry just before (no common text). The other 8 \\Fil of Exposé XIV may hide more printed Filt. Second reading (Codex fr_r1, 5 Aug): in-line '$\\Ftop^i(K'(X))$ mod $\\Ftop^{i+1}(K'(X))$': the print agrees with it on the in-line form, the parentheses and 'mod'."
+ },
+ {
+  "page": 673,
+  "where": "4.1: 'à l'aide de l'un ou l'autre de ses anneaux (tensorisés par Q)'",
+  "scan": "ses anneaux (both scans; crops_671_675/c673_Q.png)",
+  "tex": "ses anneaux (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "ces anneaux",
+  "note": "Kept by the TeX. Second reading (Codex fr_r1, 5 Aug): ces anneaux (silent correction); the print agrees with our TeX."
+ },
+ {
+  "page": 674,
+  "where": "start of page",
+  "scan": "p. 673 ends '... et en particulier pour tout schéma'; p. 674 begins '(régulier ou non). Il a par contre' (both scans)",
+  "tex": "the opening '(' ends the last line of page_673.tex ('pour tout schéma ('); page_674.tex begins 'régulier ou non).'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 674 really begins with '(régulier'. Move the folio-674 marker before the parenthesis: python -I move_marker.py 6 674 \"(\" --before (the nearest '(' before the marker is the one ending 'schéma ('), then in both layers join the line '(' to the next one, so that it reads '(régulier ou non). Il a par contre ...' after the marker."
+ },
+ {
+  "page": 674,
+  "where": "4.1: 'qu'une fois tensorisé par Q. Autre avantage de A(X)'",
+  "scan": "'Autre avantage' follows 'par Q.' on the same line: no new paragraph (both scans; crops_671_675/c674_concurrents.png)",
+  "tex": "blank line: 'Autre avantage' opens a new paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "par $\\Q$.\n\nAutre avantage",
+   "new": "par $\\Q$. Autre avantage"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): also a new paragraph."
+ },
+ {
+  "page": 674,
+  "where": "4.1: 'sur ses concurrents Gr˙_top et Gr˙(X)'",
+  "scan": "Gr˙_top without (X) before 'et' (both scans; crops_671_675/c674_concurrents.png, w674_top.png)",
+  "tex": "$\\Gtop^\\bullet(X)$ (the (X) supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "concurrents $\\Gtop^\\bullet(X)$",
+   "new": "concurrents $\\Gtop^\\bullet$"
+  },
+  "corrected": "concurrents $\\Gtop^\\bullet(X)$",
+  "note": "Typing slip; the TeX silently supplies (X). Second reading (Codex fr_r1, 5 Aug): has (X) too."
+ },
+ {
+  "page": 674,
+  "where": "4.1: 'qui transforme classes de Chern en classes de Chern (Cf.. n° 5)'",
+  "scan": "'(Cf..' with two full stops at the end of the line (both scans; crops_671_675/c674_cf.png, w674_top.png)",
+  "tex": "(Cf. (one stop)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(Cf. ",
+   "new": "(Cf.. "
+  },
+  "corrected": "(Cf. ",
+  "note": "Typing error, silently corrected in the TeX. Independent of the n° entry below (no common text)."
+ },
+ {
+  "page": 674,
+  "where": "4.1: '(Cf.. n° 5)'",
+  "scan": "n° 5 (both scans)",
+  "tex": "no 5",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "no 5)",
+   "new": "n\\textsuperscript{o} 5)"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): n\\textsuperscript{o}~5: the print agrees with it."
+ },
+ {
+  "page": 674,
+  "where": "4.1: 'lorsqu'on tensorise par Q̲, et on trouve un homomorphisme'",
+  "scan": "a typed Q underlined at the start of the line (both scans; crops_671_675/c674_Q.png); the 'tensorisé par Q.' four lines up is the hand-drawn double-struck Q",
+  "tex": "$\\Q$ (= \\mathbb Q)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "$\\Q$, et on trouve",
+   "new": "$\\underline{Q}$, et on trouve"
+  },
+  "note": "The typist's Q (here underlined) against \\mathbb Q: volume decision with SGA 7 II issue 61. Second reading (Codex fr_r1, 5 Aug): $\\Q$."
+ },
+ {
+  "page": 674,
+  "where": "4.2, display 'K˙(X) ⟶ Ch(A(X))'",
+  "scan": "no punctuation after the display (both scans; crops_671_675/c674_Ch.png)",
+  "tex": "\\Ch(A(X)), (comma added)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Ch(A(X)),\n",
+   "new": "\\Ch(A(X))\n"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): no comma: the print agrees with it."
+ },
+ {
+  "page": 674,
+  "where": "(4.4), first line: 'ψø(x) = (-1)^{i-1}(i-1)! x  mod. torsion  pour x ∈ A^i(X)'",
+  "scan": "'mod. torsion' with a full stop (both scans)",
+  "tex": "\\bmod \\text{ torsion} (prints 'mod' without stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bmod \\text{ torsion}\\quad \\text{pour } x\\in A^i",
+   "new": "\\text{mod. torsion}\\quad \\text{pour } x\\in A^i"
+  },
+  "note": "(4.5) on p. 675 prints 'mod torsion' without stop and is right as it stands. Second reading (Codex fr_r1, 5 Aug): \\text{mod. torsion}: the print agrees with it."
+ },
+ {
+  "page": 674,
+  "where": "(4.4), first line, end: 'pour x ∈ A^i(X)'",
+  "scan": "no punctuation at the end of the first line (both scans)",
+  "tex": "A^i(X),\\\\ (comma added)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "(X),\\\\\n \\varphi\\psi",
+   "new": "(X)\\\\\n \\varphi\\psi"
+  },
+  "note": "Independent of the mod. entry of the same line (no common text). Second reading (Codex fr_r1, 5 Aug): has the comma."
+ },
+ {
+  "page": 674,
+  "where": "(4.4), second line: 'øψ(x) = (-1)^{i-1}(i-1)! x  mod. torsion  pour x ∈ Gr^i_top (X),'",
+  "scan": "'mod. torsion' with a full stop (both scans)",
+  "tex": "\\bmod \\text{ torsion}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bmod \\text{ torsion}\\quad \\text{pour } x\\in \\Gtop^i",
+   "new": "\\text{mod. torsion}\\quad \\text{pour } x\\in \\Gtop^i"
+  },
+  "note": "As the first line."
+ },
+ {
+  "page": 674,
+  "where": "(4.4), second line, end: 'pour x ∈ Gr^i_top (X),'",
+  "scan": "a comma after (X) (both scans)",
+  "tex": "\\Gtop^i(X); (semicolon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "(X);\n\\end{aligned}",
+   "new": "(X),\n\\end{aligned}"
+  },
+  "note": "Independent of the mod. entry of the same line. Second reading (Codex fr_r1, 5 Aug): has the comma: the print agrees with it."
+ },
+ {
+  "page": 675,
+  "where": "start of page",
+  "scan": "p. 674 ends '... auquel cas la formule équivaut à'; p. 675 begins with the display '(4.5) c_i(O̲_Y) = (-1)^{i-1}(i-1)! cl(Y) mod torsion ,' (both scans)",
+  "tex": "\\begin{equation}\\tag{4.5} and its first line ending '\\bmod' stand at the end of page_674.tex; the folio-675 marker stands inside the equation, before '\\text{ torsion},'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 675 really begins with the display (4.5). Move the folio-675 marker above it: python -I move_marker.py 6 675 \"\\begin{equation}\\tag{4.5}\" --before (the line starts with the anchor, so the marker gets its own line after 'auquel cas la formule équivaut à'; same text in both layers)."
+ },
+ {
+  "page": 675,
+  "where": "4.2: 'et dans le deuxième membre cℓ(Y) désigne la classe de Y dans A^i(Y)'",
+  "scan": "A^i(Y) (both scans; crops_671_675/c675_AiY.png, w675_top.png)",
+  "tex": "A^i(X) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "dans $A^i(X)$. Comme",
+   "new": "dans $A^i(Y)$. Comme"
+  },
+  "corrected": "dans $A^i(X)$. Comme",
+  "note": "cl(Y) is the class of Y in A^i(X) (next sentence: 'Comme A^i(X) ne change pas'). Second reading (Codex fr_r1, 5 Aug): A^i(X) (also corrected)."
+ },
+ {
+  "page": 675,
+  "where": "4.2: 'le noyau de l'application naturelle A(X) --f_*--> A(X⊗_k k')', label of the arrow",
+  "scan": "the label is f with the typed asterisk below and to the right, no X (both scans; crops_671_675/c675_arrow.png, w675_top.png)",
+  "tex": "\\xrightarrow{f_X^*}: an index X the print does not have",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{f_X^*}",
+   "new": "\\xrightarrow{f^*}"
+  },
+  "note": "Apply before the next entry (misprint fix of the same label). Second reading (Codex fr_r1, 5 Aug): f_X^* as well; the print agrees with neither."
+ },
+ {
+  "page": 675,
+  "where": "4.2: arrow label A(X) --f_*--> A(X⊗_k k')",
+  "scan": "f_* (lower asterisk) on the arrow of the pull-back (both scans)",
+  "tex": "f^* after the previous fix (the TeX silently corrects to an upper star)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\xrightarrow{f^*}",
+   "new": "\\xrightarrow{f_*}"
+  },
+  "corrected": "\\xrightarrow{f^*}",
+  "note": "The natural map A(X) -> A(X⊗_k k') is the pull-back f^* (the same sentence writes f_* f^* = n id, f_* being the trace). Old taken from the text after the previous entry's fix (apply in this order)."
+ },
+ {
+  "page": 675,
+  "where": "4.2: '(comme on voit un utilisant l'homomorphisme trace'",
+  "scan": "'un utilisant' (both scans; crops_671_675/c675_trace.png, w675_bot.png)",
+  "tex": "en utilisant (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "comme on voit en utilisant",
+   "new": "comme on voit un utilisant"
+  },
+  "corrected": "comme on voit en utilisant",
+  "note": "Typing error. Second reading (Codex fr_r1, 5 Aug): 'comme on le voit en utilisant' (corrected, with an added le)."
+ },
+ {
+  "page": 675,
+  "where": "4.2: 'l'homomorphisme trace f_* : A(X⊗_k k') ⟶ A(X)'",
+  "scan": "f_* with the asterisk alone as index, no X (both scans; crops_671_675/c675_trace.png)",
+  "tex": "$f_{X*}:A(X\\otimes_k k')$",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "$f_{X*}:A(X\\otimes_k k')",
+   "new": "$f_*:A(X\\otimes_k k')"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): f_{X*} as well; the print agrees with neither."
+ },
+ {
+  "page": 675,
+  "where": "4.2: 'satisfaisant f_* f^* = n id)'",
+  "scan": "f_* f^* without X (both scans)",
+  "tex": "$f_{X*}f_X^*=n\\,\\id$",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "$f_{X*}f_X^*=n\\,\\id$",
+   "new": "$f_*f^*=n\\,\\id$"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): f_{X*}f_X^* as well."
+ },
+ {
+  "page": 675,
+  "where": "footnote (*) 'Elle est donc établie grâce à P. JOUANOLOU ...': its call mark",
+  "scan": "no call mark (*) anywhere in the text of the page, only the note at its foot (both scans; w675_top.png, w675_bot.png)",
+  "tex": "\\footnote{...} after 'n\\,\\id$).' (end of 4.2): a mark the print does not have, at an editorial place",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": {
+   "old": "\\footnote{Elle est donc",
+   "new": "\\sgastandalonefootnotetext{xiv-jouanolou}{Elle est donc"
+  },
+  "corrected": "\\footnote{Elle est donc",
+  "note": "The typist left out the call mark (the note's 'Elle' is the exact formula (4.5), cf. note p. 5). The fix sets the note without a mark with the file's own macro (main.tex line 66); that macro gives the note the number of the previous footnote, so the volume's footnote-mark decision (findings_016_020, p. 20) may prefer to leave the \\footnote. The corrected layer keeps the \\footnote. Second reading (Codex fr_r1, 5 Aug): puts its marked footnote at the same place."
+ },
+ {
+  "page": 675,
+  "where": "footnote (*): 'grâce à P. JOUANOLOU pour X lisse'",
+  "scan": "JOUANOLOU in capitals (both scans)",
+  "tex": "P. Jouanolou",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "P. Jouanolou pour",
+   "new": "P. JOUANOLOU pour"
+  },
+  "note": "As p. 671. Second reading (Codex fr_r1, 5 Aug): P. JOUANOLOU: the print agrees with it."
+ },
+ {
+  "page": 675,
+  "where": "4.3: 'ou ce qui revient au même, que la formule 4.5. soit vraie non seulement modulo torsion'",
+  "scan": "'formule 4.5.' without parentheses, with a full stop after 5 (both scans; crops_671_675/c675_45.png, w675_bot.png)",
+  "tex": "la formule (4.5) soit (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "la formule (4.5) soit",
+   "new": "la formule 4.5. soit"
+  },
+  "corrected": "la formule (4.5) soit",
+  "note": "Elsewhere the print writes the formula (4.5). Second reading (Codex fr_r1, 5 Aug): (4.5) (also corrected)."
+ },
+ {
+  "page": 675,
+  "where": "4.3: 'nous avons signalé déjà au n° 3 que lorsque'",
+  "scan": "n° 3 (both scans)",
+  "tex": "au no. 3",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "au no. 3",
+   "new": "au n\\textsuperscript{o} 3"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): n\\textsuperscript{o}~3: the print agrees with it."
+ },
+ {
+  "page": 675,
+  "where": "4.3: 'ont même image dans Gr˙_top(X), ou ce qui revient au même, que la deuxième des formules (4.4)'",
+  "scan": "no comma after 'ou' (both scans; crops_671_675/c675_ou.png)",
+  "tex": "ou, ce qui revient au même, (comma added)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "(X)$, ou, ce qui",
+   "new": "(X)$, ou ce qui"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): 'ou ce qui revient': the print agrees with it."
+ },
+ {
+  "page": 675,
+  "where": "end of page",
+  "scan": "p. 675 ends '... au cas de la caractéristique quelconque, une fois'; p. 676 begins 'résolu de façon satisfaisante la question soulevée au n° 1' (witness p. 676, crops_671_675/w676_top.png)",
+  "tex": "'résolu de' ends the last line of page_675.tex (under the folio-675 marker); the folio-676 text begins 'façon satisfaisante'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 676 really begins with 'résolu de'. Move the folio-676 marker before it: python -I move_marker.py 6 676 \"résolu de\" --before (gives '... une fois', the marker, 'résolu de', 'façon satisfaisante ...' in both layers)."
+ }
+]

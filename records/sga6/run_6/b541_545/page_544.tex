@@ -1,0 +1,32 @@
+% from main.tex
+%%%%%%%%%%  scan idx 557  |  folio 544  %%%%%%%%%%
+appelle parfois l'entier (4.3.4) le \emph{nombre d'intersection} des \(\mathcal O_X\) modules inversibles \(L_1,\ldots,L_d\) avec \(F\), et on le dénote par \((L_1,\ldots,L_d;F)\) (\emph{cf.} [3]). Comme conséquence de l'expression (4.3.4) de ce nombre on trouve aussitôt les propriétés suivantes :
+
+\begin{enumerate}[label=\arabic*)]
+\item L'entier (4.3.4) est une fonction symétrique et \(d\)-linéaire dans les variables \(L_1,\ldots,L_d\in\Pic(X)\), nulle si \(\dim(\Supp(F))<d\), et il est «~additif~» en \(F\) i.e. additif en \(\cl_\bullet(F)=F\).
+
+\item Utilisant 2.1.2, on en conclut immédiatement (avec les notations de 1.1.2) :
+\begin{equation}\tag{4.4.1}
+ (L_1,\ldots,L_d;F)
+ =
+ \sum_{x\in X(d)}
+ \operatorname{long}_{\mathcal O_{,x}}(F_x)
+ (L_1,\ldots,L_d;\mathcal O_{Z(x)}).
+\end{equation}
+
+\item Soit \(Y\) un sous-schéma fermé de \(X\) et \(G\) un \(\mathcal O_Y\)-module cohérent tel que \(F=f_*(G)\), où \(f:Y\to X\) est l'immersion canonique. Alors on trouve
+\[
+ (f^*L_1,\ldots,f^*L_d;G)=(L_1,\ldots,L_d;F).
+\]
+De façon plus générale, la formule de projection donne en effet
+\begin{equation}\tag{4.4.2}
+ \chi(f^*(x)\cdot y)=\chi\bigl(f_*(f^*(x)\cdot y)\bigr)=\chi(x\cdot f_*(y))
+ \qquad (x\in K^\circ(X),\ y\in K_\bullet(Y))
+\end{equation}
+pour tout \(k\)-morphisme \(f:Y\to X\) de \(k\)-schémas propres.
+
+\item Supposons que dans le morphisme \(f:Y\to X\) ci-dessus, \(X\) et \(Y\) sont irréductibles de dimension \(\leq d\). Si \(f\) est de degré \(n\), alors on a
+\begin{equation}\tag{4.4.3}
+ (f^*L_1,\ldots,f^*L_d;\mathcal O_Y)
+ =
+ n(L_1,\ldots,L_d;\mathcal O_X).

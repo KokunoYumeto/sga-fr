@@ -1,0 +1,28 @@
+% from main.tex
+%%%%%%%%%%  scan idx 137  |  folio 124  %%%%%%%%%%
+parfait. Quitte à localiser, on peut supposer que \(E\) et \(F\) sont objets de \(\Kpx^b(\mathcal C_0)\). Quitte à localiser davantage, on peut supposer, d'après l'assertion (i) non respée, que \(u\) est une flèche de \(\Kpx^b(\mathcal C_0)\); \(G\) est alors parfait car isomorphe au cône de \(u\), qui est strictement parfait. Donc \(\Parf(\mathcal C,\mathcal C_0)\) est bien une sous-\(S\)-catégorie triangulée de \(\Dpx(\mathcal C)\). L'argument précédent prouve aussi, d'ailleurs, l'assertion (ii) respée. Reste à prouver l'assertion (i) respée. Soient donc \(X\in\Ob S\), et
+\[
+E=(E_1\xrightarrow{a_1}E_2\xrightarrow{a_2}E_3\xrightarrow[+1]{a_3}E_1),
+\quad
+F=(F_1\xrightarrow{b_1}F_2\xrightarrow{b_2}F_3\xrightarrow[+1]{b_3}F_1)
+\]
+des triangles distingués de \(\Kpx^b(\mathcal C_{0,X})\), montrons que la flèche
+\[
+  \Hom_{\Tr(\Kpx^b(\mathcal C_0))}(E,F)
+  \longrightarrow
+  \Hom_{\Tr(\Dpx(\mathcal C))}(E,F)
+  \tag{**}
+\]
+est un isomorphisme. D'après l'assertion (i) non respée, on sait déjà que \((**)\) est injective. Soit \((u_i):E\to F\) un morphisme de triangles dans \(\Dpx(\mathcal C)\). Quitte à localiser, on peut supposer, d'après l'assertion (i) non respée, que \(u_i\) (\(1\leq i\leq3\)) est une flèche de \(\Kpx^b(\mathcal C_0)\). La flèche \(u_{i+1}a_i-b_iu_i\), pour \(1\leq i\leq3\) (avec la convention \(u_4=u_1\)), est nulle dans \(\Dpx(\mathcal C)\), donc localement nulle dans \(\Kpx^b(\mathcal C_0)\) d'après l'assertion (i) non respée. En d'autres termes, \((u_i)\) définit localement un morphisme de triangles dans \(\Kpx^b(\mathcal C_0)\). Cela prouve que \((**)\) est surjective et achève la démonstration de (4.10).
+
+\textbf{Remarque 4.10.1.} On peut remplacer, dans (4.10), \(\Parf(\mathcal C,\mathcal C_0)\) par \(\Dpx^*(\mathcal C)_{\mathcal C_0\text{-}\Parf}=\Dpx^*(\mathcal C)\cap\Parf(\mathcal C,\mathcal C_0)\) \((*=-\text{ ou }b)\), il n'y a rien à changer à la démonstration.
+
+\textbf{Complément 4.11.} On peut préciser la structure triangulée de \(\Parf(\mathcal C,\mathcal C_0)\) en termes d'amplitude parfaite (4.7). Si \(E\in\Ob\Dpx(\mathcal C)\) est d'amplitude parfaite contenue dans \([a,b]\), \(E[n]\) est d'amplitude parfaite contenue dans \([a-n,b-n]\).
+
+Soit
+\[
+\begin{tikzcd}
+& G \arrow[dl,"+1"'] & \\
+E \arrow[rr] && F \arrow[ul]
+\end{tikzcd}
+\]

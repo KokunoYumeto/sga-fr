@@ -1,0 +1,24 @@
+% from main.tex
+%%%%%%%%%%  scan idx 520  |  folio 507  %%%%%%%%%%
+Pour cela, on considère le complexe :
+\[
+0\longrightarrow \Lambda^r(E)\otimes_{\mathcal O_S}S(E)\longrightarrow
+\Lambda^{r-1}(E)\otimes_{\mathcal O_S}S(E)\longrightarrow\cdots\longrightarrow
+E\otimes_{\mathcal O_S}S(E)\longrightarrow S(E)\longrightarrow 0,
+\]
+où $S(E)$ est l'algèbre symétrique de $E$. C'est une résolution de $\mathcal O_S$ sur $S(E)$ (VI 1.11). Le complexe associé sur $X$, noté $L_\bullet$, a pour $k$-ième terme $\Lambda^k(f^*(E))$ et est donc une résolution de $\mathcal O_S$ par des $\mathcal O_X$-Modules localement libres de type fini ; on a donc \(L_\bullet\otimes_{\mathcal O_X}F=\mathcal O_S\otimes^L_{\mathcal O_X}F\). Par suite :
+\[
+\begin{aligned}
+g^*(g_*(F))
+&=\cl(L_\bullet\otimes_{\mathcal O_X}F)
+=\sum_{i=0}^r(-1)^i\cl(L_i\otimes_{\mathcal O_X}F)\\
+&=\sum_{i=0}^r(-1)^i\cl(\Lambda^i(E)\otimes_{\mathcal O_S}F)
+=F\cdot\lambda_{-1}(E).
+\end{aligned}
+\]
+La proposition en résulte par additivité.
+
+\subsection*{2. Fibrés principaux sous les tores déployés}
+
+\textbf{2.1.} Soient $S$ un schéma noethérien, et $T$ un tore sur $S$. On suppose $T$ déployé; on a donc un isomorphisme $T\simeq D_S(M)$, où $M$ est un groupe abélien libre de rang $r$, soit encore $T\simeq \mathbb G_{m,S}^r$. Soit $P$ un torseur sous $T$. Alors $P$ est affine sur $S$, défini par une $\mathcal O_S$-Algèbre $A$ graduée de type $M$ ; si on pose $A=\bigoplus_{m\in M}A_m$, alors $A_m$ est un $\mathcal O_S$-Module inversible pour tout $m$, et, pour $m,m'\in M$, l'homomorphisme $A_m\otimes_{\mathcal O_S}A_{m'}\longrightarrow A_{m+m'}$ défini par la multiplication de $A$ est un isomorphisme (SGA 3 VIII 4.1). On définit donc un homomorphisme multiplicatif $\eta:M\longrightarrow K^\circ(S)$ en associant à $m\in M$ la classe de $A_m$ dans $K^\circ(S)$.
+

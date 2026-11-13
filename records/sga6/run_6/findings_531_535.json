@@ -1,0 +1,263 @@
+[
+ {
+  "page": 531,
+  "where": "paragraph number 2.1",
+  "scan": "'2.1.' with a full stop, run into 'Rappelons d'abord' (both scans)",
+  "tex": "\\subsection*{2.1}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{2.1}",
+   "new": "\\subsection*{2.1.}"
+  },
+  "note": "The printed paragraph number ends with a full stop, as 2.2. (p. 534) and 2.3. (p. 535) and as the paragraph-number fixes of pp. 3-12, 394-402, 429-430, 449 and this exposé's 1.2., 1.3., 1.6. (already with the stop in main.tex); the run-in heading set as its own paragraph is accepted."
+ },
+ {
+  "page": 531,
+  "where": "Définition 2.1.1, 'pour toute suite x_1 ...,x_r (r ≥ 1)'",
+  "scan": "x₁ ....,x_r: four typed dots right after x₁, no comma between x₁ and the dots, a comma before x_r (both scans; crops_531_535/c531_x1.png, w531_x1.png)",
+  "tex": "$x_1,\\ldots,x_r$ ($r\\geq1$)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "$x_1,\\ldots,x_r$ ($r\\geq1$)",
+   "new": "$x_1\\ldots,x_r$ ($r\\geq1$)"
+  },
+  "corrected": "$x_1,\\ldots,x_r$ ($r\\geq1$)",
+  "note": "Typing slip: every other list on pp. 531-535 has the comma after the first term (x_1, ...,x_r in the next line of the definition). The TeX silently supplies it; the fix restores the printed reading."
+ },
+ {
+  "page": 531,
+  "where": "statements of pp. 531-535: Définition 2.1.1, Lemmes 2.1.2 and 2.1.3 (pp. 531-532), Lemme 2.1.4 (pp. 533-534), Proposition 2.2.1 (p. 535)",
+  "scan": "underlined word group by word group, formulas and most punctuation not underlined (both scans). Déf. 2.1.1: 'Soit', 'une application d'un groupe abélien', 'dans un groupe abélien', 'On dit que', 'est une', 's'il existe', 'pour toute suite', 'd'éléments de', 'une famille', 'presque tous nuls', 'et satisfaisant à la condition suivante', ...; Lemme 2.1.3: 'Soit', 'une suite exacte de groupes abéliens telle que', 'est divisible par', 'un nombre premier', 'et', 'est un groupe de torsion', 'Alors toute application polynôme', 'qui se factorise par', 'est constante'; Prop. 2.2.1: 'Pour tout schéma noethérien', 'et', 'pour tout', 'l'application composée', 'définie par', 'est une application polynôme de degré'",
+  "tex": "statements set in roman (no underline, no \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Same pattern as Exposé II (GLOBAL_ISSUES 82, pending volume decision) and Exposé IX (findings_501_505, findings_506_510): not itemized. These pages have no \\emph on defined terms and no category L."
+ },
+ {
+  "page": 532,
+  "where": "start of page (folio-532 marker)",
+  "scan": "p. 531 ends '... telle que G' est divisible par'; p. 532 begins 'un nombre premier p et G'' est un groupe de torsion.' (both scans; b531_535/page_531_s4.png, page_532_s1.png; crops_531_535/wit_531_small.png, wit_532_small.png)",
+  "tex": "page_531.tex ends 'est divisible par un' above the folio-532 marker; page_532.tex begins 'nombre premier $p$'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 532 really begins at 'un nombre premier'. Exact edit in main.tex, both layers (diplomatic lines 13711-13713, current 13717-13719 at 16:2x on 13 Nov; main.tex is being edited, so use the string): replace 'divisible par un\\n%%%%%%%%%%  scan idx 545  |  folio 532  %%%%%%%%%%\\nnombre premier' by 'divisible par\\n%%%%%%%%%%  scan idx 545  |  folio 532  %%%%%%%%%%\\nun nombre premier' (old string once per layer; simulated in memory: crops_531_535/marker_check.py)."
+ },
+ {
+  "page": 532,
+  "where": "a), '(m ∈ Z , m ≠ 0)'",
+  "scan": "a plain typed Z, without the hand stroke or the double underline of the other Z on pp. 531-532 (both scans; crops_531_535/c532_mZ.png, w532_mZ.png)",
+  "tex": "($m\\in\\mathbb Z$, $m\\ne0$)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "($m\\in\\mathbb Z$",
+   "new": "($m\\in Z$"
+  },
+  "note": "The typist's plain letter, reported as the plain Q (volume decision with SGA 7 II issue 61; GLOBAL_ISSUES 78 keeps \\mathbb in SGA 7). Same on p. 534 'n_1,...,n_r ∈ Z :'."
+ },
+ {
+  "page": 532,
+  "where": "display 'P_k(n) = P_{k+1}(pn)' after 'Pour tout n ∈ Z on a l'identité'",
+  "scan": "no punctuation after P_{k+1}(pn); the next line is 'i.e.' (both scans)",
+  "tex": "P_k(n)=P_{k+1}(pn),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "P_k(n)=P_{k+1}(pn),",
+   "new": "P_k(n)=P_{k+1}(pn)"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 532,
+  "where": "'Démonstration :' (proof of Lemme 2.1.3)",
+  "scan": "only the word 'Démonstration' is underlined; the colon after it is not (both scans)",
+  "tex": "\\emph{Démonstration :}",
+  "kind": "underline",
+  "confidence": "low",
+  "fix": {
+   "old": "\\emph{Démonstration :}",
+   "new": "\\emph{Démonstration} :"
+  },
+  "note": "The colon stands inside the emphasis. The global rule keeps a comma or full stop inside the emphasis (\\emph{Preuve.}); if it covers the colon, drop this entry and the one of p. 534. main.tex has \\emph{Démonstration :} 8 times, all in Exposé X, and '\\emph{Démonstration de} 1.1.2 :' with the colon outside."
+ },
+ {
+  "page": 533,
+  "where": "'Mais tout polynôme P : Q → Q'",
+  "scan": "the first Q is a plain typed Q, the second is hand-struck (both scans; crops_531_535/w533_PQQ.png)",
+  "tex": "$P:\\mathbb Q\\to\\mathbb Q$",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "$P:\\mathbb Q\\to\\mathbb Q$",
+   "new": "$P:Q\\to\\mathbb Q$"
+  },
+  "note": "The typist's plain Q (volume decision with SGA 7 II issue 61)."
+ },
+ {
+  "page": 533,
+  "where": "'on désigne par g_b : G' → Q l'application définie par'",
+  "scan": "a typed Q with a single underline (one line, where the typed double-struck letters of these pages have two: Z on p. 531, N on p. 532); both scans (crops_531_535/c533_gbQ_z.png, w533_gbQ_z.png, c532_N_z.png)",
+  "tex": "$g_b:G'\\to\\mathbb Q$",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "g_b:G'\\to\\mathbb Q$",
+   "new": "g_b:G'\\to\\underline{Q}$"
+  },
+  "note": "The typist's underlined Q; decide with the plain Q (SGA 7 II issue 61)."
+ },
+ {
+  "page": 533,
+  "where": "'d'où l'assertion que f soit constante sur les classes de G suivant G''.'",
+  "scan": "G followed by a prime and a second, more weakly struck prime, then the full stop (both scans; crops_531_535/c533_Gpp.png, w533_Gpp.png)",
+  "tex": "suivant $G''$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "suivant $G'$",
+  "note": "Wrong index: the classes are those of G modulo G' ('constante sur chaque classe de G suivant G'' two sentences earlier; g_b is defined on G'). The TeX keeps the printed G'' in both layers."
+ },
+ {
+  "page": 533,
+  "where": "'où h : G' → Q est une application polynôme'",
+  "scan": "h : G' → Q with a single prime (both scans; crops_531_535/c533_hG.png, w533_vant_line.png)",
+  "tex": "$h:G'\\to\\mathbb Q$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$h:G''\\to\\mathbb Q$",
+  "note": "Wrong index: f = h∘j with j : G → G'', so h is defined on G'' (and is constant because G'' is a torsion group). The TeX keeps the printed G' in both layers."
+ },
+ {
+  "page": 533,
+  "where": "'Mais par hypothèse C'' est un groupe de torsion'",
+  "scan": "a typed C with the double prime (both scans; crops_531_535/c533_C.png, w533_C.png)",
+  "tex": "$C''$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$G''$",
+  "note": "Typing error for G'' (the hypothesis of Lemme 2.1.3). The diplomatic TeX keeps C''; the corrected layer already has G''."
+ },
+ {
+  "page": 533,
+  "where": "display 'α : P → A → A ⊗_Z Q' after 'Alors l'application composée' (printed at the top of p. 534; its TeX stands in page_533.tex above the folio-534 marker)",
+  "scan": "no punctuation after A ⊗_Z Q (both scans; b531_535/page_534_s1.png, crops_531_535/wit_534_small.png)",
+  "tex": "A\\otimes_{\\mathbb Z}\\mathbb Q,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "A\\otimes_{\\mathbb Z}\\mathbb Q,",
+   "new": "A\\otimes_{\\mathbb Z}\\mathbb Q"
+  },
+  "note": "The TeX adds a comma at the end of the display. Independent of the folio-534 marker move (entry of p. 534), which does not touch the display line."
+ },
+ {
+  "page": 534,
+  "where": "start of page (folio-534 marker)",
+  "scan": "p. 533 ends '... soit i : P → A l'injection naturelle. Alors l'application composée'; p. 534 begins with the display 'α : P → A → A ⊗_Z Q', then '(où j(x) = x ⊗ 1) est une application polynôme.' (both scans; b531_535/page_533_s4.png, page_534_s1.png; crops_531_535/wit_533_small.png, wit_534_small.png)",
+  "tex": "page_533.tex ends with the display \\alpha and '(où $j(x)=x\\otimes1$) est une' above the folio-534 marker; page_534.tex begins 'application polynôme.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 534 really begins at the display '\\[\\n\\alpha:P\\xrightarrow{i}A...'. Exact edits in main.tex, both layers, applied together (diplomatic lines 13749-13755, current 13755-13761 at 16:2x on 13 Nov; use the strings): (1) replace '(où $j(x)=x\\otimes1$) est une\\n%%%%%%%%%%  scan idx 547  |  folio 534  %%%%%%%%%%\\napplication polynôme.' by '(où $j(x)=x\\otimes1$) est une application polynôme.'; (2) replace 'Alors l'application composée\\n\\[' by 'Alors l'application composée\\n%%%%%%%%%%  scan idx 547  |  folio 534  %%%%%%%%%%\\n\\['. Each old string occurs once per layer, and neither touches the display line, so the comma fix of p. 533 applies before or after (simulated in memory: crops_531_535/marker_check.py)."
+ },
+ {
+  "page": 534,
+  "where": "proof of Lemme 2.1.4, 'Soit x_1,...,x_r une suite d'éléments de F avec x_i = 1+y_i'",
+  "scan": "a typed F: top bar with its end serif, middle bar, no bowl (both scans; crops_531_535/c534_deP.png, w534_deP.png)",
+  "tex": "d'éléments de $F$ avec",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "d'éléments de $P$ avec",
+  "note": "Typing error: the x_i = 1+y_i are elements of the group P of Lemme 2.1.4. The TeX keeps the printed F in both layers."
+ },
+ {
+  "page": 534,
+  "where": "'pour tout n_1,...,n_r ∈ Z :'",
+  "scan": "a plain typed Z, no hand stroke and no double underline (both scans; crops_531_535/c534_Z.png, w534_Z.png)",
+  "tex": "$n_1,\\ldots,n_r\\in\\mathbb Z$ :",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "n_1,\\ldots,n_r\\in\\mathbb Z$ :",
+   "new": "n_1,\\ldots,n_r\\in Z$ :"
+  },
+  "note": "As p. 532 '(m ∈ Z': the typist's plain letter (volume decision with SGA 7 II issue 61)."
+ },
+ {
+  "page": 534,
+  "where": "'Démonstration :' (proof of Lemme 2.1.4)",
+  "scan": "only the word 'Démonstration' is underlined; the colon is not (both scans)",
+  "tex": "\\emph{Démonstration :}",
+  "kind": "underline",
+  "confidence": "low",
+  "fix": {
+   "old": "\\emph{Démonstration :}",
+   "new": "\\emph{Démonstration} :"
+  },
+  "note": "As p. 532."
+ },
+ {
+  "page": 534,
+  "where": "paragraph number 2.2",
+  "scan": "'2.2.' with a full stop, run into 'Considérons maintenant' (both scans)",
+  "tex": "\\subsection*{2.2}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{2.2}",
+   "new": "\\subsection*{2.2.}"
+  },
+  "note": "As 2.1 (p. 531)."
+ },
+ {
+  "page": 534,
+  "where": "K and cl with a raised dot, pp. 534-535 (7 places: K˙(X) five times on p. 534, cl˙(L) twice on p. 535)",
+  "scan": "K˙(X), cl˙(L) with a raised filled dot (both scans; crops_531_535/c534_Theta.png); the lower dot of K.(X), cl.(F) is right as K_\\bullet, \\cl_\\bullet",
+  "tex": "K^\\circ(X), \\cl^\\circ(L) (a raised circle)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé X TeX in §§ 1-7.6: K^\\circ (54) and \\cl^\\circ (28) for the print's raised dot, while its opening display has K^{\\bullet} and § 7.7 on has K^\\bullet (66); as reported for Exposé IX (findings_501_505, findings_506_510); same fix as Exposés IV and VI on 10 Nov, one pass, not itemized. Three examples: p. 534 'tout $x\\in K^\\circ(X)$' -> 'tout $x\\in K^{\\bullet}(X)$'; p. 534 'j:K^\\circ(X)\\longrightarrow K^\\circ(X)/\\Filt^{j+1}(X)=A' -> 'j:K^{\\bullet}(X)\\longrightarrow K^{\\bullet}(X)/\\Filt^{j+1}(X)=A'; p. 535 '$j(\\cl^\\circ(L))$' -> '$j(\\cl^{\\bullet}(L))$'."
+ },
+ {
+  "page": 535,
+  "where": "paragraph number 2.3",
+  "scan": "'2.3.' with a full stop, run into 'Si X est' (both scans; crops_531_535/c535_SiX.png, w535_SiX.png)",
+  "tex": "\\subsection*{2.3}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{2.3}",
+   "new": "\\subsection*{2.3.}"
+  },
+  "note": "As 2.1 (p. 531). The small raised dot between 'X' and 'est' on this line (both scans) is a speck, not a typed stop."
+ },
+ {
+  "page": 535,
+  "where": "end of page (folio-536 marker)",
+  "scan": "p. 535 ends '... la caractéristique d'Euler-Poincaré χ (F) ∈ Z de F sur X . / De 2.2.1 on conclut immédiatement :'; p. 536 begins 'Proposition 2.3.1. Pour tout schéma propre X sur k, ...' (both scans; b531_535/page_535_s3.png; crops_531_535/wit_535_small.png, wit_536_small.png)",
+  "tex": "page_535.tex ends 'la caractéristique d'Euler-'; the folio-536 marker stands inside the word, and 'Poincaré $\\chi(F)\\in\\mathbb Z$ de $F$ sur $X$. De 2.2.1 on conclut immédiatement :' is in page_536.tex",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 536 really begins at '\\textbf{Proposition 2.3.1.}'. Exact edits in main.tex, both layers, applied together (diplomatic lines 13797-13801, current 13803-13807 at 16:2x on 13 Nov; use the strings): (1) replace 'd'Euler-\\n%%%%%%%%%%  scan idx 549  |  folio 536  %%%%%%%%%%\\nPoincaré' by 'd'Euler-Poincaré' (this also removes the space that the line end after 'Euler-' now puts into the word); (2) replace 'immédiatement :\\n\\n\\textbf{Proposition 2.3.1.}' by 'immédiatement :\\n\\n%%%%%%%%%%  scan idx 549  |  folio 536  %%%%%%%%%%\\n\\textbf{Proposition 2.3.1.}'. Each old string occurs once per layer (simulated in memory: crops_531_535/marker_check.py)."
+ },
+ {
+  "page": 535,
+  "where": "the Modules L and F, p. 535 (8 places: 'inversible L', 'j(cl˙(L))', 'cl_P(L)', '(cl˙(L)y)', 'cl.(F)', 'cohérent F', and, under the folio-536 marker, 'χ(F)' and 'de F sur X')",
+  "scan": "L and F underlined in all eight places (both scans), as L_1, ..., L_n and F on p. 536",
+  "tex": "plain $L$, $F$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé X TeX: underlined Module letters written plain (outside its title the exposé underlines only m, m' on p. 530 and one E in § 7.13), as reported for Exposé IX (findings_501_505, findings_506_510): not itemized. The form if the diplomatic layer reproduces it: 'inversible $L$' -> 'inversible $\\underline{L}$'; '\\cl_P(L)\\rightsquigarrow (\\cl^\\circ(L)y)' -> '\\cl_P(\\underline{L})\\rightsquigarrow (\\cl^\\circ(\\underline{L})y)'; 'cohérent $F$' -> 'cohérent $\\underline{F}$'. The underlined O of O_X (twice) falls under the pending \\cO decision."
+ }
+]

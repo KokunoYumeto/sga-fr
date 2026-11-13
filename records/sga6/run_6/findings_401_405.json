@@ -1,0 +1,483 @@
+[
+ {
+  "page": 401,
+  "where": "display at the top of the page: K˙(G_S^{n,r}) = K˙(S)[c_1,...,c_n]/I_r",
+  "scan": "G with two underlines (S is its index, to the right), both scans (crops_401_405/c401_G.png; w401_top.png)",
+  "tex": "K^{\\bullet}(G_S^{n,r}) (plain G)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "K^{\\bullet}(G_S^{n,r})=",
+   "new": "K^{\\bullet}(\\mathbf G_S^{n,r})="
+  },
+  "note": "The file writes the print's doubly underlined letters as \\mathbf in Exposé VI (X=\\mathbf P(E); \\mathbf D(E_i) of Proposition 3.1, findings_386_390; \\mathbf R, \\mathbf L). The same plain G_S^{n,r}, G_S^{n,\\infty} stands in 4.9-4.10 (main.tex lines 10033-10049, pp. 399-400), for those batches."
+ },
+ {
+  "page": 401,
+  "where": "'Il résulte alors de la définition (4.9.1) que K˙(G_S^{n,∞}) est le séparé complété'",
+  "scan": "G with two underlines, both scans (crops_401_405/c401_G2.png; w401_top.png)",
+  "tex": "\\(K^{\\bullet}(G_S^{n,\\infty})\\) (plain G)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "(G_S^{n,\\infty})\\) est le séparé",
+   "new": "(\\mathbf G_S^{n,\\infty})\\) est le séparé"
+  },
+  "note": "As the display above."
+ },
+ {
+  "page": 401,
+  "where": "display γ_t(F_1-n) = 1 + c_1t + ... + c_nt^n = ∏(1+x_it)",
+  "scan": "three typed full stops on the baseline between the + signs (both scans; crops_401_405/c401_dots.png)",
+  "tex": "\\cdots",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "+c_1t+\\cdots+c_nt^n",
+   "new": "+c_1t+\\ldots+c_nt^n"
+  },
+  "note": "\\cdots sets the dots at mid-height; same kind of fix as pp. 387, 389, 390 (findings_386_390)."
+ },
+ {
+  "page": 401,
+  "where": "paragraph number 5.1",
+  "scan": "'5.1.' with a full stop, then 'Dans ce paragraphe' (both scans)",
+  "tex": "\\subsection*{5.1}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{5.1}\nDans ce paragraphe",
+   "new": "\\subsection*{5.1.}\nDans ce paragraphe"
+  },
+  "note": "The printed paragraph number ends with a full stop (as the \\subsubsection*{2.3} etc. of findings_001_005); the run-in heading set as its own paragraph is accepted."
+ },
+ {
+  "page": 401,
+  "where": "letters of Modules on pp. 401-405",
+  "scan": "underlined in the print: E three times ('E un O_S-Module', 'associé à E', f^*(E)) and F in the exact sequence (p. 401); E and F of 'les classes de E, F, O_X(1)', G twice ('Si G est un O_X-Module', R^if_*(G)) (p. 402); E_1, E_n of 'E_1,...,E_n des O_S-Modules', E_i twice, and E_1, E_n of X = D(E_1)x_S...x_S D(E_n) (p. 404). Plain in the print: the classes E, F, ξ, x, the E of λ^i(E), c(E-n), Ě, F_j, and the E, F of p. 405 (both scans)",
+  "tex": "all plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé VI transcription, reported for pp. 366-390 (findings_381_385, findings_386_390): not itemized. The underlined O of O_S, O_X written \\mathcal O falls under the pending volume decision."
+ },
+ {
+  "page": 402,
+  "where": "start of page (folio-402 marker)",
+  "scan": "p. 401 ends with the display '0 → F → f^*(E) → O_X(1) → 0 ,'; p. 402 begins 'f étant le morphisme structural X → S.' (both scans; crops_401_405/w401_bot.png, w402_top.png)",
+  "tex": "page_401.tex ends with the line '$f$' after that display, above the folio-402 marker; page_402.tex begins 'étant le morphisme structural'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 402 really begins at '$f$' (one TeX line). Exact edit in main.tex, both layers (diplomatic lines 10086-10087, current 10092-10093): replace '$f$\\n%%%%%%%%%%  scan idx 415  |  folio 402  %%%%%%%%%%\\n' by '%%%%%%%%%%  scan idx 415  |  folio 402  %%%%%%%%%%\\n$f$\\n' (simulated: crops_401_405/sim_markers.py)."
+ },
+ {
+  "page": 402,
+  "where": "'Comme ξ-1 et x sont dans Fil^1K˙(X), on a (ξ-1) x ∈ Fil²K˙(X), i.e. ... i.e.. x̄' = -x̄'",
+  "scan": "the formulas stand inline: the text line after 'on a' begins at the left margin with '(ξ-1) x ∈ Fil²K˙(X), i.e. x ≡ ξ x = x' mod. Fil²K˙(X) i.e.. x̄' = -x̄' and ends there, with no full stop after -x̄; '5.2.' follows (both scans; crops_401_405/c402_inline.png, w402_top.png)",
+  "tex": "a display \\[ ... \\quad\\text{i.e.}\\quad ... \\quad\\text{i.e..}\\quad \\bar x'= -\\bar x . \\] (full stop added)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "on a\n\\[\n  (\\xi-1)x\\in\\Fil^2K^{\\bullet}(X),\n  \\quad\\text{i.e.}\\quad x\\equiv \\xi x=x' \\ \\mathrm{mod.}\\ \\Fil^2K^{\\bullet}(X)\n  \\quad\\text{i.e..}\\quad \\bar x'= -\\bar x .\n\\]",
+   "new": "on a $(\\xi-1)x\\in\\Fil^2K^{\\bullet}(X)$, i.e. $x\\equiv \\xi x=x'$ mod. $\\Fil^2K^{\\bullet}(X)$ i.e.. $\\bar x'= -\\bar x$"
+  },
+  "note": "Set inline as printed; the edit also drops the full stop the TeX adds after -x̄. It keeps the printed 'i.e..' and '-x̄' (misprints, next two entries). The current layer has '\\bar x'= \\bar x' there: the same edit in that layer keeps '\\bar x'= \\bar x'."
+ },
+ {
+  "page": 402,
+  "where": "same line: '... mod. Fil²K˙(X) i.e.. x̄' = -x̄'",
+  "scan": "'i.e..' with two full stops after the e (both scans; crops_401_405/c402_inline.png)",
+  "tex": "\\text{i.e..} (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "i.e.",
+  "note": "Doubled stop of the typist. The diplomatic layer keeps it (also the inline form of the entry above); the current layer still has 'i.e..'."
+ },
+ {
+  "page": 402,
+  "where": "same line: 'x ≡ ξ x = x' mod. Fil²K˙(X) i.e.. x̄' = -x̄'",
+  "scan": "x̄' = -x̄ with a minus sign (both scans; crops_401_405/c402_inline.png)",
+  "tex": "\\bar x'= -\\bar x (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\bar x'=\\bar x",
+  "note": "x ≡ ξx = x' mod Fil² gives x̄' = x̄; the sign contradicts the line itself. The current layer already reads '\\bar x'= \\bar x'."
+ },
+ {
+  "page": 402,
+  "where": "paragraph number 5.2",
+  "scan": "'5.2.' with a full stop, then 'Si G est un' (both scans)",
+  "tex": "\\subsection*{5.2}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{5.2}\nSi $G$ est",
+   "new": "\\subsection*{5.2.}\nSi $G$ est"
+  },
+  "note": "As 5.1 on p. 401."
+ },
+ {
+  "page": 402,
+  "where": "(5.2.1) y = a_o + a_1ξ^{-1} + ... + a_rξ^{-r}",
+  "scan": "three typed full stops on the baseline (both scans; crops_401_405/c402_521.png)",
+  "tex": "\\cdots",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "a_1\\xi^{-1}+\\cdots+a_r",
+   "new": "a_1\\xi^{-1}+\\ldots+a_r"
+  },
+  "note": "As the dots of p. 401."
+ },
+ {
+  "page": 402,
+  "where": "'Il est clair que l'homomorphisme ainsi défini est additif'",
+  "scan": "'Il est clair que' begins a new, indented paragraph after (5.2.2) (both scans)",
+  "tex": "'\\end{equation}' followed directly by 'Il est clair' (the paragraph runs on)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "  f_*(y)=a_0 .\n\\end{equation}\nIl est clair",
+   "new": "  f_*(y)=a_0 .\n\\end{equation}\n\nIl est clair"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 402,
+  "where": "'On vérifie les relations suivantes :'",
+  "scan": "'On vérifie les relations suivantes :' begins a new, indented paragraph after '... i.e. est K˙(S)-linéaire.' (both scans)",
+  "tex": "'... -linéaire. On vérifie les relations suivantes :' in one paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "-linéaire. On vérifie",
+   "new": "-linéaire.\n\nOn vérifie"
+  },
+  "note": "Missing paragraph break; independent of the entry above."
+ },
+ {
+  "page": 402,
+  "where": "'Pour vérifier le dernier groupe de relations'",
+  "scan": "'Pour vérifier' begins a new, indented paragraph after (5.2.3) (both scans)",
+  "tex": "'\\end{equation}' followed directly by 'Pour vérifier' (the paragraph runs on)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nPour vérifier",
+   "new": "\\end{equation}\n\nPour vérifier"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 403,
+  "where": "start of page (folio-403 marker)",
+  "scan": "p. 402 ends 'On peut lui appliquer f_* :'; p. 403 begins with the display 'Σ_{i=0}^{r+1} (-1)^i λ^i(E) f_*(ξ^{n-i}) = 0 .', then 'Le résultat en découle aussitôt' (both scans; crops_401_405/w403_top.png)",
+  "tex": "page_402.tex ends with that display and the word 'Le', above the folio-403 marker; page_403.tex begins 'résultat en découle'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 403 really begins at the display's '\\[' (diplomatic line 10118, current 10124). Exact edit in main.tex, both layers: replace 'On peut lui appliquer $f_*$ :\\n\\[\\n  \\sum_{i=0}^{r+1}(-1)^i\\lambda^i(E)f_*(\\xi^{\\,n-i})=0 .\\n\\]\\nLe\\n%%%%%%%%%%  scan idx 416  |  folio 403  %%%%%%%%%%\\n' by 'On peut lui appliquer $f_*$ :\\n%%%%%%%%%%  scan idx 416  |  folio 403  %%%%%%%%%%\\n\\[\\n  \\sum_{i=0}^{r+1}(-1)^i\\lambda^i(E)f_*(\\xi^{\\,n-i})=0 .\\n\\]\\nLe\\n' (simulated: crops_401_405/sim_markers.py). The display and 'Le' match the print of p. 403."
+ },
+ {
+  "page": 403,
+  "where": "display after 'une décomposition en somme directe de K˙(S)-modules :'",
+  "scan": "no equation number: the display 'Fil^kK˙(X) = ... + Fil^{k-r}K˙(S).x^r ,' stands alone on its line and the left margin is empty (both scans; crops_401_405/c403_531b.png, w403_top.png), whereas (5.2.1)-(5.2.3) on p. 402 carry their numbers at the margin",
+  "tex": "\\begin{equation}\\tag{5.3.1}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "-modules :\n\\begin{equation}\\tag{5.3.1}",
+   "new": "-modules :\n\\begin{equation}\\notag"
+  },
+  "note": "The number is the TeX's addition; Exposé VI never cites (5.3.1). amsmath's \\notag suppresses the number inside equation (tested with pdflatex). Independent of the K' and \\cdots entries of the same display."
+ },
+ {
+  "page": 403,
+  "where": "same display, its first two K",
+  "scan": "Fil^kK˙(X) = Fil^kK˙(S): K with the raised dot, like the other K˙ of the display (both scans; crops_401_405/c403_531b.png)",
+  "tex": "\\Fil^kK'(X)=\\Fil^kK'(S)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Fil^kK'(X)=\\Fil^kK'(S)",
+   "new": "\\Fil^kK^{\\bullet}(X)=\\Fil^kK^{\\bullet}(S)"
+  },
+  "note": "Left by the 10 Nov K' -> K^{\\bullet} pass of Exposé VI, which missed a K' after a superscript letter (\\Fil^kK', \\Gr^kK', \\Gr^iK'): seven places on pp. 403-405 (this and four more entries) and main.tex line 10436 (diplomatic; current 10442), Problème 6.10 on p. 415, '\\Fil^kK'(X)\\subset', for its batch."
+ },
+ {
+  "page": 403,
+  "where": "same display, '+ ... +'",
+  "scan": "three typed full stops on the baseline (both scans; crops_401_405/c403_531b.png)",
+  "tex": "\\cdots",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "(S).x+\\cdots+\\Fil^{k-r}",
+   "new": "(S).x+\\ldots+\\Fil^{k-r}"
+  },
+  "note": "As the dots of p. 401."
+ },
+ {
+  "page": 403,
+  "where": "display x^n ∈ Fil^nK˙(S) + Fil^{n-1}K˙(S).x + ... + Fil^{n-r}K˙(S).x^r",
+  "scan": "Fil^nK˙(S): K with the raised dot (both scans; crops_401_405/c403_xn.png)",
+  "tex": "\\Fil^nK'(S)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Fil^nK'(S)",
+   "new": "\\Fil^nK^{\\bullet}(S)"
+  },
+  "note": "As the K' of (5.3.1)."
+ },
+ {
+  "page": 403,
+  "where": "same display, '+ ... +'",
+  "scan": "three typed full stops on the baseline (both scans; crops_401_405/c403_xn.png)",
+  "tex": "\\cdots",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "(S).x+\\cdots+\\Fil^{n-r}",
+   "new": "(S).x+\\ldots+\\Fil^{n-r}"
+  },
+  "note": "As the dots of p. 401."
+ },
+ {
+  "page": 403,
+  "where": "'C'est évident pour n ≤ r ; on poursuit par récurrence.'",
+  "scan": "'C'est évident' begins a new, indented paragraph after the display (both scans)",
+  "tex": "'\\]' followed directly by 'C'est évident' (the paragraph runs on)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nC'est évident",
+   "new": "\\]\n\nC'est évident"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 403,
+  "where": "Proposition 5.3: 'Avec les notations et les hypothèses de 4.1'",
+  "scan": "'de 4.1,' (both scans; crops_401_405/w403_top.png)",
+  "tex": "hypothèses de 4.1 (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "5.1",
+  "note": "The statement uses x, r and Ě of 5.1 (4.1 sets up the flag bundles of a Module of rank n); Corollaires 5.6, 5.8 and Proposition 5.9 cite 5.1. The current layer already reads 5.1."
+ },
+ {
+  "page": 403,
+  "where": "statements of pp. 403-405: Proposition 5.3, Corollaires 5.4-5.8, Proposition 5.9",
+  "scan": "the print underlines the statements word group by word group, e.g. Proposition 5.3: 'Avec les notations et les hypothèses de', 'on a pour', 'tout', 'une décomposition en somme directe de', 'modules', 'la filtration considérée étant la filtration de', 'algèbre augmentée définie', 'en', 'et'; Corollaire 5.5: 'Soient', 'un schéma quasi', 'compact', 'des', 'Modules', 'localement libres de type fini', 'le schéma de drapeaux de', 'Alors l'homomorphisme canonique', 'est injectif'; Proposition 5.9: 'Avec les notations et les hypothèses de', 'on a pour', 'tout', 'En particulier', 'si on pose', 'on obtient'; formulas, numbers and punctuation plain; the labels underline only the word (both scans)",
+  "tex": "the statements in roman (no \\underline, no \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé VI follows the Exposé II pattern of GLOBAL_ISSUES 82 (pending volume decision): not itemized."
+ },
+ {
+  "page": 404,
+  "where": "Corollaire 5.5, 'D(E_i) le schéma de drapeaux de E_i'",
+  "scan": "D with two underlines (both scans; crops_401_405/c404_DEi.png, w404_DEi.png)",
+  "tex": "$D(E_1)$ (plain D)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "fini, $D",
+   "new": "fini, $\\mathbf D"
+  },
+  "note": "The file's form for the doubly underlined D (\\mathbf D(E_i) in Proposition 3.1, findings_386_390). Independent of the index entry below (no common text)."
+ },
+ {
+  "page": 404,
+  "where": "Corollaire 5.5, 'D(E_i) le schéma de drapeaux de E_i,'",
+  "scan": "index i in both places: a short stem with its dot and foot serif, unlike the tall flagged 1 of 'E_1,...,E_n' and 'X = D(E_1)' (both scans; crops_401_405/c404_DEi.png, c404_Ei.png, c404_DE1.png, w404_DEi.png, w404_Ei.png, w404_DE1.png)",
+  "tex": "$D(E_1)$ le schéma de drapeaux de $E_1$",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(E_1)$ le schéma de drapeaux de $E_1$",
+   "new": "(E_i)$ le schéma de drapeaux de $E_i$"
+  },
+  "note": "As 'D(E_i) le schéma des drapeaux de E_i' of Proposition 3.1."
+ },
+ {
+  "page": 404,
+  "where": "Corollaire 5.5, 'X = D(E_1)x_S...x_S D(E_n)', first factor",
+  "scan": "D with two underlines (both scans; crops_401_405/c404_DE1.png, w404_DE1.png)",
+  "tex": "\\(X=D(E_1)\\) ... (plain D)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$X=D(E_1)",
+   "new": "$X=\\mathbf D(E_1)"
+  },
+  "note": "Independent of the entries before and after (no common text)."
+ },
+ {
+  "page": 404,
+  "where": "same formula, last factor D(E_n)",
+  "scan": "D with two underlines (both scans; crops_401_405/c404_DE1.png)",
+  "tex": "\\times_S D(E_n) (plain D)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\times_S D(E_n)",
+   "new": "\\times_S \\mathbf D(E_n)"
+  },
+  "note": ""
+ },
+ {
+  "page": 404,
+  "where": "same formula, 'x_S...x_S'",
+  "scan": "three typed full stops on the baseline (both scans; crops_401_405/c404_DE1.png)",
+  "tex": "\\cdots",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\times_S\\cdots",
+   "new": "\\times_S\\ldots"
+  },
+  "note": "As p. 390 (findings_386_390). The typed letter x for the product sign is handled globally; this edit and the D(E_n) edit touch different \\times_S."
+ },
+ {
+  "page": 404,
+  "where": "Corollaire 5.6, display Gr^kK˙(X) = Gr^kK˙(S) ⊕ ..., its first two K",
+  "scan": "K with the raised dot (both scans; crops_401_405/c404_gr.png, w404_top.png)",
+  "tex": "\\Gr^kK'(X)=\\Gr^kK'(S)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Gr^kK'(X)=\\Gr^kK'(S)",
+   "new": "\\Gr^kK^{\\bullet}(X)=\\Gr^kK^{\\bullet}(S)"
+  },
+  "note": "As the K' of (5.3.1) on p. 403."
+ },
+ {
+  "page": 404,
+  "where": "same display, '⊕ ... ⊕'",
+  "scan": "three typed full stops on the baseline (both scans; crops_401_405/c404_gr.png)",
+  "tex": "\\cdots",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": ".\\bar x\\oplus\\cdots\\oplus",
+   "new": ".\\bar x\\oplus\\ldots\\oplus"
+  },
+  "note": "As the dots of p. 401."
+ },
+ {
+  "page": 404,
+  "where": "Corollaire 5.7: 'la classe dans Gr^iK˙(X) de γ^i(F_j-p_j)'",
+  "scan": "K with the raised dot (both scans; crops_401_405/c404_gri.png)",
+  "tex": "\\Gr^iK'(X)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Gr^iK'(X)",
+   "new": "\\Gr^iK^{\\bullet}(X)"
+  },
+  "note": "As the K' of (5.3.1) on p. 403."
+ },
+ {
+  "page": 405,
+  "where": "'(comparer [2], Exp 4).'",
+  "scan": "'Exp 4' without a full stop after Exp (both scans; crops_401_405/c405_exp.png, w405_top.png)",
+  "tex": "Exp. 4 (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Exp. 4",
+   "new": "Exp 4"
+  },
+  "corrected": "Exp. 4",
+  "note": "The abbreviation's stop is missing in the print; the diplomatic layer should drop it, the corrected edition keeps 'Exp. 4'."
+ },
+ {
+  "page": 405,
+  "where": "Corollaire 5.8, display f_*(Fil^kK˙(X)) ⊂ Fil^{k-r}K˙(S)",
+  "scan": "Fil^kK˙(X): K with the raised dot (both scans; crops_401_405/w405_top.png)",
+  "tex": "\\Fil^kK'(X)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "f_*(\\Fil^kK'(X))",
+   "new": "f_*(\\Fil^kK^{\\bullet}(X))"
+  },
+  "note": "As the K' of (5.3.1) on p. 403."
+ },
+ {
+  "page": 405,
+  "where": "'Conséquence immédiate de 5.3 et de la formule de projection.'",
+  "scan": "begins a new, indented paragraph after the display of Corollaire 5.8 (both scans)",
+  "tex": "'\\]' followed directly by 'Conséquence immédiate' (the paragraph runs on)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nConséquence immédiate",
+   "new": "\\]\n\nConséquence immédiate"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 405,
+  "where": "'On définit une application'",
+  "scan": "begins a new, indented paragraph after the display f_*(λ_{-1}(F)) = 1 (both scans)",
+  "tex": "'\\]' followed directly by 'On définit une application' (the paragraph runs on)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nOn définit une application",
+   "new": "\\]\n\nOn définit une application"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 405,
+  "where": "end of page (folio-406 marker)",
+  "scan": "p. 405 ends 'De la relation E = F + ξ, on déduit donc :'; p. 406 begins with the display 'f̄ (λ_t(F)) = f̄_*(λ_t(E)λ_t(-ξ)) = λ_t(E)f̄_*(λ_t(-ξ)) ;', then 'Or f̄(λ_t(-ξ)) = ... = σ_{-t}(E) d'après (4.2.3). Utilisant la relation (1.12.1)' (both scans; crops_401_405/m406_top.png, w406_top.png)",
+  "tex": "page_405.tex ends with that display and the line 'Or ... d'après (4.2.3).', above the folio-406 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 406 really begins at the display's '\\[' after 'on déduit donc :' (diplomatic line 10209, current 10215). Exact edit, both layers: move the marker line '%%%%%%%%%%  scan idx 419  |  folio 406  %%%%%%%%%%' (diplomatic line 10215, current 10221) up to stand directly after the line 'De la relation $E=F+\\xi$, on déduit donc :' (diplomatic 10208, current 10214); simulated: crops_401_405/sim_markers.py. The five TeX lines that change page match the print of p. 406 except the three misprints of the next entries, which the diplomatic layer keeps."
+ },
+ {
+  "page": 405,
+  "where": "printed on p. 406 (above the folio-406 marker): first display, 'f̄ (λ_t(F)) = f̄_*(λ_t(E)λ_t(-ξ)) = ...'",
+  "scan": "the first f̄ has no lower star, a blank where it would stand; the other members and 'f̄_*(λ_t(F)) = 1' below have it (both scans; crops_401_405/m406_top.png, w406_disp.png)",
+  "tex": "\\bar f(\\lambda_t(F))= (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\bar f_*(\\lambda_t(F))",
+  "note": "The map is f̄_*; the current layer already reads \\bar f_*."
+ },
+ {
+  "page": 405,
+  "where": "printed on p. 406 (above the folio-406 marker): 'Or f̄(λ_t(-ξ)) = Σ (-1)^i f_*(ξ^i)t^i'",
+  "scan": "f̄ without the lower star (both scans; crops_401_405/m406_top.png, w406_disp.png)",
+  "tex": "Or $\\bar f(\\lambda_t(-\\xi))= (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\bar f_*(\\lambda_t(-\\xi))",
+  "note": "As the entry above; the current layer already reads \\bar f_*."
+ },
+ {
+  "page": 405,
+  "where": "printed on p. 406 (above the folio-406 marker): '= σ_{-t}(E) d'après (4.2.3).'",
+  "scan": "'(4.2.3)' (both scans; crops_401_405/m406_top.png, w406_disp.png)",
+  "tex": "d'après (4.2.3) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(5.2.3)",
+  "note": "f_*(ξ^i) = σ_i is (5.2.3); Exposé VI has no (4.2.3) (Lemme 4.2 has no numbered formula). The current layer already reads (5.2.3)."
+ }
+]

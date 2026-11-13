@@ -1,0 +1,22 @@
+% from main.tex
+%%%%%%%%%%  scan idx 262  |  folio 249  %%%%%%%%%%
+plat \((S=\Spec(A))\). Si l'on pose \(A'=D_A(P)\) (EGA \(0_{\mathrm{IV}}\) 18.2.3), \(S'=\Spec(A')\), tout revient à prouver que \(Rf_*(E)\) commute au changement de base plat \(S'\to S\), i.e. que la flèche canonique
+\[
+ q^*Rf_*(E)\longrightarrow Rf'_*p^*(E)
+\]
+est un isomorphisme (on a posé \(f_{(S')}=f'\) et noté \(p\) (resp. \(q\)) la projection canonique \(X_{(S')}\longrightarrow X\) (resp. \(Y_{(S')}\longrightarrow Y\))). Mais cela résulte de (EGA III 1.4.15 et IV 1.7.21). Ceci achève la démonstration de (3.7).
+
+\textbf{Corollaire 3.7.1.} Soient \(S\) un schéma, \(f:X\to Y\) un \(S\)-morphisme quasi-compact et quasi-séparé de schémas quasi-compacts sur \(S\), \(E\in\Ob D^b(X)_{\qcoh}\). Si \(E\) est localement d'amplitude plate finie rel. à \(S\), il en est de même de \(Rf_*(E)\). Plus précisément, si \(S\) est quasi-compact, et si \(N\) est un entier tel que \(R^if_*(F)=0\) pour tout \(i>N\) et tout \(\mathcal O_X\)-Module quasi-cohérent \(F\) (EGA III 1.4.12 et IV 1.7.21), alors on a
+\[
+ \tamp_S(E)\subset[a,b]
+ \Longrightarrow
+ \tamp_S(Rf_*(E))
+ \subset[a,b+N].
+\]
+
+\emph{Preuve.} On peut évidemment se borner à prouver la dernière assertion. D'après (3.3 (i)\(\Longleftrightarrow\)(iv)), et compte tenu de ce que \(Rf_*\) «~commute à la restriction à un ouvert de \(S\)~», il s'agit de prouver que l'hypothèse \(\tamp_S(E)\subset[a,b]\) implique
+\[
+ H^i(Rf_*(E)\otimes_S^{\mathbf L}M)=0
+\]
+pour tout \(i\notin[a,b+N]\) et tout \(\mathcal O_S\)-Module quasi-cohérent \(M\). Or l'hypothèse précédente signifie que \(H^i(E\otimes_S^{\mathbf L}M)=0\) pour tout \(i\notin[a,b]\) et tout \(\mathcal O_S\)-Module quasi-cohérent \(M\), et l'on gagne grâce à (3.7).
+

@@ -1,0 +1,18 @@
+% from main.tex
+%%%%%%%%%%  scan idx 522  |  folio 509  %%%%%%%%%%
+On
+poursuit la démonstration par récurrence sur le rang $r$ de $P$. Supposons le résultat prouvé pour les torseurs sous des tores déployés de rang $<r$. On écrit alors $M=M_1\oplus M_2$, avec $M_1\simeq\mathbb Z^{r-1}$ et $M_2\simeq\mathbb Z$; on pose $A'=\bigoplus_{m\in M_1}A_m$ et $A''=\bigoplus_{m\in M_2}A_m$, de sorte que $A=A'\otimes_{\mathcal O_S}A''$. Soit $P_1=\Spec(A')$; alors $P_1$ est un torseur sous $D_S(M_1)$ et $P$ est un torseur sur $P_1$, de groupe $\mathbb G_{m,P_1}$ et d'algèbre l'image inverse de $A''$ sur $P_1$. D'après ce qui précède, $K_\bullet(P)$ est le quotient de $K_\bullet(P_1)$ par le sous-groupe engendré par les $(\eta(m_2)-1)K_\bullet(P_1)$ pour $m_2\in M_2$. Par hypothèse de récurrence, $K_\bullet(P_1)$ est le quotient de $K_\bullet(S)$ par le sous-groupe engendré par les $(\eta(m_1)-1)K_\bullet(S)$ pour $m_1\in M_1$. Compte tenu de la relation
+\[
+\eta(m_1+m_2)-1=\eta(m_1)\eta(m_2)-1
+=\eta(m_1)(\eta(m_2)-1)+\eta(m_1)-1,
+\]
+$K_\bullet(P)$ est donc le quotient de $K_\bullet(S)$ par le sous-groupe engendré par les $(\eta(m)-1)K_\bullet(S)$ pour $m\in M$, ou encore pour $m$ parcourant un système de générateurs de $M$.
+
+\textbf{Corollaire 2.3.} Avec les notations et les hypothèses de 2.1, supposons que $S$ soit régulier; alors on a un isomorphisme canonique :
+\[
+K^\circ(P)\simeq K^\circ(S)/\bigl((\eta(m)-1)_{m\in M}\bigr),
+\]
+où $((\eta(m)-1)_{m\in M})$ est l'idéal de $K^\circ(S)$ engendré par les $\eta(m)-1$ pour $m$ parcourant un système de générateurs de $M$.
+
+Si $S$ est régulier, l'homomorphisme canonique $K^\circ(S)\to K_\bullet(S)$ est un isomorphisme (IV 2.5). De même, $P$ étant alors régulier, $K^\circ(P)\to K_\bullet(P)$ est un isomorphisme. Le corollaire résulte donc immédiatement de 2.2.
+

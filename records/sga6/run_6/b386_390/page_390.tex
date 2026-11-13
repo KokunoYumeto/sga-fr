@@ -1,0 +1,24 @@
+% from main.tex
+%%%%%%%%%%  scan idx 403  |  folio 390  %%%%%%%%%%
+récurrence, en notant que si $0\leq s\leq r$, et si $x_j=0$ pour $s<j\leq r$, on aura :
+\[
+  \sum_{i=0}^{s}f^*(x_i)\xi^i=0,
+\]
+d'où :
+\[
+  \sum_{i=0}^{s}f^*(x_i)\xi^{i+r-s}=0,
+\]
+d'où $x_s=0$ d'après ce qui précède.
+
+\section*{3. Conséquences du théorème de structure pour le \(K^{\bullet}\) d'un fibré projectif}
+
+\textbf{Proposition 3.1.} Soient \(S\) un schéma quasi-compact, \(E_1,\ldots,E_n\) des \(\mathcal O_S\)-Modules localement libres de type fini, \(D(E_i)\) le schéma des drapeaux de \(E_i\), \(X=D(E_1)\times_S\cdots\times_S D(E_n)\).
+Alors l'homomorphisme canonique~:
+\[
+  K^{\bullet}(S)\longrightarrow K^{\bullet}(X)
+\]
+est injectif (\(K^{\bullet}\) étant défini, soit à partir des \(\mathcal O_S\)-Modules localement libres de type fini, soit à partir des complexes parfaits).
+
+On vérifie immédiatement en utilisant la propriété universelle des schémas de drapeaux que \(X\) peut être construit comme suit : on considère la suite de \(S\)-schémas \(X_1,\ldots,X_n\), définis par récurrence en prenant pour \(X_k\) le schéma de drapeaux de l'image inverse de \(E_k\) sur \(X_{k-1}\); alors \(X=X_n\). On voit alors tout de suite que pour démontrer la proposition, il suffit de la montrer dans le cas où \(n=1\), le cas général s'en déduisant par récurrence. On peut donc supposer que \(X\) est le schéma des drapeaux d'un \(\mathcal O_S\)-Module localement libre de type fini \(E\).
+
+On sait que \(X\) peut alors être construit comme suit : on pose \(E=F_0\), \(S=X_0\), et on définit par récurrence des schémas \(X_1,\ldots,X_n\) et,

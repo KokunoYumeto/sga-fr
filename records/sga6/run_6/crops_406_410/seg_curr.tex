@@ -1,0 +1,133 @@
+%%%%%%%%%%  scan idx 419  |  folio 406  %%%%%%%%%%
+\[
+  \bar f_*(\lambda_t(F))=
+  \bar f_*(\lambda_t(E)\lambda_t(-\xi))=
+  \lambda_t(E)\bar f_*(\lambda_t(-\xi));
+\]
+Or $\bar f_*(\lambda_t(-\xi))=\sum_{i\ge0}(-1)^if_*(\xi^i)t^i=\sigma_{-t}(E)$ d'après (5.2.3).
+Utilisant la relation (1.12.1), on obtient finalement :
+\[
+  \bar f_*(\lambda_t(F))=1;
+\]
+d'où les relations cherchées.
+
+\textbf{Proposition 5.10.} Avec les notations et les hypothèses de 5.1, soit $z\in K^{\bullet}(X)$. Pour que $z(1-\xi)=0$, il faut et il suffit qu'il existe $y\in K^{\bullet}(S)$, tel que :
+\[
+  \text{i)}\quad z=y.\lambda_{-1}(F);
+  \qquad
+  \text{ii)}\quad y.\lambda_{-1}(E)=0.
+\]
+De $E=F+\xi$, on déduit $\lambda_{-1}(E)=\lambda_{-1}(F).\lambda_{-1}(\xi)=\lambda_{-1}(F).(1-\xi)$. La condition est donc suffisante.
+
+Soit $z$ tel que $z(1-\xi)=0$, soit $zx'=0$. D'après la remarque 1.13, on peut, de façon unique, trouver des $a_i\in K^{\bullet}(S)$ tels que :
+\[
+  z=\sum_{i=0}^{r}a_i{x'}^i .
+\]
+Par ailleurs, les ${x'}^i$ vérifient une équation de dépendance :
+\[
+  \sum_{i=0}^{r}c_i{x'}^i+{x'}^{r+1}=0,
+  \qquad \text{avec } c_i=(-1)^{r+i+1}\gamma^{r+1-i}(E-r-1).
+\]
+Comme $zx'=0$, on obtient :
+\[
+  a_r{x'}^{r+1}=-\sum_{i=1}^{r}a_{i-1}{x'}^i
+  =-\sum_{i=0}^{r}a_rc_i{x'}^i .
+\]
+Utilisant l'indépendance de $1,\ldots,{x'}^r$, on trouve :
+\[
+  a_rc_0=0;
+  \qquad \text{pour } 0\le i<r,
+  \quad a_i=a_rc_{i+1}.
+\]
+Donc :
+\[
+  z=a_r.\left(\sum_{i=0}^{r-1}c_{i+1}{x'}^i+{x'}^r\right).
+\]
+Or :
+\[
+%%%%%%%%%%  scan idx 420  |  folio 407  %%%%%%%%%%
+\begin{aligned}
+\sum_{i=0}^{r-1}c_{i+1}{x'}^i+{x'}^r
+&=(-1)^r.\left(\sum_{i=0}^{r-1}\gamma^{r-i}(E-r-1).(-1)^i{x'}^i+(-1)^r{x'}^r\right)\\
+&=(-1)^r.\left(\sum_{i=0}^{r}\gamma^{r-i}(E-r-1)\gamma^i(-x')\right)\\
+&=(-1)^r\gamma^r(E-r-1-x')\\
+&=(-1)^r\gamma^r(F-r)\\
+&=(-1)^r\lambda^r(F-1)\\
+&=\lambda_{-1}(F).
+\end{aligned}
+\]
+Si on pose $a_r=y$, on obtient donc :
+\[
+  z=y.\lambda_{-1}(F).
+\]
+Par ailleurs, $y.c_0=0$; or $c_0=(-1)^{r+1}\gamma^{r+1}(E-r-1)=\lambda_{-1}(E)$; donc $y.\lambda_{-1}(E)=0$.
+
+\textbf{Proposition 5.11.} Avec les notations et les hypothèses de 5.1, soit $z\in \Gr K^{\bullet}(X)$. Pour que $z.\bar x'=0$, il faut et il suffit qu'il existe $y\in \Gr K^{\bullet}(S)$ tel que :
+\[
+  \text{i)}\quad z=y.c^r(F);
+  \qquad
+  \text{ii)}\quad y.c^{r+1}(E)=0.
+\]
+La démonstration est identique à celle de 5.10, en se plaçant dans les gradués, et en utilisant 5.6.
+
+
+\section*{6. Etude de la filtration de \texorpdfstring{$K^{\bullet}(X)$}{K^{\bullet}(X)}, $X$ ayant un faisceau ample}
+
+Dans ce paragraphe, $X$ est un schéma ayant un faisceau ample $L$. On rappelle que dans ce cas les $K^{\bullet}$ définis en termes de faisceaux localement libres de type fini, ou de complexes parfaits, sont égaux (IV, 2.9). On note $\varepsilon$ l'%
+%%%%%%%%%%  scan idx 421  |  folio 408  %%%%%%%%%%
+homomorphisme d'augmentation : $K^{\bullet}(X)\longrightarrow H^0(X,\mathbb Z)$.
+
+\textbf{Proposition 6.1.} Soit $X$ un schéma quasi-compact ayant un faisceau ample $L$. Alors $\Fil^1K^{\bullet}(X)$ est un nilidéal.
+
+Comme $\Fil^1K^{\bullet}(X)$ est engendré par les éléments du type $E-\varepsilon(E)$, où $E$ est la classe d'un $\mathcal O_X$-Module localement libre de type fini $E$, et $\varepsilon:K^{\bullet}(X)\to H^0(X,\mathbb Z)$ l'augmentation de $K^{\bullet}(X)$, il suffit de montrer qu'un tel élément est nilpotent. La quasi-compacité de $X$, et la commutation du $K^{\bullet}$ aux sommes directes finies permettent de se ramener au cas où $E$ est de rang constant. Enfin, en passant au fibré de drapeaux de $E$, ce qui donne une injection sur les $K^{\bullet}$ (3.1), et conserve l'hypothèse d'existence d'un faisceau ample, on peut supposer $E$ inversible.
+
+Soit $E^*$ le dual de $E$. Pour $n$ assez grand, $E^*(n)=E^*\otimes_{\mathcal O_X}L^{\otimes n}$ est engendré par ses sections globales; on peut donc trouver un entier $m$, et un homomorphisme surjectif : $(\mathcal O_X)^m\longrightarrow E^*(n)$, donc (tensorisant par $E(-n)$) un homomorphisme surjectif : $(E(-n))^m\longrightarrow\mathcal O_X$. Le noyau de cet homomorphisme est localement libre de rang $m-1$. On obtient donc, en notant $L$ la classe de $L$:
+\[
+  \lambda^m(mEL^{-n}-1)=0 .
+\]
+Or $\lambda^m(mEL^{-n}-1)=(-1)^m\lambda_{-1}(mEL^{-n})=(-1)^m\lambda_{-1}(EL^{-n})^m=(-1)^m(1-EL^{-n})^m$. Par conséquent, pour tout faisceau inversible $E$, l'élément $1-EL^{-n}$ est nilpotent pour $n$ assez grand, ou encore son produit $L^n-E$ par $L^n$ est nilpotent.
+
+On peut alors écrire:
+\[
+  E-1=(L^n-1)-(L^n-E)
+\]
+et d'après ce qui précède, $L^n-E$ et $L^n-1$ sont nilpotents si on choisit $n$ assez grand. Donc $E-1$ est nilpotent.
+
+
+%%%%%%%%%%  scan idx 422  |  folio 409  %%%%%%%%%%
+\textbf{Corollaire 6.2.} Avec les hypothèses de 6.1, soit $R\subset K^{\bullet}(X)$ un sous-$\lambda$-anneau engendré par les classes d'un nombre fini de faisceaux. Alors la filtration de $\lambda$-anneau de $R$ est discrète, et $R\cap\Fil^1K^{\bullet}(X)$ est nilpotent. De plus, $R$ est un module de type fini sur $R\cap H^0(X,\mathbb Z)$ (V 3.9.1).
+
+Comme $X$ est quasi-compact, on peut trouver un recouvrement fini de $X$ par des ensembles ouverts disjoints, tel que sur chacun des ouverts de ce recouvrement les faisceaux dont les classes engendrent $R$ soient tous de rang constant. L'argument standard permet alors de se ramener au cas où ces faisceaux sont de rang constant sur $X$; $R$ est alors augmenté vers $\mathbb Z$.
+
+Soient $E_i$, $i=1,\ldots,k$, les faisceaux dont les classes engendrent $R$, $E_i$ leurs classes, $x_i=E_i-\varepsilon(E_i)$. On peut écrire $R$ comme quotient du $\lambda$-anneau engendré par les $x_i$, soumis aux relations $\gamma^j(x_i)=0$ pour $j>r_i=\varepsilon(E_i)$ c'est-à-dire $\mathbb Z[x_i,\gamma^j(x_i)]_{1\le i\le k,\,2\le j\le r_i}$ ; par suite, $R$ est noethérien. Mais d'après la proposition 6.1, les $x_i$, $\gamma^j(x_i)$ sont nilpotents. Donc l'idéal d'augmentation de $R$ est nilpotent; par ailleurs, il n'est autre que $R\cap\Fil^1K^{\bullet}(X)$.
+
+Tout élément de $\Fil^n R$ s'écrit comme polynome sans composantes de poids $<n$ par rapport aux $x_i$, $\gamma^j(x_i)$. Soit $m$ le plus grand entier tel qu'il existe $i$ tel que $\gamma^{m-1}(x_i)\ne0$; soit $p$ un entier tel que les puissances $p$-ièmes des $x_i$, $\gamma^j(x_i)$ soient toutes nulles. Pour $n>kp(1+\cdots+m)$, on voit tout de suite que $\Fil^nR=0$; la filtration de $R$ est donc discrète.
+
+La filtration de $R$ étant discrète, il n'y a qu'un nombre fini de monômes non nuls par rapport aux $x_i$, $\gamma^j(x_i)$. Ces monômes forment un système de générateurs de $R$ comme $\mathbb Z$-module, ce qui achève la démonstration.
+
+%%%%%%%%%%  scan idx 423  |  folio 410  %%%%%%%%%%
+\textbf{Corollaire 6.3.} Avec les hypothèses de 6.1, soit $A$ un anneau commutatif. Pour qu'un élément $y$ de $K^{\bullet}(X)\otimes_{\mathbb Z}A=K^{\bullet}(X)_A$ soit inversible, il faut et il suffit que $z=(\varepsilon\otimes\Id_A)(y)$ le soit. En particulier, si $E$ est un faisceau localement libre de type fini sur $X$, partout $\ne0$, alors sa classe dans $K^{\bullet}(X)_{\mathbb Q}$ est inversible.
+
+L'idéal d'augmentation de $K^{\bullet}(X)\otimes_{\mathbb Z}A$ est $\Fil^1K^{\bullet}(X)\otimes_{\mathbb Z}A$, et est donc un nilidéal, d'après 6.1. Pour qu'un élément de $K^{\bullet}(X)\otimes_{\mathbb Z}A$ soit inversible il est donc nécessaire et suffisant que son augmentation le soit.
+
+\textbf{Corollaire 6.4.} Soient $X$ un schéma quasi-compact, ayant un faisceau ample, et $f:X'\to X$ un morphisme propre et parfait. On suppose de plus vérifiée l'une des deux conditions suivantes:
+\[
+  \text{i) } f\text{ projectif},\qquad
+  \text{ii) } X\text{ noethérien},
+\]
+de façon que le «théorème de finitude» soit vrai (III 2.2). On se donne un anneau $A$, et on considère l'homomorphisme «image directe» (IV 2.11):
+\[
+  f_*:K^{\bullet}(X')\otimes_{\mathbb Z}A\longrightarrow K^{\bullet}(X)\otimes_{\mathbb Z}A.
+\]
+On suppose enfin qu'il existe un élément $x'\in K^{\bullet}(X')\otimes_{\mathbb Z}A$ tel que $\varepsilon(f_*(x'))\in H^0(X,A)$ soit inversible. Alors l'homomorphisme :
+\[
+  f^*:K^{\bullet}(X)\otimes_{\mathbb Z}A\longrightarrow K^{\bullet}(X')\otimes_{\mathbb Z}A
+\]
+est injectif.
+
+On écrit la formule de projection:
+\[
+  f_*(f^*(x)x')=x.f_*(x').
+\]
+Or $f_*(x')$ est d'augmentation inversible, donc est inversible (6.3). Par suite, l'homomorphisme composé :
+%%%%%%%%%%  scan idx 424  |  folio 411  %%%%%%%%%%

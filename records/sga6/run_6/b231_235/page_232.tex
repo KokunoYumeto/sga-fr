@@ -1,0 +1,22 @@
+% from main.tex
+%%%%%%%%%%  scan idx 245  |  folio 232  %%%%%%%%%%
+canonique
+\[
+  f_{1*}(E_1)\otimes_S^{\mathbf L}f_{2*}(E_2)
+  \longrightarrow
+  f_*(E_1\otimes_S^{\mathbf L}E_2).
+\]
+Montrons qu'elle est un isomorphisme. La question étant locale, on peut supposer \(S,X_i,Y_i\) affines d'anneaux respectifs \(C,A_i,B_i\). Par dévissage, on se ramène à \(E_i=\mathcal O_{X_i}\). On doit alors vérifier que
+\[
+  A_1\otimes_{B_1}^{\mathbf L}B\otimes_{B_2}^{\mathbf L}A_2
+  \longrightarrow A
+\]
+est un isomorphisme (on a posé \(A=A_1\otimes_C A_2\), \(B=B_1\otimes_C B_2\)). Mais, compte tenu des hypothèses de tor-indépendance, cela résulte aussitôt de l'associativité du produit tensoriel.
+
+\textbf{Proposition 1.8.} Soient \(S\) un schéma, et, pour \(i=1,2\), \(f_i:X_i\longrightarrow Y_i\) un \(S\)-morphisme localement de type fini. On suppose \(X_1\) et \(X_2\), ainsi que \(Y_1\) et \(Y_2\), tor-indépendants sur \(S\). Soient \([a_i,b_i]\) un intervalle de \(\mathbb Z\), et \(E_i\in\Ob D^{-}(X_i)_{\mathrm{qcoh}}\) un complexe \(a_i\)-pseudo-cohérent rel. à \(f_i\) et acyclique en degré \(>b_i\). Alors \(E_1\otimes_S^{\mathbf L}E_2\) est \(a\)-pseudo-cohérent rel. à \(f\) et acyclique en degré \(>b\), avec \(f=f_1\times_Sf_2\), \(a=\operatorname{Sup}(a_1+b_2,a_2+b_1)\), \(b=b_1+b_2\).
+
+\emph{Preuve.} La question étant locale sur \(X_1\times_SX_2\), on peut supposer que \(f_i\) se factorise en
+\[
+  X_i\xrightarrow{f'_i}Y'_i\xrightarrow{p_i}Y_i,
+\]
+où \(f'_i\) est une immersion fermée et \(p_i\) un morphisme lisse. Posant \(f'=f'_1\times_Sf'_2\), on doit montrer que \(f'_*(E_1\otimes_S^{\mathbf L}E_2)\) est \(a\)-pseudo-cohérent et acyclique en degré \(>b\). D'après (1.5.1), \(Y'_1\) et \(Y'_2\) sont tor-indépendants sur \(S\) : quitte à changer les notations, on peut donc supposer que \(f_i=f'_i\), autrement dit que \(f_i\) est une immersion fermée. Par hypothèse, \(f_{i*}(E_i)\) est \(a_i\)-pseudo-cohérent et acyclique en degré \(>b_i\), donc (I 2.16) \(f_{1*}(E_1)\otimes_S^{\mathbf L}f_{2*}(E_2)\) est \(a\)-pseudo-cohérent et acyclique en degré \(>b\). On conclut

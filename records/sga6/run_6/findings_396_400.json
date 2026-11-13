@@ -1,0 +1,287 @@
+[
+ {
+  "page": 396,
+  "where": "Lemme 4.3 ii), end of the statement at the top of the page: '(c_i et c_i^{(j)} étant effectués du poids i)'",
+  "scan": "'étant effectués du poids i' (both scans)",
+  "tex": "'étant effectués du poids \\(i\\)' (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "affectés",
+  "note": "Wrong word for 'affectés' (the c_i and c_i^{(j)} are given the weight i), as Exposé V writes '\\(\\gamma^k X\\) étant affecté du poids \\(k\\)' (main.tex line 8205). The diplomatic layer is right; the current layer also still reads 'effectués' (current line 9955), so the corrected edition needs the change."
+ },
+ {
+  "page": 396,
+  "where": "Corollaire 4.4, display 'ξ_1^{α_1} ... ξ_{n-1}^{α_{n-1}},  0 ≤ α_i ≤ n-i ,'",
+  "scan": "the three dots are typed on the baseline (both scans; crops_396_400/c396_xi.png, w396_xi.png)",
+  "tex": "\\cdots (dots at mid-height)",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\xi_1^{\\alpha_1}\\cdots\\xi_{n-1}",
+   "new": "\\xi_1^{\\alpha_1}\\ldots\\xi_{n-1}"
+  },
+  "note": "Same kind of fix as pp. 389-390 (findings_386_390: \\cdots -> \\ldots for typed baseline dots)."
+ },
+ {
+  "page": 396,
+  "where": "heading 4.5",
+  "scan": "'4.5.' with a full stop, run into the text",
+  "tex": "\\subsection*{4.5} (no full stop)",
+  "kind": "punctuation",
+  "confidence": "low",
+  "fix": {
+   "old": "\\subsection*{4.5}",
+   "new": "\\subsection*{4.5.}"
+  },
+  "note": "Only the stop is at issue (the new paragraph and the bold number are covered by the global rule and the pending bold-number decision). §1 writes \\subsection*{1.2.} with the stop (main.tex line 9165); \\subsection*{4.1}, {4.9}, {5.1}, {5.2} lack it. Drop if the stops are settled with the bold-number decision."
+ },
+ {
+  "page": 396,
+  "where": "letters of sheaves and Modules on pp. 396-400",
+  "scan": "underlined in the print: p. 396 E (4 times: 'E un O_S-Module', D_π(E), f^*(E), 'la classe de E.'), L_i (twice), L_o, L_k, L_{i-1}, F_i, F_j ('la classe de F_j', Λ^i(F_j)); p. 397 E (Corollaire 4.7 twice, g^*(E), and the E of every P(E), D(E)), F_1,...,F_n (Corollaire 4.7), F (the exact sequence, every D(F)); p. 398 F_j (3 times) and the E of every D(E), D_π(E); p. 399 E ('l'image inverse de E') and the E of D(E) (twice); p. 400 F_1, F_2 ('Soient F_1, F_2 les faisceaux canoniques'). Plain in the print: the classes F_j ('On note F_j'), E ('où E est'), F_1,...,F_k, F_i, F'_i, the F_1, F_2 of 'leur classe', the E, F_j, F_1, F_2 inside λ_t, λ^i, γ_t, γ^i, and S, X, A, B, C, f, g, h (both scans)",
+  "tex": "all plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé VI transcription, reported for pp. 366-390 (findings_381_385, findings_386_390): not itemized. On these pages the underline is what tells a sheaf from its class: 'On note \\(F_j\\) la classe de \\(F_j\\)' and 'où \\(E\\) est la classe de \\(E\\)' (p. 396), '\\(F_1,F_2\\) les faisceaux canoniques ... et \\(F_1,F_2\\) leur classe' (p. 400). Three examples, in the form to use if the diplomatic layer reproduces it: p. 396 'la classe de \\(F_j\\), et' -> 'la classe de \\(\\underline{F}_j\\), et'; p. 396 'la classe de \\(E\\). Enfin' -> 'la classe de \\(\\underline{E}\\). Enfin'; p. 400 'Soient \\(F_1,F_2\\) les faisceaux' -> 'Soient \\(\\underline{F}_1,\\underline{F}_2\\) les faisceaux'. The underlined structure sheaf O stays \\mathcal O (pending volume decision)."
+ },
+ {
+  "page": 396,
+  "where": "flag bundles D(E), D(F), D_π(E) (pp. 396-399) and grassmannians G_S^{n,r}, G_S^{n,r+1}, G_S^{n,∞} (pp. 399-400): 28 places",
+  "scan": "D and G doubly underlined in every place (both scans), the print's mark for a bold letter, as for the P of P(E) and the S of Sym",
+  "tex": "plain D (p. 396: 1, p. 397: 4, p. 398: 7, p. 399: 2) and plain G (p. 399: 5, p. 400: 9)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the § 4 transcription, reported once (the three D of Proposition 3.1, p. 390, were itemized and are now \\mathbf D, main.tex line 9843). One scripted pass on folios 396-400, both layers (diplomatic lines 9947-10058, current 9953-10064): 'D(' and 'D_\\pi(' not preceded by a letter or a backslash -> '\\mathbf D(' and '\\mathbf D_\\pi(' (14), 'G_S^{' -> '\\mathbf G_S^{' (14, including the index of \\mathcal O_{G_S^{n,r}}); counted on the page files: 396 D 1; 397 D 4; 398 D 7; 399 D 2, G 5; 400 G 9. Three examples: p. 396 '\\(X=D_\\pi(E)\\)' -> '\\(X=\\mathbf D_\\pi(E)\\)'; p. 397 'D(E)=D(F) \\arrow[r,\"h\"]' -> '\\mathbf D(E)=\\mathbf D(F) \\arrow[r,\"h\"]'; p. 400 'sera noté \\(G_S^{n,\\infty}\\)' -> 'sera noté \\(\\mathbf G_S^{n,\\infty}\\)'. Folios 392, 394 (D_\\pi(E), D(E), G_{r,n}(E) in 4.1-4.2) and 401 (G_S) are for those batches. No other fix in this file contains a D( or a G_S, so the pass can run before or after them."
+ },
+ {
+  "page": 396,
+  "where": "statements on pp. 396-400: end of Lemme 4.3 ii), Corollaire 4.4, Théorème 4.6 (p. 396), Corollaire 4.7 (p. 397), Corollaire 4.8 (p. 399), Proposition 4.10 (p. 400)",
+  "scan": "underlined word groups (both scans): Lemme 4.3 ii) 'et' (between c_i and c_i^{(j)}), 'étant effectués du poids', 'et ces', 'relations engendrent / l'idéal des relations entre les'; Corollaire 4.4 'Les éléments de', 'de la forme', 'forment une base de', 'considéré comme module sur'; Théorème 4.6 'Avec les hypothèses et les notations de', 'la', 'algè-/bre', 'est engendrée par les', 'l'idéal des relations entre les', 'est engendré par les relations déduites de'; Corollaire 4.7 'Soient', 'un schéma quasi', 'compact' (the hyphen left out), 'un', '-Module locale-/ment de rang', 'le fibré en drapeaux de', 'les classes des / faisceaux inversibles', 'notation de', 'Alors', 'est la', 'algèbre engendrée par les', 'soumis aux relations'; Corollaire 4.8 'Avec les hypothèses et les notations de', 'posons', 'alors la', 'algèbre', 'est engendrée par les', 'l'idéal des / relations entre les', 'est engendré par les relations déduites de'; Proposition 4.10 'Soit', 'un schéma quasi', 'compact' (the hyphen left out), 'Alors', 'avec les notations / de', 'on a un isomorphisme'. Plain: the letters and formulas (c_i, n, C, A, S, X, K'(S)-, K'(X), λ_i^{(j)}, ξ_i, c_i^{(j)}), the numbers 4.5, 3.5), 4.9, the commas, ';', ':', '.:' and the displays; E, O_S, F_1,...,F_n carry their own underlines; the labels underline only 'Corollaire', 'Théorème', 'Proposition'",
+  "tex": "the statements in roman (no \\underline, no \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé VI follows the Exposé II pattern of GLOBAL_ISSUES 82 (as on pp. 367-390): not itemized; the word groups are listed for the scripted pass. No emphasized defined terms and no category L on pp. 396-400."
+ },
+ {
+  "page": 397,
+  "where": "Corollaire 4.7: 'E un O_S-Module locale-ment de rang n'",
+  "scan": "'localement de rang n' (both scans): 'libre' is left out",
+  "tex": "'-Module localement de rang \\(n\\)' (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "localement libre de rang",
+  "note": "The corollary is the case p_i = 1 of 4.5, whose E is 'localement libre de rang n'. The diplomatic layer is right; the current layer already reads 'localement libre de rang' (current line 9983)."
+ },
+ {
+  "page": 397,
+  "where": "P(E) on p. 397 (9 places: text, the index of O_{P(E)}(1) in the exact sequence, the diagram)",
+  "scan": "P doubly underlined in every place (both scans), the same mark as the D and G of the page-396 entry and the S of Sym",
+  "tex": "\\mathbb P (double-struck)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": null,
+  "note": "Sections 1-2 of the exposé write the same printed P as \\mathbf P (Théorème 1.1, Théorème 2.1, Proposition 2.6: main.tex lines 9143, 9567, 9727); sections 3-4 switch to \\mathbb P (folios 391, 394 once each, 397 nine times). One decision for the exposé; if bold, '\\mathbb P' -> '\\mathbf P' on p. 397 (9 places). Three examples: 'on considère alors \\(\\mathbb P(E)\\)' -> 'on considère alors \\(\\mathbf P(E)\\)'; '\\mathcal O_{\\mathbb P(E)}(1)' -> '\\mathcal O_{\\mathbf P(E)}(1)'; '& \\mathbb P(E) \\arrow[d,\"g\"]' -> '& \\mathbf P(E) \\arrow[d,\"g\"]'. Low: a double-struck P may be kept for the print's doubly underlined P."
+ },
+ {
+  "page": 397,
+  "where": "diagram after 'Le diagramme :', bottom vertex 'S,'",
+  "scan": "'S,' with a comma (both scans; crops_396_400/c397_diag.png)",
+  "tex": "'& S' without the comma",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "& S\n\\end{tikzcd}",
+   "new": "& S,\n\\end{tikzcd}"
+  },
+  "note": "The sentence goes on after the diagram ('montre que ...'); the TeX drops the printed comma. Labels h, f, g and the arrows agree with the print."
+ },
+ {
+  "page": 397,
+  "where": "display 'ξ_2^{α_2}...ξ_{n-1}^{α_{n-1}},  avec 0 ≤ α_i ≤ n-i ;'",
+  "scan": "the three dots are typed on the baseline (both scans; crops_396_400/c397_xi2.png)",
+  "tex": "\\cdots",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\xi_2^{\\alpha_2}\\cdots",
+   "new": "\\xi_2^{\\alpha_2}\\ldots"
+  },
+  "note": "As the display of Corollaire 4.4 (p. 396)."
+ },
+ {
+  "page": 397,
+  "where": "display at the top of printed p. 398 'ξ_1^{α_1}...ξ_{n-1}^{α_{n-1}},  avec 0 ≤ α_i ≤ n-i.' (its first three TeX lines stand in page_397.tex: see the marker entry of p. 398)",
+  "scan": "the three dots are typed on the baseline (both scans; crops_396_400/c398_xi1.png)",
+  "tex": "\\cdots",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\xi_1^{\\alpha_1}\\cdots",
+   "new": "\\xi_1^{\\alpha_1}\\ldots"
+  },
+  "note": "Printed on p. 398. The marker edit of p. 398 contains this \\cdots: move the marker first (or use move_marker.py, which does not depend on it); after the move the old string is found under the folio-398 marker, still once."
+ },
+ {
+  "page": 397,
+  "where": "'soumis aux relations (cf. V 4.6) : i) ... ; ii) ...'",
+  "scan": "'i) λ^p(F_i) = 0 pour p > p_i ;' and 'ii) Σ_i F_i = E.' each on its own indented line (a displayed list, the i under the Σ), both scans",
+  "tex": "both relations run into the paragraph",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "(cf. V 4.6)~: i) \\(\\lambda^p(F_i)=0\\) pour \\(p>p_i\\) ; ii) \\(\\sum_i F_i=E\\).",
+   "new": "(cf. V 4.6)~:\n\\begin{enumerate}[label=\\textup{\\roman*)}]\n\\item \\(\\lambda^p(F_i)=0\\) pour \\(p>p_i\\) ;\n\\item \\(\\sum_i F_i=E\\).\n\\end{enumerate}"
+  },
+  "note": "Layout of the list only (the words and formulas agree); the environment is the one the file uses for Lemme 4.3 (main.tex line 9937). Low: drop if run-in lists are accepted."
+ },
+ {
+  "page": 398,
+  "where": "start of page (folio-398 marker)",
+  "scan": "p. 397 ends 'donc K'(X) admet pour base sur K'(S) les éléments :' and blank space; p. 398 begins with the display 'ξ_1^{α_1}...ξ_{n-1}^{α_{n-1}},  avec 0 ≤ α_i ≤ n-i.' (both scans)",
+  "tex": "the folio-398 marker stands inside that display: its first three lines ('\\[', '  \\xi_1^{\\alpha_1}\\cdots\\xi_{n-1}^{\\alpha_{n-1}},', '  \\qquad') end page_397.tex; page_398.tex begins '\\text{avec } 0\\le\\alpha_i\\le n-i.'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 398 really begins at the display's '\\['. Move the marker up three lines: python -I move_marker.py 6 398 '\\[' --before (simulated in memory: the last '\\[' before the marker is this display's, diplomatic line 9999, current 10005). Exact edit in main.tex, both layers (diplomatic lines 9998-10002, current 10004-10008): replace 'les éléments~:\\n\\[\\n  \\xi_1^{\\alpha_1}\\cdots\\xi_{n-1}^{\\alpha_{n-1}},\\n  \\qquad\\n%%%%%%%%%%  scan idx 411  |  folio 398  %%%%%%%%%%\\n' by 'les éléments~:\\n%%%%%%%%%%  scan idx 411  |  folio 398  %%%%%%%%%%\\n\\[\\n  \\xi_1^{\\alpha_1}\\cdots\\xi_{n-1}^{\\alpha_{n-1}},\\n  \\qquad\\n' (once in each layer; crops_396_400/sim_marker398.py). Apply it before the \\cdots entry of page_397 for this display, or write \\ldots in both strings."
+ },
+ {
+  "page": 398,
+  "where": "'Si C est la K'(S)-algèbre engendrée par des générateurs ξ_i, soumis aux relations :'",
+  "scan": "a new indented paragraph after 'et les relations du corollaire sont vérifiées.' (both scans)",
+  "tex": "'... sont vérifiées. Si \\(C\\) est' in one paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "vérifiées. Si",
+   "new": "vérifiées.\n\nSi"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 399,
+  "where": "'D'après 4.6, c'est homomorphisme est surjectif.'",
+  "scan": "'c'est homomorphisme' (both scans; crops_396_400/c399_Fi.png)",
+  "tex": "'c'est homomorphisme' (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "cet homomorphisme",
+  "note": "Typing slip for 'cet' (the next sentence: 'cet homomorphisme est aussi injectif'). The diplomatic layer is right; the current layer still reads 'c'est' (current line 10025), so the corrected edition needs the change."
+ },
+ {
+  "page": 399,
+  "where": "4.9: 'la grassmanienne de type (n,r-n)'",
+  "scan": "'grassmanienne' with one n before -ienne (both scans)",
+  "tex": "'grassmanienne' (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "grassmannienne",
+  "note": "The current layer already reads 'grassmannienne' (current line 10039), as for the same word in 4.1 (folio 394, current line 9913)."
+ },
+ {
+  "page": 399,
+  "where": "'Ce n'est qu'un autre énoncé de 4.6.' after the second display of Corollaire 4.8",
+  "scan": "a new indented paragraph (both scans)",
+  "tex": "'\\]' followed directly by 'Ce n'est' (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nCe n'est",
+   "new": "\\]\n\nCe n'est"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 399,
+  "where": "heading 4.9",
+  "scan": "'4.9.' with a full stop, run into the text",
+  "tex": "\\subsection*{4.9} (no full stop)",
+  "kind": "punctuation",
+  "confidence": "low",
+  "fix": {
+   "old": "\\subsection*{4.9}",
+   "new": "\\subsection*{4.9.}"
+  },
+  "note": "As heading 4.5 (p. 396)."
+ },
+ {
+  "page": 400,
+  "where": "'Soient F_1, F_2 les faisceaux canoniques sur G_S^{n,r} (4.5)', after (4.9.1)",
+  "scan": "a new indented paragraph (both scans)",
+  "tex": "'\\end{equation}' followed directly by 'Soient' (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nSoient",
+   "new": "\\end{equation}\n\nSoient"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 400,
+  "where": "'et F_1, F_2 leur classe dans K'(G_S^{n,r})'",
+  "scan": "'leur classe' (both scans)",
+  "tex": "'leur classe' (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "leurs classes",
+  "note": "Two classes (F_1, F_2). The current layer already reads 'leurs classes' (current line 10048)."
+ },
+ {
+  "page": 400,
+  "where": "Proposition 4.10: 'on a un isomorphisme.:'",
+  "scan": "a full stop before the colon, right after the underline (both scans; crops_396_400/c400_prop.png, w400_prop.png)",
+  "tex": "'isomorphisme.~:' (the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "isomorphisme~:",
+  "note": "Stray full stop. The diplomatic layer is right; the current layer already reads 'isomorphisme~:' (current line 10050)."
+ },
+ {
+  "page": 400,
+  "where": "Proposition 4.10, display K'(G_S^{n,∞}) ⥲ K'(S)[[c_1,...,c_n]] .",
+  "scan": "a tilde over a right arrow (⥲), both scans (crops_396_400/c400_iso_z.png, w400_iso.png)",
+  "tex": "\\simeq",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\simeq K^{\\bullet}(S)[[",
+   "new": "\\xrightarrow{\\sim} K^{\\bullet}(S)[["
+  },
+  "note": "\\xrightarrow{\\sim} is the file's form for the printed ⥲ (as pp. 367, 381)."
+ },
+ {
+  "page": 400,
+  "where": "display 'γ_t(F_1-n).γ_t(F_2-r+n) = γ_t(r-r) = 1 ,'",
+  "scan": "the product is a typed full stop on the baseline (witness crops_396_400/w400_gdot.png; the main scan agrees)",
+  "tex": "\\cdot",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "(F_1-n)\\cdot\\gamma_t",
+   "new": "(F_1-n).\\gamma_t"
+  },
+  "note": "\\cdot raises the typed stop to mid-height (as '1.u' p. 321 and 'λ^n(x).t^n' p. 325, findings_321_325). The speck before the second '=' in the main scan is not in the witness: a defect."
+ },
+ {
+  "page": 400,
+  "where": "'Cette relation permet d'exprimer les γ^j(F_2-r+n) en fonction des c_i', after the display 'γ_t(F_2-r+n) = 1/γ_t(F_1-n) .'",
+  "scan": "a new indented paragraph (both scans)",
+  "tex": "'\\]' followed directly by 'Cette relation' (same paragraph)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nCette relation",
+   "new": "\\]\n\nCette relation"
+  },
+  "note": "Missing paragraph break."
+ }
+]

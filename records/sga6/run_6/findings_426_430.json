@@ -1,0 +1,299 @@
+[
+  {
+    "page": 426,
+    "where": "start of page (folio-426 marker)",
+    "scan": "p. 425 ends '... donc sur les ouverts'; p. 426 begins 'D^+(X_i) ; plaçons nous par exemple sur D^+(X_1).' (both scans; crops_426_430/p426_a.png, wit_426_half.png)",
+    "tex": "page_425.tex ends 'donc sur les ouverts \\(D_+(X_i)\\); plaçons-' above the folio-426 marker; page_426.tex begins 'nous par exemple sur'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 426 really begins at '\\(D_+(X_i)\\); plaçons-'. As set, the marker line also splits 'plaçons-' from 'nous' (it prints 'plaçons- nous'). Exact edit in main.tex (diplomatic lines 10691-10693, current 10697-10699), different in the two layers because it also gives the moved words the print's D^+ (formula entries below) and the print's unhyphenated 'plaçons nous' (misprint entry below). Diplomatic: replace 'donc sur les ouverts \\(D_+(X_i)\\); plaçons-\\n%%%%%%%%%%  scan idx 439  |  folio 426  %%%%%%%%%%\\nnous par' by 'donc sur les ouverts\\n%%%%%%%%%%  scan idx 439  |  folio 426  %%%%%%%%%%\\n\\(D^+(X_i)\\); plaçons nous par'. Current: the same old string by 'donc sur les ouverts\\n%%%%%%%%%%  scan idx 439  |  folio 426  %%%%%%%%%%\\n\\(D^+(X_i)\\); plaçons-nous par'. The old string occurs once in each layer and shares no text with this page's fixes."
+  },
+  {
+    "page": 426,
+    "where": "first line: 'plaçons nous' (the words stand above the folio-426 marker, in page_425.tex)",
+    "scan": "'plaçons nous' without a hyphen (both scans; crops_426_430/p426_a.png, wit_426_half.png)",
+    "tex": "'plaçons-' at the end of page_425.tex and 'nous' after the marker: hyphen added (silent correction)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "plaçons-nous",
+    "note": "The imperative takes the hyphen; the typist left it out. No page fix is possible (the hyphen stands in page_425.tex until the marker moves): the diplomatic edit of the folio-426 marker entry restores the printed 'plaçons nous', its current-layer edit writes 'plaçons-nous'. Apply with that entry, not separately."
+  },
+  {
+    "page": 426,
+    "where": "line 1: 'par exemple sur D^+(X_1)'",
+    "scan": "D^+(X_1): the + raised as an exponent (both scans; crops_426_430/p426_b.png)",
+    "tex": "\\(D_+(X_1)\\)",
+    "kind": "formula",
+    "confidence": "high",
+    "fix": {
+      "old": "exemple sur \\(D_+(X_1)\\)",
+      "new": "exemple sur \\(D^+(X_1)\\)"
+    },
+    "note": "The typescript writes D^+ all three times on this page (not EGA's D_+); the TeX writes D_+. The third, D^+(X_i) of the page's first words, is in the folio-426 marker entry's edit. Exposé VII has no other D_+."
+  },
+  {
+    "page": 426,
+    "where": "line 2: 'le module Z[T_1,...,T_d,X_2/X_1,...,X_d/X_1]⊗E, et O_P(1) par'",
+    "scan": "the module in the running text, on one line with 'le module' and ', et O_P(1) par'; the E after ⊗ plain (both scans; crops_426_430/p426_b.png)",
+    "tex": "a display \\[ \\mathbb Z[...]\\otimes E, \\]",
+    "kind": "other",
+    "confidence": "medium",
+    "fix": {
+      "old": "le module\n\\[\n \\mathbb Z[T_1,\\ldots,T_d,X_2/X_1,\\ldots,X_d/X_1]\\otimes E,\n\\]\net",
+      "new": "le module \\(\\mathbb Z[T_1,\\ldots,T_d,X_2/X_1,\\ldots,X_d/X_1]\\otimes E\\), et"
+    },
+    "note": "The TeX makes an inline formula a display (same kind of fix as pp. 21, 34, 42, 80, 105). Independent of the next entry (no common text)."
+  },
+  {
+    "page": 426,
+    "where": "line 3: 'Z[T_1,...,T_d,X_2/X_1,...,X_d/X_1], le morphisme canonique'",
+    "scan": "the ring in the running text, at the start of the line '..., le morphisme canonique envoyant e_i sur' (both scans)",
+    "tex": "a display \\[ \\mathbb Z[...], \\]",
+    "kind": "other",
+    "confidence": "medium",
+    "fix": {
+      "old": "par\n\\[\n \\mathbb Z[T_1,\\ldots,T_d,X_2/X_1,\\ldots,X_d/X_1],\n\\]\nle morphisme",
+      "new": "par \\(\\mathbb Z[T_1,\\ldots,T_d,X_2/X_1,\\ldots,X_d/X_1]\\), le morphisme"
+    },
+    "note": "As the entry above."
+  },
+  {
+    "page": 426,
+    "where": "'On a v(e_i - e_1.X_i/X_1) = T_i - T_1.X_i/X_1'",
+    "scan": "'On a' begins a new, indented paragraph after 'pour i > 1.' (both scans)",
+    "tex": "one paragraph with 'Alors F admet pour base ...'",
+    "kind": "other",
+    "confidence": "high",
+    "fix": {
+      "old": "pour \\(i>1\\).\nOn a",
+      "new": "pour \\(i>1\\).\n\nOn a"
+    },
+    "note": "Missing paragraph break."
+  },
+  {
+    "page": 426,
+    "where": "'Au-dessus de D^+(X_1), X' = Spec(...)'",
+    "scan": "D^+(X_1): the + raised as an exponent (both scans; wit_426_half.png)",
+    "tex": "\\(D_+(X_1)\\)",
+    "kind": "formula",
+    "confidence": "high",
+    "fix": {
+      "old": "Au-dessus de \\(D_+(X_1)\\)",
+      "new": "Au-dessus de \\(D^+(X_1)\\)"
+    },
+    "note": "As the D^+ entry above."
+  },
+  {
+    "page": 426,
+    "where": "'Comme tout élément de Z[...] peut s'exprimer'",
+    "scan": "'Comme tout élément' begins a new, indented paragraph after 'appartiennent à l'Idéal de j.' (both scans)",
+    "tex": "one paragraph with 'Il faut donc montrer ...'",
+    "kind": "other",
+    "confidence": "high",
+    "fix": {
+      "old": "l'Idéal de \\(j\\). Comme tout",
+      "new": "l'Idéal de \\(j\\).\n\nComme tout"
+    },
+    "note": "Missing paragraph break; independent of the misprint entry of the same sentence (no common text)."
+  },
+  {
+    "page": 426,
+    "where": "'Comme tout élément de Z[T_1,...,T_d,X_2/X_1,...,X_d,X_1]'",
+    "scan": "X_d,X_1] with a comma, not a slash (both scans; crops_426_430/p426_c.png, wit_426_half.png)",
+    "tex": "\\mathbb Z[T_1,\\ldots,T_d,X_2/X_1,\\ldots,X_d,X_1] (printed reading kept)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "\\mathbb Z[T_1,\\ldots,T_d,X_2/X_1,\\ldots,X_d/X_1]",
+    "note": "The ring of lines 2-3 and of 'Comme la suite des T_i est régulière dans ...': the last generator is X_d/X_1. The diplomatic layer keeps the printed reading; the current layer already reads X_d/X_1."
+  },
+  {
+    "page": 426,
+    "where": "letters of sheaves and Modules on pp. 426-428",
+    "scan": "underlined in the print (both scans): the E of p^*(E) (p. 426); E of 'supposer E libre sur X', the F of v : F → O_P, E of 'X affine et E libre de type fini' (p. 427); the E_o of the last S(E_o) of the first paragraph ('en tant que S(E_o)-module gradué d'après VI 1.5.1'), E of 'de type fini E,', the E of u : E → O_X, J of 'l'idéal J de Y', the K of K.(u), the E of both P(E) (p. 428): 11 letters. Plain in the print: the E of ⊗E and F of 'Alors F admet' (p. 426); E of 'une base de E', J of 'dans J', every J_o and the K of K.(v) (p. 427); every other E_o and E of S(E_o), S(E) (pp. 427-428); all letters of pp. 429-430 (modules over a ring)",
+    "tex": "all plain",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": null,
+    "note": "Convention of the Exposé VII transcription, reported for pp. 418-420 (findings_416_420): not itemized; no blind script (the same letters stand plain elsewhere on these pages). The underlined O of O_P, O_X, O_Y written \\cO falls under the pending volume decision. Three examples, in the form to use if the diplomatic layer reproduces it: p. 426 'Alors \\(p^*(E)\\) est' -> 'Alors \\(p^*(\\underline{E})\\) est'; p. 427 'défini par \\(v:F\\to\\cO_P\\)' -> 'défini par \\(v:\\underline{F}\\to\\cO_P\\)'; p. 428 'Le complexe de Koszul \\(K_\\bullet(u)\\)' -> 'Le complexe de Koszul \\(\\underline{K}_\\bullet(u)\\)'."
+  },
+  {
+    "page": 427,
+    "where": "start of page (folio-427 marker)",
+    "scan": "p. 426 ends '... Or il est clair que'; p. 427 begins 'ce noyau est contenu dans celui de l'homomorphisme composé :' (both scans; wit_426_half.png, wit_427_half.png)",
+    "tex": "page_426.tex ends 'Or il est clair que ce' above the folio-427 marker; page_427.tex begins 'noyau est contenu'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 427 really begins at the word 'ce' (the last word of page_426.tex). Exact edit in main.tex, both layers (diplomatic lines 10709-10711, current 10715-10717): replace 'Or il est clair que ce\\n%%%%%%%%%%  scan idx 440  |  folio 427  %%%%%%%%%%\\nnoyau est contenu' by 'Or il est clair que\\n%%%%%%%%%%  scan idx 440  |  folio 427  %%%%%%%%%%\\nce noyau est contenu' (once in each layer). python -I move_marker.py 6 427 'ce' --before gives the same page split. 'ce' continues the paragraph, so no blank line."
+  },
+  {
+    "page": 427,
+    "where": "'On considère d'abord le cas standard de ii).'",
+    "scan": "'On considère' begins a new, indented paragraph after 'On reprend alors les notations de ii).' (both scans; wit_427_half.png)",
+    "tex": "one paragraph with 'iii) La propriété étant locale ...'",
+    "kind": "other",
+    "confidence": "high",
+    "fix": {
+      "old": "les notations de ii). On considère",
+      "new": "les notations de ii).\n\nOn considère"
+    },
+    "note": "Missing paragraph break."
+  },
+  {
+    "page": 428,
+    "where": "start of page (folio-428 marker)",
+    "scan": "p. 427 ends 'et l'algèbre S(E_o) égale-'; p. 428 begins 'ment. On peut alors construire' (both scans; wit_427_half.png, wit_428_half.png)",
+    "tex": "page_428.tex begins with the whole word 'également.' after the folio-428 marker",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 428 really begins with 'ment.', the second half of 'également' divided at the page break. Split the word at the marker as at folios 18, 54 and 161: python -I marker_split_word.py 6 428 split égale ment (both layers; result '... l'algèbre \\(\\cS(E_0)\\)' / 'égale%' / marker / 'ment. On peut alors ...'). By hand, both layers (diplomatic line 10721, current 10727): replace '%%%%%%%%%%  scan idx 441  |  folio 428  %%%%%%%%%%\\négalement.' by 'égale%\\n%%%%%%%%%%  scan idx 441  |  folio 428  %%%%%%%%%%\\nment.'. Independent of the \\cS entry."
+  },
+  {
+    "page": 428,
+    "where": "the symmetric algebra S(E_o), S(E): p. 427 (1), p. 428 (6)",
+    "scan": "S with two underlines in all seven places (both scans; crops_426_430/p427_d.png, p428_a.png, p428_b.png, p428_c.png), the typescript's mark for a bold letter, as the doubly underlined P of P(E) on p. 428",
+    "tex": "\\cS(E_0), \\cS(E): a script S (\\cS = \\mathcal S, main.tex line 1510; the \\providecommand of line 10487 does not change it)",
+    "kind": "font",
+    "confidence": "high",
+    "fix": null,
+    "note": "Convention of the Exposé VII transcription, reported once. The same page writes the doubly underlined P as \\bfP (= \\mathbf P), and Exposé VI writes this doubly underlined S as \\mathbf S (\\Sym, NOTE_6). Exposé VII has 11 \\cS, all for this S, and main.tex has no other \\cS: diplomatic lines 10685 (1) and 10686 (3) (p. 425, for that batch to confirm), 10720 (1, p. 427), 10722 (4) and 10724 (2) (p. 428); current layer lines 10691, 10692, 10726, 10728, 10730. One scripted pass, both layers: '\\cS(' -> '\\mathbf S(' on those lines. Three examples: p. 427 'et l'algèbre \\(\\cS(E_0)\\)' -> 'et l'algèbre \\(\\mathbf S(E_0)\\)'; p. 428 'par des \\(\\cS(E_0)\\)-modules gradués libres' -> 'par des \\(\\mathbf S(E_0)\\)-modules gradués libres'; p. 428 'un complexe gradué de \\(\\cS(E)\\)-modules' -> 'un complexe gradué de \\(\\mathbf S(E)\\)-modules'."
+  },
+  {
+    "page": 428,
+    "where": "statements of pp. 428-429: Proposition 1.9 (p. 428), Proposition 1.10 (p. 429)",
+    "scan": "underlined word group by word group (both scans): Prop. 1.9 'Soient', 'une immersion fermée régulière', 'le', 'schéma obtenu en faisant éclater' (X- plain), 'et', 'le morphisme struc-/tural', 'Alors', 'et', 'sont des morphismes parfaits'; Prop. 1.10 'Soient', 'deux schémas lisses sur', 'Alors toute', 'immersion de' (S- plain), 'dans', 'est régulière', 'En particulier', 'toute section d'un morphisme lisse est une immersion régulière'; letters, formulas, commas, full stops and '(III 4.1. ).' plain; the labels underline only the word",
+    "tex": "the statements in roman (no \\underline)",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": null,
+    "note": "Exposé VII follows the Exposé II pattern of GLOBAL_ISSUES 82 (pending volume decision): not itemized; the word groups are listed for the scripted pass. No emphasized defined terms and no category letter on pp. 426-430."
+  },
+  {
+    "page": 429,
+    "where": "start of page (folio-429 marker)",
+    "scan": "p. 428 ends '... qui est lisse, donc parfait ; c'est donc'; p. 429 begins 'le composé de deux morphismes parfaits' (both scans; wit_428_half.png, wit_429_half.png)",
+    "tex": "page_428.tex ends 'c'est donc le' above the folio-429 marker; page_429.tex begins 'composé de deux'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 429 really begins at the word 'le' (the last word of page_428.tex). Exact edit in main.tex, both layers (diplomatic lines 10728-10730, current 10734-10736): replace 'donc le\\n%%%%%%%%%%  scan idx 442  |  folio 429  %%%%%%%%%%\\ncomposé de deux' by 'donc\\n%%%%%%%%%%  scan idx 442  |  folio 429  %%%%%%%%%%\\nle composé de deux' (once in each layer). python -I move_marker.py 6 429 'le' --before gives the same page split."
+  },
+  {
+    "page": 429,
+    "where": "heading 2.1",
+    "scan": "'2.1.' with a full stop (both scans)",
+    "tex": "\\subsection*{2.1}",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+      "old": "\\subsection*{2.1}",
+      "new": "\\subsection*{2.1.}"
+    },
+    "note": "The printed paragraph number ends with a full stop (as the fixes of pp. 3-12, 394, 396, 399, 401); the run-in heading set as its own paragraph is accepted."
+  },
+  {
+    "page": 429,
+    "where": "'Soit P. une résolution de B' after (2.1.1)",
+    "scan": "'Soit P.' begins a new, indented paragraph (both scans)",
+    "tex": "no blank line after \\end{equation}: the text continues the paragraph of (2.1.1)",
+    "kind": "other",
+    "confidence": "high",
+    "fix": {
+      "old": "\\end{equation}\nSoit",
+      "new": "\\end{equation}\n\nSoit"
+    },
+    "note": "Missing paragraph break."
+  },
+  {
+    "page": 429,
+    "where": "'Par ailleurs, P.⊗_A P. est un complexe' after (2.1.2)",
+    "scan": "'Par ailleurs' begins a new, indented paragraph (both scans)",
+    "tex": "no blank line after \\end{equation}",
+    "kind": "other",
+    "confidence": "high",
+    "fix": {
+      "old": "\\end{equation}\nPar ailleurs",
+      "new": "\\end{equation}\n\nPar ailleurs"
+    },
+    "note": "Missing paragraph break."
+  },
+  {
+    "page": 430,
+    "where": "first line: 'En composant (2.1.2) et (2.1.3)'",
+    "scan": "'En composant' begins a new, indented paragraph after the display (2.1.3) that ends p. 429 (both scans; wit_430_half.png)",
+    "tex": "page_429.tex ends '\\end{equation}' with no blank line before the marker line, so 'En composant' continues the paragraph",
+    "kind": "other",
+    "confidence": "high",
+    "fix": {
+      "old": "En\ncomposant (2.1.2)",
+      "new": "\nEn\ncomposant (2.1.2)"
+    },
+    "note": "Missing paragraph break: the empty line after the marker line (a comment line) ends the paragraph."
+  },
+  {
+    "page": 430,
+    "where": "'La structure d'algèbre définie par les homomorphismes (2.1.1)'",
+    "scan": "'La structure' begins a new, indented paragraph (both scans)",
+    "tex": "one paragraph with 'En composant ...'",
+    "kind": "other",
+    "confidence": "high",
+    "fix": {
+      "old": "(2.1.1). La structure",
+      "new": "(2.1.1).\n\nLa structure"
+    },
+    "note": "Missing paragraph break; independent of the entry above (no common text)."
+  },
+  {
+    "page": 430,
+    "where": "heading 2.2",
+    "scan": "'2.2.' with a full stop (both scans)",
+    "tex": "\\subsection*{2.2}",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+      "old": "\\subsection*{2.2}",
+      "new": "\\subsection*{2.2.}"
+    },
+    "note": "As heading 2.1 (p. 429)."
+  },
+  {
+    "page": 430,
+    "where": "item a) of 2.2: 'P_o → B est un homomorphisme d'anneaux ; (1)'",
+    "scan": "footnote mark (1), raised, after 'd'anneaux ;'; the footnote '(1) On peut montrer qu'une telle résolution existe toujours.' at the foot of the page (both scans)",
+    "tex": "no mark: \\sgastandalonefootnotetext (main.tex line 66) sets only the footnote text, which then takes the number of the last footnote",
+    "kind": "missing",
+    "confidence": "high",
+    "fix": {
+      "old": "d'anneaux~;}",
+      "new": "d'anneaux~;}\\footnotemark"
+    },
+    "note": "The mark goes after the \\text box, in math mode: inside \\text the amsmath style choices step the footnote counter four times. Test compile (crops_426_430/fntest/fntest.tex): with this fix the mark and the text get the same number and the next footnote the next one."
+  },
+  {
+    "page": 430,
+    "where": "the square of 2.2 (P_i⊗_A P_j → (P_{i-1}⊗_A P_j)⊕(P_i⊗_A P_{j-1}))",
+    "scan": "no number at the diagram (both scans; wit_430_half.png); the displays of 2.1 carry (2.1.1)-(2.1.3) at the left",
+    "tex": "\\begin{equation}\\tag{2.2.1}",
+    "kind": "extra",
+    "confidence": "high",
+    "fix": {
+      "old": "\\begin{equation}\\tag{2.2.1}",
+      "new": "\\begin{equation}\\notag"
+    },
+    "note": "The TeX adds the number (2.2.1); Exposé VII never cites 2.2.1. \\notag (amsmath) keeps the environment and drops the number (test compile in crops_426_430/fntest)."
+  },
+  {
+    "page": 430,
+    "where": "end of page (folio-431 marker)",
+    "scan": "p. 430 ends '... (i.e. telle que pour tout' above the footnote; p. 431 begins 'x ∈ P., on ait x^2 = 0), alors il en est de même pour ⊕Tor_i^A(B,C).' (both scans; wit_430_half.png, wit_431_half.png)",
+    "tex": "page_430.tex ends 'telle que pour tout \\(x\\in P_\\bullet\\), on ait \\(x^2=0\\)),' above the folio-431 marker",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Page 431 really begins at '\\(x\\in P_\\bullet\\), on ait \\(x^2=0\\)),'. Exact edit in main.tex, both layers (diplomatic lines 10773-10775, current 10779-10781): replace 'telle que pour tout \\(x\\in P_\\bullet\\), on ait \\(x^2=0\\)),\\n%%%%%%%%%%  scan idx 444  |  folio 431  %%%%%%%%%%\\nalors il en est' by 'telle que pour tout\\n%%%%%%%%%%  scan idx 444  |  folio 431  %%%%%%%%%%\\n\\(x\\in P_\\bullet\\), on ait \\(x^2=0\\)), alors il en est' (once in each layer). Or python -I move_marker.py 6 431 '\\(x\\in P_\\bullet\\), on ait' --before. The checker of p. 431 may report the same boundary: apply once."
+  }
+]

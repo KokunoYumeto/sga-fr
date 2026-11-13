@@ -1,0 +1,234 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usetikzlibrary{arrows}
+\usepackage{enumitem}
+\usepackage{longtable,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\emergencystretch=3em
+\hbadness=10000
+\hfuzz=20pt
+\usepackage[normalem]{ulem}
+\newcommand{\K}{K}
+\newcommand{\Gr}{\operatorname{Gr}}
+\newcommand{\Fil}{\operatorname{Fil}}
+\newcommand{\ch}{\operatorname{ch}}
+\newcommand{\Todd}{\operatorname{Todd}}
+\newcommand{\cl}{\operatorname{cl}}
+\newcommand{\Parf}{\operatorname{Parf}}
+\newcommand{\Tor}{\operatorname{Tor}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\RRR}{\mathrm{RRR}}
+\providecommand{\codim}{\operatorname{codim}}
+\providecommand{\Inv}{\operatorname{Inv}}
+\providecommand{\Pic}{\operatorname{Pic}}
+\providecommand{\Z}{\mathbb Z}
+\providecommand{\Q}{\mathbb Q}
+\providecommand{\Ahat}{\widehat A}
+\providecommand{\Ahp}{\widehat A^{+}}
+\providecommand{\That}{\widehat T}
+\providecommand{\rad}{\operatorname{rad}}
+\providecommand{\Gl}{\operatorname{Gl}}
+\providecommand{\GL}{\operatorname{Gl}}
+\providecommand{\ch}{\operatorname{ch}}
+\providecommand{\Todd}{\operatorname{Todd}}
+\providecommand{\Gr}{\operatorname{Gr}}
+\providecommand{\red}{\text{réd}}
+
+% Core macro additions
+\providecommand{\Atil}{\widetilde A}
+\providecommand{\Ctil}{\widetilde C}
+\providecommand{\K}{\mathrm K}
+\providecommand{\cC}{\mathcal C}
+\providecommand{\cF}{\mathscr F}
+\providecommand{\eps}{\varepsilon}
+\providecommand{\ellc}{\ell}
+\providecommand{\Tor}{\operatorname{Tor}}
+\providecommand{\Coker}{\operatorname{Coker}}
+\providecommand{\Ker}{\operatorname{Ker}}
+\providecommand{\Supp}{\operatorname{Supp}}
+\providecommand{\codim}{\operatorname{codim}}
+\providecommand{\Gr}{\operatorname{G}}
+\providecommand{\rank}{\operatorname{rank}}
+\providecommand{\rang}{\operatorname{rang}}
+\providecommand{\cO}{\mathcal O}
+\providecommand{\sgacircled}[1]{\tikz[baseline=(char.base)]\node[shape=circle,draw,inner sep=.35pt](char){\mbox{\scriptsize #1}};}
+
+\hypersetup{hypertexnames=false}
+\newcommand{\sgastandalonefootnotetext}[2]{%
+  \begingroup
+  \NoHyper
+  \footnotetext{#2}%
+  \endNoHyper
+  \endgroup
+}
+\providecommand{\R}{\mathbb R}
+\providecommand{\C}{\mathbb C}
+\providecommand{\N}{\mathbb N}
+\providecommand{\Zell}{\mathbb Z_\ell}
+\providecommand{\Qell}{\mathbb Q_\ell}
+\providecommand{\C}{\mathbb C}
+\providecommand{\Ch}{\operatorname{Ch}}
+\providecommand{\Sym}{\operatorname{Sym}}
+\providecommand{\Td}{\operatorname{Td}}
+\begin{document}
+\providecommand{\ob}{\operatorname{ob}}
+\providecommand{\Ob}{\operatorname{ob}}
+\begin{enumerate}[label={[\arabic*]}]
+\setcounter{enumi}{13}
+\item
+% from main.tex
+%%%%%%%%%%  scan idx 234  |  folio 221  %%%%%%%%%%
+Lang, S., Introduction to differentiable manifolds,
+\item \L{}ojasiewicz, S., Ann. della Scuola Norm. Sup. Pisa, serie III, 18, fasc. IV, 1964.
+\item Palais, R., Exposés au Séminaire Princeton 1963-64 sur le théorème de l'index.
+\item Shih, W., Fiber cobordism and the index of a family of elliptic differential operators,
+\item Verdier, J.-L., Les catégories dérivées des catégories abéliennes, à paraître dans North Holl. Pub. Comp.
+\end{enumerate}
+
+
+
+% Exposé III additions
+\renewcommand{\Ob}{\operatorname{Ob}}
+\providecommand{\qcoh}{\mathrm{qcoh}}
+\providecommand{\coh}{\mathrm{coh}}
+\providecommand{\torf}{\mathrm{torf}}
+\providecommand{\toramp}{\operatorname{tor.amp}}
+\providecommand{\amp}{\operatorname{amp}}
+\providecommand{\Id}{\operatorname{Id}}
+\providecommand{\pr}{\operatorname{pr}}
+\providecommand{\coker}{\operatorname{coker}}
+\providecommand{\im}{\operatorname{Im}}
+\providecommand{\Spec}{\operatorname{Spec}}
+
+
+
+% from main.tex
+%%%%%%%%%%  scan idx 235  |  folio 222  %%%%%%%%%%
+\section*{\underline{EXPOSÉ III}\\[3pt] \underline{\underline{CONDITIONS DE FINITUDE RELATIVES}}}
+\begin{center}
+\underline{par L. ILLUSIE}
+\end{center}
+
+\section*{1. Pseudo-cohérence relative}
+
+\textbf{Théorème 1.1.} Soit \(n\in\mathbb Z\). Pour chaque morphisme localement de type fini de schémas \(f:X\longrightarrow Y\), il existe une et une seule sous-catégorie pleine \(D(f)_{n\text{-}\coh}\) de \(D(X)\)\footnote{\(D(X)\) = catégorie dérivée de celle des \(\mathcal O_X\)-Modules.} telle que les conditions ci-dessous soient satisfaites :
+\begin{enumerate}[label=(\roman*)]
+\item Si \(E\in\Ob D(f)_{n\text{-}\coh}\), alors \(i^*(E)\in\Ob D(fi)_{n\text{-}\coh}\) pour tout ouvert \(i:U\to X\).
+
+\item Si \(E\in\ob D(X)\) et s'il existe un recouvrement ouvert \((i_\alpha:U_\alpha\to X)_{\alpha\in A}\) tel que \(i_\alpha^*(E)\in\ob D(fi_\alpha)_{n\text{-}\coh}\) pour tout \(\alpha\in A\), alors \(E\in\ob D(f)_{n\text{-}\coh}\).
+
+\item Si
+\[
+\begin{tikzcd}
+X \arrow[rr,"f"] \arrow[dr,"h"'] & & Y \arrow[dl,"g"]\\
+& Z &
+\end{tikzcd}
+\]
+est un triangle commutatif de morphismes localement de type fini, où \(f\) est une immersion fermée et \(g\) un morphisme lisse, alors on a
+\[
+  E\in\Ob D(h)_{n\text{-}\coh}
+  \quad\Longleftrightarrow\quad
+  f_*(E)\in D(Y)_{n\text{-}\coh}\qquad\mbox{\footnotemark}\ .
+\]
+\footnotetext{\(D(Y)_{n\text{-}\coh}\) = sous-catégorie pleine de \(D(Y)\) formée des objets \(n\)-pseudo-cohérents (I~2.15).}
+\end{enumerate}
+
+\emph{Démonstration.} L'\emph{unicité} est évidente. Soit en effet \(f:X\to Y\) un morphisme localement de type fini. Choisissons un recouvrement ouvert \((i_\alpha:X_\alpha\to X)_{\alpha\in A}\) tel que, pour chaque \(\alpha\in A\), \(fi_\alpha\) se factorise en
+\[
+  X_\alpha\xrightarrow{i'_\alpha}Y_\alpha\xrightarrow{f'_\alpha}Y,
+\]
+où \(i'_\alpha\) est une immersion fermée et \(f'_\alpha\) un morphisme lisse. Il résulte aussitôt de (i), (ii), (iii) que les objets de \(D(f)_{n\text{-}\coh}\) sont les objets \(E\) de \(D(X)\) tels que
+\[
+  i'_{\alpha *}i_\alpha^*(E)\in \ob D(Y_\alpha)_{n\text{-}\coh};
+\]
+donc \(D(f)_{n\text{-}\coh}\) est
+
+% from main.tex
+%%%%%%%%%%  scan idx 236  |  folio 223  %%%%%%%%%%
+bien déterminée (puisque c'est une sous-catégorie pleine de \(D(X)\)). Pour prouver l'existence, nous aurons besoin de quelques lemmes.
+
+\textbf{Lemme 1.1.1.} Soit \(i:X\to Y\) une immersion fermée de schémas telle que \(i_*(\mathcal O_X)\) soit pseudo-cohérent, et soit \(E\in\ob D(X)\). Pour que \(E\) soit \(n\)-pseudo-cohérent, il faut et il suffit que \(i_*(E)\) le soit.
+
+\emph{Preuve.} Le « il faut » résulte du critère général de stabilité de la pseudo-cohérence par application d'un foncteur (I~2.13). Inversement, supposons que \(i_*(E)\) est \(n\)-pseudo-cohérent, et prouvons qu'il en est de même de \(E\). Comme \(i_*(E)\) est à cohomologie localement bornée supérieurement, il en est de même de \(E\), donc, la question étant locale, on peut supposer que \(E\) est \(m\)-pseudo-cohérent pour \(m\) assez grand. Montrons, par récurrence descendante sur \(m\), que \(E\) est \(m\)-pseudo-cohérent pour tout \(m\geq n\). On peut supposer déjà prouvé que \(E\) est \((n+1)\)-pseudo-cohérent. Quitte à localiser, on a donc un triangle distingué
+\[
+\begin{tikzcd}
+& E'' \arrow[dl,"|" marking] & \\
+E' \arrow[rr] & & E \arrow[ul]
+\end{tikzcd}
+\]
+où \(E'\) est parfait et \(E''^i=0\) pour \(i>n\). D'après (I~2.6), on est ramené à montrer que \(E''\) est \(n\)-pseudo-cohérent. Or, appliquant \(i_*\) au triangle précédent, on obtient un triangle distingué
+\[
+\begin{tikzcd}
+& i_*(E'') \arrow[dl,"|" marking] & \\
+i_*(E') \arrow[rr] & & i_*(E) \arrow[ul]
+\end{tikzcd}\ .
+\]
+D'après la première partie de la démonstration, \(i_*(E')\) est pseudo-cohérent, donc en vertu de (I~2.6), \(i_*(E'')\) est \(n\)-pseudo-cohérent. Comme \(i_*(E'')\) est nul en degré \(>n\), cela signifie, d'après (I~2.10 b)), que \(H^n(i_*(E'')\) est de type fini. Comme \(H^n(i_*(E''))\simeq i_*H^n(E'')\), on est ramené à montrer, d'après (I~2.10 b)), que si \(M\) est un \(\mathcal O_X\)-Module tel que \(i_*(M)\) soit de type fini, alors \(M\) est de type fini, ce qui est immédiat (et indépendant de l'hypothèse sur \(\bar i_*(\mathcal O_X)\)).
+
+
+% from main.tex
+%%%%%%%%%%  scan idx 237  |  folio 224  %%%%%%%%%%
+\textbf{Remarque 1.1.2.} Le lemme précédent s'applique notamment au cas où \(i\) est une \emph{immersion régulière} (VII~1.4). En effet, on a localement, grâce au complexe de Kozsul, une résolution gauche finie de \(i_*(\mathcal O_X)\) par des \(\mathcal O_Y\)-Modules libres de type fini, donc \(i_*(\mathcal O_X)\) est parfait (I 4.8 et 4.14) (donc a fortiori pseudo-cohérent).
+
+\textbf{Lemme 1.1.3.} Soit un carré cartésien de schémas
+\[
+\begin{tikzcd}
+X \arrow[d,"i"'] & X' \arrow[l,"f"'] \arrow[d,"i'"]\\
+Y & Y'{,} \arrow[l,"g"']
+\end{tikzcd}
+\]
+où \(i\) est une immersion fermée, et soit \(E\) un complexe de \(\mathcal O_X\)-Modules. Alors la flèche canonique de changement de base (EGA~III 1.4.15.4)
+\[
+  g^*i_*(E)\longrightarrow i'_*f^*(E)
+\]
+est un isomorphisme.
+
+(ii) Posons \(E'=f^*(E)\). Si \(g\) est plat et \(i_*(E)\) \(n\)-pseudo-cohérent, alors \(i'_*(E')\) est \(n\)-pseudo-cohérent. Inversement, si \(g\) est fidèlement plat et \(i'_*(E')\) \(n\)-pseudo-cohérent, alors \(i_*(E)\) est \(n\)-pseudo-cohérent.
+
+\emph{Preuve.} L'assertion se vérifie trivialement sur les fibres.
+
+\textbf{Lemme 1.1.4.}
+
+% from main.tex
+%%%%%%%%%%  scan idx 238  |  folio 225  %%%%%%%%%%
+Soit un diagramme commutatif de schémas
+\[
+\begin{tikzcd}
+X' \arrow[dr,"f'"'] & X \arrow[l,hook',"i'"'] \arrow[r,hook,"i''"] & X'' \arrow[dl,"f''"]\\
+& Y{,} &
+\end{tikzcd}
+\]
+où \(i'\) (resp. \(i''\)) est une immersion fermée, et \(f'\) (resp. \(f''\)) un morphisme lisse, et soit \(E\in\ob D(X)\). On a alors :
+\[
+  i'_*(E)\ n\text{-pseudo-cohérent}
+  \quad\Longleftrightarrow\quad
+  i''_*\ n\text{-pseudo-cohérent}.
+\]
+
+\emph{Preuve.} Suivant une astuce due à Lichtenbaum, on envoie \(X\) diagonalement dans \(X'\times_YX''\), et l'on est aussitôt ramené à prouver l'assertion dans le cas où l'un des morphismes \(f'\), \(f''\) est l'identité. Changeant les notations, on a donc un triangle commutatif
+\begin{equation}\tag{$*$}
+\begin{tikzcd}
+& Y \arrow[d,"f"]\\
+X \arrow[r,hook,"j"'] \arrow[ur,hook,"i"] & Z{,}
+\end{tikzcd}
+\end{equation}
+où \(i\) et \(j\) sont des immersions fermées et \(f\) un morphisme lisse, et l'on doit montrer que « \(i_*(E)\) \(n\)-pseudo-cohérent » équivaut à « \(j_*(E)\) \(n\)-pseudo-cohérent ». La question étant locale dans \(Y\) et dans \(Z\) au voisinage d'un point de \(X\), on peut supposer que \(X,Y,Z\) sont affines et qu'on a une factorisation
+\[
+\begin{tikzcd}
+Y \arrow[r,hook,"i'"] \arrow[d,"f"'] & Z[T_1,\ldots,T_r]\arrow[dl,"f'"]\\
+Z{,}&
+\end{tikzcd}
+\]
+où \(i'\) est une immersion fermée, et la flèche oblique la projection canonique. Alors (VII 1.10) \(i'\) est une immersion régulière, donc (1.1.1) un objet \(F\) de \(D(Y)\) est \(n\)-pseudo-cohérent si et seulement si \(i'_*(F)\) l'est.
+
+
+\end{document}

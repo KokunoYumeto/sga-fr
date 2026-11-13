@@ -1,0 +1,29 @@
+% from main.tex
+%%%%%%%%%%  scan idx 255  |  folio 242  %%%%%%%%%%
+\textbf{Proposition 3.3.} Les données étant celles de (3.1), supposons que \(X\) ait assez de points (SGA 4 XVII IV 6.4). Les conditions suivantes sont alors équivalentes :
+\begin{enumerate}[label=(\roman*)]
+\item \(\toramp_f(E)\subset[m,n]\) ;
+\item Pour tout point \(x\) de \(X\), on a
+\[
+  \toramp_y(E_x)\subset[m,n],
+\]
+où \(y\) est le point image de \(x\) par \(f\), annelé par \(\mathcal O_{Y,y}\) ;
+\item Pour tout objet \(V\) de \(Y\) et tout \(\mathcal O_V\)-Module \(M\), on a
+\[
+  H^i\left((E\vert_{f^{-1}(V)})\otimes_{\mathcal O_V}^{\mathbf L}M\right)=0
+  \quad\text{pour }i\notin[m,n],
+\]
+où \((E\vert_{f^{-1}(V)})\otimes_{\mathcal O_V}^{\mathbf L}M=(E\vert_{f^{-1}(V)})\otimes_{\mathcal O_V}^{\mathbf L}\mathbf Lf^*(M)\) ;
+\item Même condition que (iii), mais avec \(M\) conoyau d'un homomorphisme \(\mathcal O_V^q\longrightarrow\mathcal O_V^p\), où \(p,q\in\mathbb N\).
+\end{enumerate}
+
+\emph{Preuve.} L'équivalence (i)\(\Longleftrightarrow\)(ii) résulte de (I 5.6.2), et les implications (ii)\(\Longrightarrow\)(iii)\(\Longrightarrow\)(iv) sont triviales. Prouvons (iv)\(\Longrightarrow\)(ii). Soient \(x\) un point de \(X\), \(y=f(x)\) ; il s'agit de montrer que l'on a
+\begin{equation}\tag{$*$}
+  H^i(E_x\otimes_{\mathcal O_{Y,y}}^{\mathbf L}M)=0
+\end{equation}
+pour tout \(\mathcal O_{Y,y}\)-module \(M\) et tout \(i\notin[m,n]\). Comme tout \(\mathcal O_{Y,y}\)-module est limite inductive filtrante de modules de présentation finie, on peut se borner à vérifier la relation précédente pour \(M\) de présentation finie. Or, si \(M\) est un \(\mathcal O_{Y,y}\)-module de présentation finie, le même argument que pour les espaces annelés ordinaires (EGA \(0_{\mathrm I}\) 5.3.9) montre qu'il existe un objet \(y\)-ponctué \(V\) de \(Y\) et un \(\mathcal O_V\)-Module \(P\), conoyau d'un homomorphisme \(\mathcal O_V^q\longrightarrow\mathcal O_V^p\) \((p,q\in\mathbb N)\), tel que l'on ait \(P_y\simeq M\). On a alors
+\[
+  \bigl((E\vert_{f^{-1}(V)})\otimes_{\mathcal O_V}^{\mathbf L}P\bigr)_x
+  \simeq
+  E_x\otimes_{\mathcal O_{Y,y}}^{\mathbf L}M,
+\]

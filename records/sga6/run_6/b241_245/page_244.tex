@@ -1,0 +1,40 @@
+% from main.tex
+%%%%%%%%%%  scan idx 257  |  folio 244  %%%%%%%%%%
+\item si \(f\) est de tor-
+dimension \(\leq m\), on a
+\[
+  \toramp_g(F)\subset[c,d]\Longrightarrow\toramp_h(\mathbf Lf^*(F))\subset[c-m,d].
+\]
+\end{enumerate}
+
+\textbf{Remarque 3.4.2.} Soient \(f:X\to Y\) un morphisme de tor-dimension finie et \(E\in\Ob D(X)\). Alors, d'après (3.4.1 a)), si \(E\) est d'amplitude plate finie (au sens absolu), \(E\) est d'amplitude plate finie rel. à \(f\). Mais la réciproque est fausse, même si \(f\) est plat, comme le montre l'exemple d'une singularité d'un schéma sur un corps.
+
+\textbf{Proposition 3.5.} Soient \(S\) un schéma, et, pour \(i=1,2\), \(f_i:X_i\longrightarrow Y_i\) un \(S\)-morphisme, \(E_i\in\Ob D^{-}(X_i)\), \([a_i,b_i]\) un intervalle de \(\mathbb Z\). Supposons \(X_1\) et \(X_2\), ainsi que \(Y_1\) et \(Y_2\) tor-indépendants sur \(S\) (1.5). Posons \(a=a_1+a_2\), \(b=b_1+b_2\), \(f=f_1\times_Sf_2:X\to Y\). Alors :
+\begin{enumerate}[label=\alph*)]
+\item Si l'on a \(\toramp_{f_1}(E_1)\subset[a_1,b_1]\) et si \(E_2\) est acyclique en dehors de \([a_2,b_2]\), \(E_1\otimes_S^{\mathbf L}E_2\) (cf. (1.6)) est acyclique en dehors de \([a,b]\).
+\item Si l'on a \(\toramp_{f_i}(E_i)\subset[a_i,b_i]\) pour \(i=1,2\), on a
+\[
+  \toramp_f(E_1\otimes_S^{\mathbf L}E_2)\subset[a,b].
+\]
+\end{enumerate}
+
+\emph{Preuve.} D'après (3.3), il suffit de faire la vérification « sur les fibres ». Soient \(s\) un point de \(S\), \(x\) un point de \(X\) au-dessus de \(s\), \(y=f(x)\), \(x_i\) (resp. \(y_i\)) la projection canonique de \(x\) (resp. \(y\)) sur \(X_i\) (resp. \(Y_i\)). Posons
+\[
+  (E_i)_{x_i}=M_i,\quad \mathcal O_{X_i,x_i}=A_i,\quad
+  \mathcal O_{Y_i,y_i}=B_i,\quad \mathcal O_{S,s}=C,
+\]
+\[
+  \mathcal O_{X,x}=A=A_1\otimes_C A_2,\qquad
+  \mathcal O_{Y,y}=B=B_1\otimes_C B_2.
+\]
+On a
+\begin{equation}\tag{$*$}
+  (E_1\otimes_S^{\mathbf L}E_2)_x
+  \simeq
+  M_1\otimes_{A_1}^{\mathbf L}A\otimes_{A_2}^{\mathbf L}M_2.
+\end{equation}
+Les hypothèses de tor-indépendance impliquent d'autre part :
+\[
+  A\simeq A_1\otimes_{B_1}^{\mathbf L}B\otimes_{B_2}^{\mathbf L}A_2.
+\]
+Par suite, le second membre de (*) est canoniquement isomorphe, dans la catégorie

@@ -1,0 +1,632 @@
+[
+ {
+  "page": 431,
+  "where": "start of page (folio-431 marker)",
+  "scan": "p. 430 ends '... alternée (i.e. telle que pour tout'; p. 431 begins 'x ∈ P., on ait x² = 0), alors il en est de même pour ⊕ Tor_i^A(B,C).' (both scans; crops_431_435/w431_top.png, b426_430/page_430_s4.png)",
+  "tex": "page_430.tex ends 'pour tout \\(x\\in P_\\bullet\\), on ait \\(x^2=0\\)),' above the folio-431 marker; page_431.tex begins 'alors il en est de même'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 431 really begins at '\\(x\\in P_\\bullet\\), on ait \\(x^2=0\\)),'. Exact edit in main.tex, both layers (diplomatic lines 10773-10775, current 10779-10781): replace 'pour tout \\(x\\in P_\\bullet\\), on ait \\(x^2=0\\)),\\n%%%%%%%%%%  scan idx 444  |  folio 431  %%%%%%%%%%\\nalors il en est de même' by 'pour tout\\n%%%%%%%%%%  scan idx 444  |  folio 431  %%%%%%%%%%\\n\\(x\\in P_\\bullet\\), on ait \\(x^2=0\\)), alors il en est de même' (old string once per layer; simulated in memory: crops_431_435/sim_markers.py). The sentence runs on, so no blank line."
+ },
+ {
+  "page": 431,
+  "where": "statements of pp. 431-435: Lemme 2.4 (p. 431), Proposition 2.5 (pp. 431-432), Proposition 2.7 (p. 435)",
+  "scan": "underlined word group by word group (both scans): Lemme 2.4 'Soient', 'deux', 'schémas', 'et', 'M', 'un', '-Module plat', 'Alors', 'pour tout', 'on a un isomorphisme canonique'; Prop. 2.5 'Soient', 'un schéma', 'et', 'deux sous-schémas fermés de', 'On suppose que pour tout', 'il existe un voisinage ouvert', p. 432 'de', 'et une suite de sections', 'de', 'telles que le complexe de Koszul associé à', 'soit une résolution de', 'le complexe de Koszul associé à', 'une résolution de', 'et le complexe de Koszul associé à', 'une résolution de', 'conditions satisfaites en particulier dans le cas noethérien si la suite', 'est régulière et si', 'Soient', 'les idéaux de', 'On a alors les isomorphismes suivants', 'où on note', 'l'immersion de', 'dans', 'et', 'l'immersion de', 'dans', 'En particulier', 'pour toute immersion fermée régulière', 'on a'; Prop. 2.7 'Soient', 'un schéma ayant un faisceau ample', 'une immersion fermée régulière', 'le faisceau conormal de', 'dans', 'Alors', 'pour tout', 'on a la relation', 'où', 'est la classe de', 'dans', 'et'; formulas, letters and punctuation plain; the labels underline only the word",
+  "tex": "the statements in roman (no \\underline, no \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé VII follows the Exposé II pattern of GLOBAL_ISSUES 82 (pending volume decision), as findings_416_420 reports for pp. 416-420: not itemized. No emphasized defined terms and no category letter on pp. 431-435."
+ },
+ {
+  "page": 431,
+  "where": "letters of sheaves and complexes on pp. 431-435",
+  "scan": "underlined in the print (both scans): M of Lemme 2.4 and its display (3), 'M est défini' (p. 431); I, J ('Soient I, J', I∩J/I.J), N_{Y/X}, N_{Z/X}, N_{T/X} of ii) and ii'), E, E' and the K of K.(u), K.(v) (p. 432); every K.(u), K.(v) and E of ∧^pE, ∧^iE (p. 433); I, J, N_{Y/X}, N_{Z/X}, N_{T/X}, K, the 0 opening the exact sequence 0 → I∩J/I.J → ... (p. 434); N_{T/X}, N_{Y/X}, N_{Z/X}, L˙ (3), N of Proposition 2.7 (p. 435). Plain in the print: X, Y, Z, T, U, x, f_i, g_j, h_k, u, v, A, A', A'', B, C, P., the A'-module M (p. 431), the K.. of the spectral sequence (p. 433), the class N and the N of λ_{-1}(N) (p. 435)",
+  "tex": "all plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé VII transcription (findings_416_420, after Exposé VI): not itemized. Two places where the plain letter merges two printed letters: p. 431 '\\(M\\) est défini par un \\(A'\\)-module plat \\(M\\)' (sheaf M̲, module M); p. 435 'où \\(N\\) est la classe de \\(N\\)' (class N, sheaf N̲). Three examples in the form to use if the diplomatic layer reproduces the underline: p. 431 '; \\(M\\) est défini' -> '; \\(\\underline{M}\\) est défini'; p. 432 'Soient \\(I,J\\) les idéaux' -> 'Soient \\(\\underline{I},\\underline{J}\\) les idéaux'; p. 435 'est la classe de \\(N\\) dans' -> 'est la classe de \\(\\underline{N}\\) dans'. The underlined O written \\cO falls under the pending volume decision."
+ },
+ {
+  "page": 431,
+  "where": "2.3: 'et définissent sur ⊕_{i≥0} Tor_i^{O_X}(O_{X'},O_{X''}) une structure'",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigoplus_{i\\ge0}\\Tor_i^{\\cO_X}",
+   "new": "\\bigoplus_{i\\ge0}\\underline{\\Tor}_i^{\\cO_X}"
+  },
+  "note": "Sheaf Tor underlined in the print; the module Tor_i^A(B,C) of the same paragraph is plain, as in the TeX. \\underline{\\Tor} is the file's form (main.tex lines 1126-1162, 5562-5564; findings_046_050, findings_226_230). Exposé VII writes all its 54 sheaf Tor plain."
+ },
+ {
+  "page": 431,
+  "where": "Lemme 2.4, the display",
+  "scan": "no equation number: the display 'Tor_i^{O_X}(M,O_X'') ≃ M ⊗_{O_X'} Tor_i^{O_X}(O_X',O_X'') .' stands alone, its left margin empty (both scans; crops_431_435/w431_mid.png)",
+  "tex": "\\begin{equation}\\tag{2.4.1}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{equation}\\tag{2.4.1}",
+   "new": "\\begin{equation}\\notag"
+  },
+  "note": "The number is the TeX's addition; Exposé VII never cites (2.4.1). \\notag as in the applied p. 403 entry (findings_401_405). Independent of the two Tor entries of the display."
+ },
+ {
+  "page": 431,
+  "where": "Lemme 2.4, display, left member Tor_i^{O_X}(M,O_X'')",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tor_i^{\\cO_X}(M,",
+   "new": "\\underline{\\Tor}_i^{\\cO_X}(M,"
+  },
+  "note": "As in 2.3."
+ },
+ {
+  "page": 431,
+  "where": "Lemme 2.4, display, right member M ⊗_{O_X'} Tor_i^{O_X}(O_X',O_X'')",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "M\\otimes_{\\cO_{X'}}\\Tor_i^{\\cO_X}",
+   "new": "M\\otimes_{\\cO_{X'}}\\underline{\\Tor}_i^{\\cO_X}"
+  },
+  "note": "As in 2.3."
+ },
+ {
+  "page": 431,
+  "where": "'Il suffit de définir un isomorphisme fonctoriel dans le cas affine'",
+  "scan": "begins a new, indented paragraph after the display of Lemme 2.4 (both scans)",
+  "tex": "'\\end{equation}' followed directly by 'Il suffit' (the paragraph runs on)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nIl suffit",
+   "new": "\\end{equation}\n\nIl suffit"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 431,
+  "where": "'Soient alors X = Spec(A), X' = Spec(A'), X'' = Spec(A'') ; M est défini'",
+  "scan": "begins a new, indented paragraph after '... dans le cas général.' (both scans)",
+  "tex": "'... dans le cas général. Soient alors' in one paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "dans le cas général. Soient alors",
+   "new": "dans le cas général.\n\nSoient alors"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 431,
+  "where": "'M est défini par un A'-module plat M, Soit P. une résolution projective'",
+  "scan": "'plat M, Soit': a comma after the (overstruck) M before the capital S (both scans; crops_431_435/c431_Msoit.png, w431_Msoit.png)",
+  "tex": "plat \\(M\\). Soit (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "plat \\(M\\). Soit",
+   "new": "plat \\(M\\), Soit"
+  },
+  "corrected": "plat \\(M\\). Soit",
+  "note": "Typist's comma for the full stop that the capital 'Soit' requires. The current layer also reads '\\(M\\). Soit' (the corrected edition keeps it)."
+ },
+ {
+  "page": 431,
+  "where": "'Par ailleurs, l'isomomorphisme canonique : M ⊗_{A'}(A'⊗_A P.) ≃ M ⊗_A P.'",
+  "scan": "'l'isomomorphisme' (both scans; crops_431_435/c431_isomom.png, w431_isomom.png)",
+  "tex": "l'isomorphisme (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Par ailleurs, l'isomorphisme",
+   "new": "Par ailleurs, l'isomomorphisme"
+  },
+  "corrected": "Par ailleurs, l'isomorphisme",
+  "note": "Doubled syllable of the typist. The current layer also reads 'l'isomorphisme'."
+ },
+ {
+  "page": 432,
+  "where": "start of page (folio-432 marker)",
+  "scan": "p. 431 ends 'il existe un voisinage ouvert'; p. 432 begins 'U de x, et une suite de sections f_1,...' (both scans; crops_431_435/w432_top.png)",
+  "tex": "page_431.tex ends 'il existe un voisinage ouvert \\(U\\) de \\(x\\), et une' above the folio-432 marker; page_432.tex begins 'suite de sections'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 432 really begins at '\\(U\\) de \\(x\\), et une'. Exact edit in main.tex, both layers (diplomatic lines 10789-10791, current 10795-10797): replace 'il existe un voisinage ouvert \\(U\\) de \\(x\\), et une\\n%%%%%%%%%%  scan idx 445  |  folio 432  %%%%%%%%%%\\nsuite de sections' by 'il existe un voisinage ouvert\\n%%%%%%%%%%  scan idx 445  |  folio 432  %%%%%%%%%%\\n\\(U\\) de \\(x\\), et une suite de sections' (old string once per layer; simulated: crops_431_435/sim_markers.py). The statement runs on, so no blank line."
+ },
+ {
+  "page": 432,
+  "where": "Proposition 2.5: 'si la suite f_1,...,f_p,g_1,...g_r,h_1,...,h_s est régulière'",
+  "scan": "'g_1,...g_r': no comma between the dots and g_r (both scans; crops_431_435/c432_suite.png, w432_top.png); the four other lists of the page have it",
+  "tex": "g_1,\\ldots,g_r (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\ldots,g_r,h_1,\\ldots,h_s\\) est",
+   "new": "\\ldots g_r,h_1,\\ldots,h_s\\) est"
+  },
+  "corrected": "g_1,\\ldots,g_r",
+  "note": "Dropped comma of the typist. The current layer also reads 'g_1,\\ldots,g_r'."
+ },
+ {
+  "page": 432,
+  "where": "Proposition 2.5 i), left member Tor_i^{O_X}(O_Y,O_Z)",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tor_i^{\\cO_X}(\\cO_Y,\\cO_Z)\\xrightarrow",
+   "new": "\\underline{\\Tor}_i^{\\cO_X}(\\cO_Y,\\cO_Z)\\xrightarrow"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 432,
+  "where": "Proposition 2.5 i), right member ∧^i Tor_1^{O_X}(O_Y,O_Z)",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigwedge^i\\Tor_1^{\\cO_X}(\\cO_Y,\\cO_Z);",
+   "new": "\\bigwedge^i\\underline{\\Tor}_1^{\\cO_X}(\\cO_Y,\\cO_Z);"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 432,
+  "where": "Proposition 2.5 ii), Tor_1^{O_X}(O_Y,O_Z) ≃ I∩J/I.J",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tor_1^{\\cO_X}(\\cO_Y,\\cO_Z)\\simeq",
+   "new": "\\underline{\\Tor}_1^{\\cO_X}(\\cO_Y,\\cO_Z)\\simeq"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 432,
+  "where": "Proposition 2.5 i'), left member Tor_i^{O_X}(O_Y,O_Y)",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tor_i^{\\cO_X}(\\cO_Y,\\cO_Y)\\xrightarrow",
+   "new": "\\underline{\\Tor}_i^{\\cO_X}(\\cO_Y,\\cO_Y)\\xrightarrow"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 432,
+  "where": "Proposition 2.5 i'), right member ∧^i Tor_1^{O_X}(O_Y,O_Y)",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigwedge^i\\Tor_1^{\\cO_X}(\\cO_Y,\\cO_Y);",
+   "new": "\\bigwedge^i\\underline{\\Tor}_1^{\\cO_X}(\\cO_Y,\\cO_Y);"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 432,
+  "where": "Proposition 2.5 ii'), Tor_1^{O_X}(O_Y,O_Y) ≃ N_{Y/X}",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tor_1^{\\cO_X}(\\cO_Y,\\cO_Y)\\simeq",
+   "new": "\\underline{\\Tor}_1^{\\cO_X}(\\cO_Y,\\cO_Y)\\simeq"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 432,
+  "where": "proof of Proposition 2.5, first words",
+  "scan": "the indented paragraph 'i) On a vu en 2.3 que ⊕ Tor_i^{O_X}(O_Y,O_Z) pouvait être muni ...' follows ii') directly; no label (both scans; crops_431_435/w432_bot.png)",
+  "tex": "\\emph{Démonstration.} i) On a vu",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Démonstration.} i) On a vu",
+   "new": "i) On a vu"
+  },
+  "note": "The transcription's proof label, as on pp. 416, 418, 420 (findings_416_420; main.tex line 10813)."
+ },
+ {
+  "page": 432,
+  "where": "proof i): 'On a vu en 2.3 que ⊕_{i≥0} Tor_i^{O_X}(O_Y,O_Z) pouvait être muni'",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigoplus_{i\\ge0}\\Tor_i^{\\cO_X}(\\cO_Y,\\cO_Z)\\) pouvait",
+   "new": "\\bigoplus_{i\\ge0}\\underline{\\Tor}_i^{\\cO_X}(\\cO_Y,\\cO_Z)\\) pouvait"
+  },
+  "note": "As on p. 431; independent of the label entry above."
+ },
+ {
+  "page": 432,
+  "where": "(2.5.1), left member ∧ Tor_1^{O_X}(O_Y,O_Z)",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigwedge \\Tor_1^{\\cO_X}",
+   "new": "\\bigwedge \\underline{\\Tor}_1^{\\cO_X}"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 432,
+  "where": "(2.5.1), right member ⊕_{i≥0} Tor_i^{O_X}(O_Y,O_Z)",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigoplus_{i\\ge0}\\Tor_i^{\\cO_X}(\\cO_Y,\\cO_Z),",
+   "new": "\\bigoplus_{i\\ge0}\\underline{\\Tor}_i^{\\cO_X}(\\cO_Y,\\cO_Z),"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 433,
+  "where": "'de type fini, les Tor_i^{O_X}(O_Y,O_Z) sont les faisceaux d'homologie'",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "fini, les \\(\\Tor_i^{\\cO_X}",
+   "new": "fini, les \\(\\underline{\\Tor}_i^{\\cO_X}"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 433,
+  "where": "'On considère la suite spectrale telle que 'E²_{pq} = H^I_p(H^{II}_q(K..))'",
+  "scan": "'K..': two dots side by side, no comma (both scans; crops_431_435/c433_Kdd.png, w433_top.png)",
+  "tex": "K_{\\bullet,\\bullet}",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "K_{\\bullet,\\bullet}",
+   "new": "K_{\\bullet\\bullet}"
+  },
+  "note": "The comma between the two indices is the TeX's addition."
+ },
+ {
+  "page": 433,
+  "where": "'car les immersions Z → X, et T → Z → X sont régulières'",
+  "scan": "a comma after 'Z → X' (both scans; crops_431_435/c433_ZXet.png, w433_mid.png)",
+  "tex": "\\(Z\\to X\\) et \\(T\\to Z\\to X\\)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(Z\\to X\\) et",
+   "new": "\\(Z\\to X\\), et"
+  },
+  "note": ""
+ },
+ {
+  "page": 433,
+  "where": "'Par conséquent la suite spectrale dégénère, et les Tor_i^{O_X}(O_Y,O_Z) sont'",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dégénère, et les \\(\\Tor_i^{\\cO_X}",
+   "new": "dégénère, et les \\(\\underline{\\Tor}_i^{\\cO_X}"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 433,
+  "where": "(2.5.2), left member Tor_i^{O_X}(O_Y,O_Z)",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tag{2.5.2}\n\\Tor_i",
+   "new": "\\tag{2.5.2}\n\\underline{\\Tor}_i"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 433,
+  "where": "(2.5.2), second arrow: 'O_T⊗_{O_X} ∧^iE → ∧^i(O_T)^p'",
+  "scan": "a plain arrow without tilde; the first arrow of the display carries its tilde (both scans; crops_431_435/c433_arrow2.png, w433_mid.png)",
+  "tex": "\\xrightarrow{\\sim} (both arrows)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\xrightarrow{\\sim}\n\\bigwedge^i(\\cO_T)^p",
+   "new": "\\longrightarrow\n\\bigwedge^i(\\cO_T)^p"
+  },
+  "note": ""
+ },
+ {
+  "page": 433,
+  "where": "'En particulier, on trouve pour i = 1 :'",
+  "scan": "begins a new, indented paragraph after (2.5.2) (both scans)",
+  "tex": "'\\end{equation}' followed directly by 'En particulier' (the paragraph runs on)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nEn particulier",
+   "new": "\\end{equation}\n\nEn particulier"
+  },
+  "note": "Missing paragraph break. 'd'où pour tout i :' below continues at the left margin, as in the TeX."
+ },
+ {
+  "page": 433,
+  "where": "display for i = 1: Tor_1^{O_X}(O_Y,O_Z) ≃ (O_T)^n",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tor_1^{\\cO_X}",
+   "new": "\\underline{\\Tor}_1^{\\cO_X}"
+  },
+  "note": "As on p. 431; the old stops before the misprinted exponent of the next entry."
+ },
+ {
+  "page": 433,
+  "where": "display for i = 1: 'Tor_1^{O_X}(O_Y,O_Z) ≃ (O_T)^n ,'",
+  "scan": "exponent n (both scans; crops_431_435/w433_bot.png)",
+  "tex": "(\\cO_T)^n (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(\\cO_T)^p",
+  "note": "E = (O_X)^p, and (2.5.2) for i = 1 gives ∧^1(O_T)^p; the proof has no n. The current layer already reads (\\cO_T)^p."
+ },
+ {
+  "page": 433,
+  "where": "(2.5.3), left member Tor_i^{O_X}(O_Y,O_Z)",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\tag{2.5.3}\n\\Tor_i",
+   "new": "\\tag{2.5.3}\n\\underline{\\Tor}_i"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 433,
+  "where": "(2.5.3), right member ∧^i Tor_i^{O_X}(O_Y,O_Z)",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigwedge^i\\Tor",
+   "new": "\\bigwedge^i\\underline{\\Tor}"
+  },
+  "note": "As on p. 431; the old stops before the misprinted index of the next entry."
+ },
+ {
+  "page": 433,
+  "where": "(2.5.3), right member: '∧^i Tor_i^{O_X}(O_Y,O_Z)'",
+  "scan": "the Tor under ∧^i has the index i (both scans; crops_431_435/c433_253.png, w433_bot.png)",
+  "tex": "\\bigwedge^i\\Tor_i^{\\cO_X}(\\cO_Y,\\cO_Z) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\bigwedge^i\\underline{\\Tor}_1^{\\cO_X}(\\cO_Y,\\cO_Z)",
+  "note": "(2.5.3) follows from (2.5.2) and the case i = 1: Tor_i ≃ ∧^i Tor_1, as in 2.5 i). 'corrected' is given with the underline of the entry above. The current layer already reads \\bigwedge^i\\Tor_1."
+ },
+ {
+  "page": 434,
+  "where": "'Or il résulte de 2.2 que l'isomorphisme :'",
+  "scan": "a colon after 'l'isomorphisme' (both scans; crops_431_435/w434_top.png)",
+  "tex": "que l'isomorphisme (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "que l'isomorphisme\n\\[",
+   "new": "que l'isomorphisme:\n\\["
+  },
+  "note": ""
+ },
+ {
+  "page": 434,
+  "where": "first display: '∧(O_T)^n ≃ ⊕_{i≥0} Tor_i^{O_X}(O_Y,O_Z)'",
+  "scan": "exponent n (both scans; crops_431_435/w434_top.png)",
+  "tex": "\\bigwedge(\\cO_T)^n (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\bigwedge(\\cO_T)^p",
+  "note": "The isomorphism is 'défini par les isomorphismes (2.5.2)', whose terms are ∧^i(O_T)^p; the same n as on p. 433. The current layer still reads (\\cO_T)^n here, although it corrects p. 433: the corrected edition needs (\\cO_T)^p."
+ },
+ {
+  "page": 434,
+  "where": "first display, right member ⊕_{i≥0} Tor_i^{O_X}(O_Y,O_Z)",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tor_i^{\\cO_X}(\\cO_Y,\\cO_Z)\n\\]\ndéfini par les isomorphismes (2.5.2)",
+   "new": "\\underline{\\Tor}_i^{\\cO_X}(\\cO_Y,\\cO_Z)\n\\]\ndéfini par les isomorphismes (2.5.2)"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 434,
+  "where": "'il en est donc de même pour l'isomorphisme :'",
+  "scan": "a colon after 'l'isomorphisme' (both scans; crops_431_435/w434_top.png)",
+  "tex": "pour l'isomorphisme (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "pour l'isomorphisme\n\\[",
+   "new": "pour l'isomorphisme:\n\\["
+  },
+  "note": ""
+ },
+ {
+  "page": 434,
+  "where": "second display, left member ∧ Tor_i^{O_X}(O_Y,O_Z)",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\bigwedge\\Tor",
+   "new": "\\bigwedge\\underline{\\Tor}"
+  },
+  "note": "As on p. 431; the old stops before the misprinted index of the next entry."
+ },
+ {
+  "page": 434,
+  "where": "second display, left member: '∧ Tor_i^{O_X}(O_Y,O_Z)'",
+  "scan": "index i under the ∧ (both scans; crops_431_435/c434_disp2.png, w434_top.png)",
+  "tex": "\\bigwedge\\Tor_i^{\\cO_X}(\\cO_Y,\\cO_Z) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\bigwedge\\underline{\\Tor}_1^{\\cO_X}(\\cO_Y,\\cO_Z)",
+  "note": "The exterior algebra of Tor_1, as in (2.5.1) and (2.5.3). 'corrected' is given with the underline of the entry above. The current layer already reads \\bigwedge\\Tor_1."
+ },
+ {
+  "page": 434,
+  "where": "second display, right member ⊕_{i≥0} Tor_i^{O_X}(O_Y,O_Z)",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Tor_i^{\\cO_X}(\\cO_Y,\\cO_Z)\n\\]\ndéfini par les isomorphismes (2.5.3)",
+   "new": "\\underline{\\Tor}_i^{\\cO_X}(\\cO_Y,\\cO_Z)\n\\]\ndéfini par les isomorphismes (2.5.3)"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 434,
+  "where": "'et la suite exacte des Tor qui en résulte :'",
+  "scan": "Tor underlined (both scans; crops_431_435/w434_top.png)",
+  "tex": "des Tor qui (plain text)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "des Tor qui",
+   "new": "des \\(\\underline{\\Tor}\\) qui"
+  },
+  "note": "The sheaf Tor in running text, as '«~$\\underline{\\Tor}$ simultanés' (findings_046_050)."
+ },
+ {
+  "page": 434,
+  "where": "exact sequence '0 → Tor_1^{O_X}(O_Y,O_Z) → I⊗_{O_X}O_Z → O_Z .'",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "0\\longrightarrow\\Tor_1",
+   "new": "0\\longrightarrow\\underline{\\Tor}_1"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 434,
+  "where": "'Il en résulte que Tor_1^{O_X}(O_Y,O_Z) est le noyau de l'homomorphisme :'",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "que \\(\\Tor_1",
+   "new": "que \\(\\underline{\\Tor}_1"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 435,
+  "where": "'comme Tor_1^{O_X}(O_Y,O_Z) est de rang p d'après la démonstration du i)'",
+  "scan": "Tor underlined, the sheaf Tor of O_X-Modules (both scans)",
+  "tex": "\\Tor plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "comme \\(\\Tor_1",
+   "new": "comme \\(\\underline{\\Tor}_1"
+  },
+  "note": "As on p. 431."
+ },
+ {
+  "page": 435,
+  "where": "K˙ on p. 435 (2.6 and Proposition 2.7): 'les K˙ formés', 'i_* : K˙(Y) → K˙(X)', 'x ∈ K˙(Y)', 'dans K˙(Y)'",
+  "scan": "K with a raised dot, five places (both scans; crops_431_435/w435_bot.png)",
+  "tex": "K^\\circ (five places)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "The Exposé VII convention reported in findings_416_420 (K^\\circ for the print's K˙, 173 in folios 416-465; one script K^\\circ -> K^{\\bullet} for VII, both layers): not itemized. Three examples: 'que les \\(K^\\circ\\) formés' -> 'que les \\(K^{\\bullet}\\) formés'; '\\(i_*:K^\\circ(Y)\\longrightarrow K^\\circ(X)\\)' -> '\\(i_*:K^{\\bullet}(Y)\\longrightarrow K^{\\bullet}(X)\\)'; 'pour tout \\(x\\in K^\\circ(Y)\\)' -> 'pour tout \\(x\\in K^{\\bullet}(Y)\\)'."
+ },
+ {
+  "page": 435,
+  "where": "2.6: 'la classe du complexe R̳i_*(L˙) = i_*(L˙)'",
+  "scan": "R with a double underline, the double-struck R of the derived functor (both scans; crops_431_435/c435_Ri.png, w435_bot.png)",
+  "tex": "\\(Ri_*(L^\\bullet)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(Ri_*(L^\\bullet)",
+   "new": "\\(\\mathbb Ri_*(L^\\bullet)"
+  },
+  "note": "Double-struck R written plain (reported singly as asked); \\mathbb R as in the applied fixes of pp. 167-217. Page 436 has the same: \\mathrm L i^*(Ri_*(M)) and Ri_*(M) for the print's double-underlined L and R."
+ },
+ {
+  "page": 435,
+  "where": "Proposition 2.7, the display",
+  "scan": "no equation number: 'i*(i_*(x)) = x.λ_{-1}(N) ,' stands alone, its left margin empty (both scans; crops_431_435/c435_disp.png, w435_bot.png)",
+  "tex": "\\begin{equation}\\tag{2.7.1}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\begin{equation}\\tag{2.7.1}",
+   "new": "\\begin{equation}\\notag"
+  },
+  "note": "The number is the TeX's addition; Exposé VII never cites (2.7.1) (main.tex has it only as this tag in folios 416-465)."
+ },
+ {
+  "page": 435,
+  "where": "end of page: the proof label of Proposition 2.7",
+  "scan": "p. 435 ends with 'où N est la classe de N dans K˙(Y), et λ_{-1}(N) = Σ (-1)^i λ^i(N).'; p. 436 begins with the indented paragraph 'Comme les deux membres de la relation à démontrer sont additifs ...'; no label on either page (both scans; crops_431_435/w436_top.png)",
+  "tex": "\\emph{Démonstration.} (last line of page_435.tex)",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Démonstration.}",
+   "new": ""
+  },
+  "note": "The transcription's proof label (main.tex line 10893), as on p. 432. Leaves a blank line before the folio-436 marker, so 'Comme les deux membres' stays a new paragraph, as printed."
+ }
+]

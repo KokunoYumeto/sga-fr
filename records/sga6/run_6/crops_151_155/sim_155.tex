@@ -1,0 +1,27 @@
+% from main.tex
+%%%%%%%%%%  scan idx 168  |  folio 155  %%%%%%%%%%
+autre que l'isomorphisme bien connu. Si \(E\) est facteur direct d'un Module libre de type fini, un homomorphisme de \(E\) dans \(E\) au-dessus de \(U\) est défini localement par
+\[
+  e\longmapsto \sum\langle e,x_i^\vee\rangle x_i,
+\]
+où \(x_i\) (resp. \(x_i^\vee\)) est une section locale de \(E\) (resp. \(E^\vee\)); la trace correspondante est \(\sum\langle x_i,x_i^\vee\rangle\). On en déduit facilement que si \(E\) et \(F\) sont des facteurs directs de Modules libres de type fini, et si \(u:(E+F)|U\longrightarrow(E+F)|U\) est défini par une matrice \(\begin{pmatrix}a&b\\ c&d\end{pmatrix}\), on a
+\[
+  \Tr_{(E+F)|U}(u)=\Tr_{E|U}(a)+\Tr_{F|U}(d).
+\]
+
+\textbf{8.1.2.} Soient \(E\) un complexe strictement parfait, \(U\in\Ob S\), \(u:E|U\longrightarrow E|U\) un homomorphisme de complexes, de composantes \(u^i:E^i|U\to E^i|U\). On a alors
+\[
+  \Tr_{E|U}(u)=\sum(-1)^i\Tr_{E^i|U}(u^i).
+\]
+En effet, la question étant locale, on peut supposer que \(u\) est défini par une section de \(\underline{H}^0(E^\vee\otimes E)\), et même que cette section est du type \(\coprod_i\sum_j x_{ij}^\vee\otimes x_{ij}\), où \(x_{ij}\) (resp. \(x_{ij}^\vee\)) est une section de \(E^i\) (resp. \(E^{i\vee}\)). Explicitant la flèche (7.5) \(E^\vee\otimes E\to A\), on trouve
+\[
+  \Tr_{E|U}(u)=\sum(-1)^i\langle x_{ij},x_{ij}^\vee\rangle
+  =\sum(-1)^i\Tr_{E^i|U}(u^i),
+\]
+cqfd.
+
+\textbf{8.2.} Soient \(E,F\in\Ob\Dpx(S)_{\underline{\mathrm{parf}}}\). On a vu (7.8) qu'il existe un homomorphisme canonique
+\[
+  \gamma:\mathbb{R}\underline{\Hom}(E,F)\otL\mathbb{R}\underline{\Hom}(F,E)\longrightarrow A.
+\]
+Soit \(U\in\Ob S\), et donnons-nous \(u\in H^0(U,\mathbb{R}\underline{\Hom}(E,F))\) et \(v\in H^0(U,\mathbb{R}\underline{\Hom}(F,E))\).

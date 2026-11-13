@@ -1,0 +1,29 @@
+% from main.tex
+%%%%%%%%%%  scan idx 513  |  folio 500  %%%%%%%%%%
+annulés par $I$, donc de $\mathcal O_{X'}$-Modules, et on a :
+\[
+\cl(H)\in \operatorname{Im}K_\bullet(X'),\qquad
+\cl(K)\in \operatorname{Im}K_\bullet(X'),
+\]
+d'où le résultat. On définit donc une fonction sur la catégorie des $\mathcal O_U$-Modules cohérents à valeurs dans $K_\bullet(X)/\operatorname{Im}K_\bullet(X')$ en associant à tout $\mathcal O_U$-Module cohérent la classe d'un de ses prolongements sur $X$.
+
+Cette fonction est additive. En effet, soit :
+\[
+0\longrightarrow G'\longrightarrow G\longrightarrow G''\longrightarrow 0
+\]
+une suite exacte de $\mathcal O_U$-Module cohérents. Soit $F$ un prolongement de $G$ sur $X$; alors il existe un sous-Module $F'$ de $F$ prolongeant $G'$, et $F/F'$ prolonge $G''$. Elle se factorise donc par $K_\bullet(U)$, ce qui définit l'homomorphisme $K_\bullet(U)\to K_\bullet(X)/\operatorname{Im}K_\bullet(X')$ cherché. On vérifie immédiatement qu'il est inverse de $\rho$.
+
+\textbf{Proposition 1.2.} Soient $X,S$ deux schémas noethérien, et $f$ un morphisme plat de $X$ dans $S$. On se donne une famille d'éléments $(\xi_i)_{i\in I}$ de $K^\circ(X)$, et on considère l'homomorphisme :
+\[
+\varphi:(K_\bullet(S))^{(I)}\longrightarrow K_\bullet(X)
+\]
+défini par :
+\[
+\varphi((x_i)_{i\in I})=\sum_{i\in I}\xi_i\cdot f^*(x_i),
+\]
+où $f^*$ est l'homomorphisme «~image inverse~» de $K_\bullet(S)$ dans $K_\bullet(X)$, défini d'après IV 2.12, et où $K_\bullet(X)$ est considéré comme $K^\circ(X)$-module par IV 2.10. On suppose que pour tout point $s\in S$, les images des $\xi_i$ dans $K_\bullet(X_s)$ par l'homomorphisme
+\[
+K^\circ(X)\longrightarrow K^\circ(X_s)\longrightarrow K_\bullet(X_s)
+\]
+engendrent $K_\bullet(X_s)$ comme groupe abélien. Alors $\varphi$ est surjective.
+

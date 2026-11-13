@@ -1,0 +1,32 @@
+% from main.tex
+%%%%%%%%%%  scan idx 130  |  folio 117  %%%%%%%%%%
+Celle-ci est un isomorphisme lorsque \(F\) est pseudo-cohérent.
+
+\textbf{b)} Supposons \(A\) commutatif et cohérent, et soient \(F\in\Ob\Dpx^-(S)\), \(G\in\Ob\Dpx^+(S)\). Si \(\Ho^i(F)\) et \(\Ho^i(G)\) sont cohérents pour tout \(i\), il en est de même de \(\Ext^i(F,G)\).
+
+\emph{Preuve.} a) Pour définir la flèche (cf. SGA 4 XVII), on peut supposer \(G\) à composantes injectives, et l'on prend la flèche composée
+\[
+  f^*\Hom(F,G)\longrightarrow\Hom(f^*F,f^*G)\longrightarrow\RHom(f^*F,f^*G).
+\]
+Montrons qu'elle est un isomorphisme pour \(F\) pseudo-cohérent. Notons pour abréger \(T\) (resp. \(T'\)) le foncteur \(f^*\RHom(\cdot,G)\) (resp. \(\RHom(f^*\cdot,f^*G)\)), et soit \(a\in\mathbb Z\) tel que \(\Ho^i(G)=0\) pour \(i<a\). Il est clair que l'on a \(TA\qis T'A\), donc, par dévissage, \(TF\qis T'F\) pour \(F\) strictement parfait (2.1). D'autre part, si \(F\) est acyclique en degré \(>n\), \(TF\) et \(T'F\) sont acycliques en degré \(<a-n\). Pour vérifier que \(TF\qis T'F\) pour \(F\) pseudo-cohérent, on peut, la question étant locale, supposer \(F\) strictement \(n\)-pseudo-cohérent, i.e. que l'on a un triangle distingué
+\[
+\begin{tikzcd}[column sep=small]
+& F'' \arrow[dl,"+1"'] & \\
+F' \arrow[rr] & & F \arrow[ul]
+\end{tikzcd}
+\;,
+\]
+avec \(F'\) strictement parfait et \(F''\) acyclique en degré \(>n-1\). On en déduit un morphisme de triangles distingués
+\[
+\begin{tikzcd}[column sep=small]
+& TF'' \arrow[dr] & \\
+TF' \arrow[ur,"-1"'] & & TF \arrow[ll]
+\end{tikzcd}
+\qquad\longrightarrow\qquad
+\begin{tikzcd}[column sep=small]
+& T'F'' \arrow[dr] & \\
+T'F' \arrow[ur,"-1"'] & & T'F \arrow[ll]
+\end{tikzcd}
+\;.
+\]
+Or \(TF'\qis T'F'\) puisque \(F'\) est strictement parfait, et \(TF''\) et \(T'F''\) sont

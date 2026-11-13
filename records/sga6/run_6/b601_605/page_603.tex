@@ -1,0 +1,25 @@
+% from main.tex
+%%%%%%%%%%  scan idx 616  |  folio 603  %%%%%%%%%%
+section donnée de \(X\)), le sous-foncteur de \(\Isom(L,M)\) formée des isomorphismes compatibles avec ces rigidifications est représentable par un fermé de \(\Isom(L,M)\).
+\end{enumerate}
+En effet, ii) est clair. Quant à i), rappelons-nous que les foncteurs \(T\mapsto\Hom(L_T,M_T)\) et \(T\mapsto\Hom(M_T,L_T)\) sont représentables par des fibrés vectoriels \(\mathbb V(E)\) et \(\mathbb V(F)\) (d'après EGA III 7.7.8). Alors, si \(u\in\Hom(L_T,M_T)\) et \(v\in\Hom(M_T,L_T)\), les conditions \(u\circ v=1\) et \(v\circ u=1\) définissent un fermé \(F\) de \(\mathbb V(E)\times_S\mathbb V(F)\) et il est clair que \(F\simeq I\).
+
+\textbf{2.5.} Finalement réduisons l'assertion II' à l'assertion suivante:
+
+\(\mathrm{II}^*\). Le théorème 1.1 lorsque \(X\) et \(Y\) sont intègres sur \(S\) et que la suite
+\begin{equation}\tag{*}
+  \mathcal O_Y
+  \longrightarrow f_*\mathcal O_Y
+  \rightrightarrows g_*\bigl(\mathcal O_{X\times_yX}\bigr)
+\end{equation}
+(où \(g:X\times_yX\to Y\) est le morphisme structural) est exacte.
+
+En fait, il suffit pour ceci de prouver qu'il existe une factorisation de \(f\)
+\[
+  X\xrightarrow{f_0}Y_0\xrightarrow{f_1}Y_1\longrightarrow\cdots\xrightarrow{f_\eta}Y_\eta=Y
+\]
+telle que tout \(f_i\) satisfasse à (*) et, quitte à restreindre \(S\), tout \(Y_i\) soit intègre sur \(S\).
+
+Pour ceci, on pose \(Y_0=\Spec(f_*(\mathcal O_X))\), \(f_0\) provenant de la factorisation de Stein de \(f\) (EGA III 4.3.3), de sorte que \(f_{0*}(\mathcal O_X)\xleftarrow{\sim}\mathcal O_{Y_0}\), et que \(f_0\) satisfait donc bien à (*). Pour factoriser de même \(Y_0\to Y\), on utilise le
+
+\textbf{Lemme 2.6.} Soient \(Y\) un schéma noethérien, \(f:X\to Y\) un épimorphisme fini (i.e. tel que \(\mathcal O_Y\to f_*(\mathcal O_X)\) soit injectif), alors \(f\) se factorise en une suite finie de morphismes finis \(f_i\) \(X\simeq Y_0\xrightarrow{f_1}Y_1\longrightarrow\cdots\longrightarrow Y_n=Y\) qui sont des épimorphismes effectifs (i.e. tel que la suite \(\mathcal O_{Y_i}\longrightarrow (f_i)_*(\mathcal O_{Y_{i-1}})\rightrightarrows (g_i)_*\bigl(\mathcal O_{Y_{i-1}}\otimes_{\mathcal O_{Y_i}}\mathcal O_{Y_{i-1}}\bigr)\)

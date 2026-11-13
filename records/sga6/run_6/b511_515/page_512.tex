@@ -1,0 +1,19 @@
+% from main.tex
+%%%%%%%%%%  scan idx 525  |  folio 512  %%%%%%%%%%
+alors, d'après IV (2.12.4) :
+\[
+f_*\left(\sum_{i=0}^{n-1}\xi^{-i}f^*(x_i)\right)
+=\sum_{i=0}^{n-1}x_i f_*(\xi^{-i})=x_0,
+\]
+la dernière égalité résultant de ce que pour $-n+1\le i<0$, on a $f_*(\xi^i)=0$ (VI 2.8). Supposons que $\varphi((x_i))=0$. Alors ce qui précède montre que $x_0=0$; appliquant le même raisonnement aux éléments $\xi^i\varphi((x_i))$ pour $i=1,\ldots,n-1$, on en déduit par récurrence que les $x_i$ sont tous nuls, d'où l'injectivité.
+
+\textbf{3.3.} Soient toujours $S$ un schéma noethérien, et $E$ un $\mathcal O_S$-Module localement libre de rang $n$. On note $V=\mathbb V(E)$ le fibré vectoriel (contravariant en $E$!) associé à $E$ (SGA 3 I 4.6), considéré comme schéma en groupes sur $S$. Soit $P$ un torseur sous $V$; on se propose de calculer $K_\bullet(P)$.
+
+Rappelons comment on peut plonger $P$ dans un fibré projectif sur $S$. Les torseurs sous $V$ correspondent aux extensions $F$ de $E$ par $\mathcal O_S$. En effet, si on a une extension :
+\[
+0\longrightarrow \mathcal O_S\xrightarrow{s}F\xrightarrow{u}E\longrightarrow 0,
+\tag{3.3.1}
+\]
+on en déduit un torseur sous $V$ en considérant l'homomorphisme $\mathbb V(F)\to \mathbb V(\mathcal O_S)$ défini par $s$, la section de $\mathbb V(\mathcal O_S)=\Spec(\mathcal O_S[T])$ définie par $T=1$, et en prenant $P=\mathbb V(F)\times_{\mathbb V(\mathcal O_S)}S$, les opérations de $V$ sur $P$ étant induites par celles de $V$ sur $\mathbb V(F)$.
+En sens inverse, soit $P$ un torseur sous $V$. On note $\underline P$ le faisceau des germes d'homomorphismes de $S$ dans $P$; c'est un faisceau principal homogène sous le faisceau des germes d'homomorphismes de $S$ dans $V$, qui s'identifie au dual $\check E$ de $E$. On en déduit alors de façon classique une extension de $\mathcal O_S$ par $\check E$, d'où en passant aux duaux la suite (3.3.1),
+

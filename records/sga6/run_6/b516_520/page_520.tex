@@ -1,0 +1,20 @@
+% from main.tex
+%%%%%%%%%%  scan idx 533  |  folio 520  %%%%%%%%%%
+\begin{equation}\tag{1.1.3}
+\cl_\bullet(F)=\sum_{x\in X(n)}\longg(F_x)\cl_\bullet(\mathcal O_{Z(x)})+w,
+\end{equation}
+où $w\in\Filt_{n-1}(X)$.
+
+On en déduit par récurrence immédiate sur $n$ :
+
+\textbf{Corrollaire 1.1.4.} Pour tout schéma noethérien $X$ et pour tout entier $n$, $\Filt_n(X)$ est le sous-groupe de $K_\bullet(X)$ engendré par les classes $\cl_\bullet(\mathcal O_Z)$, où $Z$ parcourt l'ensemble des sous-schémas intègres fermés de dimension $\leq n$ de $X$.
+
+\emph{Démonstration de 1.1.2 :} Soit $X'=\Supp(F)$. Comme $X'$ est un espace noethérien de dimension $\leq n$, les éléments de $X'\cap X(n)$ sont maximaux dans $X'$, donc en nombre fini, et $\longg(F_x)$ est finie pour tout $x\in X'\cap X(n)$. Cela prouve la première assertion.
+
+Soit $\mathcal K=\Coh(X)$ la catégorie des $\mathcal O_X$-modules cohérents et soit $\mathcal K'$ le sous-ensemble de $\operatorname{Ob}(\mathcal K)$ formé des $\mathcal O_X$-modules cohérents concentrés sur $X'$ qui satisfont à la condition (1.1.3). Évidemment $\mathcal K'$ contient les faisceaux $\mathcal O_{Z(x)}$, avec $x\in X'$. Il suffit donc de montrer que $\mathcal K'$ est un sous-ensemble exact de $\operatorname{Ob}(\mathcal K)$, car alors le lemme de dévissage (EGA III 3.1.2) donne $F\in\mathcal K'$.
+
+Soit donc
+\begin{equation}\tag{1.1.5}
+0\longrightarrow G'\longrightarrow G\longrightarrow G''\longrightarrow0
+\end{equation}
+une suite exacte de $\mathcal O_X$-modules ayant deux des membres dans $\mathcal K'$. Alors les faisceaux $G'$, $G$ et $G''$ sont tous concentrés sur $X'$, donc les longueurs $\ell'_x$, $\ell_x$ et $\ell''_x$ des $\mathcal O_{X,x}$-modules $G'_x$, $G_x$ et $G''_x$ sont finies

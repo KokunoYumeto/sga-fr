@@ -1,0 +1,24 @@
+% from main.tex
+%%%%%%%%%%  scan idx 278  |  folio 265  %%%%%%%%%%
+morphisme \(X'\to X\), la flèche canonique
+\begin{equation}
+ H^{-p-1}(E^{\vee})\otimes_X\mathcal O_{X'}\longrightarrow H^{-p-1}((E\otimes_X^{\mathbf L}\mathcal O_{X'})^{\vee})\tag{5.3.1.1}
+\end{equation}
+, composée de \(H^{-p-1}(E^{\vee})\otimes_X\mathcal O_{X'}\longrightarrow H^{-p-1}(E^{\vee}\otimes_X^{\mathbf L}\mathcal O_{X'})\) et de la flèche canonique (I 7.1.2) \(H^{-p-1}(E^{\vee}\otimes_X^{\mathbf L}\mathcal O_{X'})\longrightarrow H^{-p-1}((E\otimes_X^{\mathbf L}\mathcal O_{X'})^{\vee})\), est un isomorphisme.
+
+\emph{Preuve.} \(\mathrm a)\Longrightarrow\mathrm c)\). La question étant locale sur \(X'\), on peut supposer \(X\) (resp. \(X'\)) affine d'anneau \(A\) (resp. \(A'\)). D'après (II 3.5), on peut supposer d'autre part que l'on a \(E=\widetilde F\), où \(F\) est un complexe de \(A\)-modules. Par hypothèse (condition a')) la flèche
+\[
+ H^p(F)\otimes_A A'\longrightarrow H^p(F\otimes_A^{\mathbf L}A')
+\]
+est un isomorphisme, et l'on gagne puisque \(H^p(E)\otimes_X\mathcal O_{X'}\) (resp. \(H^p(E\otimes_X^{\mathbf L}\mathcal O_{X'})\)) s'identifie canoniquement au faisceau sur \(X'\) défini par le \(A'\)-module \(H^p(F)\otimes_A A'\) (resp. \(H^p(F\otimes_A^{\mathbf L}A')\)).
+
+\(\mathrm c)\Longrightarrow\mathrm a)\). Compte tenu de (5.2 (iv)), il suffit de prouver \(\mathrm c)\Longrightarrow\mathrm a'_{\qcoh})\). La question étant locale (puisque \(X\) est quasi-séparé), on peut supposer \(X\) affine d'anneau \(A\), et \(E=\widetilde F\), où \(F\) est un complexe de \(A\)-modules. Soit \(M=\widetilde N\) un \(\mathcal O_X\)-Module quasi-cohérent. Il s'agit de montrer que la flèche
+\[
+ H^p(F)\otimes_A N\longrightarrow H^p(F\otimes_A^{\mathbf L}N)
+\]
+est un isomorphisme. Mais, si l'on pose \(A'=D_A(N)\) (EGA \(\mathrm O_{\mathrm{IV}}\) 18.2.3), \(X'=\Spec(A')\), cela résulte de c) appliquée au morphisme canonique \(X'\to X\).
+
+Prouvons la dernière assertion. La question étant locale sur \(X'\), on peut, d'après (II 2.2.10 b)), supposer \(E\) strictement pseudo-cohérent. De plus, l'assertion ne faisant intervenir qu'une partie de longueur bornée de \(E\), on peut, quitte à tronquer, supposer \(E\) strictement parfait. Alors \((E\otimes_X^{\mathbf L}\mathcal O_{X'})^{\vee}\) s'identifie canoniquement (I 7.1.2) à \(E^{\vee}\otimes_X^{\mathbf L}\mathcal O_{X'}\), et la flèche (5.3.1.1) peut être récrite comme la flèche canonique
+\begin{equation}
+ H^{-p-1}(E^{\vee})\otimes_X\mathcal O_{X'}\longrightarrow H^{-p-1}(E^{\vee}\otimes_X^{\mathbf L}\mathcal O_{X'}).\tag{$*$}
+\end{equation}

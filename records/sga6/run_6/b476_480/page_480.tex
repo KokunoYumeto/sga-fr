@@ -1,0 +1,32 @@
+% from main.tex
+%%%%%%%%%%  scan idx 493  |  folio 480  %%%%%%%%%%
+(G) Il
+existe un $Y$-schéma lisse $V$, factorisant $f$, tel que pour toute immersion fermée : $Y\to V'$ on puisse trouver un $V'$-schéma lisse $V''$, avec $V\simeq V''\times_{V'}Y$ (cette condition est en particulier remplie si $f$ est quasi-projectif et si $Y$ a un faisceau ample, en prenant pour $V$ un $\mathbb P^r_Y$).
+
+Alors $g\circ f$ est d'intersection complète, lissifiable, et on a un triangle distingué :
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+& L^{X/Y}_\bullet \arrow[dl] \\
+Lf^*(L^{Y/Z}_\bullet) \arrow[rr] && L^{X/Z}_\bullet \arrow[ul]
+\end{tikzcd}
+\]
+Soit $V'$ un $Z$-schéma lisse factorisant $g$. On considère le diagramme commutatif :
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X \arrow[r,"i"] \arrow[dr,"f"'] & V \arrow[r,"j'"] \arrow[d,"p"] & V'' \arrow[d,"p''"]\\
+& Y \arrow[r,"j"] \arrow[dr,"g"'] & V' \arrow[d,"p'"]\\
+& & Z .
+\end{tikzcd}
+\]
+Alors l'immersion $j'$ est régulière, car déduite de $j$ par un changement de base plat. Par suite $j'\circ i$ est une immersion régulière factorisant $g\circ f$, qui est donc lissifiable et d'intersection complète. De plus, on a la suite exacte des faisceaux conormaux :
+\[
+0\longrightarrow i^*(J'/J'^2)\longrightarrow K/K^2\longrightarrow I/I^2\longrightarrow0,
+\]
+en notant $I,J,J',K$ les faisceaux définissant respectivement les immersions $i,j,j',j'\circ i$. Or, $p''$ étant plat, $J'=p''^*(J)$. La suite peut donc s'écrire :
+\begin{equation}\tag{2.6.1}
+0\longrightarrow f^*(J/J^2)\longrightarrow K/K^2\longrightarrow I/I^2\longrightarrow0.
+\end{equation}
+Par ailleurs, $V'$ et $V''$ étant lisses sur $Z$, on a la suite exacte :
+\[
+0\longrightarrow p''^*(\Omega^1_{V'/Z})\longrightarrow\Omega^1_{V''/Z}\longrightarrow\Omega^1_{V''/V'}\longrightarrow0.
+\]

@@ -1,0 +1,605 @@
+[
+ {
+  "page": 666,
+  "where": "start of page (folio-666 marker)",
+  "scan": "p. 665 ends 'On suppose que pour toute composante irréductible Y^i de Y,' (b661_665/page_665_s4.png); p. 666 begins 'les composantes irréductibles de X ∩ Y^i = V(φ|Y^i) sont de dimension ≥ 2.' (page_666_s1.png; witness crops_666_670/w666_tophalf.png)",
+  "tex": "in page_666.tex the marker stands before '\\emph{Soient $k$ un corps ...', so the first two sentences of Corollaire 7.5 (printed on p. 665) sit under the folio-666 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 666 really begins at 'les composantes irr\\'eductibles de $X\\cap Y^i=V(\\varphi|Y^i)$'. Already done: when checked (main.tex of 17:03, both layers) the marker already stands on its own line between 'de $Y$, ' and 'les composantes irr\\'eductibles' (the same as python -I move_marker.py 6 666 'les composantes irr'), so nothing is left to apply; listed because the batch file still had the old place."
+ },
+ {
+  "page": 666,
+  "where": "heading of the bibliography",
+  "scan": "BIBLIOGRAPHIE (capitals, underlined)",
+  "tex": "\\subsection*{Bibliographie}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{Bibliographie}",
+   "new": "\\subsection*{BIBLIOGRAPHIE}"
+  },
+  "note": "The print types the heading in capitals (both scans). The other bibliographies of main.tex are written \\subsection*{BIBLIOGRAPHIE}; the missing underline of a section title is accepted as typesetting."
+ },
+ {
+  "page": 666,
+  "where": "proof of Corollaire 7.5, 'supposer Y intègre'",
+  "scan": "int + è g r underlined + e: a short typed underline under 'ègr' only (crops_666_670/c666_integre.png; witness w666_integre.png)",
+  "tex": "int\\`egre",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": {
+   "old": "int\\`egre",
+   "new": "int\\underline{\\`egr}e"
+  },
+  "corrected": "int\\`egre",
+  "note": "A stray underline under three letters of 'intègre' in both scans; it emphasizes nothing, so it is a slip of the typist. The TeX silently drops it; the fix restores the printed form for the diplomatic layer (decide whether the diplomatic layer reproduces such a stray stroke)."
+ },
+ {
+  "page": 666,
+  "where": "proof of Corollaire 7.5, 'grâce à la formule de projection'",
+  "scan": "graĉe: the circumflex stands over the c, not over the a (crops_666_670/c666_grace.png; witness w666_grace.png)",
+  "tex": "gr\\^ace",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "gr\\^ace",
+   "new": "gra\\^ce"
+  },
+  "corrected": "gr\\^ace",
+  "note": "Misplaced accent of the typist (dead key struck before the c), the same in both scans. The TeX silently corrects it; the fix restores the printed reading."
+ },
+ {
+  "page": 666,
+  "where": "bibliography [2]",
+  "scan": "Mumford D : Pathologies III, Amer. J. Math 1967 p. 94-103 / Amer. J. Math 1967 p.94-103. (the reference is typed twice, on two lines)",
+  "tex": "Amer. J. Math 1967 p. 94-103 Amer. J. Math 1967 p.94-103.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "Amer. J. Math 1967 p. 94-103.",
+  "note": "Dittography of the typist. The TeX keeps the printed reading; the current layer already has the single reference."
+ },
+ {
+  "page": 666,
+  "where": "bibliography [5]",
+  "scan": "1960-66, J.H.E.S. (the first letter has the hooked descender of the J of 'Jussila' and 'J. Math'; crops_666_670/c666_jhes.png)",
+  "tex": "J.H.E.S.",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "I.H.E.S.",
+  "note": "The Institut des Hautes Études Scientifiques is I.H.E.S. The TeX keeps the printed reading."
+ },
+ {
+  "page": 667,
+  "where": "title of Exposé XIV",
+  "scan": "'Exposé XIV' alone on the first line (underlined); then, centred, 'PROBLEMES OUVERTS EN THEORIE DES INTERSECTIONS' in capitals, double underlined, no full stop",
+  "tex": "\\section*{Exposé XIV. Problèmes ouverts en théorie des intersections}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\section*{Exposé XIV. Problèmes ouverts en théorie des intersections}",
+   "new": "\\section*{\\underline{Exposé XIV}\\\\[3pt] \\underline{\\underline{PROBLÈMES OUVERTS EN THÉORIE DES INTERSECTIONS}}}"
+  },
+  "note": "The TeX joins the two heading lines with an added full stop and sets the capital title in lower case. The fix uses the form of the headings of Exposés II, V and VI in main.tex. The typescript's capitals have no accents (PROBLEMES, THEORIE): the accented capitals stand by the global rule."
+ },
+ {
+  "page": 667,
+  "where": "author line",
+  "scan": "par A. Grothendieck (underlined)",
+  "tex": "par A. Grothendieck",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "par A. Grothendieck",
+   "new": "\\underline{par A. Grothendieck}"
+  },
+  "note": "As in the other author lines of main.tex (\\underline{par A. Grothendieck} in Exposé 0 and in the Appendix of Exposé X, p. 560)."
+ },
+ {
+  "page": 667,
+  "where": "first paragraph, line 1",
+  "scan": "quelques uns des problè- (no hyphen; crops_666_670/c667_quelques.png, witness w667_top.png)",
+  "tex": "quelques-uns",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "quelques-uns",
+   "new": "quelques uns"
+  },
+  "corrected": "quelques-uns",
+  "note": "The compound lacks its hyphen in both scans (as 'au dessus' on p. 469). The TeX silently corrects it; the fix restores the printed reading."
+ },
+ {
+  "page": 667,
+  "where": "first paragraph, reference to Kleiman",
+  "scan": "à S. KLEIMAN, Algebraic (name in capitals)",
+  "tex": "S. Kleiman,",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "S. Kleiman,",
+   "new": "S. KLEIMAN,"
+  },
+  "note": "The print types the name in capitals (both scans)."
+ },
+ {
+  "page": 667,
+  "where": "first paragraph, titles of Kleiman's paper and of the book",
+  "scan": "Algebraic cycles and the Weil conjectures dans Dix exposés sur la cohomologie des schémas (no underline on either title, no comma after 'conjectures'; crops_666_670/c667_cycles_a.png, c667_cycles_b.png)",
+  "tex": "\\emph{Algebraic cycles and the Weil conjectures}, dans \\emph{Dix exposés sur la cohomologie des schémas}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Algebraic cycles and the Weil conjectures}, dans \\emph{Dix exposés sur la cohomologie des schémas}",
+   "new": "Algebraic cycles and the Weil conjectures dans Dix exposés sur la cohomologie des schémas"
+  },
+  "note": "The TeX adds emphasis to both titles and a comma the print does not have. The fragments 'es' after 'Algebraic' and 'opo-' after 'des' are erased type (the typist moved 'cycles' and 'schémas' to the next line), visible in both scans (w667_remnants.png) and rightly left out; the faint tick between 'schémas' and '(' is not a clear comma and is left as the TeX has it."
+ },
+ {
+  "page": 667,
+  "where": "first paragraph, 'Dans le n° 4'",
+  "scan": "n° 4 (n with a raised ring; crops_666_670/c667_schemas.png)",
+  "tex": "no. 4",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "no. 4",
+   "new": "n° 4"
+  },
+  "note": "The file writes the numéro sign as n° elsewhere (bibliography of Exposé VI: 'n°22', 'n°20'). Exposé XIV writes no./no for every printed n° (see the coordinator message)."
+ },
+ {
+  "page": 667,
+  "where": "second paragraph, '(où le premier membre ...'",
+  "scan": "l'anneau des classes de Modules localement libres (capital M)",
+  "tex": "classes de modules localement libres",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "classes de modules localement libres",
+   "new": "classes de Modules localement libres"
+  },
+  "note": "Grothendieck's capital M (sheaves of modules), in both scans."
+ },
+ {
+  "page": 667,
+  "where": "display after 'l'homomorphisme naturel'",
+  "scan": "K˙_naif(X) ⟶ K˙(X): both K carry the same raised dot (crops_666_670/c667_knaif.png)",
+  "tex": "K^\\circ_{\\mathrm{naif}}(X)\\longrightarrow K^\\bullet(X)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "K^\\circ_{\\mathrm{naif}}",
+   "new": "K^\\bullet_{\\mathrm{naif}}"
+  },
+  "note": "The print's raised dot is K^\\bullet in this TeX (the right-hand K of the same display); the ring is not in the print."
+ },
+ {
+  "page": 667,
+  "where": "'soit un λ-homomorphisme'",
+  "scan": "soit un    -homomorphisme: a blank where the handwritten λ belongs, in both scans (crops_666_670/c667_lhom.png; witness w667_bottom.png)",
+  "tex": "soit un $\\lambda$-homomorphisme",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "soit un $\\lambda$-",
+   "new": "soit un -"
+  },
+  "corrected": "soit un $\\lambda$-",
+  "note": "The hand insertion was never made. The TeX silently supplies λ; the fix restores the printed blank. Independent of the next entry (no overlap)."
+ },
+ {
+  "page": 667,
+  "where": "end of the sentence before 'Dans ce but'",
+  "scan": "-homomorphisme / Dans ce but, (no full stop at the end of the line, both scans)",
+  "tex": "homomorphisme. Dans ce but",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "homomorphisme. Dans ce but",
+   "new": "homomorphisme Dans ce but"
+  },
+  "corrected": "homomorphisme. Dans ce but",
+  "note": "The full stop is missing in both scans. The TeX silently adds it; the fix restores the printed reading."
+ },
+ {
+  "page": 667,
+  "where": "'(non addifs en général'",
+  "scan": "non addifs",
+  "tex": "non addifs",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "non additifs",
+  "note": "Typing error for 'additifs'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 667,
+  "where": "'de \"puissance extérieure)'",
+  "scan": "de \"puissance extérieure) : an opening quote, no closing quote (crops_666_670/c667_puiss.png, both scans)",
+  "tex": "``puissance extérieure'')",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "extérieure'')",
+   "new": "extérieure)"
+  },
+  "corrected": "extérieure'')",
+  "note": "The TeX silently adds the closing quote; the fix restores the printed reading. (The closing parenthesis is also misplaced: the sense is '(non additifs en général) de \"puissance extérieure\"'.)"
+ },
+ {
+  "page": 667,
+  "where": "'vis à vis des triangles exacts'",
+  "scan": "vis à vis (no hyphens; crops_666_670/c667_visavis.png, witness w667_bottom.png)",
+  "tex": "vis-à-vis",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "vis-à-vis",
+   "new": "vis à vis"
+  },
+  "corrected": "vis-à-vis",
+  "note": "The compound lacks its hyphens in both scans. The TeX silently corrects it; the fix restores the printed reading."
+ },
+ {
+  "page": 667,
+  "where": "formula (1.1)",
+  "scan": "λ^i(cℓ˙(L.)) = cℓ˙(Λ^i L.) . : both 'cl' carry the typed raised dot of K˙ (crops_666_670/c667_11.png; witness w667_11.png)",
+  "tex": "\\lambda^i(\\cl(L^\\bullet))=\\cl(\\Lambda^i L^\\bullet).",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\lambda^i(\\cl(L^\\bullet))=\\cl(\\Lambda^i L^\\bullet)",
+   "new": "\\lambda^i(\\cl^\\bullet(L^\\bullet))=\\cl^\\bullet(\\Lambda^i L^\\bullet)"
+  },
+  "note": "\\cl prints a plain cl; the print's class has the raised dot (the script ℓ is the typewriter's glyph, not reproduced). The L's lower dot is the convention entry below: apply this fix before that pass."
+ },
+ {
+  "page": 667,
+  "where": "Exposé XIV §§1-2 (pp. 667-669): complexes L.",
+  "scan": "L with a lower dot throughout: p. 667 (1.1) λ^i(cl˙(L.)), p. 668 (1.2) Λ^i L. = (⊗ L.)^alt and 'lorsque L. est nul en degrés >0', L.' and Λ^i L'. (prime over the dot), p. 669 'et L. un complexe', Rf_*(L.), H^i(L.) (both scans)",
+  "tex": "L^\\bullet (17 times on pp. 667-669) and L^{\\prime\\bullet} (twice on p. 668)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, reported once: the print's lower dot (as in K.(X), written K_\\bullet) is written as a raised bullet. One pass for folios 667-669, both layers: L^\\bullet -> L_\\bullet, L^{\\prime\\bullet} -> L'_\\bullet, after the other fixes of these pages (three of them quote L^\\bullet). Folio 685 has 5 more L^\\bullet for its checker."
+ },
+ {
+  "page": 668,
+  "where": "first line, 'un faisceau de Q-algèbres'",
+  "scan": "a plain typed Q (no double stroke; crops_666_670/c668_qalg.png), unlike the double-struck ℂ of p. 669 and the overstruck Q of Gr˙(X)_Q",
+  "tex": "faisceau de $\\Q$-algèbres",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "faisceau de $\\Q$",
+   "new": "faisceau de $Q$"
+  },
+  "note": "The typist's plain Q where \\Q is \\mathbb Q (low confidence; volume decision with SGA 7 II issue 61)."
+ },
+ {
+  "page": 668,
+  "where": "first line, 'Q-algèbres'",
+  "scan": "algébres (acute accent; crops_666_670/c668_qalg.png)",
+  "tex": "algèbres, le problème",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "algèbres, le problème",
+   "new": "algébres, le problème"
+  },
+  "corrected": "algèbres, le problème",
+  "note": "The TeX silently corrects the accent; the fix restores the printed reading (p. 669 'ℂ-algébres' is kept as printed in the TeX)."
+ },
+ {
+  "page": 668,
+  "where": "'le problème se résoud'",
+  "scan": "se résoud",
+  "tex": "se résoud",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "se résout",
+  "note": "Spelling error of the print (third person of résoudre). The TeX keeps the printed reading."
+ },
+ {
+  "page": 668,
+  "where": "formula (1.2)",
+  "scan": "Λ^i L. = ( ⊗ L. )^alt , : the tensor sign has i above it and a double-struck L at its upper right, in front of L., in one pair of parentheses; 'alt' is an exponent (crops_666_670/c668_12.png)",
+  "tex": "\\Lambda^i L^\\bullet=\\left((L^\\bullet)^{\\otimes i}\\right)_{\\mathrm{alt}},",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Lambda^i L^\\bullet=\\left((L^\\bullet)^{\\otimes i}\\right)_{\\mathrm{alt}},",
+   "new": "\\Lambda^i L^\\bullet=\\bigl(\\overset{i}{\\otimes}{}^{\\mathbb L}L^\\bullet\\bigr)^{\\mathrm{alt}},"
+  },
+  "note": "The TeX drops the derived 𝕃, writes the power as (L)^{⊗i} and sets alt as a subscript, although the text says 'l'exposant alt'. The lower dot of L. is the convention entry of p. 667."
+ },
+ {
+  "page": 668,
+  "where": "'la puissance tensorielle i.ème'",
+  "scan": "i.ème (a full stop; crops_666_670/c668_ieme.png)",
+  "tex": "$i$-ème",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "$i$-ème",
+   "new": "$i$.ème"
+  },
+  "note": "The print has a stop, not a hyphen."
+ },
+ {
+  "page": 668,
+  "where": "'l'algèbre du groupe sysmétrique'",
+  "scan": "sysmétrique (crops_666_670/c668_sysm.png)",
+  "tex": "groupe symétrique",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "groupe symétrique",
+   "new": "groupe sysmétrique"
+  },
+  "corrected": "groupe symétrique",
+  "note": "Typing error. The TeX silently corrects it; the fix restores the printed reading."
+ },
+ {
+  "page": 668,
+  "where": "'à coéfficients dans O_X'",
+  "scan": "coéfficients",
+  "tex": "coéfficients",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "coefficients",
+  "note": "Spelling error of the print. The TeX keeps the printed reading."
+ },
+ {
+  "page": 668,
+  "where": "'à un Module semi-simplicial L.''",
+  "scan": "à un Module semi-simplicial (capital M)",
+  "tex": "à un module semi-simplicial",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "à un module semi-simplicial",
+   "new": "à un Module semi-simplicial"
+  },
+  "note": "Capital M in both scans."
+ },
+ {
+  "page": 668,
+  "where": "'au Module semi-simplicial Λ^i L'.'",
+  "scan": "au Module semi-simplicial (capital M)",
+  "tex": "au module semi-simplicial",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "au module semi-simplicial",
+   "new": "au Module semi-simplicial"
+  },
+  "note": "Capital M in both scans."
+ },
+ {
+  "page": 668,
+  "where": "isomorphism after 'il ne semble pas qu'on ait un isomorphisme'",
+  "scan": "in the running text: 'qu'on ait un isomorphisme Λ^i(L.[1]) ≃ (Λ^i L.)[i] qui permettrait de faire de' on one line; the parenthesis encloses Λ^i L. (crops_666_670/c668_iso.png)",
+  "tex": "\\[ \\Lambda^i(L^\\bullet[1])\\simeq \\Lambda^i(L^\\bullet)[i] \\] (a display)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "un isomorphisme\n\\[\n \\Lambda^i(L^\\bullet[1])\\simeq \\Lambda^i(L^\\bullet)[i]\n\\]\nqui permettrait",
+   "new": "un isomorphisme $\\Lambda^i(L^\\bullet[1])\\simeq(\\Lambda^i L^\\bullet)[i]$ qui permettrait"
+  },
+  "note": "Two differences in one edit: the right member is (Λ^i L.)[i], not Λ^i(L.)[i]; and the print sets the formula inline where the TeX makes it a display (the same kind of fix as pp. 21, 34, 80)."
+ },
+ {
+  "page": 668,
+  "where": "2.1, 'construit dans Exp. 0 4.4'",
+  "scan": "Exp. O 4.4 , (no comma between 0 and 4.4; crops_666_670/c668_exp0.png)",
+  "tex": "Exp. 0, 4.4,",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "Exp. 0, 4.4",
+   "new": "Exp. 0 4.4"
+  },
+  "note": "The TeX adds a comma; the typed letter O for the exposé 0 stays 0."
+ },
+ {
+  "page": 669,
+  "where": "start of page (folio-669 marker)",
+  "scan": "p. 668 ends 'pourraient donner la clef' (page_668_s4.png); p. 669 begins 'd'une démonstration de la formule analogue' (page_669_s1.png; witness w669_small.png)",
+  "tex": "'d'une' ends page_668.tex, above the folio-669 marker; page_669.tex begins 'démonstration'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 669 really begins at 'd'une'. In both layers: python -I move_marker.py 6 669 \"d'une\" --before (simulated in memory on both layers, crops_666_670/sim_markers.py: 'la clef' / marker / 'd'une' / 'démonstration ...', text unchanged). By hand: replace 'donner la clef d'une\\n%%%%%%%%%%  scan idx 682  |  folio 669  %%%%%%%%%%\\ndémonstration' by 'donner la clef\\n%%%%%%%%%%  scan idx 682  |  folio 669  %%%%%%%%%%\\nd'une démonstration' (once in each layer)."
+ },
+ {
+  "page": 669,
+  "where": "3.1, 'La formule de Riemann-Roch pour y ∈ K˙(Y) :'",
+  "scan": "K˙(Y) : (a colon before the display)",
+  "tex": "pour $y\\in K^\\bullet(Y)$",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "pour $y\\in K^\\bullet(Y)$",
+   "new": "pour $y\\in K^\\bullet(Y)$~:"
+  },
+  "note": "The TeX leaves out the printed colon."
+ },
+ {
+  "page": 669,
+  "where": "3.1, 'jointe à la formule générale (Exp. VII) :'",
+  "scan": "(Exp. VII) : (a colon before the display)",
+  "tex": "jointe à la formule générale (Exp. VII)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "jointe à la formule générale (Exp. VII)",
+   "new": "jointe à la formule générale (Exp. VII)~:"
+  },
+  "note": "The TeX leaves out the printed colon."
+ },
+ {
+  "page": 669,
+  "where": "second display of 3.1, right member",
+  "scan": "f_*(y')f_*(y\") = f (y'y\"c_d(N)) : the third f has no asterisk, a blank in its place, in both scans (crops_666_670/c669_disp2.png; witness w669_disp2a.png)",
+  "tex": "=f_*\\bigl(y'y''c_d(\\underline N)\\bigr)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "=f_*\\bigl(y'y''",
+   "new": "=f\\bigl(y'y''"
+  },
+  "corrected": "=f_*\\bigl(y'y''",
+  "note": "The handwritten asterisk was not inserted. The TeX silently supplies it; the fix restores the printed reading."
+ },
+ {
+  "page": 669,
+  "where": "second display of 3.1, 'y',y\" ∈ Gr(Y)_Q'",
+  "scan": "Gr(Y)_Q without the raised dot (both scans; crops_666_670/w669_disp2.png); the subscript Q is underlined",
+  "tex": "y',y''\\in \\operatorname{Gr}^\\bullet(Y)_\\Q",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "y',y''\\in \\operatorname{Gr}^\\bullet(Y)_\\Q",
+   "new": "y',y''\\in \\operatorname{Gr}(Y)_\\Q"
+  },
+  "corrected": "y',y''\\in \\operatorname{Gr}^\\bullet(Y)_\\Q",
+  "note": "Every other Gr of these pages has the typed dot (Gr˙(X)_Q two lines below, Gr˙(Y)_Q on p. 670), so the dot was left out. The TeX silently adds it; the fix restores the printed reading. The underlined Q is the typist's mark for the double-struck Q: \\Q stands."
+ },
+ {
+  "page": 669,
+  "where": "2.2, 'annelés en ℂ-algébres'",
+  "scan": "ℂ-algébres (acute accent; crops_666_670/c669_calg.png)",
+  "tex": "$\\C$-algébres",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$\\C$-algèbres",
+  "note": "The TeX keeps the printed reading (p. 668 has the same misprint, silently corrected there)."
+ },
+ {
+  "page": 669,
+  "where": "2.2, 'plus généraux que des espéces analytiques'",
+  "scan": "espéces (crops_666_670/c669_especes.png)",
+  "tex": "des espéces analytiques",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "des espaces analytiques",
+  "note": "Typing error for 'espaces' (analytic spaces). The TeX keeps the printed reading."
+ },
+ {
+  "page": 669,
+  "where": "2.3, 'aient leurs groupes propres sur Y'",
+  "scan": "aient leurs groupes propres sur Y (crops_666_670/c669_groupes.png)",
+  "tex": "aient leurs groupes propres",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "aient leurs supports propres",
+  "note": "The hypothesis replacing properness of f is that the cohomology sheaves H^i(L.) have supports proper over Y; 'groupes propres' gives no sense. Possibly an author's slip. The TeX keeps the printed reading."
+ },
+ {
+  "page": 669,
+  "where": "formula (3.1) (printed at the top of p. 670; its TeX is still in page_669.tex), end",
+  "scan": "(c_β(N))_β ))   ,, : two commas after the formula (the first smaller), in both scans (crops_666_670/c670_31end.png, w670_31end.png)",
+  "tex": "(c_\\beta(\\underline N))_\\beta)\\bigr),",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": {
+   "old": "(c_\\beta(\\underline N))_\\beta)\\bigr),",
+   "new": "(c_\\beta(\\underline N))_\\beta)\\bigr),,"
+  },
+  "corrected": "(c_\\beta(\\underline N))_\\beta)\\bigr),",
+  "note": "Double punctuation of the typist (the first mark may be a light full stop). The TeX silently writes one comma; the fix restores the printed reading. The edit is by content, so it holds before or after the folio-670 marker is moved."
+ },
+ {
+  "page": 670,
+  "where": "start of page (folio-670 marker)",
+  "scan": "p. 669 ends 'de f_*(y) dans Gr˙(X)_Q sous la forme' (page_669_s4.png); p. 670 begins with the display '(3.1) c_i(f_*(y)) = f_*(P_i(...))' (page_670_s1.png; witness w670_small.png)",
+  "tex": "the folio-670 marker stands inside the equation environment of (3.1), between the formula line and \\end{equation}; page_670.tex begins '\\end{equation}'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 670 really begins at '\\begin{equation}\\tag{3.1}'. In both layers: python -I move_marker.py 6 670 '\\begin{equation}\\tag{3.1}' --before (simulated in memory on both layers, crops_666_670/sim_markers.py: 'sous la forme' / marker / '\\begin{equation}\\tag{3.1}' / formula / '\\end{equation}' / 'où $P_i$', text unchanged). By hand: delete the marker line between ' ...\\bigr),' and '\\end{equation}' and put it on its own line between 'sous la forme' and '\\begin{equation}\\tag{3.1}'."
+ },
+ {
+  "page": 670,
+  "where": "end of page (folio-671 marker)",
+  "scan": "p. 670 ends 'L'hypothèse de caractéristique nulle est utilisée essentielle-' (page_670_s4.png); p. 671 begins 'ment pour disposer de formules du type (1.1), (1.2)' (witness crops_666_670/w671_top.png)",
+  "tex": "'essentiellement' stands whole after the folio-671 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 671 really begins with 'ment' (the word is divided at the page break). As at folios 54 and 161: python -I marker_split_word.py 6 671 split essentielle ment (simulated in memory on both layers: '... est utilisée' / 'essentielle%' / marker / 'ment pour disposer ...'). The checker of p. 671 may report the same boundary: apply once."
+ },
+ {
+  "page": 670,
+  "where": "after 'formule de Riemann-Roch \"sans dénominateurs\".'",
+  "scan": "the print runs on: '... \"sans dénominateurs\". En fait, une telle formule pour' on one line",
+  "tex": "a blank line (new paragraph) before 'En fait, une telle formule'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "dénominateurs''.\n\nEn fait, une telle",
+   "new": "dénominateurs''. En fait, une telle"
+  },
+  "note": "The TeX starts a paragraph the print does not have."
+ },
+ {
+  "page": 670,
+  "where": "'de définir un homomorphisme f_*:Gr˙(Y) ⟶ Gr˙(X) donnant'",
+  "scan": "the map stands in the running text, at the start of the line 'f_*:Gr˙(Y)⟶Gr˙(X) donnant l'homomorphisme naturel ...' (both scans)",
+  "tex": "\\[ f_*:\\operatorname{Gr}^\\bullet(Y)\\longrightarrow \\operatorname{Gr}^\\bullet(X) \\] (a display)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "un homomorphisme\n\\[\n f_*:\\operatorname{Gr}^\\bullet(Y)\\longrightarrow \\operatorname{Gr}^\\bullet(X)\n\\]\ndonnant",
+   "new": "un homomorphisme $f_*:\\operatorname{Gr}^\\bullet(Y)\\longrightarrow \\operatorname{Gr}^\\bullet(X)$ donnant"
+  },
+  "note": "The TeX makes an inline formula a display (the same kind of fix as pp. 21, 34, 80)."
+ },
+ {
+  "page": 670,
+  "where": "'donnant l'homomorphisme naturel f : Gr˙(Y)_Q ⟶ Gr˙(X)_Q'",
+  "scan": "f : with no asterisk (crops_666_670/c670_fnat.png, both scans)",
+  "tex": "$f:\\operatorname{Gr}^\\bullet(Y)_\\Q",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "$f_*:\\operatorname{Gr}^\\bullet(Y)_\\Q",
+  "note": "The natural map Gr˙(Y)_Q -> Gr˙(X)_Q is f_*, as in the formulas around it; the asterisk is missing in the print. The TeX keeps the printed reading."
+ },
+ {
+  "page": 670,
+  "where": "after 'et non seulement dans Gr˙(X)_Q .'",
+  "scan": "the print runs on: 'Gr˙(X), et non seulement dans Gr˙(X)_Q . Mais lorsque X est supposé régulier,' on one line",
+  "tex": "a blank line (new paragraph) before 'Mais lorsque'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "(X)_\\Q$.\n\nMais lorsque",
+   "new": "(X)_\\Q$. Mais lorsque"
+  },
+  "note": "The TeX starts a paragraph the print does not have."
+ },
+ {
+  "page": 670,
+  "where": "'donc K˙(X) ⥲ K.(X) (IV 2.5)'",
+  "scan": "a tilde over a right arrow between K˙(X) and K.(X) (crops_666_670/c670_kiso.png; witness w670_kiso.png)",
+  "tex": "K^\\bullet(X)\\simeq K_\\bullet(X)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "K^\\bullet(X)\\simeq K_\\bullet(X)",
+   "new": "K^\\bullet(X)\\xrightarrow{\\sim} K_\\bullet(X)"
+  },
+  "note": "The print has an isomorphism arrow, not ≃ (main.tex writes it \\xrightarrow{\\sim} in Exposé V). The lower dot of the second K is not visible in either scan; the TeX's K_\\bullet stands (K.(X) two lines below has its dot)."
+ }
+]

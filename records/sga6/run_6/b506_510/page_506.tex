@@ -1,0 +1,20 @@
+% from main.tex
+%%%%%%%%%%  scan idx 519  |  folio 506  %%%%%%%%%%
+\textbf{Lemme 1.7.} Soient $A$ un anneau principal, $X=\Spec(A)$. Alors l'homomorphisme canonique :
+\[
+\mathbb Z\longrightarrow K_\bullet(X)
+\]
+est un isomorphisme.
+
+Comme $X$ est régulier, l'homomorphisme $K^\circ(X)\to K_\bullet(X)$ est un isomorphisme. Donc $K_\bullet(X)$ est engendré par les classes des $\mathcal O_X$-Modules localement libres de type fini, i.e.\ par les classes des $A$-modules projectifs de type fini. Comme $A$ est principal, tout module projectif de type fini est libre, d'où la surjectivité. L'injectivité vient de ce que $K^\circ(X)$ est $\mathbb Z$-augmenté.
+
+\textbf{Proposition 1.8.} Soient $S$ un schéma noethérien, $E$ un $\mathcal O_S$-Module localement libre de rang $r$, $X$ le fibré vectoriel associé à $E$, $f$ le morphisme structural de $X$, et $g$ la section nulle de $X$. Alors l'homomorphisme composé :
+\[
+K_\bullet(S)\xrightarrow{g_*}K_\bullet(X)\xrightarrow{g^*}K_\bullet(S)
+\]
+(où $g^*$ est défini d'après IV 2.12.1 et 1.5) est la multiplication par l'élément $\lambda_{-1}(E)$ de $K^\circ(S)$, en notant $E$ la classe de $E$ dans $K^\circ(S)$, et en posant
+\[
+\lambda_{-1}(E)=\sum_{i=0}^r(-1)^i\lambda^i(E).
+\]
+
+Cet énoncé est l'analogue, pour le $K_\bullet$, de VII 2.7. Soit $F$ un $\mathcal O_S$-Module cohérent, de classe $F$ dans $K_\bullet(S)$. Alors $g_*(F)$ est la classe dans $K_\bullet(X)$ du complexe $Rg_*(F)=g_*(F)$, donc de $F$ considéré comme $\mathcal O_X$-Module par l'intermédiaire de $g$. Pour calculer $g^*(g_*(f))$, il faut donc prendre la classe de \(Lg^*(F)=F\otimes^L_{\mathcal O_X}\mathcal O_S\).

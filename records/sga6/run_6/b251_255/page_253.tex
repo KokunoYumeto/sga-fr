@@ -1,0 +1,48 @@
+% from main.tex
+%%%%%%%%%%  scan idx 266  |  folio 253  %%%%%%%%%%
+où \(i\) est une
+immersion fermée et \(g\) un morphisme lisse, et soit \(E\in\Ob D(X)\). Pour que \(E\) soit parfait rel. à \(f\), il faut et il suffit que \(i_*(E)\) soit parfait (au sens absolu (I 4.8)). Plus précisément, supposons \(g\) de dimension relative \(\leq d\), et soit \([a,b]\) un intervalle de \(\mathbb Z\). On a alors :
+\begin{enumerate}[label=(\roman*)]
+\item \(\parfamp(i_*(E)\subset[a,b]\Longrightarrow\parfamp_f(E)\subset[a,b]\) ;
+\item \(\parfamp_f(E)\subset[a,b]\Longrightarrow\parfamp(i_*(E))\subset[a-d,b]\).
+\end{enumerate}
+
+\emph{Preuve.} Conséquence immédiate de (3.6).
+
+\textbf{Proposition 4.5.} Soit
+\[
+\begin{tikzcd}
+X \arrow[rr,"f"] \arrow[dr,"h"'] && Y \arrow[dl,"g"]\\
+& S &
+\end{tikzcd}
+\]
+un triangle commutatif de morphismes localement de type fini de schémas, et soient \(E\in\Ob D^-(X)\), \(F\in\Ob D^-(Y)\), \([a,b]\), \([c,d]\) des intervalles de \(\mathbb Z\). On a alors :
+\[
+ \parfamp_f(E)\subset[a,b]\text{ et }\parfamp_g(F)\subset[c,d]
+ \Longrightarrow
+ \parfamp_h(E\otimes_Y^{\mathbf L}F)
+ \subset[a+c,b+d].
+\]
+Par suite, si \(E\) est parfait rel. à \(f\) et \(F\) parfait rel. à \(g\), \(E\otimes_Y^{\mathbf L}F\) est parfait rel. à \(h\).
+
+\emph{Preuve.} Conjuguer (1.1) et (3.4).
+
+\textbf{Corollaire 4.5.1.} Sous les hypothèses de (4.5) :
+\begin{enumerate}[label=\alph*)]
+\item si \(g\) est de dimension parfaite \(\leq n\), on a
+\[
+ \parfamp_f(E)
+ \subset[a,b]
+ \Longrightarrow
+ \parfamp_h(E)
+ \subset[a-n,b];
+\]
+par suite, si \(g\) est parfait, \(E\) parfait rel. à \(f\) implique \(E\) parfait rel. à \(h\) ;
+\item si \(f\) est de dimension parfaite \(\leq m\), on a
+\[
+ \parfamp_g(F)
+ \subset[c,d]
+ \Longrightarrow
+ \parfamp_h(\mathbf Lf^*(F))
+ \subset[c-m,d];
+\]

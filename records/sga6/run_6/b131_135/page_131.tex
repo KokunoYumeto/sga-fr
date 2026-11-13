@@ -1,0 +1,23 @@
+% from main.tex
+%%%%%%%%%%  scan idx 144  |  folio 131  %%%%%%%%%%
+dans le cas de la catégorie des Modules d'un topos annelé (cf. (3.3)). Nous aurons besoin de quelques sorites préliminaires sur la notion de tor-dimension finie. Nous serons brefs, vu que cette question figure déjà dans la littérature : cf. ([H] II 4) et (SGA 4 XVII 4.1.9.).
+
+\textbf{Proposition 5.1.} Soient \((S,A)\) un topos annelé, \(X\in\Ob S\), \(F\in\Ob\Dpx^-({}_A X)\), \(m,n\in\mathbb Z\) tels que \(m<n\). Conditions équivalentes :
+\begin{enumerate}[label=(\roman*)]
+\item \(F\) est isomorphe, dans \(\Dpx^-({}_A X)\), à un complexe \(F'\) tel que \(F'^i\) soit plat pour tout \(i\) et nul pour \(i\notin[m,n]\);
+\item pour tout \(A_X\)-Module à droite \(E\), on a \(\Ho^i(E\overset{\mathrm L}{\otimes}_A F)=0\) pour \(i\notin[m,n]\).
+\end{enumerate}
+
+\emph{Preuve.} L'implication (i) \(\Rightarrow\) (ii) est triviale; l'implication (ii) \(\Rightarrow\) (i) résulte, par troncature, du
+
+\textbf{Lemme 5.1.1.} (cf. (4.16)). \emph{Soit \(F\in\Ob\Dpx^-({}_A X)\). On suppose que \(F\) satisfait à l'hypothèse (ii) de (5.1), que \(F^i=0\) pour \(i\notin[m,n]\), et que \(F^i\) est plat pour \(i\ne m\). Alors \(F^m\) est plat.}
+
+\emph{Preuve.} On a un triangle distingué
+\[
+\begin{tikzcd}
+& F^m[-m] \arrow[dl,"+1"'] & \\
+F' \arrow[rr] && F \arrow[ul]
+\end{tikzcd}
+\]
+où \(F'\) est à composantes plates et nulles en dehors de l'intervalle \([m+1,n]\) (supposer \(m<n\)). Appliquer le foncteur \(E\overset{\mathrm L}{\otimes}_A\cdot\) pour \(E\) un \(A_X\)-Module à droite arbitraire, et écrire la suite exacte de cohomologie.
+

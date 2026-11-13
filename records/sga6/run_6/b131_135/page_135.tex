@@ -1,0 +1,31 @@
+% from main.tex
+%%%%%%%%%%  scan idx 148  |  folio 135  %%%%%%%%%%
+\textbf{Corollaire 5.8.1.} \emph{Pour que \(E\) soit parfait (4.8), il faut et il suffit que \(E\) soit pseudo-cohérent (2.15) et localement de tor-dimension finie (5.2).}
+
+Pour la démonstration, nous aurons besoin de quelques lemmes.
+
+\textbf{Lemme 5.8.2.} Soit \(B\) un anneau de \(S\). Si \(E\) est un \(A\)-Module à gauche, \(G\) un \(B\)-Module à droite, et \(F\) un \(A\)-\(B\)-Bimodule (à gauche sur \(A\), à droite sur \(B\)), il existe un homomorphisme canonique fonctoriel
+\begin{equation}\tag{5.8.2.1}
+  \Hom_B(F,G)\otimes_A E
+  \longrightarrow
+  \Hom_B(\Hom_A(E,F),G).
+\end{equation}
+Celui-ci est un isomorphisme pour \(G\) injectif et \(E\) de présentation finie.
+
+\emph{Preuve.} Définissons d'abord la flèche. Par la formule d'adjonction chère à Cartan, il revient au même de définir un homomorphisme de \(B\)-Modules :
+\begin{equation}\tag{*}
+  \Hom_B(F,G)\otimes_A E\otimes_{\mathbb Z_S}\Hom_A(E,F)
+  \longrightarrow G.\text{\footnotemark}
+\end{equation}
+\footnotetext{on note \(S\) l'objet final de \(S\) et \(\mathbb Z_S\) le faisceau constant de valeur \(\mathbb Z\).}
+Or on a un homomorphisme canonique de \(A\)-\(B\)-biModules
+\begin{equation}\tag{**}
+  E\otimes_{\mathbb Z_S}\Hom_A(E,F)
+  \longrightarrow F
+\end{equation}
+(provenant par adjonction de la flèche identique de \(\Hom_A(E,F)\)). On a de même un homomorphisme canonique de \(B\)-Modules
+\begin{equation}\tag{***}
+  \Hom_B(F,G)\otimes_A F\longrightarrow G.
+\end{equation}
+On définit alors (*) comme le composé de (**) et (***). Pour voir que la flèche (5.8.2.1) est un isomorphisme quand \(G\) est injectif et \(E\) de présentation finie, il suffit de remarquer que, si \(G\) est injectif, la source et le but de la flèche sont des foncteurs exacts à droite en \(E\) et que la flèche induit l'identité pour \(E=A\).
+

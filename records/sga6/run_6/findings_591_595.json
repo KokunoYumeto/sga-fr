@@ -1,0 +1,309 @@
+[
+ {
+  "page": 591,
+  "where": "start of page (folio-591 marker)",
+  "scan": "p. 591 begins 'tères pour que F(k) → F(K) soit injectif (resp. surjectif).', the second half of 'critères' divided at the page break; p. 590 ends '... nous cherchons des cri-' (both scans; OCR of p. 590)",
+  "tex": "the whole word 'critères' ends the last line above the folio-591 marker ('... nous cherchons des critères'); page_591.tex begins 'pour que'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 591 really begins with 'tères'. Already applied in the live main.tex (both layers, 16:36): '... nous cherchons des cri%' / marker / 'tères pour que', the split-word form of folios 18, 36, 46 and 262; page_591.tex was extracted before that edit. No action; do not split the word again."
+ },
+ {
+  "page": 591,
+  "where": "first line: 'tères pour que F(k) → F(K) soit injectif (resp. surjectif).'",
+  "scan": "the map F(k) → F(K) stands in the running text, on one line with 'pour que' and 'soit injectif (resp. surjectif).' (both scans)",
+  "tex": "a display \\[ F(k)\\longrightarrow F(K) \\] between 'pour que' and 'soit injectif'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "pour que\n\\[\n  F(k)\\longrightarrow F(K)\n\\]\nsoit injectif",
+   "new": "pour que \\(F(k)\\longrightarrow F(K)\\) soit injectif"
+  },
+  "note": "The TeX makes an inline formula a display."
+ },
+ {
+  "page": 591,
+  "where": "7.18.2, 'Alors l'application F(k) → K(K) est injective.'",
+  "scan": "K(K) (both scans; crops_591_595/wit_591_half.png)",
+  "tex": "\\(F(k)\\to K(K)\\) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\(F(k)\\to F(K)\\)",
+  "note": "Typing slip: the statement concerns F(k) → F(K) (7.18.1; 7.18.3 (ii)). The diplomatic TeX keeps the printed reading; the current layer reads F(K)."
+ },
+ {
+  "page": 591,
+  "where": "7.18.3, display 'N_{k'/k} : F(k') → F(k)'",
+  "scan": "no punctuation after F(k) (both scans)",
+  "tex": "N_{k'/k}:F(k')\\longrightarrow F(k),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "F(k')\\longrightarrow F(k),\n\\]",
+   "new": "F(k')\\longrightarrow F(k)\n\\]"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 592,
+  "where": "start of page (folio-592 marker)",
+  "scan": "p. 592 begins '(i) Pour toute extension K de k'; p. 591 ends 'Sous ces conditions, on a :' (both scans)",
+  "tex": "the \\item that prints '(i)' is the last line above the folio-592 marker (after '\\begin{enumerate}[label=(\\roman*)]'); page_592.tex begins with the item's text",
+  "kind": "marker",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Page 592 really begins at '(i)'. Exact fix in main.tex (both layers): replace '\\item\\n%%%%%%%%%%  scan idx 605  |  folio 592  %%%%%%%%%%\\n' by '%%%%%%%%%%  scan idx 605  |  folio 592  %%%%%%%%%%\\n\\item\\n' (once in each layer; the \\begin{enumerate} line stays on p. 591, as at folio 281). Equivalent: python -I move_marker.py 6 592 '\\item' --before (simulated in memory on both layers with crops_591_595/sim_markers.py). Independent of the 'Pour' entries below."
+ },
+ {
+  "page": 592,
+  "where": "item (i), first word",
+  "scan": "(i) Pour toute extension K de k, ... (capital P; both scans)",
+  "tex": "pour toute extension \\(K\\) de \\(k\\), le noyau",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "pour toute extension \\(K\\) de \\(k\\), le noyau",
+   "new": "Pour toute extension \\(K\\) de \\(k\\), le noyau"
+  },
+  "note": "Capital P in the print."
+ },
+ {
+  "page": 592,
+  "where": "item (i), end: 'est un groupe de torsion.'",
+  "scan": "full stop after 'torsion', on the baseline without the comma's tail (both scans; crops_591_595/m592_torsion_z.png, w592_torsion.png; the OCR's comma is a misreading)",
+  "tex": "groupe de torsion,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "groupe de torsion,",
+   "new": "groupe de torsion."
+  },
+  "note": "The TeX has a comma."
+ },
+ {
+  "page": 592,
+  "where": "item (ii), first word",
+  "scan": "(ii) Pour toute extension pure K de k, ... (capital P; both scans)",
+  "tex": "\\item pour toute extension pure",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item pour toute extension pure",
+   "new": "\\item Pour toute extension pure"
+  },
+  "note": "Capital P in the print."
+ },
+ {
+  "page": 592,
+  "where": "7.18.4, 'Si on suppose de plus k infini, où qu'on peut définir des homomorphismes norme comme dans 7.18.3'",
+  "scan": "où with a grave accent (both scans; crops_591_595/m592_ou.png, wit_592_half.png)",
+  "tex": "où qu'on (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "ou qu'on",
+  "note": "The sentence joins two alternative hypotheses (k infinite, as in 7.18.2 b), or norms as in 7.18.3 (ii)): 'ou' (or). Both layers of main.tex read 'où'."
+ },
+ {
+  "page": 593,
+  "where": "first sentence, '(grâce à (IV 2.12). En vertu de'",
+  "scan": "one closing parenthesis only: '(grâce à (IV 2.12).' (both scans; crops_591_595/m593_IV212b.png)",
+  "tex": "(grâce à (IV 2.12). (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "(grâce à (IV 2.12)).",
+  "note": "Unbalanced parenthesis of the print. The diplomatic TeX keeps it; the current layer reads '(IV 2.12)).'"
+ },
+ {
+  "page": 593,
+  "where": "'donc il définit un homomorphisme image directe p = N_{k'/k} : K.(X⊗_k k') → K.(X). On vérifie immédiatement'",
+  "scan": "the formula stands in the running text, followed on the same line by '. On vérifie immé-' (both scans; crops_591_595/m593_pN.png)",
+  "tex": "a display \\[ p=N_{k'/k}:K_\\bullet(X\\otimes_k k')\\longrightarrow K_\\bullet(X). \\]",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "image directe\n\\[\n  p=N_{k'/k}:K_\\bullet(X\\otimes_k k')\\longrightarrow K_\\bullet(X).\n\\]\nOn vérifie",
+   "new": "image directe \\(p=N_{k'/k}:K_\\bullet(X\\otimes_k k')\\longrightarrow K_\\bullet(X)\\). On vérifie"
+  },
+  "note": "The TeX makes an inline formula a display."
+ },
+ {
+  "page": 593,
+  "where": "'s'identifie à l'application K.(X) → K.(X x_k U), qui est surjective pour X noethérien'",
+  "scan": "the formula stands in the running text: 'l'application K.(X) → K.(Xx_kU), qui est surjective pour X noethérien,' is one line (both scans)",
+  "tex": "a display \\[ K_\\bullet(X)\\longrightarrow K_\\bullet(X\\times_k U), \\]",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "l'application\n\\[\n  K_\\bullet(X)\\longrightarrow K_\\bullet(X\\times_k U),\n\\]\nqui est surjective",
+   "new": "l'application \\(K_\\bullet(X)\\longrightarrow K_\\bullet(X\\times_k U)\\), qui est surjective"
+  },
+  "note": "The TeX makes an inline formula a display. The typed x for the product (\\times) is handled globally."
+ },
+ {
+  "page": 593,
+  "where": "'Ces résultats restent valable si on suppose seulement X noethérien'",
+  "scan": "valable (both scans; crops_591_595/m593_valable.png)",
+  "tex": "valable (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "valables",
+  "note": "Agreement slip (résultats is plural). The diplomatic TeX keeps the printed reading; the current layer reads 'valables'."
+ },
+ {
+  "page": 593,
+  "where": "'(de sorte que X_K est encore de type fini. De plus,'",
+  "scan": "no closing parenthesis after 'fini' (both scans; crops_591_595/m593_sorte.png)",
+  "tex": "de type fini. De plus (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "de type fini). De plus",
+  "note": "The parenthesis opened at '(de sorte que' is not closed in the print. The diplomatic TeX keeps the printed reading; the current layer reads 'fini). De plus'."
+ },
+ {
+  "page": 594,
+  "where": "heading of the bibliography",
+  "scan": "BIBLIOGRAPHIE: typed capitals, underlined (both scans)",
+  "tex": "\\subsection*{Bibliographie}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\subsection*{Bibliographie}",
+   "new": "\\subsection*{BIBLIOGRAPHIE}"
+  },
+  "note": "Capitals against the TeX's small letters; the missing underline of a \\subsection* title is accepted. Same form as the bibliography headings of Exposés II-IX in main.tex (\\subsection*{BIBLIOGRAPHIE})."
+ },
+ {
+  "page": 594,
+  "where": "bibliography [1] Dickson, title",
+  "scan": "'Linear groups' typed plain, not underlined (both scans; crops_591_595/wit_594_half.png)",
+  "tex": "\\emph{Linear groups}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Linear groups}",
+   "new": "Linear groups"
+  },
+  "note": "The typescript neither underlines nor italicizes the titles of this bibliography; same fix as the bibliographies of pp. 19, 159, 273, 296, 364 and 415."
+ },
+ {
+  "page": 594,
+  "where": "bibliography [3] Kleiman, title",
+  "scan": "'Towards a numerical theory of ampleness' typed plain, not underlined (both scans)",
+  "tex": "\\emph{Towards a numerical theory of ampleness}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Towards a numerical theory of ampleness}",
+   "new": "Towards a numerical theory of ampleness"
+  },
+  "note": "As [1]."
+ },
+ {
+  "page": 594,
+  "where": "bibliography [3] Kleiman, 'pp. 293-344.'",
+  "scan": "293-344: typed hyphen (both scans)",
+  "tex": "293--344",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "293--344",
+   "new": "293-344"
+  },
+  "note": "En dash added by the transcription, as the bibliography ranges fixed on pp. 220-221 and 497."
+ },
+ {
+  "page": 594,
+  "where": "bibliography [4] Murre, title",
+  "scan": "'On contravariant functors from the category of préschemes over a field into the category of abelian groups' typed plain, not underlined (both scans)",
+  "tex": "\\emph{On contravariant functors ... abelian groups}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{On contravariant functors from the category of préschemes over a field into the category of abelian groups}",
+   "new": "On contravariant functors from the category of préschemes over a field into the category of abelian groups"
+  },
+  "note": "As [1]."
+ },
+ {
+  "page": 594,
+  "where": "bibliography [6] Abhyankar, title",
+  "scan": "'Resolution of singularities of arithmetical surfaces' typed plain, not underlined (both scans)",
+  "tex": "\\emph{Resolution of singularities of arithmetical surfaces}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Resolution of singularities of arithmetical surfaces}",
+   "new": "Resolution of singularities of arithmetical surfaces"
+  },
+  "note": "As [1]. 'Harper - Row' (Harper--Row in the TeX) is a joint name: handled globally."
+ },
+ {
+  "page": 595,
+  "where": "exposé heading and title",
+  "scan": "'EXPOSE XII' in typed capitals with a single underline and no full stop, on its own line at the left; then the centred title 'UN THEOREME DE REPRESENTABILITE RELATIVE SUR' / 'LE FONCTEUR DE PICARD' in typed capitals, two lines, each with a double underline (both scans; crops_591_595/m595_head.png, wit_595_half.png)",
+  "tex": "\\section*{Exposé XII. Un théorème de représentabilité relative sur le foncteur de Picard}: number and title run together with a full stop, the title in small letters, no underline",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\section*{Exposé XII. Un théorème de représentabilité relative sur le foncteur de Picard}",
+   "new": "\\section*{\\underline{EXPOSÉ XII}\\\\[3pt] \\underline{\\underline{UN THÉORÈME DE REPRÉSENTABILITÉ RELATIVE SUR}}\\\\[3pt] \\underline{\\underline{LE FONCTEUR DE PICARD}}}"
+  },
+  "note": "Same form as the applied headings of Exposés III, IV, VIII, IX and X (main.tex: \\section*{\\underline{EXPOSÉ X}\\\\[3pt] \\underline{\\underline{...}}}), the two title lines split as in the Exposé VI heading (\\underline cannot break a line). É and È keep the TeX's accents (rule for typed capitals: the print has EXPOSE, THEOREME, REPRESENTABILITE). Independent of the author-line entry."
+ },
+ {
+  "page": 595,
+  "where": "author line of the heading",
+  "scan": "'par M. Raynaud (rédigé par S. Kleiman)' in mixed case, the whole line underlined (both scans; crops_591_595/m595_head.png)",
+  "tex": "par M. Raynaud (rédigé par S. Kleiman) (no underline)",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "par M. Raynaud (rédigé par S. Kleiman)",
+   "new": "\\underline{par M. Raynaud (rédigé par S. Kleiman)}"
+  },
+  "note": "As the applied author lines (\\underline{par O. Jussila}, p. 519; \\underline{par P. BERTHELOT})."
+ },
+ {
+  "page": 595,
+  "where": "Avertissement, '(p. C 07-C 11)'",
+  "scan": "C 07-C 11: typed hyphen (both scans; crops_591_595/m595_C07.png)",
+  "tex": "C 07--C 11",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "C 07--C 11",
+   "new": "C 07-C 11"
+  },
+  "note": "En dash added by the transcription."
+ },
+ {
+  "page": 595,
+  "where": "Avertissement, 'de ses \"Fondements de la Géométrie Algébrique\" (cité FGA)'",
+  "scan": "the title between straight double quotes, not underlined (both scans; crops_591_595/m595_C07.png)",
+  "tex": "\\emph{Fondements de la Géométrie Algébrique} (italics, no quotes)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Fondements de la Géométrie Algébrique}",
+   "new": "«~Fondements de la Géométrie Algébrique~»"
+  },
+  "note": "The TeX drops the print's quotes and sets the title in italics. «~...~» is the file's form for the print's straight quotes (handled globally; e.g. «~polynômes de Hilbert~», p. 596)."
+ },
+ {
+  "page": 595,
+  "where": "Avertissement, 'forgé par I. Castelnuovo et aiguisé et utilisé par T. Matsusaka'",
+  "scan": "I. Castelnuovo: a typed capital I with its full stop (both scans; crops_591_595/m595_Castel.png)",
+  "tex": "I. Castelnuovo (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "G. Castelnuovo",
+  "note": "Wrong initial: the geometer is Guido Castelnuovo. Possibly a misread initial of the manuscript rather than a typing slip; both layers of main.tex read 'I.'."
+ }
+]

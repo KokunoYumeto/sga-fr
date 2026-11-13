@@ -1,0 +1,24 @@
+% from main.tex
+%%%%%%%%%%  scan idx 526  |  folio 513  %%%%%%%%%%
+Soit donc $P$ un torseur sous $V$, correspondant à une extension $F$ de $E$ par $\mathcal O_S$. L'algèbre $A(P)$ de $P$ sur $\mathcal O_S$ est $\mathbb S(F)\otimes_{\mathbb S(\mathcal O_S)}\mathcal O_S$, soit $\mathbb S(F)/(s-1)\mathbb S(F)$, qui s'identifie à l'anneau des fractions homogènes de degré $0$ $\mathbb S(F)_{(s)}$. Par suite, $P$ s'identifie à l'ouvert $D_+(s)$ de $\mathbb P(F)$. Le complémentaire de $P$ dans $\mathbb P(F)$ est alors $\operatorname{Proj}(\mathbb S(F)/s\cdot \mathbb S(F))$, qui s'identifie d'après (3.3.1) à $\mathbb P(E)$. On a donc les immersions :
+\[
+\begin{tikzcd}[column sep=large,row sep=small]
+\mathbb P(E) \arrow[r,hook] \arrow[dr] & \mathbb P(F) \arrow[d] & P \arrow[l,hook'] \arrow[dl]\\
+& S &
+\end{tikzcd}
+\]
+où $\mathbb P(E)$ est fermé dans $\mathbb P(F)$, $P$ ouvert et complémentaire de $\mathbb P(E)$.
+
+\textbf{Proposition 3.4.} Soient $S$ un schéma noethérien, $E$ un $\mathcal O_S$-Module localement libre de rang $n$, $V=\mathbb V(E)$ le fibré vectoriel associé, $P$ un torseur sous $V$, $f$ le morphisme structural de $P$. Alors l'homomorphisme canonique :
+\[
+f^*:K_\bullet(S)\longrightarrow K_\bullet(P)
+\]
+est un isomorphisme.
+
+Avec les identifications de 3.3, on a la suite exacte :
+\[
+K_\bullet(\mathbb P(E))\xrightarrow{i_*}K_\bullet(\mathbb P(F))\longrightarrow K_\bullet(P)\longrightarrow 0,
+\tag{3.4.1}
+\]
+où $i$ désigne l'immersion fermée $\mathbb P(E)\to \mathbb P(F)$ définie par $u$. D'après 3.2, on a $K_\bullet(\mathbb P(E))=K_\bullet(S)\otimes_{K^\circ(S)}K^\circ(\mathbb P(E))$, $K_\bullet(\mathbb P(F))=K_\bullet(S)\otimes_{K^\circ(S)}K^\circ(\mathbb P(F))$.
+Comme $\mathbb P(E)$ et $\mathbb P(F)$ sont lisses, $i$ est une immersion régulière, et on a donc un homomorphisme $i_*:K^\circ(\mathbb P(E))\to K^\circ(\mathbb P(F))$; l'homomorphisme entre les $K_\bullet$ est alors obtenu en tensorisant l'homomorphisme entre les $K^\circ$ par $K_\bullet(S)$ : il suffit pour le voir de montrer que pour $a\in K_\bullet(S)$ et $b\in K^\circ(\mathbb P(E))$, on a

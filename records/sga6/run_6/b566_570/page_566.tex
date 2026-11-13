@@ -1,0 +1,19 @@
+% from main.tex
+%%%%%%%%%%  scan idx 579  |  folio 566  %%%%%%%%%%
+Une façon
+équivalente de décrire ce dernier est la suivante : l'hypothèse que \(X\) est régulier implique que ces anneaux locaux sont factoriels (par le théorème de Auslander--Buchsbaum EGA IV 21.11.1), donc que tout faisceau inversible \(L_t\) sur \(X_t\) peut se prolonger en un faisceau inversible \(L\) sur \(X\) (EGA IV 21.6.11). Ceci posé, on vérifie aussitôt que l'image par (7.8.1) de \(\cl(L_t)\in\Pic(X_t)\) est \(\cl(L_s)\in\Pic(X_s)\), où on pose évidemment \(L_s=L|_{X_s}\).
+
+En fait, n'utilisant que l'hypothèse que les anneaux locaux de \(X\) sont factoriels et que \(X_s\) est localement intègre (à l'exclusion d'hypothèses de régularité et de séparation), on montre que \(\cl(L_s)\) ne dépend pas du prolongement choisi \(L\) de \(L_t\) en un Module inversible sur \(X\), de sorte qu'on obtient ainsi directement un homomorphisme (7.8.1). Pour vérifier l'indépendance annoncée, on est ramené à prouver que si \(L_t\simeq\mathcal O_{X_t}\), alors \(L_s\simeq\mathcal O_{X_s}\). Or l'hypothèse signifie que \(L\simeq\mathcal O_X(D)\), \(D\) un diviseur sur \(X\) de support \(\subset X_s\) (cf. EGA IV 21.2.11), et on se réduit aussitôt au cas \(X_s\) intègre, donc \(D=nX_s\), mais alors \(D=\operatorname{div}(g^n)\) (\(g\) une uniformisante de \(A\)), donc \(\mathcal O_X(D)\simeq\mathcal O_X\) et à fortiori \(L_s\simeq\mathcal O_{X_s}\).
+
+\subsection*{7.9. Spécialisation et équivalence numérique.}
+Supposons \(f\) propre, et \(X_s\) et \(X_t\) réguliers, et considérons les deux applications de spécialisation (7.4.1) et (7.7.4) :
+\begin{equation}\tag{7.9.1}
+\begin{gathered}
+  \sigma_\bullet:\Gr_\bullet(X_t)\longrightarrow\Gr_\bullet(X_s)\\
+  \sigma^\bullet:\Gr^\bullet(X_t)\longrightarrow\Gr^\bullet(X_s).
+\end{gathered}
+\end{equation}
+Du fait que l'homomorphisme
+\begin{equation}\tag{7.9.2}
+  \sigma:K^\bullet(X_t)\longrightarrow K^\bullet(X_s)
+\end{equation}

@@ -1,0 +1,259 @@
+[
+ {
+  "page": 496,
+  "where": "display (5.4.3)",
+  "scan": "f_gr(exp(kx). x^{r+1}/(1-exp(-x))^{r+1}) with no punctuation after the closing parenthesis (both scans)",
+  "tex": "f_{\\mathrm{gr}}\\left(\\exp(kx)\\cdot \\frac{x^{r+1}}{(1-\\exp(-x))^{r+1}}\\right).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\right).",
+   "new": "\\right)"
+  },
+  "note": "The TeX adds a full stop at the end of the display."
+ },
+ {
+  "page": 496,
+  "where": "'On peut alors écrire la serie φ_k = ...'",
+  "scan": "serie: no accent on the first e (both scans; crops_496_500/c496_serie.png, w496_serie.png), while 'écrire' on the same line has its accent",
+  "tex": "la serie \\(\\varphi_k=...\\) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "la série",
+  "note": "Typing slip of the typescript (lower-case e without its accent). The TeX keeps the printed reading."
+ },
+ {
+  "page": 496,
+  "where": "end of the sentence 'et que 1,...,x^r sont linéairement indépendants sur GrK˙(Y)', before the paragraph 'On peut alors écrire'",
+  "scan": "no full stop after GrK˙(Y): nothing on the line after the closing parenthesis (both scans; crops_496_500/c496_GrKY.png, w496_GrKY.png)",
+  "tex": "indépendants sur \\(\\Gr K^{\\bullet}(Y)\\).",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "indépendants sur \\(\\Gr K^{\\bullet}(Y)\\).",
+   "new": "indépendants sur \\(\\Gr K^{\\bullet}(Y)\\)"
+  },
+  "corrected": "indépendants sur \\(\\Gr K^{\\bullet}(Y)\\).",
+  "note": "The sentence ends without its full stop in the print; the TeX silently adds it. The fix restores the printed reading."
+ },
+ {
+  "page": 496,
+  "where": "'combinaison linéaire à coefficients dans GrK˙(Y)_Q des éléments 1,...,x^r'",
+  "scan": "a hand-drawn wide hat over GrK˙(Y)_Q, from the G to past the double-struck Q: the completion (both scans; crops_496_500/c496_hat.png, w496_hat.png)",
+  "tex": "\\(\\Gr K^{\\bullet}(Y)_{\\mathbb Q}\\) (no hat)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\Gr K^{\\bullet}(Y)_{\\mathbb Q}\\)",
+   "new": "\\(\\widehat{\\Gr K^{\\bullet}(Y)_{\\mathbb Q}}\\)"
+  },
+  "note": "The TeX drops the completion hat (the series φ_k has its coefficients in the completed ring)."
+ },
+ {
+  "page": 496,
+  "where": "(RR), first line 'pour -r ≤ k < 0, le coefficient de x^r dans φ_k est 0 ;'",
+  "scan": "est 0 ; (semicolon; both scans)",
+  "tex": "\\text{ est }0,\\\\",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\text{ est }0,\\\\",
+   "new": "\\text{ est }0~;\\\\"
+  },
+  "note": "Comma for the print's semicolon; '~;' is the file's form (5.4.4)."
+ },
+ {
+  "page": 496,
+  "where": "product dot of pp. 496-500 (convention, reported once)",
+  "scan": "the typescript types the product as a full stop on the line: exp(kx). (twice, (5.4.3) and φ_k), exp(kx).dx (p. 496), (1-y)^{-k-1}.dy (p. 497), I^m.H, I^n.K (p. 499), ξ_i.f*(x_i) (p. 500) (both scans)",
+  "tex": "\\cdot in all seven places",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": null,
+  "note": "Convention of the transcription, not itemized: \\cdot raises the typed stop to mid-height (same kind as the low entries for '1.u' p. 321 and λ^n(x).t^n p. 325, findings_321_325). Exposé IX has 21 \\cdot. Three examples in the form to use if the diplomatic layer keeps the typed stop: p. 496 '\\exp(kx)\\cdot dx' -> '\\exp(kx).dx'; p. 497 '(1-y)^{-k-1}\\cdot dy' -> '(1-y)^{-k-1}.dy'; p. 499 'I^m\\cdot H=0' -> 'I^m.H=0'."
+ },
+ {
+  "page": 497,
+  "where": "display after 'on se ramène à calculer le résidu de :', followed by 'c'est-à-dire le coefficient ...'",
+  "scan": "(1-y)^{-k-1}.dy / y^{r+1}, then a full stop, no comma tail (both scans; crops_496_500/c497_dot.png, w497_dot.png)",
+  "tex": "\\frac{(1-y)^{-k-1}\\cdot dy}{y^{r+1}},",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "{y^{r+1}},",
+   "new": "{y^{r+1}}."
+  },
+  "corrected": "{y^{r+1}},",
+  "note": "A full stop before the lower-case 'c'est-à-dire' that continues the sentence: a slip for a comma. The TeX silently writes the comma; the fix restores the printed stop."
+ },
+ {
+  "page": 497,
+  "where": "heading of the bibliography",
+  "scan": "BIBLIOGRAPHIE: typed capitals, underlined (both scans)",
+  "tex": "\\subsection*{Bibliographie}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\subsection*{Bibliographie}",
+   "new": "\\subsection*{BIBLIOGRAPHIE}"
+  },
+  "note": "As the headings fixed on pp. 19, 159, 220, 273, 296 and 364; the missing underline of a section title is accepted."
+ },
+ {
+  "page": 497,
+  "where": "bibliography [1] Borel-Serre, title",
+  "scan": "'Le théorème de Riemann-Roch,' typed plain, not underlined (both scans)",
+  "tex": "\\emph{Le théorème de Riemann--Roch}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Le théorème de Riemann--Roch}",
+   "new": "Le théorème de Riemann--Roch"
+  },
+  "note": "The typescript neither underlines nor italicizes the titles of this bibliography; same fix as the bibliographies of pp. 19, 159, 273, 296, 364."
+ },
+ {
+  "page": 497,
+  "where": "bibliography [2] Grothendieck, title",
+  "scan": "'Techniques de construction et théorèmes d'existence en Géométrie Algébrique,' typed plain, not underlined (both scans)",
+  "tex": "\\emph{Techniques de construction et théorèmes d'existence en Géométrie Algébrique}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Techniques de construction et théorèmes d'existence en Géométrie Algébrique}",
+   "new": "Techniques de construction et théorèmes d'existence en Géométrie Algébrique"
+  },
+  "note": "As entry [1]."
+ },
+ {
+  "page": 497,
+  "where": "bibliography [2], 'Sém. Bourbaki, 1960-61.'",
+  "scan": "1960-61: typed hyphen (both scans)",
+  "tex": "1960--61",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "1960--61",
+   "new": "1960-61"
+  },
+  "note": "En dash added by the transcription, as the bibliography ranges fixed on pp. 220-221."
+ },
+ {
+  "page": 498,
+  "where": "heading and title of Exposé IX",
+  "scan": "two blocks: 'E X P O S E  IX' (typed capitals, letter-spaced, single underline, no full stop) at the left; then the centred title 'QUELQUES CALCULS DE GROUPES K' in typed capitals with a double underline, the K with no dot below or above (both scans; crops_496_500/c498_K.png, w498_K.png)",
+  "tex": "\\section*{Exposé IX. Quelques calculs de groupes $K_\\bullet$}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\section*{Exposé IX. Quelques calculs de groupes $K_\\bullet$}",
+   "new": "\\section*{\\underline{EXPOSÉ IX}\\\\[3pt] \\underline{\\underline{QUELQUES CALCULS DE GROUPES $K$}}}"
+  },
+  "note": "The TeX joins the two lines with an added full stop, sets the title in small letters and adds a subscript bullet to the title's K (the text writes K. with its dot from the first paragraph on). Same form as the applied headings of Exposés III and IV (\\section*{\\underline{EXPOSÉ III}\\\\[3pt] \\underline{\\underline{...}}}); É keeps the TeX's accent (rule for typed capitals)."
+ },
+ {
+  "page": 498,
+  "where": "author line of the heading",
+  "scan": "'par P. BERTHELOT': the name in capitals, the line underlined (both scans)",
+  "tex": "par P. Berthelot",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "par P. Berthelot",
+   "new": "\\underline{par P. BERTHELOT}"
+  },
+  "note": "As the applied author lines of Exposés I-VI (\\underline{par P. BERTHELOT}, p. 297)."
+ },
+ {
+  "page": 498,
+  "where": "label of Proposition 1.1",
+  "scan": "'Proposition 1.1. (Suite exacte d'homotopie).': a full stop after 1.1 (both scans; crops_496_500/c498_prop.png)",
+  "tex": "\\textbf{Proposition 1.1 (suite exacte d'homotopie).}",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "Proposition 1.1 (",
+   "new": "Proposition 1.1. ("
+  },
+  "note": "The label's number has its full stop in the print (as 'Proposition 1.2.' on p. 500). Independent of the next entry (disjoint strings)."
+ },
+ {
+  "page": 498,
+  "where": "label of Proposition 1.1, the title in parentheses",
+  "scan": "(Suite exacte d'homotopie): capital S (both scans)",
+  "tex": "(suite exacte d'homotopie).}",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "suite exacte d'homotopie).}",
+   "new": "Suite exacte d'homotopie).}"
+  },
+  "note": "Capital against small. The running-text mention in the second paragraph ('la proposition 1.1 (suite exacte d'homotopie) qui') has a small s in the print and stays."
+ },
+ {
+  "page": 498,
+  "where": "statements of Exposé IX on these pages: Proposition 1.1 (pp. 498-499) and Proposition 1.2 (p. 500)",
+  "scan": "underlined word group by word group: p. 498 'Soient', 'un schéma noethé-rien', 'un sous-schéma fermé de', 'l'ouvert complémentaire de', 'dans', 'l'immersion de', 'et', 'Alors la suite'; p. 499 'est exacte'; p. 500 'Soient', 'deux schémas noethérien', 'et', 'un morphisme' ('plat' left plain), 'de', 'dans', 'On se donne une famille d'éléments', 'et on considère l'homomorphisme', 'défini par', 'où', 'est l'homomorphisme', 'image inverse', 'défini d'après', 'est considéré comme', '-module par', 'On suppose que pour tout point', 'les images des', 'par', 'l'homomorphisme', 'engendrent', 'comme groupe abélien', 'Alors', 'est surjective' (both scans)",
+  "tex": "the statements in roman (Exposé IX has no \\underline or \\emph in its statements)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé IX follows the Exposé II pattern of GLOBAL_ISSUES 82: not itemized, for the scripted per-exposé decision. No \\emph on defined terms the print leaves plain and no category L on these pages."
+ },
+ {
+  "page": 499,
+  "where": "letters of the Modules and the ideal, pp. 499-500 (convention of the Exposé IX transcription, reported once)",
+  "scan": "F, F', F'', G, G', G'', H, K (Modules) and I (the ideal of X') are underlined, the underline under the letter only, the primes after it: p. 499 'Si F̲' est un', 'i_*(F̲')', 'cl(F̲')', 'Soit G̲', 'cl(F̲) - cl(F̲')', 'j*(F̲ ⊕ F̲')', 'F̲'' → F̲ ⊕ F̲' → F̲', 'Soient alors H̲ et K̲', 'Si I̲ est l'idéal', 'I̲^m.H̲ = 0, I̲^n.K̲ = 0'; p. 500 'annulés par I̲', 'cl(H̲)', 'cl(K̲)', '0 → G̲' → G̲ → G̲'' → 0', 'F̲/F̲'' (both scans). Plain in the print: the schemes X, X', U, S and the K of K.(X)",
+  "tex": "plain F, F', F'', G, G', G'', H, K, I throughout",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Not itemized: 37 places on p. 499 and 14 on p. 500; the exposé's TeX has no \\underline on these letters. One decision for Exposé IX, \\underline{F}', \\underline{G}'' etc. where the print underlines (Exposé 0 writes the underlined Module as \\underline E, p. 6; Exposé V has the same open question, findings_311_315 and 316_320). Three examples in that form: p. 499 'Si $F'$ est un' -> 'Si $\\underline{F}'$ est un'; p. 499 'F''\\longrightarrow F\\oplus F'\\longrightarrow F ;' -> '\\underline{F}''\\longrightarrow \\underline{F}\\oplus \\underline{F}'\\longrightarrow \\underline{F} ;'; p. 500 '\\cl(H)\\in' -> '\\cl(\\underline{H})\\in'. Not for a blind script: the K of K_\\bullet is the same letter as the cokernel K."
+ },
+ {
+  "page": 500,
+  "where": "'une suite exacte de O_U-Module cohérents'",
+  "scan": "O_U-Module cohérents: Module without its s (both scans; crops_496_500/c500_Module.png)",
+  "tex": "$\\mathcal O_U$-Module cohérents (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$\\mathcal O_U$-Modules cohérents",
+  "note": "Agreement slip of the typescript (Module singular, cohérents plural). The TeX keeps the printed reading."
+ },
+ {
+  "page": 500,
+  "where": "Proposition 1.2, 'Soient X, S deux schémas noethérien'",
+  "scan": "noethérien: no final s, a comma follows (both scans; crops_496_500/c500_noeth.png)",
+  "tex": "deux schémas noethérien (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "deux schémas noethériens",
+  "note": "Agreement slip (deux schémas ... noethériens). The TeX keeps the printed reading."
+ },
+ {
+  "page": 500,
+  "where": "Proposition 1.2, 'les images des ξ_i dans K.(X_s) par l'homomorphisme :'",
+  "scan": "l'homomorphisme : (colon before the display; both scans)",
+  "tex": "par l'homomorphisme (no colon before \\[)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "par l'homomorphisme",
+   "new": "par l'homomorphisme :"
+  },
+  "note": "The TeX drops the colon."
+ },
+ {
+  "page": 500,
+  "where": "K with a raised dot in Proposition 1.2: 'de K˙(X),', 'comme K˙(X)-module', display 'K˙(X) → K˙(X_s) → K.(X_s)' (convention of the Exposé IX transcription, reported once)",
+  "scan": "K followed by a filled raised dot (K˙, the K^• of the volume), not a ring (both scans; crops_496_500/c500_Kdot.png, c500_Kdot2.png)",
+  "tex": "K^\\circ(X), K^\\circ(X_s) (four places on p. 500)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé IX writes K^\\circ for the print's raised-dot K: 88 times in main.tex, folios 500-518, and never K^{\\bullet} (as Exposé VI § 1 before the 10 Nov script; findings_366_370). Examples in that script's form: 'de $K^\\circ(X)$,' -> 'de $K^{\\bullet}(X)$,'; 'comme $K^\\circ(X)$-module' -> 'comme $K^{\\bullet}(X)$-module'; 'K^\\circ(X)\\longrightarrow K^\\circ(X_s)' -> 'K^{\\bullet}(X)\\longrightarrow K^{\\bullet}(X_s)'. Folios 501-518 not checked here."
+ }
+]

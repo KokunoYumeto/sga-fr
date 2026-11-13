@@ -1,0 +1,33 @@
+% from main.tex
+%%%%%%%%%%  scan idx 243  |  folio 230  %%%%%%%%%%
+pseudo-cohérent équivaut à dire que \(f\) est localement de présentation finie au sens de (EGA IV 1.4).
+\end{enumerate}
+
+\textbf{Exemples 1.3.} Un morphisme lisse, une immersion régulière (1.1.2) sont des morphismes pseudo-cohérents. Il en est de même d'un morphisme localement de type fini quelconque \(f:X\to Y\) si \(Y\) est localement noethérien.
+
+\textbf{Proposition 1.4.} Soit \(f:X\to Y\) un morphisme localement de type fini, et soit
+\[
+E\longrightarrow F\longrightarrow G\longrightarrow E[1]
+\]
+un triangle distingué de \(D(X)\). On a alors le tableau suivant, où \(n\in\mathbb Z\cup\{-\infty\}\) indique un degré de pseudo-cohérence par rapport à \(f\), et chaque ligne représente une implication dont le but est souligné :
+\[
+\begin{array}{ccc}
+E&F&G\\
+n+1&n&\underline n\\
+n&\underline n&n\\
+\underline n&n&n-1.
+\end{array}
+\]
+En particulier, \(D(f)_{\mathrm{coh}}\) est une sous-catégorie triangulée de \(D(X)\).
+
+\emph{Preuve.} En vertu des propriétés (i) à (iii) de (1.1), on peut supposer que \(f\) est une immersion fermée. On a alors un triangle distingué
+\[
+f_*(E)\longrightarrow f_*(F)\longrightarrow f_*(G)\longrightarrow f_*(E)[1]
+\]
+et l'assertion résulte de (I 2.6).
+
+\textbf{Définition 1.5.} Soient \(X\) et \(Y\) deux \(S\)-schémas. Nous dirons que \(X\) et \(Y\) sont tor-indépendants sur \(S\) si l'on a
+\[
+  \Tor_i^S(\mathcal O_X,\mathcal O_Y)=0\quad\text{pour }i\ne 0,
+\]
+les \(\Tor_i^S\) étant les hyper-tor locaux définis dans (EGA III 6.5). C'est une

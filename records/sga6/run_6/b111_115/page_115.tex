@@ -1,0 +1,37 @@
+% from main.tex
+%%%%%%%%%%  scan idx 128  |  folio 115  %%%%%%%%%%
+avec \(F'\in\Ob\mathcal C_0\), \(H'\in\Ob\mathcal C_0\). Quitte à localiser davantage, on peut supposer que \(v\) se factorise à travers \(G\), d'où un diagramme commutatif à lignes exactes
+\[
+\begin{tikzcd}
+0\arrow[r]&F'\arrow[r]\arrow[d,"u"']&F'\oplus H'\arrow[r]\arrow[d,"w"]&H'\arrow[r]\arrow[d,"v"]&0\\
+0\arrow[r]&F\arrow[r]&G\arrow[r]&H\arrow[r]&0 .
+\end{tikzcd}
+\]
+Comme \(u\) et \(v\) sont des épimorphismes, \(w\) aussi, et l'on gagne. Cela termine la démonstration de (3.3).
+
+On en déduit immédiatement le :
+
+\textbf{Corollaire 3.4.} La sous-catégorie (strictement) pleine de \(\mathcal C_S\) formée des objets cohérents est stable par limites projectives (resp. inductives) finies. En particulier le noyau, le conoyau, l'image d'une flèche entre deux objets cohérents sont cohérents. Soit
+\[
+  E^0\longrightarrow E^1\longrightarrow E^2\longrightarrow E^3\longrightarrow E^4
+\]
+une suite exacte de \(\mathcal C_S\). Si \(E^0,E^1,E^3,E^4\) sont cohérents, \(E^2\) aussi.
+
+\textbf{Corollaire 3.5.} Supposons que les objets de \(\mathcal C_0\) sont \(\mathcal C_0\)-cohérents (ce qui implique en particulier que \(\mathcal C_0\) est localement quasi-stable par noyau d'épimorphisme, i.e. qu'on est sous les conditions de (2.0)).
+
+\textbf{a)} Conditions équivalentes sur \(F\in\Ob\mathcal C_S\) :
+\begin{enumerate}[label=(\roman*)]
+\item \(F\) est de présentation finie;
+\item \(F\) est cohérent;
+\item \(F\) est d'\(\infty\)-présentation finie (2.8).
+\end{enumerate}
+
+\textbf{b)} Soient \(F\in\Ob\Dpx^-(\mathcal C_S)\), \(n\in\mathbb Z\). On a :
+\[
+\begin{split}
+F\ n\text{-pseudo-cohérent}
+\quad\Longleftrightarrow\quad&
+\Ho^i(F)\text{ cohérent pour }i\geq n+1,\\
+&\text{et }\Ho^n(F)\text{ de type fini.}
+\end{split}
+\]

@@ -1,0 +1,40 @@
+% from main.tex
+%%%%%%%%%%  scan idx 142  |  folio 129  %%%%%%%%%%
+pour \(i<a\). Comme on a \(\perfdim(F)\subset[a,b]\), on déduit de (4.16) que \(F^a\) est localement objet de \(\mathcal C_0\). Or \(F^a=F'^a+F''^a\), donc \(F'^a\) et \(F''^a\) sont localement objets de \(\mathcal C_0\), puisque \(\mathcal C_0\) est localement stable par facteurs directs.
+
+\textbf{Proposition 4.18.} Soit \((S',\mathcal C',\mathcal C'_0)\) un trio satisfaisant aux mêmes hypothèses (4.0) que \((S,\mathcal C,\mathcal C_0)\). Soit \(f:S'\to S\) un morphisme de sites (défini par \(f^{-1}:S\to S'\)), et soit
+\[
+  u:\Dpx^*(\mathcal C)\longrightarrow \Dpx^*(\mathcal C')\qquad (*=-,+,b)
+\]
+un foncteur au-dessus de \(f\) (cf. (2.13)). Si \(u\) transforme les objets de \(\mathcal C_0\) en complexes \(\mathcal C'_0\)-parfaits, alors \(u\) définit un foncteur
+\[
+  \Dpx^*(\mathcal C)_{\mathcal C_0\text{-}\mathrm{parf}}
+  \longrightarrow
+  \Dpx^*(\mathcal C')_{\mathcal C'_0\text{-}\mathrm{parf}}.
+\]
+
+\emph{Preuve.} Soit \(F\in\Ob\Dpx^*(\mathcal C)_{\mathcal C_0\text{-}\mathrm{parf}}\), montrons que \(u(F)\in\Ob\Dpx^*(\mathcal C')_{\mathcal C'_0\text{-}\mathrm{parf}}\). La question étant locale, on peut supposer \(F\) strictement parfait. Il n'y a plus qu'à dévisser, tenant compte du fait que \(\Dpx^*(\mathcal C')_{\mathcal C'_0\text{-}\mathrm{parf}}\) est une sous-catégorie triangulée de \(\Dpx^*(\mathcal C)\) (4.10).
+
+\textbf{Remarque 4.18.1.} Supposons qu'il existe \(m,n\in\mathbb Z\) (\(m\leq n\)) tels que \(F\in\Ob\mathcal C_0\) implique \(\mathcal C'_0\text{-}\perfamp(u(F))\subset[m,n]\). Alors, si \(F\in\Ob\Dpx^*(\mathcal C)\), on a
+\[
+  \mathcal C_0\text{-}\perfamp(F)
+  \subset[a,b]
+  \quad\Rightarrow\quad
+  \mathcal C'_0\text{-}\perfamp(u(F))
+  \subset[a+m,b+n].
+\]
+La preuve est laissée en exercice au lecteur (utiliser (4.11)).
+
+\textbf{Corollaire 4.19.} Sous les hypothèses de (2.16), si \(E'\in\Ob\Dpx^-({}_A, S'_A)\) est parfait en tant qu'objet de \(\Dpx^-({}_A, S')\) et \(E\in\Ob\Dpx^-({}_A S)\) est parfait, alors
+\[
+  E'\overset{\mathrm L}{\otimes}_A E
+\]
+est parfait.
+
+\emph{Preuve.} On peut supposer que \(E'\in\Ob\Dpx^-({}_A, S'_A)\) (\(S'\)= objet final de \(S'\)), et l'on applique (4.18) à
+\[
+  u=E'\overset{\mathrm L}{\otimes}_A:
+  \Dpx^-({}_A S)\longrightarrow \Dpx^-({}_A, S').
+\]
+En particulier :
+

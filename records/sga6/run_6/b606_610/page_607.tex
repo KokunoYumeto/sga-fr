@@ -1,0 +1,41 @@
+% from main.tex
+%%%%%%%%%%  scan idx 620  |  folio 607  %%%%%%%%%%
+immersion fermée.
+
+Enfin \(0\longrightarrow \mathbb V(E^\vee)\longrightarrow\Pic_{X/S}\xrightarrow{w}P\longrightarrow0\) est un torseur pour f.p.p.f.~; a fortiori, grâce à la descente f.p.q.c. à partir d'un «~splittage~» du torseur, \(w\) est représentable par un morphisme affine fidèlement plat de présentation finie (voir~: Oort, \emph{Commutative group schemes}, Proposition (17.4)).
+
+\textbf{Corollaire 3.3.} Sous les conditions de 3.1, on a
+\begin{enumerate}[label=\roman*)]
+\item Si \(\Pic_{(\zar)(X'/S)}\to\Pic_{(\fppf)(X'/S)}\) est un isomorphisme, alors \(\Pic_{(\zar)(X/S)}\to\Pic_{(\fppf)(X/S)}\) est un isomorphisme.
+\item En supposant le \(S\)-schéma \(T\) affine, si \(\Pic(X'_T)\to\Pic_{(\zar)(X'/S)}^{(T)}\) est surjectif, alors \(\Pic(X_T)\to\Pic_{(\zar)(X/S)}^{(T)}\) est surjectif.
+\end{enumerate}
+En effet (i) résulte du diagramme suivant de faisceaux pour la topologie de Zariski
+\[
+\begin{tikzcd}[column sep=small]
+0 \arrow[r] \arrow[d,"S"] & \mathbb V(E^\vee) \arrow[r] \arrow[d,"S"] &
+  \Pic_{(\zar)(X/S)} \arrow[r] \arrow[d] &
+  \Pic_{(\zar)(X'/S)} \arrow[r] \arrow[d,"S"] &
+  \mathbb V(Q) \arrow[d,"S"]\\
+0 \arrow[r] & \mathbb V(E^\vee) \arrow[r,dash] &
+\Pic_{(\fppf)(X/S)} \arrow[r] &
+\Pic_{(\fppf)(X'/S)} \arrow[r] &
+\mathbb V(Q),
+\end{tikzcd}
+\]
+en lui appliquant le lemme des cinq.
+
+(ii) résulte du diagramme à lignes exactes suivant
+\[
+\begin{tikzcd}[column sep=small]
+H^1(X_T,I_T) \arrow[r] \arrow[d] &
+H^1(X_T,\mathcal O_{X_T}^{*}) \arrow[r,dash] \arrow[d] &
+H^1(X_T,\mathcal O_{X'_T}^{*}) \arrow[r,dash] \arrow[d] &
+H^2(X_T,I_T) \arrow[d]\\
+H^0(T,R^1(f_T)_*(I_T)) \arrow[r] &
+H^0(T,R^1(f_T)_*\mathcal O_{X_T}^{*}) \arrow[r] &
+H^0(T,R^1(f_T)_*\mathcal O_{X'_T}^{*}) \arrow[r] &
+H^0(T,R^2f_*I_T),
+\end{tikzcd}
+\]
+car les flèches verticales extérieures sont des isomorphismes, \(T\) étant affine.
+

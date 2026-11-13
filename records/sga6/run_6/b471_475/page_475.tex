@@ -1,0 +1,37 @@
+% from main.tex
+%%%%%%%%%%  scan idx 488  |  folio 475  %%%%%%%%%%
+Cela résulte immédiatement de 1.9 et de la démonstration de 1.5.
+
+\subsection*{2. Complexe cotangent relatif}
+
+\textbf{2.1.} Nous donnerons ici une définition du complexe cotangent qui, sans avoir toute la généralité possible (voir Exp. 0 4.4), sera suffisante pour les besoins du théorème de Riemann--Roch; bien entendu, la définition donnée dans exp. 0 coïncide dans le cas envisagé avec la définition donnée ici.
+
+Soit $f:X\to Y$ un morphisme lissifiable, c'est-à-dire admettant une factorisation :
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X \arrow[r,"i"] \arrow[dr,"f"'] & V \arrow[d,"g"]\\
+& Y,
+\end{tikzcd}
+\]
+où $g$ est un morphisme lisse, et $i$ une immersion qu'on peut supposer fermée. Soit $J$ l'idéal de $X$ dans $V$. La dérivation canonique :
+\[
+d:\mathcal O_V\longrightarrow\Omega^1_{V/Y}
+\]
+définit un homomorphisme :
+\[
+J\longrightarrow\mathcal O_V\xrightarrow{d}\Omega^1_{V/Y}\longrightarrow
+\Omega^1_{V/Y}\otimes_{\mathcal O_V}\mathcal O_X
+\]
+qui s'annule sur $J^2$, et définit donc un homomorphisme, encore noté $d$ :
+\begin{equation}\tag{2.1.1}
+J/J^2\xrightarrow{d} i^*(\Omega^1_{V/Y}).
+\end{equation}
+On vérifie aisément que cet homomorphisme est $\mathcal O_X$-linéaire. On définit alors un complexe de chaines $L^{X/Y}_\bullet$ en posant :
+\[
+L^{X/Y}_0=i^*(\Omega^1_{V/Y}),\qquad
+L^{X/Y}_1=J/J^2;
+\qquad
+L^{X/Y}_i=0\quad\text{si }i\neq0,1,
+\]
+et en prenant comme homomorphisme $L^{X/Y}_1\to L^{X/Y}_0$ l'homomorphisme (1.5.1).
+

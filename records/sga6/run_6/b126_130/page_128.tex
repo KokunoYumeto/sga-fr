@@ -1,0 +1,20 @@
+% from main.tex
+%%%%%%%%%%  scan idx 141  |  folio 128  %%%%%%%%%%
+\emph{Preuve.} Procéder par récurrence sur \(b\) (\(a\) et \(n\) fixés), en tronquant \(F\) et appliquant (4.11) (cf. preuve de (2.11)).
+
+\textbf{Lemme 4.16.} \emph{Soient \(a,b\in\mathbb Z\) (\(a\leq b\)), et \(F\in\Ob\Dpx(\mathcal C)\) tel que \(F^i=0\) pour \(i\notin[a,b]\). On suppose que l'on a \(\perfamp(F)\subset[a,b]\), et que \(F^i\in\Ob\mathcal C_0\) pour \(i>a\). Alors \(F^a\) est localement objet de \(\mathcal C_0\).}
+
+\emph{Preuve.} On a une suite exacte (obtenue en tronquant \(F\))
+\[
+  0\longrightarrow F'\longrightarrow F\longrightarrow F^a[-a]\longrightarrow 0,
+\]
+avec \(\perfamp(F')\subset[a+1,b+1]\). De (4.11) et (4.13) on déduit que \(\perfdim(F^a)=0\), i.e. que \(F^a\) est localement objet de \(\mathcal C_0\).
+
+\textbf{Proposition 4.17.} Soient \(F',F''\in\Ob\Dpx(\mathcal C_S)\), et \(a,b\in\mathbb Z\), avec \(a\leq b\). Considérons les conditions :
+\begin{enumerate}[label=(\roman*)]
+\item \(\perfamp(F')\subset[a,b]\) et \(\perfamp(F'')\subset[a,b]\);
+\item \(\perfamp(F'+F'')\subset[a,b]\).
+\end{enumerate}
+On a (i) \(\Rightarrow\) (ii), et, si \(\mathcal C_0\) est localement stable par facteurs directs (i.e. la relation \(E'+E''\in\Ob\mathcal C_0\), pour \(E',E''\in\Ob\mathcal C_X\) et \(X\in\Ob S\), implique que localement \(E'\) et \(E''\) sont objets de \(\mathcal C_0\)), alors on a (i) \(\Leftrightarrow\) (ii).
+
+\emph{Preuve.} L'implication (i) \(\Rightarrow\) (ii) est un cas particulier de (4.11). Prouvons la réciproque. Posons \(F=F'+F''\). Comme \(F\) est pseudo-cohérent, \(F'\) et \(F''\) le sont aussi (2.12). D'autre part, la relation \(\Ho^i(F)=0\) pour \(i\notin[a,b]\) implique \(\Ho^i(F')=\Ho^i(F'')=0\) pour \(i\notin[a,b]\). D'après (2.10 a)), on peut donc supposer (quitte à se localiser) que \(F'^i\) (resp. \(F''^i\)) \(\in\Ob\mathcal C_0\) pour \(i\geq a+1\) et \(F'^i=F''^i=0\) pour \(i>b\), puis, en tronquant, que \(F'^i=F''^i=0\)

@@ -1,0 +1,32 @@
+% from main.tex
+%%%%%%%%%%  scan idx 410  |  folio 397  %%%%%%%%%%
+En d'%
+autres termes, \(K^{\bullet}(X)\) est la \(K^{\bullet}(S)\)-\(\lambda\)-algèbre engendrée par les générateurs \(F_1,\ldots,F_k\) soumis aux relations (cf. V 4.6)~: i) \(\lambda^p(F_i)=0\) pour \(p>p_i\) ; ii) \(\sum_i F_i=E\).
+
+On commence par le cas où tous les \(p_i\) sont égaux à \(1\) ; le théorème s'énonce alors~:
+
+\textbf{Corollaire 4.7.} Soient \(S\) un schéma quasi-compact, \(E\) un \(\mathcal O_S\)-Module localement de rang \(n\), \(X\) le fibré en drapeaux de \(E\), \(\xi_1,\ldots,\xi_n\) les classes des faisceaux inversibles \(F_1,\ldots,F_n\) (notation de 3.5). Alors \(K^{\bullet}(X)\) est la \(K^{\bullet}(S)\)-algèbre engendrée par les \(\xi_i\), soumis aux relations~:
+\[
+  \sigma_i(\xi_1,\ldots,\xi_n)=\lambda^i(E).
+\]
+
+On procède par récurrence sur \(n\). Pour \(n=1\), le théorème est trivial. Supposons qu'il soit montré pour \(n-1\) ; on considère alors \(\mathbb P(E)\), et sur \(\mathbb P(E)\) la suite exacte~:
+\[
+  0\longrightarrow F\longrightarrow g^*(E)\longrightarrow \mathcal O_{\mathbb P(E)}(1)\longrightarrow 0,
+\]
+\(g\) étant le morphisme structural de \(\mathbb P(E)\). D'après le lemme 4.2, \(X\) s'identifie au fibré en drapeaux usuel \(D(F)\) sur \(\mathbb P(E)\), les faisceaux canoniques se correspondant dans cette identification. Le diagramme~:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+D(E)=D(F) \arrow[r,"h"] \arrow[dr,"f"'] & \mathbb P(E) \arrow[d,"g"]\\
+& S
+\end{tikzcd}
+\]
+montre que \(K^{\bullet}(S)\to K^{\bullet}(X)\) se factorise par \(K^{\bullet}(\mathbb P(E))\). D'après l'hypothèse de récurrence appliquée à \(D(F)\), et le corollaire 3.4, \(K^{\bullet}(X)\) admet pour base sur \(K^{\bullet}(\mathbb P(E))\) les éléments de la forme~:
+\[
+  \xi_2^{\alpha_2}\cdots\xi_{n-1}^{\alpha_{n-1}},
+  \qquad \text{avec } 0\le\alpha_i\le n-i;
+\]
+par ailleurs, \(K^{\bullet}(\mathbb P(E))\) admet pour base sur \(K^{\bullet}(S)\) les éléments \(1,\xi_1,\ldots,\xi_1^{n-1}\) ; donc \(K^{\bullet}(X)\) admet pour base sur \(K^{\bullet}(S)\) les éléments~:
+\[
+  \xi_1^{\alpha_1}\cdots\xi_{n-1}^{\alpha_{n-1}},
+  \qquad

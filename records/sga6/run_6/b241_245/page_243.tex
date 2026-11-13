@@ -1,0 +1,45 @@
+% from main.tex
+%%%%%%%%%%  scan idx 256  |  folio 243  %%%%%%%%%%
+d'après la
+commutation du produit tensoriel au passage aux fibres, et l'hypothèse (iv) implique (*), cqfd.
+
+\textbf{Remarque 3.3.1.} Le rédacteur ignore si les équivalences (i)\(\Longleftrightarrow\)(iii)\(\Longleftrightarrow\)(iv) sont vraies sans l'hypothèse que \(X\) a assez de points.
+
+\textbf{Corollaire 3.4.} Soit
+\[
+\begin{tikzcd}[column sep=large]
+X \arrow[rr,"f"] \arrow[dr,"h"'] & & Y \arrow[dl,"g"]\\
+& Z &
+\end{tikzcd}
+\]
+un triangle commutatif de topos annelés, où l'on suppose que \(X\) a assez de points, et soient \(E\in\Ob D(X)\), \(F\in\Ob D(Y)\), \([a,b]\), \([c,d]\) des intervalles de \(\mathbb Z\). On a alors :
+\[
+  \toramp_f(E)\subset[a,b]\quad\text{et}\quad\toramp_g(F)\subset[c,d]
+\]
+\[
+  \Longrightarrow\toramp_h(E\otimes_Y^{\mathbf L}F)\subset[a+c,b+d].
+\]
+
+\emph{Preuve.} D'après (3.3), il s'agit de montrer que les relations de gauche impliquent
+\[
+  H^i\left(\bigl((E\otimes_Y^{\mathbf L}F)\vert_{h^{-1}(Z')}\bigr)
+  \otimes_{Z'}^{\mathbf L}M\right)=0
+\]
+pour tout \(i\notin[a+c,b+d]\) et tout \(\mathcal O_{Z'}\)-Module \(M\), où \(Z'\) est un objet de \(Z\). Or, si l'on pose \(Y'=g^{-1}(Z')\), \(X'=f^{-1}(Y')=h^{-1}(Z')\), on a
+\[
+  \bigl((E\otimes_Y^{\mathbf L}F)\vert_{X'}\bigr)
+  \otimes_{Z'}^{\mathbf L}M
+  \simeq
+  (E\vert_{X'})\otimes_{Y'}^{\mathbf L}
+  \bigl((F\vert_{Y'})\otimes_{Z'}^{\mathbf L}M\bigr),
+\]
+et l'assertion résulte aussitôt des hypothèses.
+
+En particulier :
+
+\textbf{Corollaire 3.4.1.} Sous les hypothèses de (3.4),
+\begin{enumerate}[label=\alph*)]
+\item si \(g\) est de tor-dimension \(\leq n\), on a
+\[
+  \toramp_f(E)\subset[a,b]\Longrightarrow\toramp_h(E)\subset[a-n,b];
+\]

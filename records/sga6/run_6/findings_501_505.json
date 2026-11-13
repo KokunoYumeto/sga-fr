@@ -1,0 +1,143 @@
+[
+ {
+  "page": 501,
+  "where": "'Enfin, on note encore ξ_i les images des ξ_i dans K˙(X_S') et K˙(X_U), et on note :'",
+  "scan": "a comma after K˙(X_U): the witness has a clean comma with nothing above it; the main scan has the comma with a faint speck above and to its left, far smaller and lighter than the upper dot of the page's semicolons ('; on a :') (crops_501_505/m501_KXU_zoom.png, w501_KXU_zoom2.png, m501_semicolon_ref.png)",
+  "tex": "$K^\\circ(X_U)$; et on note :",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$; et on note :",
+   "new": "$, et on note :"
+  },
+  "note": "The semicolon reads the speck as the dot of a semicolon. The old string avoids K^\\circ, so the entry applies before or after the K˙ script (entry below)."
+ },
+ {
+  "page": 501,
+  "where": "diagram (1.2.1), end of the lower row 'K.(X_U) → 0'",
+  "scan": "no punctuation after the 0 (both scans)",
+  "tex": "K_\\bullet(X_U) \\arrow[r] & 0,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "& 0,",
+   "new": "& 0"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 501,
+  "where": "'Soit (x'_i)_{i∈I} ∈ K.(S')^{(I)} ; on a :'",
+  "scan": "begins a new, indented paragraph after '... que les deux carrés sont commutatifs.' (both scans)",
+  "tex": "runs on in the paragraph 'Les deux lignes horizontales ...'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "sont commutatifs. Soit",
+   "new": "sont commutatifs.\n\nSoit"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 501,
+  "where": "K˙ on pp. 501-504 (11 places: 2 on p. 501, 4 on p. 503, 5 on p. 504)",
+  "scan": "K with a raised filled dot in every place (both scans; crops_501_505/m501_Kdot_zoom.png, m503_Kdot_zoom.png, w501_KXU.png)",
+  "tex": "K^\\circ (a raised circle) in all 11 places",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé IX TeX: K^\\circ for the print's K˙ throughout the exposé (88 in Exposé IX in each layer, no K^\\bullet there), as in Exposé VII (findings_416_420: one script K^\\circ -> K^{\\bullet}, both layers) and Exposé VI §1 before the 10 Nov pass: not itemized. Three examples: p. 501 'dans $K^\\circ(X_{S'})$' -> 'dans $K^{\\bullet}(X_{S'})$'; p. 503 'K_\\bullet(S)\\otimes_{K^\\circ(S)}K^\\circ(X)' -> 'K_\\bullet(S)\\otimes_{K^{\\bullet}(S)}K^{\\bullet}(X)'; p. 504 '$1\\in K^\\circ(X)$' -> '$1\\in K^{\\bullet}(X)$'. No old string in this file contains K^\\circ."
+ },
+ {
+  "page": 502,
+  "where": "start of page (folio-502 marker)",
+  "scan": "p. 501 ends '... vraie d'après IV 3.1.1, car i est propre et f plat.'; p. 502 begins, indented, 'Soit (x_i)_{i∈I} ∈ K.(S)^{(I)} ; on a :' (both scans; b501_505/page_501_s4.png, page_502_s1.png; crops_501_505/wit_501_half.png, wit_502_half.png)",
+  "tex": "page_501.tex ends 'car $i$ est' above the folio-502 marker; page_502.tex begins 'propre et $f$ plat. Soit $(x_i)_{i\\in I}$...' in one paragraph",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 502 really begins at 'Soit $(x_i)_{i\\in I}\\in K_\\bullet(S)^{(I)}$~; on a :', and the print starts a new paragraph there. Exact edit in main.tex, both layers (at the time of checking diplomatic line 12976, current 12982; the file was being edited): replace 'car $i$ est\\n%%%%%%%%%%  scan idx 515  |  folio 502  %%%%%%%%%%\\npropre et $f$ plat. Soit $(x_i)_{i\\in I}' by 'car $i$ est\\npropre et $f$ plat.\\n\\n%%%%%%%%%%  scan idx 515  |  folio 502  %%%%%%%%%%\\nSoit $(x_i)_{i\\in I}' (old string once per layer; simulated in memory: crops_501_505/sim_markers.py). The blank line is the print's paragraph break."
+ },
+ {
+  "page": 502,
+  "where": "second display, end: '... = Σ_i ξ_i.f*_U ∘ j*(x_i)'",
+  "scan": "no punctuation after j*(x_i) (both scans; crops_501_505/m502_disp2_end.png, w502_disp2_end.png)",
+  "tex": "f_U^*\\circ j^*(x_i),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "j^*(x_i),",
+   "new": "j^*(x_i)"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 502,
+  "where": "diagram K.(S_red)^{(I)} → K.(S)^{(I)} over K.(X_{S_red}) → K.(X)",
+  "scan": "a comma to the right of the lower row, after K.(X) (both scans)",
+  "tex": "no punctuation after the diagram",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r] & K_\\bullet(X)",
+   "new": "\\arrow[r] & K_\\bullet(X),"
+  },
+  "note": "Missing comma; placed in the last cell, as the TeX sets the end of diagram (1.2.1)."
+ },
+ {
+  "page": 502,
+  "where": "'Soit y ∈ K.(X). Par hypothèse, K.(X_s) est engendré ...'",
+  "scan": "begins a new, indented paragraph after '... alors O_{S,s} = K.' (both scans)",
+  "tex": "runs on in the paragraph 'On se place donc ...'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "=K$. Soit $y",
+   "new": "=K$.\n\nSoit $y"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 503,
+  "where": "display 'X_s = X×_S Spec(K) = lim← X×_S Spec(A_f)'",
+  "scan": "no punctuation at the end of the display (both scans)",
+  "tex": "\\varprojlim_f X\\times_S\\Spec(A_f),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "X\\times_S\\Spec(A_f),",
+   "new": "X\\times_S\\Spec(A_f)"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 503,
+  "where": "statements of pp. 503-505: Corollaire 1.3 (p. 503), Corollaire 1.4 (p. 504), Proposition 1.6 (p. 505)",
+  "scan": "underlined word group by word group (both scans): Cor. 1.3 'Soit', 'un morphisme plat de schémas noethériens', 'On suppose que pour tout point', 'de', 'l'homomorphisme', 'est surjectif', 'Alors l'homomorphisme déduit de', 'est surjectif'; Cor. 1.4 'Soit', 'un morphisme plat de schémas noethériens', 'On suppose que pour tout point s de', 'l'homomorphisme canonique', 'est un isomorphisme', 'Alors l'homomorphisme', 'est surjectif', 'Si de plus', 'possède une section', 'de tor-dimension finie', 'alors', 'est un isomorphisme'; Prop. 1.6 'Soient', 'un schéma noethérien', 'E', 'un', 'O_S-Module localement libre de type fini', 'le fibré vectoriel associé à E', 'et', 'le morphisme structural de', 'Alors', 'est un isomorphisme'; formulas, the other letters and the punctuation plain; the labels underline only the word (Remarque 1.5 likewise)",
+  "tex": "the statements in roman (Exposé IX has one \\underline in all and no \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé IX follows the Exposé II pattern of GLOBAL_ISSUES 82 (pending volume decision), as Exposé VII does (findings_416_420): not itemized. The TeX adds no emphasis on defined terms on pp. 501-505, and these pages have no category letter."
+ },
+ {
+  "page": 505,
+  "where": "start of page (folio-505 marker)",
+  "scan": "p. 504 ends '... (ou encore lisse en ces points si on suppose f'; p. 505 begins 'de présentation finie).' (both scans; b501_505/page_504_s4.png, page_505_s1.png; crops_501_505/wit_504_half.png, wit_505_half.png)",
+  "tex": "page_504.tex ends 'si on suppose $f$ de' above the folio-505 marker; page_505.tex begins 'présentation finie).'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 505 really begins at 'de présentation finie).'. Exact edit in main.tex, both layers (at the time of checking diplomatic line 13054, current 13060): replace 'si on suppose $f$ de\\n%%%%%%%%%%  scan idx 518  |  folio 505  %%%%%%%%%%\\nprésentation finie).' by 'si on suppose $f$\\n%%%%%%%%%%  scan idx 518  |  folio 505  %%%%%%%%%%\\nde présentation finie).' (old string once per layer; simulated in memory: crops_501_505/sim_markers.py). The sentence runs on, so no blank line."
+ },
+ {
+  "page": 505,
+  "where": "the Module E: Proposition 1.6 'E un O_S-Module', 'associé à E'; proof, 'Dans ce cas, E est somme directe'",
+  "scan": "E underlined in all three places (both scans); the underlined O of O_S and O_{X_s,g(s)} (and O_{S,s} on p. 502) is the structure sheaf",
+  "tex": "plain $E$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé IX TeX (underlined letters written plain), as reported for Exposés VI and VII (findings_401_405, findings_441_445): not itemized; places listed for the closing pass. The form to use if the diplomatic layer reproduces the underline: '$E$ un $\\mathcal O_S$-Module' -> '$\\underline{E}$ un $\\mathcal O_S$-Module'; 'associé à $E$' -> 'associé à $\\underline{E}$'; 'Dans ce cas, $E$ est' -> 'Dans ce cas, $\\underline{E}$ est'. The underlined O written \\mathcal O falls under the pending volume decision."
+ }
+]

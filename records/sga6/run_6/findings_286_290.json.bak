@@ -1,0 +1,237 @@
+[
+  {
+    "page": 286,
+    "where": "2.10, sentence after (2.10.1): 'on voit que (2.10.1) munit K.(X) ...'",
+    "scan": "munit (underlined)",
+    "tex": "on voit que (2.10.1) munit",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {
+      "old": "(2.10.1) munit",
+      "new": "(2.10.1) \\emph{munit}"
+    },
+    "note": "The print underlines 'munit', 'd'une structure de' and 'module' in this sentence; the TeX has no emphasis. This file writes the typescript's underline as \\emph (p. 287 \\emph{formule ...}, p. 290 \\emph{Preuve})."
+  },
+  {
+    "page": 286,
+    "where": "2.10, same sentence: 'K.(X) d'une structure de K˙(X)-module'",
+    "scan": "d'une structure de (underlined)",
+    "tex": "d'une structure de",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {
+      "old": "d'une structure de",
+      "new": "\\emph{d'une structure de}"
+    },
+    "note": ""
+  },
+  {
+    "page": 286,
+    "where": "2.10, same sentence: 'K˙(X)-module. Plus généralement'",
+    "scan": "K˙(X)-module with 'module' underlined (the hyphen is not)",
+    "tex": "\\(K'(X)\\)-module. Plus généralement",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {
+      "old": "-module. Plus",
+      "new": "-\\emph{module}. Plus"
+    },
+    "note": "'old' leaves out the K' so that it still matches after the K' -> K^{\\bullet} replacement (convention finding below)."
+  },
+  {
+    "page": 286,
+    "where": "2.11, 'K.(X) a tendance à être covariant en X'",
+    "scan": "covariant (underlined)",
+    "tex": "à être covariant en",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {
+      "old": "à être covariant en",
+      "new": "à être \\emph{covariant} en"
+    },
+    "note": ""
+  },
+  {
+    "page": 286,
+    "where": "2.11, 'pour les morphismes propres. Précisons ce point :'",
+    "scan": "propres (underlined)",
+    "tex": "morphismes propres. Précisons",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {
+      "old": "morphismes propres. Précisons",
+      "new": "morphismes \\emph{propres}. Précisons"
+    },
+    "note": ""
+  },
+  {
+    "page": 286,
+    "where": "2.10, first display (the pairing)",
+    "scan": "⊗ with a plain typed capital L above it and A below",
+    "tex": "\\otimes_A^{\\mathbf L}",
+    "kind": "font",
+    "confidence": "high",
+    "fix": {
+      "old": "\\otimes_A^{\\mathbf L}",
+      "new": "\\otimes_A^{\\mathrm L}"
+    },
+    "note": "The typescript types the derived-tensor L as an ordinary capital L, as in Exposé III (where the TeX now has \\mathrm L)."
+  },
+  {
+    "page": 286,
+    "where": "2.10, first display (the pairing)",
+    "scan": "D(X)_parf with 'parf' underlined ('coh' is not)",
+    "tex": "D(X)_{\\parf}",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {
+      "old": "D(X)_{\\parf}\\times",
+      "new": "D(X)_{\\uparf}\\times"
+    },
+    "note": "\\parf prints a plain parf; the file's \\uparf (defined for Exposé III) prints the underlined one. The underlined parf is the category of complexes of finite perfect amplitude (2.2)."
+  },
+  {
+    "page": 286,
+    "where": "2.10, 'Grâce à l'associativité du produit tensoriel'",
+    "scan": "Grâce,à (a typed comma in the space between the two words; same in the witness)",
+    "tex": "Grâce à l'associativité",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": {
+      "old": "Grâce à l'associativité",
+      "new": "Grâce,à l'associativité"
+    },
+    "corrected": "Grâce à l'associativité",
+    "note": "Typing error: a stray comma typed in the space after 'Grâce' (the shape of the page's typed commas, in both scans). The TeX silently corrects it."
+  },
+  {
+    "page": 286,
+    "where": "throughout pp. 286-290 (first: title of 2.10, 'Accouplement entre K˙ et K.')",
+    "scan": "K˙: K with a raised typed dot (K^•); the dot is round, unlike the typed apostrophe of l'on; same in the witness",
+    "tex": "K' (e.g. 'Accouplement entre \\(K'\\) et \\(K_{\\bullet}\\)')",
+    "kind": "symbol",
+    "confidence": "high",
+    "fix": null,
+    "note": "Convention of the TeX throughout Exposé IV (150 K' there and no K^\\bullet, while the rest of the volume writes K^\\bullet 258 times): the print's K˙ (raised dot, the contravariant K^•, beside K. = K_\\bullet) is written K'. 24 occurrences on pp. 286-289, not itemized. Three examples: p. 286 title of 2.10 '\\(K'\\) et \\(K_{\\bullet}\\)' (print K˙ et K.); p. 287 'Cet homomorphisme est \\(K'(Y)\\)-linéaire' (print K˙(Y)); p. 289 (2.12.3) 'f_*:K'(X)\\longrightarrow K'(Y)' (print K˙(X) → K˙(Y)). Global fix for Exposé IV: K' -> K^{\\bullet} (e.g. \\(K'(X)\\) -> \\(K^{\\bullet}(X)\\)); check K_{\\loc}' and any genuine prime against the print."
+  },
+  {
+    "page": 287,
+    "where": "page start",
+    "scan": "p. 287 begins 'Cet homomorphisme est K˙(Y)-linéaire (cf. (2.10))'; p. 286 ends 'Celui-ci définit un homomorphisme' and the display (2.11.1.1) f_* : K.(X) → K.(Y)",
+    "tex": "page_287.tex begins 'homomorphisme' and the display (2.11.1.1), printed on p. 286",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "The folio-287 marker stands four TeX lines too early. Exact fix (both layers): python -I move_marker.py 6 287 \"Cet homomorphisme est\" (simulated: the marker then stands after the \\end{equation} of (2.11.1.1), just before 'Cet homomorphisme est \\(K'(Y)\\)-linéaire (cf. (2.10))'). As text replacements in main.tex: 'Celui-ci définit un\\n%%%%%%%%%%  scan idx 300  |  folio 287  %%%%%%%%%%\\nhomomorphisme\\n' by 'Celui-ci définit un\\nhomomorphisme\\n', and 'Cet homomorphisme est \\(K'(Y)\\)-linéaire' by '%%%%%%%%%%  scan idx 300  |  folio 287  %%%%%%%%%%\\nCet homomorphisme est \\(K'(Y)\\)-linéaire' (unique; apply before any K' replacement). The full-stop fix of (2.11.1.1) below is filed under p. 287 but concerns a display of p. 286: apply it before moving the marker."
+  },
+  {
+    "page": 287,
+    "where": "display (2.11.1.1) (printed at the foot of p. 286, under the p. 287 marker in the TeX)",
+    "scan": "f_* : K.(X) → K.(Y) with no punctuation after it (the other displays of these pages end with a full stop; same in the witness)",
+    "tex": "f_*:K_{\\bullet}(X)\\longrightarrow K_{\\bullet}(Y).",
+    "kind": "punctuation",
+    "confidence": "high",
+    "fix": {
+      "old": "\\tag{2.11.1.1}\n f_*:K_{\\bullet}(X)\\longrightarrow K_{\\bullet}(Y).",
+      "new": "\\tag{2.11.1.1}\n f_*:K_{\\bullet}(X)\\longrightarrow K_{\\bullet}(Y)"
+    },
+    "note": "The TeX adds a full stop the print does not have."
+  },
+  {
+    "page": 287,
+    "where": "first paragraph, 'on a la formule dite de projection'",
+    "scan": "'formule' and 'de projection' underlined, 'dite' not",
+    "tex": "\\emph{formule dite de projection}",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {
+      "old": "\\emph{formule dite de projection}",
+      "new": "\\emph{formule} dite \\emph{de projection}"
+    },
+    "note": ""
+  },
+  {
+    "page": 287,
+    "where": "'pour M ∈ ob D(Y)_parf , on a (III 3.7)'",
+    "scan": "D(Y)_parf with 'parf' underlined",
+    "tex": "M\\in\\Ob D(Y)_{\\parf}",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {
+      "old": "D(Y)_{\\parf}",
+      "new": "D(Y)_{\\uparf}"
+    },
+    "note": ""
+  },
+  {
+    "page": 287,
+    "where": "display after '(III 3.7)'",
+    "scan": "Rf_*(E) ⊗^L M ≃ Rf_*(E ⊗^L_Y M), both L plain typed capitals",
+    "tex": "Rf_*(E)\\otimes^{\\mathbf L}M\\simeq Rf_*(E\\otimes_Y^{\\mathbf L}M)",
+    "kind": "font",
+    "confidence": "high",
+    "fix": {
+      "old": "\\otimes^{\\mathbf L}M\\simeq\n Rf_*(E\\otimes_Y^{\\mathbf L}M)",
+      "new": "\\otimes^{\\mathrm L}M\\simeq\n Rf_*(E\\otimes_Y^{\\mathrm L}M)"
+    },
+    "note": "One edit for the two L of this display; as on p. 286, the print types a plain L."
+  },
+  {
+    "page": 289,
+    "where": "first paragraph, 'le foncteur Rf_* envoie D(X)_parf dans D(Y)_parf'",
+    "scan": "both 'parf' underlined",
+    "tex": "envoie \\(D(X)_{\\parf}\\) dans \\(D(Y)_{\\parf}\\)",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {
+      "old": "envoie \\(D(X)_{\\parf}\\) dans \\(D(Y)_{\\parf}\\)",
+      "new": "envoie \\(D(X)_{\\uparf}\\) dans \\(D(Y)_{\\uparf}\\)"
+    },
+    "note": ""
+  },
+  {
+    "page": 289,
+    "where": "before (2.12.4): 'pour y ∈ K.(Y) (resp. K˙(Y) et x ∈ K˙(X), on a la formule'",
+    "scan": "(resp. K˙(Y) et x ∈ K˙(X), : the parenthesis opened before 'resp.' is never closed",
+    "tex": "(resp. \\(K'(Y)\\) et \\(x\\in K'(X)\\)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "(resp. \\(K'(Y)\\)) et \\(x\\in K'(X)\\)",
+    "note": "Typing error (missing closing parenthesis). The TeX keeps the printed reading; FIXLOG_6_CURRENT already has this correction (Codex SGA-SRC-001594)."
+  },
+  {
+    "page": 290,
+    "where": "page start",
+    "scan": "p. 290 begins with the heading '3. Compléments sur les groupes de Grothendieck des schémas (1)'; p. 289 ends '... l'une des motivations principales des sorites de Exp. I à Exp. IV.'",
+    "tex": "page_290.tex begins 'sorites de Exp. I à Exp. IV.' (the last line of p. 289)",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "The folio-290 marker stands one TeX line too early. Exact fix in main.tex (both layers): replace 'principales des\\n%%%%%%%%%%  scan idx 303  |  folio 290  %%%%%%%%%%\\nsorites de Exp. I à Exp. IV.\\n\\n\\section*{3.' by 'principales des\\nsorites de Exp. I à Exp. IV.\\n\\n%%%%%%%%%%  scan idx 303  |  folio 290  %%%%%%%%%%\\n\\section*{3.', so that page 290 begins with the section heading. Equivalently: python -I move_marker.py 6 290 \"\\section*{3. Compl\"."
+  },
+  {
+    "page": 290,
+    "where": "page end",
+    "scan": "p. 290 ends '... pour g . La flèche de changement de base' (the witness shows the whole line, nothing after 'base'); p. 291 begins 'est donc définie, reste à montrer que c'est un isomorphisme.' (witness page 302)",
+    "tex": "page_290.tex ends 'La flèche de changement de base est'; page 291 begins 'donc définie'",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "The folio-291 marker stands one word too late: 'est' belongs to p. 291. Exact fix in main.tex (both layers): replace 'de changement de base est\\n%%%%%%%%%%  scan idx 304  |  folio 291  %%%%%%%%%%\\ndonc définie' by 'de changement de base\\n%%%%%%%%%%  scan idx 304  |  folio 291  %%%%%%%%%%\\nest donc définie'. In the main scan this line of p. 290 runs to the image edge. Equivalently: python -I move_marker.py 6 291 est --before (leaves 'base ' and 'est' on their own lines)."
+  },
+  {
+    "page": 290,
+    "where": "Preuve, after '(III 3.5.2) et (III 3.7.1),'",
+    "scan": "on vérifié facilement (acute accent on the final e; same in the witness)",
+    "tex": "on vérifie facilement",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": {
+      "old": "on vérifie facilement",
+      "new": "on vérifié facilement"
+    },
+    "corrected": "on vérifie facilement",
+    "note": "Typing error (vérifié for vérifie). The TeX silently corrects it."
+  }
+]

@@ -1,0 +1,38 @@
+% from main.tex
+%%%%%%%%%%  scan idx 498  |  folio 485  %%%%%%%%%%
+Par additivité, on peut donc supposer que $x$ est la classe d'un $\mathcal O_X$-Module localement libre de type fini $E$. De plus, quitte à remplacer $X$ par le schéma des drapeaux de $E$, ce qui donne une injection sur les $\Gr K^{\bullet}$ (VI 5.5), on
+peut supposer que $E$ est un faisceau inversible. On a alors : $\check E=E^{-1}$ ; donc $\check x=x^{-1}$.
+
+Les $c^i(\check x)$, $c^j(x)$ sont nuls pour $i,j\geq2$. Il suffit donc de montrer que
+\[
+c^1(x^{-1})=-c^1(x).
+\]
+Or $c^1(x)$ est la classe dans $\Gr^kK^{\bullet}(X)$ de $x-1$, et $c^1(x^{-1})$ celle de $x^{-1}-1$. L'égalité :
+\[
+x^{-1}-1=1-x+(x-1)(1-x^{-1})
+\]
+donne :
+\[
+x^{-1}-1\equiv1-x\pmod{\Fil^2K^{\bullet}(X)};
+\]
+on en déduit le résultat.
+
+\textbf{Théorème 3.6 (Riemann--Roch).} Soit $f:X\to Y$ un morphisme projectif d'intersection complète (1.1), et dont la dimension relative virtuelle $d$ est constante (1.9). On suppose que $Y$ est quasi-compact, et admet un faisceau ample. Avec les notations de 3.3, on a alors pour tout $x\in K^{\bullet}(X)$ la relation:
+\[
+\ch(f_*(x))=f_{\mathrm{gr}}\bigl(\ch(x)\cdot\Todd(\check T_f)\bigr),
+\]
+$\check T_f$ désignant l'élément dual de la classe du complexe cotangent relatif $L^{X/Y}_\bullet$ (2.5 et 2.3).
+
+En d'autres termes, le diagramme
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+K^{\bullet}(X) \arrow[r,"\ch\circ\widetilde c"] \arrow[d,"f_*"'] & \Gr K^{\bullet}(X)_{\mathbb Q} \arrow[d,"x\mapsto f_{\mathrm{gr}}(x\cdot\Todd(\check T_f))"]\\
+K^{\bullet}(Y) \arrow[r,"\ch\circ\widetilde c"'] & \Gr K^{\bullet}(Y)_{\mathbb Q}
+\end{tikzcd}
+\]
+est commutatif.
+
+
+
+\subsection*{Suite de la démonstration du théorème 3.6}
+

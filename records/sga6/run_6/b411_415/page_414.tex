@@ -1,0 +1,24 @@
+% from main.tex
+%%%%%%%%%%  scan idx 427  |  folio 414  %%%%%%%%%%
+qui
+sont des isomorphismes aux points $x_i$. Considérons alors le complexe:
+\[
+  N^\bullet=\cdots\to0\to L^{\otimes -nn'}
+    \xrightarrow{(s'_n,0)} E'\oplus L^{\otimes -nn'}
+    \xrightarrow{0+s_{n'}} E\to0\to\cdots.
+\]
+La classe de $N^\bullet$ est $E-E'$; par ailleurs, $N^\bullet$ est acyclique aux points $x_i$, donc $\Supp(H^*(N^\bullet))\cap Y$ ne contient aucune composante irréductible de $Y$, et par conséquent est de codimension $\ge1$ dans $Y$; ceci montre que $E-E'$ est dans $K^{\bullet}(X)_1$.
+
+Soit maintenant $x$ un élément de $\Fil^{d+1}K^{\bullet}(X)$; nous allons montrer que $x=0$. On peut supposer que $x$ s'écrit:
+\[
+  x=\gamma^{i_1}(E_1-F_1)\cdots\gamma^{i_k}(E_k-F_k),
+  \qquad\text{avec } i_1+\cdots+i_k\ge d+1,
+\]
+les $E_i,F_i$, étant les classes de faisceaux localement libres de type fini, et, pour tout $i$, $E_i$ et $F_i$ ayant même rang. De plus, quitte à décomposer $X$ en somme d'un nombre fini d'ouverts, et à raisonner dans chaque ouvert, on peut supposer les $E_i,F_i$ de rang constant. Soit alors $X'$ le produit fibré sur $X$ des schémas de drapeaux des $E_i,F_i$. Dans $K^{\bullet}(X')$, les images des $E_i,F_i$ sont sommes de classes de faisceaux inversibles. Soient $\xi,\eta$ les classes de deux $\mathcal O_{X'}$-Modules inversibles; on a:
+\[
+  \gamma_t(\xi-\eta)=\gamma_t(\xi-1)/\gamma_t(\eta-1)
+  =(1+(\xi-1)t)/(1+(\eta-1)t).
+\]
+Donc $\gamma^i(\xi-\eta)=(-1)^{i-1}(\xi-\eta)(\eta-1)^{i-1}$. Or $X'$ est noethérien et a un faisceau ample, donc, d'après ce qui précède et 6.6, $\gamma^i(\xi-\eta)\in K^{\bullet}(X')_i$. Utilisant l'additivité de $\gamma_t$ et 6.6, on en déduit que $f^*(\gamma^{i_j}(E_j-F_j))\in K^{\bullet}(X')_{i_j}$, et $f^*(x)\in K^{\bullet}(X')_{d+1}$, $f$ étant le morphisme canonique $X'\to X$.
+
+Nous allons en déduire que $f^*(x)=0$. Soit $r$ la dimension relative de $X'$ sur $X$. Il existe un élément $x'$ de $K^{\bullet}(X')$, appartenant à une base de $K^{\bullet}(X')$ sur $K^{\bullet}(X)$, tel que:

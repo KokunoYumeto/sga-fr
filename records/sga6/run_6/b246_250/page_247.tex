@@ -1,0 +1,32 @@
+% from main.tex
+%%%%%%%%%%  scan idx 260  |  folio 247  %%%%%%%%%%
+\emph{Preuve.} Si \([m,n]\) est un intervalle de \(\mathbb Z\), on a évidemment
+\[
+ \tamp_f(E)\subset[m,n]
+ \Longleftrightarrow
+ \tamp_{f'}(i_*(E))\subset[m,n],
+\]
+de sorte qu'on peut supposer que \(X=X'\), \(i=\Id_X\), \(f=f'\). La relation (i) résulte trivialement de (3.4.1 a)). Prouvons (ii). On a un carré cartésien
+\[
+\begin{tikzcd}
+X \arrow[d,"f"'] & X\times_Y X \arrow[l,"\operatorname{pr}_2"'] \arrow[d,"\operatorname{pr}_1"]\\
+Y & X \arrow[l,"f"']
+\end{tikzcd}
+\]
+et le morphisme diagonal \(s:X\longrightarrow X\times_YX\) est une section de \(\operatorname{pr}_1\) et \(\operatorname{pr}_2\). Supposons \(f\) lisse de dimension relative \(d\). Alors (VII 1.10) \(s\) est une immersion régulière de codimension \(\leq d\), donc est de tor-dimension \(\leq d\) (comme on le voit à l'aide du complexe de Koszul). D'après (3.5.2), on a
+\[
+ \tamp_f(E)\subset[a,b]
+ \Longrightarrow
+ \tamp_{\operatorname{pr}_1}(\operatorname{pr}_2^*(E))\subset[a,b],
+\]
+et d'après (3.4.1 b)) on a
+\[
+ \tamp_{\operatorname{pr}_1}(\operatorname{pr}_2^*(E))\subset[a,b]
+ \Longrightarrow
+ \tamp(\mathbf Ls^*\operatorname{pr}_2^*(E))\subset[a-d,b],
+\]
+d'où l'implication (ii) puisque \(\mathbf Ls^*\operatorname{pr}_2^*\simeq\Id\).
+
+\textbf{Remarque 3.6.1.} L'énoncé (3.6) serait faux si l'on supposait seulement \(f'\) plat, voir (3.4.2).
+
+\textbf{Proposition 3.7.} (« Formule de projection »)\footnote{cf. (H II 5.6).}. Soient \(S\) un schéma quasi-compact, \(f:X\to Y\) un \(S\)-morphisme quasi-compact et quasi-séparé de schémas quasi-compacts sur \(S\), \(E\in\Ob D^b(X)_{\qcoh}\), \(M\in\Ob D^b(S)_{\qcoh}\)\footnote{L'indice «~qcoh~» indique la sous-catégorie pleine formée des complexes à cohomologie quasi-cohérente.}. Si \(M\) est d'amplitude plate finie, ou si \(E\) est d'amplitude plate finie rel. à \(S\), il

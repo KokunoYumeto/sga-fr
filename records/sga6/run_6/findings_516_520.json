@@ -1,0 +1,291 @@
+[
+ {
+  "page": 515,
+  "where": "printed on p. 516 (above the folio-516 marker): first display 'A_o = ∐_{k_i∈ℤ} F_o^{(1)⊗k_1} ⊗F_o^{(2)⊗k_2} ⊗...⊗ F_o^{(n)⊗k_n} .', the sign before F",
+  "scan": "a hand-drawn coproduct sign ∐ (two stems standing on a base line) with k_i∈ℤ below it, the same sign as in the display A = ∐ ... lower on p. 516 (both scans; crops_516_520/m516_A0.png, wit_516_half.png)",
+  "tex": "A_0=\\bigoplus_{k_i\\in\\mathbb Z}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "A_0=\\bigoplus",
+   "new": "A_0=\\coprod"
+  },
+  "note": "The display stands in page_515.tex until the folio-516 marker is moved (marker entry of p. 516); Exposé IX has six \\bigoplus, only the two of p. 516 are checked here."
+ },
+ {
+  "page": 515,
+  "where": "printed on p. 516 (above the folio-516 marker): first display 'A_o = ∐_{k_i∈ℤ} F_o^{(1)⊗k_1} ⊗F_o^{(2)⊗k_2} ⊗...⊗ F_o^{(n)⊗k_n} .', the factors",
+  "scan": "three factors: F_o^{(1)⊗k_1} ⊗F_o^{(2)⊗k_2} ⊗...⊗ F_o^{(n)⊗k_n} (both scans; crops_516_520/m516_A0.png)",
+  "tex": "(F_0^{(1)})^{\\otimes k_1}\\otimes\\cdots\\otimes(F_0^{(n)})^{\\otimes k_n}: the factor with (2) is left out",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "^{\\otimes k_1}\\otimes\\cdots",
+   "new": "^{\\otimes k_1}\\otimes {F_0^{(2)}}^{\\otimes k_2}\\otimes\\cdots"
+  },
+  "note": "The factor is given without the parentheses the print does not have (next two entries). The second display of p. 516 (A = ∐ ...) has only the factors (1) and (n), as its TeX."
+ },
+ {
+  "page": 515,
+  "where": "printed on p. 516 (above the folio-516 marker): first display 'A_o = ∐_{k_i∈ℤ} F_o^{(1)⊗k_1} ⊗F_o^{(2)⊗k_2} ⊗...⊗ F_o^{(n)⊗k_n} .', first factor",
+  "scan": "F_o^{(1)⊗k_1}: the power ⊗k_1 is raised after the superscript (1); no parentheses round F_o^{(1)} (both scans)",
+  "tex": "(F_0^{(1)})^{\\otimes k_1}",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "(F_0^{(1)})",
+   "new": "{F_0^{(1)}}"
+  },
+  "note": "Parentheses added by the TeX; the same for the last factor (next entry) and in the second display of p. 516."
+ },
+ {
+  "page": 515,
+  "where": "printed on p. 516 (above the folio-516 marker): first display 'A_o = ∐_{k_i∈ℤ} F_o^{(1)⊗k_1} ⊗F_o^{(2)⊗k_2} ⊗...⊗ F_o^{(n)⊗k_n} .', last factor",
+  "scan": "F_o^{(n)} ⊗k_n: no parentheses round F_o^{(n)} (both scans)",
+  "tex": "(F_0^{(n)})^{\\otimes k_n}",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "(F_0^{(n)})",
+   "new": "{F_0^{(n)}}"
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 516,
+  "where": "start of page (folio-516 marker)",
+  "scan": "p. 515 ends 'que Y_o est le X_o-schéma affine défini par l'algèbre :'; p. 516 begins with the display 'A_o = ∐_{k_i∈ℤ} F_o^{(1)⊗k_1} ⊗F_o^{(2)⊗k_2} ⊗...⊗ F_o^{(n)⊗k_n} .', then 'Le groupe G opère sur E_o, ...' (both scans; b511_515/page_515_s4.png, crops_516_520/wit_516_half.png)",
+  "tex": "page_515.tex ends with that display (\\[ A_0=\\bigoplus... \\]) above the folio-516 marker; page_516.tex begins 'Le groupe'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 516 really begins at the display's '\\[' after 'défini par l'algèbre :' (about diplomatic main.tex line 13334, current 13340 at 16:20; main.tex was being edited while I checked, so lines shift). Exact edit in main.tex, both layers, two parts applied together: replace '\\]\\n%%%%%%%%%%  scan idx 529  |  folio 516  %%%%%%%%%%\\nLe\\ngroupe' by '\\]\\nLe\\ngroupe', and 'défini par l'algèbre :\\n\\[\\n' by 'défini par l'algèbre :\\n%%%%%%%%%%  scan idx 529  |  folio 516  %%%%%%%%%%\\n\\[\\n' (each old string once per layer). Same result: python -I move_marker.py 6 516 \"\\[\" --before (simulated in memory, identical in both layers: crops_516_520/sim_markers.py). The edit does not touch the display, so the four fixes of the display listed under page 515 can be applied before it (their old strings stand under the folio-515 marker until the move)."
+ },
+ {
+  "page": 516,
+  "where": "second display 'A = ∐_{k_i∈ℤ} F^{(1)⊗k_1} ⊗...⊗ F^{(n)⊗k_n} .', the sign before F",
+  "scan": "the hand-drawn coproduct sign ∐, as in the first display (both scans)",
+  "tex": "A=\\bigoplus_{k_i\\in\\mathbb Z}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "A=\\bigoplus",
+   "new": "A=\\coprod"
+  },
+  "note": "As the first display (page-515 entry)."
+ },
+ {
+  "page": 516,
+  "where": "second display 'A = ∐_{k_i∈ℤ} F^{(1)⊗k_1} ⊗...⊗ F^{(n)⊗k_n} .', the factors",
+  "scan": "F^{(1)⊗k_1} and F^{(n)⊗k_n} with the powers raised after the superscripts; no parentheses (both scans)",
+  "tex": "(F^{(1)})^{\\otimes k_1}\\otimes\\cdots\\otimes(F^{(n)})^{\\otimes k_n}",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "(F^{(1)})^{\\otimes k_1}\\otimes\\cdots\\otimes(F^{(n)})^{\\otimes k_n}",
+   "new": "{F^{(1)}}^{\\otimes k_1}\\otimes\\cdots\\otimes{F^{(n)}}^{\\otimes k_n}"
+  },
+  "note": "Parentheses added by the TeX, as in the first display."
+ },
+ {
+  "page": 516,
+  "where": "'le schéma X = 𝔻(E) = P/B des drapeaux de E'",
+  "scan": "double-struck 𝔻 (doubled stem) for the flag scheme (both scans; crops_516_520/m516_DE.png)",
+  "tex": "$X=D(E)=P/B$",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "$X=D(E)=P/B$",
+   "new": "$X=\\mathbb D(E)=P/B$"
+  },
+  "note": "Exposé IX writes D(E) plain 11 times; the other nine (proof with the complete flag bundle D(E)) are on other pages: check them there."
+ },
+ {
+  "page": 516,
+  "where": "diagram, right-hand vertex 'X = P/B = 𝔻(E)'",
+  "scan": "double-struck 𝔻, as in the text above (both scans; crops_516_520/m516_diag_dot.png)",
+  "tex": "X=P/B=D(E)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "X=P/B=D(E)",
+   "new": "X=P/B=\\mathbb D(E)"
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 516,
+  "where": "end of the diagram (P, Y = P/U, X = P/B = 𝔻(E), S)",
+  "scan": "a full stop at the right of the diagram's last row, where the typist puts the stop of a display (both scans; crops_516_520/m516_diag_dot.png, wit_516_half.png)",
+  "tex": "\\end{array} \\] with no full stop",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{array}\n\\]",
+   "new": "\\end{array}.\n\\]"
+  },
+  "note": ""
+ },
+ {
+  "page": 516,
+  "where": "K with a raised dot on pp. 516-518 (14 places): 'D'après 3.1, on a K.(X) = K.(S)⊗_{K˙(S)}K˙(X)', 'Soit ξ_i la classe de F^{(i)} dans K˙(X)', ...",
+  "scan": "a solid raised typed dot after K, the same mark as Exposé VI's K˙ (both scans; crops_516_520/m516_Kdot.png, m516_Kdot2.png, m518_arrow.png)",
+  "tex": "K^\\circ (105 places in Exposé IX)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé IX TeX, not itemized: one pass K^\\circ -> K^{\\bullet} over the exposé, both layers, as done for Exposés IV, VI and VII. Three examples: p. 516 'la classe de $F^{(i)}$ dans $K^\\circ(X)$' -> '... dans $K^{\\bullet}(X)$'; p. 517 'Donc $K^\\circ(X)/I=K^\\circ(S)/J$' -> 'Donc $K^{\\bullet}(X)/I=K^{\\bullet}(S)/J$'; p. 518 'K^\\circ(S)/J\\xrightarrow{\\sim}K^\\circ(P).' -> 'K^{\\bullet}(S)/J\\xrightarrow{\\sim}K^{\\bullet}(P).'. No old string of this file contains K^\\circ except the p. 519 entry (Exposé X, itemized there)."
+ },
+ {
+  "page": 516,
+  "where": "underlined letters on pp. 516-520: E, E_o, L_o^{(i)}, F^{(i)}, F_o^{(i)}, A, A_o (Exposé IX); F, F_x, G', G, G'' (Exposé X)",
+  "scan": "underlined in the print (both scans)",
+  "tex": "plain letters (Exposé IX has one \\underline in all)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, not itemized. The underlined O written \\mathcal O is the pending volume decision. Three examples, in the form to use if the diplomatic layer reproduces the underline: p. 516 'on obtient le faisceau $E$ associé à $P$' -> 'on obtient le faisceau $\\underline{E}$ associé à $P$'; p. 516 'Soit $\\xi_i$ la classe de $F^{(i)}$' -> '... de $\\underline{F}^{(i)}$'; p. 517 'puisqu'alors $E=\\mathcal O_S^n$' -> 'puisqu'alors $\\underline{E}=\\mathcal O_S^n$'. Same in Exposé X on pp. 519-520 (e.g. p. 520 'les faisceaux $G'$, $G$ et $G''$', all three underlined in the print)."
+ },
+ {
+  "page": 517,
+  "where": "'Par suite, K.(Y) ≃ K.(S)/JK.(S). On achève la démonstration par le lemme :'",
+  "scan": "the formula stands in the text: it begins the line at the left margin and 'On achève la démonstration par le lemme :' follows on the same line (both scans; crops_516_520/m517_inline.png, wit_517_half.png)",
+  "tex": "a display \\[ K_\\bullet(Y)\\simeq K_\\bullet(S)/J K_\\bullet(S). \\]",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "Par suite,\n\\[\nK_\\bullet(Y)\\simeq K_\\bullet(S)/J K_\\bullet(S).\n\\]\nOn achève",
+   "new": "Par suite,\n$K_\\bullet(Y)\\simeq K_\\bullet(S)/J K_\\bullet(S)$. On achève"
+  },
+  "note": ""
+ },
+ {
+  "page": 517,
+  "where": "Corollaire 4.3: 'Soient S un schéma noethérien, G = Gl(n)_S.'",
+  "scan": "'Gl(n)_S': capital G, small l (both scans; crops_516_520/m517_Gl.png)",
+  "tex": "$G=\\mathrm{GL}(n)_S$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$G=\\mathrm{GL}(n)_S$",
+   "new": "$G=\\mathrm{Gl}(n)_S$"
+  },
+  "note": "Capital against small. The heading of § 4 and Proposition 4.1 (GL(n)_S) are on p. 514, not checked here."
+ },
+ {
+  "page": 519,
+  "where": "heading and title of Exposé X",
+  "scan": "two blocks: 'EXPOSE X' in typed capitals, single underline, no full stop, at the left; then the title 'FORMALISME DES INTERSECTIONS SUR LES SCHEMAS ALGEBRIQUES PROPRES' in typed capitals with a double underline (both scans; b516_520/page_519_s1.png, crops_516_520/wit_519_half.png)",
+  "tex": "\\section*{Exposé X. Formalisme des intersections sur les schémas algébriques propres}",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\section*{Exposé X. Formalisme des intersections sur les schémas algébriques propres}",
+   "new": "\\section*{\\underline{EXPOSÉ X}\\\\[3pt] \\underline{\\underline{FORMALISME DES INTERSECTIONS SUR LES SCHÉMAS ALGÉBRIQUES PROPRES}}}"
+  },
+  "note": "Same form as the applied headings of Exposés III, IV and IX (main.tex: \\section*{\\underline{EXPOSÉ IX}\\\\[3pt] \\underline{\\underline{QUELQUES CALCULS DE GROUPES $K$}}}); É keeps the TeX's accents (rule for typed capitals: the print has EXPOSE, SCHEMAS ALGEBRIQUES). Independent of the author-line entry."
+ },
+ {
+  "page": 519,
+  "where": "author line of the heading",
+  "scan": "'par O. Jussila' in mixed case, the whole line underlined; '(avec un appendice par A. Grothendieck)' below it is not underlined (both scans)",
+  "tex": "par O. Jussila\\\\ (no underline)",
+  "kind": "word",
+  "confidence": "medium",
+  "fix": {
+   "old": "par O. Jussila",
+   "new": "\\underline{par O. Jussila}"
+  },
+  "note": "As the applied author lines (\\underline{par P. BERTHELOT}); the name is printed in mixed case here."
+ },
+ {
+  "page": 519,
+  "where": "line under the title of § 1: 'K˙(X) x K.(X) ⟶ K.(X).'",
+  "scan": "K with a solid raised dot (both scans; crops_516_520/m519_Kprod.png)",
+  "tex": "K^\\circ(X)\\times K_\\bullet(X)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "K^\\circ(X)\\times",
+   "new": "K^{\\bullet}(X)\\times"
+  },
+  "note": "Itemized because Exposé X writes this K both ways (55 K^\\circ and 66 K^\\bullet in main.tex at 16:15); the Exposé IX convention entry (p. 516) covers only Exposé IX."
+ },
+ {
+  "page": 520,
+  "where": "(1.1.3) 'cl.(F) = Σ_{x∈X(n)} long(F_x)cl.(O_{Z(x)}) + w'",
+  "scan": "nothing after w; the next line is 'où w∈Filt_{n-1}(X) .' (both scans; crops_516_520/m520_w.png, w520_w.png)",
+  "tex": "\\cl_\\bullet(\\mathcal O_{Z(x)})+w,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "+w,",
+   "new": "+w"
+  },
+  "note": "Comma added by the TeX at the end of the display."
+ },
+ {
+  "page": 520,
+  "where": "label 'Corrollaire 1.1.4.'",
+  "scan": "'Corrollaire' (double r, both scans)",
+  "tex": "\\textbf{Corrollaire 1.1.4.} (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Corollaire",
+  "note": "Typing error of the print; the TeX keeps it."
+ },
+ {
+  "page": 520,
+  "where": "'Démonstration de 1.1.2 : Soit X' = Supp(F).'",
+  "scan": "the underline covers 'Démonstration de' only; '1.1.2 :' is plain (both scans; crops_516_520/m520_demo.png)",
+  "tex": "\\emph{Démonstration de 1.1.2 :}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Démonstration de 1.1.2 :}",
+   "new": "\\emph{Démonstration de} 1.1.2 :"
+  },
+  "note": "As \\emph{Preuve de} (3.5.1). on pp. 189-190 (findings_186_190)."
+ },
+ {
+  "page": 520,
+  "where": "'Evidemment K' contient les faisceaux O_{Z(x)} avec x∈X'.'",
+  "scan": "no comma between O_{Z(x)} and 'avec' (both scans; crops_516_520/m520_OZx.png, wit_520_half.png)",
+  "tex": "$\\mathcal O_{Z(x)}$, avec",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\mathcal O_{Z(x)}$, avec",
+   "new": "$\\mathcal O_{Z(x)}$ avec"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 520,
+  "where": "'Il suffit donc de montrer que K' est un sous-ensemble \"exact\" de Ob(K)'",
+  "scan": "'exact' in straight double quotes (both scans; crops_516_520/m520_exact.png)",
+  "tex": "sous-ensemble exact de (no quotes)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "sous-ensemble exact de",
+   "new": "sous-ensemble «~exact~» de"
+  },
+  "note": "The file's form for the print's straight quotes (Exposé X: «~nombre d'intersection~», «~additif~»)."
+ },
+ {
+  "page": 520,
+  "where": "(1.1.5) '0 ⟶ G' ⟶ G ⟶ G' ⟶ 0'",
+  "scan": "the fourth term is G' with one tick, like the second; this typewriter's double prime is two ticks (G'', ℓ''_x three lines below) (both scans; crops_516_520/m520_115.png, w520_115.png)",
+  "tex": "0\\longrightarrow G'\\longrightarrow G\\longrightarrow G''\\longrightarrow0 (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "G\\longrightarrow G''\\longrightarrow0",
+   "new": "G\\longrightarrow G'\\longrightarrow0"
+  },
+  "corrected": "G\\longrightarrow G''\\longrightarrow0",
+  "note": "The sequence is G' -> G -> G'' (the text then names G', G and G''); the TeX corrects the print silently. The fix restores the printed G'."
+ }
+]

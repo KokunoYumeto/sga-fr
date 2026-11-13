@@ -1,0 +1,209 @@
+[
+  {
+    "page": 551,
+    "where": "display 'det(γ^k(E-n)) = det(λ^k(E-n+k-1)) = det(Σ_{p+q=k} (n+k-1 sur p) λ^q(E))', the binomial coefficient",
+    "scan": "binomial (n+k-1 over p), n underlined, no minus sign before n (both scans; crops_551_555/m551_disp3.png, m551_binomtop.png, w551_binomtop.png); the display of r a few lines below prints (-n+k-1 over p)",
+    "tex": "\\binom{n+k-1}{p}",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "\\binom{-n+k-1}{p}",
+    "note": "The TeX keeps the printed reading. λ^k(E-n+k-1) = Σ_{p+q=k} λ^p(-n+k-1)λ^q(E) with λ^p(-n+k-1) = binom(-n+k-1, p), as in the formula for r; the underline under n is heavy in both scans but there is no minus sign."
+  },
+  {
+    "page": 551,
+    "where": "pp. 551-555 throughout: the sections n, n_i, m, m_i, r of Z and the sheaves E, E_1, ..., E_r, E_i",
+    "scan": "underlined in the print (both scans): every n of p. 551 ('n = ε(E)', 'E-n' in four displays, 'n ∈ Γ(Z_X)'), r three times, and the q of the exponent (n-1 over q-1); n, n_i, m, m_i on pp. 552-555 ('de rang n', 'de rang m', 'λ^{n_i m_i}', 'où m est une section'); the sheaf E of 6.2 and E_1, ..., E_r, E_i (about 2 on p. 552, 20 on p. 553, 14 on p. 554). Not underlined in the print: the n_1, n_r of the superscripts of Mod (p. 552 display T), the second n_r of 'n_1, ..., n_r de Z_X' (p. 552)",
+    "tex": "all plain; the TeX keeps \\underline E only in '\\cl^\\circ(\\underline E)' (p. 551), and \\underline n twice on p. 550 where the print opposes n and the integer n",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": null,
+    "note": "Convention of the Exposé X §§5-6 TeX (underlined letters written plain), not itemized; not every letter is underlined in the print, so no blind script. Three examples in the form to use if the diplomatic layer reproduces the underline: p. 551 '\\(n=\\epsilon(E)\\)' -> '\\(\\underline n=\\epsilon(E)\\)'; p. 552 'on récupère \\(T(E_1,\\ldots,E_r)\\)' -> 'on récupère \\(T(\\underline E_1,\\ldots,\\underline E_r)\\)'; p. 553 'libre \\(E\\) de rang \\(n\\) nous' -> 'libre \\(\\underline E\\) de rang \\(\\underline n\\) nous'. The underlined O written \\mathcal O is the pending volume decision."
+  },
+  {
+    "page": 551,
+    "where": "'où, comme ci-dessus, E = cl(E), n = ε(E)' and 'pour tout x ∈ K(X), de sorte que'",
+    "scan": "cl and K with a raised filled dot, cl• and K• (both scans; crops_551_555/m551_cldot.png, m551_Kdot.png, w551_cldot.png)",
+    "tex": "\\cl^\\circ and K^\\circ (a small circle)",
+    "kind": "symbol",
+    "confidence": "high",
+    "fix": null,
+    "note": "Convention of the Exposé X TeX: §§1-6 write K^\\circ (about 36) and \\cl^\\circ (about 28) for the print's raised dot, while §7 writes K^\\bullet (about 66) with some K^\\circ (about 18): the dot that Exposés IV, VI and VII now write K^{\\bullet}. Not itemized; one script for Exposé X after a look at its other pages. The only two places on pp. 551-555: '\\(E=\\cl^\\circ(\\underline E)\\)' -> '\\(E=\\cl^{\\bullet}(\\underline E)\\)'; '\\(x\\in K^\\circ(X)\\)' -> '\\(x\\in K^{\\bullet}(X)\\)'; a third example outside these pages, not checked here: p. 550 (5.3.3) '\\det(\\cl^\\circ(E))-\\cl^\\circ(E)'."
+  },
+  {
+    "page": 552,
+    "where": "display 'T : Mod^{n_1}(O) x ..... x Mod^{n_r}(O) → Mod(O)'",
+    "scan": "Mod underlined all three times (both scans; crops_551_555/m552_T.png, w552_T.png)",
+    "tex": "\\Mod (plain Mod: \\operatorname{Mod})",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "T:\\Mod^{n_1}(\\mathcal O)\\times\\cdots\\times\n \\Mod^{n_r}(\\mathcal O)\\longrightarrow\\Mod(\\mathcal O)", "new": "T:\\underline{\\Mod}^{n_1}(\\mathcal O)\\times\\cdots\\times\n \\underline{\\Mod}^{n_r}(\\mathcal O)\\longrightarrow\\underline{\\Mod}(\\mathcal O)"},
+    "note": "The print underlines Mod in the two displays of 6.1 (this one and T'), not in the text ('Mod^n O(X) désigne' on this page, 'Mod_O(X)' on p. 551). \\Mod is nowhere underlined in main.tex; reported singly, as Hom."
+  },
+  {
+    "page": 552,
+    "where": "display 'G = Gl(n_1) x .... x Gl(n_r), où Gl(n_i) = Aut_O(O^{n_i}).'",
+    "scan": "Aut underlined (both scans; crops_551_555/m552_G.png)",
+    "tex": "\\Aut_{\\mathcal O} (plain Aut)",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\operatorname{G\\ell}(n_i)=\\Aut_{\\mathcal O}", "new": "\\operatorname{G\\ell}(n_i)=\\underline{\\Aut}_{\\mathcal O}"},
+    "note": "The sheaf of automorphisms, underlined in the print in all four places of pp. 552-553 (three here, one on p. 553); \\Aut is \\operatorname{Aut} and nowhere underlined in main.tex."
+  },
+  {
+    "page": 552,
+    "where": "(6.1.2) 'α_T : G → Aut_O(M) .'",
+    "scan": "Aut underlined (both scans)",
+    "tex": "\\Aut_{\\mathcal O}(M)",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\alpha_T:G\\longrightarrow\\Aut_{\\mathcal O}(M).", "new": "\\alpha_T:G\\longrightarrow\\underline{\\Aut}_{\\mathcal O}(M)."},
+    "note": "As the G display above."
+  },
+  {
+    "page": 552,
+    "where": "display 'T'T, où T' : Mod^m(O) → Mod(O) ,'",
+    "scan": "Mod underlined both times (both scans; crops_551_555/wit_552_half.png)",
+    "tex": "\\Mod^{m}(\\mathcal O)\\longrightarrow\\Mod(\\mathcal O)",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "T':\\Mod^{m}(\\mathcal O)\\longrightarrow\\Mod(\\mathcal O)", "new": "T':\\underline{\\Mod}^{m}(\\mathcal O)\\longrightarrow\\underline{\\Mod}(\\mathcal O)"},
+    "note": "As the display T above."
+  },
+  {
+    "page": 552,
+    "where": "'Réciproquement, étant donné la représentation α = α_T : G → Aut_O(M)'",
+    "scan": "Aut underlined (both scans)",
+    "tex": "\\Aut_{\\mathcal O}(M)",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\alpha_T:G\\to\\Aut_{\\mathcal O}(M)", "new": "\\alpha_T:G\\to\\underline{\\Aut}_{\\mathcal O}(M)"},
+    "note": "As the G display above."
+  },
+  {
+    "page": 552,
+    "where": "'à r variables, où Mod^n_O(X) désigne la catégorie fibrée'",
+    "scan": "Mod with the n raised, and the underlined O typed on the line, level with Mod and (X): 'Mod^n O(X)' (both scans; crops_551_555/m552_ouMod.png, w552_ouMod.png)",
+    "tex": "\\Mod_{\\mathcal O}^{n}(X)",
+    "kind": "misprint_in_print",
+    "confidence": "low",
+    "fix": {"old": "\\Mod_{\\mathcal O}^{n}(X)", "new": "\\Mod^{n}\\mathcal O(X)"},
+    "corrected": "\\Mod_{\\mathcal O}^{n}(X)",
+    "note": "The typist did not lower the subscript O (Mod_O(X) on p. 551 has it lowered); the TeX silently writes the intended subscript. Low: a typed subscript position only."
+  },
+  {
+    "page": 553,
+    "where": "beginning of the page",
+    "scan": "p. 553 begins 'E_1, ..., E_r de O-modules localement libres de rang n_1, ..., n_r) par recollement'; p. 552 ends '... on récupère T(E_1, ..., E_r) (pour toute suite' (both scans)",
+    "tex": "page_552.tex ends '(pour toute suite \\(E_1,\\ldots,E_r\\) de \\(\\mathcal O\\)-' and page_553.tex begins 'modules localement libres': the folio-553 marker splits 'O-modules' (it prints as 'O- modules')",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Exact fix in main.tex: end the 'Réciproquement, étant donné la représentation ...' line after '(pour toute suite', put the marker line '%%%%%%%%%%  scan idx 566  |  folio 553  %%%%%%%%%%' there, and begin page 553 with '\\(E_1,\\ldots,E_r\\) de \\(\\mathcal O\\)-modules localement libres de rang \\(n_1,\\ldots,n_r\\)) par recollement ...' ('\\(\\mathcal O\\)-' and 'modules' joined again)."
+  },
+  {
+    "page": 553,
+    "where": "display 'α : G → Aut_O(M)' after 'alors toute représentation'",
+    "scan": "Aut underlined (both scans; crops_551_555/wit_553_half.png)",
+    "tex": "\\Aut_{\\mathcal O}(M)",
+    "kind": "underline",
+    "confidence": "high",
+    "fix": {"old": "\\alpha:G\\longrightarrow\\Aut_{\\mathcal O}(M)", "new": "\\alpha:G\\longrightarrow\\underline{\\Aut}_{\\mathcal O}(M)"},
+    "note": "As on p. 552."
+  },
+  {
+    "page": 553,
+    "where": "equation number of 'E_i ⥲ P ∧^G O^{n_i} (i = 1, ..., r),'",
+    "scan": "(6.1.3), the same number as the display α_{T'T} = α_{T'} α_T on p. 552 (both scans)",
+    "tex": "\\tag{6.1.3}",
+    "kind": "misprint_in_print",
+    "confidence": "medium",
+    "fix": null,
+    "corrected": "\\tag{6.1.3 bis}",
+    "note": "The TeX keeps the printed reading (\\tag{6.1.3} here and on p. 552). The print numbers two formulas (6.1.3) and continues with (6.1.4), (6.1.5); no place in the volume cites (6.1.3)-(6.1.5), so the intended number cannot be recovered: 'bis' is only a suggestion for the corrected layer (or leave both)."
+  },
+  {
+    "page": 553,
+    "where": "G_m on pp. 553-555: (6.2.1) 'G → G_m = Gl(1)' (p. 553); 'Ker(det:Gl(n) → G_m)', (6.2.4) '→ G_m', 'λ ∈ G_m(Y)' (p. 554); the diagram, 'dans G_m', 'det : Gl(n_i) → G_m', 'Gl(n_i)/Sl(n_i) → G_m', 'représentation de G_m' (p. 555)",
+    "scan": "a plain typed G with subscript m in all nine places (both scans; crops_551_555/m553_Gm.png)",
+    "tex": "\\Gm, defined as \\mathbb G_m (double-struck G)",
+    "kind": "font",
+    "confidence": "low",
+    "fix": null,
+    "note": "Convention of the TeX, not itemized: \\Gm is used only in Exposé X §6 (15 uses; the other six on pp. 556-557). Low, as the typist's plain Q (NOTE_6, GLOBAL_ISSUES 78). If the diplomatic layer reproduces the plain G: one change of the definition '\\providecommand{\\Gm}{\\mathbb G_m}' to '\\providecommand{\\Gm}{G_m}' once pp. 556-557 are seen. Examples: p. 553 '\\Gm=\\Gl(1)'; p. 554 '\\Ker(\\det:\\Gl(n)\\to\\Gm)'; p. 555 'dans \\(\\Gm\\). Mais'."
+  },
+  {
+    "page": 554,
+    "where": "Proposition 6.2.2: 'des commutateurs de Gl(n)) est représentable'",
+    "scan": "'Gl(n))' with two closing parentheses (both scans)",
+    "tex": "des commutateurs de \\(\\Gl(n))\\)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "des commutateurs de \\(\\Gl(n)\\)",
+    "note": "The TeX keeps the printed reading; one closing parenthesis too many."
+  },
+  {
+    "page": 554,
+    "where": "Corollaire 6.2.6, the display 'det(T_α(E_1, ..., E_r)) = det(E_1)^{⊗m_1} ⊗ ... ⊗ det(E_r)^{⊗m_r} ,'",
+    "scan": "no equation number (both scans; crops_551_555/m554_626.png, wit_554_half.png); the numbered displays of the page carry their number at the left margin",
+    "tex": "\\begin{equation}\\tag{6.2.6} ... \\end{equation}",
+    "kind": "number",
+    "confidence": "high",
+    "fix": {"old": "\\begin{equation}\\tag{6.2.6}\n \\det\\bigl(T_\\alpha(E_1,\\ldots,E_r)\\bigr)\n =\n \\det(E_1)^{\\otimes m_1}\\otimes\\cdots\\otimes\n \\det(E_r)^{\\otimes m_r},\n\\end{equation}", "new": "\\[\n \\det\\bigl(T_\\alpha(E_1,\\ldots,E_r)\\bigr)\n =\n \\det(E_1)^{\\otimes m_1}\\otimes\\cdots\\otimes\n \\det(E_r)^{\\otimes m_r},\n\\]"},
+    "note": "The TeX adds the number; '(6.2.6)' in Remarque 6.2.7 and 'on déduit ainsi de (6.2.6)' cite the corollary 6.2.6 itself."
+  },
+  {
+    "page": 554,
+    "where": "Remarque 6.2.7: 's_j = id_{Gl(n_j)(Y)}, pour j ≠ i'",
+    "scan": "'id' on the line, 'Gl(n_j)(Y)' lowered as one subscript, the (Y) level with 'Gl(' (both scans; crops_551_555/m554_sj_zoom.png, w554_sj.png)",
+    "tex": "\\operatorname{id}_{\\Gl(n_j)}(Y)",
+    "kind": "formula",
+    "confidence": "medium",
+    "fix": {"old": "\\operatorname{id}_{\\Gl(n_j)}(Y)", "new": "\\operatorname{id}_{\\Gl(n_j)(Y)}"},
+    "note": "The print's id_{Gl(n_j)(Y)} (the unit of the group Gl(n_j)(Y)) reads correctly; the TeX moves (Y) out of the subscript."
+  },
+  {
+    "page": 554,
+    "where": "(6.2.8) 'det(E_i ⊗ E_2) = (det(E_1))^{⊗n_2} ⊗ (det(E_2))^{⊗n_1} ,'",
+    "scan": "'det(E_i ⊗ E_2)', the first index an i (both scans; crops_551_555/m554_628.png, w554_629.png)",
+    "tex": "\\det(E_i\\otimes E_2)",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "\\det(E_1\\otimes E_2)",
+    "note": "The TeX keeps the printed reading; the right-hand side and (6.2.9) have E_1."
+  },
+  {
+    "page": 554,
+    "where": "(6.2.9) 'det(E_1 ⊗ E_2) = (det(E_1)) ⊗ (det(E_2))'",
+    "scan": "the tensor sign ⊗ inside det(E_1 ⊗ E_2), the same sign as in (6.2.8) (both scans; crops_551_555/m554_628.png, w554_629.png)",
+    "tex": "\\det(E_1\\otimes E_2)&=(\\det(E_1))\\otimes(\\det(E_2))",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "\\det(E_1\\oplus E_2)&=(\\det(E_1))\\otimes(\\det(E_2))",
+    "note": "The TeX keeps the printed reading. (6.2.9) is the determinant of a direct sum, derived from (6.2.6) with α = s_1 ⊕ s_2 (m_1 = m_2 = 1); as printed it contradicts (6.2.8) on the line above."
+  },
+  {
+    "page": 555,
+    "where": "beginning of the page",
+    "scan": "p. 555 begins with the heading '6.3.' run into 'Montrons d'abord comment 6.2.3 découle de 6.2.2.'; p. 554 ends with 'etc.' (both scans)",
+    "tex": "'\\subsection*{6.3}' is the last line of page_554.tex, above the folio-555 marker",
+    "kind": "marker",
+    "confidence": "high",
+    "fix": null,
+    "note": "Exact fix in main.tex: move the marker line '%%%%%%%%%%  scan idx 568  |  folio 555  %%%%%%%%%%' up to just before '\\subsection*{6.3}' (after 'etc.' and the blank line). A heading at the top of a page, which the 10 Nov script did not move."
+  },
+  {
+    "page": 555,
+    "where": "last sentence: 'mais nous voulons lui donner ici une démonstration élémentaire via 6.2.2).'",
+    "scan": "'via 6.2.2).' with a closing parenthesis that no opening one matches (both scans)",
+    "tex": "via 6.2.2).",
+    "kind": "misprint_in_print",
+    "confidence": "high",
+    "fix": null,
+    "corrected": "via 6.2.2.",
+    "note": "The TeX keeps the printed reading. Dropping the parenthesis is the smallest correction; the author may have meant the whole remark 'Notons que ... via 6.2.2' in parentheses."
+  }
+]

@@ -1,0 +1,375 @@
+[
+ {
+  "page": 456,
+  "where": "start of page (folio-456 marker)",
+  "scan": "p. 456 begins '4.7. On revient à la situation de 3.7, où on avait le diagramme commutatif :'; p. 455 ends with Remarque 4.6.1 ('... Pour un contre-exemple, voir XIV 4.6.') (both scans; crops_456_460/wit_456_half.png, b456_460/page_456_s1.png)",
+  "tex": "page_455.tex ends '\\subsection*{4.7}', a blank line and 'On' above the folio-456 marker; page_456.tex begins 'revient à la situation de 3.7'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 456 really begins at '\\subsection*{4.7}' (a heading at the top of the page, which the 10 Nov script did not move). Exact edit in main.tex, both layers (diplomatic lines 11615-11618, current 11621-11624): replace '\\subsection*{4.7}\\n\\nOn\\n%%%%%%%%%%  scan idx 469  |  folio 456  %%%%%%%%%%\\n' by '%%%%%%%%%%  scan idx 469  |  folio 456  %%%%%%%%%%\\n\\subsection*{4.7}\\n\\nOn\\n' (line numbers as of the 16:06:25 main.tex; old string once per layer; simulated in memory: crops_456_460/build_findings.py). The heading's missing full stop is the next entry. The checker of p. 455 may report the same boundary: apply once."
+ },
+ {
+  "page": 456,
+  "where": "heading 4.7 (stands above the folio-456 marker, in page_455.tex)",
+  "scan": "'4.7.' with a full stop, run into 'On revient' (both scans)",
+  "tex": "\\subsection*{4.7} (no full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": null,
+  "note": "No page fix possible while the heading sits in page_455.tex. Exact edit in main.tex, both layers (diplomatic line 11615, current 11621, as of the 16:06:25 main.tex; once per layer): '\\subsection*{4.7}' -> '\\subsection*{4.7.}', as the paragraph-number fixes of pp. 394, 401, 402, 429, 430 (findings_391_395 to findings_426_430). Independent of the marker move; the run-in heading set as its own paragraph is accepted."
+ },
+ {
+  "page": 456,
+  "where": "diagram of 4.7, bottom arrow Y → X",
+  "scan": "label i above the bottom arrow (both scans; wit_456_half.png)",
+  "tex": "\\arrow[r,\"i\"'] (the ' sets the label below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r,\"i\"']",
+   "new": "\\arrow[r,\"i\"]"
+  },
+  "note": "Label on the wrong side of the arrow; j above, g left, f right stand as printed. The same diagram of Théorème 4.8 (p. 459) has the same entry."
+ },
+ {
+  "page": 456,
+  "where": "hypothesis iii), end: 'i_*(λ^n(N,y)) = λ^n(i_*(y)) (relation (4.3.1)'",
+  "scan": "'(rela-' / 'tion (4.3.1)': one closing parenthesis and no full stop; the indented paragraph 'On utilise d'abord' follows (both scans; crops_456_460/c456_tion.png, w456_iii.png)",
+  "tex": "(relation (4.3.1)). (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(relation (4.3.1)).",
+   "new": "(relation (4.3.1)"
+  },
+  "corrected": "(relation (4.3.1)).",
+  "note": "The typist left '(relation' unclosed and the last hypothesis without its full stop (i) and ii) end with ';'); the TeX supplies both. The current layer also reads '(relation (4.3.1)).' (the corrected edition keeps it)."
+ },
+ {
+  "page": 456,
+  "where": "'On utilise d'abord VI.I.1 pour construire'",
+  "scan": "'VI.I.1': full stops between the parts of the reference (both scans; crops_456_460/c456_VI11_zoom.png, w456_VI11_zoom.png)",
+  "tex": "VI 1.1 (a space after VI)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "VI 1.1",
+   "new": "VI.1.1"
+  },
+  "note": "The print writes this reference with full stops (the other references of these pages, V 4.9, V 2.4.2, VI 5.9, have the space, as in the TeX). Apply before the misprint entry that follows (together they give the printed 'VI.I.1')."
+ },
+ {
+  "page": 456,
+  "where": "'On utilise d'abord VI.I.1 pour construire' (second part of the reference)",
+  "scan": "'VI.I.1': the middle numeral is a capital I with serifs on both sides at top and foot, the same glyph as the I of VI; the last is the typewriter's digit 1 with its flag (both scans; crops_456_460/c456_VI11_zoom.png, w456_VI11_zoom.png)",
+  "tex": "VI 1.1 (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "1.1 pour construire",
+   "new": "I.1 pour construire"
+  },
+  "corrected": "VI.1.1",
+  "note": "Capital I typed for the digit 1 (the typewriter has a 1, used in the same reference; Exposé VI numbers its paragraphs 1, 2, ...). Apply after the punctuation entry above (VI 1.1 -> VI.1.1); this 'old' is unique before and after it, and the two together give the printed 'VI.I.1'. The current layer also reads 'VI 1.1'."
+ },
+ {
+  "page": 456,
+  "where": "'une K-λ-algèbre K_1 qui joue le rôle de K˙(Y')'",
+  "scan": "no comma after K_1 (both scans; crops_456_460/c456_VI11.png, w456_VI11.png)",
+  "tex": "\\(K_1\\), qui joue",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(K_1\\), qui joue",
+   "new": "\\(K_1\\) qui joue"
+  },
+  "note": "Comma added by the TeX. The two λ of 'K-λ-algèbre' on this line and the next are hand-drawn, with a hooked top stroke: plain λ, as the TeX has them."
+ },
+ {
+  "page": 456,
+  "where": "'la K-λ-algèbre engendrée par le générateur L soumis aux relations'",
+  "scan": "no comma after L (both scans)",
+  "tex": "générateur \\(L\\), soumis",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "générateur \\(L\\), soumis",
+   "new": "générateur \\(L\\) soumis"
+  },
+  "note": "Comma added by the TeX."
+ },
+ {
+  "page": 456,
+  "where": "'soumis aux relations λ^i(L) = 0 pour i ≥ 2 (V 4.9)'",
+  "scan": "a blank before the raised i: no λ, typed or hand-drawn, in either scan (crops_456_460/c456_rel_contrast.png, w456_rel_contrast.png); 'relations   ^i (L) = 0'",
+  "tex": "\\(\\lambda^i(L)=0\\) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\lambda^i(L)=0\\)",
+   "new": "\\({}^i(L)=0\\)"
+  },
+  "corrected": "\\(\\lambda^i(L)=0\\)",
+  "note": "The hand-drawn λ (as the two of 'K-λ-algèbre' just above) was never put in; the typist left its space before the superscript i. A speck above the '(' in the main scan only is not a stroke. The current layer also reads \\lambda^i(L)=0."
+ },
+ {
+  "page": 456,
+  "where": "K˙ on pp. 456, 459, 460 (29 places: 9 on p. 456, 5 on p. 459, 15 on p. 460)",
+  "scan": "K with a raised filled dot in every place (both scans; e.g. crops_456_460/c456_Kdot.png, c456_lamanneaux.png)",
+  "tex": "K^\\circ",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "The Exposé VII convention reported in findings_416_420 and findings_431_435 (one script K^\\circ -> K^{\\bullet} for VII, both layers): not itemized. Three examples: p. 456 'K^\\circ(Y')\\times K^\\circ(X)' -> 'K^{\\bullet}(Y')\\times K^{\\bullet}(X)'; p. 459 'on voit que \\(K^\\circ(X')\\) se construit' -> 'on voit que \\(K^{\\bullet}(X')\\) se construit'; p. 460 'f^{\\gr}:\\operatorname{Gr}^kK^\\circ(X)\\to' -> 'f^{\\gr}:\\operatorname{Gr}^kK^{\\bullet}(X)\\to'."
+ },
+ {
+  "page": 457,
+  "where": "first line: 'L'idéal engendré par P est un λ-idéal.'",
+  "scan": "'λ-idéal' as one word (both scans)",
+  "tex": "'\\(\\lambda\\)-' ends a source line and 'idéal.' begins the next: the line end prints as a space ('λ- idéal')",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\(\\lambda\\)-\nidéal",
+   "new": "\\(\\lambda\\)-idéal"
+  },
+  "note": "Spurious space after the hyphen (the line break next to the old marker position)."
+ },
+ {
+  "page": 457,
+  "where": "'Si on se place dans 1 + K/(P)[[t]]^+'",
+  "scan": "a wide hand-drawn hat over K/(P)[[t]], the + set after it (both scans; crops_456_460/c457_hat1.png, wit_457_half.png)",
+  "tex": "\\(1+K/(P)[[t]]^+\\) (no hat)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(1+K/(P)[[t]]^+\\)",
+   "new": "\\(1+\\widehat{K/(P)[[t]]}^+\\)"
+  },
+  "note": "The completion hat is missing; \\widehat as main.tex writes \\widehat{K^{\\bullet}(S)[[t]]}^{+} in Exposé VI (diplomatic line 9865)."
+ },
+ {
+  "page": 457,
+  "where": "'Comme dans 1 + K[[t]]^+ on a λ_t(λ^d(N-L)) = ...'",
+  "scan": "a hand-drawn hat over K[[t]], the + after it (both scans; crops_456_460/c457_hat2.png, wit_457_half.png)",
+  "tex": "\\(1+K[[t]]^+\\) (no hat)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(1+K[[t]]^+\\)",
+   "new": "\\(1+\\widehat{K[[t]]}^+\\)"
+  },
+  "note": "As the entry above."
+ },
+ {
+  "page": 457,
+  "where": "'y' = y_o + y_1L^{-1} + ... + y_{d-1}L^{-d+1}'",
+  "scan": "three typed full stops on the baseline between the plus signs (both scans; crops_456_460/c457_dots.png)",
+  "tex": "+\\cdots+",
+  "kind": "symbol",
+  "confidence": "low",
+  "fix": {
+   "old": "+\\cdots+",
+   "new": "+\\ldots+"
+  },
+  "note": "The pattern of GLOBAL_ISSUES 87 (Exposé V: typed baseline '...' in sums written \\cdots, a pending volume decision); the only \\cdots of pp. 456-460. Drop this entry if that decision is applied to Exposé VII as well."
+ },
+ {
+  "page": 458,
+  "where": "first line: 'et on définit un homomorphisme :'",
+  "scan": "' :' after 'homomorphisme', before the display u : K → K_1 x K' (both scans; wit_458_half.png)",
+  "tex": "définit un homomorphisme (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "définit un homomorphisme\n\\[",
+   "new": "définit un homomorphisme :\n\\["
+  },
+  "note": "Colon dropped by the TeX."
+ },
+ {
+  "page": 458,
+  "where": "'la relation i_*(y_1y_2λ_{-1}(N)) = i_*(y_1).i_*(y_2) qui résulte immédiatement des hypothèses'",
+  "scan": "the formula stands in the running line between 'relation' and 'qui résulte', with no comma after it (both scans)",
+  "tex": "a display \\[ ... \\] ending with a comma",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "la relation\n\\[\n  i_*(y_1y_2\\lambda_{-1}(N))=i_*(y_1).i_*(y_2),\n\\]\nqui résulte",
+   "new": "la relation \\(i_*(y_1y_2\\lambda_{-1}(N))=i_*(y_1).i_*(y_2)\\) qui résulte"
+  },
+  "note": "The print sets the formula inline; the TeX makes it a display and adds a comma (same kind of fix as pp. 301, 303, 326, 332, 338, 351)."
+ },
+ {
+  "page": 458,
+  "where": "display 'K'_1 = (K_1 x K') / K'",
+  "scan": "no punctuation after the display; 'et on note v' follows (both scans)",
+  "tex": "K'_1=(K_1\\times K')/K,",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "K'_1=(K_1\\times K')/K,",
+   "new": "K'_1=(K_1\\times K')/K"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 458,
+  "where": "'On définit ensuite des homomorphismes additifs :'",
+  "scan": "begins a new, indented paragraph after '... grâce à la structure quotient.' (both scans; wit_458_half.png)",
+  "tex": "continues the paragraph: 'structure quotient. On définit ensuite'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "structure quotient. On définit",
+   "new": "structure quotient.\n\nOn définit"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 458,
+  "where": "display of the four maps j_*, j*, f_*, f*",
+  "scan": "two rows: 'j_* : K_1 → K'_1 ; j* : K'_1 → K_1 ;' above 'f_* : K'_1 → K' ; f* : K' → K'_1 .' (both scans)",
+  "tex": "one array row of four columns (the source line break after the second '&' is not a row break): the four maps print on one line",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "j^*:K'_1\\to K_1; &\n",
+   "new": "j^*:K'_1\\to K_1; \\\\\n"
+  },
+  "note": "Layout of the display: two rows of two, as printed."
+ },
+ {
+  "page": 458,
+  "where": "'L'homomorphisme j_* est le composé K_1 → K_1 x K' → K'_1.'",
+  "scan": "begins a new, indented paragraph after the display of the four maps (both scans; wit_458_half.png)",
+  "tex": "follows '\\]' without a blank line, so it continues the paragraph unindented",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\]\nL'homomorphisme",
+   "new": "\\]\n\nL'homomorphisme"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 459,
+  "where": "after Proposition 4.7.6: 'Il suffit de faire tourner la machine.'",
+  "scan": "a new, indented paragraph after item v), indented as 'Si on en revient' below and deeper than the items (both scans; crops_456_460/wit_459_half.png)",
+  "tex": "follows \\end{enumerate} without a blank line, so it prints unindented as a continuation",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{enumerate}\nIl suffit",
+   "new": "\\end{enumerate}\n\nIl suffit"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 459,
+  "where": "'Si on en revient à la situation géométrique rappellée plus haut'",
+  "scan": "'rappellée' (both scans)",
+  "tex": "rappellée (the printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "rappelée",
+  "note": "The typist's spelling (rappeler: rappelée); the diplomatic TeX keeps it. The current layer also reads 'rappellée': the corrected edition needs 'rappelée'."
+ },
+ {
+  "page": 459,
+  "where": "diagram of Théorème 4.8, bottom arrow Y → X",
+  "scan": "label i above the bottom arrow (both scans)",
+  "tex": "\\arrow[r,\"i\"'] (the ' sets the label below the arrow)",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[r,\"i\"']",
+   "new": "\\arrow[r,\"i\"]"
+  },
+  "note": "As the diagram of 4.7 on p. 456; j above, g left, f right stand as printed."
+ },
+ {
+  "page": 459,
+  "where": "statements on pp. 458-460: Proposition 4.7.5 (p. 458), Proposition 4.7.6 (p. 459), Théorème 4.8 (pp. 459-460)",
+  "scan": "underlined word group by word group (both scans): 4.7.5 'Les opérations définies par', 'et', 'munissent', 'd'une structure de', 'anneau', 'et', 'est un homomorphisme injectif qui', 'identifie', 'muni des opérations définies par', 'et', 'à un', 'idéal de'; 4.7.6 'et', 'sont des', 'homomorphismes', 'est', 'linéaire et', 'est', 'linéaire', 'est l'homomorphisme', 'multiplication par', 'pour tout', 'et tout'; 4.8 'Soient', 'une immersion fermée régulière de codimension constante', 'le schéma obtenu en faisant éclater', 'et', 'de sorte qu'on a le diagramme commutatif', 'On suppose que', 'est quasi-compact et a un faisceau ample', 'Alors on a pour tout', 'la suite exacte', 'où on pose', 'pour', 'et pour', 'et', 'les notations étant celles de', 'et', 'et', 'désignant la', 'ième', 'classe de Chern de', 'En outre', 'admet un inverse à gauche', 'défini par', 'Si de plus', 'est noethérien et', 'régulier', 'on a la suite exacte'; formulas, letters, numbers and punctuation plain; the labels underline only the word",
+  "tex": "the statements in roman (no \\underline, no \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé VII follows the Exposé II pattern of GLOBAL_ISSUES 82 (as reported for pp. 416-420): not itemized; the word groups are listed for the scripted pass. The underlined 'Démonstration' of p. 460 is \\emph{Démonstration.}, the file's form. No category letter and no underlined letters of sheaves on pp. 456-460."
+ },
+ {
+  "page": 460,
+  "where": "start of page (folio-460 marker)",
+  "scan": "p. 459 ends 'Alors on a pour tout k la suite exacte :'; p. 460 begins with the display '0 → Gr^{k-d}K˙(Y)_Q → Gr^{k-1}K˙(Y')_Q x Gr^kK˙(X)_Q → Gr^kK˙(X')_Q' (both scans; wit_460_half.png, b456_460/page_459_s4.png)",
+  "tex": "page_460.tex begins with 'exacte :' after the folio-460 marker; page_459.tex ends 'la suite'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 460 really begins at the display's '\\[' after 'exacte :' (the marker stands one line too early). Exact edit in main.tex, both layers (diplomatic lines 11723-11725, current 11729-11731): replace 'la suite\\n%%%%%%%%%%  scan idx 473  |  folio 460  %%%%%%%%%%\\nexacte :\\n' by 'la suite\\nexacte :\\n%%%%%%%%%%  scan idx 473  |  folio 460  %%%%%%%%%%\\n' (line numbers as of the 16:06:25 main.tex; old string once per layer; simulated in memory: crops_456_460/build_findings.py)."
+ },
+ {
+  "page": 460,
+  "where": "end of page (folio-461 marker)",
+  "scan": "p. 460 ends '... passent aux gradués associés, et définissent donc :' and the display 'i_gr : Gr^{k-d}K˙(Y)_Q → Gr^kK˙(X)_Q ; j_gr : Gr^{k-1}K˙(Y')_Q → Gr^kK˙(X')_Q .'; p. 461 begins 'Enfin, on remarque que λ_{-1}(F) = (-1)^{d-1}γ^{d-1}(F)' (both scans; wit_460_half.png, crops_456_460/w461_top.png)",
+  "tex": "page_460.tex ends 'et définissent'; 'donc :' and the i_gr/j_gr display stand after the folio-461 marker (top of page_461.tex)",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "ALREADY APPLIED IN MAIN.TEX, NO ACTION. Page 461 really begins at 'Enfin, on remarque': the folio-461 marker line belongs directly after the '\\]' that closes the i_gr/j_gr display. Exact edit: replace 'et définissent\\n%%%%%%%%%%  scan idx 474  |  folio 461  %%%%%%%%%%\\ndonc :\\n\\[\\n  i_{\\gr}:\\operatorname{Gr}^{k-d}K^\\circ(Y)_{\\mathbb Q}\\n  \\to \\operatorname{Gr}^{k}K^\\circ(X)_{\\mathbb Q};\\n  \\qquad\\n  j_{\\gr}:\\operatorname{Gr}^{k-1}K^\\circ(Y')_{\\mathbb Q}\\n  \\to \\operatorname{Gr}^{k}K^\\circ(X')_{\\mathbb Q}.\\n\\]\\n' by 'et définissent\\ndonc :\\n\\[\\n  i_{\\gr}:\\operatorname{Gr}^{k-d}K^\\circ(Y)_{\\mathbb Q}\\n  \\to \\operatorname{Gr}^{k}K^\\circ(X)_{\\mathbb Q};\\n  \\qquad\\n  j_{\\gr}:\\operatorname{Gr}^{k-1}K^\\circ(Y')_{\\mathbb Q}\\n  \\to \\operatorname{Gr}^{k}K^\\circ(X')_{\\mathbb Q}.\\n\\]\\n%%%%%%%%%%  scan idx 474  |  folio 461  %%%%%%%%%%\\n'. main.tex (both layers, as of 16:06:25) already has the new form (diplomatic lines 11770-11779, current 11776-11785) and no longer the old one, evidently from the report of batch 461-465; listed because page_460.tex of this batch still ends at 'et définissent'. The moved lines match the print of p. 460."
+ },
+ {
+  "page": 460,
+  "where": "first display: '0 → Gr^{k-d}K˙(Y)_Q → ... → Gr^kK˙(X')_Q'",
+  "scan": "no punctuation after the last term; 'où on pose' follows (both scans; crops_456_460/c460_d1end.png, w460_d1end.png)",
+  "tex": "\\operatorname{Gr}^{k}K^\\circ(X')_{\\mathbb Q}, (comma at the end of the display)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "K^\\circ(X')_{\\mathbb Q},\n\\]",
+   "new": "K^\\circ(X')_{\\mathbb Q}\n\\]"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 460,
+  "where": "'En outre, u^gr admet un inverse à gauche u'^gr, défini par u'^gr(y',x) = g_gr(y').' and the next paragraph 'Si de plus ...'",
+  "scan": "the formula stands in the running line after 'défini par', with the full stop; 'Si de plus X est noethérien' then begins a new, indented paragraph (both scans; wit_460_half.png)",
+  "tex": "a display \\[ u'^{\\gr}(y',x)=g_{\\gr}(y'). \\] followed without a blank line by 'Si de plus' (which then continues the paragraph unindented)",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "défini par\n\\[\n  u'^{\\gr}(y',x)=g_{\\gr}(y').\n\\]\nSi de plus",
+   "new": "défini par \\(u'^{\\gr}(y',x)=g_{\\gr}(y')\\).\n\nSi de plus"
+  },
+  "note": "The print sets the formula inline (as p. 458) and starts a new paragraph at 'Si de plus'; the one edit does both."
+ },
+ {
+  "page": 460,
+  "where": "second exact sequence: '... → Gr^kK˙(X')_Q → 0'",
+  "scan": "no full stop after the final 0; 'Démonstration.' follows (both scans; crops_456_460/c460_d4end.png, w460_d4end.png)",
+  "tex": "\\longrightarrow0.",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\longrightarrow0.\n\\]",
+   "new": "\\longrightarrow0\n\\]"
+  },
+  "note": "Full stop added at the end of the display."
+ },
+ {
+  "page": 460,
+  "where": "display 'f^gr : Gr^kK˙(X) → Gr^kK˙(X') ; g^gr : Gr^{k-d}K˙(Y) → Gr^{k-d}K˙(Y')'",
+  "scan": "a comma after the last term; 'et les homomorphismes analogues' follows in lower case (both scans; crops_456_460/c460_comma.png, w460_comma.png)",
+  "tex": "\\operatorname{Gr}^{k-d}K^\\circ(Y'). (full stop)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "K^\\circ(Y').\n\\]",
+   "new": "K^\\circ(Y'),\n\\]"
+  },
+  "note": "The TeX ends the display with a full stop where the print has a comma."
+ }
+]

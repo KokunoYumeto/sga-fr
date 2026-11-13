@@ -1,0 +1,28 @@
+% from main.tex
+%%%%%%%%%%  scan idx 99  |  folio 86  %%%%%%%%%%
+Nous dirons que \(\mathcal C_0\) est \emph{localement stable par noyau d'épimorphisme} si la condition suivante est réalisée : pour tout \(X\in\Ob S\) et tout épimorphisme \(u:E\longrightarrow F\) de \(\mathcal C_X\) avec \(E\) et \(F\in\Ob\mathcal C_{0,X}\), le noyau de \(u\) est localement dans \(\mathcal C_0\) (i.e. l'ensemble des \(f:U\to X\) de \(S_{/X}\) tels que \(f^*\Ker(u)\in\Ob\mathcal C_{0,U}\) est un raffinement de \(X\)).
+
+Par le procédé standard de décomposition d'une suite exacte longue en suites exactes courtes, on voit que la condition précédente équivaut à la condition (en apparence plus forte) que voici : pour tout \(X\in\Ob S\) et toute suite exacte de \(\mathcal C_X\)
+\begin{equation}\tag{*}
+  0\longrightarrow E^0\longrightarrow E^1\longrightarrow\cdots\longrightarrow E^n\longrightarrow 0
+\end{equation}
+avec \(E^i\in\Ob\mathcal C_{0,X}\) pour \(1\leq i\leq n\), \(E^0\) est localement dans \(\mathcal C_0\).
+
+Nous dirons que \(\mathcal C_0\) est \emph{localement quasi-stable par noyau d'épimorphismes} si, pour toute suite exacte telle que \((*)\), \(E^0\) est de \(\mathcal C_0\)-type fini.
+
+D'autre part, nous dirons que \(\mathcal C_0\) est \emph{localement relevable dans} \(\mathcal C\) si, pour tout \(X\in\Ob S\), tout épimorphisme \(u:E\longrightarrow F\) de \(\mathcal C_X\) avec \(F\in\Ob\mathcal C_{0,X}\) admet localement une section. Pour que \(\mathcal C_0\) soit localement relevable dans \(\mathcal C\), il faut et il suffit que, pour tout diagramme de \(\mathcal C_X\) (\(X\in\Ob S\))
+\[
+\begin{tikzcd}
+& H \arrow[d]\\
+E \arrow[r,"u"] & F
+\end{tikzcd}
+\]
+où \(u\) est un épimorphisme et \(H\in\Ob\mathcal C_0\), l'ensemble des \(U\) au-dessus de \(X\) tel qu'il existe un diagramme commutatif
+\[
+\begin{tikzcd}
+& H_U \arrow[d] \arrow[dl,"u"']\\
+E_U \arrow[r,"U"] & F_U
+\end{tikzcd}
+\]
+soit un raffinement de \(X\).
+

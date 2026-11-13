@@ -1,0 +1,35 @@
+% from main.tex
+%%%%%%%%%%  scan idx 246  |  folio 233  %%%%%%%%%%
+grâce à (1.7).
+
+\textbf{Corollaire 1.9.} Sous les hypothèses de (1.8), le foncteur
+\[
+  \otimes_S^{\mathbf L}:D^{-}(X_1)\times D^{-}(X_2)\longrightarrow D^{-}(X)
+\]
+induit un foncteur
+\[
+  \otimes_S^{\mathbf L}:D^{-}(f_1)_{\mathrm{coh}}\times D^{-}(f_2)_{\mathrm{coh}}
+  \longrightarrow D^{-}(f)_{\mathrm{coh}}\qquad(\text{cf. }(1.2)).
+\]
+En particulier, si \(f_1\) et \(f_2\) sont pseudo-cohérents (1.2), il en est de même de \(f\).
+
+\textbf{Corollaire 1.10.} Soit
+\[
+\begin{tikzcd}
+X \arrow[d,"f"'] & X' \arrow[l,"g"'] \arrow[d,"f'"]\\
+Y & Y' \arrow[l,"h"']
+\end{tikzcd}
+\]
+un carré cartésien, avec \(f\) localement de type fini. Alors :
+\begin{enumerate}[label=\alph*)]
+\item Supposons \(X\) et \(Y'\) tor-indépendants sur \(Y\) (1.5). Pour \(n\in\mathbb Z\cup\{-\infty\}\), le foncteur \(Lg^*:D^{-}(X)\to D^{-}(X')\) induit un foncteur
+\[
+  Lg^*:D^{-}(f)_{n\text{-}\coh}\longrightarrow D^{-}(f')_{n\text{-}\coh}.
+\]
+En particulier, si \(f\) est \(n\)-pseudo-cohérent (1.2), il en est de même de \(f'\).
+
+\item Supposons \(h\) fidèlement plat, soient \(n\in\mathbb Z\cup\{-\infty\}\) et \(E\in\Ob D^{-}(X)\) un complexe à cohomologie quasi-cohérente. Pour que \(E\) soit \(n\)-pseudo-cohérent rel. à \(f\), il faut et il suffit que \(g^*(E)\) soit \(n\)-pseudo-cohérent à \(f'\). En particulier, pour que \(f\) soit \(n\)-pseudo-cohérent, il faut et il suffit que \(f'\) le soit.
+\end{enumerate}
+
+\emph{Preuve.} Compte tenu de (1.2.1 b)), toutes les assertions de (1.9) et (1.10) résultent trivialement de (1.8), sauf la partie « il suffit » de (1.10 b)). Pour celle-ci, on peut, la question étant locale sur \(X\), supposer que \(f\) se factorise en une immersion fermée suivie d'un morphisme lisse. On est alors ramené par (1.1.3) au cas où \(f\) (resp. \(f'\)) est l'identité de \(X\) (resp. \(X'\)). L'assertion résulte alors, par un dévissage standard (cf. I 2.16.2), du fait qu'un faisceau quasi-cohérent \(L\) sur \(X\) est de type fini si et seulement si \(g^*L\) est de type fini.
+

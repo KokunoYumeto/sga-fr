@@ -1,0 +1,412 @@
+[
+ {
+  "page": 536,
+  "where": "start of page (folio-536 marker)",
+  "scan": "p. 536 begins 'Proposition 2.3.1. Pour tout schéma propre X sur k, ...' (both scans). The line 'Poincaré χ(F) ∈ Z de F sur X. De 2.2.1 on conclut immédiatement :' is the end of p. 535 (witness p. 535 ends '... la caractéristique d'Euler-Poincaré χ(F) ∈ Z de F sur X . / De 2.2.1 on conclut immédiatement :')",
+  "tex": "page_536.tex begins 'Poincaré $\\chi(F)\\in\\mathbb Z$ de $F$ sur $X$. De 2.2.1 on conclut immédiatement :'; page 535 ends '... la caractéristique d'Euler-' directly above the marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 536 really begins at '\\textbf{Proposition 2.3.1.}'. Exact fix in main.tex (both layers): move the folio-536 marker line down past the line 'Poincaré $\\chi(F)\\in\\mathbb Z$ de $F$ sur $X$. De 2.2.1 on conclut immédiatement :' and the blank line after it, so that it stands directly above '\\textbf{Proposition 2.3.1.}'; 'd'Euler-' and 'Poincaré' then meet again under folio 535. The marker stands one TeX line too early (it splits the word Euler-Poincaré)."
+ },
+ {
+  "page": 536,
+  "where": "end of 2.3: 'parfois appellé polynôme de Snapper pour F'",
+  "scan": "'polynôme de Snapper' underlined (both scans)",
+  "tex": "plain 'polynôme de Snapper'",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "polynôme de Snapper pour $F$",
+   "new": "\\emph{polynôme de Snapper} pour $F$"
+  },
+  "note": "Defined term underlined in the print; Exposé X writes such terms with \\emph (\\emph{nombre de Chern}, \\emph{nombre d'intersection})."
+ },
+ {
+  "page": 536,
+  "where": "end of 2.3: 'parfois appellé polynôme de Snapper'",
+  "scan": "'appellé' (both scans)",
+  "tex": "'appellé' (keeps the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "appelé",
+  "note": "Typing error (appeler: appelé). The TeX keeps the printed reading."
+ },
+ {
+  "page": 536,
+  "where": "Prop. 2.3.1, second display 'cl_P(L) ⇝ g_*(cl˙(L)y) = χ(cl˙(L)y'",
+  "scan": "the display ends 'χ(cl˙(L)y' with no closing parenthesis (both scans; crops_536_540/p536_disp2.png, w536_disp2.png)",
+  "tex": "=\\chi(\\cl^\\circ(L)y)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "(L)y)\n\\]",
+   "new": "(L)y\n\\]"
+  },
+  "corrected": "=\\chi(\\cl^\\circ(L)y)",
+  "note": "The TeX silently adds the closing parenthesis; the fix restores the printed reading (only the final ')' is concerned; the raised dot of cl is the separate \\circ item below)."
+ },
+ {
+  "page": 536,
+  "where": "Prop. 2.3.1, first display 'S_y : Pic(X) → Z ↪ Q'",
+  "scan": "capital S in S_y (both scans; crops_536_540/p536_Sy.png)",
+  "tex": "S_y:\\Pic(X)\\longrightarrow\\mathbb Z\\hookrightarrow\\mathbb Q (keeps the printed capital)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "s_y",
+  "note": "The same map is s_y with a small s everywhere else: p. 538 'L'application polynôme s_y (2.3.1)', the diagram and 'correspondant à s_y' (crops_536_540/p538_sy.png); the TeX has S_y only here. Low confidence: the capital may be meant."
+ },
+ {
+  "page": 536,
+  "where": "2.4, 'le foncteur de Picard Pic_{X/k} de X sur k'",
+  "scan": "'Pic' with a wavy underline (both scans; crops_536_540/p536_Picwavy.png)",
+  "tex": "$\\Pic_{X/k}$ (plain)",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "Picard $\\Pic_{X/k}$",
+   "new": "Picard $\\mathbf{Pic}_{X/k}$"
+  },
+  "note": "The typescript marks the Picard functor with a wavy underline (the typist's sign for bold: here and p. 537 'on sait [4] que Pic°_{X/k}') and the Picard scheme with a straight underline (p. 537, six places); Pic(X), the Pic_{X/k}(Spec(k)) of this page and the Pic_{X/k} of Remarque 2.4.5 (p. 538) are plain. \\mathbf{Pic} keeps the print's wavy/straight distinction; if the volume wants one form, use \\underline{\\Pic}, the form of Exp. XIII (whose print underlines its Pic_{X/S} straight, witness p. 631). The TeX has no other \\Pic_{X/k} or \\Pic^0_{X/k} in Exposé X than those of pp. 536-538."
+ },
+ {
+  "page": 536,
+  "where": "local macro block at the end of page_536.tex: \\providecommand{\\Gro}{\\operatorname{Gr}^{\\circ}}; \\Gro is used for the print's Gr˙ on p. 538 (1), p. 539 (5), p. 540 (4)",
+  "scan": "Gr with a raised filled dot in all ten places (both scans; crops_536_540/p538_Grdot.png, w538_Grdot.png, p539_fstar.png, p539_312.png, p540_323.png)",
+  "tex": "\\Gro prints Gr with a raised circle (\\operatorname{Gr}^{\\circ})",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\providecommand{\\Gro}{\\operatorname{Gr}^{\\circ}}",
+   "new": "\\providecommand{\\Gro}{\\operatorname{Gr}^{\\bullet}}"
+  },
+  "note": "The raised typed dot of Gr is written \\bullet in this volume (handled globally). \\Gro is defined only here in main.tex and used only on pp. 538-540, so this one edit fixes all ten places (no single edits given for them). If the definition is to stay, replace \\Gro by \\Gr^{\\bullet} in the ten places instead."
+ },
+ {
+  "page": 536,
+  "where": "statements of pp. 536-538: Proposition 2.3.1 (p. 536), Définition 2.4.1 and Lemme 2.4.3 (p. 537), Proposition 2.4.4 (p. 538)",
+  "scan": "statement text underlined word group by word group, symbols and most punctuation not underlined (both scans), e.g. Prop. 2.3.1 'Pour tout schéma propre' X 'sur' k, 'et pour tout' y ∈ Filt_j(X), 'l'application' ... 'définie par' ... 'est une application polynôme de degré' ≤ j",
+  "tex": "statements set in roman (no \\emph)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "CONVENTION of the Exposé X TeX (its labelled statements, from Définition 1.1.1 on, are set in roman), the pattern of Exposé II (GLOBAL_ISSUES 82) and Exposé IX (findings_506_510); not itemized. Examples: p. 536 '\\textbf{Proposition 2.3.1.} Pour tout schéma propre $X$ sur $k$', p. 537 '\\textbf{Lemme 2.4.3.} Pour tout schéma propre \\(X\\)', p. 538 '\\textbf{Proposition 2.4.4.} L'application polynôme \\(s_y\\)'."
+ },
+ {
+  "page": 536,
+  "where": "letters that name Modules, pp. 536-540 (L, L_1, ..., L_n, F)",
+  "scan": "underlined (both scans): p. 536 'cl_P(L̲)', 'L̲_1,...,L̲_n sont des O_X-modules inversibles et F̲ un', 'pour F̲ et la suite L̲_1,...,L̲_n'; p. 537 'L̲ un O_X-module inversible', 'L̲^{⊗n}'; p. 540 'f^*(cl.(F̲))', 'Tor_i(F̲,O_{X'})', 'cohérent F̲'. Not every F: p. 536 'dim. supp. F' is plain",
+  "tex": "plain $L$, $L_1$, $F$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "CONVENTION of the transcription (as for Exposé IX, findings_506_510), not itemized and not for a blind script. Examples: p. 536 'Lorsque $L_1,\\ldots,L_n$ sont des $\\mathcal O_X$-modules inversibles et $F$ un', p. 537 '\\(L\\) un \\(\\mathcal O_X\\)-module inversible', p. 540 'pour tout \\(\\mathcal O_X\\)-module cohérent \\(F\\)'."
+ },
+ {
+  "page": 536,
+  "where": "cl with a raised dot: second display of Prop. 2.3.1 (twice)",
+  "scan": "a raised filled dot after cl (both scans; crops_536_540/p536_disp2.png, w536_disp2.png); the same on p. 535 'j(cl˙(L))' (witness)",
+  "tex": "\\cl^\\circ (a raised circle)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "CONVENTION of Exposé X up to p. 564: the print's raised dot is written \\circ (main.tex: \\cl^\\circ 28 times on pp. 522-551, K^\\circ 54 times on pp. 522-564, \\Gro on pp. 538-540), while pp. 564-594 write K^\\bullet (66) and \\Gr^\\bullet (35). Examples: p. 536 'g_*(\\cl^\\circ(L)y)', p. 536 '=\\chi(\\cl^\\circ(L)y)', p. 535 'j(\\cl^\\circ(L))'. One pass as for Exposés IV and VI (10 Nov): \\cl^\\circ -> \\cl^{\\bullet} once the batches of pp. 519-564 confirm the dot."
+ },
+ {
+  "page": 537,
+  "where": "top of page, before 'Lorsque X est propre sur k'",
+  "scan": "no heading: p. 537 begins 'Lorsque X est propre sur k, on sait [4] que ...' (both scans)",
+  "tex": "\\subsection*{2.4, suite}",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{2.4, suite}\n\n",
+   "new": ""
+  },
+  "note": "Heading added by the transcription. Also: the folio-537 marker splits the local macro definition '\\providecommand{\\longO}[1]' / '{\\operatorname{length}_{#1}}' (harmless while markers are comments; it belongs below the macro block if markers are ever turned into commands)."
+ },
+ {
+  "page": 537,
+  "where": "'on sait [4] que Pic°_{X/k} est représentable'",
+  "scan": "'Pic' with a wavy underline and a hand-drawn circle as exponent (both scans; crops_536_540/p537_Pic1.png)",
+  "tex": "\\(\\Pic^0_{X/k}\\) (plain)",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": {
+   "old": "[4] que \\(\\Pic^0_{X/k}\\)",
+   "new": "[4] que \\(\\mathbf{Pic}^0_{X/k}\\)"
+  },
+  "note": "Wavy underline (the Picard functor), as on p. 536; see that item for the form."
+ },
+ {
+  "page": 537,
+  "where": "'on sait [4] que Pic°_{X/k} est représentable par un schéma en groupes localement de type fini Pic_{X/k}'",
+  "scan": "the functor carries the exponent circle: 'Pic°_{X/k} est représentable par un schéma en groupes localement de type fini Pic_{X/k}' (both scans)",
+  "tex": "\\(\\Pic^0_{X/k}\\) (keeps the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "[4] que \\(\\mathbf{Pic}_{X/k}\\)",
+  "note": "What [4] gives is the representability of the Picard functor Pic_{X/k} by the group scheme Pic_{X/k} (locally of finite type); Pic° only comes in the next sentence ('La composante neutre Pic°_{X/k} de Pic_{X/k}'). The circle on the functor is a slip. The TeX keeps it; corrected layer: no exponent (written here after the wavy-underline item above; \\Pic_{X/k} if that item is not taken)."
+ },
+ {
+  "page": 537,
+  "where": "'localement de type fini Pic_{X/k} sur k'",
+  "scan": "'Pic' of the Picard scheme underlined, straight (both scans; crops_536_540/p537_Pic3.png, p537_cong.png)",
+  "tex": "fini \\(\\Pic_{X/k}\\) sur (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "fini \\(\\Pic_{X/k}\\) sur",
+   "new": "fini \\(\\underline{\\Pic}_{X/k}\\) sur"
+  },
+  "note": "Straight underline of the Picard scheme; \\underline{\\Pic} is the volume's form (Exp. XIII). Pic°(X) and Pic(X) are plain in the print."
+ },
+ {
+  "page": 537,
+  "where": "'La composante neutre Pic°_{X/k}'",
+  "scan": "'Pic' of the Picard scheme underlined, straight (both scans; crops_536_540/p537_Pic3.png, p537_cong.png)",
+  "tex": "neutre \\(\\Pic^0_{X/k}\\) de (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "neutre \\(\\Pic^0_{X/k}\\) de",
+   "new": "neutre \\(\\underline{\\Pic}^0_{X/k}\\) de"
+  },
+  "note": "Straight underline of the Picard scheme; \\underline{\\Pic} is the volume's form (Exp. XIII). Pic°(X) and Pic(X) are plain in the print."
+ },
+ {
+  "page": 537,
+  "where": "'de Pic_{X/k} est un groupe algébrique'",
+  "scan": "'Pic' of the Picard scheme underlined, straight (both scans; crops_536_540/p537_Pic3.png, p537_cong.png)",
+  "tex": "de \\(\\Pic_{X/k}\\) est un groupe (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "de \\(\\Pic_{X/k}\\) est un groupe",
+   "new": "de \\(\\underline{\\Pic}_{X/k}\\) est un groupe"
+  },
+  "note": "Straight underline of the Picard scheme; \\underline{\\Pic} is the volume's form (Exp. XIII). Pic°(X) and Pic(X) are plain in the print."
+ },
+ {
+  "page": 537,
+  "where": "Preuve, 'Pic°(X) ≅ Pic°_{X/k}(k)'",
+  "scan": "'Pic' of the Picard scheme underlined, straight (both scans; crops_536_540/p537_Pic3.png, p537_cong.png)",
+  "tex": "\\cong \\Pic^0_{X/k}(k)\\) (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cong \\Pic^0_{X/k}(k)\\)",
+   "new": "\\cong \\underline{\\Pic}^0_{X/k}(k)\\)"
+  },
+  "note": "Straight underline of the Picard scheme; \\underline{\\Pic} is the volume's form (Exp. XIII). Pic°(X) and Pic(X) are plain in the print."
+ },
+ {
+  "page": 537,
+  "where": "Preuve, 'Puisque Pic°_{X/k} est connexe'",
+  "scan": "'Pic' of the Picard scheme underlined, straight (both scans; crops_536_540/p537_Pic3.png, p537_cong.png)",
+  "tex": "Puisque \\(\\Pic^0_{X/k}\\) (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Puisque \\(\\Pic^0_{X/k}\\)",
+   "new": "Puisque \\(\\underline{\\Pic}^0_{X/k}\\)"
+  },
+  "note": "Straight underline of the Picard scheme; \\underline{\\Pic} is the volume's form (Exp. XIII). Pic°(X) and Pic(X) are plain in the print."
+ },
+ {
+  "page": 537,
+  "where": "Preuve, 'sur le groupe Pic°_{X/k}(k) est surjectif'",
+  "scan": "'Pic' of the Picard scheme underlined, straight (both scans; crops_536_540/p537_Pic3.png, p537_cong.png)",
+  "tex": "le groupe \\(\\Pic^0_{X/k}(k)\\) (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "le groupe \\(\\Pic^0_{X/k}(k)\\)",
+   "new": "le groupe \\(\\underline{\\Pic}^0_{X/k}(k)\\)"
+  },
+  "note": "Straight underline of the Picard scheme; \\underline{\\Pic} is the volume's form (Exp. XIII). Pic°(X) and Pic(X) are plain in the print."
+ },
+ {
+  "page": 538,
+  "where": "diagram of the proof of 2.4.4, label of the lower arrow Pic(X_K) → K.(Spec(K))",
+  "scan": "s̲_y: a bar under the s (both scans; crops_536_540/p538_diag_bot.png, w538_diag_bot.png)",
+  "tex": "\\bar s_y (bar over the s)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\bar s_y\\)} (KK)",
+   "new": "\\(\\underline{s}_y\\)} (KK)"
+  },
+  "note": "The print underlines the s; it does not overline it. The print also sets this label above the arrow (TeX node[below]); not changed in this edit. Apply together with the next item."
+ },
+ {
+  "page": 538,
+  "where": "'où s̲_y est l'application polynôme correspondant à s_y'",
+  "scan": "s̲_y with a bar under the s (both scans; crops_536_540/p538_sbar.png)",
+  "tex": "\\(\\bar s_y\\)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "où \\(\\bar s_y\\)",
+   "new": "où \\(\\underline{s}_y\\)"
+  },
+  "note": "As the diagram label; apply together."
+ },
+ {
+  "page": 538,
+  "where": "diagram of the proof of 2.4.4, the two oblique arrows K.(Spec(k)) → Z and K.(Spec(K)) → Z",
+  "scan": "each oblique arrow carries the isomorphism sign ~ (both scans; crops_536_540/p538_diag_top.png, p538_diag_bot.png, w538_diag_bot.png)",
+  "tex": "\\draw[->] (Kk) -- (Z); and \\draw[->] (KK) -- (Z); without label",
+  "kind": "missing",
+  "confidence": "high",
+  "fix": {
+   "old": "\\draw[->] (Kk) -- (Z);\n\\draw[->] (KK) -- (Z);",
+   "new": "\\draw[->] (Kk) -- node[sloped,above] {\\(\\sim\\)} (Z);\n\\draw[->] (KK) -- node[sloped,above] {\\(\\sim\\)} (Z);"
+  },
+  "note": "Missing isomorphism marks."
+ },
+ {
+  "page": 538,
+  "where": "end of the diagram of the proof of 2.4.4",
+  "scan": "a comma to the right of the diagram, at the level of its lower row (both scans)",
+  "tex": "no punctuation after the diagram",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{tikzpicture}\n\\]",
+   "new": "\\end{tikzpicture},\n\\]"
+  },
+  "note": "Missing comma."
+ },
+ {
+  "page": 538,
+  "where": "K with a raised dot, pp. 538-539 (4 places): 3.1 'de K˙(X)' and the display 'K˙(X) x K.(X) → K.(X)'; (3.2.2) on p. 539 twice",
+  "scan": "a raised filled dot (both scans; crops_536_540/p538_Kdot.png, w538_Kdot.png)",
+  "tex": "K^\\circ",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "CONVENTION, see the cl˙ item on p. 536 (Exposé X up to p. 564 writes the raised dot as \\circ). Examples: p. 538 'de \\(K^\\circ(X)\\)', p. 538 'K^\\circ(X)\\times K_\\bullet(X)', p. 539 'x\\in K^\\circ(X)_{\\mathbb Q}'. Same fix as for Exposés IV and VI: K^\\circ -> K^{\\bullet}."
+ },
+ {
+  "page": 539,
+  "where": "start of page (folio-539 marker)",
+  "scan": "p. 538 ends with (3.1.1) '... (i,j ∈ Z) .'; p. 539 begins 'Gr.(X) devient ainsi un module sur l'anneau Gr˙(X) ...' (both scans)",
+  "tex": "page_538.tex ends with the line '\\(\\Grb(X)\\)' after the \\end{equation} of (3.1.1); page_539.tex begins 'devient ainsi un module ...'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 539 really begins at '\\(\\Grb(X)\\)'. Exact fix in main.tex (both layers): move the folio-539 marker line up one TeX line, to between '\\end{equation}' of (3.1.1) and '\\(\\Grb(X)\\)'."
+ },
+ {
+  "page": 539,
+  "where": "'... (i ∈ Z)). Considérons maintenant un morphisme propre'",
+  "scan": "'Considérons maintenant' starts flush left on the line after '(i ∈ Z)).', not indented like the paragraphs of these pages (both scans)",
+  "tex": "a blank line before 'Considérons maintenant' (new paragraph)",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "\\((i\\in\\mathbb Z)\\)).\n\nConsidérons",
+   "new": "\\((i\\in\\mathbb Z)\\)).\nConsidérons"
+  },
+  "note": "The print seems to continue the paragraph; low confidence (a flush-left line after a full stop can be an unindented new paragraph)."
+ },
+ {
+  "page": 539,
+  "where": "end of display (3.2.1)",
+  "scan": "'(k ∈ Z)' with no punctuation after it (both scans; crops_536_540/p539_321.png)",
+  "tex": "\\qquad(k\\in\\mathbb Z),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\qquad(k\\in\\mathbb Z),",
+   "new": "\\qquad(k\\in\\mathbb Z)"
+  },
+  "note": "The TeX adds a comma at the end of the display."
+ },
+ {
+  "page": 539,
+  "where": "display (3.2.2), left side 'f_*((f^*(x).y)'",
+  "scan": "two opening parentheses after f_*, one closing (both scans; crops_536_540/p539_322.png, w539_322eq.png)",
+  "tex": "f_*((f^*(x)\\cdot y) (keeps the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "f_*(f^*(x)\\cdot y)",
+  "note": "Unbalanced parenthesis. The TeX keeps the printed reading."
+ },
+ {
+  "page": 539,
+  "where": "display (3.2.2), right side 'x.f_*(Y)'",
+  "scan": "capital Y (both scans)",
+  "tex": "x\\cdot f_*(Y) (keeps the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "x\\cdot f_*(y)",
+  "note": "The element is y ∈ K˙(X')_Q (same display); capital Y is a typing error. The TeX keeps it."
+ },
+ {
+  "page": 540,
+  "where": "3.3, display 'f^*(cl.(F)) = Σ_i (-1)^i cl.(Tor_i^{O_X}(F,O_{X'}))'",
+  "scan": "Tor underlined (both scans; crops_536_540/p540_sum.png)",
+  "tex": "\\Tor_i^{\\mathcal O_X} (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cl_\\bullet\\bigl(\\Tor_i^{\\mathcal O_X}",
+   "new": "\\cl_\\bullet\\bigl(\\underline{\\Tor}_i^{\\mathcal O_X}"
+  },
+  "note": "The volume writes the underlined Tor as \\underline{\\Tor} (69 places)."
+ },
+ {
+  "page": 540,
+  "where": "'Les O_X-modules Tor_i^{O_X}(F,O_{X'}) sont concentrés'",
+  "scan": "Tor underlined (both scans; crops_536_540/p540_Les.png)",
+  "tex": "\\Tor_i^{\\mathcal O_X} (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "modules \\(\\Tor_i^{\\mathcal O_X}",
+   "new": "modules \\(\\underline{\\Tor}_i^{\\mathcal O_X}"
+  },
+  "note": "As the display above."
+ },
+ {
+  "page": 540,
+  "where": "'pour tout O_X-module cohérent F . / Les O_X-modules ...'",
+  "scan": "'Les O_X-modules Tor_i ...' begins a new, indented paragraph (both scans)",
+  "tex": "runs on after 'cohérent \\(F\\).' in the same paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "cohérent \\(F\\). Les",
+   "new": "cohérent \\(F\\).\n\nLes"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 540,
+  "where": "display 'dim(f^{-1}(Supp(F)) ≤ dim(Supp(F)) + d .'",
+  "scan": "three opening and two closing parentheses before ≤ (both scans; crops_536_540/p540_dim.png)",
+  "tex": "\\dim(f^{-1}(\\Supp(F))\\leq \\dim(\\Supp(F))+d. (keeps the printed reading)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "\\dim(f^{-1}(\\Supp(F)))\\leq \\dim(\\Supp(F))+d.",
+  "note": "Unbalanced parenthesis. The TeX keeps the printed reading."
+ },
+ {
+  "page": 540,
+  "where": "end of page (folio-541 marker)",
+  "scan": "p. 540 ends 'd'où un homomorphisme de degré d de groupes abéliens gradués' (both scans); p. 541 begins with the display '(3.3.1) f^* : Gr.(X) → Gr.(X') .' (witness p. 541)",
+  "tex": "page_540.tex ends with '\\begin{equation}\\tag{3.3.1}' and ' f^*:\\Grb(X)\\longrightarrow\\Grb(X').'; the folio-541 marker stands inside the equation, before '\\end{equation}'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 541 really begins at '\\begin{equation}\\tag{3.3.1}'. Exact fix in main.tex (both layers): move the folio-541 marker line up two TeX lines, to between 'd'où un homomorphisme de degré \\(d\\) de groupes abéliens gradués' and '\\begin{equation}\\tag{3.3.1}'."
+ }
+]

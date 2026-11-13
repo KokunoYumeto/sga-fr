@@ -1,0 +1,38 @@
+% from main.tex
+%%%%%%%%%%  scan idx 103  |  folio 90  %%%%%%%%%%
+type fini (1.2). Alors l'ensemble des \(X\in\Ob S/S\) vérifiant la propriété \((P)\) ci-dessous est un raffinement de \(S\).
+
+\((P)\) : il existe un objet \(M\) de \(\mathcal C_{0,X}\) et des flèches de \(\mathcal C_X\)
+\[
+  r:M\longrightarrow Z^{n+1}(E_X)=
+  \Ker\!\left(E_X^{n+1}\xrightarrow{d^{n+1}}E_X^{n+2}\right)
+\]
+\[
+  \text{et}\quad s:M\longrightarrow F_X^n
+\]
+tels que le diagramme suivant de \(\mathcal C_X\)
+\[
+\begin{tikzcd}[column sep=tiny]
+\cdots \arrow[r] & E_X^{n-1}
+ \arrow[r,"{\binom{d_{E_X}^{n-1}}{0}}"]
+ \arrow[d,"u_X^{n-1}"] &
+E_X^n\oplus M
+ \arrow[r,"{(d_{E_X}^n,r)}"]
+ \arrow[d,"{(u_X^n,s)}"] &
+E_X^{n+1} \arrow[r] \arrow[d,"u_X^{n+1}"] &
+\cdots\\
+\cdots \arrow[r] & F_X^{n-1} \arrow[r] &
+F_X^n \arrow[r] &
+F_X^{n+1} \arrow[r] &
+\cdots
+\end{tikzcd}
+\]
+soit un morphisme de complexes \(u':E'\to F_X\) (i.e. \(d_{F_X}^n s=u_X^{n+1}r\)), et que
+\begin{enumerate}[label=(\roman*)]
+\item \(\Ho^{n+1}(u')\) soit un monomorphisme, avec \(\Im\Ho^{n+1}(u')=\Im\Ho^{n+1}(u_X)\),
+\item \(\Ho^n(u')\) soit un épimorphisme.
+\end{enumerate}
+
+De manière imagée, on peut dire que, quitte à modifier localement \(E\) et \(u\), \emph{en degré \(n\) seulement}, par l'addition à \(E^n\) d'un objet de \(\mathcal C_0\), on peut localement rendre \(\Ho^{n+1}(u)\) injectif, sans changer son image, et \(\Ho^n(u)\) surjectif.
+
+\emph{Démonstration.} La marche est la suivante : on montre d'abord que l'on peut choisir localement \(r\) et \(s\) de manière à rendre \(\Ho^{n+1}(u)\) injectif; on vérifie que l'%

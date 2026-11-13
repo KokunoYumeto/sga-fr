@@ -1,0 +1,15 @@
+% from main.tex
+%%%%%%%%%%  scan idx 123  |  folio 110  %%%%%%%%%%
+\[
+  \Hom(E,F)_s\longrightarrow\Hom(E_s,F_s)
+\]
+est un
+isomorphisme pour tout point \(s\) de \(S\). Il en résulte que si \(E\) et \(F\) sont tous deux de présentation finie, et si \(E_s\qis F_s\) en un point \(s\) de \(S\), alors il existe un objet \(s\)-ponctué \(U\) de \(S\)\footnote{i.e. tel que \(s\) se factorise à travers \(S_{/U}\).} tel que \(E|U\qis F|U\). La conclusion en découle aussitôt.
+
+Supposons (ii). Soit \(n\in\mathbb N\), notons \(\mathbb D^n\) le foncteur sur la catégorie des topos localement annelés (appartenant à un univers fixé\dots) défini par \(T\longmapsto\Gamma(T,\mathcal O_T)^n\). On sait [1] que le foncteur \(\End_{\mathbb D}(\mathbb D^n)\) est représenté par \(M_n=\Spec\mathbb Z[T_{ij}]\ (1\leq i\leq n,\ 1\leq j\leq n)\) muni de l'endomorphisme \(U_n\) de \((\mathcal O_{M_n})^n\) défini par la matrice \((T_{ij})\). Soit maintenant \(p:A^n\longrightarrow A^n\) un projecteur, montrons que \(p(A^n)\) est localement libre de type fini. D'après ce qu'on vient de dire, il existe un morphisme \(s:S\longrightarrow M_n\) de topos localement annelés tel que \(s^*(u_n)=p\). On peut interpréter \(s\) comme un point de \(M_n\) à valeurs dans \(\Gamma(S,A)\), i.e. une matrice d'ordre \(n\) à coefficients dans \(\Gamma(S,A)\); comme cette dernière est un projecteur, \(s\) se factorise à travers le sous-schéma fermé \(i:P_n\hookrightarrow M_n\) correspondant aux projecteurs en \(S\), soit \(S\xrightarrow{s'}P_n\xrightarrow{i}M_n\). On a donc \(p=s'^*i^*(u_n)\), et l'on gagne, car d'après l'assertion sous l'hypothèse (i), l'image de \(i^*(u_n)\) est un faisceau localement libre de type fini.
+
+\textbf{Corollaire 2.16.} Soit \(f:(S',A')\to(S,A)\) un morphisme de topos annelés (défini par un foncteur \(f^{-1}:S\to S'\) et un morphisme de faisceaux d'anneaux \(f^{-1}(A)\to A'\)). Notons \(\Dpx({}_{A'}S'_A)\) la catégorie dérivée de celle des \(A'\)-\(A\)-biModules (à gauche sur \(A'\), à droite sur \(A\)), et
+\[
+  \otimes_A^{\mathrm L}:\Dpx^-(_{A'}S'_A)\times_{S'}\Dpx^-(_A S)
+  \longrightarrow \Dpx^-(_{A'}S')
+\]

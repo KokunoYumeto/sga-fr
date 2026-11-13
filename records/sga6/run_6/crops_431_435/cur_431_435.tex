@@ -1,0 +1,124 @@
+%%%%%%%%%%  scan idx 444  |  folio 431  %%%%%%%%%%
+alors il en est de même pour \(\bigoplus_{i\ge0}\Tor_i^A(B,C)\).
+
+Cette dernière remarque s'applique au cas où \(B\) est le quotient de \(A\) par un idéal régulier, car on peut alors prendre pour \(P_\bullet\) le complexe de Koszul associé à un homomorphisme régulier définissant l'idéal de \(B\).
+
+\subsection*{2.3}
+La structure de \(B\otimes_A C\)-algèbre définie en 2.1 sur \(\bigoplus_{i\ge0}\Tor_i^A(B,C)\) est fonctorielle en \(B\) et \(C\). On peut alors globaliser les constructions précédentes: soient \(X\) un schéma, \(X'\), \(X''\) deux \(X\)-schémas; alors on peut localement sur \(X'\times_X X''\) définir les morphismes (2.1.1), ils se recollent par fonctorialité, et définissent sur \(\bigoplus_{i\ge0}\Tor_i^{\cO_X}(\cO_{X'},\cO_{X''})\) une structure de \(\cO_{X'\times_X X''}\)-Algèbre graduée associative.
+
+\textbf{Lemme 2.4.} Soient \(X',X''\) deux \(X\)-schémas, et \(M\) un \(\cO_{X'}\)-Module plat. Alors pour tout \(i\ge0\), on a un isomorphisme canonique :
+\begin{equation}\tag{2.4.1}
+\Tor_i^{\cO_X}(M,\cO_{X''})\simeq
+M\otimes_{\cO_{X'}}\Tor_i^{\cO_X}(\cO_{X'},\cO_{X''}).
+\end{equation}
+Il suffit de définir un isomorphisme fonctoriel dans le cas affine; on pourra alors par recollement le définir globalement dans le cas général. Soient alors \(X=\Spec(A)\), \(X'=\Spec(A')\), \(X''=\Spec(A'')\); \(M\) est défini par un \(A'\)-module plat \(M\). Soit \(P_\bullet\) une résolution projective de \(A''\) sur \(A\); les \(\Tor_i^A(A',A'')\) sont les groupes d'homologie de \(A'\otimes_A P_\bullet\). Comme \(M\) est plat sur \(A'\), on a un isomorphisme canonique : \(M\otimes_{A'}\Tor_i^A(A',A'')\xrightarrow{\sim}H_i\bigl(M\otimes_{A'}(A'\otimes_A P_\bullet)\bigr)\). Par ailleurs, l'isomorphisme canonique : \(M\otimes_{A'}(A'\otimes_A P_\bullet)\xrightarrow{\sim}M\otimes_A P_\bullet\) donne un isomorphisme canonique : \(H_i\bigl(M\otimes_{A'}(A'\otimes_A P_\bullet)\bigr)\xrightarrow{\sim}\Tor_i^A(M,A'')\), d'où le résultat.
+
+\textbf{Proposition 2.5.} Soient \(X\) un schéma, \(Y\) et \(Z\) deux sous-schémas fermés de \(X\), \(T=Y\times_X Z\). On suppose que pour tout \(x\in T\), il existe un voisinage ouvert \(U\) de \(x\), et une
+%%%%%%%%%%  scan idx 445  |  folio 432  %%%%%%%%%%
+suite de sections \(f_1,\ldots,f_p,g_1,\ldots,g_r,h_1,\ldots,h_s\) de \(\cO_U\) telles que le complexe de Koszul associé à \(f_1,\ldots,f_p,g_1,\ldots,g_r\) soit une résolution de \(\cO_{Y\cap U}\), le complexe de Koszul associé à \(f_1,\ldots,f_p,h_1,\ldots,h_s\) une résolution de \(\cO_{Z\cap U}\), et le complexe de Koszul associé à \(f_1,\ldots,f_p,g_1,\ldots,g_r,h_1,\ldots,h_s\) une résolution de \(\cO_{T\cap U}\) (conditions satisfaites en particulier dans le cas noethérien si la suite \(f_1,\ldots,f_p,g_1,\ldots,g_r,h_1,\ldots,h_s\) est régulière et si \(Y=V(f_1,\ldots,f_p,g_1,\ldots,g_r)\), \(Z=V(f_1,\ldots,f_p,h_1,\ldots,h_s)\)). Soient \(I,J\) les idéaux de \(Y,Z\). On a alors les isomorphismes suivants:
+\[
+\begin{array}{ll}
+\text{i)}& \forall i\ge0,\quad
+\Tor_i^{\cO_X}(\cO_Y,\cO_Z)\xrightarrow{\sim}
+\bigwedge^i\Tor_1^{\cO_X}(\cO_Y,\cO_Z);\\[0.8ex]
+\text{ii)}&
+\Tor_1^{\cO_X}(\cO_Y,\cO_Z)\simeq
+I\cap J/I.J\simeq
+\Ker\bigl(i^*(N_{Y/X})\times j^*(N_{Z/X})\to N_{T/X}\bigr),
+\end{array}
+\]
+où on note \(i\) l'immersion de \(T\) dans \(Y\) et \(j\) l'immersion de \(T\) dans \(Z\).
+
+En particulier, pour toute immersion fermée régulière \(Y\to X\), on a
+\[
+\begin{array}{ll}
+\text{i')}& \forall i\ge0,\quad
+\Tor_i^{\cO_X}(\cO_Y,\cO_Y)\xrightarrow{\sim}
+\bigwedge^i\Tor_1^{\cO_X}(\cO_Y,\cO_Y);\\[0.8ex]
+\text{ii')}&
+\Tor_1^{\cO_X}(\cO_Y,\cO_Y)\simeq N_{Y/X}.
+\end{array}
+\]
+
+\emph{Démonstration.} i) On a vu en 2.3 que \(\bigoplus_{i\ge0}\Tor_i^{\cO_X}(\cO_Y,\cO_Z)\) pouvait être muni d'une structure de \(\cO_T\)-Algèbre; d'après 2.2, cette algèbre est alternée, car l'immersion de \(Y\) (ou \(Z\)) dans \(X\) est régulière. Il existe donc un homomorphisme d'algèbres et un seul:
+\begin{equation}\tag{2.5.1}
+\bigwedge \Tor_1^{\cO_X}(\cO_Y,\cO_Z)\longrightarrow
+\bigoplus_{i\ge0}\Tor_i^{\cO_X}(\cO_Y,\cO_Z),
+\end{equation}
+prolongeant l'identité en degré \(1\).
+
+Pour voir que c'est un isomorphisme, on peut le voir localement. On se place donc au voisinage d'un point de \(T\), et on considère des sections \(f_1,\ldots,f_p,g_1,\ldots,g_r,h_1,\ldots,h_s\) de \(\cO_X\) dans ce voisinage, ayant les propriétés indiquées dans l'énoncé de 2.5. Posons alors \(E=(\cO_X)^p\), \(E'=(\cO_X)^r\), et soient \(u:E\to\cO_X\) l'homomorphisme défini par les \(f_i\), \(v:E'\to\cO_X\) l'homomorphisme défini par les \(g_j\), \(K_\bullet(u)\) et \(K_\bullet(v)\) les
+%%%%%%%%%%  scan idx 446  |  folio 433  %%%%%%%%%%
+complexes de Koszul associés. Le complexe de Koszul associé à la suite \(f_1,\ldots,f_p,g_1,\ldots,g_r\) est isomorphe au complexe produit tensoriel \(K_\bullet(u)\otimes_{\cO_X}K_\bullet(v)\). Comme c'est une résolution de \(\cO_Y\) par des \(\cO_X\)-Modules libres de type fini, les \(\Tor_i^{\cO_X}(\cO_Y,\cO_Z)\) sont les faisceaux d'homologie du complexe \(K_\bullet(u)\otimes_{\cO_X}K_\bullet(v)\otimes_{\cO_X}\cO_Z\). On peut le considérer comme le produit tensoriel des complexes \(K_\bullet(u)\) et \(K_\bullet(v)\otimes_{\cO_X}\cO_Z\), et utiliser pour calculer son homologie les suites spectrales associées à un bicomplexe (EGA \(0_{\mathrm{III}}\) (11.3.5)), qui ont comme aboutissement l'homologie du complexe simple associé.
+
+On considère la suite spectrale telle que \({}'E^2_{pq}=H^I_p\bigl(H^{II}_q(K_{\bullet,\bullet})\bigr)\), avec les notations de EGA \(0_{\mathrm{III}}\) (11.3.5), le premier indice étant relatif au complexe \(K_\bullet(u)\) et le second au complexe \(K_\bullet(v)\otimes_{\cO_X}\cO_Z\). Or le complexe \(K_\bullet(v)\otimes_{\cO_X}\cO_Z\) est le complexe de Koszul sur \(\cO_Z\) associé à la suite de sections \(\overline g_1,\ldots,\overline g_r\), où les \(\overline g_i\) sont les images des \(g_i\) dans \(\cO_Z\), et ce complexe est une résolution de \(\cO_T\) sur \(\cO_Z\) car les immersions \(Z\to X\) et \(T\to Z\to X\) sont régulières (cf. démonstration de 1.7 ii). Comme \(\bigwedge^p E\) est libre sur \(\cO_X\), le complexe \(\bigwedge^pE\otimes_{\cO_X}(K_\bullet(v)\otimes_{\cO_X}\cO_Z)\) est une résolution de \(\bigwedge^pE\otimes_{\cO_X}\cO_T\). Par conséquent la suite spectrale dégénère, et les \(\Tor_i^{\cO_X}(\cO_Y,\cO_Z)\) sont les faisceaux d'homologie du complexe \(K_\bullet(u)\otimes_{\cO_X}\cO_T\). Or la différentielle de \(K_\bullet(u)\) s'exprime en termes des \(f_i\), qui annulent \(\cO_T\); par suite, la différentielle de \(K_\bullet(u)\otimes_{\cO_X}\cO_T\) est nulle, et on obtient donc les isomorphismes:
+\begin{equation}\tag{2.5.2}
+\Tor_i^{\cO_X}(\cO_Y,\cO_Z)
+\xrightarrow{\sim}
+\cO_T\otimes_{\cO_X}\bigwedge^iE
+\xrightarrow{\sim}
+\bigwedge^i(\cO_T)^p.
+\end{equation}
+En particulier, on trouve pour \(i=1\):
+\[
+\Tor_1^{\cO_X}(\cO_Y,\cO_Z)\xrightarrow{\sim}(\cO_T)^p,
+\]
+d'où pour tout \(i\):
+\begin{equation}\tag{2.5.3}
+\Tor_i^{\cO_X}(\cO_Y,\cO_Z)
+\xrightarrow{\sim}
+\bigwedge^i\Tor_1^{\cO_X}(\cO_Y,\cO_Z).
+\end{equation}
+
+%%%%%%%%%%  scan idx 447  |  folio 434  %%%%%%%%%%
+Or il
+résulte de 2.2 que l'isomorphisme
+\[
+\bigwedge(\cO_T)^n\xrightarrow{\sim}
+\bigoplus_{i\ge0}\Tor_i^{\cO_X}(\cO_Y,\cO_Z)
+\]
+défini par les isomorphismes (2.5.2) est compatible aux structures d'algèbres des deux membres; il en est donc de même pour l'isomorphisme
+\[
+\bigwedge\Tor_1^{\cO_X}(\cO_Y,\cO_Z)\xrightarrow{\sim}
+\bigoplus_{i\ge0}\Tor_i^{\cO_X}(\cO_Y,\cO_Z)
+\]
+défini par les isomorphismes (2.5.3). Pour des raisons d'unicité, ce dernier est donc la restriction de l'homomorphisme (2.5.1) qui avait été défini globalement. L'homomorphisme (2.5.1) est donc un isomorphisme.
+
+ii) On considère la suite exacte:
+\[
+0\longrightarrow I\longrightarrow \cO_X\longrightarrow \cO_Y\longrightarrow0,
+\]
+et la suite exacte des Tor qui en résulte:
+\[
+0\longrightarrow\Tor_1^{\cO_X}(\cO_Y,\cO_Z)
+\longrightarrow I\otimes_{\cO_X}\cO_Z
+\longrightarrow \cO_Z.
+\]
+Il en résulte que \(\Tor_1^{\cO_X}(\cO_Y,\cO_Z)\) est le noyau de l'homomorphisme :
+\[
+I\otimes_{\cO_X}(\cO_X/J)\longrightarrow \cO_X/J,
+\]
+c'est-à-dire \(I\cap J/I.J\).
+
+Pour montrer la dernière relation, nous allons montrer qu'il existe une suite exacte:
+\[
+0\longrightarrow I\cap J/I.J
+\longrightarrow i^*(N_{Y/X})\times j^*(N_{Z/X})
+\longrightarrow N_{T/X}\longrightarrow0.
+\]
+Les homomorphismes \(i^*(N_{Y/X})\to N_{T/X}\) et \(j^*(N_{Z/X})\to N_{T/X}\) ont été définis en (1.6.1); on prend ici leur différence. Par ailleurs, \(I\cap J\) s'envoie de façon naturelle dans \(I/I^2\), donc dans \(i^*(I/I^2)\), et de même dans \(j^*(J/J^2)\), et ces homomorphismes s'annulent sur \(I.J\), car \(I,J\subset K\) (où \(K\) désigne l'idéal de \(T\)) ce qui définit la flèche de gauche.
+
+%%%%%%%%%%  scan idx 448  |  folio 435  %%%%%%%%%%
+Pour vérifier que la suite est exacte, on peut le faire localement sur \(T\), et utiliser les sections définies dans l'énoncé de 2.5. On a alors une base de \(N_{T/X}\) formée des images des \(f_i,g_j,h_k\), une base de \(i^*(N_{Y/X})\) formée des images des \(f_i,g_j\), et une base de \(j^*(N_{Z/X})\) formée des images des \(f_i,h_k\). Il est alors clair que \(i^*(N_{Y/X})\times j^*(N_{Z/X})\to N_{T/X}\) est surjectif, et que son noyau est formé des éléments ayant des coordonnées nulles sur les \((\overline g_j,0)\) et les \((0,\overline h_k)\), et des coordonnées égales pour tout \(i\) sur \((\overline f_i,0)\) et \((0,\overline f_i)\). Par suite, la suite est également exacte au milieu. Or les trois \(\cO_T\)-Modules intervenant sont localement libres de type fini; comme \(\Tor_1^{\cO_X}(\cO_Y,\cO_Z)\) est de rang \(p\) d'après la démonstration du i), on voit immédiatement que la suite est exacte.
+
+\subsection*{2.6}
+On suppose maintenant que \(X\) est un schéma ayant un faisceau ample. Tout sous-schéma fermé \(Y\) de \(X\) a alors un faisceau ample. On sait que dans ce cas ``il existe des résolutions globales'', et que les \(K^\circ\) formés respectivement avec les faisceaux localement libres de type fini et les complexes parfaits sont identiques (II, 2.2.9). Si en outre l'immersion \(i:Y\to X\) est régulière, c'est un morphisme parfait, et on peut définir un homomorphisme additif \(i_*:K^\circ(Y)\longrightarrow K^\circ(X)\) (IV 2.12), en associant à la classe d'un complexe parfait \(L^\bullet\) la classe du complexe \(Ri_*(L^\bullet)=i_*(L^\bullet)\) (\(i_*\) étant un foncteur exact).
+
+\textbf{Proposition 2.7.} Soient \(X\) un schéma ayant un faisceau ample, \(i:Y\to X\) une immersion fermée régulière, \(N\) le faisceau conormal de \(Y\) dans \(X\). Alors, pour tout \(x\in K^\circ(Y)\), on a la relation:
+\begin{equation}\tag{2.7.1}
+i^*(i_*(x))=x.\lambda_{-1}(N),
+\end{equation}
+où \(N\) est la classe de \(N\) dans \(K^\circ(Y)\), et \(\lambda_{-1}(N)=\sum_{i\ge0}(-1)^i\lambda^i(N)\).
+
+\emph{Démonstration.}
+%%%%%%%%%%  scan idx 449  |  folio 436  %%%%%%%%%%

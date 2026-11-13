@@ -1,0 +1,20 @@
+% from main.tex
+%%%%%%%%%%  scan idx 127  |  folio 114  %%%%%%%%%%
+où les
+flèches horizontales sont des épimorphismes et \(G'\in\Ob\mathcal C_0\). Comme \(\Ker(f)\) est quotient de \(\Ker(fp)\), il suffit de démontrer que \(\Ker(fp)\) est de type fini, donc on peut supposer que \(H'=G'\). Les flèches \(F\to G\) et \(H'\to G\) définissent \(g:F\oplus H'\to G\). Posant \(K=\Ker(G\to H)\), on a donc un diagramme commutatif, où les lignes sont exactes et \(q\) est un épimorphisme :
+\[
+\begin{tikzcd}
+0\arrow[r]&F\arrow[r]\arrow[d,"q"']&F\oplus H'\arrow[r]\arrow[d,"g"]&H'\arrow[r]\arrow[d,"f"]&0\\
+0\arrow[r]&K\arrow[r]&G\arrow[r]&H\arrow[r]&0 .
+\end{tikzcd}
+\]
+Le diagramme du serpent montre que \(\Ker(g)\to\Ker(f)\) est un épimorphisme. Mais, comme \(F\oplus H'\) est de type fini et \(G\) précohérent, \(\Ker(g)\) est de type fini d'après a), et l'on gagne.
+
+c) Prouvons d'abord l'assertion non respée. À un changement de notation près, il s'agit de montrer que si \(g:G'\to G\) est un morphisme de \(\mathcal C_S\) avec \(G'\in\Ob\mathcal C_0\), \(\Ker(g)\) est de type fini. Notant \(H'\) l'image de la flèche composée \(G'\to H\), on a un diagramme commutatif dont les lignes sont exactes
+\[
+\begin{tikzcd}
+0\arrow[r]&F'\arrow[r]\arrow[d,"f"']&G'\arrow[r]\arrow[d,"g"]&H'\arrow[r]\arrow[d,"h"]&0\\
+0\arrow[r]&F\arrow[r]&G\arrow[r]&H\arrow[r]&0 .
+\end{tikzcd}
+\]
+Comme \(h\) est un monomorphisme, le diagramme du serpent donne un isomorphisme \(\Ker(f)\qis\Ker(g)\). Mais \(F'\) est de type fini d'après a), donc (à nouveau grâce à a)) \(\Ker(f)\) est de type fini, ce qui prouve l'assertion non respée. Passons à l'assertion respée (en toute rigueur on ne peut invoquer (2.5 b)) car on ne suppose pas que \(\mathcal C_0\) est localement quasi-stable par noyau d'épimorphisme). Quitte à localiser, il existe des épimorphismes \(F'\xrightarrow{u}F\), \(H'\xrightarrow{v}H\),

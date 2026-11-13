@@ -1,0 +1,599 @@
+[
+ {
+  "page": 676,
+  "where": "page start (first line under the running head '- 10 -')",
+  "scan": "The page begins 'résolu de façon satisfaisante la question soulevée au n° 1.' (both scans).",
+  "tex": "page_676.tex begins 'façon satisfaisante'; 'résolu de' ended page_675.tex ('... une fois résolu de').",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 676 really begins at 'résolu de'. ALREADY DONE: main.tex (both layers, 13 Nov 17:11) now has '... une fois', the folio-676 marker, 'résolu de', 'façon satisfaisante' (the move reported in findings_671_675.json, p. 675 end). Nothing to apply; do not run move_marker.py for 676 again."
+ },
+ {
+  "page": 676,
+  "where": "first line, 'la question soulevée au n° 1.'",
+  "scan": "n° 1: n with the raised degree ring (both scans).",
+  "tex": "au no 1.",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "au no 1.",
+   "new": "au n\\textsuperscript{o} 1."
+  },
+  "note": "As the n° fixes of pp. 671-675 (findings_671_675.json). Second reading (Codex fr_r1, 5 Aug): n\\textsuperscript{o}~1: the print agrees with it."
+ },
+ {
+  "page": 676,
+  "where": "throughout pp. 676-680: the ten phi",
+  "scan": "the typed slashed o ø (straight phi) at all ten places: p. 676 'le noyau de ø^i', 'que ø^2', '(Que ø^1', 'le fait que ø^2'; p. 677 'l'homomorphisme ø n'est pas'; p. 678 'l'homomorphisme ø : A(X)->Gr_top(X)'; p. 680 display 'ø : A(G)->Gr_top(G)', 'd'un ø non bijectif', 'pas par ø, donc', 'pas par ø lorsque' (both scans; crops_676_680/m676_phi.png, w678_phi.png)",
+  "tex": "\\varphi at all ten places",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the transcription, already reported for Exposé XIV in findings_671_675.json (p. 671 entry: one replacement \\varphi -> \\phi over the exposé); pp. 676-680 print the same letter. Three examples: p. 676 '\\varphi^i:A^i(X)', p. 678 '\\varphi:A(X)', p. 680 'd'un $\\varphi$ non bijectif'. Second reading (Codex fr_r1, 5 Aug): also \\varphi."
+ },
+ {
+  "page": 676,
+  "where": "every cℓ of pp. 676 and 679 (the typed cl of (4.7), p. 677, is right)",
+  "scan": "cℓ with the hand-drawn script ℓ (the ℓ of ℓ-adique): p. 676 'multiple entier de cℓ(Y):', the display 'c_i(Y) = n(Y) cℓ(Y) .', 'lorsque cℓ(Y)'; p. 679 'cℓ˙(Y)', 'cℓ˙(Y')', 'cℓ˙(L)'. On p. 677 (4.7) the print types 'cl(Y)' with a typed l (both scans; crops_676_680/m676_cl.png, m677_cl.png, m679_clY.png)",
+  "tex": "\\cl (= \\operatorname{cl}, upright cl) at all seven places",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the transcription, reported once (as for pp. 579-580, findings_576_580.json): \\cl prints an upright cl. Suggested: \\operatorname{c\\ell} at the six cℓ places (p. 676: 'multiple entier de $\\cl(Y)$:', 'n(Y)\\cl(Y).', 'lorsque $\\cl(Y)$'; p. 679: the three \\cl of the entries below), keeping \\cl in (4.7). No blanket change of the macro: the typescript also types cl."
+ },
+ {
+  "page": 676,
+  "where": "'alors deg(Y.ξ^i)>0' (polarisation argument)",
+  "scan": "deg(Y.ξ^i)>0, exponent i (both scans; crops_676_680/m676_Yxi.png)",
+  "tex": "\\deg(Y\\cdot\\xi^i)>0",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "\\deg(Y\\cdot\\xi^{\\dim Y})>0",
+  "note": "Y has codimension i (cl(Y) in A^i(X)); Y.ξ^k is a 0-cycle, with a degree, only for k = dim Y. The TeX keeps the printed reading. Codex's claim on this place (SGA-SRC-001450) was rejected in RECONCILE_CODEX_6 as inference; the scan confirms the printed ξ^i. Second reading (Codex fr_r1, 5 Aug): \\xi^{\\dim Y} (silent correction)."
+ },
+ {
+  "page": 676,
+  "where": "'le noyau de ø^i : A^i(X) -> Gr^i_top(X) est annulé par (i-1)!'",
+  "scan": "the map stands in the running text: 'le noyau de ø^i : A^i(X)->Gr^i_top(X) est annulé par (i-1)! , et en particulier' is one line (both scans)",
+  "tex": "a display \\[ \\varphi^i:A^i(X)\\longrightarrow \\Gtop^i(X) \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "le noyau de\n\\[\n \\varphi^i:A^i(X)\\longrightarrow \\Gtop^i(X)\n\\]\nest annulé",
+   "new": "le noyau de $\\varphi^i:A^i(X)\\longrightarrow \\Gtop^i(X)$ est annulé"
+  },
+  "note": "The print sets the map inline; the TeX makes it a display (same kind of fix as SGA 6 p. 21, applied). Apply before an exposé-wide \\varphi -> \\phi replacement (its 'old' contains \\varphi). Second reading (Codex fr_r1, 5 Aug): also a display (the print agrees with neither)."
+ },
+ {
+  "page": 676,
+  "where": "end of 4.3, 'dans [9, n°4, 3°]'",
+  "scan": "[9 , n°4, 3°] with raised degree rings after n and after 3 (both scans)",
+  "tex": "[9, no 4, 3o]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "[9, no 4, 3o]",
+   "new": "[9, n\\textsuperscript{o}~4, 3\\textsuperscript{o}]"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): [9, n\\textsuperscript{o}~4, 3\\textsuperscript{o}]: the print agrees with it."
+ },
+ {
+  "page": 676,
+  "where": "4.4, 'pour une immersion fermée f: Y   X'",
+  "scan": "f: Y, an empty space, X: no arrow and no trace of ink between Y and X, while the other hand-drawn arrows of the page are complete (main scan and witness; crops_676_680/m676_fYX.png, w687_small.png)",
+  "tex": "immersion fermée $f:Y\\to X$ de (arrow silently supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "immersion fermée $f:Y\\to X$ de",
+   "new": "immersion fermée $f:Y\\qquad X$ de"
+  },
+  "corrected": "immersion fermée $f:Y\\to X$ de",
+  "note": "The hand-drawn arrow was never drawn; the TeX silently supplies it. The fix restores the printed reading (as SGA 7 I p. 193 (3.4.5)). Second reading (Codex fr_r1, 5 Aug): has the arrow (silent correction)."
+ },
+ {
+  "page": 676,
+  "where": "(4.6), 'f^*f_*(y) = y c_d(N)'",
+  "scan": "N underlined (N̲), both scans",
+  "tex": "y\\,c_d(N),",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "y\\,c_d(N),",
+   "new": "y\\,c_d(\\underline{N}),"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): c_d(\\underline N): the print agrees with it. Same N̲ in the next line and in (4.7), p. 677."
+ },
+ {
+  "page": 676,
+  "where": "after (4.6), 'formule valable dans Gr˙_top(X), y étant dans Gr˙_top(Y)'",
+  "scan": "Gr˙_top(X) (both scans)",
+  "tex": "formule valable dans $\\Gtop^\\bullet(X)$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "formule valable dans $\\Gtop^\\bullet(Y)$",
+  "note": "f^*f_*(y) and y c_d(N) lie in Gr_top(Y) (f: Y -> X, y in Gr_top(Y)); the next page speaks of 'la même formule dans A(Y)'. The TeX keeps the printed reading. Second reading (Codex fr_r1, 5 Aug): \\operatorname{Gr}'_{\\mathrm{top}}(Y) (silent correction)."
+ },
+ {
+  "page": 676,
+  "where": "last line, 'N le faisceau conormal'",
+  "scan": "N underlined (N̲), both scans",
+  "tex": "$N$ le faisceau conormal",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$N$ le faisceau conormal",
+   "new": "$\\underline{N}$ le faisceau conormal"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): \\underline N: the print agrees with it."
+ },
+ {
+  "page": 677,
+  "where": "page start (first line under the running head '- 11 -')",
+  "scan": "The page begins 'de Y dans X , supposé partout de rang d .' (both scans).",
+  "tex": "page_677.tex begins 'dans $X$, supposé'; 'de $Y$' ends page_676.tex ('$N$ le faisceau conormal de $Y$').",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 677 really begins at 'de $Y$'. Exact fix: python -I move_marker.py 6 677 'de $Y$' --before (the marker then stands between 'le faisceau conormal' and 'de $Y$', in both layers; checked by a read-only simulation on the 17:11 main.tex). The split falls inside a TeX line, so the 10 Nov script did not move it."
+ },
+ {
+  "page": 677,
+  "where": "'mais seulement modulo torsion.'",
+  "scan": "'modulo torsion' underlined (both scans)",
+  "tex": "seulement modulo torsion.",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "mais seulement modulo torsion.",
+   "new": "mais seulement \\emph{modulo torsion}."
+  },
+  "note": "The exposé writes the underline \\emph (pp. 676, 678, 679). Second reading (Codex fr_r1, 5 Aug): plain too (the print agrees with neither)."
+ },
+ {
+  "page": 677,
+  "where": "footnote area",
+  "scan": "two marks, '(*)' above and '(**)' below, with the one text 'cf. note de la page 23.' typed between them (in the later typeface of the inserted references); the text has only the call (*) after 'à l'heure actuelle', no call (**) anywhere on the page (both scans; crops_676_680/m677_foot.png, w688_small.png)",
+  "tex": "\\footnote{cf. note de la page 23.} only; no (**)",
+  "kind": "missing",
+  "confidence": "low",
+  "fix": {
+   "old": "actuelle\\footnote{cf. note de la page 23.}",
+   "new": "actuelle\\footnote{cf. note de la page 23.\\newline (**)}"
+  },
+  "note": "The printed orphan mark (**) is lost. The fix keeps it as text after the note, in reading order; the coordinator may prefer another form. Second reading (Codex fr_r1, 5 Aug): no (**) either."
+ },
+ {
+  "page": 677,
+  "where": "(4.7), 'f^*(cl(Y)) = c_d(N)'",
+  "scan": "N underlined (N̲), both scans; cl typed here (\\cl right)",
+  "tex": "=c_d(N),",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "=c_d(N),",
+   "new": "=c_d(\\underline{N}),"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): c_d(\\underline N): the print agrees with it."
+ },
+ {
+  "page": 677,
+  "where": "'même si k est le corps des complexes ! On se heurte'",
+  "scan": "'On se heurte à un problème analogue' begins a new, indented paragraph (both scans)",
+  "tex": "runs on in the same paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "complexes ! On se heurte",
+   "new": "complexes !\n\nOn se heurte"
+  },
+  "note": "Missing paragraph break. Second reading (Codex fr_r1, 5 Aug): runs on too."
+ },
+ {
+  "page": 677,
+  "where": "Dans le cas où K˙(X) est engendré comme algébre sur Z",
+  "scan": "algébre, with an acute accent (both scans; crops_676_680/m677_alg.png)",
+  "tex": "comme algébre sur",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "comme algèbre sur",
+  "note": "Typing error (wrong accent). The TeX keeps the printed reading. Second reading (Codex fr_r1, 5 Aug): algèbre (silent correction)."
+ },
+ {
+  "page": 677,
+  "where": "end of page_677.tex: the blank line before 'Or' (first line of p. 678)",
+  "scan": "p. 678 begins 'Or prenons pour X une variété de drapeaux' at the left margin, not indented, whereas every new paragraph of pp. 676-677 is indented ('La validité', 'On se heurte', 'Signalons'): the paragraph of p. 677 runs on (both scans)",
+  "tex": "a blank line, so 'Or' starts a new paragraph",
+  "kind": "other",
+  "confidence": "low",
+  "fix": {
+   "old": "la composante de degré $1$ de $\\Gtop^\\bullet(X)$.\n\n",
+   "new": "la composante de degré $1$ de $\\Gtop^\\bullet(X)$.\n"
+  },
+  "note": "Extra paragraph break (low: the break falls at the turn of the page). The 'old' works before and after the folio-678 marker move. Second reading (Codex fr_r1, 5 Aug): also a new paragraph."
+ },
+ {
+  "page": 678,
+  "where": "page start (first line under the running head '- 12 -')",
+  "scan": "The page begins 'Or prenons pour X une variété de drapeaux' (both scans).",
+  "tex": "page_678.tex begins 'prenons pour $X$'; 'Or' is the last line of page_677.tex.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 678 really begins at 'Or'. Exact fix: python -I move_marker.py 6 678 'Or' --before (the line starts with the anchor, so the marker gets its own line before 'Or', in both layers; checked by a read-only simulation on the 17:11 main.tex). The paragraph break before 'Or' is a separate entry (p. 677)."
+ },
+ {
+  "page": 678,
+  "where": "throughout pp. 678 and 680: H^* and H^{2*}(G, Z_ℓ(*))",
+  "scan": "the typewriter asterisk (the six-armed star of f^*, f_*) in every degree and twist: p. 678 (**) 'A(X) -> H^*(X(C),Z)'; p. 680 (4.9) 'H^{2*}(G,Z_ℓ(*))' (both stars), (4.10) 'A(G) -> H^*(G(C),Z)', the display 'A(G/B) = H^*(G/B(C),Z) -> H^*(G(C),Z)' (both scans; crops_676_680/w678_H.png, m680_49.png, w680_49.png, m680_410.png, m680_disp.png)",
+  "tex": "\\bullet at all six places: p. 678 'A(X)\\longrightarrow H^\\bullet(X(\\C),\\Z),'; p. 680 'H^{2\\bullet}(G,\\Zell(\\bullet))', 'A(G)\\longrightarrow H^\\bullet(G(\\C),\\Z),', 'A(G/B)\\simeq H^\\bullet(G/B(\\C),\\Z)\\longrightarrow H^\\bullet(G(\\C),\\Z).'",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, already reported for Exposé XIV in findings_671_675.json (p. 673: H^{2\\bullet} -> H^{2*}, twist (\\bullet) -> (*)) and findings_681_685.json (p. 681: also H^\\bullet -> H^*); these six places fall under it. Three examples: p. 678 'H^\\bullet(X(\\C),\\Z)', p. 680 'H^{2\\bullet}(G,\\Zell(\\bullet))', p. 680 'H^\\bullet(G/B(\\C),\\Z)'. Second reading (Codex fr_r1, 5 Aug): H^*, H^{2*}, (*) at all six: the print agrees with it."
+ },
+ {
+  "page": 678,
+  "where": "'il a été prouvé par L. HODGKIN [12]'",
+  "scan": "HODGKIN in capitals (both scans; crops_676_680/w678_hodgkin.png)",
+  "tex": "par L. Hodgkin [12]",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "par L. Hodgkin [12]",
+   "new": "par L. HODGKIN [12]"
+  },
+  "note": "As 'P. JOUANOLOU' (pp. 671, 675). Again on p. 679. Second reading (Codex fr_r1, 5 Aug): L. Hodgkin here (the print agrees with neither)."
+ },
+ {
+  "page": 678,
+  "where": "'donc grâce à 4.2 l'homomorphisme ø : A(X) -> Gr˙_top(X) est un isomorphisme.'",
+  "scan": "the map stands in the running text: 'momorphisme ø : A(X)->Gr_top(X) est un isomorphisme. De ces faits il résulte' is one line (both scans; crops_676_680/w678_phi.png)",
+  "tex": "a display \\[ \\varphi:A(X)\\longrightarrow\\Gtop^\\bullet(X) \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "4.2 l'homomorphisme\n\\[\n \\varphi:A(X)\\longrightarrow\\Gtop^\\bullet(X)\n\\]\nest un isomorphisme.",
+   "new": "4.2 l'homomorphisme $\\varphi:A(X)\\longrightarrow\\Gtop^\\bullet(X)$ est un isomorphisme."
+  },
+  "note": "The print sets the map inline. Apply before an exposé-wide \\varphi -> \\phi replacement (its 'old' contains \\varphi). Second reading (Codex fr_r1, 5 Aug): also a display."
+ },
+ {
+  "page": 678,
+  "where": "'la cohomologie entière de X(C) est engendré par les éléments de degré 2'",
+  "scan": "engendré, without the feminine e (both scans; crops_676_680/w678_engendre.png)",
+  "tex": "est engendré par les éléments de degré $2$",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "est engendrée par les éléments de degré $2$",
+  "note": "Agreement slip (la cohomologie). The TeX keeps the printed reading. Second reading (Codex fr_r1, 5 Aug): engendrée (silent correction)."
+ },
+ {
+  "page": 678,
+  "where": "'un produit de groupes Sℓ(n) et Sp(m)'",
+  "scan": "Sℓ with the hand-drawn script ℓ (both scans; crops_676_680/w678_Sl.png)",
+  "tex": "\\operatorname{Sl}(n)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "groupes $\\operatorname{Sl}(n)$ et $\\operatorname{Sp}(m)$. Il suffit",
+   "new": "groupes $\\operatorname{S\\ell}(n)$ et $\\operatorname{Sp}(m)$. Il suffit"
+  },
+  "note": "The file writes \\operatorname{S\\ell} elsewhere (5 times). Again on p. 680. Second reading (Codex fr_r1, 5 Aug): Sl (the print agrees with neither)."
+ },
+ {
+  "page": 678,
+  "where": "4.6, 'le \"bon\" anneau est l'anneau sans torsion A(X) = Gr˙_top(X), ayant comme base'",
+  "scan": "A(X) ≃ Gr˙_top(X) in the running text: 'anneau est l'anneau sans torsion A(X)≃Gr_top(X), ayant comme base les cel-' is one line (both scans; crops_676_680/w678_simeq.png)",
+  "tex": "a display \\[ A(X)\\simeq\\Gtop^\\bullet(X), \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "sans torsion\n\\[\n A(X)\\simeq\\Gtop^\\bullet(X),\n\\]\nayant comme",
+   "new": "sans torsion $A(X)\\simeq\\Gtop^\\bullet(X)$, ayant comme"
+  },
+  "note": "The print sets the isomorphism inline. Second reading (Codex fr_r1, 5 Aug): also a display."
+ },
+ {
+  "page": 678,
+  "where": "'l'anneau Gr˙(X) apparait comme'",
+  "scan": "apparait, without circumflex (both scans; crops_676_680/w678_appar.png)",
+  "tex": "apparait comme",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": null,
+  "corrected": "apparaît comme",
+  "note": "Typing slip (the typist types circumflexes elsewhere: même, grâce, hâtivement). The TeX keeps the printed reading. Second reading (Codex fr_r1, 5 Aug): apparaît (silent correction)."
+ },
+ {
+  "page": 679,
+  "where": "first paragraph, 'que Gr˙(X) à un caractère covariant'",
+  "scan": "à with a grave accent (both scans; crops_676_680/m679_a.png)",
+  "tex": "$\\operatorname{Gr}^\\bullet(X)$ à un caractère",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "$\\operatorname{Gr}^\\bullet(X)$ a un caractère",
+  "note": "Typing error: the verb avoir. The TeX keeps the printed reading. Second reading (Codex fr_r1, 5 Aug): a (silent correction)."
+ },
+ {
+  "page": 679,
+  "where": "'tel que cℓ˙(Y)∈K˙(X) ne soit pas dans Filt^i(X)'",
+  "scan": "cℓ with the raised typed dot, the same dot as in K˙(X) (both scans; crops_676_680/m679_clY.png, w690_small.png)",
+  "tex": "\\cl^i(Y)\\in K^\\bullet(X)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cl^i(Y)\\in K^\\bullet(X)",
+   "new": "\\cl^\\bullet(Y)\\in K^\\bullet(X)"
+  },
+  "note": "Written \\bullet like the raised dot of K and Gr (as p. 673, cl^i(O_Y) -> \\cl^\\bullet). This settles SGA-SRC-001452 (left to the scan check): the print has cℓ˙(Y), neither cl^i nor cl'. Second reading (Codex fr_r1, 5 Aug): \\cl'(Y) (its prime is the raised dot)."
+ },
+ {
+  "page": 679,
+  "where": "'ne soit pas dans Filt^i(X), où i = codim(Y,X)'",
+  "scan": "Filt (both scans)",
+  "tex": "$\\Fil^i(X)$ (\\Fil is \\operatorname{Fil}: prints Fil)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "pas dans $\\Fil^i(X)$, où",
+   "new": "pas dans $\\operatorname{Filt}^i(X)$, où"
+  },
+  "note": "The print types Filt; as the Filt fixes of pp. 15, 16 and 673 (\\Filt is not usable, findings_671_675.json). One of seven Filt entries on this page."
+ },
+ {
+  "page": 679,
+  "where": "'de sorte que Filt^{i+1}(X) = Filt^{i+1}_top(X)'",
+  "scan": "Filt, twice (both scans)",
+  "tex": "$\\Fil^{i+1}(X)=\\Fil_{\\mathrm{top}}^{i+1}(X)$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "$\\Fil^{i+1}(X)=\\Fil_{\\mathrm{top}}^{i+1}(X)$. Si",
+   "new": "$\\operatorname{Filt}^{i+1}(X)=\\operatorname{Filt}_{\\mathrm{top}}^{i+1}(X)$. Si"
+  },
+  "note": "As above."
+ },
+ {
+  "page": 679,
+  "where": "'on en conclut que cℓ˙(Y')∈K˙(X')'",
+  "scan": "cℓ with the raised dot (both scans; crops_676_680/m679_clYp.png)",
+  "tex": "\\cl(Y')\\in K^\\bullet(X')",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cl(Y')\\in K^\\bullet(X')",
+   "new": "\\cl^\\bullet(Y')\\in K^\\bullet(X')"
+  },
+  "note": "The dot is missing in the TeX. Second reading (Codex fr_r1, 5 Aug): \\cl'(Y')."
+ },
+ {
+  "page": 679,
+  "where": "'n'est pas dans Filt^i(X') (compte tenu'",
+  "scan": "Filt (both scans)",
+  "tex": "$\\Fil^i(X')$",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "pas dans $\\Fil^i(X')$ (compte",
+   "new": "pas dans $\\operatorname{Filt}^i(X')$ (compte"
+  },
+  "note": "As above."
+ },
+ {
+  "page": 679,
+  "where": "'son noyau est Im(K(Z)->K(X)) ⊂ Filt^{i+1}_top(X) = Filt^{i+1}_top(X) ).'",
+  "scan": "Filt, twice (both scans; crops_676_680/m679_filt.png)",
+  "tex": "\\subset\\Fil_{\\mathrm{top}}^{i+1}(X)=\\Fil_{\\mathrm{top}}^{i+1}(X)$)",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subset\\Fil_{\\mathrm{top}}^{i+1}(X)=\\Fil_{\\mathrm{top}}^{i+1}(X)$)",
+   "new": "\\subset\\operatorname{Filt}_{\\mathrm{top}}^{i+1}(X)=\\operatorname{Filt}_{\\mathrm{top}}^{i+1}(X)$)"
+  },
+  "note": "As above; apply before the misprint entry that follows (its 'tex' is the text after this fix)."
+ },
+ {
+  "page": 679,
+  "where": "same place: '= Filt^{i+1}_top(X) )'",
+  "scan": "the second Filt also carries the index top (both scans; crops_676_680/m679_filt.png, w690_small.png)",
+  "tex": "=\\operatorname{Filt}_{\\mathrm{top}}^{i+1}(X)$).",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "=\\operatorname{Filt}^{i+1}(X)$).",
+  "note": "Z, the singular set of Y, has codimension > i, so the kernel lies in Filt^{i+1}_top(X), which equals Filt^{i+1}(X) by the choice of Y one sentence earlier; the printed equality of Filt_top with itself says nothing. The TeX keeps the printed reading (the 'tex' is the text after the previous fix; before it: =\\Fil_{\\mathrm{top}}^{i+1}(X)$).). The print reads Im(K(Z)->K(X)) as our TeX does. Second reading (Codex fr_r1, 5 Aug): \\Filt^{i+1}(X) (silent correction) and K'(Z)->K'(X) (SGA-SRC-001453; the print has plain K)."
+ },
+ {
+  "page": 679,
+  "where": "'puisque f_*(1) n'est pas dans Filt^i(X').'",
+  "scan": "Filt (both scans)",
+  "tex": "$\\Fil^i(X')$.",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "pas dans $\\Fil^i(X')$.",
+   "new": "pas dans $\\operatorname{Filt}^i(X')$."
+  },
+  "note": "As above."
+ },
+ {
+  "page": 679,
+  "where": "4.7, 'le théorème de HODGKIN cité'",
+  "scan": "HODGKIN in capitals (both scans)",
+  "tex": "théorème de Hodgkin cité",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "théorème de Hodgkin cité",
+   "new": "théorème de HODGKIN cité"
+  },
+  "note": "As p. 678. Second reading (Codex fr_r1, 5 Aug): HODGKIN: the print agrees with it."
+ },
+ {
+  "page": 679,
+  "where": "'l'idéal engendré par les cℓ˙(L) - 1'",
+  "scan": "cℓ with the raised dot (not a prime), and L underlined (both scans; crops_676_680/m679_clL.png)",
+  "tex": "\\cl'(L)-1",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\cl'(L)-1",
+   "new": "\\cl^\\bullet(\\underline{L})-1"
+  },
+  "note": "Prime for the raised dot, and the underline of L lost (both in one edit). Second reading (Codex fr_r1, 5 Aug): \\cl'(\\underline L): the print agrees with it on the underline."
+ },
+ {
+  "page": 679,
+  "where": "'où L parcourt les Modules inversibles'",
+  "scan": "L underlined (both scans)",
+  "tex": "où $L$ parcourt",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "où $L$ parcourt",
+   "new": "où $\\underline{L}$ parcourt"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): \\underline L: the print agrees with it."
+ },
+ {
+  "page": 679,
+  "where": "'associés aux représentations B -> G_m (qui donnent'",
+  "scan": "G_m with a typed G, underlined (G̲_m), not double-struck (both scans; crops_676_680/m679_Gm.png)",
+  "tex": "$B\\to\\Gm$ (\\Gm is \\mathbb G_m)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "$B\\to\\Gm$ (qui",
+   "new": "$B\\to\\underline{G}_m$ (qui"
+  },
+  "note": "The typist's underlined letter, as the underlined Q of p. 674 (\\underline{Q}, findings_671_675.json): volume decision with SGA 7 II issue 61. Apply with the next entry or neither. Second reading (Codex fr_r1, 5 Aug): \\Gm."
+ },
+ {
+  "page": 679,
+  "where": "'définis par les représentations B -> G_m , donc'",
+  "scan": "G̲_m, as above (both scans)",
+  "tex": "$B\\to\\Gm$",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "$B\\to\\Gm$, donc",
+   "new": "$B\\to\\underline{G}_m$, donc"
+  },
+  "note": "As the previous entry."
+ },
+ {
+  "page": 679,
+  "where": "last line, 'Cela montre que A(G) est réduit à A^o(X) = Z si et'",
+  "scan": "A^o(X): X, not G (both scans)",
+  "tex": "réduit à $A^0(X)=\\Z$",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "réduit à $A^0(G)=\\Z$",
+  "note": "A(G) is reduced to its degree-0 part A^0(G) = Z. The TeX keeps the printed reading; the corrected layer already reads A^0(G) (SGA-SRC-001454, applied)."
+ },
+ {
+  "page": 680,
+  "where": "first lines, 'produit de groupes Sℓ(n) et Sp(m)'",
+  "scan": "Sℓ with the hand-drawn script ℓ (both scans; crops_676_680/m680_Sl.png)",
+  "tex": "\\operatorname{Sl}(n)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "groupes $\\operatorname{Sl}(n)$ et $\\operatorname{Sp}(m)$. Donc",
+   "new": "groupes $\\operatorname{S\\ell}(n)$ et $\\operatorname{Sp}(m)$. Donc"
+  },
+  "note": "As p. 678. Second reading (Codex fr_r1, 5 Aug): Sl (the print agrees with neither)."
+ },
+ {
+  "page": 680,
+  "where": "(4.9), the coefficient ring Z_ℓ",
+  "scan": "a typed Z, underlined, with the hand-drawn ℓ (Z̲_ℓ), not double-struck (both scans; crops_676_680/m680_49.png, w680_49.png)",
+  "tex": "\\Zell (= \\mathbb Z_\\ell)",
+  "kind": "underline",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Falls under the Z̲_ℓ convention entry of findings_671_675.json (p. 673); the asterisks of the same formula under the H^* entry above (p. 678). Second reading (Codex fr_r1, 5 Aug): \\underline{\\Z}_\\ell: the print agrees with it on the underline."
+ },
+ {
+  "page": 680,
+  "where": "'il en serait de même pour (4.9)': 'ℓ coéfficient de torsion de G'",
+  "scan": "coéfficient, with an acute accent (both scans; crops_676_680/m680_coeff.png)",
+  "tex": "coéfficient",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "coefficient",
+  "note": "Typing error. The TeX keeps the printed reading. Second reading (Codex fr_r1, 5 Aug): coefficient (silent correction)."
+ },
+ {
+  "page": 680,
+  "where": "'l'ordre du groupe fini A^+(G) = ⨿_{i⩾0} A^i(G)'",
+  "scan": "the index reads i⩾0: the typed > with the slanted bar of ⩾ under it (both scans; crops_676_680/m680_Aplus.png, w691_small.png)",
+  "tex": "\\coprod_{i\\geq0}",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\coprod_{i>0}",
+  "note": "A^+(G) is the part of positive degree: A^0(G) = Z (p. 679, 'A(G) est réduit à A^o = Z') is not finite, and A^+(G) is called 'le groupe fini'. The TeX keeps the printed reading. Second reading (Codex fr_r1, 5 Aug): \\bigoplus_{i>0}, displayed (silent correction)."
+ },
+ {
+  "page": 680,
+  "where": "'dans le cas du groupe G = G_2 sur le corps C'",
+  "scan": "G̲_2: the G underlined (both scans; crops_676_680/m680_G2.png)",
+  "tex": "$G=G_2$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "$G=G_2$",
+   "new": "$G=\\underline{G}_2$"
+  },
+  "note": "Again in 'concernant G_2' below. Second reading (Codex fr_r1, 5 Aug): plain (the print agrees with neither)."
+ },
+ {
+  "page": 680,
+  "where": "'(4.10) n'est pas nul en degré > 0, de façon précise'",
+  "scan": "a comma after 0 (both scans; crops_676_680/m680_degre.png)",
+  "tex": "degré $>0$; de façon",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "degré $>0$; de façon",
+   "new": "degré $>0$, de façon"
+  },
+  "note": "The TeX has a semicolon. Second reading (Codex fr_r1, 5 Aug): semicolon too."
+ },
+ {
+  "page": 680,
+  "where": "'Le fait utilisé concernant G_2'",
+  "scan": "G̲_2, underlined (both scans)",
+  "tex": "concernant $G_2$",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "concernant $G_2$",
+   "new": "concernant $\\underline{G}_2$"
+  },
+  "note": "As above."
+ },
+ {
+  "page": 680,
+  "where": "last line, 'communiqué obligeamment par J.P. SERRE.'",
+  "scan": "J.P. without hyphen, SERRE in capitals (typed in the later typeface; both scans; crops_676_680/m680_serre.png)",
+  "tex": "J.-P. Serre",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "obligeamment par J.-P. Serre",
+   "new": "obligeamment par J.P. SERRE"
+  },
+  "note": "Second reading (Codex fr_r1, 5 Aug): J.P. SERRE: the print agrees with it."
+ }
+]

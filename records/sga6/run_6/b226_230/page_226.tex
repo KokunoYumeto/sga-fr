@@ -1,0 +1,21 @@
+% from main.tex
+%%%%%%%%%%  scan idx 239  |  folio 226  %%%%%%%%%%
+On
+peut donc supposer que \(Y=Z[T_1,\ldots,T_r]\), \(f\) étant la projection canonique. Le diagramme \((*)\) correspond alors à un diagramme d'anneaux
+\[
+\begin{tikzcd}
+& B=C[T_1,\ldots,T_r] \arrow[dl,"u"'] & \\
+A & C \arrow[l,"v"] \arrow[u,"\varepsilon"'] & {,}
+\end{tikzcd}
+\]
+où \(u\) et \(v\) sont des épimorphismes, et \(\varepsilon\) l'inclusion canonique. Pour \(1\leq i\leq r\), posons \(u(T_i)=x_i\), et soit \(z_i\in C\) tel que \(v(z_i)=x_i\). La rétraction \(\sigma:B\longrightarrow C\) de \(\varepsilon\) définie par \(\sigma(T_i)=z_i\) est telle que \(v\sigma=u\). En langage géométrique, elle correspond à une section \(s\) de \(f\) telle que \(i=sj\). D'après (VII 1.10) \(s\) est une immersion régulière, l'assertion résulte donc de (1.1.1).
+
+\emph{Preuve de (1.1)(fin).} Soit \(f:X\to Y\) un morphisme localement de type fini. Il existe un recouvrement ouvert \((X_\alpha)\) de \(X\) tel que chaque \(X_\alpha\) se plonge par une immersion fermée dans un schéma \(Y_\alpha\) lisse sur \(Y\). Posant \(\coprod X_\alpha=X'\), \(\coprod Y_\alpha=Y'\), on a donc un diagramme commutatif
+\begin{equation}\tag{$a'$}
+\begin{tikzcd}
+X' \arrow[r,"i''"] \arrow[d,"p'"'] & Y' \arrow[ddl,"f'"]\\
+X \arrow[d,"f"']\\
+Y
+\end{tikzcd}
+\end{equation}
+où \(p'\) est un morphisme somme d'une famille surjective d'immersions ouvertes (nous dirons spécial pour abréger), \(i'\) une immersion fermée, et \(f'\) un morphisme lisse. Nous définirons \(D(f)_{n\text{-}\coh}\) comme la sous-catégorie pleine de \(D(X)\) formée des objets \(E\) tels que \(i'_*p'^*(E)\) soit \(n\)-pseudo-cohérent. Montrons d'abord que cette définition a un sens, i.e. que \(D(f)_{n\text{-}\coh}\) est indépendant du choix de \(i'\), \(p'\), \(f'\). Soit donc

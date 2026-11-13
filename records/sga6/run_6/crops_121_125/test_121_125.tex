@@ -1,0 +1,283 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usetikzlibrary{arrows}
+\usepackage{enumitem}
+\usepackage{longtable,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\emergencystretch=3em
+\hbadness=10000
+\hfuzz=20pt
+\usepackage[normalem]{ulem}
+\newcommand{\K}{K}
+\newcommand{\Gr}{\operatorname{Gr}}
+\newcommand{\Fil}{\operatorname{Fil}}
+\newcommand{\ch}{\operatorname{ch}}
+\newcommand{\Todd}{\operatorname{Todd}}
+\newcommand{\cl}{\operatorname{cl}}
+\newcommand{\Parf}{\operatorname{Parf}}
+\newcommand{\Tor}{\operatorname{Tor}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\RRR}{\mathrm{RRR}}
+\providecommand{\codim}{\operatorname{codim}}
+\providecommand{\Inv}{\operatorname{Inv}}
+\providecommand{\Pic}{\operatorname{Pic}}
+\providecommand{\Z}{\mathbb Z}
+\providecommand{\Q}{\mathbb Q}
+\providecommand{\Ahat}{\widehat A}
+\providecommand{\Ahp}{\widehat A^{+}}
+\providecommand{\That}{\widehat T}
+\providecommand{\rad}{\operatorname{rad}}
+\providecommand{\Gl}{\operatorname{Gl}}
+\providecommand{\GL}{\operatorname{Gl}}
+\providecommand{\ch}{\operatorname{ch}}
+\providecommand{\Todd}{\operatorname{Todd}}
+\providecommand{\Gr}{\operatorname{Gr}}
+\providecommand{\red}{\text{réd}}
+
+% Core macro additions
+\providecommand{\Atil}{\widetilde A}
+\providecommand{\Ctil}{\widetilde C}
+\providecommand{\K}{\mathrm K}
+\providecommand{\cC}{\mathcal C}
+\providecommand{\cF}{\mathscr F}
+\providecommand{\eps}{\varepsilon}
+\providecommand{\ellc}{\ell}
+\providecommand{\Tor}{\operatorname{Tor}}
+\providecommand{\Coker}{\operatorname{Coker}}
+\providecommand{\Ker}{\operatorname{Ker}}
+\providecommand{\Supp}{\operatorname{Supp}}
+\providecommand{\codim}{\operatorname{codim}}
+\providecommand{\Gr}{\operatorname{G}}
+\providecommand{\rank}{\operatorname{rank}}
+\providecommand{\rang}{\operatorname{rang}}
+\providecommand{\cO}{\mathcal O}
+\providecommand{\sgacircled}[1]{\tikz[baseline=(char.base)]\node[shape=circle,draw,inner sep=.35pt](char){\mbox{\scriptsize #1}};}
+
+\hypersetup{hypertexnames=false}
+\newcommand{\sgastandalonefootnotetext}[2]{%
+  \begingroup
+  \NoHyper
+  \footnotetext{#2}%
+  \endNoHyper
+  \endgroup
+}
+\providecommand{\R}{\mathbb R}
+\providecommand{\C}{\mathbb C}
+\providecommand{\N}{\mathbb N}
+\providecommand{\Zell}{\mathbb Z_\ell}
+\providecommand{\Qell}{\mathbb Q_\ell}
+\providecommand{\C}{\mathbb C}
+\providecommand{\Ch}{\operatorname{Ch}}
+\providecommand{\Sym}{\operatorname{Sym}}
+\providecommand{\Td}{\operatorname{Td}}
+\begin{document}
+% Additional macro definitions
+\providecommand{\cC}{\mathcal C}
+\providecommand{\cD}{\mathcal D}
+\providecommand{\cK}{\mathcal K}
+\providecommand{\cO}{\mathcal O}
+\providecommand{\cS}{\mathcal S}
+\providecommand{\Cpx}{\mathrm C}
+\providecommand{\Kpx}{\mathrm K}
+\providecommand{\Dpx}{\mathrm D}
+\providecommand{\D}{\mathrm D}
+\providecommand{\Ho}{\mathrm H}
+\providecommand{\RHom}{\mathrm R\!\operatorname{Hom}}
+\providecommand{\Ob}{\operatorname{ob}}
+\providecommand{\Coker}{\operatorname{Coker}}
+\providecommand{\Ker}{\operatorname{Ker}}
+\renewcommand{\Im}{\operatorname{Im}}
+\providecommand{\Hom}{\operatorname{Hom}}
+\providecommand{\Cone}{\operatorname{Cone}}
+\providecommand{\id}{\operatorname{Id}}
+\providecommand{\qis}{\xrightarrow{\sim}}
+
+
+%%%%%%%%%%  scan idx 98  |  folio 85  %%%%%%%%%%
+
+% Additional notation for Expose I continuation
+\providecommand{\RHom}{\mathrm R\!\Hom}
+\providecommand{\Ext}{\operatorname{Ext}}
+\providecommand{\coh}{\operatorname{coh}}
+\providecommand{\PreCoh}{\operatorname{precoh}}
+\providecommand{\Tr}{\operatorname{Tr}}
+\providecommand{\Qis}{\operatorname{Qis}}
+\providecommand{\Rad}{\operatorname{rad}}
+\providecommand{\Spec}{\operatorname{Spec}}
+\providecommand{\End}{\operatorname{End}}
+\providecommand{\Id}{\operatorname{Id}}
+\providecommand{\varinjlim}{\mathop{\mathrm{lim}}\limits_{\longrightarrow}}
+\providecommand{\varprojlim}{\mathop{\mathrm{lim}}\limits_{\longleftarrow}}
+\providecommand{\qcoh}{\operatorname{qcoh}}
+\providecommand{\amp}{\operatorname{amp}}
+
+%%%%%%%%%%  scan idx 133  |  folio 120  %%%%%%%%%%
+\emph{un
+diagramme de \(\Cpx(\mathcal C_S)\), où \(P\) est strictement \(\mathcal C_0\)-parfait et \(f\) un quasi-isomorphisme. L'ensemble des \(X\) au-dessus de \(S\) tels qu'il existe une flèche \(u:P_X\to E_X\) de \(\Cpx(\mathcal C_X)\) telle que le diagramme}
+\[
+\begin{tikzcd}
+& P_X \arrow[d,"v_X"] \arrow[dl,"u"']\\
+E_X \arrow[r,"f_X"] & F_X
+\end{tikzcd}
+\]
+\emph{soit commutatif dans \(\Kpx(\mathcal C_X)\) est un raffinement de \(S\).}
+
+\emph{Preuve.} Soit \(G\) le cône de \(f\). On a la suite exacte
+\[
+  \longrightarrow \Hom_{\Kpx(\mathcal C_S)}(P,E)
+  \longrightarrow \Hom_{\Kpx(\mathcal C_S)}(P,F)
+  \longrightarrow \Hom_{\Kpx(\mathcal C_S)}(P,G)
+  \longrightarrow .
+\]
+Comme \(G\) est acyclique, l'image de \(v\) dans \(\Hom_{\Kpx(\mathcal C_S)}(P,G)\) est localement nulle d'après (4.1). Donc, quitte à localiser, il existe \(u:P\to E\) tel que \(v=fu\) dans \(\Kpx(\mathcal C_S)\), cqfd.
+
+\textbf{Corollaire 4.3.} \emph{Soit \(f:E\to F\) un quasi-isomorphisme de \(\Cpx(\mathcal C_S)\), avec \(F\) strictement parfait (relativement à \(\mathcal C_0\)). L'ensemble des \(X\) au-dessus de \(S\) tels qu'il existe un quasi-isomorphisme \(g:F_X\to E_X\) tel que \(f_Xg\) soit homotope à \(\Id_{F_X}\) est un raffinement de \(S\).}
+
+\emph{Preuve.} C'est un cas particulier de (4.2).
+
+\textbf{Scholie 4.4.} Soit \(F\in\Ob\Kpx(\mathcal C_S)\). On peut définir (par exemple à l'aide d'un clivage de \(\mathcal C\) (SGA 1 VI 7.1)) une catégorie \((\underline{\Qis/F})\) fibrée sur \(S_{/S}\), dont la fibre en \(X\) au-dessus de \(S\) est la catégorie \((\Qis/F_X)^\circ\) (opposée de la catégorie des quasi-isomorphismes de but \(F_X\)). On peut alors exprimer (4.3) en disant que, 
+%%%%%%%%%%  scan idx 134  |  folio 121  %%%%%%%%%%
+si \(F\) est
+strictement parfait, la flèche \(\Id_F\) est localement cofinale dans \((\underline{\Qis/F})\).
+
+\textbf{Notation 4.5.} Soit \(\mathcal M\) une \(S\)-catégorie fibrée. Soient \(X\in\Ob S\), et \(E,F\in\Ob\mathcal M_X\). Nous noterons \(\underline{\Hom}_{\mathcal M}(E,F)\) le faisceau sur \(S_{/X}\) associé au préfaisceau des \(S\)-morphismes de \(E\) dans \(F\) dans \(\mathcal M\) (pour la définition de ce préfaisceau, voir [G] I 2.6; on prendra garde que, même si \(\mathcal C\) est un champ ([G]), le préfaisceau correspondant pour \(\mathcal M=\Kpx(\mathcal C)\) (ou \(\Dpx(\mathcal C)\)) n'est pas en général un faisceau).
+
+\textbf{Corollaire 4.6.} \emph{Soient \(E,F\in\Ob\Cpx(\mathcal C_S)\), \(E\) étant strictement parfait. La flèche canonique}
+\[
+  \underline{\Hom}_{\Kpx(\mathcal C)}(E,F)
+  \longrightarrow
+  \underline{\Hom}_{\Dpx(\mathcal C)}(E,F)
+\]
+\emph{est un isomorphisme}.
+
+\emph{Preuve.} C'est une conséquence immédiate de (4.4) et de la formule
+\[
+  \Hom_{\Dpx(\mathcal C_X)}(E_X,F_X)
+  = \varinjlim_{(\Qis/E_X)^\circ}\Hom_{\Kpx(\mathcal C_X)}(\,\cdot\,,F_X)
+\]
+pour \(X\) au-dessus de \(S\).
+
+\textbf{Définition 4.7.} \emph{Soit \(F\in\Ob\Dpx(\mathcal C_S)\) et soient \(a,b\in\mathbb Z\) tels que \(a\leq b\). Nous dirons que \(F\) est d'}amplitude \(\mathcal C_0\)-parfaite contenue dans l'intervalle \([a,b]\), \emph{et nous écrirons}
+\[
+  \mathcal C_0\text{-}\mathrm{parf}\text{-}\amp(F)\subset[a,b],
+\]
+\emph{si l'ensemble des \(X\) au-dessus de \(S\) tels qu'il existe un quasi-isomorphisme} 
+%%%%%%%%%%  scan idx 135  |  folio 122  %%%%%%%%%%
+\(F'\to F\) \emph{de} \(\Cpx(\mathcal C_X)\)
+\emph{avec \(F'\) strictement \(\mathcal C_0\)-parfait (2.1), et tel que \(F'^i=0\) pour \(i\notin[a,b]\), est un raffinement de} \(S\). (\emph{En vertu de (4.3) cette condition équivaut à celle obtenue en remplaçant l'expression « quasi-isomorphisme de \(\Cpx(\mathcal C_X)\) » par « isomorphisme de \(\Dpx(\mathcal C_X)\) ».}) \emph{Nous dirons que \(F\) est d'}amplitude \(\mathcal C_0\)-parfaite finie \emph{s'il existe des entiers \(a\) et \(b\) tels que} \(\mathcal C_0\)-\(\mathrm{parf}\)-\(\amp(F)\subset[a,b]\). \emph{Nous dirons que \(F\) est} \(\mathcal C_0\)-parfait \emph{si \(F\) est localement d'amplitude \(\mathcal C_0\)-parfaite finie}\footnote{Bien entendu, quand cela ne pourra prêter à confusion, nous omettrons \(\mathcal C_0\) dans les expressions précédentes.}.
+
+\textbf{Exemple 4.8.} Soient \((S,A)\) un topos annelé, \(\mathcal C\) la \(S\)-catégorie définie par \(U\longmapsto\) (catégorie des \(A_U\)-Modules à gauche), \(\mathcal C_0\) la sous-\(S\)-catégorie définie par \(U\longmapsto\) (catégorie des \(A_U\)-Modules à gauche facteurs directs de Modules libres de type fini). Le couple \((\mathcal C,\mathcal C_0)\) satisfait, d'après (1.3.1), aux hypothèses (4.0). Un objet \(F\) de \(\Dpx(_A S)\) (cf. (2.15)) sera dit d'amplitude parfaite contenue dans \([a,b]\) (resp. d'amplitude parfaite finie, resp. parfait) si \(F\) est d'amplitude \(\mathcal C_0\)-parfaite contenue dans \([a,b]\) (resp.\dots). Lorsque les facteurs directs de Modules libres de type fini sont localement libres (cf. (2.15.1)), dire que \(F\) est parfait signifie donc que \(F\) est localement isomorphe (dans \(\Dpx(S)\)) à un complexe à degrés bornés et à composantes libres de type fini.
+
+\textbf{Notation 4.9.} Nous désignerons par \(\Dpx(\mathcal C)_{\mathcal C_0\text{-}\mathrm{parf}}\) ou \(\Parf(\mathcal C,\mathcal C_0)\) la sous-\(S\)-catégorie strictement pleine de \(\Dpx(\mathcal C)\) formée des objets \(\mathcal C_0\)-parfaits. Dans le cas de l'exemple (4.8), nous écrirons \(\Dpx(_A S)_{\mathrm{parf}}\), ou \(\Parf(_A S)\), ou même \(\Parf(S)\) s'il n'y a pas d'ambiguïté possible sur \(A\).
+
+%%%%%%%%%%  scan idx 136  |  folio 123  %%%%%%%%%%
+\textbf{Proposition 4.10} \emph{La catégorie \(\Parf(\mathcal C,\mathcal C_0)\) est une sous-\(S\)-catégorie triangulée de \(\Dpx(\mathcal C)\) (1.1.4). Le foncteur canonique}
+\[
+  \Kpx^b(\mathcal C_0)\longrightarrow\Parf(\mathcal C,\mathcal C_0)
+\]
+(resp. \(\Tr(\Kpx^b(\mathcal C_0))\to\Tr(\Parf(\mathcal C,\mathcal C_0))\) (1.1.3)) \emph{induit une \(S\)-équivalence sur les champs associés ([G] II 2.2.4), ce qui signifie} :
+\begin{enumerate}[label=(\roman*)]
+\item \emph{pour tout \(X\in\Ob S\) et tous} \(E,F\in\Ob\Kpx^b(\mathcal C_{0X})\) (resp. \(\Tr(\Kpx^b(\mathcal C_{0X}))\)), \emph{la flèche canonique}
+\[
+  \underline{\Hom}_{\Kpx^b(\mathcal C_0)}(E,F)
+  \longrightarrow
+  \underline{\Hom}_{\Dpx(\mathcal C)}(E,F)
+\]
+(\emph{resp.} \(\underline{\Hom}_{\Tr(\Kpx^b(\mathcal C_0))}(E,F)\to\underline{\Hom}_{\Tr(\Dpx(\mathcal C))}(E,F)\)) \emph{est un isomorphisme, et}
+\item \emph{tout objet de \(\Parf(\mathcal C,\mathcal C_0)\) (resp. \(\Tr(\Parf(\mathcal C,\mathcal C_0))\)) est localement isomorphe dans \(\Dpx(\mathcal C)\) (resp.} \(\Tr(\Dpx(\mathcal C))\) \emph{à un objet de \(\Kpx^b(\mathcal C_0)\) (resp.} \(\Tr(\Kpx^b(\mathcal C_0))\).
+\end{enumerate}
+
+\emph{Preuve.} L'assertion (i) non respée est un cas particulier de (4.6) et l'assertion (ii) non respée est vraie par définition ((4.7) et (4.9)). Il est clair d'autre part que \(\Parf(\mathcal C,\mathcal C_0)\) est stable par translation des degrés. Pour prouver que \(\Parf(\mathcal C,\mathcal C_0)\) est une sous-\(S\)-catégorie triangulée de \(\Dpx(\mathcal C)\), il suffit donc de montrer que si
+\[
+\begin{tikzcd}
+& G \arrow[dl,"+1"'] & \\
+E \arrow[rr,"u"] && F \arrow[ul]
+\end{tikzcd}
+\tag{*}
+\]
+est un triangle distingué de \(\Dpx(\mathcal C)\) tel que \(E\) et \(F\) soient parfaits, alors \(G\) 
+%%%%%%%%%%  scan idx 137  |  folio 124  %%%%%%%%%%
+est
+parfait. Quitte à localiser, on peut supposer que \(E\) et \(F\) sont objets de \(\Kpx^b(\mathcal C_0)\). Quitte à localiser davantage, on peut supposer, d'après l'assertion (i) non respée, que \(u\) est une flèche de \(\Kpx^b(\mathcal C_0)\); \(G\) est alors parfait car isomorphe au cône de \(u\), qui est strictement parfait. Donc \(\Parf(\mathcal C,\mathcal C_0)\) est bien une sous-\(S\)-catégorie triangulée de \(\Dpx(\mathcal C)\). L'argument précédent prouve aussi, d'ailleurs, l'assertion (ii) respée. Reste à prouver l'assertion (i) respée. Soient donc \(X\in\Ob S\), et \(E=(E_1\xrightarrow{a_1}E_2\xrightarrow{a_2}E_3\xrightarrow[+1]{a_3}E_1)\), \(F=(F_1\xrightarrow{b_1}F_2\xrightarrow{b_2}F_3\xrightarrow[+1]{b_3}F_1)\) des triangles distingués de \(\Kpx^b(\mathcal C_{0X})\), montrons que la flèche
+\[
+  \underline{\Hom}_{\Tr(\Kpx^b(\mathcal C_0))}(E,F)
+  \longrightarrow
+  \underline{\Hom}_{\Tr(\Dpx(\mathcal C))}(E,F)
+  \tag{**}
+\]
+est un isomorphisme. D'après l'assertion (i) non respée, on sait déjà que \((**)\) est injective. Soit \((u_i):E\to F\) un morphisme de triangles dans \(\Dpx(\mathcal C)\). Quitte à localiser, on peut supposer, d'après l'assertion (i) non respée, que \(u_i\) (\(1\leq i\leq3\)) est une flèche de \(\Kpx^b(\mathcal C_0)\). La flèche \(u_{i+1}a_i-b_iu_i\), pour \(1\leq i\leq3\) (avec la convention \(u_4=u_1\)), est nulle dans \(\Dpx(\mathcal C)\), donc localement nulle dans \(\Kpx^b(\mathcal C_0)\) d'après l'assertion (i) non respée. En d'autres termes, \((u_i)\) définit localement un morphisme de triangles dans \(\Kpx^b(\mathcal C_0)\). Cela prouve que \((**)\) est surjective et achève la démonstration de (4.10).
+
+\textbf{Remarque 4.10.1.} On peut remplacer, dans (4.10), \(\Parf(\mathcal C,\mathcal C_0)\) par \(\Dpx^*(\mathcal C)_{\mathcal C_0\text{-}\mathrm{parf}}=\Dpx^*(\mathcal C)\cap\Parf(\mathcal C,\mathcal C_0)\) \((*=-\text{ ou }b)\), il n'y a rien à changer à la démonstration.
+
+\textbf{Complément 4.11.} On peut préciser la structure triangulée de \(\Parf(\mathcal C,\mathcal C_0)\) en termes d'amplitude parfaite (4.7). Si \(E\in\Ob\Dpx(\mathcal C)\) est d'amplitude parfaite contenue dans \([a,b]\), \(E[n]\) est d'amplitude parfaite contenue dans \([a-n,b-n]\).
+
+%%%%%%%%%%  scan idx 138  |  folio 125  %%%%%%%%%%
+Soit
+\[
+\begin{tikzcd}
+& G \arrow[dl,"+1"'] & \\
+E \arrow[rr] && F \arrow[ul]
+\end{tikzcd}
+\]
+un
+triangle distingué de \(\Dpx(\mathcal C)\). On peut dresser un tableau analogue à (2.6), où les cases indiquent des amplitudes parfaites et chaque ligne correspond à une implication dont le but est souligné.
+\[
+\begin{array}{ccc}
+E&F&G\\[0.3em]
+{}[a+1,b+1]&{}[a,b]&\underline{[a,b]}\\
+{}[a,b]&\underline{[a,b]}&{}[a,b]\\
+\underline{[a,b]}&{}[a,b]&{}[a-1,b-1].
+\end{array}
+\]
+De (4.10) on déduit aussitôt le
+
+\textbf{Corollaire 4.12.} \emph{Supposons que \(S\) soit un site ponctuel. Pour que \(F\in\Ob\Dpx(\mathcal C)\) soit d'amplitude parfaite (rel.\ à \(\mathcal C_0\)) contenue dans \([a,b]\), il faut et il suffit qu'il existe un quasi-isomorphisme \(F'\to F\), avec \(F'\) strictement parfait et tel que \(F'^i=0\) pour \(i\notin[a,b]\). Les foncteurs canoniques}
+\[
+  \Kpx^b(\mathcal C_0)\longrightarrow\Parf(\mathcal C,\mathcal C_0)
+\]
+\emph{et}
+\[
+  \Tr(\Kpx^b(\mathcal C_0))\longrightarrow\Tr(\Parf(\mathcal C,\mathcal C_0))
+\]
+\emph{sont des équivalences de catégories}.
+
+\textbf{Remarque 4.12.1.} Quand \(S\) est un site ponctuel, les objets de \(\mathcal C_0\) sont projectifs. Lorsque \(\mathcal C_0\) contient tous les objets projectifs de \(\mathcal C\), on dit « amplitude projective » au lieu de « amplitude \(\mathcal C_0\)-parfaite ».
+
+
+
+% Additional notation for Expose I continuation
+\providecommand{\Cpx}{\mathrm C}
+\providecommand{\Kpx}{\mathrm K}
+\providecommand{\Dpx}{\mathrm D}
+\providecommand{\Ho}{\mathrm H}
+\providecommand{\RHom}{\mathrm R\!\operatorname{Hom}}
+\renewcommand{\Ob}{\operatorname{ob}}
+\providecommand{\qis}{\xrightarrow{\sim}}
+\providecommand{\RHom}{\mathrm R\!\Hom}
+\providecommand{\Ext}{\operatorname{Ext}}
+\providecommand{\Hom}{\operatorname{Hom}}
+\providecommand{\Tr}{\operatorname{Tr}}
+
+\providecommand{\Add}{\operatorname{Add}}
+\providecommand{\Cart}{\underline{\operatorname{Cart}}}
+\providecommand{\perfamp}{\operatorname{parf.amp}}
+\providecommand{\perfdim}{\operatorname{parf.dim}}
+\providecommand{\toramp}{\operatorname{tor.amp}}
+\providecommand{\torf}{\operatorname{torf}}
+\providecommand{\injf}{\operatorname{injf}}
+\providecommand{\rg}{\operatorname{rg}}
+\providecommand{\is}{\mathrm{is}}
+\providecommand{\Mod}{\operatorname{Mod}}
+
+
+
+\end{document}

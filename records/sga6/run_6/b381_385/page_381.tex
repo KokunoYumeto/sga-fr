@@ -1,0 +1,26 @@
+% from main.tex
+%%%%%%%%%%  scan idx 394  |  folio 381  %%%%%%%%%%
+\textbf{2.3.}
+Nous aurons besoin d'appliquer le foncteur \(\Proj_0\) à des \(B\)-Modules gradués quelconques, et non seulement à des \(B\)-Modules gradués quasi-cohérents comme dans la construction de EGA II 3.2. Aussi allons nous indiquer rapidement comment cette construction peut s'effectuer dans le cas général.
+
+\textbf{2.3.1.} Soient d'abord \(S\) un schéma, \(A\) une \(\mathcal O_S\)-algèbre quasi-cohérente, \(Y=\Spec(A)\), et \(f:Y\to S\) le morphisme structural. De l'isomorphisme~:
+\[
+  A\simeq f_*(\mathcal O_Y)
+\]
+on déduit un homomorphisme canonique~:
+\begin{equation}\tag{2.3.1.1}
+  f^{-1}(A)\longrightarrow \mathcal O_Y,
+\end{equation}
+où \(f^{-1}\) désigne l'image inverse au sens des faisceaux d'ensembles; en d'autres termes, on a un morphisme d'espaces annelés~:
+\begin{equation}\tag{2.3.1.2}
+  \bar f:(Y,\mathcal O_Y)\longrightarrow (S,A).
+\end{equation}
+On en déduit un foncteur «image inverse» \(\bar f^{\,*}\) de la catégorie des \(A\)-Modules dans la catégorie des \(\mathcal O_Y\)-Modules, adjoint à gauche du foncteur «image directe» \(\bar f_*\) de la catégorie des \(\mathcal O_Y\)-Modules dans la catégorie des \(f_*(\mathcal O_Y)\)-Modules. On a donc~:
+\begin{equation}\tag{2.3.1.3}
+  \bar f^{\,*}(M)=f^{-1}(M)\otimes_{f^{-1}(A)}\mathcal O_Y
+\end{equation}
+pour tout \(A\)-Module \(M\).
+Comme l'homomorphisme (2.3.1.1) est plat (car dans chaque fibre il correspond à une localisation), le foncteur \(\bar f^{\,*}\) ainsi défini est un foncteur exact (cf [4], p. 164). Si \(M\) est un \(A\)-Module quasi-cohérent, cette construction donne le Module \(\widetilde M\) défini dans EGA II 1.4.3. En effet, l'isomorphisme~:
+\[
+  M\simeq f_*(\widetilde M)=\bar f_*(\widetilde M)
+\]

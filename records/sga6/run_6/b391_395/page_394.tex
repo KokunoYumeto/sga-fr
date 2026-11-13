@@ -1,0 +1,21 @@
+% from main.tex
+%%%%%%%%%%  scan idx 407  |  folio 394  %%%%%%%%%%
+\section*{4. Calcul du \(K^{\bullet}\) d'un fibré de drapeaux}
+
+\subsection*{4.1}
+Soient \(S\) un schéma, et \(E\) un \(\mathcal O_S\)-Module localement libre de rang \(n\). Soit \(\pi=(p_1,\ldots,p_k)\) une suite d'entiers \(\geq1\), telle que~:
+\[
+  \sum_{i=1}^k p_i=n.
+\]
+Rappelons qu'on appelle foncteur des drapeaux de type \(\pi\) de \(E\) le foncteur sur la catégorie des \(S\)-schémas, à valeurs dans la catégorie des ensembles, qui à un \(S\)-schéma \(X\xrightarrow{f} S\) associe l'ensemble des suites de quotients de \(f^*(E)\)~:
+\[
+  (L_{k-1},\ldots,L_1),
+\]
+où, pour tout \(i\), \(L_i\) est un quotient de \(L_{i+1}\), localement libre de rang \(p_1+\cdots+p_i\). Un tel foncteur est réprésentable par un \(S\)-schéma \(D_\pi(E)\), qui est muni d'une suite de quotients canonique de l'image inverse de \(E\), localement libres de rang \(p_1,p_1+p_2,\ldots\).
+
+Si \(\pi=(1,n-1)\), alors \(D_\pi(E)=\mathbb P(E)\). Si \(\pi=(r,n-r)\), alors \(D_\pi(E)=G_{r,n}(E)\), grassmanienne de type \((r,n-r)\) de \(E\). Si tous les \(p_i\) sont égaux à \(1\), on trouve le fibré en drapeau usuel de \(E\), noté \(D(E)\).
+
+\textbf{Lemme 4.2.} Soient \(S\) un schéma, \(E\) un \(\mathcal O_S\)-Module localement libre de rang \(n\), \(\pi=(p_1,\ldots,p_i,\ldots,p_k)\), avec \(p_1+\cdots+p_k=n\) ; soient \(p',p''\) deux entiers \(\geq1\), tels que \(p'+p''=p_i\) ; posons \(\pi'=(p_1,\ldots,p_{i-1},p',p'',p_{i+1},\ldots,p_k)\), \(\pi''=(p',p'')\). Soient \(L_1,\ldots,L_{k-1}\) les quotients canoniques de l'image inverse de \(E\) sur \(D_\pi(E)\), et soit \(F\) le noyau de \(L_i\to L_{i-1}\). Alors on a un \(S\)-isomorphisme canonique~:
+\[
+  D_{\pi'}(E)\simeq D_{\pi''}(F).
+\]

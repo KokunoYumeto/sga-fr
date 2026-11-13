@@ -1,0 +1,30 @@
+% from main.tex
+%%%%%%%%%%  scan idx 240  |  folio 227  %%%%%%%%%%
+\begin{equation}\tag{$a''$}
+\begin{tikzcd}
+X'' \arrow[r,"i''"] \arrow[d,"p''"'] & Y'' \arrow[ddl,"f''"]\\
+X \arrow[d,"f"']\\
+Y
+\end{tikzcd}
+\end{equation}
+un
+diagramme commutatif analogue à \((a')\) (\(p''\) un morphisme spécial, \(i''\) une immersion fermée, \(f''\) un morphisme lisse). On déduit de \((a')\) et \((a'')\) un diagramme commutatif
+\[
+\begin{tikzcd}
+X'\times_X X'' \arrow[rr,hook] \arrow[dr] \arrow[dd] & & Y'\times_Y Y'' \arrow[dr] \arrow[dd] & \\
+& X' \arrow[rr,hook,"i'"] \arrow[dd] & & Y' \arrow[dd,"f'"]\\
+X'' \arrow[rr,hook,"i''"] \arrow[dr] & & Y'' \arrow[dr,"f''"'] & \\
+& X \arrow[rr,"f"] & & Y,
+\end{tikzcd}
+\]
+où les flèches horizontales, à l'exception de \(f\) sont des immersions fermées, les flèches du carré cartésien de gauche (resp. droite) des morphismes spéciaux (resp. des morphismes lisses). On est donc ramené à prouver l'assertion suivante :
+
+(A) : \emph{Soit}
+\[
+\begin{tikzcd}
+X_1 \arrow[r,hook,"i_1"] \arrow[d,"p"'] & Y_1 \arrow[d,"q"]\\
+X_2 \arrow[r,hook,"i_2"] & Y_2
+\end{tikzcd}
+\]
+un carré commutatif de schémas, où \(p\) est un morphisme spécial, \(q\) un morphisme lisse, \(i_1\) et \(i_2\) des immersions fermées, et soit \(E\in\Ob D(X_2)\). Alors, pour que \(i_{2*}(E)\) soit \(n\)-pseudo-cohérent, il faut et il suffit que \(i_{1*}p^*(E)\) le soit.
+

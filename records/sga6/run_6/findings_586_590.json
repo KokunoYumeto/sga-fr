@@ -1,0 +1,57 @@
+[
+ {
+  "page": 588,
+  "where": "start of page (folio-588 marker)",
+  "scan": "p. 588 begins \"qu'il résulte de 7.16.2 que Gr.^num(X_t̄) est isomorphe à un quotient d'un\"; p. 587 ends \"... dans les sections précédentes. Signalons seulement\" (both scans: b586_590/page_587_s4.png, page_588_s1.png; crops_586_590/wit_587_half.png, wit_588_half.png)",
+  "tex": "\"qu'il\" is the last word of page_587.tex (\"Signalons seulement qu'il\", under the folio-587 marker); page_588.tex begins \"résulte de 7.16.2\"",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 588 really begins with \"qu'il\". Exact edit in main.tex, both layers (diplomatic about line 15144, current about 15148 at 16:32 on 13 Nov; the file is being edited, use the string, which occurs once per layer): replace \"Signalons seulement qu'il\\n%%%%%%%%%%  scan idx 601  |  folio 588  %%%%%%%%%%\\nrésulte de 7.16.2\" by \"Signalons seulement\\n%%%%%%%%%%  scan idx 601  |  folio 588  %%%%%%%%%%\\nqu'il résulte de 7.16.2\" (simulated in memory on both layers: crops_586_590/sim_markers.py). marker_split_word.py pull \"qu'il\" would join it to \"résulte\" without a space, so use the string edit."
+ },
+ {
+  "page": 588,
+  "where": "7.17.4, \"en représentant K' comme limite inductive des anneaux affines\"",
+  "scan": "en représentant K' comme limite inductive (a capital K with its prime, against the small k of \"si k' est une extension pure\" two lines above; the same in the witness: crops_586_590/m588_Kprime.png, m588_kprime_si.png, wit_588_half.png)",
+  "tex": "en représentant \\(k'\\) comme limite inductive",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "en représentant \\(k'\\) comme",
+   "new": "en représentant \\(K'\\) comme"
+  },
+  "corrected": "\\(k'\\)",
+  "note": "Typing error of the print: the object written as an inductive limit of affine rings is the pure extension k' of the sentence. The diplomatic TeX silently corrects it to k'; the fix restores the printed K'. The current layer already has \\(k'\\)."
+ },
+ {
+  "page": 588,
+  "where": "paragraph after (7.17.4.1), first words",
+  "scan": "Un autre façon de définir un homomorphisme (7.17.4.1) consiste à se (both scans)",
+  "tex": "Un autre façon de définir un homomorphisme (7.17.4.1)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Une autre façon",
+  "note": "Agreement error of the print (façon is feminine). The diplomatic TeX keeps the printed reading; the current layer already reads \"Une autre façon\"."
+ },
+ {
+  "page": 590,
+  "where": "start of page (folio-590 marker)",
+  "scan": "p. 590 begins \"cas où la base est un trait. Il s'ensuit que les propriétés sur l'homomor-\"; p. 589 ends \"s'est ramené pour la construction d'un homomorphisme de spécialisation au\" (both scans: b586_590/page_589_s4.png, page_590_s1.png; crops_586_590/wit_589_half.png, wit_590_half.png)",
+  "tex": "\"cas où la\" ends page_589.tex (\"... de spécialisation au cas où la\", under the folio-589 marker); page_590.tex begins \"base est un trait.\"",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 590 really begins with \"cas où la\". Exact edit in main.tex, both layers (diplomatic about line 15172, current about 15176 at 16:32 on 13 Nov; the string occurs once per layer): replace \"de spécialisation au cas où la\\n%%%%%%%%%%  scan idx 603  |  folio 590  %%%%%%%%%%\\nbase est un trait.\" by \"de spécialisation au\\n%%%%%%%%%%  scan idx 603  |  folio 590  %%%%%%%%%%\\ncas où la base est un trait.\" (simulated in memory on both layers: crops_586_590/sim_markers.py)."
+ },
+ {
+  "page": 590,
+  "where": "end of page (folio-591 marker)",
+  "scan": "p. 590 ends \"Soit K une extension de k, nous cherchons des cri-\"; p. 591 begins \"tères pour que F(k) --> F(K) soit injectif (resp. surjectif).\" (b586_590/page_590_s4.png, b591_595/page_591_s1.png, crops_586_590/m591_top.png, wit_590_half.png)",
+  "tex": "page_590.tex ends with the whole word \"nous cherchons des critères\" above the folio-591 marker; page_591.tex begins \"pour que\"",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 591 really begins with \"tères\", the second half of \"cri-tères\" divided at the page break. This is the same boundary as the start of page 591 (batch 591-595): apply once. Exact edit in main.tex, both layers (the string occurs once per layer): replace \"nous cherchons des critères\\n%%%%%%%%%%  scan idx 604  |  folio 591  %%%%%%%%%%\\npour que\" by \"nous cherchons des cri%\\n%%%%%%%%%%  scan idx 604  |  folio 591  %%%%%%%%%%\\ntères pour que\" (the % keeps \"critères\" one word, as \"cet ex%\" at folio 18; simulated in memory on both layers: crops_586_590/sim_markers.py)."
+ }
+]

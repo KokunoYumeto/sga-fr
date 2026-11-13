@@ -1,0 +1,11 @@
+import re, sys
+sys.stdout.reconfigure(encoding='utf-8')
+t = open(r'C:\Users\user\Documents\sga_scan_check_20261105\run_6\crops_431_435\vii_dip.tex', encoding='utf-8').read()
+sheaf = re.findall(r'\\Tor_\{?[^\^\s]{1,6}\}?\^\{\\cO', t)
+alltor = re.findall(r'\\Tor', t)
+plain = re.findall(r'(?<![\\A-Za-z])Tor\b', t)
+kcirc = re.findall(r'K\^\\circ', t)
+print('sheaf Tor (\\Tor_x^{\\cO...}):', len(sheaf))
+print('all \\Tor:', len(alltor))
+print('plain-text Tor:', len(plain))
+print('K^\\circ:', len(kcirc))

@@ -1,0 +1,26 @@
+% from main.tex
+%%%%%%%%%%  scan idx 247  |  folio 234  %%%%%%%%%%
+\textbf{Proposition 1.11.} Soit
+\[
+\begin{tikzcd}
+X \arrow[r,"f"] \arrow[dr,"f"'] & Y \arrow[d,"g"]\\
+& Z
+\end{tikzcd}
+\]
+un triangle commutatif de morphismes localement de type fini, soient \(E\in\Ob D(X)\), \(F\in\Ob D(Y)\), et \([a,b]\), \([c,d]\) des intervalles de \(\mathbb Z\).
+\begin{enumerate}[label=\alph*)]
+\item Si \(E\) est \(a\)-pseudo-cohérent rel. à \(f\) et acyclique en degré \(>b\) et si \(F\) est \(c\)-pseudo-cohérent rel. à \(g\) et acyclique en degré \(>d\), alors \(E\otimes_Y^{\mathbf L}F\) (cf. (1.6)) est \(m\)-pseudo-cohérent rel. à \(h\) et acyclique en degré \(>n\), où \(m=\operatorname{Sup}(a+d,b+c)\), et \(n=b+d\).
+
+\item Si \(E\) est \(a\)-pseudo-cohérent rel. à \(h\) et acyclique en degré \(>b\), et si \(g\) est \((a+1-b)\)-pseudo-cohérent, alors \(E\) est \(a\)-pseudo-cohérent rel. à \(f\).
+\end{enumerate}
+
+\emph{Preuve.} La question étant locale sur \(X\), on peut supposer qu'on a un diagramme commutatif à carré cartésien
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+& & E^{r+s}_Z \arrow[dr] & \\
+& E^r_Y \arrow[ur,hook,"j"] \arrow[d,"p"'] & & E^s_Z \arrow[d,"q"]\\
+X \arrow[ur,hook,"i"] \arrow[r,"f"] & Y \arrow[urr,hook,"k"'] \arrow[rr,"g"] & & Z{,}
+\end{tikzcd}
+\]
+où \(i,j,k\) sont des immersions fermées, et \(p,q\) les projections canoniques des espaces affines types. Si \(F\) est \(c\)-pseudo-cohérent rel. à \(Z\), alors \(k_*(F)\) est \(c\)-pseudo-cohérent d'après (1.1 (iii)), et \(j_*(p^*(F))\) est \(c\)-pseudo-cohérent d'après (1.1.3). De même, si \(g\) est \(x\)-pseudo-cohérent, alors \(j_*(\mathcal O_{E^r_Y})\) est \(x\)-pseudo-cohérent. Par définition de la pseudo-cohérence relative (1.2), on est donc ramené à prouver a) et b) quand \(f\) et \(g\) sont des immersions fermées.
+

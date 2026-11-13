@@ -1,0 +1,21 @@
+% from main.tex
+%%%%%%%%%%  scan idx 132  |  folio 119  %%%%%%%%%%
+\section*{4. Complexes parfaits}
+
+\textbf{4.0.} Dans ce numéro, \(S\) désigne un site, \(S\) un objet de \(S\), \(\mathcal C\) une \(S\)-catégorie abélienne plate et \(\mathcal C_0\) une sous-\(S\)-catégorie additive strictement pleine de \(\mathcal C\) (1.1). Sauf mention du contraire, on suppose \(\mathcal C_0\) localement relevable dans \(\mathcal C\) et localement stable par noyau d'épimorphisme (1.2).
+
+\textbf{Lemme 4.1.}\footnote{Ce lemme a été communiqué au rédacteur par D. Ferrand.} \emph{Soit \(u:E\to F\) une flèche de \(\Cpx(\mathcal C_S)\). Si \(E\) est strictement \(\mathcal C_0\)-parfait (2.1) et \(F\) acyclique, alors \(u\) est localement homotope à zéro.}
+
+\emph{Preuve.} Il s'agit de construire localement une homotopie \(k\) telle que \(u=dk+kd\). Comme \(E\) est strictement parfait, il existe \(a,b\in\mathbb Z\), avec \(a\leq b\), tels que \(E^i=0\) pour \(i\notin[a,b]\). On peut donc prendre \(k^i=0\) pour \(i\notin[a,b]\). On construit ensuite \(k^i\) pour \(i\geq a\) par récurrence descendante sur \(i\). Supposons construit \(k^i:E^i\to F^{i-1}\), de manière que \(u^i=k^{i+1}d_E^i+d_F^{i-1}k^i\) pour \(i\geq n>a\), et montrons que, quitte à localiser, il existe \(k^{n-1}:E^{n-1}\to F^{n-2}\) tel que \(u^{n-1}=k^nd_E^{n-1}+d_F^{n-2}k^{n-1}\). Par l'hypothèse de récurrence, la flèche
+\[
+  v^{n-1}=u^{n-1}-k^nd_E^{n-1}:E^{n-1}\to F^{n-1}
+\]
+se factorise à travers \(Z^{n-1}(F)\). Mais \(Z^{n-1}(F)=B^{n-1}(F)\) puisque \(F\) est acyclique. Comme \(\mathcal C_0\) est localement relevable dans \(\mathcal C\), il s'ensuit que, quitte à localiser, il existe \(k^{n-1}:E^{n-1}\to F^{n-2}\) tel que \(v^{n-1}=d_F^{n-2}k^{n-1}\), cqfd.
+
+\textbf{Corollaire 4.2.} Soit
+\[
+\begin{tikzcd}
+& P \arrow[d,"v"] \\
+E \arrow[r,"f"] & F
+\end{tikzcd}
+\]

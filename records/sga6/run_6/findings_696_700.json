@@ -1,0 +1,333 @@
+[
+ {
+  "page": 696,
+  "where": "entry 'D(_A S)_coh , D (_A S)_n-coh  I  2.15', first item",
+  "scan": "'D(_A S̲' followed directly by the index 'coh': no closing parenthesis after the underlined S; the second item has it, 'D (_A S̲)_n-coh' (both scans; crops_696_700/p696_Dcoh.png, w696_Dcoh.png)",
+  "tex": "\\Dcat({}_{A}\\underline S)_{\\coh}, (parenthesis supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Dcat({}_{A}\\underline S)_{\\coh},",
+   "new": "\\Dcat({}_{A}\\underline S_{\\coh},"
+  },
+  "corrected": "\\Dcat({}_{A}\\underline S)_{\\coh},",
+  "note": "Typing error of the print (the closing parenthesis is left out). The TeX silently corrects it; the fix restores the printed reading."
+ },
+ {
+  "page": 696,
+  "where": "entry 'C^P_num(X)  XIII  5.2'",
+  "scan": "capital P as the upper index, C^P_num(X): flat top and foot bar of a capital, not the round bowl and short descender of this page's small p in 'App.' (both scans; crops_696_700/cmp_P_p.png, p696_Cpnum.png, w696_Cp.png)",
+  "tex": "C^p_{\\num}(X)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "C^p_{\\num}(X)",
+   "new": "C^P_{\\num}(X)"
+  },
+  "corrected": "C^p_{\\num}(X)",
+  "note": "Exposé XIII 5.2 writes C^p_{\\rm num}(X) (cycles of codimension p); the index typed a capital P. The TeX silently corrects it."
+ },
+ {
+  "page": 697,
+  "where": "entry 'f^* (entre les K^•)  IV  2.7'",
+  "scan": "K with a raised dot, K^• (witness clear; crops_696_700/w697_Kdot.png)",
+  "tex": "\\(K'\\)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(K'\\)) & IV & 2.7",
+   "new": "\\(K^{\\bullet}\\)) & IV & 2.7"
+  },
+  "note": "As decided for Exposé IV on 10 Nov: the print's raised dot is K^{\\bullet}, not a prime. The index writes a prime for the raised dot of K and Gr in 13 places (pp. 697-698), each listed here."
+ },
+ {
+  "page": 697,
+  "where": "entry 'f_* (entre les K^•)  IV  2.12'",
+  "scan": "K with a raised dot, K^• (both scans)",
+  "tex": "\\(K'\\)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(K'\\)) & IV & 2.12",
+   "new": "\\(K^{\\bullet}\\)) & IV & 2.12"
+  },
+  "note": "Raised dot written as a prime (see the 2.7 entry)."
+ },
+ {
+  "page": 698,
+  "where": "printed p. 697 (text now under the folio-698 marker), entry 'F'_{>n} , F'_{≤n}  I  2.12'",
+  "scan": "both truncations are lower indices: F' with '>n' below the line, like F'_{≤n} (both scans; crops_696_700/p697_Fn.png, w697_Fn.png)",
+  "tex": "F^{\\prime >n} ('>n' raised beside the prime)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "F^{\\prime >n}",
+   "new": "F'_{>n}"
+  },
+  "note": "Exposé I writes F'_{>n} (resp. F'_{\\leq n})."
+ },
+ {
+  "page": 698,
+  "where": "printed p. 697 (text now under the folio-698 marker), entry 'Gr^•(X) , Gr.(X)  X  3.1'",
+  "scan": "Gr with a raised dot, Gr^• (both scans; crops_696_700/p697_Grdot.png)",
+  "tex": "\\operatorname{Gr}'(X)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\operatorname{Gr}'(X)",
+   "new": "\\operatorname{Gr}^{\\bullet}(X)"
+  },
+  "note": "The print's raised dot in Gr is \\bullet (volume decision); the index's TeX has a prime."
+ },
+ {
+  "page": 698,
+  "where": "printed p. 697 (text now under the folio-698 marker), entry 'Gr^•_alg , Gr^alg_•  X App.  7.11'",
+  "scan": "Gr with a raised dot and index alg, Gr^•_alg (both scans)",
+  "tex": "\\operatorname{Gr}'_{\\alg}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\operatorname{Gr}'_{\\alg}",
+   "new": "\\operatorname{Gr}^{\\bullet}_{\\alg}"
+  },
+  "note": "Raised dot written as a prime."
+ },
+ {
+  "page": 698,
+  "where": "start and end of page",
+  "scan": "p. 698 (the notation index's p. '3') begins 'Gr^•_num , Gr^num_•  X App.  7.9.4' and ends 'Mod(U)  II  2.0' (both scans)",
+  "tex": "page_698.tex begins with the last 11 entries of p. 697 ('projectif) & VI & 5.2\\\\' to '\\(\\operatorname{Gr}'_{\\alg},\\ ...\\) & X App. & 7.11\\\\'); p. 698 runs from '\\(\\operatorname{Gr}'_{\\num},...' to '\\(\\Mod(U)\\) & II & 2.0\\\\'; the rest of the file ('\\(\\parfamp_f(E),...' to '\\end{document}') is printed on pp. 699 and 700, which have no markers.",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 698 really begins with the Gr_num entry. After this batch's text fixes (which turn its Gr' into Gr^{\\bullet}): python -I move_marker.py 6 698 '\\(\\operatorname{Gr}^{\\bullet}_{\\num}' (before the fixes the anchor is '\\(\\operatorname{Gr}'_{\\num}'; simulated on a copy). The marker now splits the entry '\\(f_*\\) (cas du fibré projectif)'; the line break that remains prints as a space. For the missing markers of pp. 699 and 700 see the page-699 and page-700 items."
+ },
+ {
+  "page": 698,
+  "where": "entry 'Gr^•_num , Gr^num_•  X App.  7.9.4'",
+  "scan": "Gr with a raised dot and index num, Gr^•_num (both scans)",
+  "tex": "\\operatorname{Gr}'_{\\num}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\operatorname{Gr}'_{\\num}",
+   "new": "\\operatorname{Gr}^{\\bullet}_{\\num}"
+  },
+  "note": "Raised dot written as a prime. The folio-698 marker move uses this line as its anchor."
+ },
+ {
+  "page": 698,
+  "where": "entry 'K^•_alg , K.^alg  X App.  7.11'",
+  "scan": "K with a raised dot and index alg (both scans)",
+  "tex": "K'_{\\alg}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "K'_{\\alg}",
+   "new": "K^{\\bullet}_{\\alg}"
+  },
+  "note": "Raised dot written as a prime."
+ },
+ {
+  "page": 698,
+  "where": "entry 'K^•(_A X) , K.(_A X)  IV  2.2'",
+  "scan": "K^•(_A X) , K.(_A X): K with a raised dot, and A as a lower index standing before X (left index) (both scans)",
+  "tex": "\\(K'(A_X),\\ K_{\\cdot}(A_X)\\): a prime, and A with the index X",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(K'(A_X),\\ K_{\\cdot}(A_X)\\)",
+   "new": "\\(K^{\\bullet}({}_{A}X),\\ K_{\\cdot}({}_{A}X)\\)"
+  },
+  "note": "Exposé IV 2.2 writes K^{\\bullet}({}_A X) and K_\\bullet({}_A X); the left index is written as in this index's \\Dcat({}_{A}X)."
+ },
+ {
+  "page": 698,
+  "where": "entry 'K^•(_A X)_naïf , K.(_A X)_naïf  IV  2.2'",
+  "scan": "K with a raised dot, A as a left lower index before X (both scans)",
+  "tex": "\\(K'(A_X)_{\\naif},\\ K_{\\cdot}(A_X)_{\\naif}\\)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(K'(A_X)_{\\naif},\\ K_{\\cdot}(A_X)_{\\naif}\\)",
+   "new": "\\(K^{\\bullet}({}_{A}X)_{\\naif},\\ K_{\\cdot}({}_{A}X)_{\\naif}\\)"
+  },
+  "note": "As the entry above (IV 2.2: K^{\\bullet}({}_A X)_{\\naif}, K_\\bullet({}_A X)_{\\naif})."
+ },
+ {
+  "page": 698,
+  "where": "entry 'K^•(f) , K.(f)  IV  3.3.1'",
+  "scan": "K with a raised dot (both scans)",
+  "tex": "K'(f)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "K'(f)",
+   "new": "K^{\\bullet}(f)"
+  },
+  "note": "Raised dot written as a prime."
+ },
+ {
+  "page": 698,
+  "where": "entry 'K^•_num , K.^num  X App.  7.9.4'",
+  "scan": "K with a raised dot and index num (both scans)",
+  "tex": "K'_{\\num}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "K'_{\\num}",
+   "new": "K^{\\bullet}_{\\num}"
+  },
+  "note": "Raised dot written as a prime."
+ },
+ {
+  "page": 698,
+  "where": "entry 'K^•(X) , K.(X)  IV  2.2'",
+  "scan": "K with a raised dot (both scans)",
+  "tex": "\\(K'(X),",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(K'(X),",
+   "new": "\\(K^{\\bullet}(X),"
+  },
+  "note": "Raised dot written as a prime."
+ },
+ {
+  "page": 698,
+  "where": "entry 'K^•(X)_naïf , K.(X)_naïf  IV  2.2'",
+  "scan": "K with a raised dot (both scans)",
+  "tex": "K'(X)_{\\naif}",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "K'(X)_{\\naif}",
+   "new": "K^{\\bullet}(X)_{\\naif}"
+  },
+  "note": "Raised dot written as a prime."
+ },
+ {
+  "page": 698,
+  "where": "entry 'K^•(X/Y) , K.(X/Y)  IV  3.3.1'",
+  "scan": "K with a raised dot (both scans)",
+  "tex": "K'(X/Y)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "K'(X/Y)",
+   "new": "K^{\\bullet}(X/Y)"
+  },
+  "note": "Raised dot written as a prime."
+ },
+ {
+  "page": 698,
+  "where": "printed p. 699 (no marker; text now under the folio-698 marker), entry 'par.amp_f(E) , par.amp_Y(E)  III  4.1'",
+  "scan": "'par.amp' twice, without f (both scans; crops_696_700/p699_paramp.png, w_699.png)",
+  "tex": "\\parfamp_f(E),\\ \\parfamp_Y(E), which prints parf.amp: the index's helper \\providecommand{\\parfamp}{\\operatorname{par.amp}} has no effect, because Exposé III's \\providecommand{\\parfamp}{\\operatorname{parf.amp}} comes first",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\parfamp_f(E),\\ \\parfamp_Y(E)",
+   "new": "\\operatorname{par.amp}_f(E),\\ \\operatorname{par.amp}_Y(E)"
+  },
+  "corrected": "\\parfamp_f(E),\\ \\parfamp_Y(E)",
+  "note": "Exposé III 4.1 (folio 250) prints parf.amp; the index's par.amp is a typing error, and the TeX's output silently corrects it. The fix restores the printed reading on this line only."
+ },
+ {
+  "page": 698,
+  "where": "printed p. 699 (text now under the folio-698 marker), entry 'Parf(_A S) , Parf(C,C_o) , Parf(S)  I  4.9'",
+  "scan": "Parf(_A S̲): A as a lower index standing before the underlined S (both scans; crops_696_700/p699_Parf_all.png)",
+  "tex": "\\Parf(A_S): A with the index S",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Parf(A_S)",
+   "new": "\\Parf({}_{A}\\underline S)"
+  },
+  "note": "Written like this index's \\Dcat({}_{A}\\underline S). The third item, printed Parf(S̲), is \\Parf(S) in the TeX: pending site-S decision, not itemized; the underlined C, C_o likewise (category letter)."
+ },
+ {
+  "page": 698,
+  "where": "printed p. 699 (text now under the folio-698 marker), entry 'Proj_o  VI  2.3.2'",
+  "scan": "Proj underlined, index o (both scans)",
+  "tex": "\\(\\Projz\\), which prints a plain Proj_0 here: Exposé VII's \\renewcommand{\\Projz}{\\operatorname{Proj}_0} is in force at the index",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\Projz\\)",
+   "new": "\\(\\underline{\\operatorname{Proj}}_0\\)"
+  },
+  "note": "The form Exposé VI gives \\Projz (\\underline{\\operatorname{Proj}}_0, 10 Nov)."
+ },
+ {
+  "page": 698,
+  "where": "printed p. 699 (text now under the folio-698 marker), entry 'r O_{UxV}  II App. II  1.1'",
+  "scan": "a raised r before the underlined O, with U x V as the O's index: ^r O̲_{UxV}; there is no 0 (both scans; crops_696_700/p699_rO.png)",
+  "tex": "r^0_{\\mathcal O_{U\\times V}}: an added upper 0, and the O made an index of r",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "r^0_{\\mathcal O_{U\\times V}}",
+   "new": "{}^r\\mathcal O_{U\\times V}"
+  },
+  "note": "II App. II 1.1 writes {}^r\\cO_{U\\times V} (the sheaf of rings of class C^r). The underlined O stays \\mathcal O (pending decision on the underlined O)."
+ },
+ {
+  "page": 698,
+  "where": "printed p. 699 (text now under the folio-698 marker), entry 'ρ_t  V  3,4'",
+  "scan": "'3,4' with a comma where every other number has a full stop (both scans; crops_696_700/p699_34.png, w699_34.png)",
+  "tex": "3.4",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\(\\rho_t\\) & V & 3.4",
+   "new": "\\(\\rho_t\\) & V & 3,4"
+  },
+  "corrected": "\\(\\rho_t\\) & V & 3.4",
+  "note": "Typing error (comma for the stop); the TeX silently corrects it."
+ },
+ {
+  "page": 698,
+  "where": "printed p. 699 (text now under the folio-698 marker), entry 'ψ_k(x)  V  7.1'",
+  "scan": "psi with k as a lower index (both scans; crops_696_700/w699_psi.png)",
+  "tex": "\\psi_k(x) (as printed)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\psi^k(x)",
+  "note": "Exposé V §7 (Appendice, les opérations ψ^k d'Adams) writes \\psi^k(x) with an upper index; the TeX keeps the printed reading."
+ },
+ {
+  "page": 698,
+  "where": "printed p. 700 (no marker; text now under the folio-698 marker), entry 'x ._N y  V  5.5'",
+  "scan": "x, a typed product dot with N below it, then y: x ·_N y (witness clear, crops_696_700/w700_xNy.png; the main scan is blurred there, p700_xNy.png)",
+  "tex": "\\(x_N\\): the dot and the y are lost",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(x_N\\)",
+   "new": "\\(x\\cdot_N y\\)"
+  },
+  "note": "The multiplication of V (5.5.1), x\\cdot_N y=x\\cdot y\\cdot\\lambda_{-1}(N), written as the TeX writes it there."
+ },
+ {
+  "page": 699,
+  "where": "start and end of page (no folio-699 marker in the TeX)",
+  "scan": "p. 699 (the notation index's p. '4') runs from 'par.amp_f(E) , par.amp_Y(E)  III  4.1' to '∇  V  3.5' (main scan rendered into crops_696_700/page_699_s1-s4.png; witness crops_696_700/w_699.png)",
+  "tex": "no marker; the page's text stands in page_698.tex, from '\\(\\parfamp_f(E),\\ \\parfamp_Y(E)\\) & III & 4.1\\\\' to '\\(\\nabla\\) & V & 3.5\\\\'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Insert the line '%%%%%%%%%%  scan idx 712  |  folio 699  %%%%%%%%%%' on its own line right after the line '\\(\\Mod(U)\\) & II & 2.0\\\\' (both editions), after this batch's text fixes (those for p. 699 are given under page 698)."
+ },
+ {
+  "page": 700,
+  "where": "start and end of page (no folio-700 marker in the TeX)",
+  "scan": "p. 700 (the notation index's p. '5') holds '1 + A[[t]]^+  V  1.1' to 'Z(x)  X  1.1.2'; the rest of the page is blank (main scan rendered into crops_696_700/page_700_s1-s4.png; witness crops_696_700/w_700.png)",
+  "tex": "no marker; the text stands at the end of page_698.tex, from '\\(1+A[[t]]^+\\) & V & 1.1\\\\' to the end of the table and \\end{document}",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Insert the line '%%%%%%%%%%  scan idx 713  |  folio 700  %%%%%%%%%%' on its own line right after the line '\\(\\nabla\\) & V & 3.5\\\\' (both editions), after this batch's text fixes (those for p. 700 are given under page 698)."
+ }
+]

@@ -1,0 +1,21 @@
+% from main.tex
+%%%%%%%%%%  scan idx 129  |  folio 116  %%%%%%%%%%
+En
+particulier, pour que \(F\) soit pseudo-cohérent, il faut et il suffit que \(\Ho^n(F)\) soit cohérent pour tout \(n\).
+
+\emph{Preuve.} L'assertion a) et l'implication \(\Rightarrow\) de b) résultent trivialement de (3.4). L'implication \(\Leftarrow\) de b) découle aussitôt de a) et (2.11.b)).
+
+\textbf{Exemples 3.6.} Soient \((S,A)\) un topos annelé, \(\mathcal C,\mathcal C_0\) les \(S\)-catégories de (1.3.d)) (cf. aussi (2.15)). Pour que les objets de \(\mathcal C_0\) soient cohérents, il faut et il suffit que \(A\) soit cohérent (i.e. précohérent). Voici des exemples où il en est ainsi :
+\begin{itemize}[label=--]
+\item \(A\) est constant de valeur un anneau noethérien à gauche (SGA 4 IX 2.1).
+\item \(S\) est le topos des faisceaux d'ensembles (pour la topologie de Zariski) sur un schéma localement noethérien \(S\)\footnote{Conformément aux nouvelles conventions, nous dirons «~schéma~» pour «~préschéma~», et «~schéma séparé~» pour «~schéma~».}, et \(A=\mathcal O_S\).
+\item \(S\) est le topos des faisceaux d'ensembles sur un espace analytique complexe \(S\), \(A=\mathcal O_S\).
+\end{itemize}
+En revanche, le faisceau des fonctions continues complexes sur un espace topologique n'est en général pas cohérent.
+
+Bien entendu, si \((S,A)\) est défini par un espace annelé, la notion de cohérence envisagée ici coïncide avec la notion usuelle de Serre (EGA \(0_I\) 5.3.1).
+
+\textbf{Proposition 3.7.} \textbf{a)} Soit \(f:(S',A')\to(S,A)\) un morphisme de topos annelés. On suppose \(f\) plat à droite, i.e. que le foncteur \(f^*=A'\otimes_A\cdot\) est exact. Il existe, pour \(F\in\Ob\Dpx(_A S)\), \(G\in\Ob\Dpx^+(_A S)\), une flèche canonique fonctorielle :
+\[
+  f^*\RHom(F,G)\longrightarrow\RHom(f^*(F),f^*(G)).
+\]

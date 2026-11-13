@@ -1,0 +1,27 @@
+% from main.tex
+%%%%%%%%%%  scan idx 150  |  folio 137  %%%%%%%%%%
+troncature
+\[
+\begin{array}{ccccccc}
+\cdots&\to&E^{m-1}&\to&E^m&\to&E^{m+1}\to\cdots\\
+&&\downarrow&&\downarrow&&\downarrow\\
+\cdots&\to&0&\to&E^m/B^m&\to&E^{m+1}\to\cdots
+\end{array}
+\]
+est un quasi-isomorphisme. Notons \(E'\) le complexe tronqué. Par construction, \(E'\) est d'amplitude plate \(\subset[m,n]\) et \(E'^i\) est libre de type fini pour \(i>m\). Donc, d'après (5.1.1), \(E'^m\) est plat. On a d'autre part un triangle distingué
+\[
+\begin{tikzcd}
+& E'^m[-m] \arrow[dl,"+1"'] & \\
+E'' \arrow[rr] && E' \arrow[ul]
+\end{tikzcd}
+\]
+où \(E''\) est strictement parfait. D'après (2.6), \(E'^m[-m]\) est \((m-1)\)-pseudo-cohérent, i.e. (2.9) \(E'^m\) est de présentation finie. On conclut grâce à (5.8.3) que \(E'^m\) est localement facteur direct d'un Module libre de type fini, donc que l'on a \(\perfamp(E)\subset[m,n]\).
+
+\textbf{Remarques 5.8.4.} \textbf{a)} Utilisant (2.5), on retrouve le fait que les complexes parfaits forment une sous-catégorie triangulée de \(\Dpx({}_A S)\).
+
+\textbf{b)} Un complexe parfait, même à cohomologie bornée, n'est pas nécessairement de tor-dimension finie. C'est cependant le cas si \(S\) est de type fini (5.5). Notons \(\Dpx({}_A S)_{\mathrm{parf}}\) la sous-\(S\)-catégorie pleine de \(\Dpx^b({}_A S)\) formée des complexes parfaits et de tor-dimension finie. Il résulte aussitôt de (2.16.1 b)) et (5.3) que, si \(A\) est commutatif, le foncteur \(\overset{\mathrm L}{\otimes}_A\) induit un foncteur
+\[
+  \overset{\mathrm L}{\otimes}_A:
+  \Dpx(S)_{\mathrm{parf}}\times_S \Dpx^b(S)_{\mathrm{coh}}
+  \longrightarrow \Dpx^b(S)_{\mathrm{coh}}.
+\]

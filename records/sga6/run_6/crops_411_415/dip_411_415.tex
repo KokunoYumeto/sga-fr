@@ -1,0 +1,128 @@
+%%%%%%%%%%  scan idx 424  |  folio 411  %%%%%%%%%%
+\[
+  x\leadsto f^*(x)\leadsto f^*(x)x'\leadsto f_*(f^*(x)x')
+\]
+est
+injectif, donc $f^*$ l'est aussi.
+
+\textbf{6.5.} Soit $X$ un schéma noethérien de dimension $d$, ayant un faisceau ample $L$. On munit $K^{\bullet}(X)$ de la filtration définie comme suit (cf. [1]): $x$ appartient à $K^{\bullet}(X)_i$ si et seulement si pour tout fermé $Y$ de $X$, il existe un complexe $M^\bullet(Y)$, parfait, tel que:
+\[
+  \text{i) } \cl(M^\bullet(Y))=x;
+\]
+\[
+  \text{ii) } \operatorname{Codim}(\Supp(H^*(M^\bullet(Y)))\cap Y,Y)\ge i,
+  \quad\text{avec } H^*(M^\bullet(Y))=\bigoplus_{i\ge0}H^i(M^\bullet(Y)).
+\]
+Les $K^{\bullet}(X)_i$, ainsi définis, sont des sous-groupes additifs de $K^{\bullet}(X)$. En effet, soient $x,x'\in K^{\bullet}(X)_i$, et pour un fermé $Y$ donné dans $X$, $M^\bullet$ et $M'{}^\bullet$ les complexes correspondants; alors $x+x'$ est la classe du complexe $M^\bullet\oplus M'{}^\bullet$, et
+\[
+\Supp(H^*(M^\bullet\oplus M'{}^\bullet))
+ =\Supp(H^*(M^\bullet)\oplus H^*(M'{}^\bullet))
+ =\Supp(H^*(M^\bullet))\cup\Supp(H^*(M'{}^\bullet));
+\]
+comme la codimension d'une réunion finie de fermés est la borne inférieure des codimensions des fermés, on a bien $x+x'\in K^{\bullet}(X)_i$.
+
+\textbf{Proposition 6.6.} La filtration 5.5 de $K^{\bullet}(X)$ est une filtration d'anneau et $K^{\bullet}(X)_{d+1}=0$.
+
+Soient $x\in K^{\bullet}(X)_i$, $x'\in K^{\bullet}(X)_j$, et $Y$ un fermé de $X$. Il existe un complexe $M^\bullet$ tel que $x=\cl(M^\bullet)$, et $\codim(\Supp(H^*(M^\bullet))\cap Y,Y)\ge i$; il existe un complexe $M'{}^\bullet$ tel que $x'=\cl(M'{}^\bullet)$, et :
+\[
+\codim\bigl(\Supp(H^*(M^\bullet))\cap\Supp(H^*(M'{}^\bullet))\cap Y,
+            \Supp(H^*(M^\bullet))\cap Y\bigr)\ge j.
+\]
+On a alors : $xx'=\cl(M^\bullet\overset{\mathbf L}{\otimes}M'{}^\bullet)$, et :
+\[
+\codim\bigl(\Supp(H^*(M^\bullet))\cap\Supp(H^*(M'{}^\bullet))\cap Y,Y\bigr)\ge i+j
+\]
+(EGA $0_{\mathrm{IV}}$ 14.2.2.3). Il
+%%%%%%%%%%  scan idx 425  |  folio 412  %%%%%%%%%%
+suffit donc, pour achever la démonstration, de noter que :
+\[
+\Supp\bigl(H^*(M^\bullet\overset{\mathbf L}{\otimes}M'{}^\bullet)\bigr)
+ \subset \Supp(H^*(M^\bullet))\cap\Supp(H^*(M'{}^\bullet)).
+\]
+Pour montrer que $K^{\bullet}(X)_{d+1}$ est nul, on prend $x\in K^{\bullet}(X)_{d+1}$, et $Y=X$; il existe alors $M^\bullet$ tel que $x=\cl(M^\bullet)$, et $\codim_X(\Supp(H^*(M^\bullet)))\ge d+1$; comme $X$ est de dimension $d$, cela entraine $\Supp(H^*(M^\bullet))=\varnothing$, donc $M^\bullet$ est acyclique, et $x=0$.
+
+\textbf{Lemme 6.7.} Soit $X=\Spec(A)$ un schéma affine noethérien, $x_1,\ldots,x_k$ un nombre fini de points de $X$, $E$ un $\mathcal O_X$-Module inversible. Alors, il existe une section $s\in\Gamma(X,E)$ telle que pour tout $i$, $s_{x_i}$ soit une base de $E_{x_i}$.
+
+Posons $M=\Gamma(X,E)$. Pour tout $i$, soit $x'_i$ un point fermé de $X$ tel que $x'_i\in\{x_i\}$. Les $x'_i$ correspondent à des idéaux maximaux $\mathfrak m_i$ de $A$, qu'on peut supposer tous distincts, quitte à changer l'ensemble d'indices de façon que chacun des $\mathfrak m_i$ intervienne une fois et une seule fans la famille $(\mathfrak m_i)$. Comme $E$ est inversible, on a pour tout $i$ un isomorphisme $M_{\mathfrak m_i}\simeq A_{\mathfrak m_i}$; d'où on déduit un isomorphisme $M/\mathfrak m_iM\simeq A/\mathfrak m_i$, puis $\prod_i M/\mathfrak m_iM\simeq\prod_i A/\mathfrak m_i$, soit encore $A/\prod_i\mathfrak m_i\simeq M/(\prod_i\mathfrak m_i)M$. En relevant ce dernier isomorphisme, on obtient un homomorphisme $A\to M$ tel que l'homomorphisme $A_{\mathfrak m_i}\to M_{\mathfrak m_i}$ correspondant soit pour tout $i$ un isomorphisme modulo $\mathfrak m_i$, donc un isomorphisme d'après Nakayama. L'image de $1$ par cet homomorphisme donne donc une section $s$ de $E$ qui est une base de $E_{x'_i}$ pour tout $i$. Comme l'ensemble des points où $s$ est une base de $E$ est un ouvert de $X$, $s$ est aussi une base de $E_{x_i}$ pour $i=1,\ldots,k$.
+
+\textbf{Lemme 6.8.} Soient $X$ un schéma noethérien ayant un faisceau ample $L$, $E$ un $\mathcal O_X$-Module inversible, $x_1,\ldots,x_k$ des points de $X$. Alors il existe un
+%%%%%%%%%%  scan idx 426  |  folio 413  %%%%%%%%%%
+entier $n$ tel que pour tout $k\ge1$, il existe une section $s\in\Gamma(X,E(kn))$ qui soit une base de $E(kn)_{x_i}$ pour tout $i$.
+
+On peut trouver un entier $n_0$, et une section $f\in\Gamma(X,L^{\otimes n_0})$ telle que pour tout $i$, $x_i\in X_f$, et que $X_f$ soit un ouvert affine (EGA II 4.5.4). Sur $X_f$, on peut trouver une section $t\in\Gamma(X_f,E)$ satisfaisant les conditions du lemme 6.7; de plus, il existe un entier $n'_0$ tel que la section $f^{\otimes n'_0}\otimes t\in\Gamma(X_f,E(n_0n'_0))$ se prolonge à $X$ tout entier. Posons $n=n_0n'_0$; alors $f^{\otimes n'_0}\in\Gamma(X,L^n)$; en faisant le produit tensoriel de la section de $E(n)$ obtenue plus haut et de $f^{\otimes kn'_0}$, on obtient donc une section de $E((k+1)n)$ pour tout $k\ge0$. Comme pour tout $p$, $X_{f^{\otimes p}}=X_f$, et que la section $t$ est une base de $E_{x_i}$ pour tout $i$, les sections de $E(kn)$ ainsi construites pour tout $k\ge1$ forment une base de $E(kn)_{x_i}$ pour tout $i$.
+
+\textbf{Théorème 6.9.} Soit $X$ un schéma noethérien de dimension $d$, ayant un faisceau ample $L$. Alors $\Fil^{d+1}K^{\bullet}(X)=0$, et à fortiori $(\Fil^1K^{\bullet}(X))^{d+1}=0$.
+
+(Cette dernière relation est due à J.P. Serre, dans le cas général envisagé ici).
+
+Nous allons d'abord montrer que si $E,E'$ sont deux faisceaux inversibles sur $X$, de classes $E,E'$, alors $E-E'\in K^{\bullet}(X)_1$.
+
+Soient $Y$ un fermé de $X$, $Y_1,\ldots,Y_k$ ses composantes irréductibles, et pour tout $i$, soit $x_i$ un point de $Y_i-\bigcup_{j\ne i}Y_j$. D'après le lemme 6.8, il existe des entiers $n,n'$, tels que, quels que soient les entiers $k,k'\ge1$, on puisse trouver des homomorphismes de $\mathcal O_X$ dans $E(kn)$, $E'(k'n')$ qui soient des isomorphismes aux points $x_i$; on obtient donc des morphismes:
+\[
+  L^{\otimes -kn}\xrightarrow{s_k} E,
+  \qquad
+  L^{\otimes -k'n'}\xrightarrow{s'_{k'}} E',
+\]
+%%%%%%%%%%  scan idx 427  |  folio 414  %%%%%%%%%%
+qui
+sont des isomorphismes aux points $x_i$. Considérons alors le complexe:
+\[
+  N^\bullet=\cdots\to0\to L^{\otimes -nn'}
+    \xrightarrow{(s'_n,0)} E'\oplus L^{\otimes -nn'}
+    \xrightarrow{0+s_{n'}} E\to0\to\cdots.
+\]
+La classe de $N^\bullet$ est $E-E'$; par ailleurs, $N^\bullet$ est acyclique aux points $x_i$, donc $\Supp(H^*(N^\bullet))\cap Y$ ne contient aucune composante irréductible de $Y$, et par conséquent est de codimension $\ge1$ dans $Y$; ceci montre que $E-E'$ est dans $K^{\bullet}(X)_1$.
+
+Soit maintenant $x$ un élément de $\Fil^{d+1}K^{\bullet}(X)$; nous allons montrer que $x=0$. On peut supposer que $x$ s'écrit:
+\[
+  x=\gamma^{i_1}(E_1-F_1)\cdots\gamma^{i_k}(E_k-F_k),
+  \qquad\text{avec } i_1+\cdots+i_k\ge d+1,
+\]
+les $E_i,F_i$, étant les classes de faisceaux localement libres de type fini, et, pour tout $i$, $E_i$ et $F_i$ ayant même rang. De plus, quitte à décomposer $X$ en somme d'un nombre fini d'ouverts, et à raisonner dans chaque ouvert, on peut supposer les $E_i,F_i$ de rang constant. Soit alors $X'$ le produit fibré sur $X$ des schémas de drapeaux des $E_i,F_i$. Dans $K^{\bullet}(X')$, les images des $E_i,F_i$ sont sommes de classes de faisceaux inversibles. Soient $\xi,\eta$ les classes de deux $\mathcal O_{X'}$-Modules inversibles; on a:
+\[
+  \gamma_t(\xi-\eta)=\gamma_t(\xi-1)/\gamma_t(\eta-1)
+  =(1+(\xi-1)t)/(1+(\eta-1)t).
+\]
+Donc $\gamma^i(\xi-\eta)=(-1)^{i-1}(\xi-\eta)(\eta-1)^{i-1}$. Or $X'$ est noethérien et a un faisceau ample, donc, d'après ce qui précède et 6.6, $\gamma^i(\xi-\eta)\in K^{\bullet}(X')_i$. Utilisant l'additivité de $\gamma_t$ et 6.6, on en déduit que $f^*(\gamma^{i_j}(E_j-F_j))\in K^{\bullet}(X')_{i_j}$, et $f^*(x)\in K^{\bullet}(X')_{d+1}$, $f$ étant le morphisme canonique $X'\to X$.
+
+Nous allons en déduire que $f^*(x)=0$. Soit $r$ la dimension relative de $X'$ sur $X$. Il existe un élément $x'$ de $K^{\bullet}(X')$, appartenant à une base de $K^{\bullet}(X')$ sur $K^{\bullet}(X)$, tel que:
+%%%%%%%%%%  scan idx 428  |  folio 415  %%%%%%%%%%
+\[
+  x'=\prod_{i=0}^{r}(\xi_i-1),
+\]
+les $\xi_i$
+étant les classes de faisceaux inversibles : pour le montrer, on se ramène par le raisonnement de 3.1 au cas d'un fibré projectif sur $X$. Or ce dernier cas est conséquence immédiate de 1.13. L'élément $x'$ considéré est dans $K^{\bullet}(X')_r$ d'après ce qui précède, et par conséquent $x'f^*(x)\in K^{\bullet}(X')_{d+r+1}$. Or $\dim X'=d+r$; donc d'après 6.6, $x'f^*(x)=0$. Comme $x'$ fait partie d'une base de $K^{\bullet}(X')$ sur $K^{\bullet}(X)$, ceci entraine $f^*(x)=0$. Comme $f^*$ est injectif (3.1), on a finalement $x=0$.
+
+\textbf{Problème 6.10.} Sous les hypothèses de 6.9, est-il vrai que pour tout $k$ on ait : $\Fil^kK'(X)\subset K^{\bullet}(X)_k$ ?
+
+\subsection*{Bibliographie de l'Exposé VI}
+\begin{enumerate}[label={\textup{[\arabic*]}}]
+\item Bass H., \emph{K-Theory and stable algebra}, Publ. Math. de l'IHES, n°22.
+\item Chevalley C., Séminaire 1958 : \emph{Anneaux de Chow et applications}.
+\item Hakim M., \emph{Topos localement annelés et schémas relatifs}, thèse (en préparation).
+\item Hartshorne R., \emph{Residues and duality}, Lectures notes in Mathematics n°20, Springer-Verlag.
+\item Serre J.-P., \emph{Le groupe de Grothendieck des schémas en groupes réductifs}, Publications Mathématiques de l'IHES, n°34.
+\end{enumerate}
+
+
+
+% Expose VII additions
+\providecommand{\Kosz}{\mathrm K}
+\providecommand{\Proj}{\operatorname{Proj}}
+\providecommand{\Sym}{\operatorname{Sym}}
+\providecommand{\gr}{\operatorname{gr}}
+\providecommand{\Tor}{\operatorname{Tor}}
+\providecommand{\Spec}{\operatorname{Spec}}
+\providecommand{\Imf}{\operatorname{Im}}
+\providecommand{\Ker}{\operatorname{Ker}}
+\providecommand{\Id}{\operatorname{Id}}
+\providecommand{\rad}{\operatorname{rad}}
+\providecommand{\cO}{\mathcal O}
+\providecommand{\cS}{\mathcal S}
+\providecommand{\cJ}{\mathcal J}
+\providecommand{\cN}{\mathcal N}
+\providecommand{\bfP}{\mathbf P}
+\providecommand{\bfA}{\mathbf A}
+
+
+%%%%%%%%%%  scan idx 429  |  folio 416  %%%%%%%%%%

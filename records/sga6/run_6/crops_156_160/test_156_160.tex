@@ -1,0 +1,364 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usetikzlibrary{arrows}
+\usepackage{enumitem}
+\usepackage{longtable,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\emergencystretch=3em
+\hbadness=10000
+\hfuzz=20pt
+\usepackage[normalem]{ulem}
+\newcommand{\K}{K}
+\newcommand{\Gr}{\operatorname{Gr}}
+\newcommand{\Fil}{\operatorname{Fil}}
+\newcommand{\ch}{\operatorname{ch}}
+\newcommand{\Todd}{\operatorname{Todd}}
+\newcommand{\cl}{\operatorname{cl}}
+\newcommand{\Parf}{\operatorname{Parf}}
+\newcommand{\Tor}{\operatorname{Tor}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\RRR}{\mathrm{RRR}}
+\providecommand{\codim}{\operatorname{codim}}
+\providecommand{\Inv}{\operatorname{Inv}}
+\providecommand{\Pic}{\operatorname{Pic}}
+\providecommand{\Z}{\mathbb Z}
+\providecommand{\Q}{\mathbb Q}
+\providecommand{\Ahat}{\widehat A}
+\providecommand{\Ahp}{\widehat A^{+}}
+\providecommand{\That}{\widehat T}
+\providecommand{\rad}{\operatorname{rad}}
+\providecommand{\Gl}{\operatorname{Gl}}
+\providecommand{\GL}{\operatorname{Gl}}
+\providecommand{\ch}{\operatorname{ch}}
+\providecommand{\Todd}{\operatorname{Todd}}
+\providecommand{\Gr}{\operatorname{Gr}}
+\providecommand{\red}{\text{réd}}
+
+% Core macro additions
+\providecommand{\Atil}{\widetilde A}
+\providecommand{\Ctil}{\widetilde C}
+\providecommand{\K}{\mathrm K}
+\providecommand{\cC}{\mathcal C}
+\providecommand{\cF}{\mathscr F}
+\providecommand{\eps}{\varepsilon}
+\providecommand{\ellc}{\ell}
+\providecommand{\Tor}{\operatorname{Tor}}
+\providecommand{\Coker}{\operatorname{Coker}}
+\providecommand{\Ker}{\operatorname{Ker}}
+\providecommand{\Supp}{\operatorname{Supp}}
+\providecommand{\codim}{\operatorname{codim}}
+\providecommand{\Gr}{\operatorname{G}}
+\providecommand{\rank}{\operatorname{rank}}
+\providecommand{\rang}{\operatorname{rang}}
+\providecommand{\cO}{\mathcal O}
+\providecommand{\sgacircled}[1]{\tikz[baseline=(char.base)]\node[shape=circle,draw,inner sep=.35pt](char){\mbox{\scriptsize #1}};}
+
+\hypersetup{hypertexnames=false}
+\newcommand{\sgastandalonefootnotetext}[2]{%
+  \begingroup
+  \NoHyper
+  \footnotetext{#2}%
+  \endNoHyper
+  \endgroup
+}
+\providecommand{\R}{\mathbb R}
+\providecommand{\C}{\mathbb C}
+\providecommand{\N}{\mathbb N}
+\providecommand{\Zell}{\mathbb Z_\ell}
+\providecommand{\Qell}{\mathbb Q_\ell}
+\providecommand{\C}{\mathbb C}
+\providecommand{\Ch}{\operatorname{Ch}}
+\providecommand{\Sym}{\operatorname{Sym}}
+\providecommand{\Td}{\operatorname{Td}}
+\begin{document}
+\providecommand{\cS}{\mathcal S}
+\providecommand{\cD}{\mathcal D}
+\providecommand{\cE}{\mathscr E}
+\providecommand{\cG}{\mathscr G}
+\providecommand{\cL}{\mathscr L}
+\providecommand{\cM}{\mathscr M}
+\providecommand{\cP}{\mathscr P}
+\providecommand{\cK}{\mathcal K}
+\providecommand{\Db}{\mathrm D}
+\providecommand{\Kb}{\mathrm K}
+\providecommand{\Trc}{\operatorname{Tr}}
+\providecommand{\ob}{\operatorname{ob}}
+\providecommand{\Coh}{\operatorname{Coh}}
+\providecommand{\Cone}{\operatorname{Cone}}
+\providecommand{\im}{\operatorname{Im}}
+\providecommand{\Id}{\operatorname{Id}}
+\providecommand{\RR}{\mathrm{R.R.}}
+\providecommand{\RRR}{\mathrm{R.R.R.}}
+\providecommand{\GrR}{\mathrm{G}}
+\providecommand{\pr}{\operatorname{pr}}
+\providecommand{\cC}{\mathcal C}
+\providecommand{\cD}{\mathcal D}
+\providecommand{\cK}{\mathcal K}
+\providecommand{\cO}{\mathcal O}
+\providecommand{\cS}{\mathcal S}
+\providecommand{\Cpx}{\mathrm C}
+\providecommand{\Kpx}{\mathrm K}
+\providecommand{\Dpx}{\mathrm D}
+\providecommand{\D}{\mathrm D}
+\providecommand{\Ho}{\mathrm H}
+\providecommand{\RHom}{\mathrm R\!\operatorname{Hom}}
+\providecommand{\Ob}{\operatorname{ob}}
+\providecommand{\Coker}{\operatorname{Coker}}
+\providecommand{\Ker}{\operatorname{Ker}}
+\renewcommand{\Im}{\operatorname{Im}}
+\providecommand{\Hom}{\operatorname{Hom}}
+\providecommand{\Cone}{\operatorname{Cone}}
+\providecommand{\id}{\operatorname{Id}}
+\providecommand{\qis}{\xrightarrow{\sim}}
+\providecommand{\RHom}{\mathrm R\!\Hom}
+\providecommand{\Ext}{\operatorname{Ext}}
+\providecommand{\coh}{\operatorname{coh}}
+\providecommand{\PreCoh}{\operatorname{precoh}}
+\providecommand{\Tr}{\operatorname{Tr}}
+\providecommand{\Qis}{\operatorname{Qis}}
+\providecommand{\Rad}{\operatorname{rad}}
+\providecommand{\Spec}{\operatorname{Spec}}
+\providecommand{\End}{\operatorname{End}}
+\providecommand{\Id}{\operatorname{Id}}
+\providecommand{\varinjlim}{\mathop{\mathrm{lim}}\limits_{\longrightarrow}}
+\providecommand{\varprojlim}{\mathop{\mathrm{lim}}\limits_{\longleftarrow}}
+\providecommand{\qcoh}{\operatorname{qcoh}}
+\providecommand{\amp}{\operatorname{amp}}
+\providecommand{\Cpx}{\mathrm C}
+\providecommand{\Kpx}{\mathrm K}
+\providecommand{\Dpx}{\mathrm D}
+\providecommand{\Ho}{\mathrm H}
+\providecommand{\RHom}{\mathrm R\!\operatorname{Hom}}
+\renewcommand{\Ob}{\operatorname{ob}}
+\providecommand{\qis}{\xrightarrow{\sim}}
+\providecommand{\RHom}{\mathrm R\!\Hom}
+\providecommand{\Ext}{\operatorname{Ext}}
+\providecommand{\Hom}{\operatorname{Hom}}
+\providecommand{\Tr}{\operatorname{Tr}}
+\providecommand{\Add}{\operatorname{Add}}
+\providecommand{\Cart}{\underline{\operatorname{Cart}}}
+\providecommand{\perfamp}{\operatorname{parf.amp}}
+\providecommand{\perfdim}{\operatorname{parf.dim}}
+\providecommand{\toramp}{\operatorname{tor.amp}}
+\providecommand{\torf}{\operatorname{torf}}
+\providecommand{\injf}{\operatorname{injf}}
+\providecommand{\rg}{\operatorname{rg}}
+\providecommand{\is}{\mathrm{is}}
+\providecommand{\Mod}{\operatorname{Mod}}
+\providecommand{\Cpx}{\mathrm C}
+\providecommand{\Kpx}{\mathrm K}
+\providecommand{\Dpx}{\mathrm D}
+\providecommand{\Ho}{\mathrm H}
+\providecommand{\RHom}{\mathrm R\!\operatorname{Hom}}
+\renewcommand{\Ob}{\operatorname{ob}}
+\providecommand{\Hom}{\operatorname{Hom}}
+\providecommand{\RHom}{\mathrm R\!\operatorname{Hom}}
+\providecommand{\Ext}{\operatorname{Ext}}
+\providecommand{\Tor}{\operatorname{Tor}}
+\providecommand{\Tr}{\operatorname{Tr}}
+\providecommand{\Add}{\operatorname{Add}}
+\providecommand{\Cart}{\underline{\operatorname{Cart}}}
+\providecommand{\Parf}{\operatorname{Parf}}
+\providecommand{\coh}{\operatorname{coh}}
+\providecommand{\amp}{\operatorname{amp}}
+\providecommand{\cl}{\operatorname{cl}}
+\providecommand{\rg}{\operatorname{rg}}
+\providecommand{\Id}{\operatorname{Id}}
+\providecommand{\Ker}{\operatorname{Ker}}
+\renewcommand{\Im}{\operatorname{Im}}
+\providecommand{\cH}{\mathcal H}
+\providecommand{\Zs}{\mathbb Z_S}
+\providecommand{\A}{\mathcal A}
+\providecommand{\cC}{\mathcal C}
+\providecommand{\cCzero}{\mathcal C_0}
+\providecommand{\otL}{\mathop{\otimes}^{\mathrm L}}
+\providecommand{\tamp}{\operatorname{tor.amp}}
+\providecommand{\pamp}{\operatorname{parf.amp}}
+\providecommand{\pdim}{\operatorname{parf.dim}}
+\providecommand{\bon}{\mathrm b}
+\providecommand{\parf}{\operatorname{parf}}
+\providecommand{\parff}{\operatorname{parf}}
+\providecommand{\ac}{\mathrm{ac}}
+\providecommand{\End}{\operatorname{End}}
+\providecommand{\tr}{\operatorname{tr}}
+%%%%%%%%%%  scan idx 169  |  folio 156  %%%%%%%%%%
+On
+peut interpréter \(u\) (resp. \(v\)) comme un homomorphisme, dans \(\Dpx(U)\), de \(A|U\) dans \(\mathbb{R}\underline{\Hom}(E,F)|U\) (resp. \(\mathbb{R}\underline{\Hom}(F,E)|U\)), et former
+\[
+  u\otL v:A|U\longrightarrow(\mathbb{R}\underline{\Hom}(E,F)\otL\mathbb{R}\underline{\Hom}(F,E))|U.
+\]
+L'application \((u,v)\mapsto\langle u,v\rangle=\gamma\circ(u\otL v)\) définit une application \(H^0(U,A)\)-linéaire,
+\[
+  \Hom_{\Dpx(U)}(E|U,F|U)\otimes_{H^0(U,A)}\Hom_{\Dpx(U)}(F|U,E|U)
+  \longrightarrow H^0(U,A),
+\]
+que nous appellerons \emph{cup-produit}\footnote{même remarque que pour la définition de \(\Tr_{E|U}\)}.
+
+Le lien entre trace et cup-produit s'exprime dans la
+
+\textbf{Proposition 8.3.} \emph{Dans la situation de} (8.2), \emph{pour} \(u\in\Hom(E|U,F|U)\) \emph{et} \(v\in\Hom(F|U,E|U)\), \emph{on a}
+\[
+  \Tr_{E|U}(vu)=\Tr_{F|U}(uv)=\langle u,v\rangle.
+\]
+\emph{En particulier}, \emph{si} \(E=F\), \emph{on a}
+\[
+  \Tr_{E|U}(u)=\langle u,\Id\rangle=\langle\Id,u\rangle.
+\]
+
+\emph{Preuve.} Pour simplifier, nous supposerons \(U=S\). On a donc deux flèches \(u:A\longrightarrow E^\vee\otL F\) et \(v:A\longrightarrow F^\vee\otL E\), d'où
+\[
+  u\otL v:A\longrightarrow E^\vee\otL F\otL F^\vee\otL E.
+\]
+D'autre part, on a \(vu:A\to E^\vee\otL E\) et \(uv:A\to F^\vee\otL F\). La proposition résulte de la commutativité des diagrammes suivants (laquelle est de vérification «~purement mécanique~») :
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+ A \arrow[r,"u\otL v"] \arrow[dr,"vu"'] & E^\vee\otL F\otL F^\vee\otL E \arrow[d,"\Id\otL\tau_F"] \\
+ & E^\vee\otL E
+\end{tikzcd}
+\qquad
+\begin{tikzcd}[column sep=large,row sep=large]
+ A \arrow[r,"u\otL v"] \arrow[dr,"uv"'] & E^\vee\otL F\otL F^\vee\otL E \arrow[d,"\tau_E\otL\Id"] \\
+ & F^\vee\otL F
+\end{tikzcd}
+\]
+\[
+\begin{tikzcd}[column sep=
+%%%%%%%%%%  scan idx 170  |  folio 157  %%%%%%%%%%
+large,row sep=large]
+E^\vee\otL F\otL F^\vee\otL E \arrow[r,"\Id\otL\tau_E"] \arrow[d,"\Id\otimes\tau_F"'] & F^\vee\otL F \arrow[d,"\tau_F"]\\
+E^\vee\otL E \arrow[r,"\tau_E"'] & A .
+\end{tikzcd}
+\]
+
+\textbf{Corollaire 8.4.} \(E,F,U\) \emph{étant donnés comme en} (8.2), \emph{soient} \(u\in\Hom(E|U,E|U)\), \(s:E|U\to F|U\) \emph{un isomorphisme}, \emph{d'où} \(sus^{-1}\in\Hom(F|U,F|U)\). \emph{On a alors}
+\[
+  \Tr_{F|U}(sus^{-1})=\Tr_{E|U}(u).
+\]
+
+\emph{Preuve.} C'est immédiat.
+
+\textbf{Remarque 8.5.} Si \(\mathcal C\) est une \(S\)-catégorie fibrée, notons \(E(\mathcal C)\) la \(S\)-catégorie fibrée dont la fibre en \(U\in\Ob S\) est la catégorie ayant pour objets les couples \((L,u)\) où \(L\in\Ob\mathcal C_U\) et \(u\in\operatorname{End}_S(L)\) et pour flèches de \((L,u)\) à \((M,v)\) les flèches \(f:L\to M\) telles que \(fu=vf\). On peut, d'après (8.4), considérer l'homomorphisme trace comme un \(S\)-foncteur de \(E(\Dpx(S)_{\underline{\parf}})^{\mathrm{is}}\) dans \(\underline A\) (où l'exposant \(\mathrm{is}\) signifie que les seules flèches considérées sont les isomorphismes, et \(\underline A\) est la \(S\)-catégorie à fibres discrètes définie par \(A\) (cf. (6.6.a))). Comme tout complexe parfait est localement de tor-dimension finie, le \(S\)-foncteur d'oubli
+\[
+  E(\Dpx(S)_{\underline{\parf}})^{\mathrm{is}}
+  \longrightarrow
+  E(\Dpx(S)_{\parf})^{\mathrm{is}}
+\]
+induit un isomorphisme sur les champs associés. Par suite, l'homomorphisme
+%%%%%%%%%%  scan idx 171  |  folio 158  %%%%%%%%%%
+trace se prolonge de manière unique en un \(S\)-foncteur de \(E(\Dpx(S)_{\parf})^{\mathrm{is}}\) dans \(\underline A\).
+
+Pour \(E\in\Ob\Parf(U)\) (\(U\in\Ob S\)), on note encore
+\[
+  \Tr_E:\Hom(E,E)\longrightarrow H^0(U,A)
+\]
+l'homomorphisme correspondant, qui est un homomorphisme de \(H^0(U,A)\)-modules. On voit de même que la définition du cup-produit (8.2), ainsi que les assertions (8.3) et (8.4) se généralisent au cas de complexes parfaits (non nécessairement de tor-dimension finie).
+
+\textbf{Proposition 8.6.} \emph{Soient} \(U\in\Ob S\), \(E,F\in\Parf(U)\), \(u\in\Hom(E,E)\), \(v\in\Hom(F,F)\), \emph{d'où} \(u\otL v\in\Hom(E\otL F,E\otL F)\). \emph{On a}
+\[
+  \Tr_{E\otL F}(u\otL v)=\Tr_E(u)\,\Tr_F(v).
+\]
+
+\emph{Preuve.} La question étant locale, on peut supposer grâce à (8.4) et (4.10), que \(u\) et \(v\) sont des flèches de \(K^b(\mathcal C_0)\). Utilisant (8.1.2), on se ramène au cas où \(u\) et \(v\) sont des flèches de \(\mathcal C_0\). On termine grâce à (8.1.1).
+
+\section*{BIBLIOGRAPHIE}
+\begin{description}[leftmargin=2.5cm,style=nextline]
+\item[{[H]}]
+%%%%%%%%%%  scan idx 172  |  folio 159  %%%%%%%%%%
+Hartshorne, R. Residues and Duality, Lecture Notes n\textsuperscript{o}~20, Springer, 1966.
+\item[{[V]}] Verdier, J-L. Catégories dérivées, I.H.E.S., 1963.
+\item[{[G]}] Giraud, J. Cohomologie non abélienne, à paraître dans North Holl. Pub. Comp.
+\item[{SGA 4}] Cohomologie étale des schémas, par M. Artin, A. Grothendieck, et J-L. Verdier, à paraître dans North Holl. Pub. Comp.
+\item[{SGA 5}] Cohomologie \(\ell\)-adique et fonctions L, par A. Grothendieck, à paraître dans North Holl. Pub. Comp.
+\item[{[1]}] Hakim, M. Topos annelés et schémas relatifs, thèse (en préparation).
+\item[{[2]}] Verdier, J-L. Les catégories dérivées des catégories abéliennes, à paraître dans North Holl. Pub. Comp.
+\item[{[MULT]}] Cartan, H. et Eilenberg, S. Homological Algebra, Princeton, 1956.
+\end{description}
+
+
+
+\providecommand{\cS}{\mathcal S}
+\providecommand{\cCz}{\mathcal C_0}
+\providecommand{\cCone}{\mathcal C_1}
+\providecommand{\cA}{\mathcal A}
+\providecommand{\cB}{\mathcal B}
+\providecommand{\cL}{\mathcal L}
+\providecommand{\cI}{\mathcal I}
+\providecommand{\cJ}{\mathcal J}
+\providecommand{\Db}{\mathrm D}
+\providecommand{\Kb}{\mathrm K}
+\providecommand{\Dminus}{\mathrm D^{-}}
+\providecommand{\Kminus}{\mathrm K^{-}}
+\providecommand{\Kbd}{\mathrm K^{b}}
+\providecommand{\Mod}{\operatorname{Mod}}
+\providecommand{\Lib}{\operatorname{Lib}}
+\providecommand{\Loclib}{\operatorname{Loclib}}
+\providecommand{\Qcoh}{\operatorname{Qcoh}}
+\providecommand{\Coh}{\operatorname{Coh}}
+\providecommand{\Ext}{\operatorname{Ext}}
+\providecommand{\Hom}{\operatorname{Hom}}
+\renewcommand{\Ob}{\operatorname{ob}}
+\providecommand{\im}{\operatorname{Im}}
+\providecommand{\coker}{\operatorname{Coker}}
+\providecommand{\coh}{\operatorname{coh}}
+\providecommand{\parf}{\operatorname{parf}}
+\providecommand{\amp}{\operatorname{amp}}
+\providecommand{\RHom}{\operatorname{RHom}}
+
+
+%%%%%%%%%%  scan idx 173  |  folio 160  %%%%%%%%%%
+\section*{\underline{Exposé II}\\[3pt] \underline{\underline{EXISTENCE DE RÉSOLUTIONS GLOBALES}}}
+\begin{center}
+\underline{par L. ILLUSIE}
+\end{center}
+
+\section*{1. Critères généraux de globalisation}
+
+\textbf{1.0.} Dans ce numéro, on se donne un site $S$, une $S$-catégorie abélienne plate $\mathcal C$ (I 1.1), et une sous-$S$-catégorie additive strictement pleine $\mathcal C_0$ (I 1.1). On suppose $\mathcal C_0$ localement quasi-relevable dans $\mathcal C$ (I 1.2) et localement quasi-stable par noyau d'épimorphisme (I 1.2).
+
+\textbf{Proposition 1.1.} Soit $S\in\Ob S$, et supposons que :
+\begin{enumerate}[label=(\roman*)]
+\item $\mathcal C_{0S}$ est quasi-relevable dans $\mathcal C_S$ (I 1.2) ($\mathcal C_S$ étant considérée comme catégorie fibrée sur un site ponctuel) ;
+\item tout objet de $\mathcal C_S$ qui est de $\mathcal C_0$-type fini (I 1.2) (resp. de $\mathcal C_0$-présentation finie (I 2.8)) est de $\mathcal C_{0S}$-type fini.
+\end{enumerate}
+Alors :
+\begin{enumerate}[label=\alph*)]
+\item $\mathcal C_{0S}$ est quasi-stable par noyau d'épimorphisme (I 1.2) ($\mathcal C_{0S}$ étant considérée comme catégorie fibrée sur un site ponctuel).
+\item Soient $E\in\Ob \mathrm D^{-}(\mathcal C_S)$ et $n\in\mathbb Z$. Si $E$ est $n$-$\mathcal C_0$-pseudo-cohérent (I 2.3), $E$ est $n$-$\mathcal C_{0S}$-pseudo-cohérent (resp. $(n+1)$-$\mathcal C_{0S}$-pseudo-cohérent). En d'autres termes, on a
+\[
+\mathrm D^{-}(\mathcal C_S)_{n-\mathcal C_0\text{-coh}}
+=
+\mathrm D^{-}(\mathcal C_S)_{n-\mathcal C_{0S}\text{-coh}}
+\]
+(resp.
+\[
+\mathrm D^{-}(\mathcal C_S)_{n-\mathcal C_0\text{-coh}}
+\subset
+\mathrm D^{-}(\mathcal C_S)_{(n+1)-\mathcal C_{0S}\text{-coh}}
+\subset
+\mathrm D^{-}(\mathcal C_S)_{(n+1)-\mathcal C_0\text{-coh}},
+\]
+inclusions de sous-catégories strictement pleines de $\mathrm D(\mathcal C_S)$, l'inclusion de droite étant d'ailleurs triviale).
+\item Pour que $E\in\Ob\mathrm D^{-}(\mathcal C_S)$ soit pseudo-cohérent relativement à $\mathcal C_0$ (I 2.3), il faut et il suffit qu'il le soit relativement à $\mathcal C_{0S}$ ; autrement dit, on a
+\[
+\mathrm D^{-}(\mathcal C_S)_{\mathcal C_0\text{-coh}}
+=
+\mathrm D^{-}(\mathcal C_S)_{\mathcal C_{0S}\text{-coh}}.
+\]
+En outre, le foncteur canonique
+\[
+\mathrm K^{-}(\mathcal C_{0S})/\mathrm K^{-,\varnothing}(\mathcal C_{0S})
+\longrightarrow \mathrm D(\mathcal C_S),
+\]
+où $\mathrm K^{-,\varnothing}(\mathcal C_{0S})$ désigne la sous-catégorie épaisse de $\mathrm K^{-}(\mathcal C_{0S})$ formée des
+
+\end{enumerate}
+\end{document}

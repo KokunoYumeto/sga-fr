@@ -1,0 +1,14 @@
+% from main.tex
+%%%%%%%%%%  scan idx 241  |  folio 228  %%%%%%%%%%
+\emph{Preuve de} (A). Par définition, \(p\) est somme d'une famille d'ouverts \(U_\alpha\) de \(X_2\) qui recouvrent \(X_2\). Chaque \(U_\alpha\) est induit par un ouvert \(V_\alpha\) de \(Y_2\), et les \(V_\alpha\) recouvrent un voisinage ouvert \(X'_2\) de \(X_2\) dans \(Y_2\). On a donc un diagramme commutatif à carré cartésien
+\[
+\begin{tikzcd}
+X_1 \arrow[r,hook,"i'_1"] \arrow[d,"p"'] & X'_1 \arrow[d,"p'"]\\
+X_2 \arrow[r,hook,"i'_2"] \arrow[rr,bend right,"i_2"'] & X'_2 \arrow[r,hook,"j"] & Y_2,
+\end{tikzcd}
+\]
+où \(i'_1\) et \(i'_2\) sont des immersions fermées, \(p\) et \(p'\) des morphismes spéciaux, et \(j\) une immersion ouverte. La condition « \(i_{2*}(E)\) \(n\)-pseudo-cohérent » équivaut évidemment à « \(i'_{2*}(E)\) \(n\)-pseudo-cohérent ». D'autre part, il résulte aussitôt de (1.1.3) que la condition « \(i'_{2*}(E)\) \(n\)-pseudo-cohérent » équivaut à « \(i'_{1*}p^*(E)\) \(n\)-pseudo-cohérent ». Appliquant alors (1.1.4) aux factorisations \((jp')i'_1\) et \(qi_1\) de \(i_2p\), et à \(p^*(E)\in\Ob D(X_1)\), on conclut finalement que « \(i'_{2*}(E)\) \(n\)-pseudo-cohérent » équivaut à « \(i_{1*}p^*(E)\) \(n\)-pseudo-cohérent », cqfd.
+
+On a donc montré que la catégorie \(D(f)_{n\text{-}\coh}\) définie plus haut au moyen du diagramme \((a')\) ne dépend en fait que de \(f\). Par ailleurs, il est trivial sur la définition qu'elle vérifie bien les conditions (i) à (iii) de (1.1). Cela termine donc la démonstration de (1.1).
+
+\textbf{Définition 1.2.} Soient \(f:X\to Y\) un morphisme localement de type fini, \(E\in\Ob D(X)\), \(n\in\mathbb Z\). On dira que \(E\) est \(n\)-pseudo-cohérent relativement à \(f\) si \(E\in\Ob D(f)_{n\text{-}\coh}\) (cf. (1.1)). On dira que \(E\) est pseudo-cohérent (ou encore \((-\infty)\)-pseudo-cohérent) relativement à \(f\) si \(E\) est \(n\)-pseudo-cohérent relativement à \(f\) pour tout \(n\in\mathbb Z\). On notera \(D(f)_{\mathrm{coh}}\) la sous-catégorie

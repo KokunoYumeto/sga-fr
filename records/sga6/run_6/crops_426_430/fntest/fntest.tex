@@ -1,0 +1,32 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{tikz-cd}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\sgastandalonefootnotetext}[2]{%
+  \begingroup
+  \NoHyper
+  \footnotetext{#2}%
+  \endNoHyper
+  \endgroup
+}
+\begin{document}
+Texte\footnote{Une note avant.} de test.
+\[
+\begin{array}{ll}
+\text{a)}& P_0\longrightarrow B\text{ est un homomorphisme d'anneaux~;}\footnotemark\\[0.4ex]
+\text{b)}& \forall x\in P_i,\ \forall y\in P_j,\quad d(xy)=d(x)y+(-1)^i x\,d(y).
+\end{array}
+\]
+\sgastandalonefootnotetext{x-tor-resolution}{On peut montrer qu'une telle résolution existe toujours.}
+Alors les applications
+\begin{equation}\notag
+\begin{tikzcd}[column sep=large,row sep=large]
+P_i\otimes_A P_j \arrow[r] \arrow[d] & (P_{i-1}\otimes_A P_j)\oplus(P_i\otimes_A P_{j-1}) \arrow[d]\\
+P_{i+j} \arrow[r] & P_{i+j-1},
+\end{tikzcd}
+\end{equation}
+et par suite\footnote{Une note après.}.
+\end{document}

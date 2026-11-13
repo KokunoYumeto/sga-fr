@@ -1,0 +1,19 @@
+% from main.tex
+%%%%%%%%%%  scan idx 251  |  folio 238  %%%%%%%%%%
+où \(i,j,j'\)
+sont des immersions fermées, \(g'\) un morphisme lisse et affine, \(p,p'\) la projection de l'espace projectif type. Supposons \(E\) pseudo-cohérent rel. à \(S\). D'après (1.1 (iii)), cela signifie que \((ji)_*(E)\) est pseudo-cohérent. On doit montrer que \(\mathbf Rf_*(E)\) est pseudo-cohérent rel. à \(S\), i.e. (1.1 (iii)) que
+\[
+  j'_*\mathbf Rf_*(E)
+\]
+est pseudo-cohérent. Mais on a
+\[
+  j'_*\mathbf Rf_*(E)\xrightarrow{\sim} \mathbf Rp'_*(ji)_*(E),
+\]
+l'assertion sera donc conséquence du résultat plus précis suivant :
+
+\textbf{Théorème 2.2.2.} Soient \(Y\) un schéma affine, \(f:X=\mathbb P^r_Y\longrightarrow Y\) la projection d'un espace projectif type, \(E\in\Ob D^b(X)_{\mathrm{coh}}\), \(a\in\mathbb Z\). Alors \(\mathbf Rf_*(E)\) est pseudo-cohérent. En outre, si \(E\) est acyclique en degré \(>a\), \(\mathbf Rf_*(E)\) est acyclique en degré \(>a+r\), et il existe un entier \(N\) tel que, pour tout \(n\geq N\), \(\mathbf Rf_*(E(n))\) (où \(E(n)=E\otimes\mathcal O_X(n)\)) soit acyclique en degré \(>a\).
+
+\emph{Preuve.} Comme \(Y\) est affine, \(X\) est quasi-compact et séparé, donc (II 2.2.9 a)) \(E\) est isomorphe, dans \(D(X)\), à un complexe \(F\) à degrés bornés supérieurement tel que, pour tout \(i\), \(F^i\in\Ob L(X)\), i.e. (loc. cit.) soit somme directe finie de faisceaux du type \(\mathcal O_X(-n)\) \((n>0)\). En outre, si \(E\) est acyclique en degré \(>a\), on peut choisir \(F\) de manière que \(F^i=0\) pour \(i>a\) : cela résulte formellement de l'assertion précédente, compte tenu de (I 2.10 a) et II 2.2.8 a)). Quitte à remplacer \(E\) par \(F\), on peut donc supposer que \(E^i\in\Ob L(X)\) pour tout \(i\), et \(E^i=0\) pour \(i>a\). Comme \(X\) est recouvert par \((r+1)\) ouverts affines, on a, d'après (EGA III 1.4.10) et la suite spectrale d'hypercohomologie, \(R^qf_*(E)=0\) pour \(i>a+r\). Soit \(t\) un entier \(\leq a\), posons \(E'=(0\to E^t\to\cdots\to E^a\to0)\). On a une suite exacte
+\[
+  0\longrightarrow E'\longrightarrow E\longrightarrow E''\longrightarrow0,
+\]

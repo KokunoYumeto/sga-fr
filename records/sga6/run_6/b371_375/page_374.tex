@@ -1,0 +1,42 @@
+% from main.tex
+%%%%%%%%%%  scan idx 387  |  folio 374  %%%%%%%%%%
+suite exacte :
+\[
+  0\longrightarrow \Projz(L_{r+1})\longrightarrow\cdots\longrightarrow
+  \Projz(L_0)\longrightarrow\Projz(M)\longrightarrow 0,
+\]
+et l'égalité suivante dans \(K^{\bullet}(X)\) :
+\[
+  \cl(F)=\sum_i(-1)^i\cl\bigl(\Projz(L_i)\bigr).
+\]
+En utilisant la filtration sur les \(L_i\) définie en 1.7, on trouve :
+\[
+  \cl(\Projz(L_i))=\sum_j \cl\bigl(\Projz(N_{ij}\otimes_{\mathcal O_S}B(j))\bigr).
+\]
+Or \(\Projz(N_{ij}\otimes_{\mathcal O_S}B(j))=f^*(N_{ij})(j)\)~; on trouve donc :
+\[
+\begin{aligned}
+  \cl(\Projz(L_i))
+  &=\sum_j \cl\bigl(f^*(N_{ij})\bigr).\xi^j \\
+  &=\sum_j f^*\bigl(\cl(N_{ij})\bigr).\xi^j.
+\end{aligned}
+\]
+On a donc finalement exprimé \(\cl(F)\) comme combinaison linéaire à coefficients dans \(K^{\bullet}(S)\) des puissances de \(\xi\).
+
+\textbf{1.9.} Pour voir que \(1,\xi,\ldots,\xi^{r+1}\) sont linéairement dépendants sur \(K^{\bullet}(S)\), on considère l'homomorphisme canonique surjectif : \(f^*(E)\to\mathcal O_X(1)\), dont le noyau \(F\) est localement libre de rang \(r\). On peut donc écrire :
+\[
+  \lambda^{r+1}\bigl(f^*(E)-\xi\bigr)=0,
+  \qquad \text{avec } E=\cl E,
+\]
+les opérations \(\lambda^i\) sur \(K^{\bullet}(X)\) étant définies dans V 2.2. On obtient donc :
+\[
+  \sum_{i=0}^{r+1}\lambda^i(f^*(E))\lambda^{r+1-i}(-\xi)=0.
+\]
+Comme \(\mathcal O_X(1)\) est un faisceau inversible, \(\lambda_t(\xi)=1+\xi t\), et par suite, \(\lambda_t(-\xi)=1/1+\xi t\), d'où finalement la relation :
+\begin{equation}\tag{1.9.1}
+  \sum_{i=0}^{r+1}(-1)^{r+1-i}\xi^{r+1-i}\lambda^i(E)=0.
+\end{equation}
+
+Montrons enfin que \(1,\xi,\ldots,\xi^r\) sont indépendants sur \(K^{\bullet}(S)\)\footnote{Cette démonstration est due à J.P. Jouanolou.}.
+
+

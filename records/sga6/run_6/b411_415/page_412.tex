@@ -1,0 +1,14 @@
+% from main.tex
+%%%%%%%%%%  scan idx 425  |  folio 412  %%%%%%%%%%
+suffit donc, pour achever la démonstration, de noter que :
+\[
+\Supp\bigl(H^*(M^\bullet\overset{\mathbf L}{\otimes}M'{}^\bullet)\bigr)
+ \subset \Supp(H^*(M^\bullet))\cap\Supp(H^*(M'{}^\bullet)).
+\]
+Pour montrer que $K^{\bullet}(X)_{d+1}$ est nul, on prend $x\in K^{\bullet}(X)_{d+1}$, et $Y=X$; il existe alors $M^\bullet$ tel que $x=\cl(M^\bullet)$, et $\codim_X(\Supp(H^*(M^\bullet)))\ge d+1$; comme $X$ est de dimension $d$, cela entraine $\Supp(H^*(M^\bullet))=\varnothing$, donc $M^\bullet$ est acyclique, et $x=0$.
+
+\textbf{Lemme 6.7.} Soit $X=\Spec(A)$ un schéma affine noethérien, $x_1,\ldots,x_k$ un nombre fini de points de $X$, $E$ un $\mathcal O_X$-Module inversible. Alors, il existe une section $s\in\Gamma(X,E)$ telle que pour tout $i$, $s_{x_i}$ soit une base de $E_{x_i}$.
+
+Posons $M=\Gamma(X,E)$. Pour tout $i$, soit $x'_i$ un point fermé de $X$ tel que $x'_i\in\{x_i\}$. Les $x'_i$ correspondent à des idéaux maximaux $\mathfrak m_i$ de $A$, qu'on peut supposer tous distincts, quitte à changer l'ensemble d'indices de façon que chacun des $\mathfrak m_i$ intervienne une fois et une seule fans la famille $(\mathfrak m_i)$. Comme $E$ est inversible, on a pour tout $i$ un isomorphisme $M_{\mathfrak m_i}\simeq A_{\mathfrak m_i}$; d'où on déduit un isomorphisme $M/\mathfrak m_iM\simeq A/\mathfrak m_i$, puis $\prod_i M/\mathfrak m_iM\simeq\prod_i A/\mathfrak m_i$, soit encore $A/\prod_i\mathfrak m_i\simeq M/(\prod_i\mathfrak m_i)M$. En relevant ce dernier isomorphisme, on obtient un homomorphisme $A\to M$ tel que l'homomorphisme $A_{\mathfrak m_i}\to M_{\mathfrak m_i}$ correspondant soit pour tout $i$ un isomorphisme modulo $\mathfrak m_i$, donc un isomorphisme d'après Nakayama. L'image de $1$ par cet homomorphisme donne donc une section $s$ de $E$ qui est une base de $E_{x'_i}$ pour tout $i$. Comme l'ensemble des points où $s$ est une base de $E$ est un ouvert de $X$, $s$ est aussi une base de $E_{x_i}$ pour $i=1,\ldots,k$.
+
+\textbf{Lemme 6.8.} Soient $X$ un schéma noethérien ayant un faisceau ample $L$, $E$ un $\mathcal O_X$-Module inversible, $x_1,\ldots,x_k$ des points de $X$. Alors il existe un

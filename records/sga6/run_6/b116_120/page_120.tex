@@ -1,0 +1,26 @@
+% from main.tex
+%%%%%%%%%%  scan idx 133  |  folio 120  %%%%%%%%%%
+un
+diagramme de \(\Cpx(\mathcal C_S)\), où \(P\) est strictement \(\mathcal C_0\)-parfait et \(f\) un quasi-isomorphisme. L'ensemble des \(X\) au-dessus de \(S\) tels qu'il existe une flèche \(u:P_X\to E_X\) de \(\Cpx(\mathcal C_X)\), telle que le diagramme
+\[
+\begin{tikzcd}
+& P_X \arrow[d,"v_X"]\\
+E_X \arrow[r,"f_X"] \arrow[ur,"u"] & F_X
+\end{tikzcd}
+\]
+soit commutatif dans \(\Kpx(\mathcal C_X)\) est un raffinement de \(S\).
+
+\emph{Preuve.} Soit \(G\) le cône de \(f\). On a la suite exacte
+\[
+  \longrightarrow \Hom_{\Kpx(\mathcal C_S)}(P,E)
+  \longrightarrow \Hom_{\Kpx(\mathcal C_S)}(P,F)
+  \longrightarrow \Hom_{\Kpx(\mathcal C_S)}(P,G)
+  \longrightarrow .
+\]
+Comme \(G\) est acyclique, l'image de \(v\) dans \(\Hom_{\Kpx(\mathcal C_S)}(P,G)\) est localement nulle d'après (4.1). Donc, quitte à localiser, il existe \(u:P\to E\) tel que \(v=fu\) dans \(\Kpx(\mathcal C_S)\), cqfd.
+
+\textbf{Corollaire 4.3.} \emph{Soit \(f:E\to F\) un quasi-isomorphisme de \(\Cpx(\mathcal C_S)\), avec \(F\) strictement parfait (relativement à \(\mathcal C_0\)). L'ensemble des \(X\) au-dessus de \(S\) tels qu'il existe un quasi-isomorphisme \(g:F_X\to E_X\) tel que \(f_Xg\) soit homotope à \(\Id_{F_X}\) est un raffinement de \(S\).}
+
+\emph{Preuve.} C'est un cas particulier de (4.2).
+
+\textbf{Scholie 4.4.} Soit \(F\in\Ob\Kpx(\mathcal C_S)\). On peut définir (par exemple à l'aide d'un clivage de \(\mathcal C\) (SGA 1 VI 7.1)) une catégorie \((\Qis/F)\) fibrée sur \(S/S\), dont la fibre en \(X\) au-dessus de \(S\) est la catégorie \((\Qis/F_X)^\circ\) (opposée de la catégorie des quasi-isomorphismes de but \(F_X\)). On peut alors exprimer (4.3) en disant que, si \(F\) est

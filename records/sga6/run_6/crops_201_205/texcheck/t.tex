@@ -1,0 +1,149 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}\usepackage{lmodern}
+\usepackage{amsmath,amssymb,mathtools}\usepackage[normalem]{ulem}
+\providecommand{\cO}{\mathcal O}\providecommand{\R}{\mathbb R}\providecommand{\N}{\mathbb N}
+\providecommand{\Diff}{\operatorname{Diff}}\providecommand{\Homop}{\operatorname{Hom}}
+\providecommand{\pr}{\operatorname{pr}}
+\begin{document}
+\[
+  \begin{aligned}
+  P^0_{X/S}&\simeq\cO_X,
+%%%%%%%%%%  scan idx 214  |  folio 201  %%%%%%%%%%
+  \end{aligned}
+\]
+où $\Omega^1_{X/S}$ est le faisceau des différentielles relatives de $X$ par rapport à $S$ où \emph{faisceau cotangent relatif}. On note $T_{X/S}$ le dual de $\Omega^1_{X/S}$, qu'on appelle \emph{faisceau tangent relatif}. Le faisceau $T_{X/S}$ (resp. $\Omega^1_{X/S}$) est le faisceau des sections d'un fibré vectoriel de rang fini sur $X$, qu'on appelle \emph{fibré tangent} (resp. \emph{cotangent}) \emph{relatif}, et qui est une $S$-variété mixte au-dessus de $X$.
+
+L'homomorphisme $f^{-1}(\cO_S)$-linéaire (correspondant à la structure de $\cO_X$-Algèbre définie par $\pr_2$)
+\[
+  d^n_{X/S}:\cO_X\longrightarrow P^n_{X/S},
+\]
+qui à une section de $\cO_X$ associe sa partie principale à l'ordre $n$, est appelé \emph{opérateur différentiel universel d'ordre} $n$ sur $X$ relativement à $S$.
+
+\textbf{1.2.2.} Plus généralement, si $E$ est un $\cO_X$-Module localement libre de type fini, on peut considérer le faisceau $P^n_{X/S}(E)=P^n_{X/S}\oplus_{\cO_X}E$ des parties principales à l'ordre $n$ de $E$ (le produit tensoriel étant défini au moyen de la deuxième structure de $\cO_X$-Module sur $P^n_{X/S}$), et l'on a un opérateur différentiel universel
+\[
+  d^n_{X/S}(E):E\longrightarrow P^n_{X/S}(E).
+\]
+
+Soient $E,F$ des $\cO_X$-Modules localement libres de type fini. Par définition, un opérateur différentiel de $E$ dans $F$ d'ordre $\le n$ est un homomorphisme $f^{-1}(\cO_X)$-linéaire de $E$ dans $F$ qui se factorise à travers $d^n_{X/S}(E)$ en un homomorphisme $\cO_X$-linéaire de $P^n_{X/S}(E)$ dans $F$ (la factorisation est alors unique). En d'autres termes, l'opérateur $d^n_{X/S}(E)$ établit une bijection
+\begin{equation}\tag{1.2.2.1}
+  \Homop_{\cO_X}\bigl(P^n_{X/S}(E),F\bigr)
+  \xrightarrow{\sim}
+  \Diff^n(E,F),
+\end{equation}
+où $\Diff^n(E,F)$ désigne l'ensemble des opérateurs différentiels de $E$
+
+%%%%%%%%%%  scan idx 215  |  folio 202  %%%%%%%%%%
+dans $F$ d'ordre $\le n$.
+
+\textbf{1.2.3.} Nous aurons aussi à considérer des opérateurs différentiels à coefficients complexes. Notons $\cO_S\otimes\mathbb C$ (resp. $\cO_X\otimes\mathbb C$) le complexifié de $\cO_S$ (resp. $\cO_X$). Soient $E,F$ des $(\cO_X\otimes\mathbb C)$-Modules localement libres de type fini. Par un opérateur différentiel de $E$ dans $F$ d'ordre $\le n$, on entendra un homomorphisme $f^{-1}(\cO_S\otimes\mathbb C)$-linéaire de $E$ dans $F$ qui se factorise à travers $d^n_{X/S}(E)$ en un homomorphisme $(\cO_X\otimes\mathbb C)$-linéaire de $P^n_{X/S}(E)$ dans $F$. Si l'on désigne par $\Diff^n_\mathbb C(E,F)$ l'ensemble de ces opérateurs, l'opérateur $d^n_{X/S}(E)$ définit donc une bijection
+\begin{equation}\tag{1.2.3.1}
+  \Homop_{\cO_X\otimes\mathbb C}\bigl(P^n_{X/S}(E),F\bigr)
+  \xrightarrow{\sim}
+  \Diff^n_\mathbb C(E,F).
+\end{equation}
+
+\textbf{1.2.4.} Pour $n\ge1$, on a une suite exacte canonique
+\[
+  0\longrightarrow S^n(\Omega^1_{X/S})
+  \longrightarrow P^n_{X/S}
+  \longrightarrow P^{n-1}_{X/S}
+  \longrightarrow 0.\text{\footnotemark}
+\]
+\footnotetext{$S^n(\ )$ désigne la puissance symétrique $n$-ième.}%
+D'où, en tensorisant sur $\cO_X$\footnote{Pour la deuxième structure de $\cO_X$-Module de $P^n_{X/S}$ et $P^{n-1}_{X/S}$.} par un $\cO_X$-Module (resp. $(\cO_X\otimes\mathbb C)$-Module) localement libre de type fini $E$, une suite exacte de $\cO_X$ (resp. $(\cO_X\otimes\mathbb C)$)-Modules~:
+\begin{equation}\tag{1.2.4.1}
+  0\longrightarrow S^n(\Omega^1_{X/S})\otimes_{\cO_X}E
+  \longrightarrow P^n_{X/S}(E)
+  \longrightarrow P^{n-1}_{X/S}(E)
+  \longrightarrow 0.
+\end{equation}
+Soit $F$ un $\cO_X$ (resp. $(\cO_X\otimes\mathbb C)$)-Module localement libre de type fini. Appliquant à (1.2.4.1) le foncteur $\Homop_{\cO_X}(.,F)$ (resp. $\Homop_{\cO_X\otimes\mathbb C}(.,F)$), on en déduit, compte tenu des identifications (1.2.2.1) et (1.2.4.1), une suite exacte
+\begin{equation}\tag{1.2.4.2}
+\begin{gathered}
+  0\longrightarrow \Diff^{n-1}(E,F)
+  \longrightarrow \Diff^n(E,F)
+  \xrightarrow{\sigma_n}
+  \Homop_{\cO_X}\bigl(S^n(\Omega^1_{X/S})\otimes_{\cO_X}E,F\bigr)\\
+  (\text{resp. } 0\longrightarrow \Diff^{n-1}_\mathbb C(E,F)
+  \longrightarrow \Diff^n_\mathbb C(E,F)
+  \longrightarrow
+  \Homop_{\cO_X\otimes\mathbb C}\bigl(S^n(\Omega^1_{X/S})\otimes_{\cO_X}E,F\bigr)).
+\end{gathered}
+\end{equation}
+
+%%%%%%%%%%  scan idx 216  |  folio 203  %%%%%%%%%%
+(Si $X$ est
+paracompact et $\cO_X$ mou (cf. II 2.3.1) on peut compléter la suite exacte (1.2.4.2) en ajoutant un zéro à droite). L'homomorphisme $\sigma_n$ est appelé \emph{symbole}~; il associe à un opérateur différentiel de $E$ dans $F$ d'ordre $\le n$ une «~application polynomiale homogène de degré $n$ de $\Omega^1_{X/S}$ dans $\underline{\Homop}_{\cO_X}(E,F)$ (resp. $\underline{\Homop}_{\cO_X\otimes\mathbb C}(E,F)$)~», que l'on peut regarder encore, si l'on veut, comme un homomorphisme $p^*(E)\longrightarrow p^*(F)$ (où $p$ est la projection sur $X$ du fibré cotangent relatif (1.2.1)), satisfaisant une certaine condition d'homogénéité.
+
+Soient $E,F,G$ des $\cO_X$-Modules localement libres de type fini, et $u\in\Diff^m(E,F)$, $v\in\Diff^n(F,G)$, d'où $vu\in\Diff^{m+n}(E,G)$. On vérifie facilement la relation
+\begin{equation}\tag{1.2.4.3}
+  \sigma_{m+n}(vu)=\sigma_n(v)\sigma_m(u).
+\end{equation}
+(On a la même relation pour les opérateurs différentiels à coefficients complexes). En particulier, si le composé de deux opérateurs différentiels est nul, le composé de leurs symboles l'est aussi.
+
+\textbf{1.2.5.} Soit $E$ un complexe, à degrés bornés, d'opérateurs différentiels à coefficients complexes sur $X$ relativement à $S$ (1.2.3), $d^i:E^i\longrightarrow E^{i+1}$ étant d'ordre $\le n_i$. D'après (1.2.4.3), on a
+\[
+  \sigma_{n_{i+1}}(d^{i+1})\,\sigma_{n_i}(d^i)=0.
+\]
+On dit que $E$ est un \emph{complexe elliptique} d'ordre $\underline{n}=(n_i)$ si le complexe $(p^*(E^i),\sigma_{n_i}(d^i))$ (où $p$ est la projection sur $X$ du fibré cotangent) est acyclique en dehors de la section nulle.
+
+Quand $S$ est réduit à un point, la notion précédente de complexe elliptique sur $X$ coïncide avec la notion usuelle, étudiée en détail dans [4] ou [16].
+
+\textbf{1.2.6.} Soient $s\in S$, $i_s$ l'inclusion de la fibre $X_s$ dans $X$ (considérée comme monomorphisme d'espaces annelés) cf.~(1.1)). Pour $n\in\N$, on a un isomorphisme canonique
+
+%%%%%%%%%%  scan idx 217  |  folio 204  %%%%%%%%%%
+\[
+  i_s^*(P^n_{X/S})\simeq P^n_{X_s},
+\]
+d'où un
+homomorphisme de restriction
+\[
+  i_s^*:\Diff^n(E,F)
+  \longrightarrow
+  \Diff^n\bigl(i_s^*(E),i_s^*(F)\bigr),
+\]
+pour $E,F$ des $\cO_X$-Modules localement libres de type fini (et un homomorphisme analogue pour les opérateurs à coefficients complexes). Soit $E$ un complexe, à degrés bornés, d'opérateurs différentiels à coefficients complexes sur $X$; pour que $E$ soit elliptique (1.2.5) il faut et il suffit que, pour tout $s\in S$, $i_s^*(E)$ soit un complexe elliptique (vérification laissée au lecteur).
+
+\subsection*{2. Lemmes de rigidité}
+
+\textbf{2.0.} Il est «~bien connu~» que les variétés différentiables compactes sont «~rigides~», i.e. n'admettent pas de déformation continue autre que triviale. Toutefois, comme ce résultat nous servira de façon essentielle au §3, et que les références semblent assez rares, il n'est peut-être pas inutile de donner des énoncés précis et quelques démonstrations.
+
+On se fixe un espace topologique $S$. Les variétes mixtes dont il sera question seront supposées de classe $C^r$, avec $r\ge1$ (éventuellement $r=\infty$).
+
+\textbf{2.1. Notations.} Soient $X,Y$ des $S$-variétés mixtes. On note $\Homop(X,Y)$ l'ensemble des $S$-morphismes de $X$ dans $Y$, $\underline{\Homop}(X,Y)$ le faisceau sur $X$ des germes de $S$-morphismes de $X$ dans $Y$ (défini par
+\[
+  \underline{\Homop}(X,Y)(U)=\Homop(U,Y)
+\]
+pour $U$ ouvert de $X$).
+
+Soit $s\in S$. On note $i_s$ l'inclusion de $X_s$ dans $X$. On a un homomorphisme canonique d'induction
+\begin{equation}\tag{2.1.1}
+  i_s^{-1}\underline{\Homop}(X,Y)
+  \longrightarrow
+  \underline{\Homop}(X_s,Y_s),
+\end{equation}
+
+%%%%%%%%%%  scan idx 218  |  folio 205  %%%%%%%%%%
+qui est un
+épimorphisme, comme on le constate aussitôt. Dans le cas où $Y=S\times\R$, le faisceau $\underline{\Homop}(X,Y)$ s'identifie canoniquement à $\cO_X$, et l'épimorphisme (2.1.1) à l'épimorphisme
+\[
+  i_s^{-1}(\cO_X)\longrightarrow i_s^*(\cO_X)=\cO_{X_s}
+\]
+considéré en (1.1).
+
+\textbf{Proposition}\footnote{Communiquée au rédacteur par A. Douady.} \textbf{2.2.} Soient $X,Y$ des $S$-variétés mixtes, et $s\in S$. On suppose que la fibre $X_s$ est paracompacte et que $s$ admet un système fondamental de voisinages paracompacts. Soient $A$ un fermé de $X_s$, et $f\in H^0(A,\underline{\Homop}(X_s,Y_s))$.
+Le sous-faisceau $F$ de $i_s^{-1}\underline{\Homop}(X,Y)$ formé des germes «~qui prolongent $f$~» (i.e. dont l'image par (2.1.1) coïncide avec $f$ au-dessus de $A$) est mou.
+
+\emph{Preuve.} Soit $X'$ un voisinage ouvert de $x$ dans $X$, isomorphe (comme variété mixte) à $S'\times U$, où $S'$ est un voisinage paracompact de $s$ et $U$ un ouvert relativement compact de $\R^m$, et tel que l'image par $f$ de $X'_s\cap A$ soit contenue dans un ouvert de $Y$ isomorphe à $S'\times V$, ou $V$ est un ouvert convexe de $\R^n$ contenant l'origine. D'après (T.F. II 3.4.1), il suffit de montrer que toute section de $F$ au-dessus d'un fermé $A_0$ de $X_s$ contenu dans $X'_s$ se prolonge à $X'_s$. Or $X'_s$ ($\simeq\{s\}\times U$) est relativement compact, de sorte qu'un fermé de $X_s$ contenu dans $X'_s$ est compact. Identifions $X'$ (resp. $Y'$) à $S'\times U$ (resp. $S'\times V$), posons $A'=A\cap X'_s$, et soit $A_0$ un compact de $X'_s=\{s\}\times U$. Comme $A'$ est fermé dans $\{s\}\times U$, qui est paracompact, on a ([T.F.]~II 3.3.1)\footnote{Un fermé d'un espace paracompact admet un système fondamental de voisinages paracompacts.}
+\[
+  H^0\bigl(A',\underline{\Homop}(X_s,Y_s)\bigr)
+  =\varinjlim_{U'\supset A'}\Homop(U',Y'_s),
+\]
+suivant les ouverts $U'$ de $X'_s$ contenant $A'$. De même, comme $A_0$ est fermé dans $S'\times \overline U$, qui est paracompact (produit d'un paracompact et d'un compact), on a
+\[
+  H^0\bigl(A_0,i_s^{-1}\underline{\Homop}(X,Y)\bigr)
+  =\mathop{\underrightarrow{\mathrm{Lim}}}\limits_{U_0\supset A_0}\Homop(U_0,Y'),
+\]
+suivant les ouverts $U_0$ de $X'$ contenant $A_0$. La proposition sera donc
+
+\end{document}

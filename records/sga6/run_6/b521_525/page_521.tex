@@ -1,0 +1,34 @@
+% from main.tex
+%%%%%%%%%%  scan idx 534  |  folio 521  %%%%%%%%%%
+pour tout $x\in X(n)$, et on a
+\begin{equation}\tag{1.1.6}
+\ell_x=\ell'_x+\ell''_x\qquad (x\in X(n)).
+\end{equation}
+Alors l'assertion (1.1.3) pour tous les membres de (1.1.5) découle immédiatement de l'hypothèse et de l'équation
+\begin{equation}\tag{1.1.7}
+\cl_\bullet(G)=\cl_\bullet(G')+\cl_\bullet(G'').
+\end{equation}
+
+On sait que $K_\bullet$ est un foncteur covariant sur la catégorie des schémas localement noethériens par rapport aux morphismes propres. La proposition suivante affirme que notre filtration est fonctorielle :
+
+\textbf{Proposition 1.1.8.} Soit $f:X'\to X$ un morphisme propre de schémas localement noethériens et soit
+\[
+f_*:K_\bullet(X')\longrightarrow K_\bullet(X)
+\]
+le morphisme induit par $f$. Alors
+\begin{equation}\tag{1.1.9}
+f_*(\Filt_n(X'))\subset\Filt_n(X)
+\end{equation}
+pour tout entier $n$.
+
+\emph{Démonstration :} Si $F$ est un $\mathcal O_{X'}$-module cohérent, alors on a par définition (IV 2.11) :
+\[
+f_*(\cl_\bullet(F))=\sum_{i\in\mathbb N}(-1)^i\cl_\bullet(R^if_*(F)).
+\]
+Or, les $\mathcal O_X$-modules $R^if_*(F)$ sont concentrés sur $f(\Supp(F))$ et d'après (EGA IV 5.4.1 (ii)) on a
+\[
+\dim(\Supp(F))\geq\dim(f(\Supp(F))),
+\]
+d'où l'assertion.
+
+\subsection*{1.2}

@@ -1,0 +1,337 @@
+[
+ {
+  "page": 446,
+  "where": "start of the page (end of page_445.tex)",
+  "scan": "p. 446 begins with the display 'j_*(y') + f^*(x) = 0 .' and then 'Il faut trouver y ∈ K˙(Y) tel que :'; p. 445 ends '... y' ∈ K˙(Y'), tels que :' (b441_445/page_445_s4.png)",
+  "tex": "page_445.tex ends 'tels que:' + '\\[ j_*(y')+f^*(x)=0. \\]' + 'Il' above the folio-446 marker; page_446.tex begins 'faut trouver'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Move the folio-446 marker line up four lines, to directly after 'tels que:' at the end of page_445.tex, i.e. before '\\[' + newline + 'j_*(y')+f^*(x)=0.' + newline + '\\]' + newline + 'Il'. The page then begins with that display and 'Il faut trouver'."
+ },
+ {
+  "page": 446,
+  "where": "last paragraph, '(voir EGA 0_IV 17.1.8)'",
+  "scan": "'(voir EGA O_IV 17.1.8).' with no comma after O_IV (both scans; crops_446_450/c446_ega.png)",
+  "tex": "(voir EGA \\(0_{\\mathrm{IV}}\\), 17.1.8)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(0_{\\mathrm{IV}}\\), 17",
+   "new": "\\(0_{\\mathrm{IV}}\\) 17"
+  },
+  "note": "Comma added by the transcription."
+ },
+ {
+  "page": 446,
+  "where": "end of page_446.tex: the word 'On' before the folio-447 marker",
+  "scan": "p. 446 ends with the short line '... (voir EGA O_IV 17.1.8).'; p. 447 begins with the indented new paragraph 'On sait que pour tout schéma régulier ...'",
+  "tex": "'... 17.1.8). On' + folio-447 marker + 'sait que ...': one paragraph",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "1.8). On",
+   "new": "1.8).\n\nOn"
+  },
+  "note": "Paragraph break of the print; goes with the folio-447 marker finding (p. 447): once the marker is moved before 'On', the blank line before it keeps the new paragraph. Does not overlap the comma fix above."
+ },
+ {
+  "page": 446,
+  "where": "'on a nécéssairement'",
+  "scan": "'nécéssairement' with an acute accent on the second e as well (both scans)",
+  "tex": "nécéssairement (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "nécessairement",
+  "note": "The TeX keeps the printed reading (as 'nécéssaire', p. 419)."
+ },
+ {
+  "page": 446,
+  "where": "'ceci entraine z' = g_*(z) = 0'",
+  "scan": "'entraine' without circumflex: the i has its plain typed dot (both scans; crops_446_450/c446_entr2.png, w446_entr2.png)",
+  "tex": "entraine (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "entraîne",
+  "note": "The TeX keeps the printed reading (as 'd'entrainer', p. 8, findings_006_010.json)."
+ },
+ {
+  "page": 446,
+  "where": "'D'autre part, on a par hypothèse : j_*(y') = f^*(x)'",
+  "scan": "'j_*(y') = f^*(x)' with no minus sign (both scans); the hypothesis is j_*(y') + f^*(x) = 0 (top of the page), and the page itself writes 'f^*(x) =-j_*(y')' above",
+  "tex": "\\(j_*(y')=f^*(x)\\) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "j_*(y')=-f^*(x)",
+  "note": "Sign dropped in the print: the next relation, j_*(y') = f^*(i_*(y)), follows from x = -i_*(y) only with j_*(y') = -f^*(x). The TeX keeps the printed reading."
+ },
+ {
+  "page": 446,
+  "where": "K^\\circ(Y) twice on this page; also pp. 447-449",
+  "scan": "K with a raised dot (K˙), the K˙ of Exposés IV and VI (both scans)",
+  "tex": "K^\\circ: p. 446 two, p. 447 three, p. 448 nine (with the §4 title), p. 449 three, p. 450 none",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé VII TeX (also reported on pp. 416 and 435), not itemized: to be done by script as in Exposé VI (K^\\circ -> K^{\\bullet})."
+ },
+ {
+  "page": 447,
+  "where": "start of the page (end of page_446.tex)",
+  "scan": "p. 447 begins with the indented paragraph 'On sait que pour tout schéma régulier ayant un faisceau ample, ...'; p. 446 ends '(voir EGA O_IV 17.1.8).'",
+  "tex": "page_446.tex ends '... 17.1.8). On' above the folio-447 marker; page_447.tex begins 'sait que'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Move the folio-447 marker line one word up, before 'On' at the end of page_446.tex. Together with the paragraph-break fix listed under p. 446 ('1.8). On' -> '1.8).' + blank line + 'On'), p. 447 then begins the new paragraph 'On sait que' as printed."
+ },
+ {
+  "page": 447,
+  "where": "triangle diagram, right-hand vertex",
+  "scan": "L and R each underlined twice (the double-struck derived functors), M underlined once: 'L̲̲f^*(R̲̲f_*(M̲˙))' (both scans; crops_446_450/w447_diag2.png)",
+  "tex": "Lf^*(Rf_*(M^\\bullet))",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "Lf^*(Rf_*(M^\\bullet))",
+   "new": "\\mathbb Lf^*(\\mathbb Rf_*(M^\\bullet))"
+  },
+  "note": "As \\mathbb Ri_* on p. 435. The single underline of M belongs to the underline convention (next finding)."
+ },
+ {
+  "page": 447,
+  "where": "throughout the page",
+  "scan": "underlined in the print (both scans): the sheaf E in 'Soit E un', 'alors E est un', 'la classe de E dans', 'filtrer E par', and in 'J'^n.E' and 'J'^{n_o}.E = 0' (there the J of J' as well); M˙ in 'un complexe parfait M˙' and both M˙ of the diagram; N˙ in the diagram and in 'cohomologie de N˙'. The class E ('Si E est la classe', 'E appartient', 'Comme E est', 'E y appartient') is plain",
+  "tex": "all plain (no \\underline in Exposé VII); 'Si \\(E\\) est la classe de \\(E\\)' loses the print's distinction between the class E and the sheaf E",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé VII TeX (underlined letters written plain, as on pp. 418-435); places listed for the closing pass, not itemized."
+ },
+ {
+  "page": 448,
+  "where": "heading 'Remarque 3.8'",
+  "scan": "'Remarque 3.8.' with a full stop, run into the text (both scans)",
+  "tex": "\\subsection*{Remarque 3.8}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{Remarque 3.8}",
+   "new": "\\subsection*{Remarque 3.8.}"
+  },
+  "note": "The only Remarque set as \\subsection* in main.tex; every other one is \\textbf{Remarque N.} run into the text, which would also match the print here."
+ },
+ {
+  "page": 448,
+  "where": "'Dans le cas X noethérien'",
+  "scan": "a typed diaeresis over the t: 'noeẗhérien' (both scans; crops_446_450/c448_noeth.png, w448_noeth.png)",
+  "tex": "noethérien (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "noethérien",
+   "new": "noe\\\"{t}hérien"
+  },
+  "corrected": "noethérien",
+  "note": "The typist's diaeresis stands one letter late, over the t. The TeX silently drops it; the corrected reading is the volume's spelling (pp. 446-447: noethérien)."
+ },
+ {
+  "page": 448,
+  "where": "display of Lemme 4.1",
+  "scan": "'λ_{-1}(F) ≡ 0 mod.(1-L) .' with a plain 'mod.' and the parentheses around 1-L only (both scans)",
+  "tex": "\\lambda_{-1}(F)\\equiv 0 \\pmod{1-L}.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "0 \\pmod{1-L}.",
+   "new": "0 \\ \\mathrm{mod.}(1-L)."
+  },
+  "note": "\\pmod for the print's plain 'mod.'."
+ },
+ {
+  "page": 448,
+  "where": "last display, first line",
+  "scan": "'≡ (-1)^{d-1}λ^{d-1}(N-2)      mod.(1-L)' (both scans)",
+  "tex": "(-1)^{d-1}\\lambda^{d-1}(N-2) \\pmod{1-L}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(N-2) \\pmod{1-L}",
+   "new": "(N-2) \\qquad\\mathrm{mod.}(1-L)"
+  },
+  "note": "\\pmod for the print's plain 'mod.'."
+ },
+ {
+  "page": 448,
+  "where": "last display, second line",
+  "scan": "'≡ (-1)^{d-1}λ^{d-1}(N')      mod.(1-L).' (both scans)",
+  "tex": "(-1)^{d-1}\\lambda^{d-1}(N') \\pmod{1-L}.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(N') \\pmod{1-L}",
+   "new": "(N') \\qquad\\mathrm{mod.}(1-L)"
+  },
+  "note": "\\pmod for the print's plain 'mod.'."
+ },
+ {
+  "page": 448,
+  "where": "Lemme 4.1 and its proof",
+  "scan": "underlined in the print (both scans): N' in 'de type fini N'', both letters of 'de N, N'' (the sheaves; the classes in 'si N,N' sont' and 'N = N' + 2' are plain), N in 'le rang de N', F in 'celui de F'",
+  "tex": "all plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé VII TeX (underlined letters written plain); places listed for the closing pass. The word-group underlines of the statement of Lemme 4.1 are the pending statement pattern, not listed."
+ },
+ {
+  "page": 449,
+  "where": "heading 4.2",
+  "scan": "'4.2.' with a full stop, run into the text (both scans)",
+  "tex": "\\subsection*{4.2}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{4.2}",
+   "new": "\\subsection*{4.2.}"
+  },
+  "note": "As 2.1 and 2.2 (pp. 429-430)."
+ },
+ {
+  "page": 449,
+  "where": "4.2, 'les sections T_1,...,T_r, donc I/I^2'",
+  "scan": "'T_1,...,T_r, donc' with a comma and a small d (both scans; crops_446_450/c449_donc.png)",
+  "tex": "\\(T_1,\\ldots,T_r\\). Donc \\(I/I^2\\)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "T_r\\). Donc",
+   "new": "T_r\\), donc"
+  },
+  "note": "Full stop and capital for the print's comma."
+ },
+ {
+  "page": 449,
+  "where": "(4.3.1)",
+  "scan": "'mod. torsion,' with 'mod' and 'torsion' underlined like the rest of the statement (both scans)",
+  "tex": "\\pmod{\\text{torsion}},",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\pmod{\\text{torsion}}",
+   "new": "\\qquad\\text{mod. torsion}"
+  },
+  "note": "\\pmod for the print's plain 'mod.'; the underlines are the statement's word groups (pending pattern, not itemized)."
+ },
+ {
+  "page": 449,
+  "where": "throughout the page",
+  "scan": "underlined in the print (both scans): N' in 'Or N' est de rang', I in 'l'idéal I définissant', both I of 'I/I^2', N in 'en notant N le faisceau conormal', N_1 in 'et N_1 le faisceau conormal'",
+  "tex": "all plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé VII TeX (underlined letters written plain); places listed for the closing pass. The word-group underlines of Théorème 4.3 are the pending statement pattern, not listed."
+ },
+ {
+  "page": 450,
+  "where": "first line",
+  "scan": "'relation est équivalente à la relation :' with a colon (both scans)",
+  "tex": "relation est équivalente à la relation (no colon)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "équivalente à la relation\n\\[",
+   "new": "équivalente à la relation :\n\\["
+  },
+  "note": "Colon of the print missing."
+ },
+ {
+  "page": 450,
+  "where": "display after 'Or on a :', second line",
+  "scan": "'= λ^p(j_*(g^*(y)λ_{-1}(F)))   (3.4)' with no comma (both scans)",
+  "tex": "&=\\lambda^p\\bigl(j_*(g^*(y)\\lambda_{-1}(F))\\bigr),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lambda_{-1}(F))\\bigr),",
+   "new": "\\lambda_{-1}(F))\\bigr)"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 450,
+  "where": "display after 'Or on a :'",
+  "scan": "'(3.4)' stands on the second line just after the formula, a reference to Proposition 3.4, not an equation number (both scans)",
+  "tex": "\\end{aligned} \\tag{3.4}",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{aligned}\n\\tag{3.4}",
+   "new": "\\qquad(3.4)\n\\end{aligned}"
+  },
+  "note": "\\tag turns the reference into an equation number (3.4), which clashes with Proposition 3.4; the typescript's equation numbers stand at the left margin ((3.7.1), (4.3.1), (4.3.2)). Does not overlap the comma fix just above."
+ },
+ {
+  "page": 450,
+  "where": "'D'autre part :'",
+  "scan": "'D'autre part :' with a capital D, after the display that ends with '(3.4)' (both scans)",
+  "tex": "d'autre part :",
+  "kind": "word",
+  "confidence": "high",
+  "fix": {
+   "old": "d'autre part :",
+   "new": "D'autre part :"
+  },
+  "note": "Small d for the print's capital."
+ },
+ {
+  "page": 450,
+  "where": "display after 'D'autre part :'",
+  "scan": "'f^*(i_*(λ^p(N,y))) = j_*(g^*(λ^p(N,y))λ_{-1}(F)) (3.4).': the reference (3.4) right after the formula, then a full stop (both scans)",
+  "tex": "\\tag{3.4} and no full stop",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lambda_{-1}(F)\\bigr)\n  \\tag{3.4}",
+   "new": "\\lambda_{-1}(F)\\bigr)\\ (3.4)."
+  },
+  "note": "The full stop is missing; the same edit sets (3.4) as the in-line reference of the print, as in the display above."
+ },
+ {
+  "page": 450,
+  "where": "'Alors z = j^*(u') avec u' = j_*(z') (2.7) ;'",
+  "scan": "the relation runs in the text line 'z = z'(1-L). Alors z = j^*(u') avec u' = j_*(z') (2.7) ; comme L = j^*(J'),' (both scans)",
+  "tex": "a display \\[ z=j^*(u')\\quad\\text{avec }u'=j_*(z') \\] between 'Alors' and '(2.7) ;'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "Alors\n\\[\n  z=j^*(u')\\quad\\text{avec }u'=j_*(z')\n\\]\n(2.7) ;",
+   "new": "Alors \\(z=j^*(u')\\) avec \\(u'=j_*(z')\\) (2.7) ;"
+  },
+  "note": "Running text set as a display."
+ },
+ {
+  "page": 450,
+  "where": "end of the page (start of page_451.tex)",
+  "scan": "p. 450 ends '... en appliquant la formule de projection :'; p. 451 begins with the display 'λ^p(J',u')(1-J') = λ^p(u'(1-J')) .' (b451_455/page_451_s1.png)",
+  "tex": "page_450.tex ends '... la formule de'; 'projection :' is the first line after the folio-451 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Move the folio-451 marker line one line down, after 'projection :' (before '\\[' + newline + '\\lambda^p(J',u')(1-J')=\\lambda^p(u'(1-J')).')."
+ },
+ {
+  "page": 450,
+  "where": "the exact sequence",
+  "scan": "J' underlined in '0 → J' → O_X' → O_Y' → 0' (both scans); the J' of 'L = j^*(J')', λ^p(J',u') and '1 - J'' are plain",
+  "tex": "plain J'",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé VII TeX (underlined letters written plain); listed for the closing pass."
+ }
+]

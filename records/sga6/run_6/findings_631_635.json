@@ -1,0 +1,268 @@
+[
+ {
+  "page": 631,
+  "where": "start of page (page_631.tex lines 3-7: the display before 'on ait :')",
+  "scan": "p. 631 begins 'on ait : a_i^{(m)} = P_i^{(m,r)} (a_r,...,a_i).' under the running head; the display Σ_{i=0}^r a_i^{(m)}(n+i over i) = Σ_{j=0}^r a_j(mn+j over j) is the last line of p. 630 (both scans; b626_630/page_630_s4.png)",
+  "tex": "page_631.tex opens with the display \\[\\sum_{i=0}^{r}a_i^{(m)}\\binom{n+i}{i}=\\sum_{j=0}^{r}a_j\\binom{mn+j}{j},\\] under the folio-631 marker; page_630.tex ends 'tel que dans l'égalité suivante :'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 631 really begins with 'on ait :'. Move the folio-631 marker down below the display: python -I move_marker.py 6 631 \"on ait\" (simulated on a copy: '... l'égalité suivante :', the display, the marker, then 'on ait : ...'). Apply this page's display-comma fix first (its old is the display's last line), or look that old up under folio 630 after the move."
+ },
+ {
+  "page": 631,
+  "where": "end of the display Σ a_i^{(m)} binom(n+i,i) = Σ a_j binom(mn+j,j) (printed at the foot of p. 630)",
+  "scan": "no punctuation after the last binomial (mn+j over j) (both scans; crops_631_635/p630_disp_end.png)",
+  "tex": "\\binom{mn+j}{j},",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\binom{mn+j}{j},",
+   "new": "\\binom{mn+j}{j}"
+  },
+  "note": "Comma added at the end of the display. The display stands under the folio-631 marker but is printed on p. 630 (marker finding above)."
+ },
+ {
+  "page": 631,
+  "where": "Lemme 2.11, 'et X un S schéma projectif'",
+  "scan": "'un S schéma projectif': no hyphen after S (both scans; crops_631_635/p631_Ssch.png, w631_Ssch.png)",
+  "tex": "un \\(S\\) schéma projectif",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "un \\(S\\)-schéma projectif",
+  "note": "Typing slip for S-schéma (as in Lemme 3.1 'un S-schéma quasi-compact'). The TeX keeps the printed reading."
+ },
+ {
+  "page": 631,
+  "where": "proof of 2.11, 'En effet, soit δ = supp {d(L_K)}'",
+  "scan": "'supp' (both scans; crops_631_635/p631_supp.png)",
+  "tex": "\\(\\delta=\\operatorname{supp}\\{d(L_K)\\}\\)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\(\\delta=\\sup\\{d(L_K)\\}\\)",
+  "note": "δ is the supremum of the integers d(L_K) ('Si δ>0, on peut remplacer ... par les L_K(-δ) ... supposer δ≤0'); 'supp' is a typing slip for 'sup'. The TeX keeps the printed reading."
+ },
+ {
+  "page": 631,
+  "where": "Lemme 3.1, 'topologie f.p.p.f.)(*). Alors pour tout système projectif'",
+  "scan": "a full stop after the footnote mark: 'f.p.p.f.)(*). Alors' (both scans; crops_631_635/p631_fppf.png)",
+  "tex": "'f.p.p.f.)}\\footnote{... topologie fppf.}' with no full stop after the footnote; page_632.tex goes on with '\\emph{Alors pour tout'",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "topologie fppf.}",
+   "new": "topologie fppf.}."
+  },
+  "note": "Missing full stop ending the sentence before 'Alors'; it is printed on p. 631, after the footnote mark, outside the underline."
+ },
+ {
+  "page": 631,
+  "where": "footnote (*), 'et FGA n° 232 pour la définition de Pic_{X/S}'",
+  "scan": "n with a raised small o (the numéro sign), in both scans (crops_631_635/p631_no.png, w631_no.png)",
+  "tex": "FGA no 232",
+  "kind": "symbol",
+  "confidence": "medium",
+  "fix": {
+   "old": "FGA no 232",
+   "new": "FGA n\\textsuperscript{o} 232"
+  },
+  "note": "The file writes the numéro sign n\\textsuperscript{o} (22 times across the volume) or n° (bibliography); plain 'no' loses the raised o."
+ },
+ {
+  "page": 631,
+  "where": "the structure sheaf O on pp. 631-632 (3 places; the witness of p. 636 the same: O_X(1), O_Y(1))",
+  "scan": "a plain typed O, not underlined (both scans): 'H = O_X(1)' p. 631 (crops_631_635/p631_OX.png); 'soit ≃ O_{X_{Z\"}}' and 'soit ≃ O_{X_{Z\"_β}}' p. 632 (crops_631_635/p632_OX.png, p632_La2.png)",
+  "tex": "\\mathcal O_X(1); \\mathcal O_{X_{Z''}}; \\mathcal O_{X_{Z''_\\beta}} (Exposé XIII, folios 616-671, writes \\mathcal O 128 times, never \\underline{O} or \\cO)",
+  "kind": "font",
+  "confidence": "medium",
+  "fix": null,
+  "note": "Convention of the Exposé XIII TeX, reported once, not itemized: this typescript types the structure sheaf as a plain O, which differs from the underlined O of the pending NOTE_6 decision (\\cO / \\underline O); the same case as SGA 5 global item 89 (f). One decision for the exposé."
+ },
+ {
+  "page": 632,
+  "where": "start of page",
+  "scan": "p. 631 ends 'f.p.p.f.)(*). Alors pour tout système projectif filtrant (Z_α) de S-schémas'; p. 632 begins 'quasi-compacts et quasi-séparés, à morphismes de transition affines,' (both scans)",
+  "tex": "page_632.tex begins '\\emph{Alors pour tout syst\\`eme projectif filtrant \\((Z_\\alpha)\\) de \\(S\\)-sch\\'emas quasi-compacts ...': the last line of p. 631 stands under the folio-632 marker",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 632 really begins with 'quasi-compacts'. Move the folio-632 marker into the line, before it: python -I move_marker.py 6 632 \"quasi-compacts et quasi-s\" (simulated on a copy: '... de \\(S\\)-sch\\'emas ', the marker, then 'quasi-compacts et quasi-s\\'epar\\'es, ...'; the \\emph group then runs across the marker comment line, which LaTeX accepts)."
+ },
+ {
+  "page": 632,
+  "where": "display 3.1.1, left member 'lim→ Pic_{X/S} (Z_α)'",
+  "scan": "lim with the arrow under it and no index (both scans; crops_631_635/p632_disp.png)",
+  "tex": "\\varinjlim_\\alpha",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\varinjlim_\\alpha",
+   "new": "\\varinjlim"
+  },
+  "note": "Index α added by the TeX under the inductive limit."
+ },
+ {
+  "page": 632,
+  "where": "display 3.1.1, right member 'Pic_{X/S}(lim← Z_α)'",
+  "scan": "lim with the arrow under it and no index (both scans; crops_631_635/p632_disp.png)",
+  "tex": "\\varprojlim_\\alpha Z_\\alpha",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\varprojlim_\\alpha Z_\\alpha",
+   "new": "\\varprojlim Z_\\alpha"
+  },
+  "note": "Index α added by the TeX under the projective limit (the print's 'Posons Z = lim← Z_α' below has none either, and the TeX has none there)."
+ },
+ {
+  "page": 632,
+  "where": "'le faisceau inversible L' sur X_{Z'}, image inverse de L_α, où Z' = Z'_α ×_{Z_α} Z'",
+  "scan": "L_α without prime (both scans; crops_631_635/p632_La.png)",
+  "tex": "image inverse de \\(L_\\alpha\\)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "image inverse de \\(L'_\\alpha\\)",
+  "note": "λ_α is represented by L'_α on X_{Z'_α}, so L' on X_{Z'} is the inverse image of L'_α (as in the next paragraph, 'l'image inverse de L'_α sur X_{Z\"_β}'). The TeX keeps the printed reading."
+ },
+ {
+  "page": 632,
+  "where": "'tel que l'image inverse de L'_α. sur X_{Z\"_β} soit ≃ O_{X_{Z\"_β}}'",
+  "scan": "a typed dot right after the subscript α, at its level and in the same grey as the α, the size of the stops of 'f.p.p.f.' on the line above (both scans; crops_631_635/p632_dot_cmp.png, w632_La.png)",
+  "tex": "de \\(L'_\\alpha\\) sur",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": {
+   "old": "de \\(L'_\\alpha\\) sur",
+   "new": "de \\(L'_\\alpha\\). sur"
+  },
+  "corrected": "de \\(L'_\\alpha\\) sur",
+  "note": "Stray stop inside the sentence; the TeX silently drops it. Low: it could be a mark on the master rather than a typed stop."
+ },
+ {
+  "page": 633,
+  "where": "start of page, label (ii) of Proposition 3.2",
+  "scan": "p. 633 begins '(ii) Les parties Λ de Pic_{X/S} correspondent biunivoquement ...'; p. 632 ends with item (i) (both scans)",
+  "tex": "the bare \\item that prints (ii) is the last line of page_632.tex, above the folio-633 marker; page_633.tex begins with the item's text '\\emph{Les parties ...'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 633 really begins with the item (ii). Move the folio-633 marker up one line, above that \\item: python -I move_marker.py 6 633 \"\\item\" --before (simulated on a copy: '... de type fini sur \\(S\\).}', the marker, '\\item', '\\emph{Les parties ...')."
+ },
+ {
+  "page": 633,
+  "where": "proof of 3.2, before 'Quant à (iii), supposons que la partie Λ'",
+  "scan": "'Quant à (iii)' starts a new, indented paragraph (both scans)",
+  "tex": "'... inversibles sur \\(X_K\\). Quant \\`a (iii)' in one paragraph",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "sur \\(X_K\\). Quant",
+   "new": "sur \\(X_K\\).\n\nQuant"
+  },
+  "note": "Missing paragraph break (the typescript indents its new paragraphs)."
+ },
+ {
+  "page": 633,
+  "where": "proof of 3.2, before 'Réciproquement supposons que 𝓛 soit limitée'",
+  "scan": "'Réciproquement' starts a new, indented paragraph (both scans)",
+  "tex": "'... donc \\(L\\) limite \\(\\mathscr L\\). R\\'eciproquement' in one paragraph",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "limite \\(\\mathscr L\\). R\\'eciproquement",
+   "new": "limite \\(\\mathscr L\\).\n\nR\\'eciproquement"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 634,
+  "where": "end of Définition 3.3, 'est dit de type fini si toute famille limitée ...'",
+  "scan": "'est dit' underlined, the defined term 'de type fini' plain, then 'si toute famille limitée de classes de faisceaux' underlined (both scans)",
+  "tex": "\\emph{est dit de type fini si toute ...}: the defined term inside the emphasis",
+  "kind": "underline",
+  "confidence": "low",
+  "fix": {
+   "old": "\\emph{est dit de type fini si",
+   "new": "\\emph{est dit} de type fini \\emph{si"
+  },
+  "note": "The typescript marks the defined term by leaving it out of the statement's underline; the block \\emph loses that. It is a word group, not a formula or punctuation; drop this item if the block-underline decision is to cover defined terms as well."
+ },
+ {
+  "page": 634,
+  "where": "proof of 3.4, 'limitée par un L sur un X_R. Ia famille 𝓛_T = 𝓛 ×_S T'",
+  "scan": "'Ia': a capital I with serifs on both sides at top and bottom, unlike the L of 'un L sur' on the same line, which has its long foot (both scans; crops_631_635/p634_la_zoom.png, w634_la_zoom.png, p634_L.png)",
+  "tex": "La famille",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "La famille",
+   "new": "Ia famille"
+  },
+  "corrected": "La famille",
+  "note": "Typing slip I for L; the TeX silently corrects it."
+ },
+ {
+  "page": 634,
+  "where": "proof of 3.4, before 'La réciproque de (i) et l'assertion (ii)'",
+  "scan": "'La réciproque de (i)' starts a new, indented paragraph (both scans)",
+  "tex": "'... aussi \\(\\Phi^{-1}(\\mathscr L)\\). La r\\'eciproque' in one paragraph",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\(\\Phi^{-1}(\\mathscr L)\\). La r\\'eciproque",
+   "new": "\\(\\Phi^{-1}(\\mathscr L)\\).\n\nLa r\\'eciproque"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 635,
+  "where": "proof of 3.5, 'on peut supposer que le morphisme Pic_{Y_T/T} ⟶ Pic_{X_T/T} induit par f* est de type fini'",
+  "scan": "the morphism is set inline in the running text: 'morphisme Pic_{Y_T/T} ⟶ Pic_{X_T/T} induit par f* est de type fini par récur-' (both scans)",
+  "tex": "a display \\[\\underline{\\Pic}_{Y_T/T}\\longrightarrow\\underline{\\Pic}_{X_T/T}\\]",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "le morphisme\n\\[\n\\underline{\\Pic}_{Y_T/T}\\longrightarrow\\underline{\\Pic}_{X_T/T}\n\\]\ninduit par",
+   "new": "le morphisme \\(\\underline{\\Pic}_{Y_T/T}\\longrightarrow\\underline{\\Pic}_{X_T/T}\\) induit par"
+  },
+  "note": "The TeX makes a display of a formula the print runs in the text."
+ },
+ {
+  "page": 635,
+  "where": "'il en résulte pour ⨿ X_i/S' par le'",
+  "scan": "the coproduct sign with no index under it; the i is the subscript of X (both scans; crops_631_635/p635_Xi.png)",
+  "tex": "\\coprod_iX_i/S'",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\coprod_iX_i/S'",
+   "new": "\\coprod X_i/S'"
+  },
+  "note": "Index i added by the TeX under the coproduct (the size of the hand-drawn sign is not at issue)."
+ },
+ {
+  "page": 635,
+  "where": "'Si l'on l'admet pour tous les X_i/S''",
+  "scan": "X_i without prime (both scans; crops_631_635/p635_Xi.png); two lines above the components are named X'_i, with the prime printed (p635_Xpi.png)",
+  "tex": "tous les \\(X_i/S'\\)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "tous les \\(X'_i/S'\\)",
+  "note": "The X'_i are the irreducible components of X_{S'}; their sum maps onto X_{S'} (p. 636 'donc pour X_{S'}/S' en vertu de 3.5 et 3.4 (ii)'). The TeX keeps the printed reading. Correct together with the next item."
+ },
+ {
+  "page": 635,
+  "where": "'il en résulte pour ⨿ X_i/S''",
+  "scan": "X_i without prime (both scans; crops_631_635/p635_Xi.png)",
+  "tex": "\\coprod_iX_i/S' (after the index fix above: \\coprod X_i/S')",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\coprod X'_i/S'",
+  "note": "Same slip as the item before; correct both together. The index fix of this place is listed first; this reading is taken from the text after it."
+ }
+]

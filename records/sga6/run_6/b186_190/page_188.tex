@@ -1,0 +1,28 @@
+% from main.tex
+%%%%%%%%%%  scan idx 201  |  folio 188  %%%%%%%%%%
+isomorphisme fonctoriel en $E$ :
+\[
+ \Hom(E,F)\xrightarrow{\sim}\Hom(E,QF).
+\]
+Cela prouve l'existence de $Q$; l'unicité est évidente puisqu'il s'agit d'un adjoint.
+
+\textbf{Lemme 3.3.} \begin{enumerate}[label=\alph*)]
+\item Le cohéreur est un foncteur additif transformant injectifs en injectifs.
+\item Notons
+\[
+ RQ:\mathrm D^+(S)\longrightarrow \mathrm D^+(\Qcoh(S))
+\]
+le dérivé droit du cohéreur. Pour $E\in\Ob\mathrm D(\Qcoh(S))$ et $F\in\Ob\mathrm D^+(S)$, il existe des isomorphismes fonctoriels canoniques\footnote{L'indice $\Mod$ (resp. $\Qcoh$) est une abréviation pour $\mathrm D(S)$ (resp. $\mathrm D(\Qcoh(S))$).}
+\begin{align}
+ R\Hom_{\Mod}(E,F)&\xrightarrow{\sim} R\Hom_{\Qcoh}(E,RQ(F)) \tag{i}\\
+ \Hom_{\Mod}(E,F)&\xrightarrow{\sim} \Hom_{\Qcoh}(E,RQ(F)). \tag{ii}
+\end{align}
+\end{enumerate}
+
+\emph{Preuve.} L'assertion a) est conséquence immédiate de la définition. Pour b), il suffit d'établir l'isomorphisme (i), car (ii) s'en déduira par passage à la cohomologie. On peut, pour cela, supposer $F$ à composantes injectives; $QF$ est alors à composantes injectives d'après a), et l'isomorphisme (i) provient simplement de la définition de $Q$.
+
+\textbf{Lemme 3.4.} Soit $f:X\longrightarrow Y$ un morphisme de schémas quasi-compacts et quasi-séparés. Pour $E\in\Ob\Mod(X)$, il existe un isomorphisme fonctoriel canonique
+\[
+ Qf_*(E)\xrightarrow{\sim} f_*Q(E).
+\]
+

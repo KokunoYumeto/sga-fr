@@ -1,0 +1,348 @@
+[
+ {
+  "page": 451,
+  "where": "start of page (folio-451 marker)",
+  "scan": "p. 450 ends '... La relation à vérifier s'écrit donc finalement, en appliquant la formule de projection :' (b446_450/page_450_s4.png); p. 451 begins with the display 'λ^p(J',u')(1-J') = λ^p(u'(1-J')) .' (both scans; crops_451_455/wit_451_half.png)",
+  "tex": "page_451.tex begins 'projection :' under the folio-451 marker; page_450.tex ends 'en appliquant la formule de'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 451 really begins at the display '\\[ \\lambda^p(J',u')(1-J')=\\lambda^p(u'(1-J')).'. Exact edit in main.tex, both layers: replace 'en appliquant la formule de\\n%%%%%%%%%%  scan idx 464  |  folio 451  %%%%%%%%%%\\nprojection :\\n\\[' by 'en appliquant la formule de\\nprojection :\\n%%%%%%%%%%  scan idx 464  |  folio 451  %%%%%%%%%%\\n\\['. ALREADY APPLIED: main.tex as of 13 Nov 16:06 reads 'projection :' above the marker in both layers (diplomatic lines 11447-11450, current 11453-11456; checked in memory: crops_451_455/sim_markers.py); nothing left to do but regenerate the page files."
+ },
+ {
+  "page": 451,
+  "where": "ii), first sentence: '... vérifie la condition de 4.1. (voir 4.2).'",
+  "scan": "'4.1.' with a full stop before '(voir 4.2)' (both scans; crops_451_455/c451_41.png, wit_451_half.png)",
+  "tex": "condition de 4.1 (voir 4.2)",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "condition de 4.1 (voir 4.2)",
+   "new": "condition de 4.1. (voir 4.2)"
+  },
+  "note": ""
+ },
+ {
+  "page": 451,
+  "where": "(4.3.3), end: 'mod. torsion.'",
+  "scan": "'λ^p((s∘i)_*(y))  mod. torsion.' (both scans)",
+  "tex": "\\pmod{\\text{torsion}}.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "_*(y)\\bigr)\n \\pmod{\\text{torsion}}.",
+   "new": "_*(y)\\bigr)\n \\quad\\text{mod.\\ torsion}."
+  },
+  "note": "The print's plain 'mod.' after a wide space, no parentheses; the transcription's \\pmod reported singly, as asked (ten displays on pp. 451-453, all written \\pmod{\\text{torsion}})."
+ },
+ {
+  "page": 451,
+  "where": "'La section s est définie par un idéal isomorphe à O_p(-1) (4.2)'",
+  "scan": "underlined O with a lowercase p as index, the p not underlined: the glyph of the p of 'p ≥ 1' (bowl, descender, narrow foot serif), not the capital P of 'J.P.' (both scans; crops_451_455/c451_OP.png, w451_OP.png, c451_pcompare.png)",
+  "tex": "\\mathcal O_{\\mathbf P}(-1) (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "O_{\\mathbf P}(-1)",
+   "new": "O_p(-1)"
+  },
+  "corrected": "\\mathcal O_{\\mathbf P}(-1)",
+  "note": "The sheaf is O(-1) of P = P^1_X (s : X → P^1_X); p is the structural morphism P^1_X → X, named three lines below. The typist writes the same lowercase index in 4.2, p. 449 ('l'idéal correspondant de O_p à (O_X)^r', TeX \\cO_P), for that batch. The current layer reads \\mathcal O_{\\mathbf P}(-1), the corrected reading. The underlined O as \\mathcal O falls under the pending volume decision."
+ },
+ {
+  "page": 451,
+  "where": "'La section s est définie par un idéal ...' after (4.3.3)",
+  "scan": "indented new paragraph (both scans; it starts 150 px right of the margin, as 'Si on suppose' above)",
+  "tex": "\\end{equation} then 'La section' on the next line (no blank line)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\end{equation}\nLa section",
+   "new": "\\end{equation}\n\nLa section"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 451,
+  "where": "'... comme s_*(1) = 1-ξ, on a la relation voulue :' and 'La relation (4.3.3) s'écrit alors :'",
+  "scan": "'voulue :' with a colon; 'La relation (4.3.3) s'écrit alors :' begins an indented new paragraph (both scans; crops_451_455/c451_voulue.png)",
+  "tex": "on a la relation voulue. La relation (4.3.3) s'écrit alors :",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "on a la relation voulue. La relation (4.3.3)",
+   "new": "on a la relation voulue :\n\nLa relation (4.3.3)"
+  },
+  "note": "Colon for the TeX's full stop, with the printed paragraph break."
+ },
+ {
+  "page": 451,
+  "where": "display after 'La relation (4.3.3) s'écrit alors :', first line, end: 'mod. torsion'",
+  "scan": "plain 'mod. torsion', no punctuation (both scans)",
+  "tex": "\\pmod{\\text{torsion}}\\\\",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(1-\\xi)\\bigr)\\pmod{\\text{torsion}}\\\\",
+   "new": "(1-\\xi)\\bigr)\\quad\\text{mod.\\ torsion}\\\\"
+  },
+  "note": "As (4.3.3)."
+ },
+ {
+  "page": 451,
+  "where": "same display, second line, end: 'mod. torsion .'",
+  "scan": "plain 'mod. torsion .' (both scans)",
+  "tex": "\\pmod{\\text{torsion}}.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(1-\\xi)\\pmod{\\text{torsion}}.",
+   "new": "(1-\\xi)\\quad\\text{mod.\\ torsion}."
+  },
+  "note": "As (4.3.3)."
+ },
+ {
+  "page": 451,
+  "where": "K˙ on pp. 451-455 (21 places: p. 451 3, p. 452 1, p. 453 1, p. 454 9, p. 455 7)",
+  "scan": "K with a raised dot everywhere (both scans)",
+  "tex": "K^\\circ (21 places)",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "The Exposé VII convention reported in findings_416_420 (K^\\circ for the print's K˙, one script K^\\circ -> K^{\\bullet} for VII, both layers): not itemized. Three examples: p. 451 'et tout \\(y\\in K^\\circ(Y)\\) :' -> 'et tout \\(y\\in K^{\\bullet}(Y)\\) :'; p. 454 '(le \\(K^\\circ\\) commutant' -> '(le \\(K^{\\bullet}\\) commutant'; p. 455 '\\Fil^{i+d}(K^\\circ(X)_{\\mathbb Q})' -> '\\Fil^{i+d}(K^{\\bullet}(X)_{\\mathbb Q})'. One fix of p. 455 (inline formula) has K^\\circ in its old: run the script after it, or read K^{\\bullet} there."
+ },
+ {
+  "page": 451,
+  "where": "statements of pp. 451-455: Lemme (p. 451), Corollaire 4.4 (p. 453), Théorème 4.6 (p. 454)",
+  "scan": "underlined word group by word group: Lemme 'Dans les conditions de', 'soit', 'la section définie' / 'en', 'Si la proposition', 'est vraie pour', 'elle est vraie pour'; Cor. 4.4 'Avec les notations et les hypothèses de', 'on a pour tout', 'et tout'; Thm 4.6 'Soient', 'un schéma quasi-compact ayant un faisceau ample', 'un entier', 'et', 'une immersion régulière de codimension', 'Alors', 'pour tout', 'on a'; formulas, letters, numbers and punctuation plain; the labels (and those of Remarques 4.5, 4.6.1) underline only the word (both scans)",
+  "tex": "the statements in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Exposé VII follows the Exposé II pattern of GLOBAL_ISSUES 82 (pending volume decision), as findings_416_420 to findings_431_435 report: not itemized; the word groups are listed for the scripted pass. No emphasized defined terms and no category letter on pp. 451-455."
+ },
+ {
+  "page": 452,
+  "where": "first display, first line, end: 'mod. torsion'",
+  "scan": "plain 'mod. torsion' (both scans)",
+  "tex": "\\pmod{\\text{torsion}}\\\\",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(1-\\xi) \\pmod{\\text{torsion}}\\\\",
+   "new": "(1-\\xi) \\quad\\text{mod.\\ torsion}\\\\"
+  },
+  "note": "As (4.3.3), p. 451."
+ },
+ {
+  "page": 452,
+  "where": "first display, second line, end: 'mod. torsion.'",
+  "scan": "plain 'mod. torsion.' (both scans)",
+  "tex": "\\pmod{\\text{torsion}}.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(1-\\xi) \\pmod{\\text{torsion}}.",
+   "new": "(1-\\xi) \\quad\\text{mod.\\ torsion}."
+  },
+  "note": "As (4.3.3), p. 451."
+ },
+ {
+  "page": 452,
+  "where": "(4.3.4), end: 'mod. torsion,'",
+  "scan": "plain 'mod. torsion,' (both scans)",
+  "tex": "\\pmod{\\text{torsion}},",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lambda^p(1,i_*(y)) \\pmod{\\text{torsion}},",
+   "new": "\\lambda^p(1,i_*(y)) \\quad\\text{mod.\\ torsion},"
+  },
+  "note": "As (4.3.3), p. 451."
+ },
+ {
+  "page": 452,
+  "where": "'De même, la même formule appliquée à N = 0 et L = 1 ...'",
+  "scan": "indented new paragraph (both scans; 'D'après la formule' above is indented the same)",
+  "tex": "\\] then 'De même,' on the next line (no blank line)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nDe même,",
+   "new": "\\]\n\nDe même,"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 452,
+  "where": "'Les congruences (4.3.4) peuvent donc s'écrire :'",
+  "scan": "indented new paragraph (both scans)",
+  "tex": "\\] then 'Les congruences' on the next line (no blank line)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nLes congruences",
+   "new": "\\]\n\nLes congruences"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 452,
+  "where": "last display (the congruence of the series), end: 'mod. torsion'",
+  "scan": "plain 'mod. torsion' and no full stop after it (both scans; crops_451_455/c452_torsion_end.png, w452_bottom_half.png)",
+  "tex": "\\pmod{\\text{torsion}}.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\pmod{\\text{torsion}}.\n\\]",
+   "new": "\\quad\\text{mod.\\ torsion}\n\\]"
+  },
+  "note": "As (4.3.3), p. 451; the TeX also adds the full stop at the end of the display (p. 453 continues 'En appliquant la formule 2.8')."
+ },
+ {
+  "page": 453,
+  "where": "first display (after 'En appliquant la formule 2.8, on obtient :'), end: 'mod. torsion'",
+  "scan": "plain 'mod. torsion' and no full stop after it (both scans; crops_451_455/c453_tors1.png, w453_half_top.png)",
+  "tex": "\\pmod{\\text{torsion}}.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\pmod{\\text{torsion}}.\n\\]\nSi on pose",
+   "new": "\\quad\\text{mod.\\ torsion}\n\\]\nSi on pose"
+  },
+  "note": "As (4.3.3), p. 451; the TeX also adds the full stop at the end of the display."
+ },
+ {
+  "page": 453,
+  "where": "display d/dt(u(t)/v(t)) ≡ 0, end: 'mod. torsion.'",
+  "scan": "plain 'mod. torsion.' (both scans)",
+  "tex": "\\pmod{\\text{torsion}}.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\equiv0\n  \\pmod{\\text{torsion}}.",
+   "new": "\\equiv0\n  \\quad\\text{mod.\\ torsion}."
+  },
+  "note": "As (4.3.3), p. 451."
+ },
+ {
+  "page": 453,
+  "where": "Corollaire 4.4, display, end: 'mod. torsion.'",
+  "scan": "plain 'mod. torsion.' (both scans; the speck before 'mod' is in the main scan only)",
+  "tex": "\\pmod{\\text{torsion}}.",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(y))\n  \\pmod{\\text{torsion}}.",
+   "new": "(y))\n  \\quad\\text{mod.\\ torsion}."
+  },
+  "note": "As (4.3.3), p. 451. The old stops after the misprinted i' of the next entry, so it also matches the current layer."
+ },
+ {
+  "page": 453,
+  "where": "Corollaire 4.4, display: 'i_*(γ^p(N,y)) ≡ γ^p(i'_*(y))'",
+  "scan": "a thin prime after the i of the right member, in both scans (crops_451_455/c453_iprime.png; witness: a separate stroke right of the dot of the i)",
+  "tex": "\\gamma^p(i'_*(y)) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\gamma^p(i_*(y))",
+  "note": "Corollary 4.4 is 4.3 with γ for λ: the right member is γ^p(i_*(y)), as λ^p(i_*(y)) in (4.3.1) and (4.3.4); 4.3-4.4 have no i'. The current layer already reads \\gamma^p(i_*(y)) (main.tex current line 11547)."
+ },
+ {
+  "page": 453,
+  "where": "'Le corollaire résulte immédiatement de 4.3, ...' after the display of Cor. 4.4",
+  "scan": "indented new paragraph (both scans)",
+  "tex": "\\] then 'Le corollaire' on the next line (no blank line)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nLe corollaire",
+   "new": "\\]\n\nLe corollaire"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 453,
+  "where": "'Le corollaire résulte immédiatement de 4.3, et utilisant l'expression des γ^p ...'",
+  "scan": "'et utilisant' (both scans; crops_451_455/c453_etutil.png)",
+  "tex": "et utilisant (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "en utilisant",
+  "note": "Typist's 'et' for 'en': the gerund needs 'en' ('résulte de 4.3, en utilisant l'expression ...'). The current layer also reads 'et utilisant' (main.tex current line 11550): the corrected edition needs 'en utilisant'."
+ },
+ {
+  "page": 454,
+  "where": "'Par ailleurs, la filtration de λ-anneau de R est discrète' after the display 'x ∈ Fil^k R .'",
+  "scan": "starts at the left margin, not indented (both scans): the paragraph goes on after the display, as 'Comme le terme constant' on p. 453; the indented paragraphs of the page ('Remarquons', 'Pour tout groupe') start about 140 px further right",
+  "tex": "blank line (new paragraph) before 'Par ailleurs'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\]\n\nPar ailleurs",
+   "new": "\\]\nPar ailleurs"
+  },
+  "note": "Added paragraph break."
+ },
+ {
+  "page": 454,
+  "where": "letters of sheaves on p. 454",
+  "scan": "underlined in the print (both scans; crops_451_455/c454_letters.png): J of 'l'idéal J définissant Y', both J of J^n/J^{n+1}, the E_α of 'de type fini E_α.' and of 'supposer les E_α de rang constant'; plain in the print: the classes E_α ('des classes E_α', 'par les E_α'), N, R, A",
+  "tex": "all plain",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé VII transcription (findings_416_420 to findings_431_435): not itemized; the print distinguishes the Modules E_α (underlined) from their classes (plain). The underlined O of O_Y, O_p written \\mathcal O falls under the pending volume decision. Three examples, in the form to use if the diplomatic layer reproduces it: 'l'idéal \\(J\\) définissant' -> 'l'idéal \\(\\underline{J}\\) définissant'; 'les \\(J^n/J^{n+1}\\) sont' -> 'les \\(\\underline{J}^n/\\underline{J}^{n+1}\\) sont'; 'de type fini \\(E_\\alpha\\). Soit' -> 'de type fini \\(\\underline{E}_\\alpha\\). Soit'."
+ },
+ {
+  "page": 455,
+  "where": "'On peut donc appliquer l'hypothèse de récurrence, supposant que :'",
+  "scan": "indented new paragraph (both scans)",
+  "tex": "\\] then 'On peut donc appliquer' on the next line (no blank line)",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nOn peut donc appliquer",
+   "new": "\\]\n\nOn peut donc appliquer"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 455,
+  "where": "'Comme i_*(y) est d'augmentation nulle, γ^{d+i}(i_*(y)) ∈ Fil^{d+i}K˙(X) .'",
+  "scan": "the formula in the running line, after 'nulle,', with its spaced full stop; 'Comme on fait des calculs' follows at the left margin (both scans)",
+  "tex": "a display \\[ \\gamma^{d+i}\\bigl(i_*(y)\\bigr)\\in\\Fil^{d+i}K^\\circ(X). \\]",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "nulle,\n\\[\n  \\gamma^{d+i}\\bigl(i_*(y)\\bigr)\\in\\Fil^{d+i}K^\\circ(X).\n\\]",
+   "new": "nulle, \\(\\gamma^{d+i}\\bigl(i_*(y)\\bigr)\\in\\Fil^{d+i}K^\\circ(X)\\)."
+  },
+  "note": "The TeX makes an inline formula a display (same kind of fix as pp. 21, 34, 42, 80, 105, 426). The old has K^\\circ: if the Exposé VII K^{\\bullet} script runs first, read K^{\\bullet} in old and new."
+ },
+ {
+  "page": 455,
+  "where": "end of page (folio-456 marker)",
+  "scan": "p. 455 ends '... Pour un contre-exemple, voir XIV 4.6.'; p. 456 begins '4.7. On revient à la situation de 3.7, ...' (both scans; b456_460/page_456_s1.png)",
+  "tex": "page_455.tex ends '\\subsection*{4.7}', a blank line and 'On' above the folio-456 marker; page_456.tex begins 'revient à la situation'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 456 really begins at the heading '\\subsection*{4.7}' (a heading at the top of a page, which the 10 Nov script did not move). Exact edit in main.tex, both layers (diplomatic lines 11615-11619, current 11621-11625 as of 13 Nov 16:06): replace '\\subsection*{4.7}\\n\\nOn\\n%%%%%%%%%%  scan idx 469  |  folio 456  %%%%%%%%%%\\nrevient à la situation' by '%%%%%%%%%%  scan idx 469  |  folio 456  %%%%%%%%%%\\n\\subsection*{4.7}\\n\\nOn\\nrevient à la situation' (old string once per layer; simulated in memory: crops_451_455/sim_markers.py). The blank line before the heading stays above the marker. Apply it before the heading entry below, or read \\subsection*{4.7.} in both strings; the batch of pp. 456-460 may report the same move."
+ },
+ {
+  "page": 455,
+  "where": "heading 4.7 (printed at the top of p. 456; its TeX stands in page_455.tex above the folio-456 marker)",
+  "scan": "'4.7.' with a full stop (both scans; b456_460/page_456_s1.png)",
+  "tex": "\\subsection*{4.7}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{4.7}",
+   "new": "\\subsection*{4.7.}"
+  },
+  "note": "As headings 2.1, 2.2 (findings_426_430): the printed paragraph number ends with a full stop; the run-in heading set as its own paragraph is accepted. See the marker entry above for the order of the two edits."
+ }
+]

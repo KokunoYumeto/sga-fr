@@ -1,0 +1,226 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{mathrsfs}
+\usepackage{tikz-cd}
+\usetikzlibrary{arrows}
+\usepackage{enumitem}
+\usepackage{longtable,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\emergencystretch=3em
+\hbadness=10000
+\hfuzz=20pt
+\usepackage[normalem]{ulem}
+\newcommand{\K}{K}
+\newcommand{\Gr}{\operatorname{Gr}}
+\newcommand{\Fil}{\operatorname{Fil}}
+\newcommand{\ch}{\operatorname{ch}}
+\newcommand{\Todd}{\operatorname{Todd}}
+\newcommand{\cl}{\operatorname{cl}}
+\newcommand{\Parf}{\operatorname{Parf}}
+\newcommand{\Tor}{\operatorname{Tor}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\RRR}{\mathrm{RRR}}
+\providecommand{\codim}{\operatorname{codim}}
+\providecommand{\Inv}{\operatorname{Inv}}
+\providecommand{\Pic}{\operatorname{Pic}}
+\providecommand{\Z}{\mathbb Z}
+\providecommand{\Q}{\mathbb Q}
+\providecommand{\Ahat}{\widehat A}
+\providecommand{\Ahp}{\widehat A^{+}}
+\providecommand{\That}{\widehat T}
+\providecommand{\rad}{\operatorname{rad}}
+\providecommand{\Gl}{\operatorname{Gl}}
+\providecommand{\GL}{\operatorname{Gl}}
+\providecommand{\ch}{\operatorname{ch}}
+\providecommand{\Todd}{\operatorname{Todd}}
+\providecommand{\Gr}{\operatorname{Gr}}
+\providecommand{\red}{\text{réd}}
+
+% Core macro additions
+\providecommand{\Atil}{\widetilde A}
+\providecommand{\Ctil}{\widetilde C}
+\providecommand{\K}{\mathrm K}
+\providecommand{\cC}{\mathcal C}
+\providecommand{\cF}{\mathscr F}
+\providecommand{\eps}{\varepsilon}
+\providecommand{\ellc}{\ell}
+\providecommand{\Tor}{\operatorname{Tor}}
+\providecommand{\Coker}{\operatorname{Coker}}
+\providecommand{\Ker}{\operatorname{Ker}}
+\providecommand{\Supp}{\operatorname{Supp}}
+\providecommand{\codim}{\operatorname{codim}}
+\providecommand{\Gr}{\operatorname{G}}
+\providecommand{\rank}{\operatorname{rank}}
+\providecommand{\rang}{\operatorname{rang}}
+\providecommand{\cO}{\mathcal O}
+\providecommand{\sgacircled}[1]{\tikz[baseline=(char.base)]\node[shape=circle,draw,inner sep=.35pt](char){\mbox{\scriptsize #1}};}
+
+\hypersetup{hypertexnames=false}
+\newcommand{\sgastandalonefootnotetext}[2]{%
+  \begingroup
+  \NoHyper
+  \footnotetext{#2}%
+  \endNoHyper
+  \endgroup
+}
+\providecommand{\R}{\mathbb R}
+\providecommand{\C}{\mathbb C}
+\providecommand{\N}{\mathbb N}
+\providecommand{\Zell}{\mathbb Z_\ell}
+\providecommand{\Qell}{\mathbb Q_\ell}
+\providecommand{\C}{\mathbb C}
+\providecommand{\Ch}{\operatorname{Ch}}
+\providecommand{\Sym}{\operatorname{Sym}}
+\providecommand{\Td}{\operatorname{Td}}
+\begin{document}
+\providecommand{\cS}{\mathcal S}
+\providecommand{\cD}{\mathcal D}
+\providecommand{\cE}{\mathscr E}
+\providecommand{\cG}{\mathscr G}
+\providecommand{\cL}{\mathscr L}
+\providecommand{\cM}{\mathscr M}
+\providecommand{\cP}{\mathscr P}
+\providecommand{\cK}{\mathcal K}
+\providecommand{\Db}{\mathrm D}
+\providecommand{\Kb}{\mathrm K}
+\providecommand{\Trc}{\operatorname{Tr}}
+\providecommand{\ob}{\operatorname{ob}}
+\providecommand{\Coh}{\operatorname{Coh}}
+\providecommand{\Cone}{\operatorname{Cone}}
+\providecommand{\im}{\operatorname{Im}}
+\providecommand{\Id}{\operatorname{Id}}
+\providecommand{\RR}{\mathrm{R.R.}}
+\providecommand{\RRR}{\mathrm{R.R.R.}}
+\providecommand{\GrR}{\mathrm{G}}
+\providecommand{\pr}{\operatorname{pr}}
+\providecommand{\cC}{\mathcal C}
+\providecommand{\cD}{\mathcal D}
+\providecommand{\cK}{\mathcal K}
+\providecommand{\cO}{\mathcal O}
+\providecommand{\cS}{\mathcal S}
+\providecommand{\Cpx}{\mathrm C}
+\providecommand{\Kpx}{\mathrm K}
+\providecommand{\Dpx}{\mathrm D}
+\providecommand{\D}{\mathrm D}
+\providecommand{\Ho}{\mathrm H}
+\providecommand{\RHom}{\mathrm R\!\operatorname{Hom}}
+\providecommand{\Ob}{\operatorname{ob}}
+\providecommand{\Coker}{\operatorname{Coker}}
+\providecommand{\Ker}{\operatorname{Ker}}
+\renewcommand{\Im}{\operatorname{Im}}
+\providecommand{\Hom}{\operatorname{Hom}}
+\providecommand{\Cone}{\operatorname{Cone}}
+\providecommand{\id}{\operatorname{Id}}
+\providecommand{\qis}{\xrightarrow{\sim}}
+\providecommand{\RHom}{\mathrm R\!\Hom}
+\providecommand{\Ext}{\operatorname{Ext}}
+\providecommand{\coh}{\operatorname{coh}}
+\providecommand{\PreCoh}{\operatorname{precoh}}
+\providecommand{\Tr}{\operatorname{Tr}}
+\providecommand{\Qis}{\operatorname{Qis}}
+\providecommand{\Rad}{\operatorname{rad}}
+\providecommand{\Spec}{\operatorname{Spec}}
+\providecommand{\End}{\operatorname{End}}
+\providecommand{\Id}{\operatorname{Id}}
+\providecommand{\varinjlim}{\mathop{\mathrm{lim}}\limits_{\longrightarrow}}
+\providecommand{\varprojlim}{\mathop{\mathrm{lim}}\limits_{\longleftarrow}}
+\providecommand{\qcoh}{\operatorname{qcoh}}
+\providecommand{\amp}{\operatorname{amp}}
+%%%%%%%%%%  scan idx 119  |  folio 106  %%%%%%%%%%
+donc \(\Ho^n(F'_{\leq n})\) (resp. \(\Ho^n(F''_{\leq n})\)) est de type fini, donc à nouveau grâce à (2.10.b)) \(F'_{\leq n}\)) (resp. \(F''_{\leq n}\)) est \(n\)-pseudo-cohérent. Appliquant (2.5) à la suite exacte
+\[
+  0\longrightarrow F'_{>n}\longrightarrow F'\longrightarrow F'_{\leq n}\longrightarrow 0,
+\]
+(resp.\dots), on en déduit que \(F'\) (resp. \(F''\)) est \(n\)-pseudo-cohérent, cqfd.
+
+\textbf{Proposition 2.13.} \emph{Soit \((S',\mathcal C',\mathcal C'_0)\) un trio satisfaisant aux mêmes hypothèses (2.0) que \((S,\mathcal C,\mathcal C_0)\). Soit \(f:S'\to S\) un morphisme de sites ([G] I 1.4), correspondant à un foncteur sous-jacent \(f^{-1}:S\to S'\), et soit}
+\(u:\Dpx^*(\mathcal C)\longrightarrow \Dpx^*(\mathcal C')\) \((*=+,-,\varnothing)\)
+\emph{un foncteur cartésien au-dessus de \(f\), i.e. un \(S\)-foncteur cartésien \(\Dpx^*(\mathcal C')\times_{S'}S\longleftarrow\Dpx^*(\mathcal C)\). On suppose que \(u\) est exact sur chaque fibre et qu'il existe \(a,b\in\mathbb Z\) tels que les conditions suivantes soient vérifiées pour tout \(S\in\Ob S\)} :
+
+(i) \emph{si \(E\in\Ob\mathcal C_{0S}\), \(u(E)\) est \(a\)-\(\mathcal C'_0\)-pseudo-cohérent (resp. \(\mathcal C'_0\)-pseudo-cohérent)}
+
+(ii) \emph{si \(F\in\Ob\Dpx^*(\mathcal C_S)\) est acyclique en degré \(>0\), \(u(F)\) est acyclique en degré \(>b\).}
+
+\emph{Alors, si \(F\in\Ob\Dpx^*(\mathcal C_S)\) est \(m\)-pseudo-cohérent rel. à \(\mathcal C_0\) et acyclique en degré \(>n\), \(u(F)\in\Ob\Dpx^*(\mathcal C'_{S'})\) (où \(S'=f^{-1}(S)\)) est \(\sup(m+b,n+a)\)-pseudo-cohérent (rel. à \(\mathcal C'_0\)) (resp. \((m+b)\)-pseudo-cohérent) et acyclique en degré \(>n+b\).}
+
+\emph{En particulier, dans le cas respé, si \(F\in\Ob\Dpx^*(\mathcal C_S)\) est pseudo-cohérent} (rel. à \(\mathcal C_0\)), \emph{\(u(F)\) est pseudo-cohérent (rel. à \(\mathcal C'_0\)).}
+
+\emph{Preuve.} On peut se borner au cas non respé. Montrons d'abord que si \(F\in\Ob\Dpx^*(\mathcal C_S)\) est strictement parfait (2.1) et tel que \(F^i=0\) pour \(i>n\), alors \(u(F)\) est \((n+a)\)-\(\mathcal C'_0\)-pseudo-cohérent. Raisonnons par récurrence sur le nombre \(N\) d'indices \(i\) tels que \(F^i\neq0\). Si \(N=1\), 
+%%%%%%%%%%  scan idx 120  |  folio 107  %%%%%%%%%%
+on a \(F=F^p[-p]\)
+pour un \(p\leq n\), donc \(u(F)\) est \((p+a)\)-\(\mathcal C'_0\)-pseudo-cohérent, donc a fortiori \((n+a)\)-pseudo-cohérent. Si \(N>1\), on a une suite exacte
+\[
+  0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow 0,
+\]
+où \(F'\) et \(F''\) sont strictement parfaits de longueur \(\leq N-1\) et tels que \(F'^i=F''^i=0\) pour \(i>n\). Appliquant (2.5.b)) au triangle distingué
+\[
+\begin{tikzcd}
+& u(F'') \arrow[dl,"+1"'] & \\
+u(F') \arrow[rr] && u(F) \arrow[ul] & ,
+\end{tikzcd}
+\]
+on déduit de l'hypothèse de récurrence que \(u(F)\) est \((n+a)\)-pseudo-cohérent.
+
+Passons maintenant au cas général : \(F\) \(m\)-\(\mathcal C_0\)-pseudo-cohérent et acyclique en degré \(>n\). Quitte à localiser, on peut, grâce à (2.10.a)), supposer \(F\) strictement \(m\)-pseudo-cohérent et tel que \(F^i=0\) pour \(i>n\). On a alors une suite exacte
+\[
+  0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow 0,
+\]
+où \(F''\) est nul en degré \(\geq m\) et \(F'\) strictement parfait et nul en degré \(>n\). Dans le triangle distingué
+\[
+\begin{tikzcd}
+& u(F'') \arrow[dl,"+1"'] & \\
+u(F') \arrow[rr] && u(F) \arrow[ul] & ,
+\end{tikzcd}
+\]
+\(u(F'')\) est acyclique en degré \(\geq m+b\), donc \((m+b)\)-pseudo-cohérent, et \(u(F')\) est \((n+a)\)-pseudo-cohérent d'après ce qu'on a vu. On conclut par (2.5.b)).
+
+\textbf{Corollaire 2.14.} \emph{Soit \(\mathcal C_1\) une sous-\(S\)-catégorie additive strictement pleine de \(\mathcal C\) telle que \(\mathcal C_0\subset\mathcal C_1\subset\mathcal C\). On suppose que tout objet de \(\mathcal C_1\) est \(\mathcal C_0\)-pseudo-cohérent.}
+%%%%%%%%%%  scan idx 121  |  folio 108  %%%%%%%%%%
+\emph{Alors} :
+
+(i) \emph{\(\mathcal C_1\) est localement quasi-relevable dans \(\mathcal C\) (1.2) et localement quasi-stable par noyau d'épimorphisme (1.2).}
+
+(ii) \emph{Soient \(S\in\Ob S\) et \(F\in\Ob\Dpx(\mathcal C_S)\). Pour que \(F\) soit \(n\)-pseudo-cohérent (resp. pseudo-cohérent) relativement à \(\mathcal C_1\), il faut et il suffit qu'il le soit relativement à \(\mathcal C_0\).}
+
+\emph{Preuve.} (i) Soit \(E\to F\) un épimorphisme de \(\mathcal C_S\), avec \(F\in\Ob\mathcal C_{1S}\). Comme \(F\) est \(\mathcal C_0\)-pseudo-cohérent (donc a fortiori de \(\mathcal C_0\)-type fini), il existe (quitte à localiser) un épimorphisme \(E'\to F\) avec \(E'\in\Ob\mathcal C_{0S}\). Utilisant la quasi-relevabilité de \(\mathcal C_0\) dans \(\mathcal C\), on peut supposer (quitte à localiser à nouveau) que celui-ci se factorise à travers \(E\), d'où la quasi-relevabilité de \(\mathcal C_1\). D'autre part, si \(E\in\Ob\mathcal C_S\) admet une résolution droite finie par des objets de \(\mathcal C_1\), \(E\) est \(\mathcal C_0\)-pseudo-cohérent en vertu de (2.11.a)), donc a fortiori de \(\mathcal C_1\)-type fini.
+
+(ii) Il suffit de prouver la nécessité. On peut pour cela appliquer, au choix, (2.11.a)) ou (2.13) avec \(S'=S\), \(\mathcal C'=\mathcal C\), \(f=\text{Identité}\), \(u=\text{Identité}\), \(\mathcal C'_0\) et \(\mathcal C_0\) remplacées respectivement par \(\mathcal C_0\) et \(\mathcal C_1\)).
+
+\textbf{Scholie 2.14.1.} Il existe donc une plus grande sous-\(S\)-catégorie additive strictement pleine de \(\mathcal C\) donnant la même notion de \(n\)-pseudo-cohérence (resp. pseudo-cohérence) que \(\mathcal C_0\), à savoir la catégorie formée des objets \(\mathcal C_0\)-pseudo-cohérents. Cette dernière est localement stable par noyau d'épimorphisme.
+
+\textbf{Exemple 2.15.} Soient \((S,A)\) un topos annelé et \(\mathcal C,\mathcal C_0\) les \(S\)-catégories envisagées en (1.3.d)). La catégorie fibrée \(\Dpx(\mathcal C)\) sera souvent notée \(\Dpx(S,A)\), ou \(\Dpx({}_A S)\) (pour
+%%%%%%%%%%  scan idx 122  |  folio 109  %%%%%%%%%%
+suggérer qu'il s'agit de \(A\)-Modules à gauche), ou même \(\Dpx(S)\) s'il n'y a pas d'ambiguïté sur \(A\). On notera \(S\) l'objet final de \(S\) et posera \(\Dpx(\mathcal C_S)=\Dpx({}_A S)\) (ou \(\Dpx(S)\)). Un objet de \(\Dpx(S)\) sera dit \emph{\(n\)-pseudo-cohérent} (resp. \emph{pseudo-cohérent}) s'il est \(n\)-\(\mathcal C_0\)-pseudo-cohérent (resp. \(\mathcal C_0\)-pseudo-cohérent) (itou pour les notions strictes). La catégorie fibrée \(\Dpx(\mathcal C)_{n\text{-}\mathcal C_0\text{-}\coh}\) (resp. \(\Dpx(\mathcal C)_{\mathcal C_0\text{-}\coh}\)) (2.6) sera notée \(\Dpx({}_A S)_{n\text{-}\coh}\) (resp. \(\Dpx({}_A S)_{\coh}\)). On observera qu'en vertu de (2.14) on obtient la même notion de pseudo-cohérence si l'on remplace \(\mathcal C_0\) par la \(S\)-catégorie \(\mathcal C_1\) définie par \(U\longmapsto\) (catégorie des \(A_U\)-Modules à gauche localement facteurs directs de Modules libres de type fini). Si un \(A\)-Module \(M\) est facteur direct d'un \(A\)-Module libre de type fini, il ne s'ensuit pas, en général, que \(M\) est localement libre de type fini. On a cependant :
+
+\textbf{Lemme 2.15.1.} \emph{Supposons que \(S\) vérifie l'une des deux hypothèses suivantes :}
+
+(i) \emph{\(S\) « a assez de points » (SGA 4 IV 6.4) et pour tout point \(s\) de \(S\) les \(A_s\)-modules} (à gauche) \emph{projectifs de type fini sont libres, cette dernière condition étant réalisée par exemple (BOURBAKI Alg. Comm. chap. II \S~3 n\textsuperscript{o}~2 cor.~2 de la prop. 5) si \(A_s/\operatorname{radical}(A_s)\) est un corps ou si \(\operatorname{radical}(A_s)\) est nilpotent.}
+
+(ii) \emph{\((S,A)\) est un topos « localement annelé » au sens de [1], ce qui signifie que \(A\) est commutatif et que pour tout \(X\in\Ob S\) et tout \(f\in\Gamma(X,A)\) on a \(X=X_f\cup X_{1-f}\), où \(X_f\) (resp. \(X_{1-f}\)) désigne le plus grand sous-objet de \(X\) où \(f\) (resp. \(1-f\)) est inversible.}
+
+\emph{Alors tout facteur direct d'un \(A\)-module (à gauche) libre de type fini est localement libre de type fini.}
+
+\emph{Preuve.} Supposons (i). On remarque d'abord que si \(E\) et \(F\) sont deux \(A\)-Modules, \(E\) étant de présentation finie, la flèche canonique
+%%%%%%%%%%  scan idx 123  |  folio 110  %%%%%%%%%%
+\[
+  \underline{\Hom}(E,F)_s\longrightarrow\Hom(E_s,F_s)
+\]
+est un
+isomorphisme pour tout point \(s\) de \(S\). Il en résulte que si \(E\) et \(F\) sont tous deux de présentation finie, et si \(E_s\simeq F_s\) en un point \(s\) de \(S\), alors il existe un objet \(s\)-ponctué \(U\) de \(S\)\footnote{i.e. tel que \(s\) se factorise à travers \(S_{/U}\).} tel que \(E|U\simeq F|U\). La conclusion en découle aussitôt.
+
+Supposons (ii), Soit \(n\in\mathbb N\), notons \(\mathbb D^n\) le foncteur sur la catégorie des topos localement annelés (appartenant à un univers fixé\dots) défini par \(T\longmapsto\Gamma(T,\mathcal O_T)^n\). On sait [1] que le foncteur \(\underline{\End}_{\mathbb D}(\mathbb D^n)\) est représenté par \(M_n=\Spec\mathbb Z[T_{ij}]\ (1\leq i\leq n,\ 1\leq j\leq n)\) muni de l'endomorphisme \(U_n\) de \((\mathcal O_{M_n})^n\) défini par la matrice \((T_{ij})\). Soit maintenant \(p:A^n\longrightarrow A^n\) un projecteur, montrons que \(p(A^n)\) est localement libre de type fini. D'après ce qu'on vient de dire, il existe un morphisme \(s:S\longrightarrow M_n\) de topos localement annelés tel que \(s^*(u_n)=p\). On peut interpréter \(s\) comme un point de \(M_n\) à valeurs dans \(\Gamma(S,A)\), i.e. une matrice d'ordre \(n\) à coefficients dans \(\Gamma(S,A)\); comme cette dernière est un projecteur, \(s\) se factorise à travers le sous-schéma fermé \(i:P_n\to M_n\) correspondant aux projecteurs en \(S\xrightarrow{s'}P_n\xrightarrow{i}M_n\). On a donc \(p=s'^*i^*(u_n)\), et l'on gagne, car d'après l'assertion sous l'hypothèse (i), l'image de \(i^*(u_n)\) est un faisceau localement libre de type fini.
+
+\textbf{Corollaire 2.16.} \emph{Soit \(f:(S',A')\to(S,A)\) un morphisme de topos annelés (défini par un foncteur \(f^{-1}:S\to S'\) et un morphisme de faisceaux d'anneaux \(f^{-1}(A)\to A'\)). Notons \(\Dpx({}_{A'}S'_A)\) la catégorie dérivée de celle des \(A'\)-\(A\)-biModules (à gauche sur \(A'\), à droite sur \(A\)), et}
+\[
+  \otimes_A^{\mathrm L}:\Dpx^-(_{A'}S'_A)\times_{S'}\Dpx^-(_A S)
+  \longrightarrow \Dpx^-(_{A'}S')
+\]
+
+\end{document}

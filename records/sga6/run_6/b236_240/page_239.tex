@@ -1,0 +1,17 @@
+% from main.tex
+%%%%%%%%%%  scan idx 252  |  folio 239  %%%%%%%%%%
+où \(E''\) vérifie les
+mêmes conditions que \(E\), mais avec \(a\) remplacé par \(t-1\). Appliquant \(\mathbf Rf_*\), on obtient un triangle distingué
+\begin{equation}\tag{$*$}
+\mathbf Rf_*(E')\longrightarrow \mathbf Rf_*(E)\longrightarrow \mathbf Rf_*(E'')\longrightarrow \mathbf Rf_*(E')[1]
+\end{equation}
+Comme \(t\) peut être choisi arbitrairement grand négatif, il suffit, pour la première assertion, de montrer que \(\mathbf Rf_*(E)\) est \((t+r)\)-pseudo-cohérent. Or \(\mathbf Rf_*(E'')\) est acyclique en degré \(\geq t+r\), donc \((t+r)\)-pseudo-cohérent. On aura donc gagné, en vertu de (I 2.6), si l'on prouve que \(\mathbf Rf_*(E')\) est parfait.
+
+Pour cela, on se ramène par dévissage (I 4.10), au cas où \(E'\) est réduit au degré \(0\) et égal à \(\mathcal O_X(-n)\), \(n>0\). Alors, d'après (EGA III 2.1.16), \(R^rf_*(\mathcal O_X(-n))\) est localement libre de type fini, et l'on a
+\[
+  \mathbf Rf_*(\mathcal O_X(-n))\xrightarrow{\sim} R^rf_*(\mathcal O_X(-n))[-r].
+\]
+Donc \(\mathbf Rf_*(\mathcal O_X(-n))\) est parfait, et l'on en déduit la première assertion de (2.2.2). On a déjà vu que \(\mathbf Rf_*(E)\) est acyclique en degré \(>a+r\). Reste à prouver la dernière assertion. Pour \(t<-r+a\), \(\mathbf Rf_*(E'')\) est acyclique en degré \(>a\), donc on est ramené, compte tenu du triangle \((*)\), à faire la démonstration pour \(E'\) au lieu de \(E\). Comme \(E'\) est à degrés bornés et à composantes objets de \(L(X)\), il existe un entier \(N\) tel que, pour \(n\geq N\), les composantes de \(E'(n)\) soient sommes directes finies de faisceaux du type \(\mathcal O_X(p)\) où \(p\geq0\). Alors, d'après (EGA III 2.1.16) et la suite spectrale d'hypercohomologie, \(\mathbf Rf_*(E'(n))\) est acyclique en degré \(>a\) pour tout \(n\geq N\), ce qui achève la démonstration de (2.2.2), et par suite de (2.2).
+
+On a un complément « classique » à (2.2 (ii)), que nous donnerons pour références ultérieures :
+

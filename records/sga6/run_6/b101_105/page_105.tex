@@ -1,0 +1,23 @@
+% from main.tex
+%%%%%%%%%%  scan idx 118  |  folio 105  %%%%%%%%%%
+Par l'%
+hypothèse de récurrence (appliquée pour \(n-1\) au lieu de \(n\)), \(F'\) est donc \((n-1)\)-pseudo-cohérent. D'autre part, \(\Ho^{n+N}(F)[-n-N]\) est \(n\)-pseudo-cohérent (2.9 et 2.5.a)). Donc, en vertu de (2.6), \(F\) est \(n\)-pseudo-cohérent.
+
+\textbf{Remarque 2.11.1.} Si \(F\) est pseudo-cohérent, les \(F^i\) (resp. \(\Ho^i(F)\)) ne sont pas en général pseudo-cohérents, ni même de type fini. Toutefois, nous verrons au paragraphe suivant, dans les sorites sur les notions de cohérence, des exemples importants où la pseudo-cohérence de \(F\) implique celle des \(\Ho^i(F)\).
+
+\textbf{Proposition 2.12.} \emph{Soient \(F',F''\in\Ob\Dpx(\mathcal C_S)\), et \(F=F'+F''\). Pour que \(F\) soit \(n\)-pseudo-cohérent (resp. pseudo-cohérent) il faut et il suffit que \(F'\) et \(F''\) soient \(n\)-pseudo-cohérents (resp. pseudo-cohérents).}
+
+\emph{Preuve.} Il suffit de prouver l'assertion non respée. La suffisance est évidente, prouvons la nécessité. On peut supposer, par récurrence, qu'on a déjà démontré que \(F'\) et \(F''\) sont \((n+1)\)-pseudo-cohérents. Quitte à se localiser, on peut même supposer que \(F'\) et \(F''\) sont strictement \((n+1)\)-pseudo-cohérents et que \(F=F'+F''\) dans \(\Cpx^-(\mathcal C_S)\). Notons \(F'_{>n}\) (resp. \(F'_{\leq n}\)) le complexe déduit de \(F'\) en remplaçant \(F'^i\) par \(0\) pour \(i\leq n\) (resp. \(i>n\)), et de même \(F''_{>n}\) (resp. \(F''_{\leq n}\))\dots{} On a une suite exacte
+\[
+  0\longrightarrow F'_{>n}+F''_{>n}\longrightarrow F
+  \longrightarrow F'_{\leq n}+F''_{\leq n}\longrightarrow 0 .
+\]
+\(F'_{>n}+F''_{>n}\) est strictement parfait et \(F\) est \(n\)-pseudo-cohérent, donc (2.6) \(F'_{\leq n}+F''_{\leq n}\) est \(n\)-pseudo-cohérent. Cela signifie, d'après (2.10 b)), que
+\[
+  \Ho^n(F'_{\leq n}+F''_{\leq n})
+\]
+est de type fini. Mais on a
+\[
+  \Ho^n(F'_{\leq n}+F''_{\leq n})
+  =\Ho^n(F'_{\leq n})+\Ho^n(F''_{\leq n}),
+\]

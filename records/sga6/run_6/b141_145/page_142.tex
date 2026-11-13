@@ -1,0 +1,18 @@
+% from main.tex
+%%%%%%%%%%  scan idx 155  |  folio 142  %%%%%%%%%%
+pour \(L\in\Ob\Kpx^b(\mathcal C)\) et \(f\) une fonction additive sur \(\Kpx^b(\mathcal C)\).
+
+\textbf{Définition 6.5.} Soient \(S\) une catégorie, \(\mathcal C\) une \(S\)-catégorie additive (resp. triangulée) (1.1.1), \(F\) un préfaisceau abélien sur \(S\). On dit qu'une famille de fonctions \(f_X:\Ob(\mathcal C_X)\longrightarrow F(X)\) indexée par \(X\in\Ob S\) est une \(S\)-fonction additive de \(\mathcal C\) dans \(F\) si les conditions suivantes sont réalisées :
+\begin{enumerate}[label=(\roman*)]
+\item pour tout \(X\in\Ob\mathcal C_X\), \(f_X\) est une fonction additive (6.1);
+\item pour toute flèche \(u:X\to Y\) de \(S\), le diagramme suivant est commutatif
+\[
+\begin{tikzcd}
+\Ob\mathcal C_Y \arrow[r,"f_Y"] \arrow[d,"u^*"'] & F(Y) \arrow[d,"F(u)"]\\
+\Ob\mathcal C_X \arrow[r,"f_X"] & F(X).
+\end{tikzcd}
+\]
+\end{enumerate}
+Les \(S\)-fonctions additives de \(\mathcal C\) dans \(F\) forment un groupe abélien, noté \(\Add_S(\mathcal C,F)\).
+
+\textbf{Remarques 6.6.} \textbf{a)} Notons \(\mathcal C^{\is}\) la \(S\)-catégorie fibrée dont la fibre en \(X\in\Ob S\) est la catégorie ayant mêmes objets que \(\mathcal C_X\) mais dont les flèches sont les isomorphismes de \(\mathcal C_X\). Notons d'autre part \(\underline F\) la \(S\)-catégorie fibrée dont la fibre en \(X\in\Ob S\) est la catégorie discrète (i.e. les seules flèches sont les flèches identiques) \(F(X)\), le foncteur image inverse par \(u\in\mathrm{Fl}(S)\) étant \(F(u)\). Alors une \(S\)-fonction additive de \(\mathcal C\) dans \(F\) n'est autre qu'un \(S\)-foncteur cartésien de \(\mathcal C^{\is}\) dans \(\underline F\), induisant sur chaque fibre une fonction additive au sens (6.1). Il nous sera commode d'interpréter l'additivité de la façon suivante. Supposons, pour fixer les idées, \(\mathcal C\) triangulée. La catégorie \(\Cart_S(\mathcal C^{\is},\underline F)\) (resp. \(\Cart_S(\Tr(\mathcal C)^{\is},\underline F)\) (1.1.2)) des \(S\)-foncteurs cartésiens de \(\mathcal C^{\is}\) (resp. \(\Tr(\mathcal C)^{\is}\)) dans \(\underline F\) est la catégorie discrète associée à un groupe

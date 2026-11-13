@@ -1,0 +1,28 @@
+% from main.tex
+%%%%%%%%%%  scan idx 153  |  folio 140  %%%%%%%%%%
+\section*{6. Rang d'un complexe parfait}
+
+\textbf{6.0.} Soit \((X,\mathcal O_X)\) un espace annelé en anneaux locaux. Il est bien connu que l'on peut attacher à tout faisceau localement libre de type fini \(L\) sur un ouvert \(U\) de \(X\) une fonction \(\rg_U(L)\) localement constante sur \(U\) et à valeurs entières, qu'on appelle le \emph{rang} de \(L\), la famille des fonctions \(\rg_U(L)\) étant caractérisée par les propriétés suivantes :
+\begin{enumerate}[label=(\roman*)]
+\item si \(V\subset U\) est une inclusion d'ouverts, on a \(\rg_V(L|V)=\rg_U(L)|V\);
+\item pour toute suite exacte de \(\mathcal O_U\)-Modules localement libres de type fini
+\[
+  0\longrightarrow L'\longrightarrow L\longrightarrow L''\longrightarrow 0,
+\]
+on a \(\rg_U(L)=\rg_U(L')+\rg_U(L'')\);
+\item \(\rg_X(\mathcal O_X)=1\).
+\end{enumerate}
+On se propose, dans ce numéro, d'étendre la notion de rang aux complexes parfaits.
+
+\textbf{Définition 6.1} (cf. SGA 5 VIII 2). Soient \(\mathcal C\) une catégorie additive (resp. triangulée) et \(F\) un groupe abélien. On dit qu'une fonction \(f:\Ob(\mathcal C)\longrightarrow F\) est une fonction additive de \(\mathcal C\) dans \(F\) si pour tous \(L,L',L''\in\Ob(\mathcal C)\) tels que l'on ait \(L\simeq L'+L''\) (resp. un triangle distingué
+\[
+\begin{tikzcd}
+& L'' \arrow[dl, dashed] & \\
+L' \arrow[rr] && L \arrow[ul]
+\end{tikzcd}
+\]
+) on a \(f(L)=f(L')+f(L'')\).
+
+Les fonctions additives de \(\mathcal C\) dans \(F\) forment un groupe abélien, noté \(\Add(\mathcal C,F)\).
+
+\textbf{6.2.}

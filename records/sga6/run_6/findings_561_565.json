@@ -1,0 +1,278 @@
+[
+ {
+  "page": 561,
+  "where": "statements of pp. 561-562: end of Corollaire 7.2 (p. 561) and Proposition 7.3 (pp. 561-562)",
+  "scan": "underlined word group by word group (both scans): Cor. 7.2 'd'autre part', 'on a un homomorphisme', 'Ceci posé', 'le composé', 'est nul'; Prop. 7.3 'Avec les notations de', 'étant supposé noethérien', 'il existe un unique homomorphisme de groupes', 'dit', 'rendant commutatif le diagramme', and on p. 562 'Lorsqu'on considère les deux membres de', 'comme des modules sur', 'grâce aux homomorphismes d'anneaux', 'et', 'et aux structures de modules de', 'et', 'sur', 'et', 'respectivement', 'l'homomorphisme', 'est un homomorphisme', 'de', 'modules' (formulas, numbers, references and punctuation not underlined)",
+  "tex": "both statements set in roman",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "The appendix follows the Exposé II pattern of GLOBAL_ISSUES 82 (pending volume decision), as findings_521_525 and findings_526_530 report for Exposé X: not itemized. No \\emph on defined terms the print leaves plain and no category L on pp. 561-565. The underlined words of the running text (proofs, paragraphs 7.4, 7.7, 7.7.3) are itemized below with \\emph, the file's command for them in this exposé (folios 559, 566-573)."
+ },
+ {
+  "page": 561,
+  "where": "proof of 7.2: 'dont le faisceau conormal N est libre de rang 1'",
+  "scan": "'libre' underlined (both scans)",
+  "tex": "est libre de rang",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est libre de rang",
+   "new": "est \\emph{libre} de rang"
+  },
+  "note": "Underlined word in running text. Independent of the \\mathbb N entry (the two old strings do not overlap)."
+ },
+ {
+  "page": 561,
+  "where": "proof of 7.2: 'dont le faisceau conormal N est libre'",
+  "scan": "double-struck N: two parallel left stems with a white line between them (witness, pixel check; main scan the same: crops_561_565/w561_N_zoom.png, m561_N.png)",
+  "tex": "conormal \\(N\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "conormal \\(N\\)",
+   "new": "conormal \\(\\mathbb N\\)"
+  },
+  "note": "The conormal sheaf is printed with the typescript's double-struck N, here and in λ_{-1}(N) three lines below; the TeX has a plain N. Apply the two N edits of this page together."
+ },
+ {
+  "page": 561,
+  "where": "'On a donc λ_{-1}(N) = 0'",
+  "scan": "the same double-struck N, heavily inked: thick doubled left stem, far heavier than the typed letters around it (both scans; crops_561_565/w561_lambdaN_zoom.png, m561_lambdaN_zoom.png)",
+  "tex": "\\lambda_{-1}(N)=0",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\lambda_{-1}(N)",
+   "new": "\\lambda_{-1}(\\mathbb N)"
+  },
+  "note": "As the previous entry; apply the two together."
+ },
+ {
+  "page": 561,
+  "where": "'Nous supposerons dans toute la suite X noethérien et plat sur S.'",
+  "scan": "'noethérien' and 'plat sur' underlined, 'et' and 'S.' not (both scans)",
+  "tex": "noethérien et plat sur",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "noethérien et plat sur",
+   "new": "\\emph{noethérien} et \\emph{plat sur}"
+  },
+  "note": "Underlined words in running text."
+ },
+ {
+  "page": 561,
+  "where": "diagram (7.3.2), top arrow K.(X) -> K.(X_t)",
+  "scan": "label j*: long stem descending to the shaft with a leftward hook, as the j* over the first arrow on p. 562; the i* of the vertical arrow and of p. 562 is short with a foot (witness pixel check; crops_561_565/w561_diagtop.png, m561_diagtop.png, w562_jstar.png, w562_istar.png)",
+  "tex": "\\arrow[r,\"i^*\"]",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"i^*\"]",
+   "new": "\\arrow[r,\"j^*\"]"
+  },
+  "note": "The restriction to the open X_t is j* (the exact sequence above; 'K˙(X) --j*--> K˙(X_t)' on p. 562). The TeX's i^* is not the print's reading."
+ },
+ {
+  "page": 561,
+  "where": "diagram (7.3.2), end",
+  "scan": "a full stop to the right of the lower row K.(X_s) (both scans)",
+  "tex": "K_\\bullet(X_s) &\n\\end{tikzcd}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "K_\\bullet(X_s) &\n\\end{tikzcd}",
+   "new": "K_\\bullet(X_s) & {.}\n\\end{tikzcd}"
+  },
+  "note": "Missing full stop; set in the empty cell as the file sets it for (7.7.2) on p. 564 ('K^\\bullet(X_s) & {.}')."
+ },
+ {
+  "page": 562,
+  "where": "start of page: 'Lorsqu'on considère les deux membres de (7.3.1) ...' (Proposition 7.3 continued)",
+  "scan": "flush left at the margin (witness left edge 288 px; margin of the page 285-295 px; the page's new paragraphs 'La dernière assertion', 'Nous allons', 'Pour le voir' are indented to about 400 px): the statement goes on after the diagram (7.3.2) without a new paragraph (both scans)",
+  "tex": "the blank lines before and after the local \\providecommand block at the end of page_561.tex end the paragraph, so 'Lorsqu'on' starts a new, indented paragraph",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "Lorsqu'on considère les deux membres",
+   "new": "\\noindent Lorsqu'on considère les deux membres"
+  },
+  "note": "Extra paragraph break (as findings_571_575, p. 574). Removing the blank lines instead would put the line-end spaces of the eleven \\providecommand lines into the paragraph (a visible indent) unless the macro block is moved out of the statement; \\noindent gives the printed layout without touching page 561."
+ },
+ {
+  "page": 562,
+  "where": "K with a raised dot on pp. 562-564 (14 places: 9 on p. 562, 4 on p. 563, 1 on p. 564)",
+  "scan": "K with a raised filled dot in every place (both scans; crops_561_565/w562_Kdot.png, m562_Kdot.png)",
+  "tex": "K^\\circ",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the Exposé X TeX up to 7.6, not itemized: one script K^\\circ -> K^{\\bullet} for Exposé X, both layers, as findings_521_525 (p. 522) proposes. From the heading 7.7 on (p. 564) the TeX itself writes K^\\bullet for the same printed K˙. Three examples: p. 562 'modules sur \\(K^\\circ(X)\\)' -> 'modules sur \\(K^{\\bullet}(X)\\)'; p. 563 'est \\(K^\\circ(X)\\)-linéaire' -> 'est \\(K^{\\bullet}(X)\\)-linéaire'; p. 564 '\\(K^\\circ\\to K_\\bullet\\)' -> '\\(K^{\\bullet}\\to K_\\bullet\\)'. No old string of this file contains K^\\circ."
+ },
+ {
+  "page": 562,
+  "where": "heading 7.4",
+  "scan": "'7.4. Compatibilité aux filtrations.' with a full stop after the underlined title (both scans)",
+  "tex": "\\subsection*{7.4. Compatibilité aux filtrations}",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "\\subsection*{7.4. Compatibilité aux filtrations}",
+   "new": "\\subsection*{7.4. Compatibilité aux filtrations.}"
+  },
+  "note": "The other headings of the appendix keep the print's final stop (7.5, 7.7, 7.8 on these pages, 7.9 on p. 566); the missing underline of the title is accepted."
+ },
+ {
+  "page": 562,
+  "where": "7.4: 'l'homomorphisme de spécialisation est compatible avec ces filtrations, et induit par suite'",
+  "scan": "underlined from 'l'homomorphisme' to 'filtrations' (hyphenated spécialisa-|tion), the comma not (both scans)",
+  "tex": "l'homomorphisme de spécialisation est compatible avec ces filtrations",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "l'homomorphisme de spécialisation est compatible avec ces filtrations",
+   "new": "\\emph{l'homomorphisme de spécialisation est compatible avec ces filtrations}"
+  },
+  "note": "Underlined assertion inside the running text of a numbered paragraph, not a labelled statement of the Exposé II pattern (as findings_566_570, p. 567); the file writes such underlining as \\emph (folio 573)."
+ },
+ {
+  "page": 562,
+  "where": "proof of 7.4: 'Or soit Y d'adhérence schématique de Y_t dans X'",
+  "scan": "d'adhérence (both scans; crops_561_565/w562_adherence.png)",
+  "tex": "Or soit \\(Y\\) d'adhérence schématique",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Or soit \\(Y\\) l'adhérence schématique",
+  "note": "Typing error d' for l': Y is the schematic closure of Y_t in X. The TeX keeps the printed reading."
+ },
+ {
+  "page": 563,
+  "where": "after the diagram (7.5.2): 'Pour prouver (7.5.1), on est encore ramené au cas où ...'",
+  "scan": "flush left at the margin (witness left edge 194 px; margin 190-198 px; indented paragraphs of this typescript start near 305-310 px, e.g. p. 565 'Notons aussi', 'Supposant toujours'): no new paragraph (both scans)",
+  "tex": "\\end{equation}\n\nPour prouver",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{equation}\n\nPour prouver",
+   "new": "\\end{equation}\nPour prouver"
+  },
+  "note": "Extra paragraph break."
+ },
+ {
+  "page": 563,
+  "where": "diagram (7.6.2), bottom arrow K.(X_t) -> K.(X_s)",
+  "scan": "σ. above the arrow (both scans)",
+  "tex": "\\arrow[rr,\"\\sigma_\\bullet\"']",
+  "kind": "formula",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\arrow[rr,\"\\sigma_\\bullet\"']",
+   "new": "\\arrow[rr,\"\\sigma_\\bullet\"]"
+  },
+  "note": "Label on the wrong side of the arrow (as findings_041_045, findings_301_305); j* (upper left) and i* (upper right) stand as printed."
+ },
+ {
+  "page": 564,
+  "where": "diagram (7.7.2), top arrow K˙(X) -> K˙(X_t)",
+  "scan": "label j*: long stem with a leftward hook reaching the shaft (witness pixel check, crops_561_565/w564_jstar.png); the next sentence names both maps of the diagram: 'Comme dans ce dernier i* et j* sont des homomorphismes d'anneaux (IV 2.7 b) avec j* surjectif'",
+  "tex": "\\arrow[r,\"i^*\"]",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\arrow[r,\"i^*\"]",
+   "new": "\\arrow[r,\"j^*\"]"
+  },
+  "note": "As (7.3.2) on p. 561."
+ },
+ {
+  "page": 564,
+  "where": "after the diagram (7.7.2): 'Comme dans ce dernier i* et j* sont des homomorphismes d'anneaux'",
+  "scan": "flush left at the margin (witness left edge 284 px; margin 284-293 px): no new paragraph (both scans)",
+  "tex": "\\end{equation}\n\nComme dans ce dernier",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{equation}\n\nComme dans ce dernier",
+   "new": "\\end{equation}\nComme dans ce dernier"
+  },
+  "note": "Extra paragraph break."
+ },
+ {
+  "page": 564,
+  "where": "'il s'ensuit que l'homomorphisme de spécialisation (7.7.1) est un homomorphisme d'anneaux.'",
+  "scan": "'l'homomorphisme de spécialisation' and 'est un homomorphisme d'anneaux' underlined; '(7.7.1)' and the full stop not (both scans)",
+  "tex": "l'homomorphisme de spécialisation (7.7.1) est un homomorphisme d'anneaux",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "l'homomorphisme de spécialisation (7.7.1) est un homomorphisme d'anneaux",
+   "new": "\\emph{l'homomorphisme de spécialisation} (7.7.1) \\emph{est un homomorphisme d'anneaux}"
+  },
+  "note": "Underlined conclusion in the running text of 7.7 (as 7.4 on p. 562)."
+ },
+ {
+  "page": 564,
+  "where": "'Pour la même raison, si X est séparé, l'homomorphisme (7.7.1) est même un homomorphisme de λ-anneaux.'",
+  "scan": "underlined: 'si', 'est séparé', 'l'homomorphisme' (hyphenated l'homo-|morphisme), 'est même un homomorphisme de', 'anneaux' (λ- not; crops_561_565/w564_lambda_anneaux.png); X, the comma, (7.7.1) and the full stop not (both scans)",
+  "tex": "si \\(X\\) est séparé, l'homomorphisme (7.7.1) est même un homomorphisme de \\(\\lambda\\)-anneaux",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "si \\(X\\) est séparé, l'homomorphisme (7.7.1) est même un homomorphisme de \\(\\lambda\\)-anneaux",
+   "new": "\\emph{si} \\(X\\) \\emph{est séparé}, \\emph{l'homomorphisme} (7.7.1) \\emph{est même un homomorphisme de} \\(\\lambda\\)-\\emph{anneaux}"
+  },
+  "note": "Independent of the previous entry."
+ },
+ {
+  "page": 565,
+  "where": "end of display (7.7.3) 'H^0(X_t,ℤ) -> H^0(X_s,ℤ)'",
+  "scan": "a comma (clear in the witness, crops_561_565/w565_773end.png; the main scan shows a dark blot at that place); the sentence goes on 'qui mérite encore le nom de ...'",
+  "tex": "H^0(X_s,\\mathbb Z).",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "H^0(X_s,\\mathbb Z).\n\\end{equation}",
+   "new": "H^0(X_s,\\mathbb Z),\n\\end{equation}"
+  },
+  "note": "Full stop for the printed comma."
+ },
+ {
+  "page": 565,
+  "where": "'de sorte que l'homomorphisme H^0(X,ℤ) -> H^0(X_t,Z) induit par l'inclusion X_t -> X est bijectif'",
+  "scan": "the Z of H^0(X_t,Z) is a plain typed Z (its 0 a small raised circle), the Z of H^0(X,ℤ) before it double-struck (both scans; crops_561_565/w565_H0Z.png, m565_H0Z.png)",
+  "tex": "\\to H^0(X_t,\\mathbb Z)\\)",
+  "kind": "font",
+  "confidence": "low",
+  "fix": {
+   "old": "\\to H^0(X_t,\\mathbb Z)\\)",
+   "new": "\\to H^0(X_t,Z)\\)"
+  },
+  "note": "The typist's plain Z where the TeX has \\mathbb Z; low, as the plain Q (volume decision with SGA 7 II issue 61). The other seven Z of the page are double-struck."
+ },
+ {
+  "page": 565,
+  "where": "'est compatible avec les structures d'algèbres augmentées sur H^0(X_t,ℤ)'",
+  "scan": "'algèbres augmentées' underlined, d' not (both scans)",
+  "tex": "d'algèbres augmentées",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "d'algèbres augmentées",
+   "new": "d'\\emph{algèbres augmentées}"
+  },
+  "note": "Underlined words in running text."
+ },
+ {
+  "page": 565,
+  "where": "'les structures d'algèbres augmentées sur H^0(X_t,ℤ) resp. H^0(X_s,ℤ) des deux membres définie dans (IV 2.8 )'",
+  "scan": "définie (both scans)",
+  "tex": "des deux membres définie dans (IV 2.8)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "des deux membres définies dans (IV 2.8)",
+  "note": "Agreement slip: the participle goes with 'les structures'. The TeX keeps the printed reading."
+ }
+]

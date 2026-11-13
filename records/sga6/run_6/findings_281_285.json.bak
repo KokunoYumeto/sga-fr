@@ -1,0 +1,353 @@
+[
+ {
+  "page": 281,
+  "where": "throughout pp. 281-285 (Exposé IV)",
+  "scan": "K with a raised dot, K˙ (the contravariant group; the lower-dot K. is K_\\bullet): e.g. p. 281 '2.6. Accouplements entre K˙ et K˙', p. 283 '(2.7.1) f* : K˙(_AX) --> K˙(_A'X')', p. 285 '2.9. Comparaison de K˙ et K˙_naïf' (crops: the dot is round and raised, unlike the primes of X', A')",
+  "tex": "K' (a prime) everywhere: 67 times on pp. 281-285 (7, 15, 13, 20, 12), 150 times in Exposé IV (main.tex lines 6567-7198); \\providecommand{\\Kprime}{K'} is defined but unused",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription, reported once and not itemized: replace K' by K^{\\bullet} throughout Exposé IV (the TeX already writes K_\\bullet for the lower dot and Exposé 0 writes K^\\bullet). Every K' on pp. 281-285 is the print's K˙ (no real prime K' on these pages); p. 278 '2. Les foncteurs K. et K˙' likewise."
+ },
+ {
+  "page": 281,
+  "where": "throughout pp. 281-283 (Exposé IV): every D(...)_parf",
+  "scan": "parf underlined in every subscript: p. 281 D(_AX)_parf = D^b(_AX)_coh, D(_A'X'_A)_{A'-parf} (twice); p. 282 (2.6.4) three times; p. 283 D(_AX)_parf dans D(_A'X')_parf; also p. 278 (2.1). coh is not underlined",
+  "tex": "\\parf, which prints plain parf (\\providecommand at line 3387 = \\operatorname{parf}; Exposé IV's \\providecommand{\\parf}{\\mathrm{parf}} has no effect)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention, reported once and not itemized (8 places on pp. 281-283): for Exposé IV redefine \\parf as \\underline{\\mathrm{parf}} (restore after the exposé), or write \\underline{\\parf} at each place."
+ },
+ {
+  "page": 281,
+  "where": "after (ii), 'Les hypothèses (i) et (ii)'",
+  "scan": "'Les hypothèses (i) et (ii) sont satisfaites ...' starts an indented new paragraph (indent as '(i)', '(ii)'; the lines around start at the margin)",
+  "tex": "runs on in the paragraph 'Alors on a, ... est un isomorphisme. Les hypothèses ...'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "isomorphisme. Les hypothèses",
+   "new": "isomorphisme.\n\nLes hypothèses"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 281,
+  "where": "2.6, between the displays of the tensor product",
+  "scan": "the display '⊗_A : Mod(_A'X'_A) x Mod(_AX) --> Mod(_A'X')' is followed directly by the display '(E',E) |--> E'⊗_{f^-1(A)} f^-1(E)'; no word between them (OCR likewise)",
+  "tex": "'envoie' between the two displays",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nenvoie\n\\[",
+   "new": "\\]\n\\["
+  },
+  "note": "Word added by the transcription."
+ },
+ {
+  "page": 281,
+  "where": "2.6, display (E',E) |--> E'⊗_{f^-1(A)} f^-1(E)",
+  "scan": "no punctuation after f^-1(E)",
+  "tex": "f^{-1}(E),",
+  "kind": "punctuation",
+  "confidence": "high",
+  "fix": {
+   "old": "f^{-1}(E),\n",
+   "new": "f^{-1}(E)\n"
+  },
+  "note": "Comma added at the end of the display."
+ },
+ {
+  "page": 281,
+  "where": "2.6, after the display (E',E) |--> ...",
+  "scan": "'induit un foncteur' (no 'et')",
+  "tex": "et induit un foncteur",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\net induit un foncteur",
+   "new": "\\]\ninduit un foncteur"
+  },
+  "note": "Word added by the transcription (with 'envoie' and the comma it turns the two displays into a sentence)."
+ },
+ {
+  "page": 281,
+  "where": "after (2.6.2), 'Notons D(_A'X'_A)'",
+  "scan": "'Notons D(_A'X'_A) la catégorie dérivée' starts at the margin after the display (2.6.2), like 'L'application' and 'induit' on this page: the print runs on; the typescript indents its new paragraphs ('Les hypothèses' above)",
+  "tex": "blank line (new paragraph) before 'Notons'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{equation}\n\nNotons",
+   "new": "\\end{equation}\nNotons"
+  },
+  "note": "Paragraph break the print does not have."
+ },
+ {
+  "page": 281,
+  "where": "last display, K˙(_A'X'_A)_A' = k(D(_A'X'_A)_{A'-parf}",
+  "scan": "k(D(_A'X'_A)_{A'-parf}   . : the parenthesis opened by k( is never closed (checked in a crop; the final full stop is there)",
+  "tex": "k(D({}_{A'} X'_A)_{A'\\text{-}\\parf}). (closing parenthesis supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\parf}).",
+   "new": "\\parf}."
+  },
+  "corrected": "k(D({}_{A'} X'_A)_{A'\\text{-}\\parf}).",
+  "note": "Missing closing parenthesis in the print; the TeX silently corrected it. The fix restores the printed reading."
+ },
+ {
+  "page": 282,
+  "where": "display after 'le foncteur dérivé de ⊗_A,'",
+  "scan": "L over ⊗ typed as a plain typewriter capital L (same weight as the A and D beside it; crop)",
+  "tex": "\\otimes_A^{\\mathbf L}",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "\\otimes_A^{\\mathbf L}:D^-",
+   "new": "\\otimes_A^{\\mathrm L}:D^-"
+  },
+  "note": "Plain L as in Exposé III's global rule (\\mathrm L). Exposé IV has 8 more \\mathbf L for the derived tensor (main.tex lines 6893, 6920, 6921, 7013, 7017 (two), 7102, 7147), not checked here."
+ },
+ {
+  "page": 283,
+  "where": "heading 2.7",
+  "scan": "'2.7. Loi contravariante et structure d'anneau sur K˙' with no full stop (crop); the heading stands on its own line and 'Nous allons expliciter' starts the next line at the margin",
+  "tex": "\\textbf{2.7. Loi contravariante et structure d'anneau sur \\(K'\\).}",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\).} Nous allons",
+   "new": "\\)} Nous allons"
+  },
+  "note": "Full stop added inside the bold heading (the run-in layout itself is not reported)."
+ },
+ {
+  "page": 283,
+  "where": "a), after (2.7.2)",
+  "scan": "qu'on peut encore interpréter comme le produit par cl(A') dans (2.6.2) (resp. (2.6.5))",
+  "tex": "dans (2.6.2) (resp. (2.6.5)) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "dans (2.6.5) (resp. (2.6.2))",
+  "note": "The references are swapped: (2.7.1) on K˙ is the product in the derived pairing (2.6.5), (2.7.2) on K˙_naïf the one in the naive pairing (2.6.2) (b) has the right order '(2.6.5) (resp. (2.6.2))'). The corrected layer already has it (RECONCILE_CODEX_6, SGA-SRC-001591); not yet in MISPRINTS_6.json."
+ },
+ {
+  "page": 283,
+  "where": "end of a), 'Ainsi K˙(_AX) ...'",
+  "scan": "'est un foncteur contravariant de' underlined (not (X,A))",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "est un foncteur contravariant de",
+   "new": "\\emph{est un foncteur contravariant de}"
+  },
+  "note": "Exposé IV writes underlining as \\emph."
+ },
+ {
+  "page": 283,
+  "where": "b), 'l'homomorphisme (2.6.5)'",
+  "scan": "'l'homomorphisme' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "tensoriel, l'homomorphisme",
+   "new": "tensoriel, \\emph{l'homomorphisme}"
+  },
+  "note": ""
+ },
+ {
+  "page": 283,
+  "where": "b), 'munit K˙(X)'",
+  "scan": "'munit' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\)) munit",
+   "new": "\\)) \\emph{munit}"
+  },
+  "note": ""
+ },
+ {
+  "page": 283,
+  "where": "b), last line of the page",
+  "scan": "'d'une structure d'anneau commutatif avec unité' underlined; the page ends after 'unité'",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "d'une structure d'anneau commutatif avec unité",
+   "new": "\\emph{d'une structure d'anneau commutatif avec unité}"
+  },
+  "note": ""
+ },
+ {
+  "page": 283,
+  "where": "last line of page_283.tex (printed on p. 284, line 1)",
+  "scan": "p. 284 line 1: '(1 = cl(O_X)), et l'homomorphisme canonique (2.6.3.2)' with 'et l'homomorphisme canonique' underlined as one group",
+  "tex": "'\\((1=\\cl(\\mathcal O_X))\\), et l'%' (under the folio-283 marker), no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\), et l'%",
+   "new": "\\), \\emph{et l'}%"
+  },
+  "note": "One underline split by the misplaced p. 284 marker: apply together with the p. 284 fix '\\emph{homomorphisme canonique}'. If the p. 284 marker is moved first, this text lies on p. 284."
+ },
+ {
+  "page": 284,
+  "where": "start of page",
+  "scan": "p. 284 begins '(1 = cl(O_X)), et l'homomorphisme canonique (2.6.3.2)'; p. 283 ends '... d'une structure d'anneau commutatif avec unité'",
+  "tex": "'\\((1=\\cl(\\mathcal O_X))\\), et l'%' is at the end of the last line of page_283.tex (under the folio-283 marker); page_284.tex begins 'homomorphisme canonique'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 284 really begins with '\\((1=\\cl(\\mathcal O_X))\\)'. Move the folio-284 marker up, splitting the line after 'avec unité': python -I move_marker.py 6 284 \"\\((1=\\cl(\\mathcal O_X))\\)\" --before (simulated in memory on both layers: '... avec unité' / marker / '\\((1=\\cl(\\mathcal O_X))\\), et l'%' / 'homomorphisme canonique (2.6.3.2)')."
+ },
+ {
+  "page": 284,
+  "where": "line 1, 'et l'homomorphisme canonique'",
+  "scan": "'et l'homomorphisme canonique' underlined",
+  "tex": "no underline on 'homomorphisme canonique'",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "homomorphisme canonique (2.6.3.2)",
+   "new": "\\emph{homomorphisme canonique} (2.6.3.2)"
+  },
+  "note": "Second half of the underline split by the marker; apply together with the p. 283 fix '\\emph{et l'}%'."
+ },
+ {
+  "page": 284,
+  "where": "after the display K˙(X)_naïf --> K˙(X)",
+  "scan": "'est un homomorphisme d'anneaux unifères' underlined (not the full stop)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\]\nest un homomorphisme d'anneaux unifères",
+   "new": "\\]\n\\emph{est un homomorphisme d'anneaux unifères}"
+  },
+  "note": ""
+ },
+ {
+  "page": 284,
+  "where": "'montre que l'homomorphisme'",
+  "scan": "'l'homomorphisme' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "montre que l'homomorphisme",
+   "new": "montre que \\emph{l'homomorphisme}"
+  },
+  "note": ""
+ },
+ {
+  "page": 284,
+  "where": "after the (resp. f* : K˙(Y)_naïf --> K˙(X)_naïf) display",
+  "scan": "'est un homomorphisme d'anneaux unifères' underlined (not the full stop)",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": ") est un homomorphisme d'anneaux unifères",
+   "new": ") \\emph{est un homomorphisme d'anneaux unifères}"
+  },
+  "note": ""
+ },
+ {
+  "page": 284,
+  "where": "2.8, 'munissant ainsi ... (et par suite aussi K˙(X) via l'homomorphisme canonique K˙(X)_naïf --> K˙(X) d'une structure'",
+  "scan": "the parenthesis opened at '(et par suite aussi' is never closed: 'K˙(X)_naïf --> K˙(X) d'une structure d'algèbre' (crop)",
+  "tex": "\\(K'(X)_{\\naif}\\to K'(X)\\)) d'une structure d'algèbre (closing parenthesis supplied)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\)) d'une structure d'algèbre",
+   "new": "\\) d'une structure d'algèbre"
+  },
+  "corrected": "\\(K'(X)_{\\naif}\\to K'(X)\\)) d'une structure d'algèbre",
+  "note": "Missing closing parenthesis in the print; the TeX silently corrected it. The fix restores the printed reading."
+ },
+ {
+  "page": 284,
+  "where": "2.8, 'par le rang'",
+  "scan": "'rang' underlined",
+  "tex": "no underline",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "par le rang,",
+   "new": "par le \\emph{rang},"
+  },
+  "note": ""
+ },
+ {
+  "page": 285,
+  "where": "start of page",
+  "scan": "p. 284 ends '(où rg désigne le rang) :'; p. 285 begins with the diagram H^o(Y,Z) --i--> K˙(Y)_naïf --> ...",
+  "tex": "page_285.tex begins 'désigne le rang) :', then the diagram",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "The folio-285 marker stands one line too early: 'désigne le rang) :' belongs to p. 284. Move the marker down before the diagram: python -I move_marker.py 6 285 \"\\[\" (no --before; simulated in memory on both layers: '(où \\(\\Rg\\)' / 'désigne le rang) :' / marker / '\\[' / '\\begin{tikzcd}...')."
+ },
+ {
+  "page": 285,
+  "where": "after the diagram, '* On verra dans la suite du Séminaire'",
+  "scan": "'* On verra ...' starts an indented new paragraph (indent as '(i)', '(ii)' below; 'K˙(X)_naïf peut être muni' starts at the margin)",
+  "tex": "runs on directly after the display: '\\]' then '\\textsuperscript{*}On verra'",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\]\n\\textsuperscript{*}On verra",
+   "new": "\\]\n\n\\textsuperscript{*}On verra"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 285,
+  "where": "'(V 3.9.1 et VI       ) que'",
+  "scan": "a blank of about six characters after 'VI' inside the parenthesis: a reference left to be filled in, never typed (crop; OCR likewise)",
+  "tex": "(V 3.9.1 et VI) que (gap closed)",
+  "kind": "misprint_in_print",
+  "confidence": "low",
+  "fix": {
+   "old": "et VI) que",
+   "new": "et VI\\qquad) que"
+  },
+  "corrected": "(V 3.9.1 et VI)",
+  "note": "Unfilled reference: the typist left a blank for a number in VI that was never typed in; the TeX closed the gap. The diplomatic fix keeps the blank; the corrected layer keeps '(V 3.9.1 et VI)' (the intended reference in VI is not known)."
+ },
+ {
+  "page": 285,
+  "where": "'Deligne [5] a prouvé récemment'",
+  "scan": "Deligne [5]",
+  "tex": "Deligne [5] (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "Deligne [1]",
+  "note": "The bibliography of Exposé IV (p. 296, OCR '[1] Deligne, P., papiers secrets'; main.tex: [1] Deligne, [2] Grauert, [3] Grothendieck, [V] Verdier) has no [5]. The corrected layer already reads [1] (RECONCILE_CODEX_6, SGA-SRC-001592); not yet in MISPRINTS_6.json."
+ },
+ {
+  "page": 285,
+  "where": "'et que l'homomorphisme canonique K˙(X)_naïf --> K˙(X) est un homomorphisme de λ-algèbres'",
+  "scan": "the map K˙(X)_naïf --> K˙(X) is inline at the start of a text line ('K˙(X)_naïf --> K˙(X) est un homomorphisme de λ-algèbres augmentées, répon-'), at the margin",
+  "tex": "set as a display \\[ K'(X)_{\\naif}\\longrightarrow K'(X) \\]",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "canonique\n\\[\n K'(X)_{\\naif}\\longrightarrow K'(X)\n\\]\nest un homomorphisme de",
+   "new": "canonique \\(K'(X)_{\\naif}\\longrightarrow K'(X)\\) est un homomorphisme de"
+  },
+  "note": "Inline in the print, display in the TeX (the display of 2.9 below is a real display)."
+ }
+]

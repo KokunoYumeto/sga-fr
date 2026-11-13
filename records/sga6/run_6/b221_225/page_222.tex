@@ -1,0 +1,39 @@
+% from main.tex
+%%%%%%%%%%  scan idx 235  |  folio 222  %%%%%%%%%%
+\section*{Exposé III. Conditions de finitude relatives}
+\begin{center}
+par L. Illusie
+\end{center}
+
+\section*{1. Pseudo-cohérence relative}
+
+\textbf{Théorème 1.1.} Soit \(n\in\mathbb Z\). Pour chaque morphisme localement de type fini de schémas \(f:X\longrightarrow Y\), il existe une et une seule sous-catégorie pleine \(D(f)_{n\text{-}\coh}\) de \(D(X)\)\footnote{\(D(X)\) = catégorie dérivée de celle des \(\mathcal O_X\)-Modules.} telle que les conditions ci-dessous soient satisfaites :
+\begin{enumerate}[label=(\roman*)]
+\item Si \(E\in\Ob D(f)_{n\text{-}\coh}\), alors \(i^*(E)\in\Ob D(fi)_{n\text{-}\coh}\) pour tout ouvert \(i:U\to X\).
+
+\item Si \(E\in\Ob D(X)\) et s'il existe un recouvrement ouvert \((i_\alpha:U_\alpha\to X)_{\alpha\in A}\) tel que \(i_\alpha^*(E)\in\Ob D(fi_\alpha)_{n\text{-}\coh}\) pour tout \(\alpha\in A\), alors \(E\in\Ob D(f)_{n\text{-}\coh}\).
+
+\item Si
+\[
+\begin{tikzcd}
+X \arrow[rr,"f"] \arrow[dr,"h"'] & & Y \arrow[dl,"g"]\\
+& Z &
+\end{tikzcd}
+\]
+est un triangle commutatif de morphismes localement de type fini, où \(f\) est une immersion fermée et \(g\) un morphisme lisse, alors on a\footnote{\(D(Y)_{n\text{-}\coh}\) = sous-catégorie pleine de \(D(Y)\) formée des objets \(n\)-pseudo-cohérents (I~2.15).}
+\[
+  E\in\Ob D(h)_{n\text{-}\coh}
+  \quad\Longleftrightarrow\quad
+  f_*(E)\in D(Y)_{n\text{-}\coh}.
+\]
+\end{enumerate}
+
+\emph{Démonstration.} L'unicité est évidente. Soit en effet \(f:X\to Y\) un morphisme localement de type fini. Choisissons un recouvrement ouvert \((i_\alpha:X_\alpha\to X)_{\alpha\in A}\) tel que, pour chaque \(\alpha\), \(fi_\alpha\) se factorise en
+\[
+  X_\alpha\xrightarrow{i'_\alpha}Y_\alpha\xrightarrow{f'_\alpha}Y,
+\]
+où \(i'_\alpha\) est une immersion fermée et \(f'_\alpha\) un morphisme lisse. Il résulte aussitôt de (i), (ii), (iii) que les objets de \(D(f)_{n\text{-}\coh}\) sont les objets \(E\) de \(D(X)\) tels que
+\[
+  i'_{\alpha *}i_\alpha^*(E)\in \Ob D(Y_\alpha)_{n\text{-}\coh};
+\]
+donc \(D(f)_{n\text{-}\coh}\) est

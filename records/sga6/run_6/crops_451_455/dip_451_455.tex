@@ -1,0 +1,170 @@
+%%%%%%%%%%  scan idx 464  |  folio 451  %%%%%%%%%%
+projection :
+\[
+  \lambda^p(J',u')(1-J')=\lambda^p(u'(1-J')).
+\]
+Comme \(1-J'=\lambda_{-1}(J')\), c'est la formule qui sert à définir \(\lambda^p(J',u')\).
+
+ii) On se place dans le cas général. On compose alors \(i\) avec une section : \(X\to\mathbf P_X^1\), puis avec une section : \(\mathbf P_X^1\to\mathbf P_{\mathbf P_X^1}^1\), de façon que l'immersion composée vérifie la condition de 4.1 (voir 4.2). La proposition 4.3 est alors vraie pour l'immersion composée d'après ce qui précède; il reste donc à « redescendre » à \(X\). On redescend d'abord à \(\mathbf P_X^1\), puis à \(X\), de sorte que la démonstration se fait en appliquant deux fois le lemme suivant (dû à J.P. Jouanolou) :
+
+\textbf{Lemme} : Dans les conditions de 4.3, soit \(s:X\to\mathbf P_X^1\) la section définie en 4.2. Si la proposition 4.3 est vraie pour \(s\circ i\), elle est vraie pour \(i\).
+
+Si on suppose 4.3 vraie pour \(s\circ i\), on a pour tout \(p\ge1\), et tout \(y\in K^\circ(Y)\) :
+\begin{equation}\tag{4.3.3}
+ (s\circ i)_*\bigl(\lambda^p(N+1,y)\bigr)
+ \equiv
+ \lambda^p\bigl((s\circ i)_*(y)\bigr)
+ \pmod{\text{torsion}}.
+\end{equation}
+La section \(s\) est définie par un idéal isomorphe à \(\mathcal O_{\mathbf P}(-1)\) (4.2) ; on note \(\xi\) sa classe dans \(K^\circ(\mathbf P_X^1)\). On a alors la relation suivante pour tout \(x\in K^\circ(X)\) :
+\[
+  s_*(x)=p^*(x)(1-\xi),
+\]
+\(p\) étant le morphisme structural \(\mathbf P_X^1\to X\). En effet, comme \(p\circ s=\Id_X\), on a \(x=s^*(p^*(x))\), d'où \(s_*(x)=s_*(s^*(p^*(x)))=p^*(x)s_*(1)\); comme \(s_*(1)=1-\xi\), on a la relation voulue. La relation (4.3.3) s'écrit alors :
+\[
+\begin{aligned}
+(s\circ i)_*\bigl(\lambda^p(N+1,y)\bigr)
+&\equiv \lambda^p\bigl(p^*(i_*(y))(1-\xi)\bigr)\pmod{\text{torsion}}\\
+&\equiv \lambda^p(\xi,p^*(i_*(y)))(1-\xi)\pmod{\text{torsion}}.
+\end{aligned}
+\]
+%%%%%%%%%%  scan idx 465  |  folio 452  %%%%%%%%%%
+Or \(\lambda^p(\xi,p^*(i_*(y)))-\lambda^p(1,p^*(i_*(y)))\) est divisible par \(1-\xi\) :
+pour le voir, on peut se placer dans le \(\lambda\)-anneau universel qui sert à définir les \(\lambda^p(\xi,X)\) (V 5); alors \(\lambda^p(\xi,X)-\lambda^p(1,X)\) est un polynôme en \(\xi\), nul pour \(\xi=1\), donc divisible par \(\xi-1\). Par ailleurs, l'équation de dépendance de \(\xi\) sur \(K^\circ(X)\) est \((1-\xi)^2=0\) (VI (1.13.1)). On obtient donc :
+\[
+\begin{aligned}
+(s\circ i)_*\bigl(\lambda^p(N+1,y)\bigr)
+&\equiv \lambda^p(1,p^*(i_*(y)))(1-\xi) \pmod{\text{torsion}}\\
+&\equiv p^*(\lambda^p(1,i_*(y)))(1-\xi) \pmod{\text{torsion}}.
+\end{aligned}
+\]
+En appliquant \(p_*\), on obtient :
+\begin{equation}\tag{4.3.4}
+  i_*\bigl(\lambda^p(N+1,y)\bigr)
+  \equiv \lambda^p(1,i_*(y)) \pmod{\text{torsion}},
+\end{equation}
+car \(p_*(\xi)=0\).
+
+D'après la formule de (V 5.6), appliquée à \(L=1\), \(\lambda^p(N+1,y)\) est le coefficient de \(t^p\) dans la série :
+\[
+  \frac{\sum_{k\ge1}\lambda^k(N,y)kt^k}
+       {1+\sum_{k\ge1}\lambda^k(N,y)\lambda_{-1}(N)t^k}.
+\]
+De même, la même formule appliquée à \(N=0\) et \(L=1\) montre que \(\lambda^p(1,y)\) est le coefficient de \(t^p\) dans la série :
+\[
+  \frac{\sum_{k\ge1}\lambda^k(y)kt^k}
+       {\sum_{k\ge0}\lambda^k(y)t^k}.
+\]
+Les congruences (4.3.4) peuvent donc s'écrire :
+\[
+i_*\left(
+  \frac{\sum_{k\ge1}k\lambda^k(N,y)t^k}
+       {1+\sum_{k\ge1}\lambda^k(N,y)\lambda_{-1}(N)t^k}
+\right)
+\equiv
+  \frac{\sum_{k\ge1}k\lambda^k(i_*(y))t^k}
+       {\sum_{k\ge0}\lambda^k(i_*(y))t^k}
+       \pmod{\text{torsion}}.
+\]
+%%%%%%%%%%  scan idx 466  |  folio 453  %%%%%%%%%%
+En
+appliquant la formule 2.8, on obtient :
+\[
+  \frac{\sum_{k\ge0}k\,i_*(\lambda^k(N,y))t^k}
+       {1+\sum_{k\ge1} i_*(\lambda^k(N,y))t^k}
+  \equiv
+  \frac{\sum_{k\ge0}k\lambda^k(i_*(y))t^k}
+       {\sum_{k\ge0}\lambda^k(i_*(y))t^k}
+       \pmod{\text{torsion}}.
+\]
+Si on pose :
+\[
+  u(t)=1+\sum_{k\ge1}i_*(\lambda^k(N,y))t^k,\qquad
+  v(t)=\sum_{k\ge0}\lambda^k(i_*(y))t^k,
+\]
+cette dernière relation peut encore s'écrire :
+\[
+  \frac{d}{dt}\!\left(\frac{u(t)}{v(t)}\right)\equiv0
+  \pmod{\text{torsion}}.
+\]
+Comme le terme constant de \(u(t)/v(t)\) est \(1\), et qu'on écrit des congruences modulo torsion, on peut intégrer et écrire la congruence \(u(t)\equiv v(t)\). Ceci donne les congruences annoncées.
+
+\textbf{Corollaire 4.4.} Avec les notations et les hypothèses de 4.3, on a pour tout \(p\ge1\), et tout \(y\in K^\circ(Y)\) :
+\[
+  i_*\bigl(\gamma^p(N,y)\bigr)\equiv \gamma^p(i'_*(y))
+  \pmod{\text{torsion}}.
+\]
+Le corollaire résulte immédiatement de 4.3, et utilisant l'expression des \(\gamma^p\) comme combinaisons linéaires à coefficients entiers des \(\lambda^p\).
+
+\textbf{Remarque 4.5.} La démonstration même de 4.3 laisse penser que (4.3.1) doit être vrai non seulement modulo torsion, mais aussi en tant qu'égalité. Dans [RRR], l'égalité était montrée en caractéristique \(0\) grâce à une caractérisation géométrique des \(\lambda^p(N,x)\). Une extension de cette méthode en toutes caractéristiques serait sans doute possible si on savait définir les opérations de puissance extérieure sur les complexes parfaits (cf. XIV).
+
+%%%%%%%%%%  scan idx 467  |  folio 454  %%%%%%%%%%
+\textbf{Théorème 4.6.}
+Soient \(X\) un schéma quasi-compact ayant un faisceau ample, \(d\) un entier \(>0\) et \(i:Y\to X\) une immersion régulière de codimension \(d\). Alors, pour tout \(k\), on a :
+\[
+ i_*\bigl((\Fil^kK^\circ(Y))\otimes_{\mathbb Z}\mathbb Q\bigr)
+ \subset
+ (\Fil^{k+d}K^\circ(X))\otimes_{\mathbb Z}\mathbb Q.
+\]
+
+Remarquons tout d'abord que \(i_*(K^\circ(Y))\subset \Fil^1K^\circ(X)\). En effet, \(X-Y\) est dense dans \(X\) : s'il n'en était pas ainsi, \(Y\) contiendrait un ouvert affine, et sur cet ouvert, l'idéal \(J\) définissant \(Y\) serait un nilidéal, donc un idéal localement nilpotent puisqu'il est de type fini. Or ceci est impossible, puisque les \(J^n/J^{n+1}\) sont des \(\mathcal O_Y\)-Modules localement libres de rang \(\ne0\). L'augmentation dans \(K^\circ(X)\) d'un élément de \(i_*(K^\circ(Y))\) est une fonction localement constante sur \(X\); étant nulle sur \(X-Y\), elle est nulle sur \(X\) entier.
+
+Pour tout groupe abélien \(A\), nous poserons \(A_{\mathbb Q}=A\otimes_{\mathbb Z}\mathbb Q\). Soit \(x\in\Fil^kK^\circ(Y)_{\mathbb Q}\) ; on peut écrire \(x\) sous la forme :
+\[
+  x=\sum a\,\gamma^{i_1}(x_1)\cdots\gamma^{i_n}(x_n),
+\]
+avec \(\epsilon(x_i)=0\) pour tout \(i\), \(a\in\mathbb Q\), et \(i_1+\cdots+i_n\ge k\). Les \(x_i\) peuvent s'exprimer comme combinaison à coefficients entiers des classes \(E_\alpha\) d'un nombre fini de \(\mathcal O_Y\)-Modules localement libres de type fini \(E_\alpha\). Soit \(R\) la sous-\(\mathbb Q\)-\(\lambda\)-algèbre de \(K^\circ(Y)_{\mathbb Q}\) engendrée par les \(E_\alpha\) et par \(N\). On a alors :
+\[
+  x\in\Fil^kR.
+\]
+
+Par ailleurs, la filtration de \(\lambda\)-anneau de \(R\) est discrète (VI 6.2); soit \(m\) tel que \(\Fil^mR=0\). Enfin, on peut, quitte à décomposer \(X\) en une somme finie d'ouverts disjoints et à faire la démonstration dans chaque ouvert (le \(K^\circ\) commutant aux sommes directes finies), supposer les \(E_\alpha\) de rang constant \(r_\alpha\). L'anneau d'augmentation de \(R\) est alors \(\mathbb Q\).
+
+%%%%%%%%%%  scan idx 468  |  folio 455  %%%%%%%%%%
+On va
+montrer que pour tout \(i\), on a :
+\[
+  i_*(\Fil^iR)\subset \Fil^{i+d}(K^\circ(X)_{\mathbb Q}).
+\]
+Cela entrainera en particulier :
+\[
+  i_*(x)\in\Fil^{k+d}K^\circ(X),
+\]
+et montrera donc le théorème.
+
+La démonstration se fait par récurrence descendante sur \(i\), le cas \(i=m\) étant trivial. Soit \(y\in\Fil^iR\), et posons pour tout \(j\) :
+\[
+  a_j=(-1)^{j-1}(j-1)!.
+\]
+Alors d'après V 6.10,
+\[
+  \gamma^{d+i}(N,y)-a_{d+i}y\in\Fil^{i+1}R.
+\]
+On peut donc appliquer l'hypothèse de récurrence, supposant que :
+\[
+  i_*(\Fil^{i+1}R)\subset \Fil^{i+d+1}K^\circ(X)_{\mathbb Q}.
+\]
+On a par conséquent :
+\[
+  i_*\bigl(\gamma^{d+i}(N,y)-a_{d+i}y\bigr)
+  \in\Fil^{i+d+1}K^\circ(X)_{\mathbb Q}.
+\]
+D'après 4.4, ceci entraine :
+\[
+  \gamma^{d+i}\bigl(i_*(y)\bigr)-a_{d+i}i_*(y)
+  \in\Fil^{i+d+1}K^\circ(X)_{\mathbb Q}.
+\]
+Comme \(i_*(y)\) est d'augmentation nulle,
+\[
+  \gamma^{d+i}\bigl(i_*(y)\bigr)\in\Fil^{d+i}K^\circ(X).
+\]
+Comme on fait des calculs modulo torsion, on trouve donc :
+\[
+  i_*(y)\in\Fil^{i+d}K^\circ(X)_{\mathbb Q}.
+\]
+
+\textbf{Remarque 4.6.1.} On voit que, même si 4.3 était vrai sans tensoriser par \(\mathbb Q\), la démonstration ci-dessus ne marche que modulo torsion. Pour un contre-exemple, voir XIV 4.6.
+
+\subsection*{4.7}
+
+On

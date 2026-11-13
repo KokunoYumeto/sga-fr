@@ -1,0 +1,536 @@
+[
+ {
+  "page": 601,
+  "where": "start of page (folio-601 marker)",
+  "scan": "p. 600 ends '... on peut supposer que X_i∩X_j = ∅ si et seulement si'; p. 601 begins '(X_i)_η∩(X_j)_η = ∅. Soient Y_k = ...' on one line (both scans; b596_600/page_600_s4.png, page_601_s1.png, witness DjVu p. 612)",
+  "tex": "'\\((X_i)_\\eta\\cap(X_j)_\\eta=\\varnothing\\).' stands at the end of page_600.tex, above the folio-601 marker; page_601.tex begins 'Soient'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 601 really begins at '\\((X_i)_\\eta\\cap(X_j)_\\eta=\\varnothing\\).', in the paragraph that continues with 'Soient' (main.tex has no blank line there). Exact edit in main.tex, both layers (each string occurs once in each layer): replace 'si et seulement si \\((X_i)_\\eta\\cap(X_j)_\\eta=\\varnothing\\).\\n%%%%%%%%%%  scan idx 614  |  folio 601  %%%%%%%%%%\\nSoient' with 'si et seulement si\\n%%%%%%%%%%  scan idx 614  |  folio 601  %%%%%%%%%%\\n\\((X_i)_\\eta\\cap(X_j)_\\eta=\\varnothing\\). Soient'."
+ },
+ {
+  "page": 601,
+  "where": "end of the first paragraph, before Proposition 2.3",
+  "scan": "'... quitte à restreindre S d'après (EGA III 7.8.6), de la' and, after a blank line, 'Proposition 2.3.': the sentence runs into the heading (both scans)",
+  "tex": "'(EGA III 7.8.6), de la proposition suivante.'",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "(EGA III 7.8.6), de la proposition suivante.",
+   "new": "(EGA III 7.8.6), de la"
+  },
+  "note": "The words 'proposition suivante.' are not in the print: its sentence ends with the heading 'Proposition 2.3.'."
+ },
+ {
+  "page": 601,
+  "where": "Proposition 2.3 b)",
+  "scan": "(où g_i=g|Y_i, i=1,2), Y_i on the line (both scans)",
+  "tex": "\\(g_i=g|_{Y_i}\\)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(g_i=g|_{Y_i}\\)",
+   "new": "\\(g_i=g|Y_i\\)"
+  },
+  "note": "Restriction written with a subscript; the print has g|Y_i."
+ },
+ {
+  "page": 601,
+  "where": "'Après un changement de base convenable'",
+  "scan": "begins a new, indented paragraph after '... et β de Y.' (both scans)",
+  "tex": "runs on in the paragraph 'L'assertion est locale ...'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "de \\(Y\\). Après",
+   "new": "de \\(Y\\).\n\nAprès"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 601,
+  "where": "Proposition 2.3, conclusion 'Alors Pic_{Y/S} ⟶ Pic_{(Y_1∐Y_2)/S}'",
+  "scan": "both Pic underlined (both scans)",
+  "tex": "\\(\\Pic_{Y/S}\\longrightarrow \\Pic_{(Y_1\\amalg Y_2)/S}\\), \\Pic = \\operatorname{Pic} (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "Alors \\(\\Pic_{Y/S}\\longrightarrow \\Pic_{(Y_1\\amalg Y_2)/S}\\)",
+   "new": "Alors \\(\\underline{\\Pic}_{Y/S}\\longrightarrow \\underline{\\Pic}_{(Y_1\\amalg Y_2)/S}\\)"
+  },
+  "note": "In Exposé XII \\Pic prints a plain Pic (\\providecommand at main.tex line 32; the one before Exposé XII does not change it); Exposé XIII writes \\underline{\\Pic}. The print underlines Pic in most places of pp. 601-605 but not all (plain at p. 602 'dans Pic_{Y_1∐Y_2/S}' and three times on p. 605), so each place is itemized."
+ },
+ {
+  "page": 601,
+  "where": "last line, 'tout point μ : S ⟶ Pic_{(Y_1∐Y_2)/S}'",
+  "scan": "Pic underlined (both scans)",
+  "tex": "\\(\\mu:S\\to\\Pic_{(Y_1\\amalg Y_2)/S}\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\mu:S\\to\\Pic_{(Y_1\\amalg Y_2)/S}\\)",
+   "new": "\\(\\mu:S\\to\\underline{\\Pic}_{(Y_1\\amalg Y_2)/S}\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 601,
+  "where": "end of page_601.tex, '\\(\\Pic_{Y/S}\\) qui est' (printed at the top of p. 602)",
+  "scan": "p. 602, first line: Pic_{Y/S} with Pic underlined (both scans)",
+  "tex": "\\(\\Pic_{Y/S}\\) qui est",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\Pic_{Y/S}\\) qui est",
+   "new": "\\(\\underline{\\Pic}_{Y/S}\\) qui est"
+  },
+  "note": "This text belongs to p. 602 (folio-602 marker finding). The old string is unique in page_601.tex, and in page 602 after the marker move; apply this fix after the marker edit given there."
+ },
+ {
+  "page": 601,
+  "where": "Proposition 2.3 (and every statement on pp. 601-605)",
+  "scan": "the typescript underlines the statement's word groups: 'Soient', 'un schéma,', 'un morphisme propre et', 'deux sous-schémas fermés définis par les idéaux', 'On suppose que', 'sont fidèlement plats et de présentation finie sur', 'universellement', 'où', 'Alors', 'est représentable par un morphisme affine', 'de présentation finie'",
+  "tex": "statement set in roman (no \\underline)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": null,
+  "note": "Convention of the transcription in Exposé XII, reported once: the same pattern as Exposé II (GLOBAL_ISSUES 82). Also Lemme 2.4 (p. 602), II* and Lemme 2.6 (p. 603), Proposition 3.1 (pp. 604-605). Not itemized."
+ },
+ {
+  "page": 601,
+  "where": "first paragraph, 'f = ∐_k f_k : ∐_k(∐_{i∈I(k)} X_i) ⟶ Y_k'",
+  "scan": "target Y_k (both scans)",
+  "tex": "\\longrightarrow Y_k (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\coprod_kY_k",
+  "note": "The target of ∐_k f_k is X = ∐_k Y_k. The TeX keeps the printed Y_k; the corrected layer already reads \\coprod_kY_k."
+ },
+ {
+  "page": 601,
+  "where": "'Pour (c), celà résulte des deux suites exactes'",
+  "scan": "celà (both scans)",
+  "tex": "celà (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "cela",
+  "note": "Spelling slip of the typescript; the TeX keeps it; the corrected layer already reads 'cela'."
+ },
+ {
+  "page": 602,
+  "where": "start of page (folio-602 marker)",
+  "scan": "p. 601 ends '... a comme image réciproque un sous-foncteur de'; p. 602 begins 'Pic_{Y/S} qui est représentable par un schéma affine sur S.' (both scans; page_601_s4.png, page_602_s1.png, witness DjVu p. 613)",
+  "tex": "'\\(\\Pic_{Y/S}\\) qui est' stands at the end of page_601.tex, above the folio-602 marker; page_602.tex begins 'représentable'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 602 really begins at '\\(\\Pic_{Y/S}\\) qui est'. Exact edit in main.tex, both layers (each string occurs once in each layer), to be made before the p. 601 underline fix of this Pic: replace 'un sous-foncteur de \\(\\Pic_{Y/S}\\) qui est\\n%%%%%%%%%%  scan idx 615  |  folio 602  %%%%%%%%%%\\nreprésentable' with 'un sous-foncteur de\\n%%%%%%%%%%  scan idx 615  |  folio 602  %%%%%%%%%%\\n\\(\\Pic_{Y/S}\\) qui est représentable'."
+ },
+ {
+  "page": 602,
+  "where": "'un point λ : S ⟶ Pic_{Y/S} correspond à un faisceau'",
+  "scan": "Pic underlined (both scans)",
+  "tex": "\\(\\lambda:S\\to\\Pic_{Y/S}\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\lambda:S\\to\\Pic_{Y/S}\\)",
+   "new": "\\(\\lambda:S\\to\\underline{\\Pic}_{Y/S}\\)"
+  },
+  "note": "The next Pic ('dans Pic_{Y_1∐Y_2/S} est μ') is plain in the print, as in the TeX."
+ },
+ {
+  "page": 602,
+  "where": "'Ce L correspond alors à un point λ de Pic_{Y/S}'",
+  "scan": "Pic underlined (both scans)",
+  "tex": "\\(\\Pic_{Y/S}\\) qui va sur",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "point \\(\\lambda\\) de \\(\\Pic_{Y/S}\\)",
+   "new": "point \\(\\lambda\\) de \\(\\underline{\\Pic}_{Y/S}\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 602,
+  "where": "'l'image réciproque de μ dans Pic_{Y/S} et le foncteur I'",
+  "scan": "Pic underlined (both scans)",
+  "tex": "dans \\(\\Pic_{Y/S}\\) et le foncteur",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "dans \\(\\Pic_{Y/S}\\) et le foncteur",
+   "new": "dans \\(\\underline{\\Pic}_{Y/S}\\) et le foncteur"
+  },
+  "note": ""
+ },
+ {
+  "page": 602,
+  "where": "Lemme 2.4, 'Isom(L,M) le foncteur des isomorphismes'",
+  "scan": "Isom underlined (both scans)",
+  "tex": "\\(\\Isom(L,M)\\), \\Isom = \\operatorname{Isom} (plain)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\Isom(L,M)\\) le foncteur",
+   "new": "\\(\\underline{\\Isom}(L,M)\\) le foncteur"
+  },
+  "note": "The print underlines Isom wherever it occurs on pp. 602-603."
+ },
+ {
+  "page": 602,
+  "where": "Lemme 2.4 i)",
+  "scan": "i) Isom(L,M) with Isom underlined (both scans)",
+  "tex": "\\item \\(\\Isom(L,M)\\) est",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\item \\(\\Isom(L,M)\\) est",
+   "new": "\\item \\(\\underline{\\Isom}(L,M)\\) est"
+  },
+  "note": ""
+ },
+ {
+  "page": 602,
+  "where": "'Remarquons ... un isomorphisme φ : L_1|Y_1∩Y_2 ⥲ L_2|Y_1∩Y_2'",
+  "scan": "restrictions written L_1|Y_1∩Y_2, L_2|Y_1∩Y_2, on the line (both scans)",
+  "tex": "\\(\\varphi:L_1|_{Y_1\\cap Y_2}\\xrightarrow{\\sim}L_2|_{Y_1\\cap Y_2}\\)",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(\\varphi:L_1|_{Y_1\\cap Y_2}\\xrightarrow{\\sim}L_2|_{Y_1\\cap Y_2}\\)",
+   "new": "\\(\\varphi:L_1|Y_1\\cap Y_2\\xrightarrow{\\sim}L_2|Y_1\\cap Y_2\\)"
+  },
+  "note": "Restriction written with a subscript."
+ },
+ {
+  "page": 602,
+  "where": "'Réciproquement si φ est un isomorphisme L_1|Y_1∩Y_2 ⟶ ...', first restriction",
+  "scan": "L_1|Y_1∩Y_2 on the line (both scans)",
+  "tex": "\\(L_1|_{Y_1\\cap Y_2}\\to",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "\\(L_1|_{Y_1\\cap Y_2}",
+   "new": "\\(L_1|Y_1\\cap Y_2"
+  },
+  "note": "Restriction written with a subscript. Independent of the L_Z misprint fix and of the next fix (no overlap)."
+ },
+ {
+  "page": 602,
+  "where": "'Réciproquement si φ est un isomorphisme ... ⟶ L_Z|Y_1∩Y_2 tel que', second restriction",
+  "scan": "L_Z|Y_1∩Y_2 on the line (both scans)",
+  "tex": "L_2|_{Y_1\\cap Y_2}\\) tel que \\(u_1=u_2\\circ\\varphi\\), il",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "|_{Y_1\\cap Y_2}\\) tel que \\(u_1=u_2\\circ\\varphi\\), il",
+   "new": "|Y_1\\cap Y_2\\) tel que \\(u_1=u_2\\circ\\varphi\\), il"
+  },
+  "note": "Restriction written with a subscript."
+ },
+ {
+  "page": 602,
+  "where": "'Finalement soit I le foncteur ... φ : (L_1)_T|(Y_1∩Y_2)_T ⥲ (L_2)_T|(Y_1∩Y_2)_T'",
+  "scan": "restrictions on the line (both scans)",
+  "tex": "(L_1)_T|_{(Y_1\\cap Y_2)_T}\\xrightarrow{\\sim}(L_2)_T|_{(Y_1\\cap Y_2)_T}",
+  "kind": "formula",
+  "confidence": "high",
+  "fix": {
+   "old": "(L_1)_T|_{(Y_1\\cap Y_2)_T}\\xrightarrow{\\sim}(L_2)_T|_{(Y_1\\cap Y_2)_T}",
+   "new": "(L_1)_T|(Y_1\\cap Y_2)_T\\xrightarrow{\\sim}(L_2)_T|(Y_1\\cap Y_2)_T"
+  },
+  "note": "Restriction written with a subscript."
+ },
+ {
+  "page": 602,
+  "where": "'Réciproquement si φ est un isomorphisme'",
+  "scan": "begins a new, indented paragraph after '... tel que u_1 = u_2∘φ.' (both scans)",
+  "tex": "runs on in the paragraph 'représentable par un schéma affine ...'",
+  "kind": "other",
+  "confidence": "high",
+  "fix": {
+   "old": "\\circ\\varphi\\). Réciproquement",
+   "new": "\\circ\\varphi\\).\n\nRéciproquement"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 602,
+  "where": "'(où l'on prend X = Y_1∩Y_2):' before Lemme 2.4",
+  "scan": "colon after the parenthesis (both scans; witness crop crops_601_605/w602_semicolon.png against the semicolon of 'suivant φ ; explicitement', w602_cmp_semicolon.png)",
+  "tex": "semicolon '~;'",
+  "kind": "punctuation",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\(X=Y_1\\cap Y_2\\))~;",
+   "new": "\\(X=Y_1\\cap Y_2\\))~:"
+  },
+  "note": "Two round dots, no comma tail; the colon introduces the lemma."
+ },
+ {
+  "page": 602,
+  "where": "'Réciproquement si φ est un isomorphisme L_1|Y_1∩Y_2 ⟶ L_Z|Y_1∩Y_2'",
+  "scan": "the index of the target is a capital Z, not 2 (both scans; crops_601_605/m602_LZ.png: compare the 2 of Y_2 beside it)",
+  "tex": "L_2 (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "\\to L_2",
+   "new": "\\to L_Z"
+  },
+  "corrected": "L_2",
+  "note": "Typing error Z for 2 (the target is L_2|Y_1∩Y_2, as in the line before). The TeX silently corrects it; the fix restores the printed reading. Independent of the two restriction fixes of this formula (no overlap)."
+ },
+ {
+  "page": 603,
+  "where": "Lemme 2.4 ii), 'le sous-foncteur de Isom(L,M) formée'",
+  "scan": "Isom underlined (both scans)",
+  "tex": "de \\(\\Isom(L,M)\\) formée",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "de \\(\\Isom(L,M)\\) formée",
+   "new": "de \\(\\underline{\\Isom}(L,M)\\) formée"
+  },
+  "note": ""
+ },
+ {
+  "page": 603,
+  "where": "Lemme 2.4 ii), 'représentable par un fermé de Isom(L,M).'",
+  "scan": "Isom underlined (both scans)",
+  "tex": "fermé de \\(\\Isom(L,M)\\).",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "fermé de \\(\\Isom(L,M)\\).",
+   "new": "fermé de \\(\\underline{\\Isom}(L,M)\\)."
+  },
+  "note": ""
+ },
+ {
+  "page": 603,
+  "where": "'En effet, ii) est clair.' after Lemme 2.4",
+  "scan": "begins a new, indented paragraph (both scans)",
+  "tex": "follows \\end{enumerate} without a blank line, so it is set as a continuation without indent",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\end{enumerate}\nEn effet",
+   "new": "\\end{enumerate}\n\nEn effet"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 603,
+  "where": "Lemme 2.4 ii), 'le sous-foncteur de Isom(L,M) formée des isomorphismes'",
+  "scan": "formée (both scans)",
+  "tex": "formée (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "formé",
+  "note": "Agreement slip (sous-foncteur is masculine). The TeX keeps it; the corrected layer already reads 'formé'."
+ },
+ {
+  "page": 603,
+  "where": "'un fermé F de V(E)×_s V(F)'",
+  "scan": "the index of the fibre product is a small s (both scans; crops_601_605/w603_xs.png, m603_xs.png)",
+  "tex": "\\times_S (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\times_S\\mathbb V(F)",
+   "new": "\\times_s\\mathbb V(F)"
+  },
+  "corrected": "\\times_S\\mathbb V(F)",
+  "note": "Typing error s for S (the base is S, typed as a capital S everywhere else). The TeX silently corrects it; the fix restores the printed reading."
+ },
+ {
+  "page": 603,
+  "where": "display (*), 'O_Y ⟶ f_* O_Y ⇉ g_*(O_{X×_yX})'",
+  "scan": "f_* O_Y (both scans)",
+  "tex": "\\longrightarrow f_*\\mathcal O_Y (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "f_*\\mathcal O_X",
+  "note": "For f: X → Y the middle term is f_*O_X. The TeX keeps the printed O_Y; the corrected layer already reads f_*\\mathcal O_X."
+ },
+ {
+  "page": 603,
+  "where": "display (*), index of the fibre product",
+  "scan": "g_*(O_{X×_yX}) with a small y (both scans)",
+  "tex": "\\mathcal O_{X\\times_yX} (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\mathcal O_{X\\times_YX}",
+  "note": "Fibre product over Y. The TeX keeps the printed y; the corrected layer already reads X\\times_YX."
+ },
+ {
+  "page": 603,
+  "where": "'(où g : X×_yX ⟶ Y est le morphisme structural)'",
+  "scan": "X×_yX with a small y (both scans)",
+  "tex": "\\(g:X\\times_yX\\to Y\\) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "g:X\\times_YX\\to Y",
+  "note": "As in (*). The TeX keeps the printed y; the corrected layer already reads X\\times_YX."
+ },
+ {
+  "page": 603,
+  "where": "factorization 'X → Y_o → Y_1 → ... → Y_η = Y' after 'qu'il existe une factorisation de f'",
+  "scan": "last arrow labelled f_η and last term Y_η: the Greek η of (X_i)_η, not the n of Lemme 2.6 'Y_n = Y' (both scans)",
+  "tex": "\\xrightarrow{f_\\eta}Y_\\eta=Y (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "medium",
+  "fix": null,
+  "corrected": "\\xrightarrow{f_n}Y_n=Y",
+  "note": "The index of the last step of the finite factorization is n (Lemme 2.6: Y_n = Y); η is the generic point elsewhere in the exposé. The TeX keeps the printed η; the corrected layer also has η."
+ },
+ {
+  "page": 604,
+  "where": "start of page (folio-604 marker)",
+  "scan": "p. 603 ends '... qui sont des épimorphismes effectifs (i.e. tel que la suite'; p. 604 begins with the formula 'O_{Y_i} ⟶ (f_i)_*(O_{Y_{i-1}}) ⇉ (g_i)_*(O_{Y_{i-1}} ⊗_{O_{Y_i}} O_{Y_{i-1}}) soit exacte).' (both scans; page_603_s4.png, page_604_s1.png, witness DjVu p. 615)",
+  "tex": "the formula '\\(\\mathcal O_{Y_i}\\longrightarrow ...\\bigr)\\)' stands at the end of page_603.tex, above the folio-604 marker; page_604.tex begins 'soit exacte).'",
+  "kind": "marker",
+  "confidence": "high",
+  "fix": null,
+  "note": "Page 604 really begins at the formula after 'tel que la suite'. Exact edit in main.tex, both layers (each string occurs once in each layer): replace '(i.e. tel que la suite \\(\\mathcal O_{Y_i}\\longrightarrow (f_i)_*(\\mathcal O_{Y_{i-1}})\\rightrightarrows (g_i)_*\\bigl(\\mathcal O_{Y_{i-1}}\\otimes_{\\mathcal O_{Y_i}}\\mathcal O_{Y_{i-1}}\\bigr)\\)\\n%%%%%%%%%%  scan idx 617  |  folio 604  %%%%%%%%%%\\nsoit exacte).' with '(i.e. tel que la suite\\n%%%%%%%%%%  scan idx 617  |  folio 604  %%%%%%%%%%\\n\\(\\mathcal O_{Y_i}\\longrightarrow (f_i)_*(\\mathcal O_{Y_{i-1}})\\rightrightarrows (g_i)_*\\bigl(\\mathcal O_{Y_{i-1}}\\otimes_{\\mathcal O_{Y_i}}\\mathcal O_{Y_{i-1}}\\bigr)\\) soit exacte).'."
+ },
+ {
+  "page": 604,
+  "where": "Proposition 3.1, '(Oort, Bull. soc. math. France, t. 90-1962)'",
+  "scan": "the journal title is not underlined (both scans)",
+  "tex": "\\emph{Bull. soc. math. France}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\emph{Bull. soc. math. France}",
+   "new": "Bull. soc. math. France"
+  },
+  "note": "Emphasis the print does not have (\\emph is this file's command for the typescript's underline)."
+ },
+ {
+  "page": 604,
+  "where": "'Montrons que S = ∅. Sinons soit s un point maximal de S.'",
+  "scan": "Sinons (both scans)",
+  "tex": "Sinon (silently corrected)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": {
+   "old": "Sinon soit",
+   "new": "Sinons soit"
+  },
+  "corrected": "Sinon",
+  "note": "Typing error. The TeX silently corrects it; the fix restores the printed reading."
+ },
+ {
+  "page": 605,
+  "where": "first display, iii) of Proposition 3.1, 'R^2f_*(I⊗f^*M) ≃ Hom_{O_S}(Q,M)'",
+  "scan": "Hom underlined (both scans; crops_601_605/m605_hom.png)",
+  "tex": "\\Hom_{\\mathcal O_S}(Q,M)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\Hom_{\\mathcal O_S}(Q,M)",
+   "new": "\\underline{\\Hom}_{\\mathcal O_S}(Q,M)"
+  },
+  "note": ""
+ },
+ {
+  "page": 605,
+  "where": "'Alors le morphisme canonique Pic_{X/S} ⟶ Pic_{X'/S}'",
+  "scan": "both Pic underlined (both scans)",
+  "tex": "\\(\\Pic_{X/S}\\longrightarrow \\Pic_{X'/S}\\)",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "canonique \\(\\Pic_{X/S}\\longrightarrow \\Pic_{X'/S}\\)",
+   "new": "canonique \\(\\underline{\\Pic}_{X/S}\\longrightarrow \\underline{\\Pic}_{X'/S}\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 605,
+  "where": "display '0 ⟶ V(E^∨) ⟶ Pic_{X/S} ⟶ Pic_{X'/S} --u--> V(Q)'",
+  "scan": "both Pic underlined (both scans)",
+  "tex": "\\Pic_{X/S} ... \\Pic_{X'/S}",
+  "kind": "underline",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathbb V(E^\\vee)\\longrightarrow \\Pic_{X/S}\n  \\longrightarrow\\Pic_{X'/S}",
+   "new": "\\mathbb V(E^\\vee)\\longrightarrow \\underline{\\Pic}_{X/S}\n  \\longrightarrow\\underline{\\Pic}_{X'/S}"
+  },
+  "note": "The three later Pic of the page ('P ↪ Pic_{X'/S}', 'et Pic_{X/S} est un torseur', the display '0 ⟶ V(Ě) ⟶ Pic_{X/S} ⟶ P ⟶ 0') are plain in the print, as in the TeX."
+ },
+ {
+  "page": 605,
+  "where": "'est un torseur sur P sous le groupe V(Ě)'",
+  "scan": "a plain typed V; the two displays have the double-struck V (both scans; crops_601_605/m605_VE.png, m605_VE_disp.png)",
+  "tex": "\\(\\mathbb V(\\check E)\\)",
+  "kind": "font",
+  "confidence": "high",
+  "fix": {
+   "old": "groupe \\(\\mathbb V(\\check E)\\)",
+   "new": "groupe \\(V(\\check E)\\)"
+  },
+  "note": ""
+ },
+ {
+  "page": 605,
+  "where": "first diagram, the two vertical arrows from O*_{X_T}, O*_{X'_T} up to O_{X_T}, O_{X'_T}",
+  "scan": "hooked arrows (inclusions), hook at the foot (both scans; crops_601_605/m605_hooks.png)",
+  "tex": "plain \\arrow[u]",
+  "kind": "symbol",
+  "confidence": "high",
+  "fix": {
+   "old": "\\mathcal O_{X_T}^{*} \\arrow[r] \\arrow[u] & \\mathcal O_{X'_T}^{*} \\arrow[r] \\arrow[u]",
+   "new": "\\mathcal O_{X_T}^{*} \\arrow[r] \\arrow[u,hook] & \\mathcal O_{X'_T}^{*} \\arrow[r] \\arrow[u,hook]"
+  },
+  "note": "The left vertical arrow of the second diagram is a plain arrow in the print, as in the TeX."
+ },
+ {
+  "page": 605,
+  "where": "first diagram, end of the bottom row '... ⟶ O*_{X'_T} ⟶ 0'",
+  "scan": "no comma after the 0; '(α(i) = 1+i)' follows (both scans)",
+  "tex": "'& 0 ,'",
+  "kind": "extra",
+  "confidence": "high",
+  "fix": {
+   "old": "& 0 ,",
+   "new": "& 0"
+  },
+  "note": "Punctuation the print does not have."
+ },
+ {
+  "page": 605,
+  "where": "'On fera attention que le carré de gauche'",
+  "scan": "begins a new, indented paragraph after the second diagram (both scans)",
+  "tex": "follows \\] without a blank line, so it continues the paragraph",
+  "kind": "other",
+  "confidence": "medium",
+  "fix": {
+   "old": "\\]\nOn fera attention",
+   "new": "\\]\n\nOn fera attention"
+  },
+  "note": "Missing paragraph break."
+ },
+ {
+  "page": 605,
+  "where": "second diagram, bottom row 'R'(f_T)_*(O*_{X'_T})'",
+  "scan": "R' with a prime for R^1 (both scans)",
+  "tex": "R'(f_T)_*(\\mathcal O_{X'_T}^{*}) (printed reading kept)",
+  "kind": "misprint_in_print",
+  "confidence": "high",
+  "fix": null,
+  "corrected": "R^1(f_T)_*(\\mathcal O_{X'_T}^{*})",
+  "note": "The long exact sequence reads R^1(f_T)_*(O*_{X_T}) → R^1(f_T)_*(O*_{X'_T}) → R^2(f_T)_*(I_T). The TeX keeps the printed R'; the corrected layer already reads R^1."
+ }
+]

@@ -1,0 +1,31 @@
+% from main.tex
+%%%%%%%%%%  scan idx 120  |  folio 107  %%%%%%%%%%
+pour un \(p\leq n\), donc \(u(F)\) est \((p+a)\)-\(\mathcal C'_0\)-pseudo-cohérent, donc a fortiori \((n+a)\)-pseudo-cohérent. Si \(N>1\), on a une suite exacte
+\[
+  0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow 0,
+\]
+où \(F'\) et \(F''\) sont strictement parfaits de longueur \(\leq N-1\) et tels que \(F'^i=F''^i=0\) pour \(i>n\). Appliquant (2.5.b)) au triangle distingué
+\[
+\begin{tikzcd}
+& u(F'') \arrow[dl,"+1"'] & \\
+u(F') \arrow[rr] && u(F) \arrow[ul] & ,
+\end{tikzcd}
+\]
+on déduit de l'hypothèse de récurrence que \(u(F)\) est \((n+a)\)-pseudo-cohérent.
+
+Passons maintenant au cas général : \(F\) \(m\)-\(\mathcal C_0\)-pseudo-cohérent et acyclique en degré \(>n\). Quitte à localiser, on peut, grâce à (2.10.a)), supposer \(F\) strictement \(m\)-pseudo-cohérent et tel que \(F^i=0\) pour \(i>n\). On a alors une suite exacte
+\[
+  0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow 0,
+\]
+où \(F''\) est nul en degré \(\geq m\) et \(F'\) strictement parfait et nul en degré \(>n\). Dans le triangle distingué
+\[
+\begin{tikzcd}
+& u(F'') \arrow[dl,"+1"'] & \\
+u(F') \arrow[rr] && u(F) \arrow[ul] & ,
+\end{tikzcd}
+\]
+\(u(F'')\) est acyclique en degré \(\geq m+b\), donc \((m+b)\)-pseudo-cohérent, et \(u(F')\) est \((n+a)\)-pseudo-cohérent d'après ce qu'on a vu. On conclut par (2.5.b)).
+
+\textbf{Corollaire 2.14.} \emph{Soit \(\mathcal C_1\) une sous-\(S\)-catégorie additive strictement pleine de \(\mathcal C\) telle que \(\mathcal C_0\subset\mathcal C_1\subset\mathcal C\). On suppose que tout objet de \(\mathcal C_1\) est \(\mathcal C_0\)-pseudo-cohérent.}
+\emph{Alors} :
+

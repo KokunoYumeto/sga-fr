@@ -1,0 +1,10 @@
+% from main.tex
+%%%%%%%%%%  scan idx 280  |  folio 267  %%%%%%%%%%
+\textbf{Définition 5.4.} Soit \(X\) un topos, notons \(\pt(X)\) l'ensemble de ses points (SGA 4 IV 6.1). Soient \(M\) un ensemble ordonné, \(f:\pt(X)\to M\) une application, et \(x\in\pt(X)\). On dit que \(f\) est semi-continue supérieurement (resp. semi-continue inférieurement, resp. localement constante) en \(x\) s'il existe un objet \(x\)-ponctué \(U\) de \(X\) tel que pour tout point \(y\) de \(U\) on ait \(f(y)\leq f(x)\) (resp. \(f(y)\geq f(x)\), resp. \(f(y)=f(x)\)). On dit que \(f\) est semi-continue supérieurement (resp. semi-continue inférieurement, rep. localement constante) si elle l'est en tout point\footnote{Si \(X\) provient d'un espace topologique, on retrouve les notions usuelles.}.
+
+\textbf{Exemples 5.4.1.} a) Notons \(M_X\) le faisceau constant de valeur \(M\) sur \(X\), et soit \(s\in H^0(X,M)\). L'application \(x\mapsto s(x)=x^*(s)\) de \(\pt(X)\) dans \(M\) est localement constante. En particulier, soit \(E\) un complexe parfait sur \(X\) supposé localement annelé : le rang de \(E\) (I 6.11) définit une fonction localement constante sur \(\pt(X)\) à valeurs dans \(\mathbb Z\).
+
+b) Supposons \(X\) localement annelé, et soit \(P\) un \(\mathcal O_X\)-Module de type fini. Pour \(x\in\pt(X)\), notons \(\mathcal O_{X,x}\) l'anneau local fibre de \(\mathcal O_X\) en \(x\), et \(k(x)\) le corps résiduel. Alors, pour \(x\in\pt(X)\), \(P_x\otimes_{\mathcal O_{X,x}}k(x)\) est de rang fini sur \(k(x)\), et la fonction \(x\mapsto\operatorname{rg}_{k(x)}(P\otimes_{\mathcal O_{X,x}}k(x))\) est semi-continue supérieurement. En effet, si, pour \(x\in\pt(X)\), \(P_x\otimes_{\mathcal O_{X,x}}k(x)\) est de rang \(n\), il existe un épimorphisme \(\mathcal O_{X,x}^n\to P_x\) d'après Nakayama, et, comme \(P\) est de type fini, il existe un objet \(x\)-ponctué \(U\) de \(X\) et un épimorphisme \(\mathcal O_U^n\to P\,|\,U\), d'où l'assertion.
+
+\textbf{Lemme 5.5.} Soient \((X,\mathcal O_X)\) un topos localement annelé, \(E\in\Ob D^{-}(X)\), et \(p\in\mathbb Z\). Alors on a, avec les notations de (5.4.1 b)) :
+\begin{enumerate}[label=(\roman*)]
