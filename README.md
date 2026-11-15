@@ -2,6 +2,14 @@
 
 Ce dépôt contient les textes français du Séminaire de géométrie algébrique du Bois Marie (SGA) d’Alexander Grothendieck et de ses collaborateurs, en LaTeX, vérifiés par IA page par page sur les scans de l’imprimé. Il contient les livres de lecture de SGA 4½, SGA 5, SGA 6 et SGA 7 I et II, chacun sous trois formes : texte diplomatique, texte corrigé avec apparat critique, texte de lecture, en PDF et en LaTeX.
 
+## Quel livre lire
+
+Chaque volume a trois formes, toutes tirées d'un même texte vérifié page par page sur le volume imprimé. **Commencez par le texte de lecture.**
+
+- **Texte de lecture** (`*_texte_de_lecture.pdf`) : le texte corrigé, pour lire les mathématiques.
+- **Diplomatique** (`*_diplomatique.pdf`) : le texte tel qu'il est imprimé, coquilles comprises, pour le comparer à la page imprimée.
+- **Corrigé avec apparat** (`*_corrige_apparat.pdf`) : le texte corrigé, avec la liste de chaque changement, pour qui veut voir ce qui a été changé et pourquoi. Une entrée de l'apparat note un changement : la leçon imprimée, la leçon corrigée, la page et la source de la correction ; les leçons qui n'ont pas pu être tranchées sont listées à part.
+
 ## Livres de lecture
 
 Publication du [14 novembre 2026](https://github.com/KokunoYumeto/sga-fr/releases/tag/v2026-11-14-livres-de-lecture) : construction des livres par GPT-6 Astra (OpenAI, mode Pro de ChatGPT), vérification des PDF et corrections de composition par Claude Opus 5.5 (effort high ; SGA 6 : effort max). Les notes de la publication disent l’état de chaque volume et les vérifications faites.
